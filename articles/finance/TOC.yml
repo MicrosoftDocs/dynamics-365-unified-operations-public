@@ -3833,7 +3833,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
-      - name: Use Electronic reporting solutions in Finance and Operations
+      - name: Use ER solutions in Finance
         items: 
         - name: Configure the framework
           items: 
@@ -3867,6 +3867,8 @@
                 href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
           - name: Configure destinations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+          - name: Configure action-dependent destinations
+            href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
         - name: Set up a reference to an ER format
           href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
         - name: Automatically validate generated reports
