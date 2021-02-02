@@ -51,7 +51,7 @@ The process will run until the matched product receipt quantity equals the invoi
 
 Invoice lines that have a three-way matching policy, where the matched receipt quantity is less than the invoice quantity, will be included in the automated match-to-product-receipt process.
 
-To view the **Last match** status for invoices that aren't part of the automated submit-to-workflow process, open the invoice from the **Vendor invoices** page. When you view the invoice, the matching validation information is updated.
+To view the **Last match** status for invoices that aren't part of the automated submit-to-workflow process, open the invoice from the **Vendor invoices** page. When you view the invoice, the matching validation information is updated. The **Last match** status can be updated automatically using the **Validate invoice matching** background task. You can configure the process of automatically updating the **Last match** status on the **Background processes** tab of the **Process automations** page (**System adminstration\> Setup\> Process automations**).
 
 An invoice line will be excluded from the automated processing if any of the following conditions are met:
 
