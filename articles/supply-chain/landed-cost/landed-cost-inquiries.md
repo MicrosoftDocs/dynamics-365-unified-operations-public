@@ -37,11 +37,30 @@ This inquiry shows all voyage lines as they pertain to inventory. This can be us
 
 To open the **Voyage lines** inquiry page, go to **Landed cost \> Inquiries \> Voyage lines**.
 
-To sort or filter the grid according to the values of any column, select the column header to open a drop-down dialog box and then choose a filter or sorting option.
-
-To add or remove extra dimensions to the grid, select **Inventory \> Dimensions display** on the Action Pane. This opens the **Dimension display** dialog box, where you can select or deselect check boxes for each available dimension as needed.
-
 <!-- KFM: What about the "Cost inquiry" action? What about the other two tabs here? -->
+
+### The Overview tab
+
+The **Overview** tab shows a grid with basic information about each relevant voyage line. The following table describes each column shown here.
+
+| Column | Description |
+| --- | --- |
+| **Item number** | <!-- KFM: Description needed --> |
+| **Reference** | <!-- KFM: Description needed --> |
+| **Number** | <!-- KFM: Description needed --> |
+| **Folio** | <!-- KFM: Description needed --> |
+| **Shipping container** | <!-- KFM: Description needed --> |
+| **Voyage** | <!-- KFM: Description needed --> |
+| **Quantity** | <!-- KFM: Description needed --> |
+| Other dimensions | You can choose to show columns for additional dimensions as needed, such as batch number, inventory status, warehouse, and more. On the Action Pane, select **Inventory \> Display dimensions** to open a dialog box where you can choose which dimensions to include. |
+
+### The General tab
+
+Open the **General** tab to see more information about the line currently selected on the **Overview** tab. 
+
+### The Dimensions tab
+
+Open the **Dimensions** tab to see values for all available dimensions for the line currently selected on the **Overview** tab, regardless of which dimensions you have chosen to show on that tab.
 
 ## Cost estimate inquiries
 
@@ -91,38 +110,53 @@ Select the **Cost inquiries** form to review the voyage costs associated to the 
 
 ## Item tracking
 
-Use the **Item tracking** page to view open purchase lines and their current status. They do not need to be attached to a voyage to appear here. If the item is associated to a voyage, the voyage ID will show in the item tracking record line. The item tracking form can be viewed by navigating to _Landed cost \> Inquiries \> Tracking \> Item tracking._
+Use the **Item tracking** page to view open purchase lines and their current status. They do not need to be attached to a voyage to appear here. If an item is associated with a voyage, the voyage ID will show in the item tracking record line. To open this page, go to **Landed cost \> Inquiries \> Tracking \> Item tracking**.
 
 A filter option is selected and standard wildcards can be used in the value field. For example, if all purchase lines for items with the word television contained within it, select the Item name filter and enter \*DVD\* in the value field.
 
 The customer account can be selected to show only those items which are on backorder for a particular customer. The backorders tab will show all other customers in addition to the filtered customer.
 
-Note: Currently a backorder are only sales orders, sales quotations are not shown or considered a back order as they are within standard Dynamics 365 Finance and Operations, Enterprise Edition.
+> [!NOTE]
+> Currently a backorder are only sales orders, sales quotations are not shown or considered a back order as they are within standard Dynamics 365 Finance and Operations, Enterprise Edition.
 
 ### Overview tab
 
-| Setting | Description |
+<!-- KFM: Seems like there is only one tab? -->
+The following table describes each column shown on the **Item tracking** page.
+
+| Column | Description |
 | --- | --- |
-| **To Port** | This refers to the final destination. |
-| **Confirmed** | The confirmed date field from the purchase order line. |
-| **Delivery Date** | The delivery date field from the purchase order line. |
+| **To port** | The final destination. |
+| **Confirmed** | The confirmed date of the purchase order line. |
+| **Delivery Date** | The delivery date of the purchase order line. |
 | **Voyage** | <!-- KFM: Description needed --> |
-| **Shipping Container** | If the line is attached to a shipping container, the container Id will be shown here. |
-| **Shipping port** | This is the current port as per the first leg within the tracking form that does not have an actual date set for this shipping container. |
-| **Activity** | This is the current activity as per the first leg within the tracking form that does not have an actual date set for this shipping container. |
+| **Shipping Container** | If the line is attached to a shipping container, the container ID will be shown here. |
+| **Shipping port** | This is the current port as per the first leg within the tracking form that does not have an actual date set for the shipping container associated with this purchase order line. |
+| **Activity** | This is the current activity as per the first leg within the tracking form that does not have an actual date set for the shipping container associated with this purchase order line. |
 | **Estimated end date** | <!-- KFM: Description needed --> |
 | **Name** | The name of the vendor. |
-| **Voyage Status** | The shipment status which is attached to the purchase order line. |
-| **Item number** | The item ID. |
+| **Voyage Status** | The shipment status attached to the purchase order line. |
+| **Item number** | The item number for this purchase order line. |
 | **External** | The vendor's item name. |
-| **Product Name** | The name of the Item. |
-| **Quantity** | The purchase order line quantity for this item. |
+| **Product Name** | The name of the item for this purchase order line. |
+| **Quantity** | The purchase order line quantity for this purchase order line. |
 | **Unit** | The unit of measure for this purchase order line. |
-| **Reference** | <!-- KFM: The purchase order number? --> |
-| **Reference number** | <!-- KFM: This is seal number entered on the shipping container? --> |
-| **H.A.W.B/Bill of Lading** | This is the number entered on the shipping container. |
-| **Backorder** | If this shows an icon, it is indicating that there are sales backorders for this item. |
+| **Reference** | <!-- KFM: maybe, The purchase order number? --> |
+| **Reference number** | <!-- KFM: maybe, This is seal number entered on the shipping container? --> |
+| **H.A.W.B/Bill of Lading** | This is the number entered on the shipping container. <!-- KFM: No longer included? --> |
+| **Backorder** | If this shows an icon, that indicates that there are sales backorders for this item. |
+| Other dimensions | You can choose to show columns for additional dimensions as needed, such as batch number, inventory status, warehouse, and more. On the Action Pane, select **Display dimensions** to open a dialog box where you can choose which dimensions to include. |
 
 ### Backorders tab
 
+<!-- KFM: Where is this? -->
+
 This tab shows any sales orders that are open. The sales Id, customer account number, quantity (Shown as a negative as this information is seen from the inventory point of view, i.e. A sale is a negative), expected date of delivery.
+
+## Individual shipping container tracking
+
+<!-- KFM: Documentation required. -->
+
+## Multiple shipping container tracking
+
+<!-- KFM: Documentation required. -->
