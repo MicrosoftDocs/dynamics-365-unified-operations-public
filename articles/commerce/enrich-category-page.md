@@ -68,3 +68,5 @@ To enrich a category page, do the following.
 [Enrich a product page](enrich-product-page.md)
 
 [Verify page content accessibility](verify-accessibility.md)
+
+[Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)

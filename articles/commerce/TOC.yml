@@ -94,6 +94,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.17 (April 2021)
+            href: get-started/whats-new-commerce-10-0-17.md
           - name: Commerce 10.0.16 (February 2021)
             href: get-started/whats-new-commerce-10-0-16.md
           - name: Commerce 10.0.15 (January 2021)
@@ -648,6 +650,8 @@
             href: personalization-gdpr.md
         - name: Enable "shop similar looks" recommendations
           href: shop-similar-looks.md
+        - name: Enable "shop similar description" recommendations
+          href: shop-similar-description.md
         - name: POS experiences
           items:
           - name: Add product recommendations on POS
@@ -954,6 +958,8 @@
             href: enrich-category-page.md
           - name: Verify page content accessibility
             href: verify-accessibility.md
+          - name: Create dynamic e-commerce pages based on URL parameters
+            href: create-dynamic-pages.md            
         - name: Site navigation
           items:
           - name: Customize site navigation
@@ -1064,6 +1070,8 @@
           items:
           - name: Product collection modules
             href: product-collection-module-overview.md
+          - name: Quick view module
+            href: quick-view-module.md
         - name: Navigation modules
           items:
           - name: Breadcrumb module
@@ -2087,7 +2095,9 @@
           - name: Interactive components overview
             href: e-commerce-extensibility/interactive-components.md
           - name: Mock the signed-in state during local development
-            href: e-commerce-extensibility/mock-sign-in.md 
+            href: e-commerce-extensibility/mock-sign-in.md
+          - name: Configure module properties to be shown based on context
+            href: e-commerce-extensibility/configure-properties-context.md
           - name: Globalize modules by using the CultureInfoFormatter class
             href: e-commerce-extensibility/globalize-modules.md
           - name: Set up Azure Key Vault for secure key management

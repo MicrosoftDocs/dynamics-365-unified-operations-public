@@ -2,7 +2,7 @@
 # required metadata
 
 title: Horizontal Fields and Buttons Group subpattern
-description: This article provides information about the Horizontal Fields and Buttons Group form subpattern. This subpattern is used when actions must be defined for an individual field on a form.
+description: This article provides information about the Horizontal Fields and Buttons Group subpattern, which is used when actions must be defined for an individual field.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017

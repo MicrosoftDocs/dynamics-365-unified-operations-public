@@ -2,7 +2,7 @@
 # required metadata
 
 title: Date effectivity
-description: This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
+description: This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/04/2019

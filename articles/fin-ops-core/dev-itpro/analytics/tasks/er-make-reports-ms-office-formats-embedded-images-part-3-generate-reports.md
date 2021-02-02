@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Generate reports in Office format that have embedded images
-description: The following steps explain how a user playing either 'System administrator' or 'Electronic reporting developer' role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images. 
+description: This topic describes how to design Electronic reporting (ER) configurations to generate electronic documents in Excel and Word containing embedded images. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/13/2017

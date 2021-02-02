@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Use Document Management files in format outputs (Part 5 - Modify and run format)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. 
+description: This topic describes how to configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. (Part 5)
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018

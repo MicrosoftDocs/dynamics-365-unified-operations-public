@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pin Power BI content
-description: Microsoft Dynamics 365 Finance uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces to give your users an interactive data exploration experience.
+description: This topic explains how you can pin full-page Power BI reports to workspaces to give your users an interactive data exploration experience.
 author: MilindaV2
 manager: AnnBe
 ms.date: 07/10/2020

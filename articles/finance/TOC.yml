@@ -72,6 +72,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.17 (March 2021)
+            href: get-started/whats-new-changed-10-0-17.md
           - name: Finance 10.0.16 (February 2021)
             href: get-started/whats-new-changed-10-0-16.md
           - name: Finance 10.0.15 (January 2021)
@@ -480,6 +482,10 @@
         href: accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Advanced notes management
         href: localizations/emea-ita-exil-structured-notes.md
+      - name: References to original invoices in credit notes
+        href: accounts-receivable/original-invoice-numbers-credit-notes.md
+      - name: Numbering documents and vouchers chronologically
+        href: accounts-receivable/chrono-numbers.md
     - name: Budgeting
       items:
       - name: Budgeting home page
@@ -1152,6 +1158,8 @@
         href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
       - name: When to reset a data mart
         href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
+      - name: Financial reporting FAQ
+        href: general-ledger/financial-reporting-faq.md
     - name: Finance insights
       items:
       - name: Finance insights home page
@@ -1410,6 +1418,14 @@
           href: localizations/e-invoicing-mex-get-started.md
         - name: Set up the Electronic invoicing add-on
           href: localizations/e-invoicing-setup.md
+        - name: Get started with Electronic invoicing add-on service administration
+          href: localizations/e-invoicing-get-started-service-administration.md
+        - name: Electronic invoicing add-on administration components
+          href: localizations/e-invoicing-service-administration.md
+        - name: Configure the Electronic invoicing add-on in Regulatory Configuration Services (RCS)
+          href: localizations/e-invoicing-configuration-rcs.md
+        - name: Issue electronic invoices in Finance and Supply Chain Management
+          href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
       - name: Australia
         items:
         - name: Australia overview
@@ -1750,6 +1766,16 @@
           href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
         - name: Set up payment slip format
           href: localizations/tasks/set-up-payment-slip-format.md
+      - name: Egypt
+        items: 
+        - name: Egypt overview
+          href: localizations/egypt.md
+        - name: Configure registration numbers in Egypt
+          href: localizations/emea-egy-reg-numbers.md
+        - name: Configure invoice layout for Egypt
+          href: localizations/emea-egy-invoice-layout.md
+        - name: Customer electronic invoices in Egypt
+          href: localizations/emea-egy-e-invoices.md
       - name: Estonia
         items:
         - name: Estonia overview
@@ -1840,6 +1866,8 @@
           href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
         - name: Supported standards for electronic invoicing
           href: localizations/emea-oioubl-standards-electronic-invoicing.md
+        - name: Forced electronic invoices generation
+          href: localizations/emea-eur-forced-einvoices.md
         - name: Original invoice reference (Eastern Europe)
           href: localizations/tasks/ee-00004-original-invoice-reference.md
         - name: Party search using VAT ID
@@ -2318,6 +2346,10 @@
           href: localizations/emea-ita-e-invoices.md
         - name: Yearly tax communication
           href: localizations/emea-ita-yearly-tax-communication.md
+        - name: Payment traceability
+          href: localizations/emea-ita-payment-traceability.md
+        - name: Unified posting date control
+          href: localizations/emea-ita-post-date-control.md
       - name: Japan
         items:
         - name: Japan overview

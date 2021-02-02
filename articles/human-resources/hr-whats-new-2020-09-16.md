@@ -115,9 +115,9 @@ This release includes additional calendar options for leave and absence calendar
 
 ## Coming Soon
 
-### Checklist entities included in Common Data Service
+### Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Dataverse.
 
 ### Benefits management reason codes
 

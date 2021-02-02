@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Use financial dimensions as a data source (Part 2 - Model mapping)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
+description: This topic describes how to configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. (Part 2)
 author: NickSelin
 manager: AnnBe 
 ms.date: 05/27/2020
