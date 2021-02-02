@@ -49,7 +49,7 @@ This topic contains the following information:
 Before you can begin to work with the electronic invoice functionality, the following data must be set up:
 
 - [Accounts receivable parameters](#arparameters)
-- [Form setup](#formsetup)
+- [Electronic invoice currency setup](#electronicinvoicecurrency)
 - [Electronic invoice parameters](#einvoicesparameters)
 - [Electronic document properties](#edproperties)
 - [Customers](#customers)
@@ -66,7 +66,7 @@ Select the configurations that are used to create electronic invoice XML files f
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-### <a id="formsetup"></a>Form setup
+### <a id="electronicinvoicecurrency"></a>Electronic invoice currency setup
 
 To report invoices in EUR in xml file it is necessary to set option **Print amount in currency representing the euro** to **Yes** in **Accounts receivable** \> **Setup** \> **Form setup** \> **General** (FastTab) and/or **Project management and accounting** \> **Setup** \> **Form setup** \> **General** (FastTab) . 
 
