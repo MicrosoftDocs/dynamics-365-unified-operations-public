@@ -462,38 +462,6 @@ The following example response shows a recruiting request for two positions, and
     ],
     "mshr_FK_HcmRecruitingRequestSkillEntity_RecruitingRequest": [
         {
-            "_mshr_fk_skill_id_value": "00000228-0000-0000-cbff-004105000000",
-            "mshr_skillid": "Budgeting",
-            "mshr_dataareaid": "usmf",
-            "_mshr_dataareaid_id_value": "e13a8e22-f278-ea11-a811-000d3a17b4eb",
-            "mshr_ratinglevelid": "3",
-            "_mshr_fk_recruitingrequest_id_value": "00000d78-0000-0000-0000-005001000000",
-            "mshr_skilldescription": "Budgeting",
-            "mshr_recruitingrequestid": "USMF-000001",
-            "mshr_ratingmodelid": "Skills",
-            "mshr_primaryfield": "USMF-000001 | Budgeting",
-            "_mshr_fk_ratingmodel_id_value": "0000066e-0000-0000-79ff-004105000000",
-            "_mshr_fk_ratinglevel_id_value": "000000c3-0000-0000-86ff-004105000000",
-            "mshr_hcmrecruitingrequestskillentityid": "00000d69-0000-0000-0200-005001000000",
-            "mshr_ratingleveldescription": "Intermediate"
-        },
-        {
-            "_mshr_fk_skill_id_value": "00000228-0000-0000-ebff-004105000000",
-            "mshr_skillid": "CustFocus",
-            "mshr_dataareaid": "usmf",
-            "_mshr_dataareaid_id_value": "e13a8e22-f278-ea11-a811-000d3a17b4eb",
-            "mshr_ratinglevelid": "3",
-            "_mshr_fk_recruitingrequest_id_value": "00000d78-0000-0000-0000-005001000000",
-            "mshr_skilldescription": "Customer focus",
-            "mshr_recruitingrequestid": "USMF-000001",
-            "mshr_ratingmodelid": "Skills",
-            "mshr_primaryfield": "USMF-000001 | CustFocus",
-            "_mshr_fk_ratingmodel_id_value": "0000066e-0000-0000-79ff-004105000000",
-            "_mshr_fk_ratinglevel_id_value": "000000c3-0000-0000-86ff-004105000000",
-            "mshr_hcmrecruitingrequestskillentityid": "00000d69-0000-0000-0100-005001000000",
-            "mshr_ratingleveldescription": "Intermediate"
-        },
-        {
             "_mshr_fk_skill_id_value": "00000228-0000-0000-c3ff-004105000000",
             "mshr_skillid": "Present",
             "mshr_dataareaid": "usmf",
