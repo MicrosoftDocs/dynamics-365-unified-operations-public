@@ -27,28 +27,35 @@ ms.search.validFrom: 2021-02-21
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
-
 # Landed cost inquiries
 
 [!include [banner](../includes/banner.md)]
 
-## Voyage lines
+## Voyage line inquiries
 
-This inquiry form shows all voyage lines as it pertains to inventory. This can be useful as a filter form to locate an item/purchase order or other useful piece of information. It can additionally be used to identify the expected delivery date of an item that may be on one or more voyages, so that expected inventory receiving can be managed.
+This inquiry shows all voyage lines as they pertain to inventory. This can be useful as a filter to locate an item, purchase order, or other useful piece of information. It can also be used to identify the expected delivery date of an item that may be on one or more voyages, which can help you to manage expected inventory receiving.
 
-Click the Inventory \> Dimensions display to specify the size/color/warehouse etc. When this is done, users will see the inventory lines open on shipments that are associated to the filtered views selected.
+To open the **Voyage lines** inquiry page, go to **Landed cost \> Inquiries \> Voyage lines**.
 
-The shipment lines form can be found by navigating to _Landed cost \> Inquiries \> Voyage lines__._
+To sort or filter the grid according to the values of any column, select the column header to open a drop-down dialog box and then choose a filter or sorting option.
 
-For more information, refer to [Shipmen lines (form)](https://technet.microsoft.com/en-us/library/aa557910.aspx).
+To add or remove extra dimensions to the grid, select **Inventory \> Dimensions display** on the Action Pane. This opens the **Dimension display** dialog box, where you can select or deselect check boxes for each available dimension as needed.
 
-## Cost estimates
+<!-- KFM: What about the "Cost inquiry" action? What about the other two tabs here? -->
 
-The cost estimates form is populated by running the periodic cost estimates process. It stores all data related to the landed cost of an item. The overview tab shows the cost estimates; the costs tab shows the breakdown of a cost estimate. The cost estimate inquiry form can additionally be used to modify cost estimates and used as a worksheet before the cost price is updated for the items within the estimate.
+## Cost estimate inquiries
 
-The cost estimates form can be found by navigating to **Landed cost \> Inquiries \> Cost estimates**.
+<!-- KFM: This section does not describe the UI at all. What is this? -->
 
-| **Field Name** | **Field Description** |
+<!-- KFM: Start by summarizing the purpose of the page. -->
+
+The overview tab shows the cost estimates; the costs tab shows the breakdown of a cost estimate. The cost estimate inquiry form can additionally be used to modify cost estimates and used as a worksheet before the cost price is updated for the items within the estimate.
+
+The open the **Cost estimates** page, go to **Landed cost \> Inquiries \> Cost estimates**.
+
+To populate or update the **Cost estimates** page, run the periodic cost estimates process. <!-- KFM: how do I do this? -->
+
+| Setting | Description |
 | --- | --- |
 | **Cost Estimate Number** | The Id for this cost estimate |
 | **Cost Template** | The template that was used to derive this cost |
@@ -78,11 +85,13 @@ The cost estimates form can be found by navigating to **Landed cost \> Inquiries
 
 ## Landed inquiry
 
-Click on the Cost inquiries form to review the voyage costs associated to the inventory items on this estimate. Only those voyage costs that are associated to the debit transaction type of &quot;item&quot; will be listed in the voyage costs on the estimate costs form. The cost type codes that do not have a debit type of &quot;item&quot; will not be listed, as they are not included in the inventory cost associated to the item. Rather they are an additional overhead landed cost that is posted to a ledger account. The item cost type codes associated to the debit of ledger are managed through the auto costs form and can be viewed by going directly to the voyage form.
+<!-- KFM: I don't understand any of this. What is going on here? -->
+
+Select the **Cost inquiries** form to review the voyage costs associated to the inventory items on this estimate. Only those voyage costs that are associated to the debit transaction type of *Item* will be listed in the voyage costs on the estimate costs form. The cost type codes that do not have a debit type of *Item* will not be listed, as they are not included in the inventory cost associated to the item. Rather they are an additional overhead landed cost that is posted to a ledger account. The item cost type codes associated to the debit of ledger are managed through the auto costs form and can be viewed by going directly to the voyage form.
 
 ## Item tracking
 
-Use the Item tracking form to view open purchase lines and their current status. They do not need to be attached to a voyage to appear in the item tracking form. If the item is associated to a voyage, the voyage ID will show in the item tracking record line. The item tracking form can be viewed by navigating to _Landed cost \> Inquiries \> Tracking \> Item tracking._
+Use the **Item tracking** page to view open purchase lines and their current status. They do not need to be attached to a voyage to appear here. If the item is associated to a voyage, the voyage ID will show in the item tracking record line. The item tracking form can be viewed by navigating to _Landed cost \> Inquiries \> Tracking \> Item tracking._
 
 A filter option is selected and standard wildcards can be used in the value field. For example, if all purchase lines for items with the word television contained within it, select the Item name filter and enter \*DVD\* in the value field.
 
@@ -92,23 +101,25 @@ Note: Currently a backorder are only sales orders, sales quotations are not show
 
 ### Overview tab
 
-| **Field Name** | **Field Description** |
+| Setting | Description |
 | --- | --- |
 | **To Port** | This refers to the final destination. |
-| **Delivery Date** | The delivery date field from the purchase order line. |
 | **Confirmed** | The confirmed date field from the purchase order line. |
+| **Delivery Date** | The delivery date field from the purchase order line. |
+| **Voyage** | <!-- KFM: Description needed --> |
 | **Shipping Container** | If the line is attached to a shipping container, the container Id will be shown here. |
-| **Port** | This is the current port as per the first leg within the tracking form that does not have an actual date set for this shipping container. |
+| **Shipping port** | This is the current port as per the first leg within the tracking form that does not have an actual date set for this shipping container. |
 | **Activity** | This is the current activity as per the first leg within the tracking form that does not have an actual date set for this shipping container. |
+| **Estimated end date** | <!-- KFM: Description needed --> |
 | **Name** | The name of the vendor. |
 | **Voyage Status** | The shipment status which is attached to the purchase order line. |
-| **Item ID** | The item ID. |
-| **External Item ID** | The vendor&#39;s item name. |
-| **Item Name** | The name of the Item. |
+| **Item number** | The item ID. |
+| **External** | The vendor's item name. |
+| **Product Name** | The name of the Item. |
 | **Quantity** | The purchase order line quantity for this item. |
 | **Unit** | The unit of measure for this purchase order line. |
-| **Purchase Order** | The purchase order number. |
-| **Our Seal Number** | This is seal number entered on the shipping container. |
+| **Reference** | <!-- KFM: The purchase order number? --> |
+| **Reference number** | <!-- KFM: This is seal number entered on the shipping container? --> |
 | **H.A.W.B/Bill of Lading** | This is the number entered on the shipping container. |
 | **Backorder** | If this shows an icon, it is indicating that there are sales backorders for this item. |
 

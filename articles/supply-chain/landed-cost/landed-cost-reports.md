@@ -39,7 +39,7 @@ The expected delivery report is used by navigating to _Landed cost \> Reports \>
 
 The following parameters determine what information is populated on the report output.
 
-| **Field Name** | **Field Description** |
+| Setting | Description |
 | --- | --- |
 | **Expected date** | The expected date of delivery of the goods to the final destination warehouse. Any voyage line that has an expected date of this date or prior that has not been received will appear in the output. |
 | **Vendor account** | Filter the report output by selecting the vendor associated to the voyage line. |
@@ -48,9 +48,9 @@ The following parameters determine what information is populated on the report o
 Run the expected delivery report:
 
 1. Enter expected date.
-2. Enter vendor account (Optional).
-3. Click **Records to include \> Filter** to specify the search criteria if required.
-4. Click **OK**.
+1. Enter vendor account (Optional).
+1. Select **Records to include \> Filter** to specify the search criteria if required.
+1. Select **OK**.
 
 ## Voyage costing report
 
@@ -62,18 +62,18 @@ Run the shipment costing report:
 
 1. **Report views** :
 
-- **Individual cost** : The individual cost option will display import costs per cost area per cost type code.
-- **Reporting category** : When the &#39;reporting categories&#39; option is selected to run the report, the import cost will be broken down into the different reporting categories. Cost types are grouped by reporting categories.
+    - **Individual cost** : The individual cost option will display import costs per cost area per cost type code.
+    - **Reporting category** : When the &#39;reporting categories&#39; option is selected to run the report, the import cost will be broken down into the different reporting categories. Cost types are grouped by reporting categories.
 
 1. **Cost** : It is possible to view the report at the different stages of the import process.
 
-- **Cost value** : This is the value that is either calculated using auto cost or manually created on the cost area.
-- **Estimated** : Once the goods have been received the estimated cost is populated.
-- **Actual** : After the order has been invoiced, the actual cost field is populated with the cost on the invoice.
-- **Best (Recommended)**: When best is selected Dynamics 365 Finance and Operations, Enterprise Edition will use the most accurate value of the ones above.
+    - **Cost value** : This is the value that is either calculated using auto cost or manually created on the cost area.
+    - **Estimated** : Once the goods have been received the estimated cost is populated.
+    - **Actual** : After the order has been invoiced, the actual cost field is populated with the cost on the invoice.
+    - **Best (Recommended)**: When best is selected Dynamics 365 Finance and Operations, Enterprise Edition will use the most accurate value of the ones above.
 
 1. **Per item** : When ticked will show the cost of an individual item.
-2. **View** : Specify how the cost must be broken down, by ticking the cost areas that must show on the report.
+1. **View** : Specify how the cost must be broken down, by ticking the cost areas that must show on the report.
 
 ## Outstanding invoices
 
@@ -83,15 +83,15 @@ The outstanding invoices report can be used by navigating to _Landed cost \> Rep
 
 Run the outstanding invoices report:
 
-1. Select the **as at date.**
-2. Select which un **-invoiced transactions** to view.
-  - **All not invoiced** lists the results of both **cost not invoiced** and **stock not invoiced**.
-  - **Cost not invoiced** lists costs for invoiced shipments with an estimated cost value, but no actual cost.
-  - **Stock not invoiced** lists costs that have been invoiced, but where the purchase order is yet to be received.
-3. Select to **include/exclude new costs**. This allows the inclusion of costs which do not yet have an actual cost and have also not had inventory received.
-4. Select the level at which to **view** the information.
-5. Click the **records to include \> filter** to specify the search criteria.
-6. Click **OK.**
+1. Select the **as at date**.
+1. Select which un **-invoiced transactions** to view.
+    - **All not invoiced** lists the results of both **cost not invoiced** and **stock not invoiced**.
+    - **Cost not invoiced** lists costs for invoiced shipments with an estimated cost value, but no actual cost.
+    - **Stock not invoiced** lists costs that have been invoiced, but where the purchase order is yet to be received.
+1. Select to **include/exclude new costs**. This allows the inclusion of costs which do not yet have an actual cost and have also not had inventory received.
+1. Select the level at which to **view** the information.
+1. Select the **records to include \> filter** to specify the search criteria.
+1. Select **OK**.
 
 ## Shipping container receipts list
 
@@ -101,6 +101,6 @@ The shipping container receipts list can be printed and used by navigating to _L
 
 Run the container receipts list report:
 
-1. Select the **expected date.**
-2. Click the **records to include \> filter** to specify the search criteria.
-3. Click **OK.**
+1. Select the **expected date**.
+1. Select the **records to include \> filter** to specify the search criteria.
+1. Select **OK**.
