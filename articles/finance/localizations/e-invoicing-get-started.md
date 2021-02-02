@@ -231,4 +231,4 @@ Depending on the country or region, the Electronic invoicing feature might requi
 - [Get started with the Electronic invoicing add-on for Brazil](e-invoicing-bra-get-started.md)
 - [Get started with the Electronic invoicing add-on for Mexico](e-invoicing-mex-get-started.md)
 - [Get started with the Electronic invoicing add-on for Italy](e-invoicing-ita-get-started.md)
-- [Get started with the Electronic invoicing add-on for Egypt](e-invoicing-ita-get-started.md)
+- [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
