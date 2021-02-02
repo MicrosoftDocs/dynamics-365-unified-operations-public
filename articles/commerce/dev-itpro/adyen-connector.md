@@ -394,6 +394,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | Required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
 
+4. On the **Card verification value** tab, leave **Prompt for card verification value** and **Allow blank card verification value** set to **No**. 
 
 
 ### POS payment terminal
