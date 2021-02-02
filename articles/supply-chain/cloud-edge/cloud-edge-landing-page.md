@@ -166,7 +166,7 @@ After you've been granted access to the preview program, you will receive two pr
 You can now start to configure scale units and workloads in your preview environment.
 
 > [!IMPORTANT]
-> When you configure cloud scale units, you can [do all the required steps in the Scale Unit Manager portal](#manage-cloud-scale-units-and-workloads-using-the-scale-unit-manager-portal).
+> When you configure cloud scale units, you can [do all the required steps in the Scale Unit Manager portal](#scale-unit-manager-portal).
 <!-- 
 > If want to use edge scale units with your preview deployment, you must do all scale unit configuration in the user interface on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). You can't use Scale Unit Manager portal if you include an edge scale unit. -->
 
