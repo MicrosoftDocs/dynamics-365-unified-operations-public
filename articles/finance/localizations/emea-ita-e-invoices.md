@@ -49,6 +49,7 @@ This topic contains the following information:
 Before you can begin to work with the electronic invoice functionality, the following data must be set up:
 
 - [Accounts receivable parameters](#arparameters)
+- [Form setup] (#form setup)
 - [Electronic invoice parameters](#einvoicesparameters)
 - [Electronic document properties](#edproperties)
 - [Customers](#customers)
@@ -64,6 +65,18 @@ Select the configurations that are used to create electronic invoice XML files f
 
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+### <a id="formsetup"></a>Form setup
+
+To report invoices in EUR in xml file it is necessary to set option **Print amount in currency representing the euro** to **Yes** in **Accounts receivable** \> **Setup** \> **Form setup** \> **General** (FastTab) and/or **Project management and accounting** \> **Setup** \> **Form setup** \> **General** (FastTab) . 
+If this option is set to **No** then a related XML file will be generated in original invoice currency. 
+
+To use this functionality you need to import the following or a higher version of the ER configurations from LCS shared asset library:
+- Invoice model.version.231
+- Invoice model mapping.version.231.164
+- Sales invoice (IT).version.231.91
+- Project invoice (IT).version.231.90
+
 
 ### <a id="einvoicesparameters"></a>Electronic invoice parameters
 
@@ -281,30 +294,4 @@ If a required document type isn't covered by the values in the preceding list, y
 
 For more information, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
 
-### Invoices issued in different currencies
-
-In Italy it is mandatory to create and send e-invoices to domestic customers and the law says that the if the legal entity is Italian the DIVISA tag of the xml (=currency) must be EUR, that means that the amounts must be reported in EUR currency (Art. 21, comma 2, lettera l) d.P.R. n. 633/72 attached).
-
-This functionality is available form montly update 10.0.16.
-
-To use this functionality you need to:
-1. import the following or a higher version of the ER configurations from LCS shared asset library:
-- Invoice model.version.231
-- Invoice model mapping.version.231.164
-- Sales invoice (IT).version.231.91
-- Project invoice (IT).version.231.90
-
-2. Set option **Print amount in currency representing the euro** to **Yes** in **Accounts receivable** \> **Setup** \> **Form setup** \> **General** (FastTab)
-   > [!NOTE] If this option is set to **No** then a related XML file will be generated in original invoice currency. 
-   > If it is set to **Yes** then the following amount s in**FatturaElettronicaBody** block of the output FatturaPA XML will be generated in Company’s accounting currency:
-   > - DatiBeniServizi\DettaglioLinee\PrezzoUnita rio
-   > - DatiBeniServizi\DettaglioLinee\ScontoMaggiorazione\Importo
-   > - DatiBeniServizi\DettaglioLinee\PrezzoTotale
-   > - DatiBeniServizi\DatiRiepilogo\ImponibileImporto
-   > - DatiBeniServizi\DatiRiepilogo\Imposta
-   > - DatiPagamento\DettaglioPagamento\ImportoPagamento
-   > - DatiGenerali\DatiGeneraliDocumento\ScontoMaggiorazione\Importo
-   > - DatiGenerali\DatiGeneraliDocumento\ImportoTotaleDocumento
-
-The accounting currency code will be shown in **DatiGenerali\DatiGeneraliDocumento\Divisa** field instead of invoice currency.
 
