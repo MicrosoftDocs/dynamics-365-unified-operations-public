@@ -213,9 +213,10 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Manual Entry through POS UI. |  | Not supported at this time |
 | Manual Entry through Payment Terminal. | ✔ | Supports manual entry of credit, debit, and gift cards with pin entry. | 
 
+
 #### Supported card present countries
 
-The following countries have Dynamics 365 Commerce components available as well as card present support from Adyen. 
+The following countries have Dynamics 365 Commerce components available as well as card present support from Adyen. For current international availability of Microsoft Dynamics 365 Commerce, please visit the [International availability page](https://docs.microsoft.com/en-us/dynamics365/get-started/availability).
 
 | Country | Supported |
 | --- | :-: |
@@ -248,6 +249,82 @@ The following countries have Dynamics 365 Commerce components available as well 
 | United Kingdom | ✔ |
 | United States | ✔ |
 | Brazil | Future release |
+
+#### Supported card not present countries
+
+The following countries are supported by Adyen for card not present tranactions. Please [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country. For current international availability of Microsoft Dynamics 365 Commerce, please visit the [International availability page](https://docs.microsoft.com/en-us/dynamics365/get-started/availability).
+
+| Country | 
+| --- | --- |
+| Argentina |
+| Armenia |
+| Australia |
+| Austria |
+| Bahrain |
+| Belgium |
+| Brazil |
+| Bulgaria |
+| Canada |
+| Chile |
+| China |
+| Colombia |
+| Croatia |
+| Cyprus |
+| Czech Republic  |
+| Denmark |
+| Egypt |
+| Estonia |
+| Finland |
+| France |
+| Georgia |
+| Germany |
+| Gibraltar |
+| Greece |
+| Guernsey |
+| Hong Kong SAR |
+| Hungary |
+| Iceland |
+| India |
+| Indonesia |
+| Ireland |
+| Isle of Man |
+| Israel |
+| Italy |
+| Japan |
+| Jersey |
+| Korea |
+| Kuwait |
+| Latvia |
+| Lithuania |
+| Luxembourg |
+| Malaysia |
+| Malta |
+| Mexico |
+| Morocco |
+| Netherlands |
+| New Zealand |
+| Norway |
+| Peru |
+| Poland |
+| Portugal |
+| Qatar |
+| Romania |
+| Saudi Arabia |
+| Serbia |
+| Singapore |
+| Slovakia |
+| Slovenia |
+| South Africa |
+| Spain |
+| Sweden |
+| Switzerland |
+| Taiwan |
+| Tanzania |
+| Thailand |
+| Turkey |
+| United Arab Emirates (UAE) |
+| United Kingdom |
+| United States of America including Puerto Rico  |
 
 #### Supported Dynamics 365 payment features
 The following table shows the set of features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
