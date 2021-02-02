@@ -49,7 +49,7 @@ This topic contains the following information:
 Before you can begin to work with the electronic invoice functionality, the following data must be set up:
 
 - [Accounts receivable parameters](#arparameters)
-- [Form setup] (#formsetup)
+- [Form setup](#formsetup)
 - [Electronic invoice parameters](#einvoicesparameters)
 - [Electronic document properties](#edproperties)
 - [Customers](#customers)
