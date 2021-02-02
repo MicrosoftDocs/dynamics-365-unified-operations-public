@@ -1766,6 +1766,16 @@
           href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
         - name: Set up payment slip format
           href: localizations/tasks/set-up-payment-slip-format.md
+      - name: Egypt
+        items: 
+        - name: Egypt overview
+          href: localizations/egypt.md
+        - name: Configure registration numbers in Egypt
+          href: localizations/emea-egy-reg-numbers.md
+        - name: Configure invoice layout for Egypt
+          href: localizations/emea-egy-invoice-layout.md
+        - name: Customer electronic invoices in Egypt
+          href: localizations/emea-egy-e-invoices.md
       - name: Estonia
         items:
         - name: Estonia overview
