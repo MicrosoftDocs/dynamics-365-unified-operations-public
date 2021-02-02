@@ -51,7 +51,7 @@ For more general information about the Microsoft Dataverse Web API, see:
 
 - [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
 - [Use the Microsoft Dataverse Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
-- [Microsoft Dataverse developer guide](https://docs.microsoft.com/powerapps/developer/data-platform/
+- [Microsoft Dataverse developer guide](https://docs.microsoft.com/powerapps/developer/data-platform)
 
 The above documentation includes detail and developer guidance on using the Dataverse Web API, such as [managing authentication](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api), [performing operations](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api), [using Postman with the API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api), and [using change tracking or delta tokens](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) with the API.
 
