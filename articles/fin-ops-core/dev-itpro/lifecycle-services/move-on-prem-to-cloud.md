@@ -73,7 +73,7 @@ You should consider developing your updated interfaces in such a way that they c
     SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:<Azure SQL database server> /tdn:<target database name> /tu:<axdbadmin user from LCS> /tp:<axdbadmin password from LCS> /p:CommandTimeout=1200
     ```
 
-5. Restore the Admin account, Azure AD tenant ID and DMF shared directory values. Also remove the **SF** schema and its tables, if they are present.
+5. Restore the Admin account, Azure AD tenant ID, and DMF shared directory values. Also remove the **SF** schema and its tables, if they are present.
 
     ```sql
     UPDATE USERINFO SET SID='<preserved SID>', NETWORKALIAS='<preserved NETWORKALIAS>', NETWORKDOMAIN='<preserved NETWORKDOMAIN>', IDENTITYPROVIDER='<preserved IDENTITYPROVIDER>' WHERE ID = 'Admin'
