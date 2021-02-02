@@ -3,7 +3,7 @@
 
 title: Configure the code upgrade service in Lifecycle Services (LCS)
 description: This topic explains how to configure the <strong>Code upgrade </strong>tile in Lifecycle Services (LCS) to migrate your solution to the latest version of the Finance and Operations apps.
-author: tariqbell
+author: LaneSwenka
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265594
 ms.assetid: 964b5a15-9b9c-434c-a4c2-e14406ebfaeb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -40,10 +39,10 @@ Overview
 --------
 
 
-The code upgrade tool operates by connecting to your Azure DevOps project, locating your Trunk\\Main branch, branching to a new branch which will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete you can synchronize your developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
+The code upgrade tool operates by connecting to your Azure DevOps project, locating your Trunk\\Main branch, branching to a new branch that will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete, you can synchronize your developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
 
 
-Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see the [Extensibility home page](../extensibility/extensibility-home-page.md) and [Relax model restrictions to refactor overlayering into extensions](../extensibility/refactoring-over-layering.md).
+Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see the [Extensibility home page](../extensibility/extensibility-home-page.md) and [Relax model restrictions to refactor overlayering into extensions](../extensibility/refactoring-over-layering.md).
 
 ## Process
 ### Create the Trunk\\Main folder structure
@@ -66,11 +65,11 @@ For the code upgrade service to recognize your source code, your Azure DevOps pr
 
 ### Create a personal access token
 
-To connect to a Azure DevOps project, LCS is authenticated using a personal access token. Use the following steps to create a personal access token in Azure DevOps. If you have already configured your LCS project to connect to your Azure DevOps project, you can skip this section.
+To connect to an Azure DevOps project, LCS is authenticated using a personal access token. Use the following steps to create a personal access token in Azure DevOps. If you have already configured your LCS project to connect to your Azure DevOps project, you can skip this section.
 
 1. Sign in to visualstudio.com and locate your Azure DevOps project.
-2. In the top right corner, hover over your name, a menu appears, select **Security**.
-3. Click **Add** to create a new personal access token, give it a name, and then enter the amount of time that you want the token to last for. Click **Create Token**. 
+2. In the top-right corner, hover over your name, a menu appears, select **Security**.
+3. Select **Add** to create a new personal access token, give it a name, and then enter the amount of time that you want the token to last for. Select **Create Token**. 
 
    [![Code upgrade create token](./media/codeupgrademaketoken.png)](./media/codeupgrademaketoken.png)
 
@@ -83,15 +82,15 @@ To connect to a Azure DevOps project, LCS is authenticated using a personal acce
 
    [![LCS VSTS setup](./media/lcs_vsts_setup.png)](./media/lcs_vsts_setup.png)
 
-2. Enter the root URL for your Azure DevOps account and the access token created earlier, and then click **Continue**.
+2. Enter the root URL for your Azure DevOps organization and the access token created earlier, and then select **Continue**.
 
    [![LCS token](./media/lcstoken.png)](./media/lcstoken.png)
 
-3. Select the project within your Azure DevOps account that you want to connect to, and select **Continue**. 
+3. Select the project within your Azure DevOps organization that you want to connect to, and select **Continue**. 
    
    [![LCS select project](./media/lcs_selectproject.png)](./media/lcs_selectproject.png)
 
-4. On the **Review and save** page, click **Save**.
+4. On the **Review and save** page, select **Save**.
 
 ### Create an ax7.version file
 
@@ -110,22 +109,22 @@ For more information about how to identify which application version you have, s
 
    [![Code upgrade tile](./media/codeupgradetile.png)](./media/codeupgradetile.png)
 
-2. In the bottom left corner of the screen, click **Add**, and then enter a name and description. Select the version you are upgrading from as Microsoft Dynamics AX 7, and then click **Create**.
+2. In the bottom-left corner of the screen, select **Add**, and then enter a name and description. Select the version you are upgrading from as Microsoft Dynamics AX 7, and then select **Create**.
    -   If you are upgrading your code from Dynamics AX 2012 R3, select the version you are upgrading from. You will be prompted to upload a zipped version of your Dynamics AX 2012 R3 model store file.
    -   If the **Estimation Only** check box is selected, the tool only generates a report and does not check in or create a new code branch in Azure DevOps for you. You should use this option if you want to evaluate the potential size of the work involved in upgrading before you commit to the actual upgrade.
 
    [![New code branch](./media/codeupgrade_new.png)](./media/codeupgrade_new.png)
 
-3. Click **Analyze code** in the bottom right corner. The code upgrade process will start. This typically takes 40 minutes for a large solution to complete. When complete, return to the **Code upgrade** tile in LCS to view the results.
+3. Select **Analyze code** in the bottom-right corner. The code upgrade process will start. This process typically takes 40 minutes for a large solution to complete. When complete, return to the **Code upgrade** tile in LCS to view the results.
 4. The code upgrade service creates a new branch and checks in the upgraded code to your Azure DevOps project. After the upgrade process is complete, your code will exist in a new branch under the **Releases** folder. The branch name is suffixed with the date and time of the upgrade. 
 
    [![Code upgrade branch](./media/codeupgradebranch-300x192.png)](./media/codeupgradebranch.png)
 
-
 ### Merge Releases back into Trunk\\Main
 
-Once the upgraded code in Releases\\\<version number\> compiles sucessfully and you have completed your code migration and testing, you are ready to merge this branch back into Trunk\\Main. To do this, on your development environment in Visual Studio, open the Source control explorer pane then right-click on the **Releases\\\<version number\>** branch, and in the context menu go to **Branching and Merging**, and then on the sub-menu select **Merge**.
+Once the upgraded code in Releases\\\<version number\> compiles successfully and you have completed your code migration and testing, you are ready to merge this branch back into Trunk\\Main. To merge, on your development environment in Visual Studio, open the Source control explorer pane then right-click on the **Releases\\\<version number\>** branch, and in the context menu go to **Branching and Merging**, and then on the submenu select **Merge**.
 
 [![Merge release branch](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
 
-This will open the [Source Control Merge Wizard](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard), which will guide you through merging the Releases\\\<version number\> branch back into Trunk\\Main. 
+The [Source Control Merge Wizard](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard) opens, which guides you through merging the Releases\\\<version number\> branch back into Trunk\\Main.
+

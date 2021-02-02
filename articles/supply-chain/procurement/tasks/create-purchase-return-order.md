@@ -3,7 +3,7 @@
  
 title: Create a purchase return order
 description: This procedure shows you how to create a purchase return order by using the Credit note action to copy lines from a vendor invoice document to a new PO. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 06/25/2019
 ms.topic: business-process 
@@ -13,16 +13,15 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: PurchTable, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines   
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

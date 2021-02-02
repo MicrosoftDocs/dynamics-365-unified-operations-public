@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Italy
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -35,7 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides links to documentation resources for Italy. 
 
 - [VAT statements details](emea-ita-vat-statements-details.md)
-- [Black list report](emea-ita-black-list-report.md)
 - [Competence date for transactions](emea-ita-competence-date.md)
 - [Manual depreciation of fixed assets](emea-ita-depreciation-of-fixed-assets.md)
 - [Modello 770 report](emea-ita-modello770.md)
@@ -62,3 +60,6 @@ This topic provides links to documentation resources for Italy.
 - [Bills of exchange protest import](emea-ita-exil-protest-boe.md)
 - [Tax plafond](emea-ita-exil-tax-plafond.md)
 - [Customer electronic invoices](emea-ita-e-invoices.md)
+- [Yearly tax communication](emea-ita-yearly-tax-communication.md)
+- [Unified posting date control](emea-ita-post-date-control.md)
+

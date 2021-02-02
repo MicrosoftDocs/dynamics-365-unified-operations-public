@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (June 25, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for June 23, 2020.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 06/25/2020
 ms.topic: article
@@ -18,19 +18,20 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (June 23, 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3347. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
@@ -121,9 +122,9 @@ A DMF entity is now available for accrual suspensions.
 
 A new option will be available in **Human Resources parameters** to update the name of the Employee self service workspace to Self service.
 
-## Checklist entities included in Common Data Service
+## Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon within Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon within Dataverse.
 
 ## See also
 

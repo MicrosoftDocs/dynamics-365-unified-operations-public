@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Map components of the created format to data model elements (November 2016)
-description: The following procedure shows how a user in either the System administrator or Electronic reporting developer role can map data model elements to components of the created Electronic reporting (ER) configuration, which defines an electronic document format for the payments business domain. 
+description: This topic describes how to map data model elements to components of the created Electronic reporting (ER) configuration. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

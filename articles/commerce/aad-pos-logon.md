@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: global
 # ms.search.industry:
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.10
 ---

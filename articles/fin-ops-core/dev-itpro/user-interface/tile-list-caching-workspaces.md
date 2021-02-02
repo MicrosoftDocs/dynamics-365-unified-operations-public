@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tile and list caching for workspaces
-description: It's important that workspaces perform well, and that they be responsive (that is, the data that appears in a workspace is refreshed as expected and kept up to date). This topic discusses framework support for caching data that is used for tiles and lists.
+description: This topic discusses framework support for caching data that is used for tiles and lists, so that workspaces perform well and are responsive.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16341
 ms.assetid: c84d7929-4662-4abb-b345-ccc539d809d0

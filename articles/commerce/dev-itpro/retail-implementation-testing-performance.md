@@ -17,7 +17,6 @@ ms.search.form:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -64,7 +63,7 @@ When you investigate store performance, follow the suggestions in [Retail Channe
 
 ### Using telemetry data to find performance issues
 
-If you must troubleshoot the performance (especially slow SQL queries or SQL deadlocks), the environment diagnostics page in Microsoft Dynamics Lifecycle Services (LCS) shows valuable telemetry data. You can use this data to find potential performance issues in code, configuration, or design. For more details, see [How to use Environment Monitoring View Raw Logs](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/). That information should help you determine why some batch processes or form loads are slow.
+If you must troubleshoot the performance (especially slow SQL queries or SQL deadlocks), the environment diagnostics page in Microsoft Dynamics Lifecycle Services (LCS) shows valuable telemetry data. You can use this data to find potential performance issues in code, configuration, or design. For more details, see [Monitoring and diagnostics tools in Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics.md). That information should help you determine why some batch processes or form loads are slow.
 
 
 ### Performance testing

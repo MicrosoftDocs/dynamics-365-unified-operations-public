@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent (October 29, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 10/29/2019
 ms.topic: article
@@ -18,18 +18,19 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Talent
 
 ---
 # What's new or changed in Dynamics 365 Talent (October 29, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
@@ -49,13 +50,13 @@ Changes described in this section apply to build number 8.1.2586. The numbers in
 
 When you provision a new environment in Talent, **Delete parties if no roles exist** is turned on by default. When you delete a worker, the party associated with the worker is not removed unless this setting is on. This change limits duplicate records in the global address book when you need to import, change, or reimport workers.
 
-### Draft and cancelled leave requests should be allowed to be deleted in Common Data Service (376999)
+### Draft and cancelled leave requests should be allowed to be deleted in Dataverse (376999)
 
-With this change, you can now delete leave requests with a status of **Draft** or **Cancelled** in Common Data Service.
+With this change, you can now delete leave requests with a status of **Draft** or **Cancelled** in Dataverse.
 
-### Additional list values in custom fields aren't reflected in Common Data Service after clicking Apply on the Custom fields form (379599)
+### Additional list values in custom columns aren't reflected in Dataverse after clicking Apply on the Custom columns form (379599)
 
-When you add new list values to an existing custom field that has already synchronized with Common Data Service, they're now available in Common Data Serivce after you apply your changes in the **Custom fields** form.
+When you add new list values to an existing custom column that has already synchronized with Dataverse, they're now available in Common Data Serivce after you apply your changes in the **Custom columns** form.
 
 ### Apply onboarding checklists across legal entities when more than one employment exists (371270)
 

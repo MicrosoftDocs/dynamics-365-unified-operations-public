@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Germany
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -48,6 +47,9 @@ This topic includes information and links to resources that should be considered
 - [Electronic transmission of VAT declaration (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
 - [Elster Testmerker (PDF download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
 - [VAT declaration for Germany](emea-de-vat-declaration.md)
+
+## Electronic invoices in Germany
+- [Customer electronic invoices export](emea-deu-e-invoices.md)
 
 ## Credit memos originating from sales
 You can specify the label that appears on credit memos that originate from sales.

@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -131,6 +130,10 @@ Because the CSS code used in RTL and LTR layouts is generally the same except fo
 
 [Extend a theme to add module extensions](theme-module-extensions.md)
 
+[Override a module library component in a theme](override-theme-component.md)
+
 [Extend a theme from a base theme](extend-theme.md)
+
+[Add custom resources to your customization code](add-custom-resources.md)
 
 [CLI command reference](cli-command-reference.md)

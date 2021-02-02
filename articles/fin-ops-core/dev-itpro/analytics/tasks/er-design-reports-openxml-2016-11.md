@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Design a configuration for generating reports in OPENXML format (November 2016)
-description: This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. 
+description: This topic describes how to create a new Electronic reporting configuration that contains a template for generating electronic documents in OPENXML format. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/12/2019
@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolution
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

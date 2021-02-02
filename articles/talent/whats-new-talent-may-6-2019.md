@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent (May 6, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 05/06/2019
 ms.topic: article
@@ -18,18 +18,19 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 
 ---
 # What's new or changed in Dynamics 365 Talent (May 6, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
@@ -51,9 +52,9 @@ Changes described in this section apply to build number 8.1.2282. The numbers in
 
 For additional details about Platform update 26 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 26 (May 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-In this week's release, the following entities now support custom fields: Benefit calc frequency, Benefit calc rate, Benefit type, Work calendar, Work calendar holiday, Pay cycle, and Worker identification types.
+In this week's release, the following tables now support custom columns: Benefit calc frequency, Benefit calc rate, Benefit type, Work calendar, Work calendar holiday, Pay cycle, and Worker identification types.
 
 ### Leave mass enrollment, changing the tier basis to "Seniority date" doesn't refresh the initial accrual rate (318526)
 
@@ -63,13 +64,13 @@ When you mass enroll employees and change the tier basis, the initial accrual no
 
 Changes in this release eliminate duplication of placeholders when workflow notifications are sent.
 
-### Dimension fields aren't updated when using "Open in Excel" (176261)
+### Dimension columns aren't updated when using "Open in Excel" (176261)
 
 With this release, you can now update financial dimension using **Open in Excel** from the **Worker** page. 
 
-### Worker address created in Common Data Service isn't synced to Talent (317555)
+### Worker address created in Dataverse isn't synced to Talent (317555)
 
-With this change, addresses created in Common Data Service are updated in Talent: Core HR.
+With this change, addresses created in Dataverse are updated in Talent: Core HR.
 
 
 ## In preview

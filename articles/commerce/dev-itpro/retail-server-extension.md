@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -39,6 +38,9 @@ This document explains how to create a new Commerce Scale Unit application progr
 This topic applies to Retail SDK version 10.0.10 and earlier.
 
 The Retail software development kit (SDK) includes only a few samples of end-to-end Commerce Scale Unit extensions that include the Commerce Runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the RetailSDK\\SampleExtensions\\RetailServer folder.
+
+> [!NOTE]
+> The CommerceController extension model will be soon deprecated. You will need to migrate all Retail server extensions to IController. Having both CommerceController and IController is not supported. For more information about IController, see [Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-server-icontroller-extension).
 
 ## End-to-end sample repository in the Retail SDK
 
@@ -65,10 +67,13 @@ The following illustration shows the class structure of the extension.
 
 ![Commerce Scale Unit extension class diagram](media/RSClassFlow.png)
 
+> [!NOTE]
+> Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
+
 ### Steps
 
 1. Before you create the Commerce Scale Unit extension, create the CRT extension. Commerce Scale Unit APIs should have no logic except logic that calls the CRT with the parameters.
-2. Create a new C\# class library project that uses the Microsoft .NET Framework version 4.6.1 or later as the target framework.
+2. Create a new C\# class library project that uses the Microsoft .NET Framework version netstandard 2.0 as the target framework.
 3. In the Commerce Scale Unit extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request and response. It also lets you use the entities from the Commerce Scale Unit extension project.
 4. In the Commerce Scale Unit extension project, create a new controller class that extends **NonBindableOperationController** or **CommerceController**. The base class depends on your scenario. This controller class will contain the method that must be exposed by the Commerce Scale Unit API. Inside the controller class, add methods to call the CRT request.
 

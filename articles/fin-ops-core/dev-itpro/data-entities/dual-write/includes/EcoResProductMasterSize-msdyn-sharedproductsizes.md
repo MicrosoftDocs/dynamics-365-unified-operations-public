@@ -1,8 +1,8 @@
 ## Product master sizes to msdyn_sharedproductsizes
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
-Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---
 PRODUCTMASTERNUMBER | >> | msdyn_globalproduct.msdyn_productnumber | 
 PRODUCTSIZEID | >> | msdyn_productsize.msdyn_productsize | 

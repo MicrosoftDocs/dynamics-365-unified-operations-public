@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -275,6 +274,8 @@ export default ProductFeature;
 ## Additional resources
 
 [Data actions overview](data-actions.md)
+
+[Data action cache options](data-action-cache.md)
 
 [Test data actions with mocks](test-data-action-mocks.md)
 

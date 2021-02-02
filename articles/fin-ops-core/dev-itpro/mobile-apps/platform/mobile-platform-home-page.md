@@ -3,9 +3,9 @@
 
 title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
-author: RobinARH
+author: robinarh
 manager: AnnBe
-ms.date: 09/24/2020
+ms.date: 10/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: 
@@ -155,8 +154,8 @@ During development it can be useful to attach a debugger to get more detailed in
 
 ## Troubleshooting the app
 
-### No support for iOS14 due to issues with date and time controls
-Due to changes introduced in iOS14, date and time controls in the Finance and Operations mobile app no longer work after a user updates their device to iOS14. After moving to iOS14, the date picker and the time picker do not open by touch or by using the keyboard, and the user is unable to enter in a new date or time or clear out the existing value. This issue is currently being investigated.
+### **[Resolved]** - No support for iOS14 due to issues with date and time controls
+Version 2.2.8 of the Finance and Operations mobile app fixes the known issues with the date and time pickers in iOS14. Ensure that you have the latest version of the app if you are experiencing issues running the application on iOS14.  
 
 ### The Mobile Client app is not working on particular devices
 Sometimes the cache associated with the app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.

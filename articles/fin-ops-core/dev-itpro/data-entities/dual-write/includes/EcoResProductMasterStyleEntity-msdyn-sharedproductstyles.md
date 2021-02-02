@@ -1,8 +1,8 @@
 ## Product master styles to msdyn_sharedproductstyles
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
-Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---
 PRODUCTMASTERNUMBER | >> | msdyn_globalproduct.msdyn_productnumber | 
 PRODUCTSTYLEID | >> | msdyn_productstyle.msdyn_productstyle | 

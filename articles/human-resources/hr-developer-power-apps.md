@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core;Experience Apps;Human Resources
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -30,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Extend with Power Apps and Power Automate
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This article describes some examples of extensibility scenarios for Microsoft Dynamics 365 Human Resources that use Microsoft Power Apps and Microsoft Power Automate. You can import the solution package that is associated with each example into your Power Apps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
 
@@ -53,7 +54,7 @@ To download the **Integration with Microsoft 365, Power Automate** app, go to [I
 
 The **Power Automate – SQL Connect and execute** template connects to Microsoft SQL Server and enables SQL queries to be run.
 
-Although this template reads and updates SQL tables, you can extend it and use it for other scenarios. For example, you can use it to fill a staging table in Common Data Service with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.
+Although this template reads and updates SQL tables, you can extend it and use it for other scenarios. For example, you can use it to fill a staging table in Dataverse with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.
 
 Advanced Query is integrated with Flow to enable Data transformation and incremental push.
 

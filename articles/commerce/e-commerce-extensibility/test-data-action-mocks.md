@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -154,6 +153,8 @@ If no action mock file name is specified, the package name is used to search for
 ## Additional resources
 
 [Data actions overview](data-actions.md)
+
+[Data action cache options](data-action-cache.md)
 
 [Page load data actions](page-load-data-action.md)
 

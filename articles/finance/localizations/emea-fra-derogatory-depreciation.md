@@ -17,7 +17,6 @@ ms.search.form: AssetPosting, AssetBook, AssetBookTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30321
 ms.search.region: France

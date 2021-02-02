@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -132,7 +131,7 @@ In the previous section, you created a search service. In this section, you will
 
 ### <a name="searchdatasource"></a>Create a data source
 
-1. Open Postman, and create a new POST request. If you're unfamiliar with this tool, see [Explore Azure Cognitive Search REST APIs using Postman](/azure/search/search-get-started-postman.md).
+1. Open Postman, and create a new POST request. If you're unfamiliar with this tool, see [Explore Azure Cognitive Search REST APIs using Postman](/azure/search/search-get-started-postman).
 2. In the **Enter request URL** field, enter `https://[AzureSearchServicename].search.windows.net/datasources?api-version=2017-11-11`. Replace **\[AzureSearchServicename\]** with the name of the search service that you created in the [Create a search service](#searchservice) section of this topic (for example, **mycustomhelpsearch**).
 3. On the **Headers** tab, set **"Content-type"** to **application/json**, and set **api-key** to the key from your Azure Cognitive Search service. You can find the key in **Access keys** under **Settings** on the left side of the search service.
 4. In the **Authorization** tab, set **Type** to **No Auth**.

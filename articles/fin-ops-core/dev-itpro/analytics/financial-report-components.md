@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial report components
-description: This article describes how the components, or building blocks, of report definitions are used in financial reporting. These building blocks include row definitions, column definitions, and reporting tree definitions. The article explains how to organize and lock building blocks, and how to work with building block groups. 
+description: This article describes how the components, or building blocks, of report definitions are used in financial reporting.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
@@ -18,7 +18,6 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a

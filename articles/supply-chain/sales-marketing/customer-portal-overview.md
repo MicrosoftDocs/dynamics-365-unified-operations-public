@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -28,6 +27,8 @@ ms.dyn365.ops.version: Release 10.0.13
 ---
 
 # Customer portal for Dynamics 365 Supply Chain Management overview
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## What is the Customer portal?
 
@@ -67,7 +68,7 @@ The Customer portal is provided as a Power Apps portals template. It depends on 
 
 [Power Apps portals](https://docs.microsoft.com/powerapps/maker/portals/overview) is a feature that lets users create an externally facing website that people from outside the organization can sign in to. Little to no coding is required to make portals. The Customer portal is one of many [Dynamics 365 portal templates](https://docs.microsoft.com/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) that are available from Microsoft.
 
-[Dual-write](https://docs.microsoft.com/powerapps/maker/portals/overview) is an out-of-box infrastructure product that provides near-real-time interaction between model-driven apps in Dynamics 365 and Finance and Operations apps. Dual-write provides bidirectional integration between Finance and Operations apps and Common Data Service. Therefore, it provides an integrated user experience across the apps. The Customer portal depends on entities that are synced with dual-write. Before data from Supply Chain Management can be surfaced in the Customer portal, dual-write must be enabled for all the appropriate entities.
+[Dual-write](https://docs.microsoft.com/powerapps/maker/portals/overview) is an out-of-box infrastructure product that provides near-real-time interaction between customer engagements apps and Finance and Operations apps. Dual-write provides bidirectional integration between Finance and Operations apps and Microsoft Dataverse. Therefore, it provides an integrated user experience across the apps. The Customer portal depends on tables that are synced with dual-write. Before data from Supply Chain Management can be surfaced in the Customer portal, dual-write must be enabled for all the appropriate tables.
 
 ![Customer portal dependencies](media/customer-portal-elements.png "Customer portal dependencies")
 

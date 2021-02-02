@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  SysOperationTemplateForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -54,7 +53,12 @@ When the job runs, it has a commit size of 100. In other words, it will try to c
 
 ## Possible user impact
 
-Users might be affected if the on-hand entries cleanup job deletes all the records for a given level (such as the license plate level). In this case, the functionality for seeing that inventory was previously available on hand at a license plate might not work as expected, because the relevant on-hand entries are no longer available. (That functionality checks the condition **Quantity \<\> 0** in the **Dimension display** settings when users view on-hand information.) However, the performance improvement that the cleanup job provides should make up for this small loss in functionality.
+Users might be affected if the on-hand entries cleanup job deletes all the records for a given level (such as the license plate level). In this case, the functionality for seeing that inventory was previously available on-hand at a license plate might not work as expected because the relevant on-hand entries are no longer available. This can, for example, be experienced in the following situations:
+
+- On the **On-hand list**, when the user deselects the condition **Quantity \<\> 0** or selects the condition **Closed transactions** in the **Dimensions display** settings.
+- In a **Physical inventory by inventory dimension** report for past periods, when the user sets the **As of date** parameter.
+
+However, the performance improvement that the cleanup job provides should make up for these small losses in functionality.
 
 ## <a name="max-execution-time"></a>Make the Maximum execution time setting available
 

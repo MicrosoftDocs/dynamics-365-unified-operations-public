@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent (July 9, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 07/09/2019
 ms.topic: article
@@ -18,18 +18,19 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
 
 ---
 # What's new or changed in Dynamics 365 Talent (July 9, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
@@ -55,9 +56,9 @@ Changes described in this section apply to build number 8.1.2374.
 
 For more details about Platform update 28 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 28 (July 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
-### Entity support for custom fields in Common Data Service 
+### Table support for custom columns in Dataverse 
 
-The following entities support custom fields: 
+The following tables support custom columns: 
 
 - **Compensation fixed plan**
 - **Compensation reference point setup**
@@ -67,14 +68,14 @@ The following entities support custom fields:
 - **Fixed compensation event**
 - **Compensation grid**
 
-To view all updated entities in Talent:
+To view all updated tables in Talent:
 
-1. Select **System administration**, select **Links**, and then select **Common data service configuration**.
-2. Select the **CDS entity name** drop-down menu. All entities listed are on the latest version. 
+1. Select **System administration**, select **Links**, and then select **Dataverse configuration**.
+2. Select the **CDS table name** drop-down menu. All tables listed are on the latest version. 
 
-###  Full name added to Worker entity in Common Data Service
+###  Full name added to Worker table in Dataverse
 
-The **Full name** field has been added to the **Worker** entity.
+The **Full name** column has been added to the **Worker** table.
 
 ### Full-time equivalent higher than 1.0
 
@@ -110,9 +111,9 @@ Organizations can offer many different types of leave to employees. However, it 
 
 A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews, which their employees co-manage. In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports. 
 
-### Entities supporting custom fields
+### Tables supporting custom columns
 
-The following entities will be enabled for custom fields in Common Data Service: 
+The following tables will be enabled for custom columns in Dataverse: 
 
 - **Leave type**
 - **Worker bank account**

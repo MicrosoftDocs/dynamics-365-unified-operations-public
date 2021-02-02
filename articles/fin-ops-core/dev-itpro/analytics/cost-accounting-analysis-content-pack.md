@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost accounting analysis Power BI content
-description: This topic describes what is included in the Cost accounting analysis Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+description: This topic describes what is included in the Cost accounting analysis Power BI content.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/02/2019
@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270274
 ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78

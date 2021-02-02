@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Review configurations to generate reports in Office format that have embedded images
-description: To complete these steps, you must first complete the steps in the "ER Make reports in MS Office formats with embedded images (Part 1 - Set up parameters)" task guide. 
+description: This topic describes how to design reporting configurations to generate electronic documents that contain embedded images. (Part 1 - Set up parameters). 
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/13/2017
@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

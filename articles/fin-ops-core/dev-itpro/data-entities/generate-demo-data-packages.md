@@ -3,7 +3,7 @@
 
 title: Generate demo data by using data packages
 description: This topic explains how to use demo data packages to generate data for your system.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 06/06/2018
 ms.topic: article
@@ -18,12 +18,11 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77523
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 

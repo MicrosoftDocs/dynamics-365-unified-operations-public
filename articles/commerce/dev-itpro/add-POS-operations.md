@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -83,7 +82,7 @@ This section explains how to create a sample operation that does simplified end-
         }
     }
     ```
-    
+
 ### Create the operation response class
 
 1. In the **Operations** folder, create a typescript (.ts) file that is named **EndOfDayOperationResponse.ts**.
@@ -124,7 +123,7 @@ This section explains how to create a sample operation that does simplified end-
 
    - supportedRequestType
    - executeAsync
-   
+
     ```typescript
     export default class EndOfDayOperationRequestHandler<TResponse extends EndOfDayOperationResponse> extends ExtensionOperationRequestHandlerBase<TResponse> {}
     ```

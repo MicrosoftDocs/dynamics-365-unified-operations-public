@@ -5,7 +5,7 @@ title: Prepare for go-live
 description: This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 09/02/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -101,7 +100,7 @@ Regardless of whether the environment is a cloud-hosted environment or a downloa
 
 ## FastTrack Go-live assessment
 
-All customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your Production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md).
+All customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md).
 
 About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist. 
 
@@ -123,6 +122,9 @@ You can cancel an environment deployment request while it is in a **Queued** sta
 This will set the environment back into a state of **Configure** and allow you to make changes to the configuration, such as selecting a different data center or environment topology.
 
 ## Requesting the production environment
+
+> [!NOTE]
+> The production environment is used exclusively for running your business operations and shouldn't be used for testing. You will be able to perform the cutover, and if planned, to mock the cutover in production. To test the solution, you must use a UAT environment, which is designed with the necessary elements and services for testing.
 
 After you've completed the analysis, design and develop, and test phases in the LCS methodology, and the go-live assessment has concluded that the project is ready, you can request your production environment.
 

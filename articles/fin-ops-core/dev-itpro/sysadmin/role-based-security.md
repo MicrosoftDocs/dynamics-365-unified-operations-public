@@ -3,9 +3,9 @@
 
 title: Role-based security
 description: This topic provides an overview of the elements of role-based security. 
-author: ChrisGarty
+author: peakerbl
 manager: AnnBe
-ms.date: 07/18/2019
+ms.date: 01/27/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,12 @@ ms.search.form: SysSecRolesEditUsers, SysSecConfiguration, SysUserGroupInfo, Sys
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15211
 ms.assetid: 48cfdd5a-7d04-4969-93ac-6cd6d10d5a09
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cgarty
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -74,7 +73,7 @@ You can assign related duties to separate roles. These duties are said to be seg
 Default duties are provided. The administrator can modify the privileges that are associated with a duty, or create new duties.
 
 ## Privileges
-In the security model, a privilege specifies the level of access that is required to perform a job, solve a problem, or complete an assignment. Privileges can be assigned directly to roles, however we recommend that you only assign duties to roles. This is so that the privileges are first grouped together into a duty, which makes it easier maintenance. 
+In the security model, a privilege specifies the level of access that is required to perform a job, solve a problem, or complete an assignment. Privileges can be assigned directly to roles, however we recommend that you only assign duties to roles. This is so that the privileges are first grouped together into a duty, which makes it easier to maintain. 
 
 A privilege contains permissions to individual application objects, such as user interface elements and tables. For example, the **Cancel payments** privilege contains permissions to the menu items, fields, and tables that are required to cancel payments. 
 

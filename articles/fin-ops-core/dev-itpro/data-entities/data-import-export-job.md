@@ -5,7 +5,7 @@ title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -136,7 +135,7 @@ A job can be secured by roles, users, and legal entity at the same time.
 You can run a job one time by selecting the **Import** or **Export** button after you define the job. To set up a recurring job, select **Create recurring data job**.
 
 > [!NOTE]
-> An import or an export job can be run asynchronously by selecting the **Import** or **Export** button. Running in async uses the async framework, which is different than batch framework. However, like batch framework, async framework can also undergo throttling and as a result, the job may not execute immediately. The jobs can also be run synchronously by selecting **Import now** or **Export now**. This starts the job immediately and is useful if async or a batch does not start due to throttling. The jobs can also be executed in a batch by choosing the **Run in batch** option. Batch resources are subject to throttling, so the batch job might not start immediately. The async option is useful when users interact directly with the user interface and are not power users to understand batch scheduling. Using a batch is an alternate option if large volumes need to be imported or exported. Batch jobs can be scheduled to run on a specific batch group, which allows more control from a load balancing perspective. If async and batch are both undergoing throttling due to high resource utilization on the system, then as an immediate workaround, the synchronous version of import/export can be used. The synchronous option will start immediately and will block the user interface because its executing synchronously. The browser window must remain open when the synchronous operation is in progress.
+> An import or an export job can be run by selecting the **Import** or **Export** button. This will schedule a batch job to run only once. The job may not execute immediately if batch service is throttling due to the load on the batch service. The jobs can also be run synchronously by selecting **Import now** or **Export now**. This starts the job immediately and is useful if the batch does not start due to throttling. The jobs can also be scheduled to execute at a later time. This can be done by choosing the **Run in batch** option. Batch resources are subject to throttling, so the batch job might not start immediately. Using a batch is the recommended option because it will also help with large volumes of data that need to be imported or exported. Batch jobs can be scheduled to run on a specific batch group, which allows more control from a load balancing perspective.
 
 ## Validate that the job ran as expected
 The job history is available for troubleshooting and investigation on both import and export jobs. Historical job runs are organized by time ranges.
@@ -201,7 +200,7 @@ The job history clean-up functionality in data management must be used to schedu
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-The functionality must be enabled in feature management and then can be accessed from **Data management \> Job history cleanup**.
+The **Execution history cleanup** feature must be enabled in feature management and then can be accessed from **Data management \> Job history cleanup**.
 
 ### Scheduling parameters
 
@@ -218,3 +217,36 @@ moving window thereby, always leaving the history for the specified number of da
 
 > [!NOTE]
 > If records in the staging tables are not cleaned up completely, ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any clean up execution the job will only clean up as many execution ID's as is possible within the provided maximum hours. In order to continue cleanup of any remaining staging records, the job must be scheduled to run periodically.
+
+## Job history clean up and archival (available for preview in Platform update 39 or version 10.0.15)
+The job history clean up and archival functionality replaces the previous versions of the clean up functionality. This section will explain these new capabilities.
+
+One of the main changes to the clean up functionality is the use of system batch job for cleaning up the history. The use of system batch job allows Finance and Operations apps to have the clean up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at 12 midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval.
+
+> [!NOTE]
+> Because this functionality is in preview, the system batch job will not delete any execution history until it is enabled via the flight DMFEnableExecutionHistoryCleanupSystemJob. When the feature is generally available in a future release, this flight will not be required and the system batch job will start to purge and archive after the system is ready, based on the defined schedule as explained above. 
+
+> [!NOTE]
+> In a future release, the previous versions of the clean up functionality will be removed from Finance and Operations apps.
+
+The second change in the clean up process is the archival of the purged execution history. The clean up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for 7 days in the blob during which time it can be downloaded. The default longevity of 7 days for the archived file can be changed to a maximum of 90 days in the parameters.
+
+### Changing the default settings
+This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. The staging clean up feature must also be turned on in feature management.
+
+To change the default setting for the longevity of the archived file, go to the data management workspace and select **Job history cleanup**. Set **Days to retain package in blob** to a value between 7 and 90 (inclusive). This will take effect on the archives that are created after this change was made.
+
+### Downloading the archived package
+This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. The staging clean up feature must also be turned on in feature management.
+
+To download the archived execution history, go to the data management workspace and select **Job history cleanup**. Select **Package backup history** to open the history form. This form shows the list of all archived packages. An archive can be selected and downloaded by selecting **Download package**. The downloaded package will be in the DIXF package format and contain the following files:
+
+-   The entity staging table file
+-   DMFDEFINITIONGROUPEXECUTION
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+-   DMFEXECUTION
+-   DMFSTAGINGEXECUTIONERRORS
+-   DMFSTAGINGLOG
+-   DMFSTAGINGLOGDETAILS
+-   DMFSTAGINGVALIDATIONLOG
+

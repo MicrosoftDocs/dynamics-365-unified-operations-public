@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6154
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ejchoGIT
+ms.author: ejcho
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
 

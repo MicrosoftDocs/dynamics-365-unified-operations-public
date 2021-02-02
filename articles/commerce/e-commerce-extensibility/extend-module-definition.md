@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -80,4 +79,10 @@ After deployment, both the base module and the extended module appear in Microso
 
 [Interactive components overview](interactive-components.md)
 
+[Mock the signed-in state during local development](mock-sign-in.md)
+
+[Configure module properties to be shown based on context](configure-properties-context.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
+
+[Set up Azure Key Vault for secure key management](set-up-key-vault.md)

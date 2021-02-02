@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 

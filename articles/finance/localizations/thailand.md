@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Thailand
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -37,6 +36,8 @@ This topic provides links to documentation resources for Thailand.
 - [Stock card reports](apac-tha-stock-card-reports.md)
 - [Substitution/adjustment tax invoice](apac-tha-substitution-and-adjustment-invoices.md)
 - [Thailand unrealized VAT](apac-tha-unrealized-vat.md)
+- [Tax branch dimensions](apac-tha-tax-branch-dimensions.md)
+- [Sales VAT report](apac-tha-sales-vat-report.md)
 - [Withholding tax](apac-tha-withholding-tax.md)
 
 ## Additional resources

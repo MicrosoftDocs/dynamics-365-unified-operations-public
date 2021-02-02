@@ -2,7 +2,7 @@
 # required metadata
 
 title: Exclude test packages from build output
-description: This topic explains how you can prevent specific packages from being included in the deployable package in the build output that the automated build process generates.
+description: This topic explains how to prevent specific packages from being included in the package in the build output that the automated build process generates.
 author: jorisdg
 manager: AnnBe
 ms.date: 05/15/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid:

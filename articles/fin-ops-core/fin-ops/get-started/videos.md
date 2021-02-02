@@ -5,7 +5,7 @@ title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
 author: sericks007
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -88,6 +87,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [How to use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI)
 - [How to create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) 
 - [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk)
+- [The improved Excel experience in Regression Suite Automation Tool (RSAT) 2.0](https://youtu.be/fcEkSIVQ1Bg)
 
 
 ## Videos for Dynamics 365 Finance
@@ -152,6 +152,9 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 - [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
 - [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
+
+### Product information management
+- [Change management capabilities](https://youtu.be/N313FqvRuBc)
 
 ### Production control
 

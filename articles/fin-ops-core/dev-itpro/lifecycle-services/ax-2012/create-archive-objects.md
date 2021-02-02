@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17931
 ms.assetid: 4d3e61d1-48aa-4e39-8112-6d211a1d0209
@@ -190,7 +189,7 @@ The relationship tree of an Archive Object can be very complex. In order to arch
 
 Verify the relationship tree, and assess the functional effect of the tree on your Microsoft Dynamics AX application. As a result of your assessment, you may have to manually add, modify, or remove some relations and rules. For example, click **Show versions** to display the Archive Object from the default template that is included with IDMF. Compare the relationship tree from the template with the relationship tree you created in the previous procedure. The relationship tree in the **WMSOrder** archive template differs from the **WMSOrder** Archive Object you created. The difference is caused by the modification made to the default template, based on the functionality assessment of the Microsoft Dynamics AX application. As demonstrated by this walkthrough, an Archive Object you create through discovery may not match the default template that is included with IDMF. Be careful with your selection of the driver table. If you select a table such as **ProdTable**, the relationship tree can go many levels deep, spanning many tables on each level. Such an Archive Object creates a complex relationship tree and increases the potential for error, and for resulting data corruption and application downtime. 
 
-    ![IDMF Archive Object with Invalid Tables](./media/idmfarchiveobjectwithinvalidtables.png)
+![IDMF Archive Object with Invalid Tables](./media/idmfarchiveobjectwithinvalidtables.png)
 
 The default template that is included with IDMF may not match the metadata of your Microsoft Dynamics AX implementation. A table in the default template that is not found in the metadata from the production database is marked invalid. An invalid table appears with a dotted red border, as shown in Figure 2. You must remove invalid tables. When you use fields from valid tables to create relations and rules, IDMF validates those fields. A field with a disabled configuration key is considered invalid. A valid table with invalid fields is shown with a yellow dotted border. You must either remove valid tables with invalid rules from the relationship tree or fix the relationships before you can save the Archive Object.
 

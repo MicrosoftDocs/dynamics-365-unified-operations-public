@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Human Resources
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -89,16 +88,16 @@ Download and install the Finance and Operations mobile app:
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## View team members by using the My team mobile workspace
-1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that he or she has.
-2.	Select a team member. The **Team member summary** page appears. The information on this page includes the team member's birth date, seniority date, years of service, years in his or her current position, and compensation information.
+1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that the member has.
+2.	Select a team member. The **Team member summary** page appears. The information on this page includes the team member's birth date, seniority date, years of service, years in the current position, and compensation information.
 
 ## View extended team members by using the My team mobile workspace
-1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that he or she has.
+1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that the member has.
 1.	Select the **Direct reports** link. A list of your extended team is shown.
-1.	Select a team member. The **Team member summary** page appears. The information on this page includes the team member's birth date, seniority date, years of service, years in his or her current position, and compensation information.
+1.	Select a team member. The **Team member summary** page appears. The information on this page includes the team member's birth date, seniority date, years of service, years in the current position, and compensation information.
 
 ## Send praise about team members by using the My team mobile workspace
-1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that he or she has.
+1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that the member has.
 1.	Select a team member. The **Team member summary** page appears.
 1.	Select **Send praise**. 
 1. Enter the text of the praise that you want to send. 

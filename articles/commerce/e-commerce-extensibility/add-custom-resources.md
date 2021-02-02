@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -84,5 +83,7 @@ const url = `${getAsset('webfonts/fa-solid-900.woff', this.props.context.request
 [Configure theme style presets](theme-style-presets.md)
 
 [Extend a theme to add module extensions](theme-module-extensions.md)
+
+[Override a module library component in a theme](override-theme-component.md)
 
 [Extend a theme from a base theme](extend-theme.md)

@@ -3,7 +3,7 @@
 
 title: Upgrade from AX 2012 - Estimate effort by using the Code upgrade service
 description: This topic explains how to use the Code upgrade service in LCS to estimate the tasks and effort that are required in order to upgrade a code base from Microsoft Dynamics AX 2012 to Finance and Operations.
-author: tariqbell
+author: LaneSwenka
 manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 

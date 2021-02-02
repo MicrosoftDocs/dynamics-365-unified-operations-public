@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (October 16, 2018)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-10-22
 ms.dyn365.ops.version: Talent
 
@@ -52,7 +51,7 @@ The following updates have been made in this release:
 - Changes to worker hire actions so that they are no longer "stuck" in **Workflow complete** state.
 - Employment record can now be created without an employment start date.
 - The Dynamics 365 Talent registration date for a course shown in Employee self-service now applies the time zone offset to the date.
-- Excel files can be imported multiple times without any errors using **Employee Entity**.
+- Excel files can be imported multiple times without any errors using **Employee Table**.
 
 ## Known issue
 

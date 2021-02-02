@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -100,3 +99,5 @@ To modify page metadata, follow these steps.
 [Enrich a category landing page](enrich-category-page.md)
 
 [Verify page content accessibility](verify-accessibility.md)
+
+[Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)

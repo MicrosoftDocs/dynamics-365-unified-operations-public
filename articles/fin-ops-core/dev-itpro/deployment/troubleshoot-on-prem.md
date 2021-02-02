@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
 manager: AnnBe
-ms.date: 10/02/2020
+ms.date: 10/29/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang:
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm:
 ms.custom: 60373
 ms.assetid:
@@ -499,6 +498,29 @@ The local agent user can't connect to the SQL Server instance or the database.
     uswelcs1lcm.blob.core.windows.net:443
     uswedpl1catalog.blob.core.windows.net:443
     ```
+
+## Infrastructure scripts errors
+
+### Issue
+
+**Error:** When you run Test-D365FOConfiguration.ps1 or Test-D365FOConfiguration-AllVMs.ps1, you receive the message:
+
+```stacktrace
+"Get-LocalGroupMember : Failed to compare two elements in the array.
+At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
++         Get-LocalGroupMember -Group 'Administrators' | `
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand" 
+```
+
+**Reason:** There is a bug in the PowerShell commandlet, Get-LocalGroupMember, which causes it to fail when there are entries that not valid.
+
+**Steps:** On the machine where the script is failing, open **local users and groups**. Go to the administrators group and remove any entries that have an entry like the one highlighted in the following image.
+
+![Invalid SID](media/InvalidSID.png)
+
+Do this on all of the machines that receive this error. After the changes are complete, try running the script again.
 
 ## <a name="restartapplications"></a>Restart applications (such as AOS)
 

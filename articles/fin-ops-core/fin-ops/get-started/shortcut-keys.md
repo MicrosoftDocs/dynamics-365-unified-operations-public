@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
@@ -245,7 +244,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move up/down a page in the lookup                                                                                       | Page up / Page down              |
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
 
-## [Task recorder](../../dev-itpro/user-interface/task-recorder.md)shortcuts 
+## [Task recorder](../../dev-itpro/user-interface/task-recorder.md) shortcuts 
 
 | To do this                                                                    | Press                      |
 |-------------------------------------------------------------------------------|----------------------------|

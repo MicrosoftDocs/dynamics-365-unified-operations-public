@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (July 08, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for July 8, 2020.
-author: Darinkramer
+author: Andreabichsel
 manager: AnnBe
 ms.date: 07/08/2020
 ms.topic: article
@@ -18,19 +18,20 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (July 8, 2020)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3382. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
@@ -74,9 +75,9 @@ Created and modified system fields are now enabled on the **WorkCalendarEmployme
 
 This release corrects an error (null reference) in streamlined employee entry when you hire an employee using the option to **Hire and add details**.
 
-## Changes made in the Common Data Service Worker entity don't reflect in Human Resources (455652)
+## Changes made in the Dataverse Worker entity don't reflect in Human Resources (455652)
 
-Changes made to the following fields in the **Worker** entity in Common Data Service will now show up in Human Resources:
+Changes made to the following fields in the **Worker** entity in Dataverse will now show up in Human Resources:
 
 - **Works from home**
 - **Seniority date**
@@ -134,9 +135,9 @@ A DMF entity is now available for accrual suspensions.
 
 ## Coming soon
 
-## Checklist entities included in Common Data Service
+## Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Dataverse.
 
 ## See also
 

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid:
@@ -34,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can automate the process of building X++ code and creating deployable packages on any build agent that run on Microsoft Windows. These agents include [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops). This approach helps you avoid the setup, maintenance, and cost of deploying build virtual machines (VMs). It also lets you reuse the existing setup of build agents to run other .NET build automation.
+You can automate the process of building X++ code and creating deployable packages on any build agent that run on Microsoft Windows. These agents include [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted). This approach helps you avoid the setup, maintenance, and cost of deploying build virtual machines (VMs). It also lets you reuse the existing setup of build agents to run other .NET build automation.
 
 > [!NOTE]
 > This feature is limited to compilation and packaging. There is no support for X++ unit testing (SysTest), database synchronization, or other features that require the runtime (Application Object Server \[AOS\]) or its components.
@@ -62,16 +61,16 @@ The following packages can be downloaded from the Shared asset library:
 
 Download these packages from LCS, and add them to an Azure Artifacts feed in the Azure DevOps organization where the builds will run. For more information about how to create an Azure Artifacts feed and add NuGet packages, see these topics:
 
-- [Get started with NuGet packages in Azure DevOps Services and TFS](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops)
-- [Create a feed](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops#create-a-feed)
-- [Create and publish your own NuGet package](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops#create-and-publish-your-own-nuget-package)
+- [Get started with NuGet packages in Azure DevOps Services and TFS](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget)
+- [Create a feed](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget#create-a-feed)
+- [Create and publish your own NuGet package](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget#create-and-publish-your-own-nuget-package)
 
 > [!NOTE]
-> Free Azure DevOps organizations have limited storage for Azure Artifacts. Consider deleting old and unused versions to free up storage capacity. For more information, see [Sign up for Azure Artifacts](https://docs.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts?view=azure-devops#billing-and-free-monthly-usage).
+> Free Azure DevOps organizations have limited storage for Azure Artifacts. Consider deleting old and unused versions to free up storage capacity. For more information, see [Sign up for Azure Artifacts](https://docs.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts#billing-and-free-monthly-usage).
 
 To identify which packages should be used during the build, and where they can be found, you must provide a nuget.config file and a packages.config file during the build. We recommend that you create these files and add them to the source control repository. The files can be stored anywhere in source control, because the paths of these files are explicit inputs for the NuGet command.
 
-The nuget.config file provides NuGet with the source feed where the packages can be found. The packages.config file specifies the packages and their versions. To build against a newer version, you just have to update the versions in the packages.config file. For more information, including a sample nuget.config file, see [Restore Package Management NuGet packages in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/packages/nuget-restore?view=azure-devops).
+The nuget.config file provides NuGet with the source feed where the packages can be found. The packages.config file specifies the packages and their versions. To build against a newer version, you just have to update the versions in the packages.config file. For more information, including a sample nuget.config file, see [Restore Package Management NuGet packages in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/packages/nuget-restore).
 
 The following example shows a packages.config file for the three main packages that are required for a typical X++ build.
 
@@ -86,7 +85,7 @@ The following example shows a packages.config file for the three main packages t
 
 ## Creating the pipeline
 
-Azure DevOps provides pipelines that can be used to automate builds. There are two types of pipelines: YML and Classic. YML pipelines are available only when you use Git source control repositories. Classic pipelines must be used to build Team Foundation Version Control (TFVC) repositories. For more information, see [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
+Azure DevOps provides pipelines that can be used to automate builds. There are two types of pipelines: YML and Classic. YML pipelines are available only when you use Git source control repositories. Classic pipelines must be used to build Team Foundation Version Control (TFVC) repositories. For more information, see [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started).
 
 This section describes the steps that are required in a pipeline to build X++ code. In the [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub repository, you can find a sample pipeline that can be imported into an existing Azure DevOps project.
 
@@ -128,7 +127,7 @@ In the pipeline samples, variables for NuGet package names and paths are used to
 
 ### Creating a full pipeline that includes packaging
 
-To be useful, the pipeline should include a versioning step and a packaging step. Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For information about how to install an extension for an organization, see the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser).
+To be useful, the pipeline should include a versioning step and a packaging step. Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For information about how to install an extension for an organization, see the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops/marketplace/install-extension).
 
 A full pipeline should consist of at least the following steps:
 

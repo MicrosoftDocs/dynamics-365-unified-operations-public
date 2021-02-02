@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Access application metadata by using ER configuration
-description: The steps in this topic explain how a Regulatory configuration service (RCS) user can design a new Electronic reporting (ER) model mapping by using the metadata in Finance and Operations.
+description: The topic describes how a Regulatory configuration service user can design a new Electronic reporting model mapping by using the metadata.
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/28/2019
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

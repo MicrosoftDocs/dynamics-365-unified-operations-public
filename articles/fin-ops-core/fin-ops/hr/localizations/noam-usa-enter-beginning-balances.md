@@ -3,9 +3,9 @@
 
 title: Enter payroll beginning balances
 description: The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for Partners to migrate or transfer data for a new Payroll implementation from another system.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,13 +18,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -45,9 +44,9 @@ The topic describes the steps for entering beginning balances for earning codes,
     - Benefits and deductions
 
 - The company should have chosen a date where payroll beginning balances can be set.
-- Information were gathered on all earnings, benefits/deductions, benefit contributions, employee taxes, and employer taxes and their YTD amounts from the legacy system.
+- Information was gathered on all earnings, benefits/deductions, benefit contributions, employee taxes, and employer taxes and their YTD amounts from the legacy system.
 
-As you plan to enter beginning balances, consider how detailed the data needs to be. Most businesses enter a single, consolidated year-to-date amount. However if more detailed information is needed, balances can be entered in quarterly increments. Deciding the level of detail that's needed determines how many manual pay statements must be created for each worker. For a single year-to-date amount, only one manual statement is needed for each employee. To do this use year-to-date amounts from the final pay statement from the previous system as the amount entered in the new payroll system.
+As you plan to enter beginning balances, consider how detailed the data needs to be. Most businesses enter a single, consolidated year-to-date amount. However if more detailed information is needed, balances can be entered in quarterly increments. Deciding the level of detail that's needed determines how many manual pay statements must be created for each worker. For a single year-to-date amount, only one manual statement is needed for each employee. To do this, use year-to-date amounts from the final pay statement from the previous system as the amount entered in the new payroll system.
 
 The following example shows how you can enter employee payroll beginning balances, including earning codes, benefits/deductions, and taxes. In a real-world example you would have a line item for each earning code, benefit deduction, benefit contribution, employee tax and employer tax with the amount entered being the year-to-date amount. Using that list of codes and amounts, follow the steps for creating a manual earning and pay statement with accounting disabled to bring over beginning balances for payroll purposes. You disable accounting because you won't want to post this beginning balance pay statement to your general ledger. That was done in the legacy system and will come over to the new system when you set beginning balances in General ledger.
 
@@ -121,7 +120,7 @@ This step manually creates an earnings statement for each worker for the last pa
 
 #### Why the Disable Accounting slider needs to set to Yes when generating pay statements?
 
-Setting the slider to **Yes** prevents lines in the pay statement from being districuted to General ledger. General ledger amounts were updating earlier when account balances from the legacy system were entered. Entering beginning balances for Payroll lets you generate reports that include information from prior years, as well as for identifying limits for benefit and tax purposes.
+Setting the slider to **Yes** prevents lines in the pay statement from being distributed to General ledger. General ledger amounts were updating earlier when account balances from the legacy system were entered. Entering beginning balances for Payroll lets you generate reports that include information from prior years, as well as for identifying limits for benefit and tax purposes.
 
 ### C. Create pay statements for employees
 
