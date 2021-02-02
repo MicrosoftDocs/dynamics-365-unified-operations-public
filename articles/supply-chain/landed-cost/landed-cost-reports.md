@@ -44,21 +44,21 @@ To generate an outstanding invoices report:
     - **Cost not invoiced** includes costs for invoiced shipments with an estimated cost value, but no actual cost.
     - **Stock not invoiced** includes costs that have been invoiced, but where the purchase order is yet to be received.
     - **All not invoiced** includes the results of both **cost not invoiced** and **stock not invoiced**.
-1. Set **Include new costs** to *Yes* to include costs that don't yet have an actual cost and that also haven't had inventory received. <!-- KFM: What if I choose "no"? -->
-1. In the **View** section, <!-- KFM: Explanation needed. -->
+1. Set **Include new costs** to *Yes* to include costs that don't yet have an actual cost and that also haven't had inventory received. If set to *No*, only those costs that have been invoiced will be included in the report.
+1. In the **View** section, enable each type of detail that you would like to include in the report.
 1. As with other types of reports in Supply Chain Management, use the **Destination** FastTab to choose the output format of the report.
 1. As with other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records included in the report.
 1. Select **OK** to generate the report.
 
 ## Activity/provider analysis reports
 
-<!-- KFM: Intro needed -->.
+The Activity/provider analysis reports enable you to review how accurate your time estimates were for each provider.
 
 To generate an activity/provider analysis report:
 
 1. Depending on which type of report you'd like to create, choose one of the following from the navigator:
-    - **Landed cost \> Reports \> Analysis of activity/provider by activity** - <!-- KFM: documentation needed -->.
-    - **Landed cost \> Reports \> Analysis of activity/provider by provider** - <!-- KFM: documentation needed -->.
+    - **Landed cost \> Reports \> Analysis of activity/provider by activity** - Lets you analyze time estimates grouped by activity.
+    - **Landed cost \> Reports \> Analysis of activity/provider by provider** - Lets you analyze time estimates grouped by provider.
 1. Depending on which option you chose, either the **Analysis of activity/provider by activity** or **Analysis of activity/provider by provider** dialog box opens. Each of these provides the same options from now on.
 1. As with other types of reports in Supply Chain Management, use the **Destination** FastTab to choose the output format of the report.
 1. As with other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records included in the report.
@@ -79,7 +79,7 @@ To generate a voyage costing report:
     - **Estimated** : Once the goods have been received, the estimated cost is populated.
     - **Actual** : After the order has been invoiced, the actual cost is populated with the cost on the invoice.
     - **Best**: The system will use the most accurate of the options available here (recommended).
-1. Set **Per item** to *Yes* to show the cost of each individual item. <!-- KFM: What if I choose "no"? --> 
+1. Set **Per item** to *Yes* to show the cost of each individual item. Select *No* to show costs per voyage.
 1. In the **View** section, choose the categories by which to break down the cost.
 1. In the **Dimensions** section, choose which dimensions to include in the report.
 1. As with other types of reports in Supply Chain Management, use the **Destination** FastTab to choose the output format of the report.
