@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch job to handle SQL index defragmentation has been turned off 
-description: Starting January 28, 2021, the system batch job to rebuild database indexes has been turned off in all sandbox and production environments of type Tier 2 through Tier 5. Going forward, the index maintenance will be performed by Microsoft. 
+description: The system batch job to rebuild database indexes has been turned off in all sandbox and production environments of type Tier 2 through Tier 5.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 01/28/2021
@@ -31,4 +31,5 @@ ms.dyn365.ops.version: Platform update 22
 [!include[banner](../includes/banner.md)]
 
 
-Starting January 28, 2021, the system batch job to rebuild database indexes has been turned off in all sandbox and production environments of type Tier 2 through Tier 5. Going forward, the index maintenance will be performed by Microsoft. The index management service will operate continuously without impacting the regulare user workloads. Customers no longer need to schedule and monitor this batch job.
+Starting January 28, 2021, the system batch job to rebuild database indexes has been turned off in all sandbox and production environments of type Tier 2 through Tier 5. Going forward, the index maintenance will be performed by Microsoft. The index management service will operate continuously without impacting regular user workloads. Customers no longer need to schedule and monitor this batch job.
+
