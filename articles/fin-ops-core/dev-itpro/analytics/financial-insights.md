@@ -72,9 +72,10 @@ The data for **Financial Insights** is pulled from the Entity store (**System ad
 
 You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:
 
+- BudgetActivityMeasure
 - Financial reporting transaction data version 3 
-- Financial reporting transaction data
 - CustCollectionsBIMeasurements
+- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Purchase cube
 - Sales cube
