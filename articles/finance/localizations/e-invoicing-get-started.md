@@ -62,17 +62,26 @@ The following table lists the Electronic invoicing features and the business doc
 Before you complete the procedures in this topic, the following prerequisites must be in place:
 
 - Configure your Regulatory Configuration Service (RCS) and your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment so that you can submit to the Electronic invoicing add-on.
-- Create a service environment, and publish it to the Electronic invoicing add-on.
+- Create a service environment, and publish it to the Electronic invoicing add-on. For more information, see [Get started with the Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md).
 - Create a connected application. For more information, see [Get started with the Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md).
 - Create a configuration provider for your organization. For more information, see [Create configuration provider and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## Import an Electronic invoicing feature from the Microsoft configuration provider 
 
-1. Sign in to your Microsoft Dynamics Lifecycle Services (LCS) account.
+1. Sign in to your Regulatory Configuration Service (RCS) account.
 2. In the **Globalization feature** workspace, in the **Features** section, select the **e-Invoicing** tile.
 3. Select **Import**, and then select **Synchronize**.
 4. Filter the **Configuration provider** column by the term **Microsoft**.
 5. Select the name of an Electronic invoicing feature from the table at the beginning of this topic, and then select **Import**.
+
+## Create an Electronic invoicing feature under your organization provider
+
+1. On the Electronic invoicing add-on page, select **Add**.
+2. Select option **Based on existing fearture**
+3. In the **Name** field, enter the name of the Electronic invoicing feature.
+4. In the **Description** field, enter the description of the Electronic invoicing feature.
+5. In the **Base feature field**, select the imported Electronic invoicing feature from Microsoft configuration provider.
+5. Select **Create feature**
 
 ## Configure the Electronic invoicing feature
 
@@ -80,7 +89,7 @@ Depending on the country or region, the Electronic invoicing feature might requi
 
 ## Configure the application setup
 
-1. Select the Electronic invoicing feature that you imported.
+1. Select the Electronic invoicing feature that you created.
 2. On the **Version** tab, verify that the **Draft** version is selected.
 3. On the **Setups** tab, select **Application setup**.
 
