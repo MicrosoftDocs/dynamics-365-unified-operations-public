@@ -40,7 +40,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-## Deprecation effective January 28, 2021
+## Feature removed effective January 28, 2021
 
 ### Batch job to handle SQL index defragmentation
 
@@ -48,8 +48,8 @@ Detailed information about objects in Finance and Operations apps can be found i
 |------------|--------------------|
 | **Reason for deprecation/removal** | In order to reduce the overhead of operating, monitoring and maintaining the index management by customers, this feature in its current form has been removed. |
 | **Replaced by another feature?**   | The index maintanance will be performed by Microsoft services going forward. This will happen continuously without affecting the user workloads. |
-| **Product areas affected**         | Finance and Operations apps.|
-| **Deployment option**              | Cloud deployment. Affects Microsoft managed Production and Tier 2 through Tier 5 Sandbox. |
+| **Product areas affected**         | Finance and Operations apps|
+| **Deployment option**              | Cloud deployment - affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | This feature is removed. |
 
 
