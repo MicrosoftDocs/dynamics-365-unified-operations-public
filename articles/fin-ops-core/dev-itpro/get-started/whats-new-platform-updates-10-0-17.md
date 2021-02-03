@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.17 of Finance and Operations apps (Apri
 description: This topic lists the features that are included in the platform updates for version 10.0.17 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,7 +41,7 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
+The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
 -  Visual Studio 2017 is now the primary supported version for X++ tools. Visual Studio 2015 is deprecated.<br>- For more information, see [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#visual-studio-2015).
 
