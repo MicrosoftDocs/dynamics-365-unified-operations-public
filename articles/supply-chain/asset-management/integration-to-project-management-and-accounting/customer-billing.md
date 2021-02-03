@@ -175,6 +175,6 @@ Do the following:
     - **Hours** - *4*
 1. On the Action Pane, select **Post journals**. <!-- KFM: I get an error "Posting - Journal Journal: PJJ-00399 Voucher: Voucher number must be filled in". Blocked. -->
 1. Go to **Invoicing** \> **New invoice proposal**. <!-- KFM: I can't find this. -->
-1. Add following information to the record
-    - Select the line that you want to invoice
+1. Add following information to the record: <!-- KFM: It doesn't seem like we are adding information here. -->
+    - Select the line that you want to invoice.
     - Select **OK**.
