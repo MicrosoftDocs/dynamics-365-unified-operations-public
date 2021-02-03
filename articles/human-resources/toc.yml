@@ -105,10 +105,6 @@
           href: hr-admin-integration-ats-api-introduction.md
         - name: Recruiting request and related entities
           items:
-            - name:
-              href:
-        - name: Candidate to hire and related entities
-          items:
             - name: Recruiting request
               href: hr-admin-integration-ats-api-recruiting-request.md
             - name: Recruiting request position
@@ -121,7 +117,23 @@
               href: hr-admin-integration-ats-api-recruiting-request-location.md
             - name: Recruiting request status
               href: hr-admin-integration-ats-api-recruiting-request-status.md
-            - name
+            - name: Recruiting request position status
+              href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+            - name: Job exempt status
+              href: hr-admin-integration-ats-api-job-exempt-status.md
+            - name: Regulatory job category
+              href: hr-admin-integration-ats-api-regulatory-job-category.md
+        - name: Candidate to hire and related entities
+          items:
+            - name: Candidate to hire
+              href: hr-admin-integration-ats-api-candidate-to-hire.md
+            - name: Person
+              href: hr-admin-integration-ats-api-person.md
+            - name: Person education
+              href: hr-admin-integration-ats-api-person-education.md
+            - name: Person professional experience
+              href: hr-admin-integration-ats-api-person-professional-experience.md
+            - name: 
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
         - name: Candidate to hire and related entities
