@@ -58,8 +58,19 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
+    Alternatively if you have AD CS or would like to switch to AD CS certificates:
+
+    ```powershell
+    # Only run the first command if you have not generated the templates yet.
+    .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -CreateTemplates
+    .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+
+    > [!NOTE]
+    > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
+
     > [!IMPORTANT]
-    > Self-signed certificates should never be used in production environments. If you're using trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
+    > Self-signed certificates should never be used in production environments. If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
 
     ```powershell
     # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder

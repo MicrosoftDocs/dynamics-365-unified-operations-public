@@ -628,7 +628,16 @@ Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMac
 
 If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.
 
-If the credentials.json file has changed, delete and redeploy the environment from LCS.
+If the credentials.json file has changed:
+
+1. Your environment appears deployed in LCS.
+    1. Go to your environment page and click the Maintain button.
+    1. Select update settings.
+    1. Do not change any settings and click Prepare.
+    1. After a few minutes your environment will be prepared and you can click deploy.
+
+1. Your environment is in a failed state in LCS.
+    1. Click on the retry button and the new Credentials.json will be used during the retry operation. 
 
 If none of the preceding solutions work, follow these steps.
 
@@ -1226,6 +1235,8 @@ Run the following command against your business data database (AXDB):
 
 >[!NOTE]
 > If you are using version 10.0.12 or earlier, a full database synchronization will be executed.
+
+After running the command, restart one of your AOS nodes through Service Fabric Explorer or by restarting the VM the node is running on.
 
 ## Add axdbadmin to tempdb after a SQL Server restart via a stored procedure
 
