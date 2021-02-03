@@ -45,13 +45,13 @@ The following features are included in this release. Some of the listed features
 
 -  Visual Studio 2017 is now the primary supported version for X++ tools. Visual Studio 2015 is deprecated.<br>- For more information, see [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#visual-studio-2015).
 
--  [(Preview) Translation support for organization views](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/translation-support-organizational-saved-views)<br>- For more information, see [Saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views).
+-  [(Preview) Translation support for organization views](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/translation-support-organizational-saved-views)<br>- For more information, see [Saved views](../../fin-ops-core/fin-ops/get-started/saved-views.md).
 
--  [Allow configuration of the publish batch size for the Excel add-in](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [Open entity data in Excel and update it using the Excel add-in](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/office-integration/use-excel-add-in).
+-  [Allow configuration of the publish batch size for the Excel add-in](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [View and update entity data with Excel](../office-integration/use-excel-add-in.md).
 
 -  [Upgrade to React 17](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/upgrade-react-17)
 
--  [Freeze columns in grids](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/freeze-columns-grids)<br>- For more information, see [Grid capabilities](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities).
+-  [Freeze columns in grids](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/freeze-columns-grids)<br>- For more information, see [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md).
 
 -  [Updates to client feature states](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states)<br>- See the release plan for details about the client features that were turned on by default or made mandatory with this release. 
 
