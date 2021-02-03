@@ -115,7 +115,13 @@
               href: hr-admin-integration-ats-api-recruiting-request-position.md
             - name: Recruiting request skill
               href: hr-admin-integration-ats-api-recruiting-request-skill.md
-            - name: 
+            - name: Recruiting request education
+              href: hr-admin-integration-ats-api-recruiting-request-education.md
+            - name: Recruiting request location
+              href: hr-admin-integration-ats-api-recruiting-request-location.md
+            - name: Recruiting request status
+              href: hr-admin-integration-ats-api-recruiting-request-status.md
+            - name
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
         - name: Candidate to hire and related entities
