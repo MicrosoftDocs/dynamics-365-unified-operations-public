@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 01/07/2021
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,7 +58,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-    Alternatively if you have AD CS or would like to switch to AD CS certificates:
+    Alternatively if you have or would like to switch to Active Directory Certificate Services (AD CS) certificates:
 
     ```powershell
     # Only run the first command if you have not generated the templates yet.
@@ -67,7 +67,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     ```
 
     > [!NOTE]
-    > The AD CS scripts need to run on a Domain Controller, or a Windows Server with Remote Server Admin Tools installed.
+    > The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.
     > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
 
     > [!IMPORTANT]
