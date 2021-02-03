@@ -5,7 +5,7 @@ title: Candidate to hire and related entities
 description: This topic describes Candidate to hire and related entities for the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API.
 author: andreabichsel
 manager: tfehr
-ms.date: 01/25/2021
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -23,7 +23,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jaredha
-ms.search.validFrom: 2021-01-25
+ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Platform update 36
 ---
 
