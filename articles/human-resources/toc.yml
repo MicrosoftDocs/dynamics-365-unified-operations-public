@@ -104,6 +104,19 @@
         - name: Introduction
           href: hr-admin-integration-ats-api-introduction.md
         - name: Recruiting request and related entities
+          items:
+            - name:
+              href:
+        - name: Candidate to hire and related entities
+          items:
+            - name: Recruiting request
+              href: hr-admin-integration-ats-api-recruiting-request.md
+            - name: Recruiting request position
+              href: hr-admin-integration-ats-api-recruiting-request-position.md
+            - name: Recruiting request skill
+              href: hr-admin-integration-ats-api-recruiting-request-skill.md
+            - name: 
+        - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
         - name: Candidate to hire and related entities
           href: hr-admin-integration-ats-api-candidate-entities.md
