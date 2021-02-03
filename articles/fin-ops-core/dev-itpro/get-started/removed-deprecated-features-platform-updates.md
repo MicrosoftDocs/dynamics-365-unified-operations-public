@@ -46,8 +46,8 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | In order to reduce the overhead of operating, monitoring and maintaining the index management by customers, this feature in its current form has been removed. |
-| **Replaced by another feature?**   | The index maintanance will be performed by Microsoft services going forward. This will happen continuously without affecting the user workloads. |
+| **Reason for deprecation/removal** | In order to reduce the overhead of operating, monitoring, and maintaining the index management by customers, this feature has been removed. |
+| **Replaced by another feature?**   | Going forward, the index maintenance will be performed by Microsoft services. This will happen continuously without affecting the user workloads. |
 | **Product areas affected**         | Finance and Operations apps|
 | **Deployment option**              | Cloud deployment - affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | This feature is removed. |
