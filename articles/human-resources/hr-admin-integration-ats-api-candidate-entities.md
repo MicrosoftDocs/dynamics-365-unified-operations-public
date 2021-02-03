@@ -975,6 +975,9 @@ If, however, you want to use deep inserts to create all related entities in one 
 
 This example shows how you can create a candidate record, the associated person record, and the person's skills and education in three nested levels using deep inserts in a single API operation.
 
+    > [!NOTE]
+    > The example does not include all properties of each of the API entities. It is simplified for demonstration purposes.
+
 **Request**
 
 
