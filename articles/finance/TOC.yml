@@ -1032,6 +1032,8 @@
           href: general-ledger/import-currency-exchange-rates.md
         - name: One voucher
           href: general-ledger/one-voucher.md
+        - name: One voucher FAQ
+          href: general-ledger/one-voucher-faq.md
         - name: Ledger settlements
           href: general-ledger/ledger-settlements.md
       - name: Period-end close
