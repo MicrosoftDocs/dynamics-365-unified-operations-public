@@ -973,6 +973,8 @@ The ```mshr_hcmcandidatetohireentity``` entity is unique because of its relation
 
 If, however, you want to use deep inserts to create all related entities in one operation, the properties specific to the ```mshr_dirpersonentity``` entity must be defined on that nested level of the operation.
 
+This example shows how you can create a candidate record, the associated person record, and the person's skills and education in three nested levels using deep inserts in a single API operation.
+
 **Request**
 
 
@@ -990,7 +992,7 @@ Accept: application/json
     "mshr_positionid": "000601",
     "mshr_iswillingtorelocate": 200000000,
     "mshr_availabilitydate": "2021-03-18",
-    "mshr_comments": "Evenly's experience is exactly what we need for this position.",
+    "mshr_comments": "Evelyn's experience is exactly what we need for this position.",
     "mshr_FK_Person_id":
             {
                 "mshr_firstname": "Evelyn",
