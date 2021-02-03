@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on
 description: This topic provides information that will help you get started with the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 01/27/2021
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -76,12 +76,11 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Create an Electronic invoicing feature under your organization provider
 
-1. On the Electronic invoicing add-on page, select **Add**.
-2. Select option **Based on existing fearture**
-3. In the **Name** field, enter the name of the Electronic invoicing feature.
-4. In the **Description** field, enter the description of the Electronic invoicing feature.
-5. In the **Base feature field**, select the imported Electronic invoicing feature from Microsoft configuration provider.
-5. Select **Create feature**
+1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **e-Invoicing** tile.
+2. Select **Add** > **Based on existing feature**, and in the **Name** field, enter the name of the Electronic invoicing feature.
+3. In the **Description** field, enter a description of the feature.
+4. In the **Base feature field**, select the imported Electronic invoicing feature from the Microsoft configuration provider.
+5. Select **Create feature**.
 
 ## Configure the Electronic invoicing feature
 
