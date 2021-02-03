@@ -4,7 +4,7 @@
 title: System requirements
 description: This article describes requirements for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
