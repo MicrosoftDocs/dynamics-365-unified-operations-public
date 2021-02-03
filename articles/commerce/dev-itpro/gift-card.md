@@ -5,7 +5,7 @@ title: Support for external gift cards
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: rubencdelgado 
 manager: AnnBe
-ms.date: 09/14/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -41,7 +41,7 @@ Like support for other card payment types, support for external gift cards must 
 ## External gift card setup
 
 > [!NOTE]
-> Some setup steps assume that demo data is used. The steps might vary, depending on the dataset that is used. The test connector is for sandbox purposes only. The test connector is not supported for use in UAT or Production environments. 
+> Some setup steps assume that demo data is used. The steps might vary, depending on the dataset that is used. The test connector is for sandbox purposes only. The test connector is not supported for use in UAT or production environments. 
 
 ### Card types
 
@@ -170,7 +170,7 @@ When you use the test connector to demonstrate support for external gift cards, 
 
 ### Tokenization
 
-The out-of-box implementation and Payments software development kit (SDK) support for external gift cards in the call center and storefront requires tokenization. When external gift cards are processed, tokens are used to refer to the actual gift card number. This is important for 3rd party implementations because, without tokens, external gift card processing may not function correctly. For example, if a gift card payment is captured when added to an order, but an issue occurs during order creation, the gift card payment will be reversed using references(tokens) to the transaction itself, not using the actual gift card number. 
+The out-of-box implementation and Payments software development kit (SDK) support for external gift cards in the call center and storefront requires tokenization. When external gift cards are processed, tokens are used to refer to the actual gift card number. This is important for 3rd party implementations because without tokens, external gift card processing may not function correctly. For example, if a gift card payment is captured when it's added to an order, but an issue occurs during order creation, the gift card payment will be reversed using references (tokens) to the transaction itself, not using the actual gift card number. 
 
 ### Purchases and refunds
 
@@ -197,7 +197,7 @@ If product variants are used, the person who creates the gift card order is prom
 Modes of delivery must support the type of gift card. For example, a gift card product variant of the **Physical** style must be mapped to a mode of delivery that is related to shipping. A gift card product variant of the **Email** style must be mapped to an electronic mode of delivery. The electronic mode of delivery is defined on the **Customer orders** tab of the **Commerce parameters** page.
 
 > [!NOTE]
-> Only virtual gift cards are currently supported in ecommerce. For more details about setting up virtual gift cards in ecommerce, please visit the docs article dedicated to  [E-commerce digital gift cards](https://docs.microsoft.com/en-us/dynamics365/commerce/digital-gift-cards). 
+> Only virtual gift cards are currently supported in e-commerce. For more details about setting up virtual gift cards in e-commerce, see [E-commerce digital gift cards](https://docs.microsoft.com/en-us/dynamics365/commerce/digital-gift-cards). 
 
 ## Setup for the call center and storefront
 
@@ -211,11 +211,11 @@ In the back office, on the **Payment services** page, configure the payment serv
 2. Select the **Fashion call center** store in the list.
 3. On the Action Pane, on the **Set up** tab, in the **Set up** group, select **Payment methods**.
 4. Select **New**.
-5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields should then be set automatically.
+5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields will then be set automatically.
 6. On the **General** FastTab, set the following fields:
 
-    - Set the **Operation name** field to **Pay gift card**.
-    - Set the **Connector name** field to **TestConnector**.
+    - In the **Operation name** field, select **Pay gift card**.
+    - In the **Connector name** field, select **TestConnector**.
 
 9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
 10. Select **Save**.
@@ -227,11 +227,11 @@ In the back office, on the **Payment services** page, configure the payment serv
 2. Select the **Fabrikam extended online** store in the list.
 3. On the Action Pane, on the **Set up** tab, in the **Set up** group, select **Payment methods**.
 4. Select **New**.
-5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields should then be set automatically.
+5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields will then be set automatically.
 6. On the **General** FastTab, set the following fields:
 
-    - Set the **Operation name** field to **Pay gift card**.
-    - Set the **Connector name** field to **TestConnector**.
+    - In the **Operation name** field, select **Pay gift card**.
+    - In the **Connector name** field, select **TestConnector**.
 
 9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
 10. Select **Save**.
@@ -254,7 +254,7 @@ For the call center and storefront, the Adyen connector supports the following g
 | Givex   | Physical         | Yes       | Manually         |
 
 > [!NOTE]
-> In the out-of-box Adyen connector, gift cards are not configured by default. To specify the gift card provider in the merchant properties of the payment connector, follow the instructions in the previously mentioned documentation.
+> In the out-of-box Adyen connector, gift cards are not configured by default. To specify the gift card provider in the merchant properties of the payment connector, follow the instructions in the [documentation for the Adyen payment connector](https://docs.microsoft.com/dynamics365/retail/dev-itpro/adyen-connector?tabs=8-1-3).
 
 #### Test connector external gift card setup
 
