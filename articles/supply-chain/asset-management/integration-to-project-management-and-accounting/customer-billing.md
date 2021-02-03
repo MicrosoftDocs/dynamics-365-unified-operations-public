@@ -155,7 +155,10 @@ Do the following:
 Do the following:
 
 1. Continue working on the work order you created in the previous section.
-1. Check that the parent project is the *Pelican wholesales Work order* project. <!-- KFM: How can I do this? -->
+1. Check that the parent project is the *Pelican wholesales Work order* project by doing the following:
+    1. Select a line form the **Work order maintenance jobs** section.
+    1. Expand the **Line details** FastTab.
+    1. Inspect the **Project ID** value. It should show a hyphenated number, which uses the form *\<Parent-Project-ID\>-\<Project-ID\>*. The number is a link, so you can get more information by selecting it, which opens a page where you can read the parent project and project names.
 1. On the Action Pane, open the **Work order** tab and, from the **Lifecycle state** group, select **Update work order state**.
 1. The **Update work order state** dialog box opens. In the **Select** column, mark the check box for the row where **Lifecycle state** is *In progress*.
 1. Select **OK**.
