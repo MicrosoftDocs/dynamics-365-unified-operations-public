@@ -42,8 +42,8 @@ When transferring employees, the system will default the date/time to the date s
 ### All employees have the same position description in the exited worker task management list
 An update has been made in the **Task Management** workspace to display the correct position descriptions for all employees that have recently exited the company.
 
-### "Action requested by" field is now populated on Workers action page
-With this change, the default for the **Action requested by** field is now the user that is requesting the change.
+### "Action requested by" column is now populated on Workers action page
+With this change, the default for the **Action requested by** column is now the user that is requesting the change.
 
 ### Ideas portal updated
 In app links to submit an idea for Talent have been updated to the new Ideas portal. All ideas entered in the old portal have been migrated, so all your great ideas are still there and available to be voted on by others.  

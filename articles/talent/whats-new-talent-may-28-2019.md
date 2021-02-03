@@ -49,9 +49,9 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2319.
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-In this release, the following Common Data Service entities now support custom fields: Benefit calc rate detail, Work calendar holiday line, and Employment.
+In this release, the following Dataverse tables now support custom columns: Benefit calc rate detail, Work calendar holiday line, and Employment.
 
 ### Copy position now includes payroll details
 When you use **Copy position** and select all of the options, the payroll details information is now included in the copy information. 

@@ -18,6 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -110,9 +111,9 @@ This feature also promotes the workflow options that appear in the personnel act
 
 ## Coming Soon
 
-### Checklist entities included in Common Data Service
+### Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Dataverse.
 
 ### Benefits management reason codes
 

@@ -18,6 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -122,9 +123,9 @@ A DMF entity is now available for accrual suspensions.
 
 A new option will be available in **Human Resources parameters** to update the name of the Employee self service workspace to Self service.
 
-## Checklist entities included in Common Data Service
+## Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon within Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon within Dataverse.
 
 ## See also
 

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Design ER expressions to call application class methods
-description: This guide provides information about how to reuse the existing application logic in Electronic reporting (ER) configurations by calling required methods of application classes in ER expressions. 
+description: This topic describes how to reuse the existing application logic in Electronic reporting configurations by calling required methods of application classes. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 12/12/2017

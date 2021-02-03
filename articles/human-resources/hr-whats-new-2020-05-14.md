@@ -18,6 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -39,9 +40,9 @@ This topic describes features that are either new or changed in Dynamics 365 Hum
 
 Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). This release includes bug fixes and changes to saved views.
  
-## Ensure Common Data Service picklists are consistent with Leave enums (436343)
+## Ensure Dataverse picklists are consistent with Leave enums (436343)
 
-Common Data Service picklists are now consistent with Leave enums.
+Dataverse picklists are now consistent with Leave enums.
 
 ## Allow users to configure leave request workflow based on the request amount (300044)
 
@@ -79,7 +80,7 @@ This change corrects an error when a leave plan has two leave types assigned and
 
 With this change, the Getting started banner is hidden for users that aren't System administrators or Data management administrators. 
 
-## The Common Data Service Worker Address entity works differently in terms of date time effective dates in Human Resources (425071)
+## The Dataverse Worker Address entity works differently in terms of date time effective dates in Human Resources (425071)
 
 This change keeps address information aligned in certain scenarios, based on the dates of the address.
 

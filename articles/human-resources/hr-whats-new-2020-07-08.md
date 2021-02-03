@@ -18,6 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -75,9 +76,9 @@ Created and modified system fields are now enabled on the **WorkCalendarEmployme
 
 This release corrects an error (null reference) in streamlined employee entry when you hire an employee using the option to **Hire and add details**.
 
-## Changes made in the Common Data Service Worker entity don't reflect in Human Resources (455652)
+## Changes made in the Dataverse Worker entity don't reflect in Human Resources (455652)
 
-Changes made to the following fields in the **Worker** entity in Common Data Service will now show up in Human Resources:
+Changes made to the following fields in the **Worker** entity in Dataverse will now show up in Human Resources:
 
 - **Works from home**
 - **Seniority date**
@@ -135,9 +136,9 @@ A DMF entity is now available for accrual suspensions.
 
 ## Coming soon
 
-## Checklist entities included in Common Data Service
+## Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Dataverse.
 
 ## See also
 

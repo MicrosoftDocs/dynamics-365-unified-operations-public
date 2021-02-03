@@ -18,6 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -46,9 +47,9 @@ With this change, the **Rounding precision** field is now available after you up
 
 You can now edit the enrollment end date without getting the error "Field Accrual date basis must be filled in."
 
-## Employment entity doesn't sync to Common Data Service (430834)
+## Employment entity doesn't sync to Dataverse (430834)
 
-This change corrects an issue where the employment data wasn't syncing to Common Data Service after adding financial dimensions. 
+This change corrects an issue where the employment data wasn't syncing to Dataverse after adding financial dimensions. 
 
 ## Remove multi-parenting for Work Calendar Time Interval entity (431775)
 

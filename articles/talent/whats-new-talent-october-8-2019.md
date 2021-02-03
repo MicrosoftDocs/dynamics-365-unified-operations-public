@@ -50,9 +50,9 @@ The changes that are described in this section apply to build number 8.1.2542. T
 
 In conjunction with our announcement in the [Strategic investments in core HR drive operational excellence](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence/) blog post, Microsoft is removing the benefits open enrollment feature from public preview on October 18, 2019. Instead, new functionality will be released in the future. Production use of the benefits open enrollment feature that is currently in public preview won't be supported. 
 
-### Common Data Service integration is now turned off by default on new provisions (343675)
+### Dataverse integration is now turned off by default on new provisions (343675)
  
-When new environments are provisioned, Common Data Service integration is now turned off. For more information, see [Configure Common Data Service integration](hr-common-data-service-integration.md).
+When new environments are provisioned, Dataverse integration is now turned off. For more information, see [Configure Dataverse integration](hr-common-data-service-integration.md).
 
 ### Streamlined employee entry and navigation
 
@@ -76,25 +76,25 @@ This release includes additional information on **HcmOnboardingWorkerChecklistTa
 - **Employee name** when the assigned type is **employee**
 - **Manager name** when the assigned type is **manager**
 
-### Entities aren't listed in alphabetical order in Common Data Service Administration (377414)
+### Tables aren't listed in alphabetical order in Dataverse Administration (377414)
 
-Entities are now listed in alphabetical order on the **CDS Administration** page.
+Tables are now listed in alphabetical order on the **CDS Administration** page.
 
 ### Changing the employment type with a future date doesn't allow a position assignment (339958)
 
 This change allows for position assignments when worker types are changed (for example, from employee to contractor).
 
-### Updating the Common Data Service Leave bank transaction entity creates a new record in Talent (352938)
+### Updating the Dataverse Leave bank transaction table creates a new record in Talent (352938)
 
-The leave transaction is now updated when an update is made to Common Data Service for leave bank transactions.
+The leave transaction is now updated when an update is made to Dataverse for leave bank transactions.
 
 ### The title of attachments for feedback items shows the feedback description (343765)
 
 The feedback description no longer appears in the attachment title.
 
-### Compensation workflow Comments field shows incorrect content (339297)
+### Compensation workflow Comments column shows incorrect content (339297)
 
-This change shows the content of the **%HcmActionState.HcmWorkerActionComment.Comments%** field.
+This change shows the content of the **%HcmActionState.HcmWorkerActionComment.Comments%** column.
 
 ### WorkCalendarEntity and WorkCalendarDayEntity aren't exposed through OData (376329)
 

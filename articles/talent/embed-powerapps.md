@@ -56,7 +56,7 @@ Here is an example.
 
     ![Power Apps button](media/png.png)
 
-3. Complete the fields in the **Add an app from Power Apps** dialog box.
+3. Complete the columns in the **Add an app from Power Apps** dialog box.
 
     ![Add an app from Power Apps dialog box](media/insert-powerapp.png)
 

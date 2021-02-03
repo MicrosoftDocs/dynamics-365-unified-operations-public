@@ -4,7 +4,7 @@
 title: Process rate changes
 description: Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitRate, BenefitEli
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 

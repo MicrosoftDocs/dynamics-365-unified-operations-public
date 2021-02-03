@@ -2,7 +2,7 @@
 # required metadata
 
 title: Form Part Section List form patterns
-description: This topic provides information about the Form Part Section List form patterns. These workspace-specific patterns have been developed to show filtered lists inside workspaces.
+description: This topic provides information about the Form Part Section List form patterns, which were developed to show filtered lists inside workspaces.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017

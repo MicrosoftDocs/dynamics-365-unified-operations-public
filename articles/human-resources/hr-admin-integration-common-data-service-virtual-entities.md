@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure Common Data Service virtual entities
-description: This topic shows how to configure virtual entities for Dynamics 365 Human Resources. Generate and update existing virtual entities, and analyze generated and available entities. 
+title: Configure Dataverse virtual tables
+description: This topic shows how to configure virtual tables for Dynamics 365 Human Resources. Generate and update existing virtual tables, and analyze generated and available tables. 
 author: andreabichsel
 manager: tfehr
-ms.date: 11/02/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -18,6 +18,7 @@ ms.search.form: CDSIntegrationAdministration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -28,42 +29,47 @@ ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Configure Common Data Service virtual entities
+# Configure Dataverse virtual tables
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dynamics 365 Human Resources is a virtual data source in Common Data Service. It provides full create, read, update, and delete (CRUD) operations from Common Data Service and Microsoft Power Platform. The data for virtual entities isn't stored in Common Data Service, but in the application database. 
+Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It provides full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. The data for virtual tables isn't stored in Dataverse, but in the application database.
 
-To enable CRUD operations on Human Resources entities from Common Data Service, you must make the entities available as virtual entities in Common Data Service. This lets you perform CRUD operations from Common Data Service and Microsoft Power Platform on data that's in Human Resources. The operations also support the full business logic validations of Human Resources to ensure data integrity when writing data to the entities.
-
-## Available virtual entities for Human Resources
-
-All Open Data Protocol (OData) entities in Human Resources are available as virtual entities in Common Data Service. They're also available in Power Platform. You can now build apps and experiences with data directly from Human Resources with full CRUD capability, without copying or synchronizing data to Common Data Service. You can use Power Apps portals to build external-facing websites that enable collaboration scenarios for business processes in Human Resources.
-
-You can view the list of virtual entities enabled in the environment, and begin working with the entities in [Power Apps](https://make.powerapps.com), in the **Dynamics 365 HR Virtual Entities** solution.
-
-![Dynamics 365 HR Virtual Entities in Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
-
-## Virtual entities versus natural entities
-
-Virtual entities for Human Resources aren't the same as the natural Common Data Service entities created for Human Resources. The natural entities for Human Resources are generated separately and maintained in the HCM Common solution in Common Data Service. With natural entities, the data is stored in Common Data Service and requires synchronization with the Human Resources application database.
+To enable CRUD operations on Human Resources entities from Dataverse, you must make the entities available as virtual tables in Dataverse. This lets you perform CRUD operations from Dataverse and Microsoft Power Platform on data that's in Human Resources. The operations also support the full business logic validations of Human Resources to ensure data integrity when writing data to the entities.
 
 > [!NOTE]
-> For a list of the natural Common Data Service entities for Human Resources, see [Common Data Service entities](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> Human Resources entities correspond to Dataverse tables. For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+
+## Available virtual tables for Human Resources
+
+All Open Data Protocol (OData) entities in Human Resources are available as virtual tables in Dataverse. They're also available in Power Platform. You can now build apps and experiences with data directly from Human Resources with full CRUD capability, without copying or synchronizing data to Dataverse. You can use Power Apps portals to build external-facing websites that enable collaboration scenarios for business processes in Human Resources.
+
+You can view the list of virtual tables enabled in the environment, and begin working with the tables in [Power Apps](https://make.powerapps.com), in the **Dynamics 365 HR Virtual Tables** solution.
+
+![Dynamics 365 HR Virtual Tables in Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+
+## Virtual tables versus native tables
+
+Virtual tables for Human Resources aren't the same as the native Dataverse tables created for Human Resources. 
+
+The native tables for Human Resources are generated separately and maintained in the HCM Common solution in Dataverse. With native tables, the data is stored in Dataverse and requires synchronization with the Human Resources application database.
+
+> [!NOTE]
+> For a list of the native Dataverse tables for Human Resources, see [Dataverse tables](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
 
 ## Setup
 
-Follow these setup steps to enable virtual entities in your environment.
+Follow these setup steps to enable virtual tables in your environment.
 
-### Enable virtual entities in Human Resources
+### Enable virtual tables in Human Resources
 
-First, you must enable virtual entities in the **Feature management** workspace.
+First, you must enable virtual tables in the **Feature management** workspace.
 
 1. In Human Resources, select **System administration**.
 
 2. Select the **Feature management** tile.
 
-3. Select **Virtual Entity support in HR/CDS**, and then select **Enable**.
+3. Select **Virtual table support for HR in Dataverse**, and then select **Enable**.
 
 For more information about enabling and disabling features, see [Manage features](hr-admin-manage-features.md).
 
@@ -77,13 +83,13 @@ You must register your Human Resources instance in the Azure portal so the Micro
 
 3. Select **New registration**.
 
-4. In the **Name** field, enter a descriptive name for the app. For example, **Dynamics 365 Human Resources Virtual Entities**.
+4. In the **Name** field, enter a descriptive name for the app. For example, **Dynamics 365 Human Resources Virtual Tables**.
 
 5. In the **Redirect URI** field, enter the namespace URL of your instance of Human Resources.
 
 6. Select **Register**.
 
-7. When registration completes, the Azure portal displays the app registration's **Overview** pane, which includes its **Application (client) ID**. Take note of the **Application (client) ID** at this time. You'll enter this information when you [Configure the virtual entity data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+7. When registration completes, the Azure portal displays the app registration's **Overview** pane, which includes its **Application (client) ID**. Take note of the **Application (client) ID** at this time. You'll enter this information when you [Configure the virtual table data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
 8. In the left navigation pane, select **Certificates and secrets**.
 
@@ -91,14 +97,14 @@ You must register your Human Resources instance in the Azure portal so the Micro
 
 10. Provide a description, select a duration, and select **Add**.
 
-11. Record the secret's value. You'll enter this information when you [Configure the virtual entity data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+11. Record the secret's value. You'll enter this information when you [Configure the virtual table data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > Be sure to take note of the secret's value at this time. The secret is never displayed again after you leave this page.
 
-### Install the Dynamics 365 HR Virtual Entity app
+### Install the Dynamics 365 HR Virtual Table app
 
-Install the Dynamics 365 HR Virtual Entity app in your Power Apps environment to deploy the virtual entity solution package to Common Data Service.
+Install the Dynamics 365 HR Virtual Table app in your Power Apps environment to deploy the virtual table solution package to Dataverse.
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -108,7 +114,7 @@ Install the Dynamics 365 HR Virtual Entity app in your Power Apps environment to
 
 4. Select the **Install app** action.
 
-5. Select **Dynamics 365 HR Virtual Entity**, and select **Next**.
+5. Select **Dynamics 365 HR Virtual Table**, and select **Next**.
 
 6. Review and mark to agree to the terms of service.
 
@@ -116,11 +122,11 @@ Install the Dynamics 365 HR Virtual Entity app in your Power Apps environment to
 
 The install takes a few minutes. When it completes, continue to the next steps.
 
-![Install the Dynamics 365 HR Virtual Entity app from the Power Platform admin center](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
-### Configure the virtual entity data source 
+### Configure the virtual table data source 
 
-The next step is to configure the virtual entity data source in the Power Apps environment. 
+The next step is to configure the virtual table data source in the Power Apps environment. 
 
 1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -164,7 +170,7 @@ The next step is to configure the virtual entity data source in the Power Apps e
 Grant permissions for the two Azure AD applications in Human Resources:
 
 - The app created for your tenant in the Microsoft Azure portal
-- The Dynamics 365 HR Virtual Entity app installed in the Power Apps environment 
+- The Dynamics 365 HR Virtual Table app installed in the Power Apps environment 
 
 1. In Human Resources, open the **Azure Active Directory applications** page.
 
@@ -177,45 +183,45 @@ Grant permissions for the two Azure AD applications in Human Resources:
 3. Select **New** to create a second application record:
 
     - **Client Id**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Name**: Dynamics 365 HR Virtual Entity
+    - **Name**: Dynamics 365 HR Virtual Table
     - In the **User ID** field, select the user ID of a user with admin permissions in Human Resources and the Power Apps environment.
 
-## Generate virtual entities
+## Generate virtual tables
 
-When setup completes, you can select the virtual entities you want to generate and enable in your Common Data Service instance.
+When setup completes, you can select the virtual tables you want to generate and enable in your Dataverse instance.
 
-1. In Human Resources, open the **Common Data Service (CDS) integration** page.
+1. In Human Resources, open the **Dataverse integration** page.
 
-2. Select the **Virtual entities** tab.
+2. Select the **Virtual tables** tab.
 
 > [!NOTE]
-> The **Enable the virtual entity** toggle will be set to **Yes** automatically when all required setup has been completed. If the toggle is set to **No**, review the steps in previous sections of this document to ensure all prerequisite setup is completed.
+> The **Enable virtual tables** toggle will be set to **Yes** automatically when all required setup has been completed. If the toggle is set to **No**, review the steps in previous sections of this document to ensure all prerequisite setup is completed.
 
-3. Select the entity or entities you want to generate in Common Data Service.
+3. Select the table or tables you want to generate in Dataverse.
 
 4. Select **Generate/refresh**.
 
-![Common Data Service Integraton](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Dataverse Integraton](./media/hr-admin-integration-common-data-service-integration.jpg)
 
-## Check entity generation status
+## Check table generation status
 
-Virtual entities are generated in Common Data Service through an asynchronous background process. Updates on the process display in the action center. Details on the process, including error logs, appear in the **Process automations** page.
+Virtual tables are generated in Dataverse through an asynchronous background process. Updates on the process display in the action center. Details on the process, including error logs, appear in the **Process automations** page.
 
 1. In Human Resources, open the **Process automations** page.
 
 2. Select the **Background processes** tab.
 
-3. Select **Virtual entity poll async operation background process**.
+3. Select **Virtual table poll async operation background process**.
 
 4. Select **View most recent results**.
 
-The slideout pane displays the most recent execution results for the process. You can view the log for the process, including any errors returned from Common Data Service.
+The slideout pane displays the most recent execution results for the process. You can view the log for the process, including any errors returned from Dataverse.
 
 ## See also
 
-[What is Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Entity overview](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Entity relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Create and edit virtual entities that contain data from an external data source](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[What is Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Tables in Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
+[Table relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
+[Create and edit virtual tables that contain data from an external data source](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [What is Power Apps portals?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)

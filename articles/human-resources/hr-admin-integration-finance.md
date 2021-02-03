@@ -4,7 +4,7 @@
 title: Configure integration with Finance
 description: This article describes the functionality available for integration from Dynamics 365 Human Resources and Dynamics 365 Finance.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -48,7 +49,7 @@ The Human Resources to Finance solution provides the following types of data syn
 
 The integration solution requires the following versions of Human Resources and Finance: 
 
-- Dynamics 365 Human Resources on Common Data Service
+- Dynamics 365 Human Resources on Dataverse
 - Dynamics 365 Finance version 7.2 and later
 
 ## Template and tasks
@@ -59,7 +60,7 @@ To access the Human Resources to Finance template.
 
 2. Select **Projects**, and then select **New project** in the upper-right corner. Create a new project for each legal entity that you want to integrate into in Finance.
 
-3. Select the **Human Resources (Human Resources Common Data Service to Finance)** to synchronize records from Human Resources to Finance.
+3. Select the **Human Resources (Human Resources Dataverse to Finance)** to synchronize records from Human Resources to Finance.
 
 The template uses the following underlying tasks to synchronize records from Human Resources to Finance:
 
@@ -85,14 +86,14 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Job Functions to Compensation Job Function
 
-| Common Data Service entity (source) | Finance entity (destination) |
+| Dataverse table (source) | Finance entity (destination) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   Function Name)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | DESCRIPTION   (DESCRIPTION)                 |
 
 ### Departments to Operating Unit
 
-| Common Data Service entity (source)           | Finance entity (destination) |
+| Dataverse table (source)           | Finance entity (destination) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NAME)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -101,7 +102,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Job Types to Compensation Job Type
 
-| Common Data Service entity (source)   | Finance entity (destination) |
+| Dataverse table (source)   | Finance entity (destination) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | DESCRIPTION   (DESCRIPTION)                 |
@@ -109,7 +110,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Jobs to Jobs
 
-| Common Data Service entity (source)                           | Finance entity (destination)           |
+| Dataverse table (source)                           | Finance entity (destination)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -119,7 +120,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Jobs to Job Detail
 
-| Common Data Service entity (source)                             | Finance entity (destination) |
+| Dataverse table (source)                             | Finance entity (destination) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Job Type (Job Type Name))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -130,7 +131,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Position Types to Position Type
 
-| Common Data Service entity (source)       | Finance entity (destination) |
+| Dataverse table (source)       | Finance entity (destination) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | DESCRIPTION   (DESCRIPTION)                 |
@@ -138,13 +139,13 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Job Positions to Base Position
 
-| Common Data Service entity (source)           | Finance entity (destination) |
+| Dataverse table (source)           | Finance entity (destination) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number) | POSITIONID (POSITIONID)                      |
 
 ### Job Positions to Position Details
 
-| Common Data Service entity (source)              | Finance entity (destination)       |
+| Dataverse table (source)              | Finance entity (destination)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Job Position Number)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Job (Name))                                        | JOBID (JOBID)                                    |
@@ -158,7 +159,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Job Positions to Position Durations
 
-| Common Data Service entity (source)             | Finance entity (destination) |
+| Dataverse table (source)             | Finance entity (destination) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number)   | POSITIONID (POSITIONID)                      |
 | Calculated   Activation (Calculated Activation) | VALIDFROM (VALIDFROM)                        |
@@ -166,7 +167,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Job Positions to Position Hierarchies
 
-| Common Data Service entity (source)        | Finance entity (destination) |
+| Dataverse table (source)        | Finance entity (destination) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -176,7 +177,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 
 ### Workers to Worker
-| Common Data Service entity (source)           | Finance entity (destination)       |
+| Dataverse table (source)           | Finance entity (destination)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
 | cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
@@ -195,7 +196,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Employments to Employment
 
-| Common Data Service entity (source)                             | Finance entity (destination) |
+| Dataverse table (source)                             | Finance entity (destination) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -205,7 +206,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Employments to Employment Detail
 
-| Common Data Service entity (source)                             | Finance entity (destination)   |
+| Dataverse table (source)                             | Finance entity (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -223,7 +224,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Position Worker Assignment to Position Worker Assignments
 
-| Common Data Service entity (source)                             | Finance entity (destination)   |
+| Dataverse table (source)                             | Finance entity (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber   (Job Position Number)                   | POSITIONID(POSITIONID)                        |
@@ -232,7 +233,7 @@ In the following template mapping tables, the name of the task contains the enti
 
 ### Worker Addresses to Worker Postal Address V2
 
-| Common Data Service entity (source)                             | Finance entity (destination)   |
+| Dataverse table (source)                             | Finance entity (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |

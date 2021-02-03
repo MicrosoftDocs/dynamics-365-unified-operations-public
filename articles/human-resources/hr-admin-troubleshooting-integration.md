@@ -4,7 +4,7 @@
 title: Integration with Finance FAQ
 description: This article explains what data is synchronized in a Human Resources and Finance integration.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -37,7 +38,7 @@ This topic answers common questions associated about what data is synchronized w
 
 ## Can I edit the Dynamics 365 Talent application user in Power Apps?
 
-No. If you edit the Talent application user, the integration between Human Resources and Common Data Service might fail. The following table shows the default settings for the Talent application user.
+No. If you edit the Human Resources application user, the integration between Human Resources and Dataverse might fail. The following table shows the default settings for the Talent application user.
 
 | Full Name | Application ID | Azure AD Object ID | Application ID URI |
 | --- | --- | --- | --- |
@@ -49,19 +50,19 @@ No. If you edit the Talent application user, the integration between Human Resou
 
 A subset of the data is synchronized. For a list of all the entities, see [Integration with Dynamics 365 Finance](hr-admin-integration-finance.md).
 
-## Why don't I see any data synced to Common Data Service?
+## Why don't I see any data synced to Dataverse?
 
-By default, the Common Data Service integration is turned off in new environments that don't include the provided demo data. By default, it's turned on in new environments that include demo data, and data synchronization begins when the environment is provisioned. After your environment is ready to sync data, you can turn on the integration. For more information, see [Configure Common Data Service integration](hr-admin-integration-common-data-service.md).
+By default, the Dataverse integration is turned off in new environments that don't include the provided demo data. By default, it's turned on in new environments that include demo data, and data synchronization begins when the environment is provisioned. After your environment is ready to sync data, you can turn on the integration. For more information, see [Configure Dataverse integration](hr-admin-integration-common-data-service.md).
 
 ## Can I create a new mapping without using the templates?
 
 Templates are the starting point. You can create your own template, but a
 template is always needed when creating an integration project. For
-more information about data integrator (DI), templates, and projects, see [Integrate data into Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+more information about data integrator (DI), templates, and projects, see [Integrate data into Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## Can I map financial dimensions to transfer between Human Resources and Finance?
 
-Financial dimensions aren’t currently in Common Data Service and as a result aren’t
+Financial dimensions aren’t currently in Dataverse and as a result aren’t
 part of the default template. This entity is planned, but currently no release timeline is available.
 
 For data that resides in Finance but does not exist in Human Resources, link the two systems together by using **Configure Links** in Human Resources.
@@ -89,7 +90,7 @@ passing it into the destination.
 ## Can I specify which fields to send to Finance for a specific entity?
 
 Fields can be added or removed from the integration task. Not all data fields
-that exist on the Common Data Service entity will be populated from Human Resources.
+that exist on the Dataverse table will be populated from Human Resources.
 Additional data can be populated via Power Apps.
 
 ![Add or remove fields to and from an integration task](media/SpecifyFieldsIncludedInIntegration.png)
@@ -112,7 +113,7 @@ data creation and updates (UPSERT) are currently included.
 
 The first run of Data Integrator is always a full run. Subsequent runs are
 based on change tracking. When an error run is executed, it extracts the records
-in scope of the run and sends out the most recent changes from Common Data Service.
+in scope of the run and sends out the most recent changes from Dataverse.
 
 ## When I save the project, I get the error: “Project has mapping errors." What do I do?
 
@@ -129,16 +130,16 @@ integration project in the data integration.
 
 ## I need to transfer data that is not part of the default template provided by Microsoft. Can I do this?
 
-Yes, fields can be added to or removed from the existing template. The template can be modified to include additional data from other Common Data Service entities. The entity must be in Common Data Service for it to be included in the template. 
+Yes, fields can be added to or removed from the existing template. The template can be modified to include additional data from other Dataverse tables. The entity must be in Dataverse for it to be included in the template. 
 
 ## I just created new Finance and Human Resources environments, and I'm getting the error "The data value violates integrity constraints." Why?
 
 Reasons for this error can include:
 
-- The data transfer resulted in duplicate records extraction at the source (Common Data Service).
+- The data transfer resulted in duplicate records extraction at the source (Dataverse).
 
 - The data transfer has null values for fields that are required in Finance and
-Operations. Verify the data that is in Common Data Service and meets the requirements of Finance and
+Operations. Verify the data that is in Dataverse and meets the requirements of Finance and
 Operations.
 
 ## If there are execution errors and the Employee ID didn't sync, how do I find the history job which has the failed employee record?
@@ -166,35 +167,35 @@ the execution time in Step 2.
 ## After integrating Human Resources and Finance, I don’t see my Human Resources data in Finance. What do I do?
 
 The integration to Finance is a two-step process. First, verify
-that the Human Resources data is updated and available in Common Data Service. This is a near real-time
+that the Human Resources data is updated and available in Dataverse. This is a near real-time
 sync and can be verified in Power Apps by looking at the data within the data
-entities.
+tables.
 
-![Data in Common Data Service](media/DataInCDS.png)
+![Data in Dataverse](media/DataInCDS.png)
 
-If the data is not appearing as expected in Common Data Service, verify that the entity is
-supported in the integration. To include additional data in Common Data Service, a change will be required on the Microsoft side.
+If the data is not appearing as expected in Dataverse, verify that the entity is
+supported in the integration. To include additional data in Dataverse, a change will be required on the Microsoft side.
 
-If the entity is supported and the data is available in Common Data Service, verify the mapping
+If the entity is supported and the data is available in Dataverse, verify the mapping
 is correct in Data Integrator. If the integrator mapping looks okay, then
 verify the data management jobs have successfully run. Errors may occur during
 the execution of the batch jobs. For more information about Data Management, see [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## The addresses for my employees are incorrect after I import them into Finance. What should I do?
 
-The number sequence for **Location ID** uses the same pattern in both Human Resources and Finance. The number sequence needs to be unique on both sides so there are no address collisions when integrating data from Common Data Service to Finance and Operations.
+The number sequence for **Location ID** uses the same pattern in both Human Resources and Finance. The number sequence needs to be unique on both sides so there are no address collisions when integrating data from Dataverse to Finance and Operations.
 
 During implementation of Human Resources, verify that the number sequences are not the same in Human Resources and Finance. Validate that all number sequences are not identical where data may be maintained in both systems.
 
 ## When creating my connection set, I am unable to see the connection in the Connection drop-down list. What do I do?
 
-Make sure when creating your connections, you choose Dynamics 365 Finance and Common Data Service.
+Make sure when creating your connections, you choose Dynamics 365 Finance and Dataverse.
 
 ## When syncing employments, I get the errors “CompanyInfo_FK doesn’t exist" or “The value '12/31/2154 11:59:59 pm' in field 'Employment end date' is not found in the related table 'Employment'.” What should I do?
 
 Ensure that you are mapping to the correct legal entities. Legal entity syncing
 is not part of the default template, so it is expected that each legal
-entity that is present in Human Resources and Common Data Service is also present in Finance.
+entity that is present in Human Resources and Dataverse is also present in Finance.
 Also, make sure that you are selecting the correct legal entities for the
 associated Connection Set.
 
@@ -210,11 +211,11 @@ of minutes to complete, then you should see those mappings. This issue occurs wh
 
 - Data Integrator (DI): 
 
-  - [Integrate data into Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [Integrate data into Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
   - [Data Integrator error management and troubleshooting](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Responding to DSR requests for system-generated logs in Power Apps, Microsoft Power Automate, and Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Responding to DSR requests for system-generated logs in Power Apps, Microsoft Power Automate, and Dataverse](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Data Management:
 

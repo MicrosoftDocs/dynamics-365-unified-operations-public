@@ -59,25 +59,26 @@ The One voucher functionality causes issues during settlement, tax calculation, 
 
 For example, you post the following multiline voucher.
 
-[![Example](./media/example.png)](./media/example.png)
+[![Example of a multiline voucher](./media/example.png)](./media/example.png)
 
 You then generate the **Expenses by vendor** report in the **Financial Insights** workspace. On this report, expense account balances are grouped by vendor group and then vendor. When the report is generated, the system can't determine which vendor groups/vendors incurred the expense of 250.00. Because transaction details are missing, the system assumes that the whole 250.00 expense was incurred by the first vendor that is found in the voucher. Therefore, the 250.00 expense, which is included in the balance for main account 600120, is shown under that vendor group/vendor. However, it's very likely that the first vendor in the voucher isn't the correct vendor. Therefore, the report is probably incorrect.
 
-[![Expenses](./media/expenses.png)](./media/expenses.png)
+[![Expenses by vendor report](./media/expenses.png)](./media/expenses.png)
 
 ## The future of One voucher
 
-Because of the issues that were mentioned earlier, the One voucher functionality will be made obsolete. However, because there are functional gaps that depend on this functionality, the functionality won't become obsolete all at one time. Instead, the following schedule will be used:
+Because of the issues that can occur when One voucher is used, this functionality will eventually be deprecated. However, because there are functional gaps that depend on this functionality, the deprecation won't occur all at once. Instead, the following schedule will be used:
 
-- **Spring 2018 release** – By default, the functionality will be turned off by default through the **Allow multiple transactions within one voucher** parameter on the **General** tab of the **General ledger parameters** page. However, you can turn the functionality on if your organization has a scenario that falls into one of the functional gaps that are listed later in this topic.
+- **Spring 2018 release** – This functionality was turned off by default through the **Allow multiple transactions within one voucher** parameter on the **General** tab of the **General ledger parameters** page. However, you can turn it back on if your organization has a scenario that falls into one of the functional gaps that are listed later in this topic.
 
-    - If customers have a business scenario that doesn't require One voucher, they shouldn't turn the functionality on. Microsoft won't fix "bugs" in the areas that are identified later in this topic if this functionality is used even though another solution exists.
-    - Stop using One voucher for integrations, unless you need the functionality for one of the functional gaps.
+    - If your business scenario doesn't require One voucher, we recommend that you leave the functionality turned off. If you use it even though another solution exists, Microsoft won't fix "bugs" in the areas that are identified later in this topic.
+    - We recommend that you stop using One voucher for integrations, unless you require the functionality for one of the documented functional gaps.
 
-- **Later releases** – All functional gaps will be filled. **After the functional gaps are filled and new features are delivered, it will be at least one year before the One voucher functionality is permanently turned off**, because customers and independent software vendors (ISVs) must have enough time to react to the new functionality. For example, they might have to update their business processes, entities, and integrations.
+- **Later releases** – Several business requirements can be met only by using One voucher. Microsoft must ensure that all the identified business requirements can still be met in the system after the functionality is deprecated. Therefore, new features will probably have to be added to fill functional gaps. Microsoft can't provide a specific solution, because each feature gap is different and must be evaluated based on the business requirements. Some functional gaps will likely be replaced with features that help meet specific business requirements. However, other gaps might be filled by continuing to allow for entry in a journal, as when One voucher is used, but enhancing the system to track more detail as required.
 
-> [!IMPORTANT]
-> The **One voucher number only** option has **not** been removed from the Journal name setup. This option is still supported when the voucher contains only ledger account types. Customers must be careful when they use this setting, because the voucher won't be posted if they use the **One voucher number only** option but then enter more than one customer, vendor, bank, fixed asset, or project. Additionally, customers can still enter a mix of subledger account types, such as a payment in a single voucher that contains the **Vendor**/**Bank** account types.
+After all the functional gaps are filled, Microsoft will communicate that the feature will be deprecated. However, the deprecation won't be effective for least one year after that communication. Although Microsoft can't provide an estimate about when the One voucher functionality will be deprecated, it will likely be at least two years before the deprecation occurs. Microsoft policy is to leave at least 12 months between the announcement of deprecated functionality and the actual deprecation, so that customers and independent software vendors (ISVs) have time to react to the change. For example, an organization might have to update its business processes, entities, and integrations.
+
+The deprecation of One voucher is a significant change that will be widely communicated. As part of that communication, Microsoft will update this topic, post a blog post on the Microsoft Dynamics 365 Finance blog, update the "Removed or deprecated features" topic, communicate the change at appropriate Microsoft conferences, and so on.
 
 ## Why use One voucher?
 

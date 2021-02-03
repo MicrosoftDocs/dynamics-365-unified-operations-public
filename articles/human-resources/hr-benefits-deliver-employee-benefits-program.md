@@ -4,7 +4,7 @@
 title: Deliver employee benefits program
 description: This article shows you how to create benefit elements which will be used when creating a new benefit. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 02/03/2020
 ms.topic: business-process 
 ms.prod:  
@@ -17,6 +17,7 @@ ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBen
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

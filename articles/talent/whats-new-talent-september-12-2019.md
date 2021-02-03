@@ -60,9 +60,9 @@ For more information about how changes are published, see [Provision Talent](./p
 
 For more details about Platform update 29, see [Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
-### New job base entity available in data management framework (347202)
+### New job base table available in data management framework (347202)
 
-With this release, a new Base Job entity is available for importing/exporting data. 
+With this release, a new Base Job table is available for importing/exporting data. 
 
 ### Worker advanced security policy incorrectly displays positions in Position Hierarchy (354868)
 
@@ -82,7 +82,7 @@ With this change, you can change the employment date to a time other than 23:59:
 
 ### Unable to set up expiration date on an earning code through Data management (336604)
 
-In this release, you can set up earning codes that expire through the **PayrollWorkerPositionEarningCodeEntity** entity.
+In this release, you can set up earning codes that expire through the **PayrollWorkerPositionEarningCodeEntity** table.
 
 ### Employee development analytic report doesn't display data (348737)
 

@@ -4,7 +4,7 @@
 title: Enroll and remove benefits from workers
 description: This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 02/03/2020
 ms.topic: business-process 
 ms.prod:  
@@ -17,6 +17,7 @@ ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, H
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

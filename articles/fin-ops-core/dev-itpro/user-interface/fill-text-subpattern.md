@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fill Text subpattern
-description: This article provides information about the Fill Text subpattern. This subpattern is used when a single String or StaticText control must stretch to the full width of the container, so that users have more space to enter information.
+description: This article provides information about the Fill Text subpattern.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017

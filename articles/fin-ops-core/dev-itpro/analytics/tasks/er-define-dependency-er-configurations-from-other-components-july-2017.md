@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Define the dependency of ER configurations on other components
-description: To complete these steps, you must first complete the steps in the task guide, ER Manage model mapping configurations, and you must have access to Microsoft Dynamics Lifecycle Services (LCS). 
+description: This topic describes how to design an Electronic reporting (ER) configuration and specify its dependency from other software components.
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/23/2017

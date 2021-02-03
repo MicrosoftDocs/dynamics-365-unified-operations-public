@@ -103,7 +103,7 @@ The integration follows the complete sequence of changes. In the example, the cu
 
 Each linked environment-pair (Finance and Operations apps environment and Dataverse environment) should be treated as a single unit and refreshed accordingly. For example, if you are refreshing a sandbox from production, then both Finance and Operations app sandbox environment and the Dataverse sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments need to be unlinked. After the data refresh on target environments, these tables should be cleaned up:
 
-+ Finance and Operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectcolumnConfiguration**, and **BusinessEventsDefinition**. 
++ Finance and Operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
 + Dataverse tables: **DualwriteRuntimeConfiguration**. 
 
 The environments need to be relinked and maps reactivated manually.

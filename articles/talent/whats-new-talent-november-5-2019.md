@@ -54,9 +54,9 @@ In this week's release, you can use Microsoft Dynamics Lifecycle Services (LCS) 
 
 - [Copy a Core HR instance](hr-copy-instance.md) in Talent documentation
 
-### Common Data Service integration batch jobs aren't created when Common Data Service integration is enabled (388030)
+### Dataverse integration batch jobs aren't created when Dataverse integration is enabled (388030)
 
-This change will create batch jobs for Common Data Service integration when it's enabled.
+This change will create batch jobs for Dataverse integration when it's enabled.
 
 ### The HcmPersonImageEntity doesn't resize the person image when uploaded (369469)
 
@@ -70,9 +70,9 @@ With this change, a warning will appear if you select an **Available for assignm
 
 This release corrects an issue when requesting compensation changes through employee self-service for step-based plans. 
 
-### Reason code doesn't sync to Common Data Service if the description is longer than 30 characters, Core HR allows 60 (352682)
+### Reason code doesn't sync to Dataverse if the description is longer than 30 characters, Core HR allows 60 (352682)
 
-with this change, reason codes with more than 30 characters will be updated in Common Data Service. Changes made in Common Data Service will also be reflected back in Talent.
+with this change, reason codes with more than 30 characters will be updated in Dataverse. Changes made in Dataverse will also be reflected back in Talent.
 
 ### Address integration from Talent to Finance and Operations (351961)
 
