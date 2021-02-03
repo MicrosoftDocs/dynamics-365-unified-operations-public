@@ -69,3 +69,12 @@ Both **Apply updates** and **Apply extension** operations will involve a downtim
 ## View history
 To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.
 
+## CSU auto-update sequence
+> [!NOTE]
+> Auto-update for CSU is being gradually rolled out to all Commerce customers. LCS project owners and environment administrators will recieve an email notification when CSU auto-update is rolled out to your LCS project.
+
+When CSU is auto-updated by Microsoft, it takes place in the following sequence.
+
+[![CSU auto-update sequence](./media/CSU auto update timline.png)](./media/CSU auto update timline.png)
+
+
