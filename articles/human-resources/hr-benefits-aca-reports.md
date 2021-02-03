@@ -4,7 +4,7 @@
 title: Generate Affordable Care Act (ACA) reports
 description: Functionality is available to assist employers that need to track the information reported on forms 1095-B and 1095-C in support of the Employer Mandate portion of the Affordable Care Act. Note this functionality is only enabled for legal entities in the United States.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
