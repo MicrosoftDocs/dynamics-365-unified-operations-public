@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
 manager: AnnBe
-ms.date: 02/02/2021
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -631,10 +631,10 @@ If you receive the message, "Cannot find the certificate and private key to use 
 If the credentials.json file has changed:
 
 1. Your environment appears deployed in LCS.
-    1. Go to your environment page and click the Maintain button.
+    1. Go to your environment page and click the **Maintain** button.
     1. Select update settings.
-    1. Do not change any settings and click Prepare.
-    1. After a few minutes your environment will be prepared and you can click deploy.
+    1. Do not change any settings and click **Prepare**.
+    1. After a few minutes, your environment will be prepared and you can click **Deploy**.
 
 1. Your environment is in a failed state in LCS.
     1. Click on the retry button and the new Credentials.json will be used during the retry operation. 
