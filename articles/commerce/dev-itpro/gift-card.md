@@ -166,7 +166,7 @@ When you use the test connector to demonstrate support for external gift cards, 
 ## External gift cards for the call center and storefront
 
 > [!NOTE]
-> External gift card support for call center and storefront is enabled in the **Feature management** workspace. Enable **Omni-channel payments**, then enable **Enable advanced external gift card**. For additional steps required to set up external gift cards in the storefront, please visit the docs article dedicated to  [E-commerce digital gift cards](https://docs.microsoft.com/en-us/dynamics365/commerce/digital-gift-cards). 
+> External gift card support for call center and storefront is enabled in the **Feature management** workspace. Enable **Omni-channel payments**, then enable **Enable advanced external gift card**. For additional steps required to set up external gift cards in the storefront, please visit the docs article dedicated to  [E-commerce digital gift cards](../digital-gift-cards.md). 
 
 ### Tokenization
 
@@ -197,7 +197,7 @@ If product variants are used, the person who creates the gift card order is prom
 Modes of delivery must support the type of gift card. For example, a gift card product variant of the **Physical** style must be mapped to a mode of delivery that is related to shipping. A gift card product variant of the **Email** style must be mapped to an electronic mode of delivery. The electronic mode of delivery is defined on the **Customer orders** tab of the **Commerce parameters** page.
 
 > [!NOTE]
-> Only virtual gift cards are currently supported in e-commerce. For more details about setting up virtual gift cards in e-commerce, see [E-commerce digital gift cards](https://docs.microsoft.com/en-us/dynamics365/commerce/digital-gift-cards). 
+> Only virtual gift cards are currently supported in e-commerce. For more details about setting up virtual gift cards in e-commerce, see [E-commerce digital gift cards](../digital-gift-cards.md). 
 
 ## Setup for the call center and storefront
 
@@ -239,11 +239,11 @@ In the back office, on the **Payment services** page, configure the payment serv
 
 ## Online store payments setup
 
-To configure the payment accounts for your online store to use Adyen for external gift card processing, please refer to the [e-Commerce setup section](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) of the documentation for the Adyen connector. 
+To configure the payment accounts for your online store to use Adyen for external gift card processing, please refer to the [e-Commerce setup section](adyen-connector.md?tabs=8-1-3#e-commerce) of the documentation for the Adyen connector. 
 
 #### Adyen external gift card setup
 
-For an example that shows how to set up payment services, see the [documentation for the Adyen payment connector](https://docs.microsoft.com/dynamics365/retail/dev-itpro/adyen-connector?tabs=8-1-3).
+For an example that shows how to set up payment services, see the [documentation for the Adyen payment connector](adyen-connector.md?tabs=8-1-3).
 
 For the call center and storefront, the Adyen connector supports the following gift cards.
 
@@ -254,7 +254,7 @@ For the call center and storefront, the Adyen connector supports the following g
 | Givex   | Physical         | Yes       | Manually         |
 
 > [!NOTE]
-> In the out-of-box Adyen connector, gift cards are not configured by default. To specify the gift card provider in the merchant properties of the payment connector, follow the instructions in the [documentation for the Adyen payment connector](https://docs.microsoft.com/dynamics365/retail/dev-itpro/adyen-connector?tabs=8-1-3).
+> In the out-of-box Adyen connector, gift cards are not configured by default. To specify the gift card provider in the merchant properties of the payment connector, follow the instructions in the [documentation for the Adyen payment connector](adyen-connector.md?tabs=8-1-3).
 
 #### Test connector external gift card setup
 
@@ -311,7 +311,7 @@ The following procedure shows how to set up an external gift card by using produ
 
 26. Select **Save**.
 
-For the storefront, the gift card must also be included in the storefront's assortment. For more information, see [Assortment management](https://docs.microsoft.com/dynamics365/commerce/assortments).
+For the storefront, the gift card must also be included in the storefront's assortment. For more information, see [Assortment management](../assortments.md).
 
 > [!NOTE]
 > The gift card product used for external gift card setup in POS should not use product masters with item variants. Gift cards based on item variants may still be used for payments, balance inquiries, and cash out in POS, but gift card products associated with the POS for issuance must be standard products. 
@@ -321,7 +321,7 @@ For the storefront, the gift card must also be included in the storefront's asso
 
 For information about email setup, see [Configure email functionality](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax).
 
-For information about how to set up email notifications for Commerce, see [Set up an email notification profile](https://docs.microsoft.com/dynamics365/commerce/email-notification-profiles).
+For information about how to set up email notifications for Commerce, see [Set up an email notification profile](../email-notification-profiles.md).
 
 For gift cards that are issued via email, the value of the **Retail email notification type** field is **Issue gift card**.
 
