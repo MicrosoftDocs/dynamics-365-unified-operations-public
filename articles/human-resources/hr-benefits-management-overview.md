@@ -4,7 +4,7 @@
 title: Benefits management overview
 description: Overview of Benefits management feature in Dynamics 365 Human Resources. Offer your employees extended benefits options with an easy-to-use online experience.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 

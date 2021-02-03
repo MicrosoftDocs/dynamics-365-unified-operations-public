@@ -4,7 +4,7 @@
 title: Process life event eligibility
 description: This article shows you how to run the process for life event eligibility.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 

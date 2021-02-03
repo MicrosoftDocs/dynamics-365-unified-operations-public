@@ -4,7 +4,7 @@
 title: Benefit eligibility policies
 description: This article provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: HcmBenefitEligibilityDetail, SysPolicyListPage, SysPolicySourceD
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 16441
 ms.assetid: 4ad0106f-5b07-4fd5-bc1a-5834fa9b198e

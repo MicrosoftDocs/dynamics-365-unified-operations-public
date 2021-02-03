@@ -4,7 +4,7 @@
 title: Define benefit eligibility rules and policies
 description: This article shows you how you can create benefit eligibility rules and policies and then assign rules to Benefits. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 02/03/2020
 ms.topic: business-process 
 ms.prod:  
@@ -17,6 +17,7 @@ ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, H
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

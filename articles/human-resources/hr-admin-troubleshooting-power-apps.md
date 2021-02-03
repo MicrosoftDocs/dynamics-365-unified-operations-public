@@ -4,7 +4,7 @@
 title: Can't create an environment in the Power Apps Admin center
 description: This article explains what to do if the admin can't create an environment in the Microsoft Power Apps Admin center.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

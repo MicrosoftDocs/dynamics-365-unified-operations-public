@@ -4,7 +4,7 @@
 title: Set up reason codes
 description: Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 

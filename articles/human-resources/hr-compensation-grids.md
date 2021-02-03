@@ -4,7 +4,7 @@
 title: Set up compensation grids
 description: Compensation grids are used to define and maintain the pay structures for fixed compensation plans. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -17,6 +17,7 @@ ms.search.form: HRCCompGrid, HRCCompGridView, HcmCompensationWorkspace
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
