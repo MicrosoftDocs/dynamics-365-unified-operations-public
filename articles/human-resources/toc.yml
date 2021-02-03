@@ -141,6 +141,9 @@
               href: hr-admin-integration-ats-api-person-skill.md
             - name: Rating level
               href: hr-admin-integration-ats-api-rating-level.md
+            - name: Person certificate
+              href: hr-admin-integration-ats-api-person-certificate.md
+            - name: 
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
         - name: Candidate to hire and related entities
