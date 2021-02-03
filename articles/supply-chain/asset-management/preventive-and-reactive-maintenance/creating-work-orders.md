@@ -59,34 +59,41 @@ To create work orders based on your maintenance schedule:
 
 1. In the **Parameters** section, select how many work orders should be created. Select one of the following options:
 
-    - **One work order per line** - Create one work order per maintenance schedule line
-    - **One work order per** -  Creates work orders grouped according to the options you enable in this area.
+    - **One work order per line** - Create one work order per maintenance schedule line.
+    - **One work order per** -  Create work orders grouped according to the options you enable in this area.
 
 1. Select a **Work order type** to use on all the work orders you create.
 
 1. Select **OK** to create the work orders according to your settings.
 
-## Apply rules for grouping work orders while running a maintenance plan
+## Group work order lines that are created automatically while running a maintenance plan
 
 > [!IMPORTANT]
 > The functionality that is described in this section is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
-As described in the previous section, the **Create work orders** dialog box lets you set up criteria for grouping jobs under work orders. For example, you can select to group by maintenance plan, asset, and functional location. This option is also available when you generate work orders automatically while running a maintenance plan.
+This feature lets you establish rules for grouping work order lines under a single work order when the system is set to generate work orders automatically based on a maintenance plan. Previously, automatically generated work orders could only contain a single line, but now it's possible to group them, for example, per asset, per asset type, or per functional location. (Manually generated work orders could already be grouped in this way, as described in the previous section.)
 
-### Enable this feature
+### Enable grouping for automatically generated work orders
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Asset Management*
 - **Feature name:** *(Preview) Apply rules for grouping work orders while running a maintenance plan*
 
-### Use this feature
+### Set up grouping for automatically generated work orders
 
-To take advantage of this feature, the following two conditions must be fulfilled:
+To set up grouping for automatically generated work orders, do the following:
 
-- The maintenance plan lines must have **Auto create** set to *Yes*. <!-- KFM: Where do I find these? -->
-- You must run or schedule the maintenance plan by selecting one of the following commands from the navigator: <!-- KFM: Any of these, or just some/one of them? -->
-  - **Asset Management \> Periodic \> Preventive maintenance \> Schedule maintenance plans**
-  - **Asset Management \> Periodic \> Preventive maintenance \> Schedule maintenance rounds**
-  - **Asset Management \> Periodic \> Preventive maintenance \> Update maintenance job type default references**
-- In the dialog box for running or scheduling the plan, you must set **Automatically create work order from schedule** to *Yes*.
+1. Go to **Asset management \> Setup \> Preventative maintenance \> Maintenance plans** and do the following for each plan where you want to generate grouped work orders:
+    1. Select the plan on the list pane.
+    1. Expand the **Lines** FastTab.
+    1. Make sure that each line has its **Auto create** check box selected.
+1. Go to **Asset Management \> Periodic \> Preventive maintenance \> Schedule maintenance plans**. The **Schedule maintenance plans** dialog box opens.
+1. In the **Period** section, establish how often the relevant plans should run.
+1. Set **Automatically create work order from schedule** to *Yes*.
+1. Select one of the following options in the **Work order** area:
+    - **One work order per line** - Create one work order per maintenance schedule line. (This provides the same functionality as when the *Apply rules for grouping work orders while running a maintenance plan* isn't enabled.)
+    - **One work order per** -  Create work orders grouped according to the options you enable in this area.
+1. If you only want to run some of your maintenance plans with these options, expand the **Records to include** FastTab and add filters as needed, just as with other batch jobs in Supply Chain Management.
+1. Expand the **Run in the background** FastTab and set up batch and scheduling options as needed, just as with other batch jobs in Supply Chain Management.
+1. Select **OK** to run and/or schedule the selected maintenance plans.
