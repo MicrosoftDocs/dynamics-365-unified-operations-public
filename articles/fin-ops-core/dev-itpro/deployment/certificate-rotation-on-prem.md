@@ -67,6 +67,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     ```
 
     > [!NOTE]
+    > The AD CS scripts need to run on a Domain Controller, or a Windows Server with Remote Server Admin Tools installed.
     > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
 
     > [!IMPORTANT]
