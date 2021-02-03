@@ -133,7 +133,14 @@
               href: hr-admin-integration-ats-api-person-education.md
             - name: Person professional experience
               href: hr-admin-integration-ats-api-person-professional-experience.md
-            - name: 
+            - name: Person address
+              href: hr-admin-integration-ats-api-person-address.md
+            - name: Party contact
+              href: hr-admin-integration-ats-api-party-contact.md
+            - name: Person skill
+              href: hr-admin-integration-ats-api-person-skill.md
+            - name: Rating level
+              href: hr-admin-integration-ats-api-rating-level.md
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
         - name: Candidate to hire and related entities
