@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Develop and open job requisition
+title: Create and open job requisition
 description: Recruitment projects help manage the recruiting process. 
 author: andreabichsel
 manager: AnnBe 
@@ -26,26 +26,25 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Develop and open job requisition
 
-
+# Create and open job requisition
 
 Recruitment projects help manage the recruiting process. For each recruitment project, you can set up information, such as the job that recruiting is for, the name of the recruiter, the status of the project and the department that the job will be located in. After creating a recruitment project, you can write a job advertisement for the project, publish the ad on Employee self-service pages, associate applications for employment with the project, and track activities for that project. The demo data company used to create this procedure is USMF. To begin the procedure, go to Human resources > Recruitment > Recruitment projects > Recruitment projects
 
-1. Click New.
-2. In the Recruitment project field, type a value.
-3. In the Description field, type a value.
-4. In the Recruiter field, click the drop-down button to open the lookup.
+1. Select **New**.
+2. In the **Recruitment project** field, type a value.
+3. In the **Description** field, type a value.
+4. In the **Recruiter** field, click the drop-down button to open the lookup.
 5. In the list, find and select the desired record.
 6. In the list, click the link in the selected row.
-7. Click Select.
+7. Click **Select**.
 8. In the Department field, click the drop-down button to open the lookup.
 9. In the list, click the link in the selected row.
-10. In the Job field, click the drop-down button to open the lookup.
+10. In the **Job** field, click the drop-down button to open the lookup.
 11. In the list, find and select the desired record.
 12. In the list, click the link in the selected row.
-13. In the Number of openings field, enter a number.
-14. In the Hiring manager field, click the drop-down button to open the lookup.
+13. In the **Number of openings field**, enter a number.
+14. In the **Hiring manager** field, click the drop-down button to open the lookup.
 15. In the list, find and select the desired record.
 16. In the list, click the link in the selected row.
 17. Click Select.
