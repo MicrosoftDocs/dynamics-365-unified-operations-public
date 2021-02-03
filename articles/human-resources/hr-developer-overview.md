@@ -4,7 +4,7 @@
 title: Development overview
 description: This Developer Guide provides an API and custom fields reference. It also provides information on integrating with other apps.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
