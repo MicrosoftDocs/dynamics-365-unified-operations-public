@@ -41,7 +41,7 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 |---|---|
 | Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 Commerce (and associated components) and a payment service. The connector that is described in this topic was implemented by using the standard payments software development kit (SDK). |
 | Card present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
-| Card not present | Refers to payment transactions where a physical card is not present, such as e-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manually either on an e-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
+| Card not present | Refers to payment transactions where a physical card is not present, such as e-Commerce or Call Center scenarios. In these scenarios, the payment-related information is entered manually either on an e-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
 
 ## Overview
 
@@ -187,7 +187,7 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 | Union Pay\* | Standard | ✔ |  |  |
 | Interac Debit\* | Standard | ✔ |  |  |
 
-\*Interac and Union Pay recurring card tokens are not provided by Adyen, so they are cannot be supported for card not present transactions.
+\*Interac and Union Pay recurring card tokens aren't provided by Adyen, so they can't be supported for card not present transactions.
 
 #### Supported gift cards
 | Scheme | Card present | Card not present |
@@ -216,7 +216,7 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 
 #### Supported card present countries
 
-The following countries have Commerce components available as well as card present support from Adyen. For current international availability of Commerce, please visit the [International availability page](https://docs.microsoft.com/en-us/dynamics365/get-started/availability).
+The following countries have Commerce components available and card present support from Adyen. For current international availability of Commerce, visit the [International availability page](https://docs.microsoft.com/dynamics365/get-started/availability).
 
 | Country | Supported |
 | --- | :-: |
@@ -252,7 +252,7 @@ The following countries have Commerce components available as well as card prese
 
 #### Supported card not present countries
 
-The following countries are supported by Adyen for card not present tranactions. Please [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country. For current international availability of Commerce, please visit the [International availability page](https://docs.microsoft.com/en-us/dynamics365/get-started/availability).
+The following countries are supported by Adyen for card not present tranactions. [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country. For current international availability of Commerce, visit the [International availability page](https://docs.microsoft.com/dynamics365/get-started/availability).
 
 | Country | 
 | --- | --- |
@@ -386,9 +386,9 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Local Key Version | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
     | Local Cryptor Version | Enter the Adyen cryptor version to use when you interact with the Adyen gateway. You should set this field to **1**. | Yes | Yes | 1 |
     | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | abcdefg |
-    | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
+    | Supported Currencies | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
-    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case sensitive. | No | No | "svs" or "givex" |
+    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case-sensitive. | No | No | "svs" or "givex" |
     | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
@@ -445,9 +445,9 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Local Key Version | Enter the Adyen key version for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | 0 |
     | Local Cryptor Version | Enter the Adyen cryptor version to use when you interact with the Adyen gateway. You should set this field to **1**. | Yes | Yes | 1 |
     | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | abcdefg |
-    | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
-    | Supported Tender Types | Enter the tender types that the connector should process. These values are case sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
-    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case sensitive. | No | No | "svs" or "givex" |    
+    | Supported Currencies | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
+    | Supported Tender Types | Enter the tender types that the connector should process. These values are case-sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
+    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case-sensitive. | No | No | "svs" or "givex" |    
     | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
@@ -478,7 +478,7 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | abcdefg |
     | Supported Currencies | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. These values are case-sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
-    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case sensitive. | No | No | "svs" or "givex" |    
+    | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case-sensitive. | No | No | "svs" or "givex" |    
     | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
