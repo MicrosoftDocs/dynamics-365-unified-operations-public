@@ -4,7 +4,7 @@
 title: Set up employment types
 description: Employment types can be set up in Dynamics 365 Human Resources to match your workers.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
