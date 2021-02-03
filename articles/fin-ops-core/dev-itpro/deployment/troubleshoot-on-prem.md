@@ -632,12 +632,12 @@ If the credentials.json file has changed:
 
 1. Your environment appears deployed in LCS.
     1. Go to your environment page and click the **Maintain** button.
-    1. Select update settings.
+    1. Select **Update settings**.
     1. Do not change any settings and click **Prepare**.
     1. After a few minutes, your environment will be prepared and you can click **Deploy**.
 
 1. Your environment is in a failed state in LCS.
-    1. Click on the retry button and the new Credentials.json will be used during the retry operation. 
+    1. Click the **Retry** button and the new Credentials.json file will be used during the retry operation. 
 
 If none of the preceding solutions work, follow these steps.
 
