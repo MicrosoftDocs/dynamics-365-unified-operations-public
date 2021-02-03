@@ -94,7 +94,7 @@ Because the product is represented as a SKU, the concepts of distinct products, 
 
 ![Data model for products](media/dual-write-product.png)
 
-With the dual-write functionality enabled, the products from Finance and Operations will be synchronized in other Dynamics 365 products in **Draft** state. They are added to the first price list with the same currency. In other words, they are added to the first price list in a Dynamics 365 app that matches the currency of your legal table where the product is released in a Finance and Operations app. 
+With the dual-write functionality enabled, the products from Finance and Operations will be synchronized in other Dynamics 365 products in **Draft** state. They are added to the first price list with the same currency. In other words, they are added to the first price list in a Dynamics 365 app that matches the currency of your legal table where the product is released in a Finance and Operations app. If there is no price list for the given currency, a price list will automatically be created and the product will be assigned to it. 
 
 By default products from Finance and Operations apps are synchronized to other Dynamics 365 apps in **Draft** state. To synchronize the product with **Active** state so that you can directly use it in sales order quotations, for example, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**. 
 
