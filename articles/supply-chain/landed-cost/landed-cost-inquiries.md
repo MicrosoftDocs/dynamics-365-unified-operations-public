@@ -43,8 +43,6 @@ To open the **Voyage lines** inquiry page, go to **Landed cost \> Inquiries \> V
 
 The **Overview** tab shows a grid with basic information about each relevant voyage line. The following table describes each column shown here.
 
-<!-- KFM: Review all of these. -->
-
 | Column | Description |  
 | --- | --- |
 | **Item number** | Identifies the item for this voyage line. |
@@ -66,62 +64,16 @@ Open the **Dimensions** tab to see values for all available dimensions for the l
 
 ## Cost estimate inquiries
 
-<!-- KFM: This section does not describe the UI at all. What is this? -->
-
-<!-- KFM: Start by summarizing the purpose of the page. -->
-
-The overview tab shows the cost estimates; the costs tab shows the breakdown of a cost estimate. The cost estimate inquiry form can additionally be used to modify cost estimates and used as a worksheet before the cost price is updated for the items within the estimate.
-
-The open the **Cost estimates** page, go to **Landed cost \> Inquiries \> Cost estimates**.
-
-To populate or update the **Cost estimates** page, run the periodic cost estimates process. <!-- KFM: Add a link to the topic where we show this. -->
-
-| Setting | Description |
-| --- | --- |
-| **Cost Estimate Number** | The Id for this cost estimate |
-| **Cost Template** | The template that was used to derive this cost |
-| **Estimate Date** | The date that the exchange rate used, if applicable |
-| **From Port** | The from port used to derive the cost |
-| **To Port** | The to port used to derive the cost |
-| **Measurement** | The measurement used to derive the cost |
-| **Estimated Landed Cost** | The total landed cost value in the system currency |
-| **The Cost Tab** | The costs tab shows all the costs that have been found to determine the price |
-| **Cost Area** | 1 of 5 areas where the auto-cost was found |
-| **Code Type Code** | The name of the cost |
-| **Apportionment Method** | How the cost is apportioned – see apportionment methods section above to understand these |
-| **Category** | What category the cost has – see category section above to understand these |
-| **Cost Value** | The cost value in the expected currency for this cost |
-| **Estimated Cost** | The estimated cost for this cost type, this is shown in the system currency |
-| **Currency** | The currency of the cost value |
-| **Exchange Rate** | If the currency is not the same as the system currency the exchange rate will be useful and is shown here |
-| **Vendor Account** | The vendor account used, if applicable |
-| **Item Number** | The item number is shown here |
-| **Site** | The site is shown here |
-| **Quantity** | The number of items used to determine the cost |
-| **Cost Price** | The cost price (trade agreement) shown in local currency |
-| **Measurement** | The individual measurement is shown here |
-| **Estimated Landed Cost** | The estimated landed cost for the total quantity |
-| **Per Unit** | The estimated landed cost divided by the quantity |
-| **Cost Tab** | Costs tab shows all the purchase line shipment costs that have been found to determine the landed cost. |
-
-## Landed inquiry
-
-<!-- KFM: I can't tell what this is referring to. Remove? Consider whether to bring some of these details to the other topic... -->
-
-Select the **Cost inquiries** form to review the voyage costs associated to the inventory items on this estimate. Only those voyage costs that are associated to the debit transaction type of *Item* will be listed in the voyage costs on the estimate costs form. The cost type codes that do not have a debit type of *Item* will not be listed, as they are not included in the inventory cost associated to the item. Rather they are an additional overhead landed cost that is posted to a ledger account. The item cost type codes associated to the debit of ledger are managed through the auto costs form and can be viewed by going directly to the voyage form.
+Each time you generate a cost estimate, the estimate gets added to the **Cost estimates** inquiry page. For complete details about how to generate, view, and work with cost estimates (including on the inquiries page), see [Estimate and manage landed costs](estimate-manage-landed-costs.md).
 
 ## Item tracking
 
-Use the **Item tracking** page to view open purchase lines and their current status. They do not need to be attached to a voyage to appear here. If an item is associated with a voyage, the voyage ID will show in the item tracking record line. To open this page, go to **Landed cost \> Inquiries \> Tracking \> Item tracking**.
+Use the **Item tracking** page to view open purchase orders lines and their current status. They do not need to be attached to a voyage to appear here. If an item is associated with a voyage, the voyage ID will show in the item tracking record line. To open this page, go to **Landed cost \> Inquiries \> Tracking \> Item tracking**.
 
-A filter option is selected and standard wildcards can be used in the value field. For example, if all purchase lines for items with the word television contained within it, select the Item name filter and enter \*DVD\* in the value field.
-
-The customer account can be selected to show only those items which are on backorder for a particular customer. The backorders tab will show all other customers in addition to the filtered customer.
+Because your system probably contains a very large number of purchase order lines, this page initally shows now records. Start by using the filter fields at the top of the page to define the set of puchase order lines you are looking for. Then select **Update** on the Action Pane to generate the list. You can use an asterisk (\*) as a wildcard character in any of these fields. For example, to find all purchase order lines for items with the word "DVD" in their name, set **Type** to **Product name** and enter *\*DVD\** in the **FIeld value** field.
 
 > [!NOTE]
-> Currently a backorder are only sales orders, sales quotations are not shown or considered a back order as they are within standard Dynamics 365 Finance and Operations, Enterprise Edition.
-
-<!-- KFM: Mention that page opens blank, user must enter filter values first. And select UPDATE on AP -->
+> Currently backorders only include only sales orders. Sales quotations are not shown or considered backorders.
 
 The following table describes each column shown on the **Item tracking** page.
 
@@ -155,14 +107,11 @@ To see more information about backorders, expand the **Related information** tab
 
 This inquiry provides a filter that enables you to find a shipping container and then identify all of the voyage lines within that container.
 
-**Landed cost \> Inquiries \> Tracking \> Individual shipping container tracking**
-
-<!-- KFM: Add sentence for above.... -->
+To open this inquiry, go to **Landed cost \> Inquiries \> Tracking \> Individual shipping container tracking**.
 
 ## Multiple shipping container tracking
 
 This inquiry provides a filter that enables you to find a collection of shipping containers and then identify all of the voyage lines within those containers.
 
-**Landed cost \> Inquiries \> Tracking \> Multiple shipping container tracking**
+To open this inquiry, go to **Landed cost \> Inquiries \> Tracking \> Multiple shipping container tracking**.
 
-<!-- KFM: Add sentence for above.... -->
