@@ -64,9 +64,8 @@ Complete the following steps to configure customers data in order to activate au
 
 ## Print invoices
 Post and print any free text, customer, and project invoice or credit note for the customer configured in the previous step.
-Go to...
+
+Open **Attachments** form for the printed invoice. In the **Attachment** FastTab, in **ADDITIONAL DETAILS**, in **Document hash number** field, you can find the stored hash number calculated for the printed invoice.
 
 ![Attachment hash number](media/attach-hash-num.jpg)
 
-> [!NOTE]
-> For some countries, .
