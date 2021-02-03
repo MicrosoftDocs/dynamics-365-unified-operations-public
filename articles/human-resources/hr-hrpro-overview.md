@@ -65,7 +65,7 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 [Modify reporting relationships for a position](hr-personnel-modify-reporting-relationships-position.md)</br>
 [Enter worker information](hr-personnel-enter-worker-information.md)</br>
 [Loan items to workers](hr-personnel-loan-item-worker.md)</br>
-[Enter project timesheets](hr-personnel-enter-project-timesheets.md)</br>
+[Enter project timesheets](hr-enter-project-timesheets.md)</br>
 [Mass hire projects](hr-personnel-mass-hire-projects.md)</br>
 [Set up positions](hr-personnel-set-up-positions.md)</br>
 [Set up injury and illness information](hr-personnel-set-up-injury-illness-information.md)</br>
