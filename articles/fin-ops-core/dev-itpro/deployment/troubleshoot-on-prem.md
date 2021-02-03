@@ -628,15 +628,15 @@ Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMac
 
 If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.
 
-If the credentials.json file has changed:
+If the credentials.json file has changed, take the following action, depending on the status of the environment in LCS.
 
-1. Your environment appears deployed in LCS.
+- If your environment appears deployed in LCS, do the following:
     1. Go to your environment page and click the **Maintain** button.
     1. Select **Update settings**.
     1. Do not change any settings and click **Prepare**.
     1. After a few minutes, your environment will be prepared and you can click **Deploy**.
 
-1. Your environment is in a failed state in LCS.
+- If your environment is in a failed state in LCS, do the following:
     1. Click the **Retry** button and the new Credentials.json file will be used during the retry operation. 
 
 If none of the preceding solutions work, follow these steps.
