@@ -186,8 +186,6 @@
 
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
-        - name: Candidate to hire and related entities
-          href: hr-admin-integration-ats-api-candidate-entities.md
       - name: Integrate with Office
         items:
         - name: Office integration tutorial
