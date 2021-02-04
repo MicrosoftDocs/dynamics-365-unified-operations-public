@@ -1,4 +1,3 @@
-
 ---
 # required metadata
 
@@ -28,7 +27,7 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Platform update 36
 ---
 
-## Example query for Recruiting request
+# Example query for Recruiting request
 
 This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.
 
