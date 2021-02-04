@@ -127,7 +127,7 @@ Before you can use the version dimension, it must be turned on in your system. T
 
 ### Areas where the version dimension isn't supported
 
-The following areas don't support the version dimension (you can still use these areas but you won't be able to add versioned products (products where the version dimension is used) to them). For example, you can't add a versioned item to a vendor catalog. This is because the introduction of this version dimension would cause breaking changes.
+The following areas don't support the version dimension (you can still use these areas but you won't be able to add versioned products (products where the version dimension is used) to them). For example, you can't add a versioned item to a vendor catalog. This is because adding products with the version dimension to these areas would cause breaking changes.
 
 - Cost object monthly statement
 - Cost object statement cache
