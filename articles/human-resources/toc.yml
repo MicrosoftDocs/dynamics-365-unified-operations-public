@@ -105,8 +105,6 @@
           href: hr-admin-integration-ats-api-introduction.md
         - name: Recruiting request and related entities
           items:
-            - name: Example query for Recruiting request
-              href: hr-admin-integration-ats-api-recruiting-request-example-query.md
             - name: Recruiting request
               href: hr-admin-integration-ats-api-recruiting-request.md
             - name: Recruiting request position
@@ -117,6 +115,8 @@
               href: hr-admin-integration-ats-api-recruiting-request-education.md
             - name: Recruiting request location
               href: hr-admin-integration-ats-api-recruiting-request-location.md
+            - name: Example query for Recruiting request
+              href: hr-admin-integration-ats-api-recruiting-request-example-query.md
         - name: Recruiting request option sets
           items: 
             - name: Job exempt status
@@ -129,8 +129,6 @@
               href: hr-admin-integration-ats-api-regulatory-job-category.md
         - name: Candidate to hire and related entities
           items:
-            - name: Example query for Candidate to hire
-              href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
             - name: Candidate to hire
               href: hr-admin-integration-ats-api-candidate-to-hire.md
             - name: Person
@@ -157,6 +155,8 @@
               href: hr-admin-integration-ats-api-screening-types.md
             - name: Person identification number
               href: hr-admin-integration-ats-api-person-identification-number.md
+            - name: Example query for Candidate to hire
+              href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
         - name: Candidate option sets
           items:
             - name: Applicant integration result
