@@ -42,7 +42,7 @@ This topic explains how to install the warehouse management app on each of your 
 
 ## System requirements
 
-The warehouse management app is available for both Windows and Android operating systems. To use the latest version of the app, you must have one of the following operating systems installed on your mobile devices:
+The warehouse management app is available for both Windows and Android operating systems. To use the app, you must have one of the following operating systems installed on your mobile devices:
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
 - Android 4.4 or later
@@ -58,8 +58,8 @@ Before you can use the app, the feature must be turned on in your system. Admins
 
 Use one of the following links to download the app:
 
-- **Windows (UWP):** [App Center preview program - Windows](https://www.microsoft.com/store/apps/9p1bffd5tstm)
-- **Android:** [App Center preview program - Android](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
+- **Windows (UWP):** [App Center preview program - Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
+- **Android:** [App Center preview program - Android](https://go.microsoft.com/fwlink/?linkid=2154613)
 
 For smaller deployments, you might want to install the app from the relevant store on each device and then manually configure the connection to the environments that you're using. However, you can also automate app deployment and/or configuration. You might find this approach convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
