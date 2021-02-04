@@ -93,7 +93,7 @@ By using the **Export company balances** option to export from one instance and 
 
 11. Can I do a Consolidation with my budget in **DRAFT** status? 
 			
-You wont be able to process or complete your budgets in the consolidation company. We recommended using Financial Reporting to consolidate draft budgets.
+You won't be able to process or complete your budgets in the consolidation company. We recommended using Financial Reporting to consolidate draft budgets.
 
 For more information, see [Currency revaluation in a consolidation company](../general-ledger/currency-revaluation-consolidation-company.md).
 
