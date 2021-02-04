@@ -143,6 +143,10 @@
               href: hr-admin-integration-ats-api-rating-level.md
             - name: Person certificate
               href: hr-admin-integration-ats-api-person-certificate.md
+            - name: Certificate type
+              href: hr-admin-integration-ats-api-certificate-type.md
+            - name: Person screening
+              href: hr-admin-integration-ats-api-person-screening.md
             - name: 
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
