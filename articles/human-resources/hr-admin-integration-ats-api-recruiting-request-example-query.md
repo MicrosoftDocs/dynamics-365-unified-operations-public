@@ -1,10 +1,9 @@
 
-
 ---
 # required metadata
 
-title: Example query for Candidate to hire
-description: This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.
+title: Example query for Recruiting request
+description: This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.
 author: jaredha
 manager: tfehr
 ms.date: 02/05/2021
@@ -30,6 +29,8 @@ ms.dyn365.ops.version: Platform update 36
 ---
 
 ## Example query for Recruiting request
+
+This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.
 
 The following query shows how you can use the $expand query option in a GET operation to retrieve a specified recruiting request record and all associated positions, required skills, and educational requirements for the specified request. The example response shows a recruiting request for two positions, and the required skills and education for the requested positions.
 
