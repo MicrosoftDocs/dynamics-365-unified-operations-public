@@ -131,18 +131,9 @@ It is critical to perform proper performance testing prior to going live in prod
 - Retail hardware station is a 32-bit application, but it will run on both x86 and x64 architectures.
 - Retail hardware station is supported on the following operating systems:
 
-    - Windows 7 Professional, Enterprise, and Ultimate editions.
-
-        > [!NOTE]
-        > Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
-        > Windows 7 is no longer a supportable operating system (see the **Important** note above). A recent issue was discovered regarding installation of hardware station on this operating system. This issue will not be fixed because the following workaround is available. In the **Common-Web.ps1** file, remove the following two sets of **Log-ActionItem**:
-          1. **Log-ActionItem** 'Config application pool [...] idle timeout to zero.
-          2. **Log-ActionItem** 'Config application pool [...] idle timeout action to suspend.
-        > Delete the **Log-ActionItem** specified above and the following two lines related to **Set-ItemProperty** and **Log-ActionResult**.
-
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, Enterprise LTSB, and IOT Enterprise editions.
-    - Windows Server 2012 R2 and Windows Server 2016 (note that Windows Server 2012 R2 is out of mainstream support at this time).
+    - Windows Server 2016 and Windows Server 2019.
     - It is not recommended to use Retail hardware station and other Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
@@ -166,14 +157,9 @@ Take note that the minimum system requirements listed below are the bare minimum
 - Commerce Scale Unit is a 32-bit application, but it will run on both x86 and x64 architectures.
 - Commerce Scale Unit is supported on the following operating systems:
 
-    - Windows 7 Professional, Enterprise, and Ultimate editions.
-
-        > [!NOTE]
-        > Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
-
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, Enterprise LTSB, and IOT Enterprise editions.
-    - Windows Server 2012 R2 and Windows Server 2016 (Note that Windows Server 2012 R2 is out of mainstream support at this time).
+    - Windows Server 2016 and Windows Server 2019.
     - It is not recommended to use Commerce Scale Unit and other Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
@@ -207,10 +193,9 @@ It would be in an organization's best interest to also take the following items 
 - Both components are 32-bit applications, but they will run on both x86 and x64 architectures.
 - Both components are supported on the following operating systems:
 
-    - Windows 7 Professional, Enterprise, and Ultimate editions.
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, and Enterprise LTSB editions.
-    - Windows Server 2012 R2 and Windows Server 2016.
+    - Windows Server 2016 and Windows Server 2019.
     - It is not recommended to use Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
