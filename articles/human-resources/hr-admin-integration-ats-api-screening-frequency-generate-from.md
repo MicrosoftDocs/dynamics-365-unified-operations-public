@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: This topic describes the entity for Dynamics 365 Human Resources.
+title: Screening frequency generate from
+description: This topic describes the Screening frequency generate from option set for Dynamics 365 Human Resources.
 author: jaredha
 manager: tfehr
 ms.date: 02/05/2021
@@ -27,6 +27,16 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Platform update 36
 ---
 
-# 
+# Screening frequency generate from
 
-This topic describes the entity for Dynamics 365 Human Resources.
+This topic describes the Screening frequency geerate from option set for Dynamics 365 Human Resources.
+
+Physical name: mshr_hcmfrequencygeneratefrom
+
+This enumeration provides the option set of values for determining the start date of the calculation for the next required screening.
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000	Not selected | No value has been selected. |
+| 200000001	Date completed | Calculation is done from the last screening date completed. |
+| 200000002	Date required | Calculation is done from the last screening date required. |
