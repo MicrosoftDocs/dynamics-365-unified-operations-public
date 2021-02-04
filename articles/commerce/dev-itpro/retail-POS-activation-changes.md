@@ -103,10 +103,8 @@ The following steps are required so that device activation works correctly when 
     A tile appears that shows the details of the new customized Retail Modern POS Azure AD application.
 
 3. Select **Register** at the bottom of the page. The page shall change to the newly created Azure AD application.
-4. Find the **Application (client) ID** field, and copy the value. 
-  1. Switch to the notepad you opened in the previous section (or follow the above section **Update the Modern POS configuration** to open the **DLLHost.exe.config** file) to navigate to the value corresponding to **AADClientId**.
-  2. Paste in the value for this field that was copied at the beginning of this step and then save the file (As showin in step five of the same above section).
-5. In the lefthand menu, select the option **API permissions**.
+4. Find the **Application (client) ID** field, and copy the value. Switch to the notepad you opened in the previous section (or follow the above section **Update the Modern POS configuration** to open the **DLLHost.exe.config** file) to navigate to the value corresponding to **AADClientId**. Paste in the value for this field that was copied at the beginning of this step and then save the file (As shown in step five of the same above section).
+5. Returning to the web browser, in the lefthand menu, select the option **API permissions**.
 6. On the **API permissions** tile, select **+ Add a permission**.
 7. On the slider that appears, first select the **My APIs** heading.  Then select the API titled **Customized Commerce Scale Unit** or whatever value was entered as the name in step four at the beginning of this document.
 8. Under the **Select permissions** sub-heading, select to checkmark the value **AccessRetailServer** or whatever value was entered as the scope name in step 10 at the beginning of this document.
