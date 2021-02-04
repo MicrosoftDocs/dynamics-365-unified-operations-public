@@ -120,6 +120,10 @@ Supported values for bypassCache are:
 - **get** - Ignores cache while performing read and fetches the latest information from Retail Server.
 - **none** - Action response is cached per request. If byPassCache is not specified runtime defaults to this value.
  
+In general, for custom data actions and for most of the retail proxy actions, bypassCache are set to 'none' by default.
+
+By default, Retail proxy actions that read data from Retail Server (API names that start with Get/Search/Read) are configured with [bypassCache: 'none'], all other Retail proxy actions are configured to fetch latest data with [bypassCache: 'get'] from Retail Server.  These can be overridden if desired.
+ 
 The following is an example of usage.
 
 ```typescript
