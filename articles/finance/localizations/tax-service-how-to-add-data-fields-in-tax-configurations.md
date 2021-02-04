@@ -106,7 +106,7 @@ This topic provides information about how to customize **Tax configuration** wit
 
 17. Go to **Globalization Features** \>\> **Tax**.
 
-[[![Go to globalization features, tax](./media/tax-service-customize-image19.png)](./media/image19.png)](./media/tax-service-customize-image19.png)
+[[![Go to globalization features, tax](./media/tax-service-customize-image19.png)](./media/tax-service-customize-image19.png)](./media/tax-service-customize-image19.png)
 
 18. Create a new Tax feature, click **Create feature.**
 
