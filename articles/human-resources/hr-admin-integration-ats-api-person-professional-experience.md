@@ -72,6 +72,6 @@ This entity describes professional experience or work history of a candidate.
 | **Start Date**<br>mshr_startdate<br>*Datetime* | Read/write<br>Required | The start date of the candidate’s employment. |
 | **End Date**<br>mshr_enddate<br>*Datetime* | Read/write<br>Optional | The end date of the candidate’s employment, or null if the candidate is still employed here. |
 | **Allow Contact Employer**<br>mshr_allowcontactemployer<br>*mshr_hrmblankyesno option set* | Read/write<br>Optional | Signifies whether the candidate allows contacting the previous employer. |
-| **Notes**<br>mshr_note<br>*String* | Read/write<br>Optional | Notes for use by the recruiter and/or hiring manager. |
+| **Notes**<br>mshr_note<br>*String* | Read/write<br>Optional | Notes for use by the recruiter or hiring manager. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field used as a primary identifier of the entity record. Combination of party number, start date, employer position, and employer name. |
 
