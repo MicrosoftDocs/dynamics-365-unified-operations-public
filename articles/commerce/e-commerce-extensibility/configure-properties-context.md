@@ -171,8 +171,8 @@ The following examples show a module definition file and a module definition ext
     "description": "Feature module used to highlight a product.",
     "config": {
         "layout": {
-            "friendlyName": "Image Alignment",
-            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "friendlyName": "Text Layout",
+            "description": "Sets the desired text output to be plaintext or rich text with images.",
             "type": "string",
             "enum": {
                 "plainTextOnly": "Plain Text Only",
@@ -193,8 +193,8 @@ The following examples show a module definition file and a module definition ext
     "$type": "definitionExtension",
     "config": {
         "layout": {
-            "friendlyName": "Image Alignment",
-            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "friendlyName": "Text Layout",
+            "description": "Sets the desired text output to be plaintext or rich text with images.",
             "type": "string",
             "enum": {
                 "plainTextOnly": "Plain Text Only",
