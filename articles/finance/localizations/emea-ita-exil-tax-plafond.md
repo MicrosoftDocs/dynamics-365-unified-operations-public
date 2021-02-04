@@ -5,7 +5,7 @@ title: Tax plafond
 description: This topic explains how to set up and work with tax plafond, which is a tax exemption process.
 author: ilkond
 manager: AnnBe
-ms.date: 04/20/2020
+ms.date: 02/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,7 +43,7 @@ This topic describes how to complete these tasks:
 
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Tax plafond** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
-- There is a **Sales tax settlement period** in **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods** for the period in which you plan to create tax plafond and intent letters and post tax documents with reference to intent letters.
+- There is a sales tax settlement period (**Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods**) for the period in which you plan to create tax plafond and intent letters, and post tax documents with reference to intent letters.
 
 ## Set up parameters
 
@@ -81,7 +81,7 @@ see [Download Electronic reporting configurations from Lifecycle Services](../..
 
 ## Create tax plafond
 
-Before you start creating a new tax plafond, make sure there is a **Sales tax settlement period** in **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods** for the period in which you plan to create tax plafond, intent letters and post tax documents with reference to intent letters.
+Before you start creating a new tax plafond, verify that there is a sales tax settlement period for the period in which you plan to create tax plafond and intent letters, and post tax documents with reference to the intent letters.
 
 To register a new tax plafond, follow these steps.
 
@@ -107,7 +107,7 @@ To review posted tax transactions for an existing tax plafond, on the **Tax plaf
 
 ## Create intent letters
 
-Before you start creating a new intent letter, make sure there is a **Sales tax settlement period** in **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods** for the period in which you plan to create tax plafond, intent letters and post tax documents with reference to intent letters.
+Before you start creating a new intent letter, verify that there is a sales tax settlement period for the period in which you plan to create tax plafond and intent letters, and post tax documents with reference to intent letters.
 
 To create a new intent letter for a vendor, follow these steps.
 
