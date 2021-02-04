@@ -117,16 +117,16 @@
               href: hr-admin-integration-ats-api-recruiting-request-education.md
             - name: Recruiting request location
               href: hr-admin-integration-ats-api-recruiting-request-location.md
-            - name: Recruiting request status
-              href: hr-admin-integration-ats-api-recruiting-request-status.md
-            - name: Recruiting request position status
-              href: hr-admin-integration-ats-api-recruiting-request-position-status.md
-            - name: Regulatory job category
-              href: hr-admin-integration-ats-api-regulatory-job-category.md
         - name: Recruiting request option sets
           items: 
             - name: Job exempt status
               href: hr-admin-integration-ats-api-job-exempt-status.md
+            - name: Recruiting request position status
+              href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+            - name: Recruiting request status
+              href: hr-admin-integration-ats-api-recruiting-request-status.md
+            - name: Regulatory job category
+              href: hr-admin-integration-ats-api-regulatory-job-category.md
         - name: Candidate to hire and related entities
           items:
             - name: Example query for Candidate to hire
@@ -157,18 +157,6 @@
               href: hr-admin-integration-ats-api-screening-types.md
             - name: Person identification number
               href: hr-admin-integration-ats-api-person-identification-number.md
-            - name: No Yes
-              href: hr-admin-integration-ats-api-no-yes.md
-            - name: Skill level type
-              href: hr-admin-integration-ats-api-skill-level-type.md
-            - name: Screening frequency
-              href: hr-admin-integration-ats-api-screening-frequency.md
-            - name: Screening frequency generate from
-              href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
-            - name: Period unit
-              href: hr-admin-integration-ats-api-period-unit.md
-            - name: Months of year
-              href: hr-admin-integration-ats-api-months-of-year.md
         - name: Candidate option sets
           items:
             - name: Applicant integration result
@@ -185,6 +173,18 @@
               href: hr-admin-integration-ats-api-gender.md
             - name: Marital status
               href: hr-admin-integration-ats-api-marital-status.md
+            - name: Months of year
+              href: hr-admin-integration-ats-api-months-of-year.md
+            - name: No Yes
+              href: hr-admin-integration-ats-api-no-yes.md
+            - name: Period unit
+              href: hr-admin-integration-ats-api-period-unit.md
+            - name: Screening frequency
+              href: hr-admin-integration-ats-api-screening-frequency.md
+            - name: Screening frequency generate from
+              href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+            - name: Skill level type
+              href: hr-admin-integration-ats-api-skill-level-type.md
       - name: Integrate with Office
         items:
         - name: Office integration tutorial
