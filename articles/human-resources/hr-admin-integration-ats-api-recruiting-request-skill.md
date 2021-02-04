@@ -77,3 +77,7 @@ Describes skill requirements for a RecruitingRequest.
 | **Rating Model ID**<br>mshr_ratingmodelid<br>*String* | Read-write<br>Required | The rating model used to rate the skill. |
 | **Rating Model ID Value**<br>_mshr_fk_hcmratingmodel_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmratingmodelentityid of mshr_hcmratingmodelentity entity | System-generated unique identifier of the rating model used to rate the skill. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
