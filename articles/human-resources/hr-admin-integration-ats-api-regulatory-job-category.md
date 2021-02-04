@@ -48,3 +48,8 @@ This enumeration specifies the option set for regulatory job category option set
 | 200000008 | Operative | Operatives. |
 | 200000009 | Laborer | Laborers/Helpers. |
 | 200000010 | ServiceWorker | Service workers. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
