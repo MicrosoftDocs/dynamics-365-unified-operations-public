@@ -64,9 +64,41 @@ Prepayment invoices are a common business practice. A vendor issues prepayment 
 1.  The purchasing agent creates, confirms, and then submits a purchase order that the vendor has requested prepayment for. The prepayment value is defined on the purchase order as part of the agreement.
 2.  The vendor submits a prepayment invoice.
 3.  The Accounts payable coordinator records the prepayment invoice against the purchase order, and then the prepayment invoice is paid.
-4.  After the vendor delivers the goods or services, and the related vendor invoices have been received, the Accounts payable coordinator applies the prepayment amount that was already paid against the invoice.
-5.  The Accounts payable coordinator pays and settles the remaining amount of the invoice.
+4.  The vendor sends a request for payment, referred to as a standard vendor invoice. After the vendor delivers the goods or services, and the related standard vendor invoices have been received, the Accounts payable coordinator applies the prepayment amount that was already paid against the standard invoice.
+5.  The Accounts payable coordinator pays and settles the remaining amount of the standard invoice.
 
+## Setup parameters to enable the prepayment invoicing process
+A prepayment account must be defined on the **Purchase order** tab of the **Inventory posting** page (**Inventory management \> Setup \> Posting \> Posting**). The Prepayment account will be updated, usually debited, when the Prepayment invoice is posted. The balance in the Prepayment account will be reversed when the standard invoice that is applied to the prepayment invoice is posted. If you do not settle the prepayment invoice to a payment prior to applying the prepayment invoice to the standard invoice, the accounting entries from the posted prepayment invoice will be reversed upon posting the standard invoice.
+
+The offsetting summary accounts payable account is defined on the **Vendor posting** profile. To define the default posting profile, click **Accounts payable \>Setup \> Accounts payable parameters \>Ledger and sales tax tab \> Posting profile with prepayment vendor invoice**.
+
+The **Prepayment application policy** indicates whether the system will automatically apply settled prepayment invoices to the final invoice. To define the policy, click **Accounts payable \>Setup \> Accounts payable parameters \> Ledger and sales tax tab \> Prepayment application policy**. If set to **Automatic**, the prepayment invoice will be automatically marked for settlement with the final invoice. If set to **Notification**, visual indication that a prepayment invoice is available for application will display when the final invoice is created.
+
+## Create a purchase order that contains prepayment invoice information
+When the vendor indicates that they require prepayment for goods and services contained on a purchase order, you must define the prepayment value for the associated purchase order. Click **Accounts payable \> Common \> Purchase orders \> All purchase orders** and find the vendor’s purchase order. On the Action Pane, click the **Purchase** tab, and then click **Prepayment**. Enter information for the prepayment, including a description, the value of the prepayment, whether the prepayment is a fixed amount or a percentage, and a prepayment category ID. 
+
+Note that multiple prepayments definitions on a purchase order are not allowed. If you need to allow multiple prepayments on a purchase order, post the payments using the payment journal instead of a prepayment invoice.
+
+The prepayment may be removed from the purchase order unless you have already settled a payment against the posted prepayment invoice or posted the standard invoice. To remove a prepayment information from the purchase order, click **Accounts payable \> Common \> Purchase orders \> All purchase orders** and find the vendor’s purchase order. On the Action Pane, click the **Purchase** tab, and then click **Remove prepayment**.
+
+## Create and post a prepayment invoice
+To record the vendor’s prepayment invoice, navigate to the **Vendor invoice** page by clicking the **Prepayment invoice** option on the **Purchase orders** page (**Accounts payable \> Common \> Purchase orders \> All purchase orders \> Invoice tab \> Prepayment invoice**). Enter information for the prepayment invoice, including the invoice number. You cannot change quantities for a prepayment invoice. If the vendor has invoiced a partial amount of the prepayment value that is defined on the purchase order, you may update the unit price to reflect the partial value.
+
+Upon posting the prepayment invoice, the vendor balance and prepayment account will be updated. Additionally, the **Prepayment application** value on the prepayment definition contained on the purchase order will be updated. The financial dimensions for the posted prepayment voucher will be defaulted from the purchase order’s header information.
+
+## Post and settle payments for the prepayment invoice
+Next, the prepayment invoice will be paid from the **Payment journal** page. To access payment journals, click **Accounts payable \> Journals \> Payments \> Payment journal**. After posting the settlement of the payment to the prepayment invoice, the purchase order’s **Prepayment application remaining** value will be updated.
+
+Prior to posting the standard invoice for the prepayment invoice, you may unsettle the payment from the prepayment invoice. However, after a standard invoice is applied to the prepayment invoice, you cannot unsettle the payment from the prepayment invoice.
+
+## Post the standard vendor invoice for the purchase order and apply the prepayment invoice to the standard invoice
+Record the standard invoice received from the vendor. As part of this process, you can apply the settled prepayment invoice to the vendor invoice so that the value of the invoice is reduced by the already paid amount.  Applying the prepayment invoice to the vendor invoice will ensure that accounting entries from the prepayment invoice will be reversed.
+
+## Application of the prepayment invoice after posting the standard invoice
+If you forget to apply the prepayment to the standard vendor invoice at the time of posting the vendor invoice, the settled prepayment will be available to apply to other invoices from this vendor from the **Vendors** page (**Accounts payable \> Common \> Vendors \> All vendors \> Invoice tab \> Apply**).
+
+## Reversal of the prepayment application process
+If you need to unsettle or reverse the application of a prepayment invoice from a standard invoice, select the **Reverse** action from the **Vendors** page (**Accounts payable \> Common \> Vendors \> All vendors \> Invoice tab \> Reverse**). Once the prepayment application is reversed, you may apply the prepayment to another standard invoice. 
 
 
 
