@@ -76,6 +76,93 @@ The following diagram illustrates relationships within the API. Several types ha
 
 ![ATS Integration API data model](media/RecruitingDataModel.png)
 
+## Recruiting request and related entities and option sets
+
+Example query: 
+
+- [Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+
+Entities:
+
+- [Recruiting request](hr-admin-integration-ats-api-recruiting-request.md)
+- [Recruiting request position](hr-admin-integration-ats-api-recruiting-request-position.md)
+- [Recruiting request skill](hr-admin-integration-ats-api-recruiting-request-skill.md)
+- [Recruiting request education](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Recruiting request location](hr-admin-integration-ats-api-recruiting-request-location.md)
+
+Option sets:
+
+- [Job exempt status](hr-admin-integration-ats-api-job-exempt-status.md)
+- [Recruiting request position status](hr-admin-integration-ats-api-recruiting-request-position-status.md)
+- [Recruiting request status](hr-admin-integration-ats-api-recruiting-request-status.md)
+- [Regulatory job category](hr-admin-integration-ats-api-regulatory-job-category.md)
+
+## Candidate to hire and related entities and option sets
+
+Example query:
+
+- [Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+
+Entities:
+
+- [Candidate to hire
+hr-admin-integration-ats-api-candidate-to-hire.md
+- [Person
+hr-admin-integration-ats-api-person.md
+- [Person education
+hr-admin-integration-ats-api-person-education.md
+- [Person professional experience
+hr-admin-integration-ats-api-person-professional-experience.md
+- [Person address
+hr-admin-integration-ats-api-person-address.md
+- [Party contact
+hr-admin-integration-ats-api-party-contact.md
+- [Person skill
+hr-admin-integration-ats-api-person-skill.md
+- [Rating level
+hr-admin-integration-ats-api-rating-level.md
+- [Person certificate
+hr-admin-integration-ats-api-person-certificate.md
+- [Certificate type
+hr-admin-integration-ats-api-certificate-type.md
+- [Person screening
+hr-admin-integration-ats-api-person-screening.md
+- [Screening types
+hr-admin-integration-ats-api-screening-types.md
+- [Person identification number
+hr-admin-integration-ats-api-person-identification-number.md
+
+Option sets:
+
+- [Applicant integration result
+hr-admin-integration-ats-api-applicant-integration-result.md
+- [Blank Yes No
+hr-admin-integration-ats-api-blank-yes-no.md
+- [Completion status
+hr-admin-integration-ats-api-completion-status.md
+- [Contact type
+hr-admin-integration-ats-api-contact-type.md
+- [Education credit basis
+hr-admin-integration-ats-api-education-credit-basis.md
+- [Gender
+hr-admin-integration-ats-api-gender.md
+- [Marital status
+hr-admin-integration-ats-api-marital-status.md
+- [Months of year
+hr-admin-integration-ats-api-months-of-year.md
+- [No Yes
+hr-admin-integration-ats-api-no-yes.md
+- [Period unit
+hr-admin-integration-ats-api-period-unit.md
+- [Screening frequency
+hr-admin-integration-ats-api-screening-frequency.md
+- [Screening frequency generate from
+hr-admin-integration-ats-api-screening-frequency-generate-from.md
+- [Skill level type
+hr-admin-integration-ats-api-skill-level-type.md
+
+
+
 ## See also
 
 [Recruit job candidates](hr-personnel-recruit.md)<br>
