@@ -204,50 +204,50 @@ Usually, the paths are automatically created after the first run of the app. How
 
 Follow these steps to import connection settings from a file or a QR code.
 
-1. Open the warehouse app on your mobile device. First time you open the app you will a welcome message.
+1. Open the warehouse app on your mobile device. First time you open the app you will see a welcome message. Go to **Select a connection**.
 
     ![Welcome message](media/app-configure-welcome-screen.png "Welcome message")
     
-1. Go to **Select a connection**.
+1. If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. Otherwise, go to **Set up connection**.
 
 ![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
-
-1. Go to **Set up connection**.
-
-![Connection setup menu](media/app-configure-connection-setup-flyout.png "Connection setup menu")
 
 1. Select **Add from file** or **Add from QR code**, depending on how you want to import the settings:
 
     - If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. Otherwise, select **Add from file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
     - If you're importing the connection settings by scanning a QR code, select **Add from QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
 
-    ![Import connection settings](media/app-connect-app-select-file.png "Import connection settings")
+    ![Connection setup menu](media/app-configure-connection-setup-flyout.png "Connection setup menu")
 
-1. When the connection settings are successfully loaded, you will see the selected conneciton on the screen. .
+1. When the connection settings are successfully loaded, you will see the selected conneciton on the screen.
 
-    ![Connection settings loaded](media/app-connect-app-settings-loaded.png "Connection settings loaded")
+    ![Connection settings loaded](media/app-configure-select-connection.png "Connection settings loaded")
 
 1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
 
-    ![Choose certificate prompt on an Android device](media/app-connect-app-choose-cert.png "Choose certificate prompt on an Android device")
+    ![Choose certificate prompt on an Android device](media/app-configure-select-certificate.png "Choose certificate prompt on an Android device")
 
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
-    ![Sign-in page](media/app-connect-sign-in.png "Sign-in page")
+    ![Sign-in page](media/app-configure-sign-in-page.png "Sign-in page")
 
 ## <a name="config-manually"></a>Manually configure the application
 
 You can manually configure the app on the device so that it connects to the Supply Chain Management server through the Azure AD application.
 
 1. Open the warehouse app on your mobile device.
-1. Go to **Connection settings**.
-1. Set the **Use demo mode** option to _No_.
+1. If the app start in **Demo mode**, go to **Connection settings**. If the app starts on the **Sign-in** screen, click on **Change connection** to go back.
+1. Go to **Set up connection**.
 
-    ![Demo mode turned off](media/app-connect-app-select-file.png "Demo mode turned off")
+![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
 
-1. Tap in the **Select connection** field to expand the settings that are required to manually enter the connection details.
+1. Select **Input manually**.
 
-    ![Manual connection fields](media/app-connect-manual-connect.png "Manual connection fields")
+    ![Connection setup menu](media/app-configure-connection-setup-flyout.png "Connection setup menu")
+
+1. A new page is opened with the settings that are required to manually enter the connection details.
+
+    ![Manual connection fields](media/app-configure-input-manually.png "Manual connection fields")
 
 1. Enter the following information:
 
