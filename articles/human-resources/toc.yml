@@ -185,9 +185,6 @@
               href: hr-admin-integration-ats-api-marital-status.md
         - name: Candidate option sets
           items:
-
-        - name: Recruiting request and related entities
-          href: hr-admin-integration-ats-api-recruiting-entities.md
       - name: Integrate with Office
         items:
         - name: Office integration tutorial
