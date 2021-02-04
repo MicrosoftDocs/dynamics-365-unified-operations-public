@@ -94,3 +94,16 @@ The company's fiscal year is from January 1 through December 31. The balance she
 7. Go to **General ledger** \> **Inquiries and reports** \> **Voucher transactions**.
 8. On the **Voucher transactions** page, add the **Transaction date** column.
 9. Verify that the **Date** field is set to December 31, and the **Transaction date** field is set to April 15.
+
+## Fiscal journal page numbering improvements
+
+In 10.0.18 monthly update, you can enable the feature **(Italy) Fiscal journal page numbering improvements** in the **Feature management** workspace.
+
+This feature improves the calculation logic for page numbering in the Italian fiscal journal report. To update and store the page numbers, either print the report to screen with the feature "Report PDF Viewer" enabled or print the report to file in PDF format. Page numbers are calculated using the new algorithm when the fiscal journal report is printed in PDF format. Page numbers are stored so that pages for the next month’s report start sequentially using the next number after the stored one. This feature also enables an algorithm for grouping lines with all the same values in columns into one line, so that there are no unnecessary pages in the report printout.
+
+If you need to calculate the number of the documents included in the Fiscal journal, do the following:
+1.	Print report in PDF file format.
+2.	Convert PDF to Excel using any freely available converter software.
+3.	Create Pivot table and select **Docum. No.** field in **Rows**.
+ ![Excel Pivot table](media/ExcelPivotTable.png)
+Number of documents is equal to number of lines in the Pivot table.
