@@ -41,3 +41,8 @@ This enumeration provides the option set of genders for the candidate. This is a
 | 200000001 | Male | Male. |
 | 200000002 | Female | Female. |
 | 200000003 | NonSpecific | Selection for a non-specific gender. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)

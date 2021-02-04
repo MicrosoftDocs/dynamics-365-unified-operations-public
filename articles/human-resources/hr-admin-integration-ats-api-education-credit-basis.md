@@ -44,3 +44,8 @@ This enumeration provides the option set of values for education credit basis of
 | 200000004 | Term | Term. |
 | 200000005 | Other | Other. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+

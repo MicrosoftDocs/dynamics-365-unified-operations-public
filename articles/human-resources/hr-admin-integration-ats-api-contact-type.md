@@ -46,3 +46,8 @@ This enumeration provides the option set of values for candidate contact types.
 | 200000006 | Facebook | Facebook account. Identified by User ID. |
 | 200000007 | Twitter | Twitter account. Identified by @username. |
 | 200000008 | LinkedIn | LinkedIn account. Identified by user name. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)

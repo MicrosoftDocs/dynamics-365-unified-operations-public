@@ -40,3 +40,8 @@ This enumeration provides option set for yes/no properties that also allow blank
 | 200000000 | Blank | No value has been selected. |
 | 200000001 | Yes | Yes. |
 | 200000002 | No | No. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)

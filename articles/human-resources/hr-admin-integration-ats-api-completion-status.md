@@ -40,3 +40,8 @@ This enumeration provides the option set of status values for candidate screenin
 | 200000000 | Not Complete | The candidate has not yet completed the screening. |
 | 200000001 | Pass | The candidate has passed the screening. |
 | 200000002 | Fail | The candidate has failed the screening. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)

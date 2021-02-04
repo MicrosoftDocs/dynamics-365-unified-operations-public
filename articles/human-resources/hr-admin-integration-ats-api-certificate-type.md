@@ -58,3 +58,8 @@ System-generated | Unique primary identifier for the certificate type. |
 | **Description**<br>mshr_description<br>*String* | Read/write<br>Required | Description of the certificate type. |
 | **Require Renewal**<br>mshr_requirerenewal<br>*mshr_noyes option set* | Read/write<br>Optional | Indicates whether renewal is required for the certificate. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+
