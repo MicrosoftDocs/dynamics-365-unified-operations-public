@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 36
 
 # Screening frequency generate from
 
-This topic describes the Screening frequency geerate from option set for Dynamics 365 Human Resources.
+This topic describes the Screening frequency generate from option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmfrequencygeneratefrom
 
