@@ -42,3 +42,7 @@ This enumeration provides status for a candidate record.
 | 200000002 | Not hired | Decision was made to not hire the candidate. |
 | 200000003 | Dismissed | The candidate was dismissed from consideration. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
