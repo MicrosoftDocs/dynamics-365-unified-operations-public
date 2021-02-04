@@ -108,3 +108,7 @@ Describes a request to recruit for a job.
 | **Compensation Level**<br>mshr_compensationlevelid<br>*String* | Read/write<br>Optional | The compensation level of the job. A job can be set up with multiple compensation levels. This attribute indicates the selected job compensation level for this request. |
 | **Job Compensation ID**<br>_mshr_fk_jobcompensation_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_hcmjobcompensationentityid of mshr_hcmjobcompensationentity entity | System-generated unique identifier for the compensation level associated with the Job of the recruiting request. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
