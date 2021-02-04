@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: This topic describes the entity for Dynamics 365 Human Resources.
+title: Certificate type
+description: This topic describes the Certificate type entity for Dynamics 365 Human Resources.
 author: jaredha
 manager: tfehr
 ms.date: 02/05/2021
@@ -27,6 +27,34 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Platform update 36
 ---
 
-# 
+# Certificate type
 
-This topic describes the entity for Dynamics 365 Human Resources.
+This topic describes the Certificate type entity for Dynamics 365 Human Resources.
+
+Physical name: mshr_hcmcertificatetypeentity
+
+## Description
+
+This entity defines the list of professional certificate types set up in Human Resources. The entity is not specific to a legal entity (company).
+
+## JSON representation
+
+```json
+{
+    "mshr_certificatetype": "String",
+    "mshr_description": "String",
+    "mshr_requirerenewal": Int,
+    "mshr_hcmcertificatetypeentityid": "Guid"
+}
+```
+
+## Properties
+
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
+| --- | --- | --- |
+| **Certificate Type Entity ID**<br>mshr_hcmcertificatetypeentityid<br>*GUID* | Read-only<br>Required 
+System-generated | Unique primary identifier for the certificate type. |
+| **Certificate Type**<br>mshr_certificatetype<br>*String* | Read/write<br>Required | Unique user-readable identifier for the certificate type. |
+| **Description**<br>mshr_description<br>*String* | Read/write<br>Required | Description of the certificate type. |
+| **Require Renewal**<br>mshr_requirerenewal<br>*mshr_noyes option set* | Read/write<br>Optional | Indicates whether renewal is required for the certificate. |
+
