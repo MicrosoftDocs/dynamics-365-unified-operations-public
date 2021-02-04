@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: This topic describes the entity for Dynamics 365 Human Resources.
+title: Completion status
+description: This topic describes the Completion status option set for Dynamics 365 Human Resources.
 author: jaredha
 manager: tfehr
 ms.date: 02/05/2021
@@ -27,6 +27,16 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Platform update 36
 ---
 
-# 
+# Completion status
 
-This topic describes the entity for Dynamics 365 Human Resources.
+This topic describes the Completion status option set for Dynamics 365 Human Resources.
+
+Physical name: mshr_hcmcompletionstatus
+
+This enumeration provides the option set of status values for candidate screenings. 
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000 | Not Complete | The candidate has not yet completed the screening. |
+| 200000001 | Pass | The candidate has passed the screening. |
+| 200000002 | Fail | The candidate has failed the screening. |
