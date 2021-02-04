@@ -107,14 +107,14 @@
           items:
             - name: Recruiting request
               href: hr-admin-integration-ats-api-recruiting-request.md
-            - name: Recruiting request position
-              href: hr-admin-integration-ats-api-recruiting-request-position.md
-            - name: Recruiting request skill
-              href: hr-admin-integration-ats-api-recruiting-request-skill.md
             - name: Recruiting request education
               href: hr-admin-integration-ats-api-recruiting-request-education.md
             - name: Recruiting request location
               href: hr-admin-integration-ats-api-recruiting-request-location.md
+            - name: Recruiting request position
+              href: hr-admin-integration-ats-api-recruiting-request-position.md
+            - name: Recruiting request skill
+              href: hr-admin-integration-ats-api-recruiting-request-skill.md
             - name: Example query for Recruiting request
               href: hr-admin-integration-ats-api-recruiting-request-example-query.md
         - name: Recruiting request option sets
@@ -131,30 +131,30 @@
           items:
             - name: Candidate to hire
               href: hr-admin-integration-ats-api-candidate-to-hire.md
-            - name: Person
-              href: hr-admin-integration-ats-api-person.md
-            - name: Person education
-              href: hr-admin-integration-ats-api-person-education.md
-            - name: Person professional experience
-              href: hr-admin-integration-ats-api-person-professional-experience.md
-            - name: Person address
-              href: hr-admin-integration-ats-api-person-address.md
+            - name: Certificate type
+              href: hr-admin-integration-ats-api-certificate-type.md
             - name: Party contact
               href: hr-admin-integration-ats-api-party-contact.md
+            - name: Person
+              href: hr-admin-integration-ats-api-person.md
+            - name: Person address
+              href: hr-admin-integration-ats-api-person-address.md
+            - name: Person certificate
+              href: hr-admin-integration-ats-api-person-certificate.md
+            - name: Person education
+              href: hr-admin-integration-ats-api-person-education.md
+            - name: Person identification number
+              href: hr-admin-integration-ats-api-person-identification-number.md
+            - name: Person professional experience
+              href: hr-admin-integration-ats-api-person-professional-experience.md
+            - name: Person screening
+              href: hr-admin-integration-ats-api-person-screening.md
             - name: Person skill
               href: hr-admin-integration-ats-api-person-skill.md
             - name: Rating level
               href: hr-admin-integration-ats-api-rating-level.md
-            - name: Person certificate
-              href: hr-admin-integration-ats-api-person-certificate.md
-            - name: Certificate type
-              href: hr-admin-integration-ats-api-certificate-type.md
-            - name: Person screening
-              href: hr-admin-integration-ats-api-person-screening.md
             - name: Screening types
               href: hr-admin-integration-ats-api-screening-types.md
-            - name: Person identification number
-              href: hr-admin-integration-ats-api-person-identification-number.md
             - name: Example query for Candidate to hire
               href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
         - name: Candidate option sets
