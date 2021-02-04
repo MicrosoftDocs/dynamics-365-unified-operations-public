@@ -1504,8 +1504,6 @@
           href: sysadmin/batch-active-period-dst.md
         - name: Batch manager security role
           href: sysadmin/runby.md
-        - name: Batch job to handle SQL index defragmentation
-          href: sysadmin/batch-job-SQL-defragmentation.md
         - name: Configure batch alerts
           href: sysadmin/alerts.md
         - name: Enhanced batch forms
