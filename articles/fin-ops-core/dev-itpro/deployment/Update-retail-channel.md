@@ -76,6 +76,6 @@ To view the history of recent operations on a Scale Unit, select **History** on 
 
 When CSU is auto-updated by Microsoft, it takes place in the following sequence.
 
-[![CSU auto-update sequence](./media/CSU auto update timline.png)](./media/CSU auto update timline.png)
+![CSU auto-update sequence](./media/CSU-auto-update-timeline.png)
 
 
