@@ -35,7 +35,7 @@ Physical name: mshr_hcmpersonidentificationnumberentity
 
 ## Description
 
-This entity describes the identification numbers for the person who is the candidate. It enables the API consumer to write identification numbers, like Social Security numbers or passport numbers, to the candidate record. Note that identification numbers are surfaced on the worker record, but not on the candidate record. So an integrating application can write the values to the Human Resources database, but the numbers won’t be visible to the user in Human Resources until the worker record is created for the candidate.
+This entity describes the identification numbers for the candidate. It enables the API consumer to write identification numbers, like Social Security numbers or passport numbers, to the candidate record. Identification numbers are surfaced on the worker record, but not on the candidate record. An integrating application can write the values to the Human Resources database, but the numbers won’t be visible to the user in Human Resources until the worker record is created for the candidate.
 
 ## JSON representation
 
