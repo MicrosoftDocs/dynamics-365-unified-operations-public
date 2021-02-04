@@ -447,12 +447,6 @@
           href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
         - name: Client alert notifications by email
           href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-      - name: Electronic signatures
-        items:
-        - name: Electronic signatures overview
-          href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-        - name: Set up electronic signatures
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
       - name: Case management
         items:
         - name: Case management overview
