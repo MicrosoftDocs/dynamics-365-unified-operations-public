@@ -64,11 +64,12 @@ The **Financial reporting** option has unlimited reporting currencies. The data 
 The **Financial reporting** option is the solution, because transaction-level detail can be viewed for as many companies as are included in the reporting tree definition.
 
 4.  We are using budget planning or budget control, and it must be consolidated.
+
 The **Financial reporting** option is the solution to consolidate any budget planning or budget control data.
 
 5.  Our subsidiaries are spread throughout the world, and we have multiple charts of accounts. What is the best method for consolidating our data?
 
-You have multiple options when you must handle multiple charts of accounts. You can use the **Consolidate online** option, and then choose to use either the consolidation account that is defined on the main account or a consolidation account group. You can also use the **Financial reporting** option, include multiple links to the financial dimensions in the row definition, and map the accounts.
+You have multiple options when you must handle multiple charts of accounts. You can use the **Consolidate online** option, and then choose to use either the consolidation 	account that is defined on the main account or a consolidation account group. You can also use the **Financial reporting** option, include multiple links to the financial dimensions in the row definition, and map the accounts.
 
 6.  We require multiple levels of consolidation. In other words, we first consolidate all our European subsidiaries to the British pound (GBP). We then take that data and translate the consolidated amount to US dollars. How can we do this?
 
@@ -90,7 +91,11 @@ The **Financial reporting** option is the solution. Organization hierarchies tha
 
 By using the **Export company balances** option to export from one instance and then using the **Consolidate with import** option on the other instance, you can consolidate the data.
 
-
+11. Can I do a Consolidation with my budget in DRAFT status? 
+			
+You wont be able to process or complete your budgets in the consolidation company. Therefore, the recommended method of consolidating draft budgets would be to use Financial Reporter.
+		
+		
 For more information, see [Currency revaluation in a consolidation company](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
