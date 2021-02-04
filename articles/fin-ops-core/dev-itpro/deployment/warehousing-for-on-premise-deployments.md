@@ -98,7 +98,7 @@ Make sure that the devices with the app installed have the correct certificates 
 certificate](https://technet.microsoft.com/library/ff710475(v=ws.10).aspx).
 
 > [!IMPORTANT]
-> Environments with self-signed certificates will not be accessible from Android devices. If you need to access the environment from an Android device, use publicly-trusted certificates for AD FS and Finance + Operations. Alternatively, you can also use AD CS to generate the certificates for AD FS and Finance + Operations, but you will have to manually import the certificate authority certificate into your Android device.   
+> Environments with self-signed certificates will not be accessible from Android devices. If you need to access the environment from an Android device, use publicly trusted certificates for AD FS and Finance + Operations. Alternatively, you can also use AD CS to generate the certificates for AD FS and Finance + Operations. However, if you do this you will have to manually import the certificate authority certificate into your Android device.   
 
 ## Configure the application
 
