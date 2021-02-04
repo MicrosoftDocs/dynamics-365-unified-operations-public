@@ -38,9 +38,10 @@ By default, Modern POS is already registered for this callback URI. However, whe
 
 > AADSTS50011: The reply address 'ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]' does not match the reply addresses configured for the application
 
+The reply address is dependant on the Modern POS package SID that is shown at the end of the above reply address error message.  This is a function of the Package Family Name (PFN), so it depends on a name and a public key.  This means that when you customize Modern POS and sign it with your company certificate, the SID will change.  The change is based on the certificate and not the package version, so as long as the entire package is not different and the certificate remains the same (Which can be renewed to keep the same signature), then the SID will remain the same.
+
 > [!NOTE]
 > - We recommend that you try to use the customized Modern POS application one time before you configure Dynamics 365 headquarters. In this way, you can see what the error message looks like and more easily obtain the customized reply address.
-> - The error specifies the redirect address that is used for the application ID that corresponds to the POS application.
 
 ## Setup
 The following steps are required so that device activation works correctly when the customized Modern POS application is used. You will create two Azure AD applications: one for Modern POS and one for Commerce Scale Unit. The Commerce Scale Unit Azure AD application is required because the POS uses resources through Commerce Scale Unit. Therefore, both Azure AD applications are used when the POS is used. In this scenario, Commerce Scale Unit serves as the endpoint for protected resources that the POS requests.
@@ -52,12 +53,25 @@ The following steps are required so that device activation works correctly when 
 4. Create the Commerce Scale Unit Azure AD application by selecting **New registration** and entering the following values:
 
     - **Name:** Enter **Customized Commerce Scale Unit**. (You can enter any other unique value, but be sure to make a note of the name entered.)
-    - **Supported account types:** Select the value **Accounts in this organization directory only [...]** unless this application registration will be used across multiple tenants (Which would require the next value **Accounts in any organizational directory [...]**).
-    - **Redirect URI:** This value can be left blank for now.
+    - **Supported account types:** Select the value **Accounts in this organization directory only [...]** unless this application registration will be used across multiple tenants (Which would require the next value **Accounts in any organizational directory [...]**, note that this is not typical at all).
+    - **Redirect URI:** This value can be left blank for now but do verify that the initial drop-down remains at the value **Web**.
 
 5. Select **Register** at the bottom of the page. The page shall change to the newly created Azure AD application.
-6. Select **Application ID URI** where it has a link stating **Add an Application ID URI**.
-7. On the tile that opens, select the **Application ID URI** value that states **Set**. Copy the value shown before selecting the **Save** button. You will paste this value (Not including the initial portion that shows **api://** into the DLLHost.exe.config file for POS in the next section.
+6. Select **Application ID URI** where it has a link stating **Add an Application ID URI** (This same page can also be reached from the lefthand menu by selecting the listing **Expose an API**).
+7. On the tile that opens, select the **Application ID URI** value that states **Set**. Copy the value shown before selecting the **Save** button. You will paste this value into the DLLHost.exe.config file for POS in the next section.
+8. Select the **Save** button to set this URI.
+9. Next, select the button that says **+ Add a scope**.
+10. In the slider that appears, enter the following values:
+
+    - **Scope name:** Enter **AccessRetailServer**. (You can enter any other unique value, but be sure to make a note of the name entered.)
+    - **Who can consent?** Select the option **Admins and users**.
+    - **Admin consent display name:** Enter **AccessRetailServer**. (For simplicity, make this value match the **Scope name** above.)
+    - **Admin consent description:** Enter **AccessRetailServer**. (You can enter any value here, it is for purposes of knowing the reason for the scope.)
+    - The fields **User consent display name** and **User consent description** will not be used.
+    - **State:** Verify that **Enabled** is selected.
+
+11. Select the **Add scope** button.
+12. Select the **Overview** tab on the lefthand menu.  Verify that the **Application ID URI** value matches what was copied back in step seven.
 
 > [!NOTE]
 > Don't close the web browser window, because you will use it again later in this topic.
@@ -74,35 +88,33 @@ The following steps are required so that device activation works correctly when 
 > Another means of performing the above section of steps would be via a script or a post-step installation customization.
 
 ### Create the customized Modern POS Azure AD application
-1. Return to the web browser window where <https://portal.azure.com/> is open, and create the Retail Modern POS Azure AD application by repeating steps 3 through 4 in the "Create the Commerce Scale Unit Azure AD application" section. However, enter the following values this time:
+1. Return to the web browser window where <https://portal.azure.com/> is open, and create the Retail Modern POS Azure AD application by repeating steps three through five in the "Create the Commerce Scale Unit Azure AD application" section. However, enter the following values this time:
 
-    - **Name:** Enter **Customized Retail Modern POS**. (You can enter any other unique value, but be sure to make a note of it.)
-    - **Application type:** Select **Native**.
-    - **Redirect URI:** If you tried to use the customized Modern POS application without configuring Dynamics 365 headquarters, as we recommended at the beginning of this topic, you received an error message. Enter the reply address (redirect URI) that corresponds to that error message. The value will start with **ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]**.
+    - **Name:** Enter **Customized Retail Modern POS**. (You can enter any other unique value, but be sure to make a note of the name entered.)
+    - **Supported account types:** Select the value **Accounts in this organization directory only [...]** unless this application registration will be used across multiple tenants (Which would require the next value **Accounts in any organizational directory [...]**, note that this is not typical at all).
+    - **Redirect URI:** The initial drop-down should be changed to value **Public client/native (mobile & desktop)**. The value to enter for this type of Redirect URI is the value shown at the beginning of this topic in the Modern POS error message received. Enter the reply address (redirect URI) that corresponds to that error message. The value will start with **ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]**.
 
         > [!NOTE]
         > - You can also see the reply address (redirect URI) in Event Viewer in Windows, under **Microsoft-Dynamics-Commerce-ModernPos/Operational**. The event ID is 40619. The error message will start with the following text: "This UWP application was assigned the following callback URI to be used while interacting with Azure AD: ms-appx-web://Microsoft.AAD.BrokerPlugIn/S-1-15-2-[...]"
         > - After the Azure AD application is created, you can specify additional redirect URIs as you require. If multiple packages that have different callback URIs have been generated for any reason, keep this single Azure AD application, and maintain all redirect URIs in it.
 
-2. Press the Tab key so that Azure can validate the value in the **Redirect URI** field. Then select **Create**, and wait until the operation is successfully completed. (If an error occurs, address it, and then try again.)
+2. It is important to validate this value in the **Redirect URI** field. Then select **Create**, and wait until the operation is successfully completed. (If an error occurs, address it, and then try again.)
 
     A tile appears that shows the details of the new customized Retail Modern POS Azure AD application.
 
-3. Find the **Application ID** field, and copy the value. (You will paste this value into the DLLHost.exe.config file as the value that corresponds to the **AADClientId** key.)
-4. Select **Settings** at the top of the tile to open the **Settings** tile for the application. Then select **Required permissions**.
-5. On the **Required permissions** tile, select **+ Add**.
-6. On the **Add API access** tile, select **1 Select an API**.
-7. On the **Select an API** tile, in the search field, enter the name of the Commerce Scale Unit Azure AD application that you created in the "Create the Commerce Scale Unit Azure AD application" section. (In this topic, the application is named **Customized Commerce Server**.) Select the item that corresponds to that application, and then select **Select**.
+3. Select **Register** at the bottom of the page. The page shall change to the newly created Azure AD application.
+4. Find the **Application (client) ID** field, and copy the value. 
+  a. Switch to the notepad you opened in the previous section (or follow the above section **Update the Modern POS configuration** to open the **DLLHost.exe.config** file) to navigate to the value corresponding to **AADClientId**.
+  b. Paste in the value for this field that was copied at the beginning of this step and then save the file (As showin in step five of the same above section).
+5. In the lefthand menu, select the option **API permissions**.
+6. On the **API permissions** tile, select **+ Add a permission**.
+7. On the slider that appears, first select the **My APIs** heading.  Then select the API titled **Customized Commerce Scale Unit** or whatever value was entered as the name in step four at the beginning of this document.
+8. Under the **Select permissions** sub-heading, select to checkmark the value **AccessRetailServer** or whatever value was entered as the scope name in step 10 at the beginning of this document.
+9. Select the button **Add permissions** at the bottom of the slider.
+10. Select **Grant admin consent for \<your AAD name\>**, select the **Yes** button.  This grants consent and can be verified by seeing the word **Granted** in the **Status** column on the **AccessRetailServer** row set.
 
-    On the **Add API access** tile, **2 Select permission** is automatically selected, and a new tile appears that is named **Enable Access**.
-
-8. On the **Enable Access** tile, hold the mouse pointer over the line for **Access Customized Commerce Scale Unit**, and then select the check box that appears on the left side. (If you entered a different name for the Commerce Scale Unit Azure AD application, that name is used on the line instead of **Customized Commerce Scale Unit**.) The **Select** button at the bottom of the tile becomes available.
-9. Select **Select** to return to the **Add API access** tile.
-10. Select **Done** to return to the **Required permissions** tile.
-11. Select **Grant Permissions**. When a message prompts you to verify that you want to grant the permissions, select **Yes**.
-12. Switch to the Notepad window that shows the contents of the DLLHost.exe.config file. (You left this window after you completed the steps in the previous section.)
-13. Find the value that corresponds to the **AADClientId** key. (By default, this value is a globally unique identifier [GUID] that corresponds to the headquarters environment.) Paste the value that you copied in step 3.
-14. Select **File** \> **Save**.
+        > [!NOTE]
+        > - Granting consent is not mandatory, but simplifies the process by consenting in advance for all users in your tenant (And you as the Admin).  If this step is not done, then each user will be asked for the consent the first time they try to activate Modern POS.
 
 ### Configure Dynamics 365 Headquarters
 The previous steps were required so that the Modern POS application can be authenticated. You must now follow these steps to add the new Azure AD applications to the list of safe programs in Headquarters, so that the requests are authorized. (A list of safe programs is sometimes also referred to as a safe list.)
