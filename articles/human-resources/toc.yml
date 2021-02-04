@@ -127,6 +127,8 @@
           items: 
         - name: Candidate to hire and related entities
           items:
+            - name: Example query for Candidate to hire
+              href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
             - name: Candidate to hire
               href: hr-admin-integration-ats-api-candidate-to-hire.md
             - name: Person
