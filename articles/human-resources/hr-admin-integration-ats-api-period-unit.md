@@ -40,3 +40,8 @@ This enumeration provides the option set of values for units of measurement for 
 | 200000000 | Days | Day. |
 | 200000001 | Months | Month. |
 | 200000002 | Years | Year. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)

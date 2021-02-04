@@ -50,3 +50,8 @@ This enumeration provides the option set for the months of the year.
 | 200000010 | October | October. |
 | 200000011 | November | November. |
 | 200000012 | December | December. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)

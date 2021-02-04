@@ -60,3 +60,8 @@ This entity describes the screening types set up by the company for pre-employme
 | **Frequency Unit**<br>mshr_frequencyunit<br>*mshr_hcmfrequencyunit option set* | Read/write<br>Required | Describes the frequency with which the screening must be completed for the assigned person. |
 | **Generate From**<br>mshr_generatefrom<br>*mshr_hcmfrequencygeneratefrom option set* | Read-write<br>Required | If the Frequency value is any value other than “One-time only”, the GenerateFrom value determines the date from which to calculate the next screening event. |
 | **Frequency Interval**<br>mshr_frequencyinterval<br>*Integer* | Read-write<br>Required | If the Frequency value is any value other than “One-time only”, you must define an interval for the units of time between each screening event. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)

@@ -43,3 +43,8 @@ This enumeration provides the option set of values for the screening frequency.
 | 200000003	Monthly | The screening frequency is calculated in months. |
 | 200000004	Yearly | The screening frequency is calculated in years. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+

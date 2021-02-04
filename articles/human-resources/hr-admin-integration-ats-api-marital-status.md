@@ -42,3 +42,8 @@ This enumeration provides the option set for marital status of person records.
 | 200000002 | Married | Married. |
 | 200000003 | Divorced | Divorced. |
 | 200000004 | Widowed | Widowhood. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)

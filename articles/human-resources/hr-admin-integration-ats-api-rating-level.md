@@ -65,3 +65,8 @@ This entity provides the available rating levels for skills. Rating levels apply
 | **Note**<br>mshr_note<br>*String* | Read/write<br>Optional | Any notes associated with the rating level. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field to be used as an identifier of the entity record. Combination of rating level ID and rating model ID. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+

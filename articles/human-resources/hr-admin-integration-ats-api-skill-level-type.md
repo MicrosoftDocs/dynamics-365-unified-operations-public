@@ -40,3 +40,8 @@ This enumeration provides the option set of values that categorize the level ass
 | 200000000 | Actual | Actual skill level. |
 | 200000001 | Target | Targeted value for the skill level. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+

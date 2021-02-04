@@ -67,3 +67,8 @@ This entity describes the professional certificates of a candidate.
 | **Notes**<br>mshr_notes<br>*String* | Read/write<br>Optional | Notes for use by hiring managers and recruiters. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | 	Field to be used as an identifier of the entity record. Combination of party number, certificate type ID, and start date. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+

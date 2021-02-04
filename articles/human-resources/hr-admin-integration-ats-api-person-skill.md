@@ -83,3 +83,8 @@ This entity describes the skills of a candidate.
 | **Verified**<br>mshr_verified<br>*mshr_noyes option set* | Read/write<br>Required | Indicates whether the assessed skill level has been verified. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field to be used as an identifier of the entity record. Combination of party number, level type, skill ID, and level date. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+

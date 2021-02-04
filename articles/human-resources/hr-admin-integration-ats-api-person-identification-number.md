@@ -77,3 +77,8 @@ This entity describes the identification numbers for the candidate. It enables t
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field to be used as an identifier of the entity record. Combination of party number, identification type ID, and identification number. |
 | **Issue Date**<br>mshr_issuedate<br>*Date* | Read-write<br>Optional | The date the identification number was issued. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+

@@ -211,3 +211,8 @@ This entity provides the personal information for the individual who is the cand
 | **Electronic Location ID**<br>mshr_electroniclocationid<br>*String* | Read/write<br>Optional | The ID of the person’s electronic location. |
 | **Address Time Zone**<br>mshr_addresstimezone<br>*Int* | Read/write<br>Optional | The time zone of the person’s primary address. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+

@@ -79,3 +79,8 @@ This entity describes the candidate’s contact information, including phone, em
 | **Purpose**<br>mshr_purpose<br>*String* | Read/write<br>Optional | The purpose/role of the contact details. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field used as a primary identifier of the entity record. Combination of party number, type, description, and locator. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+

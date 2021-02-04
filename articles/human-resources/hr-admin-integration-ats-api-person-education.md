@@ -96,3 +96,8 @@ This entity contains the educational history of the person who is the candidate.
 | **Notes**<br>mshr_notes<br>*String* | Read/write<br>Optional | Notes for use by the recruiter or hiring manager. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Field used as another primary identifier of the entity record. Combination of party number, education discipline ID, education institution ID, and education level ID. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+

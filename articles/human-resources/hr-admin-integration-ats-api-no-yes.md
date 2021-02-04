@@ -41,3 +41,8 @@ This enumeration provides option set for typical Boolean properties in Human Res
 | --- | --- | --- |
 | 200000000 | No | No. |
 | 200000001 | Yes | Yes. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)

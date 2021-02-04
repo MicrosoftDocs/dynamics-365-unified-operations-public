@@ -40,3 +40,8 @@ This enumeration provides the option set of values for determining the start dat
 | 200000000	Not selected | No value has been selected. |
 | 200000001	Date completed | Calculation is done from the last screening date completed. |
 | 200000002	Date required | Calculation is done from the last screening date required. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
