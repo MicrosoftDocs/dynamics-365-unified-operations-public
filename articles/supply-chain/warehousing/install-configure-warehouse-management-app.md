@@ -58,8 +58,8 @@ Before you can use the app, the feature must be turned on in your system. Admins
 
 Use one of the following links to download the app:
 
-- **Windows (UWP):** [Dynamics 365 for Finance and Operations - Warehousing on Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
-- **Android:** [Warehousing - Dynamics 365 on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
+- **Windows (UWP):** [App Center preview program - Windows](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+- **Android:** [App Center preview program - Android](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
 For smaller deployments, you might want to install the app from the relevant store on each device and then manually configure the connection to the environments that you're using. However, you can also automate app deployment and/or configuration. You might find this approach convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
@@ -192,8 +192,8 @@ You can't remove a connection by using the connection settings file.
 
 As has been mentioned, the default file name is *connections.json*. The default file location depends on whether you're using a Windows device or an Android device:
 
-- **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.Dynamics365forOperations-Warehousing_8wekyb3d8bbwe\LocalState`
-- **Android:** `Android\data\com.Microsoft.Dynamics365forOperationsWarehousing\files`
+- **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.WarehouseManagement_8wekyb3d8bbwe\LocalState`
+- **Android:** `Android\data\com.Microsoft.WarehouseManagement\files`
 
 Usually, the paths are automatically created after the first run of the app. However, you can manually create them if you must transfer the connection settings file to the device before installation.
 
@@ -204,20 +204,26 @@ Usually, the paths are automatically created after the first run of the app. How
 
 Follow these steps to import connection settings from a file or a QR code.
 
-1. Open the warehouse app on your mobile device.
-1. Go to **Connection settings**.
-1. Set the **Use demo mode** option to _No_.
+1. Open the warehouse app on your mobile device. First time you open the app you will a welcome message.
 
-    ![Use demo mode option](media/app-connect-app-demo-mode.png "Use demo mode option")
+    ![Welcome message](media/app-configure-welcome-screen.png "Welcome message")
+    
+1. Go to **Select a connection**.
 
-1. Select **Select file** or **Scan QR code**, depending on how you want to import the settings:
+![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
 
-    - If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. Otherwise, select **Select file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
-    - If you're importing the connection settings by scanning a QR code, select **Scan QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
+1. Go to **Set up connection**.
+
+![Connection setup menu](media/app-configure-connection-setup-flyout.png "Connection setup menu")
+
+1. Select **Add from file** or **Add from QR code**, depending on how you want to import the settings:
+
+    - If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. Otherwise, select **Add from file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
+    - If you're importing the connection settings by scanning a QR code, select **Add from QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
 
     ![Import connection settings](media/app-connect-app-select-file.png "Import connection settings")
 
-1. When the connection settings are successfully loaded, select the **Back** (left arrow) button in the upper-left corner of the page.
+1. When the connection settings are successfully loaded, you will see the selected conneciton on the screen. .
 
     ![Connection settings loaded](media/app-connect-app-settings-loaded.png "Connection settings loaded")
 
