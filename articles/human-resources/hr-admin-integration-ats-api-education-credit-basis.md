@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: This topic describes the entity for Dynamics 365 Human Resources.
+title: Education credit basis
+description: This topic describes the Education credit basis option set for Dynamics 365 Human Resources.
 author: jaredha
 manager: tfehr
 ms.date: 02/05/2021
@@ -27,6 +27,20 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Platform update 36
 ---
 
-# 
+# Education credit basis
 
-This topic describes the entity for Dynamics 365 Human Resources.
+This topic describes the Education credit basis option set for Dynamics 365 Human Resources.
+
+Physical name: mshr_hcmeducationcreditbasis
+
+This enumeration provides the option set of values for education credit basis of the candidate’s education record.
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000 | Blank | No value has been selected. |
+| 200000001 | Semester | Semester. |
+| 200000002 | Quarter | Quarter. |
+| 200000003 | Trimester | Trimester. |
+| 200000004 | Term | Term. |
+| 200000005 | Other | Other. |
+
