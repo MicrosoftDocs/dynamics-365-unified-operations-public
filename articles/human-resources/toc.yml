@@ -163,6 +163,12 @@
               href: hr-admin-integration-ats-api-applicant-integration-result.md
             - name: Completion status
               href: hr-admin-integration-ats-api-completion-status.md
+            - name: Contact type
+              href: hr-admin-integration-ats-api-contact-type.md
+            - name: Screening frequency
+              href: hr-admin-integration-ats-api-screening-frequency.md
+            - name: Screening frequency generate from
+              href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
             - name: 
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
