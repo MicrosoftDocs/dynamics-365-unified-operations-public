@@ -55,7 +55,7 @@ The following features are included in this release. Some of the listed features
 
 -  [Updates to client feature states](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states)<br>- See the release plan for details about the client features that were turned on by default or made mandatory with this release. 
 
--  View independent software vendor (ISV) license status<br>- It is now possible to view status and expiration dates for an ISV license. For more information, see [View independent software vendor license status](../sysadmin/view-ISV-license-status.md).
+-  View independent software vendor (ISV) license status<br>- It is now possible to view status and expiration dates for an ISV license. For more information, see [View independent software vendor license status](../sysadmin/view-isv-license-status.md).
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
