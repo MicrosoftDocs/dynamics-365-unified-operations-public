@@ -154,7 +154,7 @@
             - name: No Yes
               href: hr-admin-integration-ats-api-no-yes.md
             - name: Yes No
-              href: hr-admin-integration-ats-api-yes-no.md
+              href: hr-admin-integration-ats-api-blank-yes-no.md
             - name: Skill level type
               href: hr-admin-integration-ats-api-skill-level-type.md
             - name: Gender
