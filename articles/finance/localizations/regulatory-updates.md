@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/13/2020
+ms.date: 02/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -72,8 +72,8 @@ For the latest regulatory update plans, refer to the following table.
 |      Poland          |   January 2021     | 10.0.17, 10.0.16HF , 10.0.15HF     |   Poland: JPK_KR (SAF Accounting books) clarifications, effective from January 2021 |
 |      Russia          |   November 2020     | 10.0.16    |   VAT declaration format is updated to version 5.07 starting from the reporting for Q4 2020|
 |      Russia          |   October 2020     | 10.0.16    |   Changes in PBU18 for accounting reporting for 2020|
-|      Russia          |   January 2021     | 10.0.17    |   A new format of the property tax declaration i(technical version 5.07 instead of 5.06) for the 2020 reporting|
-|      Spain          |   November 2020     | 10.0.17    |   SII update validation and errors v.2.1(bis) from January 1 2021|
+|      Russia          |   January 2021     | 10.0.17    |   A new format of the property tax declaration (technical version 5.07 instead of 5.06) for the 2020 reporting|
+|      Spain          |   November 2020     | 10.0.17    |   SII update validation and errors v.2.1(bis) from January 1, 2021|
 |      United Kingdom         |   December 2020     | 10.0.17, 10.0.16, 10.0.15    |   Company tax registration in customer invoices (Brexit - Northern Ireland Protocol)|
 |      United Kingdom          |   December 2020     | 10.0.17, 10.0.16HF. 10.0.15HF    |   Brexit - Northern Ireland Protocol impact on companies trading goods in both GB and NI locations|
 
