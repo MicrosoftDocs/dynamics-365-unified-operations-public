@@ -105,6 +105,8 @@
           href: hr-admin-integration-ats-api-introduction.md
         - name: Recruiting request and related entities
           items:
+            - name: Example query for Recruiting request entity
+              href: hr-admin-integration-ats-api-recruiting-request-example-query.md
             - name: Recruiting request
               href: hr-admin-integration-ats-api-recruiting-request.md
             - name: Recruiting request position
