@@ -41,3 +41,7 @@ This enumeration specifies the option set for FLSA job exempt status values. Thi
 | 200000001 | NonExempt | The job has a non-exempt status based on FLSA guidelines. |
 | 200000002 | Does Not Apply | FLSA status guidelines do not apply to the job. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
