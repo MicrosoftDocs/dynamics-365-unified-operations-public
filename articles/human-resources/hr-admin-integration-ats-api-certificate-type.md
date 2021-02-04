@@ -35,7 +35,7 @@ Physical name: mshr_hcmcertificatetypeentity
 
 ## Description
 
-This entity defines the list of professional certificate types set up in Human Resources. The entity is not specific to a legal entity (company).
+This entity defines the list of professional certificate types set up in Human Resources. The entity isn't specific to a legal entity (company).
 
 ## JSON representation
 
