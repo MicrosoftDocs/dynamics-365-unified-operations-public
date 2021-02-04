@@ -147,6 +147,10 @@
               href: hr-admin-integration-ats-api-certificate-type.md
             - name: Person screening
               href: hr-admin-integration-ats-api-person-screening.md
+            - name: Screening types
+              href: hr-admin-integration-ats-api-screening-types.md
+            - name: Person identification number
+              href: hr-admin-integration-ats-api-person-identification-number.md
             - name: 
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
