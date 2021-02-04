@@ -121,12 +121,12 @@
               href: hr-admin-integration-ats-api-recruiting-request-status.md
             - name: Recruiting request position status
               href: hr-admin-integration-ats-api-recruiting-request-position-status.md
-            - name: Job exempt status
-              href: hr-admin-integration-ats-api-job-exempt-status.md
             - name: Regulatory job category
               href: hr-admin-integration-ats-api-regulatory-job-category.md
         - name: Recruiting request option sets
           items: 
+            - name: Job exempt status
+              href: hr-admin-integration-ats-api-job-exempt-status.md
         - name: Candidate to hire and related entities
           items:
             - name: Example query for Candidate to hire
@@ -159,32 +159,32 @@
               href: hr-admin-integration-ats-api-person-identification-number.md
             - name: No Yes
               href: hr-admin-integration-ats-api-no-yes.md
-            - name: Yes No
-              href: hr-admin-integration-ats-api-blank-yes-no.md
             - name: Skill level type
               href: hr-admin-integration-ats-api-skill-level-type.md
-            - name: Gender
-              href: hr-admin-integration-ats-api-gender.md
-            - name: Applicant integration result
-              href: hr-admin-integration-ats-api-applicant-integration-result.md
-            - name: Completion status
-              href: hr-admin-integration-ats-api-completion-status.md
-            - name: Contact type
-              href: hr-admin-integration-ats-api-contact-type.md
             - name: Screening frequency
               href: hr-admin-integration-ats-api-screening-frequency.md
             - name: Screening frequency generate from
               href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
-            - name: Education credit basis
-              href: hr-admin-integration-ats-api-education-credit-basis.md
             - name: Period unit
               href: hr-admin-integration-ats-api-period-unit.md
             - name: Months of year
               href: hr-admin-integration-ats-api-months-of-year.md
-            - name: Marital status
-              href: hr-admin-integration-ats-api-marital-status.md
         - name: Candidate option sets
           items:
+            - name: Applicant integration result
+              href: hr-admin-integration-ats-api-applicant-integration-result.md
+            - name: Blank Yes No
+              href: hr-admin-integration-ats-api-blank-yes-no.md
+            - name: Completion status
+              href: hr-admin-integration-ats-api-completion-status.md
+            - name: Contact type
+              href: hr-admin-integration-ats-api-contact-type.md
+            - name: Education credit basis
+              href: hr-admin-integration-ats-api-education-credit-basis.md
+            - name: Gender
+              href: hr-admin-integration-ats-api-gender.md
+            - name: Marital status
+              href: hr-admin-integration-ats-api-marital-status.md
       - name: Integrate with Office
         items:
         - name: Office integration tutorial
