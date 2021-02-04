@@ -980,8 +980,6 @@ This example shows how you can create a candidate record, the associated person 
 
 **Request**
 
-
-
 ```http
 POST [Organization URI]/api/data/v9.1/mshr_hcmcandidatetohireentities
 Content-Type: application/json; charset=utf-8
