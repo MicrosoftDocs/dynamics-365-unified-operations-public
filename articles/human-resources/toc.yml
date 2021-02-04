@@ -123,6 +123,8 @@
               href: hr-admin-integration-ats-api-job-exempt-status.md
             - name: Regulatory job category
               href: hr-admin-integration-ats-api-regulatory-job-category.md
+        - name: Recruiting request option sets
+          items: 
         - name: Candidate to hire and related entities
           items:
             - name: Candidate to hire
@@ -177,6 +179,9 @@
               href: hr-admin-integration-ats-api-months-of-year.md
             - name: Marital status
               href: hr-admin-integration-ats-api-marital-status.md
+        - name: Candidate option sets
+          items:
+
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
         - name: Candidate to hire and related entities
