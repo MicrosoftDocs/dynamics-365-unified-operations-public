@@ -100,7 +100,7 @@ Describes a request to recruit for a job.
 | **Regulatory Job Category**<br>mshr_regulatoryjobcategory<br>*RegulatoryJobCategory* option set | Read-only<br>Optional | The EEO job category of the job function selected for the job. Valid values included in the HcmRegulatoryJobCatetory (mshr_hcmregulatoryjobcategory) option set. |
 | **Job Type ID**<br>mshr_jobtypeid<br>*String* | Read-only<br>Optional | The type of the job associated with the position. The job types are user-defined values, available in the mshr_hcmjobtypeentity entity. |
 | **Job Type ID Value**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: mshr_hcmjobtypeentityid of mshr_hcmjobtypenentity entity | The system-generated unique identifier of the job type associated with the job for the recruiting request. |
-| **Tempt Status**<br>mshr_exemptstatus<br>*JobExemptStatus* option set | Read-only<br>Optional | The FLSA exempt status based on the job type. |
+| **Exempt Status**<br>mshr_exemptstatus<br>*JobExemptStatus* option set | Read-only<br>Optional | The FLSA exempt status based on the job type. |
 | **Estimated Start Date**<br>mshr_estimatedstartdate<br>*Date* | Read/write<br>Required | The estimated date a candidate would start work. |
 | **External Description**<br>mshr_externaldescription<br>*String* | Read/write<br>Optional | A candidate-facing description of the job/position. | Compensation Low Threshold<br>mshr_compensationlowthreshold<br>*Double* | Read/write<br>Optional | Lower bound for the compensation level. |
 | **Compensation Control Point**<br>mshr_compensationcontrolpoint<br>*Double* | Read/write<br>Optional | Control point for the compensation level. |
