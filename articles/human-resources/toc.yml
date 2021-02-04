@@ -171,7 +171,12 @@
               href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
             - name: Education credit basis
               href: hr-admin-integration-ats-api-education-credit-basis.md
-            - name: 
+            - name: Period unit
+              href: hr-admin-integration-ats-api-period-unit.md
+            - name: Months of year
+              href: hr-admin-integration-ats-api-months-of-year.md
+            - name: Marital status
+              href: hr-admin-integration-ats-api-marital-status.md
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
         - name: Candidate to hire and related entities
