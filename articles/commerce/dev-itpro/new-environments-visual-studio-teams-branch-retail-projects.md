@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 ---
 
-# Set up new environments, Azure DevOps, and branches for Commerce projects
+# Set up new environments, Azure DevOps, and branches for projects
 
 [!include [banner](../../includes/banner.md)]
 

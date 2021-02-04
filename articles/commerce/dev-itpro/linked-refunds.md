@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Retail 10.0.1 update
 
 ---
 
-# Linked refunds – Refunds of previously approved and confirmed transactions
+# Linked refunds of previously approved and confirmed transactions
 
 [!include [banner](../../includes/banner.md)]
 

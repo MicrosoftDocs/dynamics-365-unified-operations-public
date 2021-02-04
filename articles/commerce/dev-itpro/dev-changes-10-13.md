@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-04-10
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Important development and ALM changes from version 10.0.10 to 10.0.13
+# Development and ALM changes from version 10.0.10 to 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
