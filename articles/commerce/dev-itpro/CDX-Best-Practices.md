@@ -41,6 +41,12 @@ Before you go through this topic, it's important that you understand the concept
 
 The main content of this topic is organized into tables, where the first column includes lists of tag-like "associated areas" to help you more quickly find best practices that are related to your areas of concern. For new implementations, you might find it useful to copy these tables to a location where you can check off the various best practices as they are completed. In this way, you can help ensure that the implementation is prepared as well as possible before you move forward to production.
 
+## Updating configurations
+
+| Associated areas | Best practice |
+|------------------|---------------|
+| <ul><li>Parameters</li><li>Commerce scheduler</li><li>Initialization</li></ul> | Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**.  The slider that appears asks if you would like to proceed with initializing the base configuration data for commerce scheduler.  Performing this action after every update is vital to proper functionality as it correctly sets the configuration data for new tables or columns.  There is also a parameter to **Delete existing configuration**.  Unless explicitly told to do so or working on a non-production environment where losing configuration will not create an impact, leave this setting as **No**. |
+
 ## Valuable configurations
 
 | Associated areas | Best practice |
