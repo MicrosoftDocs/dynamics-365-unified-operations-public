@@ -91,11 +91,10 @@ The **Financial reporting** option is the solution. Organization hierarchies tha
 
 By using the **Export company balances** option to export from one instance and then using the **Consolidate with import** option on the other instance, you can consolidate the data.
 
-11. Can I do a Consolidation with my budget in DRAFT status? 
+11. Can I do a Consolidation with my budget in **DRAFT** status? 
 			
-You wont be able to process or complete your budgets in the consolidation company. Therefore, the recommended method of consolidating draft budgets would be to use Financial Reporter.
-		
-		
+You wont be able to process or complete your budgets in the consolidation company. We recommended using Financial Reporting to consolidate draft budgets.
+
 For more information, see [Currency revaluation in a consolidation company](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
