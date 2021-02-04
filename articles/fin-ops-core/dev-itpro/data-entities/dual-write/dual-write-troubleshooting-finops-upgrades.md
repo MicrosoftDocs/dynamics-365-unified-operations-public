@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot issues related to upgrades of Finance and Operations apps
+title: Troubleshoot issues from upgrades of Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues that are related to upgrades of Finance and Operations apps.
 author: RamaKrishnamoorthy 
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-03-16
 
 ---
 
-# Troubleshoot issues related to upgrades of Finance and Operations apps
+# Troubleshoot issues from upgrades of Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
 

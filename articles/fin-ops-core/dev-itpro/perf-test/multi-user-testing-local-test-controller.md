@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Multi-user testing with the Performance SDK and a local test controller
+title: Multi-user Performance SDK testing with a local test controller
 description: This topic explains how to do multi-user testing by using Microsoft Visual Studio, the Performance SDK, and the Task Recorder test scripts.
 author: hasaid
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Multi-user testing with the Performance SDK and a local test controller
+# Multi-user Performance SDK testing with a local test controller
 
 [!include [banner](../includes/banner.md)]
 

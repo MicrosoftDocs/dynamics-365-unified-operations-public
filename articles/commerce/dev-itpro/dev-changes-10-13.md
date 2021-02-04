@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Important development and ALM changes from version 10.0.10 to 10.0.13 
+title: Development and ALM changes from version 10.0.10 to 10.0.13 
 description: This topic highlights the major changes in the development tools, software development kits (SDKs), and Application Lifecycle Management (ALM).
 author: RobBertram 
 manager: AnnBe

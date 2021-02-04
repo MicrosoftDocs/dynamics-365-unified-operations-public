@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Linked refunds - Refunds of previously approved and confirmed transactions
+title: Linked refunds of previously approved and confirmed transactions
 description: This topic describes how to enable and use Linked refunds.
 author: josaw1
 manager: AnnBe

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Development in cloud-hosted development environments without admin access
+title: Development in cloud-hosted environments without admin access
 description: This topic demonstrates the configuration steps for Commerce developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
