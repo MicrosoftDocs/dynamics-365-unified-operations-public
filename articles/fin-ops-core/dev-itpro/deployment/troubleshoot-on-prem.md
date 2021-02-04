@@ -1236,7 +1236,7 @@ Run the following command against your business data database (AXDB):
 >[!NOTE]
 > If you are using version 10.0.12 or earlier, a full database synchronization will be executed.
 
-After running the command, restart one of your AOS nodes through Service Fabric Explorer or by restarting the VM the node is running on.
+After running the command, restart one of your AOS nodes through Service Fabric Explorer or restart the VM that the node is running on.
 
 ## Add axdbadmin to tempdb after a SQL Server restart via a stored procedure
 
