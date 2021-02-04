@@ -159,6 +159,10 @@
               href: hr-admin-integration-ats-api-skill-level-type.md
             - name: Gender
               href: hr-admin-integration-ats-api-gender.md
+            - name: Applicant integration result
+              href: hr-admin-integration-ats-api-applicant-integration-result.md
+            - name: Completion status
+              href: hr-admin-integration-ats-api-completion-status.md
             - name: 
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
