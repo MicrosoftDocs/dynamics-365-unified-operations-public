@@ -44,3 +44,8 @@ This enumeration provides the option set for the status values of a RecruitingRe
 | 200000004 | Denied | The request has been denied. Only available when workflow is enabled. |
 | 200000005 | Active | Any workflow is completed and approved, and the request is ready for active recruiting. |
 | 200000006 | Closed | The recruiting request is closed. |
+
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
