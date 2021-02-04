@@ -69,13 +69,12 @@ For information on generating the virtual tables for the API, see [Configure Dat
 
 The data model is centered around two main entities:
 
-- **RecruitingRequest** represents a request to an ATS to recruit for one or more open positions. For data model details about **RecruitingRequest** and related entities, see [Recruiting request and related entities](hr-admin-integration-ats-api-recruiting-entities.md).
+- **RecruitingRequest** represents a request to an ATS to recruit for one or more open positions. For data model details about **RecruitingRequest** and related entities, see [Recruiting request and related entities](hr-admin-integration-ats-api-recruiting-entities.md). For an example query, see [Example query for Recruiting request entity](hr-admin-integration-ats-api-recruiting-request-example-query.md).
 - **CandidateToHire** represents details of a candidate who has accepted an offer for a position. **Person** represents the individual who is the candidate. A person can have multiple roles in the company, such as candidate, worker, employee, or contractor. For data model details about **CandidateToHire**, **Person**, and related entities, see [Candidate to hire and related entities](hr-admin-integration-ats-api-candidate-entities.md).
 
 The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to recruiting integration scenarios. However, there are many other entities in the Dataverse Web API for Dynamics 365 Human Resources that may also be relevant to your integration. For example, you may also need detail for workers, jobs, positions, or other entities not defined here. Many of these entities are referenced in foreign key relationships or navigation properties.
 
 ![ATS Integration API data model](media/RecruitingDataModel.png)
-
 
 ## See also
 
