@@ -157,6 +157,9 @@
               href: hr-admin-integration-ats-api-yes-no.md
             - name: Skill level type
               href: hr-admin-integration-ats-api-skill-level-type.md
+            - name: Gender
+              href: hr-admin-integration-ats-api-gender.md
+            - name: 
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
         - name: Candidate to hire and related entities
