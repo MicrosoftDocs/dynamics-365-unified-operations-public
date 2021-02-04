@@ -86,3 +86,8 @@ Describes the position or positions to fill for a recruiting request. Adding a p
 | **Data Area ID Value**<br>_mshr_dataareaid_id_value<br>*GUID* | Read-only<br>Optional<br>Foreign key: cdm_companyid of cdm_company entity | System-generated GUID value identifying the legal entity (company) for the recruiting request position. |
 | **Primary Field**<br>mshr_primaryfield<br>*String* | Read-only<br>Required | Concatenation of Recruiting Request value and Position ID as another method to uniquely identify the record. |
 
+## See also
+
+[Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+[Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+
