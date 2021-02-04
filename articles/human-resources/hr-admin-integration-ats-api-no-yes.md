@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: This topic describes the entity for Dynamics 365 Human Resources.
+title: No Yes
+description: This topic describes the No Yes option set for Dynamics 365 Human Resources.
 author: jaredha
 manager: tfehr
 ms.date: 02/05/2021
@@ -27,6 +27,17 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Platform update 36
 ---
 
-# 
+# No Yes
 
-This topic describes the entity for Dynamics 365 Human Resources.
+This topic describes the No Yes option set for Dynamics 365 Human Resources.
+
+## Option set: No Yes
+
+Physical name: mshr_noyes
+
+This enumeration provides option set for typical Boolean properties in Human Resources virtual entities.
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000 | No | No. |
+| 200000001 | Yes | Yes. |
