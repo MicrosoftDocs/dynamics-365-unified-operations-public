@@ -4,7 +4,7 @@
 title: Create a goal
 description: You can create goals, add activities to goals, track measurements, and link the goals to a review. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

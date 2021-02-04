@@ -1032,6 +1032,8 @@
           href: general-ledger/import-currency-exchange-rates.md
         - name: One voucher
           href: general-ledger/one-voucher.md
+        - name: One voucher FAQ
+          href: general-ledger/one-voucher-faq.md
         - name: Ledger settlements
           href: general-ledger/ledger-settlements.md
       - name: Period-end close
@@ -2038,6 +2040,8 @@
           href: localizations/emea-cze-hun-year-end.md
         - name: Online invoicing system
           href: localizations/emea-hun-online-invoicing.md
+        - name: Sales tax reports for Hungary
+          href: localizations/emea-hun-sales-tax-reports.md
         - name: Deferred sales tax calculations
           href: localizations/emea-hun-deferred-vat.md
       - name: Iceland
@@ -2984,6 +2988,10 @@
           href: localizations/apac-tha-substitution-and-adjustment-invoices.md
         - name: Unrealized VAT
           href: localizations/apac-tha-unrealized-vat.md
+        - name: Tax branch dimensions
+          href: localizations/apac-tha-tax-branch-dimensions.md
+        - name: Sales VAT report
+          href: localizations/apac-tha-sales-vat-report.md
         - name: Withholding tax
           href: localizations/apac-tha-withholding-tax.md          
       - name: United Arab Emirates (UAE)
