@@ -63,7 +63,7 @@ This entity describes screenings a candidate has passed or must pass for employm
 | **Screening Type ID**<br>mshr_screeningtypeid<br>*String* | Read/write<br>Required<br>Foreign key: ScreeningType | The identifier of the screening type defined in Human Resources. |
 | **Screening Type ID Value**<br>_mshr_fk_screeningtype_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key: mshr_hcmscreeningtypeentityid of mshr_hcmscreeningtypeentity | System-generated identifier for the screening type record in the associated entity. |
 | **Required By**<br>mshr_requiredby<br>*Datetime* | Read/write<br>Optional | The date by which the screening is required to be completed. |
-| **Status**<br>mshr_status<br>*mshr_hcmcompletionstatus option set*<br>Read/write<br>Required | Provides the candidate’s status regarding the screening. |
+| **Status**<br>mshr_status<br>*mshr_hcmcompletionstatus option set*<br>Read/write<br>Required | Provides the candidate’s status for the screening. |
 | **Completed Date**<br>mshr_completeddate<br>*Datetime* | Read/write<br>Optional | The date the screening was completed. |
 | **Notes**<br>mshr_note<br>*String* | Read/write<br>Optional | Notes for use by hiring managers and recruiters. |
 
