@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: This topic describes the entity for Dynamics 365 Human Resources.
+title: Blank Yes No
+description: This topic describes the Blank Yes No option set for Dynamics 365 Human Resources.
 author: jaredha
 manager: tfehr
 ms.date: 02/05/2021
@@ -27,6 +27,16 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Platform update 36
 ---
 
-# 
+# Blank Yes No
 
-This topic describes the entity for Dynamics 365 Human Resources.
+This topic describes the Blank Yes No option set for Dynamics 365 Human Resources.
+
+Physical name: mshr_hrmblankyesno
+
+This enumeration provides option set for yes/no properties that also allow blanks.
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000 | Blank | No value has been selected. |
+| 200000001 | Yes | Yes. |
+| 200000002 | No | No. |
