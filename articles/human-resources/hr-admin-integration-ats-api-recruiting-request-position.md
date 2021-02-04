@@ -35,7 +35,7 @@ Physical name: mshr_hcmrecruitingrequestpositionentity
 
 ### Description
 
-Describes the position or positions to fill for a Recruiting Request. Adding a position to the recruiting request is optional. The properties of the position are read-only as the position properties shouldn't be different on the recruiting request than they are on the position master record. If the properties need to change, it should be done on the position master record before adding the position to the recruiting request.
+Describes the position or positions to fill for a recruiting request. Adding a position to the recruiting request is optional. The properties of the position are read-only, as the position properties shouldn't be different on the recruiting request than they are on the position master record. If the properties need to change, it should be done on the position master record before adding the position to the recruiting request.
 
 ### JSON representation
 ```json
