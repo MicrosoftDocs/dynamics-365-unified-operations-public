@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: This topic describes the entity for Dynamics 365 Human Resources.
+title: Regulatory job category
+description: This topic describes the Regulatory job category option set for Dynamics 365 Human Resources.
 author: jaredha
 manager: tfehr
 ms.date: 02/05/2021
@@ -27,6 +27,24 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Platform update 36
 ---
 
-# 
+# Regulatory job category
 
-This topic describes the entity for Dynamics 365 Human Resources.
+This topic describes the Regulatory job category option set for Dynamics 365 Human Resources.
+
+Physical name: mshr_hcmregulatoryjobcategory
+
+This enumeration specifies the option set for regulatory job category option set values. This is provided in the existing mshr_hcmregulatoryjobcategory option set.
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000 | None | None. |
+| 200000001 | Executive | Executive/Senior level officials and managers. |
+| 200000002 | Manager | First/Mid level officials and managers. |
+| 200000003 | Professional | Professionals. |
+| 200000004 | Technician | Technicians. |
+| 200000005 | SalesWorker | Sales workers. |
+| 200000006 | Administrative | Administrative support workers. |
+| 200000007 | CraftWorker | Craft workers. |
+| 200000008 | Operative | Operatives. |
+| 200000009 | Laborer | Laborers/Helpers. |
+| 200000010 | ServiceWorker | Service workers. |
