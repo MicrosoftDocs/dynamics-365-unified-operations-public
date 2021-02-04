@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintain vendor bank account information
-description: 
+description: Vendors can maintain their bank account information within the Vendor collaboration capability. This topic descibes the steps for adding and maintaining bank information for vendors that you do business with.
 author: v-kiarnd
 manager: AnnBe
 ms.date: 01/14/2021
@@ -32,7 +32,9 @@ ms.dyn365.ops.version: AX 10.0.17
 
 # Maintain vendor bank account information
 
-Vendors can maintain their bank account information within Vendor  collaboration. Vendor account maintenance can be performed in the Vendor information workspace. From here, vendors will select **More details** and **Bank accounts**. To add a new bank accounts, click the **Add** button above the bank account grid. A **New** slider will display. You can enter the following information in the slider.   
+Vendors can maintain their bank account information within the Vendor collaboration capability. This topic descibes the steps for adding and maintaining bank information for vendors that you do business with. If you've given vendors access, they can add information for a new bank account. You can then review that information and complete the pre-note process that leads up to using the new account for payments to the vendor.
+
+You can maintain your vendor account in the **Vendor information** workspace. From here, vendors will select **More details** and **Bank accounts**. To add a new bank account, click the **Add** button above the bank account grid. A **New** slider will display. You can enter the following information in the slider.   
  
 - **Bank account** 
 - **Bank name** 
