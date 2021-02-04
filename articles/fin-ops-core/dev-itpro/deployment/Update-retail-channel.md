@@ -53,7 +53,7 @@ To apply an extension to a Commerce Scale Unit, run the following steps:
 2. In the selection panel, select the extension to apply.
 
 > [!NOTE]
-> You must first upload the Commerce deployable package to the project asset library in Lifecycle Services (LCS), before you can select to deploy it on the **Commerce deployment setup page** in LCS.
+> You must first upload the Commerce deployable package to the project asset library in Dynamics Lifecycle Services (LCS), before you can select to deploy it on the **Commerce deployment setup page** in LCS.
 
 Both **Apply updates** and **Apply extension** operations will involve a downtime, which may last up to 1 hour, or in some cases up to 2 hours or more. For example, when updating non-US locations of Commerce Scale Unit, large data volumes, or complex schema updates. For a realistic estimate of the downtime duration, note the downtime duration in Sandbox UAT for an equivalent update and dataset that you plan to use in your production environment. During this time, the following will occur:
 
@@ -70,8 +70,9 @@ Both **Apply updates** and **Apply extension** operations will involve a downtim
 To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.
 
 ## CSU auto-update sequence
+
 > [!NOTE]
-> Auto-update for CSU is being gradually rolled out to all Commerce customers. LCS project owners and environment administrators will recieve an email notification when CSU auto-update is rolled out to your LCS project.
+> Auto-update for CSU is being gradually rolled out to all Commerce customers. If you are an LCS project owner or environment administrator, you'll recieve an email notification when CSU auto-update is rolled out to your LCS project.
 
 When CSU is auto-updated by Microsoft, it takes place in the following sequence.
 
