@@ -210,7 +210,7 @@ Follow these steps to import connection settings from a file or a QR code.
     
 1. If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. Otherwise, go to **Set up connection**.
 
-![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
+    ![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
 
 1. Select **Add from file** or **Add from QR code**, depending on how you want to import the settings:
 
@@ -239,7 +239,7 @@ You can manually configure the app on the device so that it connects to the Supp
 1. If the app start in **Demo mode**, go to **Connection settings**. If the app starts on the **Sign-in** screen, click on **Change connection** to go back.
 1. Go to **Set up connection**.
 
-![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
+    ![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
 
 1. Select **Input manually**.
 
