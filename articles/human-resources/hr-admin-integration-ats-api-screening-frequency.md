@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: This topic describes the entity for Dynamics 365 Human Resources.
+title: Screening frequency
+description: This topic describes the Screening frequency option set for Dynamics 365 Human Resources.
 author: jaredha
 manager: tfehr
 ms.date: 02/05/2021
@@ -27,6 +27,19 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Platform update 36
 ---
 
-# 
+# Screening frequency
 
-This topic describes the entity for Dynamics 365 Human Resources.
+This topic describes the Screening frequency option set for Dynamics 365 Human Resources.
+
+Physical name: mshr_hcmfrequencyunit
+
+This enumeration provides the option set of values for the screening frequency. 
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000	One-time only | The screening is required only once. |
+| 200000001	Daily | The screening frequency is calculated in days. |
+| 200000002	Weekly | The screening frequency is calculated in weeks. |
+| 200000003	Monthly | The screening frequency is calculated in months. |
+| 200000004	Yearly | The screening frequency is calculated in years. |
+
