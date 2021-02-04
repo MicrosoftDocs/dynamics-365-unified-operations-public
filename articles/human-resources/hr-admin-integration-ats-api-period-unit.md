@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: This topic describes the entity for Dynamics 365 Human Resources.
+title: Period unit
+description: This topic describes the Period unit option set for Dynamics 365 Human Resources.
 author: jaredha
 manager: tfehr
 ms.date: 02/05/2021
@@ -27,6 +27,16 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Platform update 36
 ---
 
-# 
+# Period unit
 
-This topic describes the entity for Dynamics 365 Human Resources.
+This topic describes the Period unit option set for Dynamics 365 Human Resources.
+
+Physical name: mshr_periodunit
+
+This enumeration provides the option set of values for units of measurement for periods of time.
+
+| Value | Label | Description |
+| --- | --- | --- |
+| 200000000 | Days | Day. |
+| 200000001 | Months | Month. |
+| 200000002 | Years | Year. |
