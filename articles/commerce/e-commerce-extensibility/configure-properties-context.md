@@ -57,8 +57,8 @@ As the following example of a module definition file shows, when the **layout** 
     "description": "Feature module used to highlight a product.",
     "config": {
         "layout": {
-            "friendlyName": "Image Alignment",
-            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "friendlyName": "Text Layout",
+            "description": "Sets the desired text output to be plaintext or rich text with images.",
             "type": "string",
             "enum": {
                 "plainTextOnly": "Plain Text Only",
@@ -81,7 +81,7 @@ As the following example of a module definition file shows, when the **layout** 
                     "featureText" : {
                         "type": "string",
                         "friendlyName": "Feature Text",
-                        "description":  "Main text title to show in module.",
+                        "description":  "Main text title to show in module."
                     }
                 }
             },
@@ -95,12 +95,12 @@ As the following example of a module definition file shows, when the **layout** 
                     "featureRichText" : {
                         "type": "richText",
                         "friendlyName": "Feature Text",
-                        "description":  "Main rich text to show in module.",
+                        "description":  "Main rich text to show in module."
                     },
                     "featureImage" : {
                         "type": "image",
                         "friendlyName": "Feature Title",
-                        "description":  "Image to show in module.",
+                        "description":  "Image to show in module."
                     },
                     "imageAlignment": {
                         "friendlyName": "Image Alignment",
