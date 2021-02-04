@@ -105,63 +105,35 @@ Example query:
 
 Entities:
 
-- [Candidate to hire
-hr-admin-integration-ats-api-candidate-to-hire.md
-- [Person
-hr-admin-integration-ats-api-person.md
-- [Person education
-hr-admin-integration-ats-api-person-education.md
-- [Person professional experience
-hr-admin-integration-ats-api-person-professional-experience.md
-- [Person address
-hr-admin-integration-ats-api-person-address.md
-- [Party contact
-hr-admin-integration-ats-api-party-contact.md
-- [Person skill
-hr-admin-integration-ats-api-person-skill.md
-- [Rating level
-hr-admin-integration-ats-api-rating-level.md
-- [Person certificate
-hr-admin-integration-ats-api-person-certificate.md
-- [Certificate type
-hr-admin-integration-ats-api-certificate-type.md
-- [Person screening
-hr-admin-integration-ats-api-person-screening.md
-- [Screening types
-hr-admin-integration-ats-api-screening-types.md
-- [Person identification number
-hr-admin-integration-ats-api-person-identification-number.md
+- [Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire.md)
+- [Person](hr-admin-integration-ats-api-person.md)
+- [Person education](hr-admin-integration-ats-api-person-education.md)
+- [Person professional experience](hr-admin-integration-ats-api-person-professional-experience.md)
+- [Person address](hr-admin-integration-ats-api-person-address.md)
+- [Party contact](hr-admin-integration-ats-api-party-contact.md)
+- [Person skill](hr-admin-integration-ats-api-person-skill.md)
+- [Rating level](hr-admin-integration-ats-api-rating-level.md)
+- [Person certificate](hr-admin-integration-ats-api-person-certificate.md)
+- [Certificate type](hr-admin-integration-ats-api-certificate-type.md)
+- [Person screening](hr-admin-integration-ats-api-person-screening.md)
+- [Screening types](hr-admin-integration-ats-api-screening-types.md)
+- [Person identification number](hr-admin-integration-ats-api-person-identification-number.md)
 
 Option sets:
 
-- [Applicant integration result
-hr-admin-integration-ats-api-applicant-integration-result.md
-- [Blank Yes No
-hr-admin-integration-ats-api-blank-yes-no.md
-- [Completion status
-hr-admin-integration-ats-api-completion-status.md
-- [Contact type
-hr-admin-integration-ats-api-contact-type.md
-- [Education credit basis
-hr-admin-integration-ats-api-education-credit-basis.md
-- [Gender
-hr-admin-integration-ats-api-gender.md
-- [Marital status
-hr-admin-integration-ats-api-marital-status.md
-- [Months of year
-hr-admin-integration-ats-api-months-of-year.md
-- [No Yes
-hr-admin-integration-ats-api-no-yes.md
-- [Period unit
-hr-admin-integration-ats-api-period-unit.md
-- [Screening frequency
-hr-admin-integration-ats-api-screening-frequency.md
-- [Screening frequency generate from
-hr-admin-integration-ats-api-screening-frequency-generate-from.md
-- [Skill level type
-hr-admin-integration-ats-api-skill-level-type.md
-
-
+- [Applicant integration result](hr-admin-integration-ats-api-applicant-integration-result.md)
+- [Blank Yes No](hr-admin-integration-ats-api-blank-yes-no.md)
+- [Completion status](hr-admin-integration-ats-api-completion-status.md)
+- [Contact type](hr-admin-integration-ats-api-contact-type.md)
+- [Education credit basis](hr-admin-integration-ats-api-education-credit-basis.md)
+- [Gender](hr-admin-integration-ats-api-gender.md)
+- [Marital status](hr-admin-integration-ats-api-marital-status.md)
+- [Months of year](hr-admin-integration-ats-api-months-of-year.md)
+- [No Yes](hr-admin-integration-ats-api-no-yes.md)
+- [Period unit](hr-admin-integration-ats-api-period-unit.md)
+- [Screening frequency](hr-admin-integration-ats-api-screening-frequency.md)
+- [Screening frequency generate from](hr-admin-integration-ats-api-screening-frequency-generate-from.md)
+- [Skill level type](hr-admin-integration-ats-api-skill-level-type.md)
 
 ## See also
 
