@@ -51,14 +51,14 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 3. Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.
 
-4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically these steps:
+4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically these steps.
 
     ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-    Alternatively if you have or would like to switch to Active Directory Certificate Services (AD CS) certificates:
+    Alternatively, if you have or would like to switch to Active Directory Certificate Services (AD CS) certificates, use this information.
 
     ```powershell
     # Only run the first command if you have not generated the templates yet.
@@ -70,7 +70,6 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     > The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.
     > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
 
-    > [!IMPORTANT]
     > Self-signed certificates should never be used in production environments. If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
 
     ```powershell
