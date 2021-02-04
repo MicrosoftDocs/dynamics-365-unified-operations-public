@@ -169,6 +169,8 @@
               href: hr-admin-integration-ats-api-screening-frequency.md
             - name: Screening frequency generate from
               href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+            - name: Education credit basis
+              href: hr-admin-integration-ats-api-education-credit-basis.md
             - name: 
         - name: Recruiting request and related entities
           href: hr-admin-integration-ats-api-recruiting-entities.md
