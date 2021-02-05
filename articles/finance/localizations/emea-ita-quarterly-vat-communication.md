@@ -57,7 +57,7 @@ For the progressive number, a system number sequence is used. Go to **Organizati
 
 For example:
 
-![Set up number sequence for Quarterly VAT Communication (LIPE) report](./media/num-seq.png)
+   ![Set up number sequence for Quarterly VAT Communication (LIPE) report](./media/num-seq.png)
 
 Find more information about how to set up number sequences in [Set up number sequences](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-number-sequences) section.
 
@@ -93,10 +93,10 @@ Find more information about how to set up number sequences in [Set up number seq
 
     Values for the following tags of the report are collected from tax transactions that are posted in the system. The values consider the specific tax codes that your company uses and the tax directions that are applicable to your company's operations.
 
-- TotaleOperazioniAttive
-- TotaleOperazioniPassive
-- IvaEsigibile
-- IvaDetratta
+    - TotaleOperazioniAttive
+    - TotaleOperazioniPassive
+    - IvaEsigibile
+    - IvaDetratta
 
     To set up tax codes for the report, on the **Format designer** page, on the **Mapping** tab, expand **Model** \> **AccountingData** \> **MonthlyData**, select the **ActiveVATOperations** node, and then select **Edit**.
 
