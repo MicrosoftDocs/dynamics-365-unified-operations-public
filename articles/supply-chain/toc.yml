@@ -2981,6 +2981,8 @@
             href: warehousing/troubleshoot-warehouse-configuration.md
         - name: Install and configure the warehouse app
           items:
+          - name: Install and connect the Warehouse Management app
+            href: warehousing/install-configure-warehouse-management-app.md
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
           - name: Scan bar codes using a camera in the warehouse app

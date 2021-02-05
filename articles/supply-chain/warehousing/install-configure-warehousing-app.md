@@ -34,7 +34,10 @@ ms.dyn365.ops.version: Version 1611
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This topic describes how to configure warehousing for cloud deployments. If you're looking for information about how to configure warehousing for on-premises deployments, see [Warehousing for on-premises deployments](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> This topic describes how to configure the legacy warehouse app. If you're looking for information about how to configure the new Warehouse Management app (currently in public preview), see [Install and connect the Warehouse Management app](install-configure-warehouse-management-app.md).
+
+> [!NOTE]
+> This topic describes how to configure the warehouse app for cloud deployments. If you're looking for information about how to configure the warehouse app for on-premises deployments, see [Warehousing for on-premises deployments](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 The warehouse app is available from Google Play Store and Microsoft Store. It's provided as a standalone component. Therefore, you must download it on each device and then configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
 

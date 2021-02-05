@@ -32,9 +32,10 @@ ms.dyn365.ops.version: 10.0.17
 # Install and connect the Warehouse Management app
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> This topic describes how to configure the preview of the warehouse management application. If you're looking for information about how to configure the legacy warehousing app, see [Install and connect the warehouse app](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> This topic describes how to configure the new Warehouse Management app (currently in public preview). If you're looking for information about how to configure the legacy warehouse app, see [Install and connect the warehouse app](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 The public preview of the Warehouse Management application is available for download on Microsoft App Center. It's provided as a standalone component. Therefore, you must download it on each device and then configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
 
@@ -49,7 +50,7 @@ The warehouse management app is available for both Windows and Android operating
 
 ## Turn on the feature
 
-Before you can use the app, the feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use the app, a related feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *User settings, icons, and step titles for the new warehouse app*
@@ -99,8 +100,8 @@ For more information about how to set up web service applications in Azure AD, s
 - For instructions that show how to use Windows PowerShell to set up web service applications in Azure AD, see [How to: Use Azure PowerShell to create a service principal with a certificate](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - For complete details about how to manually create a web service application in Azure AD, see the following topics:
 
-    - [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [How to: Use the portal to create an Azure AD application and service principal that can access resources](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+  - [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+  - [How to: Use the portal to create an Azure AD application and service principal that can access resources](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## Create and configure a user account in Supply Chain Management
 
@@ -207,14 +208,14 @@ Follow these steps to import connection settings from a file or a QR code.
 1. Open the warehouse app on your mobile device. First time you open the app you will see a welcome message. Go to **Select a connection**.
 
     ![Welcome message](media/app-configure-welcome-screen.png "Welcome message")
-    
-1. If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. Otherwise, go to **Set up connection**.
+
+1. If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. If so, then jump ahead to step 4; otherwise, select **Set up connection** and continue to step 3.
 
     ![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
 
-1. Select **Add from file** or **Add from QR code**, depending on how you want to import the settings:
+1. The **Connection setup** dialog box opens. Select **Add from file** or **Add from QR code**, depending on how you want to import the settings:
 
-    - If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. Otherwise, select **Add from file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
+    - If you're importing the connection settings from a file, select **Add from file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
     - If you're importing the connection settings by scanning a QR code, select **Add from QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
 
     ![Connection setup menu](media/app-configure-connection-setup-flyout.png "Connection setup menu")
@@ -233,10 +234,10 @@ Follow these steps to import connection settings from a file or a QR code.
 
 ## <a name="config-manually"></a>Manually configure the application
 
-You can manually configure the app on the device so that it connects to the Supply Chain Management server through the Azure AD application.
+If you don't have a file or QR code, you can manually configure the app on the device so that it connects to the Supply Chain Management server through the Azure AD application.
 
 1. Open the warehouse app on your mobile device.
-1. If the app start in **Demo mode**, go to **Connection settings**. If the app starts on the **Sign-in** screen, click on **Change connection** to go back.
+1. If the app starts in **Demo mode**, select **Connection settings**. If the app starts on the **Sign-in** screen, select **Change connection** to go back.
 1. Go to **Set up connection**.
 
     ![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
@@ -245,7 +246,7 @@ You can manually configure the app on the device so that it connects to the Supp
 
     ![Connection setup menu](media/app-configure-connection-setup-flyout.png "Connection setup menu")
 
-1. A new page is opened with the settings that are required to manually enter the connection details.
+1. A new page opens with the settings that are required to manually enter the connection details.
 
     ![Manual connection fields](media/app-configure-input-manually.png "Manual connection fields")
 
@@ -255,18 +256,18 @@ You can manually configure the app on the device so that it connects to the Supp
     - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.).
     - **Active directory client ID** – Enter the client ID that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
     - **Active directory client secret** – This field is available only when the **Use client secret** option is set to _Yes_. Enter the client secret that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
-    - **Active directory certificate thumbprint** – This field is available for Windows devices only when the **Use client secret** option is set to _No_. Enter the certificate thumbprint that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
+    - **Active directory certificate thumbprint** – This field is only available for Windows devices and when the **Use client secret** option is set to _No_. Enter the certificate thumbprint that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
     - **Active directory resource** – Specify the root URL of Supply Chain Management.
 
-        > [!NOTE]
+        > [!IMPORTANT]
         > Don't end this value with a slash (/).
 
     - **Active directory tenant** – Enter the Azure AD tenant that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`.
 
-        > [!NOTE]
+        > [!IMPORTANT]
         > Don't end this value with a slash (/).
 
-    - **Company** – Enter the legal entity in Supply Chain Management that you want the application to connect to.
+    - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
 
 1. Select the **Save** button in the upper-right corner of the page.
 1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
