@@ -75,6 +75,8 @@ and create a number sequence. This number sequence must be continuous and five
 characters long, and it must be alphanumeric (that is, it must consist only of
 lowercase letters a–z, uppercase letters A–Z, and numbers 0–9).
 
+For example:
+
 ![Set up number sequence for Quarterly VAT Communication (LIPE) report](./media/num-seq.png)
 
 Find more information about how to set up number sequences in [Set up number sequences](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-number-sequences) section.
@@ -184,7 +186,7 @@ For more information, see [Download ER configurations from the Global repository
 14.  In the drop-down dialog box, expand **Dynamics 365 for Operations**, and
     then select **Number sequence**.
 
-![Add number sequence to your format](.media/add-num-seq.png)
+![Add number sequence to your format](./media/add-num-seq.png)
 
 15.  Enter a name, select the number sequence that you created earlier, and then
     select **OK** to create the number sequence.
