@@ -2,7 +2,7 @@
 # required metadata
 
 title: Initialize company data
-description: This topic explains how to initialize (or bootstrap) Microsoft Dataverse data or other Finance and Operations app data with company information before you enable a dual-write connection.
+description: This topic explains how to initialize data with company information before you enable a dual-write connection.
 author: RamaKrishnamoorthy 
 manager: tfehr
 ms.date: 12/01/2020

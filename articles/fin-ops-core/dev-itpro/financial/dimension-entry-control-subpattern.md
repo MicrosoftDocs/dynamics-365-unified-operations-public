@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dimension Entry Control subpattern
-description: This article provides information about the Dimension Entry Control subpattern. This subpattern is used when you have a group or tab page that uses the Dimension Entry control (DEC). 
+description: This article provides information about the Dimension Entry Control subpattern.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017

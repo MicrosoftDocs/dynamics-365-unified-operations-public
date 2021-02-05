@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-company behavior of data entities
-description: This topic provides information about how data entities interact with the cross-company concept. To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept. Therefore, this topic begins with a brief review of tables and views, and then explains how data entities are related.
+description: This topic provides information about how data entities interact with the cross-company concept.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017

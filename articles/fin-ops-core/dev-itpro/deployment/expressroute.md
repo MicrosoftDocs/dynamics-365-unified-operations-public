@@ -2,7 +2,7 @@
 # required metadata
 
 title: Azure ExpressRoute and Finance and Operations apps
-description: Customers can use Microsoft Azure ExpressRoute with Finance and Operations apps to connect to their on-premises infrastructure. This topic provides the information that you need to get started with ExpressRoute.
+description: Customers can use Microsoft Azure ExpressRoute to connect to their on-premises infrastructure.
 author: PeterRFriis
 manager: AnnBe
 ms.date: 09/20/2019

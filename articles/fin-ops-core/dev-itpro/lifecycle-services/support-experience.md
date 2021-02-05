@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up technical support for Finance and Operations apps
-description: This topic provides information about the support experience for cloud and on-premises deployments. It describes the setup that is required and explains how to create and work with support issues.
+description: This topic provides information about the support experience for cloud and on-premises deployments.
 author: kfend
 manager: AnnBe
 ms.date: 10/13/2020

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and Microsoft Forms Pro
-description: This topic goes through a scenario where a survey is sent to users when a product has been shipped. The survey information is gathered by using Microsoft Forms Pro.
+description: This topic goes through a scenario where a survey is sent to users when a product has been shipped.
 author: murrayfife
 manager: AnnBe
 ms.date: 08/12/2019

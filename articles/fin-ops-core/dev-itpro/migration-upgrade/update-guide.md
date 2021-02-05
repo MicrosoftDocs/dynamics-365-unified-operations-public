@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Manage Finance and Operations updates and your custom code lifecycle
-description: This topic describes application lifecycle scenarios for managing your source code development branches, applying the next version of a Microsoft service update, and applying a new version of your custom code.
+description: This topic describes how to manage Finance and Operations updates and your custom code lifecycle.
 author: rbadawy
 manager: AnnBe
 ms.date: 10/22/2020
