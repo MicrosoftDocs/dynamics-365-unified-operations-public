@@ -195,7 +195,7 @@ add-on](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/art
 5.  Select **Edit.**
 
 6.  Select **Actions** tab, in the **Actions** field group, select the
-    first **(Preview) Sign xml document** action.
+    first occurrence of **(Preview) Sign xml document** action.
 
 7.  In the **Parameters** field group, select **Certificate name**
     parameter.
@@ -203,7 +203,7 @@ add-on](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/art
 8.  In the **Value** field, enter the name of certificate associated to
     your Key vault parameter.
 
-9.  in the **Actions** field group, select the second **(Preview) Sign
+9.  in the **Actions** field group, select the second occurrence of **(Preview) Sign
     xml document** action.
 
 10. In the **Parameters** field group, select **Certificate name**
