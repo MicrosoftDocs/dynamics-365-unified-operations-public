@@ -75,7 +75,7 @@ and create a number sequence. This number sequence must be continuous and five
 characters long, and it must be alphanumeric (that is, it must consist only of
 lowercase letters a–z, uppercase letters A–Z, and numbers 0–9).
 
-![Set up number sequence for Quarterly VAT Communication (LIPE) report](.media/num-seq.png)
+![Set up number sequence for Quarterly VAT Communication (LIPE) report](./media/num-seq.png)
 
 Find more information about how to set up number sequences in [Set up number sequences](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-number-sequences) section.
 
@@ -112,7 +112,7 @@ For more information, see [Download ER configurations from the Global repository
     Communication** option, enter a name and description for the new format, and
     then select **Create configuration**.
 
-![Derive ER format to create the format for your company](.media/derive-er-format.png)
+![Derive ER format to create the format for your company](./media/derive-er-format.png)
 
 >   The new format includes all the fields and mapping from the original. In the
 >   new format, you can make changes to meet your company's requirements.
@@ -123,7 +123,7 @@ For more information, see [Download ER configurations from the Global repository
     a format structure (XML scheme), and the right side shows a data model
     (data).
 
-    For more information about ER, see [Electronic reporting (ER) overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting?toc=/dynamics365/finance/toc.json))
+    For more information about ER, see [Electronic reporting (ER) overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting?toc=/dynamics365/finance/toc.json)
 
 >   Values for the following tags of the report are collected from tax
 >   transactions that are posted in the system. The values consider the specific
@@ -142,7 +142,7 @@ For more information, see [Download ER configurations from the Global repository
     **Mapping** tab, expand **Model** \> **AccountingData** \> **MonthlyData**,
     select the **ActiveVATOperations** node, and then select **Edit**.
 
-![Edit formula for active VAT operations](.media/edit-formula-active-vat-operations.png)
+![Edit formula for active VAT operations](./media/edit-formula-active-vat-operations.png)
 
 7.  In the **'Calculated field' data source properties** dialog box, select
     **Edit formula**.
@@ -153,7 +153,7 @@ For more information, see [Download ER configurations from the Global repository
     the **TaxDirection_Type** data source on the left side of the **Formula
     designer** page.
 
-![Add your company's tax codes in formula designer](.media/formula-designer.png)
+![Add your company's tax codes in formula designer](./media/formula-designer.png)
 
 >   When the report is generated, the system will use the conditions that are
 >   defined for the **ActiveVATOperations** node to calculate values for the
@@ -189,13 +189,13 @@ For more information, see [Download ER configurations from the Global repository
 15.  Enter a name, select the number sequence that you created earlier, and then
     select **OK** to create the number sequence.
 
-![Specify a name for your number sequence in ER format](.media/num0seq-name.png)
+![Specify a name for your number sequence in ER format](./media/num0seq-name.png)
 
 16.  On the **Format designer** page, select **File** on the left side, and then,
     on the **Mapping** tab, select the **Edit** button (pencil symbol) for the
     **File name** field.
 
-![Edit formula for name of the file with number sequence name](.media/file-name-edit.png)
+![Edit formula for name of the file with number sequence name](./media/file-name-edit.png)
 
 17.  Update **"IT"&model.Frontispiece.FiscalCode&"_LI_00000"** with a formula
     that includes a link to the new number sequence:
@@ -204,7 +204,7 @@ For more information, see [Download ER configurations from the Global repository
     **LIPE_file_num** to the formula, click Add data source button. When you've
     finished, select **Save**.
 
-![Edit formula for name of the file with number sequence name](.media/file-name-formula-designer.png)
+![Edit formula for name of the file with number sequence name](./media/file-name-formula-designer.png)
 
 18.  Save your changes in the ER format, and complete the configuration.
 
@@ -218,7 +218,7 @@ parameters. To add, delete, or update parameters in the report dialog box, on
 the **Format designer** page, on the **Mapping** tab, switch to **Group view**,
 and then select the **Empty containers** element.
 
-![Empty containers](.media/empty-containers.png)
+![Empty containers](./media/empty-containers.png)
 
 The **Empty containers** element includes all the input parameters for the
 report. Before you delete an input parameter, you must unbind it or update the
@@ -230,7 +230,7 @@ To add an input parameter, add it in the corresponding node in the **Empty
 containers** element, select a tag in the format structure tree, and then select
 **Bind**.
 
-![Binding](.media/binding.png)
+![Binding](./media/binding.png)
 
 When you've finished updating the format, save, close, and complete it.
 
@@ -246,7 +246,7 @@ associated with the format that you created and updated for your legal entity.
     the **Format mapping** field, select the **Quarterly VAT Communication**
     format that you created.
 
-![Set up Quarterly VAT Communication format in General ledger parameters](.media/gl-parameters-er-format.png)
+![Set up Quarterly VAT Communication format in General ledger parameters](./media/gl-parameters-er-format.png)
 
 ## Generate a Quarterly VAT communication (LIPE) report
 
