@@ -1,6 +1,6 @@
 ---
 title: Complete tasks in Business process modeler (BPM)
-description: This topic provides information about additional tasks that you can complete in Business process modeler (BPM). For example, you can publish a BPM library, export a methodology, and distribute a BPM library.
+description: This topic provides information about additional tasks that you can complete in Business process modeler (BPM).
 author: AngelMarshall 
 manager: AnnBe
 ms.date: 06/15/2020

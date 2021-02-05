@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration data projects
-description: This topic provides an overview of configuration data projects, configuration data templates, and the process for using them to move company configuration data between instances of your application.
+description: This topic describes configuration data projects and configuration data templates.
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/29/2017

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot the Office integration
-description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
+description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: ChrisGarty
 manager: AnnBe
 ms.date: 04/28/2020

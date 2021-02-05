@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial dimension configuration
-description: This topic describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
+description: This topic describes the Financial dimension configuration for integrating applications page.
 author: aprilolson
 manager: AnnBe
 ms.date: 12/01/2017

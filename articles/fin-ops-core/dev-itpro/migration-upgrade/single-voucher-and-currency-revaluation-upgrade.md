@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade single-voucher journals and currency revaluations
-description: Some organizations enter journals that contain a single voucher that has more than one customer or vendor, and they also run the Accounts receivable or Accounts payable foreign currency revaluation process. This topic describes the steps that these organizations should follow when they upgrade to Microsoft Dynamics 365 for Operations version 1611.
+description: This topic describes how to upgrade single-voucher journals and currency revaluations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017

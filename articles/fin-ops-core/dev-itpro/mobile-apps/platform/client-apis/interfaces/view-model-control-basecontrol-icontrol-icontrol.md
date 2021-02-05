@@ -2,7 +2,7 @@
 # required metadata
 
 title: Control type
-description: Control interface with base methods and attributes for all controls. This represents the runtime instance of a control. Modifying the properties are immediately reflected in the UI.
+description: Control interface with base methods and attributes for all controls. This represents the runtime instance of a control.
 author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
