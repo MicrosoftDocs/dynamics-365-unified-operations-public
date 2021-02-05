@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
-ms.dyn365.ops.version: Platform update 36
+ms.dyn365.ops.version: Human Resources
 ---
 
 # Gender
