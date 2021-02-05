@@ -207,3 +207,108 @@ For more information, see [Download ER configurations from the Global repository
 ![Edit formula for name of the file with number sequence name](.media/file-name-formula-designer.png)
 
 18.  Save your changes in the ER format, and complete the configuration.
+
+### Update input parameters
+
+The values of some format tags must be filled in manually. The tags are included
+in the report dialog box so that you can set the values.
+
+By default, the **Quarterly VAT Communication** format includes all possible
+parameters. To add, delete, or update parameters in the report dialog box, on
+the **Format designer** page, on the **Mapping** tab, switch to **Group view**,
+and then select the **Empty containers** element.
+
+![Empty containers](.media/empty-containers.png)
+
+The **Empty containers** element includes all the input parameters for the
+report. Before you delete an input parameter, you must unbind it or update the
+mapping for the corresponding field. Expand the format structure tree on the
+left side of the **Format designer** page, find the corresponding field, and
+delete or update the binding.
+
+To add an input parameter, add it in the corresponding node in the **Empty
+containers** element, select a tag in the format structure tree, and then select
+**Bind**.
+
+![Binding](.media/binding.png)
+
+When you've finished updating the format, save, close, and complete it.
+
+### Set up General ledger parameters
+
+A new menu item for the **Quarterly VAT communication (LIPE)** report must be
+associated with the format that you created and updated for your legal entity.
+
+1.  Go to **Tax** \> **Setup** \> **Parameters** \> **General ledger
+    parameters**.
+
+2.  On the **Sales tax** tab, on the **Quarterly VAT communication** FastTab, in
+    the **Format mapping** field, select the **Quarterly VAT Communication**
+    format that you created.
+
+![Set up Quarterly VAT Communication format in General ledger parameters](.media/gl-parameters-er-format.png)
+
+## Generate a Quarterly VAT communication (LIPE) report
+
+1.  Go to **Tax** \> **Declarations** \> **Sales tax** \> **Quarterly VAT
+    communication**.
+
+2.  In the **Electronic report parameters** dialog box, set the parameters that
+    are described in the following table.
+
+| Field                    | Description                                                                                                                                                                                                                                                                                                                                       | Example value    |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| Anno                     | Enter the year to generate the report for.                                                                                                                                                                                                                                                                                                        | 2018             |
+| Periodo di liquidazione  | Select the sales tax settlement period to generate the report for.                                                                                                                                                                                                                                                                                | MON              |
+| Trimestre                | Select the quarter to generate the report for.                                                                                                                                                                                                                                                                                                    | IV               |
+| Mese o Trimestre         | Select one of the following options:                                                                                                                                                                                                                                                                                                              | Month            |
+| CodiceFiscaleDichiarante | Enter the fiscal code of the declarant. The fiscal code is a 16-character alphanumeric value. If this field isn't applicable to your company, leave it blank. If you enter a value in this field, you must also select a value in the **CodiceCarica** field.                                                                                     | 1234567891234567 |
+| CodiceCarica             | If you entered a value in the **CodiceFiscaleDichiarante** field, select the position code that corresponds to that fiscal code.                                                                                                                                                                                                                  | 1                |
+| PIVAControllante         | Enter the VAT registration number of the company or authority that performs controls in the event of group payment or settlement. The VAT registration number is an 11-character alphanumeric value. If this field isn't applicable to your company, leave it blank. (Law reference: last clause of article 73)                                   | 12345678912      |
+| UltimoMese               | Enter one of the following values to specify the last month of control in the event of an interruption of group payment: **1**, **2**, **3**, **4**, **5**, **6**, **7**, **8**, **9**, **10**, **11**, **13**, or **99**. If this field isn't applicable to your company, select **Non applicabile**. (Law reference: last clause of article 73) | 1                |
+| LiquidazioneGruppo       | If the communication is related to an interruption of group payment, enter **1**. If it isn't related to an interruption of group payment, enter **0**. If this field isn't applicable to your company, select **Non applicabile**. (Law reference: last clause of article 73)                                                                    | 1                |
+| CFDichiarante            | Enter the fiscal code of the declarant that undertakes the communication. The fiscal code is a 16-character alphanumeric value. If this field isn't applicable to your company, leave it blank.                                                                                                                                                   | 1234567891234567 |
+| CodiceCaricaDichiarante  | Enter the position code of the declaring subject. The position code is a numeric value. If this field isn't applicable to your company, leave it blank.                                                                                                                                                                                           | 1                |
+| CodiceFiscaleSocieta     | Enter the tax code of the declarant company. The tax code is an 11-character alphanumeric value. Although it's usually the same as the VAT number, it can differ in some cases. If this field isn't applicable to your company, leave it blank.                                                                                                   | 12345678901      |
+| FirmaDichiarazione       | If the communication is signed by the taxpayer, select **0**. If it’s signed by the person who has the legal or contractual representative power, select **1**.                                                                                                                                                                                   | 0                |
+| CFIntermediario          | Enter the fiscal code of the intermediary that is in charge of transmission. The fiscal code is a 16-character alphanumeric value. If this field isn't applicable to your company, leave it blank. If you enter a value in this field, you must also enter values in the **DataImpegno** and **FirmaIntermediario** fields.                       | 1234567891234567 |
+| ImpegnoPresentazione     | If the communication is prepared by the contributor, select **1**. If it's prepared by the sender, select **2**. If this field isn't applicable to your company, select **Not applicable**.                                                                                                                                                       | 1                |
+| DataImpegno              | If you entered a value in the **CFIntermediario** field, enter the corresponding date in the format ddMMyyyy.                                                                                                                                                                                                                                     | 31012019         |
+| FirmaIntermediario       | If you entered a value in the **CFIntermediario** field, enter **1** if the intermediary's signature is present. If it isn't present, enter **0**.                                                                                                                                                                                                | 0                |
+| FlagConferma             | If you intend to transmit a communication even if it doesn't pass any compliance check, select **1**. If you don't intend to transmit a communication in this situation, select **0**.                                                                                                                                                            | 0                |
+
+-   **Quarter** – Generate an XML file that contains one **Modulo** block that
+    is related to the selected quarter.
+
+-   **Month** – Generate an XML file that contains three **Modulo** blocks, each
+    of which is related to one month of the selected quarter.
+
+3.  For the parameters that are described in the following table, if you
+    selected **Month** in the **Mese o Trimestre** field in the previous step,
+    enter values for **Mese1**, **Mese2**, and **Mese3**, which correspond to
+    the months of the selected quarter. If you selected **Quarter** in the
+    **Mese o Trimestre** field, enter values for **Trimestre**, which
+    corresponds to the selected quarter.
+
+| Field                                                  | Description                                                                                                                                                       | Example value |
+|--------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| Subfornitura                                           | If the contributor used the provided benefits, select **1**. If the contributor didn't use them, select **0**. (Law reference: article 74, clause 5)              | 0             |
+| EventiEccezionali                                      | This field is reserved for subjects that used VAT fiscal benefits during the reference period. The possible values are **1** and **9**.                           | 1             |
+| VersamentiAutoUE                                       | Enter the total tax deposit for the first internal vehicle transfer. Enter the value in numeric format, and use a comma (,) as the decimal separator.             | 10000,98      |
+| CreditiImposta                                         | Enter the total specific tax credits that were used during the reference period. Enter the value in numeric format, and use a comma (,) as the decimal separator. | 10000,98      |
+| InteressiDovuti                                        | Enter the total interest for the quarterly payment. Enter the value in numeric format, and use a comma (,) as the decimal separator.                              | 10000,98      |
+| Acconto                                                | Enter the total down payment, even if it wasn't actually deposited. Enter the value in numeric format, and use a comma (,) as the decimal separator.              | 10000,98      |
+| Metodo                                                 | Select the code for the method that is used to determine the down payment:                                                                                        | 1             |
+| Operazioni straordinarie                               | For cases that involve extraordinary operations, enter **1**. Otherwise, enter **0**.                                                                             | 0             |
+| TotaleOperazioniPassive includes non-deductible amount | Select this check box if the taxable amount in the **TotaleOperazioniPassive** field includes a non-deductible amount.                                            | Selected      |
+
+-   **1** – Historical.
+
+-   **2** – Forecast.
+
+-   **3** – Analytical – effective.
+
+-   **4** – Entities that operate in sectors such as telecommunications, water
+    supply, electricity, waste collection, and disposal sectors.
+
+4.  Select **OK** to generate the report.
