@@ -155,7 +155,7 @@
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
         - name: Standard saved views for Supply Chain Management
-          href: get-started/saved-views-scm.md
+          href: get-started/scm-saved-views-scm.md
         - name: Grid capabilities
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
