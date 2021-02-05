@@ -4,7 +4,7 @@
 title: Leave and absence management
 description: This topic provides an overview of the Leave and absence management module. 
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 

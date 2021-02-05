@@ -4,7 +4,7 @@
 title: Configure company information in Attract
 description: This topic explains how to configure company information and branding for Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 

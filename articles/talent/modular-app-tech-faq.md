@@ -4,7 +4,7 @@
 title: Provision Onboard
 description: This topic provides information about how to provision the standalone Dynamics 365 Talent - Onboard app.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/16/2019
 ms.topic: article
 ms.prod: 
