@@ -4,7 +4,7 @@
 title: Close a job in Attract
 description: This topic explains how to close a job in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/10/2019
 ms.topic: article
 ms.prod: 

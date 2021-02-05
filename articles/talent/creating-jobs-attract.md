@@ -4,7 +4,7 @@
 title: Create a job in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
 author: hasrivas
-manager: AnnBe
+manager: tfehr
 ms.date: 07/18/2019
 ms.topic: article
 ms.prod: 

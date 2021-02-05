@@ -4,7 +4,7 @@
 title: Set user permissions in Attract
 description: This topic provides information about role security in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 

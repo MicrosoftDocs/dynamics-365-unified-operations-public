@@ -3,9 +3,9 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (September 03, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for September 3, 2020.
-author: Andreabichsel
+author: andreabichsel
 manager: tfehr
-ms.date: 9/03/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent

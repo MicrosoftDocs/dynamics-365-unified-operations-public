@@ -4,7 +4,7 @@
 title: Leave and absence concepts
 description: This topic describes leave and absence concepts, and how time-off balances are determined. 
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 01/03/2019
 ms.topic: article
 ms.prod: 
