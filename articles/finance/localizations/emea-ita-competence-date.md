@@ -5,7 +5,7 @@ title: Competence date for transactions and the Fiscal journal report
 description: This topic provides information about the competence date and explains how to turn on the functionality for transactions in Italy
 author: anasyash
 manager: tfehr
-ms.date: 11/19/2020
+ms.date: 02/05/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -97,13 +97,16 @@ The company's fiscal year is from January 1 through December 31. The balance she
 
 ## Fiscal journal page numbering improvements
 
-In 10.0.18 monthly update, you can enable the feature **(Italy) Fiscal journal page numbering improvements** in the **Feature management** workspace.
+You can enable the feature **(Italy) Fiscal journal page numbering improvements** in the **Feature management** workspace.
 
-This feature improves the calculation logic for page numbering in the Italian fiscal journal report. To update and store the page numbers, either print the report to screen with the feature "Report PDF Viewer" enabled or print the report to file in PDF format. Page numbers are calculated using the new algorithm when the fiscal journal report is printed in PDF format. Page numbers are stored so that pages for the next month’s report start sequentially using the next number after the stored one. This feature also enables an algorithm for grouping lines with all the same values in columns into one line, so that there are no unnecessary pages in the report printout.
+This feature improves the calculation logic for page numbering in the Italian fiscal journal report. To update and store the page numbers, print the report to screen with the **Report PDF Viewer** feature enabled, or print the report to file in PDF format. Page numbers are calculated using the new algorithm when the fiscal journal report is printed in PDF format. Page numbers are stored so that pages for the next month’s report start sequentially using the next number after the stored one. This feature also enables an algorithm for grouping lines with the same column values into one line, so that only the necessary pages are included in the report printout.
 
-If you need to calculate the number of the documents included in the Fiscal journal, do the following:
-1.	Print report in PDF file format.
-2.	Convert PDF to Excel using any freely available converter software.
-3.	Create Pivot table and select **Docum. No.** field in **Rows**.
- ![Excel Pivot table](media/ExcelPivotTable.png)
-Number of documents is equal to number of lines in the Pivot table.
+If you need to calculate the number of the documents included in the Fiscal journal, complete the following steps.
+
+1.	Print the report in a PDF file format.
+2.	Convert the PDF to Excel using a converter software.
+3.	Create a pivot table and in the **Rows** field, select **Docum. No.**.
+
+    ![Excel Pivot table](media/ExcelPivotTable.png)
+
+The number of documents is equal to number of lines in the pivot table.
