@@ -123,8 +123,6 @@ This section explains how to use the lease adjustment workflow. The lease adjust
 
     On the **Lease adjustments** page, the workflow status is now set to **Approved**. At this point, the lease adjustment is ready to be posted through the adjustment journal entry.
 
-    On the **Lease adjustments** page, the workflow status is now set to **Approved**. At this point, the lease adjustment is ready to be posted to the adjustment journal entry.
-
 8.	To continue to process the lease adjustment and post the adjustment entry, go to **Lease \> Leases \> Lease adjustments**.
 9.	Select the lease ID of the lease adjustment, and then select **Adjustment wizard**.
 10.	Select **Next** until you reach the last page of the wizard, and then select **Finish**.
