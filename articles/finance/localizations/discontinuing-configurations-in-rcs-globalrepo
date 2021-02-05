@@ -1,0 +1,69 @@
+---
+# required metadata
+
+title: RCS Discontinuing configuration in RCS/Global repository
+description: This topic describes how to discontinue configuration in the RCS Global repository.
+author: JaneA07      
+manager: AnnBe
+ms.date: 02/04/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: ERSolutionTable, ERWorkspace
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+ms.custom: 97423
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: janeaug
+ms.search.validFrom: 2021-02-02
+ms.dyn365.ops.version: AX 10.0.14
+
+---
+# RCS Discontinuing configuration in RCS/Global repository
+
+[!include [banner](../includes/banner.md)]
+
+## Overview:
+This topic describes how to discontinue configuration in the RCS Global repository. A new feature has been added that creates the capability to mark a released configuration as ‘Discontinued’ in the Global repo in RCS that can be used to:
+ - provide upfront notification of when a configuration is planned to be discontinued,
+ - include details about what the replacement configuration would be, and
+ - set a supported until date for specific configurations to inform the user as to when it is planned to be discontinued.
+![image.png](articles/finance/localizations/media/Discontinue_version_1.png)
+
+##Feature capabilities:
+- You can discontinue a configuration version and specify the following discontinuation information; all fields are optional:
+  - Replacement configuration
+  - Replacement configuration version
+  - Free text notes
+  - "Supported until" provides the proposed date up to which the current configuration/version will be supported to. Note that this date is not updated automatically, so if used, will need to be maintained manually.
+- To discontinue the configuration, you need to:
+  - Select whether you want to discontinue a single version or if you want to discontinue all versions with the same settings in one operation slide 'All versions' parameter to 'Yes' 
+  - Slide Discontinue' parameter to 'Yes'.
+  - Click 'Ok' to discontinue the configuration(s). Note Discontinued date will be populated on save, when the discontinue parameter is 'Yes'.
+- You can revert configuration back to Shared or adjust discontinuation info at anytime.
+- You can keep configuration Shared, but specify "Supported until" (and all other discontinuation info) to indicate your plans to discontinue the configuration in future.
+
+**Note:** Discontinuation does not limit any operations with configurations for customers, they still can import, run or derive them, it's just informational fields.
+
+##Discontinuation details form:
+
+![image.png](articles/finance/localizations/media/Discontinue_details_2.png)
+
+##F&O supports displaying this information starting from 10.0.14
+- On Global repo form:
+  - Always shows up to date information.
+  - By default, discontinued configurations are filtered out.
+- On (imported) Configurations form (ERSolutionTable)
+  - For configurations that were already discontinued when there were imported.
+  - For configurations that were discontinued after they were imported - discontinuation info can be synchronized by running "Import configurations updates" job.
+- #485311 is not implemented currently, the lookup will show all configurations.
+
