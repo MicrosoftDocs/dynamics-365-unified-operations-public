@@ -54,6 +54,8 @@ The following illustration shows an example of a new shipping address module on 
 |---------------|--------|-------------|
 | Heading | Heading text and a heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | An optional heading for the shipping address module. |
 | Show address type | **True** or **False** | If this optional property is set to **True**, an address type, such as **Home** or **Business**, will be shown. If no address type is specified, the address will automatically be saved as **Type**=**Other**. |
+| Enable auto-suggestions| **True** or **False** | If this optional property is set to **True**, address suggestions will be provided. The address suggestions are powered by Bing Maps. Please refer to [Store selector](store-selector.md) for more details on how to setup Bing Maps integration for your site. This feature is available in Dynamics 365 Commerce 10.0.15 release|
+|Auto suggestions options| array of values| If auto suggestions are enabled, you can setup additional options such as the Max number of auto-suggestions|
 
 ## Add a shipping address module to a checkout page and set the required properties
 
@@ -76,3 +78,5 @@ A shipping address module can be added only to a checkout module. For more infor
 [Order details module](order-confirmation-module.md)
 
 [Gift card module](add-giftcard.md)
+
+[Store selector](store-selector.md)
