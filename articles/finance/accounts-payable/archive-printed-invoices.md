@@ -2,10 +2,10 @@
 # required metadata
 
 title: Archive printed customer invoices with hash numbers
-description: This topic explains how to configure archiving of printed customer invoices with hash numbers.  
+description: This topic explains how to enable archiving printed customer invoices with hash numbers.  
 author: Ilya Kondratenko
 manager: AnnBe
-ms.date: 01/11/2021
+ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,15 +35,15 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/preview-banner.md)]
 
-In some countries, there is a legal requirement to store culculated hash numbers in the system together with printed outputs of some documents. Hash numbers can be used then for reporting to authirities and during audits.
-This topic explains how to configure archiving of printed customer invoices with hash numbers.
+In some countries, there is a legal requirement to store calculated hash numbers in the system together with printouts of some documents. Hash numbers can be used for reporting to authorities and during audits.
+This topic explains how to configure archiving printed customer invoices with hash numbers.
 
 ## Prerequisites
 
-- In the Feature management workspace, turn on the **Archive printed customer invoices with hash numbers** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- The printable formats of required documents are preliminary configured in Print management.
+- In the **Feature management** workspace, turn on the feature, **Archive printed customer invoices with hash numbers**. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Configure the printable formats of required documents in **Print management**.
 
-The functionality is applicable to the following documents:
+This functionality is applicable to the following documents:
 
 **Accounts receivable**
 - Customer invoice
@@ -51,21 +51,20 @@ The functionality is applicable to the following documents:
 - Free text invoice
 - Free text credit note
 
-**Project management**
-- Project Invoice
+**Project management and accounting**
+- Project invoice
 - Project credit note
 
-## Configure customers master data
-Complete the following steps to configure customers data in order to activate automatic saving of printed invoices as attachments.
+## Configure customer master data
+Complete the following steps to configure customer data and activate automatic saving of printed invoices as attachments.
 
-1. Go to **Accounts receivable** > **All customers** 
-2. Select a specific customer
-3. On the **Invoice and delivery** FastTab > in the **E-INVOCE** section, select **Yes** in the **eInvoice attachment** field.
+1. Go to **Accounts receivable** > **All customers**. 
+2. Select a customer, and on the **Invoice and delivery** FastTab, in the **E-INVOCE** section, in the **eInvoice attachment** field, select **Yes**.
 
 ## Print invoices
-Post and print any free text, customer, and project invoice or credit note for the customer configured in the previous step.
+Post and print any free text, customer, and project invoice or credit note for the customer configured in the previous procedure.
 
-Open **Attachments** form for the printed invoice. In the **Attachment** FastTab, in **ADDITIONAL DETAILS**, in **Document hash number** field, you can find the stored hash number calculated for the printed invoice.
+Open the **Attachments** pagefor the printed invoice. In the **Attachment** FastTab, in the **Additional details** field group, in **Document hash number** field, find the stored hash number calculated for the printed invoice.
 
 ![Attachment hash number](media/attach-hash-num.jpg)
 
