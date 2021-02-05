@@ -74,11 +74,11 @@ The following features are included in this release. Some of the listed features
 
 - [Purchase requisition support for Planning Optimization](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - For more information, see [Purchase requisitions](../master-planning/planning-optimization/purchase-requisitions.md).
 
-- [Saved views for inventory and logistics](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)
+- [Saved views for inventory and logistics](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
 
-- [Saved views for planned orders](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)
+- [Saved views for planned orders](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
 
-- [Saved views for production control](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)
+- [Saved views for production control](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
 
 - [Schedule warehouse work creation](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation) <br> - For more information, see [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md).
 
