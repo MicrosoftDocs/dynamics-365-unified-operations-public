@@ -676,6 +676,16 @@ Before you can generate a SAF VAT invoices file, you must complete the following
 
 Steps one to four of the setup resembles the additional setup that you completed for the **SAF VAT sales and purchase register** excepting **Configure the ER model, and format for the report.**
 
+Starting from **128.60.76** version of the **VAT Invoices (PL)** ER it is necessary to enable improved ER configurations for JPK_FA report:
+
+1. Open **Workspaces** > **Feature management** and enable **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature. 
+
+Note: when you enable or disable **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature, ER format setup in **SAF VAT invoices** field in **General Ledger parameters** will be cleaned up. Make sure you fill in **SAF VAT invoices** field in **General Ledger parameters** before the next run of the **SAF VAT invoices** report. When you enable  **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature you must import and use 128.60.76 or higher version of the **VAT Invoices (PL)** ER format.
+
+2. Import in Electronic reporting **128.60.76** or higher versions **VAT Invoices (PL)** ER format and **128.255** or higher versions of **Standard Audit File model mapping**.
+
+3. Open **General ledger** > **Ledger setup** > **General ledger parameters** page, go to **Standard Audit File for Tax (SAT-T)** tab and select **VAT Invoices (PL)** ER format in **SAF VAT invoices** field. When **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature is enabled you will see the **VAT Invoices (PL)** ER format in the list only if you previously imported 128.60.76 or higher version from Global repository.
+
 ### Configure the ER model and format for the report
 
 To review or change the configuration for the SAF VAT sales and purchase register, on the **Reporting configurations** page, in the list of models, select the model, **Standard Audit File (SAF-T)**, and then select **Designer** to review or change the model. To review or change the format for the SAF VAT invoices, on the **Reporting configurations** page, under **Standard Audit File (SAF-T)**, select **VAT invoices (PL)**, and then select **Designer**. For more information about Electronic reporting, see the following topics:
