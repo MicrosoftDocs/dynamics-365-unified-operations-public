@@ -173,8 +173,8 @@ Do the following:
 1. The **Work order journals** page opens. Here, you can register the time you spent on the work order.
 1. On the **Hours** FastTab, select **Add line** from the toolbar. Then make the following setting for the new line:
     - **Hours** - *4*
-1. On the Action Pane, select **Post journals**. <!-- KFM: I get an error "Posting - Journal Journal: PJJ-00399 Voucher: Voucher number must be filled in". Blocked. -->
-1. Go to **Invoicing** \> **New invoice proposal**. <!-- KFM: I can't find this. -->
-1. Add following information to the record: <!-- KFM: It doesn't seem like we are adding information here. -->
-    - Select the line that you want to invoice.
-    - Select **OK**.
+1. On the Action Pane, select **Post journals**.
+1. Close the **Work order journals** page to return to the work order.
+1. On the Action Pane, open the **Invoicing** tab and select **New invoice proposal**.
+1. The **Create invoice proposal** dialog box opens. In the **Project transactions** section, mark the **Select** check box for each line  you want to invoice.
+1. Select **OK** to close the dialog box and view the new invoice proposal.
