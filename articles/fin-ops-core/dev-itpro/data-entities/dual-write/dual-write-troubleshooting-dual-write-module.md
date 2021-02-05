@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot issues with the dual-write module in Finance and Operations apps
+title: Troubleshoot dual-write issues in Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues with the Dual-write module in Finance and Operations apps.
 author: RamaKrishnamoorthy 
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-03-16
 
 ---
 
-# Troubleshoot issues with the dual-write module in Finance and Operations apps
+# Troubleshoot dual-write issues in Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
 

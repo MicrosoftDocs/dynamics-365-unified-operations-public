@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add custom controls to POS views that aren't screen layout designer-based
+title: Add custom controls to non-screen designer-based POS views
 description: This topic demonstrates how to add a custom control to a non-screen layout designer-based view.
 author: mugunthanm
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ---
 
 
-# Add custom controls to POS views that aren't screen layout designer-based
+# Add custom controls to non-screen designer-based POS views
 
 [!include [banner](../../includes/banner.md)]
 

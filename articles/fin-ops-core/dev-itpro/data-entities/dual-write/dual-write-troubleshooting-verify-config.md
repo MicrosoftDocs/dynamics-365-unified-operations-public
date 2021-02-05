@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Verify that dual-write is configured in Finance and Operations apps and Dataverse
+title: Verify dual-write configuration in Finance and Operations apps and Dataverse
 description: This topic explains how you can determine whether dual-write is configured in Finance and Operations apps and in Dataverse.
 author: RamaKrishnamoorthy 
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-03-16
 
 ---
 
-# Verify that dual-write is configured in Finance and Operations apps and Dataverse
+# Verify dual-write configuration in Finance and Operations apps and Dataverse
 
 [!include [banner](../../includes/banner.md)]
 

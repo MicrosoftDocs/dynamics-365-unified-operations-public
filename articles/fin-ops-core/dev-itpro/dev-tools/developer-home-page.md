@@ -162,7 +162,7 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 - [Testing and validations](../perf-test/testing-validation.md)
 - [Test projects in Visual Studio](../perf-test/testing-support.md)
-- [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
+- [Deploy and use a continuous build and test automation environment](../perf-test/continuous-build-test-automation.md)
 - [Task recorder resources](../user-interface/task-recorder.md)
 
 ## Office integration

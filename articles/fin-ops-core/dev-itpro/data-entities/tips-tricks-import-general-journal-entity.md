@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Best practices for importing vouchers by using the General journal entity
+title: Importing vouchers by using the General journal entity
 description: This topic provides tips for importing data into the General journal by using the General journal entity.  
 author: rcarlson
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Best practices for importing vouchers by using the General journal entity
+# Importing vouchers by using the General journal entity
 
 [!include [banner](../includes/banner.md)]
 
