@@ -134,7 +134,7 @@ add-on](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/art
 5.  In the **Connected application** field, select the application to
     where you want to deploy.
 
-6.  On **Table name**, verify if Fiscal document header is selected.
+6.  On **Table name** field, verify if Fiscal document header is selected.
 
 7.  Select **Response types** and select **New**.
 
@@ -278,7 +278,7 @@ add-on](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/art
 5.  In the **Connected application** field, select the application to
     where you want to deploy.
 
-6.  On **Table name**, verify if Fiscal document header is selected.
+6.  On **Table name** field, verify if Fiscal document header is selected.
 
 7.  Select **Response types** and select **New**.
 
