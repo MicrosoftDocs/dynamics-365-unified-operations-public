@@ -5,7 +5,7 @@ title: Customer electronic invoices
 description: This topic provides information about the management of customer electronic invoices for Italy.
 author: v-oloski
 manager: 
-ms.date: 10/15/2020
+ms.date: 02/05/2021
 ms.topic: article
 ms.: 
 ms.service: dynamics-ax-applications
@@ -68,16 +68,17 @@ Select the configurations that are used to create electronic invoice XML files f
 
 ### <a id="electronicinvoicecurrency"></a>Electronic invoice currency setup
 
-To report invoices in EUR in xml file it is necessary to set option **Print amount in currency representing the euro** to **Yes** in **Accounts receivable** \> **Setup** \> **Form setup** \> **General** (FastTab) and/or **Project management and accounting** \> **Setup** \> **Form setup** \> **General** (FastTab) . 
+To report invoices in the EUR currency in an xml file, go to select **Yes** in the **Print amount in currency representing the euro** field (**Accounts receivable** \> **Setup** \> **Form setup** \> **General** (FastTab) and/or **Project management and accounting** \> **Setup** \> **Form setup** \> **General** FastTab). 
 
- > [!NOTE] If this option is set to **No** then a related XML file will be generated in original invoice currency. 
+> [!NOTE] 
+> If **Print amount in currency representing the euro** field is set to **No**, a related xml file will be generated in the original invoice currency. 
 
-To use this functionality you need to import the following or a higher version of the ER configurations from LCS shared asset library:
-- Invoice model.version.231
-- Invoice model mapping.version.231.164
-- Sales invoice (IT).version.231.91
-- Project invoice (IT).version.231.90
+To use this functionality, import the following or a higher version of the ER configurations from LCS shared asset library:
 
+  - Invoice model.version.231
+  - Invoice model mapping.version.231.164
+  - Sales invoice (IT).version.231.91
+  - Project invoice (IT).version.231.90
 
 ### <a id="einvoicesparameters"></a>Electronic invoice parameters
 
