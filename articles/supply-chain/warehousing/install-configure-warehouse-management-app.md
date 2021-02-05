@@ -59,10 +59,10 @@ Before you can use the app, a related feature must be turned on in your system. 
 
 Use one of the following links to download the app:
 
-- **Windows (UWP):** [App Center preview program - Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
-    - Installation instructions from App Center: [Install a Build from App Center - Visual Studio App Center | Microsoft Docs](https://docs.microsoft.com/en-us/appcenter/distribution/installation)
-- **Android:** [App Center preview program - Android](https://go.microsoft.com/fwlink/?linkid=2154613)
-    - Installation instructions from App Center: [Testing Android Apps - Visual Studio App Center | Microsoft Docs](https://docs.microsoft.com/en-us/appcenter/distribution/testers/testing-android)
+- **Windows (UWP):** [App Center preview program - Windows](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    (Because this is a preview app, a few extra steps are required to install it. For details, see [Install a Build from App Center](https://docs.microsoft.com/appcenter/distribution/installation).)
+- **Android:** [App Center preview program - Android](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    (Because this is a preview app, a few extra steps are required to install it. For details, see [Testing Android Apps](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).)
 
 For smaller deployments, you might want to install the app from the relevant store on each device and then manually configure the connection to the environments that you're using. However, you can also automate app deployment and/or configuration. You might find this approach convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
