@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata 
  
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd, HcmPersonnelManagementWorkspace  
-audience: Application User 
+audience: Application User
 # ms.devlang:  
 ms.reviewer: anbichse
 ms.search.scope: Human Resources

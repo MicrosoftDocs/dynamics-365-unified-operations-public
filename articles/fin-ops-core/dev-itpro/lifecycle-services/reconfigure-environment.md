@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reconfigure environments to take a new platform or topology
-description: This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
+description: This topic describes how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
 author: PeterRFriis
 manager: AnnBe
 ms.date: 12/05/2017

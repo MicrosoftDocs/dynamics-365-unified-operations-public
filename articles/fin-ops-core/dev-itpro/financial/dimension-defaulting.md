@@ -2,7 +2,7 @@
 # required metadata
 
 title: Default financial dimensions
-description: This topic describes default financial dimensions. It explains where the dimensions originate, the APIs that are used to merge them, and how they are used to create ledger dimensions.
+description: This topic describes where the financial dimensions originate, the APIs that are used to merge them, and how they are used to create ledger dimensions.
 author: jasonsto
 manager: annbe
 ms.date: 01/09/2020
@@ -165,13 +165,22 @@ The following illustration shows the header dimensions after a user enters a val
 
 ![Default dimension modified by a user on a document header (purchase order)](./media/DefaultDimensions3-7DocumentHeader.png "Default dimension modified by a user on a document header (purchase order)")
 
-The following illustration shows the SQL query for the default dimension reference on the header record.
+The following code shows the SQL query for the default dimension reference on the header record.
 
-![DefaultDimensions3-8SQLModifiedDocHearder.png](./media/DefaultDimensions3-8SQLModifiedDocHearder.png "SQL query")
+```sql
+SELECT RecID, PURCHID, DEFAULTDIMENSION from PurchTable
+WHERE PURCHID = '00000125' and DATAAREAID = 'usmf'
+
+SELECT DA.NAME, DISPLAYVALUE, V.DIMENSIONATTRIBUTEVALUESET,
+V.SETITEMRECID
+FROM DIMENSIONATTRIBUTEVALUESETITEMVIEW V
+JOIN DIMENSIONATTRIBUTE DA ON DA.RECID = V.DIMENSIONATTRIBUTE
+WHERE V.DIMENSIONATTRIBUTEVALUESET = 52565466755
+```
 
 The following illustration shows the default dimension that is created.
 
-![DefaultDimensions3-8SQLResultModifiedDocHearder.png](./media/DefaultDimensions3-8SQLResultModifiedDocHearder.png "Output showing updated default dimensions on purchase order record")
+![Output showing updated default dimensions on purchase order record](media/DefaultDimensions3-8SQLResultModifiedDocHearder.png)
 
 When the user switches to the **Line** view to enter lines, default dimensions are copied from the purchase order header, as the following illustration shows.
 
@@ -201,9 +210,17 @@ Now consider the item that the user will enter on the purchase order line. The f
 
 ![Default dimensions on an item](./media/DefaultDimension4-3Item.png "Default dimensions on an item")
 
-The following illustration shows the SQL query for those default dimensions in the database.
+The following code shows the SQL query for those default dimensions in the database.
 
-![SQL query](./media/DefaultDimension4-4SQLItem.png "SQL query")
+```sql
+SELECT ItemId, NAMEALIAS, DefaultDimension from InventTable where ItemId = '1000' AND DATAAREAID = 'USMF'
+
+SELECT DA.NAME, DISPLAYVALUE, V.DIMENSIONATTRIBUTEVALUESET,
+V.SETITEMRECID
+FROM DIMENSIONATTRIBUTEVALUESETITEMVIEW V
+JOIN DIMENSIONATTRIBUTE DA ON DA.RECID = V.DIMENSIONATTRIBUTE
+WHERE V.DIMENSIONATTRIBUTEVALUESET = 68719490324
+```
 
 The following illustration shows the results of the query.
 
@@ -213,9 +230,17 @@ Next, the user enters the item on the purchase order line. The following illustr
 
 ![Merged default dimension values on a document line (purchase order line)](./media/DefaultDimension4-5PurchLineResult.png)
 
-The following illustrations show the SQL query and the resulting default dimensions from the item record on the purchase order line.
+The following code and illustration show the SQL query and the resulting default dimensions from the item record on the purchase order line.
 
-[![SQL query](./media/DefaultDimension4-6SQLOnItem.png)](./media/DefaultDimension4-6SQLOnItem.png)
+```sql
+SELECT PURCHID, LINENUMBER, ITEMID, DEFAULTDIMENSION from PURCHLINE where PURCHID = '00000100' AND DATAAREAID = 'USMF'
+
+SELECT DA.NAME, DISPLAYVALUE, V.DIMENSIONATTRIBUTEVALUESET,
+V.SETITEMRECID
+FROM DIMENSIONATTRIBUTEVALUESETITEMVIEW V
+JOIN DIMENSIONATTRIBUTE DA ON DA.RECID = V.DIMENSIONATTRIBUTE
+WHERE V.DIMENSIONATTRIBUTEVALUESET = 68719490325
+```
 
 [![Output showing default dimensions from an item record on an document line (purchase order line)](./media/DefaultDimension4-6SQLResultOnItem.png)](./media/DefaultDimension4-6SQLResultOnItem.png)
 

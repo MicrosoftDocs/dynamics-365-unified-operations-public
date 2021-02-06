@@ -2,7 +2,7 @@
 # required metadata
 
 title: Out-of-box security reports
-description: This topic describes the set of rich security reports that help you understand the set of security roles running in your environment and the set of users assigned to each role.
+description: This topic describes the security reports that help you understand the set of security roles running in your environment and the users assigned to each role.
 author:  peakerbl
 manager: AnnBe
 ms.date: 08/14/2019

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add links to your organization's legal terms and privacy statement
-description: This topic explains how administrators can add links to their organization's legal terms and privacy statement in the About pane of Microsoft Dynamics 365 Finance, Supply Chain Management, and Commerce.
+description: This topic explains how administrators can add links to their organization's legal terms and privacy statement in the About pane.
 author: aneesmsft
 manager: AnnBe
 ms.date: 10/02/2017

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Support for Field Service solutions and Project Service Automation solutions
+title: Support for Field Service and Project Service Automation solutions
 description: This topic provides information about the support for Field Service solutions and Project Service Automation solutions.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Support for Field Service solutions and Project Service Automation solutions
+# Support for Field Service and Project Service Automation solutions
 
 [!include [banner](../../includes/banner.md)]
 

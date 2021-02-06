@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customize the Open in Microsoft Office menu
-description: Most pages include an Open in Microsoft Office menu. This topic provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
+description: This topic provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
 author: ChrisGarty
 manager: AnnBe
 ms.date: 06/20/2017

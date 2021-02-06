@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot issues during initial setup
-description: This topic provides troubleshooting information that can help you fix issues that might occur during the initial setup of dual-write integration between Finance and Operations apps and Dataverse.
+description: This topic provides information that can help you fix issues that occur during the initial setup of dual-write integration.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 03/16/2020

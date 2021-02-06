@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business process modeler (BPM) in Lifecycle Services (LCS)
-description: This article provides information about Business process modeler in Microsoft Dynamics Lifecycle Services (LCS). You can use this tool to create, view, and modify business process libraries and flowcharts for Microsoft Dynamics AX. The article also lists the prerequisites and explains how to start using Business process modeler.
+description: This article provides information about Business process modeler in Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
 ms.date: 09/25/2017

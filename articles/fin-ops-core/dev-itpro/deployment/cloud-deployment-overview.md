@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cloud deployment overview
-description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
+description: This topic describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 01/12/2021

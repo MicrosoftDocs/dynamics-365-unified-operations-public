@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate default dimensions controls to Dimension Entry controls
-description: This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
+description: This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.
 author: robinarh
 manager: AnnBe
 ms.date: 10/26/2018
@@ -23,7 +23,7 @@ ms.custom: 25531
 ms.assetid: 05e85771-44e1-4b0a-8dd2-a878be5a3309
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ghenriks
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -70,7 +70,7 @@ This topic describes the steps necessary to migrate default dimensions controls 
 |-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this TODO based on the migration guidance. \*/DimensionEntryControlHeader.reactivate(); | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. |
 
-## Data field ProjId
+## Data field ProjId (PurchTable)
 
 (**Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; ProjId &gt; Methods**)
 
@@ -117,7 +117,7 @@ This topic describes the steps necessary to migrate default dimensions controls 
 |--------|--------------------------------------------------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this TODO based on the migration guidance. \*/DimensionEntryControlLine.reactivate(); | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. |
 
-## Data field ProjId
+## Data field ProjId (PurchLine)
 
 (**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; ProjId &gt; Methods**)
 

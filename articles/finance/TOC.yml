@@ -866,10 +866,14 @@
           href: asset-leasing/record-rou-asset-depreciation.md
         - name: Reverse posted lease transactions 
           href: asset-leasing/reverse-posted-lease-trans.md
+        - name: Asset leasing conventions
+          href: asset-leasing/asset-leasing-convention.md
         - name: Adjust a lease 
           href: asset-leasing/adjust-lease.md
         - name: Impair a right-of-use asset
           href: asset-leasing/impair-rou-asset.md
+        - name: Propose a lease termination  
+          href: asset-leasing/lease-termination.md
         - name: Associate a lease with a fixed asset          
           href: asset-leasing/associate-lease-with-fixed-asset.md
         - name: Record leases in foreign currencies

@@ -4,7 +4,7 @@
 title: Get support for Microsoft Dynamics 365 Talent
 description: This topic explains how to get help with Microsoft Dynamics 365 Talent.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 05/07/2019
 ms.topic: article
 ms.prod: 

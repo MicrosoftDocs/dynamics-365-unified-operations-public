@@ -2,7 +2,7 @@
 # required metadata
 
 title: InputControl type
-description: Input control interface with methods and attributes for all input controls. Input controls are typically used on task pages for collecting user input, for example, for a new control.
+description: Input control interface with methods and attributes for all input controls.
 author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017

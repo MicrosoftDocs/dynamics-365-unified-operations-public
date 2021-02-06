@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshooting guide for single-user or multi-user testing with the Performance SDK
+title: Troubleshooting guide for testing with the Performance SDK
 description: This topic provides troubleshooting information for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
 author: hasaid
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Troubleshooting guide for single-user or multi-user testing with the Performance SDK
+# Troubleshooting guide for testing with the Performance SDK
 
 [!include [banner](../includes/banner.md)]
 

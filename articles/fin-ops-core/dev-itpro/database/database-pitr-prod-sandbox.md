@@ -2,7 +2,7 @@
 # required metadata
 
 title: Point-in-time restore of the production database to a sandbox environment
-description: This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time restore (PITR) of the production database to a sandbox user acceptance testing (UAT) environment.
+description: This topic describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 12/15/2020

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Invoice approvals mobile workspace
-description: This topic provides information about the Invoice approvals mobile workspace. This workspace provides a list of invoices that have been assigned to you through the vendor invoice header workflow process. 
+description: This topic provides information about the Invoice approvals mobile workspace.
 author: abruer 
 manager: AnnBe
 ms.date: 12/01/2017

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data task automation
-description: This topic explains how you can use data task automation in Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
+description: This topic explains how you can use data task automation to repeat many types of data tasks and validate the outcome of each task.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/04/2019
