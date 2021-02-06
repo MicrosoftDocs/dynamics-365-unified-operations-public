@@ -35,8 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.
 
-The SFK and the Natural key
----------------------------
+## The SFK and the Natural key
 
 To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions. When this nesting of data entities occurs, the surrogate foreign key (SFK) and natural key of the dimensions data entity are treated differently. The following table describes the differences.
 
@@ -46,6 +45,7 @@ To support different dimension patterns, a set of framework data entities has be
 | Natural key | public          | The natural key of the dimension entity is exposed as a public string of dimension attribute values. The values are concatenated together but are separated by the account delimiter. The account delimiter is defined per partition. The concatenated string is used as a display value. The phrase “DisplayValue” is appended as a suffix to some fields of an entity, as explained later in this document. |
 
 ## Reads and writes
+
 **Read:** On a read of the outer data entity, the public display value will be retrieved from a computed column by using the dimension entity of the framework. Because the read uses a computed column, it doesn't require any X++ logic for export scenarios. **Write:** On the creation or update of entity instance values, the public display value is resolved to the SFK to match the private field.
 
 ### Examples
@@ -63,6 +63,7 @@ The entity exposes a default dimension field, **DimensionDefaultDisplayValue**. 
 [![Write example](./media/subb.png)](./media/subb.png) **DisplayValue** resolves to **DefaultDimension** at run time.
 
 ## Create an entity by using a wizard
+
 This section describes how to create a data entity by using a wizard. We recommend that you use the wizard. It requires only that you select the SFK field of the dimension. The wizard creates the required data source, fields, and relations that have all the correct settings.
 
 1. Click **File** &gt; **New** &gt; **Project** to create a new project.
@@ -110,7 +111,7 @@ This section describes how to create a data entity by using a wizard. We recomme
 
 13. Override the **persistEntity** method on the data entity, and enter the following X++ code. 
 
-    [![Overriding the persistEntity method](./media/dim11.png)](./media/dim11.png)
+    [![Code for persistEntity](./media/dim11.png)](./media/dim11.png)
 
 14. For testing, see the existing unit test class, **DimensionEntityTest**.
 
@@ -131,21 +132,16 @@ This section describes how to add a dimension data source to a new entity. The n
 
 2.  Create a private field for the dimension SFK. For this entity field, the source field is the **FieldDimensionDefault** SFK field.
 
-    [![dim13fixed](./media/dim13fixed.png)](./media/dim13fixed.png)
+    [![FieldDimensionDefault field](./media/dim13fixed.png)](./media/dim13fixed.png)
 
 3.  Create a public field for the dimension display value, and bind it to the data source that you created in a previous step. The name of the dimension display value field must be the private field name, to which the twelve-character literal “DisplayValue” is appended.
 
-    [![dim14fixed](./media/dim14fixed.png)](./media/dim14fixed.png)
+    [![FieldDimensionDefaultDisplayValue field](./media/dim14fixed.png)](./media/dim14fixed.png)
 
 4.  Add an entity relation. An entity relation will enable OData navigation between entities. The name of the relation should be the name of the private dimension field name, to which “DimensionSet” is appended. The public name for **DimensionSetEntity** is **DimensionSet**. Therefore, the navigation to that entity should have a meaningful name. A good choice is the name of the dimension SFK plus “DimensionSet.”
 
-    [![dim15fixed](./media/dim15fixed.png)](./media/dim15fixed.png)
+    [![New entity relation](./media/dim15fixed.png)](./media/dim15fixed.png)
 
 5.  Override the **persistEntity** method, and enter the following X++ code. 
 
     [![Overriding the persistEntity method](./media/dim16.png)](./media/dim16.png)
-
-
-
-
-
