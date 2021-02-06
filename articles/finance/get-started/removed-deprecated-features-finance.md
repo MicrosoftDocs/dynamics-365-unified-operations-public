@@ -43,7 +43,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.17 release
 
-### Lifecycle services (LCS) repository as storage option for Regulatory configurations and Microsoft provided Electronic reporting configurations
+### Lifecycle services (LCS) repository as storage option for Electronic reporting configurations
 
 |   |  |
 |------------|--------------------|
@@ -51,7 +51,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Dynamics 365 Finance, Supply Chain Management, Project operations products |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 01, 2022, we plan to no longer support LCS repository as a storage option for Electronic reporting (ER) configuration formats. New Microsoft ER configurations will be published for downloading exclusively from Global repository which is accessible from both the Dynamics products & the Regulatory Configuration service. See [Import ER configurations from RCS] (../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) to learn more. |
+| **Status**                         | Deprecated: By April 01, 2022, we plan to no longer support LCS repository as a storage option for Electronic reporting (ER) configuration. New Microsoft ER configurations will be published for downloading exclusively from Global repository which is accessible from both the Dynamics products & the Regulatory Configuration service. See [Import ER configurations from RCS] (../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) to learn more. |
 
 ## Features removed or deprecated in the Finance 10.0.16 release
 
