@@ -60,7 +60,7 @@ There are two pages associated with the password reset flow, "password reset ver
 
 ## Profile edit page and account profile edit module
 
-The account profile edit module used on the profile edit page allows users to update their first name (given name) and last name (surname). These two values are shared between Azure AD B2C and Commerce, and any user updates made via the profile edit page will update the values in both the Azure AD B2C and Commerce systems.
+The account profile edit module used on the profile edit page allows users to update their first name (given name) and last name (surname). These two values are shared between Azure AD B2C and Commerce, and any user updates made via the profile edit page will update the values in both the Azure AD B2C and Commerce systems. In the starter site in Commerce, users access the profile edit page (hosted from the Identity Provider) by goign to My account > clicking **View details** under the My profile header > then by clicking **Edit** under the Name header.
 
 ## Azure AD generic module
 
