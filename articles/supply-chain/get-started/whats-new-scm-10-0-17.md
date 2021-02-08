@@ -43,7 +43,7 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
-- [Apply rules for grouping work orders while running a maintenance plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)
+- [Apply rules for grouping work orders while running a maintenance plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - For more information, see [Creating work orders](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
 
 <!-- KFM: Blocked for now. Dana will followup.
 - [Approve and save vendor-submitted bank details](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) 
@@ -51,7 +51,7 @@ The following features are included in this release. Some of the listed features
 
 - Asset management capabilities in the production floor execution interface<br> - For more information, see [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md).  <!-- KFM: Not yet published on release plan, but is ready. Should be in the next publish. -->
 
-- [Bill customers for maintenance work](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)
+- [Bill customers for maintenance work](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - For more information, see [Bill for maintenance on customer-owned assets](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
 
 - [Coverage time fence support for Planning Optimization](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - For more information, see [Coverage time fences](../master-planning/planning-optimization/coverage-time-fence.md).
 
@@ -80,7 +80,7 @@ The following features are included in this release. Some of the listed features
 
 - [Saved views for production control](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
 
-- [Schedule warehouse work creation](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation) <br> - For more information, see [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md).
+- [Schedule warehouse work creation](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - For more information, see [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md).
 
 - [Set default financial dimensions for inventory standard cost revaluation vouchers](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - For more information, see [Manage standard cost updates](../cost-management/manage-standard-cost-updates.md).
 
@@ -88,7 +88,7 @@ The following features are included in this release. Some of the listed features
 
 - [Warehouse execution with scale units in the cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md) and [Warehouse orders for cloud and edge scale units](../cloud-edge/cloud-edge-warehouse-order.md).
 
-- [Warehouse management mobile application](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)
+- [Warehouse management mobile application](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - For more information, see [Install and connect the Warehouse Management app](../warehousing/install-configure-warehouse-management-app.md).
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
