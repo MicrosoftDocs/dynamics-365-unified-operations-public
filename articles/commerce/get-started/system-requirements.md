@@ -59,8 +59,8 @@ Cloud point of sale (POS) can run in any of the following web browsers that run 
 
 - Microsoft Edge (latest publicly available version) on Windows 10
 - Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
-  > [!Note]
-  > Beginning with release 10.0.17, Internet Explorer will no longer be supported
+  > [!NOTE]
+  > Beginning with release 10.0.17, Internet Explorer will no longer be supported.
 - Chrome (latest publicly available version) on Windows 10, Windows 8.1, or Windows 7
 
 ## Network requirements
