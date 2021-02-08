@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install and connect the warehouse app
-description: This topic explains how to install the warehouse app on each of your mobile devices and configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
+title: Install and connect the warehouse management application
+description: This topic explains how to install the Warehouse Management app on your mobile devices and configure it to connect to your Supply Chain Management environment.
 author: MarkusFogelberg
 manager: tfehr
-ms.date: 05/25/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,43 +24,47 @@ ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mafoge
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.search.validFrom: 	2021-02-28
+ms.dyn365.ops.version: 10.0.17
 
 ---
 
-# Install and connect the warehouse app
+# Install and connect the Warehouse Management app
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> This topic describes how to configure the legacy warehouse app. If you're looking for information about how to configure the new Warehouse Management app (currently in public preview), see [Install and connect the Warehouse Management app](install-configure-warehouse-management-app.md).
+> This topic describes how to configure the new Warehouse Management app (currently in public preview). If you're looking for information about how to configure the legacy warehouse app, see [Install and connect the warehouse app](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-> [!NOTE]
-> This topic describes how to configure the warehouse app for cloud deployments. If you're looking for information about how to configure the warehouse app for on-premises deployments, see [Warehousing for on-premises deployments](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+The public preview of the Warehouse Management application is available for download on Microsoft App Center. It's provided as a standalone component. Therefore, you must download it on each device and then configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
 
-The warehouse app is available from Google Play Store and Microsoft Store. It's provided as a standalone component. Therefore, you must download it on each device and then configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
-
-This topic explains how to install the warehouse app on each of your mobile devices and configure it to connect to your Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
+This topic explains how to install the warehouse management app on each of your mobile devices and configure it to connect to your Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
 
 ## System requirements
 
-The warehouse app is available for both Windows and Android operating systems. To use the latest version of the app, you must have one of the following operating systems installed on your mobile devices:
+The warehouse management app is available for both Windows and Android operating systems. To use the app, you must have one of the following operating systems installed on your mobile devices:
 
-- Windows 10 (Universal Windows Platform \[UWP\]) Fall creators update 1709 (build 10.0.16299) or later
+- Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
 - Android 4.4 or later
 
-> [!NOTE]
-> If you must support older Windows devices that can't run the latest version of Windows, you can still download version 1.6.3.0 of the warehouse app from Microsoft Store. That version will run on Windows 10 (UWP) November Update 1511 (build 10.0.10586) or later. However, be aware that this version of the warehouse app doesn't support mass deployment of connection settings. Therefore, you must [manually configure the connection](#config-manually) on each device that runs this version of the app.
+## Turn on the feature
 
-## Get the warehouse app
+Before you can use the app, a related feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+
+- **Module:** *Warehouse management*
+- **Feature name:** *User settings, icons, and step titles for the new warehouse app*
+
+## Get the warehouse management app
 
 Use one of the following links to download the app:
 
-- **Windows (UWP):** [Dynamics 365 for Finance and Operations - Warehousing on Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
-- **Android:** [Warehousing - Dynamics 365 on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
+- **Windows (UWP):** [App Center preview program - Windows](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    (Because this is a preview app, a few extra steps are required to install it. For details, see [Install a Build from App Center](https://docs.microsoft.com/appcenter/distribution/installation).)
+- **Android:** [App Center preview program - Android](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    (Because this is a preview app, a few extra steps are required to install it. For details, see [Testing Android Apps](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).)
 
-For smaller deployments, you might want to install the app from the relevant store on each device and then manually configure the connection to the environments that you're using. However, in version 1.7.0.0 and later of the warehouse app, you can also automate app deployment and/or configuration. You might find this approach convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+For smaller deployments, you might want to install the app from the relevant store on each device and then manually configure the connection to the environments that you're using. However, you can also automate app deployment and/or configuration. You might find this approach convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
 ## <a name="create-service"></a>Create a web service application in Azure Active Directory
 
@@ -98,8 +102,8 @@ For more information about how to set up web service applications in Azure AD, s
 - For instructions that show how to use Windows PowerShell to set up web service applications in Azure AD, see [How to: Use Azure PowerShell to create a service principal with a certificate](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - For complete details about how to manually create a web service application in Azure AD, see the following topics:
 
-    - [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [How to: Use the portal to create an Azure AD application and service principal that can access resources](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+  - [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+  - [How to: Use the portal to create an Azure AD application and service principal that can access resources](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## Create and configure a user account in Supply Chain Management
 
@@ -191,8 +195,8 @@ You can't remove a connection by using the connection settings file.
 
 As has been mentioned, the default file name is *connections.json*. The default file location depends on whether you're using a Windows device or an Android device:
 
-- **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.Dynamics365forOperations-Warehousing_8wekyb3d8bbwe\LocalState`
-- **Android:** `Android\data\com.Microsoft.Dynamics365forOperationsWarehousing\files`
+- **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.WarehouseManagement_8wekyb3d8bbwe\LocalState`
+- **Android:** `Android\data\com.Microsoft.WarehouseManagement\files`
 
 Usually, the paths are automatically created after the first run of the app. However, you can manually create them if you must transfer the connection settings file to the device before installation.
 
@@ -203,44 +207,50 @@ Usually, the paths are automatically created after the first run of the app. How
 
 Follow these steps to import connection settings from a file or a QR code.
 
-1. Open the warehouse app on your mobile device.
-1. Go to **Connection settings**.
-1. Set the **Use demo mode** option to _No_.
+1. Open the warehouse app on your mobile device. First time you open the app you will see a welcome message. Go to **Select a connection**.
 
-    ![Use demo mode option](media/app-connect-app-demo-mode.png "Use demo mode option")
+    ![Welcome message](media/app-configure-welcome-screen.png "Welcome message")
 
-1. Select **Select file** or **Scan QR code**, depending on how you want to import the settings:
+1. If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. If so, then jump ahead to step 4; otherwise, select **Set up connection** and continue to step 3.
 
-    - If you're importing the connection settings from a file, the app might already have found the file if the default name and the default location were used when it was saved. Otherwise, select **Select file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
-    - If you're importing the connection settings by scanning a QR code, select **Scan QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
+    ![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
 
-    ![Import connection settings](media/app-connect-app-select-file.png "Import connection settings")
+1. The **Connection setup** dialog box opens. Select **Add from file** or **Add from QR code**, depending on how you want to import the settings:
 
-1. When the connection settings are successfully loaded, select the **Back** (left arrow) button in the upper-left corner of the page.
+    - If you're importing the connection settings from a file, select **Add from file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
+    - If you're importing the connection settings by scanning a QR code, select **Add from QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
 
-    ![Connection settings loaded](media/app-connect-app-settings-loaded.png "Connection settings loaded")
+    ![Connection setup menu](media/app-configure-connection-setup-flyout.png "Connection setup menu")
+
+1. When the connection settings are successfully loaded, you will see the selected connection on the screen.
+
+    ![Connection settings loaded](media/app-configure-select-connection.png "Connection settings loaded")
 
 1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
 
-    ![Choose certificate prompt on an Android device](media/app-connect-app-choose-cert.png "Choose certificate prompt on an Android device")
+    ![Choose certificate prompt on an Android device](media/app-configure-select-certificate.png "Choose certificate prompt on an Android device")
 
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
-    ![Sign-in page](media/app-connect-sign-in.png "Sign-in page")
+    ![Sign-in page](media/app-configure-sign-in-page.png "Sign-in page")
 
 ## <a name="config-manually"></a>Manually configure the application
 
-You can manually configure the app on the device so that it connects to the Supply Chain Management server through the Azure AD application.
+If you don't have a file or QR code, you can manually configure the app on the device so that it connects to the Supply Chain Management server through the Azure AD application.
 
 1. Open the warehouse app on your mobile device.
-1. Go to **Connection settings**.
-1. Set the **Use demo mode** option to _No_.
+1. If the app starts in **Demo mode**, select **Connection settings**. If the app starts on the **Sign-in** screen, select **Change connection** to go back.
+1. Go to **Set up connection**.
 
-    ![Demo mode turned off](media/app-connect-app-select-file.png "Demo mode turned off")
+    ![Set up connection](media/app-configure-set-up-connection.png "Set up connection")
 
-1. Tap in the **Select connection** field to expand the settings that are required to manually enter the connection details.
+1. Select **Input manually**.
 
-    ![Manual connection fields](media/app-connect-manual-connect.png "Manual connection fields")
+    ![Connection setup menu](media/app-configure-connection-setup-flyout.png "Connection setup menu")
+
+1. A new page opens with the settings that are required to manually enter the connection details.
+
+    ![Manual connection fields](media/app-configure-input-manually.png "Manual connection fields")
 
 1. Enter the following information:
 
@@ -248,18 +258,18 @@ You can manually configure the app on the device so that it connects to the Supp
     - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.).
     - **Active directory client ID** – Enter the client ID that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
     - **Active directory client secret** – This field is available only when the **Use client secret** option is set to _Yes_. Enter the client secret that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
-    - **Active directory certificate thumbprint** – This field is available for Windows devices only when the **Use client secret** option is set to _No_. Enter the certificate thumbprint that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
+    - **Active directory certificate thumbprint** – This field is only available for Windows devices and when the **Use client secret** option is set to _No_. Enter the certificate thumbprint that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
     - **Active directory resource** – Specify the root URL of Supply Chain Management.
 
-        > [!NOTE]
+        > [!IMPORTANT]
         > Don't end this value with a slash (/).
 
     - **Active directory tenant** – Enter the Azure AD tenant that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`.
 
-        > [!NOTE]
+        > [!IMPORTANT]
         > Don't end this value with a slash (/).
 
-    - **Company** – Enter the legal entity in Supply Chain Management that you want the application to connect to.
+    - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
 
 1. Select the **Save** button in the upper-right corner of the page.
 1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
