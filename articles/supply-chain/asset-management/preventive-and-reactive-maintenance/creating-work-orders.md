@@ -91,7 +91,7 @@ To set up grouping for automatically generated work orders, follow these steps.
     1. On the **Lines** FastTab, make sure that the **Auto create** check box is selected on every line.
 
 1. Go to **Asset management \> Periodic \> Preventive maintenance \> Schedule maintenance plans**.
-1. In the **Schedule maintenance plans** dialog box, in the **Period** section, specify how often the relevant plans should run.
+1. In the **Schedule maintenance plans** dialog box, in the **Period** section, specify the time horizon for the plan (how far to look ahead when finding scheduled maintenance jobs to generate work for).
 1. Set the **Automatically create work order from schedule** option to *Yes*.
 1. In the **Work order** section, select one of the following options:
 
