@@ -43,13 +43,13 @@ To use this capability, you must do the following:
 
 ## Restrictions and limitations
 
-<!-- I think customers will be concerned about this. If possible, we should be specific and complete, not just give examples. -->
+<!-- KFM: I think customers will be concerned about this. If possible, we should be specific and complete, not just give examples. -->
 
-Some restrictions apply in terms of which types of product can be converted to which other types. For example, if changing a product, the product will remain a product <!-- I don't understand this -->. In the case of a product master with a specific set of dimensions, those dimensions will be maintained after the change.
+Some restrictions apply in terms of which types of product can be converted to which other types. For example, if changing a product, the product will remain a product <!-- KFM: I don't understand this -->. In the case of a product master with a specific set of dimensions, those dimensions will be maintained after the change.
 
 This means that if you have a distinct product, you will be able to change it to an engineering product that does not track the product dimension in transactions (the version dimension isn't used).
 
-Another example is that if you want to change a product master with the size dimension <!-- I think something is missing here. -->
+Another example is that if you want to change a product master with the size dimension <!-- KFM: I think something is missing here. -->
 
 ## Prepare for conversion by creating all required engineering product categories
 
@@ -85,7 +85,7 @@ To convert a product to an engineering item, you must run the convert to enginee
     - **Product number** - Shows the product number.
     - **Product name** - Shows the name of the product.
     - **Engineering category** - Select the engineering category that the product should belong to after being converted. An appropriate category must already exist for each product (see the previous section for details). You must assign this for each product.
-    - **Version** - Enter the product version to assign to the product after being converted. For example, you might select a number that fits with the number sequence already used by your category. The default will not be applied if a value has already been specified. <!-- Typically start with 1.0? Any advice? --> When you use engineering products, each product has at least one engineering version. Each engineering version stores the engineering-relevant data that is specific to that version. More information: [Engineering versions and engineering product categories](engineering-versions-product-category.md)
+    - **Version** - Enter the product version to assign to the product after being converted. For example, you might select a number that fits with the number sequence already used by your category. The default will not be applied if a value has already been specified. <!-- KFM: Typically start with 1.0? Any advice? --> When you use engineering products, each product has at least one engineering version. Each engineering version stores the engineering-relevant data that is specific to that version. More information: [Engineering versions and engineering product categories](engineering-versions-product-category.md)
     - **Product lifecycle state** - Select the product lifecycle state that the product should be in after being converted.  The product lifecycle state enables you to control which transactions are allowed for a given engineering version. More information: [Product lifecycle states and transactions](product-lifecycle-state-transactions.md).
     - **Has BOM** - Shows a check mark if the product has a BOM. This will help you decide how to set the **Current BOM will be part of the engineering product** option.
     - **Current BOM will be part of the engineering product** - Select this check box if the product should use its current bill of materials (BOM) as a BOM for the engineering product. This BOM will then be managed by Engineering Change Management. Clear this check box for products that don't have a BOM, or if you prefer to manually create a BOM for the converted product later.
@@ -93,7 +93,7 @@ To convert a product to an engineering item, you must run the convert to enginee
 
 1. When you are done making settings, select **Validate** from the toolbar to check them. For each row, the **Has errors** check box will update to indicate its status. Adjust your settings until all products are free of errors.
 1. When all of your products are set up correctly, select Next to continue.
-1. The **Confirm selection** page opens. Here you can read how many products are ready to be converted (and therefore show no errors) and how many were skipped (due to errors). Set **Run in batch** to *Yes* to perform the conversion using the batch engine; set it to *No* to perform the conversion right away. <!-- Please confirm this description of **Run in batch** -->
+1. The **Confirm selection** page opens. Here you can read how many products are ready to be converted (and therefore show no errors) and how many were skipped (due to errors). Set **Run in batch** to *Yes* to perform the conversion using the batch engine; set it to *No* to perform the conversion right away. <!-- KFM: Please confirm this description of **Run in batch** -->
 1. Select **Finish** to apply your settings and start converting the products.
 
 > [!NOTE]
