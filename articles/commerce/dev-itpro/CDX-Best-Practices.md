@@ -5,7 +5,7 @@ title: Commerce Data Exchange best practices
 description: This topic is intended for people who implement functionality that is related to data synchronization, Commerce Data Exchange (CDX), in a Microsoft Dynamics 365 Commerce environment.
 author: jashanno
 manager: AnnBe
-ms.date: 12/04/2020
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -46,7 +46,7 @@ The following should be performed after every update to the Dynamics 365 environ
 
 | Associated areas | Best practice |
 |------------------|---------------|
-| <ul><li>Parameters</li><li>Commerce scheduler</li><li>Initialization</li></ul> | Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**.  The slider that appears asks if you would like to proceed with initializing the base configuration data for commerce scheduler.  Performing this action after every update is vital to proper functionality as it correctly sets the configuration data for new tables or columns.  There is also a parameter to **Delete existing configuration**.  Unless explicitly told to do so or working on a non-production environment where losing configuration will not create an impact, leave this setting as **No**. |
+| <ul><li>Parameters</li><li>Commerce scheduler</li><li>Initialization</li></ul> | Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**.  The slider that appears asks if you would like to proceed with initializing the base configuration data for Commerce scheduler.  Performing this action after every update is vital to proper functionality as it correctly sets the configuration data for new tables or columns.  There is also a parameter to **Delete existing configuration**.  Unless explicitly told to do so or working on a non-production environment where losing configuration will not create an impact, leave this setting as **No**. |
 
 ## Valuable configurations
 
