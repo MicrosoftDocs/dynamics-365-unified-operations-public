@@ -38,7 +38,7 @@ By default, Modern POS is already registered for this callback URI. However, whe
 
 > AADSTS50011: The reply address 'ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]' does not match the reply addresses configured for the application
 
-The reply address is dependant on the Modern POS package SID that is shown at the end of the above reply address error message.  This is a function of the Package Family Name (PFN), so it depends on a name and a public key.  This means that when you customize Modern POS and sign it with your company certificate, the SID will change.  The change is based on the certificate and not the package version, so as long as the entire package is not different and the certificate remains the same (Which can be renewed to keep the same signature), then the SID will remain the same.
+The reply address is dependant on the Modern POS package SID that is shown at the end of the above reply address error message.  This is a function of the Package Family Name (PFN), so it depends on a name and a public key.  This means that when you customize Modern POS and sign it with your company certificate, the SID will change.  The change is based on the certificate and not the package version, so as long as the entire package is not different and the certificate remains the same (which can be renewed to keep the same signature), then the SID will remain the same.
 
 > [!NOTE]
 > - We recommend that you try to use the customized Modern POS application one time before you configure Dynamics 365 headquarters. In this way, you can see what the error message looks like and more easily obtain the customized reply address.
@@ -53,14 +53,14 @@ The following steps are required so that device activation works correctly when 
 4. Create the Commerce Scale Unit Azure AD application by selecting **New registration** and entering the following values:
 
     - **Name:** Enter **Customized Commerce Scale Unit**. (You can enter any other unique value, but be sure to make a note of the name entered.)
-    - **Supported account types:** Select the value **Accounts in this organization directory only [...]** unless this application registration will be used across multiple tenants (Which would require the next value **Accounts in any organizational directory [...]**, note that this is not typical at all).
+    - **Supported account types:** Select the value **Accounts in this organization directory only [...]** unless this application registration will be used across multiple tenants (which would require the next value **Accounts in any organizational directory [...]**, note that this is not typical).
     - **Redirect URI:** This value can be left blank for now but do verify that the initial drop-down remains at the value **Web**.
 
 5. Select **Register** at the bottom of the page. The page shall change to the newly created Azure AD application.
-6. Select **Application ID URI** where it has a link stating **Add an Application ID URI** (This same page can also be reached from the lefthand menu by selecting the listing **Expose an API**).
+6. Select **Application ID URI** where it has a link stating **Add an Application ID URI**. (This same page can also be reached from the left-hand menu by selecting the listing **Expose an API**).
 7. On the tile that opens, select the **Application ID URI** value that states **Set**. Copy the value shown before selecting the **Save** button. You will paste this value into the DLLHost.exe.config file for POS in the next section.
 8. Select the **Save** button to set this URI.
-9. Next, select the button that says **+ Add a scope**.
+9. Select the button that says **+ Add a scope**.
 10. In the slider that appears, enter the following values:
 
     - **Scope name:** Enter **AccessRetailServer**. (You can enter any other unique value, but be sure to make a note of the name entered.)
@@ -71,7 +71,7 @@ The following steps are required so that device activation works correctly when 
     - **State:** Verify that **Enabled** is selected.
 
 11. Select the **Add scope** button.
-12. Select the **Overview** tab on the lefthand menu.  Verify that the **Application ID URI** value matches what was copied back in step seven.
+12. Select the **Overview** tab on the left-hand menu.  Verify that the **Application ID URI** value matches what was copied back in step seven.
 
 > [!NOTE]
 > Don't close the web browser window, because you will use it again later in this topic.
