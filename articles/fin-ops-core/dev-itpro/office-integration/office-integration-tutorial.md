@@ -258,7 +258,7 @@ When relationships exist between entities, a relationship lookup is shown.
 2.  Click **View** &gt; **Application Explorer** (or press Ctrl+E, Ctrl+E).
 3.  Navigate to **AOT** &gt; **Data Model** &gt; **Tables** &gt; **FMCustGroup**.
 4.  Right-click, and then click **Open designer**.
-5.  In the designer, right-click **FMCustGroup**, and then click **Addins** &gt; **Create data entity**. Artifacts are added to the project.
+5.  In the designer, right-click **FMCustGroup**, and then click **Add-ins** &gt; **Create data entity**. Artifacts are added to the project.
 6.  Open the designer view for **FMCustGroupEntity**.
 7.  In the property sheet for **FMCustGroupEntity**, set **Public Collection Name** to **FleetCustomerGroups** and **Public Entity Name** to **FleetCustomerGroup**.
 8.  Add the **CustGroup** and **Description** fields to the **AutoLookup** field group.
