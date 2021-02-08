@@ -91,7 +91,7 @@ The following steps are required so that device activation works correctly when 
 1. Return to the web browser window where <https://portal.azure.com/> is open, and create the Retail Modern POS Azure AD application by repeating steps three through five in the "Create the Commerce Scale Unit Azure AD application" section. However, enter the following values this time:
 
     - **Name:** Enter **Customized Retail Modern POS**. (You can enter any other unique value, but be sure to make a note of the name entered.)
-    - **Supported account types:** Select the value **Accounts in this organization directory only [...]** unless this application registration will be used across multiple tenants (Which would require the next value **Accounts in any organizational directory [...]**, note that this is not typical at all).
+    - **Supported account types:** Select the value **Accounts in this organization directory only [...]** unless this application registration will be used across multiple tenants (which would require the next value **Accounts in any organizational directory [...]**, note that this is not typical).
     - **Redirect URI:** The initial drop-down should be changed to value **Public client/native (mobile & desktop)**. The value to enter for this type of Redirect URI is the value shown at the beginning of this topic in the Modern POS error message received. Enter the reply address (redirect URI) that corresponds to that error message. The value will start with **ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]**.
 
         > [!NOTE]
@@ -103,8 +103,8 @@ The following steps are required so that device activation works correctly when 
     A tile appears that shows the details of the new customized Retail Modern POS Azure AD application.
 
 3. Select **Register** at the bottom of the page. The page shall change to the newly created Azure AD application.
-4. Find the **Application (client) ID** field, and copy the value. Switch to the notepad you opened in the previous section (or follow the above section **Update the Modern POS configuration** to open the **DLLHost.exe.config** file) to navigate to the value corresponding to **AADClientId**. Paste in the value for this field that was copied at the beginning of this step and then save the file (As shown in step five of the same above section).
-5. Returning to the web browser, in the lefthand menu, select the option **API permissions**.
+4. Find the **Application (client) ID** field, and copy the value. Switch to the notepad you opened in the previous section (or follow the above section **Update the Modern POS configuration** to open the **DLLHost.exe.config** file) to navigate to the value corresponding to **AADClientId**. Paste in the value for this field that was copied at the beginning of this step and then save the file (as shown in step five of the same section).
+5. Returning to the web browser, in the left-hand menu, select the option **API permissions**.
 6. On the **API permissions** tile, select **+ Add a permission**.
 7. On the slider that appears, first select the **My APIs** heading.  Then select the API titled **Customized Commerce Scale Unit** or whatever value was entered as the name in step four at the beginning of this document.
 8. Under the **Select permissions** sub-heading, select to checkmark the value **AccessRetailServer** or whatever value was entered as the scope name in step 10 at the beginning of this document.
@@ -112,7 +112,7 @@ The following steps are required so that device activation works correctly when 
 10. Select **Grant admin consent for \<your AAD name\>**, select the **Yes** button.  This grants consent and can be verified by seeing the word **Granted** in the **Status** column on the **AccessRetailServer** row set.
 
         > [!NOTE]
-        > - Granting consent is not mandatory, but simplifies the process by consenting in advance for all users in your tenant (And you as the Admin).  If this step is not done, then each user will be asked for the consent the first time they try to activate Modern POS.
+        > Granting consent is not mandatory, but simplifies the process by consenting in advance for all users in your tenant (and you as the Admin).  If this step is not done, then each user will be asked for the consent the first time they try to activate Modern POS.
 
 ### Configure Dynamics 365 Headquarters
 The previous steps were required so that the Modern POS application can be authenticated. You must now follow these steps to add the new Azure AD applications to the list of safe programs in Headquarters, so that the requests are authorized. (A list of safe programs is sometimes also referred to as a safe list.)
