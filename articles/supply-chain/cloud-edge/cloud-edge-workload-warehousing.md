@@ -90,6 +90,16 @@ The hub owns the following data:
 
 If you're using the *release to warehouse* process, [*warehouse orders*](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
 
+The **Release to warehouse** process is done from the hub:
+
+**Procurement and sourcing > Purchase orders > All purchase orders > Warehouse > Actions > Release to warehouse**.
+
+or
+
+**Warehouse management > Release to warehouse > Automatic release of purchase orders**.
+
+When using the **Automatic release of purchase orders**, you can select specific purchase order lines based on a query. Typical scenario would be to setup a recurrent batch job which will release all the confirmed purchase order lines expected to arrive tomorrow.  
+
 The worker can run the receiving process by using a warehouse app that is connected to the scale unit. The data is then recorded by the scale unit and reported against the inbound warehouse order. The creation and processing of the subsequent putaway will also be handled by the scale unit.
 
 If you aren't using the *release to warehouse* process, and therefore aren't using *warehouse orders*, the hub can process warehouse receiving and work processing independently from scale units.
