@@ -367,6 +367,8 @@
         items:
         - name: Forecasts, work orders, and projects
           href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+        - name: Bill for maintenance on customer-owned assets
+          href: asset-management/integration-to-project-management-and-accounting/customer-billing.md
       - name: Integrate asset management with fixed assets
         href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
       - name: Preventive and reactive maintenance
