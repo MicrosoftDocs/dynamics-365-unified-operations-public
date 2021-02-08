@@ -407,10 +407,10 @@ According to current security standards, the following options should be set in 
 
 Here is a checklist of things to verify:
 
-1. Open the configuration file and verify that the Retail Server URL specified contains the suffix **/Commerce** and is correctly formed based on what is expected for the machine name and port used.  Validate that there is no trailing or additional slash (the character **/**) that exists in the URL or at the end of it.
+1. Open the configuration file and verify that the Retail Server URL specified contains the suffix **/Commerce** and is correctly formed based on what is expected for the machine name and port used.  Validate that there is no trailing or additional slash (the character **/**) in the URL or at the end of it.
 2. In Commerce, on the **Commerce shared parameters** page, verify that the correct client ID has been added to the **Relying parties** FastTab. Additionally, verify that the correct `https://retailstorescaleunit.retailserver.com` entry has been added to the **Server resource IDs** FastTab.
 3. In Commerce, verify that every client ID that was generated for each store exists on the **Azure Active Directory applications** page.
-4. In Commerce, on the **Channel profile** page, verify that the URLs are correct. (In other words, verify that the computer name in each URL is correct, the URL is correctly formatted, and so on.)
+4. In Commerce, on the **Channel profile** page, verify that the URLs are correct. To do this, verify that the computer name in each URL is correct, the URL is correctly formatted, and so on.
 5. In Commerce, on the **Channel database** page, verify that full synchronization correctly occurred for the new channel database.
 6. Verify that the store is correctly configured to use the new channel database.
 
