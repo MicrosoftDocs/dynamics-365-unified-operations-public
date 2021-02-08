@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install and connect the warehouse management application
-description: This topic explains how to install the warehouse app on each of your mobile devices and configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
+description: This topic explains how to install the Warehouse Management app on your mobile devices and configure it to connect to your Supply Chain Management environment.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 02/03/2021
