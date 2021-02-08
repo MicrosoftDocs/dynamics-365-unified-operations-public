@@ -222,7 +222,7 @@ Follow these steps to import connection settings from a file or a QR code.
 
     ![Connection setup menu](media/app-configure-connection-setup-flyout.png "Connection setup menu")
 
-1. When the connection settings are successfully loaded, you will see the selected conneciton on the screen.
+1. When the connection settings are successfully loaded, you will see the selected connection on the screen.
 
     ![Connection settings loaded](media/app-configure-select-connection.png "Connection settings loaded")
 
