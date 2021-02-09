@@ -38,8 +38,8 @@ The *mobile device user settings* feature lets you define global user settings t
 This feature can help workers get started more quickly each time they start to use a new device. For example:
 
 - Admins can establish a standard set of preferences that work best for devices from a specific manufacturer and/or device model. This can help workers get started with a new device without necessarily needing to change the settings.
-- If your company has a pool of identical devices that are shared among workers, then each worker will see their preferred setup each time they sign in, even if they never used the specific physical device they selected that day.
-- While working in Supply Chain Management, admins can view and edit all stored settings, even for specific workers, which can help with troubleshooting or to fine tune new features.
+- If your company has a pool of identical devices that are shared among workers, then each worker will see their preferred setup each time they sign in, even if they have never before used the specific physical device they selected that day.
+- While working in Supply Chain Management, admins can view and edit all stored settings, even for individual workers, which can help with troubleshooting or to fine tune new features.
 
 > [!IMPORTANT]
 > This feature applies only to the new Warehouse Management mobile app. It does not work with the legacy warehouse app.
