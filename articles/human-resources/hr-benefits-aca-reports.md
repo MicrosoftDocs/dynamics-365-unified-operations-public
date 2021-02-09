@@ -39,7 +39,13 @@ Affordable Care Act (ACA) reporting generates forms 1095-B and 1095-C in support
 
 ## Getting started
 
-When beginning to track information to report on forms 1095-B and 1095-C, you must first create one or more ACA coverage groups. These ACA coverage groups will be used to indicate the offer of coverage that was provided to an employee, the employee’s share of the lowest cost monthly premium (if the cost is above the federal poverty line), and Safe Harbor used by the employer, if applicable. Using ACA groups enables you to manage the information for these fields without needing to touch every employee record where the conditions are the same. You can easily assign Affordable Care coverage groups to one or more employees using the Mass assign option on the page.
+To track information for forms 1095-B and 1095-C, you must first create one or more Affordable care coverage groups. Affordable Care coverage groups indicate the following:
+
+- The offer of coverage for an employee
+- The employee’s share of the lowest cost monthly premium, if the cost is above the federal poverty line
+- Safe Harbor used by the employer, if applicable
+
+Affordable Care coverage groups allow you to manage the information for these fields without changing every employee record where the conditions are the same. You can easily assign Affordable Care coverage groups to one or more employees by using the **Mass assign** option on the page.
 
 ## Maintaining multiple versions of a coverage group
 
