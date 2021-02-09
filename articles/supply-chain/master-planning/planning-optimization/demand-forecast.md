@@ -276,3 +276,80 @@ A forecast reduction key must be assigned to the coverage group of the item. Fol
 ### Reduce a forecast by transactions
 
 When you select **Transactions - reduction key** or **Transactions - dynamic period** as the method for reducing forecast requirements, you can specify which transactions reduce the forecast. On the **Coverage groups** page, on the **Other** FastTab, in the **Reduce forecast by** field, select **All transactions** if all transactions should reduce the forecast or **Orders** if only sales orders should reduce the forecast.
+
+## Forecast models and submodels
+
+This section describe how forecast submodels can be utilized to combine multiple forecasts.
+
+A forecast model names and identifies a specific forecast. You must create a forecast model before you can create the actual forecast lines.
+
+You can set up a forecast model with two levels so that one model includes one or more other models, or submodels. This structure enables you to aggregate the individual forecasts. You must create a forecast model before you can assign it to be a submodel of another forecast model.
+
+A forecast model can include forecast from other forecast models. This is achieved by adding submodels to a forecast model. 
+
+This is a powerful way to control your forecasts where input from multiple forecasts is combined. From a planning point of view this makes it simple to combine forecast for simulations – An example could be simulation based on the sum of normal forecast + spring promotion forecast.
+
+### Submodel levels
+A forecast model that is used as a submodel cannot contain other submodels.
+
+There are no limits to the number of submodels that can be added on a forecast model. However, the structure can only be one level deep. Meaning that a forecast model that is a submodel in another forecast model, can not have submodels of its own.
+
+**Example 1** 
+
+Forecast model A can have forecast model B as submodel but then Forecast model B cannot have submodels.
+
+When assigning submodels to a forecast model, the system will check if the forecast model is submodel for another forecast model. 
+
+**Example 2**
+
+Forecast model A have Forecast model B as submodel. 
+
+If you try to add a submodel on forecast model B it will result in the error message: “Forecast model B is submodel for model A.”
+
+> [!NOTE]
+> An error is shown in case master planning encounter a submodel that contain forecast models.
+
+### Aggregation of forecast cross forecast models
+Forecast on same day will be aggregated, cross models.
+
+**Example** 
+Forecast model A have forecast model B and C as submodels.
+
+- Forecast model A includes demand forecast for 2 pcs on June 15
+- Forecast model B includes demand forecast for 3 pcs on June 15
+- Forecast model C includes demand forecast for 4 pcs on June 15
+
+The resulting demand forecast for will be a single demand for 9 pcs (2+3+4) on June 15
+
+> [!NOTE]
+> A forecast submodel uses its own parameters, not those of the top-level forecast model.
+
+### Create a forecast model
+
+1. Click  **Inventory management** > **Setup** > **Forecast** > **Forecast models**.
+1. In the grid section, press CTRL+N or click  **New**  to create a forecast model.
+1. Enter an identifier and a name for the model.
+1. In the header section, you can define settings for the forecast.
+
+### Assign a forecast model as a submodel
+
+1. In the grid section, select the forecast model for which you want to set up a submodel.
+1. On the  **Submodel**  FastTab, press CTRL+N or click  **Add**  to create a submodel.
+1. In the  **Submodel**  field, select the model that you want to designate as a submodel and then enter a name for it.
+
+**Example**
+
+To set up a forecast model structure where the top-level forecast model, named Total, consists of two submodels which are named East and West, follow this procedure:
+
+1. In the grid section, create three forecast models: Total, East, and West.
+2. Select the Total model line.
+3. On the  **Submodel**  FastTab, create a submodel line, and then select the East model.
+4. On the  **Submodel**  FastTab, create a submodel line, and then select the West model.
+
+Click  **Inventory management** > **Setup** > **Forecast** > **Forecast models**.
+
+–or–
+
+Click  **Project management and accounting** > **Setup** > **Forecasts** > **Forecast models**.
+
+Use this form to create and manage forecast models. A forecast model names and identifies a specific forecast.
