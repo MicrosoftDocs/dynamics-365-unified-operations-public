@@ -44,7 +44,7 @@ When provisioning an e-commerce environment in [Microsoft Dynamics Lifecycle Ser
 
 The following illustration shows the LCS e-commerce provisioning screen with the **Supported host names** box highlighted. 
 
-![LCS e-commerce provisioning screen with the **Supported host names** box highlighted](./media/Domains_ProvisioningeCommerceScreen.png)
+![LCS e-commerce provisioning screen with the **Supported host names** box highlighted](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 You can create a service request to add additional domains to an environment if provisioning has already occurred. To create a service request in LCS, within your environment go to **Support \> Support issues** and select **Submit an incident**.
 
