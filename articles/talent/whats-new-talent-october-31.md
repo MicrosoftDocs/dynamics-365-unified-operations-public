@@ -42,7 +42,7 @@ Field context will be added in the future to allow for direct navigation to corr
 
 ### Configure target systems
 
-In Talent, system administrators can define links that will be surfaced through the System Administration workspace. Part of the configuration is the Finance environments that you would like to navigate to as the "target" of the link. You do this by giving the target system a name and providing the URL of the Finance environment. Here is an example of a Finance URL that you would provide: https://devax00124aos.cloud.test.dynamics.com/. After you have configured your target systems,  you can define your links.
+In Talent, system administrators can define links that will be surfaced through the System Administration workspace. Part of the configuration is the Finance environments that you would like to navigate to as the "target" of the link. You do this by giving the target system a name and providing the URL of the Finance environment. After you have configured your target systems, you can define your links.
 
 ### Configure links
 
