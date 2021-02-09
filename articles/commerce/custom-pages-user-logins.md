@@ -56,7 +56,7 @@ You can now configure the "Sign up and sign in," "Profile editing," and "Passwor
 
 To configure the "Sign up and sign in" policy, follow these steps.
 
-1. Select **New user flow**, and then, on the **Recommended** tab, select the **Sign up and sign in** policy.
+1. Select **New user flow**, and then select the **Sign up and sign in** option, and choose the **Recommended** tab,  and click **Create**.
 1. Enter a name for the policy (for example, **B2C\_1\_SignInSignUp**).
 1. In the **Identity Providers** section, select the identity providers to use for the policy. At a minimum, **Email signup** must be selected.
 1. In the **Collect attribute** column, select the check boxes for **Email Address**, **Given Name**, and **Surname**.
@@ -79,7 +79,7 @@ You will return to this policy to finish the setup after you've built the custom
 
 To configure the "Profile editing" policy, follow these steps.
 
-1. Select **New user flow**, and then, on the **Recommended** tab, select the **Profile editing** policy.
+1. Select **New user flow**, and then select the **Profile editing** option, and choose the **Recommended** tab, and click **Create**.
 1. Enter a name for the policy (for example, **B2C\_1\_EditProfile**).
 1. In the **Identity Providers** section, select the identity providers to use for the policy. At a minimum, **Local Account SignIn** must be selected.
 1. In the **Collect attribute** column, select the check boxes for **Email Addresses** and **Surname**.
@@ -94,7 +94,7 @@ You will return to this policy to finish the setup after you've built the custom
 
 To configure the "Password reset" policy, follow these steps.
 
-1. Select **New user flow**, and then, on the **Preview** tab, select the **Password reset v1.1** policy.
+1. Select **New user flow**, and then select the **Password reset** option, and choose the **Recommended** tab, and click **Create**.
 
     ![Password reset v1.1 policy selected on the Preview tab](./media/B2C_ForgetPassword_Menu.png)
 
@@ -111,6 +111,14 @@ To configure the "Password reset" policy, follow these steps.
 You will return to this policy to finish the setup after you've built the custom pages. For now, close the policy to return to the **User flows (policies)** page in the Azure portal.
 
 ## Build the custom pages
+
+With Commerce, AAD specific modules are included to build custom pages for the User Policies in AAD B2C. Pages can be built specifically for each policie's page layout using the main AAD B2C modules detailed below. Or, with Commerce 10.0.15 and above- the **AAD Generic** module can be used for all page layouts and policies in AAD B2C.
+1. Page-specific AAD Modules are specifically bound to data input items rendered by AAD B2C. These give you more control of the positioning of the elements in your pages; but more pages to be built and module extensions to account for variances beyond the default settings described below.
+1. The **AAD Generic** module creates the 'div' for AAD B2C to render all elements in the User Policy page layout, giving more flexibility to the B2C functions of the page- but less control of the positioning and styling (though CSS can be used to match the look and feel of your site).
+
+You can create a single page with the **AAD Generic** module and use with all of your User Policy pages; or you can build out specific pages using the individual AAD modules for sign-in, sign-up, profile-edit, password-reset, and password-reset-verification. You may also use both- using the specific AAD pages for the page layouts noted below, and the generic AAD module page for remaining page layouts within these or other user policies created.
+
+See the [[Identity Provider modules page]] for more details on AAD modules in Commerce.
 
 To build the custom pages to handle user sign-ins, follow these steps.
 
@@ -130,7 +138,7 @@ When you build the pages, follow these guidelines:
 - After the pages and URLs are published, collect the URLs that must be used for the Azure AD B2C policy configurations. A **?preloadscripts=true** suffix will be added to every URL when it's used.
 
 > [!IMPORTANT]
-> Don't reuse universal headers and footers that have relative links. Because these pages will be hosted in the Azure AD B2C domain when they are used, only absolute URLs should be used for all links.
+> Pages built to be referenced in AAD B2C are served directly from the AAD B2C tenant's domain. **Do not** reuse universal headers and footers that have relative links. Because these pages will be hosted in the Azure AD B2C domain when they are used, only absolute URLs should be used for all links. It is recommended to create a specific Header and Footer for your AAD related custom pages with absolute URLs, and with any Commerce-specific modules which require connection to the Retail Server removed. For example, the favorites, search bar, sign-in link, and cart modules should **not** be included in any pages which will be used in AAD B2C user flows.
 
 ## Configure Azure AD B2C policies with custom page information 
 
@@ -144,11 +152,11 @@ To update the "Sign up and sign in" policy with custom page information, follow 
 1. Select the **Unified sign up or sign in page** layout.
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/sign-in?preloadscripts=true``.
-1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
+1. In the **Page Layout Version** field, select **2.1.0** or later versions (Requires 10.0.15 or higher module library).
 1. Select the **Local account sign up page** layout.
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full sign-up URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/sign-up?preloadscripts=true``.
-1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
+1. In the **Page Layout Version** field, select **2.1.0** or later versions (Requires 10.0.15 or higher module library).
 1. In the **User attributes** section, follow these steps:
 
     1. For the **Email Address**, **Given Name**, and **Surname** attributes, select **No** in the **Requires Verification** field.
@@ -164,7 +172,7 @@ To update the "Profile editing" policy with custom page information, follow thes
 1. Select the **Profile edit page** layout.
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full profile edit URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/profile-edit?preloadscripts=true``.
-1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
+1. In the **Page Layout Version** field, select **2.1.0** or higher version (Requires 10.0.15 or higher module library).
 1. In the **User attributes** section, follow these steps:
 
     1. For the **Email Address**, **Given Name** attributes, select **No** in the **Requires Verification** field.
@@ -175,20 +183,20 @@ To update the "Profile editing" policy with custom page information, follow thes
 To update the "Password reset" policy with custom page information, follow these steps.
 
 1. In the **Password Reset** policy that you configured earlier, in the navigation pane, select **Page layouts**.
-1. Select the **New password page** layout.
+1. Select the **Forgot password page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full password reset URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/passwordreset?preloadscripts=true``.
-1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
-1. Select the **Account verification page** layout.
+1. In the **Custom page URI** field, enter the full password reset verification URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/password-reset-verification?preloadscripts=true``.
+1. In the **Page Layout Version** field, select **2.1.0** or higher version (Requires 10.0.15 or higher module library).
+1. Select the **Change password page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full password reset verification URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
-1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
+1. In the **Custom page URI** field, enter the full password reset URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/password-reset?preloadscripts=true``.
+1. In the **Page Layout Version** field, select **2.1.0** or higher version (Requires 10.0.15 or higher module library).
 
 
 
 ## Customize default text strings for labels and descriptions
 
-In the module library, sign-in modules are prefilled with default text strings for the labels and descriptions. You can customize these strings in the software development kit (SDK) by updating the values in the global.json file for the sign in module.
+In the module library, sign-in modules are prefilled with default text strings for the labels and descriptions. You can customize the strings in the properties panel of the module you are working. Additional strings on the page (such as the **Forgotten password?** link wording or the ``Create an account`` description will require utilizing the software development kit (SDK) and updating the values in the global.json file for the sign in module.
 
 For example, the default text for the forgotten password link is **Forgotten password?**. The following shows this default text on the sign-in page.
 
