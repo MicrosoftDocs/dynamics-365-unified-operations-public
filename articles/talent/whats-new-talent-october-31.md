@@ -62,7 +62,7 @@ Each link that is created will have the following information defined.
 
 - Use user's current Company - Select **Yes** if you would like to use the User's current company context when navigating to Finance. If **No** is selected, then you can select the company that should be used.
 
-- Target menu item - Enter the menu item from Finance that the link should use when navigating. Menu items that you can directly navigate to are available. To find the menu item required, open Finance and open the page that is the target of the navigation. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in Finance and Operations, enter the value that appears after the "&mi" in the URL. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. The menu item to navigate to the employee list page in this example is: HcmWorkerListPage_Employees.
+- Target menu item - Enter the menu item from Finance that the link should use when navigating. Menu items that you can directly navigate to are available. To find the menu item required, open Finance and open the page that is the target of the navigation. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in Finance and Operations, enter the value that appears after the "&mi" in the URL. The menu item to navigate to the employee list page in this example is: HcmWorkerListPage_Employees.
 
 - Link to data source - Select the source of data that the link is referencing. The most common sources like **Worker** and **Position** are available.
 
