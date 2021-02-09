@@ -64,20 +64,20 @@ To create and manage user settings for your mobile devices:
     - **Display color theme** - Select the color theme for the device. 
     - **Sound level** - Select the sound level for the device. Select a value between 0 and 10, where 0 equals no sound, and 10 equals maximum sound. Default is 4.
     - **Vibration level** - Select the vibration level for the device. Select a value between 0 and 5, where 0 equals no vibration, and 5 equals maximum vibration. Default is 1.
-    - **Text scale percentage** - Select the text scale percentage for the device. Select a value between 70 and 400, where 70 equals smallest text scale, and 400 equals largest text scale. Default is 100. <!-- Mention the range of valid values. Percentage of what? -->
-    - **Button scale percentage** - 
+    - **Text scale percentage** - Select the text scale percentage for the device. Select a value between 70 and 400, where 70 equals smallest text scale, and 400 equals largest text scale. Default is 100.
+    - **Button scale percentage** - Select the button scale percentage for the device. Select a value between 50 and 200, where 50 equals smallest button scale, and 200 equals largest button scale. Default is 100.
 
 ## Create and manage mobile device brands
 
-<!-- Add a full intro to this section. Same basic strategy as the previous. Mention why the user would want to set these up. Mention that these might typically be generated automatically. -->
+The **Device brand name** and **Device model ID** in this fpage will be automatically populated the first time user settings are changed on a new device that connects to Supply Chain Management with the mobile app. You can manage all the entries here and give more useful descriptions to each brand and model, to help distinguish them if model ID's are similar. The mobile app will the fetch the brand name and model ID from system settings of the device.
 
 To create and manage your mobile device brands:
 
 1. Go to **Warehouse management \> Mobile device \> Mobile device brands**.
 1. Select a mobile device brand from the list pane or select **New** from the Action Pane to create a new one.
 1. Make the following settings in the header section of the new or selected device:
-    - **Device brand name** - 
-    - **Description** - 
-1. Use the **Mobile device models** FastTab to <!-- Explain the general purpose of the items here. -->. Use the toolbar on this FastTab to add or remove rows in the grid. Make the following settings for each row:
-    - **Device model ID** - 
-    - **Description** - 
+    - **Device brand name** - This is the brand name of the device, for example "Microsoft Corporation"
+    - **Description** - You can optionally provided a description to help distinguish between brand names.
+1. Use the **Mobile device models** FastTab to see all the different models for a given device brand. Use the toolbar on this FastTab to add or remove rows in the grid. Make the following settings for each row:
+    - **Device model ID** - The device model ID, for example "Surface Book 2".
+    - **Description** - You can optionally provide a description to help distinguish between model ID's. 
