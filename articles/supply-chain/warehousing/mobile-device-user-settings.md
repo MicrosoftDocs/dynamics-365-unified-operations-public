@@ -38,6 +38,9 @@ ms.dyn365.ops.version: 10.0.17
 
 <!-- Add intro text. Start with the big picture of what the feature does and why the reader might want to use it. How does this benefit users and their businesses? Don't describe the UI. Answer the question: Why should I read the rest of this?  -->
 
+> [!IMPORTANT]
+> <!-- Mention that this topic only applies to the new Warehouse Management mobile app.  -->
+
 ## Turn on the XXXXX feature
 
 <!-- Include this section if needed (we do). Replace XXXXX with actual values -->

@@ -2987,6 +2987,8 @@
           items:
           - name: Install and connect the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
+          - name: Mobile device user settings
+            href: warehousing/mobile-device-user-settings.md
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
           - name: Scan bar codes using a camera in the warehouse app
