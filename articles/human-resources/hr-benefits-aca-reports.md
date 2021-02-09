@@ -30,11 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ---
 
-# Generate Affordable Care Act (ACA) reports
+# Generate ACA reports
 
-Functionality is available to assist employers that need to track the information reported on forms 1095-B and 1095-C in support of the **Employer Mandate** portion of the Affordable Care Act.
+Affordable Care Act (ACA) reporting assists employers who need to track the information reported on forms 1095-B and 1095-C in support of the **Employer Mandate** portion of the Affordable Care Act.
 
-> Note this functionality is only enabled for legal entities in the United States.
+> [!NOTE]
+> ACA reporting is only enabled for legal entities in the United States.
 
 ## Getting started
 
