@@ -5,7 +5,7 @@ title: Configure module properties to be shown based on context
 description: This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 author: samjarawan
 manager: annbe
-ms.date: 01/28/2021
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -172,7 +172,7 @@ The following examples show a module definition file and a module definition ext
     "config": {
         "layout": {
             "friendlyName": "Text Layout",
-            "description": "Sets the desired text output to be plaintext or rich text with images.",
+            "description": "Sets the desired text output to be plain text or rich text with images.",
             "type": "string",
             "enum": {
                 "plainTextOnly": "Plain Text Only",
@@ -194,7 +194,7 @@ The following examples show a module definition file and a module definition ext
     "config": {
         "layout": {
             "friendlyName": "Text Layout",
-            "description": "Sets the desired text output to be plaintext or rich text with images.",
+            "description": "Sets the desired text output to be plain text or rich text with images.",
             "type": "string",
             "enum": {
                 "plainTextOnly": "Plain Text Only",
