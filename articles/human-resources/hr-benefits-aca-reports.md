@@ -47,7 +47,7 @@ You can maintain multiple versions of any coverage group. This functionality all
 
 After you’ve created ACA coverage groups, you can mass assign the groups to employees with the **Mass assignment** option. You can also go to each employee and indicate whether ACA information needs to be tracked and reported for that employee, and assign the employee to an ACA coverage group.
 
-Some ACA coverage information doesn’t need to be tracked or reported, such as for part-time employees. In this case, set the **Report coverage** field to **No**. Although each employee for which ACA information needs to be tracked needs to be assigned to an Affordable Care coverage group, you can still change the **Offer of coverage**, **Employee share of cost** and **Safe Harbor** options for any month that may need different values than those entered in the Affordable Care coverage group.
+Some ACA coverage information doesn’t need to be tracked or reported, such as for part-time employees. In this case, set the **Report coverage** field to **No**. Although each employee with trackable ACA information must be assigned to an Affordable Care coverage group, you can still change the **Offer of coverage**, **Employee share of cost** and **Safe Harbor** options for any month that needs different values.
 
 To enter exceptions to any of the Affordable Care coverage group values, select the **Affordable Care Coverage** link on the **Worker detail** page under the **Additional information** section on the **Employment tab**.
 
