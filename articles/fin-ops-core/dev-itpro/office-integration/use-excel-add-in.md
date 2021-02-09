@@ -3,7 +3,7 @@
 
 title: View and update entity data with Excel 
 description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. 
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

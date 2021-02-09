@@ -190,6 +190,10 @@ Here are the situations where you might use the **Sync** function:
 - If you aren't sure whether a change might be the second successive change from Dataverse, it might make sense to run the **Sync** function.
 - If you receive an error message about updating a value from Supply Chain Management, run the **Sync** function, and then retry the update in Dataverse.
 
+## Cancelling the posting process
+
+If the product receipt posting process is cancelled during processing, then dual-write might create a product receipt row in Dataverse, but not create a product receipt row in Supply Chain Management. This situation happens because dual-write does not support distributed transactions.
+
 ## Templates
 
 The following templates are available for the integration of procurement-related documents.
