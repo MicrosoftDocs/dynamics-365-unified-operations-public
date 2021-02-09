@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
+This topic explains the data entities that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
 
 Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient. In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider. They then receive machine-readable invoice metadata together with a scanned image of each invoice. To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system. Now this “last mile” automation is enabled out of the box, through an invoice automation solution.
 
@@ -121,7 +121,6 @@ This list page includes the following fields that come in via the feed:
 This list page also has a preview pane that you can used in the following ways:
 
 + View the whole error message, so that you don’t have to expand the **Error message** column in the grid.
-+ View the whole list of attachments for the invoice, if any attachments came with the invoice.
 
 The list page supports the following actions:
 
@@ -130,11 +129,7 @@ The list page supports the following actions:
 
 ### Exception details page
 
-When you start edit mode, the exception details page for the invoice that has issues appears. If there are any attachments, the invoice and the default attachment appear side by side on the exception details page.
-
-![Exception details page](media/vendor_invoice_automation_03.png)
-
-In the preceding illustration, there weren’t any lines for the vendor invoice header that came in. Therefore, the lines section is empty.
+When you start edit mode, the exception details page for the invoice that has issues appears. If the invoice that has issues had an attachment, the attachment will not be displayed on the exception details page. The attachment will need to be reattached to the invoice.
 
 The exception details page supports the following operation:
 
