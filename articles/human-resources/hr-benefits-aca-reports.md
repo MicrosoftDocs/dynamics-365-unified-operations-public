@@ -82,4 +82,5 @@ Excel.
 
 If you need to report covered individuals because as an employer you provide self-insured coverage you can also view any dependents covered under benefit plans that have been marked as **ACA reportable** by selecting the View Dependent coverage action on the action pane strip.
 
-**Note:** Only benefits whose plan has been marked as **ACA reportable** will display in the inquiry window.
+> [!NOTE]
+> Only benefit plans marked as **ACA reportable** will display in the inquiry window.
