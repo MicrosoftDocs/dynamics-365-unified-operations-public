@@ -3,7 +3,7 @@
 
 title: Customize the Open in Microsoft Office menu
 description: This topic provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom: 270774
 ms.assetid: 3ff1184b-1a8a-4102-9600-f1776634d95f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 

@@ -3,7 +3,7 @@
 
 title: Office integration tutorial
 description: In this tutorial, you will use and build Office integration experiences that involve Excel, Word, Document Management, and email. 
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 04/24/2020
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom: 10884
 ms.assetid: 65fb607a-58e4-4800-81b5-6058acb003cb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -258,7 +258,7 @@ When relationships exist between entities, a relationship lookup is shown.
 2.  Click **View** &gt; **Application Explorer** (or press Ctrl+E, Ctrl+E).
 3.  Navigate to **AOT** &gt; **Data Model** &gt; **Tables** &gt; **FMCustGroup**.
 4.  Right-click, and then click **Open designer**.
-5.  In the designer, right-click **FMCustGroup**, and then click **Addins** &gt; **Create data entity**. Artifacts are added to the project.
+5.  In the designer, right-click **FMCustGroup**, and then click **Add-ins** &gt; **Create data entity**. Artifacts are added to the project.
 6.  Open the designer view for **FMCustGroupEntity**.
 7.  In the property sheet for **FMCustGroupEntity**, set **Public Collection Name** to **FleetCustomerGroups** and **Public Entity Name** to **FleetCustomerGroup**.
 8.  Add the **CustGroup** and **Description** fields to the **AutoLookup** field group.

@@ -3,7 +3,7 @@
 
 title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 04/28/2020
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom: 72263
 ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
