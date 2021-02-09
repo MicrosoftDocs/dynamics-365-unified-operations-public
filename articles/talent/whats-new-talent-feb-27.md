@@ -121,7 +121,7 @@ To update your existing template, follow these steps.
 
 2. Add the following mappings.
     
-    [![Mapping](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
+    [![Add mappings](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
 
     1. cdm_jobpositionnumber cdm_jobspositionnumb... = POSITIONID
        cdm_parentjobpositionid.cdm-jobpositionnumb... = PARENTPOSITIONID
