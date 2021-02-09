@@ -2302,6 +2302,8 @@
           href: localizations/italy.md
         - name: VAT statements details
           href: localizations/emea-ita-vat-statements-details.md
+        - name: Quarterly VAT communication report
+          href: localizations/emea-ita-quarterly-vat-communication.md
         - name: Black list report
           href: localizations/emea-ita-black-list-report.md
         - name: Competence date
