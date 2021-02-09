@@ -53,27 +53,27 @@ To enter exceptions to any of the Affordable Care coverage group values, select 
 
 ## Reporting health care coverage
 
-In addition to tracking what if any health insurance coverage was offered to a full-time employee, if the employer offers employer-sponsored self-insured health coverage for which the employee is enrolled (regardless of whether their employment status is full-time or part-time), additional information needs to be reported on the 1095-C. Each employee (including dependents) covered by the employer-sponsored benefit plans needs to be included on the report for the months they were covered. 
+In addition to tracking health insurance coverage offered to full-time employees, if the employer offers employer-sponsored self-insured health coverage for which the employee is enrolled (regardless of whether their employment status is full-time or part-time), additional information needs to be reported on the 1095-C. Each employee (including dependents) covered by the employer-sponsored benefit plans needs to be included on the report for the months they were covered. 
 
-You can indicate whether or not each Benefit plan must be reported by selecting the **ACA reportable** check box.
+You can indicate whether or not each benefit plan must be reported by selecting the **ACA reportable** check box.
 
-In addition, if employees have chosen to have any of their dependents covered under a benefit you can indicate the dates the dependent was covered for each employee on the Maintain benefits page. To indicate that the dependent is covered under the benefit, choose the Edit button in the action pane of the Dependents FastTab.
+In addition, if employees have chosen to have any of their dependents covered under a benefit, you can indicate the dates the dependent was covered for each employee on the **Maintain benefits** page. To indicate that the dependent is covered under the benefit, select the **Edit** button in the action pane of the **Dependents** fast tab.
 
 On the **Dependent coverage date manager** page, you can indicate the dates the dependent was covered by the benefit. Entering dates on this page will automatically select the **Covered** checkbox on the **Maintain benefits** page.
 
 ## Generate 1095-B and 1095-C forms
 
-You can also generate 1095-B and 1095-C forms from with in the product, and distribute them to each of your employees. Electronically generating 1095-C and the corresponding 1094-C transmittal files which can be used to send to the IRS, can also be generated from the system.  
+You can also generate 1095-B and 1095-C forms from within the product, and distribute them to each of your employees. The system can also electronically generate 1095-C forms and the 1094-C IRS transmittal files.  
 
-When generating the 1095-C form, enter in the appropriate tax year and indicate if social security numbers should be masked. If you are printing 1095-C forms for more than 500 employees, you will receive more than one PDF file. It’s recommended that you increase the **Maximum file size** in the **Document management parameters** window to 150 MB.
+When generating the 1095-C form, enter the appropriate tax year and indicate if social security numbers should be masked. If you're printing 1095-C forms for more than 500 employees, you'll receive more than one PDF file. It’s recommended that you increase the **Maximum file size** in the **Document management parameters** window to 150 MB.
 
 ## Viewing information
 
 You can use the **Worker Affordable Care coverage** page to see which employees have been assigned to each coverage group, which employees don’t need to be included on a report, and which employees are unassigned.
 
-If any of the default values from the Affordable Care coverage group have been overridden an asterisk will appear next to the value that was changed. If the values for all 12 months are the same and haven’t been overridden, the value will print in the **All 12 months** column.
+If any of the default values from the Affordable Care coverage group have been overridden, an asterisk will appear next to the value that was changed. If the values for all 12 months are the same and haven’t been overridden, the value will print in the **All 12 months** column.
 
-You can also use the inquiry window to understand which employees have been flagged as not ACA reportable, meaning you don’t need to track whether coverage was offered to them and will not need to issue a 1095-C to them at the end of the year. By selecting **Not ACA reportable** in the **Filter by** field, you can generate a list of all employees that have been flagged to not receive a 1095-C.
+You can also use the inquiry window to understand which employees have been flagged as not ACA reportable. You don’t need to track whether coverage was offered to them and won't need to issue a 1095-C to them at the end of the year. By selecting **Not ACA reportable** in the **Filter by** field, you can generate a list of all employees that have been flagged to not receive a 1095-C.
 
 In addition to viewing a list of employees that are not ACA reportable, you can also view any employees who are unassigned (the **ACA Report coverage** field is empty) or that have been assigned to an Affordable Care coverage group that is expired for the year selected in the **Year** field.
 
