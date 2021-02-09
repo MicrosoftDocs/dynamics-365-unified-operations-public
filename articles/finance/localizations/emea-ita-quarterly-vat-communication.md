@@ -5,7 +5,7 @@ title: Quarterly VAT communication report
 description: This topic provides information about Quarterly VAT communication report in Italy.
 author: LizaGolub
 manager: AnnBe
-ms.date: 02/05/2021
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -116,21 +116,21 @@ Find more information about how to set up number sequences in [Set up number seq
 13. To specify the number sequence that the system should use for the progressive numbers that are included in the file name for the report file, on the **Format designer** page, on the **Mapping** tab, select **Add root**.
 14. In the drop-down dialog box, expand **Dynamics 365 for Operations**, and then select **Number sequence**.
 
-   ![Add number sequence to your format](./media/add-num-seq.png)
+      ![Add number sequence to your format](./media/add-num-seq.png)
 
 15. Enter a name, select the number sequence that you created earlier, and then select **OK** to create the number sequence.
 
-    ![Specify a name for your number sequence in ER format](./media/num0seq-name.png)
+       ![Specify a name for your number sequence in ER format](./media/num0seq-name.png)
 
 16. On the **Format designer** page, select **File** on the left side, and then, on the **Mapping** tab, select the **Edit** button (pencil symbol) for the **File name** field.
 
-   ![Edit formula for name of the file with number sequence name](./media/file-name-edit.png)
+    ![Edit formula for name of the file with number sequence name](./media/file-name-edit.png)
 
 17. Update **"IT"&model.Frontispiece.FiscalCode&"_LI_00000"** with a formula that includes a link to the new number sequence:
     
-    - **"IT"&model.Frontispiece.FiscalCode&"_LI_"&LIPE_file_num**. Here, **LIPE_file_num** is the name that you gave to the number sequence. To add **LIPE_file_num** to the formula, click **Add data source**. When you've finished, select **Save**.
+      - **"IT"&model.Frontispiece.FiscalCode&"_LI_"&LIPE_file_num**. Here, **LIPE_file_num** is the name that you gave to the number sequence. To add **LIPE_file_num** to the formula, click **Add data source**. When you've finished, select **Save**.
 
-   ![Edit formula for file name with number sequence name](./media/file-name-formula-designer.png)
+      ![Edit formula for file name with number sequence name](./media/file-name-formula-designer.png)
 
 18. Save your changes in the ER format, and complete the configuration.
 
