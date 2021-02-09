@@ -273,7 +273,7 @@ To obtain your identity provider issuer URL, follow these steps.
 1. In the tab that opens in your browser, a metadata page is displayed. Copy the identity provider issuer URL (the value for **"issuer"**).
  - Example only: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
  
-OR: To construct the same metadata URL manually, do the following steps.
+**OR**: To construct the same metadata URL manually, do the following steps.
 
 1. Create a metadata address URL in the following format using your B2C tenant and policy: ``https://<B2CTENANTNAME>.b2clogin.com/<B2CTENANTNAME>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``
     - Example: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``.
