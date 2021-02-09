@@ -134,4 +134,4 @@ When you select the **Address changes** tile, a new page displays the details of
 > [!NOTE]
 > If you want to receive an alert or email about these address changes, you can create a new alert rule on the **Options** tab in the Action Pane. For more information about alert rules, see [Create alert rules](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
 
-> If you want to configure a workflow for the address changes, you can select the **Send externally** option on your alert rule, and then use Power Automate to trigger the business event and configure a workflow. For more information, see [Alerts as business events](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
+> If you want to configure a workflow for the address changes, you can select the **Send externally** option on your alert rule, and then use Power Automate to trigger the business event and configure a workflow. For more information, see [Alerts as business events](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
