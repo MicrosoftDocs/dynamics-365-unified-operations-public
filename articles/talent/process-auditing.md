@@ -42,7 +42,7 @@ To set up track changes in recruiting data, follow these steps:
 
 2. Select **Settings** (the gear icon), choose **Advanced customizations**, and then select **Resources** under **Developer resources**. 
 
-3. On the **Developer Resources** page, copy the value in the **Instance Web API value** column. For example, the value could look like: \*https://yourorgname.api.crm.dynamics.com/api/data/v9.1/.\*
+3. On the **Developer Resources** page, copy the value in the **Instance Web API value** column.
 
 4. You can then query the data from one of the following Tables:
   - Job opening history (msdyn_jobopeninghistories)
