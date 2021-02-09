@@ -43,7 +43,7 @@ ms.dyn365.ops.version: 10.0.17
 
 ## Turn on the XXXXX feature
 
-<!-- Include this section if needed (we do). Replace XXXXX with actual values -->
+<!-- Always include this section if needed (it is here). Replace XXXXX with actual values, exactly as seen in the UI. -->
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
@@ -52,10 +52,10 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 ## Create and manage user settings
 
-<!-- Add a full intro to this section. This time focus with more of a feature focus (what am I about to do, and why). Mention that concept of "most specific" setting and how that let's us set up an "All" profile, specific device profiles, and specific device/user profiles. -->
+<!-- Add a full intro to this section. This time with more of a feature focus (what am I about to do, and why). Mention the concept of "most specific" setting and how that let's us set up an "All" profile, specific device profiles, and specific device/user profiles. -->
 
-To create and manage user settings for your mobile devices: 
-<!-- I like numbered procedures. They don't always fit, but often fit more often than you might think. -->
+To create and manage user settings for your mobile devices:
+<!-- I like numbered procedures. They don't always fit, but often fit more often than you might think. Talk directly to the reader (second person) or name the role (such as "worker") for tasks likely done by somebody not the reader, or "the system" if something will happen automatically (avoid passive voice). -->
 
 1. Go to **XXX \> XXX \> XXX**.
 1. Select a user setting from the list pane or select **New** from the Action Pane to create a new one. <!-- Maybe note briefly how the records in the list pane are labelled and what that says about their specificity (though we may have covered enough of this in the intro). -->
@@ -67,11 +67,11 @@ To create and manage user settings for your mobile devices:
     - **Button position** - 
     - **Display orientation** -
     - **Scan with camera** - <!-- Describe the effect of both Yes and No options. It's often less obvious than you might think. -->
-    - **Show product photo** - <!-- This one is obvious though, so you can say something like "Choose whether or not to show product photos ..." and then mention where the photos may appear and maybe where they come from. -->
+    - **Show product photo** - <!-- This Yes/No option is obvious though, so you can say something like "Choose whether or not to show product photos ..." and then mention where the photos may appear and maybe where they come from. -->
     - **Display color theme** - <!-- Often we might add a sub-bullet list to describe each option here, but in this case I don't think we need to. -->
     - **Sound level** - <!-- Mention the range of valid values. -->
     - **Vibration level** - 
-    - **Text scale percentage** - 
+    - **Text scale percentage** - <!-- Mention the range of valid values. Percentage of what? -->
     - **Button scale percentage** - 
 
 ## Create and manage mobile device brands
@@ -85,6 +85,6 @@ To create and manage your mobile device brands:
 1. Make the following settings in the header section of the new or selected device:
     - **Device brand name** - 
     - **Description** - 
-1. Use the **Mobile device models** FastTab to <!-- Explain the general purpose of the items here -->. Use the toolbar on this FastTab to add or remove rows in the grid. Make the following settings for each row:
+1. Use the **Mobile device models** FastTab to <!-- Explain the general purpose of the items here. -->. Use the toolbar on this FastTab to add or remove rows in the grid. Make the following settings for each row:
     - **Device model ID** - 
     - **Description** - 
