@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate Affordable Care Act (ACA) reports
-description: Affordable Care Act (ACA) reporting assists employers who need to track the information reported on forms 1095-B and 1095-C in support of the **Employer Mandate** portion of the Affordable Care Act.
+description: Affordable Care Act (ACA) reporting generates forms 1095-B and 1095-C in support of the **Employer Mandate** portion of the Affordable Care Act.
 author: andreabichsel
 manager: tfehr
 ms.date: 02/03/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Generate ACA reports
 
-Affordable Care Act (ACA) reporting assists employers who need to track the information reported on forms 1095-B and 1095-C in support of the **Employer Mandate** portion of the Affordable Care Act.
+Affordable Care Act (ACA) reporting generates forms 1095-B and 1095-C in support of the **Employer Mandate** portion of the Affordable Care Act.
 
 > [!NOTE]
 > ACA reporting is only enabled for legal entities in the United States.
@@ -79,7 +79,7 @@ In addition, you can view any employees who are unassigned (the **ACA Report cov
 
 You can export lists of employees that were generated using any of the filtering options to Excel.
 
-If you need to report covered individuals because as an employer you provide self-insured coverage you can also view any dependents covered under benefit plans that have been marked as **ACA reportable** by selecting the View Dependent coverage action on the action pane strip.
+If you need to report covered individuals because you provide self-insured coverage, you can view any dependents covered under benefit plans marked as **ACA reportable**. Select **View Dependent coverage** on the action pane strip.
 
 > [!NOTE]
-> Only benefit plans marked as **ACA reportable** will display in the inquiry window.
+> Only benefit plans marked as **ACA reportable** display in the inquiry window.
