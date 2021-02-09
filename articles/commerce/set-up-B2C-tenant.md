@@ -117,7 +117,7 @@ Azure AD B2C provides three basic user flow types:
 
 You can choose to use the default user flows provided by Azure AD, which will display a page hosted by AAD B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
 
-To customize the user policy pages for Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
+To customize the user policy pages with pages built in Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### Create a sign up and sign in user flow policy
 
@@ -125,7 +125,7 @@ To create a sign up and sign in user flow policy, follow these steps.
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
-1. On the **Recommended** tab, select **Sign up and sign in**.
+1. Select **Sign up and sign in** policy and choose the **Recommended** version.
 1. Under **Name**, enter a policy name. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
 1. Under **Identity providers**, select the appropriate check box.
 1. Under **Multifactor Authentication**, select the appropriate choice for your company. 
@@ -155,9 +155,9 @@ To create a profile editing user flow policy, follow these steps.
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
-1. On the **Recommended** tab, select **Profile editing**.
+1. Select **Profile editing** and choose the **Recommended** version.
 1. Under **Name**, enter the profile editing user flow. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
-1. Under **Identity providers**, select **Local Account SignIn**.
+1. Under **Identity providers**, select **Email signIn**.
 1. Under **User attributes**, select the following check boxes:
     - **Email Addresses** (**Return claim** only)
     - **Given Name** (**Collect attribute** and **Return claim**)
@@ -176,7 +176,7 @@ To create a password reset user flow policy, follow these steps.
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
-1. On the **Recommended** tab, select **Password Reset**.
+1. Select **Password Reset** and choose the **Recommended** version.
 1. Under **Name**, enter a name for the password reset user flow.
 1. Under **Identity providers**, select **Reset password using email address**.
 1. Select **Create**.
@@ -267,12 +267,19 @@ To update headquarters with the new Azure AD B2C information, follow these steps
 ### Obtain issuer URL
 
 To obtain your identity provider issuer URL, follow these steps.
+1. Navigate to your **Sign up and sign in** user flow in the Azure AD B2C page of the Azure Portal.
+1. Select **Page layouts** in the left menu and with 'Unified sign up or sign in page' selected under Layout name, select **Run user flow**.
+1. Make sure your 'Application' is set to your intended AAD B2C Application created above, and click the link presented under the **Run user flow** header (the link includes ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``.
+1. In the tab that opens in your browser, a metadata page is displayed. Copy the identity provider issuer URL (the value for **"issuer"**).
+ - Example only: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
+ 
+OR: To construct the same metadata URL manually, do the following steps.
 
 1. Create a metadata address URL in the following format using your B2C tenant and policy: ``https://<B2CTENANTNAME>.b2clogin.com/<B2CTENANTNAME>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``
     - Example: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``.
 1. Enter the metadata address URL into a browser address bar.
 1. In the metadata, copy the identity provider issuer URL (the value for **"issuer"**).
-    - Example: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
+    - Example only: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
 
 ## Configure your B2C tenant in Commerce site builder
 
