@@ -61,9 +61,9 @@ In addition, if employees have chosen to have any of their dependents covered un
 
 On the **Dependent coverage date manager** page, you can indicate the dates the dependent was covered by the benefit. Entering dates on this page will automatically select the **Covered** checkbox on the **Maintain benefits** page.
 
-## Generate 1095B and 1095C forms
+## Generate 1095-B and 1095-C forms
 
-You can also generate 109-B and 1095-C forms from with in the product, and distribute them to each of your employees. Electronically generating 1095-C and the corresponding 1094-C transmittal files which can be used to send to the IRS, can also be generated from the system.  
+You can also generate 1095-B and 1095-C forms from with in the product, and distribute them to each of your employees. Electronically generating 1095-C and the corresponding 1094-C transmittal files which can be used to send to the IRS, can also be generated from the system.  
 
 When generating the 1095-C form, enter in the appropriate tax year and indicate if social security numbers should be masked. If you are printing 1095-C forms for more than 500 employees, you will receive more than one PDF file. It’s recommended that you increase the **Maximum file size** in the **Document management parameters** window to 150 MB.
 
