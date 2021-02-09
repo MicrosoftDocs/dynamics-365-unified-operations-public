@@ -22,14 +22,14 @@ ms.author: liza-golub
 
 ---
 
-# Adding filters to audit file configuration
+# Adding a filter to audit file configuration
 
 [!include [banner](../includes/banner.md)]
 
 This article explains how to add a filer for data in German audit file on example of filter for Posting layer field in general ledger transactions data.
-As it is explained in [German audit file (GDPdU/GoBD) overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-deu-gdpdu-audit-data-export#sachkontobuchungen) SPEZIALBUCHUNG (Posting layer) field of Sachkontobuchungen data set is collected from $GeneralJournalEntry/PostingLayer electronic reporting data source path. To add possibility of filtering data in the report by SPEZIALBUCHUNG (Posting layer) field follow the steps:
+As it is explained in [German audit file (GDPdU/GoBD) overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-deu-gdpdu-audit-data-export#sachkontobuchungen) SPEZIALBUCHUNG (Posting layer) field of **Sachkontobuchungen** data set is collected from **$GeneralJournalEntry/PostingLayer** electronic reporting data source path. To add possibility of filtering data in the report by **SPEZIALBUCHUNG** (Posting layer) field follow the steps:
 
-1.	Open Workspaces > Electronic reporting and click on Reporting configurations button.
+1.	Open **Workspaces** > **Electronic reporting** and click on **Reporting configurations** button.
 2.	Select **Data export model** configuration in the configuration tree and derive it creating a format that will be used in your company.
 3.	Select derived configuration, click **Designer** on the Action pane, click **Map model to datasource** on the Action pane of **Data model** page, select “Group” definition on the **Model to datasource mapping** page, click **Designer** on the Action pane and search for “$GeneralJournalEntry” data source on the **DATA SOURCES** section of the model mapping design page.
 4.	“$GeneralJournalEntry” data source is a calculated record list sourcing data from GeneralJournalEntry table (thin can be observed from the formula for “$GeneralJournalEntry”).
