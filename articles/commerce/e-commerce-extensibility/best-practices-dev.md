@@ -61,23 +61,6 @@ Modules can be excluded by adding the module name to the **excludeModules** prop
 
 You can verify that the module was successfully excluded by comparing the chunk size displayed after a build, or by testing the module in a development environment. For the latter method, you can confirm that the excluded module is not rendered by using the URL `http://localhost:4000/modules?type=<your-module-name>` (after running the Node server by using the "yarn start" command).
 
-### Customize JavaScript chunking
-
-By default, when modules are compiled, the JavaScript code is randomly grouped into different webpack chunks. However, this behavior might not be optimal, because the JavaScript chunks that are served to a client browser might contain JavaScript for modules that aren't used on a particular page. By customizing the JavaScript chunking, you can reduce the chunk size that is sent to a client and help improve page load times.
-
-For example, a product details page (PDP) might render the checkout and buy box modules, whereas the home page might render the carousel and content block modules. However, random chunking logic might group the checkout and carousel modules into one chunk, and the buy box and content block modules into another chunk. In this case, because the client requires both JavaScript chunks to render the PDP, extraneous JavaScript is downloaded.
-
-For information about how to enable nonrandom JavaScript chunking, see [Platform settings file](platform-settings.md). The **enableChunkByModulePackage** property should be set to **true**, and module groups can be configured for the **chunkingGroupPreference** property settings in the following format: `"chunkingGroupPreference": [[<group1>], [<group2>]]`.
-
-Modules that belong to the same group will be bundled together into the same chunk, as shown in the following example.
-
-```json
-"enableChunkByModulePackage": true,
-"chunkingGroupPreference": [["module1", "module2"], ["module", "module4"]]
-```
-
-If the **chunkingGroupPreference** property settings aren't configured, modules from the same module package under the supported namespace will be bundled together.
-
 ## Optimize images
 
 One of the biggest performance hits to a web page can be the downloading of images. You should use CSS whenever possible to generate images for items such as buttons, but in cases where you need marketing or product images you should upload images to the Commerce site builder [Media Library](../dam-overview.md). Images uploaded to the Media Library should be of high quality and resolution to cover all web site usage scenarios. Images served from the Media Library will automatically be resized using an image resizer service.
