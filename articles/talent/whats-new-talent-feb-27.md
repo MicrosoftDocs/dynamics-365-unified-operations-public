@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (February 27, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for February 27, 2019.
 author: andreabichsel
 manager: tfehr
 ms.date: 02/27/2019
@@ -121,7 +121,7 @@ To update your existing template, follow these steps.
 
 2. Add the following mappings.
     
-    [![Mapping](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
+    [![Add mappings](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
 
     1. cdm_jobpositionnumber cdm_jobspositionnumb... = POSITIONID
        cdm_parentjobpositionid.cdm-jobpositionnumb... = PARENTPOSITIONID
