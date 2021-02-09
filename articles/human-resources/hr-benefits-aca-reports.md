@@ -59,7 +59,7 @@ You don't need to track some ACA coverage information, such as for part-time emp
 - **Employee share of cost**
 - **Safe Harbor**
 
-To enter exceptions to any of the Affordable Care coverage group values, select the **Affordable Care Coverage** link on the **Worker detail** page under the **Additional information** section on the **Employment tab**.
+To enter exceptions for Affordable Care coverage group values, select the **Affordable Care Coverage** link on the **Worker detail** page under the **Additional information** section on the **Employment tab**.
 
 ## Reporting health care coverage
 
