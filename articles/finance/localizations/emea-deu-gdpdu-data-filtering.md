@@ -44,6 +44,6 @@ As it is explained in [German audit file (GDPdU/GoBD) overview](https://docs.mic
 
 With this change when you will run **Data export** periodic tasks, you will see **Records to include** on the fast tab on the dialog of the report for General journal entry table. Click **Filter* button to specify conditions for general ledger entries filtering.
 
-![Setup filtering conditions on Data export periodic tasks](media/filer-setup.png.png)
+![Setup filtering conditions on Data export periodic tasks](media/filter-setup.png)
 
 To filter by **Posting layer** field of the **General journal entry** table, select **Posting layer** in **Field** column and select necessary posting layer in **Criteria** column.
