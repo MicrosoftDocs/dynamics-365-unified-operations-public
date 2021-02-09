@@ -6,7 +6,6 @@ description: This article explains how to add a filer for data in German audit f
 author: liza-golub
 ms.date: 02/09/2021
 ms.topic: article
-ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 
