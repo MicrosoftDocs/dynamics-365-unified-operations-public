@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate Affordable Care Act (ACA) reports
-description: Functionality is available to assist employers that need to track the information reported on forms 1095-B and 1095-C in support of the Employer Mandate portion of the Affordable Care Act. Note this functionality is only enabled for legal entities in the United States.
+description: Affordable Care Act (ACA) reporting assists employers who need to track the information reported on forms 1095-B and 1095-C in support of the **Employer Mandate** portion of the Affordable Care Act.
 author: andreabichsel
 manager: tfehr
 ms.date: 02/03/2020
@@ -39,17 +39,17 @@ Affordable Care Act (ACA) reporting assists employers who need to track the info
 
 ## Getting started
 
-When beginning to track information to report on forms 1095-B and 1095-C, you must first create one or more Affordable Care coverage groups. These Affordable Care coverage groups will be used to indicate the offer of coverage that was provided to an employee, the employee’s share of the lowest cost monthly premium (if the cost is above the federal poverty line) as well as Safe Harbor used by the employer, if applicable. Using Affordable Care Act groups enables you to manage the information for these fields without needing to touch every employee record where the conditions are the same. In addition, Affordable Care coverage groups can easily be assigned to one or more employees using the Mass assign functionality on the page.
+When beginning to track information to report on forms 1095-B and 1095-C, you must first create one or more ACA coverage groups. These ACA coverage groups will be used to indicate the offer of coverage that was provided to an employee, the employee’s share of the lowest cost monthly premium (if the cost is above the federal poverty line), and Safe Harbor used by the employer, if applicable. Using ACA groups enables you to manage the information for these fields without needing to touch every employee record where the conditions are the same. You can easily assign Affordable Care coverage groups to one or more employees using the Mass assign option on the page.
 
 ## Maintaining multiple versions of a coverage group
 
-You can maintain multiple versions of any coverage group, which allows you to make changes that keep the group’s information current, without having to create a new group and reassign employees to it when something changes in your organization or in the benefits that are offered. 
+You can maintain multiple versions of any coverage group. This functionality allows you to make changes without having to create a new group and reassign employees to it. 
 
-After you’ve created the Affordable Care coverage groups that you need, you can choose to mass assign the groups to employees using the **Mass assignment** functionality on the page, or you can go to each employee and indicate whether ACA information needs to tracked and reported for that employee as well as assigning the employee to an Affordable Care coverage group.
+After you’ve created ACA coverage groups, you can mass assign the groups to employees with the **Mass assignment** option. You can also go to each employee and indicate whether ACA information needs to be tracked and reported for that employee, and assign the employee to an ACA coverage group.
 
-If affordable care coverage information doesn’t need to be tracked or reported for an employee, for example if they are a part-time employee, the **Report coverage** field could be set to No. Although each employee for which ACA information needs to be tracked needs to be assigned to an Affordable Care coverage group, you can still change the **Offer of coverage**, **Employee share of cost** and **Safe Harbor** options for any month – or months – that may need different values than those entered in the Affordable Care coverage group.
+Some ACA coverage information doesn’t need to be tracked or reported, such as for part-time employees. In this case, set the **Report coverage** field to **No**. Although each employee for which ACA information needs to be tracked needs to be assigned to an Affordable Care coverage group, you can still change the **Offer of coverage**, **Employee share of cost** and **Safe Harbor** options for any month that may need different values than those entered in the Affordable Care coverage group.
 
-To enter exceptions to any of the Affordable Care coverage group values, click on the Affordable Care Coverage link found on the Worker detail page, which is under the Additional information section on the Employment tab.
+To enter exceptions to any of the Affordable Care coverage group values, select the **Affordable Care Coverage** link on the **Worker detail** page under the **Additional information** section on the **Employment tab**.
 
 ## Reporting health care coverage
 
