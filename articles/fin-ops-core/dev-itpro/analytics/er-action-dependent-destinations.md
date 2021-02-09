@@ -5,7 +5,7 @@ title: Configure action-dependent ER destinations
 description: This topic explains how to configure action-dependent destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/25/2021
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ In Microsoft Dynamics 365 Finance **version 10.0.17 and later**, an ER format ca
 
 ## Make action-dependent ER destinations available
 
-To configure action-dependent ER destinations in the current Finance instance and enable the [new](er-apis-app10-0-17.md) ER API, open the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace, and turn on the **Configure specific ER destinations to be used for different PM actions** feature. To use configured ER destinations for [specific](#reports-list-wave1) reports at runtime, enable the **Route output of PM reports based on ER destinations that are user action specific (wave 1)** feature.
+To configure action-dependent ER destinations in the current Finance instance and enable the [new](er-apis-app10-0-17.md) ER API, open the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace, and turn on the **Configure specific ER destinations to be used for different PM actions** feature. To use configured ER destinations for [specific](#reports-list-wave1) reports at runtime, enable the feature, **Route output of PM reports based on ER destinations that are user action specific (wave 1)**.
 
 ## Configure action-dependent ER destinations
 
@@ -114,17 +114,17 @@ Follow these steps to verify the user action code that is provided.
 
 ## <a name="reports-list-wave1">List of business documents (wave 1)</a>
 
-The presented in this list business documents are controlled by the **Route output of PM reports based on ER destinations that are user action specific (wave 1)** feature.
+The following list of business documents are controlled by the feature, **Route output of PM reports based on ER destinations that are user action specific (wave 1)**:
 
 - Customer invoice (Free text invoice)
-- Customer invoice (Sales Invoice)
+- Customer invoice (Sales invoice)
 - Purchase order
 - Purchase order purchase inquiry
 - Sales order confirmation
 - Collections letter note
 - Customer account statement
 - Interest note
-- Vendor Payment advice
+- Vendor payment advice
 - Request for quotation
 
 ## Additional resources
