@@ -42,7 +42,7 @@ As it is explained in [German audit file (GDPdU/GoBD) overview](https://docs.mic
 7.	Save, close and complete the configuration.
 8.	Unmark **Default for model mapping** parameter for parent **Data export model** configuration if it was marked and mark your derived configuration as **Default for model mapping**. 
 
-With this change when you will run **Data export** periodic tasks, you will see **Records to include** on the fast tab on the dialog of the report for General journal entry table. Click **Filter* button to specify conditions for general ledger entries filtering.
+With this change when you will run **Data export** periodic tasks, you will see **Records to include** on the fast tab on the dialog of the report for General journal entry table. Click **Filter** button to specify conditions for general ledger entries filtering.
 
 ![Setup filtering conditions on Data export periodic tasks](media/filter-setup.png)
 
