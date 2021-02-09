@@ -43,9 +43,7 @@ The **platform.settings.json** file under the **\\src\\settings\\** directory ho
     "dataActionTimeoutInMs": 4000,
     "minClientChunkSize": 30000,
     "excludeModules": [ ],
-    "namespaceExtensions" : [ ],
-    "enableChunkByModulePackage": false,
-    "chunkingGroupPreference": [ ] 
+    "namespaceExtensions" : [ ]
 }
 ```
 
@@ -65,22 +63,6 @@ The **excludedModules** property defines a set of modules that will be excluded 
 
 The **namespaceExtensions** property defines the supported namespaces that are used for module registration. By default, the only supported namespace is **@msdyn365-commerce-modules**. This namespace contains all the module library modules and the core set of modules. The module package name is defined in the following format: **\<namespace\>\/\<module_name\>**. If modules are published that use a new namespace, the namespace can be added to the settings.
 
-## enableChunkByModulePackage
-
-The **enableChunkByModulePackage** property is used to enable webpack JavaScript code for modules to be chunked in an ordered way. By default, modules from the same module package will be bundled together into the same webpack JavaScript chunk. By setting this property to **true**, you can use the **chunkingGroupPreference** property setting to specify groups of modules that should be bundled together into a chunk. The default value is **false**.
-
-When the Commerce e-commerce runtime loads a page, all JavaScript chunks that contain the required modules for the page will be sent to the client. To help reduce the JavaScript code that is sent to a client browser for a page, you can group together modules that interact with each other on a page. This grouping can help reduce the page load time.
-
-## chunkingGroupPreference
-
-The **chunkingGroupPreference** property is used to specify groups of modules that will be bundled together into a webpack JavaScript chunk when the **enableChunkByModulePackage** property is set to **true**. The default chunking logic will bundle modules from the same package into the same chunk.
-
-For example, if module1 and module2 will always be used at the same time on the same page, you can add module1 and module2 to one chunk group. In this way, you prevent them from being split between different chunks. Module1 and module2 will then be sent to a browser client in a single JavaScript chunk instead of, perhaps, multiple JavaScript chunks that contain other, unused modules.
-
-> [!NOTE]
-> Depending on the setting of the **minClientChunkSize** property, other modules might automatically be merged into a defined chunking group.
-
-If the same module name exists in different namespaces, the module namespace can be used to specify the module name (for example, **\[\<namespace\>\/<module\_name1\>, \<module\_name2\>\]**). The namespace that is used for local modules is **\_\_local\_\_**.
 
 ## Additional resources
 
