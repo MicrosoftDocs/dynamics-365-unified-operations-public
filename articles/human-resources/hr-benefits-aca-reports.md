@@ -89,7 +89,7 @@ In addition, you can view any employees who are unassigned (the **ACA Report cov
 
 You can export lists of employees that were generated using any of the filtering options to Excel.
 
-If you need to report covered individuals because you provide self-insured coverage, you can view any dependents covered under benefit plans marked as **ACA reportable**. Select **View Dependent coverage** on the action pane strip.
+If you need to report covered individuals because you provide self-insured coverage, you can view any dependents covered under benefit plans marked as **ACA reportable**. Select **View Dependent coverage** on the action pane.
 
 > [!NOTE]
 > Only benefit plans marked as **ACA reportable** display in the inquiry window.
