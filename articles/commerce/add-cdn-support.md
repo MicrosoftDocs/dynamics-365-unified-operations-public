@@ -82,6 +82,7 @@ To configure a backend pool in Azure Front Door Service, follow these steps.
 
 1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a backend pool as a custom host that has a backend host header the same as **&lt;ecom-tenant-name&gt;.commerce.dynamics.com**.
 1. Under **Load balancing**, leave the default values.
+1. Disable health checks for the backend pool
 
 The following illustration shows the **Add a backend** dialog box in Azure Front Door Service with the backend host name entered.
 
