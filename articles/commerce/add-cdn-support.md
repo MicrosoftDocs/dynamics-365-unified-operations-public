@@ -49,9 +49,7 @@ Additionally, the *statics* (JavaScript or Cascading Style Sheets \[CSS\] files)
 
 ## Set up SSL
 
-To help guarantee that SSL is set up, and that statics are cached, you must configure your CDN so that it is associated with the host name that Commerce generated for your environment. You must also cache the following pattern for statics only: 
-
-/\_msdyn365/\_scnr/\*
+To help guarantee that SSL is set up, and that statics are cached, you must configure your CDN so that it is associated with the host name that Commerce generated for your environment.
 
 After you provision your Commerce environment with the custom domain that is provided, or after you provide the custom domain for your environment by using a service request, point your custom domain to the host name or endpoint that Commerce generated.
 
@@ -82,7 +80,7 @@ For information about how to set up Azure Front Door Service, see [Quickstart: C
 
 To configure a backend pool in Azure Front Door Service, follow these steps.
 
-1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a backend pool as a custom host that has an empty backend host header.
+1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a backend pool as a custom host that has a backend host header the same as **&lt;ecom-tenant-name&gt;.commerce.dynamics.com**.
 1. Under **Load balancing**, leave the default values.
 
 The following illustration shows the **Add a backend** dialog box in Azure Front Door Service with the backend host name entered.
