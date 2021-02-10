@@ -93,15 +93,15 @@ The Human Resources app in Teams supports the following languages:
 
 | Locale ID | Language |
 | --- | --- |
-| de-DE | Deutsch (Deutschland) |
-| es-ES | Español (España, alfabetización internacional) |
-| es-MX | Español (México) |
-| fr-CA | Français (Canada) |
-| fr-FR | Français (France) |
-| it-IT | Italiano (Italia) |
-| nl-NL | Nederlands (Nederland) |
-| pt-BR | Português (Brasil) |
-| tr-TR | Türkçe (Türkiye) |
+| de-DE | German (Germany) |
+| es-ES | Spanish (Spain) |
+| es-MX | Spanish (México) |
+| fr-CA | French (Canada) |
+| fr-FR | French (France) |
+| it-IT | Italian (Italy) |
+| nl-NL | Dutch (Netherlands) |
+| pt-BR | Portuguese (Brazil) |
+| tr-TR | Turkish (Turkey) |
 | zh-CN | Chinese (Simplified) |
 
 ## Known issues
