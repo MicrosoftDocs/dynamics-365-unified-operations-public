@@ -87,6 +87,23 @@ After you've enabled notifications for the Human Resources Teams app, you can tu
 
 6. Select **Save**.
 
+## Supported languages
+
+The Human Resources app in Teams supports the following languages:
+
+| Locale ID | Language |
+| --- | --- |
+| de-DE | Deutsch (Deutschland) |
+| es-ES | Español (España, alfabetización internacional) |
+| es-MX | Español (México) |
+| fr-CA | Français (Canada) |
+| fr-FR | Français (France) |
+| it-IT | Italiano (Italia) |
+| nl-NL | Nederlands (Nederland) |
+| pt-BR | Português (Brasil) |
+| tr-TR | Türkçe (Türkiye) |
+| zh-CN | Chinese (Simplified) |
+
 ## Known issues
 
 | Issue | Status |
