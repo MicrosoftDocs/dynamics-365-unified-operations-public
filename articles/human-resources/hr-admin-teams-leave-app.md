@@ -44,16 +44,16 @@ The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees
 
 ## Install and setup
 
-You can find the Human Resources app in the Teams store. For information about installing the Teams app, see [Manage leave requests in Teams](hr-teams-leave-app.md).
+You can find the Dynamics 365 Human Resources app in the Teams store. For information about installing the Teams app, see [Manage leave requests in Teams](hr-teams-leave-app.md).
 
 For information about managing app permissions in Teams, see [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## Enable notifications for the Human Resources app in Teams
 
-If you want users to receive leave request notifications in the Teams app, you must enable notifications in Human Resources.
+If you want users to receive leave request notifications in the Teams app, you must enable notifications in Dynamics 365 Human Resources.
 
 >[!NOTE]
->Only users who are signed into Teams and using the Human Resources Teams app will receive notifications.
+>Only users who are signed into Teams and using the Dynamics 365 Human Resources Teams app will receive notifications.
 
 1. In Human Resources, select **System administration**.
 
@@ -71,7 +71,7 @@ If you want users to receive leave request notifications in the Teams app, you m
 
 ### Turn Teams notifications on or off for individual users
 
-After you've enabled notifications for the Human Resources Teams app, you can turn notifications on or off for individual users.
+After you've enabled notifications for the Dynamics 365 Human Resources Teams app, you can turn notifications on or off for individual users.
 
 1. In Human Resources, select **System administration**.
 
