@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams. Employees can interact with a bot to request information. The **Time off** tab provides more detailed information. In addition, they can send people information about upcoming time off in teams and chats outside the Human Resources app.
+The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams. Employees can interact with a bot to request information. The **Time off** tab provides more detailed information. Employees can send others information about upcoming time off in Teams and chats outside the Human Resources app.
 
 ![Human Resources Teams leaves app bot](./media/hr-admin-teams-leave-app-bot.png)
 
@@ -118,11 +118,11 @@ If a user is having trouble signing into or using the Human Resources Teams app,
 
 ### Can't sign into the Human Resources app in Teams
 
-If a user contacts you because they can't sign into the app, verify that the user has an associated employee record in Human Resources.
+If a user contacts you because they can't sign into the app, verify that they have an associated employee record in Human Resources.
 
 ### Error when approving leave requests in the Human Resources app in Teams
 
-If a user receives an error while trying to approve leave requests in the Teams app, perform the following troubleshooting steps:
+If a user receives an error while trying to approve,  leave requests in the Teams app, try the following troubleshooting steps:
 
 1. Verify that their Teams account is the same one they use for accessing Human Resources.
 
