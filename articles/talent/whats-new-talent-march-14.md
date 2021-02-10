@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (March 14, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for March 14, 2019.
 author: andreabichsel
 manager: tfehr
 ms.date: 03/14/2019
