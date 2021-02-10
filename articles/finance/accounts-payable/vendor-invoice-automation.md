@@ -129,7 +129,7 @@ The list page supports the following actions:
 
 ### Vendor invoices that failed to import details page
 
-When you start edit mode, the **Vendor invoices that failed to import details** page for the invoice that has issues appears. If the invoice that has issues had an attachment, the attachment will not be displayed on the **Vendor invoices that failed to import details** page. The attachment will need to be reattached to the invoice.
+When you start edit mode, the **Vendor invoices that failed to import details** page for the invoice that has issues appears. If there are issues with an invoice that has an attachment, the attachment will not be displayed on the **Vendor invoices that failed to import details** page. The attachment must be reattached to the invoice.
 
 The **Vendor invoices that failed to import details** page supports the following operation:
 
