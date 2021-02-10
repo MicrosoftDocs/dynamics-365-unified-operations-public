@@ -36,16 +36,16 @@ This topic outlines the lifecycle and support policies for Microsoft Dynamics 36
 
 ## Modern Lifecycle Policy
 
-Finance + Operations (on-premises) software is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).  
+Finance + Operations (on-premises) software is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy rules products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).  
 
-Licensed customers must stay current with updates to the Finance + Operations (on-premises) software in accordance with the following servicing and system requirements. This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and deploy updates as noted later in this topic.
+As a licensed customers you must stay current with updates to the Finance + Operations (on-premises) software in accordance with the servicing policy and related system requirements. This policy requires that you maintain your Software Assurance (SA) or the Enhancement Plan, and also deploy update releases as noted in this topic.
 
 > [!Note]
-> Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, the customer will be eligible only for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall Microsoft Dynamics 365 for Finance + Operations (on-premises) software.
+> If you want to use the Fixed Support Lifecycle Policy (5+5) instead you must downgrade to Microsoft Dynamics AX 2012 R3. If you instead lapse on your SA or the Enhancement Plan, you will be eligible only for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall the Microsoft Dynamics 365 for Finance + Operations (on-premises) software.
 
 ## On-premises software update policies
 
-The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the Finance + Operations (on-premises) software through December 31, 2027, at a minimum, but only if the customer keeps the deployed software current according to this policy.
+As a customer you are in full control of your on-premises deployments and must follow this policy. You are in control of installing updates in your on-premises environments. Microsoft will support your deployment of Finance + Operations (on-premises) software only if you keep the deployed software current according to this policy.
 
 Critical fixes and non-critical updates are handled in the following way:
 
@@ -56,17 +56,17 @@ Critical fixes and non-critical updates are handled in the following way:
 
 ### Continuous service updates
 
-As of November 2018, on-premises service updates are released continuously.  For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md). For more information about One Version service updates, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+As of November 2018, on-premises service updates are released continuously. For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md). For more information about One Version service updates, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
 
 ### Product life time
 
-The product life time of Finance + Operations (on-premises) software ends by **December 2027**.
+The product life time of Finance + Operations (on-premises) software ends by **December 2027** and Microsoft will support the Finance + Operations (on-premises) software at a minimum through December 31, 2027 for customers in compliance to this policy.
 
-Individual application releases and platform updates have separate expiration dates, which is when the support for this release ends.
+Each product release has a specific expiration date after which the release is not entitled anymore to receive support.
 
 ### Continuous combined releases (Application and Platform)
 
-With [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) application and platform are released together. The [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change) specifies the dates for early access, public release and expiration of the release.
+With [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), application and platform are released together. The [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change) specifies the dates for early access, public release, and expiration of the release.
 
 | Product              | Type | Application Version | Platform Release | Release,  Expiration dates|
 |-------------------------------|-------|----|----|-------------|
