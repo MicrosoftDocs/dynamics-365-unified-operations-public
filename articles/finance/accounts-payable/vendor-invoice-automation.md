@@ -93,7 +93,7 @@ Invoices that are imported via data packages can be associated with the legal en
 
 In scenarios where vendor invoices come into Finance and Operations via integration, there must be an easy way for an Accounts payable team member to process exceptions or failed invoices, and to create pending invoices out of failed invoices. This exception processing for vendor invoices is now part of Finance and Operations.
 
-### Exceptions list page
+### Vendor invoices that failed to import list page
 
 The new list page for invoice exceptions is available at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**. This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity. Note that you can view the same records from the **Data management** workspace, where you can also perform the same actions that are provided in the exception handling feature. However, the UI that the exception handling feature provides is optimized for a functional user.
 
@@ -127,11 +127,11 @@ The list page supports the following actions:
 + **Edit** – Open the exception record in edit mode, so that you can fix the issues.
 + **Options** – Access the standard options that are available on list pages. You can use the **Add to workspace** option to pin the exceptions list page to your workspace as a list or tile.
 
-### Exception details page
+### Vendor invoices that failed to import details page
 
-When you start edit mode, the exception details page for the invoice that has issues appears. If the invoice that has issues had an attachment, the attachment will not be displayed on the exception details page. The attachment will need to be reattached to the invoice.
+When you start edit mode, the **Vendor invoices that failed to import details** page for the invoice that has issues appears. If the invoice that has issues had an attachment, the attachment will not be displayed on the **Vendor invoices that failed to import details** page. The attachment will need to be reattached to the invoice.
 
-The exception details page supports the following operation:
+The **Vendor invoices that failed to import details** page supports the following operation:
 
 + **Create pending invoice** – After you’ve fixed the issues on the invoice as part of exception processing, you can click this button to create the pending invoice. The creation of pending invoices occurs in the background (as an asynchronous operation).
 
@@ -210,7 +210,7 @@ The following roles provide read-only access or read/write access to the attachm
 + **Accounts payable clerk** and **Accounts payable manager** – The Maintain vendor invoices duty is assigned to these roles.
 + **Accounts payable clerk**, **Accounts payable manager**, **Accounts payable centralized payments clerk**, and **Accounts payable payments clerk** – The Inquire into vendor invoice status duty is assigned to these roles.
 
-### Invoice exception details page
+### Vendor invoice attachment
 
 The following privileges provide ready-only access or read/write access to the attachment viewer for the highlighting, block, and annotation actions.
 
