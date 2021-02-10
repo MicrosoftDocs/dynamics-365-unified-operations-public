@@ -74,8 +74,9 @@ There are two ways to create a service request: automatically and on demand.
 
 - **Environment deployment** – To set up deployment options and submit a request to the DSE team to deploy a new environment, in the **Environments** section, select **Configure**.
 - **Package application** – To apply a package to the production environment, on the **Environment details** page, select **Maintain**, select the package to apply, and then select **Schedule**. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).
+
     > [!IMPORTANT]
-    > If your scheduled time overlaps with a [planned maintenance window](../planned-maintenance-window-faq.md), you will receive a warning message. If you choose to continue deploying the package, the package deployment operation will be rolled back in the event of conflict as planned maintenance should take priority.  
+    > If your scheduled time overlaps with a [planned maintenance window](../planned-maintenance-window-faq.md), you will receive a warning message. If you choose to continue  deploying the package, the package deployment operation will be rolled back in the event of conflict as planned maintenance should take priority.  
     > This restriction is appliable to **Microsoft managed IAAS environment** only. 
     
 
