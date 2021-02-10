@@ -81,6 +81,7 @@ Application releases expire at the end of the month of their software lifecycle.
 \* Release dates of future releases may change without notice.
 
 \** All customers must be on the latest version of Finance and Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) we had given exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that had been submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+
   > [!NOTE]
   > Customer who are not following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the installer application version. Expired versions will be removed from LCS at some point where after servicing and deployment of such versions from LCS may not be possible.
 >
