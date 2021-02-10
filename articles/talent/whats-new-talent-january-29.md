@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (January 31, 2019)
-description: This topic describes features that are new or changed in Microsoft Dynamics 365 Talent.
+description: This topic describes features that are new or changed in Microsoft Dynamics 365 Talent for January 31, 2019.
 author: andreabichsel
 manager: tfehr
 ms.date: 01/31/2019
