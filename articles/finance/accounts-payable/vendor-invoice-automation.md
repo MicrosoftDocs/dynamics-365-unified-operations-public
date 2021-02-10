@@ -185,7 +185,7 @@ Only one document can be set as the default attachment. After you set a document
 
 A new button that is available on the **Exception processing**, **Pending invoice**, and **Invoice journal** inquiry pages lets you show or hide the attachment viewer.
 
-### Security
+## Security
 
 The following actions in the attachment viewer are controlled via role-based security:
 
