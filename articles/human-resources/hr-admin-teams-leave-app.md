@@ -95,7 +95,7 @@ The Human Resources app in Teams supports the following languages:
 | --- | --- |
 | de-DE | German (Germany) |
 | es-ES | Spanish (Spain) |
-| es-MX | Spanish (México) |
+| es-MX | Spanish (Mexico) |
 | fr-CA | French (Canada) |
 | fr-FR | French (France) |
 | it-IT | Italian (Italy) |
