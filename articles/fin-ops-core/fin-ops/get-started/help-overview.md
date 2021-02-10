@@ -168,4 +168,4 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | This site hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/) | This site hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | This site provides evaluation and sales information. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | This site hosts training resources, downloadable reports, and white papers, and is the primary support site for service plan holders. Access to some resources on this site might require a service plan. |
+| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | This site hosts training resources, downloadable reports, and white papers, and is the primary support site for service plan holders. Access to some resources on this site might require a service plan. |

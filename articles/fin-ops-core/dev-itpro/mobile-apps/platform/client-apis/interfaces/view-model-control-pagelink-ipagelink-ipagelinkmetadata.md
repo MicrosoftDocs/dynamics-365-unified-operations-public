@@ -131,7 +131,7 @@ Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontro
 Icon: string (optional)
 
 Name of the icon that is displayed in the page link control.
-Here is a [list of available icons](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/AXSymbolFont).
+Here is a [list of available icons](https://docs.microsoft.com/dynamics/s-e/).
 
 ### IconSize
 
