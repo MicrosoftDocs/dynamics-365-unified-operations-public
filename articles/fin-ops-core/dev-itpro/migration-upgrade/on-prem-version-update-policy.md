@@ -54,7 +54,8 @@ As of November 2018, on-premises service updates are released continuously.  For
 ### Product life time
 
 The product life time of Finance + Operations (on-premises) software ends by **December 2027**.
-Individual application releases and platform updates have separate Expiration dates, which is when the support for this release ends.
+
+Individual application releases and platform updates have separate expiration dates, which is when the support for this release ends.
 
 ### Application releases
 
