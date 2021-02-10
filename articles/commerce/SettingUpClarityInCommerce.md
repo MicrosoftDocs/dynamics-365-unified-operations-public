@@ -79,7 +79,7 @@ Now you can embed the Clarity provided tracking code into any Commerce site page
 - Expand the **script tag** dropdown and paste the Clarity tracking code into the **Inline script** section.
 - **Save** your changes and **Check-in** your page edit. Then select **Publish** to publish the page
 
-Your page now contains the tracking script and should begin to show activity in the Clarity portal.
+Your page now contains the tracking script and is ready to track activity by Clarity. Some time may be required for data collection and aggregation before results begin to show in the Clarity portal.
 
 
 
