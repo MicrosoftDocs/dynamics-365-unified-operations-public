@@ -3,9 +3,9 @@
 
 title: Software lifecycle policy and on-premises releases
 description: This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
-author: meeramahabala
+author: ShellyBakke
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -22,7 +22,7 @@ ms.reviewer: sericks
 ms.custom: 69914
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: meeram
+ms.author: smiller
 ms.search.validFrom: 2017-07-15
 ms.dyn365.ops.version: Platform update 2
 
@@ -61,7 +61,8 @@ As of November 2018, on-premises service updates are released continuously.  For
 ### Product life time
 
 The product life time of Finance + Operations (on-premises) software ends by **December 2027**.
-Individual application releases and platform updates have separate Expiration dates, which is when the support for this release ends.
+
+Individual application releases and platform updates have separate expiration dates, which is when the support for this release ends.
 
 ### Continuous combined releases (Application and Platform)
 
