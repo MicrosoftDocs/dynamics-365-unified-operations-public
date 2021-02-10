@@ -279,73 +279,80 @@ When you select **Transactions - reduction key** or **Transactions - dynamic per
 
 ## Forecast models and submodels
 
-This section describe how forecast submodels can be utilized to combine multiple forecasts.
+This section describes how to use forecast submodels to combine multiple forecasts.
 
-A forecast model names and identifies a specific forecast. You must create a forecast model before you can create the actual forecast lines.
+A *forecast model* names and identifies a specific forecast. You must create a forecast model before you can create the actual forecast lines.
 
-You can set up a forecast model with two levels so that one model includes one or more other models, or submodels. This structure enables you to aggregate the individual forecasts. You must create a forecast model before you can assign it to be a submodel of another forecast model.
+You can set up a forecast model with two levels so that one model includes one or more other models, which thereby become submodels. This structure enables you to aggregate the individual forecasts. You must create a forecast model before you can assign it to be a submodel of another forecast model.
 
-A forecast model can include forecast from other forecast models. This is achieved by adding submodels to a forecast model. 
+A forecast model can include forecasts from other forecast models. This is achieved by adding submodels to a forecast model. <!-- FKM: This seems to repeat the previous paragraph. Does it? -->
 
-This is a powerful way to control your forecasts where input from multiple forecasts is combined. From a planning point of view this makes it simple to combine forecast for simulations – An example could be simulation based on the sum of normal forecast + spring promotion forecast.
+This is a powerful way to control forecasts by combining input from multiple forecasts. From a planning point of view, this makes it simple to combine forecast for simulations. For example, you might set up a simulation based on combining a normal forecast with a spring promotion forecast.
 
 ### Submodel levels
-A forecast model that is used as a submodel cannot contain other submodels.
 
-There are no limits to the number of submodels that can be added on a forecast model. However, the structure can only be one level deep. Meaning that a forecast model that is a submodel in another forecast model, can not have submodels of its own.
+A forecast model that is used as a submodel can't contain other submodels.
 
-**Example 1** 
-
-Forecast model A can have forecast model B as submodel but then Forecast model B cannot have submodels.
-
-When assigning submodels to a forecast model, the system will check if the forecast model is submodel for another forecast model. 
-
-**Example 2**
-
-Forecast model A have Forecast model B as submodel. 
-
-If you try to add a submodel on forecast model B it will result in the error message: “Forecast model B is submodel for model A.”
+There are no limits to the number of submodels that can be added on a forecast model. However, the structure can only be one level deep, which means that a forecast model that is a submodel in another forecast model can't have submodels of its own.
 
 > [!NOTE]
-> An error is shown in case master planning encounter a submodel that contain forecast models.
+> An error is shown when master planning encounters a submodel that contains forecast models.
 
-### Aggregation of forecast cross forecast models
-Forecast on same day will be aggregated, cross models.
+#### Submodel levels example 1
 
-**Example** 
-Forecast model A have forecast model B and C as submodels.
+Suppose forecast model A has forecast model B as submodel. This means that forecast model B can't have submodels of its own. When assigning submodels to a forecast model, the system will check whether the forecast model is submodel for another forecast model.
 
-- Forecast model A includes demand forecast for 2 pcs on June 15
-- Forecast model B includes demand forecast for 3 pcs on June 15
-- Forecast model C includes demand forecast for 4 pcs on June 15
+#### Submodel levels example 2
 
-The resulting demand forecast for will be a single demand for 9 pcs (2+3+4) on June 15
+Suppose forecast model A has forecast model B as submodel. If you try to add a submodel to forecast model B, it will result in the error message "Forecast model B is a submodel for model A."
+
+### Aggregating forecasts across forecast models
+
+Forecasts occurring on same day will be aggregated across models.
+
+#### Aggregation example
+
+Forecast model A has forecast model B and C as submodels.
+
+- Forecast model A includes a demand forecast for 2 pcs on June 15
+- Forecast model B includes a demand forecast for 3 pcs on June 15
+- Forecast model C includes a demand forecast for 4 pcs on June 15
+
+The resulting demand forecast for will be a single demand for 9 pcs (2+3+4) on June 15.
 
 > [!NOTE]
-> A forecast submodel uses its own parameters, not those of the top-level forecast model.
+> Each forecast submodel uses its own parameters, not those of the top-level forecast model.
 
 ### Create a forecast model
 
-1. Click  **Inventory management** > **Setup** > **Forecast** > **Forecast models**.
-1. In the grid section, press CTRL+N or click  **New**  to create a forecast model.
-1. Enter an identifier and a name for the model.
-1. In the header section, you can define settings for the forecast.
+To create a forecast model:
+<!-- KFM: This procedure doesn't match what I see. -->
+1. Go to **Inventory management** \> **Setup** \> **Forecast** \> **Forecast models**. <!-- KFM: Do you mean the list pane? -->
+1. In the grid section, press CTRL+N or select **New** to create a forecast model. <!-- KFM: CTRL+N just opens a new browser window. Am I missing something? I think you are referring to the Action Pane? -->
+1. Enter an identifier and a name for the model. <!-- KFM: By identifier, do you mean a value for **Model**? -->
+1. In the header section, define settings for the forecast.  <!-- KFM: By header, do you mean the **Project** FastTab? Are these settings described somewhere we can link to? -->
 
 ### Assign a forecast model as a submodel
 
-1. In the grid section, select the forecast model for which you want to set up a submodel.
-1. On the  **Submodel**  FastTab, press CTRL+N or click  **Add**  to create a submodel.
-1. In the  **Submodel**  field, select the model that you want to designate as a submodel and then enter a name for it.
+To assign a forecast model as a submodel:
 
-**Example**
+1. Go to **Inventory management** \> **Setup** \> **Forecast** \> **Forecast models**.
+1. From the list pane, select the forecast model for which you want to set up a submodel. <!-- KFM: Original said "Grid section". I think you mean the list pane. -->
+1. On the **Submodel** FastTab, select  **Add** from the toolbar to add a row to the grid. <!-- KFM: CTRL+N just opens a new browser window. Am I missing something? -->
+1. Make the following settings for the new row:
+    - **Submodel** - Select the model that you want to designate as a submodel
+    - **Name** - Enter a name for the selected mode. <!-- KFM: The model already has a name. How should we use this one differently? -->
 
-To set up a forecast model structure where the top-level forecast model, named Total, consists of two submodels which are named East and West, follow this procedure:
+#### Example of how to assign submodels to a forecast model
 
-1. In the grid section, create three forecast models: Total, East, and West.
-2. Select the Total model line.
-3. On the  **Submodel**  FastTab, create a submodel line, and then select the East model.
-4. On the  **Submodel**  FastTab, create a submodel line, and then select the West model.
+<!-- KFM: I'm not sure this example is very helpful, unless the text after the procedure shows us something interesting. -->
+To set up a forecast model structure where the top-level forecast model named *Total* consists of two submodels, which are named *East* and *West*, follow this procedure:
 
+1. In the grid section, create three forecast models: Total, East, and West. <!-- KFM: I think you mean the list pane? I think we do this using the Action pane? -->
+1. Select the Total model.
+1. On the  **Submodel**  FastTab, create a submodel line, and then select the East model.
+1. On the  **Submodel**  FastTab, create a submodel line, and then select the West model.
+<!-- KFM: What is the following text about? Should this be part of the procedure? -->
 Click  **Inventory management** > **Setup** > **Forecast** > **Forecast models**.
 
 –or–
