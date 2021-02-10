@@ -75,6 +75,7 @@ Now you can embed the Clarity provided tracking code into any Commerce site page
 - Select a page you wish to track with Clarity from the **Pages** section of e-Commerce authoring tool and check-out for Editing
 - Within the page editor, select the main or top-most node in the module tree view
 - In the properties pane to the right-hand side, under **SEO Properties**, drop down the **INLINE SCRIPT** segment
+    - Note that the Template for the page will require the **Inline script** module be added to the **HTML Head** section for **INLINE SCRIPT** to be available in a page instance.
 - Expand the **script tag** dropdown and paste the Clarity tracking code into the **Inline script** section.
 - **Save** your changes and **Check-in** your page edit. Then select **Publish** to publish the page
 
