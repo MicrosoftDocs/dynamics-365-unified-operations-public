@@ -5,7 +5,7 @@ title: Data management overview
 description: This topic provides information about data management in Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/18/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,7 @@ This topic describes how you can use the data management framework to manage dat
 
 The data management framework consists of the following concepts:
 
-- **Data entities** - A data entity is a conceptual abstraction and encapsulation of one of more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understood by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
+- **Data entities** - A data entity is a conceptual abstraction and encapsulation of one or more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understood by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
 - **Data project** - A project that contains configured data entities, which include mapping and default processing options.
 - **Data job** - A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.
 - **Job history** - Histories of source to staging and staging to target jobs.
