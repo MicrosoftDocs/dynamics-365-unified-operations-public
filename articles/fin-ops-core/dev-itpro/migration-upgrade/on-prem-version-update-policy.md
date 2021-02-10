@@ -62,10 +62,11 @@ Application releases expire at the end of the month of their software lifecycle.
 
 | Release          | Version |Platform version|Early Access|Availability|Expiration date|
 |------------------|---------|---------|-------|---------|---------|
-| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.20 | PU44 | May 2021 | Jul 2021 | Oct  2021 |
-| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.19 | PU43 | Apr 2021 | Jun 2021 | Sep  2021 |
-| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.18 | PU42 | Mar 2021 | Apr 2021 | Jul 2021 |
-| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.17 | PU41 | Feb 2021 | Mar 2021 | Jun 2021 |
+| ... |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.20 | PU44 | May 2021* | Jul 2021* | Oct  2021* |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.19 | PU43 | Apr 2021* | Jun 2021* | Sep  2021* |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.18 | PU42 | Mar 2021* | Apr 2021* | Jul 2021* |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.17 | PU41 | Feb 2021 | Mar 2021* | Jun 2021* |
 | [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.16 | PU40 | Nov 2020 | Jan 2021 | Apr 2021 |
 | [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.15 | PU39 | Oct 2020 | Dec 2020 | Mar 2021 |
 | [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.14 | PU38 | Sep 2020 | Oct 2020 | Jan 2021 |
@@ -73,17 +74,20 @@ Application releases expire at the end of the month of their software lifecycle.
 | [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| ... | ... | ... | ... |
 |  Dynamics 365 for Finance and Operations (on-premises) |10.0  (10.0.8) | - | | Mar 2019 | Jun 2019 |
 |  Dynamics 365 for Finance and Operations (on-premises) |8.1 (8.1.136) | - | | Nov 2018 | Apr 2019     |
-|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 (7.3.11971) | - | | Mar 2018 | Apr 2020* |
+|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 (7.3.11971) | - | | Mar 2018 | Apr 2020** |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 (7.2.11792) | - | | Jun 2017 | Apr 2019 |
 
-\* All customers must be on the latest version of Finance and Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) we had given exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that had been submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+\* Release dates of future releases may change without notice.
+
+\** All customers must be on the latest version of Finance and Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) we had given exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that had been submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
   > [!NOTE]
-  > Customer who are not following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the installer application version. Expired versions will be removed from LCS at some point where after servicing and deployment of such versions from LCS may not be possible. 
+  > Customer who are not following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the installer application version. Expired versions will be removed from LCS at some point where after servicing and deployment of such versions from LCS may not be possible.
 >
 > (Extension requests cannot be logged since January 1, 2019.)
 
-### Platform releases
+### Older platform releases
 Platform releases expire at the end of the month of their software lifecycle.
+
 With [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) platform releases are shipped together with application releases.
 
 | Release          |Build number         | Availability          | Expiration date   |
