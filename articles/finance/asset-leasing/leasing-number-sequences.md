@@ -33,6 +33,7 @@ ms.dyn365.ops.version: 10.0.14
 # Assign number sequences
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to create number sequences for lease IDs. It also explains how to create unique IDs that are used in the index revaluation process.
 
