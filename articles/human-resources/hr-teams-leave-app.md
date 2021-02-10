@@ -177,6 +177,23 @@ The calendar displays your direct reports' approved and pending time off.
 
 ![Time off calendar in Human Resources Teams app](./media/hr-teams-leave-app-calendar.png)
 
+## Supported languages
+
+The Human Resources app in Teams supports the following languages:
+
+| Locale ID | Language |
+| --- | --- |
+| de-DE | German (Germany) |
+| es-ES | Spanish (Spain) |
+| es-MX | Spanish (Mexico) |
+| fr-CA | French (Canada) |
+| fr-FR | French (France) |
+| it-IT | Italian (Italy) |
+| nl-NL | Dutch (Netherlands) |
+| pt-BR | Portuguese (Brazil) |
+| tr-TR | Turkish (Turkey) |
+| zh-CN | Chinese (Simplified) |
+
 ## Troubleshooting
 
 If you're having trouble signing into or using the Human Resources Teams app, try following these troubleshooting instructions. If you're still having problems after troubleshooting, contact Support. For more information, see [Get support](hr-admin-troubleshooting-support.md).
