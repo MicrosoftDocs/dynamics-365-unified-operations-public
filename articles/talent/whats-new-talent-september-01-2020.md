@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# What's new or changed in Dynamics 365 Talent (January 21, 2020)
+# What's new or changed in Dynamics 365 Talent (September 1, 2020)
 
 [!include [banner](includes/banner.md)]
 
