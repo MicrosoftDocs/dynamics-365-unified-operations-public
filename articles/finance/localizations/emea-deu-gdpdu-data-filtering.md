@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Adding filters to audit file configuration
-description: This article explains how to add a filer for data in German audit file on example of filter for Posting layer field in general ledger transactions data.
+title: Add filters to an audit file configuration
+description: This article explains how to add a data filter the in German audit file.
 author: liza-golub
 ms.date: 02/09/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.search.region: Austria, Germany
 # ms.search.industry: 
-ms.author: liza-golub
+ms.author: elgolu
 
 ---
 
@@ -25,24 +25,28 @@ ms.author: liza-golub
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to add a filer for data in German audit file on example of filter for **Posting layer** field in **General journal entry** table.
+This article explains how to add a filter for data in the German audit file using the example of a filter for the **Posting layer** field in the **General journal entry** table.
 
-As it is explained in [German audit file (GDPdU/GoBD) overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-deu-gdpdu-audit-data-export#sachkontobuchungen) **SPEZIALBUCHUNG** (Posting layer) field of **Sachkontobuchungen** data set is collected from **$GeneralJournalEntry/PostingLayer** electronic reporting data source path. To add possibility of filtering data in the report by **SPEZIALBUCHUNG** (Posting layer) field follow the steps:
+As explained in [German audit file (GDPdU/GoBD) overview](emea-deu-gdpdu-audit-data-export.md#sachkontobuchungen), the **SPEZIALBUCHUNG** (Posting layer) field of **Sachkontobuchungen** data set is collected from the **$GeneralJournalEntry/PostingLayer** electronic reporting data source path. To add the possibility of filtering data in the report by the **SPEZIALBUCHUNG** (Posting layer) field, complete the following steps:
 
-1.	Open **Workspaces** > **Electronic reporting** and click on **Reporting configurations** button.
-2.	Select **Data export model** configuration in the configuration tree and derive it creating a format that will be used in your company.
-3.	Select derived configuration, click **Designer** on the Action pane, click **Map model to datasource** on the Action pane of **Data model** page, select “Group” definition on the **Model to datasource mapping** page, click **Designer** on the Action pane and search for “$GeneralJournalEntry” data source on the **DATA SOURCES** section of the model mapping design page.
-4.	“$GeneralJournalEntry” data source is a calculated record list sourcing data from **GeneralJournalEntry** table (this can be observed from the formula for “$GeneralJournalEntry”).
-5.	Search for **GeneralJournalEntry** table on the **DATA SOURCES** section of the model mapping design page and select it.
-6.	Click **Edit** button on top of the **DATA SOURCES** section of the model mapping design page and mark **Ask for query** check box for **GeneralJournalEntry** table. Click **OK** button.
+1. Go to **Workspaces** > **Electronic reporting**, and then select **Reporting configurations**.
+2. In the configuration tree, select the **Data export model** configuration, and derive it by creating a format that will be used in your company.
+3. Select the derived configuration, and on the Action Pane, select **Designer**. 
+4. On the **Data model** page, on the Action Pane, select **Map model to datasource**.
+5. On the **Model to datasource mapping** page, select the **Group** definition, on the Action Pane select **Designer**, and search for “$GeneralJournalEntry” data source in the **Data sources** section of the **Model mapping design** page.
+
+  “$GeneralJournalEntry” data source is a calculated record list sourcing data from **GeneralJournalEntry** table (this can be observed from the formula for “$GeneralJournalEntry”).
+  
+6. In the **Data sources** section of the **Model mapping design** page, search for and select the **GeneralJournalEntry** table.
+7. In the **Data sources** section, select **Edit** and mark the **Ask for query** check box for the **GeneralJournalEntry** table. Select **OK** .
 
 ![Mark Ask for quesry for General ledger entries table](media/ask-for-query-gl-entries.png)
 
-7.	Save, close and complete the configuration.
-8.	Unmark **Default for model mapping** parameter for parent **Data export model** configuration if it was marked and mark your derived configuration as **Default for model mapping**. 
+8. Save, close, and complete the configuration.
+9. Unmark the **Default for model mapping** parameter for the parent configuration, **Data export model**, if it was marked, and mark your derived configuration as **Default for model mapping**. 
 
-With this change when you will run **Data export** periodic tasks, you will see **Records to include** on the fast tab on the dialog of the report for General journal entry table. Click **Filter** button to specify conditions for general ledger entries filtering.
+With this change, when you run **Data export** periodic tasks, you will see **Records to include** on the FastTab on the dialog of the report for the **General journal entry** table. Select **Filter** to specify conditions for general ledger entries filtering.
 
 ![Setup filtering conditions on Data export periodic tasks](media/filter-setup.png)
 
-To filter by **Posting layer** field of the **General journal entry** table, select **Posting layer** in **Field** column and select necessary posting layer in **Criteria** column.
+To filter by the **Posting layer** field of the **General journal entry** table, select **Posting layer** in the **Field** column, and then select the necessary posting layer in the **Criteria** column.
