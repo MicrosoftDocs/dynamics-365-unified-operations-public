@@ -112,7 +112,7 @@ Use Issue search to identify whether a regulatory feature, that is related to th
                 <p>Feature reference</p>
                 </td>
                 <td>
-                <p>Enter the feature reference, if you know it. The list of feature for specific country can be discovered in the Localization portal: <a href="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC" data-raw-source="https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC">https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC</a>. </p>
+                <p>Enter the feature reference, if you know it. The list of feature for specific country can be discovered in the Localization portal: <a href="https://docs.microsoft.com/dynamics/s-e/" data-raw-source="https://docs.microsoft.com/dynamics/s-e/">https://docs.microsoft.com/dynamics/s-e/</a>. </p>
                 </td>
             </tr>
             <tr>
