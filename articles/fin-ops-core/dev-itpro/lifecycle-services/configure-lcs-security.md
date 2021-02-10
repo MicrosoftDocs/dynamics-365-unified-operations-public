@@ -67,7 +67,7 @@ The information in this section is intended to help you access CustomerSource or
 
 ### Signing in to CustomerSource or PartnerSource
 
-Visit the [CustomerSource sign-in page](https://mbs.microsoft.com/customersource/), and enter the user name and password for your Microsoft account (previously known as Windows Live ID) to access the site. If you don't have access to your organization’s CustomerSource account, follow the steps on the [How to sign in to CustomerSource](https://mbs.microsoft.com/customersource/northamerica/news-events/news-events/news/NeedAccesstoCustomerSource) page.
+Visit the [CustomerSource sign-in page](https://docs.microsoft.com/dynamics/s-e/), and enter the user name and password for your Microsoft account (previously known as Windows Live ID) to access the site. If you don't have access to your organization’s CustomerSource account, follow the steps on the [How to sign in to CustomerSource](https://docs.microsoft.com/dynamics/s-e/northamerica/news-events/news-events/news/NeedAccesstoCustomerSource) page.
 
 ### Determining the administrator for your organization in CustomerSource or PartnerSource
 

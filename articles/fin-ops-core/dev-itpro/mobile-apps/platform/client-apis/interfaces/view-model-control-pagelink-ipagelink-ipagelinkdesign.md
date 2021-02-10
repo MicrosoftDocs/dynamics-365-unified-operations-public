@@ -183,7 +183,7 @@ This property can only be added through the design object.
 icon: string (optional) 
 
 Name of the icon that is displayed in the pagelink control.
-Here is a [list of available icons](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/AXSymbolFont).
+Here is a [list of available icons](https://docs.microsoft.com/dynamics/s-e/).
 
 
 ### justifyItems
