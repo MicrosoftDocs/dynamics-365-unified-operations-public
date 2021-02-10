@@ -34,6 +34,7 @@ ms.dyn365.ops.version: 10.0.14
 # Set up lease books
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Lease books contain the accounting policies that determine how a lease is accounted for in the system. In addition to cash basis accounting, Asset leasing supports the following standards:
 
