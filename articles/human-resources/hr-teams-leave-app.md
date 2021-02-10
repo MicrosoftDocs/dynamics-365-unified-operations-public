@@ -179,7 +179,7 @@ The calendar displays your direct reports' approved and pending time off.
 
 ## Supported languages
 
-The Human Resources app in Teams supports the following languages:
+The Dynamics 365 Human Resources app in Teams supports the following languages:
 
 | Locale ID | Language |
 | --- | --- |
