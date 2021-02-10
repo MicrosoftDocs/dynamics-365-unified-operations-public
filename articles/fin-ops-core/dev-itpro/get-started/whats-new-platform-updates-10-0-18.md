@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)
-description: This topic lists the features that are included in the platform updates for version 10.0.17 of Finance and Operations apps.
+title: Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)
+description: This topic lists the features that are included in the platform updates for version 10.0.18 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 02/04/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,38 +24,30 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.search.validFrom: 2021-01-31
-ms.dyn365.ops.version: 10.0.17
+ms.search.validFrom: 2021-03-31
+ms.dyn365.ops.version: 10.0.18
 
 ---
-# Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)
+# Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the features that are included in the platform updates for version 10.0.17 of Finance and Operations apps. This version has a build number of 7.0.5934 and is available on the following schedule:
+This topic lists the features that are included in the platform updates for version 10.0.18 of Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
 
-- **Preview of release:** February 2021
-- **General availability of release (self-update):** March 2021
-- **General availability of release (auto-update):** April 2021
+- **Preview of release:** March 2021
+- **General availability of release (self-update):** April 2021
+- **General availability of release (auto-update):** May 2021
 
 ## Features included in this release
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
--  Visual Studio 2017 is now the primary supported version for X++ tools. Visual Studio 2015 is deprecated.<br>- For more information, see [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md#visual-studio-2015).
+-  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
 
--  [(Preview) Translation support for organization views](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/translation-support-organizational-saved-views)<br>- For more information, see [Saved views](../../fin-ops/get-started/saved-views.md).
+-  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
 
--  [Allow configuration of the publish batch size for the Excel add-in](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [View and update entity data with Excel](../office-integration/use-excel-add-in.md).
-
--  [Upgrade to React 17](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/upgrade-react-17)
-
--  [Freeze columns in grids](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/freeze-columns-grids)<br>- For more information, see [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md).
-
--  [Updates to client feature states](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states)<br>- See the release plan for details about the client features that were turned on by default or made mandatory with this release. 
-
--  View independent software vendor (ISV) license status<br>- It is now possible to view status and expiration dates for an ISV license. For more information, see [View independent software vendor license status](../sysadmin/view-isv-license-status.md).
+-  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
