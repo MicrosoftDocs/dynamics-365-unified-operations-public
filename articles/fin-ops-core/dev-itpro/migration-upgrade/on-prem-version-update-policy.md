@@ -76,8 +76,11 @@ Application releases expire at the end of the month of their software lifecycle.
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 (7.3.11971) | - | | Mar 2018 | Apr 2020* |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 (7.2.11792) | - | | Jun 2017 | Apr 2019 |
 
-
-\* All customers must be on the latest version of Finance and Operations by April 30, 2019. However, we are making an exception for customers who have unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. Those customers can be on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+\* All customers must be on the latest version of Finance and Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) we had given exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that had been submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+  > [!NOTE]
+  > Customer who are not following the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy) and the [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) may not be entitled to receive support after the expiration date of the installer application version. Expired versions will be removed from LCS at some point where after servicing and deployment of such versions from LCS may not be possible. 
+>
+> (Extension requests cannot be logged since January 1, 2019.)
 
 ### Platform releases
 Platform releases expire at the end of the month of their software lifecycle.
@@ -95,7 +98,7 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 |  Platform update 8 | 7.0.4565.1612 | July 2017 | April 2018 |
 
   > [!NOTE]
-  > Platform releases are cumulative in nature. Any fixes, critical or non-critical, will require customers to take the latest available version of the platform. 
+  > Platform releases are cumulative in nature. Any fixes, critical or non-critical, will require customers to take the latest available version of the platform.
 
 ### Downloadable virtual hard drive (VHD) releases
 Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163). 
