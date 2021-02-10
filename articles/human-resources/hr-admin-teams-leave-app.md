@@ -89,7 +89,7 @@ After you've enabled notifications for the Human Resources Teams app, you can tu
 
 ## Supported languages
 
-The Human Resources app in Teams supports the following languages:
+The Dynamics 365 Human Resources app in Teams supports the following languages:
 
 | Locale ID | Language |
 | --- | --- |
