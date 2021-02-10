@@ -268,8 +268,8 @@ A forecast reduction key must be assigned to the coverage group of the item. Fol
 2. On the **Other** FastTab, in the **Reduction key** field, select the reduction key to assign to the coverage group. The reduction key then applies to all items that belong to the coverage group.
 3. To use a reduction key to calculate forecast reduction during master scheduling, you must define this setting in the setup of the forecast plan or the master plan. Go to one of the following locations:
 
-    - Master planning \> Setup \> Plans \> Forecast plans
-    - Master planning \> Setup \> Plans \> Master plans
+    - **Master planning \> Setup \> Plans \> Forecast plans**
+    - **Master planning \> Setup \> Plans \> Master plans**
 
 4. On the **Forecast plans** or **Master plans** page, on the **General** FastTab, in the **Method used to reduce forecast requirements** field, select either **Percent - reduction key** or **Transactions - reduction key**.
 
@@ -281,7 +281,7 @@ When you select **Transactions - reduction key** or **Transactions - dynamic per
 
 This section describes how to use forecast submodels to combine multiple forecasts.
 
-A *forecast model* names and identifies a specific forecast. You must create a forecast model before you can create the actual forecast lines.
+A *forecast model* names and identifies a specific forecast. You must create a forecast model before you can create the actual forecast lines. <!-- FKM: Can we link to a topic that gives more information about forecasts and forecast lines? -->
 
 You can set up a forecast model with two levels so that one model includes one or more other models, which thereby become submodels. This structure enables you to aggregate the individual forecasts. You must create a forecast model before you can assign it to be a submodel of another forecast model.
 
