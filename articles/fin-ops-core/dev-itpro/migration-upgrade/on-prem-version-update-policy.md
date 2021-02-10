@@ -51,27 +51,39 @@ Critical fixes and non-critical updates are handled in the following way:
 ### Continuous service updates
 As of November 2018, on-premises service updates are released continuously.  For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md). For more information about One Version service updates, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
 
-The product life time of Finance + Operations (on-premises) software ends by December 2027.
-Individual applcation releases and platform updates have seperate Expiration dates, which is when the support for this release ends.
+### Product life time
+
+The product life time of Finance + Operations (on-premises) software ends by **December 2027**.
+Individual application releases and platform updates have separate Expiration dates, which is when the support for this release ends.
 
 ### Application releases
+
 Application releases expire at the end of the month of their software lifecycle.
 
-| Release          |Version         | Build number          | Availability | Expiration date  |
-|------------------|----------------------|------------------|--------------|---------------|
-| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| - | - | - | - |
-|  Dynamics 365 for Finance and Operations (on-premises) | 10.0 | 10.0.8 | March 2019 | June 2019 |
-|  Dynamics 365 for Finance and Operations (on-premises) | 8.1 | 8.1.136 | November 2018 | April 2019     |
-|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | April 2020*     |
-|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | April 2019     |
+| Release          | Version |Platform version|Early Access|Availability|Expiration date|
+|------------------|---------|---------|-------|---------|---------|
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.20 | PU44 | May 2021 | Jul 2021 | Oct  2021 |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.19 | PU43 | Apr 2021 | Jun 2021 | Sep  2021 |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.18 | PU42 | Mar 2021 | Apr 2021 | Jul 2021 |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.17 | PU41 | Feb 2021 | Mar 2021 | Jun 2021 |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.16 | PU40 | Nov 2020 | Jan 2021 | Apr 2021 |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.15 | PU39 | Oct 2020 | Dec 2020 | Mar 2021 |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.14 | PU38 | Sep 2020 | Oct 2020 | Jan 2021 |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| 10.0.13 | PU37 |-| Sep 2020 | Dec 2020 |
+| [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| ... | ... | ... | ... |
+|  Dynamics 365 for Finance and Operations (on-premises) |10.0  (10.0.8) | - | | Mar 2019 | Jun 2019 |
+|  Dynamics 365 for Finance and Operations (on-premises) |8.1 (8.1.136) | - | | Nov 2018 | Apr 2019     |
+|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 (7.3.11971) | - | | Mar 2018 | Apr 2020* |
+|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 (7.2.11792) | - | | Jun 2017 | Apr 2019 |
 
 
 \* All customers must be on the latest version of Finance and Operations by April 30, 2019. However, we are making an exception for customers who have unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. Those customers can be on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
 
 ### Platform releases
 Platform releases expire at the end of the month of their software lifecycle.
+With [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) platform releases are shipped together with application releases.
 
-| Release          |Build number         | Availability          | Expiration |
+| Release          |Build number         | Availability          | Expiration date   |
 |------------------|----------------------|------------------|--------------|
 | [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| - | - | - |
 |  Platform update 20 | 7.0.5030  | November 2018  | February 2019 |
