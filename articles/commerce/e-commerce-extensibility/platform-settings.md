@@ -6,7 +6,7 @@ description: This topic covers the various properties that are configured in the
 
 author: samjarawan
 manager: annbe
-ms.date: 01/28/2021
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
