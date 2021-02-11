@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Manage employee leave
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 You can manage an employee's leave by leave type. This includes expiring leave enrollment and adjusting leave type balances. 
 
 ## Adjust leave balances

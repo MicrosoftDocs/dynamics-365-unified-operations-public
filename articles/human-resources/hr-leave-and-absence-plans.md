@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Create a leave and absence plan
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Define leave and absence plans in Dynamics 365 Human Resources for each type of leave you offer. Leave and absence plans can accrue at different frequencies, such as annually, monthly, or semimonthly. You can also define a plan as a grant, where a single accrual occurs on a specific date. For example, you might create a plan that grants floating holidays annually.
 
 Tiered leave plans allow employees to receive benefits based on the amount of time they've spent with an organization. Tiered plans enable automatic enrollment in additional benefit hours.

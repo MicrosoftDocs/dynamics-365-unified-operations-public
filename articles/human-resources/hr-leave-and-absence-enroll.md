@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Assign workers to a leave plan
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 After you've created a leave and absence plan in Dynamics 365 Human Resources, assign it to workers.
 
 ## Assign a plan to a group of employees
