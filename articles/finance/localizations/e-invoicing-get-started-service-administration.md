@@ -5,7 +5,7 @@ title: Get started with Electronic invoicing add-on service administration
 description: This topic explains how to get started with the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -87,18 +87,17 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Create Storage account secret
 
-1. On **Key vault parameters** page, select a Key vault secret.
+1. Go to **System administration** > **Setup** > **Key Vault parameters**, and select a Key vault secret.
 2. In the **Certificates** section, select **Add**.
-3. In the **Name** field, enter the name of the storage account secret. In the **Description** field, enter a description.
+3. In the **Name** field, enter the name of the storage account secret and in the **Description** field, enter a description.
 4. In the **Type** field, select **Certificate**.
 5. Select **Save**, and then close the page.
 
+## Create a digital certificate secret
 
-## Create Digital certificate secret
-
-1. On **Key vault parameters** page, select a Key vault secret.
+1. Go to **System administration** > **Setup** > **Key Vault parameters**, and select a Key vault secret.
 2. In the **Certificates** section, select **Add**.
-3. In the **Name** field, enter the name of the digital certificate secret. In the **Description** field, enter a description.
+3. In the **Name** field, enter the name of the digital certificate secret and in the **Description** field, enter a description.
 4. In the **Type** field, select **Certificate**.
 5. Select **Save**, and then close the page.
 
@@ -109,7 +108,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Create a service environment
 
-1. On the **Environment setups** page, on the action Pane, select **Service environment**.
+1. On the **Environment setups** page, on the Action Pane, select **Service environment**.
 2. Select **New** to create a new service environment.
 3. In the **Name** field, enter the name of the e-Invoicing environment. In the **Description** field, enter a description.
 4. In the **Storage SAS token secret** field, select the name of the storage account secret that must be used to authenticate access to the storage account.
