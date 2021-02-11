@@ -41,6 +41,9 @@ This topic describes how to configure, download, and install Modern POS on vario
 
 > Starting in release 10.0.11, altering customized files that are stored in the ClientBroker folder could cause issues when installing a newer release. These issues might include the inability to go offline or a newer installer failing to complete successfully. A workaround is to remove the files in the ClientBroker folder in the Modern POS directory before performing the installation using the newer installer.
 
+> [!WARNING]
+> Beginning as early as the .15 release, it has been seen that customizations to files in the Client broker folder of Modern POS causes an error to occur when updating from a previous version.  The known workaround to this issue is to delete all files from the Client broker folder prior to running the newer Modern POS installer.  As a note for automation, this can easily be scripted as a pre-step for the installer.  All files in this folder must be deleted.  Once this occurs, the newer installer will update the current installation correctly and without issue.
+
 ## Technology
 
 The self-service process lets you download the appropriate version of the Modern POS installer and install it on the physical device that you want to use as the point of sale (POS) register. Device activation is the main onboarding step that ties the physical device to a register in Headquarters. Here are the main technical functions of this feature:
