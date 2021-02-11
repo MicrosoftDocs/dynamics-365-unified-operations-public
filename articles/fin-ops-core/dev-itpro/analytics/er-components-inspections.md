@@ -460,7 +460,7 @@ The following steps show how this issue might occur.
 
 The following illustration shows the runtime error that occurs if you ignore the warning and select **Run** to run a format that is configured to use the model mapping.
 
-![Running the editable format on the Format designer page](./media/er-components-inspections-06e.png)
+![Run the editable format on the Format designer page](./media/er-components-inspections-06e.png)
 
 ### Automatic resolution
 
@@ -495,7 +495,7 @@ The following steps show how this issue might occur.
 9. Name the new data source **FilteredVendor**, and configure it so that it contains the expression `WHERE(Vendor, Vendor.AccountNum="US-101")`.
 10. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page.
 
-    ![Inspecting the editable model mapping component on the Model mapping designer page](./media/er-components-inspections-07a.png)
+    ![Inspect the editable model mapping component on the Model mapping designer page](./media/er-components-inspections-07a.png)
 
 11. Notice that validation warnings recommend that you use the **FILTER** function instead of the **WHERE** function for the **FilteredVendor** and **FilteredTrans** data sources.
 
@@ -727,7 +727,7 @@ The following steps show how this issue might occur.
 
 15. Select **Validate** to inspect the editable format component on the **Format designer** page.
 
-    ![Validating the ER format component on the Format designer page](./media/er-components-inspections-11c.png)
+    ![Validate the ER format component on the Format designer page](./media/er-components-inspections-11c.png)
 
 16. Notice that a validation warning occurs. The message states that the **model.Vendor.Name** data source field isn't bound to any data source in the model mapping that is configured to be used by the format. Therefore, the **Statement\\Party\\Name** format element might not be filled at runtime, and a runtime exception might occur.
 
