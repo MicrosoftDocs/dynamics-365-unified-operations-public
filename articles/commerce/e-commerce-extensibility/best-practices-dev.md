@@ -45,7 +45,7 @@ The [Dynamics 365 Commerce ecosystem](../commerce-architecture.md) comprises var
 
 ## Minimize HTML, CSS, and JavaScript file sizes
 
-The Dynamics 365 online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. When a configuration package is built by using the [yarn msdyn365 pack](cli-command-reference.md#pack) command, or when the Node server is started in a local development environment by using the [yarn start](setup-dev-environment.md#run-your-node-app) command, the TypeScript files are compiled down to JavaScript files, and the SCSS files are compiled down to Cascading Style Sheets (CSS) files. These files are also minified to help reduce network bandwidth. You should make sure that extra, unused JavaScript and CSS files aren't included in your extension package.
+The Dynamics 365 Commerce online SDK provides development extensions that use TypeScript and Sassy Cascading Style Sheets (SCSS) files. When a configuration package is built by using the [yarn msdyn365 pack](cli-command-reference.md#pack) command, or when the Node server is started in a local development environment by using the [yarn start](setup-dev-environment.md#run-your-node-app) command, the TypeScript files are compiled down to JavaScript files, and the SCSS files are compiled down to Cascading Style Sheets (CSS) files. These files are also minified to help reduce network bandwidth. You should make sure that extra, unused JavaScript and CSS files aren't included in your extension package.
 
 ### Reduce JavaScript by excluding unused modules
 
