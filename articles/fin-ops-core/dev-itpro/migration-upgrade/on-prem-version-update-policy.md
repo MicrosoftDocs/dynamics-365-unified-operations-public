@@ -70,8 +70,8 @@ Every service update release has a specific expiration date after which the rele
 
 With [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), application and platform are released together. The [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change) specifies the dates for early access, public release, and expiration of the release.
 
-| Product              | Type | Application Version | Platform Release | Release,  Expiration dates|
-|-------------------------------|-------|----|----|-------------|
+| Product | Deployment options | Application Version | Platform Release | Release,  Expiration dates|
+|--------|--------|----|----|--------|
 | ... |
 | Finance + Operations | Base deployment + Service update | 10.0.20 | PU44 | [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change) |
 | Finance + Operations | Service update | 10.0.19 | PU43 | [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change)|
