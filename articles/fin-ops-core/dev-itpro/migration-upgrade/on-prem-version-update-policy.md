@@ -2,7 +2,7 @@
 # required metadata
 
 title: Software lifecycle policy and on-premises releases
-description: This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
+description: This document outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
 author: cabeln
 manager: AnnBe
 ms.date: 02/10/2021
@@ -34,18 +34,24 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
 
+## Product life time
+
+The product life time of Finance + Operations (on-premises) software ends by **December 2027**. Licensed customers who are in compliance with this policy are entitled to product support. Product support is available at a minimum through December 31, 2027.
+
 ## Modern Lifecycle Policy
 
 Finance + Operations (on-premises) software is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy rules products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).  
 
-As a licensed customers you must stay current with updates to the Finance + Operations (on-premises) software in accordance with the servicing policy and related system requirements. This policy requires that you maintain your Software Assurance (SA) or the Enhancement Plan, and also deploy update releases as noted in this topic.
+Licensed customers must regularly update their deployment of the Finance + Operations (on-premises) software. The servicing policy requires to maintain the Software Assurance (SA) or the Enhancement Plan. And it requires to deploy the update releases provided through the [continuous service updates](on-prem-version-update-policy.md#continuous-service-updates).
 
 > [!Note]
 > If you want to use the Fixed Support Lifecycle Policy (5+5) instead you must downgrade to Microsoft Dynamics AX 2012 R3. If you instead lapse on your SA or the Enhancement Plan, you will be eligible only for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall the Microsoft Dynamics 365 for Finance + Operations (on-premises) software.
 
 ## On-premises software update policies
 
-As a customer you are in full control of your on-premises deployments and must follow this policy. You are in control of installing updates in your on-premises environments. Microsoft will support your deployment of Finance + Operations (on-premises) software only if you keep the deployed software current according to this policy.
+As a customer, you are in full control of your on-premises deployments and must actively follow this policy. You are in control of installing updates in your on-premises environments.
+
+Microsoft will support your deployment of Finance + Operations (on-premises) software only if you keep the deployed software current according to this policy.
 
 Critical fixes and non-critical updates are handled in the following way:
 
@@ -56,15 +62,11 @@ Critical fixes and non-critical updates are handled in the following way:
 
 ### Continuous service updates
 
-As of November 2018, on-premises service updates are released continuously. For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md). For more information about One Version service updates, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+Since November 2018, on-premises service updates are released continuously. For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md). For more information about One Version service updates, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
 
-### Product life time
+Every service update release has a specific expiration date after which the release isn't entitled anymore to receive support.
 
-The product life time of Finance + Operations (on-premises) software ends by **December 2027** and Microsoft will support the Finance + Operations (on-premises) software at a minimum through December 31, 2027 for customers in compliance to this policy.
-
-Each product release has a specific expiration date after which the release is not entitled anymore to receive support.
-
-### Continuous combined releases (Application and Platform)
+#### Continuous combined releases (Application and Platform)
 
 With [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), application and platform are released together. The [One Version schedule](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases?toc=/dynamics365/finance/toc.json#targeted-release-schedule-dates-subject-to-change) specifies the dates for early access, public release, and expiration of the release.
 
@@ -97,9 +99,9 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 | Finance + Operations, Enterprise edition (on-premises) | 7.3 (7.3.11971) | Mar 2018 | Apr 2020* |
 | Finance + Operations, Enterprise edition (on-premises) | July 2017 (7.2.11792) | Jun 2017 | Apr 2019 |
 
-\* All customers must be on the latest version of Finance + Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates) we had given exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that had been submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+\* All customers must be on the latest version of Finance + Operations. The deadline for this requirement was April 30, 2019. In the transition to [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates), we had given exemptions for customers who had unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that had been submitted to Microsoft. Those customers could stay on version 7.3 until April 2020. For more information, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
 
-### Older platform releases
+#### Older platform releases
 
   > [!NOTE]
   > Older platform releases are past expiration date and are not supported any longer. Extension requests cannot be logged since January 1, 2019.
