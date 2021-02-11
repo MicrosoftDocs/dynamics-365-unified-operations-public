@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Change Employee self service workspace name
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 If you have volunteers or other non-employees, you might want to change the name of the **Employee self-service** workspace. You can change this workspace to **Self service** instead.
 
 > [!NOTE]

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Buy and sell leave
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 In Dynamics 365 Human Resources, you can submit requests to buy and sell leave based on the buy and sell leave policies set up by your company.  
 
 ## Request to buy leave
