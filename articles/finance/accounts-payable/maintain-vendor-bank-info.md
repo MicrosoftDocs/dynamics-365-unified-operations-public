@@ -53,7 +53,7 @@ Bank information entered by the vendor on this page will display Vendor as the s
 Vendors can edit their bank’s effective and expiration dates as needed after an account has been added.
  
  
-## Vendor collaboration generated bank changes page
+## Vendor collaboration-generated bank changes page
 Once bank information is updated by a vendor, the information will be visible in a new **Vendor collaboration-generated bank changes** page available under **Accounts payable > Inquiries > Vendor reports**. By default, all newly entered or modified bank records are visible. The accounts payable clerk can view the changes and run the account information through their pre-note process to validate the account information. When this process is complete and the primary payment method has been manually updated, the bank account listed on the **Vendor collaboration-generated bank changes** page can be selected and marked as reviewed. This action will remove the account from the default list.
  
 You can see all changes to a vendor’s bank information by modifying the filters to view by vendor account, the effective date range, and by whether or not the changes have been reviewed.
