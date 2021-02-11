@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Version 1611
 
 # View and manage address changes
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic explains how you can view and manage address changes in the Employee self-service **Edit personal details** page or the **Worker** details page in Dynamics 365 Human Resources.
 
 Many organizations want employees to manage their own personal details through a self-service experience. You can allow users to update their address in the **Employee self service** workspace. You can then monitor these changes in the **Personnel management** workspace. To use this feature, you must specify the number of days that you want to view changes in the **Human resources parameters** page.

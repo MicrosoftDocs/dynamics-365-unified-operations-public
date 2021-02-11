@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Maintain employee injury and illness information
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 
 
 It is recommended to complete the 'Setup injury and illness' task guide first, as some of the setup information is used here. 
