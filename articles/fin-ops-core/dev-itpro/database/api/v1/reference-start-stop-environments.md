@@ -5,7 +5,7 @@ title: Database movement API - Reference - v1 - Start and stop environments
 description: This topic provides a reference for version 1 of the Database Movement API.
 author: laneswenka
 manager: AnnBe
-ms.date: 01/21/2021
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
