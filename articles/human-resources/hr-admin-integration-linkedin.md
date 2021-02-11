@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Integrate with LinkedIn Talent Hub
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [banner](includes/preview-feature.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
