@@ -55,7 +55,9 @@ Generally, users see all entities where **IsPublic** is set to **Yes**. These en
 
 ### Do all Microsoft Power Platform users have to be users in Finance and Operations?
 
-Any user of Microsoft Power Platform who tries to access Finance and Operations data through a virtual entity must also exist as a user in Finance and Operations. Therefore, technically, not *all* users have to be users in Finance and Operations. Only those users who access Finance and Operations data through virtual entities must be users in Finance and Operations.
+Any **interactive user** of Microsoft Power Platform who tries to access Finance and Operations data through a virtual entity must also exist as a user in Finance and Operations. Therefore, technically, not *all* users have to be users in Finance and Operations. Only those users who access Finance and Operations data through virtual entities must be users in Finance and Operations.
+
+A **S2S application user** can also be used to call into virtual entities. For this kind of integration, the application user must be set up in **System administration > Setup > Configure Azure Active Directory Applications**. This allows for applications to integrate with Finance and Operations using virtual entities.
 
 ### Where do I find the catalog entity?
 
