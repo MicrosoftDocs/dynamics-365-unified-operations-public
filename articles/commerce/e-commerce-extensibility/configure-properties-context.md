@@ -5,7 +5,7 @@ title: Configure module properties to be shown based on context
 description: This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 author: samjarawan
 manager: annbe
-ms.date: 01/28/2021
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.17
 
 This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 
-Multiple module configuration properties can be defined in a module's definition file. However, there might be scenarios where the relevance of some property fields depends on the values that are set for other property fields of the module. Property fields that aren't relevant should be hidden, to minimize the number of fields that are shown to a page editor who is configuring the module. This behavior helps reduce complexity and the possibility of confusion.
+Multiple module configuration properties can be defined in a module's definition file. However, there might be scenarios where the relevance of some property fields depends on the values that are set for other property fields of the module. Property fields that aren't relevant should be hidden to minimize the number of fields that are shown to a page editor who is configuring the module. This behavior helps reduce complexity and the possibility of confusion.
 
 A module can use a conditional schema to define the rules that the module properties pane in Commerce site builder should follow to show or hide property fields based on the values of other property fields. For example, a module has a **layout** property that allows for two layouts, one of which has plain text, and the other of which has rich text and an image. In this case, the module designer might want to ensure that only property fields that are appropriate to the context (that is, the layout) are shown in site builder when a page editor configures the module.
 
@@ -57,8 +57,8 @@ As the following example of a module definition file shows, when the **layout** 
     "description": "Feature module used to highlight a product.",
     "config": {
         "layout": {
-            "friendlyName": "Image Alignment",
-            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "friendlyName": "Text Layout",
+            "description": "Sets the desired text output to be plain text or rich text with images.",
             "type": "string",
             "enum": {
                 "plainTextOnly": "Plain Text Only",
@@ -81,7 +81,7 @@ As the following example of a module definition file shows, when the **layout** 
                     "featureText" : {
                         "type": "string",
                         "friendlyName": "Feature Text",
-                        "description":  "Main text title to show in module.",
+                        "description":  "Main text title to show in module."
                     }
                 }
             },
@@ -95,12 +95,12 @@ As the following example of a module definition file shows, when the **layout** 
                     "featureRichText" : {
                         "type": "richText",
                         "friendlyName": "Feature Text",
-                        "description":  "Main rich text to show in module.",
+                        "description":  "Main rich text to show in module."
                     },
                     "featureImage" : {
                         "type": "image",
                         "friendlyName": "Feature Title",
-                        "description":  "Image to show in module.",
+                        "description":  "Image to show in module."
                     },
                     "imageAlignment": {
                         "friendlyName": "Image Alignment",
@@ -171,8 +171,8 @@ The following examples show a module definition file and a module definition ext
     "description": "Feature module used to highlight a product.",
     "config": {
         "layout": {
-            "friendlyName": "Image Alignment",
-            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "friendlyName": "Text Layout",
+            "description": "Sets the desired text output to be plain text or rich text with images.",
             "type": "string",
             "enum": {
                 "plainTextOnly": "Plain Text Only",
@@ -193,8 +193,8 @@ The following examples show a module definition file and a module definition ext
     "$type": "definitionExtension",
     "config": {
         "layout": {
-            "friendlyName": "Image Alignment",
-            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "friendlyName": "Text Layout",
+            "description": "Sets the desired text output to be plain text or rich text with images.",
             "type": "string",
             "enum": {
                 "plainTextOnly": "Plain Text Only",
@@ -298,6 +298,8 @@ The following tables list possible scenarios and expected outcomes when schema d
 [Request properties object](request-properties-object.md)
 
 [App settings](app-settings.md)
+
+[Platform settings file](platform-settings.md)
 
 [Module definition file](module-definition-file.md)
 

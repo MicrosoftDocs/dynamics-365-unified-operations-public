@@ -5,7 +5,7 @@ title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
 author: sericks007
 manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -95,9 +95,6 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 ### Customize the app
 - [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Embed Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
-
-### Expenses
-- [Expense experience](https://youtu.be/Ocy-MsTvEE0)
 
 ### Financial reporting
 - [Find the version of Report designer](https://www.youtube.com/embed/icfA5Q3kp4w)

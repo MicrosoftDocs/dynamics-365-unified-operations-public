@@ -50,11 +50,11 @@ Note that it is not possible to select users when using the Batch import option.
 2. Go to **System administration > Users > Users**.
 3. Click **Batch import**.
 4. Expand the **Run in the background** section.
-4. Select **Yes in the **Batch processing** field.
+4. Select **Yes** in the **Batch processing** field.
 6. In the **Batch group** field, enter or select a value. This is an optional step.  
 7. Select **Yes** in the **Private** field. This is an optional step.  
-8. Select **Yes** in the **Critical job** field. bThis is an optional step.  
-9. In the **Monitoring category field, select an option.
+8. Select **Yes** in the **Critical job** field. This is an optional step.  
+9. In the **Monitoring category** field, select an option.
 10. Click **OK**.
 
 After import is completed, it will be required to assign roles to users.
