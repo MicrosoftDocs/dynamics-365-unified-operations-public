@@ -142,6 +142,8 @@ Here is an example of a resource file.
 
 [Request properties object](request-properties-object.md)
 
+[Platform settings file](platform-settings.md)
+
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
