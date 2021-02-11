@@ -37,26 +37,26 @@ This topic provides information that will help you get started with the Electron
 
 ## Country-specific configuration for Egyptian electronic invoice (EG) Electronic invoicing feature
 
-To configure the Egyptian electronic invoice (EG) Electronic invoicing feature, there are some steps to complete. Some of parameters from the configurations are published with default values, so they must be reviewed and updated to better fit to your business operation.
+To configure the Egyptian electronic invoice (EG) Electronic invoicing feature, there are some steps to complete. Some of the parameters from the configurations are published with default values, so they must be reviewed and updated to better fit your business operation.
 
 ### Prerequisites
 
 Before you complete the procedure in this section, create an Egyptian electronic invoice (EG) Electronic invoicing feature for your organization, as described in the **Create an Electronic invoicing feature under your organization provider** section in the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-on** tile.
-2. In the **Electronic invoicing add-on Features** page, verify that the **Egyptian electronic invoice (EG)** Electronic invoicing feature you created is selected.
+2. On the **Electronic invoicing add-on Features** page, verify that the **Egyptian electronic invoice (EG)** Electronic invoicing feature you created is selected.
 3. On the **Versions** tab, verify the **Draft** version is selected.
 4. On the **Setups** tab, in the grid, select **Sales invoice** Feature setup.
 5. Select **Edit** and on the **Actions** tab, in the **Actions** field group, select **Sign json document for Egyptian Tax Authority**.
 6. In the **Parameters** field group, select **Certificate name** parameter.
 7. Select **Save** and close the page.
-8. Return to the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md) to configure the application setup.
+8. To configure the application setup, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
 ## Country-specific configuration of the application setup for the Egyptian electronic invoice (EG) Electronic invoicing feature
 
-The configuration of the Application setup for **Egyptian electronic invoice (EG)** Electronic invoicing feature requires specific steps to be accomplished. You must accomplish those steps before you deploy your Electronic invoicing feature to your Electronic invoicing add-on service environment.
+The configuration of the Application setup for **Egyptian electronic invoice (EG)** Electronic invoicing feature requires that specific steps be accomplished. You must accomplish those steps before you deploy your Electronic invoicing feature to your Electronic invoicing add-on service environment.
 
-### Prerequisite
+### Prerequisites
 
 Before you complete the procedure in this section, create and initiate a **Egyptian electronic invoice (EG)** Electronic invoicing feature to configure the application setup for **Egyptian electronic invoice (EG)** Electronic invoicing feature, as described in the **Configure the application setup** section in the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
@@ -64,16 +64,16 @@ Before you complete the procedure in this section, create and initiate a **Egypt
 2. In the **Electronic invoicing add-on Features** page, verify that the **Egyptian electronic invoice (EG)** Electronic invoicing feature is selected.
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, select **Application setup** and in the **Connected application** field, select the application where you want to deploy.
-5. In **Table name** field, verify that the customer invoice journal is selected.
+5. In the **Table name** field, verify that the customer invoice journal is selected.
 6. Select **Response types**, and then select **New**.
 7. In the **Response type** field, enter "Response" and in the **Description** field, enter "Description".
 8. In the **Submission status** field, select **Pending**.
 9. In the **Model mapping** field, select **Model mapping from response message**, with **(Preview) Response message import format**, and then select **Save**.
-10. Select **New** and in the **Response type** field, enter "ResponseData" as fixed value. In the **Description** field, enter "Description".
+10. Select **New** and in the **Response type** field, enter "ResponseData" as a fixed value. In the **Description** field, enter "Description".
 11. In the **Submission status** field, select **Pending**.
 12. In the **Data entity name** field, select **Sales invoice headers V2**.
 13. In the **Model mapping** field, select **Egypt response data import**, with **(Preview) Egypt response data import** and then select **Save**.
-14. Return to the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md) to deploy the Electronic invoicing feature.
+14. To deploy the Electronic invoicing feature, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
 ## Privacy notice
 
@@ -85,5 +85,3 @@ Enabling the **EG-00008 (E-invoicing for Egypt)** feature may require sending li
 - [Get started with Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md)
 - [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
-
-
