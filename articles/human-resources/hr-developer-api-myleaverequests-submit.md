@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Submit a leave request to workflow
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 In Microsoft Dynamics 365 Human Resources, you can use the MyLeaveRequests submit() application programming interface (API) to submit a leave request to workflow. This API is exposed as an action on the MyLeaveRequests OData entity.
 
 ## Prerequisites

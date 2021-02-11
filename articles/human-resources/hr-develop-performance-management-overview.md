@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Version 1611
 
 # Performance management
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 
 As the following diagram shows, there are three pages that help you manage the process:
