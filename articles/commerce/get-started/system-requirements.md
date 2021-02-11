@@ -5,7 +5,7 @@ title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
 manager: AnnBe
-ms.date: 02/08/2021
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail 
