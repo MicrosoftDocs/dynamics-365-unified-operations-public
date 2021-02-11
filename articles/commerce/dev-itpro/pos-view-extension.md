@@ -67,14 +67,13 @@ The following table shows the POS views that currently support extensions. It al
 | SearchPickingAndReceivingView   | No                            | Yes                          | Yes                                   |
 | CustomerOrderHistoryView        | No                            | Yes                          | No                                   |
 | SearchStockCountView            | No                            | Yes                          | No                                   |
-| StockCountDetailsView           | No                            | Yes                          | No                                   |
+| StockCountDetailsView           | No                            | Yes                          | Yes                                   |
 | ResumeCartView                  | No                            | Yes                          | Yes                                    |
 | InventoryLookupMatrixView       | No                            | No                           | Yes                                   |
 | SuspendTransactionView          | No                            | Yes                          | No                               |   
 | ManageShiftView                 | No                            | No                           | Yes                               |  
 | ReportDetailsView               | No                            | No                           | Yes                               |
 | SearchReceiptsView              | No                            | No                           | Yes                               |
-| StockCountDetailsView           | No                            | No                           | Yes                               |
 | TransferOrderDetailsView        | No                            | No                           | Yes                               |
 | FulfillmentLineView             | No                            | Yes                          | Yes                               |
 | ReturnTransactionView           | No                            | Yes                          | Yes                               |
