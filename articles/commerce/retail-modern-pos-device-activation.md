@@ -95,13 +95,13 @@ Before you start the steps that are outlined in this topic, follow these steps.
     > - The Houston devices are well defined. Houston-3 is useful as an example for a Microsoft Windows desktop or tablet. Houston-21 is useful as an example for a Windows Phone.
     > - When you select a device, the **Download** button on the Action Pane becomes available.
 
-4. Select **Download**, and then select **Configuration file**. Consider the following notes:
+4. Select **Download**, and then select **Configuration file**. Note the following:
     
     - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
     - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.
 
 5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
-6. Select **Download**, and then select **Retail Modern POS**. Consider the following notes:
+6. Select **Download**, and then select **Retail Modern POS**. Note the following:
 
     - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
     - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is downloaded and installed silently.
