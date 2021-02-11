@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure rates
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Rates in Microsoft Dynamics 365 Human Resources define how much employers and employees contribute for a benefit. The value can be an amount or flex credits, depending on your configuration.
 
 Use rates to determine how much employees and employers pay for each benefit, based on several factors. Coverage rates are date-effective, so you can keep a historical record of rates. 
