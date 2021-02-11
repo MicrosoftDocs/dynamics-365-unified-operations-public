@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Client disconnects
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Environment details** 
 
 This issue can occur in all environments.

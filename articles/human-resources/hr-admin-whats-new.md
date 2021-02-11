@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Human Resources
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resources. The topics listed here detail the changes made with each release.
 
 >[!NOTE]

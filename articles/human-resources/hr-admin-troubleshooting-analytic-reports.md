@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Troubleshoot analytic reports
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Issue**
 
 A customer's data changes don't appear on the **Analytics** tabs of any of the customer's workspaces.
