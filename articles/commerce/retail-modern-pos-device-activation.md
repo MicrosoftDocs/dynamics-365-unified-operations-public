@@ -70,20 +70,11 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 1. In Headquarters, go to **Retail and Commerce** &gt; **Channels** &gt; **Channel deployment**.
 2. On the **Channel deployment** page, select the **Registers** tile.
-3. On the **Registers** page, select a store register.
+3. On the **Registers** page, select a store register. The demo data thoroughly defines the Houston store and registers for self-service. To find the Houston registers, enter **Houston** in the filter at the top of the list of devices.
 
-    > [!NOTE]
-    > The demo data thoroughly defines the Houston store and registers for self-service. To find the Houston registers, enter **Houston** in the filter at the top of the list of devices.
+4. Select a register by selecting the register number in the **Register number** column. In the Houston store, register Houston-3 is well defined and is therefore useful as an example.
 
-4. Select a register by selecting the register number in the **Register number** column.
-
-    > [!NOTE]
-    > In the Houston store, register Houston-3 is well defined and is therefore useful as an example.
-
-5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**.
-
-    > [!NOTE]
-    > To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
+5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**. To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
 
 ### Download the Modern POS installer
 
@@ -230,7 +221,7 @@ The device should now be activated and ready to use.
 ## Update the Modern POS application
 
 > [!NOTE]
-> To learn more about deployable packages, see the article [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md).
+> To learn more about deployable packages, see [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md).
 
 1. After a Modern POS application is uploaded into the environment, the version of the package can be selected on the device. The package listings should include the new uploaded application.
 2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
