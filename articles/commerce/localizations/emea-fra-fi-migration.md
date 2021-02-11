@@ -44,8 +44,7 @@ The migration process should consist of the following steps.
 2. Update the Commerce Scale Unit components, and enable the extensions of the current sample.
 3. Make sure that all offline transactions are synced from offline-enabled MPOS devices.
 4. Turn off all devices that use the components of the earlier sample.
-5. Complete the setup tasks that are described in the [Cash register functionality for France](#emea-fra-cash-registers) section.
-6. Update the POS components, disable the extensions that are parts of the earlier sample, and enable the extensions of the current sample.
+5. Update the POS components, disable the extensions that are parts of the earlier sample, and enable the extensions of the current sample.
 
     > [!NOTE]
     > Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section or the [Migration in a production environment](#migration-in-a-production-environment) section.
@@ -98,7 +97,7 @@ Then, to must configure the certificate profile with your Key Vault or local ser
 7. On the **Settings** FastTab, you must specify the parameters for digital signatures:
    - Certificate profile – Select the certificate profile that you configured in the previous step.
    - Hash algorithm – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as SHA256.
-   - Activate health check – For more information about Health Check feature, see [Fiscal registration health check](https://docs.microsoft.com/en-us/dynamics365/commerce/localizations/fiscal-integration-for-retail-channel#fiscal-registration-health-check).
+   - Activate health check – For more information about Health Check feature, see [Fiscal registration health check](https://docs.microsoft.com/dynamics365/commerce/localizations/fiscal-integration-for-retail-channel#fiscal-registration-health-check).
 
 #### Update CRT
 
