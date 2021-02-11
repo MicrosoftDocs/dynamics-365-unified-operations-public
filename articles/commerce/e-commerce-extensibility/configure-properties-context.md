@@ -299,6 +299,8 @@ The following tables list possible scenarios and expected outcomes when schema d
 
 [App settings](app-settings.md)
 
+[Platform settings file](platform-settings.md)
+
 [Module definition file](module-definition-file.md)
 
 [Extend a module definition file](extend-module-definition.md)

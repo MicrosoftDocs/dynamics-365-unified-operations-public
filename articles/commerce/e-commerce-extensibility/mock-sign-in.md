@@ -199,6 +199,8 @@ You can also make use of the sign-in and sign-out buttons on the webpage itself 
 
 [App settings](app-settings.md)
 
+[Platform settings file](platform-settings.md)
+
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
