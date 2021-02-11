@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Screening frequency
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Screening frequency option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmfrequencyunit

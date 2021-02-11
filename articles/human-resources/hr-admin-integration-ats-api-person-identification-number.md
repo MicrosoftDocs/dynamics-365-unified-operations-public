@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Person identification number
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Person identification number entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmpersonidentificationnumberentity

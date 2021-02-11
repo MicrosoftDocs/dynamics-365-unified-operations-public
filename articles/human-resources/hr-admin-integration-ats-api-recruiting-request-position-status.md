@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Recruiting request position status
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Recruiting request position status option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmrecruitingrequestpositionstatus

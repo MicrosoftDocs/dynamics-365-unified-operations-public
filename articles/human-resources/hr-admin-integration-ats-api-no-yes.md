@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # No Yes
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the No Yes option set for Dynamics 365 Human Resources.
 
 ## Option set: No Yes

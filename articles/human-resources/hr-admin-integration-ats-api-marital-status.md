@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Marital status
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Marital status option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_dirpersonmaritalstatus
