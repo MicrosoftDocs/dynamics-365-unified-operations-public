@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-1.  Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+1.  Go to **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
 
-2.  Press Ctrl+N or click **New** to create a new subscription group.
+2.  Select **New** to create a new subscription group.
 
 3.  In the **Subscription group** field, enter a name for the new subscription group.
 
