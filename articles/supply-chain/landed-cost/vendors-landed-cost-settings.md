@@ -2,8 +2,7 @@
 # required metadata
 
 title: Vendor settings added for Landed cost
-description: When you enable the Landed cost module, several new fields are added to the existing Vendors page. Use these settings to set up the vendors that you will use together with Landed cost features.
-.
+description: This topic describes the new fields that are added to the existing Vendors page when you enable the Landed cost module. You use these fields to set up the vendors that you will use together with Landed cost features.
 author: RichardLuan
 manager: tfehr
 ms.date: 12/07/2020
@@ -32,17 +31,17 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-When you enable the Landed cost module, several new fields are added to the existing **Vendors** page. Use these settings to set up the vendors that you will use together with Landed cost features.
+When you enable the **Landed cost** module, several new fields are added to the existing **Vendors** page. You use these fields to set up the vendors that you will use together with Landed cost features.
 
-To find the relevant settings, go to **Procurement and sourcing \> Vendors \> All vendors**. Then open (or create) a vendor and expand the **Miscellaneous details** FastTab. The Landed cost settings are all under the **Voyages** heading. The following table describes the settings that the Land cost modules adds here.
+To set the relevant fields, go to **Procurement and sourcing \> Vendors \> All vendors**. Open an existing vendor, or create a new vendor, and then select the **Miscellaneous details** FastTab. All the new fields that the **Landed cost** module adds appear under the **Voyages** heading. The following table describes these fields.
 
-| Setting | Description |
-| --- | --- |
-| **Shipping type** | <p>Identifies the role of the vendor in relation to Landed cost. Select one of the following values:</p><ul><li>**None:** This is the default setting. It identifies a vendor that has no specific role related to Landed cost. Most vendors will probably have this value.</li><li>**Shipping company:** Identifies the vendor as a shipping company. Vendors with this value are available in the **Shipping company** drop-down list on the **Voyages** page.</li><li>**Customs broker:** Identifies the vendor as a customs broker. Vendors with this value are available in the **Customs broker** drop-down list on the **Folios** page.</li><li>**Agent:** Identifies the vendor as an agent. Vendors with this value are available in the **Agent** drop-down list on the **Vendors** and **Purchase orders** pages. |
-| **Cost type group** | Assign the vendor to a cost type group for the purpose of selecting [auto costs](auto-cost-setup.md). |
-| **From port** | <!-- KFM: Description needed. --> |
-| **Agent** | The default agent when purchasing from this vendor. |
-| **Import costing vendor** | <p>This indicates whether the vendor is a Landed cost vendor.</p><p>**Tip**: You can use this to restrict the purchase orders displayed in the and shipment creation pages <!-- KFM: Which pages do we mean here? -->. Use record level security to achieve this. |
-| **Shipping Company** | Select the defaults the shipping company to use when creating purchase orders for this vendor. |
-| **Services Provider** | This indicates whether the vendor is services provider. |
-| **Over/Under Tolerance Group** | Select the default over/under tolerance group for this vendor. |
+| Field | Description |
+|---|---|
+| Shipping type | <p>Select the vendor's role in relation to Landed cost:</p><ul><li>**None** – The vendor has no specific role that is related to Landed cost. This value is the default setting, because most vendors will probably have no specific role.</li><li>**Shipping company** – The vendor is a shipping company. Vendors that have this shipping type are available for selection in the **Shipping company** field on the **Voyages** page.</li><li>**Customs broker** – The vendor is a customs broker. Vendors that have this shipping type are available for selection in the **Customs broker** field on the **Folios** page.</li><li>**Agent** – The vendor is an agent. Vendors that have this shipping type are available for selection in the **Agent** field on the **Vendors** and **Purchase orders** pages.</li></ul> |
+| Cost type group | Assign the vendor to a cost type group for the purpose of selecting [auto costs](auto-cost-setup.md). |
+| From port | <!-- KFM: Description needed. --> |
+| Agent | The default agent when purchases are made from the vendor. |
+| Import costing vendor | <p>Indicate whether the vendor is a Landed cost vendor.</p><p>**Tip:** You can use this field together with record-level security to limit the purchase orders that are shown on shipment creation pages <!-- KFM: Which pages do we mean here? -->.</p> |
+| Shipping company | Select the default shipping company that is used when purchase orders are created for the vendor. |
+| Services provider | Indicate whether the vendor is services provider. |
+| Over/Under tolerance group | Select the default over/under tolerance group for the vendor. |
