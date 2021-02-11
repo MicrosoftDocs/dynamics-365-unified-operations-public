@@ -37,7 +37,7 @@ Note that the same validation rules from the details page in LCS apply to the AP
 
 > [!NOTE]
 > - Only **Customer-managed** environments are supported. Self-service environments do not have the same concept of stop and start and are not supported by this API. Microsoft-managed environments are not supported.
-> - These APIs will trigger/invoke the operation and successful response only indicates the trigger was successful.
+> - These APIs will trigger/invoke the operation. A successful response only indicates that the trigger was successful.
 > - For **stop**, non-success will be returned if the environment is already undergoing another operation or if the environment is already stopped.
 > - For **start**, non-success will be returned if the environment is already undergoing another operation but will return success if the environment is already started.
 
