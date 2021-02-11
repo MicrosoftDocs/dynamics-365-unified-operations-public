@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (May 28, 2020)
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3287. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
 ## LeaveRequest entity doesn't work when you enable multiple types per leave plan (447498)

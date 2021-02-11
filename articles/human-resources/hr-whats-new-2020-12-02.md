@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 # What's new or changed in Dynamics 365 Human Resources December 2, 2020
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
 
 For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
