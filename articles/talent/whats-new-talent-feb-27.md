@@ -139,7 +139,7 @@ To update your existing template, follow these steps.
         [![Add conditional column command](./media/Add-column.png)](./media/Add-column.png)
 
     6. In the **Add conditional column** dialog box, enter **HIERARCHYTYPENAME** as the name of the new column.
-    7. In the **If** part of the condition, select any column, use **equal to** as the relationship, and enter any value. In the ***Then** and **Otherwise** parts of the condition, specify what the default value should be. In this case, enter **Line** in both parts.
+    7. In the **If** part of the condition, select any column, use **equal to** as the relationship, and enter any value. In the **Then** and **Otherwise** parts of the condition, specify what the default value should be. In this case, enter **Line** in both parts.
 
         [![Add conditional column dialog box](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 

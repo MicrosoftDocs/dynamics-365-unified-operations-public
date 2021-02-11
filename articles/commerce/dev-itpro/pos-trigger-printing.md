@@ -167,6 +167,8 @@ The following table lists the available triggers and denotes whether they can be
 | PostCreatePackingSlipTrigger	| Non-Cancelable 	 | Executed after the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
 | PostReturnInvoicedSalesLinesTrigger	| Non-Cancelable 	 | Executed after one or more invoices selected for return.|
 | PreResendEmailReceiptTrigger (10.0.13)	| Cancelable 	 | Executed before sending the email from the Show journal view.|
+| PreRecallCustomerQuoteTrigger (10.0.18)	| Cancelable 	 | Executed before the customer quote is recalled from the recall order view.|
+| PostRecallCustomerQuoteTrigger (10.0.18)	| Non-Cancelable 	 | Executed after the customer quote is recalled from the recall order view.|
 
 
 

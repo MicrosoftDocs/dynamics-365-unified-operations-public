@@ -97,7 +97,9 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 
     ![External codes button on the Action Pane of the Sales tax code page](media/nor-saf-standard-tax-codes.jpg)
 
-3. On the **External codes** page, specify the Norwegian standard VAT tax codes that should be used for the selected sales tax code record for the purpose of SAF-T reporting.
+3. On the **External codes** page, specify the Norwegian standard VAT tax codes that should be used for the selected sales tax code record for the purpose of SAF-T reporting. On the **External codes** page, in the **Overview** section, in the **Code** field, select the identifier for the external code definition and enter a standard tax code that corresponds to the selected **Sales tax code** in **Value** field in **Value** section.
+
+    ![Setup Standard tax code for the selected Sales tax code](media/not-saf-external-codes-tax.png)
 
 ### Main accounts
 
