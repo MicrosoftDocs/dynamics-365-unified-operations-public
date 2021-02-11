@@ -5,7 +5,7 @@ title: ENDSWITH ER function
 description: This topic provides information about how the ENDSWITH Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
-ms.date: 02/03/2021
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,11 +45,11 @@ ENDSWITH (input, end text)
 
 `input`: *String*
 
-The valid path of an item of a data source of the *String* type or a string constant the value of which might end with the second argument.
+The valid path of an item of a data source of the *String* type or a string constant, the value of which might end with the second argument.
 
 `start text`: *String*
 
-The valid path of a data source of the *String* data type or a string constant the value of which might be at the end of the first argument.
+The valid path of a data source of the *String* data type or a string constant, the value of which might be at the end of the first argument.
 
 ## Return values
 
@@ -59,11 +59,11 @@ The resulting *Boolean* value.
 
 ## Usage notes
 
-Notice that this function can be used to specify a condition expression of the [FILTER](er-functions-list-filter.md) function only when the relevant mapping is configured in [Regulatory Configuration Services](https://docs.microsoft.com/dynamics365/finance/localizations/rcs-globalization-feature) to access [Microsoft Dataverse](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-integration-cds). Otherwise, the exception is thrown at design time suggesting to use the [WHERE](er-functions-list-where.md) function instead of the FILTER one.
+This function can be used to specify a condition expression of the [FILTER](er-functions-list-filter.md) function only when the relevant mapping is configured in [Regulatory Configuration Services](../../finance/localizations/rcs-globalization-feature.md) to access [Microsoft Dataverse](../data-entities/data-integration-cds.md). Otherwise, the exception is thrown at design time suggesting that you use the [WHERE](er-functions-list-where.md) function instead of the FILTER one.
 
 ## Example 1
 
-The `ENDSWITH ("abc", "d")` expression returns **FALSE** while the `ENDSWITH ("abc", "C")` one returns **TRUE**.
+The `ENDSWITH ("abc", "d")` expression returns **FALSE**, while the `ENDSWITH ("abc", "C")` one returns **TRUE**.
 
 ## Example 2
 
