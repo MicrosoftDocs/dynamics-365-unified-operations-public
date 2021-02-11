@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 
 # Define benefit eligibility rules and policies
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic shows you how you can create benefit eligibility rules and policies and then assign rules to benefits.  
 
 ## Create benefit eligibility policy rule type

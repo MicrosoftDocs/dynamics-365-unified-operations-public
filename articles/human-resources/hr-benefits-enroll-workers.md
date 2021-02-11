@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 ---
 # Enroll and remove benefits from workers
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 
 
 This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit. The demo data company used to create this procedure is USMF.
