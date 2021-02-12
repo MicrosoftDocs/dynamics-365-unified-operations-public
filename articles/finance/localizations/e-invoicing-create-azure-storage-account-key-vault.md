@@ -82,6 +82,6 @@ In this topic, you will complete two main steps:
 
     ![Granting certificate permission](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
-9. In the **Principal** dialog box, select the principal by adding **Electronic invoicing add-on**.
+9. Select **None selected** in **Select principal**. In the **Principal** dialog box, select the principal by adding **e-Invoicing Service**.
 10. Select **Add**, and then select **Save Key Vault changes**.
 11. On the **Overview** page, copy the **DNS name** value for the key vault. This value will be used during setup of the service in RCS and will be referred as the *key vault URI*.
