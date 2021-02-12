@@ -53,7 +53,7 @@ Identity management pages use JavaScript initialized from the Azure AD B2C serve
 
 ## Identity management modules
 
-The following modules are used on identity management pages in Dynamics 365 COmmerce.
+The following modules are used on identity management pages in Dynamics 365 Commerce.
 
 ### Sign-up module
 
