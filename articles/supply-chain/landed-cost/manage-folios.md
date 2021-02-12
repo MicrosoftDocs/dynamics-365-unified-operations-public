@@ -37,7 +37,7 @@ To open the **All folios** page, go to **Landed cost \> Folios \> All folios**. 
 
 ## Action Pane
 
-The Action Pane on the **All folios** and **Folios** pages provides buttons that let you work with a selected folio. The Action Pane includes buttons, each of which performs a single action. It also includes tabs, each of which, in turn, contains a set of related buttons. Except where noted, all buttons and tabs that are described in the following subsections are available both in the list view (that is, on the **All folios** page) and in the detailed view (that is, on the **Folios** page).
+The Action Pane on the **All folios** and **Folios** pages provides buttons that let you work with a selected folio. Each button performs a single action. The Action Pane also includes tabs, each of which, in turn, provides a set of related buttons. Except where noted, all buttons and tabs that are described in the following subsections are available both in the list view (that is, on the **All folios** page) and in the detailed view (that is, on the **Folios** page).
 
 ### Buttons that appear directly on the Action Pane
 
