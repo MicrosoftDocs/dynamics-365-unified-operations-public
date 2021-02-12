@@ -5,7 +5,7 @@ title: Content delivery network implementation options
 description: This topic reviews the different content delivery network (CDN) implementation options that can be used with Dynamics 365 Commerce environments, including both native Commerce and customer-owned instances of Azure Front Door.
 author: BrianShook
 manager: AnnBe
-ms.date: 12/09/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -65,7 +65,7 @@ The following illustration shows the architecture of the Commerce-provided Azure
 
 ## Use a customer-owned Azure Front Door instance
 
-The following table lists the pros and cons of using a customer-owned Azure Front Door instance to manage your content endpoints.
+The following table lists the pros and cons of using a customer-owned Azure Front Door instance to manage content endpoints.
 
 | Pros | Cons |
 | ---- | ---- |
@@ -77,7 +77,7 @@ The following illustration shows Commerce infrastructure with a customer-owned A
 
 ## Use an external content delivery network (CDN)
 
-The following table lists the pros and cons of using an external CDN provider to manage your content endpoints.
+The following table lists the pros and cons of using an external CDN provider to manage content endpoints.
 
 | Pros | Cons |
 | ---- | ---- |
