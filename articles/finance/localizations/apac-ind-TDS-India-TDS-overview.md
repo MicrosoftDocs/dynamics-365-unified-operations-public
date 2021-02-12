@@ -44,7 +44,7 @@ This topic provides detailed information about India Tax Deducted at Source (TDS
 
 ### Introduction
 
-This topic provides detailed information about India Tax Deducted at Source (TDS). The TTCS documentation covers the functionality of the Tax Deducted at Source (TDS) feature. This documentatoin also describes how to do the basic setup for TDS, calculate TDS on transactions, TDS settlement process, record TDS certificate numbers, generate TDS inquiries, TDS statements, and TDS certificate.
+This topic provides detailed information about India Tax Deducted at Source (TDS). The TTCS documentation covers the functionality of the Tax Deducted at Source (TDS) feature. This documentation also describes how to do the basic setup for TDS, calculate TDS on transactions, TDS settlement process, record TDS certificate numbers, generate TDS inquiries, TDS statements, and TDS certificate.
 
 As per the Income tax Act, 1961, income tax is deducted at source by the receiver of the service at the time of advance payment or accounting of credit, whichever takes place earlier. The person who makes the payment must deduct the tax amount and pay only the net balance to the provider of service. The tax is deducted using the rates that are notified by the government for a period. Tax Deducted at Source (TDS) is applied on services that are notified by the government. The rate of deduction is based on the status of the entity that receives the payment or provides the service, such as, Individual, Hindu Undivided Family (HUF), Company, Firm, Association of Persons (AOP), Body of Individuals (BOI), or Local authority. 
 
