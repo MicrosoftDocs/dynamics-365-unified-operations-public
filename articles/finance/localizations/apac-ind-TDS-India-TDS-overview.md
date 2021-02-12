@@ -1,4 +1,38 @@
+---
+# required metadata
+
+title: 
+description: 
+author: kailiang
+manager: AnnBe
+ms.date: 02/12/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+# ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 15721
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kailiang
+ms.search.validFrom: 2021-02-12
+ms.dyn365.ops.version: AX 10.0.17
+
+---
+
 # India Tax Deducted at Source (TDS) overview
+
+[!include [banner](../includes/banner.md)]
 
 This topic provides detailed information about India Tax Deducted at Source (TDS).
 
@@ -8,11 +42,9 @@ This topic provides detailed information about India Tax Deducted at Source (TDS
 - Periodic TDS settlement process and settlement of TDS amounts to TDS authority vendors
 - Recording and updating TDS certificate numbers and dates
 
-
-
 ### Introduction
 
-The Tax Deducted at Source chapter covers the functionality of the Tax Deducted at Source (TDS) feature. This chapter describes how to do the basic setup for TDS, calculate TDS on transactions, TDS settlement process, record TDS certificate numbers, generate TDS inquiries, TDS statements, and TDS certificate.
+This topic provides detailed information about India Tax Deducted at Source (TDS). The Tax Deducted at Source chapter covers the functionality of the Tax Deducted at Source (TDS) feature. This chapter describes how to do the basic setup for TDS, calculate TDS on transactions, TDS settlement process, record TDS certificate numbers, generate TDS inquiries, TDS statements, and TDS certificate.
 
 As per the Income tax Act, 1961, income tax is deducted at source by the receiver of the service at the time of advance payment or accounting of credit, whichever takes place earlier. The person who makes the payment must deduct the tax amount and pay only the net balance to the provider of service. The tax is deducted using the rates that are notified by the government for a period. Tax Deducted at Source (TDS) is applied on services that are notified by the government. The rate of deduction is based on the status of the entity that receives the payment or provides the service, such as, Individual, Hindu Undivided Family (HUF), Company, Firm, Association of Persons (AOP), Body of Individuals (BOI), or Local authority. 
 
@@ -54,8 +86,6 @@ Income from Units (Under section 194K)
 
 Payment of compensation on acquisition of certain immovable property (Under section 194LA)
 
-
-
 **Non-residents**
 
 Payments to Non-resident sportsmen or sports association (Under section 194E)
@@ -68,37 +98,37 @@ Income from foreign currency bonds or shares of Indian Company (Under section 19
 
 Incomes of foreign institutional investors from securities (Under section 196D)
 
-Salary and all other positive incomes under any head on income( Section 192 )
+Salary and all other positive incomes under any head on income (Section 192)
 
-Interest on securities ( Section 193 )
+Interest on securities (Section 193)
 
-Interest other than interest on securities( Section 194A )
+Interest other than interest on securities (Section 194A)
 
-Payments to contractors and sub-contractors( Section 194C )
+Payments to contractors and sub-contractors (Section 194C)
 
-Winnings from Lottery or crossword puzzles( Section 194B )
+Winnings from Lottery or crossword puzzles (Section 194B)
 
-Winnings from horse races( Section 194BB )
+Winnings from horse races (Section 194BB)
 
-Insurance Commission covering all payments for procuring Insurance business( Section 194D )
+Insurance Commission covering all payments for procuring Insurance business (Section 194D)
 
-Any interest other than interest on securities payable to non-residents not being a company or to a foreign company( Section 195 )
+Any interest other than interest on securities payable to non-residents not being a company or to a foreign company (Section 195)
 
-Payment to non-resident sportsman including athlete or sports association or institution. In case of non-resident sportsman, payments in respect of advertisements as well as articles on any game/sports in India in newspapers, magazines, and so. is included( Section 194E )
+Payment to non-resident sportsman including athlete or sports association or institution. In case of non-resident sportsman, payments in respect of advertisements as well as articles on any game/sports in India in newspapers, magazines, and so. is included (Section 194E)
 
-Payment in respect of deposits under NSS \[National Savings Scheme\]( Section 194EE )
+Payment in respect of deposits under NSS \[National Savings Scheme\](Section 194EE)
 
-Payment on account of repurchase of Units by Mutual Fund or UTI ( Section 194F )
+Payment on account of repurchase of Units by Mutual Fund or UTI (Section 194F)
 
-Payment for Commission or brokerage (Section 194H )
+Payment for Commission or brokerage (Section 194H)
 
-Payment of rent (Section 194I )
+Payment of rent (Section 194I)
 
-Payment of fees for professional or technical services( Section 194J )
+Payment of fees for professional or technical services (Section 194J)
 
 Commission to Stockiest, distributors, buyers and sellers of Lottery tickets including remuneration or prize on such tickets (Section 194G)
 
-Income from Units purchased in foreign currency or long-term capital gain arising from the transfer of such Units purchased in foreign currency ( Section196B)
+Income from Units purchased in foreign currency or long-term capital gain arising from the transfer of such Units purchased in foreign currency (Section196B)
 
 Payment of any income to non-residents in respect of interest or dividend on bonds and shares (Section 196C) etc.
 
@@ -107,7 +137,6 @@ TDS is calculated on purchase, sales, sales return, credit notes, fixed assets a
 
 
 >  [!Note]
->
 >  In the current Indian tax scenario,  TDS is not calculated on sales transactions. Microsoft Dynamics AX  has a provision to calculate TDS recoverable on sales transactions to cater  to intercompany transactions. 
 
 TDS is always calculated considering the threshold limit and the exception threshold limit defined for the TDS component.
