@@ -84,7 +84,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 2. Select **New**.
 3. Enter information in the following fields:
 
-    - In the **Email ID** field, enter **EmailRecpt**.
+    - In the **Email ID** field, enter a name for this template.
     - In the **Email description** field, enter an optional description.
     - In the **Sender name** field, specify the name that should appear as the sender of the email. Customers will see this name as the **From** name on the email.
     - In the **Sender email** field, specify a valid email address. Customers will see this email address as the **From** email address on the email.
