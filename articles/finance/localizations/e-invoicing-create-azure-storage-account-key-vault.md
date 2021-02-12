@@ -5,7 +5,7 @@ title: Create an Azure storage account and a key vault
 description: This topic explains how to create an Azure storage account and key vault. 
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -82,6 +82,7 @@ In this topic, you will complete two main steps:
 
     ![Granting certificate permission](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
-9. Select **None selected** in **Select principal**. In the **Principal** dialog box, select the principal by adding **e-Invoicing Service**.
-10. Select **Add**, and then select **Save Key Vault changes**.
-11. On the **Overview** page, copy the **DNS name** value for the key vault. This value will be used during setup of the service in RCS and will be referred as the *key vault URI*.
+9. In the **Select principal** field, select **None selected**.
+10. In the **Principal** dialog box, select the principal by adding **e-Invoicing Service**.
+11. Select **Add**, and then select **Save Key Vault changes**.
+12. On the **Overview** page, copy the **DNS name** value for the key vault. This value will be used during setup of the service in RCS and will be referred as the *key vault URI*.
