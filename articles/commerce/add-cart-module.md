@@ -33,8 +33,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 A cart module shows the items that have been added to the cart before the customer proceeds to checkout. The module also shows an order summary and lets the customer apply or remove promotional codes.
 
 The cart module supports signed-in checkout and guest checkout. It also supports a **Back to shopping** link. You can configure the route for this link at **Site Settings \> Extensions \> Routes**.
