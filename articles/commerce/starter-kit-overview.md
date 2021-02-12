@@ -34,8 +34,6 @@ ms.dyn365.ops.version:
 
 This topic presents an overview of the Microsoft Dynamics 365 Commerce module library.
 
-## Overview
-
 The Dynamics 365 Commerce module library is a collection of modules that can be used to build an e-Commerce website. Modules have both user interface (UI) aspects and functional behavior aspects.
 
 Themes can be applied to the modules in the module library to change their look and feel. The themes use Cascading Style Sheets (CSS). A theme for a fictitious e-Commerce site that is named "Fabrikam" is provided as part of the module library and can be used as a reference.
