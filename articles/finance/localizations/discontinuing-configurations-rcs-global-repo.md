@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: RCS Discontinuing configuration in RCS/Global repository
+title: RCS discontinuing configuration in RCS/Global repository
 description: This topic describes how to discontinue configuration in the RCS Global repository.
 author: JaneA07      
 manager: AnnBe
@@ -28,20 +28,19 @@ ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
 
 ---
-# RCS Discontinuing configuration in RCS/Global repository
+# RCS discontinuing configuration in RCS/Global repository
 
 [!include [banner](../includes/banner.md)]
 
-## Overview:
-This topic describes how to discontinue configuration in the RCS Global repository. Previously is was possible only to delete configuration that were no longer required, now we have added a new feature that supports the capability of marking a released configuration as ‘Discontinued’ in the Global repo in RCS and it can be used to:
- - provide upfront notification of when a configuration is planned to be discontinued,
- - include details about the replacement configuration (if applicable), and
- - set a 'supported until' date for the specific configuration to inform the user as to when it is planned to be discontinued.
+This topic describes how to discontinue configuration in the RCS Global repository. Previously is was possible only to delete configurations that were no longer required. However now, you can mark a released configuration as **Discontinued** in the RCS Global repository and then:
  
-![image.png](articles/finance/localizations/media/Discontinue_version_1.png)
+ - Provide upfront notifications when a configuration is planned to be discontinued.
+ - Include applicable details about the replacement configuration.
+ - Set a **Supported until** date for the specific configuration to inform the user when it will be discontinued.
+ 
+![image.png](media/Discontinue_version_1.png)
 
-##Feature capabilities:
-- You can discontinue a configuration version and specify the following discontinuation information; all fields are optional:
+You can discontinue a configuration version and specify the following discontinuation information. Note that all fields are optional.
   - Replacement configuration
   - Replacement configuration version
   - Free text note - this field should be used to convey additional documentation links or references
@@ -55,13 +54,14 @@ This topic describes how to discontinue configuration in the RCS Global reposito
 - You can revert configuration back to Shared or adjust discontinuation info at anytime.
 - You can keep configuration Shared, but specify 'Supported until' (and all other discontinuation info) to indicate your plans to discontinue the configuration in future.
 
-**Note:** Discontinuation does not limit any operations with configurations for customers, they still can import, run or derive them, it's just informational fields.
+> [!NOTE]
+> Discontinuation does not limit any operations with configurations for customers, they still can import, run or derive them, it's just informational fields.
 
-##Discontinuation details form:
+## Discontinuation details page
 
 ![image.png](articles/finance/localizations/media/Discontinue_details_2.png)
 
-##F&O supports displaying this information starting from 10.0.14
+## F&O supports displaying this information starting from 10.0.14
 
 - On the Global repository form:
   - User will see the up to date information related to discontinuation.
