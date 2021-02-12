@@ -43,7 +43,7 @@ Identity management modules display elements on identity management pages that e
 
 ## Identity management pages
 
-Identity management pages are built in Commerce site builder, but for security reasons are hosted and served from Azure AD B2C servers and not from your Commerce site. It is recommended to build separate Azure AD header and footer fragments with minimal page elements for use on identity management pages. Any fragments that have relative links, or make Commerce-specific calls (such as from the favorites button or shopping cart module) will not work from the Azure AD B2C servers. The starter site shipped with your instance of Commerce includes example Azure AD header and footer fragments for reference.
+Identity management pages are built in Commerce site builder, but for security reasons are hosted and served from Azure AD B2C servers and not from your Commerce site. A best practice is to build separate Azure AD header and footer fragments with minimal page elements for use on identity management pages. Any fragments that have relative links, or make Commerce-specific calls (such as from the favorites button or shopping cart module) will not work from the Azure AD B2C servers. The starter site shipped with your instance of Commerce includes example Azure AD header and footer fragments for reference.
 
 To set up identity management pages in Azure AD B2C, see [Set up custom pages for user sign-ins](custom-pages-user-logins.md).
 
@@ -57,7 +57,7 @@ The following modules are used on identity management pages in Dynamics 365 Comm
 
 ### Sign-up module
 
-The sign-up module is used on the sign-up page and includes the form elements for a site user to complete the sign-up flow. The user provides an email address to use as their username. The module allows for the Azure AD B2C email verification flow, triggering the "send code" and verifying the security PIN the user enters. Information collected on the sign-in page is used to create a record in Azure AD B2C, as well as a customer record in Commerce.
+The sign-up module is used on the sign-up page and includes the form elements for a site user to complete the sign-up flow. The user provides an email address to use as their username. The module allows for the Azure AD B2C email verification flow, triggering the "send code" and verifying the security PIN the user enters. Information collected on the sign-in page is used to create a record in Azure AD B2C, and a customer record in Commerce.
 
 ### Sign-in module
 
@@ -65,7 +65,7 @@ The sign-in module is used on the sign-in page and includes the form elements fo
 
 ### Password reset modules
 
-The following 2 modules are associated with the password reset flow.
+The following two modules are associated with the password reset flow.
 
 - **Password reset verification** - This module is used on the password reset verification page to allow users to trigger the sending of a security PIN email to the email address associated with the user account. The password reset verification page also allows users to enter the received security PIN to verify the ownership of the account.
 - **Password reset** - This module is used on the password reset page to allow the user to set and confirm a new password once the account email address has been verified on the password reset verification page.
