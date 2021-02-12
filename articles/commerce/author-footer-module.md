@@ -33,8 +33,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers footer modules and describes how to create them in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The footer module is a special container that is used to host the modules that appear in the page footer. For example, it can include links to various pages across the site, such as **Contact Us** and **Store Policies** pages.
 
 The following image shows an example of a footer module on a site page.
