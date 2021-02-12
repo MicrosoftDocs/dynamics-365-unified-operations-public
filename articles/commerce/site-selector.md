@@ -34,8 +34,6 @@ ms.dyn365.ops.version: Release 10.0.13
 
 This topic covers the site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 When a business has different sites across markets, regions, and locales, site users need an easy way to switch between sites and select their preferred shopping site. To accommodate this scenario, the site selector module lets users browse across multiple sites.
 
 The site selector module must be configured with the list of sites (markets, regions, or locales) that site users can browse.
