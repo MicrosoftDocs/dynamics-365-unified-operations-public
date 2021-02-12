@@ -72,7 +72,7 @@ The following 2 modules are associated with the password reset flow.
 
 ### Account profile edit module
 
-The account profile edit module is used on the account profile edit page to allows users to update their first name (given name) and last name (surname). These two values are shared between Azure AD B2C and Commerce, and any user updates made via the account profile edit page will update the values in both the Azure AD B2C and Commerce systems. On a Commerce e-commerce site, users access their account profile edit page by going to **My account \> My profile \> View details \> Name**, and can then select **Edit** to update their information.
+The account profile edit module is used on the account profile edit page to allow users to update their first name (given name) and last name (surname). These two values are shared between Azure AD B2C and Commerce, and any user updates made via the account profile edit page will update the values in both the Azure AD B2C and Commerce systems. On a Commerce e-commerce site, users access their account profile edit page by going to **My account \> My profile \> View details \> Name**, and can then select **Edit** to update their information.
 
 ### Azure AD generic module
 
