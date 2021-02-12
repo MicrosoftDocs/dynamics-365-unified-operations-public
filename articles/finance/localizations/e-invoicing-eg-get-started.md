@@ -33,6 +33,8 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 This topic provides information that will help you get started with the Electronic invoicing add-on for Egypt. The topic guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS), and complement the steps described in [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
 ## Country-specific configuration for Egyptian electronic invoice (EG) Electronic invoicing feature
