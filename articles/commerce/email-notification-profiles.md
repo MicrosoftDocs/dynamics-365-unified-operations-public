@@ -36,7 +36,7 @@ This topic describes how to create an email notification profile in Microsoft Dy
 
 ## Overview
 
-Before creating channels, you'll want to set up a profile to ensure that email notifications can be sent out for various events, such as order creation, order shipping status, and payment failure.
+As you're creating channels, you'll want to set up an email notification profile so that emails can be sent to customers for various transactional events, such as order creation, order shipping status, and payment failure.
 
 For additional email configuration information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -52,7 +52,7 @@ To create an email notification profile, follow these steps.
 
 ### Create an email template
 
-Before an email notification can be created, you must create an organization email template which contains the senders email information and the email template.
+Before an email notification type can be enabled, you must create an email template in Organization email templates which defines the email subject, sender and email body.
 
 To create an email template, follow these steps.
 
