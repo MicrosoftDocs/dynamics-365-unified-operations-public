@@ -45,10 +45,9 @@ To set up identity management pages in Azure AD B2C, see [Set up custom pages fo
 > [!WARNING] 
 > Azure AD B2C will be retiring legacy user flows by August 1, 2021. Plan to migrate your user flows to the new recommended version, which provides feature parity and new features. For more information, see [User flows in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview). 
 
-### Preview identity management pages
+### Preview, publish, and associate identity management pages with the Azure AD B2C user flow
 
-> [!NOTE]
-> Identity management pages use JavaScript initialized from the Azure AD B2C server. When previewing a page from site builder or an e-commerce site, it is common to see a white loading bar in the middle of the page that never initializes. Once a page is published, you must associate the page with the Azure AD B2C user flow as described in [Set up custom pages for user sign-ins](custom-pages-user-logins.md). Viewing a page as served from Azure AD B2C will then render the page elements with the initialized JavaScript.
+Identity management pages use JavaScript initialized from the Azure AD B2C server. When previewing a page from site builder or an e-commerce site, it is common to see a white loading bar in the middle of the page that never initializes. Once a page is published, you must associate the page with the Azure AD B2C user flow as described in [Set up custom pages for user sign-ins](custom-pages-user-logins.md). Viewing a page as served from Azure AD B2C will then render the page elements with the initialized JavaScript.
 
 ## Sign-up module
 
