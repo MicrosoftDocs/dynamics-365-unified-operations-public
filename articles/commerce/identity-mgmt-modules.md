@@ -36,16 +36,16 @@ ms.dyn365.ops.version:
 
 This topic covers identity management pages and modules in Microsoft Dynamics 365 Commerce. 
 
-Identity management modules display elements that e-commerce site users use to interact with the identity management system associated with the Dynamics 365 Commerce environment. Identity management modules are used on sign-in, sign-up, password reset, and account profile edit pages. Commerce modules are configured by default to work with Azure Active Directory (Azure AD) business-to-consumer (B2C) as the identity provider. 
-
-## Identity management pages
-
-Identity management pages are built in Commerce site builder, but for security reason are hosted and served from Azure AD B2C servers and not from your Commerce site. It is recommended to build separate Azure AD header and footer fragments with minimal page elements to use for identity management pages. Any fragments that have relative links, or make Commerce-specific calls (such as from the favorites button or shopping cart module) will not work from the Azure AD B2C servers. The starter site shipped with your instance of Commerce includes example Azure AD header and footer fragments for reference.
-
-To set up identity management pages in Azure AD B2C, see [Set up custom pages for user sign-ins](custom-pages-user-logins.md).
+Identity management modules display elements on identity management pages that e-commerce site users use to interact with the identity management system associated with your Dynamics 365 Commerce environment. Identity management modules are used on sign-in, sign-up, password reset, and account profile edit pages. Commerce modules are configured by default to work with Azure Active Directory (Azure AD) business-to-consumer (B2C) as the identity provider. 
 
 > [!WARNING] 
 > Azure AD B2C will be retiring legacy user flows by August 1, 2021. Plan to migrate your user flows to the new recommended version, which provides feature parity and new features. For more information, see [User flows in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview). 
+
+## Identity management pages
+
+Identity management pages are built in Commerce site builder, but for security reasons are hosted and served from Azure AD B2C servers and not from your Commerce site. It is recommended to build separate Azure AD header and footer fragments with minimal page elements for use on identity management pages. Any fragments that have relative links, or make Commerce-specific calls (such as from the favorites button or shopping cart module) will not work from the Azure AD B2C servers. The starter site shipped with your instance of Commerce includes example Azure AD header and footer fragments for reference.
+
+To set up identity management pages in Azure AD B2C, see [Set up custom pages for user sign-ins](custom-pages-user-logins.md).
 
 ### Associate published identity management pages with the Azure AD B2C user flow
 
