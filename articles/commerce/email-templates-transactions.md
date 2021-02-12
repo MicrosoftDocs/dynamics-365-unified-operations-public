@@ -173,11 +173,12 @@ Here is an example.
 
 Receipts can be emailed to customers who make purchases at a retail point of sale (POS). In general, the steps for creating the emailed receipt template are the same as the steps for creating templates for other transactional events. However, the following changes are required:
 
-- The email ID of the email template must be **emailRecpt**.
 - The text of the receipt is inserted into the email by using the **%message%** placeholder. To ensure that the receipt body is correctly rendered, surround the **%message%** placeholder with HTML **&lt;pre&gt;** and **&lt;/pre&gt;** tags.
-- Line breaks in the HTML for the header and footer of the email are converted to HTML **&lt;br /&gt;** tags so that the receipt body is rendered correctly. To eliminate unwanted vertical space in your receipt emails, remove line breaks from any place in the HTML where vertical space isn't required.
+- The **%receiptid%** placeholder can be used to display a barcode or QR code that represents the receipt ID. To display a barcode or QR code in your emailed receipt, use the following HTML as an example:
 
-For more information about how to configure email receipts, see [Set up email receipts](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+```HTML
+<img src="http://YOUR_BARCODE_SERVICE?data=%receiptid%&param1=value&param2=value2" alt="%receiptid%" />
+```
 
 ## Upload the email HTML
 
