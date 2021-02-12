@@ -5,7 +5,7 @@ title: Identity management pages and modules
 description: This topic covers identity management pages and modules in Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 01/28/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -36,12 +36,19 @@ ms.dyn365.ops.version:
 
 This topic covers identity management pages and modules in Microsoft Dynamics 365 Commerce. 
 
-Identity management modules display elements that e-commerce site users use to interact with the identity management system associated with the Dynamics 365 Commerce environment. Identity management modules are used on pages for sign-in, sign-up, password reset, and profile edit. Although these pages are built in Commerce, for security reasons they are hosted and served from the identity provider's servers. Commerce modules are configured by default to work with Azure Active Directory (Azure AD) business-to-consumer (B2C) as the identity provider. The identity management modules can be found in Commerce site builder under the "AzureActiveDirectoryModules" category in the module picker.
+Identity management modules display elements that e-commerce site users use to interact with the identity management system associated with the Dynamics 365 Commerce environment. Identity management modules are used on sign-in, sign-up, password reset, and account profile edit pages. Although these pages are built in Commerce, for security reasons they are hosted and served from the identity provider's servers. Commerce modules are configured by default to work with Azure Active Directory (Azure AD) business-to-consumer (B2C) as the identity provider. 
+
+Identity management pages are built in Commerce site builder, but are served from Azure AD B2C servers and not from your Commerce site. Commerce recommends building separate Azure AD header and footer fragments with minimal page elements to use for identity management pages. Any fragments that have relative links, or make Commerce-specific calls (such as the favorites button or shopping cart module) will not work from the Azure AD B2C servers. The starter site shipped with your instance of Commerce includes example Azure AD header and footer fragments for reference.
 
 To set up identity management pages in Azure AD B2C, see [Set up custom pages for user sign-ins](custom-pages-user-logins.md).
 
 > [!WARNING] 
-> Azure AD B2C will be retiring legacy preview user flows by August 1, 2021. Plan to migrate your user flows to the new recommended version, which provides feature parity and new features. For more information, see [User flows in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview). 
+> Azure AD B2C will be retiring legacy user flows by August 1, 2021. Plan to migrate your user flows to the new recommended version, which provides feature parity and new features. For more information, see [User flows in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview). 
+
+### Preview identity management pages
+
+> [!NOTE]
+> Identity management pages use JavaScript initialized from the Azure AD B2C server. When previewing a page from site builder or an e-commerce site, it is common to see a white loading bar in the middle of the page that never initializes. Once a page is published, you must associate the page with the Azure AD B2C user flow as described in [Set up custom pages for user sign-ins](custom-pages-user-logins.md). Viewing a page as served from Azure AD B2C will then render the page elements with the initialized JavaScript.
 
 ## Sign-up module
 
@@ -56,7 +63,7 @@ The sign-in module is used on the sign-in page and includes the form elements fo
 The following 2 modules are associated with the password reset flow.
 
 - **Password reset verification** - This module is used on the password reset verification page to allow users to trigger the sending of a security PIN email to the email address associated with the user account. The password reset verification page also allows users to enter the received security PIN to verify the ownership of the account.
-- **Password reset** - This module is used on the password reset page to allow the user to set and confirm a new password once the account email address has been verified in the previous verification page.
+- **Password reset** - This module is used on the password reset page to allow the user to set and confirm a new password once the account email address has been verified on the password reset verification page.
 
 ## Account profile edit module
 
@@ -65,11 +72,6 @@ The account profile edit module is used on the profile edit page to allows users
 ## Azure AD generic module
 
 The Azure AD generic module follows the Azure AD B2C recommended pattern of setting a dedicated "div" element for Azure AD B2C to render elements within a site page. The generic module is flexible and a page employing it can be used for all Azure AD B2C user flow page layouts. Azure AD B2C will render the different user flow elements within the module on the page. This provides slightly less control of the visual elements when the page is rendered. CSS styling will apply, but complex positioning of page elements will not be possible as with other identity modules. A page using the generic module is more efficient to use since extensibility adjustments to the module are not needed if you are changing Azure AD B2C settings such as adding more social identity providers for sign-in and sign-up, or using future Azure AD B2C features.
-
-## Additional information
-
-- Identity management pages are built in Commerce site builder, but are served from Azure AD B2C servers and not from your Commerce site. Commerce recommends building separate Azure AD header and footer fragments with minimal page elements to use for identity management pages. Any fragments that have relative links, or make Commerce-specific calls (such as the favorites button or shopping cart module) will not work from the Azure AD B2C servers. The starter site shipped with your instance of Commerce includes example Azure AD header and footer fragments for reference.
-- Identity management pages use JavaScript initialized from the Azure AD B2C server. When previewing a page from site builder or an e-commerce site, it is common to see a white loading bar in the middle of the page that never initializes. Once a page is published, you must associate the page with the Azure AD B2C user flow as described in [Set up custom pages for user sign-ins](custom-pages-user-logins.md). Viewing a page as served from Azure AD B2C will then render the page elements with the initialized JavaScript.
 
 ## Additional resources
 
