@@ -35,8 +35,6 @@ ms.dyn365.ops.version: Release 10.0.14
 
 This topic covers cookie consent modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The cookie consent module prompts site users to explicitly provide consent to allow cookies for any feature or module that tracks browser cookies. The consent is required the first time a site user browses a site in a new browser session. When consent is received, it is tracked and the site user will not be prompted for consent again. For more information, see [Cookie compliance](cookie-compliance.md).
 
 If site user cookie consent is not received, any features or modules that require cookie consent will not be rendered on the page. For example, the checkout module, social share module, and preferred store feature all require cookie consent and will not be rendered if site user consent is not received. 
