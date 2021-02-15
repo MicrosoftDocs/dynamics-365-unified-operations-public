@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage shipping containers
-description: Shipping containers are used to group goods together that either are physically grouped together or are required to share costs only across those goods (normally because they are physically together).
+description: This topic describes how to work with shipping containers. Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
 author: RichardLuan
 manager: tfehr
 ms.date: 12/14/2020
@@ -31,107 +31,105 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-Shipping containers are used to group goods that either are physically grouped together or are required to share costs only across those goods (normally because they are physically together).
+Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
 
-To view and process goods through the shipping container form, go to **Landed cost \> Shipping containers \> All shipping containers**. This opens a list of available shipping containers. Select a container to view its details.
+To view and process goods through the shipping container page, go to **Landed cost \> Shipping containers \> All shipping containers**. The **All shipping containers** page shows a list of all available shipping containers. Select a container to view its details.
 
-On the shipping container details page, shipping container and costing information is shown on the top half of the page. Folios, items and purchase orders or transfer orders attached to the container are found on the lines section of the page.
+The upper part of the shipping container details page shows shipping container and costing information. The **Lines** section shows the folios, items, and purchase orders or transfer orders that are attached to the container.
 
 ## Header view
 
-### General
+### Settings on the General FastTab
 
-| **Setting** | **Description** |
-| --- | --- |
-| **Shipping Container type** | This must be entered and can determine the cost for freight for example by selecting the auto cost associated to the shipping container type. |
-| **Vessel** | The vessel is selected or entered here. Even though it is a drop-down field it allows free text within it. If the vessel is not listed and the user decides to enter free text it does not update the main table for future selection. For more information, refer to [Vessels](shipping-information-setup.md#vessels). |
-| **Unit type** | Unit types are used as an additional grouping and identification method against a shipping container. They are shown and selected on the shipping container form. For more information, refer to [Set up unit types](shipping-container-setup.md#unit-types). |
-| **Refrigeration type** | Refrigeration types are used as an additional grouping and identification method against a shipping container, normally for refrigerated containers. They are shown and selected on the shipping container form. For more information, refer to [Set up refrigeration types](shipping-container-setup.md#refrigeration-types). |
-| **Measurement** | This allows for a measurement to be specified within the Landed cost module. This is often used by organizations that do not know the individual volume/weight of the goods, but they require a more accurate apportionment than amount or quantity. The freight forwarder will supply them with the kg&#39;s or cubic measurement which they place at either an item level or purchase order level. It can be automatically updated if the parameter is selected or manually input. |
-| **Measurement unit** | Unit of measure relating to the number in the measurement field. |
-| **Actual weight** | The actual weight can be recorded of the carton/container. This can be used to verify against the maximum weight allowed on a shipping container setup. |
-| **Number of cartons** | The number of cartons is automatically updated if the parameter is selected. |
-| **Description of goods** | Description of goods can be selected from the shipping container or folio header and is used to assist in identifying a voyage/shipping container/folio of goods. For more information, refer to [Description of goods](shipping-information-setup.md#description-of-goods). |
-| **H.A.W.B/Bill of lading** | House air waybill or Bill of Lading can be specified against the shipping container. |
-| **Remarks** | Additional information relating to the shipping container. |
+| Field | Description |
+|---|---|
+| Shipping container type | Enter the shipping container type. This field must be set. You can use it to determine the cost for freight, for example, by selecting the auto cost that is associated with the shipping container type. |
+| Vessel | Enter or select the vessel. If the vessel isn't listed as a value, you can enter the vessel ID as free text. In that case, the main table isn't updated so that the vessel ID can be selected in this field later. For more information, see [Vessels](shipping-information-setup.md#vessels). |
+| Unit type | Unit types are used as an additional means of grouping and identifying shipping containers. They are shown and selected on the shipping container page. For more information, see [Set up unit types](shipping-container-setup.md#unit-types). |
+| Refrigeration type | Refrigeration types are used as an additional means of grouping and identifying shipping containers, usually refrigerated containers. They are shown and selected on the shipping container page. For more information, see [Set up refrigeration types](shipping-container-setup.md#refrigeration-types). |
+| Measurement | This field enables a measurement to be specified in the **Landed cost** module. Measurements are often used by organizations that don't know the individual volume or weight of goods, but that require a more accurate apportionment than the amount or quantity provides. The freight forwarder will provide the weight in kilograms or the cubic measurement, and you can put it at the level of either an item or the purchase order. It can be automatically updated if the parameter is selected, or it can be manually entered. |
+| Measurement unit | The unit of measure that applies to the number in the **Measurement** field. |
+| Actual weight | You can record the actual weight of the carton or container. This value can be used for verification against the maximum weight that is allowed in the setup of a shipping container. |
+| Number of cartons | The number of cartons is automatically updated if the parameter is selected. |
+| Description of goods | A description of goods can be selected on the shipping container or folio header. It's used to help identify a voyage, shipping container, or folio of goods. For more information, see [Description of goods](shipping-information-setup.md#description-of-goods). |
+| H.A.W.B/Bill of lading | You can specify the house air waybill or bill of lading for the shipping container. |
+| Remarks | Additional information that is related to the shipping container. |
 
-### Delivery
+### Settings on the Delivery FastTab
 
-| **Setting** | **Description** |
-| --- | --- |
-| **Created date and time** | Created date and time of the container. |
-| **Ex-factory date** | This date is normally given to the factory/vendor to advise them when you expect the goods to leave their premises. Often dealing with a factory in Asia will require this date as opposed to the date that you expect the goods by which is normally the case for a local delivery. This field can be populated by the purchase order lines on the shipping container list or by manual entry on this form. |
-| **Ship date** | This date can be printed on the purchase order document. It normally advises the factory/vendor when the goods should be delivered to the port by. This is an informational field only and is not used to estimate the expected delivery date of the goods within the shipping container. This field can be set to automatically update when the tracking control form is updated. |
-| **Estimated delivery date** | This is normally the date that the goods are due to arrive in the warehouse. This field is informational only and is not used to calculate master planning on the purchase order lines within the shipping container. The expected delivery date on the Purchase lines is updated through tracking control. This field can be set to update when the tracking control form is updated. |
-| **Departure date** | The departure date is normally the date the plane or vessel actually leaves the overseas port. |
-| **Estimated time of arrival at port** | This is the estimated arrival date at the destination port or &quot;To port&quot;. |
-| **Original documents received** | Optionally, update the date original documents were received. |
-| **Broker advised** | Optionally, update the date broker was advised. |
-| **Original bill of lading sent** | Optionally, update the date original Bill of Lading send. |
-| **Goods released** | Optionally, update the date goods were released. |
-| **Customer appointment** | Optionally, update the customer appointment date. |
-| **Delivered at warehouse** | Optionally, update the date goods were delivered to the warehouse. |
-| **Verification date** | Optionally, update the verification date. |
-| **Delivery instructions** | Optionally, update the date delivery instructions.
- |
-| **Local forwarder** | This is for informational purposes; the local forwarder should be selectable from the vendor table. |
-| **Local transport date** | Store the date the local transport is booked for. This can assist the warehouse in their planning. |
-| **Local transport time** | Store the time slot, again this can assist the warehouse in their planning |
-| **Journey template** | The journey template specified for the voyage. The journey template will provide the details of the to and from port as well as the lead times associated to the tracking control of the shipping container. |
+| Field | Description |
+|---|---|
+| Created date and time | The date and time when the container was created. |
+| Ex-factory date | This date is usually provided to the factory/vendor to indicate when you expect the goods to leave its premises. When you work with a factory in Asia, this date is often required instead of the date that you expect the goods by. (By contrast, for a local delivery, the date that you expect the goods by is required.) This field can be filled in from the purchase order lines in the shipping container list. You can also manually enter it here. |
+| Ship date | This date can be printed on the purchase order document. It usually informs the factory/vendor about the date that the goods should be delivered to the port by. This field is for informational purposes only. It isn't used to estimate the expected delivery date of the goods in the shipping container. This field can be set to that it's automatically updated when the tracking control page is updated. |
+| Estimated delivery date | Usually, the date when the goods are due to arrive in the warehouse. This field is for informational purposes only. It isn't used to calculate master planning on the purchase order lines in the shipping container. The expected delivery date on the purchase order lines is updated through tracking control. This field can be set up so that it's updated when the tracking control page is updated. |
+| Departure date | Usually, the date when the plane or vessel actually leaves the overseas port. |
+| Estimated time of arrival at port | The estimated arrival date at the destination port ("to" port). |
+| Original documents received | Optional: Update the date when the original documents were received. |
+| Broker advised | Optional: Update the date when the broker was advised. |
+| Original bill of lading sent | Optional: Update the date when the original bill of lading was sent. |
+| Goods released | Optional: Update the date when the goods were released. |
+| Customer appointment | Optional: Update the customer appointment date. |
+| Delivered at warehouse | Optional: Update the date when the goods were delivered to the warehouse. |
+| Verification date | Optional: Update the verification date. |
+| Delivery instructions | Optional: Update the date of the delivery instructions. |
+| Local forwarder | This field is for informational purposes only. The local forwarder should be selectable from the vendor table. |
+| Local transport date | Enter the date that the local transport is booked for. This field can help the warehouse do its planning. |
+| Local transport time | Enter the time slot. This field can help the warehouse do its planning. |
+| Journey template | The journey template that is specified for the voyage. The journey template provides the details of the "to" and "from" ports, and the lead times that are associated with the tracking control of the shipping container. |
 
-### Action descriptions
+### Buttons
 
-| **Action** | **Description** |
-| --- | --- |
-| **New** | Create a voyage. The voyage creation process will be outlined further in the scenarios documentation. |
-| **Delete** | Delete a voyage. Only voyages that are in the confirmed status can be deleted. Once a voyage has begun the goods in transit process, it can no longer be deleted. |
-| **Voyage Costs** | View/add voyagecosts to all goods within the shipping container. When the voyage costs are added at the shipping container form manually, they will only pertain to the items within the shipping container and not to the voyage as a whole. This will allow users to add shipping container level costs to a voyage that were missed in the auto cost creation. All voyage costs associated to the shipping container will be shown, with no dependency on the cost code type definition. |
+| Button | Description |
+|---|---|
+| New | Create a voyage. For more information about the voyage creation process, see the scenario documentation. |
+| Delete | Delete a voyage. Only voyages that have a status of *Confirmed* can be deleted. After a voyage has begun the goods-in-transit process, it can no longer be deleted. |
+| Voyage costs | View or add voyage costs to all the goods in the shipping container. Voyage costs that are manually added on the shipping container page apply only to the items in the shipping container, not to the whole voyage. Therefore, users can add shipping container–level costs to a voyage if they were missed during auto cost creation. All voyage costs that are associated with the shipping container will be shown, regardless of the cost code type definition. |
 
-### Manage
+### Buttons on the Manage tab
 
-| **Action** | **Descriptions** |
-| --- | --- |
-| **Post receipts list** | Post a receipts list View the product receipts lists for all purchase order lines within the shipping container. If multi-company shipments are used a new receipts list posting form will open per company. |
-| **Product receipt** | View the product receipt record (where used). |
-| **Invoice** | Post an invoice for all purchase order lines within the shipping container. If multi-company shipments are used a new invoice posting form will open per company. |
-| **Ship transfer order** | Post a transfer order shipment for all transfer order lines within the shipping container. Only those lines within the shipping container that are a type of transfer order will appear in the form. |
-| **Receive** | Post a transfer order receipt for all transfer order lines within the shipping container. The receive form is the simplest way to receive goods within a shipping container or voyage and is one of three options available. The other two options are to receive via arrival journals or via mobile device processing. |
-| **Receive in transit** | Receive all order lines that are in transit within the shipping container. The receive form is the simplest way to receive goods within a shipping container or voyage and is one of three options available. The other two options are to receive via arrival journals or via mobile device processing. |
-| **Find auto costs** | Click this option to find relevant voyage costs for the shipping container. If these have already been found or updated Dynamics 365 Finance and Operations, Enterprise Edition will ask the question &quot;Un-invoiced cost lines exist. Do you want to overwrite them?&quot;. Note: Voyage costs that are attached to a shipping container and invoiced will not be over written |
-| **Create arrival journal** | An arrival journal for organizations using advanced warehouse features can be generated. The options are _initialize quantity_ (recommended), and one of either _create__from goods in transit_ or _create from purchase orders_. This latter option will depend on whether goods in transit process is being used. |
-| **Accrue costs** | It is possible to accrue costs where a Cost type has a Ledger account specified for the Dr. This is normally used when the stock is in transit or goods have been received and invoiced. |
-| **Rename** |
- |
-| **Change journey template** | To change a journey template, it is necessary to choose this option. It may be necessary to _find auto costs_ or manually add costs once again as the shipment costs will be deleted. |
+| Button | Descriptions |
+|---|---|
+| Post receipts list | Post a receipt list, or view the product receipt lists for all purchase order lines in the shipping container. If multi-company shipments are used, a new receipts list posting dialog box is opened for each company. |
+| Product receipt | View the product receipt record, if it's used. |
+| Invoice | Post an invoice for all purchase order lines in the shipping container. If multi-company shipments are used, a new invoice posting dialog box is opened for each company. |
+| Ship transfer order | Post a transfer order shipment for all transfer order lines in the shipping container. Only those lines in the shipping container that are a type of transfer order appear in the dialog box. |
+| Receive | Post a transfer order receipt for all transfer order lines in the shipping container. The receive dialog box is the simplest way to receive goods in a shipping container or voyage, and is one of three available options. You can also receive via arrival journals or mobile device processing. |
+| Receive in transit | Receive all order lines that are in transit in the shipping container. The receive dialog box is the simplest way to receive goods in a shipping container or voyage, and is one of three available options. You can also receive via arrival journals or mobile device processing. |
+| Find auto costs | <p>Find relevant voyage costs for the shipping container. If the voyage costs have already been found or updated, you receive the following message: "Un-invoiced cost lines exist. Do you want to overwrite them?"</p><p>**Note:** Voyage costs that are attached to a shipping container and that have been invoiced won't be overwritten.</p> |
+| Create arrival journal | You can generate an arrival journal for organizations by using advanced warehouse features. The options are _Initialize quantity_ (recommended), and either _Create from goods in transit_ or _Create from purchase orders_. The last two options depend on whether goods-in-transit processing is being used. |
+| Accrue costs | You can accrue costs where a cost type has a ledger account specified for the debit. This button is typically used when the stock is in transit, or when goods have been received and invoiced. |
+| Rename | |
+| Change journey template | Change the journey template. After you change the journey template, you might have to select **Find auto costs** or manually add costs again, because the shipment costs will be deleted. |
 
-### General
+### Buttons on the General tab
 
-| **Action** | **Descriptions** |
-| --- | --- |
-| **Receipts list** | Post a receipts list for all purchase order lines within the shipping container. If multi-company voyages are used a new receipts list posting form will open per company. |
-| **Product Receipt** | View the product receipt record (where used) The product receipt process will only be used if the goods are not using goods in transit functionality. |
-| **Item arrival** | View the Item arrival journal (where used) for the shipping container. |
-| **Legs** | Legs are used to identify separate parts of a journey. Each leg can have lead times associated which can assist with shipment tracking. For more information, refer to [Legs](#_Legs). |
-| **Tracking** | View/Update shipment tracking |
-| **Costs inquiry** | It is possible to view all the costs of a shipping container including container/folio/purchase order using the Inquiry form. The exact view of the form can be adjusted using the view action.View any of the areas + item and cost type code on the Inquiry form. Removing these will adjust the inquiry form by grouping costs together, this can be useful if using sizes and colors. Change the dimensions that can be seen on the Inquiry costs form.The costs form only shows cost type codes where the Dr entry on the posting tab is set to Item. |
-| **Goods in transit orders** | It is possible to open the Goods in Transit form directly from the container. The form will display the Goods in Transit records for the selected shipping container only. |
-| **Over/under transactions** | It is possible to open the Over/Under Transactions form directly from the shipping container. The form will display the Over/Under records for the selected shipping container only. The over and under transactions will only be available once the goods have been received into the warehouse and the goods in transit order has been closed for further receiving. The over/under transactions process will be defined further in the over/under transactions scenario. |
+| Button | Descriptions |
+|---|---|
+| Receipts list | Post a receipt list for all purchase order lines in the shipping container. If multi-company voyages are used, a new receipt list posting dialog box is opened for each company. |
+| Product Receipt | View the product receipt record, if it's used. The product receipt process will be used only if the goods don't use goods-in-transit functionality. |
+| Item arrival | View the item arrival journal for the shipping container, if that journal is used. |
+| Legs | Legs are used to identify separate parts of a journey. Lead times can be associated with each leg to help with shipment tracking. For more information, see [Legs](#_Legs). |
+| Tracking | View or update shipment tracking. |
+| Costs inquiry | You can use the **Costs inquiry** page to view all the costs of a shipping container, including the container, folio, and purchase order. You can adjust the exact view of the page by using the **View** button. On the **Costs inquiry** page, you can view any of the areas, plus the item and cost type code. By removing these items, you can adjust the page by grouping together costs. This capability can be useful if you're using sizes and colors. You can change the dimensions that are shown on the **Costs inquiry** page. The costs page shows only cost type codes where the **Dr** entry on the **Posting** tab is set to *Item*. |
+| Goods in transit orders | You can open the **Goods in transit** page directly from the container. That page shows the goods-in-transit records for the selected shipping container only. |
+| Over/under transactions | You can open the **Over/Under transactions** page directly from the shipping container. That page shows the over/under records for the selected shipping container only. The over/under transactions will be available only after the goods have been received in the warehouse and the goods-in-transit order has been closed for further receiving. For more information about the over/under transaction process see the over/under transactions scenario. |
 
 ## Line view
 
-### Field descriptions
+### Settings
 
-| **Setting** | **Description** |
-| --- | --- |
-| **Measurement** | This allows for a measurement to be specified within the Landed cost module. This is often used by organizations that do not know the individual volume/weight of the goods, but they require a more accurate apportionment than amount or quantity. The freight forwarder will supply them with the KG&#39;s or cubic measurement which they place at either an item level or purchase order level. It can be automatically updated if the parameter is selected or manually input. |
-| **Measurement Unit** | Unit of measure relating to the number in the measurement field. |
-| **Number of cartons** | The number of cartons is automatically updated if the parameter is selected. |
+| Field | Description |
+|---|---|
+| Measurement | This field enables a measurement to be specified in the **Landed cost** module. Measurements are often used by organizations that don't know the individual volume or weight of goods, but that require a more accurate apportionment than the amount or quantity provides. The freight forwarder will provide the weight in kilograms or the cubic measurement, and you can put it at the level of either an item or the purchase order. It can be automatically updated if the parameter is selected, or it can be manually entered. |
+| Measurement unit | The unit of measure that is related to the number in the **Measurement** field. |
+| Number of cartons | The number of cartons is automatically updated if the parameter is selected. |
 
-### Actions
+### Buttons
 
-| **Action** | **Description** |
-| --- | --- |
-| **Remove** | Remove purchase order line from the shipping container. Only lines that have not been invoiced can be removed from the shipping container and voyage |
-| **Transactions** | View inventory transactions for the selected line. **Note** : Where goods in transit is used, the original order and the goods in transit orders will also be displayed. This is where users can see the estimated and actual costs of the goods update as the overhead costs are invoiced for a voyage. |
-| **Display dimensions** | Use this form to select the inventory dimensions that appear for the transactions that you view. If you clear check boxes, the transactions appear with fewer inventory dimensions, and therefore with less detail. |
-| **Refresh** | Refresh information relating to the line amount, weight, or volume of the purchase order line. |
+| Button | Description |
+|---|---|
+| Remove | Remove the purchase order line from the shipping container. Only lines that haven't been invoiced can be removed from the shipping container and voyage. |
+| Transactions | <p>View inventory transactions for the selected purchase order line.</p><p>**Note:** If goods-in-transit functionality is used, the original order and the goods-in-transit orders are also shown. The estimated and actual costs of the goods will be updated as the overhead costs are invoiced for a voyage.</p> |
+| Display dimensions | Select the inventory dimensions that appear for the transactions that you view. If you clear check boxes, fewer inventory dimensions are shown for the transactions. Therefore, less detail is shown. |
+| Refresh | Update information that is related to the line amount, weight, or volume of the purchase order line. |
