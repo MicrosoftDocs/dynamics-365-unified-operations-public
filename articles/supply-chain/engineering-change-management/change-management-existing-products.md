@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable change management on existing products
-description: This topic explains how you can enable change management on existing products and the restrictions on the cases where you are able to do so
+description: This topic explains how you can enable change management for existing products. It also describes cases where your ability to enable change management is limited.
 author: t-benebo
 manager: tfehr
 ms.date: 02/05/2021
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
+ms.search.form: EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -30,70 +30,76 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to enable change management on existing products and the restrictions that apply to your ability to do so.
+This topic explains how you can enable change management for existing products. It also describes cases where your ability to enable change management is limited.
 
-When you enable change management on an existing product, you will be able to version that product and trace its changes throughout its life so you will be able to track those change with change orders. To enable this, you must convert the relevant products to *engineering items* (which are products that are versioned and managed with change management). A wizard is provided to help guide you through the process.
+When you enable change management for an existing product, you can create versions of that product and trace changes that are made to it throughout its life. Therefore, you can track those changes by using change orders. To enable change management, you must convert the relevant products to *engineering items* (also referred to as engineering products). Engineering products are products that are versioned and managed through change management. A wizard is provided to guide you through the conversion process.
 
-## Enable this feature on your system
+## Turn on the feature in your system
 
-To use this capability, you must do the following:
+To use this capability, you must complete the following tasks:
 
-1. Enable the Engineering change management feature and its configuration key as described in the [Engineering change management overview](product-engineering-overview.md).
-1. Turn on the *Enable change management on existing products* feature in feature management. (See also the [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)).
+1. Enable the Engineering change management feature and its configuration key as described in [Engineering change management overview](product-engineering-overview.md).
+1. Turn on the *Enable change management on existing products* feature in feature management. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Restrictions and limitations
 
-Some restrictions apply in terms of which types of product can be converted to which other types. The following restrictions and limitations apply:
+Not all product types can be converted to all other types. The following restrictions and limitations apply:
 
-- When you convert a product to an engineering product, it remains a *product* and does not become a *product master*.
-- When you convert a product master with a specific set of dimensions, those dimensions will be maintained after the change. (For example, if you convert a product master with the size dimension, it will keep the size dimension.)
+- When you convert a product to an engineering product, it remains a *product*. It doesn't become a *product master*.
+- When you convert a product master that has a specific set of dimensions, those dimensions are maintained after the change. For example, if you convert a product master that has the size dimension, it will keep the size dimension.
 
-As a result of these points, if you have a distinct product, you will only be able to change it to an engineering product that does not track the product dimension in transactions (the version dimension isn't used). See the remaining sections of this topic for more information about these issues.
+Therefore, if you have a distinct product, you can change it only to an engineering product that doesn't track the product dimension in transactions (that is, the version dimension isn't used). See the remaining sections of this topic for more information about these issues.
 
 ## Prepare for conversion by creating all required engineering product categories
 
-Each engineering product must be assigned an *engineering product category*. You will assign this when you run the convert to engineering product wizard. The engineering product category provides a basis for creating an engineering product and establishes a set of default values and policies. The engineering category must match the product you assign it to. For example, the product type and dimension group must match both the product and its engineering category. More information: [Engineering versions and engineering product categories](engineering-versions-product-category.md)
+An *engineering product category* must be assigned to every engineering product. You will do this assignment when you run the **Convert to engineering product** wizard. Engineering product categories must exist for all relevant standard products *before* you can convert those products.
 
-Therefore, a engineering categories must exist for each relevant standard product *before* you can convert those products.
+The engineering product category provides a basis for creating an engineering product, and it establishes a set of default values and policies. The engineering product category must match the product that you assign it to. For example, the product type and dimension group must match both the product and its engineering product category. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
-> Because the wizard can only convert to engineering products where the version is not tracked in transactions, the engineering categories that you create for converting existing products must have their **Track version in transactions** option set to *No*.
+> The **Convert to engineering product** wizard can convert product only to engineering products where the version isn't tracked in transactions. Therefore, the **Track version in transactions** option must be set to *No* for engineering product categories that you create to convert existing products.
 
-For instructions about how to create engineering product categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
+For information about how to create engineering product categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
-## Run the convert to engineering product wizard
+## Run the Convert to engineering product wizard
 
-The *convert to engineering product wizard* helps you convert one or more existing products into engineering products. Once converted, you'll be able to manage these products using Engineering Change Management. This conversion is permanent, so you won't be able to revert it later. The wizard will convert the product into an engineering product (a versioned product) where the version is not tracked in transactions (the version dimension isn't used).
+The **Convert to engineering product** wizard helps you convert one or more existing products to engineering products. It converts the products into engineering products (versioned products) where the version isn't tracked in transactions (that is, the version dimension isn't used). After the conversion is completed, you can manage the products by using Engineering change management.
 
-After the conversion, each converted engineering product will still be released in the same companies as the original product was. However, the engineering bill of materials (BOM) and routes won't automatically be released to those companies. 
+The conversion is permanent. Therefore, you won't be able to reverse it later. 
 
-To convert a product to an engineering item, you must run the convert to engineering product wizard as follows:
+Each converted engineering product will continue to be released in the same companies that the original product was released in. However, the engineering bill of materials (BOM) and routes won't automatically be released to those companies.
+
+Follow these steps to run the **Convert to engineering product** wizard and convert a product to an engineering product.
 
 1. Go to **Product information management \> Products \> Released products**.
-1. On the grid, select the check box for each product that you want to convert for now.
-1. On the Action Pane, open the **Engineer** tab and then, from the **Engineering change management** group, select **Convert to engineering product**.
-1. The **Convert to engineering product** wizard launches, open to the **Welcome** page. If you aren't already familiar with the process, then read the information shown here carefully. Select **Next** to continue.
-1. The **Select details for the products to be converted** page opens, showing each of the products you had selected before launching the wizard. Inspect the list and, if necessary, use the **New** and/or **Delete** commands in the toolbar to add or remove a product.
-1. Use the fields at the top of the grid to establish default values for each listed item (you'll be able to change these for each specific item as needed afterwards). Defaults will not be applied to products where a relevant value has already been assigned. See the next step for more information about each of these settings. The following fields are available for establishing defaults in the grid:
-    - **Default engineering category** - Select an initial engineering category to assign to each listed product. The category you choose here will only be applied to those products that are compatible with it.
-    - **Default version** - Enter an initial product version to assign to each listed product. When you use engineering products, each product has at least one engineering version.
-    - **Default lifecycle state** - Select an initial product lifecycle state to assign to each listed product.
-    - **Current BOM will be part of the engineering product** - Select this check box if each product should use its current bill of materials (BOM) as a BOM for the engineering product.
+1. In the grid, select the check box for each product that you want to convert.
+1. On the Action Pane, on the **Engineer** tab, in the **Engineering change management** group, select **Convert to engineering product** to open the wizard.
+1. The first page of the wizard is the **Welcome** page. If you aren't already familiar with the conversion process, carefully read the information on this page. When you're ready to continue, select **Next**.
+1. The **Select details for the products to be converted** page shows each product that you selected before you opened the wizard. Inspect the list. Use the **New** and **Delete** buttons on the toolbar to add or remove products as you require.
+1. Use the following fields at the top of the grid to assign default values to every product that is listed. (You will be able to change these values for individual products after the conversion is completed.) Default values won't be assigned to products where a relevant value has already been assigned.
 
-1. Review each product listed in the grid and consider whether the default values you selected (if any) really do apply to each product. For each row, review the following information and make relevant settings:
-    - **Product number** - Shows the product number.
-    - **Product name** - Shows the name of the product.
-    - **Engineering category** - Select the engineering category that the product should belong to after being converted. An appropriate category must already exist for each product (see the previous section for details). You must assign this for each product.
-    - **Version** - Enter the product version to assign to the product after being converted. For example, you might select a number that fits with the number sequence already used by your category. Each engineering version stores the engineering-relevant data that is specific to that version. More information: [Engineering versions and engineering product categories](engineering-versions-product-category.md)
-    - **Product lifecycle state** - Select the product lifecycle state that the product should be in after being converted.  The product lifecycle state enables you to control which transactions are allowed for a given engineering version. More information: [Product lifecycle states and transactions](product-lifecycle-state-transactions.md).
-    - **Has BOM** - Shows a check mark if the product has a BOM. This can help you decide how to set the **Current BOM will be part of the engineering product** option.
-    - **Current BOM will be part of the engineering product** - Select this check box if the product should use its current BOM as a BOM for the engineering product. This BOM will then be managed by Engineering Change Management. Clear this check box for products that don't have a BOM, or if you prefer to manually create a BOM for the converted product later.
-    - **Has errors** - Shows a check mark if the product setup has one or more errors (for example, if the product type or the dimension group don't match in the category). Products that have errors will be skipped and won't be converted.
+    - **Default engineering category** – Select an initial engineering product category to assign to every listed product. The category that you select will be applied only to products that are compatible with it.
+    - **Default version** – Enter the initial product version to assign to every listed product. Every engineering product has at least one engineering version.
+    - **Default lifecycle state** – Select the initial product lifecycle state to assign to every listed product.
+    - **Current BOM will be part of the engineering product** – Select this check box if the current BOM for each listed product should be used as a BOM for the engineering product.
 
-1. When you are done making settings, select **Validate** from the toolbar to check them. For each row, the **Has errors** check box will update to indicate its status. Adjust your settings until all products are free of errors.
-1. When all of your products are set up correctly, select **Next** to continue.
-1. The **Confirm selection** page opens. Here you can read how many products are ready to be converted (and therefore show no errors) and how many were skipped (due to errors). Set **Run in batch** to *Yes* to perform the conversion as a batch job.
-1. Select **Finish** to apply your settings and start converting the products.
+    For more information about product settings, see the next step.
+
+1. Review each product that is listed in the grid, and evaluate how well the default values that you assigned apply to it. For each row, review the following information and set any relevant fields:
+
+    - **Product number** – The product number.
+    - **Product name** – The name of the product.
+    - **Engineering category** – Select the engineering product category that the product should belong to after it's converted. An appropriate category must already exist for each product, as was explained in the previous section of this topic. You must assign a category to every product.
+    - **Version** – Enter the product version to assign to the product after it's converted. For example, you might select a number that fits in the number sequence that your category already uses. Each engineering version stores the engineering-relevant data that is specific to that version. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
+    - **Product lifecycle state** – Select the product lifecycle state that the product should be in after it's converted. The product lifecycle state lets you to control which transactions are allowed for a given engineering version. For more information, see [Product lifecycle states and transactions](product-lifecycle-state-transactions.md).
+    - **Has BOM** – A selected check box indicates that the product has a BOM. The setting of this check box can help you decide how to set the **Current BOM will be part of the engineering product** check box.
+    - **Current BOM will be part of the engineering product** – Select this check box if the current BOM of the product should be used as a BOM for the engineering product. That BOM will then be managed by Engineering change management. If the product doesn't have a BOM, or if you prefer to manually create a BOM for the converted product later, clear this check box.
+    - **Has errors** – A selected check box indicates that the product setup has one or more errors. For example, the product type or the dimension group might not match in the category. Products that have errors will be skipped and won't be converted.
+
+1. When you've finished, select **Validate** on the toolbar to validate the product setup. For each row, the **Has errors** check box will be updated to indicate the product's status. Adjust the values until the setup of every product is free of errors.
+1. When all the products are set up correctly, select **Next** to continue.
+1. The **Confirm selection** page shows the number of products that have no errors in their setup and are therefore ready for conversion. It also shows the number of products that will be skipped because of errors. To run the conversion as a batch job, set the **Run in batch** option to *Yes*.
+1. Select **Finish** to apply your settings and start to convert the products to engineering products.
 
 > [!NOTE]
-> If your system is set up to manually accept products before they are released, you must accept each converted product using the **Open product releases** page in the respective companies. See also [Review and accept the product before you release it in the local company](engineering-scenarios.md#accept).
+> If your system is set up to manually accept products before they are released, you must accept each converted product by using the **Open product releases** page in the appropriate companies. For more information, see [Review and accept the product before you release it in the local company](engineering-scenarios.md#accept).
