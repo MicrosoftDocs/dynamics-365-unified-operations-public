@@ -101,3 +101,6 @@ To set up grouping for automatically generated work orders, follow these steps.
 1. If you want the options to apply when you run only some of your maintenance plans, on the **Records to include** FastTab, add filters as you require, just as you might do for other batch jobs in Microsoft Dynamics 365 Supply Chain Management.
 1. On the **Run in the background** FastTab, set up batch and scheduling options as you require, just as you might do for other batch jobs in Supply Chain Management.
 1. Select **OK** to run and/or schedule the selected maintenance plans.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

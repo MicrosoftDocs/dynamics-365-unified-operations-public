@@ -68,3 +68,6 @@ On the **Asset counters** page (**Asset management** > **Inquiries** > **Assets*
 >[!NOTE]
 >You can set up a range to define deviations in manual counter registrations. You can also specify the type of message that is shown if registrations are outside the defined range. For more information about how to set up counters, see [Counters](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

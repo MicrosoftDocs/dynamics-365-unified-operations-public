@@ -81,3 +81,6 @@ This topic explains how to create a performance review and describes the purpose
 34. Select the **Review** tab. As the review moves through the statuses, the employee and manager can add comments for each goal or competency.  
 35. Select the **Sign offs** tab. The worker and manager can sign off on the review. When all required signoffs are complete, the status is changed to **Completed** and no more changes can be made.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -114,3 +114,6 @@ A new template BOM is created by using lines that correspond to the lines of the
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

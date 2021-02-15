@@ -295,3 +295,6 @@ The Test Data Transfer Tool (beta) lets you run SQL scripts after you complete t
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -147,3 +147,6 @@ public void InsertWithStrParameter()
 As Microsoft introduces the new methods, we are also marking the existing methods (that is, the methods without the parameters) as obsolete. The usual deprecation periods apply. Therefore, you can update your code to take advantage of the new protection that the parameters provide.
 
 Although the new **executeQueryWithParameters** API helps you protect your customers from disasters, you aren't required to use it. You can still do string concatenations and provide an empty parameter set. However, in this case, you don't gain the advantages that the parameters provide. We hope that you will take this opportunity to eliminate any dangerous usage that you have in your code.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -132,3 +132,6 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

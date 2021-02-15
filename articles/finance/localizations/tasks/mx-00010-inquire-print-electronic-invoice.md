@@ -45,3 +45,6 @@ Use the CFDI – Electronic invoices form to view, email, export, or print an al
 10. Close the page.
 11. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

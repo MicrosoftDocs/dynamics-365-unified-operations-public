@@ -188,3 +188,6 @@ This change occurs after the transfer because the flexible hours have been calcu
 | 06:00 PM | 08:00 PM | 2    | 1.5       | 3            |
 | 08:00 PM | 09:00 PM | 1    | 2         | 2            |
 |          |          |      | **Total** | **8**        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

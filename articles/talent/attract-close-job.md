@@ -67,3 +67,6 @@ You can close a job as **Position filled** after at least one prospect has compl
    > You can only close a job as **Position filled** when at least one prospect has completed the Offer stage. If the job application doesn't have **Offer accepted** selected, or if the application doesn't display a status of **Accepted** in Offer, the **Position filled** option won't display in the **Reason** dropdown.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

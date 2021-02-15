@@ -201,3 +201,6 @@ Sometimes, a solution might contain different implementations of a table map. Fo
     ![Upgrading your table maps](media/upgrade-entity-maps.png)
 
 The upgrade takes a few minutes. When it's completed, you receive a notification.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ This topic shows you how you can create benefit eligibility rules and policies a
 10. Select **Save**.
 11. Close the form.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

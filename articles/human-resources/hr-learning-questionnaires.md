@@ -49,3 +49,6 @@ The following table provides links to information about the core questionnaire t
 | [Design a questionnaire](hr-learning-design-questionnaires.md) | This article provides information about how to design a questionnaire. The design process involves setting up prerequisites, answers, and questions, and then combining them into a questionnaire. |
 | [Distribute and schedule questionnaires](hr-learning-distribute-questionnaires.md) | This article provides information about how to distribute a questionnaire to respondents and how to complete questionnaires. |
 | [View and evaluate the results of questionnaire](hr-learning-evaluate-questionnaire-results.md) | This article provides information about how to view and evaluate the results from completed questionnaires. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

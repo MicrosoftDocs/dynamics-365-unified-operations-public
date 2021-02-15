@@ -75,3 +75,6 @@ To log on to your demo environment, do the following.
 
       - **Log on to Finance and Operations**
       - **Log on to Commerce**
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

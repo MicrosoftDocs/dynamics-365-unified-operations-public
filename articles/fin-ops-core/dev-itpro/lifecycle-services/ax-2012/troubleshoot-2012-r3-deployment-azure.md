@@ -171,3 +171,6 @@ To obtain support for Microsoft Dynamics AX, use the resources listed in the fol
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Follow these steps to replay a task guide from LCS.
 2. Select **Open from LCS**.
 3. Select the library and the BPM node that have the saved task guide.
 4. Open the task guide.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

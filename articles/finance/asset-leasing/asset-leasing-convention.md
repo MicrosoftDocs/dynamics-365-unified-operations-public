@@ -59,3 +59,6 @@ To view or assign the leasing convention, follow these steps.
 3. Select **Save**.
 
 When a lease is created, the commencement date of each book is automatically entered based on the start date that is entered for the lease and the leasing convention that is specified for the book.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

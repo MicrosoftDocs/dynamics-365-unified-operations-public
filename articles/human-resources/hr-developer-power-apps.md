@@ -64,3 +64,5 @@ To download the **Power Automate – SQL Connect and execute** template, go to [
 ## Additional resources
 
 [The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

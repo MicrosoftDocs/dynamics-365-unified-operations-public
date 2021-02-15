@@ -45,3 +45,6 @@ To resolve the issue, the customer must follow these steps for the duplicated se
 3. Select **Save**.
 
 ![Global address book parameters page](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

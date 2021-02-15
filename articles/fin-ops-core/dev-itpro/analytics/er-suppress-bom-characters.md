@@ -70,3 +70,6 @@ To review the functionality at runtime, complete the appropriate procedure. For 
 ## See also
 
 - [Defer the execution of XML elements in ER formats](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ To complete some steps of the task guide, you must download the following files:
 | Web service response sample 2 | [Response2.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web service response sample 3 | [Response3.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web service response sample 4 | [Response4.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

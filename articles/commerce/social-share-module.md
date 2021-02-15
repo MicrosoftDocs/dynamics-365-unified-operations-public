@@ -84,3 +84,6 @@ To add a social share module to a buy box module, follow these steps.
 [Buy box module](add-buy-box.md)
 
 [Cookie compliance](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

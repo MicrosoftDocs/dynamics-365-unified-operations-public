@@ -44,3 +44,6 @@ You can use time windows to optimize the scheduling of service order lines.
 ## Related topics
 
 [Time windows](time-windows.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

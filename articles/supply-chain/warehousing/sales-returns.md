@@ -342,3 +342,6 @@ In this example, the return order line is created by using the **Find sales orde
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

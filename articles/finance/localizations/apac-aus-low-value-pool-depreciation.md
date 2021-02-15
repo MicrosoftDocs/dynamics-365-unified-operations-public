@@ -70,3 +70,6 @@ If you have a low-cost asset that has a net book value of AUD 800.00, the first-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

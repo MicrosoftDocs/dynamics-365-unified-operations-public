@@ -89,3 +89,6 @@ To add a text block module to a new page and set the required properties, follow
 
 [Video player module](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

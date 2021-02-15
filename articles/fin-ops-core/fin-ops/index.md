@@ -150,3 +150,6 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

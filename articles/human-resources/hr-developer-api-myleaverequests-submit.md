@@ -113,3 +113,5 @@ As part of the call to the submit API, Human Resources performs business logic v
 
 - [MyLeaveRequests overview](hr-developer-api-myleaverequests-overview.md)
 - [Authentication](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Schedule an automatic task to clean up your batch job history. We recommend sett
 
 8. Change any other parameters under **Run in the background** as necessary, and then select **OK**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ Download and install the Finance and Operations mobile app:
 1.	Select **Send praise**. 
 1. Enter the text of the praise that you want to send. 
 1. Select **Done**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

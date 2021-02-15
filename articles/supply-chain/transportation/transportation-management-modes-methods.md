@@ -51,3 +51,6 @@ To create a transportation method, follow these steps:
 1. Select **New** to create a new transportation method.
 1. Enter a unique ID and descriptive name for the transportation method.
 1. Close the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

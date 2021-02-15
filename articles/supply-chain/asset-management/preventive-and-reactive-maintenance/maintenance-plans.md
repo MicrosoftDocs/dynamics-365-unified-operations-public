@@ -243,3 +243,6 @@ You can configure the system to automatically reset a counter each time that a r
 1. Go to **Asset management \> Setup \> Work orders \> Lifecycle states**.
 1. In the list pane, select the work order lifecycle state that the relevant counter should be reset at.
 1. On the **General** FastTab, set the **Reset counter** option to *Yes*.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

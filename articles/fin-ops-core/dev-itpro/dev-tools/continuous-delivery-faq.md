@@ -158,3 +158,6 @@ The following servicing requests and tools are supported by LCS, which may help 
 6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.
 
 For more information about planning an environment, see [Environment planning](../../fin-ops/imp-lifecycle/environment-planning.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

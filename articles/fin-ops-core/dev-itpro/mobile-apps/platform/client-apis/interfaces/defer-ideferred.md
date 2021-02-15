@@ -89,3 +89,6 @@ resolve(value?: T &#124; PromiseLike &lt;T&gt;): void
 
 #### Returns void
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ In addition to a bank statement, banks can provide specific messages, containing
 -   (SWE) BankGirot return – Vendor payments return format, which corresponds to Bankgirot export format
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

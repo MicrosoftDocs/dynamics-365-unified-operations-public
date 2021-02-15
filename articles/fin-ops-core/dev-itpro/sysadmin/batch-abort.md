@@ -45,3 +45,6 @@ Complete the following steps to immediately cancel the running task.
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 2. Select a batch job that has a **Status** of **Canceling**.
 3. On the **Batch tasks** tab, select **Cancel** on the task, and then select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

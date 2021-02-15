@@ -62,3 +62,6 @@ You can post a fiscal document that you received from the acquisition of invento
 29. Close the page.
 30. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

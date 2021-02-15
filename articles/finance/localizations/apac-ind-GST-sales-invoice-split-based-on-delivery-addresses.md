@@ -90,3 +90,6 @@ ms.dyn365.ops.version: 10.0.4
 6. Select **Voucher**.
 
     ![Financial entries for the record that has an invoice amount of 6,050.00](media/Annotation-2019-05-20-163156.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

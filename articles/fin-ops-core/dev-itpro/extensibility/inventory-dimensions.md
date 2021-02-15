@@ -155,3 +155,6 @@ The application supports many end-to-end business scenarios, for example creatin
 If needed, please log issues directly in GitHub, and feel free to contribute to the sample application to provide additional coverage.
  
 ![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

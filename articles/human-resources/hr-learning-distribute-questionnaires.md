@@ -136,3 +136,6 @@ After you've designed and distributed a questionnaire, the questionnaire can be 
 Questionnaires can made be available to specific users or groups of users, or to all users in a network.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

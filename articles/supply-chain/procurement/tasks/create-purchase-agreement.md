@@ -74,3 +74,6 @@ This topic guides you through the creation of a purchase agreement. This would t
 5. Select **Purchase agreement confirmations**. The **Preview/Print** option allows you to generate a document for the purchase agreement which you can then print or send to the vendor. If you update the agreement later on and re-confirm it, both versions will be shown here.  
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

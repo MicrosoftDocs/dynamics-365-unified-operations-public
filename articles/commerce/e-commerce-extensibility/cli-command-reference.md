@@ -220,3 +220,6 @@ yarn msdyn365 validate ./
 [E-commerce architectural overview](architectural-overview.md)
 
 [E-commerce components](ecommerce-components.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

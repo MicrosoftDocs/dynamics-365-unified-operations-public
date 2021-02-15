@@ -38,3 +38,6 @@ This procedure walks through how to download a pre-defined hardware station. The
 5. In the list, find and select the desired record.
 6. Click Download.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Settlement-related information is captured and can be shown on the **Transaction
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

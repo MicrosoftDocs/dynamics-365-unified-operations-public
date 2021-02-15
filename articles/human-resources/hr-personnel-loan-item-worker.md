@@ -47,3 +47,6 @@ This procedure shows how to loan an item to a worker and record the worker retur
 2. Click Edit.
 3. In the Actual return field, enter a date.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -257,3 +257,6 @@ There are several advantages to granting explicit access to TPF-protected fields
 
 - You can more easily discover who has access to sensitive data.
 - You help reduce the risk that someone will gain access to sensitive data by accident, because a role gains access only if you assign both a duty and a privilege to it.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

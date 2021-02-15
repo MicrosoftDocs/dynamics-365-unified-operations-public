@@ -63,3 +63,6 @@ This task guide steps through creating an account structure. The steps use demo 
 29. On the **Action pane**, click **Activate**.
 30. Click **Activate**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

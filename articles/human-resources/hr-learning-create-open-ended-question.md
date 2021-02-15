@@ -41,3 +41,6 @@ Open-ended questions enable respondents to provide their own response. You can c
     * An input type of Text or Note is used for an open-ended question.  
 6. In the Text field, enter your question.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

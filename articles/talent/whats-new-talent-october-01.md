@@ -81,3 +81,6 @@ leavers in an organization. Options include: Prorated, Full accrual, and No accr
     closed. If the FactBoxes are closed when the **Worker** page is loaded, the
     **Attachments** buttons will be enabled. (This issue will be fixed in the next
     platform update.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

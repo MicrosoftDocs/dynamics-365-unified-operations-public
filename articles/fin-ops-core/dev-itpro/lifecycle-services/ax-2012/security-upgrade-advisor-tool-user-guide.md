@@ -254,3 +254,6 @@ After the Excel spreadsheet with the results is generated, you can use the role 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

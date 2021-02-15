@@ -69,3 +69,6 @@ New behaviors are enabled through added functionality as part of extensions. Ext
 
 > [!NOTE]
 > The author of the extension is responsible for not violating these principles.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

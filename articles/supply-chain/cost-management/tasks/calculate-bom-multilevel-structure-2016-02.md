@@ -50,3 +50,6 @@ This procedure shows how to calculate the cost of a finished product by using mu
 11. Close the page.
 12. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

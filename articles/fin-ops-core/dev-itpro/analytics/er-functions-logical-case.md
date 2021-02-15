@@ -88,3 +88,6 @@ If the first result value and the *N*th result value are values of the *Containe
 ## Additional resources
 
 [Logical functions](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ The **View details** option is available in a couple of ways:
 
 - If a control has **View details** capabilities, and if the control has a value, that value is displayed as a hyperlink. You can click the hyperlink to open a page that contains additional details.
 - **View details** is also an option on shortcut menus. For more information about when shortcut menus are displayed when you right-click, see the previous section.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

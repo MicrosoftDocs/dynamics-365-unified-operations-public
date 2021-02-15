@@ -73,3 +73,6 @@ To see what's new or changed in the Platform updates for Finance and Operations 
 | Platform update 1  | 7.0.4127.16103   | May 2016         | [What's new or changed in Dynamics AX platform update 1](../../fin-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md)                                    |
 | Dynamics AX 7.0                | 7.0.4030.16079   | February 2016    | [What's new or changed in Dynamics AX 7.0](../../fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                                         |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

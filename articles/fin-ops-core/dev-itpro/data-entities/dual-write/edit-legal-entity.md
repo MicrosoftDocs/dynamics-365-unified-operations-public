@@ -70,3 +70,6 @@ Follow these steps to add a company or legal entity after dual-write has been se
 
 ![Legal entities update succeeded](media/legal-entities-updated.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

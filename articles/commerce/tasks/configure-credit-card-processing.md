@@ -64,3 +64,6 @@ This procedure walks through how to view the list of payment providers and how t
 24. Click the Default processor for new credit cards checkbox.
 25. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

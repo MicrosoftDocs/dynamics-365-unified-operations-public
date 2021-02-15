@@ -60,3 +60,6 @@ PA-DSS implementation guides that are available are linked to in the **Version**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

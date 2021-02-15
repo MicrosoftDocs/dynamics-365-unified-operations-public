@@ -124,3 +124,6 @@ After you've configured security for one project, you can import the users to an
 If you have an implementation project, you will have the option to specify project user's implementation roles. For more information, see [Roles in a Dynamics 365 implementation](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles).
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

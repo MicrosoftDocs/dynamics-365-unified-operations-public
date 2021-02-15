@@ -294,3 +294,6 @@ The following illustration shows an example of the **Tax invoice** report.
 5. Select **Post**.
 6. Select **OK**.
 7. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

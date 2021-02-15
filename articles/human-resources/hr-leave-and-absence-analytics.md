@@ -50,3 +50,5 @@ Dynamics 365 Human Resources provides analytics to help give you insight into yo
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

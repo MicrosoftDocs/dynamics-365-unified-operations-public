@@ -61,3 +61,6 @@ The conversion factors fields identify the conversion factor from the payment fr
    | **Hourly conversion factor** | The annual conversion factor for the payment frequency. For example, the annual conversion factor for the monthly pay frequency is: </br></br>(12 monthly payments / 2080 hours) = 0.005769
 
 4. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

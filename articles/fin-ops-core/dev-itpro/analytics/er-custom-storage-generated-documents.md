@@ -183,3 +183,6 @@ The **AttachingFile()** event is raised when the following ER destinations are p
 
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 - [Extensibility home page](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

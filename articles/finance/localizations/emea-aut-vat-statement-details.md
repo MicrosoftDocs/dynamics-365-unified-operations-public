@@ -114,3 +114,6 @@ To generate a VAT XML file, use the **Report sales tax for settlement period** p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

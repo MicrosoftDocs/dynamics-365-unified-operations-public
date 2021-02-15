@@ -69,3 +69,6 @@ When the tile is selected, the **All production waves** page is opened. This pag
 The **Open warehouse work needing attention** tile shows the number of BOM and formula lines that have been released to the warehouse, that have unprocessed work, and that have a raw material date that is earlier than or the same as the workspace date. The lines must also be consumed by an operation resource that applies to the filter of the workspace.
 
 When the tile is selected, the **All work** page is opened. This page is filtered by the number of open work headers that contain work lines from released BOM and formula lines that meet the criteria for the tile. From the **All work** page, you can manually process the work.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

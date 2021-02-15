@@ -61,3 +61,6 @@ The following table provides details about the metrics that are found on each re
 | Ledgers                   | Ledgers that can be used to filter the report to the current ledger              |
 | Budget Codes              | Budget codes to filter reports by                                                |
 | Legal Entities            | Legal entities that can be used to filter the report to the current legal entity |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ In Microsoft Dynamics 365 Human Resources, waiting days establish a monthly mile
    | **Day** | The day of the month that the system should set the waiting period date to. |
    
 4. Select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

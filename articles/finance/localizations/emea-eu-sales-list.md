@@ -163,3 +163,6 @@ When you've completed the reporting process for a specific period (for example, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -160,3 +160,6 @@ You must specify the following general settings for Sweden.
 
     
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

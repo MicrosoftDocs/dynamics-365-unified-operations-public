@@ -88,3 +88,6 @@ When you define an activity such as a route operation or a project hour forecast
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ Typically, the output warehouse and location of a subcontracted resource group a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

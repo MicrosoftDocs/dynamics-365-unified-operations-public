@@ -57,3 +57,6 @@ Before you can post a pre-acquisition, you must complete the following setup:
   > [!NOTE]
   > In the parameters for the acquisition/acquisition adjustment proposal, you can set date in the **To date** field up to the date which pre-acquisition transactions are selected.
   > This functionality is available in version 10.0.17 or later.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

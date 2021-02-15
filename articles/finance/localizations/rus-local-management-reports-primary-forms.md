@@ -222,3 +222,6 @@ In the **Details and sorting parameters** section, select the available fields t
 
 [SQL Server Reporting Services Reports report](https://docs.microsoft.com/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

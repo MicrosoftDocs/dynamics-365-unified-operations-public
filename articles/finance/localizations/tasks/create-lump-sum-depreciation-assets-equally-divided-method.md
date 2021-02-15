@@ -65,3 +65,6 @@ This task uses the JPMF demo company data.
     * Confirm that the Number of years to equally divide depreciation is 3  
     * The value varies depending on the type of fixed asset is lump-sum, deferred asset or low-value asset.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

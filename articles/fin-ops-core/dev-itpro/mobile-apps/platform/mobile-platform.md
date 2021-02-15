@@ -34,3 +34,6 @@ ms.dyn365.ops.version: Platform update 3
 [!include [banner](../../includes/banner.md)]
 
 This topic has been replaced with the [Get started with the mobile platform](mobile-platform-getting-started.md) and [Architecture and design considerations for the mobile platform](mobile-platform-architecture.md) topics.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -125,3 +125,6 @@ Lookup controls should open lookup forms when the lookup button is used (not sli
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

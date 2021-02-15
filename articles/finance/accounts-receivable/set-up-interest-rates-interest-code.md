@@ -135,3 +135,6 @@ To view different versions, you can use the **As of Date** menu choice to select
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

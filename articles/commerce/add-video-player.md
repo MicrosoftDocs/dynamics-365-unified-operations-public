@@ -107,3 +107,6 @@ To add a video player module to a new page and set the required properties, foll
 [Text block module](add-content-rich-block.md)
 
 [Content block module](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

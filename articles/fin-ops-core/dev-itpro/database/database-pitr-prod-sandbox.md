@@ -141,3 +141,6 @@ The PITR process is not supported between Microsoft-managed and self-service env
 ### Point in time restore between source and target that are both on self-Service, in different regions
 The PITR process is not supported between self-service environments across different regions. For example, if the production environment is in East US and a PITR is needed for the sandbox environment, which is self-service and in West Europe, PITR is not supported. The alternative is to get both the environments in the same region or opt for a regular database refresh instead.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 7. Click OK.
     * Review the generated output. Note,that in addition to the invoice message in XML format, a single file has been created for each attachment. The attachment files are populated with the zipped output in binary format.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

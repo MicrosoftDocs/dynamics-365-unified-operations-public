@@ -141,3 +141,6 @@ To turn off the bulk redirects in an uploaded redirect CSV file, follow these st
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
 [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

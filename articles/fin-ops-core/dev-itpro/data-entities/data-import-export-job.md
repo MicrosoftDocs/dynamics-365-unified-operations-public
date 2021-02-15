@@ -250,3 +250,6 @@ To download the archived execution history, go to the data management workspace 
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

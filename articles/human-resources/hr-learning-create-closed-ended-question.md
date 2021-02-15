@@ -71,3 +71,6 @@ Closed-ended questions allow you to provide options for the respondent to choose
 5. In the Answer group field, enter or select a value.
 6. In the Text field, type a value.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

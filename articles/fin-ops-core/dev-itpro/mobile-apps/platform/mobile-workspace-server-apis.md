@@ -1847,3 +1847,6 @@ public MenuItemType WorkspaceMenuItemType ([MenuItemType _workspaceMenuItemType]
 #### Return Value
 
 The workspace menu item type for the workspace security attribute
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

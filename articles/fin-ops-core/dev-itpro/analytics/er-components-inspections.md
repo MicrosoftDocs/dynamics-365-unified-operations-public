@@ -870,3 +870,6 @@ For an example that shows how this issue might occur and how it can be fixed, se
 [Suppress Word content controls in generated reports](er-design-configuration-word-suppress-controls.md)
 
 [Manage several derived mappings for a single model root](er-multiple-model-mappings.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

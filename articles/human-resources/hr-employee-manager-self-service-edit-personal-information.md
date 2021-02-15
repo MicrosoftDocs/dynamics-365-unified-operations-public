@@ -77,3 +77,6 @@ Parameters set in the global address book determine the roles that can see your 
     - To upload an image, select **Upload new image**.
     - To remove an image, select the image and then select **Remove**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

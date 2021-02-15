@@ -156,3 +156,6 @@ To restrict access to the Human Resources app in Microsoft Teams for your organi
 [Microsoft Teams help center](https://support.office.com/teams)</br>
 [Manage leave requests in Teams](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ To view or upload a Visio file, follow these steps.
 1. Select the business process, and then, in the right pane, on the **Overview** tab, select **Diagrams**.
 2. On the **Flowchart** page, select the **Visio** tab. For more information, see the "Unconnected flowcharts" section in [Flowcharts in Business process modeler (BPM)](flowcharts-business-process-modeler.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

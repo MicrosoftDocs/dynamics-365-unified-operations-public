@@ -138,3 +138,6 @@ To add a buy box module to a new page and set the required properties, follow th
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
 
 [SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Prior to this task, the "Set up reverse charge VAT" tasks should be completed.
     * Ensure that the reverse charge VAT is calculated in the Sales tax transactions.  
 18. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ You can submit a request for a leave of absence and see the status of your leave
 ## See also
 
 [Suspend leave](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

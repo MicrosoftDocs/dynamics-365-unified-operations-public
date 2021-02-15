@@ -58,3 +58,6 @@ After you import the payment file, payment journal lines are created and marked 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

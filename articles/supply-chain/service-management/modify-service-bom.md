@@ -76,3 +76,6 @@ You can record the history of an element in a service BOM. Every time that you u
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

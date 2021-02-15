@@ -47,3 +47,6 @@ Additional buttons on the **Cost categories** page let you access project-relate
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

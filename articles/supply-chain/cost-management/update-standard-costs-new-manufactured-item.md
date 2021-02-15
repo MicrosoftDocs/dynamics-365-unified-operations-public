@@ -56,3 +56,6 @@ To add new manufacturing items throughout the frozen period, follow these steps.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

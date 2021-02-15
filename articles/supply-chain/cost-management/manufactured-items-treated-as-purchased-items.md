@@ -45,3 +45,6 @@ To prevent the calculation from occurring, select the **Stop explosion** flag th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

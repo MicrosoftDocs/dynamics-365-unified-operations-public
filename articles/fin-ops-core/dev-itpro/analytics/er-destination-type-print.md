@@ -75,3 +75,6 @@ To use a specific [page orientation](electronic-reporting-destinations.md#Select
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

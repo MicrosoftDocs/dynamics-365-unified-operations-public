@@ -78,3 +78,6 @@ If a payment connector update is issued by the payment connector provider, the u
 - [Deploy payment connectors](deploy-payment-connector.md)
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

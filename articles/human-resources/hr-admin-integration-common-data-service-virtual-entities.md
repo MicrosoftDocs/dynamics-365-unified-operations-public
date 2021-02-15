@@ -225,3 +225,6 @@ The slideout pane displays the most recent execution results for the process. Yo
 [Create and edit virtual tables that contain data from an external data source](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [What is Power Apps portals?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

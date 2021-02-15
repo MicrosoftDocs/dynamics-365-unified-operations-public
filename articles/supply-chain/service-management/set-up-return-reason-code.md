@@ -66,3 +66,6 @@ This procedure helps you set up return reason codes that you can use to indicate
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Follow these steps to configure the workspace page to use the recommended approa
 
 By using this approach, you also get the localized labels for **pageLink** controls. The result is a much faster experience when workspaces are loaded.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ To differentiate two different bank accounts within the same bank, you can use t
 ## Additional resources
 - [Generate and post payment fee](./tasks/post-payment-fee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

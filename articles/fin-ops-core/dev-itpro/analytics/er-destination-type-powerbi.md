@@ -43,3 +43,6 @@ Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer 
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

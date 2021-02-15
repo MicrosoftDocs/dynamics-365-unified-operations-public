@@ -62,3 +62,6 @@ This topic describes how to set up a simple work template to be used when puttin
 6. In the **Work class ID** field, type a value. The pick and put instructions are a set. Each pick/put set must have the same work class. Use the same work class that you provided for the pick instruction.  
 7. Select **Save**. Note that the **Valid** checkbox is now checked.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

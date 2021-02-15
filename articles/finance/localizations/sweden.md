@@ -37,3 +37,6 @@ This topic provides links to documentation resources for Sweden.
 - [Import payment formats](emea-swe-payment-formats-import.md)
 - [Cash register functionality](../../retail/localizations/emea-swe-cash-registers.md)
 - [Sales tax payment report for Sweden](emea-swe-sales-tax-payment-report-sweden.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

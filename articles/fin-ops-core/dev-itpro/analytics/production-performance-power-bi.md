@@ -132,3 +132,6 @@ The following table shows the key dimensions that are used as filters to slice t
 | Entities                  | Id and Name                                                   |
 | Resources                 | Resource ID, Resource name, Resource type, and Resource group |
 | Products                  | Product number, Product name, Item ID, and Item group         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Commerce parameters are typically cached. Therefore, after the setting of this p
 
 - [Offline point of sale (POS) functionality](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [Online and offline point of sale (POS) operations](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

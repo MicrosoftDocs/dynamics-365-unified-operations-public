@@ -88,3 +88,6 @@ By adding the fragment to page templates, you help guarantee that the footer is 
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

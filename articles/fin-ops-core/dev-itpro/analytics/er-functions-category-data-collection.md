@@ -53,3 +53,6 @@ Electronic reporting (ER) data collection functions are used to do counting and 
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Electronic reporting formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

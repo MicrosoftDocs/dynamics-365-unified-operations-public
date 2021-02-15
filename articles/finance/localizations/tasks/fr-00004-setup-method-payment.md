@@ -67,3 +67,6 @@ You should have a role of Accounts receivables manager to perform this procedure
 20. Select or clear the Run export script check box.
 21. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

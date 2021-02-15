@@ -59,3 +59,6 @@ To add a department to the department hierarchy, follow these steps.
 
 ## Steps for creating a department
 Refer to the [Define new departments](../fin-and-ops/hr/tasks/define-new-departments.md) article for the step-by-step procedure for creating a new department. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

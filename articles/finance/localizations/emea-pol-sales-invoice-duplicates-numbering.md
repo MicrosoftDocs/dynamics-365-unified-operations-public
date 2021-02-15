@@ -46,3 +46,6 @@ To delete a duplicate invoice, click **Delete**. **Note:** Only the last duplica
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

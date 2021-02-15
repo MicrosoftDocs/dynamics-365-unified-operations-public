@@ -115,3 +115,6 @@ This task uses the JPMF demo company data.
 17. Click OK.
     * Validate no depreciation journal is created for the idle period  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

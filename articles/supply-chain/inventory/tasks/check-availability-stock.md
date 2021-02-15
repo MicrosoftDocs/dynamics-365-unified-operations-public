@@ -62,3 +62,6 @@ This procedure shows you how to check on-hand and physical on-hand inventory for
 5. Click **OK**.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

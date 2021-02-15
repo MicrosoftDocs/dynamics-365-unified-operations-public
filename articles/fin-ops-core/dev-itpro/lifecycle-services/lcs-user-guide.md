@@ -66,3 +66,6 @@ Additional resources
 The LCS team is also blogging on the [Lifecycle Services Engineering blog](https://cloudblogs.microsoft.com/dynamics365/?s=lcs). Subscribe to our RSS feed to keep up with our posts and announcements.
 
 [Access Lifecycle Services](https://lcs.dynamics.com/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

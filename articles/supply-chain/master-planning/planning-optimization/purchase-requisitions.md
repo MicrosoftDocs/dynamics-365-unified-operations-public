@@ -104,3 +104,6 @@ When master planning runs, two planned orders are created: one for three pieces 
 > After a planned order that is pegged to a purchase requisition is firmed, the planning engine keeps the pegging to the purchase requisition. If the firmed order is later found to be missing some quantity that is required to fulfill the purchase requisition, the system will create a new planned order for the difference.
 
 For more information about purchase requisitions, see [Purchase requisition overview](../../procurement/purchase-requisitions-overview.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

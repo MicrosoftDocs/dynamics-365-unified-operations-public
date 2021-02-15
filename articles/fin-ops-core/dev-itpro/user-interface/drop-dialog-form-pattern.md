@@ -156,3 +156,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![Example of Drop dialog](./media/dropdialog4.png)](./media/dropdialog4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

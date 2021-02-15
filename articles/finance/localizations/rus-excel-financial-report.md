@@ -154,3 +154,6 @@ To run the ER format that is based on the **Financial reports model**, follow th
 
 5. Select **OK**.
 6. Review the Excel report that is generated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

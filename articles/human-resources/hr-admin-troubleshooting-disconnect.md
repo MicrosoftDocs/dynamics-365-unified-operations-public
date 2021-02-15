@@ -58,3 +58,6 @@ Microsoft Dynamics 365 Human Resources disconnects users when two different sess
 Make sure that only one environment is open at a time for a given browser type. Users can open multiple sessions to the same environment (that is, multiple tabs in the same browser).
 
 Users who want to jump between two environments at the same time should open each environment in a different browser type. (For example, user A can view environment 1 in Chrome and environment 2 in Microsoft Edge.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ You can set up and configure IoT Intelligence without writing any code. Here are
 + [Uninstall the add-in](iot-lcs-setup.md#uninstall-addin)
 + [Modify a running IoT Intelligence scenario](iot-management.md#modify-a-running-iot-intelligence-scenario)
 + [Simulation options](iot-management.md#simulation-options)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

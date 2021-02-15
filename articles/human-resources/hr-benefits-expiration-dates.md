@@ -51,3 +51,6 @@ This procedure shows how you can expire or extend a benefit, and manage the enro
 15. Click Benefits.
 16. In the list, find the benefit and select the record. Note the new coverage end date.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

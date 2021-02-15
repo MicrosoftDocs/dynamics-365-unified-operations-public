@@ -95,3 +95,6 @@ For instructions on how to add a gift card module to a checkout page and set the
 [Support for external gift cards](./dev-itpro/gift-card.md)
 
 [SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

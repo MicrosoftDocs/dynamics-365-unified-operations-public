@@ -54,3 +54,6 @@ The following illustration shows an overview of the process for configuring the 
 For information about how to configure the Code upgrade service, see [Configure the code upgrade service in Lifecycle Services (LCS)](../lifecycle-services/configure-execute-code-upgrade.md).
 
 The output of the Code upgrade service is designed to be consumed by a developer. This output will help the developer estimate the effort that is required in order to complete the code upgrade tasks. To form an estimate, the developer must review the tasks that the service generates in Azure DevOps and the new version of the code that the service generates.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

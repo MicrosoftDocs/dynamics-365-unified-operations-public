@@ -151,3 +151,6 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ The settings on the **Number sequence** tab determine the sequences that are use
 
 > [!NOTE]
 > The number of hours that are worked can't exceed 1,250, and the length of employment can't exceed 12 months. These maximum values are in accordance with federal law in the United States. Finally, the settings on the **Employee self-service** tab determine the information that managers can enter on behalf of their employees.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

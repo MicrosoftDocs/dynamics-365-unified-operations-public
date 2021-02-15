@@ -82,3 +82,6 @@ If a validation error is found, the only way to fix the error is to contact Micr
 
 > [!NOTE]
 > Additional validation rules to support more scenarios will be added in a future release.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

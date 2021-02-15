@@ -50,3 +50,6 @@ This procedure walks through creating a new point of sale (POS) visual profile. 
 17. In the list, click the link in the selected row.
 18. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

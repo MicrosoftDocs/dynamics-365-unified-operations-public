@@ -56,3 +56,6 @@ The related voucher window shows the voucher from the offset company when postin
 3. In the list, mark the selected row.
 4. Click Voucher.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

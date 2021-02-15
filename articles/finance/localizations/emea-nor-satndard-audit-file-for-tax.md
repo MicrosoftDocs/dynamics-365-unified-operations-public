@@ -193,3 +193,6 @@ In accordance with these requirements, the **SAF-T Format (NO)** ER format is im
 - Each individual XML file is validated against the schema.
 
 After the report is generated, if more than one XML file is generated, the user must manually number the generated files in the zip archive by adding **\_\<file number of total files\>** to the file names. The user must also make sure that there are no more than 10 XML files in the same zip archive. If there are more than 10 XML files in an archive, the user must manually split it into several archives, each of which has a maximum of 10 XML files.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

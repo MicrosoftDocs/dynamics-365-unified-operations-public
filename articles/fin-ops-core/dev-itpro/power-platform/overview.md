@@ -73,3 +73,6 @@ Power Apps Portal can also access virtual entities. Because Power Apps Portal au
 ## Virtual entities for Core HR
 Core HR entities can also be virtualized like Finance and Operations entities. For more information, see [Core HR virtual entities](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ A production order can be created in the following scenarios:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

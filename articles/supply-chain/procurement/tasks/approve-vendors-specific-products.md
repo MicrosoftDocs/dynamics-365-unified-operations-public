@@ -64,3 +64,6 @@ This procedure shows you how to approve vendors for specific products. This allo
 31. Close the page.
 32. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

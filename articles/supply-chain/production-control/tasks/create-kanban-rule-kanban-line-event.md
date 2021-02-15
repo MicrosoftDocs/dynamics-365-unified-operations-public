@@ -70,3 +70,6 @@ This procedure creates a kanban rule by using the kanban line event setting to t
     * Notice that a kanban for 27 was created to process the  activity based on the created kanban rule.  
     * This is the last step.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

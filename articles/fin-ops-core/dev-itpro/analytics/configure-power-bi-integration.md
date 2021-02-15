@@ -131,3 +131,6 @@ In the procedure above, after you click **Accept**, you might receive the follow
 | Error when authorizing Power BI                             | On the Azure Admin dashboard, under **Users and Groups \> User settings**, make sure that the **Users can consent to apps accessing company data on their behalf** option is set to **Yes**. |
 | Sorry, something went wrong. The authentication process was not successful. Please contact your system administrator.  | This may occur in cases where service keys have expired. We recommend performing the registration process above, starting with step 3. When complete, be sure to update the PowerBI.com settings at **AX client > System administration > Set up > PowerBI.com integration**. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

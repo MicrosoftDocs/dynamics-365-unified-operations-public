@@ -64,3 +64,6 @@ After you define coverage options, attach the coverage options to a benefit plan
    | **Allow employee coverage amount** | Specifies whether to allow employees to modify the coverage amount on benefits self-service when they select benefits. If you select this check box, the system will calculate benefit plan parameters based on the coverage amount the employee enters in Employee self service. |
 
 6. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ To post a transition adjustment in compliance with the new accounting standards,
 
 5. To view the journal entry, select **Asset leasing journals**.
 6. Select the new journal, and then select **Post**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

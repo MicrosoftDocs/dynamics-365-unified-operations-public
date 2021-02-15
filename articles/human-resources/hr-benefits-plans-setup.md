@@ -164,3 +164,6 @@ You can provide a description of the plan to help employees with their benefits 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
 2. Select **Flex credit programs**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -153,3 +153,6 @@ Often, several good candidates for a job aren't selected, but you don't want to 
 1. On the application page, select **Add to talent pool**. A list of talent pools that you have access to is shown.
 
 1. Select or search for the talent pool, and then select **Add** to add the candidate to that talent pool.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

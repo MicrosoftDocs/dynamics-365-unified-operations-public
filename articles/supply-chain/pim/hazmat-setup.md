@@ -288,3 +288,6 @@ To set up values for this specification, go to **Product information management 
 The *Hazardous material tunnel* specification limits the types of tunnels that a hazardous material can be transported through by identifying the types of tunnels that must be used. Tunnel categories are established by applicable regulations for hazardous material transport. This specification usually applies only to road transport.
 
 To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material tunnel**. On the **Hazardous material tunnel** page, you can create any number of tunnel identifiers and configure each with an identifying code and a short description.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

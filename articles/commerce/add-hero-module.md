@@ -107,3 +107,6 @@ To add a hero module to a new page and set the required properties, follow these
 [Text block module](add-content-rich-block.md)
 
 [Video player module](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

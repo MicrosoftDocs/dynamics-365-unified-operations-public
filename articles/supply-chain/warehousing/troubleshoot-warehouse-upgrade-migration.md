@@ -58,3 +58,6 @@ For more information about the process for moving from basic warehousing to adva
 - [Migration of Microsoft Dynamics AX WMS to new R3 warehouse and transportation functionality](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/17/migration-of-microsoft-dynamics-ax-wms-to-new-r3-warehouse-and-transportation-functionality/)
 - [WMSI/WMS2 item migration](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/05/03/wmsiwms2-item-migration/)
 - [Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/upgrade-migration-warehouse-management-processes)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

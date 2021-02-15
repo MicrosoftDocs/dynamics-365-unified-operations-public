@@ -45,3 +45,6 @@ The Compensation and Benefits manager can enroll employees in variable compensat
 8. Toggle the expansion of the Organizational overrides section.
     * If the employee's performance should take into consideration, the performance of different departments, or a department other than the one assigned on the employee's position, the department can be overridden. The Percent column should total 100.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

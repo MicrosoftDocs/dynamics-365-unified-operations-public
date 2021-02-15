@@ -52,3 +52,6 @@ To set up a relationship between a specific report and a journal type, on the **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

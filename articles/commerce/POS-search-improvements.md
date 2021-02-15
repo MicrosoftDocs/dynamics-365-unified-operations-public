@@ -122,3 +122,6 @@ In an upcoming release of Commerce, retailers will be able to set the default cu
 
 To help prevent unexpected performances issues, this configuration is hidden behind a flighting flag that his named **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Therefore, to show the **Default customer search mode** setting the user interface (UI), the retailer should create a support ticket for its user acceptance testing (UAT) and production environments. After the ticket is received, the engineering team will work with the retailer to make sure that the retailer does testing in its non-production environments to assess the performance and implement any optimizations that are required.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

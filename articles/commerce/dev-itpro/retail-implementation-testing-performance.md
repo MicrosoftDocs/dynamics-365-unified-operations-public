@@ -94,3 +94,6 @@ Any fix of a larger performance issue should be followed by a new performance te
 [Set up new environments, Azure DevOps, and branches for Commerce projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Update code and environments for Retail projects](./updating-environments.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

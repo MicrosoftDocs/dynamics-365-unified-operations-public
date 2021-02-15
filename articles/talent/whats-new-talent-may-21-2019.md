@@ -66,3 +66,6 @@ Organizations might require reason codes for specific leave types when employees
 ### Provide a leave and absence transaction list for HR
 
 The ability to track employee time off and understand how time off is calculated not only helps HR answer employee questions, but also helps ensure accurate time-off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind time-off balances.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

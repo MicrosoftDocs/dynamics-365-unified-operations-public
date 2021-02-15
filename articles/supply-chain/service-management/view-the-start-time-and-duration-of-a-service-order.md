@@ -63,3 +63,6 @@ You can also view when the time recording for a service order was started and st
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

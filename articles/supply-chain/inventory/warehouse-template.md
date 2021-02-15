@@ -100,3 +100,6 @@ To learn more about how to use warehouse template to copy the configuration of a
 ## Related topic
 
 [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

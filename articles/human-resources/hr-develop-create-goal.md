@@ -63,3 +63,6 @@ You can create goals, add activities to goals, track measurements, and link the 
     * There are often several goals that are the same or similar for team members or all employees.     Your HR administrator or manager can create goal groups that contain one or more goal templates. You can add goals from a goal group, and then modify them to match your timelines.  
     * When you create a review, you can add goals to that review. Refer to the task guide for reviews to see how you can add goals to your reviews.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

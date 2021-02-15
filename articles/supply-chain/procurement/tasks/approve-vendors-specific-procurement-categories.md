@@ -46,3 +46,6 @@ This topic explains how to approve vendors for specific procurement categories i
 13. Select **No** in the **Inherit vendors from parent category:** field.
 14. Select **Yes** in the **Inherit vendors from parent category:** field.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

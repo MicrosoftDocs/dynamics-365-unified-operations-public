@@ -91,3 +91,6 @@ a new catalog, replace an existing catalog, or modify an existing catalog.
 catalog file template and save the file.
 
 For more information and for examples, refer to this blog post: [Vendor catalogs in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

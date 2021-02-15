@@ -126,3 +126,6 @@ Follow these steps to update the Print management settings for customer sales or
 
 6. Open another page. This step forces a save operation to occur.
 7. Post a sales order to view the modern design in the application.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

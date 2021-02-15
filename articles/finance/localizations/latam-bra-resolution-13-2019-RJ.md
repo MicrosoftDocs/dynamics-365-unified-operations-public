@@ -267,3 +267,6 @@ The system fills in data on the journal lines from the posting profile of adjust
 >
 > - **For the sender:** Adjustment code from table 5.2 = RJ821231, and adjustment code from table 5.3 = RJ10080002
 > - **For the recipient:** Adjustment code from table 5.2 = RJ821231, and adjustment code from table 5.3 = RJ10080002
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

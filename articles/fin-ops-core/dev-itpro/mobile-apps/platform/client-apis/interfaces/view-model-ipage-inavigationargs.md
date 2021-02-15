@@ -90,3 +90,6 @@ url: string (optional)
 If provided, this link is directly opened.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

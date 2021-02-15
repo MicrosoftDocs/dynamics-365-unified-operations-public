@@ -129,3 +129,6 @@ To add a checkout module to a new page and set the required properties, follow t
 [Order details module](order-confirmation-module.md)
 
 [Gift card module](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

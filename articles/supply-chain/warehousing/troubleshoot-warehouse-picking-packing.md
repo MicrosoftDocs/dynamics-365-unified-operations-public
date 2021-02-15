@@ -113,3 +113,6 @@ When you use the *System directed cluster picking* process, if you configure a c
 ### Issue resolution
 
 To fix this issue, edit the cluster profile, and set the **Activate positions** option to *No*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

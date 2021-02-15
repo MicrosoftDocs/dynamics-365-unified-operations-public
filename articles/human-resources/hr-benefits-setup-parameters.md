@@ -69,3 +69,6 @@ Before you can set up benefit plans in Microsoft Dynamics 365 Human Resources, y
 3. Select **Save**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

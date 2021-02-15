@@ -78,3 +78,6 @@ See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-p
 Features are added and updated in every release. The feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
 To learn more about the changes coming with feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

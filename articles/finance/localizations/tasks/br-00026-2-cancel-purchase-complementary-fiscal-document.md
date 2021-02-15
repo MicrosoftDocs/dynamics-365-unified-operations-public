@@ -44,3 +44,6 @@ You can cancel an incorrect purchase complementary fiscal document and provide a
 8. Close the page.
 9. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

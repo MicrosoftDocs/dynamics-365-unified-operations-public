@@ -62,3 +62,6 @@ This procedure uses the JPMF demo company data.
 9. In the Offset account field, specify the desired values.
 10. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ To add custom navigation options to your navigation menu, follow these steps.
 [Create a page URL](create-page-url.md)
 
 [Work with publish groups](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

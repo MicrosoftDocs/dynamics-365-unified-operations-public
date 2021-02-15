@@ -85,3 +85,6 @@ Using this image on a workspace tile yields the following result on the dashboar
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

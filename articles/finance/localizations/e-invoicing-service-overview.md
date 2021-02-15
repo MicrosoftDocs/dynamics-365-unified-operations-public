@@ -114,3 +114,6 @@ Enabling and using Electronic invoicing add-on may require sending limited data,
 - [Service administration](e-invoicing-service-administration.md)
 - [Configure electronic invoices in RCS](e-invoicing-configuration-rcs.md)
 - [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

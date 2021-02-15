@@ -270,3 +270,6 @@ For the scenarios, assume there is a table called "TableA" with PK field "ID" an
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

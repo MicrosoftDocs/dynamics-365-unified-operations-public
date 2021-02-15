@@ -101,3 +101,6 @@ The illustration below shows an example of the **Maintenance downtime activities
 - You can copy assets from one maintenance downtime activity to another. In **All maintenance downtime activities**, select the **Copy maintenance downtime activities** button, and make your selections in the **From maintenance downtime activities** and **To maintenance downtime activities** fields, and click **OK**.
 - In **All maintenance downtime activities**, click the **Maintenance schedule lines** button or the **Active work orders** button to open the related lists and view the lines related to the selected maintenance downtime activity.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

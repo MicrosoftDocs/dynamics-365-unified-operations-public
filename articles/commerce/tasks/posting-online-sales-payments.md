@@ -110,3 +110,6 @@ This procedure walks through configuring and running a recurrent batch job to cr
 - RetailTransactionMarkupTrans
 - RetailTransactionPaymentTrans
 - RetailTransactionAttributeTrans
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

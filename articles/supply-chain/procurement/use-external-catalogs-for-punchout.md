@@ -60,3 +60,5 @@ When the requisition is ready, use the **Workflow** > **Submit** action to submi
 
 - [Set up an external catalog for PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Purchasing cXML enhancements](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

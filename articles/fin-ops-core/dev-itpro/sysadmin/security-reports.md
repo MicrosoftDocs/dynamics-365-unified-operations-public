@@ -74,3 +74,6 @@ Any of the above reports can be set to run as a batch job by going to the **Run 
 
 ![Batch processing of reports](media/a6142c903497381171bf6c6b27495895.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

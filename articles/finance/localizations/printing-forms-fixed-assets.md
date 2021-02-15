@@ -130,3 +130,6 @@ If there is only one unified printing form document for the selected fixed asset
 To print documents that are created from inquiries, go to **Fixed assets (Russia)** \> **Inquiries** \> **Documents**. Highlight the document to print and then select **Print**.
 
 ![Print unified forms from Inquiries](media/RUS-Print-unified-forms.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

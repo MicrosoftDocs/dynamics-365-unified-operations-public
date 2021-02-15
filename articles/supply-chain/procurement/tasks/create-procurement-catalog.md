@@ -68,3 +68,6 @@ This topic explains how to create a procurement catalog. This task would typical
 7. Select **Add to lines**.
 8. Select **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

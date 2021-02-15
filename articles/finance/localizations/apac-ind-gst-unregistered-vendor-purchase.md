@@ -63,3 +63,6 @@ This topic walks you through creating a purchase order that includes a taxable i
 
 14. Close the page.
 15. Click **Voucher** to validate the financial entries.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

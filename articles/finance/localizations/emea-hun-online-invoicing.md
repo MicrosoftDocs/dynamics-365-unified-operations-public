@@ -430,3 +430,6 @@ For a full description of the electronic message actions of **OnlineInvoicing** 
 | Submit invoice request         | No                 |
 | Submit status request          | No                 |
 | Submit token request           | No                 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

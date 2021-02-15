@@ -96,3 +96,6 @@ The consistency check will re-create any missing database log triggers. It will 
 
 1. Go to **System administration** \> **Inquiries** \> **Database** \> **Database log**.
 2. On the **Database log** page, select **Consistency check**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

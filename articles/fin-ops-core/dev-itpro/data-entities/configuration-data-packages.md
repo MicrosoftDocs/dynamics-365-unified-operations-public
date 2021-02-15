@@ -327,3 +327,6 @@ A generic chart of accounts is included in the configuration data packages. When
 | Terms of delivery                                       |                     |                 | X           |
 | Terms of payment                                        |                     |                 | X           |
 | Total discount customer groups                          |                     |                 | X           |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

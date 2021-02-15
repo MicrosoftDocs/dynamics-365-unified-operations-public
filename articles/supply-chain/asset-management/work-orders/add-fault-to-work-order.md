@@ -86,3 +86,6 @@ From the **All assets** list page, you can print an asset fault report that show
 >[!NOTE]
 >To print a fault report for several assets or asset types, select **Asset management** > **Reports** > **Assets** > **Asset fault**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

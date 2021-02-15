@@ -184,3 +184,6 @@ Finance and Operations apps provide a context menu. When the application author 
 - *aria-valuemax* - Defines the maximum allowed value for a range widget.
 
 - *aria-valuemin* - Defines the minimum allowed value for a range widget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

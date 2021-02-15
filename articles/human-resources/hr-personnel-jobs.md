@@ -92,3 +92,6 @@ You use areas of responsibility to indicate the work roles, processes, and produ
 
 ## Steps for creating a job
 Refer to the [Define new jobs](../fin-and-ops/hr/tasks/define-new-jobs.md) article for the step-by-step procedure for creating a new job. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

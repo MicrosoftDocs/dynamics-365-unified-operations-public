@@ -67,3 +67,6 @@ When updating an existing time off request, you can add an attachment. You can a
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

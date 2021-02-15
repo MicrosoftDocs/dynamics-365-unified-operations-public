@@ -113,3 +113,6 @@ This release corrects an issue that occurs after one performance journal is dele
 ### Print performance reviews
 
 See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

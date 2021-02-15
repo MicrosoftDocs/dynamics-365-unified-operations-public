@@ -175,3 +175,6 @@ Before you can set up pick line grouping, you must create some eligible outbound
 >   - Work lines that have unfinished replenishment work
 >   - Over-picking
 >   - Short picking with item reallocation
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

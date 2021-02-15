@@ -80,3 +80,6 @@ The examples described here show that all counter registrations made on an asset
 
 ![Figure 4](media/12-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

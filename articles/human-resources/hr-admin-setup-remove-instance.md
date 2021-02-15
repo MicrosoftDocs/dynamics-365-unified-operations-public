@@ -90,3 +90,6 @@ To restore the environment:
 
 > [!Warning]
 > Power Apps environments are only saved for seven days after deletion. You must recover the environment within the seven day period.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ This task was created using the demo data company JPMF.
 6. In the Asset allocation rule for depreciation field, type a value.
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

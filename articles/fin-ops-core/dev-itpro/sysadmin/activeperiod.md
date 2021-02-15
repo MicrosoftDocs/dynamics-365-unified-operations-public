@@ -57,3 +57,6 @@ With the release of Platform update 21, an additional level of control over when
 
 ![Assign Active Period](./media/assign-active-period.png)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

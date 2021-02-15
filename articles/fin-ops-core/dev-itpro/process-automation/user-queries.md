@@ -59,3 +59,6 @@ The **ProcessScheduleQueryCriteriaApplicator** class is used to apply the saved 
 | Method | Description |
 |---|---|
 | `public static void applyCriteriaForOccurrenceExecution(Query _queryToApplyCriteria, RefRecId _scheduleOccurrenceRecId)` | |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

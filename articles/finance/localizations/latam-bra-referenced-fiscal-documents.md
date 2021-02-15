@@ -102,3 +102,6 @@ Fiscal document text placeholders are predefined tags that represent specific va
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

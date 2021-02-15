@@ -171,3 +171,6 @@ You can modify the information mentioned in the previous table for a position or
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

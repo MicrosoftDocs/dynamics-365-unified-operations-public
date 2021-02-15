@@ -55,3 +55,6 @@ A change has been made to default the "Termination reason" code when ending the 
 
 ### New table created for job compensation levels
 A new data management framework (DMF) table was created. The table provides for creation and updates to compensation levels, market values, and survey information for each job defined in the system.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

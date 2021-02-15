@@ -50,3 +50,6 @@ To learn more about the basic principles that Microsoft uses, visit the [Microso
 [Add a privacy policy page](add-privacy-page.md)
 
 [Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

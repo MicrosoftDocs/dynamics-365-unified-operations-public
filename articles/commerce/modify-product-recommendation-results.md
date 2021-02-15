@@ -124,3 +124,6 @@ Follow these steps to manually add or remove results for a seed product:
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

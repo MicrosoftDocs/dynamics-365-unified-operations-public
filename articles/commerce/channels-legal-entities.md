@@ -89,3 +89,6 @@ The following image shows details of an example legal entity.
 [Channels overview](channels-overview.md)
 
 [Channel setup prerequisites](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

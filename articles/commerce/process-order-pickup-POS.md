@@ -62,3 +62,6 @@ If you must change the pickup quantity after you've selected the items that will
 If the **Improve user experience for pick up order processing in Point of Sale** feature is turned on, organizations can add a button for the **Change pickup lines** operation to the screen layout of the transaction page. After you create the pickup transaction cart in POS and select items, you can select **Change pickup lines** if you must change the pickup items but don't want to void the whole transaction. In the **Change pickup lines** dialog box that appears, you can change the pickup items and quantities. The transaction cart is then updated to reflect your changes.
 
 ![Change pickup items dialog box](media/pickupchange.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

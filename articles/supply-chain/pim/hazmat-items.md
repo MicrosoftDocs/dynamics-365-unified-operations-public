@@ -225,3 +225,6 @@ To run the compatibility check, follow these steps.
 1. On the Action Pane, on the **Loads** tab, in the **Actions** group, select **Compatibility check**.
 
 You receive a message that informs you of the results of the check.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

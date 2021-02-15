@@ -161,3 +161,6 @@ This topic explains how a user in the System Administrator or Electronic Reporti
 42. Click **Save**.
 43. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

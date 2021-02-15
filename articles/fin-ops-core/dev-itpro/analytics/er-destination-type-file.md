@@ -43,3 +43,6 @@ On the **Destination settings** page, if you set **Enabled** to **Yes**, an open
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

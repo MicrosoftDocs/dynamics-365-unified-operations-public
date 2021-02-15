@@ -152,3 +152,6 @@ The updated mappings should look like this.
 
 ![Gender column transform](./media/WorkerTransform.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

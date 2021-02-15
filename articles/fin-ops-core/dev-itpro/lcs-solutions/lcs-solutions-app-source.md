@@ -41,3 +41,6 @@ This topic points to resources that will help you understand the requirements fo
 -   [Business process models](business-process-modeler-libraries-lcs-solutions.md)
 -   [Methodologies](methodologies-lcs-solutions.md)
 -   [Marketing](marketing-content-lcs-solutions.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

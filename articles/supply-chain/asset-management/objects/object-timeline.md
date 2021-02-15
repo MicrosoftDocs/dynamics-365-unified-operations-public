@@ -53,3 +53,6 @@ The timeline is updated every time that the page is opened. It contains the foll
 - Work orders, including posted item and notes
 - Faults
 - Condition assessments
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

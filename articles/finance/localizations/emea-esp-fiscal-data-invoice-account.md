@@ -74,3 +74,6 @@ When the **Invoice account** field is changed, the following fields can be updat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

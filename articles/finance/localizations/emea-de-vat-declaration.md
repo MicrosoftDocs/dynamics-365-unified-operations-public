@@ -967,3 +967,6 @@ You can also generate the German sales tax report by using the **Report sales ta
 | 181                | 19                   |
 | 186                | 7                    |
 | 193                | 7                    |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

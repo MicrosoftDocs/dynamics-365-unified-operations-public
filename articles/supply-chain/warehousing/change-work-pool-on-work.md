@@ -152,3 +152,6 @@ You can use the **Work details** page to view the work that was created and to m
 > When the **Change work pool** dialog box appears, the **Work pool ID** field might be blank by default. If the field is blank when you select **OK** to apply changes, you will remove the work pool completely from the work.
 >
 > In addition to switching work pools, you can use this procedure to add a work pool to any work item that doesn't have one, or to remove a work pool from any work item that does have one.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

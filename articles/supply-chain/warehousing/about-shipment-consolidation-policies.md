@@ -140,3 +140,6 @@ The following table summarizes how shipment consolidation works when you don't u
 ## Additional resources
 
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ The company's fiscal year is from January 1 through December 31. The balance she
 7. Go to **General ledger** \> **Inquiries and reports** \> **Voucher transactions**.
 8. On the **Voucher transactions** page, add the **Transaction date** column.
 9. Verify that the **Date** field is set to December 31, and the **Transaction date** field is set to April 15.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

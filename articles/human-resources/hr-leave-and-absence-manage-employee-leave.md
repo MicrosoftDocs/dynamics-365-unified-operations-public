@@ -62,3 +62,6 @@ You can include a reason code and comment when adjusting an employee's leave bal
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

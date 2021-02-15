@@ -116,3 +116,6 @@ When you use the **Return lot ID** field on a return order line to specify the r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

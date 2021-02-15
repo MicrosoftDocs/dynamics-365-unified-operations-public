@@ -197,3 +197,6 @@ Upgrade to the cloud version of Finance and Operations is supported from AX 2012
 
 Upgrade from Dynamics AX 2012 RTM isn't currently supported. Upgrade to the on-premises version isn't currently supported, but support will be added in the future. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

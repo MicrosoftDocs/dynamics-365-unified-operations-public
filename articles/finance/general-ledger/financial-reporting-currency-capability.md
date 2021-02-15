@@ -133,3 +133,6 @@ Financial reporting will calculate the amount of the difference from currency ca
 
 Put all of the accounts in a range, from assets to expenses. The difference will be the same amount as the rounding adjustment (CTA) and you can use the total to verify that the rounding adjustment dialog doesn't include any missing account balances. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

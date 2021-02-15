@@ -604,3 +604,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Refactor whsWorkExecuteDisplayReprintLabel to ProcessGuide framework
 - Retail channel: Support BankDropOperationRequest
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

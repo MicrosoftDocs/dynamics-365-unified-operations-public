@@ -813,3 +813,6 @@ Following these steps.
     settings of Fixed assets parameters.
 
 6.  Validate and post the journal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

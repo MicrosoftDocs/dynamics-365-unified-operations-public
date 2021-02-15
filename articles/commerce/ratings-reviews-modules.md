@@ -102,3 +102,6 @@ The product reviews list module includes a slot where you can add a ratings hist
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

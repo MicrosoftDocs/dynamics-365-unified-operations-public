@@ -46,3 +46,6 @@ After a new workspace is published, users must pull to refresh the list of mobil
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

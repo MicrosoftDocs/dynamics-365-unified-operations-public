@@ -85,3 +85,6 @@ In this example, the **\#MediaAsBase64String** data source encodes the binary co
 ## Additional resources
 
 [Container functions](er-functions-category-container.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

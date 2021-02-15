@@ -69,3 +69,6 @@ Sometimes, an organization stops offering certain benefits. In this case, you mu
 Similarly, mass benefit extension lets you extend the expiration date of both a benefit and the worker enrollments for that benefit if you decide to offer a benefit longer than you originally planned.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

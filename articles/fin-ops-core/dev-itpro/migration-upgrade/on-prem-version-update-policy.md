@@ -92,3 +92,6 @@ Use of the VHDs is subject to the [Software license terms](https://go.microsoft.
 | Platform update 12 / Application release 7.3 | FinandOps7.3PlatUpdate12.vhd |    June 05, 2018    |
 | Platform update 15 / Application release 7.3 | FinandOps7.3withPlatUpdate15 |    December 08, 2018    |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ This is useful if you want to get an overview of expected capacity load for a sp
 >[!NOTE]
 >If you want to focus only on capacity planning regarding scheduled work orders, see [Calculate capacity load on scheduled work orders](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

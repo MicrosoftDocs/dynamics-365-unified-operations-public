@@ -345,3 +345,6 @@ When you add entities, the mappings are created in the context of the country or
 
 > [!NOTE]
 > By default, the DAT company doesn't have a country/region context. Some entities, such as the entities that are used for transaction codes and 1099 fields, won't be mapped correctly if they are added to a data project for the DAT company, because a country/region context is expected.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

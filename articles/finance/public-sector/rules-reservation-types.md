@@ -167,3 +167,6 @@ If you don't have access to the pages that are used to complete this task, conta
 |---------------------------|---------------------------------------------------------------|
 | License configuration key | Public sector \> General budget reservation                   |
 | Security roles            | You must be a member of the **Budget manager** security role. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ To add an accordion module to a FAQ page and set its properties in site builder,
 [Tab module](add-tab.md)
 
 [Text block module](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

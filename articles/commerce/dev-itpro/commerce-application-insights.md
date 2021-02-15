@@ -315,3 +315,6 @@ The Application Insights library is now ready to be consumed and used in POS.
         },
     });
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ If the **Date treatment on bill of exchange journal** parameter is set to **Yes*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

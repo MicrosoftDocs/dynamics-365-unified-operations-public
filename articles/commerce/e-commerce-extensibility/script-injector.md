@@ -151,3 +151,6 @@ After a custom script injector module is deployed to a Dynamics 365 Commerce env
 ## Additional resources
 
 [Online channel extensibility overview](overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -108,3 +108,6 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
     }
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

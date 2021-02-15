@@ -117,3 +117,6 @@ OData-EntityId: [Organization URI]/api/data/v9.1/mshr_hcmcandidatetohireentities
 ## See also
 
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

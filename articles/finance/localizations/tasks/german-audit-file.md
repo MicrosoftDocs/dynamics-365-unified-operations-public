@@ -46,3 +46,6 @@ This procedure shows how to generate the German audit file. This procedure was c
 9. In the Period - date to field, enter a date.
 10. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ This procedure shows how to use the Voucher transactions inquiry to search for j
 12. On the Action pane, Click **Original document**.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

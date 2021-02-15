@@ -201,3 +201,6 @@ Additional resources
 
 [Create a product number nomenclature for configured product variants](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

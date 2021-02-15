@@ -121,3 +121,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![Previous version example](./media/wizard3.png)](./media/wizard3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

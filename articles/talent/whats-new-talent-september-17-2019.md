@@ -62,3 +62,6 @@ In this release, the job family column has been added to the **Manage changes** 
 This functionality is now available in sandbox environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
 
 For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md). To see the changes, watch the video [Dynamics 365 for Talent 2019 release wave 2 overview](https://aka.ms/ROGT19RW2ROV).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

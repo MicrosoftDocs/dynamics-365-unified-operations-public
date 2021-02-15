@@ -41,3 +41,6 @@ Number sequences are used to generate readable, unique identifiers for master da
 4. Select **Next**.
 5. Select **Finish**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

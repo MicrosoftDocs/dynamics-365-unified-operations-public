@@ -143,3 +143,6 @@ Employees who register for a course through the **Employee self service** page c
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

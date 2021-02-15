@@ -91,3 +91,6 @@ Download and install the Finance and Operations mobile app:
 7.	Select **Attachments** to view any notes or files that are attached to the invoice.
 8.	On the **Invoice details** page, select the appropriate workflow action to complete your review process.
 9.	Select **Done**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

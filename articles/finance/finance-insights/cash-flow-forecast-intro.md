@@ -72,3 +72,6 @@ On the **Dimensions** tab, choose from the list of dimensions to use for filteri
 
 #### Privacy notice
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

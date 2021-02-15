@@ -288,3 +288,6 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 - **Endpoint address** – The URL of the printer.
 - **Date and time synchronization** – This setting specifies whether the date and time of the printer must be synced with the connected Hardware station.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -108,3 +108,6 @@ In this example, you will select the desired version of the ER configuration and
     For this example, select the version of the configuration that has a status of **Shared**.
 
     Notice that shared version 1 of the selected data model configuration is also available now.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

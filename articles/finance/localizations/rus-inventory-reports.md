@@ -212,3 +212,6 @@ This report shows all adjustments that were done during the inventory recalculat
 ## Adjustments in currency report
 
 This report shows all adjustments that were done during the inventory recalculation or closing in the reporting currency. To do this, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Adjustment (cur.)**. Specify the parameters, and select **OK** to generate a report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

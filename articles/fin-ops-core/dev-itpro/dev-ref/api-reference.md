@@ -88,3 +88,6 @@ The reference documentation for the system classes is in the .NET API browser.
 [Microsoft.Dynamics.Ax.Xpp namespace](https://docs.microsoft.com/dotnet/api/microsoft.dynamics.ax.xpp)
 
 [Dynamics.AX.Application namespace](https://docs.microsoft.com/dotnet/api/dynamics.ax.application)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

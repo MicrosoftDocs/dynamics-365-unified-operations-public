@@ -87,3 +87,6 @@ Enabling the **EG-00008 (E-invoicing for Egypt)** feature may require sending li
 - [Get started with Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md)
 - [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

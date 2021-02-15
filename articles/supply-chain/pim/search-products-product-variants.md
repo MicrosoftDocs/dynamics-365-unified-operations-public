@@ -90,3 +90,6 @@ For sales order line entry, the default behavior is to open the **Product sear
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

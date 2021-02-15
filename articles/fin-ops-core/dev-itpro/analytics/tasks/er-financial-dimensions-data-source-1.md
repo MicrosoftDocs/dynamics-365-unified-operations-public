@@ -111,3 +111,6 @@ To complete these steps, you must first complete the steps in the procedure, "Cr
 
 ![ER data model designer page](../media/er-financial-dimensions-guides-data-model.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

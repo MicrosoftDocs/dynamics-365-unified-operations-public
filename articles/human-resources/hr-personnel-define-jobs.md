@@ -74,3 +74,6 @@ This task focuses on the creation of a new job. It will be completed using manua
 33. Toggle the expansion of the Education section.
 34. Click Save.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ If the issue still isn't fixed, follow these steps.
 4. Open the **Table mapping** page from the **Dual-write** page in the Finance and Operations app.
 5. If the attribute is not auto-populated on the map, add it manually by clicking **Add attribute** button and then clicking **Save**. 
 6. Select the map and click **Run**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

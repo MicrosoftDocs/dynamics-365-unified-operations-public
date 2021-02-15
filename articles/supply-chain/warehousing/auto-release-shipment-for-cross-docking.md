@@ -185,3 +185,6 @@ Notice that the following events occur:
 - The release to a warehouse is triggered for the linked sales order.
 - Based on the release, shipment and cross-docking work is created. This work instructs the warehouse operator to pick the quantities that are required to fulfill the sales order line and put them in the outbound location that specified in the cross-docking location directive.
 - If the production order quantity is more than the quantity that is required by the sales order, regular put-away work is created. This work instructs the warehouse operator to pick the quantity of finished goods that remains after cross-docking and move it to regular storage, according to the location directive.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

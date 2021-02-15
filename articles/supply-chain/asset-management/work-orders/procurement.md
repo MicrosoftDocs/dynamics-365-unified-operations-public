@@ -104,3 +104,6 @@ The illustration below shows an example of the **Purchase order** page, with foc
 
 Likewise, to view or enter the activity number that is related to a work order purchase requisition line, on the **Work order purchase requisition** list page, select the purchase requisition record, and then, in the **Purchase requisition** column, select the link for the purchase requisition. You can find the **Activity number** field on the **Project** tab of the **Line details** FastTab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

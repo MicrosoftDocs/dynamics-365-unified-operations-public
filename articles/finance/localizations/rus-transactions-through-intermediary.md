@@ -93,3 +93,6 @@ The current implementation of this functionality has the following limitations:
 2. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Report code** reference.
 
 For more information, see [Purchases on commission](rus-purchases-on-commission.md) and [Sales on commission](rus-sales-on-commission.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

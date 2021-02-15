@@ -60,3 +60,6 @@ The Public Digital Bookkeeping System, or Sistema Público de Escrituração Dig
 -   [Service electronic fiscal document](latam-bra-service-electronic-fiscal-document.md)   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

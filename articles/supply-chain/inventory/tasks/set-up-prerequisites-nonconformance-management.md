@@ -81,3 +81,6 @@ Use this topic to enable nonconformance management processes. A nonconformance d
 4. In the **Description** field, type a value.
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

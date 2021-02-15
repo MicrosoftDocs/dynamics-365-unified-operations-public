@@ -111,3 +111,6 @@ The following illustrations show the template mapping in Data integration.
 ### Agreement invoices (Field Service to Supply Chain Management): Invoice lines
 
 [![Template mapping in Data integration](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

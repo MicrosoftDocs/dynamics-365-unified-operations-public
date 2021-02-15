@@ -219,3 +219,5 @@ Managers can see all goals for their team through the **Team performance goals**
 The **Reviews** tab summarizes the reviews the employee has in each state: **In progress**, **Ready for review**, and **Final review**. To access an employee's review, select the **Details** button and then select reviews to collaborate on. Based on where a review is within the workflow process, you can see if the review is available for updating. 
 
 You can see all reviews for your team through the **Team performance reviews** tile in the **Summary** section of **My team**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

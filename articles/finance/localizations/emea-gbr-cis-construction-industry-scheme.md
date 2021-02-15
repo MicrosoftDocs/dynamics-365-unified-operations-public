@@ -94,3 +94,6 @@ Use the **Undo settlement**, **Vendors**, and **Vendor payments** pages to corre
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

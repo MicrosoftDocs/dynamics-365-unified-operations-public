@@ -41,3 +41,6 @@ This procedure walks through creating a new product in the Commerce product hier
 8. In the Product number field, type a value.
 9. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

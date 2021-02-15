@@ -150,3 +150,6 @@ The following image shows details for a configured warehouse.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

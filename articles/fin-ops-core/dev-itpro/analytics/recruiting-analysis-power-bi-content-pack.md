@@ -70,3 +70,6 @@ The following table shows the entities that the **Recruiting** Power BI content 
 | Performance          | Rating, description, and rating model                            | Applicant, Employed Applicant, Terminated Applicant |
 | Recruitment Project  | Project description, project status, and openings                | Applicant, Employed Applicant, Terminated Applicant |
 | Terminated Applicant | Terminated applicants, reason, performance, and termination date | Company, Calendar Offset, Date, Geographic Location, Performance, Demographics, Employment, Media, Recruitment Project, Applicant Name |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

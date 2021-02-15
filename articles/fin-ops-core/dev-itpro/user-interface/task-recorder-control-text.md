@@ -104,3 +104,6 @@ The following code example shows how property change events are logged to Task r
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Location directives determine *where* items should be picked and *where* they sh
 
 - Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Help topic: [Create location directives](create-location-directive.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

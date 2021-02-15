@@ -278,3 +278,6 @@ Open the **SampleLoadTest.load** test to create test users and import them into 
 ## Troubleshooting
 
 For information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide for single-user or multi-user testing with the Performance SDK](troubleshoot-perf-sdk-user-testing.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

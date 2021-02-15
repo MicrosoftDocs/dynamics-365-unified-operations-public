@@ -208,3 +208,6 @@ A new menu item for the **Quarterly VAT communication (LIPE)** report must be as
     - **4**: Entities that operate in sectors such as telecommunications, water supply, electricity, waste collection, and disposal sectors
 
 4.  Select **OK** to generate the report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

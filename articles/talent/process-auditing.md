@@ -66,3 +66,6 @@ The following data is available with process auditing.
 |Job application history | Job application (msdyn_JobapplicatonId)<br></br>Status (msdyn_status) <br></br>Status reason (msdyn_statusreason) <br></br>Rejection reason (msdyn_rejectionreason) |
 | Job opening history | Job opening (msdyn_JobopeningId) <br></br>Status (msdyn_jobopeningstatus) <br></br>Status reason (msdyn_jobopeningstatusreason) |
 | Candidate history | Candidate (msdyn_CandidateId) |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
