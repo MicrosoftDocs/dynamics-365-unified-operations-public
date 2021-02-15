@@ -31,18 +31,18 @@ ms.dyn365.ops.version: 10.0.17
 
 # Mobile device user settings
 
-The Warehouse Management mobile app has a set of app-specific settings that help tailor the user experience. Because the app can be used on devices of different screen sizes and configurations (such as tablet, phone, or arm-held), it can be useful to manage these settings centrally from Supply Chain Management.
+The new Warehouse Management mobile app has a set of app-specific settings that help tailor the user experience. Because the app can be used on devices of different screen sizes and configurations (such as tablet, phone, or arm-held), it can be useful to centrally manage these settings from Microsoft Dynamics 365 Supply Chain Management.
 
-The *mobile device user settings* feature lets you define global user settings to be used on all devices, or to define more granular user settings based on device model and/or individual workers. When a worker signs in to the Warehouse Management mobile app, the app will fetch and apply the most specific settings profile that is stored in Supply Chain Management for the matching brand, device, and/or user ID.
+The *mobile device user settings* feature lets you define global user settings that will be used on all devices. You can also define more granular user settings for individual device brands, device models, and/or workers. When a worker signs in to the Warehouse Management mobile app, the app fetches and applies the most specific settings profile that is stored in Supply Chain Management for the matching brand, device, and/or user ID.
 
-This feature can help workers get started more quickly each time they start to use a new device. For example:
+This feature can help workers get started more quickly whenever they begin to use a new device. Here are some examples:
 
-- Admins can establish a standard set of preferences that work best for devices from a specific manufacturer and/or device model. This can help workers get started with a new device without necessarily needing to change the settings.
-- If your company has a pool of identical devices that are shared among workers, then each worker will see their preferred setup each time they sign in, even if they have never before used the specific physical device they selected that day.
-- While working in Supply Chain Management, admins can view and edit all stored settings, even for individual workers, which can help with troubleshooting or to fine tune new features.
+- Admins can establish a standard set of preferences that work best for devices from a specific manufacturer and/or for specific device models. Therefore, workers can get started with a new device without necessarily having to change the settings.
+- If your company has a pool of identical devices that are shared among workers, workers will see their preferred setup every time that they sign in, even if they have never used the specific physical device that they selected on a given day.
+- In Supply Chain Management, admins can view and edit all stored settings, even for individual workers. This capability can help them troubleshoot or fine-tune new features.
 
 > [!IMPORTANT]
-> This feature applies only to the new Warehouse Management mobile app. It does not work with the legacy warehouse app.
+> The *mobile device user settings* feature applies only to the new Warehouse Management mobile app. It doesn't work with the old warehouse app.
 
 ## Turn on the mobile device user settings feature
 
@@ -53,38 +53,49 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 ## Create and manage user settings
 
-Use the **Mobile device user settings** page to create, view, and manage settings profiles at all levels of granularity. The first time a worker edits their user settings on a new device, a new profile will be added here automatically (if it doesn't already exist) and then updated each time the worker makes a change. You can also define a settings profile that would apply to all brands, models, and/or workers, and then further set the granularity to apply more specific settings for specific brands, models, or individual workers.
+Use the **Mobile device user settings** page to create, view, and manage settings profiles at all levels of granularity. The first time that a worker edits their user settings on a new device, a new profile is automatically added on this page, if it doesn't already exist. That profile is then updated every time that the worker makes a change.
 
-To create and manage user settings for your mobile devices:
+You can also define a settings profile that applies to all device brands, device models, and/or workers. You can then increase the granularity by applying more specific settings for individual brands, models, and/or workers.
+
+Follow these steps to create and manage user settings for your mobile devices.
 
 1. Go to **Warehouse management \> Mobile device \> Mobile device user settings**.
-1. Select a user setting from the list pane or select **New** from the Action Pane to create a new one. Each record in the list pane is labelled to indicate the brand, model, and/or user ID for which it applies, with the more general profiles showing a value of *All* for some or all of these.
-1. Make the following settings in the header section of the new or selected record:
-    - **Device brand name** - Select the device brand name for which this settings profile should apply. Leave this blank to allow the profile to apply to all brands. The drop-down list shows the brands that are already defined on your system. See the next section for more information on how to establish the list of brands available here.
-    - **Device model ID** - Select the device model for which this settings profile should apply. Leave this blank to allow the profile to apply to all models of the selected brand. The drop-down list shows the brands that are already defined for the brand selected in the **Device brand name** field. See the next section for more information on how to establish the list of models available for each brand.
-    - **User ID** - Select the user ID for the warehouse worker for whom the setting applies. Leave this blank to allow the profile to apply to all workers.
-1. Make the following settings on the **General** FastTab:
-    - **Button position** - Select how buttons should be positioned on the device. This will move elements in the app to better fit the preference or handedness of the worker. The options are: *Bottom right (default)*, *Bottom left*, *Top right*, and *Top left*.
-    - **Display orientation** - Select the display orientation that should be applied by default on the app.
-    - **Scan with camera** - Set this to *Yes* to use the device camera to scan input fields that have their preferred input mode set to *Scanning*. If your device has a built-in scanner, set this option to *No* to use the scanner instead.
-    - **Show product photo** - Choose whether or not to show product photos when available for the released product. For more information about how to add product images, see [Add an image to a product](../pim/tasks/add-image-product.md).
-    - **Display color theme** - Select a color theme for the device.
-    - **Sound level** - Select the sound level for the device. Select a value between 0 and 10, where 0 equals no sound, and 10 equals maximum volume. Default is 4.
-    - **Vibration level** - Select the vibration level for the device. Select a value between 0 and 5, where 0 equals no vibration, and 5 equals maximum vibration. Default is 1.
-    - **Text scale percentage** - Specify the text size as a percentage of the standard size. Enter a value between 70 and 400, where 70 equals smallest text scale, and 400 equals largest text scale. Default is 100.
-    - **Button scale percentage** - Specify the button size as a percentage of the standard size. Enter a value between 50 and 200, where 50 equals smallest button scale, and 200 equals largest button scale. Default is 100.
+1. Select an existing user settings profile in the list pane to open its record. Alternatively, select **New** on the Action Pane to create a new profile.
+
+    Each profile in the list pane is labeled to indicate the brand, model, and/or user ID that the profile applies to. More general profiles have a value of *All* for some or all of these characteristics.
+
+1. In the header section of the record for the new or selected settings profile, set the following fields:
+
+    - **Device brand name** – Select the device brand name that the profile should apply to. If the profile should apply to all brands, leave this field blank. The list of values includes all the brands that have been defined in your system. For information about how to define the list of brands, see the next section.
+    - **Device model ID** – Select the device model that the profile should apply to. If the profile should apply to all models of the selected brand, leave this field blank. The list of values includes all the models that have been defined for the brand that is selected in the **Device brand name** field. For information about how to define the list of models for each brand, see the next section.
+    - **User ID** – Select the user ID of the warehouse worker that the setting profile should apply to. If the profile should apply to all workers, leave this field blank.
+
+1. On the **General** FastTab, set the following fields:
+
+    - **Button position** – Select how buttons should be positioned on the device. Elements in the app will be moved to better fit the preference or handedness of the worker. The available options are *Bottom right (default)*, *Bottom left*, *Top right*, and *Top left*.
+    - **Display orientation** – Select the display orientation that should be applied by default in the app.
+    - **Scan with camera** – Set this option to *Yes* to use the device camera to scan input fields where the preferred input mode is set to *Scanning*. If your device has a built-in scanner, set this option to *No* to use the scanner instead.
+    - **Show product photo** – Select whether product photos should be shown if they are available for the released product. For more information about how to add product images, see [Add an image to a product](../pim/tasks/add-image-product.md).
+    - **Display color theme** – Select a color theme for the device.
+    - **Sound level** – Select the sound level for the device. Select a value between 0 (zero) and 10. A value of *0* represents no sound, and a value of *10* represents maximum volume. The default value is *4*.
+    - **Vibration level** – Select the vibration level for the device. Select a value between 0 (zero) and 5. A value of *0* represents no vibration, and a value of *5* represents maximum vibration. The default value is *1*.
+    - **Text scale percentage** – Specify the text size as a percentage of the standard size. Enter a value between 70 and 400. A value of *70* represents the smallest text scale, and a value of *400* represents the largest text scale. The default value is *100*.
+    - **Button scale percentage** – Specify the button size as a percentage of the standard size. Enter a value between 50 and 200. A value of *50* represents the smallest button scale, and a value of *200* represents the largest button scale. The default value is *100*.
 
 ## Create and manage mobile device brands
 
-Use the **Mobile device brands** page to view, create, and manage the device brands and models that are available for use with your settings profiles. The mobile app automatically fetches and submits the local brand name and model ID the first time a worker edits their settings on a given device, so  most of these records will usually be generated automatically for you. However, you can also manage all the entries here and give more useful descriptions to each brand and model, for example to help distinguish similar or cryptic model IDs.
+Use the **Mobile device brands** page to view, create, and manage the device brands and models that can be used with your settings profiles. The mobile app automatically fetches and submits the local brand name and model ID the first time that a worker edits their settings on a given device. Therefore, most of these records will usually be automatically generated. However, you can also manage all the records on this page. For example, you can give more useful descriptions to each brand and model to help distinguish similar or cryptic model IDs.
 
-To create and manage your mobile device brands and models:
+Follow these steps to create and manage your mobile device brands and models.
 
 1. Go to **Warehouse management \> Mobile device \> Mobile device brands**.
-1. Select a mobile device brand from the list pane or select **New** from the Action Pane to create a new one.
-1. Make the following settings in the header section of the new or selected device:
-    - **Device brand name** - This is the brand name of a device, for example "Microsoft Corporation".
-    - **Description** - You can optionally provide a description to help distinguish between brand names.
-1. Use the **Mobile device models** FastTab to see all the different models for a given device brand. Use the toolbar on this FastTab to add or remove rows in the grid. Make the following settings for each row:
-    - **Device model ID** - The device model ID, for example "Surface Book 2".
-    - **Description** - You can optionally provide a description to help distinguish between model IDs.
+1. In the list pane, select a mobile device brand to open its record. Alternatively, select **New** on the Action Pane to create a new brand.
+1. In the header section of the record for the new or selected device brand, set the following fields:
+
+    - **Device brand name** – The brand name of the device, such as *Microsoft Corporation*.
+    - **Description** – You can enter a description to help distinguish brand names.
+
+1. The **Mobile device models** FastTab shows all the models for the selected device brand. Use the buttons on the toolbar to add rows to the grid or remove rows. For each row, you can set the following fields:
+
+    - **Device model ID** – The device model ID, such as *Surface Book 2*.
+    - **Description** – You can enter a description to help distinguish model IDs.
