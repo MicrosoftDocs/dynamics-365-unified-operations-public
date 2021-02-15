@@ -104,3 +104,6 @@ Compensation processes are used to determine new compensation amounts and awards
 10. Click Approved.
     * After the record has been approved it can be loaded to the employee's official compensation record. The new compensation will be effective as of the transaction date set on the compensation process.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

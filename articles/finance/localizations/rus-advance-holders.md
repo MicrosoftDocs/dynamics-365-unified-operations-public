@@ -153,3 +153,6 @@ Transactions for these workers can be posted by using advance holder accounts. T
 ## Set up the advance holder
 
 [Advance holders overview](emea-advance-holders.md#create-an-advance-holder)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

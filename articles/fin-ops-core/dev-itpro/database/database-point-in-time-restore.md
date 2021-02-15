@@ -61,3 +61,6 @@ Although the new database doesn't have any restore point history, it does begin 
 
 ### Restore is denied for environments that run Platform update 20 or earlier
 The restore database process cannot be completed if the environment is running Platform update 20 or earlier. For more information, see the list of currently supported Platform updates in the [Software lifecycle policy and cloud releases](..//migration-upgrade/versions-update-policy.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

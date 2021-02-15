@@ -46,3 +46,6 @@ You can set up various types of requests to use in your company. Maintenance req
 The following illustration shows an example of the **All maintenance requests** list page.
 
 ![All maintenance requests list page](media/01-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

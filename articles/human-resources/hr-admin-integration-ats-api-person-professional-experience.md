@@ -80,3 +80,6 @@ This entity describes professional experience or work history of a candidate.
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

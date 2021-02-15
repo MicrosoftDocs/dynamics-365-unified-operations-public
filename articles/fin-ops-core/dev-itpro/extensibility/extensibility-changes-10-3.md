@@ -140,3 +140,6 @@ The following methods have been refactored to support extensibility:
 - **Retail channel:** Pre-triggers were added for Shipped, PackingSlip, and MarkAsPacked.
 - **Retail channel:** The Cancellation charge dialog box can be overridden.
 - **Retail channel:** Recall order default parameter value extension for the search order dialog box.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

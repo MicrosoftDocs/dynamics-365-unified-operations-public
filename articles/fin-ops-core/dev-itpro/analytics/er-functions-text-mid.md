@@ -74,3 +74,6 @@ If the value of the `starting position` argument exceeds length of the specified
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

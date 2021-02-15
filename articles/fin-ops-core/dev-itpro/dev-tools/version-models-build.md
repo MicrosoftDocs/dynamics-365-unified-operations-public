@@ -99,3 +99,6 @@ For build definitions that were created before Platform update 6, a new task mus
 
 1. On the **Variables** tab, click **+ Add** at the bottom of the list of variables. In the first column, for the **Name** variable, enter **ModelVersionExclusions**.
 1. Click **Save** to save the new task.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

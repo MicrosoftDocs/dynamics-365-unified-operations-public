@@ -103,3 +103,6 @@ You can now assign an employee to a fixed compensation plan. Open the **Employee
 
 The system verifies that the compensation amount that is specified for a compensation plan of the grade or band type is within the minimum and maximum reference points for the given compensation level on the employee's job. If the compensation amount is outside the allowed range, a warning or error message is displayed, depending on the tolerance level that is set on the fixed compensation plan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

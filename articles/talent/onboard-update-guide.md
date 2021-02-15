@@ -57,3 +57,6 @@ Onboard will automatically send the new hire an email that indicates what the ch
     ![[Pushing the changes in an onboarding template to all guides that were created from it](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 The changes will be visible to new hires who open the onboarding guides. However, Onboard won't send email alerts to new hires to let them know that their onboarding guide has changed. For easy identification, a red **New** tag will appear next to each change. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

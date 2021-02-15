@@ -38,3 +38,6 @@ This procedure demonstrates how to configure a store's functionality profile set
 4. In the Prompt for sales representative field, select an option.
 5. Select Yes in the Require sales representative field.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

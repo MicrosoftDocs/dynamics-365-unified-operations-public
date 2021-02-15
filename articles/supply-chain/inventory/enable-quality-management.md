@@ -507,3 +507,6 @@ Additional resources
 [Nonconformance management](enable-nonconformance-management.md)
 
 [Quality management for warehouse processes](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

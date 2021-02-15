@@ -48,3 +48,6 @@ This procedure shows how to end a production order. The demo data company used t
 1. On the Action Pane, click Manage costs.
 2. Click View cost comparison.
     * After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

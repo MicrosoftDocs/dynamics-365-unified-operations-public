@@ -195,3 +195,6 @@ The following details are imported and included on the new employee record:
 
 [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Two preview features are available for DTS:
 
 For more information about how to use DTS, see [Translate user interface files](use-translation-service.md) and [Translate documentation files](use-translation-service-ua.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

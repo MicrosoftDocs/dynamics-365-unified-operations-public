@@ -103,3 +103,6 @@ After the full amount is successfully refunded, the cashier can complete the tra
 
 - [Payments FAQ](payments-retail.md)
 - [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

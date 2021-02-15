@@ -43,3 +43,6 @@ This topic provides links to documentation resources for Hungary.
 - [Online invoicing system](emea-hun-online-invoicing.md)
 - [Sales tax reports for Hungary](emea-hun-sales-tax-reports.md)
 - [Deferred sales tax calculations](emea-hun-deferred-vat.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

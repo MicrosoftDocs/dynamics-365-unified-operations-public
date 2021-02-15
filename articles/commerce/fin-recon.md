@@ -66,3 +66,6 @@ When trickle feed statement posting is used, so that the posting of transactions
 Details of the financial reconciliation for a shift are synced to Commerce headquarters by using the P-job.
 
 Financial retail statements in Commerce headquarters don't compute totals to show the details on the statement lines. Instead, the finalized amounts in the POS client are used to create and post financial retail statements.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

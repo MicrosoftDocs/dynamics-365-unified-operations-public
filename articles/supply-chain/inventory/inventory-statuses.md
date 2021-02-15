@@ -69,3 +69,6 @@ You can change inventory statuses either by using the **On-hand by location** pa
 > - On the **On-hand by location** page, you can group lines based on shown dimensions using the **Display dimensions** button and change the status for the selected lines.
 > - On the **On-hand by location** page, you can select multiple records and then use the **Inventory status change** button to change all of them at once.
 > - On the **Inventory status change** periodic task you will be able to filter by tracking dimensions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

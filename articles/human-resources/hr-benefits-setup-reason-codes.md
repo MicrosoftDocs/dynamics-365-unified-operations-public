@@ -84,3 +84,5 @@ You'll see a banner on the **Links** page of the **Benefits management** workspa
 After reason codes migrate to Personnel management, the option for using them in Benefits management is automatically set to **Yes**.
 
 [![Use reason code in Benefits management](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

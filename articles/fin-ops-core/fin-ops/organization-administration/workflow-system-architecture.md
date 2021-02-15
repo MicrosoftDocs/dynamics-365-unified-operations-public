@@ -65,3 +65,6 @@ Developers can create workflows for the objects that they have added. The follow
 | 4    | Both                     | This same messaging pattern is repeated, as required, throughout the lifecycle of the workflow instance. |
 
 The workflow architecture helps provide a reliable and durable messaging system, and also helps guarantee that the state of the workflow is always synchronized with the state of the application. If an unexpected hardware or software failure occurs, the workflow instance state is returned to its last known saved point, and the message stays in the queue. Therefore, from an architecture perspective, the recovery model is to fix the problem and resume the workflow.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

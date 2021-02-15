@@ -124,3 +124,6 @@ You must configure the Warehousing app on the device to connect to the server th
     The application will now connect to your server and the log-in screen for the warehouse worker will display.
     
 5. If you do not have a telemetry ID for the Warehouse app, you might encounter some errors. This is a known issue. The workaround is to sign in to an existing client to get a Telemetry ID. This issue will be fixed in a future release.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

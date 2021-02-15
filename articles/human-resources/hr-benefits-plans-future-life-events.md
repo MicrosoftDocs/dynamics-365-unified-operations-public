@@ -51,3 +51,6 @@ You can schedule future life events in Dynamics 365 Human Resources.
    | Line | The line number of the future life event. |
 
 4. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

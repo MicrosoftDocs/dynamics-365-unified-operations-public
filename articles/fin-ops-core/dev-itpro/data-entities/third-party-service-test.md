@@ -163,3 +163,6 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
     ![Validate the results](./media/soapui8.png)
 
 In our example, we have now successfully authenticated and then queried UserSessionService via SOAP.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -115,3 +115,6 @@ You can also add HTML to display a header, footer, logo or any other static cont
 ## MPOS transactions
 
 After the changes are synchronized to the store, MPOS prompts the user for an email address for each transaction (if this feature is enabled). If an email address is already on file for the customer, that address appears in the email address prompt. If a customer hasn't been named, or if an email address hasn't been entered for a named customer, enter an email address, and then select **Send**. When the transaction is finalized, the real-time service will send the customer an email that has the receipt in the body of the message, as you configured earlier.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

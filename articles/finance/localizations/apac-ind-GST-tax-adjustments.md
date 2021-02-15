@@ -66,3 +66,6 @@ ms.dyn365.ops.version: 10.0.4
 
 > [!NOTE]
 > Tax adjustment functionality is available only for purchase orders and sales orders that are at the invoicing stage.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

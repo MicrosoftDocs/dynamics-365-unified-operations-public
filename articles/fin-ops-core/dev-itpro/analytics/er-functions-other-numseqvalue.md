@@ -110,3 +110,6 @@ When the **NumSeq** data source is called, it returns the new generated value of
 ## Additional resources
 
 [Other (business domain–specific) functions](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -540,3 +540,6 @@ The following variations can be done for scenario 1, based on the requirements f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -130,3 +130,6 @@ For more information about how to service individual components that are describ
 ### Extensibility and packing
 
 For more information about serviceability for extensions, see [Create deployable packages](./dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

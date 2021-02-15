@@ -48,3 +48,6 @@ This task uses the USMF demo company.
 12. Close the page.
 13. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

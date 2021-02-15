@@ -112,3 +112,6 @@ Legal entities in Poland can link fixed assets to depreciation groups. Depreciat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

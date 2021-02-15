@@ -59,3 +59,6 @@ This task was created using the demo data company JPMF.
 12. Click Voucher.
     * Verify that an accounting voucher is generated for the endorsement.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

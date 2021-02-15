@@ -105,3 +105,6 @@ The following illustration shows the result when the adjusted format is run.
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

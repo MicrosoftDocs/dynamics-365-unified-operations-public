@@ -112,3 +112,6 @@ After a closing schedule is completed, select the **Closed** option for it. The 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

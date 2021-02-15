@@ -54,3 +54,6 @@ You can create worker benefit plans in Microsoft Dynamics 365 Human Resources to
    | Plans | The Plans fast tab contains the plans that meet the filter criteria you specified. The relevant configuration options that were set by HR staff and the enrollment selections that were chosen by employees are included on each line. The Qualified field specifies whether there is a validation conflict with the plan selection. |
 
 4. Select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

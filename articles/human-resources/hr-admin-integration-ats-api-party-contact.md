@@ -84,3 +84,6 @@ This entity describes the candidate’s contact information, including phone, em
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

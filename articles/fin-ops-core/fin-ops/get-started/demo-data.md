@@ -131,3 +131,6 @@ Access level security is configured but not enabled. This is enabled in the **Co
 [![Cost accounting paramters](./media/Cost-accounting-parameters.PNG)](./media/Cost-accounting-parameters.PNG)
 
 After Access level security has been enabled, you can assign an employee to the role Cost object controller. You can log in as the employee and access the **Cost control** workspace. The employee can now see their Cost center performance and drill into details of how these were calculated.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

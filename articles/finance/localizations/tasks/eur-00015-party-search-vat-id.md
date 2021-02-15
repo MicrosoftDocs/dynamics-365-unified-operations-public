@@ -44,3 +44,6 @@ This procedure applies to all European countries/regions. The procedure was crea
 7. Click Find.
     * All parties with that registration ID will be displayed.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

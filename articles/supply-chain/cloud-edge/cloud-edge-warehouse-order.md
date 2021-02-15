@@ -75,3 +75,6 @@ In the **Warehouse order lines** view, you can monitor the progress of inbound r
 
 - Go to **Warehouse management \> Inquiries and reports \> Warehouse order lines**, and use the filter to find the lines that you're looking for.
 - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**, and open the relevant purchase order. In the **Purchase order lines** section, select one or more lines, and then, on the toolbar, select **Warehouse \> Warehouse receipt entries**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

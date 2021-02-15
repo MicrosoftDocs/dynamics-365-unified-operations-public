@@ -268,3 +268,6 @@ The following URLs are accessed for authentication.
 [Office integration tutorial](office-integration-tutorial.md)
 
 [Configuring Power BI integration](../analytics/configure-power-bi-integration.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

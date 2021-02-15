@@ -315,3 +315,6 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 2.  After POS launches, sign in to POS and add a serial item to a transaction.
 
 3.  Place a break point in the extension code. When you add the serial item you should be able to debug the extension code.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

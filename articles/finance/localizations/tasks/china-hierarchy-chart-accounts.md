@@ -59,3 +59,6 @@ This procedure was created using the demo data company CNMF. This procedure is f
     * Repeat the last three steps to create additional sub accounts, as necessary.  
 23. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

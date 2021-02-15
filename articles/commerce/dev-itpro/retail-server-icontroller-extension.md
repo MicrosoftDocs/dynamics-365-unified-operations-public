@@ -285,3 +285,6 @@ The following example shows how to update the **add** element in the **RetailPro
     </composition> 
 </retailProxyExtensions> 
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

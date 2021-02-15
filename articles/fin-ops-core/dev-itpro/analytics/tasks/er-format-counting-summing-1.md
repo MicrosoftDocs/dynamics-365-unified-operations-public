@@ -59,3 +59,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 8. In the tree, expand 'Intrastat model'.
 9. In the tree, select 'Intrastat model\Intrastat (DE)'.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

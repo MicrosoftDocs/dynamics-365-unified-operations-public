@@ -381,3 +381,6 @@ Generic editable field components wrap any custom components and enable interact
 [Work with modules](../work-with-modules.md)
 
 [Work with fragments](../work-with-fragments.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

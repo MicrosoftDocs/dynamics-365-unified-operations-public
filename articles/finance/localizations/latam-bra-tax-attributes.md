@@ -101,3 +101,6 @@ The following fields on the **Product information** page are required for a Braz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

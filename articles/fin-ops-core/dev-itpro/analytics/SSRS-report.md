@@ -44,3 +44,6 @@ For more information, see [Create reporting solutions](create-nextgen-reporting-
 
 ## To view the report
 The [SQL Server Reporting Services Reports report](https://docs.microsoft.com/dynamics/s-e/) lists each report that is available. The report indicates the data set used for each report, as well as the filters and fields available on each report. For more information, see [Find information about standard data entities](../data-entities/data-entities-report.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

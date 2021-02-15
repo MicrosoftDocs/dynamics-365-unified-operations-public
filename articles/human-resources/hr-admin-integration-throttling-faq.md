@@ -104,3 +104,6 @@ No.
 ## Can the throttling engine be configured (thresholds)?
 
 No.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

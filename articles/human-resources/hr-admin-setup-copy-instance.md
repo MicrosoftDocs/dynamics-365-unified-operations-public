@@ -155,3 +155,6 @@ For more information about custom fields, see [Create and work with custom field
 [Remove an instance](hr-admin-setup-remove-instance.md)</br>
 [Update process](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

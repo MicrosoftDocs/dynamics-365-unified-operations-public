@@ -140,3 +140,6 @@ Validations for serial numbers will also occur when a user performs the pick up 
 [Inbound inventory operation in POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Outbound inventory operation in POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

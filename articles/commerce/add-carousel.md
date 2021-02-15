@@ -87,3 +87,6 @@ To add a carousel module to a new page and set the required properties, follow t
 [Content block module](add-hero-module.md)
 
 [Video player module](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

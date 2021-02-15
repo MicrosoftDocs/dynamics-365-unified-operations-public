@@ -185,3 +185,6 @@ To set up safes, follow these steps.
 
 [Set up a call center channel](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

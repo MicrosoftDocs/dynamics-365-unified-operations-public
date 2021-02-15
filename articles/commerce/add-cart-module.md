@@ -119,3 +119,6 @@ To add a cart module to a new page and set the required properties, follow these
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
 
 [Create an online functionality profile](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

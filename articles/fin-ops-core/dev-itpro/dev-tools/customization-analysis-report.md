@@ -412,3 +412,6 @@ You can fix this warning by using one of the following patterns:
 | Error message       | %1 is a base table and must not be modified   |
 | Issue type/severity | MetaData/Warning     |
 | How to fix it       | Don't customize the table.    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

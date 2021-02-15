@@ -179,3 +179,6 @@ If you want to suppress the summary section in a generated document, based on th
 - [Design a new ER configuration to generate reports in Word format](er-design-configuration-word.md)
 - [Re-use ER configurations with Excel templates to generate reports in Word format](./tasks/er-design-configuration-word-2016-11.md)
 - [Inspect the configured ER component to prevent runtime issues](er-components-inspections.md#i14)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

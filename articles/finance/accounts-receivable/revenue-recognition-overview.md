@@ -60,3 +60,6 @@ When the sales order is confirmed, an expected revenue schedule is also created 
 The details of the revenue recognition schedule are maintained for each sales order line. Therefore, the revenue recognition manager can view the details and can release lines to revenue when the contractual obligation has been completed. At the end of each period, the revenue recognition manager can create a revenue journal to release any schedule lines that are due on or before a date they define. This revenue journal isn't posted immediately. Therefore, the revenue recognition manager can verify that the correct amounts are being released from deferred revenue to actual revenue.
 
 If a contractual change causes a new sales order line to be added either to the existing sales order or a new sales order, a reallocation process can be run to correct the revenue price across all lines on the sales orders.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

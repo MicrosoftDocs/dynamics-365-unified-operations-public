@@ -407,3 +407,6 @@ For gift cards that are issued via email, the value of the **Retail email notifi
 5. Save and close the file.
 6. Restart MPOS.
 7. If the issue persists, exit MPOS, use Task Manager to end any instances of dllhost.exe that are running, and then do another reset of Internet Information Services (IIS).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

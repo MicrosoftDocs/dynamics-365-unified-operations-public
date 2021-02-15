@@ -142,3 +142,6 @@ Use Visual Studio to build and run the **FmtChargeType** form.
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

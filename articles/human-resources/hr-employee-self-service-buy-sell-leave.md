@@ -58,3 +58,6 @@ Your balances will either automatically update or go through an approval process
 
 [Leave and absence overview](hr-leave-and-absence-overview.md)</br>
 [Manage buy and sell leave policies](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

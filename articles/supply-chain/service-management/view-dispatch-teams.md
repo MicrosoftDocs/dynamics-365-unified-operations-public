@@ -56,3 +56,6 @@ For information about how to assign a worker to a team, see [Set up a preferred 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

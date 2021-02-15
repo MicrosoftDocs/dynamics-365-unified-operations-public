@@ -80,3 +80,6 @@ As cost elements represent the lowest level of cost details, you should make sur
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

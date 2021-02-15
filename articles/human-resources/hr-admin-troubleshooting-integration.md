@@ -220,3 +220,6 @@ of minutes to complete, then you should see those mappings. This issue occurs wh
 - Data Management:
 
   - [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

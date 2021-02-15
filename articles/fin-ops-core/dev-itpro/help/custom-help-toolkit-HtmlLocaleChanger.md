@@ -65,3 +65,6 @@ HtmlLocaleChanger.exe --h D:\D365-Operations\d365F-O\supply-chain\de --l de-at -
 [Deploy custom Help to Azure](walkthrough-help-azure.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

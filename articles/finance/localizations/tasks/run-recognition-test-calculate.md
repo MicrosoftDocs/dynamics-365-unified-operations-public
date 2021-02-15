@@ -57,3 +57,6 @@ This task was created using the demo data company JPMF.
     * The Confirmation form of the impaired fixed assets is displayed.  
     * The Impairment test ID is issued.     Remember the Impairment_test_ID for later use in Propose and post.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

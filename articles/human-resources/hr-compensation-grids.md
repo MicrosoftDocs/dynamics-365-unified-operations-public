@@ -97,3 +97,6 @@ Compensation grids are used to define and maintain the pay structures for fixed 
 29. In the list, mark or unmark all rows.
 30. Click Apply to grid.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ This procedure was created using the demo data company MYMF.
 20. Click OK.
 21. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

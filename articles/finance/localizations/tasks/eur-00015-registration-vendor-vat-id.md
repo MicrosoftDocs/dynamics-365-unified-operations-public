@@ -66,3 +66,6 @@ Before you can complete this procedure you must set up VAT IDs. This procedure a
 25. In the Tax exempt number field, enter or select a value.
 26. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

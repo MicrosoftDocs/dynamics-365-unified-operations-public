@@ -92,3 +92,6 @@ If you want to use other file name extensions, you must update your data sources
 
 1. In the **Data management** workspace, select the **Configure data sources** tile, and then select **Data sources**.
 2. Add a default file name extension to the appropriate data source.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

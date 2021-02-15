@@ -81,3 +81,6 @@ Additionally, consider that the maximum offset in your physical inventory value 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

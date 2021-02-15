@@ -59,3 +59,6 @@ A warranty agreement can include several agreement lines to cover the warranty f
     4. In the **Percent** field, enter the coverage percentage for the warranty line. The percentage indicates how much is covered by your company.
 
 ![Warranty page](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

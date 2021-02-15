@@ -286,3 +286,6 @@ Then, a mouse click of this menu item button is equivalent to a mouse click of t
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

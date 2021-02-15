@@ -86,3 +86,6 @@ The **Tax depreciation** report provides Latvian users with tax reporting that i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

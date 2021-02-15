@@ -72,3 +72,6 @@ For full flexibility in mixed mode, we recommend that you use production type BO
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

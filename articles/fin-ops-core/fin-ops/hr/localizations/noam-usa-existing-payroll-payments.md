@@ -127,3 +127,6 @@ To re-create an ACH file for a group of electronic payments when the payment jou
 5. On the **Generate payments** page, select the bank account and the check method of payment, and then click **OK**.
 6. On the **Payroll electronic (Direct deposit)** page, enter the path (be sure to include the file name), enter an effective date, and optionally select the **Pay statement** check box to print the pay statements. Click **OK** to create the ACH file. A message shows the number of transactions and prenotes that were created.
 7. On the **Journal voucher** page, verify that the payment status is set to **Sent**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ For detailed instructions see:
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

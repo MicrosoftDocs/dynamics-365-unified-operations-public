@@ -97,3 +97,6 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ The way that you build your hierarchy of functional locations depends on your co
 The following figure shows an example of functional locations that are based on customers.
 
 ![Diagram showing functional locations based on customers](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

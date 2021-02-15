@@ -748,3 +748,6 @@ Find more details in the following topics:
 
 -  [Inventory profile overview](rus-inventory-profile-overview.md)
 -  [Set up an inventory profile](rus-set-up-inventory-profile.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

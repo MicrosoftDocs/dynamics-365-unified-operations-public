@@ -50,3 +50,6 @@ This task guide will transfer the financial information for a fixed asset book f
     * Review results before transferring the fixed asset books.  
 10. Click **Transfer**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

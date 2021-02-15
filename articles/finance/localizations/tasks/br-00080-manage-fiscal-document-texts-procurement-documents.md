@@ -52,3 +52,6 @@ Set up fiscal document source text
 19. Click Save.
 20. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

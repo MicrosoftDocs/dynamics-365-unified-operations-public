@@ -77,3 +77,6 @@ This article explains how to set user preferences to customize your user interac
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

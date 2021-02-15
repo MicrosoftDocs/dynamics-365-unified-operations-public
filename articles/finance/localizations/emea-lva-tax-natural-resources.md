@@ -157,3 +157,6 @@ Natural resources taxes are calculated during inventory journal transactions, an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

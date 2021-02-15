@@ -44,3 +44,6 @@ The compensation and benefits manager can assign employees to fixed compensation
     * If the Fixed compensation plan is a step plan, select the step containing the correct pay rate for the employee. If the fixed compensation plan is a grade or a band plan, enter the pay rate for the employee. The pay rate will be validated against the tolerance settings for the plan, and the minimum and maximum reference points for the job's compensation level.  
 8. Click OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ When you run the configured ER format, the attached Word template is used to gen
 
 - [Reuse ER configurations with Excel templates to generate reports in Word format](./tasks/er-design-configuration-word-2016-11.md)
 - [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

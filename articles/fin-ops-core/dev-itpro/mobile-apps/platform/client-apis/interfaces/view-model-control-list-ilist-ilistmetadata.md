@@ -300,3 +300,6 @@ OnRowSelect: function(row: [Row](view-model-control-list-ilist-irow.md)): void (
 An event that is triggered when a row is selected.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ In order to help you quickly gauge the urgency of a service order, the Gantt cha
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ For legal entities with primary addresses in Italy there is a packing slip date 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

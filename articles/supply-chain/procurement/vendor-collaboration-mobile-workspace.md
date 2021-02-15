@@ -175,3 +175,6 @@ Any changes that have been made to the order line response are shown. However, u
 
 ### Open confirmed orders
 When the purchase order is confirmed by the customer (that is, the status of the purchase order is changed to **Confirmed**), it appears in the open confirmed order. It will remain in the list until it's registered as received by the customer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

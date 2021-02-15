@@ -42,3 +42,6 @@ This procedure shows how to journalize posted journal entries. This procedure us
 9. Click **OK** to close the filter page.
 10. Click **OK** to start the journalizing process. A report will be generated after the process is complete.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

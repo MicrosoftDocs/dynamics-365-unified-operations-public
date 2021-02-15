@@ -86,3 +86,6 @@ If you don't specify a payroll calculation frequency for these payroll elements,
 ## Next step
 
 The next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Set up work cycles and work periods](noam-usa-work-cycle-work-period-tasks.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

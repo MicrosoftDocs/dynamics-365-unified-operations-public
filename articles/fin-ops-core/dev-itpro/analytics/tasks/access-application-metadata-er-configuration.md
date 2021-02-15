@@ -128,3 +128,6 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 > [!NOTE]
 > This way of getting information about application metadata is the only one available for locally deployed applications (when local business data (LBD), or on-premises, deployment model is used).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

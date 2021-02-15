@@ -1077,3 +1077,6 @@ This error occurs because of an OpenID scope **allatclaims** that is required by
 
 ### Error "ADMIN0077: Access control policy does not exist: Permit everyone" when running the Publish-ADFSApplicationGroup cmdlet
 When your AD FS is installed with a non-English version of Windows Server 2016, the permit everyone access control policy is created with your local language. Invoke the cmdlet by specifying AccessControlPolicyName parameter as: .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

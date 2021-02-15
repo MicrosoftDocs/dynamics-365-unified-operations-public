@@ -37,3 +37,6 @@ You can create and assign vendor organizations any type of certification that th
 4. In the Description field, type a value.
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ If you've enabled the Leave and absence bank holiday corrections preview feature
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Configure leave and absence types](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

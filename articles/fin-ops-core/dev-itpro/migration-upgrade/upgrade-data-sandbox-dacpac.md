@@ -175,3 +175,6 @@ If you can fix the data, you can resume the upgrade from LCS. However, note that
 After the data upgrade is completed, apply the same customization packages from your sandbox environment to your production environment. You can then copy your sandbox environment AXDB database to the production environment.
 
 For information about how to perform the copy operation, see [Copy the sandbox database to production](../database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

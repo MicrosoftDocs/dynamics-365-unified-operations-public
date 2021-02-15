@@ -293,3 +293,6 @@ If a device is lost or compromised, you must remove access to Supply Chain Manag
 1. Make sure that the client ID of the application matches the client ID that you made a note of in step 2.
 1. On the toolbar, select **Delete**.
 1. In the confirmation message that appears, select **Yes**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

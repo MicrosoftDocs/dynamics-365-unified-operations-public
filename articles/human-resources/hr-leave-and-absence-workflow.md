@@ -86,3 +86,6 @@ These examples show how you can create different types of workflow conditions by
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

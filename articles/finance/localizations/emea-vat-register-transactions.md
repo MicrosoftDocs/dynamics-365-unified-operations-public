@@ -38,3 +38,6 @@ For legal entities with a primary address in Estonia, Lithuania, Czech Republic,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

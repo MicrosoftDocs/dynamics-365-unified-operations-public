@@ -44,3 +44,6 @@ This topic provides links to documentation resources for Thailand.
 - [Microsoft Dynamics Localization Portal: China report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/thailand.html)
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

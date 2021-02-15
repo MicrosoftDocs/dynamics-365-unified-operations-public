@@ -257,3 +257,6 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 27. Close the page.
 28. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

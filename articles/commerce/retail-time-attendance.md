@@ -143,3 +143,6 @@ A Commerce user follows the workflow to calculate, approve, and transfer time re
 - Register Absence
 
 For more information about how to process time and attendance registrations, see [Process time and attendance registrations](https://technet.microsoft.com/library/aa573180.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

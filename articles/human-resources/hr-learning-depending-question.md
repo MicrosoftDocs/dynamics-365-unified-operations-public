@@ -59,3 +59,6 @@ Conditional questions allow you to specify what follow-up question will be prese
 10. In the tree, select 'Questions\I am paid fairly for the work I do.'.
     * Note that the question tree updated to show the dependency.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

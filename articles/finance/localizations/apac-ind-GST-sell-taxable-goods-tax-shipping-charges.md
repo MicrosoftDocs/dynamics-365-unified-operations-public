@@ -76,3 +76,6 @@ ms.dyn365.ops.version: 10.0.4
 2. Select **Voucher**.
 
 ![Example](media/Annotation-2019-05-20-152724.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

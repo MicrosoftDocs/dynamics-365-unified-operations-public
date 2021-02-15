@@ -70,3 +70,6 @@ In the arguments of logical functions, you can use data source references, numer
 ## Additional resources
 
 [Logical functions](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

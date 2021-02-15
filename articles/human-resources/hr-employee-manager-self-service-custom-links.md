@@ -53,3 +53,6 @@ To use this feature, enable **Custom links in Manager self-service** in the **Fe
 ## See also
 
 [Employee and Manager self-service overview](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

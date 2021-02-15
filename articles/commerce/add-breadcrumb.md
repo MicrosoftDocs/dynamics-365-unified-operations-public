@@ -96,3 +96,6 @@ To add a breadcrumb module to a PDP and set the required properties, follow thes
 [Buy box module](add-buy-box.md)
 
 [SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

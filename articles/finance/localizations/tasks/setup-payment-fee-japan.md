@@ -129,3 +129,6 @@ This task was created using the demo data company JPMF.
     * For example: select 'Taxable'.  
 30. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

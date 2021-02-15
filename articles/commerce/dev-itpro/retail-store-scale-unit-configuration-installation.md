@@ -427,3 +427,6 @@ Use Control Panel in Microsoft Windows to uninstall Commerce Scale Unit componen
 2. In Control Panel, select **Programs** &gt; **Uninstall a program**.
 3. In the **Programs and Features** window, select **Microsoft Dynamics 365 Commerce Scale Unit**, and then, above the list of programs, select **Uninstall**.
 4. Wait for the uninstaller to finish removing the program.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ The interest code can be set on the billing code, the billing classification, or
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

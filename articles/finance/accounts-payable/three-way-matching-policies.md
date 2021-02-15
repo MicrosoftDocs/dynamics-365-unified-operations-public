@@ -149,3 +149,6 @@ For more information, see [Accounts payable invoice matching overview](accounts-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

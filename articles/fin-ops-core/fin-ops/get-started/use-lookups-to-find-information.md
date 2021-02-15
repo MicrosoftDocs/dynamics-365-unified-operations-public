@@ -89,3 +89,6 @@ Instead, the user needs to clear the value of the lookup control, open the looku
 After the filter has been applied (see the image below), the user can find and select the row as usual.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

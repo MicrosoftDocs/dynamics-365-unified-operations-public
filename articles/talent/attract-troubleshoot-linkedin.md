@@ -61,3 +61,6 @@ If your job hasn't appeared on LinkedIn after 24 hours, try these steps:
 [Create, approve, and post jobs in Attract](./creating-jobs-attract.md)
 
 [Troubleshooting integration with LinkedIn and Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

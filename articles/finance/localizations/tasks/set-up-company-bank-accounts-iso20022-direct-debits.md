@@ -62,3 +62,6 @@ This is the second of five procedures that demonstrate the customer payment proc
     * For example, select the "DEMF OPER" bank account.  
 6. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

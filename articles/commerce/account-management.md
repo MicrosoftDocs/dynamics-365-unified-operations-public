@@ -90,3 +90,6 @@ To join loyalty program, a marketing page can be created with loyalty sign up an
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

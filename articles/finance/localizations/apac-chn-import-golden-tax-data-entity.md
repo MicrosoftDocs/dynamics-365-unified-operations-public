@@ -57,3 +57,6 @@ The following screenshot shows an example mapping visualization for the Chinese 
 
 For more information, see [Golden tax integration export setup](./tasks/golden-tax-integration-export-setup.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

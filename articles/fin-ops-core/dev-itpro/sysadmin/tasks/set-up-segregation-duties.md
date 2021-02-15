@@ -45,3 +45,6 @@ You can set up rules to separate tasks that must be performed by different users
 
 > [!IMPORTANT] 
 > Compliance with the rules for segregation of duties is not verified when you create a rule. You can create a rule that creates a conflict for existing roles. Existing user role assignments can also be in conflict with the new rule. You must validate compliance after you create or modify a rule. For more information, see [Identify and resolve conflicts in segregation of duties](identify-resolve-conflicts-segregation-duties.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

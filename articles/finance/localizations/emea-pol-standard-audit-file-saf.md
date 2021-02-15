@@ -823,3 +823,6 @@ The value of the **WartoscZamowien** tag of the **ZamowienieCtrl** node is calcu
 ## Using batch jobs for SAFT
 
 Generating SAF-T reports for a long period such as month or a quarter can include a huge data and take a long time. For such cases, it is recommended to use batch jobs. Dialog page for every SAF-T report has a **Run in the background** tab. Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. To learn more about batch processing, see [Batch processing overview](../../dev-itpro/sysadmin/batch-processing-overview.md). To review batch jobs or find a generated file, go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

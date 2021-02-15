@@ -234,3 +234,6 @@ You can collect data on demand from the **Environment Discovery** window. We rec
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

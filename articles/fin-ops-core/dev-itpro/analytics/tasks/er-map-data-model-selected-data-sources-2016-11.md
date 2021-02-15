@@ -149,3 +149,6 @@ The following steps explain how a user in the System Administrator or Electronic
 5. Select the completed version of the current configuration.
     * Note that the created configuration is saved as completed version 1.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

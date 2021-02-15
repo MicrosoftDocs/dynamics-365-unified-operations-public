@@ -52,3 +52,6 @@ Legal financial documents, such as tax declarations or electronic invoices submi
     * The system validates the tax registration IDs according to the format specified by tax authorities in Mexico.  
 15. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

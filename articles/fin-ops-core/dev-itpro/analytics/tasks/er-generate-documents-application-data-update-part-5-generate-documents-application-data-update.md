@@ -82,3 +82,6 @@ Review the generated XML file.
 6. Close the page.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

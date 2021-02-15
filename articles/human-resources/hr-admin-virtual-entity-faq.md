@@ -87,3 +87,6 @@ Yes, if the Human Resources table can auto generate number sequences, then it wi
 ### Why doesn't search view work in Power Apps?
 
 If there are no columns added in the quick find view for the table, then the search box does nothing. The workaround is to add one or more columns of the table to the quick find view.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

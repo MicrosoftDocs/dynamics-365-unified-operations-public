@@ -47,3 +47,6 @@ This procedure shows how to change the reporting relationship for an employee. T
 12. In the Reports to position field, enter or select a value.  Example:  000437
 13. Click Save.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

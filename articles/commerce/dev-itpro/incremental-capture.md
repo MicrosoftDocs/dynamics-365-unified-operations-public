@@ -111,3 +111,6 @@ As back-office invoicing processes captures against authorizations that are enab
 Authorizations that are expired according to Accounts receivable parameters aren't eligible for incremental capture. 
 
 The **SupportsMultipleCaptures** property isn't global. It's specific to the authorization. An environment might have both connectors that support incremental capture and connectors that don't support it.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -190,3 +190,6 @@ You can use the **Print of counting act (INV-6)** dialog box to generate a **Cou
 
   ![Printed Counting act (INV-6) report](media/goods-in-transit-vendor-11.png)
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

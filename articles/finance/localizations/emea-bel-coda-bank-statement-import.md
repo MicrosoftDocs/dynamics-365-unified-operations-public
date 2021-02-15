@@ -64,3 +64,6 @@ After processing bank statement transactions is complete, a new general ledger j
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

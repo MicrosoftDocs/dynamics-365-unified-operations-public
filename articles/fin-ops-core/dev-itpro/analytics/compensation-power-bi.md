@@ -75,3 +75,6 @@ The following data is used to fill the reports in the **Compensation** Power BI 
 | Employee Name            | First name, last name, and full name                                                                       | Current Employee, Terminated Employee, Employee Trend |
 | Employee Title           | Title and seniority date                                                                                   | Current Employee, Terminated Employee, Employee Trend |
 | Employee Trend           | Workers over time, headcount, company, and position                                                        | Company, Compensation, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job, Benefits |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

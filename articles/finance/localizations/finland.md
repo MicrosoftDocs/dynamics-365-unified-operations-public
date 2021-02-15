@@ -35,3 +35,6 @@ This topic includes information and links to resources that can help you set up 
 
 - [Sales tax payment report for Finland](emea-fin-sales-tax-payment-report-finland.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

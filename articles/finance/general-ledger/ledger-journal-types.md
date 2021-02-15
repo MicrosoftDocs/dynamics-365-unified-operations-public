@@ -72,3 +72,6 @@ This topic describes the journal types that you can set up for financial journal
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

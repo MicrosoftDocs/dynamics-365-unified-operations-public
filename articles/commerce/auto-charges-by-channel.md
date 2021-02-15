@@ -130,3 +130,6 @@ By selecting **Transaction options \> Charges \> Manage charges** in the POS app
 [Omni-channel advanced auto charges](omni-auto-charges.md)
 
 [Prorate header charges to matching sales lines](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

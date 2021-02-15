@@ -113,3 +113,6 @@ To create parity with Finance and Operations applications, dual-write makes some
 
 For more information about upcoming changes, see [What's new or changed in dual-write](whats-new-dual-write.md).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

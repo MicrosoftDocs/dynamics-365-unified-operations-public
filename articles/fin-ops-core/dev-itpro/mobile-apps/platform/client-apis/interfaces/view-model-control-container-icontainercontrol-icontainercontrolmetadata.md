@@ -168,3 +168,6 @@ String indicating the control type.
 > Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](view-model-control-basecontrol-icontrol-icontrolmetadata.md#type)
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

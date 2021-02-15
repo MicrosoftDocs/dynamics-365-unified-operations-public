@@ -54,3 +54,6 @@ Depreciation without rounding is calculated as 2,444.44. As the following table 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

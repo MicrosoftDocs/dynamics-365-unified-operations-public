@@ -153,3 +153,6 @@ To complete these steps, you must first complete the steps in the "Create a conf
 17. In the **Bank account** field, type `GBSI OPER`.
 18. Select **OK**, then select **OK** again. Review the created worksheet, including details of payment lines as well as totals for each currency code used in this payment message.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

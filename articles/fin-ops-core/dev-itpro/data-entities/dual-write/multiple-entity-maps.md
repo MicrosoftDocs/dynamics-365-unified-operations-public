@@ -43,3 +43,6 @@ As part of enabling multiple table maps, you also get to view the list of all th
 ![Show related table maps](media/show-related-entity-map.png)
  
 To enable the selected table map and all its related tables, select **Run**. If you want to copy the pre-existing data for the selected table maps or its dependents, select the corresponding **Initial sync** check box. Alternatively, remove one or more of the related tables by clearing the corresponding check box. You can also drag and drop the table maps to change the order in which the maps will be synced.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ The settlement will be 100.00, and will include a payment of 99.00 and a discoun
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

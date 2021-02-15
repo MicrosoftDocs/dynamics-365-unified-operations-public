@@ -51,3 +51,6 @@ Through customization, you can change the classification of the following data t
 -  **Account data** – A value provided by or used by the tenant to identify the billing information or identify the software used by the tenant.
 
 -  **Support data** – Information used to provide customer support.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Procurement and sourcing covers all steps from identifying a need for product an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

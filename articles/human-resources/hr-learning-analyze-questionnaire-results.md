@@ -72,3 +72,6 @@ Questionnaire statistics can be used to calculate averages, totals, and percenta
 2. Click Result.
 3. Close the page.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

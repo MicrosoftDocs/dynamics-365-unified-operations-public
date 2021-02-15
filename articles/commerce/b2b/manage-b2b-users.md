@@ -142,3 +142,6 @@ To onboard business partners and users in Commerce headquarters, follow these st
 [Set product quantity limits for B2B e-commerce sites](quantity-limits.md)
 
 [Number sequences overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

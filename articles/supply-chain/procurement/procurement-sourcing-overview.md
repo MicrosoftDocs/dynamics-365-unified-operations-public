@@ -97,3 +97,6 @@ Invoiced purchase orders will record the liability into the vendor account withi
 ## Vendor performance
 
 Performance and review of purchasing is supported through *procurement and account payable reports*, which include spend analysis and vendor performance analysis.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -261,3 +261,6 @@ As of Platform update 11, users can discover currently available shortcuts direc
 
 [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

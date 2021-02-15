@@ -58,3 +58,6 @@ This procedure shows how the benefit eligibility process works. When the process
 25. Open Status column filter.
 26. Sort A to Z
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

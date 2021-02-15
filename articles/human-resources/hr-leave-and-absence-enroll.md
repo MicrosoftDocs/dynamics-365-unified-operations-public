@@ -65,3 +65,5 @@ After you've created a leave and absence plan in Dynamics 365 Human Resources, a
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

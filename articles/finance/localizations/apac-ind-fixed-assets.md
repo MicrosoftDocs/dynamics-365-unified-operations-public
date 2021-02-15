@@ -48,3 +48,6 @@ The topics in this section provide information about fixed assets for India.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -144,3 +144,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![Example](./media/listpage3-1024x671.png)](./media/listpage3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

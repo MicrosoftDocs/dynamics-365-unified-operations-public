@@ -160,3 +160,6 @@ The following illustration shows the effects of the LIFO inventory model when ma
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

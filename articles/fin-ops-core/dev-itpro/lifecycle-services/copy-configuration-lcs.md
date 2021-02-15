@@ -59,3 +59,6 @@ You can create a stored configuration by exporting it from a specified legal ent
 6.  Click **Continue** to import your stored configuration. After a configuration has been created, you can review what it contains.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

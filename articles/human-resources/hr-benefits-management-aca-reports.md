@@ -213,3 +213,6 @@ Coverage information for the employee's dependents is shown.
 
 > [!NOTE]
 > The page shows only benefits plans that are marked as **ACA reportable**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

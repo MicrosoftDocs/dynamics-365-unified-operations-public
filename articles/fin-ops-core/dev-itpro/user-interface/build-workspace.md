@@ -690,3 +690,6 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 
 - [Build the Customer form](build-customer-form.md) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
 - [Build navigation](build-navigation.md) – See this tutorial if you want instructions for adding your workspace to the menu structure.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

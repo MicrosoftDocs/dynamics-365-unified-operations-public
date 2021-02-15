@@ -109,3 +109,6 @@ When you have a report that doesn't match what you would expect in D365, here ar
 2.	Export the report to Excel
 
 You should now be able to copy the data from the FR Excel Report and to the D365 Trial Balance report and compare the “Closing Balance” columns.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

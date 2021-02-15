@@ -142,3 +142,6 @@ After you've completed all your changes, you can build a zip file package and up
 [E-commerce components](ecommerce-components.md)
 
 [Modules overview](modules-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

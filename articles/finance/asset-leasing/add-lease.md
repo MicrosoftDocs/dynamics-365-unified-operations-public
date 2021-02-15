@@ -94,3 +94,6 @@ All journal entries that are created in Asset leasing are contained in the Asset
 
 > [!NOTE]
 > The Asset leasing journal can't be created manually. It's automatically created when lease schedules are created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

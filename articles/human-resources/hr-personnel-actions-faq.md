@@ -102,3 +102,6 @@ For example:
 - The effective date of a **Hire a worker** action is the date that you entered in the **Employment start date** field.
 - The effective date of a **Transfer a worker** action is the date that you entered in the **Assignment start date** field for the worker.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

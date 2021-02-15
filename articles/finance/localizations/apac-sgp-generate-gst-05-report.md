@@ -100,3 +100,6 @@ Follow these steps to generate the tax declaration report.
 
 > [!NOTE]
 > Remember to run the sales tax settlement process to generate the related tax payment.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

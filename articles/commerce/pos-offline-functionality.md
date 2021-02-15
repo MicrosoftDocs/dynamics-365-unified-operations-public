@@ -63,3 +63,6 @@ To enable offline support for a POS device (register), set the **Support offline
 The Commerce scheduler is used to send master data to the offline database. By default, when a distribution schedule is run, data changes are sent to both the channel database and the offline database. Modern POS includes the async sync library, which downloads any available data packages and inserts them into the offline database. If any transactions are created offline, the POS uploads them to the Commerce Scale Unit, so that they can be inserted into the channel database. Offline data synchronization can occur only if Modern POS is running.
 
 [![Offline synchronization](./media/offline-sync-1024x521.png)](./media/offline-sync.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

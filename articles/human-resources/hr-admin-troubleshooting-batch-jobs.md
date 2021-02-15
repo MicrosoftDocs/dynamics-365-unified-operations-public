@@ -70,3 +70,6 @@ The following batch jobs should run at night or after hours. Be sure to check th
 ## Additional resources
 
 [Optimize performance with auto cleanup tasks](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

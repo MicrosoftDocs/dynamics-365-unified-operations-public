@@ -77,3 +77,6 @@ You can also filter calendars by manager or department. The primary position ass
 
 For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

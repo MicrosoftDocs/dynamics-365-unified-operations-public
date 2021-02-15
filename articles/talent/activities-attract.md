@@ -95,3 +95,6 @@ The hiring process template requires the Offer activity. To use the integrated o
 > The integrated Offer Management App is available only with the Comprehensive hiring add-on. For more information, see [Which version of Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

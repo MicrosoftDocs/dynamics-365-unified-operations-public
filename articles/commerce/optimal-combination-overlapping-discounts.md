@@ -87,3 +87,6 @@ To resolve the issue of an exponentially increasing number of combinations that 
 ![Formula for calculating marginal value](./media/overlapping-discount-combo-06.jpg)
 
 After the marginal value of each discount on a shared set of products is calculated, the discounts are applied to the shared products in order, exhaustively, from highest marginal value to lowest marginal value. For this method, all remaining discount possibilities aren't compared every time after a single instance of a discount is applied. Instead, the overlapping discounts are compared one time and then applied in order. No additional comparisons are done. You can configure the threshold to switch to the marginal value method on the **Discount** tab of the **Commerce parameters** page. The acceptable time to calculate the total discount varies across retail industries. However, this time generally falls in the range of tens of milliseconds to one second.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ For more information, see [Sales tax rates based on the Marginal base and Calcul
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -130,3 +130,6 @@ After a product is reported as finished at the production line it is transferred
 -   The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

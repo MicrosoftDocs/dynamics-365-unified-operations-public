@@ -166,3 +166,6 @@ To generate the telematic model for an intent letter, follow these steps.
     > Intent letters that are already included in other models can't be selected.
 
 6. On the Action Pane, select **Export** to generate the **Intent letter telematic model** output file.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

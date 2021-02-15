@@ -104,3 +104,6 @@ The tax register lines show the following information:
    - **Flag**: The amount and currency code, if the funds were withdrawn in a foreign currency. This value is taken from the corresponding source document.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

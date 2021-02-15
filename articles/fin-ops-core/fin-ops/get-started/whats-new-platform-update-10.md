@@ -55,3 +55,6 @@ This feature will make users more productive when using the Excel add-in to crea
 ## Skype support for Human Resources and Retail
 
 Skype integration is now enabled in all applications that have been developed using the cloud platform. While Skype integration has been enabled in the Finance and Operations apps for some time, this feature is also available in other applications, including Human Resources and Retail.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

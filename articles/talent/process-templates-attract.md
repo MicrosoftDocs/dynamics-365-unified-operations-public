@@ -76,3 +76,6 @@ Follow these steps to create a hiring process template.
     - To remove an activity, expand it, and then select the trash can button on the activity header.
 
 8. Select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

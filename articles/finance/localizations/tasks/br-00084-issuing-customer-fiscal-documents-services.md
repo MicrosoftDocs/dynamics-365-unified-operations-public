@@ -54,3 +54,6 @@ You can issue a service fiscal document for a customer who bought services from 
 21. Close the page.
 22. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

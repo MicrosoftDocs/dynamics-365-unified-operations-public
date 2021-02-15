@@ -190,3 +190,6 @@ Follow these steps to generate the tax declaration report.
     * SST for services
 
 6. Select **OK** to confirm your settings and generate the report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -281,3 +281,6 @@ Here in an example of the page mock.
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

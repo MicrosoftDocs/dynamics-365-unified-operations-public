@@ -276,3 +276,6 @@ A forecast reduction key must be assigned to the coverage group of the item. Fol
 ### Reduce a forecast by transactions
 
 When you select **Transactions - reduction key** or **Transactions - dynamic period** as the method for reducing forecast requirements, you can specify which transactions reduce the forecast. On the **Coverage groups** page, on the **Other** FastTab, in the **Reduce forecast by** field, select **All transactions** if all transactions should reduce the forecast or **Orders** if only sales orders should reduce the forecast.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

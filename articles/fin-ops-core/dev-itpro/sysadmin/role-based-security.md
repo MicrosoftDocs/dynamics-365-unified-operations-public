@@ -83,3 +83,6 @@ By default, privileges are provided for all features in Finance and Operations. 
 Each function, such as a form or a service, is accessed through an entry point. Menu items, web content items, and service operations are referred to collectively as entry points. 
 
 In the security model, permissions group the securable objects and access levels that are required to run a function. This includes any tables, fields, forms, or server side methods that are accessed through the entry point.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

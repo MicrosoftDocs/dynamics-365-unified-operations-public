@@ -152,3 +152,6 @@ This section explains how to set up Supply Chain Management to use a TMS engine,
 -   Every time that you change and recompile your ThirdPartyTMSEngines project, you must manually copy the resulting assembly to the binary location or deploy through a deployment package. Otherwise, you might run by using a stale assembly.
 -   After you execute TMS-specific operations inSupply Chain Management, the Internet Information Services (IIS) worker process might lock the ThirdPartyTMSEngines assembly so that the assembly can’t be updated. In this case, restart the w3svc process.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

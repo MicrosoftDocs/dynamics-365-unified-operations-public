@@ -118,3 +118,6 @@ If these classes don't appear as you expected, examine the usage of your binding
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

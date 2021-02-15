@@ -57,3 +57,6 @@ You can specify which documents are active for a specific customer or vendor.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

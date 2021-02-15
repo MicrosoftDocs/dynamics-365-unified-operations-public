@@ -45,3 +45,6 @@ The Database Movement API exposes RESTful endpoints for the following Dynamics 3
 
 * Learn how to set up [authentication](dbmovement-api-authentication.md).
 * Review the [API reference](./v1/dbmovement-api-v1-overview.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

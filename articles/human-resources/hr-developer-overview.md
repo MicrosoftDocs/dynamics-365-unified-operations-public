@@ -67,3 +67,6 @@ This Developer Guide provides an API and custom fields reference. It also provid
 - [What's new or changed in Human Resources](hr-admin-whats-new.md)
 - [Administrator Guide](hr-admin-overview.md)
 - [User Guide](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

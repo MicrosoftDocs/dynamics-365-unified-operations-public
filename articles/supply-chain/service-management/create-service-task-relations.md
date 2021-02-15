@@ -78,3 +78,6 @@ Service task relations that are created on a service order are available on the 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

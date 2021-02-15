@@ -70,3 +70,6 @@ You can enter a CIAP transaction in two ways: post a fiscal document, or enter a
 37. Close the page.
 38. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

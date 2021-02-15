@@ -113,3 +113,6 @@ The only value that is present on Microsoft Excel templates after installation i
 [Extensibility home page](../extensibility/extensibility-home-page.md)
 
 [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

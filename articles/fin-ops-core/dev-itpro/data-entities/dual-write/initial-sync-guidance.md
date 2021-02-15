@@ -297,3 +297,6 @@ For information about known issues, see [Troubleshoot issues during initial sync
 - Position worker assignments (cdm\_positionworkerassignmentmaps)
 - Warehouse locations (msdyn\_inventorylocations)
 - Modes of delivery (msdyn\_shipvias)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

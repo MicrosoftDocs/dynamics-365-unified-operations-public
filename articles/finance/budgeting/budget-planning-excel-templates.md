@@ -135,3 +135,6 @@ You can also create and use pivot tables and charts for additional groupings and
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ This article shows you how to configure types of personal contacts to use in ben
    | **Age** | The maximum age of an eligible personal contact for the benefit plan. This field is only active if you select a relationship. This age is compared with the calculated age of the personal contact. Calculated age is: (Coverage date – personal contact birth date / 365). This number is always an integer. |
 
 4. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

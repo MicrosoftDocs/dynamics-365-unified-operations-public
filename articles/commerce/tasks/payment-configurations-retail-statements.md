@@ -54,3 +54,6 @@ This recording uses the USRT demo company.
     * Select the account to post safe drop amounts into.  
 8. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

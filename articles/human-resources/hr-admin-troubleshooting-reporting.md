@@ -55,3 +55,6 @@ The user can't customize the embedded Microsoft Power BI reports.
 **Long-term solution**
 
 Additional Power BI options will be available, and more data and entities will be part of Dataverse.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

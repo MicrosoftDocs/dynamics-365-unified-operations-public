@@ -146,3 +146,6 @@ The following illustrations show an example of a template mapping in data integr
 
 [Prospect to cash](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

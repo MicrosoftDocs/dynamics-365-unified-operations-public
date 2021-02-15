@@ -70,3 +70,6 @@ After you have made a condition assessment registration on an asset, you can pri
 
 >[!NOTE]
 >You can also register condition assessment on a work order (**Asset management** > **Common** > **Work orders** > **All Work orders** > **Condition assessment** button.)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

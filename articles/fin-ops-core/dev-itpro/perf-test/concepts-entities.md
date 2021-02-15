@@ -296,3 +296,6 @@ public AtlQueryWHSLoadLines lines()
 ## Additional resources
 
 [Queries in the Acceptance test library](concepts-queries.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

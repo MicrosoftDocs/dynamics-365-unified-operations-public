@@ -85,3 +85,6 @@ class Controller extends SrsReportRunController
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

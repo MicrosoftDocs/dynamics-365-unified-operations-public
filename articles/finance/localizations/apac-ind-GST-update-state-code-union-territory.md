@@ -51,3 +51,6 @@ Follow these steps to update the state code and union territory.
 5. Select **Close**.
 
 ![Address setup](media/IND-GST-UpdateState.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

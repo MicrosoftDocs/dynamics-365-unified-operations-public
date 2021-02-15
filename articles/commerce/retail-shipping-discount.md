@@ -51,3 +51,6 @@ When the cashier creates a customer order on POS or the customer places an order
 
 > [!NOTE]
 > Unlike product discounts such as quantity, simple, mix and match, and threshold discounts, the shipping discount does not create discount lines. Instead, the shipping discount edits the shipping charge directly and appends the name of the discount to the charge description. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

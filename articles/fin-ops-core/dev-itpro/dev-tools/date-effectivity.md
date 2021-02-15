@@ -279,3 +279,6 @@ Create a new entity that is named **FMVehicleRateEntity**, and add it to the pro
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

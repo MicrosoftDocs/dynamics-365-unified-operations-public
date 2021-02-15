@@ -57,3 +57,6 @@ This procedure was created using the demo data company JPMF.
     * Confirm the purchase orders  invoiced before the Consolidation date  added  
 3. Click Confirm.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

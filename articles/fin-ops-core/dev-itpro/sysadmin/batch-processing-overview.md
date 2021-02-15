@@ -65,3 +65,6 @@ Administrators and Batch managers can perform common tasks including creating an
 -  [Clean up the batch job history](batch-history-cleanup.md)
 -  [Abort an executing batch job](batch-abort.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Follow these steps to design and configure the elements of a parallel branch.
 ## Additional resources
 
 [Create workflows overview](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

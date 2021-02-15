@@ -56,3 +56,6 @@ For more information about work order lifecycle states and project stages, see [
 8. Select **Save**.
 
 ![Work order types](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -122,3 +122,6 @@ None at this time.
 ### AX 2012 content
 
 [![AX 2012 example](./media/simplelist3.png)](./media/simplelist3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

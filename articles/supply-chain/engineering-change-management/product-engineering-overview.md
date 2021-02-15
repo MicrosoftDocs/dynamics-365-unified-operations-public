@@ -63,3 +63,6 @@ Next, turn on the **Engineering Change Management** configuration key by followi
 1. Go to **System administration \> Setup \> License configuration**.
 1. Expand the **Trade** node, and select the **Engineering Change Management** check box.
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

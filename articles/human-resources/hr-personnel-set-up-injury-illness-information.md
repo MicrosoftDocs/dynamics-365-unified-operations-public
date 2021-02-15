@@ -68,3 +68,6 @@ Employers need to know when their employees suffer injuries or illness resulting
     * Reporting agencies are the agencies that the incident needs to be reported to. Select the default check box for the agency that is the default agency for reporting injury and illnesses to.  
 23. Click Save.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

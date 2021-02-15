@@ -83,3 +83,6 @@ For detailed information about how to configure a map module on a page, see [Sto
 [Manage Bing Maps for your organization](./dev-itpro/manage-bing-maps.md)
 
 [Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

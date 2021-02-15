@@ -70,3 +70,6 @@ After you've completed these steps, you're ready to publish the online store cat
 5.  The CRT records the publishing status for the listing.
 6.  Async Server synchronizes the publishing status of the listing with all other publishing statuses. The status is either **Published** or **Error**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

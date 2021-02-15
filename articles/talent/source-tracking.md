@@ -106,3 +106,6 @@ To avoid negatively impacting the user interface (UI), don't edit or delete the 
 - **Other**
 
 Instead, you can extend the **TalentSource** enum to add other types of sources.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

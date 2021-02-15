@@ -71,3 +71,6 @@ You can record business process flows in Enterprise Portal for Microsoft Dynamic
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

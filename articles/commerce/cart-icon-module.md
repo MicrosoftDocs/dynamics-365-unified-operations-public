@@ -69,3 +69,6 @@ To add a cart icon module, see [Header module](author-header-module.md).
 [Order details module](order-confirmation-module.md)
 
 [Gift card module](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

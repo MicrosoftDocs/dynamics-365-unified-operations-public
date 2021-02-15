@@ -65,3 +65,6 @@ After you've imported the historical demand data, you can generate a demand fore
 
 [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)  
 [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

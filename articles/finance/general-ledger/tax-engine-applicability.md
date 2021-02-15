@@ -182,3 +182,6 @@ Click **Columns**. On the left side, you can find all of the **Available columns
 ![Lookup column](media/gte-tax-document-applicability-change-lookups.png)
 
 Select **Item ID** in **Available columns** to uniquely determine the goods. Click the right-arrow icon to add it to the **Selected columns** side. If HSN is not needed, you can select **HSN Code** in **Selected columns**, and click the left-arrow icon to remove it. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

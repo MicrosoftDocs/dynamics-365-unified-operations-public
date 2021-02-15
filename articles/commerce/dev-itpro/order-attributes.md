@@ -388,3 +388,6 @@ You can find the full sample code in the Retail SDK at Retail SDK\\POS\\Extensio
         return isB2B;
     } } } }
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

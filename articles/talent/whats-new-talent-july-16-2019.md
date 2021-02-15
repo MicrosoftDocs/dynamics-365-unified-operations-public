@@ -145,3 +145,6 @@ Organizations can offer many different types of leave to employees. However, it 
 ### View performance information for direct and extended reports in manager self-service
 
 A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews. In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

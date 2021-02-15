@@ -346,3 +346,6 @@ If you had multiple build branches and environments, just clone the build defini
 [Update code and environments for Retail projects](./updating-environments.md)
 
 [Testing and performance issues](./retail-implementation-testing-performance.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

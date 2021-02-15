@@ -46,3 +46,6 @@ Set up employment types in Dynamics 365 Human Resources to match your workers.
    | **Description** | A description of the employment type. |
 
 4. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

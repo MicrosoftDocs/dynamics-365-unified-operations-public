@@ -170,3 +170,6 @@ Your privacy is important to Microsoft. To learn more, read the [Microsoft Priva
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 payment data use](https://docs.microsoft.com/dynamics365/retail/payment-connector-data-fields)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

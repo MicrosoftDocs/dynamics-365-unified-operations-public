@@ -142,3 +142,6 @@ The previous steps were required so that the Modern POS application can be authe
 
 ### Perform Modern POS device activation
 Try to activate the Modern POS device. If you still experience issues, open Event Viewer in Windows, and view the logs that correspond to Modern POS. Look for warnings and errors that might help you determine which steps you missed in the previous sections.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

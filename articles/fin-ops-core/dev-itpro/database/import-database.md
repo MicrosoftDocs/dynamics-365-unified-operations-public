@@ -62,3 +62,6 @@ If you've used the Admin User Provisioning Tool on your environment to change th
 ## Steps to complete after a database import for environments that use Commerce functionality
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

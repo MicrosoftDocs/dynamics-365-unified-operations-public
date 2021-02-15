@@ -68,3 +68,6 @@ There are two ways to make changes to a methodology. You can append an existing 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

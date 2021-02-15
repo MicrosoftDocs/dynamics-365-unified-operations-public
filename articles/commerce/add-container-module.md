@@ -143,3 +143,6 @@ To add a container player module to a new page and set the required properties, 
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

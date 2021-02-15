@@ -382,3 +382,6 @@ To test localized content, you must use a page mock and change the locale to the
 
 [Create a page container module](create-page-containers.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

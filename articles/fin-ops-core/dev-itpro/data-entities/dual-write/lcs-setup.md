@@ -93,3 +93,6 @@ Follow these steps to set up the dual-write connection.
 > [!NOTE]
 > You can't unlink environments by using LCS. To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

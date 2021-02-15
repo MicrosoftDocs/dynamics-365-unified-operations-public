@@ -158,3 +158,6 @@ You can view whether a released product can be used as a component or subcompone
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
