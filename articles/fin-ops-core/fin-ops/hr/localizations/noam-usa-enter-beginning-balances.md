@@ -172,3 +172,6 @@ It is possible to reverse and reenter transactions. To reverse the transaction, 
 2. Click **Yes** when the message "When you reverse this pay statement, a reversing pay statement will be created to offset this pay statement. Neither pay statement can be edited. Do you want to reverse this pay statement?" displays. 
 
 After you reverse the pay statement, you can generate a new pay statement for the worker from the earnings statement that you created previously. Be sure to fix any incorrect lines on the earnings statement before you generate the new pay statement, and then generate new pay statements with the correct amounts. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ A shipping address module can be added only to a checkout module. For more infor
 [Gift card module](add-giftcard.md)
 
 [Store selector module](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

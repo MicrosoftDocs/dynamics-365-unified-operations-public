@@ -77,3 +77,6 @@ To generate a VAT XML file, on the **Sales tax payments** page, select one or mo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

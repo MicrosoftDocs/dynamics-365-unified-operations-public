@@ -165,3 +165,6 @@ Because ER configurations are shared among companies, you can complete this task
 7. Click OK.
     * The default model-mapping configuration is used by this format configuration for generating the electronic document (the created output contains the company code).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

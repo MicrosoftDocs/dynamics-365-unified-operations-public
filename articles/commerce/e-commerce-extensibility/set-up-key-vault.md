@@ -242,3 +242,6 @@ If you do not configure this file, during local development you may encounter er
 [Configure module properties to be shown based on context](configure-properties-context.md)
 
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

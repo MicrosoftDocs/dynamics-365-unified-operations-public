@@ -50,3 +50,6 @@ This is the third procedure, out of five, that illustrates the vendor payment pr
 10. In the Payment account field, specify the values 'DEMF OPER'.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

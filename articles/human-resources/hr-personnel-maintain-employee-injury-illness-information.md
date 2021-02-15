@@ -96,3 +96,6 @@ This task recording covers the basic steps to creating an injury or illness case
 36. Click Save.
     * The case status can be updated at any time.  Set the case to in process, if the processing of the injury or illness is in process.  Once you close the incident you can only add or remove costs, treatments or filings related to the incident.  To modify other information, reopen the case.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

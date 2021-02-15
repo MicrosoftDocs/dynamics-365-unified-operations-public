@@ -50,3 +50,6 @@ If you have volunteers or other non-employees, you might want to change the name
 ## Additional resources
 
 - [Employee and Manager self-service overview](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

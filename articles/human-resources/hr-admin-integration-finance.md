@@ -260,3 +260,5 @@ The location ID used for worker address isn't part of a number sequence. When in
 The following illustration shows an example of a template mapping in Data Integrator. 
 
 ![Template Mapping](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

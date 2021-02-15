@@ -58,3 +58,6 @@ This procedure shows how to quickly create a new formula by copying from an exis
 3. Click OK.
 4. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

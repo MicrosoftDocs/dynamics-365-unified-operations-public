@@ -64,3 +64,6 @@ For more information about header fragments and modules, see [Header module](aut
 [Header module](author-header-module.md) 
 
 [Cookie compliance](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

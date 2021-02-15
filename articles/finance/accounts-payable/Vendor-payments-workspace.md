@@ -82,3 +82,6 @@ The following table shows the visualizations that are available on each report p
 |    Vendor to customer balance     |                                                                                                                   <ul><li>Vendor to customer balance</li><li>Vendor to customer balance per company</li><li>Vendor to customer balance details</li></ul>                                                                                                                    |
 |    Invoices with payment hold     |                                                                                         <ul><li>Invoices with payment hold</li><li>Invoices with payment hold details</li><li>Invoices with payment hold per company</li><li>Invoices with payment hold per vendor group</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

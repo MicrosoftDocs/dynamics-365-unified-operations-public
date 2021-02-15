@@ -202,3 +202,6 @@ The relative horizontal size of the image.
 Sizes are about equivalent to CSS em sizes.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

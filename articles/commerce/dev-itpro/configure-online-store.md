@@ -68,3 +68,6 @@ The topics listed in the following table help you configure Commerce components 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

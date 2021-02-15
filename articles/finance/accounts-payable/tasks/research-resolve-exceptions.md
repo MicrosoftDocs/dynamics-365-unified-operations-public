@@ -88,3 +88,6 @@ This recording uses the USMF demo company. The accounts payable manager or accou
 24. Close the page.
 25. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ This procedure shows how to create a batch attribute, assign default value range
 22. Click Save.
 23. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

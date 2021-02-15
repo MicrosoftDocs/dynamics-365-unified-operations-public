@@ -49,3 +49,6 @@ Follow these steps to generate maps for data migration.
 4. Under **Setup**, click **Configure and generate maps**.
 5. Verify that the information in the form is correct, and then click **Validate path**.
 6. After validation is completed, click **Generate maps**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

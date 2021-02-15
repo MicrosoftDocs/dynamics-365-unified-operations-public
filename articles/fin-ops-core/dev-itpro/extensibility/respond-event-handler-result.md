@@ -150,3 +150,6 @@ In addition to the previously described practices, the following general guideli
 	    }
 	}
     ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

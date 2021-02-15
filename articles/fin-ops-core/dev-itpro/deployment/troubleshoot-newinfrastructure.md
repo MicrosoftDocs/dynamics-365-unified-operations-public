@@ -77,3 +77,6 @@ The **Activity** tab shows a predefined set of queries for advanced troubleshoot
 > The Environment monitoring will also include advanced SQL troubleshooting tools to diagnose and mitigate performance issues. This feature is currently not available but will be added soon. 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

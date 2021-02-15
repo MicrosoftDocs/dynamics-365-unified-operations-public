@@ -246,3 +246,6 @@ Your format must first be available in the ER configurations. If this prerequisi
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Configure action-dependent ER destinations](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

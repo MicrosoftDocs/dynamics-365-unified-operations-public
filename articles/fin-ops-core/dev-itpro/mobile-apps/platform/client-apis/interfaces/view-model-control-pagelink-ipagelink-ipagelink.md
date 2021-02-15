@@ -231,3 +231,6 @@ showCount(): boolean
 
 #### Returns boolean
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

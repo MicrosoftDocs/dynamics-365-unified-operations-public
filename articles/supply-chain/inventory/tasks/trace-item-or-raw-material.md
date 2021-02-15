@@ -61,3 +61,6 @@ The top node of the tree represents the on hand quantity of the selected item an
 9. Click **Shipped sales orders**.
 10. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

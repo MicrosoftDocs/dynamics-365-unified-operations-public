@@ -124,3 +124,6 @@ This section describes configurations that you should consider when you begin to
 - [Device management implementation guidance](../implementation-considerations-devices.md) 
 - [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) 
 - [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

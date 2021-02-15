@@ -59,3 +59,6 @@ After the data is imported into Cost accounting, you can use it to build various
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ The grid in the lower part of the page shows the debit and credit transactions o
 On the Action Pane, select **Parameters** to set a filter so that the **Invoice/payments** list page shows only specific data.
 
 ![Parameters drop-down dialog box](media/emea-ita-exil-DC-inquiry-parameters.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

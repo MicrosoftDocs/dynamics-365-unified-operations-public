@@ -49,3 +49,6 @@ If you assign a confirming PO code to a purchase order on the **Unplanned purcha
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

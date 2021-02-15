@@ -44,3 +44,5 @@ Manage time-off requests from the **Employee self-service** workspace in Dynamic
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

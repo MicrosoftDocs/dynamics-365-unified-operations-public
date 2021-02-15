@@ -43,3 +43,5 @@ For each organization that offers benefits, you must configure settings for bene
    | **Default email sender address** | The email address to use when sending the confirmation email. |
 
 3. Select **Save**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

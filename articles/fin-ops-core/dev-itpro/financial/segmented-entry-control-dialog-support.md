@@ -80,3 +80,6 @@ This scenario is a simple dialog scenario around Segmented Entry. More advanced 
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

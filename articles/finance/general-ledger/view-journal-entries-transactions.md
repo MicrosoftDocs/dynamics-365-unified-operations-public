@@ -65,3 +65,6 @@ In addition to the financial reports, you can use the following ledger reports t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

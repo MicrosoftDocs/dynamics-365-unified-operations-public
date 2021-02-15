@@ -169,3 +169,5 @@ Performance journal source types describe where the performance journals come fr
 ### Review types
 
 Performance review types help you control the behavior of a review. You can enable or disable workflow for a review. If the review does not use workflow, you can define the default status that will be used when the review is created. You can also decide if the employee, the manager, or both will be required to sign off on the review.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

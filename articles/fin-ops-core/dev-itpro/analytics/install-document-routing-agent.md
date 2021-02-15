@@ -146,3 +146,6 @@ Yes. To access the agent installation links, the user must be part of the **Docu
 ### How many network printers can the Document Routing Agent support?
 
 The number of supported network printers depends on the number of legal entities and the number of network printers deployed. If you have fifty printers and one legal entity, a single Document Routing Agent can handle the load (although you'd want more than one to ensure high availability). If you have a large number of printers and legal entities, we recommend that you do some performance testing to determine the number of Document Routing Agents that you'll need.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

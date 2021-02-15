@@ -216,3 +216,6 @@ The only supported collation for Commerce databases in the cloud is **SQL\_Latin
 ## Additional resources
 
 [Get an evaluation copy](../../dev-itpro/dev-tools/get-evaluation-copy.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

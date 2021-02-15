@@ -49,3 +49,6 @@ This issue might just be a matter of timing. Follow these steps to start the bat
 1. Select **Edit** at the top of the page, and set the scheduled start date/time to a value that will refresh the analytics closer to the current time.
 
 ![Batch jobs](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

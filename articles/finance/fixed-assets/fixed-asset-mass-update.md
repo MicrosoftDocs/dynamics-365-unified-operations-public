@@ -47,3 +47,6 @@ After you update the depreciation convention for assets, you can process depreci
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

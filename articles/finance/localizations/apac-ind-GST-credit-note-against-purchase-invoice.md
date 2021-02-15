@@ -64,3 +64,6 @@ ms.dyn365.ops.version: 10.0.4
 
 > [!NOTE]
 > The general journal also lets you create a purchase credit note that has details of the original invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ You can preview ledger transactions before you post the ledger journal.
 
     > [!NOTE]
     > You can include only journal lines, only transactions, or both journal lines and transactions on the report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

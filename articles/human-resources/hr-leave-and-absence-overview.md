@@ -59,3 +59,6 @@ Your employees can submit time off requests, and you can manage them, in the **E
 [Request time off](hr-employee-self-service-request-time-off.md)
 [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

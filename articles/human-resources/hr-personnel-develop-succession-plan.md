@@ -60,3 +60,6 @@ As your organization grows, you must begin succession planning. During successio
 27. Select **Result**.
 28. Select **Report**. The report lists the best matches at the top of the report. You can see a gap element listed. A gap is the difference between the skill-mapping level and the person's skill level.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

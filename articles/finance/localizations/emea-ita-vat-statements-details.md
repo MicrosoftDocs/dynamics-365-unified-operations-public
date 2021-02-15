@@ -134,3 +134,6 @@ Per Italian legislation, rules apply to settlement periods. For example, after t
 |   <strong>Closed</strong>    | Indicates if the Italian sales tax book for the period has been updated and automatically closed. |
 | <strong>Last period</strong> |             Select this option if the period is the last period in a sales tax year.              |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

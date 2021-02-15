@@ -72,3 +72,6 @@ This procedure shows how to create a production order. The demo data company use
 6. Click Save.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -375,3 +375,6 @@ When a BPM line is deleted, any task guide that was associated with the BPM line
 **Deleted BPM line**
 
 - Move scheduled kanban jobs
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

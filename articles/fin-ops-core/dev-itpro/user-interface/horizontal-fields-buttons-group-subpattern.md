@@ -111,3 +111,6 @@ This section will have answers to frequently asked questions that are related to
 **SalesTable** 
 
 [![Example of form](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

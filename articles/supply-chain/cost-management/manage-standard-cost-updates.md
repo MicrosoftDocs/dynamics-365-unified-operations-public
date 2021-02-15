@@ -54,3 +54,6 @@ Activating a new standard price will typically revaluate the on-hand inventory v
 - **None** – No financial dimensions are posted on the revaluation transactions. If your account structure includes a required financial dimension, the revaluation process will still run, but it will create accounting entries that have no financial dimensions. In this case, users will receive a warning message first, so they can cancel the revaluation if necessary.
 - **Table**  – The financial dimensions of the item are posted on the revaluation transactions. This is the default setting and is consistent with the original system behavior without turning on the feature *Options of defaulting financial dimensions for inventory standard cost revaluation*.
 - **Posting** – The financial dimensions of the transaction that is being revalued are posted on the revaluation transactions. By default, the financial dimensions from the original transaction's inventory account will be used for both the inventory account and the revaluation account.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ The Benchmark SDK lets partners and customers quickly develop managed tests that
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

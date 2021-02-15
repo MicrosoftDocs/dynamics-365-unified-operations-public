@@ -152,3 +152,6 @@ The additional setup pages are organized by functionality.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

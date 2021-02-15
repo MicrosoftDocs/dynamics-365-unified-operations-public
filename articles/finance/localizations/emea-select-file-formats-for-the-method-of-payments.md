@@ -59,3 +59,6 @@ To select file formats that are based on X++ code, complete the following steps.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

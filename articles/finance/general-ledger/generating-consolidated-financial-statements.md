@@ -229,3 +229,6 @@ To get correctly translated amounts when currencies are used, Financial reportin
 For more information about consolidation and currency translations, see the parent topic of this topic, [Financial consolidations and currency translation overview](./financial-consolidations-currency-translation.md).
 
 For more information about how to enter details of consolidations online, see [Online financial consolidations](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

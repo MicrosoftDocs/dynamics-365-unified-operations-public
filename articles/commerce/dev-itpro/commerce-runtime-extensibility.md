@@ -838,3 +838,6 @@ return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelabl
 ```
 
 Likewise, you can read the extension property from all the other entities, such as products, customers, and addresses.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

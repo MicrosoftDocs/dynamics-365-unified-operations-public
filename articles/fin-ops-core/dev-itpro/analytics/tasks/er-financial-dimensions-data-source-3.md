@@ -148,3 +148,6 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 46. Close the page.
 ![ER Operations designer page](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

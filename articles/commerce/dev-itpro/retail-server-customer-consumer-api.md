@@ -697,3 +697,6 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetEntityByKey | string scannedText | ScanResult   | Employee                 | Gets the ScanResult entity by key. |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

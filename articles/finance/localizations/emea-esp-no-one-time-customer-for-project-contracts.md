@@ -50,3 +50,6 @@ A one-time customer is a customer who does not have a long-term relationship wit
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

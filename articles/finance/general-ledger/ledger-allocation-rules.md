@@ -55,3 +55,6 @@ Each allocation rule has four components: general, source, destination, and offs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Process life event changes in Microsoft Dynamics 365 Human Resources for two lif
    4. Select **OK**. The process will run with the parameters you set.
 
 4. Select **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

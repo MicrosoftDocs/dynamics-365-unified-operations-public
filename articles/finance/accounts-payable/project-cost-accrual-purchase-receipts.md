@@ -87,3 +87,6 @@ The vendor invoice will remain in a pending state until the actual vendor invoic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

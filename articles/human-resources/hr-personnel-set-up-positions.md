@@ -70,3 +70,6 @@ Positions are an important element of the lower level of an organization hierarc
 30. In the Department field, enter or select a value.
 31. Click Save.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

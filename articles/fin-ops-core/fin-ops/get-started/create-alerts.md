@@ -107,3 +107,6 @@ You can't create alerts for some secondary data sources on forms. For example, w
 	```
 2. Create an alert from the SysTableBrowser form.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

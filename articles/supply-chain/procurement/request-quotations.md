@@ -435,3 +435,6 @@ rejected on the RFQ case header and line.
 | Accept one of the bids. (or at least one line) |                          Received                           |                           Accepted                           |                    Received                    |                    Accepted                     |                   Received                   |                   Accepted                    |
 |           Reject all the other bids.           |                          Rejected                           |                           Accepted                           |                    Rejected                    |                    Accepted                     |                   Rejected                   |                   Accepted                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

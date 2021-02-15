@@ -65,3 +65,6 @@ Follow these steps to make the **Delivery terms** field mandatory by using the w
 The **Delivery terms** field is now marked as **Mandatory**, as shown in the following illustration.
 
 ![Delivery terms field is marked as mandatory](media/workspace-api/MarkFieldAsMandatoryFinal.png)
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

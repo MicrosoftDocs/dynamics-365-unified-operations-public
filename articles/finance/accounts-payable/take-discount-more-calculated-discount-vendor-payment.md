@@ -55,3 +55,6 @@ April posts the payment journal. The invoice is fully settled by using a payment
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

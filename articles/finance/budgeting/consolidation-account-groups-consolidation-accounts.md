@@ -58,3 +58,6 @@ For more information, see [Create consolidation groups and additional consolidat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

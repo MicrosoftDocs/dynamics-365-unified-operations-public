@@ -147,3 +147,6 @@ To configure the store selector module to show available stores for a store loca
 [Bing Maps REST APIs](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Maps module](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

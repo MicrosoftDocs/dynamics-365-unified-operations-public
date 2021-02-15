@@ -85,3 +85,6 @@ You can enable employees to buy and sell leave by creating a buy and sell leave 
 [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)</br>
 [Buy and sell leave](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

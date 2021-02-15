@@ -86,3 +86,6 @@ This procedure was created using the demo data company FRSI. This functionality 
     * Enter the legal type of the legal entity, such as non-profit organization, manufacturing company, or financial institution.  
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

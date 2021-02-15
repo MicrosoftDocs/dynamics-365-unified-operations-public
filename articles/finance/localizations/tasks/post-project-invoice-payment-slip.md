@@ -99,3 +99,6 @@ This procedure was created using the demo data company DEMF.
 56. Click OK.
 57. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

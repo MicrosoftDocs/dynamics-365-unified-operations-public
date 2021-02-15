@@ -77,3 +77,6 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
    | **End** | The end date and time the tile should be available. |
 
 4. Select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

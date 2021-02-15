@@ -70,3 +70,6 @@ A new Dataverse solution will be available soon with the following changes:
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

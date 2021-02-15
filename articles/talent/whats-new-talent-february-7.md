@@ -67,3 +67,6 @@ When changing the job on a position, **Job family** will now default based on th
 
 ### Performance improvements when rendering workspaces
 Analytics tabs on workspaces will now load only when accessing those pages. An indicator will display during the initial rendering of the page in the upper-left corner of the page.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

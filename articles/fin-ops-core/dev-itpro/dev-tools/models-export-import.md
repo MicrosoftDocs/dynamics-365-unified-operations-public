@@ -79,3 +79,6 @@ If you install a model on a development environment that contains customizations
     [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
 
 4. Open the designer for the conflicting element to view and resolve conflicts by using the tools that are provided. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

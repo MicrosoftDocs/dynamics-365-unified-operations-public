@@ -43,3 +43,6 @@ The charges for a manufactured item are always included in the item's unit cost 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

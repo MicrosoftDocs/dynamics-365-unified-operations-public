@@ -70,3 +70,6 @@ Enable change tracking for Data entity projects.
 ### Projects (Supply Chain Management to Field Service): Projects
 
 [![Template mapping in Data integration](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

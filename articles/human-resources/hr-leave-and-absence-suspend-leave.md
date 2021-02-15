@@ -54,3 +54,6 @@ If accruals are processed while the employee's leave is suspended, no accrual wi
 - [Configure leave and absence types](hr-leave-and-absence-types.md)
 - [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

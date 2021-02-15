@@ -51,3 +51,6 @@ This task guide steps through generating ledger accrual transactions that are ba
 17. Click OK.
 18. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

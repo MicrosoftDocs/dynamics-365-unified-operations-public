@@ -77,3 +77,6 @@ If an e-Commerce site feature or module uses a non-essential cookie, a site user
 [Cookie consent module](cookie-consent-module.md) 
  
 [Header module](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

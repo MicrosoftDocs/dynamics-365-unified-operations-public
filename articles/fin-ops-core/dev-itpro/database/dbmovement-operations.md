@@ -63,3 +63,6 @@ The Database Movement application programming interface (API) lets you integrate
 * [Throttling](./api/dbmovement-api-throttling.md)
 * [Reference](./api/v1/dbmovement-api-v1-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

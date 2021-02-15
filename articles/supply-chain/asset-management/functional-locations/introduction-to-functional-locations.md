@@ -87,3 +87,6 @@ The buttons on the Action Pane are organized on tabs. The following table briefl
 | Faults                              | Open the **Asset faults** page, where you can view a list of asset fault registrations that are related to the selected functional location. |
 | Update functional location state    | Update the stage of the selected functional location.                                                                                        |
 | Lifecycle state log                 | View a log that shows the stages of the selected functional location.                                                                        |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

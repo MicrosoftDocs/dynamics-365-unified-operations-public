@@ -48,3 +48,6 @@ Commitments are budget control source documents used by public sector entities i
 14. Click Line view.
 15. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

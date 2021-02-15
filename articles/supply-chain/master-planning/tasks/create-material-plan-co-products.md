@@ -113,3 +113,6 @@ The production planner plans the material requirements for items that are formul
 19. Select No in the Disable all planning processes field.
 20. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

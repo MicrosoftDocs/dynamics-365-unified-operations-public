@@ -146,3 +146,6 @@ We prefer that you contact Support following the steps in [Open a new incident](
 
 - [Premier phone support](https://support.microsoft.com/premier/contacts)
 - [Broad commercial phone support](https://docs.microsoft.com/dynamics/s-e/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

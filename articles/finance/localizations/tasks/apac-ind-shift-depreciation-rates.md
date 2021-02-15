@@ -46,3 +46,6 @@ This procedure walks you through defining shift depreciation rates. You can defi
 13. In the Triple shift percentage field, enter a number.
 14. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

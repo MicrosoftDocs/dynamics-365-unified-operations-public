@@ -59,3 +59,6 @@ This topic shows you how to create purchasing policies to align with your busine
 4. Select **Close**.
 - Now you can set up other policy rules for the purchasing policy. Note that a Policy rule type cannot have overlapping rules that are active at the same time within a single procurement policy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

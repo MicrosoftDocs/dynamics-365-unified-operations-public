@@ -76,3 +76,6 @@ This procedure shows how to find obsolete released products or product variants 
 
 8. In the list, find and select the desired record.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

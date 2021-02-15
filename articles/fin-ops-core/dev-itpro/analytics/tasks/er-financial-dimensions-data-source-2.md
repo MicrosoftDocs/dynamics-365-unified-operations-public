@@ -150,3 +150,6 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 4. Click Complete.
 5. Click OK.
 ![ER model mapping designer page](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

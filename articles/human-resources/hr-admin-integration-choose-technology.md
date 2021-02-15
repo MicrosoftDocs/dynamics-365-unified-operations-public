@@ -164,3 +164,6 @@ With so many different integration technologies available, deciding on which int
 <sup>2</sup>Microsoft is investing heavily in increasing data coverage for Dataverse tables. We recommend using Dataverse when coverage is available. Currently, Dataverse data coverage is low, compared to DMF and OData-enabled entities.
 
 <sup>3</sup>SQL database can be accessed programmatically.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ This task will show you how to create benefit elements which will be used when c
 6. In the Effective field, enter a date and time.
 7. Click Create benefit.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

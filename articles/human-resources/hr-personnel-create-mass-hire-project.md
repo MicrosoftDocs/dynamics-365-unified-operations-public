@@ -51,3 +51,6 @@ This procedure walks through the process of setting up a mass hire project. A re
     * Optionally, select the Department for the new positions.  
 13. Click OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

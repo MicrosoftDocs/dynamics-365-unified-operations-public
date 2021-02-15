@@ -126,3 +126,6 @@ The following steps explain how a user in the System Administrator or Electronic
 
 > [!NOTE]
 > The same file has been imported as the format design now consider the 'id' attribute for the 'document' element as optional.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

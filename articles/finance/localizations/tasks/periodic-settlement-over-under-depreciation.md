@@ -77,3 +77,6 @@ This task uses the JPMF demo company data.
     * Verify that the correct result is created.  
 13. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

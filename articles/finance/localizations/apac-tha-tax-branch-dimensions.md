@@ -116,3 +116,6 @@ Use the **Sites** page to create one or more sites, and to assign a tax branch t
 5. On the **Tax branch** FastTab, in the **Tax branch** field, select the tax branch code.
 
 6. On the **Addresses** FastTab, select **Add**, and then, in the **New address** dialog box, enter the address details.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

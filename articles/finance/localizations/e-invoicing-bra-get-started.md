@@ -140,3 +140,6 @@ Enabling the BR-00053 (NF-e Federal) and the BR-00095 (NFS-e - Brazilian service
 - [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
 - [Get started with Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md)
 - [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

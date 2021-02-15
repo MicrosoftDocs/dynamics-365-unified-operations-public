@@ -97,3 +97,6 @@ This procedure was created using the demo data company 'USMF' with a primary leg
 7. Select or clear the Post and settle GST check box.
 8. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

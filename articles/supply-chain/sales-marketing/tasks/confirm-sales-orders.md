@@ -66,3 +66,6 @@ This procedure demonstrates how to confirm sales orders. You'll be shown how to 
 11. Click **OK**.
 12. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

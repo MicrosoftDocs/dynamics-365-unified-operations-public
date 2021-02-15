@@ -434,3 +434,6 @@ These methods have been refactored to support extensibility.
 The following additional changes have been made for extensibility.
 
 - Updated aging and balance list classes and forms to support the ability for customizations to increase the number of calculated aging buckets. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

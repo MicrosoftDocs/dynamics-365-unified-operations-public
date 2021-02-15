@@ -54,3 +54,6 @@ Warehouses | msdyn_warehouses |
 
 [!include [warehouses](includes/InventWarehouseEntity-msdyn-warehouse.md)]
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

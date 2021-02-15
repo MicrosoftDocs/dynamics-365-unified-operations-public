@@ -85,3 +85,6 @@ To add a tab module to a page and set the properties, follow these steps.
 [Accordion module](add-accordion.md)
 
 [Text block module](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

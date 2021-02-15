@@ -126,3 +126,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![List Panel example](./media/listpanel4.png)](./media/listpanel4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

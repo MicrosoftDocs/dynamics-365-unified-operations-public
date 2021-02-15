@@ -201,3 +201,6 @@ You can set up the test case so that it isn't run unless it has a status of **Re
 ### Signoffs
 
 When your test run is complete, RSAT can create sign-off work items in Azure DevOps. Select the **Sign-off tasks** check box. Then set the type of work item that should be created for each person who signs off. You can select the **Functional**, **IT Manager**, or **Team Manager** role for sign-offs, and then specify appropriate email addresses. Work items will then be created in Azure DevOps and assigned to owners for approval.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

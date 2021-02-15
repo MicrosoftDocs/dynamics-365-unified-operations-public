@@ -92,3 +92,6 @@ You can upload an image of your company's logo and other information as a brande
     ![Adding links to your company's privacy policy and terms of use for the email footer](./media/attract-admin-email-footer.png)
 
 4. Select **Save** to save your email template settings.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

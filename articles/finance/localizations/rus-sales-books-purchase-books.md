@@ -162,3 +162,6 @@ On the **General ledger parameters** page, on the **Sales tax** tab, on the **Ta
 4. Set the **Date of reporting** option to **Yes** to filter factures by reporting date instead of facture date.
 5. Set the **Create XML file** option to **Yes** to create an electronic XML report in addition to the Excel report.
 6. Select **OK** to print facture accounting journals for the selected period.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

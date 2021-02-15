@@ -99,3 +99,5 @@ Please don't include personal data (any information that could identify you) in 
 
 - [What's new in Human Resources](hr-admin-whats-new.md)
 - [Dynamics 365 and Power Platform Release Plan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

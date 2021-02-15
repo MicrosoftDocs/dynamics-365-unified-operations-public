@@ -51,3 +51,6 @@ Dynamics 365 Commerce sites are best supported by the following web browsers. To
 [Manage robots.txt files](manage-robots-txt-files.md)
 
 [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

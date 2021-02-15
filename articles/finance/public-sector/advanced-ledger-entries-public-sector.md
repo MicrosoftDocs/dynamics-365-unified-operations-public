@@ -53,3 +53,6 @@ Create an advanced ledger entry, select the **Reversing entry** option, and ente
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

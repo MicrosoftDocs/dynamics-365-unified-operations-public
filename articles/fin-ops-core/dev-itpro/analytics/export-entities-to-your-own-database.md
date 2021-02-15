@@ -224,3 +224,6 @@ OLE DB Destination failed the pre-execute phase and returned error code 0xC02020
 
 **Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

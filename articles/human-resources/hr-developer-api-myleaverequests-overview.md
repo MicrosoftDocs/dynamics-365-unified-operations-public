@@ -69,3 +69,5 @@ The MyLeaveRequests entity in Microsoft Dynamics 365 Human Resources provides th
 
 - [Submit a leave request to workflow](hr-developer-api-myleaverequests-submit.md)
 - [Authentication](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

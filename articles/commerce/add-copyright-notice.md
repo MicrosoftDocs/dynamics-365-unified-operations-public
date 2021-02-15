@@ -80,3 +80,6 @@ The footer that contains the copyright notice automatically appears at the botto
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

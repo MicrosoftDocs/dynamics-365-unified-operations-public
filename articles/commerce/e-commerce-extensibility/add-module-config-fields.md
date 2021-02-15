@@ -408,3 +408,6 @@ export default (props: IProductFeatureViewProps) => {
 [Create a page container module](create-page-containers.md)
 
 [Localize a module](localize-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

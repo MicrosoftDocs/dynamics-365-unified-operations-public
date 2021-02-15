@@ -50,3 +50,6 @@ This topic describes how depreciation batch proposals work and explains how to p
 3. Select **Lines**.
 4. Select **Post**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

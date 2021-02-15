@@ -95,3 +95,6 @@ This topic describes the process of creating a requisition. It shows you differe
 6. Close the page.
 7. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

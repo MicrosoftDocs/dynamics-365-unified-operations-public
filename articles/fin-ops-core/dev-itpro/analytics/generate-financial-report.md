@@ -161,3 +161,6 @@ When you run a missing account analysis, the following keyboard shortcuts are av
 [Financial reporting](financial-reporting-intro.md)
 
 [Report Designer interface](report-designer-interface.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

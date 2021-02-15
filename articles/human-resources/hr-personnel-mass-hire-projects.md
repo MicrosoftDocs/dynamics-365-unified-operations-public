@@ -87,3 +87,6 @@ On the **Mass hire project** page, click **Open project** or **Close project** t
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -111,3 +111,6 @@ Select the document types that should be available for printing attachments rela
 ## The Number sequences tab
 
 Select the required number sequences in this section. There are two number sequences for assets: one for manually created assets and one for assets created through pending assets.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

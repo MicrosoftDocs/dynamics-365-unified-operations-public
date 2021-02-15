@@ -58,3 +58,6 @@ You want to create a service interval of 10 days.
 ## Related topics
 
 [Service intervals](service-intervals.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

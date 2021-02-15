@@ -73,3 +73,6 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 After you complete these steps, you can extend the inventory on-hand by site and inventory on-hand by warehouse data entities by adding the new fields. In this way, you ensure that the extended fields are recognized and included during data migration that uses those data entities.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

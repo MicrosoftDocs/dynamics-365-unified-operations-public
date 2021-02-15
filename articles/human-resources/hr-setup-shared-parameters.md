@@ -50,3 +50,6 @@ On the **Positions** tab, indicate whether new positions are available for assig
 
 -   **Always** – You can assign workers to new positions when positions are created. When positions are created, the **Available for assignment** date and time on the **General** tab of the **Position** page are automatically set to the creation date and time.
 -   **Never** – You can't assign workers to new positions when positions are created. If you select this option, you must open the **Position** page for each new position as it becomes available, and then, on the **General** tab, enter the **Available for assignment** date to enable worker assignment.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

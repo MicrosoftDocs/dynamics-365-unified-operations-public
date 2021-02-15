@@ -100,3 +100,6 @@ The Data Management Framework (DMF) table HcmPersonalContactPersonEntity has bee
 ## Known issue
 - **Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. 
 - **Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed. If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled. (This issue will be fixed in the next platform update.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

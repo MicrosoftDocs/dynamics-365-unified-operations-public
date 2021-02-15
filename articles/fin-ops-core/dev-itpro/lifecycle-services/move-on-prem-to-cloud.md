@@ -190,3 +190,6 @@ Document handling attachments for Finance + Operations (on-premises) environment
     ```
 
 5. Test a sample of the document handling attachments to make sure that they can now be accessed in the sandbox environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

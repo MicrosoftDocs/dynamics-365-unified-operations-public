@@ -139,3 +139,6 @@ You can only initiate data source values of the *User input parameter* type that
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Parse incoming documents](er-parse-incoming-documents.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

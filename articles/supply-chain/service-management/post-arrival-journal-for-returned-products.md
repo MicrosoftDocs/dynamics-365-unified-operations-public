@@ -62,3 +62,6 @@ After the journal is posted, the returned items are registered in inventory, and
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

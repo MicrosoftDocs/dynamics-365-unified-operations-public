@@ -457,3 +457,6 @@ The following table lists APIs exposed to perform store operations-related funct
 | BankDropOperationRequest                 |  Bank drop request.   |        10.0.14        |
 | DeclareStartAmountOperationRequest        |   Declare start amount request.       |          10.0.14        |
 | GetAllDiscountsServiceRequest        | Gets the discount applicable for the current cart.  | 10.0.16 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

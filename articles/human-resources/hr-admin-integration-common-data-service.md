@@ -131,3 +131,6 @@ To run a full synchronization on a table between Human Resources and Dataverse:
 [Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)<br>
 [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

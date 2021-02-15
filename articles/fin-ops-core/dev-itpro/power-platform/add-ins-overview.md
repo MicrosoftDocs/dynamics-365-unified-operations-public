@@ -92,3 +92,6 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
     ![Dual-write setup failure](media/Error.png)
 
 - Provisioning of the Dataverse environment might sometimes fail because of capacity and licensing issues. In these cases, sign in to the Power Platform admin center, and fix the issues. Then, in the **Power Platform integration** section of the **Environment details** page in LCS, select **Resume**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

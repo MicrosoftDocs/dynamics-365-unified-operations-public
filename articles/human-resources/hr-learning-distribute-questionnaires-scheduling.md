@@ -133,3 +133,6 @@ Questionnaire scheduling allows you to plan and distribute questionnaires to mul
 2. Click End.
 3. Click OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

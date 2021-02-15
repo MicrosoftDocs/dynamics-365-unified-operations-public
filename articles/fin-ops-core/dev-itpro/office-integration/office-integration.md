@@ -132,3 +132,6 @@ Open the Document Parameters form and ensure that the SharePoint server has been
 [Troubleshoot the Office integration](office-integration-troubleshooting.md)
 
 [Application stack and server architecture](../dev-tools/application-stack-server-architecture.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

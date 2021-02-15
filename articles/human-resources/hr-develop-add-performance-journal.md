@@ -59,3 +59,6 @@ The performance journal holds information that relates to how you met your goals
 20. In the Description field, enter 'Thanks for all the help at the conference!'.
 21. Click Send.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

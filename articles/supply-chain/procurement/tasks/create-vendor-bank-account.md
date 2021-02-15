@@ -60,3 +60,6 @@ This procedure shows you how to create a bank account for a vendor. You can use 
 25. In the **Bank account** field, select the account that you've just created.
 26. Click **Save**. The address may be inherited from the bank group, if one is specified, or you can add it here.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ You define the scope of the rule within the policy. For example, if you create a
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -220,3 +220,6 @@ You need the following information before you start. Keep the information handy 
 
 The system installs and configures the data lake for the environment. After installation and configuration are complete, you should see **Azure Data Lake** listed on the **Environment** page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

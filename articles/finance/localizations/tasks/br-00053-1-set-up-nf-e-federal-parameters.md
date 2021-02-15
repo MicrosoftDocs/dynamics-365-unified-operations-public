@@ -104,3 +104,6 @@ You can set up Nota Fiscal eletrônica (NF-e) web services, rejection codes, and
 64. Close the page.
 65. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ The user must be added to the Environment Maker role for the environment in Micr
     ![Sync button](media/get-more.png)
 
     After synchronization is completed, Human Resources will appear on the home page.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

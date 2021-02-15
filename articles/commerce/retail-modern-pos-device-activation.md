@@ -358,3 +358,6 @@ On a single-computer system, such as a developer topology or a demo environment,
 ## Additional resources
 
 [Install the POS layout designer](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

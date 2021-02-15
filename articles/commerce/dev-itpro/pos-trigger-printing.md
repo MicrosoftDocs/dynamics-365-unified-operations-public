@@ -723,3 +723,6 @@ This section explains how to override the existing CRT request to print a receip
 2. After the POS starts, sign in to POS and add an item to a transaction.
 3. Suspend the transaction.
 4. The custom receipt should print.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

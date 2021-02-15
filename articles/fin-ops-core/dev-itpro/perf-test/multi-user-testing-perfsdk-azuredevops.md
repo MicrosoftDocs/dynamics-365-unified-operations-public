@@ -105,3 +105,6 @@ To switch multi-user testing between the local test controller and Azure DevOps,
 ## Troubleshooting
 
 For information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide for single-user or multi-user testing with the Performance SDK](troubleshoot-perf-sdk-user-testing.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

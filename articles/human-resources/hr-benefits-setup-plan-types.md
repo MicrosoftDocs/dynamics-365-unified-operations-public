@@ -68,3 +68,6 @@ A plan type may define coverage options. The coverage options are defined in the
    | **Reporting window** | Specifies the reporting window, in days, of the life event. **Note**: If you don't enter an amount, the system assumes the reporting window to be zero and won't process the life event. |
 
 5. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

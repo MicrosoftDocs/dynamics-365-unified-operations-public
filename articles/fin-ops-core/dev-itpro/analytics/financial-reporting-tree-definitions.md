@@ -225,3 +225,6 @@ The following examples show possible information that is used in a reporting tre
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

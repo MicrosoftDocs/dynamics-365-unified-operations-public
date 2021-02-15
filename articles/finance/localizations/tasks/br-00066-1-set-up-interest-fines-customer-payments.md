@@ -81,3 +81,6 @@ Use this procedure to set up interest and fines on customer payments. This task 
 48. Close the page.
 49. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

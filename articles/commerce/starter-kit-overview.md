@@ -67,3 +67,6 @@ The following types of modules are provided in the module library:
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

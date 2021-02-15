@@ -93,3 +93,6 @@ You can choose from the following life events when you create a life event type:
 | **Eligibility rule override expiration (not US-specific)** | Human resources advanced > Benefits > Plans > Benefits > Eligibility rule override | Using Life event change processing. For example, if you edit a plan’s eligibility rule override expiration date to be today at 5:00 pm, anytime after 5:00 pm or the following days, and then run Life event change processing, a message appears saying that the eligibility rule override has expired. |
 | **New benefit plan (not US-specific)** | Human resources advanced > Benefits > Plans > New | <ul><li>Eligibility options are added to a current plan</li><li>A new plan with eligibility options attached is added</li></ul></br></br>HR personnel should run Life event eligibility processing in this instance. |
 | **Eligibility rule change (not US-specific)** | Human resources advanced > Benefits > Rules/options > Eligibility rules | Using Life event eligibility processing. Logged when **EhrBenefitEligibilityRule** records have the following values changed: **UseEmplCategory**, **UseEmplStatus**, or **UseEmplType**. Only updates life event transactions that already exist for a changed rule or eligibility criteria. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

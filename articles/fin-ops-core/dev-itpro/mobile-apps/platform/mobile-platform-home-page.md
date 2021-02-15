@@ -229,3 +229,6 @@ Avoid using forms with these patterns and controls when creating workspace recor
     - Recorded forms should not have FastTabs because the FastTabs expansion state can interfere with playback.
 - Any user interface (UI) that has state, like an expandable or hide/show region.
 - There is no check box in mobile. You have to manually bind the field to a Yes/No enum in JavaScript.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

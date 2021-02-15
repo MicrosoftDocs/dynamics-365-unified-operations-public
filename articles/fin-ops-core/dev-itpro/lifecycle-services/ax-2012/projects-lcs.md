@@ -51,3 +51,6 @@ When you have LCS opened, you have a view on recent projects. Click the option '
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

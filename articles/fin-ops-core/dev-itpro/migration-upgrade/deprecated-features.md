@@ -1379,3 +1379,6 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 |     <strong>Product areas affected</strong>     |                                              General ledger                                              |
 |             <strong>Status</strong>             |                                      Removed as of Dynamics AX 2012                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

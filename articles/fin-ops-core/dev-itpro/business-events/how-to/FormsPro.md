@@ -65,3 +65,6 @@ If you haven't used Forms Pro before, you should first read the [Forms Pro docum
     As users fill in the survey and submit it, Forms Pro shows some analytics.
 
     ![Survey analytics in Forms Pro](../../media/Forms_Pro2.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

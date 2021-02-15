@@ -64,3 +64,6 @@ The **JsonField** data source contains the following data in JSON format: **{"Bu
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

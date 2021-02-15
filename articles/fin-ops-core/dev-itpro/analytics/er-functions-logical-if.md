@@ -74,3 +74,6 @@ If the first value and the second value are values of the *Container (record)* o
 ## Additional resources
 
 [Logical functions](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ The X++ language programming guide is divided into these sections:
 + [X++ and C# Comparison](xpp-cs-comparison.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

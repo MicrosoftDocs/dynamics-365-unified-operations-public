@@ -131,3 +131,6 @@ If a fixed asset is registered after it's put into operation, depreciation is ca
 
 - [Depreciation methods (Russia)](rus-depreciation-methods.md)
 - [Calculate depreciation for Russia](rus-depreciation-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

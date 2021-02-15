@@ -41,3 +41,6 @@ This procedure shows how to add a new calculation to a product configuration mod
 4. Click Close.
 5. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

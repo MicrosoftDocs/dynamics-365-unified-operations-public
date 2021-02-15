@@ -223,3 +223,6 @@ In the table designer for FMTCustomer, you now add several fields to the table.
 5. On the **Models** tab, click **Build**.
 6. Click **Close**  in the dialog box.
 7. On the **Window** menu, click **Close All Documents**, to close all open documents.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

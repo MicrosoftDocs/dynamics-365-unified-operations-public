@@ -88,3 +88,6 @@ The following table shows the tax entries that are generated in various scenario
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

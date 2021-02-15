@@ -68,3 +68,6 @@ This procedure walks through creating a new online channel and adding it to the 
 3. Run the 1070 distribution schedule to sync changes to the channel database. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

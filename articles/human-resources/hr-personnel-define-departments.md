@@ -55,3 +55,6 @@ Departments are operating units that represent a functional area of a business, 
 16. In the Describe changes field, type a value.
 17. Click Publish.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ For more information about ER destinations, see [Electronic reporting destinatio
 
 > [!NOTE]
 > The **Forced electronic invoices generation** feature isn't applicable to Italy. Italian electronic invoices depend only on the existence of related ER destinations. They always disregard printing options that are used during invoice posting.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

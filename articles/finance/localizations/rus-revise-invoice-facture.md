@@ -255,3 +255,6 @@ Use the **Revise header** button to correct the header fields of the facture.
 
     Select **Print** \> **Copy** to print the original facture.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

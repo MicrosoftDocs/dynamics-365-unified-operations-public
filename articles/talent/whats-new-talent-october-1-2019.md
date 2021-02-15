@@ -87,3 +87,6 @@ In this week's build, the description will display when selecting the job in the
 ### Print performance reviews
 
 Employees, managers, and HR professionals will be able to print an employee's performance review.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

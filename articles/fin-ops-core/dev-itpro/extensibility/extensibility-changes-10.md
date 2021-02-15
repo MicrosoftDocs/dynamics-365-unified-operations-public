@@ -434,3 +434,6 @@ The following additional changes have been made for extensibility.
 
 - Convert queries where InventSumFields is used to SysDa.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

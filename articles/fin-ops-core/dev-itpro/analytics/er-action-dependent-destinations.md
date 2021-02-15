@@ -134,3 +134,6 @@ The following list of business documents are controlled by the feature, **Route 
 [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 
 [Electronic reporting framework API changes for Application update 10.0.17](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

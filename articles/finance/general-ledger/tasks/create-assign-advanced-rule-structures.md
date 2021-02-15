@@ -61,3 +61,6 @@ This topic explains how to create and assign an advanced rule structure to an ac
 17. Close the page.
 18. Select **Activate**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

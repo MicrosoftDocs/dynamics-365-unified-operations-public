@@ -59,3 +59,6 @@ This procedure shows you how to register items using the item arrival journal wh
 2. Click Product receipt.
 3. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

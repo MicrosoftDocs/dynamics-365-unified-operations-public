@@ -57,3 +57,6 @@ This procedure was created using the demo data company JPMF.
 6. In the list, select JBA Payment file (JP).
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

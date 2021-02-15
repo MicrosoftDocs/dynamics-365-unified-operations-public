@@ -63,3 +63,6 @@ You can download the scripts to run these reports from [fin-ops-doc-scripts](htt
 ## Additional resources
 
 [Data entities overview](data-entities.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

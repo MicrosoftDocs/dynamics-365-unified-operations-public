@@ -96,3 +96,6 @@ The ability to track employee time off and understand how time off is calculated
 ### Indicate instance type when provisioning Talent
 
 When provisioning a new instance of Talent, you will be able to indicate whether the instance type is **Production** or **Sandbox**, allowing for early testing of new features. All existing Talent instances will be updated to the Production instance type. If you want one of your existing instances to be updated to the Sandbox instance type, please contact Support to initiate the change request.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

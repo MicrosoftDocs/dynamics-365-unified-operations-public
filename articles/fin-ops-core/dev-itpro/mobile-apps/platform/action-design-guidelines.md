@@ -116,3 +116,5 @@ function main(metadataService, dataService, cacheService, $q) {
     }; 
 }
 ```
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

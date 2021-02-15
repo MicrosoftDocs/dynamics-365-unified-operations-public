@@ -118,3 +118,6 @@ You can't assign a fixed compensation plan to an employee until you define eligi
 
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

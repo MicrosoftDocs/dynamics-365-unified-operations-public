@@ -48,3 +48,6 @@ After a recruiter has created a mass hire project and generated the positions, t
 8. In the list, unmark the selected row.
     * Select the next project position and continue entering the worker information for each person that you're hiring.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

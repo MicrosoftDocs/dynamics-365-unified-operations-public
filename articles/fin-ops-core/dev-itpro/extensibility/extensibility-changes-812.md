@@ -375,3 +375,6 @@ The following table lists additional changes that have been made for extensibili
 - Enable percent controlled for a catch weight item.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

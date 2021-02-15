@@ -173,3 +173,6 @@ The example scenario requires that you prepare two location profiles.
 
 > [!NOTE]
 > The location fields are updated only by warehouse transactions. If you move inventory by using a journal or other non-WHS processes, the fields won't be updated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

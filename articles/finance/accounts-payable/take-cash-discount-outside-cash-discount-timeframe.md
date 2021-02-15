@@ -95,3 +95,6 @@ Discount information appears at the bottom of the **Settle open transactions** p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Before kanban jobs can be created and activities can be processed for a producti
 5. Click Activate.
 6. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

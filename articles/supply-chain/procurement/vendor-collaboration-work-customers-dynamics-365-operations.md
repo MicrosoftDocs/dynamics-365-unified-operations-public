@@ -151,3 +151,6 @@ The accessible information is the vendor name, addresses, contact information, c
 ## Additional resources
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

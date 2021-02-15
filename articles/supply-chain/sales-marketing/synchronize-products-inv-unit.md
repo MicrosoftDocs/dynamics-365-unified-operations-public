@@ -66,3 +66,6 @@ The following illustrations show the template mapping in Data integration.
 ### Field Service Products with Inventory unit (Supply Chain Management to Field Service): Products
 
 [![Template mapping in Data integration](./media/FSProduct1.png)](./media/FSProduct1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

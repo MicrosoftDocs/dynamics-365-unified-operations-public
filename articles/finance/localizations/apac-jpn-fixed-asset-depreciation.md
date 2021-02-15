@@ -160,3 +160,6 @@ The depreciation rate schedule that you import depends on the type of depreciati
 - [Propose special depreciation](./tasks/propose-special-depreciation.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

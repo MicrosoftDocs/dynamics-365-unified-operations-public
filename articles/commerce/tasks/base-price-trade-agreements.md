@@ -71,3 +71,6 @@ This procedure walks through creating channel-specific sales price trade agreeme
 38. On the **Action Pane**, click Sell.
 39. Click **Sales price**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

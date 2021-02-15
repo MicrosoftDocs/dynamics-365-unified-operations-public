@@ -117,3 +117,6 @@ The following table describes the saved views available for the Warehouse manage
 | All waves | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for wave processing |
 | Load planning workbench | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the work planning workbench |
 | Work details | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the work details page |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

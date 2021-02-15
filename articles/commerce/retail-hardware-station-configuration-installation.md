@@ -211,3 +211,6 @@ You can use Control Panel in Microsoft Windows to uninstall Retail hardware stat
 2. In Control Panel, select **Programs** &gt; **Uninstall a program**. The **Programs and Features** window opens.
 3. Select **Microsoft Dynamics 365 for Retail hardware station**, and then select **Uninstall** above the list of programs.
 4. Wait for the uninstaller to finish removing the program.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

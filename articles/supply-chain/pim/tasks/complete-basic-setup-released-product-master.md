@@ -55,3 +55,6 @@ This is the third procedure out of eight which explains how to build combination
 20. Close the page.
 21. Close the **Released product details** form.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

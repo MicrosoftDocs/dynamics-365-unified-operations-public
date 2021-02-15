@@ -87,3 +87,6 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 - [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)
 - [Suspend leave](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

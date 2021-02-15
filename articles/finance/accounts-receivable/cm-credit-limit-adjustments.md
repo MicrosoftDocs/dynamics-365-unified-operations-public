@@ -131,3 +131,6 @@ The **Credit limit adjustments** workflows can be used to send credit limit adju
 
 > [!NOTE]
 > When you create the **Credit limit adjustments** workflow, you can set it up so that the adjustments are automatically posted after the lines are approved. Just include the **Post Journal automatically** task in the workflow.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

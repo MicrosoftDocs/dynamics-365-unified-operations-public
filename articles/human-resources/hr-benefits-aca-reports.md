@@ -93,3 +93,6 @@ If you need to report covered individuals because you provide self-insured cover
 
 > [!NOTE]
 > Only benefit plans marked as **ACA reportable** display in the inquiry window.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

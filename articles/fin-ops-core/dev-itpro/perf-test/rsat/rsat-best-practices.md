@@ -118,3 +118,6 @@ As of RSAT version 1.210, this process is easier. To automatically fix all occur
 desired test cases in the grid, and then select **Resolve test case ID mismatch** in the **New** menu.
 
 ![Resolving a mismatch](media/resolve-test-case-id-mismatch.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

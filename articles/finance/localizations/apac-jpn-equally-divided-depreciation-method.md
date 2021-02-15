@@ -109,3 +109,6 @@ No. If you selected an equally divided depreciation profile on the **Books** pag
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

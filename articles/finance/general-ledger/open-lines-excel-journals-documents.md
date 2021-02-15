@@ -59,3 +59,6 @@ To add financial dimensions to a template, additional changes are required. For 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

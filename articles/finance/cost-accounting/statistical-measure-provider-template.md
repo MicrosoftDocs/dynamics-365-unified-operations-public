@@ -349,3 +349,6 @@ If the Electricity predefined dimension member allocation basis is assigned as a
 ## Additional resources
 
 [Allocation bases](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

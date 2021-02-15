@@ -76,3 +76,6 @@ The purchase order must be confirmed before the product receipt can be processed
 6. Collapse the **Lines** section.
 7. Select **OK** to post the receipt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ The site selector module can be added to the [Header module](author-header-modul
 [Breadcrumb module](add-breadcrumb.md)
 
 [Navigation menu module](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

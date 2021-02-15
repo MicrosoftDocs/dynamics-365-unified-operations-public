@@ -92,3 +92,6 @@ The 125% reducing balance method divides 125 percent by the service life years.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

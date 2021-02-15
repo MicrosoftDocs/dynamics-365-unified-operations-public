@@ -122,3 +122,6 @@ If you plan to use this approach for a large amount of transactional data, you m
 [FIRSTORNULL ER function](er-functions-list-firstornull.md)
 
 [WHERE ER function](er-functions-list-where.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

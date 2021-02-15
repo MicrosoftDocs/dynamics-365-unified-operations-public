@@ -59,3 +59,6 @@ This week's changes correct an issue where calendar days couldn't be generated.
 ### Current balance report in leave PBI doubles employee balance (385581)
 
 This change corrects the current balance report in this scenario.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -108,3 +108,6 @@ To change the URL path, follow these steps.
 [Crop images](dam-crop-images.md)
 
 [Customize image focal points](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

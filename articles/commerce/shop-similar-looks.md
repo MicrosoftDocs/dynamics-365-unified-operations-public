@@ -119,3 +119,6 @@ The following illustration shows the **Enable Shop Similar Looks Link** check bo
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

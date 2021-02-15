@@ -60,3 +60,6 @@ This task creates a bank facility agreement to process a letter of guarantee. Th
 5. Click Save.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

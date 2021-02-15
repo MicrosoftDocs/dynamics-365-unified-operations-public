@@ -49,3 +49,6 @@ For more information, see [Acquire assets through procurement](acquire-assets-pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

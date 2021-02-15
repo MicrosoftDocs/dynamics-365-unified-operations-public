@@ -122,3 +122,6 @@ In a similar way, if you're mocking data for a custom module, you can add new mo
 [Add custom resources to your customization code](add-custom-resources.md)
 
 [Configure a development .env file](configure-env-file.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -148,3 +148,6 @@ In this example, you will create a configuration and upload it into LCS for a sa
     The ER configuration that you uploaded should be listed.
 
     Note that the uploaded LCS configuration can be imported into another instance if providers have access to this LCS project.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

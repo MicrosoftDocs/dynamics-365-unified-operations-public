@@ -146,3 +146,6 @@ April posts the payment journal and reviews the vendor transactions on the **Ven
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

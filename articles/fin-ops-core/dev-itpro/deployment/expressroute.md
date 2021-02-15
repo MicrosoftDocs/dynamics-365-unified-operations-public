@@ -48,3 +48,6 @@ This information is necessary to determine whether a standard or premium offerin
 - [ExpressRoute technical overview](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)
 - [ExpressRoute partners and peering locations](https://azure.microsoft.com/documentation/articles/expressroute-locations/)
 - [ExpressRoute pricing](https://azure.microsoft.com/pricing/details/expressroute/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

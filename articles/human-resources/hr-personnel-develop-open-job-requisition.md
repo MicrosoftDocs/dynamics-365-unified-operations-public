@@ -70,3 +70,5 @@ Recruitment projects help you manage your recruiting process. After creating a r
 32. Select **Recruitment project status**.
 33. Select **Start**. The **Started** status means that the project is ready to receive applications.  
 34. Select **OK**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

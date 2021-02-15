@@ -63,3 +63,6 @@ To get started, review the following topic on configuring the Commerce Scale Uni
 
 [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

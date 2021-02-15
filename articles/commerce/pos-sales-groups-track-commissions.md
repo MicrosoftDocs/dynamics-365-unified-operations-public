@@ -92,3 +92,6 @@ POS allows users to configure button grids, which are included in screen layouts
 ## Calculating commissions
 
 Commission is calculated for the workers in the specified sales groups at the time of statement posting or sales order posting. The commission amount is determined based on the worker's commission share, as defined in the sales group and the associated commission calculation settings for the customer and/or products on the transaction.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

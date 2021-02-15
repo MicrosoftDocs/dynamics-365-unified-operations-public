@@ -118,3 +118,6 @@ The following tables will be enabled for custom columns in Dataverse:
 - **Leave type**
 - **Worker bank account**
 - **Work calendar**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

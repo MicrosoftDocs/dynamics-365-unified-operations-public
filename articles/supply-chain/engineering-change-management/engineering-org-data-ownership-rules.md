@@ -70,3 +70,6 @@ Because the engineering company owns the engineering-relevant data, it controls 
 
     - When these documents are released to other legal entities, the documents are protected from being removed by the operational company.
     - Other legal entities can add completely new, local documents. The operational company owns and maintains these local documents.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

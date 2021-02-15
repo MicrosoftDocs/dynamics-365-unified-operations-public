@@ -48,3 +48,6 @@ To generate an audit log of users who have used the system, follow these steps.
 8. To export the records and keep them for a longer period, select **Export grid**.
 
 To help guarantee a complete audit trail, an IT administrator must complete this procedure every seven days.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

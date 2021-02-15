@@ -69,3 +69,6 @@ Commerce Data Exchange: Real-time Service is an integrated service that provides
 [![Real-time Service](./media/rts.png)](./media/rts.png) 
 
 A predefined Real-time Service profile is created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ The resulting text value.
 ## Additional resources
 
 [Other (business domain–specific) functions](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

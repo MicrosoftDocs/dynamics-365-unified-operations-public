@@ -430,3 +430,6 @@ To resolve this, change the binding information in the affected template so that
 14. Rename the zip file as needed, for example rename the file 2015-05-25-FleetCustomersWithLocations.zip.
 15. Change the zip file extension to .xlsx.
 16. Re-publish the workbook .xlsx file, if needed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

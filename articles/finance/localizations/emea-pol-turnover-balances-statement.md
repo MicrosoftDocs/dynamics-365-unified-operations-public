@@ -46,3 +46,6 @@ The standard way to calculate the account balance is to include the difference i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

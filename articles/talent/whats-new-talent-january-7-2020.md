@@ -56,3 +56,6 @@ This change adds a delete option in the **Workers without employment** form. Wor
 5. Set the **Delete** permission to Grant.
 6. Select the **Unpublished objects** tab.
 7. Select **Publish all**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

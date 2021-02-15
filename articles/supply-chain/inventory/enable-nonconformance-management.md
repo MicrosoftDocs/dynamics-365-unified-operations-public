@@ -58,3 +58,6 @@ Additional resources
 [Quality management processes](quality-management-processes.md)
 
 [Set up prerequisites for nonconformance management](tasks/set-up-prerequisites-nonconformance-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

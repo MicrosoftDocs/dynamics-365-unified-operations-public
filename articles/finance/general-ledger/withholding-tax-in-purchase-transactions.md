@@ -81,3 +81,6 @@ Withholding tax is calculated on **Vendor payment journal**. You can manually ad
 The derived withholding tax amount will be deducted from the vendor payment and posted to the **Withholding tax account** in a related voucher.
 
 ![Withholding tax account showing a related voucher](media/withholding-tax-adjusted.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

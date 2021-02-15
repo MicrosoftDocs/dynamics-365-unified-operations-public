@@ -147,3 +147,6 @@ Additional resources
 --------
 
 [Install and configure the warehouse app overview](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

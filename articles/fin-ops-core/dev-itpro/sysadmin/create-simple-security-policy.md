@@ -100,3 +100,6 @@ This topic explains how to create a simple security policy that secures access t
 
 10.  As a final step, it is required that you build and synchronize the solution 
     to activate the policy.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

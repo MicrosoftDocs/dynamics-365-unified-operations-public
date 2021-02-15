@@ -210,3 +210,6 @@ The WPF RichTxt control has a flag that tries to format text according the first
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ This procedure is intended for users who have the System administrator or Electr
     * Some labels that are presented in the preprinted cheque form will be included in the report when it's created for testing purposes. However, those labels won't be printed during real printing, because the preprinted form already includes them.  
 15. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

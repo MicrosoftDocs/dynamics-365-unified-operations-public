@@ -64,3 +64,6 @@ This task was created using the demo data company JPMF.
     * Enter the cost of the inventory item.  
 9. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

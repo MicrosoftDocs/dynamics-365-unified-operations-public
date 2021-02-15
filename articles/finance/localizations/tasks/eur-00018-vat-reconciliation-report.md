@@ -43,3 +43,6 @@ This procedure shows how to generate the tax reconciliation report that is avail
 6. Select Yes in the Show details field.
 7. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

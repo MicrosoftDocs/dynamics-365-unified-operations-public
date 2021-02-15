@@ -150,3 +150,6 @@ This procedure uses the USMF demo company.
     * Verify the posted journal entries.  
 16. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

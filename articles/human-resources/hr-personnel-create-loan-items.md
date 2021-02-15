@@ -62,3 +62,6 @@ Loan items are records that help you track physical items, such as phones or com
 14. Click OK.
 15. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

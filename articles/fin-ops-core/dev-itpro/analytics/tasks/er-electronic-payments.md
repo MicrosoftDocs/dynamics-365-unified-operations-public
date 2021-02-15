@@ -84,3 +84,6 @@ To complete these steps, you must first complete the steps in the "Create a conf
 25. Click OK.
     * Analyze the created payment file in XML format. Compare it with the designed document layout and defined payment transaction attributes.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

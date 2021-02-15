@@ -112,3 +112,6 @@ For information about the various way to find pages, see the "Searching for page
 ## Additional resources
 
 [Customize field descriptions](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

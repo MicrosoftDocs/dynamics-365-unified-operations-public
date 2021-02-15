@@ -65,3 +65,6 @@ This topic walks through setting up a continuity program (otherwise known as reo
     * When this item is sold in a call center, additional business logic is applied from the selected continuity program.  
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ This procedure is created for users with the assigned role of system administrat
  30. Select Yes in the Allow prenote creation on inactive bank accounts: field.  
  31. Click Save.  
  32. Close the page.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ After you submit the checklist, your FastTrack Solution Architect will review th
 ## See also
 
 [Go-live FAQ](hr-admin-go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

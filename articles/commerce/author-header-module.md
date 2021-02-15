@@ -121,3 +121,6 @@ To help ensure that a header appears on every page, follow these steps on every 
 [Site selector module](site-selector.md)
 
 [Store selector module](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

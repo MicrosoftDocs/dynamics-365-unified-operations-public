@@ -179,3 +179,6 @@ When this method of calculation is used in a partial return scenario, if the cha
 [Omni-channel advanced auto charges](omni-auto-charges.md)
 
 [Enable and configure auto charges by channel](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

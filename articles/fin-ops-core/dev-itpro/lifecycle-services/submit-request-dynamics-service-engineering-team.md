@@ -134,3 +134,6 @@ Here are some typical examples of service requests that will be denied:
 |                                | Production | IP safe list rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

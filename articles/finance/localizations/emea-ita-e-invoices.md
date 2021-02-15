@@ -280,3 +280,6 @@ If a required document type isn't covered by the values in the preceding list, y
 - Invoice document type registration
 
 For more information, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

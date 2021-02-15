@@ -53,3 +53,6 @@ Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a ne
    4. Select **OK**. The process will run with the parameters you set.
 
 4. Select **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

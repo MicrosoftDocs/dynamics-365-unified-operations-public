@@ -49,3 +49,6 @@ This procedure shows you how to create a scoring method. A scoring method is a s
 14. In the Range from field, enter a number.
 15. In the Range to field, enter a number.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

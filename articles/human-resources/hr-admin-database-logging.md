@@ -93,3 +93,6 @@ To set up database log cleanup, follow these steps:
    - Created date and time
 
 3. Use the **Database log cleanup** tab to determine when to run the log cleanup task. By default, database logs are available for 30 days.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

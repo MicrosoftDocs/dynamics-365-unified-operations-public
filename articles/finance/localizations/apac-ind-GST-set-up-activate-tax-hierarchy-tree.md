@@ -83,3 +83,6 @@ ms.dyn365.ops.version: 10.0.4
 6. Select **Save**, and then select **Close**.
 
 ![GST minor code page](media/Annotation-2019-05-15-151254.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

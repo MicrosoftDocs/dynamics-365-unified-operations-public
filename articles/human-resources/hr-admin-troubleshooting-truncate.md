@@ -111,3 +111,6 @@ Based on the fields that you selected to include in the diagram, each node shows
 **Additional option**
 
 In Human Resources, you might also be able to use the **People** workspace to view some hierarchy-related information.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

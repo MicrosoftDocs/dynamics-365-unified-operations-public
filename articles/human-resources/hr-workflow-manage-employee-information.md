@@ -79,3 +79,6 @@ To configure a basic workflow that is started when employees request changes to 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

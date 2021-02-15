@@ -60,3 +60,6 @@ This will prompt the system to create a quarantine order, and the person or depa
 
 [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

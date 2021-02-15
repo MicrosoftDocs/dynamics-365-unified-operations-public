@@ -46,3 +46,6 @@ Dynamics 365 Human Resources uses tier codes with benefit rates that are paid by
    | **Description** | A description of the benefit tier code. |
 
 4. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

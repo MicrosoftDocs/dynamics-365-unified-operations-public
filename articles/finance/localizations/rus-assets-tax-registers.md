@@ -460,3 +460,6 @@ Data from the **Depreciation bonus recovery** register is included in the **Inco
     | The naming of object of the account | Depreciation bonus recovery for FA \# 4031                                  |
     | Income amount                       | 60,000.00                                                                   |
     | CTL amount                          | 12,000.00                                                                   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

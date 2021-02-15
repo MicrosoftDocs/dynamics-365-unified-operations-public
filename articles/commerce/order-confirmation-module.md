@@ -89,3 +89,6 @@ To add an order confirmation module to a new page and set the required propertie
 [Pickup information module](pickup-info-module.md)
 
 [Gift card module](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

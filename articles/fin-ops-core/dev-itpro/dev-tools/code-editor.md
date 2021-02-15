@@ -54,3 +54,6 @@ You can open the element designer that corresponds to the current X++ source cod
 [Develop and customize home page](developer-home-page.md)
 
 [Development tools in Visual Studio](development-tools-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

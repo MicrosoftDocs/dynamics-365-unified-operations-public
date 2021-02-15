@@ -58,3 +58,6 @@ This is the first of six tasks that demonstrate the process of generating e-invo
 17. Click Import.
 18. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ If you have enabled the **Extended lookup of ER format configurations allowing t
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) framework API](er-apis-app73.md)
 - [Manage Electronic reporting (ER) configurations lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

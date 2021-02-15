@@ -45,3 +45,6 @@ In the Sistema Publico de Escrituração Digital (SPED) fiscal text file, record
 12. In the **Main account** field, specify the desired values.
 13. Select **Save** and then close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

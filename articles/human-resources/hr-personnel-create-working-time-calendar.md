@@ -46,3 +46,6 @@ Calendars describe the capacity and working times of operations resources. This 
 12. Select **OK**.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -241,3 +241,6 @@ static void sleepExample(Args _arg)
     print "job slept for " + int2str(i/1000) + " seconds";
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

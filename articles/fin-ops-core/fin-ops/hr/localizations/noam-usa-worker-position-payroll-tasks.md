@@ -236,3 +236,6 @@ The following tables show the information that you must enter on the **Payroll l
 [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 
 [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

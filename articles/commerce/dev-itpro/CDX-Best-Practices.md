@@ -73,3 +73,6 @@ The following should be performed after every update to the Dynamics 365 environ
 - [Device management implementation guidance](../implementation-considerations-devices.md) 
 - [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) 
 - [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

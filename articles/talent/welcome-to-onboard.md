@@ -32,3 +32,6 @@ ms.dyn365.ops.version: Talent October 2018 update
 # Welcome to Onboard
 
 [!include [banner](includes/banner.md)]
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

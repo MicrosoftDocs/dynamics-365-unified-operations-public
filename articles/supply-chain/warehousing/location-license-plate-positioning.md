@@ -283,3 +283,6 @@ Now that the *Location license plate positioning* feature has been set up, and t
     ![Position 1 location](media/LocationLicensePlatePositioning.png "Position 1 location")
 
 1. Enter the license plate ID that you created for the location, and then follow the prompts to pick the sales order.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

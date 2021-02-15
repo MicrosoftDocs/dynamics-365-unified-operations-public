@@ -325,3 +325,6 @@ In Brazil, you must specify the accountant details for tax reporting in the mont
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

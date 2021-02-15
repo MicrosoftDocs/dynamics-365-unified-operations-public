@@ -388,3 +388,6 @@ Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Ca
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Configure leave and absence types](hr-leave-and-absence-types.md)
 - [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

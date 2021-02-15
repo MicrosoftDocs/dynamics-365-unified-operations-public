@@ -109,3 +109,6 @@ Use the following guidance when determining which Power Apps environment to depl
 ## Grant access to the environment
 
 By default, the global administrator who created the environment has access to it. However, additional application users must be explicitly granted access. To grant access, you need to add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Talent must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users.  Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -214,3 +214,6 @@ The **Sales VAT** report includes transactions that sales VAT is realized for. I
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

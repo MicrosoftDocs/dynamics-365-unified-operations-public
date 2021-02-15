@@ -73,3 +73,6 @@ The **Vendor invoice entry** workspace lets you focus on vendor invoices that di
 
 ## Vendor invoice automation - Resume automation processing for multiple invoices
 When an imported invoice isn’t submitted successfully to workflow through the automated process, the system will remove it from further automated processing. An accounts payable clerk can review and edit the invoice before the automated process resubmits it to workflow. When a failure reason can be resolved by the same fix for multiple invoices, you can restart the automated process on the **Resume automated invoice processing** page. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

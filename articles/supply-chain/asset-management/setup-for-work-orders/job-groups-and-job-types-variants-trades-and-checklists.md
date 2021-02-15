@@ -271,3 +271,6 @@ In Asset Management, you can automatically update any changes to maintenance job
 2. In the **Update maintenance job type forecast** dialog box, on the **Records to include** FastTab, you can add selections for specific maintenance job types as you require. Select **Filter**, and then select **Select** to make the selections.
 3. On the **Run in the background** FastTab, you can set up the automatic update as a batch job, as you require.
 4. Select **OK** to start the forecast update.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

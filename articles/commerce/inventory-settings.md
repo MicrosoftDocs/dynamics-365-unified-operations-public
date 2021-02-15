@@ -96,3 +96,6 @@ The following image shows an example of a cart that is showing an in-stock ("Ava
 [Store selector module](store-selector.md)
 
 [SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

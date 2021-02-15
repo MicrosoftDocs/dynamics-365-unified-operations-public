@@ -155,3 +155,6 @@ This behavior is enforced for all consumers – X++, OData, and so on.
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

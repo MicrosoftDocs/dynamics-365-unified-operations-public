@@ -176,3 +176,6 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 6. In the list, click the link in the selected row.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

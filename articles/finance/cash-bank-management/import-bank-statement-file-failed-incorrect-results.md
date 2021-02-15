@@ -113,3 +113,6 @@ The following table lists examples of the technical layout definitions for advan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

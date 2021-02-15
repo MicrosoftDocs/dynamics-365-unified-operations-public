@@ -70,3 +70,6 @@ When the **Employee self-service** workspace is selected as the initial startup 
 
 ### Termination reason code updates position assignment record
 The termination reason code will now update the position assignment when terminating an employee and ending the position. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

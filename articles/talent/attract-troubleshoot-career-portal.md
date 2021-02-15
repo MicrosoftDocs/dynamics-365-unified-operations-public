@@ -75,3 +75,5 @@ Assign the Talent user role to the Talent Relationship Team.
 
    1. Sign in to the career portal from a new browser window.
    2. Apply for the job from the career portal. 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

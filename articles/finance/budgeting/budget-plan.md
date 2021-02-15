@@ -250,3 +250,6 @@ C. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning co
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -450,3 +450,6 @@ Add the custom fields to receipt profiles.
 ### Enable searching customers by tax registration numbers in POS
 
 To enable searching customers by tax registration numbers in POS, on the **POS search criteria** tab of the **Commerce parameters** page, add a record on the **Customer search criteria** fast-tab and select **Tax registration number** in the **Customer search criteria** drop-down list. Select the **Display as shortcut** checkbox while keeping the **Can be refined** checkbox clear. Run the 1110 job on the **Distribution schedules** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

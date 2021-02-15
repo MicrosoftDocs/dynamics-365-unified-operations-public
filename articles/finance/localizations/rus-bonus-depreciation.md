@@ -80,3 +80,6 @@ Use the **All customers** page to affiliate a customer with an intercompany. If 
 - [Set up depreciation (Russia)](rus-depreciation-setup.md)
 - [Depreciation methods (Russia)](rus-depreciation-methods.md)
 - [Calculate depreciation for Russia](rus-depreciation-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

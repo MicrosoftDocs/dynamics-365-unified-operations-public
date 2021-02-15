@@ -68,3 +68,6 @@ You can now assign the load building strategy to a load building template. Alter
 1. Review the proposed loads and proposed load lines.
 1. On the Action Pane, select **Create loads** to create loads that are based on the source document lines on the **Proposed load lines** FastTab.
 1. Close the **Load building workbench** page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
