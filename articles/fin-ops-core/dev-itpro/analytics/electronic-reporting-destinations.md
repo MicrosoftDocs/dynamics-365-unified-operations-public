@@ -175,9 +175,6 @@ The PDF conversion option can be turned on only for file components that are use
 
 ### Limitations
 
-> [!NOTE]
-> This feature is a preview feature and is subject to the terms of use that are described in [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
-
 The PDF conversion option is available only for cloud deployments.
 
 The PDF document that is produced is limited to a maximum length of 300 pages.
