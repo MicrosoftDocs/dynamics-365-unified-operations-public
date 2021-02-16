@@ -23,7 +23,7 @@ ms.custom: 60373
 ms.assetid: 0fa10573-8146-446e-8124-8a7af9546add
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
