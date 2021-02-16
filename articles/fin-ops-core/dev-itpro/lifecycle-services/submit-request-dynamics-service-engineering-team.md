@@ -78,7 +78,7 @@ There are two ways to create a service request: automatically and on demand.
     > [!IMPORTANT]
     > If your scheduled time overlaps with a [planned maintenance window](./planned-maintenance-window-faq.md), you will receive the following warning message. 
     >
-    > ![MaintenanceConflict](./media/MaintenanceConflict.png)
+    > ![Warning message that explains the maintenance conflict](./media/MaintenanceConflict.png)
     >
     > If you choose to continue deploying the package, the package deployment operation will be rolled-back in the event of conflict, as planned maintenance takes priority.
     >
