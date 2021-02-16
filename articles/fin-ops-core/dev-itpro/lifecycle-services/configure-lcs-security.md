@@ -5,7 +5,7 @@ title: Configure Lifecycle Services (LCS) security
 description: This topic explains how security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level.
 author: AngelMarshall
 manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,16 +62,6 @@ Only an administrator can manage users. Follow these steps.
 > [!NOTE]
 > For implementation projects, you can select the implementation role for the invited user. If you set **Allow FastTrack to contact** to **Yes**, then Microsoft FastTrack team may reach out to you based on your implementation role and the stages of the implementation project.   
 
-## Working with CustomerSource and PartnerSource
-The information in this section is intended to help you access CustomerSource or PartnerSource.
-
-### Signing in to CustomerSource or PartnerSource
-
-Visit the [CustomerSource sign-in page](https://docs.microsoft.com/dynamics/s-e/), and enter the user name and password for your Microsoft account (previously known as Windows Live ID) to access the site. If you don't have access to your organization’s CustomerSource account, follow the steps on the [How to sign in to CustomerSource](https://docs.microsoft.com/dynamics/s-e/northamerica/news-events/news-events/news/NeedAccesstoCustomerSource) page.
-
-### Determining the administrator for your organization in CustomerSource or PartnerSource
-
-If you don’t know your CustomerSource administrator, or if your organization doesn’t have a CustomerSource administrator, send an email to [itmbssup@microsoft.com](mailto:itmbssup@microsoft.com) for assistance.
 
 ## Configuring project security
 You can invite users from inside or outside your organization to join your project as users. The following table describes the roles that are available for users.
