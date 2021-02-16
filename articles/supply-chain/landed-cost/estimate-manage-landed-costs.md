@@ -173,10 +173,7 @@ To run the periodic task, follow these steps.
 1. Select **OK** to run the task.
 
 > [!NOTE]
-> This periodic task can be run only if the following information is entered:
+> This periodic task will only execute successfully provided the following information is available:
 >
-> - Released products \> Gross depth
-> - Released products \> Gross width
-> - Released products \> Gross height
-> - Released products \> Default vendor
-> - Vendor \> From port
+> - Each relevant product must have a **Gross depth**, **Gross width**, and **Gross height** defined.
+> - Each relevant vendor must have a **From port** defined.

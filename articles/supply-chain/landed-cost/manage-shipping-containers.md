@@ -82,7 +82,7 @@ The upper part of the shipping container details page shows shipping container a
 
 | Button | Description |
 |---|---|
-| New | Create a voyage. For more information about the voyage creation process, see the scenario documentation. |
+| New | Create a voyage. <!-- KFM: For more information about the voyage creation process, see the scenario documentation. --> |
 | Delete | Delete a voyage. Only voyages that have a status of *Confirmed* can be deleted. After a voyage has begun the goods-in-transit process, it can no longer be deleted. |
 | Voyage costs | View or add voyage costs to all the goods in the shipping container. Voyage costs that are manually added on the shipping container page apply only to the items in the shipping container, not to the whole voyage. Therefore, users can add shipping container–level costs to a voyage if they were missed during auto cost creation. All voyage costs that are associated with the shipping container will be shown, regardless of the cost code type definition. |
 
@@ -99,7 +99,7 @@ The upper part of the shipping container details page shows shipping container a
 | Find auto costs | <p>Find relevant voyage costs for the shipping container. If the voyage costs have already been found or updated, you receive the following message: "Un-invoiced cost lines exist. Do you want to overwrite them?"</p><p>**Note:** Voyage costs that are attached to a shipping container and that have been invoiced won't be overwritten.</p> |
 | Create arrival journal | You can generate an arrival journal for organizations by using advanced warehouse features. The options are _Initialize quantity_ (recommended), and either _Create from goods in transit_ or _Create from purchase orders_. The last two options depend on whether goods-in-transit processing is being used. |
 | Accrue costs | You can accrue costs where a cost type has a ledger account specified for the debit. This button is typically used when the stock is in transit, or when goods have been received and invoiced. |
-| Rename | |
+| Rename | Select this button to open a dialog box where you can rename a selected shipping container. |
 | Change journey template | Change the journey template. After you change the journey template, you might have to select **Find auto costs** or manually add costs again, because the shipment costs will be deleted. |
 
 ### Buttons on the General tab
@@ -109,11 +109,11 @@ The upper part of the shipping container details page shows shipping container a
 | Receipts list | Post a receipt list for all purchase order lines in the shipping container. If multi-company voyages are used, a new receipt list posting dialog box is opened for each company. |
 | Product Receipt | View the product receipt record, if it's used. The product receipt process will be used only if the goods don't use goods-in-transit functionality. |
 | Item arrival | View the item arrival journal for the shipping container, if that journal is used. |
-| Legs | Legs are used to identify separate parts of a journey. Lead times can be associated with each leg to help with shipment tracking. For more information, see [Legs](#_Legs). |
+| Legs | Legs are used to identify separate parts of a journey. Lead times can be associated with each leg to help with shipment tracking. For more information, see [Multi-leg journey setup](multi-leg-journey-setup.md). |
 | Tracking | View or update shipment tracking. |
 | Costs inquiry | You can use the **Costs inquiry** page to view all the costs of a shipping container, including the container, folio, and purchase order. You can adjust the exact view of the page by using the **View** button. On the **Costs inquiry** page, you can view any of the areas, plus the item and cost type code. By removing these items, you can adjust the page by grouping together costs. This capability can be useful if you're using sizes and colors. You can change the dimensions that are shown on the **Costs inquiry** page. The costs page shows only cost type codes where the **Dr** entry on the **Posting** tab is set to *Item*. |
 | Goods in transit orders | You can open the **Goods in transit** page directly from the container. That page shows the goods-in-transit records for the selected shipping container only. |
-| Over/under transactions | You can open the **Over/Under transactions** page directly from the shipping container. That page shows the over/under records for the selected shipping container only. The over/under transactions will be available only after the goods have been received in the warehouse and the goods-in-transit order has been closed for further receiving. For more information about the over/under transaction process see the over/under transactions scenario. |
+| Over/under transactions | You can open the **Over/Under transactions** page directly from the shipping container. That page shows the over/under records for the selected shipping container only. The over/under transactions will be available only after the goods have been received in the warehouse and the goods-in-transit order has been closed for further receiving. <!-- KFM: For more information about the over/under transaction process see the over/under transactions scenario. --> |
 
 ## Line view
 
