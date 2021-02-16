@@ -5,7 +5,7 @@ title: Set up interest rates for an interest code
 description: Interest codes contain settings that determine when interest is charged and how it is calculated on overdue accounts.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
