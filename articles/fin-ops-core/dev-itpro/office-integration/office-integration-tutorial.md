@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Office integration tutorial
 
-[!include [Applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
+[!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
 [!include [banner](../includes/banner.md)]
 

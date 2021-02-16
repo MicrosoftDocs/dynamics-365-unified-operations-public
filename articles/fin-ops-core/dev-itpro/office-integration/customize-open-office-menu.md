@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Customize the Open in Microsoft Office menu
 
-[!include [Applies to](../includes/applies-to-commerce-finance-scm.md)]
+[!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
 
