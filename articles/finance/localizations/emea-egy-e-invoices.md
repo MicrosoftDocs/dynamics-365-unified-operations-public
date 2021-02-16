@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.17
 
 According to Egyptian legal requirements, invoices that are issued for customers must be submitted to the Tax authority in an electronic format. Electronic invoice submission requires the following two-part system configuration:
 
-1. **Electronic invoicing add-on** configuration. For more information, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
+1. **Electronic invoicing add-on** configuration. For more information, see [Get started with the Electronic invoicing add-on for Egypt](e-invoicing-eg-get-started.md).
 2. **Microsoft Dynamics 365 Finance** configuration, which is covered in this topic.
 
 ## Prerequisites
