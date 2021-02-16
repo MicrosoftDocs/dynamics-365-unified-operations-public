@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-The `STARTSWITH` function determines whether the specified input starts with a specified text. It returns a *Boolean* value of **TRUE** if the specified input starts with a specified text. Otherwise, it returns a *Boolean* value of **FALSE**.
+The `STARTSWITH` function determines whether the specified input starts with the specified text. It returns a *Boolean* value of **TRUE** if the specified input starts with the specified text. Otherwise, it returns a *Boolean* value of **FALSE**.
 
 ## Syntax
 
@@ -59,15 +59,15 @@ The resulting *Boolean* value.
 
 ## Usage notes
 
-This function can be used to specify a condition expression of the [FILTER](er-functions-list-filter.md) function only when the relevant mapping is configured in [Regulatory Configuration Services](../../finance/localizations/rcs-globalization-feature.md) to access [Microsoft Dataverse](../data-entities/data-integration-cds.md). Otherwise, the exception is thrown at design time suggesting to use the [WHERE](er-functions-list-where.md) function instead of the FILTER one.
+This function can be used to specify a condition expression of the [FILTER](er-functions-list-filter.md) function only when the relevant mapping is configured in [Regulatory Configuration Services](../../finance/localizations/rcs-globalization-feature.md) to access [Microsoft Dataverse](../data-entities/data-integration-cds.md). Otherwise, an exception is thrown at design time. The message that you receive recommends that you use the [WHERE](er-functions-list-where.md) function instead of the `FILTER` function.
 
 ## Example 1
 
-The `STARTSWITH ("abc", "d")` expression returns **FALSE** while the `STARTSWITH ("abc", "A")` one returns **TRUE**.
+The expression `STARTSWITH ("abc", "d")` returns **FALSE**, whereas the expression `STARTSWITH ("abc", "A")` returns **TRUE**.
 
 ## Example 2
 
-The `STARTSWITH (model.InvoiceBase.Customer.PostalAddress.Address, "123 Coffee Street")` expression returns **TRUE** when the value of the **Address** field of the **model** data source starts with the **123 Coffee Street** characters. Otherwise, it returns **FALSE**.
+The expression `STARTSWITH (model.InvoiceBase.Customer.PostalAddress.Address, "123 Coffee Street")` returns **TRUE** if the value of the **Address** field of the **model** data source starts with the string **123 Coffee Street**. Otherwise, it returns **FALSE**.
 
 ## Additional resources
 
