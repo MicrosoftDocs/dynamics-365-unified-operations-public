@@ -94,7 +94,7 @@ The customer ID isn't shown for customers queried from other legal entities, bec
 
 ### Additional local customer search capabilities
 
-When the user searches for a Phone number then the system ignores special characters, such as spaces, hyphens, and brackets, that might have been added when the customer was created. Therefore, cashiers don't have to worry about the phone number format when they search. For example, if a customer's phone number was entered as **123-456-7890**, a cashier can search for the customer by typing **1234567890**, or by entering the first few numbers of the phone number.
+When the user searches for a phone number, the system ignores special characters (such as spaces, hyphens, and brackets) that might have been added when the customer was created. Therefore, cashiers don't have to worry about the phone number format when they search. For example, if a customer's phone number was entered as **123-456-7890**, a cashier can search for the customer by typing **1234567890**, or by entering the first few numbers of the phone number.
 
 > [!NOTE]
 > A customer can have multiple phone numbers and multiple emails. The customer search algorithm also searches through these secondary emails and phone numbers, but the customer search results page only displays the primary email and phone number. This may cause some confusion as the returned customer results would not show the searched email or phone number. In a future release we plan to improve the customer search results screen to show this information.
