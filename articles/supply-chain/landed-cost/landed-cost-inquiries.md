@@ -37,8 +37,6 @@ This inquiry shows all voyage lines as they pertain to inventory. This can be us
 
 To open the **Voyage lines** inquiry page, go to **Landed cost \> Inquiries \> Voyage lines**.
 
-<!-- KFM: What about the "Cost inquiry" action? -->
-
 ### The Overview tab
 
 The **Overview** tab shows a grid with basic information about each relevant voyage line. The following table describes each column shown here.
@@ -114,4 +112,3 @@ To open this inquiry, go to **Landed cost \> Inquiries \> Tracking \> Individual
 This inquiry provides a filter that enables you to find a collection of shipping containers and then identify all of the voyage lines within those containers.
 
 To open this inquiry, go to **Landed cost \> Inquiries \> Tracking \> Multiple shipping container tracking**.
-

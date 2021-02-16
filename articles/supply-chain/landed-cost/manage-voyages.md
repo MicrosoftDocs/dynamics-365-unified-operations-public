@@ -178,7 +178,6 @@ The following table describes the fields that are available on the **Other** Fas
 |---|---|
 | Remarks | Enter additional information that is related to the voyage. |
 | Valuation date | Select the earliest ex-factory date for the purchase orders that are linked to the voyage. |
-| Pending voyage | <!-- KFM: Description needed --> |
 | Renaming shipping containers | For voyages that have more than one container, the number of containers that haven't yet been received. |
 
 ## Voyage update periodic tasks
@@ -189,4 +188,3 @@ The **Landed cost** module includes several voyage-related periodic tasks that c
 - **In transit** - Lets you set the in-transit status to several voyages at the same time. Use the **Filter** settings to define the set of voyages you want to update.
 - **Ready for costing** - Lets you update all voyages that are ready to be costed, but have not yet been so. You would typically set this task to run on a regular schedule.
 - **Costed**  - Lets you sets all qualifying voyages to the costed status, provided they have been costed and not yet updated on the voyage. You would typically set this task to run on a regular schedule.
-

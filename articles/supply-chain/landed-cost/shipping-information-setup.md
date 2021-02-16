@@ -54,7 +54,7 @@ To work with vessels, go to **Landed cost \> Shipping information setup \> Vesse
 |---|---|
 | Vessel | Enter a unique identification name/number for the ship that will be used to transport goods on a voyage. |
 | Description | Enter a description of the vessel. Typically, this description identifies the name of the ship and the shipping company/agent. |
-| Mode of delivery | Select the mode of delivery that the vessel uses (such as _Air_, _Ocean_, or _Train_). <!-- KFM: Add a link to section about how to define these. --> |
+| Mode of delivery | Select the mode of delivery that the vessel uses (such as _Air_, _Ocean_, or _Train_). |
 
 ## Exporters
 

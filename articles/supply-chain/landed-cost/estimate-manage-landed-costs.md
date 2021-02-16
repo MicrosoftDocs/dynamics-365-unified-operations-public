@@ -150,8 +150,8 @@ You can use the buttons on the Action Pane of the **Cost estimates** page to wor
 
 | Action | Description |
 |---|---|
-| Cost Inquiry | View all costs for the shipment. You can view costs at the level of the individual item as required. <!-- KFM: Do we mean "shipment". How can I view them at the individual item level? --> |
-| Update standard cost | <p>Update the standard cost by using the default costing version that is defined in the shipment parameters <!-- KFM: Where is this setting? -->. You can override this version <!-- KFM: How? -->.</p><p>**Note:** If an item has many <!-- KFM: How many? --> item dimensions (for example, various sizes, colors, and configurations), but these dimensions haven't been selected for the estimate, the system will create a pending price for each combination.</p><p>**Important:** The price breakdown is created and is used to determine the standard cost variance per landed cost.<!-- KFM: This isn't clear to me. What is a price breakdown? --></p> |
+| Cost Inquiry | View all costs for the voyage. You can view costs at the level of the individual item as required. |
+| Update standard cost | <p>Update the standard cost by using the default costing version that is defined on the **Landed cost parameters** page. You can override this version.</p><p>**Note:** If an item has several item dimensions (for example, various sizes, colors, and configurations), but these dimensions haven't been selected for the estimate, the system will create a pending price for each combination.</p><p>**Important:** The price breakdown is created and is used to determine the standard cost variance per landed cost.</p> |
 | Voyage costs | View and edit voyage costs for all goods in the shipment. |
 | Recalculate | Update the estimated landed costs after voyage costs are updated, added, or removed. |
 | Lock | Lock the cost estimate record so that no more changes can be made. |
