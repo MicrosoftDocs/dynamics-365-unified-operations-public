@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-02-20
 ms.dyn365.ops.version: Application update 3
 ---
 
-# Mass deployment of self-service components
+# Enhanced self-service mass deployment
 
 [!include [banner](../includes/banner.md)]
 
