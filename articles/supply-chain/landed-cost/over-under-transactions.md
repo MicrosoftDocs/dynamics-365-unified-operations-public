@@ -128,7 +128,7 @@ To view the document type for the row that is selected on the upper **Overview**
 
 | Field | Description |
 |---|---|
-| New document type | This field is set to ither *Movement journal* or *Purchase order*, depending on the action that is shown on the selected over/under transaction line. |
+| New document type | This field is set to either *Movement journal* or *Purchase order*, depending on the action that is shown on the selected over/under transaction line. |
 | Number | A reference and link to either the purchase order or the movement journal that is associated with the selected over/under transaction line. |
 | Over/under reason | The reason that is associated with the selected over/under transaction line. |
 | Quantity | The quantity that you selected for the purchase order or movement journal that is associated with the selected over/under transaction line. |

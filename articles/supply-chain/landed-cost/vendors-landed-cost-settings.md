@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
-## Vendor settings added for Landed cost
+# Vendor settings added for Landed cost
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +39,7 @@ To set the relevant fields, go to **Procurement and sourcing \> Vendors \> All v
 |---|---|
 | Shipping type | <p>Select the vendor's role in relation to Landed cost:</p><ul><li>**None** – The vendor has no specific role that is related to Landed cost. This value is the default setting, because most vendors will probably have no specific role.</li><li>**Shipping company** – The vendor is a shipping company. Vendors that have this shipping type are available for selection in the **Shipping company** field on the **Voyages** page.</li><li>**Customs broker** – The vendor is a customs broker. Vendors that have this shipping type are available for selection in the **Customs broker** field on the **Folios** page.</li><li>**Agent** – The vendor is an agent. Vendors that have this shipping type are available for selection in the **Agent** field on the **Vendors** and **Purchase orders** pages.</li></ul> |
 | Cost type group | Assign the vendor to a cost type group for the purpose of selecting [auto costs](auto-cost-setup.md). |
-| From port | <!-- KFM: Description needed. --> |
+| From port | Select the port of origin for the voyage. |
 | Agent | The default agent when purchases are made from the vendor. |
 | Import costing vendor | <p>Indicate whether the vendor is a Landed cost vendor.</p><p>**Tip:** You can use this field together with record-level security to limit the purchase orders that are shown on shipment creation pages <!-- KFM: Which pages do we mean here? -->.</p> |
 | Shipping company | Select the default shipping company that is used when purchase orders are created for the vendor. |

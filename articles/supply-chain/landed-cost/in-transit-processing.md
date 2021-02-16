@@ -43,13 +43,12 @@ The following sections describe the setup that is required to process inventory 
 
 When you enable the **Landed cost** module, the standard *terms of delivery* entity is enhanced to support the goods-in-transit feature.
 
-When this is selected <!--KFM: What is selected, where? -->, the goods are put into a goods-in-transit warehouse. This action is triggered only when an invoice is processed, but no inventory receipt was processed first. When the delivery terms for an order are set up to use goods in transit, users can no longer post a product receipt for the purchase order. If they try, they receive an error that states that they must use the goods-in-transit functionality to continue.
+When **Goods in transit management** option is set to *Yes* for the applicable terms of delivery record, the goods are placed into the goods-in-transit warehouse. This is only triggered when an invoice is processed without the inventory receipt being processed first. When an order has the delivery terms set to use goods in transit, users can no longer post a product receipt for the purchase order. If they try, an error will show stating that they must use the goods in transit functionality to proceed.
 
-To work with delivery terms information for goods in transit, go to **Procurement and sourcing \> Setup \> Distribution \> Terms of delivery**. The following table describes the fields that the **Landed cost** module adds to the **Terms of delivery** page to support the goods-in-transit functionality. All these fields appear on the **General** FastTab. For information about the other fields on the page, see [Terms of delivery (form)](https://technet.microsoft.com/library/aa575567.aspx).
+To work with delivery terms information for goods in transit, go to **Procurement and Sourcing \> Setup \> Distribution \> Terms of delivery**. The following table describes the settings that the Landed cost module adds to the **Terms of delivery** page to support the goods in transit functionality. Both settings are on the **General** FastTab. For more information about the other settings on this page, see [Terms of delivery (form)](https://technet.microsoft.com/library/aa575567.aspx).
 
 | Field | Description |
 |---|---|
-| Delivery terms | Enter a short code that identifies the terms of delivery. <!--KFM: Is this really added by Landed cost? --> |
 | Shipping port mandatory | Set this option to *Yes* if a shipping port is mandatory when the delivery terms apply. |
 | Goods in transit management | Set this option to *Yes* to use goods-in-transit management when the delivery terms apply. |
 
@@ -111,9 +110,8 @@ You can also receive goods by creating an arrival journal. You can create an arr
 1. Open the voyage, container, or folio.
 1. On the Action Pane, on the **Manage** tab, in the **Functions** group, select **Create arrival journal**.
 1. In the **Create arrival journal** dialog box, set the following values:
-
     - **Initialize quantity** – Set this option to *Yes* to set the quantity from the in-transit quantity. If this option is set to *No*, no default quantity is set from the goods-in-transit lines.
-    - **Create from goods in transit** – Set this option to *Yes* to set selected goods-in-transit lines for the selected voyage, container, or folio. <!-- KFM: Please clarify. maybe "assign ... to" instead of "set ... for"? -->
+    - **Create from goods in transit** - Set to *Yes* to take quantities from the selected in-transit lines for the selected voyage, container, or folio.
     - **Create from order lines** – Set this option to *Yes* to set the default quantity in the arrival journal from the purchase order lines. The default quantity in the arrival journal can be set in this way only if the quantity on the purchase order line matches the quantity on the goods-in-transit order.
 
 1. Process the arrival journal as described in [Register item receipts with an item arrival journal](https://technet.microsoft.com/library/aa571129.aspx).
@@ -140,9 +138,7 @@ Landed cost adds the following work creation processes to the mobile device menu
 
 The configuration settings for these processes resemble the settings for the [purchase order receive and putaway work creation processes](https://technet.microsoft.com/library/dn553216.aspx). However, the *Goods in transit item receiving and putaway* process also adds the following field.
 
-| Field | Description |
-|---|---|
-| Enable shipping container complete | When this option is set to *Yes*, the warehouse app provides an additional option that is named **Shipping container complete** when the putaway work is completed. When this option is selected, the worker is prompted to confirm that the container is complete. At that point, all short receipts are processed as an under transaction. <!-- KFM: I assumed this new option is on the warehouse app and that the work does this. True? --> |
+- **Enable shipping container complete** – When set to *Yes*, at completion of the putaway work, the warehouse app will provide an additional option called **Shipping container complete**. When selected, the worker will be asked to confirm that the container is complete. At this point, all short receipts will be processed as an under transaction.
 
 ### Location directives
 
@@ -151,3 +147,4 @@ Landed cost adds a new work order type that is named *Goods in transit* to the *
 ### Work templates
 
 Landed cost adds a new work order type that is named *Goods in transit* to the **Work templates** page. This work order type should be configured in the same manner as the [purchase order work templates](https://technet.microsoft.com/library/dn553184.aspx).
+
