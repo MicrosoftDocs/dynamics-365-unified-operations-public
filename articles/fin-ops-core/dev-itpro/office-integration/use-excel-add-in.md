@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View and update entity data with Excel 
 
+[!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
+
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Create custom links in Manager self-service
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 You can add custom links on the **My team** tab in Manager self-service. This feature lets you provide quick access to important information. It's similar to adding custom links in the **My information** tab in Employee self service.
 
 ## Enable the  feature

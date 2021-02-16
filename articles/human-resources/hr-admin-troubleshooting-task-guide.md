@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Save task guides to LCS and replay them
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Environment details** 
 
 Microsoft Dynamics 365 Human Resources, which was deployed via Microsoft Dynamics Lifecycle Services (LCS)

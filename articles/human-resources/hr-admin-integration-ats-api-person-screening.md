@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Person screening
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Person screening entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmpersonscreeningentity

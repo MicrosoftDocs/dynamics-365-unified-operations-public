@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Regulatory job category
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Regulatory job category option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmregulatoryjobcategory

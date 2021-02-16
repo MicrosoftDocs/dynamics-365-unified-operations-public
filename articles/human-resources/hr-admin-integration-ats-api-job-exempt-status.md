@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Job exempt status
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Job exempt status option set for Dynamics 365 Human Resources.
 
 Physical name: cdm_jobexemptstatus

@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Loan item to a worker
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 
 
 This procedure shows how to loan an item to a worker and record the worker returning an item. Workers can also request loan items through their Employee self-service pages. The demo data company used to create this procedure is USMF.

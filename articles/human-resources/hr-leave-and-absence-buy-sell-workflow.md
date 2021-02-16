@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Create a buy and sell leave request workflow
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 You can create a workflow in Dynamics 365 Human Resources to consistently manage your buy and sell leave requests. A **Buy and sell leave** workflow lets you:
 
 - Define tasks

@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Develop a compensation structure
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This article walks you through creating a fixed compensation plan and enrolling employees in the plan through eligibility rules. This article uses the USMF demo data and applies to Compensation and Benefits Managers.
 
 ## Create a fixed compensation plan
