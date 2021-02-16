@@ -21,7 +21,7 @@ ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: roschlom
 ms.search.validFrom: 2020-03-02 
 ms.dyn365.ops.version: Platform update 33
 
