@@ -2719,6 +2719,8 @@
           href: landed-cost/landed-cost-parameters.md
         - name: Landed cost procurement and sourcing parameters
           href: landed-cost/landed-cost-procurement-parameters.md
+        - name: Voyage status setup
+          href: landed-cost/voyage-status-setup.md
         - name: Shipping container setup
           href: landed-cost/shipping-container-setup.md
         - name: Delivery information setup
@@ -2727,6 +2729,32 @@
           href: landed-cost/multi-leg-journey-setup.md
         - name: Shipping information setup
           href: landed-cost/shipping-information-setup.md
+        - name: Costing parameter values setup
+          href: landed-cost/costing-parameters-setup.md
+        - name: Default descriptions for the general ledger
+          href: landed-cost/defult-descriptions.md
+      - name: Vendor settings added for Landed cost
+        href: landed-cost/vendors-landed-cost-settings.md
+      - name: Work with voyages, containers, and folios
+        items:
+        - name: Manage voyages
+          href: landed-cost/manage-voyages.md
+        - name: Manage shipping containers
+          href: landed-cost/manage-shipping-containers.md
+        - name: Manage folios
+          href: landed-cost/manage-folios.md
+      - name: Track inbound voyages and shipping container journeys
+        href: landed-cost/inbound-tracking.md
+      - name: Estimate and manage landed costs
+        href: landed-cost/estimate-manage-landed-costs.md
+      - name: In-transit processing
+        href: landed-cost/in-transit-processing.md
+
+
+      - name: In-transit processing
+        href: landed-cost/in-transit-processing.md
+
+
     - name: Warehouse management
       items:
       - name: Warehouse management overview

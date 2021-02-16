@@ -3,7 +3,7 @@
 
 title: Landed cost parameters setup
 description: This topics describes how to set up general information and configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
 ---
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Landed cost parameters setup
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 You use the **Landed cost parameters** page to set up general information and configuration settings that are used across the **Landed cost** module for posting, status updates, number sequences, and behavior. The setup of parameters is shared across legal entities and can be modified by an administrator.
 
@@ -46,7 +45,7 @@ To work with the parameters, go to **Landed cost \> Setup \> Landed cost paramet
 
 The following table describes the fields that are available on the **General** FastTab of the **General** tab of the **Landed cost parameters** page.
 
-| Field | Description |
+| Setting | Description |
 |---|---|
 | Use shipping rate | A shipping rate is set for a defined period and is used to estimated costs of goods that use multiple currencies. Set this option to *Yes* to use a shipping rate. |
 | Exchange rate type | The default collection of exchange rates that is used for multi-currency calculations for a voyage and voyage costs. |
@@ -57,7 +56,7 @@ The following table describes the fields that are available on the **General** F
 
 The following table describes the fields that are available on the **Costing** FastTab of the **General** tab of the **Landed cost parameters** page.
 
-| Field | Description |
+| Setting | Description |
 |---|---|
 | Posting specification | Select the value adjustment in the ledger:<ul><li>**Total** – A total figure is posted to the ledger.</li><li>**Item group** – The adjustment is specified per item group.</li><li>**Item number** – The adjustment is specified per item. This value provides the most detail.</li></ul> |
 | Allow zero costs | Set this option to *No* to show an error if a user tries to post a cost estimate for a voyage invoice or purchase order that doesn't include a value for the expected voyage cost. The error message states that a cost of 0 (zero) can't be allocated, and invoice posting will fail. In this case, the user can manually update the estimate (or reconfigure the auto cost), and then either pull in the updated value or delete the cost if it doesn't apply.<p>Set this option to *Yes* to allow the voyage cost to be blank. In this case, a price of 0 (zero) will be allocated according to the cost area. A vendor cost invoice can then be processed against the zero-price cost when the voyage is received.</p><p>We recommend that you configure the estimate on the auto cost record to prevent a zero-price cost from appearing. Although this estimate isn't completely accurate, it should still be more accurate than an assumed zero cost.</p> <!-- KFM: Add a link to the topic about auto cost. --> |
@@ -71,7 +70,7 @@ The following table describes the fields that are available on the **Costing** F
 
 The following table describes the fields that are available on the **Validation** FastTab of the **General** tab of the **Landed cost parameters** page.
 
-| Field | Description |
+| Setting | Description |
 |---|---|
 | Multiple cost invoices | Select what occurs if more than one invoice is processed against a voyage, folio, or container for the same miscellaneous charge.<ul><li>**Accept** – The system should allow multiple cost invoices.</li><li>**Warning** – A warning is shown.</li><li>**Error** – An error message is shown.</li></ul> |
 | Multiple vendors per folio | Select what occurs if more than one vendor's purchase orders are added to a folio.<ul><li>**Accept** – The system should allow the action.</li><li>**Warning** – A warning is shown, but the action can still be performed.</li><li>**Error** – An error message is shown, and the action is prevented.</li></ul><p>Your customs broker or local laws might mandate a specific value for this field.</p> |
@@ -84,7 +83,7 @@ The following table describes the fields that are available on the **Validation*
 
 The following table describes the fields that are available on the **Defaults** FastTab of the **General** tab of the **Landed cost parameters** page.
 
-| Field | Description |
+| Setting | Description |
 |---|---|
 | Journal name | Select the default journal that the *Create arrival journal* function should use. |
 | Voyage status | Select the status that a voyage must have before users can set up a rental shipping container for it in the system. This action typically occurs when the goods are in transit or at the dock. |
@@ -101,7 +100,7 @@ The system uses status values to indicate the status of each voyage. Voyage stat
 
 You can create as many voyage status values as you want. However, four of them must be defined as used for a special purpose on the **Status updates** tab of the **Landed cost parameters** page. The following table describes the fields that are available there. <!-- KFM: Maybe add link to topic about how to create these values -->
 
-| Field | Description |
+| Setting | Description |
 |---|---|
 | Costed | Select the voyage status that identifies that a voyage has been finalized. |
 | In transit | Select the voyage status that identifies that a voyage is in transit. |

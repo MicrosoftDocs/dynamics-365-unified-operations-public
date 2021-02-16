@@ -3,7 +3,7 @@
 
 title: Multi-leg journey setup
 description: This topic describes how to set up multi-leg journeys for the Landed cost module.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
 ---
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Multi-leg journey setup
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to set up multi-leg journeys for the **Landed cost** module.
 
@@ -73,3 +72,17 @@ In the **Lines** section, add a line for each leg of the journey, and put the li
 | Journey from port | If the port that is specified for the leg is used to determine the auto costs, select this check box to identify it as the "journey from" port. This port will be shown on the voyage header. |
 | Journey to port | If the port that is specified for the leg is used to determine the auto costs, select this check box to identify it as the "journey to" port. This port will be shown on the voyage header. |
 | Shipping company | Select the shipping company that is used for the leg. |
+
+## Activities
+
+The settings on the **Activities** page establish the types of activities that can occur at the destination port of a leg. Users who work on the **All shipping containers** page can select among these values when they estimate the duration of each activity and record the actual duration for comparison purposes.
+
+To set up your activities, go to **Landed cost \> Multi-leg journeys setup \> Activities**. There, you can add, remove, and edit activities by using the buttons on the Action Pane.
+
+The following table describes the fields that are available for each activity in the grid.
+
+| Field | Description |
+|---|---|
+| Activity | The name of the activity. |
+| Description | A description of the activity. |
+| Shipping company | The vendor account of the shipping company that is associated with the activity. |

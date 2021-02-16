@@ -3,7 +3,7 @@
 
 title: Delivery information setup
 description: This topic describes how to set up delivery information for the Landed cost module.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/09/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: Release 10.0.17
 ---
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Delivery information setup
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to set up delivery information for the **Landed cost** module.
 
@@ -45,7 +44,7 @@ To work with shipping ports, go to **Landed cost \> Delivery information setup \
 | Shipping port | Enter a unique identification name/number for the shipping port. |
 | Description | Enter a description of the shipping port. |
 
-## Tracking control center
+## <a name="tracking-control-center"></a>Tracking control center
 
 You use the Tracking control center to set up the lead times, status updates, and flow of information that is associated with a voyage as the shipping containers move from one leg to the next. When you create a tracking control record, it's associated with a specific leg of a journey for a voyage. When a voyage updates a leg, the associated record will be updated and filled in as defined. You can update tracking information for individual voyages from the **All voyages** page.
 
