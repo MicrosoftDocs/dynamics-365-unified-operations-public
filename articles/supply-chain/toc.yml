@@ -2339,6 +2339,26 @@
             href: cost-management/production-posting.md
         - name: Troubleshoot process manufacturing
           href: production-control/troubleshoot-processmanufacturing.md
+    - name: Rebate management
+      items:
+      - name: Rebate management module overview
+        href: reabate-management/rebate-management-overview.md
+        - name: Set up and configure the Rebate management module
+          items:
+          - name: Rebate management parameters
+            href: reabate-management/rebate-management-parameters.md
+          - name: Rebate management deal workflows
+            href: reabate-management/rebate-management-workflows.md
+          - name: Rebate reduction principles
+            href: reabate-management/rebate-reduction-principle.md
+          - name: Rebate statuses
+            href: reabate-management/rebate-statuses.md
+          - name: Rebate management groups
+            href: reabate-management/rebate-management.groups.md
+
+
+
+
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
