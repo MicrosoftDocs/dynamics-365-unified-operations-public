@@ -43,13 +43,7 @@ According to Egyptian legal requirements, invoices that are issued for customers
 ## Prerequisites
 
 - Electronic invoicing add-on configuration is completed, and all required parts for Egypt are ready to use.
-- In the **Feature management** workspace, turn on the **Electronic invoicing add-on integration** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-## Enable electronic invoicing for Egypt
-
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-2. On the **Features** tab, select the feature reference for **EG00008 E-invoicing for Egypt**.
-3. Turn on the **Enabled** option for the selected feature reference.
+- The primary address of the legal entity must be in Egypt.
 
 ## Configure registration numbers
 
@@ -166,7 +160,7 @@ When you've completed all the required configuration steps, you can submit elect
 
 ## Related topics
 
-- [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
+- [Get started with the Electronic invoicing add-on for Egypt](e-invoicing-eg-get-started.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
