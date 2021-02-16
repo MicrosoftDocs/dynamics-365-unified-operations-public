@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Discontinue configurations in RCS/Global repository
+title: Discontinue configurations in the RCS Global repository
 description: This topic describes how to discontinue configurations in the RCS Global repository.
 author: JaneA07      
 manager: AnnBe
-ms.date: 02/04/2021
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,13 +29,13 @@ ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
 
 ---
-# Discontinue configurations in RCS/Global repository
+# Discontinue configurations in the RCS Global repository
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to discontinue configuration in the RCS Global repository. Previously, it was possible only to delete configurations that were no longer required. However now, you can mark a released configuration as **Discontinued** in the RCS Global repository and:
+This topic describes how to discontinue configuration in the RCS Global repository. Previously, it was possible only to delete configurations that were no longer required. However now you can mark a released configuration as **Discontinued** in the RCS Global repository. With this functionality, you can also do the following: 
  
- - Provide upfront notifications when a configuration is planned to be discontinued.
+ - Provide up front notifications when a configuration is planned to be discontinued.
  - Include applicable details about the replacement configuration.
  - Set a **Supported until** date for the specific configuration to inform the user when it will be discontinued.
 
@@ -49,15 +49,15 @@ When you discontinue a configuration version, you can specify the following opti
 To discontinue the configuration, complete the following steps. 
 
 1. Select whether you want to discontinue a single version or all versions with the same settings in one operation by setting **All versions** to **Yes**. 
-2. Slide the **Discontinue** parameter to **Yes**.
+2. Set the **Discontinue** parameter to **Yes**.
 3. Select **OK** to discontinue the configurations. The **Discontinued date** field will be populated when you save the changes.
   
 You can revert configuration back to **Shared** or adjust discontinuation information at any time. If you share a configuration, specify the **Supported until** date and all other information related to the discontinuation to indicate your plans for future discontinuation.
 
 > [!NOTE]
-> Discontinuation doesn't limit operations with configurations. You can continue to import, run, or derive the configurations, it's just informational fields.
+> Discontinuation doesn't limit operations with configurations. You can continue to import, run, or derive the configurations, these fields are informational.
 
-## Finance supports displaying this information starting in version 10.0.14
+## Dynamcis 365 Finance supports displaying this information starting in version 10.0.14
 
 On the **Global repository** page, you can view up-to-date information related to discontinuation. By default, configurations that are discontinued are filtered out.
   
