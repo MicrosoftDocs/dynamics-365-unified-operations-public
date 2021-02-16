@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-The `CONTAINS` function determines whether the specified input contains a specified text. It returns a *Boolean* value of **TRUE** if the specified input contains a specified text. Otherwise, it returns a *Boolean* value of **FALSE**.
+The `CONTAINS` function determines whether the specified input contains the specified text. It returns a *Boolean* value of **TRUE** if the specified input contains the specified text. Otherwise, it returns a *Boolean* value of **FALSE**.
 
 ## Syntax
 
@@ -59,15 +59,15 @@ The resulting *Boolean* value.
 
 ## Usage notes
 
-This function can be used to specify a condition expression of the [FILTER](er-functions-list-filter.md) function only when the relevant mapping is configured in [Regulatory Configuration Services](../../finance/localizations/rcs-globalization-feature.md) to access [Microsoft Dataverse](../data-entities/data-integration-cds.md). Otherwise, the exception is thrown at design time suggesting that you use the [WHERE](er-functions-list-where.md) function instead of the FILTER one.
+This function can be used to specify a condition expression of the [FILTER](er-functions-list-filter.md) function only when the relevant mapping is configured in [Regulatory Configuration Services](../../finance/localizations/rcs-globalization-feature.md) to access [Microsoft Dataverse](../data-entities/data-integration-cds.md). Otherwise, an exception is thrown at design time. The message that you receive recommends that you use the [WHERE](er-functions-list-where.md) function instead of the `FILTER` function.
 
 ## Example 1
 
-The `CONTAINS ("abc", "d")` expression returns **FALSE** while the `CONTAINS ("abc", "C")` one returns **TRUE**.
+The expression `CONTAINS ("abc", "d")` returns **FALSE**, whereas the expression `CONTAINS ("abc", "C")` returns **TRUE**.
 
 ## Example 2
 
-The `CONTAINS (model.InvoiceBase.Customer.PostalAddress.Address, "DEU")` expression returns **TRUE** when the value of the **Address** field of the **model** data source contains the **DEU** characters. Otherwise, it returns **FALSE**.
+The expression `CONTAINS (model.InvoiceBase.Customer.PostalAddress.Address, "DEU")` returns **TRUE** if the value of the **Address** field of the **model** data source contains the string **DEU**. Otherwise, it returns **FALSE**.
 
 ## Additional resources
 
