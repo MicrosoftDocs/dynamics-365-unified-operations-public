@@ -33,9 +33,7 @@ ms.dyn365.ops.version: Release 10.0.17
 
 This topic describes how to set up shipping information for the **Landed cost** module.
 
-<a name="description-of-goods"></a>
-
-## Description of goods
+## <a name="description-of-goods"></a>Description of goods
 
 Descriptions of goods help identify a voyage, shipping container, or folio of goods, and the goods in it. You can select a description of goods on the shipping container header or the folio header.
 
@@ -46,9 +44,7 @@ To work with descriptions of goods, go to **Landed cost \> Shipping information 
 | Description of goods | Enter a unique identification name/number for the type of goods that will use this description. |
 | Description | Enter a description of the type of goods in this category. |
 
-<a name="vessels"></a>
-
-## Vessels
+## <a name="vessels"></a>Vessels
 
 A vessel is the unique name of a ship or vessel that a shipping company or agency uses. When you create a voyage, you must always either select or enter a vessel for it. If you often use the same vessels, then you can make it faster and easier to create a new voyage by creating a vessel record for each of them, thereby allowing users to select the vessel from a list rather then enter the name or number manually each time.
 

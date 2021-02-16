@@ -2,7 +2,7 @@
 # Delivery information setup
 
 title: Estimate and manage landed costs
-description: The system uses your auto cost setup to determine an estimate for your landed cost and you can also specify various scenarios to deliver a more accurate estimate. These are stored so you can later review and compare them to actuals within a report. Furthermore, you are also able to update the item price.
+description: The system uses your auto cost setup to determine an estimate for your landed cost. This topic explains how you can define various scenarios to deliver a more accurate estimate.
 author: RichardLuan
 manager: tfehr
 ms.date: 01/26/2021
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-The system uses your [auto cost setup](auto-cost-setup.md) to determine an estimate for your landed cost and you can also specify various scenarios to deliver a more accurate estimate. These are stored so you can later review and compare them to actuals within a report. Furthermore, you are also able to update the item price.
+The system uses your [auto cost setup](auto-cost-setup.md) to determine an estimate for your landed cost. Additionally, you can define various scenarios to deliver a more accurate estimate. These scenarios are stored. Therefore, you can review them later and compare them to actuals on a report. You can also update the item price.
 
 ## Set up cost estimates
 
@@ -39,133 +39,143 @@ The system uses your [auto cost setup](auto-cost-setup.md) to determine an estim
 
 Cost templates establish default settings that users getting the estimate may not necessarily know. Templates can help reduce complexity in the estimating process by minimizing the selections that users need to specify to get an accurate estimate. If you are using the standard cost model, you'll be able to use cost templates while setting up the cost of goods.
 
-To set up your cost templates, go to **Landed cost \> Costing setup \> Cost templates**. This page includes a list pane that lists current cost templates and provides Action Pane actions to create, delete, and edit listed templates. The following table describes the settings available for each template.
+To set up your cost templates, go to **Landed cost \> Costing setup \> Cost templates**. On the **Cost templates** page, the list pane on the left shows all current cost templates. You can use the buttons on the Action Pane to create, delete, and edit templates.
 
-| Setting | Description |
-| --- | --- |
-| **Cost template** | Enter a unique name for the cost template. It typically describes the factor or cost multiplier for the template. |
-| **Description** | Enter a description of the cost template. |
-| **Shipping company** | Select the shipping company to be applied when this template is used. |
-| **Mode of delivery** | Select the mode of delivery, such as sea or air, to be applied when this template is used. This will assist in determining the auto costs associated to the goods on the cost estimate. |
-| **Shipping container type** | Select the shipping container type to be applied when this template is used. This will assist in determining which auto costs are associated to the goods during a cost estimate. |
-| **Customs broker** | The customs broker (vendor) to be applied when this template is used. This will assist in determining which auto costs are associated to the cost estimate. |
-| **Factor** | Enter a multiplier (in percent) to automatically to the cost estimate when this template is used. For example, if you would like to add 10% to the calculated cost estimate, enter a value of *1.10* here. |
+The following table describes the fields that are available for each template.
+
+| Field | Description |
+|---|---|
+| Cost template | Enter a unique name for the cost template. The name typically describes the factor or cost multiplier for the template. |
+| Description | Enter a description of the cost template. |
+| Shipping company | Select the shipping company that should be applied when the template is used. |
+| Mode of delivery | Select the mode of delivery, such as sea or air, that should be applied when the template is used. This field helps determine the auto costs that are associated with the goods on a cost estimate. |
+| Shipping container type | Select the type of shipping container that should be applied when the template is used. This field helps determine the auto costs that are associated with the goods on a cost estimate. |
+| Customs broker | The customs broker (vendor) that should be applied when the template is used. This field helps determine the auto costs that are associated with the cost estimate. |
+| Factor | Enter the multiplier (percentage) that should automatically be applied to the cost estimate when the template is used. For example, to add 10 percent to the calculated cost estimate, enter *1.10*. |
 
 ### Create a cost estimate
 
-Use the **Cost estimate** dialog box to generate a new cost estimate based on a selected cost template, set of items, and other details of a journey. These settings are then used to determine the estimated landed costs of goods. These cost estimates are primarily used when working with standard cost items. By adding in the estimate landed costs to the standard cost of goods in inventory, you should experience smaller variance transactions when the goods are added to a voyage, as the standard cost will reflect the estimates of such landed costs.
+Use the **Cost estimate** dialog box to generate a new cost estimate that is based on a selected cost template, a selected set of items, and other details of a journey. These settings are then used to determine the estimated landed costs of goods. These cost estimates are primarily used to work with standard cost items. By adding the estimated landed costs to the standard cost of goods in inventory, you should experience smaller variance transactions when the goods are added to a voyage, because the standard cost will reflect the estimates of those landed costs.
 
-To open the **Cost estimate** dialog box, go to **Landed cost \> Periodic tasks \> Cost estimate**. Then make the settings described in the following subsections and finally select **OK** to create the estimate. The **Cost estimate** page (**Landed cost \> Inquiries \> Cost estimates**) then opens showing your new estimate, as described later in this topic.
+To open the **Cost estimate** dialog box, go to **Landed cost \> Periodic tasks \> Cost estimate**. Then set the fields that are described in the following subsections. Finally, select **OK** to create the estimate. The **Cost estimate** page (**Landed cost \> Inquiries \> Cost estimates**) then appears and shows your new estimate, as described later in this topic.
 
-### The Parameters tab
+### Settings on the Parameters tab
 
-Make the following settings on the **Parameters** tab of the **Cost estimate** dialog box.
+The following table describes the fields that are available on the **Parameters** tab of the **Cost estimate** dialog box.
 
-| Setting | Description |
-| --- | --- |
-| **Cost template** | Select a cost template. The settings associated with your selected template will be used to identify the auto costs to apply. |
-| **Estimate date** | This is set to today's date by default, but you can change it if needed. The date specified will be used to select the appropriate sales prices, purchase prices, auto costs and exchange rate (where shipping rate is used). |
-| **Measurement** | If the cost depends on a measurement (such as when using air freight, where volumetric pricing may apply) then enter the value of that measurement. Otherwise, we recommend that set this to 1 unless you are certain that no apportionment occurs using measurement. Enter a decimal value here. The unit is the one defined on the applicable auto-cost record. |
-| **Journey template** | Select a [journey template](multi-leg-journey-setup.md). This selection is used to locate the correct auto costs to apply. |
-| **From port** | Shows the port that the items will be shipped from. This is populated based on the selected journey template. |
-| **To port** | Shows the port that the items will be shipped to. This is populated based on the selected journey template. |
-| **Currency** | Select the currency that the items will be purchased in. |
-| **Containers** | If multiple containers are normally used, then specify the number of containers. The system will then use costs for multiple containers while estimating the costs. |
-| **Folios** | If multiple folios are normally used, then specify the quantity (this is normally 1). |
-| **Site** | Specify the site where the goods will be delivered. |
 
-### Items tab
+| Field | Description |
+|---|---|
+| Cost template | Select a cost template. The settings that are associated with the selected template will be used to determine the auto costs that are applied. |
+| Estimate date | By default, this field is set to today's date, but you can change the value. The specified date will be used to select the appropriate sales prices, purchase prices, auto costs, and the exchange rate if a shipping rate is used. |
+| Measurement | Costs might depend on a measurement. For example, when air freight is used, volumetric pricing might apply. If the cost depends on a measurement, enter the value of that measurement. Otherwise, we recommend that you set this field to *1*, unless you're certain that no apportionment occurs by using measurement. Enter a decimal value here. The unit is the one defined on the applicable auto-cost record. |
+| Journey template | Select a [journey template](multi-leg-journey-setup.md). This field is used to determine the correct auto costs that should be applied. |
+| From port | The port that the items will be shipped from. This field is set based on the selected journey template. |
+| To port | The port that the items will be shipped to. This field is set based on the selected journey template. |
+| Currency | Select the currency that the items will be purchased in. |
+| Containers | If multiple containers are typically used, specify the number of containers. The system will then use costs for multiple containers when it estimates the costs. |
+| Folios | If multiple folios are typically used, specify the quantity. (The quantity is usually *1*.) |
+| Site | Specify the site where the goods will be delivered. |
 
-The **Items** tab lets you add as many items as needed to the estimate. Use the toolbar to add and remove items in the grid. Select **Inventory \> Display dimensions** on the toolbar to open a dialog box where you can add or remove dimension columns in the grid. The following table describes the settings available for each item.
+### Settings on the Items tab
 
-| Setting | Description |
-| --- | --- |
-| **Item number** | Select the item you wish to determine the price for. (If the item doesn't yet exist in your system, create a dummy item, optionally attach it to a voyage item cost group, and either leave the price blank or create/change the price.) |
-| **Vendor account** | Select the vendor to use for the estimate of this item. (If the item has a default vendor assigned, this will be populated automatically.) |
-| **Quantity** | Select the quantity that you will purchase. |
-| **Cost price** | The system finds an initial price using its pricing rules, but you can override if necessary. |
-| **Sales price** | Enter the expected sales price for the good. |
-| **Measurement** | Enter a decimal value for the measurement of the good. The unit is set up for the applicable released product. |
-| **Update item weight/volume** | Select this check box if you would like to update the weight or volume measurement on the released product to match the **Measurement** entered for this row. |
+On the **Items** tab, you can add as many items to the estimate as you require. Use the toolbar to add items to the grid or remove items. Select **Inventory \> Display dimensions** on the toolbar to open a dialog box where you can add dimension columns to the grid or remove columns.
+
+The following table describes the fields that are available for each item.
+
+| Field | Description |
+|---|---|
+| Item number | Select the item to determine the price for. (If the item doesn't yet exist in the system, create a dummy item, optionally attach it to a voyage item cost group, and then either leave the price blank, or create or change the price.) |
+| Vendor account | Select the vendor to use for the estimate of this item. If a default vendor is assigned to the item, this field is automatically set. |
+| Quantity | Select the quantity that you will purchase. |
+| Cost price | The system finds an initial price using its pricing rules, but you can override if necessary. |
+| Sales price | Enter the expected sales price for the good. |
+| Measurement | Enter a decimal value for the measurement of the good. The unit is set up for the applicable released product. |
+| Update item weight/volume | Select this check box if you would like to update the weight or volume measurement on the released product to match the **Measurement** entered for this row. |
 | (Other dimensions) | Depending on which dimensions you have chosen to display, you may see additional columns of information about each item. |
 
-To view or adjust volume an/or weight details for an item, select the item in the grid and then use the fields at the bottom of the page.
+> [!NOTE]
+> Depending on the dimensions that you've selected to show, the grid might also include other columns of information about each item.
 
-## Manage estimate costs
+To view or adjust the volume and/or weight details for an item, select the item in the grid, and then use the fields at the bottom of the page.
 
-To view and edit the cost estimates you have created, go to **Landed cost \> Inquiries \> Cost estimates**. This page includes a list pane that lists current cost estimates and provides Action Pane actions to work with the selected estimate. Note that you can't create a new cost estimate from this Action Pane (instead, go to **Landed cost \> Periodic tasks \> Cost estimate**, as described previously in this topic).
+## Manage estimated costs
 
-The **Cost estimates** page shows how each estimated cost was derived and the estimated landed cost for each item. You can modify a cost estimate by changing the cost price and/or currency associated with the various goods. You can also modify the associated voyage costs at both the voyage and container level. When you modify the costs using this page, you will be asked to recalculate the estimate costs for the items within the cost estimate. When you're ready, you can choose to use the estimates to update the cost price of the items within the cost template.
+To view and edit the cost estimates that you've created, go to **Landed cost \> Inquiries \> Cost estimates**. On the **Cost estimates** page, the list pane on the left shows all current cost estimates. You can use the buttons on the Action Pane to work with a selected estimate. Note that you can't create a new cost estimate from the **Cost estimates** page. Instead, use the **Cost estimate** dialog box (**Landed cost \> Periodic tasks \> Cost estimate**), as described earlier in this topic.
 
-### Information in the header
+The **Cost estimates** page shows how each estimated cost was derived. It also shows the estimated landed cost for each item. You can modify a cost estimate by changing the cost price and/or currency that is associated with the various goods. You can also modify the associated voyage costs at both the voyage level and the container level. When you use this page to modify the costs, you're prompted to recalculate the estimated costs for the items in the cost estimate. When you're ready, you can use the estimates to update the cost price of the items in the cost template.
 
-At the top of the **Cost estimates** page you can see the settings used to generate the selected cost estimate, as described in the previous section. 
+### Information on the header
 
-### The Lines FastTab
+The top of the **Cost estimates** page shows the settings that were used to generate the selected cost estimate, as described in the previous section. 
 
-The **Lines** FastTab lists each item included in the current estimate. The following table describes the settings available for each row here.
+### Settings and buttons on the Lines FastTab
 
-| Setting | Description |
-| --- | --- |
-| **Vendor Account** | The vendor account associated with the item. |
-| **Item Number** | The item number. |
-| **Quantity** | The number of items used to determine the cost. |
-| **Cost Price** | The cost price (according to the trade agreement) shown in local currency. |
-| **Measurement** | The individual measurement is shown here. The unit is the one defined for the applicable released product. |
-| **Estimated landed cost** | The estimated landed cost for the total quantity. |
-| **Per unit** | The estimated landed cost divided by the quantity. |
+The **Lines** FastTab lists each item that is included in the current estimate. The following table describes the field that are available for each row.
+
+| Field | Description |
+|---|---|
+| Vendor account | The vendor account that is associated with the item. |
+| Item number | The item number. |
+| Quantity | The number of items that are used to determine the cost. |
+| Cost price | The cost price according to the trade agreement. This value is shown in the local currency. |
+| Measurement | The individual measurement is shown here. The unit is the one defined for the applicable released product. |
+| Estimated landed cost | The estimated landed cost for the total quantity. |
+| Per unit | The estimated landed cost divided by the quantity. |
 | (Other dimensions) | Depending on which dimensions you have chosen to display, you may see additional columns of information about each item. |
 
-The following table describes the commands available on the **Lines** FastTab toolbar.
+> [!NOTE]
+> Depending on the dimensions that you've selected to show, the grid might also include other columns of information about each item.
 
-| Action | Description |
-| --- | --- |
-| **Add** | Add items to the cost estimate. You must select **Recalculate** from the Action Pane after making changes to this value. |
-| **Remove** | Remove items from the cost estimate. You must select **Recalculate** from the Action Pane after making changes to this value. |
-| **Voyage costs** | Opens a page where you can view and edit various types of voyage costs for the item. |
-| **Inventory \> Display dimensions** | Select this command to open a dialog box where you can add or remove dimension columns shown in the grid. |
+The following table describes the buttons that are available on the toolbar on the **Lines** FastTab.
 
-### The General FastTab
+| Button | Description |
+|---|---|
+| Add | Add items to the cost estimate. After you add items, you must select **Recalculate** on the Action Pane. |
+| Remove | Remove items from the cost estimate. After you remove items, you must select **Recalculate** on the Action Pane. |
+| Voyage costs | Open a page where you can view and edit various types of voyage costs for the item. |
+| Inventory \> Display dimensions | Open a dialog box where you can add dimension columns to the grid or remove columns. |
+
+### Settings on the General FastTab
 
 The **General** FastTab shows details about the item currently selected on the **Lines** FastTab. Much of this information is repeated from the **Lines** FastTab and can be edited at either location. However, additional details are also available here. The extra fields here show values based on the relevant released product setup.
 
-### The Dimension FastTab
+### Settings on the Dimension FastTab
 
 The **Dimension** FastTab shows values for all available inventory dimensions for the item selected on the **Lines** FastTab, regardless of which dimensions you have chosen to display there. The values shown here (if any) come from the applicable cost estimate template. They are optional on the cost estimate template.
 
-### Commands on the Action Pane
+### Buttons on the Action Pane
 
-The **Cost estimates** page includes an Action Pane with commands for working with the selected cost estimate. The following table describes each available action.
+You can use the buttons on the Action Pane of the **Cost estimates** page to work with the selected cost estimate. The following table describes the buttons that are available.
 
 | Action | Description |
-| --- | --- |
-| **Cost Inquiry** | View all costs for the voyage. The **Cost inquiry** page opens displaying this information. Cost can be viewed at the individual item level by selected **View** from the action pane and then selecting view options from the dialog box. |
-| **Update standard cost** | Updates the standard cost using the default costing version defined on the **Landed cost** parameters page. This open a dialog box where it is possible to override this version and choose which items to update.<br><br>**Note**: If an item has more than one item dimensions (such as various sizes, colors, configurations, and so on) and these have not been selected for the estimate, the system will create a pending price for each combination.<br><br>**Important**: The price breakdown is created, which breaks down the various costs within the standard cost of each selected item. This is used to determine the standard cost variance per landed cost. |
-| **Voyage costs** | View and edit voyage costs for all goods within the shipment. |
-| **Recalculate** | When voyage costs are updated, added, or removed, select this button to update the estimated landed costs. |
-| **Lock** | Lock the cost estimate record so that no further changes can be made. |
+|---|---|
+| Cost Inquiry | View all costs for the shipment. You can view costs at the level of the individual item as required. <!-- KFM: Do we mean "shipment". How can I view them at the individual item level? --> |
+| Update standard cost | <p>Update the standard cost by using the default costing version that is defined in the shipment parameters <!-- KFM: Where is this setting? -->. You can override this version <!-- KFM: How? -->.</p><p>**Note:** If an item has many <!-- KFM: How many? --> item dimensions (for example, various sizes, colors, and configurations), but these dimensions haven't been selected for the estimate, the system will create a pending price for each combination.</p><p>**Important:** The price breakdown is created and is used to determine the standard cost variance per landed cost.<!-- KFM: This isn't clear to me. What is a price breakdown? --></p> |
+| Voyage costs | View and edit voyage costs for all goods in the shipment. |
+| Recalculate | Update the estimated landed costs after voyage costs are updated, added, or removed. |
+| Lock | Lock the cost estimate record so that no more changes can be made. |
 
 ## Item cost price update
 
 The **Item cost price update** periodic task updates all cost estimates that match the filters you set when running the task. The effect is similar to when you select **Update standard cost** from the Action Pane for a single estimate, but in this case it applies to all matching estimates.
 
-To run the task:
+To run the periodic task, follow these steps.
 
 1. Go to **Landed cost \> Periodic tasks \> Item cost price update**.
-1. The update cost price from estimate dialog box opens. Set the following options as needed to limit the scope of the update:
-    - **Version** - Only update estimates that use this costing version.
-    - **Site** - Only update estimates that use this site.
-    - **Cost template** - Only update estimates that use this template.
-    - **To port** - Only update estimates that use this to port.
-    - **Estimate date** - Only update estimates that have this date.
-1. Set the **Records to include** and **Run in the background** options as usual for periodic tasks.
+1. In the **Update cost price from estimate** dialog box, set the following fields as required to limit the scope of the update:
+
+    - **Version** – Update only estimates that use the specified costing version.
+    - **Site** – Update only estimates that use the specified site.
+    - **Cost template** – Update only estimates that use the specified template.
+    - **To port** – Update only estimates that use the specified "to" port.
+    - **Estimate date** – Update only estimates that have the specified date.
+
+1. Set the options on the **Records to include** and **Run in the background** FastTab as usual for periodic tasks.
 1. Select **OK** to run the task.
 
 > [!NOTE]
-> The following information must be populated for this periodic task to run:
+> This periodic task will only execute successfully provided the following information is available:
 >
-> - Released Products \> Gross depth
-> - Released Products \> Gross width
-> - Released Products \> Gross height
-> - Released Products \> Default vendor
-> - Vendor \> From port
+> - Each relevant product must have a **Gross depth**, **Gross width**, and **Gross height** defined.
+> - Each relevant vendor must have a **From port** defined.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage folios
-description: This topic describes how to work with folios. A folio typically consists of one vendor's goods for one entity/company per shipment. The goods in a folio can be in one container or spread among multiple containers.
+description: This topic describes how to work with folios. A folio typically consists of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
 author: RichardLuan
 manager: tfehr
 ms.date: 12/14/2020
@@ -31,130 +31,129 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-A folio is often determined by customs regulations. It can consist of one vendor's goods for one entity/company per shipment. The goods in a folio can be in one container or spread among multiple containers.
+A folio is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
 
-To open the **All folios** page, go to **Landed cost \> Folios \> All folios**. This page shows a list of current folios and provides Action Pane actions to create, delete, and work with listed folios. Select any listed folio to see its details on its **Folios** page.
+To open the **All folios** page, go to **Landed cost \> Folios \> All folios**. This page shows a list of all current folios. You can use the buttons on the Action Pane to create, delete, and work with folios. Select any folio in the list to view its details on the **Folios** page.
 
-## Action Pane commands
+## Action Pane
 
-The Action Pane of the **All folios** and **Folios** page provides actions for working with a selected folio. Except where noted, all actions and tabs are available both for the the list view (the **All folios** page) and for the detailed view (the **All Folios** page).
+The Action Pane on the **All folios** and **Folios** pages provides buttons that let you work with a selected folio. Each button performs a single action. The Action Pane also includes tabs, each of which, in turn, provides a set of related buttons. Except where noted, all buttons and tabs that are described in the following subsections are available both in the list view (that is, on the **All folios** page) and in the detailed view (that is, on the **Folios** page).
 
-### Actions directly on the Action Pane
+### Buttons that appear directly on the Action Pane
 
-The Action Pane includes both tabs, which open to show a collection of related actions, and buttons, each of which executes a single action. The following table describes the buttons that are directly on the Action Pane.
+The following table describes the buttons that are available directly on the Action Pane.
 
-| **Setting** | **Description** |
-| --- | --- |
-| **New** | Create a folio. |
-| **Delete** | Delete the open or selected folio. |
-| **Voyage costs** | Opens the **Voyage costs** page, where you can view and add folio-level costs to all goods within the voyage. When folio costs are manually added to the voyage, they are automatically added to the costs inquiry screen and apportioned across to each good according to the method specified in the **Voyage costs** page. |
+| Button | Description |
+|---|---|
+| New | Create a folio. |
+| Delete | Delete the open or selected folio. |
+| Voyage costs | Open the **Voyage costs** page, where you can view and add folio-level costs to all the goods in the voyage. When folio costs are manually added to the voyage, they are automatically added to the cost inquiry page and apportioned to every good according to the method that is specified on the **Voyage costs** page. |
 
-### The Manage tab of the Action Pane
+### Buttons on the Manage tab
 
-The following table describes the actions available on the **Manage** tab of the Action Pane.
+The following table describes the buttons that are available on the **Manage** tab of the Action Pane.
 
-| **Action** | **Description** |
-| --- | --- |
-| **Post receipts list** | Post a receipts list for all purchase order lines within the folio. If multi-company shipments are used, a new receipts list posting dialog box will open for each company. |
-| **Post product receipt** | Post a product receipt for all purchase order lines within the folio. If multi-company voyages are used, a new product receipt posting dialog box will open for each company. |
-| **Post invoice** | Post an invoice for all purchase order lines within the folio. If multi-company voyages are used, a new invoice posting dialog box will open for each company |
-| **Ship transfer order** | Post a transfer order for all transfer order lines related to the current folio within the related shipment. |
-| **Receive transfer order** | Post a transfer order receipt for all transfer order lines related to the current folio within the related shipment. |
-| **Receive goods in transit** | Receive all order lines that are in transit within the folio. |
-| **Documents received** | Update **Documents received** to *Yes*. This can lock the item and/or purchase line for further updates. |
-| **Find auto costs** | Finds relevant voyage costs. If these have already been found or updated, the system will ask "Un-invoiced cost lines exist. Do you want to overwrite them?" Note that voyage costs that are attached to a folio and invoiced will not be over written. |
-| **Create arrival journal** | Generate an arrival journal for organizations using advanced warehouse features. You will be able to choose to **Initialize quantity** (recommended), **Create from goods in transit** and/or **Create from purchase orders**. This latter option will depend on whether the goods in transit process is being used. |
-| **Accrue costs** | Accrue costs where a cost type has a ledger account specified for the debit. This is normally used when the stock is in transit or goods have been received and invoiced. |
+| Button | Description |
+|---|---|
+| Post receipts list | Post a receipt list for all purchase order lines in the folio. If multi-company shipments are used, a new receipt list posting dialog box is opened for each company. |
+| Post product receipt | Post a product receipt for all purchase order lines in the folio. If multi-company voyages are used, a new product receipt posting dialog box is opened for each company. |
+| Post invoice | Post an invoice for all purchase order lines in the folio. If multi-company voyages are used, a new invoice posting dialog box is opened for each company. |
+| Ship transfer order | Post a transfer order for all transfer order lines that are related to the current folio in the related shipment. |
+| Receive transfer order | Post a transfer order receipt for all transfer order lines that are related to the current folio in the related shipment. |
+| Receive goods in transit | Receive all order lines that are in transit in the folio. |
+| Documents received | Update the setting of the **Documents received** option to *Yes*. You can use this button to lock the item and/or purchase line so that it can't be updated further. |
+| Find auto costs | Find relevant voyage costs. If these costs have already been found or updated, you receive the following message: "Un-invoiced cost lines exist. Do you want to overwrite them?" Note that voyage costs that are attached to the folio and that have been invoiced won't be overwritten. |
+| Create arrival journal | Generate an arrival journal for organizations by using advanced warehouse features. You can select **Initialize quantity** (recommended), **Create from goods in transit**, and/or **Create from purchase orders**. The last option depends on whether goods-in-transit processing is being used. |
+| Accrue costs | Accrue costs where a cost type has a ledger account specified for the debit. This button is typically used when the stock is in transit, or when goods have been received and invoiced. |
 
-### The General tab of the Action Pane
+### Buttons on the General tab
 
-The following table describes the actions available on the **General** tab of the Action Pane.
+The following table describes the buttons that are available on the **General** tab of the Action Pane.
 
-| **Action** | **Description** |
-| --- | --- |
-| **Receipts list** | Post a receipts list for all purchase order lines within the folio. If multi-company voyages are used, a new receipts list posting form will open for each company. |
-| **Product receipt** | View the product receipt record (where used). |
-| **Item arrival** | View the item arrival journal (where used). |
-| **Costs inquiry** | It is possible to view all the costs of a voyage including shipping container/folio/purchase order using the Inquiry form. The exact view of the form can be adjusted using the view action.View any of the areas + item and cost type code on the Inquiry form. Removing these will adjust the inquiry form by grouping costs together, this can be useful if using sizes and colors. Change the dimensions that can be seen on the Inquiry costs form.The costs form only shows cost type codes where the Dr entry on the posting tab is set to Item. |
+| Button | Description |
+|---|---|
+| Receipts list | Post a receipt list for all purchase order lines in the folio. If multi-company voyages are used, a new receipt list posting dialog box is opened for each company. |
+| Product receipt | View the product receipt record, if it's used. |
+| Item arrival | View the item arrival journal, if it's used. |
+| Costs inquiry | Open the cost inquiry page to view all the costs of a voyage, including the shipping container, folio, and purchase order. You can adjust the exact view of the page by using the View action. On the cost inquiry page, you can view any of the areas, plus the item and cost type code. By removing these items, you can adjust the page by grouping together costs. This capability can be useful if you're using sizes and colors. You can change the dimensions that are shown on the page. The **Costs** page shows only cost type codes where the **Dr** entry on the **Posting** tab is set to *Item*. |
 
-## The Header view
+## Header view
 
-To open the **Header** view, open a folio and then select the **Header** tab at the top-right part of the folio heading.
+To open the **Header** view, open a folio, and then select the **Header** tab in the upper right of the folio heading.
 
-### The General FastTab of the Header view
+### Settings on the General FastTab
 
-The following table describes the settings available on the **General** FastTab of the **Header** view of a folio.
+The following table describes the fields that are available on the **General** FastTab of the **Header** view of a folio.
 
-| **Setting** | **Description** |
-| --- | --- |
-| **Folio** | Shows the name of the folio. This was generated automatically when the folio was created.|
-| **Voyage** | Shows the voyage associated with this folio. |
-| **Customs Broker** | Select the customs broker for this folio. Customs brokers are defined on the vendor; this can determine created costs automatically. |
-| **House air waybill/Bill of lading** | Specify the house air waybill or bill of lading that applies for the folio. |
-| **Company** | The legal entity (company) associated with this folio. |
-| **Cargo control number** | This is used by customs departments in certain countries. |
-| **Measurement** | This allows for a measurement to be specified within the Landed cost module. This is often used by organizations that don't know the individual volume/weight of the goods, but they require a more accurate apportionment than amount or quantity. The freight forwarder will supply you with the weight or cubic measurement, which you place at either an item level or purchase order level. It can be automatically updated if the parameter is selected or manually input. |
-| **Measurement unit** | The unit that applies to the specified **Measurement**. |
-| **Number of cartons** | The number of cartons within this folio. This can be automatically updated depending on the parameter selection. |
-| **Vendor account** | Select the vendor associated with this folio. This is for informational purposes only (does not affect any functionality). |
-| **Name** | Shows the name of the selected **Vendor account**. |
-| **Remarks** | Enter any additional information relating to the folio. |
-| **Description of goods** | Select a goods description to assist in identifying the folio. For more information, see [Description of goods](shipping-information-setup.md#description-of-goods)
- |
-| **Valuation date** | This relates to the duty entry form. The Landed cost module wiill use the customs exchange rate for the date set here. This defaults to the date on the duty entry form. |
-| **Customs ID** | Certain countries customs departments give a customs ID, which you can store here. |
-| **Tariff code** | Enter a tariff code to associate with folio. This is typically required (and defined) by the country you are shipping to. |
+| Field | Description |
+|---|---|
+| Folio | The name of the folio. This name is automatically generated when the folio is created.|
+| Voyage | The voyage that is associated with the folio. |
+| Customs broker | Select the customs broker for the folio. Customs brokers are defined on the vendor. They enable created costs to be determined automatically. |
+| House air waybill/Bill of lading | Specify the house air waybill or bill of lading that applies to the folio. |
+| Company | The legal entity (company) that is associated with the folio. |
+| Cargo control number | This field is used by customs departments in some countries or regions. |
+| Measurement | This field enables a measurement to be specified in the **Landed cost** module. Measurements are often used by organizations that don't know the individual volume or weight of goods, but that require a more accurate apportionment than the amount or quantity provides. The freight forwarder will provide the weight or cubic measurement, and you can put it at the level of either an item or the purchase order. It can be automatically updated if the parameter is selected or manually entered. |
+| Measurement unit | The unit that applies to the specified measurement. |
+| Number of cartons | The number of cartons in the folio. This field can be automatically updated, depending on the parameter selection. |
+| Vendor account | Select the vendor that is associated with the folio. This field is for informational purposes only. It doesn't affect any functionality. |
+| Name | The name of the selected vendor account. |
+| Remarks | Enter any additional information that is related to the folio. |
+| Description of goods | Select a goods description to help identify the folio. For more information, see [Description of goods](shipping-information-setup.md#description-of-goods). |
+| Valuation date | This field is related to the duty entry page. The **Landed cost** module will use the customs exchange rate for the date that you set here. The default value is the date on the duty entry page. |
+| Customs ID | Enter the customs ID. The customs departments in countries or regions provide this ID. |
+| Tariff code | Enter a tariff code to associate with the folio. This code is typically required (and defined) by the country or region that you're shipping to. |
 
-### The Delivery FastTab of the Header view
+### Settings on the Delivery FastTab
 
-The following table describes the settings available on the **Delivery** FastTab of the **Header** view of a folio.
+The following table describes the settings that are available on the **Delivery** FastTab of the **Header** view of a folio.
 
-| **Setting** | **Description** |
-| --- | --- |
-| **Folio date** | Select a date to associate with the folio. It defaults to the created date of the voyage. |
-| **ETA at shipping port** | This is the estimated time of arrival (ETA) date at the destination port or "To port" |
-| **Estimated delivery date** | This is normally the date that the goods are due to arrive in the warehouse. This field is not used in the estimated delivery date calculation (the tracking control estimated delivery date is used instead). You can set this field to be equal to the tracking control estimated delivery date by using the  [Tracking control center](delivery-information-setup.md#tracking-control-center). |
-| **Original Documents Received** | The date the original documents were received. |
-| **Broker Advised** | The date the broker was advised. |
-| **Original bill of landing sent** | The date the original bill of Lading was sent. |
-| **Goods released** | The date goods were released. |
-| **Customer appointment** | The customer appointment date. |
-| **Delivered at warehouse** | The date goods were delivered to the warehouse. |
-| **Verification date** | The verification date. |
-| **Delivery instructions** | The date on which the delivery instructions were received. |
-| **From port** | The port the voyage departs from. |
-| **To port** | The port the voyage arrives at. It is possible that the shipping container could have a different port because the ship may stop at multiple ports. |
+| Field | Description |
+|---|---|
+| Folio date | Select a date to associate with the folio. The default value is the creation date of the voyage. |
+| ETA at shipping port | The estimated time of arrival (ETA) date at the destination port ("to" port). |
+| Estimated delivery date | Usually, the date when the goods are due to arrive in the warehouse. This field isn't used when the estimated delivery date is calculated. (The tracking control estimated delivery date is used instead.) To set this field so that the value matches the tracking control estimated delivery date, use the [Tracking control center](delivery-information-setup.md#tracking-control-center). |
+| Original documents received | The date when the original documents were received. |
+| Broker advised | The date when the broker was advised. |
+| Original bill of landing sent | The date when the original bill of lading was sent. |
+| Goods released | The date when goods were released. |
+| Customer appointment | The customer appointment date. |
+| Delivered at warehouse | The date when goods were delivered to the warehouse. |
+| Verification date | The verification date. |
+| Delivery instructions | The date when the delivery instructions were received. |
+| From port | The port that the voyage departs from. |
+| To port | The port where the voyage arrives. The shipping container might have a different port, because the ship might stop at multiple ports. |
 
-### The Export FastTab of the Header view
+### Settings on the Export FastTab
 
-The following table describes the settings available on the **Export** FastTab of the **Header** view of a folio.
+The following table describes the settings that are available on the **Export** FastTab of the **Header** view of a folio.
 
-| **Setting** | **Description** |
-| --- | --- |
-| **Exporter** | The exporter can be stored on the folio. It is possible with international trade to send a purchase order to one company but receive the goods from another. This tracking and documentation are required by customs. The name and address of the exporter can be stored here. |
-| **Name** | Shows the name of the selected **Exporter**. |
+| Field | Description |
+|---|---|
+| Exporter | The exporter can be stored on the folio. In international trade, you might send a purchase order to one company but receive the goods from another company. Tracking and documentation are required by customs. The name and address of the exporter can be stored here. |
+| Name | The name of the selected exporter. |
 
-## Settings in Lines view
+## Lines view
 
-To open the **Lines** view, open a folio and then select the **Lines** tab at the top-right part of the folio heading.
+To open the **Lines** view, open a folio, and then select the **Lines** tab in the upper right of the folio heading.
 
-### The Folio FastTab
+### Information on the Folio FastTab
 
-This FastTab shows information about the folio. Most of this information is repeated from Header view, as described in the previous section.
+The **Folio** FastTab in the **Lines** view shows information about the folio. Most of this information also appears in the **Header** view, as described earlier in this topic.
 
-### The Lines FastTab
+### Information and buttons on the Lines FastTab
 
-This FastTab shows details about each of the purchase order lines (full or partial) included in the current folio.
+The **Lines** FastTab in the **Lines** view shows details about each full or partial purchase order line that is included in the current folio.
 
-The following table describes the commands available in the toolbar of the **Lines** section of the **Lines** view.
+The following table describes the buttons that are available on the **Lines** FastTab in the **Lines** view.
 
-| **Action** | **Description** |
-| --- | --- |
-| **Remove** | Remove the selected purchase order line from the voyage. |
-| **Inventory \> Transactions** | View inventory transactions for the selected line. Note that if you are using goods in transit, the original order and the goods in transit orders will also be displayed. |
-| **Inventory \> Display dimensions** | Opens a dialog box where you can select the inventory dimensions that appear for the transactions that you view. |
-| **Refresh** | Refresh information relating to the line amount, weight, or volume of the selected purchase order line. |
+| Button | Description |
+|---|---|
+| Remove | Remove the selected purchase order line from the voyage. |
+| Inventory \> Transactions | View inventory transactions for the selected purchase order line. Note that if you're using goods in transit, the original order and the goods-in-transit orders are also shown. |
+| Inventory \> Display dimensions | Open a dialog box where you can select the inventory dimensions that appear for the transactions that you view. |
+| Refresh | Update information that is related to the line amount, weight, or volume of the selected purchase order line. |
 
-### The Lines details FastTab
+### Information on the Lines details FastTab
 
-This FastTab shows details about the line currently selected on the **Lines** FastTab.
+The **Lines details** FastTab in the **Lines** view shows details about the purchase order line that is currently selected on the **Lines** FastTab.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Track inbound voyages and shipping container journeys
-description: Use the Inbound tracking page to track the progress of your voyages and shipping container journeys.
+description: This topic explains how you can use the Inbound tracking page to track the progress of your voyages and shipping container journeys.
 author: RichardLuan
 manager: tfehr
 ms.date: 01/13/2021
@@ -31,52 +31,54 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-Use the **Inbound tracking** page to track the progress of your voyages and shipping container journeys. Each voyage and journey is broken down by *activities*, each of which has its own row on this page. Use it to view and enter estimated dates and actual dates by activity. Depending on your [Tracking control center](delivery-information-setup.md#tracking-control-center) setup, these activities will normally automatically show the estimated landing date at the final destination. Again, depending on the setup, the final date will usually also update the purchase order line delivery date or confirmed date. For transfer order lines, you can set up the system to update the receipt date.
+The **Inbound tracking** page lets you track the progress of your voyages and shipping container journeys. Each voyage and journey is broken down by *activities*, each of which has its own row on the page. You can use the page to view and enter estimated dates and actual dates by activity.
 
-To open the the **Inbound tracking** page, go to **Landed cost \> Tracking \> Inbound tracking**.
+Typically, depending on the setup in the [Tracking control center](delivery-information-setup.md#tracking-control-center), these activities automatically show the estimated landing date at the final destination. Also depending on the setup, the final date usually updates the delivery date or confirmed date on purchase order lines. For transfer order lines, you can set up the system to update the receipt date.
+
+To open the **Inbound tracking** page, go to **Landed cost \> Tracking \> Inbound tracking**.
 
 ## Filter the activities list
 
-Use the **Voyage** and **Shipping container** fields at the top of the **Inbound tracking** page to view only those activities associated with your selected voyage and/or shipping container.
+You can use the **Voyage** and **Shipping container** fields at the top of the **Inbound tracking** page to filter the page so that it shows only activities that are associated with the selected voyage and/or shipping container.
 
 ## Update tracking information
 
-To update the schedule for a voyage or journey, enter the start date on the first activity to update the estimated end date on the last activity. The setup in the [Tracking control center](delivery-information-setup.md#tracking-control-center) for each leg and journey template will determine the estimated lead times. The estimated end dates will use the lead time from the start date of that activity. Recording the actual end date will update the start date of the next activity with the same date as the previous activities actual end date. The actual lead time will be updated allowing comparison and analysis to occur. Additional notes can be entered in the note field.
+To update the schedule for a voyage or journey, enter the start date for the first activity. The estimated end date of the last activity is then updated. The setup for each leg and journey template in the [Tracking control center](delivery-information-setup.md#tracking-control-center) determines the estimated lead times. The estimated end dates use the lead time from the start date of the activity. Then, when the actual end date is recorded, the start date of the next activity is updated to the same date as the previous activity's actual end date. The actual lead time is updated so that comparison and analysis can be done. Additional notes can be entered in the **Note** field.
 
-The order of the activities in the grid is determined by the order of the legs in the relevant journey template. If the legs of the attached journey change order, the tracking control will likewise change.
+The order of the activities in the grid is determined by the order of the legs in the relevant journey template. If order of the legs in the attached journey changes, the tracking control also changes.
 
-You can update the dates for all containers by selecting **Update start date** or **Update actual end date** on the Action Pane. Alternatively, the dates can be entered per container on the shipment to allow greater flexibility as containers can be split in a multi-journey environment.
+You can update the dates for all containers by selecting **Update start date** or **Update actual end date** on the Action Pane. Alternatively, you can enter the dates per container on the shipment. This approach allows for greater flexibility, because containers can be split in a multi-journey environment.
 
-## Action Pane commands
+## Buttons on the Action Pane
 
-The Action Pane of the **Inbound tracking** page provides actions for working with inbound voyages and journeys.
+You can use the buttons on the Action Pane of the **Inbound tracking** page to work with inbound voyages and journeys. The following table describes the buttons that are available.
 
-| Action | Description |
-| --- | --- |
-| **Edit** | Edit a voyage or shipping container journey. |
-| **New** | Create a new voyage or shipping container journey. |
-| **Delete** | Delete a selected voyage or shipping container journey. |
-| **Update start date** | Update the start date for an activity for all containers within a voyage. When the start date of a given activity or leg of a journey is updated, the subsequent estimated start dates will update in accordance with the specified lead time. |
-| **Update actual end date** | Update the end date for an activity for all containers within a voyage. When the end date of a given activity is updated, the subsequent activities will update in accordance with the specified lead time. |
-| **Add activities** | Manually add an activity to a voyage. An example of this might be fumigation. The addition may result in a change in the confirmed delivery date of the goods within the vessel or voyage. When an activity is added to the journey, the estimated days will not populate until the start date of a journey leg is updated. |
+| Button | Description |
+|---|---|
+| Edit | Edit a voyage or shipping container journey. |
+| New | Create a new voyage or shipping container journey. |
+| Delete | Delete a selected voyage or shipping container journey. |
+| Update start date | Update the start date of an activity for all containers in a voyage. When the start date of a specific activity or leg of a journey is updated, the subsequent estimated start dates are updated based on the specified lead time. |
+| Update actual end date | Update the end date of an activity for all containers in a voyage. When the end date of a specific activity is updated, the subsequent activities are updated based on the specified lead time. |
+| Add activities | Manually add an activity to a voyage. For example, you might add a fumigation activity. The addition might cause the confirmed delivery date of the goods in the vessel or voyage to change. When an activity is added to the journey, the estimated days aren't entered until the start date of a journey leg is updated. |
 
 ## Information and settings on the Overview tab
 
-The **Overview** tab shows a list of all of the activities that belong to the **Voyage** and **Shipping container** selected at the top of the page. The following table describes each of the settings available for each activity.
+The **Overview** tab shows a list of all the activities that belong to the voyage and/or shipping container that is selected at the top of the page. The following table describes the fields that are available for each activity.
 
-| Setting | Description |
-| --- | --- |
-| **Leg** | Shows the leg ID for the activity, as defined by the journey template. |
-| **Mode of Delivery** | The delivery method expected for this activity. |
-| **Activity** | Usually identifies the job or task that associated with the activity. Common examples include *Sailing* or *Clearance*. |
-| **Description** | A longer description of the activity. |
-| **Start Date** | Initially shows the estimated start date for the activity but once the previous activity's actual end date has been entered, this becomes the actual start date. This is used to determine the estimated end date based on the lead time. |
-| **Estimated end date** | This is calculated based on the start date and lead time. You wouldn't normally edit it directly here. |
-| **Actual end date** | A user should update this as soon as possible once the activity has occurred. The actual lead time is then updated. |
-| **Estimated days** | The estimated time (in days) required to complete this activity. |
-| **Actual days** | The actual time (in days) required to complete this activity. |
-| **Note** | Use this to add miscellaneous notes and details about the activity. |
+| Field | Description |
+|---|---|
+| Leg | The leg ID for the activity, as defined by the journey template. |
+| Mode of delivery | The expected delivery method for the activity. |
+| Activity | This field usually identifies the job or task that is associated with the activity. Typical examples include *Sailing* and *Clearance*. |
+| Description | A longer description of the activity. |
+| Start date | This field initially shows the estimated start date of the activity. However, after the previous activity's actual end date has been entered, it shows the actual start date. This field is used to determine the estimated end date, based on the lead time. |
+| Estimated end date | The value of this field is calculated based on the start date and lead time. You won't usually edit the value directly. |
+| Actual end date | A user should update this field as soon as possible after the activity has occurred. The actual lead time is then updated. |
+| Estimated days | The estimated time (in days) that is required to complete the activity. |
+| Actual days | The actual time (in days) that is required to complete the activity. |
+| Note | Use this field to add miscellaneous notes and details about the activity. |
 
 ## Information and settings on the General tab
 
-The **General** tab shows more information about the leg previously selected on the **Overview** tab. It repeats some information from the **Overview** tab and also provides additional information about the selected leg.
+The **General** tab shows information about the leg that is selected on the **Overview** tab. Although it repeats some of the information that appears on the **Overview** tab, it also includes additional information about the selected leg.

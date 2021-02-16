@@ -75,14 +75,14 @@ In the **Lines** section, add a line for each leg of the journey, and put the li
 
 ## Activities
 
-The **Activities** settings establish the types of activities that can occur at the destination port of a leg. Users working on the **All shipping containers** page will be able to select among these values when estimating the duration of each activity and when recording the actual duration for comparison purposes.
+The settings on the **Activities** page establish the types of activities that can occur at the destination port of a leg. Users who work on the **All shipping containers** page can select among these values when they estimate the duration of each activity and record the actual duration for comparison purposes.
 
-To set up your activities, go to **Landed cost \> Multi-leg journeys setup \> Activities**. From here, you can add, remove, and edit activities in the grid by using commands in the Action Pane.
+To set up your activities, go to **Landed cost \> Multi-leg journeys setup \> Activities**. There, you can add, remove, and edit activities by using the buttons on the Action Pane.
 
-The following table describes the settings available for each activity listed in the grid.
+The following table describes the fields that are available for each activity in the grid.
 
 | Field | Description |
 |---|---|
 | Activity | The name of the activity. |
 | Description | A description of the activity. |
-| Shipping company | The vendor account of the shipping company associated with this activity. |
+| Shipping company | The vendor account of the shipping company that is associated with the activity. |
