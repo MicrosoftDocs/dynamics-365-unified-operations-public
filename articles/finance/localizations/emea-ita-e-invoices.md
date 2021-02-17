@@ -31,10 +31,11 @@ ms.author: v-oloski
 
 This topic describes how to set up and work with the functionality for creating and sending sales invoices and project invoices in an electronic format (FatturaPA).
 
-Version 1.2 of FatturaPA electronic invoices can be used for all types of businesses. These businesses include public administrations, private companies, and professionals.
+Starting from version 1.2 of FatturaPA, electronic invoices can be used for all types of businesses. These businesses include public administrations, private companies, and professionals.
 
-> [!NOTE]
-> The primary address of the legal entity must be in Italy.
+## Prerequisites
+
+- The primary address of the legal entity must be in Italy.
 
 This topic contains the following information:
 
@@ -290,6 +291,9 @@ To enable the system to enter information in these blocks, set the following fie
 For each base document, users can add details about the document number and date, CUP (unique project code that is managed by the Inter Ministerial Committee for Economic Planning), CIG (tender procedure identification code), and agreement code.
 
 ### Base documents for public sector companies
+
+> [!NOTE]
+ > This functionality is available in the system starting from the version 10.0.17.
 
 In Italy, it is legally required that public sector companies must provide the traceability of tender procedures codes (CIG) and projects codes (CUP) during invoicing and payments. To provide it, an additional control of **CIG** and **CUP** codes is implemented for public sector companies. 
 For information about this functionality, see [Italian localization - Payment traceability](emea-ita-payment-traceability.md).
