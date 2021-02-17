@@ -55,6 +55,14 @@ You can set up interest rates that calculate a specified percentage.
 
 For example, to set up an interest code that assesses 5 percent interest for every two months that the invoice payment exceeds the transaction due date, you would enter 2 in the **Calculate interest every** field and select **Month**.
 
+ > [!NOTE] The new algorithm of interest note calculation is added via Feature management. To use this algorithm, enable the new **(GBL) Allow to calculate interest per day as yearly percent divided by 365** feature.
+ > How to enable the feature, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+ > This feature is available in version 10.0.19 or later.
+ >
+ >  Formula for the calculation of intererest note amount: **Interest note amount** = **Amount owed** * **Yearly interest %** / **365** * **Number of days late**. 
+ >    
+ 
+
 ## Interest rates based on amounts
 You can set up interest rates that calculate a specified amount per currency.
 - An interest amount is specified for each currency in the interest code.
