@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-1.  Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.
+1.  Go to **Service management** \> **Setup** \> **Service orders** \> **Service stages**.
 
-2.  Press CTRL+N to create a new record.
+2.  Select **New** to create a new record.
 
 3.  In the **Service stage** and **Description** fields, specify a service stage ID and description.
 
