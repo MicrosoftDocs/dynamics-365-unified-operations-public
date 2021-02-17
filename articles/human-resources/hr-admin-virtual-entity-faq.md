@@ -92,7 +92,6 @@ If there are no columns added in the quick find view for the table, then the sea
 
 ### Are custom fields supported on virtual tables?
 
-Yes, custom fields are supported on virtual tables. The custom field must first be added to the data entity related to the virtual table. You can then generate/refresh the virtual table to include the custom field in the schema of the virtual table. For more information on adding custom fields to data entities, see [Exposing custom fields on data entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields?toc=/dynamics365/human-resources/toc.json#exposing-custom-fields-on-data-entities).
-
+Yes, custom fields are supported on virtual tables. You must first add the custom field to the data entity related to the virtual table. You can then generate or refresh the virtual table to include the custom field in its schema. For more information on adding custom fields to data entities, see [Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields?toc=/dynamics365/human-resources/toc.json#exposing-custom-fields-on-data-entities).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
