@@ -183,7 +183,13 @@ The **CodiceValore** field is set according to the following rules:
 - If there isn't a bar code, and the record on the **External item description** page exists for the product and the customer, this field is set to the value from **External item number** field.
 - If there isn't a bar code, and the record on the **External item description** page doesn't exist for the product and customer, this field is set to the value from the **Item number** field.
 
-### <a id="Natura"></a>Maintain **Natura** codes
+### <a id="Natura"></a>Maintain "Natura" codes
+
+The system allows users to either manually associate **Natura** codes with related Sales tax codes or let the system automatically determine appropriate **Natura** codes for transactions. Manuall assignment of **Natura** codes has higher priority and will override autimatically idendified  **Natura** codes.
+
+#### Define "Natura" codes
+
+
 
 #### Reverse charge and reverse charge group configuration
 
