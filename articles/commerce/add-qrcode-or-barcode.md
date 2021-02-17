@@ -2,30 +2,30 @@
 # required metadata
 
 title: Add a QR code or barcode to emails
- description: This topic explains how to insert a QR code or barcode representing an order ID into a transactional email or emailed receipt.
- author: stuharg
- manager: 
- ms.date: 2/16/2021
- ms.topic: article
- ms.prod: 
- ms.service: dynamics-365-commerce
- ms.technology: 
+description: This topic explains how to insert a QR code or barcode representing an order ID into a transactional email or emailed receipt.
+author: bicyclingfool
+manager: annbe
+ms.date: 2/16/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-commerce
+ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
- audience: Application User
- # ms.devlang: 
- ms.reviewer: 
- ms.search.scope: Retail, Commerce, Core, Operations
- # ms.tgt_pltfrm: 
- ms.custom: 
- ms.assetid: 
- ms.search.region: Global
- # ms.search.industry: 
- ms.author: stuharg
- ms.search.validFrom: 2021-02-16
- ms.dyn365.ops.version: Release 10.0.18
+audience: Application User
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Commerce, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: stuharg
+ms.search.validFrom: 2021-02-16
+ms.dyn365.ops.version: Release 10.0.18
 
 ---
 
