@@ -30,91 +30,128 @@ ms.dyn365.ops.version: Release 10.0.18
 # Rebate management groups
 
 [!include [banner](../includes/banner.md)]
-<!-- KFM: continue here -->
-The calculation for a group of customers is often created for a chain of companies, such as a supermarket chain or franchise company. This type of calculation normally relates to a rebate. With the group of customers requiring the same calculations and rebates, the rebates and deduction groups will process the details for these groups.
 
-A deduction is often calculated irrespective of whom it was sold to. However, there are exceptions, for example, a licensee may construct a deductions scheme whereby customer group A will receive 4% and for customer group B they only receive 3%.
+Rebate and deduction calculations can be driven by groups. A group can be attached to a master record. Rebate management groups can be created for customers, vendors and items.
 
-Rebate and deduction calculations can be driven by groups. A group can be attached to a master record. Rebate management groups can be created for Customers, Vendors and Items.
-
-## Customer rebate Groups
+## Rebate management customer groups
 
 The calculation for a group of customers is often created for a chain of companies, such as a supermarket chain or franchise company. This type of calculation normally relates to a rebate.
 
 A deduction is often calculated irrespective of whom it was sold to. However, there are exceptions, for example a licensee may construct a deductions scheme whereby customer group A will receive 4% and for customer group B they only receive 3%.
 
-### Set up a customer rebate group
+### Set up customer groups
 
-To work with rebate and deduction customer groups, go to **Rebate management \> Rebates and Deduction groups setup \> Customer and vendor groups** , and then make settings as described in the following subsections.
+To work with rebate management customer groups, go to **Rebate management \> Rebate management groups setup \> Customer groups**. Use commands on the Action Pane to add and remove groups as needed. For each group, make the following settings:
 
-| **Field** | **Description** |
-| --- | --- |
-| **Rebate and deductions Group** | Identification for the rebate and deduction groups |
-| **Description** | Description of the rebate and deduction groups |
+- **Rebate management group** - Enter a unique name for the group.
+- **Description** - Enter a description of the group to provide more information about how it should be used.
 
-### Attach a rebate and deduction group to a customer
+### Manage customer group assignments
 
-It is possible to add more than one Group to a customer. A customer rebate and deductions group can be attached in one of two ways:
+Each customer can belong to any number of rebate management groups. You can view and assign group members starting either from the groups list or from the customers list.
 
-- From the **Customers** button on the Rebate management customer group (above)
-  - Select **New** and select the customer
-- From **Accounts receivable \> Customers \> All customers \> Rebate deduction groups** in the Rebate and deduction group Action pane **Customers** button on the Rebate management customer group (above)
-  - Select **New** to create a new record
-  - Select the rebate and deductions group
+To view, add, or remove customers for a selected group:
 
-## Vendor rebate groups
+1. Go to **Rebate management \> Rebate management groups setup \> Customer groups**.
+1. Select the group you want to manage.
+1. From the Action Pane, select **Customers**. The **Rebate management groups** page opens, showing a list of customers that are already members of the selected group.
+1. To add a new customer to the group, select **New** on the Action Pane to add a new row to the grid and then make the following settings for it:
+    - **Customer account** - Select the customer account ID.
+    - **Name** - Enter a name and/or description of the customer.
+1. To remove a customer from the group, select the customer and select **Delete** on the Action Pane.
+
+To view, add, or remove group assignments for a selected customer:
+
+1. Go to **Accounts receivable \> Customers \> All customers**.
+1. Select the customer you want to work with.
+1. On the Action Pane, open the **Customer** tab and, from the **Rebate management** group, select **Rebate management groups**.
+1. The **Rebate management groups** page opens, showing a list of groups that the selected customer already belongs to.
+1. To add the customer to a new group, select **New** on the Action Pane to add a new row to the grid and then make the following settings for it:
+    - **Rebate management group** - Select the group you want to add.
+    - **Description** - Enter a description of the group, for example to explain why this customer is a member of it.
+1. To remove a customer from a group, select the group and then select **Delete** on the Action Pane.
+
+## Rebate management vendor groups
 
 The calculation for a group of vendors is often created for a group of delivery points. This type of calculation normally relates to a rebate.
 
-### Set up vendor rebate groups
+### Set up vendor groups
 
-To work with rebate and deduction customer groups, go to **Rebate management \> Rebates and Deduction groups setup \> Customer and vendor groups** , and then make settings as described in the following subsections.
+To work with rebate management vendor groups, go to **Rebate management \> Rebate management groups setup \> Vendor groups**. Use commands on the Action Pane to add and remove groups as needed. For each group, make the following settings:
 
-| **Field** | **Description** |
-| --- | --- |
-| **Rebate and deductions group** | Identification for the rebate and deduction groups |
-| **Description** | Description of the rebate and deduction groups |
+- **Rebate management group** - Enter a unique name for the group.
+- **Description** - Enter a description of the group to provide more information about how it should be used.
 
-### Attach a rebate and deduction group to a vendor
+### Manage vendor group assignments
 
-It is possible to add more than one Group to a vendor. A vendor rebate and deductions group can be attached in one of two ways:
+Each vendor can belong to any number of rebate management groups. You can view and assign group members starting either from the groups list or from the vendor list.
 
-- From the **Vendors** button on the Rebate management customer group (above)
-  - Select **New** and select the vendor
-- From **Accounts payable \> Vendors \> All vendors \> Rebate deduction groups** , in the **Rebate and deduction** group Action Pane **Vendors** button on the Rebate management vendor group (above)
-  - Select **New** to create a new record
-  - Select the rebate and deductions group
+To view, add, or remove vendors for a selected group:
+
+1. Go to **Rebate management \> Rebate management groups setup \> Vendor groups**.
+1. Select the group you want to manage.
+1. From the Action Pane, select **Vendors**. The **Rebate management groups** page opens, showing a list of vendors that are already members of the selected group.
+1. To add a new vendor to the group, select **New** on the Action Pane to add a new row to the grid and then make the following settings for it:
+    - **Vendor account** - Select the vendor account ID.
+    - **Name** - Enter a name and/or description of the vendor.
+1. To remove a vendor from the group, select the vendor and select **Delete** on the Action Pane.
+
+To view, add, or remove group assignments for a selected vendor:
+
+1. Go to **Accounts payable \> Vendors \> All vendors**.
+1. Select the vendor you want to work with.
+1. On the Action Pane, open the **Vendor** tab and, from the **Rebate management** group, select **Rebate management groups**.
+1. The **Rebate management groups** page opens, showing a list of groups that the selected vendor already belongs to.
+1. To add the vendor to a new group, select **New** on the Action Pane to add a new row to the grid and then make the following settings for it:
+    - **Rebate management group** - Select the group you want to add.
+    - **Description** - Enter a description of the group, for example to explain why this vendor is a member of it.
+1. To remove a vendor from a group, select the group and then select **Delete** on the Action Pane.
 
 ## Item rebate groups
 
-The purpose of grouping items gives greater flexibility for calculating rebates / deductions by groups of items. It is often a more efficient method of setting up rebates / deductions for customers and vendors.
+Grouping items gives greater flexibility for calculating rebates and deductions by groups of items. It is often a more efficient method of setting up rebates and deductions for customers and vendors.
 
-### Set up item rebate groups
+### Set up item groups
 
-To work with rebate and deduction item groups, go to **Rebate management \> Rebates and Deduction groups setup \> Item groups** , and then make settings as described in the following subsections.
+To work with rebate management item groups, go to **Rebate management \> Rebate management groups setup \> Item groups**. Use commands on the Action Pane to add and remove groups as needed. For each group, make the following settings:
 
-| **Field** | **Description** |
-| --- | --- |
-| **Rebate and deductions group** | Identification for the rebate and deduction groups |
-| **Description** | Description of the rebate and deduction groups |
+- **Rebate management group** - Enter a unique name for the group.
+- **Description** - Enter a description of the group to provide more information about how it should be used.
 
-### Attach a rebate and deduction group to an item
+### Manage item group assignments
 
-Items can be attached to a rebate and deductions group in one of three ways. From **Rebate management \> Rebates and deduction groups setup \> Item** (as above)
+Each item can belong to any number of rebate management groups. You can view and assign group members starting either from the groups list or from the item list. You can also add items based on your category hierarchy.
 
-Via the **Add items button**
+To view, add, or remove items for a selected group:
 
-- Select **the Category hierarchy**.
-- Optionally select the **category** from the left-hand pane.
-- Select the **check box** next to the items.
-- Select **OK** once completed.
+1. Go to **Rebate management \> Rebate management groups setup \> Item groups**.
+1. Select the group you want to manage.
+1. From the Action Pane, select **Items**. The **Rebate management groups** page opens, showing a list of items that are already members of the selected group.
+1. To add a new item to the group, select **New** on the Action Pane to add a new row to the grid and then make the following settings for it:
+    - **Item account** - Select the item account ID.
+    - **Product name** - Enter a name and/or description of the item.
+1. To remove a item from the group, select the item and select **Delete** on the Action Pane.
 
-Via the **Items button**
+To view, add, or remove group assignments for a selected item:
 
-- Select **New** and enter / select items.
-- Select **OK** once completed.
+1. Go to **Product information management \> Products \> Released products**.
+1. Select the item you want to work with.
+1. On the Action Pane, open the **Product** tab and, from the **Rebate management** group, select **Rebate management groups**.
+1. The **Rebate management groups** page opens, showing a list of groups that the selected item already belongs to.
+1. To add the item to a new group, select **New** on the Action Pane to add a new row to the grid and then make the following settings for it:
+    - **Rebate management group** - Select the group you want to add.
+    - **Description** - Enter a description of the group, for example to explain why this item is a member of it.
+1. To remove a item from a group, select the group and then select **Delete** on the Action Pane.
 
-From **Product information management \> Products \> Released products** select **Rebate and deductions group** on the Action pane
+To add items to a group based on your category hierarchy:
 
-- Select **New** to create a new record.
-- Select the **rebate and deductions group**.
+1. Go to **Rebate management \> Rebate management groups setup \> Item groups**.
+1. Select the group you want to manage.
+1. From the Action Pane, select **Add items**. The **Add items** dialog box opens.
+1. From the **Category hierarchy** drop-down list, select a top-level category
+1. The item hierarchy opens in the left pane. Select the hierarchy level you are looking for.
+1. Items from your selected hierarchy and hierarchy level are now listed in the right pane. To work with this pane:
+    - Select the check box for each item you want to add.
+    - Select the check box in grid header to select all the items shown.
+    - Select the **Show selected** button to filer the list to show only those items you have selected so far. Select this button again to return to the full list.
+1. Select **OK** to apply your item selection to the selected group.
