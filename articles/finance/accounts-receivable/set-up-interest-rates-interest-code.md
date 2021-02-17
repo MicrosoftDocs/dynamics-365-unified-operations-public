@@ -58,7 +58,9 @@ For example, to set up an interest code that assesses 5 percent interest for eve
 > [!NOTE] 
 > The new algorithm for interest note calculation is added using Feature management. To use this algorithm, enable the **(GBL) Allow to calculate interest per day as yearly percent divided by 365** feature. For information about how to enable the feature, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 > 
->  The formula for the calculation for the interest note amount is: **Interest note amount** = **Amount owed** * **Yearly interest %** / **365** * **Number of days late**.
+> The formula for the calculation for the interest note amount is: 
+>  
+> Interest note amount = Amount owed * Yearly interest % / 365 * Number of days late
 >  
 > This feature is available in version 10.0.19 or later.    
  
