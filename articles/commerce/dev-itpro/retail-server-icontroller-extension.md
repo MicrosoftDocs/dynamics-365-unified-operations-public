@@ -5,7 +5,7 @@ title: Create a Retail Server extension API (Retail SDK version 10.0.11 and late
 description: This topic explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -219,11 +219,11 @@ public static class CommerceRoles
 
 ### Support paging in Retail Server APIs
 
-If the API requires paging then you can add the QueryResultSettings parameter to the API starting application release 10.0.18 and pass the value from the client. QueryResultSettings contains the PagingInfo and other parameters for records to fetch, skip etc.
+Starting in release 10.0.18, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
 
-Extension can pass the QueryResultSettings to the CRT request and CRT request can use these values when it queries the database.
+The extension can pass **QueryResultSettings** to the CRT request, which the CRT request can use when there is a database query.
 
-The full sample code is available in Retail SDK:
+The full sample code is available in the Retail SDK:
 RetailSDK\SampleExtensions\CommerceRuntime\Extensions.StoreHoursSample\StoreHoursDataService.cs
 RetailSDK\SampleExtensions\RetailServer\Extensions.StoreHoursSample\StoreHoursController.cs"
 
