@@ -5,7 +5,7 @@ title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
 manager: AnnBe
-ms.date: 01/21/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
