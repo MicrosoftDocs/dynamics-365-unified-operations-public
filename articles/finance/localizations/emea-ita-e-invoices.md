@@ -189,9 +189,18 @@ The system allows users to either manually associate **Natura** codes with relat
 
 #### Define "Natura" codes
 
+ > [!NOTE]
+ > This functionality is available in the system starting from the version 10.0.18.
+
+Complete the following steps to define **Natura** codes
+
+1. Go to **Tax** > **Setuo** > **Sales tax** > **Nature codes**.
+2. Create a new record.
+3. In the **Code** field
+4. Create as many **Natura** codes as you need to cover all the related business operations.
 
 
-#### Reverse charge and reverse charge group configuration
+#### Reverse charge groups configuration
 
 The settings in this section are required when a company uses the reverse charge functionality. Additionally, application-specific parameters that have these groups should be set up. For more information about this functionality, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
 
