@@ -199,6 +199,7 @@ Complete the following steps to define **Natura** codes
 3. In the **Code** field
 4. Create as many **Natura** codes as you need to cover all the related business operations.
 
+![Nature of Sales tax](media/emea-ita-natura.jpg)
 
 #### Reverse charge groups configuration
 
