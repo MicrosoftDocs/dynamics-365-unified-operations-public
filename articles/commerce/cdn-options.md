@@ -43,7 +43,7 @@ The following three CDN implementation options can be used with Commerce environ
 - A customer-owned instance of Azure Front Door (for increased control and additional security features)
 - An external CDN service
 
-All three CDN implementation options deliver only custom domain dynamic HTML content. Commerce automatically handles all JavaScript, Cascading Style Sheets (CSS), images, video, and other static content through Microsoft-managed CDNs. The option that you choose determines the operational capabilities, control capabilities, and additional security capabilities that are available.
+All three CDN implementation options deliver only dynamic HTML content from custom domains. Commerce automatically handles all JavaScript, Cascading Style Sheets (CSS), images, video, and other static content through Microsoft-managed CDNs. The option that you choose determines the operational capabilities, control capabilities, and additional security capabilities that are available.
 
 The following illustration shows an overview of the Commerce architecture.
 
@@ -57,7 +57,7 @@ The following table lists the pros and cons of using the Commerce-provided insta
 
 | Pros | Cons |
 |------|------|
-| <ul><li>The instance is included in the Commerce cost.</li><li>Because the instance is managed by the Commerce team, maintenance is lower, and there are shared setup steps.</li><li>The Azure-hosted infrastructure is scalable, secure, and reliable.</li><li>The Secure Sockets Layer (SSL) certificate requires a one-time setup and is automatically renewed.</li><li>The instance is monitored for errors and anomalies by the Commerce team.</li></ul> | <ul><li>A WAF isn't supported.</li><li>There are no specific customizations or setting adjustments.</li><li>The instance depends on the Commerce team for updates or changes.</li><li>A separate Azure Front Door instance is required for apex domains, and extra work is required to integrate apex domains with Azure DNS.</li><li>No telemetry about responses per second (RPS) or the error rate is provided to the customer.</li></ul> |
+| <ul><li>The instance is included in the Commerce cost.</li><li>Because the instance is managed by the Commerce team, less maintenance is required, and there are shared setup steps.</li><li>The Azure-hosted infrastructure is scalable, secure, and reliable.</li><li>The Secure Sockets Layer (SSL) certificate requires a one-time setup and is automatically renewed.</li><li>The instance is monitored for errors and anomalies by the Commerce team.</li></ul> | <ul><li>A WAF isn't supported.</li><li>There are no specific customizations or setting adjustments.</li><li>The instance depends on the Commerce team for updates or changes.</li><li>A separate Azure Front Door instance is required for apex domains, and extra work is required to integrate apex domains with Azure DNS.</li><li>No telemetry about responses per second (RPS) or the error rate is provided to the customer.</li></ul> |
 
 The following illustration shows the architecture of the Commerce-provided Azure Front Door instance.
 
