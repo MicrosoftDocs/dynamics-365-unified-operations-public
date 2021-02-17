@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
 
 ---
-# Process collection letters
+# Process collection letters example
 
 [!include [banner](../../includes/banner.md)]
 
