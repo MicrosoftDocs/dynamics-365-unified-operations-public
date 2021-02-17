@@ -54,6 +54,7 @@ Before you can begin to work with the electronic invoice functionality, the foll
 - [Customers](#customers)
 - [Items](#items)
 - [Maintain **Natura** codes](#Natura)
+- [Invoice types configuration](#InvoiceTypes)
 - [Digital certificates](#digitalcert)
 - [Optional: Destination for XML file output](#destination)
 
@@ -206,11 +207,29 @@ Complete the following steps to define **Natura** codes
 
 #### Reverse charge groups configuration
 
-The settings in this section are required when a company uses the reverse charge functionality. Additionally, application-specific parameters that have these groups should be set up. For more information about this functionality, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+The settings in this section are required when a company uses the reverse charge functionality. Reverse charge groups are used for automatic determination of **Natura** codes specific for reverse charge operations.
 
 Go to **Tax** \> **Setup** \> **Reverse charge item groups** to define specific reverse charge groups for specific products or categories.
 
 ![Reverse charge item groups page](media/emea-ita-FatturaPA-161-RC-groups.png)
+
+Additionally, application-specific parameters that use these groups should be set up. For more information about this functionality, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it), **Reverse charge configuration** section.
+
+### <a id="InvoiceTypes"></a>Invoice types configuration
+
+The following types of invoice documents are supported and will automatically be filled in:
+
+- TD01 – Invoice
+- TD04 – Credit note
+- TD05 – Debit note
+- TD20 – Self-invoice
+
+If a required document type isn't covered by the values in the preceding list, you can manually adjust the document type in the invoice journals. To enable manual adjustment, you must complete the following setup:
+
+- Electronic document property definition
+- Invoice document type registration
+
+For more information, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it), **Invoice types configuration** section.
 
 ### <a id="digitalcert"></a>Digital certificates
 
@@ -298,24 +317,5 @@ On the **Distribution** page (**Sales and marketing** \> **Setup** \> **Distribu
 For information about how to set up and work with this functionality, see [Intent letters – Invoicing of usual exporters](emea-ita-exil-intent-letter.md).
 
 If an intent letter is set up for a customer, the **Causale** element (**DatiGeneraliDocumento** block) that has the number of the intent letter is sent as output in the XML file.
-
-
-
-### Invoice type configuration
-
-The following types of invoice documents are supported and will automatically be filled in:
-
-- TD01 – Invoice
-- TD04 – Credit note
-- TD05 – Debit note
-- TD20 – Self-invoice
-
-If a required document type isn't covered by the values in the preceding list, you can manually adjust the document type in the invoice journals. To enable manual adjustment, you must complete the following setup:
-
-- Electronic document property definition
-- Invoice document type registration
-
-For more information, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
