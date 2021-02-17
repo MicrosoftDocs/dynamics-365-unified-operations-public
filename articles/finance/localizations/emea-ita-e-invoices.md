@@ -43,6 +43,7 @@ This topic contains the following information:
 - [Overview of the Electronic invoice register](#einvoiceregister)
 - [Additional functionality that affects the XML file](#additionalfunctionality)
 
+
 ## <a id="setup"></a>Setup
 
 Before you can begin to work with the electronic invoice functionality, the following data must be set up:
@@ -255,7 +256,8 @@ If XML files must be sent as output to a specific place when invoices are posted
 > [!NOTE]
 > The **Print invoice** option must be set to **Yes**. If the destination is set up, the status of the electronic invoice record for the invoice is automatically set to **Sent**.
 
-## <a id="relateddoc"></a>Fill in data for related documents
+
+## <a id="relateddoc"></a>Maintain related base documents
 
 Companies can report additional information about some base documents that are related to invoices. 
 This section describes how to fill in additional data, including tender procedure identification code (Codice Identificativo di Gara \[CIG\]) and unique project code (Codice Unico di Progetto \[CUP\])
@@ -287,10 +289,11 @@ To enable the system to enter information in these blocks, set the following fie
 
 For each base document, users can add details about the document number and date, CUP (unique project code that is managed by the Inter Ministerial Committee for Economic Planning), CIG (tender procedure identification code), and agreement code.
 
-
 ### Base documents for public sector companies
 
+In Italy, it is legally required that public sector companies must provide the traceability of tender procedures codes (CIG) and projects codes (CUP) during invoicing and payments. To provide it, an additional control of **CIG** and **CUP** codes is implemented for public sector companies. 
 For information about this functionality, see [Italian localization - Payment traceability](emea-ita-payment-traceability.md).
+
 
 ## <a id="einvoiceregister"></a>Electronic invoice register
 
