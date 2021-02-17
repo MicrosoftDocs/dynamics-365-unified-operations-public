@@ -38,11 +38,11 @@ This topic walks through an example that clarifies the process of creating, prin
 
 2. In Credit and collections parameters there are two parameters to set for this example. Go to **Navigation pane > Modules > Credit and collections > Setup > Accounts receivable parameters**. 
 
-  - Click the **Collections** tab. 
+a. Click the **Collections** tab. 
+
+b. Change the **Ignore payments and credit memos when calculating collection letter code** field to **Yes**.  
  
-  - Change the **Ignore payments and credit memos when calculating collection letter code** field to **Yes**.  
- 
-  - The parameter **Create collection letter per** must be set to **Customer**. 
+c. The parameter **Create collection letter per** must be set to **Customer**. 
  
  When you've finished, your screen should look like the following illustration. 
 
@@ -50,19 +50,19 @@ This topic walks through an example that clarifies the process of creating, prin
 
 3. Go to **Navigation pane > Modules > Accounts receivable > Invoices > All free text invoices**.
  
-  - Click **New**.
+a. Click **New**.
  
-  - In **Customer account** select **US-045**.
+b. In **Customer account** select **US-045**.
  
-  - Change the **Invoice date** field to 1/15/2021.
+c. Change the **Invoice date** field to 1/15/2021.
  
-  - Change the **Due date** field to 1/16/2021.
+d. Change the **Due date** field to 1/16/2021.
  
-  - In the **Invoice lines** FastTab, enter 401100 for the **Main account**.
+e. In the **Invoice lines** FastTab, enter 401100 for the **Main account**.
  
-  - Enter 500.00 for the **Unit price**.
+f. Enter 500.00 for the **Unit price**.
   
-  - Click **Post**.
+g. Click **Post**.
 
 4. Click **New** to enter two credit notes for the same customer.  
 
