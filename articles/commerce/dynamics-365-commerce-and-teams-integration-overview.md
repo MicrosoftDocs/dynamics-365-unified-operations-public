@@ -46,7 +46,7 @@ Dynamics 365 Commerce's customers are expected to have the following products an
 	3. POS's are enabled with AAD authentication. 
 	
 ##Conceptual architecture 
-[Image to be added](link)
+![Dynamics 365 Commerce - Teams integration](media/d365-commerce-teams-integration-conceptual-architecture.png)
 
 Related links:
 
