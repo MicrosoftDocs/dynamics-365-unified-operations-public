@@ -52,7 +52,7 @@ To discontinue the configuration, complete the following steps.
 2. Set the **Discontinue** parameter to **Yes**.
 3. Select **OK** to discontinue the configurations. The **Discontinued date** field will be populated when you save the changes.
 
-![Discontinue configuration information](articles/finance/localizations/media/Discontinue_details_2.png)
+![Discontinue configuration information](../media/Discontinue_details_2.png)
   
 You can revert configuration back to **Shared** or adjust discontinuation information at any time. If you share a configuration, specify the **Supported until** date and all other information related to the discontinuation to indicate your plans for future discontinuation.
 
