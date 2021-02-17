@@ -61,9 +61,9 @@ If you want to share information about a planned discontinuation, prior to actua
 > [!NOTE]
 > Discontinuation doesn't limit operations with configurations. You can continue to import, run, or derive the configurations, these fields are informational.
 
-## Dynamcis 365 Finance supports displaying this information starting in version 10.0.14
+## Finance supports displaying this information starting in version 10.0.14
 
-On the **Global repository** page, you can view up to date information related to discontinuation. By default, configurations that are discontinued are filtered out.
+Starting in version 10.0.14, Dynamics 365 Finance supports displaying discontinuation information. On the **Global repository** page, you can view up to date information related to discontinuation. By default, configurations that are discontinued are filtered out.
   
 The **Imported configurations** (ERSolutionTable) page, shows configurations that were already discontinued when there were imported. For those configurations that were discontinued after import, the discontinuation information can be synchronized by running the **Import configurations updates** job.
 
