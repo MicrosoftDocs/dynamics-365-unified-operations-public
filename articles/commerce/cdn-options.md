@@ -2,7 +2,7 @@
 # required metadata
 
 title: Content delivery network implementation options
-description: This topic reviews the different content delivery network (CDN) implementation options that can be used with Dynamics 365 Commerce environments, including both native Commerce and customer-owned instances of Azure Front Door.
+description: This topic reviews the different options for content delivery network (CDN) implementation that can be used with Microsoft Dynamics 365 Commerce environments. These options include native, Commerce-provided instances of Azure Front Door and customer-owned instances of Azure Front Door.
 author: BrianShook
 manager: AnnBe
 ms.date: 02/12/2021
@@ -33,59 +33,59 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](includes/banner.md)]
 
-This topic reviews the different content delivery network (CDN) implementation options that can be used with Dynamics 365 Commerce environments, including both native Commerce and customer-owned instances of Azure Front Door.
+This topic reviews the different options for content delivery network (CDN) implementation that can be used with Microsoft Dynamics 365 Commerce environments. These options include native, Commerce-provided instances of Azure Front Door and customer-owned instances of Azure Front Door.
 
-Dynamics 365 Commerce customers have options when considering which CDN service to use with their Commerce environment. Commerce ships with basic Azure Front Door support that covers basic hosting and custom domain requirements. For companies looking for greater control and more specific security abilities such as web application firewall (WAF), using a customer-owned Azure Front Door instance or an external CDN may be the best options. 
+Commerce customers have several options when they are considering which CDN service to use with their Commerce environment. Commerce is released with basic Azure Front Door support that covers basic hosting and custom domain requirements. For companies that want more control and more specific security abilities, such as a web application firewall (WAF), the best option might be to use either a customer-owned instance of Azure Front Door or an external CDN service.
 
-The three CDN implementation options that can be used with Dynamics 365 Commerce environments are:
+The following three CDN implementation options can be used with Commerce environments:
 
-- The Dynamics 365 Commerce Azure Front Door instance.
-- A customer-owned Azure Front Door instance (for increased control and additional security features).
-- An external CDN service.
+- The Commerce-provided instance of Azure Front Door
+- A customer-owned instance of Azure Front Door (for increased control and additional security features)
+- An external CDN service
 
-Only custom domain dynamic HTML content is delivered using these CDN implementation options. Commerce automatically handles all JavaScript, Cascading Style Sheets (CSS), images, video, and other static content through Microsoft-managed CDNs. The CDN implementation option chosen determines the operational, control, and additional security capabilities that are available.
+All three CDN implementation options deliver only custom domain dynamic HTML content. Commerce automatically handles all JavaScript, Cascading Style Sheets (CSS), images, video, and other static content through Microsoft-managed CDNs. The option that you choose determines the operational capabilities, control capabilities, and additional security capabilities that are available.
 
-The following illustration shows an overview of Dynamics 365 Commerce architecture. 
+The following illustration shows an overview of the Commerce architecture.
 
-![Overview of Dynamics 365 Commerce architecture](media/Commerce_CDN-Options_Overview.png)
+![Overview of the Commerce architecture](media/Commerce_CDN-Options_Overview.png)
 
-For more information on setting up an Azure Front Door instance for your Commerce site, see [Add CDN Support](add-cdn-support.md).
+For more information about how to set up an instance of Azure Front Door for your Commerce site, see [Add CDN Support](add-cdn-support.md).
 
-## Use a Dynamics 365 Commerce Azure Front Door instance
+## Use the Commerce-provided Azure Front Door instance
 
-The following table lists the pros and cons of using a Dynamics 365 Commerce Azure Front Door instance to manage your content endpoints.
+The following table lists the pros and cons of using the Commerce-provided instance of Azure Front Door to manage content endpoints.
 
 | Pros | Cons |
-| ---- | ---- |
-| &#8226; Built-in to Commerce cost.<br>&#8226; Managed by Commerce team (lower maintenance, shared setup steps).<br>&#8226; Azure-hosted infrastructure is scalable, secure, reliable.<br>&#8226; Secure Sockets Layer (SSL) certificate is a one-time setup and is automatically renewed.<br>&#8226; Monitored by the Commerce team for errors and anomalies. | &#8226; WAF not supported.<br>&#8226; No specific customizations or setting adjustments.<br>&#8226; Dependent upon Commerce team for updates or changes.<br>&#8226; A separate Azure Front Door instance is needed for apex domains, and extra work is needed for apex domain integration with Azure DNS.<br>&#8226; No telemetry to customer on response per second (RPS) or error rate. |
+|------|------|
+| <ul><li>The instance is included in the Commerce cost.</li><li>Because the instance is managed by the Commerce team, maintenance is lower, and there are shared setup steps.</li><li>The Azure-hosted infrastructure is scalable, secure, and reliable.</li><li>The Secure Sockets Layer (SSL) certificate requires a one-time setup and is automatically renewed.</li><li>The instance is monitored for errors and anomalies by the Commerce team.</li></ul> | <ul><li>A WAF isn't supported.</li><li>There are no specific customizations or setting adjustments.</li><li>The instance depends on the Commerce team for updates or changes.</li><li>A separate Azure Front Door instance is required for apex domains, and extra work is required to integrate apex domains with Azure DNS.</li><li>No telemetry about responses per second (RPS) or the error rate is provided to the customer.</li></ul> |
 
 The following illustration shows the architecture of the Commerce-provided Azure Front Door instance.
 
-![Commerce Azure Front Door](media/Commerce_CDN-Option_CommerceFrontDoor.png) 
+![Commerce-provided Azure Front Door instance](media/Commerce_CDN-Option_CommerceFrontDoor.png)
 
 ## Use a customer-owned Azure Front Door instance
 
-The following table lists the pros and cons of using a customer-owned Azure Front Door instance to manage content endpoints.
+The following table lists the pros and cons of using a customer-owned instance of Azure Front Door to manage content endpoints.
 
 | Pros | Cons |
-| ---- | ---- |
-|&#8226; Secure, easy-to-manage setup.<br>&#8226; Azure-hosted infrastructure is scalable, secure, and reliable.<br>&#8226; Allows for WAF integration and granular rule controls for finer-grade security tuned specifically for your site.<br>&#8226; Finer control of SSL certificates (customer-owned and Azure Front Door-managed certificates) and domain linking.<br>&#8226; Offers an apex domain solution if paired directly with Azure DNS.<br>&#8226; Telemetry and alerting.<br>&#8226; SSL certificate is a one-time setup and is automatically renewed. | &#8226; Self-managed.<br>&#8226; Initial knowledge ramp-up needed. |
+|------|------|
+| <ul><li>Setup is secure and easy to manage.</li><li>The Azure-hosted infrastructure is scalable, secure, and reliable.</li><li>The instance allows for WAF integration and granular rule controls for finer-grade security that is tuned specifically for your site.</li><li>The instance allows for finer control of SSL certificates (both customer-owned and Azure Front Door–managed) and domain linking.</li><li>The instance offers an apex domain solution if it's paired directly with Azure DNS.</li><li>Telemetry and alerting are provided.</li><li>The SSL certificate requires a one-time setup and is automatically renewed.</li></ul> | <ul><li>The instance is self-managed.</li><li>Initial knowledge ramp-up is required.</li></ul> |
 
-The following illustration shows Commerce infrastructure with a customer-owned Azure Front Door instance. 
+The following illustration shows a Commerce infrastructure that includes a customer-owned Azure Front Door instance.
 
-![Commerce infrastructure with a customer-owned Azure Front Door](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png) 
+![Commerce infrastructure that includes a customer-owned Azure Front Door instance](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
 
-## Use an external content delivery network (CDN)
+## Use an external CDN service
 
-The following table lists the pros and cons of using an external CDN provider to manage content endpoints.
+The following table lists the pros and cons of using an external CDN service to manage content endpoints.
 
 | Pros | Cons |
-| ---- | ---- |
-| &#8226; Useful when existing domain is already hosted on external CDN.<br>&#8226; Competitor CDNs (for example, Akamai) may have more WAF capabilities. | &#8226; Separate contract, additional costing.<br>&#8226; SSL may incur additional costs.<br>&#8226; Separate from Azure cloud structure, so an additional infrastructure to manage.<br>&#8226; Potentially longer time investments in endpoint and security setup.<br>&#8226; Self-managed.<br>&#8226; Self-monitored. |
+|------|------|
+| <ul><li>This option is useful when the existing domain is already hosted on an external CDN.</li><li>Competitor CDNs (for example, Akamai) might have more WAF capabilities.</li></ul> | <ul><li>A separate contract and additional costing are required.</li><li>SSL might incur additional costs.</li><li>Because the service is separate from the Azure cloud structure, additional infrastructure must be managed.</li><li>The service might require longer time investments in endpoint and security setup.</li><li>The service is self-managed.</li><li>The service is self-monitored.</li></ul> |
 
-The following illustration shows Commerce infrastructure with an external CDN service. 
+The following illustration shows a Commerce infrastructure that includes an external CDN service.
 
-![External CDN](media/Commerce_CDN-Option_ExternalFrontDoor.png) 
+![Commerce infrastructure that includes an external CDN service](media/Commerce_CDN-Option_ExternalFrontDoor.png)
 
 ## Additional resources
 
