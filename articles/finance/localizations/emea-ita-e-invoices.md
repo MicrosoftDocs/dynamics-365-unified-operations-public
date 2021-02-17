@@ -42,7 +42,6 @@ This topic contains the following information:
 - [How to fill in data for output of a tender procedure identification code (Codice Identificativo di Gara \[CIG\]) and unique project code (Codice Unico di Progetto \[CUP\])](#relateddoc)
 - [Overview of the Electronic invoice register](#einvoiceregister)
 - [Additional functionality that affects the XML file](#additionalfunctionality)
-- [Functionality that is available in monthly update 10.0.12 and later versions](#fatturapa)
 
 ## <a id="setup"></a>Setup
 
@@ -54,6 +53,7 @@ Before you can begin to work with the electronic invoice functionality, the foll
 - [Electronic document properties](#edproperties)
 - [Customers](#customers)
 - [Items](#items)
+- [Natura](#Natura)
 - [Digital certificates](#digitalcert)
 - [Optional: Destination for XML file output](#destination)
 
@@ -183,6 +183,16 @@ The **CodiceValore** field is set according to the following rules:
 - If there isn't a bar code, and the record on the **External item description** page exists for the product and the customer, this field is set to the value from **External item number** field.
 - If there isn't a bar code, and the record on the **External item description** page doesn't exist for the product and customer, this field is set to the value from the **Item number** field.
 
+### <a id="Natura"></a>Natura
+
+#### Reverse charge and reverse charge group configuration
+
+The settings in this section are required when a company uses the reverse charge functionality. Additionally, application-specific parameters that have these groups should be set up. For more information about this functionality, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+
+Go to **Tax** \> **Setup** \> **Reverse charge item groups** to define specific reverse charge groups for specific products or categories.
+
+![Reverse charge item groups page](media/emea-ita-FatturaPA-161-RC-groups.png)
+
 ### <a id="digitalcert"></a>Digital certificates
 
 Go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates** to electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type.
@@ -270,15 +280,7 @@ For information about how to set up and work with this functionality, see [Inten
 
 If an intent letter is set up for a customer, the **Causale** element (**DatiGeneraliDocumento** block) that has the number of the intent letter is sent as output in the XML file.
 
-## <a id="fatturapa"></a>Functionality that is available in monthly update 10.0.12 and later versions
 
-### Reverse charge and reverse charge group configuration
-
-The settings in this section are required when a company uses the reverse charge functionality. Additionally, application-specific parameters that have these groups should be set up. For more information about this functionality, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
-
-Go to **Tax** \> **Setup** \> **Reverse charge item groups** to define specific reverse charge groups for specific products or categories.
-
-![Reverse charge item groups page](media/emea-ita-FatturaPA-161-RC-groups.png)
 
 ### Invoice type configuration
 
