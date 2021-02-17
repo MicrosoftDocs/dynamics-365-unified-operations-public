@@ -194,10 +194,13 @@ The system allows users to either manually associate **Natura** codes with relat
 
 Complete the following steps to define **Natura** codes
 
-1. Go to **Tax** > **Setuo** > **Sales tax** > **Nature codes**.
+1. Go to **Tax** > **Setup** > **Sales tax** > **Nature codes**.
 2. Create a new record.
-3. In the **Code** field
+3. In the **Nature code** field, enter a valid code of **Natura**, in the **Description** field, enter the explanation what this code is used for.
 4. Create as many **Natura** codes as you need to cover all the related business operations.
+5. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
+6. Select a required Sales tax code.
+7. On the **General** FastTab, in the **Nature code** field, select one of the previously defined **Natura** codes.
 
 ![Nature of Sales tax](media/emea-ita-natura.jpg)
 
