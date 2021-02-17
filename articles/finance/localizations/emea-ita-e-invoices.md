@@ -39,7 +39,7 @@ Version 1.2 of FatturaPA electronic invoices can be used for all types of busine
 This topic contains the following information:
 
 - [Setup information](#setup)
-- [How to fill in data for output of a tender procedure identification code (Codice Identificativo di Gara \[CIG\]) and unique project code (Codice Unico di Progetto \[CUP\])](#relateddoc)
+- [Maintain related base documents](#relateddoc)
 - [Overview of the Electronic invoice register](#einvoiceregister)
 - [Additional functionality that affects the XML file](#additionalfunctionality)
 
@@ -257,7 +257,10 @@ If XML files must be sent as output to a specific place when invoices are posted
 
 ## <a id="relateddoc"></a>Fill in data for related documents
 
-Companies can report additional information about some base documents that are related to invoices. Here are some examples:
+Companies can report additional information about some base documents that are related to invoices. 
+This section describes how to fill in additional data, including tender procedure identification code (Codice Identificativo di Gara \[CIG\]) and unique project code (Codice Unico di Progetto \[CUP\])
+
+Here are some examples:
 
 - The **DatiOrdineAcquisto** block contains information that is related to the purchase order.
 - The **DatiContratto** block contains information that is related to the contract.
