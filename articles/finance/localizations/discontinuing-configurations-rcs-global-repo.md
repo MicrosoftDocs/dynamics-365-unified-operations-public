@@ -51,15 +51,19 @@ To discontinue the configuration, complete the following steps.
 1. Select whether you want to discontinue a single version or all versions with the same settings in one operation by setting **All versions** to **Yes**. 
 2. Set the **Discontinue** parameter to **Yes**.
 3. Select **OK** to discontinue the configurations. The **Discontinued date** field will be populated when you save the changes.
+
+![Discontinue configuration information](articles/finance/localizations/media/Discontinue_details_2.png)
   
 You can revert configuration back to **Shared** or adjust discontinuation information at any time. If you share a configuration, specify the **Supported until** date and all other information related to the discontinuation to indicate your plans for future discontinuation.
+
+If you want to share information about a planned discontinuation, prior to actually discontiuing the configuration, user is able to prefill all fields ralated to replacement but leave the **Discontinue** parameter to **No**.
 
 > [!NOTE]
 > Discontinuation doesn't limit operations with configurations. You can continue to import, run, or derive the configurations, these fields are informational.
 
 ## Dynamcis 365 Finance supports displaying this information starting in version 10.0.14
 
-On the **Global repository** page, you can view up-to-date information related to discontinuation. By default, configurations that are discontinued are filtered out.
+On the **Global repository** page, you can view up to date information related to discontinuation. By default, configurations that are discontinued are filtered out.
   
 The **Imported configurations** (ERSolutionTable) page, shows configurations that were already discontinued when there were imported. For those configurations that were discontinued after import, the discontinuation information can be synchronized by running the **Import configurations updates** job.
 
