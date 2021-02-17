@@ -3,7 +3,7 @@
  
 title: Process collection letters example
 description: This topic walks through an example that clarifies the process of creating, printing, and posting collection letters. 
-author: jchrist
+author: JodiChristiansen
 manager: AnnBe 
 ms.date: 02/03/2021
 ms.topic: business-process 
@@ -34,36 +34,35 @@ This topic walks through an example that clarifies the process of creating, prin
 
 1. The following is the collection letter sequence, which is assigned to the customer posting profile. Go to **Navigation pane > Modules > Credit and collections > Collection letter > Setup collection letter sequence**.
 
- [![Collection letter sequence setup](./media/Ignore-payments-creditmemos-1.PNG)])(./media/Ignore-payments-creditmemos-1.PNG)
+ [![Collection letter sequence setup](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
 2. In Credit and collections parameters there are two parameters to set for this example. Go to **Navigation pane > Modules > Credit and collections > Setup > Accounts receivable parameters**. 
 
- a. Click the **Collections** tab. 
+  - Click the **Collections** tab. 
  
- b. Change the **Ignore payments and credit memos when calculating collection letter code** field to **Yes**.  
+  - Change the **Ignore payments and credit memos when calculating collection letter code** field to **Yes**.  
  
- c. The parameter **Create collection letter per** must be set to **Customer**. 
+  - The parameter **Create collection letter per** must be set to **Customer**. 
  
  When you've finished, your screen should look like the following illustration. 
 
- [![Set up options for collection letters to set Ignore payments and credit memos to Yes](./media/Ignore-payments-creditmemos-2.PNG)])(./media/Ignore-payments-creditmemos-2.PNG)
+ [![Set up options for collection letters to set Ignore payments and credit memos to Yes](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
 3. Go to **Navigation pane > Modules > Accounts receivable > Invoices > All free text invoices**.
  
- a. Click **New**.
+  - Click **New**.
  
- b. In **Customer account** select **US-045**.
+  - In **Customer account** select **US-045**.
  
- c. Change the **Invoice date** field to 1/15/2021.
+  - Change the **Invoice date** field to 1/15/2021.
  
- d. Change the **Due date** field to 1/16/2021.
+  - Change the **Due date** field to 1/16/2021.
  
- e. In the **Invoice lines** FastTab, enter 401100 for the **Main account**.
+  - In the **Invoice lines** FastTab, enter 401100 for the **Main account**.
  
- f. Enter 500.00 for the **Unit price**.
- 
- 
- g. Click **Post**.
+  - Enter 500.00 for the **Unit price**.
+  
+  - Click **Post**.
 
 4. Click **New** to enter two credit notes for the same customer.  
 
@@ -83,7 +82,7 @@ This topic walks through an example that clarifies the process of creating, prin
 
 5. Go to **Navigation pane > Modules > Accounts receivable > Customers > All Customers** and choose US-045. Click **Transactions** under **Transactions** in the Action Pane to review the customer transactions.
 
- [![Review the posted customer transactions](./media/Ignore-payments-creditmemos-3.PNG)])(./media/Ignore-payments-creditmemos-3.PNG)
+ [![Review the posted customer transactions](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
 6. Go to the **Create collection letters** page (**Navigation pane > Modules > Credit and collections > Collection letter > Create collection letters**) to create collection letters for customer US-045.
 
@@ -102,7 +101,7 @@ This topic walks through an example that clarifies the process of creating, prin
 7. Go to **Navigation pane > Modules > Credit and collections > Collection letter > Review and process collection letters**.
  a. Notice the header and lines Collection letter code (expand Transactions fastTab if needed) displays Collection letter 1 since this is the first collection letter in the sequence. 
 
- [![Review collection letter code 1 that displays for both the header and the lines](./media/Ignore-payments-creditmemos-4.PNG)])(./media/Inore-payments-creditmemos-4.PNG)
+ [![Review collection letter code 1 that displays for both the header and the lines](./media/Ignore-payments-creditmemos-4.PNG)](./media/Inore-payments-creditmemos-4.PNG)
 
  b. Click **Post** in the Action bar and enter 1/19/2021 as the **Posting date**.
 
@@ -124,7 +123,7 @@ This topic walks through an example that clarifies the process of creating, prin
 
  a. Notice the collection letter code in the header displays **Collection letter 1**, but the transaction lines display **Collection letter 2**, which is shown in the following illustration. 
 
- [![Review collection letter codes are different because Ignore payments and credit memos parameter is set to Yes](./media/Ignore-payments-creditmemos-5.PNG)])(./media/Ignore-payments-creditmemos-5.PNG)
+ [![Review collection letter codes are different because Ignore payments and credit memos parameter is set to Yes](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
  b. The parameter is set to **Yes** to ignore payments and credit memos when calculating the collection letter code.
  
@@ -135,7 +134,7 @@ This topic walks through an example that clarifies the process of creating, prin
  a. Click the **Collections** tab.
  b. Change **Ignore payments and credit memos when calculating collection letter code** to **No**.
 
- [![Set up options for collection letters to set Ignore payments and credit memos to No](./media/Ignore-payments-creditmemos-6.PNG)])(./media/Ignore-payments-creditmemos-6.PNG)
+ [![Set up options for collection letters to set Ignore payments and credit memos to No](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 
 11. Open the **Create collection letters** page to create collection letters again for customer US-045.
 
