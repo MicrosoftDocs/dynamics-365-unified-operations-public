@@ -287,6 +287,11 @@ To enable the system to enter information in these blocks, set the following fie
 
 For each base document, users can add details about the document number and date, CUP (unique project code that is managed by the Inter Ministerial Committee for Economic Planning), CIG (tender procedure identification code), and agreement code.
 
+
+### Base documents for public sector companies
+
+For information about this functionality, see [Italian localization - Payment traceability](emea-ita-payment-traceability.md).
+
 ## <a id="einvoiceregister"></a>Electronic invoice register
 
 To view all customer electronic invoices and perform various actions, go to **Accounts receivable** \> **Invoices** \> **E-Invoices** \> **Electronic invoices**.
