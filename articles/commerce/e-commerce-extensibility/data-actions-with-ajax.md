@@ -37,9 +37,9 @@ This topic describes how to call server side data actions with AJAX.
 
 Dynamics 365 Commerce SDK offers support for invoking a server side data action from the client browser. This can be used in scenarios where data actions contains sensitive information such as an API Key or secret needed to call a third party service.  In these cases you would not want the secret to be revealed with a client side data action call.
 
-To invoke a data action on the server, one can use the below url route with 'id' query parameter where id is the data action that needs to be run on the server. The route supports supports both http GET and POST requests.
+To invoke a data action on the server, the below URL route can be used with the 'id' query parameter where 'id' is the data action that will be run on the server. The route supports supports both HTTP **GET** and **POST** requests.
 
-```js noeditor
+```js
 /api?id=<data_action_id>
 ```
 
