@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Accrue leave and absence plans
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 You can accrue leave and absence in Dynamics 365 Human Resources for multiple employees or for an individual.
 
 ## Accrue leave and absence for multiple employees

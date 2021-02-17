@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up employment types
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Set up employment types in Dynamics 365 Human Resources to match your workers.
 
 1. In the **Personnel management** workspace, under **Setup**, select **Employment types**.

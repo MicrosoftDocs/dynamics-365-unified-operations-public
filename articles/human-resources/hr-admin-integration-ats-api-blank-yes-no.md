@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Blank Yes No
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Blank Yes No option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_hrmblankyesno

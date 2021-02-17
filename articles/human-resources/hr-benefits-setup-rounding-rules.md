@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up rounding rules
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 You can set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.
 
 1. In the **Benefits management** workspace, under **Setup**, select **Rounding rules**.

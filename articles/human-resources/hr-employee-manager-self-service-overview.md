@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Employee and Manager self service overview
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This article provides an overview of the employee and manager self service workspace.
 
 ## Edit personal details

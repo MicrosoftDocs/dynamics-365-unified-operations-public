@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Can't create an environment in the Power Apps Admin center
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Issue**
 
 - The tenant/environment admin can't create an environment in the Microsoft Power Apps Admin center.

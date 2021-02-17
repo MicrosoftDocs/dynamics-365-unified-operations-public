@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Edit personal information
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 You can edit your personal information in Dynamics 365 Human Resources in the **Employee self service workspace**.
 
 The personal information you can edit includes:

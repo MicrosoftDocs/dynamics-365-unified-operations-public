@@ -29,8 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Person education
 
-This topic describes the Person education entity for Dynamics 365 Human Resources.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+This topic describes the Person education entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmpersoneducationentity
 

@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Person skill
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Person skill entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmpersonskillentity

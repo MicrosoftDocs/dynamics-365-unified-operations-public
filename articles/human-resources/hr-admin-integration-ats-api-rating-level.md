@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Rating level
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Rating level entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmratinglevelentity

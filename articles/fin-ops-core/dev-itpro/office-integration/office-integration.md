@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Office integration overview
 
+[!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
+
 [!include [banner](../includes/banner.md)]
 
 This topic reviews Microsoft Office integration concepts and features. The integration depends on several technologies:

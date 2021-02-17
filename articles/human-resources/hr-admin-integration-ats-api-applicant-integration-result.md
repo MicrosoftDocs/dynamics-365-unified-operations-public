@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Applicant integration result
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Applicant integration result option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmapplicantintegrationresult

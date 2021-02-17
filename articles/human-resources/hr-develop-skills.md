@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Align workforce skills with business needs
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively. You can also specify the skills that are required for a specific job.
 
 Examples of skills you can track include the following:
