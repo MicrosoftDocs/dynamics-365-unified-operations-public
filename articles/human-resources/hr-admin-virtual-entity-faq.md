@@ -90,5 +90,9 @@ Yes, if the Human Resources table can auto generate number sequences, then it wi
 
 If there are no columns added in the quick find view for the table, then the search box does nothing. The workaround is to add one or more columns of the table to the quick find view.
 
+### Are custom fields supported on virtual tables?
+
+Yes, custom fields are supported on virtual tables. The custom field must first be added to the data entity related to the virtual table. You can then generate/refresh the virtual table to include the custom field in the schema of the virtual table. For more information on adding custom fields to data entities, see [Exposing custom fields on data entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields?toc=/dynamics365/human-resources/toc.json#exposing-custom-fields-on-data-entities).
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
