@@ -56,7 +56,7 @@ To discontinue the configuration, complete the following steps.
   
 You can revert configuration back to **Shared** or adjust discontinuation information at any time. If you share a configuration, specify the **Supported until** date and all other information related to the discontinuation to indicate your plans for future discontinuation.
 
-If you want to share information about a planned discontinuation, prior to actually discontiuing the configuration, user is able to prefill all fields ralated to replacement but leave the **Discontinue** parameter to **No**.
+If you want to share information about a planned discontinuation, prior to actually discontinuing the configuration, user is able to prefill all fields related to replacement but leave the **Discontinue** parameter set to **No**.
 
 > [!NOTE]
 > Discontinuation doesn't limit operations with configurations. You can continue to import, run, or derive the configurations, these fields are informational.
