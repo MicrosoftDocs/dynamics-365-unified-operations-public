@@ -91,3 +91,6 @@ The following image shows a legal entity added at the hierarchy root with four c
 [Channels overview](channels-overview.md)
 
 [Channel setup prerequisites](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

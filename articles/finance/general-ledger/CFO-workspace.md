@@ -60,3 +60,6 @@ This topic explains how to add financial dimensions to the Chief Financial Offic
 16. Build your project, and then open the application to view the results.
 
     [![Completed workspace](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

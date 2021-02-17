@@ -64,3 +64,6 @@ This procedure walks through how to design the relationship between organization
 29. Click Publish.
 30. Click Close.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

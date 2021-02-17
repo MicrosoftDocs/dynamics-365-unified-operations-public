@@ -148,3 +148,6 @@ When you generate this report, the following default parameters are displayed. Y
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

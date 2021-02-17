@@ -95,3 +95,6 @@ The **Positions** tab on the main worker page provides a full view of all positi
 
 [![Positions](./media/Worker-position-history.png)](./media/Worker-position-history.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

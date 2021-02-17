@@ -83,3 +83,6 @@ This topic explains how to download Electronic reporting (ER) configurations fro
 **Question:** When I click **Download all** in the Shared asset library, I receive the following warning: “Zip generation is in progress, please try again in a few minutes.” Why do I receive this warning?
 
 **Answer:** You receive this warning because a new configuration is added to the Shared asset library, and the ER configuration is being archived.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

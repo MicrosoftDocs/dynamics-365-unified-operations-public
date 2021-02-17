@@ -67,3 +67,6 @@ The following image shows an example functionality profile.
 [Screen layout overview](pos-screen-layouts.md)		  
 
 [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

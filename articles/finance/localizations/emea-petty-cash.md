@@ -483,3 +483,6 @@ The settled amount is reflected in the <strong>Settled currency</strong> field o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

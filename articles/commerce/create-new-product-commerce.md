@@ -118,3 +118,6 @@ The following image shows an example configuration for a released product.
 [Create legal entities](channels-legal-entities.md)
 
 [Create a variant group](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

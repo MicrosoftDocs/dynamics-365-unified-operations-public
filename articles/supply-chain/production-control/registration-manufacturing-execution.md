@@ -65,3 +65,6 @@ Workers can make various types of registrations in manufacturing execution for w
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

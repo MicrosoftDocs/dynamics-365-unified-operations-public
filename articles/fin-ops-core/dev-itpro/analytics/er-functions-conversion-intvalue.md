@@ -78,3 +78,6 @@ Any decimal places are truncated.
 ## Additional resources
 
 [Type conversion functions](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

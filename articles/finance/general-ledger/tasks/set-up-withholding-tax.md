@@ -51,3 +51,6 @@ This topic explains how to set up withholding tax. *Withholding tax* is a tax on
 18. Select **Save**.
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

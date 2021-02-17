@@ -86,3 +86,6 @@ Follow these steps to turn on RDL sandboxing in your local one-box environment.
     - **RemoveRules** – Set this parameter to remove the rules.
     - **ForceUpdate** – Set this parameter to force the rules to be re-created.
     - **LogDir** – Specify a location to write the log to. The default location is the location of the **UpdateRDLSandboxRule.ps1** command.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

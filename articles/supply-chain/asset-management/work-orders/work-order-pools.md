@@ -114,3 +114,6 @@ As described in the previous section, you can add work orders to a work order po
 
 To remove a work order from a work order pool, repeat these steps, but select **Remove** in step 3.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

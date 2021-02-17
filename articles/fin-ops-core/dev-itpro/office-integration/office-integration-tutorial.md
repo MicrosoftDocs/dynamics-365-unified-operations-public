@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Office integration tutorial
 
+[!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
+
 [!include [banner](../includes/banner.md)]
 
 In this tutorial, you will use and build Office integration experiences that involve Excel, Word, Document Management, and email. 
@@ -486,3 +488,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

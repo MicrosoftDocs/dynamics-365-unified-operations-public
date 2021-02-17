@@ -47,3 +47,6 @@ This procedure shows you how to set up a new barcode definition which can then b
 12. Click Save.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

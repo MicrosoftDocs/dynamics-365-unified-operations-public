@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create Open in Excel experiences
 
+[!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
+
 [!include [banner](../includes/banner.md)]
 
 Learn about creating Open in Office experiences for Excel and Word.
@@ -430,3 +432,6 @@ To resolve this, change the binding information in the affected template so that
 14. Rename the zip file as needed, for example rename the file 2015-05-25-FleetCustomersWithLocations.zip.
 15. Change the zip file extension to .xlsx.
 16. Re-publish the workbook .xlsx file, if needed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

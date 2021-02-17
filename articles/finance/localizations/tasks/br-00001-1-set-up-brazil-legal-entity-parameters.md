@@ -82,3 +82,6 @@ Set up Brazilian legal entity parameters. This task uses the BRMF demo company.
 49. Click Save.
 50. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

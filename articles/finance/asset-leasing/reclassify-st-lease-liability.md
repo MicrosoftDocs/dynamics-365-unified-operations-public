@@ -45,3 +45,6 @@ To create and post the short-term liability reclassification journal entry, foll
 4. Turn on the **Post** parameter. Alternatively, if the entry should be created but not posted, leave this parameter turned off.
 5. Turn on the **Preview before posting** parameter to view the entry before it's posted.
 6. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

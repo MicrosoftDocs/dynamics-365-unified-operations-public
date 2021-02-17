@@ -60,3 +60,6 @@ This procedure was created using the demo data company JPMF.
     * You only can post confirmed recognition tests.  
 11. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

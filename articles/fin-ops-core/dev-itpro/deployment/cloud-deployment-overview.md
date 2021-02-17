@@ -225,3 +225,6 @@ This will not affect any environments that have their data stored in the depreca
 This is due to the license expiring, which means that you no longer have the minimum required licenses to obtain an environment slot.  Please review your [subscription status](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview#how-can-i-find-the-subscription-status) and then reactivate the expired license to enable the redeployment.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

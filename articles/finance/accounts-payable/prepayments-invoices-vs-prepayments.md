@@ -70,3 +70,6 @@ Prepayment invoices are a common business practice. A vendor issues prepayment 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

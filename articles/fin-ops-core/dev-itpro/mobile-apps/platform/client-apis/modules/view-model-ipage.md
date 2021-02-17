@@ -285,3 +285,6 @@ PageTarget <br>&nbsp;&nbsp;&nbsp;└─ [NavigationArgs](../interfaces/view-mode
 | [params](../interfaces/view-model-ipage-ipagetarget.md#params) |params: [PageOptions](../interfaces/view-model-ipage-ipageoptions.md) (optional)  <br>|  |
 | [to](../interfaces/view-model-ipage-ipagetarget.md#to) |to: string (optional)  <br>|  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

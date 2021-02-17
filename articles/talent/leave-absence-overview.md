@@ -69,3 +69,6 @@ Leave and absence management provides the following features:
 - **Submit time-off requests.**
 
     Employees can submit time-off requests against their available hours. Requests can be simple single-day requests or multiple-day requests that include multiple leave and absence types. If a workflow isn't enabled, the requests are automatically approved. If a workflow is enabled, the approval can be automatic, or it can require sign-off, depending on the workflow configuration.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

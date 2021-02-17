@@ -90,3 +90,6 @@ If marketing content is unique to a specific product, any marketing module can b
 [Account management pages overview](quick-tour-account-management.md)
 
 [Enrich a product details page](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

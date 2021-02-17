@@ -1418,3 +1418,6 @@ In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dumm
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

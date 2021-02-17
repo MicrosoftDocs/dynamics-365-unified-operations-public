@@ -65,3 +65,6 @@ Use this procedure to create a purchase order that is checked for available budg
 4. Click Budget check errors or warnings.
 5. Click Close.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

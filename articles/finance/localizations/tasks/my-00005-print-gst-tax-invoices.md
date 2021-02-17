@@ -132,3 +132,6 @@ Legal entity 'MYMF' must be selected to execute this scenario successfully. The 
     * Validate the Tax invoice report.  
     * The Tax invoice report prints a GST summary section with GST code, amount origin, and GST amount.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

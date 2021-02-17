@@ -269,3 +269,6 @@ The next step is to set up schedules, leave types, and benefit accrual plans. Fo
 [Generate earnings for workers](noam-usa-generate-earnings.md)
 
 [Standard payroll reports](noam-usa-generate-payroll-reports.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

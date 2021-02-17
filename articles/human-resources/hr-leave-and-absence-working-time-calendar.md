@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Create a working time calendar
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 A working time calendar in Dynamics 365 Human Resources shows the days and hours that employees work in your organization. When an employee submits a time-off request, they don't have to worry about holidays and closures.
 
 To streamline time-off requests, configure these items for your organization:
@@ -80,3 +82,6 @@ If you've enabled the Leave and absence bank holiday corrections preview feature
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Configure leave and absence types](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -134,3 +134,6 @@ You can view the invoice total on the **Pending vendor invoices** page by enabli
 - [Key invoice data into accounts payable using an approval journal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Key invoice data into the AP system using invoice pool](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Record a vendor invoice in the invoice journal](tasks/record-vendor-invoice-invoice-journal.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

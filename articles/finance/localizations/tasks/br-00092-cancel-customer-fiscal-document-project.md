@@ -46,3 +46,6 @@ You can cancel a customer invoice for a project. When you cancel a project invoi
 13. Click OK.
 14. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

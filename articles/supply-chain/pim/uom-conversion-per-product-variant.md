@@ -112,3 +112,6 @@ To export unit conversions to Excel, on the **Unit conversions** page, on the Ac
 ## Additional resources
 
 [Manage unit of measure](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

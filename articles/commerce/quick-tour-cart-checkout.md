@@ -109,3 +109,6 @@ For more information about how to author a checkout page, see [Add a checkout mo
 [Product details pages overview](quick-tour-pdp.md)
 
 [Account management pages overview](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

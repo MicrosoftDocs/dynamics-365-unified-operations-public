@@ -60,3 +60,6 @@ For this assessment, you can use the out-of-box **Top products** report, which y
 - **Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Top products report**
 - **Category and product management** workspace &gt; **Retail and Commerce** &gt; **Products and categories** &gt; **Store management** &gt; **Reports** &gt; **Top products report**
 - **Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

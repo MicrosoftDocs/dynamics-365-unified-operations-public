@@ -113,3 +113,6 @@ When a repair issue is resolved, you can close the repair line. Set the repair s
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Access the BOM Designer by using a service object relation
 If you automatically create service orders for a service agreement, the service
 object relations in the agreement are also created in the service orders.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

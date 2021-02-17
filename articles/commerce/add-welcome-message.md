@@ -71,3 +71,6 @@ The welcome message will now appear at the top of every site page that uses the 
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

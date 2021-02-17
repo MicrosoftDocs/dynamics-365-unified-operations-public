@@ -97,3 +97,6 @@ DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\]
 One or more errors occurred.*
 
 The current limit when you link the environments is approximately 40 legal tables. This error occurs if you try to enable maps, and more than 40 legal tables are linked between the environments.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ An order-specific BOM calculation represents a variation of a BOM calculation fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

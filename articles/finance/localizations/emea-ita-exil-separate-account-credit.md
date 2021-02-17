@@ -62,3 +62,6 @@ If you create a credit note that is based on an existing sales order, clear the 
 
 > [!NOTE]
 > Separate accounts are applicable only to credit notes that are based on sales orders. They aren't applicable to free-text credit notes, because free-text credit notes require that a ledger account be explicitly entered.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

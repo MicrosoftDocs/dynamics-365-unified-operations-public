@@ -276,3 +276,6 @@ Clean up your DR environment by manually unprovisioning all Dynamics Service Fab
 
 >[!IMPORTANT]
 > Your primary environment will be functioning as usual and can be serviced after you ensure that all items in the checklist are verified.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

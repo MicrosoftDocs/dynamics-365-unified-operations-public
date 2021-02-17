@@ -58,3 +58,6 @@ This task was created using the USSI data set.
 21. In the **Comment** field, type a value.
 22. Click **Submit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

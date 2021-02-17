@@ -157,3 +157,6 @@ There are several base classes for consuming events in the user interface (UI):
 | CustomDeliveryGridColumnBase | public title(): string { } | Set the title for the custom column. |
 |                              | public computeValue(cartLine: ProxyEntities.CartLine): string { } | Compute the value for the custom column. |
 |                              | public alignment(): CustomGridColumnAlignment { }<p>**Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }</p> | Set left or right alignment for the custom column. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

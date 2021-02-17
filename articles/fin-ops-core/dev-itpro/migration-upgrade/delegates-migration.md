@@ -158,3 +158,6 @@ Methods two and three can be used in parallel to the metadata search. The class 
 Similar to finding class references, finding all references can be done on the SubscribesTo keyword. The resulting list will include all static delegate handlers. Manually going through this list provides another means for finding static delegate handlers. This will not return dynamically declared delegate handlers that do not use the SubscribesTo keyword. 
 
 [![Del18](./media/del18-1024x328.png)](./media/del18.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

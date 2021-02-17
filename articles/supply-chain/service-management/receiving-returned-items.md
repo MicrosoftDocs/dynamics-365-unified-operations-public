@@ -49,3 +49,6 @@ Depending on company policies, the items in the return shipment can be sent to q
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

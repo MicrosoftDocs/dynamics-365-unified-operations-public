@@ -70,3 +70,6 @@ These steps can be completed using any dataset. To complete these steps, you mus
     * Intrastat sample mapping  
 5. Click Create configuration.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

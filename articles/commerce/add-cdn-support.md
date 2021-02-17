@@ -167,3 +167,6 @@ Your CDN should now be correctly configured so that it can be used with your Com
 [Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Generate ACA reports in Benefits management
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Benefits management helps you track information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate. Like the ACA reporting capability in the old **Benefits** workspace, this functionality applies only to legal entities in the United States.
 
 To use this functionality, you must first turn on **Advanced Benefits Management**. For more information, including important caveats about Benefits management, see [Enable or disable Benefits management](hr-admin-manage-features.md#enable-or-disable-benefits-management).
@@ -213,3 +215,6 @@ Coverage information for the employee's dependents is shown.
 
 > [!NOTE]
 > The page shows only benefits plans that are marked as **ACA reportable**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ This procedure shows how to report a production order as finished. The demo data
 4. In the list, click the link in the selected row.
     * The Report as finished journal is posted. If you want to make adjustments to the journal, you can manually create  a new journal where you can make changes.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

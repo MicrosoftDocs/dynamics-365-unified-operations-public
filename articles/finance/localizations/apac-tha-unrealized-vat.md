@@ -249,3 +249,6 @@ The realized purchase VAT is posted to the purchase VAT account.
 
 You can generate the **Purchase VAT** report, which includes the realized purchase VAT transactions together with the details of the VAT that the legal entity must pay for the purchase of goods and services. For more information, see [Sales tax reports](apac-tha-sales-vat-report.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

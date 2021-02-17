@@ -74,3 +74,6 @@ Our general recommendation is to remove the use of FTP. Do not use a direct conn
 
 > [!NOTE]
 > For more information about deprecated features, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md) and [Removed or deprecated features from previous releases](../migration-upgrade/deprecated-features.md) and [Removed or deprecated features in previous releases](../get-started/removed-deprecated-features-platform-updates.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

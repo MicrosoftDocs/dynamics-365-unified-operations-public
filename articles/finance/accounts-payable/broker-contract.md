@@ -145,3 +145,6 @@ If you were handling differences in a fee scenario where the customer pays the b
 > [!NOTE]
 > The write-off expense account number is specified in the **Main account** field for a specific reason code on the **Differential reasons** page.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

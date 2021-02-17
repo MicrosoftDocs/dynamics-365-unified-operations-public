@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Dataverse tables
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 
 > [!NOTE]
@@ -188,3 +190,6 @@ The following Dataverse tables are available based on Human Resources entities.
 [Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)<br>
 [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

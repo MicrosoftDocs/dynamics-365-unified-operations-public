@@ -55,3 +55,6 @@ Follow these steps to create a tax settlement period.
 3. Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax settlement periods**, and create a tax period for GST.
 
     ![Tax settlement period](media/tax-settlement-period.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

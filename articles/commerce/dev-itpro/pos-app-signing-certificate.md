@@ -129,3 +129,6 @@ Next, generate a new customized Modern POS package that is signed using this cer
 - If using a new, trusted certificate (or a new, self-signed certificate), you will be  required to install a new certificate on every device. After that, you need to take the newly created Modern POS Package (installer), uninstall the existing application, and then reinstall the new Modern POS package. You will need to perform a device activation of Modern POS on every device.
 
 - If using the renewed Contoso certificate, you will be required to install the new certificate on every device and install the Modern POS Package (installer). You are not required to uninstall, however you must reinstall on the device. Note that device activation of Modern POS will not be required. This option is a temporary solution. Only use this option to avoid reactivation and resolve the issue before obtaining a new trusted certificate.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

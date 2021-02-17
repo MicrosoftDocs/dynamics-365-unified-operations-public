@@ -46,3 +46,6 @@ The Withholding tax payment job procedure settles withholding tax balances from 
 7. Click **OK**.
 
 ![Parameters for withholding tax payment](media/withholding-tax-payment.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

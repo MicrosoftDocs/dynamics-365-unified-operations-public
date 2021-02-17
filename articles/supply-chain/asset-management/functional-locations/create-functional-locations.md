@@ -138,3 +138,6 @@ A functional location with related sub locations can be deleted if no assets hav
 
 >[!NOTE]
 >If you cannot delete a functional location, instead you can handle deletion by setting up a functional location lifecycle state for this purpose. For example, you can set up a "Scrapped" or "Deleted" stage, which should not be an active stage, in the **Functional location lifecycle states** form.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

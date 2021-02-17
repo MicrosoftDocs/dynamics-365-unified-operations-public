@@ -77,3 +77,6 @@ To create or copy a business process template, or to start a business process, n
 
 To view active processes and associated tasks, open the **Business processes** workspace.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

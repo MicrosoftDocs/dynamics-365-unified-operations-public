@@ -80,3 +80,6 @@ The total of percentages for all intervals doesn't have to be 100. However, you 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

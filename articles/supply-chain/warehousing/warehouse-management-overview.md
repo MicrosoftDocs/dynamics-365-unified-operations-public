@@ -76,3 +76,6 @@ You can find opinions, news, and other information about Warehouse management an
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

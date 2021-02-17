@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (June 25, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for June 25, 2019.
 author: andreabichsel
 manager: tfehr
 ms.date: 06/25/2019
@@ -96,3 +96,6 @@ A new option will let managers view the performance of both their direct reports
 ### Print performance reviews
 
 Employees, managers, and HR will be able to print an employee's performance review.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Recurring invoices are used to invoice customers regularly for the same amount. 
 6. Click Post.
     * Post the selected invoices.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

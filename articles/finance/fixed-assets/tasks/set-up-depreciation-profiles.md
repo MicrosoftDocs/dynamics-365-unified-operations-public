@@ -42,3 +42,6 @@ Depreciation profiles determine the type and the frequency of depreciation for a
 7. In the **Period frequency** field, select an option.
 8. Close the form.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ service work. The lines contain the following settings:
 ## Related topics
 
 [Create service agreements](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

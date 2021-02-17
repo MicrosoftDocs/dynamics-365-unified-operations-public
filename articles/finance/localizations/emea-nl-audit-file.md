@@ -50,3 +50,6 @@ The steps in this procedure walk you through using the Audit file.
 3. In the **To date** field, enter a date. 
 4. In the **Format mapping** field, enter **Audit file (NL)**.
 5. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -144,3 +144,6 @@ You can adjust differences in the counted value and then accept the counted valu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

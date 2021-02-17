@@ -55,3 +55,6 @@ You want to get your open positions in front of as many qualified candidates as 
 
 > [!NOTE]
 > Microsoft and Attract aren't involved in creating and maintaining these values. It's your responsibility to keep them up to date in Attract and to work with Broadbean to resolve any issues that involve your credentials.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

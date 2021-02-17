@@ -102,3 +102,6 @@ getPageData(pageId: string, context: any, filter: any, allowedStaleness: number)
 
 #### Returns Promise &lt;[PageData](services-business-logic-services-ipagedata.md)&gt;
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

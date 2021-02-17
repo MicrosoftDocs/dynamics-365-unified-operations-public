@@ -205,3 +205,6 @@ This section provides a walkthrough for working with a purge template.
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

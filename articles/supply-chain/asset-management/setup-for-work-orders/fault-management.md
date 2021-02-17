@@ -137,3 +137,6 @@ Follow these steps to create a list of suggestions for remedy and repair that ca
 
 > [!NOTE]
 > You can change the names of your fault symptoms, areas, types, causes, and remedies as you require. The name changes are automatically reflected in the related fault registrations.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

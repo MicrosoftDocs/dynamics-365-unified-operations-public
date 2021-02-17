@@ -65,3 +65,6 @@ AsyncService
 Creates a deferred object that can be used to return a promise from event handlers (where applicable) and resolve/reject them asynchronously.
 
 #### Returns [Deferred](defer-ideferred.md) &lt;T&gt;
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

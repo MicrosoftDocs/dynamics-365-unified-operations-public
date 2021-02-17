@@ -82,3 +82,6 @@ When you try to settle a transaction, you might notice a symbol that indicates t
 ## Additional resources
 
 - [Settle remainder](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

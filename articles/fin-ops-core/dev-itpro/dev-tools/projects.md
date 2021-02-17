@@ -105,3 +105,6 @@ To use the contents of a project package file, you must import the .axpp file in
     [![Import project dialog](./media/17_devotoolsconcept.png)](./media/17_devotoolsconcept.png)
 
 6. Click **OK** to complete the import process.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

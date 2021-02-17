@@ -86,3 +86,6 @@ The only supported collation for application databases in the cloud is **SQL\_La
 ## Additional resources
 
 [Get evaluations copies](../../dev-itpro/dev-tools/get-evaluation-copy.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

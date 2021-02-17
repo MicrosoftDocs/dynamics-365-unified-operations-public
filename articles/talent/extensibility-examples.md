@@ -58,8 +58,6 @@ In Microsoft Dynamics 365: Attract, you can use forms in the candidate portal, w
 
 When a candidate submits a form, Microsoft Power Automate captures the form submission, reads the data, and stores it in the Dataverse table.
 
-To download the **Power Automate – Form Connect** template and Custom Table Structure, go to [Power Automate – Form Connect](https://go.microsoft.com/fwlink/?linkid=2081988) on the Microsoft Download Center.
-
 ## Power Automate – SharePoint Integration
 
 The **Power Automate – SharePoint Integration** template can be used to read data from a Microsoft SharePoint list, compare the list with column values for any Dataverse table, and send the results of the comparison as a notification email. 
@@ -80,5 +78,6 @@ To download **Referral App**, go to [Dynamics 365 Talent extensibility solution:
 
 ## Additional resources
 
-[The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
-[Migrate app between tenants and environments](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
+[The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

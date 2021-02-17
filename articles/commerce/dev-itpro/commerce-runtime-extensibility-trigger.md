@@ -109,3 +109,6 @@ For the CRT extension to work in offline mode, update **...\Microsoft Dynamics 3
 ### Debugging CRT
 
 To debug CRT from POS, attach the CRT extension project to the w3wp.exe (IIS process for Retail server) when POS is connected to Retail server. For offline mode, attach the CRT extension project to the dllhost.exe process.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

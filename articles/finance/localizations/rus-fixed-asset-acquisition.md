@@ -149,3 +149,6 @@ When reverssing a transaction with the **Putting into operation** type for the f
 
 > [!NOTE]
 > You can reverse **Putting into operation** transactions via the Fixed asset journal (**Fixed asset (Russia) \> Journals \> FA journal**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

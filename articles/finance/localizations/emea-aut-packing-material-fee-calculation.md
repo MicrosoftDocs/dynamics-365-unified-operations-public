@@ -115,3 +115,6 @@ The **Packing materials fee calculation** report contains information about pack
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

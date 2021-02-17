@@ -55,3 +55,6 @@ The following illustration shows the conceptual architecture of task management 
 [Assign task lists to stores or employees](task-mgmt-assign-lists.md)
 
 [Task management in POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

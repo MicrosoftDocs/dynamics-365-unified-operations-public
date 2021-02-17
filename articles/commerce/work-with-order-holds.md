@@ -107,3 +107,6 @@ If users want to clear a hold but make additional changes to the order before it
 ## Reporting options
 
 Go to **Retail and Commerce** \> **Inquiries and reports** \> **Call center reports** \> **Order holds report** to run a report about order holds by date range, hold code, or other related criteria.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

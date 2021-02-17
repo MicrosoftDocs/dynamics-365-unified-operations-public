@@ -82,3 +82,6 @@ Instead of having to sum demand at the end of an allocation process and do reple
 |   Location directives   |                                                       Location directives are required in order to guide work to the locations where replenishment is required and to the locations that inventory is sourced from.                                                        |
 |     Work templates      |                                                   Work templates of the <strong>Replenishment</strong> type are required in order to create replenishment work so that inventory can be moved to the desired locations.                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

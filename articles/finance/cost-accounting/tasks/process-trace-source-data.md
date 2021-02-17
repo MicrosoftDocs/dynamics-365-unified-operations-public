@@ -48,3 +48,6 @@ All data processing is run by jobs. For each job and data provider, a journal is
     * For this example, select Fiscal 2017 Period 9.  
 14. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

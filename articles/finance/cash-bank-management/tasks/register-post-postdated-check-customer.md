@@ -53,3 +53,6 @@ You can register details of a postdated check received from a customer. You can 
 15. Click Post.
 16. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

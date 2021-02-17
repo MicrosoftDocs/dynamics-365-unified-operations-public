@@ -95,3 +95,6 @@ In the Customers V3 table map, you can see that **accountnumber** is mapped to *
 ## Next steps
 
 [Customize table and column mappings](customizing-mappings.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

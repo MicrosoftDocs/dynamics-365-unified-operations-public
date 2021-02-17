@@ -41,3 +41,6 @@ This procedure shows you how to create a purchase order for a one-time supplier.
 5. Click OK.
     * The purchase order can now be completed and processed like any other order. There are no special characteristics related to how this is done. The invoice will account a due transaction on the vendor account that was created with the order, and payment will then be processed.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

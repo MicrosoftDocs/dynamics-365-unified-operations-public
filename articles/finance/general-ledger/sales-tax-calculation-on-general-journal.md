@@ -162,3 +162,6 @@ The following table shows the generic rule.
 | Sales Tax Receivable | Negative              | Tax Receivable Account | Negative(Credit)  |
 | Sales Tax Payable    | Positive              | Tax Payable Account    | Negative(Credit)  |
 | Sales Tax Payable    | Negative              | Tax Payable Account    | Positive (Debit)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ You can also set up a reason code to help explain why an item was returned. For 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

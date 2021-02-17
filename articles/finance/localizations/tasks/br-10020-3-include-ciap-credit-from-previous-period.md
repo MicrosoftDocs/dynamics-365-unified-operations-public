@@ -53,3 +53,6 @@ Use the CIAP fixed asset transactions page to create CIAP credit installments. I
 19. Click Save.
 20. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

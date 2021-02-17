@@ -65,3 +65,6 @@ When **Restrict for refunds without receipt** is set to **Yes**, the selected pa
 
 If a transaction has both a receipted return and a return without a receipt, the restriction conditions will not be enforced because the transaction will be a return workflow with a receipt. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

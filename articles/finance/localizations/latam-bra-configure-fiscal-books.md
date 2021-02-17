@@ -175,3 +175,6 @@ On the **Fixed asset groups** page, you can set up a fixed asset group.
 > The fields for steps 8, 9, and 10 aren't available when version 3.0 is selected. This information has been changed and is included in the configuration of the fiscal organization.
 
 On the **Accountant details** page, you can set up accountant information for tax booking.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

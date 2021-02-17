@@ -34,8 +34,6 @@ ms.dyn365.ops.version:
 
 This topic covers account management pages and modules in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Account management refers to a group of pages that is used to manage user account–related information in Dynamics 365 Commerce. Account management pages include the account management landing page, user profile page, user address page, order history page, order details page, loyalty page, and wish list page.
 
 ### Account management landing page
@@ -92,3 +90,6 @@ To join loyalty program, a marketing page can be created with loyalty sign up an
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ This procedure uses the CNMF demo data. This procedure is for a feature that was
 9. Click OK.
 10. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

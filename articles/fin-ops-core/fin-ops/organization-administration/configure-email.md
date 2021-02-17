@@ -301,3 +301,6 @@ The email templates will be sourced from either system email templates or organi
 [Office integration tutorial](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/library/aa834374.aspx)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

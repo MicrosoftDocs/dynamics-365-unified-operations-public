@@ -81,3 +81,6 @@ Additional resources
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 - [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

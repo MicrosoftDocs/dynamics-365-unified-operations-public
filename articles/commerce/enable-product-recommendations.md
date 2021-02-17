@@ -117,3 +117,6 @@ To learn more about personalized recommendations, see [Enable personalized recom
 
 [Product recommendations FAQ](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

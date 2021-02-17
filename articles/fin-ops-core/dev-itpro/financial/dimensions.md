@@ -145,3 +145,6 @@ This section describes how to add a dimension data source to a new entity. The n
 5.  Override the **persistEntity** method, and enter the following X++ code. 
 
     [![Overriding the persistEntity method](./media/dim16.png)](./media/dim16.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

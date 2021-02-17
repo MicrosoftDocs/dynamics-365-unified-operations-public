@@ -84,3 +84,6 @@ If you're having trouble posting jobs to LinkedIn, see [Troubleshooting integrat
 [Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 
 [Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

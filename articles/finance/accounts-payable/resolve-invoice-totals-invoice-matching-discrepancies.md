@@ -48,3 +48,6 @@ After you identify a discrepancy, you might have to contact the vendor if you th
 For more information, see [Research/Resolve exceptions](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Additional resources
 --------
 
 [Create a new warehouse layout](tasks/create-new-warehouse-layout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

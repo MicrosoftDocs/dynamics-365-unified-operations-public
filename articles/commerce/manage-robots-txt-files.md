@@ -110,3 +110,6 @@ To delete a robots.txt file in Commerce, follow these steps.
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
 [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

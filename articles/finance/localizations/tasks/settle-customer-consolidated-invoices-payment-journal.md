@@ -63,3 +63,6 @@ This procedure was created using the demo data company JPMF.
 14. Go to Accounts receivable > Periodic tasks > Consolidated invoice.
     * Confirm that the status of the consolidated invoice has been updated to be Settled.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

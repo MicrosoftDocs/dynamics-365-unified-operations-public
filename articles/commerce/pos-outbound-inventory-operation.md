@@ -198,3 +198,6 @@ Fully shipped transfer orders are moved to the **Complete** tab of the **Outboun
 ## Related topics
 
 [Inbound inventory operation in POS](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

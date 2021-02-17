@@ -149,3 +149,6 @@ For more information, see the following topics:
 - [Dual currency](dual-currency.md)
 - [Sales tax overview](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

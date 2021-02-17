@@ -72,3 +72,6 @@ To find more information, visit:
 ## Step 3: Learn about FastTrack and plan your deployment
 
 Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to the Microsoft engineering resources that will make your experience with Dynamics 365 a success. For more information, see [Microsoft FastTrack for Dynamics 365 overview](../../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md). 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

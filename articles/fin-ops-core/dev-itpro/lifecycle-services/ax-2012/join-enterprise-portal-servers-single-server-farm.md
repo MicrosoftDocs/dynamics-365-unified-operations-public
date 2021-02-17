@@ -180,3 +180,6 @@ To learn the name of the WSS\_Content\_\* database for a particular site, follow
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

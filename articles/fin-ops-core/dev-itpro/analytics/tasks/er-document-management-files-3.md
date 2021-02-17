@@ -124,3 +124,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 23. Click Save.
 24. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

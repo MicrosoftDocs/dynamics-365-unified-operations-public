@@ -69,3 +69,6 @@ For more information, see the following topics:
 [Set up bank facilities and posting profiles for letters of guarantee](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (October 31, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for October 31, 2018.
 author: andreabichsel
 manager: tfehr
 ms.date: 10/31/2018
@@ -42,7 +42,7 @@ Field context will be added in the future to allow for direct navigation to corr
 
 ### Configure target systems
 
-In Talent, system administrators can define links that will be surfaced through the System Administration workspace. Part of the configuration is the Finance environments that you would like to navigate to as the "target" of the link. You do this by giving the target system a name and providing the URL of the Finance environment. Here is an example of a Finance URL that you would provide: https://devax00124aos.cloud.test.dynamics.com/. After you have configured your target systems,  you can define your links.
+In Talent, system administrators can define links that will be surfaced through the System Administration workspace. Part of the configuration is the Finance environments that you would like to navigate to as the "target" of the link. You do this by giving the target system a name and providing the URL of the Finance environment. After you have configured your target systems, you can define your links.
 
 ### Configure links
 
@@ -62,7 +62,7 @@ Each link that is created will have the following information defined.
 
 - Use user's current Company - Select **Yes** if you would like to use the User's current company context when navigating to Finance. If **No** is selected, then you can select the company that should be used.
 
-- Target menu item - Enter the menu item from Finance that the link should use when navigating. Menu items that you can directly navigate to are available. To find the menu item required, open Finance and open the page that is the target of the navigation. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in Finance and Operations, enter the value that appears after the "&mi" in the URL. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. The menu item to navigate to the employee list page in this example is: HcmWorkerListPage_Employees.
+- Target menu item - Enter the menu item from Finance that the link should use when navigating. Menu items that you can directly navigate to are available. To find the menu item required, open Finance and open the page that is the target of the navigation. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in Finance and Operations, enter the value that appears after the "&mi" in the URL. The menu item to navigate to the employee list page in this example is: HcmWorkerListPage_Employees.
 
 - Link to data source - Select the source of data that the link is referencing. The most common sources like **Worker** and **Position** are available.
 
@@ -100,3 +100,6 @@ The Data Management Framework (DMF) table HcmPersonalContactPersonEntity has bee
 ## Known issue
 - **Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. 
 - **Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed. If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled. (This issue will be fixed in the next platform update.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -137,3 +137,6 @@ In this process you will create a shipment based on the item *packing* dimension
 1. Open the mobile device, sign in to warehouse 63 and go to **Inventory \> Adjust In**.
 1. Enter **Loc** = *SHORT-01*. Make a new license plate with **Item** = *A0001* and **Quantity** = *1 pcs*.
 1. Select **OK**. You will receive the error "Location SHORT-01 failed because item A0001 does not fit in location's specified dimensions." This is because the *Storage* type dimensions of the product are larger than the dimensions specified on the location profile.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

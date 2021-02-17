@@ -303,3 +303,6 @@ Enabling the MX-00010 and MX-00016 (CFDI Invoice and CFDI Cancellation) features
 - [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
 - [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
 - [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

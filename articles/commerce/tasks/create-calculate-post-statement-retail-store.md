@@ -49,3 +49,6 @@ This topic describes the manual steps for creating, calculating, and posting a s
 12. At the home page, select **Store financials**.
 13. Select the **Posted statements** tab.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

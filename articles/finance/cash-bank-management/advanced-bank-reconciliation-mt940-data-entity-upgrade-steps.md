@@ -69,3 +69,6 @@ Use the following steps to add the bank statement import entity to support the M
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

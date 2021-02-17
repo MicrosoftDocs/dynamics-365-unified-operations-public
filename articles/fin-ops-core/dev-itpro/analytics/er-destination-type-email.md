@@ -144,3 +144,6 @@ The following illustration shows the process, as described in this topic, of gro
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 - [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

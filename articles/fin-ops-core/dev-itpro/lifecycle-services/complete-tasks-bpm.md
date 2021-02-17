@@ -78,3 +78,6 @@ When you distribute a BPM library, the library will be available to all users wh
 1. Ask the customer to invite you to their project.
 2. Sign in to the customer's LCS project by using your organization's account.
 3. On the **Business process libraries** page, copy the library from the **Corporate libraries** pane to the customer's project.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

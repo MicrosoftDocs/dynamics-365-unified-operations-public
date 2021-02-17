@@ -54,3 +54,6 @@ This procedure was created using the demo data company USMF with a legal entity 
 4. In the Description field, type a value.
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

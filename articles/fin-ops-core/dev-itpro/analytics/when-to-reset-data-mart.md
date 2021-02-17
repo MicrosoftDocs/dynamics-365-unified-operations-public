@@ -60,3 +60,6 @@ There are some circumstances when we don't recommend resetting a data mart. Thes
 > The following points specify two things that resetting a data mart will *not* do. <br>
 > - Resets do not clear report designs. <br>
 > - Resets do not clear company data or user data unless selected.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

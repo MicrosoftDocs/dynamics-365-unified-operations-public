@@ -87,3 +87,6 @@ To run the Italy-specific reports about withholding tax, go to **Tax** &gt; **In
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

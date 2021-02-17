@@ -74,3 +74,6 @@ Additional resources
 [Create and assign a trading partner code](tasks/create-assign-trading-partner-code-public-sector.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

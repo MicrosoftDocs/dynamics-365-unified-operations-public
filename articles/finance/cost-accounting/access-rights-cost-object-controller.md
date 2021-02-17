@@ -109,3 +109,6 @@ Additional resources
 - [Cost control workspace](cost-control-workspace.md)
 - [Dimension hierarchy](dimension-hierarchy.md)
 - [Set up security for Cost accounting content pack](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

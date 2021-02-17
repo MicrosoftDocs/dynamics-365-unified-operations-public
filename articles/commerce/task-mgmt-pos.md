@@ -68,3 +68,6 @@ The following illustration shows the **Task lists** tab.
 [Create task lists and add tasks](task-mgmt-create-lists.md)
 
 [Assign task lists to stores or employees](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

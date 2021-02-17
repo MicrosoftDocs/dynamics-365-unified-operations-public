@@ -83,3 +83,6 @@ To add a quick view module to a product collection module in Commerce site build
 [Product collection module](product-collection-module-overview.md)
 
 [Search results module](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

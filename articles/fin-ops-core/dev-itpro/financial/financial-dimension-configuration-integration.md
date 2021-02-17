@@ -93,3 +93,6 @@ The second row is imported as defined in the import file: **Main account == 1101
 ## Additional resources
 
 [Add dimensions to Excel templates](dimensions-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (September 10, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for September 10, 2018.
 author: andreabichsel
 manager: tfehr
 ms.date: 09/12/2018
@@ -102,3 +102,6 @@ This release includes several additional bug fixes:
 - When a contractor is hired, the **Compensation** tab should not be available on the request/action page.
 - During the request termination process, you can't continue until all required columns contain data.
 - Sort order and date display issues on the Personnel management analytics have been addressed.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

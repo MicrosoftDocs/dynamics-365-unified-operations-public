@@ -145,3 +145,6 @@ The final step is to specify attribute-based sales prices for the product model 
 1. On the Action Pane, open the **Model** tab and, from the **Product model details** group, select **Versions**.
 1. The **Versions** page opens. Make sure the **Pricing method** is set to **Attribute based**.
     ![Set the pricing method to attribute based](media/prod-config-versions.png "Set the pricing method to attribute based")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

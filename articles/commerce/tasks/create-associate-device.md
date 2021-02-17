@@ -42,3 +42,6 @@ This procedure walks through how to create a new device and associate it to a re
 9. In the list, click the link in the selected row.
 10. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

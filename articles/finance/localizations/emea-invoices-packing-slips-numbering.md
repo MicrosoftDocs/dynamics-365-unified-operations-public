@@ -132,3 +132,6 @@ The **Documents to update** field influences on the **Document status** field in
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -34,8 +34,6 @@ ms.dyn365.ops.version:
 
 This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Promo banner modules are used to show inline informational messages on a page. They can be used to show site-wide promotions that appear on all pages of an e-Commerce site. 
 
 Promo banner modules support a text message and a link. If multiple messages are added to a promo banner module, it becomes a rotating carousel banner that lets customers cycle through all the messages. 
@@ -99,3 +97,6 @@ To add a promo banner module to a page and set the required properties, follow t
 [Content block module](add-hero-module.md)
 
 [Video player module](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

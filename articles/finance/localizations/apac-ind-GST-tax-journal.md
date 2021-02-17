@@ -52,3 +52,6 @@ You can use a tax journal to post a tax adjustment journal. For reverse charge t
 17. Select **Tax document**.
 18. Select **Close**, and then select **Post**.
 19. Close the message that you receive, and then select **Voucher**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

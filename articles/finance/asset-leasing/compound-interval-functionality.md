@@ -164,3 +164,6 @@ The following table lists the first 12 months of the payment schedule. Note the 
 
 > [!NOTE]
 > If the annuity type is changed to **Annuity due**, the payment will be in January instead of December.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

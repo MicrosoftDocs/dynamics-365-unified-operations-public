@@ -43,3 +43,6 @@ After you've classified features as either regulatory or competitive, as describ
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

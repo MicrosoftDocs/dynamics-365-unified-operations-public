@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a mass hire project
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 
 
 This procedure walks through the process of setting up a mass hire project. A recruiter can use mass hire projects to easily create multiple positions and hire a number of workers into those positions. To begin this procedure, go to Human resources > Recruitment > Mass hire projects. The demo data company used to create this procedure is USMF.
@@ -51,3 +53,6 @@ This procedure walks through the process of setting up a mass hire project. A re
     * Optionally, select the Department for the new positions.  
 13. Click OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: What's new or changed in Dynamics 365 Talent - Core HR (December 14, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for December 14, 2018.
 author: andreabichsel
 manager: tfehr
 ms.date: 12/14/2018
@@ -153,3 +153,6 @@ The updated mappings should look like the following images.
 ![Workers to Worker task](./media/WorkerMapping.png)
 
 ![Gender column transform](./media/WorkerTransform.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

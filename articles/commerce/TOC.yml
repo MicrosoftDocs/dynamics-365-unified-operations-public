@@ -2088,6 +2088,8 @@
             href: e-commerce-extensibility/request-properties-object.md
           - name: App settings
             href: e-commerce-extensibility/app-settings.md
+          - name: Platform settings file
+            href: e-commerce-extensibility/platform-settings.md
           - name: Extend a module definition
             href: e-commerce-extensibility/extend-module-definition.md
           - name: Cookie API overview

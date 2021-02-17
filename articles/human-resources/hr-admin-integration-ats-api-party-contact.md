@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Party contact
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Party contact entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_dirpartycontactentities
@@ -84,3 +86,6 @@ This entity describes the candidate’s contact information, including phone, em
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

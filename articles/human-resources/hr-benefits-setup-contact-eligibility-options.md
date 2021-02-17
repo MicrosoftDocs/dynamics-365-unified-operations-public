@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure personal contact eligibility options
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This article shows you how to configure types of personal contacts to use in benefits in Microsoft Dynamics 365 Human Resources. Personal contacts can be beneficiaries or dependents. 
 
 1. In the **Benefits management** workspace, under **Setup**, select **Personal contact eligibility options**.
@@ -50,3 +52,6 @@ This article shows you how to configure types of personal contacts to use in ben
    | **Age** | The maximum age of an eligible personal contact for the benefit plan. This field is only active if you select a relationship. This age is compared with the calculated age of the personal contact. Calculated age is: (Coverage date – personal contact birth date / 365). This number is always an integer. |
 
 4. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

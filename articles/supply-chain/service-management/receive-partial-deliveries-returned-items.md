@@ -55,3 +55,6 @@ If a return shipment contains less than the full quantity of a return order line
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

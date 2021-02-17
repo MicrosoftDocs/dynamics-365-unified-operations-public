@@ -84,3 +84,6 @@ You can apply interest and fines on customer payments that are delayed. The inte
 49. Close the page.
 50. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

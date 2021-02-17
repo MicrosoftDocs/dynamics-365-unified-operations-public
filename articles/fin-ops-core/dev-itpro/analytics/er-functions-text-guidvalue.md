@@ -69,3 +69,6 @@ You can then use an expression such as `FILTER (Users, Users.objectId = myID)` t
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

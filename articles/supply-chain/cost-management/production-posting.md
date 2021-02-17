@@ -60,3 +60,6 @@ In the **Production control parameters**, you can use the **Ledger posting** fie
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

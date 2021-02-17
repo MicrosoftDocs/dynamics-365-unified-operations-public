@@ -216,3 +216,6 @@ In addition to the restrictions that currently apply for catch weight products, 
 
 > [!NOTE]
 > The preceding information about catch weight tags is valid only if the catch weight product has a catch weight tag dimension tracking method that is fully tracked (that is, if the **Catch weight tag dimension tracking method** parameter on the catch weight item handling policy is set to **Product dimensions, tracking dimensions and all storage dimensions**). If the catch weight item is only partially tag-tracked (that is, if the **Catch weight tag dimension tracking method** parameter on the catch weight item handling policy is set to **Product dimensions, tracking dimensions and Inventory Status**), additional restrictions apply. Because visibility is lost between the tag and inventory in this case, some additional scenarios aren't supported.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

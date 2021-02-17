@@ -63,3 +63,6 @@ This topic explains how to create a consignment replenishment order where you ca
 3. Select **Overview**. The items that have been received as consignment inventory owned by the vendor are available on-hand. The remaining quantity on the consignment replenishment order is shown in the **Ordered in total** field.  
 4. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

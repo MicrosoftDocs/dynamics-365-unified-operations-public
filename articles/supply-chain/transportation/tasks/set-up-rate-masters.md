@@ -97,3 +97,6 @@ This procedure shows you how to set up a rate master. The logistic manager usual
     * Specify which postal code this rate base assignment should be valid from.
 10. In the **Pick-up Country Region** field, type "USA".
 11. Select **Save**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

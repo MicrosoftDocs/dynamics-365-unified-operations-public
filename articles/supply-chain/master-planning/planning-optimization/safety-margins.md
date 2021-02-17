@@ -185,3 +185,6 @@ For example, an item has lead time of one day and a receipt margin of three days
 [Get started with Planning Optimization](get-started.md)
 
 [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

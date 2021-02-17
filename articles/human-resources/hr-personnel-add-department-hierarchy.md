@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Create departments and include them in the department hierarchy
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. You can use departments to report on functional areas. Departments might have profit and loss responsibility.
 
 A department might include a group of cost centers. Positions can be assigned to departments. To create a department, click **Human Resources** &gt; **Departments** &gt; **Department**. The following table describes the fields that are available.
@@ -59,3 +61,6 @@ To add a department to the department hierarchy, follow these steps.
 
 ## Steps for creating a department
 Refer to the [Define new departments](../fin-and-ops/hr/tasks/define-new-departments.md) article for the step-by-step procedure for creating a new department. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

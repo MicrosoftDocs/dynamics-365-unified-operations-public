@@ -55,3 +55,6 @@ This task was recorded using the demo data company JPMF.
 5. In the list, click the link in the selected row.
 6. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

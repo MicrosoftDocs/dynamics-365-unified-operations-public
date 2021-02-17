@@ -106,3 +106,6 @@ Complete the following procedure to connect to the virtual machine where the AX 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

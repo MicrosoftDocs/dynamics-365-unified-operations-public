@@ -47,3 +47,6 @@ The first year of service will conclude in December 2020, which means the end of
    [![Depreciation schedule for half-year depreciation convention](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 The extended depreciation periods that are added by the half-year convention provide more accurate allocation of depreciation. The six-month convention represents depreciation expenses more equally, which is useful for reporting on the profit and loss statement.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

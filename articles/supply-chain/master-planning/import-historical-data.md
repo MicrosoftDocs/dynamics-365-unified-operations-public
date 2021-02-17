@@ -47,7 +47,7 @@ For more information about how to import data, including how to clean up data af
 
 ## Example
 
-You can use the following file as an example. Download the [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). This file contains the historical demand data for item D0001. It contains only the following mandatory fields: site, quantity, and the demand date.
+You can use the following file as an example. Download the [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/). This file contains the historical demand data for item D0001. It contains only the following mandatory fields: site, quantity, and the demand date.
 
 1. Select the company to import the historical demand data into.
 2. Open the **Data management** workspace.
@@ -65,3 +65,6 @@ After you've imported the historical demand data, you can generate a demand fore
 
 [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)  
 [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

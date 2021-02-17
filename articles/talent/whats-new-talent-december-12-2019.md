@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (December 10, 2019)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for December 10, 2019.
 author: andreabichsel
 manager: tfehr
 ms.date: 12/10/2019
@@ -88,3 +88,6 @@ Preview features are only available in **Sandbox** environments.
 
 See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Generate ACA reports
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Affordable Care Act (ACA) reporting generates forms 1095-B and 1095-C in support of the **Employer Mandate** portion of the Affordable Care Act.
 
 > [!NOTE]
@@ -93,3 +95,6 @@ If you need to report covered individuals because you provide self-insured cover
 
 > [!NOTE]
 > Only benefit plans marked as **ACA reportable** display in the inquiry window.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

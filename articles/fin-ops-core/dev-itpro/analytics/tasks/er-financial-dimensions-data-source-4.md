@@ -52,3 +52,6 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 ![ER configurations page](../media/er-financial-dimensions-guides-run3.png)
     * Review the generated output. For each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this instance.  
 ![ER configurations page](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

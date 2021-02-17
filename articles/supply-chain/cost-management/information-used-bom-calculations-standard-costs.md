@@ -87,3 +87,6 @@ Several sources of information can be specified when initiating a BOM calculatio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ ms.dyn365.ops.version: AX 7.0.0
 1. Select **Save** to save the reason code.
 
 When you are prompted for a reason code to explain why you are updating a stage of the service order, you can select any of the reason codes that you create here.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

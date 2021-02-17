@@ -77,3 +77,6 @@ For details about how to add a navigation menu module to a header module, see [H
 [Cookie compliance](cookie-compliance.md)
 
 [Header module](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

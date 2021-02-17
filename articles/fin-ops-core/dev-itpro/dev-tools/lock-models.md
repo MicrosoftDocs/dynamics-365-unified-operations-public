@@ -171,3 +171,6 @@ For deprecating model elements (tables, data entities, EDTs, Enums, ...etc.), us
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

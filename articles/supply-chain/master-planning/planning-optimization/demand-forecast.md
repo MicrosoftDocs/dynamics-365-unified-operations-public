@@ -340,3 +340,6 @@ To assign submodels to a forecast model, follow these steps.
 
     - **Submodel** – Select the forecast model to add as a submodel. This forecast model must already exist, and it must not have any submodels of its own.
     - **Name** – Enter a descriptive name for the submodel. For example, this name might indicate the submodel's relation to the parent forecast model.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

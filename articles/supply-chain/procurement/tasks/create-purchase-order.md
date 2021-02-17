@@ -76,3 +76,6 @@ This topic shows you how to create a purchase order manually. It's more typical 
 
 2. Select **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

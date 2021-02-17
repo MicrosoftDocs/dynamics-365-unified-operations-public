@@ -91,7 +91,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 ## Prices and discounts
 -   [Purchase agreements](purchase-agreements.md)
 -   [Create a purchase agreement](tasks/create-purchase-agreement.md)
--   [Vendor rebates](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (white paper)
+-   [Vendor rebates](https://docs.microsoft.com/dynamics/s-e/) (white paper)
 
 ## Product receipt and invoicing
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
@@ -109,3 +109,6 @@ Procurement and sourcing covers all steps from identifying a need for product an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

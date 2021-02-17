@@ -68,3 +68,6 @@ After the slip journal is processed, if the amount in the **Amount to be transfe
 
 - [Advance payment to an employee (Eastern Europe)](tasks/advance-payment-employee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

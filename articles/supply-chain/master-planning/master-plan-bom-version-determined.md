@@ -47,3 +47,6 @@ A valid BOM version, whether site-specific or general, must meet the required cr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

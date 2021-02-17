@@ -98,3 +98,6 @@ You won't be able to process or complete your budgets in the consolidation compa
 For more information, see [Currency revaluation in a consolidation company](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

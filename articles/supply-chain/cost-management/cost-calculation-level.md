@@ -60,3 +60,6 @@ A production order for product C is then created, and product A is added to the 
     - **Product C:** 2
 
 This behavior ensures that changes to production order BOMs don't affect subsequent cost calculations.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

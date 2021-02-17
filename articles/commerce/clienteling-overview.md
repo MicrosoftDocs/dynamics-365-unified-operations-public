@@ -136,3 +136,6 @@ After you update the fields, select **Validate** to ensure the secret can be acc
 8. In Commerce, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, set the **Application ID** to "CI_Access_AppID" (from step 1 above). For **Secret name**, select the name of the secret entered in step 7 above ("CISecret"). Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, an error message will be displayed, and this option will be set to **No**. 
 
 You can have multiple environments in Customer Insights, such as test and production environments. In the **Environment instance ID** field, enter the appropriate environment. In the **Alternate customer ID** field, enter the property in Customer Insights that is mapped to the customer account number. (In Commerce, the customer account number is the customer ID.) The remaining three properties are the measures that will be shown on the customer card in the client book. You can select up to three measures to show on the customer card. However, you are not required to select any measures. As mentioned previously, the system shows these values first, and then it shows the values for the client book attribute group.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

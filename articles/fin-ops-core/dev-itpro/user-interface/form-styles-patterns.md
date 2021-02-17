@@ -168,3 +168,6 @@ Some forms are structurally close to a defined form pattern, but because some as
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

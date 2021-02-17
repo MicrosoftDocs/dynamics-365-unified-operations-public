@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure integration with Finance
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 To integrate Dynamics 365 Human Resources with Dynamics 365 Finance, you can use the Human Resources to Finance template in [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator). The Human Resources to Finance template enables data flow for jobs, positions, and workers. The template allows data to flow from Human Resources into Finance, but doesn't allow data to flow from Finance into Human Resources.
@@ -260,3 +262,5 @@ The location ID used for worker address isn't part of a number sequence. When in
 The following illustration shows an example of a template mapping in Data Integrator. 
 
 ![Template Mapping](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

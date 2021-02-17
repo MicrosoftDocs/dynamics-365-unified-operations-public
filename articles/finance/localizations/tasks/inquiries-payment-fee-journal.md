@@ -47,3 +47,6 @@ Role 'AP coordinator' is required for this procedure.
 5. Click Payment fee summary.
     * Review the vendor payment fee summary.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

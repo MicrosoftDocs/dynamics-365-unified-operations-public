@@ -69,3 +69,6 @@ as service-object relations and service-task relations on the new service-agreem
 [Develop and establish service agreements overview](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

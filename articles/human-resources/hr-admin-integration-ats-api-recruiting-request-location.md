@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Recruiting request location
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Recruiting request location entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmrecruitingrequestlocationentity
@@ -86,3 +88,6 @@ The list of locations defined as locations where recruited employees will work u
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Recruiting request](hr-admin-integration-ats-api-recruiting-request-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

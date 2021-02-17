@@ -221,3 +221,6 @@ Complete the following steps to generate the tax declaration report.
    - **Purchase transactions**
    - **Sales transactions**
   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

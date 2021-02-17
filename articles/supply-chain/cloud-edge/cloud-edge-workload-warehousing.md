@@ -295,3 +295,6 @@ On the workload in scale units, you can manage the following batch jobs at **War
 - Process wave table records
 - Warehouse hub to scale unit message processor
 - Process quantity update requests for warehouse order lines
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

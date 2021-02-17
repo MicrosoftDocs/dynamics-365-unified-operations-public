@@ -180,3 +180,6 @@ Create the environments plan early in your implementation.
 4. Summarize the list of required environments in a matrix.
 
 After you've identified the environments, the environments plan can be used to structure the Application Lifecycle Management (ALM) flows. For example, after you finalize your environments plan, you can define the flows for building and moving the code and the data across environments.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

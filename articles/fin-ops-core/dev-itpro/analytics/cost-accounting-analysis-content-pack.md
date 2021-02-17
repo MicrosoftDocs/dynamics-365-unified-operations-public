@@ -129,3 +129,6 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Fiscal calendars                   | Calendar, Calendar description                                                                                       |
 | Fiscal years                       | Calendar year                                                                                                        |
 | Fiscal periods                     | Calendar year period                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

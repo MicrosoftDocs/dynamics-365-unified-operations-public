@@ -98,3 +98,6 @@ The submission logs include the following additional functions:
 - **Cancel submissions** – This function enables a special submission process in scenarios where the electronic invoice must be approved by an external web service. It instructs the Electronic invoicing add-on to send the web service a specific message that is intended to cancel the status of an approved electronic invoice in the web service database.
 - **Resubmit document** – Resubmit an electronic document that has already been submitted to the Electronic invoicing add-on. A whole new log is created on the **Submission details** page.
 - **Send related submission**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

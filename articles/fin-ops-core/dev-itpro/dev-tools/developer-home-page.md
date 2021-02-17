@@ -193,3 +193,6 @@ The client is an HTML web client that runs in all major browsers. For informatio
 ## Additional resources
 
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

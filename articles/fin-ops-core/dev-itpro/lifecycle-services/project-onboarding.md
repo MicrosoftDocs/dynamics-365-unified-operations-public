@@ -109,3 +109,6 @@ The **Next Steps** page provides additional resources about the most critical as
 - You can complete Project onboarding only after all previous steps have been completed. If any previous steps haven't been completed, the **Complete onboarding** button won't be available.
 - Any skipped steps are marked with an asterisk (\*). You can also view any missing steps.
 - After you complete Project onboarding, you can continue to update information, such as project scope values.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

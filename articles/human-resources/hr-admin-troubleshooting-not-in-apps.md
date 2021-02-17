@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Human Resources doesn't appear in Microsoft Dynamics 365 apps
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Issue**
 
 The customer doesn't see Dynamics 365 Human Resources among the Microsoft Dynamics 365 apps.
@@ -61,3 +63,6 @@ The user must be added to the Environment Maker role for the environment in Micr
     ![Sync button](media/get-more.png)
 
     After synchronization is completed, Human Resources will appear on the home page.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

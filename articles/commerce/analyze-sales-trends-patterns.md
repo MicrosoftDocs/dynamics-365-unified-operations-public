@@ -46,3 +46,6 @@ Users can also study sales trends and patterns by hour across different levels o
 - **Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Channel sales by hour report**
 - **Store financials** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store financials** &gt; **Reports** &gt; **Channel sales by hour report**
 - **Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by hour report**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

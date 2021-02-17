@@ -70,3 +70,6 @@ Use this procedure to create a sales quotation that uses Brazilian taxes. You ca
 35. Close the page.
 36. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

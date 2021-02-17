@@ -53,3 +53,6 @@ On the **Method of payments – customers** page, enable the **Generic electroni
 1. To import the file, create a **Protest bill of exchange** journal, and then select **Journal lines**.
 2. Select **Functions** \> **Import protest**.
 3. In the dialog box, select the method of payment for the protest import, and then attach the file. The journal lines are created based on information in the file.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

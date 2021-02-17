@@ -39,3 +39,6 @@ Code that executes in business logic can make runtime modifications to the metad
 
 Code that executes in the business logic of the app can make runtime modifications to business data that is stored in the app. These modifications (when performed according to correct practices) participate in the normal data processing framework as other business data in the app. That means adhering to the offline-first capabilities and asynchronous save behaviors provided by the framework.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

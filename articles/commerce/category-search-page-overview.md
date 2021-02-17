@@ -114,3 +114,6 @@ The following components are essential for a search results page:
 
 [Account management pages overview](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

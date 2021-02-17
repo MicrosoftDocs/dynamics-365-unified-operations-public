@@ -51,3 +51,6 @@ You can create bar codes manually or automatically. To create bar codes, complet
 ## Additional resources
 
 [Set up bar code masks](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

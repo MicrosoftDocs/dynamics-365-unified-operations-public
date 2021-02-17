@@ -65,3 +65,6 @@ To generate the report, go to **Fixed assets** **&gt; Inquires and** **Reports**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
