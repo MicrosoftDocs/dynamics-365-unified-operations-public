@@ -43,7 +43,7 @@ To invoke a data action on the server, the below URL route can be used with the 
 /api?id=<data_action_id>
 ```
 
-SDK provides commerceAPIRequest util function for more control on the request and is recommended as the AJAX request is passed additional information and context about the current request.
+The online SDK provides a helper utility function **commerceAPIRequest** which provides control on the AJAX request that includes additional context information.
 
 #### GET Request
 
@@ -75,26 +75,20 @@ public async componentDidMount(): Promise<void> {
     );
 }
 ```
-In case of POST request, post body can be accessed from the context object in data action.
+For POST requests, the post body can be accessed from the context object inside the data action.
 
 ```js noeditor
 ctx.requestContext.postBody
 ```
 
-
 ## Additional resources
 
-[Batch data actions](batch-data-actions.md)
+[Data action overview](data-actions.md)
 
 [Create an observable data action](create-observable-data-action.md)
 
-[Share state across modules](share-state-across-modules.md)
-
 [Data action cache settings](data-action-cache-settings.md)
 
-[Data action overrides](data-action-overrides.md)
-
-[Data action hooks](data-action-hooks.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
