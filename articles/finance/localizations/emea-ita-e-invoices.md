@@ -53,7 +53,7 @@ Before you can begin to work with the electronic invoice functionality, the foll
 - [Electronic document properties](#edproperties)
 - [Customers](#customers)
 - [Items](#items)
-- [Natura](#Natura)
+- [Maintain **Natura** codes](#Natura)
 - [Digital certificates](#digitalcert)
 - [Optional: Destination for XML file output](#destination)
 
@@ -183,7 +183,7 @@ The **CodiceValore** field is set according to the following rules:
 - If there isn't a bar code, and the record on the **External item description** page exists for the product and the customer, this field is set to the value from **External item number** field.
 - If there isn't a bar code, and the record on the **External item description** page doesn't exist for the product and customer, this field is set to the value from the **Item number** field.
 
-### <a id="Natura"></a>Natura
+### <a id="Natura"></a>Maintain **Natura** codes
 
 #### Reverse charge and reverse charge group configuration
 
