@@ -2,7 +2,7 @@
 # required metadata
 
 title: TDS group, PAN, and TAN information setup for vendors and customers
-description: 
+description: This topic lists the steps for setting up the Tax Deducted at Source (TDS) group, PAN, and TAN information for vendors and customers.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
