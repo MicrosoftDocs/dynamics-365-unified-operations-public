@@ -40,25 +40,36 @@ This topic explains how to issue electronic invoices in Microsoft Dynamics 365 F
 
 ## Feature activation
 
-To start issuing electronic invoices through the Electronic invoicing add-on, it is necessary to activate the Feature reference in Finance and Supply Chain Management.
+To start issuing electronic invoices through the Electronic invoicing add-on, it is necessary to activate the Feature in Finance and Supply Chain Management.
 
-Each Feature reference corresponds to a specific electronic invoicing feature that complies to the electronic invoicing requirements from a country/region.
+Each Feature corresponds to a specific electronic invoicing feature that complies to the electronic invoicing requirements from a country/region.
 
-The following table shows the list of feature References that the Electronic invoicing add-on supports.
+The following table shows the list of features that the Electronic invoicing add-on may support:
 
-| Feature reference | Name                                              | Country/region |
-|-------------------|---------------------------------------------------|----------------|
-| BR-00053          | NF-e Federal - Brazilian electronic invoice       | Brazil         |
-| BR-00095          | NFS-e Brazilian electronic invoices               | Brazil         |
-| DK-00001          | E-invoicing to the public sector (OIOUBL) – DK    | Denmark        |
-| EG-00008          | E-invoicing for Egypt                             | Egypt          |
-| ES-00025          | Electronic Invoice to the public sector           | Spain          |
-| EUR-00023         | European Union E-invoicing to Public sector       | Europe         |
-| ITA-00036         | IT - E-invoicing to the public sector (FatturaPA) | Italy          |
-| MX-00010          | E-invoicing CFDI                                  | Mexico         |
-| MX-00016          | E-invoicing CFDI - cancellation process           | Mexico         |
+| Name                                              | Country/region |
+|---------------------------------------------------|----------------|
+|Austrian electronic invoice                        |Austria         |
+|Belgian electronic invoice                         |Belgium         |
+|NF-e  Federal - Brazilian electronic invoice       |Brazil          |
+|NFS-e - Brazilian service (city) electronic invoice|Brazil          |
+|Danish electronic invoice                          |Denmark         |
+|Egyptian electronic invoice                        |Egypt           |
+|Estonian electronic invoice                        |Estonia         |
+|Finnish electronic invoice                         |Finland         |
+|French electronic invoice                          |France          |
+|German electronic invoice                          |Germany         |
+|PEPPOL - Global electronic invoice                 |Global          |
+|Italian electronic invoice                         |Italy           |
+|CFDI - Mexican electronic invoice                  |Mexico          |
+|Dutch electronic invoice                           |Netherlands     |
+|Norwegian electronic invoice                       |Norway          |
+|Spanish electronic invoice                         |Spain           |
 
-In the cases where there is a legacy electronic invoicing feature, supported the country localizations scope, the activation of the Feature reference enables the issuing of electronic invoices through the Electronic invoicing add-on and turns-off the former feature.
+In the cases where there is a legacy electronic invoicing feature, supported the country localizations scope, the activation of the Feature enables the issuing of electronic invoices through the Electronic invoicing add-on and turns-off the former feature.
+
+> [!IMPORTANT]
+> After enabling Electronic Invoicing add-on integration in the feature management, the new electronic invoicing experience is switched off by default. You use the feature concept to enable selectively new experience for legal entities using country / region specific functionality for corresponding geographies. **Global** controls the new experience for all the remaining county / regions than listed in the page.
+
 
 ## Submit electronic documents
 
