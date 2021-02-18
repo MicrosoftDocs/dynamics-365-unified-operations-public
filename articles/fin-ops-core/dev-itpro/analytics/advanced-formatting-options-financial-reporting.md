@@ -301,7 +301,7 @@ The calculation row can refer to a calculation row or a financial data row. The 
 
 1. In Report Designer, click **Row Definitions**, and then open the row definition to modify.
 2. Double-click the **Format Code** cell, and then select **CAL**.
-3. Click the **Related Formulas/Rows/Units** cell, and then enter a conditional calculation that starts with an **IF @Unit** construction.
+3. Click the **Related Formulas/Rows/Units** cell, and then enter a conditional calculation that starts with an **IF \@Unit** construction.
 
 ### IF/THEN/ELSE statements in a column definition
 
