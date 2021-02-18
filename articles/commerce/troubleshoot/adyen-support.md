@@ -35,21 +35,22 @@ ms.dyn365.ops.version: 10.0.18
 
 ## Description
 When running into issues with the Adyen Payment Connector that requires
-additional support from the Adyen team: ▪ MPOS/CPOS/Call Center/
-Commerce Configuration issues.
+additional support from the Adyen team: 
 
--   More information on the Adyen PSP Number (e.g. why refused, MKE
-    refusals) etc.
+-   MPOS/CPOS/Call Center/Commerce Configuration issues.
+
+-   More information on the Adyen PSP Number (e.g. why refused, MKE refusals), etc.
 
 -   Anything not generally working in TEST or LIVE merchant.
 
-##Details
-1. Initiate the e-mail below to start the support process with the
+## Details
+Initiate the e-mail below to start the support process with the
 Adyen team that contains all the necessary issue descriptions to
 expedite the troubleshooting steps for the following type of issues:
 
-| **TO ** | <blockquote></br><em>support@adyen.com</em></br></blockquote> |
-|-------------------------|-------------------------|
-| **CC ** |  |
-| **SUBJECT LINE ** | <blockquote></br>Microsoft Dynamics Support Request</br></blockquote> |
-| **BODY ** | <blockquote></br>Hi Support,</br>Please provide support for the following issue.</br></blockquote></br><ul></br><li>Merchant account</li></br><li>Environment (Test/Prod)</li></br><li>Channel (POS/Call Center/e-Commerce)</li></br><li>PSP reference (when an issue has occurred with a specific transaction; the PSP reference is visible on the receipt, in the CA, or in the transactions menu on the terminal)</li></br><li>Screenshot or photo of the error message (if applicable)</li></br><li>Event Viewer Logs ( in .txt)</li></br><li>Description of the issue and troubleshooting steps taken</li></br></ul> |
+| Field            | Text              |
+|------------------|-------------------|
+| **TO**           | support@adyen.com |
+| **CC**           |                   |
+| **SUBJECT LINE** | Microsoft Dynamics Support Request |
+| **BODY** | Hi Support,</br>Please provide support for the following issue.</br></br><li>Merchant account</li></br><li>Environment (Test/Prod)</li></br><li>Channel (POS/Call Center/e-Commerce)</li></br><li>PSP reference (when an issue has occurred with a specific transaction; the PSP reference is visible on the receipt, in the CA, or in the transactions menu on the terminal)</li></br><li>Screenshot or photo of the error message (if applicable)</li></br><li>Event Viewer Logs ( in .txt)</li></br><li>Description of the issue and troubleshooting steps taken</li></br> |
