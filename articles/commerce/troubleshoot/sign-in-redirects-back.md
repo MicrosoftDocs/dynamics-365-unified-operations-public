@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](../../includes/banner.md)]
 
 ## Description
-After configuring a new AAD B2C tenant in site builder, selecting **Sign in** redirects back to the main e-commerce landing page without actually navigating to the sign in page.
+After configuring a new AAD B2C tenant in site builder, selecting **Sign in** redirects back to the main e-commerce landing page without navigating to the sign in page.
 
 ## Resolution
 ### Make sure the **Reply** URL on the AAD B2C is configured correctly 
