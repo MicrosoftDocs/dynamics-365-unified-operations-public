@@ -88,7 +88,7 @@ Begin by opening the **Payment fee** page (**Accounts payable > Payment setup > 
 
 16. In the **Maximum** field, enter the maximum transaction amount to activate the fee.
 
-17. In the **From** abnd **To**date fields, enter starting and ending dates to define a range for calculating the fees. 
+17. In the **From** and **To** date fields, enter starting and ending dates to define a range for calculating the fees. 
 
 18. In the **Minimum** **fee** field, specify the amount of the fee in percentage of the payment or amount for one payment.
 
