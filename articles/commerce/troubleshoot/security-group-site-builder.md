@@ -1,8 +1,8 @@
 ---
 # required metadata
+
 title: Can't configure security group for site builder during initial deployment
-description: This topic provides troubleshooting information for when deploying a new e-Commerce tenant, the AAD security group doesn't appear in the dropdown
-in the dialog to create the e-commerce components.
+description: This topic provides troubleshooting information for when deploying a new e-Commerce tenant, the AAD security group doesn't appear in the dropdown in the dialog to create the e-commerce components.
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/17/2021
