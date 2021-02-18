@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](../../includes/banner.md)]
 
 ## Description
-When going to the **Sales order** page after synchronizing and order, the following error message is displayed: "The
+When navigating to the **Sales order** page after synchronizing an order, the following error message is displayed: "The
 payment type must be credit card, since the credit card number has been specified."
 
 ## Resolution
