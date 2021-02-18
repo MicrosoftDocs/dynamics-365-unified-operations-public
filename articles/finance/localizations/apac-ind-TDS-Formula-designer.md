@@ -1,6 +1,44 @@
-# **Formula Designer**
+---
+# required metadata
 
-TDS is calculated based on the formula defined for each TDS tax code in the TDS group that is attached to the transaction. First, you must do the basic setup that is required for TDS. Set up TDS component groups in the **Withholding** **tax** **component** **groups** form. Set up TDS components in the **Withholding** **tax** **components** form and attach TDS component group to the TDS components. Set up TDS tax codes in the **Withholding** **tax** **codes** form and attach TDS components to the tax codes. Set up TDS tax group in the **Withholding** **tax** **groups** form, attach TDS tax codes to the tax group, and define the formula using the **Formula** **designer** form. 
+title: Formula Designer
+description: This topic provides an example of how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code in the TDS group that is attached to the transaction.
+author: kailiang
+manager: AnnBe
+ms.date: 02/12/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+# ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 15721
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kailiang
+ms.search.validFrom: 2021-02-12
+ms.dyn365.ops.version: AX 10.0.17
+
+---
+
+# Formula Designer
+
+[!include [banner](../includes/banner.md)]
+
+This topic provides an example of how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code in the TDS group that is attached to the transaction. It's necessary to first complete the the basic setup that is required for TDS. 
+
+- TDS component groups are set up in the **Withholding tax component groups** page. TDS components are set up in the **Withholding tax components** page and attach TDS component group to the TDS components. 
+- - TDS tax codes are set up in the **Withholding tax codes** page and attach TDS components to the tax codes. 
+- TDS tax groups are set up in the **Withholding tax groups** page, and then the TDS tax codes are attached to the tax group, and the formula is defined, using the **Formula designer** page. 
 
 **Example**:
 
