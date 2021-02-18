@@ -34,15 +34,14 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](../../includes/banner.md)]
 
 ## Description
-When creating a new customer record using the sign up flow in the e-commerce storefront the corresponding customer record does not immediately appear in Dynamics 365 Commerce headquarters.
+When creating a new customer record using the sign-up flow in the e-commerce storefront, the corresponding customer record doesn't immediately appear in Dynamics 365 Commerce headquarters.
 
 ## Resolution
 
 ### Disable customer creation in async mode 
 
 > [!IMPORTANT]
-> Disabling the asynchronous customer creation could have potential performance implications on the system, as each record creation will result in a real time request to Commerce headquarters. Additionally, if Commerce headquarters is down (e.g.
-during servicing flows), the new customer creation flows would result in errors.
+> Disabling the asynchronous customer creation could have potential performance implications on the system because each record creation will result in a real-time request to Commerce headquarters. Also, if Commerce headquarters is down (e.g. during servicing flows), the new customer creation flows will result in errors.
 
 1. Go to Commerce headquarters.
 
@@ -54,6 +53,6 @@ during servicing flows), the new customer creation flows would result in errors.
 
 1. Select the online store for which you would like to disable the customer creation in async mode.
 
-1. On the **Online sotre** page, on the **General** tab, make sure the **Functionality profile** field is set to the functionality profile you created in the previous step.
+1. On the **Online store** page, on the **General** tab, make sure the **Functionality profile** field is set to the functionality profile you created in the previous step.
 
 
