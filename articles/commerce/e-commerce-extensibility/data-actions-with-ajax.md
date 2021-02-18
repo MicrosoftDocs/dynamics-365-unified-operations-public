@@ -45,7 +45,7 @@ To invoke a data action on the server, the below URL route can be used with the 
 
 The online SDK provides a helper utility function **commerceAPIRequest** which provides control on the AJAX request that includes additional context information.
 
-#### GET Request
+### GET Request
 
 ```jsx noeditor
 import * as MsDyn365 from '@msdyn365-commerce/core';
@@ -59,7 +59,7 @@ public async componentDidMount(): Promise<void> {
 }
 ```
 
-#### POST Request
+### POST Request
 
 ```jsx noeditor
 import * as MsDyn365 from '@msdyn365-commerce/core';
@@ -80,6 +80,18 @@ For POST requests, the post body can be accessed from the context object inside 
 ```js noeditor
 ctx.requestContext.postBody
 ```
+
+#### Example
+ ```js noeditor
+ async function action(
+        input: Msdyn365.IActionInput[],
+        ctx: Msdyn365.IActionContext
+    ): Promise<IWeatherConditions[]> {
+    const postBody = ctx.requestContext.postBody?.content;
+    return postBody;
+}
+ ```
+
 
 ## Additional resources
 
