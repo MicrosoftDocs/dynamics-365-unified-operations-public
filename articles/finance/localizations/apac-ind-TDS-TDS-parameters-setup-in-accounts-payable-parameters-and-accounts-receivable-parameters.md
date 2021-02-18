@@ -2,7 +2,7 @@
 # required metadata
 
 title: TDS parameters setup in accounts payable parameters and accounts receivable parameters
-description: This topic lists the steps for setting up parameters in the Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) dedctions.
+description: This topic lists the steps for setting up parameters in the Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -34,13 +34,13 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for setting up parameters in the Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) dedctions.
+This topic lists the steps for setting up parameters in the Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
 
-Begin the **Update order lihes page** in Accounts receivable (**Tax > Setup > Parameters > Accounts receivable parameters > Updates > Update order lines**).
+Begin the **Update order lines page** in Accounts receivable (**Tax > Setup > Parameters > Accounts receivable parameters > Updates > Update order lines**).
 
 [![Update order lines](./media/apac-ind-TDS-26.png)](./media/apac-ind-TDS-26.png) 
 
-1. Under the **TDS** **group** field group, in the **Updating TDS group** field, specify the method used to update the TDS group in the line-level when the TDS group is updated in the header-level. The options are:
+1. Specify the method used to update the TDS group in the line-level in the **Updating TDS group** field, which is under the **TDS group** field group. This setting is used when the TDS group is updated in an order header. The options are: 
 
    - **Never**: The TDS group is not updated in the order lines when the TDS group is updated in the order header.
    - **Always**: The TDS group is updated automatically in the order lines when the TDS group is updated in the order header.
@@ -48,7 +48,7 @@ Begin the **Update order lihes page** in Accounts receivable (**Tax > Setup > Pa
 
 2. Click **OK**.
 
-3. Next, open the **Spli based on delivery information** page in Accounts payable (**Tax > Setup > Parameters > Accounts payable parameters > General > Split based on delivery information**).
+3. Next, open the **Split based on delivery information** page in Accounts payable (**Tax > Setup > Parameters > Accounts payable parameters > General > Split based on delivery information**).
 
 [![Split based on delivery information](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
 
