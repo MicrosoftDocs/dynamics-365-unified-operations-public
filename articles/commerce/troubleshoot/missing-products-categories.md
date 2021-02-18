@@ -39,7 +39,7 @@ and from the **Products** tab in site builder.
 
 ## Resolution
 
-### Map the OUN to the nwly copied site
+### Map the OUN to the newly copied site
 1. Open site builder.
 
 1. Select the site you are working on from on the **Sites** page.
