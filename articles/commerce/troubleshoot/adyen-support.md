@@ -43,7 +43,7 @@ additional support from the Adyen team:
 
 -   Anything not generally working in TEST or LIVE merchant.
 
-## Details
+## Resolution
 Initiate the e-mail below to start the support process with the
 Adyen team that contains all the necessary issue descriptions to
 expedite the troubleshooting steps for the following type of issues:
