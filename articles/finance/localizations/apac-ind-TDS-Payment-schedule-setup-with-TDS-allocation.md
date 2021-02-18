@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 
+title: Payment schedule setup with TDS allocation
 description: 
 author: kailiang
 manager: AnnBe
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-Follow these steps to set up payment schedule with TDS allocation.
+This topic lists the steps for setting up payment schedules with Tax Deducted at Source (TDS) allocation.
 
- Go to **Accounts payable > Payment  setup > Payment schedules**
+Begin by opening the **Payment schedules** page t(**Accounts payable > Payment  setup > Payment schedules**).
 
 [![Payment schedules](./media/apac-ind-TDS-27.png)](./media/apac-ind-TDS-27.png)
 
@@ -45,17 +45,13 @@ Follow these steps to set up payment schedule with TDS allocation.
 3. In the **Allocation** field, select the method to allocate the payment for the payment schedule. The options are:
 
 - **Total**
-- **Fixed** **amount**
-- **Fixed** **quantity**
-
+- **Fixed amount**
+- **Fixed quantity**
 - **Specified**
 
+4. If the **Total** option is selected in the **Allocation** field, the TDS allocation method for the payment schedule is displayed as **Total** in the **Withholding tax allocation** field. If the **Fixed amount**, **Fixed quantity**, or **Specified** option is selected in the **Allocation** field, the TDS allocation method for the payment schedule is displayed automatically as **Proportionally** in the **Withholding tax allocation** field.
 
-4. If the **Total** option is selected in the **Allocation** field, the TDS allocation method for the payment schedule is displayed as **Total** in the **Withholding** **tax** **allocation** field. If the **Fixed** **amount**, **Fixed** **quantity**, or **Specified** option is selected in the **Allocation** field, the TDS allocation method for the payment schedule is displayed automatically as **Proportionally** in the **Withholding** **tax** **allocation** field.
+   > [!Note]
+   > If the **Withholding tax allocation**  field is set to **Total**, the payment installments are calculated based  on the gross amount including the TDS amount.  If the **Withholding tax allocation** field is set to **Proportionally**, the payment installments are calculated based on the net invoice amount after deducting the TDS amount.   
 
-
->   [!Note]
->
->   If the **Withholding** **tax** **allocation**  field is set to **Total**, the payment installments are calculated based  on the gross amount including the TDS amount.  If the **Withholding** **tax** **allocation**  field is set to **Proportionally**, the payment installments are  calculated based on the net invoice amount after deducting the TDS amount.   
-
-5. Enter the other required details and close the form.
+5. Enter the other required details and close the page.
