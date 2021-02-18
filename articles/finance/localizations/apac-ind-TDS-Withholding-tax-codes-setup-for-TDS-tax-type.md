@@ -3,7 +3,7 @@
 
 title: Withholding tax codes setup for TDS tax type
 description: This topic lists the steps for setting up tax codes for Tax Deducted at Source (TDS). 
-author: GitHub_ID
+author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MS_Alias
+ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
 
