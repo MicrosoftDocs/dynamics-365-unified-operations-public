@@ -52,5 +52,5 @@ expedite the troubleshooting steps for the following type of issues:
 |------------------|-------------------|
 | **TO**           | support@adyen.com |
 | **CC**           |                   |
-| **SUBJECT LINE** | Microsoft Dynamics Support Request |
-| **BODY** | Hi Support,</br>Please provide support for the following issue.</br></br><li>Merchant account</li></br><li>Environment (Test/Prod)</li></br><li>Channel (POS/Call Center/e-Commerce)</li></br><li>PSP reference (when an issue has occurred with a specific transaction; the PSP reference is visible on the receipt, in the CA, or in the transactions menu on the terminal)</li></br><li>Screenshot or photo of the error message (if applicable)</li></br><li>Event Viewer Logs ( in .txt)</li></br><li>Description of the issue and troubleshooting steps taken</li></br> |
+| **Subject line** | Microsoft Dynamics Support Request |
+| **Body** | Hi Support,</br>Please provide support for the following issue.</br></br><li>Merchant account</li></br><li>Environment (Test/Prod)</li></br><li>Channel (POS/Call Center/e-Commerce)</li></br><li>PSP reference (when an issue has occurred with a specific transaction; the PSP reference is visible on the receipt, in the CA, or in the transactions menu on the terminal)</li></br><li>Screenshot or photo of the error message (if applicable)</li></br><li>Event Viewer Logs ( in .txt)</li></br><li>Description of the issue and troubleshooting steps taken</li></br> |
