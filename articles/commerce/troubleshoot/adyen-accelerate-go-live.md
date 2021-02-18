@@ -37,7 +37,7 @@ If you decide you to use Adyen for your accelerated Dynamics 365
 e-Commerce go-live you might need to accelerate your merchant account
 setup.
 
-## Details 
+## Resolution 
 1. Go to [http://www.adyen.com.](http://www.adyen.com/)
 2. Select **Create an account** on the top right corner of the page and follow the steps to create an account.
 3. Once you get an e-mail confirmation from Adyen that your Merchant Account has been setup please initiate the e-mail below to get the accelerated setup initiated:
