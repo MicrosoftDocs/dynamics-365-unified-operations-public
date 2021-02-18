@@ -1,6 +1,40 @@
+---
+# required metadata
+
+title: Calculate TDS invoices using purchase order form and sales order form
+description: This topic lists the steps for calculating Tax Deducted at Source (TDS) on invoices using the **Purchase order**, **Purchase journal**, **Blanket order**, and **Sales order** pages.
+author: kailiang
+manager: AnnBe
+ms.date: 02/12/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+# ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 15721
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kailiang
+ms.search.validFrom: 2021-02-12
+ms.dyn365.ops.version: AX 10.0.17
+
+---
+
 # Calculate TDS invoices using purchase order form and sales order form
 
-Follow these steps to calculate TDS on invoices using **Purchase** **order** form, **Purchase** **journal** form, **Blanket** **order** form, and **Sales** **order** form:
+[!include [banner](../includes/banner.md)]
+
+This topic lists the steps for calculating Tax Deducted at Source (TDS) on invoices using the **Purchase order**, **Purchase journal**, **Blanket order**, and **Sales order** pages.
 
 1. Create a purchase order, purchase journal, purchase blanket order, or a sales order using the forms listed in the table. Enter the required details.
 
