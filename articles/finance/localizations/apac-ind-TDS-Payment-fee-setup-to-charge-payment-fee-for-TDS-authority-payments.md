@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 10.0.17
 
 # Payment fee setup to charge payment fee for TDS authority payments
 
+[!include [banner](../includes/banner.md)]
+
 This topic lists the steps for setting up a payment fee for Tax Deducted at Source (TDS) authority payments.
 
 Begin by opening the **Payment fee** page (**Accounts payable > Payment setup > Payment fee**).
