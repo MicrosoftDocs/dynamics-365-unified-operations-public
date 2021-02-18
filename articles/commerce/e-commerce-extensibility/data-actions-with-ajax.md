@@ -2,10 +2,10 @@
 # required metadata
 
 title: Call server side data actions with AJAX
-description: This topic describes how to call server side data actions with AJAX.
+description: This topic describes how to call server side data actions with AJAX in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,21 +31,21 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to call server side data actions with AJAX.
+This topic describes how to call server side data actions with AJAX in Dynamics 365 Commerce.
 
 ## Overview
 
-Dynamics 365 Commerce online SDK offers support for invoking a server side data action from the client browser. This can be used in scenarios where data actions contains sensitive information such as an API Key or secret needed to call a third party service.  In these cases you would not want the secret to be revealed with a client side data action call.
+The Dynamics 365 Commerce online software development kit (SDK) offers support for invoking a server side data action from the client browser using asynchronous JavaScript and XML (AJAX). This feature can be used in scenarios where data actions contain sensitive information such as an API key or secret needed to call a third-party service. In these cases, for security reasons you would not want the sensitive information to be revealed with a client side data action call.
 
-To invoke a data action on the server, the below URL route can be used with the 'id' query parameter where 'id' is the data action that will be run on the server. The route supports supports both HTTP **GET** and **POST** requests.
+To invoke a data action on the server using AJAX, the following URL route with the **id** query parameter can be used, where the **id** parameter value specifies the data action that will be run on the server. This URL route supports supports both HTTP **GET** and **POST** requests.
 
 ```js
 /api?id=<data_action_id>
 ```
 
-The online SDK provides a helper utility function **commerceAPIRequest** which provides control on the AJAX request that includes additional context information.
+The online SDK provides the **commerceAPIRequest** helper utility function, which provides controls on AJAX requests that include the ability to support additional context information.
 
-### GET Request
+### GET request format
 
 ```jsx noeditor
 import * as MsDyn365 from '@msdyn365-commerce/core';
@@ -59,7 +59,7 @@ public async componentDidMount(): Promise<void> {
 }
 ```
 
-### POST Request
+### POST request format
 
 ```jsx noeditor
 import * as MsDyn365 from '@msdyn365-commerce/core';
@@ -81,8 +81,9 @@ For POST requests, the post body can be accessed from the context object inside 
 ctx.requestContext.postBody
 ```
 
-#### Example
- ```js noeditor
+#### POST request example
+
+ ```jsx noeditor
  async function action(
         input: Msdyn365.IActionInput[],
         ctx: Msdyn365.IActionContext
@@ -92,7 +93,6 @@ ctx.requestContext.postBody
 }
  ```
 
-
 ## Additional resources
 
 [Data action overview](data-actions.md)
@@ -100,7 +100,5 @@ ctx.requestContext.postBody
 [Create an observable data action](create-observable-data-action.md)
 
 [Data action cache settings](data-action-cache-settings.md)
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
