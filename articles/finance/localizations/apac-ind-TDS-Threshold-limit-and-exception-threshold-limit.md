@@ -1,4 +1,38 @@
-# **Threshold limit and exception threshold limit**
+---
+# required metadata
+
+title: Threshold limit and exception threshold limit
+description: 
+author: kailiang
+manager: AnnBe
+ms.date: 02/12/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+# ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 15721
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kailiang
+ms.search.validFrom: 2021-02-12
+ms.dyn365.ops.version: AX 10.0.17
+
+---
+
+# Threshold limit and exception threshold limit
+
+[!include [banner](../includes/banner.md)]
 
 The TDS on invoices and payments is always calculated considering the threshold limit and exception threshold limit defined for the TDS tax components in the **Withholding** **tax** **components** form. The TDS tax components are attached to TDS tax codes, which are included in the TDS tax groups. The TDS tax groups are attached to vendors and customers to calculate TDS at the invoice-level or payment-level.
 
