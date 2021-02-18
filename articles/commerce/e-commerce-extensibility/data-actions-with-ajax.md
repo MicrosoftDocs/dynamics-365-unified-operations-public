@@ -75,13 +75,7 @@ public async componentDidMount(): Promise<void> {
     );
 }
 ```
-For POST requests, the post body can be accessed from the context object inside the data action.
-
-```js noeditor
-ctx.requestContext.postBody
-```
-
-#### POST request example
+For POST requests, the post body can be accessed from the context object **ctx.requestContext.postBody** inside the data action, as in the following example.
 
  ```jsx noeditor
  async function action(
