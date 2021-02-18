@@ -90,7 +90,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
     - In the **Sender email** field, specify a valid email address. Customers will see this email address as the **From** email address on the email.
 
 1. Under **General**, enter information in the following fields:
-  - In the **Default language code** field, select a language. This is the language that the receipt will be sent in when templates for multiple languages are configured and the store or customer's preferred language doesn't match any of those additional languages. 
+    - In the **Default language code** field, select a language. This is the language that the receipt will be sent in when templates for multiple languages are configured and the store or customer's preferred language doesn't match any of those additional languages. 
 
 1. In the **Email message content** pane, select **New** to create a new template instance. Enter information in the following fields:
     - In the **Language** field, specify the language this template will be localized in. Note that this only applies to emailed receipts that contain HTML with static content above and/or below the %message% placeholder.
@@ -103,7 +103,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
     %message%
     </pre>
     ```
-You can also add HTML to display a header, footer, logo or any other static content that you want included in the receipt email. For more information about creating HTML receipt templates, see [Create a template for emailed receipts](email-templates-transactions.md#create-a-template-for-emailed-receipts). 
+    You can also add HTML to display a header, footer, logo or any other static content that you want included in the receipt email. For more information about creating HTML receipt templates, see [Create a template for emailed receipts](email-templates-transactions.md#create-a-template-for-emailed-receipts). 
 
 1. Depending on the settings that you configured, you must run the appropriate distribution schedule jobs to synchronize the changes to MPOS.
 
