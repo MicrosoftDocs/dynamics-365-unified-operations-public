@@ -34,17 +34,17 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](../../includes/banner.md)]
 
 ## Description
-You encounter issues with the Adyen Payment Connector in the areas listed below, and you require additional support from the Adyen team. 
+You have issues with the Adyen Payment Connector in the areas listed below, and you require support from the Adyen team. 
 
 Issues relating to:
--   Point of sale (POS), Modern point of sale (MPOS), call center, or Dyamics 365 Commerce configuration.
+-   Point of sale (POS), Modern point of sale (MPOS), call center, or Dynamics 365 Commerce configuration.
 
 -   The Adyen PSP Number (for example, why it was refused, MKE refusals).
 
 -   Anything not working in test or live merchant.
 
 ## Resolution
-Use the e-mail template below to start the support process with the Adyen team. The mail should contain all the detailed needed to expedite troubleshooting.
+Use the e-mail template below to start the support process with the Adyen team. The mail should contain all the detailed needed to speed up troubleshooting.
 
 | Field            | Text              |
 |------------------|-------------------|
