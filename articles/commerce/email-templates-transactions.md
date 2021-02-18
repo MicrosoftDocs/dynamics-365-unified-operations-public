@@ -82,28 +82,29 @@ Here is an example.
 
 The following placeholders retrieve and show data that is defined at the sales order level (as opposed to the sales line level).
 
-| Placeholder name    | Placeholder value                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | The name of the customer who placed the order.                   |
-| salesid             | The sales ID of the order.                                       |
-| deliveryaddress     | The delivery address for shipped orders.                         |
-| customeraddress     | The address of the customer.                                     |
-| deliverydate        | The delivery date.                                               |
-| shipdate            | The ship date.                                                   |
-| modeofdelivery      | The delivery mode of the order.                                  |
-| charges             | The total charges for the order.                                 |
-| tax                 | The total tax for the order.                                     |
-| total               | The total amount for the order.                                  |
-| ordernetamount      | The total amount for the order, minus the total tax.             |
-| discount            | The total discount for the order.                                |
-| storename           | The name of the store where the order was placed.                |
-| storeaddress        | The address of the store that placed the order.                  |
-| storeopenfrom       | The opening time of the store that placed the order.             |
-| storeopento         | The closing time of the store that placed the order.             |
-| pickupstorename     | The name of the store where the order will be picked up.         |
-| pickupstoreaddress  | The address of the store where the order will be picked up.      |
-| pickupopenstorefrom | The opening time of the store where the order will be picked up. |
-| pickupopenstoreto   | The closing time of the store where the order will be picked up. |
+| Placeholder name     | Placeholder value                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | The name of the customer who placed the order.               |
+| salesid              | The sales ID of the order.                                   |
+| deliveryaddress      | The delivery address for shipped orders.                     |
+| customeraddress      | The address of the customer.                                 |
+| customeremailaddress | The email address that the customer entered at checkout.     |
+| deliverydate         | The delivery date.                                           |
+| shipdate             | The ship date.                                               |
+| modeofdelivery       | The delivery mode of the order.                              |
+| charges              | The total charges for the order.                             |
+| tax                  | The total tax for the order.                                 |
+| total                | The total amount for the order.                              |
+| ordernetamount       | The total amount for the order, minus the total tax.         |
+| discount             | The total discount for the order.                            |
+| storename            | The name of the store where the order was placed.            |
+| storeaddress         | The address of the store that placed the order.              |
+| storeopenfrom        | The opening time of the store that placed the order.         |
+| storeopento          | The closing time of the store that placed the order.         |
+| pickupstorename      | The name of the store where the order will be picked up.     |
+| pickupstoreaddress   | The address of the store where the order will be picked up.  |
+| pickupopenstorefrom  | The opening time of the store where the order will be picked up. |
+| pickupopenstoreto    | The closing time of the store where the order will be picked up. |
 
 ### Order line placeholders (sales line level)
 
@@ -174,7 +175,7 @@ Here is an example.
 Receipts can be emailed to customers who make purchases at a retail point of sale (POS). In general, the steps for creating the emailed receipt template are the same as the steps for creating templates for other transactional events. However, the following changes are required:
 
 - The text of the receipt is inserted into the email by using the **%message%** placeholder. To ensure that the receipt body is correctly rendered, surround the **%message%** placeholder with HTML **&lt;pre&gt;** and **&lt;/pre&gt;** tags.
-- The **%receiptid%** placeholder can be used to display a barcode or QR code that represents the receipt ID. To display a barcode or QR code in your emailed receipt, use the following HTML as an example:
+- The **%receiptid%** placeholder can be used to display a barcode or QR code that represents the receipt ID. (The barcode or QR code is dynamically generated and served by a 3rd party service.) To display a barcode or QR code in your emailed receipt, use the following HTML as an example:
 
 ```HTML
 <img src="http://YOUR_BARCODE_SERVICE?data=%receiptid%&param1=value&param2=value2" alt="%receiptid%" />
