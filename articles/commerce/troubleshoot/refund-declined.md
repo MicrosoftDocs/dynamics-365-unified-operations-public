@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Troubleshoot Adyen Connector issues
+# Refund on return order is declined
 
 [!include [banner](../../includes/banner.md)]
 
