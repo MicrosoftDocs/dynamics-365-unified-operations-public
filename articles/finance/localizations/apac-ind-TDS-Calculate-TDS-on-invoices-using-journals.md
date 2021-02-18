@@ -1,6 +1,40 @@
+---
+# required metadata
+
+title: Calculate TDS on invoices using journals
+description: This topic lists the steps for calculating Tax Deducted at Source (TDS) on invoices.
+author: kailiang
+manager: AnnBe
+ms.date: 02/12/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+# ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 15721
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kailiang
+ms.search.validFrom: 2021-02-12
+ms.dyn365.ops.version: AX 10.0.17
+
+---
+
 # Calculate TDS on invoices using journals
 
-Follow these steps to calculate TDS on invoices
+[!include [banner](../includes/banner.md)]
+
+This topic lists the steps for calculating Tax Deducted at Source (TDS) on invoices.
 
 Go to **General ledger > Journal entries > General journals**
 
@@ -8,15 +42,13 @@ Go to **General ledger > Journal entries > General journals**
 
 1. Create journal lines using the journal forms that are listed in the table. Select the account type and offset account type and enter the amount for the transaction. 
 
->   [!Note]
->
->   In the **Invoice** **approval** **journal**  form, click the **Find vouchers** button and select invoices to  calculate TDS on. View the invoices created in the **Invoice** **register** form in the **Find vouchers** form.  
+   > [!Note]
+   > In the **Invoice** **approval** **journal**  form, click the **Find vouchers** button and select invoices to  calculate TDS on. View the invoices created in the **Invoice** **register** form in the **Find vouchers** form.  
 
 2. On the **General** tab of the **Journal** **voucher** form, in the **TDS** **group** field, view or modify the default TDS group defined for the vendor or customer. The TDS calculated on journal lines is based on the formula defined for the TDS tax codes in the TDS group. 
 
->   [!Note]
->
->   The **Withholding** **tax** **group**  field and the **TCS** **group** field become unavailable when you  select a TDS group in the **TDS** **group** field. The **Withholding**  **tax** **group** field is available only in the **General** **journal**  form.  TDS is calculated only if the **Calculate** **withholding**  **tax** check box is selected for the vendor or customer in the **Vendors**  form or **Customers** form.   
+   > [!Note]
+   > The **Withholding** **tax** **group**  field and the **TCS** **group** field become unavailable when you  select a TDS group in the **TDS** **group** field. The **Withholding**  **tax** **group** field is available only in the **General** **journal**  form.  TDS is calculated only if the **Calculate** **withholding**  **tax** check box is selected for the vendor or customer in the **Vendors**  form or **Customers** form.   
 
 3. Click the **Tax** **information** tab. Under the **Company** **information** field group, in the **Name** field, view the company name. Select a company name of alternate addresses that are set up for the company in this field, if required. 
 
