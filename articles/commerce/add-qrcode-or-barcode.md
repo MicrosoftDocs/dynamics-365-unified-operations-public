@@ -46,6 +46,7 @@ To insert a QR code or barcode into a transactional email that is sent as part o
     ```HTML
     <img src="https://YOUR_QRCODE_SERVICE?data=%salesid%&param1=value1&param2=value2" alt="%salesid%" />
     ```
+    
     In the code example, **YOUR_QRCODE_SERVICE** represents the domain of your QR code or barcode service, **data** represents the parameter the service uses to receive the content to render as a QR code or barcode, and **param1** and **param2** represent additional optional parameters. The value **%salesid%** must be assigned to the parameter your QR code or barcode generation service uses to receive the content to render as a QR code or barcode (**data** in this example).    
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates** and upload the updated HTML to the appropriate transactional email template.
 
@@ -60,6 +61,7 @@ To insert a QR code or barcode into an emailed receipt that can be emailed from 
     ```HTML
     <img src="https://YOUR_BARCODE_SERVICE?data=%receiptid%&param1=value1&param2=value2" alt="%receiptid%" />
     ```
+
     In the code example, **YOUR_QRCODE_SERVICE** represents the domain of your QR code or barcode service, **data** represents the parameter the service uses to receive the content to render as a QR code or barcode, and **param1** and **param2** represent additional optional parameters. The value **%receiptid%** must be assigned to the parameter your QR code or barcode generation service uses to receive the content to render as a QR code or barcode (**data** in this example). 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates** and upload the updated HTML to the email template with email ID **emailrecpt**.
     
