@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshoot Adyen Connector issues
-description: This topic provides how to get support for Adyen Payment Connector issues. 
+title: Troubleshoot Adyen Payment Connector issues
+description: This topic provides how to get support when you have issues with the Adyen Payment Connector. 
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/17/2021
@@ -29,24 +29,21 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Troubleshoot Adyen Connector issues
+# Troubleshoot Adyen Payment Connector issues
 
 [!include [banner](../../includes/banner.md)]
 
 ## Description
-When running into issues with the Adyen Payment Connector that requires
-additional support from the Adyen team: 
+if you encounter issues with the Adyen Payment Connector relating to the areas below and you require additional support from the Adyen team. 
 
--   MPOS/CPOS/Call Center/Commerce Configuration issues.
+-   Point of sale (POS), Modern point of sale (MPOS), call center, or Dyamic 365 Commerce configuration issues.
 
--   More information on the Adyen PSP Number (e.g. why refused, MKE refusals), etc.
+-   More information on the Adyen PSP Number (for example, why it was refused, MKE refusals).
 
--   Anything not generally working in TEST or LIVE merchant.
+-   Anything not generally working in test or live merchant.
 
 ## Resolution
-Initiate the e-mail below to start the support process with the
-Adyen team that contains all the necessary issue descriptions to
-expedite the troubleshooting steps for the following type of issues:
+Use the e-mail teplate below to start the support process with the Adyen team. The mail should contain all the necessary descriptions to expedite the troubleshooting steps.
 
 | Field            | Text              |
 |------------------|-------------------|
