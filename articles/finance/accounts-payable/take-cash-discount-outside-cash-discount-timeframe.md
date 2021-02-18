@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14301
 ms.assetid: bad10b7f-e550-4742-9261-8a094c9c624d
@@ -96,3 +95,6 @@ Discount information appears at the bottom of the **Settle open transactions** p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.assetid: 
@@ -53,3 +52,6 @@ The solution is at the root of the AxErd folder [https://github.com/Microsoft/ax
 In March 2018, a third party copied the AxErd source from GitHub, and redeployed AxErd at the following site. The site is still operating as of March 2020:
 
 - [https://AlexDMeyer.com/ax2012erd/](https://AlexDMeyer.com/ax2012erd/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

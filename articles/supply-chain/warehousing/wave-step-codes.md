@@ -17,7 +17,6 @@ ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -97,3 +96,6 @@ The following procedure helps guarantee that the replenishment template that you
 6. In the **Wave step code** field, select the wave step code that you selected in the replenishment template.
 
 You perform these steps for each legal entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

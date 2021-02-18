@@ -18,7 +18,6 @@ ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
@@ -74,3 +73,6 @@ This page provides links to relevant documentation related to the setup, configu
 ## Configure continuity programs
 
 [Set up continuity programs for call centers](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

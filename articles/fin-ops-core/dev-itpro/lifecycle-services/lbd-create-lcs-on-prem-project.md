@@ -51,3 +51,6 @@ The on-premises project has all the tools that you require in order to implement
 - **SharePoint online library** – Connect to an online Microsoft SharePoint library.
 
 To start your on-premises implementation, you must follow the steps in the methodology to correctly set up the project, deploy the developer and build environments, and then deploy sandbox and production environments. To help you with deployments, two environment slots are pre-allocated to the on-premises project. One slot is for a sandbox environment, and the other slot is for a production environment. These slots will be used during the Servicing flow to help guarantee that packages are tested in the sandbox environment before they are applied in the production environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@
 
 title: VAT declaration for the Netherlands
 description: This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. 
-author: v-lurodi
+author: anasyash
 ms.author: AnnBe
 ms.date: 04/01/2020
 ms.topic: article
@@ -18,7 +18,6 @@ manager:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Netherlands
@@ -316,3 +315,6 @@ You can also generate the Dutch sales tax report by using the **Report sales tax
    > [!NOTE]
    > If you generate the OB declaration after you've created the original and corrected sales tax payments, the OB declaration will show amounts only from the original sales tax payment.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

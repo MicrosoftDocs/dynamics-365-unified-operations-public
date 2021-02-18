@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221294
 ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
@@ -951,3 +950,6 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 ## Additional resources
 
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

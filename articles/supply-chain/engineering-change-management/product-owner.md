@@ -17,7 +17,6 @@ ms.search.form: EngChgProductOwner
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -65,3 +64,6 @@ For example, product X is assigned to the *Design cabinets* product owner group.
 ## Product owners and approvals
 
 Because product owners know whether specific engineering changes will benefit their products, it often makes sense to include them as part of the approval process in engineering change management. You can implement this approach by setting up the product owners as participant providers in the workflows that are used for engineering change management. The system will then assign approval tasks in the workflows, based on the products that are in engineering change requests and engineering change orders. For more information, see [Manage changes to engineering products](engineering-change-management.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

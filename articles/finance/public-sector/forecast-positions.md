@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -40,3 +39,6 @@ You can validate whether the dimensions for a forecast position are correct for 
 You can see when a forecast position was last validated on the **Forecast position validation** section on the **Budget planning** FastTab of the **Forecast position** page. The validation fields are also included on the **Forecast positions** list page.
 
 For more information, see, [Position forecasting](../budgeting/position-forecasting.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

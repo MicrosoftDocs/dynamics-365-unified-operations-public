@@ -18,7 +18,6 @@ ms.search.form: SMAAgreementTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -99,3 +98,6 @@ service work. The lines contain the following settings:
 ## Related topics
 
 [Create service agreements](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

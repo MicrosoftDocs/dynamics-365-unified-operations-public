@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -272,3 +271,6 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 - The GST amount isn't shown correctly. The **GST amount** value is shown in a foreign currency, whereas the **Subtotal** and **Total amount** values are shown in Indian rupees (INR). The GST amount should be converted and added to the subtotal, so that the correct total amount is shown.
 - Customer has recently enabled the India localization, India GST feature on their India .Entity 104.
 - After enabling the India localization, the value is not displayed for the billing rule type **Milestone** on the **Project contract** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

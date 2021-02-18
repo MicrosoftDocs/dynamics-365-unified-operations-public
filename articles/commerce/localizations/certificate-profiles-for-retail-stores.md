@@ -17,12 +17,11 @@ ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
 
@@ -125,3 +124,6 @@ If a new version of the certificate is introduced, but it can't be updated in al
 
 > [!NOTE]
 > In the Commerce runtime, the new version of the certificate will be called first. If the certificate hasn't yet been updated in a specific store or on a specific terminal, the previous version will be called.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

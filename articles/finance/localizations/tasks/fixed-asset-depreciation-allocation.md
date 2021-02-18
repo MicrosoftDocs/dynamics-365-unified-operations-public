@@ -17,7 +17,6 @@ ms.search.form: AssetAllocationRuleSetup_CN,  AssetPosting
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC), Japan
@@ -70,3 +69,6 @@ This task was created using the demo data company JPMF.
 6. In the Asset allocation rule for depreciation field, type a value.
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

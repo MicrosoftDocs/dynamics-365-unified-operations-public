@@ -2,10 +2,10 @@
 # required metadata
 
 title: Electronic reporting (ER) destinations
-description: This topic provides information about the management of Electronic reporting (ER) destinations, the types of destinations that are supported, and security considerations.
+description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-manager: AnnBe
-ms.date: 04/27/2020
+manager: tfehr
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -67,7 +67,7 @@ In the **Intrastat Report** dialog box, on the **Run in the background** FastTab
 If you set the **Batch processing** option to **Yes**, an ER format is run in [batch](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) mode. The appropriate batch job is created, based on the parameters that you specify on the **Run in the background** tab of the **ER parameters** dialog box.
 
 > [!NOTE]
-> The job description is initiated to inform you about the run of an ER format mapping. It also contains the name of the executed ER component.
+> The job description informs you about the run of an ER format mapping. It also contains the name of the ER component that is run.
 
 [![Running an ER format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
@@ -100,6 +100,8 @@ In versions of Finance **before version 10.0.9**, you can create **one file dest
 For example, you can use this capability to configure file destinations for a file component that is used to generate an outbound document in Excel format. One destination ([Archive](er-destination-type-archive.md)) can be configured to store the original Excel file in the ER jobs archive, and another destination ([Email](er-destination-type-email.md)) can be configured to simultaneously [convert](#OutputConversionToPDF) the Excel file to PDF format and send the PDF file by email.
 
 [![Configuring multiple destinations for a single format element](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+
+When you run an ER format, all destinations that were configured for components of the format are always run. In addition, in Finance **version 10.0.17 and later**, the ER destinations functionality has been improved and now lets you configure different sets of destinations for a single ER format. This configuration marks each set as configured for a particular user action. The ER API has been [extended](er-apis-app10-0-17.md) so that an action can be provided that the user performs by running an ER format. The action code that is provided is passed to ER destinations. You can run different destinations of an ER format, depending on the action code that is provided. For more information, see [Configure action-dependent ER destinations](er-action-dependent-destinations.md).
 
 ## Destination types
 
@@ -159,7 +161,7 @@ If you clear the **Stop processing on failure** check box for the **CoveringLett
 
 ## <a name="OutputConversionToPDF"></a>Output conversion to PDF
 
-You can use the PDF conversion option to convert output in Microsoft Office format (Excel/Word) to PDF format.
+You can use the PDF conversion option to convert output in Microsoft Office (Excel or Word) format to PDF format.
 
 ### Make PDF conversion available
 
@@ -169,21 +171,17 @@ To make the PDF conversion option available in the current Finance instance, ope
 
 ### Applicability
 
-The PDF conversion option can be turned on only for file components that are used to generate output in Microsoft Office Excel or Word format (**Excel file**). When this option is turned on, output that is generated in Office format is automatically converted to PDF format.
+The PDF conversion option can be turned on only for file components that are used to generate output in Office (Excel or Word) format (**Excel file**). When this option is turned on, output that is generated in Office format is automatically converted to PDF format.
 
 ### Limitations
 
-> [!NOTE]
-> This feature is a preview feature and is subject to the terms of use that are described in [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
+The PDF conversion option is available only for cloud deployments.
 
-> [!NOTE]
-> The PDF conversion option is only available for cloud deployments.
->
-> The produced PDF is limited to a maximum number of 300 pages.
->
-> In Microsoft Dynamics 365 Finance version 10.0.9 (April 2020) only landscape page orientation is supported in the PDF document that is produced from an Excel output. With the release of Dynamics 365 Finance version 10.0.10 (May 2020), you can [specify page orientation](#SelectPdfPageOrientation) in the PDF document that is produced from an Excel output while you configure an ER destination.
->
-> Only the common system fonts of the Window operating system are used for the conversion of an output that contains no embedded fonts.
+The PDF document that is produced is limited to a maximum length of 300 pages.
+
+In Finance **version 10.0.9**, only landscape page orientation is supported in the PDF document that is produced from Excel output. In Finance **version 10.0.10 (May 2020) and later**, you can [specify the page orientation](#SelectPdfPageOrientation) of the PDF document that is produced from Excel output while you configure an ER destination.
+
+Only the common system fonts of the Window operating system are used to convert output that contains no embedded fonts.
 
 ### Use the PDF conversion option
 
@@ -193,16 +191,16 @@ To turn on PDF conversion for a file destination, select the **Convert to PDF** 
 
 ### <a name="SelectPdfPageOrientation">Select a page orientation for PDF conversion</a>
 
-If you generate an ER configuration in Excel format and want to convert it to PDF format, you can specify the page orientation of the PDF. When you select the **Convert to PDF** check box to turn on PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** field becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
+If you generate an ER configuration in Excel format and want to convert it to PDF format, you can specify the page orientation of the PDF document. When you select the **Convert to PDF** check box to turn on PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** field becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
 
 [![Selecting a page orientation for PDF conversion](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> To have the option to select the PDF page orientation, you must install Microsoft Dynamics 365 Finance version 10.0.10 (May 2020) or later.
+> To have the option to select the PDF page orientation, you must install Finance version 10.0.10 or later.
 >
 > The selected page orientation is applied to all ER configurations that are generated in Excel format and then converted to PDF format.
 >
-> If a converted PDF is created from an ER configuration in Word format, the page orientation of the PDF is taken from the Word document.
+> If an ER configuration in Word format is converted to PDF format, the page orientation of the PDF document is taken from the Word document.
 
 ## Security considerations
 
@@ -230,7 +228,7 @@ No. The default Microsoft Azure Blob storage that is defined and used for the do
 
 ### What is the purpose of the File destination in the destination settings? What does that setting do?
 
-The **File** destination is used to control a dialog box. If you enable this destination, or if no destination is defined for a configuration, an open or save dialog box appears after an output file is created.
+The **File** destination is used to control a dialog box of your web browser when you run an ER format in interactive mode. If you enable this destination, or if no destination is defined for a configuration, an open or save dialog box appears in your web browser after an output file is created.
 
 ### Can you give an example of the formula that refers to a vendor account that I can send email to?
 
@@ -243,3 +241,8 @@ Your format must first be available in the ER configurations. If this prerequisi
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+[Configure action-dependent ER destinations](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ The expression `FIRSTORNULL(SPLIT("",1)).Value` returns an empty string (**""**)
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

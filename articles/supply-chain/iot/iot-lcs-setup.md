@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -61,3 +60,6 @@ LCS setup is now completed. The next step is to [set up the scenarios](iot-scena
 2. In LCS, go to your Supply Chain Management environment details.
 3. Scroll to the **Environment add-ins** section.
 4. Select **Uninstall** for the IoT Intelligence add-in.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

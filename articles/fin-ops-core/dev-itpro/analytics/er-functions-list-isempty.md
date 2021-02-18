@@ -64,3 +64,6 @@ The expression `ISEMPTY (SPLIT ("",1))` returns **TRUE**.
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

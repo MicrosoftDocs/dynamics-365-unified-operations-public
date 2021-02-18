@@ -18,7 +18,6 @@ ms.search.form: SMAServiceObjectRelation
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -97,3 +96,6 @@ Access the BOM Designer by using a service object relation
 If you automatically create service orders for a service agreement, the service
 object relations in the agreement are also created in the service orders.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ After you've edited an asset, follow these steps to move the edited asset back t
 2. Select the asset to save, and then click **Save to my library**.
 
 The asset is saved from the project-level Asset library back to the Shared asset library, and the scope is set to **Me**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

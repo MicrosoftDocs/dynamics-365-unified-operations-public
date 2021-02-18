@@ -5,7 +5,7 @@ title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 12/04/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,7 +18,6 @@ ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTa
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 20501
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
@@ -39,6 +38,10 @@ This topic describes how to configure, download, and install Modern POS on vario
 
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
+>
+> Starting in release 10.0.11, altering customized files that are stored in the ClientBroker folder could cause issues when installing a newer release. These issues might include the inability to go offline or a newer installer failing to complete successfully. A workaround is to remove the files in the ClientBroker folder in the Modern POS directory before performing the installation using the newer installer.
+> 
+> Starting in 10.0.15 release, customizations to files in the Client broker folder for Modern POS can cause an error when updating from a previous version. The known workaround is to delete all files from the Client broker folder prior to running the newer Modern POS installer. For automation, this can easily be scripted as a pre-step for the installer. All files in this folder must be deleted. When this error occurs, the newer installer will update the current installation correctly.
 
 ## Technology
 
@@ -68,20 +71,11 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 1. In Headquarters, go to **Retail and Commerce** &gt; **Channels** &gt; **Channel deployment**.
 2. On the **Channel deployment** page, select the **Registers** tile.
-3. On the **Registers** page, select a store register.
+3. On the **Registers** page, select a store register. The demo data thoroughly defines the Houston store and registers for self-service. To find the Houston registers, enter **Houston** in the filter at the top of the list of devices.
 
-    > [!NOTE]
-    > The demo data thoroughly defines the Houston store and registers for self-service. To find the Houston registers, enter **Houston** in the filter at the top of the list of devices.
+4. Select a register by selecting the register number in the **Register number** column. In the Houston store, register Houston-3 is well defined and is therefore useful as an example.
 
-4. Select a register by selecting the register number in the **Register number** column.
-
-    > [!NOTE]
-    > In the Houston store, register Houston-3 is well defined and is therefore useful as an example.
-
-5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**.
-
-    > [!NOTE]
-    > To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
+5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**. To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
 
 ### Download the Modern POS installer
 
@@ -93,31 +87,29 @@ Before you start the steps that are outlined in this topic, follow these steps.
     > - The Houston devices are well defined. Houston-3 is useful as an example for a Microsoft Windows desktop or tablet. Houston-21 is useful as an example for a Windows Phone.
     > - When you select a device, the **Download** button on the Action Pane becomes available.
 
-4. Select **Download**, and then select **Configuration file**.
-
-    > [!NOTE]
-    > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
-    > - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.
+4. Select **Download**, and then select **Configuration file**. Note the following:
+    
+    - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
+    - The configuration file must be saved to the same location as the Modern POS installer. For security reasons, delete this file after installation is completed. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.
 
 5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
-6. Select **Download**, and then select **Retail Modern POS**.
+6. Select **Download**, and then select **Retail Modern POS**. Note the following:
 
-    > [!NOTE]
-    > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
-    > - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is downloaded and installed silently.
+    - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
+    - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is downloaded and installed silently.
 
 7. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 8. After the setup installer has been saved, on the Notification bar, select **Run**. (This step might differ, depending on your browser.)
 
-### Run the installer on a Windows computer
+### Before running the Modern POS installer
 
-> [!NOTE]
-> - Before you run the Modern POS installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
-> - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
->
->    - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
->    - **Property:** AllowAllTrustedApps
->    - **Value:** 1
+- Make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
+- It is recommended to temporarily turn off antivirus applications.  It has been noted that on aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
+- The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
+    - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx     
+    - **Property:** AllowAllTrustedApps
+    - **Value:** 1
+- If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist, but none are set as the default, then the installer will fail to install the offline database.
 
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
@@ -125,19 +117,19 @@ If you are installing Modern POS for use with an on-premises environment, you mu
 ModernPosSetupOffline.exe -UseAdfsAuthentication
 ```
 
+### Run the Modern POS installer on a Windows computer
+
 The Modern POS installer first extracts the associated files and then starts the installation.
 
-1. The installer validates that all prerequisites are met.
+1. The installer validates that all prerequisites are met. Note the following:
 
-    > [!NOTE]
-    > - If a system restart is required, the installer informs you about this requirement, but the installation can typically continue.
-    > - A sideloaded installation of Modern POS requires a Group Policy change. The installer informs you if this change is required and then makes the change automatically.
+    - If a system restart is required, the installer informs you about this requirement, but the installation can typically continue.
+    - A sideloaded installation of Modern POS requires a Group Policy change. The installer informs you if this change is required and then makes the change automatically.
 
-2. If you selected offline support, but a valid version of SQL Server isn't found, the installer downloads and installs Microsoft SQL Server 2014 Express with Service Pack 2 (SP2). To meet the prerequisites, SQL Server must have Full-text search installed. Additionally, a minimum of SP2 must be installed for Microsoft SQL Server 2014, or a minimum of Service Pack 3 (SP3) must be installed for Microsoft SQL Server 2012.
+2. If you selected offline support, but a valid version of SQL Server isn't found, the installer downloads and installs Microsoft SQL Server 2014 Express with Service Pack 2 (SP2). To meet the prerequisites, SQL Server must have Full-text search installed. Additionally, a minimum of SP2 must be installed for Microsoft SQL Server 2014, or a minimum of Service Pack 3 (SP3) must be installed for Microsoft SQL Server 2012. Note the following:
 
-    > [!NOTE]
-    > - The installer tries to download the correct language. However, if you require a specific language, we highly recommend that you manually install SQL Server. If the installer can't correctly determine the language, it installs the English version of SQL Server 2014 Express with SP2 by default. Typically, after the SQL installation is completed, the system requires a restart before the installation of Modern POS can continue.
-    > - This process might require a long time, depending on the speed of the computer and the Internet connection. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this topic.
+    - The installer tries to download the correct language. However, if you require a specific language, we highly recommend that you manually install SQL Server. If the installer can't correctly determine the language, it installs the English version of SQL Server 2014 Express with SP2 by default. Typically, after the SQL installation is completed, the system requires a restart before the installation of Modern POS can continue.
+    - This process might require a long time, depending on the speed of the computer and the Internet connection. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this topic.
 
 3. The installer installs Modern POS.
 4. On the page that states that installation was successful, select **Close** to exit the installer.
@@ -151,14 +143,12 @@ You can now start the program.
 
 1. If the application wasn't downloaded directly to the device, transfer the downloaded app file and the associated configuration file to the same folder on the device. Depending on the type of device, the app file will be an APPX, APK, or IPA file.
 
-    > [!NOTE]
-    > This step can be done in various ways. For example, the files can be accessed through a shared folder, transferred via USB cable, or securely mailed to the user's device.
+    Note that this step can be done in various ways. For example, the files can be accessed through a shared folder, transferred via USB cable, or securely mailed to the user's device.
 
 2. Use a file explorer on the device to browse to the app directory.
 3. Tap the app to begin application installation. (If the configuration file was saved to the same location, the Commerce Scale Unit URL will be automatically entered when you start the application and begin device activation.)
 
-    > [!NOTE]
-    > Some devices require that you double-tap the file to begin application installation. Some devices might not notify you that an application has been installed. On those devices, we recommend that you look at the application list to verify that the application was correctly installed.
+    Note that some devices require that you double-tap the file to begin application installation. Some devices might not notify you that an application has been installed. On those devices, we recommend that you look at the application list to verify that the application was correctly installed.
 
 4. When the installation is completed, you should be able to start the application from the application list on the device. For example, after you install the application on a Windows Phone, you can start it from the home screen tiles list.
 
@@ -198,16 +188,14 @@ You must complete this procedure before you activate Modern POS for a new worker
 3. On the **Commerce** tab, select the **POS permissions** link. Under **POS permission group**, verify that the value is **Manager**.
 4. When you've finished, return to the **Worker details** page for the new worker.
 
-    > [!NOTE]
-    > To return to the **Worker details** page, select the **Close** button (**X**) on the right side of the Action Pane.
+    To return to the **Worker details** page, select the **Close** button (**X**) on the right side of the Action Pane.
 
 5. On the Action Pane, select **Commerce**, and then select **Associate existing identity**.
 6. In the dialog box that appears, select the Azure AD account that is named **admin AX Admin**. (If an alternative administrator Azure AD account has been created, select that account instead.)
 7. Select **OK**. In the demo data, the Azure AD account that is associated with the administrator account in Headquarters is your administrator Azure AD account.
 8. On the Action Pane, select **Save**, and then refresh the page. The **External identity** section should be now updated with the new information.
 
-    > [!NOTE]
-    > The **External identifier** field will remain empty. This behavior is expected. Therefore, you can ignore it.
+    Note that the **External identifier** field will remain empty. This behavior is expected. Therefore, you can ignore it.
 
 This procedure should be completed before you activate Retail Cloud POS or Modern POS. For more information, see [Manage activation accounts and validate devices](set-up-activation-accounts-validate-devices-hq.md).
 
@@ -234,7 +222,7 @@ The device should now be activated and ready to use.
 ## Update the Modern POS application
 
 > [!NOTE]
-> To learn more about deployable packages, see the article [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md).
+> To learn more about deployable packages, see [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md).
 
 1. After a Modern POS application is uploaded into the environment, the version of the package can be selected on the device. The package listings should include the new uploaded application.
 2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
@@ -370,3 +358,6 @@ On a single-computer system, such as a developer topology or a demo environment,
 ## Additional resources
 
 [Install the POS layout designer](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

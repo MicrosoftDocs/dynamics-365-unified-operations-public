@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264354
 ms.search.region: Poland
@@ -47,3 +46,6 @@ The standard way to calculate the account balance is to include the difference i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

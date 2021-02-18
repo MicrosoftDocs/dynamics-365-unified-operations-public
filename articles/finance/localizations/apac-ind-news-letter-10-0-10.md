@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: 
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -105,3 +104,6 @@ You can set up the **TDS exchange rate** as **TDS** and the **Accounting currenc
     main ledger for the voucher.
 -	The TDS section code and invoice number are not appearing in TDS inquiries. 
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

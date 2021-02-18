@@ -17,7 +17,6 @@ ms.search.form: RAssetTable, LedgerJournalTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -150,3 +149,6 @@ When reverssing a transaction with the **Putting into operation** type for the f
 
 > [!NOTE]
 > You can reverse **Putting into operation** transactions via the Fixed asset journal (**Fixed asset (Russia) \> Journals \> FA journal**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: RetailLoyaltyCards, RetailLoyaltyCardRewardPointTrans, RetailLoy
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ This procedure demonstrates how to look up loyalty card information and adjust l
 15. Click Card transactions.
 16. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

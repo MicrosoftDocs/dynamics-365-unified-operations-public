@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -110,3 +109,6 @@ The ability to recall a journal in a workflow that has a status of "unrecoverabl
 
 ## Delete Journal Lines
 The ability to delete all journal lines quickly is enabled in a journal under **Functions** > **Delete Journal Lines**. To enable this feature, on the **Feature management**, select **Delete journal performance optimizations**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

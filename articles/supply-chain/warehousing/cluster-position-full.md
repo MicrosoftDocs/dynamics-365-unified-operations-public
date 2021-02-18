@@ -17,7 +17,6 @@ ms.search.form:  WHSClusterProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -280,3 +279,6 @@ In this scenario, the cluster pick has been completed, and the user is directed 
     You receive a "Cluster Completed" message.
 
 You can now use the **Sales Picking** menu item to pick the remaining quantity. You can then use the **Sales loading** menu item to move the items from the staging location to the loading dock.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

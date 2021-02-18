@@ -3,7 +3,7 @@
 
 title: Budget proposals (preview)
 description: This topic describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
@@ -17,12 +17,11 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2020-05-31 
 ms.dyn365.ops.version: 10.0.4
 ---
@@ -107,3 +106,6 @@ When a 12-month financial report is exported to Excel, you can easily insert a l
 
 #### Privacy notice
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

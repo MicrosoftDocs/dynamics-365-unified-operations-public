@@ -18,7 +18,6 @@ ms.search.form: AccountingDistribution
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
@@ -62,3 +61,6 @@ The generic accounting distribution capabilities provide the following options f
 In version 10.0.13, a feature has been added that validates the accounting distribution table to ensure that new fields are properly set up. This feature is called **Enable additional validation of data for documents using the source document accounting framework**. To use the feature, you must enable it using the **Feature management** workspace. To enable the feature, search for the feature name in the **Search** field on the **Feature management** page, and then select **Enable now**.
 
 For more information, see [Accounting distributions and subledger journal entries for vendor invoices](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

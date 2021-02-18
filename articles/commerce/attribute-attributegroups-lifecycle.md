@@ -18,7 +18,6 @@ ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldA
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -261,3 +260,6 @@ The default values of attributes can be overridden for individual products at th
 
     > [!NOTE]
     > If shared product media and shared product attributes are created, they apply to all the products.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

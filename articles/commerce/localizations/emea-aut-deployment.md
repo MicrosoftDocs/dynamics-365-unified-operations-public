@@ -22,7 +22,6 @@ ms.reviewer: josaw
 ms.search.region: Austria
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -234,3 +233,6 @@ Follow these steps to create deployable packages that contain Commerce component
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 6. Complete the [Set up required parameters in Headquarters](#set-up-required-parameters-in-headquarters)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

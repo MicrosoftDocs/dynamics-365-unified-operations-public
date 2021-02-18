@@ -60,3 +60,6 @@ Complete the following steps to enable a batch job.
 
 1.	On the **Batch job** page, on the Action Pane, click **Batch job** > **Change status**.
 2.	Select the **Waiting** status, and then click **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

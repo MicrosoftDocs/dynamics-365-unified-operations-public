@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21761
 ms.search.region: Global
@@ -100,3 +99,6 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 ## If you are upgrading from Dynamics AX 2012 or migrating from AX 2009
 
 If you are a customer who is upgrading from Microsoft Dynamics AX 2012 or migrating from Microsoft Dynamics AX 2009, you may be eligible for a longer trial. Contact <daxcf@microsoft.com> for more information.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: DimensionConfigureAccountRuleStructure, DimensionCreateAccountRu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -62,3 +61,6 @@ This topic explains how to create and assign an advanced rule structure to an ac
 17. Close the page.
 18. Select **Activate**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

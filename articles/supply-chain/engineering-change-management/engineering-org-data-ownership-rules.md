@@ -17,7 +17,6 @@ ms.search.form: EngChgEngineeringOrganization
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -71,3 +70,6 @@ Because the engineering company owns the engineering-relevant data, it controls 
 
     - When these documents are released to other legal entities, the documents are protected from being removed by the operational company.
     - Other legal entities can add completely new, local documents. The operational company owns and maintains these local documents.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

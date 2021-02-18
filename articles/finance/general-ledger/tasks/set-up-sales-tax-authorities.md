@@ -17,7 +17,6 @@ ms.search.form: TaxAuthority
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -44,3 +43,6 @@ Sales tax authorities are entities to which collected sales tax needs to be repo
 10. In the Round-off field, enter a number.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

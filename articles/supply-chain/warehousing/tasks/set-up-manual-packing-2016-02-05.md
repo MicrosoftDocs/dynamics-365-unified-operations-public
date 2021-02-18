@@ -17,7 +17,6 @@ ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProf
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -97,3 +96,6 @@ The packing process allows you to validate and pack products into containers. In
 8. In the Weight unit field, enter or select a value.
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

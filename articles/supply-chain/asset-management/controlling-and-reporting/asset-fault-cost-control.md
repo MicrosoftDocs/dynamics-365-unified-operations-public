@@ -18,13 +18,12 @@ ms.search.form: EntAssetCostControlFault
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -67,3 +66,6 @@ This example shows an asset fault cost control calculation.
     ![Figure 1](media/05-controlling-and-reporting.png)
 
 For information about how to set up faults, see the [Fault management](../setup-for-work-orders/fault-management.md) topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

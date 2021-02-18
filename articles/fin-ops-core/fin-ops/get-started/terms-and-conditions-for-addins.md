@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -39,3 +38,6 @@ Add-ins are features of Microsoft Dynamics 365 Supply Chain Management. Your use
 If you are uncertain or have other questions, please contact [Microsoft Dynamics support](https://dynamics.microsoft.com/support/).
 
 **Preview Supplemental Terms** - The [Preview Supplemental Terms](https://go.microsoft.com/fwlink/p/?linkid=2105274) include additional legal terms that apply to your use of add-ins that are in beta, preview, or otherwise not yet released into general availability.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

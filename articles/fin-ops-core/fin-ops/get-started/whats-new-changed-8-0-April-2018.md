@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: b265d51c-52d1-45c5-b578-64c5242c592a
@@ -196,3 +195,6 @@ Investments address the European privacy law's requirements. Go to the [Trust Ce
 ### Accessibility enhancements
 
 Go to the [Trust Center](https://www.microsoft.com/trustcenter/compliance/accessibility) to learn about our industry-leading accessibility standards.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

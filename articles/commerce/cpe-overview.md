@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -68,3 +67,6 @@ To provision the Commerce evaluation environment, see [Provision a Commerce eval
 [Configure optional features for a Dynamics 365 Commerce evaluation environment](cpe-optional-features.md)
 
 [Dynamics 365 Commerce evaluation environment FAQ](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

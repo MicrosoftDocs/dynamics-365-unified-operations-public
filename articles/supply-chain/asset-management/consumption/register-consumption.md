@@ -18,13 +18,12 @@ ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -100,3 +99,6 @@ When you make consumption registrations, financial dimensions related to the dif
 >[!NOTE]
 >For all three registration types, the financial dimension combination is validated, and invalid combinations are blanked. This is standard setup with other Finance and Operations apps.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

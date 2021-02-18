@@ -17,7 +17,6 @@ ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -44,3 +43,6 @@ This topic explains how to set up number sequences on an individual basis. Numbe
 8. Expand the **General** section. On the General FastTab, specify whether the number sequence is manual, and continuous or non-continuous. In addition, enter the lowest and highest numbers that can be used in the number sequence. We do not recommend changing a non-continuous number sequence to a continuous number sequence. The number sequence will not be truly continuous. This change may also cause duplicate key violations in the database. In addition, continuous number sequences have a larger effect on performance.   
 9. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

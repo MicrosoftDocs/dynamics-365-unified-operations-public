@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
@@ -84,3 +83,6 @@ The next day, your manager informs you that computers decreased 8 percent instea
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

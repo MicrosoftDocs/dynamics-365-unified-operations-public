@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
@@ -53,3 +52,6 @@ You create workflow types to define the following elements:
 - [Create a workflow document class](workflow-type-document-create.md)
 - [Create a SubmitToWorkflow class](workflow-type-submit-to-workflow.md)
 - [Associate a workflow document class with a workflow type](workflow-type-associate-document.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

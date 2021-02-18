@@ -17,7 +17,6 @@ ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJourna
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -66,3 +65,6 @@ Before a fully depreciated asset is split, the asset book status should be manua
     - An Acquisition transaction is created for the new asset for the same amount.
 
 4. Select **Post**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

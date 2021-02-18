@@ -17,7 +17,6 @@ ms.search.form: EInvoiceCFDIPACTable_MX, EInvoiceParameters_MX, DigitalCertifica
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
@@ -76,3 +75,6 @@ This procedure walks you through setting up an electronic invoice and the PAC ac
 15. In the list, click the link in the selected row.
 16. Select or clear the Send report file - PDF check box.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ This procedure is intended for users who have the System administrator or Electr
     * Note that now only one root item is available to map to the application data sources. When at least one model mapping is introduced, only the model's root items that are mapped to application data sources can be selected as a model definition while the ER format is added.   
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

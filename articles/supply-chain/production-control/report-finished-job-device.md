@@ -17,7 +17,6 @@ ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -243,3 +242,6 @@ To control whether workers should reuse an existing license plate or generate a 
 
 > [!NOTE]
 > To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. For more information, see [Enable license plate label printing](../warehousing/tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

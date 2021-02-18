@@ -18,7 +18,6 @@ ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTabl
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11464
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -131,3 +130,6 @@ If you don't have access to the pages that are used to complete this task, conta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

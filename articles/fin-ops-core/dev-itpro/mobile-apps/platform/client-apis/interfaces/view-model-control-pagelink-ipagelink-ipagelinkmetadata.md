@@ -14,7 +14,6 @@ ms.technology:
 audience: Developer
 # ms.devlang:
 ms.reviewer: rhaertle
-# ms.search.scope:
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
@@ -132,7 +131,7 @@ Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontro
 Icon: string (optional)
 
 Name of the icon that is displayed in the page link control.
-Here is a [list of available icons](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/AXSymbolFont).
+Here is a [list of available icons](https://docs.microsoft.com/dynamics/s-e/).
 
 ### IconSize
 
@@ -220,3 +219,6 @@ OnNavigate: function(navigation: [NavigationArgs](view-model-ipage-inavigationar
 
 An event that is triggered when the navigation is triggered.
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

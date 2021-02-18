@@ -17,7 +17,6 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFro
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -72,3 +71,6 @@ This procedure shows you how to create a purchase order that is based on a sales
     - The **Reference lot** guarantees that the costs from the current purchase are charged on the attached sales order.  
     - You can navigate to the originating sales order by opening the link in the **Reference number** field.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

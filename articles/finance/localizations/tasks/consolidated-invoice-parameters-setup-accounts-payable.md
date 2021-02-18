@@ -17,7 +17,6 @@ ms.search.form: VendParameters, PaymDay, PaymTerm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -60,3 +59,6 @@ This procedure was created using the demo data company JPMF.
     * The Cutoff day is not available at R1 release. You can choose Current month as an alternative. This may result in slight difference, which needs to adjusted manually.   
 4. In the Payment day field, type a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

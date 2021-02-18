@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -112,3 +111,6 @@ Performance issues with loading metadata have been addressed, so you should no l
 
 > [!NOTE]
 > This issue will still occur on virtual machines that are used as build machines (VMs that have enlistments and compile code).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

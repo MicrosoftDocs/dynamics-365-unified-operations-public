@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
@@ -361,3 +360,6 @@ Follow these steps if the decision must be made in a specific time.
     - **Years** – Select the day, week, and month that the decision must be made by. For example, you might want the decision to be made by Friday of the third week of December.
 
 4. If the time limit is exceeded, the system makes the decision. In the **Action** list, select the option that the system should select.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: TMSNumberSequence
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -54,3 +53,6 @@ To link a number sequence to a carrier, do the following:
 1. Select **Edit**.
 1. On the **Overview** FastTab, select an option in the **Pro number sequence** field.
 1. Close the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

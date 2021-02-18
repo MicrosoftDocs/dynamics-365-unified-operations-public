@@ -17,7 +17,6 @@ ms.search.form: AssetDepreciationProfile, AssetBookTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -61,3 +60,6 @@ This procedure was created using the demo data company JPMF.
 4. Use the value noted previously in the Accelerated depreciation profile field
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

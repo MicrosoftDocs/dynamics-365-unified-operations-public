@@ -17,7 +17,6 @@ ms.search.form: VendConsInvoice_JP
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -58,3 +57,6 @@ This task was created using the demo data company JPMF.
     * Verify that the invoiced purchase orders are included in the consolidated invoice.  
 8. Click Confirm.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

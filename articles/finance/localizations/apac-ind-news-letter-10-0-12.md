@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -96,3 +95,6 @@ The parameter, **Enable stock transfer for master planning** has been added to t
 - The load on inventory tax amount is posted to the purchase expenditure for an expense account instead of the cost of project account/fixed asset account when a purchase order is placed with a procurement category (Transaction posted with Project -vendor or fixed asset – vendor combination). After this fix, the tax amount will load to an offset account.
 - After you post an imported purchase order, the system still allows you to create an invoice by selecting **Products receipt** on the **Pending vendor invoice** page. With this fix, after you post the imported purchase order invoice, it will not be available on the **Pending vendor invoice** page when you select **Product receipt**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

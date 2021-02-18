@@ -17,7 +17,6 @@ ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -412,3 +411,6 @@ You can now pick sales order 2. It became unblocked when the replenishment work 
 - You can manually override the replenishment work availability for each work header from the **Work details** page if you want.
 - When the system sets the replenishment work availability, it considers any inventory that is already in the location before any work is completed
 - Each piece of sales order work is linked to a specific replenishment work. There is no corresponding sales work availability functionality.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

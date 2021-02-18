@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -339,3 +338,6 @@ This section describes data that is sent to the payment connector for card-not-p
 ## Related topics
 
 - **[Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – This topic describes how to create a custom payment connector.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

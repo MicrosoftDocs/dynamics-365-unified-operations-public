@@ -17,7 +17,6 @@ ms.search.form: AssetPosting, AssetDiscountRateSchedule_JP
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -79,3 +78,6 @@ This task uses the JPMF demo company data.
 3. In the Start date field, enter a date.
 4. In the Market discount rate percentage field, enter a number.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

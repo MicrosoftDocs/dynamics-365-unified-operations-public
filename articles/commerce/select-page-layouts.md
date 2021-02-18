@@ -18,7 +18,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope:  Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -84,3 +83,8 @@ To select a different layout for an existing page, follow these steps.
 
 [Verify page content accessibility](verify-accessibility.md)
 
+[Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

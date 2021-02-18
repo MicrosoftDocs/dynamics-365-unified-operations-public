@@ -17,7 +17,6 @@ ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, GTE
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
@@ -55,3 +54,6 @@ This topic provides information about import tax engine configuration.
 ![Load configuration](media/gte-extension-import-configurations.png)
 
 7. Click **Yes** to confirm the import.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

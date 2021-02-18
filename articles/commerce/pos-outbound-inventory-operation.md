@@ -19,7 +19,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -199,3 +198,6 @@ Fully shipped transfer orders are moved to the **Complete** tab of the **Outboun
 ## Related topics
 
 [Inbound inventory operation in POS](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

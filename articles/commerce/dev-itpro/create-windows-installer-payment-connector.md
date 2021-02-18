@@ -60,3 +60,6 @@ The following illustration shows the file structure for a connector that is name
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

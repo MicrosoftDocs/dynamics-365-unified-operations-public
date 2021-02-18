@@ -19,7 +19,6 @@ ms.search.form: CustPosting, CustVendExternalItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
@@ -146,3 +145,6 @@ Specify the following values to set up your posting profile:
 
 For more information, see [Customer payment overview](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

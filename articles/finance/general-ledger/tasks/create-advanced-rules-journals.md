@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalSetup, LedgerJournalControl, CompanyLookup, LedgerJ
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -61,3 +60,6 @@ This procedure steps through creating advanced rules for journals. This includes
 4. In the tree, check 'the group that you want to allow posting for this journal name.'.
 5. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form:  EngChgEcmRequestSelection,EngChgEcmRequestProducts,EngChgEcmReq
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -189,3 +188,6 @@ Most of the fields on engineering change orders are the same as the fields for r
 | Environmental health and safety | Specify whether environmental health and safety rules are applicable to the change. If they are, you can then select the applicable rules. |
 
 You can use the **Maintain/copy change information** button to copy change information between affected products.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

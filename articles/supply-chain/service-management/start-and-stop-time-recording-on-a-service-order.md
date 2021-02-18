@@ -18,7 +18,6 @@ ms.search.form: SMAServiceOrderTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -69,3 +68,6 @@ Use this procedure to start and stop time recording for a service order for whic
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

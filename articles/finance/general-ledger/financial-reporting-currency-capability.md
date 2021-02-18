@@ -3,7 +3,7 @@
 
 title: Currency capabilities in financial reporting
 description: Financial reporting includes features that support complex currency reporting requirements.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
@@ -18,12 +18,11 @@ ms.search.form: FinancialReports
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261824
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Version 10.0.8
 
@@ -134,3 +133,6 @@ Financial reporting will calculate the amount of the difference from currency ca
 
 Put all of the accounts in a range, from assets to expenses. The difference will be the same amount as the rounding adjustment (CTA) and you can use the total to verify that the rounding adjustment dialog doesn't include any missing account balances. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

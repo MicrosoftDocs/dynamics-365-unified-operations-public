@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
@@ -239,3 +238,6 @@ To avoid unwanted issues with future settlements for this transaction, instead o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

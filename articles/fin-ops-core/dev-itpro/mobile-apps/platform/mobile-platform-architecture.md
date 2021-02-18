@@ -90,3 +90,6 @@ The mobile app designer lets you select the specific data fields from forms that
 [Action design guidelines](action-design-guidelines.md)
 
 [Form design requirements](form-design-requirements.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

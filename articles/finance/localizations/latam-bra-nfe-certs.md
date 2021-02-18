@@ -18,7 +18,6 @@ ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -90,3 +89,6 @@ The following table lists each tax authority and the solution that you should us
 Sefaz Virtual de Contingência Rio Grande do Sul (SVC-RS)|	AM, BA, CE, GO, MA, MS, MT, PA, PE, PI, PR|	No additional solution is required|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

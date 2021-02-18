@@ -18,7 +18,6 @@ ms.search.form: AssetDepreciationProfile, LedgerJournalTransApprove, LedgerJourn
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264294
 ms.search.region: Italy
@@ -51,3 +50,6 @@ The **Depreciation run date** should be set up at the time of acquisition and is
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

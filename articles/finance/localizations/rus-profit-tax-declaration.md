@@ -15,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -149,3 +148,6 @@ For more information about how to set up electronic messaging functionality, see
 14. To review the report that is generated, select **Attachments** (the paper clip symbol) in the upper-right corner of the page. Then select **Open** to open the file.
 
 You must also manually upload the generated file to the special third-party software for data preview and data updates, and to transfer the profit tax declaration files to the tax authorities through the communication channels.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

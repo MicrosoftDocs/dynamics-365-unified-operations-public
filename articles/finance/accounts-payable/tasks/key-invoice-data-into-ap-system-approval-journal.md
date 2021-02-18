@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransInvoiceRegister, HcmWorker
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -57,3 +56,6 @@ This topic explains how to use the invoice register to create invoices and then 
 10. Select **Post**.
 11. Select **Voucher** to view the entries that were posted. The Invoice Pending Approval account is reversed and replaced with the actual expense account.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -91,3 +90,6 @@ The drill-down report includes the following information:
 - Debit and credit details for the actuals voucher
 - Positive and negative amounts for the budget, encumbrance, and pre-encumbrance voucher
 - Opening, closing, and running balances for the ledger account
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

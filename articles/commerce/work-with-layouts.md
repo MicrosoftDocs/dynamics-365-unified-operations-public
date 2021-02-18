@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -113,3 +112,6 @@ After you've previewed the changes to your preset layout, follow one of these st
 [Templates and layouts overview](templates-layouts-overview.md)
 
 [Work with templates](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

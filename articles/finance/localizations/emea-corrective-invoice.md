@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1174003
 ms.search.region: Denmark, Germany, France, Ireland, Netherlands, United Kingdom
@@ -41,3 +40,6 @@ free text invoices uses the same layout as the invoice with the following differ
 
 -   Instead of displaying "Invoice", the credit note shows "Credit note" as the document name.
 -   The credit note includes the fields **Main invoice no.** and **Reason for correction**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

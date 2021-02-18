@@ -17,7 +17,6 @@ ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransacti
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -53,3 +52,6 @@ When you create an original budget entry and use the budget model and dimension 
     * To make optional selections, click the Unlock icon at the top of the page.  
 18. Click Update.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

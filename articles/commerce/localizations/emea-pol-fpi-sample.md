@@ -17,7 +17,6 @@ ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Poland
@@ -281,3 +280,6 @@ The configuration file is located in the **Configuration** folder of the extensi
 - **Connection string** – This string describes the details of the connection to the device in a format that is supported by the driver. For details, see the POSNET driver documentation.
 - **Date and time synchronization** – This setting specifies whether the date and time of the printer must be synced with the connected Hardware station.
 - **Device timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the device. For details, see the POSNET driver documentation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

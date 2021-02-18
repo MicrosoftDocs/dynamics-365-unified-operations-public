@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Saudi Arabia
@@ -122,3 +121,6 @@ The following illustration shows an example of the **Sales tax payment by code**
 
 - [Create a sales tax payment](../general-ledger/tasks/create-sales-tax-payment.md)
 - [FAQ: VAT returns (Government website)](https://www.vat.gov.sa/en/e-services/vat-returns)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

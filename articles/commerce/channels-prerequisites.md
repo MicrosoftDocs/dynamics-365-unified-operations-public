@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -90,3 +89,6 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 [Set up a retail channel](channel-setup-retail.md)
 	
 [Set up an online channel](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

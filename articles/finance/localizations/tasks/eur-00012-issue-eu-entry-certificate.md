@@ -17,7 +17,6 @@ ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder,
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -90,3 +89,6 @@ This procedure walks you through enabling an EU entry certificate, configuring a
 4. On the Action Pane, click Invoice.
 5. Click View issued entry certificates.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

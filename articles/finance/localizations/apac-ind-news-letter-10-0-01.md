@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -86,3 +85,6 @@ You can create a non-GST item that is the default for **Tax information** in tax
 - GSTIN of e-commerce operator is always blank in GSTR1.
 - Place of supply is incorrect in GSTR2.
 - Project expense can't be posted when there is a sales tax group and an item sales tax group.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

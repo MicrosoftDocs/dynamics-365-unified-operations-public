@@ -18,7 +18,6 @@ ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -36,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Set up return reason code groups 
 
-1.  Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason code groups**.
+1.  Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason code groups**.
 
-2.  Press CTRL+N to create a line for a new return reason code group.
+2.  Select **New** to create a line for a new return reason code group.
 
 3.  In the **Return reason code group** field, type an identifier for this group.
 
@@ -48,7 +47,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure helps you set up return reason codes that you can use to indicate why a product was returned by the customer.
 
-1.  Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason codes**.
+1.  Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Return reason codes**.
 
 2.  Press CTRL + N to create a new return reason code line.
 
@@ -67,3 +66,6 @@ This procedure helps you set up return reason codes that you can use to indicate
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

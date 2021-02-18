@@ -318,3 +318,6 @@ The full sample code is available in the RetailSDK\\SampleExtensions\\CommerceRu
 ### Best practice
 
 Avoid making database calls for each custom receipt field. Instead, use extension properties that were previously set on entities. Custom receipt types can be called by any logic (per sales line, one time per some condition). See the sample for a more complete scenario.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -86,3 +85,6 @@ This procedure shows how to create a product configuration model and enter basic
 17. In the Per series field, enter a number.
 18. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

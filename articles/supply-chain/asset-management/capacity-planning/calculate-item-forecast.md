@@ -18,13 +18,12 @@ ms.search.form: EntAssetItemForecast
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -65,3 +64,6 @@ This is useful if you want to get an overview of expected item consumption (spar
 8. Click the **Display dimensions** button if you want to see the product, storage, or tracking dimensions related to the items. Select the relevant check boxes, and click **OK**.
 
 ![Figure 1](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

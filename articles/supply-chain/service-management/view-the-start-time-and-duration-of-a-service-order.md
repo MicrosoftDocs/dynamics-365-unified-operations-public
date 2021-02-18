@@ -18,7 +18,6 @@ ms.search.form: SMAServiceOrderTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -64,3 +63,6 @@ You can also view when the time recording for a service order was started and st
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

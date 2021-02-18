@@ -72,9 +72,10 @@ The data for **Financial Insights** is pulled from the Entity store (**System ad
 
 You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:
 
-- Financial reporting transaction data version 2 (**Note:** This is new with version 10.0.1 and replaces the previous entity.)
-- Financial reporting transaction data
+- BudgetActivityMeasure
+- Financial reporting transaction data version 3 
 - CustCollectionsBIMeasurements
+- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Purchase cube
 - Sales cube
@@ -253,3 +254,6 @@ The information in the following resources isn't required in order to enable the
 - [Accessing Analytical Workspaces and Reports on 1-box environment](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Add analytics to workspaces by using Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

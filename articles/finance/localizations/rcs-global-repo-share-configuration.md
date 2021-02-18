@@ -18,7 +18,6 @@ ms.search.form: ERSolutionTable, ERWorkspace, RCS
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 
@@ -78,3 +77,6 @@ After a configuration has been created under your configuration provider, you ca
 The configuration is shared with the external organization and is available to that organization in the Global repository. From there, it can be imported into the organization's instance of RCS or into its instances of Finance and Operations apps.
 
 6. To unshare a configuration that has been previously shared with an external organization, select the configuration and click **Unshare**, and then select **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

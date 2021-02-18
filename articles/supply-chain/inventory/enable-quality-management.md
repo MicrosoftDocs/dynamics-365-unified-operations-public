@@ -18,7 +18,6 @@ ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQuali
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -508,3 +507,6 @@ Additional resources
 [Nonconformance management](enable-nonconformance-management.md)
 
 [Quality management for warehouse processes](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

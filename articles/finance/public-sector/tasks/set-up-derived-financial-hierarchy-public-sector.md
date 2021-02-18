@@ -17,7 +17,6 @@ ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -73,3 +72,6 @@ To meet Common Government-wide Accounting Classification (CGAC) requirements, pu
 5. Click Edit filter.
     * Click Add new criteria to begin adding rules to the filter. After you've added all of the criteria, click Activate filter.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

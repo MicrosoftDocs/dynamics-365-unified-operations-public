@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: b364a31c-52d3-45c5-b698-64c5242c592a
@@ -66,3 +65,6 @@ In this release of Finance and Operations, numerous extensibility enhancements h
 ## VAT declaration for Russia
 
 In this release, you can review the ER configurations for generating VAT declaration for Russia in electronic format. For detailed information, see [RUS/Russia VAT Declaration in electronic format](https://support.microsoft.com/help/4477332/rusrussiavatdeclarationinelectronicformat).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

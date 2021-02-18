@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalizeReport
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28831
 ms.search.region: Germany
@@ -43,3 +42,6 @@ The **German journal list** report shows a list of transactions that are produce
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

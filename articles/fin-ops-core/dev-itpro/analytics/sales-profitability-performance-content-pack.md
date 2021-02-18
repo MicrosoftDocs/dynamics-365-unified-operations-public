@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales and profitability performance Power BI content
-description: This topic describes what's included in the Sales and profitability performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+description: This topic describes what's included in the Sales and profitability performance Power BI content.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -112,3 +112,6 @@ The following key dimensions in the Sales Cube are used as filters to slice the 
 | Dates            | Dates                                                |
 
 By default, the content shows data for the current calendar year. However, you can change the date filter in the report filters section. You can also change the company filter.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

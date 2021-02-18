@@ -18,7 +18,6 @@ ms.search.form: ProdSchedule
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19431
 ms.assetid: aef37341-91d8-4263-80eb-35d9584be156
@@ -81,3 +80,6 @@ Job scheduling considers the efficiency percentages that are specified for the r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

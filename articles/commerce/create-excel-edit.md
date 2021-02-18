@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -83,3 +82,6 @@ To create and configure an Excel workbook so that you can edit retail transactio
 [Edit financial dimensions for retail transactions](edit-financial-dim.md)
 
 [Add fields to an Excel workbook to edit retail transactions](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

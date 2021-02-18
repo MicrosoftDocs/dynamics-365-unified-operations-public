@@ -2,7 +2,7 @@
 # required metadata
 
 title: Printer ER destination type
-description: This topic explains how you can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents in either PDF or Microsoft Office formats (Excel\Word). 
+description: This topic explains how you can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format. 
 author: NickSelin
 manager: AnnBe
 ms.date: 03/17/2020
@@ -75,3 +75,6 @@ To use a specific [page orientation](electronic-reporting-destinations.md#Select
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

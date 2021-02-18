@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274063
 ms.search.region: Poland
@@ -437,3 +436,6 @@ After you've set up non-deductible costs, you can perform the following tasks on
 - **Print report**
 
 The FactBox pane shows the totals in the journal and the total overdue amount.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: VendCoverPageLayout
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -42,3 +41,6 @@ When you create cover and signature pages for a payment report, you can specify 
     * If needed, add additional names, and select any options that you want.  
 8. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

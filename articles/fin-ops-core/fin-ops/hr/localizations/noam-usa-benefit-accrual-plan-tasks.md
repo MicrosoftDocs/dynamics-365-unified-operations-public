@@ -18,13 +18,12 @@ ms.search.form: PayrollAccrual
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221474
 ms.assetid: c6d387ac-91fd-40c0-aaaa-809f2793d28b
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -187,3 +186,6 @@ If the service date basis is set to **Seniority date**, make sure that a seniori
 
 ## Next step
 The next step is to set up payroll taxes. For more information, see [Set up taxes, tax regions, tax codes, and tax groups](noam-usa-tax-information-tasks.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

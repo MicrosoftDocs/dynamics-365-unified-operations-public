@@ -4,7 +4,7 @@
 title: Get started with Talent
 description: This topic provides information about how to adapt the user interface to your preferences, as well as connect to the Help resources that are available within the product, and on the docs.microsoft.com site. 
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -72,3 +71,6 @@ You can find opinions, news, and other information about Accounts payable and ot
 ### Videos
 Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

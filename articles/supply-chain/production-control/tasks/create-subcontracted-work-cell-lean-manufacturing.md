@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -75,3 +74,6 @@ To model subcontracted work for lean manufacturing, you must create a work cell 
 24. In the Unit field, click the drop-down button to open the lookup.
 25. ResolveChanges the Unit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

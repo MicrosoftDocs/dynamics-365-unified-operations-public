@@ -395,3 +395,6 @@ parmDimensionEntryControlHeader(
 [Support for Dimension Entry controls on dialogs](dimension-entry-control-dialog-support.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

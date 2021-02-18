@@ -19,7 +19,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -227,3 +226,6 @@ After the document is in **Requested** status, it's visible on the **Active** ta
 ## Related topics
 
 [Outbound inventory operation in POS](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

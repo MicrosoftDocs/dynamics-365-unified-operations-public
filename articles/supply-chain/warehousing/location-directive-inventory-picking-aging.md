@@ -17,7 +17,6 @@ ms.search.form:  WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -144,3 +143,6 @@ The LIFO strategy finds the location that contains the newest aging date, and it
 1. Notice that the line where the **Work type** value is *Pick* shows a **Location** value of *FL-001*. This location contains the license plate that has the newest aging date (LIFO).
 
 In these scenarios, you've seen how the location aging strategy directs work to the inventory location that has either the oldest inventory or the newest inventory, depending on the selected strategy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

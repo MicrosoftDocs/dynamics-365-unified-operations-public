@@ -17,7 +17,6 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTran
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
@@ -65,3 +64,6 @@ Prior to this task, the "Set up reverse charge VAT" tasks should be completed.
     * Ensure that the reverse charge VAT is calculated in the Sales tax transactions.  
 18. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

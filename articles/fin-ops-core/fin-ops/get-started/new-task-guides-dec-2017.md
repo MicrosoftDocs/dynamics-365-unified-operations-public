@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -376,3 +375,6 @@ When a BPM line is deleted, any task guide that was associated with the BPM line
 **Deleted BPM line**
 
 - Move scheduled kanban jobs
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

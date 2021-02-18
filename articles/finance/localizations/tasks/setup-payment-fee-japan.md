@@ -17,7 +17,6 @@ ms.search.form: BankGroup,  VendPaymFeeGroup_JP, VendTable, PaymFeeBankRule_JP, 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -130,3 +129,6 @@ This task was created using the demo data company JPMF.
     * For example: select 'Taxable'.  
 30. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

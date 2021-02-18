@@ -18,7 +18,6 @@ ms.search.form: AssetTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266924
 ms.search.region: Latvia
@@ -51,3 +50,6 @@ Your modification is saved when you click **Save** or when you move your focus a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

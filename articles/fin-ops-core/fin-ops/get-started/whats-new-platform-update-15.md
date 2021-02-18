@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: a765d51c-52d3-45c5-b578-63b5242c592a
@@ -164,3 +163,6 @@ public final class abClassTable_Extension
 ```
 
 The form or form extension can then consume the display and edit methods from a form control by providing the **\<ClassName\>.\<MethodName\>** in the DataMethod property.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

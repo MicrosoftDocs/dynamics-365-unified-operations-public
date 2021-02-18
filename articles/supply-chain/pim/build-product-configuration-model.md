@@ -18,7 +18,6 @@ ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
@@ -167,3 +166,6 @@ If configuration will be done at a site, or even a company, that differs from th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -142,3 +142,6 @@ This topic shows how you can block an invoice or credit transaction.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

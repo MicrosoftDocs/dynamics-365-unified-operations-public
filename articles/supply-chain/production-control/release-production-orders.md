@@ -18,7 +18,6 @@ ms.search.form: ProdParmRelease
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2414
 ms.assetid: 50c2257b-2924-44f5-b7c1-11f498092053
@@ -68,3 +67,6 @@ Work for raw material picking is generated during release. Work is generated onl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

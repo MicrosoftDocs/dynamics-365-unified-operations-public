@@ -17,7 +17,6 @@ ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265904
 ms.search.region: Thailand
@@ -82,3 +81,6 @@ When you submit the **Withholding tax (Por Ngor Dor 53)** or **Withholding tax (
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

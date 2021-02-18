@@ -17,7 +17,6 @@ ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLooku
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -66,3 +65,6 @@ This procedure shows the setup that is needed to create a withdrawal kanban rule
     * This will create two kanbans.  
     * Note that 2 kanbans, for 5 each, was created for this withdrawal kanban rule.  This is the last step in this procedure.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

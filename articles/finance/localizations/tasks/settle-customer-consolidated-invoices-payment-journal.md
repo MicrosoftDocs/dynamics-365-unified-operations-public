@@ -17,7 +17,6 @@ ms.search.form: CustConsInvoice_JP, LedgerJournalTable, LedgerJournalTransCustPa
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -64,3 +63,6 @@ This procedure was created using the demo data company JPMF.
 14. Go to Accounts receivable > Periodic tasks > Consolidated invoice.
     * Confirm that the status of the consolidated invoice has been updated to be Settled.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -53,3 +52,6 @@ Set up fiscal document source text
 19. Click Save.
 20. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: Kanban, KanbanResetEmpty
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -50,3 +49,6 @@ When a kanban is emptied by mistake or a received kanban needs to be emptied, yo
 2. In the list, mark the selected row.
     * Notice that the Handling unit status is Emptied.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

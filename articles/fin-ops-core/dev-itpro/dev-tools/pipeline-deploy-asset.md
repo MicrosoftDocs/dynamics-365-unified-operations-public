@@ -35,7 +35,7 @@ You can use the **Deploy Lifecycle Services (LCS) Asset Deployment** task in Mic
 * The task is available only in **Releases** pipelines.
 * The deployment of software deployable packages to production environments can't be automated.
 * Software deployable packages can't be deployed to build environments.
-* Software deployable packages can be deployed to local business data (LBD) environments on-premises(since update 39 10.0.15).
+* Software deployable packages can't be deployed to local business data (LBD) environments on-premises.
 
 This topic assumes that you have a working knowledge of [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started).
 
@@ -56,3 +56,6 @@ The following table describes the options that are available for this task.
 | LCS File Asset ID | Yes | Enter the asset ID of the software deployable package to deploy. The asset ID is a GUID that you can find in the Asset library. Select the row of the asset that you want to deploy, and then, under **Additional Details**, look in the **Asset ID** field. Typically, this ID comes dynamically from other pipeline steps, such as the [Dynamics Lifecycle Services (LCS) Asset Upload](pipeline-asset-upload.md) task. |
 | Name for the update | Yes | Enter the name that is shown for the update in the environment history in LCS. |
 | Wait for Completion | Cleared (No) | Use this check box to instruct the task to wait until the deployment of the asset has either succeeded or failed. If it's cleared (**No**), the task will only start the deployment. If the task is instructed to wait, a pipeline time-out might occur during long-running deployments. For more information about time-out options, see [Timeouts](https://docs.microsoft.com/azure/devops/pipelines/process/phases#timeouts). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

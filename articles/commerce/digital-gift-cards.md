@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -105,3 +104,6 @@ To configure a custom amount for a digital gift card in Commerce site builder, f
 [Create an online functionality profile](online-functionality-profile.md)
 
 [Support for external gift cards](./dev-itpro/gift-card.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -15,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -115,3 +114,6 @@ When you generate deferrals for vendor invoices by using the periodic task, defe
 To view manually and automatically created deferrals, go to **General ledger > Deferrals > Deferrals**.
 
 ![Deferrals page, list of deferrals](media/6_Deferrals.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

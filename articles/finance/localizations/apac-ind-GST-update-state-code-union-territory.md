@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -52,3 +51,6 @@ Follow these steps to update the state code and union territory.
 5. Select **Close**.
 
 ![Address setup](media/IND-GST-UpdateState.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

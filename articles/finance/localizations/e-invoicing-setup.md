@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 
@@ -366,3 +365,6 @@ Follow these steps to manage the lifecycle of the Electronic invoicing add-on fe
 
     > [!NOTE]
     > When you select **Yes**, the status of configuration versions is automatically changed from **Completed** to **Shared**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

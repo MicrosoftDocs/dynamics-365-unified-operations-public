@@ -18,7 +18,6 @@ ms.search.form: BOMDesignerEditBOM, BOMTable, ProdBOM
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53401
 ms.assetid: 9cff88e4-0425-4707-9178-3c2cb10df7c2
@@ -86,3 +85,6 @@ The bill of materials (BOM) quantity is 1, and the production quantity is 110. T
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

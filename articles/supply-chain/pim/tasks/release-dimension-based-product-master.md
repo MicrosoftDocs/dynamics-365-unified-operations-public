@@ -17,7 +17,6 @@ ms.search.form: EcoResProductListPage, EcoResProductRelease
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -44,3 +43,6 @@ This procedure shows how to release a product master, which will be used for the
 7. Click Next.
 8. Click Finish.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

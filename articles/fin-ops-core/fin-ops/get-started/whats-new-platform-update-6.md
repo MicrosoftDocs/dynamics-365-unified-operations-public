@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 13d2b8a5-c2e0-4f32-a43b-7726ae20392c
@@ -86,3 +85,6 @@ Click the **Ideas** link to go to the Dynamics 365 for Operations forum.
 - The **My Feedback** feature allows you to see a detailed view of your submitted ideas, the status of your ideas, and the total votes received.
 
 [![ideas-options](./media/ideas-options.png)](./media/ideas-options.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

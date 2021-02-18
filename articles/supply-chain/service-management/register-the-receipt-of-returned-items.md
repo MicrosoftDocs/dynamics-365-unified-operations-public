@@ -18,7 +18,6 @@ ms.search.form: WMSArrivalOverview, InventTransRegister
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -118,3 +117,6 @@ As an alternative to using the **Arrival overview** form, you can use the **Regi
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

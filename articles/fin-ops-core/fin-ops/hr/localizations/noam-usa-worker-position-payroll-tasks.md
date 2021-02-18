@@ -18,13 +18,12 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollWorkerTaxCode, Payrol
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 248404
 ms.assetid: d6530f02-bbee-4d8e-94e7-173aecb4452e
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -237,3 +236,6 @@ The following tables show the information that you must enter on the **Payroll l
 [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 
 [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

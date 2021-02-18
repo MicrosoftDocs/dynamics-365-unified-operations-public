@@ -18,7 +18,6 @@ ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -129,3 +128,6 @@ To submit a general budget reservation to the workflow system, follow these step
     As the reservation moves through the workflow, the reservation status and workflow status change and are reflected in the header of the general budget reservation.
 
 7. When the workflow is completed, and the reservation status is **Approved**, you can post the document.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

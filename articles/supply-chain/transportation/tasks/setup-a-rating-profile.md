@@ -17,7 +17,6 @@ ms.search.form: TMSRatingProfile
 audience: Application User 
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -64,3 +63,6 @@ On the **Rating profiles** page, you can review all available rating profiles. Y
 
 > [!NOTE]
 > Profiles that are created on the **Shipping carriers** page are also shown on the **Rating profiles** page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

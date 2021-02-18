@@ -18,7 +18,6 @@ ms.search.form: SMAParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -42,3 +41,6 @@ You register and post all service order transactions through the project that yo
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

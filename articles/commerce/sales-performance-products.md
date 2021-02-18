@@ -18,7 +18,6 @@ ms.search.form: SysOperationsTemplateForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 85153
 ms.assetid: b3ac056f-0e4f-4e16-8479-37366f488793
@@ -49,3 +48,6 @@ For this assessment, you can use the out-of-box **Top products** report, which y
 - **Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Top products report**
 - **Category and product management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Top products report**
 - **Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

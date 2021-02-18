@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12641
 ms.search.region: Hungary
@@ -219,3 +218,6 @@ The **Itemized VAT statement** report contains the following data:
 
 In this table, line 102 includes the sales order, line 103 includes the credit note for the sales order, and line 105 includes two vendor invoices.
 Other sections contain the same information for each partner separately, and the list of invoices for each item.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesT
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -85,3 +84,6 @@ This procedure demonstrates how to process customer rebates from claim generatio
     - The Rebate accrual account has been credited to represent the future liability towards the customer.
     - The Rebate expense account has been debited, in recognition of the cost incurred in connection with the sales.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

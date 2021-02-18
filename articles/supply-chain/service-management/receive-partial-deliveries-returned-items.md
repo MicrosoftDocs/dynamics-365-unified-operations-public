@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -56,3 +55,6 @@ If a return shipment contains less than the full quantity of a return order line
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -20,7 +20,6 @@ ms.search.form:  InventLocationWHSProcessEnablement, WHSLocationProfile, InventT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
@@ -89,3 +88,6 @@ Before you can use released products in the **Warehouse management** module, the
 6.  On the **Change storage dimension group for items** page, add the item numbers, storage dimension groups, and unit sequence groups. You can complete this step directly on the page, by using the Microsoft Office integration, or by using the data entity process in [Data management](../../dev-itpro/data-entities/data-entities.md).
 7.  Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, additional data upgrade will be required.
 8.  Process the changes. An update of all the inventory dimensions can take a while. You can monitor the progress by using the batch jobs tasks.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

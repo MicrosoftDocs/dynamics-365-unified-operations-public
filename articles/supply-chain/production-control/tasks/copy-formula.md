@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -68,3 +67,6 @@ This procedure focuses on creating a formula that includes the same ingredients 
 5. Click Select.
 6. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

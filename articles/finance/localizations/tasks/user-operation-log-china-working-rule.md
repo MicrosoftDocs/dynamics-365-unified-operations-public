@@ -17,7 +17,6 @@ ms.search.form: SysDatabaseLogSetup, SysDatabaseLogWizard, BankAccountTable, Com
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
@@ -72,3 +71,6 @@ This procedure uses the CNMF demo data. This procedure is for a feature that was
 9. Click OK.
 10. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageD
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 
 ms.assetid: 
@@ -369,3 +368,6 @@ The new report will resemble the following example.
 </tr>
 </tfoot>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

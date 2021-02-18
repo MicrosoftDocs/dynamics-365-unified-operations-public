@@ -17,7 +17,6 @@ ms.search.form: PaymTerm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27331
 ms.search.region: France
@@ -75,3 +74,6 @@ If you are assigned to the same user role as the user who placed the hold, you c
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

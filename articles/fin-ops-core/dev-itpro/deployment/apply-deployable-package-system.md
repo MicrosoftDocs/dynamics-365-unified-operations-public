@@ -139,3 +139,6 @@ Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use t
 ## Additional resources
 
 [Install deployable packages from the command line](install-deployable-package.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

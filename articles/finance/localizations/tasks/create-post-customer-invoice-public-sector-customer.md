@@ -17,7 +17,6 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, ContactPersonL
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
@@ -80,3 +79,6 @@ Before you can complete this procedure, you must complete the following procedur
 2. Click Show files.
 3. Click Open.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

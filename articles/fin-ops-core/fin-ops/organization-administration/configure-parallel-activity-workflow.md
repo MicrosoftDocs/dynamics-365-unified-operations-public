@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 195753
 ms.assetid: 6d0656df-b5af-4001-96e6-6f0fcc44d022
@@ -60,3 +59,6 @@ Follow these steps to add and configure the branches of this parallel activity.
     > The order of the branches is not important because all the branches of a parallel activity run at the same time.
 
 3. To configure each branch, see [Configure parallel branches in a workflow](configure-parallel-branch-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

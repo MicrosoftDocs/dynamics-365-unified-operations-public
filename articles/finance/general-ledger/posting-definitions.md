@@ -18,7 +18,6 @@ ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, LedgerParam
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15741
 ms.assetid: 1495e7e0-2e39-464c-8da9-f55b1ca1c6bb
@@ -67,3 +66,6 @@ The following restrictions apply when you create links in posting definitions:
 For more information, see [Posting definition examples](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -396,3 +395,6 @@ You post the settlement of foreign currency purchase transactions to generate fo
 4. Select **Post**. The exchange rate difference transaction is generated. Ledger accounts for the foreign currency exchange difference are taken from the **Realized gain** and **Realized loss** accounts that are specified in the setup of foreign currency parameters.
 5. You can review the transactions that are generated. On the **Bank groups** page, select **Transactions**.
 6. You can also post an unsettlement of transactions. On **Bank groups** page, select **Functions \> Closed transitions editing**, mark transactions, and then select **Reverse**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

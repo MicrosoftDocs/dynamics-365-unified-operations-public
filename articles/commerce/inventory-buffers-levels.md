@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: global
@@ -154,3 +153,6 @@ To configure the response of the product availability APIs, follow these steps.
 [Apply inventory settings](inventory-settings.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

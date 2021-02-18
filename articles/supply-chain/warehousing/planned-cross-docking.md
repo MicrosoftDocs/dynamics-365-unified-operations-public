@@ -16,7 +16,6 @@ ms.search.form:  WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWo
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -319,3 +318,6 @@ Currently, both work IDs have the same target license plate. To complete the nex
 The following illustration shows how the completed cross-docking work might appear in Microsoft Dynamics 365 Supply Chain Management.
 
 ![Cross-docking work completed](media/PlannedCrossDockingWork.png "Cross-docking work completed")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

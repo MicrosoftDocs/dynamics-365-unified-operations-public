@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Germany
@@ -48,3 +47,6 @@ For more information about how to set up and use customer electronic invoices in
 
 - [Dynamics 365 Finance](https://support.microsoft.com/help/4490705)
 - [Dynamics AX 2012 R3](https://fix.lcs.dynamics.com/Issue/Details?kb=4494484&bugId=3979521)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20931
 ms.search.region: Global
@@ -100,3 +99,6 @@ You can design and administer questionnaires to gather information that's used f
 - [Design questionnaires](../../../talent/design-questionnaires.md)
 - [Distribute and schedule questionnaires](../../../talent/distribute-questionnaires.md)
 - [View and evaluate the results of questionnaires](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

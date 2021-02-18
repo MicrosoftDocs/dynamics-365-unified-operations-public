@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Italy
@@ -126,3 +125,6 @@ When the **Date of VAT register** option on the **General ledger parameters** pa
     - Total operations in the next period that have a competence date in the actual period
 
 - The **Total calculated considering competence date** amount is provided on a separate line.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

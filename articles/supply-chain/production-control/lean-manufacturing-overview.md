@@ -18,7 +18,6 @@ ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobScheduling
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
@@ -87,3 +86,6 @@ In addition, lean manufacturing supports the purchasing and invoicing processes 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

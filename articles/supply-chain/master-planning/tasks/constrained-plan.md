@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqP
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -56,3 +55,6 @@ The demo data company used to create this procedure is USMF. This procedure is i
 3. Select **OK**.
 4. Select **Planned orders**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

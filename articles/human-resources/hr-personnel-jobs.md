@@ -4,7 +4,7 @@
 title: Set up the components of a job
 description: This article describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ audience: Application User
 # ms.devlang: 
 ms.author: anbichse
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Set up the components of a job
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 
@@ -92,3 +94,6 @@ You use areas of responsibility to indicate the work roles, processes, and produ
 
 ## Steps for creating a job
 Refer to the [Define new jobs](../fin-and-ops/hr/tasks/define-new-jobs.md) article for the step-by-step procedure for creating a new job. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

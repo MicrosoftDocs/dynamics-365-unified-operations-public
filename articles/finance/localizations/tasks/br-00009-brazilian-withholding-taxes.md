@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -78,3 +77,6 @@ This procedure sets up a withholding tax code, withholding tax type, and calcula
 44. Click Save.
 45. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

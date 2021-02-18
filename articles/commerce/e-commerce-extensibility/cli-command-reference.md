@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -221,3 +220,6 @@ yarn msdyn365 validate ./
 [E-commerce architectural overview](architectural-overview.md)
 
 [E-commerce components](ecommerce-components.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

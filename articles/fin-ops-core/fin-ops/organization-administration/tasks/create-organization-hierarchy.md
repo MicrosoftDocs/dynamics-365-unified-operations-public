@@ -17,7 +17,6 @@ ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySe
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ The demo data company used to create this procedure is USMF.
     - Add organizations, as necessary.  
     - To add an organization, click **Edit** and then **Insert** to add the organization. When you are done making changes you can **Save** a draft and/or **Publish** the changes.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

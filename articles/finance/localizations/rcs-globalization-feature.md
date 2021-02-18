@@ -17,7 +17,6 @@ ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 
@@ -256,3 +255,6 @@ Users of Globalization services can manage the environment to set up a Globaliza
 10. Select **Publish** to publish the environment.
 
     ![Published environment](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

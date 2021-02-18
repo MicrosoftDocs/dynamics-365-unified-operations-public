@@ -18,7 +18,6 @@ ms.search.form: BudgetControlConfiguration, BudgetPlanGenerate
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13051
 ms.assetid: fb1bb2d3-445c-402f-a9a3-aa6503eed78e
@@ -51,3 +50,6 @@ Therefore, you can create separate budgets for the most significant transaction 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

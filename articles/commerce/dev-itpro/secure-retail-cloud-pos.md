@@ -350,3 +350,6 @@ You can define a list of websites that a store worker (cashier) requires for nor
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -304,3 +303,6 @@ This enhancement ensures that the tare weight of a container used in the contain
 The volume of the container is now represented with greater detail, including gross volume, remaining volume, and the ability to capture actual volume.
 
 These updated values are consumed by the rate route engines, as well as by the transportation tender.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

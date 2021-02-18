@@ -18,7 +18,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
@@ -93,3 +92,6 @@ The 175% reducing balance depreciation method divides 175 percent by the servic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

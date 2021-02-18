@@ -17,7 +17,6 @@ ms.search.form:  TAMVendRebateAgreement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: no wiki topic
 ms.search.region: Global
@@ -171,3 +170,6 @@ The process for handling vendor rebates involves multiple manual tracking tasks 
 - Generating accurate rebate claims
 - Accruing the expected receivable and interim gain in the general ledger
 - Updating the vendor balance and the income statement with the allowance that is due
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

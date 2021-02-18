@@ -17,7 +17,6 @@ ms.search.form: AssetReductionEntryProfile_JP, AssetTable, AssetBook
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -72,3 +71,6 @@ This task uses the JPMF demo company data.
 7. Enter the document date.
 8. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

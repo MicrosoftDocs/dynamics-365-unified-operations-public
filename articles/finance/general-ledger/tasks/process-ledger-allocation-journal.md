@@ -17,7 +17,6 @@ ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransA
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -47,3 +46,6 @@ This topic explains how to process an allocation request. Use the Process alloca
 9. Select **Post**.
 10. Select **Post**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

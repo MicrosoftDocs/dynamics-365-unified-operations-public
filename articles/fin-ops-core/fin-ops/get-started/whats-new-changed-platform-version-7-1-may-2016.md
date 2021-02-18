@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 91183
 ms.assetid: 259a6844-3675-44bd-a4ea-57a5976628ff
@@ -249,3 +248,6 @@ This article describes features that are either new or changed in Microsoft Dyna
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
 
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

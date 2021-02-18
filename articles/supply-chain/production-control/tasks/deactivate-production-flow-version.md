@@ -17,7 +17,6 @@ ms.search.form: LeanProductionFlow
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -48,3 +47,6 @@ For this procedure you need a production flow with a version that can be deactiv
     * Do not proceed if you are not 100% positive that this production flow version is obsolete. Clicking Ok will expire all active kanban rules and put an immediate stop to all production and replenishment activities of this production flow version.  
 6. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

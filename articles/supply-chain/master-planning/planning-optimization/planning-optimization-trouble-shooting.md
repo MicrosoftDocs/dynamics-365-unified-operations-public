@@ -18,7 +18,6 @@ ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -53,12 +52,6 @@ Planning Optimization differs from the built-in master planning design in some a
 
 **Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
-## Master planning doesn't respect the coverage time fence
-
-This is caused by a pending feature for Planning Optimization.
-
-**Fix**: Until the pending feature is available, filter or delete planned orders to remove supply suggestions outside of the coverage time fence.
-
 ## Can't enable Planning Optimization
 
 The **Connection status** must be **Connected** before you can set **Use Planning Optimization** to **Yes**. For more information, see [Get started with Planning Optimization](get-started.md).
@@ -78,3 +71,6 @@ This is related to a pending feature that is planned as part of the support for 
 [Get started with Planning Optimization](get-started.md)
 
 [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

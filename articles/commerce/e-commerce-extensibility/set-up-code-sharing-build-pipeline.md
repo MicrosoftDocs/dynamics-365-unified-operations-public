@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -215,3 +214,6 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 [Configure a development environment (.env) file](configure-env-file.md)
 
 [Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

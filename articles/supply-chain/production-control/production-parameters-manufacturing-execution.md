@@ -18,7 +18,6 @@ ms.search.form:  JmgProdParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -157,3 +156,6 @@ You can use the following settings if materials should always be manually deduct
 | Report as finished |   Automatic BOM consumption    | <strong>Never</strong>  |
 | Report as finished | Update finished report on-line | <strong>Status</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

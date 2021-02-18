@@ -17,7 +17,6 @@ ms.search.form: TMSCarrierGroup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -41,3 +40,6 @@ When multiple shipping carriers and carrier services exist for the same route se
 1. In the **Name** field, enter a descriptive name for the group.
 1. On the **Details** FastTab, add a row, and select a shipping carrier and a carrier service for it. Repeat this step until you've added as many carriers as you require for the group.
 1. Close the page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

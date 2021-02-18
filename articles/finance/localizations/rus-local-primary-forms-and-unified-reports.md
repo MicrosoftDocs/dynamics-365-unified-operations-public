@@ -16,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -139,3 +138,6 @@ If the cash account allows for accounting in different currencies, the **More cu
 4. Select **OK** to generate the cash counting act.
 
     ![Cash counting act report](media/cash-primary-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

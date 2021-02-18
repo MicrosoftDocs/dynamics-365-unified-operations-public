@@ -17,7 +17,6 @@ ms.search.form: RetailStoreTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -51,3 +50,6 @@ This procedure walks through configurations for the store that affect how Commer
 17. Select "Yes" in **Split by Statement method** to get statements created for each statement method defined. This action can be useful if the performance of the posting needs to be improved for stores with high transaction volumes since it will create many smaller statements that can be processed in parallel.  
 18. In the **General** FastTab, in the **Default customer** field, you can select the customer account to use for sales to walk-in customers.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

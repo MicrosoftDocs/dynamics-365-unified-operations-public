@@ -18,7 +18,6 @@ ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleState
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -113,3 +112,6 @@ Use the following criteria to select and update the released products and produc
 - [Assign a product lifecycle state to a released product](tasks/product-lifecycle-state-released-product.md)
 - [Find obsolete product variants and assign a product lifecycle state](tasks/obsolete-product-variants.md)
 - [Create a product lifecycle state to exclude products from Master planning](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,7 +16,6 @@ ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoRes
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -192,3 +191,6 @@ You can now use the **Product entity common data service identifier entity**, **
 ## Related topic
 
 [Search for products and product variants during order entry](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

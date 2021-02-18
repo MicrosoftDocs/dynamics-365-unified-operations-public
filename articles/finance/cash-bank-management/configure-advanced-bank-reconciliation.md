@@ -18,7 +18,6 @@ ms.search.form:  BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 98303
 ms.assetid: ae071f04-f038-4b17-812d-0a241ed15521
@@ -66,3 +65,6 @@ The option to **Reconcile after import** will automatically validate the bank st
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

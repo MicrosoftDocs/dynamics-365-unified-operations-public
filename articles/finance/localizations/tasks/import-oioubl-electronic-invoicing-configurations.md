@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolution
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
@@ -59,3 +58,6 @@ This is the first of six tasks that demonstrate the process of generating e-invo
 17. Click Import.
 18. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

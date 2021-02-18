@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -56,3 +55,6 @@ Follow these steps to create a tax settlement period.
 3. Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax settlement periods**, and create a tax period for GST.
 
     ![Tax settlement period](media/tax-settlement-period.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

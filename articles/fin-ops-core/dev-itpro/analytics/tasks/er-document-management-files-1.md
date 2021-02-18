@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Use Document Management files in format outputs (Part 1 - Prepare data model)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. 
+description: This topic describes how to configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. (Part 1)
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -77,3 +77,6 @@ You will create our own configuration of the Customer invoice model deriving it 
 3. In the Name field, type 'Customer invoice model (custom)'.
 4. Click Create configuration.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

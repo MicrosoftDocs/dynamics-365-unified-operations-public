@@ -17,7 +17,6 @@ ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -42,3 +41,6 @@ Number sequences are used to generate readable, unique identifiers for master da
 4. Select **Next**.
 5. Select **Finish**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

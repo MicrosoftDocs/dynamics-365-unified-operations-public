@@ -17,7 +17,6 @@ ms.search.form: LedgerOpeningSheet_ES
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261334
 ms.search.region: Spain
@@ -58,3 +57,6 @@ After you enter the general information about the opening sheet, you'll need to 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -104,3 +103,6 @@ This procedure walks through creating a new commerce channel and defining channe
 65. Click Save.
 66. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

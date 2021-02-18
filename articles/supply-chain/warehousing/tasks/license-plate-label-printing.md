@@ -17,7 +17,6 @@ ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPag
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -103,3 +102,6 @@ This topic shows how to enable the automatic printing of a Serial shipping conta
 7. Select **Save**.
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

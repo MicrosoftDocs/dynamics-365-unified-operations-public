@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -301,3 +300,6 @@ Before the items in the cluster can be put away, the cluster must be closed.
 ## Notes and tips
 
 For cases where the cluster ID becomes the parent license plate for a nested pallet, the put position is automatically given when the cluster ID is scanned. No further license plate must be scanned, even if license plate generation is set to manual.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -118,3 +118,6 @@ Complete this procedure only if you didn't complete steps 6 through 8 of the pre
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

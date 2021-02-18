@@ -4,7 +4,7 @@
 title: Attract users can't apply for jobs from career portal
 description: This topic explains how to troubleshoot an issue where Attract users can't apply for jobs from the career portal.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -76,3 +75,5 @@ Assign the Talent user role to the Talent Relationship Team.
 
    1. Sign in to the career portal from a new browser window.
    2. Apply for the job from the career portal. 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

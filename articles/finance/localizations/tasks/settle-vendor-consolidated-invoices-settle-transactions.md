@@ -17,7 +17,6 @@ ms.search.form: VendConsInvoice_JP, VendTable, VendOpenTrans
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -70,3 +69,6 @@ This procedure was created using the demo data company JPMF.
 1. Go to Accounts payable > Periodic tasks > Consolidated invoice.
     * Confirm that the status of the consolidated invoice is now "Settled".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

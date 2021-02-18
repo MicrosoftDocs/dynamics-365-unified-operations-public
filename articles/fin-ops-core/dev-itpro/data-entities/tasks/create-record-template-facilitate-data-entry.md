@@ -46,3 +46,6 @@ This topic demonstrates how to create a record template so that field values tha
 13. Select **OK**.
 14. Select **Close**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

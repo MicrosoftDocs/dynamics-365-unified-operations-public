@@ -18,7 +18,6 @@ ms.search.form: SMAStageTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -55,3 +54,6 @@ Reason codes are optional. You can decide whether to require a reason code when 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

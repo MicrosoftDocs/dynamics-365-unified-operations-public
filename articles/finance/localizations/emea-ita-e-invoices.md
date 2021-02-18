@@ -4,8 +4,8 @@
 title: Customer electronic invoices
 description: This topic provides information about the management of customer electronic invoices for Italy.
 author: v-oloski
-manager: 
-ms.date: 10/15/2020
+manager: tfehr
+ms.date: 02/16/2021
 ms.topic: article
 ms.: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: 
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Italy
@@ -40,7 +39,7 @@ Version 1.2 of FatturaPA electronic invoices can be used for all types of busine
 This topic contains the following information:
 
 - [Setup information](#setup)
-- [How to fill in data for output of a tender procedure identification code (Codice Identificativo di Gara \[CIG\]) and unique project code (Codice Unico di Progetto \[CUP\])](#releteddoc)
+- [How to fill in data for output of a tender procedure identification code (Codice Identificativo di Gara \[CIG\]) and unique project code (Codice Unico di Progetto \[CUP\])](#relateddoc)
 - [Overview of the Electronic invoice register](#einvoiceregister)
 - [Additional functionality that affects the XML file](#additionalfunctionality)
 - [Functionality that is available in monthly update 10.0.12 and later versions](#fatturapa)
@@ -50,6 +49,7 @@ This topic contains the following information:
 Before you can begin to work with the electronic invoice functionality, the following data must be set up:
 
 - [Accounts receivable parameters](#arparameters)
+- [Electronic invoice currency](#electronicinvoicecurrency)
 - [Electronic invoice parameters](#einvoicesparameters)
 - [Electronic document properties](#edproperties)
 - [Customers](#customers)
@@ -65,6 +65,20 @@ Select the configurations that are used to create electronic invoice XML files f
 
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+### <a id="electronicinvoicecurrency"></a>Electronic invoice currency
+
+To report invoices in the EUR currency in an XML file, set the **Print amount in currency representing the euro** option to **Yes** on the **General** FastTab of the **Form setup** page in Accounts receivable (**Accounts receivable** \> **Setup** \> **Form setup**) and/or in Project management and accounting (**Project management and accounting** \> **Setup** \> **Form setup**).
+
+> [!NOTE] 
+> If the **Print amount in currency representing the euro** option is set to **No**, a related XML file will be generated in the original invoice currency. 
+
+To use this functionality, import the following Electronic reporting (ER) configurations, or later version of them, from Shared asset library in Microsoft Dynamics Lifecycle Services (LCS):
+
+- Invoice model.version.231
+- Invoice model mapping.version.231.164
+- Sales invoice (IT).version.231.91
+- Project invoice (IT).version.231.90
 
 ### <a id="einvoicesparameters"></a>Electronic invoice parameters
 
@@ -193,7 +207,7 @@ If XML files must be sent as output to a specific place when invoices are posted
 > [!NOTE]
 > The **Print invoice** option must be set to **Yes**. If the destination is set up, the status of the electronic invoice record for the invoice is automatically set to **Sent**.
 
-## <a id="releteddoc"></a>Fill in data for related documents
+## <a id="relateddoc"></a>Fill in data for related documents
 
 Companies can report additional information about some base documents that are related to invoices. Here are some examples:
 
@@ -256,7 +270,7 @@ For information about how to set up and work with this functionality, see [Inten
 
 If an intent letter is set up for a customer, the **Causale** element (**DatiGeneraliDocumento** block) that has the number of the intent letter is sent as output in the XML file.
 
-## <a id="fatturapa"></a>Functionality that is available in Finance version 10.0.12
+## <a id="fatturapa"></a>Functionality that is available in monthly update 10.0.12 and later versions
 
 ### Reverse charge and reverse charge group configuration
 
@@ -281,3 +295,6 @@ If a required document type isn't covered by the values in the preceding list, y
 - Invoice document type registration
 
 For more information, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

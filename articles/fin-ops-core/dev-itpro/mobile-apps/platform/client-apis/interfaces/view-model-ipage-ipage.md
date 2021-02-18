@@ -396,3 +396,6 @@ onSyncStatusChange: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 Event that fires when the page sync status changes.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

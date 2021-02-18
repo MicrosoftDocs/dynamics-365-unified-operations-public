@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, RetailCategoryAndProductWorkspace, RetailCateg
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -57,3 +56,6 @@ This procedure demonstrates how to create and publish a new product assortment a
 1. Click Publish.
 2. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

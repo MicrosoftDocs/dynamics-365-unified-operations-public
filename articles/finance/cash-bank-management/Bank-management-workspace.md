@@ -17,7 +17,6 @@ ms.search.form:  BankTreasurerWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -67,3 +66,6 @@ The **Analytics** page provides important metrics about the bank accounts in the
 -   Balance by currency
 
 You can view bank analytics across all companies from the **Cash overview – all companies** workspace. For more information, see [Cash overview Power BI content](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

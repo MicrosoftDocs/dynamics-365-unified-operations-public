@@ -3,7 +3,7 @@
 
 title: Product receipt against purchase orders
 description: This topic describes the various options for registering products as received.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 11/15/2018
 ms.topic: article
@@ -19,14 +19,13 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -76,3 +75,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

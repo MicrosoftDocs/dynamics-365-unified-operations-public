@@ -4,7 +4,7 @@
 title: Post jobs to LinkedIn from Attract
 description: This topic explains how to use Dynamics 365 Talent - Attract to post jobs to LinkedIn.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -85,3 +84,6 @@ If you're having trouble posting jobs to LinkedIn, see [Troubleshooting integrat
 [Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 
 [Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

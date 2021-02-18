@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -42,3 +41,6 @@ To set up a batch job, or to process payment invoices, depreciation, or interest
 > Subsequent transactions, such as liability amortization schedules, payments, depreciation, and expenses, will be posted only after the initial recognition for corresponding leases is posted.
 >
 > The journal entries are created, but they won't be posted until you select the **Run** command.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

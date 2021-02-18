@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-#ms.search.scope: Operations, Human Resources 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: USA
@@ -48,3 +47,6 @@ This procedure shows how to view and set up document types that are used for I-9
 9. Select the agency that issued the document type. Example: Province/territory
 10. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

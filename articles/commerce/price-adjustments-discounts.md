@@ -18,7 +18,6 @@ ms.search.form: RetailParameters, RetailPeriodicDiscount
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
@@ -56,3 +55,6 @@ There are many types of discounts:
 - **Shipping discount** – A discount that is applied when the transaction total is more than a specified amount and a specific mode of delivery (for example, two day shipping or overnight shipping) is used on the order.
 
 Both price adjustments and discounts can be associated with price groups. Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

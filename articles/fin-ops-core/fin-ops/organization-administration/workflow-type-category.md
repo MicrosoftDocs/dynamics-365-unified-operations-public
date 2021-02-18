@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
@@ -69,3 +68,6 @@ After you create a workflow category, a workflow type can be bound to it. Typica
 [Create a workflow type](workflow-type-create.md)
 
 [Create a new workflow type](workflow-type-create-new.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

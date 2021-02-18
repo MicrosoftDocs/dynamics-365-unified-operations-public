@@ -18,7 +18,6 @@ ms.search.form: BankTreasurerWorkspace, HcmBenefitWorkspace, BudgetPlanningWorks
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17491
 ms.assetid: 541e6012-4680-4684-8494-e9b5ca4684ee
@@ -69,3 +68,6 @@ If individual sections of the workspace have filters, you can filter each sectio
 [![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 As with a workspace-wide filter, select or enter a value in the field to filter the contents of the section.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Query cookbook 
-description: This topic provides details on each query under the SQL Insights tab on the Environment Monitoring page in LCS and how they should be used when troubleshooting performance issues. 
+description: This topic describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues. 
 author: meeramahabala
 manager: AnnBe
 ms.date: 10/02/2018
@@ -281,3 +281,6 @@ Updates statistics on the specified table. Occasionally, statistics can be found
 
 ### Parameters
 - The table name parameter is the physical name of the table to update statistics for.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

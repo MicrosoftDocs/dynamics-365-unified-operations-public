@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -59,3 +58,6 @@ When the orders are selected, a list of all the returnable products across all t
 
 If the order is fully returned, the amount of taxes returned to the customer will be equal to the amount of tax originally charged.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

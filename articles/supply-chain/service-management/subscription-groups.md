@@ -18,7 +18,6 @@ ms.search.form: SMASubscriptionGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -59,3 +58,6 @@ You can also complete the following tasks for all subscriptions that are attache
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

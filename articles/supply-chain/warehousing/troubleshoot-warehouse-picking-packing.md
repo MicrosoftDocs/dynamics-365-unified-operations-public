@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -114,3 +113,6 @@ When you use the *System directed cluster picking* process, if you configure a c
 ### Issue resolution
 
 To fix this issue, edit the cluster profile, and set the **Activate positions** option to *No*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

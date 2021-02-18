@@ -18,7 +18,6 @@ ms.search.form: SMASalespriceSubscription
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -384,3 +383,6 @@ In the first transaction for subscription 00020\_135, the sales price of EUR 550
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

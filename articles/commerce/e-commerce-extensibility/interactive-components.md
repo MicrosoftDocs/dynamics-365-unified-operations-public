@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -365,11 +364,15 @@ Generic editable field components wrap any custom components and enable interact
 
 [App settings](app-settings.md)
 
+[Platform settings file](platform-settings.md)
+
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
 
 [Mock the signed-in state during local development](mock-sign-in.md)
+
+[Configure module properties to be shown based on context](configure-properties-context.md)
 
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
@@ -378,3 +381,6 @@ Generic editable field components wrap any custom components and enable interact
 [Work with modules](../work-with-modules.md)
 
 [Work with fragments](../work-with-fragments.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

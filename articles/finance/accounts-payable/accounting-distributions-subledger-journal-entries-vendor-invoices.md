@@ -18,7 +18,6 @@ ms.search.form: VendEditInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
@@ -255,3 +254,6 @@ If the subledger journal entry is incorrect when you preview it before you journ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

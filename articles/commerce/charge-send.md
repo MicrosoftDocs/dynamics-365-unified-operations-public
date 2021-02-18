@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -47,3 +46,6 @@ The Charge send feature uses the following POS operations: Ship all products and
 The ability to select "ship to" addresses remains unchanged.
 
 The shipping methods that can be used to fulfill the order line are based on the configuration of valid modes of delivery for products and addresses. Because the rules about valid of modes of delivery are maintained only in the Headquarters (HQ), the POS client makes a real-time call to fetch the valid modes of delivery for a ship line.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

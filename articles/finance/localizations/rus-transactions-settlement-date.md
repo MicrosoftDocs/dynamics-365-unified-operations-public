@@ -17,7 +17,6 @@ ms.search.form: VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -101,3 +100,6 @@ Use this procedure to set up a dimension set for dimension control for settlemen
 
 1. Select **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimension sets**.
 2. Press Ctrl+N to create a dimension set, and enter the required details.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

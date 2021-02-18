@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
@@ -77,3 +76,6 @@ Use this functionality to register in Fiscal books module the disposal of a fixe
 14.	On the **CIAP Report**, in the **Fiscal establishment** field, select a fiscal establishment.
 15.	Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

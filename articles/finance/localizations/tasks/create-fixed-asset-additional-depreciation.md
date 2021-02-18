@@ -17,7 +17,6 @@ ms.search.form: AssetTable, AssetBook
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -57,3 +56,6 @@ This was created using the demo data company JPMF.
     * The additional depreciation will start from the next day of this date.  
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

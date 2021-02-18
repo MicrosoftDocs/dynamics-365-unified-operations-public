@@ -18,7 +18,6 @@ ms.search.form: RegisterVAT_W, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270434
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
@@ -39,3 +38,6 @@ For legal entities with a primary address in Estonia, Lithuania, Czech Republic,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

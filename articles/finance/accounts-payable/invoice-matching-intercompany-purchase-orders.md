@@ -18,7 +18,6 @@ ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
@@ -75,3 +74,6 @@ For example, you follow these steps.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

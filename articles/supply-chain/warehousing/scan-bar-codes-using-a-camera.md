@@ -17,7 +17,6 @@ ms.search.form: WHSMobileAppField
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -59,3 +58,6 @@ On the camera page, when you click the Camera button, it will appear dimmed whil
 
 When you aim the camera at a bar code, keep the bar code aligned within the brackets for best result. When a bar code is scanned successfully, the result will be processed, and you will be taken to the next step. If the next step contains another input field with the preferred input mode set to Scanning, the camera page will start again. If the next step is not a scanning field, then the camera page will not be initiated.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang:
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 # ms.tgt_pltfrm:
 ms.custom:
 ms.assetid:
@@ -30,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 # What's new or changed in Dynamics 365 Human Resources December 2, 2020
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
 
@@ -65,7 +66,7 @@ The following bug fixes are included in this release.
 | 514087 | BenefitEligibilityProcessResult should include datetime that was used in processing. | BenefitEligibity processing result now includes the datetimestamp for last processing, which was missing earlier. |
 | 526903 | Benefit enrollment fails for plans with dependents when **Auto-select designees** is turned on in **Human resources shared parameters**. | Fixed the issue where benefit enrollment was failing for dependants when the **Auto-select designees** option was turned on for default designees. |
 | 521922 | **Show absence without detail** parameter shows details of time-off requests in team absence calendar. | The leave type, leave type color, and day details were being shown in the team absence calendar when **Show absence without detail** was set to **Yes** in **Leave and absence parameters**. This has been addressed, and now the leave type doesn't display and the default leave type color (dark blue) is used for all leave types on the team absence calendar. |
-| 527316 | Title changes for Job, Position, and Worker notifications don't sync. | A Title relation was previously added to the Job, Position, and Worker entities. The sync for this relation works for the sync from Human Resources to Common Data Service, but didn't work for notifications from Common Data Service. This has been addressed. |
+| 527316 | Title changes for Job, Position, and Worker notifications don't sync. | A Title relation was previously added to the Job, Position, and Worker entities. The sync for this relation works for the sync from Human Resources to Dataverse, but didn't work for notifications from Dataverse. This has been addressed. |
 | 512275 | Remove the color options from **Leave and absence parameters**. | Now that colors are defined on the leave type, the colors options are no longer needed in **Leave and absence parameters**, so they were removed. |
 | 437112 | Misleading error message text during employee position assignment. | Updated the error message when hiring a worker and attempting to assign the worker to a position that isn't active. Updated message **The specified position is not active as of the employment start date. Please check the duration of this position.** |
 | 527816 | Performance issues with the **Time off** page. | Performance has been improved on the **Time off** page. |
@@ -96,3 +97,6 @@ For a complete list of planned features and their scheduled releases, see [Overv
 [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

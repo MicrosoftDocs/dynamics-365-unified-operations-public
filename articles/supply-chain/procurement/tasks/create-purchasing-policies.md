@@ -3,7 +3,7 @@
  
 title: Create purchasing policies
 description: This topic shows you how to create purchasing policies to align with your business processes for purchasing. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 07/31/2019
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -60,3 +59,6 @@ This topic shows you how to create purchasing policies to align with your busine
 4. Select **Close**.
 - Now you can set up other policy rules for the purchasing policy. Note that a Policy rule type cannot have overlapping rules that are active at the same time within a single procurement policy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

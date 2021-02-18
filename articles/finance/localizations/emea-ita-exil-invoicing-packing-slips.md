@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Italy
@@ -55,3 +54,6 @@ After you've turned on and set up the feature, the printed invoice report will c
 
 > [!NOTE]
 > The new layout is applicable only to invoices that are based on sales orders. It isn't applicable to free-text invoices, because they don't use packing slips.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

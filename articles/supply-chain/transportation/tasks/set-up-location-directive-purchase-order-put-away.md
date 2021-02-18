@@ -17,7 +17,6 @@ ms.search.form: WHSInventFixedLocation
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -88,3 +87,6 @@ This topic explains how to set up a simple location directive. The example that'
 4. In the **Criteria** field, type a value.
 5. Select **OK**. You can continue to add directive lines and directive actions until you have covered all the possible scenarios in your warehouse.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

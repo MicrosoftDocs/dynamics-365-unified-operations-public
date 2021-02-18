@@ -17,7 +17,6 @@ ms.search.form: AssetTable, AssetChangeGroup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -49,3 +48,6 @@ This guide uses the USMF demo company.
 6. Click OK.
 7. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

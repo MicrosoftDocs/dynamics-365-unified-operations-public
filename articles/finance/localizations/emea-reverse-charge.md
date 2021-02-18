@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
@@ -143,3 +142,6 @@ The following pages and menu items related to the feature setup will be availabl
  - **Foreign trade parameters** (**Tax** > **Setup** > **Sales tax** > **Foreign trade** > **Foreign trade parameters**). See [Set up Country/region properties](#Set-up-Country/region-properties).
 
 The **Reverse charge** check box will be available on the **Sales tax group** and **Posted sales tax** pages. For more information, see the sections, [Set up sales tax groups and item sales tax groups](#sales-tax-item-sales-tax-groups), [Reverse charge on a sales invoice](#reverse-charge-sale), and [Reverse charge on a purchase invoice](#reverse-charge-purchase).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

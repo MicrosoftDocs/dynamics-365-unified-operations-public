@@ -17,7 +17,6 @@ ms.search.form: EInvoiceCFDIJournal_AR
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
@@ -57,3 +56,6 @@ You can cancel a CFDI electronic invoice that was previously validated and certi
 6. Click OK to confirm the cancelation of the electronic invoice.
     * The status of electronic invoice is Manual cancel.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

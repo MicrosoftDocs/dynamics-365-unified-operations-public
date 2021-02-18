@@ -17,7 +17,6 @@ ms.search.form: WHSParameters, WHSWorkPool
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -77,3 +76,6 @@ You can find opinions, news, and other information about Warehouse management an
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

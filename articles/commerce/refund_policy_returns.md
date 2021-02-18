@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -108,3 +107,6 @@ Follow the steps in either of the following examples to view the allowed return 
 
 
 ![List of payment methods](media/Return-policy-page5.PNG "Refund types allowed")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -74,3 +73,6 @@ The Customer portal is provided as a Power Apps portals template. It depends on 
 ![Customer portal dependencies](media/customer-portal-elements.png "Customer portal dependencies")
 
 The Customer portal acts as a starting point for organizations that want to use Power Apps portals to build an externally facing website that uses data from their Supply Chain Management installation. It helps organizations connect dual-write, Supply Chain Management, and Power Apps portals.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

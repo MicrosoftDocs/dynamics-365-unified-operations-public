@@ -18,7 +18,6 @@ ms.search.form: RetailTillLayout
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
@@ -120,6 +119,9 @@ In Compact POS layouts, the button grids are automatically laid out from top to 
 
 ![Compact layout button grids](../commerce/media/Compact-View-Button-Grids.png)
 
+> [!NOTE]
+> The button sizes in the designer will scale to fit the size of the window, therefore they may not accurately reflect the actual buttons rendered in POS. To best simulate the button grid layout, adjust the designer windows to the same size as the POS.
+
 ### Images
 
 For each layout size in a screen layout, you can specify images to include in the POS UI. For Full POS layouts, a single image can be specified for the welcome screen. This image appears as the first UI element on the left. On the **Transaction** screen, images can be used as tab images or as a logo. Compact POS layouts don't use these images.
@@ -208,3 +210,6 @@ The button grid designer lets you configure button grids that can be used on the
 ## Additional resources
 
 [Install the Retail point of sale (POS) layout designer](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

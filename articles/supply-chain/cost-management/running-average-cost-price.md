@@ -19,7 +19,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 79003
@@ -82,3 +81,6 @@ Additionally, consider that the maximum offset in your physical inventory value 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

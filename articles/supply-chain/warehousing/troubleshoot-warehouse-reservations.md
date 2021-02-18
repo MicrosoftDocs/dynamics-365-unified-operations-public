@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -82,3 +81,6 @@ However, if you use an item that has a "batch below" reservation hierarchy (with
 This behavior is by design. If you put a dimension above the **Location** dimension in the reservation hierarchy, it must be specified before the release to the warehouse. Microsoft has evaluated this issue and has determined that it's a feature limitation during releases to the warehouse from the load planning workbench. Partial quantities can't be released if one or more dimensions above **Location** aren't specified.
 
 For more information, see [Flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

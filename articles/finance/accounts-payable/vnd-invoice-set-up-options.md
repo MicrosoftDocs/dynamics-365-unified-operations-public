@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -68,3 +67,6 @@ The following parameters are available:
 
 - **Number of times to attempt automatic matching** – Select the number of times that the system should try to match product receipts to an invoice line before it concludes that the process failed. When the specified number of attempts is reached, the invoice is removed from automation processing.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

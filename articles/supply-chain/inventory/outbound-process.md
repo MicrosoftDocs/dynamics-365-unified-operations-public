@@ -18,7 +18,6 @@ ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistrati
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -89,3 +88,6 @@ The inventory that hasn't already been reserved is reserved during picking list 
 As soon as all the picking lines have been picked on the **Picking list registration** page, the associated shipment is completed. The process for sales order packing slips can then be initialized based on the picked inventory.
 
 [![Update outbound shipments](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

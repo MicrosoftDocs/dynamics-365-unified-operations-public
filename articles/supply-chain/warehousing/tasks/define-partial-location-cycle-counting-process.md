@@ -16,7 +16,6 @@ ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanLis
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -75,3 +74,6 @@ When you use cycle count plans to create counting work, you can guide the actual
 14. Click OK.
 15. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

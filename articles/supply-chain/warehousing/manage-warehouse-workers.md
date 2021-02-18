@@ -18,7 +18,6 @@ ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWork
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
@@ -62,3 +61,6 @@ Analysis of the time that is used to process work items can help drive improveme
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: SMAServicelevelagreement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -86,3 +85,6 @@ When you create a new service order for a service agreement that an SLA is assig
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

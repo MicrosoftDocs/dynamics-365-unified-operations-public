@@ -65,3 +65,6 @@ public void EdtMethod()
     Amount currency;
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

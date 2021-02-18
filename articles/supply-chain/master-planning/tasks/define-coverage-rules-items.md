@@ -17,7 +17,6 @@ ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoRes
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -105,3 +104,6 @@ The demo data company used to create this procedure is USMF. This procedure show
 11. In the **Purchase time** field, enter '5'.
 12. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Access to private addresses by security role
 description: This article explains how to resolve the issue where a customer can't access private addresses.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Access to private addresses by security role
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Issue**
 
 After a customer duplicates a security role and signs in as that new role, the customer can't see addresses that were marked as private.
@@ -45,3 +47,6 @@ To resolve the issue, the customer must follow these steps for the duplicated se
 3. Select **Save**.
 
 ![Global address book parameters page](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

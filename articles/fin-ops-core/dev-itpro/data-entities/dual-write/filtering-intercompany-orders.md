@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -71,3 +70,6 @@ Each standard Dataverse table is extended through references to the **Intercompa
 8. After **Quotations** is extended, apply a filter that has `CUSTGROUP != "<company>"` as the query string.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Edit query dialog box for CDS Sales Quotation Header":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -206,3 +206,6 @@ The following methods have been refactored to support extensibility:
 - **Retail channel:** Line item locations can be viewed in OrderFulfillmentView.
 - **Retail channel:** OrderFulfillmentView adds ICustomListColumn to allow for more information.
 - Retail statement posting method adds another aggregation view by using the new RetailTransactionAggregationFieldList table that adds additional fields.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

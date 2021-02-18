@@ -18,7 +18,6 @@ ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConfor
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 11574
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
@@ -106,3 +105,6 @@ Additional resources
 [Set up quality orders](tasks/set-up-quality-orders.md)
 
 [Inspect the quality of goods](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

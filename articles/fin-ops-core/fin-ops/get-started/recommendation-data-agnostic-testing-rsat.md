@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21761
 ms.search.region: Global
@@ -56,3 +55,6 @@ While the functional validation of an ERP application can’t be fully data agno
     - Only validate after you filter on a particular transaction instead of generic validation. For example, for the number of records, filter for the transaction number or the transaction date so that the validation excludes all other transactions. 
     - If you are checking a customer balance or budget check, save the value first and then add your transaction value to validate the expected result instead of validating a fixed expected value. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -48,3 +47,6 @@ In version 10.0.8, improvements were made to enhance the performance of the Asyn
  
 This functionality improves the transfer of data from the subledger to the general ledger. It allows the process to be more efficient, and it groups together sets of smaller transactions to transfer. This allows for a more efficient use of the batch server. 
 This functionality requires that the batch server be set up, online, and functioning in order for the Asynchronous transfer option to work. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

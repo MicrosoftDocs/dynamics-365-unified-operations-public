@@ -18,7 +18,6 @@ ms.search.form: SMATimeAgreement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -59,3 +58,6 @@ for which it was originally scheduled.
 
 [Create time windows](create-time-windows.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

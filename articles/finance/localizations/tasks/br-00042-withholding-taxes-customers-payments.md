@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -86,3 +85,6 @@ You use the Journal voucher page to enter and post payments that you receive fro
 52. Close the page.
 53. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

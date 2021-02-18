@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -1023,3 +1022,6 @@ For the next major release, the following features are currently planned and mor
 - Support a split load scenario for the outbound flow.
 - Allow to release for a partial quantity of the finished good and release per operation number.
 - Allow for partial quantity of the opportunistic X-dock to transfer when reporting as finished.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

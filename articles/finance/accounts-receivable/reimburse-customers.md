@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14191
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
@@ -54,3 +53,6 @@ When you create reimbursement transactions, a vendor invoice is created for the 
 
 5. To view the reimbursement transactions that were created, use the **Reimbursement** report (**Accounts Receivable \> Inquiries and reports \> Reimbursement report**).
 6. In Accounts payable, create a payment for the vendor invoices that were created by the reimbursement process. For information about how to pay vendors, see [Vendor payment overview](../accounts-payable/Vendor-payments-workspace.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: ReturnTableListPage, ReturnInventTransIdLookup, ReturnItemNumLoo
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -117,3 +116,6 @@ When you use the **Return lot ID** field on a return order line to specify the r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

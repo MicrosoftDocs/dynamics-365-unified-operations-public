@@ -227,3 +227,6 @@ Row <br>
 | [isEntitySyncPending](../interfaces/view-model-control-list-ilist-irow.md#isentitysyncpending) |isEntitySyncPending(): boolean|  |
 | [select](../interfaces/view-model-control-list-ilist-irow.md#select) |select(): any|  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

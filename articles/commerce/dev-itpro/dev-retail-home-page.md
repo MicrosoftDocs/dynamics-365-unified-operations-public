@@ -81,8 +81,8 @@ This page lists the resources that are available for IT pros and developers who 
 - [Add custom columns to a point of sale (POS) transaction grid](pos-custom-transaction-column.md)
 - [Call point of sale (POS) APIs or operations from POS extensions](pos-api-extension.md)
 - [POS (MPOS) triggers and printing](pos-trigger-printing.md)
-- [Add custom controls to POS views that aren't screen layout designer-based](pos-control-non-screen.md)
-- [Development in cloud-hosted development environments without admin access](cloud-dev-box.md)
+- [Add custom controls to non-screen designer-based POS views](pos-control-non-screen.md)
+- [Development in cloud-hosted environments without admin access](cloud-dev-box.md)
 - [Test recorder and Regression suite automation tool for Cloud POS](pos-rsat.md)
 - [POS Cart view events and handlers](cart-view-handlers.md)
 - [Add custom buttons to the POS header bar](pos-header-bar.md)
@@ -117,7 +117,7 @@ This page lists the resources that are available for IT pros and developers who 
 
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
 - [Upcoming changes in the Retail SDK](UpcomingSDKChanges.md)
-- [Important development and ALM changes from version 10.0.10 to 10.0.13](dev-changes-10-13.md)
+- [Development and ALM changes from version 10.0.10 to 10.0.13](dev-changes-10-13.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
 - [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](retail-sdk/migrate-sdk.md)
@@ -139,7 +139,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Show custom notifications in POS](extend-pos-notification.md)
 - [Set up Commerce SDK build pipeline](retail-sdk/SDK-build-pipeline.md)
 - [Retail SDK FAQ](retail-sdk/sdk-faq.md)
-- [Create new Retail Server extension API (Retail SDK version 10.0.11 and later)](retail-server-icontroller-extension.md)
+- [Create Retail Server extension API (Retail SDK version 10.0.11 and later)](retail-server-icontroller-extension.md)
 - [Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)](retail-server-extension.md)
 - [Consume Retail Server APIs in external applications](consume-retail-server-api.md)
 
@@ -154,4 +154,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
-- [Create payment packaging for Application Explorer in Service Fabric deployments](payment-connector-package.md)
+- [Create Commerce payment packaging for Finance and Operations deployment](payment-connector-package.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

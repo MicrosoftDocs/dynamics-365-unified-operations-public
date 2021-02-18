@@ -93,3 +93,6 @@ Terms of payment            | msdyn_paymentterms              | This template sy
 [!include [mapping payment schedules](includes/PaymentSchedules-msdyn-paymentschedules.md)]
 
 [!include [mapping terms of payment](includes/TermsofPayment-msdyn-paymentterms.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

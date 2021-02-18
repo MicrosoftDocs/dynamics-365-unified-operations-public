@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -69,3 +68,6 @@ You can enable the feature in **Feature management** workspace. The feature name
 -	When you change the selected vendor on a purchase requisition, vendor tax information is not updated on the **Tax information** page.
 -	Incorrect Free on board (FOB) and Cost, insurance, and freight (CIF) calculation on exported sales orders. 
 -	Assessable value is not updated correctly on the **Vendor invoice** page when posted changes are incorporated in the **Excel import** file and published to Dynamics 365 Finance.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

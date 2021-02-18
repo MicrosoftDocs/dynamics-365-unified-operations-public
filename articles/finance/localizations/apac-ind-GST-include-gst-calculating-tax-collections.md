@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -67,3 +66,6 @@ ms.dyn365.ops.version: 10.0.4
 5. On the **Overview** tab, select **Voucher**.
 
 ![Example](media/Annotation-2019-05-21-134958.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 15971
 ms.assetid: 6b4b2ac2-0344-41aa-8818-62c30017d5ac
@@ -52,3 +51,6 @@ You can create bar codes manually or automatically. To create bar codes, complet
 ## Additional resources
 
 [Set up bar code masks](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

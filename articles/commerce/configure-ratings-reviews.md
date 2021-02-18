@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -100,3 +99,6 @@ For information on configuring ratings and reviews modules on product details pa
 [Configure ratings and reviews modules on product details pages](ratings-reviews-modules.md)
 
 [Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

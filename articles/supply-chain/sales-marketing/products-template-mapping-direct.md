@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -127,3 +126,6 @@ The following illustration shows an example of a template mapping in Data integr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

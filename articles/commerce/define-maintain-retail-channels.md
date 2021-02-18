@@ -18,7 +18,6 @@ ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
@@ -93,3 +92,6 @@ Commerce uses organization hierarchies to structure channels. Organization hiera
 > [!NOTE]
 > To use Commerce sales functionality, the configuration key for **Multiple ship-to** must be enabled. This configuration key can be found in the **Trade configuration** keys under **System Administration**\> **Setup** \> **License Configuration**. This is required due to various validations based on the delivery address configured at the sales order line level.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

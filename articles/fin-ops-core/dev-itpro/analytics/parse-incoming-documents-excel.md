@@ -52,3 +52,6 @@ If you have not yet played the following task guide, [ER Create required configu
 | Content description    | File                                                            |
 |------------------------|-----------------------------------------------------------------|
 | ER model configuration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

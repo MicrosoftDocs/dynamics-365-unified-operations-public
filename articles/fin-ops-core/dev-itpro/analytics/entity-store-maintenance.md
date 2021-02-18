@@ -70,3 +70,6 @@ After refreshing the entity store (as described above), redeploy the reports usi
 
 > [!NOTE]
 > Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete and redeploy the report after the maintenance activity is completed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

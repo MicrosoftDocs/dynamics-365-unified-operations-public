@@ -17,7 +17,6 @@ ms.search.form: WrkCtrTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -83,3 +82,6 @@ An operations resource performs the activities of a project or a production proc
 4. In the Input location field, enter or select a value.
     * Specify the warehouse location from where the operations resource is consuming materials.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

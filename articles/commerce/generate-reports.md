@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -142,3 +141,6 @@ To generate an **Organization sales** report, follow these steps.
 ## Additional resources
 
 - [Commerce home page](../retail/index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

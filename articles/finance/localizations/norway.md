@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Norway
@@ -42,3 +41,6 @@ This topic provides links to documentation resources for Norway.
 - [Cash register functionality](../../retail/localizations/emea-nor-cash-registers.md)
 - [Deployment guidelines for cash registers](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 - [Customer electronic invoices export](emea-nor-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

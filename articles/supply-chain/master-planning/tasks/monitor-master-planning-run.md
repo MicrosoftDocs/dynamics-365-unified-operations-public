@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQ
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -131,3 +130,6 @@ The color is shown only on the lowest level in the Gantt chart. Select **Expand 
 1. In the grid, select the row where the **Field** field is set to **Item number**.
 1. In the **Criteria** field, enter a value.
 1. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

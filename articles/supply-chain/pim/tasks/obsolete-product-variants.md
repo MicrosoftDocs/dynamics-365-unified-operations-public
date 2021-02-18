@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -77,3 +76,6 @@ This procedure shows how to find obsolete released products or product variants 
 
 8. In the list, find and select the desired record.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

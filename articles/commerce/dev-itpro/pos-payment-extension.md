@@ -350,3 +350,6 @@ The full code sample, with how to pass extension properties, is available in Ret
 **PaymentTerminalVoidPaymentRequestHandler**, the void request, is a payment request from POS that initiates the void card payment request. You override this request if you want to change the void workflow. To override the request, you need to extend the **PaymentTerminalVoidPaymentRequestHandler** in POS.
 
 Extending the void and refund request code pattern is same as the authorize and capture request. The full code sample for the void and refund payment request, with how to pass extension properties, is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\PaymentSample folder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
