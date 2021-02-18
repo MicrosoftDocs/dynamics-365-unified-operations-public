@@ -47,7 +47,7 @@ The online SDK provides the **commerceAPIRequest** helper utility function, whic
 
 ### GET request format
 
-```jsx noeditor
+```js
 import * as MsDyn365 from '@msdyn365-commerce/core';
 
 public async componentDidMount(): Promise<void> {
@@ -61,7 +61,7 @@ public async componentDidMount(): Promise<void> {
 
 ### POST request format
 
-```jsx noeditor
+```js
 import * as MsDyn365 from '@msdyn365-commerce/core';
 
 public async componentDidMount(): Promise<void> {
@@ -77,7 +77,7 @@ public async componentDidMount(): Promise<void> {
 ```
 For POST requests, the post body can be accessed from the context object **ctx.requestContext.postBody** inside the data action, as in the following example.
 
- ```jsx noeditor
+ ```js
  async function action(
         input: Msdyn365.IActionInput[],
         ctx: Msdyn365.IActionContext
