@@ -42,28 +42,29 @@ QR codes and barcodes can easily be included in transactional emails to facilita
 
 To insert a QR code or barcode into a transactional email that is sent as part of an e-commerce purchase, follow these steps.
 
-1. Open the source HTML for the transactional email template and add an HTML **\<img\>** tag that points to your QR code or barcode service, following the code example below. In the code example, **YOUR_QRCODE_SERVICE** is the domain of your QR code or barcode service, **data** represents the parameter the service uses to receive the content to render as a QR code or barcode, and **param1** and **param2** represent additional optional parameters. The value **%salesid%** must be assigned to the parameter your QR code or barcode generation service uses to receive the content to render as a QR code or barcode (**data** in this example).    
+1. Open the source HTML for the transactional email template and add an HTML **\<img\>** tag that points to your QR code or barcode service, following the code example below. 
     ```HTML
     <img src="https://YOUR_QRCODE_SERVICE?data=%salesid%&param1=value1&param2=value2" alt="%salesid%" />
     ```
-    
+    In the code example, **YOUR_QRCODE_SERVICE** represents the domain of your QR code or barcode service, **data** represents the parameter the service uses to receive the content to render as a QR code or barcode, and **param1** and **param2** represent additional optional parameters. The value **%salesid%** must be assigned to the parameter your QR code or barcode generation service uses to receive the content to render as a QR code or barcode (**data** in this example).    
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates** and upload the updated HTML to the appropriate transactional email template.
 
 > [!NOTE:]
-> Parameters differ between different QR code and barcode service providers, so check with your service provider to confirm the parameters to assign values to.
+> Parameters may differ between different QR code and barcode service providers, so check with your service provider to confirm the parameters to assign values to.
 
 ## Add a QR code or barcode to an email receipt
 
 To insert a QR code or barcode into an emailed receipt that can be emailed from a purchase at a point of sale, follow these steps.
 
-1. Open the source HTML for the transactional email template and add an HTML **\<img\>** tag that points to your QR code or barcode service, following the code example below. In the code example, **YOUR_QRCODE_SERVICE** is the domain of your QR code or barcode service, **data** represents the parameter the service uses to receive the content to render as a QR code or barcode, and **param1** and **param2** represent additional optional parameters. The value **%receiptid%** must be assigned to the parameter your QR code or barcode generation service uses to receive the content to render as a QR code or barcode (**data** in this example). 
+1. Open the source HTML for the transactional email template and add an HTML **\<img\>** tag that points to your QR code or barcode service, following the code example below. 
     ```HTML
     <img src="https://YOUR_BARCODE_SERVICE?data=%receiptid%&param1=value1&param2=value2" alt="%receiptid%" />
     ```
+    In the code example, **YOUR_QRCODE_SERVICE** represents the domain of your QR code or barcode service, **data** represents the parameter the service uses to receive the content to render as a QR code or barcode, and **param1** and **param2** represent additional optional parameters. The value **%receiptid%** must be assigned to the parameter your QR code or barcode generation service uses to receive the content to render as a QR code or barcode (**data** in this example). 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates** and upload the updated HTML to the email template with email ID **emailrecpt**.
     
 > [!NOTE:]
-> Parameters differ between different QR code and barcode service providers, so check with your service provider to confirm the parameters to assign values to.
+> Parameters may differ between different QR code and barcode service providers, so check with your service provider to confirm the parameters to assign values to.
 
 ## Additional resources
 
