@@ -1,6 +1,5 @@
 ---
 # required metadata
-
 title: Can't configure security group for site builder during initial deployment
 description: This topic provides troubleshooting information for when deploying a new e-Commerce tenant, the AAD security group doesn't appear in the dropdown
 in the dialog to create the e-commerce components.
@@ -27,6 +26,7 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
+
 ---
 
 # Can't configure security group for site builder during initial deployment
