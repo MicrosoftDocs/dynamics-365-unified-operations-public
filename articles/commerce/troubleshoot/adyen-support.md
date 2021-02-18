@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 # Troubleshoot Adyen Connector issues
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ## Description
 When running into issues with the Adyen Payment Connector that requires
