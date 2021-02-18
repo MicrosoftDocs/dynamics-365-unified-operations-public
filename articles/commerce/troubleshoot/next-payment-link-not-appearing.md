@@ -38,7 +38,7 @@ The **Save for next payment** option doesn't appear on the **Checkout** page und
 
 ## Resolution
 
-### Make sure the Dynamics 365 Payment Connector for Adyen is configured correctly.
+### Make sure the Dynamics 365 Payment Connector for Adyen is configured correctly
 
 1. Go to Commerce headquarters.
 
