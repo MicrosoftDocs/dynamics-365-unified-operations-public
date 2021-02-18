@@ -5,7 +5,7 @@ title: Create email templates for transactional events
 description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -175,11 +175,7 @@ Here is an example.
 Receipts can be emailed to customers who make purchases at a retail point of sale (POS). In general, the steps for creating the emailed receipt template are the same as the steps for creating templates for other transactional events. However, the following changes are required:
 
 - The text of the receipt is inserted into the email by using the **%message%** placeholder. To ensure that the receipt body is correctly rendered, surround the **%message%** placeholder with HTML **&lt;pre&gt;** and **&lt;/pre&gt;** tags.
-- The **%receiptid%** placeholder can be used to display a barcode or QR code that represents the receipt ID. (The barcode or QR code is dynamically generated and served by a 3rd party service.) To display a barcode or QR code in your emailed receipt, use the following HTML as an example:
-
-```HTML
-<img src="http://YOUR_BARCODE_SERVICE?data=%receiptid%&param1=value&param2=value2" alt="%receiptid%" />
-```
+- The **%receiptid%** placeholder can be used to display a QR code or barcode that represents the receipt ID. (QR codes and barcodes are dynamically generated and served by a third-party service.) For more information on displaying a QR code or barcode in an emailed receipt, see [Add a QR code or barcode to transactional and receipt emails](add-qrcode-or-barcode.md).
 
 ## Upload the email HTML
 
