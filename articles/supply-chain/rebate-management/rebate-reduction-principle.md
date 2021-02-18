@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-You can group Rebate management deals into *reduction principles* to reduce other provisions <!-- KFM: What is the difference between a rebate and a provision? Should we always mention both together? --> associated with an item and/or to reduce rebate calculations. <!-- KFM: Reduce the number of calculations, or reduce the value of the calculated result?--> Once you have the rebate principles set up, you can assign them as needed to the lines of your various Rebate management deals (the setting is optional). The Rebate principle rules only apply where Rebate agreements overlap and may over calculate rebates owed <!-- KFM: Clarify "and may over calculate rebates owed"-->.
+You can group Rebate management deals into *reduction principles* to reduce other provisions <!-- KFM: What is the difference between a rebate and a provision? Should we always mention both together? --> associated with an item and/or to reduce rebate calculations. <!-- KFM: Reduce the number of calculations, or reduce the value of the calculated result?--> Once you have the rebate principles set up, you can assign them as needed to the lines of your various Rebate management deals (the setting is optional). The Rebate principle rules only apply where rebate agreements overlap and may over calculate rebates owed <!-- KFM: Clarify "and may over calculate rebates owed"-->.
 
 ## Manage rebate principles
 

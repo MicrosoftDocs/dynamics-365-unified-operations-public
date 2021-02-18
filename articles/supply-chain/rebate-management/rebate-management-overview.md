@@ -31,4 +31,4 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the Rebate management module for Microsoft Dynamics 365 Supply Chain Management.\
+This topic provides an overview of the Rebate management module for Microsoft Dynamics 365 Supply Chain Management.

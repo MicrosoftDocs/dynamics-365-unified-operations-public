@@ -2357,6 +2357,8 @@
             href: reabate-management/rebate-management-groups.md
           - name: Rebate management posting setup
             href: reabate-management/rebate-management-posting.md
+      - name: Rebate management deals
+        href: reabate-management/rebate-management-deals.md
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
