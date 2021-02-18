@@ -46,9 +46,9 @@ and from the **Products** tab in site builder.
 
 1. Select **Channels** on the left-hand navigation bar.
 
-1. Select the ellipses ( **...** ) near **Channel** and select **Map different OUN**.
+1. Select the ellipses (**...**) near **Channel** and select **Map different OUN**.
 
-1. Select the channel you want to map to the site and select **OK*.
+1. Select the channel you want to map to the site and select **OK**.
 
 1. Select **Save and publish** on the top navigation bar.
 
