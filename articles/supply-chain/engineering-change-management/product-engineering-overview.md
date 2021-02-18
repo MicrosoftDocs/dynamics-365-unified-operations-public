@@ -49,20 +49,24 @@ Engineering change management helps you plan and manage product versioning, and 
 
 The preceding video ([Change management capabilities in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
-## Turn on engineering change management for your system
+## Turn on engineering change management and version dimension for your system
 
-First, turn on engineering change management by following these steps.
+When using engineering change management you may want to track the version dimension of the products in transactions. In case you do, together with the enablement instructions of engineering change management please enable as well the instructions related to the version dimension. 
+First, turn on engineering change management and (optionally) the version dimension by following these steps.
 
 1. Go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Check for updates.
 1. Turn on the feature that is named **Engineering Change Management**.
+1. Turn on (optionally) the feature that is named **Product dimension version**.
 
-Next, turn on the **Engineering Change Management** configuration key by following these steps.
+Next, turn on the **Engineering Change Management** configuration key and (optionally) **Version dimension** by following these steps.
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
 1. Expand the **Trade** node, and select the **Engineering Change Management** check box.
+1. Select the **Product dimension - Version** check box.
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
