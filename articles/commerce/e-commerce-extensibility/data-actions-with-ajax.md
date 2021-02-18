@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Call server side data actions with AJAX
-description: This topic describes how to call server side data actions with AJAX in Dynamics 365 Commerce.
+title: Call server-side data actions with AJAX
+description: This topic describes how to call server-side data actions with AJAX in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 03/01/2021
@@ -27,15 +27,15 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Call server side data actions with AJAX
+# Call server-side data actions with AJAX
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to call server side data actions with AJAX in Dynamics 365 Commerce.
+This topic describes how to call server-side data actions with AJAX in Dynamics 365 Commerce.
 
 ## Overview
 
-The Dynamics 365 Commerce online software development kit (SDK) offers support for invoking a server side data action from the client browser using asynchronous JavaScript and XML (AJAX). This feature can be used in scenarios where data actions contain sensitive information such as an API key or secret needed to call a third-party service. In these cases, for security reasons you would not want the sensitive information to be revealed with a client side data action call.
+The Dynamics 365 Commerce online software development kit (SDK) offers support for invoking a server-side data action from the client browser using asynchronous JavaScript and XML (AJAX). This feature can be used in scenarios where data actions contain sensitive information such as an API key or secret needed to call a third-party service. In these cases, for security reasons you would not want the sensitive information to be revealed with a client side data action call.
 
 To invoke a data action on the server using AJAX, the following URL route with the **id** query parameter can be used, where the **id** parameter value specifies the data action that will be run on the server. This URL route supports supports both HTTP **GET** and **POST** requests.
 
@@ -94,5 +94,3 @@ For POST requests, the post body can be accessed from the context object **ctx.r
 [Create an observable data action](create-observable-data-action.md)
 
 [Data action cache settings](data-action-cache-settings.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
