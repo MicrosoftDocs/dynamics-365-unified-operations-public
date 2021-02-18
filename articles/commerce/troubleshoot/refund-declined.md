@@ -34,9 +34,9 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](../../includes/banner.md)]
 
 ## Description
-When invoicing a return order with a credit card that is different from the card that was used during the original payment authorization, the refund is declined and the following error message is displayed: "Some of the payments are not in the correct status for posting. Please re-validate the status of all payments prior to invoicing."
+When invoicing a return order with a credit card that's different from the card that was used during the original payment authorization, the refund is declined and the following error message is displayed: "Some of the payments are not in the correct status for posting. Please re-validate the status of all payments prior to invoicing."
 
-The payment authorization details will contain the following error message: "Adyen gateway SendRequest() failed with status 'InternalServerError'.22144; Empty reponse returned from Adyen.(22001);"
+The payment authorization details will include the following error message: "Adyen gateway SendRequest() failed with status 'InternalServerError'.22144; Empty response returned from Adyen.(22001);"
 
 ## Resolution
 
