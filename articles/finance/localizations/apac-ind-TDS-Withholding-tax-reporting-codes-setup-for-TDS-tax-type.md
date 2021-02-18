@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 # Withholding tax reporting codes setup for TDS tax type
 
-Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This topic lists the steps for setting up withholding tax reporting codes steps to set up TDS reporting codes.
+Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This topic lists the steps for setting up withholding tax reporting codes.
 
 Begin by opening the **Withholding tax reporting codes** page to (**Tax > Setup > Withholding tax > Withholding tax reporting codes**).
 
@@ -40,16 +40,16 @@ Begin by opening the **Withholding tax reporting codes** page to (**Tax > Setup 
 
 1. In the **Tax type** field, select the **TDS** option to define withholding tax reporting codes for the TDS tax type.
 
-2. In the **Withholding tax component** field, select the TDS component to that you're defining the withholding tax reporting code for. The **Withholding tax component group** field displays the TDS component group that was defined for the TDS component you're defnining.
+2. In the **Withholding tax component** field, select the TDS component to that you're defining the withholding tax reporting code for. The **Withholding tax component group** field displays the TDS component group that was defined for the TDS component you're defining.
 
-3. In the **Section code** field, the section code attached to the TDS component group is displayed.
+   The section code that's attached to the TDS component group is displayed in the **Section code** field.
 
-4. In the **Reporting code** field, select the TDS reporting code from the following options.
+3. In the **Reporting code** field, select the TDS reporting code from the following options. 
 
 - **TDS**
 - **TCS**
 - **Surcharge**
-- **PE-Cess**
-- **SHE Cess**
+- **PE_Cess**
+- **SHE_Cess**
 
 5. Close the page.
