@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 02/17/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
