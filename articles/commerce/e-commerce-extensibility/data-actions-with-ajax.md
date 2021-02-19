@@ -2,7 +2,7 @@
 # required metadata
 
 title: Call server-side data actions with AJAX
-description: This topic describes how to call server-side data actions with AJAX in Dynamics 365 Commerce.
+description: This topic describes how to call server-side data actions by using Asynchronous JavaScript and XML (AJAX) in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 03/01/2021
@@ -31,19 +31,17 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to call server-side data actions with asynchronous JavaScript and XML (AJAX) in Dynamics 365 Commerce.
+This topic describes how to call server-side data actions by using Asynchronous JavaScript and XML (AJAX) in Microsoft Dynamics 365 Commerce.
 
-## Overview
+The Dynamics 365 Commerce online software development kit (SDK) supports using AJAX to invoke server-side data actions from the client browser. This feature can be used in scenarios where data actions contain sensitive information, such as an API key or secret that is required to call a third-party service. In these scenarios, for security reasons, you don't want the sensitive information to be revealed through a client-side data action call.
 
-The Dynamics 365 Commerce online software development kit (SDK) offers support for invoking a server-side data action from the client browser using AJAX. This feature can be used in scenarios where data actions contain sensitive information such as an API key or secret needed to call a third-party service. In these cases, for security reasons you would not want the sensitive information to be revealed with a client-side data action call.
-
-To invoke a data action on the server using AJAX, you can use the following URL route, where the ID parameter value specifies the data action that will be run on the server. This URL route supports both HTTP **GET** and **POST** requests.
+To use AJAX to invoke a data action on the server, you can use the following URL route, where the ID parameter value specifies the data action that will be run on the server. This URL route supports both HTTP **GET** and **POST** requests.
 
 ```js
 /api?id=<data_action_id>
 ```
 
-The online SDK provides the **commerceAPIRequest** helper utility function, which provides controls on AJAX requests that include the ability to support additional context information.
+The online SDK provides the **commerceAPIRequest** helper utility function. This function provides controls for AJAX requests, such as the ability to support additional context information.
 
 ### GET request format
 
@@ -75,17 +73,18 @@ public async componentDidMount(): Promise<void> {
     );
 }
 ```
-For POST requests, the post body can be accessed from the context object **ctx.requestContext.postBody** inside the data action, as in the following example.
 
- ```js
- async function action(
+For **POST** requests, the post body can be accessed from the **ctx.requestContext.postBody** context object inside the data action, as shown in the following example.
+
+```js
+async function action(
         input: Msdyn365.IActionInput[],
         ctx: Msdyn365.IActionContext
     ): Promise<IWeatherConditions[]> {
     const postBody = ctx.requestContext.postBody?.content;
     return postBody;
 }
- ```
+```
 
 ## Additional resources
 
