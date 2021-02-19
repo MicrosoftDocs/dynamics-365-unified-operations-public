@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Add a QR code or barcode to transactional and receipt emails
-description: This topic explains how to insert QR codes and barcodes representing order IDs into transactional and receipt emails in Dynamics 365 Commerce.
+title: Add a QR code or bar code to transactional and receipt emails
+description: This topic explains how to insert QR codes and bar codes that represent order IDs into transactional and receipt emails in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
 ms.date: 03/01/2021
@@ -29,44 +29,62 @@ ms.dyn365.ops.version: Release 10.0.18
 
 ---
 
-# Add a QR code or barcode to transactional and receipt emails
+# Add a QR code or bar code to transactional and receipt emails
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic explains how to insert QR codes and barcodes representing order IDs into transactional and receipt emails in Dynamics 365 Commerce.
+This topic explains how to insert QR codes and bar codes that represent order IDs into transactional and receipt emails in Microsoft Dynamics 365 Commerce.
 
-QR codes and barcodes can easily be included in transactional emails to facilitate faster order lookup in a retail environment. QR codes and barcodes are inserted into emails using an HTML **\<img\>** tag that requests a QR code or barcode image from a generation and rendering service. Microsoft does not provide this service, but there are many free or inexpensive QR code and barcode generation services that can serve dynamically-generated QR codes or barcodes based on a value passed in a query string. 
+You can easily include QR codes and bar codes in transactional emails to help speed up the order lookup process in a retail environment. To insert QR codes and bar codes into emails, you use an HTML **\<img\>** tag that requests a QR code or bar code image from a generation and rendering service. Microsoft doesn't provide this service. However, there are many free or inexpensive services that can serve QR codes or bar codes that are dynamically generated based on a value that is passed in a query string.
 
-## Add a QR code or barcode to a transactional email
+## Add a QR code or bar code to a transactional email
 
-To insert a QR code or barcode into a transactional email that is sent as part of an e-commerce purchase, follow these steps.
+To insert a QR code or bar code into a transactional email that is sent as part of an e-commerce purchase, follow these steps.
 
-1. Open the source HTML for the transactional email template and add an HTML **\<img\>** tag that points to your QR code or barcode service, following the code example below. 
+1. Open the source HTML for the transactional email template, and add an HTML **\<img\>** tag that points to your QR code or bar code service. Here is an example.
+
     ```HTML
-    <img src="https://YOUR_QR_CODE_BARCODE_SERVICE?data=%salesid%&param1=value1&param2=value2" alt="%salesid%" />
-    ```
-    
-    In the code example, **YOUR_QR_CODE_BARCODE_SERVICE** represents the domain of your QR code or barcode service, **data** represents the parameter the service uses to receive the content to render as a QR code or barcode, and **param1** and **param2** represent additional optional parameters. The value **%salesid%** must be assigned to the parameter your QR code or barcode generation service uses to receive the content to render as a QR code or barcode (**data** in this example).    
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates** and upload the updated HTML to the appropriate transactional email template.
-
-> [!NOTE:]
-> Parameters may differ between different QR code and barcode service providers, so check with your service provider to confirm the parameters to assign values to.
-
-## Add a QR code or barcode to a receipt email 
-
-To insert a QR code or barcode into a receipt email that can be sent after a purchase at a point of sale (POS), follow these steps.
-
-1. Open the source HTML for the transactional email template and add an HTML **\<img\>** tag that points to your QR code or barcode service, following the code example below. 
-    ```HTML
-    <img src="https://YOUR_QR_CODE_BARCODE_SERVICE?data=%receiptid%&param1=value1&param2=value2" alt="%receiptid%" />
+    <img src="https://YOUR_QR_CODE_BAR_CODE_SERVICE?data=%salesid%&param1=value1&param2=value2" alt="%salesid%" />
     ```
 
-    In the code example, **YOUR_QR_CODE_BARCODE_SERVICE** represents the domain of your QR code or barcode service, **data** represents the parameter the service uses to receive the content to render as a QR code or barcode, and **param1** and **param2** represent additional optional parameters. The value **%receiptid%** must be assigned to the parameter your QR code or barcode generation service uses to receive the content to render as a QR code or barcode (**data** in this example). 
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates** and upload the updated HTML to the email template with email ID **emailrecpt**.
-    
-> [!NOTE:]
-> Parameters may differ between different QR code and barcode service providers, so check with your service provider to confirm the parameters to assign values to.
+    Here is an explanation of the preceding example:
+
+    - **YOUR\_QR\_CODE\_BAR\_CODE\_SERVICE** represents the domain of your QR code or bar code service.
+    - **data** represents the parameter that the QR code or bar code service uses to receive the content that should be rendered as a QR code or bar code.
+
+        The value **%salesid%** must be assigned to this parameter.
+
+    - **param1** and **param2** represent additional optional parameters.
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates**, and upload the updated HTML to the appropriate transactional email template.
+
+> [!NOTE]
+> Parameters might differ among QR code and bar code service providers. Therefore, be sure to contact your service provider to confirm the parameters that you must assign values to.
+
+## Add a QR code or bar code to a receipt email 
+
+To insert a QR code or bar code into a receipt email that can be sent after a purchase is made at the point of sale (POS), follow these steps.
+
+1. Open the source HTML for the transactional email template, and add an HTML **\<img\>** tag that points to your QR code or bar code service. Here is an example below.
+
+    ```HTML
+    <img src="https://YOUR_QR_CODE_BAR_CODE_SERVICE?data=%receiptid%&param1=value1&param2=value2" alt="%receiptid%" />
+    ```
+
+    Here is an explanation of the preceding example:
+
+    - **YOUR\_QR\_CODE\_BAR\_CODE\_SERVICE** represents the domain of your QR code or bar code service.
+    - **data** represents the parameter that the QR code or bar code service uses to receive the content that should be rendered as a QR code or bar code.
+
+        The value **%receiptid%** must be assigned to this parameter.
+
+    - **param1** and **param2** represent additional optional parameters.
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Organization email templates**, and upload the updated HTML to the email template that has the email ID **emailrecpt**.
+
+> [!NOTE]
+> Parameters might differ among QR code and bar code service providers. Therefore, be sure to contact your service provider to confirm the parameters that you must assign values to.
 
 ## Additional resources
 
