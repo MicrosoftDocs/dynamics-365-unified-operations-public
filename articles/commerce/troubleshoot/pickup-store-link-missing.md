@@ -60,7 +60,15 @@ When navigating to the **Product details** or the **Shopping cart** page, the **
 
 1. Select the **Customer orders** tab on the left panel.
 
-1, Make sure the **Pickup mode of delivery** is configured correctly.
+1. Make sure the **Pickup mode of delivery** is configured correctly.
+
+### Configure customer orders payments
+
+1. Go to Dynamics 365 Commerce headquarters.
+
+1. Go to **Retail and Commerce > Headquarters setup > Parameters**.
+
+1. On the left navigation, select **Customer orders**. On the **Payments** tab, make sure the **Terms of payment** and **Method of payment** are set up correctly.
 
 
 
