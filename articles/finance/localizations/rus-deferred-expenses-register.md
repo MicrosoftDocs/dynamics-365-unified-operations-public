@@ -8,7 +8,6 @@ manager: anasyash
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
