@@ -7,7 +7,6 @@ author: edupont04
 manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 
 # optional metadata
 
