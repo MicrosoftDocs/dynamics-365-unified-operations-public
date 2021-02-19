@@ -57,11 +57,11 @@ The following modules are used on identity management pages in Commerce.
 
 ### Sign-up module
 
-The sign-up module is used on the sign-up page. It includes the form elements that site users use to complete the sign-up flow. A user provides an email address to use as their user name. The module then enables the Azure AD B2C email verification flow to occur. In this flow, the "send code" is triggered, and the security personal identification number (PIN) that the user enters is verified. Information that is collected on the sign-in page is used to create a record in Azure AD B2C and a customer record in Commerce.
+The sign-up module is used on the sign-up page. It includes the form elements that site users use to complete the sign-up flow. A user provides an email address to use as their user name. The module then enables the Azure AD B2C email verification flow to occur. In this flow, the "send code" is triggered, and the security personal identification number (PIN) that the user enters is verified. Information that is collected on the sign-up page is used to create a record in Azure AD B2C and a customer record in Commerce.
 
 ### Sign-in module
 
-The sign-in module is used on the sign-in page. It includes the form elements that users use to sign in to their accounts. The sign-in page also includes buttons that users can use to open the sign-up page. In this way, the page is paired directly with the "sign up and sign in" user flow in Azure AD B2C.
+The sign-in module is used on the sign-in page. It includes the form elements that users use to sign in to their accounts. The sign-in page also includes a button that users can use to open the sign-up page. In this way, the page is paired directly with the "sign up and sign in" user flow in Azure AD B2C.
 
 ### Password reset modules
 
