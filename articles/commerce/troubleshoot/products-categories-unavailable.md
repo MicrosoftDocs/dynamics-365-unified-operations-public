@@ -52,6 +52,6 @@ Products and categories aren't displayed in site builder after a new site is map
 
 1. Select **Ok**.
 
-1. When the products are displayed in the Product tab, select **Publish channel updates**.
+1. When the products are displayed in the **Product** tab, select **Publish channel updates**.
 
 
