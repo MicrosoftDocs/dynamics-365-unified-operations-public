@@ -32,16 +32,10 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
 
-This localization is part of the Retail software development kit (SDK). For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
-
 This localization consists of extensions for the Commerce runtime (CRT) and POS. To run this sample, you must modify and build the POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE]
 > In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this topic applies to multiple previous versions of the app, *Retail Server* is used throughout the topic.
-
-## Storing a certificate for digital signing in Azure Key Vault
-
-The digital signature extension uses a certificate that is installed in the local certificate storage of the machine where Retail Server is deployed. The thumbprint of the certificate must be specified in the configuration file (see the [SequentialSignatureRegister component](#sequentialsignatureregister-component) section later in this topic). Depending on the implementation topology, the certificate might have to be stored in [Microsoft Azure Key Vault storage](https://docs.microsoft.com/azure/key-vault/key-vault-get-started). The localization for France contains a code sample that shows how to override the signing flow and sign sales transactions by using a certificate that is stored in Azure Key Vault storage.
 
 ### Prerequisites
 
@@ -49,7 +43,6 @@ The following steps must be completed before you can use a certificate that is s
 
 - The Azure Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Retail Server.
 - The certificate must be uploaded to the storage.
-- The Retail Server application must be authorized to read secrets from the storage.
 
 For more information about how to work with Azure Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started).
 
@@ -222,11 +215,9 @@ To enable the digital signature in offline mode for Modern POS, you must follow 
 6. On the **Database connection status** page, make sure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
 7. Restart Modern POS.
 
-# Migrating from SDK to sealed extensions
-
 ## Migrating from the earlier integration sample
 
-If you're using the earlier [Deployment guidelines for cash registers for France](emea-fra-deployment.md), you might have to migrate from it to the current integration sample. To uptake the change and receive timely updates for the features for France in the future, you might have to upgrade, make minor code and configuration adjustments in the extensions that you built, and rebuild your solutions. No major changes are required in the extension logic that you created. The earlier integration sample and your customizations will continue to work if no changes are made from your side. Therefore, you can plan, prepare for, and do the uptake for your environment.
+If you're using the earlier [Deployment guidelines for cash registers for France](emea-fra-deployment.md), you might have to migrate from it to the current integration sample. To uptake the change and receive timely updates for the features for France in the future, you might have to upgrade. No major changes are required in the extension logic that you created. As this is a major update, some of your customizations will not continue to work if no changes are made from your side. Therefore, you should plan, prepare for, and do the uptake for your environment.
 
 ### Migration process
 
@@ -238,30 +229,27 @@ The migration process should consist of the following steps.
 
 1. Update the Headquarters components.
 2. Update the Commerce Scale Unit components, and enable the extensions of the current sample.
-3. Make sure that all offline transactions are synced from offline-enabled MPOS devices.
-4. Turn off all devices that use the components of the earlier sample.
-5. Update the POS components, disable the extensions that are parts of the earlier sample, and enable the extensions of the current sample.
+3. Update the POS components, and enable the extensions of the current sample.
+4. Make sure that all offline transactions are synced from offline-enabled MPOS devices.
+5. Close shifts and logoff from all POS.
+6. Enable Fiscal integration and configure functional profile.
+7. Restart POS.
 
     > [!NOTE]
     > Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section or the [Migration in a production environment](#migration-in-a-production-environment) section.
 
-### Migration in a development environment
-
-##### Set up the registration process
+#### Set up the registration process
 
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **???\\MicrosoftSequentialSignatureConnector.xml**.
-3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The file location is **???\\MicrosoftSequentialSignatureFRA.xml**.
-4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
-5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type as **Internal**. Update the other connection settings as required.
-6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
-7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
-9.  Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **???\\MicrosoftSequentialSignatureConnector.xml**.
+2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The file location is **???\\MicrosoftSequentialSignatureFRA.xml**.
+3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
+4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type as **Internal**. Update the other connection settings as required.
+5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
+6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
 
-#### Configure the digital signature parameters for Headquarters
+### Configure the digital signature parameters for Headquarters
 
 Starting new version you should use the [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature that supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
@@ -295,7 +283,76 @@ Then, to must configure the certificate profile with your Key Vault or local ser
    - Hash algorithm – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as SHA256.
    - Activate health check – For more information about Health Check feature, see [Fiscal registration health check](https://docs.microsoft.com/dynamics365/commerce/localizations/fiscal-integration-for-retail-channel#fiscal-registration-health-check).
 
+### Migration in a development environment
+
 #### Update CRT
+
+1. Find the extension configuration file for CRT:
+
+    - **Commerce Scale Unit:** The file is named **CommerceRuntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's in the **bin\\ext** folder under the local CRT client broker location.
+
+    > [!WARNING]
+    > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
+2. Find and remove the earlier CRT extension from the extension configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
+    ```
+
+3. Register the current sample CRT extensions in the extension configuration file by adding the following lines.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
+    ```
+
+#### Update Modern POS
+
+1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
+2. Enable the current sample POS extension by adding the following lines in the **extensions.json** file.
+
+    ``` json
+    {
+        "baseUrl": "Microsoft/Receipts.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }
+    ```
+
+#### Update Cloud POS
+
+1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
+2. Enable the current sample POS extension by adding the following lines in the **extensions.json** file.
+
+    ``` json
+    {
+        "baseUrl": "Microsoft/Receipts.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }
+    ```
+
+#### Enable Fiscal Integration
+
+When you will be ready to upgrate, follow next steps to enable Fiscal integration and start using new version of localization. 
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
+2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
+3. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+
+> [!WARNING]
+    > After this steps previous customization will not work.
+
+### Future update
+
+In a next update you can remove obsolete customization from your Retail Servers and POS. The following describes extensions that can be safely removed.
+
+#### CRT
 
 1. Find the extension configuration file for CRT:
 
@@ -314,55 +371,19 @@ Then, to must configure the certificate profile with your Key Vault or local ser
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtFrance" />
     <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureFrance" />
     <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.DataSignatureKeyVaultSample" />
     ```
 
-    > [!WARNING]
-    > Don't complete this step until you update all POS devices that work with this CRT instance.
+#### Retail Server
 
-3. Register the current sample CRT extensions in the extension configuration file by adding the following lines.
+1. Find the configuration file for Retail Server. The file is named **web.config**, and it's in the root folder under the IIS Retail Server site location.
+2. Find and remove the earlier Retail Server extension in the **extensionComposition** section of the configuration file.
 
     ``` xml
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance" />
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance" />
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
+    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
     ```
 
-#### Update Modern POS
-
-1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
-2. Disable the earlier POS extension by removing the following lines from the **extensions.json** file.
-
-    ``` json
-    {
-        "baseUrl": "Microsoft/AuditEvent.FR"
-    },
-    {
-        "baseUrl": "SalesTransactionSignatureSample"
-    },
-    {
-        "baseUrl": "SequentialSignature"
-    },
-    {
-        "baseUrl": "AuditEventSignatureSample"
-    },
-    {
-        "baseUrl": "SalesTransBuildNumberSample"
-    }
-    ```
-
-3. Enable the current sample POS extension by adding the following lines in the **extensions.json** file.
-
-    ``` json
-    {
-        "baseUrl": "Microsoft/Receipts.FR"
-    }, 
-    {
-        "baseUrl": "Microsoft/FifAuditEvent.FR"
-    }
-    ```
-
-#### Update Cloud POS
+#### Modern POS
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 2. Disable the earlier POS extension by removing the following lines from the **extensions.json** file.
@@ -385,14 +406,26 @@ Then, to must configure the certificate profile with your Key Vault or local ser
     }
     ```
 
-3. Enable the current sample POS extension by adding the following lines in the **extensions.json** file.
+#### Cloud POS
+
+1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
+2. Disable the earlier POS extension by removing the following lines from the **extensions.json** file.
 
     ``` json
     {
-        "baseUrl": "Microsoft/Receipts.FR"
-    }, 
+        "baseUrl": "Microsoft/AuditEvent.FR"
+    },
     {
-        "baseUrl": "Microsoft/FifAuditEvent.FR"
+        "baseUrl": "SalesTransactionSignatureSample"
+    },
+    {
+        "baseUrl": "SequentialSignature"
+    },
+    {
+        "baseUrl": "AuditEventSignatureSample"
+    },
+    {
+        "baseUrl": "SalesTransBuildNumberSample"
     }
     ```
 
@@ -403,17 +436,8 @@ Then, to must configure the certificate profile with your Key Vault or local ser
 1. Remove the earlier CRT extension from the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.CommonFrance" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsFrance" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtFrance" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureFrance" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
     ```
-
-    > [!WARNING]
-    > Don't complete this step until you update all POS devices that work with this CRT instance.
 
 2. Enable the current sample CRT extensions by making the following changes in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder.
 
@@ -423,39 +447,10 @@ Then, to must configure the certificate profile with your Key Vault or local ser
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
     ```
 
-3. In the **Customization.settings** package customization configuration file under the **BuildTools** folder, add the following lines to include the current sample CRT extension in deployable packages.
-
-    ``` xml
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll" />
-    ```
-
 #### Update Modern POS
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
-2. Disable the earlier POS extension:
-
-    - In the **tsconfig.json** file, add the **FiscalRegisterSample** folder to the exclude list.
-    - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
-
-        ``` json
-        {
-            "baseUrl": "Microsoft/AuditEvent.FR"
-        },
-        {
-            "baseUrl": "SalesTransactionSignatureSample"
-        },
-        {
-            "baseUrl": "SequentialSignature"
-        },
-        {
-            "baseUrl": "AuditEventSignatureSample"
-        },
-        {
-            "baseUrl": "SalesTransBuildNumberSample"
-        }
-        ```
-
-3. Enable the current sample POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
+2. Enable the current sample POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
 
     ``` json
     {
@@ -469,9 +464,76 @@ Then, to must configure the certificate profile with your Key Vault or local ser
 #### Update Cloud POS
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
+2. Enable the current sample POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
+
+    ``` json
+    {
+        "baseUrl": "Microsoft/Receipts.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }
+    ```
+
+#### Create deployable packages
+
+Run **msbuild** for the whole Retail SDK to create deployable packages. Apply the packages via LCS or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+### Future update
+
+In a next update you can remove obsolete customization from your Retail Servers and POS. The following describes extensions that can be safely removed.
+
+#### CRT
+
+1. Remove the earlier CRT extension from the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.CommonFrance" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsFrance" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtFrance" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureFrance" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.DataSignatureKeyVaultSample" />
+    ```
+
+2. In the **Customization.settings** package customization configuration file under the **BuildTools** folder, remove the following lines to exclude the earlier sample CRT extension from the deployable packages.
+
+    ``` xml
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.CommonFrance.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsFrance.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtFrance.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureFrance.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsFrance.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DataSignatureKeyVaultSample.dll" />
+    ```
+
+3. Remove the following lines to the **ItemGroup** section to exclude the Retail Server extension from the deployable packages.
+
+        ``` xml
+        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+        ```
+
+4. Update the Retail Server configuration file. In **RetailSDK\\Packages\\RetailServer\\Code\\web.config**, remove the following lines from the **extensionComposition** section.
+
+    ``` xml
+    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
+    ```
+
+#### Modern POS
+
+1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 2. Disable the earlier POS extension:
 
-    - In the **tsconfig.json** file, add the **FiscalRegisterSample** folder to the exclude list.
+    - In the **tsconfig.json** file, add the next folders to the exclude list.
+      - SalesTransactionSignatureSample
+      - SequentialSignature
+      - AuditEventSignatureSample
+      - SalesTransBuildNumberSample
     - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
 
         ``` json
@@ -492,16 +554,35 @@ Then, to must configure the certificate profile with your Key Vault or local ser
         }
         ```
 
-4. Enable the current sample POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
+#### Cloud POS
 
-    ``` json
-    {
-        "baseUrl": "Microsoft/Receipts.FR"
-    }, 
-    {
-        "baseUrl": "Microsoft/FifAuditEvent.FR"
-    }
-    ```
+1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
+2. Disable the earlier POS extension:
+
+    - In the **tsconfig.json** file, add the next folders to the exclude list.
+      - SalesTransactionSignatureSample
+      - SequentialSignature
+      - AuditEventSignatureSample
+      - SalesTransBuildNumberSample
+    - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
+
+        ``` json
+        {
+            "baseUrl": "Microsoft/AuditEvent.FR"
+        },
+        {
+            "baseUrl": "SalesTransactionSignatureSample"
+        },
+        {
+            "baseUrl": "SequentialSignature"
+        },
+        {
+            "baseUrl": "AuditEventSignatureSample"
+        },
+        {
+            "baseUrl": "SalesTransBuildNumberSample"
+        }
+        ```
 
 #### Create deployable packages
 
