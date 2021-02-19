@@ -43,5 +43,22 @@ Below is as sample error that may be displayed. The error below results from sel
 
 In the browser debugger tools (F12), a similar error is displayed that mentions the violation of the content security policy directive.
 
-![debugger tools error](media/debugger-tools.JPG)
+![debugger tools error](media/debugger-tools-error.JPG)
+
+## Resolution
+
+### Disable the CSP check on the site
+
+1. Go to site builder.
+
+1. Select the site you're working on.
+
+1. Select **Settings** in the bottom left navigation, and then select **Extensions**.
+
+1. On the **Content security policy** tab, select **Disable content security policy**.
+
+1. Select **Save and publish**.
+
+> [!NOTE]
+> B2C sign-in (user login) won't work in a local development environment. However, you can use guest checkouts or build page mocks to simulate a user login if needed. 
 
