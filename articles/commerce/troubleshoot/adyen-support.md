@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot Adyen Payment Connector issues
-description: This topic provides how to get support when you have issues with the Adyen Payment Connector. 
+description: This topic provides information on how to get support when you have issues with the Adyen Payment Connector. 
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/17/2021
