@@ -34,15 +34,16 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an example of how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code in the TDS group that is attached to the transaction. It's necessary to first complete the the basic setup that is required for TDS. 
+This topic provides an example of how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code. TDS tax coedes are defined in the TDS group that is attached to the transaction. Before designing TDS formulas, complete the the basic setup required for TDS as listed in the following steps. 
 
-- TDS component groups are set up in the **Withholding tax component groups** page. TDS components are set up in the **Withholding tax components** page and attach TDS component group to the TDS components. 
-- - TDS tax codes are set up in the **Withholding tax codes** page and attach TDS components to the tax codes. 
-- TDS tax groups are set up in the **Withholding tax groups** page, and then the TDS tax codes are attached to the tax group, and the formula is defined, using the **Formula designer** page. 
+- Set up TDS component groups using the **Withholding tax component groups** page. 
+- Set up TDS components and attach TDS component group to the TDS components using the **Withholding tax components** page. 
+- Set up TDS tax codes and attach TDS components to the tax codes using the **Withholding tax codes** page. 
+- Set up TDS tax groups using the **Withholding tax groups** page. Then attach the TDS tax codes to the tax group, and define the formula, using the **Formula designer** page. 
 
-**Example**:
+**Example formula**:
 
-The TDS group Rent is attached to a purchase invoice created for Vendor A. The invoice amount is 100000. Refer to the following table to view the TDS calculation for the invoice.
+In this example, the TDS group, Rent, is attached to a purchase invoice that's created for vendor A. The invoice amount is 100000. Refer to the following table to view the TDS calculation for the invoice.
 
 | TDS  Group                                                   | TDS tax codes attached to the TDS group | Value              | Taxable basis  (Formula designer) | Calculation expression  (Formula designer) | Base amount | Calculated TDS amount |
 | ------------------------------------------------------------ | --------------------------------------- | ------------------ | --------------------------------- | :----------------------------------------: | ----------- | --------------------- |
@@ -51,8 +52,6 @@ The TDS group Rent is attached to a purchase invoice created for Vendor A. The i
 | PE-Cess  (TDS component- PE-Cess)                            | 2%                                      | Excl. gross amount | +TDS+Surcharge                    |                   11000                    | 220         |                       |
 | SHE Cess  (TDS component- SHE Cess)                          | 1%                                      | Excl. gross amount | +TDS+Surcharge                    |                   11000                    | 110         |                       |
 | **Total** **TDS**  **calculated** **for** **the** **invoice** | **11330**                               |                    |                                   |                                            |             |                       |
-
- 
 
 The voucher entries are created as follows:
 
