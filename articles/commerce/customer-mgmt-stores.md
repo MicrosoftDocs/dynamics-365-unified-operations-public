@@ -42,7 +42,7 @@ Sales associates can also capture secondary email and phone numbers, along with 
 
 The "all stores" form in Commerce headquarters (**Retail and Commerce \> Channels \> Stores**) allows retailers to associate a default customer with each store. Commerce then copies properties defined for the default customer to newly-created customer records. For example, the **Create customer** form displays properties such as customer type, customer group, receipt preference, currency, and language which are inherited from the default customer associated with the store. Any affiliations (groupings of customers) are also inherited from the default customer. However, financial dimensions are instead inherited from the customer group associated with the default customer, and not from the default customer record. 
 
-A sales associates can capture multiple addresses for a customer, and the customer's name and phone number are inherited from the contact information associated with the address. The **Addresses** FastTab of a customer record displays a **Purpose** property that can be modified by a sales associate. This property supports values such as home, office, and post box. The default value is "Home" if the customer type is "Person," and "Business" if the customer type is "Organization." The value for the address property **Country** is inherited from the primary address specified on the operating unit form in Commerce headquarters.
+A sales associate can capture multiple addresses for a customer, and the customer's name and phone number are inherited from the contact information associated with the address. The **Addresses** FastTab of a customer record displays a **Purpose** property that can be modified by a sales associate. This property supports values such as home, office, and post box. The default value is "Home" if the customer type is "Person," and "Business" if the customer type is "Organization." The value for the address property **Country** is inherited from the primary address specified on the operating unit form in Commerce headquarters.
 
 ## Sync and Async customers
 
@@ -52,7 +52,7 @@ If the **Create customer in async mode** setting is enabled on the functionality
 
 ### Convert Async customers to Sync customers
 
-To convert Async customers to Sync customers, you must run the **P-Job** to send the Async customer to headquarters, and run the **Synchronize customers and business partners from async mode** job to create the customer account ID. Then run the **1010 - Customer job** to synchronize newly-created customer account IDs to the channels.
+To convert Async customers to Sync customers, you must run the **P-Job** to send the Async customer to headquarters, and run the **Synchronize customers and business partners from async mode** job to create the customer account ID. Then run the **1010** job to synchronize newly-created customer account IDs to the channels.
 
 ### Async customer limitations
 
@@ -65,7 +65,7 @@ The Async customer functionality currently has the following limitations.
 
 ### Customer creation in POS offline mode
 
-If the POS goes offline with the Async customer creation mode enabled, any new customer records are created using Async mode. If the POS goes offline with the Async customer creation mode disabled, the system automatically switches to Async mode customer creation. Since there may be customer records that get created asynchronously even if the Async customer creation mode is disabled, headquarters administrators must ensure that they have created and scheduled a recurring batch job for **P-job**, **Synchronize customers and business partners from async mode**, and **1010 - Customer job** jobs to convert any Async customers to Sync customers in headquarters.
+If the POS goes offline with the Async customer creation mode enabled, any new customer records are created using Async mode. If the POS goes offline with the Async customer creation mode disabled, the system automatically switches to Async mode customer creation. Since there may be customer records that get created asynchronously even if the Async customer creation mode is disabled, headquarters administrators must ensure that they have created and scheduled a recurring batch job for **P-job**, **Synchronize customers and business partners from async mode**, and **1010** jobs to convert any Async customers to Sync customers in headquarters.
 
 > [!NOTE]
 > If the **Filter shared customer data tables** setting is enabled, customer records are not created in POS offline mode. For more information, see [Offline data exclusion](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
