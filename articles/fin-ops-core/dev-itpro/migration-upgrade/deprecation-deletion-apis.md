@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -52,7 +52,7 @@ Here are some tips that you, as a consumer of the Microsoft code base, can use t
 
 ## List of deprecated methods and metadata elements
 
-For reference, download the Microsoft Excel file, available on the [Deprecation of methods and metadata elements](https://docs.microsoft.com/dynamics/s-e/) page of CustomerSource, which shows the artifacts that have been marked for deprecation in each major release.
+For reference, download the Microsoft Excel file, available on the [Deprecation of methods and metadata elements](https://mbs2.microsoft.com/fileexchange/?fileID=d6b5589b-c2c7-4cdd-a6b9-87e080cb2f05) page of CustomerSource, which shows the artifacts that have been marked for deprecation in each major release.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
