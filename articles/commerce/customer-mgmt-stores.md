@@ -40,26 +40,26 @@ Sales associates can also capture secondary email and phone numbers, along with 
 
 ## Default customer properties
 
-The "all stores" form in Commerce headquarters (**Retail and Commerce \> Channels \> Stores**) allows retailers to associate a default customer with each store. Commerce then copies properties defined for the default customer to newly-created customer records. For example, the **Create customer** form displays properties such as customer type, customer group, receipt preference, currency, and language which are inherited from the default customer associated with the store. Any affiliations (groupings of customers) are also inherited from the default customer. However, financial dimensions are instead inherited from the customer group associated with the default customer, and not from the default customer record. 
+The "all stores" form in Commerce headquarters (**Retail and Commerce \> Channels \> Stores**) allows retailers to associate a default customer with each store. Commerce then copies properties defined for the default customer to newly created customer records. For example, the **Create customer** form displays properties such as customer type, customer group, receipt preference, currency, and language which are inherited from the default customer associated with the store. Any affiliations (groupings of customers) are also inherited from the default customer. However, financial dimensions are instead inherited from the customer group associated with the default customer, and not from the default customer record. 
 
 A sales associate can capture multiple addresses for a customer, and the customer's name and phone number are inherited from the contact information associated with the address. The **Addresses** FastTab of a customer record displays a **Purpose** property that can be modified by a sales associate. This property supports values such as home, office, and post box. The default value is "Home" if the customer type is "Person," and "Business" if the customer type is "Organization." The value for the address property **Country** is inherited from the primary address specified on the operating unit form in Commerce headquarters.
 
 ## Sync and Async customers
 
-In Commerce, there are two modes of customer creation: Synchronous (also know as "Sync") and Asynchronous (also known as "Async"). By default, customers are created synchronously (in other words, created in Commerce headquarters in real time). This mode is beneficial because a newly-created customer is immediately searchable across channels. However, there is a drawback to this approach since creating customers synchronously generates Real Time Service (RTS) calls to headquarters, which can impact performance if a large number of customer creation calls are made concurrently. 
+In Commerce, there are two modes of customer creation: Synchronous (also know as "Sync") and Asynchronous (also known as "Async"). By default, customers are created synchronously (in other words, created in Commerce headquarters in real time). This mode is beneficial because a newly created customer is immediately searchable across channels. However, there is a drawback to this approach since creating customers synchronously generates Real Time Service (RTS) calls to headquarters, which can impact performance if a large number of customer creation calls are made concurrently. 
 
-If the **Create customer in async mode** setting is enabled on the functionality profile of the store (**Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**), customer records are only created in the channel database without RTS calls. Creating customers in Async mode does not impact headquarters performance. Each newly-created Async customer record is assigned a temporary globally unique identifier (GUID) that is used as the account ID. This ID is not shown to POS users, who will see instead "Pending sync" as the customer ID. Note that although this configuration forces Async mode customer creation, customer record edits are always done synchronously.
+If the **Create customer in async mode** setting is enabled on the functionality profile of the store (**Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**), customer records are only created in the channel database without RTS calls. Creating customers in Async mode does not impact headquarters performance. Each newly created Async customer record is assigned a temporary globally unique identifier (GUID) that is used as the account ID. This ID is not shown to POS users, who will see instead "Pending sync" as the customer ID. Note that although this configuration forces Async mode customer creation, customer record edits are always done synchronously.
 
 ### Convert Async customers to Sync customers
 
-To convert Async customers to Sync customers, you must run the **P-Job** to send the Async customer to headquarters, and run the **Synchronize customers and business partners from async mode** job to create the customer account ID. Then run the **1010** job to synchronize newly-created customer account IDs to the channels.
+To convert Async customers to Sync customers, you must run the **P-Job** to send the Async customer to headquarters, and run the **Synchronize customers and business partners from async mode** job to create the customer account ID. Then run the **1010** job to synchronize newly created customer account IDs to the channels.
 
 ### Async customer limitations
 
 The Async customer functionality currently has the following limitations.
 
 - Async customer records cannot be edited unless the customer has been created in headquarters and the new customer ID has been synchronized back to the channel.
-- Affiliations cannot be associated with Async customers, so newly-created Async customers do not inherit affiliations from the default customer.
+- Affiliations cannot be associated with Async customers, so newly created Async customers do not inherit affiliations from the default customer.
 - Loyalty cards cannot be issued to the Async customers unless the new customer account ID is synchronized back to the channel.
 - Secondary emails and phone numbers cannot be captured for Async customers.
 
