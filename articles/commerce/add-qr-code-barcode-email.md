@@ -53,7 +53,7 @@ To insert a QR code or bar code into a transactional email that is sent as part 
     - **YOUR\_QR\_CODE\_BAR\_CODE\_SERVICE** represents the domain of your QR code or bar code service.
     - **data** represents the parameter that the QR code or bar code service uses to receive the content that should be rendered as a QR code or bar code.
 
-        The value **%salesid%** must be assigned to this parameter.
+        The value **%salesid%** must be assigned to this parameter. In this example, notice that the value is also used as alt text for the image.
 
     - **param1** and **param2** represent additional optional parameters.
 
@@ -66,7 +66,7 @@ To insert a QR code or bar code into a transactional email that is sent as part 
 
 To insert a QR code or bar code into a receipt email that can be sent after a purchase is made at the point of sale (POS), follow these steps.
 
-1. Open the source HTML for the transactional email template, and add an HTML **\<img\>** tag that points to your QR code or bar code service. Here is an example below.
+1. Open the source HTML for the receipt email template, and add an HTML **\<img\>** tag that points to your QR code or bar code service. Here is an example below.
 
     ```HTML
     <img src="https://YOUR_QR_CODE_BAR_CODE_SERVICE?data=%receiptid%&param1=value1&param2=value2" alt="%receiptid%" />
@@ -77,7 +77,7 @@ To insert a QR code or bar code into a receipt email that can be sent after a pu
     - **YOUR\_QR\_CODE\_BAR\_CODE\_SERVICE** represents the domain of your QR code or bar code service.
     - **data** represents the parameter that the QR code or bar code service uses to receive the content that should be rendered as a QR code or bar code.
 
-        The value **%receiptid%** must be assigned to this parameter.
+        The value **%receiptid%** must be assigned to this parameter. In this example, notice that the value is also used as alt text for the image.
 
     - **param1** and **param2** represent additional optional parameters.
 
