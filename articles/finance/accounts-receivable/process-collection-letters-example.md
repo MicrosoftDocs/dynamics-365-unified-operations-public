@@ -37,7 +37,7 @@ To begin, go to **Accounts receivable \> Customers \> All customers**, select **
 
 When you've finished, follow these steps.
 
-1. Go to **Credit and collections \> Collection letter \> Setup collection letter sequence**, and set up the following collection letter sequence that is assigned to the customer posting profile.
+1. Go to **Credit and collections \> Collection letter \> Setup collection letter sequence**, and set up the collection letter sequence as shown in the following talbe that is assigned to the customer posting profile.
 
 |     Collection   letter code    	|     Description                       	|     Currency    	|     Main   account    	|     Fee   in currency    	|     Minimum   over    	|     Days   Block    	|
 |---------------------------------	|---------------------------------------	|-----------------	|-----------------------	|--------------------------	|-----------------------	|---------------------	|
