@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Credit card entry form throws error on checkout form
+title: Credit card entry page displays error on checkout
 description: This topic provides troubleshooting information for when the "Payment method" section doesn't load and throws an error. 
 author: Reza-Assadi
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Credit card entry form throws error on checkout form
+# Credit card entry page displays error on checkout
 
 [!include [banner](../../includes/banner.md)]
 
