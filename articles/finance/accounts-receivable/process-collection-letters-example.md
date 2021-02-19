@@ -2,23 +2,23 @@
 # required metadata 
  
 title: Process collection letters example
-description: This topic walks through an example that clarifies the process of creating, printing, and posting collection letters. 
+description: This topic goes through an example that shows the process of creating, printing, and posting collection letters. 
 author: JodiChristiansen
 manager: AnnBe 
 ms.date: 02/03/2021
 ms.topic: business-process 
-ms.prod:  
+ms.prod: 
 ms.service: dynamics-ax-applications 
-ms.technology:  
+ms.technology: 
  
 # optional metadata 
  
-ms.search.form: CustPosting, CustCollectionLetterNote   
+ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User 
-# ms.devlang:  
+# ms.devlang: 
 ms.reviewer: roschlom
-# ms.tgt_pltfrm:  
-# ms.custom:  
+# ms.tgt_pltfrm: 
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jchrist
@@ -31,131 +31,114 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../../includes/banner.md)]
 
-This topic walks through an example that clarifies the process of creating, printing, and posting collection letters. The example is based on the Credit and collections parameter **Ignore payments and credit memos when calculating collection letter code**. This example uses data in the USMF demo company with a new customer, US-045. Begin by opening the **All customers** page (**Navigation pane > Modules > Accounts receivable > Customers > All customers**). Click **New** to enter the required information.
+This topic goes through an example that shows the process of creating, printing, and posting collection letters. The example is based on the **Ignore payments and credit memos when calculating collection letter code** option in Credit and collections. It uses data in the USMF demo company and a new customer, US-045.
 
-1. The following is the collection letter sequence, which is assigned to the customer posting profile. Go to **Navigation pane > Modules > Credit and collections > Collection letter > Setup collection letter sequence**.
+To begin, go to **Accounts receivable \> Customers \> All customers**, select **New**, and then enter the required information to create customer US-045.
 
- [![Collection letter sequence setup](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+When you've finished, follow these steps.
 
-2. In Credit and collections parameters there are two parameters to set for this example. Go to **Navigation pane > Modules > Credit and collections > Setup > Accounts receivable parameters**. 
+1. Go to **Credit and collections \> Collection letter \> Setup collection letter sequence**, and set up the following collection letter sequence that is assigned to the customer posting profile.
 
-   a. Click the **Collections** tab. 
+    [![Setting up a collection letter sequence](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
-   b. Change the **Ignore payments and credit memos when calculating collection letter code** field to **Yes**.  
- 
-   c. The parameter **Create collection letter per** must be set to **Customer**. 
- 
- When you've finished, your screen should look like the following illustration. 
+    You must now set the two parameters that are required for this example.
 
- [![Set up options for collection letters to set Ignore payments and credit memos to Yes](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
+2. Go to **Credit and collections \> Setup \> Accounts receivable parameters**, and follow these steps:
 
-3. Go to **Navigation pane > Modules > Accounts receivable > Invoices > All free text invoices**.
- 
-   a. Click **New**.
- 
-   b. In **Customer account** select **US-045**.
- 
-   c. Change the **Invoice date** field to 1/15/2021.
- 
-   d. Change the **Due date** field to 1/16/2021.
- 
-   e. In the **Invoice lines** FastTab, enter 401100 for the **Main account**.
- 
-   f. Enter 500.00 for the **Unit price**.
-  
-   g. Click **Post**.
+    1. On the **Collections** tab, set the **Ignore payments and credit memos when calculating collection letter code** option to **Yes**.
+    2. Make sure that the **Create collection letter per** field is set to **Customer**.
 
-4. Click **New** to enter two credit notes for the same customer.  
+    [![Setting Accounts receivable parameters for Credit collections](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
-   a. In **Customer account** select US-045.
- 
-   b. Change **Invoice date** to 1/15/2021.
- 
-   c. Change **Due date** to 1/16/2021.
- 
-   d. In **Invoice lines** fastTab enter 401100 for the **Main account**.
- 
-   e. Enter -100.00 for the **Unit price**.
- 
-   f. Click **Post**.
- 
-   g. Repeat steps 4a-4f except in step 4e change the **Unit price** to -200.00.
+3. Go to **Accounts receivable \> Invoices \> All free text invoices**, select **New**, and then follow these steps:
 
-5. Go to **Navigation pane > Modules > Accounts receivable > Customers > All Customers** and choose US-045. Click **Transactions** under **Transactions** in the Action Pane to review the customer transactions.
+    1. In the **Customer account** field select **US-045**.
+    2. In the **Invoice date** field, enter **1/15/2021**.
+    3. In the **Due date** field, enter **1/16/2021**.
+    4. On the **Invoice lines** FastTab, in the **Main account** field, enter **401100**.
+    5. In the **Unit price** field, enter **500.00**.
+    6. Select **Post**.
 
- [![Review the posted customer transactions](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
+    You must now enter two credit notes for the customer.
 
-6. Go to the **Create collection letters** page (**Navigation pane > Modules > Credit and collections > Collection letter > Create collection letters**) to create collection letters for customer US-045.
+4. Select **New**, and then follow these steps:
 
-   a. Mark the **Invoice** and **Credit note** parameters **Yes**.
- 
-   b. The **Collection letter** parameter should default to **Collection per customer**.
- 
-   c. Enter 1/19/2021 for **Collection letter date**.
- 
-   d. Under Records to include, click  **Navigation pane > Modules > Credit and collections > Collection letter > Create collection letters**Filter to add US-045 in Customer account.
- 
-   e. Click **OK**.
- 
-   f. Click **OK** to create collection letters.
+    1. In the **Customer account** field, select **US-045**.
+    2. In the **Invoice date** field, enter **1/15/2021**.
+    3. In the **Due date** field, enter **1/16/2021**.
+    4. On the **Invoice lines** FastTab, in the **Main account** field, enter **401100**.
+    5. In the **Unit price** field, enter **-100.00**.
+    6. Select **Post**.
 
-7. Go to **Navigation pane > Modules > Credit and collections > Collection letter > Review and process collection letters**.
-   a. Notice the header and lines Collection letter code (expand Transactions fastTab if needed) displays Collection letter 1 since this is the first collection letter in the sequence. 
+5. Repeat step 4, but enter **-200.00** in the **Unit price** field.
+6. Go to **Accounts receivable \> Customers \> All customers**, and select customer **US-045**. Then, on the Action Pane, select **Transactions \> Transactions** to review the customer transactions that you posted earlier.
 
- [![Review collection letter code 1 that displays for both the header and the lines](./media/Ignore-payments-creditmemos-4.PNG)](./media/Inore-payments-creditmemos-4.PNG)
+    [![Reviewing the posted customer transactions](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
-    b. Click **Post** in the Action bar and enter 1/19/2021 as the **Posting date**.
+    You must now create collection letters for customer US-045.
 
-8. Open the to **Create collection letters** page (**Navigation pane > Modules > Credit and collections > Collection letter > Create collection letters**) to create collection letters again for customer US-045.
+7. Go to **Credit and collections \> Collection letter \> Create collection letters**, and follow these steps:
 
-    a. Set the **Invoice** and **Credit note** parameters to **Yes**.
- 
-    b. The **Collection letter** parameter should default to **Collection per customer**.
- 
-    c. Enter 1/23/2021 for **Collection letter date**.
- 
-    d. Under **Records to include**, click **Filter** to add customer, US-045, in the **Customer account** field.
- 
-    e. Click **OK**.
- 
-    f. Click **OK** again to create the collection letters. 
+    1. Set the **Invoice** and **Credit note** options to **Yes**.
 
-9. Go to **Navigation pane > Modules > Credit and collections > Collection letter > Review and process collection letters**.
+        By default, the **Collection letter** field should be set to **Collection per customer**.
 
-    a. Notice the collection letter code in the header displays **Collection letter 1**, but the transaction lines display **Collection letter 2**, which is shown in the following illustration. 
+    2. In the **Collection letter date** field, enter **1/19/2021**.
+    3. On the **Records to include** FastTab, select **Filter**, and then, in the **Customer account** field, add customer **US-045**.
+    4. Select **OK**.
+    5. Select **OK** to create collection letters.
 
- [![Review collection letter codes are different because Ignore payments and credit memos parameter is set to Yes](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+8. Go to **Credit and collections \> Collection letter \> Review and process collection letters**, and follow these steps:
 
-    b. The parameter is set to **Yes** to ignore payments and credit memos when calculating the collection letter code.
- 
-    c. Do not post this collection letter.
+    1. Notice that the collection letter code on both the header and the transaction lines is **Collection letter 1**, because this collection letter is the first collection letter in the sequence. (To view the transaction lines, you might have to select the **Transactions** FastTab.)
 
-10. Open the **Accounts receivable parameters** page (**Navigation pane > Modules > Credit and collections > Setup > Accounts receivable parameters**).
- 
-    a. Click the **Collections** tab.
-    b. Change **Ignore payments and credit memos when calculating collection letter code** to **No**.
+        [![Verifying that the same collection letter code appears on the header and the lines](./media/Ignore-payments-creditmemos-4.PNG)](./media/Inore-payments-creditmemos-4.PNG)
 
- [![Set up options for collection letters to set Ignore payments and credit memos to No](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+    2. On the Action Pane, select **Post**.
+    3. In the **Posting date** field, enter **1/19/2021**.
 
-11. Open the **Create collection letters** page to create collection letters again for customer US-045.
+    You must now create collection letters again for customer US-045.
 
-    a. Set the **Invoice** and **Credit note** parameters to **Yes**.
- 
-    b. The **Collection letter** parameter should default to **Collection per customer**.
- 
-    c. Enter 1/23/2021 for **Collection letter date**.
- 
-    d. Under Records to include, click **Filter** to add US-045 in the **Customer account** field.
- 
-    e. Click **OK**.
- 
-    f. Click **OK** again to create collection letters. 
+9. Go to **Credit and collections \> Collection letter \> Create collection letters**, and follow these steps:
 
-12. Open the **Review and process collection letter** page (**Navigation pane > Modules > Credit and collections > Collection letter > Review and process collection letters**).
-    
-   a. Notice the collection letter code that's displayed in the header is **Collection letter 2**, while on the transaction lines it's displayed as **Collection letter 2**, as shown in the following illustration.
+    1. Set the **Invoice** and **Credit note** options to **Yes**.
 
-[![Review collection letter codes are the same because Ignore payments and credit memos parameter is set to No](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+        By default, the **Collection letter** field should be set to **Collection per customer**.
 
-   b. The parameter is set to **No** to ignore payments and credit memos when calculating the collection letter code. 
+    2. In the **Collection letter date** field, enter **1/23/2021**.
+    3. On the **Records to include** FastTab, select **Filter**, and then, in the **Customer account** field, add customer **US-045**.
+    4. Select **OK**.
+    5. Select **OK** to create collection letters.
 
+10. Go to **Credit and collections \> Collection letter \> Review and process collection letters**, and follow these steps:
+
+    1. Notice that the collection letter code on the header is **Collection letter 1**. However, the code on the transaction lines is **Collection letter 2**.
+
+        [![Verifying that different collection letter codes appear on the header and the lines](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+
+        The codes differ because the **Ignore payments and credit memos when calculating collection letter code** option is to **Yes**.
+
+    2. Don't post this collection letter.
+
+11. Go to **Credit and collections \> Setup \> Accounts receivable parameters**, and then, on the **Collections** tab, set the **Ignore payments and credit memos when calculating collection letter code** option to **No**.
+
+    [![Setting the Ignore payments and credit memos when calculating collection letter code option to No](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+
+    You must now create collection letters again for customer US-045.
+
+12. Go to **Credit and collections \> Collection letter \> Create collection letters**, and follow these steps:
+
+    1. Set the **Invoice** and **Credit note** options to **Yes**.
+
+        By default, the **Collection letter** field should be set to **Collection per customer**.
+
+    2. In the **Collection letter date** field, enter **1/23/2021**.
+    3. On the **Records to include** FastTab, select **Filter**, and then, in the **Customer account** field, add customer **US-045**.
+    4. Select **OK**.
+    5. Select **OK** to create collection letters.
+
+13. Go to **Credit and collections \> Collection letter \> Review and process collection letters**, and notice that the collection letter code on both the header and the transaction lines is **Collection letter 2**.
+
+    [![Verifying that the same collection letter code appears on the header and the lines](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+
+    The same code appears in both places because the **Ignore payments and credit memos when calculating collection letter code** option is now set to **No**.
