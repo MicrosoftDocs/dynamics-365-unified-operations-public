@@ -49,7 +49,7 @@ This topic lists the steps for calculating Tax Deducted at Source (TDS) on invoi
 
 5. Click the **Setup** tab (line-level) to view or change the TDS group defined at the header-level. The TDS group is displayed in the **TDS group** field, which is under the **Withholding tax group** field group.
 
-6. Click the **Tax information** tab and select the and alternate addresses that are set up for the company name that's displayed in this field. The company name is displayed in the **Name** field, which is under the **Company information** field group. 
+6. Click the **Tax information** tab and select alternate addresses that are set up for the company name that's displayed in this field. The company name is displayed in the **Name** field, which is under the **Company information** field group. 
 
    The TAN of the selected company name is displayed in the **Tax Account Number** (**TAN**) field, under the **Withholding tax** field group. 
 
@@ -71,6 +71,6 @@ The fields on the **Overview** tab, **General** tab, and **Adjustment** tab in t
 
 10. Post the invoice. The TDS amount calculated on purchase invoices is posted to the payable account and the TDS amount calculated on sales invoices is posted to the receivable account that is defined for each TDS tax code in the TDS group. The payable accounts or receivable accounts for TDS tax codes are defined on the **Withholding tax codes** page.
 
-11. Click **Inquiry button > Invoice > Posted withholding tax** button to open the **Withholding tax transactions** page. You can view the total percentage used to calculate TDS for the transaction in the **Value** field .
+11. Click **Inquiry button > Invoice > Posted withholding tax** button to open the **Withholding tax transactions** page. You can view the total percentage used to calculate TDS for the transaction in the **Value** field.
 
 The fields on the **Overview** tab, **General** tab, and **Amount** tab in the **Withholding tax transactions** page display the information of TDS calculated for the transaction. View the TDS calculation information for each TDS tax code attached to the TDS group.
