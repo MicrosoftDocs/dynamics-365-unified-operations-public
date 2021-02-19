@@ -3,7 +3,7 @@
 
 title: Create or update methodologies
 description: Lifecycle Services provides methodologies that you can use to ensure a more repeatable and predictable implementation project experience.
-author: meeramahabala
+author: angelmarshall
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom: 266824
 ms.assetid: ac723685-f87c-4854-9bb7-b92ccf1094eb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: meeram
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
