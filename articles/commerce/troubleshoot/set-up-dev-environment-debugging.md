@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.18
 
 ## Description
 Dynamics 365 Commerce Tier 1 environments are generally deployed for Commerce runtime (CRT) and point of sale (POS) extension development. They are standalone environments that don't include e-commerce components. E-commerce comontents aren't included because of the software as a service (SaaS) nature of the architecture. 
-There may be scenarios where you want to test calling extensions on a Tier 1 environment to allow debugging of extensions from e-commerce components. General instructions are available in the [Debug against a Tier 1 Commerce development environment*](https://docs.microsoft.com/dynamics365/commerce/e-commerce-extensibility/debug-tier-1) topic. You may encounter various content server policy-related errors, though, because of cross-server calls, as the site is now calling a different Retail server.
+There may be scenarios where you want to test calling extensions on a Tier 1 environment to allow debugging of extensions from e-commerce components. General instructions are available in the [Debug against a Tier 1 Commerce development environment](https://docs.microsoft.com/dynamics365/commerce/e-commerce-extensibility/debug-tier-1) topic. You may encounter various content server policy-related errors, though, because of cross-server calls, as the site is now calling a different Retail server.
 
 Below is as sample error that may be displayed. The error below results from selecting a variant on a product details page.
 
