@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics-365-retail
 ms.technology:  
 
 # optional metadata
