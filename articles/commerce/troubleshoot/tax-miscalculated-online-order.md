@@ -40,7 +40,7 @@ When placing an e-commerce order, the taxes are calculated incorrectly or the ta
 
 ### Configure the sales tax for the retail store
 
-For pickup in store, the tax group comes from the store that's selected for pickup. Refer to the [Set other tax options for stores](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores) article for details.
+For pickup in a store, the tax group comes from the store that's selected for pickup. Refer to the [Set other tax options for stores](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores) article for details.
 
 1. Go to Dynamics 365 Commerce headquarters.
 
@@ -52,7 +52,7 @@ For pickup in store, the tax group comes from the store that's selected for pick
 
 ### Configure the sales tax for the customer's address 
 
-For shipping with a sales tax on the customer's address, the delivery address for the line determines the tax group for the line. If the customer is shipping to an existing address that has a tax group already configured, the existing tax group will be used. By default, addresses aren't created with a tax group.
+For shipping with a sales tax on the customer's address, the delivery address for the line determines the tax group for the line. If the customer is shipping to an existing address that has a tax group that's already configured, the existing tax group will be used. By default, addresses aren't created with a tax group.
 
 1. Go to Dynamics 365 Commerce headquarters.
 
@@ -62,13 +62,13 @@ For shipping with a sales tax on the customer's address, the delivery address fo
 
 1. On the **Addresses** tab, select the address that you want to configure sales taxes for, select **More options**, and then select **Advanced**.
 
-1. On the *General** tab, select the **Tax group**.
+1. On the **General** tab, select the **Tax group**.
 
 1. In the **Sales tax** field, select the appropriate value.
 
 ### Configure general sales tax groups
 
-For shipping without a sales tax on the customer's address, the tax group will be defined using the delivery address of the line and the
+For shipping without a sales tax on the customer's address, the tax group is defined using the delivery address of the line and the
 destination-based taxes configured for the tax group. Refer to the [Set up taxes for online stores based on destination](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination) article for details.
 
 1. Go to Dynamics 365 Commerce headquarters.
@@ -78,10 +78,4 @@ destination-based taxes configured for the tax group. Refer to the [Set up taxes
 !. Select the tax group on the left that you want to configure.
 
 1. In the **Retail destination based tax** section, configure the taxes for the sales tax group.
-
-
-
-
-
-
 
