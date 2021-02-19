@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 02/03/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: human-resources 
 ms.technology:  
  
 # optional metadata 
