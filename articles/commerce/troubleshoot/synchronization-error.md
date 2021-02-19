@@ -44,4 +44,4 @@ When synchronizing an online order, the following error message is displayed: "T
 
 1. Go to **Accounts receivable > Payment setup > Payment services**.
 
-1. Make sure one payment service is configured with the **Default processor for new credit cards**.
+1. Make sure one payment service is configured with the **Default processor for new credit cards** setting.
