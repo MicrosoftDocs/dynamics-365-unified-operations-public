@@ -38,6 +38,8 @@ When invoicing a return order with a credit card that's different from the card 
 
 The payment authorization details will include the following error message: "Adyen gateway SendRequest() failed with status 'InternalServerError'.22144; Empty response returned from Adyen.(22001);"
 
+![Refund on return order is declined error](media/refund-order-decline.jpg)
+
 ## Resolution
 
 ### Enable blind returns in Adyen
