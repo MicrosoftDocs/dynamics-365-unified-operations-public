@@ -70,7 +70,9 @@ A retail store that's configured for pickup scenarios isn't displayed in the res
 
 1. Under **Setup**, make sure the retail store is configured correctly for the fulfillment group.
 
-
+## Additional resources 
+- [Create an operating unit](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit)
+- [Set up an online channel](../channel-setup-online.md)
 
 
 
