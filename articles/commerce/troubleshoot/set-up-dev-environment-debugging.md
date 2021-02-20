@@ -62,3 +62,6 @@ In the browser debugger tools (F12), a similar error is displayed that mentions 
 > [!NOTE]
 > B2C sign-in (user login) won't work in a local development environment. However, you can use guest checkouts or build page mocks to simulate a user login if needed. 
 
+## Additional Resources
+- [Get started with e-commerce online extensibility development](../e-commerce-extensibility/sdk-getting-started.md)
+- [Manage Content Security Policy (CSP) on e-Commerce site](../manage-csp.md)
