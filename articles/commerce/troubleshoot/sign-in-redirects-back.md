@@ -47,6 +47,8 @@ After configuring a new AAD B2C tenant in site builder, selecting **Sign in** re
 
 1. Under the list for **Reply URL**, make sure you have two entries for both site domain and e-commerce-generated URL.
 
+![example error](media/aad-b2c-reply-url.jpg)
+
 > [!NOTE]
 > These URLs must use a valid URK format without leading or trailing slashes.
 
