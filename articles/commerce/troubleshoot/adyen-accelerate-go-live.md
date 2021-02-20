@@ -47,3 +47,6 @@ If you use Adyen for your accelerated Dynamics 365 Commerce go-live, you might n
 | **Subject line** | Dynamics 365 Commerce Site Launch - &lt;customer name&gt;: Adyen Account Setup |
 | **Body** | Hi Joe,</br>We would like to initiate an accelerated Adyen onboarding process for our Dynamics 365 e-Commerce go-live. Our Merchant Account is [merchant account name].</br>Thanks</br> |
 
+## Additional Resources
+- [Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector)
+- [Accept payments with the Adyen conenctor for Dynamics 365 Commerce](https://www.adyen.com/partners/dynamics-365-commerce)
