@@ -41,7 +41,8 @@ When navigating to the **Checkout** page, the **Payment method** section doesn't
 ### Wait for Cloud Scale Unit cache to expire
 The payment service settings on the **Online store** page, including changes to the **Merchant account ID** or **Cloud API** key, and various configuration settings relating to payment method, are cached on the Commerce Scale Unit and can take up to 15 minutes to appear on the e-commerce site.
 
-
+## Additional Resources
+- [Set up an online channel](../channel-setup-online.md)
 
 
 
