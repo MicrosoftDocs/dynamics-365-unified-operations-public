@@ -36,6 +36,8 @@ ms.dyn365.ops.version: 10.0.18
 ## Description
 When navigating to the **Checkout** page, the **Payment method** section doesn't load and throws the following error: "Something went wrong. Please try again later."
 
+![Payment module error](media/payment-module-error.jpg)
+
 ## Resolution
 
 ### Wait for Cloud Scale Unit cache to expire
