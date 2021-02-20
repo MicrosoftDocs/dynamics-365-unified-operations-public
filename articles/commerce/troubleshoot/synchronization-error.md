@@ -45,3 +45,6 @@ When synchronizing an online order, the following error message is displayed: "T
 1. Go to **Accounts receivable > Payment setup > Payment services**.
 
 1. Make sure one payment service is configured with the **Default processor for new credit cards** setting.
+
+## Additional Resources
+- [Credit card setup, authorization, and capture](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/credit-card-authorizations)
