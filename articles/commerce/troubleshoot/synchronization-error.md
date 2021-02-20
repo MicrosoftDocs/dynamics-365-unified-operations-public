@@ -36,6 +36,8 @@ ms.dyn365.ops.version: 10.0.18
 ## Description
 When synchronizing an online order, the following error message is displayed: "There must be a default payment service to process credit card transactions."
 
+![Default payment service missing error](media/default-payment-method-error.jpg)
+
 ## Resolution
 
 ### Set the default payment service
