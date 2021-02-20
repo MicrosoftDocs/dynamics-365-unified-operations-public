@@ -79,3 +79,5 @@ destination-based taxes configured for the tax group. Refer to the [Set up taxes
 
 1. In the **Retail destination based tax** section, configure the taxes for the sales tax group.
 
+## Additional Resources
+- [Configure sales tax for online orders](../sales-tax-config.md)
