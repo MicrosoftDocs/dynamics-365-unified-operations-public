@@ -48,6 +48,8 @@ Once an order is placed, the payment is immediately settled in the Adyen porta,l
 
 1. In the **Capture delay** field, select **Manual**.
 
+![Adyen capture delay setting](media/adyen-capture-delay.jpg)
+
 ## Additional Resources
 - [Adyen payment capture](https://docs.adyen.com/point-of-sale/capturing-payments)
 - [Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector.md)
