@@ -36,6 +36,8 @@ ms.dyn365.ops.version: 10.0.18
 ## Description
 The **Save for next payment** option doesn't appear on the **Checkout** page under **Payment method**.
 
+![Payment module save for next payment checkbox](media/payment-module-save-payment.jpg)
+
 ## Resolution
 
 ### Make sure the Dynamics 365 Payment Connector for Adyen is configured correctly
@@ -47,6 +49,8 @@ The **Save for next payment** option doesn't appear on the **Checkout** page und
 1. Select the online store that you want to configure the Adyen connector for.
 
 1. On the **Online stores** page, on the **Payent accounts** tab, make sure the **Allow saving payment information in e-commerce** field is set to **True**.
+
+![Payment connector save for next payment checkbox](media/payment-connector-save-payment.jpg)
 
 ## Additional Resources
 - [e-Commerce payment module](../payment-module.md)
