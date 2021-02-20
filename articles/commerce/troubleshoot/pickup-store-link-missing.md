@@ -36,6 +36,8 @@ ms.dyn365.ops.version: 10.0.18
 ## Description
 When navigating to the **Product details** or the **Shopping cart** page, the **Pick this up** button does not show up for a product.
 
+![Pick this up button](media/pickup-button-missing.jpg)
+
 ## Resolution
 
 ### Enable "BOPIS" extension in site builder
