@@ -48,9 +48,9 @@ The **Save for next payment** option doesn't appear on the **Checkout** page und
 
 1. On the **Online stores** page, on the **Payent accounts** tab, make sure the **Allow saving payment information in e-commerce** field is set to **True**.
 
-
-
-
+## Additional Resources
+- [e-Commerce payment module](../payment-module.md)
+- [Saving online payment instruments with the Adyen connector](../adyen-connector-listpi.md)
 
 
 
