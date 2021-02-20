@@ -52,3 +52,6 @@ During the steps to Deploy a new e-commerce tenant, the AAD Security Group doesn
 > [!NOTE]
 > For the drop down with the security groups to get populated you must hit the '**Enter**' key after typing in the name of the AAD Security Group you created. The search will filter all the AAD Security Groups the user has access to that start with the search text, so you can use a shorter search term to allow a broader search for troubleshooting purposes. 
 
+## Additional Resources
+- [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+- [Deploy a new e-commerce tenant](../deploy-ecommerce-site.md)
