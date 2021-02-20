@@ -54,8 +54,6 @@ The **Printer** destination can be configured only for file components that are 
 
 ### Limitations
 
-This feature is a preview feature and is subject to the terms of use that are described in [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
-
 The **Printer** destination is implemented only for cloud deployments.
 
 ### Use the Printer destination
