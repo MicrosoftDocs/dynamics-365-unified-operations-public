@@ -50,5 +50,7 @@ After configuring a new AAD B2C tenant in site builder, selecting **Sign in** re
 > [!NOTE]
 > These URLs must use a valid URK format without leading or trailing slashes.
 
-
+## Additional Resources
+- [Register a web application in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga#register-a-web-application)
+- [Set up a B2C tenant in Commerce](../set-up-b2c-tenant.md)
 
