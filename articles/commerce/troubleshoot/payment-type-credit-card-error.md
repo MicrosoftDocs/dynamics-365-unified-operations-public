@@ -37,6 +37,8 @@ ms.dyn365.ops.version: 10.0.18
 When navigating to the **Sales order** page after synchronizing an order, the following error message is displayed: "The
 payment type must be credit card, since the credit card number has been specified."
 
+![Payment type must be credit card](media/payment-type-must-be-credit-card.jpg)
+
 ## Resolution
 
 ### Set the payment type on the terms of payment 
