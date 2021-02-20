@@ -70,6 +70,11 @@ When navigating to the **Product details** or the **Shopping cart** page, the **
 
 1. On the left navigation, select **Customer orders**. On the **Payments** tab, make sure the **Terms of payment** and **Method of payment** are set up correctly.
 
+### Additional resources
+- [Configure BOPIS](../cpe-bopis.md)
+- [Enable multiple pickup delivery modes for customer orders](../multiple-pickup-modes.md)
+- [Omni-channel Commerce order payments](../dev-itpro/commerce-payments.md)
+- [e-Commerce store selector module](../store-selector.md)
 
 
 
