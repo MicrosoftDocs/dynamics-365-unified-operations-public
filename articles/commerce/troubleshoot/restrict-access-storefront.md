@@ -39,7 +39,7 @@ During internal testing or active development, you might want to restrict access
 ## Resolution
 
 ### Setup AAD B2C using standard user flows
-Follow the steps described in the [Set up a B2C tenant in Commerce](https://docs.microsoft.com/dynamics365/commerce/set-up-b2c-tenant) article to configure Azure Active Directory (AAD) B2C for your e-commerce site.
+Follow the steps described in the [Set up a B2C tenant in Commerce](../set-up-b2c-tenant.md) article to configure Azure Active Directory (AAD) B2C for your e-commerce site.
 
 ### Restrict user access to storefront pages and block creation of new users
 1. Open site builder.
@@ -67,5 +67,6 @@ Follow the steps described in the [Set up a B2C tenant in Commerce](https://docs
 1. Select **Sign in v2** in the middle of the page. Follow the steps in the [Set up a B2C tenant in Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-b2c-tenant)
     article to configure it as your standard user flow for AAD B2C for your site during testing/development.
 
-
-
+## Additional Resources
+- [Set up a B2C tenant in Commerce](../set-up-b2c-tenant.md)
+- [Set up custom pages for user sign-ins](../custom-pages-user-logins.md)
