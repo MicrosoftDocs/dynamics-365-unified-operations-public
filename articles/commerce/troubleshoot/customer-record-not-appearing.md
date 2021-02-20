@@ -55,4 +55,5 @@ When creating a new customer record using the sign-up flow in the e-commerce sto
 
 1. On the **Online store** page, on the **General** tab, make sure the **Functionality profile** field is set to the functionality profile you created in the previous step.
 
-
+## Additional Resources
+- [Setup a B2C tenant in Commerce](../set-up-b2c-tenant.md)
