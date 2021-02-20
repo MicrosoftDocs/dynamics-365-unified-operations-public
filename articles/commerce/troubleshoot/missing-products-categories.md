@@ -52,6 +52,7 @@ and from the **Products** tab in site builder.
 
 1. Select **Save and publish** on the top navigation bar.
 
-
+## Additional Resources
+- [Associate a Dynamics 365 Commerce site with an online channel)(../associate-site-online-store.md)
 
 
