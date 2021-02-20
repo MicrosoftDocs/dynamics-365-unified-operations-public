@@ -2348,7 +2348,7 @@
         href: dev-itpro/extension-resource-localization.md
     - name: Troubleshooting
       items: 
-      - name: Order synchronization
+      - name: Order processing
         items:
         - name: "Payment type must be credit card" error
           href: troubleshoot/payment-type-credit-card-error.md
