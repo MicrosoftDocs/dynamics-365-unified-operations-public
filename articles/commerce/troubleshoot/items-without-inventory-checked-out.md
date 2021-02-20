@@ -55,7 +55,7 @@ A user is able to add an item that has no on-hand inventory in the store to thei
 ## Additional Resources
 - [Apply inventory settings in e-Commerce site settings](../inventory-settings.md)
 - [Calculate inventory availability for retail channels](../calculated-inventory-retail-channels.md)
- 
+- [Configure inventory buffers and inventory levels](../inventory-buffers-levels)
 
 
 
