@@ -48,3 +48,6 @@ payment type must be credit card, since the credit card number has been specifie
 1. Select your term of payment from the navigtion on the left.
 
 1. Make sure **Credit card** is selected in the **Payment type** field.
+
+## Additional Resources
+- [Posting of online sales and payments](../posting-online-sales-payments.md)
