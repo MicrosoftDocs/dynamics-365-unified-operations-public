@@ -60,7 +60,7 @@ Each business card should be nested inside a form group. Requirements:
 
 ## Radio button (notice it is not supported by IE) 
 
-The radio button is not supported in Internet Explorer.
+Radio buttons are not supported in Internet Explorer.
 
 Implementing a radio button has the following requirements. 
 
@@ -72,115 +72,61 @@ Implementing a radio button has the following requirements.
 
 Radio text below 
 
-![Radio buttons with text below](media/pfe-styles-radio-text-below)
+![Radio buttons with text below](media/pfe-styles-radio-text-below.png)
 
 Radio text right 
 
-![Radio buttons with text right](media/pfe-styles-radio-text-right)
+![Radio buttons with text right](media/pfe-styles-radio-text-right.png)
 
- 
+In Internet Explorer, the radio buttons look like:
 
-  
+![Radio buttons in Internet Explorer](media/pfe-styles-browser.png)
 
-For IE it will look as: 
-
- 
-
-  
-
-  
-
-  
-
-Buttons: 
-
-  
+## Buttons
 
 All buttons, in order to be styled similarly to the default Production Floor Execution buttons are required to : 
 
-  
++ Button should have the next property: 
 
-Button should have the next property: 
-
-Button Display set to TextWithImageLeft 
-
-Normal Image should not be empty. For ex: CoffeeScript 
-
-Text should not be empty. For ex: Start Break 
-
-Width and Height set to Auto 
-
-  
+    - Button Display set to TextWithImageLeft 
+    - Normal Image should not be empty. For ex: CoffeeScript 
+    - Text should not be empty. For ex: Start Break 
+    - Width and Height set to Auto 
 
 Each group of buttons should be nested inside a form group. All buttons within each group will have the same styles. 
 
-  
-
-Primary button 
-
-  
+## Primary button 
 
 In order to highlight a button, it should be located inside group which has "DefaultButtonGroup" or  PrimaryButtonGroup"  in its name (for ex: DefaultButtonGroup10) : 
 
-  
+![Primary button appearance](media/pfe-styles-first.png)
 
-  
-
- 
-
-  
-
-Secondary button 
-
-  
+## Secondary button 
 
 Buttons inside groups with the following names : exactly "Right panel" or starts with "SecondaryButtonGroup" have the following styles :  
 
+![Secondare button appearance](media/pfe-styles-second.png)
  
-
-  
-
-Third button 
-
-  
+## Tertiary button 
 
 Buttons inside groups with the following names : exactly "Left panel" or starts with "ThirdButtonGroup" have the following styles :  
 
+![Tertiary button appearance](media/pfe-styles-third.png)
  
-
-  
-
-  
-
-  
-
-Fourth Button 
-
-  
+## Quaternary button
 
 Buttons inside groups with the following names : starts with "FourthButtonGroup". 
 
-  
-
 Property setup: 
 
-Button Display set to TextOnly 
+    - Button Display set to TextOnly 
+    - Normal Image should be empty. 
+    - Text should not be empty. For ex: View or edit 
+    - Width and Height set to Auto 
 
-Normal Image should be empty. 
+![Quaternary button appearance](media/pfe-styles-fourth.png)
 
-Text should not be empty. For ex: View or edit 
-
-Width and Height set to Auto 
-
-  
-
-  
-
- 
-
-  
-
-FlatButtonGroup 
+# FlatButtonGroup 
 
   
 
