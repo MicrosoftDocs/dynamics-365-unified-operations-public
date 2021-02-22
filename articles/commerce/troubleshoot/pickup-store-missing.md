@@ -50,13 +50,13 @@ A retail store that's configured for pickup scenarios isn't displayed in the res
 
 1. Go to **Organization administration > Organizations > Operating units**.
 
-1. Search for the operating unit number that you noted previouly. and select the operating unit in the search results list.
+1. Search for the operating unit number that you noted previously. and select the operating unit in the search results list.
 
 1. On the **Addresses** tab, select **More options** and then select **Advanced**.
 
 1. On the **General** tab, make sure the **Longitude** and **Latitude** are set correctly. Check the sign of the value as well.
 
-### Configure fullfillment groups
+### Configure fulfillment groups
 
 1. Go to Commerce headquarters.
 
@@ -64,9 +64,9 @@ A retail store that's configured for pickup scenarios isn't displayed in the res
 
 1. Select the online store that you want to configure.
 
-1. In the top navigation, select the **Set up** menu, and then select **Fullfillment group assignment**.
+1. In the top navigation, select the **Set up** menu, and then select **Fulfillment group assignment**.
 
-1. On the **Fullfillment group assignment** page, select the fulfillment group for the online store.
+1. On the **Fulfillment group assignment** page, select the fulfillment group for the online store.
 
 1. Under **Setup**, make sure the retail store is configured correctly for the fulfillment group.
 
