@@ -52,7 +52,7 @@ Follow the steps described in the [Set up a B2C tenant in Commerce](../set-up-b2
 
 1. Select the primary page fragment on the left page fragment tree, and then select **Edit** on on the top-right corner of the page. 
 
-1. Select **Requires sign-in?**, and then select **Finiah editing**.
+1. Select **Requires sign-in?**, and then select **Finish editing**.
 
 1. Go to the Azure portal. 
 
