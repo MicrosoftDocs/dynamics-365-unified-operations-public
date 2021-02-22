@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer management in stores
-description: This topic explains how retailers can enable customer management capabilities at the point of sale (POS) in Dynamics 365 Commerce.
+description: This topic explains how retailers can enable customer management capabilities at the point of sale (POS) in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 02/23/2021
@@ -30,45 +30,45 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how retailers can enable customer management capabilities at the point of sale (POS) in Dynamics 365 Commerce.
+This topic explains how retailers can enable customer management capabilities at the point of sale (POS) in Microsoft Dynamics 365 Commerce.
 
-It's important for store associates to have the ability to create and edit customer records at the POS so that they can capture any updates to customer information such as email, phone number, and address. This information is helpful in downstream systems such as marketing since their effectiveness depends on the accuracy of their customer data.
+It's important that store associates be able to create and edit customer records at the POS. In that way, they can capture any updates to customer information such as the email address, phone number, and address. This information is helpful in downstream systems such as marketing, because the effectiveness of those systems depends on the accuracy of their customer data.
 
-Sales associates can trigger the customer creation workflow from two POS entry points: by selecting a button mapped to the **Customer add** operation, or from the search results page by selecting **Create customer** on the app bar. This opens a **New customer** form where a sales associate can enter required customer details such as name, email, phone number, address, and any other information that is relevant to the business. This additional data can be captured using the customer attributes associated with the customer. For more information about customer attributes, see [Customer attributes](dev-itpro/customer-attributes.md).
+Sales associates can trigger the customer creation workflow from two POS entry points. They can select a button that is mapped to the **Customer add** operation, or they can select **Create customer** on the app bar on the search results page. In both cases, the **New customer** dialog box appears, where sales associates can enter required customer details, such as the customer's name, email address, phone number, address, and any additional information that is relevant to the business. That additional information can be captured by using the customer attributes that are associated with the customer. For more information about customer attributes, see [Customer attributes](dev-itpro/customer-attributes.md).
 
-Sales associates can also capture secondary email and phone numbers, along with the customer's intent whether to receive marketing information on any of the secondary emails or phone numbers. To enable this capability, retailers must enable the **Capture multiple emails and phone numbers and consent for marketing on these contacts** feature in Commerce headquarters at **Systems administration \> Workspaces**.
+Sales associates can also capture secondary email addresses and phone numbers. Additionally, they can capture the customer's preference about receiving marketing information via any of those secondary email addresses or phone numbers. To enable this capability, retailers must turn on the **Capture multiple emails and phone numbers and consent for marketing on these contacts** feature in the **Feature management** workspace in Commerce headquarters (**Systems administration \> Workspaces \> Feature management**).
 
 ## Default customer properties
 
-The "all stores" form in Commerce headquarters (**Retail and Commerce \> Channels \> Stores**) allows retailers to associate a default customer with each store. Commerce then copies properties defined for the default customer to newly created customer records. For example, the **Create customer** form displays properties such as customer type, customer group, receipt preference, currency, and language which are inherited from the default customer associated with the store. Any affiliations (groupings of customers) are also inherited from the default customer. However, financial dimensions are instead inherited from the customer group associated with the default customer, and not from the default customer record. 
+Retailers can use the **All stores** page in Commerce headquarters (**Retail and Commerce \> Channels \> Stores**) to associate a default customer with each store. Commerce then copies the properties that are defined for the default customer to all new customer records that are created. For example, the **Create customer** dialog box shows properties that are inherited from the default customer that is associated with the store. Those properties include the customer type, customer group, receipt preference, currency, and language. Any affiliations (groupings of customers) are also inherited from the default customer. However, financial dimensions are inherited from the customer group that is associated with the default customer, not from the default customer itself.
 
-A sales associate can capture multiple addresses for a customer, and the customer's name and phone number are inherited from the contact information associated with the address. The **Addresses** FastTab of a customer record displays a **Purpose** property that can be modified by a sales associate. This property supports values such as home, office, and post box. The default value is "Home" if the customer type is "Person," and "Business" if the customer type is "Organization." The value for the address property **Country** is inherited from the primary address specified on the operating unit form in Commerce headquarters.
+Sales associates can capture multiple addresses for a customer. The customer's name and phone number are inherited from the contact information that is associated with the address. The **Addresses** FastTab of a customer record includes a **Purpose** field that sales associates can edit. If the customer type is **Person**, the default value is **Home**. If the customer type is **Organization**, the default value is **Business**. Other values that this field supports include **Home**, **Office**, and **Post box**. The value of the **Country** field for an address is inherited from the primary address that is specified on the operating unit page in Commerce headquarters.
 
-## Sync and Async customers
+## Sync customers and Async customers
 
-In Commerce, there are two modes of customer creation: Synchronous (also know as "Sync") and Asynchronous (also known as "Async"). By default, customers are created synchronously (in other words, created in Commerce headquarters in real time). This mode is beneficial because a newly created customer is immediately searchable across channels. However, there is a drawback to this approach since creating customers synchronously generates Real Time Service (RTS) calls to headquarters, which can impact performance if a large number of customer creation calls are made concurrently. 
+In Commerce, there are two modes of customer creation: Synchronous (or Sync) and Asynchronous (or Async). By default, customers are created synchronously. In other words, they are created in Commerce headquarters in real time. The Sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. Because it generates Real Time Service (RTS) calls to Commerce headquarters, performance can be affected if many concurrent customer creation calls are made.
 
-If the **Create customer in async mode** setting is enabled on the functionality profile of the store (**Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**), customer records are only created in the channel database without RTS calls. Creating customers in Async mode does not impact headquarters performance. Each newly created Async customer record is assigned a temporary globally unique identifier (GUID) that is used as the account ID. This ID is not shown to POS users, who will see instead "Pending sync" as the customer ID. Note that although this configuration forces Async mode customer creation, customer record edits are always done synchronously.
+If the **Create customer in async mode** setting is enabled in the store's functionality profile (**Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**), customer records are only created in the channel database without RTS calls. The Async customer creation mode doesn't affect the performance of Commerce headquarters. A temporary globally unique identifier (GUID) is assigned to every new Async customer record and used as the customer account ID. This GUID isn't shown to POS users. Instead, those users will see **Pending sync** as the customer account ID. Although this configuration forces customers to be created asynchronously, note that edits to customer records are always done synchronously.
 
 ### Convert Async customers to Sync customers
 
-To convert Async customers to Sync customers, you must run the **P-Job** to send the Async customer to headquarters, and run the **Synchronize customers and business partners from async mode** job to create the customer account ID. Then run the **1010** job to synchronize newly created customer account IDs to the channels.
+To convert Async customers to Sync customers, you must first run the P-job to send the Async customers to Commerce headquarters. Then run the **Synchronize customers and business partners from async mode** job to create customer account IDs. Finally, run the **1010** job to sync the new customer account IDs to the channels.
 
 ### Async customer limitations
 
-The Async customer functionality currently has the following limitations.
+The Async customer functionality currently has the following limitations:
 
-- Async customer records cannot be edited unless the customer has been created in headquarters and the new customer ID has been synchronized back to the channel.
-- Affiliations cannot be associated with Async customers, so newly created Async customers do not inherit affiliations from the default customer.
-- Loyalty cards cannot be issued to the Async customers unless the new customer account ID is synchronized back to the channel.
-- Secondary emails and phone numbers cannot be captured for Async customers.
+- Async customer records can't be edited unless the customer has been created in Commerce headquarters and the new customer account ID has been synced back to the channel.
+- Affiliations can't be associated with Async customers. Therefore, new Async customers don't inherit affiliations from the default customer.
+- Loyalty cards can't be issued to Async customers unless the new customer account ID has been synced back to the channel.
+- Secondary email addresses and phone numbers can't be captured for Async customers.
 
 ### Customer creation in POS offline mode
 
-If the POS goes offline with the Async customer creation mode enabled, any new customer records are created using Async mode. If the POS goes offline with the Async customer creation mode disabled, the system automatically switches to Async mode customer creation. Since there may be customer records that get created asynchronously even if the Async customer creation mode is disabled, headquarters administrators must ensure that they have created and scheduled a recurring batch job for **P-job**, **Synchronize customers and business partners from async mode**, and **1010** jobs to convert any Async customers to Sync customers in headquarters.
+If the POS goes offline while the Async customer creation mode is enabled, new customer records are created asynchronously. If the POS goes offline while the Async customer creation mode is disabled, the system automatically switches to the Async customer creation mode. In other words, customer records might be created asynchronously even if the Async customer creation mode is disabled. Therefore, Commerce headquarters administrators must create and schedule a recurring batch job for the P-job, the **Synchronize customers and business partners from async mode** job, and the **1010** job, so that any Async customers are converted to Sync customers in Commerce headquarters.
 
 > [!NOTE]
-> If the **Filter shared customer data tables** setting is enabled, customer records are not created in POS offline mode. For more information, see [Offline data exclusion](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
+> If the **Filter shared customer data tables** setting is enabled, customer records aren't created in POS offline mode. For more information, see [Offline data exclusion](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
 
 ## Additional resources
 
