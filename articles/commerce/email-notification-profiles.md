@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 
-As you're creating channels, you can set up an email notification profile so that emails can be sent to customers for various transactional events, such as order creation, order shipping status, and payment failure.
+When you create channels, you can set up an email notification profile. In that way, emails can be sent to customers for various transactional events, such as order creation, order shipping status, and payment failure.
 
 For additional email configuration information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -50,7 +50,7 @@ To create an email notification profile, follow these steps.
 
 ### Create an email template
 
-Before an email notification type can be enabled, you must first create an organization email template in Commerce headquarters that defines the email subject, sender, default language, and email body for each language you want to support.
+Before an email notification type can be enabled, you must create an organization email template in Commerce headquarters. This template defines the email subject, sender, default language, and email body for each language that you want to support.
 
 To create an email template, follow these steps.
 
@@ -60,7 +60,7 @@ To create an email template, follow these steps.
 1. In the **Sends name** field, enter the senders name.
 1. In the **Email Description**, enter a meaningful description.
 1. In the **Sender email**, enter the senders email address.
-1. In the **General** section, choose a **default language** for the email template. The default language will be used when a localized template does not exist for the specified language.
+1. In the **General** section, select a default language for the email template. The default language will be used when no localized template exists for the specified language.
 1. Expand the **Email message content** section and select **New** to create the template content. For each content item, select the language and provide the email subject line. If the email will have a body, ensure that the **Has body** box is checked.
 1. On the action pane, select **Email message** to provide an email body template.
 
