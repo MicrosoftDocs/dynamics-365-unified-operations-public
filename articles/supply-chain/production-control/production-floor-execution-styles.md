@@ -95,25 +95,25 @@ All buttons, in order to be styled similarly to the default Production Floor Exe
 
 Each group of buttons should be nested inside a form group. All buttons within each group will have the same styles. 
 
-## Primary button 
+### Primary button 
 
 In order to highlight a button, it should be located inside group which has "DefaultButtonGroup" or  PrimaryButtonGroup"  in its name (for ex: DefaultButtonGroup10) : 
 
 ![Primary button appearance](media/pfe-styles-first.png)
 
-## Secondary button 
+### Secondary button 
 
 Buttons inside groups with the following names : exactly "Right panel" or starts with "SecondaryButtonGroup" have the following styles :  
 
 ![Secondare button appearance](media/pfe-styles-second.png)
  
-## Tertiary button 
+### Tertiary button 
 
 Buttons inside groups with the following names : exactly "Left panel" or starts with "ThirdButtonGroup" have the following styles :  
 
 ![Tertiary button appearance](media/pfe-styles-third.png)
  
-## Quaternary button
+### Quaternary button
 
 Buttons inside groups with the following names : starts with "FourthButtonGroup". 
 
@@ -126,101 +126,63 @@ Property setup:
 
 ![Quaternary button appearance](media/pfe-styles-fourth.png)
 
-# FlatButtonGroup 
-
-  
+### FlatButtonGroup 
 
 Buttons inside groups with the following names : starts with "FlatButtonGroup" have the following styles : 
 
 Property setup: 
 
-Button Display set to ImageOnly 
++ Button Display set to ImageOnly 
++ Normal Image should not be empty. For ex: CoffeeScript 
++ Text should be empty.  
++ Width and Height set to Auto 
 
-Normal Image should not be empty. For ex: CoffeeScript 
+![Flat button appearance](media/pfe-styles-flat-button.png)
 
-Text should be empty.  
-
-Width and Height set to Auto 
-
-  
-
-  
-
- 
-
-  
-
-  
-
-    
-
-  
-
-  
-
-  
-
-Combobox 
+## Combobox 
 
 Each combobox should be nested inside a form group. Requirements : 
 
-a)The name of the group should start with "Combobox".  
++ The name of the group should start with "Combobox".  
++ Inside the group, the first control should be an AxFormStringControl which will be used as the display of the current value as well as the box where the user can type the required value. 
++ The second control should be a CommonButton control. The name should start with "ClearButton". 
 
-b)Inside the group, the first control should be an AxFormStringControl which will be used as the display of the current value as well as the box where the user can type the required value. 
+The element must contain code using the **enable** property to show or hide the button.
 
-c)The second control should be a CommonButton control. The name should start with "ClearButton". 
+For example, to show or hide the **Clear** button when the user is typing information into the input field, the following code should be used: 
 
- Note : this element must contain the logic below. In order to hide/show button the enable property should be used. 
-
-Example: 
-
-In order to hide/show the clear button when the user is typing information into the input field, the following code should be used: 
-
+```xpp
 public void textChange() 
-
-        { 
-
-            super(); 
-
-  
-
-            ClearButtonSerial.enabled(this.text()? true : false); 
-
-        } 
+{ 
+    super(); 
+    ClearButtonSerial.enabled(this.text()? true : false); 
+} 
+```
 
 It is preferable to have one method where the data is set into the input box and add enabling Clear button there. Example: 
 
+```xpp
 public void setSerialId(str _serialId) 
+{
+    JmgTmpJobBundleProdFeedback.InventSerial = _serialId; 
+    ClearButtonSerial.enabled(_serialId? true : false); 
 
+    if (_serialId) 
     { 
-
-        JmgTmpJobBundleProdFeedback.InventSerial = _serialId; 
-
-        ClearButtonSerial.enabled(_serialId? true : false); 
-
-  
-
-        if (_serialId) 
-
-        { 
-
-            this.addSerialNumber(); 
-
-        } 
-
+        this.addSerialNumber(); 
     } 
+}
+```
 
 Then you can use the following code for the clear button clicked method : 
 
- public void clicked() 
-
-        { 
-
-            element.setSerialId(''); 
-
-            InventSerialId.setFocus(); // set focus back to the input box 
-
-        } 
+```xpp
+public void clicked() 
+{ 
+    element.setSerialId(''); 
+    InventSerialId.setFocus(); // set focus back to the input box 
+} 
+```
 
 Remember to use the method of setting value into the input box for combobox when the form is initialized (method init). If value is set - clear button should be enabled, otherwise disabled.  
 
