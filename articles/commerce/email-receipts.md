@@ -67,7 +67,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 ### Set up an email receipt profile
 
 1. Go to **Retail and Commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Receipt profiles**.
-1. Press **Ctrl+N** to create a receipt profile.
+1. Select **Ctrl+N** to create a receipt profile.
 1. Enter values in the **Receipt profile ID** and **Description** fields.
 1. On the **General** FastTab, select **Add** to add a receipt type.
 1. Select **Receipt** as the receipt type, and select the receipt format to use for email receipts.
@@ -84,15 +84,14 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 1. Select **New**.
 1. Enter information in the following fields:
 
-    - In the **Email ID** field, enter a name for this template.
+    - In the **Email ID** field, enter a name for the template.
     - In the **Email description** field, enter an optional description.
     - In the **Sender name** field, specify the name that should appear as the sender of the email. Customers will see this name as the **From** name on the email.
     - In the **Sender email** field, specify a valid email address. Customers will see this email address as the **From** email address on the email.
 
-1. Under **General**, enter information in the following fields:
-    - In the **Default language code** field, select a language. This is the language that the receipt will be sent in when templates for multiple languages are configured and the store or customer's preferred language doesn't match any of those additional languages. 
-
+1. Under **General**, in the **Default language code** field, select a language. The receipt will be sent in this language if templates for multiple languages are configured, and the store's or customer's preferred language doesn't match any of those additional languages. 
 1. In the **Email message content** pane, select **New** to create a new template instance. Enter information in the following fields:
+
     - In the **Language** field, specify the language this template will be localized in. Note that this only applies to emailed receipts that contain HTML with static content above and/or below the %message% placeholder.
     - In the **Subject** field, enter a title for the email receipts.
     - Select the **Has body** check box.
@@ -103,7 +102,8 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
     %message%
     </pre>
     ```
-    You can also add HTML to display a header, footer, logo or any other static content that you want included in the receipt email. For more information about creating HTML receipt templates, see [Create a template for emailed receipts](email-templates-transactions.md#create-a-template-for-emailed-receipts). 
+
+    You can also add HTML to show a header, footer, logo, or any other static content that you want to include in the receipt email. For more information about how to create HTML receipt templates, see [Create a template for emailed receipts](email-templates-transactions.md#create-a-template-for-emailed-receipts). 
 
 1. Depending on the settings that you configured, you must run the appropriate distribution schedule jobs to synchronize the changes to MPOS.
 
