@@ -186,7 +186,7 @@ For specific steps, see the "Get started" documentation that is available for yo
 
 1. Sign in to Finance or Supply Chain Management, and verify that you're in the correct legal entity.
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-3. On the **Features** tab, select the country/region-specific feature to turn on the Electronic invoicing feature for Finance or Supply Chain Management. The following table provides a list of the celectronic invoicing features available for specific country/regions. 
+3. On the **Features** tab, select the country/region-specific feature to turn on the Electronic invoicing feature for Finance or Supply Chain Management. The following table provides a list of the electronic invoicing features available for specific country/regions. 
 
     | Feature name                                          | Country/region  |
     |-------------------------------------------------------|-----------------|
