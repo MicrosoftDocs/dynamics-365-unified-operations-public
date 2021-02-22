@@ -102,3 +102,6 @@ This release includes several additional bug fixes:
 - When a contractor is hired, the **Compensation** tab should not be available on the request/action page.
 - During the request termination process, you can't continue until all required columns contain data.
 - Sort order and date display issues on the Personnel management analytics have been addressed.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

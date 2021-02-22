@@ -54,3 +54,6 @@ This procedure will walk through creating a commerce price adjustment. A price a
 14. Close the page.
 15. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

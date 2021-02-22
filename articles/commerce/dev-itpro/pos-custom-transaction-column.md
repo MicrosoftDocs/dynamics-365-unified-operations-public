@@ -224,3 +224,6 @@ This topic explains how to add a new custom column to a POS transaction page usi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

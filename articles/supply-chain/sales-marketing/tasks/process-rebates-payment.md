@@ -54,3 +54,6 @@ This procedure demonstrates how to convert approved and processed customer rebat
     * Note that a transaction for negative amount, representing the total rebate amount, without invoice reference has been added to the customer balance.   
 15. Click Cancel.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

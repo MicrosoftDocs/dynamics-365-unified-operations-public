@@ -72,3 +72,6 @@ This function behaves like [ROUND](er-functions-mathematical-round.md), but it a
 ## Additional resources
 
 [Mathematical functions](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

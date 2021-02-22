@@ -82,3 +82,6 @@ The buttons on the Action Pane are organized on tabs. The following table briefl
 | Spare parts          | View a list of approved and alternative spare parts that can be used on the asset.                                                                               |
 | Asset consumption    | Print a report that shows consumption registrations on the asset.                                                                                                |
 | Asset fault          | Print a report that shows fault registrations on the asset.                                                                                                      |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

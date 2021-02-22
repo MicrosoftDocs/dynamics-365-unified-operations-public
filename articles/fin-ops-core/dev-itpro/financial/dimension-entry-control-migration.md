@@ -145,3 +145,6 @@ This topic describes the steps necessary to migrate default dimensions controls 
 
 - [Uptake of Dimension Entry controls](dimension-entry-control-uptake.md)
 - [Support for Dimension Entry controls on dialogs](dimension-entry-control-dialog-support.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

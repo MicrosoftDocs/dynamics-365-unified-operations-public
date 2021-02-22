@@ -373,3 +373,6 @@ export interface INumberFormatOptions {
 [Configure module properties to be shown based on context](configure-properties-context.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

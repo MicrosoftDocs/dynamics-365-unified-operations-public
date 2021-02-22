@@ -122,3 +122,6 @@ After you've marked an update as a release candidate, follow these steps to upda
 
 > [!IMPORTANT]
 > For environments that are deployed in the modern infrastructure stack, if servicing is unsuccessful, the environment is automatically rolled back. To learn why the operation was unsuccessful, you can download the logs from the environment history page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

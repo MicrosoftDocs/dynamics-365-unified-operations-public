@@ -93,3 +93,6 @@ The currency code is optional. If it's defined as an empty string, the company c
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

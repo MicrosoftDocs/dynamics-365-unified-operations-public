@@ -60,3 +60,6 @@ For more information about BPM, see [Upload custom business processes to Busines
 
 - [Globalization resources](country-region.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

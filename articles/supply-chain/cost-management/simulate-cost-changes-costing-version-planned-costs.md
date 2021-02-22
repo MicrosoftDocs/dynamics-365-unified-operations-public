@@ -62,3 +62,6 @@ After you enter the simulated cost changes, calculate the costs for manufactured
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

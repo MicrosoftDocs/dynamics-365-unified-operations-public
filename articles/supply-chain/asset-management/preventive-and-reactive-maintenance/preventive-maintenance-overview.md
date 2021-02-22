@@ -43,3 +43,6 @@ The following illustration provides an overview of the work flow from creating m
 
 ![Figure 1](media/01-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

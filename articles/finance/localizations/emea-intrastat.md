@@ -244,3 +244,6 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -103,3 +103,6 @@ The following illustration shows the **Enable shop similar description Link** ch
 [Manually create curated recommendations](create-editorial-recommendation-lists.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

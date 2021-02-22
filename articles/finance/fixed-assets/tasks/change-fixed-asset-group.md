@@ -48,3 +48,6 @@ This guide uses the USMF demo company.
 6. Click OK.
 7. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

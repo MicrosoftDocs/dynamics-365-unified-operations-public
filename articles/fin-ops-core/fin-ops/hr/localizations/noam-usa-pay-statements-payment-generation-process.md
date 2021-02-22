@@ -85,3 +85,6 @@ Yes. For example, if you must create a pay statement just so that you can correc
 
     > [!IMPORTANT]
     > You must calculate the pay statement before you can submit it for payment or post it to the general ledger.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

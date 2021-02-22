@@ -198,3 +198,6 @@ Lifecycle Services (LCS) releases new features every month. For information abou
 ## Additional resources
 
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

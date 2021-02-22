@@ -74,3 +74,6 @@ This topic explains how to get help with Finance and Operations apps or Microsof
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

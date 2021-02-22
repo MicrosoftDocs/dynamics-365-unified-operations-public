@@ -56,3 +56,6 @@ You can search on batch attributes when you do batch reservations for a sales or
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

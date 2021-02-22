@@ -52,3 +52,6 @@ ms.dyn365.ops.version: July 2017 update
 - [Vendor payments workspace](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Warehouse performance Power BI content](warehouse-power-bi-content.md)
 - [Workforce metrics Power BI content](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

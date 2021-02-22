@@ -41,3 +41,6 @@ Follow these steps to create a migration group.
 5. In the **Migration group** form, click **Entity**, and select the lines to include in the migration.
 6. Fill in any gaps in the field mapping, as required.
 7. Click **Apply sequence**, and then close the form.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

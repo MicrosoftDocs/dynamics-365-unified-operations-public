@@ -342,3 +342,6 @@ Refer to these topics to migrate code Dynamics AX 2012 that deals with context m
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

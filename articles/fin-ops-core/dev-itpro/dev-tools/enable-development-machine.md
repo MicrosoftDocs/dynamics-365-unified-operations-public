@@ -68,3 +68,6 @@ To enable a new user account to develop on the VM, the user account must be an a
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

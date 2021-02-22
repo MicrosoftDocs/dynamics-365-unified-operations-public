@@ -64,3 +64,6 @@ For more details about Platform update 29 for Finance and Operations see [Previe
 Changes to employee records rarely take effect immediately. You need to update data as of the employee's start date, which is often in the future, and you also need to update information in the past. With this streamlined navigation model, you'll be able to update future and past data without navigating to multiple forms or changing the date context. This change also dynamically promotes and displays key information in the upper banner area of the employee record.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

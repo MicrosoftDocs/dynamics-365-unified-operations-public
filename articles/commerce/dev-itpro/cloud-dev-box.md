@@ -100,3 +100,6 @@ To install the Developer topology prerequisites:
    6. Go to the **Environments** section, and click your development environment.
    7. Click the **Maintain** tab and select **Apply updates**.
    8. Select **Developer topology prerequisites** and click **Apply**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

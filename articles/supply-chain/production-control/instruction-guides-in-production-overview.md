@@ -414,3 +414,6 @@ When Supply Chain Management generates the jobs for the production floor, it wil
 - If you define several route operation relations that include the *All* relation and assign Guides to those, only the Guides from the most specific relation will be shown for the job.  
 
 ![Diagram on resolving the relevant Guides](media/instruction-guides-Resolve.png "Diagram on resolving the relevant Guides")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

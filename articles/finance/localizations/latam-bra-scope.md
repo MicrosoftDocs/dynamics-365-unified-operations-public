@@ -1196,3 +1196,6 @@ The [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics
 | SINTEGRA             | Information system for interstate goods and service transactions |
 | SEFAZ                | State tax authority |
 | SUFRAMA              | Autarchy for economic development of the Amazon region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

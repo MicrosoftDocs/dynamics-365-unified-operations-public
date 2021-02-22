@@ -64,3 +64,6 @@ Before you can migrate data from AX 2009, you must complete the following tasks 
 - Select the chart of accounts for each legal entity, or consolidate multiple legal entities into a single chart of accounts.
 - Complete the basic ledger setup.
 - Apply data conversions to the source data, based on the extended data type (EDT) of the field.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

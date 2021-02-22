@@ -99,3 +99,6 @@ Additional information about this feature is available in the
 
 This release also includes a number of bug fixes, the addition of new tables, fixes to
 existing tables, and localized label changes.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

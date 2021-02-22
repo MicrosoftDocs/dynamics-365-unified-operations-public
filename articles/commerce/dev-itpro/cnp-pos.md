@@ -92,3 +92,6 @@ The configuration to turn on this feature is completed at the register level.
 ## Additional resources
 
 [Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

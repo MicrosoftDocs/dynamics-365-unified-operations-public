@@ -47,3 +47,6 @@ Before you can use the payment traceability functionality, the following prerequ
 With the feature activated, the Tender procedure identification (CIG) and CIPE (CUP) codes are inherited in relation to the particular customer or vendor transaction. This inheritance allows for higher traceability across the system and could be reviewed by using the standard personalization mechanism. To inherit the values from the original invoice transaction during payment proposal, on the **Methods of payment** page, activate the **Base document payment** attribute. 
 To ensure that the mandatory fields correspond to the CIG and CUP codes are populated in the transaction, mark the Customer account, Vendor account, or group as with Public sector parameter.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -277,3 +277,6 @@ OnLookupPageCreated: function(args: any, multiLookup: any): void (optional)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ Additional resources
 [Set up quality orders](tasks/set-up-quality-orders.md)
 
 [Inspect the quality of goods](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

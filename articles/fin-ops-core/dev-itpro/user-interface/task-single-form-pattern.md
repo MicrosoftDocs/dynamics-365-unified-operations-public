@@ -121,3 +121,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![Previous version visual example](./media/tasksingle4.png)](./media/tasksingle4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

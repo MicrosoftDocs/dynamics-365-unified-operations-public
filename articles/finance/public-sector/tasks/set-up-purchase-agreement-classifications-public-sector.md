@@ -45,3 +45,6 @@ This procedure was created for the French public sector using the PSUS demo comp
 8. Optional: Select the Activities option to include information about tasks and milestones.
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

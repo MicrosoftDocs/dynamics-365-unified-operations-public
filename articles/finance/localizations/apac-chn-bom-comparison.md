@@ -71,3 +71,6 @@ The following table shows how a BOM comparison is done. In this example, product
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

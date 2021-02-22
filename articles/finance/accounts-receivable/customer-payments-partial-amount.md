@@ -64,3 +64,6 @@ Customers might make a partial payment where the remaining amount won't be paid 
 
 
 For more information, see [Deposit customer payments](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

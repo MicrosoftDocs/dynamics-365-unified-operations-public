@@ -43,3 +43,6 @@ This procedure shows how to release a production order. The demo data company us
 6. Click OK.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

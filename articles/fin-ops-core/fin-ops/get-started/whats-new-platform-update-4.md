@@ -101,3 +101,6 @@ We have made updates to [visual scheduling](../../dev-itpro/user-interface/gantt
 We always value your feedback. As part of this update, we periodically prompt you to rate your recommendation of the product. We encourage you to provide this feedback to help us continually improve your experience. We also encourage you to provide details about areas where we can improve.
 
 [![Prompt for feedback](./media/6666666666-1024x453.png)](./media/6666666666.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

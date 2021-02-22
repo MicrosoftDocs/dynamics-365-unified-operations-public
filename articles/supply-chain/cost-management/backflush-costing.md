@@ -129,3 +129,6 @@ You should run backflush costing to periodically value the WIP and produce an en
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

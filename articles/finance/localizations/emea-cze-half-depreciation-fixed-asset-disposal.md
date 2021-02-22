@@ -61,3 +61,6 @@ After you set up the depreciation methods, you can apply half the yearly depreci
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

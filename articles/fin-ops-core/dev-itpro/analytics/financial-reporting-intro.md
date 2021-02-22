@@ -101,3 +101,6 @@ The following components of financial reporting make it easy to create, view, an
 
 ## Additional resources
 [Generate financial reports](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

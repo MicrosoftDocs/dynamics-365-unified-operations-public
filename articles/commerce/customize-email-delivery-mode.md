@@ -76,3 +76,6 @@ To configure email templates for specific modes of delivery in Commerce headquar
 [Create call center orders](tasks/create-call-center-orders.md)
 
 [Change mode of delivery in POS](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

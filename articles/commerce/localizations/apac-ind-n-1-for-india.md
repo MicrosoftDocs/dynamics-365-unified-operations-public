@@ -52,3 +52,6 @@ GST configuration data differs between AX 2012 and Commerce versions. A special 
 2. Click **OK**.
 
 Each time tax configuration changes are made and finalized the above operation should be run before sending the data to the AX 2012 channel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

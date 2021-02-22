@@ -98,3 +98,6 @@ Open a Microsoft Windows PowerShell command window as an admin, and run the foll
 cd <update folder>\MROneBox\Scripts\Update
 .\ConfigureMRDatabase.ps1 -NewAosDatabaseName AxDB -NewAosDatabaseServerName new_name -NewMRDatabaseName ManagementReporter -NewAxAdminUserPassword AOSWebSite@123 -NewMRAdminUserName MRUser -NewMRAdminUserPassword MRWebSite@123 -NewMRRuntimeUserName MRUSer -NewMRRuntimeUserPassword MRWebSite@123 -NewAxMRRuntimeUserName MRUser -NewAxMRRuntimeUserPassword MRWebSite@123
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Integrate with LinkedIn Talent Hub
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [banner](includes/preview-feature.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
@@ -195,3 +197,6 @@ The following details are imported and included on the new employee record:
 
 [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -293,3 +293,6 @@ Next you will preview the KPI definition in the client.
     | Green if more than | 110        |
 
 8. Click **Save** on the bottom left to save changes. Notice that the KPI status color has changed in the KPI tile shown.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

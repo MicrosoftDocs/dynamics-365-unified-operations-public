@@ -74,3 +74,6 @@ After you've created the required asset lifecycle states, you can set up lifecyc
 
 6. Select **Lifecycle state updates** to define the asset lifecycle states that can follow a selected lifecycle state.
 7. You use the **Asset state** FastTab if you handle assets that you receive for repair. In the **Inbound/outbound** section, you can select asset lifecycle states to indicate the workflow of an asset that you receive for repair. If you offer loan assets to customers or departments, in the **Loan** section, you can select lifecycle states for loan assets.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

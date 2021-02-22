@@ -56,3 +56,6 @@ This article describes the steps for setting up and creating a product configura
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

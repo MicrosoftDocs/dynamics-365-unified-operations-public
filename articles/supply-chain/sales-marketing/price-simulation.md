@@ -150,3 +150,6 @@ The price simulation affects only the line that it's applied to and reduces the 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

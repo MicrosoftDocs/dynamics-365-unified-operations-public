@@ -94,3 +94,6 @@ The 200% reducing balance method divides 200 percent by the service life years.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

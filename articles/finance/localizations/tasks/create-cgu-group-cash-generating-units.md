@@ -102,3 +102,6 @@ This procedure was created using the demo data company JPMF.
     * Only active CGU groups are allowed to run recognition tests.  
 2. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

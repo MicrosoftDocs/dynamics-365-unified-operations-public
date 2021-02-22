@@ -61,3 +61,6 @@ You can generate debit notes for projects to get reimbursement of expenses occur
 28. Close the page.
 29. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

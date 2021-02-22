@@ -264,3 +264,6 @@ The following table lists the default workflow requests and response. CRT servic
 | UpdateCommissionSalesGroupRequest | UpdateCommissionSalesGroupHandler       | This request encapsulates a request for updating the sales representative on the cart or the cart line.                    |
 | UploadOrderRequest                | UploadOrderRequestHandler               | This request uploads the sales order.                                                                                      |
 | ValidateCartForCheckoutRequest    | ValidateCartForCheckoutRequestHandler   | This request validates the cart for checkout.                                                                              |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

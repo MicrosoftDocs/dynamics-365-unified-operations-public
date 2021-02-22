@@ -54,3 +54,6 @@ This topic explains how to set up attribute-based pricing. As a prerequisite, yo
 8. In the **Expression** field, type a value. For example, type `50`. 
 9. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

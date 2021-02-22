@@ -163,3 +163,6 @@ If no action mock file name is specified, the package name is used to search for
 [Core data actions](core-data-actions.md)
 
 [Call Retail Server APIs](call-retail-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

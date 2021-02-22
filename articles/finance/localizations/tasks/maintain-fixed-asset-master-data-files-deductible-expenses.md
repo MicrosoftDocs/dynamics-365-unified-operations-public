@@ -68,3 +68,6 @@ This task was created using the demo data company JPMF.
 4. Click Books.
     * Verify that the books were created automatically.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

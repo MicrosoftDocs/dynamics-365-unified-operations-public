@@ -85,3 +85,6 @@ To select a different layout for an existing page, follow these steps.
 
 [Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

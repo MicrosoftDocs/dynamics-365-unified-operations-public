@@ -68,3 +68,6 @@ If you enter `SPLIT("abc" , 1)` as data source **DS**, the expression `STRINGJOI
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

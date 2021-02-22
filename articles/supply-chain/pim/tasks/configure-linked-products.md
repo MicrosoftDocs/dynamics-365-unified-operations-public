@@ -43,3 +43,6 @@ This procedure walks through configuring linked products. This procedure uses th
 10. In the Quantity field, enter a number.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

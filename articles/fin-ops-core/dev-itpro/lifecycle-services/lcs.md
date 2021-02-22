@@ -62,3 +62,6 @@ Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that p
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

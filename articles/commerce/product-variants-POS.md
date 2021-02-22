@@ -119,3 +119,6 @@ The following table provides more information about the additional actions that 
 | Availability         | Show the ATP information for the selected variant combination for the selected location. |
 | Show all locations   | Switch to the standard inventory lookup view, and highlight inventory availability information for the item variant across all stores in the store locator group, and also in distribution centers of the **Standard/Default** type. |
 | View product details | Redirect the user to the **Product details** page of the associated product master. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

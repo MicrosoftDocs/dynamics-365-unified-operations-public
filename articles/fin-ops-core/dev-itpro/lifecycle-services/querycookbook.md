@@ -281,3 +281,6 @@ Updates statistics on the specified table. Occasionally, statistics can be found
 
 ### Parameters
 - The table name parameter is the physical name of the table to update statistics for.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

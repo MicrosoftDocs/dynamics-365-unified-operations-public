@@ -70,3 +70,6 @@ This feature is especially useful if there is unplanned maintenance. For example
 ## Next steps
 
 [Application lifecycle management](app-lifecycle-management.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

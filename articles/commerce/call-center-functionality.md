@@ -73,3 +73,6 @@ This page provides links to relevant documentation related to the setup, configu
 ## Configure continuity programs
 
 [Set up continuity programs for call centers](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

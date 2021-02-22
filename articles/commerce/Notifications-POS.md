@@ -80,3 +80,6 @@ To show the notification count on a button, you need to ensure that the correct 
 The following illustration shows the effect of selecting **Top right** versus **Center** in the **Content alignment** field for buttons of various sizes.
 
 ![Live content on POS buttons](./media/ButtonsWithLiveContent.png "Live content on POS buttons")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ This procedure shows how to set up and plan a dock appointment for a load. This 
 6. Click Save.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

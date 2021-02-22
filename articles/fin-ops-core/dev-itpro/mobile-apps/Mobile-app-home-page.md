@@ -157,3 +157,6 @@ The following table includes links to resources that can help you implement both
 
 ## Troubleshooting
 [Mobile platform resources](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

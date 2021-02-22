@@ -74,3 +74,6 @@ With Platform update 24 for Finance and Operations, users can create alert rules
 
 ### Duplicate employee check: Interface changes
 With this change, duplicates are detected as you enter name columns, and a status displays how many were found. You can select the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

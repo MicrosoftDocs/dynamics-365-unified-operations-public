@@ -211,3 +211,6 @@ The following example shows how you can set up sales tax codes and sales tax rep
 After you've generated the Swedish sales tax report, use the data on it to fill in the VAT declaration for the Swedish Tax Agency in the official format. For example, the following illustration shows what the Swedish VAT declaration has looked like since 2016.
 
 ![Swedish VAT declaration report](media/4_Swedish_VAT_declaration.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

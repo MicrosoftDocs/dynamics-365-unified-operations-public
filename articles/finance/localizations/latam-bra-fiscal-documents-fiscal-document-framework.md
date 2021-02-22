@@ -74,3 +74,6 @@ After a fiscal document is posted, the user can see the following information.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

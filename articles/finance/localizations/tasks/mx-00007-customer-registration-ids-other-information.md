@@ -49,3 +49,6 @@ This procedure walks you through creating a customer with the fiscal information
     * If the Company type for this customer is Foreign, this filed is required.  
 13. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

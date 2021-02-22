@@ -254,3 +254,6 @@ If the subledger journal entry is incorrect when you preview it before you journ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

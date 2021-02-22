@@ -58,3 +58,6 @@ Use the following procedure to set up the parameters for a Nota Fiscal eletrôni
 18. Click Save.
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

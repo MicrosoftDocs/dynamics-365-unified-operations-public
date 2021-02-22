@@ -74,3 +74,6 @@ For more information, see [Create a page container module](create-page-container
 [Test modules by using page mocks](test-page-mock.md)
 
 [Localize a module](localize-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

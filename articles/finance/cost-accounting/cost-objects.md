@@ -47,3 +47,6 @@ To make the import of cost object dimension members easier, you use data connect
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

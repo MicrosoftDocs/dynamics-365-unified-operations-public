@@ -174,3 +174,6 @@ This topic provides information about functionality that supports Russian regula
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

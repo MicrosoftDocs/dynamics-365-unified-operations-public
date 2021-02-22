@@ -66,3 +66,6 @@ The following table provides a summary of terms that you should be familiar with
 [Templates and layouts overview](templates-layouts-overview.md)
 
 [Customize site navigation](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

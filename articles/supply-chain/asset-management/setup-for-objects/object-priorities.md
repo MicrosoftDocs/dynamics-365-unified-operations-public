@@ -57,3 +57,6 @@ For more information about the setup that is related to the calculation of ratin
 
 > [!NOTE]
 > If you change an asset service level record on the **Asset service levels** page after you've already used it on a work order, the service level on maintenance requests and work orders isn't updated accordingly.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

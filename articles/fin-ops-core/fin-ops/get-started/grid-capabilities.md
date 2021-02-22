@@ -297,3 +297,6 @@ This section maintains a list of known issues for the new grid control.
 ### Quality update for 10.0.9/Platform update 33
 
 - [KB 4550367] Time values aren't formatted correctly.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

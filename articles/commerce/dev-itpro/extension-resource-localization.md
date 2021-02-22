@@ -128,3 +128,6 @@ throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSe
                         LocalizedMessageParameters = new object[] { }
                     };
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

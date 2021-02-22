@@ -92,3 +92,6 @@ Follow these steps to enable documents to be printed from POS on a Windows print
 
 4. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 5. Select job **1090**, and then select **Run now**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Analyzing questionnaire results
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 
 
 Questionnaire statistics can be used to calculate averages, totals, and percentages based on a set of demographic data. To begin this procedure, go to Questionnaire > View and analyze results > Questionnaire statistics. The demo data company used to create this procedure is USMF.
@@ -72,3 +74,6 @@ Questionnaire statistics can be used to calculate averages, totals, and percenta
 2. Click Result.
 3. Close the page.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

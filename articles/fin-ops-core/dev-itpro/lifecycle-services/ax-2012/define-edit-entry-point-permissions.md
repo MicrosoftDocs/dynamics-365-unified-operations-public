@@ -92,3 +92,6 @@ The following example shows how to use the guided form to update the entry point
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

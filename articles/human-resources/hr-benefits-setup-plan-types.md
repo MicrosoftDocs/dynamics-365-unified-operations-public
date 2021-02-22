@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Create plan types
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 A plan type in Microsoft Dynamics 365 Human Resources is a high-level grouping of specific types of benefits. Each plan type has a plan type code that determines rules for the plan type. For example, the plan type Basic life would have the plan type code Life because it’s a kind of life insurance plan and must conform to rules established for the Life plan type code. Another plan type might be Supplemental life, also with plan type code Life.
 
 Each plan type indicates whether an employee can enroll in one plan of its type or multiple. For example, an employee would likely be able to enroll in both the Basic life and the Supplemental life policies of plan type Life. An employee would likely be allowed to enroll in only one policy of type Medical.
@@ -68,3 +70,6 @@ A plan type may define coverage options. The coverage options are defined in the
    | **Reporting window** | Specifies the reporting window, in days, of the life event. **Note**: If you don't enter an amount, the system assumes the reporting window to be zero and won't process the life event. |
 
 5. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

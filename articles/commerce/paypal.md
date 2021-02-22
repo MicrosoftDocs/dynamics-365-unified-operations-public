@@ -181,3 +181,6 @@ To create a **Live** merchant account with PayPal, visit the [PayPal Checkout pa
 - [Payments FAQ](dev-itpro/payments-retail.md)
 - [Checkout module](add-checkout-module.md)
 - [Payment module](payment-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

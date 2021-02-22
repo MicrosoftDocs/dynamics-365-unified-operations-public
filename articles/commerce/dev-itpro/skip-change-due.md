@@ -58,3 +58,6 @@ To configure the property, follow these steps.
 [Configure cash denominations for the point of sale (POS)](../cash-denominations.md)
 
 [Configure credit card processing](../tasks/configure-credit-card-processing.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

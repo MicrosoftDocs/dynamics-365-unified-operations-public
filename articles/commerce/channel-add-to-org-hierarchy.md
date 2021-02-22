@@ -85,3 +85,6 @@ The following image shows a hierarchy with various channels added.
 [Set up a retail channel](channel-setup-retail.md)
 	
 [Set up an online channel](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

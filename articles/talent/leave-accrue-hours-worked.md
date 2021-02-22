@@ -106,3 +106,6 @@ A single date can only have one of each type associated with it.
 | 000337                | 8/8/2018             | Regular               | 8                    |
 | 000337                | 8/7/2018             | Regular               | 8                    |
 | 000337                | 8/9/2018             | Regular               | 8                    |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

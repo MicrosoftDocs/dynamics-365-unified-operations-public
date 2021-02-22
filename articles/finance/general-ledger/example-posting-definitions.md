@@ -132,3 +132,6 @@ In this example, any account that is part of Account Structure - P&L matches the
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

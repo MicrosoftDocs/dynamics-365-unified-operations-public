@@ -40,3 +40,6 @@ The **Server authentication purpose** property from the certificate V5 is issued
 This update allows for an alternative solution for certificate validation, which means that it’s possible to establish a secure communication.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

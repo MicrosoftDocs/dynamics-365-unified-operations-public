@@ -163,3 +163,6 @@ Find more details in the following topics:
 - [Agreements](rus-agreements.md)
 - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
 - [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

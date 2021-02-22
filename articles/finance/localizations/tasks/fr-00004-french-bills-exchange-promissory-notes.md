@@ -67,3 +67,6 @@ This procedure was created using the demo data company FRSI.
 20. Click OK.
     * You might be asked to enter a processing date.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

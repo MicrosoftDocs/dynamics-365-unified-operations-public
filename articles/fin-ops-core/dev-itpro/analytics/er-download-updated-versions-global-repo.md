@@ -103,3 +103,6 @@ This topic explains how to import updated versions of ER configurations from the
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Download ER configurations from the Global repository of Configuration service](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

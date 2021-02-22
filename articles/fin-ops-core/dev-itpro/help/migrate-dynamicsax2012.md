@@ -87,3 +87,6 @@ After you've converted your content to Markdown, you can use open-source tools s
 [Custom Help overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Extend, customize, and collaborate on the Help](contributor-guide.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

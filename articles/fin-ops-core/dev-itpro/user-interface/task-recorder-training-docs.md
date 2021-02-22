@@ -128,3 +128,6 @@ Additional resources
 [Task Recorder](task-recorder.md)
 
 [Create Rich Help Topics with Task Recorder (external link)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

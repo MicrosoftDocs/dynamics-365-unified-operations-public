@@ -63,3 +63,6 @@ If you plan to be out of the office or otherwise unavailable to act on work item
 8. In the **End date/time** field, enter a date and time.
 9. Select the **Enabled** check box to activate the delegation rule. 
 10. In the **Comment** field, enter a comment that explains why you're delegating the work items.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

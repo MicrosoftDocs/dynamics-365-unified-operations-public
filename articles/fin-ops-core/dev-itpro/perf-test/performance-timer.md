@@ -55,3 +55,6 @@ For more information, click a link. In the next screen, you can see how many SQL
 [![Example of list of SQL queries triggered by call](./media/3_timer.png)](./media/3_timer.png) 
 
 This information can help you to understand what to trace and where to start troubleshooting. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

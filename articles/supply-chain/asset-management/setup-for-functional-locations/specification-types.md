@@ -68,3 +68,6 @@ You can create your own attribute types. Additionally, you can transfer product 
 9. Save the record.
 
     The **Functional location types** field shows the number of functional locations that are using the attribute type. The **Asset types** field shows the number of asset types that are using it.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

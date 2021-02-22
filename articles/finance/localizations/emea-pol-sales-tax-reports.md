@@ -436,3 +436,6 @@ After you've set up non-deductible costs, you can perform the following tasks on
 - **Print report**
 
 The FactBox pane shows the totals in the journal and the total overdue amount.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

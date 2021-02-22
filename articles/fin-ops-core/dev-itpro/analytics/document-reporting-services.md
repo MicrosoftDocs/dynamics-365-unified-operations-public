@@ -107,3 +107,6 @@ The process for developing a report in the current version is easier than it is 
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

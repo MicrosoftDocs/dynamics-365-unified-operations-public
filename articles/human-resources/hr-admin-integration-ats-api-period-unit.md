@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Period unit
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Period unit option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_periodunit
@@ -45,3 +47,6 @@ This enumeration provides the option set of values for units of measurement for 
 
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

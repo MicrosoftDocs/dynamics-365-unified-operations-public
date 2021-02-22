@@ -142,3 +142,6 @@ The May 2020 release of the dual-write orchestration package (version 2.0.777.35
 | Force unlink dual-write environment | Previously, while testing dual-write, you had to disable all the table maps before unlinking a dual-write environment. This seemed cumbersome and sometimes not possible if one of the environments wasn't available. This new feature provides a quick way to unlink your test and trial environments. | General availability |
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ Use the **Depreciation bonus** page to calculate the depreciation bonus for fixe
 
 - [Set up depreciation (Russia)](rus-depreciation-setup.md)
 - [Depreciation methods (Russia)](rus-depreciation-methods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

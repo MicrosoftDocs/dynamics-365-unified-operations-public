@@ -159,3 +159,6 @@ As you migrate context menus, consider the following guidelines:
 -   Limit the number of menu items to five.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

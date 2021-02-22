@@ -51,3 +51,6 @@ obtain a key.
 If you enable the Bing Maps feature, address information is automatically sent over the internet to the Bing Maps service to display an online map of the address within this application. If you click on Bing Maps within this application, you will be redirected to [www.bing.com/maps](https://www.bing.com/maps). Your use of Bing Maps is also governed by the [Bing Maps End User Terms of Use](https://go.microsoft.com/?linkid=9710837).  
   
 Administrators can turn the Bing Maps feature on or off under **Commerce shared Parameters** > **Bing Maps**. Turning the Bing Maps app off makes the feature unavailable in this application.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ When you enter a journal, you can click **Ledger accruals** on the **Functions**
 
 
 For more information, see [Create accrual schemes](tasks/create-accrual-schemes.md) and [Create ledger accrual transactions](tasks/create-ledger-accrual-transactions.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

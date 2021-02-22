@@ -242,3 +242,6 @@ To control whether workers should reuse an existing license plate or generate a 
 
 > [!NOTE]
 > To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. For more information, see [Enable license plate label printing](../warehousing/tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

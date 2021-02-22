@@ -78,3 +78,6 @@ To add an alternative address to a service order, follow these steps:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

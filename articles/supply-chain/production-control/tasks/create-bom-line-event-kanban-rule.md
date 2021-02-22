@@ -84,3 +84,6 @@ This task focuses on the setup needed to create an event kanban rule to ensure s
     * Notice the kanban created to supply M0001 for the estimated production order.  
     * This is the last step!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

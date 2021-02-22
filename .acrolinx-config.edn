@@ -1,5 +1,6 @@
 {:allowed-branchname-matches ["^master$"]
  :allowed-filename-matches ["articles"]
+ :use-skip-label true
  :targets
  {
      :scores

@@ -102,3 +102,6 @@ earlier.
 -   To set the **Quantity** and **Allow release of partially released orders**
     parameters for sales orders, click **Warehouse management** \> **Release to
     warehouse** \> **Automatic release of sales orders**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

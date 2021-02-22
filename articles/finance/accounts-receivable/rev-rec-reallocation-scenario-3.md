@@ -86,3 +86,6 @@ The sales order is invoiced again for the item that was added. The total invoice
 [![Voucher transactions page with the accounting entry that is posted](./media/36_rev-rec-scenarios.png)](./media/36_rev-rec-scenarios.png)
 
 Because the sum of the revenue and sales is more than $319.50, the difference is posted for $14.48. This amount clears the balance from the Partial invoice revenue clearing account. That balance was updated in the new accounting entry that was posted after the reallocation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

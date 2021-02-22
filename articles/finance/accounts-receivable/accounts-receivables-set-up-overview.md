@@ -114,3 +114,6 @@ For more information, see [Credit and collections in Accounts receivable](collec
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

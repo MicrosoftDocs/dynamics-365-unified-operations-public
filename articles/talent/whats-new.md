@@ -37,3 +37,6 @@ Each week there are new releases for Talent. These releases are listed in the ta
 
 The table of contents will continue to be updated each week, so check back to find all of the new features and changes in the latest releases of Talent.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

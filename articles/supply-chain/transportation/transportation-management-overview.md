@@ -91,3 +91,6 @@ Supply Chain Management provides a load building strategy that is named the Volu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

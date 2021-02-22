@@ -86,3 +86,6 @@ In addition, lean manufacturing supports the purchasing and invoicing processes 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

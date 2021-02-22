@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Example query for Candidate to hire
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.
 
 This topic provides an example demonstrating how you can use *deep inserts* to create all the detail of a new candidate record in a single API operation. For more information about deep inserts, see [Create related entity records in one operation](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
@@ -117,3 +119,6 @@ OData-EntityId: [Organization URI]/api/data/v9.1/mshr_hcmcandidatetohireentities
 ## See also
 
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

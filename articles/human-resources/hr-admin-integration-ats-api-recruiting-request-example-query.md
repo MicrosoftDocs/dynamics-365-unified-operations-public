@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Example query for Recruiting request
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.
 
 The following query shows how you can use the $expand query option in a GET operation to retrieve a specified recruiting request record and all associated positions, required skills, and educational requirements for the specified request. The example response shows a recruiting request for two positions, and the required skills and education for the requested positions.
@@ -187,3 +189,5 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruitin
 ## See also
 
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

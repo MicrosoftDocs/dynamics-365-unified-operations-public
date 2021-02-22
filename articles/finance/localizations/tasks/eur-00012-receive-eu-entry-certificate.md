@@ -44,3 +44,6 @@ The demo data company used to create this procedure is DEMF.
     * Attach additional information to the journal.  
     * For example, attach a scanned image of the EU Entry certificate to the journal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

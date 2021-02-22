@@ -100,3 +100,6 @@ Go to **Accounts payable > Setup > Invoice matching setup > Invoice totals toler
 
 1. To specify tolerances for individual vendors that override the default tolerance, select a **Vendor account**.
 2. Enter the variance percentage that you will accept for this vendor.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

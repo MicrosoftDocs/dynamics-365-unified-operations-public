@@ -94,3 +94,6 @@ Before you can complete this procedure, you must complete the following procedur
 2. Click Show files.
 3. Click Open.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

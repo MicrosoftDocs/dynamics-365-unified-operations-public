@@ -123,3 +123,6 @@ The buttons in the **Project** group on the **Work order** tab of the Action Pan
 >[!NOTE]
 >To include forecasts that have been created on a work order when you run master scheduling, use the forecast model that is selected on the **Asset management parameters** page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -130,3 +130,6 @@ If you don't have access to the pages that are used to complete this task, conta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

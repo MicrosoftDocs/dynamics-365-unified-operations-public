@@ -71,3 +71,6 @@ For more information, see the following topics:
 
 [Cancel a purchase complementary fiscal document (Brazil)](tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

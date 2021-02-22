@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Completion status
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Completion status option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmcompletionstatus
@@ -45,3 +47,6 @@ This enumeration provides the option set of status values for candidate screenin
 
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

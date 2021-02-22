@@ -56,3 +56,6 @@ You can search for a common question, or browse and filter by functionality and 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

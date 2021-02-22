@@ -62,3 +62,6 @@ After import is completed, it will be required to assign roles to users.
 ## Run in a sandbox environment
 1. Select **Batch import**.
 2. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

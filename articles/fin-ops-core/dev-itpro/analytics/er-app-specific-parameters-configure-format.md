@@ -314,3 +314,6 @@ To learn how to use the configured **Format to learn how to lookup LE data** ER 
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Set up the parameters of an ER format per legal entity](er-app-specific-parameters-set-up.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

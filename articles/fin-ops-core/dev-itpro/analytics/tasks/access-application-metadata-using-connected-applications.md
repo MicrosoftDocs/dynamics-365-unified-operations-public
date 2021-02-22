@@ -116,3 +116,6 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 11. Close the page. 
 
 When you need to evaluate this model mapping by using metadata of a different version application, register another connected application, assign it to this model mapping and validate it against new metadata.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

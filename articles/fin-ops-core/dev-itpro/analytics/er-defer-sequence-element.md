@@ -254,3 +254,6 @@ If, for example, you must present the sum of tax values in the header of your re
 - [Configure format to do counting and summing](./tasks/er-format-counting-summing-1.md)
 - [Trace execution of ER format to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md)
 - [Defer the execution of XML elements in ER formats](er-defer-xml-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

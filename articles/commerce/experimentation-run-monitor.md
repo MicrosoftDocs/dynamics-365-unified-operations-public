@@ -56,3 +56,6 @@ If for any reason you need to modify your variations, follow the steps below.
 
 ## Next step
 [Promote a variation and complete an experiment](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ This task updates the depreciation convention for a specified fixed asset group.
 15. Click OK.
     *  Results of the process are shown on the Mass update report.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ This topic describes how to use the invoice register to create invoices. Then us
 13. Select **Transactions**.
 14. Select the invoice that you created. The invoice register accrual was reversed and posted to the appropriate expense account.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

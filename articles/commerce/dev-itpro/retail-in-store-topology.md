@@ -78,3 +78,6 @@ The Commerce Scale Unit (self-hosted) is a set of components that can be deploye
 For more information, see:
 - [Configure and install Commerce Scale Unit (self-hosted)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
 - [Commerce Scale Unit (self-hosted)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

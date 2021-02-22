@@ -29,12 +29,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Set up an email notification profile
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Before creating channels, you'll want to set up a profile to ensure that email notifications can be sent out for various events, such as order creation, order shipping status, and payment failure.
 
@@ -99,3 +96,6 @@ Before you can send mails, you must configure your outgoing mail service and set
 [Channel setup prerequisites](channels-prerequisites.md)
 
 [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

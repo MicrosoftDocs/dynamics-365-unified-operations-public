@@ -53,3 +53,6 @@ When the **Apply specific rules for half year depreciation** and **Automatically
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

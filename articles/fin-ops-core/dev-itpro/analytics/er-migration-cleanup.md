@@ -63,3 +63,6 @@ Complete the following steps to resolve issues with ER templates that you are un
 A similar issue may occur if you migrate your application instance to another location that has been used as a migration target more than once and for which the Blob storage already contains ER template files.
 
 Because you can have several ER format configurations, this process can be time consuming. Therefore, using the [Backup storage of ER templates](er-backup-storage-templates.md) feature to automatically recover templates with broken references is preferred.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ This procedure shows how to copy co-products from an existing formula version to
 6. Click OK.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

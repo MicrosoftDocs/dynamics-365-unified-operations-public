@@ -164,3 +164,6 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 3. In the **Environment** field, enter the name of the Electronic invoicing add-on environment.
 4. Select **Save**, and then close the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

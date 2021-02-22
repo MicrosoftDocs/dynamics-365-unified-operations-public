@@ -376,3 +376,6 @@ As described above the best practice rules are often run as part of the build of
 - Run BP on all items in the model (and only for this one model in the module): `xppbp -module:FleetManagement -model:FleetManagement –all`
 - Run BP on all items in all models in the module: `xppbp -module:FleetManagement –all`
 - Write the output to log files: `xppbp -module:FleetManagement -all -xmllog=Log.xml -log=Log.txt`
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

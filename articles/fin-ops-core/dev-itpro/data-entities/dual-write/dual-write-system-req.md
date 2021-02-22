@@ -56,3 +56,6 @@ Dual-write has these limitations:
 ## One Version
 
 Future updates of the dual-write solution will be available through One Version.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

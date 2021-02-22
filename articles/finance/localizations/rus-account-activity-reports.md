@@ -224,3 +224,6 @@ You can use the **Journal order/account activity** report to review movement on 
 > - Select the total account cell to open the transactions on all accounts that are included in the range of the specified total account, and that generated activity on the total account.
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in Excel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

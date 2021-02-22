@@ -295,3 +295,6 @@ When one electronic invoicing feature is derived from another, the **Rebase** co
 ## Additional resources
 
 - [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

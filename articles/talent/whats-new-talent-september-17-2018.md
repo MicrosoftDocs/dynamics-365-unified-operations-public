@@ -59,3 +59,6 @@ Platform update 18 for Finance and Operations is now part of the Talent release.
 ## Bug fixes
 
 This release includes several additional bug fixes, including references to ACA, ADA, and I9 now will only be enabled in US companies.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

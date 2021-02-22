@@ -57,3 +57,6 @@ The production planner calculates the material and capacity requirements for the
 2. Click Firm.
 3. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

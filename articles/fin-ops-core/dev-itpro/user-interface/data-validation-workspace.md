@@ -61,3 +61,6 @@ Before you can use the **Data validation checklist** workspace, you must configu
 You use task areas to group data validation tasks into logical areas of ownership within your organization. For example, Accounts payable, Accounts receivable, or General ledger might be used as task areas.
 
 The **Menu item name** is associated with the task work effort and can be used to go directly to the associated page from the task link in the workspace. For example, a data validation task to run the **Accounts payable aging** report for Accounts payable can be linked to the **Accounts payable aging report** page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

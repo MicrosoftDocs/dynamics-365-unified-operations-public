@@ -70,3 +70,6 @@ The following table describes the fields that are available on the report.
 |           Disposals: Scrap value            |                                                                                               The scrap value for the fixed asset book with a disposal – scrap transaction.                                                                                               |
 |           Disposals: Profit/Loss            |                                                                                 The profit or loss value that is calculated as part of the disposal transaction for the fixed asset book.                                                                                 |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

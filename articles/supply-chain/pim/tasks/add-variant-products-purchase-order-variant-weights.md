@@ -50,3 +50,6 @@ This procedure walks through the steps for using variant weights to auto populat
 17. Set Quantity to '1000'.
 18. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

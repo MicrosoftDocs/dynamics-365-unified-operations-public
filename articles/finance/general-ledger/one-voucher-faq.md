@@ -56,3 +56,6 @@ As for every new feature, customers must watch the Release plan and "What's new 
 ## When the deprecation date is identified, where will it be communicated?
 
 The deprecation of One voucher is a significant change that will be widely communicated. It will be communicated through the product documentation, a blog post, and announcements at applicable Microsoft conferences, well in advance of the date when the deprecation takes effect.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

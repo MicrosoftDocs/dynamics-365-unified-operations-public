@@ -147,3 +147,6 @@ To update your existing template, follow these steps.
     9. On the **Mapping task** page, select the new column as the source to create another mapping for HIERARCHYTYPENAME.
 
         [![Mapping](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

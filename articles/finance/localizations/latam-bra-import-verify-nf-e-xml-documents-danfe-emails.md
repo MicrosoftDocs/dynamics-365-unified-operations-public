@@ -71,3 +71,6 @@ On the **Received NF-e XML documents** page, select **Posted** to verify the NF-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

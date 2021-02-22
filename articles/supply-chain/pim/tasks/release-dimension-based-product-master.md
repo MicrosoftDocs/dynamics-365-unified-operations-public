@@ -43,3 +43,6 @@ This procedure shows how to release a product master, which will be used for the
 7. Click Next.
 8. Click Finish.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

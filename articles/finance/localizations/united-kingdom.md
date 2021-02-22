@@ -47,3 +47,6 @@ This topic provides links to documentation resources for United Kingdom.
 ## Regulatory updates for the United Kingdom
 
 For a complete list of regulatory updates for all countries/regions, see [Regulatory updates](regulatory-updates.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

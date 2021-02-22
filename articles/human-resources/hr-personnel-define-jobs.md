@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define new jobs
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 
 
 This task focuses on the creation of a new job. It will be completed using manual entry and copy from template functionality. The demo data company used to create this task is USMF. This task is intended for the human resources specialist.
@@ -74,3 +76,6 @@ This task focuses on the creation of a new job. It will be completed using manua
 33. Toggle the expansion of the Education section.
 34. Click Save.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

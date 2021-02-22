@@ -141,3 +141,6 @@ The next step is to set up benefits and mandatory deductions. For more informati
 [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md)
 
 [Posting definitions in the public sector](../../../../finance/public-sector/posting-definitions-public-sector.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -147,3 +147,6 @@ The Orchestrator service is the service that manages your deployment and the rel
 ## Virtualization and oversubscription
 
 Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – cores, memory, and disk.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

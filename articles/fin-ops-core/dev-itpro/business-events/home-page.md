@@ -288,3 +288,6 @@ To ensure backward compatibility of business events with versions prior to Platf
 
 > [!NOTE]
 > To ensure uninterrupted functionality, it is important to understand the backward-compatibility behavior described above before you enable security on business events.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

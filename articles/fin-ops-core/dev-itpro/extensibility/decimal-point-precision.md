@@ -101,3 +101,6 @@ For example, if amounts need to be maintained with three decimal points, but uni
 The **MarkupValue** extended data type is used for storing and presenting amounts, unit amounts, and percentages.
 The extended data types should be extended to the maximum amount of required decimals points for amounts, unit amounts, and percentages.
 For example, if amounts need to be maintained with three decimal points, unit amounts need to be maintained with four decimal points, and percentages should remain with two decimal points, then the data type should be extended to four decimal points.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

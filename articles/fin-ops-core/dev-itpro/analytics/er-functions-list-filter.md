@@ -78,3 +78,6 @@ You enter data source **DS** of the *Calculated field* type, and it contains the
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ This procedure focuses on optimizing the kanban size and quantities for a specif
     * Notice this is the fixed kanban quantity of 4 from the kanban quantity calculation.  
 5. Click the ListPanel tab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

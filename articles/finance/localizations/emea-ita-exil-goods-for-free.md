@@ -100,3 +100,6 @@ When you create a sales order for goods that are delivered for free, the specifi
 The invoice printout will show the title **Free invoice**. Additionally, items will be prefixed with **Free item:** if the **Goods for free** flag is active on the delivery reason that is used for the order.
 
 ![Free invoice printout](media/emea-ita-exil-free-tax-invoice-printout.jpg)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

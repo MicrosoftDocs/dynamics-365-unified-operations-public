@@ -64,3 +64,6 @@ If **Vendor** is configured as an Electronic reporting (ER) data source that ref
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

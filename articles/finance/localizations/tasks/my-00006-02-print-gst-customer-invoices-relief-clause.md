@@ -54,3 +54,6 @@ After you complete these procedures, when you generate a tax invoice for a custo
     * Repeat this procedure to create additional GST relief groups if necessary.  
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

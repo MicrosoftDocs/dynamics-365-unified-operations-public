@@ -134,3 +134,6 @@ This section will have answers to frequently asked questions that are related to
 **VendTable** 
 
 [![Previous version example](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

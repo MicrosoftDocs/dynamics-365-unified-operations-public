@@ -56,3 +56,6 @@ This procedure shows how to create a sales price selection criterion for attribu
 4. In the Criteria field, select Customer group 10. 
 5. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

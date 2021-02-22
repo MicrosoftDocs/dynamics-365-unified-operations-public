@@ -403,3 +403,6 @@ After the above commands have been executed, restart your AOS nodes from Service
 
 > [!WARNING]
 > Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

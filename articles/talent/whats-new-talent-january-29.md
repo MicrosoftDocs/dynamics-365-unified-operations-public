@@ -48,3 +48,6 @@ New Leave and absence options in **Human resources** parameters enable customers
 ### Worker hire actions are stuck in "Workflow complete" state
 
 Changes have been made to correct an issue where a few workflows finished with a "Workflow complete" status. New workflows should now move to a "Completed" state when the workflow finishes. Any workflows in a workflow completed status will be transitioned to an error status to allow for updating or removal. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

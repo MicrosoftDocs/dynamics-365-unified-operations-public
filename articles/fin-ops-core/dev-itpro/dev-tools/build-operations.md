@@ -129,3 +129,6 @@ To make resolution easier, you can add the elements that are affected by the err
 [Development tools in Visual Studio](development-tools-overview.md)
 
 [Develop and customize home page](developer-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

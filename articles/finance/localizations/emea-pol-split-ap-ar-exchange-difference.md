@@ -234,3 +234,6 @@ In this example:
 
 - 10.00 (= 11.90 × 80.00 ÷ 95.20) is the exchange difference that is related to the net value of the invoice.
 - 1.90 (= 11.90 – 10.00) is the exchange difference that is related to the tax amount of the invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

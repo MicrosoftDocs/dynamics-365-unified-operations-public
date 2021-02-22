@@ -164,3 +164,6 @@ For this scenario, you must create and post a direct import fiscal document.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

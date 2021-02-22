@@ -126,3 +126,6 @@ The search keywords are matched not only to the caption of the navigation elemen
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

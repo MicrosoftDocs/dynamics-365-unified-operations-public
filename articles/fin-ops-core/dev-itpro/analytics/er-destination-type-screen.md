@@ -43,3 +43,6 @@ If you set **Enabled** to **Yes**, a preview of the output is created. You can v
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

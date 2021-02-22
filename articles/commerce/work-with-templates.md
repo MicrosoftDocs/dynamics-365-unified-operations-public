@@ -153,3 +153,6 @@ After you've previewed the changes to your template, follow one of these steps t
 [Templates and layouts overview](templates-layouts-overview.md)
 
 [Work with preset layouts](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ In many organizations, compensation and benefits managers can only access certai
 
 ###  Platform update 24 for Finance and Operations
 For additional details about Platform update 24 for Finance and Operations, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

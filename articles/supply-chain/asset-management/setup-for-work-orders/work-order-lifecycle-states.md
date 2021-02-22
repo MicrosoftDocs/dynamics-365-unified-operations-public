@@ -143,3 +143,6 @@ After you've created the work order lifecycle states that are required for your 
 9. Save the work order lifecycle model.
 
 ![Work order lifecycle models page](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

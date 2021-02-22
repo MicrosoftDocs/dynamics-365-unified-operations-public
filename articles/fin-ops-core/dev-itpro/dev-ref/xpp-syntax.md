@@ -1491,3 +1491,6 @@ Additional resources
 [X++ Language Reference](xpp-language-reference.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

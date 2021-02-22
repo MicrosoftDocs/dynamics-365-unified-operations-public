@@ -175,3 +175,6 @@ When the **Create customer order in async mode** option is set to **Yes**, custo
 ## Additional resources
 
 [Hybrid customer orders](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

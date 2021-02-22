@@ -75,3 +75,6 @@ Application data is used to populate the reports in the Employee competencies an
 | Workforce\_WorkerName             | First name, last name, and full name                                                                       | |
 | Workforce\_WorkerTitle            | Title and seniority date                                                                                   | |
 | Workorce\_WorkerTrend             | Workers over time, headcount, company, and position                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

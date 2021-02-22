@@ -73,3 +73,6 @@ The order is saved, but the **Do not process** flag is set on it. This flag help
 To view and manage the orders that are on hold for fraud review, go to **Retail and Commerce** \> **Customers** \> **Order holds**. On the **Order holds** page, select an entry in the list, and then click **Order hold** to see a more detailed view that includes information about the reason for the hold. On the **Fraud details** FastTab, you can view the systematic fraud criteria that were found to be a match for the order and the scores that were applied. If the order was put on manual hold, you can review any comments that were entered by the user who put the order on hold by looking at the **Fraud notes** section on the **Notes** FastTab.
 
 For more information about how to work with hold orders, see [Order holds](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

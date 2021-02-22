@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Overview
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 The Dynamics 365 Human Resources User Guide provides you with instructions on setting up Human Resources, setting up compensation and benefits for your employees, and managing your workforce.
 
 ## Set up Human Resources
@@ -132,3 +134,6 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

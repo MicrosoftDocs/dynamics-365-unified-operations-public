@@ -171,3 +171,6 @@ You can choose how to move your electronic reporting functionality into GER. How
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

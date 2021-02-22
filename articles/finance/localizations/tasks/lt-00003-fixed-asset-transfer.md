@@ -96,3 +96,6 @@ This procedure is intended for accountants who are responsible for fixed assets.
 3. Click OK.
     * After the report is generated, all transportation details will be printed.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

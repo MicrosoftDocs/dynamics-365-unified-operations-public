@@ -80,3 +80,6 @@ If the value of the `decimals` argument is less than 0 (zero), the specified num
 ## Additional resources
 
 [Mathematical functions](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ If your vendors are using the vendor collaboration interface, they can use this 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

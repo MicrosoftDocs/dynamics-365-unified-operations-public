@@ -47,3 +47,6 @@ This topic explains how to grant workers permission to prepare purchase requisit
 2. Use the Quick Filter to find the worker that you just added as the requester.
 3. Select the requester. The Preparer list shows the people who have permission to order items on behalf of the requester who is selected in the left pane.  You can add additional preparers here. This view also lets you grant the requester permission to create requisitions in legal entities and operating units that aren't that person's primary legal entity or operating unit.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

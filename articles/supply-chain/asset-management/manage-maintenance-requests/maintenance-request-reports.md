@@ -62,3 +62,6 @@ The **Maintenance request list** report shows a list of all maintenance requests
 The following illustration shows an example of the **Maintenance request list** report for all active maintenance requests.
 
 ![Maintenance request list report](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

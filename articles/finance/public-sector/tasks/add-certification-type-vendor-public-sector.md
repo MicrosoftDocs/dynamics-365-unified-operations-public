@@ -45,3 +45,6 @@ You can create and assign to vendors any type of certification that they may hol
     * Complete the details.   
 12. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

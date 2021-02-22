@@ -210,3 +210,6 @@ Before you can set up system-directed cluster picking, you must create eligible 
 1. The last step on the mobile device is to **Put** the cluster in the final location. Select **OK**
     - When the put operation is confirmed, the cluster is closed and broken, based on the value that you set for the **Break cluster at** field in the cluster profile. Work IDs are also closed.
 1. A "Cluster complete" message is shown on the mobile device.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

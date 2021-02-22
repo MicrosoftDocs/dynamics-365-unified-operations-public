@@ -170,3 +170,6 @@ For each Retail Server extension, you must generate a separate proxy.
         // END SDKSAMPLE_STOREHOURS */
     });
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

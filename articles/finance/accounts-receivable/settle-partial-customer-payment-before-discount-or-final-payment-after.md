@@ -115,3 +115,6 @@ Arnie changes the value in the **Use cash discount** field back to **Normal**, b
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
