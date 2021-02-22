@@ -229,3 +229,6 @@ For pages that have large view selectors (both personalizations and queries can 
 
 - If you navigate to a page from a tile, the tile query will execute regardless of the query associated with the default view. If you created that tile after views have been enabled, selecting a tile will open the page with the view associated with that tile.
 - If you navigate to a page and that entry point includes a query, the original query will execute originally in place of the default view's query. You should be alerted when this occurs via an informational message when the view is loading. You can also confirm by switching to this view after the page loads, as that should allow the view query to execute regardless.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

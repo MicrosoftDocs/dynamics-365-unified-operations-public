@@ -441,3 +441,6 @@ If an entity has container fields and these fields need to be exported, the enti
 ## Additional resources
 
 [Develop entities for data migration](develop-entity-for-data-migration.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

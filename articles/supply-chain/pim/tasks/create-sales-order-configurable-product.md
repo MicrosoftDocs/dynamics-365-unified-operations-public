@@ -55,3 +55,6 @@ This procedure shows how to apply a configuration template to a product on a sal
 
 ## Select the product configuration
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

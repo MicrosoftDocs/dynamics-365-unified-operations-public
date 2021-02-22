@@ -866,10 +866,14 @@
           href: asset-leasing/record-rou-asset-depreciation.md
         - name: Reverse posted lease transactions 
           href: asset-leasing/reverse-posted-lease-trans.md
+        - name: Asset leasing conventions
+          href: asset-leasing/asset-leasing-convention.md
         - name: Adjust a lease 
           href: asset-leasing/adjust-lease.md
         - name: Impair a right-of-use asset
           href: asset-leasing/impair-rou-asset.md
+        - name: Propose a lease termination  
+          href: asset-leasing/lease-termination.md
         - name: Associate a lease with a fixed asset          
           href: asset-leasing/associate-lease-with-fixed-asset.md
         - name: Record leases in foreign currencies
@@ -1032,6 +1036,8 @@
           href: general-ledger/import-currency-exchange-rates.md
         - name: One voucher
           href: general-ledger/one-voucher.md
+        - name: One voucher FAQ
+          href: general-ledger/one-voucher-faq.md
         - name: Ledger settlements
           href: general-ledger/ledger-settlements.md
       - name: Period-end close
@@ -1422,6 +1428,8 @@
             href: localizations/e-invoicing-get-started.md
           - name: Get started with Electronic invoicing add-on for Brazil
             href: localizations/e-invoicing-bra-get-started.md
+          - name: Get started with Electronic invoicing add-on for Egypt
+            href: localizations/e-invoicing-eg-get-started.md
           - name: Customer electronic invoices in Egypt
             href: localizations/emea-egy-e-invoices.md
           - name: Get started with Electronic invoicing add-on for Italy
@@ -2038,6 +2046,8 @@
           href: localizations/emea-cze-hun-year-end.md
         - name: Online invoicing system
           href: localizations/emea-hun-online-invoicing.md
+        - name: Sales tax reports for Hungary
+          href: localizations/emea-hun-sales-tax-reports.md
         - name: Deferred sales tax calculations
           href: localizations/emea-hun-deferred-vat.md
       - name: Iceland
@@ -2294,6 +2304,8 @@
           href: localizations/italy.md
         - name: VAT statements details
           href: localizations/emea-ita-vat-statements-details.md
+        - name: Quarterly VAT communication report
+          href: localizations/emea-ita-quarterly-vat-communication.md
         - name: Black list report
           href: localizations/emea-ita-black-list-report.md
         - name: Competence date
@@ -2984,6 +2996,10 @@
           href: localizations/apac-tha-substitution-and-adjustment-invoices.md
         - name: Unrealized VAT
           href: localizations/apac-tha-unrealized-vat.md
+        - name: Tax branch dimensions
+          href: localizations/apac-tha-tax-branch-dimensions.md
+        - name: Sales VAT report
+          href: localizations/apac-tha-sales-vat-report.md
         - name: Withholding tax
           href: localizations/apac-tha-withholding-tax.md          
       - name: United Arab Emirates (UAE)
@@ -3745,6 +3761,8 @@
               href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
             - name: Share configurations in GR  
               href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
@@ -3835,7 +3853,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
-      - name: Use Electronic reporting solutions in Finance and Operations
+      - name: Use ER solutions in Finance
         items: 
         - name: Configure the framework
           items: 
@@ -3869,6 +3887,8 @@
                 href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
           - name: Configure destinations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+          - name: Configure action-dependent destinations
+            href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
         - name: Set up a reference to an ER format
           href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
         - name: Automatically validate generated reports
@@ -3909,6 +3929,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
           - name: Application update 10.0.11
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
+          - name: Application update 10.0.17
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler

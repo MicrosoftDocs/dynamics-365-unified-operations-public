@@ -38,3 +38,6 @@ This procedure walks you through creating a day-based fiscal calendar that inclu
 5. In the Calendar type field, select an option.
 6. Click Create.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

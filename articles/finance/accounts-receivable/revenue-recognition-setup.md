@@ -198,3 +198,6 @@ Revenue recognition can also be used for sales orders that are created through a
 
 - **Deferred invoice revenue** (under **Revenue accounts**) – Enter the main account for the revenue price that posts to deferred revenue (instead of revenue). The revenue price is deferred if the sales order line has a revenue schedule.
 - **Deferred cost** (under **Cost accounts**) – Enter the main account for the cost of goods sold amount that posts to deferred cost of goods sold if the revenue is also deferred.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

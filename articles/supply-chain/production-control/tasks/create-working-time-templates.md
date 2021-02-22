@@ -80,3 +80,6 @@ Working time templates define the working hours throughout a week and are used t
 3. Expand the Sunday section.
 4. Select Yes in the Closed for pickup field.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

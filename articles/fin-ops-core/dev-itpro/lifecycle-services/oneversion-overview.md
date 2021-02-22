@@ -82,3 +82,6 @@ After an update is completed in the UAT environment, a basic business process te
 Some customers have both external data integrations and internal data integrations. We recommend that these customers use the [Data task automation tool](../data-entities/data-task-automation.md) for testing.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

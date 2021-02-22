@@ -685,3 +685,6 @@ Follow these steps to create deployable packages that contain components, and to
 
 7. Run **msbuild** for the whole Retail SDK to create deployable packages.
 8. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

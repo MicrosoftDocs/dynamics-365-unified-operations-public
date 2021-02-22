@@ -71,3 +71,6 @@ Item replacement orders are usually created after a product is returned and insp
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

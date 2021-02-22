@@ -45,3 +45,6 @@ This procedure will set up a transportation constraint to prevent a selected ite
 10. Click Save.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

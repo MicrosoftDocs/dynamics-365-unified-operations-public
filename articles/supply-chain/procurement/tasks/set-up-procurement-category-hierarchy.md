@@ -48,3 +48,6 @@ This procedure shows you how to create new nodes in a procurement category hiera
 4. Select the products you want to add to the procurement category.
 5. Select the arrow to add the products to the **Selected** table.
 6. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

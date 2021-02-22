@@ -4,7 +4,7 @@
 title: Talent updates
 description: This article provides information about the release process and cadence for Microsoft Dynamics 365 Talent.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
@@ -122,3 +122,6 @@ While testing preview features or trying new capabilities, you might find items 
 - [Dynamics 365 and Power Platform Release Plans](https://docs.microsoft.com/dynamics365/release-plans)
 - [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new)
 - [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

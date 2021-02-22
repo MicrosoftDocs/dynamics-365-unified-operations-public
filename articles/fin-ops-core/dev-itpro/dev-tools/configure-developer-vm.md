@@ -51,3 +51,6 @@ For better performance of the X++ debugger, you might want to turn off IntelliTr
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

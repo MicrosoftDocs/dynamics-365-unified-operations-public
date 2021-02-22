@@ -130,3 +130,6 @@ For details on setting up network connected peripherals the docs [Support for ne
 ## Additional resources
 - [Payments FAQ](payments-retail.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

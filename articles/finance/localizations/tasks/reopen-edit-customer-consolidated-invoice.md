@@ -58,3 +58,6 @@ This procedure was created using the demo data company JPMF.
     * Confirm that the sales orders that were invoiced before the Consolidation date are included.  
 3. Click Confirm.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

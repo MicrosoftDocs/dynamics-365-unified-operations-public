@@ -56,3 +56,6 @@ In India, every legal entity must file Goods and Services Tax (GST) returns. Typ
 2. Select the comma-separated values (CSV) files that you want. For example, select **GER export to GSTR CSV\_\_Merged**. This file is generated as a merged file.
 
 ![Get CSV Files ](media/Multi-batchprocessing-003.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

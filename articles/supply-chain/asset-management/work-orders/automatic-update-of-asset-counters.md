@@ -74,3 +74,6 @@ Note the following points:
 
 - You can set up counters that are related to another counter. In this case, when a counter is updated, related counters are automatically updated at the same time. For more information about how to set up related counters, see [Counters](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ The fixed asset disposal transactions, created when you posted the credit note, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

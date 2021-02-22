@@ -123,3 +123,6 @@ Simulation transactions can be reviewed in several ledger reports.
 2. Set **Simulation journal transactions** to **Yes** in the **Statement by dimension** dialog menu.
 3. Select a value in the **Simulation journal group** field, and then select **OK**.
 4. Verify that the report contains posted simulation transactions and standard ledger transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

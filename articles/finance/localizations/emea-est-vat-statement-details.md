@@ -105,3 +105,6 @@ Then set the following fields.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

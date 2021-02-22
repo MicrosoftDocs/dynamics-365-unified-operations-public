@@ -55,3 +55,6 @@ This procedure walks you through generating the Malaysia GAF file. You must be i
     * Open and validate the GAF xml file.  
     * Click Open and select Internet explorer'.  Validate the GAF xml file and then close the xml file.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

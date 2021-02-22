@@ -58,3 +58,6 @@ The **Calculation of line discount** parameter affects the following documents:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

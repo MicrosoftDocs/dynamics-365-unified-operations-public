@@ -114,3 +114,6 @@ VAT split payment
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

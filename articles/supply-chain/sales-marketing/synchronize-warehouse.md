@@ -84,3 +84,6 @@ The following illustration shows the template mapping in Data integration.
 ### Warehouses (Supply Chain Management to Field Service): Warehouse
 
 [![Template mapping in Data integration](./media/Warehouse1.png)](./media/Warehouse1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

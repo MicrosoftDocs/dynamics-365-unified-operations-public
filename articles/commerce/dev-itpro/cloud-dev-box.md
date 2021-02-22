@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Development in cloud-hosted development environments without admin access
+title: Development in cloud-hosted environments without admin access
 description: This topic demonstrates the configuration steps for Commerce developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
-# Development in cloud-hosted development environments without admin access
+# Development in cloud-hosted environments without admin access
 
 [!include [banner](../../includes/banner.md)]
 
@@ -100,3 +100,6 @@ To install the Developer topology prerequisites:
    6. Go to the **Environments** section, and click your development environment.
    7. Click the **Maintain** tab and select **Apply updates**.
    8. Select **Developer topology prerequisites** and click **Apply**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

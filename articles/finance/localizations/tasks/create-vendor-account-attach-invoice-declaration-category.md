@@ -48,3 +48,6 @@ This procedure walks you through creating a vendor with configuration for an inv
 3. In the list, click the link in the selected row.
 4. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

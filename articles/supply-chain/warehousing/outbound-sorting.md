@@ -669,3 +669,6 @@ You must complete the sorted inventory picking work. When it's completed, the in
     Work is completed.
 
 From this point forward, all other warehouse processes apply.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

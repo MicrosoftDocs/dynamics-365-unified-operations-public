@@ -88,3 +88,6 @@ When you're ready to save and activate the workflow, follow these steps.
 
     - To activate this version of the workflow, click **Activate the new version**. When a workflow is active, users can submit documents to it for processing.
     - If you don't want to activate this version, click **Do not activate the new version**. You can activate the workflow later.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

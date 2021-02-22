@@ -67,3 +67,6 @@ When you have created the lifecycle states required for your functional location
 5. If you want to select all the available states for a model, click the ![select all available stages](media/03-setup-for-functional-locations.png) button. All states are transferred to the **Lifecycle states selected** section.
 6. If you want to remove a selected state from the model, select the state in the **Lifecycle states selected** section and then select the ![back arrow](media/04-setup-for-functional-locations.png) button.
 7. Select **Lifecycle state updates** to define which lifecycle states can follow a selected state.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

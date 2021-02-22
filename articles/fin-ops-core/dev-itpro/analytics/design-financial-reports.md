@@ -201,3 +201,6 @@ In this exercise, you'll be creating a new report. The report is a side-by-side 
 [View financial reports](../../../finance/general-ledger/view-financial-reports.md)
 
 [Dynamics 365 Finance Blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

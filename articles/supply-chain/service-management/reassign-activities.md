@@ -62,3 +62,6 @@ Use the following steps to reassign an activity to another worker:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ The structure of this list consists of a single **Amount** field of the `Real` t
 [List functions](er-functions-category-list.md)
 
 [Debug data sources of an executed ER format to analyze data flow and transformation](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

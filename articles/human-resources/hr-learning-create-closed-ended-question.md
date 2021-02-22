@@ -4,7 +4,7 @@
 title: Create a closed ended question
 description: Closed-ended questions allow you to provide options for the respondent to choose from. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -27,6 +27,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a closed ended question
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -71,3 +73,6 @@ Closed-ended questions allow you to provide options for the respondent to choose
 5. In the Answer group field, enter or select a value.
 6. In the Text field, type a value.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

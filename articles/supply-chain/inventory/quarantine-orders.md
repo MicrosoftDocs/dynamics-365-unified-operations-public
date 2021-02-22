@@ -71,3 +71,6 @@ Additional resources
 --------
 
 [Inventory blocking](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

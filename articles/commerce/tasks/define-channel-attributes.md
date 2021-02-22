@@ -73,3 +73,6 @@ Enrich the channel by adding channel and product attributes. You must add the ch
 33. Click OK.
 34. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -551,3 +551,6 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 #### Solution
 
 A hotfix is available that resolves this issue. The Microsoft Knowledge Base (KB) number is 4095640.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

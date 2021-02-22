@@ -98,3 +98,6 @@ The following table shows the tax entries that are generated when an invoice pay
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

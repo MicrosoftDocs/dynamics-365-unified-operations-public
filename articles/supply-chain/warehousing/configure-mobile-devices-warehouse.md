@@ -443,3 +443,6 @@ Additional resources
 [Inventory statuses](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

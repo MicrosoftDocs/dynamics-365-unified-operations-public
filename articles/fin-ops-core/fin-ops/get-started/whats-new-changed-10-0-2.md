@@ -93,3 +93,6 @@ The [Removed or deprecated features for Finance and Operations](../../dev-itpro/
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

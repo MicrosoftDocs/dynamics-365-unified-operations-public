@@ -130,3 +130,6 @@ When you generate payments, the payment file is generated, and you're asked to s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

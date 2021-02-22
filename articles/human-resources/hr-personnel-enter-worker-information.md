@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Enter worker information
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 
 
 After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired. The demo data company used to create this procedure is USMF. The demo data contains an open mass hire project. To begin this procedure, go to Human resources > Recruitment > Mass hire projects.
@@ -48,3 +50,6 @@ After a recruiter has created a mass hire project and generated the positions, t
 8. In the list, unmark the selected row.
     * Select the next project position and continue entering the worker information for each person that you're hiring.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

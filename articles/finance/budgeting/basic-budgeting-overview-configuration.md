@@ -92,3 +92,6 @@ A company that is using Budget planning functionality can create and use *budget
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

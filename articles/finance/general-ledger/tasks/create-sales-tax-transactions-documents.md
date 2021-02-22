@@ -62,3 +62,6 @@ Sales tax on documents is calculated by providing a Sales tax group and an Item 
 29. Click Sales tax.
 30. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

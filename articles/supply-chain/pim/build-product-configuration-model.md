@@ -166,3 +166,6 @@ If configuration will be done at a site, or even a company, that differs from th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

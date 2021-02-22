@@ -131,3 +131,6 @@ When you open a building block, other users have read-only access that building 
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

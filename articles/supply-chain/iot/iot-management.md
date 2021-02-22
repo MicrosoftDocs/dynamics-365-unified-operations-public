@@ -66,3 +66,6 @@ You can simulate factory machine signals. For more information, see these topics
 + [Connect IoT DevKit AZ3166 to Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 + [Device Simulation solution accelerator overview](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

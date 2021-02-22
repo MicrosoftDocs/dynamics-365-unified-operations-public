@@ -68,3 +68,6 @@ If you receive any other error message or encounter any other issue, create a su
  
  ## Additional resources
  [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

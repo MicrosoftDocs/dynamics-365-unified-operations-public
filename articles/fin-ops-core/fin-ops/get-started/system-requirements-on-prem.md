@@ -318,3 +318,6 @@ The following Microsoft Office applications are supported in on-premises deploym
 ## Hardware and software requirements for Commerce components
 
 Currently, Finance + Operations doesn't include the Commerce components.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

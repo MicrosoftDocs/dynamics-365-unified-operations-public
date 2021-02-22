@@ -165,3 +165,6 @@ str level = x <= 1000 ? "A" : (x <= 2000 ? "B" : "C");
 info(level);
 // Output is "B".
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

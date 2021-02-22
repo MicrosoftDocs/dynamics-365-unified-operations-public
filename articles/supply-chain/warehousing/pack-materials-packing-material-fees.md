@@ -115,3 +115,6 @@ You can print packing material weights on an invoice and indicate who pays the r
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. On the **Updates** tab, on the **Invoice** FastTab, set the **Print packing material weight** option to **Yes**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

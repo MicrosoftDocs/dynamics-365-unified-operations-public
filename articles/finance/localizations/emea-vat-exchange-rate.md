@@ -63,3 +63,6 @@ After you've configured the system to use VAT exchange rates, if you must enter 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

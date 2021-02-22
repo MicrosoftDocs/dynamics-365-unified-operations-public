@@ -70,3 +70,6 @@ For the implementation of Lean manufacturing, we choose a production flow and ac
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

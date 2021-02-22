@@ -52,4 +52,7 @@ Here are some tips that you, as a consumer of the Microsoft code base, can use t
 
 ## List of deprecated methods and metadata elements
 
-For reference, download the Microsoft Excel file, available on the [Deprecation of methods and metadata elements](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/DeprecationMME) page of CustomerSource, which shows the artifacts that have been marked for deprecation in each major release.
+For reference, download the Microsoft Excel file, available on the [Deprecation of methods and metadata elements](https://docs.microsoft.com/dynamics/s-e/) page of CustomerSource, which shows the artifacts that have been marked for deprecation in each major release.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

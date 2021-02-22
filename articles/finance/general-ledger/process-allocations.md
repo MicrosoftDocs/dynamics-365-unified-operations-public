@@ -48,3 +48,6 @@ Ledger allocation rules can be used for budget plans. When you use ledger alloca
 > [!NOTE]
 > You can’t use intercompany ledger allocation rules for budget planning.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (August 2018)
-description: This topic describes features that are new or changed in Microsoft Dynamics 365 Talent - Core HR.
+description: This topic describes features that are new or changed in Microsoft Dynamics 365 Talent - Core HR for August 2018.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
@@ -99,3 +99,6 @@ Additional information about this feature is available in the
 
 This release also includes a number of bug fixes, the addition of new tables, fixes to
 existing tables, and localized label changes.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

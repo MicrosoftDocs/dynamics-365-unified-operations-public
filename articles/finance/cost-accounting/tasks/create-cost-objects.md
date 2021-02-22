@@ -53,3 +53,6 @@ This procedure shows how to create cost objects by importing the cost center fin
 ## View the imported cost centers
 1. Click View dimension members.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

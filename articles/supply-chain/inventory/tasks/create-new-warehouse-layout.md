@@ -64,3 +64,6 @@ This topic describes how to set up information about the locations in a warehous
 7. Close the page.
 8. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

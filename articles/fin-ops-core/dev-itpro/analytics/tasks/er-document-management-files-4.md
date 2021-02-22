@@ -73,3 +73,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 11. Click OK.
     * Review the generated output. Note that for each attachment a single XML node has been created. The attachment's content is populated to the XML output in MIME (base64) text format.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

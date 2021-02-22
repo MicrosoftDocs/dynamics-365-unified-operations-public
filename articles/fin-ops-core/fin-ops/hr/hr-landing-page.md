@@ -99,3 +99,6 @@ You can design and administer questionnaires to gather information that's used f
 - [Design questionnaires](../../../talent/design-questionnaires.md)
 - [Distribute and schedule questionnaires](../../../talent/distribute-questionnaires.md)
 - [View and evaluate the results of questionnaires](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

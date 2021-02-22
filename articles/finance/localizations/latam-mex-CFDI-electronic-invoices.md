@@ -101,3 +101,6 @@ As is explained in detail in the Mexican localization scope document, integratio
 - [CFDI layout Version 3.3](latam-mex-cfdi-3-3.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

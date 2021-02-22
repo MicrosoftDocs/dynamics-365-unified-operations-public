@@ -51,3 +51,6 @@ For example, to generate quarterly postings, enter **4** in the **Number of peri
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ For more information, see the following topics:
 [Create a bank facility agreement for a letter of credit](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

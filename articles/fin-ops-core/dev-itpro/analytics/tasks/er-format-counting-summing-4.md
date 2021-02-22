@@ -106,3 +106,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 21. Click Open.
     * Review the created XML file that contains counting and summing details that were collected during the execution of the selected configuration.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -59,7 +59,7 @@ The following resources provide information about planned and new localization f
 
 #### Regulatory updates
 -   [Regulatory updates](../../../finance/localizations/regulatory-updates.md)
--   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Updated weekly)
+-   [Localization portal](https://docs.microsoft.com/dynamics/s-e/) (Updated weekly)
 -   [Issue search in Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (Updated daily)
 
 #### Communication and alerts
@@ -137,3 +137,6 @@ To learn more, see [Help system](../../fin-ops/get-started/help-overview.md#task
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ For more information, see [Vendor collaboration with external vendors](../../sup
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

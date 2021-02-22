@@ -4,7 +4,7 @@
 title: Create a job in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
 author: hasrivas
-manager: AnnBe
+manager: tfehr
 ms.date: 07/18/2019
 ms.topic: article
 ms.prod: 
@@ -160,3 +160,6 @@ Follow these steps to create a job.
 
 13. To activate the job, select **Activate**.
 14. To post the job, go to **Postings**, and then select **Post Now** under the Talent Careers site or LinkedIn.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

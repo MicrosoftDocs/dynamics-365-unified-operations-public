@@ -212,3 +212,6 @@ To preview the page in a local web browser, follow these steps.
 [Create a layout container module](create-layout-container.md)
 
 [Localize a module](localize-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

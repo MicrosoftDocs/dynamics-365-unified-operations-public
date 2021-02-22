@@ -102,3 +102,6 @@ This topic shows how to enable the automatic printing of a Serial shipping conta
 7. Select **Save**.
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

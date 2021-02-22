@@ -155,3 +155,6 @@ This procedure walks you through how to set up Intrastat parameters and transfer
     
 Review transferred data, including country\region of destination/dispatch, country of origin, weight, quantity, quantity in additional units, commodity, transaction code, invoice amounts and statistical amounts. You can modify data if necessary.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

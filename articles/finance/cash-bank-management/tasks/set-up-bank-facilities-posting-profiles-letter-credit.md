@@ -76,3 +76,6 @@ This tasks uses the demo company 'USMF'.
     * This account is debited when the opening margin is posted and credited when the payment is posted.  
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

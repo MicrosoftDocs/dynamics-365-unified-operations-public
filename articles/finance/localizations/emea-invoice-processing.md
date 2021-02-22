@@ -123,3 +123,6 @@ This topic briefly describes some country-specific scenarios, such as intra-comm
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

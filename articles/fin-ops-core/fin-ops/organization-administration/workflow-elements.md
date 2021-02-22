@@ -95,3 +95,6 @@ A *parallel activity* is a workflow element that includes two or more workflow b
 ### Subworkflow
 
 A *subworkflow* is a workflow that runs in the context of another workflow.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

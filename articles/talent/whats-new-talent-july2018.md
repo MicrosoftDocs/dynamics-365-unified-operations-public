@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (July 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for July 2018.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/31/2018
 ms.topic: article
 ms.prod: 
@@ -61,3 +61,6 @@ Titles have been expanded in this update. The column is now 65 characters. This 
 ## Benefit enrollment status report
 
 Built-in reporting about open enrollment for benefits helps you easily understand where your employees are in the open enrollment process. You can learn how many employees have completed the process, are currently completing it, and haven't started it. Additionally, you can quickly view any issues that occur during employee enrollment and a full log of all employee submissions. Therefore, you can easily verify and audit employee submissions.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

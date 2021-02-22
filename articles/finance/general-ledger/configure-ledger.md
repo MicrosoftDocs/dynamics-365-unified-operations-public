@@ -86,3 +86,6 @@ If you use two currencies, or if you use a single currency but transactions are 
 Realized gains and losses are profits and losses that are made from completed transactions. They are recorded on the profit and loss statement. Unrealized gains and losses are profits and losses that have materialized, but the transaction isn't completed. In other words, you've posted an invoice, for example, but the invoice isn't yet settled and paid. Unrealized gains and losses are recorded on the balance sheet.
 
 For more information about how to use two currencies, see [Dual currency](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

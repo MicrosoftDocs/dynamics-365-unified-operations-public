@@ -115,3 +115,6 @@ After Dynamics 365 for Finance and Operations release 8.0, we plan to release fr
 ## Still have questions?
 
 Read the [Extensibility FAQ](app-sealing-faq.md) and the other resources listed on the [Extensibility home page](extensibility-home-page.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

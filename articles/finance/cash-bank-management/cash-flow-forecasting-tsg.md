@@ -57,3 +57,6 @@ Verify that the "Cash flow measure V2" and "LedgerCovLiquidityMeasurement" measu
 ## Have the Entity store entities been refreshed?
 
 You must periodically refresh your entities to ensure that the data is current and accurate. To manually refresh a specific entity, go to **System administration \> Setup \> Entity store**, select the entity, and then select **Refresh**. The data can also be updated automatically. On the **Entity store** page, set the **Automatic refresh enabled** option to **Yes**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

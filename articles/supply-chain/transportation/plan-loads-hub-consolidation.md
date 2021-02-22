@@ -42,3 +42,6 @@ Before you can use hub consolidation, you must enable the **In transit planning*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

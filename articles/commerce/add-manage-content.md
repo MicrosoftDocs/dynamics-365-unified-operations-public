@@ -59,3 +59,6 @@ Select one of the following topics to get started.
 [Document states and lifecycle](document-states-overview.md)
 
 [Enable and use cross-channel sharing](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

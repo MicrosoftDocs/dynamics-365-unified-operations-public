@@ -95,3 +95,6 @@ The following tables shows the tax entries that are generated for the invoice wh
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

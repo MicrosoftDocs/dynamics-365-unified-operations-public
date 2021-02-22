@@ -4,8 +4,8 @@
 title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-manager: AnnBe
-ms.date: 01/21/2021
+manager: tfehr
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -175,9 +175,6 @@ The PDF conversion option can be turned on only for file components that are use
 
 ### Limitations
 
-> [!NOTE]
-> This feature is a preview feature and is subject to the terms of use that are described in [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
-
 The PDF conversion option is available only for cloud deployments.
 
 The PDF document that is produced is limited to a maximum length of 300 pages.
@@ -246,3 +243,6 @@ Your format must first be available in the ER configurations. If this prerequisi
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Configure action-dependent ER destinations](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

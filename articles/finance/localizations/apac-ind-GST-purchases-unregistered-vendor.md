@@ -147,3 +147,6 @@ The following illustration shows the financial entry on invoice payment.
 The following illustration shows the financial entry for purchases where the load on inventory is set to 100 percent.
 
 ![Financial entry for purchases where the load on inventory is set to 100 percent](media/Annotation-2019-05-15-170133.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

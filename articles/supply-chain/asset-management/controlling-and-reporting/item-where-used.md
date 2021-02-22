@@ -75,3 +75,6 @@ In the screenshot below, you see an example of an item-where-used calculation fo
 
 ![Example of item where used calculation](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

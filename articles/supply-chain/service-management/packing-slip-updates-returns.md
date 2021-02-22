@@ -53,3 +53,6 @@ When you update a packing slip for a returned item that is from a sales agreemen
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

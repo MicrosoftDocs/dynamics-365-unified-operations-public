@@ -43,3 +43,6 @@ To suspend fixed asset depreciation, on the **Fixed assets** page, select the fi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

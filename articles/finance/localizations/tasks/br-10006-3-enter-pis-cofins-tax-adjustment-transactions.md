@@ -55,3 +55,6 @@ In Fiscal books, you can create and post a journal for manual PIS and COFINS tax
 22. Close the page.
 23. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

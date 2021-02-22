@@ -64,3 +64,6 @@ This procedure uses the USMF demo company. The accounts payable manager or accou
 9. On the Action Pane, click **Review**.
 10. Click **Matching details**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ HR data includes information about employees and contractors, positions, and job
 [!include [position worker assignment](includes/PositionWorkerAssignment-cdm-positionworkerassignmentmaps.md)]
 
 [!include [worker](includes/Worker-cdm-workers.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

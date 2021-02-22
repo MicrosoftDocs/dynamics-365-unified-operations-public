@@ -63,3 +63,6 @@ This procedure was created using the demo data company JPMF.
     * The corresponding data has to exist for the depreciation profile update.  
     * From method, To method, Service life and Years passed determine the record to apply to the asset change.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

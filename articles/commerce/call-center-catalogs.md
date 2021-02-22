@@ -105,3 +105,6 @@ On the **Catalogs** tab, options for configuring a **Payment schedule** and **Fr
 ## Additional notes
 
 Currently, when a source code ID is applied to a sales order in call center, it is used to drive prices, promotions, scripts and up-sell/cross-sell's that are catalog specific. The system will not prohibit or prevent a product that is not in the catalog from being ordered on the sales order. If an item is ordered that is not part of the catalog, the system will first use the **Price group** that is defined on the call center channel (**Retail and Commerce** \> **Channels** \> **Call centers** \> **All call centers**) for item price or promotions. If no specific channel price is found, the base selling price of the item will be used.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

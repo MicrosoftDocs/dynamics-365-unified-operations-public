@@ -77,3 +77,6 @@ The buttons on the Action Pane are organized on tabs. The following table briefl
 | Send loan asset                  | Select a loan asset that should be a temporary replacement for the asset that is selected on the selected maintenance request. |
 | Return loan asset                | Register the loan asset as returned. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

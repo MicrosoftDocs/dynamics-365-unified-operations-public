@@ -58,3 +58,6 @@ Use this procedure to set up a template that represents objects at a customer si
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

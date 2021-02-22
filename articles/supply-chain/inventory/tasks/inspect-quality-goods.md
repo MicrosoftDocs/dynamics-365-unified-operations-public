@@ -52,3 +52,6 @@ This topic explains how to process a quality order. You can run this guide in de
 4. Select **OK**.
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

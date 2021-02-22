@@ -112,3 +112,6 @@ There are several samples in the Retail SDK that demonstrate extensions. This to
     > [!Note] 
     > For cloud POS, use a clean solution in Visual Studio, and then rebuild the solution.
 8. Go to the product search screen or use the top search bar to search for a product. You should see custom columns in the grid and new app bar buttons.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

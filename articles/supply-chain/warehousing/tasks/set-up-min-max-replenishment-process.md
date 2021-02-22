@@ -121,3 +121,6 @@ This procedure shows you how to set up a new replenishment process which uses th
 11. Click **OK**.
 12. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

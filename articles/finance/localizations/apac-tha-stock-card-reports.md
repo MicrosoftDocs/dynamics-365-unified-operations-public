@@ -55,3 +55,6 @@ Use the **Closing and adjustment** page to recalculate inventory after the inven
 
 ## Generate the stock card report
 You can group items by site, warehouse, location, item number, or item group, and then generate the stock card reports. Use the **Stock card – Physical** report to generate the physical stock card report. Use the **Stock card – Financial** report to generate the financial stock card report. You can generate a detailed or summarized stock card report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

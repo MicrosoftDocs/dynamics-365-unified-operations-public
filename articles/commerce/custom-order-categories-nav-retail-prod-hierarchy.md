@@ -91,3 +91,6 @@ The display order for the channel navigation hierarchy is reflected in HQ, catal
 
 > [!NOTE]
 > By default the custom sort order feature is turned off. To learn how to turn on this feature and other features, see [Feature management](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

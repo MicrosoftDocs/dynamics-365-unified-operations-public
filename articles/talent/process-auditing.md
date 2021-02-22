@@ -4,7 +4,7 @@
 title: Track changes in recruiting data 
 description: The process auditing feature allows you to track when candidates, job openings, or job applications change for reporting or compliance reasons.
 author: tracykeya
-manager: AnnBe
+manager: tfehr
 ms.date: 04/17/2019
 ms.topic: article
 ms.prod: 
@@ -26,6 +26,7 @@ ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update 
 
 ---
+
 # Track changes in recruiting data
 
 [!include [banner](includes/banner.md)]
@@ -41,7 +42,7 @@ To set up track changes in recruiting data, follow these steps:
 
 2. Select **Settings** (the gear icon), choose **Advanced customizations**, and then select **Resources** under **Developer resources**. 
 
-3. On the **Developer Resources** page, copy the value in the **Instance Web API value** column. For example, the value could look like: https://yourorgname.api.crm.dynamics.com/api/data/v9.1/.
+3. On the **Developer Resources** page, copy the value in the **Instance Web API value** column.
 
 4. You can then query the data from one of the following Tables:
   - Job opening history (msdyn_jobopeninghistories)
@@ -65,3 +66,6 @@ The following data is available with process auditing.
 |Job application history | Job application (msdyn_JobapplicatonId)<br></br>Status (msdyn_status) <br></br>Status reason (msdyn_statusreason) <br></br>Rejection reason (msdyn_rejectionreason) |
 | Job opening history | Job opening (msdyn_JobopeningId) <br></br>Status (msdyn_jobopeningstatus) <br></br>Status reason (msdyn_jobopeningstatusreason) |
 | Candidate history | Candidate (msdyn_CandidateId) |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

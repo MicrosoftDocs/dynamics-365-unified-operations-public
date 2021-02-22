@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the code upgrade service in Lifecycle Services (LCS)
-description: This topic explains how to configure the <strong>Code upgrade </strong>tile in Lifecycle Services (LCS) to migrate your solution to the latest version of the Finance and Operations apps.
+description: This topic explains how to configure the Code upgrade tile to migrate your solution to the latest version of the Finance and Operations apps.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 08/01/2017
@@ -128,3 +128,6 @@ Once the upgraded code in Releases\\\<version number\> compiles successfully and
 
 The [Source Control Merge Wizard](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard) opens, which guides you through merging the Releases\\\<version number\> branch back into Trunk\\Main.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

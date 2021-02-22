@@ -159,3 +159,6 @@ Select the company that is the source of the consolidated data, and then choose 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

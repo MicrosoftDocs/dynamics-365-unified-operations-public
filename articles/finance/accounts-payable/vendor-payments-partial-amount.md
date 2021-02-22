@@ -58,3 +58,6 @@ You might make a partial payment where the amount that must still be settled is 
 
 
 For more information, see [Vendor payment overview](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

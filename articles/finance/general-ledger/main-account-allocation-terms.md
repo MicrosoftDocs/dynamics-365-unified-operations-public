@@ -74,3 +74,6 @@ On the **Destination ledger account** FastTab, the main account will be the same
 > You can optionally use the **Copy** button to duplicate the selected allocation.
 
 When an allocation term is created for a main account, the system will automatically post a new voucher when a voucher is posted that matches the source financial dimensions on the allocation terms.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

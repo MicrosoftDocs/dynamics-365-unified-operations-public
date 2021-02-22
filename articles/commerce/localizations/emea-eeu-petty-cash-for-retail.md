@@ -96,3 +96,6 @@ Use the following procedure to set up a payment method for cash payments in a st
 
 > [!NOTE]
 > You must set up offset accounts for both the cash tender payment method and the remove tender or float entry payment method for a store. This creates balanced general ledger entries for remove tender or float entry transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

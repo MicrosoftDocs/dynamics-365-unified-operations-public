@@ -222,7 +222,7 @@
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json  
         - name: Implement Finance and Operations Commerce projects
           href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-        - name: Set up new environments, Azure DevOps, and branches for Commerce projects
+        - name: Set up new environments, Azure DevOps, and branches for projects
           href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
         - name: Update code and environments for Commerce projects
           href: dev-itpro/updating-environments.md
@@ -2088,6 +2088,8 @@
             href: e-commerce-extensibility/request-properties-object.md
           - name: App settings
             href: e-commerce-extensibility/app-settings.md
+          - name: Platform settings file
+            href: e-commerce-extensibility/platform-settings.md
           - name: Extend a module definition
             href: e-commerce-extensibility/extend-module-definition.md
           - name: Cookie API overview
@@ -2184,7 +2186,7 @@
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Upcoming changes in the Retail SDK
           href: dev-itpro/UpcomingSDKChanges.md
-        - name: Important development and ALM changes from version 10.0.10 to 10.0.13
+        - name: Development and ALM changes from version 10.0.10 to 10.0.13
           href: dev-itpro/dev-changes-10-13.md
         - name: Merge the build systems for Commerce and Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
@@ -2194,7 +2196,7 @@
           href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
         - name: Create deployable packages
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-        - name: Development in cloud-hosted dev environments without admin access
+        - name: Development in cloud-hosted environments without admin access
           href: dev-itpro/cloud-dev-box.md
         - name: Set up Commerce SDK build pipeline
           href: dev-itpro/retail-sdk/SDK-build-pipeline.md
@@ -2270,7 +2272,7 @@
         items:
         - name: Commerce Scale Unit customer and consumer APIs
           href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and later)
+        - name: Create Retail Server extension API (Retail SDK version 10.0.11 and later)
           href: dev-itpro/retail-server-icontroller-extension.md
         - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)
           href: dev-itpro/retail-server-extension.md

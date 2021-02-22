@@ -242,3 +242,5 @@ You will create a purchase order that has three lines: two lines for the same pr
 
 > [!TIP]
 > You can repeat this scenario, but this time, set **Size** - *No* under the **Allow product dimension mixing** FastTab on the *BULK* **Location profiles**, so that none of the product dimensions can be mixed. In this case, when you receive the purchase order, each product variant will be put to a new location.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

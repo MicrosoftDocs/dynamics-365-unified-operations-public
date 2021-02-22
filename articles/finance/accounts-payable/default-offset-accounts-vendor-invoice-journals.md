@@ -102,3 +102,6 @@ Use the following table to help decide where you should assign default accounts 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

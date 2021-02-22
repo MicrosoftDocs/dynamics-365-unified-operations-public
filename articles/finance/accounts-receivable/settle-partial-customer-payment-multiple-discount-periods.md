@@ -102,3 +102,6 @@ The invoice balance is now 0.00. Arnie views the information on the **Customer t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

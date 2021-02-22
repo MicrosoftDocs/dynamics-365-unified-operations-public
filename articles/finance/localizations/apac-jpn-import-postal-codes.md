@@ -55,3 +55,6 @@ In Japan, the Japan Postal Office provides a ZIP code file that you can import i
 5. Set the source file format of the importing project to “CSV(Unicode)”.
 6. Click **Import**.
 7. Validate the results.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ In the **Data management** workspace, you can get an overview of target entities
 
     ![Figure 3](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

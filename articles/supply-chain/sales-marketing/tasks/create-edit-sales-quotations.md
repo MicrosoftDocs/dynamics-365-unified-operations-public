@@ -72,3 +72,6 @@ This procedure demonstrates how to create and update a sales quotation. You can 
 13. Click **Sales orders**.
 14. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

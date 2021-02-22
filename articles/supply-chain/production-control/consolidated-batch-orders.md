@@ -49,3 +49,6 @@ A consolidated batch order can contain any combination of the following orders:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

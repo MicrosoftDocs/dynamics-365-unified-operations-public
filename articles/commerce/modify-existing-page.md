@@ -93,3 +93,6 @@ The following example shows how to modify the home page by changing the video th
 [Verify page content accessibility](verify-accessibility.md)
 
 [Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ This task demonstrates how to assign a free text invoice template to a customer.
     + Yearly – Select this option and enter the number of years in the Per field. For example, if you enter 2, an invoice will be generated every two years for this customer.  
 14. In the **Per** field, enter a number.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

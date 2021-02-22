@@ -4,7 +4,7 @@
 title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
@@ -32,13 +32,15 @@ ms.dyn365.ops.version: Human Resources
 
 # Manage leave requests in Teams
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [banner](includes/preview-feature.md)]
 
-The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information and start a leave request. The **Time off** tab provides more detailed information. You can also send people information about your upcoming time off in teams and chats outside the Human Resources app.
+The Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information and start a leave request. The **Time off** tab provides more detailed information. You can also send people information about your upcoming time off in Teams and chats outside the Human Resources app.
 
 ## Install the app
 
-You can find the Human Resources app in the Teams store.
+You can find the Dynamics 365 Human Resources app in the Teams store.
 
 1. In Microsoft Teams, select the ellipses.
 
@@ -177,9 +179,26 @@ The calendar displays your direct reports' approved and pending time off.
 
 ![Time off calendar in Human Resources Teams app](./media/hr-teams-leave-app-calendar.png)
 
+## Supported languages
+
+The Dynamics 365 Human Resources app in Teams supports the following languages:
+
+| Locale ID | Language |
+| --- | --- |
+| de-DE | German (Germany) |
+| es-ES | Spanish (Spain) |
+| es-MX | Spanish (Mexico) |
+| fr-CA | French (Canada) |
+| fr-FR | French (France) |
+| it-IT | Italian (Italy) |
+| nl-NL | Dutch (Netherlands) |
+| pt-BR | Portuguese (Brazil) |
+| tr-TR | Turkish (Turkey) |
+| zh-CN | Chinese (Simplified) |
+
 ## Troubleshooting
 
-If you're having trouble signing into or using the Human Resources Teams app, try following these troubleshooting instructions. If you're still having problems after troubleshooting, contact Support. For more information, see [Get support](hr-admin-troubleshooting-support.md).
+If you're having trouble signing into or using the Dynamics 365 Human Resources Teams app, try following these troubleshooting instructions. If you're still having problems after troubleshooting, contact Support. For more information, see [Get support](hr-admin-troubleshooting-support.md).
 
 ### Can't sign into the Human Resources app in Teams
 
@@ -233,3 +252,6 @@ To restrict access to the Human Resources app in Microsoft Teams for your organi
 [Download and install Microsoft Teams](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teams help center](https://support.office.com/teams)</br>
 [Human Resources app in Teams](hr-admin-teams-leave-app.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

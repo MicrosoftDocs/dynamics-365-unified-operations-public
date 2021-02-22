@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (March 20, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for March 20, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
@@ -90,3 +90,6 @@ With Platform update 24 for Finance and Operations, users can create alert rules
 With this change, duplicates are detected as you enter name columns, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

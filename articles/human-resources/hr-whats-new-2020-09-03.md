@@ -3,9 +3,9 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (September 03, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for September 3, 2020.
-author: Andreabichsel
+author: andreabichsel
 manager: tfehr
-ms.date: 9/03/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (September 3, 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -125,3 +127,6 @@ Benefits management reason codes will soon be combined with existing reason code
 [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

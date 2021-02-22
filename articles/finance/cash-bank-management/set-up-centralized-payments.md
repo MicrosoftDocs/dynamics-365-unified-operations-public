@@ -62,3 +62,6 @@ You can define default descriptions for intercompany settlement vouchers. The de
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

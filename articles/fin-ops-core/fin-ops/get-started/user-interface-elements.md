@@ -91,3 +91,6 @@ A *toolbar* contains tools, such as the ability to add fields or remove records.
 A *list* is the name given to a collection of records that you can scroll through. You can bring these records into the page by selecting them. Often, this will open a grid.
 
 ![The following image shows examples of toolbars, grids, and lists.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

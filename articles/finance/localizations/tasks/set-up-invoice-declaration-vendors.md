@@ -61,3 +61,6 @@ This procedure walks you through setting up the Icelandic invoice declaration. T
 10. In the Record type field, select 'LA'.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

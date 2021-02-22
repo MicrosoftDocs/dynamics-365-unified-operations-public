@@ -192,3 +192,6 @@ To make it easier to view the columns that you're working on in the row definiti
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ The classes, interfaces, and extensions described in these steps are shown in th
 
 ![MapClassExtensions](media/TableMaps.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

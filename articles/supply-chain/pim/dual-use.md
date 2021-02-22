@@ -111,3 +111,6 @@ You use the **Dual use certificates** page to set up and manage the required dua
     | Print on invoice | Select this check box to print the certificate number on invoices that are addressed to the specified country during the specified date range. |
     | Print on packing slip | Select this check box to print the certificate number on packing slips that are addressed to the specified country during the specified date range. |
     | Print on sales order | Select this check box to print the certificate number on sales orders that are addressed to the specified country during the specified date range. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

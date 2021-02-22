@@ -50,3 +50,6 @@ Value streams are operating units, that group one or multiple production flows. 
 2. Close the page.
 3. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

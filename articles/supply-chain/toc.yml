@@ -154,6 +154,8 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Standard saved views for Supply Chain Management
+          href: get-started/saved-views-scm.md
         - name: Grid capabilities
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
@@ -365,6 +367,8 @@
         items:
         - name: Forecasts, work orders, and projects
           href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+        - name: Bill for maintenance on customer-owned assets
+          href: asset-management/integration-to-project-management-and-accounting/customer-billing.md
       - name: Integrate asset management with fixed assets
         href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
       - name: Preventive and reactive maintenance
@@ -2017,6 +2021,8 @@
         href: engineering-change-management/engineering-attributes-and-search.md
       - name: Engineering versions and engineering product categories
         href: engineering-change-management/engineering-versions-product-category.md
+      - name: Enable change management on existing products
+        href: engineering-change-management/change-management-existing-products.md
       - name: Product lifecycle state and transactions
         href: engineering-change-management/product-lifecycle-state-transactions.md
       - name: Manage changes to engineering products
@@ -2981,6 +2987,10 @@
             href: warehousing/troubleshoot-warehouse-configuration.md
         - name: Install and configure the warehouse app
           items:
+          - name: Install and connect the Warehouse Management mobile app
+            href: warehousing/install-configure-warehouse-management-app.md
+          - name: Mobile device user settings
+            href: warehousing/mobile-device-user-settings.md
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
           - name: Scan bar codes using a camera in the warehouse app

@@ -139,3 +139,6 @@ SystemNotificationsManager::AddNotification(notification);
 ## Additional resources
 
 [User interface development home page](user-interface-development-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

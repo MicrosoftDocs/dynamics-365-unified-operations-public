@@ -79,3 +79,6 @@ This task was created using the demo data company MYMF.
 14. Click OK.
     * Verify that the information on credit note report is correct.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

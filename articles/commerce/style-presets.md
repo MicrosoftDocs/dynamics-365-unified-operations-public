@@ -128,3 +128,6 @@ The preset's style values are made active across your public-facing website.
 [Add languages to your site](add-languages-to-site.md)
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

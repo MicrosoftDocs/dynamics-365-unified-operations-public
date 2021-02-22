@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot issues related to upgrades of Finance and Operations apps
+title: Troubleshoot issues from upgrades of Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues that are related to upgrades of Finance and Operations apps.
 author: RamaKrishnamoorthy 
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-03-16
 
 ---
 
-# Troubleshoot issues related to upgrades of Finance and Operations apps
+# Troubleshoot issues from upgrades of Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
 
@@ -95,3 +95,6 @@ If the issue still isn't fixed, follow these steps.
 4. Open the **Table mapping** page from the **Dual-write** page in the Finance and Operations app.
 5. If the attribute is not auto-populated on the map, add it manually by clicking **Add attribute** button and then clicking **Save**. 
 6. Select the map and click **Run**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

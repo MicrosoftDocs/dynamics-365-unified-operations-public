@@ -211,3 +211,6 @@ Review the code in the `BankImport_RU` class of the `Application Suite` model to
 
 [ER framework API changes for Application update 7.3](er-apis-app73.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

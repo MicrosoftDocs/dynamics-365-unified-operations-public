@@ -262,3 +262,6 @@ After the request has finished running, the response body will contain the custo
         Console.WriteLine(orderHistory.FirstOrDefault<SalesOrder>().Id);
     }
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

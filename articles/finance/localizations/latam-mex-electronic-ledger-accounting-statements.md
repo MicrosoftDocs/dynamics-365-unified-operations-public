@@ -241,3 +241,6 @@ This task walks through all necessary steps to configure the generation of elect
 - [CFDI layout version 3.3](latam-mex-cfdi-3-3.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

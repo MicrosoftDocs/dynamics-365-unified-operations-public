@@ -143,3 +143,6 @@ Represents the run-time instance of a field.
 | [UnWrapText](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#unwraptext) |UnWrapText: boolean (optional)  <br>|False by default -- text of the page will be wrapped.<br>  |
 | [WrapText](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#wraptext) |WrapText: boolean (optional)  <br>|If true then the text of the field control will wrap to the next line.<br>  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

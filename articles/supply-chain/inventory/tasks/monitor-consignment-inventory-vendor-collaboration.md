@@ -44,3 +44,6 @@ This procedure shows how to use vendor collaboration to see information about th
 1. Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.
     * The On-hand consignment inventory page shows the stock that you own at the customer's warehouse. You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

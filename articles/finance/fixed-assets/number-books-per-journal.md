@@ -54,3 +54,6 @@ For example, there are 5,001 fixed asset IDs, three books are associated with ea
 
 > [!Note] 
 > If the **Summarize depreciation** parameter is turned on when you're creating a depreciation proposal, then the value in the **Number of books per journal - Depreciation proposal** field has no effect. In this case number of books per journal is 6000, which is the internal defined limit.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

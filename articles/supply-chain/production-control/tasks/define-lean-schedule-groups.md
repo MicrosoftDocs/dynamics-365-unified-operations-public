@@ -57,3 +57,6 @@ Lean schedule groups are defined to group and distinguish products in kanban sch
 3. In the Item allocation key field, click the drop-down button to open the lookup.
 4. In the list, click the link in the selected row.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ You've now successfully imported and applied a Microsoft-published dual-write ta
 ## Next steps
 
 [Enable table maps for dual-write](enable-entity-map.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ This topic explains how to adjust sales tax on a vendor invoice. If the original
 13. Select **OK**.
 14. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

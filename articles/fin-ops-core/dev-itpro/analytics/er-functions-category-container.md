@@ -48,3 +48,6 @@ ms.dyn365.ops.version: 10.0.17
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Electronic reporting formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

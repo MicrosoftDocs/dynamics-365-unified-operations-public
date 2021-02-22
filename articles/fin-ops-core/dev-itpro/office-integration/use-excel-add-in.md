@@ -3,7 +3,7 @@
 
 title: View and update entity data with Excel 
 description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. 
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
@@ -23,13 +23,15 @@ ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # View and update entity data with Excel 
+
+[!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -146,3 +148,6 @@ There are a few issues that can be resolved through some easy steps.
 - **You receive a "Forbidden" message** – If you receive a "Forbidden" message while the Excel add-in is loading metadata, the account that is signed in to the Excel add-in doesn't have permission to use the targeted service, instance, or database. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, select it, sign out, and then sign back in.
 - **A blank webpage is shown over Excel** – If a blank webpage is opened during the sign-in process, the account requires AD FS, but the version of Excel that is running the Excel add-in isn't recent enough to load the sign-in dialog box. To resolve this issue, update the version of Excel that you're using. To update the version of Excel when you're in an enterprise that is on the deferred channel, use the [Office deployment tool](https://technet.microsoft.com/library/jj219422.aspx) to [move from the deferred channel to the current channel](https://technet.microsoft.com/library/mt455210.aspx).
 - **You receive a time-out while you publish data changes** – If you receive time-out messages while you're trying to publish data changes to an entity, consider reducing the publish batch size for the affected workbook. Entities that trigger larger amounts of logic on record changes might require updates to be sent in smaller batches to help prevent time-outs.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

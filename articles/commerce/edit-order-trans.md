@@ -94,3 +94,6 @@ By default, after the orders are successfully synced, they are put in a hold sta
 [Create an Excel workbook to edit retail transactions](create-excel-edit.md)
 
 [Add fields to an Excel workbook to edit retail transactions](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

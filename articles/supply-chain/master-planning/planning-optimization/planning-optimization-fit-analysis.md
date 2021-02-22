@@ -116,3 +116,6 @@ The following table shows the various results that can be shown after a fit anal
 [Apply filters to a plan](plan-filters.md)
 
 [Cancel a planning job](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ The "CartlineComponent" and "WishListIconComponent" components have been renamed
 [Clone a module library module](clone-starter-module.md)
 
 [Best practices for Dynamics 365 Commerce development](best-practices-dev.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

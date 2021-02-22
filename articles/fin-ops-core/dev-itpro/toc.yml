@@ -208,7 +208,7 @@
                     href: data-entities/dual-write/tax-mapping.md
                 - name: Integrate procurement in Supply Chain Management with Field Service
                   href: data-entities/dual-write/scm-field-service-procurement.md
-                - name: Sync with the Dynamics 365 Supply Chain Management pricing engine on demand
+                - name: Sync on-demand with the Supply Chain Management pricing engine
                   href: data-entities/dual-write/pricing-engine.md
                 - name: Prospect to cash in dual-write
                   href: data-entities/dual-write/dual-write-prospect-to-cash.md
@@ -222,25 +222,25 @@
                   href: data-entities/dual-write/inventory-availability.md
             - name: Support for dual-write
               items:
-                - name: Support for Field Service solutions and Project Service Automation solutions
+                - name: Support for Field Service and Project Service Automation solutions
                   href: data-entities/dual-write/field-service-project-service-automation.md
                 - name: Migrate Prospect to cash data from Data Integrator to dual-write
                   href: data-entities/dual-write/migrate-prospect-to-cash.md
                 - name: Troubleshooting
                   items:
-                  - name: Verify that dual-write is configured in Finance and Operations apps and Dataverse
+                  - name: Verify dual-write configuration in Finance and Operations apps and Dataverse
                     href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                   - name: Troubleshoot issues during initial setup
                     href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                   - name: Troubleshoot issues during initial synchronization
                     href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                  - name: Troubleshoot issues with the Dual-write module in Finance and Operations apps
+                  - name: Troubleshoot dual-write issues in Finance and Operations apps
                     href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                   - name: Troubleshoot live synchronization issues
                     href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
                   - name: Troubleshoot issues related to solution awareness
                     href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                  - name: Troubleshoot issues related to upgrades of Finance and Operations apps
+                  - name: Troubleshoot issues from upgrades of Finance and Operations apps
                     href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                   - name: General troubleshooting
                     href: data-entities/dual-write/dual-write-troubleshooting.md
@@ -344,7 +344,7 @@
           href: data-entities/data-import-export-job.md
         - name: Synchronize date and time in import jobs
           href: data-entities/data-synchronize-date-and-time.md
-        - name: Best practices for importing vouchers using the General journal entity
+        - name: Importing vouchers using the General journal entity
           href: data-entities/tips-tricks-import-general-journal-entity.md
         - name: Optimizing data migration for Finance and Operations apps
           href: sysadmin/optimize-data-migration.md
@@ -960,11 +960,11 @@
           href: perf-test/trace-trace-tutorial.md
         - name: Single-user testing with Task recorder and the Performance SDK 
           href: perf-test/single-user-test-perf-sdk.md 
-        - name: Multi-user testing with the Performance SDK and a local test controller 
+        - name: Multi-user Performance SDK testing with a local test controller
           href: perf-test/multi-user-testing-local-test-controller.md 
         - name: Multi-user testing with the Performance SDK and Azure DevOps 
           href: perf-test/multi-user-testing-perfsdk-azuredevops.md 
-        - name: Troubleshooting guide for single-user or multi-user testing with the Performance SDK 
+        - name: Troubleshooting guide for testing with the Performance SDK 
           href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: Performance SDK and multiuser testing in on-premises environments
           href: perf-test/perfsdk-tutorial-lbd.md  
@@ -978,7 +978,7 @@
           href: perf-test/testing-validation.md
         - name: Test projects in Visual Studio
           href: perf-test/testing-support.md
-        - name: Deploy environments supporting continuous build and test automation
+        - name: Deploy and use a continuous build and test automation environment
           href: perf-test/continuous-build-test-automation.md
         - name: SysTest filtering using class and method attributes
           href: perf-test/systest-filtering.md
@@ -1504,8 +1504,6 @@
           href: sysadmin/batch-active-period-dst.md
         - name: Batch manager security role
           href: sysadmin/runby.md
-        - name: Batch job to handle SQL index defragmentation
-          href: sysadmin/batch-job-SQL-defragmentation.md
         - name: Configure batch alerts
           href: sysadmin/alerts.md
         - name: Enhanced batch forms

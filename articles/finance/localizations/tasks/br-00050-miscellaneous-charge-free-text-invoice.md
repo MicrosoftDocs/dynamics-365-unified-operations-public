@@ -71,3 +71,6 @@ Brazilian legislation taxes  miscellaneous charges such as freight. Miscellaneou
 38. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
 39. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

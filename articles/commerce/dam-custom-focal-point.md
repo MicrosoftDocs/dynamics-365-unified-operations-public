@@ -64,3 +64,6 @@ To define a custom focal point for an image, follow these steps.
 [Crop images](dam-crop-images.md)
 
 [Upload and serve static files](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

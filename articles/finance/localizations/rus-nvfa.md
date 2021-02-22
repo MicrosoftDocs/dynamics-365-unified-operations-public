@@ -89,3 +89,6 @@ Use the **Working clothes**, **Special rigging**, or **Not valuable FAs** page l
 6.  Click the **Officials** tab. The details of the assigned officials are displayed. You can modify the employee details if changes are required.
 
 7.  Click **Print** to generate the NVFA statement of writing-off (No. MB-8).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

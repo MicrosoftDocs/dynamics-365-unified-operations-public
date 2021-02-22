@@ -46,3 +46,6 @@ This dual conversion causes dates to change between applications. For example, t
 4. Change **Timezone** to **Coordinated Universal Timezone**, and change **Language** to **En-US**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

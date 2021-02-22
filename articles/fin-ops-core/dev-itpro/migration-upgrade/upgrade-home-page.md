@@ -79,3 +79,6 @@ This Tech Talk video provides an introduction servicing (applying code updates, 
  For more information, see: 
 - [Refresh database](../database/database-refresh.md)
 - [Set up technical support for Finance and Operations apps](../lifecycle-services/support-experience.md) 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

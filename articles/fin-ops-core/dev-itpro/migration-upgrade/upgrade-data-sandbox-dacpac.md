@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments
-description: This topic will help customers who no longer have Remote Desktop protocol (RDP) access to their Tier-2 through Tier-5 sandbox environments when they upgrade from Microsoft Dynamics AX 2012 to Finance and Operations apps.
+description: This topic is for customers who don't have Remote Desktop protocol (RDP) access to their sandbox environments when they upgrade.
 author: laneswenka
 manager: AnnBe
 ms.date: 12/02/2020
@@ -175,3 +175,6 @@ If you can fix the data, you can resume the upgrade from LCS. However, note that
 After the data upgrade is completed, apply the same customization packages from your sandbox environment to your production environment. You can then copy your sandbox environment AXDB database to the production environment.
 
 For information about how to perform the copy operation, see [Copy the sandbox database to production](../database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

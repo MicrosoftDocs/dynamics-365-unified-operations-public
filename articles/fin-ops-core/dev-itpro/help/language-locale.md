@@ -101,3 +101,6 @@ When you extend the in-product **Help** pane, you must assign indexes for the re
 
 [Custom Help overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

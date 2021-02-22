@@ -58,3 +58,6 @@ This topic describes how to create a dispatch team. After you create a dispatch 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

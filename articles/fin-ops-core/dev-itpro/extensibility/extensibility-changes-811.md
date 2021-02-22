@@ -477,3 +477,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Redesign InventPosting searching algorithms 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

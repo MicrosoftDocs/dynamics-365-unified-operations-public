@@ -44,3 +44,7 @@ This topic includes information and links to documentation resources for Egypt.
 
 - [References to original invoices in credit notes](../accounts-receivable/original-invoice-numbers-credit-notes.md)
 - [Reverse charge VAT](emea-reverse-charge.md)
+- [Global withholding tax](../general-ledger/global-withholding-tax-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

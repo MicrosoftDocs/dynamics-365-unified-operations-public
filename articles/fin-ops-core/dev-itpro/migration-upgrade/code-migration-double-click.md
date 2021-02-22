@@ -82,3 +82,6 @@ As you migrate mouse double-click methods, you should consider the following gui
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

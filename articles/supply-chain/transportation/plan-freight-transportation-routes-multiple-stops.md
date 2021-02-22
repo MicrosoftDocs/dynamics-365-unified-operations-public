@@ -57,3 +57,6 @@ The Load building workbench uses the customer addresses and delivery dates from 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

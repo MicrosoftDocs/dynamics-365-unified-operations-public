@@ -170,3 +170,6 @@ The process for handling vendor rebates involves multiple manual tracking tasks 
 - Generating accurate rebate claims
 - Accruing the expected receivable and interim gain in the general ledger
 - Updating the vendor balance and the income statement with the allowance that is due
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

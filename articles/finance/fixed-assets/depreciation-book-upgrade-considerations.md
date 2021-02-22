@@ -95,3 +95,6 @@ With either approach, the data upgrade script will also use the number sequence 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

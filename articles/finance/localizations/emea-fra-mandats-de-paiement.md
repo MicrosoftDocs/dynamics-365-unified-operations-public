@@ -87,3 +87,6 @@ Use the following criteria in the database inquiry page to retrieve lines.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

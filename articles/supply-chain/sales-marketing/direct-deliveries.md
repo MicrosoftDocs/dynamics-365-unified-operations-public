@@ -57,3 +57,6 @@ When you create a direct delivery, the items that you sell never physically arri
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

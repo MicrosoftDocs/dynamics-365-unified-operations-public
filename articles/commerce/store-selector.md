@@ -34,8 +34,6 @@ ms.dyn365.ops.version:
 
 This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Customers can use the store selector module to pick up a product in a selected store after an online purchase. In Commerce version 10.0.13, the store selector module also includes additional capabilities that can showcase a **Find a Store** page that shows nearby stores.
 
 The store selector module lets users enter a location (city, state, address, and so on) to search for stores within a search radius. When the module is first opened, it uses the customer's browser location to find stores (if consent is provided).
@@ -149,3 +147,6 @@ To configure the store selector module to show available stores for a store loca
 [Bing Maps REST APIs](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Maps module](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

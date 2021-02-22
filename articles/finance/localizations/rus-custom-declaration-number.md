@@ -101,3 +101,6 @@ Before you can register customs declaration numbers for newly received goods, yo
 
     ![Invoice facture](media/7%20Invoice-facture.jpg)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

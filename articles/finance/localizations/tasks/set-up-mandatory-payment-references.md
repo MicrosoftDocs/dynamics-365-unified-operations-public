@@ -60,3 +60,6 @@ This functionality is typically used by accountants, accounting managers, accoun
 13. Click Save.
 14. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

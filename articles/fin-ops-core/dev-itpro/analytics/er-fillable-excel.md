@@ -194,3 +194,6 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md)
 
 [Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

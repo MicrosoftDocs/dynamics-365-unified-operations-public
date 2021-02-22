@@ -67,3 +67,6 @@ The imported XML and DANFE files can be viewed on the **Received NF-e XML docume
 1. On the **Inquire about NF-e access key status** page, in the **Limit of cancellation** field, enter the number of hours that the vendor has to cancel the NF-e.
 2. In the **Minimum inquiry interval** field, enter the minimum interval in minutes, between the inquiries for the received NF-e access key at the SEFAZ.
 3. If necessary, enter the batch processing parameters, recurrences, and schedule.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

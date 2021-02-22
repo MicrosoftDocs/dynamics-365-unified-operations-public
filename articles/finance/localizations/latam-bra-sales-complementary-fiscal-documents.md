@@ -75,3 +75,6 @@ For more information, see the following topics:
  - [Cancel a customer fiscal document (project)](tasks/br-00092-cancel-customer-fiscal-document-project.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

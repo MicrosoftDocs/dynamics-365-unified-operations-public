@@ -78,3 +78,6 @@ In the details view, you can update various information. Here are some examples:
 
 > [!NOTE]
 > If you select an asset when you create a maintenance request, you can add one fault to the asset. After the maintenance request has been created, you can add more faults, as you require. To add faults, select **Asset fault** on the **All maintenance requests** page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

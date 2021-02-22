@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Application module
-description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it. Each application consists of pages, actions, data queries, and logic that glue them together. An application is primarily described with a declarative metadata system, and can have an accompanying imperative extension model.
+description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it.
 author: robinarh
 manager: AnnBe
 ms.date: 09/17/2019
@@ -102,3 +102,6 @@ is invoked when the module is loaded and is being initialized. The method must r
 
 #### Returns [Application](../interfaces/services-application-iapplication.md)
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

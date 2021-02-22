@@ -4,7 +4,7 @@
 title: Edit personal information
 description: This article describes how to edit personal information in Employee and manager self service.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Edit personal information
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can edit your personal information in Dynamics 365 Human Resources in the **Employee self service workspace**.
 
@@ -77,3 +79,6 @@ Parameters set in the global address book determine the roles that can see your 
     - To upload an image, select **Upload new image**.
     - To remove an image, select the image and then select **Remove**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -190,3 +190,6 @@ You're creating a new data model for the selected configuration. This configurat
 65. Click Save.
 66. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

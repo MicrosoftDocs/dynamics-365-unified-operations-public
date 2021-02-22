@@ -83,3 +83,6 @@ Category attribute groups can also be assigned to each group as required.
 [Manage product categories and products ](category-management-product-creation.md)
 
 [Change the sort order for merchandizing entities](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

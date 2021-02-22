@@ -59,3 +59,6 @@ This procedure demonstrates how to assign sales tax groups to commerce channels.
 21. In the list, click the link in the selected row.
 22. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

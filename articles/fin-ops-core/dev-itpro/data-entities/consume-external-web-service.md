@@ -66,3 +66,6 @@ Note that the web service URL in this sample is fictional.  There is no known we
         info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
     }
     ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

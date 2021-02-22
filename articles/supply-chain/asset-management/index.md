@@ -42,3 +42,6 @@ The image below is an illustration of the interfaces to other modules in Finance
 ![Overview of how Asset Management integrates](media/overview-integrate2.jpg)
 
 Asset Management enables you to efficiently manage and carry out tasks related to managing and servicing many types of equipment in your company, for example, machines, production equipment, and vehicles. Asset Management supports solutions across numerous industries.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

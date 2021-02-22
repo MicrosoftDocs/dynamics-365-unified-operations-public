@@ -79,3 +79,6 @@ This guide shows how to create an accessorial assignment, carrier accessorial ch
 6. In the list, click the link in the selected row.
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

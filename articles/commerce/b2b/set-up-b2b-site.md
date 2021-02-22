@@ -305,3 +305,6 @@ To create an invoice details page in site builder, follow these steps.
 [Content block module](../add-hero-module.md)
 
 [Product Collection](../product-collection-module-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

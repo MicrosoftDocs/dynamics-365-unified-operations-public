@@ -53,3 +53,6 @@ This task uses the USMF demo company.
 16. Select **New period interval**. Once the first period interval has been entered, new periods can be created automatically. You can come back and add new period intervals as required.  
 17. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

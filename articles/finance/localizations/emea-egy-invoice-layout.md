@@ -116,3 +116,6 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 
 After you complete all the procedures in this topic, you can print invoices that are based on sales orders, free text invoices, and project invoices, in accordance with Egyptian legal requirements.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

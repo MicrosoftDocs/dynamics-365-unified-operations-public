@@ -93,3 +93,6 @@ You can associate the tax rate type to the following taxable master data where i
 - Released product
 - Procurement/Sales categories
 - Charge code
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

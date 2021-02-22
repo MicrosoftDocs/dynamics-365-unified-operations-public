@@ -325,6 +325,92 @@
             href: hr-developer-api-myleaverequests-overview.md
           - name: Submit a leave request to workflow
             href: hr-developer-api-myleaverequests-submit.md
+    - name: ATS integration API
+      items:
+      - name: Introduction
+        href: hr-admin-integration-ats-api-introduction.md
+      - name: Recruiting request and related entities
+        items:
+          - name: Recruiting request
+            href: hr-admin-integration-ats-api-recruiting-request.md
+          - name: Recruiting request education
+            href: hr-admin-integration-ats-api-recruiting-request-education.md
+          - name: Recruiting request location
+            href: hr-admin-integration-ats-api-recruiting-request-location.md
+          - name: Recruiting request position
+            href: hr-admin-integration-ats-api-recruiting-request-position.md
+          - name: Recruiting request skill
+            href: hr-admin-integration-ats-api-recruiting-request-skill.md
+          - name: Example query for Recruiting request
+            href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+      - name: Recruiting request option sets
+        items: 
+          - name: Job exempt status
+            href: hr-admin-integration-ats-api-job-exempt-status.md
+          - name: Recruiting request position status
+            href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+          - name: Recruiting request status
+            href: hr-admin-integration-ats-api-recruiting-request-status.md
+          - name: Regulatory job category
+            href: hr-admin-integration-ats-api-regulatory-job-category.md
+      - name: Candidate to hire and related entities
+        items:
+          - name: Candidate to hire
+            href: hr-admin-integration-ats-api-candidate-to-hire.md
+          - name: Certificate type
+            href: hr-admin-integration-ats-api-certificate-type.md
+          - name: Party contact
+            href: hr-admin-integration-ats-api-party-contact.md
+          - name: Person
+            href: hr-admin-integration-ats-api-person.md
+          - name: Person address
+            href: hr-admin-integration-ats-api-person-address.md
+          - name: Person certificate
+            href: hr-admin-integration-ats-api-person-certificate.md
+          - name: Person education
+            href: hr-admin-integration-ats-api-person-education.md
+          - name: Person identification number
+            href: hr-admin-integration-ats-api-person-identification-number.md
+          - name: Person professional experience
+            href: hr-admin-integration-ats-api-person-professional-experience.md
+          - name: Person screening
+            href: hr-admin-integration-ats-api-person-screening.md
+          - name: Person skill
+            href: hr-admin-integration-ats-api-person-skill.md
+          - name: Rating level
+            href: hr-admin-integration-ats-api-rating-level.md
+          - name: Screening types
+            href: hr-admin-integration-ats-api-screening-types.md
+          - name: Example query for Candidate to hire
+            href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+      - name: Candidate option sets
+        items:
+          - name: Applicant integration result
+            href: hr-admin-integration-ats-api-applicant-integration-result.md
+          - name: Blank Yes No
+            href: hr-admin-integration-ats-api-blank-yes-no.md
+          - name: Completion status
+            href: hr-admin-integration-ats-api-completion-status.md
+          - name: Contact type
+            href: hr-admin-integration-ats-api-contact-type.md
+          - name: Education credit basis
+            href: hr-admin-integration-ats-api-education-credit-basis.md
+          - name: Gender
+            href: hr-admin-integration-ats-api-gender.md
+          - name: Marital status
+            href: hr-admin-integration-ats-api-marital-status.md
+          - name: Months of year
+            href: hr-admin-integration-ats-api-months-of-year.md
+          - name: No Yes
+            href: hr-admin-integration-ats-api-no-yes.md
+          - name: Period unit
+            href: hr-admin-integration-ats-api-period-unit.md
+          - name: Screening frequency
+            href: hr-admin-integration-ats-api-screening-frequency.md
+          - name: Screening frequency generate from
+            href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+          - name: Skill level type
+            href: hr-admin-integration-ats-api-skill-level-type.md
   - name: User Guide
     items:
     - name: Overview
@@ -447,12 +533,6 @@
           href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
         - name: Client alert notifications by email
           href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-      - name: Electronic signatures
-        items:
-        - name: Electronic signatures overview
-          href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-        - name: Set up electronic signatures
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
       - name: Case management
         items:
         - name: Case management overview

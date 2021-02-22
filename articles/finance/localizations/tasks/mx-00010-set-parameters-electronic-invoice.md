@@ -75,3 +75,6 @@ This procedure walks you through setting up an electronic invoice and the PAC ac
 15. In the list, click the link in the selected row.
 16. Select or clear the Send report file - PDF check box.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

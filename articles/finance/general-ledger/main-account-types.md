@@ -45,3 +45,6 @@ For more information, see [Set up main account categories](tasks/set-up-main-acc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

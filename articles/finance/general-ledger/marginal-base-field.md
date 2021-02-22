@@ -226,3 +226,6 @@ For more information, see [Whole amount and Interval calculation options for sal
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ This topic explains how to download [Electronic reporting (ER) configurations](g
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

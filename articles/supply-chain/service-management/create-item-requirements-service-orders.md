@@ -75,3 +75,6 @@ Item requirements for service orders are processed through a project. To create 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

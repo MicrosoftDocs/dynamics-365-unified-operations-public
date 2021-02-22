@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security Development Tool user guide
-description: This topic provides information about how to create and maintain security artifacts such as roles, duties, and privileges by using the Security Development Tool.
+description: This topic describes how to create and maintain security artifacts such as roles, duties, and privileges by using the Security Development Tool.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -52,3 +52,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

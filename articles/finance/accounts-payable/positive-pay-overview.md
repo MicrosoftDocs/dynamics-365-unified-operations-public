@@ -53,3 +53,6 @@ For more information, see [Set up and generate positive pay files](set-up-genera
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

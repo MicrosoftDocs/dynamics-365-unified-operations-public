@@ -249,3 +249,6 @@ The baseline is added for the **Format to learn ER baselines** format.
 ## Additional resources
 
 - [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

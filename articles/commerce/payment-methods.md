@@ -53,3 +53,6 @@ To set up payment methods, you must complete the following tasks.
 2. Create organization-wide card types and card numbers. If credit cards or debit cards are accepted, you must create one payment method for cards, and then create the organization-wide card types and card numbers.
 3. Set up store payment method. Associate payment methods with each store, and then enter the store-specific settings for each payment method.
 4. Set up card payment methods for stores. For any card payment methods that the store accepts, complete the card setup.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

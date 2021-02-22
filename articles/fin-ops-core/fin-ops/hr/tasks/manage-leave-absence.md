@@ -49,3 +49,6 @@ This procedure walks through the creation of employee leave records. You can tra
     * For example: Leave for adoption  
 12. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

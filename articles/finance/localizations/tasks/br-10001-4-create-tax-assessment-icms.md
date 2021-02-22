@@ -56,3 +56,6 @@ You can create a tax assessment for the ICMS tax for a selected booking period. 
 23. Close the page.
 24. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

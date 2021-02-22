@@ -56,3 +56,6 @@ When you reverse the status of a production order from **Started** to **Released
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

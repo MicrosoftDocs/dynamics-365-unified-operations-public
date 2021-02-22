@@ -85,3 +85,6 @@ In this topic, you will complete two main steps:
 9. In the **Principal** dialog box, select the principal by adding **Electronic invoicing add-on**.
 10. Select **Add**, and then select **Save Key Vault changes**.
 11. On the **Overview** page, copy the **DNS name** value for the key vault. This value will be used during setup of the service in RCS and will be referred as the *key vault URI*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

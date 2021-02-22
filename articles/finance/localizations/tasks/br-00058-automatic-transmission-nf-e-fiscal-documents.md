@@ -76,3 +76,6 @@ Use the following procedure to set up email parameters to automatically send a N
 43. Click Save.
 44. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

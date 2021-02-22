@@ -260,3 +260,6 @@ To reverse the issue of the working clothes or special rigging item, on the **Wo
 ## Additional resources
 
 - [Not valuable fixed assets (NVFAs) (Russia)](rus-not-valuable-assets.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

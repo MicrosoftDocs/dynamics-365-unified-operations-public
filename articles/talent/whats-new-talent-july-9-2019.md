@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (July 9, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for July 9, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
@@ -118,3 +118,6 @@ The following tables will be enabled for custom columns in Dataverse:
 - **Leave type**
 - **Worker bank account**
 - **Work calendar**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

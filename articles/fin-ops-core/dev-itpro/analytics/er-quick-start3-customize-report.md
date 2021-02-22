@@ -676,3 +676,6 @@ The status of version 32.6.7.2 is changed from **Draft** to **Completed**, and t
 - [Download ER configurations from Global repository of Configuration service](er-download-configurations-global-repo.md)
 - [Create a free text invoice](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
 - [Create and work with custom fields](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

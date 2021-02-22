@@ -4,7 +4,7 @@
 title: Configure company information in Attract
 description: This topic explains how to configure company information and branding for Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
@@ -73,3 +73,6 @@ You can also configure options that are related to the candidate experience. For
 You can also set and enforce an expiration date for offers. If you set the **Require an expiration date for all offers** option to **Yes**, offers expire after the number of hours or days that you specify.
 
 For more information about offer management, see [Set up offer management](./offer-setup.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

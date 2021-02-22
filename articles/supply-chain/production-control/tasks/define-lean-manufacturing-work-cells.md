@@ -101,3 +101,6 @@ A work cell is a specific form of resource groups that can be used in lean manuf
 ## Save
 1. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

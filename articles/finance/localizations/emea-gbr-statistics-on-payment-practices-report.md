@@ -89,3 +89,6 @@ You can specify the date when the purchase invoice was received and then use thi
 ## Publish the reporting about payment practices
 
 After you generate the **Statistics on payment practices (UK)** report in Excel, you can use the report data to prepare the final report about payment practices for publication.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ To use the new feature, you must manually update any existing build definitions 
 1. Click **Save**.
 
 You can now use the new feature as described.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

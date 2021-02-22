@@ -264,3 +264,6 @@ The user who sets up parameters for the RFQ process can create multiple email te
 - %createddate%
 
 If an amendment is required and is sent after the RFQ is sent, the RFQ will be resent to all invited vendors. The published document will also be updated on the **Open published requests for quotations** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

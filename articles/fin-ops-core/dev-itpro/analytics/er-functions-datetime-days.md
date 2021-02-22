@@ -68,3 +68,6 @@ The `DAYS` function returns a positive value when the first date is later than t
 ## Additional resources
 
 [Date and time functions](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

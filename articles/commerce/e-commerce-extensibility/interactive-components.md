@@ -364,6 +364,8 @@ Generic editable field components wrap any custom components and enable interact
 
 [App settings](app-settings.md)
 
+[Platform settings file](platform-settings.md)
+
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
@@ -379,3 +381,6 @@ Generic editable field components wrap any custom components and enable interact
 [Work with modules](../work-with-modules.md)
 
 [Work with fragments](../work-with-fragments.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ When the `DATETIMEFORMAT` function converts a given date/time value, it consider
 ## Additional resources
 
 [Date and time functions](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

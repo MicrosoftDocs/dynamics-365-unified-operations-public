@@ -73,3 +73,6 @@ This task was created using the demo data company JPMF.
     * You can modify the credit amount.  
 8. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

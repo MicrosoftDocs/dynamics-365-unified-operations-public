@@ -2,7 +2,7 @@
 # required metadata
 
 title: Validate applications for Finance and Operations apps
-description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Finance and Operations apps environment.
+description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines.
 author: kfend
 manager: AnnBe
 ms.date: 04/13/2018
@@ -105,3 +105,6 @@ Additional resources
 --------
 
 [Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

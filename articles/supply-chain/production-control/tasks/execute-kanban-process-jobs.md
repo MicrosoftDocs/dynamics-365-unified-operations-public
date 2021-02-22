@@ -58,3 +58,6 @@ This procedure focuses on executing kanban process jobs. The first job is comple
 6. In the Good quantity field, enter a number.
 7. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

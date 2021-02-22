@@ -94,3 +94,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Support for extensions to map: CustVendTrans
 - Support for extensions to map: CustVendTransOpen
 - Support extensibility for SQL statement:  PriceDiscAdmCheckPost.postJournal
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -171,3 +171,6 @@ The following fields change the behavior of the posting process.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

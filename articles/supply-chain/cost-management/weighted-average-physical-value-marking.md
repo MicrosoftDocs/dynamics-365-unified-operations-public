@@ -235,3 +235,6 @@ The following diagram illustrates this series of transactions with the effects o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

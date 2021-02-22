@@ -109,3 +109,6 @@ Supply Chain Management now supports BOM calculation that includes transport ser
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

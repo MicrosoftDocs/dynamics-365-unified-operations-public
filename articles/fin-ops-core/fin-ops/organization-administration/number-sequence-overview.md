@@ -120,3 +120,6 @@ Unless there is a regulatory requirement that you use continuous number sequence
 In case of a power failure, an application error, or other unexpected failure, the system cannot recycle numbers automatically for continuous number sequences. You can run the cleanup process manually or automatically to recover the lost numbers.
 
 Carefully consider server usage when you plan the cleanup process. We recommend that you perform the cleanup as a batch job during non-peak hours.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -211,3 +211,6 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Legal entities                                          | Legal entity names                              |
 | Fiscal calendars                                        | Fiscal calendar, Year, Quarter, Period, Month   |
 | Site                                                    | ID, Name, Address, State, Country               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

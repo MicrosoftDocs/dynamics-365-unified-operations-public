@@ -108,3 +108,6 @@ For published RFQs, you must modify a request for quotation  to allow or disallo
 
 > [!IMPORTANT]
 > If you amend an existing RFQ for the purpose of allowing vendor questions, the system will clear all existing responses when you resend the RFQ.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

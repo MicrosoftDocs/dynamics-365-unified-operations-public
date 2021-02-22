@@ -59,3 +59,6 @@ The role of this procedure is Treasurer. This procedure uses the USMF demo compa
 18. Click Save.
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

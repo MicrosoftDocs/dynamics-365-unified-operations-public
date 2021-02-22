@@ -139,3 +139,6 @@ Now, if you use the base URL of the channel and go to the URL of the cross-chann
 [Document states and lifecycle](document-states-overview.md)
 
 [Work with publish groups](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

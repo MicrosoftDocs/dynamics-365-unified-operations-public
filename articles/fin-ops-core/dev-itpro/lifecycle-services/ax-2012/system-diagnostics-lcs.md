@@ -63,3 +63,6 @@ The following topics explain how to install and use System diagnostics.
 -   [System diagnostics in Lifecycle Services (LCS)](system-diagnostics-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

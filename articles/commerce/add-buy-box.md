@@ -34,8 +34,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The term *buy box* typically refers to the area of a product details page that is "above the fold," and that hosts all the most important information that is required to make a product purchase. (An area that is "above the fold" is visible when the page is first loaded, so that users don't have to scroll down to see it.)
 
 A buy box module is special container that is used to host all the modules that are shown in the buy box area of a product details page.
@@ -140,3 +138,6 @@ To add a buy box module to a new page and set the required properties, follow th
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
 
 [SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

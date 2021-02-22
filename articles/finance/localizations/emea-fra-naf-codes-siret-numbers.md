@@ -43,3 +43,6 @@ You can set up Siret numbers for customers, vendors, and prospects. The Siret is
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

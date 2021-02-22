@@ -61,3 +61,6 @@ At the end of each month, one month's revenue can be accrued from the customer's
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

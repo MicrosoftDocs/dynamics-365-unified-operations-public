@@ -134,3 +134,6 @@ This scenario shows how the feature works for warehouses that are set to **Allow
 
 > [!NOTE]
 > The same result is expected when the second line is partially reserved. In this case, work will be created for the reserved line quantity but not for the unreserved quantity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
