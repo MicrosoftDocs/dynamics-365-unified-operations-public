@@ -56,7 +56,7 @@ After the field values from the data entity are copied to mapped data source fie
 
 ![redo2](./media/redo2-1024x636.png)
 
-To skip **validateWrite** for all back-end tables for a data entity, a consumer can call **DataEntity.skipDataSourceValidateWrite(Boolean \_skip)**. This method turns **validateWrite** on or off for all data sources. By using the following API, you can skip validation for a particular field, regardless of the consumer.
+To skip **validateWrite** for all back-end tables for a data entity, a consumer can call **DataEntity.skipDataSourceValidateWrite(Boolean \_skip)**. This method turns **validateWrite** on or off for all data sources. By using the following API, you can skip validation for a particular data source, regardless of the consumer.
 
 [![Over10](./media/over10.png)](./media/over10.png)
 
