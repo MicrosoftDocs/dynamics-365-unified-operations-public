@@ -43,7 +43,7 @@ Before you can map a specific transactional event to an email template, you must
 
 To create an email template, follow these steps.
 
-1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Organization email templates**, or **Organization administration \> Setup \> Organization email templates**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Organization email templates** or **Organization administration \> Setup \> Organization email templates**.
 1. Select **New**.
 1. Under **General**, set the following fields:
 
@@ -175,7 +175,7 @@ Here is an example.
 Receipts can be emailed to customers who make purchases at a retail point of sale (POS). In general, the steps for creating the emailed receipt template are the same as the steps for creating templates for other transactional events. However, the following changes are required:
 
 - The text of the receipt is inserted into the email by using the **%message%** placeholder. To ensure that the receipt body is correctly rendered, surround the **%message%** placeholder with HTML **&lt;pre&gt;** and **&lt;/pre&gt;** tags.
-- The **%receiptid%** placeholder can be used to display a QR code or barcode that represents the receipt ID. (QR codes and barcodes are dynamically generated and served by a third-party service.) For more information on displaying a QR code or barcode in an emailed receipt, see [Add a QR code or barcode to transactional and receipt emails](add-qrcode-or-barcode.md).
+- The **%receiptid%** placeholder can be used to show a QR code or bar code that represents the receipt ID. (QR codes and bar codes are dynamically generated and served by a third-party service.) For more information about how to show a QR code or bar code in an emailed receipt, see [Add a QR code or bar code to transactional and receipt emails](add-qrcode-or-barcode.md).
 
 ## Upload the email HTML
 
