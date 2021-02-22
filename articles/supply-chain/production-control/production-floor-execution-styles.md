@@ -145,69 +145,50 @@ Each combobox should be nested inside a form group. Requirements :
 
 + The name of the group should start with "Combobox".  
 + Inside the group, the first control should be an AxFormStringControl which will be used as the display of the current value as well as the box where the user can type the required value. 
-+ The second control should be a CommonButton control. The name should start with "ClearButton". 
++ The second control should be a CommonButton control. The name should start with "ClearButton". The element must contain code using the **enable** property to show or hide the button. For example, to show or hide the **Clear** button when the user is typing information into the input field, the following code should be used: 
 
-The element must contain code using the **enable** property to show or hide the button.
-
-For example, to show or hide the **Clear** button when the user is typing information into the input field, the following code should be used: 
-
-```xpp
-public void textChange() 
-{ 
-    super(); 
-    ClearButtonSerial.enabled(this.text()? true : false); 
-} 
-```
-
-It is preferable to have one method where the data is set into the input box and add enabling Clear button there. Example: 
-
-```xpp
-public void setSerialId(str _serialId) 
-{
-    JmgTmpJobBundleProdFeedback.InventSerial = _serialId; 
-    ClearButtonSerial.enabled(_serialId? true : false); 
-
-    if (_serialId) 
+    ```xpp
+    public void textChange() 
     { 
-        this.addSerialNumber(); 
+        super(); 
+        ClearButtonSerial.enabled(this.text()? true : false); 
     } 
-}
-```
+    ```
 
-Then you can use the following code for the clear button clicked method : 
+    It is preferable to have one method where the data is set into the input box and add enabling Clear button there. Example: 
 
-```xpp
-public void clicked() 
-{ 
-    element.setSerialId(''); 
-    InventSerialId.setFocus(); // set focus back to the input box 
-} 
-```
+    ```xpp
+    public void setSerialId(str _serialId) 
+    {
+        JmgTmpJobBundleProdFeedback.InventSerial = _serialId; 
+        ClearButtonSerial.enabled(_serialId? true : false); 
 
-Remember to use the method of setting value into the input box for combobox when the form is initialized (method init). If value is set - clear button should be enabled, otherwise disabled.  
+        if (_serialId) 
+        { 
+            this.addSerialNumber(); 
+        } 
+    }
+    ```
 
-  
+    Then you can use the following code for the clear button clicked method : 
 
-d)The third control should be a CommonButton control. The name should start with "SearchButton". 
+    ```xpp
+    public void clicked() 
+    { 
+        element.setSerialId(''); 
+        InventSerialId.setFocus(); // set focus back to the input box 
+    } 
+    ```
 
-  
+    Remember to use the method of setting value into the input box for combobox when the form is initialized (method init). If value is set - clear button should be enabled, otherwise disabled.  
 
-The result should look like this : 
-
++ The third control should be a CommonButton control. The name should start with "SearchButton". The result should look like this : 
  
+    ![Combo box appearance](media/pfe-styles-combo.png)
 
-  
+## Dialogs 
 
-Dialogs 
+The styles for all the above controls keep the same rules when included in a dialog form as long as the name of the dialog form starts with "JmgProductionFloorExecutionDialog". To apply the correct style for the ok and cancel buttons : 
 
-  
-
-The styles for all the above controls keep the same rules when included in a dialog form as long as the name of the dialog form starts with "JmgProductionFloorExecutionDialog". 
-
-In order to apply the correct style for the ok and cancel buttons : 
-
-Ok button. It should be located in a group with name="OkButtonGroup" 
-
-Cancel button. It should be located in a group with name="CancelButtonGroup" 
-
- 
++ **Ok** button. It should be located in a group with name="OkButtonGroup" 
++ **Cancel** button. It should be located in a group with name="CancelButtonGroup" 
