@@ -39,7 +39,7 @@ After configuring a new AAD B2C tenant in site builder, selecting **Sign in** re
 ## Resolution
 ### Make sure the **Reply** URL on the AAD B2C is configured correctly 
 
-1. Go to to the Azure Portal at: https://portal.azure.com](https://portal.azure.com/).
+1. Go to the Azure portal at: https://portal.azure.com](https://portal.azure.com/).
 
 1. Select the AAD B2C application that you created for your site access.
 
