@@ -44,7 +44,7 @@ To issue electronic invoices through the Electronic invoicing add-on, you must a
 
 Each feature corresponds to a specific electronic invoicing feature that complies with the electronic invoicing requirements for a country/region.
 
-The following table shows the list of features that the Electronic invoicing add-on may support:
+The following table shows the list of features that the Electronic invoicing add-on may support.
 
 | Name                                              | Country/region |
 |---------------------------------------------------|----------------|
