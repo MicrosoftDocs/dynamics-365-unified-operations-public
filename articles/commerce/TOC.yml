@@ -2370,7 +2370,7 @@
             href: troubleshoot/credit-card-entry-form-error.md
           - name: Payments are automatically settled before orders are invoiced or shipped
             href: troubleshoot/payments-auto-settled.md
-      - name: Manage your e-commerce site
+      - name: E-commerce site management
         items:
         - name: Can't configure security group for site builder during initial deployment
           href: troubleshoot/security-group-site-builder.md
