@@ -5,7 +5,7 @@ title: Issue electronic invoices in Finance and Supply Chain Management
 description: This topic explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,9 +40,9 @@ This topic explains how to issue electronic invoices in Microsoft Dynamics 365 F
 
 ## Feature activation
 
-To start issuing electronic invoices through the Electronic invoicing add-on, it is necessary to activate the Feature in Finance and Supply Chain Management.
+To issue electronic invoices through the Electronic invoicing add-on, you must activate the Feature in Finance and Supply Chain Management.
 
-Each Feature corresponds to a specific electronic invoicing feature that complies to the electronic invoicing requirements from a country/region.
+Each feature corresponds to a specific electronic invoicing feature that complies with the electronic invoicing requirements for a country/region.
 
 The following table shows the list of features that the Electronic invoicing add-on may support:
 
@@ -65,11 +65,10 @@ The following table shows the list of features that the Electronic invoicing add
 |Norwegian electronic invoice                       |Norway          |
 |Spanish electronic invoice                         |Spain           |
 
-In the cases where there is a legacy electronic invoicing feature, supported the country localizations scope, the activation of the Feature enables the issuing of electronic invoices through the Electronic invoicing add-on and turns-off the former feature.
+When there is a legacy Electronic invoicing feature that is supported in a country/region's localizations scope, activating one of these features turns off the legacy feature and enables electronic invoices to be issued through the Electronic invoicing add-on.
 
 > [!IMPORTANT]
-> After enabling Electronic Invoicing add-on integration in the feature management, the new electronic invoicing experience is switched off by default. You use the feature concept to enable selectively new experience for legal entities using country / region specific functionality for corresponding geographies. **Global** controls the new experience for all the remaining county / regions than listed in the page.
-
+> After the Electronic invoicing add-on integration feature is enabled, the new Electronic invoicing experience is turned off by default. You use the feature concept to selectively enable new experiences for legal entities using country/region-specific functionality. **Global** controls the new experience for all the remaining county/regions that aren't listed in the table.
 
 ## Submit electronic documents
 
