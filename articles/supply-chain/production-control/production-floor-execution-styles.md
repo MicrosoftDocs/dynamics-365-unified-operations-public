@@ -34,7 +34,7 @@ Styles are applied automatically.
 
 # Card view 
 
-Each card view should be nested inside a form group. Requirements: 
+Each card view should be nested inside a form group. Requirements:
 
 + The group name should start with **CardGroup**, for example, **CardGroupJobsView**. 
 
@@ -48,53 +48,35 @@ An example the card view with elements inside:
 
 # Business card  
 
-Each business card should be nested inside a form group. Requirements : 
+Each business card should be nested inside a form group. Requirements:
 
-a)The group name should start with "BusinessCardGroup"  e.x. BusinessCardGroupJobsList 
++ The group name should start with **BusinessCardGroup**, for example, **BusinessCardGroupJobsList**.
++ The grid should have the following setup: 
 
-b)The grid should have the following setup: 
+    - Style: list 
+    - Extended style: cardList 
+    - Multi Select: No 
+    - Show Col Labels: No 
 
-Style: list 
+## Radio button (notice it is not supported by IE) 
 
-Extended style: cardList 
-
-Multi Select: No 
-
-Show Col Labels: No 
-
-  
-
- 
-
-  
-
-  
-
-Radio button (notice it is not supported by IE) 
-
-  
+The radio button is not supported in Internet Explorer.
 
 Implementing a radio button has the following requirements. 
 
-Command Buttons should be added with the following setup: 
++ Command Buttons should be added with the following setup: 
 
-A) Toggle button: Check 
-
-B) Toggle value: On if radio button should be selected; otherwise, Off. 
-
-C) All command buttons should be placed in a group the name which starts from: "RadioTextBelow" or "RadioTextRight" accordingly. 
-
-  
+    - Toggle button: Check 
+    - Toggle value: On if radio button should be selected; otherwise, Off. 
+    - All command buttons should be placed in a group the name which starts from: "RadioTextBelow" or "RadioTextRight" accordingly. 
 
 Radio text below 
 
- 
-
-  
-
-  
+![Radio buttons with text below](media/pfe-styles-radio-text-below)
 
 Radio text right 
+
+![Radio buttons with text right](media/pfe-styles-radio-text-right)
 
  
 
