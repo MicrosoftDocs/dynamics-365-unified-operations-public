@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit card entry page displays error on checkout
-description: This topic provides troubleshooting information for when the "Payment method" section doesn't load and throws an error. 
+description: This topic provides troubleshooting information for when the "Payment method" section doesn't load and displays an error. 
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/17/2021
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](../../includes/banner.md)]
 
 ## Description
-When navigating to the **Checkout** page, the **Payment method** section doesn't load and throws the following error: "Something went wrong. Please try again later."
+When navigating to the **Checkout** page, the **Payment method** section doesn't load and displays the following error: "Something went wrong. Please try again later."
 
 ![Payment module error](media/payment-module-error.jpg)
 
