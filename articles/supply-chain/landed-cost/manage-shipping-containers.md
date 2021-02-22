@@ -94,8 +94,8 @@ The following table describes the settings that are available on the **General**
 | House air waybill/Bill of lading | You can specify the house air waybill or bill of lading for the shipping container. |
 | Remarks | Additional information that is related to the shipping container. |
 | Returnable | <!-- KFM: Description needed --> |
-| Voyage status | <!-- KFM: Description needed --> |
-| Purchase order status | <!-- KFM: Description needed --> |
+| Voyage status | The status of the journey associated with this shipping container. |
+| Purchase order status | The status of the purchase order associated with this shipping container. |
 
 ### Settings on the Delivery FastTab
 
@@ -106,7 +106,7 @@ The following table describes the settings that are available on the **Delivery*
 | Created date and time | The date and time when the container was created. |
 | Ex-factory date | This date is usually provided to the factory/vendor to indicate when you expect the goods to leave its premises. When you work with a factory in Asia, this date is often required instead of the date that you expect the goods by. (By contrast, for a local delivery, the date that you expect the goods by is required.) This field can be filled in from the purchase order lines in the shipping container list. You can also manually enter it here. |
 | Ship date | This date can be printed on the purchase order document. It usually informs the factory/vendor about the date that the goods should be delivered to the port by. This field is for informational purposes only. It isn't used to estimate the expected delivery date of the goods in the shipping container. This field can be set to that it's automatically updated when the tracking control page is updated. |
-| In to store date | <!-- KFM: Description needed --> |
+| In to store date | This field selects the earliest date when the goods from the purchase orders that are linked to the voyage will be available for sale.|
 | Estimated delivery date | Usually, the date when the goods are due to arrive in the warehouse. This field is for informational purposes only. It isn't used to calculate master planning on the purchase order lines in the shipping container. The expected delivery date on the purchase order lines is updated through tracking control. This field can be set up so that it's updated when the tracking control page is updated. |
 | Departure date | Usually, the date when the plane or vessel actually leaves the overseas port. |
 | ETA at shipping port | The estimated arrival date at the destination port ("to" port). |
@@ -118,8 +118,8 @@ The following table describes the settings that are available on the **Delivery*
 | Delivered at warehouse | Optional: Update the date when the goods were delivered to the warehouse. |
 | Verification date | Optional: Update the verification date. |
 | Delivery instructions | Optional: Update the date of the delivery instructions. |
-| From port | <!-- KFM: Description needed --> |
-| To port | <!-- KFM: Description needed --> |
+| From port | The port that the items will be shipped from. |
+| To port | The port that the items will be shipped to. |
 | Local forwarder | This field is for informational purposes only. The local forwarder should be selectable from the vendor table. |
 | Local transport date | Enter the date that the local transport is booked for. This field can help the warehouse do its planning. |
 | Local transport time | Enter the time slot. This field can help the warehouse do its planning. |
