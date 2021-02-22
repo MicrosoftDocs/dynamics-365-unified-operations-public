@@ -220,3 +220,6 @@ The runbook provides the sequence of steps that must be run to update the enviro
     ```
 
 - To verify database synchronization, in the **aosservice\\scripts\\** folder, find and open the **dbsync.error.txt** file, and look for any errors.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

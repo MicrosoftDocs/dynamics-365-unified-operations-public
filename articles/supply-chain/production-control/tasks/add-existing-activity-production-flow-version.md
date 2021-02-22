@@ -57,3 +57,6 @@ This task requires production flow with version and activities already created.
 3. In the Activity field, enter or select a value.
 4. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

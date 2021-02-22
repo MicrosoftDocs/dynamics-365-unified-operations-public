@@ -343,3 +343,6 @@ The primary reference "MS.Dynamics.TestTools.ApplicationSuiteProxyLibrary" could
 ### Solution- Assembly was built against the ".NETFramework,Version=v4.6" framework
 
 Change the **Target framework** property in the properties window of PerfSDKSample to .Net Framework 4.6.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

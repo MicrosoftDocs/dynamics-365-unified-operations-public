@@ -116,3 +116,6 @@ The following key aggregate measurements are used as the basis of the content.
 | Shipping performance        | Shipped by product                       | CustPackingSlipOnTimeStatus           | Early, On time, and Late (see the descriptions earlier in this table). |
 | Shipping performance        | Shipped by customer                      | CustPackingSlipOnTimeStatus           | Early, On time, and Late (see the descriptions earlier in this table). |
 | Shipping performance        | Shipped by site / warehouse              | CustPackingSlipOnTimeStatus           | Early, On time, and Late (see the descriptions earlier in this table). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

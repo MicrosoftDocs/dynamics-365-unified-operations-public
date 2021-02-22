@@ -56,3 +56,6 @@ You can create a new tax fiscal document and generate a Nota Fiscal eletrônica 
 20. Close the page.
 21. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

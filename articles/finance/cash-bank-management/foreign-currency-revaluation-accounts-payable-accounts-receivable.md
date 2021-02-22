@@ -70,3 +70,6 @@ A record is kept every time that you run a foreign currency revaluation. From th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

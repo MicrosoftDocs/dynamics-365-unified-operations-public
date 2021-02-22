@@ -181,3 +181,6 @@ To see a list of capabilities that are available in on-premises deployments, see
 
 \* In on-premises environments, PerfTimer only shows results for the client.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -134,3 +134,6 @@ This section will have answers to frequently asked questions that are related to
 [![Example](./media/toc3.png)](./media/toc3.png)
 
 [![Example](./media/toc4.png)](./media/toc4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

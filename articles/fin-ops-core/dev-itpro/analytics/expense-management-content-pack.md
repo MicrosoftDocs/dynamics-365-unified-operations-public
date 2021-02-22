@@ -99,3 +99,6 @@ The content includes a set of report pages. Each page consists of a set of metri
 | Employee Statistics | Expense reports by cost type            |
 |                     | Personal expenses                       |
 |                     | Expense reports by statistics group     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

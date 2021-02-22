@@ -55,3 +55,6 @@ This topic lists application business events.
 | Collection status of a transaction changed | This event is triggered when a user updates the collection status of a transaction as part of the Quote to Cash process. | Accounts receivable    |
 | Interest note posted                       | This event is triggered when a user posts an interest note as part of the Quote to Cash process.                         | Accounts receivable    |
 | Collection letter created                  | This event is triggered when a user creates a collection letter for a customer as part of the Quote to Cash process.     | Credit and collections |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

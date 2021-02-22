@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (November 15, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for November 15, 2018).
 author: andreabichsel
 manager: tfehr
 ms.date: 11/15/2018
@@ -57,3 +57,6 @@ With this change, navigation to the details of the individual work items in the 
 
 - **Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. 
 - **Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed. If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled. (This issue will be fixed in the next platform update.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -138,3 +138,6 @@ For a general overview of each application release, always check the "What's new
 3. Check the [Retail SDK FAQ](retail-sdk/sdk-faq.md). It's updated as common issues are identified.
 4. Submit a support request through LCS. Provide as much information as you can about the issue. When you submit the request, send a copy to your FastTrack solution architect.
 5. Expect to share your screen with your partner, the support specialist, your solution architect, or even a combination of the three. Be prepared to reproduce the error.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

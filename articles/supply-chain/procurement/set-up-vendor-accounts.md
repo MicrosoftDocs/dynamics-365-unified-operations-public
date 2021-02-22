@@ -122,3 +122,6 @@ You select default accounts on the **Default account setup** page, which you can
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

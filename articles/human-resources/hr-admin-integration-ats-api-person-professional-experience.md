@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Person professional experience
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Person professional experience entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmpersonprofessionalexperienceentity
@@ -80,3 +82,6 @@ This entity describes professional experience or work history of a candidate.
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Install the downloaded certificate by doing the following:
 1. Open the security settings for your device and choose the menu option to install a certificate from a file. (The exact steps for this vary based on device and OS version.)
 1. The new certificate should now be shown on the **User** tab for trusted certificates.
 1. Repeat this procedure for each affected device.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

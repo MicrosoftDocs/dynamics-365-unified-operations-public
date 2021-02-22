@@ -553,3 +553,6 @@ The (November 2016 – all languages) APQC Unified Library contains the Task gui
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

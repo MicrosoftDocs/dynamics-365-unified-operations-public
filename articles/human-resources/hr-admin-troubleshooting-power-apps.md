@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Can't create an environment in the Power Apps Admin center
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Issue**
 
 - The tenant/environment admin can't create an environment in the Microsoft Power Apps Admin center.
@@ -50,3 +52,6 @@ Note that various Microsoft Office SKUs also provide the right, together with st
 
 1. Go to [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
 2. Create the environments by following the instructions in [Provision Human Resources](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

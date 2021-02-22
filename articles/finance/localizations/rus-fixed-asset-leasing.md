@@ -85,3 +85,6 @@ You can register the return of a leased fixed asset in the same way that you reg
 
 > [!TIP]
 > Lease and return-from-lease transactions are reversed in the same way as acquisition transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

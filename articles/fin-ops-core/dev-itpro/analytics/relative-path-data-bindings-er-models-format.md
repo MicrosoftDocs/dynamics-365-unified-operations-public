@@ -65,3 +65,6 @@ This feature does not break the backward compatibility of the ER framework. All 
 ## Additional resources
 
 [ER formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

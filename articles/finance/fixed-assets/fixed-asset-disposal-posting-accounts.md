@@ -47,3 +47,6 @@ The disposal transaction for an asset in a low-value pool reduces the net book v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

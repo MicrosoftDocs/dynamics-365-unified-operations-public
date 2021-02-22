@@ -40,3 +40,6 @@ Follow these steps when you upgrade to Microsoft Dynamics 365 for Operations ver
 1.  Before you upgrade to Finance and Operations, run the foreign currency revaluation processes for Accounts receivable and Accounts payable. Set the **Method** field to **Invoice date**. A revaluation transaction is created that reverses the last foreign currency revaluation. Therefore, the open transactions are valued at their original accounting currency.
 2.  Upgrade to version 1611.
 3.  Run the Accounts receivable and Accounts payable foreign currency revaluation processes again. This time, set the **Method** field to **Standard**. A new revaluation transaction is created that is based on the current exchange rates. This transaction records the unrealized gain/loss and the correct summary ledger account.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

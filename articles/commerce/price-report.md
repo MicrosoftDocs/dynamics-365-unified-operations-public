@@ -47,3 +47,6 @@ To enable the price report, the **Enable price report for store** parameter must
 | Display products with price changes | Setting this to **Yes** will display the prices for only those dates on which the price has been changed. The price for *one day before* the selected **From date** will always be displayed, so that the store manager can easily identity the products which have not changed prices for the entire selected duration, and can also view the current price. |
 
 After the report is generated, the Excel file can be downloaded for any additional filtering needs. The price report can also be used to check the historical prices of products for past dates.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

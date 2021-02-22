@@ -84,3 +84,6 @@ This topic explains how to use the same instance of Active Directory Federation 
 For partial support, it is necessary to have Local Agent 2.2.0 or later installed and to update the service with Platform update 28 or later.
 
 With partial support, authentication against the Financial Reporting service is not supported.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

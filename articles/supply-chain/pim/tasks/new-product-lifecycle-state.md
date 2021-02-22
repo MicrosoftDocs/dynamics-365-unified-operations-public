@@ -38,3 +38,6 @@ This procedure shows how to create a new product lifecycle state. A product life
 3. In the State field, type a value.
 4. In the Description field, type a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

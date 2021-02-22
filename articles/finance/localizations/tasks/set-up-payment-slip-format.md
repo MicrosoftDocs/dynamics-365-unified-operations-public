@@ -68,3 +68,6 @@ This functionality is available for legal entities whose primary address is in D
 16. Click Save.
 17. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

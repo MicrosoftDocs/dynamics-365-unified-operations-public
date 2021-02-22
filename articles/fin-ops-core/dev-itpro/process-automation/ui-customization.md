@@ -205,3 +205,6 @@ The **ProcessExecutionMessageLogContract** contract lets you limit the message l
 | Method | Description |
 |---|---|
 | `public static ProcessExecutionMessageLogContract newForSourceRecord(ProcessScheduleTypeName _typeName, RefTableId _refTableId, RefRecId _refRecId, guid _executionId = emptyGuid())` | This method initializes the contract by using the specified type name, **RefTableId** value, and **RefRecId** value. There should be a matching record in the **ProcessExecutionSourceLink** table. Background processes will have multiple execution IDs. Therefore, the optional parameter for the execution ID should be provided for background processes. For more information, see [Type registration](type-registration.md). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

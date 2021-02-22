@@ -83,3 +83,6 @@ After you designed all the tabs you need, you can associate them with a configur
 1. Continue to add additional tabs as needed.
 
 1. Use the **Move up** and **Move down** buttons on the toolbar to arrange the tabs as needed. The tabs will be displayed from left to right in the order shown in the above screenshot (the tab at the top is shown on the left).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

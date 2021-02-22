@@ -228,3 +228,6 @@ offers.
 
 
 To learn more about the offer creation process, see [Create, approve, and sign offers](./creating-offers.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

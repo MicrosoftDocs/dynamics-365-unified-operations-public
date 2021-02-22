@@ -65,3 +65,6 @@ The **By-product cost allocation** field on the **Co-products** page is an enume
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

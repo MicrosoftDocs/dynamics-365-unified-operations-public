@@ -77,3 +77,6 @@ For troubleshooting and diagnostics, you can connect to the Entity store databas
     * The login will be axdwadmin and the password will be the value from LCS.
 3. Using the **Options** button or by browsing to the **Connection Properties** tab, change the **Connect to database** property from the default value to your **Database Name** value from LCS.
 4. Click **Connect** to access the database.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

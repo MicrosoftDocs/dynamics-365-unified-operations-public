@@ -67,3 +67,6 @@ Work for raw material picking is generated during release. Work is generated onl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

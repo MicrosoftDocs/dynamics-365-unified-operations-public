@@ -49,3 +49,6 @@ This report provides a snapshot of following summaries as part of store performa
 - Tax summary
 - Price overrides summary
 - Discounts summary
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

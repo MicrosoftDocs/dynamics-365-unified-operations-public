@@ -65,3 +65,6 @@ The option to **Reconcile after import** will automatically validate the bank st
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

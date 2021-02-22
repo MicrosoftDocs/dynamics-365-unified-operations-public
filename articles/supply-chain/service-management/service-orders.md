@@ -92,3 +92,6 @@ During the second half of the year, your customer decides that the service visit
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

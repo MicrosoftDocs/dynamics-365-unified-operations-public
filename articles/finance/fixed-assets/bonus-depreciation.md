@@ -69,3 +69,6 @@ Bonus depreciation is entered as either a percentage or a fixed amount. When you
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

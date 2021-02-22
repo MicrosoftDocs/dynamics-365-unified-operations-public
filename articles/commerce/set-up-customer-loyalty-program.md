@@ -155,3 +155,6 @@ Additionally, retailers can define the maximum loyalty reward point limit per lo
 
     > [!NOTE]
     > Unlike other periodic discounts such as quantity, simple, mix and match, and threshold discounts, the shipping discount does not create discount lines, rather edits the shipping charge directly and appends the name of the discount to the charge description.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

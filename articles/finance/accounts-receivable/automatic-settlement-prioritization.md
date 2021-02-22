@@ -87,3 +87,6 @@ If there is no user-defined settlement priority, transactions are automatically 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -376,3 +376,6 @@ For detailed information that includes documentation and downloads for release p
 
 - [CustomerSource page for the India GST release](https://docs.microsoft.com/dynamics/s-e/)
 - [PartnerSource page for the India GST release](https://mbs.microsoft.com/partnersource/northamerica/deployment/downloads/tax-regulatory-updates/GST-India) (Sign-in is required.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

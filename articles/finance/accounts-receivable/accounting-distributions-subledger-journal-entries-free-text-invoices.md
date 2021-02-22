@@ -140,3 +140,6 @@ Before you post a free text invoice, you can view the full accounting entry of t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

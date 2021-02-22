@@ -140,3 +140,6 @@ export default createObservableDataAction<Address[]>({
 [Data action cache settings](data-action-cache-settings.md)
 
 [Data action hooks](data-action-hooks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

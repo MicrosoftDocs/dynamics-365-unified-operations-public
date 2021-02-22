@@ -60,3 +60,6 @@ The resulting *Boolean* value.
 ## Additional resources
 
 [Logical functions](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

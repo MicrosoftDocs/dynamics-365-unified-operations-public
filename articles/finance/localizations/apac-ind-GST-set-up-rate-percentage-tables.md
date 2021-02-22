@@ -87,3 +87,6 @@ To check for existing dupclicates, select **Show Duplicates**, and then delete t
 ### Enter non-exist master data
 
 When **Tax setup validation** is enabled, the system will verify entered and imported master data including HSN and SAC.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1428,6 +1428,8 @@
             href: localizations/e-invoicing-get-started.md
           - name: Get started with Electronic invoicing add-on for Brazil
             href: localizations/e-invoicing-bra-get-started.md
+          - name: Get started with Electronic invoicing add-on for Egypt
+            href: localizations/e-invoicing-eg-get-started.md
           - name: Customer electronic invoices in Egypt
             href: localizations/emea-egy-e-invoices.md
           - name: Get started with Electronic invoicing add-on for Italy
@@ -3759,6 +3761,8 @@
               href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
             - name: Share configurations in GR  
               href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document

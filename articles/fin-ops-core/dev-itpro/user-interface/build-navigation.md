@@ -190,3 +190,6 @@ Now you’ll add a new main menu section that contains a tile that points to the
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

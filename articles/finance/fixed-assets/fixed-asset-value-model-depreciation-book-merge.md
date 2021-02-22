@@ -76,3 +76,6 @@ The upgrade process will move your existing setup and all your existing transact
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

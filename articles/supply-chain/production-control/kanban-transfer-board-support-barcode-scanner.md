@@ -195,3 +195,6 @@ The status of the selected job and the status of any pegged jobs for event kanba
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

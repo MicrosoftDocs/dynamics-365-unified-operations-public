@@ -64,3 +64,6 @@ The string that this function returns depends on the encoding that is selected i
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

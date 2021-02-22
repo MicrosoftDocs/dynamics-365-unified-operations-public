@@ -40,3 +40,6 @@ site:technet.microsoft.com dynamics ax 2012 "search term"
 –or–
 
 site:msdn.microsoft.com dynamics ax 2012 "search term"
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

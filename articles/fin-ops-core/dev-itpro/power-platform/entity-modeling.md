@@ -225,3 +225,6 @@ Finance and Operations create, read, update, and delete (CRUD) business logic on
 ## Calculated/unmapped fields
 
 Calculated and unmapped fields in Finance and Operations entities are also available in the corresponding virtual entities in Dataverse.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

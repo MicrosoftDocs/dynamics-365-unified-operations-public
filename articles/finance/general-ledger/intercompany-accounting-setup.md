@@ -54,3 +54,6 @@ A reciprocal relationship can easily be set up on the **Intercompany accounting*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

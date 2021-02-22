@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Process compensation
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Compensation processing allows you to calculate new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance. This article covers the basic flow of compensation processing for fixed compensation plans without factoring an employee's performance.
 
 ## Plan the new compensation amounts and budgets
@@ -83,3 +85,6 @@ When the compensation amounts have been reviewed for an employee and any adjustm
 When one or more employee events have had their status updated to Approved, they can be loaded to the employees’ fixed compensation records. This can be done either by selecting each employee event one at a time and clicking the **Load employee compensation** button on the **Employee results** page, or by clicking **Load compensation** on the **Process results** page to load all approved employee events at once.
 
 Clicking **OK** in the **Load compensation** dialog will add the non-zero compensation action lines to the **Employee fixed compensation** page.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

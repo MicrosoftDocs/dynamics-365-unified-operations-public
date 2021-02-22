@@ -126,3 +126,6 @@ April then posts the payment. When she opens the **Vendor transactions** page, s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (October 8, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for October 8, 2019.
 author: andreabichsel
 manager: tfehr
 ms.date: 10/08/2019
@@ -113,3 +113,6 @@ This release corrects an issue that occurs after one performance journal is dele
 ### Print performance reviews
 
 See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

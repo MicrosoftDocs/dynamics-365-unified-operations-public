@@ -92,3 +92,6 @@ REV-17.5 – negative value
 > - Domestic reverse charge. For example, the purchase of UK services, gold, computers chips, or mobile phones.
 > - European service purchase. For the European goods (items) purchasing, the **Use tax** can be activated on the sales tax group.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ Follow these steps to adjust the customer information and reprint the tax invoic
 The adjusted tax invoice includes a new tax invoice number and adjusted customer information. All other information is the same as the information on the original tax invoice. A comment is added to the bottom of the adjusted tax invoice. This comment includes the reference to the original tax invoice, the reason for the adjustment, and the date of the adjustment.
 
 You can adjust a tax invoice multiple times. For each adjustment, a new tax invoice number is allocated, and the adjusted invoice references the previous adjustment or the original tax invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

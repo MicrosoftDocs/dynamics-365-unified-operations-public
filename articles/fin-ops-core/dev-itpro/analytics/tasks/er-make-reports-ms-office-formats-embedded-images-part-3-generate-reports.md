@@ -123,3 +123,6 @@ In this example, you will use created ER configurations for sample company, 'Lit
 23. Click OK.
     * Review the created output. The output has been generated as a Word document with embedded images presenting the company logo, the signature of an authorized person and the selected text of the watermark.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

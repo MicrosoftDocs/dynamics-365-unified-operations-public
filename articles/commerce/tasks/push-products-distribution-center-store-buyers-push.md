@@ -54,3 +54,6 @@ This procedure walks through the steps to create and process a Buyer´s push to 
 19. Click Create order.
 20. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

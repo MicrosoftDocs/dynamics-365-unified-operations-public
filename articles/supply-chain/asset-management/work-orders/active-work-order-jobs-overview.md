@@ -47,3 +47,6 @@ The illustration below shows an example of the **Active work order maintenance j
 
 For a short description of the buttons on the **Active work order maintenance jobs** list page, refer to [Introduction to work orders](../work-orders/introduction-to-work-orders.md) where identical buttons are described.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

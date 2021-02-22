@@ -45,3 +45,6 @@ This task was created using the demo data company JPMF.
 6. In the Report date field, enter a date.
     * Change the date to see other fiscal years.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

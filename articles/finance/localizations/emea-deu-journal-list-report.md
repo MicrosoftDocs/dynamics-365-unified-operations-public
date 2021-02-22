@@ -42,3 +42,6 @@ The **German journal list** report shows a list of transactions that are produce
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

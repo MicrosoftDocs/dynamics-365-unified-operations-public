@@ -87,3 +87,6 @@ If the check that was reversed was issued for a customer refund, the following e
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

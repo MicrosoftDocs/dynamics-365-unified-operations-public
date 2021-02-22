@@ -181,3 +181,6 @@ In this section, you will continue to work on the work order that you worked on 
 1. On the Action Pane, on the **Invoicing** tab, select **New invoice proposal**.
 1. In the **Create invoice proposal** dialog box, in the **Project transactions** section, select the **Select** check box for every line  that you want to invoice.
 1. Select **OK** to close the dialog box and view the new invoice proposal.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

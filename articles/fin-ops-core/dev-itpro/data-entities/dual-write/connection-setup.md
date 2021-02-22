@@ -142,3 +142,6 @@ For links to an example and an alternative approach, see the [Example](#example)
 For an example, see [Enabling the Customers V3—Contacts table map](enable-entity-map.md#enable-table-map)
 
 For an alternative approach that is based on data volumes in each entity that must run an initial synchronization, see [Considerations for initial synchronization](initial-sync-guidance.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

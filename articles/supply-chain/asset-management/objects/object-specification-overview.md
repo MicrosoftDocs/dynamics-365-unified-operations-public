@@ -44,3 +44,6 @@ The **Asset attribute overview** page shows a separate line for each asset. The 
 3. Select **OK**. A list shows all the assets that use the selected asset type. For each asset, all related asset attribute types are shown on the same line.
 
 The **Asset attribute** page shows a separate line for each attribute type that is used on an asset. To open this page, select **Asset management** \> **Inquiries** \> **Assets** \> **Asset attribute**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ This procedure focuses on creating a kanban quantity calculation policy and addi
 8. In the list, click the link in the selected row.
     * Select the policy Speaker2016 that you have just created in the previous sub-task.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

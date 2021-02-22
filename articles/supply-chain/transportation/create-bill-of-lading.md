@@ -47,3 +47,6 @@ If there's more than one shipment in the load, you can generate a master bill of
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

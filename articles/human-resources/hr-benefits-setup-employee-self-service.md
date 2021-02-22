@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure employee self service
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level navigation in Employee self service. Benefit plan tiles direct users to benefit plans that they're eligible for.
 
 ## Set up a benefit plans tile
@@ -77,3 +79,6 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
    | **End** | The end date and time the tile should be available. |
 
 4. Select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -191,3 +191,6 @@ If a correction must be made to the Accounts receivable or Accounts payable ledg
 ### "The system allows it"
 
 Organizations often use the One voucher functionality merely because the system lets them use it, without understanding the implications.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

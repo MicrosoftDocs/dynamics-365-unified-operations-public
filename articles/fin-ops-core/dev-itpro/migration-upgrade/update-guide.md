@@ -425,3 +425,6 @@ When you're ready to release the next version of your custom code, use the follo
 6. Download the installers for the desired client type and device.
 7. Install in target device.
 8. Test and validate.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

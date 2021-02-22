@@ -136,3 +136,6 @@ You can search for words or phrases in your BPM library. The search functionalit
 ![Search box](./media/searching.png "Search box")
 
    
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

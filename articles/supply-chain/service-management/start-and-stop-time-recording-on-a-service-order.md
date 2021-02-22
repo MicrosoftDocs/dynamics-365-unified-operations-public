@@ -68,3 +68,6 @@ Use this procedure to start and stop time recording for a service order for whic
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

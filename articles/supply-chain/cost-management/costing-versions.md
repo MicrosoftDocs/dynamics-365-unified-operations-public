@@ -71,3 +71,6 @@ The purchase price records for items are also used as reference information. By 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

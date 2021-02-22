@@ -60,3 +60,6 @@ ms.dyn365.ops.version: 10.0.4
 To validate a voucher, select **Inquiries** \> **Voucher**.
 
 ![Example](media/Annotation-2019-05-16-100656.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

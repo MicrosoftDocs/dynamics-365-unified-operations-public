@@ -79,3 +79,6 @@ When CSU is auto-updated by Microsoft, it takes place in the following sequence.
 ![CSU auto-update sequence](./media/CSU-auto-update-timeline.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ This procedure walks through configuring and running recurrent batch jobs to cre
 11. Click OK.
 12. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

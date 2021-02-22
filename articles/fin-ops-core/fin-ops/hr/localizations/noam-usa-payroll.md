@@ -102,3 +102,6 @@ Maintaining your payroll data involves adjusting the carry-forward balances for 
 Standard payroll reports are provided to help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
 
 - [Standard payroll reports](noam-usa-generate-payroll-reports.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

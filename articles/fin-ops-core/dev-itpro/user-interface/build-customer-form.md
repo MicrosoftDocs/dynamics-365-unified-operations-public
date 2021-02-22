@@ -309,3 +309,6 @@ The report shows pattern-related information regarding the forms in this model i
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

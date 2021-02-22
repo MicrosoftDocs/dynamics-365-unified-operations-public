@@ -58,3 +58,6 @@ The following steps explain how a user in the System Administrator or Electronic
 5. Select **Close**. 
 6. Select the desired version of ER configuration and select **Import** to bring it in the current instance.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ You can use this guide in demo data company USMF. This procedure is intended for
 6. Select **Save**.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

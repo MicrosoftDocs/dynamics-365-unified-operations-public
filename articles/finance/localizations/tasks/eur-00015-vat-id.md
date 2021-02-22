@@ -63,3 +63,6 @@ The information here applies to all European countries/regions. The task was cre
     * Assign the registration type that you created to a predefined registration category.  
 22. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

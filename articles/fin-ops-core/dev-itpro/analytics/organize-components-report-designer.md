@@ -154,3 +154,6 @@ Only default base period settings are saved with the report definition.</td>
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

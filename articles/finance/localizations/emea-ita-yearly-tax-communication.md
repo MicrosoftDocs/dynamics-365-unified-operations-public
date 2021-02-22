@@ -1125,3 +1125,6 @@ To download example setup for the 2020 declaration, see [IVA example setup 2020]
    - VL032001 VAT payable (IVA a debito)
    - VL033001 VAT credit (IVA a credito)
    
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

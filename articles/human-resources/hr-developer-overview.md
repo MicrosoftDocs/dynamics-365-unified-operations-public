@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Development overview
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This Developer Guide provides an API and custom fields reference. It also provides information on integrating with other apps.
@@ -67,3 +69,6 @@ This Developer Guide provides an API and custom fields reference. It also provid
 - [What's new or changed in Human Resources](hr-admin-whats-new.md)
 - [Administrator Guide](hr-admin-overview.md)
 - [User Guide](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

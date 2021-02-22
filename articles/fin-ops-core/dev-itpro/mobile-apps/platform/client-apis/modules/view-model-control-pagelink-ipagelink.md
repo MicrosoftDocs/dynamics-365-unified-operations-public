@@ -143,3 +143,6 @@ A pagelink is a control that navigates to another page.
 | ---- | --------- | ----------- |
 | [OnNavigate](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#onnavigate) |OnNavigate: function(navigation: [NavigationArgs](../interfaces/view-model-ipage-inavigationargs.md) &#124; string): any (optional)  <br>|An event that is triggered when the navigation is triggered.<br>  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

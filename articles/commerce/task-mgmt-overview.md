@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.9
 
 This topic provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 In a retail environment, it's always difficult to make sure that tasks are performed by the right person at the right time. Retailers must be able to notify workers about upcoming tasks and provide related business context, so that the tasks can be completed correctly and on time.
 
 Task management is a productivity feature in Dynamics 365 Commerce that lets managers and workers create task lists, manage assignment criteria, track task status, and integrate these operations between Commerce back office and point of sale (POS) applications.
@@ -55,3 +53,6 @@ The following illustration shows the conceptual architecture of task management 
 [Assign task lists to stores or employees](task-mgmt-assign-lists.md)
 
 [Task management in POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

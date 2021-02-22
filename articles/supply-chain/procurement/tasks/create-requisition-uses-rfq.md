@@ -101,3 +101,6 @@ The next task is to create an RFQ to get bids from vendors for the product. In U
 8. Select the page.
 9. Select Complete.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

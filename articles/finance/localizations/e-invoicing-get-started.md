@@ -69,14 +69,14 @@ Before you complete the procedures in this topic, the following prerequisites mu
 ## Import an Electronic invoicing feature from the Microsoft configuration provider 
 
 1. Sign in to your Regulatory Configuration Service (RCS) account.
-2. In the **Globalization feature** workspace, in the **Features** section, select the **e-Invoicing** tile.
+2. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing add-on** tile.
 3. Select **Import**, and then select **Synchronize**.
 4. Filter the **Configuration provider** column by the term **Microsoft**.
 5. Select the name of an Electronic invoicing feature from the table at the beginning of this topic, and then select **Import**.
 
 ## Create an Electronic invoicing feature under your organization provider
 
-1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **e-Invoicing** tile.
+1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-on** tile.
 2. Select **Add** > **Based on existing feature**, and in the **Name** field, enter the name of the Electronic invoicing feature.
 3. In the **Description** field, enter a description of the feature.
 4. In the **Base feature field**, select the imported Electronic invoicing feature from the Microsoft configuration provider.
@@ -84,7 +84,9 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Configure the Electronic invoicing feature
 
-Depending on the country or region, the Electronic invoicing feature might require additional configuration. For the specific steps, see the "Get started" documentation that is available for your country or region.
+Depending on the country or region, the Electronic invoicing feature might require additional configuration. 
+
+For the specific steps, see the "Get started" documentation that is available for your country or region.
 
 ## Configure the application setup
 
@@ -163,7 +165,9 @@ Depending on the country or region, the Electronic invoicing feature might requi
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
 
-Depending on the country or region, the Electronic invoicing feature might require additional configuration. For specific steps, see the "Get started" documentation that is available for your country or region.
+Depending on the country or region, the Electronic invoicing feature might require additional configuration.
+
+For specific steps, see the "Get started" documentation that is available for your country or region.
 
 ## Deploy the Electronic invoicing feature
 
@@ -231,12 +235,15 @@ Depending on the country or region, the Electronic invoicing feature might requi
 
 3. Select an invoice in the grid, and then select **Inquire** \> **Submission details**.
 
-Depending on the country or region, the Electronic invoicing feature might require additional configuration. For specific steps, see the "Get started" documentation that is available for your country or region.
 
 ## Related topics
 
 - [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
+- [Get started with Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md)
 - [Get started with the Electronic invoicing add-on for Brazil](e-invoicing-bra-get-started.md)
 - [Get started with the Electronic invoicing add-on for Mexico](e-invoicing-mex-get-started.md)
 - [Get started with the Electronic invoicing add-on for Italy](e-invoicing-ita-get-started.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

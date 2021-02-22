@@ -83,3 +83,6 @@ After you've specified the basic information about your RFQ, you specify the goo
 4. Close the page.
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

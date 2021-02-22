@@ -47,3 +47,6 @@ Usually, cash discounts are calculated during the settlement process for custome
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

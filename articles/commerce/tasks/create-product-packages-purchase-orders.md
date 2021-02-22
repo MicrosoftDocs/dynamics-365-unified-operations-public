@@ -75,3 +75,6 @@ This procedure walks through creating a product package and using it on a purcha
 17. Click Create.
 18. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

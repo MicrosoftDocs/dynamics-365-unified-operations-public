@@ -86,3 +86,6 @@ Starting in Platform update 22, the "is one of" operator in the Filter Pane and 
 ## Batch job to handle SQL index defragmentation
 In Platform update 22, a new system batch job has been introduced to rebuild fragmented indexes. Index fragmentation results in notable performance degradation in specific scenarios. To address fragmentation issues and keep the database in a top-performing state, this batch job will rebuild highly fragmented indexes periodically at a scheduled time. By default, the job scheduled to run at 3:00 AM local time every day for a maximum of 2 hours. If the batch job finds that not many fragmented indexes need to be rebuilt, it will complete early.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

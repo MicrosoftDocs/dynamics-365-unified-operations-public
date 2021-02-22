@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Remove an instance
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This article walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 
 ## Remove a test drive environment
@@ -90,3 +92,6 @@ To restore the environment:
 
 > [!Warning]
 > Power Apps environments are only saved for seven days after deletion. You must recover the environment within the seven day period.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

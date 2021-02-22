@@ -131,3 +131,6 @@ To change the benefits, follow these steps:
 
     - Set up worker tax regions.
     - Change worker residency.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

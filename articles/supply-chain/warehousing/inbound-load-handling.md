@@ -481,3 +481,6 @@ For this scenario, the receiving clerk will inbound-register a quantity that exc
     - **Qty** – Enter _7_, which is the remaining quantity that the vendor is authorized to deliver as part of total purchase order quantity of 12 (where 10 is the original order quantity, and 2 is the allowed overdelivery quantity of 20 percent). Remember that 5 pcs have already been registered against the first load.
 
 The second load has now been updated with the quantity of 7 and can be product receipt–updated based on this quantity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

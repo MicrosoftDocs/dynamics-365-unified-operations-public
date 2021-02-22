@@ -155,3 +155,6 @@ This page lists the resources that are available for IT pros and developers who 
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
 - [Create Commerce payment packaging for Finance and Operations deployment](payment-connector-package.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Yes. For example, if 1,000.00 remains before a worker's pay reaches 0 (zero), an
 [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 
 [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

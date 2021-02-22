@@ -137,3 +137,6 @@ To fix the issue, follow these steps.
 
 3. Make sure that the **externalenvironmentURL** column has the correct Dataverse or app URL. Delete any duplicate rows that point to the wrong Dataverse URL. Delete the corresponding rows in the DUALWRITEPROJECTFIELDCONFIGURATION and DUALWRITEPROJECTCONFIGURATION tables.
 4. Stop the table mapping, and then restart it
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ One of the great features of Power BI is the way all visuals on a report page ar
 ## Export to Excel
 
 To view report data in Excel, you can click the options menu (three dots) on a visual and select **Export underlying data**. Exported data will export as filtered, respecting user permissions in Attract. For more information, see [Export data from visualizations](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

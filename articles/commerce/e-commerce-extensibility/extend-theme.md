@@ -135,3 +135,6 @@ The following example resembles the previous example. It shows that you can also
 
 [Add custom resources to your customization code](add-custom-resources.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

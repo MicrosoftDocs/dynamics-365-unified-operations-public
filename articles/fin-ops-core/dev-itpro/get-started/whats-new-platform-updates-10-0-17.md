@@ -57,6 +57,8 @@ The following features are included in this release. Some of the listed features
 
 -  View independent software vendor (ISV) license status<br>- It is now possible to view status and expiration dates for an ISV license. For more information, see [View independent software vendor license status](../sysadmin/view-isv-license-status.md).
 
+- [executeQueryWithParameters](../dev-ref/query-with-parameters.md) method<br>- This method runs SQL queries by using statement parameters that can help mitigate SQL injection attacks.
+
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 ## Additional resources
@@ -81,3 +83,6 @@ The [Removed or deprecated platform features](removed-deprecated-features-platfo
 A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

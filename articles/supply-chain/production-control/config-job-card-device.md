@@ -98,3 +98,6 @@ However, as mentioned previously, when you use a device configuration with the *
 ## Additional resources
 
 [Report as finished from the job card device](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

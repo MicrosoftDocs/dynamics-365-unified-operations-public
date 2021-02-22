@@ -81,3 +81,6 @@ This procedure shows how to set up a loyalty program with two loyalty tiers. Thi
 39. Close the page.
 40. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

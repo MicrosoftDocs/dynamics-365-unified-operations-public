@@ -62,3 +62,6 @@ There are a few important considerations when you use the report:
 - Code changes from solutions from independent software vendors (ISVs), and code changes from implementation-specific extensions, are excluded.
 
 In summary, the report provides an approximation of code change and usage. In combination with other activities and tools, it can be useful for assessing risk in a release.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

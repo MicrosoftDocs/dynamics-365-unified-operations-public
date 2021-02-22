@@ -147,3 +147,6 @@ To disable a scenario, follow these steps.
 2. On the tile for the scenario, select **Configure**.
 3. Select **Next** to go to the last wizard page.
 4. Set the option to disable the scenario.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

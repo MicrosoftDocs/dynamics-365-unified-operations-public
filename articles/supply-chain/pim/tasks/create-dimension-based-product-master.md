@@ -44,3 +44,6 @@ This procedure shows how to create a new product master with dimension-based con
     * Select the Dimension-based configuration technology.  
 9. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

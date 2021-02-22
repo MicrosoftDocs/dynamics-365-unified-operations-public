@@ -128,3 +128,6 @@ Once the upgraded code in Releases\\\<version number\> compiles successfully and
 
 The [Source Control Merge Wizard](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard) opens, which guides you through merging the Releases\\\<version number\> branch back into Trunk\\Main.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ If the same report is processed for the **Litware Retail** customer on December 
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

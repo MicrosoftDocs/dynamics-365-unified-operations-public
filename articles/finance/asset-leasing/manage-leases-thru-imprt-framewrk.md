@@ -87,3 +87,6 @@ If you're using the Lease import framework to update leases, and the process typ
 
 1. Go to **Asset leasing \> Lease import framework \> Setup \> Update field selection**.
 2. On the page that appears, select the fields to update, and then select the green arrow to move them to the **Selected fields** list. Only fields in the **Selected fields** list can be updated by using the lease import suite.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

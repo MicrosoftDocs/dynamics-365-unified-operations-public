@@ -43,3 +43,6 @@ This topic explains how to create an accrual scheme. This task uses the USMF dem
 10. In the **Number of occurrences by period** field, enter a number.
 11. In the **Post transactions** field, select when the transactions should be posted, such as **Monthly**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

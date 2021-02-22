@@ -66,3 +66,6 @@ You can create the tax assessment for PIS/COFINS contributions for a given booki
 33. Close the page.
 34. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ This procedure was created using the demo data company JPMF.
 2. Expand or collapse the Accelerated depreciation section.
     * Specify the Main account and Offset account to use for Accelerated depreciation.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

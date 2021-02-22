@@ -60,3 +60,6 @@ For more information about BPM, see [Flowcharts in Business process modeler (BPM
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

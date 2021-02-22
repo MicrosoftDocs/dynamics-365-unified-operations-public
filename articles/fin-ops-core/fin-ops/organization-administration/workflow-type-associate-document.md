@@ -51,3 +51,6 @@ Before you begin the following procedure, you must create a workflow document cl
 [Create a new workflow type](workflow-type-create-new.md)
 
 [Create a workflow document class](workflow-type-document-create.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

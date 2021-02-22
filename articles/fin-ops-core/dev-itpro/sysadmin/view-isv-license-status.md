@@ -53,3 +53,6 @@ For more information about the ISV licensing feature, see [Independent software 
 For more information about how to import ISV licenses into an on-premises deployment, see [Independent software vendor (ISV) licensing (on-premises)](../dev-tools/isv-licensing-on-prem.md).
 
 For more information about the configuration keys report, see [License codes and configuration keys report](license-codes-configuration-keys-report.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

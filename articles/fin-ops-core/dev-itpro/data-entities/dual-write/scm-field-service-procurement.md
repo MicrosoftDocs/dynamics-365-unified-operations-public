@@ -217,3 +217,6 @@ The following templates are available for the integration of procurement-related
 [!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
 
 [!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

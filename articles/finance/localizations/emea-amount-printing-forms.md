@@ -57,3 +57,6 @@ To set up full and short names for currency units and subunits for a language, c
 
 5. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

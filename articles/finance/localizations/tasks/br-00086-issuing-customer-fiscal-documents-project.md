@@ -78,3 +78,6 @@ You can issue a fiscal document for a project. The fiscal document can be either
 45. Close the page.
 46. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

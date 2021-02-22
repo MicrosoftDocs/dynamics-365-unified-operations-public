@@ -62,3 +62,6 @@ You can find opinions, news, and other information about Inventory management an
 
 ### Task guides
 Additional help is available as task guides. To access task guides, click the **Help** button on any page
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

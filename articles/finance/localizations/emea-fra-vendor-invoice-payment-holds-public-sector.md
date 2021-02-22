@@ -74,3 +74,6 @@ If you are assigned to the same user role as the user who placed the hold, you c
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

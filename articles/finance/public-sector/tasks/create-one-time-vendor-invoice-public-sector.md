@@ -39,3 +39,6 @@ The vendor record uses values from the default one-time vendor account. To view 
 5. Click Create.
     * The Vendor invoice page opens, displaying the vendor information.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

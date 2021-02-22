@@ -99,3 +99,6 @@ When you make consumption registrations, financial dimensions related to the dif
 >[!NOTE]
 >For all three registration types, the financial dimension combination is validated, and invalid combinations are blanked. This is standard setup with other Finance and Operations apps.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

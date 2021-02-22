@@ -58,3 +58,6 @@ This task uses the JPMF demo company data.
 5. Expand or collapse the Posted amount section.
 6. Expand or collapse the Difference section.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

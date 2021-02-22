@@ -94,3 +94,6 @@ To add a search results module to a category page, follow these steps.
 [Module library overview](starter-kit-overview.md)
 
 [Quick view module](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Additional resources
 --------
 
 [Coverage settings](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

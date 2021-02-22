@@ -46,3 +46,6 @@ To transfer a fixed asset to inventory, follow these steps.
 7.  Validate that the fixed asset and inventory transactions were created correctly.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

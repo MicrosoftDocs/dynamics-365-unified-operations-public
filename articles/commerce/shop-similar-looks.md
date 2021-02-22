@@ -35,8 +35,6 @@ ms.dyn365.ops.version: 10.0.13
 
 This topic describes how to enable "shop similar looks" product recommendations in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The "shop similar looks" recommendations feature in Dynamics 365 Commerce uses the power of artificial intelligence and machine learning (AI-ML) to deliver recommendations for visually similar products to customers. By making "shop similar looks" recommendations available for all retail channels in Commerce, retailers can increase customer satisfaction by helping customers easily find what they want.
 
 The functionality for "shop similar looks" recommendations uses product images of seed product variants to find and recommend visually similar products in a retailer's product catalog. 
@@ -119,3 +117,6 @@ The following illustration shows the **Enable Shop Similar Looks Link** check bo
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -537,3 +537,6 @@ For support if you're performing compatibility tests, and for other inquiries, s
 ## Additional resources
 
 [Peripherals](../retail-peripherals-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

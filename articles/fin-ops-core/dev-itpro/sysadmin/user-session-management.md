@@ -69,3 +69,6 @@ To delete the multiple users’ maximum session length:
 
 1. Select the rows that you want to delete. 
 2. Select **Delete**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

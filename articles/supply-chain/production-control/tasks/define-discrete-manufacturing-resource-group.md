@@ -59,3 +59,6 @@ A resource group is a set of operations resources that typically correspond to t
 6. In the list, find and select the desired record.
 7. In the list, click the link in the selected row.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

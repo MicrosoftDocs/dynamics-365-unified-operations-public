@@ -90,3 +90,6 @@ To use the integrated [Microsoft Accessibility Insights](https://accessibilityin
 [Enrich a category landing page](enrich-category-page.md)
 
 [Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

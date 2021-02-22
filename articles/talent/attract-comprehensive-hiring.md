@@ -89,3 +89,6 @@ There are several reasons why you might not see all the Attract features that yo
 
 - Your coworker is working with a trial or a license for Attract with the Comprehensive Hiring Add-On, whereas you're working with the basic version of Attract.
 - You have Attract with the Comprehensive Hiring Add-On, but you haven't been assigned the correct roles to use all the features. For more information, see [Security and role management in Attract](security-attract.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

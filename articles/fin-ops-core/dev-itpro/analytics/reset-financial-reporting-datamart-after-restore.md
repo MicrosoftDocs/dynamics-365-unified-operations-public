@@ -710,3 +710,6 @@ Next, import your report designs from Report designer by using the file that was
     - To import specific reports, rows, columns, trees, or dimension sets, select them.
 
 5. Select **Import**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ This procedure walks you through creating an inventory model group for capital i
 6. In the Inventory model field, select an option.
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -129,3 +129,6 @@ These actions can be used only when the filter results are limited to a single m
 [Develop and customize home page](developer-home-page.md)
 
 [Development tools in Visual Studio](development-tools-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

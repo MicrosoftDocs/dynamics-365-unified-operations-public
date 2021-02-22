@@ -92,3 +92,6 @@ LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

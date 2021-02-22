@@ -54,3 +54,6 @@ This topic provides information about import tax engine configuration.
 ![Load configuration](media/gte-extension-import-configurations.png)
 
 7. Click **Yes** to confirm the import.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

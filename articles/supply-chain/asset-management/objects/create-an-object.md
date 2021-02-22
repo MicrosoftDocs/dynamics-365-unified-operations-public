@@ -121,3 +121,6 @@ On this FastTab, you can add or remove maintenance rounds, which are related to 
 ## Financial dimensions
 
 You can select financial dimensions for the asset.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

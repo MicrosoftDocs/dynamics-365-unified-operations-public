@@ -72,3 +72,6 @@ This procedure shows how to start a production order on the shop floor. Time and
 7. Click Post.
 8. Click OK.
     * In the Route card journal, the time spent on the individual operations is recorded. Good and error quantity can also be reported.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

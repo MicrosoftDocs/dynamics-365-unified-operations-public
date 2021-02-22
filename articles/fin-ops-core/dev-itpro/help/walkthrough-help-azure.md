@@ -263,3 +263,6 @@ The next step is to extend the **Help** pane so that it can detect your content.
 [Custom Help overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

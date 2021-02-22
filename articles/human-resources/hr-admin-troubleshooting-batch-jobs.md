@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 24
 
 # Optimize performance by scheduling batch jobs after hours
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## Issue
@@ -70,3 +72,6 @@ The following batch jobs should run at night or after hours. Be sure to check th
 ## Additional resources
 
 [Optimize performance with auto cleanup tasks](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

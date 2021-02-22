@@ -55,3 +55,6 @@ The service sends email notifications by using predefined email templates that d
 The following image shows the structure of the alert notifications when they are received by email.
 
 [![Template-based alert notifications for record creation, field changes, and template deletion](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

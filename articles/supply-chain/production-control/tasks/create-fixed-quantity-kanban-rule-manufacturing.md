@@ -75,3 +75,6 @@ This procedure focuses on the setup needed to create a fixed manufacturing kanba
     * This will create 5 kanbans.  
     * Note that 5 kanbans, for 10 each, was created for this manufacturing kanban rule. This is the last step in this procedure.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

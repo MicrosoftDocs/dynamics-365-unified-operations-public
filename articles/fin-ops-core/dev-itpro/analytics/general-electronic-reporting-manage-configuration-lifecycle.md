@@ -92,3 +92,6 @@ ER configurations that are designed in the development environment can be upload
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

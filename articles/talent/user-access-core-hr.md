@@ -51,3 +51,6 @@ For information, see the "Granting access to the environment" section in [Provis
 **Long-term solution**
 
 Microsoft is considering automatically assigning the appropriate rights to Onboard and Attract when a user is added to Human Resources.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

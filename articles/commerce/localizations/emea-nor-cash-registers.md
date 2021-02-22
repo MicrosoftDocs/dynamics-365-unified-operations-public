@@ -222,3 +222,6 @@ You must also map required master data to predefined SAF-T standard codes. For m
 
 To enable Norway-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

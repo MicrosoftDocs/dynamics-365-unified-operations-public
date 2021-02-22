@@ -70,3 +70,6 @@ This task guide describes invoicing a sales order, including merging invoices an
 10. Click **Cancel**.
 11. Click **Yes**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

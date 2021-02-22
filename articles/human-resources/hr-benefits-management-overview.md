@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Benefits management overview
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 To remain competitive, you must offer a rich set of benefits to attract and retain your best employees. In addition to standard benefits like medical and dental coverage, you might also want to offer expanded services like adoption assistance, recreation programs, and clothing allowances. Benefits management in Microsoft Dynamics 365 Human Resources provides you with a flexible solution that supports a wide variety of benefit options. Human Resources also includes an easy-to-use employee experience that showcases your offerings.
 
 - Enhanced benefits plans let you create and manage unique benefit plans and support complex benefit rate tables and nested tiers. You can easily create benefit programs, bundles, and auto-enrollment rules for an easier employee experience.
@@ -102,3 +104,6 @@ You need to process some of your changes to make them active.
 - [Process life event eligibility](hr-benefits-process-life-event-eligibility.md)
 - [Process rate changes](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

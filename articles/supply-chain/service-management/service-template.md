@@ -74,3 +74,6 @@ templates.
 ## Related topics
 
 [Copy service templates lines](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

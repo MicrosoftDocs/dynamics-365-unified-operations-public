@@ -130,3 +130,6 @@ In this example, withholding tax is calculated by using an **Origin of percentag
 |         2,001–0         | 20 percent |                    2,545.00                     |         509.00          |
 |                         |            |        <strong>Total WHT amount</strong>        | <strong>759.00</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

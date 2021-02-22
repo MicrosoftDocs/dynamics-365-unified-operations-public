@@ -73,3 +73,6 @@ Additional resources
 [Quality management processes](quality-management-processes.md)
 
 [Inspect the quality of goods](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

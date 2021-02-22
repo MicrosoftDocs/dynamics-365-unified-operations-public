@@ -72,3 +72,6 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 - [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Localization and regulatory features](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
 - [Create a VAT declaration in the XML format without transferring it to ELSTER (White paper)](https://www.microsoft.com/download/details.aspx?id=101929)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

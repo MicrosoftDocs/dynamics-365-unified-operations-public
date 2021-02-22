@@ -67,3 +67,6 @@ Channel configuration data will only be synchronized for channels that are serve
 Using assortments, product and pricing related data can be segmented by specific channels. For example, if your stores in North America only sell women's shoes and your stores in West Europe only sell sporting goods, you can use Assortments to segment this data. When data is synchronized to RCSU, women's shoes data will only be synchronized to the North America RCSU and sporting goods data will only be synchronized to the West Europe RCSU.
 
 Customer and employee records are configured using the Global Address Book, which can be configured for specific channels. For example, you can configure separate address books for customers and employees for channels served by the West Europe RCSU and those for North America RCSU.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

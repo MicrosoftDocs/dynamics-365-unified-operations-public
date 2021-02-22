@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 
 # Benefit eligibility process
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This procedure shows how the benefit eligibility process works. When the process is complete you can view the results. The demo data company used to create this procedure is USMF.
 
 1. Go to Human resources > Benefits > Benefits.
@@ -58,3 +60,6 @@ This procedure shows how the benefit eligibility process works. When the process
 25. Open Status column filter.
 26. Sort A to Z
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

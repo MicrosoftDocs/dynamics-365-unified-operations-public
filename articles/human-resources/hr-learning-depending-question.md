@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Make a question dependent on the answer of the previous question
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 
 
 Conditional questions allow you to specify what follow-up question will be presented to a respondent, based on the answer to the preceding question. For example, if you ask "Do you prefer coffee or tea," a logical follow-up question can be determined depending on whether the respondent selects coffee or tea as their answer. The demo data company used to create this procedure is USMF.
@@ -59,3 +61,6 @@ Conditional questions allow you to specify what follow-up question will be prese
 10. In the tree, select 'Questions\I am paid fairly for the work I do.'.
     * Note that the question tree updated to show the dependency.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

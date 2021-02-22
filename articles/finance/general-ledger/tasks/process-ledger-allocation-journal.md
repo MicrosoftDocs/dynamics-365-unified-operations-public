@@ -46,3 +46,6 @@ This topic explains how to process an allocation request. Use the Process alloca
 9. Select **Post**.
 10. Select **Post**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

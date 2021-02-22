@@ -49,3 +49,6 @@ You can use asset group depreciation for assets that are similar and for those a
 16. In the Fixed asset group field, enter or select a value.
 17. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Use the **Posting invoice** page to print the lump sum recovery text that shows 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

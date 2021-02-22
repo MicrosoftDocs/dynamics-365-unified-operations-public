@@ -41,3 +41,6 @@ This procedure shows how to assign a product lifecycle state to a released produ
 5. In the Product lifecycle state field, enter or select a value.
 6. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

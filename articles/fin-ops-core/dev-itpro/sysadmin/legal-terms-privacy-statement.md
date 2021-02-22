@@ -74,3 +74,6 @@ Click these links to validate that the appropriate pages open.
 
 ### Validate the links in Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS)
 To validate that the links have been added, go to the **Settings** page. In the **About** section, click the links to validate that the appropriate pages open.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

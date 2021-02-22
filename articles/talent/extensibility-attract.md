@@ -95,3 +95,6 @@ The Web content (iframe) activity lets you embed a custom web solution that you'
 
 > [!NOTE]
 > The Web content activity is available only with the Comprehensive hiring add-on.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

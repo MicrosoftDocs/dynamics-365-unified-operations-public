@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (September 17, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for September 17, 2018.
 author: andreabichsel
 manager: tfehr
 ms.date: 09/17/2018
@@ -59,3 +59,6 @@ Platform update 18 for Finance and Operations is now part of the Talent release.
 ## Bug fixes
 
 This release includes several additional bug fixes, including references to ACA, ADA, and I9 now will only be enabled in US companies.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -102,8 +102,8 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 
 #### Older platform releases
 
-  > [!NOTE]
-  > Older platform releases have passed the expiration date and are no longer supported. Extension requests cannot be logged since January 1, 2019.
+> [!NOTE]
+> Older platform releases have passed the expiration date and are no longer supported. Extension requests cannot be logged since January 1, 2019.
 
 | Platform release          |Build Number         | Availability          | Expiration date   |
 |------------------|----------------------|------------------|--------------|
@@ -114,3 +114,6 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 |  Platform update 10 | 7.0.4641.16233 | August 2017 | April 2018 |
 |  Platform update 9 | 7.0.4612.35162 | August 2017 | April 2018 |
 |  Platform update 8 | 7.0.4565.1612 | July 2017 | April 2018 |
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

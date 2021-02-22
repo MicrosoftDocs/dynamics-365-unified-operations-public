@@ -422,3 +422,6 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
 1. Press **F5** and deploy the POS to test your customization.
 2. After POS launches, login to POS. Search for any product and navigate to the product details view. You should see the custom control that you added.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

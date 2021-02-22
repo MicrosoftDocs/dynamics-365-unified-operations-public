@@ -67,3 +67,6 @@ Create and submit the EU sales list
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

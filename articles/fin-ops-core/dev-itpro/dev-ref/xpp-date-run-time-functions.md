@@ -692,3 +692,6 @@ year(0221998); //Returns the value 1998.
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

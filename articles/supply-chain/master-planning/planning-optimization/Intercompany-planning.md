@@ -90,3 +90,6 @@ For this example, a planned purchase order is created in the USMF company to cov
 The following illustration shows how this example might appear on the **Multilevel pegging** page for the planned production order.
 
 ![Intercompany example that involves three companies](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1040,3 +1040,6 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 - [Deploy Retail e-Commerce dev/test environments on Azure](deploy-retail-ecommerce-devtest-environment-azure.md) 
 - [Deploy Retail mobility dev/test environments on Azure](deploy-retail-mobility-devtest-environment-azure.md) 
 - [Deploy high-availability environments on Azure](deploy-high-availability-environment-azure.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

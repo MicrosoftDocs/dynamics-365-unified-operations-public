@@ -164,3 +164,6 @@ An offer can be withdrawn from a candidate at any point in time for various reas
 ## Closing an offer 
 
 When an offer has been accepted, declined, or withdrawn with no further actions needed, you can close the offer so that no further edits can be made to this offer package.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

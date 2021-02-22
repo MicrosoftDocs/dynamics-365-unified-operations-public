@@ -64,3 +64,6 @@ This procedure shows how to manually maintain information about applicants and t
 6. Click Save.
     * After saving the application, you can attach documents to it, including the applicant's experience, awards, and cover letter.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

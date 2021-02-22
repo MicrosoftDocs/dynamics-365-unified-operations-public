@@ -73,3 +73,6 @@ This procedure shows how to set up data for automatic freight reconciliation. Th
 11. In the Underpayment reason code field, enter or select a value.
 12. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

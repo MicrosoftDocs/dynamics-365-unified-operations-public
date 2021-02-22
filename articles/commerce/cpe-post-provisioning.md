@@ -33,8 +33,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
 
-## Overview
-
 Complete the procedures in this topic only after your Commerce evaluation environment has been provisioned. For information about how to provision your Commerce evaluation environment, see [Provision a Commerce evaluation environment](provisioning-guide.md).
 
 After your Commerce evaluation environment has been provisioned end to end, additional post-provisioning configuration steps must be completed before you can start to evaluate the environment. To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS) and Dynamics 365 Commerce.
@@ -167,3 +165,6 @@ To configure optional features for your Commerce evaluation environment, see [Co
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

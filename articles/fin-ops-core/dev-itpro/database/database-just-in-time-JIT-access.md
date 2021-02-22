@@ -54,3 +54,6 @@ When the page is refreshed, the database account will be shown with its expiry t
 ![Database account shown with the expiry time](media/sql-jit3.png)
 
 You can now use tools like SQL Server Management Studio (SSMS) to connect to the database, using the accounts from LCS and the IP address you enabled.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

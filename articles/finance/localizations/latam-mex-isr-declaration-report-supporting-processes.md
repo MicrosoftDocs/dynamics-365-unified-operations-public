@@ -81,3 +81,6 @@ You can generate a detailed ISR report, or the report can summarize each main ac
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
