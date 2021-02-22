@@ -409,6 +409,34 @@ LGMb: Loc 25
 ****************/
 }
 ```
+The following X++ code sample shows that how **\#localmacro** could be used for building SQL statements. More complex structures are also possible.
+
+```xpp
+static void LocalMacroSQLJob(Args _args)
+{
+    InventTable       inventTable;
+    
+    #localmacro.itemTypeRange
+        where inventTable.ItemType == %1
+    #endmacro
+    
+    select firstOnly inventTable
+        #itemTypeRange(ItemType::Item);
+    
+    info(strFmt("Item type : %1", inventTable.ItemId));
+    
+    select firstOnly inventTable
+        #itemTypeRange(ItemType::Service);
+    
+    info(strFmt("Service type : %1", inventTable.ItemId));
+}
+/****************  Actual Infolog output
+Message (13:56:47)
+Item type : A001
+Service type : A002
+****************/
+}
+```
 
 ## Nesting Macro Symbols
 You can nest precompiler definition directives inside an outer definition directive. The main definition directives are **\#define** and **\#localmacro. **The cases for which this topic provides code samples are as follows:
