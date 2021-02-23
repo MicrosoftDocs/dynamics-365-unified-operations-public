@@ -53,14 +53,8 @@ To enable **Show Out Of Stock Errors** in Commerce site builder, follow these st
 
 ## Additional resources
 
-- [Apply inventory settings](../inventory-settings.md)
+[Apply inventory settings](../inventory-settings.md)
 
-- [Calculate inventory availability for retail channels](../calculated-inventory-retail-channels.md)
+[Calculate inventory availability for retail channels](../calculated-inventory-retail-channels.md)
 
-- [Configure inventory buffers and inventory levels](../inventory-buffers-levels.md)
-
-
-
-
-
-
+[Configure inventory buffers and inventory levels](../inventory-buffers-levels.md)
