@@ -63,7 +63,7 @@ For larger deployments, you can automate app deployment and/or configuration, wh
 
 ### Install the app from an app store
 
-The easiest way to install the app on single device is to install it from an app store, which always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to download the app from an app store:
+The easiest way to install the app on single device is to install it from an app store, which always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to install the app from an app store:
 
 - **Windows (UWP):** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
