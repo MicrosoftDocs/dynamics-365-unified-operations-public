@@ -171,12 +171,12 @@ To make the PDF conversion option available in the current Finance instance, ope
 
 ### Applicability
 
-The PDF conversion option can be turned on only for ER file components that are used to generate output in an Excel or Word file format. In versions of Finance **before version 10.0.18**, you can turn this option on for the components of the **Excel\File** type that are used to generate output in [Excel](er-fillable-excel.md) or [Word](er-design-configuration-word.md) format. However, in **version 10.0.18 and later**, you can also turn this option on for the components of the **Common\File** type.
+The PDF conversion option can be turned on only for ER file components that are used to generate output in Excel or Word file format. In versions of Finance **before version 10.0.18**, you can turn on this option only for components of the **Excel\\File** type that are used to generate output in [Excel](er-fillable-excel.md) or [Word](er-design-configuration-word.md) format. However, in **version 10.0.18 and later**, you can also turn on this option for components of the **Common\\File** type.
 
 > [!NOTE]
-> Pay attention to the warning message that occurs when you turn on the PDF conversion option for an ER component of the **Common\File** type. This message informs you that it's not possible to guarantee at design time that the selected file component will expose the content in PDF format or the PDF convertible content at runtime. This means that you should only enable this option when you are sure that this file component was configured to expose the content in PDF format at runtime or the PDF convertible content.
+> Pay attention to the warning message that you receive when you turn on the PDF conversion option for an ER component of the **Common\\File** type. This message informs you that there is no way to guarantee, at design time, that the selected file component will expose the content in PDF format or the PDF-convertible content at runtime. Therefore, you should turn on the option only if you're sure that the selected file component was configured to expose the content in PDF format or the PDF-convertible content at runtime.
 >
-> At runtime, an exception will occur informing you that the generated content can't be convered in to a PDF if you turned this option on for a component of the **Excel\File** type that exposes content in a format other than PDF and the exposed content can't be converted to PDF format.
+> If you turn on the PDF conversion option for a component of the **Excel\\File** type, if that component exposes content in a format other than PDF, and if the exposed content can't be converted to PDF format, an exception will occur at runtime. The message that you receive informs you that the generated content can't be converted to PDF format.
 
 ### Limitations
 
