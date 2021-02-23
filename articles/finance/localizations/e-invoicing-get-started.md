@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on
 description: This topic provides information that will help you get started with the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 02/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -186,27 +186,26 @@ For specific steps, see the "Get started" documentation that is available for yo
 
 1. Sign in to Finance or Supply Chain Management, and verify that you're in the correct legal entity.
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-3. On the **Features** tab, select the feature reference or references that are listed in the following table to turn on the Electronic invoicing feature for Finance or Supply Chain Management.
+3. On the **Features** tab, select the country/region-specific feature to turn on the Electronic invoicing feature for Finance or Supply Chain Management. The following table provides a list of the electronic invoicing features available for specific country/regions. 
 
-    | Feature name                         | Country/region  | Feature reference |
-    |--------------------------------------|-----------------|-------------------|
-    | Austrian electronic invoices (AT)    | Austria         | EUR-00023 |
-    | Belgian electronic invoice (BE)      | Belgium         | EUR-00023 |
-    | Brazilian NF-e (BR)                  | Brazil          | BR-00053 |
-    | Brazilian NFS-e ABRASF Curitiba (BR) | Brazil          | BR-00095 |
-    | Brazilian NFS-e São Paulo (BR)       | Brazil          | BR-00095 |
-    | Danish electronic invoice (DK)       | Denmark         | <p>EUR-00023</p><p>DK-00001</p> |
-    | Dutch electronic invoice (NL)        | The Netherlands | EUR-00023 |
-    | Egyptian electronic invoice (EG)     | Egypt           | EG-00008 |
-    | Estonian electronic invoice (EE)     | Estonia         | EUR-00023 |
-    | Finnish electronic invoice (FI)      | Finland         | EUR-00023 |
-     French electronic invoice (FR)       | France           | EUR-00023 |
-    | German electronic invoice (DE)       | Germany         | EUR-00023 |
-    | Mexican CFDI Interfactura (MX)       | Mexico          | <p>MX-00010</p><p>MX-00016</p> |
-    | Norwegian electronic invoice (NO)    | Norway          | <p>EUR-00023</p><p>NO-00010</p> |
-    | Spanish electronic invoice (ES)      | Spain           | <p>EUR-00023</p><p>ES-00025</p> |
-    | Italian electronic invoice (IT)      | Italy           | <p>EUR-00023</p><p>IT-00036</p> |
-    | PEPPOL electronic invoice            | Europe          | EUR-00023 |
+    | Feature name                                          | Country/region  |
+    |-------------------------------------------------------|-----------------|
+    | Austrian electronic invoices (AT)                     | Austria         |
+    | Belgian electronic invoice (BE)                       | Belgium         |
+    | CFDI Mexican electronic invoice (MX)                  | Mexico          |
+    | Danish electronic invoice (DK)                        | Denmark         |
+    | Dutch electronic invoice (NL)                         | The Netherlands |
+    | Egyptian electronic invoice (EG)                      | Egypt           |
+    | Estonian electronic invoice (EE)                      | Estonia         |
+    | Finnish electronic invoice (FI)                       | Finland         |
+    | French electronic invoice (FR)                        | France          |
+    | German electronic invoice (DE)                        | Germany         |
+    | Italian electronic invoice (IT)                       | Italy           |
+    | NF-e Federal - Brazilian electronic invoice (BR)      | Brazil          |
+    | NFS-e - Brazilian service (city) electronic invoice   | Brazil          |
+    | Norwegian electronic invoice (NO)                     | Norway          |
+    | PEPPOL electronic invoice                             | Global          |
+    | Spanish electronic invoice (ES)                       | Spain           |
 
 4. Select **Save**.
 
