@@ -49,11 +49,4 @@ The payment service settings on the online store checkout page are cached on the
 
 ## Additional Resources
 
-- [Set up an online channel](../channel-setup-online.md)
-
-
-
-
-
-
-
+[Set up an online channel](../channel-setup-online.md)
