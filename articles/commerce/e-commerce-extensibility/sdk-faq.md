@@ -34,6 +34,80 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
+### TSLint has been deprecated in online SDK version 9.27 (Commerce version 10.0.18 release) and replaced with ESLint
+Due to the open source TSLint static analysis tool has being deprecated, the Dynamics 365 Commerce online SDK has changed to leverage the [ESLint](https://eslint.org/) static alaysis tool.  When updating to SDK 9.27, your packages.json file will need to be manually updated to remove the dependency on TSLint and add the dependency to the ESLint dependency.  You then may see new ESLint warnings in your customization code that did not previously exist.
+
+The below packages.json is an example with dependency links to ESLint.  Your packages.json may be different if you have made any modifications to the default.
+
+```
+{
+  "name": "Msdyn365.Commerce.Online",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "analyze": "SET ANALYZE_BUNDLE=true && yarn msdyn365b start",
+    "analyze:prod": "SET ANALYZE_BUNDLE=true && yarn msdyn365b build",
+    "build": "yarn msdyn365b build",
+    "build:prod": "yarn clean && yarn msdyn365b build",
+    "clean": "yarn rimraf build lib dist .tmp gendef.lock",
+    "format": "yarn prettier **/**.{ts,tsx}",
+    "format:fix": "yarn prettier **/**.{ts,tsx} --write",
+    "lint": "yarn tslint src/**/*.{ts,tsx} --project tsconfig.json --format stylish",
+    "lint:fix": "yarn tslint src/**/*.{ts,tsx} --project tsconfig.json --fix --format stylish",
+    "precommit": "lint-staged",
+    "start": "yarn msdyn365b start local",
+    "start:prod": "SET NODE_ENV=production && node build/server.js"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.4",
+    "@types/jest": "^23.3.10",
+    "@types/node-fetch": "^2.1.4",
+    "@types/react": "16.9.0",
+    "@types/react-dom": "16.0.11",
+    "@types/react-test-renderer": "^16.0.2",
+    "@types/reactstrap": "^6.4.3",
+    "deep-equal": "1.0.1",
+    "fs-extra": "^7.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "jest-junit": "^5.2.0",
+    "lint-staged": "^7.3.0",
+    "node-fetch": "2.6.1",
+    "prettier": "^1.15.3",
+    "react-test-renderer": "^16.4.2",
+    "semver": "^5.6.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "typeson": "5.10.1"
+  },
+  "dependencies": {
+    "@msdyn365-commerce-modules/starter-pack": "9.26",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.26",
+    "@msdyn365-commerce/bootloader": "^1.0.0",
+    "@msdyn365-commerce/retail-proxy": "9.26",
+    "@msdyn365-commerce-modules/msdyn365-exp-test-connector": "^1.0.0",
+    "reactstrap": "^6.5.0",
+    "stack-trace": "^0.0.10",
+    "tslib": "^1.9.3"
+  },
+  "lint-staged": {
+    "*.(j|t)s(x)?": [
+      "yarn format:fix",
+      "yarn lint:fix",
+      "git add"
+    ]
+  },
+  "jest": {
+    "preset": "@msdyn365-commerce/cli-internal"
+  },
+  "resolutions": {
+    "@msdyn365-commerce/bootloader": "^1.0.0",
+    "@msdyn365-commerce/core": "^1.0.0",
+    "@msdyn365-commerce-modules/core-components": "^1.0.0"
+  }
+}
+```
+
 ### After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error.
 
 The compilation error is caused by code sharing that is related to the product quick view module that was introduced in the Commerce version 10.0.17 release. Because the quick view module shares lots of functionality with the buy box module, some common components were moved to a common folder, so that the buy box and quick view modules can share the code.
