@@ -5,7 +5,7 @@ title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 11/09/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
