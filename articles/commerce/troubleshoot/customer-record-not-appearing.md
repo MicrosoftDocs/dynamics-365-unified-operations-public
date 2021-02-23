@@ -56,4 +56,4 @@ To disable customer creation in async mode in Commerce headquarters, follow thes
 
 ## Additional resources
 
-- [Setup a B2C tenant in Commerce](../set-up-b2c-tenant.md)
+[Setup a B2C tenant in Commerce](../set-up-b2c-tenant.md)
