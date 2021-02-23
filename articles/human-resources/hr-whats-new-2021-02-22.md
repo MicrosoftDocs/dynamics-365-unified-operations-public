@@ -50,12 +50,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| [EHR] View of new hires with no checked out plans - (464552) | -- | -- |
-| [EHR] View of employees with no checked out plans during an open enrollment cycle - (464554) | -- | -- |
-| [EHR] View of employees who have unconfirmed selections - (464549) | -- | -- |
-| [EHR] View of employees who are currently enrolled in benefits - (464550) | -- | -- |
-| [EHR] View of employees with open life events - (464555) | -- | -- |
-| [EHR] View of employees with future life events - (464556) | -- | -- |
+
 
 
 ### Bug fixes
@@ -68,19 +63,13 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| Benefits Workspace : " Unconfirmed Selections" record list does not honor selected period - (557323) |-- | -- |
-| Benefits Workspace : " Enrolled In Benefits" record list does not honor selected period - (557324) |-- | -- |
-| Benefits Workspace : Grid view and Tile count for OE with no checked out plans is inaccurate. - (557318) Grid view for "Open enrollments with no checked out plans" shows multiple records per employee with multiple start dates.. |-- | -- |    
-| Benefits Workspace : Active Life Events" tile count and list view is inaccurate - (557330) |-- | -- |
-| Feature Management Label for Benefits workspace V2 is not accurate  - (557308) |-- | -- |
-| Benefits Workspace : Styling needs to be corrected to match with intended design - (557309) |-- | -- |
-| Benefits Workspace : "Links" section layout is broken - (557333) |-- | -- |
 | 529994 | Modifying "Known As" field on worker form does not trigger a Dataverse update | The Dataverse execution request is not triggered when the "Known As" field is updated on the worker form. |
 | ESS contact details grid- when empty and Restrict ESS purpose feature enabled, add fails - (554195) |-- | -- |
 | Only one dependant selected on eligible plans when more than one are marked as default designees - (518064) |-- | -- |
-| Compensation Analytics PBI report does not use currency conversion when calculating metrics for All Companies - (532651) |-- | -- |
+| 532651 |Compensation Analytics PBI report does not use currency conversion when calculating metrics for All Companie | Fixed an issue where COmpensation analysis PBI report was not correctly doing currency conversions |
 | Limit the number of tasks queried for in "To-do list" on dashboard - (547123) |-- | -- |
-| Life event processing closes and reopens plans multiple times for single life event - (552226) When an employee is part of multiple legal entities and a life event occurs a life event record is generated for each legal entity the employee is a part of. When processing life events the legal entity to process must be selected. However, the processing logic does not constrain itself to this legal entity, instead processing for all legal entities and performing the plan close/reopen on the plans in the legal entity selected. This causes a life event to get processed multiple times in the same legal entity, resulting in multiple close/reopens of each plan affected by the life event. |-- | -- |    
+| 552226 |Life event processing closes and reopens plans multiple times for single life event  | When an employee is part of multiple legal entities and a life event occurs a life event record is generated for each legal entity the employee is a part of. When processing life events the legal entity to process must be selected. However, the processing logic does not constrain itself to this legal entity, instead processing for all legal entities and performing the plan close/reopen on the plans in the legal entity selected. This causes a life event to get processed multiple times in the same legal entity, resulting in multiple close/reopens of each plan affected by the life event. |
+| 518064 | Only one dependant selected on eligible plans when more than one are marked as default designees | Fixed an issue where multiple default designees are not auto-selected in eligible plans. We also now have a way to designate primary benefeciary for a personal contact so that it is listed as 100% in eligible plans when there are multiple benefeciaries |
 | 552365 | BYOD export jobs are failing after upgrading to PU40 | Bring your own database (BYOD) exports fail after platform update 40 is applied to teh environment. |
 
 ## In preview	
@@ -91,6 +80,8 @@ The following new features are in preview. For more information about turning fe
 | --- | --- | --- |
 | Human Resources app in Microsoft Teams | [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Manage leave requests in Teams](hr-teams-leave-app.md) |
 | Cross-company view of leave for managers | [Cross-company view of employee leave for managers](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Configure leave and absence parameters](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
+| Benefits Management Workspace | [Benefits Management Workspace (Preview)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | (Coming Soon ! ) New Feature "(Preview) Benefits management workspace" available in Sandbox environments only |
+
 
 ## Coming soon
 
