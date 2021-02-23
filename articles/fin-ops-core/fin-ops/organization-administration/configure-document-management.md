@@ -78,6 +78,7 @@ SharePoint communication works for the current user only if the following condit
 - A Microsoft 365 license is associated with the user's account.
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
+- The SharePoint site is configured to "Allow this site to appear in search results".
 - The user has access to the folder that the document is stored in.
 
 If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 
