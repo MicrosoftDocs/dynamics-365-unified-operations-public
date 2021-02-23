@@ -107,7 +107,7 @@ New projects for Finance and Operations are onboarded to the following regions:
 - Central US
 
 ### My environments are currently in the regions that are no longer supported. How will this change affect me?
-Projects that have been onboarded on or after August 1, 2020, are no longer supported in the following regions:
+Projects that have been onboarded on or after August 1, 2020 are no longer supported in the following regions:
 
 -	East US2
 -	West US2
@@ -115,11 +115,11 @@ Projects that have been onboarded on or after August 1, 2020, are no longer supp
 -	North Central US
 -	South Central US
 
-> [!Note]
+> [!NOTE]
 > This will not affect any environments that have their data stored in the deprecated regions before August 2020. There is a transition plan to move customers in the deprecated regions into other regions. For a list of the latest supported regions, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
 
 - If you have any integrations or other dependencies that are latency driven and have questions regarding how the region change in regions will impact that, please contact Microsoft Support.
-- Please review all Azure resources in your current region and assess if they need to be collocated to the new region in preparation for the migration to a different region.
+- Please review all Azure resources in your current region and assess if they need to be collocated to a new region.
 
 ## For my Microsoft-managed environments, I have external components that have dependencies on an explicit outbound IP safe list. How can I ensure my service is not impacted after the move to self-service deployment?
 With self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available so you can add them in preparation for the upcoming self-service migrations or post migrations.
