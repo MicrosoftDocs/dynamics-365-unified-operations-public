@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Pickup in store option doesn't display
-description: This topic provides troubleshooting for when the option to pickup in store doesn't display in the shopping bag or product details page. 
+title: "Pick this up" option not displayed on cart or product details pages
+description: This topic provides troubleshooting information for when the option to pick up in store doesn't display on the cart or product details pages. 
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/17/2021
+ms.date: 02/23/2021
 ms.topic: Troubleshooting
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -29,59 +29,54 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Pickup in store option doesn't display
+# "Pick this up" option not displayed on cart or product details pages
 
 [!include [banner](../../includes/banner.md)]
 
-## Description
-When navigating to the **Product details** or the **Shopping cart** page, the **Pick this up** button does not show up for a product.
+This topic provides troubleshooting information for when the option to pick up in store doesn't display on the cart or product details pages.
 
-![Pick this up button](media/pickup-button-missing.jpg)
+## Description
+
+The **Pick this up** option isn't displayed on the cart or product details pages, as shown in the following example image.
+
+![Pick this up option](media/pickup-button-missing.jpg)
 
 ## Resolution
 
-### Enable "BOPIS" extension in site builder
+### Enable "BOPIS" extension in Commerce site builder
 
-1. Go to site builder
+To enable the "BOPIS" extension in Commerce site builder, follow these steps.
 
-1. On the **Sites** page, select the site you're working on.
+1. Select your site.
+1. Select **Site settings**, and then select **Extensions**.
+1. Ensure that the **Disable BOPIS** option is not selected.
 
-1. Expand **Site settings** on the bottom left of the navigation pane, and then select **Extensions**.
+### Configure modes of delivery in Commerce headquarters
 
-1. Make sure the **Disable BOPIS** option is unselected.
+To configure modes of delivery in Commerce headquarters, follow these steps.
 
-### Configure modes of delivery
-
-1. Go to Dynamics 365 Commerce headquarters.
-
-1. Go to **Retail and Commerce > Channel setup > Modes of delivery**.
-
-1. Make sure a **Customer pickup** mode of delivery was created, and **Products* and **Addresses** are assigned to it.
-
-1. Go to **Retail and Commerce > Headquarters setup > Parameters**.
-
-1. Select the **Customer orders** tab on the left panel.
-
-1. Make sure the **Pickup mode of delivery** is configured correctly.
+1. Go to **Retail and Commerce \> Channel setup \> Modes of delivery**.
+1. Ensure that a **Customer pickup** mode of delivery has beencreated, and that products and addresses are assigned to it.
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters**.
+1. Select **Customer orders** on the left navigation pane.
+1. Ensure that the **Pickup mode of delivery** is configured correctly.
 
 ### Configure customer orders payments
 
-1. Go to Dynamics 365 Commerce headquarters.
+To configure customer orders payments in Commerce headquarters, follow these steps.
 
-1. Go to **Retail and Commerce > Headquarters setup > Parameters**.
-
-1. On the left navigation, select **Customer orders**. On the **Payments** tab, make sure the **Terms of payment** and **Method of payment** are set up correctly.
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters**.
+1. On the left navigation, select **Customer orders**. On the **Payments** FastTab, ensure that the **Terms of payment** and **Method of payment** drop-down list options are correct.
 
 ### Additional resources
-- [Configure BOPIS](../cpe-bopis.md)
-- [Enable multiple pickup delivery modes for customer orders](../multiple-pickup-modes.md)
-- [Omni-channel Commerce order payments](../dev-itpro/commerce-payments.md)
-- [e-Commerce store selector module](../store-selector.md)
 
+[Configure BOPIS](../cpe-bopis.md)
 
+[Enable multiple pickup delivery modes for customer orders](../multiple-pickup-modes.md)
 
+[Omni-channel Commerce order payments](../dev-itpro/commerce-payments.md)
 
-
+[Store selector module](../store-selector.md)
 
 
 
