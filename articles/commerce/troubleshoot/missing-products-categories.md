@@ -2,10 +2,10 @@
 # required metadata
 
 title: Products and categories missing after environment copy
-description: This topic helps troubleshoot when after a site is copied from one environment to another or within an environment, the products and categories are missing form the site. 
+description: This topic helps troubleshoot the issue when products and categories are missing after a site is copied from one environment to another, or copied within an environment. 
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/17/2021
+ms.date: 02/23/2021
 ms.topic: Troubleshooting
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,26 +33,27 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
+This topic helps troubleshoot the issue when products and categories are missing after a site is copied from one environment to another, or copied within an environment. 
+
 ## Description
+
 After a site is copied from one environment to another or within an environment the products and categories are missing form the site. The products and categories will be missing from the e-Commerce storefront
 and from the **Products** tab in site builder.
 
 ## Resolution
 
-### Map the OUN to the newly copied site
-1. Open site builder.
+### Map the channel operating unit number (OUN) to a newly copied site in Commerce site builder
 
-1. Select the site you are working on from on the **Sites** page.
+To map the channel operating unit number (OUN) to a newly copied site in Commerce site builder, follow these steps.
 
-1. Select **Channels** on the left-hand navigation bar.
+1. Select the newly copied site.
+1. Under **Site settings**, select **Channels**.
+1. Next to the channel name, select the ellipsis (**...**) and then select **Change online store channel**.
+1. In the **Change online store channel** dialog box, select the channel you want to map to the newly copied site, and then select **OK**.
+1. Select **Save and publish**.
 
-1. Select the ellipses (**...**) near **Channel** and select **Map different OUN**.
+## Additional resources
 
-1. Select the channel you want to map to the site and select **OK**.
-
-1. Select **Save and publish** on the top navigation bar.
-
-## Additional Resources
 - [Associate a Dynamics 365 Commerce site with an online channel)(../associate-site-online-store.md)
 
 
