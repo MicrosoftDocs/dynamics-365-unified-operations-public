@@ -104,9 +104,11 @@ The Dynamics 365 Human Resources app in Teams supports the following languages:
 | tr-TR | Turkish (Turkey) |
 | zh-CN | Chinese (Simplified) |
 
-## Known issues
+## Notes
 
-| Issue | Status |
+The following work items are slated for future releases:
+
+| Work item | Status |
 | --- | --- |
 | The balance is incorrect when submitting time off for a future date. | Forecasting isn't yet available. The balance displays for the current date. |
 | Unable to cancel an **In review** request. | This functionality isn't currently supported and will be added in a future release. |

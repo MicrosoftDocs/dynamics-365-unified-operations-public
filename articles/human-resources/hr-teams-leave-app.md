@@ -75,25 +75,17 @@ After the app installs, a welcome message appears, letting you know the types of
 
 You can ask the bot to:
 
-- Show time-off balance information for each leave type you're enrolled in.
-
-   ![Human Resources Teams leave app show balances](./media/hr-teams-leave-app-bot-balances.png)
- 
-- Show additional details about a specific leave type.
-
-   ![Human Resources Teams leave app show details](./media/hr-teams-leave-app-bot-details.png)
-
 - Start a leave request for you.
 
-   ![Human Resources Teams leave app request leave](./media/hr-teams-leave-app-bot-request.png)
- 
-After you start a leave request, you can adjust the days right within the card.
+  ![Start a leave request in Teams chat](./media/hr-teams-leave-app-initiate.png)
 
-![Human Resources Teams leave app edit request](./media/hr-teams-leave-app-bot-edit.png)
- 
-When you're done entering information, select **Submit** to submit it for approval. You can also select **Save as draft** to come back to it later.
+- The chat bot will populate a leave request for you. Select **Request time off** and edit the details for your request.
 
-![Human Resources Teams leave app submit request](./media/hr-teams-leave-app-bot-submit.png)
+  ![Edit leave request details](./media/hr-teams-leave-app-details.png)
+
+- When you're done editing your leave request details, select **Submit** to submit it for approval.
+
+  ![Submit leave request](./media/hr-teams-leave-app-submit.png)
 
 ## Manage your leave in Teams
 
