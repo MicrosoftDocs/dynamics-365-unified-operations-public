@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Troubleshoot Adyen Payment Connector issues
-description: This topic provides information on how to get support when you have issues with the Adyen Payment Connector. 
+title: Troubleshoot Dynamics 365 Payment Connector for Adyen issues
+description: This topic provides information on how to get support when you have issues with the Microsoft Dynamics 365 Payment Connector for Adyen. 
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/17/2021
+ms.date: 02/23/2021
 ms.topic: Troubleshooting
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -29,31 +29,35 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Troubleshoot Adyen Payment Connector issues
+# Troubleshoot Dynamics 365 Payment Connector for Adyen issues
 
 [!include [banner](../../includes/banner.md)]
 
+This topic provides information on how to get support when you have issues with the Microsoft Dynamics 365 Payment Connector for Adyen. 
+
 ## Description
-You have issues with the Adyen Payment Connector in the areas listed below, and you require support from the Adyen team. 
 
-Issues relating to:
--   Point of sale (POS), Modern point of sale (MPOS), call center, or Dynamics 365 Commerce configuration.
+You have issues with the Dynamics 365 Payment Connector for Adyen in the following areas, and you require support from the Adyen team. 
 
--   The Adyen PSP Number (for example, why it was refused, MKE refusals).
-
--   Anything not working in test or live merchant.
+- Point of sale (POS), Modern point of sale (MPOS), call center, or Dynamics 365 Commerce configuration.
+- The Adyen payment service provider (PSP) reference number, for example questions regarding refusals, including manual key entry (MKE) refusals.
+- Anything not working in test or live merchant environments.
 
 ## Resolution
-Use the e-mail template below to start the support process with the Adyen team. The mail should contain all the detailed needed to speed up troubleshooting.
+
+Use the email template below to start the support process with the Adyen team. The email should contain all the details needed to expedite troubleshooting.
 
 | Field            | Text              |
 |------------------|-------------------|
 | **To**           | support@adyen.com |
-| **CC**           |                   |
+| **cc**           |                   |
 | **Subject line** | Microsoft Dynamics Support Request |
-| **Body** | Hi Support,</br>Please provide support for the following issue.</br></br><li>Merchant account</li></br><li>Environment (Test/Prod)</li></br><li>Channel (POS/Call Center/e-Commerce)</li></br><li>PSP reference (when an issue has occurred with a specific transaction; the PSP reference is visible on the receipt, in the CA, or in the transactions menu on the terminal)</li></br><li>Screenshot or photo of the error message (if applicable)</li></br><li>Event Viewer Logs ( in .txt)</li></br><li>Description of the issue and troubleshooting steps taken</li></br> |
+| **Body** | Hi Support,</br>Please provide support for the following issue.</br></br><li>Merchant account</li></br><li>Environment (Test/Prod)</li></br><li>Channel (POS/call center/Commerce e-commerce)</li></br><li>PSP reference number (when an issue has occurred with a specific transaction). The PSP reference number is visible on the receipt, in the CA, or in the transactions menu on the POS terminal.</li></br><li>Screenshot or photo of the error message (if applicable).</li></br><li>Event Viewer logs (in .txt format).</li></br><li>Description of the issue and troubleshooting steps taken.</li></br> |
 
 ## Additional Resources
+
 - [Accept payments with the Adyen connector for Dynamics 365 Commerce](https://www.adyen.com/partners/dynamics-365-commerce)
+
 - [Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector.md)
+
 - [Set up the Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics)
