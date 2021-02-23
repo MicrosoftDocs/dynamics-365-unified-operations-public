@@ -50,7 +50,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Integrate Benefit reason codes into **Personnel management** workspace | -- | [Set up reason codes](hr-benefits-setup-reason-codes.md) |
+| -- | -- | -- |
 
 ### Bug fixes
 
