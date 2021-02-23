@@ -161,13 +161,12 @@ If you're a manager with direct reports, you can view your team's approved and p
 
 1. In the Human Resources app in Teams, select **Time off**.
 
-2. Select **Team calendar**.
+2. Select **Team calendar**. The calendar displays your direct reports' approved and pending time off.
 
    ![View calendar in Human Resources Teams app](./media/hr-teams-leave-app-view-calendar.png)
 
-The calendar displays your direct reports' approved and pending time off.
-
-![Time off calendar in Human Resources Teams app](./media/hr-teams-leave-app-calendar.png)
+   > [!NOTE]
+   > If you can't see the team calendar, ask your admin to enable it. For more information, see [Install and setup](hr-admin-teams-leave-app.md#install-and-setup).
 
 ## Supported languages
 
