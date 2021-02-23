@@ -50,7 +50,7 @@ Begin by opening the **General journals** page (**General ledger > Journal entri
    > [!Note]
    > The **Withholding tax group**  field and the **TCS group** field become unavailable when you select a TDS group in the **TDS group** field. The **Withholding tax group** field is available only in the **General journal** page. TDS is calculated only if the **Calculate withholding tax** check box is selected for the vendor or customer on the **All vendors** page or **All customers** page.   
 
-3. Click the **Tax information** tab. Select the alternate addresses of a company that's set up for the company in this field, if required. You can view the companyu name in the **Name** field, which is under the **Company information** field group. 
+3. Click the **Tax information** tab. Select the alternate addresses of a company that's set up for the company in this field, if required. You can view the company name in the **Name** field, which is under the **Company information** field group. 
 
 4. View the nature of assessee category of the vendor or customer in the **Nature of assessee** field, which is under the **Withholding tax** field group. In the **Tax Account Number** (**TAN**) field, view the TAN of the selected company name that's displayed.  
 
