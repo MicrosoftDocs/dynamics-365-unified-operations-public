@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
@@ -74,3 +73,6 @@ The JSON Endpoint is at `https://host_uri/api/services/service_group_name/servic
 `https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
 
 Code examples for consuming JSON services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

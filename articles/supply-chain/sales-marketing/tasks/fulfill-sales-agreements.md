@@ -17,12 +17,11 @@ ms.search.form: SalesAgreementListPage, SalesAgreement, SalesAgreementGenerateRe
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -93,3 +92,6 @@ This procedure shows you how to fulfill a sales agreement by associating sales o
 23. Click Attached sales agreement.
 24. Click the Fulfillment tab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

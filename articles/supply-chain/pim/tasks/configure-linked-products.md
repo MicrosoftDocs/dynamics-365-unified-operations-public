@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -44,3 +43,6 @@ This procedure walks through configuring linked products. This procedure uses th
 10. In the Quantity field, enter a number.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

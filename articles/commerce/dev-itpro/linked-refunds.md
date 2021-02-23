@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Linked refunds - Refunds of previously approved and confirmed transactions
+title: Linked refunds of previously approved and confirmed transactions
 description: This topic describes how to enable and use Linked refunds.
 author: josaw1
 manager: AnnBe
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -29,7 +28,7 @@ ms.dyn365.ops.version: Retail 10.0.1 update
 
 ---
 
-# Linked refunds – Refunds of previously approved and confirmed transactions
+# Linked refunds of previously approved and confirmed transactions
 
 [!include [banner](../../includes/banner.md)]
 
@@ -104,3 +103,6 @@ After the full amount is successfully refunded, the cashier can complete the tra
 
 - [Payments FAQ](payments-retail.md)
 - [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

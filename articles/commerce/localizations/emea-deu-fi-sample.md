@@ -17,12 +17,11 @@ ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang:
 ms.reviewer: josaw
-ms.search.scope: Retail
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Germany
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 10.0.12
 
@@ -33,9 +32,9 @@ ms.dyn365.ops.version: 10.0.12
 
 ## Introduction
 
-To meet local fiscal requirements for cash registers in Germany, the Microsoft Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) solution from [EFSTA](https://www.efsta.eu/at/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate computer that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
+To meet local fiscal requirements for cash registers in Germany, the Microsoft Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://www.efsta.eu/de/fiskalloesungen/deutschland) solution from [EFSTA](https://www.efsta.eu/de/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate computer that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
-Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](https://www.efsta.eu/at/kontakt).
+Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](https://www.efsta.eu/de/kontakt/kontakt).
 
 ## Scenarios
 
@@ -496,3 +495,6 @@ The following settings are added:
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds (ms), that the driver will wait for a response from the fiscal registration service.
 - **Show fiscal registration notifications** – If this parameter is turned on, notifications from the fiscal service will be shown as user messages at the POS.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

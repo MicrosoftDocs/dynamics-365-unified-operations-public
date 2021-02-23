@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Spain
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -50,3 +49,6 @@ This topic provides links to documentation resources for Spain.
 - [Sales and purchase cycles](emea-esp-sales-purchase-cycle.md)
 - [Special entries and opening sheets](emea-esp-opening-sheets-spain.md)
 - [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](emea-esp-sii.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

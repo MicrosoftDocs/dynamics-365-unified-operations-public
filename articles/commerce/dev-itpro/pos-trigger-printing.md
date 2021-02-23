@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -168,14 +167,19 @@ The following table lists the available triggers and denotes whether they can be
 | PostCreatePackingSlipTrigger	| Non-Cancelable 	 | Executed after the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
 | PostReturnInvoicedSalesLinesTrigger	| Non-Cancelable 	 | Executed after one or more invoices selected for return.|
 | PreResendEmailReceiptTrigger (10.0.13)	| Cancelable 	 | Executed before sending the email from the Show journal view.|
+| PreRecallCustomerQuoteTrigger (10.0.18)	| Cancelable 	 | Executed before the customer quote is recalled from the recall order view.|
+| PostRecallCustomerQuoteTrigger (10.0.18)	| Non-Cancelable 	 | Executed after the customer quote is recalled from the recall order view.|
 
 
 
 ## Shift triggers
-| Trigger              | Type           | Description                                             |
-|----------------------|----------------|---------------------------------------------------------|
-| PostOpenShiftTrigger | Non-cancelable | This trigger is executed after the new shift is opened. |
-| PreCloseShiftTrigger | Cancelable | This trigger is executed before the shift is closed. |
+
+| Trigger              | Type           | Description                                             | Release    |
+|----------------------|----------------|---------------------------------------------------------|--------------|
+| PostOpenShiftTrigger | Non-cancelable | This trigger is executed after the new shift is opened. | 	|
+| PreCloseShiftTrigger | Cancelable | This trigger is executed before the shift is closed. |	|
+| PreResumeShiftTrigger | Cancelable | This trigger is executed before the shift is resumed. |10.0.16	|
+| PostResumeShiftTrigger | Non-cancelable | This trigger is executed after the shift is resumed. | 10.0.16 |
 
 ## Tax override triggers
 
@@ -224,6 +228,13 @@ The following table lists the available triggers and denotes whether they can be
 |----------------------|----------------|---------------------------------------------------------|--------------------------|
 | PreCreateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is created (executed after the order input). | 10.0.15 |
 | PreUpdateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is updated. | 10.0.15 |
+
+## Stock count triggers
+
+| Trigger              | Type           | Description                                             | Release    |
+|----------------------|----------------|---------------------------------------------------------|--------------|
+| PreAdjustStockCountLineQuantityTrigger | Cancelable | This trigger is executed before the stock count for a line is adjusted. |10.0.16	|
+| PreSaveStockCountJournalTrigger | Cancelable | This trigger is executed before the stock count journal is saved. | 10.0.16 |
 
 ## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
@@ -712,3 +723,6 @@ This section explains how to override the existing CRT request to print a receip
 2. After the POS starts, sign in to POS and add an item to a transaction.
 3. Suspend the transaction.
 4. The custom receipt should print.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

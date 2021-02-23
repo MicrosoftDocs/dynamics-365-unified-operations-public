@@ -17,12 +17,11 @@ ms.search.form: TaxReportExtraFieldsBE
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273103
 ms.search.region: Belgium
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 
@@ -136,3 +135,6 @@ The information in the details section includes the journal, voucher, date, vend
 To print the **Purchase sales tax transactions** report, click **Tax** &gt; **Inquiries and reports** &gt; **Sales tax reports** &gt;**Purchase sales tax transactions**.
 
 ![Purchase sales tax transactions generated report](media/8_Purchase_sales_tax_transactions.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

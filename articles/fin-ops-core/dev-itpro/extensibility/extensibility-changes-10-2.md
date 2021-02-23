@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -206,3 +205,6 @@ The following methods have been refactored to support extensibility:
 - **Retail channel:** Shipping view extension controller class.
 - **Retail channel:** Support for the AppBar button in AddressAddEditView.
 - **Retail channel:** Support for overriding the Bank deposit amount key in the dialog box.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

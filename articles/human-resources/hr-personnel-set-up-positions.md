@@ -4,7 +4,7 @@
 title: Set up positions
 description: Positions are an important element of the lower level of an organization hierarchy. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -17,7 +17,7 @@ ms.search.form: DefaultDashboard, HcmWorkforceWorkspace, HcmWorkerActivityChart,
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations 
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -27,6 +27,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up positions
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -70,3 +72,6 @@ Positions are an important element of the lower level of an organization hierarc
 30. In the Department field, enter or select a value.
 31. Click Save.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

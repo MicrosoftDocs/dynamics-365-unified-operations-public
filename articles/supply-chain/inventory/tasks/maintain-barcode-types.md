@@ -17,7 +17,6 @@ ms.search.form: BarcodeSetup, InventParameters
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -48,3 +47,6 @@ This procedure shows you how to set up a new barcode definition which can then b
 12. Click Save.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

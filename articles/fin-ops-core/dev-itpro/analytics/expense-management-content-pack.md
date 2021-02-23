@@ -3,7 +3,7 @@
 
 title: Expense management Power BI content
 description: This topic describes what is included in the Expense management Power BI content pack.
-author: RyanSand
+author: panolte
 manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form: TrvExpenseWorkspace, ExpenseWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 
@@ -100,3 +99,6 @@ The content includes a set of report pages. Each page consists of a set of metri
 | Employee Statistics | Expense reports by cost type            |
 |                     | Personal expenses                       |
 |                     | Expense reports by statistics group     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

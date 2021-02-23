@@ -4,7 +4,7 @@
 title: Process compensation
 description: Compensation processing allows you to calculate new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Process compensation
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Compensation processing allows you to calculate new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance. This article covers the basic flow of compensation processing for fixed compensation plans without factoring an employee's performance.
 
@@ -50,7 +52,7 @@ Click the **Add** button in the **Plans** tab to add a compensation plan to the 
 
 Save the record, then click the **Add** button in the **Actions** tab to add fixed compensation actions for the selected plan. Use the **Enable recommendation** option to enter an amount that's different than the calculated guideline increase for the action. To calculate  an action that's based on the result of the previous action to link multiple compensation actions, mark the **Use previous result** option, Fixed compensation actions are types of compensation logic that you can give descriptive names to. For Grade and Band plans, you can only add fixed compensation actions that are of the following Types:
 
-| Fixed compensationaction type | Functionality                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Fixed compensation action type | Functionality                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Equity                        | Equity actions will compare the employee’s rate of pay as of the cycle end date with the lowest reference point for the level indicated on the employee’s job. If the employee’s pay rate is less than the minimum reference point, the increase needed to bring the employee to the minimum point in the range will be calculated.                                                                                |
 | Merit                         | Merit actions will calculate an increase based on the employee’s pay rate as of the cycle end date and the increase percent found in the fixed increase budget for the employee’s department, labor union, and location.                                                                                                                                                                                         |
@@ -83,3 +85,6 @@ When the compensation amounts have been reviewed for an employee and any adjustm
 When one or more employee events have had their status updated to Approved, they can be loaded to the employees’ fixed compensation records. This can be done either by selecting each employee event one at a time and clicking the **Load employee compensation** button on the **Employee results** page, or by clicking **Load compensation** on the **Process results** page to load all approved employee events at once.
 
 Clicking **OK** in the **Load compensation** dialog will add the non-zero compensation action lines to the **Employee fixed compensation** page.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Process life event changes
 description: Process life event changes in Microsoft Dynamics 365 Human Resources for life event changes.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Process life event changes
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Process life event changes in Microsoft Dynamics 365 Human Resources for two life event changes:
 
 - Birthday changes
@@ -57,3 +59,6 @@ Process life event changes in Microsoft Dynamics 365 Human Resources for two lif
    4. Select **OK**. The process will run with the parameters you set.
 
 4. Select **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

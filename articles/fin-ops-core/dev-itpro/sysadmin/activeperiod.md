@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -58,3 +57,6 @@ With the release of Platform update 21, an additional level of control over when
 
 ![Assign Active Period](./media/assign-active-period.png)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

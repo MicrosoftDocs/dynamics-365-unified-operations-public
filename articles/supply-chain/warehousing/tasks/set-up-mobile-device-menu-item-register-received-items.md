@@ -13,16 +13,15 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: WHSRFMenuItem, WHSRFMenu   
+ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -62,3 +61,6 @@ You can use this guide in demo data company USMF. This procedure is intended for
 6. Select **Save**.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

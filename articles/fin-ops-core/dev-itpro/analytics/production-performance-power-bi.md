@@ -2,7 +2,7 @@
 # required metadata
 
 title: Production performance Power BI content
-description: This topic describes what is included in the Production performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+description: This topic describes what is included in the Production performance Power BI content.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
@@ -17,7 +17,6 @@ ms.search.form:  ProductionPerformancePowerBI
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -133,3 +132,6 @@ The following table shows the key dimensions that are used as filters to slice t
 | Entities                  | Id and Name                                                   |
 | Resources                 | Resource ID, Resource name, Resource type, and Resource group |
 | Products                  | Product number, Product name, Item ID, and Item group         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

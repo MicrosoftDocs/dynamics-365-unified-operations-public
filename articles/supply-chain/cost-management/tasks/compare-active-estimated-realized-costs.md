@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -42,3 +41,6 @@ This procedure shows how to view reasons for high production variance for a prod
 6. Click View cost comparison.
 7. Click Close.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

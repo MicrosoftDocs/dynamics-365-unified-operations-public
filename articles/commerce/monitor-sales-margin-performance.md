@@ -18,7 +18,6 @@ ms.search.form: RetailSales
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
@@ -53,3 +52,6 @@ Additionally, two unique reports that take advantage of hierarchical grid struct
 - **Category and product management** workspace &gt; **Retail and Commerce** &gt; **Product and categories** &gt; **Store management** &gt; **Reports**
 - **Pricing and discount management** workspace &gt; **Retail and Commerce** &gt; **Pricing and discounts** &gt; **Store management** &gt; **Reports**
 - **Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

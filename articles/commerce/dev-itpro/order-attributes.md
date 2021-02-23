@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -389,3 +388,6 @@ You can find the full sample code in the Retail SDK at Retail SDK\\POS\\Extensio
         return isB2B;
     } } } }
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

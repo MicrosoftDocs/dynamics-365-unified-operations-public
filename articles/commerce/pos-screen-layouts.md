@@ -18,7 +18,6 @@ ms.search.form: RetailTillLayout
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
@@ -32,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 # POS user interface visual configurations
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 The user interface (UI) of the Microsoft Dynamics 365 Commerce point of sale (POS) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and users. This topic provides information about those configuration options.
 
@@ -119,6 +118,9 @@ In Full POS layouts, the placement of button grids is specified in the screen la
 In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the highest number. They can be accessed on the **Actions** menu.
 
 ![Compact layout button grids](../commerce/media/Compact-View-Button-Grids.png)
+
+> [!NOTE]
+> The button sizes in the designer will scale to fit the size of the window, therefore they may not accurately reflect the actual buttons rendered in POS. To best simulate the button grid layout, adjust the designer windows to the same size as the POS.
 
 ### Images
 
@@ -208,3 +210,6 @@ The button grid designer lets you configure button grids that can be used on the
 ## Additional resources
 
 [Install the Retail point of sale (POS) layout designer](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

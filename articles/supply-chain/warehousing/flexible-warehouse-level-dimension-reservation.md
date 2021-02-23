@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSReservationHierarchy 
+ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -240,6 +239,9 @@ If a warehouse work item consists of lines that equal a complete pallet and have
 ![Mobile device menu item where the Handle by license plate option is set to Yes](media/Handle-by-LP-menu-item.png)
 
 Because the **Handle by license plate** functionality doesn't support work that covers multiple pallets, it's better to have a separate work item for different license plates. To use this approach, add the **Order-committed license plate ID** field as a work header break on the **Work template** page.
+
+> [!NOTE]
+> For the order-committed work creation process, an "order-committed inventory dimension" value will be assigned to the picking work lines, and it won't be possible to view the license plate value directly. Only the *User directed* process is supported when setting up a mobile device menu item.
 
 ## Example scenario: Set up and process an order-committed license plate reservation
 
@@ -858,3 +860,6 @@ The following tables provide an overview that shows how the system handles order
     - Transfer orders and raw material picking
 
 - The container consolidation rule for packing by directive unit has limitations. For order-committed reservations, we recommend that you not use container build templates where the **Pack by directive unit** field is enabled. In the current design, location directives aren't used when warehouse work is created. Therefore, only the lowest unit in the unit sequence group (the inventory unit) is applied during the containerization wave step.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

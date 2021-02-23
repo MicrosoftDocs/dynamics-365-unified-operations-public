@@ -18,7 +18,6 @@ ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
@@ -56,3 +55,6 @@ When paying by cash in POS, the user can use the note denominations to quickly e
 
 - **Greater or equal to amount due** – By default, POS will only show the note denominations that are greater than the amount due, which allows for one-touch tendering. For example, if the amount due is $7.50, POS would show the following denominations: $10, $20, $50, and $100. Touching any of these amounts will automatically tender the sale for that amount. The $1 and $5 notes are not shown since these amounts are less than the amount due.
 - **All denominations** – Select this option to always show all note denominations in POS, regardless of the amount due. This means that the user can use a combination of notes to reach the amount due. For example, if the amount due is $25.00, the user can choose $20 and $5 to complete the sale.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

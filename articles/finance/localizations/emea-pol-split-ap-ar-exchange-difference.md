@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 414136
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-04-01
 
@@ -235,3 +234,6 @@ In this example:
 
 - 10.00 (= 11.90 × 80.00 ÷ 95.20) is the exchange difference that is related to the net value of the invoice.
 - 1.90 (= 11.90 – 10.00) is the exchange difference that is related to the tax amount of the invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

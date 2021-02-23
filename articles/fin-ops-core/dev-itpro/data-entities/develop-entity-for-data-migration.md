@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83692
 ms.assetid: ebe9c79a-029d-4f03-9bd8-d17e805baa89
@@ -209,3 +208,6 @@ In this exercise, you will use a new set of files to import data through the exi
 - The **Execution summary** page shows that five records were created, three records were updated, and two records have errors.
 - In the staging view, two records have errors.
 - After you fix the records and run the import again, the staging view shows that all records are completed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

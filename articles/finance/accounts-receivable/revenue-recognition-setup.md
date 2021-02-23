@@ -17,7 +17,6 @@ ms.search.form: Customer
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -35,6 +34,8 @@ A new **Revenue recognition** module has been added that includes menu items for
 
 > [!NOTE]
 > The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
+
+> Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions created in Commerce channels.
 
 The **Revenue recognition** module has the following setup options:
 
@@ -197,3 +198,6 @@ Revenue recognition can also be used for sales orders that are created through a
 
 - **Deferred invoice revenue** (under **Revenue accounts**) – Enter the main account for the revenue price that posts to deferred revenue (instead of revenue). The revenue price is deferred if the sales order line has a revenue schedule.
 - **Deferred cost** (under **Cost accounts**) – Enter the main account for the cost of goods sold amount that posts to deferred cost of goods sold if the revenue is also deferred.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

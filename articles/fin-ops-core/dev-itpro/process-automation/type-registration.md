@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -213,3 +212,6 @@ The **ProcessSchedulelTypeRegistrationParameterTabItem** class represents inform
 | `public LabelId parmCaption(LabelId _caption = caption)` | The caption on the parameter page. |
 | `public LabelId parmHelpText(LabelId _helpText = helpText)` | The Help text for the parameter page. |
 | `public static ProcessScheduleTypeRegistrationParameterTabItem newFromMenuItem(MenuItemName _menuItemName)` | Constructor that initializes the instance with the specified menu item name. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

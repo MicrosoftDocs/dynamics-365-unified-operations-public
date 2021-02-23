@@ -20,7 +20,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -46,3 +45,6 @@ The following illustration shows what the form caption looks like in a browser.
 
 > [!NOTE]
 > None of the other properties on the form design can be changed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

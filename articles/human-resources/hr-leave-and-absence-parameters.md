@@ -4,8 +4,8 @@
 title: Configure leave and absence parameters
 description: Define human resources parameters for leave and absence in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/20/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure leave and absence parameters
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Before you set up leave and absence plans in Dynamics 365 Human Resources, it's a good idea to verify the settings for all related human resources parameters, including:
 
 - Number sequence for leave requests
@@ -52,6 +54,19 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 5. On the **Employee self service** tab, indicate whether managers can enter leave and absence requests on behalf of their employees.
 
 7. Select **Save**.
+
+>[!IMPORTANT]
+>Viewing leave and absence across companies is currently in preview. You'll need to enable it in your **Sandbox** environment to display the option for leave and absence. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).
+
+## View and change Human resources shared parameters
+
+1. On the **Personnel management** page, select the **Links** tab.
+
+2. Under **Setup**, select **Human resources shared parameters**.
+
+3. On the **Advance access** tab, select **Yes** for **Enable cross company leave view** to allow leave to be viewed across company.
+
+4. Select **Save**.
 
 ## View and change leave and absence parameters
 
@@ -84,3 +99,6 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

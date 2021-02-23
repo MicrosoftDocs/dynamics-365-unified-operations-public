@@ -18,13 +18,12 @@ ms.technology:
 audience: IT Pro, Developer, Application user
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: sericks
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 
 
@@ -101,3 +100,6 @@ For details about purchasing Premier support, contact your Microsoft Account tea
 - [OSPT of Dynamics 365 (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
 - [Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-welcome)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

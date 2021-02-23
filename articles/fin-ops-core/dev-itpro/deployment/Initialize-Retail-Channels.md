@@ -5,7 +5,7 @@ title: Initialize Commerce Scale Unit (cloud)
 description: This topic explains how to initialize Commerce Scale Unit (cloud).
 author: AamirAllaq
 manager: AnnBe
-ms.date: 08/10/2020
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang:
 ms.reviewer: sericks
-ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm:
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -43,6 +42,17 @@ This topic describes the steps for initializing Commerce Scale Unit (cloud).
 
 1. Deploy a Tier-2 sandbox or production environment that has application version 8.1.2.x or later.
 2. If you require more than 1 RCSU per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for multiple Commerce Cloud Scale Units** and indicate the environment ID, number of CSUs, and corresponding datacenter regions. The request will be completed within five business days. If you do not require multiple CSUs per environment, you do not need to create a support request. 
+3. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use Commerce Scale Unit.
+
+- RetailBasic
+- RetaileCommerce - If you plan to use E-Commerce for Dynamics 365 Commerce.
+- RetailGiftCard - If you plan to use gift cards.
+- RetailInvent - If you plan to use inventory.
+- RetailModernPos - If you plan to use point of sale (POS).
+- RetailReplenishment - If you plan to use replenishments.
+- RetailScheduler
+- RetailStores - If you plan to use POS.
+
 
 ## Region availability
 Commerce Scale Unit is available for deployment in the following regions.
@@ -169,3 +179,6 @@ Here is what occurs after initialization is completed:
 - Stand-alone hardware station instances will continue to work.
 - POS channel–side reports will be reset and won't show data from before the initialization.
 - Show journal operation will also be reset and won't show data from before the initialization.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

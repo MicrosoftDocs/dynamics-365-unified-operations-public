@@ -4,7 +4,7 @@
 title: Request time off
 description: Request time off in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Request time off
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can submit requests for time off, view your vacation and leave balances, and see the status of your leave requests in Dynamics 365 Human Resources.
 
@@ -67,3 +69,6 @@ When updating an existing time off request, you can add an attachment. You can a
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

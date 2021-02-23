@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure PowerBI.com integration
-description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
+description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com.
 author: MilindaV2
 manager: AnnBe
 ms.date: 05/12/2020
@@ -18,7 +18,6 @@ ms.search.form: PowerBIConfiguration
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
@@ -51,6 +50,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 - You must have at least one dashboard and one report in your Power BI account. Although the dashboard and report aren't required for this configuration step, you might not be able to validate the configuration if you don't have any content in your PowerBI.com account.
 - You must be an administrator for your Microsoft Azure Active Directory (Azure AD) account. If you aren't the administrator, an administrative user must perform this configuration step for you.
 - The Azure AD domain that is configured must be the same domain that you used for your PowerBI.com account. For example, if you provisioned the application in the Contoso.com domain, you must have Power BI accounts in that domain, such as `Tim@ContosoAX7.onmicrosoft.com`.
+- Users navigating to these pinned tiles must have a valid Power BI.com license.
 
 ## Registration process 
 
@@ -129,4 +129,8 @@ In the procedure above, after you click **Accept**, you might receive the follow
 | You can't access the application.                           | You probably didn't select all the check boxes under **Step 8 in the Registration process** during the registration process. Start Power BI, and re-run the registration process. |
 | The Power BI tiles page is empty (no content is shown).     | Your PowerBI.com account might not have a dashboard or any tiles. Add a dashboard, such as a sample dashboard, and try to pin a tile again. |
 | Error when authorizing Power BI                             | On the Azure Admin dashboard, under **Users and Groups \> User settings**, make sure that the **Users can consent to apps accessing company data on their behalf** option is set to **Yes**. |
+| Sorry, something went wrong. The authentication process was not successful. Please contact your system administrator.  | This may occur in cases where service keys have expired. We recommend performing the registration process above, starting with step 3. When complete, be sure to update the PowerBI.com settings at **AX client > System administration > Set up > PowerBI.com integration**. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272853
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
@@ -158,3 +157,6 @@ The following table includes links to resources that can help you implement both
 
 ## Troubleshooting
 [Mobile platform resources](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

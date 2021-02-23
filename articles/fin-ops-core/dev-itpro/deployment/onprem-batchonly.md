@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -222,3 +221,6 @@ For production environments, there should be at least three nodes of each type.
      > [!IMPORTANT]
     > This step causes downtime so be sure that your environment can be unavailable for some time. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

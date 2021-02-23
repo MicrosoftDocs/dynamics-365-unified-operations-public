@@ -18,7 +18,6 @@ ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269544
 ms.assetid: 92b0cf1b-51ec-4611-bf8e-db4cd10ffed0
@@ -102,3 +101,6 @@ The following fields on the **Product information** page are required for a Braz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

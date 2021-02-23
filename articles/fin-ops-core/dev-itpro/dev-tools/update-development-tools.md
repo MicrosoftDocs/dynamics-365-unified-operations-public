@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 33571
 ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
@@ -64,3 +63,6 @@ In order to install a new version of the development tools, you'll need to unins
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

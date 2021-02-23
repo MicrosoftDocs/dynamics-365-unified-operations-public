@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -80,3 +79,6 @@ This Tech Talk video provides an introduction servicing (applying code updates, 
  For more information, see: 
 - [Refresh database](../database/database-refresh.md)
 - [Set up technical support for Finance and Operations apps](../lifecycle-services/support-experience.md) 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

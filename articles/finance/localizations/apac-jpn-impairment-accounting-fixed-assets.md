@@ -17,7 +17,6 @@ ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28811
 ms.search.region: Japan
@@ -76,3 +75,6 @@ Yes, you can generate the following reports that contain information about impai
 - [Setup impairment accounting common parameters and posting profile](./tasks/impairment-accounting.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

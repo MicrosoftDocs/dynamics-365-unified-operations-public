@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221594
 ms.assetid: dddc99ae-56ae-48df-856a-131079c17dcb
@@ -70,3 +69,6 @@ Use the following steps to add the bank statement import entity to support the M
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

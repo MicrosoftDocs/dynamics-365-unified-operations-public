@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24161
 ms.assetid: d94f46f0-cde2-47c3-8994-c79e609eabce
@@ -79,4 +78,7 @@ Generated code is based on the SysTest Framework and FormAdaptors. FormAdaptors 
 
 ## Advanced Options
 
-For advanced options to categorize and filter tests for execution, see [systest-filtering.md]
+For advanced options to categorize and filter tests for execution, see [SysTest Filtering using class and method attributes](systest-filtering.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

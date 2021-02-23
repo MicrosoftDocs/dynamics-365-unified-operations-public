@@ -2,7 +2,7 @@
 # required metadata
 
 title: Horizontal Fields and Buttons Group subpattern
-description: This article provides information about the Horizontal Fields and Buttons Group form subpattern. This subpattern is used when actions must be defined for an individual field on a form.
+description: This article provides information about the Horizontal Fields and Buttons Group subpattern, which is used when actions must be defined for an individual field.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12464
 ms.assetid: 56b16f26-d4d3-4052-9ebc-0878b09cc00d
@@ -112,3 +111,6 @@ This section will have answers to frequently asked questions that are related to
 **SalesTable** 
 
 [![Example of form](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

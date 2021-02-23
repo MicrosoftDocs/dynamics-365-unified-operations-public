@@ -3,7 +3,7 @@
 
 title: Create purchase orders
 description: This article describes the process and options when you manually create a purchase order.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,19 +13,18 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -102,3 +101,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

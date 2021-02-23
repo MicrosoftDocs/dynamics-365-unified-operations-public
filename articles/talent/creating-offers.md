@@ -4,7 +4,7 @@
 title: Create, approve, and sign offers in Attract
 description: This topic details how to create, approve, and sign an offer for a candidate using Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -165,3 +164,6 @@ An offer can be withdrawn from a candidate at any point in time for various reas
 ## Closing an offer 
 
 When an offer has been accepted, declined, or withdrawn with no further actions needed, you can close the offer so that no further edits can be made to this offer package.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

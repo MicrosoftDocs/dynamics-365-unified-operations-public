@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18751
 ms.assetid: ceeb6463-00d4-41f9-88c3-61791020a9f5
@@ -106,3 +105,6 @@ You can view a report of your estimated weekly peak load and the operating sites
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -12,17 +12,15 @@ ms.service: dynamics-ax-applications
 ms.technology:  
  
 # optional metadata 
- 
-# ms.search.form:   
+ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -63,3 +61,6 @@ This topic shows how to use the load planning workbench to create a load for a s
 5. Select **Assign**.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

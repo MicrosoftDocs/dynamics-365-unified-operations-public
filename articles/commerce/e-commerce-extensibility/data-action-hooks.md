@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -108,3 +107,6 @@ createDataActionHook({
 [Data action overrides](data-action-overrides.md)
 
 [Data action cache settings](data-action-cache-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

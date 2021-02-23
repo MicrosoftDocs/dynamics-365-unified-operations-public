@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
@@ -129,3 +128,6 @@ To generate and validate the text file for the SPED ECD statement, follow these 
 ## Additional resources
 
 [Generate the Sintegra tax statement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bra-parameters-tax/articles/financials/localizations/latam-bra-set-up-parameters-for-tax-statements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

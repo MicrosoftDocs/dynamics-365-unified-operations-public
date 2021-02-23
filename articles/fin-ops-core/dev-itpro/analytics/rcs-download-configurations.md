@@ -18,7 +18,6 @@ ms.search.form: ERSolutionRepositoryTable
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -74,3 +73,6 @@ To complete the steps in this example, you must first complete the steps in [Cre
 ## Additional resource
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

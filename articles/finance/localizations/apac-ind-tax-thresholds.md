@@ -20,8 +20,7 @@ ms.reviewer: kfend
 # ms.suite: 
 # ms.tgt_pltfrm: 
 ms.search.region: India
-# ms.search.scope: 
-# ms.search.industry: 
+# # ms.search.industry: 
 ms.author: riluan
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
@@ -80,3 +79,6 @@ When you create a withholding tax code that uses a threshold, leave the **Value*
 ## Don't see your question here?
 
 Comment on this topic to let us know what question you were expecting to get answered here.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,16 +13,15 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchEditLines, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine   
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -85,3 +84,6 @@ This topic demonstrates how to create a direct delivery for a sales order. You u
     - The Direct delivery page acts as a workbench that provides the purchasing agent with an overview of all the sales order lines that are to be direct delivered and it allows them to create the respective purchase orders. In addition, they can view the open direct delivery orders and the confirmed orders on the Confirmation and Delivery tabs.  
     - After you have created a direct delivery order, it automatically moved to the Confirmation tab. You can choose to confirm the order directly from this page. When the purchase is confirmed, it will automatically move to the Delivery tab, from which you can registered its receipt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

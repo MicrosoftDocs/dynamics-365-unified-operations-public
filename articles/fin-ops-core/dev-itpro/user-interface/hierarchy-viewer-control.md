@@ -2,7 +2,7 @@
 # required metadata
 
 title: HierarchyViewer control
-description: This article provides information about the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
+description: This article describes the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31081
 ms.assetid: 09358d27-6edc-420a-a7b6-83785b8ba0c6
@@ -115,3 +114,6 @@ You can't change node visuals. The intended design is for the control to offer a
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

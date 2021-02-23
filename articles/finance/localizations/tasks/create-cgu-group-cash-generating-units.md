@@ -17,12 +17,11 @@ ms.search.form: AssetImpairmentCashGenUnitGroup_JP, SysQueryForm, AssetImpairmen
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -103,3 +102,6 @@ This procedure was created using the demo data company JPMF.
     * Only active CGU groups are allowed to run recognition tests.  
 2. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

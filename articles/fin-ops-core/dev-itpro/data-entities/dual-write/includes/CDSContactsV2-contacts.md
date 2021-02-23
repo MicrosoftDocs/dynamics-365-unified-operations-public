@@ -1,12 +1,12 @@
 ## CDS Contacts V2 to contacts
 
-This template synchronizes data between Finance and Operations apps and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Dataverse.
 
-Source filter: (AssociatedContactType = 1)
+Source filter: `(AssociatedContactType = 1)`
 
 Reversed source filter: msdyn_contactforvendor eq true and msdyn_sellable eq false and msdyn_contactpersonid ne ''
 
-Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+Finance and Operations field | Map type | Customer engagement field | Default value
 ---|---|---|---
 CONTACTPERSONPARTYNUMBER | = | msdyn_partynumber | 
 ASSOCIATEDCONTACTTYPE | << | none | Vendor

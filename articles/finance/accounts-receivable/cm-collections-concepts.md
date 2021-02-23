@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -129,3 +128,6 @@ You can process NSF payments by selecting **NSF payment** on the **Collections**
 [Credit holds for sales orders](./cm-sales-order-credit-holds.md)
 
 [Customer credit management periodic tasks](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@
 
 title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
-author: sericks007
+author: PeterRFriis
 manager: AnnBe
 ms.date: 11/27/2019
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: perahlff
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
 
@@ -45,7 +44,6 @@ This topic will help you plan and prepare for your on-premises deployment.
 The features in cloud deployments and on-premises deployments differ. These differences will affect your planning. The differences are described in the following topics:
 - [Deployment options](choose-deployment-type.md)
 - [Comparison of cloud and on-premises features](../../fin-ops/get-started/cloud-prem-comparison.md)
-- [Features not implemented in on-premises deployments](../../fin-ops/get-started/features-not-implemented-on-prem.md)
 - [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md)
 
 ## How LCS is used with on-premises deployments
@@ -239,3 +237,6 @@ Additional services or components can be configured to extend an on-premises dep
 After you’ve completed the planning activities mentioned in this topic, you can begin the procedures listed in the [Onboard](on-premises-deployment-landing-page.md#onboard) section of the [On-premises deployment home page](on-premises-deployment-landing-page.md).
 
 Be sure to refer to the [On-premises deployment home page](on-premises-deployment-landing-page.md) throughout your implementation for more information about planning, deployment, maintenance, and troubleshooting.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

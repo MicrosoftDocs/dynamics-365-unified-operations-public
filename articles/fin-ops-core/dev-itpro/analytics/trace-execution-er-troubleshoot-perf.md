@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
@@ -383,3 +382,6 @@ Notice that the web browser offers a zip file for download. This file contains t
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

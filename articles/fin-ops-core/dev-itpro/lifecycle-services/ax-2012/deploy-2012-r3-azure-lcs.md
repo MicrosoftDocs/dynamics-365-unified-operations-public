@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18231
 ms.assetid: 18a1ba1e-5c75-4cff-95f7-ec0beef0a28e
@@ -148,3 +147,6 @@ To deploy an environment that can be configured for high availability, see:
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

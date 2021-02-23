@@ -15,7 +15,6 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
@@ -140,3 +139,6 @@ Find the right online training, in person workshops, and events for your role as
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -276,6 +275,8 @@ export default ProductFeature;
 
 [Data actions overview](data-actions.md)
 
+[Data action cache options](data-action-cache.md)
+
 [Test data actions with mocks](test-data-action-mocks.md)
 
 [Page load data actions](page-load-data-action.md)
@@ -283,3 +284,6 @@ export default ProductFeature;
 [Event-based data actions](event-based-data-actions.md)
 
 [Core data actions](core-data-actions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

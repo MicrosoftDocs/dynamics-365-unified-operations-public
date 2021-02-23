@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11354
 ms.assetid: 53d1f66a-1e69-4548-9fd2-a87a3b370882
@@ -119,3 +118,6 @@ If these classes don't appear as you expected, examine the usage of your binding
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

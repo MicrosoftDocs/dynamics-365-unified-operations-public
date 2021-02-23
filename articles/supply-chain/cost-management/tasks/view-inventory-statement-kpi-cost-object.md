@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -41,3 +40,6 @@ The demo data company used to create this procedure is USMF. This procedure is i
 7. In the From date field, enter a date.
 8. In the To date field, enter a date.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

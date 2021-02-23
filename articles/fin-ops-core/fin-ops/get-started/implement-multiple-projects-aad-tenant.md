@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Multiple LCS projects and production environments on one Azure AD tenant
+title: Multiple LCS projects and environments on one Azure AD tenant
 description: This topic explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -27,7 +26,7 @@ ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ---
 
-# Multiple LCS projects and production environments on one Azure AD tenant
+# Multiple LCS projects and environments on one Azure AD tenant
 
 [!include [banner](../includes/banner.md)]
 
@@ -81,3 +80,6 @@ If your solution requires multiple LCS projects on the same Azure AD tenant, all
 If your implementation includes China deployment/rollout, be informed that Dynamics 365 Finance online deployment became available in Mainland China starting in April 2019. For more information, see [Finance and Operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China and the services  include a physically separated instance of a cloud service with a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet. 
 
 This is a single organization in multiple clouds with different tenant (Azure Active Directory). The advantages and disadvantages of multi-Lifecycle Services projects or production environments described above are still applicable, but the licensing requirement and requesting procedure are different. Work with your Microsoft Account Executive or your implementation partners for any process assistance.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

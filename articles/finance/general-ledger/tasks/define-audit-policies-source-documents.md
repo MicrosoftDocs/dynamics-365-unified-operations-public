@@ -3,7 +3,7 @@
  
 title: Define audit policies for source documents
 description: This topic explains how to set up and run audit policy rules. 
-author: ryansandness
+author: panolte
 manager: AnnBe 
 ms.date: 08/20/2019
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPa
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -91,3 +90,6 @@ This topic explains how to set up and run audit policy rules. The example uses e
 57. Expand the **Associations** section.
 58. In the list, find and select the desired record.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

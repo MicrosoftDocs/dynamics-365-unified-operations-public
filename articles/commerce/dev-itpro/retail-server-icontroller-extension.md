@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)
+title: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 description: This topic explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -30,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.11
 
 ---
 
-# Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)
+# Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 
 [!include [banner](../includes/banner.md)]
 
@@ -55,14 +54,17 @@ The following illustration shows the class structure of the extension.
 
 ![Commerce Scale Unit extension class diagram](media/RSExtensionClass.png)
 
+> [!NOTE]
+> Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
+
 ## Create a new Retail Server API
 
 1. Create the CRT extension. You must create the CRT extension before you create the Retail Server extension. A Retail Server API should have no logic except logic that calls the CRT with the parameters.
-2. Create a new C# class library project that uses the Microsoft .NET Framework version 4.6.1, Alternatively, use one of the Retail Server samples in the Retail SDK as a template.
+2. Create a new C# class library project that uses the Microsoft .NET Framework version netstandard 2.0 as the target framework. Alternatively, use one of the Retail Server samples in the Retail SDK as a template.
 3. In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request, response, and entities.
 4. In the Retail Server extension project, add the **Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts** package using the NuGet package manager. The NuGet packages can be found in the **RetailSDK\\pkgs** folder.
-5. Create a new controller class and extend it from **IController**. This controller class will contain the method that the Retail Server API must expose.
-6. Inside the controller class, add methods to call the CRT request. Don’t extend the new controller class from existing controller classes such as **CustomerController** and **ProductController**. Extension classes must extend only the **IController** class.
+5. Create a new public controller class and extend it from **IController**. This controller class will contain the method that the Retail Server API must expose, the controller class must be public.
+6. Inside the controller class, add methods to call the CRT request. Don’t extend the new controller class from existing controller classes such as **CustomerController**, **SalesOrdersController**, or **ProductController**. Extension classes must extend only the **IController** class.
 7. Add the **RoutePrefix** attribute on the controller class (Controller class name).
 
     ```csharp
@@ -178,7 +180,8 @@ namespace Contoso.UnboundController.Sample
 
 ```
 
-The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles that are specified in the controller method **Authorizations** attribute. The following example shows the supported authorization roles.
+The Retail Server APIs support different authorization roles. Access to the controller method is permitted based on the authorization roles that are specified in the controller method **Authorizations** attribute. The following example shows the supported authorization roles. Extension code should not use the **CommerceAuthorization** attribute instead of the **Authorizations** attribute. The **CommerceAuthorization** attribute is only supported in SDK versions earlier than 10.0.11.
+
 
 ```csharp
 // Represents the type of logon type.
@@ -214,6 +217,52 @@ public static class CommerceRoles
 }
  ```
 
+### Support paging in Retail Server APIs
+
+Starting in release 10.0.18, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
+
+The extension can pass **QueryResultSettings** to the CRT request, which the CRT request can use when there is a database query.
+
+The full sample code is available in the Retail SDK:
+RetailSDK\SampleExtensions\CommerceRuntime\Extensions.StoreHoursSample\StoreHoursDataService.cs
+RetailSDK\SampleExtensions\RetailServer\Extensions.StoreHoursSample\StoreHoursController.cs"
+
+```csharp
+
+    [HttpPost]
+        [Authorization(CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
+        public async Task<PagedResult<SampleDataModel.StoreDayHours>> GetStoreDaysByStore(IEndpointContext context, string StoreNumber, QueryResultSettings queryResultSettings)
+        {
+            var request = new GetStoreHoursDataRequest(StoreNumber) { QueryResultSettings = queryResultSettings };
+            var hoursResponse = await context.ExecuteAsync<GetStoreHoursDataResponse>(request).ConfigureAwait(false);
+            return hoursResponse.DayHours;
+        }
+
+```
+
+```csharp
+
+private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
+            {
+                ThrowIf.Null(request, "request");
+
+                using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
+                {
+                    var query = new SqlPagedQuery(request.QueryResultSettings)
+                    {
+                        DatabaseSchema = "ext",
+                        Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
+                        From = "CONTOSORETAILSTOREHOURSVIEW",
+                        Where = "STORENUMBER = @storeNumber",
+                    };
+
+                    query.Parameters["@storeNumber"] = request.StoreNumber;
+                    return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
+                }
+            }
+            
+  ```
+
 ### Register the extension
 
 1. Build the extension project, and copy the binary to the **\\RetailServer\\webroot\\bin\\Ext** folder.
@@ -238,6 +287,10 @@ public static class CommerceRoles
 2. To call the Retail Server extension in your client, you must generate the client Typescript proxy. You can then use the proxy to call your new Retail Server APIs from the client.
 
 You don't have to add or include any **EdmModelExtender** files in the extension with the Retail Server extensions APIs. The files are required only if you're using Retail SDK version 10.0.10 or earlier.
+
+### Debugging RS extension
+
+To debug the RS extension project in Visual Studio. Go to **Debug > Attach to Process**. Select w3wp.exe (the IIS process for Retail Server). If there are multiple w3wp.exe processes, use the correct process based on the process ID. The retail server process ID can be found using **IIS > Worker processes** or by using the command prompt and the tasklist command.
 
 ## Generate the Typescript proxy for POS
 
@@ -278,3 +331,6 @@ The following example shows how to update the **add** element in the **RetailPro
     </composition> 
 </retailProxyExtensions> 
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

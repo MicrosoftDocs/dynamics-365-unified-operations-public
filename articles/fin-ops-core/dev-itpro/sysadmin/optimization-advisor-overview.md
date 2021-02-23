@@ -18,13 +18,12 @@ ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: roxanad
+ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3 
 
@@ -99,3 +98,6 @@ To deactivate the evaluation of specific rules, select the opportunity that was 
 [Create rules for Optimization advisor](./create-rules-optimization-advisor.md)
 
 [Optimization advisor in Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

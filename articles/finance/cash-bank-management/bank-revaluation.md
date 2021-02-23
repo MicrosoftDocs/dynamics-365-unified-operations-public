@@ -18,13 +18,12 @@ ms.search.form: BankCurrencyRevalHistory
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10.0
 
@@ -95,3 +94,6 @@ The foreign currency revaluation transaction is also split across the dimensions
 If you must reverse the revaluation transaction, select **Reverse transaction** on the Action Pane of the **Foreign currency revaluation** page. A new foreign currency revaluation historical record is created to maintain the historical audit trail of when the revaluation occurred or was reversed.
 
 To reverse several revaluations, you must reverse the most current revaluation first. Then continue to reverse older revaluations in date order. You can then process new revaluations for the periods that you reversed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

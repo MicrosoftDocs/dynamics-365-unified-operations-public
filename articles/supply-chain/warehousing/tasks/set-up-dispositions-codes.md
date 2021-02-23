@@ -13,16 +13,15 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: WHSDispositionTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -43,3 +42,6 @@ This procedure focuses on the setup of a disposition code that can be used on a 
 6. In the Return disposition code field, type a value.
     * The return disposition code determines the remainder of the return order process for the items registered. In this example, the customer should receive a credit note. Add a returns disposition code that contains an action Credit.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

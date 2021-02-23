@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Estonia
@@ -74,3 +73,6 @@ This task walks you through creating corrective lines in a credit note for a sal
 19. Click OK.
 20. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

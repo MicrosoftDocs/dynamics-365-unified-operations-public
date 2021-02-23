@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 17771
 ms.search.region: Global
@@ -463,3 +462,6 @@ It's important to emphasize that the non-customized Retail SDK should be stored 
 For development, a new customization branch should be created. At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. It's the branch that will be used for the team's development. The version of the customization branch must be incremented at least every time that a build is created for testing. It can even be incremented every day. The file version to increment is defined by using the **CustomVersion** property in the Customization.setting file. If you update the version and rebuild, all binaries, packages, and manifest files are updated accordingly.
 
 The **CustomAssemblyVersion** property should be updated only when the update isn't backward-compatible and/or for major new releases. In other words, you should rarely update this property. In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on Microsoft version 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you either increment the version or create a source control label.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

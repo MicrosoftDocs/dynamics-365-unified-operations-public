@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench
+ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrier, WHSBillOfLadingOrder
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 193583
 ms.assetid: 1ad0c1cb-4346-4042-a59b-923115fac03e
@@ -48,3 +47,6 @@ If there's more than one shipment in the load, you can generate a master bill of
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

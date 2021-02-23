@@ -17,7 +17,6 @@ ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxEle
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Germany
@@ -62,3 +61,6 @@ You should have a valid user certificate (like test-soft-pse.pfx) and a Tax auth
 13. Close the page.
 14. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

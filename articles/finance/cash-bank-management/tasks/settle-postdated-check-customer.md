@@ -17,7 +17,6 @@ ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJourn
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -59,3 +58,6 @@ This procedure uses the USMF demo company.
 10. Click Voucher.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

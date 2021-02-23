@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure Lifecycle Services (LCS) security
-description: Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization.
-author: RobinARH
+description: This topic explains how security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level.
+author: AngelMarshall
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6154
 ms.assetid: 79396ff8-538f-4f6f-80d0-898fc5618fb5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jorisde
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -63,16 +62,6 @@ Only an administrator can manage users. Follow these steps.
 > [!NOTE]
 > For implementation projects, you can select the implementation role for the invited user. If you set **Allow FastTrack to contact** to **Yes**, then Microsoft FastTrack team may reach out to you based on your implementation role and the stages of the implementation project.   
 
-## Working with CustomerSource and PartnerSource
-The information in this section is intended to help you access CustomerSource or PartnerSource.
-
-### Signing in to CustomerSource or PartnerSource
-
-Visit the [CustomerSource sign-in page](https://mbs.microsoft.com/customersource/), and enter the user name and password for your Microsoft account (previously known as Windows Live ID) to access the site. If you don't have access to your organization’s CustomerSource account, follow the steps on the [How to sign in to CustomerSource](https://mbs.microsoft.com/customersource/northamerica/news-events/news-events/news/NeedAccesstoCustomerSource) page.
-
-### Determining the administrator for your organization in CustomerSource or PartnerSource
-
-If you don’t know your CustomerSource administrator, or if your organization doesn’t have a CustomerSource administrator, send an email to [itmbssup@microsoft.com](mailto:itmbssup@microsoft.com) for assistance.
 
 ## Configuring project security
 You can invite users from inside or outside your organization to join your project as users. The following table describes the roles that are available for users.
@@ -103,7 +92,7 @@ You can invite users from inside or outside your organization to join your proje
 </tr>
 <tr class="even">
 <td>Project team member (prospect)</td>
-<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as his or her organization.</td>
+<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as the organization.</td>
 </tr>
 <tr class="odd">
 <td>Operations user</td>
@@ -121,5 +110,10 @@ You can invite users from inside or outside your organization to join your proje
 
 After you've configured security for one project, you can import the users to another project.
 
+## Configure implementation roles 
+If you have an implementation project, you will have the option to specify project user's implementation roles. For more information, see [Roles in a Dynamics 365 implementation](https://docs.microsoft.com/learn/modules/get-started-implementation-project/01-2-roles).
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

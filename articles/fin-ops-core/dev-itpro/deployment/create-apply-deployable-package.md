@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24211
 ms.search.region: Global
@@ -69,3 +68,6 @@ To apply a deployable package to an environment, see [Apply updates to cloud env
 
 ## Remove a deployable package
 To uninstall or remove a deployable package from an environment, see [Uninstall a package](uninstall-deployable-package.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

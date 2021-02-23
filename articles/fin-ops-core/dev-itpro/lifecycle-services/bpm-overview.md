@@ -16,7 +16,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13301
 ms.assetid: 
@@ -70,3 +69,6 @@ Follow these steps to access BPM.
 - [Flowcharts in Business process modeler (BPM)](flowcharts-business-process-modeler.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

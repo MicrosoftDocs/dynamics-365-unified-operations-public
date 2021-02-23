@@ -2,7 +2,7 @@
 # required metadata
 
 title: Publish mobile workspaces
-description: This topic describes the steps that system administrators must follow to publish a mobile workspace. A mobile workspace must be published so that users can access it in the mobile app. 
+description: This topic describes the steps that system administrators must follow to publish a mobile workspace.
 author: sericks007
 manager: AnnBe
 ms.date: 09/18/2019
@@ -18,7 +18,6 @@ ms.search.form: SysAppDesignerPane
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272873
 ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154
@@ -47,3 +46,6 @@ After a new workspace is published, users must pull to refresh the list of mobil
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

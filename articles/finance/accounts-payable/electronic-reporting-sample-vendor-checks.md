@@ -17,13 +17,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -50,3 +49,6 @@ Microsoft Dynamics 365 Finance includes a sample format where the check is on to
 - When you generate payments for the configured bank account in the payment journal, the checks will be printed by using the specified format.
 
 For more information, see [Modify an Electronic reporting format](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

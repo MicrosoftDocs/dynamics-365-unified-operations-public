@@ -13,18 +13,17 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesTable
+ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, PurchTablePart, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 248534
 ms.assetid: 99dd5ce1-0029-4f06-90e7-865e6d46d86e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -91,3 +90,6 @@ For sales order line entry, the default behavior is to open the **Product sear
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

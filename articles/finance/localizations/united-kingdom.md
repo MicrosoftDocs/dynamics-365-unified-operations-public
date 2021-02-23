@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: United Kingdom
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -48,3 +47,6 @@ This topic provides links to documentation resources for United Kingdom.
 ## Regulatory updates for the United Kingdom
 
 For a complete list of regulatory updates for all countries/regions, see [Regulatory updates](regulatory-updates.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

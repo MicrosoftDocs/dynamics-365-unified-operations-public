@@ -16,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -94,3 +93,6 @@ The current implementation of this functionality has the following limitations:
 2. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Report code** reference.
 
 For more information, see [Purchases on commission](rus-purchases-on-commission.md) and [Sales on commission](rus-sales-on-commission.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

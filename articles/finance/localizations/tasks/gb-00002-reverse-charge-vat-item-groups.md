@@ -17,7 +17,6 @@ ms.search.form: ReverseChargeItemGroup_W, EcoResCategorySingleLookup, ReverseCha
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
@@ -154,3 +153,6 @@ This walkthrough was created using the demo company GBSI.
     * Select 'RC-VAT-AR'  
 8. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

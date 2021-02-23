@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6154
 ms.search.region: Global
@@ -105,3 +104,6 @@ Security maintenance helps ensure a secure environment, and not doing the mainte
 If there is an absolute business need and you are unable to move forward with this maintenance during the timeframe listed above, you can request to reschedule the current maintenance activity for Tier 2 through Tier 5 sandbox environments and production environments by filing a support ticket with Microsoft. The deadline for filing the support ticket to request a reschedule will be included in your notification email. Any request submitted after that deadline will not be honored. 
 
 We do not offer rescheduling of security maintenance activities on Microsoft-managed Tier 1 environments.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

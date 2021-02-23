@@ -17,12 +17,11 @@ ms.search.form: WHSLoadPlanningWorkbench, TMSRouteWorkbench, TMSTransportationTe
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -50,3 +49,6 @@ This procedure shows how to set up a transportation tender. This is typically do
 7. Click Submit.
 8. Select a route.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

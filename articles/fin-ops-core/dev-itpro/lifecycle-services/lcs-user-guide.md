@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lifecycle Services (LCS) user guide
-description: This topic provides information about the tools that are available in Lifecycle Services (LCS) and when to use them as you move through the phases of your work in LCS.
+description: This topic provides information about the tools that are available in Lifecycle Services and when to use them as you move through the phases of your work.
 author: angelmarshall
 manager: AnnBe
 ms.date: 07/02/2019
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6034
 ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
@@ -67,3 +66,6 @@ Additional resources
 The LCS team is also blogging on the [Lifecycle Services Engineering blog](https://cloudblogs.microsoft.com/dynamics365/?s=lcs). Subscribe to our RSS feed to keep up with our posts and announcements.
 
 [Access Lifecycle Services](https://lcs.dynamics.com/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

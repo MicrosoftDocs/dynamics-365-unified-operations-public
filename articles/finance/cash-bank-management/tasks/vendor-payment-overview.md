@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -67,3 +66,6 @@ This task guide will walk you through various methods used to create vendor paym
 33. Click **OK** to generate the payments.
 34. Click **Post** if all the payments are approved and generated. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

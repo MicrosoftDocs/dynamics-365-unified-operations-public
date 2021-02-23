@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.assetid: 
@@ -38,3 +37,6 @@ The Microsoft Dynamics AX 4.0 content has been retired from TechNet and MSDN. Fo
 
 - [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0)
 - [Supported upgrade paths to Dynamics AX 2012](https://technet.microsoft.com/library/dd362093.aspx)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

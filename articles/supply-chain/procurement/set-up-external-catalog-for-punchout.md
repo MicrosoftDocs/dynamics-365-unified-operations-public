@@ -3,7 +3,7 @@
 
 title: Set up an external catalog for PunchOut e-procurement
 description: This topic describes the use of an  external catalog or PunchOut catalog to collect quote information from a vendor and add it to a requisition.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
@@ -13,18 +13,17 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchTable, PurchVendorPortalRequests
+ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -125,3 +124,5 @@ If a product from the external vendor catalog has been requested, the external v
 
 - [Purchasing cXML enhancements](purchasing-cxml-enhancements.md)
 - [Use external catalogs for PunchOut e-procurement](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

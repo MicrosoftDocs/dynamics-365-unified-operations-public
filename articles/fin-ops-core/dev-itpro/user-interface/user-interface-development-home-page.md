@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191453
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
@@ -102,3 +101,6 @@ The form metamodel continues to be used to define controls and application logic
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

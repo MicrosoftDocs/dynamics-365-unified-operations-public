@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Important development and ALM changes from version 10.0.10 to 10.0.13 
+title: Development and ALM changes from version 10.0.10 to 10.0.13 
 description: This topic highlights the major changes in the development tools, software development kits (SDKs), and Application Lifecycle Management (ALM).
 author: RobBertram 
 manager: AnnBe
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -29,7 +28,7 @@ ms.search.validFrom: 2020-04-10
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Important development and ALM changes from version 10.0.10 to 10.0.13
+# Development and ALM changes from version 10.0.10 to 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
@@ -115,9 +114,9 @@ For a general overview of each application release, always check the "What's new
     > [!WARNING]
     > Your build server will probably fail, because the names of the NuGet reference folders are very long and will exceed the file path limit of 260 characters.
 
-- Retail SDK file size: The size of an unmodified retail deployable package is now about 340 MB. If customizations are included, the file size might increase to 350 MB. If you try to deploy the file to your Commerce Scale Unit (cloud) (previously known as Retail Cloud Scale Unit \[RCSU\]), you will receive an error message that states that you can't deploy [packages that are larger than 300 MB](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages). Follow these steps to fix this issue:
+- Retail SDK file size: The size of an unmodified retail deployable package is now about 340 MB. If customizations are included, the file size might increase to 350 MB. If you try to deploy the file to your Commerce Scale Unit (cloud) (previously known as Retail Cloud Scale Unit \[RCSU\]), you will receive an error message that states that you can't deploy [packages that are larger than 300 MB](retail-sdk/retail-sdk-packaging.md#deploy-the-packages). Follow these steps to fix this issue:
 
-    1. Follow the instructions in [Deploy the deployable packages](retail-sdk/retail-sdk-packaging.md#deploy-the-deployable-packages), and manually remove the self-service installer files.
+    1. Follow the instructions in [Deploy the deployable packages](retail-sdk/retail-sdk-packaging.md#deploy-the-packages), and manually remove the self-service installer files.
     2. Upload the much smaller package to LCS, and then continue your deployment as usual.
 
     > [!NOTE]
@@ -139,3 +138,6 @@ For a general overview of each application release, always check the "What's new
 3. Check the [Retail SDK FAQ](retail-sdk/sdk-faq.md). It's updated as common issues are identified.
 4. Submit a support request through LCS. Provide as much information as you can about the issue. When you submit the request, send a copy to your FastTrack solution architect.
 5. Expect to share your screen with your partner, the support specialist, your solution architect, or even a combination of the three. Be prepared to reproduce the error.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

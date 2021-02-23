@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Sweden
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -43,3 +42,6 @@ You can export financial data using the formats specified by the Standard Import
   - Type 4I – Exports transactions. 
   - Type 4E – Exports period balances and transactions. 
 8. Click **OK**. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

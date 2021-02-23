@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72211
 ms.assetid: bb238a46-3a43-4f3c-a9b6-86b26e988881
@@ -772,7 +771,7 @@ An expression in X++ is used in either a mathematical or logical way. Expression
 
 ### EBNF Description of Expressions in X++
 
-|                    |   |                                                             |
+|    Term            | &nbsp; |   Definition                                                |
 |--------------------|---|-------------------------------------------------------------|
 |     Expression     | = | Simple-expression \[RelationalOperator Simple-expression \] |
 | RelationalOperator | = |                              =                              |
@@ -1492,3 +1491,6 @@ Additional resources
 [X++ Language Reference](xpp-language-reference.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

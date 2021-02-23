@@ -18,7 +18,6 @@ ms.search.form: RetailPeriodicDiscount
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 85183
 ms.assetid: e8c5a24f-7edd-4fd6-af80-5e0ac9f03127
@@ -45,3 +44,6 @@ The following options, which can be found on the **Commerce** tab of released pr
 > These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.
 
 [![Prevent discounts field](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

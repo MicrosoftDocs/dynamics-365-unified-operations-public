@@ -12,13 +12,11 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-ms.search.form: 
+ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -117,3 +115,6 @@ The **Outbound work monitoring** workspace has two tiles that help you monitor d
 ## Deleting completed tasks
 
 You can delete deferred put processing tasks that have been completed by selecting them and deleting them on the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

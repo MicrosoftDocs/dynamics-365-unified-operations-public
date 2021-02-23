@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,12 +29,9 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Enable location-based store detection
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to turn on location-based store detection for your Dynamics 365 Commerce site.
-
-## Overview
 
 Location-based store detection in Commerce lets you provide relevant site content to customers, based on their location. When location-based store detection is turned on, the Commerce rendering service uses the country/region information from the IP address of the customer's web browser to direct the customer to the best geographical site configuration that is available.
 
@@ -56,11 +52,11 @@ To turn on location-based store detection in Commerce, follow these steps.
 
 [Configure your domain name](configure-your-domain-name.md)
 
-[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-[Create an e-Commerce site](create-ecommerce-site.md)
+[Create an e-commerce site](create-ecommerce-site.md)
 
-[Associate an online site with a channel](associate-site-online-store.md)
+[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
@@ -73,3 +69,6 @@ To turn on location-based store detection in Commerce, follow these steps.
 [Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

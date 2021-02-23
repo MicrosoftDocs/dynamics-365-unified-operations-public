@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25991
 ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
@@ -69,3 +68,6 @@ The list of search results is limited to 10 items. If you do not find what you'r
 ## Development
 
 From a development perspective, the navigation search functionality is easy to leverage because there is virtually no delay between the deployment of menu items and their ability to show up in search results. As long as the menu items are linked to from either the navigation pane or the dashboard, they will automatically become searchable.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

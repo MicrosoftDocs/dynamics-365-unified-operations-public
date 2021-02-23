@@ -17,7 +17,6 @@ ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, Cus
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Norway
@@ -96,3 +95,6 @@ This task was created using the demo data company DEMF with the country/region o
 2. Click Show filters.
 3. Apply the following filters: Enter a filter value of "" on the "Payment ID" field using the "is not" filter operator.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

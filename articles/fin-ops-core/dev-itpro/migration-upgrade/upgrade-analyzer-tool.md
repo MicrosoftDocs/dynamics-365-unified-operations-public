@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 
@@ -53,3 +52,6 @@ If you already use the System diagnostic service in your AX 2012 environment, yo
 For information about how to configure the System diagnostic service in your AX 2012 environment, see [Install and run System diagnostics](../lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md).
 
 Within a few minutes after you configure the System diagnostic service, the AX 2012 environment will appear in your LCS project.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

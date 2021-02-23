@@ -4,7 +4,7 @@
 title: Create a recurring data export app
 description: This article shows how to create a Microsoft Azure logic app that exports data from Microsoft Dynamics 365 Human Resources on a recurring schedule.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Create a recurring data export app
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article shows how to create a Microsoft Azure logic app that exports data from Microsoft Dynamics 365 Human Resources on a recurring schedule. The tutorial takes advantage of Human Resources' DMF package REST application programming interface (API) to export the data. After the data has been exported, the logic app saves the exported data package to a Microsoft OneDrive for Business folder.
 
@@ -210,3 +212,6 @@ The following illustration shows what the Logic Apps Designer looks like when al
 In this tutorial, you learned how to use a logic app to export data from Human Resources and save the exported data to a OneDrive for Business folder. You can modify the steps of this tutorial as required to suit your business needs.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

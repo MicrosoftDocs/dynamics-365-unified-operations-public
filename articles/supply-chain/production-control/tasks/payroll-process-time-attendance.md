@@ -17,7 +17,6 @@ ms.search.form: JmgPayTable, JmgPayRate, JmgPayAgreementTable, JmgPayAgreementLi
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -72,3 +71,6 @@ This procedure shows how to enable the payroll process for time and attendance. 
 7. Click Edit.
 8. In the Pay agreement field, enter or select a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -129,3 +128,6 @@ Before you can start installation of channel components, you must first complete
      > ```
 
 28.	Follow the installation steps for installing the Commerce Scale Unit. For instructions, see [Configure and install Commerce Scale Unit (self-hosted)](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).  At multiple locations in this document there will be notes referencing changes to the instructions for an on-premises deployment. It is important to note each of these changes. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

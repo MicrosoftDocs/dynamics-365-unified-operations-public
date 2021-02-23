@@ -17,7 +17,6 @@ ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr, DMFExecutionHi
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -63,3 +62,6 @@ This task guide requires Dynamics AX platform 7.1 or later.
 27. Refresh the page.
 28. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

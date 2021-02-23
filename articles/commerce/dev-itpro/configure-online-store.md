@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 31541
 ms.assetid: 7a25f9b4-a0bb-4e8c-95c0-c0799ec0620d
@@ -69,3 +68,6 @@ The topics listed in the following table help you configure Commerce components 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

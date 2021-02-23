@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -135,3 +134,6 @@ When you make your solution extensible, you also help guarantee that you won't b
 
 + For pointers that can help you avoid breaking your consumers, see [Breaking changes](breaking-changes.md).
 + The [compatibility checker tool](compatibility-checker-tool.md) can detect metadata breaking changes against a given baseline release or update, helping to ensure backward compatibility.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

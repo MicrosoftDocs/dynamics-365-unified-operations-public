@@ -18,7 +18,6 @@ ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
@@ -93,3 +92,6 @@ The extension contains a datafile called 'RecoMockDataset.csv', which allows you
 [Manually create curated recommendations](create-editorial-recommendation-lists.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

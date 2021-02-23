@@ -3,7 +3,7 @@
 
 title: Generate demo data by using data packages
 description: This topic explains how to use demo data packages to generate data for your system.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 06/06/2018
 ms.topic: article
@@ -18,12 +18,11 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77523
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 
@@ -253,3 +252,6 @@ The following columns appear in the **Ready to post** entity.
 Insert the **Ready to post** entity at the end of your data project, after all the transaction entities. In the data project, specify a sequence number that is larger than the sequence numbers that are used for the transactions entities.
 
 If you have a mixture of transactions, some of which should be processed whereas others should not be processed, you must use date and document ranges to limit the transactions that are processed. If you can't use the ranges, you must use a separate data package for the unposted transactions.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

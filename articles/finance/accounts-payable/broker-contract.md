@@ -17,12 +17,11 @@ ms.search.form: MCRBrokerContractManagement, MCRCustCategory, MCRCustCategoryHie
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
@@ -146,3 +145,6 @@ If you were handling differences in a fee scenario where the customer pays the b
 > [!NOTE]
 > The write-off expense account number is specified in the **Main account** field for a specific reason code on the **Differential reasons** page.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

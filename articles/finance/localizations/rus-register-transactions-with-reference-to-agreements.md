@@ -16,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -134,3 +133,6 @@ Find more details in the following topics:
 - [Agreements](rus-agreements.md)
 - [Set up and create agreements](rus-set-up-and-create-agreements.md)
 - [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

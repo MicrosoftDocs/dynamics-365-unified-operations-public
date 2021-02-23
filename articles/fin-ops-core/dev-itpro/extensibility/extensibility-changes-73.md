@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -1576,3 +1575,6 @@ The following table lists changes that were requested for extensibility but were
 |            Other: Bug fix on CompanyHelper.testCreateParameter             |
 | Table CustCollectionLetterJour - class cancelCollectionLetterCodeCustTrans |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

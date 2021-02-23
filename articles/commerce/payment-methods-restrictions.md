@@ -18,7 +18,6 @@ ms.search.form: RetailTenderTypeTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
@@ -66,3 +65,6 @@ When **Restrict for refunds without receipt** is set to **Yes**, the selected pa
 
 If a transaction has both a receipted return and a return without a receipt, the restriction conditions will not be enforced because the transaction will be a return workflow with a receipt. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

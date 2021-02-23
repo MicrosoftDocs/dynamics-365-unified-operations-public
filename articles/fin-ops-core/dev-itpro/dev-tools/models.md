@@ -2,7 +2,7 @@
 # required metadata
 
 title: Models and packages
-description: This topic describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
+description: This topic describes the concept of models and packages. It explains how to create new models, update parameters, and visualize dependencies between models.
 author: jorisdg
 manager: AnnBe
 ms.date: 02/07/2020
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83351
 ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
@@ -105,3 +104,6 @@ If your model belongs to a package with multiple models. For example, the MyMode
 [Develop and customize home page](developer-home-page.md)
 
 [Export and import models](models-export-import.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -54,3 +53,6 @@ Use this procedure to create and post tax adjustment transactions. This task use
 20. Close the page.
 21. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

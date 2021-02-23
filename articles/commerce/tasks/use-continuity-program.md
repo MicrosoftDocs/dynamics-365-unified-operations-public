@@ -17,7 +17,6 @@ ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCust
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -64,3 +63,6 @@ This procedure walks through selling a continuity program and processing related
     * Enter the sales order number that you noted earlier in the procedure. This will keep the processing time to a minimal for this procedure. The Sales order field field is optional--you could process all orders for any one program.  
 21. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
 ms.search.region: Global
@@ -83,3 +82,6 @@ This topic provides links to topics about financials development.
 
 - [Add templates to the Open lines in Excel menu](../user-interface/add-templates-open-lines-excel-menu.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

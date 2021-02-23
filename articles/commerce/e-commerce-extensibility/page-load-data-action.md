@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -196,6 +195,8 @@ export interface IProductFeatureData {
 
 [Data actions overview](data-actions.md)
 
+[Data action cache options](data-action-cache.md)
+
 [Test data actions with mocks](test-data-action-mocks.md)
 
 [Event-based data actions](event-based-data-actions.md)
@@ -204,3 +205,6 @@ export interface IProductFeatureData {
 
 [Call Retail Server APIs](call-retail-server-apis.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

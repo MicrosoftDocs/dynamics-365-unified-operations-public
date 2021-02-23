@@ -17,12 +17,11 @@ ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductO
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -45,3 +44,6 @@ GTIN codes are assigned by the GS1 organization. In this example, you will enter
 11. In the GTIN field, type a value.
 12. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

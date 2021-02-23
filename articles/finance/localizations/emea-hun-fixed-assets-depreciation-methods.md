@@ -17,7 +17,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274443
 ms.assetid: fb4084cf-1061-4286-9f09-0f28a031483d
@@ -49,7 +48,7 @@ When you set up a fixed asset depreciation profile and select **Straight line (H
 
 In this example, a fixed asset has the following characteristics.
 
-|                    |                                       |
+|    &nbsp;          | &nbsp;                                |
 |--------------------|---------------------------------------|
 | Acquisition cost   | 120,000                               |
 | Acquisition date   | January 1                             |
@@ -74,7 +73,7 @@ When you set up a fixed asset depreciation profile and select **Multiplication F
 
 In this example, a fixed asset has the following characteristics.
 
-|                    |           |
+|  &nbsp;            | &nbsp;    |
 |--------------------|-----------|
 | Acquisition cost   | 120,000   |
 | Acquisition date   | January 1 |
@@ -111,7 +110,7 @@ When you set up a fixed asset depreciation profile and select **Factor (Hungary)
 
 In this example, a fixed asset has the following characteristics.
 
-|                    |           |
+|  &nbsp;            | &nbsp;    |
 |--------------------|-----------|
 | Acquisition cost   | 120,000   |
 | Acquisition date   | January 1 |
@@ -142,7 +141,7 @@ When you set up a fixed asset depreciation profile and select **Sum of years’ 
 
 In this example, a fixed asset has the following characteristics.
 
-|                    |           |
+|  &nbsp;            | &nbsp;    |
 |--------------------|-----------|
 | Acquisition cost   | 120,000   |
 | Acquisition date   | January 1 |
@@ -167,3 +166,6 @@ If you set the period frequency to a unit that is smaller than a **Yearly** (for
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

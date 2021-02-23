@@ -18,7 +18,6 @@ ms.search.form: JMGParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
@@ -144,3 +143,6 @@ A Commerce user follows the workflow to calculate, approve, and transfer time re
 - Register Absence
 
 For more information about how to process time and attendance registrations, see [Process time and attendance registrations](https://technet.microsoft.com/library/aa573180.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -12,13 +12,11 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-ms.search.form: 
+ms.search.form: WHSWorkCluster, WHSClusterProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -212,3 +210,6 @@ Before you can set up system-directed cluster picking, you must create eligible 
 1. The last step on the mobile device is to **Put** the cluster in the final location. Select **OK**
     - When the put operation is confirmed, the cluster is closed and broken, based on the value that you set for the **Break cluster at** field in the cluster profile. Work IDs are also closed.
 1. A "Cluster complete" message is shown on the mobile device.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

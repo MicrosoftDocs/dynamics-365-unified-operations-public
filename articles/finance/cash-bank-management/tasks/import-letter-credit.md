@@ -17,7 +17,6 @@ ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, Inven
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -188,3 +187,6 @@ This procedure uses the USMF demo company.
     * Verify the report lists the transactions with Bank document number, Facility limit, utilized amount and the facility balance amount.  
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

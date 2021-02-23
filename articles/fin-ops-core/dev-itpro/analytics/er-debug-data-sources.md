@@ -17,7 +17,6 @@ ms.search.form: ERSolutionTable, EROperationDesigner
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -286,3 +285,6 @@ If any of the previously listed configurations are missing in the configuration 
 6. In the **Bank account** field, select **DEMF OPER**.
 7. In the **Generate payments** dialog box, select **OK**.
 8. In the **Electronic report parameters** dialog box, select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

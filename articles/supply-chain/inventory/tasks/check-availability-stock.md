@@ -17,12 +17,11 @@ ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, Inve
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -63,3 +62,6 @@ This procedure shows you how to check on-hand and physical on-hand inventory for
 5. Click **OK**.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

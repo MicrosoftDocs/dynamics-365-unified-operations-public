@@ -19,14 +19,13 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -236,3 +235,6 @@ The following diagram illustrates this series of transactions with the effects o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

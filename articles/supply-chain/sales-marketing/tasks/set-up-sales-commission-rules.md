@@ -17,12 +17,11 @@ ms.search.form: CommissionCustomerGroup, CommissionItemGroup, CommissionSalesGro
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -99,3 +98,6 @@ This procedure shows you how to set up and enable sales commission calculation a
 17. In the list, select the commission group that you created earlier.
 18. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

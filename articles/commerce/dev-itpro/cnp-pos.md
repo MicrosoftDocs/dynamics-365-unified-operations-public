@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -93,3 +92,6 @@ The configuration to turn on this feature is completed at the register level.
 ## Additional resources
 
 [Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

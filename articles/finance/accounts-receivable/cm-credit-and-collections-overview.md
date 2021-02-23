@@ -18,13 +18,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: roschlom
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -84,3 +83,6 @@ For descriptions of these concepts, see [Collections management key concepts](./
 [Credit holds for sales orders](./cm-sales-order-credit-holds.md)
 
 [Customer credit management periodic tasks](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

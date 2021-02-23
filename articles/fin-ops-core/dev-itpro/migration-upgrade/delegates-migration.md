@@ -17,14 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 27001
 ms.assetid: 6640ae38-58f0-4a29-abca-5acd9489d45d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -159,3 +158,6 @@ Methods two and three can be used in parallel to the metadata search. The class 
 Similar to finding class references, finding all references can be done on the SubscribesTo keyword. The resulting list will include all static delegate handlers. Manually going through this list provides another means for finding static delegate handlers. This will not return dynamically declared delegate handlers that do not use the SubscribesTo keyword. 
 
 [![Del18](./media/del18-1024x328.png)](./media/del18.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

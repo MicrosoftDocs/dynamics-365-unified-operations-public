@@ -17,7 +17,6 @@ ms.search.form: KanbanRules, KanbanRuleDuplicate, KanbanJobSchedulingListPage, L
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ This procedure focuses on changing the used kanban rule for a given kanban. This
 7. Click Finish.
     * Now the kanban job is using an another kanban rule. This can be useful to level load work cells.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

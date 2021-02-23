@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -78,3 +77,6 @@ If an e-Commerce site feature or module uses a non-essential cookie, a site user
 [Cookie consent module](cookie-consent-module.md) 
  
 [Header module](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

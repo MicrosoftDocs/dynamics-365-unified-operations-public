@@ -18,7 +18,6 @@ ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
@@ -148,3 +147,6 @@ Additional resources
 --------
 
 [Install and configure the warehouse app overview](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

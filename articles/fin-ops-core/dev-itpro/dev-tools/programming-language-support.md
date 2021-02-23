@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26781
 ms.search.region: Global
@@ -121,3 +120,6 @@ There are a few changes to X++ that require corresponding changes in legacy cust
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

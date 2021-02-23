@@ -2,8 +2,8 @@
 # required metadata
 
 title: Out-of-box security reports
-description: This topic describes the set of rich security reports that help you understand the set of security roles running in your environment and the set of users assigned to each role.
-author:  maertenm
+description: This topic describes the security reports that help you understand the set of security roles running in your environment and the users assigned to each role.
+author:  peakerbl
 manager: AnnBe
 ms.date: 08/14/2019
 ms.topic: article
@@ -17,11 +17,10 @@ ms.search.form:  SysSecConfiguration, SrsReportViewerForm
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Core, Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: peakerbl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ---
@@ -75,3 +74,6 @@ Any of the above reports can be set to run as a batch job by going to the **Run 
 
 ![Batch processing of reports](media/a6142c903497381171bf6c6b27495895.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

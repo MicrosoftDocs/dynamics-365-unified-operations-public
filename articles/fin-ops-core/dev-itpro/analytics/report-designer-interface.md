@@ -18,7 +18,6 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
@@ -233,3 +232,6 @@ The report designer toolbar provides quick access to commands for navigating wit
 [Financial reporting](financial-reporting-intro.md)
 
 [Generate financial reports](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13352
 ms.assetid: be08d43a-f05e-4580-ac75-52710d06a1d7
@@ -149,3 +148,6 @@ Complete the following procedure to connect to the virtual machine where the Dyn
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

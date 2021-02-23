@@ -18,12 +18,11 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ---
@@ -90,3 +89,6 @@ if ((select custTable where CustTable.AccountNum == '3000').CreditMax < 5000)
     info('This customer has a credit maximum less than $5000.');
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

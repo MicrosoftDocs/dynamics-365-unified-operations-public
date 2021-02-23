@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -61,3 +60,6 @@ The X++ language programming guide is divided into these sections:
 + [X++ and C# Comparison](xpp-cs-comparison.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

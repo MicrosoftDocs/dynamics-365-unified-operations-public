@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Spain
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -96,3 +95,6 @@ This procedure walks you through how to create a corrective invoice. This proced
 3. Click Transactions.
 4. Click the General tab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

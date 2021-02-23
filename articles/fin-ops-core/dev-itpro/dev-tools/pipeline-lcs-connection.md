@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -66,3 +65,6 @@ You can create a new service connection either directly from a pipeline task or 
 - **Application (Client) ID** – Provide the ID that was previously created for your application registration in Azure AD.
 - **Service connection name** – Provide a meaningful name for the connection. This name will appear in the connection field for pipeline tasks that require an LCS connection.
 - **Description** – Provide an optional description of this connection.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

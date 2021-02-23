@@ -17,7 +17,6 @@ ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStruct
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -64,3 +63,6 @@ This task guide steps through creating an account structure. The steps use demo 
 29. On the **Action pane**, click **Activate**.
 30. Click **Activate**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

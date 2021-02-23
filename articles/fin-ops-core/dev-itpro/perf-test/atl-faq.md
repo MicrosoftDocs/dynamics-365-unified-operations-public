@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
+ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
@@ -83,3 +82,6 @@ ATL should be used mostly for data setup and validation in integration and compo
 In some of the more complex entities, such as Sales order, all the business logic that is associated with the `modifiedField`, `insert`, and `update` events is called. Creation of invoice transactions, for example, is also done by running real invoice posting logic. Therefore, the performance of some operations will be slow. However, these issues don't occur for most of the entities that represent master data. Therefore, you should be able to use those entities in any type of test.
 
 There should not be significant overhead if specifications and queries are used to do validation. These artifacts can also be used in unit tests.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25631
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
@@ -143,3 +142,6 @@ CustTrans::settleTransaction(
 This functionality uses flights. To test it, you must turn on the flight in a non-production environment. For information about how to turn on a flight in a non-production environment, see [Data management overview](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).
 
 The name of the flight is **EnableCustTransSettleTransaction**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

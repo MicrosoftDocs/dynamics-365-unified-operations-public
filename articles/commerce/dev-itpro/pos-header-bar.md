@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -277,3 +276,6 @@ Follow these steps to validate the customization.
 2. Look at the header bar. The custom button that you added should be visible.
 
 You can view the status of the extension package on the [POS settings page](view-pos-extension-package-details.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

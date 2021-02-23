@@ -17,7 +17,6 @@ ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -50,3 +49,6 @@ This topic describes the manual steps for creating, calculating, and posting a s
 12. At the home page, select **Store financials**.
 13. Select the **Posted statements** tab.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

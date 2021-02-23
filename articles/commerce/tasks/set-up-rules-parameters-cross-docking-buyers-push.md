@@ -17,7 +17,6 @@ ms.search.form: RetailReplenishmentRuleTable, RetailReplenishmentTreeLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -50,3 +49,6 @@ This procedure demonstrates the steps to create Replenishment rules. Replenishme
 14. In the Weight field, enter a number.
 15. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

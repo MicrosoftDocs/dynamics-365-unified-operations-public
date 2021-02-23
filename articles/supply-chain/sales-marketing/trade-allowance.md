@@ -17,12 +17,11 @@ ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTa
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: t-benebo
+ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
@@ -204,3 +203,6 @@ To get a more analytical overview of the various performance measures for the pr
 
 To get a more analytical overview of the various performance measures for the promotion, you can use the Analysis view. To go to the Analysis view, click **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, click **Analysis**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

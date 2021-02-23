@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -115,3 +114,6 @@ When the hazardous materials feature is turned on in your system, the **bill of 
 ## Packing list report
 
 When the hazardous materials feature is turned on in your system, packing lists include additional information that is related to the shipping print text for an item. This report is available from the **All loads** page, as usual.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

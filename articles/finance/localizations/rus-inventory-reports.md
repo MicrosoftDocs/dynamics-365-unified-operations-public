@@ -16,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
 
@@ -213,3 +212,6 @@ This report shows all adjustments that were done during the inventory recalculat
 ## Adjustments in currency report
 
 This report shows all adjustments that were done during the inventory recalculation or closing in the reporting currency. To do this, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Adjustment (cur.)**. Specify the parameters, and select **OK** to generate a report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

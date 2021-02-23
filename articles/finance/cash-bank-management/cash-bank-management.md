@@ -18,7 +18,6 @@ ms.search.form: BankTreasurerWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
@@ -107,3 +106,6 @@ Additional help is available as task guides inside Finance. To access task guide
 #### Videos
 
 Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

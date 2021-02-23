@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransCustBillOfExchange, CustOp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France
@@ -58,3 +57,6 @@ You should have a role of Accounts receivables clerk to complete this procedure.
 14. Go to Accounts receivable > Inquiries and reports > Payments > Bill of exchange journal.
     * Verify that Status for the newly posted journal should be Protested. If yes, the process is complete  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

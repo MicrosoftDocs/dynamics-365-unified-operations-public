@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security Upgrade Advisor Tool user guide
-description: The Microsoft Dynamics AX Security Upgrade Advisor Tool is intended to help simplify the process of upgrading security settings from earlier versions of Microsoft Dynamics AX to Microsoft Dynamics AX 2012. 
+description: The Security Upgrade Advisor Tool is intended to help simplify upgrading security settings from Microsoft Dynamics AX to Microsoft Dynamics AX 2012. 
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 30061
 ms.assetid: fda4d8e9-79a2-4ee2-831e-a90a9df2d980
@@ -83,7 +82,9 @@ The outputs of the wizard are custom roles in the AOT, named with a prefix that 
 2. In **Administrative Tools** &gt; **Services**, stop the **Microsoft Dynamics AX Object Server 6.0** service.
 3. Use Windows PowerShell or AXUtil to import the model **SecurityUpgradeAdvisorTool.axmodel** into the Microsoft Dynamics AX 2012 AOT.
 
-       Install-AXModel -File SecurityUpgradeAdvisorTool.axmodel -Details
+    ```powershell
+    Install-AXModel -File SecurityUpgradeAdvisorTool.axmodel -Details
+    ```
 
    For more information, see [How to: Export and Import a Model](https://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx).
 
@@ -253,3 +254,6 @@ After the Excel spreadsheet with the results is generated, you can use the role 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

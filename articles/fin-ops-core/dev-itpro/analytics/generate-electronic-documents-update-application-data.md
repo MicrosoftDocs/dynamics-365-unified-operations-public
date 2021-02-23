@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate electronic documents and update application data by using ER
-description: You can design Electronic reporting (ER) formats that can be used in the application to generate outgoing electronic documents. You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data.
+description: You can design Electronic reporting (ER) formats that can be used in the application to generate outgoing electronic documents.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
@@ -18,7 +18,6 @@ ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer, IT Pro, Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: 018a11ae-854c-4f36-9358-8c39baca882d
@@ -45,3 +44,6 @@ To learn more about this feature, play the set of ER Generate documents with app
 - [ER data model configuration: Intrastat (model)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER model mapping configuration: Intrastat (mapping)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER format configuration: Intrastat (format)](https://go.microsoft.com/fwlink/?linkid=849038)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

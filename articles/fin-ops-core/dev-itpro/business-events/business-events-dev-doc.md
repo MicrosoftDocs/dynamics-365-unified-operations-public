@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
@@ -776,3 +775,6 @@ public DateTimeIso8601 testIsoEdtUtcDateTime(DateTimeIso8601 _value = this._test
     return this._testIsoDateTime;
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

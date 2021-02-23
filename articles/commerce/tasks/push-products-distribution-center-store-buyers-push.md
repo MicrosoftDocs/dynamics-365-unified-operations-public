@@ -17,7 +17,6 @@ ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -55,3 +54,6 @@ This procedure walks through the steps to create and process a Buyer´s push to 
 19. Click Create order.
 20. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

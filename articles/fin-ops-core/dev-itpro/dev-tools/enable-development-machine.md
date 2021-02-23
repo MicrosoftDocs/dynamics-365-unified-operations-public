@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create new users on development machines
-description: When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM). This article explains how to enable another user account as a developer on a development VM.
+description: When an environment is first deployed, only one user account is enabled as a developer. This article explains how to enable another user account.
 author: RobinARH
 manager: AnnBe
 ms.date: 07/11/2018
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31621
 ms.assetid: c56d5cdf-3c01-4730-bda5-bb5f8f79e375
@@ -69,3 +68,6 @@ To enable a new user account to develop on the VM, the user account must be an a
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

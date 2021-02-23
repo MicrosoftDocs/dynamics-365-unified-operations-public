@@ -17,7 +17,6 @@ ms.search.form: AssetTable, SysRecordTemplateSelect
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -39,3 +38,6 @@ This procedure uses the USMF company.
 3. In the list, find and select the desired record.
 4. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

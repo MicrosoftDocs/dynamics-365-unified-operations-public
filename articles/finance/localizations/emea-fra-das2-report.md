@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: France
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -116,3 +115,6 @@ Follow these steps to generate the tax declaration report.
 
 > [!NOTE]
 > The DAS-2 report doesn't support transactions that are created and posted from a general journal entry and the accrual schema scenario. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.search.form: SalesQuotationTemplateGroup, SalesQuotationListPage, SalesCreate
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -104,3 +103,6 @@ This procedure demonstrates how to efficiently create quotations offering a set 
 11. Go to Sales and marketing > Sales quotations > All quotations.
     * Verify that quotations have been created for all the customers specified in the mass update routine, as based on the selected template.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

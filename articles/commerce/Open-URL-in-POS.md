@@ -18,7 +18,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: 
@@ -88,3 +87,6 @@ To configure a URL to be opened in POS, perform the following steps.
 5. Select **Open URL** as the action.
 6. Enter the URL that you want to use.
 7. Configure whether to open the URL in a new window.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20521
 ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb
@@ -57,3 +56,6 @@ If the report uses the Report Data Provider (RDP) to retrieve data, the report s
 To improve performance when you print statements or reports that include large amounts of data, use batch processing. When you use batch processing, you can run specific tasks as batch jobs and then schedule those batch jobs to run on a different computer (a batch server). By moving the processing of these tasks to a batch server, you can improve the report performance on the client computer. You can also apply range restrictions to limit the size of each batch.
 
 To further improve performance, don't submit one large batch. Instead submit multiple smaller batches for processing at the same time on different servers. Many tasks can be run as part of batch jobs. For more information, see [Batch processing overview](../sysadmin/batch-processing-overview.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

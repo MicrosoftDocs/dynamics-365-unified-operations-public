@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -429,3 +428,6 @@ namespace Contoso
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -39,3 +38,6 @@ This procedure shows how to create a new product lifecycle state. A product life
 3. In the State field, type a value.
 4. In the Description field, type a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

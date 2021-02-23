@@ -13,16 +13,15 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: RetailBuyersPushPerPackage
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -51,3 +50,6 @@ This procedure walks through the steps to create and process a Cross-dock to dis
 15. In the list, find and select a warehouse that received products
 16. Click Order to view the orders that got created for the selected warehouse
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

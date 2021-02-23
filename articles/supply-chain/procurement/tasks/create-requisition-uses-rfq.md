@@ -3,7 +3,7 @@
  
 title: Create a requisition that uses an RFQ
 description: This topic explains how to add price and vendor information to a purchase requisition from an RFQ process. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqLi
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -102,3 +101,6 @@ The next task is to create an RFQ to get bids from vendors for the product. In U
 8. Select the page.
 9. Select Complete.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

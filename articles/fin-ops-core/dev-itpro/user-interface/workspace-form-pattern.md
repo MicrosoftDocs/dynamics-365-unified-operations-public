@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workspace form pattern
-description: This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
+description: This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages.
 author: jasongre
 manager: AnnBe
 ms.date: 05/23/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29151
 ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
@@ -154,3 +153,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 example
 
 [![Previous version workspace example](./media/workspace5.png)](./media/workspace5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

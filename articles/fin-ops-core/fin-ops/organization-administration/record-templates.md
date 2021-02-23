@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16101
 ms.assetid: 61ada2d8-84c3-44bc-b4c5-516b1aeac3d1
@@ -44,3 +43,6 @@ For example, imagine you are entering rental information for a car rental busine
 > You can apply templates only in areas that you have access to. However all template titles are visible to you when you create a new record, and to other users as well, if you are creating templates that will be available for all users. Be sure to consider this when naming templates. For example, avoid using names that include words, such as "commission," if is confidential that some employees in the company have commission-based salaries.
 
 When one or more templates that you have access to exist for a specific form and you attempt to create a new record in the form, the **Select a template for** page is displayed. When you select a template from the list, the new record is created and contains default information that is based on the template that you selected. If you do not want to use templates when you create new records, select the **Do not ask again** check box in the **Select a template for** page. To display the template selection dialog box again, right-click any record, click **Record info**, and then click **Show template selection**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

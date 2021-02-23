@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -73,3 +72,6 @@ Most of the UI customizations aren't supported for background processes. The **S
 | [Run processes](run-process.md)                     | Yes | Yes |
 | [Log results and messages](log-results.md)          | Yes | Yes |
 | [Customize the user interface](ui-customization.md) | No | See [Customize the user interface](ui-customization.md). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

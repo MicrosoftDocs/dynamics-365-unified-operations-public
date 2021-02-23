@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56171
 ms.assetid: 61069cf2-6c3f-4ebc-bbee-b21b1c99626a
@@ -134,3 +133,6 @@ To download X++ updates, follow these steps in LCS.
 ## Additional resources
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
 - [Install metadata hotfixes in development environments](./install-metadata-hotfix-package.md) 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

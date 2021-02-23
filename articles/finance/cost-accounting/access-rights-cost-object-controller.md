@@ -18,13 +18,12 @@ ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -110,3 +109,6 @@ Additional resources
 - [Cost control workspace](cost-control-workspace.md)
 - [Dimension hierarchy](dimension-hierarchy.md)
 - [Set up security for Cost accounting content pack](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

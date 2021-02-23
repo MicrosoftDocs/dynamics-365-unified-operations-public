@@ -3,7 +3,7 @@
 
 title: Support for upgrade and N-1 for India
 description: This topic provides an overview N-1 support for Commerce customers in India.
-author: DmitryAkimoff 
+author: kfend 
 manager: ezubov
 ms.date: 10/03/2018
 ms.topic: article
@@ -17,12 +17,11 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 ms.search.industry: Retail
-ms.author: dmakimo
+ms.author: kfend
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.1
 ---
@@ -53,3 +52,6 @@ GST configuration data differs between AX 2012 and Commerce versions. A special 
 2. Click **OK**.
 
 Each time tax configuration changes are made and finalized the above operation should be run before sending the data to the AX 2012 channel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

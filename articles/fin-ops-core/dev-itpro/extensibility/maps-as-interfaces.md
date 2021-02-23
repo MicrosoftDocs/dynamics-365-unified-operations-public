@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -158,3 +157,6 @@ public class ISV2PurchTableSalesPurchTable extends ISV2SalesPurchTableInterface
 }
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

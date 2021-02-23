@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -910,3 +909,6 @@ The following table lists additional changes that have been made for extensibili
 |         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions          |
 |            WhsRFControlData.processControl must reference WhsControl.data instead of _data in the switch block             |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

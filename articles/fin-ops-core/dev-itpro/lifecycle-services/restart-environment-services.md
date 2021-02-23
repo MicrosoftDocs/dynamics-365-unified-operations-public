@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -63,3 +62,6 @@ To restart a specific service in a deployed environment, follow these steps.
  
   > [!NOTE]
   > This functionality is only available in Tier-2+ Sandbox environments and not in the production environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

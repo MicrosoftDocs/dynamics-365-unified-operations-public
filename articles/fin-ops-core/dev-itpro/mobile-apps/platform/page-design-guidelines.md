@@ -3,7 +3,7 @@
 
 title: Page design guidelines
 description: This topic provides in-depth information on designing mobile apps.
-author: makhabaz
+author: robinarh
 manager: AnnBe
 ms.date: 04/23/2018
 ms.topic: article
@@ -17,14 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
@@ -147,3 +146,6 @@ The number of records returned in a list page is controlled by the **List fetch 
 2. Click the **Grid** node and then click **Properties**.
 3. The **Control properties** dialog box will contain a default fetch size of 50 records.
 4. Adjust the fetch size as needed.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

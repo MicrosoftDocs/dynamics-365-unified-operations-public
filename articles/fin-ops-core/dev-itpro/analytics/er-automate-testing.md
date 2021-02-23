@@ -18,7 +18,6 @@ ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTab
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -388,3 +387,6 @@ Therefore, as you've seen, the functioning of any ER format can be evaluated aut
 - [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md)
 - [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md)
 - [ER Import a configuration from Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

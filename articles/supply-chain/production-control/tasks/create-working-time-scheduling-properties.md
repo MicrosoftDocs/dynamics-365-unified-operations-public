@@ -17,7 +17,6 @@ ms.search.form: OpResLifeCycleManagementWorkspace, WrkCtrProperty
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -46,3 +45,6 @@ Working time scheduling properties are used to categorize working time intervals
 3. In the Value field, type a value.
 4. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

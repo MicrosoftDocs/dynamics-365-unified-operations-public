@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -435,3 +434,6 @@ The following additional changes have been made for extensibility.
 
 - Convert queries where InventSumFields is used to SysDa.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

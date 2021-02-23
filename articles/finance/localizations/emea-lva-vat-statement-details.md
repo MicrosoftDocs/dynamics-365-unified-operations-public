@@ -18,12 +18,11 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266864
 ms.search.region: Latvia
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -75,3 +74,6 @@ To generate a VAT XML file, on the **Sales tax payments** page, select one or mo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

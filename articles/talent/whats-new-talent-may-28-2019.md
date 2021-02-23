@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (May 28, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for May 28, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 05/28/2019
 ms.topic: article
 ms.prod: 
@@ -18,18 +18,19 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: Talent
 
 ---
 # What's new or changed in Dynamics 365 Talent (May 28, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
@@ -48,9 +49,9 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2319.
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-In this release, the following Common Data Service entities now support custom fields: Benefit calc rate detail, Work calendar holiday line, and Employment.
+In this release, the following Dataverse tables now support custom columns: Benefit calc rate detail, Work calendar holiday line, and Employment.
 
 ### Copy position now includes payroll details
 When you use **Copy position** and select all of the options, the payroll details information is now included in the copy information. 
@@ -76,3 +77,6 @@ Organizations might require reason codes for specific leave types when employees
 ### Provide a leave and absence transaction list for HR
 
 The ability to track employee time off and understand how time off is calculated not only helps HR answer employee questions, but also helps ensure accurate time-off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind time-off balances.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

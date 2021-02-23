@@ -18,7 +18,6 @@ ms.search.form: BankAccountTable, BankCodaAccountStatement, BankCodaAccountState
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262534
 ms.search.region: Belgium
@@ -65,3 +64,6 @@ After processing bank statement transactions is complete, a new general ledger j
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

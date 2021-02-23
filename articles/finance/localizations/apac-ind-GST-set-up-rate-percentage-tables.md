@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -88,3 +87,6 @@ To check for existing dupclicates, select **Show Duplicates**, and then delete t
 ### Enter non-exist master data
 
 When **Tax setup validation** is enabled, the system will verify entered and imported master data including HSN and SAC.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

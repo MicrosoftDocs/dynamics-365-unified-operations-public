@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21861
 ms.assetid: 45699dd5-5e95-484b-8eb9-7bf32a4cf487
@@ -71,3 +70,6 @@ You can find known issues in Finance and Operations by using the Issue search to
 |                         Microsoft Dynamics AX                         | Platform update 1  | 7.0.4127.16103 |   May 2016    |                                        Known issue in May 2016 release                                         |
 |                         Microsoft Dynamics AX                         |        7.0         | 7.0.4030.16079 | February 2016 |                                      Known issue in February 2016 release                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

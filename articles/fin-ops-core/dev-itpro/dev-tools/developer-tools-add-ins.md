@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27521
 ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
@@ -46,3 +45,6 @@ To make it easier to create your own add-ins, you can select the **Dynamics Deve
 For more information on add-ins, see:
 - [Visual Studio add-ins that support form patterns](../user-interface/form-pattern-add-ins.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Platform 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -118,3 +117,6 @@ The process described in [Upgrade data in development or demo environments](../m
 
 ## What do I need to know if I am developing for Commerce?
 If you are developing for Dynamics 365 Commerce, configuration steps and other important information is described in [Development in cloud-hosted development environments without admin access](../../../retail/dev-itpro/cloud-dev-box.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

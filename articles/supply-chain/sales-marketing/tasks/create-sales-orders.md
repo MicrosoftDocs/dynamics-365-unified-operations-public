@@ -17,12 +17,11 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmF
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -42,7 +41,7 @@ This procedure shows you how to create a sales order. You can use the procedure 
 
 ## Enter sales order line details
     
-The products sold by your organization may come in variants differentiated by dimensions, such as configuration, color, size, and style. Also, products may be set up to use storage dimensions, such as site, warehouse, and pallet, and racking dimensions, such as batch and serial numbers. When these dimensions are assigned, you must select the values for those dimensions on the order line. To improve order entry efficiency, you may want to add the respective dimension fields to the order grid.
+The products sold by your organization may come in variants differentiated by dimensions, such as configuration, color, size, and style. Also, products may be set up to use storage dimensions, such as site, warehouse, and pallet, and tracking dimensions, such as batch and serial numbers. When these dimensions are assigned, you must select the values for those dimensions on the order line. To improve order entry efficiency, you may want to add the respective dimension fields to the order grid.
     
 1. Under the **Sales order lines** section, select the **Sales order line**.
 2. Select **Dimensions**.
@@ -71,3 +70,6 @@ The products sold by your organization may come in variants differentiated by di
     The **Totals** page displays details about the entire order. This includes the subtotal amount, which is a sum of all line net amounts adjusted for eventual line discounts, the total invoice amount, which is a subtotal amount adjusted for eventual order-level discount, charges, and sales tax, the customer credit limit situation, and more. The invoice amount is the amount that will appear on the customer's invoice document.  
     
 3. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

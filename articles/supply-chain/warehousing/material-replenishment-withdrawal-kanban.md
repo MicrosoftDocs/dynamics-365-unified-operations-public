@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
+ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -90,3 +89,6 @@ In the following scenario, the transfer activity of the withdrawal kanban is con
 
 After a kanban is consumed at the production input location, the kanban is reported as empty, and a new kanban is added to the flow. When the kanban is created, a wave line is added to a kanban wave. When the kanban wave is processed, warehouse work for kanban picking is created. The warehouse worker processes the work for kanban picking and is directed by the work to pick the material for the kanban in a warehouse location. As this warehouse worker confirms the pick, the kanban is automatically completed, and the warehouse worker is guided to the put the material to the production input location.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

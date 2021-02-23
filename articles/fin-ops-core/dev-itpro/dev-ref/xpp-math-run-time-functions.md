@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31361
 ms.assetid: 8982f158-f638-46d7-b3f7-ba8cfd356d57
@@ -808,3 +807,6 @@ static void truncExample(Args _arg)
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

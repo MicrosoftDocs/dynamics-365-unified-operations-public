@@ -4,7 +4,7 @@
 title: Intelligent recommendations in Attract
 description: This article explains how machine learning can be used to provide recommendations for jobs and job candidates in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -61,3 +60,6 @@ The recommendations appear as cards in the **Prospects** tab of any job that has
 > If you recently started using Attract, you’ll need to wait until you have 10 or more applicants who have full profiles or resumes before you can use this capability.
 
 To avoid potential bias in the recommendations, Attract only scans candidate profiles for skills, qualifications, and other keywords that match the job description. In addition, Attract removes personally identifying information from candidate profiles prior to evaluation.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
 
@@ -244,3 +243,6 @@ Record G140 is generated to identify the fiscal document of CIAP operations. The
 | 7      | VL\_ICMS\_ST\_APLICADO  | The ICMS-ST amount of the incoming fiscal document. This amount comes from the **ICMS-ST** column of the CIAP assessment. |
 | 8      | VL\_ICMS\_FRT\_APLICADO | The ICMS amount of the incoming fiscal document. This amount comes from the **ICMS on the freight** column of the CIAP assessment. |
 | 9      | VL\_ICMS\_DIF\_APLICADO | The ICMS-DIF amount of the incoming fiscal document. This amount comes from the **ICMS-DIF** column of the CIAP assessment. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@
 
 title: Onboard vendors
 description: This topic describes the process for onboarding new vendors. It explains the actions that are required by various roles during this process.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,21 +13,21 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage  
+ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2017-12-31 
 ms.dyn365.ops.version: 7.3
 ---
 
 # Onboard vendors
+
 [!include [banner](../includes/banner.md)]
 
 ---
@@ -178,3 +178,6 @@ By using the **Delete** action on the prospective vendor registration request, y
 |         Approved         |                                                                               The vendor request is approved.                                                                               |                                                                                                   The prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted.                                                                                                    |
 |         Rejected         |                                                                               The vendor request is rejected.                                                                               |                                                                                                   The prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

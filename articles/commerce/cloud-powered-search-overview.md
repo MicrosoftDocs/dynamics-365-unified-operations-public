@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -86,3 +85,6 @@ Enhanced sorting in Dynamics 365 Commerce lets customers sort, search, and brows
 [Default category landing page and search results page overview](category-search-page-overview.md)
 
 [Manage SEO metadata](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.search.form: VehicleModelTable_W, LtInvoiceAutoNumberingGroups, LtInvoiceAuto
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Lithuania
 # ms.search.industry: 
-ms.author: knelson
+ms.author: kfend
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -97,3 +96,6 @@ This procedure is intended for accountants who are responsible for fixed assets.
 3. Click OK.
     * After the report is generated, all transportation details will be printed.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

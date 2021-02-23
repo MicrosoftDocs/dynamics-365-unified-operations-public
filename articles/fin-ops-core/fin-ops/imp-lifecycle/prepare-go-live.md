@@ -5,7 +5,7 @@ title: Prepare for go-live
 description: This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 09/02/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -101,7 +100,7 @@ Regardless of whether the environment is a cloud-hosted environment or a downloa
 
 ## FastTrack Go-live assessment
 
-All customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your Production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md).
+All customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md).
 
 About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist. 
 
@@ -124,6 +123,9 @@ This will set the environment back into a state of **Configure** and allow you t
 
 ## Requesting the production environment
 
+> [!NOTE]
+> The production environment is used exclusively for running your business operations and shouldn't be used for testing. You will be able to perform the cutover, and if planned, to mock the cutover in production. To test the solution, you must use a UAT environment, which is designed with the necessary elements and services for testing.
+
 After you've completed the analysis, design and develop, and test phases in the LCS methodology, and the go-live assessment has concluded that the project is ready, you can request your production environment.
 
 We recommend that you select a service account, for example a generic user account, as the Admin user of the environments that you deploy. If you use a named user account, you might not be able to access an environment if that user isn't available. Here are some scenarios where the Admin user must access an environment:
@@ -136,3 +138,6 @@ Your production environment should be deployed to the same datacenter where your
 After you've signed off on the request for the production environment, Microsoft is responsible for deploying the production environment for you. For **Microsoft Managed** environments, the Microsoft service level agreement (SLA) for deployment of a production environment is 48 hours. The production environment can be deployed at any time within 48 hours after you submit the request, provided that your usage profile doesn't require additional information. For **Self-Service** environments, the deployment will take around 30 minutes after the production request has been submitted. You can view the progress of the deployment in LCS. Typically, the status of the production environment request remains **Queued** for a few hours before it's changed to **Deploying**.
 
 When you submit the deployment request, a service request for the Microsoft Dynamics Service Engineering (DSE) team is automatically created. You can view this service request in the **Service requests** list in LCS. If the DSE team has questions that prevent them from deploying the production environment, they will add a comment to the service request. For example, the DSE team might ask that you update the subscription estimate or change the datacenter. In some cases, you might have to clear the sign-off from the production deployment request to make changes. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

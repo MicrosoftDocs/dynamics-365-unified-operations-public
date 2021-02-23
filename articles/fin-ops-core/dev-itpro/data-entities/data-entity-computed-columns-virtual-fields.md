@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17891
 ms.assetid: 88d230af-7d3d-49b3-bf19-69ecf81ed751
@@ -245,3 +244,6 @@ The following **main** method tests your computed and virtual fields. Both field
 If the X++ method that generates the SQL for a computed column throws an exception, DbSync catches the exception, **sets the value of that column to `NULL`**, and logs a *warning*.
 
 Developers are advised to check configuration keys manually in computed column methods to avoid hitting a `NULL` value, if the generation failed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

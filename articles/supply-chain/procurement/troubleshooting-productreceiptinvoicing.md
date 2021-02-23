@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -113,3 +112,6 @@ The following procedure shows one way to reproduce the issue.
 ### Issue resolution
 
 This depends on the parameter settings for invoices and invoice groups. For more information, see the following blog post: [Accounting for Purchase charge and Stock variation](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

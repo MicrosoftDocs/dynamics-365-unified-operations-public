@@ -18,7 +18,6 @@ ms.search.form: ProjCategory, RouteCostCategoryPrice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78153
 ms.assetid: a3fdc76c-0a27-4723-b1c7-4322f707d89e
@@ -60,3 +59,6 @@ Some types of production work can apply to project time estimates and reporting.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -67,3 +66,6 @@ In Retail version 10.0.3 and later, the following capabilities that are related 
 - During reconciliation, if the selected transaction doesn't balance, the user must enter a description of the reason for the unbalanced reconciliation. Users can select a single transaction and reconcile it with the relevant reason description as they require.
 - Users can continue to reconcile and unreconcile transactions until the shift is closed. After a shift is closed, the transactions can't be unreconciled.
 - When a user chooses to close a shift, Commerce validates that there are no unreconciled cash management transactions in the shift. Users can't close a shift if there are unreconciled transactions.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

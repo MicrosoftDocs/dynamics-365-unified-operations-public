@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -478,3 +477,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Redesign InventPosting searching algorithms 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

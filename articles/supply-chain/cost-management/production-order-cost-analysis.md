@@ -18,7 +18,6 @@ ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79634
 ms.assetid: ded5da04-f787-49f7-b5e5-75c2a2b92930
@@ -69,3 +68,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

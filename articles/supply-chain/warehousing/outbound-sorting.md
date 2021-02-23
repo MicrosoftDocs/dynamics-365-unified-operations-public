@@ -12,12 +12,10 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -671,3 +669,6 @@ You must complete the sorted inventory picking work. When it's completed, the in
     Work is completed.
 
 From this point forward, all other warehouse processes apply.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

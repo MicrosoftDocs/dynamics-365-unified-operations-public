@@ -18,14 +18,13 @@ ms.search.form: TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 
@@ -88,3 +87,6 @@ The following illustration shows the fixed asset balance.
 The following illustration shows the voucher that is posted.
 
 [![Net book value](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

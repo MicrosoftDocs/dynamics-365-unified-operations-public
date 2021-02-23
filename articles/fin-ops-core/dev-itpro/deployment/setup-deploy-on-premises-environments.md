@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.assetid: 
 ms.search.region: Global
@@ -44,3 +43,6 @@ For setup instructions, see:
 > [!NOTE]
 > The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
 > If you have questions or feedback about the content below, please post them in the **Comments** section at the bottom of this page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,7 +15,6 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
@@ -48,3 +47,6 @@ The following catalog is organized from core knowledge to specific domains, and 
 | Content  | Description  | Format  | Length    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Configure and work with e-Commerce in Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/)              | The online channels and the e-Commerce site of Dynamics 365 Commerce enable retailers to create an online presence of their brand. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -63,3 +62,6 @@ This is the second of five procedures that demonstrate the customer payment proc
     * For example, select the "DEMF OPER" bank account.  
 6. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

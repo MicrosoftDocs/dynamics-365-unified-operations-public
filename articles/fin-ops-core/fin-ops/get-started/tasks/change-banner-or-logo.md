@@ -17,7 +17,6 @@ ms.search.form: OMLegalEntity, DefaultDashboard
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -43,3 +42,6 @@ The following procedure lists the steps that system administrators can use to up
 6. Go to **Navigation pane > Modules > Common > Common > Default dashboard**. You should see the new banner or logo image on the dashboard.  
     
     You may need to change your company, using the company picker, to the one you uploaded the banner for.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

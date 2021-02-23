@@ -12,7 +12,6 @@ ms.service: dynamics-ax-platform
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -73,8 +72,6 @@ The syntax that is used to format text for topics is named [Markdig](https://git
 
 You can convert content from Microsoft Word to Markdown by using open-source tools or other tools. In this way, you can easily recycle content.
 
-> [!IMPORTANT]
-> Although the [Writage](http://www.writage.com/) plug-in for Word can be useful for converting existing content to Markdown, we recommend that you **not** use it to edit Markdown files in Word. Otherwise, when you save a Markdown file, all metadata tags and some of the formatting are lost.
 
 ### Get updates from Microsoft
 
@@ -105,3 +102,6 @@ You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev
 [Visual Studio Code](https://code.visualstudio.com/)  
 [Atom](https://atom.io/)  
 [DocFx](https://dotnet.github.io/docfx/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

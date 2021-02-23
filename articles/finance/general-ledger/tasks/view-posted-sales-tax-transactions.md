@@ -17,12 +17,11 @@ ms.search.form: TaxTrans, TaxPeriod, TaxTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -52,3 +51,6 @@ This topic describes some ways to view posted sales tax transactions. You can vi
 2. On the Action Pane, select **Sales tax code**.
 3. Select **Posted sales tax**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

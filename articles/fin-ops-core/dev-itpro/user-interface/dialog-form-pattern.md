@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16061
 ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
@@ -267,3 +266,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![Previous version content](./media/dialogform10.png)](./media/dialogform10.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

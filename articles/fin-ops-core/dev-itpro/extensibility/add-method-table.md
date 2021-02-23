@@ -20,7 +20,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -80,3 +79,6 @@ class InventTableMy_EventHandler
 
 > [!NOTE]
 > It is common for event handler classes to contain handlers for any number of events. However, it is **not** good practice to put event handlers in augmentation classes. Doing so makes the event handler methods available as methods on the augmented type. This is incorrect because the event handler is intended to be called through the event, not explicitly as a method on the type.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

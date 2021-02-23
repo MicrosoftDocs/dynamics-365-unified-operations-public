@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -316,3 +315,6 @@ The Application Insights library is now ready to be consumed and used in POS.
         },
     });
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

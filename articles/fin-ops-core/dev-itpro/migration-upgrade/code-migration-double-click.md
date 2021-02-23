@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28331
 ms.assetid: ba33ee49-2053-4e3c-b0fa-123c9410265d
@@ -83,3 +82,6 @@ As you migrate mouse double-click methods, you should consider the following gui
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

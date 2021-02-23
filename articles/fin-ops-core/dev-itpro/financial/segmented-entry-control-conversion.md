@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate Segmented Entry controls
-description: This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
+description: This topic describes migration scenarios for the Segmented Entry control, a simple using SMAServiceOrderTable and a complex scenario using LedgerJournalTransDaily.
 author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25611
 ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810
@@ -1745,3 +1744,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

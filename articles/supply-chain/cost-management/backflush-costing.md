@@ -18,13 +18,12 @@ ms.search.form: LeanCosting, LeanCostingTimeBucket
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272063
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -130,3 +129,6 @@ You should run backflush costing to periodically value the WIP and produce an en
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: WHSTransportLoad
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
@@ -70,3 +69,6 @@ This setup lets you confirm a transport load that includes a full load or a part
 
 1. Select **Warehouse management** \> **Loads** \> **Transport loads**.
 2. On the Action Pane, on the **Ship and receive** tab, in the **Confirm** group, select **Transport**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

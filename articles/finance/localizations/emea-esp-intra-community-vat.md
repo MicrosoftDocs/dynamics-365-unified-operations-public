@@ -17,7 +17,6 @@ ms.search.form: VendFormletterParameters, VendParameters, TaxTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 271523
 ms.search.region: Spain
@@ -102,3 +101,6 @@ The following example shows how you can set up sales tax codes and post and prin
     ![Sales tax transaction lines](media/2_Sales_tax.png)
 
 9.  Select **Post** to post the transaction and then select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

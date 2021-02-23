@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -177,3 +176,6 @@ The notification detail entity has the following properties.
 
 3. Debug the CRT code by attaching the CRT project to w3wp.exe. The breakpoint should be hit whenever the notification service is called from the POS.
 4. When the notification is received in the POS, select it. The notification should call the POS operation handler and run the custom logic that is written inside it.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

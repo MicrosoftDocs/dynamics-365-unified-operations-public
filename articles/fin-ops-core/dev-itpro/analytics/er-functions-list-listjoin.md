@@ -18,7 +18,6 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
 ms.assetid: 
@@ -89,3 +88,6 @@ The structure of this list consists of a single **Amount** field of the `Real` t
 [List functions](er-functions-category-list.md)
 
 [Debug data sources of an executed ER format to analyze data flow and transformation](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

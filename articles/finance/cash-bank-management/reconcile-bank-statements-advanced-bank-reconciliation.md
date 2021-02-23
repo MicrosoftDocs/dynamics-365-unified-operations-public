@@ -18,7 +18,6 @@ ms.search.form: BankReconciliationWorksheet
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
@@ -101,3 +100,6 @@ Bank statement transactions that you marked as **New** on the reconciliation wor
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

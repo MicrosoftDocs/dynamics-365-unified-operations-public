@@ -17,7 +17,6 @@ ms.search.form: RetailChannelOperationsWorkspace, RetailOperatingUnitPicker, Sys
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -47,3 +46,6 @@ This procedure walks through configuring and running recurrent batch jobs to cre
 11. Click OK.
 12. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

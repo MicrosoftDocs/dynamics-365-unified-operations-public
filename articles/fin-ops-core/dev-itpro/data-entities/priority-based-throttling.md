@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
@@ -113,3 +112,6 @@ You can use a set of predefined queries to get raw logs for an issue. You can th
 4. On the **Environment monitoring** page, select the **Activity** tab to view the **Raw logs** page. 
 5. Select the **Query name**, and then select **All throttling events** for all Odata and custom services activities.
 6. Select the **Query name**, and then select **Requests throttled** for all Odata and custom services requests that have been throttled.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

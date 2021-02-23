@@ -17,12 +17,11 @@ ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVe
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -60,3 +59,6 @@ This task was created using the demo data company JPMF.
 12. Click Voucher.
     * Verify that an accounting voucher is generated for the endorsement.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.search.form: TaxPeriod
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -54,3 +53,6 @@ This task uses the USMF demo company.
 16. Select **New period interval**. Once the first period interval has been entered, new periods can be created automatically. You can come back and add new period intervals as required.  
 17. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

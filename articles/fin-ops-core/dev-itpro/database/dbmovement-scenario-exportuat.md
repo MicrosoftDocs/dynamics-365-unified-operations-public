@@ -18,11 +18,10 @@ ms.technology:
 audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laneswenka
+ms.author: laswenka
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 8.1.3
 
@@ -42,7 +41,7 @@ In this tutorial, you will learn how to:
 > * Download the database backup.
 > * Import the database, and prepare it so that it can be used in a developer environment.
 
-As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into his or her development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
+As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into the development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
 
 > [!IMPORTANT]
 > Database copy to a build environment is not supported. Learn more about [build environments](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments).
@@ -268,3 +267,6 @@ The following guidelines can help you achieve optimal performance:
 - Always import the .bacpac file locally on the computer that runs the SQL Server instance. Don't import it from Management Studio on a remote machine.
 - In a one-box environment that is hosted in Azure, put the .bacpac file on drive D when you import it. (A one-box environment is also known as a Tier 1 environment.) For more information about the temporary drive on Azure virtual machines (VMs), see the [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) blog post.
 - Grant the account that runs the SQL Server Windows service [Instance File Initialization](https://msdn.microsoft.com/library/ms175935.aspx) rights. In this way, you can help improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: VendTable, LogisticsPostalAddress, RegNumTaxIdLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -67,3 +66,6 @@ Before you can complete this procedure you must set up VAT IDs. This procedure a
 25. In the Tax exempt number field, enter or select a value.
 26. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

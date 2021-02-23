@@ -18,7 +18,6 @@ ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 
 ms.assetid: 
@@ -70,3 +69,5 @@ You can find opinions, news, and other information about Cost management on the 
 #### Task guides
 
 Additional help is available as task guides. To access task guides, click the Help button on any page.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

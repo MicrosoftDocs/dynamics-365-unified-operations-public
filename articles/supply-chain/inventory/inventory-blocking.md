@@ -18,7 +18,6 @@ ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
@@ -74,3 +73,6 @@ Additional resources
 [Quality management processes](quality-management-processes.md)
 
 [Inspect the quality of goods](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

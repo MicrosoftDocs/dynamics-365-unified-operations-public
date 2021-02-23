@@ -18,7 +18,6 @@ ms.search.form: AutomatedEntityStoreRefresh
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
@@ -65,3 +64,6 @@ An admin can also refresh any aggregate measurement on demand by clicking the **
 
 > [!IMPORTANT]
 > When automated refresh is enabled, the system can disable the refresh of aggregate measurements. You must revisit aggregate measurements and validate that appropriate refresh intervals have been applied.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

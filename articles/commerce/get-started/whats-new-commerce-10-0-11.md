@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -49,7 +48,7 @@ The following features are included in this release. The feature titles link to 
 - [Notifications and mini-cart](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
 - [Theme extensions](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
 - [New events and placeholders for transactional emails](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/new-events-placeholders-transactional-emails)
-- [Commerce SDK updated to Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk)
+- [Commerce SDK updated to Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md)
 
 ## Additional resources
 
@@ -76,3 +75,6 @@ The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgr
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
 
@@ -229,3 +228,6 @@ To enable manual execution of a postponed fiscal registration, you should add a 
     1. Select the layout to update.
     2. Add a new button, and set the **Complete fiscal registration process** button property.
     3. On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -66,3 +65,6 @@ The system administrator uses the information in this section to define network 
 2. On the **Network printers** page, add new printers. For each printer, specify a name, description, path, and status. Make sure that the printer path matches the network path of the installed printer.
 
 Items that are marked **Active** immediately become available to application users, so that they can begin to print document-style reports on network printer devices.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

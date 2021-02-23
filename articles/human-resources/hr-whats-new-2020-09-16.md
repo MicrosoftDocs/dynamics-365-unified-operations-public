@@ -32,6 +32,10 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (September 16, 2020)
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3557. The numbers in parentheses next to some features refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## Included in this release
@@ -43,7 +47,7 @@ This topic describes features that are either new or changed in Dynamics 365 Hum
 
 - If you set **Restrict access to worker information** to yes in **Advanced access** in **Human Resources Shared parameters**, benefits forms now show only the appropriate workers (393384).
 
-- New calender generation options in the **WorkCalendar** entity (477055):<br>- Default ending time<br>-	Default starting time<br>-	Is Friday working day<br>-	Is Monday working day<br>-	Is Saturday working day<br>- Is Sunday working day<br>- Is Thursday working day<br>- Is Tuesday working day<br>- Is Wednesday working day<br>- Work calendar holiday ID
+- New calendar generation options in the **WorkCalendar** entity (477055):<br>- Default ending time<br>-	Default starting time<br>-	Is Friday working day<br>-	Is Monday working day<br>-	Is Saturday working day<br>- Is Sunday working day<br>- Is Thursday working day<br>- Is Tuesday working day<br>- Is Wednesday working day<br>- Work calendar holiday ID
 
 - The **LeaveBankTransactionV1** entity now includes the reason code (477823).
 
@@ -114,9 +118,9 @@ This release includes additional calendar options for leave and absence calendar
 
 ## Coming Soon
 
-### Checklist entities included in Common Data Service
+### Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Dataverse.
 
 ### Benefits management reason codes
 
@@ -128,3 +132,6 @@ Benefits management reason codes will soon be combined with existing reason code
 [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -80,3 +79,6 @@ The outputs and error messages from the scripts are written, as .log and .err fi
 
 Execution of the scripts is also logged as Event Tracing for Windows (ETW) events. You can view these events in Event Viewer. If a script produces any errors, an error event is logged, but deployment continues as usual.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

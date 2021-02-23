@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12911
 ms.assetid: 0bc7bde2-6150-4a80-8738-9a5201b51df2
@@ -185,3 +184,6 @@ This section will have answers to frequently asked questions that are related to
 **HcmWorkerLookup (Lookup with preview)** 
 
 ![Example of lookup form with preview](./media/lookupform9.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -71,3 +70,6 @@ Enable change tracking for Data entity projects.
 ### Projects (Supply Chain Management to Field Service): Projects
 
 [![Template mapping in Data integration](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

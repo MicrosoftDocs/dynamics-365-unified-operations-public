@@ -18,7 +18,6 @@ ms.search.form: FiscalDocument_BR, FiscalDocumentAmounts_BR, FiscalDocumentCharg
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269094
 ms.search.region: Brazil
@@ -75,3 +74,6 @@ After a fiscal document is posted, the user can see the following information.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

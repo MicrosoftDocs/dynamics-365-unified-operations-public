@@ -18,7 +18,6 @@ ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -175,3 +174,6 @@ The modified template is used to generate the free text invoice report for the s
 [Business document management overview](er-business-document-management.md)
 
 [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

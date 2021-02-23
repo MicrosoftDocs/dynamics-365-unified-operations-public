@@ -18,13 +18,12 @@ ms.search.form: SalesATP, SalesAvailableDlvDates, SalesCarrier
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 193933
 ms.assetid: 676fc53a-fa25-4688-9f26-1005316763b8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -42,6 +41,12 @@ Order promising calculates the earliest ship and receipt dates, and is based on 
 -   **ATP (available-to-promise)** – ATP is the quantity of an item that is available and can be promised to a customer on a specific date. The ATP calculation includes uncommitted inventory, lead times, planned receipts, and issues.
 -   **ATP + Issue margin** – The shipping date is equal to the ATP date plus the issue margin for the item. The issue margin is the time that is required to prepare the items for shipment.
 -   **CTP (capable-to-promise)** – Availability is calculated through explosion.
+
+> [!NOTE]
+> When a sales order is updated, the order promising information is only updated if the existing order promising date can't be fulfilled, as illustrated in the following examples:
+> 
+> - **Example 1**: The current order promising date is July 20, but due to increased quantity, you won't be able to deliver until July 25. Because the current date can no longer be met, order promising is triggered.
+> -  **Example 2**: The current order promising date is July 20, but due to decreased quantity, it is now possible to deliver on July 15. However, because the current date can still be fulfilled, order promising is not triggered, and July 20 remains the order promising date.
 
 ## ATP calculations
 The ATP quantity is calculated by using the “cumulative ATP with look-ahead” method. The main advantage of this ATP calculation method is that it can handle cases where the sum of issues among receipts is more than the latest receipt (for example, when a quantity from an earlier receipt must be used to meet a requirement). The “cumulative ATP with look-ahead” calculation method includes all issues until the cumulative quantity to receive exceeds the cumulative quantity to issue. Therefore, this ATP calculation method evaluates whether some of the quantity from an earlier period can be used in a later period.  
@@ -80,3 +85,6 @@ Therefore, the ship date is set to 10 days from now, based on the ATP calculatio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

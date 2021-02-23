@@ -17,7 +17,6 @@ ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
@@ -563,3 +562,6 @@ By querying these tables to obtain the JSON string, you can easily check the res
 
 - [Tax engine overview](tax-engine.md)
 - [Extend tax engine configurations](extend-tax-engine-configurations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

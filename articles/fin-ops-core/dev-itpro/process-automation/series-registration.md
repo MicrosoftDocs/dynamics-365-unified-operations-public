@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -181,3 +180,6 @@ The **ProcessScheduleSeriesBackgroundValidationParameters** class contains the v
 | `public ProcessScheduleDateTime parmPolledNextScheduledDateTime(ProcessScheduleDateTime _polledNextScheduledDateTime = polledNextScheduledDateTime)` | The next scheduled run of the process in Coordinated Universal Time (UTC). |
 | `public ProcessScheduleDateTime parmSleepFromTime(ProcessScheduleDateTime _polledSleepFromTime = polledSleepFromTime)` | Specifies when the sleep should start. The process automation framework lets system admins put a process to sleep for a time range. The process isn't run during this time range, regardless of the setting of **parmPolledNextScheduleDateTime()**. This time range is a maximum of 16 hours and can span the date boundary. |
 | `public ProcessScheduleDateTime parmSleepToTime(ProcessScheduleDateTime _polledSleepToTime = polledSleepToTime)` | Specifies when the sleep should end. The process automation framework lets system admins put a process to sleep for a time range. The process isn't run during this time range, regardless of the setting of **parmPolledNextScheduleDateTime()**. This time range is a maximum of 16 hours and can span the date boundary.  |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -39,3 +38,6 @@ To generate a business event from an alert, in the **Create alert rule** dialog 
 In order for alerts to be processed, the batch processes for change-based and/or due-date alerts should be set for batch processing for due-date events. For more information, see [Batch processing for due-date events](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/alerts-managing#set-up-processing-for-change-based-alerts).
 
 The business event for the change-based alert and/or the due date alert must also be active for the alert to be sent out as a business event. To learn more about the activation process, see [Activating business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page#activating-business-events).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -222,3 +221,6 @@ On account 26.100, the **Department** dimension accumulates the amounts that you
 10. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section. Repeat the allocation operation for all warehouses and dimensions that you want to do allocation for.
 
 As you've seen, the system lets you determine the adjustment amount based on the balance on the account in the context of the dimensions. You can also allocate it to the cost price of inventory or warehouse receipts.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

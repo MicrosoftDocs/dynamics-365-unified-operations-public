@@ -18,7 +18,6 @@ ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -65,3 +64,6 @@ For more information, see the following topics:
 
 - [Financial dimensions](financial-dimensions.md)
 - [Create and assign advanced rule structures](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

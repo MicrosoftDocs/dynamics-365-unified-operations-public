@@ -14,7 +14,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -129,3 +128,6 @@ The preset's style values are made active across your public-facing website.
 [Add languages to your site](add-languages-to-site.md)
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

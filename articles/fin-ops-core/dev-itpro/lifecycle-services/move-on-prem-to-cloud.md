@@ -5,7 +5,7 @@ title: Move LCS implementation projects from on-premises to the cloud
 description: This topic explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
 author: MartinWalkerDynSA
 manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 02/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -56,7 +55,7 @@ You should consider developing your updated interfaces in such a way that they c
 
 1. Deploy a tier-2 environment.
 2. Apply the same code package that is applied in your on-premises production environment (or, as appropriate, in the current build from the cloud integration development branch that was discussed in the previous section). This code package should be a single, complete deployable package that includes any independent software vendor (ISV) solutions and licenses.
-3. In SQL Server Management Studio (SSMS), run the following Transact-SQL (T-SQL) commands against the sandbox database to preserve the current Admin account and Azure AD tenant ID information in that database. Save the results.
+3. In SQL Server Management Studio (SSMS), run the following Transact-SQL (T-SQL) commands against the sandbox database to preserve the current Admin account, Azure AD tenant ID information, and Data management framework (DMF) shared working directory in that database. Save the results.
 
     ```sql
     SELECT SID,NETWORKALIAS,NETWORKDOMAIN,IDENTITYPROVIDER from USERINFO WHERE ID = 'Admin'
@@ -65,6 +64,7 @@ You should consider developing your updated interfaces in such a way that they c
     SELECT TENANTID from PROVISIONINGMESSAGETABLE
     SELECT TENANTID from B2BINVITATIONCONFIG
     SELECT TENANTID from RETAILSHAREDPARAMETER
+    SELECT SHAREDFOLDERPATH from DMFPARAMETERS
     ```
 
 4. Copy the database from on-premises to online. The export and import process that you use is the same process that is described in the [Golden configuration promotion](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig) database movement tutorial. However, in this case, the source database is the existing on-premises production SQL database, and you must use the sqlpackage.exe approach that is described for importing into a developer environment. If you use the LCS self-service database import option instead, some data won't be imported, as noted in the warnings about data elements that are cleaned up. The target database information that is available in the LCS environment details must be used instead of the placeholders that are shown in the following code.
@@ -73,7 +73,7 @@ You should consider developing your updated interfaces in such a way that they c
     SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:<Azure SQL database server> /tdn:<target database name> /tu:<axdbadmin user from LCS> /tp:<axdbadmin password from LCS> /p:CommandTimeout=1200
     ```
 
-5. Restore the Admin account and Azure AD tenant ID information. Also remove the **SF** schema and its tables, if they are present.
+5. Restore the Admin account, Azure AD tenant ID, and DMF shared directory values. Also remove the **SF** schema and its tables, if they are present.
 
     ```sql
     UPDATE USERINFO SET SID='<preserved SID>', NETWORKALIAS='<preserved NETWORKALIAS>', NETWORKDOMAIN='<preserved NETWORKDOMAIN>', IDENTITYPROVIDER='<preserved IDENTITYPROVIDER>' WHERE ID = 'Admin'
@@ -82,6 +82,7 @@ You should consider developing your updated interfaces in such a way that they c
     UPDATE PROVISIONINGMESSAGETABLE SET TENANTID='<preserved TENANTID>'
     UPDATE B2BINVITATIONCONFIG SET TENANTID='<preserved TENANTID>'
     UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserved TENANTID>'
+    UPDATE DMFPARAMETERS SET SHAREDFOLDERPATH='<preserved SHAREDFOLDERPATH>'
     DROP TABLE IF EXISTS SYNCLOG
     DROP TABLE IF EXISTS SYNCLOCK
     DROP SCHEMA IF EXISTS SF
@@ -189,3 +190,6 @@ Document handling attachments for Finance + Operations (on-premises) environment
     ```
 
 5. Test a sample of the document handling attachments to make sure that they can now be accessed in the sandbox environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

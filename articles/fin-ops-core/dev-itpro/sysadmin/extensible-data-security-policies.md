@@ -17,7 +17,6 @@ ms.search.form:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.assetid: 
@@ -112,3 +111,6 @@ Calavon [blog]](https://dynamicspedia.com/tag/xds/)
 
 - [Extensible Data Security (XDS) Framework in D365FO - by Alex
 Meyer [blog]](https://alexdmeyer.com/2019/02/20/extensible-data-security-xds-framework-in-d365fo/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

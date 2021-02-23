@@ -18,7 +18,6 @@ ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChan
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16401
 ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
@@ -67,3 +66,6 @@ The following example illustrates the tasks involved in setting up a channel dis
 ## Additional resources
 
 [Price adjustments and discounts](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PCProductLooku
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
@@ -101,3 +100,6 @@ This procedure was created using the demo data company MYMF.
 20. Click OK.
 21. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

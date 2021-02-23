@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
@@ -310,3 +309,6 @@ The follow illustration shows an example of another page of the report that is g
 
 - [ER Design a configuration for generating reports in OPENXML format (November 2016)](tasks/er-design-reports-openxml-2016-11.md)
 - [Design ER configurations to generate reports in Word format](tasks/er-design-configuration-word-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

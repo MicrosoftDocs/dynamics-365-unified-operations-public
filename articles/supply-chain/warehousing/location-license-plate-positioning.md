@@ -12,12 +12,10 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -285,3 +283,6 @@ Now that the *Location license plate positioning* feature has been set up, and t
     ![Position 1 location](media/LocationLicensePlatePositioning.png "Position 1 location")
 
 1. Enter the license plate ID that you created for the location, and then follow the prompts to pick the sales order.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
+ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
@@ -78,3 +77,6 @@ item = new AtlCreatorProductsReleasedVariant()
 ## When should creators be used instead of entities?
 
 For information that will help you choose between entities and creators, see [Should I implement an entity or a creator class](atl-faq.md#should-i-implement-an-entity-or-a-creator-class).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

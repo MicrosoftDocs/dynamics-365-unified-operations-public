@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27191
 ms.assetid: 64b8f266-a9e1-48ee-93c7-e082f21ddfa7
@@ -56,3 +55,6 @@ For more information, click a link. In the next screen, you can see how many SQL
 [![Example of list of SQL queries triggered by call](./media/3_timer.png)](./media/3_timer.png) 
 
 This information can help you to understand what to trace and where to start troubleshooting. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

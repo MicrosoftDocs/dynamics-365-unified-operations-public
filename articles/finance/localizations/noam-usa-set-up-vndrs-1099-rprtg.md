@@ -17,7 +17,6 @@ ms.search.form: PSNCanadianHSTTaxFeature
 audience: Application User
 ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core 
 ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -72,7 +71,12 @@ Follow these steps to set up vendors for 1099 reporting.
 
 ## Associate a 1099 default value with a main account
 
-Some invoice lines that are identified for 1099 federal tax reporting might be reported for a different 1099 box than the vendor's default box. Because vendors can receive payments that correlate with multiple 1099 boxes, it's best to use a main account on a line for a funding distribution. This approach ensures consistent reporting of payments to a specific 1099 box. You can now recalculate the 1099 box values for vendors to more accurately report the accumulated balances to the IRS.
+Some invoice lines that are identified for 1099 federal tax reporting might be reported for a different 1099 box than the vendor's default box. 
+
+> [!Note]
+> This functionality is available only if you're using Public sector. 
+
+Because vendors can receive payments that correlate with multiple 1099 boxes, it's best to use a main account on a line for a funding distribution. This approach ensures consistent reporting of payments to a specific 1099 box. You can now recalculate the 1099 box values for vendors to more accurately report the accumulated balances to the IRS.
 
 > [!NOTE]
 > The 1099 box and amount can be filled in on the invoice only if the **Report 1099** check box on the **Tax 1099** FastTab of the vendor details page is selected.
@@ -85,6 +89,9 @@ Some invoice lines that are identified for 1099 federal tax reporting might be r
 ## Update 1099 boxes and amounts
 
 You can update the 1099 reporting boxes and amounts for all paid invoices for a calendar year, based on the current assignment of main accounts to 1099 boxes.
+
+> [!Note]
+> This functionality is available only if you're using Public sector. 
 
 1. Go to **Accounts payable \> Periodic tasks \> Tax 1099 \> Update 1099 information by main account**.
 2. Select a date range and a vendor, and then select **OK**.
@@ -110,3 +117,6 @@ The system evaluates any vendor where the **Report 1099** option selected. It th
 
 > [!NOTE]
 > A new column that is named **Created by the 1099 update process** has been added to the **Tax 1099 transactions** page. The check boxes in this column are selected to show that the new update process updated the 1099 balance. If the check box for a row is cleared, standard functionality was used to create the transaction. To open the **Tax 1099 transactions** page, go to **Accounts payable \> Periodic tasks \> Vendor settlement for 1099s \> Vendor 1099 transactions**. Alternatively, go to **Accounts payable \> Vendors \> All vendors**, select a vendor, and then, on the Action Pane, on the **Vendor** tab, in the **Tax information** group, select **Vendor settlement for 1099s \> Vendor 1099 transactions**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -5,7 +5,7 @@ title: View vendor invoice automation results (preview)
 description: This topic explains how to view the status of vendor invoices that are in the automated submit-to-workflow process.
 author: abruer
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -28,10 +27,9 @@ ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# View vendor invoice automation results (preview)
+# View vendor invoice automation results
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to view the status of vendor invoices that are in the automated submit-to-workflow process. Details of the automation history are maintained for each imported vendor invoice. Depending on the business processes that you've automated, the **Pending vendor invoices** page shows **Automated receipt match status** and **Automated submit to workflow status** values. You can view the details and make a plan to focus on the invoices that failed an automated step. Then, after you correct the issue, you can resume the automated process for the imported invoice.
 
@@ -43,3 +41,6 @@ If an imported invoice is subject to the submit-to-workflow process, you can vie
 - **Paused** – The automated processes that are defined on the **Accounts payable parameters** page have run, but at least one step in the process failed. The **Paused** status is also applied if the **Include in automated processing** field is set to **No**. You can view the failures by selecting **View most recent results**.
 - **In workflow** – The imported invoice has been submitted to the workflow system, either by the automated submit-to-workflow process or manually.
 - **Workflow complete** – The workflow process has been completed for the imported invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

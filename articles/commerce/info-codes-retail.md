@@ -18,7 +18,6 @@ ms.search.form: RetailInfocodeTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
@@ -61,3 +60,6 @@ You can link info codes so that when one info code is triggered, another info co
 **Example 2: Link info codes to info code groups**
 
 When you sell certain products, for example mobile devices, you always want to collect a specific set of information, such as telephone number, mobile equipment identifier (MEID), and serial number. However, you also want to collect different information for a tablet versus a mobile phone. You can set up an info code group that includes prompts for the telephone number, MEID, and the serial number, and then link the info code group to an individual info code. When the product-specific info code is triggered, the info code group can be triggered next to enable you to collect the common data without having to define multiple sets of linked info codes for each device.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
