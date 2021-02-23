@@ -99,7 +99,7 @@ Log a support ticket, and Microsoft will help you perform the action on your env
 
 If your critical action isn't listed earlier in this topic, add a comment to this topic or log a documentation bug, and Microsoft will address your requirement.
 
-## What regions are supported on Self service?
+## What regions are supported on self-service?
 Beginning August 1, 2020, new projects for Finance and Operations will be onboarded to the following regions:
 
 - East US
