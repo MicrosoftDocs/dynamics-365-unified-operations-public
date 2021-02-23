@@ -54,6 +54,6 @@ To map the channel operating unit number (OUN) to a newly copied site in Commerc
 
 ## Additional resources
 
-- [Associate a Dynamics 365 Commerce site with an online channel)(../associate-site-online-store.md)
+[Associate a Dynamics 365 Commerce site with an online channel)(../associate-site-online-store.md)
 
 
