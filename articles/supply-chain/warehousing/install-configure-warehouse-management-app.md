@@ -57,7 +57,7 @@ Before you can use the app, a related feature must be turned on in your system. 
 
 ## Get the Warehouse Management mobile app
 
-For smaller deployments, you might want to install the app on each device from the relevant store and then manually configure the connection to the environments that you're using. However, you can also automate app deployment and/or configuration. You might find this approach convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using. However, you can also automate app deployment and/or configuration, which can be more convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
 ### Install the app from an app store
 
@@ -69,7 +69,7 @@ The easiest way to install the app on single device is to install it from an app
 
 ### Download the app from Microsoft App Center
 
-As an alternative to downloading from an app store, you can also download the app from the Microsoft App Center. The App Center provides a bit more flexibility by providing installable packages that you can sideload. It also lets you download previous versions and may provide preview versions with upcoming features that you can try out. To download current, previous, or preview versions of the Warehouse Management mobile app from Microsoft App Center, use one of the following links:
+As an alternative to installing from an app store, you can instead download the app from the Microsoft App Center. The App Center provides a bit more flexibility by providing installable packages that you can sideload. In addition to the current version, it also lets you download previous versions and may provide preview versions with upcoming features that you can try out. To download current, previous, or preview versions of the Warehouse Management mobile app from Microsoft App Center, use one of the following links:
 
 - **Windows (UWP):** [App Center preview program - Windows](https://go.microsoft.com/fwlink/?linkid=2154406)  
     (If you download a preview version, a few extra steps are required to install it. For details, see [Install a Build from App Center](https://docs.microsoft.com/appcenter/distribution/installation).)
