@@ -114,3 +114,6 @@ The following table lists the facade classes that you can use as a starting poin
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

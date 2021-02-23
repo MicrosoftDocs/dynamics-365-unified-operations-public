@@ -55,3 +55,6 @@ To correct, adjust, or update standard costs for new items, follow these steps.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

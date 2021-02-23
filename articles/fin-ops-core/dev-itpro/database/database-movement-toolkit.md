@@ -79,3 +79,6 @@ The toolkit currently supports the following scenarios. More will be added over 
 | Initial | Toolkit uploaded to LCS Shared Asset Library.|
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

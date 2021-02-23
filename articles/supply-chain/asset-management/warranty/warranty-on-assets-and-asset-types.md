@@ -58,3 +58,6 @@ This topic explains how to set up warranties on assets and asset types in Asset 
 
 > [!NOTE]
 > When you create a work order for an asset that is covered by a vendor warranty, if the work order has an expected start date during the warranty period, you receive a notification about the warranty agreement. You can then cancel the work order, as you require.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

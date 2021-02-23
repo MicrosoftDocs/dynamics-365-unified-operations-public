@@ -224,3 +224,6 @@ The **File uploaded successfully** column contains a check mark if the file or t
 The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in application environments that use a load balancer, such as production environments. (You cannot see the behavior in one box environments). We recommend that you change the URI scheme to HTTPS in the middleware application that is trying to dequeue from the application.
 
 ![Batch job status](./media/show-batch-status.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

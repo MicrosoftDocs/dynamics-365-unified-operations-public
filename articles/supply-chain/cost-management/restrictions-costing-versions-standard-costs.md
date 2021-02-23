@@ -55,3 +55,6 @@ Related topics
 
 [Prepare to maintain standard costs for manufactured items](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

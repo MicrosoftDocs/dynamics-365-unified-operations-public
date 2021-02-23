@@ -138,3 +138,6 @@ To support interactions with dimensions as columns, for example, in the Microsof
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

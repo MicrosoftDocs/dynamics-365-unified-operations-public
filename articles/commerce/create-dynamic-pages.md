@@ -101,3 +101,6 @@ After the custom page is published, it will be served instead of the dynamic pag
 [Verify page content accessibility](verify-accessibility.md)
 
 [Online channel extensibility](e-commerce-extensibility/overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

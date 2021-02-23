@@ -60,3 +60,6 @@ If a work order must be scheduled on a specific date *and* time, you can overrid
 >[!NOTE]
 >In order to schedule a maintenance worker for the work order, that maintenance worker must be available at the expected start date and time. Worker availability is set up in the [worker calendar](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md). 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

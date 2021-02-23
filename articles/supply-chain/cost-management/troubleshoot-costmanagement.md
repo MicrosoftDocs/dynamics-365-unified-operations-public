@@ -85,3 +85,6 @@ Until Microsoft releases a solution to fix the issue, consider using the followi
 - Avoid decimal values in the standard cost. Try to define the standard cost so that the **Price quantity** field is set to *1*. If you must specify a **Price quantity** value that is more than *1*, try to minimize the number of decimal places in the unit standard cost. (Ideally, there should be fewer than two decimal places.) For example, avoid defining standard cost settings such as **Price** = *10* and **Price quantity** = *3*, because they will produce a unit standard cost of 3.333333 (where the decimal value repeats).
 - In a majority of documents, avoid having multiple lines that hold the same combination of product and financial inventory dimensions.
 - Reduce the degree of parallelization. (In this case, your system might become faster, because fewer update conflicts and retries occur.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

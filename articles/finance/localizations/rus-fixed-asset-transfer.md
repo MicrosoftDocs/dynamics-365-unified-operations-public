@@ -161,3 +161,6 @@ To automatically create lines on the **Receipt from another company** page, sele
 
     > [!NOTE]
     > You can view the information about the transfer of assets between companies on the **Receipt from another company** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

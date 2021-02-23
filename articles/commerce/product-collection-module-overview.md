@@ -116,3 +116,6 @@ The following table shows the list types that are available for selection in the
 [Product recommendations overview](product-recommendations.md)
 
 [Quick view module](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

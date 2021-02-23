@@ -92,3 +92,6 @@ After you select **Yes**, the archival job becomes active, and all XML data abou
 [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3)
 
 [Checkout module](../add-checkout-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

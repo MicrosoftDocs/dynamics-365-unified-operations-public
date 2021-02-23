@@ -64,3 +64,6 @@ For more information, see the following topics:
 
 - [Financial dimensions](financial-dimensions.md)
 - [Create and assign advanced rule structures](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -143,3 +143,6 @@ Multi-Lookup controls are similar to regular lookups except they allow multiple 
 | [OnLookupPageCreate](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreate) |OnLookupPageCreate: function(args: any, multiLookup: any): void (optional)  <br>|  |
 | [OnLookupPageCreated](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreated) |OnLookupPageCreated: function(args: any, multiLookup: any): void (optional)  <br>|  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

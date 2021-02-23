@@ -59,3 +59,6 @@ The illustration below shows the results of a maintenance schedule cost calculat
 
 ![Figure 1](media/17-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

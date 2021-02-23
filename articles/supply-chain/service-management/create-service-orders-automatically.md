@@ -74,3 +74,6 @@ When you create service orders manually or automatically from the service agreem
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

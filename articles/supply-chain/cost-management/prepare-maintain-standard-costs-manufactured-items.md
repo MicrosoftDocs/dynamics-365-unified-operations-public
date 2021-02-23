@@ -77,3 +77,6 @@ Related topics
 
 [Set up products that can be produced or procured](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

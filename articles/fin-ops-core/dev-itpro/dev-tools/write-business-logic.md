@@ -294,3 +294,6 @@ For this test, we'll be debugging the C\# code that we've written. To do this, w
 
 9.  Press **F5** to complete the **Save** operation.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -140,3 +140,6 @@ class WHSMinMaxReplenishmentScenarioTest extends SysTestCase
 ### Considerations
 
 You don't have to create a shortcut for every navigation node that you need. However, consider creating them for the navigation nodes that are frequently used.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ The new field and data for it should now be available for editing in Excel.
 [Edit financial dimensions for retail transactions](edit-financial-dim.md)
 
 [Create an Excel workbook to edit retail transactions](create-excel-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

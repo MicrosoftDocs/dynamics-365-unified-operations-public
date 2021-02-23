@@ -64,3 +64,6 @@ For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, and P
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

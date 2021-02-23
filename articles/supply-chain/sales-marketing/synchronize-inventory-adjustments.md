@@ -84,3 +84,6 @@ The following illustrations show the template mapping in Data integration.
 ### Inventory transfer (Field Service to Supply Chain Management): Inventory transfer
 
 [![Template mapping in Data integration](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

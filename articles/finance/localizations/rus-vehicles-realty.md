@@ -51,3 +51,6 @@ You can specify that the calculation of depreciation should be based on the regi
 5. In the **Removal from the register date** field, select the date when the asset should be removed from the tax register.
 
 For more information about asset depreciation, see [Calculate depreciation (Russia)](rus-depreciation-calculation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

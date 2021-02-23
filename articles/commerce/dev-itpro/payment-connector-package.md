@@ -94,3 +94,6 @@ For information about how to apply a deployable package to an environment, see [
 ## Remove a deployable package
 
 For information about how to uninstall or remove a deployable package from an environment, see [Uninstall a package](../../fin-ops-core/dev-itpro/deployment/uninstall-deployable-package.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

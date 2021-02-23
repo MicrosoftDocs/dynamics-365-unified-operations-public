@@ -144,3 +144,6 @@ if (checkoutCartId) {
 [Commerce Scale Unit customer and consumer APIs](../dev-itpro/retail-server-customer-consumer-api.md)
 
 [Call Retail Server APIs](call-retail-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

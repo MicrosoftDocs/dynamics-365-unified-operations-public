@@ -94,3 +94,6 @@ The figure below shows a screenshot of a KPI calculation for four assets.
 - You can multi-select several assets in **All assets** and click the **Asset KPIs** button on the **General** tab. Then click **OK** in the **Calculate asset KPIs** dialog to calculate KPIs for the selected assets.  
 - Results from a KPI calculation may or may not include [maintenance downtime registrations](../work-orders/maintenance-downtime.md), depending on the setup and use of maintenance downtime reason codes. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

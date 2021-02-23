@@ -52,3 +52,6 @@ You can cancel a return order, instead of deleting it, when you want to save a r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

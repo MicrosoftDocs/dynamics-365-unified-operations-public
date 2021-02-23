@@ -47,3 +47,6 @@ Before you complete the steps in this topic, you must update your local agent. F
 - If you need to take a new deployment or topology, select the new topology for your platform and enter the environment name. You can use the same name or enter a new one. 
   
 3. Click **Advanced Settings** to update your configuration. The configuration from your previous deployment will be saved. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

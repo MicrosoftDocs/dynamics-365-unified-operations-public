@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Version 1611
 
 # View and manage address changes
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic explains how you can view and manage address changes in the Employee self-service **Edit personal details** page or the **Worker** details page in Dynamics 365 Human Resources.
 
 Many organizations want employees to manage their own personal details through a self-service experience. You can allow users to update their address in the **Employee self service** workspace. You can then monitor these changes in the **Personnel management** workspace. To use this feature, you must specify the number of days that you want to view changes in the **Human resources parameters** page.
@@ -135,3 +137,6 @@ When you select the **Address changes** tile, a new page displays the details of
 > If you want to receive an alert or email about these address changes, you can create a new alert rule on the **Options** tab in the Action Pane. For more information about alert rules, see [Create alert rules](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
 
 > If you want to configure a workflow for the address changes, you can select the **Send externally** option on your alert rule, and then use Power Automate to trigger the business event and configure a workflow. For more information, see [Alerts as business events](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

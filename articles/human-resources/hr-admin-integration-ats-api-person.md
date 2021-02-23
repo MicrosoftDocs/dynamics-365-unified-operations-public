@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Person
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Person entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_dirpersonentity
@@ -216,3 +218,6 @@ This entity provides the personal information for the individual who is the cand
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

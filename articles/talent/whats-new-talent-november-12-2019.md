@@ -63,3 +63,6 @@ All new features remain in preview for at least 30 days, and typically 30-60 day
 At times, an integral feature will be on by default and can't be turned off (for example, the **Feature management** workspace).
  
 Once a feature is generally available, it may be turned on or off in production environments. The **Feature management** workspace indicates when a preview feature will become mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until it becomes mandatory, you can turn a feature on and off in all environments.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

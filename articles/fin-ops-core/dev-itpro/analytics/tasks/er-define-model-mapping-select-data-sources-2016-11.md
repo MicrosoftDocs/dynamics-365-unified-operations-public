@@ -160,3 +160,6 @@ The following steps explain how a user in the System Administrator or Electronic
 71. Close the page.
 72. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

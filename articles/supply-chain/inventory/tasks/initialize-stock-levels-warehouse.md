@@ -61,3 +61,6 @@ This procedure shows you how to get the on-hand inventory updated manually using
 25. Close the page.
 26. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

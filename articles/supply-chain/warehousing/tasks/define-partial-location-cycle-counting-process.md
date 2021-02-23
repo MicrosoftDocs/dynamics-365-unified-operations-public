@@ -74,3 +74,6 @@ When you use cycle count plans to create counting work, you can guide the actual
 14. Click OK.
 15. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

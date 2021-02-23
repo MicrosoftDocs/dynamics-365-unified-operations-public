@@ -71,3 +71,6 @@ This task uses the JPMF demo company data.
 7. Enter the document date.
 8. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

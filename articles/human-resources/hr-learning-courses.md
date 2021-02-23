@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Set up training courses
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 
  Set up prerequisites
@@ -143,3 +145,6 @@ Employees who register for a course through the **Employee self service** page c
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

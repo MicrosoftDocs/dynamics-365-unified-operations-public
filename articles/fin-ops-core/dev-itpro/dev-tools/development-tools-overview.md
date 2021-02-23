@@ -61,3 +61,6 @@ The X++ code is written in the code editor for Visual Studio. The standard featu
 ### Dynamics 365 menu
 The tools add the **Dynamics 365** menu to Visual Studio. Several tools that you will use during the development process are found here. For example, the tools for managing models are accessed from the menu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -87,3 +87,6 @@ To set up a redirect for the status code error response page, follow these steps
 [Add a new site page](add-new-page.md)
 
 [Create a page URL](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

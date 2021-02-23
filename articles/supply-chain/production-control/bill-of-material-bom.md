@@ -122,3 +122,6 @@ Select the **Vendor** line type if the production process uses a subcontractor, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

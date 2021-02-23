@@ -43,3 +43,6 @@ This task focuses on preparing a process kanban job when all materials are avail
 6. Click Prepare.
     * The preparation process is now completed. The selected check box for all rows in the picking list indicates that the supply status is picked.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

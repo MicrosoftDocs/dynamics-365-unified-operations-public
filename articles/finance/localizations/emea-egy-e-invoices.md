@@ -167,3 +167,6 @@ When you've completed all the required configuration steps, you can submit elect
 ## Related topics
 
 - [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

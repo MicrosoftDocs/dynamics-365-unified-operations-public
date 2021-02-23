@@ -86,3 +86,6 @@ This task guide will show you how to set up the parameters for write-offs and th
 5. Click **OK**.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

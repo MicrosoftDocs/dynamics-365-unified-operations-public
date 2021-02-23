@@ -63,3 +63,6 @@ Create a product master for the predefined variants. The demo data company used 
 10. Click **Save**.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

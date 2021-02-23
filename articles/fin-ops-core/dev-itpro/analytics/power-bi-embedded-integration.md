@@ -81,3 +81,6 @@ Currently, only English is supported. However, the Power BI team plans to add su
  
 ### Can I access analytical workspaces and reports in the on-premises version of Finance and Operations?
 No, you can't currently access analytical workspaces and reports in Dynamics 365 Finance + Operations (on-premises). Systems of Intelligence functions rely on cloud-hosted solutions.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ When you preview pages that are based on the template that you added the metatag
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

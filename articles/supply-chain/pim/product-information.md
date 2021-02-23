@@ -102,3 +102,6 @@ The workspace consists of a summary of tiles and two lists. The **Open cases** l
 ### Manually creating a new released product
 
 You can manually create a released product in a single run, depending on the organization's business processes and any rules about whether this function should be used. This function creates a new product and automatically releases it to the current legal entity. To create a new product, click **Released products** in the **Released product maintenance** workspace or on the **Released product** list page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

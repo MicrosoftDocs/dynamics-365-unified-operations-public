@@ -64,3 +64,6 @@ To start to configure this information, create a regulation that you can use to 
 ## Warehouse management
 
 When a shipment is prepared, several new reports can be printed. These reports use the information that you set up in Product information management.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

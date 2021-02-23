@@ -144,3 +144,6 @@ The user signing the certification must manually enter the number of pages (for 
 ### Page numbers
 
 Current page and number of pages printed at the bottom of the document.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Check out the how-to videos that are now available on the
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

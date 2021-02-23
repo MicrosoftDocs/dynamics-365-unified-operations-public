@@ -103,3 +103,6 @@ This procedure is intended for accountants.
 7. Click OK.
 8. In the Selection field, select 'Closed'.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

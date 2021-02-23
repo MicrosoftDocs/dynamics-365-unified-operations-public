@@ -151,3 +151,6 @@ This procedure was created using the demo data company MYMF.
 46. Click OK.
     * Verify that everything looks correct on the credit note report with GST.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## More information about how to print labels
 
 For more information about how to set up and print labels, see [Enable license plate label printing](tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

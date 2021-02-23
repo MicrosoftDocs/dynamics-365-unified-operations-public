@@ -76,3 +76,6 @@ A budget plan template is created by the budget manager in Microsoft Word and as
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

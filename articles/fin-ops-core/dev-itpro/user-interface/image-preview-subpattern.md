@@ -119,3 +119,6 @@ None.
 ### AX 2012 content
 
 [![Example of Image Preview](./media/imagepreview3.png)](./media/imagepreview3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

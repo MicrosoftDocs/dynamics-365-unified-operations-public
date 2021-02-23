@@ -88,3 +88,6 @@ By default, the **Partial sales** field value is **100**. When a user selects th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

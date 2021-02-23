@@ -132,3 +132,6 @@ In the call center app, call center agents can select the pickup store or locati
 ## Additional resources
 
 [Pickup information module](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -201,3 +201,6 @@ public void persistEntity(DataEntityRuntimeContext _entityCtx)
 
 > [!NOTE]
 > This ensures that if you also want the dimension to use itself as a default dimension value, the information is created in the correct sequence.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

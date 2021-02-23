@@ -141,3 +141,6 @@ If a lease has been adjusted, you can view the different versions of it. You can
 
 2. To view historical schedules, open the modified lease from the **Lease summary** page, select the desired book, and then, on the Action Pane, select **Book version history**.
 3. On the **Book version** page, select a version and a schedule to view.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -222,3 +222,6 @@ The integration with the environment is typically implemented by classes. Here a
 -   **IO** – Read and write external files.
 -   **ODBCConnection** – An Open Database Connectivity (ODBC) interface to a foreign database.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

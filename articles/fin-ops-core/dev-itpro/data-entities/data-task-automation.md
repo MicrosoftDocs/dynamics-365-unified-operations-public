@@ -452,3 +452,6 @@ The following manifest shows the setup of demo data for three legal entities whe
     </TestGroup>
 </TestManifest>
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

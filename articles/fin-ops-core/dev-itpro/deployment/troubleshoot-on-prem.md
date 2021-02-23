@@ -1555,3 +1555,6 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 use master
 GRANT ALTER ANY EVENT SESSION to axdbadmin;
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

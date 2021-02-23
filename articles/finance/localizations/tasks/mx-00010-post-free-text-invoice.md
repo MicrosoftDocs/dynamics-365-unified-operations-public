@@ -58,3 +58,6 @@ Use the Free text invoice form to create and post a customer invoice as an elect
 20. In the list, mark the selected row.
 21. In the list, click the link in the selected row.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

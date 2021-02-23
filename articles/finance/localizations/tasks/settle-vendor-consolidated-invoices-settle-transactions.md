@@ -69,3 +69,6 @@ This procedure was created using the demo data company JPMF.
 1. Go to Accounts payable > Periodic tasks > Consolidated invoice.
     * Confirm that the status of the consolidated invoice is now "Settled".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ For more information, see [Integrate Dynamics 365 Field Service and Supply Chain
 ## Support for Project Service Automation solutions
 
 Microsoft supports dual-write on top of existing Dataverse environments that are based on Project Service Automation solutions.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

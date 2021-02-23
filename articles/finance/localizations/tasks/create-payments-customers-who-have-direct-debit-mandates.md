@@ -70,3 +70,6 @@ This is the fifth of five procedures that demonstrate the customer payment proce
 11. Click OK.
 12. Click OK.
 13. Click Create payments.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

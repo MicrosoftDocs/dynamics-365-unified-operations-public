@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Rating level
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Rating level entity for Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmratinglevelentity
@@ -70,3 +72,6 @@ This entity provides the available rating levels for skills. Rating levels apply
 [Applicant Tracking System integration API introduction](hr-admin-integration-ats-api-introduction.md)<br>
 [Example query for Candidate to hire](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

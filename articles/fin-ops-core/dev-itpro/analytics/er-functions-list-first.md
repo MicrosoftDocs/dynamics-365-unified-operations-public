@@ -64,3 +64,6 @@ The expression `FIRST(SPLIT("",1)).Value` throws an exception at runtime.
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

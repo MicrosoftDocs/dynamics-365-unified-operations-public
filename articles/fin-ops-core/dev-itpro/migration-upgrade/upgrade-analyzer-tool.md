@@ -52,3 +52,6 @@ If you already use the System diagnostic service in your AX 2012 environment, yo
 For information about how to configure the System diagnostic service in your AX 2012 environment, see [Install and run System diagnostics](../lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md).
 
 Within a few minutes after you configure the System diagnostic service, the AX 2012 environment will appear in your LCS project.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

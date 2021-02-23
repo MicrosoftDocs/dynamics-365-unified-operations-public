@@ -93,3 +93,6 @@ No, but there’s a way to get the results you need anyway. Let’s say that you
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

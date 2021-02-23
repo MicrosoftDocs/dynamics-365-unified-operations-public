@@ -50,3 +50,6 @@ The calculated amount of a manufactured item’s amortized constant costs is ter
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

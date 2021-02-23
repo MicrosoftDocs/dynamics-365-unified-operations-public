@@ -532,3 +532,6 @@ The queries shown in the previous examples could return a result like this.
 ```
 
 Note that the quantities fields are structured as a dictionary of measures and their associated values.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

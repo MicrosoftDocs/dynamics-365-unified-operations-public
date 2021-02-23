@@ -62,3 +62,6 @@ Before you begin, change the country context for the DEMF company from DEU (Germ
 10. Close the page.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

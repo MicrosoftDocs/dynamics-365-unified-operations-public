@@ -77,3 +77,6 @@ You can export information about a business process library, and all the flowcha
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

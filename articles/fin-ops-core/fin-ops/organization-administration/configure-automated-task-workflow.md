@@ -116,3 +116,6 @@ You can send notifications to people when an automated task has been run or canc
     </table>
 
 8. Repeat steps 3 through 7 for each event that you selected in step 2.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

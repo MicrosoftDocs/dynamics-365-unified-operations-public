@@ -98,3 +98,6 @@ Three service order lines have been created within the time frame that you speci
 
 [Set up service intervals](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

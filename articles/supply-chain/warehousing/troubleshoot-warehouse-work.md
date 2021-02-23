@@ -53,3 +53,6 @@ The **Owner** tracking dimension is missing when the warehouse app is used to ma
 ### Issue resolution
 
 Microsoft has evaluated this issue and has determined that it's a feature limitation. Currently, warehouse management processes support only inventory that is owned by the legal entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

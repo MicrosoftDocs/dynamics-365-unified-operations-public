@@ -83,3 +83,6 @@ The value in the **Factor** field is equal to **50**. In this case, the deprecia
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Human Resources connects people and operations data to help you optimize workfor
 [Manage leave and absence](hr-leave-and-absence-overview.md)</br>
 [Develop employees](hr-develop-performance-management-overview.md)</br>
 [Create courses](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

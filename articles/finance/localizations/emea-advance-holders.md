@@ -162,3 +162,6 @@ After the slip journal is processed, if the amount in the **Amount to be transfe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Use the **Install asset** function to install an asset structure on a functional
 4. In the **Functional location** field, select the new location.
 5. By default, the **Effective** field is set to the current date and time. However, you can select a different date and time that the installation on the asset structure is valid from.
 6. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

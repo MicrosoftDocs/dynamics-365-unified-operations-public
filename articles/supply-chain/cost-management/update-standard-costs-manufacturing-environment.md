@@ -51,3 +51,6 @@ Each case requires careful consideration about how to update standard costs.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

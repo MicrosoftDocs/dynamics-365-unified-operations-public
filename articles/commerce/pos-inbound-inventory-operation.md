@@ -226,3 +226,6 @@ After the document is in **Requested** status, it's visible on the **Active** ta
 ## Related topics
 
 [Outbound inventory operation in POS](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

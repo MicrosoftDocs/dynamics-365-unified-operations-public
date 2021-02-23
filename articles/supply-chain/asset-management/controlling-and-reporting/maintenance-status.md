@@ -72,3 +72,6 @@ In the screenshot below, information about functional locations has been added. 
 
 ![Example of monthly workload with functional locations](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

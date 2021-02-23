@@ -312,3 +312,6 @@ The following tables list possible scenarios and expected outcomes when schema d
 [Add module configuration fields](add-module-config-fields.md)
 
 [Extend a theme to add module extensions](theme-module-extensions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Resource capabilities describe what operations resources can do. During scheduli
 5. In the Level field, enter a number.
     * When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required. Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

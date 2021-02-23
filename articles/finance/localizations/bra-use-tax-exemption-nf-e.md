@@ -145,3 +145,6 @@ The validation occurs for the rules that are configured on the **Benefit code pe
 ## Validation exceptions
 
 Technical note NT2019.001 specifies exception rules that are adopted at the discretion of each state. For more information, see validation rules N12-85, N12-86, N12-90, N12-94, N12-97 and N12-98 in the technical note.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

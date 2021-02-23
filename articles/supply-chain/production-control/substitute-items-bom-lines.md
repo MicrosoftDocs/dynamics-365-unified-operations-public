@@ -52,3 +52,6 @@ Consider the following scenario: A piece of metal plate is required for a weldin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

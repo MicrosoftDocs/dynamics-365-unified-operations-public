@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Applicant Tracking System integration API introduction
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic describes the Dynamics 365 Human Resources Applicant Tracking System (ATS) integration API. The intent of the API is to enable streamlined integrations between Dynamics 365 Human Resources and partnering ATSs.
 
 ![ATS integration flow](media/hr-admin-integration-ats-api-introduction-flow.png)
@@ -141,3 +143,5 @@ Option sets:
 [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Use the Microsoft Dataverse Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
 [Create and update option sets using the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

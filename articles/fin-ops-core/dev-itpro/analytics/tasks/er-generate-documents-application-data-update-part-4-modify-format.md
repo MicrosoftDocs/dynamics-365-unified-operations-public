@@ -153,3 +153,6 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 46. Close the page.
 47. Close the page.
 48. Close the page.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

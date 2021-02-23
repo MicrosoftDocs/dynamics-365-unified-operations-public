@@ -808,3 +808,6 @@ In this section, you will create a saved variable in the first test case, create
 2. Verify that both test cases have passed.
 
     ![Result field set to passed for both test cases](./media/setup_rsa_tool_105.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

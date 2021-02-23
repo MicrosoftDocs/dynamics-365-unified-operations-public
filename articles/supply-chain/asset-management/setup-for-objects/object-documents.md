@@ -54,3 +54,6 @@ In Asset Management, you can set up documents so that they are automatically rel
 
 4. Select **Attachments**. The standard **Document handling** page appears.
 5. Set up the documents or notes that should be attached to the asset document record. After you attach documents, the **Attachments** field shows the number of documents that are related to the record.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ You can create financial plans and current budgets in the **Fixed assets** modul
 21. Select **Validate** \> **Validate** to verify the asset information in the journal.
 22. Select **Post** \> **Transfer to fixed asset budget** to transfer the transactions to the fixed asset budget.
 23. Select **Post** \> **Transfer to fixed asset and ledger budget** to transfer the transactions to the fixed asset and general ledger budget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

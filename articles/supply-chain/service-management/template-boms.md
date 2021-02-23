@@ -137,3 +137,6 @@ To use template BOMs, you must set up two number sequences. Set up one number se
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

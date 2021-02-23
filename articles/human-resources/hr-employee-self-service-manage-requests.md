@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Manage leave and absence requests
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Manage time-off requests from the **Employee self-service** workspace in Dynamics 365 Human Resources. Requests might be simple single-day requests or multiple-day requests that include multiple leave and absence types. If a workflow isn't enabled, the requests are automatically approved. When a workflow is enabled, the approval can be automatic or require sign-off, depending on the workflow configuration.
 
 1. In the **Employee self-service** workspace, select **My team**.
@@ -44,3 +46,5 @@ Manage time-off requests from the **Employee self-service** workspace in Dynamic
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

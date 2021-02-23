@@ -58,3 +58,6 @@ This procedure focuses on validating the pegging tree from a sales line where th
 5. In the tree, select 'Sales line 000832\Kanban 000558\Issue for L0001\Kanban 000559'.
     * The job for the second kanban is also planned, because the entire pegging tree is planned. Notice that the kanban job status is changed from Not planned to Planned.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

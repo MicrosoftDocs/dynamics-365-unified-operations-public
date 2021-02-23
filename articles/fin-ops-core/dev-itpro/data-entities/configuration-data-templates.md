@@ -155,3 +155,6 @@ The Workers template includes the entities needed to add workers and re-map enti
 Many default templates include entities for master data such as customers, vendors, and released products. These entities are included to indicate the correct sequence of entities that you will require after you've loaded parameters and reference data. Master entities are most often sequenced in the module bands that are numbered 100 and above. In the grid, the entity category for these entities will be **Master**.
 
 If you don't want to include master data in your configuration, remove those entities from your project.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

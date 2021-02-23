@@ -111,3 +111,6 @@ After you change the settings at the top of the page, click **Update totals** to
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

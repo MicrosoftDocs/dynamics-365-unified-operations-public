@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Distribute and schedule questionnaires
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This article explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 
 There are multiple ways to distribute a questionnaire:
@@ -136,3 +138,6 @@ After you've designed and distributed a questionnaire, the questionnaire can be 
 Questionnaires can made be available to specific users or groups of users, or to all users in a network.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

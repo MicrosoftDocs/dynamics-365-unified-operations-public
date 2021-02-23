@@ -163,3 +163,6 @@ This behavior applies only when a product is directly selected for release. Prod
 For example, product X is assigned to the *Design cabinets* product owner group. Product X is also part of the BOM of product Y, which is assigned to the *Design speakers* product owner group. If a user from the *Design speakers* product owner group releases product Y and its BOM, product X will be released together with product Y.
 
 For more information, see [Product owners](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

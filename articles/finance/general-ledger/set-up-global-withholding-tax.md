@@ -54,3 +54,6 @@ This topic lists the steps for setting up global withholding tax for sales and p
 7. Set up withholding tax groups on the **Item withholding tax groups** page for an item or service.
 
 8. Set up **Minimum invoice amount** on the **General ledger parameters > Withholding tax** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

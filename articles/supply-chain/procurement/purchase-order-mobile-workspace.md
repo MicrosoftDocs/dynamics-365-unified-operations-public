@@ -119,3 +119,6 @@ After you've viewed the purchase order that is assigned to you and read the work
 5. Select the appropriate action.
 6. On the **Complete task** page, enter a comment. Note that if you select the **Delegate** action, you must select a user to delegate the task to.
 7. Select **Done**. After you refresh your workspace, the purchase order will no longer be in your list. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

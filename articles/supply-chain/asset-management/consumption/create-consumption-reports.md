@@ -82,3 +82,6 @@ When you have posted consumption on work orders, you can print a work order cons
 >[!NOTE]
 >You can also generate a [work order report](../work-orders/work-order-report.md), which contains more work order details.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

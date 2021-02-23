@@ -2021,6 +2021,8 @@
         href: engineering-change-management/engineering-attributes-and-search.md
       - name: Engineering versions and engineering product categories
         href: engineering-change-management/engineering-versions-product-category.md
+      - name: Enable change management on existing products
+        href: engineering-change-management/change-management-existing-products.md
       - name: Product lifecycle state and transactions
         href: engineering-change-management/product-lifecycle-state-transactions.md
       - name: Manage changes to engineering products
@@ -2987,6 +2989,8 @@
           items:
           - name: Install and connect the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
+          - name: Mobile device user settings
+            href: warehousing/mobile-device-user-settings.md
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
           - name: Scan bar codes using a camera in the warehouse app

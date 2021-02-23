@@ -60,3 +60,6 @@ The following sections highlight the new data sources that you can add to existi
 - *_isBatch* specifies whether the system is running a batch job.
 - *_isInteractive* specifies whether the session is interactive.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

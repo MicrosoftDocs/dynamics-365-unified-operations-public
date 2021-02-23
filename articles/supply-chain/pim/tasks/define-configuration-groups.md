@@ -42,3 +42,6 @@ This procedure shows how to define product configuration groups by creating two 
 7. In the Name field, type a value.
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

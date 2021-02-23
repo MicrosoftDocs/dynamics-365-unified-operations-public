@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Troubleshoot the Office integration
 
+[!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
+
 [!include [banner](../includes/banner.md)]
 
 
@@ -268,3 +270,6 @@ The following URLs are accessed for authentication.
 [Office integration tutorial](office-integration-tutorial.md)
 
 [Configuring Power BI integration](../analytics/configure-power-bi-integration.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

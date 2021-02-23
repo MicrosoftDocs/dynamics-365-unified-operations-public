@@ -127,3 +127,6 @@ The first version of this functionality doesn't support **datetime** and **refer
 
 1. Start POS, and add a customer to a transaction.
 2. Open the transaction screen to view the attributes that have been added.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

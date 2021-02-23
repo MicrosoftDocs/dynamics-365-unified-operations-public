@@ -64,3 +64,6 @@ This procedure focuses on scheduling process kanban jobs for a specific work cel
     * Notice that both jobs are added to the desired period.  
     * In the Period capacity section, you can see the load for each period. The Consumption field shows the scheduled consumption in this period. If the scheduled consumption is higher than the available capacity in this period, the overloaded consumption will be selected.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

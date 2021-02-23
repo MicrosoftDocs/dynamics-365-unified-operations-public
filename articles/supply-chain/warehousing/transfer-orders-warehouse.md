@@ -57,3 +57,6 @@ You must also set up the transport lead time between the warehouses on the **Tra
 2. In the **Receiving point** field, select **warehouse**.
 3. Select the **Shipping warehouse**, **Receiving warehouse**, and **Transport days**. 
 4. (Optional) You can also set transport time, depending on the mode of delivery, under the **Transport days per mode of delivery** tab.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

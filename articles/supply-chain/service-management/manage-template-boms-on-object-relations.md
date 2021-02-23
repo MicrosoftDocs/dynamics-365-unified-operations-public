@@ -91,3 +91,6 @@ ms.dyn365.ops.version: AX 7.0.0
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ container is used.
 -   To set the container utilization percentage, click **Warehouse management**
     \> **Setup** \> **Containers** \> **Container groups**, and then enter a
     value in the **Container utilization percentage** field.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

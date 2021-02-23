@@ -120,3 +120,6 @@ Cloud POS starts in Manual entry mode, and the Commerce Scale Unit URL, device I
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

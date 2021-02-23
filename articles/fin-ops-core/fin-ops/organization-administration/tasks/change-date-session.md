@@ -35,3 +35,6 @@ This topic explains how to change the date for a session. By default, the curren
 2. In the **Date** field, enter a date.
 3. Select **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

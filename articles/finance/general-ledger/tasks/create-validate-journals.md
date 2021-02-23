@@ -45,3 +45,6 @@ This procedure creates and validates journals and journal lines. You can try thi
 12. Click **Post**.
 13. Click **Voucher**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

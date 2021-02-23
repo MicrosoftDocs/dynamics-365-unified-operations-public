@@ -114,3 +114,6 @@ If you don't have an Azure storage account, follow these steps in [Create an Azu
 2. Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
 
 3. Run **BootstrapAccountsPipeline** from Azure Data Factory.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

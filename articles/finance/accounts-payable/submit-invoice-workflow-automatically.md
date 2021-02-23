@@ -57,3 +57,6 @@ An invoice line will be excluded from the automated processing if any of the fol
 - The **Automated receipt match status** value of the invoice line is **Failed**.
 - The invoice is being used.
 - The invoice is in the workflow system.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

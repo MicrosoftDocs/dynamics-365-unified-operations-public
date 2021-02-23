@@ -152,3 +152,6 @@ To generate a VAT XML file, open the **Sales tax payments** page, select voucher
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ In the **Service agreement group** field in the **Service management parameters*
 ## Related topics
 
 [Create service agreement groups](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up injury and illness information
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 
 
 Employers need to know when their employees suffer injuries or illness resulting from hazards in the workplace. You can use the injury and illness page to set up information that facilitates reporting work-place injuries or illnesses. You can set up types of injuries and illnesses, including types of treatments, costs, and outcomes. The demo data company used to create this procedure is USMF.
@@ -68,3 +70,6 @@ Employers need to know when their employees suffer injuries or illness resulting
     * Reporting agencies are the agencies that the incident needs to be reported to. Select the default check box for the agency that is the default agency for reporting injury and illnesses to.  
 23. Click Save.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ In order to install a new version of the development tools, you'll need to unins
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

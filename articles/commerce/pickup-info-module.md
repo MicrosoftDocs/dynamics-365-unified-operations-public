@@ -73,3 +73,6 @@ The following illustration shows an example of an e-Commerce checkout page that 
 [Order confirmation module](order-confirmation-module.md)
 
 [Order details module](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Additional resources
 
 [Create a direct debit mandate for a customer](tasks/create-direct-debit-mandate-customer.md) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

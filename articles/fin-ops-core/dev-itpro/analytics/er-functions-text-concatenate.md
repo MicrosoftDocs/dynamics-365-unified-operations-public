@@ -68,3 +68,6 @@ The expression `"abc" & "def"` also returns **"abcdef"**.
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -188,3 +188,6 @@ To enter comments about the changes that you made to the workflow, follow these 
 2. In the **Enter comments about the workflow** field, enter your comments.
 3. Review your comments. After you add comments, you can't modify them.
 4. Click **Add** to add your comments to the **Comment history** area.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

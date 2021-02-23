@@ -102,3 +102,6 @@ You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev
 [Visual Studio Code](https://code.visualstudio.com/)  
 [Atom](https://atom.io/)  
 [DocFx](https://dotnet.github.io/docfx/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -860,3 +860,6 @@ The following tables provide an overview that shows how the system handles order
     - Transfer orders and raw material picking
 
 - The container consolidation rule for packing by directive unit has limitations. For order-committed reservations, we recommend that you not use container build templates where the **Pack by directive unit** field is enabled. In the current design, location directives aren't used when warehouse work is created. Therefore, only the lowest unit in the unit sequence group (the inventory unit) is applied during the containerization wave step.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

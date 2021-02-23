@@ -77,3 +77,6 @@ You will create our own configuration of the Customer invoice model deriving it 
 3. In the Name field, type 'Customer invoice model (custom)'.
 4. Click Create configuration.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

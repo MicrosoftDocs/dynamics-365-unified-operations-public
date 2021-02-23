@@ -256,3 +256,6 @@ To install the certificate, follow these steps:
     ![Certificate dialog showing thumbprint listing](media/certificate-dialog.png)
 
 6. Copy and save the thumbprint. You will need it to configure the AOS as described earlier in this topic.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

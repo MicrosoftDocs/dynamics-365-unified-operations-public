@@ -191,3 +191,6 @@ On the **Defined workloads** tab, use the **Create workload** button to add a wa
 <!-- ### Create an edge scale unit using your custom on-premises hardware appliance
 
 In the public preview, you can create on-premises edge scale units on your custom hardware using the LBD environments. For details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md). -->
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

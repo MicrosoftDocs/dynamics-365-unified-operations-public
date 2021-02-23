@@ -109,3 +109,6 @@ This section will have answers to frequently asked questions that are related to
 **HcmPosition** 
 
 ![Toolbar and Fields in previous version](./media/toolbarfields3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

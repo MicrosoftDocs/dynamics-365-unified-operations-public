@@ -152,3 +152,6 @@ The **frame-ancestors** directive can be used to restrict the loading of your e-
 [Manage Content Security Policy](../manage-csp.md)
 
 [Platform settings file](platform-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

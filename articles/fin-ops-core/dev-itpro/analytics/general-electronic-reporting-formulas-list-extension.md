@@ -119,3 +119,6 @@ The following guidance is intended to help you design your custom Electronic rep
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

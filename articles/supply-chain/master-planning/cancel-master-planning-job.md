@@ -57,3 +57,6 @@ These should only be used if canceling the master planning job from the **Unfini
 4. In **Batch tasks**, select the tasks to end.
 5. Click **Change status**, choose **Canceling** and click **OK**.
 6. On the **Batch tasks** FastTab, click **Abort**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

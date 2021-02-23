@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 This topic explains how you can view the status of independent software vendor (ISV) licenses for Finance and Operations apps, such as Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce.
 
 License codes and configuration keys are part of the ISV licensing model for Finance and Operations apps.
@@ -53,3 +55,6 @@ For more information about the ISV licensing feature, see [Independent software 
 For more information about how to import ISV licenses into an on-premises deployment, see [Independent software vendor (ISV) licensing (on-premises)](../dev-tools/isv-licensing-on-prem.md).
 
 For more information about the configuration keys report, see [License codes and configuration keys report](license-codes-configuration-keys-report.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ update-primary-address | Update a customer's primary address.
 
 [Call Retail Server APIs](call-retail-server-apis.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

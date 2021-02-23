@@ -192,3 +192,6 @@ For more information about performance troubleshooting and optimization, see the
 
 * [Performance troubleshooting using tools in Lifecycle Services (LCS)](../lifecycle-services/performancetroubleshooting.md)
 * [Query cookbook](../lifecycle-services/querycookbook.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

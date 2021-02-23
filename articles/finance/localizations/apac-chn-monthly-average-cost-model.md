@@ -72,3 +72,6 @@ Many Chinese manufacturing and trading companies use a monthly average cost mode
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

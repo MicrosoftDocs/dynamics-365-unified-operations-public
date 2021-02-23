@@ -99,3 +99,6 @@ Before you complete the procedures in this topic, the following steps must be co
 [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 
 [Defer the execution of XML elements in ER formats](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ You can identify canceling and correcting invoices in two ways:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

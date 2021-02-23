@@ -126,3 +126,6 @@ Specific parameters are used to update 1099 information for multiple vendors in 
 Select **OK** to run the process. Before committing the process to run in a batch job, the system will display the number of vendors that will be updated. To make changes, based on the reported count, you can cancel the process. If you are satisfied with the reported count, you can confirm the process. After the count is confirmed, the process will run using a batch job. The results of the batch job can be viewed when the process is complete.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

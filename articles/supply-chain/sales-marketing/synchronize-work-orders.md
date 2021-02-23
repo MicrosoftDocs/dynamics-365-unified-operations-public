@@ -80,3 +80,6 @@ The following illustrations show the template mapping in Data integration.
 ### Work Orders with Project (Field Service to Supply Chain Management): WorkOrderService
 
 [![Template mapping in Data integration](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

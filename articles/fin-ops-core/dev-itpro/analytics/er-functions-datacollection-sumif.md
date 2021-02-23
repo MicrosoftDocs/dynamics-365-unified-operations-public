@@ -72,3 +72,6 @@ For more information and examples about using this function, see [Defer the exec
 ## Additional resources
 
 [Data collection functions](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

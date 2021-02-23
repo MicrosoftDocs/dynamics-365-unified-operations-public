@@ -113,3 +113,6 @@ In the screenshot below, **Type** was added, and the most detailed calculation i
 >[!NOTE]
 >For an overview of all fault registrations created on work orders and maintenance requests, click **Asset management** > **Inquiries** > **Asset fault** > **Asset faults**. On the **Asset faults** page, select an asset fault registration and expand the **Related information** pane to see information regarding the related work order or maintenance request.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

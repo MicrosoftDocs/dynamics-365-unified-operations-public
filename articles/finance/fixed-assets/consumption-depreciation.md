@@ -72,3 +72,6 @@ The depreciation proposal on January 31 is as follows: Estimated quantity × Per
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

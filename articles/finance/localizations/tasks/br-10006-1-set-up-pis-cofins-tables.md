@@ -49,3 +49,6 @@ Before the PIS and COFINS tax assessment can be created, you must set up the tab
 14. Click Save.
 15. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

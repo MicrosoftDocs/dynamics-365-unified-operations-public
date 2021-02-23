@@ -60,3 +60,6 @@ This procedure shows how to create a kanban rule that includes multiple activiti
     * Notice that the kanban has two process jobs from the production flow. The first one is SpeakerAssemblyAndPolish, and the second one is SpeakerTestAndPackaging.  
     * This is the last step!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

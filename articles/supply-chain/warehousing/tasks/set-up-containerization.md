@@ -82,3 +82,6 @@ This topic describes how to automate the containerization of loads in Warehouse 
 11. In the **Field Select** field, enter or select a value.
 12. Select **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

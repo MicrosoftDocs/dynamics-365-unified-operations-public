@@ -64,3 +64,6 @@ This topic provides links to documentation resources for Italy.
 - [Customer electronic invoices](emea-ita-e-invoices.md)
 - [Unified posting date control](emea-ita-post-date-control.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

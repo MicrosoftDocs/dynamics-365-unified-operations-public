@@ -68,3 +68,6 @@ The resulting numeric value.
 ## Additional resources
 
 [Mathematical functions](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

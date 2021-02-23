@@ -179,3 +179,6 @@ Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but ar
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
 - [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

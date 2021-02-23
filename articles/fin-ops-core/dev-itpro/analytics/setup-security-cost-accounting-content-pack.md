@@ -69,3 +69,6 @@ We assume that your organization wants to restrict data access. If, for some rea
 
 ## Additional resources
 To learn more about Power BI row-level security, see [Manage security on your model in Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

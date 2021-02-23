@@ -88,3 +88,6 @@ After deployment, both the base module and the extended module appear in Microso
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

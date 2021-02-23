@@ -196,3 +196,6 @@ final class MyClass_Extension
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ After you complete the upgrade from AX 2012, you must set up Budget planning col
 Additionally, you must update Budget planning processes so that they use the appropriate layout for each budget stage. To update Budget planning processes, click **Budgeting** > **Setup** > **Budget planning** > **Budget planning process**.
 
 For more information about Budget planning upgrade, see [Upgrade budget planning](upgrade-budget-planning.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

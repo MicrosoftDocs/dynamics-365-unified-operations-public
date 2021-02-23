@@ -98,3 +98,6 @@ For more information about account management modules and how to author them, se
 
 [Cart and checkout pages overview](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

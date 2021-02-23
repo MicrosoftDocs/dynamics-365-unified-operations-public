@@ -47,3 +47,6 @@ This task uses the SSI data set.
 12. In the Comment field, type a value.
 13. Click Submit.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

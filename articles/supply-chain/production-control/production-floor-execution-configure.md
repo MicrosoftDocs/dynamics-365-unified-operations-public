@@ -104,3 +104,6 @@ A batch job periodically cleans entries in the references table for devices that
 1. On the Action Pane, select **Clean up client configurations**.
 1. In the **Clean up client configuration** dialog box, set the **Number of days** field to the number of days of inactivity (before today) to consider. You will remove all configurations and sign-in records for devices that haven't been active during that time.
 1. Select **OK** to clean up the relevant configurations, based on the **Number of days** setting.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

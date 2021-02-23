@@ -113,3 +113,6 @@ the cluster picking process. The setup is based on the product bar code setup.
 1. From the mobile device menu item, open **Work confirmation setup**. The
     **Product confirmation** option allows you to verify each piece of inventory
     from the mobile device when scanned.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

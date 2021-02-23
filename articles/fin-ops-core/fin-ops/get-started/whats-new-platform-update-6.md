@@ -85,3 +85,6 @@ Click the **Ideas** link to go to the Dynamics 365 for Operations forum.
 - The **My Feedback** feature allows you to see a detailed view of your submitted ideas, the status of your ideas, and the total votes received.
 
 [![ideas-options](./media/ideas-options.png)](./media/ideas-options.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

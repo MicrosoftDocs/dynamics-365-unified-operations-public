@@ -146,3 +146,6 @@ public final class ClassTest_Extension
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

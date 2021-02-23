@@ -65,3 +65,6 @@ Posted journal vouchers can be saved as Voucher templates and applied in a new j
 29. In the **Amount** field, enter the amount to be applied to the voucher. The **Amount** field is only displayed if the voucher template is of type Percent.  
 30. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

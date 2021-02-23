@@ -207,3 +207,6 @@ Depending on the type of transaction, such as an advanced ledger entry (ALE) or 
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

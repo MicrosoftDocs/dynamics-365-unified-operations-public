@@ -71,3 +71,6 @@ For the second parameter on `addToDialog`, choose the controller class that sati
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

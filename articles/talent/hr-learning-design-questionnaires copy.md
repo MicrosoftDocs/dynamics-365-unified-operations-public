@@ -250,3 +250,6 @@ Additional resources
 
 [View and evaluate the results of questionnaires](evaluate-questionnaire-results.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

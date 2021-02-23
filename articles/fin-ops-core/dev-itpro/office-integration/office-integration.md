@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Office integration overview
 
+[!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
+
 [!include [banner](../includes/banner.md)]
 
 This topic reviews Microsoft Office integration concepts and features. The integration depends on several technologies:
@@ -132,3 +134,6 @@ Open the Document Parameters form and ensure that the SharePoint server has been
 [Troubleshoot the Office integration](office-integration-troubleshooting.md)
 
 [Application stack and server architecture](../dev-tools/application-stack-server-architecture.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

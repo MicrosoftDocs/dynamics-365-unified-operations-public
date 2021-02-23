@@ -63,3 +63,6 @@ Posting definitions govern the accounting that occurs on the closing entries, an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

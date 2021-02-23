@@ -59,3 +59,6 @@ The running average cost price for warehouse GW and batch AAA is USD 11.20, and 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

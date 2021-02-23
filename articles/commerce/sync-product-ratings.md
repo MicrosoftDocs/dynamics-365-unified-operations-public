@@ -138,3 +138,6 @@ The following illustration shows an example of product ratings in call center ch
 [Manage ratings and reviews](manage-reviews.md)
 
 [Configure ratings and reviews](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

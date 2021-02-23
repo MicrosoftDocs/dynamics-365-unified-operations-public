@@ -747,3 +747,6 @@ select * from custTable
     where custTable.accountNum > "100";
 info("AccountNum: " + custTable.AccountNum);
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

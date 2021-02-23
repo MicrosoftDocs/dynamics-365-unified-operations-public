@@ -162,3 +162,6 @@ The Gantt chart can be opened from the following pages.
 
 [Visual scheduling for production (demo script)](https://docs.microsoft.com/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

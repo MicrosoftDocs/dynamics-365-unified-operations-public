@@ -63,3 +63,6 @@ A MessageBox is the correct mechanism to use when you must interrupt the user to
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

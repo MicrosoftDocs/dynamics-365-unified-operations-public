@@ -53,3 +53,6 @@ Complete the following steps to configure posting date control.
 
  - If the field isn't enabled, which is the default option, the system doesn't allow posting of new invoices with dates earlier than the date of the latest posted invoice.  
  - If the field is enabled, the system allows posting with any date.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

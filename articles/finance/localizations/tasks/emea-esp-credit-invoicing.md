@@ -95,3 +95,6 @@ This procedure walks you through how to create a corrective invoice. This proced
 3. Click Transactions.
 4. Click the General tab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

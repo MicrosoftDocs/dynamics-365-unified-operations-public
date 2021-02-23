@@ -179,3 +179,6 @@ Here is what occurs after initialization is completed:
 - Stand-alone hardware station instances will continue to work.
 - POS channel–side reports will be reset and won't show data from before the initialization.
 - Show journal operation will also be reset and won't show data from before the initialization.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

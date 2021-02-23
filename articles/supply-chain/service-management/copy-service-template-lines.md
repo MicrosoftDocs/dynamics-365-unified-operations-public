@@ -64,3 +64,6 @@ The service template lines are now copied to the new service order, together wit
 [Service templates](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

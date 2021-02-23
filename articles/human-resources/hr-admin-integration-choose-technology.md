@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Choose a data integration technology
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This article provides information for integrating with data managed by Dynamics 365 Human Resources. It describes different integration technologies to help you decide which technologies best fit your needs.
@@ -164,3 +166,6 @@ With so many different integration technologies available, deciding on which int
 <sup>2</sup>Microsoft is investing heavily in increasing data coverage for Dataverse tables. We recommend using Dataverse when coverage is available. Currently, Dataverse data coverage is low, compared to DMF and OData-enabled entities.
 
 <sup>3</sup>SQL database can be accessed programmatically.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

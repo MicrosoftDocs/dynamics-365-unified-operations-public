@@ -85,3 +85,6 @@ The illustration below shows an example of a maintenance checklist.
 
 ![Figure 1](media/14-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

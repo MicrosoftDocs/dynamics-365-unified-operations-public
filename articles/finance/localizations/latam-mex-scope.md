@@ -609,3 +609,6 @@ The [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics
 
 ## Notes
 **Regime especial (special regime)** refers to any differential treatment, except relief from taxation, that the tax authority authorizes with respect to general tax rule requirements (federal, state, or municipal) and ancillary obligations, to simplify tax compliance by the taxpayer in peculiar cases.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

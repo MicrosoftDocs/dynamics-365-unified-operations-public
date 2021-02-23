@@ -284,3 +284,6 @@ Follow these steps to pack the shipment.
     ![Example shipping label](media/sps-label-example.png "Example shipping label")
 
 1. Notice that the **Container manifest ID** and **Total freight** values have been added as received from the carrier.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

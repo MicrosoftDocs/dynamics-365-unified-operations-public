@@ -86,3 +86,6 @@ If the `regular expression flag` argument is **FALSE**, this function returns th
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

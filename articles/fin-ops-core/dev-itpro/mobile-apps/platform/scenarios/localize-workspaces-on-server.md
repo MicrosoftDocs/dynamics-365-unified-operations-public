@@ -87,3 +87,6 @@ A workspace class can be used to provide localized strings for the workspace tit
 The following illustration shows the title and description on a phone that uses English and Danish.
 
 ![Final workspace](media/workspace-api/LocalizeWorkspaceFinal.png)
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

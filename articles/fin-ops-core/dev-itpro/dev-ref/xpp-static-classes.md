@@ -117,3 +117,6 @@ ClassName::methodName();
 
 The accessor keywords on methods never restrict calls between two methods that are in the same class, regardless of which method is static or non-static. In a static method, calls to the **new** constructor method are valid even if the **new** constructor method is decorated with the **private** modifier. The syntax for these calls requires that the **new** keyword be used. The code in a static method must construct an instance object of its own class before it can call any instance methods on the class.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

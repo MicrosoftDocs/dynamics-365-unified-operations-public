@@ -123,3 +123,6 @@ Yes, if the Finance and Operations entity can auto generate number sequences, th
 If there are no fields added in the quick find view for the entity, then the search box does nothing. The workaround is to add one or more fields of the entity to the quick find view.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

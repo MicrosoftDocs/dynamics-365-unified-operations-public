@@ -562,3 +562,6 @@ $orderStatus = PurchaseOrderStatus -environment $environment -purchaseOrderNumbe
 if ($orderStatus -eq $null) {   write-host 'doesn''t exist'}
 elseif ($orderStatus -ne 'invoiced') { RunTestCase "PostInvoice" }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

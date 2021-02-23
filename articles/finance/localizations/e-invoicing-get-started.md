@@ -244,3 +244,6 @@ For specific steps, see the "Get started" documentation that is available for yo
 - [Get started with the Electronic invoicing add-on for Mexico](e-invoicing-mex-get-started.md)
 - [Get started with the Electronic invoicing add-on for Italy](e-invoicing-ita-get-started.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

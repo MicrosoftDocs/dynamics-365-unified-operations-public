@@ -206,3 +206,6 @@ Here's how the X++ test code works with the shared entity:
 - It accesses the data entity with one specific company when a new record is created.
 
 [![X++ test code](./media/snip2.png)](./media/snip2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

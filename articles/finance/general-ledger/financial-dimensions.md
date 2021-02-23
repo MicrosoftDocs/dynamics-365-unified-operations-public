@@ -143,3 +143,6 @@ For more information, see the following topics:
 
 - [Define financial dimensions](tasks/define-financial-dimensions.md)
 - [Maintain financial dimension default templates](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

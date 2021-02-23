@@ -372,3 +372,6 @@ The following table lists the localization features that are supported in Financ
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

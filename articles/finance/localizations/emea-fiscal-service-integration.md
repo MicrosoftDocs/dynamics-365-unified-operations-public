@@ -353,3 +353,6 @@ The following table describes the fields for cash register payment transactions.
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

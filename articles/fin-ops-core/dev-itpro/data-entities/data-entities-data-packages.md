@@ -309,3 +309,6 @@ For enabling flights in a production environment, a support case must be logged 
 
 ## Additional resources
 - [Data entities overview](data-entities.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

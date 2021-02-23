@@ -288,3 +288,6 @@ To extract attachments, an Attachments entity must be built for a specific busin
 ### How does the document preview work for attachments stored in SharePoint?
 
 The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

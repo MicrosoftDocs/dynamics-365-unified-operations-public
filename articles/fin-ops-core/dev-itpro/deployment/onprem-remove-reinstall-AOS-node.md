@@ -322,3 +322,6 @@ The next step is to start a new AOS server.
     ![Add command and result](media/e8c153c1b8aa06af684a307f443c9b7b.png)
 
 23. After the node has been added back in, return to Service Fabric Explorer, and view the application deployment status. Several minutes will be required before all the AOS applications are restored (**AXBootstrapperAppType**, **AXSFType**, **RTGatewayAppType**, and **LBDTelemetryType-<envname\>** or **MonitoringAgentAppType**) are pushed out again and installed on the node.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

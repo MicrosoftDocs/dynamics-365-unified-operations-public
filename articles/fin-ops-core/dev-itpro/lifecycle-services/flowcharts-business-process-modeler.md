@@ -156,3 +156,6 @@ A business process with an unconnected Visio flowchart associated with it will h
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
 --->
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

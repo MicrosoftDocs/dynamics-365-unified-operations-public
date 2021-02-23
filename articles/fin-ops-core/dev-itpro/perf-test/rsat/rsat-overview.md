@@ -168,3 +168,6 @@ When working with your test plan, the **Open** button now provides 3 options.
 This tab provides quick access to the most relevant pages in Azure DevOps.
 
 ![UI DevOps Navigate](media/UI-DevOps-navigate.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

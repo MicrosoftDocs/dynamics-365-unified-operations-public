@@ -51,3 +51,6 @@ Several configuration settings affect how Asset leasing behaves. These settings 
 
     > [!NOTE]
     > We recommend that you keep this option set to **No**. The setting of this option is used as a validation and control to prevent a closed book version from being accidently depreciated. By keeping the option set to **No**, you help keep the net book value and future depreciation calculations accurate.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

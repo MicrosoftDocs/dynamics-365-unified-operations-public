@@ -101,3 +101,6 @@ On the **Spare parts** page, you can also create new spare parts for existing co
 
 To see whether the spare part on the selected line is used anywhere else in Asset Management (for example, in relation to assets and work orders), select **Item where used** to open **Item where used** page. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

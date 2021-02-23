@@ -147,3 +147,6 @@ Currently, this endpoint provides metadata for the following elements:
 - **Data entities** – Returns a JSON-formatted list of all the data entities in the system.
 
     **Example:** `https://[baseURI\]/Metadata/DataEntities`
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

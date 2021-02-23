@@ -438,3 +438,6 @@ To validate right-to-left (RTL) support for your extensible control, you simply 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

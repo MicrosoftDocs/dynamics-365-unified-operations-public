@@ -114,3 +114,6 @@ The corrected cost per hour and the job time are posted in a production journal.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

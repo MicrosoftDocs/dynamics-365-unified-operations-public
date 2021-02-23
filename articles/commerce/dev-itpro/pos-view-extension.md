@@ -422,3 +422,6 @@ Follow these steps to validate the customization.
     You should see the custom columns that you added.
 
 3. Select a customer, and then select the new app bar button. A dialog box should appear that contains details about the selected customer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ You can also create a new maintenance budget by copying an existing budget. On t
 
 > [!NOTE]
 > The maintenance budget calculates only budget costs based on maintenance schedule lines. To calculate actual costs for the same period, you can do that calculation on the **Asset cost control** page. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

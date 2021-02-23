@@ -104,3 +104,6 @@ The demo data company used to create this procedure is USMF. This procedure show
 11. In the **Purchase time** field, enter '5'.
 12. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

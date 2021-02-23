@@ -60,3 +60,6 @@ This procedure was created using the demo data company JPMF.
 4. Use the value noted previously in the Accelerated depreciation profile field
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

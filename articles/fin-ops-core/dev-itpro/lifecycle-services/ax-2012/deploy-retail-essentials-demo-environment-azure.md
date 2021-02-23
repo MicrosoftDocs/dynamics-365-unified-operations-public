@@ -148,3 +148,6 @@ Complete the following procedure to connect to the virtual machine where the Dyn
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

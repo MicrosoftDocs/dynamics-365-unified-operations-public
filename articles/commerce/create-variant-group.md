@@ -75,3 +75,6 @@ The following image shows an example of a size group for "casual shirt sizes".
 [Set up retail products](set-up-retail-products.md)
 
 [Product dimensions](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

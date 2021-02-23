@@ -123,3 +123,6 @@ These two inventory journals only support the *Initialize stock* scenario as par
 ## Additional resources
 
 [Data entities](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ The system performs an additional invoice dates control for customer invoices:
 
 - Posting new invoices with dates earlier than the date of the latest posted invoice is forbidden if no reason code is defined. To enable posting, a reason code must be entered either in an invoice/order header or in one of the lines.
 - A warning is raised if the new invoice date is later than the system date.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

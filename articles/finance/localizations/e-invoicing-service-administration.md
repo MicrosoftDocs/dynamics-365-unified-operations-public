@@ -143,3 +143,6 @@ The environment must be configured on the **Submission services** tab of the **E
 
 - [Configure electronic invoices in RCS](e-invoicing-configuration-rcs.md)
 - [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

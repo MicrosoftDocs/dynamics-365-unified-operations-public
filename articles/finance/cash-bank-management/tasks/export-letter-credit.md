@@ -142,3 +142,6 @@ Run the 'Set up bank facilities and posting profiles' procedure and the 'Letter 
 3. In the list, click the link in the selected row.
     * Verify Shipment status = Payment received and balance amount = 0.00.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

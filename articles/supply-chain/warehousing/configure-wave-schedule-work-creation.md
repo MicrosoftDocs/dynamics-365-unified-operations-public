@@ -117,3 +117,6 @@ The **Planned work details** page (**Warehouse management \> Work \> Planned wor
 To view the batch jobs for processing waves, select **Batch jobs** on the Action Pane on the **All waves** page.
 
 From here, you can view all the batch task details for each of the batch job IDs.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

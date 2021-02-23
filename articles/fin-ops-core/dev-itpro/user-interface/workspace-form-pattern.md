@@ -153,3 +153,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 example
 
 [![Previous version workspace example](./media/workspace5.png)](./media/workspace5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

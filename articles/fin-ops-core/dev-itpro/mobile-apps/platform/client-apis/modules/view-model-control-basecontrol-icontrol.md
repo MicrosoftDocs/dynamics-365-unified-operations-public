@@ -103,3 +103,6 @@ ControlType: "FileUpload" &#124; "Barcode" &#124; "Input" &#124; "MultilineInput
 
 Controls must be assigned any of the types listed in ControlType.
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

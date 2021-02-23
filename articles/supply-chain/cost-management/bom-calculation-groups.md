@@ -101,3 +101,6 @@ You can define multiple BOM calculation groups, depending on your requirements f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
