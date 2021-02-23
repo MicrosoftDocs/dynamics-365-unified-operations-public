@@ -534,6 +534,8 @@
             href: dev-itpro/commerce-payments.md
           - name: Process credit cards without a hardware station
             href: dev-itpro/cnp-pos.md
+          - name: Archive credit card transaction data
+            href: dev-itpro/archive-cc-data.md
           - name: Dynamics 365 Payment Connector for PayPal
             href: paypal.md
           - name: Wallet payment support
