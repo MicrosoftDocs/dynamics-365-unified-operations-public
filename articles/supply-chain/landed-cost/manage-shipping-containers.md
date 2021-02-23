@@ -93,7 +93,7 @@ The following table describes the settings that are available on the **General**
 | Description of goods | A description of goods can be selected on the shipping container or folio header. It's used to help identify a voyage, shipping container, or folio of goods. For more information, see [Description of goods](shipping-information-setup.md#description-of-goods). |
 | House air waybill/Bill of lading | You can specify the house air waybill or bill of lading for the shipping container. |
 | Remarks | Additional information that is related to the shipping container. |
-| Returnable | <!-- KFM: Description needed --> |
+| Returnable | Shows whether the shipping container can be returned after the voyage. |
 | Voyage status | The status of the journey associated with this shipping container. |
 | Purchase order status | The status of the purchase order associated with this shipping container. |
 
@@ -131,17 +131,17 @@ The following table describes the settings that are available on the **Other** F
 
 | Field | Description |
 |---|---|
-| Rental | <!-- KFM: Description needed --> |
-| Converted to rental | <!-- KFM: Description needed --> |
-| Original voyage | <!-- KFM: Description needed --> |
+| Rental | Indicates that the container is a rental, so a rental cost may be associated with it. |
+| Converted to rental | Indicates that the shipping container was converted to a rental, so a rental cost may be associated with it. |
+| Original voyage | If the shipping container was moved to a new voyage, this identifies the original voyage. |
 | Used | <!-- KFM: Description needed --> |
-| Expected loading date | <!-- KFM: Description needed --> |
-| Our serial number | <!-- KFM: Description needed --> |
-| Shipping company serial number | <!-- KFM: Description needed --> |
-| Examination certificate applied date | <!-- KFM: Description needed --> |
-| Examination certificate received date | <!-- KFM: Description needed --> |
-| Examination certificate expiry date | <!-- KFM: Description needed --> |
-| Examination certificate number | <!-- KFM: Description needed --> |
+| Expected loading date | Shows the date on which the shipping container is expected to be loaded with goods. |
+| Our serial number | Enter the serial number for the shipping container as it is known to your company. |
+| Shipping company serial number | Enter the serial number for the shipping container as provided by the shipping company or agent. |
+| Examination certificate applied date | The date that an examination was requested for the shipping container.  |
+| Examination certificate received date | The date on which the examination certificate was received. |
+| Examination certificate expiry date | The date on which the examination certificate will expire. |
+| Examination certificate number | The certificate number for the certificate issued after examination. |
 
 ## Lines view
 
