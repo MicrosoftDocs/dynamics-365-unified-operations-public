@@ -45,7 +45,7 @@ Begin by opening the **General journals** page (**General ledger > Journal entri
    > [!Note]
    > On the **Invoice approval journal** page, click the **Find vouchers** button and select invoices to calculate TDS on. View the invoices created in the **Invoice register** page or the **Find vouchers** page.  
 
-2. On the **General** tab of the **Journal voucher** page, view or modify the default TDS group defined for the vendor or customer, in the **TDS group** field. The TDS amount calculated on journal lines is based on the formula defined for the TDS tax codes listed in the **TDS group** field. 
+2. On the **General** tab of the **Journal voucher** page, view or modify the default TDS group defined for the vendor or customer, in the **TDS group** field. The TDS amount that's calculated on journal lines is based on the formula defined for the TDS tax codes listed in the **TDS group** field. 
 
    > [!Note]
    > The **Withholding tax group**  field and the **TCS group** field become unavailable when you select a TDS group in the **TDS group** field. The **Withholding tax group** field is available only in the **General journal** page. TDS is calculated only if the **Calculate withholding tax** check box is selected for the vendor or customer on the **All vendors** page or **All customers** page.   
@@ -70,7 +70,7 @@ Begin by opening the **General journals** page (**General ledger > Journal entri
 
    Click the **Formula designer** button to open the **Formula designer** form. View the formula defined for a specific TDS tax code in this form. Close the Formula designer form and Temporary withholding tax transactions form to return to the Journal voucher page.
 
-8. Enter the other required details. Validate and post the journal. The TDS amount calculated on purchase invoices is posted to the payable account and the TDS amount calculated on sales invoices is posted to the receivable account that is defined for each TDS tax code in the TDS group. The payable accounts or receivable accounts for TDS tax codes are defined on the **Withholding tax codes** page.
+8. Enter the other required details. Validate and post the journal. The TDS amount that's calculated on purchase invoices is posted to the payable account. The TDS amount that's calculated on sales invoices is posted to the receivable account that is defined for each TDS tax code in the TDS group. The payable accounts or receivable accounts for TDS tax codes are defined on the **Withholding tax codes** page.
 
 9. Click **Posted withholding tax** button to open the **Withholding** **tax** **transactions** page. In the **Value** field, the total percentage used to calculate TDS for the transaction is displayed.
 
