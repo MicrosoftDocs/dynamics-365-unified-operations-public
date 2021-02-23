@@ -54,10 +54,10 @@ Use the email template below to start the support process with the Adyen team. T
 | **Subject line** | Microsoft Dynamics Support Request |
 | **Body** | Hi Support,</br>Please provide support for the following issue.</br></br><li>Merchant account</li></br><li>Environment (Test/Prod)</li></br><li>Channel (POS/call center/Commerce e-commerce)</li></br><li>PSP reference number (when an issue has occurred with a specific transaction). The PSP reference number is visible on the receipt, in the CA, or in the transactions menu on the POS terminal.</li></br><li>Screenshot or photo of the error message (if applicable).</li></br><li>Event Viewer logs (in .txt format).</li></br><li>Description of the issue and troubleshooting steps taken.</li></br> |
 
-## Additional Resources
+## Additional resources
 
-- [Accept payments with the Adyen connector for Dynamics 365 Commerce](https://www.adyen.com/partners/dynamics-365-commerce)
+[Accept payments with the Adyen connector for Dynamics 365 Commerce](https://www.adyen.com/partners/dynamics-365-commerce)
 
-- [Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector.md)
+[Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector.md)
 
-- [Set up the Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics)
+[Set up the Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics)
