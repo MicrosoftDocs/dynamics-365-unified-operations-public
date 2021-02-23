@@ -100,13 +100,13 @@ Log a support ticket, and Microsoft will help you perform the action on your env
 If your critical action isn't listed earlier in this topic, add a comment to this topic or log a documentation bug, and Microsoft will address your requirement.
 
 ## What regions are supported on self-service?
-Beginning August 1, 2020, new projects for Finance and Operations will be onboarded to the following regions:
+New projects for Finance and Operations are onboarded to the following regions:
 
 - East US
 - West US
 - Central US
 
-### My environments are currently in the regions that will be deprecated. How will this change affect me?
+### My environments are currently in the regions that are no longer supported. How will this change affect me?
 We will deprecate support for the following regions only for new projects that will be onboarded on or after August 1, 2020:
 
 -	East US2
