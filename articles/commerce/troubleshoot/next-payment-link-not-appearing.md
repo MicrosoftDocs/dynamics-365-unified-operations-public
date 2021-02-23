@@ -2,10 +2,10 @@
 # required metadata
 
 title: Save for Next Payment option doesn't appear
-description: This topic provides how to troubleshoot when "Save for next payment" doesn't appear under the payment methods options on an e-commerce site. 
+description: This topic helps troubleshoot the issue when "Save for next payment" doesn't appear under the payment methods options on an e-commerce site checkout page. 
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/17/2021
+ms.date: 02/23/2021
 ms.topic: Troubleshooting
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,27 +33,30 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
+This topic helps troubleshoot the issue when "Save for next payment" doesn't appear under the payment methods options on an e-commerce site's checkout page.
+
 ## Description
-The **Save for next payment** option doesn't appear on the **Checkout** page under **Payment method**.
+
+The **Save for next payment** option doesn't appear on the an e-commerce site's checkout page under **Payment method**.
 
 ![Payment module save for next payment checkbox](media/payment-module-save-payment.jpg)
 
 ## Resolution
 
-### Make sure the Dynamics 365 Payment Connector for Adyen is configured correctly
+### Check that the Dynamics 365 Payment Connector for Adyen is configured correctly in Commerce headquarters
 
-1. Go to Commerce headquarters.
+To check that the Dynamics 365 Payment Connector for Adyen is configured correctly in Commerce headquarters, follow these steps.
 
-1. Go to **Retail and Commerce > Channels > Online Stores**.
-
-1. Select the online store that you want to configure the Adyen connector for.
-
-1. On the **Online stores** page, on the **Payment accounts** tab, make sure the **Allow saving payment information in e-commerce** field is set to **True**.
+1. Go to **Retail and Commerce \> Channels \> Online Stores**.
+1. Select the online store.
+1. On the **Payment accounts** FastTab, ensure that the **Allow saving payment information in e-commerce** value is set to **True**.
 
 ![Payment connector save for next payment checkbox](media/payment-connector-save-payment.jpg)
 
-## Additional Resources
-- [e-Commerce payment module](../payment-module.md)
-- [Saving online payment instruments with the Adyen connector](../adyen-connector-listpi.md)
+## Additional resources
+
+[Payment module](../payment-module.md)
+
+[Saving online payment instruments with the Adyen connector](../adyen-connector-listpi.md)
 
 
