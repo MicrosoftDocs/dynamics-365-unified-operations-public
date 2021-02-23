@@ -57,11 +57,13 @@ Before you can use the app, a related feature must be turned on in your system. 
 
 ## Get the Warehouse Management mobile app
 
-For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using. However, you can also automate app deployment and/or configuration, which can be more convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using.
+
+For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
 ### Install the app from an app store
 
-The easiest way to install the app on single device is to install it from an app store, which always provides the latest generally available version. Use one of the following links to download the app from an app store:
+The easiest way to install the app on single device is to install it from an app store, which always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to download the app from an app store:
 
 - **Windows (UWP):** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
@@ -69,13 +71,13 @@ The easiest way to install the app on single device is to install it from an app
 
 ### Download the app from Microsoft App Center
 
-As an alternative to installing from an app store, you can instead download the app from the Microsoft App Center. The App Center provides a bit more flexibility by providing installable packages that you can sideload. In addition to the current version, it also lets you download previous versions and may provide preview versions with upcoming features that you can try out. To download current, previous, or preview versions of the Warehouse Management mobile app from Microsoft App Center, use one of the following links:
+As an alternative to installing from an app store, you can instead download the app from the Microsoft App Center. The App Center provides installable packages that you can sideload. In addition to the current version, the App Center also lets you download previous versions and may provide preview versions with upcoming features that you can try out. To download current, previous, or preview versions of the Warehouse Management mobile app from Microsoft App Center, use one of the following links:
 
-- **Windows (UWP):** [App Center preview program - Windows](https://go.microsoft.com/fwlink/?linkid=2154406)  
-    (If you download a preview version, a few extra steps are required to install it. For details, see [Install a Build from App Center](https://docs.microsoft.com/appcenter/distribution/installation).)
+- **Windows (UWP):** [Warehouse Management (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    For instructions about how to install a downloaded package on a Windows device and then set up the required certificates, see [Install a Build from App Center](https://docs.microsoft.com/appcenter/distribution/installation).
 
-- **Android:** [App Center preview program - Android](https://go.microsoft.com/fwlink/?linkid=2154613)  
-    (If you download a preview version, a few extra steps are required to install it. For details, see [Testing Android Apps](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).)
+- **Android:** [Warehouse Management (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    If you download a preview version, a few extra steps are required to install it. For details, see [Testing Android Apps](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-service"></a>Create a web service application in Azure Active Directory
 
