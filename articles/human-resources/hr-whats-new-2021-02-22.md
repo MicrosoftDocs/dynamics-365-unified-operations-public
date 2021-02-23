@@ -42,7 +42,7 @@ For more information about new features and their expected general availability 
 
 ## In this release
 
-This release includes the following new features and bug fixes. Changes apply to build number ##.
+This release includes the following new features and bug fixes. Changes apply to build number 8.1.3988.
 
 ### New features
 
@@ -50,7 +50,18 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| -- | -- | -- |
+| [EHR] View of new hires with no checked out plans - (464552) | -- | -- |
+| [EHR] View of employees with no checked out plans during an open enrollment cycle - (464554) | -- | -- |
+| Regular translation checkins for supported HCM languages - (394249) | -- | -- |
+| [EHR] View of employees who have unconfirmed selections - (464549) | -- | -- |
+| [EHR] View of employees who are currently enrolled in benefits - (464550) | -- | -- |
+| [EHR] View of employees with open life events - (464555) | -- | -- |
+| [EHR] View of employees with future life events - (464556) | -- | -- |
+| Improve performance of CDSPositionWorkerAssignmentMapEntity  - (555894) | -- | -- |
+| Recruiting request toggle is moved to shared parameters - (540416) | -- | -- |
+| Use Service Fabric to prevent stuck secondary replicas - (544833) | -- | -- |
+| Roll out SslAdmin cert distrust script to all regions - (555173) | -- | -- |
+| Apply January Office Updates - (550931) | -- | -- |
 
 ### Bug fixes
 
@@ -62,7 +73,21 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-|  | | |
+| Benefits Workspace : " Unconfirmed Selections" record list does not honor selected period - (557323) |-- | -- |
+| Benefits Workspace : " Enrolled In Benefits" record list does not honor selected period - (557324) |-- | -- |
+| Benefits Workspace : Grid view and Tile count for OE with no checked out plans is inaccurate. - (557318) Grid view for "Open enrollments with no checked out plans" shows multiple records per employee with multiple start dates.. |-- | -- |    
+| Benefits Workspace : Active Life Events" tile count and list view is inaccurate - (557330) |-- | -- |
+| Feature Management Label for Benefits workspace V2 is not accurate  - (557308) |-- | -- |
+| Benefits Workspace : Styling needs to be corrected to match with intended design - (557309) |-- | -- |
+| Benefits Workspace : "Links" section layout is broken - (557333) |-- | -- |
+| Modifying "Known As" field on worker form does not trigger a CDS update - (529994) |-- | -- |
+| CDSDataSyncNotificationProcessorTest.execute_DataSyncRecordUnhandledException_ReturnHandledFault is commented out so it is not running - (551808) |-- | -- |
+| ESS contact details grid- when empty and Restrict ESS purpose feature enabled, add fails - (554195) |-- | -- |
+| Only one dependant selected on eligible plans when more than one are marked as default designees - (518064) |-- | -- |
+| Compensation Analytics PBI report does not use currency conversion when calculating metrics for All Companies - (532651) |-- | -- |
+| HcmWorkerEntityTest.enableChangeTracking is commented out so it is not running - (551805) Limit the number of tasks queried for in "To-do list" on dashboard - (547123) |-- | -- |
+| Life event processing closes and reopens plans multiple times for single life event - (552226) When an employee is part of multiple legal entities and a life event occurs a life event record is generated for each legal entity the employee is a part of. When processing life events the legal entity to process must be selected. However, the processing logic does not constrain itself to this legal entity, instead processing for all legal entities and performing the plan close/reopen on the plans in the legal entity selected. This causes a life event to get processed multiple times in the same legal entity, resulting in multiple close/reopens of each plan affected by the life event. |-- | -- |    
+| BYOD export jobs are failing after upgrading to PU40 - (552365) |-- | -- |
 
 ## In preview	
 
