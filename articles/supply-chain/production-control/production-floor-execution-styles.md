@@ -81,19 +81,19 @@ Implementing a radio button has the following requirements.
 
 ### Internet Explorer
 
-Radio buttons are not supported in Internet Explorer. In Internet Explorer, the radio buttons look like:
+Radio buttons aren't supported in Internet Explorer. In Internet Explorer, the radio buttons look like:
 
 ![Radio buttons in Internet Explorer](media/pfe-styles-browser.png)
 
 ## Buttons
 
-All buttons, in order to be styled similarly to the default Production Floor Execution buttons are required to:
+All buttons, to be styled similarly to the default Production Floor Execution buttons are required to:
 
 + Button should have these properties:
 
     - **Button Display**: **TextWithImageLeft**.
-    - **Normal Image** should not be empty. For example, **CoffeeScript**
-    - **Text** should not be empty. For example, **Start Break**
+    - **Normal Image** shouldn't be empty. For example, **CoffeeScript**
+    - **Text** shouldn't be empty. For example, **Start Break**
     - **Width**: Auto
     - **Height**: Auto
 
@@ -101,13 +101,13 @@ Each group of buttons should be nested inside a form group. All buttons within e
 
 ### Primary button
 
-In order to highlight a button, it should be located inside group which has **DefaultButtonGroup** or  **PrimaryButtonGroup**"  in its name, for example, **DefaultButtonGroup10**.
+To highlight a button, it should be located inside a group that has **DefaultButtonGroup** or  **PrimaryButtonGroup**"  in its name, for example, **DefaultButtonGroup10**.
 
 ![Primary button appearance](media/pfe-styles-first.png)
 
 ### Secondary button
 
-Secondary buttons should be located inside a group. There two options for naming the group:
+Secondary buttons should be located inside a group. There are two options for naming the group:
 
 + **Right panel**
 + Starting with **SecondaryButtonGroup**
@@ -116,7 +116,7 @@ Secondary buttons should be located inside a group. There two options for naming
 
 ### Third-group button
 
-Third-group buttons should be located inside a group. There two options for naming the group:
+Third-group buttons should be located inside a group. There are two options for naming the group:
 
 + **Left panel**
 + Starting with **ThirdButtonGroup**
@@ -131,7 +131,7 @@ Property setup:
 
 - **Button Display**: **TextOnly**
 - **Normal Image** should be empty.
-- **Text** should not be empty. For example, it could be **View** or **Edit**.
+- **Text** shouldn't be empty. For example, it could be **View** or **Edit**.
 - **Width**: Auto
 - **Height**: Auto
 
@@ -144,7 +144,7 @@ FlatButtonGroup should be located inside a group that has a name starting with *
 Property setup:
 
 + **Button Display**: **ImageOnly**
-+ **Normal Image** should not be empty. For example, **CoffeeScript**
++ **Normal Image** shouldn't be empty. For example, **CoffeeScript**
 + **Text** should be empty.
 + **Width**: Auto
 + **Height**: Auto
@@ -157,7 +157,7 @@ A combo box is a combination of three controls, an input control, a button to cl
 
 + Each combo box should be nested inside a form group.
 + The group name should start with **Combobox**.
-+ Inside the group, the first control should be an **AxFormStringControl** control which will be used as the display of the current value as well as the box where the user can type the required value.
++ Inside the group, the first control should be an **AxFormStringControl** control. This control will be used as the display of the current value, and it will be where the user enters the required value.
 + The second control should be a **CommonButton** control. The name should start with **ClearButton**. The element must contain code using the **enable** property to show or hide the button. For example, to show or hide the **Clear** button when the user is typing information into the input field, the following code should be used:
 
     ```xpp
@@ -201,7 +201,7 @@ A combo box is a combination of three controls, an input control, a button to cl
 
 ## Dialogs
 
-The styles for all these controls keep the same rules when they are included in a dialog form, if the name of the dialog form starts with **JmgProductionFloorExecutionDialog**. To apply the correct style for the **Ok** and **Cancel** buttons :
+The styles for all these controls keep the same rules when they're included in a dialog form, if the name of the dialog form starts with **JmgProductionFloorExecutionDialog**. To apply the correct style for the **Ok** and **Cancel** buttons:
 
 + **Ok** button. It should be located in a group with the name **OkButtonGroup**.
 + **Cancel** button. It should be located in a group with name **CancelButtonGroup**.
