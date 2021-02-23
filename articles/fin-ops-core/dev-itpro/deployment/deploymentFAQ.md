@@ -107,7 +107,7 @@ New projects for Finance and Operations are onboarded to the following regions:
 - Central US
 
 ### My environments are currently in the regions that are no longer supported. How will this change affect me?
-We will deprecate support for the following regions only for new projects that will be onboarded on or after August 1, 2020:
+Projects that have been onboarded on or after August 1, 2020, are no longer supported in the following regions:
 
 -	East US2
 -	West US2
@@ -115,7 +115,8 @@ We will deprecate support for the following regions only for new projects that w
 -	North Central US
 -	South Central US
 
-This will not affect any environments that have their data stored in the deprecated regions before August 2020. In the near future there is a transition plan to move customers in the deprecated regions into the reduced regions.For a list of the latest supported regions, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
+> [!Note]
+> This will not affect any environments that have their data stored in the deprecated regions before August 2020. There is a transition plan to move customers in the deprecated regions into other regions. For a list of the latest supported regions, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
 
 - If you have any integrations or other dependencies that are latency driven and have questions regarding how the region change in regions will impact that, please contact Microsoft Support.
 - Please review all Azure resources in your current region and assess if they need to be collocated to the new region in preparation for the migration to a different region.
