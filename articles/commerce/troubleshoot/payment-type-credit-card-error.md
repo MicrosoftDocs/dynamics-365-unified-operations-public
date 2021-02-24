@@ -2,7 +2,7 @@
 # required metadata
 
 title: "Payment type must be credit card" error on Sales order page
-description: This topic provides troubleshooting information for when an error message is displayed on the sales order page after synchronizing an order. 
+description: This topic provides troubleshooting guidance for when an error message is displayed on the sales order page after synchronizing an order. 
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting information for when an error message is displayed on the sales order page after synchronizing an order. 
+This topic provides troubleshooting guidance for when an error message is displayed on the sales order page after synchronizing an order.  
 
 ## Description
 
-When navigating to the **Sales order** page after synchronizing an order, the following error message is displayed: "The payment type must be credit card, since the credit card number has been specified."
+When navigating to the **Sales order** page after synchronizing an order, this error message is displayed as shown in the following image: "The payment type must be credit card, since the credit card number has been specified."
 
 ![Payment type must be credit card](media/payment-type-must-be-credit-card.jpg)
 
