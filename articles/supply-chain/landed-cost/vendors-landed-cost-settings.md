@@ -41,7 +41,7 @@ To set the relevant fields, go to **Procurement and sourcing \> Vendors \> All v
 | Cost type group | Assign the vendor to a cost type group for the purpose of selecting [auto costs](auto-cost-setup.md). |
 | From port | Select the port of origin for the voyage. |
 | Agent | The default agent when purchases are made from the vendor. |
-| Import costing vendor | <p>Indicate whether the vendor is a Landed cost vendor.</p><p>**Tip:** You can use this field together with record-level security to limit the purchase orders that are shown when creating a voyage.</p> |
+| Import costing vendor | <p>Indicate whether the vendor is a Landed cost vendor.</p><p>**Tip:** You can use this field together with record-level security to limit the purchase orders that are shown when a voyage is created.</p> |
 | Shipping company | Select the default shipping company that is used when purchase orders are created for the vendor. |
 | Services provider | Indicate whether the vendor is services provider. |
 | Over/Under tolerance group | Select the default over/under tolerance group for the vendor. |
