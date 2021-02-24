@@ -185,7 +185,7 @@ The following table describes the fields that are available on the **Other** Fas
 
 The **Landed cost** module includes several voyage-related periodic tasks that can bulk-update several aspects of voyages. To run or schedule these periodic tasks, go to **Landed cost \> Periodic tasks \> Voyage updates**, and then select one of the following task types:
 
-- **Documents received** - Lets you set the documents received status to several voyages at the same time. Use the **Filter** settings to define the set of voyages you want to update.
-- **In transit** - Lets you set the in-transit status to several voyages at the same time. Use the **Filter** settings to define the set of voyages you want to update.
-- **Ready for costing** - Lets you update all voyages that are ready to be costed, but have not yet been so. You would typically set this task to run on a regular schedule.
-- **Costed**  - Lets you sets all qualifying voyages to the costed status, provided they have been costed and not yet updated on the voyage. You would typically set this task to run on a regular schedule.
+- **Documents received** – This task lets you set the documents received status for several voyages at the same time. Use the **Filter** settings to define the set of voyages that you want to update.
+- **In transit** – This task lets you set the in-transit status for several voyages at the same time. Use the **Filter** settings to define the set of voyages that you want to update.
+- **Ready for costing** – This task lets you update all voyages that haven't yet been costed but are ready for costing. You will typically set up this task to run on a regular schedule.
+- **Costed**  – This task lets you set all qualifying voyages to the costed status, provided that they have been costed but haven't yet been updated on the voyage. You will typically set up this task to run on a regular schedule.
