@@ -1,4 +1,37 @@
+---
+# required metadata
+
+title: Split invoice functionality
+description: 
+author: kailiang
+manager: AnnBe
+ms.date: 02/12/2021
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+# ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 15721
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kailiang
+ms.search.validFrom: 2021-02-12
+ms.dyn365.ops.version: AX 10.0.17
+
+---
 # Split invoice functionality
+
+[!include [banner](../includes/banner.md)]
 
 Select the **Product receipt**, or **Invoice** check boxes in **Accounts payable parameters > General** tab to post and split a product receipt or invoice with different delivery addresses and Tax Account Numbers (TAN) in the **Purchase** **order** form. The posted invoice is split per delivery address per TAN. 
 
