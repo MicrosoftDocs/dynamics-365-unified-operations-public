@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit card entry page displays error on checkout
-description: This topic provides troubleshooting information for when the "Payment method" section doesn't load and displays an error. 
+description: This topic provides troubleshooting guidance for when the "Payment method" section doesn't load and displays an error. 
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting information for when the "Payment method" section doesn't load and displays an error.
+This topic provides troubleshooting guidance for when the "Payment method" section doesn't load and displays an error.
 
 ## Description
 
-When navigating to the checkout page of an online store, the **Payment method** section doesn't load and displays the following error as shown in the following example image: "Something went wrong. Please try again later."
+When navigating to the checkout page of an online store, the **Payment method** section doesn't load and displays this error as shown in the following example image: "Something went wrong. Please try again later."
 
 ![Payment module error](media/payment-module-error.jpg)
 
@@ -47,6 +47,6 @@ When navigating to the checkout page of an online store, the **Payment method** 
 
 The payment service settings on the online store checkout page are cached on the Commerce Scale Unit and can take up to 15 minutes to appear on the e-commerce site. Such payment service settings include changes to the merchant account ID, cloud API key, and various configuration settings relating to payment method. 
 
-## Additional Resources
+## Additional resources
 
 [Set up an online channel](../channel-setup-online.md)
