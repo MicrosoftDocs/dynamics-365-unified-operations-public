@@ -34,79 +34,138 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
-### TSLint has been deprecated in online SDK version 9.27 (Commerce version 10.0.18 release) and replaced with ESLint
-Due to the open source TSLint static analysis tool has being deprecated, the Dynamics 365 Commerce online SDK has changed to leverage the [ESLint](https://eslint.org/) static alaysis tool.  When updating to SDK 9.27, your packages.json file will need to be manually updated to remove the dependency on TSLint and add the dependency to the ESLint dependency.  You then may see new ESLint warnings in your customization code that did not previously exist.
+### TSLint has been deprecated in online SDK version 1.28 (Commerce version 10.0.18 release)
+Due to the open source TSLint static analysis tool has being deprecated, the Dynamics 365 Commerce online SDK is changing to leverage the [ESLint](https://eslint.org/) static alaysis tool as a replacement.  TSLint will continue to work until SDK version 1.30 (Commerce version 10.0.20 release).  You can can manually update to ESLint prior to SDK release 1.30 if desired, but it will be required with release 1.30.  After updating to SDK version 1.28, running ```yarn``` will show a deprecation warning.  You can switch to ESLint at any time after this, but it may cause new errors and warnings to be displayed on your custom code. If you retrieved the online SDK from GitHub with the Commerce 10.0.20 preview release, then it will contain the necessary changes to ESLint and no changes will be needed.  Otherwise if you are updating from an older version of the SDK, you will need to manually update to ESLint before SDK release 1.30.  Follow the section below to manually update from TSLint to ESLint
 
-The below packages.json is an example with dependency links to ESLint.  Your packages.json may be different if you have made any modifications to the default.
+####Replacing TSLint with ESLint
+Once you have [updated to SDK 1.28](sdk-updates.md) or later, you will need to create a ESLint file and change your packages.json file to include the ESLint dependencies and updated commands to use ESLint.  You can leave the TSLint dependency in the packages.json file if you would like to use both.  Once you update to ESLint, you may see new warnings against your code that can be fixed or ignored if needed.
 
+#####.eslintrc.js file
+You will need to add a new file **.eslintrc.js** to your root SDK folder (you should also notice an existing tslint.json file in this directory). This file will contain a base rule set which can be extended
+ 
+The base config contains a set of core rules that is relaxed when it comes to linting restrictions. You may also choose to define your own ruleset or extend another ruleset.
+To use the provided base set of rules, create the **.eslintrc.js** file and copy and paste the following code
+ 
+```javascript
+module.exports = {
+    extends: '@msdyn365-commerce/eslint-config,
+    ignorePatterns: ['.eslintrc.js', '*.html', 'src/__mocks__/**', 'src/__tests__/**'],
+    parserOptions: {
+        project: ['tsconfig.json'],
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true // Allows for the parsing of JSX
+        },
+        tsconfigRootDir: __dirname
+    }
+};
 ```
-{
-  "name": "Msdyn365.Commerce.Online",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "analyze": "SET ANALYZE_BUNDLE=true && yarn msdyn365b start",
-    "analyze:prod": "SET ANALYZE_BUNDLE=true && yarn msdyn365b build",
-    "build": "yarn msdyn365b build",
-    "build:prod": "yarn clean && yarn msdyn365b build",
-    "clean": "yarn rimraf build lib dist .tmp gendef.lock",
-    "format": "yarn prettier **/**.{ts,tsx}",
-    "format:fix": "yarn prettier **/**.{ts,tsx} --write",
-    "lint": "yarn tslint src/**/*.{ts,tsx} --project tsconfig.json --format stylish",
-    "lint:fix": "yarn tslint src/**/*.{ts,tsx} --project tsconfig.json --fix --format stylish",
-    "precommit": "lint-staged",
-    "start": "yarn msdyn365b start local",
-    "start:prod": "SET NODE_ENV=production && node build/server.js"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^5.0.4",
-    "@types/jest": "^23.3.10",
-    "@types/node-fetch": "^2.1.4",
-    "@types/react": "16.9.0",
-    "@types/react-dom": "16.0.11",
-    "@types/react-test-renderer": "^16.0.2",
-    "@types/reactstrap": "^6.4.3",
-    "deep-equal": "1.0.1",
-    "fs-extra": "^7.0.1",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^23.6.0",
-    "jest-junit": "^5.2.0",
-    "lint-staged": "^7.3.0",
-    "node-fetch": "2.6.1",
-    "prettier": "^1.15.3",
-    "react-test-renderer": "^16.4.2",
-    "semver": "^5.6.0",
-    "ts-jest": "^23.10.5",
-    "tslint": "^5.12.0",
-    "typeson": "5.10.1"
-  },
-  "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "9.26",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.26",
-    "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "9.26",
-    "@msdyn365-commerce-modules/msdyn365-exp-test-connector": "^1.0.0",
-    "reactstrap": "^6.5.0",
-    "stack-trace": "^0.0.10",
-    "tslib": "^1.9.3"
-  },
-  "lint-staged": {
-    "*.(j|t)s(x)?": [
-      "yarn format:fix",
-      "yarn lint:fix",
-      "git add"
-    ]
-  },
-  "jest": {
-    "preset": "@msdyn365-commerce/cli-internal"
-  },
-  "resolutions": {
-    "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/core": "^1.0.0",
-    "@msdyn365-commerce-modules/core-components": "^1.0.0"
-  }
-}
+ 
+Additional files/directories that you don't want lint rules applied to can be added to the **ignorePatterns** section.
+In addition, you can extend rules or replace rules by defining the rules in the .eslintrc.js file.
+ 
+For example, if you wanted to extend the base config to turn off the header/header rule (requires a header on all files) you would use the following config:
+ 
+```javascript
+module.exports = {
+    extends: '@msdyn365-commerce/eslint-config',
+    ignorePatterns: ['.eslintrc.js', '*.html', 'src/__mocks__/**', 'src/__tests__/**'],
+    parserOptions: {
+        project: ['tsconfig.json'],
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true // Allows for the parsing of JSX
+        },
+        tsconfigRootDir: __dirname
+    },
+    rules: {
+        'header/header': 'off'
+    }
+};
 ```
+You may also optionally wish to override or declare new rules for certain types of files. To accomplish this, use the overrides property as shown below:
+
+```javascript
+    overrides: [
+        {
+            files: ['*.props.autogenerated.ts', '*.data.ts'],
+            rules: {
+                'header/header': 'off'
+            }
+        },
+        {
+            files: ['*.tsx', '*.view.tsx', '*.test.ts'],
+            rules: {
+                'max-len': 'off',
+                'max-lines': 'off'
+            }
+        }
+    ],
+```
+
+For more information and other help please consult ESLint documentation.
+
+#####package.json file changes
+ 
+Inside your package.json you can leave the TSLint dependency (if you want to use both) and add the following dependencies into your **devDependencies** section:
+ 
+ ```json
+        "@msdyn365-commerce/eslint-config": "^1.27.7",
+        "@typescript-eslint/eslint-plugin": "^4.2.0",
+        "@typescript-eslint/eslint-plugin-tslint": "^4.10.0",
+        "@typescript-eslint/parser": "^4.10.0",
+        "eslint": "^7.16.0",
+        "eslint-config-prettier": "^7.0.0",
+        "eslint-plugin-header": "^3.1.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsdoc": "^30.7.8",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-prettier": "^3.3.0",
+        "eslint-plugin-react": "^7.21.5",
+ ```
+ 
+Change the lint and lint:fix commands to:
+```json
+        "lint": "yarn eslint src/**/*.{ts,tsx}",
+        "lint:fix": "yarn eslint src/**/*.{ts,tsx} --fix"
+```
+ 
+change the build/start commands to for partner packages
+```json 
+        "start": "yarn msdyn365b start local --use-eslint",
+        "build": "yarn msdyn365b build --use-eslint",
+```
+ 
+####Fixing ESLint Errors
+It is optional but recommended to install the ESLint extension for Visual Studio Code. This will help identify errors and warnings directly in your editor and will allow you to use quick actions to ignore linting errors with comments.
+ 
+Run ```yarn lint```
+ 
+You may see new ESLint errors, this is because all the TSLint errors that were suppressed with TSLint comments are popping back up. Fix or disable the ESLint errors. You may choose to ignore the warnings.
+
+If you use the –use-eslint flags to build, the build will fail on errors but will ignore warnings.
+
+####Disabling Linting In Code
+
+Fix all the errors by replacing tslint disable comments with the new eslint disable comment. You may use file find & replace if that is easier but be sure to verify the results.
+
+Helpful tips:
+*You can disable ESLint warnings similar to TSLint by using comments
+*To disable next line use // eslint-disable-next-line <rule1>, <rule2>…
+*To add a comment about why you are disabling a rule you must add ‘--' e.g. // eslint-disable-next-line <rule1> -- Disabling this rule for reasons
+*To disable a rule for an entire file you must use multiline comment e.g. /* eslint-disable <rule1>, <rule2> */ 
+
+Common TSlint-ESlint equivalents
+TSLint Rule	ESLint Rule
+// tslint:disable-next-line:no-any	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// tslint:disable:no-any	/* eslint-disable @typescript-eslint/no-explicit-any */
+// tslint:disable-next-line:cyclomatic-complexity	// eslint-disable-next-line complexity
+// tslint:disable-next-line:no-empty	// eslint-disable-next-line no-empty
+
+####Disabling Linting For a Module
+
+If you wish to disable linting check for the entire module build (build-package) you may use the –disable-linter flag to skip the lint check step. (e.g yarn build-package –disable-linter).
+
 
 ### After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error.
 
