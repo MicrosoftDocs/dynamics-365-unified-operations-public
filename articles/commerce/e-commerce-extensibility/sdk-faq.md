@@ -141,13 +141,13 @@ It is optional but recommended to install the ESLint extension for Visual Studio
  
 Run ```yarn lint```
  
-You may see new ESLint errors, this is because all the TSLint errors that were suppressed with TSLint comments are popping back up. Fix or disable the ESLint errors. You may choose to ignore the warnings.
+You may see new ESLint errors, this is because all the TSLint errors that were suppressed with TSLint comments are popping back up. The ESLint errors can be fixed or disabled and you may choose to ignore the warnings.
 
 If you use the –use-eslint flags to build, the build will fail on errors but will ignore warnings.
 
 #### Disabling Linting In Code
 
-Fix all the errors by replacing tslint disable comments with the new eslint disable comment. You may use file find & replace if that is easier but be sure to verify the results.
+Fix all the errors by replacing TSLint disable comments with the new ESLint disable comment. You may use file find and replace if that is easier but be sure to verify the results.
 
 Helpful tips:
 *You can disable ESLint warnings similar to TSLint by using comments
@@ -155,7 +155,7 @@ Helpful tips:
 *To add a comment about why you are disabling a rule you must add ‘--' e.g. // eslint-disable-next-line <rule1> -- Disabling this rule for reasons
 *To disable a rule for an entire file you must use multiline comment e.g. /* eslint-disable <rule1>, <rule2> */ 
 
-Common TSlint-ESlint equivalents
+Common TSLint-ESLint equivalents
 TSLint Rule	ESLint Rule
 // tslint:disable-next-line:no-any	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 // tslint:disable:no-any	/* eslint-disable @typescript-eslint/no-explicit-any */
