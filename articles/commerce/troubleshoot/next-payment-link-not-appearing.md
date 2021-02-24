@@ -2,7 +2,7 @@
 # required metadata
 
 title: Save for Next Payment option doesn't appear
-description: This topic helps troubleshoot the issue when "Save for next payment" doesn't appear under the payment methods options on an e-commerce site checkout page. 
+description: This topic provides troubleshooting guidance for when "Save for next payment" doesn't appear under the payment methods options on an e-commerce site checkout page. 
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic helps troubleshoot the issue when "Save for next payment" doesn't appear under the payment methods options on an e-commerce site's checkout page.
+This topic provides troubleshooting guidance for when "Save for next payment" doesn't appear under the payment methods options on an e-commerce site checkout page.
 
 ## Description
 
-The **Save for next payment** option doesn't appear on the an e-commerce site's checkout page under **Payment method**.
+The **Save for next payment** option doesn't appear on the an e-commerce site's checkout page under **Payment method**, as shown in the example image below.
 
 ![Payment module save for next payment checkbox](media/payment-module-save-payment.jpg)
 
