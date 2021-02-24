@@ -5,7 +5,7 @@ title: Customer electronic invoices
 description: This topic provides information about the management of customer electronic invoices for Italy.
 author: v-oloski
 manager: tfehr
-ms.date: 02/16/2021
+ms.date: 02/24/2021
 ms.topic: article
 ms.: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.author: v-oloski
 
 This topic describes how to set up and work with the functionality for creating and sending sales invoices and project invoices in an electronic format (FatturaPA).
 
-Starting from version 1.2 of FatturaPA, electronic invoices can be used for all types of businesses. These businesses include public administrations, private companies, and professionals.
+Starting from version 1.2 of FatturaPA, electronic invoices can be used for all types of businesses including, public administrations, private companies, and professionals.
 
 ## Prerequisites
 
@@ -186,36 +186,32 @@ The **CodiceValore** field is set according to the following rules:
 - If there isn't a bar code, and the record on the **External item description** page exists for the product and the customer, this field is set to the value from **External item number** field.
 - If there isn't a bar code, and the record on the **External item description** page doesn't exist for the product and customer, this field is set to the value from the **Item number** field.
 
-### <a id="Natura"></a>Maintain "Natura" codes
+### <a id="Natura"></a>Maintain Natura codes
 
-The system allows users to either manually associate **Natura** codes with related Sales tax codes or let the system automatically determine appropriate **Natura** codes for transactions. Manuall assignment of **Natura** codes has higher priority and will override autimatically idendified  **Natura** codes.
+You can select to manually associate **Natura** codes with related sales tax codes, or let the system automatically determine the appropriate **Natura** codes for transactions. Manual assignment of **Natura** codes has a higher priority and will override automatically identified **Natura** codes.
 
-#### Define "Natura" codes
+### Define Natura codes
 
- > [!NOTE]
- > This functionality is available in the system starting from the version 10.0.18.
-
-Complete the following steps to define **Natura** codes
+Complete the following steps to define **Natura** codes.
 
 1. Go to **Tax** > **Setup** > **Sales tax** > **Nature codes**.
-2. Create a new record.
-3. In the **Nature code** field, enter a valid code of **Natura**, in the **Description** field, enter the explanation what this code is used for.
-4. Create as many **Natura** codes as you need to cover all the related business operations.
-5. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
-6. Select a required Sales tax code.
-7. On the **General** FastTab, in the **Nature code** field, select one of the previously defined **Natura** codes.
+2. Create a new record and in the the **Nature code** field, enter a valid code of **Natura**.
+3. In the **Description** field, enter an explanation of what the code is used for.
+4. Create as many **Natura** codes as needed to cover all the related business operations.
+5. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes** and select a required sales tax code.
+6. On the **General** FastTab, in the **Nature code** field, select one of the previously defined **Natura** codes.
 
-![Nature of Sales tax](media/emea-ita-natura.jpg)
+![Nature of sales tax](media/emea-ita-natura.jpg)
 
-#### Reverse charge groups configuration
+### Reverse charge groups configuration
 
-The settings in this section are required when a company uses the reverse charge functionality. Reverse charge groups are used for automatic determination of **Natura** codes specific for reverse charge operations.
+The settings in this section are required when a company uses the reverse charge functionality. Reverse charge groups are used to automatically determine the **Natura** codes specific to reverse charge operations.
 
 Go to **Tax** \> **Setup** \> **Reverse charge item groups** to define specific reverse charge groups for specific products or categories.
 
 ![Reverse charge item groups page](media/emea-ita-FatturaPA-161-RC-groups.png)
 
-Additionally, application-specific parameters that use these groups should be set up. For more information about this functionality, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it), **Reverse charge configuration** section.
+Additionally, application-specific parameters that use these groups should be set up. For more information about this functionality, see the section "Reverse charge configuration in the topic, [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
 
 ### <a id="InvoiceTypes"></a>Invoice types configuration
 
@@ -226,16 +222,16 @@ The following types of invoice documents are supported and will automatically be
 - TD05 – Debit note
 - TD20 – Self-invoice
 
-If a required document type isn't covered by the values in the preceding list, you can manually adjust the document type in the invoice journals. To enable manual adjustment, you must complete the following setup:
+If a required document type isn't listed, you can manually adjust the document type in the invoice journals. To enable manual adjustment, complete the following setup:
 
 - Electronic document property definition
 - Invoice document type registration
 
-For more information, see [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it), **Invoice types configuration** section.
+For more information, see the section, **Invoice types configuration** in the topic [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
 
 ### <a id="digitalcert"></a>Digital certificates
 
-Go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates** to electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type.
+Go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates** to electronically sign electronic invoices by using a certificate of either the **Company** or **User** type.
 
 ![Electronic signature certificates page](media/emea-ita-electronic-invocies-certificate.png)
 
@@ -292,25 +288,21 @@ For each base document, users can add details about the document number and date
 
 ### Base documents for public sector companies
 
-> [!NOTE]
- > This functionality is available in the system starting from the version 10.0.17.
-
-In Italy, it is legally required that public sector companies must provide the traceability of tender procedures codes (CIG) and projects codes (CUP) during invoicing and payments. To provide it, an additional control of **CIG** and **CUP** codes is implemented for public sector companies. 
-For information about this functionality, see [Italian localization - Payment traceability](emea-ita-payment-traceability.md).
-
+In Italy, there is a legal requirement that public sector companies provide the traceability of tender procedures codes (CIG) and projects codes (CUP) during invoicing and payments. To provide the traceability, an additional control of **CIG** and **CUP** codes is implemented for public sector companies. 
+For more information about this functionality, see [Italian localization - Payment traceability](emea-ita-payment-traceability.md).
 
 ## <a id="einvoiceregister"></a>Electronic invoice register
 
 To view all customer electronic invoices and perform various actions, go to **Accounts receivable** \> **Invoices** \> **E-Invoices** \> **Electronic invoices**.
 
-On the **Electronic customer invoices** page, you can perform any of the following actions:
+On the **Electronic customer invoices** page, you can perform the following actions:
 
 - Select **Select** to select invoices, based on various criteria. This function is useful if the **eInvoice register** option is set to **No**.
 - Select **Create XML**, **Create signature**, and **Send** to create XML files and a digital signature for selected invoices, and send the invoices.
 - Select **Export** to export a selected invoice to an XML file.
 
     > [!NOTE]
-    > The system sends a file to the folder that is set up on your computer. (The destination settings aren't used.)
+    > The system sends a file to the folder that is set up on your computer. The destination settings aren't used.
 
 - Select the **Details** tab to view details of the electronic invoice.
 
