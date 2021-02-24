@@ -43,4 +43,10 @@ This topic describes the **Benefits management** workspace in Dynamics 365 Human
 The **Benefits management** workspace gives you a quick view of benefits items that require your attention. On this page, you can see:
 
 - Totals for items awaiting action
-- 
+- Workers with unconfirmed selections
+- Workers who recently enrolled in benefits
+- Workers with future life events
+- New hires who aren't enrolled
+- Workers with active life events
+- Workers with open enrollments who haven't opted for any plans
+
