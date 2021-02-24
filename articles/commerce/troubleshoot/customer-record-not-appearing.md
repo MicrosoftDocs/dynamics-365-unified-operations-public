@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer records don't appear in Commerce headquarters
-description: This topic provides troubleshooting for when customer records don't show up immediately in Commerce headquarters. 
+description: This topic provides troubleshooting guidance for when customer records don't show up immediately in Commerce headquarters. 
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting for when customer records don't show up immediately in Commerce headquarters
+This topic provides troubleshooting guidance for when customer records don't show up immediately in Commerce headquarters.
 
 ## Description
 
