@@ -63,7 +63,7 @@ You can view your action items by either selecting a tile or a tab. If you selec
 
 To process enrollment eligibility, life events, or rate change updates, select the appropriate item on the navigation bar.
 
-![Processing](./media/hr-benefits-management-workspace-processing.png)
+![Processing](./media/hr-benefits-management-workspace-processing.png) 
 
 To view process results, select **Process results** on the page.
 
