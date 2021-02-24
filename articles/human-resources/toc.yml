@@ -623,6 +623,8 @@
         items:
         - name: Benefits management overview
           href: hr-benefits-management-overview.md
+        - name: Benefits management workspace
+          href: hr-benefits-management-workspace.md
         - name: Configure Benefits management
           items: 
           - name: Configure Benefits management parameters per company
