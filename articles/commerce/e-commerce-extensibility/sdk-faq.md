@@ -159,9 +159,9 @@ Common TSLint-ESLint equivalents
 TSLint Rule	| ESLint Rule
 --- | --- |
 // tslint:disable-next-line:no-any	| // eslint-disable-next-line @typescript-eslint/no-explicit-any
-* // tslint:disable:no-any	| /* eslint-disable @typescript-eslint/no-explicit-any */
-* // tslint:disable-next-line:cyclomatic-complexity	| // eslint-disable-next-line complexity
-*// tslint:disable-next-line:no-empty	| // eslint-disable-next-line no-empty
+// tslint:disable:no-any	| /* eslint-disable @typescript-eslint/no-explicit-any */
+// tslint:disable-next-line:cyclomatic-complexity	| // eslint-disable-next-line complexity
+// tslint:disable-next-line:no-empty	| // eslint-disable-next-line no-empty
 
 #### Disabling Linting For a Module
 
