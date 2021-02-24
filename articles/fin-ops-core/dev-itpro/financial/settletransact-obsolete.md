@@ -50,6 +50,12 @@ CustTable _custTable,
     ,CustTrans _parentCustTrans = null)
 ```
 
+### What does obsolete mean?
+
+When a method is marked as obsolete, it means the code is no longer required and is planned to be eventually removed from the product.  The obsolete method will often recommend an alternative method that can be used.  The referencing code will continue to work as expected with the obsolete method. No immediate action is required. But,  referencing code should be refactored to the replacement method.
+
+Additional obsolete process information can be found at Deprecation of methods and metadata elements - Finance & Operations | Dynamics 365 | Microsoft Docs  
+
 ### Why is it marked as obsolete?
 
 When many settlements are done at the same time for the same customer, database blocking occurs. Database blocking affects performance.
