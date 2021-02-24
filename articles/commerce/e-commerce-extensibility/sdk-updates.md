@@ -44,10 +44,10 @@ The SDK packages.json file that is included in the SDK root directory controls w
 ```json
 ...
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "9.25",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.25",
+    "@msdyn365-commerce-modules/starter-pack": "9.26",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.26",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "9.25",
+    "@msdyn365-commerce/retail-proxy": "9.26",
 }
 ...
 ```
@@ -66,14 +66,14 @@ Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, 
 ```json
 ...
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "~9.26.0",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.26.0",
+    "@msdyn365-commerce-modules/starter-pack": "~9.27.0",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.27.0",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "~9.26.0",
+    "@msdyn365-commerce/retail-proxy": "~9.27.0",
 }
 ...
 ```
-The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **January 25, 2021**.
+The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **March 19th, 2021**.
 
 | Commerce Scale Unit version | Maximum module library version |
 | --------------- | --------------- |
@@ -84,6 +84,7 @@ The following table maps module library versions to Commerce Scale Unit versions
 | 10.0.14 | 9.24.x |
 | 10.0.15 | 9.25.x |
 | 10.0.16 | 9.26.x |
+| 10.0.17 | 9.27.x |
 
 ## Pull updates
 
