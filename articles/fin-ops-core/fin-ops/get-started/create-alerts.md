@@ -107,6 +107,9 @@ You can't create alerts for some secondary data sources on forms. For example, w
 	```
 2. Create an alert from the SysTableBrowser form.
 
+### Change based alerts do not work for Batch status changes
+Limitation: Change Based Alerts does not work with Batch status changes since it is disabled by the platform for performance reasons. 
+Workaround: Instead, customers should set up the [**Batch alerts**] capability (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/alerts#set-up-alerts-for-batch-enhanced-forms)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
