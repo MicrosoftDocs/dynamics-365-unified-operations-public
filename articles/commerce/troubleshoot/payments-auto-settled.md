@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payments are automatically settled before orders are invoiced or shipped
-description: This topic provides a resolution for when an order is placed and the payment is immediately settled in the Adyen portal, even when the sales order hasn't been invoiced or shipped.
+description: This topic provides troubleshooting guidance for when an order is placed and the payment is immediately settled in the Adyen portal, even when the sales order hasn't been invoiced or shipped.
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides a resolution for when an order is placed and the payment is immediately settled in the Adyen portal, even when the sales order hasn't been invoiced or shipped.
+This topic provides troubleshooting guidance for when an order is placed and the payment is immediately settled in the Adyen portal, even when the sales order hasn't been invoiced or shipped.
 
 ## Description
 
@@ -43,10 +43,12 @@ Once an order is placed, the payment is immediately settled in the Adyen portal 
 
 ### Configure manual capture for e-commerce payments in the Adyen portal
 
+To configure manual capture for e-commerce payments in the Adyen portal, follow these steps.
+
 1. Sign in to the Adyen portal.
 1. On the top right corner, select your merchant account for the e-commerce channel.
 1. On the top navigation, select **Account**, and then select **Settings**.
-1. In the **Capture delay** drop-down list, select **manual**.
+1. In the **Capture delay** drop-down list, select **manual** as shown in the following example image.
 
 ![Adyen capture delay setting](media/adyen-capture-delay.jpg)
 
