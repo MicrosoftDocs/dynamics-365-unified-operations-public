@@ -130,7 +130,7 @@ Change the lint and lint:fix commands to:
         "lint:fix": "yarn eslint src/**/*.{ts,tsx} --fix"
 ```
  
-change the build/start commands to for partner packages
+Change the build/start commands to for partner packages
 ```json 
         "start": "yarn msdyn365b start local --use-eslint",
         "build": "yarn msdyn365b build --use-eslint",
