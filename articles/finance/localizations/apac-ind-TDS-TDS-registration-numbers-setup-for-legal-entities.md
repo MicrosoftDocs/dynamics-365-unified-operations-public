@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 
-description: 
+title: Set up TDS registration numbers for legal entities
+description: This topic lists the steps for setting up Tax Deducted at Source (TDS) registration numbers for legal entities.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -29,21 +29,19 @@ ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
 
 ---
-# TDS registration numbers setup for legal entities
+# Set up TDS registration numbers for legal entities
 
 [!include [banner](../includes/banner.md)]
 
-Follow these steps to set up TDS registration numbers for legal entities.
+This topic lists the steps for setting up Tax Deducted at Source (TDS) registration numbers for legal entities.
 
-Go to **Organization administration > Organizations > Legal entities**
+Begin by opening the **Legal entities** page (**Organization administration > Organizations > Legal entities**).
 
 [![Legal entities](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
 
+1. Expand the **Tax information** tab, in the **Permanent account number** field, enter the PAN number of the legal entity. In the **Circle number** field, enter the circle number of the TDS authority. In the **Ward number** field, enter the ward number of the TDS authority. In the **Assessing officer** field, enter the assessing officer details for the TDS authority.
 
-
-1. Expand the **Tax information** tab, in the **Permanent account number** field, enter the PAN number of the legal entity. In the **Circle** **number** field, enter the circle number of the TDS authority. In the **Ward** **number** field, enter the ward number of the TDS authority. In the **Assessing** **officer** field, enter the assessing officer details for the TDS authority.
-
-2. In the **Type** **of** **deductor** field, select the deductor type category for the legal entity.
+2. In the **Typ of deductor** field, select the deductor type category for the legal entity.
 
 3. Click **Registration IDs** in the Menu,  in the **Tax information** tab, click **Add** or **Edit** to maintain the tax registration entry.
 
@@ -57,4 +55,4 @@ Go to **Organization administration > Organizations > Legal entities**
 
    [![Manage tax information](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
 
-6. Close the form.
+6. Close the page.
