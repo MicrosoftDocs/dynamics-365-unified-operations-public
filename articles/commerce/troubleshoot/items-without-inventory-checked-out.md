@@ -2,7 +2,7 @@
 # required metadata
 
 title: Items without inventory can be checked out
-description: This topic provides troubleshooting for when customers can add items without on-hand inventory to the cart and proceed to check out. 
+description: This topic provides troubleshooting guidance for when customers can add out-of-stock items to the cart and proceed to check out. 
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting for when customers can add items without on-hand inventory to the cart and proceed to the checkout page.
+This topic provides troubleshooting guidance for when customers can add out-of-stock items to the cart and proceed to check out.
 
 ## Description
 
