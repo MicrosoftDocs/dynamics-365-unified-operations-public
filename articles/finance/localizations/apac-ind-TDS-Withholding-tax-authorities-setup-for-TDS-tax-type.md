@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Withholding tax authorities setup for TDS tax type
+title: Set up withholding tax authorities for TDS tax type
 description: This topic lists the steps for setting up the Tax Deducted at Source (TDS) authorities.
 author: kailiang
 manager: AnnBe
@@ -30,7 +30,9 @@ ms.dyn365.ops.version: AX 10.0.17
 
 ---
 
-# Withholding tax authorities setup for TDS tax type
+# Set up withholding tax authorities for TDS tax type
+
+[!include [banner](../includes/banner.md)]
 
 This topic lists the steps for setting up the Tax Deducted at Source (TDS) authorities.
 
