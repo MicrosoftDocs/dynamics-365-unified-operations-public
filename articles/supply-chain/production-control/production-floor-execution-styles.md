@@ -39,11 +39,11 @@ To apply styles to card view controls:
 + Each card view must be contained in a form group.
 + The group name must start with **CardGroup**, for example, **CardGroupJobsView**.
 
-An example the card view without elements inside:
+A card view without controls inside:
 
 ![Card without elements](media/pfe-styles-empty-card.png)
 
-An example the card view with elements inside:
+A card view with controls inside:
 
 ![Card with elements](media/pfe-styles-elements.png)
 
@@ -55,10 +55,10 @@ To apply styles to business card controls:
 + The group name must start with **BusinessCardGroup**, for example, **BusinessCardGroupJobsList**.
 + Set these properties on the business card:
 
-    - **Style**: **list**
-    - **Extended style**: **cardList**
-    - **Multi Select**: **No**
-    - **Show Col Labels**: **No**
+    - **Style**: **list**.
+    - **Extended style**: **cardList**.
+    - **Multi Select**: **No**.
+    - **Show Col Labels**: **No**.
 
 ## Radio button
 
@@ -68,7 +68,7 @@ To apply styles to radio buttons:
 + The group name must start with **RadioTextBelow** or **RadioTextRight**, depending on where you want the text to appear.
 + Set these properties on the radio button:
 
-    - **Toggle button**: **Check**
+    - **Toggle button**: **Check**.
     - **Toggle value**: **On** if radio button should be selected; otherwise, **Off**.
 
 An example with the text below the radio button:
@@ -90,7 +90,7 @@ Production Floor Execution styles aren't supported in Internet Explorer. An exam
 To apply styles to buttons:
 
 + Each group of buttons must be contained in a form group. All the buttons in the group will have the same style.
-+ There are not requirements on naming the group.
++ There are no requirements on naming the group.
 + Set these properties on the buttons:
 
     - **Button Display**: **TextWithImageLeft**.
@@ -204,7 +204,7 @@ To apply styles to a combo box:
 
     Set the value of the input control, **AxFormStringControl**, when the form is initialized by using the **init** method. If value is not blank, then enable the **Clear** button. If the value is blank, disable the **Clear** button.
 
-+ The third control must be a **CommonButton** control. The name must should start with **SearchButton**.
++ The third control must be a **CommonButton** control. The name must start with **SearchButton**.
 
 The following image shows two combo box controls. The left combo box has an empty text box and the clear button is disabled. The right combo box has text in the text box and the clear button is enabled.
 
