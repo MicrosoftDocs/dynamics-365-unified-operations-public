@@ -40,7 +40,7 @@ Due to the open source TSLint static analysis tool being deprecated, the Dynamic
 #### Replacing TSLint with ESLint
 Once you have [updated to SDK 1.28](sdk-updates.md) or later, you will need to create an ESLint file and change your packages.json file to include the ESLint dependencies and update the commands to use ESLint.  You can leave the TSLint dependency in the packages.json file if you would like to use both.  Once you update to ESLint, you may see new warnings against your code that can be fixed or ignored if needed.
 
-##### .eslintrc.js file
+##### Create a .eslintrc.js file
 You will need to add a new file **.eslintrc.js** to your root SDK folder (you should also notice an existing tslint.json file in this directory). This file will contain a base rule set which can be extended
  
 The base config contains a set of core rules that is relaxed when it comes to linting restrictions. You may also choose to define your own ruleset or extend another ruleset.
@@ -105,7 +105,7 @@ You may also optionally wish to override or declare new rules for certain types 
 
 For more information and other help please consult ESLint documentation.
 
-##### package.json file changes
+##### Update the package.json file
  
 Inside your package.json you can leave the TSLint dependency (if you want to use both) and add the following dependencies into your **devDependencies** section:
  
