@@ -150,17 +150,18 @@ If you use the –use-eslint flags to build, the build will fail on errors but w
 Fix all the errors by replacing TSLint disable comments with the new ESLint disable comment. You may use file find and replace if that is easier but be sure to verify the results.
 
 Helpful tips:
-*You can disable ESLint warnings similar to TSLint by using comments
-*To disable next line use // eslint-disable-next-line <rule1>, <rule2>…
-*To add a comment about why you are disabling a rule you must add ‘--' e.g. // eslint-disable-next-line <rule1> -- Disabling this rule for reasons
-*To disable a rule for an entire file you must use multiline comment e.g. /* eslint-disable <rule1>, <rule2> */ 
+* You can disable ESLint warnings similar to TSLint by using comments
+* To disable next line use // eslint-disable-next-line <rule1>, <rule2>…
+* To add a comment about why you are disabling a rule you must add ‘--' e.g. // eslint-disable-next-line <rule1> -- Disabling this rule for reasons
+* To disable a rule for an entire file you must use multiline comment e.g. /* eslint-disable <rule1>, <rule2> */ 
 
 Common TSLint-ESLint equivalents
-TSLint Rule	ESLint Rule
-// tslint:disable-next-line:no-any	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-// tslint:disable:no-any	/* eslint-disable @typescript-eslint/no-explicit-any */
-// tslint:disable-next-line:cyclomatic-complexity	// eslint-disable-next-line complexity
-// tslint:disable-next-line:no-empty	// eslint-disable-next-line no-empty
+TSLint Rule	| ESLint Rule
+--- | --- |
+// tslint:disable-next-line:no-any	| // eslint-disable-next-line @typescript-eslint/no-explicit-any
+* // tslint:disable:no-any	| /* eslint-disable @typescript-eslint/no-explicit-any */
+* // tslint:disable-next-line:cyclomatic-complexity	| // eslint-disable-next-line complexity
+*// tslint:disable-next-line:no-empty	| // eslint-disable-next-line no-empty
 
 #### Disabling Linting For a Module
 
