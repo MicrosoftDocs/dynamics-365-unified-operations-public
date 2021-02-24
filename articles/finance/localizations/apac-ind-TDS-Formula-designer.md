@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Formula Designer
+title: Formula designer
 description: This topic provides an example of how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code in the TDS group that's attached to the transaction.
 author: kailiang
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 ---
 
-# Formula Designer
+# Formula designer
 
 [!include [banner](../includes/banner.md)]
 
