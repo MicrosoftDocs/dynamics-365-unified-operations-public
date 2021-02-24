@@ -35,11 +35,9 @@ ms.dyn365.ops.version: 10.0.17
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> This topic describes how to configure the new Warehouse Management mobile app, which is currently in public preview. If you're looking for information about how to configure the old warehouse app, see [Install and connect the warehouse app](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> This topic describes how to configure the new Warehouse Management mobile app. If you're looking for information about how to configure the old warehouse app, see [Install and connect the warehouse app](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-The public preview of the Warehouse Management mobile app is available for download on Microsoft App Center. It's provided as a standalone component. Therefore, you must download it on each device and then configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
-
-This topic explains how to install the Warehouse Management mobile app on each of your mobile devices and configure it to connect to your Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
+This topic explains how to download and install the Warehouse Management mobile app on each of your mobile devices, and how configure the app to connect to your Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
 
 ## System requirements
 
