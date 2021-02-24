@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Withholding tax settlement periods setup for TDS tax type
+title: Set up withholding tax settlement periods for the TDS tax type
 description: This topic lists the steps for setting up settlement periods for Tax Deducted at Source (TDS) settlement periods.
 author: kailiang
 manager: AnnBe
@@ -30,7 +30,9 @@ ms.dyn365.ops.version: AX 10.0.17
 
 ---
 
-# Withholding tax settlement periods setup for TDS tax type
+# Set up withholding tax settlement periods for the TDS tax type
+
+[!include [banner](../includes/banner.md)]
 
 This topic lists the steps for setting up settlement periods for Tax Deducted at Source (TDS) settlement periods.
 
