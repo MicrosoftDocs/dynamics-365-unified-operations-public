@@ -49,24 +49,24 @@ To enable the "BOPIS" extension in Commerce site builder, follow these steps.
 
 1. Select your site.
 1. Select **Site settings**, and then select **Extensions**.
-1. Ensure that the **Disable BOPIS** option is not selected.
+1. Confirm that the **Disable BOPIS** option is not selected.
 
 ### Configure modes of delivery in Commerce headquarters
 
 To configure modes of delivery in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> Modes of delivery**.
-1. Ensure that a **Customer pickup** mode of delivery has been created, and that products and addresses are assigned to it.
+1. Confirm that a **Customer pickup** mode of delivery has been created, and that products and addresses are assigned to it.
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters**.
 1. Select **Customer orders** on the left navigation pane.
-1. Ensure that the **Pickup mode of delivery** is configured correctly.
+1. Confirm that the **Pickup mode of delivery** is configured correctly.
 
 ### Configure customer orders payments
 
 To configure customer orders payments in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters**.
-1. On the left navigation, select **Customer orders**. On the **Payments** FastTab, ensure that the **Terms of payment** and **Method of payment** drop-down list options are correct.
+1. On the left navigation, select **Customer orders**. On the **Payments** FastTab, confirm that the **Terms of payment** and **Method of payment** drop-down list options are correct.
 
 ### Additional resources
 
