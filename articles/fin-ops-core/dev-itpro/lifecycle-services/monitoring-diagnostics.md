@@ -2,8 +2,8 @@
 # required metadata
 
 title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
-description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Finance and Operations environments that you manage.
-author: meeramahabala
+description: This topic describes the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
+author: angelmarshall
 manager: AnnBe
 ms.date: 08/03/2020
 ms.topic: article
@@ -23,7 +23,7 @@ ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: meeram
+ms.author: tsmarsha
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -158,3 +158,6 @@ For advanced troubleshooting, you can view raw information logs. You can use a s
 
 The Monitoring and diagnostics portal also includes advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For more details, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

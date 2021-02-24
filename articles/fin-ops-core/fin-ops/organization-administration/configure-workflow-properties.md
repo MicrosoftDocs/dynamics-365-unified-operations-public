@@ -80,6 +80,9 @@ You can provide instructions to users who submit documents for processing and ap
     5. To personalize the text, you can insert placeholders. For instructions about how to enter a placeholder, see step 3.
     6. Click **Close**.
 
+> [!NOTE]
+> Placeholders cannot be added using copy and paste because the target information is not pasted in correctly. Use the interface to add placeholders.
+
 ## Specify when this workflow is used through activation conditions
 
 You can create multiple workflows that are based on the same workflow type. When you have multiple workflows that are based on the same type, you must specify when each workflow is used using activation conditions. If activation conditions are not met, then the default workflow is used. Similarly, if there is only one workflow configuration defined for a workflow type, then that workflow configuration will be used regardless of the activation conditions.
@@ -185,3 +188,6 @@ To enter comments about the changes that you made to the workflow, follow these 
 2. In the **Enter comments about the workflow** field, enter your comments.
 3. Review your comments. After you add comments, you can't modify them.
 4. Click **Add** to add your comments to the **Comment history** area.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

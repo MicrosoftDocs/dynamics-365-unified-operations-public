@@ -92,3 +92,6 @@ This procedure shows you how to fulfill a sales agreement by associating sales o
 23. Click Attached sales agreement.
 24. Click the Fulfillment tab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

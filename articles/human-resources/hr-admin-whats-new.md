@@ -4,7 +4,7 @@
 title: What's new or changed in Human Resources
 description: Each week, we provide a new release for Microsoft Dynamics 365 Human Resources. The topics listed here detail the changes made each week.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: SystemAdministrationWorkspaceForm, FeatureManagementWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # What's new or changed in Human Resources
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resources. The topics listed here detail the changes made with each release.
 
@@ -53,6 +56,8 @@ For more information about upcoming features or the update process for Human Res
 
 To find out what's new or changed in each biweekly release of Human Resources, see the following articles:
 
+[January 28, 2021](hr-whats-new-2021-01-28.md)</br>
+[January 21, 2021](hr-whats-new-2021-01-21.md)</br>
 [December 02, 2020](hr-whats-new-2020-12-02.md)</br>
 [October 22, 2020](hr-whats-new-2020-10-22.md)</br>
 [September 16, 2020](hr-whats-new-2020-09-16.md)</br>
@@ -83,3 +88,6 @@ To find out what's new or changed in each biweekly release of Human Resources, s
 [Overview of Dynamics 365 Human Resources 2020 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

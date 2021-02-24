@@ -115,3 +115,6 @@ You can process NSF payments by clicking NSF payment in the Collections page. Wh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

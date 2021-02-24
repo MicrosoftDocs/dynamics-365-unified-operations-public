@@ -72,3 +72,6 @@ This path involves configuring your project for continuous updates.
 
 [Configure service updates through Lifecycle Services (LCS)](../lifecycle-services/configure-service-updates.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2781,3 +2781,6 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 
 > [!Note]
 > Transactions weren&#39;t generated for amounts in fields **W1**, **F1**, and **F2**, because those fields aren&#39;t related to tax.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

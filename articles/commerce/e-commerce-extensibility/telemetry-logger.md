@@ -137,3 +137,6 @@ The best guidance is to use **.exception()** to log actual **Error** objects and
 ## Additional resources
 
 [Online channel extensibility overview](overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

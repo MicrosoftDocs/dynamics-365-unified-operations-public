@@ -4,7 +4,7 @@
 title: Process life events
 description: During the employee lifecycle in Microsoft Dynamics 365 Human Resources, each employee may encounter various life event changes.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Process life events
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 During the employee lifecycle in Microsoft Dynamics 365 Human Resources, each employee may encounter various life event changes. For example, marriage, change in employment, or dependent/beneficiary change. To use life events, you must enable life events in the benefits parameters form, set up life event types, and set up life event options for plan types.
 
@@ -61,3 +64,6 @@ For example, if today is February 1, and on February 14 worker Joe Smith is sche
    4. Select **OK**. The process will run with the parameters you set.
 
 4. Select **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

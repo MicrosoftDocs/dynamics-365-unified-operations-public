@@ -19,6 +19,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Go-live FAQ 
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -71,7 +74,7 @@ Although you can't access your Azure resources or Dynamics 365 Human Resources e
 
 - You can deploy an Azure SQL database in your own Azure tenant and use the Bring Your Own Database (BYOD) feature to synchronize data. For more information, see [Bring your own database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
 
-- You can use Common Data Service integration to synchronize select entities into the Common Data Service database. For more information, see [Common Data Service entities](hr-developer-entities.md). 
+- You can use Dataverse integration to synchronize select entities into the Dataverse database. For more information, see [Dataverse tables](hr-developer-entities.md). 
 
 ## How often is my production database backed up? 
 
@@ -104,3 +107,6 @@ To report a Production outage, follow the process described in [Report a produ
  ## See also
 
  [Prepare for go-live](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

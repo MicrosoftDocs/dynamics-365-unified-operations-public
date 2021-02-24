@@ -64,3 +64,6 @@ Next, you should associate accounts with the expense types. These accounts will 
 7. In the appropriate fields, select the finance lease main account and the operating lease main account.
 
 When you've completed these steps, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease. Alternatively, you can add expenses when you create a new lease.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

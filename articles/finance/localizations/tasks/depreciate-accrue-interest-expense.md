@@ -78,3 +78,6 @@ This task was completed using the JPMF demo company data.
     * The interest expenses are indicated by Transaction type  
 14. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

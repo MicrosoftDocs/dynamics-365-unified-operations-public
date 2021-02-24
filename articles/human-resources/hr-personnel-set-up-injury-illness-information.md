@@ -4,7 +4,7 @@
 title: Set up injury and illness information
 description: Employers need to know when their employees suffer injuries or illness resulting from hazards in the workplace. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -17,6 +17,7 @@ ms.search.form: HRMInjurySetup, HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -26,6 +27,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up injury and illness information
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -67,3 +70,6 @@ Employers need to know when their employees suffer injuries or illness resulting
     * Reporting agencies are the agencies that the incident needs to be reported to. Select the default check box for the agency that is the default agency for reporting injury and illnesses to.  
 23. Click Save.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

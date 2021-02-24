@@ -167,7 +167,7 @@ You can now start to configure scale units and workloads in your preview environ
 
 > [!IMPORTANT]
 > When you configure cloud scale units, you can [do all the required steps in the Scale Unit Manager portal](#scale-unit-manager-portal).
-<!-- >
+<!-- 
 > If want to use edge scale units with your preview deployment, you must do all scale unit configuration in the user interface on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). You can't use Scale Unit Manager portal if you include an edge scale unit. -->
 
 ### <a name="scale-unit-manager-portal"></a>Manage cloud scale units and workloads by using the Scale Unit Manager portal
@@ -178,7 +178,7 @@ Go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM), and sign in by usi
 
 To add one or more scale units that are available in your topology, select **Add scale units**. In the preview, you should see the cloud scale unit that you deployed from one of the promo codes that you received as part of the preview program.
 
-<!-- > [!IMPORTANT]
+<!--  [!IMPORTANT]
 > In the public preview, the Scale Unit Manager portal shows the cloud scale unit that you received as part of the preview program. Any edge scale unit that you created based on an LBD configuration can't be managed in the Scale Unit Manager portal yet. For configuration details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md) -->
 
 On the **Defined workloads** tab, use the **Create workload** button to add a warehouse management or manufacturing execution workload to one of your scale units. For each workload, you must specify the context of the processes that will be owned by the workload. For warehouse management workloads, the context is a specific warehouse in a specific site and legal entity. For manufacturing execution workloads, the context is a specific site in a legal entity.
@@ -191,3 +191,6 @@ On the **Defined workloads** tab, use the **Create workload** button to add a wa
 <!-- ### Create an edge scale unit using your custom on-premises hardware appliance
 
 In the public preview, you can create on-premises edge scale units on your custom hardware using the LBD environments. For details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md). -->
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

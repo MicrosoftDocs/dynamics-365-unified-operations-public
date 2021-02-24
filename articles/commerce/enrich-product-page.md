@@ -77,3 +77,8 @@ To enrich a product page, follow these steps.
 [Enrich a category landing page](enrich-category-page.md)
 
 [Verify page content accessibility](verify-accessibility.md)
+
+[Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

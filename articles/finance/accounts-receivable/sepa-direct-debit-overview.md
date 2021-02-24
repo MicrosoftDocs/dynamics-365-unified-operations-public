@@ -88,3 +88,6 @@ Under both SEPA Direct Debit schemes, customers have certain rights to refunds. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

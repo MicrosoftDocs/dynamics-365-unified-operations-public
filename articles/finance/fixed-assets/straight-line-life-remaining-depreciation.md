@@ -84,3 +84,6 @@ The depreciation amount is the same every year: (Acquisition cost – Salvage va
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

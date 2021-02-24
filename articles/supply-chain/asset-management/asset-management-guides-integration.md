@@ -118,3 +118,6 @@ To associate a guide with a maintenance checklist template, follow these steps.
 
 - [Dual-write overview](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Asset management overview](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

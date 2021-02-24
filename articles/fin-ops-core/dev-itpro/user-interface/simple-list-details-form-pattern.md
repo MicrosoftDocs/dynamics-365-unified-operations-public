@@ -168,3 +168,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![AX 2012 example](./media/simplelistanddetails5.png)](./media/simplelistanddetails5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

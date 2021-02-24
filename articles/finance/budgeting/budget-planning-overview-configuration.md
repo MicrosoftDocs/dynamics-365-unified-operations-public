@@ -209,3 +209,6 @@ You can also use the **Actions** menu to create a new process by copying an exis
 Another useful command on the **Actions** menu is **View budget process status**. This command graphically shows the budget plans in a process, together with relevant data, such as the workflow status of the plans, summaries by amount and unit, and one-click navigation to the budget plans themselves.
 
 [![Budget planning process status](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

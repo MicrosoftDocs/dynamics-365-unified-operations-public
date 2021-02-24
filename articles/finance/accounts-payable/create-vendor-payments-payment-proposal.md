@@ -127,3 +127,6 @@ You can define a standard debiting payment account per method of payment regardl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

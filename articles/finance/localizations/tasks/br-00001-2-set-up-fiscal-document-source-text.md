@@ -52,3 +52,6 @@ You can attach fiscal document texts to a sales order, purchase order, or free t
 19. Click Save.
 20. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

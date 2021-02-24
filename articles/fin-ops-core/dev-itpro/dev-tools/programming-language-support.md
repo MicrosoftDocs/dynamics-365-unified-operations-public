@@ -120,3 +120,6 @@ There are a few changes to X++ that require corresponding changes in legacy cust
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

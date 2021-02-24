@@ -4,7 +4,7 @@
 title: Talent system requirements
 description: This topic lists requirements for Dynamics 365 Talent.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: 
@@ -71,3 +71,6 @@ You can download a PDF file of the countries, regions, and languages Talent supp
 
 If you're a developer interested in creating country- or region-specific customizations, or in creating a solution for a country or region not currently supported by Microsoft, see [Globalization](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

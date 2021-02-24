@@ -156,3 +156,6 @@ You can use the following settings if materials should always be manually deduct
 | Report as finished |   Automatic BOM consumption    | <strong>Never</strong>  |
 | Report as finished | Update finished report on-line | <strong>Status</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

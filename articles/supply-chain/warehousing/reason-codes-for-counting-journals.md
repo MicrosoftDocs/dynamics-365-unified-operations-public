@@ -147,3 +147,6 @@ The following fields will be added to the mobile device menu item when **Adjustm
 - Default counting reason code
 - Display counting reason code
 - Edit counting reason code
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

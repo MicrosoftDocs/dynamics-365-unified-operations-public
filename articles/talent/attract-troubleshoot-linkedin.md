@@ -4,7 +4,7 @@
 title: Troubleshooting integration with LinkedIn and Microsoft Dynamics 365 Talent - Attract
 description: This topic explains how to troubleshoot issues when you try to post jobs to LinkedIn from Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -61,3 +61,6 @@ If your job hasn't appeared on LinkedIn after 24 hours, try these steps:
 [Create, approve, and post jobs in Attract](./creating-jobs-attract.md)
 
 [Troubleshooting integration with LinkedIn and Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

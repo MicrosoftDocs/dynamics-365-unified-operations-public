@@ -60,3 +60,6 @@ If immediate replenishment is selected for a location directive line, but no rep
 
 - Make sure that the demand replenishment template that is applied is set up to use the correct location templates and work templates of the **Replenishment** type.
 - Make sure that there is enough on-hand inventory at the locations where the demand replenishment template searches for on-hand inventory for replenishment.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ When you run the configured ER format, the text value of the **LabelText** field
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

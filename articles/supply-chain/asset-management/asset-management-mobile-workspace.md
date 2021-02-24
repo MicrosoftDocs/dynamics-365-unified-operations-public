@@ -246,3 +246,6 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 1. Select **Done**.
 
     ![Add an attachment to a maintenance request](media/am-mobile-10.png "Add an attachment to a maintenance request")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ This procedure shows how to define a configuration for a dimension-based product
     * Enter a description of the configuration to explain what it contains.  
 11. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

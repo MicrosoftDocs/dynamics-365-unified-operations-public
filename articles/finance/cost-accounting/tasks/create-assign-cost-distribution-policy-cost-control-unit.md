@@ -75,3 +75,6 @@ Cost distribution rules are used to distribute costs that have been financially 
 5. In the Cost control unit field, enter or select a value.
 6. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

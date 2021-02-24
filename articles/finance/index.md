@@ -78,3 +78,6 @@ Country/region regulations affect tax setup and other areas of financial managem
 
 Supply chain management functionality covers parts of the procure-to-pay process that includes requisitioning, ordering, receiving, invoicing and paying for the goods and services your organization purchases. Refer to the [Supply Chain Management home page](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) for information about the capabilities for managing purchases, inventory, and manufacturing. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

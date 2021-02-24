@@ -54,3 +54,6 @@ When you acquire an asset, you create an acquisition transaction from the pre-ac
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Use this procedure to create non-fiscal document transactions that will be inclu
 33. Click Sync.
 34. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

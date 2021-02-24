@@ -2,7 +2,7 @@
 # required metadata
 
 title: Section Tabbed List subpattern
-description: This article provides information about the Section Tabbed List subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains a set of vertical tabs, each of which contains a filtered list of data.
+description: This article provides information about the Section Tabbed List subpattern.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -86,3 +86,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

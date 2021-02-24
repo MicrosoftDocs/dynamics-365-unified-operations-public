@@ -48,3 +48,6 @@ Use the **Delete return order** form to delete multiple return orders.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ If you didn't define the fixed asset number in the template of the Excel add-in,
 
 > [!WARNING]
 > The fixed asset record won't be deleted if transactions were posted to the associated book, or if the newly created fixed asset is entered on a journal line but not posted. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.16 (February 2021)
+title: What's new and changed in Dynamics 365 Finance 10.0.16 (February 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.16 preview release.
 author: roschlom
 manager: AnnBe
@@ -28,10 +28,9 @@ ms.search.validFrom: 2020-11-20
 ms.dyn365.ops.version: 10.0.16
 
 ---
-# Preview features in Dynamics 365 Finance 10.0.16 (February 2021)
+# What's new and changed in Dynamics 365 Finance 10.0.16 (February 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.16. This version has a build number of 10.0.689 and is available as follows:
 
@@ -77,3 +76,6 @@ The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

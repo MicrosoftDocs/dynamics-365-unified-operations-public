@@ -87,3 +87,6 @@ With the release of Platform update 21, an additional level of control over when
 - Set the recurrence for anytime within the active period. For example, your administrator might select to run the batch jobs every hour, but only between the hours of 6:00 PM and 8:00 AM.
 
 For more information, see [Batch active period](../../dev-itpro/sysadmin/activeperiod.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

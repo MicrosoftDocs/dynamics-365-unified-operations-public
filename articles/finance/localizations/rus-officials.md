@@ -119,3 +119,6 @@ Use the **Shipment** page to set up officials for the **Issue slip (M-15)** repo
 ## Additional resources
 
 - [Set up signers for print forms](emea-set-up-signers-for-printing-forms.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

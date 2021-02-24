@@ -58,3 +58,6 @@ The following illustration shows the new relation.
 
 **Solution** - Navigation methods are not supported at this time.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Some types of production work can apply to project time estimates and reporting.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

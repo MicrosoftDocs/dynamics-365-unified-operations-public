@@ -128,3 +128,6 @@ If hour costs, item costs, and expenses are updated in other modules in Microsof
 The illustration below shows an example of the **Update work order forecast** dialog.
 
 ![Figure 2](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Follow these steps to create main accounts for the GST posting type.
 7. Repeat steps 2 through 6 to create all the required state-wide ledger accounts.
 
 ![Main accounts for the GST posting type](media/Create-main-accounts-for-the-GST-posting-type.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

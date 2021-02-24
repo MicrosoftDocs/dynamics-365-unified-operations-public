@@ -96,3 +96,6 @@ If the **model.RoundOff** parameter is set to **RoundOffType.RoundUp**, `ROUNDAM
 [Other (business domain–specific) functions](er-functions-category-other.md)
 
 [Mathematical functions](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

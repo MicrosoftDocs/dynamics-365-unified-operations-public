@@ -135,3 +135,6 @@ Use the following procedure to create a vendor invoice to record a purchase that
 11. To specify additional information about the line, select the **Line details** FastTab, and enter the information.
 12. Optional: Submit the invoice to the workflow system for review and approval, and then post the invoice.
 13. To save the invoice without posting it, close the page. You can view the invoice on the **Pending vendor invoices** list page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

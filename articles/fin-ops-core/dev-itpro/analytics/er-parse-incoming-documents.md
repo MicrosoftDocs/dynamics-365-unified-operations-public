@@ -2,7 +2,7 @@
 # required metadata
 
 title: Parse incoming documents
-description: This topic provides information about how to set up Electronic reporting (ER) formats that can be used to parse incoming documents and then apply selected content to update application data. 
+description: This topic provides information about how to set up Electronic reporting formats that can be used to parse incoming documents. 
 author: nickselin
 manager: AnnBe
 ms.date: 02/20/2019
@@ -129,3 +129,6 @@ Download the following file that is required to complete the task guide mentione
 | Title                  | File name                                                       |
 |------------------------|-----------------------------------------------------------------|
 | ER model configuration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

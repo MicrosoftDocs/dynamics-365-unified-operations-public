@@ -591,3 +591,6 @@ The following list captures the portfolio of font families available for documen
 | 271 | Yu Gothic UI Light       |
 | 272 | Yu Gothic UI Semibold    |
 | 273 | Yu Gothic UI Semilight   |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

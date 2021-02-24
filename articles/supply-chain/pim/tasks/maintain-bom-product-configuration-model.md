@@ -60,3 +60,6 @@ Running this procedure requires an existing product configuration model. The Hig
     * Verify if any of the product dimensions are active,  and therefore must have a value or attribute assigned.  
 9. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

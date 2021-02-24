@@ -60,3 +60,6 @@ This procedure walks you through the process of creating and posting an inventor
 1. Click **Inventory**.
 2. Click **Transactions**. Here you can see the transactions that were created when you posted your journal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

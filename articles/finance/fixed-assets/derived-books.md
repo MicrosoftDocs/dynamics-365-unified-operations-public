@@ -52,3 +52,6 @@ For more information, see [Post with derived books](post-derived-value-models.md
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

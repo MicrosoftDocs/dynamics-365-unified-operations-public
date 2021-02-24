@@ -96,3 +96,6 @@ You can apply filters with Advanced Query and Filtering so that only certain pro
 ### Product inventory (Supply Chain Management to Field Service): Product inventory
 
 [![Template mapping in Data integration](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

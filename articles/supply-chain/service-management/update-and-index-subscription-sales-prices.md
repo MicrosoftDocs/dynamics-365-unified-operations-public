@@ -59,3 +59,6 @@ The base price or index of the subscription is updated with the specified value.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

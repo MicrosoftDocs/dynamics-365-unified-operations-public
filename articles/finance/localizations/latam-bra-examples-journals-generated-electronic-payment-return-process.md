@@ -79,3 +79,6 @@ When you post the approved payment lines, the three payment lines are posted to 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

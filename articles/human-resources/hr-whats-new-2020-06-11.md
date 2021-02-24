@@ -3,8 +3,8 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (June 11, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for June 11, 2020.
-author: Andreabichsel
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (June 11, 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3316. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
@@ -106,3 +109,5 @@ A new option will be available in Human Resources parameters to update the name 
 [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

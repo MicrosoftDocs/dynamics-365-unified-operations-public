@@ -57,3 +57,6 @@ When you create a **Fixed asset group/value model** setup, you specify the numbe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

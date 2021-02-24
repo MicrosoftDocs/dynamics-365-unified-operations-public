@@ -40,3 +40,6 @@ By creating lines on the **Tag counting** page, you place a tag number on each i
 ## Additional resources
 
 [Cycle counting](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

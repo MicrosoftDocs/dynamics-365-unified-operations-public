@@ -71,3 +71,6 @@ When asset types are added to a counter type in **Counters**, that counter is au
 
 ![Figure 1](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

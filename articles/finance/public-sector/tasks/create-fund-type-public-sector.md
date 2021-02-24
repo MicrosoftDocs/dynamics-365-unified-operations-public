@@ -40,3 +40,6 @@ This procedure was created using the PSUS demo company data in the public sector
 4. In the Description field, type a value.
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1130,3 +1130,6 @@ For advanced layout scenarios we encourage using Flexbox. Flexbox is compatible 
 
 ### Control Instantiation
 [![Extensibility process](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

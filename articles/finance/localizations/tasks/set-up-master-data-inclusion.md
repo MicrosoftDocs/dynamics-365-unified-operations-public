@@ -68,3 +68,6 @@ This procedure walks you through creating fixed asset rules with required master
 12. Click Save.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ Create a purchase order, or select an existing purchase order. Click **Invoice**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

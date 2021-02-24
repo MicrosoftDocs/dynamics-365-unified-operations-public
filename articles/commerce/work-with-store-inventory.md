@@ -76,3 +76,6 @@ Stock counts can be either scheduled or unscheduled. Scheduled stock counts are 
 ## Inventory lookup
 
 The product quantity that is currently on hand for multiple stores and warehouses can be viewed on the **Inventory lookup** page. In addition to the current on-hand quantity, the future available-to-promise (ATP) quantities can be viewed for each store. Select the store to view the ATP quantities for, and then select **Show store availability**. For information about the configuration options that are available, see [Calculate inventory availability for retail channels](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -206,3 +206,6 @@ For more information about how to configure emails in Dynamics 365 Commerce, see
 [Set up email receipts](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Send email receipts from Modern POS ](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

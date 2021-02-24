@@ -58,3 +58,6 @@ This procedure demonstrates how to configure a worker as a sales representative 
 6. In the Default group field, enter or select a value.
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

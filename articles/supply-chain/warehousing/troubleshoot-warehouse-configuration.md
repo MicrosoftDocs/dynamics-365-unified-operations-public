@@ -112,3 +112,6 @@ To enable workers to make this change, you can create a menu item for the wareho
 - **Display inventory status:** *Yes*
 
 You can set other fields on the page as you require.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

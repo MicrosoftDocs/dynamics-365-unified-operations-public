@@ -130,3 +130,6 @@ The following tables list the pages and fields that the specified FastTabs can b
 |     Accounts   receivable parameters > Collections process automation    	|     Create   activities for automation               	|     Create and   close activities for non-activity action types to view all automated steps   taken on an account.    	|
 |     Accounts   receivable parameters > Collections process automation    	|     Days to keep   collections process automation    	|     Defines the   number of days collections history is stored.                                                      	|
 |     Accounts   receivable parameters > Collections process automation    	|     Exclude invoice after activating last process step   	|     An invoice that reaches the last step of the collections process will no longer be used to create future process automation action types. The next oldest invoice will determine the next process automation step to ensure collection process automation actions do not stop.                                                      	|
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ This functionality is available for legal entities whose primary address is in F
 4. In the Assessment date field, enter a date.
 5. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

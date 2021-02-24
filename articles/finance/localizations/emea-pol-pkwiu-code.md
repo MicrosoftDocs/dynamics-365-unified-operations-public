@@ -51,3 +51,6 @@ Category hierarchies are used to classify products or transactions for reporting
 1. Click **Product information management** > **Common** > **Released products**. 
 2. Select the released product to assign a PKWiU code to. On the Action Pane, click **Edit**. 
 3. On the **Sell** FastTab, enter the PKWiU code for the released product. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

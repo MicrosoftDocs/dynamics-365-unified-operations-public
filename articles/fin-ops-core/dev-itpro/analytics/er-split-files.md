@@ -53,3 +53,6 @@ To learn more about this feature, play the **ER Split XML files based on the fil
 [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 
 [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

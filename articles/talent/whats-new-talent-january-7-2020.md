@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (January 7, 2020)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for January 7, 2020.
+author: andreabichsel
+manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
@@ -56,3 +56,6 @@ This change adds a delete option in the **Workers without employment** form. Wor
 5. Set the **Delete** permission to Grant.
 6. Select the **Unpublished objects** tab.
 7. Select **Publish all**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

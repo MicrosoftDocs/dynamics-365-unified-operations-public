@@ -110,3 +110,6 @@ fullURI.AbsoluteUri
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

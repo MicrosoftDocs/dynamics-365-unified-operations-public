@@ -71,3 +71,6 @@ This is the fourth of five procedures that demonstrate the customer payment proc
 8. Click OK.
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

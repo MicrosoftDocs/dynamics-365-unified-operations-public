@@ -206,3 +206,6 @@ Select **Group operations** \> **Writing-off** after step 4 to create writing-of
 ## Additional resources
 
 - [Working clothes/special rigging accounting (Russia)](rus-working-clothes-instruments-accounting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

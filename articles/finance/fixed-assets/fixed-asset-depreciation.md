@@ -61,3 +61,6 @@ For more information, see [Depreciation methods and conventions](depreciation-me
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

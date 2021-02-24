@@ -80,3 +80,6 @@ Use this procedure to set up electronic signatures. An electronic signature conf
 10. Click Save.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -35,3 +35,6 @@ The application checker tool is a set of technologies that allow you to gain ins
 
 For information about how to install and use the application checker, see [Dynamics365FO-AppChecker](https://github.com/microsoft/Dynamics365FO-AppChecker).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

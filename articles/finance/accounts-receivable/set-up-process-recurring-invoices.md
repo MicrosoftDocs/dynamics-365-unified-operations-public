@@ -71,3 +71,6 @@ After recurring invoices are posted, you can print the invoices from the free te
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

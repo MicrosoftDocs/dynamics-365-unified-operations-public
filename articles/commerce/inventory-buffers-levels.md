@@ -32,8 +32,6 @@ ms.dyn365.ops.version: 10.0.12
 
 This topic explains how to configure inventory buffers and inventory levels that determine the messaging about inventory availability on Microsoft Dynamics 365 Commerce sites.
 
-## Overview
-
 Dynamics 365 Commerce headquarters holds inventory data and various channels such as point of sale (POS) applications, e-Commerce storefronts, and other custom integrated applications that pull and push inventory around in an asynchronous manner. Therefore, the available inventory values that are obtained through the on-hand inventory page in Commerce headquarters, through the POS user interface (UI), and through e-Commerce inventory availability APIs aren't always 100-percent accurate in real time.
 
 Instead of showing actual inventory values in e-Commerce storefronts, many retailers prefer just to show messaging about inventory availability status (for example, "Available" or "Out of stock") to inform customers whether an item is available for purchase or potentially out of stock. For this approach, inventory buffers and inventory levels that determine the inventory availability messaging must be made available and configured.
@@ -153,3 +151,6 @@ To configure the response of the product availability APIs, follow these steps.
 [Apply inventory settings](inventory-settings.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

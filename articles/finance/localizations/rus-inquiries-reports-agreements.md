@@ -145,3 +145,6 @@ Find more details in the following topics:
 - [Agreements](rus-agreements.md)
 - [Set up and create agreements](rus-set-up-and-create-agreements.md)
 - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

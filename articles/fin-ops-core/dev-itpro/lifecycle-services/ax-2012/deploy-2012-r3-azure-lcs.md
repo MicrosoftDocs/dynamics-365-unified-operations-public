@@ -147,3 +147,6 @@ To deploy an environment that can be configured for high availability, see:
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

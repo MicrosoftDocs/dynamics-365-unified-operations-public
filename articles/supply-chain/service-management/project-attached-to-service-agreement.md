@@ -41,3 +41,6 @@ You register and post all service order transactions through the project that yo
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

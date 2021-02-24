@@ -138,3 +138,6 @@ The environment is now ready for you to copy and manage configurations. For more
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

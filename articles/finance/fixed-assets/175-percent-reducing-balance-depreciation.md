@@ -92,3 +92,6 @@ The 175% reducing balance depreciation method divides 175 percent by the servic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

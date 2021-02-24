@@ -57,3 +57,6 @@ This procedure walks through the process of creating a new depreciation book and
 6. In the Service life field, enter a number.
     * Notice the Depreciation periods field value is calculated after setting the Service life.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

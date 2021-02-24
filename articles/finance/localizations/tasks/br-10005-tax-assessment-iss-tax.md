@@ -56,3 +56,6 @@ You can make the tax assessment for ISS tax for a given booking period, consider
 23. Close the page.
 24. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

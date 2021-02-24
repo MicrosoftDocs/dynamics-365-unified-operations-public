@@ -62,3 +62,6 @@ If you select the load types **Capacity** or **Remainder** for your calculation,
 
 For information about how to calculate capacity load on maintenance schedule lines and not scheduled work orders, refer to [Calculate capacity load](../capacity-planning/calculate-capacity-load.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

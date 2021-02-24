@@ -145,3 +145,6 @@ Specify the following values to set up your posting profile:
 
 For more information, see [Customer payment overview](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

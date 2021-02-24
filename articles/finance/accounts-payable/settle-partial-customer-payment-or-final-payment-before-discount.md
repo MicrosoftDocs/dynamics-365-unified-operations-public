@@ -153,3 +153,6 @@ Arnie posts this journal and reviews the customer transactions on the **Customer
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

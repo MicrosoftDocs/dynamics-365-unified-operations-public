@@ -63,3 +63,6 @@ Services are enumerated as types in the CRT configuration file. You can add type
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

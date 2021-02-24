@@ -58,3 +58,6 @@ A template bill of materials (BOM) can be attached to a service object relation.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

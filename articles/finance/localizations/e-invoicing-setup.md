@@ -365,3 +365,6 @@ Follow these steps to manage the lifecycle of the Electronic invoicing add-on fe
 
     > [!NOTE]
     > When you select **Yes**, the status of configuration versions is automatically changed from **Completed** to **Shared**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

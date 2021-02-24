@@ -50,3 +50,6 @@ In 2015, your organization acquired a fixed asset for 60,000. Your organization 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

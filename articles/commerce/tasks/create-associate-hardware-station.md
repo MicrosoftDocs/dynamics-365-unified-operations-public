@@ -59,3 +59,6 @@ This procedure walks through how to create a new hardware station. A new hardwar
 23. In the EFT terminal ID field, type a value.
 24. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

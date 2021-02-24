@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Create required configurations to import data from an external file
-description: The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the Microsoft Dynamics 365 Finance application from an external file. 
+description: This topic describes how to design Electronic reporting configurations to import data in to the Microsoft Dynamics 365 Finance app from an external file. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -257,3 +257,6 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 27. Close the page.
 28. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

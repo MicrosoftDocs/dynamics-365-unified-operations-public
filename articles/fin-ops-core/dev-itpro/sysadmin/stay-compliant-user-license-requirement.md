@@ -116,3 +116,6 @@ For information about how to buy and license Finance and Operations apps, see [M
 For information about how to assign licenses to users in the Microsoft 365 admin center, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
 Additional user licenses are required when multiple implementation projects exist for the same tenant. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#licensing-requirements).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

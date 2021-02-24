@@ -61,3 +61,6 @@ When you have operations resources of the **Human resources** type that are link
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

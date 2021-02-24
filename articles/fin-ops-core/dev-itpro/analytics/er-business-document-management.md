@@ -584,3 +584,6 @@ The following table shows the list of ER configurations that support configurabl
 |                             | Sales order packing slip (LT) (Excel)           |
 |                             | Sales order packing slip (PL) (Excel)           |
 |                             | Sales order packing slip (Word)                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

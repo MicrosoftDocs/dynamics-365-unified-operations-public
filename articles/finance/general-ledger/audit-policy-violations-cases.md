@@ -65,3 +65,6 @@ For more information, see [Audit policy rules](audit-policy-rules.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

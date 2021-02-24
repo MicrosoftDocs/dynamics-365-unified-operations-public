@@ -171,3 +171,6 @@ The illustration below shows an example of the **Create work order** dialog.
 >[!NOTE]
 >If you want work orders to be created automatically, you can schedule maintenance plan jobs, or you can set up "Auto create" [maintenance plans](../preventive-and-reactive-maintenance/maintenance-plans.md) or [maintenance rounds](../preventive-and-reactive-maintenance/maintenance-rounds.md) on an asset. Work orders that are created from maintenance requests on the **All maintenance schedule** list page have the maintenance job types that are selected on the maintenance requests.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

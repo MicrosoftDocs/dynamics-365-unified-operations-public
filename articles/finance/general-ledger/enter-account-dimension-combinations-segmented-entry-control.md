@@ -118,3 +118,6 @@ The following table describes the keyboard shortcuts that can be used when the l
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

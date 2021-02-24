@@ -232,3 +232,6 @@ The report designer toolbar provides quick access to commands for navigating wit
 [Financial reporting](financial-reporting-intro.md)
 
 [Generate financial reports](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

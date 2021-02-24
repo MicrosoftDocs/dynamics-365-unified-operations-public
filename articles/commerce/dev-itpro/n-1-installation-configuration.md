@@ -413,3 +413,6 @@ The following list describes all the KBs that are required for N-1 to work corre
 | 4133289 | Running the N-1 version of the Product - Refunds from Journal or existing transactions failing |
 | 4161086 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filtering the table using the provided condition (x++ fix) |
 | 4161099 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filtering the table using the provided condition (Binary changes) |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

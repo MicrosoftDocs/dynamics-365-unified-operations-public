@@ -85,3 +85,6 @@ You can also use a saved variable as part of a string in the Message Validation 
 Saved (Copied) variables can be used within the same test case or across more than one test case in the same test suite.
 
 ![message with variable](media/rsat-message-with-variable.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

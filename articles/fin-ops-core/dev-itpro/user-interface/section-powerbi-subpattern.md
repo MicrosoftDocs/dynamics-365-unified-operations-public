@@ -2,7 +2,7 @@
 # required metadata
 
 title: Section Power BI subpattern
-description: This article provides information about the Section PowerBI subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for the panorama section that contains a PowerBI control.
+description: This article provides information about the Section PowerBI subpattern.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -84,3 +84,6 @@ None
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

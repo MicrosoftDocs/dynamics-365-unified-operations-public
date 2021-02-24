@@ -58,3 +58,6 @@ With trickle feed-based order creation introduced in Retail version 10.0.5, tran
 > The menu items **Retail and Commerce > Retail and Commerce IT > POS Posting > Calculate statements in batch** and **Retail and Commerce > Retail and Commerce IT > POS Posting > Post statements in batch** are removed with this new feature.
 
 Alternately, transactional and financial statement types can be created manually. Go to **Retail and Commerce > Channels > Stores** and click **Statements**. Click **New** and then choose the type of statement that you want to create. Fields on the **Statements** page and actions under the **Statement group** of the page will show relevant data and actions based on the selected statement type.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ If the total rounded-down depreciation cost that must be allocated across each d
 
 ## Additional resources
 - [Allocate carrying amount of shared asset and goodwill to cash generating units](./tasks/allocate-carrying-amount.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

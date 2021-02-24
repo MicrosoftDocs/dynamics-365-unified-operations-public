@@ -90,3 +90,6 @@ This topic explains how to set up and run audit policy rules. The example uses e
 57. Expand the **Associations** section.
 58. In the list, find and select the desired record.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

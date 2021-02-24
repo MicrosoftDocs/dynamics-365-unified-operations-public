@@ -73,3 +73,6 @@ To set up a mobile device menu item to provide a pick line overview, follow thes
     - Use the remaining **Display field** fields to add up to seven additional display fields, as you require. In each **Display field** field, select the name of a work line field. Each line will then show a value for that field. The values will be shown in the order that you select here. You can leave some of the **Display field** fields blank if you don't require all seven values.
 
 1. On the Action Pane, select **Save**, and then close the **Field list** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

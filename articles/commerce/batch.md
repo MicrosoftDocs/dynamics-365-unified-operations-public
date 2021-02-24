@@ -49,3 +49,6 @@ To define the default batch ID that is used for sales order invoicing through st
 
 > [!NOTE]
 > Support for improved handling of batch-tracked items during statement posting for non-advanced warehouse management scenarios was introduced in Retail version 10.0.5.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

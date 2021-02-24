@@ -93,3 +93,6 @@ To see an overview of all maintenance downtime registrations, click **Asset mana
 >[!NOTE]
 >All calendars that are used in the **Asset Management** module are set up in **Organization administration** > **Setup** > **Calendars** > **Calendars**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

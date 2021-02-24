@@ -52,3 +52,6 @@ This is the third procedure, out of six, that demonstrates the process of genera
 
 ## Set up contact information for a customer
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

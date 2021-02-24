@@ -212,3 +212,6 @@ In the wizard, the following values are entered for Contoso Retailer:
     - **Answer:** "Yes, as defined in this master plan." **1 day** is entered.
 
     Contoso uses the approved requisitions from its stores to create planned purchase orders to replenish those stores. Because master planning is run every day, the requisitions from the last day will be included in the planning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

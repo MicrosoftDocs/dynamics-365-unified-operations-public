@@ -77,3 +77,6 @@ CUSTINVOICETRANS T3 WHERE...
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

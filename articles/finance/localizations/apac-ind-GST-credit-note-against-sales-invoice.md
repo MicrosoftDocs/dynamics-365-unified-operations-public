@@ -71,3 +71,6 @@ ms.dyn365.ops.version: 10.0.4
 
 > [!NOTE]
 > You can create a sales credit note through the general ledger and a free text invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -839,3 +839,6 @@ Additional resources
 [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

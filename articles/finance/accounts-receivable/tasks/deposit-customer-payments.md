@@ -50,3 +50,6 @@ Deposit customer payments. This task uses the USMF demo company.
 17. Select **OK**. The first page is used to create the deposit slip.  
 18. Select **OK**. The second step is to print the deposit slip, but this step is not required.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

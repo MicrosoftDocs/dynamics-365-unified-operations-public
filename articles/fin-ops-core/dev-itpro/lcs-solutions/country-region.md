@@ -3,9 +3,9 @@
 
 title: Globalization resources
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality and offerings.  
-author: ShylaThompson
+author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -59,7 +59,6 @@ The following resources provide information about planned and new localization f
 
 #### Regulatory updates
 -   [Regulatory updates](../../../finance/localizations/regulatory-updates.md)
--   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Updated weekly)
 -   [Issue search in Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (Updated daily)
 
 #### Communication and alerts
@@ -137,3 +136,6 @@ To learn more, see [Help system](../../fin-ops/get-started/help-overview.md#task
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

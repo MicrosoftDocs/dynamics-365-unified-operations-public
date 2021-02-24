@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend report menu items to redirect user navigation
-description: This topic shows how to extend existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution. 
+description: This topic shows how to extend existing application menu items so that navigations are redirected to a custom reporting solution. 
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
@@ -65,3 +65,6 @@ The following walkthrough shows how to use menu item extensions to redirect user
 5. **Rebuild the solution, and deploy the custom report.**
 
 You've now finished extending the report menu item. Navigations to the standard menu item will now be redirected to your custom reporting solution.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

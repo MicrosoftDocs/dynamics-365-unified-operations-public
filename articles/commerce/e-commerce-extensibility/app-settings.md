@@ -142,6 +142,8 @@ Here is an example of a resource file.
 
 [Request properties object](request-properties-object.md)
 
+[Platform settings file](platform-settings.md)
+
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
@@ -150,6 +152,11 @@ Here is an example of a resource file.
 
 [Mock the signed-in state during local development](mock-sign-in.md)
 
+[Configure module properties to be shown based on context](configure-properties-context.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
 
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

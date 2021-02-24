@@ -103,3 +103,6 @@ The following setup is required for the calculation of GST:
     When this charge code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
 
     
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

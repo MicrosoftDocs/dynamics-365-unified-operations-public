@@ -56,3 +56,6 @@ This procedure was created using the demo data company DEMF. This functionality 
     * Be sure that the associated payment that is attached to the customer invoice is set to FIK 751 or FIK 752.  
 17. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

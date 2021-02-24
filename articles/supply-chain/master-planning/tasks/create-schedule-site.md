@@ -58,3 +58,6 @@ This procedure shows how to schedule production orders that are not yet started 
 4. Click Materials.
     * On this page, you can see the estimated material consumption for the operations on the production order and the current available inventory.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

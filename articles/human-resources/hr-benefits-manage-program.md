@@ -4,7 +4,7 @@
 title: Define and manage a benefits program
 description: Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This article provides information about how to set up an manage benefits.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Define and manage a benefits program
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Human Resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This article provides information about how to set up and manage benefits.
 
@@ -68,3 +71,6 @@ Sometimes, an organization stops offering certain benefits. In this case, you mu
 Similarly, mass benefit extension lets you extend the expiration date of both a benefit and the worker enrollments for that benefit if you decide to offer a benefit longer than you originally planned.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

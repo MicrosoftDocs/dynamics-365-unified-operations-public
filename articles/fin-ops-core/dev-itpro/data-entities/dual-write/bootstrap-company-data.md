@@ -2,7 +2,7 @@
 # required metadata
 
 title: Initialize company data
-description: This topic explains how to initialize (or bootstrap) Microsoft Dataverse data or other Finance and Operations app data with company information before you enable a dual-write connection.
+description: This topic explains how to initialize data with company information before you enable a dual-write connection.
 author: RamaKrishnamoorthy 
 manager: tfehr
 ms.date: 12/01/2020
@@ -114,3 +114,6 @@ If you don't have an Azure storage account, follow these steps in [Create an Azu
 2. Download the [sample customer file](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Bootstrapping/01-CustomersV3Export-Customers%20V3.csv).
 
 3. Run **BootstrapAccountsPipeline** from Azure Data Factory.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

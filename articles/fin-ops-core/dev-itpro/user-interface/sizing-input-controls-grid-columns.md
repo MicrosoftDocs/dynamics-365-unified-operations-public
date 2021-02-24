@@ -71,3 +71,6 @@ As the previous table shows, if you change the width of a grid-hosted control fr
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

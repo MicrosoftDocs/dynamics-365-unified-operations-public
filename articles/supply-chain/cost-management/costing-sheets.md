@@ -53,3 +53,6 @@ The costing sheet is displayed as part of the **Calculate item cost** page. The 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

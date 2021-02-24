@@ -90,3 +90,6 @@ ms.dyn365.ops.version: 10.0.4
 8. Select **Save**, and then select **Close**.
 
     ![New active configuration](media/update-configuration-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ April can review the vendor transactions on the **Vendor transactions** page by 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

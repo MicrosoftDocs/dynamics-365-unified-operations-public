@@ -53,3 +53,6 @@ This procedure shows how to prevent physical on-hand inventory from being reserv
 2. Click **Yes**.
 3. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

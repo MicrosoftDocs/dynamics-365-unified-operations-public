@@ -87,3 +87,6 @@ To turn on the B2B order quantity limits feature in Commerce site builder, follo
 [Manage business partner users on B2B e-commerce sites](manage-b2b-users.md)
 
 [Configure the customer account payment method for B2B e-commerce sites](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

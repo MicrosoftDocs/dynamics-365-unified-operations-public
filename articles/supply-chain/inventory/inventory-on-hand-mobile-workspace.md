@@ -134,3 +134,6 @@ Download and install the Finance and Operations mobile app:
     -   By physical inventory (This view represents the total amount.)
     -   By physical reserved (This view represents the reserved amount.)
     -   By available physical (This view represents the available amount that has no reservations.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

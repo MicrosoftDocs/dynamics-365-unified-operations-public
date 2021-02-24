@@ -145,3 +145,6 @@ For more information, see [Procurement and sourcing overview](../../supply-chain
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

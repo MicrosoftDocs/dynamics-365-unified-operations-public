@@ -107,3 +107,6 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs. The logs can be found under these nodes in the Windows event log:
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-ModernPOS**
   - **Application and Services Logs > Microsoft > Dynamics > Commerce-Hardware Station**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

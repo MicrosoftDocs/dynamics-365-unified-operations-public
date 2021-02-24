@@ -4,7 +4,7 @@
 title: Set up compensation grids
 description: Compensation grids are used to define and maintain the pay structures for fixed compensation plans. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -17,6 +17,7 @@ ms.search.form: HRCCompGrid, HRCCompGridView, HcmCompensationWorkspace
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,6 +29,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Set up compensation grids
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Compensation grids are used to define and maintain the pay structures for fixed compensation plans. Compensation grids can be shared between multiple plans or copied when creating a new compensation plan.  Before creating a compensation grid, Levels and Reference points must be set up. This example will create a new Grade type of compensation grid using demo data for the Levels and Reference points. The demo data company used to create this procedure is USMF.
 
@@ -96,3 +99,6 @@ Compensation grids are used to define and maintain the pay structures for fixed 
 29. In the list, mark or unmark all rows.
 30. Click Apply to grid.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

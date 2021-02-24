@@ -129,3 +129,6 @@ This report shows the calculation of the capital and result account code inflati
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

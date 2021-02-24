@@ -61,3 +61,6 @@ This procedure was created using the demo data company CNMF. For the CNMF demo d
 23. Select the Print account dimension check box.
 24. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

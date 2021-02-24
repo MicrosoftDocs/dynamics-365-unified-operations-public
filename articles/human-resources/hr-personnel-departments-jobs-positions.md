@@ -4,7 +4,7 @@
 title: Organize your workforce by using departments, jobs, and positions
 description: Departments, jobs, and positions are organizational elements that are maintained within Human resources. This article describes conceptual information about these elements. 
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -19,6 +19,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
 
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
@@ -31,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Organize your workforce by using departments, jobs, and positions
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Departments, jobs, and positions are organizational elements that are maintained within Human resources. This article describes conceptual information about these elements. 
 
@@ -170,3 +173,6 @@ You can modify the information mentioned in the previous table for a position or
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

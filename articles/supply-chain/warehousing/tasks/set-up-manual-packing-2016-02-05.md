@@ -96,3 +96,6 @@ The packing process allows you to validate and pack products into containers. In
 8. In the Weight unit field, enter or select a value.
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

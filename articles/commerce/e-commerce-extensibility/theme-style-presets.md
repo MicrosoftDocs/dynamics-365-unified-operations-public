@@ -240,3 +240,6 @@ The following example shows a global.json file that sets various localized style
 [Extend a theme from a base theme](extend-theme.md)
 
 [Add custom resources to your customization code](add-custom-resources.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

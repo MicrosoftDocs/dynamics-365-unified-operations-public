@@ -116,3 +116,6 @@ To generate the report, follow these steps.
 4. In the **Calculation** field group, in the **Calculation method** field select the calculation method (**Invoice date** or **Due date**).
 5. On the **Record to include** FastTab, specify the criteria to use to select the vendor transactions, such as invoices, payments, and promissory note journals. (Use **Filter** to specify the criteria.)
 6. Select **OK** to generate the report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

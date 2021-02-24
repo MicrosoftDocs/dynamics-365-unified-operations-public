@@ -84,3 +84,6 @@ You can assign an approval step to the following groups of participants.
 - [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Purchase requisition workflow](purchase-requisitions-workflow.md)
 - [Onboard vendors](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

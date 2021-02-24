@@ -60,3 +60,6 @@ The expression `FIRST( LISTOFFIRSTITEM ( SPLIT ("ABC",1))).Value` returns the te
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

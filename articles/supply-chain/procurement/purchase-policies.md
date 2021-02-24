@@ -156,3 +156,6 @@ The purchase order creation and demand consolidation rule defines the policy rul
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

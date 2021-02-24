@@ -95,3 +95,6 @@ After you have finished your registration, select **Done** to post the journal 
 -   Material can be overconsumed. For example, if the material is estimated to be consumed with the quantity of 100 lbs, then it can be overconsumed with a quantity of, for example, 105 lbs.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

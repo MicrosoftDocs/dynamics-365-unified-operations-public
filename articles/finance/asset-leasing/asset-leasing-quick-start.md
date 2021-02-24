@@ -258,3 +258,6 @@ Complete the following steps to create a new lease.
 
    The **Lease liability transactions** page shows the initial recognition, lease interest payment, lease payment, and the lease liability balance. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ Additional help is available as task guides inside Finance. To access task guide
 #### Videos
 
 Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

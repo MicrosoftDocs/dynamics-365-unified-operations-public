@@ -71,3 +71,6 @@ Now, the default functional location type to be used only on a default functiona
 
 >[!NOTE] 
 >On the **General** FastTab, you can get an overview of the number of asset types, maintenance plans, asset attribute requirements, permitted types, attributes, and functional locations set up on the functional location type. The **Functional locations** field shows the number of functional locations that use the functional location type. You can use the **Copy** button to copy settings from a functional location type to the selected functional location type.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

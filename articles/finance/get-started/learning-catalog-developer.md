@@ -93,3 +93,6 @@ The following catalog is organized from core knowledge to specific domains, and 
 | Content | Description  | Format  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 |[Exam MB-500: Microsoft Dynamics 365: Finance and Operations Apps Developer](https://docs.microsoft.com/learn/certifications/exams/mb-500) | This exam measures your ability to accomplish the following technical tasks: plan architecture and solution design; apply developer tools; design and develop AOT elements; develop and test code; implement reporting; integrate and manage data solutions; and implement security and optimize performance. | Exam, cost varies by region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

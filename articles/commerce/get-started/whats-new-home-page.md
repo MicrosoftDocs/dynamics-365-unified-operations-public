@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Commerce
 description: This topic points to topics that describe the new and changed features in each release of Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,6 +37,7 @@ Dynamics 365 Commerce released to public preview in October 2019. To see what's 
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|--------------|-------------|
+| 10.0.16  |   10.0.689     | February 2021 | [What's new or changed in Dynamics 365 Commerce version 10.0.16](whats-new-commerce-10-0-16.md) |
 | 10.0.15  |   10.0.644     | January 2021 | [What's new or changed in Dynamics 365 Commerce version 10.0.15](whats-new-commerce-10-0-15.md) |
 | 10.0.14  |   10.0.605        | November 2020 | [What's new or changed in Dynamics 365 Commerce version 10.0.14](whats-new-commerce-10-0-14.md) |
 | 10.0.13  |   10.0.569        | October 2020 | [What's new or changed in Dynamics 365 Commerce version 10.0.13](whats-new-commerce-10-0-13.md) |
@@ -71,3 +72,6 @@ To see what's new or changed in releases before February 2020, see the following
 | Microsoft Dynamics 365 for Operations                                 | 1611        | 7.1.1541.3036    | November 2016    | [What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-dynamics-365-operations-1611.md)                |
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | May 2016         | [What's new or changed in Dynamics AX application version 7.0.1 (May 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | February 2016    | [What's new or changed in Dynamics AX 7.0 (February 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

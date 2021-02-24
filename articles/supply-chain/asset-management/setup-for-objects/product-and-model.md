@@ -64,3 +64,6 @@ This topic explains how to set up asset manufacturers and related models in Asse
 2. In the **Asset** column, select the link for the asset. The **Details** page appears.
 3. Select **Edit**.
 4. On the **General** FastTab, select values in the **Manufacturer** and **Model** fields.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

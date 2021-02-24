@@ -108,3 +108,6 @@ Calculations aren't included in the validation. You must test the product config
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

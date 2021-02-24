@@ -72,3 +72,6 @@ Instead of copying an entire order, it's more common to create a new PO and comp
 4. Select the line for the desired purchase order. Notice that the single order line that's on this PO is also selected.  
 5. Select **OK**. The additional order line has been added to your purchase order.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

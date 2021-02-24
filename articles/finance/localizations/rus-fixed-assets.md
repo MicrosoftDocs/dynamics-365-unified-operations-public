@@ -159,3 +159,6 @@ The value of an asset on a specific date reflects the results of all transaction
 The amounts on the **Balance by FA** dialog box for the fixed asset are shown in the currency of the fixed asset value model. If the value model currency differs from the company's default currency, the default currency is also shown.
 
 ![FA value model balance](media/RUS_FA_4%20model%20balance.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

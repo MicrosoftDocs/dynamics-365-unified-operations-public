@@ -56,3 +56,6 @@ This procedure was created using the demo company data JPMF.
 11. In the Account field, specify the values 'JPMF-000001'.
 12. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ Yes, you can generate the following reports that contain information about impai
 - [Setup impairment accounting common parameters and posting profile](./tasks/impairment-accounting.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

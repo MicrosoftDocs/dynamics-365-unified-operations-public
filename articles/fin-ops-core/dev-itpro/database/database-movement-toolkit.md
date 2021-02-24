@@ -2,7 +2,7 @@
 # required metadata
 
 title: Database movement toolkit
-description: This topic explains how to download and use the Database movement toolkit, a series of scripts that enhance the customer experience for movement of data between developer environments and sandbox environments. 
+description: This topic explains how to download and use the Database movement toolkit. 
 author: laneswenka
 manager: AnnBe
 ms.date: 12/02/2020
@@ -79,3 +79,6 @@ The toolkit currently supports the following scenarios. More will be added over 
 | Initial | Toolkit uploaded to LCS Shared Asset Library.|
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

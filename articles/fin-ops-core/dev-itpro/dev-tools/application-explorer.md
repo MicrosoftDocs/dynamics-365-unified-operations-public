@@ -2,7 +2,7 @@
 # required metadata
 
 title: Application Explorer
-description: This topic reviews Application Explorer, and the various views and filtering methods in it. The topic also describes how to work with elements in Application Explorer.
+description: This topic reviews Application Explorer, and the views and filtering methods in it. The topic also describes how to work with elements in Application Explorer.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -129,3 +129,6 @@ These actions can be used only when the filter results are limited to a single m
 [Develop and customize home page](developer-home-page.md)
 
 [Development tools in Visual Studio](development-tools-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

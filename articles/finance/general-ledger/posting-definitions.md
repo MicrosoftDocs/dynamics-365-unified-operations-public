@@ -66,3 +66,6 @@ The following restrictions apply when you create links in posting definitions:
 For more information, see [Posting definition examples](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

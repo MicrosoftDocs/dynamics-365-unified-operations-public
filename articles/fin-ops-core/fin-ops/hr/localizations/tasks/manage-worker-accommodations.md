@@ -60,3 +60,6 @@ This procedure walks through the steps for setting up work environment accommoda
     * If the accommodation has been denied, the Reply field can be used to indicate why a request was denied.  
 15. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ This procedure shows how to view cost entries for a cost object. The demo data c
 7. Use the Quick Filter to filter on the Number field with a value of 'p000031'.
     * If cost entries are blank, set From date to January 31, 2012 and To date to December 31, 2012.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

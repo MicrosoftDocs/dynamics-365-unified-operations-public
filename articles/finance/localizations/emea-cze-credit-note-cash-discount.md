@@ -103,3 +103,6 @@ you set up for credit notes. The document printout is named **Tax corrective
 document**. It includes the original invoice number, the VAT base and amount,
 and the reason why a correction was printed.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

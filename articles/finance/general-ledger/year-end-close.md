@@ -92,3 +92,6 @@ For more information, see [Close the general ledger at period end](close-general
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

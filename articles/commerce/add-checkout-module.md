@@ -34,8 +34,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to add a checkout module to a page and set the required properties.
 
-## Overview
-
 A checkout module is a special container that hosts all modules that are required to create an order. It presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase. It captures the shipping address, shipping method, and billing information. It also provides an order summary and other information that is related to a customer order.
 
 A checkout module renders data based on the cart ID. This cart ID is saved as a browser cookie. A cart ID is required to render information in the checkout module, such as the items in the order, the total amount, and discounts. 
@@ -131,3 +129,6 @@ To add a checkout module to a new page and set the required properties, follow t
 [Order details module](order-confirmation-module.md)
 
 [Gift card module](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

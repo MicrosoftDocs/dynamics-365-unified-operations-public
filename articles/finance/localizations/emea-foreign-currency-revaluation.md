@@ -76,3 +76,6 @@ You must revalue and adjust bank accounts if there is a difference in the exchan
 
 > [!NOTE]
 > In the general ledger, you can view two separate transactions: one for the accounting currency and one for the reporting currency.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
