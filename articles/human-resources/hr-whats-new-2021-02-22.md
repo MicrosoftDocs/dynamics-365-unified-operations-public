@@ -64,7 +64,6 @@ The following bug fixes are included in this release.
 | Issue number | Issue |  Description |
 | --- | --- | --- |
 | 529994 | Modifying "Known As" field on worker form does not trigger a Dataverse update | The Dataverse execution request is not triggered when the "Known As" field is updated on the worker form. |
-| Only one dependant selected on eligible plans when more than one are marked as default designees - (518064) |-- | -- |
 | 532651 |Compensation Analytics PBI report does not use currency conversion when calculating metrics for All Companie | Fixed an issue where COmpensation analysis PBI report was not correctly doing currency conversions |
 | Limit the number of tasks queried for in "To-do list" on dashboard - (547123) |-- | -- |
 | 552226 |Life event processing closes and reopens plans multiple times for single life event  | When an employee is part of multiple legal entities and a life event occurs a life event record is generated for each legal entity the employee is a part of. When processing life events the legal entity to process must be selected. However, the processing logic does not constrain itself to this legal entity, instead processing for all legal entities and performing the plan close/reopen on the plans in the legal entity selected. This causes a life event to get processed multiple times in the same legal entity, resulting in multiple close/reopens of each plan affected by the life event. |
