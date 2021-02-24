@@ -53,38 +53,44 @@ For more information, see [Lifecycle Services resources](https://docs.microsoft.
 Before you install the Inventory Visibility Add-in, you must do the following:
 
 - Obtain an LCS implementation project with at least one environment deployed.
-- Make sure you follow the [Prerequisites for setting up add-ins](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview) guide. Inventory Visibility does not require Dual-Write linking.
+- Make sure you follow the [Prerequisites for setting up add-ins](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview) guide. Inventory Visibility does not require dual-write linking.
 
 > [!NOTE]
-> Currently supported GEOs include ca, us, eu.
+> Currently supported geographies include Canada, USA, and EU.
 
 If you have any questions about these prerequisites, please contact the Inventory Visibility product team.
 
-### <a name="setup-microsoft-dataverse"></a>Setup Microsoft Dataverse
+### <a name="setup-microsoft-dataverse"></a>Set up Microsoft Dataverse
 
-1. Add service principle to tenant.
+Use the following to set up Microsoft Dataverse:
 
-    - Install the Azure AD PowerShell Module v2 following guidance of [Install Azure Directory PowerShell for Graph](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
-    - Run Powershell command:
-      
-      > Connect-AzureAD # (popup a login window and please login with tenant user)
-      > 
-      > New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+1. Add a service principle to your tenant by doing the following:
 
-2. Create an application user for Inventory Visibility in Microsoft Dataverse.
+    - Install the Azure AD PowerShell Module v2 as described in [Install Azure Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
-    - Click the environment URL to open the Dataverse environment.
-    - Open the advanced setting and create one application users by clicking `Advanced Setting` > `System` > `Security` > `Users`. In the `Enabled Users`>`System` Views, Select the `Application Users`. 
-    - Click `New` and the application id is **3022308a-b9bd-4a18-b8ac-2ddedb2075e1** (object id will be auto loaded with save), name could be customized e.g., Inventory Visibility. 
-    - After clicking `Save` button, go to `Assign Role` button and select **System Administrator**. If there is a role called **Common Data Service User**, check it too.
-    - For more information, please refer to [Create users and assign security roles - Power Platform | Microsoft Docs](https://docs.microsoft.com/en-us/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+    - Run the following Powershell command:
 
-3. Import Configuration Upgrade Trigger flow.
+        ```powershell
+        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+              
+        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+        ```
 
-    - Go to the Flow page, import the `InventoryVisibilityConfigurationUpgradeTrigger.zip` file. 
-    - Make sure connection **'Dataverse (legacy)'** exists(create one if there isn’t) before the import. Once imported, the trigger will be shown in the `My flows`. 
+1. Create an application user for Inventory Visibility in Microsoft Dataverse by doing the following:
+
+    - Open your Dataverse environment URL.
+    - Open the advanced settings and create an application user by going to **Advanced Setting \> System \> Security \> Users**. Choose **Application Users** in the view menu.
+    - Select **New**. Set the **Application ID** to *3022308a-b9bd-4a18-b8ac-2ddedb2075e1* (the object ID will load automatically on save). The name could be customized, for example to "Inventory Visibility".
+    - After selecting **Save**, select **Assign Role** and then select **System Administrator**. If there is a role called **Common Data Service User**, select it too.
+    - For more information, see [Create users and assign security roles - Power Platform | Microsoft Docs](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Import the configuration upgrade trigger flow.
+
+    - Go to the Flow page.
+    - Make sure the connection *Dataverse (legacy)* exists (create it if it doesn't).
+    - Import the `InventoryVisibilityConfigurationUpgradeTrigger.zip` file. Once imported, the trigger will be shown under **My flows**.
     - Update the environment variables in the flow.
-    - Click `Turn on`.
+    - Select **Turn on**.
 
 ### <a name="install-add-in"></a>Install the add-in
 
@@ -93,7 +99,7 @@ To install the Inventory Visibility Add-in, do the following:
 1. Sign in to the [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) portal.
 1. On the home page, select the project where your environment is deployed.
 1. On the project page, select the environment where you want to install the add-in.
-1. On the environment page, scroll down until you see the **Environment add-ins** section in **Power Platform integration** section where you can find dataverse environment name. 
+1. On the environment page, scroll down until you see the **Environment add-ins** section in the **Power Platform integration** section, where you can find dataverse environment name.
 1 In the **Environment add-ins** section, select **Install a new add-in**.
     ![The environment page in LCS](media/inventory-visibility-environment.png "The environment page in LCS")
 1. Select the **Install a new add-in** link. A list of available add-ins opens.
@@ -108,65 +114,70 @@ To install the Inventory Visibility Add-in, do the following:
 1. Agree to the terms and condition by selecting the **Terms and conditions** check box.
 1. Select **Install**. The status of the add-in will show as **Installing**. When it's done, refresh the page to see the status change to **Installed**.
 
-###  <a name="uninstall-add-in"></a>Uninstall the add-in
+### <a name="uninstall-add-in"></a>Uninstall the add-in
 
 To uninstall the add-in, select **Uninstall**. Refresh LCS and the Inventory Visibility Add-in will be removed. The uninstall process will remove the add-in registration and also start a job to clean up all of the business data stored in the service.
 
-## Consume inventory on-hand data from Dynamics 365 SCM
+## Consume inventory on-hand data from Supply Chain Management
 
-### <a name="deploy-inventory-visibility-package"></a>Deploy Inventory Visibility Integration Package
+### <a name="deploy-inventory-visibility-package"></a>Deploy the Inventory Visibility integration package
 
-Before 10.0.18, contact the Inventory Visibility On-board support team (inventvisibilitysupp@microsoft.com) to get the package file, then deploy the package on LCS.
+If you are running Supply Chain Management version 10.0.17 or earlier, contact the Inventory Visibility on-board support team at  [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the package file, then deploy the package on LCS.
 
 > [!Note]
-> If there is version mismatch error during deployment, then you need to import xpp project manually on your development environment. Then create deployable package from development environment to deploy on production environment.
+> If there is version mismatch error during deployment, then you must manually import the X++ project into your development environment. Then create deployable package from your development environment to deploy it on your production environment.
 > 
-> The standard code will be checked in on 10.0.18, no deployment will be required after that.
+> The code is included with Supply Chain Management version 10.0.18, no deployment will be required if you are running that version or later.
 
-Please make sure that your D365 SCM has the below feature enabled(These features are enabled by default):
+Make sure that the following features are enabled on your Supply Chain Management environment (they are enabled by default):
 
-| feature description | code version | toggle class |
+| Feature description | Code version | Toggle class |
 | - | - | - |
 | Enable or disable using inventory dimensions on InventSum table | 10.0.11 | InventUseDimOfInventSumToggle |
 | Enable or disable using inventory dimensions on InventSumDelta table | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
 
-### <a name="setup-inventory-visibility-integration"></a>Setup Inventory Visibility Integration
+### <a name="setup-inventory-visibility-integration"></a>Set up Inventory Visibility integration
 
-1. In the Dynamics 365 SCM, go to feature management, enable **Inventory Visibility Integration** feature. 
-2. Go to `Inventory Management` > `Set up` > `Inventory Visibility Integration parameters`, enter the URL for your environment of the Inventory Visibility.
+1. In the Supply Chain Management, go to **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** and enable the **Inventory Visibility Integration** feature.
+2. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters** and enter the URL for the environment where you are running Inventory Visibility.
 
-    Find your LCS environment’s azure region and then complete the URL: https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/
+    Find your LCS environment's Azure region and then enter the URL, which takes the following form:
 
-    For example, https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/ or https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/ for Europe. 
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
 
-    Current available region:
+    For example, if you're in Europe, your URL would be one of the following:
+
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+
+    The following regions are currently available:
 
     | Azure Region | Region Short Name |
     | - | - |
     | Australia east | eau |
-    | Australia southeast |	seau |
+    | Australia southeast | seau |
     | Canada central | cca |
     | Canada east | eca |
     | North europe | neu |
-    | West europe |	weu |
-    | East us |	eus |
-    | West us |	wus |
+    | West europe | weu |
+    | East us | eus |
+    | West us | wus |
 
-3. Go to `Inventory Management` > `Periodic` > `Inventory Visibility Integration` to enable the job, then all inventory change events from Dynamics 365 SCM will post to the Inventory Visibility. 
+3. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration** and enable the job. Now, all inventory change events from Supply Chain Management will post to Inventory Visibility.
 
-## <a name="inventory-visibility-public-api"></a>Inventory Visibility Add-in public API
+## <a name="inventory-visibility-public-api"></a>The Inventory Visibility Add-in public API
 
-The public REST API of the of the Inventory Visibility Add-in presents several specific endpoints of integration. It supports three main interaction types:
+The public REST API of the Inventory Visibility Add-in presents several specific endpoints for integration. It supports three main interaction types:
 
 - Posting on-hand changes to the add-in from an external system.
 - Querying current on-hand quantities from an external system.
-- Automatic synchronization with Supply Chain Management on-hand.
+- Automatic synchronization with Supply Chain Management on-hand inventory.
 
-The automatic synchronization isn't part of the public API but is instead handled in the background for environments that have enabled the Inventory Visibility Add-in.
+Automatic synchronization isn't part of the public API but is instead handled in the background for environments where the Inventory Visibility Add-in is enabled.
 
 ### <a name="inventory-visibility-authentication"></a>Authentication
 
-The platform security token is used to call the Inventory Visibility Add-in, so you must generate an **Azure Active Directory(AAD) token** using your Azure Active Directory application and then get the **access token** from security service with AAD Token.
+The platform security token is used to call the Inventory Visibility Add-in, so you must generate an *Azure Active Directory(AAD) token* using your Azure Active Directory application and then get the *access token* from security service with the AAD token.
 
 Get a security service token by doing the following:
 
