@@ -44,4 +44,4 @@ Begin by opening the **Withholding tax component groups** page (**Tax > Setup > 
 3. In the **Description** field, enter a description for the TDS component group.
 4. In the **Status** field, select the residential status that the TDS component group comes under. The options are **Resident** and **Non-resident**.
 5. In the **Section** **code** field, enter the section code that is applied to the TDS component group.
-6. Close the Withholding tax component groups form.
+6. Close the Withholding tax component groups page.
