@@ -2,7 +2,7 @@
 # required metadata
 
 title: "Pick this up" option not displayed on cart or product details pages
-description: This topic provides troubleshooting information for when the option to pick up in store doesn't display on the cart or product details pages. 
+description: This topic provides troubleshooting guidance for when the option to pick up in store isn't displayed on the cart or product details pages. 
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting information for when the option to pick up in store doesn't display on the cart or product details pages.
+This topic provides troubleshooting guidance for when the option to pick up in store isn't displayed on the cart or product details pages.
 
 ## Description
 
@@ -77,9 +77,3 @@ To configure customer orders payments in Commerce headquarters, follow these ste
 [Omni-channel Commerce order payments](../dev-itpro/commerce-payments.md)
 
 [Store selector module](../store-selector.md)
-
-
-
-
-
-
