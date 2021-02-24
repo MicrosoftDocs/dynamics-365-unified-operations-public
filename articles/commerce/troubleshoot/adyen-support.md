@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides information on how to get support when you have issues with the Microsoft Dynamics 365 Payment Connector for Adyen. 
+This topic provides troubleshooting guidance on how to get support when you have issues with the Microsoft Dynamics 365 Payment Connector for Adyen.
 
 ## Description
 
