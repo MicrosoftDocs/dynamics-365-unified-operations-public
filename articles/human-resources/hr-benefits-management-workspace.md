@@ -33,7 +33,8 @@ ms.dyn365.ops.version: Human Resources
 # Benefits management workspace
 
 [!include [applies to](../includes/applies-to-hr.md)]
-[!include [preview feature](../includes/preview-feature.md)]
+
+[!include [preview feature](./includes/preview-feature.md)]
 
 This topic describes the **Benefits management** workspace in Dynamics 365 Human Resources.
 
@@ -49,4 +50,46 @@ The **Benefits management** workspace gives you a quick view of benefits items t
 - New hires who aren't enrolled
 - Workers with active life events
 - Workers with open enrollments who haven't opted for any plans
+
+![Benefits management workspace](./media/hr-benefits-management-workspace.png)
+
+## View action items
+
+You can view your action items by either selecting a tile or a tab. If you select a tile, you go to the page for that area. If you select a tab, you can view and select workers right on the workspace page.
+
+![Action items](./media/hr-benefits-management-workspace-action-items.png)
+
+## Processing
+
+To process enrollment eligibility, life events, or rate change updates, select the appropriate item on the navigation bar.
+
+![Processing](./media/hr-benefits-management-workspace-processing.png)
+
+To view process results, select **Process results** on the page.
+
+![Process results](./media/hr-benefits-management-workspace-process-results.png)
+
+For more information about benefits processing, see:
+
+- [Process enrollment eligibility](hr-benefits-process-enrollment-eligibility.md)
+- [Process life event changes](hr-benefits-process-life-event-changes.md)
+- [Process life event eligibility](hr-benefits-process-life-event-eligibility.md)
+- [Process life events](hr-benefits-process-life-events.md)
+- [Process rate changes](hr-benefits-process-rate-changes.md)
+
+## Change period
+
+To view a different benefits period, select it from the **Period** dropdown.
+
+![Change period](./media/hr-benefits-management-workspace-period.png)
+
+## View more options
+
+To view more information and actions you can take, select **Links**.
+
+![Links](./media/hr-benefits-management-workspace-links.png)
+
+## See also
+
+[Benefits management overview](hr-benefits-management-overview.md)
 
