@@ -99,9 +99,9 @@ In this release, terminology related to the Dynamics 365 Human Resources integra
 
 To learn more about the Dynamics 365 Human Resources integration with Microsoft Dataverse, see [Configure Microsoft Dataverse integration](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service) and [Configure Microsoft Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
-## Updates to our service deployment
+## Updates to the service deployment
 
-Beginning with February 22, 2021 release, we will make adjustments to our regional service update deployment. The adjustements will include rotating the order in which global regions receive updates for the Human Resources service, and modifications in the wait time between update stages. These changes bring us more in line with Safe Deployment Practices (SDP), improving service stability, quality and supportability.
+Beginning with February 22, 2021 release, we will adjust our regional service update deployment. The adjustments will include rotating the order in which global regions receive updates for the Human Resources service, and modifications in the wait time between update stages. These changes bring us more in line with Safe Deployment Practices (SDP), improving service stability, quality and supportability.
 
 We will continue to follow the two-week deployment cadence. However customers may notice that updates are typically applied to their Human Resources environments on a different day of the two-week cycle than in previous releases.
 
