@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail store doesn't appear in the list of stores to pick up from
-description: This topic provides troubleshooting information for when a retail store doesn't appear in the list of stores to pick up from. 
+description: This topic provides troubleshooting guidance for when a retail store doesn't appear in the list of stores to pick up from. 
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -37,7 +37,7 @@ This topic provides troubleshooting information for when a retail store doesn't 
 
 ## Description
 
-A retail store that's configured for pickup scenarios doesn't appear in the list of stores to pick up from.
+This topic provides troubleshooting guidance for when a retail store doesn't appear in the list of stores to pick up from.
 
 ## Resolution
 
