@@ -37,7 +37,7 @@ The system uses your [auto cost setup](auto-cost-setup.md) to determine an estim
 
 ### Set up cost templates
 
-Cost templates establish default settings that users getting the estimate may not necessarily know. Templates can help reduce complexity in the estimating process by minimizing the selections that users need to specify to get an accurate estimate. If you are using the standard cost model, you'll be able to use cost templates while setting up the cost of goods.
+Cost templates establish default settings that users who get the estimate won't necessarily know. Templates can help reduce complexity in the estimating process by minimizing the selections that users must specify to get an accurate estimate. If you're using the standard cost model, you can use cost templates while you set up the cost of goods.
 
 To set up your cost templates, go to **Landed cost \> Costing setup \> Cost templates**. On the **Cost templates** page, the list pane on the left shows all current cost templates. You can use the buttons on the Action Pane to create, delete, and edit templates.
 
@@ -68,7 +68,7 @@ The following table describes the fields that are available on the **Parameters*
 |---|---|
 | Cost template | Select a cost template. The settings that are associated with the selected template will be used to determine the auto costs that are applied. |
 | Estimate date | By default, this field is set to today's date, but you can change the value. The specified date will be used to select the appropriate sales prices, purchase prices, auto costs, and the exchange rate if a shipping rate is used. |
-| Measurement | Costs might depend on a measurement. For example, when air freight is used, volumetric pricing might apply. If the cost depends on a measurement, enter the value of that measurement. Otherwise, we recommend that you set this field to *1*, unless you're certain that no apportionment occurs by using measurement. Enter a decimal value here. The unit is the one defined on the applicable auto-cost record. |
+| Measurement | Costs might depend on a measurement. For example, when air freight is used, volumetric pricing might apply. If the cost depends on a measurement, enter the value of that measurement. Otherwise, we recommend that you set this field to *1*, unless you're certain that no apportionment occurs by using measurement. Enter a decimal value. The unit is the one that is defined in the applicable auto cost record. |
 | Journey template | Select a [journey template](multi-leg-journey-setup.md). This field is used to determine the correct auto costs that should be applied. |
 | From port | The port that the items will be shipped from. This field is set based on the selected journey template. |
 | To port | The port that the items will be shipped to. This field is set based on the selected journey template. |
@@ -88,14 +88,11 @@ The following table describes the fields that are available for each item.
 | Item number | Select the item to determine the price for. (If the item doesn't yet exist in the system, create a dummy item, optionally attach it to a voyage item cost group, and then either leave the price blank, or create or change the price.) |
 | Vendor account | Select the vendor to use for the estimate of this item. If a default vendor is assigned to the item, this field is automatically set. |
 | Quantity | Select the quantity that you will purchase. |
-| Cost price | The system finds an initial price using its pricing rules, but you can override if necessary. |
-| Sales price | Enter the expected sales price for the good. |
-| Measurement | Enter a decimal value for the measurement of the good. The unit is set up for the applicable released product. |
-| Update item weight/volume | Select this check box if you would like to update the weight or volume measurement on the released product to match the **Measurement** entered for this row. |
-| (Other dimensions) | Depending on which dimensions you have chosen to display, you may see additional columns of information about each item. |
-
-> [!NOTE]
-> Depending on the dimensions that you've selected to show, the grid might also include other columns of information about each item.
+| Cost price | The system uses its pricing rules to find an initial price, but you can override that price if necessary. |
+| Sales price | Enter the expected sales price of the goods. |
+| Measurement | Enter a decimal value for the measurement of the goods. The unit is the one that is set up for the applicable released product. |
+| Update item weight/volume | Select this check box to update the weight or volume measurement of the released product so that it matches the **Measurement** value that is entered for this row. |
+| (Other dimensions) | Depending on the dimensions that you've selected to show, you might see additional columns of information about each item. |
 
 To view or adjust the volume and/or weight details for an item, select the item in the grid, and then use the fields at the bottom of the page.
 
@@ -119,13 +116,10 @@ The **Lines** FastTab lists each item that is included in the current estimate. 
 | Item number | The item number. |
 | Quantity | The number of items that are used to determine the cost. |
 | Cost price | The cost price according to the trade agreement. This value is shown in the local currency. |
-| Measurement | The individual measurement is shown here. The unit is the one defined for the applicable released product. |
+| Measurement | The individual measurement. The unit is the one that is defined for the applicable released product. |
 | Estimated landed cost | The estimated landed cost for the total quantity. |
 | Per unit | The estimated landed cost divided by the quantity. |
-| (Other dimensions) | Depending on which dimensions you have chosen to display, you may see additional columns of information about each item. |
-
-> [!NOTE]
-> Depending on the dimensions that you've selected to show, the grid might also include other columns of information about each item.
+| (Other dimensions) | Depending on the dimensions that you've selected to show, you might see additional columns of information about each item. |
 
 The following table describes the buttons that are available on the toolbar on the **Lines** FastTab.
 
@@ -138,11 +132,11 @@ The following table describes the buttons that are available on the toolbar on t
 
 ### Settings on the General FastTab
 
-The **General** FastTab shows details about the item currently selected on the **Lines** FastTab. Much of this information is repeated from the **Lines** FastTab and can be edited at either location. However, additional details are also available here. The extra fields here show values based on the relevant released product setup.
+The **General** FastTab shows details about the item that is currently selected on the **Lines** FastTab. Much of this information is repeated from the **Lines** FastTab and can be edited in either place. However, additional details are also available here. The values of the extra fields are based on the setup of the applicable released product.
 
 ### Settings on the Dimension FastTab
 
-The **Dimension** FastTab shows values for all available inventory dimensions for the item selected on the **Lines** FastTab, regardless of which dimensions you have chosen to display there. The values shown here (if any) come from the applicable cost estimate template. They are optional on the cost estimate template.
+The **Dimension** FastTab shows values for all available inventory dimensions for the item that is selected on the **Lines** FastTab, regardless of the dimensions that you've chosen to show there. Any values that are shown here come from the applicable cost estimate template. They are optional in the cost estimate template.
 
 ### Buttons on the Action Pane
 
@@ -158,7 +152,7 @@ You can use the buttons on the Action Pane of the **Cost estimates** page to wor
 
 ## Item cost price update
 
-The **Item cost price update** periodic task updates all cost estimates that match the filters you set when running the task. The effect is similar to when you select **Update standard cost** from the Action Pane for a single estimate, but in this case it applies to all matching estimates.
+The **Item cost price update** periodic task updates all cost estimates that match the filters that you set when you run the task. The effect is similar to the effect of selecting **Update standard cost** on the Action Pane for a single estimate. However, in this case, the update applies to all matching estimates.
 
 To run the periodic task, follow these steps.
 
