@@ -50,6 +50,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
+| Human Resources app in Microsoft Teams | [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Manage leave requests in Teams](hr-teams-leave-app.md) |
 
 
 
@@ -64,7 +65,6 @@ The following bug fixes are included in this release.
 | Issue number | Issue |  Description |
 | --- | --- | --- |
 | 529994 | Modifying "Known As" field on worker form does not trigger a Dataverse update | The Dataverse execution request is not triggered when the "Known As" field is updated on the worker form. |
-| ESS contact details grid- when empty and Restrict ESS purpose feature enabled, add fails - (554195) |-- | -- |
 | Only one dependant selected on eligible plans when more than one are marked as default designees - (518064) |-- | -- |
 | 532651 |Compensation Analytics PBI report does not use currency conversion when calculating metrics for All Companie | Fixed an issue where COmpensation analysis PBI report was not correctly doing currency conversions |
 | Limit the number of tasks queried for in "To-do list" on dashboard - (547123) |-- | -- |
@@ -78,7 +78,6 @@ The following new features are in preview. For more information about turning fe
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Human Resources app in Microsoft Teams | [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Manage leave requests in Teams](hr-teams-leave-app.md) |
 | Cross-company view of leave for managers | [Cross-company view of employee leave for managers](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Configure leave and absence parameters](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
 | Benefits Management Workspace | [Benefits Management Workspace (Preview)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | (Coming Soon ! ) New Feature "(Preview) Benefits management workspace" available in Sandbox environments only |
 
