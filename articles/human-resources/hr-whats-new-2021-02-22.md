@@ -64,7 +64,6 @@ The following bug fixes are included in this release.
 | Issue number | Issue |  Description |
 | --- | --- | --- |
 | 529994 | Modifying "Known As" field on worker form does not trigger a Dataverse update | The Dataverse execution request is not triggered when the "Known As" field is updated on the worker form. |
-| ESS contact details grid- when empty and Restrict ESS purpose feature enabled, add fails - (554195) |-- | -- |
 | Only one dependant selected on eligible plans when more than one are marked as default designees - (518064) |-- | -- |
 | 532651 |Compensation Analytics PBI report does not use currency conversion when calculating metrics for All Companie | Fixed an issue where COmpensation analysis PBI report was not correctly doing currency conversions |
 | Limit the number of tasks queried for in "To-do list" on dashboard - (547123) |-- | -- |
