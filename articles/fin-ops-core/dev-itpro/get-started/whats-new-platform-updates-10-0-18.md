@@ -43,11 +43,7 @@ This topic lists the features that are included in the platform updates for vers
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
--  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
-
--  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
-
--  [Feature](URL to feature in Release Plans)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
+-  [Finance and Operations Authentication upgrade from ws-Fed to OWIN/OpenID Connect](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=b5011f1d-866c-eb11-a812-000d3a9e07d5&recordSetQueryKey=rn_releasenote-1aae8fd9-d373-e811-a965-000d3a1362e3%253A%2520rn_entityimage_url%253A%2520%253A%2520%253A%2520%253A%2520%253A%2520false%253A%2520%253A%2520%253A%252050)<br>- For more information, see [Name of article](URL to article that contains more details about feature).
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
