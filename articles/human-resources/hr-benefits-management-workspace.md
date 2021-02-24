@@ -5,7 +5,7 @@ title: Benefits management workspace
 description: This topic describes the Benefits management workspace in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
-ms.date: 02/23/2021
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-02-23
+ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -63,7 +63,7 @@ You can view your action items by either selecting a tile or a tab. If you selec
 
 To process enrollment eligibility, life events, or rate change updates, select the appropriate item on the navigation bar.
 
-![Processing](./media/hr-benefits-management-workspace-processing.png)
+![Processing](./media/hr-benefits-management-workspace-processing.png) 
 
 To view process results, select **Process results** on the page.
 
