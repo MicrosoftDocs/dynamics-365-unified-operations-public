@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM
+# Set up an e-commerce development environment to debug against a Tier 1 Retail Server virtual machine
 
 [!include [banner](../../includes/banner.md)]
 
