@@ -37,10 +37,10 @@ This topic summarizes answers to questions frequently asked by users of the Dyna
 ### TSLint has been deprecated in online SDK version 1.28 (Commerce version 10.0.18 release)
 Due to the open source TSLint static analysis tool has being deprecated, the Dynamics 365 Commerce online SDK is changing to leverage the [ESLint](https://eslint.org/) static alaysis tool as a replacement.  TSLint will continue to work until SDK version 1.30 (Commerce version 10.0.20 release).  You can can manually update to ESLint prior to SDK release 1.30 if desired, but it will be required with release 1.30.  After updating to SDK version 1.28, running ```yarn``` will show a deprecation warning.  You can switch to ESLint at any time after this, but it may cause new errors and warnings to be displayed on your custom code. If you retrieved the online SDK from GitHub with the Commerce 10.0.20 preview release, then it will contain the necessary changes to ESLint and no changes will be needed.  Otherwise if you are updating from an older version of the SDK, you will need to manually update to ESLint before SDK release 1.30.  Follow the section below to manually update from TSLint to ESLint
 
-####Replacing TSLint with ESLint
+#### Replacing TSLint with ESLint
 Once you have [updated to SDK 1.28](sdk-updates.md) or later, you will need to create a ESLint file and change your packages.json file to include the ESLint dependencies and updated commands to use ESLint.  You can leave the TSLint dependency in the packages.json file if you would like to use both.  Once you update to ESLint, you may see new warnings against your code that can be fixed or ignored if needed.
 
-#####.eslintrc.js file
+##### .eslintrc.js file
 You will need to add a new file **.eslintrc.js** to your root SDK folder (you should also notice an existing tslint.json file in this directory). This file will contain a base rule set which can be extended
  
 The base config contains a set of core rules that is relaxed when it comes to linting restrictions. You may also choose to define your own ruleset or extend another ruleset.
@@ -105,7 +105,7 @@ You may also optionally wish to override or declare new rules for certain types 
 
 For more information and other help please consult ESLint documentation.
 
-#####package.json file changes
+##### package.json file changes
  
 Inside your package.json you can leave the TSLint dependency (if you want to use both) and add the following dependencies into your **devDependencies** section:
  
@@ -136,7 +136,7 @@ Change the build/start commands to for partner packages
         "build": "yarn msdyn365b build --use-eslint",
 ```
  
-####Fixing ESLint Errors
+#### Fixing ESLint Errors
 It is optional but recommended to install the ESLint extension for Visual Studio Code. This will help identify errors and warnings directly in your editor and will allow you to use quick actions to ignore linting errors with comments.
  
 Run ```yarn lint```
@@ -145,7 +145,7 @@ You may see new ESLint errors, this is because all the TSLint errors that were s
 
 If you use the –use-eslint flags to build, the build will fail on errors but will ignore warnings.
 
-####Disabling Linting In Code
+#### Disabling Linting In Code
 
 Fix all the errors by replacing tslint disable comments with the new eslint disable comment. You may use file find & replace if that is easier but be sure to verify the results.
 
@@ -162,7 +162,7 @@ TSLint Rule	ESLint Rule
 // tslint:disable-next-line:cyclomatic-complexity	// eslint-disable-next-line complexity
 // tslint:disable-next-line:no-empty	// eslint-disable-next-line no-empty
 
-####Disabling Linting For a Module
+#### Disabling Linting For a Module
 
 If you wish to disable linting check for the entire module build (build-package) you may use the –disable-linter flag to skip the lint check step. (e.g yarn build-package –disable-linter).
 
