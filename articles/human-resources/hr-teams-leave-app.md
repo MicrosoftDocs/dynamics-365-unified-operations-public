@@ -34,8 +34,6 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [banner](includes/preview-feature.md)]
-
 The Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information and start a leave request. The **Time off** tab provides more detailed information. You can also send people information about your upcoming time off in Teams and chats outside the Human Resources app.
 
 ## Install the app
@@ -99,7 +97,7 @@ When you're done entering information, select **Submit** to submit it for approv
 
 ## Manage your leave in Teams
 
-The **Time off** tab allows you to view:
+The **Time off** tab allows you to view: 
 
 - Balance information for each leave type you're enrolled in
 
