@@ -69,7 +69,7 @@ After the refresh completes, the application analytical workspaces and reports w
 After refreshing the entity store (as described above), redeploy the reports using the **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**.
 
 > [!NOTE]
-> Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete and redeploy the report after the maintenance activity is completed.
+> Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete the report and the related dataset and redeploy the report after the maintenance activity is completed.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
