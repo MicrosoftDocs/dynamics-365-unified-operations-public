@@ -2,10 +2,10 @@
 # required metadata
 
 title: Order synchronization error related to default payment service
-description: This topic provides a resolution for when an error is displayed when an online order is synchronized.
+description: This topic provides troubleshooting guidance on how to fix an error that is displayed when synchronizing an online order.
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/17/2021
+ms.date: 02/24/2021
 ms.topic: Troubleshooting
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,20 +33,23 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
+This topic provides troubleshooting guidance on how to fix an error that is displayed when synchronizing an online order.
+
 ## Description
-When synchronizing an online order, the following error message is displayed: "There must be a default payment service to process credit card transactions."
+
+When synchronizing an online order, the following error message is displayed as highlighted in the example image below: "There must be a default payment service to process credit card transactions."
 
 ![Default payment service missing error](media/default-payment-method-error.jpg)
 
 ## Resolution
 
-### Set the default payment service
+### Confirm or set the default payment service in Dynamics 365 Commerce headquarters
 
-1. Go to Dynamics 365 Commerce headquarters.
+To confirm or set the default payment service in Dynamics 365 Commerce headquarters
 
-1. Go to **Accounts receivable > Payment setup > Payment services**.
+1. Go to **Accounts receivable \> Payment setup \> Payment services**.
+1. Confirm that one payment service has the **Default processor for new credit cards** option is set to **Yes**. If not, set the option to **Yes** for one payment service.
 
-1. Make sure one payment service is configured with the **Default processor for new credit cards** setting.
+## Additional resources
 
-## Additional Resources
-- [Credit card setup, authorization, and capture](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/credit-card-authorizations)
+[Credit card setup, authorization, and capture](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/credit-card-authorizations)
