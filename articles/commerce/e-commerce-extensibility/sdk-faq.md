@@ -44,7 +44,7 @@ Once you have [updated to SDK 1.28](sdk-updates.md) or later, you will need to c
 You will need to add a new file **.eslintrc.js** to your root SDK folder (you should also notice an existing tslint.json file in this directory). This file will contain a base rule set which can be extended
  
 The base config contains a set of core rules that is relaxed when it comes to linting restrictions. You may also choose to define your own ruleset or extend another ruleset.
-To use the provided base set of rules, create the **.eslintrc.js** file and copy and paste the following code
+To use the provided base set of rules, create the **.eslintrc.js** file and copy and paste the following code:
  
 ```javascript
 module.exports = {
