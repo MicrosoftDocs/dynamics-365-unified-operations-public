@@ -47,7 +47,7 @@ The following table describes the settings providing in the header section of ea
 | Description | Enter a description for the profile. |
 | Module | Choose whether the profile is associated with *Customer* or *Vendor* rebates and royalties. |
 | Type | Select the profile type (*Rebate* or *Royalty*) |
-| Payment type | Determines the format of the posted rebate output.<p>When **Type** is set to *Rebate*, the following payment types are available:</p><ul><li>*None* - <!-- KFM: Description needed --></li><li>*Pay using accounts payable* - Posting the rebate creates a vendor invoice to the remittance vendor set up on the rebate customer.</li><li>*Customer deductions* - Posting the rebate creates a customer deduction journal to the rebate customer.</li><li>*Tax invoice customer deductions* - Posting the rebate creates a free text invoice to the rebate customer.</li><li>*Trade spending* - Posting the rebate creates a customer deduction journal to the rebate customer.</li><li>*Reporting* - Posting the rebate creates a customer deduction journal to the rebate customer.</li></ul><p>When **Type** is set to *Royalty*, the following payment types are available:</p><ul><li>*None* - <!-- KFM: Description needed --></li><li>*Pay using accounts payable* - Posting the rebate creates a vendor invoice to the rebate vendor account.</li><li>*Reporting* - Posting the rebate creates a vendor invoice to the rebate vendor account.</li></ul> |
+| Payment type | Determines the format of the posted rebate output.<p>When **Type** is set to *Rebate*, the following payment types are available:</p><ul><li>*None* - There is no default posting type, so you must define the type when doing the processing.</li><li>*Pay using accounts payable* - Posting the rebate creates a vendor invoice to the remittance vendor set up on the rebate customer.</li><li>*Customer deductions* - Posting the rebate creates a customer deduction journal to the rebate customer.</li><li>*Tax invoice customer deductions* - Posting the rebate creates a free text invoice to the rebate customer.</li><li>*Trade spending* - Posting the rebate creates a customer deduction journal to the rebate customer.</li><li>*Reporting* - Posting the rebate creates a customer deduction journal to the rebate customer.</li></ul><p>When **Type** is set to *Royalty*, the following payment types are available:</p><ul><li>*None* - There is no default posting type, so you must define the type when doing the processing.</li><li>*Pay using accounts payable* - Posting the rebate creates a vendor invoice to the rebate vendor account.</li><li>*Reporting* - Posting the rebate creates a vendor invoice to the rebate vendor account.</li></ul> |
 | Company | Select the legal entity (company) to which provisions will be accrued and by which claims will be paid. |
 
 ## Settings on the Posting FastTab
@@ -74,21 +74,21 @@ The following table describes the settings on the **Posting** FastTab of each re
 
 ## The Posting by company FastTab
 
-<!-- KFM: Documentation needed. What are we doing here? -->
+This FastTab allows you to identify the posting account used be each of the companies listed here.
 
 Use the buttons in the toolbar of the **Posting by company** FastTab to add and remove companies (legal entities) in the grid. Each time you add a new row, use the **Company** to specify the legal entity for that row; the **Name** is then filled in automatically.
 
 For each company listed in the grid, select its row and then make the following settings using the fields below the grid:
 
-- **Debit type** - <!-- KFM: Description needed -->
-- **Debit account** - <!-- KFM: Description needed -->
-- **Main account** - <!-- KFM: Description needed -->
+- **Debit type** - <!-- KFM: It is what it says it is... -->
+- **Debit account** - <!-- KFM: It is what it says it is... -->
+- **Main account** - <!-- KFM: It is what it says it is... -->
 
 ## Payment types
 
-<!-- KFM: Intro needed. What does this table mean? -->
+The following table summarizes how various **Payment type** settings (made in the heading of the profile) affect where payments are posted. Payments can post to a customer account, vendor account, or remittance account based on the target transaction and rebate type.
 
-| **Payment type** | **Target transaction type** | **Rebate module and type** | **Payment to (invoice account)** |
+| **Payment type** | **Target transaction type** | **Rebate type** | **Payment to (invoice account)** |
 | --- | --- | --- | --- |
 | **Pay using accounts payable** | Vendor invoice journal | Customer rebate | Customer's remittance vendor account |
 | **Pay using accounts payable** | Vendor invoice journal | Customer royalty | Vendor account |
@@ -100,7 +100,7 @@ For each company listed in the grid, select its row and then make the following 
 | **Reporting** | Daily journal | Vendor invoice journal | Customer royalty | Vendor account |
 | **Reporting** | Daily journal | Vendor rebate | Vendor account |
 
-> [!NOTE]
-> When configuring the Rebate management agreements 'Reconcile by' = Deal cannot use the Dynamic deal account in Rebate management posting. It needs the customer/vendor account specified.
-
-'Reconcile by' = Line' agreements can have a posting profile offsetting to a Dynamic deal account on the agreement line, as it can use the customer as per the agreement line
+> [!NOTE] <!-- KFM: review this text. -->
+> When configuring the Rebate management agreements:
+> - 'Reconcile by' = Deal cannot use the Dynamic deal account in Rebate management posting. It needs the customer/vendor account specified.
+> - 'Reconcile by' = Line agreements can have a posting profile offsetting to a Dynamic deal account on the agreement line, as it can use the customer as per the agreement line.
