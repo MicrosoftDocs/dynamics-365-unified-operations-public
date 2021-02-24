@@ -60,6 +60,8 @@ To apply styles to business card controls:
     - **Multi Select**: **No**.
     - **Show Col Labels**: **No**.
 
+![Business card](media/pfe-styles-business-card.png)
+
 ## Radio button
 
 To apply styles to radio buttons:
@@ -104,7 +106,7 @@ To apply styles to buttons:
 To apply styles to a primary button:
 
 + The button must be contained in a form group.
-+ The group name must contain **DefaultButtonGroup** or  **PrimaryButtonGroup**, for example, **DefaultButtonGroup10**.
++ The group name must start with **DefaultButtonGroup** or  **PrimaryButtonGroup**, for example, **DefaultButtonGroup10**.
 
 ![Primary button appearance](media/pfe-styles-first.png)
 
@@ -212,14 +214,13 @@ The following image shows two combo box controls. The left combo box has an empt
 
 ## Dialog
 
-The styles for all these controls keep the same rules when they're included in a dialog form, if the name of the dialog form starts with **JmgProductionFloorExecutionDialog**. 
+To apply styles to a dialog:
 
-To apply styles to the **OK** button:
-
-+ The button must be contained in a form group.
-+ The group name must start with **OkButtonGroup**.
-
-To apply styles to the **Cancel** button:
-
-+ The button must be contained in a form group.
-+ The group name must start with **CancelButtonGroup**.
++ The name of the dialog must start with **JmgProductionFloorExecutionDialog**, for example, **JmgProductionFloorExecutionDialogBatchNumberLookup**.
++ All of the controls in the dialog must be configured as described in this topic.
++ To apply styles to the **OK** button:
+    + The button must be contained in a form group.
+    + The group name must start with **OkButtonGroup**.
++ To apply styles to the **Cancel** button:
+    + The button must be contained in a form group.
+    + The group name must start with **CancelButtonGroup**.
