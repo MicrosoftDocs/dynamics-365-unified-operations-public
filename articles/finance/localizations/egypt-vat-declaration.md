@@ -38,7 +38,7 @@ The VAT return form for Egypt the official document that summarizes the total ou
 
 The VAT return form in Dynamics 365 Finance includes the following reports:
 
-- VAT return form, which provides a breakdown of amounts, adjustments, and VAT amount per line item in the VAT return form as is described in the legislation.
+- VAT return form number 10, which provides a breakdown of amounts, adjustments, and VAT amount per line item in the VAT return form as is described in the legislation.
 - Sales transactions book
 - Purchase transaction book
 
@@ -107,11 +107,11 @@ Complete the following steps to setup the different lookups used in the generati
 
 > **Note**: By adding this last record **Not applicable**, you define the following rule: When the **sales tax group**, **item sales tax group**, **tax code** and **name** that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the Sales VAT book. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.
 
-The tables below represent an example of suggested configuration for the described classifications. 
+The tables below represent an example of suggested configuration for the described lookups configurations. 
 
 **SalesItemTypeLookup**
 
-|Lookup result          | Line | Sales tax   group  | Item sales tax   group  | Tax code (Code) | Name                  |
+| Lookup result         | Line | Sales tax   group  | Item sales tax   group  | Tax code (Code) | Name                  |
 |-----------------------|------|--------------------|-------------------------|-----------------|-----------------------|
 | Domestic              | 1    | VAT_LOCAL          | *Not blank*             | *Not blank*     | Sales                 |
 | Domestic              | 2    | VAT_LOCAL          | *Not blank*             | *Not blank*     | SalesCreditNote       |
@@ -199,6 +199,9 @@ To generate the VAT return form report in Microsoft Excel format, you must defin
 2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (EG)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
 3. Select the **Category hierarchy**. This category enables the C\commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports. This configuration is optional.
 
+![Declaration form](media/egypt-vat-declaration-setup1.png)
+
+
 ## Generate a VAT return report
 The process of preparing and submitting a VAT return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
 
@@ -210,13 +213,13 @@ Complete the following steps to generate the tax declaration report.
 4. Select the sales tax payment version.
 5. Select **OK** to confirm the above steps. 
 6. Enter the amount of credit from the previous period, if applicable, or leave the amount as zero.
-7. In the **Generate details** field, select one of the following available options. The VAT return form is always generated in this process.
-   - **All** - Generate sales and purchase tax transactions details reports.
-   - **None** - Generate only the VAT declaration return form.
-   - **Purchase transactions**
-   - **Sales transactions**
+7. In the **Reports details** field, select one of the following available options. 
+   - **Purchase VAT book** - Generate purchase tax transactions details report.
+   - **Sales VAT book** - Generate sales tax transactions details report.
+   - **VAT declaration** - Generate only the VAT declaration return form.
+8. Enter the name of person who is registered to assign the form.
+9. Select the language. All reports are translated in **en-us** and **ar-eg**.
   
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
