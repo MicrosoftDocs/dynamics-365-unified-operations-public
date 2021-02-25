@@ -220,7 +220,6 @@ Complete the following steps to generate the tax declaration report.
 8. Enter the name of person who is registered to assign the form.
 9. Select the language. All reports are translated in **en-us** and **ar-eg**.
   
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
 
