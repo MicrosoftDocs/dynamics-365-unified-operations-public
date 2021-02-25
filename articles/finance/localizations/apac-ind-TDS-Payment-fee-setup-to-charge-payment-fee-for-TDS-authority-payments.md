@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Payment fee setup to charge payment fee for TDS authority payments
+title: Set up payment fees for payment fee charges for TDS authority payments
 description: This topic lists the steps for setting up a payment fee for Tax Deducted at Source (TDS) authority payments.
 author: kailiang
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 ---
 
-# Payment fee setup to charge payment fee for TDS authority payments
+# Set up payment fees for payment fee charges for TDS authority payments
 
 [!include [banner](../includes/banner.md)]
 
