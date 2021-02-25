@@ -109,25 +109,24 @@ Complete the following steps to setup the different lookups used in the generati
 
 The tables below represent an example of suggested configuration for the described classifications. 
 
-|    <br>SalesItemTypeLookup    	|    <br>Line    	|    <br>Sales tax group     	|    <br>Item sales tax group     	|    <br>Tax code (Code)    	|    <br>Name    	|
+| SalesItemTypeLookup 	| Line 	| Sales tax   group  	| Item sales tax   group  	| Tax code (Code) 	| Name 	|
 |-	|-	|-	|-	|-	|-	|
-|    <br>Domestic    	|    <br>1    	|    <br>VAT_LOCAL    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>Sales    	|
-|    <br>Domestic    	|    <br>2    	|    <br>VAT_LOCAL    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>SalesCreditNote    	|
-|    <br>Domestic    	|    <br>3    	|    <br>VAT_FINALC    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>Sales    	|
-|    <br>Domestic    	|    <br>4    	|    <br>VAT_FINALC    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>SalesCreditNote    	|
-|    <br>Domestic    	|    <br>5    	|    <br>VAT_PUBLIO    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>Sales    	|
-|    <br>Domestic    	|    <br>6    	|    <br>VAT_PUBLIO    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>SalesCreditNote    	|
-|    <br>Export    	|    <br>7    	|    <br>VAT_EXPORT    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>Sales    	|
-|    <br>Export    	|    <br>8    	|    <br>VAT_EXPORT    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>SalesCreditNote    	|
-|    <br>Machine   and Equipment    	|    <br>9    	|    <br>*Not   blank*    	|    <br>VAT_M&E    	|    <br>*Not   blank*    	|    <br>Sales    	|
-|    <br>Machine   and Equipment    	|    <br>10    	|    <br>*Not   blank*    	|    <br>VAT_M&E    	|    <br>*Not   blank*    	|    <br>SalesCreditNote    	|
-|    <br>Parts   machines    	|    <br>11    	|    <br>*Not   blank*    	|    <br>VAT_PARTS    	|    <br>*Not   blank*    	|    <br>Sales    	|
-|    <br>Parts   machines    	|    <br>12    	|    <br>*Not   blank*    	|    <br>VAT_PARTS    	|    <br>*Not   blank*    	|    <br>SalesCreditNote    	|
-|    <br>Exemptions    	|    <br>13    	|    <br>VAT_EXE    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>SaleExempt    	|
-|    <br>Exemptions    	|    <br>14    	|    <br>VAT_EXE    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>SalesExemptCreditNote    	|
-|    <br>Not   Applicable    	|    <br>15    	|    <br>*Blank*    	|    <br>*Blank*    	|    <br>VAT_ADJ    	|    <br>*Not   blank*    	|
-|    <br>Not   Applicable    	|    <br>16    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|    <br>*Not   blank*    	|
-
+| Domestic 	| 1 	| VAT_LOCAL 	| *Not blank* 	| *Not blank* 	| Sales 	|
+| Domestic 	| 2 	| VAT_LOCAL 	| *Not blank* 	| *Not blank* 	| SalesCreditNote 	|
+| Domestic 	| 3 	| VAT_FINALC 	| *Not blank* 	| *Not blank* 	| Sales 	|
+| Domestic 	| 4 	| VAT_FINALC 	| *Not blank* 	| *Not blank* 	| SalesCreditNote 	|
+| Domestic 	| 5 	| VAT_PUBLIO 	| *Not blank* 	| *Not blank* 	| Sales 	|
+| Domestic 	| 6 	| VAT_PUBLIO 	| *Not blank* 	| *Not blank* 	| SalesCreditNote 	|
+| Export 	| 7 	| VAT_EXPORT 	| *Not blank* 	| *Not blank* 	| Sales 	|
+| Export 	| 8 	| VAT_EXPORT 	| *Not blank* 	| *Not blank* 	| SalesCreditNote 	|
+| Machine and Equipment 	| 9 	| *Not blank* 	| VAT_M&E 	| *Not blank* 	| Sales 	|
+| Machine and Equipment 	| 10 	| *Not blank* 	| VAT_M&E 	| *Not blank* 	| SalesCreditNote 	|
+| Parts machines 	| 11 	| *Not blank* 	| VAT_PARTS 	| *Not blank* 	| Sales 	|
+| Parts machines 	| 12 	| *Not blank* 	| VAT_PARTS 	| *Not blank* 	| SalesCreditNote 	|
+| Exemptions 	| 13 	| VAT_EXE 	| *Not   blank* 	| *Not blank* 	| SaleExempt 	|
+| Exemptions 	| 14 	| VAT_EXE 	| *Not   blank* 	| *Not blank* 	| SalesExemptCreditNote 	|
+| Not Applicable 	| 15 	| *Blank* 	| *Blank* 	| VAT_ADJ 	| *Not blank* 	|
+| Not Applicable 	| 16 	| *Not blank* 	| *Not blank* 	| *Not blank* 	| *Not blank* 	|
 
 
 
