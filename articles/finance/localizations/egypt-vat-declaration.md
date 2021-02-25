@@ -129,19 +129,60 @@ The tables below represent an example of suggested configuration for the describ
 | Not Applicable        | 16   | *Not blank*        | *Not blank*             | *Not blank*     | *Not blank*           |
 
 
-| SalesOperationTypeLooup | Line | Item sales tax   group  | Tax code    | Name                  |
-|-------------------------|------|-------------------------|-------------|-----------------------|
-| Goods                   | 1    | VAT_GOODS               | *Not blank* | Sales                 |
-| Goods                   | 2    | VAT_GOODS               | *Not blank* | SalesCreditNote       |
-| Goods                   | 3    | VAT_GOODS               | *Not blank* | SaleExempt            |
-| Goods                   | 4    | VAT_GOODS               | *Not blank* | SalesExemptCreditNote |
-| Services                | 5    | VAT_SERV                | *Not blank* | Sales                 |
-| Services                | 6    | VAT_SERV                | *Not blank* | SalesCreditNote       |
-| Services                | 7    | VAT_SERV                | *Not blank* | SaleExempt            |
-| Services                | 8    | VAT_SERV                | *Not blank* | SalesExemptCreditNote |
-| Adjustments             | 9    | *Blank*                 | VAT_ADJ     | Sales                 |
-| Adjustments             | 10   | *Blank*                 | VAT_ADJ     | Purchase              |
-| Not applicable          | 11   | *Not blank*             | *Not blank* | *Not blank*           |
+| SalesOperationTypeLookup | Line | Item sales tax   group  | Tax code    | Name                  |
+|--------------------------|------|-------------------------|-------------|-----------------------|
+| Goods                    | 1    | VAT_GOODS               | *Not blank* | Sales                 |
+| Goods                    | 2    | VAT_GOODS               | *Not blank* | SalesCreditNote       |
+| Goods                    | 3    | VAT_GOODS               | *Not blank* | SaleExempt            |
+| Goods                    | 4    | VAT_GOODS               | *Not blank* | SalesExemptCreditNote |
+| Services                 | 5    | VAT_SERV                | *Not blank* | Sales                 |
+| Services                 | 6    | VAT_SERV                | *Not blank* | SalesCreditNote       |
+| Services                 | 7    | VAT_SERV                | *Not blank* | SaleExempt            |
+| Services                 | 8    | VAT_SERV                | *Not blank* | SalesExemptCreditNote |
+| Adjustments              | 9    | *Blank*                 | VAT_ADJ     | Sales                 |
+| Adjustments              | 10   | *Blank*                 | VAT_ADJ     | Purchase              |
+| Not applicable           | 11   | *Not blank*             | *Not blank* | *Not blank*           |
+
+| VATRateTypeLookup | Line | Tax code (Code) |
+|-------------------|------|-----------------|
+| GeneralGoods      | 1    | VAT_ST          |
+| GeneralGoods      | 2    | VAT_RD          |
+| FirstTable        | 3    | *Not   blank*   |
+| SecondTable       | 4    | *Not   blank*   |
+| Not Applicable    | 5    | *Not   blank*   |
+
+
+| PurchaseItemTypeLookup | Line | Item sales tax   group  | Tax code    | Name                     |
+|------------------------|------|-------------------------|-------------|--------------------------|
+| Goods                  | 1    | VAT_GOODS               | *Not blank* | Purchase                 |
+| Goods                  | 2    | VAT_GOODS               | *Not blank* | PurchaseCreditNote       |
+| Services               | 3    | VAT_SERV                | *Not blank* | Purchase                 |
+| Services               | 4    | VAT_SERV                | *Not lank*  | PurchaseCreditNote       |
+| Machine and Equipment  | 5    | VAT_M&E                 | *Not blank* | Purchase                 |
+| Machine and Equipment  | 6    | VAT_M&E                 | *Not blank* | PurchaseCreditNote       |
+| Parts machines         | 7    | VAT_PARTS               | *Not blank* | Purchase                 |
+| Parts machines         | 8    | VAT_PARTS               | *Not blank* | PurchaseCreditNote       |
+| Exemptions             | 9    | VAT_EXE                 | *Not bank*  | PurchaseExempt           |
+| Exemptions             | 10   | VAT_EXE                 | *Not blank* | PurchaseExemptCreditNote |
+| Not Applicable         | 11   | *Blank*                 | VAT_ADJ     | *Not blank*              |
+| Not Applicable         | 12   | *Not blank*             | *Not blank* | *Not blank*              |
+| Not Applicable         | 13   | *Blank*                 | *Not blank* | *Not blank*              |
+
+| PurchaseOperationTypeLookup | Line | Sales tax group  | Tax code    | Name                     |
+|-----------------------------|------|------------------|-------------|--------------------------|
+| Domestic                    | 1    | VAT_LOCAL        | *Not blank* | Purchase                 |
+| Domestic                    | 2    | VAT_LOCAL        | *Not blank* | PurchaseCreditNote       |
+| Domestic                    | 3    | VAT_LOCAL        | *Not blank* | PurchaseExempt           |
+| Domestic                    | 4    | VAT_LOCAL        | *Not blank* | PurchaseExemptCreditNote |
+| Imported                    | 5    | VAT_IMPORT       | *Not blank* | Purchase                 |
+| Imported                    | 6    | VAT_IMPORT       | *Not blank* | PurchaseCreditNote       |
+| Imported                    | 7    | VAT_IMPORT       | *Not blank* | PurchaseExempt           |
+| Imported                    | 8    | VAT_IMPORT       | *Not blank* | PurchaseExemptCreditNote |
+| Adjustments                 | 9    | *Blank*          | VAT_ADJ     | PurchaseCreditNote       |
+| Adjustments                 | 10   | *Blank*          | VAT_ADJ     | Purchase                 |
+| Not Applicable              | 11   | *Not blank*      | *Not blank* | *Not blank*              |
+
+
 
 
 
