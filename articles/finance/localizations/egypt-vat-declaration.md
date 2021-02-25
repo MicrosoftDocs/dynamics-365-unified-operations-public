@@ -199,7 +199,7 @@ To generate the VAT return form report in Microsoft Excel format, you must defin
 2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (EG)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
 3. Select the **Category hierarchy**. This category enables the C\commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports. This configuration is optional.
 
-![Declaration form](media/egypt-vat-declaration-setup1.png)
+![Declaration form](media/egypt-vat-declaration-setup2.png)
 
 
 ## Generate a VAT return report
