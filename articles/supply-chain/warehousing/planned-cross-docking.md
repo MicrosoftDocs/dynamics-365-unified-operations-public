@@ -45,7 +45,7 @@ At the time of inbound order receiving, the cross-docking setup automatically id
 Before you can use advanced planned cross-docking, the feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
-- **Feature name:** *Planned cross docking*
+- **Feature name:** *Planned cross docking* following *Cross docking templates with location directives*
 
 ## Setup
 
@@ -92,6 +92,10 @@ Planned cross-docking is implemented as a load posting method. After you turn on
     - **Revalidate on supply receipt:** *No*
 
         This option defines whether the supply should be revalidated during receipt. If this option is set to *Yes*, both the maximum time window and the expiration days range are checked.
+
+    - **Directive code>** Leave this field blank
+        
+        This option enables the system to use location directives to help determine the best location to move cross-docking inventory to. You can set it up by assigning a directive code to each relevant cross-docking template. Each directive code identifies a unique location directive.
 
     - **Validate time window:** *Yes*
 
