@@ -109,7 +109,7 @@ Complete the following steps to setup the different lookups used in the generati
 
 The tables below represent an example of suggested configuration for the described classifications. 
 
-|SalesItemTypeLookup    | Line | Sales tax   group  | Item sales tax   group  | Tax code (Code) | Name                  |
+| SalesItemTypeLookup   | Line | Sales tax   group  | Item sales tax   group  | Tax code (Code) | Name                  |
 |-----------------------|------|--------------------|-------------------------|-----------------|-----------------------|
 | Domestic              | 1    | VAT_LOCAL          | *Not blank*             | *Not blank*     | Sales                 |
 | Domestic              | 2    | VAT_LOCAL          | *Not blank*             | *Not blank*     | SalesCreditNote       |
@@ -129,6 +129,19 @@ The tables below represent an example of suggested configuration for the describ
 | Not Applicable        | 16   | *Not blank*        | *Not blank*             | *Not blank*     | *Not blank*           |
 
 
+| SalesOperationTypeLooup | Line | Item sales tax   group  | Tax code    | Name                  |
+|-------------------------|------|-------------------------|-------------|-----------------------|
+| Goods                   | 1    | VAT_GOODS               | *Not blank* | Sales                 |
+| Goods                   | 2    | VAT_GOODS               | *Not blank* | SalesCreditNote       |
+| Goods                   | 3    | VAT_GOODS               | *Not blank* | SaleExempt            |
+| Goods                   | 4    | VAT_GOODS               | *Not blank* | SalesExemptCreditNote |
+| Services                | 5    | VAT_SERV                | *Not blank* | Sales                 |
+| Services                | 6    | VAT_SERV                | *Not blank* | SalesCreditNote       |
+| Services                | 7    | VAT_SERV                | *Not blank* | SaleExempt            |
+| Services                | 8    | VAT_SERV                | *Not blank* | SalesExemptCreditNote |
+| Adjustments             | 9    | *Blank*                 | VAT_ADJ     | Sales                 |
+| Adjustments             | 10   | *Blank*                 | VAT_ADJ     | Purchase              |
+| Not applicable          | 11   | *Not blank*             | *Not blank* | *Not blank*           |
 
 
 
