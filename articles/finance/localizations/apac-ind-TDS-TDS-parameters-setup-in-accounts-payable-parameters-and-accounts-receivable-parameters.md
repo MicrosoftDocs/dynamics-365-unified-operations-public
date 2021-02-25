@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: TDS parameters setup in accounts payable parameters and accounts receivable parameters
+title: TDS parameters setup in Accounts payable parameters and accounts receivable parameters
 description: This topic lists the steps for setting up parameters in the Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
 author: kailiang
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 ---
 
-# TDS parameters setup in accounts payable parameters and accounts receivable parameters
+# TDS parameters setup in Accounts payable parameters and accounts receivable parameters
 
 [!include [banner](../includes/banner.md)]
 
