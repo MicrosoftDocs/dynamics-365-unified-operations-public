@@ -113,5 +113,30 @@ To enable workers to make this change, you can create a menu item for the wareho
 
 You can set other fields on the page as you require.
 
+## The Dock management profile of a Location profile is not preventing inventory types from being mixed.
+
+### Issue description
+
+You are using **Shipment consolidation policies**. You have set up a **Dock management profile** for a **Location profile** but when work is created the inventory types are mixed at the final location.
+
+### Issue resolution
+
+The **Dock management profiles** require the work to be split upfront; in other words, the Dock management profile expects that a work header won't have multiple put locations. 
+
+In order for the **Dock management profile** to effectively manage the mixing of inventory a work header break must be set up.
+
+In this example our **Dock management profile** is configured such that **Inventory types that should not be mixed** is set to *Shipment ID*, and we'll set up a **Work header break** for it:
+
+1. Click on **Warehouse management \> Setup \> Work \> Work templates**.
+2. Select the **Work order type** to edit; for example: **Purchase orders**.
+3. Select the **Work template** to edit. 
+4. On the top ribbon, click on **Edit query**. 
+5. Click on the **Sorting** tab, and add **Table**: *Temporary work transactions*, **Derived table**: *Temporary work transactions*, **Field**: *Shipment ID*. 
+6. Click Ok. 
+7. On the **Work templates** page, click on **Work header breaks**.
+8. Enable the box associated with the **Field name** *Shipment ID*.
+9. Save.
+
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
