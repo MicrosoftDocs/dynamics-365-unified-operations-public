@@ -47,3 +47,13 @@ What happens if store managers leave the company?
 How to clear the graph API token stored in the session storage?
 
 User who logs in into POS with AAD account to view the tasks, should logout  from POS or close the application to invalidate the session storage. 
+
+## Additional resources
+
+[Dynamics 365 Commerce and Microsoft Teams integration ](commerce-teams-integration.md)
+
+[Provision Microsoft Teams from Dynamics 365 Commerce](provision-teams-from-commerce.md)
+
+[Synchronize task management between Microsoft Teams and POS](synchronize-tasks-teams-pos.md)
+
+[Configure Microsoft Teams integration](configure-teams-integration.md)
