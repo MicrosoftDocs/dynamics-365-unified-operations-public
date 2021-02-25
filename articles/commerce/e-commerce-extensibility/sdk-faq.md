@@ -163,10 +163,12 @@ TSLint Rule	| ESLint Rule
 // tslint:disable-next-line:cyclomatic-complexity	| // eslint-disable-next-line complexity
 // tslint:disable-next-line:no-empty	| // eslint-disable-next-line no-empty
 
-#### Disabling Linting For a Module
+#### Disable linting
 
-If you wish to disable linting check for the entire module build (build-package) you may use the –disable-linter flag to skip the lint check step. (e.g yarn build-package –disable-linter).
-
+If you wish to disable linting altogether during build time, it can be accomplished with the "--disable-linter" argument as shown below in the package.json build command:
+```json 
+        "build": "yarn msdyn365b build --disable-linter",
+```
 
 ### After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error.
 
