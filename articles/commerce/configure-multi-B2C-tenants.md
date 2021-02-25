@@ -61,10 +61,6 @@ The following illustration shows multiple B2C tenants in a Commerce environment.
 
 If you decide that your business requires distinct B2C tenants per channel in the same Commerce environment, complete the procedures in the following sections to request this feature.
 
-## Request that B2C per channel be enabled in your environment
-
-Currently, if you want distinct B2C tenants per channel to be available in the same Commerce environment, you must submit a request to Dynamics 365 Commerce. For more information, see [Get support for Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md), or discuss this issue with your Commerce solutions contact.
-
 ## Configure B2C tenants in your environment
 
 To configure B2C tenants in your environment, complete the relevant procedures in this section.
