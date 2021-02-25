@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: VAT declaration for Egypt
@@ -72,8 +73,8 @@ To generate the VAT return form and related reports in a Egypt legal entity, you
 
 After you've finished downloading the ER configurations from Lifecycle Services (LCS) or the global repository, complete the following steps.
 
-1. Go to the Electronic reporting workspace. Select the Reporting configurations tile.
-1. On the Configurations page, on the Action Pane, select Exchange > Load from XML file.
+1. Go to the **Electronic reporting** workspace. Select the Reporting configurations tile.
+1. On the **Configurations** page, on the Action Pane, select **Exchange > Load from XML file**.
 1. Upload all the files in the order in which they are listed in the previous bullets. After all the configurations are uploaded, the configuration tree should be present in Finance.
 
 
