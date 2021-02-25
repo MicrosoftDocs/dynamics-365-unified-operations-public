@@ -70,3 +70,13 @@ To link POS and Teams applications on tasks management, you need to link the pla
 Overview on how customers can still link existing teams and Dynamics Retails Stores in HQ. 
 
 Refer to [Add a link here to How-to-do-docs]
+
+## Additional resources
+
+[Dynamics 365 Commerce and Microsoft Teams integration ](commerce-teams-integration.md)
+
+[Provision Microsoft Teams from Dynamics 365 Commerce](provision-teams-from-commerce.md)
+
+[Configure Microsoft Teams integration](configure-teams-integration.md)
+
+[Manage user roles in Microsoft Teams](manage-user-roles-teams.md)
