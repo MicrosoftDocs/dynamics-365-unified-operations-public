@@ -43,8 +43,8 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/dynamics365/release-plans/) for official release dates for each feature.
 
-- [1099 statements updated for 2020 tax law](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/1099-statements-updated-2020-tax-law)
-- [Improvements in unit price and cost price handling in stock transfer orders for India](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-finance/improvements-unit-price-cost-price-handling-stock-transfer-orders-india)
+- [Vendor collaboration bank changes](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes)
+- [Public sector - Restrict ability to edit accounting distribution on vendor invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/restrict-ability-edit-accounting-distribution-vendor-invoices)
 
 ## Additional resources
 
