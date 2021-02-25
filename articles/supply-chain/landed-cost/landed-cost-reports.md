@@ -2,7 +2,7 @@
 # required metadata
 
 title: Landed cost reports
-description: This topic describes how to find and use the various types of reports available for the Landed cost module.
+description: This topic describes how to find and use the various types of reports that are available for the Landed cost module.
 author: RichardLuan
 manager: tfehr
 ms.date: 02/01/2021
@@ -33,84 +33,91 @@ ms.dyn365.ops.version: Release 10.0.17
 
 ## Outstanding invoices
 
-The outstanding invoices report contains a list of all outstanding invoices of the various cost levels that are associated to every voyage. Once an overhead cost has been invoiced, it is removed from the outstanding invoices report. The outstanding invoices report is used to reconcile the voyage and voyage costs along with the ledger transactions list on a regular basis.
+The outstanding invoices report contains a list of all outstanding invoices of the various cost levels that are associated with every voyage. It's used to reconcile the voyage and voyage costs together with the ledger transactions list on a regular basis. After an overhead cost has been invoiced, it's removed from the report.
 
-To generate an outstanding invoices report:
+To generate an outstanding invoices report, follow these steps.
 
 1. Go to **Landed cost \> Reports \> Tracking \> Outstanding invoices**.
-1. The **Outstanding invoices** dialog box opens.
-1. Set an **As at date**. Any invoice that was outstanding as of this date or earlier will be included in the output.
-1. Select one of the following option under **Show**:
-    - **Cost not invoiced** includes costs for invoiced shipments with an estimated cost value, but no actual cost.
-    - **Stock not invoiced** includes costs that have been invoiced, but where the purchase order is yet to be received.
-    - **All not invoiced** includes the results of both **cost not invoiced** and **stock not invoiced**.
-1. Set **Include new costs** to *Yes* to include costs that don't yet have an actual cost and that also haven't had inventory received. If set to *No*, only those costs that have been invoiced will be included in the report.
-1. In the **View** section, enable each type of detail that you would like to include in the report.
-1. As with other types of reports in Supply Chain Management, use the **Destination** FastTab to choose the output format of the report.
-1. As with other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records included in the report.
+1. In the **Outstanding invoices** dialog box, in the **As at date** field, specify a date. Any invoice that was outstanding on or before that date will be included in the output.
+1. Under **Show**, select one of the following options:
+
+    - **Cost not invoiced** – Include costs for invoiced shipments that have an estimated cost value but no actual cost.
+    - **Stock not invoiced** – Include costs that have been invoiced, but that the purchase order hasn't yet been received for.
+    - **All not invoiced** – Include the results of both the **Cost not invoiced** option and the **Stock not invoiced** option.
+
+1. Set the **Include new costs** option to *Yes* to include costs that don't yet have an actual cost, and that inventory hasn't been received for. If you set it to *No*, the report will include only costs that have been invoiced.
+1. In the **View** section, enable each type of detail that you want to include on the report.
+1. As you do for other types of reports in Microsoft Dynamics 365 Supply Chain Management, use the **Destination** FastTab to select the output format of the report.
+1. As you do for other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records that will be included on the report.
 1. Select **OK** to generate the report.
 
 ## Activity/provider analysis reports
 
-The Activity/provider analysis reports enable you to review how accurate your time estimates were for each provider.
+The activity/provider analysis reports let you review the accuracy of your time estimates for each provider.
 
-To generate an activity/provider analysis report:
+To generate an activity/provider analysis report, follow these steps.
 
-1. Depending on which type of report you'd like to create, choose one of the following from the navigator:
-    - **Landed cost \> Reports \> Analysis of activity/provider by activity** - Lets you analyze time estimates grouped by activity.
-    - **Landed cost \> Reports \> Analysis of activity/provider by provider** - Lets you analyze time estimates grouped by provider.
-1. Depending on which option you chose, either the **Analysis of activity/provider by activity** or **Analysis of activity/provider by provider** dialog box opens. Each of these provides the same options from now on.
-1. As with other types of reports in Supply Chain Management, use the **Destination** FastTab to choose the output format of the report.
-1. As with other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records included in the report.
+1. Depending on the type of report that you want to create, follow one of these steps:
+
+    - Go to **Landed cost \> Reports \> Analysis of activity/provider by activity**. In this case, the time estimates will be grouped by activity.
+    - Go to **Landed cost \> Reports \> Analysis of activity/provider by provider**. In this case, the time estimates will be grouped by provider.
+
+    Either the **Analysis of activity/provider by activity** dialog box or the **Analysis of activity/provider by provider** dialog box appears. Both dialog boxes provide the same options.
+
+1. As you do for other types of reports in Supply Chain Management, use the **Destination** FastTab to select the output format of the report.
+1. As you do for other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records that will be included on the report.
 1. Select **OK** to generate the report.
 
 ## Voyage costing reports
 
-The voyage costing reports display the cost of the items and the import costs per folio, shipping container, or voyage, depending on the options you choose when you generate the report. Each voyage costing report lets you see the estimated versus the actual cost of a voyage and can be broken down by the several identifying factors.
+The voyage costing reports show the cost of the items and the import costs per folio, shipping container, or voyage, depending on the options that you select when you generate the report. Each voyage costing report lets you view the estimated cost of a voyage versus the actual cost, and it can be broken down by the several identifying factors.
 
-To generate a voyage costing report:
+To generate a voyage costing report, follow these steps.
 
-1. Depending on which type of voyage costing report you'd like to create, choose one of the following from the navigator:
-    - **Landed cost \> Reports \> Costing \> Voyage costing by individual cost** - The individual cost option will display import costs per cost area per cost type code.
-    - **Landed cost \> Reports \> Costing \> Voyage costing by reporting category** - The import cost will be broken down into the various reporting categories. Cost types are grouped by reporting categories.
-1. Depending on which option you chose, either the **Voyage costing by individual cost** or **Voyage costing by reporting category** dialog box opens. Each of these is similar except as noted in the rest of this procedure
-1. If you opened the **Voyage costing by reporting category**, then choose one of the following values from the **Cost** drop-down list:
-    - **Cost value** : This is the value that is either calculated using auto cost or manually created on the cost area.
-    - **Estimated** : Once the goods have been received, the estimated cost is populated.
-    - **Actual** : After the order has been invoiced, the actual cost is populated with the cost on the invoice.
-    - **Best**: The system will use the most accurate of the options available here (recommended).
-1. Set **Per item** to *Yes* to show the cost of each individual item. Select *No* to show costs per voyage.
-1. In the **View** section, choose the categories by which to break down the cost.
-1. In the **Dimensions** section, choose which dimensions to include in the report.
-1. As with other types of reports in Supply Chain Management, use the **Destination** FastTab to choose the output format of the report.
-1. As with other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records included in the report.
+1. Depending on the type of report that you want to create, follow one of these steps:
+
+    - Go to **Landed cost \> Reports \> Costing \> Voyage costing by individual cost**. In this case, the individual cost option will show import costs per cost area per cost type code.
+    - Go to **Landed cost \> Reports \> Costing \> Voyage costing by reporting category**. In this case, the import cost will be broken down into the various reporting categories. Cost types are grouped by reporting categories.
+
+    Either the **Voyage costing by individual cost** dialog box or the **Voyage costing by reporting category** dialog box appears. These dialog boxes are similar. Any differences are noted in the rest of this procedure.
+
+1. If you opened the **Voyage costing by reporting category** dialog box, in the **Cost** field, select one of the following values:
+
+    - **Cost value** – The value is either calculated by using auto costs or manually created in the cost area.
+    - **Estimated** – After the goods have been received, the estimated cost is set.
+    - **Actual** – After the order has been invoiced, the actual cost is set to the cost on the invoice.
+    - **Best** – The system will use whichever of the previous three options is most accurate. (We recommend that you select this option.)
+
+1. Set the **Per item** option to *Yes* to show the cost of each item. Set it to *No* to show costs per voyage.
+1. In the **View** section, select the categories to break down the cost by.
+1. In the **Dimensions** section, select the dimensions to include on the report.
+1. As you do for other types of reports in Supply Chain Management, use the **Destination** FastTab to select the output format of the report.
+1. As you do for other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records that will be included on the report.
 1. Select **OK** to generate the report.
 
 ## Shipping container receipts list
 
-The shipping container receipts list report contains all unreceived quantities due on or before an expected date. The shipping containers receipts list can be used by the warehouse staff to identify the expected goods on a shipping container, and can be used to manually validate goods as they are received on a shipping container.
+The shipping container receipts list contains all unreceived quantities that are due on or before an expected date. Warehouse staff can use this report to identify the expected goods on a shipping container. It can also be used to manually validate goods as they are received on a shipping container.
 
-To generate a shipping container receipts list:
+To generate a shipping container receipts list, follow these steps.
 
 1. Go to **Landed cost \> Reports \> Tracking \> Shipping container receipts list**.
-1. The **Shipping container receipts list** dialog box opens.
-1. Set an **Expected date**. Any quantities unreceived as of this date or earlier will be included in the output.
-1. In the **Dimensions** section, choose which dimensions to include in the report.
-1. As with other types of reports in Supply Chain Management, use the **Destination** FastTab to choose the output format of the report.
-1. As with other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records included in the report.
+1. In the **Shipping container receipts list** dialog box, in the **Expected date** field, specify a date. Any quantities that were unreceived on or before that date will be included in the output.
+1. In the **Dimensions** section, select the dimensions to include on the report.
+1. As you do for other types of reports in Supply Chain Management, use the **Destination** FastTab to select the output format of the report.
+1. As you do for other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records that will be included on the report.
 1. Select **OK** to generate the report.
 
 ## Expected delivery report
 
-The expected delivery report contains basic information regarding the voyage, shipping container, folio, items, and expected due date of delivery.
+The expected delivery report contains basic information about the voyage, shipping container, folio, items, and expected date of delivery.
 
-To generate an expected delivery report:
+To generate an expected delivery report, follow these steps.
 
 1. Go to **Landed cost \> Reports \> Tracking \> Expected Delivery**.
-1. The **Expected delivery** dialog box opens.
-1. Select the **Expected date** of delivery of the goods to the final destination warehouse. Any voyage line that has an expected date of this date or earlier, and that has not yet been received, will be included in the output.
-1. Optionally, select a **Vendor account** to only include deliveries from a specific vendor.
-1. In the **Dimensions** section, choose which dimensions to include in the report.
-1. As with other types of reports in Supply Chain Management, use the **Destination** FastTab to choose the output format of the report.
-1. As with other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records included in the report.
+1. In the **Expected delivery** dialog box, in the **Expected date** field, select the date when delivery of the goods to the final destination warehouse is expected. Any voyage line that has an expected date on or before that date, and that hasn't yet been received, will be included in the output.
+1. Optional: In the **Vendor account** field, select a vendor account to include only deliveries from a specific vendor.
+1. In the **Dimensions** section, select the dimensions to include on the report.
+1. As you do for other types of reports in Supply Chain Management, use the **Destination** FastTab to select the output format of the report.
+1. As you do for other types of reports in Supply Chain Management, use the **Records to include** FastTab to further limit the records that will be included on the report.
 1. Select **OK** to generate the report.
