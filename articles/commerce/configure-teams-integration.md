@@ -58,3 +58,13 @@ Should you decide to stop using Microsoft Teams integration with Dynamics 365 Co
 
 > [!NOTE]
 > Once you opt-out of Microsoft Teams integration with Dynamics 365 Commerce, POS will not show tasks published from Teams application anymore. 
+
+## Additional resources
+
+[Dynamics 365 Commerce and Microsoft Teams integration ](commerce-teams-integration.md)
+
+[Provision Microsoft Teams from Dynamics 365 Commerce](provision-teams-from-commerce.md)
+
+[Synchronize task management between Microsoft Teams and POS](synchronize-tasks-teams-pos.md)
+
+[Manage user roles in Microsoft Teams](manage-user-roles-teams.md)
