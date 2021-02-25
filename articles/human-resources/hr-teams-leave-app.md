@@ -5,7 +5,7 @@ title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/28/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -75,25 +75,17 @@ After the app installs, a welcome message appears, letting you know the types of
 
 You can ask the bot to:
 
-- Show time-off balance information for each leave type you're enrolled in.
-
-   ![Human Resources Teams leave app show balances](./media/hr-teams-leave-app-bot-balances.png)
- 
-- Show additional details about a specific leave type.
-
-   ![Human Resources Teams leave app show details](./media/hr-teams-leave-app-bot-details.png)
-
 - Start a leave request for you.
 
-   ![Human Resources Teams leave app request leave](./media/hr-teams-leave-app-bot-request.png)
- 
-After you start a leave request, you can adjust the days right within the card.
+  ![Start a leave request in Teams chat](./media/hr-teams-leave-app-initiate.png)
 
-![Human Resources Teams leave app edit request](./media/hr-teams-leave-app-bot-edit.png)
- 
-When you're done entering information, select **Submit** to submit it for approval. You can also select **Save as draft** to come back to it later.
+- The chat bot will populate a leave request for you. Select **Request time off** and edit the details for your request.
 
-![Human Resources Teams leave app submit request](./media/hr-teams-leave-app-bot-submit.png)
+  ![Edit leave request details](./media/hr-teams-leave-app-details.png)
+
+- When you're done editing your leave request details, select **Submit** to submit it for approval.
+
+  ![Submit leave request](./media/hr-teams-leave-app-submit.png)
 
 ## Manage your leave in Teams
 
@@ -169,13 +161,12 @@ If you're a manager with direct reports, you can view your team's approved and p
 
 1. In the Human Resources app in Teams, select **Time off**.
 
-2. Select **Team calendar**.
+2. Select **Team calendar**. The calendar displays your direct reports' approved and pending time off.
 
    ![View calendar in Human Resources Teams app](./media/hr-teams-leave-app-view-calendar.png)
 
-The calendar displays your direct reports' approved and pending time off.
-
-![Time off calendar in Human Resources Teams app](./media/hr-teams-leave-app-calendar.png)
+   > [!NOTE]
+   > If you can't see the team calendar, ask your admin to enable it. For more information, see [Install and setup](hr-admin-teams-leave-app.md#install-and-setup).
 
 ## Supported languages
 
@@ -220,7 +211,6 @@ The Human Resources app in Teams has the following accessibility issues that we'
 | On the **Time off** tab, voiceover announces a button action while reading the header for the time-off grid. | The header and elements within the grid are grouped by year, and they're collapsible. Voiceover interprets this as an actionable item, but it isn't. |
 | On the **Time off** tab, there's an extra swipe gesture when navigating to **Reason code** in a new request. | There is no hidden control that the swipe navigation is trying to get to. |
 | On the **Time off** tab, if you swipe while the calendar is open, you end up outside the control instead of at the top in a new request or while editing a request. | When you reach **Go to today**, consider that to be the end of the control and swipe in the reverse direction to get back to the top. |
-| Voiceover doesn't read the labels for dates. | The dates encountered in pairs are always **Start date** and **End date**. |
 | On the **Chat** tab, the focus jumps back to the top when you enter a date while using the assistive tool or keyboard navigation. | Tab until you reach your input area again. |
 
 ## Privacy notice

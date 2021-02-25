@@ -5,7 +5,7 @@ title: Benefits management workspace
 description: This topic describes the Benefits management workspace in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
-ms.date: 02/23/2021
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-02-23
+ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -39,7 +39,7 @@ ms.dyn365.ops.version: Human Resources
 This topic describes the **Benefits management** workspace in Dynamics 365 Human Resources.
 
 > [!NOTE]
-> To view the **Benefits management** workspace, you must first enable the **(Preview) Benefits management workspace** feature in Feature management. For more information about enabling preview features, see [Manage features](../hr-admin-manage-features.md).
+> To view the **Benefits management** workspace, you must first enable the **(Preview) Benefits management workspace** feature in Feature management. For more information about enabling preview features, see [Manage features](../hr-admin-manage-features.md).<br><br>![Enable Benefits management workspace](./media/hr-benefits-management-workspace-enable.png)
 
 The **Benefits management** workspace gives you a quick view of benefits items that require your attention. On this page, you can see:
 
@@ -55,9 +55,22 @@ The **Benefits management** workspace gives you a quick view of benefits items t
 
 ## View action items
 
-You can view your action items by either selecting a tile or a tab. If you select a tile, you go to the page for that area. If you select a tab, you can view and select workers right on the workspace page.
+You can view your action items by either selecting a tile or a tab. If you select a tab, you can view and select workers right on the workspace page.
 
 ![Action items](./media/hr-benefits-management-workspace-action-items.png)
+
+If you select a tile, you go to the page for that area. For example, selecting any of these tiles displays the **Worker benefits plans** page, filtered for employees you need to take action on:
+
+- **Unconfirmed selections**
+- **Open enrollments with no checked out plans**
+- **Enrolled in benefits**
+- **New hire not enrolled**
+
+![Worker benefit plans](./media/hr-benefits-management-workspace-plans.png)
+
+Selecting the **Active life events** or **Future life events** tiles takes you to a list of active or future life events.
+
+![Life events](./media/hr-benefits-management-workspace-life-events.png)
 
 ## Processing
 
@@ -92,4 +105,3 @@ To view more information and actions you can take, select **Links**.
 ## See also
 
 [Benefits management overview](hr-benefits-management-overview.md)
-
