@@ -93,7 +93,15 @@ Use the following to set up Microsoft Dataverse:
     - Go to the Flow page.
     - Make sure the connection *Dataverse (legacy)* exists (create it if it doesn't).
     - Import the `InventoryVisibilityConfigurationUpgradeTrigger.zip` file. Once imported, the trigger will be shown under **My flows**.
-    - Update the environment variables in the flow.
+    - There are four variables shown on the below need to be initialized based on the information of environment. 
+
+        - Azure Tenant Id
+        - Azure Application Client Id
+        - Azure Application Client Secret
+        - Inventory Visibility Endpoint, see details [here](#setup-inventory-visibility-integration)
+        
+        ![Configuration Trigger](media/configuration-trigger.png "Configuration Trigger")
+
     - Select **Turn on**.
 
 ### <a name="install-add-in"></a>Install the add-in
