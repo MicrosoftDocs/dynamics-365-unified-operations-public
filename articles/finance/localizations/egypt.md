@@ -39,6 +39,7 @@ This topic includes information and links to documentation resources for Egypt.
 - [Configure registration numbers](emea-egy-reg-numbers.md)
 - [Configure invoice layout for Egypt](emea-egy-invoice-layout.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
+- [VAT declaration for Egypt](emea-egy-vat-declaration.md)
 
 ## Additional resources
 
