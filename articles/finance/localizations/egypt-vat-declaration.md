@@ -54,8 +54,7 @@ In the **Electronic reporting** workspace, import the following Electronic Repor
 
 - VAT declaration Excel (EG)
 
-> [!NOTE]
-> The formats above are based on **Tax declaration model** and use **Tax declaration model mapping**. These additional configurations will be automatically imported.
+> **Note**: The formats above are based on **Tax declaration model** and use **Tax declaration model mapping**. These additional configurations will be automatically imported.
 
 For more information about how to import Electronic Reporting configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -77,5 +76,7 @@ After you've finished downloading the ER configurations from Lifecycle Services 
 1. On the **Configurations** page, on the Action Pane, select **Exchange > Load from XML file**.
 1. Upload all the files in the order in which they are listed in the previous bullets. After all the configurations are uploaded, the configuration tree should be present in Finance.
 
+## Set up application-specific parameters
+The Sales and Purchase book reports include a set of columns that correspond to specific transactions classifications as **type of operation**, **products** and **documents** that are specific for Egypt. Instead of including these new classifications as new entry data when the transactions are posted, these classifications will be determined based on different Lookups we have introduced in **Configurations > Set up application-specific parameters > Setup** to attend the requirements of VAT reports for Egypt.
 
 
