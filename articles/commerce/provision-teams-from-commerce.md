@@ -89,4 +89,14 @@ You will see organization hierarch on the publish dialog similar to below pictur
 
 ![Dynamics 365 Commerce - Provisioning teams from Dynamics 365 Commerce](media/Microsoft-teams-verify-org-hierarchy.png)
 
+## Additional resources
+
+[Dynamics 365 Commerce and Microsoft Teams integration ](commerce-teams-integration.md)
+
+[Synchronize task management between Microsoft Teams and POS](synchronize-tasks-teams-pos.md)
+
+[Configure Microsoft Teams integration](configure-teams-integration.md)
+
+[Manage user roles in Microsoft Teams](manage-user-roles-teams.md)
+
 
