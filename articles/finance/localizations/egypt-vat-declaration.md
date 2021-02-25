@@ -109,7 +109,9 @@ Complete the following steps to setup the different lookups used in the generati
 
 The tables below represent an example of suggested configuration for the described classifications. 
 
-| SalesItemTypeLookup   | Line | Sales tax   group  | Item sales tax   group  | Tax code (Code) | Name                  |
+**SalesItemTypeLookup**
+
+|Lookup result          | Line | Sales tax   group  | Item sales tax   group  | Tax code (Code) | Name                  |
 |-----------------------|------|--------------------|-------------------------|-----------------|-----------------------|
 | Domestic              | 1    | VAT_LOCAL          | *Not blank*             | *Not blank*     | Sales                 |
 | Domestic              | 2    | VAT_LOCAL          | *Not blank*             | *Not blank*     | SalesCreditNote       |
@@ -128,31 +130,25 @@ The tables below represent an example of suggested configuration for the describ
 | Not Applicable        | 15   | *Blank*            | *Blank*                 | VAT_ADJ         | *Not blank*           |
 | Not Applicable        | 16   | *Not blank*        | *Not blank*             | *Not blank*     | *Not blank*           |
 
+ **SalesOperationTypeLookup**
 
-| SalesOperationTypeLookup | Line | Item sales tax   group  | Tax code    | Name                  |
-|--------------------------|------|-------------------------|-------------|-----------------------|
-| Goods                    | 1    | VAT_GOODS               | *Not blank* | Sales                 |
-| Goods                    | 2    | VAT_GOODS               | *Not blank* | SalesCreditNote       |
-| Goods                    | 3    | VAT_GOODS               | *Not blank* | SaleExempt            |
-| Goods                    | 4    | VAT_GOODS               | *Not blank* | SalesExemptCreditNote |
-| Services                 | 5    | VAT_SERV                | *Not blank* | Sales                 |
-| Services                 | 6    | VAT_SERV                | *Not blank* | SalesCreditNote       |
-| Services                 | 7    | VAT_SERV                | *Not blank* | SaleExempt            |
-| Services                 | 8    | VAT_SERV                | *Not blank* | SalesExemptCreditNote |
-| Adjustments              | 9    | *Blank*                 | VAT_ADJ     | Sales                 |
-| Adjustments              | 10   | *Blank*                 | VAT_ADJ     | Purchase              |
-| Not applicable           | 11   | *Not blank*             | *Not blank* | *Not blank*           |
+| Lookup result  | Line | Item sales tax   group  | Tax code    | Name                  |
+|----------------|------|-------------------------|-------------|-----------------------|
+| Goods          | 1    | VAT_GOODS               | *Not blank* | Sales                 |
+| Goods          | 2    | VAT_GOODS               | *Not blank* | SalesCreditNote       |
+| Goods          | 3    | VAT_GOODS               | *Not blank* | SaleExempt            |
+| Goods          | 4    | VAT_GOODS               | *Not blank* | SalesExemptCreditNote |
+| Services       | 5    | VAT_SERV                | *Not blank* | Sales                 |
+| Services       | 6    | VAT_SERV                | *Not blank* | SalesCreditNote       |
+| Services       | 7    | VAT_SERV                | *Not blank* | SaleExempt            |
+| Services       | 8    | VAT_SERV                | *Not blank* | SalesExemptCreditNote |
+| Adjustments    | 9    | *Blank*                 | VAT_ADJ     | Sales                 |
+| Adjustments    | 10   | *Blank*                 | VAT_ADJ     | Purchase              |
+| Not applicable | 11   | *Not blank*             | *Not blank* | *Not blank*           |
 
-| VATRateTypeLookup | Line | Tax code (Code) |
-|-------------------|------|-----------------|
-| GeneralGoods      | 1    | VAT_ST          |
-| GeneralGoods      | 2    | VAT_RD          |
-| FirstTable        | 3    | *Not   blank*   |
-| SecondTable       | 4    | *Not   blank*   |
-| Not Applicable    | 5    | *Not   blank*   |
+**PurchaseItemTypeLookup**
 
-
-| PurchaseItemTypeLookup | Line | Item sales tax   group  | Tax code    | Name                     |
+| Lookup result          | Line | Item sales tax   group  | Tax code    | Name                     |
 |------------------------|------|-------------------------|-------------|--------------------------|
 | Goods                  | 1    | VAT_GOODS               | *Not blank* | Purchase                 |
 | Goods                  | 2    | VAT_GOODS               | *Not blank* | PurchaseCreditNote       |
@@ -168,23 +164,60 @@ The tables below represent an example of suggested configuration for the describ
 | Not Applicable         | 12   | *Not blank*             | *Not blank* | *Not blank*              |
 | Not Applicable         | 13   | *Blank*                 | *Not blank* | *Not blank*              |
 
-| PurchaseOperationTypeLookup | Line | Sales tax group  | Tax code    | Name                     |
-|-----------------------------|------|------------------|-------------|--------------------------|
-| Domestic                    | 1    | VAT_LOCAL        | *Not blank* | Purchase                 |
-| Domestic                    | 2    | VAT_LOCAL        | *Not blank* | PurchaseCreditNote       |
-| Domestic                    | 3    | VAT_LOCAL        | *Not blank* | PurchaseExempt           |
-| Domestic                    | 4    | VAT_LOCAL        | *Not blank* | PurchaseExemptCreditNote |
-| Imported                    | 5    | VAT_IMPORT       | *Not blank* | Purchase                 |
-| Imported                    | 6    | VAT_IMPORT       | *Not blank* | PurchaseCreditNote       |
-| Imported                    | 7    | VAT_IMPORT       | *Not blank* | PurchaseExempt           |
-| Imported                    | 8    | VAT_IMPORT       | *Not blank* | PurchaseExemptCreditNote |
-| Adjustments                 | 9    | *Blank*          | VAT_ADJ     | PurchaseCreditNote       |
-| Adjustments                 | 10   | *Blank*          | VAT_ADJ     | Purchase                 |
-| Not Applicable              | 11   | *Not blank*      | *Not blank* | *Not blank*              |
+**PurchaseOperationTypeLookup**
+
+| Lookup result  | Line | Sales tax group  | Tax code    | Name                     |
+|----------------|------|------------------|-------------|--------------------------|
+| Domestic       | 1    | VAT_LOCAL        | *Not blank* | Purchase                 |
+| Domestic       | 2    | VAT_LOCAL        | *Not blank* | PurchaseCreditNote       |
+| Domestic       | 3    | VAT_LOCAL        | *Not blank* | PurchaseExempt           |
+| Domestic       | 4    | VAT_LOCAL        | *Not blank* | PurchaseExemptCreditNote |
+| Imported       | 5    | VAT_IMPORT       | *Not blank* | Purchase                 |
+| Imported       | 6    | VAT_IMPORT       | *Not blank* | PurchaseCreditNote       |
+| Imported       | 7    | VAT_IMPORT       | *Not blank* | PurchaseExempt           |
+| Imported       | 8    | VAT_IMPORT       | *Not blank* | PurchaseExemptCreditNote |
+| Adjustments    | 9    | *Blank*          | VAT_ADJ     | PurchaseCreditNote       |
+| Adjustments    | 10   | *Blank*          | VAT_ADJ     | Purchase                 |
+| Not Applicable | 11   | *Not blank*      | *Not blank* | *Not blank*              |
+
+**VATRateTypeLookup**
+
+| Lookup result  | Line | Tax code (Code) |
+|----------------|------|-----------------|
+| GeneralGoods   | 1    | VAT_ST          |
+| GeneralGoods   | 2    | VAT_RD          |
+| FirstTable     | 3    | *Not blank*     |
+| SecondTable    | 4    | *Not blank*     |
+| Not Applicable | 5    | *Not blank*     |
 
 
+## Set up General ledger parameters
+
+To generate the VAT return form report in Microsoft Excel format, you must define an ER format on the **General ledger parameters** page.
+
+1. Go to **Tax** > **Setup** > **General ledger parameters**.
+2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (EG)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
+3. Select the **Category hierarchy**. This category enables the C\commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports. This configuration is optional.
+
+## Generate a VAT return report
+The process of preparing and submitting a VAT return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
+
+Complete the following steps to generate the tax declaration report.
+
+1. Go to **Tax > Declarations** > **Sales tax** > **Report sales tax for settlement period** or **Settle and post sales tax**.
+2. Select the **Settlement period**.
+3. Select the from date.
+4. Select the sales tax payment version.
+5. Select **OK** to confirm the above steps. 
+6. Enter the amount of credit from the previous period, if applicable, or leave the amount as zero.
+7. In the **Generate details** field, select one of the following available options. The VAT return form is always generated in this process.
+   - **All** - Generate sales and purchase tax transactions details reports.
+   - **None** - Generate only the VAT declaration return form.
+   - **Purchase transactions**
+   - **Sales transactions**
+  
 
 
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
 
