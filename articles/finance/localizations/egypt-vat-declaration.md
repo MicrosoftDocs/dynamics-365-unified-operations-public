@@ -109,24 +109,24 @@ Complete the following steps to setup the different lookups used in the generati
 
 The tables below represent an example of suggested configuration for the described classifications. 
 
-| SalesItemTypeLookup 	| Line 	| Sales tax   group  	| Item sales tax   group  	| Tax code (Code) 	| Name 	|
-|-	|-	|-	|-	|-	|-	|
-| Domestic 	| 1 	| VAT_LOCAL 	| *Not blank* 	| *Not blank* 	| Sales 	|
-| Domestic 	| 2 	| VAT_LOCAL 	| *Not blank* 	| *Not blank* 	| SalesCreditNote 	|
-| Domestic 	| 3 	| VAT_FINALC 	| *Not blank* 	| *Not blank* 	| Sales 	|
-| Domestic 	| 4 	| VAT_FINALC 	| *Not blank* 	| *Not blank* 	| SalesCreditNote 	|
-| Domestic 	| 5 	| VAT_PUBLIO 	| *Not blank* 	| *Not blank* 	| Sales 	|
-| Domestic 	| 6 	| VAT_PUBLIO 	| *Not blank* 	| *Not blank* 	| SalesCreditNote 	|
-| Export 	| 7 	| VAT_EXPORT 	| *Not blank* 	| *Not blank* 	| Sales 	|
-| Export 	| 8 	| VAT_EXPORT 	| *Not blank* 	| *Not blank* 	| SalesCreditNote 	|
-| Machine and Equipment 	| 9 	| *Not blank* 	| VAT_M&E 	| *Not blank* 	| Sales 	|
-| Machine and Equipment 	| 10 	| *Not blank* 	| VAT_M&E 	| *Not blank* 	| SalesCreditNote 	|
-| Parts machines 	| 11 	| *Not blank* 	| VAT_PARTS 	| *Not blank* 	| Sales 	|
-| Parts machines 	| 12 	| *Not blank* 	| VAT_PARTS 	| *Not blank* 	| SalesCreditNote 	|
-| Exemptions 	| 13 	| VAT_EXE 	| *Not   blank* 	| *Not blank* 	| SaleExempt 	|
-| Exemptions 	| 14 	| VAT_EXE 	| *Not   blank* 	| *Not blank* 	| SalesExemptCreditNote 	|
-| Not Applicable 	| 15 	| *Blank* 	| *Blank* 	| VAT_ADJ 	| *Not blank* 	|
-| Not Applicable 	| 16 	| *Not blank* 	| *Not blank* 	| *Not blank* 	| *Not blank* 	|
+|SalesItemTypeLookup    | Line | Sales tax   group  | Item sales tax   group  | Tax code (Code) | Name                  |
+|-----------------------|------|--------------------|-------------------------|-----------------|-----------------------|
+| Domestic              | 1    | VAT_LOCAL          | *Not blank*             | *Not blank*     | Sales                 |
+| Domestic              | 2    | VAT_LOCAL          | *Not blank*             | *Not blank*     | SalesCreditNote       |
+| Domestic              | 3    | VAT_FINALC         | *Not blank*             | *Not blank*     | Sales                 |
+| Domestic              | 4    | VAT_FINALC         | *Not blank*             | *Not blank*     | SalesCreditNote       |
+| Domestic              | 5    | VAT_PUBLIO         | *Not blank*             | *Not blank*     | Sales                 |
+| Domestic              | 6    | VAT_PUBLIO         | *Not blank*             | *Not blank*     | SalesCreditNote       |
+| Export                | 7    | VAT_EXPORT         | *Not blank*             | *Not blank*     | Sales                 |
+| Export                | 8    | VAT_EXPORT         | *Not blank*             | *Not blank*     | SalesCreditNote       |
+| Machine and Equipment | 9    | *Not blank*        | VAT_M&E                 | *Not blank*     | Sales                 |
+| Machine and Equipment | 10   | *Not blank*        | VAT_M&E                 | *Not blank*     | SalesCreditNote       |
+| Parts machines        | 11   | *Not blank*        | VAT_PARTS               | *Not blank*     | Sales                 |
+| Parts machines        | 12   | *Not blank*        | VAT_PARTS               | *Not blank*     | SalesCreditNote       |
+| Exemptions            | 13   | VAT_EXE            | *Not   blank*           | *Not blank*     | SaleExempt            |
+| Exemptions            | 14   | VAT_EXE            | *Not   blank*           | *Not blank*     | SalesExemptCreditNote |
+| Not Applicable        | 15   | *Blank*            | *Blank*                 | VAT_ADJ         | *Not blank*           |
+| Not Applicable        | 16   | *Not blank*        | *Not blank*             | *Not blank*     | *Not blank*           |
 
 
 
