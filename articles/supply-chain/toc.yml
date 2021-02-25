@@ -2131,6 +2131,8 @@
               href: production-control/production-floor-execution-setup.md
             - name: How workers use the production floor execution interface
               href: production-control/production-floor-execution-use.md
+            - name: User interface control styles for production floor execution
+              href: production-control/production-floor-execution-styles.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
