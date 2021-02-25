@@ -47,15 +47,15 @@ The following table describes the buttons that are available on the **Manage** t
 
 | Button | Descriptions |
 |---|---|
-| Post receipts list | Post a receipt list, or view the product receipt lists for all purchase order lines in the shipping container. If multi-company shipments are used, a new receipts list posting dialog box is opened for each company. |
-| Post product receipt | Post a product for all purchase order lines in the shipping container. |
+| Post receipts list | Post a receipt list, or view the product receipt lists for all purchase order lines in the shipping container. If multi-company shipments are used, a new receipt list posting dialog box is opened for each company. |
+| Post product receipt | Post a product receipt for all purchase order lines in the shipping container. |
 | Post invoice | Post an invoice for all purchase order lines in the shipping container. If multi-company shipments are used, a new invoice posting dialog box is opened for each company. |
 | Ship transfer order | Post a transfer order shipment for all transfer order lines in the shipping container. Only those lines in the shipping container that are a type of transfer order appear in the dialog box. |
 | Receive transfer order | Post a transfer order receipt for all transfer order lines in the shipping container. The receive dialog box is the simplest way to receive goods in a shipping container or voyage, and is one of three available options. You can also receive via arrival journals or mobile device processing. |
 | Create arrival journal | You can generate an arrival journal for organizations by using advanced warehouse features. The options are _Initialize quantity_ (recommended), and either _Create from goods in transit_ or _Create from purchase orders_. The last two options depend on whether goods-in-transit processing is being used. |
-| Rename | Select this button to open a dialog box where you can rename a selected shipping container. |
+| Rename | Open a dialog box where you can rename a selected shipping container. |
 | Change journey template | Change the journey template. After you change the journey template, you might have to select **Find auto costs** or manually add costs again, because the shipment costs will be deleted. |
-| Convert to rental | Select this button to convert a selected shipping container into a rental shipping container. |
+| Convert to rental | Convert a selected shipping container into a rental shipping container. |
 
 ### Buttons on the General tab
 
@@ -93,9 +93,9 @@ The following table describes the settings that are available on the **General**
 | Description of goods | A description of goods can be selected on the shipping container or folio header. It's used to help identify a voyage, shipping container, or folio of goods. For more information, see [Description of goods](shipping-information-setup.md#description-of-goods). |
 | House air waybill/Bill of lading | You can specify the house air waybill or bill of lading for the shipping container. |
 | Remarks | Additional information that is related to the shipping container. |
-| Returnable | Shows whether the shipping container can be returned after the voyage. |
-| Voyage status | The status of the journey associated with this shipping container. |
-| Purchase order status | The status of the purchase order associated with this shipping container. |
+| Returnable | A value that indicates whether the shipping container can be returned after the voyage. |
+| Voyage status | The status of the journey that is associated with the shipping container. |
+| Purchase order status | The status of the purchase order that is associated with the shipping container. |
 
 ### Settings on the Delivery FastTab
 
@@ -106,7 +106,7 @@ The following table describes the settings that are available on the **Delivery*
 | Created date and time | The date and time when the container was created. |
 | Ex-factory date | This date is usually provided to the factory/vendor to indicate when you expect the goods to leave its premises. When you work with a factory in Asia, this date is often required instead of the date that you expect the goods by. (By contrast, for a local delivery, the date that you expect the goods by is required.) This field can be filled in from the purchase order lines in the shipping container list. You can also manually enter it here. |
 | Ship date | This date can be printed on the purchase order document. It usually informs the factory/vendor about the date that the goods should be delivered to the port by. This field is for informational purposes only. It isn't used to estimate the expected delivery date of the goods in the shipping container. This field can be set to that it's automatically updated when the tracking control page is updated. |
-| In to store date | This field selects the earliest date when the goods from the purchase orders that are linked to the voyage will be available for sale.|
+| In to store date | The earliest date when the goods from the purchase orders that are linked to the voyage will be available for sale.|
 | Estimated delivery date | Usually, the date when the goods are due to arrive in the warehouse. This field is for informational purposes only. It isn't used to calculate master planning on the purchase order lines in the shipping container. The expected delivery date on the purchase order lines is updated through tracking control. This field can be set up so that it's updated when the tracking control page is updated. |
 | Departure date | Usually, the date when the plane or vessel actually leaves the overseas port. |
 | ETA at shipping port | The estimated arrival date at the destination port ("to" port). |
@@ -131,17 +131,17 @@ The following table describes the settings that are available on the **Other** F
 
 | Field | Description |
 |---|---|
-| Rental | Indicates that the container is a rental, so a rental cost may be associated with it. |
-| Converted to rental | Indicates that the shipping container was converted to a rental, so a rental cost may be associated with it. |
-| Original voyage | If the shipping container was moved to a new voyage, this identifies the original voyage. |
+| Rental | A value that indicates whether the shipping container is a rental shipping container. Rental costs might be associated with rental containers. |
+| Converted to rental | A value that indicates whether the shipping container was converted to a rental shipping container. Rental costs might be associated with rental containers. |
+| Original voyage | If the shipping container was moved to a new voyage, the original voyage. |
 | Used | <!-- KFM: Description needed --> |
-| Expected loading date | Shows the date on which the shipping container is expected to be loaded with goods. |
-| Our serial number | Enter the serial number for the shipping container as it is known to your company. |
-| Shipping company serial number | Enter the serial number for the shipping container as provided by the shipping company or agent. |
-| Examination certificate applied date | The date that an examination was requested for the shipping container.  |
-| Examination certificate received date | The date on which the examination certificate was received. |
-| Examination certificate expiry date | The date on which the examination certificate will expire. |
-| Examination certificate number | The certificate number for the certificate issued after examination. |
+| Expected loading date | The date when the shipping container is expected to be loaded with goods. |
+| Our serial number | Enter the serial number that your company uses internally for the shipping container. |
+| Shipping company serial number | Enter the serial number that the shipping company or agent provided for the shipping container. |
+| Examination certificate applied date | The date when an examination was requested for the shipping container. |
+| Examination certificate received date | The date when the examination certificate was received. |
+| Examination certificate expiry date | The date when the examination certificate will expire. |
+| Examination certificate number | The certificate number of the certificate that was issued after an examination was done. |
 
 ## Lines view
 
