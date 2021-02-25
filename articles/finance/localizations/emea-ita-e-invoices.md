@@ -31,19 +31,18 @@ ms.author: v-oloski
 
 This topic describes how to set up and work with the functionality for creating and sending sales invoices and project invoices in an electronic format (FatturaPA).
 
-Starting from version 1.2 of FatturaPA, electronic invoices can be used for all types of businesses including, public administrations, private companies, and professionals.
+As of version 1.2 of the FatturaPA format, electronic invoices can be used for all types of businesses. These types include public administrations, private companies, and professionals.
 
 ## Prerequisites
 
-- The primary address of the legal entity must be in Italy.
+The primary address of the legal entity must be in Italy.
 
 This topic contains the following information:
 
 - [Setup information](#setup)
-- [Maintain related base documents](#relateddoc)
+- [Maintaining related base documents](#relateddoc)
 - [Overview of the Electronic invoice register](#einvoiceregister)
 - [Additional functionality that affects the XML file](#additionalfunctionality)
-
 
 ## <a id="setup"></a>Setup
 
@@ -55,8 +54,8 @@ Before you can begin to work with the electronic invoice functionality, the foll
 - [Electronic document properties](#edproperties)
 - [Customers](#customers)
 - [Items](#items)
-- [Maintain **Natura** codes](#Natura)
-- [Invoice types configuration](#InvoiceTypes)
+- [Natura codes](#natura)
+- [Invoice types](#invoicetypes)
 - [Digital certificates](#digitalcert)
 - [Optional: Destination for XML file output](#destination)
 
@@ -71,7 +70,7 @@ Select the configurations that are used to create electronic invoice XML files f
 
 ### <a id="electronicinvoicecurrency"></a>Electronic invoice currency
 
-To report invoices in the EUR currency in an XML file, set the **Print amount in currency representing the euro** option to **Yes** on the **General** FastTab of the **Form setup** page in Accounts receivable (**Accounts receivable** \> **Setup** \> **Form setup**) and/or in Project management and accounting (**Project management and accounting** \> **Setup** \> **Form setup**).
+To report invoices in the euro (EUR) currency in an XML file, set the **Print amount in currency representing the euro** option to **Yes** on the **General** FastTab of the **Form setup** page in Accounts receivable (**Accounts receivable** \> **Setup** \> **Form setup**) and/or in Project management and accounting (**Project management and accounting** \> **Setup** \> **Form setup**).
 
 > [!NOTE] 
 > If the **Print amount in currency representing the euro** option is set to **No**, a related XML file will be generated in the original invoice currency. 
@@ -85,7 +84,7 @@ To use this functionality, import the following Electronic reporting (ER) config
 
 ### <a id="einvoicesparameters"></a>Electronic invoice parameters
 
-Set these parameters to specify business scenarios and company-specific information.
+You must set electronic invoice parameters to specify business scenarios and company-specific information.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice parameters**.
 2. On the **General** tab, specify the electronic signature requirement.
@@ -151,7 +150,7 @@ When you create **Fee** or **Expense** journal lines, select the category that w
 
 You can find the **Authority office** field on the **Sales demographics** FastTab of a customer record (go to **Accounts receivable** \> **Customers** \> **All customers**, and open the customer record in **Edit** mode).
 
-The value of this field is used to define the type of communication (business to government \[B2G\] or business to business \[B2B\]):
+The value of this field is used to define the type of communication (business-to-government \[B2G\] or business-to-business \[B2B\]):
 
 - If the length of the value is 6, the customer is considered a public administration (the transmission format equals **FPA12**).
 - If the length of the value is 7, the customer is considered a private company or professional (the transmission format equals **FPR12**).
@@ -186,34 +185,35 @@ The **CodiceValore** field is set according to the following rules:
 - If there isn't a bar code, and the record on the **External item description** page exists for the product and the customer, this field is set to the value from **External item number** field.
 - If there isn't a bar code, and the record on the **External item description** page doesn't exist for the product and customer, this field is set to the value from the **Item number** field.
 
-### <a id="Natura"></a>Maintain Natura codes
+### <a id="natura"></a>Natura codes
 
-You can select to manually associate **Natura** codes with related sales tax codes, or let the system automatically determine the appropriate **Natura** codes for transactions. Manual assignment of **Natura** codes has a higher priority and will override automatically identified **Natura** codes.
+You can manually associate Natura codes with related sales tax codes, or you can let the system automatically determine the appropriate Natura codes for transactions. Manually associated Natura codes have higher priority than automatically determined Natura codes and will override them.
 
-### Define Natura codes
+Follow these steps to define Natura codes and manually associate them with sales tax codes.
 
-Complete the following steps to define **Natura** codes.
+1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Nature codes**.
+2. Create a record.
+3. In the **Nature code** field, enter a valid Natura code.
+4. In the **Description** field, enter an explanation of what the code is used for.
+5. Repeat steps 2 through 4 to create as many additional Natura codes as you require to cover all related business operations.
+6. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and select a required sales tax code.
+7. On the **General** FastTab, in the **Nature code** field, select one of the Natura codes that you just created.
 
-1. Go to **Tax** > **Setup** > **Sales tax** > **Nature codes**.
-2. Create a new record and in the the **Nature code** field, enter a valid code of **Natura**.
-3. In the **Description** field, enter an explanation of what the code is used for.
-4. Create as many **Natura** codes as needed to cover all the related business operations.
-5. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes** and select a required sales tax code.
-6. On the **General** FastTab, in the **Nature code** field, select one of the previously defined **Natura** codes.
+![Setting the Nature code field on the Sales tax codes page](media/emea-ita-natura.jpg)
 
-![Nature of sales tax](media/emea-ita-natura.jpg)
+### Reverse charge groups
 
-### Reverse charge groups configuration
+Reverse charge groups are required when a company uses the reverse charge functionality. They are used to automatically determine the Natura codes that are specific to reverse charge operations.
 
-The settings in this section are required when a company uses the reverse charge functionality. Reverse charge groups are used to automatically determine the **Natura** codes specific to reverse charge operations.
-
-Go to **Tax** \> **Setup** \> **Reverse charge item groups** to define specific reverse charge groups for specific products or categories.
+To define specific reverse charge groups for specific products or categories, go to **Tax** \> **Setup** \> **Reverse charge item groups**.
 
 ![Reverse charge item groups page](media/emea-ita-FatturaPA-161-RC-groups.png)
 
-Additionally, application-specific parameters that use these groups should be set up. For more information about this functionality, see the section "Reverse charge configuration in the topic, [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+Additionally, you should set up application-specific parameters that use these reverse charge groups.
 
-### <a id="InvoiceTypes"></a>Invoice types configuration
+For more information about this functionality, see the "Reverse charge configuration" section in [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+
+### <a id="invoicetypes"></a>Invoice types
 
 The following types of invoice documents are supported and will automatically be filled in:
 
@@ -227,15 +227,15 @@ If a required document type isn't listed, you can manually adjust the document t
 - Electronic document property definition
 - Invoice document type registration
 
-For more information, see the section, **Invoice types configuration** in the topic [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+For more information, see the "Invoice types configuration" section in [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
 
 ### <a id="digitalcert"></a>Digital certificates
 
-Go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates** to electronically sign electronic invoices by using a certificate of either the **Company** or **User** type.
+To electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type, go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates**.
 
 ![Electronic signature certificates page](media/emea-ita-electronic-invocies-certificate.png)
 
-The party that is issuing invoices must use a qualified signature certificate to sign each FatturaPA file that is transmitted to the Sistema di Interscambio (SdI) exchange system. A qualified signature certificate can be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).
+The party that is issuing invoices must use a qualified signature certificate to sign each FatturaPA file that is transmitted to the exchange system (Sistema di Interscambio \[SdI\]). A qualified signature certificate can be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).
 
 Microsoft Dynamics 365 Finance supports the **XAdES-BES** signature format. To enable Finance to support FatturaPA, follow these steps.
 
@@ -253,11 +253,9 @@ If XML files must be sent as output to a specific place when invoices are posted
 > [!NOTE]
 > The **Print invoice** option must be set to **Yes**. If the destination is set up, the status of the electronic invoice record for the invoice is automatically set to **Sent**.
 
-
 ## <a id="relateddoc"></a>Maintain related base documents
 
-Companies can report additional information about some base documents that are related to invoices. 
-This section describes how to fill in additional data, including tender procedure identification code (Codice Identificativo di Gara \[CIG\]) and unique project code (Codice Unico di Progetto \[CUP\])
+Companies can report additional information about some base documents that are related to invoices. This section describes how to enter additional data, such as the tender procedure identification code (Codice Identificativo di Gara \[CIG\]) and the unique project code (Codice Unico di Progetto \[CUP\]) that is managed by the Inter Ministerial Committee for Economic Planning.
 
 Here are some examples:
 
@@ -284,12 +282,11 @@ To enable the system to enter information in these blocks, set the following fie
 > | Management system | DatiRicezione |
 > | Original invoice | DatiFattureCollegate |
 
-For each base document, users can add details about the document number and date, CUP (unique project code that is managed by the Inter Ministerial Committee for Economic Planning), CIG (tender procedure identification code), and agreement code.
+For each base document, users can add details about the document number and date, tender procedure identification code (CIG), unique project code (CUP), and agreement code.
 
 ### Base documents for public sector companies
 
-In Italy, there is a legal requirement that public sector companies provide the traceability of tender procedures codes (CIG) and projects codes (CUP) during invoicing and payments. To provide the traceability, an additional control of **CIG** and **CUP** codes is implemented for public sector companies. 
-For more information about this functionality, see [Italian localization - Payment traceability](emea-ita-payment-traceability.md).
+In Italy, there is a legal requirement that public sector companies provide traceability of tender procedures codes (CIG) and projects codes (CUP) during invoicing and payments. To provide traceability, additional control of CIG and CUP codes is implemented for public sector companies. For more information about this functionality, see [Italian localization - Payment traceability](emea-ita-payment-traceability.md).
 
 ## <a id="einvoiceregister"></a>Electronic invoice register
 
@@ -317,7 +314,7 @@ On the **Electronic customer invoices** page, you can perform the following acti
 
 For information about how to set up and work with this functionality, see [Tax invoice for goods delivered for free](emea-ita-exil-goods-for-free.md).
 
-On the **Distribution** page (**Sales and marketing** \> **Setup** \> **Distribution**), if **Goods for free** is selected in the **Reason for delivery** field, and the **Invoice account** field is blank, the **TipoCessionePrestazione** element is sent as output in the XML file.
+On the **Distribution** page (**Sales and marketing** \> **Setup** \> **Distribution**), if the **Reason for delivery** field is set to **Goods for free**, and the **Invoice account** field is blank, the **TipoCessionePrestazione** element is sent as output in the XML file.
 
 ### Intent letters – Invoicing of usual exporters
 
