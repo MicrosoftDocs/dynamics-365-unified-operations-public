@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Incremental capture for back-office invoicing
-description: This topic describes enhancements that have been made to the payments software development kit (SDK) to support incremental capture as part of order invoicing.
+title: Incremental payment capture  
+description: This topic describes support for capturing multiple credit card payments with a single authorization
 author: rubendel
 manager: annbe
 ms.date: 7/31/2020
@@ -34,13 +34,17 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes how the payments software development kit (SDK) supports incremental capture as part of order invoicing. In incremental capture, payment processing supports fulfillment of an order that has multiple invoices. Specifically, as invoices are processed against the order, payment capture requests reference the original payment authorization instead of getting a new payment authorization when previous payment captures have caused the balance due to change.
+This topic describes out of box support for incremental capture as part of order invoicing. When incremental capture is enabled, orders that are fulfilled over time with multiple invoices may reference the original authorization for multiple invoices and captured payments. This is opposed to legacy support for fulfilling orders with multile invoices, which causes a new authorization to be obtained every time a portion of the order is fulfilled and the balance due changes.
+
+Incremental capture is supported out of box with the Dynamics 365 Payment Connector for Adyen when orders are fulfilled from the POS and back office. Enabling incremental capture for the Adyen connector is described in this document.
+
+This topic also describes how incremental capture can be added to third party payment connectors using the payments software development kit (SDK).
 
 ## Overview
 
-Many merchants fulfill orders in multiple shipments. In Microsoft Dynamics 365 Commerce version 10.0.12 and earlier, the out-of-box process for handling credit card payments for orders that are fulfilled over multiple shipments is to capture payments as those shipments are invoiced and then get a new payment authorization for the balance due for the remaining items that must be shipped. This process ensures that payment capture can be consistently supported across payment processors. However, it also has some downsides. Specifically, when an authorization is partially captured, and then a new authorization is created for the balance due, the old authorization and new authorization might overlap. In this case, open authorizations that exceed the order total might appear against customer payment cards. Therefore, authorizations might exceed open balances that are available for credit cards, or card issuers might block cards from being processed because of suspicion of fraud.
+Many merchants fulfill orders in multiple shipments. By default, the out-of-box process for handling credit card payments for orders that are fulfilled over multiple shipments is to capture payments as those shipments are invoiced and then get a new payment authorization for the balance due for the remaining items that must be shipped. This process ensures that payment capture can be consistently supported across payment processors. However, it also has some downsides. Specifically, when an authorization is partially captured, and then a new authorization is created for the balance due, the old authorization and new authorization might overlap. In this case, open authorizations that exceed the order total might appear against customer payment cards. Therefore, authorizations might exceed open balances that are available for credit cards, or card issuers might block cards from being processed because of suspicion of fraud.
 
-To address these issues, the payments SDK in Commerce version 10.0.13 and later includes incremental capture support for back-office payment captures. Therefore, if a processor supports incremental capture, payment connectors can be updated to capture against a single authorization multiple times over the course of order fulfillment. The following illustration shows the difference between the different payment capture frameworks when multiple captures are done against a single authorization.
+To address these issues, incremental capture support has been introduced for the the payments SDK in Commerce version 10.0.13 and later includes incremental capture support for back-office payment captures. Therefore, if a processor supports incremental capture, payment connectors can be updated to capture against a single authorization multiple times over the course of order fulfillment. The following illustration shows the difference between the different payment capture frameworks when multiple captures are done against a single authorization.
 
 ![Current payment capture framework vs. incremental capture](../dev-itpro/media/INC_DIFF.png)
 
