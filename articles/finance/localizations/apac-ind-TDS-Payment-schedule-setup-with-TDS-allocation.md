@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Payment schedule setup with TDS allocation
+title: Set up payment schedules with TDS allocation
 description: 
 author: kailiang
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 ---
 
-# Payment schedule setup with TDS allocation
+# Set up payment schedules with TDS allocation
 
 [!include [banner](../includes/banner.md)]
 
