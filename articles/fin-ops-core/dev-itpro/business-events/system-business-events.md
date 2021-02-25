@@ -26,27 +26,43 @@ ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
 ---
 
-# Title goes here
+# Batch business events
 
 [!include[banner](../includes/banner.md)]
 
-This topic lists system busines events. 
-
-## Batch business events
-
 The batch framework emits the following system business events
-- Batch Started
-- Batch Completed
-- Batch Failed
-- Batch Cancelled
+Business event | Description | Module
+-------------- | ----------- | ------
+Batch job started | Fires when a batch job is marked executing | Batch
+Batch job finished | Fires when a batch job completes | Batch
+Batch job failed | Fires when a batch job fails | Batch
+Batch job cancelled | Fires when a batch job is cancelled | Batch
 
-These business events can be used to monitor the batch jobs and notify stakeholders on completion/failure. The Start and Completed/Failed events can be used to determine long running batch jobs. 
+### Usage
+#### Batch job failed
+Can be used to monitor specific batch jobs for failure and notify stakeholders in real time. This event is turned on by default in the application.
+
+#### Batch job started, finished, failed 
+Can be used to monitor and determine long running batch jobs and notify stakeholders if a job takes longer than expected. This event is turned off by default in the application.
+
+### Configure Batch business events
+Navigate to System administration -> Inquiries -> Batch jobs and click on Business events tab to update the settings to raise batch business events.
 
 The events have the following payload
-1. Job Id
-2. Job Description
-3. Job Status
-4. Job Owner EmailId
-5. Job ExecutedBy EmailId
-6. Job AdminEmailId
-7. Job EndUtcDateTime
+Field name | Field label
+---------- | -----------
+JobId | Batch job id
+JobDescription | Batch job description
+JobStatus | Batch job status
+JobOwnerEmailId | Batch job owner email id
+JobExecutedByEmailId | Batch job executed by email id
+AdminEmailId | Admin user email id
+JobEndUtcDateTime | Job end utc date time
+BusinessEventId | Business event id
+ControlNumber | Business event control number
+Event Id | Business event instance id
+EventTime | Business event instance id
+MajorVersion | Major version
+MinorVersion | Minor version
+
+You can get the upto date business events catalog and schema by navigating to System administration -> setup -> Business events in the application.
