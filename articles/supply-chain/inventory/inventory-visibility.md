@@ -54,6 +54,10 @@ Before you install the Inventory Visibility Add-in, you must do the following:
 
 - Obtain an LCS implementation project with at least one environment deployed.
 - Make sure you follow the [Prerequisites for setting up add-ins](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview) guide. Inventory Visibility does not require dual-write linking.
+- Make sure your obtain 3 required files provided from Inventory Visibility Team, contact at inventvisibilitysupp@microsoft.com to get the files.
+    - `Inventory Visibility Dataverse Solution.zip`
+    - `Inventory Visibility Configuration Trigger.zip`
+    - `Inventory Visibility Integration.zip` (version before 10.0.18)
 
 > [!NOTE]
 > Currently supported geographies include Canada, USA, and EU.
