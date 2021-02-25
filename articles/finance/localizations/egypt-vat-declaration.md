@@ -54,7 +54,8 @@ In the **Electronic reporting** workspace, import the following Electronic Repor
 
 - VAT declaration Excel (EG)
 
-> **Note**: The formats above are based on **Tax declaration model** and use **Tax declaration model mapping**. These additional configurations will be automatically imported.
+> [!NOTE]
+> The formats above are based on **Tax declaration model** and use **Tax declaration model mapping**. These additional configurations will be automatically imported.
 
 For more information about how to import Electronic Reporting configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -105,7 +106,8 @@ Complete the following steps to setup the different lookups used in the generati
    1. In the Lookup result column, select **Not applicable**. 
    1. In the remainder columns, select **Not blank**. 
 
-> **Note**: By adding this last record **Not applicable**, you define the following rule: When the **sales tax group**, **item sales tax group**, **tax code** and **name** that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the Sales VAT book. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.
+> [!NOTE]
+> By adding this last record **Not applicable**, you define the following rule: When the **sales tax group**, **item sales tax group**, **tax code** and **name** that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the Sales VAT book. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.
 
 The tables below represent an example of suggested configuration for the described lookups configurations. 
 
