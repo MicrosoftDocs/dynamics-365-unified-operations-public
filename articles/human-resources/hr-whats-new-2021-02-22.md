@@ -63,8 +63,8 @@ The following bug fixes are included in this release.
 | --- | --- | --- |
 | 529994 | Modifying **Known As** field on **Worker** form doesn't trigger a Dataverse update | Fixed an issue where Dataverse doesn't update when the **Known As** field is updated on the **Worker** form. |
 | 532651 | Compensation analytics PBI report doesn't use currency conversion when calculating metrics for all company | Fixed an issue where Compensation analytics PBI report didn't correctly do currency conversions. |
-| 552226 | Life event processing closes and reopens plans multiple times for single life event  | Fixed an issue that where an employee is in multiple legal entities and a life event occurs, a life event record generates for each legal entity the employee is in. When processing life events, the legal entity to process must be selected. However, the processing logic doesn't constrain itself to this legal entity. Instead, it processes for all legal entities and performs the close/reopen on the plans in the selected legal entity. This causes a life event to process multiple times in the same legal entity, resulting in multiple close/reopens of each plan affected by the life event. |
-| 518064 | Only one dependant selected on eligible plans when more than one are marked as default designees | Fixed an issue where multiple default designees aren't auto-selected in eligible plans. You can also now designate a primary beneficiary for a personal contact so that the beneficiary is listed as 100% in eligible plans when there are multiple beneficiaries. |
+| 552226 | Life event processing closes and reopens plans multiple times for single life event  | Fixed an issue where an employee is in multiple legal entities and a life event occurs, a life event record generates for each legal entity the employee is in. When processing life events, the legal entity to process must be selected. However, the processing logic doesn't constrain itself to this legal entity. Instead, it processes for all legal entities and closes and reopens the plans in the selected legal entity. This action a life event to process multiple times in the same legal entity, resulting in multiple close/reopens of each plan affected by the life event. |
+| 518064 | Only one dependant selected on eligible plans when more than one are marked as default designees | Fixed an issue where multiple default designees aren't autoselected in eligible plans. You can also now designate a primary beneficiary for a personal contact. The primary beneficiary is listed as 100% in eligible plans when there are multiple beneficiaries. |
 | 552365 | Bring your own database (BYOD) export jobs are failing after upgrading to Platform update 40 | Fixed an issue where BYOD exports fail after Platform update 40 is applied to the environment. |
 | 547123 | Limit the number of tasks queried in To-do list on dashboard | The number of tasks shown in the To-do list is now limited to 15 to fix a performance issue caused by an excessive number of tasks trying to load. |
 
@@ -88,19 +88,19 @@ For a complete list of planned features and their scheduled releases, see [Overv
 
 ## Terminology updates for Microsoft Dataverse
 
-Effective November 2020, Common Data Service has been renamed to [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro). See the [official announcement](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) on the Power Apps blog to learn more. In conjunction with this name change, some terminology in Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. For more information, see [Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
+Effective November 2020, Common Data Service has been renamed to [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro). See the [official announcement](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) on the Power Apps blog to learn more. With this name change, some terminology in Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. For more information, see [Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
 
 In this release, terminology related to the Dynamics 365 Human Resources integration with Dataverse has been updated throughout the application to reflect these changes. For example, the **Common Data Service integration** form is now **Microsoft Dataverse integration**.
 
 To learn more about the Dynamics 365 Human Resources integration with Microsoft Dataverse, see [Configure Microsoft Dataverse integration](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service) and [Configure Microsoft Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
-## Updates to the service deployment
+## Updates to service deployment
 
-Beginning with the February 22, 2021 release, we will adjust our regional service update deployment. The adjustments will include rotating the order in which global regions receive updates for the Human Resources service, and modifications in the wait time between update stages. These changes bring us more in line with Safe Deployment Practices (SDP) to improve service stability, quality and supportability.
+Beginning with the February 22, 2021 release, we're adjusting our regional service update deployment. The adjustments will include rotating the order in which global regions receive updates for the Human Resources service, and modifications in the wait time between update stages. These changes bring us more in line with Safe Deployment Practices (SDP) to improve service stability, quality, and supportability.
 
-We will continue to follow the two-week deployment cadence. However, customers may notice that updates are typically applied to their Human Resources environments on a different day of the two-week cycle than in previous releases.
+We'll continue to follow the two-week deployment cadence. However, customers may notice that updates are typically applied to their Human Resources environments on a different day of the two-week cycle than in previous releases.
 
-For additional information on the service update process, see [Update process](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-setup-update-process).
+For more information about the service update process, see [Update process](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-setup-update-process).
 
 ## See also
 
