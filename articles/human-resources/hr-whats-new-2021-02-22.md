@@ -52,7 +52,6 @@ The following features are generally available with this release.
 | --- | --- | --- |
 | Dynamics 365 Human Resources app for Microsoft Teams | [Employee leave and absence experience in Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Manage leave requests in Teams](hr-teams-leave-app.md) |
 
-
 ### Bug fixes
 
 The following bug fixes are included in this release.
@@ -60,26 +59,24 @@ The following bug fixes are included in this release.
 > [!NOTE]
 > Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
 
-
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 529994 | Modifying "Known As" field on worker form does not trigger a Dataverse update | The Dataverse execution request is not triggered when the "Known As" field is updated on the worker form. |
-| 532651 |Compensation Analytics PBI report does not use currency conversion when calculating metrics for All Companie | Fixed an issue where COmpensation analysis PBI report was not correctly doing currency conversions |
-| 552226 |Life event processing closes and reopens plans multiple times for single life event  | When an employee is part of multiple legal entities and a life event occurs a life event record is generated for each legal entity the employee is a part of. When processing life events the legal entity to process must be selected. However, the processing logic does not constrain itself to this legal entity, instead processing for all legal entities and performing the plan close/reopen on the plans in the legal entity selected. This causes a life event to get processed multiple times in the same legal entity, resulting in multiple close/reopens of each plan affected by the life event. |
-| 518064 | Only one dependant selected on eligible plans when more than one are marked as default designees | Fixed an issue where multiple default designees are not auto-selected in eligible plans. We also now have a way to designate primary benefeciary for a personal contact so that it is listed as 100% in eligible plans when there are multiple benefeciaries |
-| 552365 | BYOD export jobs are failing after upgrading to PU40 | Bring your own database (BYOD) exports fail after platform update 40 is applied to teh environment. |
-| 547123 | Limit the number of tasks queried for in "To-do list" on dashboard | The number of tasks shown in the "To-do List" is now limited to fifteen to fix a performance issue caused by an excessive number of tasks trying to load. |
+| 529994 | Modifying **Known As** field on **Worker** form doesn't trigger a Dataverse update | Fixed an issue where Dataverse doesn't update when the **Known As** field is updated on the **Worker** form. |
+| 532651 | Compensation analytics PBI report doesn't use currency conversion when calculating metrics for all company | Fixed an issue where Compensation analytics PBI report didn't correctly do currency conversions. |
+| 552226 | Life event processing closes and reopens plans multiple times for single life event  | Fixed an issue that where an employee is in multiple legal entities and a life event occurs, a life event record generates for each legal entity the employee is in. When processing life events, the legal entity to process must be selected. However, the processing logic doesn't constrain itself to this legal entity. Instead, it processes for all legal entities and performs the close/reopen on the plans in the selected legal entity. This causes a life event to process multiple times in the same legal entity, resulting in multiple close/reopens of each plan affected by the life event. |
+| 518064 | Only one dependant selected on eligible plans when more than one are marked as default designees | Fixed an issue where multiple default designees aren't auto-selected in eligible plans. You can also now designate a primary beneficiary for a personal contact so that the beneficiary is listed as 100% in eligible plans when there are multiple beneficiaries. |
+| 552365 | Bring your own database (BYOD) export jobs are failing after upgrading to Platform update 40 | Fixed an issue where BYOD exports fail after Platform update 40 is applied to the environment. |
+| 547123 | Limit the number of tasks queried in To-do list on dashboard | The number of tasks shown in the To-do list is now limited to 15 to fix a performance issue caused by an excessive number of tasks trying to load. |
 
-## In preview	
+## In preview
 
 The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Cross-company view of leave for managers | [Cross-company view of employee leave for managers](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Configure leave and absence parameters](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-| Benefits Management Workspace | [Benefits Management Workspace (Preview)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | (Coming Soon ! ) New Feature "(Preview) Benefits management workspace" available in Sandbox environments only |
-| Restrict employees from editing business contact details | [Restricting employees from editing business contact details](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Configure employee service to restrict employees from editing business contact details](https://go.microsoft.com/fwlink/?linkid=2152750)|
-
+| Benefits management workspace | [Benefits Management Workspace (Preview)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
+| Restrict employees from editing business contact details | [Restricting employees from editing business contact details](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Configure employee service to restrict employees from editing business contact details](https://go.microsoft.com/fwlink/?linkid=2152750)|
 
 ## Coming soon
 
@@ -99,9 +96,9 @@ To learn more about the Dynamics 365 Human Resources integration with Microsoft 
 
 ## Updates to the service deployment
 
-Beginning with February 22, 2021 release, we will adjust our regional service update deployment. The adjustments will include rotating the order in which global regions receive updates for the Human Resources service, and modifications in the wait time between update stages. These changes bring us more in line with Safe Deployment Practices (SDP), improving service stability, quality and supportability.
+Beginning with the February 22, 2021 release, we will adjust our regional service update deployment. The adjustments will include rotating the order in which global regions receive updates for the Human Resources service, and modifications in the wait time between update stages. These changes bring us more in line with Safe Deployment Practices (SDP) to improve service stability, quality and supportability.
 
-We will continue to follow the two-week deployment cadence. However customers may notice that updates are typically applied to their Human Resources environments on a different day of the two-week cycle than in previous releases.
+We will continue to follow the two-week deployment cadence. However, customers may notice that updates are typically applied to their Human Resources environments on a different day of the two-week cycle than in previous releases.
 
 For additional information on the service update process, see [Update process](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-setup-update-process).
 
