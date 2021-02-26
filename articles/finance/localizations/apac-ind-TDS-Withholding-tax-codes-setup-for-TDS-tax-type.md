@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up withholding tax codes for the TDS tax type
-description: This topic lists the steps for setting up tax codes for Tax Deducted at Source (TDS). 
+description: This topic explains how to set up tax codes for Tax Deducted at Source (TDS).
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -34,37 +34,34 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for setting up tax codes for Tax Deducted at Source (TDS). 
+This topic explains how to set up tax codes for Tax Deducted at Source (TDS).
 
-Begin by opening the **Withholding tax codes** page (**Tax > Setup > Withholding tax > Withholding tax codes**).
+1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax codes**.
 
-[![Withholding tax codes](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
+    [![Withholding tax codes page](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
 
-1. Click **New** to create a withholding tax code for TDS and enter the required details.
+2. On the Action Pane, select **New** to create a withholding tax code for TDS, and enter the required details.
+3. On the **General** FastTab, in the **Tax type** field, select **TDS** to categorize the tax code as a TDS tax code.
+4. In the **Settlement period** field, select the TDS settlement period for the TDS tax code.
+5. In the **Account** field, select the ledger account that the TDS amount should be posted to.
+6. In the **Receivable account** field, select the receivable account that the TDS amount that is deducted in sales transactions should be posted to.
 
-2. In the **Tax type** field, select the **TDS** option to categorize the tax code as a TDS tax code.
+    The **Origin** field is automatically set to **Percentage of gross amount**, and the value can't be changed.
 
-3. In the **Settlement period** field, select the TDS settlement period for the TDS tax code. In the **Account** field, select the ledger account to post the TDS amount to.
+    > [!NOTE]
+    > You can't set the origin to **Percentage of net amount** for tax codes of the TDS tax type.
 
-4. In the **Receivable** **account** field, select the receivable account to post the TDS amount that is deducted in sales transactions.
+7. In the **Withholding tax component** field, select the TDS tax component for the TDS tax code.
+8. On the Action Pane, select **Values** to open the **Withholding tax values** page.
+9. In the **From date** field, enter the start date for the TDS value. In the **To date** field, enter the end date.
 
-5. In the **Origin** field, the **Percentage of gross amount** option is displayed and can't be changed. 
+    > [!NOTE]
+    > The **Minimum limit**, **Upper limit**, and **Exclude %** fields aren't available for tax codes of the TDS tax type.
 
->   [!Note]
->   You cannot set the origin to **Percentage of net amount** for a TDS tax type.   
+10. In the **Value** field, enter the percentage of TDS for the TDS tax code.
+11. Close the **Withholding tax values** page to return to the **Withholding tax codes** page.
 
-6. In the **Withholding tax component** field, select the TDS tax component for the TDS tax code.
+    > [!NOTE]
+    > The **Limits** button isn't available for tax codes of the TDS tax type.
 
-7. Click the **Values** button to open the **Withholding tax values** pshr. In the **From date** field and the **To date** field, enter the starting date and ending date for the TDS value. 
-
->   [!Note]
->   The **Minimum limit** field, **Upper limit** field, and the **Exclude %** field are not available for the tax codes with TDS tax type.   
-
-8. In the **Value** field, enter the percentage of TDS for the TDS tax code.  
-
-9. Close the **Withholding tax values** page to return to **Withholding tax codes**.
-
->   [!Note]
->   The **Limits** button is not available for TDS tax type.  
-
-10. Close the page.
+12. Close the page.
