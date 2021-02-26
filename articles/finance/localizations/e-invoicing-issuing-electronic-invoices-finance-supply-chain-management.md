@@ -5,7 +5,7 @@ title: Issue electronic invoices in Finance and Supply Chain Management
 description: This topic explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
-ms.date: 02/22/2021
+ms.date: 02/26/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -68,7 +68,7 @@ The following table shows the list of features that the Electronic invoicing add
 When there is a legacy Electronic invoicing feature that is supported in a country/region's localizations scope, activating one of these features turns off the legacy feature and enables electronic invoices to be issued through the Electronic invoicing add-on.
 
 > [!IMPORTANT]
-> After the Electronic invoicing add-on integration feature is enabled, the new Electronic invoicing experience is turned off by default. You use the feature concept to selectively enable new experiences for legal entities using country/region-specific functionality. **Global** controls the new experience for all the remaining county/regions that aren't listed in the table.
+> After the Electronic invoicing add-on integration feature is enabled, the new Electronic invoicing experience is turned off by default. You use the feature concept to selectively enable new experiences for legal entities using country/region-specific functionality. **Global** controls the new experience for the remaining county/regions that aren't specifically listed in the table.
 
 ## Submit electronic documents
 
