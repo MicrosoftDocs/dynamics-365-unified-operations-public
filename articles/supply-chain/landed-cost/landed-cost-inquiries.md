@@ -50,7 +50,7 @@ The **Overview** tab of the **Voyage lines** inquiry page includes a grid that s
 | **Shipping container** | The shipping container that is associated with the voyage line. |
 | **Voyage** | The voyage that is associated with the voyage line. |
 | **Quantity** | The quantity of the item for the voyage line. |
-| Other dimensions | You can show columns for additional dimensions as you require. Those dimensions include batch number, inventory status, and warehouse. On the Action Pane, select **Inventory \> Display dimensions** to open a dialog box where you can select the dimensions to include. |
+| (Other dimensions) | You can show columns for additional dimensions as you require. Those dimensions include batch number, inventory status, and warehouse. On the Action Pane, select **Inventory \> Display dimensions** to open a dialog box where you can select the dimensions to include. |
 
 ### General tab
 
@@ -97,7 +97,7 @@ The following table describes the columns in the grid on the **Item tracking** p
 | **Reference** | The type of order (purchase order or transfer order) |
 | **Reference number** | The purchase order number or transfer order number. |
 | **Backorder** | A symbol indicates that there are sales backorders for the item. |
-| Other dimensions | You can show columns for additional dimensions as you require. Those dimensions include batch number, inventory status, and warehouse. On the Action Pane, select **Display dimensions** to open a dialog box where you can select the dimensions to include. |
+| (Other dimensions) | You can show columns for additional dimensions as you require. Those dimensions include batch number, inventory status, and warehouse. On the Action Pane, select **Display dimensions** to open a dialog box where you can select the dimensions to include. |
 
 ### Related information about backorders
 
