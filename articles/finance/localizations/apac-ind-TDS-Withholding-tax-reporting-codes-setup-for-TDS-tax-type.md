@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up withholding tax reporting codes for the TDS tax type
-description: Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This topic lists the steps for setting up withholding tax reporting codes steps to set up TDS reporting codes.
+description: Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This topic explains how to set up withholding tax reporting codes steps so that you can set up TDS reporting codes.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -34,24 +34,23 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This topic lists the steps for setting up withholding tax reporting codes.
+Withholding tax reporting codes are used to generate Form 26Q and Form 27Q statements for Tax Deducted at Source (TDS). This topic explains how to set up withholding tax reporting codes steps so that you can set up TDS reporting codes.
 
-Begin by opening the **Withholding tax reporting codes** page to (**Tax > Setup > Withholding tax > Withholding tax reporting codes**).
+1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax reporting codes**.
 
-[![Withholding tax reporting codes](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
+    [![Withholding tax reporting codes page](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
 
-1. In the **Tax type** field, select the **TDS** option to define withholding tax reporting codes for the TDS tax type.
+2. In the **Tax type** field, select **TDS** to define withholding tax reporting codes for the TDS tax type.
+3. In the **Withholding tax component** field, select the TDS component to that you're defining the withholding tax reporting code for. The **Withholding tax component group** field shows the TDS component group that was defined for the TDS component that you're defining.
 
-2. In the **Withholding tax component** field, select the TDS component to that you're defining the withholding tax reporting code for. The **Withholding tax component group** field displays the TDS component group that was defined for the TDS component you're defining.
+    The **Section code** field on the **General** FastTab shows the section code that is attached to the TDS component group.
 
-   The section code that's attached to the TDS component group is displayed in the **Section code** field.
+4. On the **General** FastTab, in the **Reporting code** field, select the TDS reporting code:
 
-3. In the **Reporting code** field, select the TDS reporting code from the following options. 
-
-- **TDS**
-- **TCS**
-- **Surcharge**
-- **PE_Cess**
-- **SHE_Cess**
+    - TDS
+    - TCS
+    - Surcharge
+    - PE\_Cess
+    - SHE\_Cess
 
 5. Close the page.
