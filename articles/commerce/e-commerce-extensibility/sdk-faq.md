@@ -36,7 +36,9 @@ This topic summarizes answers to questions frequently asked by users of the Dyna
 
 ### What is replacing TSLint since it's been deprecated in SDK version 1.28 (Commerce version 10.0.18 release)?
 
-Due to the open source TSLint static analysis tool being deprecated, the Dynamics 365 Commerce online SDK is replacing it with the [ESLint](https://eslint.org/) static analysis tool. TSLint will continue to work until SDK version 1.30 (Commerce version 10.0.20 release). You can manually update to ESLint prior to SDK release 1.30 if desired, but updating will be enforced with SDK release 1.30. After updating to SDK version 1.28, running the **yarn** command will show a deprecation warning. You can switch to ESLint at any time after this, but it may cause new errors and warnings to be displayed on your custom code. If you retrieved the online SDK from GitHub with the Commerce 10.0.20 preview release, then it will contain the necessary changes to ESLint and no changes will be needed. Otherwise, if you are updating from an older version of the SDK, you will need to manually update to ESLint before SDK release 1.30. Follow the instructions below to manually update from TSLint to ESLint.
+Due to the open source TSLint static analysis tool being deprecated, the Dynamics 365 Commerce online SDK is replacing it with the [ESLint](https://eslint.org/) static analysis tool. TSLint will continue to work until SDK version 1.30 (Commerce version 10.0.20 release). You can manually update to ESLint prior to SDK release 1.30 if desired, but updating will be enforced with SDK release 1.30. After updating to SDK version 1.28, running the **yarn** command will show a deprecation warning. You can switch to ESLint at any time after this, but it may cause new errors and warnings to be displayed on your custom code. If you retrieved the online SDK from GitHub with the Commerce 10.0.20 preview release, then it will contain the necessary changes to ESLint and no changes will be needed. Otherwise, if you are updating from an older version of the SDK, you will need to manually update to ESLint before SDK release 1.30. 
+
+Follow the instructions below to manually update from TSLint to ESLint.
 
 #### Replace TSLint with ESLint
 
@@ -143,20 +145,18 @@ Then change the **build** and **start** commands to:
 
 It is optional but recommended to install the ESLint extension for Visual Studio Code. This will help identify errors and warnings directly in your editor and will allow you to use quick actions to ignore linting errors with comments.
  
-First, run the **yarn lint** command.
- 
 You may see new ESLint errors since all the TSLint errors that were suppressed with TSLint comments are popping back up. The ESLint errors can be fixed or disabled and you may choose to ignore the warnings.
 
-If you use `–use-eslint` flags to build, the build will fail on errors but will ignore warnings.
+If you use `–use-eslint` flags in your code, builds will fail on errors but will ignore warnings.
 
 #### Disable linting in code
 
-Fix all the errors by replacing TSLint disable comments with the new ESLint disable comment. You may use file find and replace if that is easier but be sure to verify the results.
+You can fix TSLint errors by replacing TSLint disable comments with ESLint disable comments. You may use file find and replace functionality if that is easier but be sure to verify the results.
 
 Helpful tips:
 - Similar to TSLint, you can disable ESLint warnings by using comments.
-- To disable next line, use `// eslint-disable-next-line <rule1>, <rule2>`...
-- To add a comment about why you are disabling a rule, you must add "--" (for example,  `// eslint-disable-next-line <rule1> -- Disabling this rule for reasons`).
+- To disable the next line, use `// eslint-disable-next-line <rule1>, <rule2>...`.
+- To add a comment explaining why you are disabling a rule, you must add "--" (for example,  `// eslint-disable-next-line <rule1> -- Disabling this rule for reasons`).
 - To disable a rule for an entire file, you must use multiline comments (for example, `/* eslint-disable <rule1>, <rule2> */`). 
 
 The following table lists common TSLint-ESLint equivalents.
@@ -169,7 +169,7 @@ TSLint rule	| ESLint rule
 
 #### Disable linting altogether during build time
 
-If you want to disable linting altogether during build time, this can be accomplished using the **--disable-linter** argument in the **package.json** build command as shown below:
+If you want to disable linting altogether during build time, this can be done using the **--disable-linter** argument in the **package.json** build command as shown below:
 ```json 
         "build": "yarn msdyn365b build --disable-linter",
 ```
