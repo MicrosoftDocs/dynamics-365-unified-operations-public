@@ -47,8 +47,6 @@ The following features are included in this release. Some of the listed features
 
 -  [(Preview) Translation support for organization views](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/translation-support-organizational-saved-views)<br>- For more information, see [Saved views](../../fin-ops/get-started/saved-views.md).
 
--  [Allow configuration of the publish batch size for the Excel add-in](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [View and update entity data with Excel](../office-integration/use-excel-add-in.md).
-
 -  [Upgrade to React 17](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/upgrade-react-17)
 
 -  [Freeze columns in grids](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/freeze-columns-grids)<br>- For more information, see [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md).
