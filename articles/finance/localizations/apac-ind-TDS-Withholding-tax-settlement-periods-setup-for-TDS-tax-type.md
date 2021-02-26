@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up withholding tax settlement periods for the TDS tax type
-description: This topic lists the steps for setting up settlement periods for Tax Deducted at Source (TDS) settlement periods.
+description: This topic explains how to set up settlement periods for Tax Deducted at Source (TDS) settlement periods.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -34,33 +34,26 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for setting up settlement periods for Tax Deducted at Source (TDS) settlement periods.
+This topic explains how to set up settlement periods for Tax Deducted at Source (TDS) settlement periods.
 
-Begin by opening the **Withholding tax settlement periods** page (**Tax > Indirect Taxes > Withholding tax > Withholding tax settlement periods**).
+1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax settlement periods**.
 
-[![Withholding tax settlement periods](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png) 
+    [![Withholding tax settlement periods page](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
 
-1. In the **Tax type** field, select the **TDS** option to set up withholding tax settlement periods for TDS tax type.
+2. In the **Tax type** field, select **TDS** to set up withholding tax settlement periods for the TDS tax type.
+3. On the **Overview** tab, select **Ctrl+N** to create a line.
+4. In the **Settlement period** field, enter a name for the TDS settlement period.
+5. In the **Description** field, enter a description.
+6. In the **Withholding tax authority** field, select the TDS authority that you're defining the TDS settlement period for.
+7. On the **General** FastTab, in the **Period interval** field, select the type of period interval for the TDS settlement period.
+8. In the **Number of units** field, specify the number of units for the period interval type.
+9. On the **Periods** FastTab, in the **From date** field, select the start date for the TDS settlement period. In the **To date** field, select the end date.
+10. To create a subsequent TDS settlement period for an existing period, based on the period interval and period units, select **New period**.
+11. To view the details of the periodic TDS settlement that is run for a specific settlement period, select **Withholding tax payments** to open the **Withholding tax payment** page.
 
-2. On the **Overview** tab, press **CTRL+N** to create a new line. In the **Settlement period** field, enter a name for the TDS settlement period.
+    > [!NOTE]
+    > To run the periodic TDS settlement process, go to **General ledger \> Periodic \> Withholding tax \> Withholding tax payment**.
 
-3. In the **Description** field, enter a description for the TDS settlement period.
+    [![Withholding tax payment page](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
 
-4. In the **Withholding tax authority** field, select the TDS authority to define the TDS settlement period for.
-
-5. In the **Period interval** field, select the type of period interval for the TDS settlement period. In the **Number of units** field, specify the number of units for the period interval type.
-
-6. Click the **Periods** tab. In the **From date** field and **To date** field, select the starting and ending date for the TDS settlement period.
-
- [![Period interval](./media/apac-ind-TDS-14.png)](./media/apac-ind-TDS-14.png)
-
-7. Click the **New period** button to create a subsequent TDS settlement period for an existing period based on the period interval and period units.
-
-8. Click the **Withholding tax payments** button to view details of the periodic TDS settlement that's run for a specific settlement period. 
-
->   [!Note]
->   You can run the periodic TDS settlement process in general ledger > periodic > withholding tax > withholding  tax payment.  
-
-[![Withholding tax payment](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
-
-9. Close the page.
+12. Close the page.
