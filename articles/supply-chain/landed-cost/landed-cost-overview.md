@@ -36,7 +36,7 @@ The **Landed cost** module helps businesses streamline inbound shipping operatio
 Businesses can use Landed cost to complete the following tasks:
 
 - Estimate landed costs at the time of voyage creation.
-- Apportion landed costs to multiple items and purchase orders in a single voyage.
+- Apportion landed costs to multiple items and purchase orders or transfer orders in a single voyage.
 - Support the transfer of goods between physical locations by recognizing landed costs.
 - Recognize accruals for goods in transit.
 
@@ -56,9 +56,9 @@ In Microsoft Dynamics 365 Supply Chain Management, goods are typically received 
 
 When you create a voyage in Landed cost, costs can automatically be added to it. These costs are set up in Landed cost, and various cost options and cost bases are available for them. Each cost can be set up for different levels of a voyage and apportioned to the item level through apportionment rules that support quantity, volume, weight, amount, and defined volumetric divisors. These estimated costs provide an accurate estimate of all costs for a voyage.
 
-Landed cost then runs a preliminary posting/accrual of the estimated landed costs to ensure that an accurate calculation of estimated costs is provided at the time of voyage creation. As these automatic costs are invoiced, the estimated costs are reversed and replaced by the actual costs, based on vendor invoices.
+Landed cost then runs a preliminary posting/accrual of the estimated landed costs to ensure that an accurate calculation of estimated costs is provided at the time of voyage creation. As these automatic costs are invoiced, the estimated costs are reversed and replaced by the actual costs, based on cost invoices.
 
-Actual costs are reverse estimated costs that are posted at the time of vendor invoicing by using clearing accounts that are set up for each type of cost (for example, duty, freight, and insurance). These postings follow the posting behavior that is associated with the specific item. They automatically update inventory posting, regardless of whether the posting type is first in, first out (FIFO), last in, first out (LIFO), moving weighted average, or moving average. All inventory model group posting types are supported. For moving average and standard cost posting, purchase price variance accounts are available to post the differences between estimated costs and actual costs.
+Actual costs are reverse estimated costs that are posted at the time of cost invoicing by using clearing accounts that are set up for each type of cost (for example, duty, freight, and insurance). These postings follow the posting behavior that is associated with the specific item. They automatically update inventory posting, regardless of whether the posting type is first in, first out (FIFO), last in, first out (LIFO), moving weighted average, or moving average. All inventory model group posting types are supported. For moving average and standard cost posting, purchase price variance accounts are available to post the differences between estimated costs and actual costs.
 
 ### Item and order tracking
 

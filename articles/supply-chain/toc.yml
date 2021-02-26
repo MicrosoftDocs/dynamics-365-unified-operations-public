@@ -2749,12 +2749,12 @@
         href: landed-cost/estimate-manage-landed-costs.md
       - name: In-transit processing
         href: landed-cost/in-transit-processing.md
-
-
-      - name: In-transit processing
-        href: landed-cost/in-transit-processing.md
-
-
+      - name: Process over/under transactions
+        href: landed-cost/over-under-transactions.md
+      - name: Landed cost inquiries
+        href: landed-cost/landed-cost-inquiries.md
+      - name: Landed cost reports
+        href: landed-cost/landed-cost-reports.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
