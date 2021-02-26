@@ -122,11 +122,11 @@ Complete the following steps to generate the tax declaration report.
 
 1. Go to **Tax > Declarations** > **Withholding tax** > **Withholding tax payment*.
 2. Select the **Settlement period**.
-3. Select the from date.
-4. Enter the transactions date.
+3. Select the **From date.
+4. Enter the **Transaction date** .
 5. Select **OK** to confirm the above steps. 
 
-The following steps must be completed for the generation of withholding forms reports
+In the nex dialog box, follow these additional steps to complete the generation of withholding forms reports
 1. Select the form type: **Form No 41 **, **Form No 11**, **None**. Multiple selections are available. In case of selecting None, the standard report will be generated. 
 1. Select the language. All reports are translated in **en-us** and **ar-eg**.
 1. Enter the **branch** and **name** of Bank where the tax payment will be paid.
