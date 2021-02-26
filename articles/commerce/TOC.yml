@@ -540,6 +540,12 @@
             href: wallets.md
           - name: Payments FAQ 
             href: dev-itpro/payments-retail.md
+        - name: Email and notifications
+          items:
+          - name: Configure receipt emails to use custom layouts and templates
+            href: configure-emailed-receipt-formats.md
+          - name: Add a QR code or bar code to transactional and receipt emails
+            href: add-qr-code-barcode-email.md
         - name: Manage Bing Maps for your organization
           href: dev-itpro/manage-bing-maps.md
         - name: Create and update time slots for customer pickup
@@ -766,6 +772,8 @@
           href: refund_policy_returns.md
     - name: Manage your customers  
       items:
+      - name: Customer management in stores
+        href: customer-mgmt-stores.md
       - name: Clienteling
         items:
         - name: Clienteling overview
@@ -1066,6 +1074,10 @@
           items:
           - name: Account management pages and modules
             href: account-management.md
+        - name: Identity management modules
+          items:
+          - name: Identity management pages and modules
+            href: customer-mgmt-stores.md
         - name: Product collection modules
           items:
           - name: Product collection modules
@@ -2138,6 +2150,8 @@
             href: e-commerce-extensibility/data-action-overrides.md
           - name: Data action hooks
             href: e-commerce-extensibility/data-action-hooks.md
+          - name: Call server-side data actions with AJAX
+            href: e-commerce-extensibility/data-actions-with-ajax.md
         - name: Develop themes
           items:
           - name: Theming overview
