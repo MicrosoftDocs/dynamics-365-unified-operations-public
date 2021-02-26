@@ -53,7 +53,7 @@ For more information, see [Lifecycle Services resources](https://docs.microsoft.
 Before you install the Inventory Visibility Add-in, you must do the following:
 
 - Obtain an LCS implementation project with at least one environment deployed.
-- Make sure that the [prerequisites for setting up add-ins](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview) have been completed. Inventory Visibility doesn't require dual-write linking.
+- Make sure that the prerequisites for setting up add-ins provided in the [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) have been completed. Inventory Visibility doesn't require dual-write linking.
 - Contact the Inventory Visibility Team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the following three required files:
 
     - **Inventory Visibility Dataverse Solution.zip**
@@ -91,7 +91,7 @@ Follow these steps to set up Dataverse.
 
 1. Import the configuration upgrade trigger flow:
 
-    1. Go to the Flow page.
+    1. Go to the Microsoft Flow page.
     1. Make sure that the connection that is named *Dataverse (legacy)* exists. (If it doesn't exist, create it.)
     1. Import the **InventoryVisibilityConfigurationUpgradeTrigger.zip** file. After it's imported, the trigger will appear under **My flows**.
     1. Initialize the following four variables, based on the environment information:
