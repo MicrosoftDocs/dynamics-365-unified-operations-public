@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up withholding tax authorities for TDS tax type
-description: This topic lists the steps for setting up the Tax Deducted at Source (TDS) authorities.
+title: Set up withholding tax authorities for the TDS tax type
+description: This topic explains how to set up Tax Deducted at Source (TDS) authorities.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -30,23 +30,23 @@ ms.dyn365.ops.version: AX 10.0.17
 
 ---
 
-# Set up withholding tax authorities for TDS tax type
+# Set up withholding tax authorities for the TDS tax type
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for setting up the Tax Deducted at Source (TDS) authorities.
+This topic explains how to set up Tax Deducted at Source (TDS) authorities.
 
-Open the **Withholding tax authorities** page (**Tax > Indirect Taxes > Withholding tax authorities**).
+1. Go to **Tax \> Indirect taxes \> Withholding tax authorities**.
 
-[![Withholding tax authorities](./media/apac-ind-TDS-12.png)](./media/apac-ind-TDS-12.png)
+    [![Withholding tax authorities page](./media/apac-ind-TDS-12.png)](./media/apac-ind-TDS-12.png)
 
-1. In the **Tax type** field, select the **TDS** option to set up withholding tax authorities for TDS tax type.
+2. In the **Tax type** field, select **TDS** to set up withholding tax authorities for the TDS tax type.
+3. On the Action Pane, select **New** to create a line.
+4. In the **Withholding tax authority** field, enter a name for the TDS authority.
+5. In the **Description** field, enter a description.
+6. On the **General** FastTab, in the **Vendor account** field, select the vendor account for the TDS authority.
 
-2. Click **New** to create a new line. In the **Withholding tax authority** field, enter a name for the TDS authority. In the **Description** field, enter a description for the TDS authority.
+    > [!NOTE]
+    > You must define the name of the bank where funds that are owed to the TDS authority vendor will be deposited. The bank's name is defined on the **Bank accounts** page (**Accounts payable \> Vendors \> Setup button \> Bank accounts**).
 
-3. In the **Vendor** **account** field, select the vendor account for the TDS authority. 
-
-   > [!Note]
-   > You must define the name of the bank where funds that are owed to the TDS authority vendor will be deposited. The bank's name is defined on the **Bank accounts** page (**Accounts payable > Vendors > Setup button > Bank accounts**).
-
-4. Close the page.
+7. Close the page.
