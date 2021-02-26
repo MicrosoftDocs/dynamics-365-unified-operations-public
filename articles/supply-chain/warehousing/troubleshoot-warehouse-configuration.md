@@ -131,14 +131,14 @@ In this example our dock management profile is configured such that **Inventory 
 1. Select the **Work order type** to edit (for example, *Purchase orders*).
 1. Select the work template to edit.
 1. On the Action Pane, select **Edit query**.
-1. Open the **Sorting** tab, and add a row with the following settings:
+1. Open the **Sorting** tab and add a row with the following settings:
     - **Table** - *Temporary work transactions*
     - **Derived table** - *Temporary work transactions*
     - **Field** - *Shipment ID*
 1. Select **OK**.
 1. You return to the **Work templates** page. On the Action Pane, select **Work header breaks**.
-1. Select **Edit**.
+1. On the Action Pane, select **Edit**.
 1. Select the check box associated with the **Field name** *Shipment ID*.
-1. Select **Save**.
+1. On the Action Pane, select **Save**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
