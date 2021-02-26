@@ -46,7 +46,7 @@ Once you have [updated to SDK 1.28](sdk-updates.md) or later, you will need to c
 
 ##### Create a .eslintrc.js file
 
-You will need to add a new file named **.eslintrc.js** to your root SDK folder (where you should also see an existing **tslint.json** file). The **.eslintrc.js** file will contain a base rule set which can be extended.
+You will need to add a new file named **.eslintrc.js** to your root SDK folder (where you should also see an existing **tslint.json** file). The **.eslintrc.js** file will contain a base ruleset that can be extended.
  
 The base configuration contains a set of core rules that are relaxed when it comes to linting restrictions. You may also choose to define your own ruleset or extend another ruleset.
 
@@ -112,7 +112,7 @@ For more information and help, see the [ESLint documentation](https://eslint.org
 
 ##### Update the package.json file
  
-Inside your package.json file, you can leave the TSLint dependency (if you want to use both) and add the following dependencies into the **devDependencies** section:
+If you want to use both TSLint and ESLint, you can leave the TSLint dependency in your **package.json** file and add the following dependencies into the **devDependencies** section:
  
  ```json
         "@msdyn365-commerce/eslint-config": "^1.27.7",
@@ -135,7 +135,7 @@ Then change the **lint** and **lint:fix** commands to:
         "lint:fix": "yarn eslint src/**/*.{ts,tsx} --fix"
 ```
  
-Then change the **build** and **start** commands to:
+And finally, change the **build** and **start** commands to:
 ```json 
         "start": "yarn msdyn365b start local --use-eslint",
         "build": "yarn msdyn365b build --use-eslint",
