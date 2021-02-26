@@ -45,8 +45,8 @@ To configure the Egyptian electronic invoice (EG) Electronic invoicing feature, 
 
 Before you complete the procedure in this section, you must:
 
-- Create a digital certificate secret, as described in **Create digital certificate secret** section in the topic [Get started with the Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md). For testing purposes, the Egyptian tax authority provides specific test digital certificates that must be used only during testing and solution validation phases. For more information, consult the Egyptian tax authority web site using the link provided in the [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
-- Create an Egyptian electronic invoice (EG) Electronic invoicing feature for your organization, as described in the **Create an Electronic invoicing feature under your organization provider** section in the topic [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
+- Create a digital certificate secret, as described in **Create digital certificate secret** section in [Get started with the Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md). For testing purposes, the Egyptian tax authority provides specific test digital certificates that must be used only during testing and solution validation phases. For more information, consult the Egyptian tax authority web site using the link provided in the [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+- Create an Egyptian electronic invoice (EG) Electronic invoicing feature for your organization, as described in the **Create an Electronic invoicing feature under your organization provider** section in [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-on** tile.
 2. On the **Electronic invoicing add-on Features** page, verify that the **Egyptian electronic invoice (EG)** Electronic invoicing feature you created is selected.
@@ -55,7 +55,7 @@ Before you complete the procedure in this section, you must:
 5. Select **Edit**, and on the **Actions** tab in the **Actions** field group, select **Sign json document for Egyptian Tax Authority**.
 6. In the **Parameters** field group, select the parameter, **Certificate name** and select the name of the digital certificate created to use with the Electronic invoicing feature.
 7. In the **Actions** field group, select **Integrate with Egyptian ETA service**. Repeat this step for the two occurrences of this action.
-8. In the **Parameters** field group, select **Web service URL** and **Login service URL** and, if necessary, review the URL parameters. Consult the Egyptian tax authority web site to get the Testing and Production URL, using the link provided in the [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+8. In the **Parameters** field group, select **Web service URL** and **Login service URL** and, if necessary, review the URL parameters. Consult the Egyptian tax authority website to get the Testing and Production URL, using the link provided in the [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
 9. Select **Save** and close the page.
 10. To configure the application setup, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
