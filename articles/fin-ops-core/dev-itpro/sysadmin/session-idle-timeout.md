@@ -59,3 +59,6 @@ To give users awareness of an impending session suspension due to inactivity and
 -  If the **Session inactivity timeout** is between 10 and 30 minutes, the user will see a countdown notification starting **2 minutes** before the session is set to close. 
 -  If the **Session inactivity timeout** is less than 10 minutes, the user will see a countdown notification starting **30 seconds** before the session is set to close.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

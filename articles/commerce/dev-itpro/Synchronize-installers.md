@@ -74,3 +74,6 @@ The following illustration shows a generic example of the **Retail Self-service 
 | Modern POS | [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) |
 | Hardware station | [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) |
 | Commerce Scale Unit (formerly known as Retail Store Scale Unit) | [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md) |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

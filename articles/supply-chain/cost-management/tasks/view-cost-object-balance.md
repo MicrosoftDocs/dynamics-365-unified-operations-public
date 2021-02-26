@@ -41,3 +41,6 @@ The demo data company used to create this procedure is USMF. This procedure is i
 8. Clear the Location check box.
 9. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

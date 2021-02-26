@@ -94,7 +94,7 @@ Because the product is represented as a SKU, the concepts of distinct products, 
 
 ![Data model for products](media/dual-write-product.png)
 
-With the dual-write functionality enabled, the products from Finance and Operations will be synchronized in other Dynamics 365 products in **Draft** state. They are added to the first price list with the same currency. In other words, they are added to the first price list in a Dynamics 365 app that matches the currency of your legal table where the product is released in a Finance and Operations app. 
+With the dual-write functionality enabled, the products from Finance and Operations will be synchronized in other Dynamics 365 products in **Draft** state. They are added to the first price list with the same currency. In other words, they are added to the first price list in a Dynamics 365 app that matches the currency of your legal table where the product is released in a Finance and Operations app. If there is no price list for the given currency, a price list will automatically be created and the product will be assigned to it. 
 
 By default products from Finance and Operations apps are synchronized to other Dynamics 365 apps in **Draft** state. To synchronize the product with **Active** state so that you can directly use it in sales order quotations, for example, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**. 
 
@@ -230,3 +230,6 @@ Then, when the synchronization is enabled and takes place, the products from Fin
 ### Migration of product data from other Dynamics 365 apps to Finance and Operations
 
 If other Dynamics 365 apps have products that aren't present in Finance and Operations, the administrator can first use the **EcoResReleasedProductCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and other Dynamics 365 apps as described above. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

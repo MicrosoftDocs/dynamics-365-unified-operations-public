@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.17 (April 2021)
+          href: get-started/whats-new-platform-updates-10-0-17.md
         - name: Platform updates for 10.0.16 (February 2021)
           href: get-started/whats-new-platform-updates-10-0-16.md
         - name: Platform updates for 10.0.15 (January 2021)
@@ -206,7 +208,7 @@
                     href: data-entities/dual-write/tax-mapping.md
                 - name: Integrate procurement in Supply Chain Management with Field Service
                   href: data-entities/dual-write/scm-field-service-procurement.md
-                - name: Sync with the Dynamics 365 Supply Chain Management pricing engine on demand
+                - name: Sync on-demand with the Supply Chain Management pricing engine
                   href: data-entities/dual-write/pricing-engine.md
                 - name: Prospect to cash in dual-write
                   href: data-entities/dual-write/dual-write-prospect-to-cash.md
@@ -220,25 +222,25 @@
                   href: data-entities/dual-write/inventory-availability.md
             - name: Support for dual-write
               items:
-                - name: Support for Field Service solutions and Project Service Automation solutions
+                - name: Support for Field Service and Project Service Automation solutions
                   href: data-entities/dual-write/field-service-project-service-automation.md
                 - name: Migrate Prospect to cash data from Data Integrator to dual-write
                   href: data-entities/dual-write/migrate-prospect-to-cash.md
                 - name: Troubleshooting
                   items:
-                  - name: Verify that dual-write is configured in Finance and Operations apps and Dataverse
+                  - name: Verify dual-write configuration in Finance and Operations apps and Dataverse
                     href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                   - name: Troubleshoot issues during initial setup
                     href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                   - name: Troubleshoot issues during initial synchronization
                     href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                  - name: Troubleshoot issues with the Dual-write module in Finance and Operations apps
+                  - name: Troubleshoot dual-write issues in Finance and Operations apps
                     href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                   - name: Troubleshoot live synchronization issues
                     href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
                   - name: Troubleshoot issues related to solution awareness
                     href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                  - name: Troubleshoot issues related to upgrades of Finance and Operations apps
+                  - name: Troubleshoot issues from upgrades of Finance and Operations apps
                     href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                   - name: General troubleshooting
                     href: data-entities/dual-write/dual-write-troubleshooting.md
@@ -342,7 +344,7 @@
           href: data-entities/data-import-export-job.md
         - name: Synchronize date and time in import jobs
           href: data-entities/data-synchronize-date-and-time.md
-        - name: Best practices for importing vouchers using the General journal entity
+        - name: Importing vouchers using the General journal entity
           href: data-entities/tips-tricks-import-general-journal-entity.md
         - name: Optimizing data migration for Finance and Operations apps
           href: sysadmin/optimize-data-migration.md
@@ -958,11 +960,11 @@
           href: perf-test/trace-trace-tutorial.md
         - name: Single-user testing with Task recorder and the Performance SDK 
           href: perf-test/single-user-test-perf-sdk.md 
-        - name: Multi-user testing with the Performance SDK and a local test controller 
+        - name: Multi-user Performance SDK testing with a local test controller
           href: perf-test/multi-user-testing-local-test-controller.md 
         - name: Multi-user testing with the Performance SDK and Azure DevOps 
           href: perf-test/multi-user-testing-perfsdk-azuredevops.md 
-        - name: Troubleshooting guide for single-user or multi-user testing with the Performance SDK 
+        - name: Troubleshooting guide for testing with the Performance SDK 
           href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: Performance SDK and multiuser testing in on-premises environments
           href: perf-test/perfsdk-tutorial-lbd.md  
@@ -976,7 +978,7 @@
           href: perf-test/testing-validation.md
         - name: Test projects in Visual Studio
           href: perf-test/testing-support.md
-        - name: Deploy environments supporting continuous build and test automation
+        - name: Deploy and use a continuous build and test automation environment
           href: perf-test/continuous-build-test-automation.md
         - name: SysTest filtering using class and method attributes
           href: perf-test/systest-filtering.md
@@ -1126,6 +1128,8 @@
       items:
       - name: Microsoft Power Platform integration with Finance and Operations
         href: power-platform/overview.md
+      - name: Add-ins overview
+        href: power-platform/add-ins-overview.md
       - name: Entity modeling
         href: power-platform/entity-modeling.md
       - name: Application lifecycle management
@@ -1421,7 +1425,7 @@
       - name: Get support for Finance and Operations and Lifecycle Services
         href: lifecycle-services/lcs-support.md
       - name: Dynamics 365 support overview
-        href: https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
+        href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
       - name: Get support for Finance and Operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
       - name: Set up technical support for Finance and Operations apps
@@ -1460,6 +1464,8 @@
           href: sysadmin/tasks/create-new-users.md
         - name: User session management
           href: sysadmin/user-session-management.md
+        - name: Block access by location with Azure AD Conditional Access
+          href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
         - name: Import users in bulk
           href: sysadmin/tasks/import-bulk-users.md
         - name: Set up segregation of duties
@@ -1478,6 +1484,8 @@
           href: sysadmin/create-simple-security-policy.md
       - name: Stay compliant with user licensing requirements
         href: sysadmin/stay-compliant-user-license-requirement.md
+      - name: View independent software vendor license status
+        href: sysadmin/view-isv-license-status.md
       - name: Process automation
         href: sysadmin/process-automation.md
       - name: Batch processing
@@ -1496,15 +1504,13 @@
           href: sysadmin/batch-active-period-dst.md
         - name: Batch manager security role
           href: sysadmin/runby.md
-        - name: Batch job to handle SQL index defragmentation
-          href: sysadmin/batch-job-SQL-defragmentation.md
         - name: Configure batch alerts
           href: sysadmin/alerts.md
         - name: Enhanced batch forms
           href: sysadmin/enhanced-forms.md
         - name: Clean up the batch history
           href: sysadmin/batch-history-cleanup.md
-        - name: Abort an executing batch job
+        - name: Cancel an executing batch job
           href: sysadmin/batch-abort.md
       - name: Optimization advisor
         items:

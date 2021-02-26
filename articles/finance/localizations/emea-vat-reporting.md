@@ -281,3 +281,6 @@ The VAT statement for each country must meet the requirements of the country’s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,9 +3,9 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (August 20, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for August 20, 2020.
-author: Andreabichsel
-manager: AnnBe
-ms.date: 8/20/2020
+author: andreabichsel
+manager: tfehr
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,6 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (August 20, 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -87,9 +90,9 @@ Employees can view and request time away from work within Microsoft Teams. They 
  
 - **Manager time-off calendar**: Managers will be able to see approved and pending time off for their direct reports in a calendar view. This view provides an easy understanding of when their team members are away from work.
 
-### Checklist entities included in Common Data Service
+### Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Dataverse.
 
 ## Known issues
 
@@ -124,3 +127,6 @@ We have recently discovered two issues regarding the **BenefitsPlanEmployee** en
 [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ This release contains general performance improvements and minor bug fixes.
 ## LCS releases before November 2019
 
 For information about LCS releases that occurred before November 2019, see the blog posts that the Lifecycle Services team published on the [Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/author/lifecycle-services-team/).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

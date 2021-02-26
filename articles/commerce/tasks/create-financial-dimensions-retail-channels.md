@@ -57,3 +57,6 @@ This procedure walks through creating a commerce channel financial dimension wit
 24. In the list, click the link in the selected row.
 25. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

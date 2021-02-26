@@ -105,3 +105,6 @@ You can view a report of your estimated weekly peak load and the operating sites
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ After you've created maintenance requests, you can easily convert them to work o
 
     ![Open new work order](media/05-manage-maintenance-requests.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

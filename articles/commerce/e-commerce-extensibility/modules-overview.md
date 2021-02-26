@@ -227,3 +227,6 @@ If you require a feature that isn't available in the set of modules in the modul
 [Create a new module](create-new-module.md)
 
 [Data action overrides](data-action-overrides.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

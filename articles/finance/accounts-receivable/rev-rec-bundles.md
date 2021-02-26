@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.7
 This topic describes the bundle functionality that is included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items. The parent item is entered on a sales order, so that order entry is more efficient. However, it's then exploded into the component items. Internal documents, such as the packing slip, will list the component items. However, external documents will show only the parent item.
 
 > [!NOTE]
-> Microsoft Dynamics 365 Commerce  channels, such as online, point of sale (POS), and call centers, don't support revenue recognition (including the bundle functionality). Items that are configured to use revenue recognition should not be added to orders or transactions that are created in Commerce channels.
+> Microsoft Dynamics 365 Commerce  channels, such as online, point of sale (POS), and call centers, don't support revenue recognition (including the bundle functionality). This also includes the Prospect to cash solution for Dynamics 365 Supply Chain Management and Dynamics 365 Sales. Items that are configured to use revenue recognition should not be added to orders or transactions that are created in Commerce channels or in the Prospect to cash solution.
 
 To set up bundles, you must enter the configuration keys for revenue recognition. However, you can use bundles even if revenue recognition isn't set up. Likewise, you can use revenue recognition if bundles aren't set up. If revenue recognition is set up, the component items determine the revenue price and the revenue schedule that is used for revenue recognition or deferral when a sales order is invoiced.
 
@@ -115,3 +115,6 @@ The invoice journal that is created after posting occurs doesn't include the par
 It's important that the invoice journal not include the parent item from the bundle, because any processes that are performed after the invoice is posted are based on that invoice journal. For example, if you create a credit note from the **Sell** tab on the Action Pane, the credit note that is created will include the component items but not the parent item.
 
 [![Credit note that shows the component items but not the parent item](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

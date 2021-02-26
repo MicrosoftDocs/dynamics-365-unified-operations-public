@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Configure format to do counting and summing (Part 3 - Use computations to make the output)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output. 
+description: This topic describes how to configure an Electronic reporting format to do counting and summing based on data of the already generated text output. (Part 3)
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -135,3 +135,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 77. Click Save.
 78. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -527,3 +527,6 @@ After all these journal entries are created and posted, you will see the followi
 | 11         | Accumulated depreciation |                                                   |                                                   |                                                   | 0\.00                   |   |                                                 |                                                |                                                |                                                | \-949\.75                                      | \-949\.75                               |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

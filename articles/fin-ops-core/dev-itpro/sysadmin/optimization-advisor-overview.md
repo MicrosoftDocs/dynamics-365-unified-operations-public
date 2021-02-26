@@ -98,3 +98,6 @@ To deactivate the evaluation of specific rules, select the opportunity that was 
 [Create rules for Optimization advisor](./create-rules-optimization-advisor.md)
 
 [Optimization advisor in Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Those common scenarios are available for retailers using Commerce. With Commerce
 + Pick up products at the current store or another store.
 + Cancel an order at the current store or another store.
 + Return an order with or without the receipt at the current store or another store.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

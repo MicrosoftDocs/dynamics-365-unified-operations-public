@@ -85,3 +85,6 @@ This functionality is available to all roles that can maintain sales packing sli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

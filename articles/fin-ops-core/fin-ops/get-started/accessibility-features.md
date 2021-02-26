@@ -102,3 +102,6 @@ On smartphones and other small screens, the controls and the form layout will re
 ## Guidance to help developers and customers incorporate accessible thinking in their customizations
 
 To learn more about Microsoft best practices for enabling accessibility, see [Accessibility in forms, products, and controls](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

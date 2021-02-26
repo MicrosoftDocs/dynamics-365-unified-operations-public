@@ -73,3 +73,6 @@ This procedure uses the JPMF demo company data.
 12. Click OK.
 13. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

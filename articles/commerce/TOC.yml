@@ -94,6 +94,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.17 (April 2021)
+            href: get-started/whats-new-commerce-10-0-17.md
           - name: Commerce 10.0.16 (February 2021)
             href: get-started/whats-new-commerce-10-0-16.md
           - name: Commerce 10.0.15 (January 2021)
@@ -220,7 +222,7 @@
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json  
         - name: Implement Finance and Operations Commerce projects
           href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-        - name: Set up new environments, Azure DevOps, and branches for Commerce projects
+        - name: Set up new environments, Azure DevOps, and branches for projects
           href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
         - name: Update code and environments for Commerce projects
           href: dev-itpro/updating-environments.md
@@ -648,6 +650,8 @@
             href: personalization-gdpr.md
         - name: Enable "shop similar looks" recommendations
           href: shop-similar-looks.md
+        - name: Enable "shop similar description" recommendations
+          href: shop-similar-description.md
         - name: POS experiences
           items:
           - name: Add product recommendations on POS
@@ -954,6 +958,8 @@
             href: enrich-category-page.md
           - name: Verify page content accessibility
             href: verify-accessibility.md
+          - name: Create dynamic e-commerce pages based on URL parameters
+            href: create-dynamic-pages.md            
         - name: Site navigation
           items:
           - name: Customize site navigation
@@ -1064,6 +1070,8 @@
           items:
           - name: Product collection modules
             href: product-collection-module-overview.md
+          - name: Quick view module
+            href: quick-view-module.md
         - name: Navigation modules
           items:
           - name: Breadcrumb module
@@ -2080,6 +2088,8 @@
             href: e-commerce-extensibility/request-properties-object.md
           - name: App settings
             href: e-commerce-extensibility/app-settings.md
+          - name: Platform settings file
+            href: e-commerce-extensibility/platform-settings.md
           - name: Extend a module definition
             href: e-commerce-extensibility/extend-module-definition.md
           - name: Cookie API overview
@@ -2087,7 +2097,9 @@
           - name: Interactive components overview
             href: e-commerce-extensibility/interactive-components.md
           - name: Mock the signed-in state during local development
-            href: e-commerce-extensibility/mock-sign-in.md 
+            href: e-commerce-extensibility/mock-sign-in.md
+          - name: Configure module properties to be shown based on context
+            href: e-commerce-extensibility/configure-properties-context.md
           - name: Globalize modules by using the CultureInfoFormatter class
             href: e-commerce-extensibility/globalize-modules.md
           - name: Set up Azure Key Vault for secure key management
@@ -2174,7 +2186,7 @@
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Upcoming changes in the Retail SDK
           href: dev-itpro/UpcomingSDKChanges.md
-        - name: Important development and ALM changes from version 10.0.10 to 10.0.13
+        - name: Development and ALM changes from version 10.0.10 to 10.0.13
           href: dev-itpro/dev-changes-10-13.md
         - name: Merge the build systems for Commerce and Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
@@ -2184,7 +2196,7 @@
           href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
         - name: Create deployable packages
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-        - name: Development in cloud-hosted dev environments without admin access
+        - name: Development in cloud-hosted environments without admin access
           href: dev-itpro/cloud-dev-box.md
         - name: Set up Commerce SDK build pipeline
           href: dev-itpro/retail-sdk/SDK-build-pipeline.md
@@ -2260,7 +2272,7 @@
         items:
         - name: Commerce Scale Unit customer and consumer APIs
           href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and later)
+        - name: Create Retail Server extension API (Retail SDK version 10.0.11 and later)
           href: dev-itpro/retail-server-icontroller-extension.md
         - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)
           href: dev-itpro/retail-server-extension.md

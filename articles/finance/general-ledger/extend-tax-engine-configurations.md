@@ -506,3 +506,6 @@ After the status is updated to **Complete**, the configuration is ready for depl
 5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.
 6.  Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

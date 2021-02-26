@@ -73,3 +73,6 @@ After the status of the NF-e is received from SEFAZ, you can perform the followi
  - [NF-e 3.10 (Brazil)](tasks/br-00053-nf-e-3-10.md)
  - [Automatic transmission of NF-e fiscal documents (Brazil)](tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

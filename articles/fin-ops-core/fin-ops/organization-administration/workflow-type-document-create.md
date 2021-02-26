@@ -99,3 +99,6 @@ You can add a calculated field to the workflow document class only if it meets t
 ## See also
 
 [Associate a workflow document class with a workflow type](workflow-type-associate-document.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

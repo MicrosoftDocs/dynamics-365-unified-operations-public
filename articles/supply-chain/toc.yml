@@ -72,12 +72,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.17 (April 2021)
+            href: get-started/whats-new-scm-10-0-17.md
           - name: Supply Chain Management 10.0.16 (February 2021)
             href: get-started/whats-new-scm-10-0-16.md
           - name: Supply Chain Management 10.0.15 (January 2021)
             href: get-started/whats-new-scm-10-0-15.md
-          - name: Supply Chain Management 10.0.14 (November 2020)
-            href: get-started/whats-new-scm-10-0-14.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -154,6 +154,8 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Standard saved views for Supply Chain Management
+          href: get-started/saved-views-scm.md
         - name: Grid capabilities
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
@@ -224,6 +226,8 @@
         href: cloud-edge/cloud-edge-workload-manufacturing.md
       - name: Warehouse management workloads for cloud and edge scale units
         href: cloud-edge/cloud-edge-workload-warehousing.md
+      - name: Warehouse orders for cloud and edge scale units
+        href: cloud-edge/cloud-edge-warehouse-order.md
     - name: Asset management
       items:
       - name: Asset management overview
@@ -363,6 +367,8 @@
         items:
         - name: Forecasts, work orders, and projects
           href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+        - name: Bill for maintenance on customer-owned assets
+          href: asset-management/integration-to-project-management-and-accounting/customer-billing.md
       - name: Integrate asset management with fixed assets
         href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
       - name: Preventive and reactive maintenance
@@ -1921,6 +1927,8 @@
           href: production-control/bom-designer-functionality.md
         - name: Use the formula designer
           href: production-control/formula-designer.md
+        - name: Override the default reservation principle for materials in production
+          href: production-control/override-default-reservation-principle.md
         - name: Add variant products to purchase orders using variant weights
           href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
         - name: Create a sales order for a configurable product
@@ -2013,6 +2021,8 @@
         href: engineering-change-management/engineering-attributes-and-search.md
       - name: Engineering versions and engineering product categories
         href: engineering-change-management/engineering-versions-product-category.md
+      - name: Enable change management on existing products
+        href: engineering-change-management/change-management-existing-products.md
       - name: Product lifecycle state and transactions
         href: engineering-change-management/product-lifecycle-state-transactions.md
       - name: Manage changes to engineering products
@@ -2039,6 +2049,8 @@
             href: production-control/bill-of-material-bom.md
           - name: BOM designer functionality
             href: production-control/bom-designer-functionality.md
+          - name: Override the default reservation principle for materials in production
+            href: production-control/override-default-reservation-principle.md
           - name: Phantom items
             href: production-control/phantom-items.md
           - name: BOM calculations
@@ -2769,6 +2781,8 @@
             href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
+          - name: Set different dimensions for packing and storage
+            href: warehousing/packing-vs-storage-dimensions.md
           - name: Set up containerization
             href: warehousing/tasks/set-up-containerization.md
           - name: Batch and license plate confirmation
@@ -2835,6 +2849,8 @@
             href: warehousing/wave-template-grouping.md
           - name: Reprint and void wave labels
             href: warehousing/reprint-and-void-wave-labels.md
+          - name: Small parcel shipping
+            href: warehousing/small-parcel-shipping.md
           - name: Troubleshoot load building and shipments
             href: warehousing/troubleshoot-warehouse-loads-shipments.md
         - name: Shipment consolidation policies
@@ -2935,6 +2951,8 @@
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
             href: warehousing/tasks/configure-wave-processing.md
+          - name: Schedule work creation during wave
+            href: warehousing/configure-wave-schedule-work-creation.md
           - name: Set up and use wave label printing
             href: warehousing/configure-wave-label-printing.md
           - name: Auto-update shipments
@@ -2969,6 +2987,10 @@
             href: warehousing/troubleshoot-warehouse-configuration.md
         - name: Install and configure the warehouse app
           items:
+          - name: Install and connect the Warehouse Management mobile app
+            href: warehousing/install-configure-warehouse-management-app.md
+          - name: Mobile device user settings
+            href: warehousing/mobile-device-user-settings.md
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
           - name: Scan bar codes using a camera in the warehouse app

@@ -55,3 +55,6 @@ ms.dyn365.ops.version: 10.0.4
 To validate the financial entries, select **Inquiries** \> **Voucher**.
 
 ![Example](media/Annotation-2019-05-16-110044.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

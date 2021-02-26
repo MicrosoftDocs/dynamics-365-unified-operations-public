@@ -169,3 +169,6 @@ Some formulas can't be tested at design time. For example, a formula might retur
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Electronic reporting formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

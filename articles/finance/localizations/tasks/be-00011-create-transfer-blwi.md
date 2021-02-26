@@ -54,3 +54,6 @@ Customer/vendor transactions marked with one of the chosen payment purpose codes
 17. Click OK.
 18. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

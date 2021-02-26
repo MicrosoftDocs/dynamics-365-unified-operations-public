@@ -63,3 +63,6 @@ This procedure walks through looking up a customer, creating a new order, search
 
 [Change mode of delivery in POS](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

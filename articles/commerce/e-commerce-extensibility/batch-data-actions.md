@@ -105,3 +105,6 @@ Because this action now supports batching, if the action is called in multiple p
 [Data action overrides](data-action-overrides.md)
 
 [Data action hooks](data-action-hooks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

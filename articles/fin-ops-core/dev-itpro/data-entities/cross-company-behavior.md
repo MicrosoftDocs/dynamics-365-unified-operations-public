@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-company behavior of data entities
-description: This topic provides information about how data entities interact with the cross-company concept. To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept. Therefore, this topic begins with a brief review of tables and views, and then explains how data entities are related.
+description: This topic provides information about how data entities interact with the cross-company concept.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -206,3 +206,6 @@ Here's how the X++ test code works with the shared entity:
 - It accesses the data entity with one specific company when a new record is created.
 
 [![X++ test code](./media/snip2.png)](./media/snip2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

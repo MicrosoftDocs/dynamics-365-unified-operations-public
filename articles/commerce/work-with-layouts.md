@@ -112,3 +112,6 @@ After you've previewed the changes to your preset layout, follow one of these st
 [Templates and layouts overview](templates-layouts-overview.md)
 
 [Work with templates](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

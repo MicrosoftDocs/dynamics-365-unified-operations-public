@@ -154,3 +154,6 @@ Additionally, you can view cash flow forecasting data for specific accounts, ord
 - **Supply forecast**: Select **Cash flow forecasts** to view the future cash flows that are associated with the selected item supply forecast.
 - **Demand forecast**: Select **Cash flow forecasts** to view the future cash flows that are associated with the selected item demand forecast.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

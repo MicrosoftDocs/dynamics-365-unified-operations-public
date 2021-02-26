@@ -4,7 +4,7 @@
 title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 221024
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Performance management
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 
@@ -168,3 +171,5 @@ Performance journal source types describe where the performance journals come fr
 ### Review types
 
 Performance review types help you control the behavior of a review. You can enable or disable workflow for a review. If the review does not use workflow, you can define the default status that will be used when the review is created. You can also decide if the employee, the manager, or both will be required to sign off on the review.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

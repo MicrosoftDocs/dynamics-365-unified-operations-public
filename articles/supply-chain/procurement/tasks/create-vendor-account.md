@@ -61,3 +61,6 @@ This procedure shows how to create a vendor account, and add an address and cont
 7. Close the page.
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

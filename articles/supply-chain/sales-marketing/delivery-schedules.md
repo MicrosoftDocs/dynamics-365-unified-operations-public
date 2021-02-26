@@ -61,3 +61,6 @@ When you confirm sales quotations, the resulting sales orders show the whole del
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

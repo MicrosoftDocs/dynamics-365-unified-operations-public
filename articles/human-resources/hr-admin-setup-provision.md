@@ -4,7 +4,7 @@
 title: Provision Human Resources
 description: This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Provision Human Resources
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -109,7 +112,7 @@ Use the following guidance when determining which Power Apps environment to depl
 
 2. A single Human Resources environment is mapped to a single Power Apps environment.
 
-3. A Power Apps environment contains Human Resources, along with the corresponding Power Apps, Power Automate, and Common Data Service applications. If the Power Apps environment is deleted, so are the apps within it. When provisioning a Human Resources environment, you can provision either a **Trial** or **Production** environment. Choose the type of environment based on how the environment will be used. 
+3. A Power Apps environment contains Human Resources, along with the corresponding Power Apps, Power Automate, and Dataverse applications. If the Power Apps environment is deleted, so are the apps within it. When provisioning a Human Resources environment, you can provision either a **Trial** or **Production** environment. Choose the type of environment based on how the environment will be used. 
 
 4. Data integration and testing strategies should be considered, such as Sandbox, UAT, or Production. Carefully consider the implications for your deployment, because it's not easy to change which Human Resources environment is mapped to a Power Apps environment.
 
@@ -129,3 +132,6 @@ Use the following guidance when determining which Power Apps environment to depl
 ## Grant access to the environment
 
 By default, the global administrator who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. The global administrator that deployed Human Resources must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users. Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

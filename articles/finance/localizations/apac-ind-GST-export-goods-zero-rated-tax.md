@@ -67,3 +67,6 @@ Complete the procedures in this topic to export goods that have zero-rated tax.
 
 1. Select **Inquiries** \> **Shipping bill**.
 2. Select **Voucher**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

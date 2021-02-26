@@ -39,7 +39,7 @@ This topic will be updated as new removed or deprecated features are documented 
 This list is intended to help you consider these removals and deprecations for your own planning.
 
 > [!NOTE]
-> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.15 release
 
@@ -78,3 +78,6 @@ This list is intended to help you consider these removals and deprecations for y
 ## Previous announcements about removed or deprecated features
 
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

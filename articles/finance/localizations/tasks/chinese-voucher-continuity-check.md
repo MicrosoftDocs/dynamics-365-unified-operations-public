@@ -59,3 +59,6 @@ This procedure was created using the demo data company CNMF. This procedure is f
 4. Click OK.
 5. Go to General ledger > Inquiries and reports > Voucher continuity check log.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

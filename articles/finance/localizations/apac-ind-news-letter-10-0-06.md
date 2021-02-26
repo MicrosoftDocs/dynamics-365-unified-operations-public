@@ -82,3 +82,6 @@ Tax information has been enabled for procurement categories. Tax information can
 -	Incorrect calculation of GST for a credit note. 
 -	Incorrect TDS calculation on the **Open vendor invoice** page.  
 -	The **Business verticals** field for the GST registration number on the **Enterprise Tax Registration Numbers** page should be editable and not greyed out. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

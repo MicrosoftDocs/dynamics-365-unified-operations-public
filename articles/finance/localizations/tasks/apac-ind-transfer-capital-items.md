@@ -64,3 +64,6 @@ This procedure walks you through transferring a capital item by issuing inventor
 17. In the Site field, enter or select a value.
 18. In the Warehouse field, enter or select a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ The next day, your manager informs you that computers decreased 8 percent instea
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

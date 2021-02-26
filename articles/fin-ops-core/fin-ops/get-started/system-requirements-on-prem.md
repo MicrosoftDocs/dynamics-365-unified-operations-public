@@ -5,7 +5,7 @@ title: System requirements for on-premises deployments
 description: This topic lists the system requirements for on-premises deployments.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -288,12 +288,15 @@ The following table lists the SQL Server versions that are supported for the dat
 
 ## Software requirements for client computers
 
-The Finance + Operations web application can run on any device that has an HTML 5.0–compliant web browser. Here are some of the specific device/browser combinations that Microsoft has confirmed:
+Users can access Finance + Operations by using the most recent versions of these popular browsers:
 
-- Microsoft Edge (latest publicly available version) on Windows 10
-- Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
-- Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet
-- Apple Safari (latest publicly available version) on Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) or 10.12 (Sierra), or Apple iPad
+- Microsoft Edge (recommended: [Chromium-based Edge](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf))
+- Google Chrome
+- Apple Safari
+- Internet Explorer 11 (deprecated, not recommended)
+
+> [!NOTE]
+> For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. Support for Internet Explorer 11 is deprecated. For more information, see the [Internet Explorer deprecation announcement](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/removed-deprecated-features-platform-updates#platform-updates-for-version-10015-of-finance-and-operations-apps).
 
 ## Software requirements for Active Directory Federation Services
 
@@ -315,3 +318,6 @@ The following Microsoft Office applications are supported in on-premises deploym
 ## Hardware and software requirements for Commerce components
 
 Currently, Finance + Operations doesn't include the Commerce components.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

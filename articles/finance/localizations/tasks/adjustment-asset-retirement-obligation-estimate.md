@@ -71,3 +71,6 @@ This task was created using the demo data company JPMF.
     * Confirm the adjustment is proposed. The amount proposed is discounted to the present value.  
 13. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

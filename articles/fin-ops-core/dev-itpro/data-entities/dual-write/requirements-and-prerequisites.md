@@ -224,3 +224,6 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 ## Next steps
 
 [Use the dual-write wizard to link your environments](link-your-environment.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

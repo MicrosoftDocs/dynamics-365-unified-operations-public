@@ -131,3 +131,6 @@ Translations of product-related information can be managed at any time. When tra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

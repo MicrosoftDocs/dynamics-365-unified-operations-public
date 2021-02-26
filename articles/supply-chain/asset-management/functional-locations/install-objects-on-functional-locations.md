@@ -87,3 +87,6 @@ After the setup data is available, you're ready to create an asset.
 1. On the **All Functional locations** page, make sure that the functional location where you want the asset to be automatically created uses the functional location type that you created for this purpose.
 2. Select the functional location in the list.
 3. Select **Update functional location state**, and then select the lifecycle state that you created for this purpose. One asset is now automatically installed on the functional location. This asset has the same name as the functional location.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

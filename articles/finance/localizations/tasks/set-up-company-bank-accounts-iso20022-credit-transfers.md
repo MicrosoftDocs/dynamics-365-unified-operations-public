@@ -54,3 +54,6 @@ This is the second procedure, out of five, that illustrates the vendor payment p
 4. In the Bank account field, enter or select a value.
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

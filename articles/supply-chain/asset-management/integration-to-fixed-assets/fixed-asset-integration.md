@@ -119,3 +119,6 @@ To remove an existing association between a maintenance asset and a fixed asset,
 1. Find and open the fixed asset.
 1. On the **Fixed asset** FastTab, clear the value from the **Functional location** field.
 1. On the Action Pane, select **Save**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

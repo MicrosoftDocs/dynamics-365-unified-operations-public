@@ -85,3 +85,6 @@ When a legal entity purchases a fixed asset, the PIS and COFINS tax credit that 
 52. Close the page.
 53. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ After you enter the general information about the opening sheet, you'll need to 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

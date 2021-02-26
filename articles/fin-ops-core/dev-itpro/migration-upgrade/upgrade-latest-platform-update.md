@@ -199,3 +199,6 @@ Additional resources
 --------
 
 [Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

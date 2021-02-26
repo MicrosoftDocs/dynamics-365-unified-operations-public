@@ -58,3 +58,6 @@ Complete the following steps to assign the Batch manager security role to a spec
 The **run by user** functionality allows Batch managers to specify a user to run the batch job. This functionality is useful when you want to change the user who is currently assigned to run the job or if you want to quickly set a user while copying the batch jobs from one company to another. You can also use this functionality to copy batch jobs.
 
 ![RunBy User](./media/runby-user.png)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

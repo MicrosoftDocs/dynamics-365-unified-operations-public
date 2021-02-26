@@ -56,3 +56,6 @@ You can cancel a CFDI electronic invoice that was previously validated and certi
 6. Click OK to confirm the cancelation of the electronic invoice.
     * The status of electronic invoice is Manual cancel.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

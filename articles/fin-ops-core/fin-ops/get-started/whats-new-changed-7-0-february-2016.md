@@ -1038,3 +1038,6 @@ No new features have been added.
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
 
 [New task guides (February 2016)](new-task-guides-available-february-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

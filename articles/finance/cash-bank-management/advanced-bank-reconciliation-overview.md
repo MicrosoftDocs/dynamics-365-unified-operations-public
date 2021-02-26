@@ -55,3 +55,6 @@ The advanced bank reconciliation feature lets you import bank statements. The im
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

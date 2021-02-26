@@ -57,3 +57,6 @@ To set up your success metrics, follow these steps.
 
 ## Next step
 [Connect and edit an experiment](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

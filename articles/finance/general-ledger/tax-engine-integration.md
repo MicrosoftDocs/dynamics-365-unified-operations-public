@@ -562,3 +562,6 @@ By querying these tables to obtain the JSON string, you can easily check the res
 
 - [Tax engine overview](tax-engine.md)
 - [Extend tax engine configurations](extend-tax-engine-configurations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

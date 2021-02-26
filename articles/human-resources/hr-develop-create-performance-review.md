@@ -4,7 +4,7 @@
 title: Create performance reviews
 description: This topic explains how to create a performance review and describes the purpose for each section of the review. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 05/05/2020
 ms.topic: business-process 
 ms.prod:  
@@ -17,6 +17,7 @@ ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -26,6 +27,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create performance reviews
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 This topic explains how to create a performance review and describes the purpose for each section of the review. This procedure was created using the USMF demo data company.
@@ -80,3 +83,6 @@ This topic explains how to create a performance review and describes the purpose
 34. Select the **Review** tab. As the review moves through the statuses, the employee and manager can add comments for each goal or competency.  
 35. Select the **Sign offs** tab. The worker and manager can sign off on the review. When all required signoffs are complete, the status is changed to **Completed** and no more changes can be made.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

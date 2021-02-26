@@ -80,3 +80,6 @@ This task uses the USMF demo company.
 10. Click Save.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

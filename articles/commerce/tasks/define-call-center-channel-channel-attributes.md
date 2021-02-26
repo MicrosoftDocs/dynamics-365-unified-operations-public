@@ -103,3 +103,6 @@ This procedure walks through creating a new commerce channel and defining channe
 65. Click Save.
 66. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

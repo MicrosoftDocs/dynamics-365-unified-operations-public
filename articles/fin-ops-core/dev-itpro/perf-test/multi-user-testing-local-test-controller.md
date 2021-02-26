@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Multi-user testing with the Performance SDK and a local test controller
-description: This topic explains how to do multi-user testing by using Microsoft Visual Studio and the Performance SDK together with performance test scripts that are generated from Task recorder.
+title: Multi-user Performance SDK testing with a local test controller
+description: This topic explains how to do multi-user testing by using Microsoft Visual Studio, the Performance SDK, and the Task Recorder test scripts.
 author: hasaid
 manager: AnnBe
 ms.date: 07/07/2020
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Multi-user testing with the Performance SDK and a local test controller
+# Multi-user Performance SDK testing with a local test controller
 
 [!include [banner](../includes/banner.md)]
 
@@ -52,7 +52,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 ## Configure a development environment for multi-user testing
 
-1. Download [ODBC Driver 17 for SQL Server](https://docs.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15), rename the download file **msodbcsql**, and copy it to the **Visual Studio Online** folder under the **PerfSDK** folder.
+1. Download [ODBC Driver 17 for SQL Server](https://docs.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server), rename the download file **msodbcsql**, and copy it to the **Visual Studio Online** folder under the **PerfSDK** folder.
 
     [![msodbcsql file in Visual Studio Online folder](./media/multi-user-test-local-01.png)](./media/multi-user-test-local-01.png)
 
@@ -278,3 +278,6 @@ Open the **SampleLoadTest.load** test to create test users and import them into 
 ## Troubleshooting
 
 For information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide for single-user or multi-user testing with the Performance SDK](troubleshoot-perf-sdk-user-testing.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

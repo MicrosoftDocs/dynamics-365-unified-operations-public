@@ -123,3 +123,6 @@ The following example shows how to add a new table map that is named **Address b
 ## Next steps
 
 [Error management and alert notifications](errors-and-alerts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

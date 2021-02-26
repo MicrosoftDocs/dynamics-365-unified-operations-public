@@ -4,7 +4,7 @@
 title: Mass hire projects
 description: Mass hire projects allow human resources specialists to create multiple positions and efficiently hire workers into those positions.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: HRMMassHireProject, HcmPersonnelManagementWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7481
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Mass hire projects
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -86,3 +89,6 @@ On the **Mass hire project** page, click **Open project** or **Close project** t
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

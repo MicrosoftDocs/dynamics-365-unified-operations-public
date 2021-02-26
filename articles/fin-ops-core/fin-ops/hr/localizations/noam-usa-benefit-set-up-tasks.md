@@ -366,3 +366,6 @@ The next step is to set up payroll information for positions and workers. For mo
 [Set up payroll calculation frequencies](noam-usa-payroll-calculation-frequencies-tasks.md)
 
 [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

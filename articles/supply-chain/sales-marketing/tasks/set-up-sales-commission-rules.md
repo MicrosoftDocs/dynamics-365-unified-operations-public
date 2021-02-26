@@ -98,3 +98,6 @@ This procedure shows you how to set up and enable sales commission calculation a
 17. In the list, select the commission group that you created earlier.
 18. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ You can create purchase agreement classifications that add administrative fields
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

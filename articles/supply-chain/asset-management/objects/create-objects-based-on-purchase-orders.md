@@ -74,3 +74,6 @@ You can run a **Pending asset count** to check for pending assets. For example, 
 3. You can set up this job to run as a batch job, for example, once each day.
 
 **Caution:** If data is changed on a purchase order *after* you have created an asset based on the appertaining item, those changes will not be reflected on the asset.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

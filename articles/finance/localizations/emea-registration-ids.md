@@ -115,3 +115,6 @@ For more information about registration IDs processing, including required prere
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

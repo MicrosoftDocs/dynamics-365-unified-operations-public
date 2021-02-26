@@ -57,3 +57,6 @@ When you right-click some higher-level elements, such as tables, the **View Refe
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ This procedure walks through creating financial dimensions for point of sale (PO
 17. In the list, find and select the dimension value for the register being updated.
 18. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ The [Deploy custom Help to Azure](walkthrough-help-azure.md) topic describes an 
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Configure the Help experience for Finance and Operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

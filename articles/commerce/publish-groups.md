@@ -157,3 +157,6 @@ Currently, the publish groups feature supports only website content. However, Mi
 [Templates and layouts overview](templates-layouts-overview.md)
 
 [Customize site navigation](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

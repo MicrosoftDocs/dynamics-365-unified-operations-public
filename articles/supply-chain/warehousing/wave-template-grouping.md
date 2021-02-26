@@ -203,3 +203,6 @@ A new wave was created for this shipment, because it uses a different carrier se
 1. Select the wave ID that was created from the third sales order.
 1. Select the wave ID link to open the wave details page.
 1. Notice that the shipment has been added to the **Wave lines** FastTab, together with the shipment for the first sales order.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

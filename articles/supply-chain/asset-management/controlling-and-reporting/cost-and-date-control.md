@@ -112,3 +112,6 @@ The screenshot below shows an example of calculation results in **Work order dat
 ![Example calculation results in Work order date control](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

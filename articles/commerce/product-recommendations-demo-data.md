@@ -92,3 +92,6 @@ The extension contains a datafile called 'RecoMockDataset.csv', which allows you
 [Manually create curated recommendations](create-editorial-recommendation-lists.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

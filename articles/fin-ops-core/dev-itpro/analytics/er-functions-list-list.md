@@ -78,3 +78,6 @@ In this case, the expression `LIST('Record 1', 'Record 2')` returns a new list t
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

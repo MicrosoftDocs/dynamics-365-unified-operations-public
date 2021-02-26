@@ -130,3 +130,6 @@ The database refresh process (self-service or via service request) cannot be com
 If upgrading your sandbox UAT environment to a newer Application version (for example, 7.3 to 8.1), be sure to perform the database refresh action prior to starting the upgrade. After your sandbox is upgraded to the newer version, you cannot restore an older production environment database in to the sandbox UAT environment.
 
 Conversely, if your production environment is newer than your target sandbox, you will need to either upgrade the target sandbox prior to the refresh or simply deallocate, delete, and redeploy prior to performing the refresh.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,9 +3,9 @@
 
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 02/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.reviewer: sericks
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: July 2017 update 
 ---
@@ -78,6 +78,7 @@ SharePoint communication works for the current user only if the following condit
 - A Microsoft 365 license is associated with the user's account.
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
+- The SharePoint site is configured to **Allow this site to appear in search results**.
 - The user has access to the folder that the document is stored in.
 
 If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 
@@ -288,3 +289,6 @@ To extract attachments, an Attachments entity must be built for a specific busin
 ### How does the document preview work for attachments stored in SharePoint?
 
 The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

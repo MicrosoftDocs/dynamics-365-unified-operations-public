@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Access application metadata by using connected applications
-description: The steps in this topic explain how a Regulatory configuration service (RCS) user can design a new Electronic reporting (ER) model mapping by using metadata in Finance and Operations.
+description: The steps in this topic explain how a Regulatory configuration service user can design a new Electronic reporting model mapping by using metadata.
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/29/2019
@@ -116,3 +116,6 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 11. Close the page. 
 
 When you need to evaluate this model mapping by using metadata of a different version application, register another connected application, assign it to this model mapping and validate it against new metadata.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -117,3 +117,6 @@ resolve &lt;T&gt;(value?: T &#124; PromiseLike &lt;T&gt;): Promise &lt;T&gt;
 
 #### Returns Promise &lt;T&gt;
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

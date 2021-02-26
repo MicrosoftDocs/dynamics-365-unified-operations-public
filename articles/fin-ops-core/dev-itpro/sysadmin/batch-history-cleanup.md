@@ -65,3 +65,6 @@ The custom batch job lets you to apply additional filtering, based on criteria s
 4. Select **OK**.
 
 ![Custom job](./media/batch-cleanup-custom.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

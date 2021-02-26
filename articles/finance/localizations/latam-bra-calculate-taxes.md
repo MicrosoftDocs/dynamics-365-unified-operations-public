@@ -107,3 +107,6 @@ For sales transactions with taxation codes that have a fiscal value of **1. with
 -   [Brazilian withholding taxes](tasks/br-00009-brazilian-withholding-taxes.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

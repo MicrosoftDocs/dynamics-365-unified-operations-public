@@ -323,3 +323,6 @@ An event that is triggered when the input control's data changes.
 > Inherited from [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged)
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

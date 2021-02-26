@@ -82,3 +82,6 @@ After you finalize all the earnings, you're ready to generate pay statements. Fo
 ## Additional resources
 
 [Earnings and earnings generation FAQ](noam-usa-earnings-generation-process.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

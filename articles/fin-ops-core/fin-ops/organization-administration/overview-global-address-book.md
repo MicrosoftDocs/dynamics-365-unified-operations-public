@@ -75,3 +75,6 @@ Each party record's addresses, locations, and contact information are shared acr
 ### Locations and transactions
 
 When a party role is included in a transaction, the location, address, or contact information of the party can be accessed when transaction details are entered.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

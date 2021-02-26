@@ -4,7 +4,7 @@
 title: Request a leave of absence
 description: Submit a leave of absence request. 
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: ESSLeaveofAbsenceRequestEntry, EssWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Request a leave of absence
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can submit a request for a leave of absence and see the status of your leave requests in Dynamics 365 Human Resources.
 
@@ -57,3 +60,6 @@ You can submit a request for a leave of absence and see the status of your leave
 ## See also
 
 [Suspend leave](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

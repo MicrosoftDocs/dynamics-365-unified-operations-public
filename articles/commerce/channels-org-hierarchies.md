@@ -29,12 +29,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Set up organization hierarchies
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Before creating channels, you'll want to ensure you have set up your organization hierarchies.
 
@@ -91,3 +88,6 @@ The following image shows a legal entity added at the hierarchy root with four c
 [Channels overview](channels-overview.md)
 
 [Channel setup prerequisites](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

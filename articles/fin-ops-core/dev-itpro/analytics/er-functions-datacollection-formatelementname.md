@@ -58,3 +58,6 @@ For more information about how to use this function, see the [ER Use data of for
 ## Additional resources
 
 [Data collection functions](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

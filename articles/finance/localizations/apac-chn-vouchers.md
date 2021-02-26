@@ -57,3 +57,6 @@ You can print a Chinese voucher either before or after you post the voucher. The
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

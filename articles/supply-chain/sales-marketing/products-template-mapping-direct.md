@@ -126,3 +126,6 @@ The following illustration shows an example of a template mapping in Data integr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

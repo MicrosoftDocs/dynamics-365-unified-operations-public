@@ -58,3 +58,6 @@ When the orders are selected, a list of all the returnable products across all t
 
 If the order is fully returned, the amount of taxes returned to the customer will be equal to the amount of tax originally charged.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

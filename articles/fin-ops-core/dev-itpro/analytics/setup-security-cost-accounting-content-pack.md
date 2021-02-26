@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up security for the Cost accounting analysis Power BI content
-description: This topic explains how you can propagate the access-level security in Cost accounting to row-level security in Microsoft Power BI. This functionality helps guarantee that users see only Power BI data that they are granted access to.
+description: This topic explains how you can propagate the access-level security in Cost accounting to row-level security in Microsoft Power BI.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -69,3 +69,6 @@ We assume that your organization wants to restrict data access. If, for some rea
 
 ## Additional resources
 To learn more about Power BI row-level security, see [Manage security on your model in Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

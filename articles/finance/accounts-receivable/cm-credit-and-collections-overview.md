@@ -83,3 +83,6 @@ For descriptions of these concepts, see [Collections management key concepts](./
 [Credit holds for sales orders](./cm-sales-order-credit-holds.md)
 
 [Customer credit management periodic tasks](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

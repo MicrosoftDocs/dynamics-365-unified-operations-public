@@ -62,3 +62,6 @@ This task guide requires Dynamics AX platform 7.1 or later.
 27. Refresh the page.
 28. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

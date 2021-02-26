@@ -45,3 +45,6 @@ To create multiple one-time vendors and invoices, you first create a file that c
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

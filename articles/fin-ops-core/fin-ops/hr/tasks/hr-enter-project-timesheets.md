@@ -55,3 +55,6 @@ This procedure lets you create a timesheet by using an empty timesheet form. The
 21. Click **Submit**.
 22. Click **Submit**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

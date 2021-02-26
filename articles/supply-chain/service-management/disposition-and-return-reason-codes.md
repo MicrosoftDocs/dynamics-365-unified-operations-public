@@ -58,3 +58,6 @@ Assign a disposition code when an item is received or during the physical inspec
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

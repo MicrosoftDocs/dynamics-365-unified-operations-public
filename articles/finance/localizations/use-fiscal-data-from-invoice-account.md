@@ -40,3 +40,6 @@ To enable this functionality for purchase orders, sales orders, and free text in
 -	**Never** - The information is updated from the vendor or customer account.
 -	**Always** - The information is updated from the invoice account.
 -	**Ask** - The user is prompted to specify whether the information should be updated from the invoice account or from the vendor or customer account. If the user selects **Yes**, the information is updated from the invoice account; otherwise the default is to update information from the vendor or customer account.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

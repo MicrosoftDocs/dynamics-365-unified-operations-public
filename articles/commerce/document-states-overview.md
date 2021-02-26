@@ -63,3 +63,6 @@ The following table shows the possible document states of page elements in Comme
 [Templates and layouts overview](templates-layouts-overview.md)
 
 [Customize site navigation](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

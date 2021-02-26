@@ -61,3 +61,6 @@ When you set up the invoice update for batch processing, the sales order of type
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

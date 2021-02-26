@@ -66,3 +66,6 @@ The following four properties, in three tasks in the pipeline, need to be update
 | Execute Tests | Test platform version | Visual Studio 2015 | Visual Studio 2017 |
 | Execute Tests | Other console options | `/Platform:X64 /InIsolation /UseVsixExtensions:true` | `/Platform:X64 /InIsolation /TestAdapterPath:"$(VsixExtensionFolder)"` |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ You can enter the bid as either a vendor or a procurement professional. For more
 ## View the purchase order that is generated
 
 On the Action Pane, on the **General** tab, select **Purchase order**. The page that appears shows the purchase order that was generated when you accepted the bid.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

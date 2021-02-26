@@ -76,3 +76,6 @@ The main section of the home page can highlight products, categories, or promoti
 [Cart and checkout pages overview](quick-tour-cart-checkout.md)
 
 [Account management pages overview](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

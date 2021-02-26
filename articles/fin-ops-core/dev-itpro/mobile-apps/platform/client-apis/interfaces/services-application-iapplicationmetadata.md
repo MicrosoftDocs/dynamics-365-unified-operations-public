@@ -92,3 +92,6 @@ Title: string
 The title of the application
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

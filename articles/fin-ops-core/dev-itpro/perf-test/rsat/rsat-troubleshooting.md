@@ -132,3 +132,6 @@ If your test case requires validation that a certain control of type Date/Time i
 ## Azure DevOps connectivity
 
 You might you see this error when you select the desired Azure DevOps project in RSAT settings: "The structure path \<iteration path\> is not valid. Verify your settings and try again". To resolve this error, open the project in Azure DevOps and navigate to the Test Plans. Verify the iteration path defined for each test plan. If the iteration path is similar to what is shown in the error, remove the existing iteration path and add a new one for the test plan and save.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

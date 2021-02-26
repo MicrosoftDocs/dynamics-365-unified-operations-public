@@ -121,3 +121,6 @@ This setting indicates the default time to refresh (in seconds) for all the cach
 [Core data actions](core-data-actions.md)
 
 [Call Retail Server APIs](call-retail-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

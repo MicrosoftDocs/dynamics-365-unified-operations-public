@@ -62,3 +62,6 @@ On the **Active asset loans** page, you can view a list of all the loan assets t
 3. In the **Returned** field, enter the date and time.
 4. Select **OK**.
 5. Refresh the **Active asset loans** list page, and notice that the asset loan no longer appears in the list.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ This topic provides links to extensibility updates.
 + [Extensibility changes in version 7.3](extensibility-changes-73.md)
 + [Extensibility changes July 2017](changes-july-2017.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

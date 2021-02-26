@@ -96,3 +96,6 @@ This procedure was created using the demo data company JPMF.
 14. Click Confirm.
     * Only confirmed Accelerated depreciation documents can be used for the proposal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Use the following steps to add the additional BankTransactionType field to the c
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -318,3 +318,6 @@ Currently, both work IDs have the same target license plate. To complete the nex
 The following illustration shows how the completed cross-docking work might appear in Microsoft Dynamics 365 Supply Chain Management.
 
 ![Cross-docking work completed](media/PlannedCrossDockingWork.png "Cross-docking work completed")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

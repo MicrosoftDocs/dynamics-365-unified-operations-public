@@ -114,3 +114,5 @@ Entity E1
 
 |_F4 (UK inferred)
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

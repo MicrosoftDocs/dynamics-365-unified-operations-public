@@ -130,3 +130,6 @@ This topic explains how to update the local agent. The latest version of the loc
 
 8. After the local agent is successfully installed, go back to your on-premises connector in LCS.
 9. On the **Validate setup** tab, select **Message agent** to test LCS connectivity to your new local agent.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

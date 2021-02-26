@@ -4,8 +4,8 @@
 
 title: Configure and manage database logging
 description: You can track changes to tables and fields in Dynamics 365 Human Resources with database logging.
-author: Andreabichsel
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
@@ -19,6 +19,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure and manage database logging
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can track changes to tables and fields in Dynamics 365 Human Resources with database logging. This topic describes how to:
 
@@ -92,3 +95,6 @@ To set up database log cleanup, follow these steps:
    - Created date and time
 
 3. Use the **Database log cleanup** tab to determine when to run the log cleanup task. By default, database logs are available for 30 days.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

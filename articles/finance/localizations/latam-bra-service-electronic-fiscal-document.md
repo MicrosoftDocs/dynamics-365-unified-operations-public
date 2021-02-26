@@ -105,3 +105,6 @@ When you import an electronic fiscal document for services, information about th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

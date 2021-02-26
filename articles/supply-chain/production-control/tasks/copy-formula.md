@@ -67,3 +67,6 @@ This procedure focuses on creating a formula that includes the same ingredients 
 5. Click Select.
 6. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

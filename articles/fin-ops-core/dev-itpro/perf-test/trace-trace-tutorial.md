@@ -81,3 +81,6 @@ This tutorial requires that you access the environment as an administrator on th
 
 > [!NOTE]
 > The trace will be deleted after 7 days. For more information about the desktop version of trace parser, see [Diagnose issues and analyze performance by using Trace parser](trace-parser.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

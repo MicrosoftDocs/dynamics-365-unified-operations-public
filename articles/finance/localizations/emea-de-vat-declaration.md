@@ -725,7 +725,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 ## Prerequisite
 
-Before you begin, go to the **General ledger parameters** page and expand the **Tax options** FastTab. In the **Special report** field group, make sure that the **Include corrections** parameter is enabled. 
+Before you begin, go to the **General ledger parameters** page and expand the **Tax options** FastTab. In the **Special report** field group, make sure that the **Include corrections** parameter isn't enabled. 
 
 ## Set up sales tax codes
 
@@ -967,3 +967,6 @@ You can also generate the German sales tax report by using the **Report sales ta
 | 181                | 19                   |
 | 186                | 7                    |
 | 193                | 7                    |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

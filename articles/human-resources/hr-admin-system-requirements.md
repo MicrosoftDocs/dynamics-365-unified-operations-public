@@ -4,7 +4,7 @@
 title: System requirements
 description: This article describes requirements for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # System requirements
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article describes requirements for Microsoft Dynamics 365 Human Resources. It also outlines the countries and regions where Human Resources is available, and information about languages and localization for Human Resources data.
 
@@ -68,3 +71,6 @@ You can download a PDF file of the countries, regions, and languages Human Resou
 > While the user interface is localized into other languages, all user data is stored in the language in which it was entered. You can create emails and templates in other languages, but data such as scheduling information is only available in English at this time.
 
 If you're a developer interested in creating country- or region-specific customizations, or in creating a solution for a country or region not currently supported by Microsoft, see [Globalization](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

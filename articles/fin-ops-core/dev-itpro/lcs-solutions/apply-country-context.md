@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply country/region context
-description: This topic provides information about how to apply country/region context to meet localization and translation requirements. In this topic, you can find information how to use the country context property and what application objects control user interface elements.
+description: This topic provides information about how to apply country/region context to meet localization and translation requirements.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -94,3 +94,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

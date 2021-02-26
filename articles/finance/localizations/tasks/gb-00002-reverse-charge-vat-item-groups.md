@@ -153,3 +153,6 @@ This walkthrough was created using the demo company GBSI.
     * Select 'RC-VAT-AR'  
 8. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.15
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
-> Not all business functionality is fully supported in the public preview when workload scale units are used. Be sure to use only the processes that this topic explicitly describes as supported.
+> Not all warehouse management business functionality is fully supported for warehouses running a workload on a scale unit. Be sure to use only the processes that this topic explicitly describes as supported.
 
 ## Warehouse execution on scale units
 
@@ -57,9 +57,10 @@ The scale units own the following data:
 - **Wave processing data** – Selected wave process methods are handled as part of the scale unit wave processing.
 - **Work processing data** – The following types of work order processing are supported:
 
-    - Inventory movements (manual movement and movement by template work)
-    - Purchase orders (putaway work via a warehouse order)
-    - Sales orders (simple picking and loading work)
+  - **Inventory movements** (manual movement and movement by template work)
+  - **Purchase orders** (putaway work via a warehouse order when purchase orders are not associated with loads)
+  - **Sales orders** (simple picking and loading work)
+  - **Transfer orders** (only outbound with simple picking and loading work)
 
 - **Warehouse order receipt data** – This data is used only for purchase orders that are manually released to a warehouse.
 - **License plate data** – License plates can be created on the hub and the scale unit. Dedicated conflict handling has been provided. Note that this data isn't warehouse-specific.
@@ -70,11 +71,11 @@ The hub owns the following data:
 
 - All source documents, such as sales orders and transfer orders
 - Order allocation and outbound load processing
-- The release to warehouse, shipment creation, and wave creation processes
+- The release to warehouse, shipment creation, wave creation, and wave finalization processes
 
 The scale units own the actual wave processing (such as work allocation, replenishment work, and demand work creation) after the release of the wave. Therefore, warehouse workers can process outbound work by using a warehouse app that is connected to the scale unit.
 
-![Wave processing flow](./media/wes_wave_processing_flow.png "Wave processing flow")
+![Wave processing flow](./media/wes-wave-processing-ga.png "Wave processing flow")
 
 ## Inbound process flow
 
@@ -82,17 +83,18 @@ The hub owns the following data:
 
 - All source documents, such as purchase orders and sales return orders
 - Inbound load processing
+- All cost and financial updates
 
 > [!NOTE]
-> The inbound purchase order flow is conceptually different from the outbound flow, where the scale unit that does the processing depends on whether the order has been released to a warehouse.
+> The inbound purchase order flow is conceptually different from the outbound flow. You can operate the same warehouse on either the scale unit or the hub depending on whether the purchase order has been released to warehouse or not. Once you have released an order to the warehouse, you can only work with that order while signed in on the scale unit.
 
-If you're using the *release to warehouse* process, warehouse orders are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
+If you're using the *release to warehouse* process, [*warehouse orders*](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
 
 The worker can run the receiving process by using a warehouse app that is connected to the scale unit. The data is then recorded by the scale unit and reported against the inbound warehouse order. The creation and processing of the subsequent putaway will also be handled by the scale unit.
 
 If you aren't using the *release to warehouse* process, and therefore aren't using *warehouse orders*, the hub can process warehouse receiving and work processing independently from scale units.
 
-![Inbound process flow](./media/wes_Inbound_flow.png "Inbound process flow")
+![Inbound process flow](./media/wes-inbound-ga.png "Inbound process flow")
 
 ## Supported processes and roles
 
@@ -102,16 +104,16 @@ To facilitate this process, a sample role that is named *Warehouse manager on wo
 
 User roles on a scale unit are assigned as part of the initial data synchronization from the hub to the scale unit.
 
-To modify the roles that are assigned to a user, go to **System administration \> Security \> Assign users to roles** on the scale unit. Users who act as warehouse managers only on scale units should be assigned only the *Warehouse manager on workload* role. This approach will ensure that those users have access only to the supported functionality. Remove any other roles that are assigned to those users.
+To modify the roles that are assigned to a user, go to **System administration \> Security \> Assign users to roles**. Users who act as warehouse managers only on scale units should be assigned only the *Warehouse manager on workload* role. This approach will ensure that those users have access only to the supported functionality. Remove any other roles that are assigned to those users.
 
-Users who act as warehouse managers on both the hub and scale units should be assigned the existing *Warehouse worker* role. Be aware that this role grants warehouse workers access to features (such as transfer order processing) that appear in the user interface (UI) but aren't currently supported on scale units.
+Users who act as warehouse managers on both the hub and scale units should be assigned the existing *Warehouse worker* role. Be aware that this role grants warehouse workers access to features (such as transfer order receiving processing) that appear in the user interface (UI) but aren't currently supported on scale units.
 
 ## Supported WES processes
 
 The following warehouse execution processes can be enabled for a WES workload on a scale unit:
 
-- Selected wave methods for sales orders and demand replenishment
-- Running work orders from sales orders and demand replenishment by using the warehouse app
+- Selected wave methods for sales and transfer orders (allocation, demand replenishment, containerization, work creation, and wave label printing)
+- Processing sales and transfer order warehouse work using the warehouse app (including replenishment work)
 - Querying on-hand inventory by using the warehouse app
 - Creating and running inventory movements by using the warehouse app
 - Registering purchase orders and doing putaway work by using the warehouse app
@@ -119,84 +121,120 @@ The following warehouse execution processes can be enabled for a WES workload on
 The following work order types are currently supported for WES workloads on scale unit deployments:
 
 - Sales orders
+- Transfer issue
 - Replenishment
 - Inventory movement
-- Purchase orders that are linked to warehouse orders
+- Purchase orders (linked to warehouse orders)
 
-No other processing of source documents is currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform the following actions:
+No other types source-documents processing or warehouse work are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (transfer receipt) or process cycle counting work.
 
-- Release a transfer order.
-- Process the outbound warehouse picking and shipping operations.
-
-> [!IMPORTANT]
-> If you use a workload on a scale unit, you can't run unsupported processes for the specific warehouse on the hub.
-
-The following warehouse management functionality isn't currently supported on scale units:
-
-- Inbound and outbound processing for items that have any active tracking dimensions (such as batch or serial number dimensions)
-- Processing of inventory status changes
-- Processing of inventory that has a blocking status value
-- Integration with quality management
-- Integration with production
-- Processing of catch-weight items
-- Processing of over-delivery and under-delivery
-- Processing of negative on-hand inventory
-
-### Outbound (supported only for sales orders and demand replenishment)
-
-The following table shows which outbound features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
+> [!NOTE]
+> Mobile device menu items and buttons for unsupported functionalities aren't shown in the _warehouse app_ when it is connected to a scale unit deployment.
 
 > [!WARNING]
-> Because only sales order processing is supported, outbound warehouse management processing can't be used for transfer orders.
+> When you run a workload on a scale unit, you can't run unsupported processes for that specific warehouse on the hub. The tables provided later in this topic document the supported capabilities.
 >
-> Some warehouse functionality won't be available at warehouses that are running the warehouse management workloads in a scale unit.
+> Selected warehouse work types can be created both on the hub and on scale units, but can only be maintained by the owning hub or scale unit (the deployment which created the data).
+>
+> Even when a specific process is scale unit supported, be aware that all the needed data might not get synchronized from the hub to the scale unit, or from the scale unit to the hub, which risks resulting in unexpected system processing. Examples being:
+> 
+> - If you use a location directive query that joins a data table record that only exists at the hub deployment.
+> - If you use location status and/or location volumetric load functionalities. This data will not get synchronized between the deployments and will therefore only work when updating location inventory on-hand on one of the deployments.
+
+The following warehouse management functionality isn't currently supported for scale unit workloads:
+
+- Inbound processing of purchase order lines assigned to a load
+- Inbound processing of purchase orders for a project
+- Inbound and outbound processing for items that have active tracking dimensions **Owner** and/or **Serial number**
+- Processing of inventory that has a blocking status value
+- Changing of an inventory status during any work movement process
+- Order-committed flexible warehouse-level dimension reservations
+- Use of *Warehouse location status* functionality (the data isn't synced between the deployments)
+- Use of *Location license plate positioning* functionality
+- Use of *Product filters* and *Product filter groups*, including the **Number of days to mix batches** setting
+- Integration with quality management
+- Processing with catch-weight items
+- Processing with items only enabled for Transportation management (TMS)
+- Processing with negative on-hand inventory
+- Warehouse work processing with custom work types
+- Warehouse work processing with shipment notes
+- Warehouse work processing with cycle counting threshold triggering
+- Warehouse work processing with material handling/warehouse automation
+- Use of product master data image (for example, on the warehouse app)
+
+> [!WARNING]
+> Some warehouse functionality won't be available for warehouses running the warehouse management workloads on a scale unit, and also isn't supported on the hub or on the scale unit workload.
+> 
+> Other capabilities can get processed on both, but will require careful use in some scenarios, such as when inventory on-hand gets updated for the same warehouse on both the hub and scale unit due to the asynchronous data update process.
+> 
+> Specific functionalities (such as *block work*) which are supported on both the hub and scale units will only be supported for the owner of the data.
+
+### Outbound (supported only for sales and transfer orders)
+
+The following table shows which outbound features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
 
 | Process                                                      | Hub | WES workload on a scale unit |
 |--------------------------------------------------------------|-----|------------------------------|
 | Source document processing                                   | Yes | No |
 | Load and transportation management processing                | Yes | No |
 | Release to warehouse                                         | Yes | No |
-| Shipment consolidation                                       | No  | No |
-| Cross docking (picking work)                                 | No  | No |
-| Shipment wave processing                                     | No, but finalization of the wave status is handled in the hub |<p>Yes, but the following capabilities aren't supported:</p><ul><li>Parallel work creation</li><li>Load building and sorting</li><li>Containerization</li><li>Wave label printing</li></li></ul><p><b>Note:</b> Access to the hub is required to finalize the wave status as part of the wave processing.</p> |
-| Warehouse work processing (incl. license plate print)     | No  | <p>Yes, but only for the following capabilities:</p><ul><li>Sales picking (without the use of active tracking dimensions)</li><li>Sales loading (without the use of active tracking dimensions)</li></ul> |
-| Cluster picking                                              | No  | No |
-| Packing processing                                           | No  | No |
+| Planned cross docking                                        | No  | No |
+| Shipment consolidation                                       | Yes | No |
+| Shipment wave processing                                     | Yes, but only initialization and finalization of the wave is handled in the hub. This means that outbound transfer and sales order processing only can get handled by the scale unit.|<p>No, initialization and finalization gets handled by the hub and the **Load building and sorting** are not supported<p><b>Note:</b> Access to the hub is required to finalize the wave status as part of the wave processing.</p> |
+| Maintain shipments for wave                                  | Yes | No |
+| Warehouse work processing (incl. license plate print)        | No  | <p>Yes, but only for the above mentioned supported capabilities. |
+| Cluster picking                                              | No  | Yes|
+| Manual packing processing, incl. 'Packed container picking' work processing                                           | No <P>Some processing can be done after a initial picking process handled by a scale unit, but not recommended due to following blocked operations.</p>  | No  |
+| Remove container from group                        | No  | No                           |
 | Outbound sorting processing                                  | No  | No |
 | Printing of load related documents                           | Yes | No |
 | Bill of lading and ASN generation                            | Yes | No |
-| Ship confirmation and packing slip processing                | Yes | No |
-| Short picking (sales orders)                                 | No  | No |
-| Work cancellation                                            | No  | No |
-| Change of work locations (sales orders)                      | No  | No |
-| Complete work (sales orders)                                 | No  | No |
-| Block and unblock work                                       | No  | No |
-| Change user                                                  | No  | No |
-| Print work report                                            | No  | No |
-| Wave label                                                   | No  | No |
+| Shipment confirm                    | Yes  | No |
+| Shipment confirmation with "Confirm and transfer"                    | No  | No |
+| Packing slip and invoicing processing                | Yes | No |
+| Short picking (sales and transfer orders)                    | No  | No |
+| Over picking (sales and transfer orders)                     | No  | No |
+| Change of work locations (sales and transfer orders)         | No  | Yes|
+| Complete work (sales and transfer orders)                    | No  | Yes|
+| Print work report                                            | Yes | No |
+| Wave label                                                   | No  | Yes|
+| Work split                                                   | No  | Yes|
+| Work processing - Directed by 'Transport loading'            | No  | No |
+| Reduce picked quantity                                       | No  | No |
 | Reverse work                                                 | No  | No |
+| Reverse shipment confirmation                                | Yes | No |
 
 ### Inbound
 
 The following table shows which inbound features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
 
-| Process                                                          | Hub | WES workload on a scale unit |
-|------------------------------------------------------------------|-----|------------------------------|
+| Process                                                          | Hub | WES workload on a scale unit<BR>*(Items marked "Yes" apply only for warehouse orders)*</p> |
+|------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
 | Source&nbsp;document&nbsp;processing                                       | Yes | No |
 | Load and transportation management processing                    | Yes | No |
-| Shipment confirmation                                            | Yes | No |
+| Inbound shipment confirmation                                            | Yes | No |
 | Purchase order release to warehouse (warehouse order processing) | Yes | No |
-| Purchase order item receiving and put away                        | <p>Yes,&nbsp;when&nbsp;there&nbsp;isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when there is a warehouse order, and when a purchase order isn't part of a <i>load</i>. However, two mobile device menu items must be used, one for receiving (<i>Purchase order item receiving</i>) and another, with the <b>Use existing work</b> option enabled, to process the putaway.</p><p>No, when there isn't a warehouse order.</p> |
-| Purchase order line receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Cancellation of warehouse order lines<p>Note that this only is supported when no registration has happened against the line</p>          | Yes | No |
+| Purchase order item receiving and put away                       | <p>Yes,&nbsp;when&nbsp;there&nbsp;isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p> |
+| Purchase order line receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p></p> |
 | Return order receiving and put away                               | Yes | No |
 | Mixed license plate receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
-| Load item receiving                                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Load item receiving                                             | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | License plate receiving and put away                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Transfer order item receiving and put away                        | Yes | No |
 | Transfer order line receiving and put away                        | Yes | No |
-| Work cancellation                                                | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) isn't supported.</p> |
-| Purchase order product receipt processing                        | Yes | No |
-| Cross docking work creation as part of receiving                 | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Cancel work (inbound)                                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but only when the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) is cleared</p> |
+| Purchase order product receipt processing                          | Yes | No |
+| Purchase order receiving with underdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No, because you can only cancel the full warehouse order line quantities |
+| Purchase order receiving with overdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes  |
+| Receiving with creation of *Cross docking*  work                   | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Receiving with creation of *Quality order* work                  | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Receiving with creation of *Quality item sampling* work          | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Receiving with creation of *Quality in quality check* work       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Receiving with quality order creation                            | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Work processing - Directed by *Cluster putaway*                             | Yes | No |
+| Work processing with *Short pick*                                           | Yes | No |
+| License plate loading                                           | Yes | No |
 
 ### Warehouse operations and exception handing
 
@@ -208,42 +246,55 @@ The following table shows which warehouse operations and exception handing featu
 | Item inquire                                       | Yes | Yes                          |
 | Location inquire                                   | Yes | Yes                          |
 | Change warehouse                                   | Yes | Yes                          |
-| Movement                                           | No  | Yes                          |
-| Movement by template                               | No  | Yes                          |
+| Movement                                           | Yes | Yes                          |
+| Movement by template                               | Yes | Yes                          |
+| Warehouse transfer                                 | Yes | No                           |
+| Create transfer order from warehouse app           | Yes | No                           |
 | Adjustment (in/out)                                | Yes | No                           |
+| Inventory status change                            | Yes | No                           |
 | Cycle counting and Counting discrepancy processing | Yes | No                           |
-| Reprint label (license plate printing)             | Yes | No                           |
+| Reprint label (license plate printing)             | Yes | Yes                          |
 | License plate build                                | Yes | No                           |
 | License plate break                                | Yes | No                           |
+| Pack to nested license plates                                | Yes | No                           |
 | Driver check in                                    | Yes | No                           |
 | Driver check out                                   | Yes | No                           |
-| Change batch disposition code                      | Yes | No                           |
-| Display open work list                             | Yes | No                           |
-| Consolidate license plates                         | No  | No                           |
-| Remove container from group                        | No  | No                           |
-| Cancel work                                        | No  | No                           |
-| Min/max replenishment processing                   | No  | No                           |
-| Slotting replenishment processing                  | No  | No                           |
+| Change batch disposition code                      | Yes | Yes                          |
+| Display open work list                             | Yes | Yes                          |
+| Consolidate license plates                         | Yes | No                           |
+| Min/max and zone threshold replenishment processing| Yes <p>Recommendation is not to include the same locations as part of the queries</p>| Yes                          |
+| Slotting replenishment processing                  | Yes  | Yes<p>Note that the setup must be done on the scale unit</p>                           |
+| Block and unblock work                             | Yes | Yes                          |
+| Change user                                        | Yes | Yes                          |
+| Change work pool on work                           | Yes | Yes                          |
+| Cancel work                                        | Yes | Yes                          |
+
 
 ### Production
 
-Warehouse management integration for production scenarios isn't currently supported, as indicated in the following table.
+Warehouse management production scenarios aren't currently supported on scale unit workloads, as indicated in the following table.
 
 | Process | Hub | WES workload on a scale unit |
 |---------|-----|------------------------------|
-| <p>All warehouse management processes that are related to production. Here are some examples:</p><li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>Finished goods put away</li><li>Co-product and by-product put away</li><li>Kanban put away</li><li>Kanban picking</li><li>Start production order</li><li>Production scrap</li><li>Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li></ul> | No | No |
+| <p>All warehouse management processes that are related to production. Here are some examples:</p><li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>RAF and finished goods put away</li><li>Co-product and by-product put away</li><li>Kanban put away</li><li>Kanban picking</li><li>Start production order</li><li>Production scrap</li><li>Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li></ul> | Yes | No |
 
 ## Maintaining scale units for WES
 
 Several batch jobs run on both the hub and scale units.
 
-On the hub deployment, you can manually maintain the batch jobs. You can manage the following three jobs at **Warehouse management \> Periodic tasks \> Back-office workload management**:
+On the hub deployment, you can manually maintain the batch jobs. You can manage the following batch jobs at **Warehouse management \> Periodic tasks \> Back-office workload management**:
 
 - Process work status update events
-- Process wave execution control transfer events
+- Scale unit to hub message processor
 - Register source order receipts
+- Complete warehouse orders
+- Process quantity update responses for warehouse order lines
 
-On the workload in scale units, you can manage the following two batch jobs at **Warehouse management \> Periodic tasks \> Workload management**:
+On the workload in scale units, you can manage the following batch jobs at **Warehouse management \> Periodic tasks \> Workload management**:
 
 - Process wave table records
-- Process wave execution control transfer events
+- Warehouse hub to scale unit message processor
+- Process quantity update requests for warehouse order lines
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

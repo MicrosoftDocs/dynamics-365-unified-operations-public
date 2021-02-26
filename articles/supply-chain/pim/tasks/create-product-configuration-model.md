@@ -85,3 +85,6 @@ This procedure shows how to create a product configuration model and enter basic
 17. In the Per series field, enter a number.
 18. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

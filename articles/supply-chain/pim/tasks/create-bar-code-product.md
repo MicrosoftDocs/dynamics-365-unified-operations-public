@@ -45,3 +45,6 @@ This topic shows how to manually create a bar code using the item number M0001 a
 12. Select **Save**.
 13. Close the page. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

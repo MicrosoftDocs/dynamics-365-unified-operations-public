@@ -144,3 +144,6 @@ On July 20, April creates a final payment for 200.00. No discount is taken, beca
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ You will see additional transactions for the reporting currency amounts.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

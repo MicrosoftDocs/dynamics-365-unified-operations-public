@@ -70,3 +70,6 @@ This procedure shows how to create, print, and post interest notes. This task us
 5. Click **OK**.
 6. In the **Status** field, select 'Posted'.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

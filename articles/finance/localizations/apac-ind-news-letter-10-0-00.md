@@ -79,3 +79,6 @@ You can multi-select lookup columns and search available columns.
 - No customer billing name for stock transfer in GSTR.
 -	No default logic for original GST transaction ID for a credit note.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

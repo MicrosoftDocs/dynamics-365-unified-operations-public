@@ -18,6 +18,7 @@ ms.search.form: EssWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # View team and company calendars
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can view team and company calendars in Dynamics 365 Human Resources. Team calendars only display direct reports, as defined in the line hierarchy.
 
@@ -76,3 +79,6 @@ You can also filter calendars by manager or department. The primary position ass
 
 For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

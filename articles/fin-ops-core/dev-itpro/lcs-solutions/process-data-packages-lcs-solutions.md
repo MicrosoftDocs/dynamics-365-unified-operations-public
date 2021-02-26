@@ -166,3 +166,6 @@ Follow these steps to consume the PDP.
 ### Additional resources
 
 [Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

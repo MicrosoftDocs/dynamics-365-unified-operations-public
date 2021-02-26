@@ -4,7 +4,7 @@
 title: Configure shared parameters
 description: You must set up shared parameters for records that are shared across companies, such as Position records. This article explains how to set up Human resources parameters across legal entities.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: HcmSharedParameters, HcmPersonnelManagementWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure shared parameters
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You must set up shared parameters for records that are shared across companies, such as Position records. This article explains how to set up Human resources parameters across legal entities.
 
@@ -49,3 +52,6 @@ On the **Positions** tab, indicate whether new positions are available for assig
 
 -   **Always** – You can assign workers to new positions when positions are created. When positions are created, the **Available for assignment** date and time on the **General** tab of the **Position** page are automatically set to the creation date and time.
 -   **Never** – You can't assign workers to new positions when positions are created. If you select this option, you must open the **Position** page for each new position as it becomes available, and then, on the **General** tab, enter the **Available for assignment** date to enable worker assignment.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

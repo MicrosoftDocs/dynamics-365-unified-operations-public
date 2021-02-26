@@ -63,3 +63,6 @@ After you import the return file, the payments should be updated to the status *
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

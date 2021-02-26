@@ -141,3 +141,6 @@ The new running average cost price reflects the average of the financially and p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

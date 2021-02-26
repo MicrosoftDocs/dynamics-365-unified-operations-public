@@ -107,3 +107,6 @@ Record templates can help you to create records more quickly. You can create a r
 - [Configure document management](configure-document-management.md)
 - [Configure and send email](configure-email.md)
 - [Date/time data and time zones](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Extensibility in Attract
 description: This topic describes how you can extend Microsoft Dynamics 365 Talent - Attract by using the Microsoft Power platform.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
@@ -95,3 +95,6 @@ The Web content (iframe) activity lets you embed a custom web solution that you'
 
 > [!NOTE]
 > The Web content activity is available only with the Comprehensive hiring add-on.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Configure Human resources parameters
 description: The settings of some Human resources parameters are shared across companies, whereas the settings of other parameters are company-specific. This article explains how to set up company-specific HR parameters.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -18,6 +18,7 @@ ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
@@ -30,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure Human resources parameters
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The settings of some Human resources (HR) parameters are shared across companies, whereas the settings of other parameters are company-specific. This article explains how to set up company-specific HR parameters.
 
@@ -54,3 +57,6 @@ The settings on the **Number sequence** tab determine the sequences that are use
 
 > [!NOTE]
 > The number of hours that are worked can't exceed 1,250, and the length of employment can't exceed 12 months. These maximum values are in accordance with federal law in the United States. Finally, the settings on the **Employee self-service** tab determine the information that managers can enter on behalf of their employees.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

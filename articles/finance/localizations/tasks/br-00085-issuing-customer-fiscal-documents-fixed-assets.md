@@ -61,3 +61,6 @@ You can issue a fiscal document for a customer who bought a fixed asset from the
 28. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
 29. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

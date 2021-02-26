@@ -2,7 +2,7 @@
 # required metadata
 
 title: Contextual data entry for lookups
-description: In data entry scenarios, it is common for a user to attempt to identify an entity in terms of some more descriptive or natural language attribute if that entity is formally identified by a synthetic key, such as a number sequence. The contextual data entry feature allows users to type in either the synthetic key or a more descriptive attribute directly into a lookup field. This page explains how contextual data entry works and also provides implementation details and tips for developers who want their lookups to have this behavior.
+description: This topic explains how contextual data entry works and provides implementation details and tips for developers who want their lookups to have this behavior.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -45,7 +45,7 @@ In data entry scenarios, it is common for a user to attempt to identify an entit
 This user experience is not optimal and is being addressed by data entry efficiency and productivity. The platform adds initial support for contextual data entry, where the system automatically attempts to understand whether the user’s entered data is in the context of the key field or some other more descriptive or well-understood field, and handle it appropriately. **For the remainder of this document, we’ll generically refer to these types of fields as ID (synthetic) and NAME (descriptive) fields, respectively.**
 
 ## Contextual lookup forms
-Just like keyboard data entry, all system generated lookup forms are also now contextual, meaning that filtering and sorting occur in the context of the data the user has entered. Using the create a Sales Order scenario as an example, the user will see the lookup shown below if an ID is entered. 
+Just like keyboard data entry, all system-generated lookup forms are also now contextual, meaning that filtering and sorting occur in the context of the data the user has entered. Using the create a Sales Order scenario as an example, the user will see the lookup shown below if an ID is entered. 
 
 [![Customer account lookup form opened in the context of ID](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png) 
 
@@ -104,7 +104,7 @@ public str resolveAmbiguousReference()
 
 ### Make custom lookup forms contextual
 
-As mentioned earlier, all system generated lookup forms automatically consider the context of the data entered into their host control. This includes most lookup forms generated via *SysTableLookup*. Modeled custom lookup forms, by their nature, cannot be fully-handled by the system and must be modified to match the behavior and visuals of contextual lookups forms.
+As mentioned earlier, all system-generated lookup forms automatically consider the context of the data entered into their host control. This includes most lookup forms generated via *SysTableLookup*. Modeled custom lookup forms, by their nature, cannot be fully-handled by the system and must be modified to match the behavior and visuals of contextual lookups forms.
 
 1.  If the data contained by the host control is in the context of ID, then:
     1.  Make the ID column first in the Grid.
@@ -118,7 +118,7 @@ The following scenarios illustrate some custom lookups, along with the recommend
 
 #### Scenario 1: Custom lookup defined via the FormHelp property on an EDT
 
-Custom lookups defined via FormHelp (even though modeled) still go through normal kernel-based lookup generation routines. Therefore, the kernel still has hooks to make some changes to the lookup form. Specifically, the lookup system has enough information to apply the correct filters and sorts; however, it is NOT known which controls should be moved in the lookup's grid.  (While an educated guess could be made based on bindings, that guess may be incorrect in more advanced lookup form designs.) If your custom lookup form is leveraging the *SysTableLookup::filterLookupPreRun* and *SysTableLookup::* *filterLookupPostRun* methods, then uptake the (new) optional parameters on *filterLookupPostRun* to have the NAME control moved automatically, as shown.
+Custom lookups defined via FormHelp (even though modeled) still go through normal kernel-based lookup generation routines. Therefore, the kernel still has hooks to make some changes to the lookup form. Specifically, the lookup system has enough information to apply the correct filters and sorts; however, it is NOT known which controls should be moved in the lookup's grid.  (While an educated guess could be made based on bindings, that guess may be incorrect in more advanced lookup form designs.) If your custom lookup form is leveraging the `SysTableLookup::filterLookupPreRun` and `SysTableLookup::filterLookupPostRun` methods, then uptake the (new) optional parameters on `filterLookupPostRun` to have the NAME control moved automatically, as shown.
 
 ```xpp
 public class MyCustomLookupForm extends FormRun
@@ -223,7 +223,7 @@ public class MyCustomLookupForm extends FormRun
 
 ### Scenario 2: Custom resolution logic
 
-It’s possible to use custom resolution logic by overriding resolveAmbiguousReference and leveraging something other than FormControlAmbiguousReferenceResolver. Note that this logic needs to be common to the hosted lookup form so that keyboard and lookup based entry stay in sync.
+It’s possible to use custom resolution logic by overriding resolveAmbiguousReference and leveraging something other than FormControlAmbiguousReferenceResolver. Note that this logic needs to be common to the hosted lookup form so that keyboard and lookup-based entry stay in sync.
 
 ```xpp
 public str resolveAmbiguousReference()
@@ -270,3 +270,6 @@ For the scenarios, assume there is a table called "TableA" with PK field "ID" an
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

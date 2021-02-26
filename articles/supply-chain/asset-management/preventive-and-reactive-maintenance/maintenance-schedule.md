@@ -72,3 +72,6 @@ The illustration below shows the **All maintenance schedule** list page.
 
 ![Figure 1](media/16-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

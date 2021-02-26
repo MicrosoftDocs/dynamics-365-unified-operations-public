@@ -73,3 +73,6 @@ You can post a delivery slip for a sales order that has multiple sales order lin
 34. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
 35. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

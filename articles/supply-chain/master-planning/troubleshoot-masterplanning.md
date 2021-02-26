@@ -91,3 +91,6 @@ One way to improve performance with the built-in master planning engine is to do
 
 > [!NOTE]
 > This will limit the period for explosions performed for this master plan to a single day.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

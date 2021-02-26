@@ -55,3 +55,6 @@ There are many types of discounts:
 - **Shipping discount** – A discount that is applied when the transaction total is more than a specified amount and a specific mode of delivery (for example, two day shipping or overnight shipping) is used on the order.
 
 Both price adjustments and discounts can be associated with price groups. Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

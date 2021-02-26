@@ -68,3 +68,6 @@ If you enter data source **DS** of the *Calculated field* type, and it contains 
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

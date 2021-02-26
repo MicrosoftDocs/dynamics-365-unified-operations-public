@@ -2,7 +2,7 @@
 # required metadata
 
 title: Design a configuration for generating documents in Excel format
-description: This topic provides information about how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
+description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/02/2020
@@ -194,3 +194,6 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md)
 
 [Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ If a vendor issues a sales document to a company, but makes a mistake about the 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

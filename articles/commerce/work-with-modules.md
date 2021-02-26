@@ -176,3 +176,6 @@ To configure a container module on a page, follow these steps.
 
 [Work with publish groups](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

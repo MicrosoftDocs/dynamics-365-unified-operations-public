@@ -51,7 +51,7 @@ If you need to renew the trial license for Windows on the virtual machine in a d
 A command prompt window will be displayed briefly, and then the virtual machine will restart. The license is now good for 180 days. You can complete this procedure 3 times.
 
 ## How do I renew the Microsoft Dynamics AX license on a demo virtual machine?
-If you need to renew the license for Microsoft Dynamics AX on the virtual machine in a demo environment, please download the trial license files from [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/service-packs/AX2012DemoToolsMaterials#DemoVirtualMachineLicenses) or [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898). Then, follow the steps listed in [Provide license information](https://technet.microsoft.com/library/aa496447.aspx).
+If you need to renew the license for Microsoft Dynamics AX on the virtual machine in a demo environment, follow the steps listed in [Provide license information](https://technet.microsoft.com/library/aa496447.aspx).
 
 ## How do I activate Windows on the virtual machines in my non-demo environment?
 Windows is automatically activated on the virtual machines that are included with non-demo environments. However, the activation may take up to 4 days to complete. If you continue to see messages that prompt you to activate Windows after 4 days, contact the Azure support team. For information on how to contact the Azure support team, see the following section.
@@ -171,3 +171,6 @@ To obtain support for Microsoft Dynamics AX, use the resources listed in the fol
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

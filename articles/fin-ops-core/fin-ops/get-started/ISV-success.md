@@ -107,3 +107,6 @@ Content goes here.
 
    **(C)**	To the extent Microsoft is a processor or subprocessor of Personal Data in connection with any products or services provided by Microsoft to a Customer related to this Agreement, Microsoft agrees, represents, and warrants that Microsoft will enter into a separate agreement with the Customer that complies with the requirements of Article 28 of the GDPR, including the requirement in Article 28(3) that processing by Microsoft will be governed by a contract that is binding on Microsoft with regard to the Customer.  If, in Participant’s reasonable opinion, Microsoft is not complying with its obligations under Article 28 of the GDPR, Participant will inform Microsoft and may, at its discretion, stop sharing data with Microsoft.  Microsoft will be fully responsible for any damage to Customers or Participant caused by Microsoft’s breach of its contractual obligations to Customers pursuant to this section or by Microsoft’s infringement of the GDPR.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

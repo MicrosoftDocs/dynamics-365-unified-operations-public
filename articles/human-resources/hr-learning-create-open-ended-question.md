@@ -4,7 +4,7 @@
 title: Create an open ended question
 description: Open-ended questions enable respondents to provide their own response. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -17,6 +17,7 @@ ms.search.form: KMQuestion, HcmLearningWorkspace
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -26,6 +27,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create an open ended question
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -40,3 +43,6 @@ Open-ended questions enable respondents to provide their own response. You can c
     * An input type of Text or Note is used for an open-ended question.  
 6. In the Text field, enter your question.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

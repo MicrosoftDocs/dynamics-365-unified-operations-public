@@ -116,3 +116,6 @@ To deactivate a CSS override file on your site, follow these steps.
 [Add languages to your site](add-languages-to-site.md)
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

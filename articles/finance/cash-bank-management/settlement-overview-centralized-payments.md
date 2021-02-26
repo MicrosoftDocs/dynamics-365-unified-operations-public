@@ -111,3 +111,6 @@ For vendor payments, the due-to and due-from transactions in the legal entity of
 
 ## Withholding tax
 The vendor account that is associated with the invoice is used to determine whether withholding tax should be calculated. If withholding tax applies, it is calculated in the legal entity that is associated with the invoice. If the legal entities use different currencies, the exchange rate from the legal entity that is associated with the invoice is used.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

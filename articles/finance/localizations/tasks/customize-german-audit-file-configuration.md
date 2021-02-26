@@ -89,3 +89,6 @@ This procedure was created using the demo data company DEMF with Germany as the 
 54. In the Description field, type a value.
 55. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

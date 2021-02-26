@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create reporting solutions
-description: This tutorial shows how to export data and create a report, expand predefined views and add navigation to charts, use the free-form report designer, and customize the parameter experience.
+description: This tutorial shows how to create a report, expand predefined views, add navigation to charts, use the free-form report designer, and customize the parameters.
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
@@ -251,3 +251,6 @@ This report uses embedded VB script to keep track of running totals so that the 
 - Built-in back office document management capabilities including email support, scheduled executions via Batch, and Print Archive
 - Parameterized views with drill-through navigations to forms and other reports
 - Used to produce precision documents for compliance with local regulatory business practices
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

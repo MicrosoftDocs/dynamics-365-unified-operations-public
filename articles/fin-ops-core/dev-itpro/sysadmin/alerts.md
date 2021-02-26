@@ -62,3 +62,6 @@ Follow these steps to set up alerts for batch legacy forms.
 
 > [!NOTE] 
 > To receive email notifications, in the **Batch job alerts** dialog box, set the **Email** option to **Yes**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

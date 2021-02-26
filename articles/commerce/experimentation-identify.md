@@ -43,3 +43,6 @@ To validate a hypothesis, the success or failure of an experiment should be dire
 
 ## Next step
 [Set up an experiment](experimentation-setup.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

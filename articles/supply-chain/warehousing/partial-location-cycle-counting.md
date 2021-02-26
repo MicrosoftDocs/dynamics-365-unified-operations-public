@@ -64,3 +64,6 @@ For this example, only item number A0001 must be counted in warehouse 61.
 ## Additional resources
 
 [Cycle counting](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

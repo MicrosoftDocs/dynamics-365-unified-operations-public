@@ -118,3 +118,6 @@ You can copy financial dimensions to either document headers or individual lines
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

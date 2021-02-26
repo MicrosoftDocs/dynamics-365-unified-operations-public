@@ -53,3 +53,6 @@ If the **Confirming invoices treatment** parameter is set to **Yes**, a separate
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

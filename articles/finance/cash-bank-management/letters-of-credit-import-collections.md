@@ -58,3 +58,6 @@ An import collection helps guarantee that the seller is paid when the buyer coll
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

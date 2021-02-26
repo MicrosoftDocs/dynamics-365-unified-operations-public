@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic reporting (ER) overview
-description: This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
+description: This topic provides an overview of the Electronic reporting tool. It describes key concepts, supported scenarios, and formats that are part of the solution.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/07/2020
@@ -303,3 +303,6 @@ The list of ER configurations for Finance is constantly updated. Open the [Globa
 
 - [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md)
 - [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

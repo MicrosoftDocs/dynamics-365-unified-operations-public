@@ -75,3 +75,6 @@ Retailers often choose to exclude some products, such as new items or in-demand 
 
 > [!NOTE]
 > When the **Prevent all discounts** configuration is set to **Yes**, no discounts will be applied to the product. Not even tender-based discounts will be applied.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

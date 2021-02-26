@@ -112,3 +112,6 @@ You can generate a Goods and Services Tax or Harmonized Sales Tax (GST/HST) Inte
    For easy identification, use the format GSTYYYYMMDD.tax (GST, followed by the reporting date, with a .tax extension) as in this example: GST20100728.tax.
 
 4. Click **OK** to export the GIFT file to the specified path.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

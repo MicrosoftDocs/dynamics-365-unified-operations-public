@@ -109,3 +109,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations, v
 17. Click OK.
     * Validate debit note report  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

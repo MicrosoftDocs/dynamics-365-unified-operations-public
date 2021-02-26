@@ -64,3 +64,6 @@ If the server locale of the Microsoft Dynamics 365 Finance instance is defined a
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

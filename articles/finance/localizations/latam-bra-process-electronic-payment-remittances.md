@@ -48,3 +48,6 @@ Use this functionality to create the file that must be sent to the bank with the
 15.	Click **Save**.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ The demo data company used to create this recording is USRT. This recording is i
 5. Click Export.
 6. Click PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

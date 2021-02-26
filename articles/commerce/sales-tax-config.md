@@ -86,3 +86,6 @@ For order lines with pickup in store or curbside pickup specified, the tax group
 
 [Calculation of tax exemption](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

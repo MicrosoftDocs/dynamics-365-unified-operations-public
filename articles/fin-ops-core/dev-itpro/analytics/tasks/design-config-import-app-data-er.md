@@ -118,3 +118,6 @@ You will run the created model mapping for testing purposes to see how the confi
     * Select Browse and select the Response4.xml file.
 16. Select OK.
     * Review the generated output. The response type has now been properly recognized as equal for Response1.xml file.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

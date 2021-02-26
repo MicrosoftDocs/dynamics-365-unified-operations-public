@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers text block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 A text block module is a module that is used to add textual content. This content can be informational or promotional.
 
 Text block modules are driven by data from the content management system (CMS) and can be put on any page. They are stand-alone modules that don't depend on page context or any other modules.
@@ -91,3 +89,6 @@ To add a text block module to a new page and set the required properties, follow
 
 [Video player module](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

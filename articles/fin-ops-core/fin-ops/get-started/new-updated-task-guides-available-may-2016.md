@@ -199,3 +199,6 @@ The (May 2016) APQC Unified Library contains the Task guides that are intended t
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [New or updated task guides (November 2016)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

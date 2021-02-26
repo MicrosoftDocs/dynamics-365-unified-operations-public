@@ -19,6 +19,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Prepare for Human Resources go-live
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -104,3 +107,6 @@ After you submit the checklist, your FastTrack Solution Architect will review th
 ## See also
 
 [Go-live FAQ](hr-admin-go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

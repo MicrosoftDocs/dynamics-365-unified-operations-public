@@ -60,3 +60,6 @@ The online extensibility development environment can preview customizations in a
 [Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
 
 [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

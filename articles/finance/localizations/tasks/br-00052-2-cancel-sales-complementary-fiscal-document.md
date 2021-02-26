@@ -43,3 +43,6 @@ You can cancel an incorrect sales complementary fiscal document and provide a re
 7. Close the page.
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

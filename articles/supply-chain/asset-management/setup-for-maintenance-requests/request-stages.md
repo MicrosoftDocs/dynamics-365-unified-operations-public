@@ -85,3 +85,6 @@ After you've created the lifecycle states that are required for your maintenance
 The following illustration shows an example of the **Maintenance request lifecycle models** page.
 
 ![Maintenance request lifecycle models page](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

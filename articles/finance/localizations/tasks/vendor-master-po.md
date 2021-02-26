@@ -56,3 +56,6 @@ This task was created using the demo data company JPMF.
 5. Click Header view.
     * Verify that the Target of consolidation slider is set to 'Yes'.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

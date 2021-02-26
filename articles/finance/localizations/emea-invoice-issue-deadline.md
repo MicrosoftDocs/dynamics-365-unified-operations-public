@@ -126,3 +126,6 @@ If you don't have access to the pages that are used to complete the tasks that a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
