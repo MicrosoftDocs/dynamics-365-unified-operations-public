@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Configure Microsoft Teams integration
-description: This topics covers the details of opt-in and opt-out of Dynamics 365 Commerce and Microsoft Teams integration.
+description: This topics descibes how to opt-in and opt-out of Dynamics 365 Commerce and Microsoft Teams integration.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 03/01/2021
@@ -25,7 +25,12 @@ ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Configure Microsoft Teams Integration 
+# Configure Microsoft Teams integration 
+
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+This topics descibes how to opt-in and opt-out of Dynamics 365 Commerce and Microsoft Teams integration.
 
 In order to provision Microsoft Teams with information from Dynamics 365 Commerce and synchronize the task management features between Teams and the point of sale (POS) application, you must enable the integration features in Dynamics 365 Commerce headquarters. 
 
