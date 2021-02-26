@@ -36,17 +36,17 @@ This topic summarizes answers to questions frequently asked by users of the Dyna
 
 ### What is replacing TSLint since it's been deprecated in SDK version 1.28 (Commerce version 10.0.18 release)?
 
-Due to the open source TSLint static analysis tool being deprecated, the Dynamics 365 Commerce online SDK is replacing it with the [ESLint](https://eslint.org/) static analysis tool. TSLint will continue to work until SDK version 1.30 (Commerce version 10.0.20 release). You can manually update to ESLint prior to SDK release 1.30 if desired, but updating will be enforced with SDK release 1.30. After updating to SDK version 1.28, running ```yarn``` will show a deprecation warning. You can switch to ESLint at any time after this, but it may cause new errors and warnings to be displayed on your custom code. If you retrieved the online SDK from GitHub with the Commerce 10.0.20 preview release, then it will contain the necessary changes to ESLint and no changes will be needed. Otherwise, if you are updating from an older version of the SDK, you will need to manually update to ESLint before SDK release 1.30. Follow the instructions below to manually update from TSLint to ESLint.
+Due to the open source TSLint static analysis tool being deprecated, the Dynamics 365 Commerce online SDK is replacing it with the [ESLint](https://eslint.org/) static analysis tool. TSLint will continue to work until SDK version 1.30 (Commerce version 10.0.20 release). You can manually update to ESLint prior to SDK release 1.30 if desired, but updating will be enforced with SDK release 1.30. After updating to SDK version 1.28, running the **yarn** command will show a deprecation warning. You can switch to ESLint at any time after this, but it may cause new errors and warnings to be displayed on your custom code. If you retrieved the online SDK from GitHub with the Commerce 10.0.20 preview release, then it will contain the necessary changes to ESLint and no changes will be needed. Otherwise, if you are updating from an older version of the SDK, you will need to manually update to ESLint before SDK release 1.30. Follow the instructions below to manually update from TSLint to ESLint.
 
 #### Replace TSLint with ESLint
 
-Once you have [updated to SDK 1.28](sdk-updates.md) or later, you will need to create an ESLint file and change your packages.json file to include the ESLint dependencies and update the commands to use ESLint. You can leave the TSLint dependency in the packages.json file if you would like to use both. Once you update to ESLint, you may see new warnings against your code that can be fixed or ignored if needed.
+Once you have [updated to SDK 1.28](sdk-updates.md) or later, you will need to create an ESLint file and change your **packages.json** file to include the ESLint dependencies and update the commands to use ESLint. You can leave the TSLint dependency in the **packages.json** file if you would like to use both. Once you update to ESLint, you may see new warnings against your code that can be fixed or ignored as needed.
 
 ##### Create a .eslintrc.js file
 
 You will need to add a new file named **.eslintrc.js** to your root SDK folder (where you should also see an existing **tslint.json** file). The **.eslintrc.js** file will contain a base rule set which can be extended.
  
-The base configuaration contains a set of core rules that is relaxed when it comes to linting restrictions. You may also choose to define your own ruleset or extend another ruleset.
+The base configuration contains a set of core rules that are relaxed when it comes to linting restrictions. You may also choose to define your own ruleset or extend another ruleset.
 
 To use the provided base ruleset, create the **.eslintrc.js** file and copy and paste in the following code:
  
@@ -110,7 +110,7 @@ For more information and help, see the [ESLint documentation](https://eslint.org
 
 ##### Update the package.json file
  
-Inside your package.json file, you can leave the TSLint dependency (if you want to use both) and add the following dependencies into your **devDependencies** section:
+Inside your package.json file, you can leave the TSLint dependency (if you want to use both) and add the following dependencies into the **devDependencies** section:
  
  ```json
         "@msdyn365-commerce/eslint-config": "^1.27.7",
@@ -127,13 +127,13 @@ Inside your package.json file, you can leave the TSLint dependency (if you want 
         "eslint-plugin-react": "^7.21.5",
  ```
  
-Change the **lint** and **lint:fix** commands to:
+Then change the **lint** and **lint:fix** commands to:
 ```json
         "lint": "yarn eslint src/**/*.{ts,tsx}",
         "lint:fix": "yarn eslint src/**/*.{ts,tsx} --fix"
 ```
  
-Change the **build** and **start** commands to:
+Then change the **build** and **start** commands to:
 ```json 
         "start": "yarn msdyn365b start local --use-eslint",
         "build": "yarn msdyn365b build --use-eslint",
@@ -159,7 +159,7 @@ Helpful tips:
 - To add a comment about why you are disabling a rule, you must add "--" (for example,  `// eslint-disable-next-line <rule1> -- Disabling this rule for reasons`).
 - To disable a rule for an entire file, you must use multiline comments (for example, `/* eslint-disable <rule1>, <rule2> */`). 
 
-The following table listrs common TSLint-ESLint equivalents.
+The following table lists common TSLint-ESLint equivalents.
 TSLint rule	| ESLint rule
 --- | --- |
 // tslint:disable-next-line:no-any	| // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -169,7 +169,7 @@ TSLint rule	| ESLint rule
 
 #### Disable linting altogether during build time
 
-If you want to disable linting altogether during build time, this can be accomplished using the **--disable-linter** argument in the package.json build command as shown below:
+If you want to disable linting altogether during build time, this can be accomplished using the **--disable-linter** argument in the **package.json** build command as shown below:
 ```json 
         "build": "yarn msdyn365b build --disable-linter",
 ```
