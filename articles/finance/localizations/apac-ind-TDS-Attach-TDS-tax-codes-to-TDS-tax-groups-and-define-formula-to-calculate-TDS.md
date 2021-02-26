@@ -2,7 +2,7 @@
 # required metadata
 
 title: Attach TDS tax codes to TDS tax groups and define the formula for calculating TDS
-description: This topic lists the steps for setting up Tax Deducted at Source (TDS) tax groups and attaching TDS tax codes to TDS tax groups. To calculate TDS for the TDS tax group, you must define the formula for TDS tax codes that are attached to the TDS tax group.
+description: This topic explains how to set up Tax Deducted at Source (TDS) tax groups and attach TDS tax codes to TDS tax groups. To calculate TDS for a TDS tax group, you must define the formula for TDS tax codes that are attached to it.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -34,54 +34,48 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for setting up Tax Deducted at Source (TDS) tax groups and attaching TDS tax codes to TDS tax groups. To calculate TDS for the TDS tax group, you must define the formula for TDS tax codes that are attached to the TDS tax group.
+This topic explains how to set up Tax Deducted at Source (TDS) tax groups and attach TDS tax codes to TDS tax groups. To calculate TDS for a TDS tax group, you must define the formula for TDS tax codes that are attached to it.
 
-Complete the following steps to set up TDS tax groups, attach TDS tax codes to the TDS tax group, and define formula to calculate TDS.
+Follow these steps to set up a TDS tax group, attach TDS tax codes to it, and define the formula for calculating TDS.
 
- Begin by opening the **Withholding tax groups** page (**Tax > Indirect taxes > Withholding tax > Withholding tax groups**).
+1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax groups**.
 
-[![Withholding tax groups](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
+    [![Withholding tax groups page](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
 
-1. Click **NEW** to create a withholding tax group for TDS and enter the required details.
+2. On the Action Pane, select **New** to create a withholding tax group for TDS, and enter the required details.
+3. In the **Tax type** field, select **TDS**.
+4. On the **Setup** FastTab, select **Add** to create a line.
+5. In the **Withholding tax code** field, select the TDS tax code for the TDS tax group. The **Withholding tax name** field shows the name of the TDS tax code, and the **Value** field shows the value.
+6. To ignore the threshold limit and exception threshold limit that are defined for the TDS tax component that is attached to the TDS tax code in TDS transactions, select the **Overlook threshold** check box.
+7. To prevent the tax group from being calculated in transactions, select the **Exempt** check box.
+8. On the Action Pane, select **Designer** to open the formula designer, so that you can define the formula for calculating TDS for the TDS tax group. On the **Designer** page, the **Taxes** tab shows the TDS tax codes that have been selected for the TDS tax group.
 
-2. In the **Tax** **type** field, select the **TDS** option.
+    [![Designer page](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
 
-3. Click the **Setup** tab and press Add Button to create a new line. In the **Withholding tax code** field, select the TDS tax code for the TDS tax group. In the **Withholding tax name** field and **Value** field, the name and the value for the TDS tax code are displayed. 
+9. On the **Calculation** tab, select **Alt+N** to create a line. The **ID** field shows the automatically generated priority ID for TDS calculation.
+10. In the **Tax code** field, select the TDS tax code to define the formula for. All the TDS tax codes that have been selected for the TDS tax group are available for selection in this field.
+11. In the **Taxable basis** field, select the basis for calculating TDS:
 
-4. Select the **Overlook threshold** check box to ignore the threshold limit and exception threshold limit defined for the TDS tax component attached to the TDS tax code in TDS transactions.
+    - **Gross amount** – Calculate TDS based on the gross transaction amount (that is, the invoice amount) by using the calculation expression that is defined for the tax code.
+    - **Excl Gross amount** – Calculate TDS based on the calculation expression that is defined for the tax code.
 
-5. Select the **Exempt** check box to prevent calculating the tax group in transactions. 
+    > [!NOTE]
+    > The **Taxable basis** field can't be set to **Excl Gross amount** for the TDS tax code that has a priority ID of **1**.
 
-6. Click the **Designer** button to open the **Formula designer** form to define formula for calculation of TDS for the TDS tax group. The TDS tax codes that are selected for the TDS tax group are displayed on the **Taxes** tab of the **Formula designer** page. 
+12. The TDS calculation is based on the formula that is defined in the **Calculation expression** field for each tax code that is attached to the TDS tax group. Select the plus sign (**+**), minus sign (**-**), multiplication sign (**\***), or division sign (**/**) button to enter the calculation expression for the selected TDS tax code in the **Calculation expression** field.
 
-[![Designer](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
+    > [!NOTE]
+    > No calculation expression can be defined for the TDS tax code that has a priority ID of **1**.
 
-7. On the **Calculation** tab, press ALT+N to create a new line. In the **ID** field, the auto-generated priority ID for TDS calculation is displayed.
+13. To define the calculation expression for the TDS tax code in the **Calculation expression** field, add TDS tax codes that are available on the **Taxes** tab. To add TDS tax codes in the **Calculation expression** field, you can use any of the following methods:
 
-8. In the **Tax code** field, select the TDS tax code to define the formula for. The TDS tax codes that are selected for the TDS tax group are available for selection in this field.
+    - Drag the required tax code from the **Taxes** tab to the **Calculation expression** field.
+    - Double-tap (or double-click) the required tax code on the **Taxes** tab.
+    - Select and hold (or right-click) the required tax code on the **Taxes** tab, and then select **Add tax code**.
 
-9. In the **Taxable** **basis** field, select the basis to calculate TDS from the following options:
+    > [!NOTE]
+    > Insert a calculation expression before each TDS tax code. The TDS tax codes that have been added to the calculation expression appear in brackets (\[...\]).
 
-   - **Gross amount** – TDS is calculated on the gross transaction amount, that is, the invoice amount using the calculation expression defined for the tax code.
-
-   - **Excl Gross amount** – TDS is calculated based on the calculation expression defined for the tax code.
-
-      > [!NOTE]
-      > Taxable basis cannot be set to **Excl Gross amount** for the TDS tax code with priority ID 1. 
-
-10. Click the **+** button, **-** button, ***** button, or **/** button to insert the calculation expression for TDS tax code in the **Calculation** **expression** field. The TDS calculation is based on the formula defined in the **Calculation** **expression** field for the tax codes attached to the TDS tax group.
-
-    > [!Note]
-    > The calculation expression cannot be  defined for TDS tax code with priority ID 1.  
-
-11. To define the calculation expression for the TDS tax code in the **Calculation** **expression** field, add TDS tax codes that are available on the **Taxes** tab using the drag-drop method, double click on the tax code, or right click on the tax code and select the **Add tax code** option.
-
->   [!Note]
->
->   Insert a calculation expression before  each TDS tax code.  View the TDS tax codes added to the calculation  expression within brackets.  
-
-12. Click the **C** button to clear the calculation expression defined for a tax code in the **Calculation expression** field.
-
-13. Click the **Delete** button to delete a record on the **Calculation** tab.
-
-14. Close the page.
+14. To clear the calculation expression that is defined for a tax code in the **Calculation expression** field, select the **C** button.
+15. To delete a record on the **Calculation** tab, select **Delete**.
+16. Close the page.
