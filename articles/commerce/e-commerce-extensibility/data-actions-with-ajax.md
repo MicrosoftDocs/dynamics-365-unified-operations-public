@@ -90,6 +90,6 @@ async function action(
 
 [Data action overview](data-actions.md)
 
-[Create an observable data action](create-observable-data-action.md)
+[Observable data actions](create-observable-data-action.md)
 
 [Data action cache settings](data-action-cache-settings.md)
