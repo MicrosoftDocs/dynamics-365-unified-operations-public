@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up withholding tax component groups for the TDS tax type
-description: This topic lists the steps for setting up withholding tax component groups, such as, Rent and Contractor, for the Tax Deducted at Source (TDS) tax type. 
+description: This topic explains how to set up withholding tax component groups, such as Rent and Contractor, for the Tax Deducted at Source (TDS) tax type.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -33,15 +33,16 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for setting up withholding tax component groups, such as, Rent and Contractor, for the Tax Deducted at Source (TDS) tax type. Complete the following steps to set up withholding tax component groups.
+This topic explains how to set up withholding tax component groups, such as **Rent** and **Contractor**, for the Tax Deducted at Source (TDS) tax type.
 
-Begin by opening the **Withholding tax component groups** page (**Tax > Setup > Withholding tax > Withholding tax component groups**).
+1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax component groups**.
 
-[![Withholding tax component groups](./media/apac-ind-TDS-8.png)](./media/apac-ind-TDS-8.png)
+    [![Withholding tax component groups page](./media/apac-ind-TDS-8.png)](./media/apac-ind-TDS-8.png)
 
-1. In the **Tax type** field, select the **TDS** option to set up withholding tax component groups for TDS tax type.
-2. Click **New** to create a new line. In the **Withholding tax component group** field, enter a name for the TDS component group.
-3. In the **Description** field, enter a description for the TDS component group.
-4. In the **Status** field, select the residential status that the TDS component group comes under. The options are **Resident** and **Non-resident**.
-5. In the **Section** **code** field, enter the section code that is applied to the TDS component group.
-6. Close the Withholding tax component groups page.
+2. In the **Tax type** field, select **TDS** to set up withholding tax component groups for the TDS tax type.
+3. On the Action Pane, select **New** to create a line.
+4. In the **Withholding tax component group** field, enter a name for the TDS component group.
+5. In the **Description** field, enter a description.
+6. On the **General** FastTab, in the **Status** field, select the residential status of the TDS component group. The options are **Resident** and **Non-resident**.
+7. In the **Section code** field, enter the section code that is applied to the TDS component group.
+8. Close the page.
