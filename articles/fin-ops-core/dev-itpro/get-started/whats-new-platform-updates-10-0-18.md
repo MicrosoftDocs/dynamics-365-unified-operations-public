@@ -45,6 +45,14 @@ The following features are included in this release. Some of the listed features
 
 -  [Authentication for Finance and Operations apps upgraded to OWIN OpenID Connect](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/authentication-finance-operations-apps-upgraded-owin-openid-connect)
 
+-  [Allow configuration of the publish batch size for the Excel add-in](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [View and update entity data with Excel](../office-integration/use-excel-add-in.md).
+
+-  [Align interaction patterns for combo boxes with those of look-up controls](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=eed024a3-3d51-eb11-a813-000d3a8faea9&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)
+
+- [(Preview) Ensure required unbound controls are filled in](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=1438f773-7478-eb11-a812-0022482041cc&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)
+
+- [Allow admins to select default document types](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=0452956b-9678-eb11-a812-0022482041cc&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)<br>- For more information, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
+
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 ## Additional resources
