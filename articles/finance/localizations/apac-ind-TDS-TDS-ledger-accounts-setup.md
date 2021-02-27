@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up TDS ledger accounts
-description: This topic lists the steps for setting up ledger accounts for the Tax Deducted at Source (TDS) feature. Use the **Chart** **of** **accounts** page to set up ledger accounts for TDS. 
+description: This topic explains how to set up ledger accounts for the Tax Deducted at Source (TDS) feature.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -34,16 +34,13 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for setting up ledger accounts for the Tax Deducted at Source (TDS) feature. Use the **Chart** **of** **accounts** page to set up ledger accounts for TDS. 
+This topic explains how to set up ledger accounts for the Tax Deducted at Source (TDS) feature. You use the **Chart of accounts** page to set up ledger accounts for TDS.
 
-1. Click **General ledger > Chart of accounts > Accounts > Main accounts**.	
+1. Go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**.
+2. On the **Overview** tab, select **Alt+N** to create a TDS ledger account, and enter the required details.
+3. On the **Setup** tab, in the **Posting type** field, select **Withholding tax**.		
 
-2. On the **Overview** tab, press ALT+N to create a TDS ledger account and enter the required details.
+    > [!NOTE]
+    > Ledger accounts that have a posting type of **Withholding tax** can be defined only as receivable accounts that are used to post the TDS receivable amount for a TDS tax code.
 
-3. Click the **Setup** tab. In the **Posting** **type** field, select the **Withholding** **tax** option.		
-
->   [!Note]
->
->   Ledger accounts with **Withholding**  **tax** as the posting type only can be defined as receivable accounts to  post the TDS receivable amount for a TDS tax code.  
-
-4. Close the form.
+4. Close the page.
