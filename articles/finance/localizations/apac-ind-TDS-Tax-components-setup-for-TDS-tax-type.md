@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up tax components for the TDS tax type
-description: This topic describes the process of setting up withholding tax components for the Tax Deducted at Source (TDS) tax type. The topic also describes the process of defining the threshold for calculating TDS for each TDS component.
+description: This topic explains how to set up withholding tax components for the Tax Deducted at Source (TDS) tax type. It also explains how to define the threshold limit that is used to calculate TDS for each TDS component.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -33,54 +33,45 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the process of setting up withholding tax components for the Tax Deducted at Source (TDS) tax type. The topic also describes the process of defining the threshold for calculating TDS for each TDS component. The different TDS components are TDS, surcharge, PE-Cess, and SHE Cess. You also can define an exception threshold to calculate TDS for each TDS component. Follow these steps to set up TDS components.
+This topic explains how to set up withholding tax components for the Tax Deducted at Source (TDS) tax type. The TDS components are TDS, surcharge, PE-Cess, and SHE Cess. This topic also explains how to define the threshold that is used to calculate TDS for each TDS component. Additionally, you can define an exception threshold that is used to calculate TDS for each TDS component.
 
-Go to **Tax > Setup > Withholding tax > Withholding tax component**
+Follow these steps to set up TDS components.
 
-[![Withholding tax component](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax components**.
 
-1. In the **Tax** **type** field, select the **TDS** option to set up withholding tax components for TDS tax type.
+    [![Withholding tax components page](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
-2. Click **New** to create a new line. In the **Withholding** **tax** **component** field, enter a name for the TDS component. In the **Description** field, enter a description for the TDS component.
+2. In the **Tax type** field, select **TDS** to set up withholding tax components for the TDS tax type.
+3. On the Action Pane, select **New** to create a line.
+4. In the **Withholding tax component** field, enter a name for the TDS component.
+5. In the **Withholding tax component group** field, select the TDS withholding tax component group to attach the TDS component to.
+6. On the **General** FastTab, in the **Description** field, enter a description of  the TDS component.
+7. On the Action Pane, select **Threshold** to open **Threshold** page, so that you can define the threshold that is used to calculate TDS for the TDS component.
+8. Use the **From date** and **To date** fields to define the period that the threshold is applicable to.
+9. On the **General** FastTab, in the **Threshold** field, enter the threshold amount that is used to calculate TDS for the TDS component. The tax will be deducted at the source only when the cumulative invoice amount crosses the threshold.
 
-3. In the **Withholding** **tax** **component** **group** field, select the TDS withholding tax component group to attach the TDS component to.
+    For example, if the threshold amount is 10,000, TDS is calculated after the cumulative invoice amount exceeds 10,000 (in other words, when it's 10,001 or more).
 
-4. Click the **Threshold** button to open **Threshold** form to define the threshold limit to calculate TDS for the TDS component.
+10. In the **Exception threshold** field, enter the exception threshold amount that is used to calculate TDS for the TDS component. The tax on an invoice line will be deducted at the source only when the amount crosses the exception threshold.
 
-5. In the **From** **date** field and **To** **date** field, select the period range that the threshold limit is applied for.
+    For example, if the exception threshold amount is 5,000, TDS is calculated on a specific invoice line if the invoice line amount exceeds 5,000 (in other words, if it's 5,001 or more).
 
-6. In the **Threshold** field, enter the threshold amount limit to calculate TDS for the TDS component. The tax is deducted at source only when the cumulative invoice amount has crossed the threshold limit.
+    [![Threshold page](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
-   For example, if the threshold limit is 10000, the TDS is calculated after the cumulative invoice amount has crossed 10000, that is, 10001 or above.
+    > [!NOTE]
+    > The exception threshold amount must be less than or equal to the threshold amount.
+    >
+    > The tax is deducted for a transaction if the transaction amount crosses the exception threshold, even if the cumulative invoice amount doesn't cross the threshold that is specified in the **Threshold** field.
 
-7. In the **Exception** **threshold** field, enter the exception threshold amount limit to calculate TDS for the TDS component. The tax is deducted at source on an invoice line if the amount has crossed the exception threshold limit.
+11. Close the **Threshold** page to return to the **Withholding tax components** page.
+12. On the Action Pane, select **Copy** to open the **Copy withholding tax components** dialog box, so that you can copy the TDS components that were set up for one TDS component group to another TDS component group.
+13. In the **From** field, select the TDS component group to copy the TDS components from. In the **To** field, select the withholding tax component group to copy the TDS components to.
 
-   For example, if the exception threshold limit is 5000, the TDS is calculated on a specific invoice line if the invoice line amount has crossed 5000, which is, 5001 or above.
+    > [!NOTE]
+    > Common TDS components that are attached to both TDS component groups aren't copied.
 
-[![Threshold](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+14. Select **OK** to copy and create TDS components for the other TDS component group on the **Withholding tax components** page.
 
->   [!Note]
->
->   The exception threshold amount must be  lesser than or equal to the threshold amount.  
+    [![Copy withholding tax components dialog box](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
->   [!Note]
->
->   The tax is deducted for a transaction  if the transaction amount crosses the exception threshold limit even if the  cumulative invoice amount does not cross the threshold limit specified in the  **Threshold** field.  
-
-8. Close the **Threshold** form to return to the **Withholding** **tax** **components** form.
-
-9. Click the **Copy** button to open the **Copy** **withholding** **tax** **components** form to copy the TDS components set up for a TDS component group to another TDS component group.
-
-10. In the **From** field, select the TDS component group to copy the TDS components from. In the **To** field, select the withholding tax component group to copy the TDS components to.
-
->   **NOTE**: The common TDS components that are  attached to both the TDS component groups are not copied.  
-
-11. Click **OK** to copy and create TDS components for the other TDS component group in the **Withholding** **tax** **components** form.
-
- [![Copy withholding tax component](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
-
-12. Close the form.
-
-
-
- 
+15. Close the page.
