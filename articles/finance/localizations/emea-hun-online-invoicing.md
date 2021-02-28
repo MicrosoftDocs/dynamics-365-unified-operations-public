@@ -71,6 +71,8 @@ For more information about how to download ER configurations from Microsoft Dyna
 
 The format that is used to report invoice data to the Hungarian Online Invoicing System requires specific values from enumerated lists for some elements (for example, units of measure or line expression indicators). For these elements, before you start to use RTIR, you must set up application-specific parameters that the **RTIR Invoice Data (HU)** format will use.
 
+When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
+
 ### Line expression indicator
 
 The **lineExpressionIndicator** element of the Boolean type must be reported to the Online invoicing system for invoice lines. For natural units of measure, a value of **true** must be reported for the **lineExpressionIndicator** element. If the unit of measure isn't indicated for an invoice line, a value of **false** must be reported for the **lineExpressionIndicator** element.
@@ -135,9 +137,55 @@ Match all the units in your legal entity that you can find a related value for i
 
 The **unitOfMeasureOwn** element must report information about any unit of measure that there is no value for in the enumerated list of the **unitOfMeasure** element. This element must be reported when the **unitOfMeasure** element has a value of **OWN**.
 
-You can export the setup of application-specific parameters from one version of the report and import it into another version. You can also export the setup from one report and import it into another report, provided that both reports have the same structure of lookup fields.
+### Customer tax number type
 
-When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
+Starting from version **94.50** of **RTIR Invoice Data (HU)** format, released to support **XSD version 3.0** of Online invoicing system you must report different types of customers tax registration in different nodes of the report:
+
+| **CustomerVatDataType** | **Description**               |
+|-----------------------|------------------------------------|
+| customerTaxNumber     | Domestic tax number or group identification number, under which the purchase of goods or services is done |
+| communityVatNumber    | Community tax number |
+| thirdStateTaxId       | Third state tax identification number |
+
+**customerTaxNumber** may also be represented with **groupMemberTaxNumber** - Tax number of group member, when the purchase of goods or services is done under group identification number.
+
+To differentiate various registration types that you specify for customers VAT data, use **Registration categories** functionality:
+
+1.	Open **Organization administration** > **Global address book** > **Registration types** > **Registration types** page and create those tax registration types that you will associate with **Registration categories** of your customers and respective **customerVatData** for Online invoicing system.
+2.	Open **Organization administration** > **Global address book** > **Registration types** > **Registration categories** page and specify created on the step 1 registration types for those **Registration categories** that you will use for your customers.
+3.	Open **Electronic reporting** module, select **Invoices Communication Model** > **RTIR Invoice Data (HU)** configuration, click **Configurations** > **Application-specific parameters** > **Setup** on the Action pane and select the last version of the configuration in the list on the left. Select **TaxNumberTypeLookup** field in the **Lookups** fast fab and create mapping between **Registration types** created on the step 1 in **Tax registration types** column and further associated with your customers registration categories and values expected by the Online invoicing system for **customerVatData** node in the **Lookup result** column on the **Conditions** fast tab.
+
+With the setup done for **TaxNumberTypeLookup** lookup field, system applies the following algorithm to report **customerVatData** node:
+
+1.	**customerVatData** node is enabled if **customerVATstatus** is NOT "PRIVATE_PERSON"
+2.	**customerVatData** node is enabled if **customerVATstatus** is "DOMESTIC"
+3.	**customerTaxNumber.groupMemberTaxNumber** node is enabled if customer has **TaxRegistrationId** mapped with **GROUP VAT ID** value in **TaxNumberTypeLookup**.
+4.	**customerVatData** node is enabled if customer has **TaxRegistrationId** mapped with **EU VAT ID** value in **TaxNumberTypeLookup** and **customerVATstatus** is "OTHER".
+5.	**thirdStateTaxId** node is enabled if customer has **TaxRegistrationId** mapped with **THIRD STATE VAT ID** and **customerVATstatus** is "OTHER"
+
+When setup of lookup fields is done, in the **State** field, select **Completed**, and then save the configuration.
+
+### Differentiation by types of taxes in reporting of invoices lines in “vatRate” node
+
+Online invoicing system XSD version 3.0 introduces following changes related to reporting of VAT information in respect to each invoice line as well as invoice summary information:
+
+| **Node** | **Change description**               |
+|-----------------------|------------------------------------|
+| vatExemption     | Additional details must be reported: **case** - Case notation with code; **reason** - Case notation with text |
+| vatOutOfScope     | Additional details must be reported: **case** - Case notation with code; **reason** - Case notation with text |
+| vatAmountMismatch     | New node with mandatory reporting of: **vatRate** - VAT rate, VAT content; **case** - Case notation with code |
+| noVatCharge     | New node with Boolean value |
+
+With this change, Starting from version **94.50** of **RTIR Invoice Data (HU)** format, released to support **XSD version 3.0** of Online invoicing system, all the sales tax exempt codes and sales tax codes necessary for reporting to Online invoicing system must be classified before you start reporting with XSD version 3.0.
+
+1.	Open **Electronic reporting** module, select **Invoices Communication Model** > **RTIR Invoice Data (HU)** configuration, click **Configurations** > **Application-specific parameters** > **Setup** on the Action pane and select the last version of the configuration in the list on the left. 
+2.	Select **VatExemptionCodesLookup** field in the **Lookups** fast fab and create mapping between **Sales tax exempt codes** used in your company and values expected by the Online invoicing system for **vatExemption** node in the **Lookup result** column on the **Conditions** fast tab.
+3.	Use **VatOutOfScopeCodesLookup** lookup field to define mapping between **Sales tax codes** used by your company and values expected by online invoicing system, XSD 3.0 in **vatExemption** node in the **Lookup result** column on the **Conditions** fast tab. 
+4.	Use **MarginSchemeTypesLookup** lookup field to define mapping between **Sales tax codes** used by your company and values expected by online invoicing system, XSD 3.0 in **marginSchemeIndicator** node in the **Lookup result** column on the **Conditions** fast tab. 
+5.	Use **VatRateTypesLookup** lookup field to define mapping between **Sales tax codes** used by your company and values expected by online invoicing system, XSD 3.0 in **vatPercentage** or/and **vatExemption** nodes in the **Lookup result** column on the **Conditions** fast tab. 
+6.	This setup must be done for all your Sales tax codes.
+
+When setup of lookup fields is done, in the **State** field, select **Completed**, and then save the configuration.
 
 ## Import a package of data entities that includes a predefined EM setup
 
@@ -430,6 +478,138 @@ For a full description of the electronic message actions of **OnlineInvoicing** 
 | Submit invoice request         | No                 |
 | Submit status request          | No                 |
 | Submit token request           | No                 |
+
+## Appendix 2: Implementation details
+
+Online invoicing system starting from XSD version 3.0 requires to report
+“customerVatStatus” mandatory field – Customers status by VAT. This field must
+represent one of the following values:
+
+| **Value**               | **Description**                                                                                                           |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **DOMESTIC**            | Domestic VAT subject                                                                                                      |
+| **OTHER**               | Other (domestic non-VAT subject, non-natural person, foreign VAT subject and foreign non-VAT subject, non-natural person) |
+| **PRIVATE**\_**PERSON** | Non-VAT subject (domestic or foreign) natural person                                                                      |
+
+Starting from version **94.50**, **RTIR Invoice Data (HU)** format, released to support **XSD version 3.0** of Online invoicing system, supports the
+following algorithm to define “customerVatStatus”:
+
+| **customerVatStatus value** | **Criteria**                                                                                                                                          |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **PRIVATE**\_**PERSON**     | CustTable.partyType() == **DirPartyType**.**Person &&** Customer doesn't have VATNum **&&** No Hungarian TaxRegistrationId exist for the customer.    |
+| **DOMESTIC**                | CustTable.partyType() == DirPartyType.Organization **&&** (Customer either has Hungarian VATNum **\|\|** or customer has Hungarian TaxRegistrationId) |
+| **OTHER**                   | otherwise                                                                                                                                             |
+
+
+### Reporting of advance payment invoices and final invoices
+
+Starting from XSD v.3.0, Online invoicing system requires specific approach to
+be applied to reporting of advance payment invoices and final invoices. Details
+of these requirements are described in official documentation published on
+<https://onlineszamla.nav.gov.hu> .
+
+The following business process is considered as subject for “Advance payment
+invoices and final invoices” scenario reporting. In accordance with the
+Hungarian VAT Act, *receipt of advance payment is a tax point*. General business
+scenario of advance payment invoices and final invoices:
+
+-   supplier issues a request for (advance) payment – non-VAT document
+
+-   once the payment is made by the customer and received by the supplier, the
+    supplier issues an invoice regarding the advance payment.
+
+-   final invoice is issued upon the fulfilment of the supply, in which the
+    amount of the advance payment is considered. VAT amount is payable on the
+    difference of total consideration reduced by the advance payment(s).
+
+Dynamics 365 Finance supports reporting of “Advance payment invoices and final
+invoices” scenario with the following assumptions:
+
+**Scenario I: Prepayment is posted with Sales tax transactions** (**Accounts receivable** module)
+
+1.  Post a Prepayment with Sales tax transactions
+
+2.  Create **Advance invoice** in **Accounts receivable** \> **Advance
+    invoices** \> **All advance invoices**
+
+3.  Link posted prepayment to the created Advance payment by using **Related
+    information** \> **Prepayment** button on the action pane of Advance invoice
+    form.
+
+4.  Post advance invoice. No voucher created, no affect in accounting.
+
+5.  Posted Advance invoice will be reported to Online invoicing system with
+    lines collected from sales tax transactions of the prepayment linked to this advance invoice. Invoice number and date information will be collected from the advance invoice header. Currency amount and exchange rate of the advace invoice will be reported in the currency of the prepayment posted.
+
+6.  Create a final invoice and link it to the Advance invoice (**Accounts
+    receivable** \> **Advance invoices** \> **All advance invoices**) created on
+    the step 1 by using **Related information** \> **Prepayment** button on the
+    action pane of Advance invoice form. Note: To guaranty correct reporting in Online invoicing system of data from the system, we recommend you to avoid multiple invoices linking to multiple advance invoices (m : n) on the same sales order.
+
+7.  Posted final invoice will be reported to Online invoicing system with
+    reference information in \<advancePaymentData\> node and amounts in summary
+    as the difference between the posted sales tax from prepayments linked to
+    the same advance invoice. The exchange rate of the advance invoice will be reported for the referenced adavnce invoice information but in case the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice and recalculated to the currency of the final document.
+
+**Scenario II: Prepayment is posted without Sales tax transactions** (**Accounts receivable** module)
+
+1.  Post a Prepayment with no Sales tax transactions
+
+2.  Use “**Advanced**” prepayment handling functionality for the posted
+    prepayment to post sales tax transactions for the prepayement.
+
+3.  Create **Advance invoice** in **Accounts receivable** \> **Advance
+    invoices** \> **All advance invoices**
+
+4.  Link posted prepayment to the created Advance payment by using **Related
+    information** \> **Prepayment** button on the action pane of Advance invoice
+    form.
+
+5.  Post advance invoice. No voucher created, no affect in accounting.
+
+6.  Posted Advance invoice will be reported to Online invoicing system with
+    lines collected from sales tax transactions of the prepayment linked to this advance invoice. Invoice number and date information will be collected from the advance invoice header. Currency amount and exchange rate of the advace invoice will be reported in the currency of the prepayment posted.
+
+7.  Create a final invoice and link it to the Advance invoice (**Accounts
+    receivable** \> **Advance invoices** \> **All advance invoices**) created on
+    the step 1 by using **Related information** \> **Prepayment** button on the
+    action pane of Advance invoice form. Note: To guaranty correct reporting in Online invoicing system of data from the system, we recommend you to avoid multiple invoices linking to multiple advance invoices (m : n) on the same sales order.
+
+8.  Posted final invoice will be reported to Online invoicing system with
+    reference information in \<advancePaymentData\> node and amounts in summary
+    as the difference between the posted sales tax from prepayments linked to
+    the same advance invoice. The exchange rate of the advance invoice will be reported for the referenced adavnce invoice information but in case the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice and recalculated to the currency of the final document.
+
+**Scenario III: Advance invoice is posted via Customer advance on project** (**Projects management and accounting** module)
+
+1.  Create and post **Customer advance** on a project by using **Manage** \>
+    **Bill** \> **Customer advance** button on the Action pane.
+
+2. Posted invoice created as **Customer advance** will be reported to Online
+    invoicing as advance invoice.
+
+3. Create and post a project invoices selecting the Customer advance previously
+    posted.
+
+4. Posted project invoice will be reported to Online invoicing as final invoice
+    with reference information in \<advancePaymentData\> node and amounts in
+    summary as the difference between the posted sales tax from customer advance
+    linked to the final project invoice.
+
+### Support of digital archiving of invoices including the hash value in the data report
+
+Online invoicing system starting from XSD version 3.0 support opportunity of digital archiving of invoices and allows to send hash number generated for the invoices by the system. To allow your system to generate hash numbers for the invoices following the next steps:
+
+1.	Enable “Archive printed customer invoices with hash numbers” feature in feature management. 
+2.	Set up “Archive directory” in Organization administration > Document management > Document management parameters.
+3.	Specify Customers, for which customers and project invoices must be archived. In customers master data, open Invoice and delivery > eInvoice > "eInvoice attachment" = Yes.
+4.	Posted and printed invoices for the specified customers will have an attachment with Type = File, Restriction = external. Attachment can be reviewed via “Document handling” button. Switch to General fast tab of Document handling form to see the “Hash number” related to an invoice.
+5.	Invoices for which an attachment with hash was created in the system will be reported to Online invoicing system including the hash number value stored in the system.
+
+### Additional information
+
+To guaranty correct reporting in Online invoicing system of data from the system, we recommend you create credit note for one invoice. Avoid scenario when one credit note is created for several invoices.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
