@@ -486,6 +486,13 @@ For a full description of the electronic message actions of **OnlineInvoicing** 
 
 ## Appendix 2: Implementation details
 
+### Reporting of the nature of the supply of goods or services (LineNatureIndicator)
+
+Online invoicing system requires to report **LineNatureIndicator** - the indication of the nature of the supply of goods or services on a given line.
+**RTIR Invoice Data (HU)** format provides the  binding to report this field depending on value of **Repoting type** specified in the **Item sales tax group** from the related sales tax transaction.
+
+### Customers status by VAT (customerVatStatus)
+
 Online invoicing system starting from XSD version 3.0 requires to report
 “customerVatStatus” mandatory field – Customers status by VAT. This field must
 represent one of the following values:
