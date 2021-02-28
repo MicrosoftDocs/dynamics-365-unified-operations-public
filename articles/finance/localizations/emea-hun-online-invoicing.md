@@ -151,9 +151,13 @@ Starting from version **94.50** of **RTIR Invoice Data (HU)** format, released t
 
 To differentiate various registration types that you specify for customers VAT data, use **Registration categories** functionality:
 
-1.	Open **Organization administration** > **Global address book** > **Registration types** > **Registration types** page and create those tax registration types that you will associate with **Registration categories** of your customers and respective **customerVatData** for Online invoicing system.
-2.	Open **Organization administration** > **Global address book** > **Registration types** > **Registration categories** page and specify created on the step 1 registration types for those **Registration categories** that you will use for your customers.
-3.	Open **Electronic reporting** module, select **Invoices Communication Model** > **RTIR Invoice Data (HU)** configuration, click **Configurations** > **Application-specific parameters** > **Setup** on the Action pane and select the last version of the configuration in the list on the left. Select **TaxNumberTypeLookup** field in the **Lookups** fast fab and create mapping between **Registration types** created on the step 1 in **Tax registration types** column and further associated with your customers registration categories and values expected by the Online invoicing system for **customerVatData** node in the **Lookup result** column on the **Conditions** fast tab.
+1.	Open **Organization administration** > **Global address book** > **Registration types** > **Registration types** page 
+2.	Create tax registration types that you will associate with **Registration categories** of your customers and respective **customerVatData** for Online invoicing system.
+3.	Open **Organization administration** > **Global address book** > **Registration types** > **Registration categories** page and specify created on the step 1 registration types for those **Registration categories** that you will use for your customers.
+4.	Open **Electronic reporting** module, select **Invoices Communication Model** > **RTIR Invoice Data (HU)** configuration
+5.	Click **Configurations** > **Application-specific parameters** > **Setup** on the Action pane 
+6.	Select the last version of the configuration in the list on the left. 
+7.	Select **TaxNumberTypeLookup** field in the **Lookups** fast fab and create mapping between **Registration types** created on the step 1 in **Tax registration types** column and further associated with your customers registration categories and values expected by the Online invoicing system for **customerVatData** node in the **Lookup result** column on the **Conditions** fast tab.
 
 With the setup done for **TaxNumberTypeLookup** lookup field, system applies the following algorithm to report **customerVatData** node:
 
@@ -183,7 +187,8 @@ With this change, Starting from version **94.50** of **RTIR Invoice Data (HU)** 
 3.	Use **VatOutOfScopeCodesLookup** lookup field to define mapping between **Sales tax codes** used by your company and values expected by online invoicing system, XSD 3.0 in **vatExemption** node in the **Lookup result** column on the **Conditions** fast tab. 
 4.	Use **MarginSchemeTypesLookup** lookup field to define mapping between **Sales tax codes** used by your company and values expected by online invoicing system, XSD 3.0 in **marginSchemeIndicator** node in the **Lookup result** column on the **Conditions** fast tab. 
 5.	Use **VatRateTypesLookup** lookup field to define mapping between **Sales tax codes** used by your company and values expected by online invoicing system, XSD 3.0 in **vatPercentage** or/and **vatExemption** nodes in the **Lookup result** column on the **Conditions** fast tab. 
-6.	This setup must be done for all your Sales tax codes.
+
+This setup must be done for all your Sales tax codes.
 
 When setup of lookup fields is done, in the **State** field, select **Completed**, and then save the configuration.
 
