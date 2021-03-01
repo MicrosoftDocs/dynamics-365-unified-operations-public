@@ -46,6 +46,14 @@ The following features are included in this release. Some of the listed features
 - [Vendor collaboration bank changes](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes)
 - [Public sector - Restrict ability to edit accounting distribution on vendor invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/restrict-ability-edit-accounting-distribution-vendor-invoices)
 
+## Globalization changes
+
+- [Regulatory Configuration Service – simplified globalization feature management for globalization services](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+- [Regulatory Configuration Service expanded regional coverage to Europe](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage-europe)
+- [Tax – enhanced global withholding tax](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax--enhanced-global-withholding-tax)
+- [Tax – using packing slip date as tax calculation date](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax--using-packing-slip-date-as-tax-calculation-date)
+- [Extended Italian localization – payment traceability improvements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/extended-italian-localization--payment-traceability-improvements)
+
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
