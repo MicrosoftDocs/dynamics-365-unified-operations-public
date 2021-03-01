@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: TDS group, PAN, and TAN information setup for vendors and customers
-description: This topic lists the steps for setting up the Tax Deducted at Source (TDS) group, PAN, and TAN information for vendors and customers.
+title: Set up TDS group, PAN, and TAN information for vendors and customers
+description: This topic explains how to set up information about the Tax Deducted at Source (TDS) group, permanent account number (PAN), and tax account number (TAN) for vendors and customers.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -34,47 +34,42 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for setting up the Tax Deducted at Source (TDS) group, permanent account number (PAN), and tax account number (TAN) information for vendors and customers.
+This topic explains how to set up information about the Tax Deducted at Source (TDS) group, permanent account number (PAN), and tax account number (TAN) for vendors and customers.
 
-Begin by opening the **All customers** page (**Accounts payable > Vendors > All vendors** or **Accounts receivable > Customers > All customers**).
+1. Go to **Accounts payable \> Vendors \> All vendors** or **Accounts receivable \> Customers \> All customers**.
 
-[![All vendors](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![All vendors page](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
-1. Click **New** to create a new vendor or customer and enter the required details or select an existing customer.
+2. On the Action Pane, select **New** to create a vendor or customer, and enter the required details. Alternatively, select an existing customer.
+3. On the **Setup** FastTab, in the **Withholding tax** section, select the **Calculate withholding tax** check box to calculate withholding tax, TDS, or Tax Collected at Source (TCS) for the vendor or customer.
+4. TDS for a purchase invoice is calculated based on the default TDS group that is defined for the vendor or customer. In the **TDS group** field, select the default TDS group.
 
-2. Click the **Setup** tab. Under the **Withholding tax** field group, select the **Calculate withholding tax** check box to calculate withholding tax, TDS, or TCS for the vendor or customer.
+    > [!NOTE]
+    > When you select a TDS group in the **TDS group** field, the **Withholding tax group** and **TCS group** fields become unavailable.
 
-3. In the **TDS group** field, select the default TDS group to calculate TDS for the vendor or customer. Calculate TDS of a purchase invoice based on the default TDS group defined for the vendor or customer.
+5. On the **Tax information** FastTab, in the **PAN information** section, in the **Status** field, select the status of the permanent account number for the vendor or customer:
 
-   > [!Note]
-   > The **Withholding tax group** field and **TCS group** field becomes unavailable when you select a TDS group in the **TDS group** field.   
+    - **Not available** – The vendor or customer doesn't have a PAN.
+    - **Received** – The vendor or customer has a PAN.
+    - **Applied** – The vendor or customer has applied for a PAN.
+    - **Invalid** – The vendor or customer has a PAN, but it isn't valid.
 
-4. Click the **Tax information** tab. Under the **PAN information** field group, in the **Status** field, select the status of the permanent account number for the vendor or customer. The options are:
+6. If you selected **Received** in the **Status** field to indicate that the vendor or customer has a PAN, enter the PAN in the **Number** field. The PAN must consist of five alphabetic characters, then four numeric characters, and then one alphabetic character. Here is an example: **ABCDE1260A**.
+7. If you selected **Applied** in the **Status** field to indicate that the vendor or customer has applied for PAN, enter the reference number in the **Reference number** field.
+8. In the **Nature of assessee** field, select the nature of assessee category that the vendor or customer belongs to:
 
-   - **Not available**: Vendor or customer does not have a PAN.
-   - **Received**: Vendor or customer has a PAN.
-   - **Applied**: Vendor or customer has applied for a PAN.
-   - **Invalid**: Vendor or customer has an invalid PAN. 
+    - Company
+    - HUF
+    - Firm
+    - Individual
+    - AOP
+    - BOI
+    - Local authority
+    - Others
 
-  [![Tax information (tab)](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![Tax information FastTab](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
-5. If the vendor or customer has a PAN and the PAN status is **Received**, enter the PAN information in the **Number** field. The PAN number must consist of 5 alpha characters, 4 numeric characters, and 1 alpha character. For example, ABCDE1260A.
-
-6. If the vendor has applied for PAN and the PAN status is **Applied**, enter the reference number in the **Reference number** field. 
-
-7. In the **Nature of assessee** field, select the nature of assessee category that the vendor or customer belongs to. The options are:
-
-   - **Company**
-   - **HUF**
-   - **Firm**
-   - **Individual**
-   - **AOP**
-   - **BOI**
-   - **Local** **authority**
-   - **Others**
-
-8. In **Vendor > Registration** menu, click Registration IDs button. In the **Tax information** tab, click **Add** or **Edit** to maintain the tax registration entry.
-
-9. In the **Withholding tax** tab, enter the **Tax Account Number (TAN)**. The registration number must consist of 4 alpha, 5 numeric, and one alpha character. For example, AFGH54821T.
-
-10. Close the page.
+9. On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **Registration IDs**.
+10. On the **Tax information** tab, select **Add** or **Edit** to maintain the tax registration entry.
+11. On the **Withholding tax** tab, in the **Tax Account Number (TAN)** field, enter the TAN. The TAN must consist of four alphabetic characters, then five numeric characters, and then one alphabetic character. Here is an example: **AFGH54821T**.
+12. Close the page.
