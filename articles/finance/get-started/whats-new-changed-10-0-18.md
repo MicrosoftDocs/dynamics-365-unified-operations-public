@@ -43,16 +43,18 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/dynamics365/release-plans/) for official release dates for each feature.
 
-- [Vendor collaboration bank changes](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes)
-- [Public sector - Restrict ability to edit accounting distribution on vendor invoices](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/restrict-ability-edit-accounting-distribution-vendor-invoices)
+- [Vendor collaboration bank changes](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/vendor-collaboration-bank-changes)
+- [Public sector - Restrict ability to edit accounting distribution on vendor invoices](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/restrict-ability-edit-accounting-distribution-vendor-invoices)
 
 ## Globalization changes
 
-- [Regulatory Configuration Service – simplified globalization feature management for globalization services](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
-- [Regulatory Configuration Service expanded regional coverage to Europe](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage-europe)
+- [Regulatory Configuration Service – simplified globalization feature management for globalization services](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+- [Regulatory Configuration Service expanded regional coverage to Europe](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage-europe)
 - [Tax – enhanced global withholding tax](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax--enhanced-global-withholding-tax)
-- [Tax – using packing slip date as tax calculation date](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax--using-packing-slip-date-as-tax-calculation-date)
-- [Extended Italian localization – payment traceability improvements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/extended-italian-localization--payment-traceability-improvements)
+- [Tax – using packing slip date as tax calculation date](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax--using-packing-slip-date-as-tax-calculation-date)
+- [Extended Italian localization – payment traceability improvements](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/extended-italian-localization--payment-traceability-improvements)
+- [Regulatory Configuration Service expanded regional coverage to Europe](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage-europe)
+- [Regulatory Configuration Services (RCS) - Globalization features](https://docs.microsoft.com/dynamics365/finance/localizations/rcs-globalization-feature)
 
 ## Additional resources
 
