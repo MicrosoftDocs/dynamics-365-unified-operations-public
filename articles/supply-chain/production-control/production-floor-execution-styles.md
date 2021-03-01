@@ -43,9 +43,11 @@ A card view without controls inside:
 
 ![Card without elements](media/pfe-styles-empty-card.png)
 
-A card view with controls inside:
+Two card views with controls inside:
 
-![Card with elements](media/pfe-styles-elements.png)
+![Card with elements showing Hz](media/pfe-styles-elements.png)
+
+![Card with elements for maintenance request](media/pfe-styles-elements-maintenance.png)
 
 ## Business card
 
