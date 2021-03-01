@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up payment fees for payment fee charges for TDS authority payments
-description: This topic lists the steps for setting up a payment fee for Tax Deducted at Source (TDS) authority payments.
+title: Set up payment fees for TDS authority payments
+description: This topic explains how to set up payment fees that are charged for Tax Deducted at Source (TDS) authority payments.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -30,82 +30,60 @@ ms.dyn365.ops.version: AX 10.0.17
 
 ---
 
-# Set up payment fees for payment fee charges for TDS authority payments
+# Set up payment fees for TDS authority payments
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for setting up a payment fee for Tax Deducted at Source (TDS) authority payments.
+This topic explains how to set up payment fees that are charged for Tax Deducted at Source (TDS) authority payments.
 
-Begin by opening the **Payment fee** page (**Accounts payable > Payment setup > Payment fee**).
+1. Go to **Accounts payable \> Payment setup \> Payment fee**.
 
-[![Payment fee](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![Payment fee page](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
-1. On the **Overview** tab, press ALT+N to create a payment fee. Enter the required details.
+2. On the **Overview** tab, select **Alt+N** to create a payment fee, and enter the required details.
+3. In the **Fee type** field, select the type of payment fee:
 
-2. In the **Fee type** field, select the payment fee type. The options are:
+    - **None**
+    - **Interest** – Interest is charged on late payments that are made to the TDS authority vendor.
+    - **Others** – Other charges are charged on late payments that are made to the TDS authority vendor.
 
-   - **None**
+    If you select **Interest** or **Others**, the **Charge** field is automatically set to **Ledger**.
 
-   - **Interest**: Select this option to charge interest on late payment made to the TDS authority vendor.
+4. If you selected **Interest** or **Others** in the **Field type** field, in the **Main account** field, select the ledger account to post the interest or other charges to.
+5. Enter the other required details.
+6. On the Action Pane, select **Payment fee setup** to open the **Payment fee setup** page, where you can set up payment fees for various combinations of banks, methods of payment, payment specifications, currencies, and date intervals.
 
-   - **Others**: Select this option to charge other charges on late payment made to the TDS authority vendor. 
+    [![Payment fee setup page](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
-3. In the **Charge** field, the **Ledger** option is displayed automatically when the **Interest** or **Others** option is selected in the **Fee type** field.
+7. On the **Overview** tab, in the **Groupings** field, specify which banks you're setting up the payment fee for:
 
-4. In the **Main account** field, select the ledger account to post the interest or other charges. Enter the other required details.
+    - **Table** – The fee is valid for a specific bank account.
+    - **Group** – The fee is valid for a specific bank group.
+    - **All** – The fee is valid for all the bank accounts.
 
-5. Click the **Payment fee setup** button to set up payment fees for various combinations of banks, methods of payment, payment specifications, currencies, and date intervals.
+8. If you selected **Table** or **Group** in the **Groupings** field, in the **Bank relation** field, select the specific bank account or bank group that you're setting up the payment fee for.
+9. In the **Method of payment** field, select the method of payment for the payment of fees.
+10. In the **Payment specification** field, select or enter the payment specification code that was generated on the **Payment specification** page.
+11. In the **Payment currency** field, select the currency that activates the fee. Only transactions that use the selected currency can activate the fee. If you leave this field blank, all currencies activate the fee.
+12. In the **Percentage/Amount** field, select the calculation method. The options are **Amount**, **Percent**, and **Interval**.
+13. In the **Fee amount** field, specify the fee amount as either a percentage of the payment or the amount for one payment.
+14. In the **Fee currency** field, specify the currency code for the fee.
+15. Select the **General** tab to view or modify the details for the selected bank account.
 
-[![Payment fee setup](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![General tab](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
-6.  Click the **Overview** tab. In the **Groupings** field, select the option to set up the bank information for. The options are:
+16. In the **Minimum** field, enter the minimum transaction amount that activates the fee.
+17. In the **Maximum** field, enter the maximum transaction amount that activates the fee.
+18. In the **From date** and **To date** fields, define a date range for calculating fees.
+19. In the **Minimum fee** field, specify the amount of the fee as either a percentage of the payment or the amount for one payment.
+20. In the **Sales tax group** field, select the sales tax group to use to calculate the sales tax for the fee amount.
+21. In the **Item sales tax group** field, select the item sales tax group to use to calculate the item sales tax for the fee amount.
+22. Select the **Interval** tab. 
 
-   - **Table**: The fee is valid for the bank account selected in the Bank relation list.
+    [![Interval tab](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
-   - **Group**: The fee is valid for the bank group selected in Bank relation list.
-
-   - **All**: The fee is valid for all the bank accounts.
-
-7. In the **Bank** **relation** field, specify the bank to set up the payment fees setup for.
-
-8. In the **Method** **of** **payment** field, select the method of payment for the payment of fees.
-
-9. In the **Payment** **specification** field, select or enter the payment specification code generated using the **Payment specification** page.
-
-10. In the **Fee Currency** field, select the currency that activates the fee. Only transactions with this currency can activate the fee. If blank, all currencies will activate the fee.
-
-11. In the **Percentage/Amount** field, select the calculation method. The options are Amount, Percent, and Interval.
-
-12. In the **Fee amount** field, specify the fee amount in percentage of the payment or amount for one payment.
-
-13. In the **Fee Currency** field, specify the currency code for fee.
-
-14. Click the **General** tab to view or modify the details entered for the selected bank account.
-
-[![Payment fee setup - General (tab)](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
-
-15. In the **Minimum** field, enter the minimum transaction amount to activate the fee.
-
-16. In the **Maximum** field, enter the maximum transaction amount to activate the fee.
-
-17. In the **From** and **To** date fields, enter starting and ending dates to define a range for calculating the fees. 
-
-18. In the **Minimum** **fee** field, specify the amount of the fee in percentage of the payment or amount for one payment.
-
-19. In the **Sales** **tax** **group** field, select the sales tax group to calculate the sales tax for the fee amount.
-
-20. In the **Item** **sales** **tax** **group** field, select the item sales tax group to calculate the item sales tax for the fee amount.
-
-21. Click the **Interval** tab. 
-
-[![Payment fee setup - Interval (tab)](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
-
-22. In the **Days** field, enter the number of days between the posting date (discounting date) of the payment and the due date of the promissory note.
-
-23. In the **Percentage/Amount** field, select whether the specification is a percentage or an set amount.
-
-24. In the **Fee** **amount** field, enter the amount of the fee in percent of the payment or amount for one payment.
-
-25. Close the **Payment fee setup** page.
-
-26. Close the **Payment fee** page.
+23. In the **Days** field, enter the number of days between the posting date (discounting date) of the payment and the due date of the promissory note.
+24. In the **Percentage/Amount** field, select whether the specification is a percentage or a set amount.
+25. In the **Fee amount** field, enter the amount of the fee as either a percentage of the payment or the amount for one payment.
+26. Close the **Payment fee setup** page.
+27. Close the **Payment fee** page.
