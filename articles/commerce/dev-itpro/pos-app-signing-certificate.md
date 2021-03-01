@@ -59,36 +59,35 @@ Using a Secure File task is the recommended approach for Universal Windows Platf
 
 Download the [DownloadFile task](https://docs.microsoft.com/visualstudio/msbuild/downloadfile-task) and add it as the first step in the build process. The advantage of using the Secure File task is that the file is encrypted and placed in the disk during build no matter if the build pipeline succeeds, fails, or is canceled. The file is deleted from the download location after the build process is completed.
 
-1. Download and add the Secure File task as the first step in the Azure DevOps build pipeline. You can download the Secure File task from [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
+1. Download and add the Secure File task as the first step in the Azure build pipeline. You can download the Secure File task from [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
 2. Upload the certificate to the Secure File task and set the Reference name under Output Variables, as shown in the following image.
     > [!div class="mx-imgBorder"]
     > ![Secure file task](media/SecureFile.png)
-3. Create a new variable in the Azure DevOps pipeline by clicking **New Variable** under the **Variables** tab.
+3. Create a new variable in Azure Pipelines by clicking **New Variable** under the **Variables** tab.
 4. Provide a name for the variable in the value field, for example, **MySigningCert**.
 5. Save the variable.
-6. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateKeyFile** with the variable name created in the Azure DevOps pipeline (step 3). For example:
+6. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateKeyFile** with the variable name created in the pipeline (step 3). For example:
 
     ```Xml
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
     ```
-Step 6 is required if the certificate is not password protected, if the certificate is password protected follow the below steps:
+    This step is required if the certificate is not password protected, if the certificate is password protected follow the below steps:
  
-7. On the pipeline’s “Variables” tab, add a new secure-text variable with name “MySigningCert.secret” and value is the password for the certificate and click on the lock icon to secure the variable
-8. Add a “Powershell Script” task to the pipeline (after the Download Secure File and before the Build step). Provide the Display name and Set the Type as “Inline” and copy and paste the below script in the script section:
+7. On the pipeline’s **Variables** tab, add a new secure-text variable. Set the name to **MySigningCert.secret** and set the value to the password for the certificate. Click on the lock icon to secure the variable.
+8. Add a **Powershell Script* task to the pipeline (after the Download Secure File and before the Build step). Provide the Display name and set the Type as **Inline**. Copy and paste the below script in the script section:
 
-```powershell
-Write-Host "Start adding the PFX file to the certificate store."
-$pfxpath = '$(MySigningCert.secureFilePath)'
-$secureString = ConvertTo-SecureString "$(MySigningCert.secret)" -AsPlainText -Force
-Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
+    ```powershell
+    Write-Host "Start adding the PFX file to the certificate store."
+    $pfxpath = '$(MySigningCert.secureFilePath)'
+    $secureString = ConvertTo-SecureString "$(MySigningCert.secret)" -AsPlainText -Force
+    Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
+    ```
 
-```
 9. Open the **Customization.settings** file from **RetailSDK\\BuildTools** and update the **ModernPOSPackageCertificateThumbprint** with the certificate thumbprint value:
 
-
-```Xml
-   <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
- ```
+    ```Xml
+       <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
+    ```
  
 ## Download or generate a certificate to sign the MPOS app manually using msbuild in SDK:
 
