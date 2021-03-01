@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.17 of Finance and Operations apps (Apri
 description: This topic lists the features that are included in the platform updates for version 10.0.17 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 02/04/2021
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
