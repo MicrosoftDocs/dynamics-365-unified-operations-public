@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data Maintenance
+title: Data maintenance
 description: This topic provides details about how Data Maintenance allows simple scheduling of processes that find and correct data inconsistencies in your environment.
 author: RyanCCarlson2
 manager: tonyafehr
-ms.date: 02/12/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: DataMaintenance
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
@@ -22,7 +22,7 @@ ms.reviewer: sericks
 ms.search.region: Global
 # ms.search.industry:
 ms.author: rcarlson
-ms.search.validFrom: 2021-02-28
+ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
