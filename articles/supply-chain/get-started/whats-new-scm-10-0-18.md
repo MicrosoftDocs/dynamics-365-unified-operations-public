@@ -56,6 +56,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
 - [Landed cost module](../landed-cost/landed-cost-overview.md)
+- [Planning Optimization fit analysis](../master-planning/planning-optimization/planning-optimization-fit-analysis.md)
 
 ## Additional resources
 
