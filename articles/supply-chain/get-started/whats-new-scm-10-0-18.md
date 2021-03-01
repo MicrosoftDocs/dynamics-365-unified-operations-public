@@ -47,16 +47,17 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 - Automatic release of purchase orders (enhancement for [Warehouse execution with scale units in the cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md)
 
-- [Enterprise-scale inventory performance improvements and archiving](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Archive inventory transactions](../inventory/archive-inventory-transactions.md)
+- [Enterprise-scale inventory performance improvements and archiving](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br><!-- KFM: Add this when copyedit is done: - For more information, see [Archive inventory transactions](../inventory/archive-inventory-transactions.md) -->
 
 - [Rebate management](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)
 
-- Simplified interface for sign in and out only (enhancement for [Enhanced production floor execution interface for manufacturing](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
- 
+- Simplified interface for clock in and out only (enhancement for [Enhanced production floor execution interface for manufacturing](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
+
 ## New and updated documentation resources
 
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
+- [Inventory Visibility Add-in](../inventory/inventory-visibility.md)
 - [Landed cost module](../landed-cost/landed-cost-overview.md)
 - [Planning Optimization fit analysis](../master-planning/planning-optimization/planning-optimization-fit-analysis.md)
 
