@@ -85,7 +85,7 @@ An example with the text to the right of the radio button:
 
 ### Internet Explorer
 
-Production Floor Execution styles aren't supported in Internet Explorer. An example of radio buttons in Internet Explorer:
+Radio button styles aren't supported in Internet Explorer. This screenshot shows radio buttons in Internet Explorer:
 
 ![Radio buttons in Internet Explorer](media/pfe-styles-browser.png)
 
