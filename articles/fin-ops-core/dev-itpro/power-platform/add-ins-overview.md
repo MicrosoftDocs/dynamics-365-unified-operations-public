@@ -51,7 +51,7 @@ Add-ins provide a way to extend the functionality of Finance and Operations apps
     
         ![Power Platform settings](media/PowerPlatformSettings.png)
     
-- For organizations that do not allow **Everyone** to create Power Platform production environments, the Finance and Operations environment administrator account must be added as the admin.
+- Organizations must select **Everyone** for production environments.
     
     The Finance and Operations environment administrator must be added to one of the following roles. You will need a Global Administrator to perform this action.
     - Global admins
