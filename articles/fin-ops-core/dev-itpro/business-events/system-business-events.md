@@ -41,10 +41,10 @@ Batch job cancelled | Fires when a batch job is cancelled. | Batch
 
 ## Usage
 ### Batch job failed
-The **batch job failed** event be used to monitor specific batch jobs for failure and notify stakeholders in real time. This event is turned on by default in the application.
+The **batch job failed** event may be used to monitor specific batch jobs for failure and notify stakeholders in real time. This event is turned on by default in the application.
 
 ### Batch job started, finished 
-The **batch job started** and **batch job finished** events be used to monitor and determine long running batch jobs and notify stakeholders if a job takes longer than expected. This event is turned off by default in the application.
+The **batch job started** and **batch job finished** events may be used to monitor and determine long running batch jobs and notify stakeholders if a job takes longer than expected. This event is turned off by default in the application.
 
 ### Configure batch business events
 Navigate to **System administration -> Inquiries -> Batch jobs** and click on the **Business events** tab to update the settings to raise batch business events.
