@@ -57,7 +57,8 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 - [Integration framework for material handling equipment for automated warehouse processes (previously MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)
 
-- [Landed cost](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)
+- [Landed cost](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - For more information, see [Landed cost module](../landed-cost/landed-cost-overview.md)
+
 
 - [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - For more information, see [Set different dimensions for packing and storage](../warehousing/packing-vs-storage-dimensions.md).
 
