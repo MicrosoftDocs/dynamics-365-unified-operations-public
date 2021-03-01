@@ -47,7 +47,7 @@ The **batch job failed** event may be used to monitor specific batch jobs for fa
 The **batch job started** and **batch job finished** events may be used to monitor and determine long running batch jobs and notify stakeholders if a job takes longer than expected. This event is turned off by default in the application.
 
 ### Configure batch business events
-Navigate to **System administration -> Inquiries -> Batch jobs** and click on the **Business events** tab to update the settings to raise batch business events.
+Navigate to **System administration > Inquiries > Batch jobs** and click on the **Business events** tab to update the settings to raise batch business events.
 
 The events have the following payload:
 
@@ -67,4 +67,4 @@ EventTime | Business event instance ID
 MajorVersion | Major version
 MinorVersion | Minor version
 
-You can get the up-to-date business events catalog and schema by navigating to **System administration -> Setup -> Business events** in the application.
+You can get the up-to-date business events catalog and schema by navigating to **System administration > Setup > Business events** in the application.
