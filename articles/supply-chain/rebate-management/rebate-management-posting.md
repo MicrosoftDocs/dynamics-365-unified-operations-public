@@ -57,20 +57,20 @@ The following table describes the settings on the **Posting** FastTab of each re
 
 <!-- KFM: Review more carefully from here. -->
 
-| **Field** | **Description** | **Example** |
-| --- | --- | --- |
-| Debit Type | Select to debit Ledger or Customer/Vendor | Ledger Account |
-| Debit account | The account which debit amount is posted to when rebates provision is being made | Rebate expense account |
-| Credit Type | Select to credit Ledger or Customer/Vendor | Ledger Account |
-| Credit account | The account which credit amount is posted to when rebates provision is being made.This account will also be used as debit account when posting the rebate to credit the customer. | Rebate accrual account |
-| Provision: Name of Journal | Use the **Name of journal** field in the **Provision** section to select the name of journal used to record the posted provision. | RDProv |
-| Type | Select to post the rebate to a ledger, Customer or Vendor accountThis field is set to Customer/Vendor when Payment type = Tax invoice customer deductions. | Customer/Vendor |
-| Use account source | **None** - An account must be specified in the rebate account field **Deal Account** - Use the Customer or Vendor account specified on the rebate line_Note: Deal account can only be used where the Rebate management account code = Table and the reconcile by is completed at line level. It also doesn't apply to Customer royalty posting profiles._ | None |
-| Rebate Account | The account which actual rebates expense will be posted to. | Customer account |
-| Rebate management: Name of Journal | Use the **Name of journal** field in the **Rebate management** section to select the journal that will be used to post a credit note for the rebate amount to the customer. This field is disabled when Payment type = Tax invoice customer deductions | RDGenJnl |
-| Item sales tax group | Specify if the rebate is taxable | |
-| Main Account | <!-- KFM: Appears to be missing. Not needed? --> Where the Rebate posted does not equal the Provision, the difference can be written off. The account which the write-off of Rebate management provision will be posted to | Revenue account |
-| Write off: Name of journal | Where the Rebate posted does not equal the Provision, the difference can be written off. Use the **Name of journal** field in the **Write off** section to select the journal used to record the posted write off | RDWriteOff |
+| **Field** | **Description** |
+| --- | --- |
+| Debit Type | Select to debit Ledger or Customer/Vendor |
+| Debit account | The account which debit amount is posted to when rebates provision is being made |
+| Credit Type | Select to credit Ledger or Customer/Vendor |
+| Credit account | The account which credit amount is posted to when rebates provision is being made.This account will also be used as debit account when posting the rebate to credit the customer. |
+| Provision: Name of Journal | Use the **Name of journal** field in the **Provision** section to select the name of journal used to record the posted provision. |
+| Type | Select to post the rebate to a ledger, Customer or Vendor accountThis field is set to Customer/Vendor when Payment type = Tax invoice customer deductions. |
+| Use account source | **None** - An account must be specified in the rebate account field **Deal Account** - Use the Customer or Vendor account specified on the rebate line_Note: Deal account can only be used where the Rebate management account code = Table and the reconcile by is completed at line level. It also doesn't apply to Customer royalty posting profiles._ |
+| Rebate Account | The account which actual rebates expense will be posted to. |
+| Rebate management: Name of Journal | Use the **Name of journal** field in the **Rebate management** section to select the journal that will be used to post a credit note for the rebate amount to the customer. This field is disabled when Payment type = Tax invoice customer deductions |
+| Item sales tax group | Specify if the rebate is taxable |
+| Main Account | <!-- KFM: Appears to be missing. Not needed? --> Where the Rebate posted does not equal the Provision, the difference can be written off. The account which the write-off of Rebate management provision will be posted to |
+| Write off: Name of journal | Where the Rebate posted does not equal the Provision, the difference can be written off. Use the **Name of journal** field in the **Write off** section to select the journal used to record the posted write off |
 
 ## The Posting by company FastTab
 
@@ -101,6 +101,6 @@ The following table summarizes how various **Payment type** settings (made in th
 | **Reporting** | Daily journal | Vendor rebate | Vendor account |
 
 > [!NOTE] <!-- KFM: review this text. -->
-> When configuring the Rebate management agreements:
+> When configuring the Rebate management deals:
 > - 'Reconcile by' = Deal cannot use the Dynamic deal account in Rebate management posting. It needs the customer/vendor account specified.
-> - 'Reconcile by' = Line agreements can have a posting profile offsetting to a Dynamic deal account on the agreement line, as it can use the customer as per the agreement line.
+> - 'Reconcile by' = Line deals can have a posting profile offsetting to a Dynamic deal account on the deal line, as it can use the customer as per the deal line.

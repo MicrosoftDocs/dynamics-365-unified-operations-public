@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-You can group Rebate management deals into *reduction principles* to reduce other provisions associated with an item and/or to reduce the resulting values of rebate calculations. Once you have the rebate principles set up, you can assign them as needed to the lines of your various Rebate management deals (the setting is optional). The Rebate principle rules only apply where rebate agreements overlap and may therefore grant multiple rebates where they should not be owed.
+You can group Rebate management deals into *reduction principles* to reduce other provisions associated with an item and/or to reduce the resulting values of rebate calculations. Once you have the rebate principles set up, you can assign them as needed to the lines of your various Rebate management deals (the setting is optional). The Rebate principle rules only apply where rebate deals overlap and may therefore grant multiple rebates where they should not be owed.
 
 ## Manage rebate principles
 
@@ -42,7 +42,7 @@ To work with rebate principles, go to **Rebate management \>  Setup \> Rebate pr
 | **Rebate principle** | Enter a unique name for the rebate principle. |
 | **Description** | Enter a description of the rebate principle. |
 | **Apply Reduction** | Select this check box to apply the **Reduction basis** setting for rebates within this rebate principle. |
-| **Reduction basis** | When **Apply Reduction** is enabled, use this setting to specify the reduction basis. Options are *Provision* , *Rebates* or *Both*. If you select *Both*, and both a provision and rebate have been posted for a previous agreement, then only the rebate will be applied. |
+| **Reduction basis** | When **Apply Reduction** is enabled, use this setting to specify the reduction basis. Options are *Provision* , *Rebates* or *Both*. If you select *Both*, and both a provision and rebate have been posted for a previous deal, then only the rebate will be applied. |
 | **Exclude from reduction** | When this check box is selected, provisions and rebates within this rebate principle will be excluded from subsequent reductions. The **Reduction basis** doesn't apply to this setting. |
 
 ## Rebate reduction principle setup examples

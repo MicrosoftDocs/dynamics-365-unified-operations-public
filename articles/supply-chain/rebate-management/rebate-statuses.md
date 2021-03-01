@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-Rebate statuses help you to track the status of each Rebate management deal or contract. <!-- KFM: Are "agreements", "contracts" and "deals" always the same thing? If so, we should use "deals" everywhere to match the UI. --> You can also use statuses for reporting and inquiry purposes. You can set up and name as many rebate status values as you need to support your business process. 
+Rebate statuses help you to track the status of each Rebate management deal. You can also use statuses for reporting and inquiry purposes. You can set up and name as many rebate status values as you need to support your business process. 
 
 To set up the rebate statuses, go to **Rebate management \> Setup \> Status \> Status**. Use commands on the Action Pane to add and remove status values as needed. For each status, make the following settings:
 

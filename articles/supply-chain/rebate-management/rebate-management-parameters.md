@@ -41,7 +41,7 @@ The following table describes the settings available on the **Rebate management*
 
 | Setting | Description |
 | --- | --- |
-| **Default status** | Select the default status to be used for all new agreements. Use the [**Rebate statuses** page](rebate-statuses.md) to establish the collection of status values available. <!-- KFM: Are "agreements", "contracts" and "deals" always the same thing? If so, we should use "deals" everywhere to match the UI. ---YES---  -->  |
+| **Default status** | Select the default status to be used for all new deals. Use the [**Rebate statuses** page](rebate-statuses.md) to establish the collection of status values available. |
 | **Process by dimension** | Choose whether or not provision, rebate, and write-off transactions should be processed by financial dimension. When enabled, the system uses financial dimensions for the source transactions. |
 | **Check if previously posted** | Choose how the system should handle unposted rebate transactions has have processed for the same period more than once. Select one of the following values:<ul><li>**Warning** - The system will allow users to override the original transactions lines, but will display a warning.</li><li>**Error** - The system will prevent users from overriding the original transactions lines, and will display an error. |
 | **Automatically post journals** | Choose whether the system should post proposed journals automatically. This includes daily journals used for provisions and customer deductions as well as vendor tax invoice journals. |
@@ -63,6 +63,6 @@ Use the **Number sequences** tab of the **Rebate management parameters** page to
 
 ## The Feature visibility tab
 
-Rebate management adds features (fields and functions) to several frequently used pages in Supply Chain Management. These pages include pages that are related to sales orders and sales agreements. If you're using Rebate management, you must make those features visible everywhere before you can benefit from them. If you aren't using Rebate management, you can hide the features to keep them out of the way.
+Rebate management adds features (fields and functions) to several frequently used pages in Supply Chain Management. These pages include pages that are related to sales orders and sales deals. If you're using Rebate management, you must make those features visible everywhere before you can benefit from them. If you aren't using Rebate management, you can hide the features to keep them out of the way.
 
 On the **Feature visibility** tab of the **Rebate management parameters** page, set the **Activate** option to *Yes* to make Rebate management features visible wherever they are available. Set it to *No* to hide the features on common pages outside Rebate management. However, even when the option is set to *No*, the module itself, including the **Rebate management parameters** page, will remain available to users who have the correct permissions to access it.
