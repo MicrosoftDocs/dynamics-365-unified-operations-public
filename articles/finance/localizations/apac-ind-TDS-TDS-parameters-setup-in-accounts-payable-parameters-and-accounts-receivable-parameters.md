@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: TDS parameters setup in Accounts payable parameters and accounts receivable parameters
-description: This topic lists the steps for setting up parameters in the Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
+title: Set TDS parameters in Accounts payable and Accounts receivable
+description: This topic explains how to set parameters in Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -30,30 +30,27 @@ ms.dyn365.ops.version: AX 10.0.17
 
 ---
 
-# TDS parameters setup in Accounts payable parameters and accounts receivable parameters
+# Set TDS parameters in Accounts payable and Accounts receivable
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for setting up parameters in the Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
+This topic explains how to set parameters in Accounts payable and Accounts receivable to support Tax Deducted at Source (TDS) deductions.
 
-Begin the **Update order lines page** in Accounts receivable (**Tax > Setup > Parameters > Accounts receivable parameters > Updates > Update order lines**).
+1. Go to **Tax \> Setup \> Parameters \> Accounts receivable parameters**.
+2. On the **Updates** tab, select **Update order lines** to open the **Update order lines** dialog box.
+3. In the **TDS group** section, in the **Updating TDS group** field, specify the method to use to update the TDS group at the line level. This setting is used when the TDS group is updated on an order header. The following options are available:
 
-[![Update order lines](./media/apac-ind-TDS-26.png)](./media/apac-ind-TDS-26.png) 
+    - **Never** – The TDS group isn't updated on the order lines when it's updated on the order header.
+    - **Always** – The TDS group is automatically updated on the order lines when it's updated on the order header.
+    - **Prompt** – Users receive a message that prompts them to update the TDS group on the order lines.
+4. Select **OK**.
 
-1. Specify the method used to update the TDS group in the line-level in the **Updating TDS group** field, which is under the **TDS group** field group. This setting is used when the TDS group is updated in an order header. The options are: 
+    [![Update order lines dialog box](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
 
-   - **Never**: The TDS group is not updated in the order lines when the TDS group is updated in the order header.
-   - **Always**: The TDS group is updated automatically in the order lines when the TDS group is updated in the order header.
-   - **Prompt**: A message is displayed that prompts you to update the TDS group in the order lines.
+5. Go to **Tax \> Setup \> Parameters \> Accounts payable parameters**.
+6. On the **General** tab, on the **Split based on delivery information** FastTab, set the **Product receipt** option to **Yes** to post and split a product receipt that has different delivery addresses and tax account numbers (TANs). If this option is set to **No**, you can't post a purchase packing slip that has different delivery addresses and TANs.
+7. Set the **Invoice** option to **Yes** to post and split a purchase invoice that has different delivery addresses and TANs.
 
-2. Click **OK**.
+    [![Split based on delivery information FastTab](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
 
-3. Next, open the **Split based on delivery information** page in Accounts payable (**Tax > Setup > Parameters > Accounts payable parameters > General > Split based on delivery information**).
-
-[![Split based on delivery information](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
-
-4. In **Split based on delivery information** tab, select the **Product receipt** check box to post and split a product receipt with different delivery addresses and Tax Account Numbers (TAN). If you do not select this check box, you can't post a purchase packing slip with different delivery addresses and tax account numbers.
-
-5. Select the **Invoice** check box to post and split a purchase invoice with different delivery addresses and tax account numbers.
-
-6. Close the page.
+8. Close the page.
