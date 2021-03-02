@@ -49,11 +49,22 @@ Each tab contains information that pertains to a single company.
 
 ## General
 
-The settings on the **General** tab define the appearance of information about absence, injury and illness, and new hires. The settings on this tab also define some default entries that appear as you work. Specifically, this tab lets you select a color to apply to open absence transactions, specify the style sheet to use for reports, enable the integration between training courses and absence registration, and select the absence code that is used to control this integration. You can also indicate how long injury and illness case incidents should be kept, and specify the default identification number that is shown when a new worker is hired.
+The settings on the **General** tab define the appearance of information about absence, injury and illness, and new hires. The settings on this tab also define some default entries that appear as you work. Specifically, this tab lets you:
+
+- Select a color to apply to open absence transactions
+- Specify the style sheet to use for reports
+- Enable the integration between training courses and absence registration
+- Select the absence code that is used to control this integration.
+
+You can also indicate how long injury and illness case incidents should be kept, and specify the default identification number that is shown when a new worker is hired.
 
 ## Recruitment
 
-The settings on the **Recruitment** tab define the document types that are used for correspondence that is automatically sent to applicants, and the recruitment project that is used for unsolicited applications (applications that aren't for a specific recruitment project). The period that is defined for the recruitment project aging determines the recruitment projects that are included on the **Aging projects** tile in the **Recruitment management** workspace. The period that is defined for the application deadline warning is used to display recruitment projects that are approaching their application deadline on the **Application deadline approaching** tile in the **Recruitment** workspace. For more information about recruiting, see [Recruit job candidates](hr-personnel-recruit.md).
+The settings on the **Recruitment** tab define the document types used for correspondence that is automatically sent to applicants, and the recruitment project used for unsolicited applications (applications that aren't for a specific recruitment project).
+
+The period defined for the recruitment project aging determines the recruitment projects that are included on the **Aging projects** tile in the **Recruitment management** workspace. The period defined for the application deadline warning is used to display recruitment projects that are approaching their application deadline on the **Application deadline approaching** tile in the **Recruitment** workspace.
+
+For more information about recruiting, see [Recruit job candidates](hr-personnel-recruit.md).
 
 ## Compensation
 
