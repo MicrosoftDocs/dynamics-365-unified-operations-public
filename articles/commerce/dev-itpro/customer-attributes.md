@@ -118,10 +118,14 @@ The first version of this functionality doesn't support **datetime** and **refer
 9. After the designer is started, drag the **Customer** card anywhere in the screen layout designer.
 10. Right-click the **Customer** card, and then select **Customize**.
 11. When the page for the **Customization - Customer** card appears, select the required attributes in the **Available columns** section, and then select the right arrow button (**>**) to move them to the **Selected columns** section. You can move the attributes up or down by selecting the **Up** or **Down** buttons.
-12. When you've finished, select **OK** to save your changes.
-13. Close the screen layout designer by selecting the **Close** button (**X**) in the upper-right corner. When you're prompted, select **Yes** to save your changes.
-14. Select **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
-15. Select the **Registers** job (1090), and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
+
+> [!NOTE]
+>The Customer attributes are legal entity specific, screen layout designer fetches the customer attribute specific to the legal entity (Company) configured for the logged in user in  System Administration -> Users. Suppose if you configured attributes for the different legal entity then screen layout designer may not show those values.
+
+13. When you've finished, select **OK** to save your changes.
+14. Close the screen layout designer by selecting the **Close** button (**X**) in the upper-right corner. When you're prompted, select **Yes** to save your changes.
+15. Select **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
+16. Select the **Registers** job (1090), and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
 
 #### POS
 
