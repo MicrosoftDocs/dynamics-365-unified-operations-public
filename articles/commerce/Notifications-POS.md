@@ -31,20 +31,19 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-In the modern retail environment, store associates are assigned various tasks, such as helping customers, entering transactions, doing stock counts, and receiving orders in the store. The point of sale (POS) client provides a single application where associates can perform all these tasks and many others. Because various tasks must be performed during the day, associates might have to be notified when something requires their attention. The notification framework in the POS helps by letting retailers configure role-based notifications. As of Dynamics 365 for Retail with application update 5, these notifications can be configured only for POS operations.
+Store associates may be assigned various tasks in their store, such as fulfilling orders or performing inventory receiving or stock counts. The point of sale (POS) client provides a single application where associates can be notified of these tasks. The notification framework in the POS helps by letting retailers configure role-based notifications. As of Dynamics 365 for Retail with application update 5, these notifications can be configured for POS operations.
 
+The system can show notifications for the **order fulfillment** operation and in version 10.0.18 notifications can now also be shown for the **recall order** operation. However, because the framework is designed to be extensible, developers are able to [write a notification handler](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/extend-pos-notification) for any operation and show the notifications for that operation in the POS.
 
-Currently, the system can show notifications only for order fulfillment operations. However, because the framework is designed to be extensible, developers will eventually be able to write a notification handler for any operation and show the notifications for that operation in the POS.
+## Enable notifications for order fulfillment or recall order operations
 
-## Enable notifications for order fulfillment operations
-
-To enable notifications for order fulfillment operations, follow these steps.
+To enable notifications for the **order fulfillment** or **recall order** operations, follow these steps.
 
 1. Go to **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Operations**.
-2. Search for the **Order fulfillment** operation, and select the **Enable notifications** check box for it to specify that the notification framework should listen to the handler for this operation. If the handler is implemented, notifications for this operation will then be shown in the POS.
-3. Go to **Retail and Commerce** &gt; **Employees** &gt; **Workers** &gt;, under Commerce tab, open the POS permissions associated with the worker. Expand the **Notifications** FastTab, add the **Order fulfillment** operation, and set the **Display order** field to **1**. If more than one notification is configured, this field is used to arrange the notifications. Notifications that have a lower **Display order** value appear above notifications that have a higher value. Notifications that have a **Display order** value of **1** are at the top.
+2. Search for the **Order fulfillment** operation or the **Recall order** operation, and select the **Enable notifications** check box for it to specify that the notification framework should listen to the handler for this operation. If the handler is implemented, notifications for this operation will then be shown in the POS.
+3. Go to **Retail and Commerce** &gt; **Employees** &gt; **Workers** &gt;, under Commerce tab, open the POS permissions associated with the worker. Expand the **Notifications** FastTab,and add the operations you have enabled notifications for. Set the **Display order** field to indicate which order the notifications should be arranged by for display purposes if configuring more than one.  If only configuring a single notification for a worker, ensure the **Display order** is set to **1**. 
 
-    Notifications are shown only for operations that are added on the **Notifications** FastTab, and you can add operations there only if the **Enable notifications** check box for those operations has been selected on the **POS operations** page. Additionally, notifications for an operation are shown to workers only if the operation is added to the POS permissions for those workers.
+      Notifications are shown only for operations that are added on the **Notifications** FastTab, and you can add operations there only if the **Enable notifications** check box for those operations has been selected on the **POS operations** page. Additionally, notifications for an operation are shown to workers only if the operation is added to the POS permissions for those workers.
 
     > [!NOTE]
     > Notifications can be overridden at the user level. Open the worker's record, select **POS permissions**, and then edit the user's notification subscription.
@@ -54,12 +53,20 @@ To enable notifications for order fulfillment operations, follow these steps.
 
 ## View notifications in the POS
 
-After you complete the preceding steps, the workers will be able to view the notifications in the POS. To view notifications, press the notification icon in the top right corner of the POS. A notification center appears and shows notifications for the order fulfillment operation. The notification center should show the following groups in the order fulfillment operation:
+After you complete the preceding steps, the workers will be able to view the notifications in the POS. To view notifications, press the notification icon in the top right corner of the POS. A notification panel appears and shows notifications for the operations configured for the worker. 
 
-- **Store pickup** – This group shows the count of orders that have a delivery mode of **Pickup**, and that are scheduled for pickup from the current store. You can press the number on the group to open the **Order fulfillment** page. In this case, the page will be filtered so that it shows only the active orders that are set up for pickup from the current store.
-- **Ship from store** – This group shows the count of orders that have the delivery mode of **Shipping**, and that are scheduled for shipment from the current store. You can press the number on the group to open the **Order fulfillment** page. In this case, the page will be filtered so that it shows only the active orders that are set up for shipment from the current store.
+For the **order fulfillment** operation, the notification panel will show the following groups:
 
-When new orders are assigned to the store for fulfillment, the notification icon changes to indicate that there are new notifications, and the count for the appropriate groups is updated. Even though the groups are refreshed at regular intervals however, POS users can manually refresh the groups at any time by selecting the **Refresh** button next to the group. Lastly, if a group has a new item, that the current worker hasn't viewed, then the group shows a burst symbol to indicate new content.
+- **Store pickup** – This group shows the count of invidvidual order lines that are scheduled for pickup from the current store. You can press the number on the group to open the **Order fulfillment** operation with a filtered so that it shows only the active order lines that are set up for pickup from the current store.
+- **Ship from store** – This group shows the count of invidividual order lines that have been configured to ship from the user's current store. You can press the number on the group to open the **Order fulfillment** operation with a filtered view that only shows the active order lines that are set up for shipment from the current store.
+
+For the **recall order** operation, the notification panel will show the following groups:
+
+- **Orders to fulfill** – This group shows the count of orders that are configured either for pickup or shipping fulfillment for the users current store. You can press the number on the group to open the **Recall order** operation with a filtered view that only shows the open orders that need to be fulfilled by the user's current store for either pickup in store or ship from store scenarios.
+- **Orders to pick up** – This group shows the count of orders that are scheduled for pickup from the current store. You can press the number on the group to open the **Recall order** operation with a filtered view that only shows open orders that need to be fulfilled for customer pickup from the user's current store.
+- **Orders to ship** – This group shows the count of orders to be shipped from the user's current store. You can press the number on the group to open the **Recall order** operation with a filtered view that only shows open orders that need to be fulfilled for shipment from the user's current store.
+
+For both the order fulfillment and recall order notifications, as new orders are picked up by the process, the notification icon changes to indicate that there are new notifications, and the count for the appropriate groups is updated. Even though the groups are refreshed at regular intervals, POS users can manually refresh the groups at any time by selecting the **Refresh** button next to the group. Lastly, if a group has a new item that the current worker hasn't viewed, then the group shows a burst symbol to indicate new content.
 
 ## Enable live content on POS buttons
 
