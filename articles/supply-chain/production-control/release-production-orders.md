@@ -5,7 +5,7 @@ title: Release production orders
 description: A released production order is an order that has been authorized for production. The term Released is used to describe a state in the production order life cycle, where the production order is available for execution on the production shop floor and for warehouse processes. 
 author: johanhoffmann
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-A released production order is an order that has been authorized for production. The term Released is used to describe a state in the production order life cycle, where the production order is available for execution on the production shop floor and for warehouse processes. 
+A released production order is an order that has been authorized for production. The term Released is used to describe a state in the production order life cycle, where the production order is available for execution on the production shop floor and for warehouse processes.
 
 ## Characteristics of the Released state
 
@@ -70,7 +70,7 @@ Work for raw material picking is generated during release. Work is generated onl
 
 When using license plate controlled locations, you can choose whether the ordered quantity or the full quantity available for the item should be picked while processing the raw material picking work. To set this option:
 
-1. Go to **Product information management \> Products \> Released products** and open the relevant product.
+1. Go to **Product information management \> Products \> Released products** and open the relevant item.
 1. Expand the **Warehouse** FastTab.
 1. Select one of the following options for the  **Material picking in license plate locations** field:
     - *Order picking*: Only the ordered quantity should be picked.
