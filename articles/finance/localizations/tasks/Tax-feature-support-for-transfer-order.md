@@ -38,9 +38,9 @@ This topic provides information about tax calculation and posting integration in
 
 There are three main steps to configure and use this functionality:
 
-- RCS setup: Set up the tax feature, tax codes, and tax codes applicability for tax code determination in transfer orders.
-- Finance setup: Enable the **Tax in transfer order** feature, set up the tax service parameters for inventory, and set up core tax parameters.
-- Inventory setup: Set up the inventory configuration for transfer order transactions.
+1. RCS setup: Set up the tax feature, tax codes, and tax codes applicability for tax code determination in transfer orders.
+2. Finance setup: Enable the **Tax in transfer order** feature, set up the tax service parameters for inventory, and set up core tax parameters.
+3. Inventory setup: Set up the inventory configuration for transfer order transactions.
 
 
 ## Set up RCS for tax and transfer order transactions
