@@ -147,5 +147,10 @@ The user experience for incremental capture is no different from the user experi
 
 For users investigating payment issues in the back office or in their processor's portal, incremental capture orders will appear as having a single authorization with multiple payment captures mapped to it. As opposed to legacy flows where authorizations and captures would have a 1:1 ratio. 
 
+## Additional resources
+
+- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Omni-channel Commerce order payments](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/commerce-payments)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
