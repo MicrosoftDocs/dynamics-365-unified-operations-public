@@ -57,7 +57,7 @@ With the support of their Implementation Partner, Customers determine the config
 
 For any of these scenarios, the Customer defines, develops, and tests any modifications using Microsoft Dynamics Lifecycle Services (LCS) and tools. 
 
-![Common configuration scenarios ](media/common-configuration-scenarios.png)
+![Common configuration scenarios](media/common-configuration-scenarios.png)
 
 ## System configuration
 
@@ -77,4 +77,17 @@ To ensure that an implementation is configured for high performance, Customers m
 
 -	Provide accurate usage information for the Finance and Supply Chain Management implementation through the LCS Subscription Estimator; • Build and test extensions for performance and scale; and 
 -	Test data configurations appropriately for performance. 
+
+## Service operations
+
+Service operations reflect various aspects of provisioning and use of Finance and Supply Chain Management, from onboarding and implementation to updates and monitoring. For each successful implementation of Finance and Supply Chain Management, Microsoft, the Customer, and Implementation Partners or ISVs (when applicable) have specific roles and responsibilities. 
+
+![Service operations](media/service-operations.png)
+
+### Onboarding and implementation
+
+Typical onboarding and implementation events and the expected responsibilities for each party are provided in the following table.
+
+
+
 
