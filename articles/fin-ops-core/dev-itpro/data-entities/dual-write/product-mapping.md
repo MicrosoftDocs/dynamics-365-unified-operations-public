@@ -100,7 +100,7 @@ By default products from Finance and Operations apps are synchronized to other D
 
 When products are synchronized, you must enter a value for the **Sales unit** field in the Finance and Operations app, because it is a mandatory field in Sales.
 
-Note that the creation of product families from Sales is not supported with the dual-write synchronization of products.
+The creation of product families from Dynamics 365 Sales is not supported with the dual-write synchronization of products.
 
 The synchronization of products happens from the Finance and Operations app to Dataverse. This means that the values of the product table columns can be changed in Dataverse, but when the synchronization is triggered (when a product column is modified in a Finance and Operations app), this will overwrite the values in Dataverse. 
 
