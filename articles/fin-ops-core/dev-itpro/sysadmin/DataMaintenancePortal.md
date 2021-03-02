@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: AX 10.0.18
 ---
 
-# Data Maintenance
+# Data maintenance
 
 [!include[banner](../includes/banner.md)]
 
