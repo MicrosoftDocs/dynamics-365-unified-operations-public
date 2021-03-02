@@ -2306,7 +2306,7 @@
           href: dev-itpro/order-attributes.md
         - name: Customer attributes
           href: dev-itpro/customer-attributes.md
-        - name: CRT SDK samples
+        - name: Receipt extensions
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
         - name: Log extension events to Application Insights
           href: dev-itpro/commerce-application-insights.md
