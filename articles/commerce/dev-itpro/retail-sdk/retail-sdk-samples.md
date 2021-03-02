@@ -5,7 +5,7 @@ title: Extend Commerce Store receipts
 description: This topic describes how to extend Commerce store receipts.
 author: mugunthanm
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,10 +33,10 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to extend Commerce store receipts. Receipts two type of extensions:
- - **Custom fields** - Add new receipt fields to the existing receipts
- - **Custom receipt types** - Create new receipts for custom scenarios.
+This topic describes how to extend Commerce store receipts. Receipts can have two types of extensions:
 
+ - **Custom fields** - Adds new receipt fields to the existing receipts.
+ - **Custom receipt types** - Creates new receipts for custom scenarios.
 
 ## Custom fields
 
@@ -45,7 +45,7 @@ This topic describes how to extend Commerce store receipts. Receipts two type of
 - Print special receipts.
 - Print additional warranty information on sale receipts.
 
-The following steps shows the HQ configuration and CRT code changes for the custom fields:
+The following steps shows the HQ configuration and CRT code changes for the custom fields.
 
 ## Configure Headquarters for custom fields
 
@@ -82,10 +82,10 @@ At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** f
 9. Select an existing or create a new receipt format and then select **Designer** on the Action Pane.
 10. If you're prompted to confirm that you want to open the application, select **Open**, and then follow the installation instructions.
 11. After the designer is installed, you're asked for Azure Active Directory (Azure AD) credentials. Enter the information to start the designer.
-12. In the designer, drag and drop the Custom field from the left pane to the receipt designer.
+12. In the designer, drag and drop the **Custom** field from the left pane to the receipt designer.
 
 > [!NOTE]
-> The Custom fields are legal entity specific, screen layout designer fetches the Custom fields specific to the legal entity (Company) configured for the logged in user in  System Administration -> Users. Suppose if you configured Custom fields for the different legal entity then screen layout designer may not show those values.
+> The Custom fields are legal-entity specific, which means that the screen layout designer fetches the custom fields that are specific to the legal entity (Company) configured for the user signed in to **System Administration > Users**. If you configured custom fields for the different legal entities, then screen layout designer may not show those values.
 
 14. Save the changes.
 15. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
@@ -93,9 +93,7 @@ At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** f
 
 ## Sample code to implement Custom fields
 
-To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest** and the business logic for the custom fields in CRT, as shown in the following code.
-
-[Refer the CRT extension doc for extension code debugging and deployment.](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/commerce-runtime-extensibility)
+To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest** and the business logic for the custom fields in CRT, as shown in the following code. For more information, see [Commerce runtime (CRT) extensibility](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/commerce-runtime-extensibility).
 
 ```C#
 public IEnumerable<Type> SupportedRequestTypes
