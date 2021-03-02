@@ -53,6 +53,8 @@ The following features are included in this release. Some of the listed features
 
 - [Allow admins to select default document types](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=0452956b-9678-eb11-a812-0022482041cc&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)<br>- For more information, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
 
+- [Updates to the global address book]<br>- For more information, see [Address books FAQ](../../fin-ops/organization-administration/qa-address-books.md).
+
 - [Title of the feature in the Release Plans](Link URL of content in the Release Plans.)<br>- For more information, see [Title of article that has more info](URL of Docs article).
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
