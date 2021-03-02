@@ -136,7 +136,7 @@ Complete the following steps to set up basic inventory to enable transfer order 
    >
    >[![Setup Sites](../media/image11.png)](./media/image11.png)
 
-2.  Create ship-from, transit, and ship-to warehouses. If there is address infromation maintained in the warehouse, it will override the site address in tax calculation.
+2.  Create ship-from, transit, and ship-to warehouses. If there is address information maintained in the warehouse, it will override the site address in tax calculation.
 
     1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**.
     2. Select **New**, create a warehouse and assign it to the corresponding site.
