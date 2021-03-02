@@ -67,6 +67,18 @@ When they select the business contact details, the **Edit address** pane appears
 
 In addition, if they select **Add** to add a new address, they can't select **Business** from the **Purpose** dropdown box.
 
+![Employee can't add a Business address](./media/hr-employee-self-service-restrict-add.png)
 
+Employees get the same experience when they select **Contact details** on the **Personal information** page and add a new address. The **Purpose** dropdown box only displays the types of information they can add. 
+
+![Employee can't select Business in Purpose dropdown](./media/hr-employee-self-service-restrict-purpose.png)
+
+**Contact details** now shows **Purpose** in the grid.
+
+![Purpose displays in Contact details grid](./media/hr-employee-self-service-restrict-purpose-grid.png)
 
 ## See also
+
+[Employee and Manager self service overview](r-employee-manager-self-service-overview.md)<br>
+[Configure Human resources parameters](hr-setup-parameters.md)<br>
+[Edit personal information](hr-employee-manager-self-service-edit-personal-information.md)
