@@ -34,18 +34,26 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The settings of some Human resources (HR) parameters are shared across companies, whereas the settings of other parameters are company-specific. This article explains how to set up company-specific HR parameters.
+The settings of some Human resources parameters are shared across companies, whereas the settings of other parameters are company-specific. This article explains how to set up company-specific Human resources parameters.
 
-Two pages are used to set Human resources (HR) parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific (in other words, the settings apply to a single company), you use the **Human resource parameters** page. On the **Human resources parameters** page, the settings are divided among six tabs:
+Two pages are used to set Human resources parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific (in other words, the settings apply to a single company), you use the **Human resource parameters** page.
+
+![Go to Human resources parameters](./media/hr-employee-self-service-human-resources-parameters.png)
+
+On the **Human resources parameters** page, the settings are divided among six tabs:
 
 - General
 - Recruitment - this is not included in Dynamics 365 Human Resources
 - Compensation
 - Number sequences
 - Family and Medical Leave Act (FMLA)
-- Employee self-service
+- Employee self service
+- Manager self service
+- Benefits management
+- Leave and absence
+- Payment methods
 
-Each tab contains information that pertains to a single company. 
+Each tab contains information that pertains to a single company.
 
 ## General
 
@@ -58,6 +66,8 @@ The settings on the **General** tab define the appearance of information about a
 
 You can also indicate how long injury and illness case incidents should be kept, and specify the default identification number that is shown when a new worker is hired.
 
+![General tab](./media/hr-setup-parameters-general.png)
+
 ## Recruitment
 
 The settings on the **Recruitment** tab define the document types used for correspondence that is automatically sent to applicants, and the recruitment project used for unsolicited applications (applications that aren't for a specific recruitment project).
@@ -68,11 +78,13 @@ For more information about recruiting, see [Recruit job candidates](hr-personnel
 
 ## Compensation
 
-The settings on the **Compensation** tab define whether users must confirm that they want to save information for a fixed or variable compensation plan. If you select the **Enable save validation** check box, any time that users close a compensation-related page, they receive a message that asks whether they want to save the record. Some pages in compensation management don't let users delete information. Therefore, by prompting users to verify that they want to save information, you might be able to limit the amount of information that is saved but can't be deleted later. If the **Enable save validation** check box is cleared, records are always saved immediately, possibly before the user is ready.
+In Dynamics 365 Finance, the settings on the **Compensation** tab define whether users must confirm that they want to save information for a fixed or variable compensation plan. If you select the **Enable save validation** check box, any time that users close a compensation-related page, they receive a message that asks whether they want to save the record. Some pages in compensation management don't let users delete information. Therefore, by prompting users to verify that they want to save information, you might be able to limit the amount of information that is saved but can't be deleted later. If the **Enable save validation** check box is cleared, records are always saved immediately, possibly before the user is ready. If you're using performance management, the **Compensation** tab also lets you select a rating model to use instead of the model that is assigned to compensation plans when performance is rated.
 
-If you're using performance management, the **Compensation** tab also lets you select a rating model to use instead of the model that is assigned to compensation plans when performance is rated.
+In Human Resources, you can use the **Compensation** tab to choose to restrict access to compensation plans and to set a default currency.
 
 For more information about compensation, see [Compensation plans overview](hr-compensation-overview.md).
+
+![Compensation tab](./media/hr-setup-parameters-compensation.png)
 
 ## Number sequences
 
@@ -85,9 +97,13 @@ For more information, see [Number sequences overview](https://docs.microsoft.com
 > [!NOTE]
 > The number of hours that are worked can't exceed 1,250, and the length of employment can't exceed 12 months. These maximum values are in accordance with federal law in the United States.
 
+![Number sequences tab](./media/hr-setup-parameters-number-sequences.png)
+
 ## FMLA
 
 On the FMLA tab, you set FMLA eligibility requirements and FMLA entitlement hours. For more information, see [Configure leave and absence parameters](hr-leave-and-absence-parameters.md).
+
+![FMLA tab](./media/hr-setup-parameters-fmla.png)
 
 ## Employee self service
 
@@ -99,6 +115,8 @@ The settings on the **Employee self service** tab affect how Employee self servi
 - Restrict employees from adding or editing business contact details. For more information about restricting employees from editing business contact details, see [Restrict editing of contact details](hr-employee-self-service-restrict-editing.md).
 
 For more information about setting up Employee self service, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
+
+![Employee self service tab](./media/hr-setup-parameters-employee-self-service.png)
 
 ## Manager self service
 
@@ -112,9 +130,13 @@ The settings on the **Manager self service** tab affect what managers see in Man
 
 For more information about setting up Manager self service, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
 
+![Manager self service tab](./media/hr-setup-parameters-manager-self-service.png)
+
 ## Benefits management
 
 On the Benefits management tab, you can configure email options for Benefits management. For information about setting up and using Benefits management, see [Benefits management overview](hr-benefits-management-overview.md).
+
+![Benefits management tab](./media/hr-setup-parameters-benefits-management.png)
 
 ## Leave and absence
 
@@ -123,5 +145,8 @@ For information about setting up and using Leave and absence, see [Leave and abs
 ## Payment methods
 
 On the **Payment methods** tab, you can select the payment methods supported by your organization. For more information about configuring compensation, see [Compensation plans overview](hr-compensation-overview.md).
+
+![Payment methods tab](./media/hr-setup-parameters-payment-methods.png)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
