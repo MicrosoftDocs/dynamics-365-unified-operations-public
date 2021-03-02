@@ -59,11 +59,14 @@ Parameters set in the global address book determine the roles that can see your 
     - To add or remove a contact, select **More options** and then select **Advanced**. Under **Contact information**, select **Add** or **Remove** and edit the fields as necessary.
     - To set your time zone and location, select **More options** and then select **Advanced**. Under **General**, edit the fields as necessary.
 
-4. To change your contact details, select the **Contact details** tab. You can provide different types of contact information, including phone, email, and social media links. You can set a contact detail as primary, but you can only set one of each type as primary. 
+4. To change your contact details, select the **Contact details** tab. You can provide different types of contact information, including phone, email, and social media links. You can set a contact detail as primary, but you can only set one of each type as primary.
 
     - To add new contact information, select **Add**. Edit the fields as necessary.
     - To edit existing contact information, select the item and then select **Edit**. Edit the fields as necessary.
     - To set a contact detail as private, select the item, select **Advanced**, and then set the **Private** toggle to **Yes**. Select **OK**.
+
+   >[!NOTE]
+   >You might not be able to edit certain types of contact details, such as business contact details. For more information, see [Restrict editing of contact details](hr-employee-self-service-restrict-editing.md).
   
 5. To change your personal contacts, select the **Personal contacts** tab. You can designate emergency contacts, beneficiaries, and dependents. A contact can be a person or organization. The **Benefits management** feature uses personal contact information. For more information, see [Configure personal contact eligibility options](hr-benefits-setup-contact-eligibility-options.md).
 
