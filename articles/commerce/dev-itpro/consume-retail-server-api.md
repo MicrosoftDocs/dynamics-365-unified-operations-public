@@ -5,7 +5,7 @@ title: Consume Retail Server APIs in external applications
 description: This topic describes how to consume the Retail Server APIs in external applications.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/25/2020
+ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -70,7 +70,7 @@ For more information about authentication flows, see [Dynamics 365 Commerce auth
 
 ## Register the application in Azure App registration
 
-### App registration for the Retail Server:
+### App registration for the Retail Server
 
 Application registration establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: your app trusts the Microsoft identity platform, not the other way around. Follow these steps to create the app registration.
 
@@ -82,17 +82,17 @@ Application registration establishes a trust relationship between your app and t
 6. Specify who can use this application as **Accounts in this organizational directory only (Microsoft only - Single tenant)**.
 7. In the **Redirect URI** field, leave the default value. Don't change anything.
 8. Select **Register** to complete the initial app registration.
-9. Click **Expose an API** and then click **Add a scope**. Provide the Scope name, under Consent select Admins and users and provide Admin consent display name and description.
-10. Check the State is Enabled.
-11. Click Add scope in the button to complete the scope registration. 
-12. After the scope is created, copy the “Application ID URI” which begins  “api://…” into the clipboard, this is the “Server Resource ID” which will be used later.
+9. Select **Expose an API** and then select **Add a scope**. Provide the **Scope** name, under **Consent** select **Admins and users** and provide the **Admin consent display** name and description.
+10. Set the **State** to **Enabled**.
+11. Select **Add scope** to complete the scope registration. 
+12. After the scope is created, copy the Application ID URI, which begins with “api://…” to the clipboard. This is the Server Resource ID that will be used later.
 
-### Create App registration for the client:
+### Create the app registration for the client
 
-13. Follow the steps from 2-8, provide different name for the app registration.
-14. Click **API permission**.
-15. In the Request API permissions window, Select **APIs my organization uses** and then search for the App we created in step 2-8.
-16. Select the API and then check the Permission, in the new window opened and then click **Add permissions**
+13. Follow steps 2-8 from the above procedure, making sue to provide a different name for the app registration.
+14. Select **API permission**.
+15. On the **Request API permissions** page, select **APIs my organization uses** and then search for the app that you created in steps 2-8.
+16. Select the API and then check the permission. In the new window that opens, select **Add permissions**
 
 
 When registration is completed, the Azure portal shows the **Overview** pane for the app registration. This pane includes the **Application (client) ID** field. The value of this field is known as the *application ID* or the *client ID*. It uniquely identifies your application in the Microsoft identity platform.
@@ -114,7 +114,7 @@ The client secret is also known as an *application password*. It's a string valu
 2. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set based on your selection.
 3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the Retail server app registration in Azure. Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
 4. On the Action Pane, select **Save**.
-5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Application ID URI (api URI generated in step 12).
+5. Select the new relying party, and then on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Application ID URI (this is the API URI generated in step 12).
 6. On the Action Pane, select **Save**.
 7. Go to **Retail and commerce** &gt; **Retail and commerce IT** &gt; **Distribution Schedule**, and run Commerce Data Exchange (CDX) job **1110**.
 
@@ -146,9 +146,9 @@ For the full list of APIs, see [Commerce Scale Unit customer and consumer APIs](
     | Key            | Value                                                              |
     |----------------|--------------------------------------------------------------------|
     | grant\_type    | **client\_credentials**                                            |
-    | client\_id     | The client ID that was generated during Azure app registration     |
-    | client\_secret | The client secret that was generated during Azure app registration |
-    | resource       | Enter the Application ID URI (api URI generated in step 12).       |
+    | client\_id     | The client ID that was generated during Azure app registration.     |
+    | client\_secret | The client secret that was generated during Azure app registration. |
+    | resource       | Enter the Application ID URI (this is the API URI generated in step 12).       |
 
 2. After the request has finished running, the **access\_token** value will be generated in the response body. Copy this token value. You will use it to connect to the Retail Server.
 
