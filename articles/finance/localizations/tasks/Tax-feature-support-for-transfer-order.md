@@ -2,10 +2,10 @@
 # required metadata
 
 title: Tax feature support for transfer order
-description: This topic explains the new tax feature support for transfer order using tax calculation service.
+description: This topic explains the new tax feature support for transfer orders using the tax calculation service.
 author: kliang
-manager: beya
-ms.date: 02/03/2021
+manager: tfehr
+ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: 10.0.18
 
 # Tax feature support for transfer order
 
-This topic provides information about the functionality of tax calculation and posting integration in transfer order.
+[!include [banner](../../includes/banner.md)]
 
-Note that all settings that are described in this document are under the scope of the tax service public preview. The content is subjected to change later.
+[!include [banner](../../includes/preview-banner.md)]
 
-This functionality provides a possibility to set up tax calculation and posting in transfer order for stock transfers, which are considered as intra-community supply and intra-community acquisition under EU VAT regulation.
+This topic provides information about tax calculation and posting integration in transfer orders. This functionality provides the possibility to set up tax calculation and posting in transfer orders for stock transfers, which are considered intra-community supply and intra-community acquisition under the EU VAT regulation.
 
 The main steps to configure and use this functionality are:
 
@@ -128,47 +128,46 @@ The following setup is by legal entity. You need to configure it for each legal 
 
 [![Setup Interim transit account](../media/image10.png)](./media/image10.png)
 
-## Inventory setup
+## Set up basic inventory for transfer order transactions
 
-In the next section, the basic inventory setup is shared as a sample configuration which enables transfer order transactions.
+Complete the following steps to set up basic inventory to enable transfer order transactions.
 
-1. Create ship-from and ship-to **Sites** for your warehouses in different countries. Add primary address for each Site.
+1. Create ship-from and ship-to sites for your warehouses in different countries and add the primary address for each Site.
 
-   a.  Go to module Warehouse management, path Setup - Warehouse - Sites.
+   1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Sites**.
+   2. Select **New**, and create the site which will later be assigned to a warehouse.
+   3. Repeat step 2 for all of the sites that you need to create.
 
-   b.  Click New, create Sites which will be assigned to your warehouses later.
+    > [!NOTE]
+    > Create a site called **Transit** and assign to the **Transit warehouse** in the next steps, so that tax related inventory vouchers can be posted in transfer order "ship" and "receive" transactions. The address of the transit site is irrelevant to tax calculation and can be left blank.
+    >
+    >[![Setup Sites](../media/image11.png)](./media/image11.png)
 
-   > [!NOTE]
-   > Create a dedicated Site for Transit and assign to the Transit warehouse in the next steps, so that tax related inventory vouchers will be posted both in transfer order "ship" and "receive" transactions. The address of the transit Site is irrelevant to tax calculation and can be left as blank.
+2.  Create ship-from, transit, and ship-to warehouses. If there is address infromation maintained in the warehouse, it will override the site address in tax calculation.
 
-[![Setup Sites](../media/image11.png)](./media/image11.png)
-
-2.  Create ship-from, transit, and ship-to Warehouses. If there is address infromation maintained in the warehouse, it will override the address of Sites in tax calculation.
-
-    a.  Go to module Warehouse management, path Setup - Warehouse - Warehouses.
-
-    b.  Click New, create Warehouses and assign the corresponding Sites.
+    1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Warehouses**.
+    2. Select **New**, create a warehouse and assign it to the corresponding site.
+    3. Repeat step 2 to create a warehouse for each site as needed.
     
-    [![Setup warehouses](../media/image12.png)](./media/image12.png)
+        [![Setup warehouses](../media/image12.png)](./media/image12.png)
     
     > [!NOTE]
-    > For a ship-from warehouse, a transit Warehouse (with type "Transit") is required to be assigned under parameter "Transit warehouse" for transfer order transactions.
+    > For a ship-from warehouse, a transit warehouse must be assigned under the parameter **Transit warehouse** for transfer order transactions.
+    >
+    > [![transit warehouse](../media/image13.png)](./media/image13.png)
 
-[![transit warehouse](../media/image13.png)](./media/image13.png)
+3.  Verify that the inventory posting configuration is set up for transfer order transactions.
 
-3.  Ensure the inventory posting configuration has been properly set up for transfer order transactions.
-
-    1. Go to module Inventory management, path Setup - Posting - Posting.
-
-    2. Go to tab Inventory, check option Inventory issue & Inventory receipt has respective ledger account setup.
+    1. Go to **Inventory management** > **Setup** > **Posting** > **Posting**.
+    2. On the **Inventory** tab, verify that **Inventory issue** and **Inventory receipt** have a ledger account set up.
     
        [![Setup inventory issue](../media/image14.png)](./media/image14.png)
     
-    3. Check option Inter-unit payable has ledger account setup.
+    3. Verify that **Inter-unit payable** has a ledger account set up.
     
        [![Setup inter-unit payable](../media/image15.png)](./media/image15.png)
     
-    4. Check option Inter-unit receivable has ledger account setup.
+    4. Verify that **Inter-unit receivable** has a ledger account set up.
     
        [![Setup inter-unit receivable](../media/image16.png)](./media/image16.png)
 
