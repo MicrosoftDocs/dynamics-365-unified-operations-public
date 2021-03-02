@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: Metadata and markdown template
-description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
-author: tonyafehr
+title: Service description for Finance and Supply Chain Management apps
+description: This topic provides the service description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 manager: AnnBe
-ms.date: 06/20/2020
+ms.date: 03/02/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -16,20 +15,19 @@ ms.technology:
 # ms.search.form:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
-ms.search.scope:
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 # ms.custom: NotInTOC
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tfehr
-ms.search.validFrom: 2017-06-20
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: sericks
+ms.search.validFrom: 2021-03-31
+ms.dyn365.ops.version: 10.0.18
 ---
 
-# Metadata and Markdown template
+# Service description for Finance and Supply Chain Management apps
 
 [!include[banner](../includes/banner.md)]
 
 
-This template contains examp
+Content goes here.
