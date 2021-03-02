@@ -83,7 +83,11 @@ To maintain number sequence references and codes, use the **Number sequences** l
 For more information, see [Number sequences overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/human-resources/toc.json).
 
 > [!NOTE]
-> The number of hours that are worked can't exceed 1,250, and the length of employment can't exceed 12 months. These maximum values are in accordance with federal law in the United States. 
+> The number of hours that are worked can't exceed 1,250, and the length of employment can't exceed 12 months. These maximum values are in accordance with federal law in the United States.
+
+## FMLA
+
+On the FMLA tab, you set FMLA eligibility requirements and FMLA entitlement hours. For more information, see [Configure leave and absence parameters](hr-leave-and-absence-parameters.md).
 
 ## Employee self service
 
@@ -95,6 +99,19 @@ The settings on the **Employee self service** tab affect how Employee self servi
 - Restrict employees from adding or editing business contact details. For more information about restricting employees from editing business contact details, see [Restrict editing of contact details](hr-employee-self-service-restrict-editing.md).
 
 For more information about setting up Employee self service, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
+
+## Manager self service
+
+
+
+## Benefits management
+
+
+## Leave and absence
+
+
+## Payment methods
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
