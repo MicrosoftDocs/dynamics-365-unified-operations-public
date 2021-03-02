@@ -61,4 +61,20 @@ For any of these scenarios, the Customer defines, develops, and tests any modifi
 
 ## System configuration
 
+Finance and Operations scales with transaction volume and User load. Each Customer implementation of Finance and Operations produces a unique solution due to the following variables: 
+
+-	**Data composition:** A unique set of parameters that control behavior, layout of the organization, structure of master data (such as financial and inventory dimensions), and granularity of transaction tracking. 
+-	**Extension and configuration:** Extension mechanisms of Finance and Supply Chain Management with code extensions, ISV solutions, and unique configurations including workflows, integrations, and report configurations. 
+-	**Usage patterns:** A unique combination of online and batch usage combined with the ability to integrate with upstream and downstream systems for unified data flow and the ability to differentiate based on the information views used by Customers in their business processes. 
+
+Microsoft configures production tenants sized to handle the transaction volumes and user concurrency. Microsoft is responsible for: 
+
+-	Proper allocation of resources of production tenants, based on the Customer’s profiling information in the LCS Subscription Estimator; 
+-	Continually monitoring and diagnosing service availability of production tenants; and 
+-	Analyzing and troubleshooting system performance issues with Finance and Operations. 
+
+To ensure that an implementation is configured for high performance, Customers must:
+
+-	Provide accurate usage information for the Finance and Supply Chain Management implementation through the LCS Subscription Estimator; • Build and test extensions for performance and scale; and 
+-	Test data configurations appropriately for performance. 
 
