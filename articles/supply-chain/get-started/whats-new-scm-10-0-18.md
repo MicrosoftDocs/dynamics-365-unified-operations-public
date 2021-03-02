@@ -5,7 +5,7 @@ title: Preview of Dynamics 365 Supply Chain Management 10.0.18 (May 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.18. 
 author: kamaybac
 manager: annbe
-ms.date: 01/28/2021
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2021-01-28 
+ms.search.validFrom: 2021-03-01 
 ms.dyn365.ops.version: 10.0.18
 ---
 
@@ -65,7 +65,7 @@ We have recently added or significantly updated the following help topics. They 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.18 includes platform updates. To learn more, see [Platform updates for version 10.0.18 of Finance and Operations apps (April 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18.md) <!-- KFM: Confirm link -->.
+Microsoft Dynamics 365 Supply Chain Management 10.0.18 includes platform updates. To learn more, see [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18.md) <!-- KFM: Confirm link -->.
 
 ### Bug fixes
 
