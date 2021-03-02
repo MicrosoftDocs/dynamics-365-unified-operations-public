@@ -39,7 +39,7 @@ Planning (ERP) service for enterprises, built on and for Microsoft Azure. It pro
 
 The Finance and Supply Chain Management cloud service is comprised of the components illustrated below.
 
-![Illustration showing devices in the Finance and Supply Chain Managemnt environments](/media/implementation-roles-responsibilities.png)
+![Illustration showing devices in the Finance and Supply Chain Managemnt environments](/media/Devices.png)
 
 ## Operating model
 
@@ -47,7 +47,7 @@ The operating model of Finance and Supply Chain Management distinguishes specifi
 
 Microsoft maintains the Finance and Supply Chain Management service by deploying, actively monitoring, and servicing the Customer’s production tenants.  This includes allocating the required system infrastructure to run the service and proactive communication to Customers about the service’s health. 
 
-![Illustration showing devices in the Finance and Supply Chain Managemnt environments](/media/common-configuration-scenarios.png)
+![Implementation roles and responsibilities](/media/implementation-roles-responsibilities.png)
 
 With the support of their Implementation Partner, Customers determine the configuration of the business application logic in Finance and Supply Chain Management to match their unique business processes. Customers can extend Finance and Supply Chain Management with ISV solutions of their choice, unique customizations, or a combination of these. Customers typically choose one of the following configuration scenarios: 
 
@@ -57,7 +57,7 @@ With the support of their Implementation Partner, Customers determine the config
 
 For any of these scenarios, the Customer defines, develops, and tests any modifications using Microsoft Dynamics Lifecycle Services (LCS) and tools. 
 
-![Illustration showing devices in the Finance and Supply Chain Managemnt environments](/media/Devices.png)
+![Common configuration scenarios ](/media/common-configuration-scenarios.png)
 
 ## System configuration
 
