@@ -4,8 +4,8 @@
 title: Credit or debit note against an export order
 description: This topic provides information about how to post a credit note against an export invoice in Microsoft Dynamics 365 transactions.
 author: prabhatb
-manager: EricWang
-ms.date: 10/11/2020
+manager: tfehr
+ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -41,7 +41,7 @@ When a credit note or a debit note is posted against an export order that alread
 - Shipping bill number
 - Shipping bill date
 
-In the Credit/Debit note for Tax document under the header \> **Setup** \> **New field shipping bill number** and **shipping bill date** has been added. Posting this information will default from the posted export invoice.
+When the credit or debit note is posted, these fields will automatically be set, based on the posted export order.
 
 Export orders can be posted in the following ways:
 
@@ -84,7 +84,7 @@ To maintain a Goods and Services Tax (GST) transaction ID for credit notes again
 
 This section shows how to post a credit note that has a GST payment by using an export sales order.
 
-When a credit note is posted against a posted export invoice, the value of the **With payment of tax** field in the export invoice default to the **Tax information** page. If the **With the payment of tax** option is set to **Yes**, the **Would you claim refund?** field is shown.
+When a credit note is posted against a posted export invoice, the value of the **With payment of tax** field in the export invoice defaults to the **Tax information** page. If the **With the payment of tax** option is set to **Yes**, the **Would you claim refund?** field is shown.
 
 By default, if the **Would you claim refund?** field in the posted export invoice is set to **Yes**, the **Would you claim refund?** field in the credit note will be set to **Yes**. Otherwise, the field in the credit note will be set to **No**.
 
