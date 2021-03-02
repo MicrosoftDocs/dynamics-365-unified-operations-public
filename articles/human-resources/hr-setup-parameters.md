@@ -122,6 +122,6 @@ For information about setting up and using Leave and absence, see [Leave and abs
 
 ## Payment methods
 
-
+On the **Payment methods** tab, you can select the payment methods supported by your organization. For more information about configuring compensation, see [Compensation plans overview](hr-compensation-overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
