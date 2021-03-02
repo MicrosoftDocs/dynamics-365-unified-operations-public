@@ -114,9 +114,11 @@ For more information about setting up Manager self service, see [Employee and Ma
 
 ## Benefits management
 
+On the Benefits management tab, you can configure email options for Benefits management. For information about setting up and using Benefits management, see [Benefits management overview](hr-benefits-management-overview.md).
 
 ## Leave and absence
 
+For information about setting up and using Leave and absence, see [Leave and absence overview](hr-leave-and-absence-overview.md).
 
 ## Payment methods
 
