@@ -102,7 +102,15 @@ For more information about setting up Employee self service, see [Employee and M
 
 ## Manager self service
 
+The settings on the **Manager self service** tab affect what managers see in Manager self service. On this tab, you can configure the following options:
 
+- The range for expiring records
+- Information managers can view in expiring records
+- Whether managers can view open positions for extended reports
+- Views of exiting workers
+- Useful links for managers
+
+For more information about setting up Manager self service, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
 
 ## Benefits management
 
