@@ -4,8 +4,8 @@
 title: New GSTR Offline Tool for ANX-1 and Purchase Register
 description: This topic provides information about how to generate GSTR offline return format ANX-1 and the Purchase Register according to the new prototype that was released by the government.
 author: prabhatb
-manager: EricWang
-ms.date: 10/11/2020
+manager: tfehr
+ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -38,37 +38,35 @@ GST ANX-1 contains details about all outward and inward supplies that are liable
 
 The taxpayer must provide details about the inward supplies that are listed in GST ANX-2 by accepting or rejecting the entries. The taxpayer can also keep the documents pending by marking them accordingly.
 
-Based on the details that are uploaded in GST ANX-1, and the actions that the taxpayer takes in GST ANX-2, the relevant fields in Form GST RET-1 are automatically drafted. The taxpayer can then view and enter details in the relevant columns, save the information, and download a copy of the form in PDF format.
+Based on the details that are uploaded in GST ANX-1, and the actions that the taxpayer takes in GST ANX-2, the relevant fields in Form GST RET-1 are automatically updated. The taxpayer can then view and enter details in the relevant columns, save the information, and download a copy of the form in PDF format.
 
 The Goods and Services Tax Network (GSTN) has released a trial version of the New Returns Offline Tool for Form GST ANX-1, Form GST ANX-2 (the Matching Tool is built in), and a template for the Purchase Register. The Purchase Register is used to import Purchase Register data so that it can be matched with GST ANX-2 data.
 
 This topic provides information about how to set up and use Microsoft Dynamics 365 Finance to generate comma-separate values (CSV) files by using the New GSTR Offline Tool. It includes information about how to import the configuration, generate GST ANX-1, and generate the Purchase Register.
 
-The report is supported in the following version of Finance, or later versions.
+Generated GST ANX-1 and Purchase register reports are supported in the following version:
 
 | Finance version | Build number   |
 |-----------------|----------------|
 | 10.0.13         | 10.0.569.10002 |
 
-The solution that supports the reporting of the New Returns Offline Tool is based on Electronic reporting (ER) functionality. This functionality provides a flexible approach for setting up and supporting reporting processes.
+The solution that supports the reporting capabilities of the New Returns Offline Tool is based on Electronic reporting (ER) functionality. This functionality provides a flexible approach for setting up and supporting reporting processes.
 
 ## Setup
 
 Complete the following tasks to prepare Finance to report GST ANX-1:
 
-- Import and set up ER configurations.
-- Map the reporting configuration in the tax setup.
-- Provide report data for report generation.
+1. Import and set up ER configurations.
+2. Map the reporting configuration in the tax setup.
+3. Provide report data for report generation.
 
-    - ANX-1
-    - Generate ANX-1 files. (There are 10 CSV files.)
+    - Generate the ANX-1 report which contains 10 CSV files.
 
-- Provide report data for report generation:
+4. Provide report data for report generation:
 
-    - Purchase Register
-    - Generate the Purchase Register Excel file.
+    - Generate the Purchase Register in a Microsoft Excel file format.
 
-## Import tax configuration
+## Import the tax configuration
 
 - Taxable Document.version.82
 - Taxable Document (India).version 82.155
@@ -91,10 +89,10 @@ To prepare Finance for GSTR reporting, you must import the following versions of
 | GST Returns govt. model mapping | Model              | XML    | 19.12   |
 | GST ANX-1 Govt. offline tool    | Model              | XML    | 19.22   |
 | Purchase Register               | Model              | XML    | 19.7    |
-| ANX-1                           | Format (exporting) | CSV    |         |
-| Purchase Register               | Format (exporting) | Excel  |         |
-| GSTR-1 (new)                    | Format (exporting) | CSV    |         |
-| GSTR-2 (new)                    | Format (exporting) | CSV    |         |
+| ANX-1                           | Format (exporting) | CSV    |   N/A   |
+| Purchase Register               | Format (exporting) | Excel  |   N/A   |
+| GSTR-1 (new)                    | Format (exporting) | CSV    |   N/A   |
+| GSTR-2 (new)                    | Format (exporting) | CSV    |   N/A   |
 
 Import the latest versions of these configurations. The description of each configuration version usually includes information about the changes that were introduced in that version.
 
@@ -187,6 +185,7 @@ The GST ANX-1 report is generated in CSV format. It will include a total of 10 w
 - DE
 - REV
 - IMPG
+- IMPS
 - IMPGSEZ
 - ECOM
 
