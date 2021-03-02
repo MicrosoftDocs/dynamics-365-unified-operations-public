@@ -4,8 +4,8 @@
 title: New GSTR-1 and GSTR-2 return formats
 description: This topic provides information about how to generate GSTR-1 and GSTR-2 reports in Microsoft Dynamics 365 according to the new format that was released by Goods and Services Tax (GST) Suvidha Providers, or GSPs.
 author: prabhatb
-manager: EricWang
-ms.date: 10/11/2020
+manager: tfehr
+ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -114,16 +114,14 @@ The following columns have been added in these files:
 
 You must complete the following tasks to prepare Microsoft Dynamics 365 Finance to report ANX-1:
 
-- Import and set up Electronic reporting (ER) configurations.
-- Map the reporting configuration in the tax setup.
-- Provide report data for report generation.
+1. Import and set up Electronic reporting (ER) configurations.
+2. Map the reporting configuration in the tax setup.
+3. Provide report data for report generation.
 
-    - ANX-1
-    - Generate ANX-1 files. (There are 10 CSV files.)
+    - Generate a new ANX-1 report: ANX-1 files will generate 10 CSV files.
 
-- Provide report data for report generation.
+4. Provide report data for report generation.
 
-    - Purchase Register
     - Generate the Purchase Register Excel file.
 
 ## Import tax configuration
@@ -149,10 +147,10 @@ To prepare Finance for GSTR reporting, you must import the following versions of
 | GST Returns govt. model mapping | Model              | XML    | 19.12   |
 | GST ANX-1 Govt. offline tool    | Model              | XML    | 19.22   |
 | Purchase Register               | Model              | XML    | 19.7    |
-| ANX-1                           | Format (exporting) | CSV    |         |
-| Purchase Register               | Format (exporting) | Excel  |         |
-| GSTR-1 (new)                    | Format (exporting) | CSV    |         |
-| GSTR-2 (new)                    | Format (exporting) | CSV    |         |
+| ANX-1                           | Format (exporting) | CSV    |  N/A    |
+| Purchase Register               | Format (exporting) | Excel  |  N/A    |
+| GSTR-1 (new)                    | Format (exporting) | CSV    |  N/A    |
+| GSTR-2 (new)                    | Format (exporting) | CSV    |  N/A    |
 
 Import the latest versions of these configurations. The description of each configuration version usually includes information about the changes that were introduced in that version.
 
@@ -187,7 +185,7 @@ Import the latest versions of these configurations. The description of each conf
 | Sales credit Debit note          | CSV         | Shipping Bill date - Export             | Information about the shipping bill date will come from the posted shipping bill order. |
 | Sales credit Debit note          | CSV         | Return Filling Month                    | The month that the transaction report is generated for. |
 | Sales credit Debit note          | CSV         | Return filing quarter                   | The system will select a quarter from the period that is defined in the **GSTR report** dialog box. |
-| Sales credit Debit note          |             | GSTN of E-commerce market place         | The GST Identification Number (GSTIN) of the e-commerce operator, from the e-commerce operator's tax information. |
+| Sales credit Debit note          |   CSV       | GSTN of E-commerce market place         | The GST Identification Number (GSTIN) of the e-commerce operator, from the e-commerce operator's tax information. |
 
 ## Important columns that were added in the new GSTR-2
 
@@ -215,7 +213,7 @@ Import the latest versions of these configurations. The description of each conf
 Follow these steps to load the report configuration into workspaces.
 
 1. Go to **Workspaces \> Electronic reporting**, and select the **Reporting configurations** tile.
-2. On the **Configurations** page, select **Exchange \> Load configurations**, and import the configuration files in the order that is provided in the first table in the [Import and set up ER configurations](#import-and-set-up-er-configurations) section, earlier in this topic.
+2. On the **Configurations** page, select **Exchange \> Load from XML file**, and import the configuration files in the order that is provided in the first table in the [Import and set up ER configurations](#import-and-set-up-er-configurations) section, earlier in this topic.
 
 ![Configurations page](media/New-GSTR-Format-005.PNG)
 
@@ -251,9 +249,9 @@ Follow these steps to generate a GSTR-1 report in the new format.
 
 7. Select **OK** to save the report.
 
-### GSTR-2 return
+### GSTR-2 report
 
-Follow these steps to generate a GSTR-2 return in the new format.
+Follow these steps to generate a GSTR-2 report in the new format.
 
 1. Go to **Tax \> Sales Tax reports \> India \> GER export to GSTR CSV**.
 2. In the **GER export to GSTR CSV** dialog box, in the **From date** field, select the start date of the reporting period for the report.
@@ -262,6 +260,6 @@ Follow these steps to generate a GSTR-2 return in the new format.
 5. In the **Configuration** field, select **GSTR-2 for New Return**.
 6. In the **File name** field, enter **GSTR-2 for New Return**.
 
-    ![GER export to GSTR CSV dialog box for the GSTR-2 return](media/New-GSTR-Format-008.PNG)
+    ![GER export to GSTR CSV dialog box for the GSTR-2 report](media/New-GSTR-Format-008.PNG)
 
 7. Select **OK** to save the report.
