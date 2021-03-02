@@ -29,5 +29,13 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include[banner](../includes/banner.md)]
 
+## Overview
 
-Content goes here.
+Microsoft Dynamics 365 Finance and Supply Chain Management is a cloud Enterprise Resource 
+Planning (ERP) service for enterprises, built on and for Microsoft Azure. It provides organizations with ERP functionality that supports their unique requirements and helps them adjust to constantly changing business environments, without the hassle of managing infrastructure. Finance and Supply Chain Management brings together a set of ERP, business intelligence, infrastructure, compute, and database services in a single offering that enables organizations to run industry-specific and operational business processes that are extendable with specific solutions from Independent Software Vendors (ISV) (see Microsoft AppSource). Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
+
+- [Microsoft AppSource](https://appsource.microsoft.com/partners)
+- [Licensing Guide](https://dynamics.microsoft.com/finance-and-operations-to-finance-and-scm/)
+
+The Finance and Supply Chain Management cloud service is comprised of the components illustrated below.
+
