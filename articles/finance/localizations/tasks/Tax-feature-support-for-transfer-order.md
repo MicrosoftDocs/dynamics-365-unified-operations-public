@@ -52,42 +52,40 @@ Following is an example setup for the tax involved in a transfer order from Neth
 
 1.  Create and edit **Tax Feature**, select the draft feature version, click **Edit.**
 
-[![Edit tax feature](./media/image1.png)](/media/image1.png)
+[![Edit tax feature](../media/image1.png)](/media/image1.png)
 
 2.  Create **Tax codes** (for example, NL-exempt, BE-RC+21, BE-RC-21).
 
     a.  When shipping a transfer order from a Netherlands warehouse, it shall apply a Netherlands VAT exempted tax code.
 
-[![Create tax code](./media/image2.png)](./media/image2.png)
+[![Create tax code](../media/image2.png)](./media/image2.png)
 
 b.  When receiving a transfer order at a Belgium warehouse, it shall apply reverse charge mechanism.
 
-[![Setup reverse charge tax code 1](./media/image3.png)](./media/image3.png)
+[![Setup reverse charge tax code 1](../media/image3.png)](./media/image3.png)
 
-[![Setup reverse charge tax code 2](./media/image4.png)](./media/image4.png)
+[![Setup reverse charge tax code 2](../media/image4.png)](./media/image4.png)
 
 3.  Create and edit Tax codes applicability.
 
     1. Click Manage columns and select columns to build the applicability table.
     
-       > [!Note]
-       >
+       > [!NOTE]
        > Select "Business process" and "Tax Directions" into the table. Both columns are essential to tax in transfer order functionality.
     
     2. Add applicability rules (Tax codes, Tax Group, and Item Tax Group shall not be blank).
     
-       > [!Note]
-       >
+       > [!NOTE]
        > - Set Business Process = "Inventory" to make the rule applicable in Transfer order.
        > - Set Tax Direction = "Output" to make the rule applicable when "Ship Transfer order".
        > - Set Tax Direction = "Input" to make the rule applicable when "Receive Transfer order".
 
-[![Apply applicability rules](./media/image5.png)](./media/image5.png)
+[![Apply applicability rules](../media/image5.png)](./media/image5.png)
 
 4.  Make sure "Multiple VAT ID configurations" has been properly configured. 
 5.  Complete and Publish the new tax feature version.
 
-[![Change status](./media/image6.png)](./media/image6.png)
+[![Change status](./media/image6.png)](../media/image6.png)
 
 
 
@@ -97,11 +95,10 @@ After you complete the setups in section "Microsoft Dynamics Regulatory Configur
 
 1. Enable feature "Tax in transfer order" in Feature Management.
 
-   > [!Note]
-   >
+   > [!NOTE]
    > Feature "Tax in transfer order" is fully dependent on tax service. It can be only enabled after you have installed tax service.
 
-[![Enable feature](./media/image7.png)](./media/image7.png)
+[![Enable feature](../media/image7.png)](./media/image7.png)
 
 
 
@@ -113,13 +110,13 @@ The following setup is by legal entity. You need to configure it for each legal 
 
     b.  Tick "Inventory" in the parameter "Business process"
 
-[![Setup business process](./media/image8.png)](./media/image8.png)
+[![Setup business process](../media/image8.png)](./media/image8.png)
 
 3.  Ensure reverse charge mechanism has been properly set up.
 
     a.  Switch on "Enable reverse charge" under General ledger parameters.
 
-[![Enable reverse charge](./media/image9.png)](./media/image9.png)
+[![Enable reverse charge](../media/image9.png)](./media/image9.png)
 
 4.  Ensure related tax codes, tax groups, item tax groups and VAT registration numbers have been set up in Dynamics 365 Finance according to tax service guidance.
 
@@ -129,7 +126,7 @@ The following setup is by legal entity. You need to configure it for each legal 
 
     b.  Add a ledger account in parameter "Interim transit".
 
-[![Setup Interim transit account](./media/image10.png)](./media/image10.png)
+[![Setup Interim transit account](../media/image10.png)](./media/image10.png)
 
 ## Inventory setup
 
@@ -141,11 +138,10 @@ In the next section, the basic inventory setup is shared as a sample configurati
 
    b.  Click New, create Sites which will be assigned to your warehouses later.
 
-   > [!Note]
-   >
+   > [!NOTE]
    > Create a dedicated Site for Transit and assign to the Transit warehouse in the next steps, so that tax related inventory vouchers will be posted both in transfer order "ship" and "receive" transactions. The address of the transit Site is irrelevant to tax calculation and can be left as blank.
 
-[![Setup Sites](./media/image11.png)](./media/image11.png)
+[![Setup Sites](../media/image11.png)](./media/image11.png)
 
 2.  Create ship-from, transit, and ship-to Warehouses. If there is address infromation maintained in the warehouse, it will override the address of Sites in tax calculation.
 
@@ -153,13 +149,12 @@ In the next section, the basic inventory setup is shared as a sample configurati
 
     b.  Click New, create Warehouses and assign the corresponding Sites.
     
-    [![Setup warehouses](./media/image12.png)](./media/image12.png)
+    [![Setup warehouses](../media/image12.png)](./media/image12.png)
     
-    > [!Note]
-    >
+    > [!NOTE]
     > For a ship-from warehouse, a transit Warehouse (with type "Transit") is required to be assigned under parameter "Transit warehouse" for transfer order transactions.
 
-[![transit warehouse](./media/image13.png)](./media/image13.png)
+[![transit warehouse](../media/image13.png)](./media/image13.png)
 
 3.  Ensure the inventory posting configuration has been properly set up for transfer order transactions.
 
@@ -167,14 +162,14 @@ In the next section, the basic inventory setup is shared as a sample configurati
 
     2. Go to tab Inventory, check option Inventory issue & Inventory receipt has respective ledger account setup.
     
-       [![Setup inventory issue](./media/image14.png)](./media/image14.png)
+       [![Setup inventory issue](../media/image14.png)](./media/image14.png)
     
     3. Check option Inter-unit payable has ledger account setup.
     
-       [![Setup inter-unit payable](./media/image15.png)](./media/image15.png)
+       [![Setup inter-unit payable](../media/image15.png)](./media/image15.png)
     
     4. Check option Inter-unit receivable has ledger account setup.
     
-       [![Setup inter-unit receivable](./media/image16.png)](./media/image16.png)
+       [![Setup inter-unit receivable](../media/image16.png)](./media/image16.png)
 
 
