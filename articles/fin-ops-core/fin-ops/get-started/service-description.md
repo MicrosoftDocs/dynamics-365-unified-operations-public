@@ -39,3 +39,4 @@ Planning (ERP) service for enterprises, built on and for Microsoft Azure. It pro
 
 The Finance and Supply Chain Management cloud service is comprised of the components illustrated below.
 
+![Illustration showing devices in the Finance and Supply Chain Managemnt environments](media/devices.png)
