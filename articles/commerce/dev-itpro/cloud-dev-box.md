@@ -32,11 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Platform update 12, customers will no longer have access to virtual machine (VM) administrator accounts on development or build environments that are running in Microsoft subscriptions and you will not be able to deploy Tier 1 environment in Microsoft subscription.
+As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Platform update 12, you will no longer have access to virtual machine (VM) administrator accounts on development or build environments that are running Microsoft subscriptions and you will not be able to deploy Tier 1 environment using a Microsoft subscription.
 
 You can use a remote desktop (RDP) to access these restricted environments using the non-admin user provided on the Lifecycle Services (LCS) environment page. For more information about environments that don't allow administrator access, see [Development and build VMs that don't allow administrator access FAQ](../../dev-itpro/sysadmin/VMs-no-admin-access.md).
 
-If you need admin access in your environment, use your Azure subscription and deploy the environment using LCS. You can also use the downloadable VHD and deploy it in your Azure virtual machine (VM) or host it locally to get full admin access.
+If you need admin access in your environment, use your Azure subscription and deploy the environment using LCS. You can also use the downloadable VHD and deploy it in your Azure VM or host it locally to get full admin access.
 
 If you don’t have admin access in the environment, you will not be able to test and debug using Modern POS. You can still do all commerce customization for POS if you are testing the customization, you must use Cloud POS in that environment. From a customization perspective, there is no difference between Cloud POS and Modern POS - any customization will work both in Cloud POS and Modern POS. There is no additional logic or code for customization completed in Cloud POS in order to work in Modern POS or vice versa, unless you added logic that is browser-specific or UWP app- specific for Hardware and other scenarios. Another option is to do all development work in the environment using Modern POS and test it in some other environment where you have admin access to install MPOS. In most cases, you should be able to test using Cloud POS, expect if you want to test for offline scenarios. If you want to test offline scenarios, you can create a Modern POS installer using the build script, and then test it in your test environment or some other POS registers.
 
