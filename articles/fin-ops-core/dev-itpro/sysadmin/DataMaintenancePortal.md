@@ -29,6 +29,7 @@ ms.dyn365.ops.version: AX 10.0.18
 # Data maintenance
 
 [!include[banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Data maintenance enables simple scheduling of processes that will be run to find or correct data inconsistencies in your environment. 
 
