@@ -53,6 +53,9 @@ This topic describes how to restrict employees from editing contact details in D
 4. Select **Save**.
    ![Save changes](./media/hr-employee-self-service-restrict-save.png)
 
+## Employee experience
+
+When you restrict 
 
 
 ## See also
