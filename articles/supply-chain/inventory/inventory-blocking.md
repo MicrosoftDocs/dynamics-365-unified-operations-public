@@ -55,7 +55,7 @@ You can specify items that must be inspected by creating a quality order on the 
 
 ## Blocking items by using a process that generates a quality order
 
-If a quality process specifies that an item must be inspected, a quantity of the item is blocked automatically. Therefore, when a quality order is generated automatically, the item sampling plan that is associated with the quality order controls the both quantity of items that is blocked and the quantity that must be inspected. If the **Full blocking** option on the **Item sampling** page is selected, the full quantity of, for example, a purchase order line is blocked during inspection, regardless of the item sampling quantity.
+If a quality process specifies that an item must be inspected, a quantity of the item is blocked automatically. Therefore, when a quality order is generated automatically, the item sampling plan that is associated with the quality order controls both the quantity of items that is blocked and the quantity that must be inspected. If the **Full blocking** option on the **Item sampling** page is selected, the full quantity of, for example, a purchase order line is blocked during inspection, regardless of the item sampling quantity.
 
 ### Example
 
@@ -71,7 +71,7 @@ You can specify which inventory statuses are blocking statuses by using the **In
 
 ## Take care when blocking items that use both inventory status blocking and quality order blocking
 
-You can create a quality order associated with inventory having an inventory status that has its **Inventory blocking** parameter enabled. In this case, the quality order will generate an extra inventory blocking record in addition to the one created by the inventory status. Because the quality order inventory blocking will have the parameter **Expected receipts** enabled, this generates an additional *Ordered inventory* transaction that is also blocked by its inventory status. This combination can lead to difficulties in understanding the meaning of generated inventory transactions, because it will appear as though the total blocked quantity is in excess of the total quantity on hand. Let us examine the transactions on an example of a receipt of 10 pieces of item A0001 with a quality order generated to sample 1 piece. The behavior will also depend on whether the option **Reserve ordered items** is enabled on the **Inventory and warehouse management parameters** page.
+You can create a quality order associated with inventory having an inventory status that has its **Inventory blocking** parameter enabled. In this case, the quality order will generate an extra inventory blocking record in addition to the one created by the inventory status. Because the quality order inventory blocking will have the parameter **Expected receipts** enabled, this generates an extra *Ordered inventory* transaction that is also blocked by its inventory status. This combination can lead to difficulties in understanding the meaning of generated inventory transactions, because it will appear as though the total blocked quantity is in excess of the total quantity on hand. Let us examine the transactions on an example of a receipt of 10 pieces of item A0001 with a quality order generated to sample 1 piece. The behavior will also depend on whether the option **Reserve ordered items** is enabled on the **Inventory and warehouse management parameters** page.
 
 >[!NOTE]
 >If you are using inventory status blocking and quality orders together, we strongly recommend having the **Reserve ordered items** option enabled.
@@ -90,7 +90,7 @@ When **Reserve ordered items** is enabled, all inventory blocking transactions w
 
 ### Example with "Reserve ordered items" disabled
 
-When **Reserve ordered items** is disabled, the expected receipts can't be reserved (as they are in status *Ordered*), so some blocking will be left in status *On order*.
+When **Reserve ordered items** is disabled, the expected receipts can't be reserved because they are in status *Ordered*, so some blocking will be left in status *On order*.
 
 | Inventory transaction reference | Receipt | Issue | Quantity | Site | Warehouse | Inventory Status | Location | License Plate | Comment |
 |---|---|---|---|---|---|---|---|---|---|
