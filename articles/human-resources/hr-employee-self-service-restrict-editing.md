@@ -50,7 +50,8 @@ This topic describes how to restrict employees from editing contact details in D
 3. On the **Employee self service** tab, uncheck all information in the **Address and contact information** section that you don't want employees to add or edit. In this example, we've unchecked **Business** contact information.
    ![Restrict editing for business contact information](./media/hr-employee-self-service-restrict-business.png)
 
-4. 
+4. Select **Save**.
+   ![Save changes](./media/hr-employee-self-service-restrict-save.png)
 
 
 
