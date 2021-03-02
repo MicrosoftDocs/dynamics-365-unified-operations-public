@@ -41,7 +41,7 @@ The tax calculation service integrates with Dynamics 365 Finance and Dynamics 36
 The tax calculation service is a Microsoft-based tax engine with exponential scalability that can help you to:
 
    - Configure the tax calculation service through the Microsoft Dynamics Regulatory Configuration Service (RCS), which is an enhanced version of the Electronic Reporting designer and is available as a standalone service.
-   - Configure hee tax matrix to automatically determine tax codes and rates 
+   - Configure the tax matrix to automatically determine tax codes and rates 
    - Configure the tax matrix to automatically determine the tax registration number 
    - Configure the tax calculation designer to define formulas and conditions 
    - Share tax determination and calculations solution across legal entities 
