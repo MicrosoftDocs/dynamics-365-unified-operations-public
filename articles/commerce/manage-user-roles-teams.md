@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic covers how to manage Dynamics 365 Commerce user roles in Microsoft Teams.
 
-As you create a team per store or channel in Microsoft Teams, there is a group membership corresponding to the team is created, for example `HOUSTON_D365@<YourTenantAADDomain>.com` for a Houston e-commerce store team. All the store workers under a team group membership will be assigned with one of two user roles: "owner" or "member." A store employee with the "owner" user role, typically a store manager, can do operations like adding a private channel or adding members. 
+As you create a team per store or channel in Microsoft Teams, a group membership corresponding to the team is created, for example `HOUSTON_D365@<YourTenantAADDomain>.com`. All the store workers under a team group membership are assigned one of two user roles: "owner" or "member." A store employee with the "owner" user role, typically a store manager, can perform operations such as adding a private channel and adding or deleting members. 
 
-The following example image of Microsoft Teams shows a list of team members and their user roles.
+The following image shows an example list of team members and their user roles in Microsoft Teams.
 
 ![Dynamics 365 Commerce and Teams integration - User Roles](media/d365-commerce-teams-integration-user-roles.png)
 
@@ -44,19 +44,19 @@ For more information, see [Assign team owners and members in Microsoft Teams](ht
 
 #### How do you assign the "owner" role to a user while provisioning Microsoft Teams from Dynamics 365 Commerce? 
 
-All people with Store Managers role will be added as an owner to the corresponding team's group members.  E.g. store managers of Houston will be added as owners to HOUSTON_D365@<TenantAADDomain>.com) so that store managers can perform operations like adding a member of deleting a member from the group as needed. 
+All store managers are added as owners to the corresponding team group so that they can perform operations such as adding a private channel and adding or deleting members. 
 
-#### What happens if a store doesn't a store managers?
+#### What happens if a store doesn't have store managers?
 
-Group will not created, means not team for the store in the Teams as well. 
+If a store doesn't have managers, a team group will not created for the store or in Teams. 
 
 #### What happens if store managers leave the company?
 
-Add new Store Manager in the HQ and re-provision Teams so that new manager will have required privilege's in the Teams for the group. 
+Someone with the "owner" role can add a new store manager in Commerce headquarters and reprovision Teams so that the new manager will have the necessary privileges in Teams for the group. 
 
-#### How to clear the graph API token stored in the session storage?
+#### How do you clear the Microsoft Graph API token stored in the session storage?
 
-User who logs in into POS with AAD account to view the tasks, should logout  from POS or close the application to invalidate the session storage. 
+A user who has signed in to point of sale (POS) with an Azure Active Directory (Azure AD) account should sign out from the POS or close the application to clear the session storage. 
 
 ## Additional resources
 
