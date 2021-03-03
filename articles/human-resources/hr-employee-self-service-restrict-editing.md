@@ -57,11 +57,11 @@ This topic describes how to restrict employees from editing contact details in D
 
 After you've restricted employees from adding or editing contact details, they can see the information, but can't change it.
 
-In this example, where employees are restricted from editing **Business** contact details, they can see it in Employee self service:
+In this example, where employees are restricted from editing **Business** contact details, they can still see the information in Employee self service:
 
 ![View business contact details](./media/hr-employee-self-service-restrict-view.png)
 
-When they select the business contact details, the **Edit address** pane appears as read-only, and they can't change any of the fields.
+However, when they select the business contact details, the **Edit address** pane appears as read-only, and they can't change any of the fields.
 
 ![Business contact details display as read-only](./media/hr-employee-self-service-restrict-read-only.png)
 
