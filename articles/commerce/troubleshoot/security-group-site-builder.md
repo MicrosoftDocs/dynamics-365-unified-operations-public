@@ -43,7 +43,7 @@ When implementing the steps to deploy a new e-commerce tenant including the site
 
 ### Provision the e-commerce site with a user in the correct tenant
 
-1. Go to the Azure portal at:[https://portal.azure.com.](http://portal.azure.com/).
+1. Go to the Azure portal at:[https://portal.azure.com.](https://portal.azure.com/).
 1. Follow the instructions to [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) under the tenant that the Microsoft Dynamics Lifecycle Services (LCS) project for your e-commerce site was provisioned for.
 1. Go to the LCS portal at [http://lcs.dynamics.com](https://lcs.dynamics.com/) and sign in with an account that shares the same tenant as the AAD security group that you just created. The account must have access to view the AAD security group.
 1. Navigate through the setup steps to configure the e-commerce site. The security group should now be visible in the dialog box when provisioning the e-commerce components.
