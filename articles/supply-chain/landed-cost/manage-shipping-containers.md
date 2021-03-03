@@ -134,7 +134,7 @@ The following table describes the settings that are available on the **Other** F
 | Rental | A value that indicates whether the shipping container is a rental shipping container. Rental costs might be associated with rental containers. |
 | Converted to rental | A value that indicates whether the shipping container was converted to a rental shipping container. Rental costs might be associated with rental containers. |
 | Original voyage | If the shipping container was moved to a new voyage, the original voyage. |
-| Used | <!-- KFM: Description needed --> |
+| Used | Use this to record whether a rental shipping container has been used. It is for informational purposes only. |
 | Expected loading date | The date when the shipping container is expected to be loaded with goods. |
 | Our serial number | Enter the serial number that your company uses internally for the shipping container. |
 | Shipping company serial number | Enter the serial number that the shipping company or agent provided for the shipping container. |

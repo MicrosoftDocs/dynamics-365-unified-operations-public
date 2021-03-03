@@ -178,7 +178,7 @@ The following table describes the fields that are available on the **Other** Fas
 |---|---|
 | Remarks | Enter additional information that is related to the voyage. |
 | Valuation date | Select the earliest ex-factory date for the purchase orders that are linked to the voyage. |
-| Pending voyage | <!-- KFM: Description needed --> |
+| Pending voyage | You can use this to indicate whether your shipment or voyage has left yet. It is for informational purposes only.  |
 | Renaming shipping containers | For voyages that have more than one container, the number of containers that haven't yet been received. |
 
 ## Voyage update periodic tasks
