@@ -113,9 +113,9 @@ Complete the following steps to setup the different lookups used in the generati
 
 1. In the **Electronic reporting** workspace, select **Configurations > Setup** to set up the rules to identify the tax transaction into the related box of the VAT return form.
 1. Select the current version. On the Lookups FastTab, select the lookup name for example **$PNDFormatTypeLookup**. This lookup identifies the list of reports types supported in Thailand localization.
-1. On the **Conditions** FastTab, select **Add** and in the new line in the Lookup result column, select the related line .
+1. On the **Conditions** FastTab, select **Add** and in the new line in the Lookup result column, select the related line.
 1. In the **Withholding tax item group** column, select the related code  used to identify the tax item group in the related format type.
-1. In the **Name**  column, select the type of vendor account 
+1. In the **Name**  column, select the type of vendor account. 
 1. Repeat steps 3-5 for all available lookups.
 1. Select **Add** again, and then follow these steps to include the final record line:
    1. In the Lookup result column, select **Not applicable**. 
@@ -132,7 +132,7 @@ Complete the following steps to generate the tax declaration report.
 1. Select the **From date**.
 1. Select **To date**.
 1. Select the **Settlement period**.
-1. Select the PND format type
+1. Select the PND format type.
 1. Select **OK** to confirm the above steps. 
 
 
