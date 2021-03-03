@@ -26,7 +26,6 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-
 ---
 
 # "Payment type must be credit card" error
@@ -51,4 +50,4 @@ When navigating to the **Sales order** page after synchronizing an order, this e
 
 ## Additional resources
 
-[Posting of online sales and payments](../posting-online-sales-payments.md)
+[Posting of online sales and payments](../tasks/posting-online-sales-payments.md)
