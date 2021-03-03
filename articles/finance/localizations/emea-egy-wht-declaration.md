@@ -116,7 +116,7 @@ To generate the WHT declaration forms reports in Microsoft Excel format, you mus
 ![Declaration form](media/egypt-wht-declaration-setup1.png)
 
 ## Generate a Withholding declaration forms
-The process of preparing and submitting a Withholding declaration forms  for a period is based on withholding tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see [Sales tax overview](../general-ledger/create-a-withholding-tax-payment.md).
+The process of preparing and submitting a Withholding declaration forms for a specific period is based on withholding tax transactions posted during the settle and post payment tax job. For more information about global witholding tax see [Global withholding tax](../general-ledger/global-withholding-tax-overview.md).
 
 Complete the following steps to generate the tax declaration report.
 
