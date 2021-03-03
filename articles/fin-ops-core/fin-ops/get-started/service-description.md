@@ -5,7 +5,7 @@ title: Service description for Dynamics 365 Finance and Dynamics 365 Supply Chai
 description: This topic provides the service description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: shellybakke
 manager: AnnBe
-ms.date: 03/02/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -112,24 +112,59 @@ Microsoft will provide point in time restoration of Customer’s Non-Production 
 
 |Customer's request |	Customer's responsibility |	Microsoft's responsibility |	Microsoft's lead time |	Microsoft's estimated maintenance downtime |
 |-------------------|-----------------------------|------------------------------|-----------------------|----------------------------------------|
-|New sandbox instance |	Request submitted through service request in LCS and available through LCS for selfservice deployments.<br><br>- Ensure all the instances needed, have been planned and Add-On offers purchased.<br><br>- Complete all implementation tasks specified in the LCS checklists. 	|- Ensure instance request is against a base subscription or an AddOn offer. 
-•	Deploy the instance and notify the Customer and Implementation Partner. 
-•	A sandbox instance is a Tier-1 development or build environment or a 
-Tier-2 (or higher). Tier-2 
-(or higher) environments are multibox environments closer in topology to a production environment. 	2 business days* 	N/A 
-Copy golden configuration database from Dev/Test to Sandbox before go-live 	•	Validation and sign-off. 
-•	Prepare and export the database from a development environment 
-(Tier 1). 
-•	Trigger the import operation through LCS and update the database to a sandbox environment (Tier 2 or higher). 	N/A 	N/A 	1-4 hours 
-Copy a Production  Instance database to a Non-
-Production Instance 	Trigger the copy operation through LCS. 
-•	Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configuration (such as integration endpoints) and enable or add users.  
-•	Customer should make these changes by applying a data package. 	N/A 	N/A 	1-4 hours 
-Non-Production Instance database point in time restore 	Accept that process cannot be undone.  
-• Trigger the point in time restore operation through Lifecycle Services.  	N/A 	N/A 	1-8 hours 
-Copy Tier 2 
-Sandbox database to a Tier 1 Sandbox for troubleshooting and debugging 	Trigger database export operation through LCS on the sandbox environment. 
-• Import and update the database in Tier 1 environment. 	N/A 	N/A 	1-4 hours 
+|New sandbox instance |	Request submitted through service request in LCS and available through LCS for selfservice deployments.<br><br>- Ensure all the instances needed, have been planned and Add-On offers purchased.<br><br>- Complete all implementation tasks specified in the LCS checklists. 	|- Ensure instance request is against a base subscription or an AddOn offer.<br><br>- Deploy the instance and notify the Customer and Implementation Partner.<br><br>- A sandbox instance is a Tier-1 development or build environment or a Tier-2 (or higher). Tier-2 (or higher) environments are multibox environments closer in topology to a production environment. |	2 business days* |	N/A |
+|Copy golden configuration database from Dev/Test to Sandbox before go-live |	- Validation and sign-off.<br><br>- Prepare and export the database from a development environment 
+(Tier 1).<br><br>- Trigger the import operation through LCS and update the database to a sandbox environment (Tier 2 or higher). |	N/A |	N/A 	|1-4 hours |
+|Copy a Production Instance database to a Non-Production Instance |	Trigger the copy operation through LCS.<br><br>- Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configuration (such as integration endpoints) and enable or add users.<br><br>- Customer should make these changes by applying a data package. |	N/A |	N/A 	|1-4 hours |
+|Non-Production Instance database point in time restore 	|Accept that process cannot be undone.<br><br>Trigger the point in time restore operation through Lifecycle Services.  |	N/A |	N/A 	|1-8 hours |
+|Copy Tier 2 Sandbox database to a Tier 1 Sandbox for troubleshooting and debugging |	Trigger database export operation through LCS on the sandbox environment.<br><br>Import and update the database in Tier 1 environment.| 	N/A |	N/A |	1-4 hours |
+
+### Data back-up and retention 
+
+Databases are protected by automatic back-ups. Automatic back-ups are Databases are protected retained for 30 days unless Microsoft performs a rollback. Rollbacks may by automatic back-ups as be performed in the event a failure occurs during any planned maintenance update specified in Table 4. For more information, see [Automated backups - Azure SQL Database & SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
+
+### Service activity responsibilities
+
+Table 3 describes some typical scenarios and activities for the Service along with the responsibilities of Microsoft, Customer, or both concerning such activities.
+
+Activity 	Microsoft 	Customer 
+Provisioning initial tenants 	
+Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned 	 	⚫ 
+Provision all Production Instances and Non-Production Instances  	⚫ 	 
+Validate the deployed Production Instances and Non-Production Instances 	 	⚫ 
+Service updates 	
+Microsoft applies service updates to a designated Non-Production and 
+Production Instances 	⚫ 	⚫ 
+Download update from LCS and define, develop, and test the update, and provide code update package back to LCS 	 	⚫ 
+Request extension updates to be applied to the Production Instance 	 	⚫ 
+Create code and data backup for Production Instance before applying any updates 	⚫ 	 
+In case of any failure, roll back Production instance to code and data backup 	⚫ 	 
+Data management (Backup, restore, and update) 	
+Backup database  	⚫ 	 
+Determine HA and disaster recovery plan 	⚫ 	 
+Monitor Production Instance database performance 	⚫ 	⚫ 
+Tuning the Production Instance database for performance  	⚫ 	⚫ 
+Initiate copy of Production Instance database to Non-Production Instance 	 	⚫ 
+ 
+
+Activity 	Microsoft 	Customer 
+Update infrastructure 	
+Schedule regular infrastructure updates 	⚫ 	 
+Scale up and down (Users, storage, instances) 	
+Purchase additional users and Non-Production add-ons 	 	⚫ 
+Changes in usage must be updated in the LCS’ Subscription Estimator tool 	 	⚫ 
+Report any significant performance issues impacting usage of the Service 	 	⚫ 
+Proactively manage the resources needed for the Service applicable Service 	⚫ 	 
+Investigate and troubleshoot Incidents 	⚫ 	⚫ 
+Security (User access) 	
+Provide user access to the Service 	 	⚫ 
+Provide LCS project access for managing and operating instances deployed through LCS 	 	⚫ 
+Monitor Production Instance 	
+Monitor Production Instances 24x7 	⚫ 	⚫ 
+Notify Customer proactively of incidents with the Production Instance 	⚫ 	 
+Manage and Monitor Non-Production Instances 	
+Manage Non-Production Instances with LCS  	 	⚫ 
+Monitor Non-Production Instances 	 	⚫ 
 
 
 
