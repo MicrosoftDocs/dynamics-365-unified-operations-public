@@ -108,5 +108,29 @@ Typical tenant and data management events for the Service and the responsibiliti
 |Copy a Non-Production Instance database to a Production Instance before go-live.<br><br>(Note: This request is not available if Customer already is live in production) |	Request submitted through service request in LCS and available through LCS for self-service deployments.<br><br>Validation and sign-off. 	|Copy a Non-Production Instance (e.g., Sandbox Tier 2 Add-on) database to a Production Instance as part of the go-live process. |	5 hours*| 	1-4 hours |
 |Maintenance mode 	| - Put AOS in maintenance mode through LCS.<br><br>- Complete necessary maintenance.<br><br>- Request to put the AOS back into active mode. |	N/A |	N/A 	|2 hours| 
 
+Microsoft will provide point in time restoration of Customer’s Non-Production Instance databases as described in Table 2.2.
+
+|Customer's request |	Customer's responsibility |	Microsoft's responsibility |	Microsoft's lead time |	Microsoft's estimated maintenance downtime |
+|-------------------|-----------------------------|------------------------------|-----------------------|----------------------------------------|
+|New sandbox instance |	Request submitted through service request in LCS and available through LCS for selfservice deployments.<br><br>- Ensure all the instances needed, have been planned and Add-On offers purchased.<br><br>- Complete all implementation tasks specified in the LCS checklists. 	|- Ensure instance request is against a base subscription or an AddOn offer. 
+•	Deploy the instance and notify the Customer and Implementation Partner. 
+•	A sandbox instance is a Tier-1 development or build environment or a 
+Tier-2 (or higher). Tier-2 
+(or higher) environments are multibox environments closer in topology to a production environment. 	2 business days* 	N/A 
+Copy golden configuration database from Dev/Test to Sandbox before go-live 	•	Validation and sign-off. 
+•	Prepare and export the database from a development environment 
+(Tier 1). 
+•	Trigger the import operation through LCS and update the database to a sandbox environment (Tier 2 or higher). 	N/A 	N/A 	1-4 hours 
+Copy a Production  Instance database to a Non-
+Production Instance 	Trigger the copy operation through LCS. 
+•	Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configuration (such as integration endpoints) and enable or add users.  
+•	Customer should make these changes by applying a data package. 	N/A 	N/A 	1-4 hours 
+Non-Production Instance database point in time restore 	Accept that process cannot be undone.  
+• Trigger the point in time restore operation through Lifecycle Services.  	N/A 	N/A 	1-8 hours 
+Copy Tier 2 
+Sandbox database to a Tier 1 Sandbox for troubleshooting and debugging 	Trigger database export operation through LCS on the sandbox environment. 
+• Import and update the database in Tier 1 environment. 	N/A 	N/A 	1-4 hours 
+
+
 
 
