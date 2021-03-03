@@ -51,8 +51,9 @@ To restrict user access to storefront pages in Commerce site builder, follow the
 
 1. Go to your site.
 1. Select **Pages**, and then select the page for which you want to restrict user access.
-1. Select the primary page fragment slot, and then select **Edit** on on the top-right corner of the page. 
+1. Select the module or fragment slot, and then select **Edit** on on the top-right corner of the page. 
 1. Select **Requires sign-in?** in the properties pane, and then select **Finish editing**.
+1. Click the **Publish** button to publish the change.
 
 To block creation of new users in Azure AD, follow these steps.
 
