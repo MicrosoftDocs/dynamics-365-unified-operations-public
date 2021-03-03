@@ -52,7 +52,7 @@ Follow the steps below to record the TDS certificate numbers and dates:
 
 5.  In the **Certificate amount** field, enter the amount of the TDS certificate. In the **Date** field, enter the certificate date for the certificate number.
 
-6. Click **Inquiries** button to open the **Certificate Transactions** form to view the TDS transactions that the TDS certificate number and date are updated for, in the **Update** **certificate** form (**Tax > Declarations > Withholding tax > Update certificate**). View the TDS transactions information in the following fields.
+6. Click **Inquiries** button to open the **Certificate Transactions** page to view the TDS transactions that the TDS certificate number and date are updated for. This information can be updated on the **Updatecertificate** page (**Tax > Declarations > Withholding tax > Update certificate**). View the TDS transactions information in the following fields.
 
 - **Date** field: Posting date of the TDS transaction.
 
@@ -72,9 +72,9 @@ Follow the steps below to record the TDS certificate numbers and dates:
 
 - **Certificate number** field: TDS certificate number updated for the TDS transaction.
 
-7. In the **Recoverable certificates** form, select the **Closed** check box to close the TDS certificate number after updating it for TDS transactions in the **Update certificate** page.
+7. In the **Recoverable certificates** page, select the **Closed** check box to close the TDS certificate number after updating it for TDS transactions on the **Update certificate** page.
 
 >   [!Note]
->   TDS certificate numbers with the **Closed** check box selected are not available in the **Update certificate**  page.  
+>   TDS certificate numbers with the **Closed** check box selected are not available in the **Update certificate** page.  
 
 8. Click the **Mark all** button to select the **Closed** check box for all records on the page.
