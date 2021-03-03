@@ -67,6 +67,8 @@ Parameters set in the global address book determine the roles that can see your 
     - To add new contact information, select **Add**. Edit the fields as necessary.
     - To edit existing contact information, select the item and then select **Edit**. Edit the fields as necessary.
     - To set a contact detail as private, select the item, select **Advanced**, and then set the **Private** toggle to **Yes**. Select **OK**.
+      >[!NOTE]
+      >The **Advanced** button isn't available if your admin has enabled the **(Preview) Restrict employees from adding or editing address and contact information for select purposes** feature in your environment. For more information, see [Restrict editing of personal information](hr-employee-self-service-restrict-editing.md).
   
 5. To change your personal contacts, select the **Personal contacts** tab. You can designate emergency contacts, beneficiaries, and dependents. A contact can be a person or organization. The **Benefits management** feature uses personal contact information. For more information, see [Configure personal contact eligibility options](hr-benefits-setup-contact-eligibility-options.md).
 
