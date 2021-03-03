@@ -55,7 +55,7 @@ To enable the "BOPIS" extension in Commerce site builder, follow these steps.
 
 To configure modes of delivery in Commerce headquarters, follow these steps.
 
-1. Go to **Retail and Commerce \> Channel setup \> Modes of delivery**.
+1. Go to **Procurement and sourcing \> Setup \> Modes of delivery**.
 1. Confirm that a **Customer pickup** mode of delivery has been created, and that products and addresses are assigned to it.
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters**.
 1. Select **Customer orders** on the left navigation pane.
