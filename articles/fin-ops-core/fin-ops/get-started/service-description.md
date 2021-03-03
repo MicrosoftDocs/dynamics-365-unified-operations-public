@@ -104,21 +104,10 @@ Typical tenant and data management events for the Service and the responsibiliti
 
 |Customer's request |	Customer's responsibility |	Microsoft's responsibility |	Microsoft's lead time |	Microsoft's estimated maintenance downtime |
 |-------------------|----------------------------|---------------------------|--------------------------|------------------------------------------|
-|Deploy a new Production Instance |	Request submitted through service request in LCS and available through LCS for self-service deployments. 
-•	Accurately complete the sizing questionnaire in the LCS Subscription Estimator before requesting a Production Instance.  
-•	Complete all implementation tasks specified in the LCS checklists. 	•	Complete Go live health check from Microsoft Fasttrack Services. 
-•	Deploy a Production 
-Instance only after Customer has completed all LCS checklists and notify Customer of the provisioned environment through email. 	2 business days* 
- 	N/A 
-Copy a Non-
-Production Instance database to a Production Instance before go-live. (Note: This request is not available if Customer already is live in production) 	Request submitted through service request in LCS and available through LCS for self-service deployments. 
-• Validation and sign-off. 	• Copy a Non-
-Production Instance 
-(e.g., Sandbox Tier 2 
-Add-on) database to a Production Instance as part of the go-live process. 	5 hours* 	1-4 hours 
-Maintenance mode 	•	Put AOS in maintenance mode through LCS. 
-•	Complete necessary maintenance. 
-•	Request to put the AOS back into active mode. 	N/A 	N/A 	2 hours 
+|Deploy a new Production Instance |	Request submitted through service request in LCS and available through LCS for self-service deployments.<br><br>- Accurately complete the sizing questionnaire in the LCS Subscription Estimator before requesting a Production Instance.<br><br>- Complete all implementation tasks specified in the LCS checklists. |- Complete Go live health check from Microsoft Fasttrack Services.<br><br>- Deploy a Production Instance only after Customer has completed all LCS checklists and notify Customer of the provisioned environment through email.|	2 business days* | N/A |
+|Copy a Non-Production Instance database to a Production Instance before go-live.<br><br>(Note: This request is not available if Customer already is live in production) |	Request submitted through service request in LCS and available through LCS for self-service deployments.<br><br>Validation and sign-off. 	|Copy a Non-
+Production Instance (e.g., Sandbox Tier 2 Add-on) database to a Production Instance as part of the go-live process. |	5 hours*| 	1-4 hours |
+|Maintenance mode 	| - Put AOS in maintenance mode through LCS.<br><br>- Complete necessary maintenance.<br><br>- Request to put the AOS back into active mode. |	N/A |	N/A 	|2 hours| 
 
 
 
