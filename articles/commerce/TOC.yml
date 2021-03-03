@@ -2390,10 +2390,10 @@
           href: troubleshoot/pickup-store-missing.md
         - name: Items without inventory can be checked out
           href: troubleshoot/items-without-inventory-checked-out.md
-    - name: SDK troubleshooting
-      items:
-      - name: Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM
-        href: troubleshoot/set-up-dev-environment-debugging.md
+      - name: SDK troubleshooting
+        items:
+        - name: Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM
+          href: troubleshoot/set-up-dev-environment-debugging.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance
