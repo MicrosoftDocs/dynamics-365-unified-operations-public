@@ -90,6 +90,7 @@ This capability ensures that the payment is never authorized by the terminal and
 
 - [Payments FAQ](dev-itpro/payments-retail.md)
 - [Dynamics 365 Payment Connector for PayPal](paypal.md)
+- [Dynamics 365 Payment Connector for Adyen](adyen-connector.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
