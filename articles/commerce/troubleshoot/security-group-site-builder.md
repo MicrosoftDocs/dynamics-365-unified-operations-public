@@ -37,7 +37,7 @@ This topic provides troubleshooting guidance for when the Azure Active Directory
 
 ## Description
 
-When implementing the steps to deploy a new e-commerce tenant, the Azure AD Security Group doesn't appear as a dialog box drop-down list option to create the e-commerce components.
+When implementing the steps to deploy a new e-commerce tenant including the site builder component, the Azure AD Security Group doesn't appear as a dialog box drop-down list option to create the e-commerce components.
 
 ## Resolution
 
