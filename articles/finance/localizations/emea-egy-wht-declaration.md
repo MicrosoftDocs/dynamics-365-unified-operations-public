@@ -129,11 +129,11 @@ Complete the following steps to generate the tax declaration report.
 In the nex dialog box, follow these additional steps to complete the generation of withholding forms reports
 1. Select the form type: **Form No 41 **, **Form No 11**, **None**. Multiple selections are available. In case of selecting None, the standard report will be generated. 
 1. Select the language. All reports are translated in **en-us** and **ar-eg**.
-1. Enter the **branch** and **name** of Bank where the tax payment will be paid.
-1. Select the **Business type***
-1. Enter the **Check** and **Dcument** number
-1. Enter the **Entity type
-1. Enter the name of person who is registered to assign the form
+1. Enter the **Branch** and **Name** of Bank where the tax payment will be paid.
+1. Select the **Business type***.
+1. Enter the **Check** and **Document** number.
+1. Enter the **Entity type**.
+1. Enter the name of person who is registered to assign the form.
 1. Click **OK** to confirm the generation of report. 
 
  
