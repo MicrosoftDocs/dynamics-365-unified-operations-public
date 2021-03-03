@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Service description for Finance and Supply Chain Management apps
+title: Service description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management apps
 description: This topic provides the service description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: shellybakke
 manager: AnnBe
