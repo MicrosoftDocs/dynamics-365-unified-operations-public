@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: "Pick this up" option not displayed on cart or product details pages
+title: \"Pick this up\" option not displayed on cart or product details pages
 description: This topic provides troubleshooting guidance for when the option to pick up in store isn't displayed on the cart or product details pages. 
 author: Reza-Assadi
 manager: AnnBe
