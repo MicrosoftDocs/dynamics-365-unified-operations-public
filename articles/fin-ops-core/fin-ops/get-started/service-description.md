@@ -180,5 +180,75 @@ Software lifecycle policy.
  
 For more information see, the Finance and Supply Chain Management [update FAQ](one-version.md). 
 
+### Planned maintenance responsibilities
+
+Microsoft provides Customers with the types of updates to Finance and Supply Chain Management set forth in Table 4. These updates may require downtime on the production environment. The downtime window can be categorized as Microsoft Planned Maintenance (initiated by Microsoft) or Customer Planned Maintenance (initiated by the Customer). Updates are scheduled with the Customer via LCS.
+
+The responsibilities of Microsoft, the Implementation Partner, and the Customer are reflected in Table 4 for each update type.
+
+Type of update 
+Description 		Maintenance window 
+(Microsoft's estimated maintenance downtime) 
+	Microsoft 	Customer / Implementation 
+Partner 	
+Customers that are on version 8.1 and higher 	
+Service updates 
+Service updates are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible 	Initiate updates to the application within the configured maintenance window. 	Customer must always stay current on the latest version of the application. 	Microsoft initiated maintenance window 
+30 minutes – 4 hours* 
+Critical update 
+Update that solves a critical issue. 	Notify Customer of the critical update. 
+Initiate update within the specified timeline. 	Apply the critical update. 	Microsoft initiated maintenance window 
+30 minutes – 4 hours 
+Extensions 
+Change to the standard business application logic. 	No action required. 	Validate extensions in 
+Customer’s Non-Production Instances and then promote them to Customer’s 
+Production Instance. 	Customer initiated maintenance window 
+1 – 4 hours 
+ 	 
+Type of update 
+Description 	Expected action 	Maintenance window 
+Microsoft's estimated maintenance downtime 
+	Microsoft 	Customer/ Implementation 
+Partner 	
+Customers that are on version 8.0 and lower 
+Platform updates Platform updates are collections of hot fixes and new features for the platform, provided as a deployable package. They are backward compatible. They are also backward compatible with the last major release of the applicable Service.  	Initiate updates to the platform within the configured maintenance window. 	Customer must always stay current on the latest version of the platform. 	Microsoft initiated maintenance window 
+30 minutes – 4 hours** 
+Major releases 
+Major releases for the Service include new functionality. The last major update is 8.1. 	Make the new major release available and publish to LCS. 	Prepare for the upgrade according to the LCS instructions and best practices. 	Customer initiated maintenance window 
+5 – 8 hours 
+Infrastructure updates Infrastructure updates are updates made to the underlying infrastructure like OS updates. These are done monthly. 	Initiate updates within the Microsoft planned maintenance window. 	No action needed. 	Microsoft initiated maintenance window 
+1 – 4 hours 
+Dynamics 365 for Finance and Supply Chain 
+Management   
+IP address whitelisting - 
+Securing access from 
+Customer’s corpnet to Supply Chain Management. 	Finance and 
+Operations is an Azure Service and uses Azure IP address range. 	Customers need to whitelist the Azure datacenter ranges for both their Primary and Geo-DR datacenters. 
+Link to doc for IP address ranges for Azure. 	N/A 
+N/A 
+Security 
+Secure Infrastructure. 	Microsoft installs  
+Anti-Malware, uses SSL, Rotate secrets, and adheres strictly to SOC/ISO standards. 	Refer to https://www. microsoft.com/en-us/ trustcenter/security/ dynamics365-security for more details on Security. 	N/A 
+N/A  
+
+ 	 
+Type of update 
+Description 	Expected action 	Maintenance window 
+Microsoft's estimated maintenance downtime 
+	Microsoft 	Customer/ Implementation 
+Partner 	
+Customers that are on version 8.0 and lower 
+Network Security 
+Groups (NSG) 
+With the September LCS release, customers can configure Network Security Group rules to restrict RDP and WinRM access to their Microsoft managed sandbox VMs through LCS. 	Microsoft disallows Remote Desktop access to Sandbox 
+(Tier 1, Tier 2, Tier 3, Tier 4 & Tier 5) environments over the Internet. 
+For self service deployments, RDP is enabled only for Tier1 sandbox. 	Customers need to whitelist their IP Address ranges via LCS to enable RDP access to their environments in Microsoft managed subscriptions. Refer to https://docs.microsoft. com/en-us/dynamics365/ unified-operations/ devitpro/deployment/ clouddeploymentoverview#featuresof-thefinance-andoperationsproduction-instance for more information.  
+N/A 
+N/A 
+ExpressRoute 
+Dedicated connection to 
+Supply Chain Management. 	Finance and 
+Operations enabled ExpressRoute over public peering. 	Customers need to work with the Azure ExpressRoute service providers to acquire a dedicated connection to Finance and Supply Chain Management. 	N/A 
+N/A 
 
 
