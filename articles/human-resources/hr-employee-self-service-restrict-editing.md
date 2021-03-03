@@ -42,15 +42,19 @@ This topic describes how to restrict employees from editing contact details in D
 ## Choose the information an employee can add or edit
 
 1. In Human Resources, select **Personnel management**, select **Links**, and then select **Human resources parameters**.
+
    ![Go to Human resources parameters](./media/hr-employee-self-service-human-resources-parameters.png)
 
 2. On the **Human resources parameters** page, select the **Employee self service** tab.
+
    ![Select Employee self service](./media/hr-employee-self-service-tab.png)
 
 3. On the **Employee self service** tab, uncheck all information in the **Address and contact information** section that you don't want employees to add or edit. In this example, we've unchecked **Business** contact information.
+
    ![Restrict editing for business contact information](./media/hr-employee-self-service-restrict-business.png)
 
 4. Select **Save**.
+
    ![Save changes](./media/hr-employee-self-service-restrict-save.png)
 
 ## Employee experience
