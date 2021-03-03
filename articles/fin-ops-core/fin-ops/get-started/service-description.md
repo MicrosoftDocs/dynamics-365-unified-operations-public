@@ -89,6 +89,35 @@ Service operations reflect various aspects of provisioning and use of Finance an
 
 Typical onboarding and implementation events and the expected responsibilities for each party are provided in the following table.
 
+|Request |	Expected Microsoft action |	Expected Customer/ Implementation Partner action |
+|--------|-----------------------------|--------------------------------------------------|
+|Initial offer purchase |	LCS project is created after the purchase of the offer.  |	Go through EA or CSP onboarding process. Partner creates tenant for Customer, if applicable. |
+|Add-On purchase |	Grant Customer access to Add-On selected during the implementation. |	Not applicable. |
+|Implementation planning and analysis |	Provide relevant tools in LCS, such as Business Process Modeler and interoperability with Visual Studio Online.| 	Project planning, Visual Studio Team Services, System onboarding and admin account setup. |
+
+For more information, see [Onboard an implementation project](../imp-lifecycle/onboard.md)
+  
+### Tenant and data management 
+
+Typical tenant and data management events for the Service and the responsibilities for each party are described in Table 2.1 for Production Instances and Table 2.2 for Non-Production Instances.   
+
+|Customer's request |	Customer's responsibility |	Microsoft's responsibility |	Microsoft's lead time |	Microsoft's estimated maintenance downtime |
+|-------------------|----------------------------|---------------------------|--------------------------|------------------------------------------|
+|Deploy a new Production Instance |	Request submitted through service request in LCS and available through LCS for self-service deployments. 
+•	Accurately complete the sizing questionnaire in the LCS Subscription Estimator before requesting a Production Instance.  
+•	Complete all implementation tasks specified in the LCS checklists. 	•	Complete Go live health check from Microsoft Fasttrack Services. 
+•	Deploy a Production 
+Instance only after Customer has completed all LCS checklists and notify Customer of the provisioned environment through email. 	2 business days* 
+ 	N/A 
+Copy a Non-
+Production Instance database to a Production Instance before go-live. (Note: This request is not available if Customer already is live in production) 	Request submitted through service request in LCS and available through LCS for self-service deployments. 
+• Validation and sign-off. 	• Copy a Non-
+Production Instance 
+(e.g., Sandbox Tier 2 
+Add-on) database to a Production Instance as part of the go-live process. 	5 hours* 	1-4 hours 
+Maintenance mode 	•	Put AOS in maintenance mode through LCS. 
+•	Complete necessary maintenance. 
+•	Request to put the AOS back into active mode. 	N/A 	N/A 	2 hours 
 
 
 
