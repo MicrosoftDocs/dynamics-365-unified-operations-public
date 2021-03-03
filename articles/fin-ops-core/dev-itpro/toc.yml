@@ -38,6 +38,8 @@
         href: business-events/app-business-events.md
       - name: Workflow business events
         href: business-events/business-events-workflow.md
+      - name: Batch business events
+        href: business-events/system-business-events.md
       - name: Alerts as business events
         href: business-events/alerts-business-events.md
       - name: Business events in Microsoft Flow
