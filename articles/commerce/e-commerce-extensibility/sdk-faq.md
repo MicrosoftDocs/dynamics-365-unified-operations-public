@@ -34,24 +34,28 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
-### What is replacing TSLint since it's been deprecated in SDK version 1.28 (Commerce version 10.0.18 release)?
+### What is replacing TSLint, which has been deprecated in SDK version 1.28 (the Commerce version 10.0.18 release)?
 
-Due to the open source TSLint static analysis tool being deprecated, the Dynamics 365 Commerce online SDK is replacing it with the [ESLint](https://eslint.org/) static analysis tool. TSLint will continue to work until SDK version 1.30 (Commerce version 10.0.20 release). You can manually update to ESLint prior to SDK release 1.30 if desired, but updating will be enforced with SDK release 1.30. After updating to SDK version 1.28, running the **yarn** command will show a deprecation warning. You can switch to ESLint at any time after this, but it may cause new errors and warnings to be displayed on your custom code. If you retrieved the online SDK from GitHub with the Commerce 10.0.18 preview release, then it will contain the necessary changes to ESLint and no changes will be needed. Otherwise, if you are updating from an older version of the SDK, you will need to manually update to ESLint before SDK release 1.30. 
+Because the open-source TSLint static analysis tool has been deprecated, the Dynamics 365 Commerce online SDK is replacing it with the [ESLint](https://eslint.org/) static analysis tool. TSLint will continue to work until SDK version 1.30 (the Commerce version 10.0.20 release). Before SDK version 1.30, you can manually update to ESLint if you want. However, in SDK version 1.30, update to ESLint will be enforced.
 
-Follow the instructions below to manually update from TSLint to ESLint.
+After you update to SDK version 1.28, you will receive a deprecation warning when you run the **yarn** command. You can switch to ESLint at any time afterward. However, you might receive new errors and warnings against your custom code.
+
+If you retrieved the online SDK from GitHub, together with the Commerce 10.0.18 preview release, it will contain the required changes to ESLint. No further changes are required. However, if you're updating from an older version of the SDK, you must manually update to ESLint before SDK version 1.30. 
+
+Follow the instructions in this section to manually update from TSLint to ESLint.
 
 #### Replace TSLint with ESLint
 
-Once you have [updated to SDK 1.28](sdk-updates.md) or later, you will need to create an ESLint file and change your **packages.json** file to include the ESLint dependencies and update the commands to use ESLint. You can leave the TSLint dependency in the **packages.json** file if you would like to use both. Once you update to ESLint, you may see new warnings against your code that can be fixed or ignored as needed.
+After you [update to SDK version 1.28](sdk-updates.md) or later, you must create an ESLint file and change your **packages.json** file so that it includes the ESLint dependencies. You must also update the commands so that they use ESLint. You can leave the TSLint dependency in the **packages.json** file if you want to use both TSLint and ESLint. After you update to ESLint, you might receive new warnings against your code. You can fix or ignore the warnings as required.
 
-##### Create a .eslintrc.js file
+##### Create an .eslintrc.js file
 
-You will need to add a new file named **.eslintrc.js** to your root SDK folder (where you should also see an existing **tslint.json** file). The **.eslintrc.js** file will contain a base ruleset that can be extended.
- 
-The base configuration contains a set of core rules that are relaxed when it comes to linting restrictions. You may also choose to define your own ruleset or extend another ruleset.
+You must add a new file that is named **.eslintrc.js** to your root SDK folder. (In that folder, you should also see an existing **tslint.json** file.) The **.eslintrc.js** file contains a base rule set that can be extended.
 
-To use the provided base ruleset, create the **.eslintrc.js** file and copy and paste in the following code:
- 
+The base configuration contains a set of core rules that are relaxed in terms of linting restrictions. You can also define your own rule set or extend another rule set.
+
+To use the base rule set that is provided, create the **.eslintrc.js** file, and paste in the following code.
+
 ```javascript
 module.exports = {
     extends: '@msdyn365-commerce/eslint-config,
@@ -66,11 +70,11 @@ module.exports = {
     }
 };
 ```
- 
-Additional files and directories that you don't want lint rules applied to can be added to the **ignorePatterns** section. In addition, you can extend or replace rules by defining rules in the **.eslintrc.js** file.
- 
-For example, if you want to extend the base configuration to turn off the **header/header** rule (which requires a header on all files), you would use the following code in the config file:
- 
+
+If there are additional files and directories that you don't want lint rules to be applied to, you can add them to the **ignorePatterns** section.
+
+You can also extend or replace rules by defining rules in the **.eslintrc.js** file. For example, the **header/header** rule requires a header on all files, and you want to extend the base configuration to turn off that rule. In this case, use the following code in the configuration file.
+
 ```javascript
 module.exports = {
     extends: '@msdyn365-commerce/eslint-config',
@@ -88,90 +92,96 @@ module.exports = {
     }
 };
 ```
-You may also optionally want to override or declare new rules for certain types of files. To accomplish this, use the **overrides** property as shown below:
+
+You might also want to override or declare new rules for some types of files. In this case, use the **overrides** property, as shown in the following example.
 
 ```javascript
-    overrides: [
-        {
-            files: ['*.props.autogenerated.ts', '*.data.ts'],
-            rules: {
-                'header/header': 'off'
-            }
-        },
-        {
-            files: ['*.tsx', '*.view.tsx', '*.test.ts'],
-            rules: {
-                'max-len': 'off',
-                'max-lines': 'off'
-            }
+overrides: [
+    {
+        files: ['*.props.autogenerated.ts', '*.data.ts'],
+        rules: {
+            'header/header': 'off'
         }
-    ],
+    },
+    {
+        files: ['*.tsx', '*.view.tsx', '*.test.ts'],
+        rules: {
+            'max-len': 'off',
+            'max-lines': 'off'
+        }
+    }
+],
 ```
 
 For more information and help, see the [ESLint documentation](https://eslint.org/docs/2.0.0/user-guide/configuring).
 
 ##### Update the package.json file
- 
-If you want to use both TSLint and ESLint, you can leave the TSLint dependency in your **package.json** file and add the following dependencies into the **devDependencies** section:
- 
- ```json
-        "@msdyn365-commerce/eslint-config": "^1.27.7",
-        "@typescript-eslint/eslint-plugin": "^4.2.0",
-        "@typescript-eslint/eslint-plugin-tslint": "^4.10.0",
-        "@typescript-eslint/parser": "^4.10.0",
-        "eslint": "^7.16.0",
-        "eslint-config-prettier": "^7.0.0",
-        "eslint-plugin-header": "^3.1.0",
-        "eslint-plugin-import": "^2.22.1",
-        "eslint-plugin-jsdoc": "^30.7.8",
-        "eslint-plugin-no-null": "^1.0.2",
-        "eslint-plugin-prettier": "^3.3.0",
-        "eslint-plugin-react": "^7.21.5",
- ```
- 
-Then change the **lint** and **lint:fix** commands to:
+
+If you want to use both TSLint and ESLint, you can leave the TSLint dependency in your **package.json** file and add the following dependencies in the **devDependencies** section.
+
 ```json
-        "lint": "yarn eslint src/**/*.{ts,tsx}",
-        "lint:fix": "yarn eslint src/**/*.{ts,tsx} --fix"
+"@msdyn365-commerce/eslint-config": "^1.27.7",
+"@typescript-eslint/eslint-plugin": "^4.2.0",
+"@typescript-eslint/eslint-plugin-tslint": "^4.10.0",
+"@typescript-eslint/parser": "^4.10.0",
+"eslint": "^7.16.0",
+"eslint-config-prettier": "^7.0.0",
+"eslint-plugin-header": "^3.1.0",
+"eslint-plugin-import": "^2.22.1",
+"eslint-plugin-jsdoc": "^30.7.8",
+"eslint-plugin-no-null": "^1.0.2",
+"eslint-plugin-prettier": "^3.3.0",
+"eslint-plugin-react": "^7.21.5",
 ```
- 
-And finally, change the **build** and **start** commands to:
+
+Then change the **lint** and **lint:fix** commands as shown here.
+
+```json
+"lint": "yarn eslint src/**/*.{ts,tsx}",
+"lint:fix": "yarn eslint src/**/*.{ts,tsx} --fix"
+```
+
+Finally, change the **build** and **start** commands as shown here.
+
 ```json 
-        "start": "yarn msdyn365b start local --use-eslint",
-        "build": "yarn msdyn365b build --use-eslint",
+"start": "yarn msdyn365b start local --use-eslint",
+"build": "yarn msdyn365b build --use-eslint",
 ```
- 
+
 #### Fix ESLint errors
 
-It is optional but recommended to install the ESLint extension for Visual Studio Code. This will help identify errors and warnings directly in your editor and will allow you to use quick actions to ignore linting errors with comments.
- 
-You may see new ESLint errors since all the TSLint errors that were suppressed with TSLint comments are popping back up. The ESLint errors can be fixed or disabled and you may choose to ignore the warnings.
+Although this step is optional, we recommend that you install the ESLint extension for Visual Studio Code. This extension helps identify errors and warnings directly in your editor. Additionally, quick actions let you use comments to ignore linting errors.
 
-If you use `–use-eslint` flags in your code, builds will fail on errors but will ignore warnings.
+You might receive new ESLint errors, because all the TSLint errors that were suppressed through TSLint comments are being shown again. The ESLint errors can be fixed or disabled, and you can choose to ignore the warnings.
+
+If you use `–use-eslint` flags in your code, builds will fail when errors occur. However, warnings will be ignored.
 
 #### Disable linting in code
 
-You can fix TSLint errors by replacing TSLint disable comments with ESLint disable comments. You may use file find and replace functionality if that is easier but be sure to verify the results.
+You can fix TSLint errors by replacing TSLint disable comments with ESLint disable comments. You can use file find and replace functionality if that approach is easier. However, be sure to verify the results.
 
-Helpful tips:
-- Similar to TSLint, you can disable ESLint warnings by using comments.
+Here are some helpful tips:
+
+- Like TSLint warnings, ESLint warnings can be disabled by using comments.
 - To disable the next line, use `// eslint-disable-next-line <rule1>, <rule2>...`.
-- To add a comment explaining why you are disabling a rule, you must add "--" (for example,  `// eslint-disable-next-line <rule1> -- Disabling this rule for reasons`).
-- To disable a rule for an entire file, you must use multiline comments (for example, `/* eslint-disable <rule1>, <rule2> */`). 
+- To add a comment that explains why you're disabling a rule, you must add two hyphens (--) (for example, `// eslint-disable-next-line <rule1> -- Disabling this rule for reasons`).
+- To disable a rule for a whole file, you must use multiline comments (for example, `/* eslint-disable <rule1>, <rule2> */`).
 
-The following table lists common TSLint-ESLint equivalents.
-TSLint rule	| ESLint rule
---- | --- |
-// tslint:disable-next-line:no-any	| // eslint-disable-next-line @typescript-eslint/no-explicit-any
-// tslint:disable:no-any	| /\* eslint-disable @typescript-eslint/no-explicit-any \*/
-// tslint:disable-next-line:cyclomatic-complexity	| // eslint-disable-next-line complexity
-// tslint:disable-next-line:no-empty	| // eslint-disable-next-line no-empty
+The following table lists common equivalents in TSLint and ESLint.
 
-#### Disable linting altogether during build time
+| TSLint rule | ESLint rule |
+|---|---|
+| // tslint:disable-next-line:no-any | // eslint-disable-next-line @typescript-eslint/no-explicit-any |
+| // tslint:disable:no-any | /\* eslint-disable @typescript-eslint/no-explicit-any \*/ |
+| // tslint:disable-next-line:cyclomatic-complexity | // eslint-disable-next-line complexity |
+| // tslint:disable-next-line:no-empty | // eslint-disable-next-line no-empty |
 
-If you want to disable linting altogether during build time, this can be done using the **--disable-linter** argument in the **package.json** build command as shown below:
+#### Completely disable linting during build time
+
+If you want to completely disable linting during build time, you can use the **--disable-linter** argument in the **package.json** build command, as shown here.
+
 ```json 
-        "build": "yarn msdyn365b build --disable-linter",
+"build": "yarn msdyn365b build --disable-linter",
 ```
 
 ### After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error.
