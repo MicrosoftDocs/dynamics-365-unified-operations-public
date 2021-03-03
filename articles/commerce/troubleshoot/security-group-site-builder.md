@@ -2,7 +2,7 @@
 # required metadata
 
 title: Can't configure security group for Commerce site builder during initial deployment
-description: This topic provides troubleshooting guidance for when the Azure Active Directory security group doesn't appear as a drop-down list option in the dialog box to create e-commerce components when deploying a new e-commerce tenant.
+description: This topic provides troubleshooting guidance for when the Azure Active Directory (Azure AD) security group for Commerce site builder doesn't appear as a dialog box drop-down list option when creating e-commerce components in Microsoft Dynamics Lifecycle Services (LCS) during initial deployment of a new e-commerce tenant.
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/24/2021
@@ -33,19 +33,19 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance for when the Azure Active Directory (Azure AD) security group doesn't appear as a drop-down list option in the dialog box to create e-commerce components when deploying a new e-commerce tenant.
+This topic provides troubleshooting guidance for when the Azure Active Directory (Azure AD) security group for Commerce site builder doesn't appear as a dialog box drop-down list option when creating e-commerce components in Microsoft Dynamics Lifecycle Services (LCS) during initial deployment of a new e-commerce tenant.
 
 ## Description
 
-When implementing the steps to deploy a new e-commerce tenant including the site builder component, the Azure AD Security Group doesn't appear as a dialog box drop-down list option to create the e-commerce components.
+When implementing the steps to deploy a new e-commerce tenant including the Commerce site builder component, the Azure AD security group doesn't appear as an LCS dialog box drop-down list option when creating the e-commerce components.
 
 ## Resolution
 
 ### Provision the e-commerce site with a user in the correct tenant
 
-1. Go to the Azure portal at:[https://portal.azure.com.](https://portal.azure.com/).
-1. Follow the instructions to [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) under the tenant that the Microsoft Dynamics Lifecycle Services (LCS) project for your e-commerce site was provisioned for.
-1. Go to the LCS portal at [http://lcs.dynamics.com](https://lcs.dynamics.com/) and sign in with an account that shares the same tenant as the AAD security group that you just created. The account must have access to view the AAD security group.
+1. Go to the [Azure portal](https://portal.azure.com/).
+1. Follow the instructions to [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) under the tenant that the LCS project for your e-commerce site was provisioned for.
+1. Go to the [LCS portal](https://lcs.dynamics.com/) and sign in with an account that shares the same tenant as the Azure AD security group that you just created. The account must have access to view the AAD security group.
 1. Navigate through the setup steps to configure the e-commerce site. The security group should now be visible in the dialog box when provisioning the e-commerce components.
 
 > [!NOTE]
