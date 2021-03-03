@@ -45,13 +45,16 @@ The personal information you can edit includes:
 - Payment method
 - Image used in Human Resources
 
+>[!NOTE]
+>You might not be able to edit certain types of personal information, such as business contact details. For more information, see [Restrict editing of personal information](hr-employee-self-service-restrict-editing.md).
+
 Parameters set in the global address book determine the roles that can see your personal information.
 
 1. In Human Resources, select **Employee self service**.
 
 2. Select **Edit personal details**.
 
-3. To change your address, select the **Addresses** tab. Changes you make appear in the **Personnel management** workspace to alert HR. 
+3. To change your address, select the **Addresses** tab. Changes you make appear in the **Personnel management** workspace to alert HR.
 
     - To add a new address, select **Add**.
     - To edit an existing address, select the address and then select **Edit**.
@@ -64,9 +67,6 @@ Parameters set in the global address book determine the roles that can see your 
     - To add new contact information, select **Add**. Edit the fields as necessary.
     - To edit existing contact information, select the item and then select **Edit**. Edit the fields as necessary.
     - To set a contact detail as private, select the item, select **Advanced**, and then set the **Private** toggle to **Yes**. Select **OK**.
-
-   >[!NOTE]
-   >You might not be able to edit certain types of contact details, such as business contact details. For more information, see [Restrict editing of personal information](hr-employee-self-service-restrict-editing.md).
   
 5. To change your personal contacts, select the **Personal contacts** tab. You can designate emergency contacts, beneficiaries, and dependents. A contact can be a person or organization. The **Benefits management** feature uses personal contact information. For more information, see [Configure personal contact eligibility options](hr-benefits-setup-contact-eligibility-options.md).
 
