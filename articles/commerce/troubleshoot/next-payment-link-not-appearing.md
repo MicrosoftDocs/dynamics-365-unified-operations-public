@@ -57,6 +57,6 @@ To check that the Dynamics 365 Payment Connector for Adyen is configured correct
 
 [Payment module](../payment-module.md)
 
-[Saving online payment instruments with the Adyen connector](../adyen-connector-listpi.md)
+[Saving online payment instruments with the Adyen connector](../dev-itpro/adyen-connector-listPI.md)
 
 
