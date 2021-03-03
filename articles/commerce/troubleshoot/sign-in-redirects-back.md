@@ -45,7 +45,7 @@ After configuring a new Azure Active Directory (Azure AD) business-to-consumer (
 
 To ensure that the "Reply" URL is configured correctly in the AAD B2C application, follow these steps.
 
-1. Go to the Azure portal at https://portal.azure.com](https://portal.azure.com/).
+1. Go to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 1. Select the AAD B2C application that you created for your site access.
 1. Select the application you created during the AAD B2C setup.
 1. Under the list for **Reply URL**, confirm that you have entries for both the site domain and the e-commerce-generated URLs, as shown in the following example image.
@@ -57,7 +57,7 @@ To ensure that the "Reply" URL is configured correctly in the AAD B2C applicatio
 
 ## Additional resources
 
-[Register a web application in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga#register-a-web-application)
+[Register a web application in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga#register-a-web-application)
 
 [Set up a B2C tenant in Commerce](../set-up-b2c-tenant.md)
 
