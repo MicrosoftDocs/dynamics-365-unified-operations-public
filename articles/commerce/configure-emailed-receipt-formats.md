@@ -5,7 +5,7 @@ title: Configure receipt emails to use custom layouts and templates
 description: This topic describes how to configure receipt emails so that they use custom layouts and templates in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: 
-ms.date: 03/01/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
