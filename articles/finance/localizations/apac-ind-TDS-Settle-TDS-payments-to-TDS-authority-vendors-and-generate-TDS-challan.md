@@ -49,8 +49,8 @@ Begin by opening the **Vendor payment journal** page (**Accounts payable > Payme
 - The TDS transactions with **Company** as the nature of assessee are displayed as one transaction line.
 
 - The TDS transactions with **HUF**, **Firm**, **Individual**, **AOP**, **BOI**, **Local** **authority**, or **Others** as the nature of assessee are displayed as one transaction line.
-- In the **Amount** field, the total TDS amount that is due to be paid to the TDS authority vendor is displayed.
 
+- In the **Amount** field, the total TDS amount that is due to be paid to the TDS authority vendor is displayed.
 
 4. Click the **Withholding tax transactions** button to view the different TDS transactions that are included for the settlement record. View the split of each TDS transaction that has been included in the settlement process for the settlement period in this page.
 
@@ -85,19 +85,18 @@ Begin by opening the **Vendor payment journal** page (**Accounts payable > Payme
 
 10. In the **Amount** field, view the TDS amount calculated in base currency for the TDS tax component. In the **Accumulated amount** field, view the total TDS amount calculated for the TDS tax component for all settled transactions.
 
-11. On the **Amount** tab, view the TDS amount calculated for the TDS tax component in default currency and secondary currency under the **Default currency** field group and **Secondary currency** field group. Close the **Withholding tax components** page.
+11. In the **Amount** tab, view the TDS amount calculated for the TDS tax component in default currency and secondary currency under the **Default currency** field group and **Secondary currency** field group. Close the **Withholding tax components** page.
 
 12. In the **Amount** field in the **Open transaction editing** page, the total amount to settle to the TDS authority vendor for the settlement period is updated. Select the **Mark** check box to select the transactions of different TDS settlement periods to settle to the TDS authority vendor. Close the **Open transaction editing** page.
 
 >   [!Note]
->
->   If only few transactions are selected  for settlement in the **Withholding tax transactions** page,  the total TDS amount of the selected transactions is updated in the **Correction**  field in the **Open transaction editing** page. The  correction amount is updated to the journal line in the **Journal voucher**  page the **Open transaction editing** page is closed.  
+>   If only a few transactions are selected for settlement on the **Withholding tax transactions** page,  the total TDS amount of the selected transactions is updated in the **Correction**  field in the **Open transaction editing** page. The  correction amount is updated on the journal line in the **Journal voucher** page and the **Open transaction editing** page is closed.  
 
-13. In the **Debit** field in the **Journal voucher** page, view the total amount to pay to the TDS authority vendor . Enter the offset account details. If TDS transactions have different Tax Account Numbers (TAN, journal lines are created per TAN in the **Journal voucher** page.
+13. In the **Debit** field in the **Journal voucher** page, view the total amount to pay to the TDS authority vendor. Enter the offset account details. If TDS transactions have different Tax Account Numbers (TAN), journal lines are created per TAN in the **Journal voucher** page.
 
-14. On the **Payment** **fee** tab, in the **Fee** **ID** field, select a fee ID with **Interest** or **Others** type of fee type to charge payment fee for delayed payments made to the TDS authority vendor.
+14. On the **Payment fee** tab, in the **Fee** **ID** field, select a fee ID with **Interest** or **Others** type of fee type to charge payment fee for delayed payments made to the TDS authority vendor.
 
-15. Click the **Tax** **information** tab. Under the **Company** **information** field group, in the **Name** field, view the company name. Under the **Withholding tax** field group, in the **Tax Account Number (TAN)** field, view the TAN attached to the transaction line. 
+15. Click the **Tax** **information** tab. Under the **Company information** field group, in the **Name** field, view the company name. Under the **Withholding tax** field group, in the **Tax Account Number (TAN)** field, view the TAN attached to the transaction line. 
 
 16. Validate and post the journal.
 
@@ -113,16 +112,11 @@ Begin by opening the **Vendor payment journal** page (**Accounts payable > Payme
 
 22. Close the page. 
 
-
-
 **Example**:
 
-The period 04/01/2009 is settled for the TDS component group-Rent using the periodic TDS settlement process. The total TDS amount of 141625.00 is posted to TDS vendor authority account for the TDS settlement period. View this amount in the **Amount** field in the **Open transaction editing** page for the TDS authority vendor.
-
- 
+Suppose that the period 04/01/2009 is settled for the TDS component group-Rent using the periodic TDS settlement process. The total TDS amount of 141625.00 is posted to TDS vendor authority account for the TDS settlement period. You can view this amount in the **Amount** field in the **Open transaction editing** page for the TDS authority vendor.
 
 If the **Withholding tax transactions** button is clicked to view the different TDS transactions settled for the period, the following information is displayed:
-
  
 
 | TDS  amount |
@@ -135,11 +129,7 @@ If the **Withholding tax transactions** button is clicked to view the different 
 | 16995.00    |
 | 11330.00    |
 
- 
-
-For a specific TDS amount, click the **Withholding tax components** button to view the TDS calculated per TDS tax component for a specific TDS tax code. When the **Withholding tax components** button is clicked for the TDS amount 16995.00, the tax amount calculated per component for the transaction is displayed as follows:
-
- 
+For a specific TDS amount, click the **Withholding tax components** button to view the TDS calculated per TDS tax component for a specific TDS tax code. When you click the **Withholding tax components** button for the TDS amount 16995.00, the tax amount calculated per component for the transaction is displayed as follows:
 
 | Tax component | Amount   | Accumulated amount |
 | ------------- | -------- | ------------------ |
@@ -150,7 +140,7 @@ For a specific TDS amount, click the **Withholding tax components** button to vi
 
  
 
-If only the TDS amounts 16995.00, 22660.00, and 28325.00 are selected for settlement in the **Withholding tax transactions** page, the total amount for settlement is displayed as 67980.00 in the **Correction** field in the **Open transaction editing** page. If this transaction is marked for settlement and the **Open transaction editing** page is closed, the amount 67980.00 is displayed in the **Debit** field in the **Journal voucher** page. Now, post the journal and generate the TDS challan.
+If only the TDS amounts 16995.00, 22660.00, and 28325.00 are selected for settlement in the **Withholding tax transactions** page, the total amount for settlement is displayed as 67980.00 in the **Correction** field in the **Open transaction editing** page. If this transaction is marked for settlement and the **Open transaction editing** page is closed, the amount 67980.00 is displayed in the **Debit** field in the **Journal voucher** page. Now, you can post the journal and generate the TDS challan.
 
 ### **Adjustment of Advance Payments made to TDS Authority Vendors**
 
