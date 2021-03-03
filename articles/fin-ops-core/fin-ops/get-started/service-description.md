@@ -75,7 +75,8 @@ Microsoft configures production tenants sized to handle the transaction volumes 
 
 To ensure that an implementation is configured for high performance, Customers must:
 
--	Provide accurate usage information for the Finance and Supply Chain Management implementation through the LCS Subscription Estimator; • Build and test extensions for performance and scale; and 
+-	Provide accurate usage information for the Finance and Supply Chain Management implementation through the LCS Subscription Estimator; 
+- Build and test extensions for performance and scale; and 
 -	Test data configurations appropriately for performance. 
 
 ## Service operations
