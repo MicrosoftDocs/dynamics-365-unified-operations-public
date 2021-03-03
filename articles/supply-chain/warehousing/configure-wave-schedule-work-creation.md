@@ -49,6 +49,17 @@ Before you can use the *Schedule work creation* feature, it must be turned on in
 
 > [!NOTE]
 > The *Organization-wide work blocking* feature must be enabled before you can enable *Schedule work creation*.
+> 
+> In addition to "Schedule work creation" feature the following defaulting will occur enabling the “Organization-wide Schedule work creation wave method” feature across all legal entities
+-	Default waves to be processed in batches and wait for lock will be set to a default value of 60,000 ms.
+-	Task configuration for the "Schedule work creation" wave process method will be created for all warehouses that have "Use warehouse management processes" enabled.
+
+-	All new warehouses with "Use warehouse management processes" enabled will have the "Schedule work creation" method configured to run in parallel by default. Existing warehouses for which you change "Use warehouse management processes" from "no" to "yes" will also run this method in parallel by default. 
+
+-	All the new wave templates that will be created will have the "Schedule work creation" wave method instead of the "Create Work" method.
+Wave templates that have "Wave template type" set to "Shipping" and "Template status" set to "Valid" will have the "Create work" method replaced by the "Schedule work creation" method. However, wave templates from legal entities where the "Create work" method can be repeatable will not be modified.
+
+-	Other than this, the existing task and wave processing configurations will be kept that are already configured to process waves in batches, and for all warehouses that are already configured to use the "Schedule work creation" method in parallel. 
 
 ### Manually enable batch processing of waves
 
