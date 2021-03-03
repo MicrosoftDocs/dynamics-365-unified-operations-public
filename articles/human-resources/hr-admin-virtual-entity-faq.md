@@ -94,4 +94,12 @@ If there are no columns added in the quick find view for the table, then the sea
 
 Yes, custom fields are supported on virtual tables. You must first add the custom field to the data entity related to the virtual table. You can then generate or refresh the virtual table to include the custom field in its schema. For more information on adding custom fields to data entities, see [Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields?toc=/dynamics365/human-resources/toc.json#exposing-custom-fields-on-data-entities).
 
+### What do I do if I get an error that the Dynamics365 for Talent user was not found?
+
+When setting up virtual tables in the **Microsoft Dataverse integration** page of the Human Resources application, you may see an error message in the Action center stating the following:
+
+`User Dynamics365 for Talent was not found in Finance and Operations. Please ensure this user exists.`
+
+This message indicates that permissions haven't been granted in the Human Resources application to the app set up for virtual tables. This can be resolved by completing the documented steps to [Grant app permissions in Human Resources](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities#grant-app-permissions-in-human-resources).
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
