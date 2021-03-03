@@ -55,8 +55,6 @@ The following features are included in this release. Some of the listed features
 
 - Updates to the global address book<br>- For more information, see [Address books FAQ](../../fin-ops/organization-administration/qa-address-books.md).
 
-- [Title of the feature in the Release Plans](Link URL of content in the Release Plans.)<br>- For more information, see [Title of article that has more info](URL of Docs article).
-
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 ## Additional resources
