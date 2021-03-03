@@ -163,6 +163,22 @@ The following table describes some typical scenarios and activities for the Serv
 |Manage Non-Production Instances with LCS |  | X | 	 
 |Monitor Non-Production Instances |  |X  |
 
+### Service update strategy and maintenance windows
+
+Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md). All versions of Finance and Supply Chain Management will use the new Microsoft Modern Lifecycle Policy. The Modern Lifecycle covers products that are serviced and supported continuously. 
+
+[Service updates](../../dev-itpro/lifecycle-services/oneversion-overview.md) to the Finance and Supply Chain Management application and platform are handled as follows. 
+
+-	**Customers that are on version 8.1 and higher**: The application and the platform components are released as a single cumulative update called deployable package for customers to uptake. Microsoft notifies the customer when a new service update is made available. Starting April 2019, Microsoft will update your environments to the latest released update by Microsoft within the maintenance window configured in your LCS project. Unless the service update is paused, the environment will be updated to the latest release. Customers have the option to take the update outside of the scheduled maintenance window. We recommend customers to stay current for a better service experience. 
+
+-	**Customers that are on version 8.0 and lower**: The application updates are released as granular X++ updates while the platform is released as a cumulative binary update. Microsoft requires each customer to be current on the latest Finance and Supply Chain Management platform update. Starting April 2018, Microsoft will update your environments to the latest release of the platform within the maintenance window configured in your LCS project. Customers can also get the service update via LCS and can apply it to their environments on their own prior to Microsoft initiating the service update. 
+
+  X++ updates must be applied on a development environment before they can be deployed on a sandbox, staging, or production environment. Binary updates can be applied directly on any environment but must be validated on the Customer’s sandbox environment before being promoted to a production environment. Refer to Table 4 for more detailed instructions. 
+
+Please note that some service updates may be mandatory and require no consent. To help protect our Customers and the service, Microsoft may apply critical security updates directly to a Customer’s Finance and Operations production environment. 
+Software lifecycle policy. 
+ 
+For more information see, the Finance and Supply Chain Management [update FAQ](one-version.md). 
 
 
 
