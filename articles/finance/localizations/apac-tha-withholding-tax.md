@@ -80,7 +80,7 @@ Generate the **Withholding tax certificate** report after you've settled payment
 
 When you submit the **Withholding tax (Por Ngor Dor 53)** or **Withholding tax (Por Ngor Dor 3)** report, and you pay the withheld tax to the Revenue Department of Thailand, the department issues a receipt number. Enter this receipt number in the **Receipt number** field on the **Posted withholding tax** page. Then, at the end of the month, generate the **Withholding tax special** report and submit it to the Revenue Department of Thailand. This report is generated in a format that is specified by the Revenue Department of Thailand.
 
-### Withholding tax Por Ngor Dor 53** and Por Ngor Dor 3)* electronic formats
+### Withholding tax Por Ngor Dor 53 and Por Ngor Dor 3 electronic formats
 
 Taxpayers can submit Por Ngor Dor 53 and Por Ngor Dor 3 online via an e-Filing system on the Revenue Department’s website or RD Smart Tax Application. The withholding tax reporting functionality is enhanced and allows users to generate the content in electronic formats to be imported in Rdinet tax application. 
 
