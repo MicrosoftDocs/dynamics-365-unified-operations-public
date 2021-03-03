@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: "Payment type must be credit card" error on Sales order page
+title: \"Payment type must be credit card\" error on Sales order page
 description: This topic provides troubleshooting guidance for when an error message is displayed on the sales order page after synchronizing an order. 
 author: Reza-Assadi
 manager: AnnBe
