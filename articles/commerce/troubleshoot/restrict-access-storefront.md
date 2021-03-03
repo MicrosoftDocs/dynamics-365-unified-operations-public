@@ -62,7 +62,7 @@ To block creation of new users in Azure AD, follow these steps.
 1. Select **User flows** in the left navigation pane.
 1. At the top of the **User Flows** page, select **+ New user flow**.
 1. On the **Select a user flow type** page, select **Preview**.
-1. Select **Sign in v2** in the middle of the page. Then follow the steps in [Set up a B2C tenant in Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-b2c-tenant) to configure it as your standard user flow for Azure AD B2C for your site during testing/development.
+1. Select **Sign in v2** in the middle of the page. Then follow the steps in [Set up a B2C tenant in Commerce](https://docs.microsoft.com/dynamics365/commerce/set-up-b2c-tenant) to configure it as your standard user flow for Azure AD B2C for your site during testing/development.
 
 ## Additional resources
 
