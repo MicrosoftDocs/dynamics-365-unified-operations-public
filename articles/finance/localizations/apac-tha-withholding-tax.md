@@ -104,7 +104,7 @@ After you've finished downloading the ER configurations from Lifecycle Services 
 
 #### Set up application-specific parameters
 
-The Application-specific parameters option let the users to establish the criteria of how the tax transactions will be classified and presented in the different forms .  When the report is generated depending on the configuration of **withholding tax item group** and **type of vendor account**,  the process will generate the format PND 53 or format PND 3. 
+The Application-specific parameters option let the users to establish the criteria of how the tax transactions will be classified and presented in the different forms. When the report is generated depending on the configuration of **withholding tax item group** and **type of vendor account**,  the process will generate the format PND 53 or format PND 3. 
 
 This an example of suggested setup
 ![Configuration](media/apac-th-wht-pndformats-setup1.png)
@@ -115,7 +115,7 @@ Complete the following steps to setup the different lookups used in the generati
 1. Select the current version. On the Lookups FastTab, select the lookup name for example **$PNDFormatTypeLookup**. This lookup identifies the list of reports types supported in Thailand localization.
 1. On the **Conditions** FastTab, select **Add** and in the new line in the Lookup result column, select the related line .
 1. In the **Withholding tax item group** column, select the related code  used to identify the tax item group in the related format type.
-	1. In the **Name**  column, select the type of vendor account 
+1. In the **Name**  column, select the type of vendor account 
 1. Repeat steps 3-5 for all available lookups.
 1. Select **Add** again, and then follow these steps to include the final record line:
    1. In the Lookup result column, select **Not applicable**. 
