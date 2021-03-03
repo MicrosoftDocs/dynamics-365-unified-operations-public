@@ -73,32 +73,24 @@ Use the **Journal voucher** page to enter and post payments that you receive fro
 Performance awards that are given to vendors are taxable and can be withheld by a legal entity. You can make withholding tax payments on behalf of the vendor. In this case, the tax that you pay is treated as an expense for the company. This process is referred to as payment gross-up. You can generate the withholding tax reports after you post a payment journal for a vendor.
 
 ## Generate withholding tax reports
+
 Generate the **Withholding tax certificate** report after you've settled payments and before you post a vendor payment journal. On the **Withholding tax slip** page, select to generate the **Withholding tax certificate** report. You can also generate the **Withholding tax (Por Ngor Dor 53)**, **Withholding tax (Por Ngor Dor 3)**, **Withholding tax special**, **Withholding tax accounts receivable journal**, and **Withholding tax accounts payable journal** reports after you post a payment journal. You can mark transactions that should be excluded from withholding tax reports.
 
 ### Generate the Withholding tax special report
 
 When you submit the **Withholding tax (Por Ngor Dor 53)** or **Withholding tax (Por Ngor Dor 3)** report, and you pay the withheld tax to the Revenue Department of Thailand, the department issues a receipt number. Enter this receipt number in the **Receipt number** field on the **Posted withholding tax** page. Then, at the end of the month, generate the **Withholding tax special** report and submit it to the Revenue Department of Thailand. This report is generated in a format that is specified by the Revenue Department of Thailand.
 
-### Withholding (Por Ngor Dor 53)** and **Withholding tax (Por Ngor Dor 3)** files format
+### Withholding tax Por Ngor Dor 53** and Por Ngor Dor 3)* electronic formats
 
 Taxpayers can submit Por Ngor Dor 53 and Por Ngor Dor 3 online via an e-Filing system on the Revenue Department’s website or RD Smart Tax Application. The withholding tax reporting functionality is enhanced and allows users to generate the content in electronic formats to be imported in Rdinet tax application. 
 
-In the **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
-
-- PND formats Online (TH)
-
-> [!NOTE]
-> The formats above are based on **Tax declaration model** and use **Tax declaration model mapping**. These additional configurations will be automatically imported.
-
-For more information about how to import Electronic Reporting configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
-
 #### Download Electronic reporting configurations
 
-The implementation of the VAT return form for Bahrain is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+The implementation of withholding PND electronic formats for Thailand is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 For production and user acceptance testing (UAT) environments, follow the instructions [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-To generate the Withholding declarations in a Egypt legal entity, you need to upload the following configurations:
+The electronic format is generated as pipe delimited format file and in the **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
 
 - Tax declaration model.version.82.xml or later version
 - Tax declaration model mapping.version.82.133.xml or a later version
@@ -112,7 +104,7 @@ After you've finished downloading the ER configurations from Lifecycle Services 
 
 #### Set up application-specific parameters
 
-The Application-specific parameters option let the users to establish the criteria of how the tax transactions will be classified and presented in the different forms .  When the report is generated depending on the configuration of **withholding tax item group ** and type of **vendor account**., the process will generate the format PND 53 or format PND 3. 
+The Application-specific parameters option let the users to establish the criteria of how the tax transactions will be classified and presented in the different forms .  When the report is generated depending on the configuration of **withholding tax item group** and **type of vendor account**,  the process will generate the format PND 53 or format PND 3. 
 
 This an example of suggested setup
 ![Configuration](media/apac-th-wht-pndformats-setup1.png)
@@ -132,7 +124,7 @@ Complete the following steps to setup the different lookups used in the generati
 > [!NOTE]
 > By adding this last record **Not applicable**, you define the following rule: When the **Withholding tax item group**  and **Name** that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the Withholding format type. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.
 
-#### Generate a Withholding PND files
+#### Generate a withholding PND electronic file
 Complete the following steps to generate the tax declaration report.
 
 1. Go to **Tax > Declarations** > **Withholding tax** > **Generate PND electronic formats*.
