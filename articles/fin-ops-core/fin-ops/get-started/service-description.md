@@ -133,36 +133,35 @@ The following table describes some typical scenarios and activities for the Serv
 |Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  | X|
 |Provision all Production Instances and Non-Production Instances | X |  | 	 
 |Validate the deployed Production Instances and Non-Production Instances |  |  X|	 
-|Service updates 	|  |  |
-|Microsoft applies service updates to a designated Non-Production and |  |  |
-|Production Instances 	|  |  |
-|Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  |  |	 	
-|Request extension updates to be applied to the Production Instance 	 	|  |  |
-|Create code and data backup for Production Instance before applying any updates 		|  |  | 
-|In case of any failure, roll back Production instance to code and data backup 	|  |  | 	 
-|Data management (Backup, restore, and update) 	|  |  |
-|Backup database  	|  |  |
-|Determine HA and disaster recovery plan |  |  |	 	 
-|Monitor Production Instance database performance 	|  |  |
-|Tuning the Production Instance database for performance  |  |  |	
-|Initiate copy of Production Instance database to Non-Production Instance 	 |  |  |	
-|Update infrastructure 	|  |  |
-|Schedule regular infrastructure updates |  |  |		 
-|Scale up and down (Users, storage, instances) 	|  |  |
-|Purchase additional users and Non-Production add-ons |  |  |	 	
-|Changes in usage must be updated in the LCS’ Subscription Estimator tool|  |  | 	  
-|Report any significant performance issues impacting usage of the Service |  |  |	 	
-|Proactively manage the resources needed for the Service applicable Service |  |  |	 	 
-|Investigate and troubleshoot Incidents 	|  |  |
-|Security (User access) 	|  |  |
-|Provide user access to the Service 	|  |  | 
-|Provide LCS project access for managing and operating instances deployed through LCS 	|  |  |
-|Monitor Production Instance 	|  |  |
-|Monitor Production Instances 24x7 	|  |  |
-|Notify Customer proactively of incidents with the Production Instance |  |  |		 
-|Manage and Monitor Non-Production Instances |  |  |	
-|Manage Non-Production Instances with LCS |  |  | 	 
-|Monitor Non-Production Instances |  |  |
+|**Service updates** 	 |
+|Microsoft applies service updates to a designated Non-Production and |X  | X |
+|Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  | X |	 	
+|Request extension updates to be applied to the Production Instance 	 	| |  X|
+|Create code and data backup for Production Instance before applying any updates 		|X  |  | 
+|In case of any failure, roll back Production instance to code and data backup 	|X  |  | 	 
+|**Data management (Backup, restore, and update)** |
+|Backup database  	|X  |  |
+|Determine HA and disaster recovery plan |X  |  |	 	 
+|Monitor Production Instance database performance 	|X  | X |
+|Tuning the Production Instance database for performance  |X  |X  |	
+|Initiate copy of Production Instance database to Non-Production Instance 	 |  |X  |	
+|**Update infrastructure** 	 |
+|Schedule regular infrastructure updates |X  |  |		 
+|**Scale up and down (Users, storage, instances)**	 |
+|Purchase additional users and Non-Production add-ons |  | X |	 	
+|Changes in usage must be updated in the LCS’ Subscription Estimator tool|  |X  | 	  
+|Report any significant performance issues impacting usage of the Service |  | X |	 	
+|Proactively manage the resources needed for the Service applicable Service |X  |  |	 	 
+|Investigate and troubleshoot Incidents 	|X  |X  |
+|**Security (User access)** 	|
+|Provide user access to the Service 	|  |X  | 
+|Provide LCS project access for managing and operating instances deployed through LCS 	|  | X |
+|**Monitor Production Instance** 	  |
+|Monitor Production Instances 24x7 	| X | X |
+|Notify Customer proactively of incidents with the Production Instance |X  |  |		 
+|**Manage and Monitor Non-Production Instances**   |	
+|Manage Non-Production Instances with LCS |  | X | 	 
+|Monitor Non-Production Instances |  |X  |
 
 
 
