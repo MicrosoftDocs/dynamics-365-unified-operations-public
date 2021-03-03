@@ -2,7 +2,7 @@
 # required metadata
 
 title: User interface control styles for production floor execution
-description: The topic describes how to configure form controls so that the default Production Floor Execution styles are applied to the controls.
+description: The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
 author: inkharki
 manager: tfehr
 ms.date: 02/22/2021
@@ -26,152 +26,157 @@ ms.dyn365.ops.version: Release 10.0.15
 
 [!include [preview banner](../includes/preview-banner.md)]
 
-The topic describes how to configure form controls so that the default Production Floor Execution styles are applied to the controls.
+The topic explains how to configure form controls so that the default Production Floor Execution styles are applied to them.
 
 ## Grid
 
-Styles are applied automatically. No specific configuration is required.
+Styles are automatically applied. No specific configuration is required.
 
 ## Card view
 
-To apply styles to card view controls:
+Styles can be applied to card view controls only if the following requirements are met:
 
-+ Each card view must be contained in a form group.
-+ The group name must start with **CardGroup**, for example, **CardGroupJobsView**.
++ Each card view is contained in a form group.
++ The group name starts with **CardGroup** (for example, **CardGroupJobsView**).
 
-A card view without controls inside:
+The following illustration shows a card view that has no controls inside it.
 
-![Card without elements](media/pfe-styles-empty-card.png)
+![Card view without elements](media/pfe-styles-empty-card.png)
 
-Two card views with controls inside:
+The following illustrations show card views that have controls inside them.
 
-![Card with elements showing Hz](media/pfe-styles-elements.png)
+![Card with elements that show Hz](media/pfe-styles-elements.png)
 
-![Card with elements for maintenance request](media/pfe-styles-elements-maintenance.png)
+![Card with elements for a maintenance request](media/pfe-styles-elements-maintenance.png)
 
 ## Business card
 
-To apply styles to business card controls:
+Styles can be applied to business card controls only if the following requirements are met:
 
-+ Each business card must be contained in a form group.
-+ The group name must start with **BusinessCardGroup**, for example, **BusinessCardGroupJobsList**.
-+ Set these properties on the business card:
++ Each business card is contained in a form group.
++ The group name starts with **BusinessCardGroup** (for example, **BusinessCardGroupJobsList**).
 
-    - **Style**: **list**.
-    - **Extended style**: **cardList**.
-    - **Multi Select**: **No**.
-    - **Show Col Labels**: **No**.
+Set the following properties on the business card:
+
+- **Style**: **list**
+- **Extended style**: **cardList**
+- **Multi Select**: **No**
+- **Show Col Labels**: **No**
 
 ![Business card](media/pfe-styles-business-card.png)
 
 ## Radio button
 
-To apply styles to radio buttons:
+Styles can be applied to radio buttons only if the following requirements are met:
 
-+ Each radio button must be contained in a form group.
-+ The group name must start with **RadioTextBelow** or **RadioTextRight**, depending on where you want the text to appear.
-+ Set these properties on the radio button:
++ Each radio button is contained in a form group.
++ The group name starts with **RadioTextBelow** or **RadioTextRight**, depending on where you want the text to appear.
 
-    - **Toggle button**: **Check**.
-    - **Toggle value**: **On** if radio button should be selected; otherwise, **Off**.
+Set the following properties on the radio button:
 
-An example with the text below the radio button:
+- **Toggle button**: **Check**
+- **Toggle value**: **On** if the radio button should be selected; otherwise, **Off**
+
+The following illustration shows an example where the text appears below the radio buttons.
 
 ![Radio buttons with text below](media/pfe-styles-radio-text-below.png)
 
-An example with the text to the right of the radio button:
+The following illustration shows an example where the text appears to the right of the radio buttons.
 
-![Radio buttons with text right](media/pfe-styles-radio-text-right.png)
+![Radio buttons with text to the right](media/pfe-styles-radio-text-right.png)
 
-### Internet Explorer
+### Radio buttons in Internet Explorer
 
-Radio button styles aren't supported in Internet Explorer. This screenshot shows radio buttons in Internet Explorer:
+Radio button styles aren't supported in Internet Explorer. The following illustration shows what radio buttons look like in Internet Explorer.
 
 ![Radio buttons in Internet Explorer](media/pfe-styles-browser.png)
 
 ## Buttons
 
-To apply styles to buttons:
+Styles can be applied to buttons only if the following requirements are met:
 
-+ Each group of buttons must be contained in a form group. All the buttons in the group will have the same style.
-+ There are no requirements on naming the group.
-+ Set these properties on the buttons:
++ Each group of buttons is contained in a form group. All the buttons in the group will have the same style.
++ There are no requirements about the name of the group.
 
-    - **Button Display**: **TextWithImageLeft**.
-    - **Normal Image**: Can't be blank. For example, use **CoffeeScript**.
-    - **Text**: Can't be blank. For example, use **Start Break**.
-    - **Width**: **Auto**.
-    - **Height**: **Auto**.
+Set the following properties on the buttons:
+
+- **Button Display**: **TextWithImageLeft**.
+- **Normal Image**: This property can't be blank. For example, use **CoffeeScript**.
+- **Text**: This property can't be blank. For example, use **Start Break**.
+- **Width**: **Auto**.
+- **Height**: **Auto**.
 
 ### Primary button
 
-To apply styles to a primary button:
+Styles can be applied to a primary button only if the following requirements are met:
 
-+ The button must be contained in a form group.
-+ The group name must start with **DefaultButtonGroup** or  **PrimaryButtonGroup**, for example, **DefaultButtonGroup10**.
++ The button is contained in a form group.
++ The group name starts with **DefaultButtonGroup** or **PrimaryButtonGroup** (for example, **DefaultButtonGroup10**).
 
-![Primary button appearance](media/pfe-styles-first.png)
+![Primary button](media/pfe-styles-first.png)
 
 ### Secondary button
 
-To apply styles to a secondary button:
+Styles can be applied to a secondary button only if the following requirements are met:
 
-+ The button must be contained in a form group.
-+ The group must be named **Right panel** or the name must start with **SecondaryButtonGroup**.
++ The button is contained in a form group.
++ The group is named **Right panel**, or the group name starts with **SecondaryButtonGroup**.
 
-![Secondary button appearance](media/pfe-styles-second.png)
+![Secondary button](media/pfe-styles-second.png)
 
 ### Third-group button
 
-To apply styles to a third-group button:
+Styles can be applied to a third-group button only if the following requirements are met:
 
-+ The button must be contained in a form group.
-+ The group must be named **Left panel** or the name must start with **ThirdButtonGroup**.
++ The button is contained in a form group.
++ The group is named **Left panel**, or the group name starts with **ThirdButtonGroup**.
 
-![Third-group button appearance](media/pfe-styles-third.png)
+![Third-group button](media/pfe-styles-third.png)
 
 ### Fourth-group button
 
-To apply styles to a fourth-group button:
+Styles can be applied to a fourth-group button only if the following requirements are met:
 
-+ The button must be contained in a form group.
-+ The group name must start with **FourthButtonGroup**.
-+ Set these properties on the button:
++ The button is contained in a form group.
++ The group name starts with **FourthButtonGroup**.
 
-    - **Button Display**: **TextOnly**.
-    - **Normal Image**: Must be blank.
-    - **Text**: Can't be blank. For example, it can be **View** or **Edit**.
-    - **Width**: **Auto**.
-    - **Height**: **Auto**.
+Set the following properties on the button:
 
-![Fourth-group button appearance](media/pfe-styles-fourth.png)
+- **Button Display**: **TextOnly**.
+- **Normal Image**: This property must be blank.
+- **Text**: This property can't be blank. For example, use **View** or **Edit**.
+- **Width**: **Auto**.
+- **Height**: **Auto**.
+
+![Fourth-group button](media/pfe-styles-fourth.png)
 
 ### Flat button
 
-To apply styles to a flat button:
+Styles can be applied to a flat button only if the following requirements are met:
 
-+ The button must be contained in a form group.
-+ The group name must start with **FlatButtonGroup**.
-+ Set these properties on the button:
++ The button is contained in a form group.
++ The group name starts with **FlatButtonGroup**.
 
-    - **Button Display**: **ImageOnly**.
-    - **Normal Image**: Can't be blank. For example, use **CoffeeScript**.
-    - **Text**: Must be blank.
-    - **Width**: **Auto**.
-    - **Height**: **Auto**.
+Set the following properties on the button:
 
-![Flat button appearance](media/pfe-styles-flat-button.png)
+- **Button Display**: **ImageOnly**.
+- **Normal Image**: This property can't be blank. For example, use **CoffeeScript**.
+- **Text**: This property must be blank.
+- **Width**: **Auto**.
+- **Height**: **Auto**.
+
+![Flat button](media/pfe-styles-flat-button.png)
 
 ## Combo box
 
-A combo box is a combination of three controls, an input control, a button to clear the input control, and a button for search. Requirements for combo boxes:
+A combo box is a combination of three controls: an input control, a button that clears the input control, and a button that runs a search.
 
-To apply styles to a combo box:
+Styles can be applied to a combo box only if the following requirements are met:
 
-+ The combo box must be contained in a form group.
-+ The group name must start with **Combobox**.
-+ Inside the group, the first control must be an **AxFormStringControl** control. This control displays of the current value, and is where the user enters the required value.
-+ The second control must be a **CommonButton** control. The name must start with **ClearButton**. This button must contain code using the **enable** property to show or hide the button. For example, to show or hide the **Clear** button when the user is typing information into the input field, you can use the following code:
++ The combo box is contained in a form group.
++ The group name starts with **Combobox**.
++ Inside the group, the first control is an **AxFormStringControl** control. This control shows the current value, and it's where the user enters the required value.
++ The second control is a **CommonButton** control, and its name starts with **ClearButton**. This button must contain code that uses the **enable** property to show or hide the button. For example, to show or hide the **Clear** button while the user is typing information in the input control, you can use the following code.
 
     ```xpp
     public void textChange()
@@ -181,7 +186,7 @@ To apply styles to a combo box:
     }
     ```
 
-    You should have one method where the data is set into the input box, and then enable **Clear** button in that method. For example:
+    You should have one method where the data is set in the input control. Enable the **Clear** button in that method. Here is an example.
 
     ```xpp
     public void setSerialId(str _serialId)
@@ -196,7 +201,7 @@ To apply styles to a combo box:
     }
     ```
 
-    Use the following code for the **clicked** method of the **Clear** button:
+    Use the following code for the **clicked** method of the **Clear** button.
 
     ```xpp
     public void clicked()
@@ -206,23 +211,27 @@ To apply styles to a combo box:
     }
     ```
 
-    Set the value of the input control, **AxFormStringControl**, when the form is initialized by using the **init** method. If value is not blank, then enable the **Clear** button. If the value is blank, disable the **Clear** button.
+    Set the value of the input control, **AxFormStringControl**, when the form is initialized by using the **init** method. If the value isn't blank, enable the **Clear** button. If the value is blank, disable the **Clear** button.
 
-+ The third control must be a **CommonButton** control. The name must start with **SearchButton**.
++ The third control is a **CommonButton** control, and its name starts with **SearchButton**.
 
-The following image shows two combo box controls. The left combo box has an empty text box and the clear button is disabled. The right combo box has text in the text box and the clear button is enabled.
+The following illustration shows two combo box controls. The combo box on the left has an empty text box, and the **Clear** button is disabled. The combo box on the right has text in the text box, and the **Clear** button is enabled.
 
-![Combo box appearance](media/pfe-styles-combo.png)
+![Combo boxes with and without a Clear button](media/pfe-styles-combo.png)
 
 ## Dialog
 
-To apply styles to a dialog:
+Styles can be applied to a dialog only if the following requirements are met:
 
-+ The name of the dialog must start with **JmgProductionFloorExecutionDialog**, for example, **JmgProductionFloorExecutionDialogBatchNumberLookup**.
-+ All of the controls in the dialog must be configured as described in this topic.
-+ To apply styles to the **OK** button:
-    + The button must be contained in a form group.
-    + The group name must start with **OkButtonGroup**.
-+ To apply styles to the **Cancel** button:
-    + The button must be contained in a form group.
-    + The group name must start with **CancelButtonGroup**.
++ The name of the dialog starts with **JmgProductionFloorExecutionDialog** (for example, **JmgProductionFloorExecutionDialogBatchNumberLookup**).
++ All the controls in the dialog are configured as described in this topic.
+
+Styles can be applied to the **OK** button in a dialog only if the following requirements are met:
+
++ The button is contained in a form group.
++ The group name starts with **OkButtonGroup**.
+
+Styles can be applied to the **Cancel** button in a dialog only if the following requirements are met:
+
++ The button is contained in a form group.
++ The group name starts with **CancelButtonGroup**.
