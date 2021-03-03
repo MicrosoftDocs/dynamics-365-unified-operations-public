@@ -1,4 +1,3 @@
-
 ---
 # required metadata
 title: Provision Microsoft Teams from Dynamics 365 Commerce
