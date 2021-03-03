@@ -80,9 +80,9 @@ Use the buttons in the toolbar of the **Posting by company** FastTab to add and 
 
 For each company listed in the grid, select its row and then make the following settings using the fields below the grid:
 
-- **Debit type** - <!-- KFM: It is what it says it is... -->
-- **Debit account** - <!-- KFM: It is what it says it is... -->
-- **Main account** - <!-- KFM: It is what it says it is... -->
+- **Debit type**
+- **Debit account**
+- **Main account**
 
 ## Payment types
 
