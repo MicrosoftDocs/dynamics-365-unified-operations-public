@@ -186,32 +186,14 @@ Microsoft provides Customers with the types of updates to Finance and Supply Cha
 
 The responsibilities of Microsoft, the Implementation Partner, and the Customer are reflected in Table 4 for each update type.
 
-Type of update 
-Description 		Maintenance window 
-(Microsoft's estimated maintenance downtime) 
-	Microsoft 	Customer / Implementation 
-Partner 	
-Customers that are on version 8.1 and higher 	
-Service updates 
-Service updates are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible 	Initiate updates to the application within the configured maintenance window. 	Customer must always stay current on the latest version of the application. 	Microsoft initiated maintenance window 
-30 minutes – 4 hours* 
-Critical update 
-Update that solves a critical issue. 	Notify Customer of the critical update. 
-Initiate update within the specified timeline. 	Apply the critical update. 	Microsoft initiated maintenance window 
-30 minutes – 4 hours 
-Extensions 
-Change to the standard business application logic. 	No action required. 	Validate extensions in 
-Customer’s Non-Production Instances and then promote them to Customer’s 
-Production Instance. 	Customer initiated maintenance window 
-1 – 4 hours 
- 	 
-Type of update 
-Description 	Expected action 	Maintenance window 
-Microsoft's estimated maintenance downtime 
-	Microsoft 	Customer/ Implementation 
-Partner 	
-Customers that are on version 8.0 and lower 
-Platform updates Platform updates are collections of hot fixes and new features for the platform, provided as a deployable package. They are backward compatible. They are also backward compatible with the last major release of the applicable Service.  	Initiate updates to the platform within the configured maintenance window. 	Customer must always stay current on the latest version of the platform. 	Microsoft initiated maintenance window 
+|Type of update | Expected action from Microsoft | Expected action from customer or implementation partner | Maintenance window (Microsoft's estimated maintenance downtime) |
+|---------------|--------------------------------|---------------------------------------------------------|------------------------------------------------------------------|
+|**Customers that are on version 8.1 and higher** |	
+|**Service updates**<br><br>**Service updates** are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible.| Initiate updates to the application within the configured maintenance window. | Customer must always stay current on the latest version of the application.| Microsoft initiated maintenance window:<br><br>30 minutes – 4 hours*| 
+|**Critical update**<br><br>Update that solves a critical issue. |Notify Customer of the critical update. <br><br>Initiate update within the specified timeline. | Apply the critical update. |	Microsoft initiated maintenance window:<br><br>30 minutes – 4 hours |
+|**Extensions**<br><br>Change to the standard business application logic. |	No action required. |	Validate extensions in customer’s Non-Production Instances and then promote them to Customer’s Production Instance. 	| Customer initiated maintenance window:<br><br> 1 – 4 hours |
+|**Customers that are on version 8.0 and lower**| 
+|**Platform updates Platform updates are collections of hot fixes and new features for the platform, provided as a deployable package. They are backward compatible. They are also backward compatible with the last major release of the applicable Service.  	Initiate updates to the platform within the configured maintenance window. 	Customer must always stay current on the latest version of the platform. 	Microsoft initiated maintenance window 
 30 minutes – 4 hours** 
 Major releases 
 Major releases for the Service include new functionality. The last major update is 8.1. 	Make the new major release available and publish to LCS. 	Prepare for the upgrade according to the LCS instructions and best practices. 	Customer initiated maintenance window 
