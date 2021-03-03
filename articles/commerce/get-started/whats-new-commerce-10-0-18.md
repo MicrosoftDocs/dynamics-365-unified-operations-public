@@ -47,7 +47,7 @@ The following features are included in this release. The feature titles link to 
 - Call server-side data actions with AJAX<br> - For more information, see [Call server-side data actions with AJAX](/e-commerce-extensibility/data-actions-with-ajax.md)
 - Add a QR code or bar code to transactional and receipt emails<br> - For more information, see [Add a QR code or bar code to transactional and receipt emails](add-qr-code-barcode-email.md)
 - [Configure receipt emails to use custom layouts and templates](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/email-receipt-improvements-new-features)<br> - For more information, see [Configure receipt emails to use custom layouts and templates](configure-emailed-receipt-formats.md)
-
+- Additions to the Commerce online SDK FAQ<br> - For more information, see [Dynamics 365 Commerce online SDK FAQ](/e-commerce-extensibility/sdk-faq.md)
 
 
 ## Additional resources
