@@ -112,7 +112,7 @@ The settings on the **Employee self service** tab affect how Employee self servi
 - Enter a name for the Employee self service workspace
 - Select which information a manager can enter on behalf of employees
 - Add useful links for employees
-- Restrict employees from adding or editing business contact details. For more information about restricting employees from editing business contact details, see [Restrict editing of contact details](hr-employee-self-service-restrict-editing.md).
+- Restrict employees from adding or editing business contact details. For more information about restricting employees from editing business contact details, see [Restrict editing of personal information](hr-employee-self-service-restrict-editing.md).
 
 For more information about setting up Employee self service, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
 
