@@ -52,4 +52,4 @@ To confirm or set the default payment service in Dynamics 365 Commerce headquart
 
 ## Additional resources
 
-[Credit card setup, authorization, and capture](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/credit-card-authorizations)
+[Credit card setup, authorization, and capture](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-card-authorizations)
