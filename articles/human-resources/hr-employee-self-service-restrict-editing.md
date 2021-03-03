@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restrict editing of contact details
+title: Restrict editing of personal information
 description: Restrict employees from editing contact details in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Restrict editing of contact details
+# Restrict editing of personal information
 
 [!include [applies to](../includes/applies-to-hr.md)]
 [!include [preview feature](./includes/preview-feature.md)]
