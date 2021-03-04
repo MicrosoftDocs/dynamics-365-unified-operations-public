@@ -102,7 +102,7 @@ To validate that the organizational hierarchy was uploaded to Teams, follow thes
 
 [Synchronize task management between Microsoft Teams and POS](synchronize-tasks-teams-pos.md)
 
-[Configure Microsoft Teams integration](configure-teams-integration.md)
+[Enable Microsoft Teams integration](enable-teams-integration.md)
 
 [Manage user roles in Microsoft Teams](manage-user-roles-teams.md)
 
