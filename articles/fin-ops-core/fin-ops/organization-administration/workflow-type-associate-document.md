@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: RobinARH
+ms.author: rhaertle
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -52,3 +51,6 @@ Before you begin the following procedure, you must create a workflow document cl
 [Create a new workflow type](workflow-type-create-new.md)
 
 [Create a workflow document class](workflow-type-document-create.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

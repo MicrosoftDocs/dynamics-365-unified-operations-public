@@ -16,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -249,3 +248,6 @@ Use this procedure to cancel a periodic settlement for advance holder transactio
 2. In the **Date of transaction** field, select the advance holder transaction date. All transactions that were settled before this date will be reversed.
 3. On the **Records to include** FastTab, define additional filtering for the transactions to cancel settlements for.
 4. Select **OK** to cancel the periodic settlement.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -124,3 +123,6 @@ The following steps show how to test this capability in demo data scenarios. The
 18. When the jobs have completed synchronization, open the POS.
 19. Add item **91050** to a transaction. The total that is due is **$75.06**.
 20. Add **Matthew Tolley** to the transaction. Taxes are recalculated to reflect this customer's exemption.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

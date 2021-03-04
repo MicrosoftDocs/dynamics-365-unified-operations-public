@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration data projects
-description: This topic provides an overview of configuration data projects, configuration data templates, and the process for using them to move company configuration data between instances of your application.
+description: This topic describes configuration data projects and configuration data templates.
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/29/2017
@@ -18,12 +18,11 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77523
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
 
@@ -93,3 +92,6 @@ If you want to use other file name extensions, you must update your data sources
 
 1. In the **Data management** workspace, select the **Configure data sources** tile, and then select **Data sources**.
 2. Add a default file name extension to the appropriate data source.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -120,3 +119,6 @@ To remove an existing association between a maintenance asset and a fixed asset,
 1. Find and open the fixed asset.
 1. On the **Fixed asset** FastTab, clear the value from the **Functional location** field.
 1. On the Action Pane, select **Save**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

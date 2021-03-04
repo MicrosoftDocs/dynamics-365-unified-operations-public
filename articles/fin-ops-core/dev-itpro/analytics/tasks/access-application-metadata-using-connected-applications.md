@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Access application metadata by using connected applications
-description: The steps in this topic explain how a Regulatory configuration service (RCS) user can design a new Electronic reporting (ER) model mapping by using metadata in Finance and Operations.
+description: The steps in this topic explain how a Regulatory configuration service user can design a new Electronic reporting model mapping by using metadata.
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/29/2019
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -57,7 +56,7 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 2. Close the page. 
 3. Go to **All workspaces** > **Electronic reporting**. 
 4. Click **Connected applications**. 
-5. Make sure that the configured application is Azure based and accessible for the current RCS user. It is also required that the current RCS user has access to the selected application and has been registered as a user of this application playing a role giving him privileges to access application's metadata. 
+5. Make sure that the configured application is Azure based and accessible for the current RCS user. It is also required that the current RCS user has access to the selected application and has been registered as a user of this application playing a role giving them privileges to access application's metadata. 
 6. Click **New**. 
 7. In the **Name** field, type 'MyConnectedApp'. 
 8. In the **Application** field, type 'https:// mycompany.operations.dynamics.com'. 
@@ -117,3 +116,6 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 11. Close the page. 
 
 When you need to evaluate this model mapping by using metadata of a different version application, register another connected application, assign it to this model mapping and validate it against new metadata.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Projects in Lifecycle Services (LCS)
-description: This article provides information about projects in Microsoft Dynamics Lifecycle Services (LCS). It describes some important features and also explains the role of the project methodology.
+description: This article describes projects in Microsoft Dynamics Lifecycle Services (LCS).
 author: manalidongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18941
 ms.assetid: 6634d000-b031-40d7-ad2a-c6626e4cbdc2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -52,3 +51,6 @@ When you have LCS opened, you have a view on recent projects. Click the option '
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Post-upgrade tasks
-description: This topic describes the tasks that you might have to perform in Finance and Operations apps after you complete a code and data upgrade from Microsoft Dynamics AX 2012.
-author: tariqbell
+description: This topic describes the tasks that you might have to perform after you complete a code and data upgrade from Microsoft Dynamics AX 2012.
+author: LaneSwenka
 manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: laswenka
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 
@@ -73,3 +72,6 @@ After you complete the upgrade from AX 2012, you must set up Budget planning col
 Additionally, you must update Budget planning processes so that they use the appropriate layout for each budget stage. To update Budget planning processes, click **Budgeting** > **Setup** > **Budget planning** > **Budget planning process**.
 
 For more information about Budget planning upgrade, see [Upgrade budget planning](upgrade-budget-planning.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

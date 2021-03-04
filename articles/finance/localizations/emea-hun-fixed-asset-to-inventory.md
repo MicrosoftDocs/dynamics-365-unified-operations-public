@@ -17,7 +17,6 @@ ms.search.form: InventJournalAsset
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274423
 ms.search.region: Hungary
@@ -47,3 +46,6 @@ To transfer a fixed asset to inventory, follow these steps.
 7.  Validate that the fixed asset and inventory transactions were created correctly.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: VendInvoicePostingHistory
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
@@ -150,3 +149,6 @@ For more information, see [Accounts payable invoice matching overview](accounts-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

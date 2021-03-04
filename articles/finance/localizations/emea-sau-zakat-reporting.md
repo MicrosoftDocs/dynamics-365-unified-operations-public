@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265024
 ms.search.region: Saudi Arabia
@@ -55,3 +54,6 @@ Saudi companies of all types and companies owned by nationals of the Gulf Cooper
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62673
 ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
@@ -139,3 +138,6 @@ The environment is now ready for you to copy and manage configurations. For more
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

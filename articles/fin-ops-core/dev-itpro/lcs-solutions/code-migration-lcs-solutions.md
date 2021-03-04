@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196993
 ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
@@ -72,3 +71,6 @@ Additional resources
 [Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
 
 [Develop and customize home page](../dev-tools/developer-home-page.md#code-migration)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

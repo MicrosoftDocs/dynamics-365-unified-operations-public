@@ -17,7 +17,6 @@ ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, Invent
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -58,3 +57,6 @@ This topic describes the process of creating and posting an inventory counting j
 1. Select **Inventory**.
 2. Select **Transactions**. Here you can see any related transactions that will be created when you post your inventory counting journal.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

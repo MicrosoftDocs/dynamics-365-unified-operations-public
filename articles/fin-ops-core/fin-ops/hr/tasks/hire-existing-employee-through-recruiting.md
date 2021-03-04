@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -45,3 +44,6 @@ Sometimes open positions can be filled by candidates who are already employees i
 9. Click Change position.
     * You may also change compensation at this time. If you do not assign compensation at this time, you can change it by going to the worker form, selecting the Compensation tab, and choosing 'Fixed Plan'. After you select 'Change position', the status on the application will be updated to 'Employed'.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

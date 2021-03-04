@@ -4,7 +4,7 @@
 title: Distribute questionnaires using scheduling
 description: Questionnaire scheduling allows you to plan and distribute questionnaires to multiple respondents. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -17,7 +17,7 @@ ms.search.form: KMKnowledgeCollectorPlanningTable, KMKnowledgeCollectorPlanningM
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations 
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Distribute questionnaires using scheduling
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Questionnaire scheduling allows you to plan and distribute questionnaires to multiple respondents. The demo data company used to create this procedure is USMF.
 
@@ -133,3 +135,6 @@ Questionnaire scheduling allows you to plan and distribute questionnaires to mul
 2. Click End.
 3. Click OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

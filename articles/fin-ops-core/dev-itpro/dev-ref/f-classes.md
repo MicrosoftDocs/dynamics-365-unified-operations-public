@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 47561
 ms.assetid: 03d9d906-d683-47b4-8488-795173db2125
@@ -291,3 +290,6 @@ System API classes that start with the letter F.
 [FormTreeItem class](system-classes/FormTreeItem-class.md)
 
 [FormWindowControl class](system-classes/FormWindowControl-class.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

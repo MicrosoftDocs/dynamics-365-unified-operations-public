@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -117,3 +116,6 @@ However, if the invoice expenses are included in the order line that corresponds
 18. Click **Balance** to open the **FA balances** page. The details are displayed in the **Leaving (sale)** and **Gain/Loss** fields.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
@@ -78,7 +77,7 @@ This topic shows how to perform the following tasks:
 
     <img alt="JSON data types " src="../../media/BEF-Howto-Flow-10.png" width="100%">
 
-13.  Choose another final action to consume the business event content. For instance, you can send an email (or post a text message to Teams) to notify the customer about payment details. Search for the **Send email** action, then sign in to your Office 365 account.
+13.  Choose another final action to consume the business event content. For instance, you can send an email (or post a text message to Teams) to notify the customer about payment details. Search for the **Send email** action, then sign in to your Microsoft 365 account.
 
 14.  Fill in the message with the required fields.
 
@@ -111,3 +110,6 @@ Here are some troubleshooting suggestions:
 - Power Automate provides a full history of runs to help determine what might be wrong with a failing flow.
 - When reviewing a failed run, carefully review the inputs and outputs of trigger and action blocks. 
 - After changes have been made to the flow, go to the latest run or a particular run, and **Resubmit** the inputs to run the flow again.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

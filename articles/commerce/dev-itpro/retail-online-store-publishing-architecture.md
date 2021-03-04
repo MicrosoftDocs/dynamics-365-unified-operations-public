@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 72124
 ms.assetid: c9ab2a6c-ea19-4c21-a2d9-35a8d516b48b
@@ -71,3 +70,6 @@ After you've completed these steps, you're ready to publish the online store cat
 5.  The CRT records the publishing status for the listing.
 6.  Async Server synchronizes the publishing status of the listing with all other publishing statuses. The status is either **Published** or **Error**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

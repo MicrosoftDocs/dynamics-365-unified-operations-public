@@ -18,7 +18,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
@@ -93,3 +92,6 @@ The 150% reducing balance method divides 150 percent by the service life years.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

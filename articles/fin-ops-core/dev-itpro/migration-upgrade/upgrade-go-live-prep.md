@@ -17,12 +17,11 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
@@ -63,3 +62,6 @@ At this point in the upgrade project, we recommend that you categorize any bugs 
     - No workaround or mitigation is available for it.
 
 - **Non-blocking** – The upgrade project can proceed. Bugs of this type can be fixed in the upgraded system.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalTransVendPaym, TaxAuthority, TaxWithholdGroup, TaxW
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30081
 ms.search.region: United Kingdom
@@ -95,3 +94,6 @@ Use the **Undo settlement**, **Vendors**, and **Vendor payments** pages to corre
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

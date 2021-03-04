@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
@@ -483,3 +482,6 @@ Because there are no limits to the methods that exchange rate providers use to g
 - **Providers that retrieve exchange rates from other exchange rate types** – If you implement this scenario, it will enable synchronization of exchange rates among various exchange rate types. This functionality can be useful in situations where many exchange rate types exist, because it will help maintain isolation between different ledgers.
 - **Providers that use Extensible Stylesheet Language Transformations (XSLT) to transform any format for an exchange rate service into an instance of the ExchangeRateResponse class** – If you implement this scenario, users can add the XSLT transform that is required for their exchange rate service, and the application will support the service. Provider-specific code isn't required.
 - **Some exchange rate provider services charge for every rate that is consumed** – Consider combining the first idea in this list with a limit on the number of rates that you retrieve from the service. This functionality can be useful for scenarios where you're charged for each rate that is consumed from the service.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

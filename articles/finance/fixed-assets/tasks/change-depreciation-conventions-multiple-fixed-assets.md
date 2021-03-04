@@ -17,7 +17,6 @@ ms.search.form: SysQueryForm, SrsReportViewerForm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ This task updates the depreciation convention for a specified fixed asset group.
 15. Click OK.
     *  Results of the process are shown on the Mass update report.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150303
 ms.assetid: 
@@ -584,3 +583,6 @@ The **this** reference can't be used in the following ways:
 
 The depth of the call stack is limited to 100.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

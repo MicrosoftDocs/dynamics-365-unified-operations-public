@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31181
 ms.assetid: 6a7bb5b0-7350-46f1-a641-3f7a3187b687
@@ -72,3 +71,6 @@ As the previous table shows, if you change the width of a grid-hosted control fr
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

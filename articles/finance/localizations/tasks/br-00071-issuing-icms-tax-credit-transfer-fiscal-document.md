@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -57,3 +56,6 @@ You can create a new tax fiscal document and generate a Nota Fiscal eletrônica 
 20. Close the page.
 21. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

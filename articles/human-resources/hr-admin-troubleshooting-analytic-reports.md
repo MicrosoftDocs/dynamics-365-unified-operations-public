@@ -4,7 +4,7 @@
 title: Troubleshoot analytic reports
 description: This article explains what to do if a customer's data changes don't appear in any of the customer's workspaces.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Troubleshoot analytic reports
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Issue**
 
 A customer's data changes don't appear on the **Analytics** tabs of any of the customer's workspaces.
@@ -49,3 +51,6 @@ This issue might just be a matter of timing. Follow these steps to start the bat
 1. Select **Edit** at the top of the page, and set the scheduled start date/time to a value that will refresh the analytics closer to the current time.
 
 ![Batch jobs](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

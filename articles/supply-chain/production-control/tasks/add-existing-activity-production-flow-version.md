@@ -17,12 +17,11 @@ ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityAddExisting, PlanA
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -58,3 +57,6 @@ This task requires production flow with version and activities already created.
 3. In the Activity field, enter or select a value.
 4. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

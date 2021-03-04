@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -446,3 +445,6 @@ Constructors cannot be extended. A **new** method that is defined on an extensio
 
 ### Tooling
 For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

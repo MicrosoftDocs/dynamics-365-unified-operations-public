@@ -18,7 +18,6 @@ ms.search.form: VendInvoiceWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
@@ -67,3 +66,6 @@ For more information, see [Vendor collaboration with external vendors](../../sup
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,7 +15,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -141,3 +140,6 @@ ms.dyn365.ops.version: 10.0.1
 12. To review the report that is generated, select the **Attachments** button (the paper clip symbol) in the upper-right corner of the page. Then select **Open** to open the file.
 
 You must also manually upload the generated file to the special third-party software for data preview and data updates, and to transfer the accounting reporting files to the tax authorities through the communication channels.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

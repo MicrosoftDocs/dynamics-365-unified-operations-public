@@ -16,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -355,3 +354,6 @@ You can't cancel the prepayment settlement and the invoice if the VAT was restor
 To cancel the VAT recovery, use the **Sales book (Canceling processed VAT)** page (**Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Canceling processed VAT**).
 
 You can't cancel the processing of incoming VAT unless the VAT recovery is canceled on the prepayment that is settled to the invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

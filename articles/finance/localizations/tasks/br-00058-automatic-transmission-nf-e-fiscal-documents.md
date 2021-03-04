@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -77,3 +76,6 @@ Use the following procedure to set up email parameters to automatically send a N
 43. Click Save.
 44. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

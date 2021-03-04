@@ -17,7 +17,6 @@ ms.search.form: LedgerParameters, DefaultDashboard, PurchTable, PurchCreateOrder
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
@@ -97,3 +96,6 @@ This procedure was created using the demo data company MYMF.
     * Review the Self-billed invoice report for accuracy.  
     * Verify that the Self-billed invoice report includes the GST summary section, the GST code, the Amount origin, the Quantity and the GST amount.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

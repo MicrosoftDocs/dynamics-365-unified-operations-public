@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -53,3 +52,6 @@ You can import data for migration by using your Finance and Operations environme
 4. Enter the name of the package, and then, in the **Source data format** field, select **Package**.
 5. Select **Upload**, and then select the appropriate package file from the location for the data that is being imported. All the files from the package are imported.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

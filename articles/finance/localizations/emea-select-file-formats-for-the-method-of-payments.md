@@ -18,7 +18,6 @@ ms.search.form: CustPaymMode, VendPaymMode
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262514
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
@@ -60,3 +59,6 @@ To select file formats that are based on X++ code, complete the following steps.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

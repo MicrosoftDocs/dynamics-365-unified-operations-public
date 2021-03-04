@@ -18,7 +18,6 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12294
 ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
@@ -72,7 +71,10 @@ Additional resources
 
 [View financial reports](view-financial-reports.md)
 
-[Dynamics Financial Reporting Blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting Blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

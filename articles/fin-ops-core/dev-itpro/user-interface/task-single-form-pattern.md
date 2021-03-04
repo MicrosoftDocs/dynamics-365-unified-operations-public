@@ -2,7 +2,7 @@
 # required metadata
 
 title: Task Single form pattern
-description: This article provides information about the Task Single form pattern. This pattern was previously used to present data that users would perceive as originating from a single data source that had multiple records.
+description: This article provides information about the Task Single form pattern.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14634
 ms.assetid: 38cb1058-ed69-4ffa-9bfd-4b65cc8d2a49
@@ -122,3 +121,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![Previous version visual example](./media/tasksingle4.png)](./media/tasksingle4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

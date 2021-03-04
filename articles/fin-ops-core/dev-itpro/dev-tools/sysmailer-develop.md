@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270774
 ms.search.region: Global
@@ -205,3 +204,6 @@ The **System.Net.Mail.MailMessage** object contains a large amount of advanced f
 ## Migration from Microsoft Dynamics AX 2012 to Finance and Operations applications
 
 Migration involves using the **SysMailerMessageBuilder** object to build a message and then using the **SysMailerFactory** to send it, as outlined in the examples in this topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

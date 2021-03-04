@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -225,3 +224,6 @@ This topic explains how to add a new custom column to a POS transaction page usi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

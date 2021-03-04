@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -243,3 +242,6 @@ You can find similar sample code in the Retail software development kit (SDK), a
 3. Add any item to the transaction.
 
 The custom field should appear in the **Totals** panel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

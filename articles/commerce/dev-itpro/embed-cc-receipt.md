@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -80,3 +79,6 @@ The following items are required to embed processor credit card receipts into cu
 13. Perform a credit card transaction to confirm that the processor's credit card receipt is embedded into the customer's receipt.
 
     ![Customer's receipt that includes credit card details](media/receipt_w_cc.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

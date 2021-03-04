@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Denmark
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -45,3 +44,6 @@ This topic provides links to documentation resources for Denmark.
 - [Set up customer accounts for OIOUBL electronic invoicing](tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md)
 - [Set up OIOUBL electronic invoicing](tasks/set-up-oioubl-electronic-invoicing.md)
 - [Set up payment slip format](tasks/set-up-payment-slip-format.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -19,13 +19,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -87,3 +86,6 @@ From the **All assets** list page, you can print an asset fault report that show
 >[!NOTE]
 >To print a fault report for several assets or asset types, select **Asset management** > **Reports** > **Assets** > **Asset fault**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, KanbanFlowSelecti
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -61,3 +60,6 @@ This procedure shows how to create a kanban rule that includes multiple activiti
     * Notice that the kanban has two process jobs from the production flow. The first one is SpeakerAssemblyAndPolish, and the second one is SpeakerTestAndPackaging.  
     * This is the last step!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

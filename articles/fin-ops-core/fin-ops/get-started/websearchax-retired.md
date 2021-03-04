@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.assetid: 
@@ -41,3 +40,6 @@ site:technet.microsoft.com dynamics ax 2012 "search term"
 –or–
 
 site:msdn.microsoft.com dynamics ax 2012 "search term"
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

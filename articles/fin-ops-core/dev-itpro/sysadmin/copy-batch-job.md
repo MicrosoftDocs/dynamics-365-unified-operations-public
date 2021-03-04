@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -61,3 +60,6 @@ Complete the following steps to enable a batch job.
 
 1.	On the **Batch job** page, on the Action Pane, click **Batch job** > **Change status**.
 2.	Select the **Waiting** status, and then click **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

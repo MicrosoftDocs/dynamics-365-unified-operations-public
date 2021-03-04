@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -266,3 +265,6 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
         "Sample", "Custom parameters or custom object");
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

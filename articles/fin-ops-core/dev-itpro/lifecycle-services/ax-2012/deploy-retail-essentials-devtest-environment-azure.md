@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy Retail essentials dev/test environments on Azure
-description: This topic explains how to deploy a Retail essentials dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
+description: This topic explains how to deploy a Retail essentials dev/test environment on Microsoft Azure.
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 01/05/2018
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13261
 ms.assetid: 00e58780-7373-4c53-b3af-1e9d3d4eebff
@@ -289,3 +288,6 @@ Each virtual machine that you deployed has a local administrator account. This a
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

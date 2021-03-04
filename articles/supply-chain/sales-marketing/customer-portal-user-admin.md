@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -28,6 +27,8 @@ ms.dyn365.ops.version: Release 10.0.13
 ---
 
 # Create and manage Customer portal users
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 In the out-of-box implementation, there is no way for users to self-register for websites that are created by using the Customer portal. To sign in and use a website, users must be invited by the admin. Microsoft has intentionally blocked the ability of users to self-register.
 
@@ -42,11 +43,11 @@ The [Invite customers to register and use your customer portal](https://youtu.be
 
 ## Prerequisite setup
 
-Contacts in Power Apps portals are stored as records in the **Contacts** entity in Common Data Service. Dual-write then syncs these records to Microsoft Dynamics 365 Supply Chain Management as required.
+Contacts in Power Apps portals are stored as records in the **Contacts** table in Microsoft Dataverse. Dual-write then syncs these records to Microsoft Dynamics 365 Supply Chain Management as required.
 
 ![System diagram for Customer portal contacts](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
 
-Before you start to invite new customers, make sure that you've enabled the **Contact** entity mapping in dual-write.
+Before you start to invite new customers, make sure that you've enabled the **Contact** table mapping in dual-write.
 
 ## The invitation process
 
@@ -61,15 +62,15 @@ After a contact is created, you should be able to see it in Supply Chain Managem
 
 For more information, see [Configure a contact for use on a portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
 
-## Out-of-box web roles and entity permissions
+## Out-of-box web roles and table permissions
 
-User roles in Power Apps portals are defined by [web roles](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) and [entity permissions](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). A few roles are defined for the Customer portal out of the box. You can create new roles, and you can modify or remove existing roles.
+User roles in Power Apps portals are defined by [web roles](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) and [table permissions](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). A few roles are defined for the Customer portal out of the box. You can create new roles, and you can modify or remove existing roles.
 
 ### Out-of-box web roles
 
 This section describes the web roles that are delivered with the Customer portal.
 
-For more information about how to modify the out-of-box user roles, see [Create web roles for portals](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) and [Add record-based security by using entity permissions for portals](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) in the Power Apps portals documentation.
+For more information about how to modify the out-of-box user roles, see [Create web roles for portals](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) and [Add record-based security by using table permissions for portals](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) in the Power Apps portals documentation.
 
 #### Administrator
 
@@ -99,3 +100,6 @@ The following table shows which sales orders the users in each web role can see 
 
 > [!NOTE]
 > Even though both Sam and Jane are contacts who work for customer X, they can see only the orders that they themselves have placed and nothing else. Although May has an order in the system, she can't see that order in the Customer portal, because she is an unauthorized user. (Additionally, she must have placed the order through some channel other than the Customer portal.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

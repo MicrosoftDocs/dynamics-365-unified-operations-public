@@ -18,14 +18,13 @@ ms.search.form: GST/HST, GIFT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Canada
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: kfend
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 
@@ -113,3 +112,6 @@ You can generate a Goods and Services Tax or Harmonized Sales Tax (GST/HST) Inte
    For easy identification, use the format GSTYYYYMMDD.tax (GST, followed by the reporting date, with a .tax extension) as in this example: GST20100728.tax.
 
 4. Click **OK** to export the GIFT file to the specified path.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

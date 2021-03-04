@@ -17,7 +17,6 @@ ms.search.form: OMLegalEntity, OMNewLegalEntity
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -49,3 +48,6 @@ A legal entity is an organization that is identified through registration with a
 15. Expand the **Tax registration** section. In the **Tax registration** section, enter the registration numbers that are used to report to tax authorities.
 16. Expand the **Tax 1099** section. In the **Tax 1099** section, enter 1099 information for the legal entity.  
 17. Click **Save**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Configure email settings in Attract
 description: This topic explains how to configure settings for email that is sent by Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -93,3 +92,6 @@ You can upload an image of your company's logo and other information as a brande
     ![Adding links to your company's privacy policy and terms of use for the email footer](./media/attract-admin-email-footer.png)
 
 4. Select **Save** to save your email template settings.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

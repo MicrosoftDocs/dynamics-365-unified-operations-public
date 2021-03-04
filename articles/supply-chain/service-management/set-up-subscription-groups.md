@@ -18,13 +18,12 @@ ms.search.form: SMASubscriptionGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -34,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-1.  Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+1.  Go to **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
 
-2.  Press Ctrl+N or click **New** to create a new subscription group.
+2.  Select **New** to create a new subscription group.
 
 3.  In the **Subscription group** field, enter a name for the new subscription group.
 
@@ -53,3 +52,6 @@ ms.dyn365.ops.version: AX 7.0.0
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

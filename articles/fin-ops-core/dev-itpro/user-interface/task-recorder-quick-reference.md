@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31141
 ms.assetid: 8536e688-33f1-4f0c-a402-b1de2d253fbc
 ms.search.region: global
 # ms.search.industry: 
-ms.author: shshabazz
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -191,3 +190,6 @@ This symbol represents a step that was attempted by the playback system, but was
 <li>The step could not play because the name of the form or name of the control has changed.</li>
 <li>The step could not play because of a framework change to the control.</li>
 </ul>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

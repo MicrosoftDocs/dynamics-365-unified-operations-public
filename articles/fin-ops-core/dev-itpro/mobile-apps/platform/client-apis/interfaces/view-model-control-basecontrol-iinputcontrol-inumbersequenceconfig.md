@@ -3,7 +3,7 @@
 
 title: NumberSequenceConfig type
 description: Number Sequence Configuration type.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -16,13 +16,12 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 
@@ -61,3 +60,6 @@ referencePageName: string
 Page name of the page that defines if the num sequence is editable.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

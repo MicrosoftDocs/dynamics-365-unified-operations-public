@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -605,3 +604,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Refactor whsWorkExecuteDisplayReprintLabel to ProcessGuide framework
 - Retail channel: Support BankDropOperationRequest
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28231
 ms.assetid: 1838c10d-9172-4853-aa49-17710adf8bc1
@@ -160,3 +159,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![Example](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

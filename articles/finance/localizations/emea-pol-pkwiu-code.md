@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -52,3 +51,6 @@ Category hierarchies are used to classify products or transactions for reporting
 1. Click **Product information management** > **Common** > **Released products**. 
 2. Select the released product to assign a PKWiU code to. On the Action Pane, click **Edit**. 
 3. On the **Sell** FastTab, enter the PKWiU code for the released product. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

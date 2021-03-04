@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -197,3 +196,6 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceResponse(Payment
 |---|---|
 | paymentInfo | The recovered payment transaction. This is identical to the payment response returned for any other payment request, such as **Authorize** or **Refund**. |
                                                                                                                                                                                                                                                                                                             
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

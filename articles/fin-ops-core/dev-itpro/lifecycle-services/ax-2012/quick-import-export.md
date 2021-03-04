@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 89041
 ms.assetid: 990d64e6-d436-4c79-9bb5-bf8c5c5a048f
@@ -47,3 +46,6 @@ We added the Quick Import Export feature to let users import or export simple jo
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

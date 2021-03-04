@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: JmgCalcApproveWeekView
+ms.search.form: JmgCalcApproveWeekView, JmgProdStatusListPagePayrollCostDetails, JmgPayCountTable, JmgPayStatConfig, JmgOvertimeSlize, JmgPayAgreementOverride, JmgPayCountSum, JmgPayAdjustSetup, JmgPayAdjustCostType, JmgPayEmployee, JmgMESBreak, JmgPayAddTable, JmgPayAddTransSelectTransId, JmgPayrollCostDetailsPart, jmgProdStatusListPagePayrollCosts, JmgPayrollCostPart, JmgPayEvents, JmgTermRegPayStatSetup, JmgPayStatGroup, JmgPayAddTrans, JmgPayStatTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
@@ -603,3 +602,6 @@ If the worker doesn't show up for work on a workday, and there is no planned abs
 - Auto insert absence
 
 When the daily registrations are calculated for a worker who is enabled for flexible hours, the absence code that is specified in the **Auto insert flex-** field is used as a default absence code. If the worker isn't enabled for flexible hours, the absence code that is specified in the **Auto insert absence** field is used. If a company has a combination of workers who are enabled for flexible hours and workers who aren't enabled for flexible hours, both parameters must be set up.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

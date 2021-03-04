@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 90513
 ms.assetid: 84e06ee2-be1c-443b-b595-9309eaea84c5
@@ -173,3 +172,6 @@ Static int GrayColor = 14474460; // DCDCDC or 220,220,220
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

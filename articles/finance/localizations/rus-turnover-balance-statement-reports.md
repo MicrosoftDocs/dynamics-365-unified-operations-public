@@ -16,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -235,3 +234,6 @@ By pre-calculating transactional data, you can help improve performance.
     ![Pre-calculate transactional data dialog box](media/11_Pre-calculate_transactional_data.jpg)
 
 5. Select **OK** to pre-calculate transactional data.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

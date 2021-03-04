@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Set up new environments, Azure DevOps, and branches for Commerce projects
+title: Set up new environments, Azure DevOps, and branches for projects
 description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
 manager: AnnBe
@@ -18,7 +18,6 @@ ms.search.form:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -29,7 +28,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 ---
 
-# Set up new environments, Azure DevOps, and branches for Commerce projects
+# Set up new environments, Azure DevOps, and branches for projects
 
 [!include [banner](../../includes/banner.md)]
 
@@ -347,3 +346,6 @@ If you had multiple build branches and environments, just clone the build defini
 [Update code and environments for Retail projects](./updating-environments.md)
 
 [Testing and performance issues](./retail-implementation-testing-performance.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

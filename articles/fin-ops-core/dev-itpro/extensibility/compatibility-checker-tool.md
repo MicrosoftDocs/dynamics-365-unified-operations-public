@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -152,3 +151,6 @@ Any of the following changes will break form extensions that reference the contr
 ### Application elements
 
 + **Removing any element** – Consumers might have a compile-time dependency on the existence of the element.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrde
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -114,3 +113,6 @@ The production planner plans the material requirements for items that are formul
 19. Select No in the Disable all planning processes field.
 20. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

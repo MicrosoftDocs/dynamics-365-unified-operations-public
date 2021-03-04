@@ -17,7 +17,6 @@ ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLooku
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -76,3 +75,6 @@ This procedure focuses on the setup needed to create a kanban rule that is trigg
 2. Click View pegging tree.
     * Notice that a kanban with the same quantity as the sales line is created. You can also see the material issues needed to produce L0050. This is the last step in this procedure.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

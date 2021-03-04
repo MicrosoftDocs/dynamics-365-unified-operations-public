@@ -17,12 +17,11 @@ ms.search.form:  LedgerConsolidate
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: v-gonode
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -47,3 +46,6 @@ You can transfer general ledger transactions from the source company to the cons
 15. In the **Source legal entity** field, select a legal entity. 
 16. In the **File name** field, enter or select a value. 
 17. Click **OK**. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

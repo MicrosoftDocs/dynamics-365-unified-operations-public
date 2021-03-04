@@ -18,7 +18,6 @@ ms.search.form: CustBillingClassification
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27311
 ms.assetid: 9d61d1d8-1672-4bd0-ae0d-605b09240890
@@ -70,3 +69,6 @@ No, not directly. However, you could use general journal entries to create trans
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

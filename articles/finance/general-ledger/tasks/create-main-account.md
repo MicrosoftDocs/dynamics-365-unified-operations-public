@@ -17,7 +17,6 @@ ms.search.form: MainAccount, CompanyInfoList
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -55,3 +54,6 @@ This task guide steps through adding a main account to an existing chart of acco
 21. In the **Currency translation type** field, select the method for calculating exchange rates for the account.
 22. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: RetailTillLayout
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 219684
 ms.assetid: 2e2c4eea-c6e2-4912-9832-a6b22416e39f
@@ -67,3 +66,6 @@ The graphical design interface for MPOS or Cloud POS is controlled by the till l
 ## Additional resources
 
 [Configure, install, and activate Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

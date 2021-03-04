@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
@@ -164,3 +163,6 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
     ![Validate the results](./media/soapui8.png)
 
 In our example, we have now successfully authenticated and then queried UserSessionService via SOAP.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

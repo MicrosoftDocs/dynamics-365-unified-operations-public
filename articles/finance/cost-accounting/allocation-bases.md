@@ -18,13 +18,12 @@ ms.search.form: CAMDimensionMember, CAMAllocationBaseDetail, CAMFormulaAllocatio
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 223174
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -434,3 +433,6 @@ Here is an example of a cost distribution rule if the Electricity fixed formula 
 |    CC002    |     FI      | 3,075.00  | (3,075.00 ÷ 18,162.50) × Amount  |
 |    CC003    |     IT      | 13,250.00 | (13,250.00 ÷ 18,162.50) × Amount |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

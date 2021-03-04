@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pin Power BI content
-description: Microsoft Dynamics 365 Finance uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces to give your users an interactive data exploration experience.
+description: This topic explains how you can pin full-page Power BI reports to workspaces to give your users an interactive data exploration experience.
 author: MilindaV2
 manager: AnnBe
 ms.date: 07/10/2020
@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265844
 ms.assetid: a0011a12-a1eb-46bd-8d28-e532fec14e09
@@ -62,3 +61,6 @@ You can also open this report on PowerBI.com and make changes. You can then save
 So far, we have described how to add Power BI tiles and reports to "developer-created" workspaces. Developer-created workspaces are workspaces that are created by Microsoft (that is, they are built into the product), by your independent software vendor (ISV) or partner, or by in-house developers. However, in Microsoft Dynamics AX platform update 1 (May 2016), users can create new workspaces by using the personalization capabilities of the client. To create a new workspace, on the home page (or the dashboard), right-click the tile for a workspace, and then click **Add a workspace**. A new workspace is created. New workspaces are named **My Workspace 1**, **My Workspace 2**, and so on. You can change the name later. Click the workspace that you just created. You can now add Power BI tiles and reports by using the same options that we discussed earlier. The following illustration shows an example.
 
 [![Power BI report in a user-created workspace](./media/my-workspace-with-tiles-and-reports-1024x584.jpg)](./media/my-workspace-with-tiles-and-reports.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

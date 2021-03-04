@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang:
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm:
 ms.custom: 60373
 ms.assetid:
@@ -500,6 +499,29 @@ The local agent user can't connect to the SQL Server instance or the database.
     uswedpl1catalog.blob.core.windows.net:443
     ```
 
+## Infrastructure scripts errors
+
+### Issue
+
+**Error:** When you run Test-D365FOConfiguration.ps1 or Test-D365FOConfiguration-AllVMs.ps1, you receive the message:
+
+```stacktrace
+"Get-LocalGroupMember : Failed to compare two elements in the array.
+At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
++         Get-LocalGroupMember -Group 'Administrators' | `
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand" 
+```
+
+**Reason:** There is a bug in the PowerShell commandlet, Get-LocalGroupMember, which causes it to fail when there are entries that not valid.
+
+**Steps:** On the machine where the script is failing, open **local users and groups**. Go to the administrators group and remove any entries that have an entry like the one highlighted in the following image.
+
+![Invalid SID](media/InvalidSID.png)
+
+Do this on all of the machines that receive this error. After the changes are complete, try running the script again.
+
 ## <a name="restartapplications"></a>Restart applications (such as AOS)
 
 In Service Fabric, expand **Nodes** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **Code Packages** \> **Code**. Select the ellipsis button (**...**), and then select **Restart**. When you're prompted, enter the code.
@@ -606,7 +628,16 @@ Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMac
 
 If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.
 
-If the credentials.json file has changed, delete and redeploy the environment from LCS.
+If the credentials.json file has changed, the action you should take depends on the status of the environment in LCS.
+
+- If your environment appears to be deployed in LCS, do the following:
+    1. Go to your environment page and select **Maintain**.
+    1. Select **Update settings**.
+    1. Do not change any settings. Select **Prepare**.
+    1. After a few minutes your environment will be prepared and you can select **Deploy**.
+
+- If your environment is in a failed state in LCS, do the following:
+    1. Select **Retry**. The new Credentials.json file will be used during the retry operation.
 
 If none of the preceding solutions work, follow these steps.
 
@@ -1186,7 +1217,26 @@ You can skip or modify the following sections in the deployment instructions.
 
 ## Redeploy SSRS reports
 
-Delete the entry in SF.SyncLog, and then restart one of the AOS machines. The AOS machine will rerun DB Sync and then deploy reports.
+#### Version 10.0.13 or later
+
+Run the following command against your business data database (AXDB):
+
+```sql
+	UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+```
+
+#### Version 10.0.12 or earlier
+
+Run the following command against your business data database (AXDB):
+
+```sql
+    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CODEPACKAGEVERSION DESC)
+```
+
+>[!NOTE]
+> If you are using version 10.0.12 or earlier, a full database synchronization will be executed.
+
+After running the command, restart one of your AOS nodes through Service Fabric Explorer or restart the VM that the node is running on.
 
 ## Add axdbadmin to tempdb after a SQL Server restart via a stored procedure
 
@@ -1458,6 +1508,7 @@ truncate table databaselog
 ```
 
 ## DBSync fails to start
+
 **Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found.
 
 ```stacktrace
@@ -1480,3 +1531,30 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 **Reason:** This issue may occur because the SQL password contains special characters.
 
 **Resolution:** Update the password of the SQL user and remove the special characters. Then, update the Credentials.json file with the new password and retry the deployment from LCS.
+
+## DBSync fails with PEAP and first release APP version 10.0.14 Platform update 38
+
+**Issue:** During deployment, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error is present multiple times.
+
+```stacktrace
+10/01/2020 14:49:25: Failed when creating deadlock capture session event System.Data.SqlClient.SqlException (0x80131904): User does not have permission to perform this action.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Dynamics.AX.Framework.Database.Monitor.DeadlockMonitor.CreateDeadlockTrackingSystemEvent()
+```
+
+**Reason:** This issue occurs because the SQL Server account used by Finance + Operations does not have sufficient permissions to execute the operation.
+
+**Resolution:** Execute the following command in your SQL Server:
+
+```sql
+use master
+GRANT ALTER ANY EVENT SESSION to axdbadmin;
+```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

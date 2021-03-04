@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14721
 ms.assetid: b3d527bf-6b56-42fb-a135-493a62eb1435
@@ -165,3 +164,6 @@ This section will have answers to frequently asked questions that are related to
 **CustTable** &gt; **ContactsInfoPart** 
 
 [![Example of FactBox](./media/factbox5.png)](./media/factbox5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

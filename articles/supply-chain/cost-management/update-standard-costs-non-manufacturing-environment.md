@@ -18,7 +18,6 @@ ms.search.form: CostingVersion, InventItemPrice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79723
 ms.assetid: 7ba0c408-2450-4042-9542-6fdf83c12e6c
@@ -56,3 +55,6 @@ To correct, adjust, or update standard costs for new items, follow these steps.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 251594
 ms.assetid: 922881a2-f12a-41b4-8ef9-a5b31b464ef1
@@ -207,3 +206,6 @@ To learn how to maintain your signing identities and certificates, refer to [Wha
 
 > [!NOTE]
 > If you are using the certificates as a part of Apple Developer Enterprise Program and you install an app manually (such as for testing), then you must also manually establish trust. For more information, see [Install custom enterprise apps on iOS](https://support.apple.com/HT204460).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

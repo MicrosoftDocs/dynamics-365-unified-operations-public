@@ -18,7 +18,6 @@ ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267994
 ms.search.region: Belgium, Norway, Sweden, Switzerland
@@ -64,3 +63,6 @@ In addition to a bank statement, banks can provide specific messages, containing
 -   (SWE) BankGirot return – Vendor payments return format, which corresponds to Bankgirot export format
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

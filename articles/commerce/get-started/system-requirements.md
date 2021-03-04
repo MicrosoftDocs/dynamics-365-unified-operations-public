@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: System requirements for cloud deployments of Dynamics 365 Commerece
+title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail 
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Retail
 # ms.tgt_pltfrm: 
 ms.custom: 55651
 ms.search.region: Global
@@ -29,7 +28,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# System requirements for cloud deployments of Dynamics 365 Commerece
+# System requirements for cloud deployments of Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,6 +43,9 @@ The web application can run in any of the following web browsers that run on the
 - Google Chrome (latest publicly available version) 
 - Apple Safari (latest publicly available version)
 
+> [!NOTE]
+> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin).
+
 To find the latest release for each web browser, go to the software manufacturer's website.
 
 > [!NOTE]
@@ -57,6 +59,8 @@ Cloud point of sale (POS) can run in any of the following web browsers that run 
 
 - Microsoft Edge (latest publicly available version) on Windows 10
 - Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
+  > [!NOTE]
+  > Beginning with release 10.0.17, Internet Explorer will no longer be supported.
 - Chrome (latest publicly available version) on Windows 10, Windows 8.1, or Windows 7
 
 ## Network requirements
@@ -84,7 +88,7 @@ The following Microsoft Office applications are supported:
 
 It is critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing both early into implementation and again prior to final testing will allow for any necessary performance improvements to be made and to validate that the base solution meets the expected operation times required.
 
-[!IMPORTANT] The Microsoft Windows 7 operating system is no longer supported for anything other than security-related fixes. As a result, while Dynamics 365 Commerce components may function on Windows 7, there will be no bug fixes that specifically relate to supporting this operating system. Workarounds may be required for components to function properly on Windows 7, so it is highly recommended to upgrade to a supported operating system.
+[!WARNING] The Microsoft Windows 7 operating system is no longer supported for anything other than security-related fixes. As a result, while Dynamics 365 Commerce components may function on Windows 7, there will be no bug fixes that specifically relate to supporting this operating system. Workarounds may be required for components to function properly on Windows 7, so it is highly recommended to upgrade to a supported operating system.
 
 ## Modern POS for Windows requirements
 
@@ -128,18 +132,9 @@ It is critical to perform proper performance testing prior to going live in prod
 - Retail hardware station is a 32-bit application, but it will run on both x86 and x64 architectures.
 - Retail hardware station is supported on the following operating systems:
 
-    - Windows 7 Professional, Enterprise, and Ultimate editions.
-
-        > [!NOTE]
-        > Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
-        > Windows 7 is no longer a supportable operating system (see the **Important** note above). A recent issue was discovered regarding installation of hardware station on this operating system. This issue will not be fixed because the following workaround is available. In the **Common-Web.ps1** file, remove the following two sets of **Log-ActionItem**:
-          1. **Log-ActionItem** 'Config application pool [...] idle timeout to zero.
-          2. **Log-ActionItem** 'Config application pool [...] idle timeout action to suspend.
-        > Delete the **Log-ActionItem** specified above and the following two lines related to **Set-ItemProperty** and **Log-ActionResult**.
-
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, Enterprise LTSB, and IOT Enterprise editions.
-    - Windows Server 2012 R2 and Windows Server 2016 (note that Windows Server 2012 R2 is out of mainstream support at this time).
+    - Windows Server 2016 and Windows Server 2019.
     - It is not recommended to use Retail hardware station and other Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
@@ -163,14 +158,9 @@ Take note that the minimum system requirements listed below are the bare minimum
 - Commerce Scale Unit is a 32-bit application, but it will run on both x86 and x64 architectures.
 - Commerce Scale Unit is supported on the following operating systems:
 
-    - Windows 7 Professional, Enterprise, and Ultimate editions.
-
-        > [!NOTE]
-        > Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
-
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, Enterprise LTSB, and IOT Enterprise editions.
-    - Windows Server 2012 R2 and Windows Server 2016 (Note that Windows Server 2012 R2 is out of mainstream support at this time).
+    - Windows Server 2016 and Windows Server 2019.
     - It is not recommended to use Commerce Scale Unit and other Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
@@ -204,10 +194,9 @@ It would be in an organization's best interest to also take the following items 
 - Both components are 32-bit applications, but they will run on both x86 and x64 architectures.
 - Both components are supported on the following operating systems:
 
-    - Windows 7 Professional, Enterprise, and Ultimate editions.
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, and Enterprise LTSB editions.
-    - Windows Server 2012 R2 and Windows Server 2016.
+    - Windows Server 2016 and Windows Server 2019.
     - It is not recommended to use Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
@@ -227,3 +216,6 @@ The only supported collation for Commerce databases in the cloud is **SQL\_Latin
 ## Additional resources
 
 [Get an evaluation copy](../../dev-itpro/dev-tools/get-evaluation-copy.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

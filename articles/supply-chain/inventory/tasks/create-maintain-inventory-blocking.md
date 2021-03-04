@@ -17,7 +17,6 @@ ms.search.form: InventBlocking, InventItemIdLookupSimple, InventLocationIdLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -54,3 +53,6 @@ This procedure shows how to prevent physical on-hand inventory from being reserv
 2. Click **Yes**.
 3. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -368,3 +367,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Metadata change: WHSContainerLine, Relations WHSLoadLine & WHSShipmentTable.On Delete.
 - Metadata change: WHSContainerTable, Relation WHSShipmentTable.On Delete.
 - Project pricing: complete uptake of new pricing find methods.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

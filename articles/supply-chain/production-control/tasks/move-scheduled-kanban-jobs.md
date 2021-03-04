@@ -17,7 +17,6 @@ ms.search.form: KanbanJobSchedulingListPage
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -66,3 +65,6 @@ This procedure focuses on moving planned process kanban jobs to a different peri
 2. Click **Forward**. Notice that the job is moved one line down on the list. 
 
 3. Click **Backward**. Notice that the job is moved one line up on the list.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

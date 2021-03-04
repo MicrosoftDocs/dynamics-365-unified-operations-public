@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -41,3 +40,6 @@ After a sales invoice for a service is issued in São Paulo city, you can genera
 7. In the Fiscal document type field, enter or select a value.
 8. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner,
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220314
 ms.assetid: 
@@ -520,3 +519,6 @@ To start to use the new functionality of version 3.3 of the **BACS (UK)** format
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Download ER configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Download ER configurations from Global repository of Configuration service](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

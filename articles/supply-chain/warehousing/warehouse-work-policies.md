@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: WHSWorkPolicy
+ms.search.form: WHSWorkPolicy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -305,3 +304,6 @@ For more information about mobile device menu items, see [Set up mobile devices 
 For more information about license plate receiving and work policies, see [License plate receiving via the warehouse app](warehousing-mobile-device-app-license-plate-receiving.md).
 
 For more information about inbound load management, see [Warehouse handling of inbound loads for purchase orders](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

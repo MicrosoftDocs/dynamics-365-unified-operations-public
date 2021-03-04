@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 218654
 ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
@@ -64,3 +63,6 @@ Services are enumerated as types in the CRT configuration file. You can add type
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

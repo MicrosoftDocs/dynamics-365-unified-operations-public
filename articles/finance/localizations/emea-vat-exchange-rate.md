@@ -18,7 +18,6 @@ ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, Sale
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272703
 ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
@@ -64,3 +63,6 @@ After you've configured the system to use VAT exchange rates, if you must enter 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

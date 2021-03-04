@@ -17,7 +17,6 @@ ms.search.form: OMOperatingUnit, OMInternalOrganizationSelector
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -45,3 +44,6 @@ An operating unit is an organization that is used to divide the control of econo
     + Enter information about methods of communication, such as email addresses, URLs, and telephone numbers. To enter a new communication record, click New. To modify an existing communication record, click **More options > Advanced**.   
 6. Optionally, change the **Operating unit number** as needed. Note that this number is a unique idenitifier for the correspondng **Party** record and cannot be the same as any other operating unit.
 7. Select **Save**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

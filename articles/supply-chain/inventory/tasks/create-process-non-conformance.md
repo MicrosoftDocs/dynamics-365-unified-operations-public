@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -70,3 +69,6 @@ This topic explains how to perform nonconformance management, based on an existi
 2. Select **Close non conformance**.
 3. Select **Yes**.
 4. Close the pages.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

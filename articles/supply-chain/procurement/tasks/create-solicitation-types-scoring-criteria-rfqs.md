@@ -3,7 +3,7 @@
  
 title: Create solicitation types and scoring criteria for RFQs
 description: This guide shows you how to create a solicitation type and associate this with a scoring method. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreate
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -55,3 +54,6 @@ This guide shows you how to create a solicitation type and associate this with a
 8. Click OK.
 9. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

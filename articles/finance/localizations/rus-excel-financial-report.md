@@ -4,7 +4,7 @@
 title: Configure financial reports in Excel (Russia)
 description: This topic walks you through the process of creating an Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format. 
 author: Anasyash
-ms.date: 03/01/2019
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -49,7 +48,7 @@ Set up a financial report so that it has the list of financial report cells and 
 
 Create an Excel template for your financial report. At a minimum, you should assign names to all the Excel cells that should have values on the report that is generated.
 
-For an example, download the [Excel template example for a Russian balance sheet](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/how-to-articles/BalancesheetRussia).
+For an example, download the [Excel template example for a Russian balance sheet](https://docs.microsoft.com/dynamics/s-e/).
 
 ## Create an ER configuration for the financial report in Excel format
 
@@ -112,22 +111,24 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 
         For more information about the Financial reports model, see [Configure ER to use the results of financial report calculations](rus-financial-reports.md#configure-er-to-use-the-results-of-financial-report-calculations).
 
-5. Bind the calculated values of financial report cells to elements of the ER format cells:
+6. Bind the calculated values of financial report cells to elements of the ER format cells:
 
-    1. Select the **АктивВнеОбАНематАктПояснения** ER format cell, and then select **Unbind**.
-    2. Repeat the previous step for the following three ER format cells: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв**.
-    3. For all four ER format cells, on the **Format** tab, enter a value in the **Name** field. The value of the **Name** field must equal the value of the **Cell code** field in the financial report. For this example, the value that you enter in the **Name** field should equal the value of the **Excel range** field: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, or **АктивВнеОбАНематАктСумПрдшв**.
-
-        ![Format mapping field name](media/rus-format-designer-format.jpg)
-
-    4. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
-    5. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
+    > [!NOTE]
+    > In the current example, elements are already bound in the format. To complete the steps in the example, you must first unbind the elements.
+    > 
+    > Select the **АктивВнеОбАНематАктПояснения** ER format cell, and then select **Unbind**. 
+    > Repeat this for the following three ER format cells: **АктивВнеОбАНематАктСумОтч**, **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв**. 
+    > You won't need to do this for your new reports. 
+    
+    1. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
+    2. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
 
         ![Format mapping text string](media/rus-format-designer-mapping-text-string.jpg)
 
-    6. On the **Mapping** tab, select the **Value** element.
-    7. In the list of Excel format cells, select the **АктивВнеОбАНематАктСумОтч** cell, and then select **Bind**.
-    8. Repeat the previous two steps for the other two Excel cells that you unbound earlier.
+    3. On the **Mapping** tab, select the **Value** element.
+    4. In the list of Excel format cells, select the **АктивВнеОбАНематАктСумОтч** cell, and then select **Bind**.
+    5. Repeat the previous two steps for **АктивВнеОбАНематАктСумПрдщ**, and **АктивВнеОбАНематАктСумПрдшв** Excel cells.
+    
 
 ## Run the financial report format
 
@@ -153,3 +154,6 @@ To run the ER format that is based on the **Financial reports model**, follow th
 
 5. Select **OK**.
 6. Review the Excel report that is generated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -49,3 +48,6 @@ All data processing is run by jobs. For each job and data provider, a journal is
     * For this example, select Fiscal 2017 Period 9.  
 14. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

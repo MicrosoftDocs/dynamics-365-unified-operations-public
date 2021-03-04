@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -55,3 +54,6 @@ You can now optionally add the new field either to one of the existing field gro
 After compilation and synchronization of the database, you can see and edit the new field in the user interface.
 
 ![New field in the user interface](media/TableNewField04.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

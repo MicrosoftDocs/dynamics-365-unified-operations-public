@@ -17,12 +17,11 @@ ms.search.form: LeanScheduleGroup, GanttColorTableLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -58,3 +57,6 @@ Lean schedule groups are defined to group and distinguish products in kanban sch
 3. In the Item allocation key field, click the drop-down button to open the lookup.
 4. In the list, click the link in the selected row.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

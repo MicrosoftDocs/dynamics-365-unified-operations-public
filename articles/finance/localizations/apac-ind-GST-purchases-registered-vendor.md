@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -63,7 +62,7 @@ ms.dyn365.ops.version: 10.0.4
 
 8. Select **OK**.
 
-## Validate the tax details
+## Review and accept the tax details
 
 1. On the Action Pane, on the **Reply** tab, in the **Financials** group, select **Tax document**.
 2. Select the **GST** node.
@@ -99,7 +98,7 @@ ms.dyn365.ops.version: 10.0.4
 
 7. Select **OK**.
 
-## Validate the tax details
+## Review and confirm the tax details
 
 1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, select **Tax document**.
 2. Review the tax applicability, tax attributes, and tax calculation.
@@ -148,3 +147,6 @@ The following illustration shows the financial entry for the purchase of goods w
 The following illustration shows the financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to **Others**.
 
 ![Financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to Others](media/Annotation-2019-05-15-173734.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@
 
 title: Make the chart of accounts delimiter unique
 description: This topic explains how you cannot have the same delimiter for the chart of accounts and dimension values. You must change delimiter values after upgrade. 
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 03/30/2018
 ms.topic: article
@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265364
 ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
@@ -48,3 +47,6 @@ If there is a conflict with the chart of accounts, the chart of accounts delimit
 
 ## How to determine if your environment requires updated delimiters 
 If delimiters in your upgraded environment are conflicting, you may experience instability when entering values in a segmented entry control or dimension entry control. This means that you will need to always use lookups or a flyout menu when entering account and dimension combinations.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

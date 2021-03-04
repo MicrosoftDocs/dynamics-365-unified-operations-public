@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -54,3 +53,6 @@ For advanced filtering syntax that can be used with the Visual Studio Test Conso
 
 > [!NOTE]
 > For test filtering purposes, the SysTest framework allows you to filter on **FullyQualifiedName** and **Name**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -132,3 +131,6 @@ After the deployment is completed, you should see your changes in the authoring 
 [SDK and core library updates](sdk-updates.md)
 
 [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

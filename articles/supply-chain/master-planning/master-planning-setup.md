@@ -18,7 +18,6 @@ ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -124,7 +123,7 @@ Job scheduling is a more detailed scheduling method, where each operation is div
 For each plan, you can select how far in the future the various requirements and other considerations must be calculated by master planning. The period is known as a *time fence*. For the best performance in master planning, we recommend that you adjust the various time fences to meet your business requirements. For each plan, you can find the time fences on the **Time fences in days** FastTab of the **Master plans** page (**Master planning \> Setup \> Plans \> Master plans**).
 
 > [!NOTE]
-> The time fences indicate how far in the future the various requirements and other considerations are calculated by master planning. The time fences selected in this page will override the time fences defined in the coverage group. This means setting a time fence option to yes and definiting the days will override the time fence defined in the coverage group. When setting to No, the time fence will be defined in the coverage group. Finally, if you don't want or need to use an option (for example you do not want to use action messages), set it to **Yes**, and then set the time fence to **0** (zero) days.
+> The time fences indicate how far in the future the various requirements and other considerations are calculated by master planning. The time fences selected in this page will override the time fences defined in the coverage group. This means setting a time fence option to yes and defining the days will override the time fence defined in the coverage group. When setting to No, the time fence will be defined in the coverage group. Finally, if you don't want or need to use an option (for example you do not want to use action messages), set it to **Yes**, and then set the time fence to **0** (zero) days.
 
 ### Coverage
 
@@ -231,3 +230,6 @@ Lead time + Negative days + Current date – Requirement date
 The system uses only the planned supply orders that are within this time fence, and it creates a new planned order outside it. The advantage of dynamic negative days is that it will include the individual product lead time, to reuse existing orders and avoid creating new planned orders that will end up with a later day, due to delays caused by lead time. 
 
 For more information, see [Negative days and dynamic negative days](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

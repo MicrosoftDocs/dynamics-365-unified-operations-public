@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -68,3 +67,6 @@ The following data is used to fill the reports in the **Learning** Power BI cont
 | Position         | Position, title, and full-time equivalent (FTE)                  | Course Agenda, Course Attendees |
 | Employee Name    | First name, last name, and full name                             | Course Attendees |
 | Employee Title   | Title and seniority date                                         | Course Attendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
@@ -148,3 +147,6 @@ Currently, this endpoint provides metadata for the following elements:
 - **Data entities** – Returns a JSON-formatted list of all the data entities in the system.
 
     **Example:** `https://[baseURI\]/Metadata/DataEntities`
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

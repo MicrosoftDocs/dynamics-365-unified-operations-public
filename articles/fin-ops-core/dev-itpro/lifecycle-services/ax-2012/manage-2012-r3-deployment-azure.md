@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18491
 ms.assetid: 04d5d43f-07da-4a81-adce-50e214133b94
@@ -251,3 +250,6 @@ If you want users to use Remote Desktop via tunneled access to the Azure Virtual
 1.  The Azure Internal Load Balancer endpoint created by Lifecycle Services can be found in the details pane of the Cloud-Hosted Environments page in Lifecycle Services. Specifically, it is the endpoint domain specified by the link “RDS Farm Access”. It will appear like this: RDSFarm\#\#\#\#\#.domain.com
 2.  Obtain the IP address created for this domain by opening [http://manage.windowsazure.com](http://manage.windowsazure.com/) in a browser and logging into your subscription. Open **Cloud Services** and click the Cloud Service name associated with the RDS machines. Locate the RDS\* VM IP that is an internal IP (eg. 10.1.3.4) with port 3389. This is the IP of the Azure Internal Load Balancer associated with the RDSFarm\#\#\#.domain.com address.
 3.  Set up the appropriate routing and DNS entries for your users on the corporate network to reach that domain name/IP/load balancer. Once that is done, the users will be able to use Remote Desktop access from the corporate network.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

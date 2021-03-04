@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reconfigure environments to take a new platform or topology
-description: This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
+description: This topic describes how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
 author: PeterRFriis
 manager: AnnBe
 ms.date: 12/05/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
 ms.assetid: 
@@ -48,3 +47,6 @@ Before you complete the steps in this topic, you must update your local agent. F
 - If you need to take a new deployment or topology, select the new topology for your platform and enter the environment name. You can use the same name or enter a new one. 
   
 3. Click **Advanced Settings** to update your configuration. The configuration from your previous deployment will be saved. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

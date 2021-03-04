@@ -17,7 +17,6 @@ ms.search.form:  CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -122,3 +121,6 @@ The following tables list the pages and fields that the specified FastTabs can b
 |     Accounts   receivable parameters > Collections process automation    	|     Post   Collection letters automatically          	|     Collection   letter action types will post the letter during the automation.                                     	|
 |     Accounts   receivable parameters > Collections process automation    	|     Create   activities for automation               	|     Create and   close activities for non-activity action types to view all automated steps   taken on an account.    	|
 |     Accounts   receivable parameters > Collections process automation    	|     Days to keep   collections process automation    	|     Defines the   number of days collections history is stored.                                                      	|
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

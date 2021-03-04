@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export and import models
-description: Model files let you distribute models to customers and partners, and can be installed in development environments. They are key components of a Lifecycle Services (LCS) solution. Model files contain a model descriptor file, metadata, source code, and referenced .NET assemblies (when applicable). This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
+description: This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 author: RobinARH
 manager: AnnBe
 ms.date: 10/01/2018
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20451
 ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
@@ -81,8 +80,5 @@ If you install a model on a development environment that contains customizations
 
 4. Open the designer for the conflicting element to view and resolve conflicts by using the tools that are provided. 
 
-<!--For an introduction to conflict resolution tools that are available in a development environment, see the [Resolve conflicts using Visual Studio tools](https://mix.office.com/watch/1rl75ei2cs6d7) Microsoft Office Mix.-->
 
-
-
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

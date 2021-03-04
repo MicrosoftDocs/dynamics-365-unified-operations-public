@@ -3,7 +3,7 @@
 
 title: Procurement and sourcing overview
 description: This article gives an overview of the functionality that's available in the Procurement and sourcing module.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 05/06/2020
 ms.topic: article
@@ -13,18 +13,17 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
+ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58021
 ms.assetid: eea24e23-a803-4de0-a218-6485757cde1b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -98,3 +97,6 @@ Invoiced purchase orders will record the liability into the vendor account withi
 ## Vendor performance
 
 Performance and review of purchasing is supported through *procurement and account payable reports*, which include spend analysis and vendor performance analysis.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

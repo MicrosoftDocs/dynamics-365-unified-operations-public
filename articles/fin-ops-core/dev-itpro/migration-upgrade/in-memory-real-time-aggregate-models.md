@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24511
 ms.assetid: 877db646-da4b-48b5-83ab-61ae59d91921
@@ -56,3 +55,6 @@ Perspectives are now modeled using add-ins for Visual Studio. (Visual Studio is 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

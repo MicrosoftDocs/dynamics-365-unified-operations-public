@@ -16,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -269,3 +268,6 @@ Recoverable VAT amounts for incoming factures are approved on the **VAT restorin
 
     > [!NOTE]
     > If there is processed outgoing VAT in the period, the system doesn't allow you to cancel approvals by selecting **Restore VAT procedure \> Cancel approval of the journal** on the **VAT restoring journal** page. You must cancel outgoing VAT processing on the **Sales book (Canceling processed VAT)** page (**Accounts receivable \> Periodic tasks \> Sales book \> Canceling processed VAT**) and then cancel the approval of the VAT restoring journal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

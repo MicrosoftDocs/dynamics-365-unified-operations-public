@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -124,7 +123,7 @@ The FIFO strategy finds the location that contains the oldest aging date, and it
 1. On the **Sales order** page, on the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**. You receive informational messages. The system creates a shipment, adds it to a new load, and creates the required work.
 1. On the **Sales order lines** FastTab, on the **Warehouse** menu, select **Work details** to open the work that was created for this sales order. Notice that the line where the **Work type** value is *Pick* shows a **Location** value of *FL-002*. This location contains the license plate that has the oldest aging date (FIFO).
 1. Select **Warehouse \> Shipment details**.
-1. On the ***General** FastTab, make a note of the wave ID, so that you can use it in scenario 2.
+1. On the **General** FastTab, make a note of the wave ID, so that you can use it in scenario 2.
 
 ### Scenario 2: Set up and use LIFO location aging
 
@@ -144,3 +143,6 @@ The LIFO strategy finds the location that contains the newest aging date, and it
 1. Notice that the line where the **Work type** value is *Pick* shows a **Location** value of *FL-001*. This location contains the license plate that has the newest aging date (LIFO).
 
 In these scenarios, you've seen how the location aging strategy directs work to the inventory location that has either the oldest inventory or the newest inventory, depending on the selected strategy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

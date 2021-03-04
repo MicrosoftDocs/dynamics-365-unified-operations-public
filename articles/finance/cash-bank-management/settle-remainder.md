@@ -18,13 +18,12 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVen
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
 
@@ -85,3 +84,6 @@ account associated with the reason code.
 7)  You can also choose to create a payment journal with the settlement remainder or just post it without a journal. Select **Yes** for **Edit in journal** to create a payment journal. You will be able to edit the payment journal that you create.
 8)  Click **Settle remainder**. If you chose to create a journal, the button will change to **Create journal**. Click **Create journal** instead.
 9)  If you created a payment journal, the journal page will open after you click **Settle remainder**. A journal line will be added to the journal with the settle remainder amount as the amount and with the settlement remainder account as the offset account. If you added a customer or vendor so that you can move the settlement amount to another customer or vendor, then an additional line will be added to the journal to move the settlement amount to that customer or vendor.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

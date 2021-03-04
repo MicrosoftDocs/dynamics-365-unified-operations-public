@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -95,3 +94,6 @@ After a PowerBI.com report has been embedded in an application workspace, update
 
 2. To view the updates to the workspace, you must reload the page. Either move away from the workspace and then return, or refresh your browser.
 3. In the **Compensation management** workspace, select the **Analytics** tab to access the standard solution that is now embedded in the analytical workspace.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

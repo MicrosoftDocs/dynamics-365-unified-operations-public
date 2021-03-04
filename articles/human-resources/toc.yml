@@ -5,6 +5,22 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: February 22, 2021
+      href: hr-whats-new-2021-02-22.md
+    - name: January 28, 2021
+      href: hr-whats-new-2021-01-28.md
+    - name: January 21, 2021
+      href: hr-whats-new-2021-01-21.md
+    - name: December 2, 2020
+      href: hr-whats-new-2020-12-02.md
+    - name: October 22, 2020
+      href: hr-whats-new-2020-10-22.md
+    - name: October 6, 2020
+      href: hr-whats-new-2020-10-06.md
+    - name: September 26, 2020
+      href: hr-whats-new-2020-09-26.md
+    - name: September 16, 2020
+      href: hr-whats-new-2020-09-16.md
     - name: September 3, 2020
       href: hr-whats-new-2020-09-03.md
     - name: August 20, 2020
@@ -69,16 +85,24 @@
       items:
       - name: Choose a data integration technology
         href: hr-admin-integration-choose-technology.md
-      - name: Configure Common Data Service integration
+      - name: Throttling FAQ
+        href: hr-admin-integration-throttling-faq.md
+      - name: Configure Dataverse integration
         href: hr-admin-integration-common-data-service.md
-      - name: Common Data Service entities
+      - name: Dataverse tables
         href: hr-developer-entities.md
+      - name: Configure Dataverse virtual tables
+        href: hr-admin-integration-common-data-service-virtual-entities.md
+      - name: Human Resources virtual tables FAQ
+        href: hr-admin-virtual-entity-faq.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Configure integration with Dayforce
         href: hr-admin-integration-dayforce.md
       - name: Create a recurring data export app
         href: hr-admin-integration-recurring-data-export.md
+      - name: Integrate with LinkedIn Talent Hub
+        href: hr-admin-integration-linkedin.md
       - name: Integrate with Office
         items:
         - name: Office integration tutorial
@@ -187,7 +211,7 @@
         href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
       - name: Configure and filter workspaces
         href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
-      - name: Show pages side by side by using the Open in new window feature
+      - name: Show pages side-by-side by using the Open in new window feature
         href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
       - name: Keyboard shortcuts
         href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
@@ -213,6 +237,10 @@
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
     - name: Human Resources app in Teams
       href: hr-admin-teams-leave-app.md
+    - name: Prepare for go-live
+      href: hr-admin-go-live-prepare.md
+    - name: Go-live FAQ
+      href: hr-admin-go-live-faq.md
     - name: Documentation resources
       items:
       - name: Help system
@@ -230,7 +258,7 @@
     - name: Troubleshoot Human Resources
       items:
       - name: Get support
-        href: hr-admin-troubleshooting-support.md
+        href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
       - name: Optimize performance by scheduling batch jobs after hours
         href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks
@@ -261,7 +289,7 @@
       href: hr-developer-overview.md
     - name: Extend with Power Apps and Power Automate
       href: hr-developer-power-apps.md
-    - name: Common Data Service entities
+    - name: Dataverse tables
       href: hr-developer-entities.md
     - name: Custom fields
       href: hr-developer-custom-fields.md
@@ -269,7 +297,7 @@
       items:
       - name: Choose a data integration technology
         href: hr-admin-integration-choose-technology.md
-      - name: Configure Common Data Service integration
+      - name: Configure Dataverse integration
         href: hr-admin-integration-common-data-service.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
@@ -299,6 +327,92 @@
             href: hr-developer-api-myleaverequests-overview.md
           - name: Submit a leave request to workflow
             href: hr-developer-api-myleaverequests-submit.md
+    - name: ATS integration API
+      items:
+      - name: Introduction
+        href: hr-admin-integration-ats-api-introduction.md
+      - name: Recruiting request and related entities
+        items:
+          - name: Recruiting request
+            href: hr-admin-integration-ats-api-recruiting-request.md
+          - name: Recruiting request education
+            href: hr-admin-integration-ats-api-recruiting-request-education.md
+          - name: Recruiting request location
+            href: hr-admin-integration-ats-api-recruiting-request-location.md
+          - name: Recruiting request position
+            href: hr-admin-integration-ats-api-recruiting-request-position.md
+          - name: Recruiting request skill
+            href: hr-admin-integration-ats-api-recruiting-request-skill.md
+          - name: Example query for Recruiting request
+            href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+      - name: Recruiting request option sets
+        items: 
+          - name: Job exempt status
+            href: hr-admin-integration-ats-api-job-exempt-status.md
+          - name: Recruiting request position status
+            href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+          - name: Recruiting request status
+            href: hr-admin-integration-ats-api-recruiting-request-status.md
+          - name: Regulatory job category
+            href: hr-admin-integration-ats-api-regulatory-job-category.md
+      - name: Candidate to hire and related entities
+        items:
+          - name: Candidate to hire
+            href: hr-admin-integration-ats-api-candidate-to-hire.md
+          - name: Certificate type
+            href: hr-admin-integration-ats-api-certificate-type.md
+          - name: Party contact
+            href: hr-admin-integration-ats-api-party-contact.md
+          - name: Person
+            href: hr-admin-integration-ats-api-person.md
+          - name: Person address
+            href: hr-admin-integration-ats-api-person-address.md
+          - name: Person certificate
+            href: hr-admin-integration-ats-api-person-certificate.md
+          - name: Person education
+            href: hr-admin-integration-ats-api-person-education.md
+          - name: Person identification number
+            href: hr-admin-integration-ats-api-person-identification-number.md
+          - name: Person professional experience
+            href: hr-admin-integration-ats-api-person-professional-experience.md
+          - name: Person screening
+            href: hr-admin-integration-ats-api-person-screening.md
+          - name: Person skill
+            href: hr-admin-integration-ats-api-person-skill.md
+          - name: Rating level
+            href: hr-admin-integration-ats-api-rating-level.md
+          - name: Screening types
+            href: hr-admin-integration-ats-api-screening-types.md
+          - name: Example query for Candidate to hire
+            href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+      - name: Candidate option sets
+        items:
+          - name: Applicant integration result
+            href: hr-admin-integration-ats-api-applicant-integration-result.md
+          - name: Blank Yes No
+            href: hr-admin-integration-ats-api-blank-yes-no.md
+          - name: Completion status
+            href: hr-admin-integration-ats-api-completion-status.md
+          - name: Contact type
+            href: hr-admin-integration-ats-api-contact-type.md
+          - name: Education credit basis
+            href: hr-admin-integration-ats-api-education-credit-basis.md
+          - name: Gender
+            href: hr-admin-integration-ats-api-gender.md
+          - name: Marital status
+            href: hr-admin-integration-ats-api-marital-status.md
+          - name: Months of year
+            href: hr-admin-integration-ats-api-months-of-year.md
+          - name: No Yes
+            href: hr-admin-integration-ats-api-no-yes.md
+          - name: Period unit
+            href: hr-admin-integration-ats-api-period-unit.md
+          - name: Screening frequency
+            href: hr-admin-integration-ats-api-screening-frequency.md
+          - name: Screening frequency generate from
+            href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+          - name: Skill level type
+            href: hr-admin-integration-ats-api-skill-level-type.md
   - name: User Guide
     items:
     - name: Overview
@@ -421,12 +535,6 @@
           href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
         - name: Client alert notifications by email
           href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-      - name: Electronic signatures
-        items:
-        - name: Electronic signatures overview
-          href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-        - name: Set up electronic signatures
-          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
       - name: Case management
         items:
         - name: Case management overview
@@ -461,6 +569,8 @@
         href: hr-personnel-define-jobs.md
       - name: Create a working times calendar
         href: hr-personnel-create-working-time-calendar.md
+      - name: Recruit job candidates
+        href: hr-personnel-recruit.md
       - name: Personnel actions FAQ
         href: hr-personnel-actions-faq.md
       - name: Use workflows to manage employee information
@@ -515,9 +625,13 @@
         items:
         - name: Benefits management overview
           href: hr-benefits-management-overview.md
+        - name: Benefits management workspace
+          href: hr-benefits-management-workspace.md
         - name: Configure Benefits management
           items: 
-          - name: Set Benefits management parameters
+          - name: Configure Benefits management parameters per company
+            href: hr-benefits-setup-parameters-per-company.md
+          - name: Set Benefits management and Employee self-service parameters for all companies
             href: hr-benefits-setup-parameters.md
           - name: Configure eligibility rules and options
             href: hr-benefits-setup-eligibility-rules.md
@@ -569,6 +683,8 @@
             href: hr-benefits-process-life-event-eligibility.md
           - name: Process rate changes
             href: hr-benefits-process-rate-changes.md
+        - name: ACA reporting
+          href: hr-benefits-management-aca-reports.md
       - name: Define and manage a benefits program
         href: hr-benefits-manage-program.md
       - name: Benefit eligibility policies
@@ -665,6 +781,8 @@
       items:
       - name: Employee and Manager self service overview
         href: hr-employee-manager-self-service-overview.md
+      - name: Create custom links in Manager self service
+        href: hr-employee-manager-self-service-custom-links.md
       - name: Change Employee self service workspace name
         href: hr-employee-self-service-workspace-name.md
       - name: Edit personal information

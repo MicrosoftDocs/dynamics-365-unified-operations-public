@@ -2,7 +2,7 @@
 # required metadata
 
 title: Performance Benchmark software development kit (SDK) 
-description: The Microsoft Dynamics AX 2012 Performance Benchmark Software Development Toolkit (SDK) provides partners and customers with extensible features to develop benchmarks that closely mimic their custom implementation.
+description: The Microsoft Dynamics AX 2012 Performance Benchmark Software Development Toolkit (SDK) provides you with extensible features to develop benchmarks.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18921
 ms.assetid: 8dff2c13-1ea2-4b00-b0cb-0462da2d904b
@@ -40,3 +39,6 @@ The Benchmark SDK lets partners and customers quickly develop managed tests that
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

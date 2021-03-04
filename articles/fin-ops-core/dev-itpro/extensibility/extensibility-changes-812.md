@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -376,3 +375,6 @@ The following table lists additional changes that have been made for extensibili
 - Enable percent controlled for a catch weight item.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

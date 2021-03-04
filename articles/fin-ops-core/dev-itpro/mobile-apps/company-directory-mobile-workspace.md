@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Human Resources
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -95,3 +94,6 @@ Download and install the Finance and Operations mobile app:
 1.	In the mobile app, select the **Company directory** workspace.
 2.	In the **Search** field, enter an employee's first name, last name, title, or department to start the search.
 3.	Select an employee. The **Employee profile** page appears. The information on this page includes the employee's first name, last name, title, and department.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

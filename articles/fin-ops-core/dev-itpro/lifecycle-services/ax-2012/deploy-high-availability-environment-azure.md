@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy high-availability environments on Azure
-description: This article explains how to deploy a high availability environment on Microsoft Azure. To deploy the environment, you'll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services. 
+description: This article explains how to deploy a high availability environment on Microsoft Azure.
 author: kfend
 manager: AnnBe
 ms.date: 10/09/2019
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 21231
 ms.assetid: c53d7b21-1638-41a8-826b-89105d2e51e8
@@ -480,3 +479,6 @@ Each virtual machine that you deployed has a local administrator account. This a
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Screen ER destination type
-description: This topic provides information about how to configure a screen destination for each folder or file component of an Electronic reporting (ER) format that is configured to generate outbound documents.
+description: This topic provides information about how to configure a screen destination for each folder or file component of an Electronic reporting (ER) format.
 author: NickSelin
 manager: AnnBe
 ms.date: 01/23/2020
@@ -18,7 +18,6 @@ ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 
@@ -44,3 +43,6 @@ If you set **Enabled** to **Yes**, a preview of the output is created. You can v
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

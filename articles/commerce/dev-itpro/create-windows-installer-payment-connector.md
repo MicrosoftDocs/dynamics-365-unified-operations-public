@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141573
 ms.assetid: 045bb979-989f-4f72-9eb1-6b963680b65e
@@ -61,3 +60,6 @@ The following illustration shows the file structure for a connector that is name
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

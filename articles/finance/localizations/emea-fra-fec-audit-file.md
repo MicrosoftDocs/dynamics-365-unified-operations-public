@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: France
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -65,3 +64,6 @@ Consider the following information for select fields in the reports:
    - In the **Vendor balance.txt** and **Customer balance.txt** reports, this is the constant value **System**.
    - In the **Vendor incoming.txt** and **Customer incoming.txt** reports, this is the value of the **Transaction type** field from the  vendor transaction or customer transaction which is reported. Possible values could be for example, **Purchase order** or **Payment**.
    - In the **FEC.txt** report, this is the value of the **Transaction type** field from the voucher transaction that is reported. If the **Transaction type** equals **General journal**, this is the value from the **Description** field of the ledger journal, which is the source of the voucher transaction. Verify by checking the value on the **Journal names** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

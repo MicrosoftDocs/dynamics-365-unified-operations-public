@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Poland
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 
@@ -89,3 +88,6 @@ On the  **Accounts payable parameters** page, in the **Invoice** area, set the *
  8. In the **Invoice date** field, enter a date.  
  9. Click **Post**.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

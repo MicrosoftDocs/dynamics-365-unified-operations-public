@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -75,3 +74,6 @@ The chart is shown.
 1. In Supply Chain Management, go to **Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**.
 2. On the **Metric keys** page, select the metric key to delete.
 3. Select **Delete**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

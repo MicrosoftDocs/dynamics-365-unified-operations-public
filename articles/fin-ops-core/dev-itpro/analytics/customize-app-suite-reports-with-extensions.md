@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266614
 ms.assetid: acf73781-08bb-4f59-9956-8f9f295ddd02
@@ -54,3 +53,6 @@ The other two scenarios offer insights on how to use extensions to redirect appl
 
 - [Extend report menu items to redirect user navigation](extend-report-menu-items.md) – Customize application menu items to redirect references to a custom report design.
 - [Create custom designs for business documents](custom-designs-business-docs.md) – Delegate handlers allow you to add custom report designs to an existing Print Management document instance.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

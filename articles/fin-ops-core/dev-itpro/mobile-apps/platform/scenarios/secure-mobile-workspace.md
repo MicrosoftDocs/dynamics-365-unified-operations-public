@@ -3,7 +3,7 @@
 
 title: Help secure mobile workspaces
 description: This topic describes how to limit a user's access to a workspace.
-author: makhabaz
+author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
@@ -17,14 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: Operations
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 255544
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: makhabaz
+ms.author: rhaertle
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
 
@@ -56,3 +55,6 @@ You can also specify whether the workspace is hidden or shown, based on paramete
 
 ## Add a menu item and override the workspaceHidden method
 You can use both the preceding methods in your app. The menu item provides a security check, and the **workspaceHidden** method contains additional logic that is related to the visibility of the workspace.
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Development and continuous delivery FAQ
-description: This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
+description: This topic answers to questions that are frequently asked by ISVs and partners about development, testing, delivery, and lifecycle management.
 author: RobinARH
 manager: AnnBe
 ms.date: 01/21/2020
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202614
 ms.assetid: bc80fee3-8f54-43c4-9162-f058056c956c
@@ -159,3 +158,6 @@ The following servicing requests and tools are supported by LCS, which may help 
 6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.
 
 For more information about planning an environment, see [Environment planning](../../fin-ops/imp-lifecycle/environment-planning.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

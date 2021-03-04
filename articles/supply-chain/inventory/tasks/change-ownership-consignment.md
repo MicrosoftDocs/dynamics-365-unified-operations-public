@@ -17,7 +17,6 @@ ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -57,3 +56,6 @@ This procedure shows how to change the owner of consignment inventory from the v
 2. Click OK.
 3. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

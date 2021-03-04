@@ -17,7 +17,6 @@ ms.search.form: KanbanBoardTransferJob
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -68,3 +67,6 @@ This procedure focuses on executing a withdrawal kanban job to transfer material
 2. Click Complete.
     * This will complete the transfer of both jobs.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

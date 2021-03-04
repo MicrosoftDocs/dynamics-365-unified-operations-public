@@ -17,7 +17,6 @@ ms.search.form: CustParameters, VATInvoiceDescTable_CN, TaxProfileTable_CN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265264
 ms.assetid: e5dbbbe1-935f-4fb4-a014-447916051628
@@ -79,3 +78,6 @@ The following illustration shows the tax integration process.
 - [Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md) (Not applicable for Microsoft Dynamics 365 for Finance and Operations version 10.0 \[April 2019\] and later)
 - [Chinese tax integration modification for VAT customer invoices FAQ](apac-chn-tax-integration-vat-customer-invoices.md)
 - [Set up basic tax integration profile for China](./tasks/set-up-basic-tax-integration-profile-china.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

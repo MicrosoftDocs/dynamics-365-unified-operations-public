@@ -17,7 +17,6 @@ ms.search.form: KanbanBoardWorkCell
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -54,3 +53,6 @@ This procedure focuses on preparing a process kanban job when some materials are
 6. Click Prepare.
     * Notice that an icon in the Job status indicates that the job is now ready.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

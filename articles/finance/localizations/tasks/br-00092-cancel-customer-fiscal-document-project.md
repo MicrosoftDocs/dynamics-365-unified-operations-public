@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -47,3 +46,6 @@ You can cancel a customer invoice for a project. When you cancel a project invoi
 13. Click OK.
 14. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

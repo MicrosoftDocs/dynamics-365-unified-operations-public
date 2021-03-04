@@ -18,7 +18,6 @@ ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorag
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29611
 ms.assetid: 4b5ca875-9a06-416d-9ac0-cc3ab8f7338e
@@ -55,3 +54,6 @@ As part of the creation of released products, you must select default units for 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

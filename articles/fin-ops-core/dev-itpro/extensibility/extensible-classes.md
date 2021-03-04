@@ -19,13 +19,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: Smitha Nataraj, Lars-Bo
+ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
 ---
@@ -101,3 +100,6 @@ For more information about class hierarchies, see the following blog posts:
 
 ## Deprecation
 If a class or a public or protected method is no longer required, always use a warning first to notify consumers that the method is obsolete. Then, when all consumers have had the chance to uptake the changes or the new API, the method can be deprecated. Deprecation of classes and methods (or removal of class members in other cases) is a breaking change. For more information, see [Breaking changes](breaking-changes.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

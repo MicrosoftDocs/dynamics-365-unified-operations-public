@@ -17,7 +17,6 @@ ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInfo
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -68,3 +67,6 @@ This procedure shows how to calculate minimum coverage proposals based on histor
 5. On the **Action Pane**, click Plan.
 6. Click **Item coverage**. Notice that the **Minimum quantity** has been updated with the new minimum quantity from the safety stock journal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

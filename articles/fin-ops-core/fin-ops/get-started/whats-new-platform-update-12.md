@@ -19,7 +19,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: e577d51d-42d2-47c5-b388-93c8219c692a
@@ -92,3 +91,6 @@ The Document Routing Agent has been enhanced to offer support for more network p
 ## Table extension – PreviewPartRef property
 
 This release includes the ability to change the value of the **PreviewPartRef** property via a table extension. This feature provides an enhanced preview to existing fields, such as an enhanced preview for TMSRoute.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

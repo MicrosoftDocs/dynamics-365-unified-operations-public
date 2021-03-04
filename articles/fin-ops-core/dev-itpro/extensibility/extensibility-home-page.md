@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -56,7 +55,6 @@ The topics in this section will help you start to build extensions. They will al
 + [Migrate from overlayering to extensions](migrate-overlayer-extension.md)
 + [Customize model elements through extension](customize-model-elements-extensions.md)
 + [Customize through extension and overlayering](customization-overlayering-extensions.md)
-<!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
 ## Fundamentals on extensions
 
@@ -136,3 +134,6 @@ When you make your solution extensible, you also help guarantee that you won't b
 
 + For pointers that can help you avoid breaking your consumers, see [Breaking changes](breaking-changes.md).
 + The [compatibility checker tool](compatibility-checker-tool.md) can detect metadata breaking changes against a given baseline release or update, helping to ensure backward compatibility.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

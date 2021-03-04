@@ -18,7 +18,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: b364a31d-52de-45c5-b698-64c5262c592a
@@ -136,3 +135,6 @@ These configuration versions are released as public preview and will be updated 
 
 For more information, see [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

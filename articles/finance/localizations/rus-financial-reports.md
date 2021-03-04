@@ -16,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -331,3 +330,6 @@ For more information, see [Electronic messaging](../general-ledger/electronic-me
 9. Select **Generate report** to run the ER format for the financial report.
 10. If you're prompted, enter user parameters in the dialog box.
 11. Review the generated file in **Attachments**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: AssetDepBookTable, AssetGroupDepBookSetup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -58,3 +57,6 @@ This procedure walks through the process of creating a new depreciation book and
 6. In the Service life field, enter a number.
     * Notice the Depreciation periods field value is calculated after setting the Service life.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

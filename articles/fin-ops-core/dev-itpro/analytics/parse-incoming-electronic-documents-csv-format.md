@@ -18,7 +18,6 @@ ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: 
@@ -74,3 +73,6 @@ Download the following file that is required to complete the task guide mentione
 | Title                  | File name                                                       |
 |------------------------|-----------------------------------------------------------------|
 | ER model configuration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

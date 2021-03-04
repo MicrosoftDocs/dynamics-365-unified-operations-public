@@ -17,13 +17,12 @@ ms.search.form:  LedgerTransSettlement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 # ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
 
@@ -81,3 +80,6 @@ You can reverse a settlement that was made by mistake.
 ## Update the list of accounts that are included in the list of transactions
 
 Select **Ledger settlement accounts** to open a dialog box where you can edit the accounts that are included in the list of transactions. Select **New** to add new accounts to the list. This list is used to filter the list of transactions that appears on the **Ledger settlements** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

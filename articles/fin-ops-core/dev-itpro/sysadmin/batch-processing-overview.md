@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -66,3 +65,6 @@ Administrators and Batch managers can perform common tasks including creating an
 -  [Clean up the batch job history](batch-history-cleanup.md)
 -  [Abort an executing batch job](batch-abort.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.search.form: CustConsInvoice_JP, LedgerJournalTable, LedgerJournalTransCustPa
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -64,3 +63,6 @@ This procedure was created using the demo data company JPMF.
 14. Go to Accounts receivable > Periodic tasks > Consolidated invoice.
     * Confirm that the status of the consolidated invoice has been updated to be Settled.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

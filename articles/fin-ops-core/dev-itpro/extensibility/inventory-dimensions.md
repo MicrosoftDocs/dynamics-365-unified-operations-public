@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -156,3 +155,6 @@ The application supports many end-to-end business scenarios, for example creatin
 If needed, please log issues directly in GitHub, and feel free to contribute to the sample application to provide additional coverage.
  
 ![InventDimensionFlavorScreenshot](media/InventDimensions5.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

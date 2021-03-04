@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recurring integrations
-description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support.
+description: This topic describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/12/2019
@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24821
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
@@ -225,3 +224,6 @@ The **File uploaded successfully** column contains a check mark if the file or t
 The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in application environments that use a load balancer, such as production environments. (You cannot see the behavior in one box environments). We recommend that you change the URI scheme to HTTPS in the middleware application that is trying to dequeue from the application.
 
 ![Batch job status](./media/show-batch-status.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

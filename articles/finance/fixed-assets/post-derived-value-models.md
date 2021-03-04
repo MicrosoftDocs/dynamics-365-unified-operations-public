@@ -18,7 +18,6 @@ ms.search.form: AssetBookTable, LedgerJournalTransAsset
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
@@ -64,3 +63,6 @@ For more information, see [Derived books](derived-books.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

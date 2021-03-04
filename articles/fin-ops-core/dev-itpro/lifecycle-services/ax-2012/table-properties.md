@@ -2,7 +2,7 @@
 # required metadata
 
 title: Table properties in the Application Object Tree (AOT)
-description: This topic describes the properties that are in the<strong> Properties</strong> window for table elements in the Application Object Tree (AOT). Table elements are located under <strong>Data Dictionary</strong> &gt; <strong>Tables</strong>.
+description: This topic describes the properties that are in the Properties window for table elements in the Application Object Tree (AOT).
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18141
 ms.assetid: 1ad8b7e9-80b3-44a3-b57d-7e9fc88db038
@@ -363,3 +362,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

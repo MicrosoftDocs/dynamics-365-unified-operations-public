@@ -15,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -256,3 +255,6 @@ Use the **Revise header** button to correct the header fields of the facture.
 
     Select **Print** \> **Copy** to print the original facture.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

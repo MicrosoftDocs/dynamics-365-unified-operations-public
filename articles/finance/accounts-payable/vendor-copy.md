@@ -18,13 +18,12 @@ ms.search.form:  VendTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mikefalkner
+ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 
@@ -72,3 +71,6 @@ You can also copy vendors by using the Tax exempt number search feature that is 
 
 1. A **Copy vendor** option appears. By default, this option is set to **No**. To copy the vendor to the current legal entity, set the option to **Yes**.
 2. Select **Select**. The new vendor is created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

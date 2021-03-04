@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -581,3 +580,6 @@ The following table lists additional changes that have been made for extensibili
 |Modify index: table InventTestAssociationTable|
 |Entity UnitOfMeasureEntity switched to public|
 |Entity UnitOfMeasureTranslationEntity switched to public|
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

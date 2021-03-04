@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 257674
 ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
@@ -351,3 +350,6 @@ You can define a list of websites that a store worker (cashier) requires for nor
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

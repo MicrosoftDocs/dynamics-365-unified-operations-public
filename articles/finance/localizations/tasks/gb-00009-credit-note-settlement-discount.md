@@ -17,7 +17,6 @@ ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJour
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
@@ -88,3 +87,6 @@ Prior to this task, the "Setup parameters for credit note on prompt payment disc
 40. Close the page.
     * Verify that the reason for cash discount as well as original invoice number and date are printed in the credit note for the discount.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

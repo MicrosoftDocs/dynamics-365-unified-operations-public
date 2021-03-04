@@ -17,7 +17,6 @@ ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistr
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264824
 ms.search.region: Global
@@ -116,3 +115,6 @@ For more information about registration IDs processing, including required prere
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

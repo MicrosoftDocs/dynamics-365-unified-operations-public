@@ -17,7 +17,6 @@ ms.search.form: InventParameters, InventTestReportSetup, InventTestTable, Defaul
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -138,3 +137,5 @@ This procedure shows you how to enable a quality management process where incomi
 
 > [!NOTE]
 > The *Quality management for warehouse processes* feature provides additional options for setting up quality associations. It adds a new condition (**Applicable warehouse type**) and a new setting (**Quality processing policy**). If you have enabled this feature, then see [Quality management for warehouse processes](../quality-management-for-warehouses-processes.md) for details.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

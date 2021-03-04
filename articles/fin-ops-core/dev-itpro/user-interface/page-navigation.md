@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 105091
 ms.assetid: 26f373fa-13b7-4f1b-ad16-95499d19874f
@@ -127,3 +126,6 @@ The search keywords are matched not only to the caption of the navigation elemen
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

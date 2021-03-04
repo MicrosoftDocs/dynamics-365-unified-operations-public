@@ -17,12 +17,11 @@ ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqO
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -46,3 +45,6 @@ This procedure shows how to view all the planned orders that will be fulfilled b
 8. Expand the Upstream demand details section.
     * In this section, you can see the details about how the demand will be fulfilled. You may need to wait for master planning to be run in the supply company before you can see additional information here.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

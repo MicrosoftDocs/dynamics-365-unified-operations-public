@@ -2,7 +2,7 @@
 # required metadata
 
 title: Issue search in Lifecycle Services (LCS)
-description: This article provides information about the Issue search tool on Microsoft Dynamics Lifecycle Services (LCS). It explains how to search for product issues and regulatory features, and describes the information that is provided for each status.
+description: This article provides information about the Issue search tool on Microsoft Dynamics Lifecycle Services (LCS).
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18881
 ms.assetid: 160b2882-c70c-44b1-9780-68dc47afb2e8
@@ -149,3 +148,6 @@ The code changes are provided for reference only and should not be manually inse
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

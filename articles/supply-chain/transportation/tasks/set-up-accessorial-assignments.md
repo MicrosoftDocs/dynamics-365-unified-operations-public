@@ -13,16 +13,15 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: TMSAccessorialAssignment
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -52,3 +51,6 @@ This procedure shows how to set up an accessorial assignment. This is typically 
 14. In the Accessorial fee field, enter a number.
 15. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

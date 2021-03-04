@@ -4,7 +4,7 @@
 title: Source candidates with LinkedIn Recruiter in Attract
 description: Use the LinkedIn integration provided by Microsoft Dynamics 365 Talent - Attract to source job candidates through LinkedIn Recruiter.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -54,6 +53,10 @@ Before you can start working with LinkedIn Recruiter through Attract, you must s
 ## View LinkedIn candidates in Attract
 
 After you're connected to LinkedIn Recruiter, you can view candidates' LinkedIn profiles in Attract.
+
+>[!NOTE]
+>If you have a Recruiter seat assigned to you, you can see the candidates' full information.<br><br>
+>If you have a Hiring Manager seat or no seat assigned to you, be sure to sign out of LinkedIn or LinkedIn Recruiter before navigating to the LinkedIn tab for a candidate in Attract. You'll be able to see the candidate's basic public profile data, such as their first and last name.
 
 1. In Attract, select **Jobs** or **Talent pools** on the left, and then select an applicant.
 
@@ -129,3 +132,6 @@ If candidates agree to share their LinkedIn profiles with any user in your organ
 [Post jobs to LinkedIn from Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
 [Troubleshooting integration with LinkedIn and Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -142,3 +141,6 @@ The same build machine used for MSBuild  with the Azure DevOps pipeline can be u
 5. In Azure DevOps pipeline, change the MSBuild version to 15.0 or later.
 
 If the build from Azure DevOps pipeline fails with a NuGet error, the Azure pipeline may not be not using MSBuild version 15.0 for NuGet restore or the extension projects are not upgraded to use the package reference model.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

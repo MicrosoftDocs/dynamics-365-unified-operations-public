@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31401
 ms.assetid: f8d76054-c863-40de-b32a-73dfaa77aeff
@@ -808,3 +807,6 @@ subStr("abcdef",2,-3); //Returns the string "ab".
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

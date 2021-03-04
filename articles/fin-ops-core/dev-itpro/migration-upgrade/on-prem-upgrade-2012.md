@@ -5,7 +5,7 @@ title: Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on
 description: This topic describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
 author: faix
 manager: AnnBe
-ms.date: 06/24/2020
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -49,7 +48,7 @@ Two upgrade methods are currently supported:
 
 ### Prerequisites
 
-1. [Sign up for an LCS trial or partner project](upgrade-overview-2012.md#sign-up-for-a-lifecycle-services-trial-or-partner-project).
+1. [Sign up for a preview subscription](upgrade-overview-2012.md#sign-up-for-a-preview-subscription).
 1. For each AX 2012 release, update to the most recent cumulative update that is available before you upgrade to the most recent Finance + Operations application release.
 1. Install the pre-upgrade checklist. For more information, see [Installation](prepare-data-upgrade.md#installation).
 1. Go through the data upgrade preparation steps. You can skip the "Set up user mapping" step. This step is relevant only for cloud-hosted upgrades.
@@ -340,3 +339,6 @@ else{
 - Exception calling "Open" with "0" argument(s): "Cannot open database "AxDB1" requested by the login. The login failed. Login failed for user 'axdbadmin'." You supplied the Wrong database name or the user doesn't have access to that database. 
 - Exception calling "Open" with "0" argument(s): "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)". The script could not establish a connection with the SQL Server specified. Check the ip/fqdn and port that you used.  
 - Exception calling "Open" with "0" argument(s): "Login failed for user 'axdbadmin'." The supplied login credentials are not correct.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

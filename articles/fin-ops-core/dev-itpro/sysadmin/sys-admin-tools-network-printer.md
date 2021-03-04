@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -59,3 +58,6 @@ Currently, the System administration utility supports only Delete operations. He
 - The network printer is deleted for all legal entities in the organization.
 - Domain admins can register devices by using the old printer name.
 - The organization admins can continue to use the existing tools to manage network printer settings for a single legal entity.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

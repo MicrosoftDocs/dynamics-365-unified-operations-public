@@ -13,16 +13,15 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn   
+ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -48,3 +47,6 @@ This procedure shows how to register a driver check-in and a driver check-out. T
 1. Click Driver check-out.
 2. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

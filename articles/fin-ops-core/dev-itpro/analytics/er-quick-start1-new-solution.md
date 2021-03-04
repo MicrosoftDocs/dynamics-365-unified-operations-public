@@ -18,7 +18,6 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner,
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220314
 ms.assetid: 
@@ -1239,3 +1238,6 @@ Notice that the footer of the generated report doesn't contain the name of ER fo
 - [IF function](er-functions-logical-if.md)
 - [ORDERBY function](er-functions-list-orderby.md)
 - [SESSIONNOW function](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

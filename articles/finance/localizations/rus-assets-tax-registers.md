@@ -16,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
 
@@ -461,3 +460,6 @@ Data from the **Depreciation bonus recovery** register is included in the **Inco
     | The naming of object of the account | Depreciation bonus recovery for FA \# 4031                                  |
     | Income amount                       | 60,000.00                                                                   |
     | CTL amount                          | 12,000.00                                                                   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

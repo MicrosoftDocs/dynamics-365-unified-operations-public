@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and Microsoft Forms Pro
-description: This topic goes through a scenario where a survey is sent to users when a product has been shipped. The survey information is gathered by using Microsoft Forms Pro.
+description: This topic goes through a scenario where a survey is sent to users when a product has been shipped.
 author: murrayfife
 manager: AnnBe
 ms.date: 08/12/2019
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
@@ -66,3 +65,6 @@ If you haven't used Forms Pro before, you should first read the [Forms Pro docum
     As users fill in the survey and submit it, Forms Pro shows some analytics.
 
     ![Survey analytics in Forms Pro](../../media/Forms_Pro2.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

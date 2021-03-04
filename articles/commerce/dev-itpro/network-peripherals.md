@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -139,3 +138,6 @@ Payment terminals can be shared only if a shared hardware station is deployed to
 - [Set up POS hybrid app on Android and iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Dedicated payment terminals and prompts for a printer and cash drawer](https://go.microsoft.com/fwlink/?linkid=2129966)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

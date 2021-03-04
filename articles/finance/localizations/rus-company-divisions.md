@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -47,3 +46,6 @@ Use the **Separate divisions** page to create a company division. If your compan
 5.  In the **Vendor account** field, select the vendor account number that is associated with the division.
 
 6.  Select the **Independent** check box to indicate that the selected division can report the tax declarations independently of the head office.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

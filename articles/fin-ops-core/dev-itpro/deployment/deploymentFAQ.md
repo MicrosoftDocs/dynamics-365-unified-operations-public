@@ -5,7 +5,7 @@ title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 
@@ -99,3 +98,63 @@ Log a support ticket, and Microsoft will help you perform the action on your env
 ## I don't have Remote Desktop access to my sandbox environment, and the critical action that I must perform isn't listed in this topic. How do I get help?
 
 If your critical action isn't listed earlier in this topic, add a comment to this topic or log a documentation bug, and Microsoft will address your requirement.
+
+## What regions are supported on self-service?
+New projects for Finance and Operations are onboarded to the following regions:
+
+- East US
+- West US
+- Central US
+
+### My environments are currently in the regions that are no longer supported. How will this change affect me?
+Projects that have been onboarded on or after August 1, 2020 are no longer supported in the following regions:
+
+-	East US2
+-	West US2
+-	West Central US
+-	North Central US
+-	South Central US
+
+> [!NOTE]
+> This will not affect any environments that have their data stored in the deprecated regions before August 2020. There is a transition plan to move customers in the deprecated regions into other regions. For a list of the latest supported regions, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
+
+- If you have any integrations or other dependencies that are latency driven and have questions regarding how the region change in regions will impact that, please contact Microsoft Support.
+- Please review all Azure resources in your current region and assess if they need to be collocated to a new region.
+
+## For my Microsoft-managed environments, I have external components that have dependencies on an explicit outbound IP safe list. How can I ensure my service is not impacted after the move to self-service deployment?
+With self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available so you can add them in preparation for the upcoming self-service migrations or post migrations.
+
+* If none of your external components have dependencies on an explicit inclusion list of IPs or special handling of outbound IP addresses for routing or firewall, no action is required.
+* If any of your external components have special handling for the outbound IP addresses to communicate to the AOS, add the new outbound IP addresses where the existing ones appear. Don’t replace the existing IP addresses. You can find the new outbound IP addresses in the following list. For example, an outbound IP address may be explicitly included in a firewall outside your AOS, or an external service may have an allowed list that contains the outbound IP address for your AOS.
+
+The inbound IP address to the AOS is dynamic. This can, and will, change over time as infrastructure changes occur.
+
+> [!NOTE]
+> The outbound IP address from the AOS will remain static for the duration of an individual AOS session, which is currently listed to end in June 2021. 
+
+| Region | IP prefix
+|---------------------|-------------|
+| West US | 52.250.195.128/26
+| East US | 52.255.218.64/26
+| Central US | 13.86.98.128/26
+| West EUR | 51.105.159.192/26
+| West EUR-2 | 20.61.88.128/26
+| North EUR | 52.155.160.192/26
+| UK West | 51.137.139.0/26
+| UK South | 51.11.26.192/26
+| Australia East | 20.40.190.0/26
+| Australia SouthEast | 20.40.165.192/26
+| Canada Central | 20.151.60.0/26
+| Canada East | 52.155.27.128/26
+| Brazil South | 191.234.130.0/26
+| East Asia | 52.229.231.64/26
+| South East Asia | 20.44.247.0/26
+| Japan East | 20.48.77.192/26
+| Japan West | 20.39.179.192/26
+
+## Is there a potential impact on the environment's certificates?
+
+Yes, if you are migrating from the previous non self-service deployment, your environment’s certificate may be renewed due to infrastructure differences. Determine if there is any dependence on the certificates in your solution/integration and perform the needed actions after the migration.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

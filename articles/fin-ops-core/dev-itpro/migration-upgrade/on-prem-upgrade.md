@@ -5,7 +5,7 @@ title: In-place upgrade process for on-premises environments
 description: This topic provides the detailed process for upgrading on-premises environments from versions 7.x to 10.0.x.  
 author: laneswenka
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 01/14/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -89,7 +88,7 @@ An overview of each path is given below:
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
     > [!NOTE] 
-    > Substitute <DB-Name> with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to  Appendix A.
+    > Substitute <DB-Name> with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to the appendix of this topic.
 
     The script will run a database connection test to check that the information you provide is valid.
 
@@ -235,7 +234,7 @@ An overview of each path is given below:
     CLUSTERED (RECID)
     ```
 
-## Appendix A
+## Appendix
 
 ### Configure-On-Premises-Upgrade.ps1 usage
 
@@ -263,7 +262,7 @@ After configuration has been passed, the script will execute a database connecti
 ```powershell
 <#
 .Synopsis
-   Configures a OnebBox deployment to upgrade an OnPrem 7.x database to OnPrem 10.0.x 
+   Configures a Onebox deployment to upgrade an OnPrem 7.x database to OnPrem 10.0.x 
 
 .DESCRIPTION
    This must be executed before the upgrade process is carried out.
@@ -416,3 +415,6 @@ else{
 
 -   Login credentials are not correct. Exception calling \"Open\" with
     \"0\" argument(s): \"Login failed for user \'axdbadmin\'.\"
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

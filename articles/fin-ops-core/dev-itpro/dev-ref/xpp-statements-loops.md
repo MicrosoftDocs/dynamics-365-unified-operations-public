@@ -16,9 +16,8 @@ ms.technology:
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
-# ms.devlang: 
+ms.devlang: xpp
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150213
 ms.assetid: 
@@ -156,3 +155,6 @@ static void AnotherMethod()
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

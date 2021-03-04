@@ -17,7 +17,6 @@ ms.search.form: CustTable, CustBankAccounts, LogisticsPostalAddress, LogisticsPo
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France
@@ -73,3 +72,6 @@ This procedure was created using the demo data company FRSI.
     * Change to Bank account = 1  
 29. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

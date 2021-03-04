@@ -18,7 +18,6 @@ ms.search.form:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -44,3 +43,6 @@ This option is useful if your business process can't wait for the OData metadata
 
 > [!NOTE]
 > When you enable this functionality, the AOS should already be running and should have served one OData request. This means that the cache is already built. This new functionality will take effect during the next AOS restart.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

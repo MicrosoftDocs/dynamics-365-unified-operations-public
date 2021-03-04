@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -130,3 +129,6 @@ Use the **Posting invoice for payment** page to post a purchase invoice for paym
 8.  Set the **Print invoice for payment** option to **Yes** to print the invoice for payment after posting.
 
 9.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** list page (on the **Purchase** action pane click **Journals** \> **Invoice for payment**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

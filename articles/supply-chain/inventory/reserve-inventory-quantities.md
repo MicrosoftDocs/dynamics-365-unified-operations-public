@@ -18,7 +18,6 @@ ms.search.form: InventModelGroup
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
@@ -88,3 +87,6 @@ There are two options related to reservations on the **Inventory and warehouse m
 ### Inventory reservation policies on the Production parameters page
 
 The value of the **Reservation** field on the **General** tab on the **Production parameters** page determines the default point in the production process at which inventory should be reserved. For example, inventory could be reserved when work is scheduled, or when work is started.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

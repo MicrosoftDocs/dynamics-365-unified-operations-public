@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
 ms.search.region: Global
@@ -100,7 +99,8 @@ The Finance and Operations applications represent the next-generation enterprise
 - [Download assets by using Azure Pipelines](pipeline-asset-download.md)
 - [Upload assets by using Azure Pipelines](pipeline-asset-upload.md)
 - [Deploy assets by using Azure Pipelines](pipeline-deploy-asset.md)
-- [Create a Lifecycle Services (LCS) connection in Azure Pipelines](pipeline-lcs-connection.md)      
+- [Create a Lifecycle Services (LCS) connection in Azure Pipelines](pipeline-lcs-connection.md)
+- [Update a legacy pipeline in Azure Pipelines](pipeline-msbuild-update.md)
 
 ## X++ programming language
 
@@ -162,7 +162,7 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 - [Testing and validations](../perf-test/testing-validation.md)
 - [Test projects in Visual Studio](../perf-test/testing-support.md)
-- [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
+- [Deploy and use a continuous build and test automation environment](../perf-test/continuous-build-test-automation.md)
 - [Task recorder resources](../user-interface/task-recorder.md)
 
 ## Office integration
@@ -193,3 +193,6 @@ The client is an HTML web client that runs in all major browsers. For informatio
 ## Additional resources
 
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

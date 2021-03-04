@@ -18,12 +18,11 @@ ms.search.form: AssetDepreciationProfile, LedgerJournalTransApprove, LedgerJourn
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264294
 ms.search.region: Italy
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -51,3 +50,6 @@ The **Depreciation run date** should be set up at the time of acquisition and is
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

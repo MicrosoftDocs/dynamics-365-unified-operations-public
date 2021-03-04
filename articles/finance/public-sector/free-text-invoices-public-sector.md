@@ -18,7 +18,6 @@ ms.search.form: CustBillingClassification, CustBillingCode, CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25821
 ms.assetid: 483e2726-ec48-4d1f-82f5-bffddea301ce
@@ -73,3 +72,6 @@ The interest code can be set on the billing code, the billing classification, or
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

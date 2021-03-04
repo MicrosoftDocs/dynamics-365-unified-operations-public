@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79822
 ms.assetid: 9b132253-1748-4b71-b128-c4b9d3a311ae
@@ -123,8 +122,6 @@ Sometimes, a metadata hotfix package contains changes to objects that have been 
 3.  Click **Create project**. A project is generated that contains only those elements in the selected model that were found to have conflicts after the hotfix was applied.
 4.  Open the designer for the conflicting element to view conflicts, and resolve them by using the tools that are provided.
 
-<!--The Office Mix at <https://mix.office.com/watch/1rl75ei2cs6d7> provides an introduction to the conflict resolution tools in the development environment.-->
-
 ## Build and test on a local VM
 Build all models that are affected by the hotfix, and test your application.
 
@@ -142,3 +139,6 @@ After a hotfix has been installed on a development VM as described in this artic
 ## Deploy
 After you’ve applied a metadata hotfix to your development environment, resolved conflicts, and validated your changes, you must create a deployable package and apply your changes to your test or sandbox environment. If you use a build instance for build and test automation, the build process will automatically create the deployable package for you. For more information, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

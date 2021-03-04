@@ -18,7 +18,6 @@ ms.search.form: OMLegalEntity
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28871
 ms.search.region: Germany
@@ -42,3 +41,6 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

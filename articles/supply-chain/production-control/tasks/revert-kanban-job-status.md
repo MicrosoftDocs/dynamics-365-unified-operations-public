@@ -17,12 +17,11 @@ ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -57,3 +56,6 @@ This procedure focuses on reverting an incorrect kanban job status. This is usef
     * Select the same job.  
     * Notice that the job status for the kanban job is reverted to Planned, which is indicated by an empty kanban icon.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

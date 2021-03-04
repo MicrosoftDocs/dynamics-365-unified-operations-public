@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 27021
 ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
@@ -70,3 +69,6 @@ Commerce Data Exchange: Real-time Service is an integrated service that provides
 [![Real-time Service](./media/rts.png)](./media/rts.png) 
 
 A predefined Real-time Service profile is created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

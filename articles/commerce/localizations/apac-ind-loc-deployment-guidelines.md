@@ -22,7 +22,6 @@ ms.reviewer: josaw
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: jiaqia
-ms.search.scope: Retail
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
 
@@ -686,3 +685,6 @@ Follow these steps to create deployable packages that contain components, and to
 
 7. Run **msbuild** for the whole Retail SDK to create deployable packages.
 8. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

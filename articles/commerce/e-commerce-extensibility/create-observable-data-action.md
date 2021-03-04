@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -192,3 +191,6 @@ By taking advantage of the **status**, **result**, and **error** properties that
 [Data action overrides](data-action-overrides.md)
 
 [Data action hooks](data-action-hooks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

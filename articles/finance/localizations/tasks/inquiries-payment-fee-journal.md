@@ -17,12 +17,11 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, VendPaymentFeeSu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -48,3 +47,6 @@ Role 'AP coordinator' is required for this procedure.
 5. Click Payment fee summary.
     * Review the vendor payment fee summary.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

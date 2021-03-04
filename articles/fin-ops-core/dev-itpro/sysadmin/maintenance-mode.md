@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance mode
-description: This topic provides information about maintenance mode, which is a system-wide setting that lets system administrators safely make system changes that might affect system functionality.
+description: This topic desribes maintenance mode, which is a system-wide setting that lets system administrators make system changes that can affect system functionality.
 author: laneswenka
 manager: AnnBe
 ms.date: 05/10/2019
@@ -18,7 +18,6 @@ ms.search.form: SysConfiguration
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70292
 ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
@@ -101,3 +100,6 @@ You can turn off maintenance mode by running the following command.
 J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
