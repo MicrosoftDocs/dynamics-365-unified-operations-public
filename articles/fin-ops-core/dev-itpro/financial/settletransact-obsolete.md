@@ -149,5 +149,4 @@ This functionality uses flights. To test it, you must turn on the flight in a no
 
 The name of the flight is **EnableCustTransSettleTransaction**.
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
