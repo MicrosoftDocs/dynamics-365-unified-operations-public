@@ -18,7 +18,6 @@ ms.search.form: CustBillingClassification, CustBillingCode, CustCustomField
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19491
 ms.assetid: 47624566-0b4c-41dc-9cd4-801e213b5da3
@@ -94,3 +93,6 @@ No, but there’s a way to get the results you need anyway. Let’s say that you
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

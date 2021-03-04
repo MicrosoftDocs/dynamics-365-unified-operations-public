@@ -18,13 +18,12 @@ ms.search.form: CAMDimension
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 256254
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -60,3 +59,6 @@ After the data is imported into Cost accounting, you can use it to build various
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

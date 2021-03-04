@@ -18,7 +18,6 @@ ms.search.form: LedgerTransVoucher
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13031
 ms.assetid: 281c7ea6-4dfd-4d1f-994f-c361ee299dbe
@@ -66,3 +65,6 @@ In addition to the financial reports, you can use the following ledger reports t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

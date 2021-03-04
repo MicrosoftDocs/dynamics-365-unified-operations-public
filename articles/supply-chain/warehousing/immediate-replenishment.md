@@ -13,12 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSLocDirTable
+ms.search.form: WHSLocDirTable, WHSReplenishmentTemplates
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
@@ -61,3 +60,6 @@ If immediate replenishment is selected for a location directive line, but no rep
 
 - Make sure that the demand replenishment template that is applied is set up to use the correct location templates and work templates of the **Replenishment** type.
 - Make sure that there is enough on-hand inventory at the locations where the demand replenishment template searches for on-hand inventory for replenishment.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

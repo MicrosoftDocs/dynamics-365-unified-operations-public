@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -133,3 +132,6 @@ After you review the logs and determine the cause of the failure, complete one o
     > This option should **not** be used on a production environment. However, it can be used on a sandbox deployment to restore the environment to a healthy state. 
     
     > Because this option requires that you do a fresh deployment of the environment, you lose any updates that were previously applied. Any customizations and binary updates must be reapplied to the environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

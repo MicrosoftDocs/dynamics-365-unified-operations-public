@@ -13,16 +13,15 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage   
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCImport
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -40,3 +39,6 @@ Exporting data for a product configuration model requires that you have at least
 5. Click Export product model.
     * The download behavior varies from browser to browser depending on how the security settings are set up.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

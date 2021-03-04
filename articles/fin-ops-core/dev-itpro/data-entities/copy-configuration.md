@@ -2,8 +2,7 @@
 # required metadata
 
 title: Copy configuration data between companies or legal entities overview
-description: This topic describes how to use a configuration data project and configuration data templates to move configuration data for a company or legal entity between instances of Finance and Operations.
-
+description: This topic describes how to use a data project and data templates to move configuration data for a company or legal entity between app instances.
 author: mikefalkner
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,12 +18,11 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77523
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: sericks
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
 
@@ -347,3 +345,6 @@ When you add entities, the mappings are created in the context of the country or
 
 > [!NOTE]
 > By default, the DAT company doesn't have a country/region context. Some entities, such as the entities that are used for transaction codes and 1099 fields, won't be mapped correctly if they are added to a data project for the DAT company, because a country/region context is expected.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

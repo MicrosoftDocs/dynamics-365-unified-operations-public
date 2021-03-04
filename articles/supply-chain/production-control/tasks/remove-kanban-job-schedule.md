@@ -17,7 +17,6 @@ ms.search.form: KanbanJobSchedulingListPage, SysLookupMultiSelectGrid, KanbanJob
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -49,3 +48,6 @@ This procedure focuses on removing a planned process kanban job from the schedul
 4. Click OK.
     * This will revert the current job status from 'Planned' to 'Not planned' and remove it from the process board.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

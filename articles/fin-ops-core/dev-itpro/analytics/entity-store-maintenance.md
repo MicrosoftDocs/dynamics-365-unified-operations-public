@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
@@ -71,3 +70,6 @@ After refreshing the entity store (as described above), redeploy the reports usi
 
 > [!NOTE]
 > Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete and redeploy the report after the maintenance activity is completed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

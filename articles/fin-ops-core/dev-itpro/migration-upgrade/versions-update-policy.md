@@ -18,7 +18,6 @@ ms.search.form: SysAbout
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 69914
 ms.search.region: Global
@@ -59,7 +58,7 @@ The Finance and Operations online service is covered by the Modern Lifecycle Pol
      
       Customers operating on release 8.1 must update to the most current service update to deploy non-critical updates.
 
-> [!Note]
+> [!NOTE]
 > Application and platform releases expire at the end of the month of their software lifecycle.
 >
 > Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on an older version. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
@@ -173,3 +172,6 @@ Use of the VHDs is subject to the [Software license terms](https://go.microsoft.
 | Platform update 12 / Application release 7.2 | FinandOps7.2PlatUpdate12.vhd | May 24, 2018            |
 | Platform update 12 / Application release 7.3 | FinandOps7.3PlatUpdate12.vhd | June 05, 2018           |
 | Platform update 15 / Application release 7.3 | FinandOps7.3withPlatUpdate15 | December 08, 2018       |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

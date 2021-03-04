@@ -17,7 +17,6 @@ ms.search.form:  CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -56,6 +55,9 @@ The following setup needs to be completed for data to display in **Customer cred
 4. Define exchange rates between transaction currencies and accounting currency, accounting currency, and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
 5. Go to **System administration > Setup > Entity Store** to refresh the **CustCollectionsBIMeasurementsV2** aggregate measurement.
 
+>[!NOTE] 
+> Aging period definitions must be set up in **Accounts receiveable parameters > Collections > Collections defaults** to enable aging data in the Power BI content.
+
 ## Accessing the Power BI content
 
 The **Credit and collections management** Power BI content is shown in the **Customer credit and collections** workspace.
@@ -78,3 +80,6 @@ The **CustCollectionsBICrossCompany** Power BI content includes a report that co
 | Collections letters         | <ul><li>Collection code amounts</li><li>Collection code amount details</li><li>Collection letter amount per company</li><li>Collection letter amount per customer group</li><li>Collection letter amount by region</li></ul> |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the export underlying data functionality to export underlying data that is summarized on a visualization.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

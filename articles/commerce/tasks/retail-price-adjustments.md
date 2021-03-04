@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPeriodic
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -55,3 +54,6 @@ This procedure will walk through creating a commerce price adjustment. A price a
 14. Close the page.
 15. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

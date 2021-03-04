@@ -17,7 +17,6 @@ ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -79,3 +78,6 @@ This procedure is intended for inventory accountants. This procedure is for a fe
 10. Click Packing slip.
 11. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

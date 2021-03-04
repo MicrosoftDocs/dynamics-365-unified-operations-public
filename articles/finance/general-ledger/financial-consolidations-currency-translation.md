@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -109,6 +108,7 @@ To view the results of the consolidation, you have multiple options:
     ![Consolidation transactions on the Consolidations page](./media/managing-consolidation-transactions.png "Consolidation transactions on the Consolidations page")
 
 To run the consolidation again, you can just process the consolidation. Alternatively, you can first select **Remove the transactions** on the **Consolidations** page.
+In the event, the balances on your consolidated account are not accurate, these balances can be corrected using the **Closing period adjustments** page.
 
 ## Consolidate with import
 The Consolidate with import functionality works like the Consolidate online functionality. When you select the legal entities, you will browse out to the source file that contains the data.
@@ -162,6 +162,7 @@ For more information about how currency revaluation works in the **General ledge
 - Elimination journals can be posted only to the Current layer.
 - Only operating balances are consolidated. Therefore, to see opening balances, you must still run a year-end close in the consolidation company.
 - You can post a daily journal in an elimination company, but not in a consolidation company.
+- Adjustments to balances in a consolidation company can only be made using the **Closing period adjustments** page. 
 
 ## Benefits of using Financial reporting for financial consolidations and currency translation, or to complement Consolidate online for consolidated reporting
 Customers who use Financial reporting for financial consolidations and currency translation, or to complement Consolidate online for consolidated reporting, will gain various benefits:
@@ -186,3 +187,6 @@ Here are some of the consolidation scenarios that Financial reporting supports:
 
 ## Generating consolidated financial statements
 For information about scenarios where you might generate consolidate financial statements, see [Generate consolidated financial statements](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

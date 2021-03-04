@@ -18,14 +18,13 @@ ms.search.form: TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 
@@ -163,3 +162,6 @@ The following table shows the generic rule.
 | Sales Tax Receivable | Negative              | Tax Receivable Account | Negative(Credit)  |
 | Sales Tax Payable    | Positive              | Tax Payable Account    | Negative(Credit)  |
 | Sales Tax Payable    | Negative              | Tax Payable Account    | Positive (Debit)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

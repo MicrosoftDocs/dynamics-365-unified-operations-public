@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -91,3 +90,6 @@ ms.dyn365.ops.version: 10.0.4
 8. Select **Save**, and then select **Close**.
 
     ![New active configuration](media/update-configuration-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

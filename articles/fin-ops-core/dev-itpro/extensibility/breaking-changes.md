@@ -19,13 +19,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: smithanataraj
+ms.author: smnatara
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
 ---
@@ -108,3 +107,6 @@ If any data model change requires that a data upgrade script be run, consumers m
 	 
 ## Metadata extensions
 + **Not following the naming guidelines for metadata or augmentation classes** – Consumers might have elements that have the same name.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

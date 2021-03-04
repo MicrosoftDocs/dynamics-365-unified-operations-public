@@ -2,7 +2,7 @@
 # required metadata
 title: Services module
 description: Various services that are available to the application in client runtime.
-author: shadykdc
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -13,13 +13,12 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
@@ -144,3 +143,6 @@ ExpressionOperator: "Is" &#124; "IsNot" &#124; "Contains" &#124; "BeginsWith" &#
 
 Represents possible values for the expression operator used in defining filters and in other places
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

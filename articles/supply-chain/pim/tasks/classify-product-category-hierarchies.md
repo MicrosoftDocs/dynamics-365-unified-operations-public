@@ -17,7 +17,6 @@ ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -45,3 +44,6 @@ This topic describes how to classify a product using category hierarchies. Use c
 11. In the **Category** field, enter or select a value.
 12. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

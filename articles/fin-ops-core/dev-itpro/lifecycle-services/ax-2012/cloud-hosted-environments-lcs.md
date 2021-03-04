@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13661
 ms.assetid: 88d3758d-7d54-4c66-8b1a-f7a9ad8c825e
@@ -45,3 +44,6 @@ When you use the Cloud-hosted environments tool, you’ll need to select the typ
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

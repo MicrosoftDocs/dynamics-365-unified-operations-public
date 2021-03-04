@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -35,6 +34,13 @@ This topic describes how to set up and use inventory journal approval workflows 
 
 > [!NOTE]
 > Inventory journal approval workflows apply only to transactions recorded using the Inventory Management module. They don't work with inventory journals triggered from the Warehouse Management module.
+
+## Turn on the inventory journal approval workflows feature
+
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Inventory and warehouse management*
+- **Feature name:** *Inventory journal approve workflow*
 
 ## Create your inventory journal approval workflows
 
@@ -116,3 +122,6 @@ To review the workflow history for a journal:
 1. On the navigation pane, expand **Inventory management \> Journal entries \> Items** and then select an inventory journal type.
 1. Open the relevant journal.
 1. Select the **Workflow** button on the Action Pane to open a drop-down dialog box. Select **Workflow history**. For more information, see [View workflow history](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

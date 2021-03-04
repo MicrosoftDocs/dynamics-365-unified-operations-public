@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -91,3 +90,6 @@ You can apply interest and fines on vendor payments that are delayed. The intere
 57. Close the page.
 58. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

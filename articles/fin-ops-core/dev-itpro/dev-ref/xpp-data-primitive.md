@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150183
 ms.assetid: 0ff4e759-851d-4b53-aa67-6f03eee53f02
@@ -502,3 +501,6 @@ public void UtcdatetimeMethod()
     utcdatetime myUtc4 = DateTimeUtil::parse("1988-07-20T13:34:45");
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

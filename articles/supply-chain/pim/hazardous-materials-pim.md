@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: 
 
@@ -65,3 +64,6 @@ To start to configure this information, create a regulation that you can use to 
 ## Warehouse management
 
 When a shipment is prepared, several new reports can be printed. These reports use the information that you set up in Product information management.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

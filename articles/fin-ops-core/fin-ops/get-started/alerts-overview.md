@@ -18,7 +18,6 @@ ms.search.form: EventCreateRule
 audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -94,3 +93,6 @@ The [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s) v
 The [Alert rule options](https://youtu.be/cpzimwOjicM) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

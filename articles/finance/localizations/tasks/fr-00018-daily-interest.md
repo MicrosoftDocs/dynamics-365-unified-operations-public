@@ -17,7 +17,6 @@ ms.search.form: SalesTableListPage, SalesEditLines
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France
@@ -48,3 +47,6 @@ This functionality is available for legal entities whose primary address is in F
 8. Click OK.
 9. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

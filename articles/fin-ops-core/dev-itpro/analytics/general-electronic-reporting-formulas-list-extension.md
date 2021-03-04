@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend the list of Electronic reporting (ER) functions
-description: Various types of functions are supported in Electronic reporting expressions for data transformation - text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions). In addition to built-in functions, Electronic reporting lets you extend the list of available functions. This article includes an overview of key tasks that you must complete to introduce a new function.
+description: This article includes an overview of key tasks that you must complete to introduce a new function.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.search.form: ERExpressionDesignerFormula
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58911
 ms.assetid: 62c740dc-6a88-4ded-9c41-6857b82b335e
@@ -120,3 +119,6 @@ The following guidance is intended to help you design your custom Electronic rep
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,13 +18,12 @@ ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -43,3 +42,6 @@ The image below is an illustration of the interfaces to other modules in Finance
 ![Overview of how Asset Management integrates](media/overview-integrate2.jpg)
 
 Asset Management enables you to efficiently manage and carry out tasks related to managing and servicing many types of equipment in your company, for example, machines, production equipment, and vehicles. Asset Management supports solutions across numerous industries.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

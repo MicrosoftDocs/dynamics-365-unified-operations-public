@@ -18,7 +18,6 @@ ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageD
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 
 ms.assetid: 
@@ -61,3 +60,6 @@ Before you can use this feature, you must enable it on your system. Administrato
     > The form won't include subtotals that are defined in the report layout.
 
 The **Inventory aging report** data entity lets you export the output of an **Inventory aging report storage** report by applying a filter for the **Process Identifier – Name** field to any format that Data management supports.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

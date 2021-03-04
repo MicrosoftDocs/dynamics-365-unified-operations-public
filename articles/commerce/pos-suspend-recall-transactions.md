@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
@@ -87,3 +86,6 @@ To quickly and easily recall a suspended transaction, scan the barcode on the pr
 ### Void a suspended transaction
 
 You can void suspended transactions either by recalling the transaction and then performing the **Void transaction** operation, or by selecting the transaction in the **Recall transaction** list and selecting **Void** on the app bar. Alternatively, the store can be configured to prompt users to void suspended transactions when they close their shift.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

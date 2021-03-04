@@ -17,7 +17,6 @@ ms.search.form: VendPostDatedChecks, LedgerJournalTable, LedgerJournalTransDaily
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -55,3 +54,6 @@ The role of this procedure is Treasurer. This procedure uses the USMF demo compa
 10. Click Voucher.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

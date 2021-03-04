@@ -17,12 +17,11 @@ ms.search.form: BatchJob, SysRecurrence, BatchAlerts
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -58,3 +57,6 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
     - **Withhold**: Set the batch job as **withhold** so it is withheld from the batch job scheduler. Equivalent to *stop*.
     - **Waiting**: Set the batch job as **waiting** so it is waiting to be picked up by the batch job scheduler. Equivalent to *go*.
 5. Click **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

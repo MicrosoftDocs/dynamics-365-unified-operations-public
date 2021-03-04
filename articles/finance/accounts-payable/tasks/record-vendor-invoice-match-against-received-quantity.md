@@ -17,7 +17,6 @@ ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, V
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -68,3 +67,6 @@ This procedure uses the USMF demo company. The accounts payable manager or accou
 10. On the Action Pane, click Review.
 11. Click Matching details.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

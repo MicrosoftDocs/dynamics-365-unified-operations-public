@@ -13,16 +13,15 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSParameters
+ms.search.form: WHSParameters, WHSWorkPool
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -77,3 +76,6 @@ You can find opinions, news, and other information about Warehouse management an
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

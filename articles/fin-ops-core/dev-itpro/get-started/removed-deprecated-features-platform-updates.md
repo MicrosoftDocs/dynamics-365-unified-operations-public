@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -39,13 +38,81 @@ This topic describes features that have been removed, or that are planned for re
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Feature removed effective January 28, 2021
+
+### Batch job to handle SQL index defragmentation
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | In order to reduce the overhead of operating, monitoring, and maintaining the index management by customers, this feature has been removed. |
+| **Replaced by another feature?**   | Going forward, the index maintenance will be performed by Microsoft services. This will happen continuously without affecting the user workloads. |
+| **Product areas affected**         | Finance and Operations apps|
+| **Deployment option**              | Cloud deployment - affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | This feature is removed. |
+
+
+## Platform updates for version 10.0.17 of Finance and Operations apps
+
+> [!IMPORTANT]
+> Version 10.0.17 is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### Visual Studio 2015
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | To support the latest versions of Visual Studio, some changes have to be made to the X++ extensions for Visual Studio. These changes are incompatible with Visual Studio 2015. |
+| **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Upon updating, the previous X++ tools will be removed from Visual Studio 2015, and the updated tools will not install on Visual Studio 2015. There is no impact on hosted builds. For build virtual machines, the build pipeline (build definition) needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+
+### User avatar 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The user avatar that displays on the right side of the navigation bar was retrieved using an API from the Dynamics 365 header control, which has been deprecated. |
+| **Replaced by another feature?**   | Users will see their initials in a circle in the navigation bar instead. This is the same visual currently used on development machines. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Removed as of version 10.0.17 |
+
+### Enterprise Portal (EP) deprecation  
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The metadata artifacts associated with Dynamics AX 2012 Enterprise Portal (EP) have been deprecated, as EP was never supported in the Finance and Operations apps. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. All EP code is scheduled to be removed in the October 2021 release. |
+
+## Platform updates for version 10.0.15 of Finance and Operations apps
+
+### Internet Explorer 11 support for Dynamics 365 is deprecated
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Effective December 2020, Microsoft Internet Explorer 11 support for all Dynamics 365 products is deprecated, and Internet Explorer 11 won’t be supported after August 2021.<br><br>This will impact customers who use Dynamics 365 products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 products. |
+| **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
+| **Product areas affected**         | All Dynamics 365 products |
+| **Deployment option**              | All|
+| **Status**                         | Deprecated. Internet Explorer 11 won’t be supported after August 2021.|
+
+
+### Visual Studio add-in to apply metadata hotfixes
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Metadata hotfixes are no longer supported with the [One Version](../../fin-ops/get-started/one-version.md) service updates that were introduced in July 2018 with version 8.1. |
+| **Replaced by another feature?**   | Individual metadata hotfixes are not available for supported versions. Cumulative quality updates are applied instead. |
+| **Product areas affected**         | Visual Studio add-ins |
+| **Deployment option**              | Development virtual machines |
+| **Status**                         | With version 10.0.15, the add-in is no longer included in the Visual Studio tools. |
+
 
 ## Platform updates for version 10.0.14 of Finance and Operations apps
-
-> [!NOTE]
-> Version 10.0.14 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
-
 
 ### Online users page 
 
@@ -56,6 +123,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Product areas affected**         | System Administration |
 | **Deployment option**              | All |
 | **Status**                         | By October 2021 this form will be removed.   |
+
 
 ## Platform updates for version 10.0.13 of Finance and Operations apps
 
@@ -133,7 +201,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Once the availability of new virtual machines (VMs) with Visual Studio 2017 is announced, existing VMs with only Visual Studio 2015 will have to be redeployed by Release Wave 1 of 2021. |
+| **Status**                         | Virtual machines deployed on version 10.0.13 (Platform update 37) or later contain Visual Studio 2017. Version 10.0.16 (Platform update 40) is the final release with support for Visual Studio 2015. Virtual machines with only Visual Studio 2015 will not be able to update to version 10.0.17 (Platform update 41). |
 
 ### Field groups containing invalid field references
 
@@ -178,3 +246,6 @@ Detailed information about objects in Finance and Operations apps can be found i
 ## Previous announcements about removed or deprecated features
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../migration-upgrade/deprecated-features.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

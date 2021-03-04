@@ -18,7 +18,6 @@ ms.search.form:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
@@ -245,3 +244,6 @@ The final amount due for prod1 is 6.37, Prod 2 is 12.75, and Prod 3 is 7.5.
 
 > [!NOTE]
 > For the same discount setting, the results vastly differ depending on which discount concurrency control model is selected.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

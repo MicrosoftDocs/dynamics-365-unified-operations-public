@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -131,3 +130,6 @@ For details on setting up network connected peripherals the docs [Support for ne
 ## Additional resources
 - [Payments FAQ](payments-retail.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

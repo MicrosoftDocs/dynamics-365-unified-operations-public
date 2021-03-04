@@ -2,7 +2,7 @@
 # required metadata
 
 title: Form styles and patterns
-description: This topic describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this topic. 
+description: This topic describes the concept of form patterns and discusses the process for applying and removing patterns.
 author: jasongre
 manager: AnnBe
 ms.date: 11/09/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28891
 ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
@@ -169,3 +168,6 @@ Some forms are structurally close to a defined form pattern, but because some as
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

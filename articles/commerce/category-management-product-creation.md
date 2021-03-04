@@ -12,12 +12,11 @@ ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
-ms.search.form: 
+ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
@@ -59,3 +58,6 @@ Additionally, in the enhanced product category structure, a merchandising manage
 You can use the new enhanced structure for product properties to select updated product properties that must be pushed to the associated products. On the **Commerce product hierarchy** page, on the Action Pane, select **Category**, and then select **Update products** to open the **Update products** dialog box.
 
 ![Update products dialog box](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

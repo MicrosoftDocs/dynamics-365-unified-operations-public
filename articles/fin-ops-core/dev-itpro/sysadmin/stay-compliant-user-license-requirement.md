@@ -5,7 +5,7 @@ title: Stay compliant with user licensing requirements
 description: This topic provides information about how you can stay compliant with the user licensing requirements for Finance and Operations apps.
 author: peakerbl 
 manager: AnnBe
-ms.date: 08/18/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -56,11 +55,17 @@ You assign roles to users on the **Users** page (**System administration \> User
 
 The maximum license requirement determines the actual licensing requirement for a user. If any license requirement is identified as **Operations**, you must use the [User license estimator](#user-license-estimator-report) report to determine the full user licensing requirements.
 
+> [!NOTE]
+> Starting with platform update for version 10.0.15, the required license types are extended to include application specific license types such as Commerce, Finance, and Supply Chain Management. This extension makes it possible to view the actual license requirements when you assign roles to users and when using the Roles for the selected user FactBox. More than one value can be displayed for the required license type. 
+
 ## View permissions page
 
 During security configuration on the **Configure security** page (**System administration \> Security \> Configure security**), you can select any security object, a role, duty, or permissions, and then select **View permissions** to view all permissions that are currently included and their licensing requirements. The header of the **View permissions** page shows the required license level.
 
 ![View permissions page](media/ViewPermissons.png)
+
+> [!NOTE]
+> Starting with platform update for version 10.0.15, the required license types are extended to include application specific license types such as Commerce, Finance, and Supply Chain Management. This extension makes it possible to identify the specific security objects that determine the actual license requirements while also configuring security. More than one value can be displayed for the required license type. 
 
 ## User license counts report
 
@@ -111,3 +116,6 @@ For information about how to buy and license Finance and Operations apps, see [M
 For information about how to assign licenses to users in the Microsoft 365 admin center, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
 Additional user licenses are required when multiple implementation projects exist for the same tenant. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#licensing-requirements).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

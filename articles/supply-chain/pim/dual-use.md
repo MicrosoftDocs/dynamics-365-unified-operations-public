@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -112,3 +111,6 @@ You use the **Dual use certificates** page to set up and manage the required dua
     | Print on invoice | Select this check box to print the certificate number on invoices that are addressed to the specified country during the specified date range. |
     | Print on packing slip | Select this check box to print the certificate number on packing slips that are addressed to the specified country during the specified date range. |
     | Print on sales order | Select this check box to print the certificate number on sales orders that are addressed to the specified country during the specified date range. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

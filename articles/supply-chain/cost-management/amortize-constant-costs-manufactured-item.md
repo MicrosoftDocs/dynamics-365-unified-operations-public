@@ -18,7 +18,6 @@ ms.search.form: BOMCalcDialog, BOMCalcTable, BOMCalcTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274503
 ms.assetid: 535ab25d-a031-4e8c-84ec-478f2987a1ad
@@ -51,3 +50,6 @@ The calculated amount of a manufactured item’s amortized constant costs is ter
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

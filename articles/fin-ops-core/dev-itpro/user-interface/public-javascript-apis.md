@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 125983
 ms.assetid: 52a14e01-8e80-4e12-8c92-ab8e28ffed62
@@ -40,3 +39,6 @@ To minimize future breaks in extensible controls, an effort has been made to dif
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

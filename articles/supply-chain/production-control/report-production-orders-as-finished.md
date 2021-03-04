@@ -18,7 +18,6 @@ ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27061
 ms.assetid: 1c2dfc54-a293-49f2-9b96-5a912ac5762c
@@ -52,3 +51,6 @@ You can set a production order to **Report as finished** through the standard pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

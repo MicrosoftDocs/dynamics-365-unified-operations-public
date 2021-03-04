@@ -2,7 +2,7 @@
 # required metadata
 
 title: Azure Data Lake overview
-description: This topic provides an overview of Microsoft Azure Data Lake. Data Lake is a technology that is designed to make big data analytics and artificial intelligence (AI) available in the Azure cloud.
+description: This topic provides an overview of Microsoft Azure Data Lake.
 author: MilindaV2
 manager: AnnBe
 ms.date: 05/27/2020
@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope:
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
@@ -31,6 +30,8 @@ ms.dyn365.ops.version: Platform update 34
 # Azure Data Lake overview
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## What is Azure Data Lake?
 
@@ -108,10 +109,10 @@ Here is an example:
 - You can attach a Common Data Model folder to Power BI dataflows as a reference dataflow. You can work with Power BI dataflows and further reshape the data, or you can create Power BI datasets and reports.
 - You can use Data Factory or other data transformation tools to further shape the data.
 
-Like Finance and Operations apps, other services (including Common Data Service), Azure IoT, and many third-party tools and service can understand and work with data in Common Data Model folders. The list of services is growing. Here are some examples:
+Like Finance and Operations apps, other services (including Dataverse), Azure IoT, and many third-party tools and service can understand and work with data in Common Data Model folders. The list of services is growing. Here are some examples:
 
-- Common Data Service lets you export data to your own data lake. For more information, see [Exporting CDS data to Azure Data Lake is Generally Available](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/).
-- Power users can transform data in Data Lake by using Common Data Service dataflows. For more information, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/common-data-model/data-lake).
+- Dataverse lets you export data to your own data lake. For more information, see [Exporting Dataverse data to Azure Data Lake is Generally Available](https://powerapps.microsoft.com/blog/exporting-cds-data-to-azure-data-lake-preview/).
+- Power users can transform data in Data Lake by using Dataverse dataflows. For more information, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/common-data-model/data-lake).
 
 ## How you can use Data Lake later if you're currently using BYOD
 
@@ -202,3 +203,6 @@ You can plan your transition to Data Lake in multiple stages, as shown in the fo
 2. **Getting easy access to data:** As you gain access to tables, entities, and aggregate measurements in Data Lake, you will be able to retire BYOD and use the data that is readily available. Therefore, management effort and costs can be reduced, as was discussed earlier. You can keep your existing downstream data warehouses and pipelines to manage project scope and budget.
 3. **Empowering power users:** Analytical workspaces will be transitioned to Data Lake as a service update. Therefore, ready-made analytical workspaces are based on the same data that is available in the data lake. Power users can easily extend analytical workspaces. When the service update occurs, you will be able to make the full capabilities of PowerBI.com available to your power users. By using capabilities such as Power BI dataflows, power users can easily combine data from online services and data is already available in the data lake. The same reports that are available in analytical workspaces can be consumed directly on PowerBI.com.  
 4. **Modernizing your previous data warehouse:** Modernization will probably be the investment that brings the most benefits. You can move data that currently exists in your on-premises data warehouse to the cloud. You can rely on cloud-based computing services and apply the same transformations on a pay-per-use basis. You can also combine your business data with sensor and device data.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERCompon
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -266,3 +265,6 @@ In the preceding example, you have accessed application-specific parameters of a
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Configure ER formats to use parameters that are specified per legal entity](er-app-specific-parameters-configure-format.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

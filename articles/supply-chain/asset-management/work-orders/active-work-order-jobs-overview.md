@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -48,3 +47,6 @@ The illustration below shows an example of the **Active work order maintenance j
 
 For a short description of the buttons on the **Active work order maintenance jobs** list page, refer to [Introduction to work orders](../work-orders/introduction-to-work-orders.md) where identical buttons are described.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

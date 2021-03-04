@@ -18,7 +18,6 @@ ms.search.form: CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13991
 ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
@@ -56,3 +55,6 @@ You can identify canceling and correcting invoices in two ways:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

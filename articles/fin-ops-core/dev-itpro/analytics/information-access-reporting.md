@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266104
 ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
@@ -223,3 +222,6 @@ Standard financial reports are provided using the default main account categorie
 - User controls are tailored for the specialized needs of financial reporting.
 - Create roll-up reports containing data across companies or business units.
 - Utilizes a financial data mart for optimized performance.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

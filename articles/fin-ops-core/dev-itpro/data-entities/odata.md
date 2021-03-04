@@ -21,7 +21,6 @@ audience: Developer
 # ms.devlang: 
 
 ms.reviewer: sericks
-ms.search.scope: Operations
 
 # ms.tgt_pltfrm: 
 ms.custom: 24841
@@ -77,8 +76,6 @@ We provide an OData REST endpoint. This endpoint exposes all the data entities t
 
 > [!NOTE]
 > When working with data entities using OData, all fields in the entity key must be provided to make a successful OData call.
-
-<!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
 
 Code examples for consuming OData services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/ODataConsoleApplication).
 
@@ -341,3 +338,6 @@ OData does not support array fields in entities. This must be taken into conside
 
 ### After restarting AOS, the first OData call may take a long time to process
 The first OData call processed by an AOS that was restarted may take a long time to process because the metadata is not being cached. This latency can be avoided by warming up OData on AOS startup. For more details, see  [Build OData metadata cache when the AOS starts](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/odata-warmup).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

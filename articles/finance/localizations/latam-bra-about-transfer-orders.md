@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
@@ -53,3 +52,6 @@ You can do the following to transfer items between fiscal establishments by usin
   - Return a transfer fiscal document. For more information, see [Return a transfer fiscal document](https://review.docs.microsoft.com/dynamicsax-2012/appuser-itpro/bra-return-a-transfer-fiscal-document?branch=master).
 
   - Cancel an incorrect transfer order. For more information, see [Cancel a transfer fiscal document](https://review.docs.microsoft.com/dynamicsax-2012/appuser-itpro/bra-cancel-a-transfer-fiscal-document?branch=master).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

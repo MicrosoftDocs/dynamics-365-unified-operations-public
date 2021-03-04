@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
@@ -652,3 +651,6 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [New or updated task guides (November 2016)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

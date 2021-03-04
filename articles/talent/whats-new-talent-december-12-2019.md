@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (December 10, 2019)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
-manager: AnnBe
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for December 10, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
@@ -18,18 +18,19 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Talent
 
 ---
 # What's new or changed in Dynamics 365 Talent (December 10, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
@@ -67,15 +68,15 @@ With this release, **HcmWorkerPayrollInfo** records are no longer created under 
 
 This release includes a change to populate the action message log when an action fails in certain scenarios. 
 
-### Common data service integration batch job creation (388030)
+### Dataverse integration batch job creation (388030)
 
-With this change, batch jobs for Common Data Service integration are created when the service is enabled.
+With this change, batch jobs for Dataverse integration are created when the service is enabled.
 
-### Additional pick list values to custom fields aren't reflected in Common Data Service after clicking apply on the custom fields form (379599)
+### Additional pick list values to custom columns aren't reflected in Dataverse after clicking apply on the custom columns form (379599)
 
-With this change, new pick list values entered in Talent are now synchronized to Common Data Service when you apply your changes.
+With this change, new pick list values entered in Talent are now synchronized to Dataverse when you apply your changes.
 
-### Update to Common Data Service for then Leave bank transaction entity turns into an insert on Talent side (352938)
+### Update to Dataverse for then Leave bank transaction table turns into an insert on Talent side (352938)
 
 This change corrects an issue where an update to a leave bank transaction creates a new record in Talent.
 
@@ -87,3 +88,6 @@ Preview features are only available in **Sandbox** environments.
 
 See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: AssetTable, SysRecordInfo, SysRecordTemplatePromptOnCreate
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -47,3 +46,6 @@ This topic demonstrates how to create a record template so that field values tha
 13. Select **OK**.
 14. Select **Close**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

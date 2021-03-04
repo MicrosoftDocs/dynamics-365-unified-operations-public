@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -82,3 +81,6 @@ This procedure shows how to set up a loyalty program with two loyalty tiers. Thi
 39. Close the page.
 40. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

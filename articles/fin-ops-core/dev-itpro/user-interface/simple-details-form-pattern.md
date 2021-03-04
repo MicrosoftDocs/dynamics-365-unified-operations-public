@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14791
 ms.assetid: ee67618d-edc8-4bc5-bccc-6872c4af6273
@@ -155,3 +154,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   Investigate whether Simple Details forms that show a small amount of related content should have a different presentation than a full-page form.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

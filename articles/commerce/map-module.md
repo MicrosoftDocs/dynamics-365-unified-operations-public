@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang:
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt\_pltfrm:
 ms.custom:
 ms.assetid:
@@ -35,8 +34,6 @@ ms.dyn365.ops.version: Release 10.0.13
 
 
 This topic covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 A map module shows the locations of stores on an interactive map that is rendered by using the [Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/). A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. Map modules provide different views, such as Road, Aerial, and Streetside, that users can select to view map locations. They also allow for interactions such as zooming and using the user's location.
 
@@ -62,7 +59,7 @@ The following image shows an example of a map module that is used on a store loc
 
 ## Add allowed mapping URLs to a site's content security policy directives
 
-For the maps module to interact with Bing Maps, you must ensure that the following mapping URLs are allowed (also known as "whitelisted") per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various site CSP directives (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
+For the maps module to interact with Bing Maps, you must ensure that the following mapping URLs are allowed per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various site CSP directives (for example, **img-src**). For more information, see [Content security policy](manage-csp.md). 
 
 - To the **connect-src** directive, add **&#42;.bing.com**.
 - To the **img-src** directive, add **&#42;.virtualearth.net**.
@@ -86,3 +83,6 @@ For detailed information about how to configure a map module on a page, see [Sto
 [Manage Bing Maps for your organization](./dev-itpro/manage-bing-maps.md)
 
 [Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: ProdBOM
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70171
 ms.assetid: ce3b11ef-550e-49b7-8942-2607c2ec3c5c
@@ -53,3 +52,6 @@ Consider the following scenario: A piece of metal plate is required for a weldin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

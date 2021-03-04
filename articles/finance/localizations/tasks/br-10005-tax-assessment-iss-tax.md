@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -57,3 +56,6 @@ You can make the tax assessment for ISS tax for a given booking period, consider
 23. Close the page.
 24. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

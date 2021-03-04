@@ -19,7 +19,6 @@ ms.search.form: PowerBIPbixDeployForm
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
@@ -72,3 +71,6 @@ The following PowerBI.com solutions are available from [Microsoft AppSource](htt
 - Cost management
 - [Financial performance](financial-performance-power-bi-content-pack.md)
 - [Retail channel performance](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

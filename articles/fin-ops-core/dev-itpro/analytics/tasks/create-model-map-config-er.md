@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -71,3 +70,6 @@ These steps can be completed using any dataset. To complete these steps, you mus
     * Intrastat sample mapping  
 5. Click Create configuration.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

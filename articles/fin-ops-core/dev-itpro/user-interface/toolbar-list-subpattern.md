@@ -2,7 +2,7 @@
 # required metadata
 
 title: Toolbar and List subpattern
-description: This article provides information about the Toolbar and List form subpattern. This subpattern is used to show child collections for the parent entity as either a tabular grid or a tree. 
+description: This article provides information about the Toolbar and List form subpattern.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15931
 ms.assetid: a60f829b-e496-453b-9e58-f7cb4d67114f
@@ -135,3 +134,6 @@ This section will have answers to frequently asked questions that are related to
 **VendTable** 
 
 [![Previous version example](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

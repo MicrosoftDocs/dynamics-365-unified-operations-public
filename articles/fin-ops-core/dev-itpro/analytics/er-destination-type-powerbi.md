@@ -18,7 +18,6 @@ ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 
@@ -44,3 +43,6 @@ Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer 
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

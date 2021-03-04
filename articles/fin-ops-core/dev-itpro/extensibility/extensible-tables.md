@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -49,3 +48,6 @@ Avoid calling **doInsert()**, **doUpdate()**, and **doDelete()**. These methods 
 
 ## Field groups
 Always use field groups to group related fields, and to build forms and reports. By consistently using this approach, you enable the extension to surface additional fields in forms and on reports by extending the field group.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,13 +18,12 @@ ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation, CAMO
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -1419,3 +1418,6 @@ In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dumm
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

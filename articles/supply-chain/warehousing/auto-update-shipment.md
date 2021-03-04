@@ -18,7 +18,6 @@ ms.search.form: WHSWaveTemplateTable,SalesTableListPage,SalesTable,WHSWaveTableL
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -44,7 +43,7 @@ The auto-update shipment functionality applies to both sales order lines and tra
 
 The auto-update shipment functionality relies primarily on the shipment status to determine whether the quantity on a load line should be changed when a change is made on a sales order line or transfer order line. It also relies primarily on the shipment status to determine when a new load line should automatically be added to an existing load. When the shipment status is **Waved** or higher, no automatic update occurs.
 
-Wave status is also considered for automatic updates. When the wave that is related to the load line has a status of **Held**, **Executing**, **Released**, **Picked**, or **Shipped**, if a user tries to reduce the quantity on a load line (via a quantity decrease on the sales order line or transfer order line), the following error message is shown: "Reservations cannot be removed because there is work created which relies on the reservations." Additionally, when the wave has one of the previously mentioned wave statuses, if a user tries to indirectly increase the load line quantity by decreasing the quantity on the sales order line or transfer order line, the quantity on the load line isn't automatically increased. In this case, the load line must be manually updated.
+Wave status is also considered for automatic updates. When the wave that is related to the load line has a status of **Held**, **Executing**, **Released**, **Picked**, or **Shipped**, if a user tries to reduce the quantity on a load line (via a quantity decrease on the sales order line or transfer order line), the following error message is shown: "Reservations cannot be removed because there is work created which relies on the reservations." Additionally, when the wave has one of the previously mentioned wave statuses, if a user tries to indirectly increase the load line quantity by increasing the quantity on the sales order line or transfer order line, the quantity on the load line isn't automatically increased. In this case, the load line must be manually updated.
 
 ## Scenarios
 
@@ -145,3 +144,6 @@ The wave is processed and creates work for the reserved quantities on the load l
 If a shipment has a status of **Waved** or higher, updates to the quantity on a sales order line aren't reflected on or validated against a load line that is associated with the shipment. Changes to the quantity on a load line must be made directly on the load line.
 
 Validation is done after work has been created for the load line and a reservation has been made. A decrease in the quantity on the sales order line is then validated against the work line reservation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13281
 ms.assetid: 861f276d-adeb-4591-b53f-beafd1b77999
@@ -448,3 +447,6 @@ Each virtual machine that you deployed has a local administrator account. This a
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolution
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ This is the first of five procedures that demonstrate the customer payment proce
     * If the Import button is not available, it means that the configuration has been imported already.  
 9. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

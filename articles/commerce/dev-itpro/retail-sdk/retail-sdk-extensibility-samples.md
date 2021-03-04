@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 89803
 ms.assetid: 565d9e98-77eb-4495-987a-ad9e2de303cc
@@ -130,3 +129,6 @@ The Retail SDK includes extensibility samples. You can also use these projects a
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

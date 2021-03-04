@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24291
 ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
@@ -439,3 +438,6 @@ To validate right-to-left (RTL) support for your extensible control, you simply 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

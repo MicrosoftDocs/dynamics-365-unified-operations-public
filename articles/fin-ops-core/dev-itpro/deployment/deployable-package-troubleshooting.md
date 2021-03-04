@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 107013
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
@@ -208,3 +207,6 @@ Follow these steps to look for the DBSync.err file, find the errors, and inspect
     | Database execution failed: Invalid column name &#39;DEFAULTDIMENSION&#39;. CREATE VIEW | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
     | Database execution failed: Invalid object name &#39;PMBI\_DEPROJECTTIMESHEET&#39;. CREATE VIEW | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
     | %provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server%  | This issue should have been fixed in Platform Update 3. Retry the step. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

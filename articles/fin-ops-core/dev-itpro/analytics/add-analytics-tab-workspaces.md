@@ -18,7 +18,6 @@ ms.technology:
 audience: Application user, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
@@ -182,3 +181,6 @@ public static void initializeReportControl(
 | showFilterPane   | A Boolean value that indicates whether the filter pane should be shown (**true**) or hidden (**false**).     |
 | showNavPane      | A Boolean value that indicates whether the navigation pane should be shown (**true**) or hidden (**false**). |
 | defaultFilters   | The default filters for the Power BI report.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

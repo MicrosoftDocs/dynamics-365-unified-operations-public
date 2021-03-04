@@ -18,7 +18,6 @@ ms.search.form: SysCorpNetPrinterList
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
@@ -129,6 +128,13 @@ The Document Routing Agent now supports running in the background as a service. 
 
 Yes. The Azure Active Directory token must be refreshed every 90 days. Failing to do so will prevent the DRA from being able to authenticate and retrieve printing instructions applications.
 
+### Is the Document Routing Agent supported on Microsoft Windows Server 2019?
+
+Yes. The Document Routing Agent is supported on Microsoft Windows Server 2019.
+
+> [!NOTE]
+> If the server is configured to prevent background service, the Document Routing Agent client will not be able to run as a service. For more information, see [Run the Document Routing Agent as a Windows service](run-document-routing-agent-as-windows-service.md).
+
 ### Will Microsoft add support for Microsoft Windows Server 2008 servers?
 
 No, not at this time. There are several dependencies on Azure capabilities that are available only in Microsoft Windows Server 2012 R2 and Microsoft Windows Server 2016.
@@ -140,3 +146,6 @@ Yes. To access the agent installation links, the user must be part of the **Docu
 ### How many network printers can the Document Routing Agent support?
 
 The number of supported network printers depends on the number of legal entities and the number of network printers deployed. If you have fifty printers and one legal entity, a single Document Routing Agent can handle the load (although you'd want more than one to ensure high availability). If you have a large number of printers and legal entities, we recommend that you do some performance testing to determine the number of Document Routing Agents that you'll need.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

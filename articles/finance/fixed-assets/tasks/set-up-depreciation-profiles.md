@@ -17,7 +17,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -43,3 +42,6 @@ Depreciation profiles determine the type and the frequency of depreciation for a
 7. In the **Period frequency** field, select an option.
 8. Close the form.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

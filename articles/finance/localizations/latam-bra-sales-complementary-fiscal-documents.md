@@ -18,7 +18,6 @@ ms.search.form: BrazilParameters, FBFiscalDocument_BR, SalesComplementaryInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269194
 ms.assetid: 0c52b508-1044-48c1-9dfc-a590bbda5696
@@ -76,3 +75,6 @@ For more information, see the following topics:
  - [Cancel a customer fiscal document (project)](tasks/br-00092-cancel-customer-fiscal-document-project.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -63,3 +62,6 @@ Follow these steps to set up alerts for batch legacy forms.
 
 > [!NOTE] 
 > To receive email notifications, in the **Batch job alerts** dialog box, set the **Email** option to **Yes**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

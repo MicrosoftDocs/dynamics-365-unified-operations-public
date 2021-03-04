@@ -19,7 +19,6 @@ ms.search.form: SysTaskRecorderPane
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24271
 ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
@@ -476,3 +475,6 @@ After a business process recording has been completed by using Task recorder, a 
   -   Does not support displaying a "generic value" during the task guide. Currently displays the value that was used during recording.
 - Filter pane, which is the filter that pops out from the left side
   -   The task guide does not point to the individual elements within the Filter pane that need to be clicked on.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

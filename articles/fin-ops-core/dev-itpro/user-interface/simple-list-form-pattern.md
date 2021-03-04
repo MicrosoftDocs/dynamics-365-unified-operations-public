@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16261
 ms.assetid: 47f02822-51d5-4db2-8d99-2706548301e5
@@ -123,3 +122,6 @@ None at this time.
 ### AX 2012 content
 
 [![AX 2012 example](./media/simplelist3.png)](./media/simplelist3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

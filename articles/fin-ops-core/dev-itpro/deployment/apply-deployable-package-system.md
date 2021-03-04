@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: ms.custom: 107013
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global
@@ -140,3 +139,6 @@ Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use t
 ## Additional resources
 
 [Install deployable packages from the command line](install-deployable-package.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Help secure analytical workspaces and reports by using Power BI Embedded
-description: This topic describes the recommended strategies for securing access to both the reports that are delivered by using Power BI Embedded and the data set, based on viewer access rights.
+description: This topic describes the recommended strategies for securing access to both the reports that are delivered by using Power BI Embedded and the data set.
 author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21551
 ms.assetid: 
@@ -111,3 +110,6 @@ In this scenario, the workspaces and reports that the sales manager from Contoso
     3. Select the **CompanyFilter** check box.
 
 The reports will now show data as if you're running the USMF company.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

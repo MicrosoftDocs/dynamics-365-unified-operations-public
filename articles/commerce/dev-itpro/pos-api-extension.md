@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
 ms.search.region: Global
@@ -377,3 +376,6 @@ To consume APIs in an extension, follow these steps:
 2.  Sign in to POS and add any item to a transaction.
 3.  Add any customer to a transaction.
 4.  Click the **Pay** button and commit the transaction. A dialog box should display asking if you want to save the attribute.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

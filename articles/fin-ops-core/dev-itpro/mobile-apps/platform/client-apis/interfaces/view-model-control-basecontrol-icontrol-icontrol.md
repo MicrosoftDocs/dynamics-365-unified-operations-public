@@ -2,8 +2,8 @@
 # required metadata
 
 title: Control type
-description: Control interface with base methods and attributes for all controls. This represents the runtime instance of a control. Modifying the properties are immediately reflected in the UI.
-author: shadykdc
+description: Control interface with base methods and attributes for all controls. This represents the runtime instance of a control.
+author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -16,13 +16,12 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
-ms.search.scope: 
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kashea
+ms.author: rhaertle
 ms.search.validFrom:
 ms.dyn365.ops.version:
 
@@ -133,10 +132,10 @@ Returns the design object of this control.
 isEditable(): boolean
 
 Boolean indicating if the control is editable.
-Returns false when either the control or it's parent is not editable.
-Returns true when both the control and it's parent are editable.
-Returns true when either the control or it's parent is editable and the other is undefined.
-Returns undefined if both the control's edit-ability and it's parent's edit-ability is undefined.
+Returns false when either the control or its parent is not editable.
+Returns true when both the control and its parent are editable.
+Returns true when either the control or its parent is editable and the other is undefined.
+Returns undefined if both the control's edit-ability and its parent's edit-ability is undefined.
 
 #### Returns boolean
 
@@ -175,3 +174,6 @@ Returns the root form instance (page) of this control.
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

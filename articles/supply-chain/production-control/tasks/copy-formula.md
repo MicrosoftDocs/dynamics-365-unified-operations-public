@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -68,3 +67,6 @@ This procedure focuses on creating a formula that includes the same ingredients 
 5. Click Select.
 6. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

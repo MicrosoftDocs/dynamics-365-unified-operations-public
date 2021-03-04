@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15561
 ms.assetid: b7f2e7b9-2627-4e8f-beab-a3cea8d79dc4
@@ -107,3 +106,6 @@ Complete the following procedure to connect to the virtual machine where the AX 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

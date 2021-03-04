@@ -17,12 +17,11 @@ ms.search.form: CustConsInvoice_JP, SysQueryForm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -59,3 +58,6 @@ This procedure was created using the demo data company JPMF.
     * Confirm that the sales orders that were invoiced before the Consolidation date are included.  
 3. Click Confirm.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

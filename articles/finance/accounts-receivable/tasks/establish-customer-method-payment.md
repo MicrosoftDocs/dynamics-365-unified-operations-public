@@ -17,7 +17,6 @@ ms.search.form: CustPaymMode, BankAccountTableLookUp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -49,3 +48,6 @@ This topic explains how to create a method of payment for customer payments. Thi
 15. Use the **Payment attributes** tab to define which payment attributes you want to use for this method of payment.
 16. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

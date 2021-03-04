@@ -18,7 +18,6 @@ ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3121
 ms.assetid: 98ff891f-e0e2-4184-b618-28107a50851f
@@ -62,3 +61,6 @@ For more information, see [Depreciation methods and conventions](depreciation-me
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

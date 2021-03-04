@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: MichaelFruergaardPontoppidan
+ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
@@ -89,3 +88,6 @@ Follow these steps to create the `AtlSpec` class by using the **Code generation*
 ### Additional optional steps
 
 Add a `spec` method to the data class that returns an instance of the `AtlSpec` class that you created earlier in this topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

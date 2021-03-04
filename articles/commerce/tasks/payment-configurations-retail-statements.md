@@ -17,7 +17,6 @@ ms.search.form: RetailStoreTable, RetailStoreTenderTypeTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -55,3 +54,6 @@ This recording uses the USRT demo company.
     * Select the account to post safe drop amounts into.  
 8. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

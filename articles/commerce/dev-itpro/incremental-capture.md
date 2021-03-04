@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -112,3 +111,6 @@ As back-office invoicing processes captures against authorizations that are enab
 Authorizations that are expired according to Accounts receivable parameters aren't eligible for incremental capture. 
 
 The **SupportsMultipleCaptures** property isn't global. It's specific to the authorization. An environment might have both connectors that support incremental capture and connectors that don't support it.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -63,3 +62,6 @@ If you set this property to **True**, make sure that the following conditions ar
 
 + All truncation logic honors the number of decimal places that is specified on the EDT, so that no implicit or hardcoded rounding will occur.
 + The value isn't assigned to other incompatible EDTs that don't correctly handle rounding.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

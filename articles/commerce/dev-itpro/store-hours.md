@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -84,3 +83,6 @@ Follow these steps to add store hours to the printed POS receipts.
 POS receipts now include the store hours. If any holidays were included in the template, they are shown on the receipt.
 
 ![Receipt example](../dev-itpro/media/Storehours3.png "Receipt example")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

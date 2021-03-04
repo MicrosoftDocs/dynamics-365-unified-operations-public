@@ -13,11 +13,10 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: ReqTransPo, PMFSeqReqRouteChangesListPage   
+ms.search.form: ReqTransPo, PMFSeqReqRouteChangesListPage, PMFSeqReqRoute, PMFSeqReqRouteChanges, PMFSeqReqSchedDetailsFactBox, PMFSequenceGroup, PMFSequenceItemTable, PMFSequenceTable, PmfSeqWrkCtrCapRes   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -74,3 +73,6 @@ This procedure uses paint products as an example to show how to sequence planned
 8. Use the Quick Filter to filter on the Item number field with a value of 'P300'.
     * Notice that the orders now are sequenced according to the priority of color and size and the planned orders start at the earliest order date and delivery date. Validate the Order date column or the Start date in the Schedule details FactBbox.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

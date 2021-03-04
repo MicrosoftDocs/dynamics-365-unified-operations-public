@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 
@@ -114,3 +113,6 @@ If a flow is trying to handle approval for work items, but it isn't firing, then
  - Is the event subscription from Flow visible in the Business Events form?
 - Are the workflow configuration and the event subscription from Flow for the correct legal entity (company)?
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

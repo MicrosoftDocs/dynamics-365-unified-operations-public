@@ -17,12 +17,11 @@ ms.search.form: AssetTable, AssetBook, AssetImpairmentIndicator_JP, AssetImpairm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -87,3 +86,6 @@ This task uses the JPMF demo company data.
     * Enter 1500000.00.  
 18. Click Update indicator.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

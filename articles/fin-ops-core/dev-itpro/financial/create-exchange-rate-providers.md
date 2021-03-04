@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
@@ -513,3 +512,6 @@ Because there are no limits to the method that the exchange rate providers use t
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

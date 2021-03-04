@@ -18,7 +18,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: 
@@ -62,3 +61,6 @@ Commerce parameters are typically cached. Therefore, after the setting of this p
 
 - [Offline point of sale (POS) functionality](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [Online and offline point of sale (POS) operations](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

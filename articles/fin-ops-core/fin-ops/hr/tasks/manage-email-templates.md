@@ -17,7 +17,6 @@ ms.search.form: HRMApplicationWordBookmark, HRMApplicationEmailTemplate
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -51,3 +50,6 @@ You can transfer information from your organization's database to the bookmarks 
 8. Continue typing your email message, inserting the bookmark fields where you need them.
 9. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

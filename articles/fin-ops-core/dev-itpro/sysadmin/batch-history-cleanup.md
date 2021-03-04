@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -66,3 +65,6 @@ The custom batch job lets you to apply additional filtering, based on criteria s
 4. Select **OK**.
 
 ![Custom job](./media/batch-cleanup-custom.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

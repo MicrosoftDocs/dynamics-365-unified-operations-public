@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -59,3 +58,6 @@ The role of this task guides is Treasurer. This task uses the USMF demo company.
 16. Close the page.
 17. Click the Postdated checks tab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

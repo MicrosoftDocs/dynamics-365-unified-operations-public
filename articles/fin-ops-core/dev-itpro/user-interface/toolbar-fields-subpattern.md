@@ -2,7 +2,7 @@
 # required metadata
 
 title: Toolbar and Fields subpattern
-description: This article provides information about the Toolbar and Fields subpattern. This container pattern is used to show actions above a subpattern of data fields. The toolbar should contain fewer than 10 actions.
+description: This article provides information about the Toolbar and Fields subpattern. This container pattern is used to show actions above a subpattern of data fields.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15911
 ms.assetid: c5d6aa38-1f5f-41e5-9d90-11766d34a947
@@ -110,3 +109,6 @@ This section will have answers to frequently asked questions that are related to
 **HcmPosition** 
 
 ![Toolbar and Fields in previous version](./media/toolbarfields3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

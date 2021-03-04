@@ -4,7 +4,7 @@
 title: Set user permissions in Attract
 description: This topic provides information about role security in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -162,3 +161,6 @@ Candidates are people who have been added to a talent pool but aren't associated
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profile – candidate details | Create, read, update, and delete | Create, read, update, and delete | No access   |
 | Documents                   | Create, read, update, and delete | Create, read, update, and delete | No access   |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

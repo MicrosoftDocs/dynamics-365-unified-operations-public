@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -92,3 +91,6 @@ A scheduled update could be canceled for various reasons. Here are some of the c
 
 You can find the canceled updates via the **View recent canceled updates** in the update settings. It will show all canceled updates, if any, within the last 2 scheduled updates.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -82,3 +81,6 @@ The following illustration shows the financial entry for the **Credit only**/**R
 The following illustration shows the financial entry for the **Credit**/**Replace and credit** disposition code.
 
 ![Financial entry for the Credit/Replace and credit disposition code](media/Annotation-2019-05-20-163405.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

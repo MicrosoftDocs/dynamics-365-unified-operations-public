@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 19081
 ms.assetid: ce126e17-5dc6-42fd-a9aa-4932e3db3830
@@ -122,3 +121,6 @@ On the main Infrastructure estimator page, select an estimate to view the detail
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

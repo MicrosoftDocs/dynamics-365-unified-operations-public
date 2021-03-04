@@ -18,12 +18,11 @@ ms.search.form: AssetTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266924
 ms.search.region: Latvia
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -51,3 +50,6 @@ Your modification is saved when you click **Save** or when you move your focus a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

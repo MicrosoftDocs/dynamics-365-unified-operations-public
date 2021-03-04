@@ -17,7 +17,6 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
@@ -63,3 +62,6 @@ This topic walks you through creating and posting a customer invoice as an elect
 27. In the navigation pane, go to **Modules > Accounts receivable > Inquiries and reports > CFDI (electronic invoices)**.
 28. In the list, select the electronic invoice to review.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

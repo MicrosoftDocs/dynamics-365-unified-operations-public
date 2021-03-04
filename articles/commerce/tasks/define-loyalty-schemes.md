@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -74,3 +73,6 @@ This procedure walks through how to define a loyalty scheme. Loyalty schemes are
 27. Click Save.
     * Anytime you change the channels for a loyalty scheme, you must run Process loyalty schemes. That way, the channels will get updated loyalty schemes.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

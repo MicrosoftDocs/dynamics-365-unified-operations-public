@@ -17,12 +17,11 @@ ms.search.form: BOMTable, BOMConfigRule, ConfigItemIdLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -58,3 +57,6 @@ This procedure creates configuration rules that can be used for dimension-based 
     * Select the item number that will be either selected or deselected depending on the chosen method.  
 18. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

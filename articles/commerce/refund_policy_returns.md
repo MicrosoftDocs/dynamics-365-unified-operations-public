@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -31,8 +30,6 @@ ms.dyn365.ops.version: Retail 10.0.9 update
 # Create and update a returns and refunds policy for a channel
 
 [!include [banner](includes/banner.md)]
-
-## Overview
 
 The channel return policy in Dynamics 365 Commerce enables retailers to set enforcements on which payment tenders can be allowed for processing a return on a point of sale (POS) device.  
 
@@ -108,3 +105,6 @@ Follow the steps in either of the following examples to view the allowed return 
 
 
 ![List of payment methods](media/Return-policy-page5.PNG "Refund types allowed")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

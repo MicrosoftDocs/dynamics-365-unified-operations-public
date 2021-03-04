@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266574
 ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
@@ -109,3 +108,6 @@ The following walkthrough shows the process of introducing a custom report desig
     [![Print Management settings after compilation](./media/app-extension-print-mgt-after-1024x608.png)](./media/app-extension-print-mgt-after.png)
 
 You’ve now finished customizing the business document. Users will now be presented with the custom report design for the business document when they process transactions in the application.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

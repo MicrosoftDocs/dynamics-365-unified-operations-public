@@ -3,7 +3,7 @@
  
 title: Set up policies for procurement category hierarchies
 description: Use this procedure to set up rules for ordering products in a category. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 07/22/2019
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, Proc
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -55,3 +54,6 @@ Use this procedure to set up rules for ordering products in a category. The rule
 6. In the **Vendor selection** field, select an option. Select a rule to control which kind of vendors can be selected for the category when requisitions are created.  
 7. Click **Close**. The policy rules that you have defined have been for requisitions of type Consumption. If you wanted to define policies for requisitions of type Replenishment, you would create a rule for the Policy rule type called "Replenishment category access policy rule".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

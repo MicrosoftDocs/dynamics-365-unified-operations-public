@@ -18,14 +18,13 @@ ms.search.form: TaxData, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -96,3 +95,6 @@ For more information, see [Sales tax rates based on the Marginal base and Calcul
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

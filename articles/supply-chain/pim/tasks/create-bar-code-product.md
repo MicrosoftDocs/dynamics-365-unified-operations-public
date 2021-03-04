@@ -17,12 +17,11 @@ ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductO
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -46,3 +45,6 @@ This topic shows how to manually create a bar code using the item number M0001 a
 12. Select **Save**.
 13. Close the page. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

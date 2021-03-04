@@ -18,7 +18,6 @@ ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesig
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
@@ -93,3 +92,6 @@ ER configurations that are designed in the development environment can be upload
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

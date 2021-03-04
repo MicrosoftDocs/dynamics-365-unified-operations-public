@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 24411
 ms.search.region: Global
@@ -410,3 +409,6 @@ You can add more information to a transaction page by using custom controls. You
 3. Add any item to the transaction, and then select the line item that you added.
 
     The custom control should show the ID and description for the selected line item.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

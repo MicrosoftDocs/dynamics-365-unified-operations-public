@@ -13,18 +13,17 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ReqPlanSched
+ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -203,7 +202,7 @@ Therefore, the following planned orders are created.
 A forecast reduction key is used in the **Transactions - reduction key** and **Percent- reduction key** methods for reducing forecast requirements. Follow these steps to create and set up a reduction key.
 
 1. Go to **Master planning \> Setup \> Coverage \> Reduction keys**.
-2. Select **New** or press **Ctrl+N** to create a reduction key.
+2. Select **New** to create a reduction key.
 3. In the **Reduction key** field, enter a unique identifier for the forecast reduction key. Then, in the **Name** field, enter a name. 
 4. Define the periods and the reduction key percentage in each period:
 
@@ -231,3 +230,6 @@ When you select **Transactions - reduction key** or **Transactions - dynamic per
 ## Additional resources
 
 [Master plans overview](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

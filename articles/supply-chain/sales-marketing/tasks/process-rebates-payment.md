@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: omulvad
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -55,3 +54,6 @@ This procedure demonstrates how to convert approved and processed customer rebat
     * Note that a transaction for negative amount, representing the total rebate amount, without invoice reference has been added to the customer balance.   
 15. Click Cancel.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

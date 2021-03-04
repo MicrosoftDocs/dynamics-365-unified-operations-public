@@ -17,7 +17,6 @@ ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorke
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -53,3 +52,6 @@ This topic explains how to process a quality order. You can run this guide in de
 4. Select **OK**.
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

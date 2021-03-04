@@ -18,12 +18,11 @@ ms.technology:
 audience: Developer
 # ms.devlang:
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm:
 ms.custom: 150273
 ms.search.region: Global
 # ms.search.industry:
-ms.author: robinr
+ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 
@@ -224,3 +223,6 @@ After: OLine:  OL_Data==4 re-treads. , OrderHeaderRecId==5637144608
 **************/
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

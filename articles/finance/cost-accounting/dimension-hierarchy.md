@@ -18,13 +18,12 @@ ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -337,3 +336,6 @@ The settings for the access list hierarchy are used to control the data that is 
 > [!NOTE] 
 > - Before the access list hierarchy can affect data in Power BI, access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - The access list hierarchy doesn't help secure the export of data to Excel. Therefore, that reporting tool should be used only by cost accountants and managers who must have full access to view the data.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

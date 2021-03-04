@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -78,3 +77,6 @@ The **Activity** tab shows a predefined set of queries for advanced troubleshoot
 > The Environment monitoring will also include advanced SQL troubleshooting tools to diagnose and mitigate performance issues. This feature is currently not available but will be added soon. 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

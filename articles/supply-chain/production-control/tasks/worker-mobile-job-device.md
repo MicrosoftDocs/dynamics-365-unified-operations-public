@@ -17,12 +17,11 @@ ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegi
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -70,3 +69,6 @@ For this example, verify that user "SHANNON" is assigned the machine operator ro
 6. In the **Production unit** field, you can set the default filter for the worker. This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device. Enter the desired value.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
@@ -113,3 +112,6 @@ The service life of the acquisition adjustment is the same as that of the fixed 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

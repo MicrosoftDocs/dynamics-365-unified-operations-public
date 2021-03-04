@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro, Developer, Application user
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 254844
 ms.assetid: 0e9471f9-4c2b-42f0-9b10-6578211f01d5
@@ -75,3 +74,6 @@ This topic explains how to get help with Finance and Operations apps or Microsof
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

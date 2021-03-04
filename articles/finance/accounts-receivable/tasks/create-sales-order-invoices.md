@@ -17,7 +17,6 @@ ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -71,3 +70,6 @@ This task guide describes invoicing a sales order, including merging invoices an
 10. Click **Cancel**.
 11. Click **Yes**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

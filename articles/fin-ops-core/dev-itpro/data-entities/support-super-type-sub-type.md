@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25331
 ms.assetid: d59cefc0-be94-42e9-a22e-87493985dbcd
@@ -96,3 +95,6 @@ Mapping fields from base and multiple derived types in a single data entity is a
 In this example, the **Party** type is computed by using the **InstanceRelationType** column on DirPartyTable. This approach works for reading data. However, to do **Create** or **Update** operations, you must write code where you override the **initializeEntityDataSource** method on the data entity, based on type, and set a correct instance of the derived type for the data source run-time context buffer.
 
 [![sub11](./media/sub11.png)](./media/sub11.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: v-alpavk
+ms.author: roschlom
 ms.search.validFrom: 2019-8-04
 ms.dyn365.ops.version: 10.0.5
 
@@ -53,3 +52,6 @@ When you generate the report, the following default parameters are shown.  You c
 | Unfilled only | Set this option to Yes to exclude positions that are currently filled. |
 | Suppress total | Set this option to Yes to exclude totals from appearing on the report. |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

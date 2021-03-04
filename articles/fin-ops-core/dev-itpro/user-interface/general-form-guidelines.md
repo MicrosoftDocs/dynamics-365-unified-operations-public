@@ -2,7 +2,7 @@
 # required metadata
 
 title: General form guidelines
-description: This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
+description: This topic contains the guidelines that apply to all forms. This checklist must be used in addition to any pattern-specific guidelines.
 author: jasongre
 manager: AnnBe
 ms.date: 03/09/2020
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14701
 ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
@@ -251,3 +250,6 @@ This section will have answers to frequently asked questions that are related t
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,13 +18,12 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 253274
 ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ---
@@ -200,3 +199,6 @@ Additional resources
 --------
 
 [Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

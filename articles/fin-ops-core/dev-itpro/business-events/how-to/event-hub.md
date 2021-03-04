@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: 
@@ -67,3 +66,6 @@ This tutorial describes the steps that you must follow to make business events w
 14. In the **Key Vault secret name** field, enter the name from the secret that was created earlier.
 15. Select **OK**.
 16. You can now activate one or more business events that should be sent to this endpoint.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

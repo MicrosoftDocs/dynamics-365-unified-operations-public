@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -44,6 +43,7 @@ Learn how to perform the individual operations on your Standard or Premier Accep
 * [Import a database](import-database.md)
 * [Point-in-time restore (PITR)](database-point-in-time-restore.md)
 * [Point-in-time restore of the production database to a sandbox environment](database-pitr-prod-sandbox.md)
+* [Enable just-in-time database access](database-just-in-time-JIT-access.md)
 
 ## Step-by-step tutorials
 Learn how to achieve common implementation scenarios using DataALM to your advantage:
@@ -63,3 +63,6 @@ The Database Movement application programming interface (API) lets you integrate
 * [Throttling](./api/dbmovement-api-throttling.md)
 * [Reference](./api/v1/dbmovement-api-v1-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

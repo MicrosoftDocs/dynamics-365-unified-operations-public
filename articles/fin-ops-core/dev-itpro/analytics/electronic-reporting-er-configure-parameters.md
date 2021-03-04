@@ -18,7 +18,6 @@ ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFor
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
 ms.assetid: 3c1291de-230c-4e31-96c4-ba69a310690a
@@ -137,3 +136,6 @@ In addition to the basic functionality, ER has other functionality that you can 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 - [Configuration service of Regulatory Services](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

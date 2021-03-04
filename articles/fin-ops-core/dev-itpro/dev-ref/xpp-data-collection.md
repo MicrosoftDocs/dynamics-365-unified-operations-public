@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150183
 ms.assetid: 0ff4e759-851d-4b53-aa67-6f03eee53f02
@@ -60,3 +59,6 @@ For **Map** objects, as for **Set** objects, if any elements are removed, the it
 You can use the collection classes to form more complex classes. For example, you can easily implement a stack by using a list where elements are always added to the beginning of the list. The newest element then occupies the top of the stack. 
 
 You can also extend the collection classes. For example, you can extend the **List** class to create a list of customer records where the operations are type-safe. In this case, the derived collection class will accept only customer records.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

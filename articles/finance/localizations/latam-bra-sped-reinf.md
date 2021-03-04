@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -459,7 +458,7 @@ If for some many reason, the taxpayer wants to cancel/exclude an event that has 
 
 Event R-1070 is used to report information about the administrative and lawsuits process to tax authority system.
 
-The administrative and lawsuits process can be started by either the taxpayer or by the worker when the amounts in the social security are disputed. The proceedings (either judicial or administrative) are carried out by the court. After the judge reaches a final decision, he or she has the power to suspend (or not) the amounts that were retained.
+The administrative and lawsuits process can be started by either the taxpayer or by the worker when the amounts in the social security are disputed. The proceedings (either judicial or administrative) are carried out by the court. After the judge reaches a final decision, they have the power to suspend (or not) the amounts that were retained.
 
 The purpose of this event is to communicate the existence of proceedings of this type to the SPED-Reinf database. After the proceedings have a final court decision that suspends the eligibility of withholding amounts, the event refers to that decision to explain why the amounts have been reported as suspended in the periodic events.
 
@@ -711,3 +710,6 @@ After periodic events R-2010, R-2010, and R-2060 are closed through an event R-2
 11. Select **OK** to confirm the action.
 
 12. The **Evento de fechamento** message item type is updated, and the status of the message item is updated to **Aceito**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Models and packages
-description: This topic describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
+description: This topic describes the concept of models and packages. It explains how to create new models, update parameters, and visualize dependencies between models.
 author: jorisdg
 manager: AnnBe
 ms.date: 02/07/2020
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83351
 ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
@@ -40,8 +39,6 @@ To work with models in the model store, you use tools in Microsoft Visual Studio
 
 ## Conceptual overview
 A model is a group of elements, such as metadata and source files, that typically constitute a distributable software solution and includes customizations of an existing solution. A model is a design-time concept, for example a warehouse management model or a project accounting model. A model always belongs to a package. A package is a deployment and compilation unit of one or more models. It includes model metadata, binaries, and other associated resources. One or more packages can be packaged into a deployable package, which is the vehicle used for deployment on runtime environments.
-
-<!--The [Packages, models, and projects](https://mix.office.com/watch/ies6lyit6773) Office Mix describes models and packages and how they relate to each other.-->
 
 ## Creating a new model
 You use the **Create model** wizard to create new models. You can access this wizard from **Model Management** on the **Dynamics 365** menu. You can create two types of models:
@@ -107,3 +104,6 @@ If your model belongs to a package with multiple models. For example, the MyMode
 [Develop and customize home page](developer-home-page.md)
 
 [Export and import models](models-export-import.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

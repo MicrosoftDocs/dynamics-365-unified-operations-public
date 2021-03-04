@@ -17,12 +17,11 @@ ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCode
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -74,3 +73,6 @@ This procedure shows how to set up data for automatic freight reconciliation. Th
 11. In the Underpayment reason code field, enter or select a value.
 12. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

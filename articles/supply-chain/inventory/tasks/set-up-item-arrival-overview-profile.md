@@ -17,12 +17,11 @@ ms.search.form: WMSArrivalOverviewProfile
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -56,3 +55,6 @@ This topic focuses on the setup of an arrival overview profile. The arrival over
 17. Select **Save**.
 18. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

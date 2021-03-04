@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
@@ -45,3 +44,6 @@ A default production output location is set when finished goods are reported on 
 4. If no location is found there, use the output location that is defined on the warehouse that is defined for the production order.
 
 A default production output location is set only for products that are set up by using advanced warehouse processes. When this type of item is reported as finished, warehouse work of the **Finished goods put away** or **Co-product and by-product put away** type is created. This type of work uses the production output location as the pick location. The put-away location is determined by the location directives.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

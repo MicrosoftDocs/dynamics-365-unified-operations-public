@@ -17,7 +17,6 @@ ms.search.form: AssetDepreciationProfile, AssetDepRate_JP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10294
 ms.search.region: Japan
@@ -161,3 +160,6 @@ The depreciation rate schedule that you import depends on the type of depreciati
 - [Propose special depreciation](./tasks/propose-special-depreciation.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

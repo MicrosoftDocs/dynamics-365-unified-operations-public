@@ -18,13 +18,12 @@ ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, C
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -149,7 +148,7 @@ Users can click **Cost entries** to drill down into the entry details as require
 
 ![Cost entries](./media/cost-entries.png)
 
-For example, rent is an expenditure that is distributed to cost centers. A user who wants to understand the rent cost that his or her cost center must carry can drill down to see how rent has been calculated.
+For example, rent is an expenditure that is distributed to cost centers. A user who wants to understand the rent cost that their cost center must carry can drill down to see how rent has been calculated.
 
 If users click **Allocation base** on the **Cost entries** page, a dialog box appears. Users can then assign the allocation base to the rule and view the corresponding statistical measures that are registered for the period.
 
@@ -162,3 +161,6 @@ Additional resources
 [Define access rights for cost object controllers](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

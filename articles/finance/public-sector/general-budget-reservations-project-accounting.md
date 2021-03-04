@@ -18,7 +18,6 @@ ms.search.form: BudgetReservation_PSN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -66,3 +65,6 @@ When you post a general budget reservation for a project, a committed cost is cr
 3. Select **Committed costs**. The **Committed costs** page appears and shows the committed costs that are related to the selected line.
 
     Committed costs for general budget reservations are based on amount, regardless of whether the committed cost includes a discrete quantity and unit cost. The committed cost quantity will always be 1.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

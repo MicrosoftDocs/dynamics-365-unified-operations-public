@@ -13,18 +13,17 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -63,3 +62,6 @@ On the **Active asset loans** page, you can view a list of all the loan assets t
 3. In the **Returned** field, enter the date and time.
 4. Select **OK**.
 5. Refresh the **Active asset loans** list page, and notice that the asset loan no longer appears in the list.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

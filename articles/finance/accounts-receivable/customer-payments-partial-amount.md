@@ -18,7 +18,6 @@ ms.search.form: CustPaymEntry
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
@@ -65,3 +64,6 @@ Customers might make a partial payment where the remaining amount won't be paid 
 
 
 For more information, see [Deposit customer payments](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

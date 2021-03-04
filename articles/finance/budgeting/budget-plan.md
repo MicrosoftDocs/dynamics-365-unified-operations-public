@@ -17,7 +17,6 @@ ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -251,3 +250,6 @@ C. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning co
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

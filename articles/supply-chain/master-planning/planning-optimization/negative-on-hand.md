@@ -18,7 +18,6 @@ ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -90,3 +89,6 @@ The result is a planned order of 25 pcs. (= 25 pcs. &minus; 0 pcs.) to refill wa
 [View plan history and planning logs](plan-history-logs.md)
 
 [Cancel a planning job](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

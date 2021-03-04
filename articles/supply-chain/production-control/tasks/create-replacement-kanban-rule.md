@@ -17,7 +17,6 @@ ms.search.form: KanbanRules, KanbanRuleDuplicate
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -58,3 +57,6 @@ This procedure focuses on replacing an existing kanban rule with a new kanban ru
 1. Set Maximum quantity to '100'.
     * Expand the Quantities FastTab to see the Maximum quantity field. Changing the maximum quantity to 100 will allow up to 100 kanbans to be processed.    This is the last step in this task.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

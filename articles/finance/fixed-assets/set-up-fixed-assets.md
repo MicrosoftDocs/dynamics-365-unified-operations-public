@@ -18,7 +18,6 @@ ms.search.form: AssetTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13771
 ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
@@ -89,3 +88,6 @@ You can configure reason codes so that they are required for changes to a fixed 
 Finally, on the **Number sequences** tab, you define number sequences for fixed assets. The **Fixed asset** number sequence can be overridden by the **Fixed asset group** number sequence if it has been specified.
 
 For more information, see [Create a fixed asset](tasks/create-fixed-asset.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

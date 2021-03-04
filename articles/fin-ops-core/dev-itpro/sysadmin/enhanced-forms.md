@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -52,3 +51,6 @@ Follow these steps to switch to the enhanced form.
 To switch back to the unenhanced form, select **Switch to legacy form** on the Action Pane of the enhanced form.
 
 ![Switch to legacy form button](./media/enhanced-form.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

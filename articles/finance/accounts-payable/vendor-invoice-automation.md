@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Vendor invoice automation
+title: Invoice automation for scanned documents
 description: This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
 author: abruer
 manager: AnnBe
@@ -17,7 +17,6 @@ ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -26,7 +25,7 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
-# Vendor invoice automation
+# Invoice automation for scanned documents
 
 [!include [banner](../includes/banner.md)]
 
@@ -235,3 +234,6 @@ The following roles provide read-only access to the attachment viewer for those 
 + **Accounts payable clerk** and **Accounts payable manager** – The Maintain vendor invoices duty is assigned to these roles.
 
 By default, if the user role provides edit rights on any page, the user will also have edit rights on the attachments viewer for the highlighting, block, and annotation actions. However, if there are scenarios where a specific role should have edit rights on the page but not on the attachment viewer, the appropriate privileges from the preceding list can be used to satisfy the use case.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -256,3 +255,6 @@ Find more details in the following topics:
 
 - [Transactions through intermediary](rus-transactions-through-intermediary.md) 
 - [Sales on commission](rus-sales-on-commission.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

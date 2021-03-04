@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 31521
 ms.assetid: 3a169648-592b-4616-9834-598c0244a852
@@ -94,3 +93,6 @@ Commerce Scale Unit uses the following concepts.
 
 You can create your own entity type or complex type, extend an existing controller, add a new controller, and customize the metadata. If you customize the commerce runtime, you must also customize various components in Commerce Scale Unit to expose those changes to your Retail Modern POS clients.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

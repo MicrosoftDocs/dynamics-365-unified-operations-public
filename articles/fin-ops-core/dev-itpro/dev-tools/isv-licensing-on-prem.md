@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
@@ -93,3 +92,6 @@ The following procedure can be used for a sandbox environment or a production en
 5. When the script has been run successfully, validate that the configuration key has been imported and enabled. In the product, the corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, if you added a configuration key that is named ISVConfigurationKey1, it will appear in the list of configuration keys.
 
 When the configuration key is enabled, the changes in the ISV solution will be visible in the product.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

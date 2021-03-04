@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -73,3 +72,6 @@ The channel installers are being enhanced so that you can use them to install ju
 
 ## Retail SDK samples to GitHub
 Microsoft is planning to move the samples from the Retail SDK to GitHub. Because the samples are published only as sample code, this change won't affect your extensions. GitHub makes it easy to get the latest samples. You will no longer have to go through the LCS process.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

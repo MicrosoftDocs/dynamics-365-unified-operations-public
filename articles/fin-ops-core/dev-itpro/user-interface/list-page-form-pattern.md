@@ -2,7 +2,7 @@
 # required metadata
 
 title: List Page form pattern
-description: This article provides information about the List Page form pattern. A list page presents a set of data on a UI that is optimized for browsing records, so that you can find and work with a specific record. 
+description: This article provides information about the List Page form pattern. A list page presents a set of data, so that you can find and work with a specific record. 
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer 
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14241
 ms.assetid: c70933b1-3d6a-4e26-b9ef-d9fb1e1b29a3
@@ -145,3 +144,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![Example](./media/listpage3-1024x671.png)](./media/listpage3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

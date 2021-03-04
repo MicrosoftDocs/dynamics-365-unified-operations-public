@@ -17,12 +17,11 @@ ms.search.form: LedgerCalendar, LedgerCheckList_CN,  SysQueryForm, SysDateLookUp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -60,3 +59,6 @@ This procedure was created using the demo data company CNMF. This procedure is f
 4. Click OK.
 5. Go to General ledger > Inquiries and reports > Voucher continuity check log.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

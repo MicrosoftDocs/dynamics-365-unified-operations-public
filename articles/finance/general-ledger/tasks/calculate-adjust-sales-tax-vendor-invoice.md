@@ -17,12 +17,11 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, VendTableLook
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -47,3 +46,6 @@ This topic explains how to adjust sales tax on a vendor invoice. If the original
 13. Select **OK**.
 14. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

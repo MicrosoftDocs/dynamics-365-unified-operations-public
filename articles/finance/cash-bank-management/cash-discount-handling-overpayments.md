@@ -3,7 +3,7 @@
 
 title: Cash discounts for overpayments
 description: This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, Ledge
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14171
 ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -144,3 +143,6 @@ The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

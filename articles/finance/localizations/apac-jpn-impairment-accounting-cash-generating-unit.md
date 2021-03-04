@@ -17,7 +17,6 @@ ms.search.form: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_J
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25691
 ms.search.region: Japan
@@ -62,3 +61,6 @@ The user can use the **Impairment reports and transactions** inquiry pages to re
 - [Impairment accounting for fixed assets for Japan](apac-jpn-impairment-accounting-fixed-assets.md)
 - [Propose and post the impairment amount on a cash generating unit](./tasks/propose-post-impairment-amount-cash-generating-unit.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

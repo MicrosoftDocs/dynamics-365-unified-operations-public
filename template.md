@@ -44,14 +44,22 @@ A full markdown block is shown at the top of this file. The metadata is divided 
 Here are some key things to note about metadata.
 
 - **Required metadata**
-    - **title** - The title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Action search`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
+    - **title** - The title will appear in search engine results. 
+        - You can add a pipe (|) followed by the product name (for example, `title: Action search`). 
+        - The title doesn't need be identical to the title in your H1 heading, though we prefer that the TOC entry, the title, and the H1 heading all match. 
+        - The title should contain 65 characters or less (including | PRODUCT NAME).
     - **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
     - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
-    - **manager** - Use "annbe" in this field.
+    - **manager** - Use "tonyafehr" in this field.
     - **ms.date** - This should be the first proposed publication date, in the mm/dd/yy format.
     - **ms.topic** - Enter "article" here.
     - **ms.prod**  - Leave this blank.
-    - **ms.service** - Always use "Dynamics365Operations".
+    - **ms.service**: Use these values:
+        - `dynamics-ax-platform`: core content (fin-ops-core folder)
+        - `dynamics-ax-applications`: Finance and Supply Chain
+        - `dynamics-365-commerce`: Commerce
+        - `dynamics-365-talent`: Talent
+        - `dynamics-human-resources`: Human Resources
     - **ms.technology** 
 
 - **Optional metadata**
@@ -61,11 +69,15 @@ Here are some key things to note about metadata.
     - **ms.assetid** - This is the GUID of the article that is used for internal tracking purposes. When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com).
     - **ms.search.region** - Use "global" or enter a country-region value.
     - **ms.author** - Use your Microsoft alias.  
-    - **ms.search.scope** - Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
     - **ms.search.industry** - Leave blank for most, retail, public sector
     - **ms.search.validFrom** - Month/year of release that feature was introduced in, in format yyyy-mm-dd.
-    - **ms.dyn365.ops.version** - Name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+    - **ms.dyn365.ops.version** - Name of release that feature was introduced in, see list here: [Help system and Versions metadata for docs topics](https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29])
 
+- **Metadata set at folder-level**
+    - Do not add metadata for these in your file, unless the value is different from the folder level.
+    - To find the folder-level setting, see [docfx.json](articles/docfx.json).
+    - Set at folder level:
+        - **ms.search.scope**: The values are mostly self-explanatory. **Core** means to show the topic in the Help Pane (current). **ShowInHelp** means to show the topic in the Help Pane (future).
 
 ## Basic Markdown, GFM, and special characters
 
@@ -207,9 +219,9 @@ You can use a [Markdown table generator tool](https://www.tablesgenerator.com/ma
 
 ## Code
 
-Use three backticks (&#96;&#96;&#96;) to begin and end a code example block . You an also indent a line to have it rendered as a code example.
+Use three backticks (&#96;&#96;&#96;) to begin and end a code example block . You an also indent a line to have it rendered as a code example. You must add a language to the code block. Common languages in our doc set are `xpp`, `csharp`, `javascript`, `powershell`, `xml`, `json`, `dos`, and `plaintext`.
 
-```
+```xpp
 function fancyAlert(arg) {
     if(arg) {
         $.docs({div:'#foo'})

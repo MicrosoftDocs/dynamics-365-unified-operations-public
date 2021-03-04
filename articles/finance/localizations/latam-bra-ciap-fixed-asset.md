@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: v-gonode
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
 ---
@@ -77,3 +76,6 @@ Use this functionality to register in Fiscal books module the disposal of a fixe
 14.	On the **CIAP Report**, in the **Fiscal establishment** field, select a fiscal establishment.
 15.	Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

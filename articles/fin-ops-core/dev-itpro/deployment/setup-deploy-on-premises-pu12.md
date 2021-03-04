@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 08/05/2020
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -406,16 +405,28 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 ### <a name="configurecert"></a> 8. Configure certificates
 
 1. Navigate to the machine that has the **infrastructure** folder.
-2. If you must generate self-signed certificates, run the following command. The script will create the certificates, put them in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file.
+2. Generate certificates: 
+    1. If you must generate self-signed certificates:
+        1. Set the **generateSelfSignedCert** attribute to **true**. Only set this for the certificates that you need to generate. 
+        1. Run the following command. The script will create the certificates. Put the certificates in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file.
 
-    ```powershell
-    # Create self-signed certs
-    .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    ```
+        ```powershell
+        # Create self-signed certs
+        .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+        ```
+    1. If you want to generate Active Directory Certificate Services (AD CS) certificates:
+        1. Set the **generateADCSCert** attribute to **false** for the certificates that you don't want generated.
+        1. Run the following commands. The script will create the certificate templates in AD CS. Generate the certificates from the templates, place the certificates in the CurrentUser\My certificate store on the machine, and update the thumbprints in the XML file.
 
-    If you must reuse any certificates and therefore don't have to generate certificates for them, set the **generateSelfSignedCert** tag to **false**.
+        ```powershell
+        .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -CreateTemplates
+        .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+        ```
 
-3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
+        > [!NOTE] 
+        > The AD CS scripts need to run on a Domain Controller, or a Windows Server with Remote Server Admin Tools installed.
+
+3. If you're using SSL certificates that were already generated, skip the certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
     > [!WARNING]
     > Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get the error, **X509 certificate not valid**. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
@@ -556,7 +567,7 @@ Use the on-premises agent certificate that you acquired from a certificate autho
 
 The on-premises agent certificate can be reused across multiple sandbox and production environments per tenant.
 
-Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft Office 365 for your organization is the global administrator for the directory.
+Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft 365 for your organization is the global administrator for the directory.
 
 > [!IMPORTANT]
 > - You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant must use the same certificate to connect with LCS.
@@ -572,17 +583,24 @@ Only user accounts that have the Global Administrator directory role can add cer
     
     Install-Module Az
     Import-Module Az
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -Test
     ```
 
     > [!IMPORTANT]
     > If you previously installed AzureRM, please remove it as it may not be compatible with any existing AzureRM installs in PowerShell 5.1 for Windows. For more information, [Migrate Azure PowerShell from AzureRM to Az](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az).
-  
+
 3. If the script indicates that the certificate isn't registered, run the following command.
 
     ```powershell
-    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint'
     ```
+
+> [!NOTE]
+> If you have multiple tenants associated with the login account, you can pass the tenant ID as a parameter to ensure that the context is set to the correct tenant.
+
+> ```powershell
+> .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
+> ```
 
 ### <a name="setupfile"></a> 12. Set up file storage
 
@@ -667,17 +685,23 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
 
 2. Run the SQL service as a domain user or a group-managed service account.
-3. Get an SSL certificate from a certificate authority to configure SQL Server for Finance + Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following examples.
+3. Get an SSL certificate from a certificate authority to configure SQL Server for Finance + Operations. For testing purposes, you can create and use a self-signed certificate or an AD CS certificate. You will need to replace the computer name and domain name in the following examples.
 
     **Self-signed certificate for an Always-On SQL instance**
 
     If you are setting up testing certificates for Always-On, use the following **remoting** script. This will perform the same as the following **manual** script and steps **a-e**.
 
-    ```powershell
-    .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
-        -SqlMachineNames DAX7SQLAOSQLA01, DAX7SQLAOSQLA02 `
-        -SqlListenerName dax7sqlaosqla
-    ```
+    1. Self-signed certificate
+
+        ```powershell
+        .\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
+        ```
+
+    1. AD CS certificate
+
+        ```powershell
+        .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
+        ```
 
     **Manual self-signed steps for an Always-On SQL instance or Windows Server Failover Clustering with SQL Server** 
         
@@ -791,7 +815,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     2. Set ALLOW_SNAPSHOT_ISOLATION ON
     3. Set the specified database file and log settings
     4. GRANT VIEW SERVER STATE TO axdbadmin
-    5. GRANT VIEW SERVER STATE TO [contoso\svc-AXSF$]
+    5. GRANT ALTER ANY EVENT SESSION TO axdbadmin
+    6. GRANT VIEW SERVER STATE TO [contoso\svc-AXSF$]
+    7. GRANT ALTER ANY EVENT SESSION TO [contoso\svc-AXSF$]
 
 2. Run the following command to reset the database users.
 
@@ -988,7 +1014,7 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
 
-    ![Deploy](./media/Deploy.png)
+    ![Deploy your environment](./media/Deploy.png)
 
 3. If you have an existing Platform update 8 or Platform update 11 deployment: 
     - Update the local agent. See [Update the local agent](../lifecycle-services/update-local-agent.md) for more details.
@@ -996,25 +1022,25 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
     - Deploy Platform update 12 while going through the steps in [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
 
-    ![Preparing](./media/Preparing.png)
+    ![Preparation phase](./media/Preparing.png)
 
     Click **Full details** to take you to the environment details page, as shown below.
 
-    ![Details_Preparing](./media/Details_Preparing.png)
+    ![Environment details page](./media/Details_Preparing.png)
 
 5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. When deployment starts, the status will change to **Deploying**, as shown.
 
-    ![Deploying](./media/Deploying.png)
+    ![Status changes to Deploying](./media/Deploying.png)
 
-    ![Details_Deploying](./media/Details_Deploying.png)
+    ![Environment is deploying](./media/Details_Deploying.png)
 
     If the deployment fails, the **Reconfigure** button will become available for your environment in LCS, as shown below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
-    ![Failed](./media/Failed.png)
+    ![Reconfigure button is available](./media/Failed.png)
 
     See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
 
-    ![Deployed](./media/Deployed.png)
+    ![Environment successfully deployed](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance + Operations environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.
@@ -1051,3 +1077,6 @@ This error occurs because of an OpenID scope **allatclaims** that is required by
 
 ### Error "ADMIN0077: Access control policy does not exist: Permit everyone" when running the Publish-ADFSApplicationGroup cmdlet
 When your AD FS is installed with a non-English version of Windows Server 2016, the permit everyone access control policy is created with your local language. Invoke the cmdlet by specifying AccessControlPolicyName parameter as: .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com' -AccessControlPolicyName '<Permit everyone access control policy in your language>'. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17521
 ms.assetid: 3def0657-94c4-419b-905b-ed99a527cd7f
@@ -336,3 +335,6 @@ The following tables provide descriptions for the controls in the **Validate all
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

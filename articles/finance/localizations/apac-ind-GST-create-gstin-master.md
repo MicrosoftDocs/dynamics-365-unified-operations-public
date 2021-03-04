@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -87,3 +86,6 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 6. In the **Business vertical** field, select a value.
 
 ![Customer registration numbers](media/IND-GST-GSTIN-4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -50,3 +49,6 @@ Follow these steps to reclassify a fixed asset:
 5. In the **Reclassification date** field, enter a date.
 6. In the **Voucher series** field, enter or select a value.
 7. Click **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

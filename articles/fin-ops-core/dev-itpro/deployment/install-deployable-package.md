@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install deployable packages from the command line
-description: This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
+description: This topic describes how to use the command line to apply a binary update or an application (AOT) deployable package that was created in your environment.
 author: jorisdg
 manager: AnnBe
 ms.date: 07/23/2019
@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24191
 ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
@@ -221,3 +220,6 @@ The runbook provides the sequence of steps that must be run to update the enviro
     ```
 
 - To verify database synchronization, in the **aosservice\\scripts\\** folder, find and open the **dbsync.error.txt** file, and look for any errors.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

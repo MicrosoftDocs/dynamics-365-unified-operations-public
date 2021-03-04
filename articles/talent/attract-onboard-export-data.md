@@ -4,7 +4,7 @@
 title: Export data from Attract and Onboard
 description: Export data from Dynamics 365 Talent - Attract and Onboard.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 01/14/2020
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -67,7 +66,7 @@ The download contains a .zip file with your Attract data, including the followin
 | Job opening templates | Job process templates that were configured in the environment. |
 | Talent pools | All created talent pools, their contributors lists, and the candidates lists for the talent pools. |
 | Workers | List of all the workers who are present in the environment, plus their roles. |
-| (root folder) | A JSON schema file that describes the data structure fields. |
+| (root folder) | A JSON schema file that describes the data structure columns. |
 
 ### Restrict access to Attract
 
@@ -117,3 +116,5 @@ The download is a .zip file that contains:
 ## See also
 
 [Retiring Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard Apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

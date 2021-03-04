@@ -4,7 +4,7 @@
 title: Leave and absence concepts
 description: This topic describes leave and absence concepts, and how time-off balances are determined. 
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 01/03/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -300,3 +299,6 @@ Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Ca
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
 | Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

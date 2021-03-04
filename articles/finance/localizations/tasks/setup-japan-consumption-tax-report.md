@@ -17,12 +17,11 @@ ms.search.form: LedgerParameters, LedgerBadDebtAccounts_JP, OMLegalEntity, TaxTa
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -101,3 +100,6 @@ This task was created using the demo data company JPMF.
 | 9214               | Taxable purchase related to non-taxable sales - Credit note                           | Item 8                                                        | Item 4                     | Item 22-Item 23 (at tax rates)         |
 | 9215               | Common taxable purchase in common - Credit note                                       | Item 8, Item 15 (if Ratio \<0.95 & Individual method)         | Item 4                     | Item 22-Item 23 (at tax rates)         |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

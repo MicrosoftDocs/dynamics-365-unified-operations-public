@@ -4,7 +4,7 @@
 title: Choose a version of Attract
 description: This topic provides information about the capabilities in the different versions of Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -90,3 +89,6 @@ There are several reasons why you might not see all the Attract features that yo
 
 - Your coworker is working with a trial or a license for Attract with the Comprehensive Hiring Add-On, whereas you're working with the basic version of Attract.
 - You have Attract with the Comprehensive Hiring Add-On, but you haven't been assigned the correct roles to use all the features. For more information, see [Security and role management in Attract](security-attract.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

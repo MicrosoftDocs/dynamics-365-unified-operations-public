@@ -3,7 +3,7 @@
 
 title: Office integration overview
 description: This topic reviews Microsoft Office integration concepts and features.
-author: ChrisGarty
+author: jasongre
 manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
@@ -18,19 +18,20 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25511
 ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Office integration overview
+
+[!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -45,7 +46,7 @@ The Microsoft Office integration capabilities provide users with a productive en
 ## Excel Data Connector add-in
 Microsoft Excel can change and quickly analyze data. The Excel Data Connector app interacts with Excel workbooks and OData services that are created for publicly exposed data entities. The Excel Data Connector add-in enables Excel to become a seamless part of the user experience. The Excel Data Connector add-in is built by using the Office Web add-ins framework. The add-in runs in a task pane. Office Web Add-ins are web applications that run inside an embedded Internet Explorer browser window. 
 
-[![Screen shot of Excel Data Connector app](./media/1_office.png)](./media/1_office.png)
+[![Screenshot of Excel Data Connector app](./media/1_office.png)](./media/1_office.png)
 
 ### Dynamics AX 2012 architecture vs. Finance and Operations architecture
 
@@ -118,11 +119,11 @@ A preview for supported file types is provided on the **Preview** FastTab. Basic
 
 ### Office Licensing
 
-#### What Office 365 licenses are available?
+#### What Microsoft 365 licenses are available?
 
-There are lots of [Office 365 license options](https://products.office.com/business/compare-office-365-for-business-plans). You should select the license that makes sense for your organization.
+There are lots of [Microsoft 365 license options](https://products.office.com/business/compare-office-365-for-business-plans). You should select the license that makes sense for your organization.
 
-#### After purchasing an Office 365 license, what needs to be done to set up SharePoint storage for attachments?
+#### After purchasing a Microsoft 365 license, what needs to be done to set up SharePoint storage for attachments?
 
 Open the Document Parameters form and ensure that the SharePoint server has been automatically discovered and set. Now open or create a Document Type, set the Document Type's location to "SharePoint" and select the folder that the files should be stored in.
 
@@ -133,3 +134,6 @@ Open the Document Parameters form and ensure that the SharePoint server has been
 [Troubleshoot the Office integration](office-integration-troubleshooting.md)
 
 [Application stack and server architecture](../dev-tools/application-stack-server-architecture.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

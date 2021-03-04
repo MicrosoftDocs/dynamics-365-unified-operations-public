@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
@@ -162,3 +161,6 @@ final class MySysUserLogCleanup_Extension
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

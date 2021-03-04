@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
@@ -107,3 +106,6 @@ This task is used to migrate the registry key that RetailSaltUtility uses. This 
 - In the Finance and Operations data upgrade checklist, click **Archive retail salt data**.
 
 If the process is successful, the task is marked as completed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

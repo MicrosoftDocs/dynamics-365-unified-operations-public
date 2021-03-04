@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262724
 ms.search.region: Lithuania
@@ -66,3 +65,6 @@ To generate the report, go to **Fixed assets** **&gt; Inquires and** **Reports**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

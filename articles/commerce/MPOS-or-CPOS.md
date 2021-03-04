@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -109,3 +108,6 @@ Consider the following information as you plan your POS implementation in your s
 - **Hardware devices/peripherals** – One important aspect of a Retail POS system is its ability to use POS peripherals such as printers, cash drawers, and payment terminals. Although all the available POS options can use peripheral devices, only MPOS for Windows supports them directly. For all other applications, one or more hardware stations are required. Although this approach adds flexibility, additional components must be deployed, configured, and serviced.
 - **System requirements** – The system requirements for the POS application vary. Be sure to check the latest information before you make your choice. For example, because CPOS runs in a browser, it supports a wider range of operating systems. For more information about system requirements, see [System requirements for cloud deployments](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Deployment and servicing** – The complexity of the deployment and servicing requirements can vary, depending on the application and deployment choices. For example, for a cloud-hosted CPOS deployment, you don't have to install and update on every device. Therefore, this approach greatly reduces complexity and cost. However, if you deploy MPOS on every register and enable offline mode, and you also deploy shared hardware stations, you greatly increase the number of endpoints that must be managed.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

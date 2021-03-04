@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -96,3 +95,6 @@ You can now update the module code as needed.
 [Create a page container module](create-page-containers.md)
 
 [Localize a module](localize-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

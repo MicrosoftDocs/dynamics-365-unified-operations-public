@@ -17,7 +17,6 @@ ms.search.form: SysQueryForm, LedgerTransVoucher, LedgerTransBase, Originaldocum
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -46,3 +45,6 @@ This procedure shows how to use the Voucher transactions inquiry to search for j
 12. On the Action pane, Click **Original document**.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

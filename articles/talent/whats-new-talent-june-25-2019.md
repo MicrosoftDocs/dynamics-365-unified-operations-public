@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (June 25, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for June 25, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: 
@@ -18,18 +18,19 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-06-25
 ms.dyn365.ops.version: Talent
 
 ---
 # What's new or changed in Dynamics 365 Talent (June 25, 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 
@@ -58,7 +59,7 @@ These changes will consistently display the **Primary position** setting on all 
 
 Reviews that have been recalled via workflow can now be edited.
 
-### Final comments field in Reviews isn't translated (325921)
+### Final comments column in Reviews isn't translated (325921)
 
 The **Final comments** label will be translated in Talent.
 
@@ -80,13 +81,13 @@ Organizations can offer many types of leave to employees. However, it might not 
 
 **Feature management** will be removed from **System administration** because of issues with the feature. We'll re-introduce **Feature management** in a future release. 
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-The following entities will support custom fields: **Payroll earning code**, **Fixed compensation event**, **Compensation grid**, **Pay period**, and **Compensation reference point**. 
+The following tables will support custom columns: **Payroll earning code**, **Fixed compensation event**, **Compensation grid**, **Pay period**, and **Compensation reference point**. 
 
-### New Common Data Service entities
+### New Dataverse tables
 
-The **Reason codes** entity will be added to Common Data Service.
+The **Reason codes** table will be added to Dataverse.
 
 ### View performance information for direct and extended reports in manager self-service
 
@@ -95,3 +96,6 @@ A new option will let managers view the performance of both their direct reports
 ### Print performance reviews
 
 Employees, managers, and HR will be able to print an employee's performance review.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

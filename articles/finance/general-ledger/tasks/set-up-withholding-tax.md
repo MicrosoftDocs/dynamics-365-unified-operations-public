@@ -17,12 +17,11 @@ ms.search.form: TaxWithholdTable, TaxWithholdData, TaxWithholdGroup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -52,3 +51,6 @@ This topic explains how to set up withholding tax. *Withholding tax* is a tax on
 18. Select **Save**.
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

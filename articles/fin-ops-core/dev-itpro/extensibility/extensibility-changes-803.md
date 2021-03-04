@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -317,3 +316,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Increase EDT string size for EcoResProductSearchName
 - Change CacheLookup property to NotInTTS for AssetLedgerAccounts
 - Change CacheLookup property to Found on TaxOnItem, TaxJurisdiction, TaxGroupData, and TaxData, and AssetLedgerAcounts
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

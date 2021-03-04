@@ -16,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -39,3 +38,6 @@ To view the list of rules that are available in the transaction consistency chec
 By default, the status of every rule is set to **Enabled**. Therefore, all the rules are used to validate transactions before they are pulled into the commerce statements. To disable a rule, change its status to **Disabled**. Disabled rules aren't considered when transactions are validated during the statement calculation process.
 
 To bypass the whole validation process, regardless of the rules that are enabled, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**, and then, on the **Transaction validation** tab, set the **Disable consistency checker for Commerce transactions** option to **Yes**. After this option is set to **No**, it can't be set back to **Yes** from the user interface (UI).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

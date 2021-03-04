@@ -17,7 +17,6 @@ ms.search.form: VendPaymMode
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -51,3 +50,6 @@ This is the third procedure, out of five, that illustrates the vendor payment pr
 10. In the Payment account field, specify the values 'DEMF OPER'.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

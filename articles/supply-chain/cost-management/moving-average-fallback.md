@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -51,3 +50,6 @@ To select the fallback cost sequence for moving average calculations, follow the
     - **Active cost – Item price** – Organizations might experience performance issues if they use business processes where inventory regularly goes negative and, at the same time, the transaction volume is high. This setting can help mitigate those performance issues.
 
 ![Inventory accounting parameters](media/inventory-accounting-parameters.png "Inventory accounting parameters")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

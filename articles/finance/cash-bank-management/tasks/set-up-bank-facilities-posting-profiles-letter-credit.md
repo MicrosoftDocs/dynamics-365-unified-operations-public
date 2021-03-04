@@ -17,7 +17,6 @@ ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumen
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -77,3 +76,6 @@ This tasks uses the demo company 'USMF'.
     * This account is debited when the opening margin is posted and credited when the payment is posted.  
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

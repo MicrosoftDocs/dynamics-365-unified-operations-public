@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24211
 ms.search.region: Global
@@ -65,3 +64,6 @@ You can delete an environment that is in the deployed state directly through the
 
 > [!IMPORTANT]
 > For existing customers using channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md) no later than January 31, 2020. There is no action required for customers who exclusively use Store Scale Unit. Contact your Microsoft FastTrack Solution Architect if you require an extension.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

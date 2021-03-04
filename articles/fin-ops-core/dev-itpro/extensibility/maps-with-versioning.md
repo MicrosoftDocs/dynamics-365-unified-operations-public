@@ -19,7 +19,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -65,3 +64,6 @@ The classes, interfaces, and extensions described in these steps are shown in th
 
 ![MapClassExtensions](media/TableMaps.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

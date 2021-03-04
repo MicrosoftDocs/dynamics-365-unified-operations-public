@@ -18,7 +18,6 @@ ms.search.form: CashDisc
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3741
 ms.assetid: c25f9d85-2702-46aa-8e61-0b4886e069b3
@@ -71,3 +70,6 @@ An invoice for 1000 USD with cash discount terms of 20D2% is posted on February 
 > [!NOTE]
 > If the Calculate cash discounts for partial payments option is selected in the Accounts receivable parameters or Accounts payable parameters pages, the exchange rate that is in effect on the date of each partial payment is used. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

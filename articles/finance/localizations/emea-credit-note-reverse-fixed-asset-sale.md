@@ -18,12 +18,11 @@ ms.search.form: CustFreeCreditNote_W, CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266944
 ms.search.region: Estonia, Lithuania
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -47,3 +46,6 @@ The fixed asset disposal transactions, created when you posted the credit note, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

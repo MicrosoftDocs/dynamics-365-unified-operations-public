@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18411
 ms.assetid: 1cb19868-cbfd-4f45-bc47-39b9f303583d
@@ -171,3 +170,6 @@ We recommend that you import and export the data as a normal entity from DIXF st
     - Use this file for initial mapping only.
     - When the mapping is successful, import the actual file which does not have the line data into the entity. Use reimport or upload a new file.
     - This should import files with partial data (blank child records), depending on the validity of the records.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

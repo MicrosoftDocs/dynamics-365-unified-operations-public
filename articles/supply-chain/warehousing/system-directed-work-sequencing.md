@@ -12,12 +12,10 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -309,3 +307,6 @@ The system-directed work sequence queries are *inclusive*. It's important that y
 Therefore, in the example from this scenario, work ID *4* was also captured by the query. When it was created, two lines were added: one for 25 ea and another for 10 ea. The work was still presented to the user, because at least one work line has a quantity of less than 20 ea.
 
 Depending on the scenario, you can prevent this behavior by using work breaks.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

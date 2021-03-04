@@ -18,7 +18,6 @@ ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -125,3 +124,6 @@ When all goods have been registered, the warehouse manager or purchasing manager
 
 ## Summary
 The **Arrival overview** page can help the warehouse manager and warehouse workers achieve an overview of expected work that must be done as part of an inbound process. The page can also be used to start the item arrival process, to help guarantee that items are tracked at the first entry into the warehouse.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

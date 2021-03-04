@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -66,7 +65,7 @@ Complete the procedures in this topic to create a stock transfer order that has 
 5. Select **Close**.
 6. Select **OK**.
 
-## Validate the voucher
+## Validate the shipment voucher
 
 1. Select **Inquiries** \> **Transfer order history**.
 2. Select the record where the **Update type** field is set to **Shipment**.
@@ -86,7 +85,7 @@ Complete the procedures in this topic to create a stock transfer order that has 
 5. Select **Close**.
 6. Select **OK**.
 
-## Validate the voucher
+## Validate the receipt voucher
 
 1. Select **Inquiries** \> **Transfer order history**.
 2. Select the record where the **Update type** field is set to **Receive**.
@@ -96,3 +95,6 @@ Complete the procedures in this topic to create a stock transfer order that has 
 
 > [!NOTE]
 > The tax accounts for the "to" warehouse and GSTIN are posted.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

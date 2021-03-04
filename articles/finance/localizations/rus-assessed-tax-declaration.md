@@ -18,12 +18,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2019-05-01
 ms.dyn365.ops.version: 10.0.1
 
@@ -483,3 +482,6 @@ After you've calculated and approved tax registers, and generated an assessed ta
 4. In the **Name** field, select the name of the assessed tax journal.
 5. Select **Lines** to view the journal lines that have assessed tax accrual transactions that were created based on the tax register data and the settings of Fixed assets parameters.
 6. Validate and post the journal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

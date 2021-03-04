@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -758,3 +757,6 @@ The following procedure provides an example that shows how to post a correction 
     |------------------------|-----------------|----------------------|
     | VATDeductionCorrection | CORR            | Purchase             |
     | VATDeductionCorrection | CORR            | Purchase credit note |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

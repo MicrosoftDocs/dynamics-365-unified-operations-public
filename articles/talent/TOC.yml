@@ -251,4 +251,6 @@
     - name: User can access Human Resources but not the Onboard or Attract app
       href: user-access-core-hr.md
     - name: Azure Active Directory users not found in People Picker
-      href: people-picker-user-not-found.md   
+      href: people-picker-user-not-found.md
+    - name: Attract users can't apply for jobs from career portal
+      href: attract-troubleshoot-career-portal.md

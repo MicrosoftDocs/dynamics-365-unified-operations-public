@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 102343
 ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
@@ -73,3 +72,6 @@ This path involves configuring your project for continuous updates.
 
 [Configure service updates through Lifecycle Services (LCS)](../lifecycle-services/configure-service-updates.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

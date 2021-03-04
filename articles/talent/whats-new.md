@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Talent
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: tfehr
-manager: AnnBe
+manager: tfehr
 ms.date: 02/14/2019
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -38,3 +37,6 @@ Each week there are new releases for Talent. These releases are listed in the ta
 
 The table of contents will continue to be updated each week, so check back to find all of the new features and changes in the latest releases of Talent.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,8 +3,8 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (February 03, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for February 3, 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -24,13 +24,17 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (February 3, 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2809. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -48,7 +52,7 @@ The following preview features are available on February 3, 2020:
 
 ## Coming soon
 
-A new Common Data Service solution will be available soon with the following changes:
+A new Dataverse solution will be available soon with the following changes:
 
 | Description | Change |
 | ----------------------------------------- | --- |
@@ -59,7 +63,7 @@ A new Common Data Service solution will be available soon with the following cha
 | New variable compensation setup entities | **Compensation variable plan type**</br>**Compensation variable plan**</br>**Vesting rules**</br>**Compensation variable plan level** |
 | New **Worker calendar employment** entity | **Work calendar entity** added |
 | New **Payroll position detail** entity | **Payroll position detail** added |
-| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service. It won't be initially referenced from **Job Position** or **Job** entities. |
+| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Dataverse. It won't be initially referenced from **Job Position** or **Job** entities. |
 
 ## See also
 
@@ -68,3 +72,6 @@ A new Common Data Service solution will be available soon with the following cha
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

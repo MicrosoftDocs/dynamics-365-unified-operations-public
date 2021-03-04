@@ -18,7 +18,6 @@ ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79663
 ms.assetid: 3a7c3d13-8dbc-442d-a281-ac0ebe99ec83
@@ -52,3 +51,6 @@ Each case requires careful consideration about how to update standard costs.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

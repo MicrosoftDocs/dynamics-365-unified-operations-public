@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Brazil 
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: v-gonode
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---
@@ -49,3 +48,6 @@ Use this functionality to create the file that must be sent to the bank with the
 15.	Click **Save**.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

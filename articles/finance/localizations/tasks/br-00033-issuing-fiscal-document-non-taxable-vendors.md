@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -72,3 +71,6 @@ You can create and post vendor invoices on behalf of nontaxpayer vendors. You mu
 36. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
 37. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

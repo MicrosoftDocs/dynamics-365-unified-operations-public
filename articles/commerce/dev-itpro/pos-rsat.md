@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 28021
 ms.assetid: 
@@ -402,3 +401,6 @@ Unhandled Exception: System.IO.FileNotFoundException: Could not load file or ass
 ### Multifactor authentication
 
 If multifactor authentication is enabled for the device activation user, then playback may fail. If possible, disable the multifactor authentication for the activation user temporarily. After the activation is completed, then re-enable the multifactor authentication. Activation will be required only for the first-time playback. We recommend that you discuss this approach with your security experts before making this change.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

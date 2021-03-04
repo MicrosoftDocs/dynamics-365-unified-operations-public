@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang:
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm:
 ms.custom: 83892
 ms.search.region: Global
@@ -134,3 +133,6 @@ When this approach is used for credential management, credential rotation is mor
 ## Offline support
 
 Offline support for credentials requires that the extension code handle failover to offline when Key Vault credentials aren't available or accessible.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -20,7 +20,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -75,3 +74,6 @@ When you've finished, the page includes additional fields, catch weight informat
 
 > [!NOTE]
 > You can't modify the **AutoDeclaration** property on controls. However, you can still access the controls by name from code. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

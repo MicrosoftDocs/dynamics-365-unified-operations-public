@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50211
 ms.assetid: 0a774c73-9e5d-4faa-8716-61476c1a9b6e
@@ -1131,3 +1130,6 @@ For advanced layout scenarios we encourage using Flexbox. Flexbox is compatible 
 
 ### Control Instantiation
 [![Extensibility process](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

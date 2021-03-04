@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72211
 ms.assetid:
@@ -254,3 +253,6 @@ SysDa queries support several clauses:
 ## Troubleshooting
 
 You can use the **toString()** method on **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects to view the statement that you're building.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

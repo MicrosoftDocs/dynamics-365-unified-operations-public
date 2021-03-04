@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 17971
 ms.assetid: 256f7f2b-c419-442f-b195-0c6a299a056e
@@ -139,3 +138,6 @@ Before local Hardware Station can consume your extension, the **composition** se
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: OMLegalEntities, ProjFormletterParameters, CustFormletterParamet
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264604
 ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
@@ -67,3 +66,6 @@ After you set up the payment slip attachment format for sales invoices, free tex
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,13 +18,12 @@ ms.search.form: RetailShippingThresholdDiscounts, RetailPriceDiscGroup
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: ShalabhjainMSFT
+ms.author: shajain
 ms.search.validFrom: 2019-01-31
 ms.dyn365.ops.version: 
 
@@ -52,3 +51,6 @@ When the cashier creates a customer order on POS or the customer places an order
 
 > [!NOTE]
 > Unlike product discounts such as quantity, simple, mix and match, and threshold discounts, the shipping discount does not create discount lines. Instead, the shipping discount edits the shipping charge directly and appends the name of the discount to the charge description. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -15,7 +15,6 @@ ms.technology:
 
 audience: IT Pro 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: NotInToc
 ms.assetid: a6685c6f-74bf-4f09-a19d-76130d7ce2da
 ms.search.region: Global
@@ -41,3 +40,6 @@ When this feature is turned on, the following changes occur:
 
 - The start and end times of existing active periods are adjusted according to the UTC time zone. 'Although the active periods will continue to start and end at the same times that they previously started and ended, the times that are shown might change if the user's preferred time zone isn't UTC.
 - Active periods will follow the DST adjustments of the time zones that they are associated with.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

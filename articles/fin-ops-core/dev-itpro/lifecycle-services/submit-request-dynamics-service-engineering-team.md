@@ -2,10 +2,10 @@
 # required metadata
 
 title: Submit service requests to the Dynamics Service Engineering team
-description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS). 
+description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
 manager: AnnBe
-ms.date: 06/22/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 254564
 ms.assetid: 43ea0eae-34c8-4f97-8c98-c711844534d9
@@ -76,6 +75,16 @@ There are two ways to create a service request: automatically and on demand.
 - **Environment deployment** – To set up deployment options and submit a request to the DSE team to deploy a new environment, in the **Environments** section, select **Configure**.
 - **Package application** – To apply a package to the production environment, on the **Environment details** page, select **Maintain**, select the package to apply, and then select **Schedule**. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).
 
+    > [!IMPORTANT]
+    > If your scheduled time overlaps with a [planned maintenance window](./planned-maintenance-window-faq.md), you will receive the following warning message. 
+    >
+    > ![Warning message that explains the maintenance conflict](./media/MaintenanceConflict.png)
+    >
+    > If you choose to continue deploying the package, the package deployment operation will be rolled-back in the event of conflict, as planned maintenance takes priority.
+    >
+    > This restriction is appliable to **Microsoft-managed IAAS environments** only. 
+    
+
 ### Create a service request on demand
 Service requests that are created on demand aren't explicitly accepted by the DSE team. They will be addressed during the specified downtime window unless the DSE team has entered a comment in the request or has had to deny the request. For details, review the comments in the service request.
 
@@ -99,6 +108,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
    - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
+      - Tenant move of a live Production environment. Request the Microsoft Service Engineering team to move the Production database and Azure Blob Storage from the old tenant to the new tenant if you are moving tenant on a live Production environment. Make sure that you only request this service when you are ready with all prerequisites. For more details, see [Move LCS implementation projects to different Azure AD tenants](../../fin-ops/get-started/move-lcs-implementation-project-tenant.md).
       - Define explicit Internet Protocol (IP) safe list rules in a production environment.
         
         > [!NOTE]
@@ -134,3 +144,6 @@ Here are some typical examples of service requests that will be denied:
 |                                | Production | IP safe list rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

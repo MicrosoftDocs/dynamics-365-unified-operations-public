@@ -17,7 +17,6 @@ ms.search.form: Customer
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -44,7 +43,7 @@ There are two ways to access the details of the revenue recognition schedule.
 - You can open the revenue recognition schedule directly from an invoiced sales order. In this case, the information in the revenue schedule is filtered to show the details only for the selected sales order. This approach is useful when you're validating the schedule details for a sales order.
 - You can open the revenue recognition schedule from the **Revenue recognition \> Periodic tasks** page. This approach is often used when revenue is recognized at the end of a period. When the page is first opened, no information is shown. Use the filters above the grid to define criteria for the schedule details that should be shown. You can filter on the invoice dates by entering a date range, sales order, customer, project ID, or state.
 
-[![Revenue schedules page](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+[![Illustration of the Revenue schedules page](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
 The **Financial dimension** FastTab below the grid shows the financial dimensions of the sales order line. These dimensions were considered during posting to deferred revenue. They are also considered when the revenue is recognized. The dimension values that are used depend on the account structure that is assigned to the revenue and deferred revenue main accounts.
 
@@ -114,3 +113,6 @@ The contract changes have the following effects on the revenue schedule details:
 - If revenue has been recognized for the product, some revenue was incorrectly recognized because recognition was based on the incorrect revenue schedule. Those lines must be reversed and recognized again, based on the new schedule. In this scenario, new revenue schedule lines are created that have negative amounts on the original recognize date. New lines are then created to recognize the amounts based on the new revenue schedule. For example, on August 8, 2019, you recognized revenue for $10.53. On September 8, 2019, you recognized revenue for $13.16. Therefore, two new lines are created on the same dates. One line is for -$10.53, and the other line is for -$13.16. Twenty-four new lines are then created, and the total deferred revenue of $160.61 is allocated across them. You can post the reversing lines by running the **Create journal** process.
 
 [![Revenue recognition schedule](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

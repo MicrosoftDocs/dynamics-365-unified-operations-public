@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196953
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
@@ -142,3 +141,6 @@ Task recordings can be played as task guides. Task guides are used to guide user
 ## Additional resources
 
 Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

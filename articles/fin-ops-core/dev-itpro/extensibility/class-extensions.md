@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer
 # ms.devlang:
 ms.reviewer: rhaertle
-ms.search.scope: Operations
 # ms.tgt_pltfrm:
 ms.custom: 89563
 ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8
@@ -197,3 +196,6 @@ final class MyClass_Extension
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

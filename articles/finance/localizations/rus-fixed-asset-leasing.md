@@ -17,12 +17,11 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -86,3 +85,6 @@ You can register the return of a leased fixed asset in the same way that you reg
 
 > [!TIP]
 > Lease and return-from-lease transactions are reversed in the same way as acquisition transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
