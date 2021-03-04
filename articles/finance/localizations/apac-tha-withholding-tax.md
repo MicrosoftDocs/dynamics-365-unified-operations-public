@@ -5,7 +5,7 @@ title: Withholding tax in Thailand
 description: This topic provides information about withholding tax and how to set it up for Thailand. The withholding tax functionality has been enhanced for both vendor and customer transactions, so that withholding tax is calculated and withholding tax reports are generated.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -82,15 +82,15 @@ When you submit the **Withholding tax (Por Ngor Dor 53)** or **Withholding tax (
 
 ### Withholding tax Por Ngor Dor 53 and Por Ngor Dor 3 electronic formats
 
-Taxpayers can submit Por Ngor Dor 53 and Por Ngor Dor 3 online via an e-Filing system on the Revenue Department’s website or RD Smart Tax Application. The withholding tax reporting functionality is enhanced and allows users to generate the content in electronic formats to be imported in Rdinet tax application. 
+Taxpayers can submit Por Ngor Dor 53 and Por Ngor Dor 3 online by using an e-Filing system on the Revenue Department’s website or RD Smart Tax Application. The enhanced withholding tax reporting functionality allows users to generate the content in electronic formats to be imported in Rdinet tax application. 
 
 #### Download Electronic reporting configurations
 
 The implementation of withholding PND electronic formats for Thailand is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-For production and user acceptance testing (UAT) environments, follow the instructions [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For production and user acceptance testing (UAT) environments, follow the instructions in the topic, [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-The electronic format is generated as pipe delimited format file and in the **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
+The electronic format is generated as a pipe delimited format file. In the **Electronic reporting** workspace, you can import the following Electronic reporting formats from the repository:
 
 - Tax declaration model.version.82.xml or later version
 - Tax declaration model mapping.version.82.133.xml or a later version
@@ -98,42 +98,40 @@ The electronic format is generated as pipe delimited format file and in the **El
 
 After you've finished downloading the ER configurations from Lifecycle Services (LCS) or the global repository, complete the following steps.
 
-1. Go to the **Electronic reporting** workspace. Select the Reporting configurations tile.
-1. On the **Configurations** page, on the Action Pane, select **Exchange > Load from XML file**.
-1. Upload all the files in the order in which they are listed in the previous bullets. After all the configurations are uploaded, the configuration tree should be present in Finance.
+1. Go to the **Electronic reporting** workspace and select the **Reporting configurations** tile.
+2. On the **Configurations** page, on the Action Pane, select **Exchange** > **Load from XML file**.
+3. Upload all the files in the order that they are listed in the previous bullets. After all the configurations are uploaded, the configuration tree should be present in Finance.
 
 #### Set up application-specific parameters
 
-The Application-specific parameters option let the users to establish the criteria of how the tax transactions will be classified and presented in the different forms. When the report is generated depending on the configuration of **withholding tax item group** and **type of vendor account**,  the process will generate the format PND 53 or format PND 3. 
+The application-specific parameters option let the users establish the criteria of how the tax transactions will be classified and presented in the different forms. When the report is generated, depending on the configuration of **withholding tax item group** and **type of vendor account**,  the process will generate the format PND 53 or format PND 3. 
 
-This an example of suggested setup
+The following graphic provides an example of the suggested setup. 
+
 ![Configuration](media/apac-th-wht-pndformats-setup1.png)
 
-Complete the following steps to setup the different lookups used in the generation of PND files. 
+Complete the following steps to setup the different lookups used to generate PND files. 
 
-1. In the **Electronic reporting** workspace, select **Configurations > Setup** to set up the rules to identify the tax transaction into the related box of the VAT return form.
-1. Select the current version. On the Lookups FastTab, select the lookup name for example **$PNDFormatTypeLookup**. This lookup identifies the list of reports types supported in Thailand localization.
-1. On the **Conditions** FastTab, select **Add** and in the new line in the Lookup result column, select the related line.
-1. In the **Withholding tax item group** column, select the related code  used to identify the tax item group in the related format type.
-1. In the **Name**  column, select the type of vendor account. 
-1. Repeat steps 3-5 for all available lookups.
-1. Select **Add** again, and then follow these steps to include the final record line:
-   1. In the Lookup result column, select **Not applicable**. 
-   1. In the remainder columns, select **Not blank**. 
+1. In the **Electronic reporting** workspace, select **Configurations** > **Setup** to set up the rules to identify the tax transaction in the **Related** field on the **VAT return** page.
+2. Select the current version and on the **Lookups** FastTab, select the lookup name. For example, **$PNDFormatTypeLookup**. This lookup identifies the list of report types that are supported in Thailand localization.
+3. On the **Conditions** FastTab, select **Add** and in the new line, in the **Lookup result** column, select the related line.
+4. In the **Withholding tax item group** column, select the related code used to identify the tax item group in the related format type.
+5. In the **Name**  column, select the type of vendor account. 
+6. Repeat steps 3-5 for all available lookups.
+7. To include the final record line, select **Add** again, and in the **Lookup result** column, select **Not applicable**. 
+8. In the **Remainder** columns, select **Not blank**. 
 
 > [!NOTE]
-> By adding this last record **Not applicable**, you define the following rule: When the **Withholding tax item group**  and **Name** that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the Withholding format type. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.
+> By adding this last record **Not applicable**, you define the following rule: When the **Withholding tax item group** and the **Name** that is passed as an argument doesn't satisfy any of the previous rules, the transactions won't be included in the withholding format type. Although this rule isn't used when generating the report, the rule does help to avoid report generation errors when there is a missing rule configuration.
 
 #### Generate a withholding PND electronic file
 Complete the following steps to generate the tax declaration report.
 
-1. Go to **Tax > Declarations** > **Withholding tax** > **Generate PND electronic formats*.
-1. Enter the  **Tax branch**. Leave in blank if you want to include all available tax branches.
-1. Select the **From date**.
-1. Select **To date**.
-1. Select the **Settlement period**.
-1. Select the PND format type.
-1. Select **OK** to confirm the above steps. 
+1. Go to **Tax** > **Declarations** > **Withholding tax** > **Generate PND electronic formats*.
+2. Enter a specific **Tax branch**, or leave the field blank if you want to include all available tax branches.
+3. Select the from and to dates for the report.
+4. Select the settlement period and then select the PND format type.
+5. Select **OK** to confirm. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
