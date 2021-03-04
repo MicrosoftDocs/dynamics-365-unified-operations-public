@@ -1,3 +1,4 @@
+---
 # required metadata
 title: Enable Dynamics 365 Commerce and Microsoft Teams integration
 description: This topics describes how to enable Dynamics 365 Commerce and Microsoft Teams integration.
@@ -34,7 +35,7 @@ This topics describes how to enable Dynamics 365 Commerce and Microsoft Teams in
 In order to provision Microsoft Teams with information from Dynamics 365 Commerce and synchronize the task management features between Teams and the point of sale (POS) application, you must enable the integration features in Dynamics 365 Commerce headquarters. 
 
 > [!NOTE]
-> When you enable Microsoft Teams integration, you consent to share your data with Microsoft Teams. Data shared with Microsoft Teams may reside in a different geography than your Commerce data and may be subject to different compliance standards. For more information, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center). For information about Microsoft privacy policies, see the [Microsoft Privacy Statement] (http://aka.ms/privacy).
+> When you enable Microsoft Teams integration, you consent to share your data with Microsoft Teams. Data shared with Microsoft Teams may reside in a different geography than your Commerce data and may be subject to different compliance standards. For more information, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center). For information about Microsoft privacy policies, see the [Microsoft Privacy Statement] (https://aka.ms/privacy).
 
 ## Enable Teams integration 
 
