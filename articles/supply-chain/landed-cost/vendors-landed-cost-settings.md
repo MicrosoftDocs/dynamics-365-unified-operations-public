@@ -3,7 +3,7 @@
 
 title: Vendor settings added for Landed cost
 description: This topic describes the new fields that are added to the existing Vendors page when you enable the Landed cost module. You use these fields to set up the vendors that you will use together with Landed cost features.
-author: RichardLuan
+author: sherry-zheng
 manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: riluan
+ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
 ---

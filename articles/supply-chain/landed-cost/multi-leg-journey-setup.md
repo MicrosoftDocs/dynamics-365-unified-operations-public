@@ -3,7 +3,7 @@
 
 title: Multi-leg journey setup
 description: This topic describes how to set up multi-leg journeys for the Landed cost module.
-author: RichardLuan
+author: sherry-zheng
 manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: riluan
+ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
 ---

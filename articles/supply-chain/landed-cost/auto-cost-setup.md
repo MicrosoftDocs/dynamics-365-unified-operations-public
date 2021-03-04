@@ -3,7 +3,7 @@
 
 title: Auto costs setup
 description: This topic describes how to set up cost rules for various inbound voyage levels. Based on these rules, the system calculates the costs and automatically adds them. Therefore, users don't have to manually add the costs.
-author: RichardLuan
+author: sherry-zheng
 manager: tfehr
 ms.date: 01/21/2021
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: riluan
+ms.author: chuzheng
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Release 10.0.17
 ---
