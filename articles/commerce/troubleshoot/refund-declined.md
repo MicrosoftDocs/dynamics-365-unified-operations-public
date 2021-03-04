@@ -47,7 +47,7 @@ The payment authorization details will include the following error message: "Ady
 
 ### Enable blind returns in Adyen
 
-To enable blind refunds, follow the steps in [Troubleshoot Dynamics 365 Payment Connector for Adyen issues](adyen-support.md).
+To enable blind refunds, follow the steps in [Troubleshoot Dynamics 365 Payment Connector for Adyen issues](adyen-support.md) to reach out to the Adyen support team to request that blind refunds be enabled on your Adyen merchant account.
 
 ## Additional resources
 
