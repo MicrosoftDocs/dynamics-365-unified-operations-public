@@ -39,7 +39,7 @@ Provisioning Microsoft Teams is a two-step process:
 1. Create a team per each retail store and add store workers to their corresponding teams as members in Teams. If an employee is associated with two or more retail stores, team membership will reflect that. A communication team will be created to include regional managers as members to help publishing tasks from Microsoft Teams.  
 1. Upload your organizational hierarchy from Commerce to Teams.  
 
-## Provision Microsoft Teams in Commerce headquarters
+## Provision Teams in Commerce headquarters
 
 Before provisioning Teams, do the following:
 
@@ -55,14 +55,13 @@ To provision Microsoft Teams in Commerce headquarters, follow these steps.
 > [!TIP]
 > If you see the error "Failed to retrieve appliable Sku categories for the user," this indicates that none of your regional managers, store managers, and store workers have been associated with a Microsoft Teams license. To correct this error, select **Sync teams and members** on the Action Pane.  
 
-![Dynamics 365 Commerce - Teams integration configuration](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)
+<!-- ![Dynamics 365 Commerce - Teams integration configuration](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
 
 ## Verify teams provisioning in the Teams administrator portal
 
-To verify teams provisioning in the eams administrator portal, follow these steps.
+To verify teams provisioning in the Teams administrator portal, follow these steps.
 	
-1. Go to https://admin.teams.microsoft.com/.
-1. Sign in as administrator of your e-commerce tenant. 
+1. Go to the [Teams administrator portal](https://admin.teams.microsoft.com/) and sign in as administrator of your e-commerce tenant. 
 1. In the left navigation pane, select **Teams** to expand it, and then select **Manage teams*.
 1. Confirm that one team per Commerce retail store has been created. 
 1. Select a specific team and confirm that store workers have been added as members to the team. 
@@ -82,7 +81,8 @@ To upload a Commerce organizational hierarchy to Teams, follow these steps.
 1. Select **Download targeting hierarchy**, and then select **Retail Stores by Region** to download a CSV file of the organizational hierarchy. 
 1. Install the Teams PowerShell module following the steps outlined in [Install Microsoft Teams PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-install). 
 1. Use the Teams Powershell module to upload the targeting hierarchy CSV file by following the steps in [Set up your team targeting hierarchy](https://docs.microsoft.com/microsoftteams/set-up-your-team-hierarchy). 
-1. Sign in using the Azure AD administrator account for your tenant. 
+1. Go to the [Teams administrator portal](https://admin.teams.microsoft.com/) and sign in as administrator of your e-commerce tenant.
+1.
 
 ## Validate that the organizational hierarchy was uploaded to Teams
 
