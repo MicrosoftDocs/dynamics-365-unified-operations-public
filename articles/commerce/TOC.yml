@@ -2350,7 +2350,7 @@
       items: 
       - name: Order processing
         items:
-        - name: \"Payment type must be credit card\" error
+        - name: Payment type must be credit card error
           href: troubleshoot/payment-type-credit-card-error.md
         - name: Taxes on online orders are incorrectly calculated
           href: troubleshoot/tax-miscalculated-online-order.md
@@ -2380,7 +2380,7 @@
           href: troubleshoot/missing-products-categories.md
         - name: Restrict access to storefront during testing or development
           href: troubleshoot/restrict-access-storefront.md
-        - name: \"Sign in\" link redirects back to e-commerce site
+        - name: Sign in link redirects back to e-commerce site
           href: troubleshoot/sign-in-redirects-back.md
         - name: Customer records don't appear in Commerce headquarters
           href: troubleshoot/customer-record-not-appearing.md
