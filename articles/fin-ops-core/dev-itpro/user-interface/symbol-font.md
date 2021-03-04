@@ -37,5 +37,4 @@ The Dynamics Symbol font defines the set of out-of-box symbols that are availabl
 
 To access the list of available symbols (the name and an image) for every release that updated the Symbol font, visit the [Dynamics Symbol Font](https://docs.microsoft.com/dynamics/s-e/ax/axsymbolfont_60) page. A description of the various locations where symbols are used in the product and usage guidelines for each location is also included.
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
