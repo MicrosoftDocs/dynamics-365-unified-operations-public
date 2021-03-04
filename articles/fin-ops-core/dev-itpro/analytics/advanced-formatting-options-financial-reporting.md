@@ -316,5 +316,4 @@ You can design reports using dimension values that contain an ampersand (&).
 
 Within any **Link to Financial Dimension** field, you can enter a value such as **'P&L'**. Including single quotes (' ') on both sides of the dimension value indicates that you are using the literal value, such as including the (&) ampersand character.
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
