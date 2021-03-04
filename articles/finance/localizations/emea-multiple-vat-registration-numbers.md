@@ -75,7 +75,7 @@ To set up the VAT ID for a legal entity and its customers and vendors, VAT IDs m
    ![Tax-Service-MultVATID-Registration-categories-03](./media/Tax-Service-MultVATID-Registration-categories-03.png)
 
 
-### Assign VAT IDs to legal entity, customers and vendors
+### Assign VAT IDs to legal entity, customers, and vendors
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. On the **Legal entities** page, select **Registration IDs** and assign VAT ID registration to the respective address where the legal entity has VAT registration.
@@ -101,7 +101,7 @@ This number sequence group code defaults to the sales or purchase order header a
 ![Tax-Service-MultVATID-Number-sequence-group-06](./media/Tax-Service-MultVATID-Number-sequence-group-06.png)
 
 
-At this time, the default logic only supports sales and purchse orders.
+At this time, the default logic only supports sales and purchase orders.
 
 ### Set up tax authorities
 
@@ -130,11 +130,11 @@ In the **Microsoft Dynamics 365 Regulatory Service** for the Tax feature, verify
 > [!NOTE]
 > During sales tax calculation and documents posting, the tax service returns a value of Customer/Vendor tax registration number to Dynamics 365 Finance and update the **Tax exempt number** field on the sales or purchase order. When the corresponding value isn't set up in the Registration ID of customer or vendor, the registration ID will be left blank and you will receive the message: “Customer tax registration ‘xxx’ is not found in the customer’s Registration IDs setup. To add customer tax registration to sales tax transactions and posted documents, make sure the registration is defined in the Registration IDs setup.”
 
-## Sales and purchse order processing
+## Sales and purchase order processing
 
 Make sure the **Enable tax service** option is switched on in the **Tax service parameters**, and that **Sales** and **Purchase** are selected in the **Business process**.
 
-When the lines of a sales or purchase order are created with sales tax codes that are assigned to different sales tax settlement periods and tax registrations, there are multiple registration IDs for the order. To control the system behavior for this scenario, the **Check Tax registration number in document lines** parameter is added on the **Accounts receiveable parameters** and **Accounts payable parameters** pages. 
+When the lines of a sales or purchase order are created with sales tax codes that are assigned to different sales tax settlement periods and tax registrations, there are multiple registration IDs for the order. To control the system behavior for this scenario, the **Check Tax registration number in document lines** parameter is added on the **Accounts receivable parameters** and **Accounts payable parameters** pages. 
 At this time, the scenario of sales tax codes assigned to different registration IDs on a sales or purchase order isn't supported. During sales tax calculation and document posting, an error message is shown and you can't continue the process.
 
 ![Tax-Service-MultVATID-Order-processing-10](./media/Tax-Service-MultVATID-Order-processing-10.png)
@@ -148,7 +148,7 @@ On the **Temporary sales tax** page you can preview the identified legal entity�
   - **Tax registration number**L The VAT ID of the legal entity
   - **Customer tax registration number** (sales order) and **Vendor tax registration number** (purchase order): The VAT ID of the customer or vendor.
 
-On the **Posted sales tax** page, two new field are added: 
+On the **Posted sales tax** page, two new fields are added: 
 
   - **Tax registration number**: The VAT ID of the legal entity
   - - **Counterparty tax registration number**: The VAT ID of the counterparty. You can sort and filter sales tax transactions by these fields.
