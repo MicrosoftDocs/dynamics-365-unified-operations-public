@@ -90,7 +90,7 @@ To create a subscription, go to **Material handling equipment interface \> Setup
 - **Outbound transaction type** - Identifies the events this subscription should contain.
 - **Payload generator** - An optional code extension that can fill additional information in the **Payload** field on the outbound event.
 
-In addition to this, each subscription can have a query associated with it that filters work lines and headers to further restrict which work will generate events using this subscription. To add a query to a subscription, select the **Run query** check box for the relevant subscription on the **Subscriptions** page and then select **Edit query** from the Action Pane. This opens the standard Supply Chain Management query editor.
+In addition to these parameters, each subscription can have a query associated with it that filters work lines and headers to further restrict which work will generate events using this subscription. To add a query to a subscription, select the **Run query** check box for the relevant subscription on the **Subscriptions** page and then select **Edit query** from the Action Pane. This opens the standard Supply Chain Management query editor.
 
 The subscription also includes a *subscription map*, which maps fields from either the work header or work line to some or all of the 10 free data fields on the outbound event, as needed. To return information back to the MHAX service, you would typically include the work line record ID or the work line pair ID (which is a new field that allows the system to process pick and put lines using a single return command). The rest of the fields are use-case dependent; some examples are provided later in this topic.
 
@@ -120,7 +120,7 @@ Work completion events are triggered on work update when the work status changes
 
 #### Work cancellation events
 
-Work cancellation events are triggered on work update when the work status changes to *Cancelled* from any status other than *Cancelled*. In addition to this event being created, cancelling work will also delete all other events related to this work header from the queue for all subscriptions. This will prevent external systems from processing unneeded events.
+Work cancellation events are triggered on work update when the work status changes to *Canceled* from any status other than *Canceled*. In addition to this event being created, canceling work will also delete all other events related to this work header from the queue for all subscriptions. This will prevent external systems from processing unneeded events.
 
 #### Pick/put completion events
 
@@ -148,9 +148,9 @@ In addition to the incoming fields, the system also assigns a unique inbound que
 
 This section describes the supported inbound event types, also known as *transaction types*, and the data that must be supplied for the event to be processed.
 
-#### Work confirm events
+#### Work-confirm events
 
-Work confirm events require the following to be included in the incoming data fields:
+Work-confirm events require the following to be included in the incoming data fields:
 
 - **data01** - The work line pair ID (*either* this or data02 must be present)
 - **data02** - The work line record ID (RecId) (*either* this or data01 must be present)
