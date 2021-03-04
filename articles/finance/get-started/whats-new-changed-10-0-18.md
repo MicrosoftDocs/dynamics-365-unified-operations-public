@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Finance 10.0.18 (May 2021)
-description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.17 preview release.
+description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.18 preview release.
 author: roschlom
 manager: AnnBe
 ms.date: 02/25/2021
@@ -62,13 +62,13 @@ The following features are included in this release. Some of the listed features
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.18 includes platform updates. To learn more, see [Platform updates for version 10.0.17 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). 
+Dynamics 365 Finance 10.0.18 includes platform updates. To learn more, see [Platform updates for version 10.0.18 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18.md). 
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=551039&dbType=3&qc=510c0f86ac24207edecf80d9f313de2065ba105446736042428e3b5489fdf607).
 
 ### Regulatory updates
-For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
+For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
 ### Dynamics 365: 2021 release wave 1 plan
 
@@ -78,7 +78,7 @@ Check out the [Dynamics 365: 2021 release wave 1 plan](https://docs.microsoft.co
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) topic describes features that have been removed or deprecated for Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
