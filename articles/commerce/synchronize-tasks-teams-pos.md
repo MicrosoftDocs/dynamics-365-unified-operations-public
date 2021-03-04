@@ -79,6 +79,6 @@ To link POS and Teams applications on tasks management, follow these steps.
 
 [Provision Microsoft Teams from Dynamics 365 Commerce](provision-teams-from-commerce.md)
 
-[Configure Microsoft Teams integration](configure-teams-integration.md)
+[Enable Microsoft Teams integration](enable-teams-integration.md)
 
 [Manage user roles in Microsoft Teams](manage-user-roles-teams.md)
