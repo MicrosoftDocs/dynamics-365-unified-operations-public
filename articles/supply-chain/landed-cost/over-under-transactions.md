@@ -3,7 +3,7 @@
 
 title: Over/under transactions
 description: This topic provides information that will help you set up the details of policies for over/under transactions, so that the system can determine how to manage the over-processing and under-processing of goods at the time of receipt.
-author: RichardLuan
+author: sherry-zheng
 manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ITMContainerActivityTable
+ms.search.form: ITMOverUnderTrans, ITMOverUnderToleranceTable, ITMOverUnderReasonTable, ITMOverUnderToleranceGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -22,14 +22,15 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: riluan
+ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
 # Over/under transactions
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 When the orders in a voyage are processed, the system expects the item quantity that is received in the final destination warehouse for consumption to match the quantity that is specified on the purchase order lines that are associated with the voyage. However, because the exact quantity on the purchase order lines isn't always received in the warehouse, the **Landed cost** module defines a set of rules that are used to handle over-receiving and under-receiving of goods. These rules are especially important because the original purchase order has been invoiced and can no longer be modified. By setting up the details of over/under transaction policies, you enable the system to determine how to manage the over-processing and under-processing of goods at the time of receipt. You can also manually manage over and under inventory by using the **Over/under transactions** page.
 

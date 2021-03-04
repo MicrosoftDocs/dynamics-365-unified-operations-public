@@ -3,7 +3,7 @@
 
 title: Auto costs setup
 description: This topic describes how to set up cost rules for various inbound voyage levels. Based on these rules, the system calculates the costs and automatically adds them. Therefore, users don't have to manually add the costs.
-author: RichardLuan
+author: sherry-zheng
 manager: tfehr
 ms.date: 01/21/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: ITMCostAutoSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -22,14 +22,15 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: riluan
+ms.author: chuzheng
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
 # Auto costs setup
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 You can use the **Auto costs** page to set up cost rules for various cost areas (such as voyages, shipping containers, folios, purchase orders, items, or transfer order lines). Based on the rules, and the fields that users select when they create records for one of the cost areas, the system calculates the costs and automatically adds them. Therefore, users don't have to manually add the costs.
 

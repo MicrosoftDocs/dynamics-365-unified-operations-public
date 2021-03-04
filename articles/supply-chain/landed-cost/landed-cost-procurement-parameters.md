@@ -3,7 +3,7 @@
 
 title: Procurement and sourcing parameters for Landed cost
 description: This topic describes how to set up the relevant Procurement and sourcing parameters when you use the Landed cost module.
-author: RichardLuan
+author: sherry-zheng
 manager: tfehr
 ms.date: 12/09/2020
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: SrmParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -22,14 +22,15 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: riluan
+ms.author: chuzheng
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
 # Procurement and sourcing parameters for Landed cost
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you use the **Landed cost** module. Use the **Update order lines** dialog box that is opened from the **Procurement and sourcing parameters** page to specify whether purchase order lines should automatically be updated when changes are made on the purchase order header.
 

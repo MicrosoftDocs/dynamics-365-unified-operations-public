@@ -50,6 +50,12 @@ CustTable _custTable,
     ,CustTrans _parentCustTrans = null)
 ```
 
+### What does obsolete mean?
+
+When a method is marked as obsolete, it means the code is no longer required and we plan to eventually remove it from the product. The obsolete method will often recommend an alternative method that can be used. The referencing code will continue to work as expected with the obsolete method. No immediate action is required. But, referencing code should be refactored to use the replacement method.
+
+For more information about obsolete processes, see [Deprecation of methods and metadata elements](../migration-upgrade/deprecation-deletion-apis.md).
+
 ### Why is it marked as obsolete?
 
 When many settlements are done at the same time for the same customer, database blocking occurs. Database blocking affects performance.
@@ -142,6 +148,5 @@ CustTrans::settleTransaction(
 This functionality uses flights. To test it, you must turn on the flight in a non-production environment. For information about how to turn on a flight in a non-production environment, see [Data management overview](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).
 
 The name of the flight is **EnableCustTransSettleTransaction**.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

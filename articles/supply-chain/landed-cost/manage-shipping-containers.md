@@ -3,7 +3,7 @@
 
 title: Manage shipping containers
 description: This topic describes how to work with shipping containers. Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
-author: RichardLuan
+author: sherry-zheng
 manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: ITMContainersListPage, ITMContainers
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -22,14 +22,15 @@ ms.search.scope:  Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: riluan
+ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
 # Manage shipping containers
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
 
