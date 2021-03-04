@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: ITMContainersListPage, ITMContainers
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +29,8 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Manage shipping containers
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
 

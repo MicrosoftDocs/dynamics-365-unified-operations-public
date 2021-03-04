@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: ITMTableListPage, ITMTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +29,8 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Manage voyages
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A voyage typically represents a vessel. However, depending on your practices and procedures, it can represent a vendor, a purchase order, or some other item that makes sense for your organization.
 

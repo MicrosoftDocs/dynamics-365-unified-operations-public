@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: ITMLegTable, ITMJourneyTable, ITMActivityTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +29,8 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Multi-leg journey setup
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to set up multi-leg journeys for the **Landed cost** module.
 

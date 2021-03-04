@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: ITMParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +29,8 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Landed cost parameters setup
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 You use the **Landed cost parameters** page to set up general information and configuration settings that are used across the **Landed cost** module for posting, status updates, number sequences, and behavior. The setup of parameters is shared across legal entities and can be modified by an administrator.
 

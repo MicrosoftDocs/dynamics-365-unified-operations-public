@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: ITMCostAutoSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +29,8 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Auto costs setup
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 You can use the **Auto costs** page to set up cost rules for various cost areas (such as voyages, shipping containers, folios, purchase orders, items, or transfer order lines). Based on the rules, and the fields that users select when they create records for one of the cost areas, the system calculates the costs and automatically adds them. Therefore, users don't have to manually add the costs.
 
