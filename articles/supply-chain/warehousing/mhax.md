@@ -35,7 +35,7 @@ Use the *material handling equipment interface* (MHAX) to connect external physi
 
 The following illustration shows the various elements and the order in which various processes occur when you use MHAX integration.
 
-![AltText](media/mhax-components.png "AltText")
+![Components and interactions of the MHAX system](media/mhax-components.png "Components and interactions of the MHAX system")
 
 The following interactions are indicated in the illustration:
 
