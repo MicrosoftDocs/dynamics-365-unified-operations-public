@@ -5,7 +5,7 @@ title: Inspect the configured ER component to prevent runtime issues
 description: This topic explains how to inspect the configured Electronic reporting (ER) components to prevent runtime issues that might occur.
 author: NickSelin
 manager: AnnBe
-ms.date: 02/10/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -858,7 +858,7 @@ For an example that shows how this issue might occur and how it can be fixed, se
 
 ## <a id="i16"></a>Inconsistent setting of Header or Footer components
 
-When you [configure](er-fillable-excel.md) an ER format component to use an Excel template to generate an outbound document, you can add the **Excel\\Header** or **Excel\\Footer** components to fill in headers or footers at the top and bottom of a generated worksheet in Excel workbook. For every added **Excel\\Header** or **Excel\\Footer** component you must set the **Header/footer appearance** property to specify pages for which this component is executed. As you can configure several **Excel\\Header** or **Excel\\Footer** components for a single **Sheet** component to generate different headers or footers for different type of pages of a generated Excel worksheet, it is required to configure a single **Excel\\Header** or **Excel\\Footer** component for a particular value of the **Header/footer appearance** property. When more than one **Excel\\Header** or **Excel\\Footer** component is configured for a particular value of the **Header/footer appearance** property, the validation error **Headers/footers (Footer) are inconsistent** is thrown.
+When you [configure](er-fillable-excel.md) an ER format component to use an Excel template to generate an outbound document, you can add the **Excel\\Header** or **Excel\\Footer** components to fill in headers or footers at the top and bottom of a worksheet in an Excel workbook. For every added **Excel\\Header** or **Excel\\Footer** component, you must set the **Header/footer appearance** property to specify the pages for which this component is executed. Because you can configure several **Excel\\Header** or **Excel\\Footer** components for a single **Sheet** component and generate different headers or footers for different type of pages in an Excel worksheet, you must configure a single **Excel\\Header** or **Excel\\Footer** component for a particular value of the **Header/footer appearance** property. When more than one **Excel\\Header** or **Excel\\Footer** component is configured for a particular value of the **Header/footer appearance** property, the validation error **Headers/footers (Footer) are inconsistent** is thrown.
 
 ### Automatic resolution
 
