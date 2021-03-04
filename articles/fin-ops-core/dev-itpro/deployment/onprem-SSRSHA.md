@@ -1,0 +1,91 @@
+
+
+This article explain how to configure multiple SSRS nodes for Finance + Operations (on-premises) deployments.
+
+## High Availability with Windows Failover Clusters
+
+In this scenario we will make use of Windows Failover Clusters. With this scenario we would have one active node that would receive all requests and one passive node that would be idle. In the event that the active node were to become unavailable then the cluster would detect this and the passive node would then receive all network traffic.
+
+Setting up Windows Failover Cluster is not covered in this guide. For more information see [Create Failover Cluster](https://docs.microsoft.com/windows-server/failover-clustering/create-failover-cluster).
+
+Once the cluster is setup we will proceed with configuring our installation. The explanations from this point on will be based on the information from the screenshot below.
+
+![Example Windows Failover Cluster configuration](./media/WFC.png)
+
+1. Update your configuration file (ConfigTemplate.xml)
+    1. Ensure that under the ServiceFabricCluster section you list all of your servers under the ReportServerType.
+
+        ```xml
+        <NodeType name="ReportServerType" primary="false" namePrefix="Rep" purpose="BI">
+            <VMList>
+                <VM name="LBDEN05FS1BI1" ipAddress="10.179.108.10" faultDomain="fd:/fd1" updateDomain="ud1"/>
+                <VM name="LBDEN05FS1BI2" ipAddress="10.179.108.11" faultDomain="fd:/fd2" updateDomain="ud2"/>
+            </VMList>
+        </NodeType>
+        ```
+    1. Update the SSRSHTTPS certificate settings
+
+        ```xml
+        <Certificate type="SSRSHTTPS" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
+            <!-- Specify the friendly name of the certificate during import operations. -->
+            <Name>LBDEN05FS1BI</Name>
+            <!-- Specify the file name of the pfx that will be used in export and import operations. If not specified, the name property will be used -->
+            <FileName>LBDEN05FS1BI</FileName>
+            <!-- Specify the dns names for the listener, and of each of the report nodes in the cluster. -->
+            <!-- The FQDNS will only be accessed from within the environment so its not necessary to create external DNS entries for them. -->
+            <DNSName>LBDEN05FS1BI;LBDEN05FS1BI1;LBDEN05FS1BI2</DNSName>
+            <Subject>LBDEN05FS1BI</Subject>
+            <Thumbprint></Thumbprint>
+            <ProtectTo></ProtectTo>
+        </Certificate>
+        ```
+    
+    > [!IMPORTANT]
+    > Even if you are not going to generate the certificate using the infrastructure scripts provided, fill out the certificate information as other scripts will rely on the this information.
+
+    1. From this point on follow the setup guide as you normally would.
+
+    > [!IMPORTANT]
+    > Ensure that the nodes are added to the Service Fabric Cluster if you have already created the cluster.
+    > Ensure that the certificate for the SSRS web server gets distributed to all of the ReportServer nodes by rerunning the Export-PfxFiles.ps1 script and rerunning the Complete-Prereqs.ps1 on the appropriate machines.
+
+## High Availability with load balancers
+
+In this scenario we will make use of a load balancer to distribute requests among the different nodes available. In this scenario the requests will be distributed among the different nodes available. When setting up this configuration it is important to note that it is required to setup session persistence or affinity. So the solution chosen must be able to support such requirement.
+
+The type of session persistence or affinity that is required is client-based. Meaning that when a client (in our case an AOS node) makes a request, the load balancer should direct all requests for that AOS node to the same SSRS node (as long as that node is still available). If doing session persistence, set the idle timeout to at least 30 minutes. 
+
+Instructions on setting up a specifc software load balancer or hardware load balancer is not covered in this documentation.
+
+However, the general overview for this scenario is as follows.
+
+1. Decide on a load balancing strategy/product.
+1. Configure it according to your network topology.
+1. Ensure you have set client (source ip) session persistence or affinity.
+1. Update the ConfigTemplate.xml using the example above as a guide.
+1. Proceed with cluster setup as you normally would. 
+
+> [!IMPORTANT]
+> Ensure that the additional nodes are added to the Service Fabric Cluster if you have already created the cluster.
+> Ensure that the certificate for the SSRS web server gets distributed to all of the ReportServer nodes by rerunning the Export-PfxFiles.ps1 script and rerunning the Complete-Prereqs.ps1 on the appropriate machines.
+
+## Deployed environments with Pre-PU41 base deployments
+
+> [!NOTE]
+> This configuration is only supported with PU41 and later deployments.
+
+For existing environments that want to enable HA for their SSRS nodes, they can use a predeployment script. For more information on predeployment scripts please see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md)
+
+### Predeployment script
+
+Invoke command example:
+
+```powershell
+Configure-SSRSHA.ps1 -Listener -MachinesList -TLSCertificate
+```
+
+Configure-SSRSHA.ps1 script:
+
+```powershell
+
+```

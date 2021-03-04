@@ -51,11 +51,12 @@ These components depend on the following system software:
 - Microsoft Windows Server 2016 (only English OS installations are supported)
 - Microsoft SQL Server 2016 SP2, which has the following features:
   - Full-text index search is enabled.
-  - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines (the SSRS nodes should also have a database engine instance running locally).
-  - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
-
+  
     > [!WARNING]
     > Full Text Search must be enabled.
+
+- SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines (the SSRS nodes should also have a database engine instance running locally).
+- SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
 
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric 7.2 or later
@@ -118,7 +119,7 @@ Plan your infrastructure and Service Fabric cluster based on the recommended siz
 The following table shows an example of a hardware layout. This example is used throughout this topic to illustrate the setup. You will need to replace the machine names and IP addresses given in the following instructions with the names and IP addresses for the machines in your environment.
 
 > [!NOTE]
-> The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type. If you have a node type that has more than 3 VMs, you should consider making that node type your Primary (Seed) node type to increase the reliability of the cluster. 
+> The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type. If you have a node type that has more than 3 VMs, you may consider making that node type your Primary (Seed) node type to increase the reliability of the cluster. 
 
 | Machine purpose          | SF Node type     | Machine name    | IP address    |
 |--------------------------|------------------|-----------------|---------------|
@@ -137,7 +138,6 @@ The following table shows an example of a hardware layout. This example is used 
 | Orchestrator 3           | OrchestratorType | SQLAOSF1ORCH3   | 10.179.108.23 |
 | Management Reporter node | MRType           | SQLAOSMR1       | 10.179.108.31 |
 | SSRS node 1              | ReportServerType | SQLAOSFBI1     | 10.179.108.41 |
-| SSRS node 2              | ReportServerType | SQLAOSFBI2     | 10.179.108.42 |
 
 The following table shows an example of a hardware layout where batch execution and interactive sessions are executed in dedicated nodes. For more information, see [Configure batch-only and interactive-only AOS nodes in on-premises deployments](./onprem-batchonly.md).
 
@@ -161,7 +161,6 @@ The following table shows an example of a hardware layout where batch execution 
 | Orchestrator 3           | OrchestratorType | SQLAOSF1ORCH3   | 10.179.108.23 |
 | Management Reporter node | MRType           | SQLAOSMR1       | 10.179.108.31 |
 | SSRS node 1              | ReportServerType | SQLAOSFBI1     | 10.179.108.41 |
-| SSRS node 2              | ReportServerType | SQLAOSFBI2     | 10.179.108.42 |
 
 ## Overview
 
@@ -199,8 +198,8 @@ Before you start the setup, the following prerequisites must be in place. The se
 - Active Directory Domain Services (AD DS) must be installed and configured in your network.
 - AD FS must be deployed.
 - SQL Server 2016 SP2 must be installed on the SSRS machines.
-- SQL Server Reporting Services 2016 must be installed (but not configured) on the SSRS machines.
-- (Optional) Active Directory Certificate Services is installed in your network.
+- SQL Server Reporting Services 2016 must be installed (but not configured) in **Native** mode on the SSRS machines.
+- (Optional) Active Directory Certificate Services is installed and configured in your network.
 
 The following prerequisite software is installed on the VMs by the infrastructure setup scripts downloaded from LCS.
 
@@ -212,14 +211,14 @@ The following prerequisite software is installed on the VMs by the infrastructur
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
 | AOS       | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
 | AOS       | Internet Information Services (IIS) | **Windows features:** WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs, Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console |
-| AOS       | SQL Server Management Studio 17.5 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+| AOS       | SQL Server Management Studio 17.9.1 | <https://go.microsoft.com/fwlink/?linkid=854085> |
 | AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
 | AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | <https://lcs.dynamics.com/V2/SharedAssetLibrary> > Models > "VC++ 17 Redistributables" |
 | AOS       | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> |
 | BI        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | BI        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
 | BI        | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
-| BI        | SQL Server Management Studio 17.5 | <https://go.microsoft.com/fwlink/?linkid=854085> |
+| BI        | SQL Server Management Studio 17.9.1 | <https://go.microsoft.com/fwlink/?linkid=854085> |
 | MR        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | MR        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
 | MR        | The Microsoft .NET Framework version 4.7.2 (CLR 4.0) | https://dotnet.microsoft.com/download/thank-you/net472-offline |
@@ -234,7 +233,6 @@ For example, if your company's domain is contoso.com, your zone for Finance + Op
 
 - ax.d365ffo.onprem.contoso.com for AOS machines
 - sf.d365ffo.onprem.contoso.com for the Service Fabric cluster
-- bi.contoso.com for the SSRS machines (only the AOS nodes will reach out, it should not be resolvable outside the cluster)
 
 ### <a name="plancert"></a> 2. Plan and acquire your certificates
 
@@ -263,7 +261,7 @@ Recommended settings for certificates are:
 | Data Signing certificate                     | This certificate is used by the AOS to encrypt sensitive information.  | <p> This is separate from the Data Encryption certificate and must be created using the provider **Microsoft Enhanced RSA and AES Cryptographic Provider**. </p> <p> CN: DataSigning <br> DNS Name: DataSigning </p> |
 | Financial Reporting client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and the AOS. | <p>CN: FinancialReporting <br> DNS Name: FinancialReporting </p>  |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and the AOS.| <p> **Do not reuse the Financial Reporting Client certificate.** </p> <p> CN: ReportingService <br> DNS Name: ReportingService </p> |
-| SSRS web server certificate                  | This certificate is used as the Server certificate that is presented to the client (AOS) for the SSRS web server. | <p> The domain name of the certificate should match the FQDN of the load balancer/listener for the SSRS nodes if setting up High Availability. Additionally it should have the FQDN of each of the SSRS nodes. CN: BI.contoso.com <br> DNS Name: BI.contoso.com <br> Subject Alternative Name: BI.contoso.com, BI1.contoso.com, BI2.contoso.com </p> <p> If not setting up High Availability, the domain name of the certificate should match the FQDN of the SSRS node. CN: BI1.contoso.com <br> DNS Name: BI1.contoso.com </p>
+| SSRS web server certificate                  | This certificate is used as the Server certificate that is presented to the client (AOS) for the SSRS web server. | <p> The domain name of the certificate should match the FQDN of the SSRS node. CN: BI1.contoso.com <br> DNS Name: BI1.contoso.com </p>
 | On-Premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS.</p><p>This certificate enables the local agent to act on behalf of your Azure AD tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only 1 on-premises local agent certificate is needed for a tenant.</p> | <p> CN: OnPremLocalAgent <br> DNS Name: OnPremLocalAgent </p> |
 
 SSL wild card certificate of your domain can be used to combine Service Fabric Server certificate and AOS SSL certificate.
@@ -312,7 +310,6 @@ DNS is integrated with AD DS, and lets you organize, manage, and find resources 
 
 - **ax**.d365ffo.onprem.contoso.com for AOS machines
 - **sf**.d365ffo.onprem.contoso.com for the Service Fabric cluster
-- **BI**.contoso.com for the SSRS load balancer/listener if setting up High Availability for the service.
 
 #### Add a DNS zone
 
@@ -370,8 +367,6 @@ We have provided several scripts to help improve the setup experience. Follow th
 2. On the dashboard, select the **Shared asset library** tile.
 3. On the **Model** tab, in the grid, select the **Dynamics 365 for Operations on-premises - Deployment scripts** row.
 4. Select **Versions**, and then download the latest version of the zip file for the scripts.
-   >[!Note] 
-   > If you need the older version for Platform update 8 or Platform update 11, download version 1.
 5. Right-click the zip file, and then select **Properties**. In the dialog box, select the **Unblock** check box.
 6. Copy the zip file to the machine that will be used to execute the scripts.
 7. Unzip the files into a folder that is named **infrastructure**.
@@ -484,7 +479,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     |-----------|---------------|--------------------|
     | SNAC – ODBC driver 13 | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#131> | msodbcsql.msi |
     | SNAC – ODBC driver 17.5.x | <https://docs.microsoft.com/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows?view=sql-server-ver15#1752> | msodbcsql\_17.msi |
-    | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
+    | Microsoft SQL Server Management Studio 17.9.1 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
     | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. | vc\_redist.x64\_14\_16\_27024.exe |
     | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
@@ -518,7 +513,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     > 2. When you use the remoting script, ensure that the current user has access to the share folder of MSIs.
     > 3. When you use the remoting script, ensure no user is accessing the AOSNodeType, MRType, and ReportServerType type machines. Otherwise, the remoting script will fail to restart the computer because of the users being logged on to the computer.
 
-2. Run the following scripts, if they exist, to complete the VM setup.
+2. Run the following script, to complete the VM setup.
 
     ```powershell
     # If Remoting, execute
@@ -772,7 +767,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     | On-premises Platform Update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Demo Data |
     | On-premises Platform Update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Empty Data |
 
-4. The zip file contains a single .bak file. Select the .bak file, based on your requirements.
+4. The zip file contains a single .bak file. Choose the file to download based on your requirements.
 
 5. Ensure the database section in the infrastructure\ConfigTempate.xml is configured correctly with the following:
     1. The database name.
@@ -911,6 +906,8 @@ For more information, see [Install integration services](https://docs.microsoft.
 
 ### <a name="setupssrs"></a> 17. Set up SSRS
 
+It is possible to configure more than one SSRS node. Please check [](./onprem-SSRSHA.md) for more information.
+
 1. Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
 
     > [!IMPORTANT]
@@ -919,7 +916,7 @@ For more information, see [Install integration services](https://docs.microsoft.
 
 1. For each BI node, perform the following steps:
 
-    1. Copy the **infrastructure** folder and navigate to it in a PowerShell window with elevate privileges.
+    1. Copy the **infrastructure** folder and navigate to it in a PowerShell window with elevated privileges.
     1. Execute the following scripts.
 
         ```powershell

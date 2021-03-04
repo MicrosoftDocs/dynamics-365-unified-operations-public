@@ -236,6 +236,9 @@ You must reinstall the LocalAgent if:
 	- Server certificate thumbprint
 	- Tenant service principle certificate thumbprint
 
+    > [!IMPORTANT]
+    > Do **not** create a new connector in LCS. Update the configuration of your existing connector and download the settings again.
+
 ## Update your current deployment configuration
 
 Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the cleanup job will probably fail. (This manual update must be done just this one time.)
