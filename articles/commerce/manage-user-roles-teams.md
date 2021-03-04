@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic covers how to manage Dynamics 365 Commerce user roles in Microsoft Teams, and provides answers to frequently asked questions.
 
-As you create a team per store or channel in Microsoft Teams, a group membership corresponding to the team is created, for example `HOUSTON_D365@<YourTenantAADDomain>.com`. All the store workers under a team group membership are assigned one of two user roles: "owner" or "member." A store employee with the "owner" user role, typically a store manager, can perform operations such as adding a private channel and adding or deleting members. 
+As you create a team per store or channel in Microsoft Teams, a group membership corresponding to the team is created, for example `HOUSTON_D365@<YourTenantAADDomain>.com`. All the store workers under a team group membership are assigned one of two user roles: "owner" or "member." A store employee with the owner user role, typically a store manager, can perform operations such as adding a private channel and adding or deleting members. 
 
 The following image shows an example list of team members and their user roles in Microsoft Teams.
 
@@ -42,9 +42,9 @@ For more information, see [Assign team owners and members in Microsoft Teams](ht
 
 ## FAQ
 
-#### How do you assign the "owner" role to a user while provisioning Microsoft Teams from Dynamics 365 Commerce? 
+#### How do you assign the owner role to a user while provisioning Teams from Commerce? 
 
-All store managers are added as owners to the corresponding team group so that they can perform operations such as adding a private channel and adding or deleting members. 
+All store managers are automatically added as owners to the corresponding team group so that they can perform operations such as adding a private channel and adding or deleting members. 
 
 #### What happens if a store doesn't have store managers?
 
@@ -52,11 +52,11 @@ If a store doesn't have managers, a team group will not created for the store or
 
 #### What happens if store managers leave the company?
 
-Someone with the "owner" role can add a new store manager in Commerce headquarters and reprovision Teams so that the new manager will have the necessary privileges in Teams for the group. 
+Anyone with the owner role can add a new store manager in Commerce headquarters and reprovision Teams so that the new manager will have the necessary privileges in Teams for the group. 
 
 #### How do you clear the Microsoft Graph API token stored in the session storage?
 
-A user who has signed in to point of sale (POS) with an Azure Active Directory (Azure AD) account should sign out from the POS or close the application to clear the session storage. 
+A user who has signed in to the point of sale (POS) with an Azure Active Directory (Azure AD) account should sign out from the POS or close the application to clear the session storage. 
 
 ## Additional resources
 
