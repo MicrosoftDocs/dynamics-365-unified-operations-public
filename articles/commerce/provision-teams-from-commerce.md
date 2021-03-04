@@ -92,9 +92,7 @@ To validate that the organizational hierarchy was uploaded to Teams, follow thes
 1. In the left navigation pane, select **Tasks by Planner**.
 1. Select the **Published lists** tab.
 1. Create a new list with a dummy task.
-1. Select **Publish**. 
-
-You will see the organizational hierarchy on the **Select who to publish to** dialog box, as shown in the following example image. 
+1. Select **Publish**. You should now see the organizational hierarchy on the **Select who to publish to** dialog box, as shown in the following example image. 
 
 ![Publishing dialog box in Microsoft Teams](media/Microsoft-teams-verify-org-hierarchy.png)
 
