@@ -57,6 +57,16 @@ You can select to **View** or **Delete** the report.
 
 To generate a report using **Report designer**, open the report definition and then click the Generate button in the toolbar. The Report Queue Status window will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
 
+## Report Groups
+
+Report Groups are an efficient way to generate a number of reports at the same time. As an example if you know at Month-End users are always needing to generate specific reports. Create a Report Group and instead of having to click “Generate” for 8 different reports you can simply click “Generate” once. Financial Reporter will then generate each report, that are in the Report Group. Once the Report Group has been generated simply go back into D365 | General Ledger | Inquires and Reports | Financial Reports to view each individual report.
+
+1.	In Report Designer, click Report Groups 
+2.	Select the existing Report Definitions you would like to include in your Report Group. 
+3.	You can check “Override Company, detail, and date settings from the individual definitions”
+      a. You will then want to set the Company, Period, Year, and Detail Level
+4.  Save the Report Group. 
+
 ## Schedule report generation
 Many companies have a core set of reports that are run at scheduled intervals to align with their business processes. You can schedule a report to be generated regularly, such as daily, weekly, monthly, or annually. This can be a single report or a group of reports that includes multiple companies. You must enter your credentials for each of the companies that are specified, such as those in a reporting tree definition. If the credentials are not valid, the report will display only the information that you have permission to access, such as the company that you are logged on to at the time. Output information is read first from the report group, and then from the individual reports.
 
