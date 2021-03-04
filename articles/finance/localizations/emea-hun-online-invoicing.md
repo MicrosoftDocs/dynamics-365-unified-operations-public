@@ -5,7 +5,7 @@ title: Online invoicing system
 description: This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: anasyash
 manager: AnnBe
-ms.date: 03/03/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -526,42 +526,38 @@ Finance supports the reporting scenario, “Advance payment invoices and final i
 
 **Scenario I: Prepayment is posted with Sales tax transactions** (**Accounts receivable** module)
 
-1. Post a Prepayment with Sales tax transactions
-2. Create **Advance invoice** in **Accounts receivable** \> **Advance invoices** \> **All advance invoices**
-3. Link posted prepayment to the created Advance payment by using **Related information** \> **Prepayment** button on the action pane of Advance invoice form.
-4. Post advance invoice. No voucher created, no affect in accounting.
-5. Posted Advance invoice will be reported to Online invoicing system with lines collected from sales tax transactions of the prepayment linked to this advance invoice. Invoice number and date information will be collected from the advance invoice header. Currency amount and exchange rate of the advace invoice will be reported in the currency of the prepayment posted.
-6. Create a final invoice and link it to the Advance invoice (**Accounts receivable** \> **Advance invoices** \> **All advance invoices**) created on the step 1 by using **Related information** \> **Prepayment** button on the action pane of Advance invoice form. Note: To guaranty correct reporting in Online invoicing system of data from the system, we recommend you to avoid multiple invoices linking to multiple advance invoices (m : n) on the same sales order.
-7. Posted final invoice will be reported to Online invoicing system with reference information in \<advancePaymentData\> node and amounts in summary as the difference between the posted sales tax from prepayments linked to the same advance invoice. The exchange rate of the advance invoice will be reported for the referenced adavnce invoice information but in case the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice and recalculated to the currency of the final document.
+1. Post a Prepayment with sales tax transactions.
+2. Go to **Accounts receivable** \> **Advance invoices** \> **All advance invoices** and create an advance invoice.
+3. On the **Advance invoice** page, on the Action Pane, select **Related information** > **Prepayment** and link the posted prepayment to the advance payment.
+4. Post the advance invoice. No voucher is created and there is no affect in the accounting.
+
+    The posted advance invoice is reported to the online invoicing system with the lines collected from sales tax transactions of the prepayment that is linked to this advance invoice. The invoice number and date information is collected from the advance invoice header. The currency amount and exchange rate of the advace invoice will be reported in the currency of the prepayment posted.
+    
+6. Go to **Accounts receivable** \> **Advance invoices** \> **All advance invoices**, and create a final invoice.
+7. On the **Advance invoice** page, on the Action Pane, select **Related information** \> **Prepayment** and link the final invoice to the advance invoice you created in step 1.
+
+     > [!NOTE]
+     >  To guarantee correct reporting in the online invoicing system, avoid linking multiple invoices to multiple advance invoices on the same sales order.
+
+    The posted final invoice is reported to the online invoicing system with reference information in the \<advancePaymentData\> node and amounts in summary as the difference between the posted sales tax from prepayments linked to the same advance invoice. The exchange rate of the advance invoice is reported for the referenced adavnce invoice information but if the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice and recalculated to the currency of the final document.
 
 **Scenario II: Prepayment is posted without sales tax transactions** (**Accounts receivable** module)
 
-1.  Post a Prepayment with no Sales tax transactions
+1. Post a Prepayment with no sales tax transactions.
+2. Use the advanced prepayment handling functionality for the posted prepayment to post sales tax transactions for the prepayement.
+3. Go to **Accounts receivable** \> **Advance invoices** \> **All advance invoices** and create a new advance invoice.
+4. On the **Advance invoice** page, on the Action Pane, select **Related information** > **Prepayment** to link the posted prepayment to the created advance payment.
+5. Post the advance invoice. No voucher is created, so there is no affect in the accounting.
 
-2.  Use “**Advanced**” prepayment handling functionality for the posted
-    prepayment to post sales tax transactions for the prepayement.
+    The posted advance invoice is reported to the online invoicing system with lines collected from the sales tax transactions of the prepayment linked to this advance invoice. The invoice number and date information is collected from the advance invoice header. The currency amount and exchange rate of the advance invoice is reported in the currency of the prepayment posted.
 
-3.  Create **Advance invoice** in **Accounts receivable** \> **Advance
-    invoices** \> **All advance invoices**
+7. Go to **Accounts receivable** \> **Advance invoices** \> **All advance invoices**,  and create a final invoice.
+8. On the **Advance invoice** page, on the Action Pane, select **Related information** \> **Prepayment** and link the final invoice to the advance invoice you created in step 1. 
 
-4.  Link posted prepayment to the created Advance payment by using **Related
-    information** \> **Prepayment** button on the action pane of Advance invoice
-    form.
+    > [!NOTE]
+    > To guarantee correct reporting in the online invoicing system, avoid linking multiple invoices to multiple advance invoices on the same sales order.
 
-5.  Post advance invoice. No voucher created, no affect in accounting.
-
-6.  Posted Advance invoice will be reported to Online invoicing system with
-    lines collected from sales tax transactions of the prepayment linked to this advance invoice. Invoice number and date information will be collected from the advance invoice header. Currency amount and exchange rate of the advace invoice will be reported in the currency of the prepayment posted.
-
-7.  Create a final invoice and link it to the Advance invoice (**Accounts
-    receivable** \> **Advance invoices** \> **All advance invoices**) created on
-    the step 1 by using **Related information** \> **Prepayment** button on the
-    action pane of Advance invoice form. Note: To guaranty correct reporting in Online invoicing system of data from the system, we recommend you to avoid multiple invoices linking to multiple advance invoices (m : n) on the same sales order.
-
-8.  Posted final invoice will be reported to Online invoicing system with
-    reference information in \<advancePaymentData\> node and amounts in summary
-    as the difference between the posted sales tax from prepayments linked to
-    the same advance invoice. The exchange rate of the advance invoice will be reported for the referenced adavnce invoice information but in case the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice and recalculated to the currency of the final document.
+    The posted final invoice will be reported to the online invoicing system with reference information in the \<advancePaymentData\> node and amounts in summary as the difference between the posted sales tax from prepayments linked to the same advance invoice. The exchange rate of the advance invoice will be reported for the referenced adavnce invoice information. However, if the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice and recalculated in the currency of the final document.
 
 **Scenario III: Advance invoice is posted by using the customer advance on project** (**Project mangement and accounting** module)
 
