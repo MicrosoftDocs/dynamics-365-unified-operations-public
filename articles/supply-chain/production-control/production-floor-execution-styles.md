@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Release 10.0.15
 
 [!include [preview banner](../includes/preview-banner.md)]
 
-The topic explains how to configure form controls so that the default Production Floor Execution styles are applied to them.
+The topic explains how to configure form controls so that the default production floor execution styles are applied to them.
 
 ## Grid
 
