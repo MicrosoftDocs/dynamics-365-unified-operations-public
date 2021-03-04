@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: InventModelGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -43,11 +43,11 @@ For example, if you have raw materials or ingredients that require pick work, BO
 Before you can use the feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Production control*
-- **Feature name:** *Override default production reservation*
+- **Feature name:** *(Preview) Override default production reservation*
 
 ## Assign a production reservation policy to an item model group
 
-1. Go to **Cost management &gt; Inventory accounting policies setup &gt; Item model groups**.
+1. Go to **Cost management \> Inventory accounting policies setup \> Item model groups**.
 1. Create or select an item model group.
 1. On the **Inventory policies** FastTab, select the **Override item production reservation** check box.
 1. In the **Reservation** field, select the reservation principle for items that belong to the selected model group. (Those items include items that are on a BOM or formula line.)

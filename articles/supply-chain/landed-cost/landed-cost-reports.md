@@ -3,7 +3,7 @@
 
 title: Landed cost reports
 description: This topic describes how to find and use the various types of reports that are available for the Landed cost module.
-author: RichardLuan
+author: sherry-zheng
 manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+ms.search.form: SysOperationTemplateForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -22,14 +22,15 @@ ms.search.scope: Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: riluan
+ms.author: chuzheng
 ms.search.validFrom: 2021-02-21
 ms.dyn365.ops.version: Release 10.0.17
 ---
 
 # Landed cost reports
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## Outstanding invoices
 
