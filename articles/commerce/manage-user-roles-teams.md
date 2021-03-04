@@ -66,4 +66,4 @@ A user who has signed in to the point of sale (POS) with an Azure Active Directo
 
 [Synchronize task management between Microsoft Teams and POS](synchronize-tasks-teams-pos.md)
 
-[Configure Microsoft Teams integration](configure-teams-integration.md)
+[Enable Microsoft Teams integration](enable-teams-integration.md)
