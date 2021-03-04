@@ -32,14 +32,14 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic presents an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 
-In a better together strategy, Dynamics 365 Commerce is integrating with Microsoft Teams to help customers and their employees improve productivity by synergizing task management between Dynamics 365 Commerce and Microsoft Teams. With Commerce and Teams integration, seamless task management will enable store managers and employees to create task lists, assign tasks to multiple stores, and track task status across stores from either application. Commerce and Teams integration is available as of the Commerce version 10.0.18 release.
+Dynamics 365 Commerce is integrating with Microsoft Teams to help customers and their employees improve productivity by synchronizing task management between Dynamics 365 Commerce and Microsoft Teams. With Commerce and Teams integration, seamless task management enables store managers and employees to create task lists, assign tasks to multiple stores, and track task status across stores from either application. Commerce and Teams integration is available as of the Commerce version 10.0.18 release.
 
 ## Key features 
 
 Key features offered with Commerce and Teams integration include capabilities to:
 
-- Provision Microsoft Teams by leveraging well-defined Dynamics 365 Commerce organizational structure, stores, workers, permissions, and business context. 
-- Easily synchronize ongoing changes such as adding a new store or hiring a new employee between Commerce and Teams, while keeping Commerce as the master source of organization structure data.  
+- Provision Microsoft Teams by leveraging well-defined Commerce organizational structure, stores, workers, permissions, and business context. 
+- Easily synchronize ongoing changes such as adding a new store or hiring a new employee between Commerce and Teams, while keeping Commerce as the master source of organizational structure data.  
 - Integrate task management between Commerce and Teams to help store workers, store managers, regional managers, and communications managers handle task management from within either application.  
 
 ## Prerequisites to using integration features
