@@ -7,6 +7,7 @@ author: inkharki
 manager: tfehr
 ms.date: 02/22/2021
 ms.topic: article
+ms.service: dynamics-365-supply-chain
 ms.prod:
 ms.technology:
 
