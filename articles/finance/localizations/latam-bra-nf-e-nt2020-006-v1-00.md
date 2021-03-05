@@ -5,7 +5,7 @@ title: NT2020.006 – Intermediary sales digital platform for NF-e
 description: This topic explains how to tag intermediary digital sales for NF-e.
 author: gionoder
 manager: AnnBe
-ms.date: 02/05/2021
+ms.date: 03/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.0
 
 A sale can occur even when the customer isn't physically present. Instead, a digital platform or marketplace can serve as an intermediary for the transaction. In these scenarios, the XML of the electronic fiscal document model 55 (NF-e) that is issued from the sale must contain a new tag to indicate that an intermediary participated in the operation.
 
-This feature supports the scenario where the digital platform or marketplace is owned or licensed by the fiscal document issuer.
+This feature supports scenarios when a digital platform or marketplace is owned or licensed by the fiscal document issuer.
 
 ## Enable the technical note in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
@@ -46,8 +46,8 @@ This feature supports the scenario where the digital platform or marketplace is 
 
 ## Enable the technical note in Dynamics AX 2012 R3
 
-To enable the version 1.10 of the technical note in Dynamics AX 2012 R3, apply KB 4611321.
-To enable the version 1.00 of the technical note in Dynamics AX 2012 R3, apply KB 4598546.
+- Apply KB 4611321 to enable version 1.10 of the technical note in Dynamics AX 2012 R3.
+- Apply KB 4598546 to enable version 1.00 of the technical note in Dynamics AX 2012 R3.
 
 ## Sales that are intermediated by the taxpayer's own sales digital platform
 
