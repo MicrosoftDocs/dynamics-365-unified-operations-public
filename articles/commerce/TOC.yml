@@ -94,6 +94,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.18 (May 2021)
+            href: get-started/whats-new-commerce-10-0-18.md
           - name: Commerce 10.0.17 (April 2021)
             href: get-started/whats-new-commerce-10-0-17.md
           - name: Commerce 10.0.16 (February 2021)
@@ -532,6 +534,8 @@
             href: omni-channel-payments.md
           - name: Omni-channel Commerce order payments
             href: dev-itpro/commerce-payments.md
+          - name: Archive credit card transaction data
+            href: dev-itpro/archive-cc-data.md
           - name: Process credit cards without a hardware station
             href: dev-itpro/cnp-pos.md
           - name: Dynamics 365 Payment Connector for PayPal
