@@ -1,9 +1,9 @@
 ---
 # required metadata
 title: [Dynamics 365 Commerce and Microsoft Teams integration - FAQs doc]
-description: [In a better together strategy, Dynamics 365 Commerce is integrating with Microsoft Teams. This document helps managing stores and corresponding teams in Microsoft Teams mapping, in case if your organization has teams for corresponding stores already created in Microsoft Teams before enabling the integration between Dynamics 365 Commerce and Teams. ]
-author: [gvrmohanreddy]
-manager: jeffbl
+description: This document helps managing stores and corresponding teams in Microsoft Teams mapping, in case if your organization has teams for corresponding stores already created in Microsoft Teams before enabling the integration between Dynamics 365 Commerce and Teams.
+author: gvrmohanreddy
+manager: annbe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
@@ -26,7 +26,13 @@ ms.dyn365.ops.version: 10.0.18
 ---
 
 
-#Overview
+#
+
+This topic covers how to map stores and corresponding teams in Microsoft Teams if your organization already has teams for corresponding stores already created in Microsoft Teams before enabling the integration between Dynamics 365 Commerce and Teams.
+
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
 Your organization may have teams created for some or all of your stores before using Dynamics 365 Commerce and Microsoft Teams. In that case to establish tasks synchronization between POS and Teams applications, you must provide the mapping of Store and corresponding team in Dynamics 365 Commerce headquarters using following steps:    
 
 1. Go to **System Administration** -> **Workspace** -> **Data management**
