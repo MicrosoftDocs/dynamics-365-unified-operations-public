@@ -52,7 +52,7 @@ The following features are included in this release. The feature titles link to 
 - Quick view module<br> - For more information, see [Quick view module](quick-view-module.md)
 - Tab module<br> - For more information, see [Tab module](add-tab.md)
 - Navigation menu module<br> - For more information, see [Navigation menu module](nav-menu-module.md)
-- [Retrieve quantity in Sell unit of measure (UoM) from e-Commerce inventory APIs](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhancements-e-commerce-inventory-availability-lookup-apis<br> - For more information, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
+- [Retrieve quantity in Sell unit of measure (UoM) from e-Commerce inventory APIs](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhancements-e-commerce-inventory-availability-lookup-apis)<br> - For more information, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
 - [Improvements to the POS inventory lookup operation](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improvements-pos-inventory-lookup-operation)
 - [Highly performant and scalable customer search experience using the new cloud search infrastructure](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/highly-performant-scalable-customer-search-experience-using-new-cloud-search-infrastructure)
 
