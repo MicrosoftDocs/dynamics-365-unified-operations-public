@@ -119,6 +119,32 @@ Retailers can also set the default customer search mode in POS to **Search all s
 
 To help prevent unexpected performances issues, this configuration is hidden behind a flighting flag that his named **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Therefore, to show the **Default customer search mode** setting the user interface (UI), the retailer should create a support ticket for its user acceptance testing (UAT) and production environments. After the ticket is received, the engineering team will work with the retailer to make sure that the retailer does testing in its non-production environments to assess the performance and implement any optimizations that are required.
 
+## Cloud powered customer search
+As a part of 10.0.18 release, we have released the public preview of customer search capability using the Azure Cognitive Search service. Using this service, the users will not only see performance improvements, but also benefit from rich refinement and improved relevance capabilities. The performance improvements get even more evident when the  global search i.e. "Search all stores" feature of the POS is used. This is because the search results for this search are also fetched from the Azure search index instead of querying the data in headquarters. 
+
+### Steps to enable this search
+
+> [!NOTE]
+> It is required that both the headquarters and Commerce Scale Unit are updated to 10.0.18 version. But the update to POS is not required.
+
+- To enable this feature, navigate to the Feature Management workspace and enable the feature named "(Preview) Cloud powered customer search". 
+- Once the feature is enabled, then run the "Initialize commerce scheduler" to display the new "1010_CustomerSearch" job under the Distribution schedule form.
+- Run the 1010_CustomerSearch job. This job publishes the date to the Azure search index.
+- Once the publishing of index is complete, the status of this Job will be set to Applied.
+- Once this job status shows as Applied, then run the 1110 - Global configuration job, to update the POS channels of this newly enabled feature in Feature management
+- Run the 1010_CustomerSearch job at regular intervals to send the customer updates to the search index
+
+> [!NOTE]
+> For the first time publish, this job could a few hours to complete as it will send all the customer records to the Azure search index. But the subsequent updates should take a few mins. Secondly, even though this new service is enabled, but until the index publishing is completed, the customer search from POS will default to the existing SQL based search, thus ensuring no interruptions to the store operations
+
+### Functional differences from the existing search
+- The customers created and edited in the headquarters will be sent to the Azure search index whenever the job 1010_CustomerSearch is run. At a minimum, these updates will take 15 - 20 mins to update the index and thus POS users will be able to search for these new customers or search based on updated information, around 15- 20 mins after the update occurred in headquarters. So, if for your business process, you need the customers created in headquarters to be immediately searchable in POS, then this might not be the right service for you.
+- The customers created in POS are immediately sent to Azure search index from the Commerce Scale Unit (aka CSU) and thus, these new customers will be searchable across any store immediately. However, if the Async customer creation feature is turned ON, then these customers will not be published to Azure search index from CSU and hence not searchable from POS until the customer information is synced to the headquarters, and a customer ID is generated for the async customers. The job 1010_CustomerSearch will then be able to send these customer records to the Azure search index. So on an average, please expect ~30 mins before the newly create Async customer can be searched on POS. This is assuming the 1010_CustomerSearch, P -job, and "Synchronize customers and business partners from async mode" are scheduled to run every 15 mins
+- This new search now also searches for the secondary emails and phone numbers of the customers, but for now, the customer search results view only displays the primary phone number and primary email of the customer. So, on the first look it might seem that irrelevant search results have been returned, but please check the secondary email and phone numbers of the returned customers to verify if the searched keyword matches them. To avoid such confusion, we plan to improve the search results page in future, to make it easy for the end users to understand why a search result was returned.
+- The requirement of searching by 4 characters in a global search aka "Search all stores" is not applicable to this service
+
+> [!NOTE]
+> This service is available in limited regions for preview. Please contact support to confirm if this is supported in your region.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
