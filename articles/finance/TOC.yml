@@ -72,7 +72,9 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
-          - name: Finance 10.0.17 (March 2021)
+          - name: Finance 10.0.18 (May 2021)
+            href: get-started/whats-new-changed-10-0-18.md
+          - name: Finance 10.0.17 (April 2021)
             href: get-started/whats-new-changed-10-0-17.md
           - name: Finance 10.0.16 (February 2021)
             href: get-started/whats-new-changed-10-0-16.md
@@ -1318,6 +1320,8 @@
           href: public-sector/tasks/create-vendor-certification-type-public-sector.md
         - name: Import and create multiple one-time vendors and invoices in the public sector
           href: public-sector/tasks/import-multiple-one-time-vendors.md
+        - name: Restrict editing of accounting distributions on invoices
+          href: public-sector/restrict-edit-accounting-distributions.md
         - name: Plan for one-time vendors in the public sector
           href: public-sector/plan-one-time-vendors-public-sector.md
         - name: Control access to purchase agreements in the public sector
