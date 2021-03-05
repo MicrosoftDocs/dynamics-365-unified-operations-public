@@ -1070,8 +1070,8 @@
             href: account-management.md
         - name: Identity management modules
           items:
-          -name: Identity management pages and modules
-           href: identity-mgmt-modules.md
+          - name: Identity management pages and modules
+            href: identity-mgmt-modules.md
         - name: Product collection modules
           items:
           - name: Product collection modules
