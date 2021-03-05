@@ -93,7 +93,7 @@ At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** f
 
 ## Sample code to implement Custom fields
 
-To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest** and the business logic for the custom fields in CRT, as shown in the following code. For more information, see [Commerce runtime (CRT) extensibility](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/commerce-runtime-extensibility).
+To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest** and the business logic for the custom fields in CRT, as shown in the following code. For more information, see [Commerce runtime (CRT) extensibility](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/commerce-runtime-extensibility).
 
 ```C#
 public IEnumerable<Type> SupportedRequestTypes
