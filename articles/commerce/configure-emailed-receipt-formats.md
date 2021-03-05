@@ -89,7 +89,7 @@ To add receipt types to a receipt profile that will be used to email receipts, f
 1. Select **Add** to create a new, empty row.
 1. In the **Receipt type** field, select the receipt type.
 1. In the **Receipt format** field, select a receipt format that defines the layout of the selected receipt type. For more information about how to create receipt formats, see [Set up and design receipt formats](receipt-templates-printing.md).
-1. Select an email template that should be used as the container template for receipt emails. All the templates that are created on the **Organization email templates** page are available for selection. If you've previously configured receipt emails, you will have a template that is named **emailrecpt**. You can use this template. For information about how specify a custom container template on a receipt-by-receipt basis, see the [Create receipt email templates](#create_receipt_email_templates) section later in this topic.
+1. Select an email template that should be used as the container template for receipt emails. All the templates that are created on the **Organization email templates** page are available for selection. If you've previously configured receipt emails, you will have a template that is named **emailrecpt**. You can use this template. For information about how specify a custom container template on a receipt-by-receipt basis, see the [Create receipt email templates](#create-receipt-email-templates) section later in this topic.
 
 > [!NOTE]
 > Even if a receipt type can't be emailed, Commerce headquarters doesn't prevent you from adding it to a receipt profile. For a list of the receipt formats that can be emailed, see the [Email receipt formats](#email-receipt-formats) section earlier in this topic.
