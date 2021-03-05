@@ -2256,7 +2256,7 @@
           href: dev-itpro/pos-custom-transaction-column.md
         - name: Call POS APIs or operations from POS extensions
           href: dev-itpro/pos-api-extension.md
-        - name: Modern POS (MPOS) triggers and printing
+        - name: POS triggers
           href: dev-itpro/pos-trigger-printing.md
         - name: Add custom controls to non-screen designer-based POS views
           href: dev-itpro/pos-control-non-screen.md
@@ -2312,7 +2312,7 @@
           href: dev-itpro/order-attributes.md
         - name: Customer attributes
           href: dev-itpro/customer-attributes.md
-        - name: CRT SDK samples
+        - name: Receipt extensions
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
         - name: Log extension events to Application Insights
           href: dev-itpro/commerce-application-insights.md
