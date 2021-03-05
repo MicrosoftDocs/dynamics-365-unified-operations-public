@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Finance 10.0.18 (May 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.18 preview release.
 author: roschlom
 manager: AnnBe
-ms.date: 02/25/2021
+ms.date: 03/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
