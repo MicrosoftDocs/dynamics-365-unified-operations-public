@@ -5,7 +5,7 @@ title: Online invoicing system
 description: This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: anasyash
 manager: AnnBe
-ms.date: 03/04/2021
+ms.date: 03/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -293,7 +293,7 @@ The following values must be set for the parameters.
 
 10. If you set the **Use advanced certificate store** option to **Yes** on the **System parameters** page, select related secrets on the **General** tab of the **Online invoicing system parameters** page.
 
-![Online invoicing system parameters where Use advance certificate store option is set to yes](media/6_Key_Vault.png)
+![Online invoicing system parameters where Use advance certificate store option is yes](media/6_Key_Vault.png)
 
 Alternatively, if you set the **Use advanced certificate store** option to **No**, manually enter the technical user name and password, signature key, and replacement key that you obtained for interoperation with the Hungarian Online invoicing system. For more information, see the [information about the registration procedure](https://onlineszamla-test.nav.gov.hu/tajekoztatas_a_regisztraciorol).
 
@@ -576,7 +576,7 @@ Starting from XSD version 3.0, the online invoicing system supports archiving di
 2.	Go to **Organization administration** > **Document management** > **Document management parameters**, and set up the **Archive directory**.
 3.	Specify which customers and project invoices must be archived by setting the **eInvoice attachedment** field to **Yes**. You can mark this field by going to the **Customer** page for each specific customer and then selecting **Invoice and delivery** > **eInvoice**.
 
-Posted and printed invoices for the specified customers will have an attachment where **Type** = **File** and **Restriction** = **External**. Attachments can be reviewed by selecting **Document handling**. On the **General** FastTab of the **Document handling** page, you can see the hash number related to an invoice. Invoices for which an attachment with a hash number was created in the system, will be reported to the online invoicing system including the hash number value stored in the system.
+Posted and printed invoices for the specified customers will have an attachment where **Type** = **File** and **Restriction** = **External**. Attachments can be reviewed by selecting **Document handling**. On the **General** FastTab of the **Document handling** page, you can see the hash number related to an invoice. Invoices for which an attachment with a hash number was created in the system, will be reported to the online invoicing system including the hash number value stored in the system. For more information, see [Archive printed customer invoices with hash numbers](../accounts-receivable/archive-printed-invoices.md)
 
 ### Additional information
 
