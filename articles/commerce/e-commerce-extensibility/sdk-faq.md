@@ -58,7 +58,7 @@ To use the base rule set that is provided, create the **.eslintrc.js** file, and
 
 ```javascript
 module.exports = {
-    extends: '@msdyn365-commerce/eslint-config,
+    extends: '@msdyn365-commerce/eslint-config',
     ignorePatterns: ['.eslintrc.js', '*.html', 'src/__mocks__/**', 'src/__tests__/**'],
     parserOptions: {
         project: ['tsconfig.json'],
@@ -115,6 +115,19 @@ overrides: [
 
 For more information and help, see the [ESLint documentation](https://eslint.org/docs/2.0.0/user-guide/configuring).
 
+##### Create a .prettierrc file
+Prettier is an opinionated code formatter and can be configured to format your code after you save a file.  The .prettierrc file allows you to add new rules that it will use. You will need to create a **.prettierrc** file in the root SDK folder with the below settings as a default.
+
+```json
+{
+    "tabWidth": 4,
+    "singleQuote": true,
+    "printWidth": 140,
+    "jsxSingleQuote": true,
+    "bracketSpacing": true
+}
+```
+
 ##### Update the package.json file
 
 If you want to use both TSLint and ESLint, you can leave the TSLint dependency in your **package.json** file and add the following dependencies in the **devDependencies** section.
@@ -122,7 +135,6 @@ If you want to use both TSLint and ESLint, you can leave the TSLint dependency i
 ```json
 "@msdyn365-commerce/eslint-config": "^1.27.7",
 "@typescript-eslint/eslint-plugin": "^4.2.0",
-"@typescript-eslint/eslint-plugin-tslint": "^4.10.0",
 "@typescript-eslint/parser": "^4.10.0",
 "eslint": "^7.16.0",
 "eslint-config-prettier": "^7.0.0",
@@ -146,6 +158,7 @@ Finally, change the **build** and **start** commands as shown here.
 ```json 
 "start": "yarn msdyn365b start local --use-eslint",
 "build": "yarn msdyn365b build --use-eslint",
+"build-prod": "yarn clean && yarn msdyn365b build --use-eslint",
 ```
 
 #### Fix ESLint errors
@@ -182,6 +195,7 @@ If you want to completely disable linting during build time, you can use the **-
 
 ```json 
 "build": "yarn msdyn365b build --disable-linter",
+"build:prod": "yarn clean && yarn msdyn365b build --disable-linter",
 ```
 
 ### After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error.
