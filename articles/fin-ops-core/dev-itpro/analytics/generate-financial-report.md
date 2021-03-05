@@ -46,7 +46,7 @@ When you generate a report, the options that you have specified on the Report de
 
 ## Generate a financial report
 
-To generate a financal report go to **General ledger** \> **Inquiries and reports** \> **Financial reports**.
+To generate a financial report go to **General ledger** \> **Inquiries and reports** \> **Financial reports**.
 
 - Select a report to generate and click **Generate**.
 - Fill in the **Report date** field and click **OK**.
