@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.18 of Finance and Operations apps (May 
 description: This topic lists the features that are included in the platform updates for version 10.0.18 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 03/02/2021
+ms.date: 03/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,11 +47,17 @@ The following features are included in this release. Some of the listed features
 
 -  [Allow configuration of the publish batch size for the Excel add-in](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [View and update entity data with Excel](../office-integration/use-excel-add-in.md).
 
+<!---
+this is not live in the release plans yet
 -  [Align interaction patterns for combo boxes with those of look-up controls](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=eed024a3-3d51-eb11-a813-000d3a8faea9&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)
+-->
 
+<!---
+this is not live in the release plans yet
 - [(Preview) Ensure required unbound controls are filled in](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=1438f773-7478-eb11-a812-0022482041cc&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)
+-->
 
-- [Allow admins to select default document types](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=0452956b-9678-eb11-a812-0022482041cc&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)<br>- For more information, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
+- Allow admins to select default document types<br>- For more information, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
 
 - Updates to the global address book<br>- For more information, see [Address books FAQ](../../fin-ops/organization-administration/qa-address-books.md).
 
