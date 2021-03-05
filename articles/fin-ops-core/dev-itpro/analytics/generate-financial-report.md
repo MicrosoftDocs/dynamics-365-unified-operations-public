@@ -3,9 +3,9 @@
 
 title: Generate financial reports
 description: This topic provides information about generating a financial report.
-author: aprilolson
+author: jinniew
 manager: AnnBe
-ms.date: 09/26/2018
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -59,13 +59,13 @@ To generate a report using **Report designer**, open the report definition and t
 
 ## Report Groups
 
-Report Groups are an efficient way to generate a number of reports at the same time. As an example if you know at Month-End users are always needing to generate specific reports. Create a Report Group and instead of having to click “Generate” for 8 different reports you can simply click “Generate” once. Financial Reporter will then generate each report, that are in the Report Group. Once the Report Group has been generated simply go back into D365 | General Ledger | Inquires and Reports | Financial Reports to view each individual report.
+Report groups are an efficient way to generate a number of reports at the same time. For example, suppose you know that at month-end your users generate eight reports every month. Create a Report Group and instead of clicking “Generate” for each of the eight reports, you can click “Generate” for the report group and all eight reports will be generated in one step. Once the reports in the report group selected have been generated, you can go to Financial reports (**General Ledger > Inquires and reports > Financial reports**) to view the individual reports. Complete the following steps to set up a report group.
 
-1.	In Report Designer, click Report Groups 
-2.	Select the existing Report Definitions you would like to include in your Report Group. 
-3.	You can check “Override Company, detail, and date settings from the individual definitions”
-      a. You will then want to set the Company, Period, Year, and Detail Level
-4.  Save the Report Group. 
+1. In Report designer, click **Report groups**. 
+2. Select the existing report definitions to include in your report group. 
+3. Select override company, detail, and date settings from each of the reports that will be included in the group.
+   We recommend setting the **Company**, **Period**, **Year**, and **Detail level** for each report. 
+4. Save the report group. 
 
 ## Schedule report generation
 Many companies have a core set of reports that are run at scheduled intervals to align with their business processes. You can schedule a report to be generated regularly, such as daily, weekly, monthly, or annually. This can be a single report or a group of reports that includes multiple companies. You must enter your credentials for each of the companies that are specified, such as those in a reporting tree definition. If the credentials are not valid, the report will display only the information that you have permission to access, such as the company that you are logged on to at the time. Output information is read first from the report group, and then from the individual reports.
