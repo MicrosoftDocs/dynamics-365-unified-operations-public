@@ -5,7 +5,7 @@ title: Add data fields in tax configurations
 description: This topic explains how to customize tax configuration with data fields.
 author: kailiang
 manager: tfehr
-ms.date: 03/04/2021
+ms.date: 03/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,11 +31,9 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic explains how to customize **Tax configuration** with [data fields added in the tax integration](tax-service-add-data-fields-tax-integration-extension.md).
 
-## Microsoft Dynamics Regulatory Service setup
+## Customize the tax data model
 
-### Customize tax data model
-
-1. Go to **Electronic Reporting** > **Tax configurations**.
+1. In Dynamics 365 Finance, go to **Electronic Reporting** > **Tax configurations**.
 2. Select **Tax Data Model - Europe** and then select **Create configuration**.
 
     [![Create configuration](./media/tax-service-customize-image3.png)](./media/tax-service-customize-image3.png)
@@ -50,9 +48,9 @@ This topic explains how to customize **Tax configuration** with [data fields add
 7. Add any required columns, select **Save**, and the select **Complete**.
 8. Close the page and view the **Completed** version of your tax data model.
 
-### Customize tax configuration
+## Customize the tax configuration
 
-1. Go to **Electronic reporting** > **Tax configurations**.
+1. In Finance, go to **Electronic reporting** > **Tax configurations**.
 2. Select **Tax Configuration -- Europe**, and then select **Create configuration**.
 3. Select the **Tax service configuration derived from Name: Tax Configuration -- Europe, Microsoft** radio button, enter a name for the tax configuration, and then select **Create configuration**.
 4. Select the tax configuration you just created, and then select **Designer**.
@@ -62,24 +60,12 @@ This topic explains how to customize **Tax configuration** with [data fields add
 8. Select **Save** and then select **Complete**.
 9. Close page and view the **Completed** version of your tax configuration.
 
-### Implement tax features on the customized tax configurations
+## Implement tax features on the customized tax configurations
 
-1. Go to **Globalization Features** \>\> **Tax**.
+1. In the Regulatory Configuration Service, go to **Globalization Features** > **Tax**.
+2. Select **Add**, enter the new feature information, and then select **Create feature**.
+3. On the **Versions** tab, select the feature in the list, and then select **Edit**.
+4. On the **General** tab, in the **Configuration version** drop-down list, select the customized tax configuration and version.
+5. In the **Manage columns** pane, select the columns and headers to include in your custominzed tax measure.
 
-[[![Go to globalization features, tax](./media/tax-service-customize-image19.png)](./media/tax-service-customize-image19.png)](./media/tax-service-customize-image19.png)
-
-2. Create a new Tax feature, click **Create feature.**
-
-[![Create new tax feature](./media/tax-service-customize-image20.png)](./media/tax-service-customize-image20.png)
-
-3. Click **Edit**.
-
-[![Edit tax feature](./media/tax-service-customize-image21.png)](./media/tax-service-customize-image21.png)
-
-4. In **General**, **Configuration version**, select the customized tax configuration and version.
-
-[![Select tax configuration version](./media/tax-service-customize-image22.png)](./media/tax-service-customize-image22.png)
-
-5. You shall now be able to configure your tax features with customized columns and tax measures in the "Tax codes applicability" table.
-
-[![Add customized columns](./media/tax-service-customize-image23.png)](./media/tax-service-customize-image23.png)
+      [![Add customized columns](./media/tax-service-customize-image23.png)](./media/tax-service-customize-image23.png)
