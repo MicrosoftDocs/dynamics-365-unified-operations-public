@@ -5,7 +5,7 @@ title: Withholding tax in Thailand
 description: This topic provides information about withholding tax and how to set it up for Thailand.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/04/2021
+ms.date: 03/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -82,7 +82,7 @@ When you submit the **Withholding tax (Por Ngor Dor 53)** or **Withholding tax (
 
 ### Withholding tax Por Ngor Dor 53 and Por Ngor Dor 3 electronic formats
 
-Taxpayers can submit Por Ngor Dor 53 and Por Ngor Dor 3 online by using an e-filing system on the Revenue Department’s website or RD Smart Tax Application. The enhanced withholding tax reporting functionality allows users to generate the content in electronic formats to be imported in Rdinet tax application. 
+Taxpayers can submit Por Ngor Dor 53 and Por Ngor Dor 3 online by using an e-filing system on the Revenue Department’s website or RD Smart Tax Application. The enhanced withholding tax reporting functionality allows users to generate the content in electronic formats to be imported into the tax application. 
 
 #### Download Electronic reporting configurations
 
