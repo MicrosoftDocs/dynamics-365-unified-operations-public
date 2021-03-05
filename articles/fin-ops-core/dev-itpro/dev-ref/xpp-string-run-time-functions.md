@@ -289,7 +289,7 @@ int strFind(str _text, str _characters, int _position, int _number)
 
 ### Return value
 
-The value of the position of the first occurrence of one of the specified characters.
+The value of the position of the first occurrence of one of the specified characters, or 0 when none found.
 
 ### Remarks
 
@@ -540,7 +540,7 @@ int strNFind(str _text, str _characters, int _position, int _number)
 
 ### Return value
 
-The position of the first occurrence of a character that isn't specified by the *\_characters* parameter.
+The position of the first occurrence of a character that isn't specified by the *\_characters* parameter, or 0 when none found.
 
 ### Remarks
 

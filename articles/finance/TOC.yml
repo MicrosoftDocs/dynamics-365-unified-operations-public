@@ -1430,8 +1430,6 @@
             href: localizations/e-invoicing-bra-get-started.md
           - name: Get started with Electronic invoicing add-on for Egypt
             href: localizations/e-invoicing-eg-get-started.md
-          - name: Customer electronic invoices in Egypt
-            href: localizations/emea-egy-e-invoices.md
           - name: Get started with Electronic invoicing add-on for Italy
             href: localizations/e-invoicing-ita-get-started.md
           - name: Get started with the Electronic invoicing add-on for Mexico
@@ -1582,6 +1580,8 @@
             href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+          - name: NT2020.006 – Intermediary sales digital platform for NF-e
+            href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
           - name: NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
             href: localizations/bra-use-tax-exemption-nf-e.md
         - name: SPED ECD
@@ -1786,6 +1786,8 @@
           href: localizations/emea-egy-reg-numbers.md
         - name: Configure invoice layout for Egypt
           href: localizations/emea-egy-invoice-layout.md
+        - name: Customer electronic invoices in Egypt
+          href: localizations/emea-egy-e-invoices.md
       - name: Estonia
         items:
         - name: Estonia overview
@@ -3677,6 +3679,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
           - name: Reuse ER configurations with Excel templates to generate reports in Word format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+          - name: Suppress Word content controls in generated reports
+            href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/finance/toc.json
         - name: Design configurations to fill out PDF templates
           href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
         - name: Embed images and shapes
@@ -3761,6 +3765,8 @@
               href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
             - name: Share configurations in GR  
               href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document

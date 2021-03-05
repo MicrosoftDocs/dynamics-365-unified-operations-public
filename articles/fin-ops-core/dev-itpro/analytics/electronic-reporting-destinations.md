@@ -4,8 +4,8 @@
 title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-manager: AnnBe
-ms.date: 01/21/2021
+manager: tfehr
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -174,9 +174,6 @@ To make the PDF conversion option available in the current Finance instance, ope
 The PDF conversion option can be turned on only for file components that are used to generate output in Office (Excel or Word) format (**Excel file**). When this option is turned on, output that is generated in Office format is automatically converted to PDF format.
 
 ### Limitations
-
-> [!NOTE]
-> This feature is a preview feature and is subject to the terms of use that are described in [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 The PDF conversion option is available only for cloud deployments.
 

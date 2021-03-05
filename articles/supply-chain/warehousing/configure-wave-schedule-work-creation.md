@@ -32,7 +32,8 @@ ms.dyn365.ops.version: 10.0.17
 
 # Schedule work creation during wave
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Use the *Schedule work creation* feature as part of your waving process to help increase wave processing throughput by having the system create work using parallel processing.
 

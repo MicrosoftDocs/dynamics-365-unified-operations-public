@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Retail 10.0.9 update
 
 [!include [banner](includes/banner.md)]
 
-## Overview
-
 The channel return policy in Dynamics 365 Commerce enables retailers to set enforcements on which payment tenders can be allowed for processing a return on a point of sale (POS) device.  
 
 This topic describes the steps to set up a returns and refunds policy for a channel.
