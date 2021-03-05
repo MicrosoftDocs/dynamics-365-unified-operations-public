@@ -66,6 +66,6 @@ This topic explains how to customize **Tax configuration** with [data fields add
 2. Select **Add**, enter the new feature information, and then select **Create feature**.
 3. On the **Versions** tab, select the feature in the list, and then select **Edit**.
 4. On the **General** tab, in the **Configuration version** drop-down list, select the customized tax configuration and version.
-5. In the **Manage columns** pane, select the columns and headers to include in your custominzed tax measure.
+5. In the **Manage columns** pane, select the header and line columns to include in your customized tax measure.
 
       [![Add customized columns](./media/tax-service-customize-image23.png)](./media/tax-service-customize-image23.png)
