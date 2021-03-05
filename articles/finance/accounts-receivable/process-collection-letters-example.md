@@ -47,9 +47,9 @@ When you've finished, follow these steps.
 
 The following table illustrates the information that that's in the table. 
 
-    [![Setting up a collection letter sequence](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+[![Setting up a collection letter sequence](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
-    You must now set the two parameters that are required for this example.
+ You must now set the two parameters that are required for this example.
 
 2. Go to **Credit and collections \> Setup \> Accounts receivable parameters**, and follow these steps:
 
