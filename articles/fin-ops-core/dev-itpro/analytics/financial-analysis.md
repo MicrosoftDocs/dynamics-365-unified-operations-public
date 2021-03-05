@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Financial Insights
-description: Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
+title: Financial Analysis
+description: Financial Analysis uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
 author: kweekley
 manager: AnnBe
 ms.date: 05/22/2019
@@ -29,13 +29,13 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Financial Insights
+# Financial Analysis
 
 [!include [banner](../includes/banner.md)]
 
-**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in the application. The focus of **Financial Insights** is analytical reporting. Personas across an organization can view, research, understand, and act. 
+**Financial Analysis** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in the application. The focus of **Financial Analysis** is analytical reporting. Personas across an organization can view, research, understand, and act. 
 
-**Financial Insights** combines data from the general ledger and subledgers to give a more complete picture of the financial health of an organization.
+**Financial Analysis** combines data from the general ledger and subledgers to give a more complete picture of the financial health of an organization.
 
 > [!NOTE]
 > This document uses the following Power BI terminology:
@@ -44,14 +44,14 @@ ms.dyn365.ops.version: 7.3
 > - **Page** – A tab in a single .pbix file. Each page can contain one or more visuals.
 > - **Visual** – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement. A page that has a financial statement as a visual can have no other visuals, because of the size of the data that is being reported on.
 
-Currently, **Financial Insights** is used to view data for either the active legal entity or all legal entities. In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.
+Currently, **Financial Analysis** is used to view data for either the active legal entity or all legal entities. In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.
 
-The **CFO overview** workspace shows the same visuals as **Financial Insights**, but is focused on letting you view and filter the data on existing reports. In future releases, you will be able to add new visuals to the **Financial Insights** workspace. The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers. The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.
+The **CFO overview** workspace shows the same visuals as **Financial Analysis**, but is focused on letting you view and filter the data on existing reports. In future releases, you will be able to add new visuals to the **Financial Analysis** workspace. The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers. The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.
 
 ## Dynamics 365 Finance setup
 **General ledger**
 
-The main account type and the main account categories are used to fill in appropriate default main accounts on the **Balance sheet** financial statement and the various **Income statement** financial statements in **Financial Insights**.
+The main account type and the main account categories are used to fill in appropriate default main accounts on the **Balance sheet** financial statement and the various **Income statement** financial statements in **Financial Analysis**.
 
 On the **Main accounts** page, you must define your main account so that one of the following types is assigned to it:
 
@@ -63,14 +63,14 @@ On the **Main accounts** page, you must define your main account so that one of 
 
 Do not assign any other main account type, such as **Balance sheet** or **Profit and Loss**, to your main accounts. Reporting can't determine the type of main account when other main account types are assigned, because they aren't granular enough. The type of main account must be determined to show liabilities and revenue as positive amounts on financial reports.
 
-To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial Insights**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to the application.
+To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial Analysis**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to the application.
 
 ## Entity store
-The data for **Financial Insights** is pulled from the Entity store (**System administration** \> **Setup** \> **Entity store**). If you open the **CFO overview** or **Financial Insights** workspace, and the following warning message appears in the visuals, you must update the entities.
+The data for **Financial Analysis** is pulled from the Entity store (**System administration** \> **Setup** \> **Entity store**). If you open the **CFO overview** or **Financial Analysis** workspace, and the following warning message appears in the visuals, you must update the entities.
 
 ![Warning](./media/Cantdisplay.png)
 
-You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:
+You must update the following entities to see data in the **Financial Analysis** workspace:
 
 - BudgetActivityMeasure
 - Financial reporting transaction data version 3 
@@ -80,8 +80,6 @@ You must update the following entities to see data in the **Financial Insights**
 - Purchase cube
 - Sales cube
 
-In the previous release, the LedgerActivityMeasure and VendPaymentBIMeasure entities were used for data in the **CFO overview** workspace. However, they are no longer used in the current release.
-
 You can define a recurring batch to regularly update the data in the entities. Because each entity is completely rebuilt during an update, select the time and frequency of entity updates carefully. The primary entity that is used for financial statements is the FinancialReportingTransactionData entity. Therefore, you might decide to update that entity more often.
 
 ## Security
@@ -89,18 +87,17 @@ Currently, the data on embedded Power BI reports can't be limited to the legal e
 
 | Duty                                    | Roles | Description |
 |-----------------------------------------|-------|------------|
-| View CFO Overview workspace             | Chief Financial Officer | This duty provides access to the CFO overview workspace. By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities. |
-| View financial insights current company | <ul><li>Accountant</li><li>Accounting manager</li><li>Accounting supervisor</li><li>Auditor</li><li>Budget manager</li><li>Chief executive officer</li><li>Chief financial officer</li><li>Financial controller</li></ul> | This duty provides access to Financial Insights. By default, the active company is used as a filter. You can't add other legal entities. |
-| View financial insights cross company   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn't assigned to a role. In the next release, this duty will be assigned to the Chief financial officer role. | This duty provides access to the menu item for the CFO overview workspace. By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities. |
+| View financial analysis current company | <ul><li>Accountant</li><li>Accounting manager</li><li>Accounting supervisor</li><li>Auditor</li><li>Budget manager</li><li>Chief executive officer</li><li>Chief financial officer</li><li>Financial controller</li></ul> | This duty provides access to Financial Analysis. By default, the active company is used as a filter. You can't add other legal entities. |
+| View financial analysis all company   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn't assigned to a role. In the next release, this duty will be assigned to the Chief financial officer role. | This duty provides access to the menu item for the CFO overview workspace. By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities. |
 
 
-## Financial reporting vs. Financial insights
-Although **Financial insights** contains financial statements, it isn't a replacement for Financial reporting in the application. The default financial statements in **Financial insights** are limited in scope and don't include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
+## Financial reporting vs. Financial analysis
+Although **Financial analysis** contains financial statements, it isn't a replacement for Financial reporting in the application. The default financial statements in **Financial analysis** are limited in scope and don't include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
 
 The following comparison chart will help differentiate the two options:
 
 
-|                                                          | Financial Reporting                                               | Financial Insights |
+|                                                          | Financial Reporting                                               | Financial Analysis |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
 | **Edit default reports**                                 | Yes                                                               | No |
 | **Create new reports**                                   | Yes                                                               | No |
@@ -114,7 +111,7 @@ The following comparison chart will help differentiate the two options:
 | **report on external data**                              | No                                                                | No |
 | **Support consolidations**                               | Yes                                                               | Limited Can report on multiple companies but use accounting currency only |
 
-In addition to the user interface in the original **CFO overview** workspace, new KPIs, charts, and financial statements are now available. The following financial statements are available:
+The following financial statements are available:
 
 - Trial balance
 - Balance sheet
@@ -127,7 +124,7 @@ In addition to the user interface in the original **CFO overview** workspace, ne
 - Sales by customer
 
 ## Edit visuals
-In the initial release of **Financial Insights**, none of the visuals can be edited. In future releases, users who have the appropriate security will be able to create new visuals, copy existing visuals, and edit visuals. Although the .pbix files that contain the reports are available as resources, we don't recommend that you edit the default reports. Additional changes will be made to the data model, default reports, and custom financial statement visual that are used to create the financial statements. Therefore, to take advantage of new features and changes to the data model in the next release, you will have to redo any changes that you made to the default reports through Microsoft Power BI Desktop.
+In the initial release of **Financial Analysis**, none of the visuals can be edited. In future releases, users who have the appropriate security will be able to create new visuals, copy existing visuals, and edit visuals. Although the .pbix files that contain the reports are available as resources, we don't recommend that you edit the default reports. Additional changes will be made to the data model, default reports, and custom financial statement visual that are used to create the financial statements. Therefore, to take advantage of new features and changes to the data model in the next release, you will have to redo any changes that you made to the default reports through Microsoft Power BI Desktop.
 
 ## Filtering
 Users can filter the report by using the **Filter** pane on the left. This pane is the same pane that is available through Power BI Desktop. There are various levels of filtering, some of which might not be available, depending on what you've selected on a page (tab) or whether you're using the drill-through capabilities:
@@ -249,7 +246,7 @@ Power BI doesn't provide an option to hide and show empty rows. If a row doesn't
 
 ## Additional resources for Power BI
 
-The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports.
+The information in the following resources isn't required in order to enable the embedded reports for the **Financial Analysis** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports.
 
 - [Accessing Analytical Workspaces and Reports on 1-box environment](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
