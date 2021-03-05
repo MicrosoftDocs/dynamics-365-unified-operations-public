@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSPhysDimUOM
+ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +29,8 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Set different dimensions for packing and storage
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Some items are packed or stored in such a way that you may need to track physical dimensions differently for each of several different processes. The *Packaging product dimensions* feature lets you set up one or several types of dimensions for each product. Each dimension type provides a set of physical measurements (weight, width, depth, and height), and establishes the process where those physical measurement values apply. When this feature is enabled, your system will support the following types of dimensions:
 

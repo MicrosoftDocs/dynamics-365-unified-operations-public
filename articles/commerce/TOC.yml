@@ -766,6 +766,8 @@
           href: refund_policy_returns.md
     - name: Manage your customers  
       items:
+      - name: Customer management in stores
+        href: customer-mgmt-stores.md
       - name: Clienteling
         items:
         - name: Clienteling overview
@@ -1066,6 +1068,10 @@
           items:
           - name: Account management pages and modules
             href: account-management.md
+        - name: Identity management modules
+          items:
+          - name: Identity management pages and modules
+            href: identity-mgmt-modules.md
         - name: Product collection modules
           items:
           - name: Product collection modules
