@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce online SDK FAQ
 description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 03/01/2021
+ms.date: 03/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -116,7 +116,8 @@ overrides: [
 For more information and help, see the [ESLint documentation](https://eslint.org/docs/2.0.0/user-guide/configuring).
 
 ##### Create a .prettierrc file
-Prettier is an opinionated code formatter and can be configured to format your code after you save a file.  The .prettierrc file allows you to add new rules that it will use. You will need to create a **.prettierrc** file in the root SDK folder with the below settings as a default.
+
+Prettier is an opinionated code formatter that can be configured to format your code after you save a file. A .prettierrc file allows you to add new rules that Prettier will use. You will need to create a **.prettierrc** file in the root SDK folder with the following default settings.
 
 ```json
 {
