@@ -23,7 +23,7 @@ ms.reviewer: lbc
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: kamaybac
-ms.search.validFrom: yyyy-mm-dd
+ms.search.validFrom: 2022-04-01
 ms.dyn365.ops.version: 10.0.0
 
 ---
@@ -36,13 +36,10 @@ Business events provide a mechanism that lets external systems receive notificat
 
 Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process.
 
-For more information about business events see here (../../fin-ops-core/dev-itpro/business-events/home-page.md) https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page)
+For more information about business events see here (../../fin-ops-core/dev-itpro/business-events/home-page.md)
 
 This feature uses business events and the action center to deliver notifications related to wave execution.
 
-
-> [!NOTE]
-> XXX
 
 ## Turn on the Wave execution notifications feature
 
@@ -128,8 +125,8 @@ Changing the work template query to a none existing warehouse will ensure the wa
 1. On the **Reservation** page, on the Action Pane, select **Reserve lot**, and then close the page.
 1. On the Action Pane, on the **Warehouse** tab, select **Release to warehouse**.
 
-
-The following events occur, after some time depending on the business events setup, the user will get a notification in the Action center, with a message like this and a link to open the failed wave.
+### Notifications from wave batch job execution
+The following events occur after some time depending on the business events setup, the user will get a notification in the Action center, with a message like this and a link to open the failed wave.
 
 **Error during wave execution**
 An error occurred while executing wave USMF-000000001. Last messages: No Work was created for Wave USMF-000000001.**
