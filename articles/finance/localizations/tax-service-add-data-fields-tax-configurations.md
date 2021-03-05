@@ -29,6 +29,10 @@ ms.dyn365.ops.version: 10.0.18
 
 # Add data fields in tax configurations
 
+[!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
+
 This topic explains how to customize **Tax configuration** with [data fields added in the tax integration](tax-service-add-data-fields-tax-integration-extension.md).
 
 ## Customize the tax data model
