@@ -58,6 +58,9 @@ After you've installed Xamarin, you must update it to the latest stable version 
 
 ### Build the Android Retail hybrid app
 
+> [!NOTE]
+> Please use Visual Studio 2019 or later to build the Android app.
+
 1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you'll find a **Check Now** link. If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
       
 2.  In the Retail SDK folder, open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
