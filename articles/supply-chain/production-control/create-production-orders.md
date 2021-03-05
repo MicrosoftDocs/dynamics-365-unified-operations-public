@@ -18,7 +18,6 @@ ms.search.form: ProdTable, ProdTableCreate
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19741
 ms.assetid: bbb6e69d-479c-45fc-a0a8-66da5df16c7f
@@ -49,3 +48,6 @@ A production order can be created in the following scenarios:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Spain
@@ -742,3 +741,6 @@ To maintain data integrity between these electronic message items and report lin
 | A report line is added during **Generation** function.                      | This will be a new electronic message item. Use the standard process to register it in the SII system.                                                                                                                                                                   |
 
 To maintain data integrity, lines on the **Collections in cash** report can't be manually deleted.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

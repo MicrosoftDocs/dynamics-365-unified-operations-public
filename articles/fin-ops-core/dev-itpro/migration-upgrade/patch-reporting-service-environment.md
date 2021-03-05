@@ -107,3 +107,6 @@ An SSRS service account will be updated to use the local system. A new SSRS cata
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

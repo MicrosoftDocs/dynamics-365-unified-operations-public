@@ -17,7 +17,6 @@ ms.search.form:  CustTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -71,3 +70,6 @@ You can also copy customers by using the Tax exempt number search feature that i
 
 1. A **Copy customer** option appears. By default, this option is set to **No**. To copy the customer to the current legal entity, set the option to **Yes**. 
 2. Select **Select**. The new customer is created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

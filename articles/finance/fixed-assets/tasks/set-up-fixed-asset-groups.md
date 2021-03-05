@@ -17,7 +17,6 @@ ms.search.form: AssetGroup, AssetGroupBookSetup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -42,3 +41,6 @@ This topic explains how to create a new fixed asset group. It uses the Accountan
 8. In the **Depreciation convention** field, select an option.
 9. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

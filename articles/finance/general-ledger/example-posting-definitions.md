@@ -18,7 +18,6 @@ ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15772
 ms.assetid: 3864e4da-853f-403d-b906-79631d80b363
@@ -133,3 +132,6 @@ In this example, any account that is part of Account Structure - P&L matches the
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

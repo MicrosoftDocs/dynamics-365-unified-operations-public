@@ -18,7 +18,6 @@ ms.search.form: TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7171
 ms.assetid: 381fc309-b32a-4927-b5b8-fa1c31b0bd72
@@ -227,3 +226,6 @@ For more information, see [Whole amount and Interval calculation options for sal
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

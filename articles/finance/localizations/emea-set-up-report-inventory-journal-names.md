@@ -18,7 +18,6 @@ ms.search.form: InventJournalName
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265144
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
@@ -53,3 +52,6 @@ To set up a relationship between a specific report and a journal type, on the **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

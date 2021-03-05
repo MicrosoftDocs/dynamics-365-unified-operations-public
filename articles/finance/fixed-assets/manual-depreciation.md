@@ -18,7 +18,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
@@ -81,3 +80,6 @@ The total of percentages for all intervals doesn't have to be 100. However, you 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

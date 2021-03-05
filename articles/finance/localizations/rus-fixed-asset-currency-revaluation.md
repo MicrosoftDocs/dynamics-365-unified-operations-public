@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -59,3 +58,6 @@ The following changes occur when currency is revaluated (depreciated):
 ## Reverse revaluation transactions
 
 Revaluation transactions are reversed in the same way as acquisition transactions (putting into operation transactions). Two transactions are created: a cost revaluation transaction and a depreciation revaluation transaction.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ For N-1 support, the customer must install the N-1 package in Commerce headquart
 After the Commerce headquarters upgrade and N-1 setup are completed, the N-1 store components can communicate with Commerce headquarters. No channel-side components must be installed for N-1 support. However, to enable the N-1 store to communicate with Commerce headquarters, cashiers must change their password the first time that they sign in.
  
 For instructions for N-1 installation, see [Phased Rollout (N-1) installation, configuration, and cutover guide](n-1-installation-configuration.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

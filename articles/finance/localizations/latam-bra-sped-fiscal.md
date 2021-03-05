@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
@@ -64,3 +63,6 @@ The SPED fiscal text file provides information about fiscal documents that were 
 7. Set the **Enable block K** option to **Yes**. The default setting is specified on the **SPED fiscal parameters** page.
 8. Optional: On the **Run in the background** FastTab, specify the options for batch processing. You might use batch processing if the file should be generated later or on a server instead of on your computer.
 9. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

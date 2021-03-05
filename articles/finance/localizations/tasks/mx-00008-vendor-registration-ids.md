@@ -17,7 +17,6 @@ ms.search.form: VendTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
@@ -49,3 +48,6 @@ This procedure walks you through creating the vendor for Mexico to support DIOT 
     * For foreign vendors, enter the Tax registration ID, the country/region code, and the nationality.  
 12. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

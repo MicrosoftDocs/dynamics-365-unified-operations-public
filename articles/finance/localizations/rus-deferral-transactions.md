@@ -15,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -63,3 +62,6 @@ Deferrals that are created after the fixed asset is disposed of are reversed whe
 5. In the **Date of storno** field, select the reversal date. All transactions that are created on this date are reversed.
 6. Select the **By all models** check box to reverse transactions that are created by using the tax value model and the base value model.
 7. Select **OK** to reverse the transaction.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

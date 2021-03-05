@@ -18,7 +18,6 @@ ms.search.form: VendTotalPriceTolerance
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63413
 ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
@@ -49,3 +48,6 @@ After you identify a discrepancy, you might have to contact the vendor if you th
 For more information, see [Research/Resolve exceptions](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

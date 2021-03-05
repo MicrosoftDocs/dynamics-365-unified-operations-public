@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (November 27, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
-author: Darinkramer
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for November 27, 2018.
+author: andreabichsel
+manager: tfehr
 ms.date: 11/27/2018
 ms.topic: article
 ms.prod: 
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-11-27
 ms.dyn365.ops.version: Talent
 
@@ -66,3 +65,6 @@ With this update, terminated employees that are rehired will only display one ti
 
 - **Issue**: When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. 
 - **Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed. If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled. (This issue will be fixed in the next platform update.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

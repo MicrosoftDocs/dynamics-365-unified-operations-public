@@ -18,7 +18,6 @@ ms.search.form: LedgerPeriodCloseWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14111
 ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
@@ -60,3 +59,6 @@ For more information, see the following topics for more information:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

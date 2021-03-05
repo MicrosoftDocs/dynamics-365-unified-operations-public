@@ -18,7 +18,6 @@ ms.search.form: CostingVersion
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -56,3 +55,6 @@ Related topics
 
 [Prepare to maintain standard costs for manufactured items](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

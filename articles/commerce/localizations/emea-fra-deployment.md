@@ -22,7 +22,6 @@ ms.reviewer: josaw
 ms.search.region: France
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
 
@@ -864,3 +863,6 @@ To enable the digital signature in offline mode for Modern POS, you must follow 
 5. Sign in to POS.
 6. On the **Database connection status** page, make sure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
 7. Restart Modern POS.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

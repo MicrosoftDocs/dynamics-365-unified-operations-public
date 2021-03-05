@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -101,3 +100,6 @@ For each node for the tax component, on the **Reporting** tab, in the **Period**
 
 > [!NOTE]
 > Tax main accounts can be defined either at the level of the tax type or the level of the tax component. The value at the tax component level overrides the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level is used for posting. We recommend that you set up the tax accounts at the tax component level per registration.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

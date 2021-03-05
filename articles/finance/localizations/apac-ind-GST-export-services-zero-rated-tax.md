@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -57,3 +56,6 @@ Complete the procedures in this topic to export services that have zero-rated ta
 3. Select **Post** \> **Post**.
 4. Close the message that you receive.
 5. Select **Inquiries** \> **Voucher**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

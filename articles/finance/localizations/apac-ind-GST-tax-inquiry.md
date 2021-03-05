@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -52,3 +51,6 @@ ms.dyn365.ops.version: 10.0.4
     ![Posted sales tax page](media/Capture2019052114_upd.png)
 
 8. Select **Close**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

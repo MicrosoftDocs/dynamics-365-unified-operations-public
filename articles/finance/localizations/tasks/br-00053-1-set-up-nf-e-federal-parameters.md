@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -105,3 +104,6 @@ You can set up Nota Fiscal eletrônica (NF-e) web services, rejection codes, and
 64. Close the page.
 65. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -33,8 +32,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic describes when and how to set up multiple Microsoft Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants per channel for user authentication in a dedicated Dynamics 365 Commerce environment.
-
-## Overview
 
 Dynamics 365 Commerce uses the Azure AD B2C cloud identity service to support user credentials and authentication flows. Users can use the authentication flows to sign up, sign in, and reset their password. Azure AD B2C stores a user's sensitive authentication information, such as his or her user name and password. The user record is unique to each B2C tenant, and it uses either user name (email address) credentials or social identity provider credentials.
 
@@ -135,3 +132,6 @@ Your new Azure AD B2C tenant should now appear in the list under **Manage B2C Ap
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
 [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

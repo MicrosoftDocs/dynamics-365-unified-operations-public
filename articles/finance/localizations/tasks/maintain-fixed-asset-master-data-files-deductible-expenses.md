@@ -17,7 +17,6 @@ ms.search.form: AssetGroup, AssetGroupBookSetup,  AssetTable, AssetBook
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -69,3 +68,6 @@ This task was created using the demo data company JPMF.
 4. Click Books.
     * Verify that the books were created automatically.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

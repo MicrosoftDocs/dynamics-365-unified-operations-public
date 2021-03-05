@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope:
 # ms.tgt_pltfrm:
 ms.custom:
 ms.search.region: Italy
@@ -51,7 +50,7 @@ Usually, adjustment and closing transactions occur on the date when the balance 
     -   Year-end close (**General ledger** \> **Period close** \> **Year end close** \> **Run fiscal close**)
     -   Project – Post costs (**Project management and accounting** \> **Periodic** \> **Time and Material** \> **Post Costs** \> **Post**)
     -   Project – Accrue revenue (**Project management and accounting** \> **Periodic** \> **Time and material** \> **Accrue revenue**)
-    -   Project – Estimate post (**Project management and accounting** \> **Periodic** \> **Estimates \> **Post estimates**)
+    -   Project – Estimate post (**Project management and accounting** \> **Periodic** \> **Estimates** \> **Post estimates**)
     -   Project – Estimate reverse (**Project management and accounting** \> **Periodic** \> **Estimates** \> **Reverse estimates**)
 
 ## Fiscal journal report
@@ -95,3 +94,6 @@ The company's fiscal year is from January 1 through December 31. The balance she
 7. Go to **General ledger** \> **Inquiries and reports** \> **Voucher transactions**.
 8. On the **Voucher transactions** page, add the **Transaction date** column.
 9. Verify that the **Date** field is set to December 31, and the **Transaction date** field is set to April 15.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

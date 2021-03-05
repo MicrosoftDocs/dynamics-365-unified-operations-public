@@ -18,7 +18,6 @@ ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2494
 ms.assetid: 5a95ae4f-ca75-47d9-a1c3-68c97b42f166
@@ -70,3 +69,6 @@ Each replenishment method is assigned one of the following coverage codes:
 ## Additional resources
 
 [Master plans overview](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

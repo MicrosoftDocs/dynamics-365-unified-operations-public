@@ -17,7 +17,6 @@ ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
@@ -55,3 +54,6 @@ After you complete these procedures, when you generate a tax invoice for a custo
     * Repeat this procedure to create additional GST relief groups if necessary.  
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269664
 ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
@@ -60,3 +59,6 @@ In the **Accounts payable** module, go to **Invoices** \> **Invoice journal**, s
 In the **Accounts payable** module, go to **Purchase orders** \> **All purchase orders**, and then, on the Action Pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
 
 ![All purchase orders page with Credit invoicing page](./media/ita-credit-invoicing-po.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

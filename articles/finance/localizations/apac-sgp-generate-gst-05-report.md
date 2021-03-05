@@ -18,7 +18,6 @@ ms.search.form: TaxAuthority
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12831
 ms.assetid: 90ea6084-920a-4174-8b3e-9b7b96aed0b4
@@ -101,3 +100,6 @@ Follow these steps to generate the tax declaration report.
 
 > [!NOTE]
 > Remember to run the sales tax settlement process to generate the related tax payment.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

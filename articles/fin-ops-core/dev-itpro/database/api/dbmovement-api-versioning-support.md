@@ -72,3 +72,6 @@ The following example shows a response contract in JavaScript Object Notation (J
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

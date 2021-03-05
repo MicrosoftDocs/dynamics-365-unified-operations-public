@@ -18,7 +18,6 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
@@ -180,3 +179,6 @@ Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but ar
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
 - [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

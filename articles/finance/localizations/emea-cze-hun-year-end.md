@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Czech Republic, Hungary
@@ -47,3 +46,6 @@ Before you can post opening transactions to a different account for each of main
 
 ## Additional resources
 [Year-end close](../general-ledger/year-end-close.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

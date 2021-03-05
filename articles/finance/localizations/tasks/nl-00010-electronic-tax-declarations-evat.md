@@ -17,7 +17,6 @@ ms.search.form: TaxEvatParameters_NL
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Netherlands
@@ -57,3 +56,6 @@ This functionality is available for legal entities whose primary address is in t
 16. In the list, find and select the desired record.
 17. In the Number sequence code field, enter or select a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

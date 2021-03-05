@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -36,7 +35,7 @@ This topic explains how to create free text invoices. For the procedure, use the
 
 ## Create a free text invoice
 
-1. Go to **Accounts receivable \> Invoices \> All free text invoices**.
+1. Go to **Accounts receivable (or Sales Ledger) \> Invoices \> All free text invoices**.
 2. Select **New**.
 3. In the **Customer account** field, select a value.
 
@@ -91,3 +90,6 @@ After you copy lines, you can edit the information as you require.
 You can create a free text invoice from a template. When you select **New from template** on the **Invoice** tab, you can select a template name and the customer account for the new free text invoice. Default values, such as the terms of payment and method of payment, can be automatically filled in from the customer, or you can use the values that were saved in the template.
 
 A new free text invoice is created, and you can edit the values as you require.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

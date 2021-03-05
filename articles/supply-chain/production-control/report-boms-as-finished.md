@@ -18,7 +18,6 @@ ms.search.form: BOMReportFinish, BOMReportFinishMax, BOMSetupReportFinish
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53251
 ms.assetid: 510d05a3-0073-438d-b0c4-b6a6df1882ea
@@ -93,3 +92,6 @@ In this case, the two on-hand pieces of item number COMP are considered. However
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

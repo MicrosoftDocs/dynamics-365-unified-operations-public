@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -72,3 +71,6 @@ To select the theme that is applied to your site, follow these steps.
 
 [Create a new theme](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

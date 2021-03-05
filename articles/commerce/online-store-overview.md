@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -125,3 +124,6 @@ For information about how to manage site content, see the following topics:
 [Enable location-based store detection](enable-store-detection.md)
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

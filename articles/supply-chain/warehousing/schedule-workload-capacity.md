@@ -17,7 +17,6 @@ ms.search.form:  WMSWorkloadCapacity
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -84,3 +83,6 @@ If this information isn't specified correctly, you receive a message when you ge
 3. In the **Order type** field, select **Planned and confirmed**, **Planned**, or **Confirmed** to indicate the type of orders to project on the report.
 4. In the **Load type** field, select a load type to specify whether the workload capacity should be projected for volume or weight.
 5. In the **Workload capacity** field, select a workload capacity setup.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

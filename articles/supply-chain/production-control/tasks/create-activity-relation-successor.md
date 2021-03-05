@@ -17,7 +17,6 @@ ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanA
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -68,3 +67,6 @@ Prerequisites:
 12. Close the page.
 13. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

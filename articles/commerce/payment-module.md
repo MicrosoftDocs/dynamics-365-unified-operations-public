@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -123,3 +122,6 @@ If both Adyen and PayPal payment connectors are needed, add both modules to the 
 [Dynamics 365 Payment Connector for PayPal](paypal.md)
 
 [Strong Customer Authentication using Adyen](adyen_redirect.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

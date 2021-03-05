@@ -18,7 +18,6 @@ ms.search.form: SMADispatchBoard
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -65,3 +64,6 @@ Click **Service management** \> **Periodic** \> **Dispatch board**.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

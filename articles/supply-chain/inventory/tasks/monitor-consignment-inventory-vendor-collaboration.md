@@ -3,7 +3,7 @@
  
 title: Monitor consignment inventory using vendor collaboration
 description: This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -45,3 +44,6 @@ This procedure shows how to use vendor collaboration to see information about th
 1. Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.
     * The On-hand consignment inventory page shows the stock that you own at the customer's warehouse. You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

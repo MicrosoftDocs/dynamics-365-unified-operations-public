@@ -17,7 +17,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274443
 ms.assetid: fb4084cf-1061-4286-9f09-0f28a031483d
@@ -167,3 +166,6 @@ If you set the period frequency to a unit that is smaller than a **Yearly** (for
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

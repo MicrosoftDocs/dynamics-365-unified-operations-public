@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: 
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: GBL
@@ -88,3 +87,6 @@ Based on the settings, the system enters a value in the **Invoice issue due date
 
 > [!NOTE]
 > If you set the **Invoice date control** field on the **Accounts receivable parameters** page to **None**, the system leaves the **Invoice issue due date** field in the packing slip journal blank.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

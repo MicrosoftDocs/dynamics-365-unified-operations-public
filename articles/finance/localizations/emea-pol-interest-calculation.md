@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Poland
@@ -106,3 +105,6 @@ In Poland, the tax interest rates are determined by the Ministry of Finance. The
 11. Set the **Tax interest** option to **Yes** to calculate the free-hand interest and tax interest.
 12. On the **Records to include** FastTab, select **Filter** to find and select records for the interest calculation.
 13. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

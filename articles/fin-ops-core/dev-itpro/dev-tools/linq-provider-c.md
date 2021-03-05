@@ -192,3 +192,6 @@ LINQ queries can be applied for CRUD operations. But the model for updating, del
 [Changes in X++ and the X++ compiler](programming-language-support.md)
 
 [Develop and customize home page](developer-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

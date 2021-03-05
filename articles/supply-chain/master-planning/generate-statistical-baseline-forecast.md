@@ -18,7 +18,6 @@ ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
@@ -82,3 +81,6 @@ Additional resources
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 - [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

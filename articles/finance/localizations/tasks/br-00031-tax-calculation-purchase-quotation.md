@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -67,3 +66,6 @@ You can create a purchase request for quotation (RFQ), and when you enter the ve
 33. Close the page.
 34. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

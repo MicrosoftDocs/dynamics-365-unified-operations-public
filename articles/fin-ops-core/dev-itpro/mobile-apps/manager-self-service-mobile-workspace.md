@@ -2,7 +2,7 @@
 # required metadata
 
 title: My team mobile workspace
-description: This topic provides information about the My team mobile workspace, which lets managers view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
+description: This topic provides information about the My team mobile workspace, which lets managers view their direct reports and extended staff.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
@@ -102,3 +102,6 @@ Download and install the Finance and Operations mobile app:
 1.	Select **Send praise**. 
 1. Enter the text of the praise that you want to send. 
 1. Select **Done**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

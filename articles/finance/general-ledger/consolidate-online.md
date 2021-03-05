@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -102,3 +101,6 @@ On the **Currency translation** tab, you define the legal entity, account and ex
 For more information about consolidation and currency translations, see the parent topic of this topic, [Financial consolidations and currency translation overview](./financial-consolidations-currency-translation.md).
 
 For information about scenarios where you might generate consolidate financial statements, see [Generate consolidated financial statements](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

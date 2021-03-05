@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -138,3 +137,6 @@ Because the CSS code used in RTL and LTR layouts is generally the same except fo
 [Add custom resources to your customization code](add-custom-resources.md)
 
 [CLI command reference](cli-command-reference.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

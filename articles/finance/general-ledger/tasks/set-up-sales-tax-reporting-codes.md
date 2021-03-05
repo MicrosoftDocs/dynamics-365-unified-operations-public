@@ -17,7 +17,6 @@ ms.search.form: TaxReportCollection
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -42,3 +41,6 @@ This recording uses the DEMF demo company.
 6. In the **Brief description** field, enter a description for internal purposes.
 7. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

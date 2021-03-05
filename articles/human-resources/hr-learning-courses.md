@@ -4,7 +4,7 @@
 title: Set up training courses
 description: Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWo
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Set up training courses
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 
@@ -143,3 +145,6 @@ Employees who register for a course through the **Employee self service** page c
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: MCRCustomerService, SalesTable, MCRSourceIdTargetLookup, MCRSale
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -64,3 +63,6 @@ This procedure walks through looking up a customer, creating a new order, search
 
 [Change mode of delivery in POS](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

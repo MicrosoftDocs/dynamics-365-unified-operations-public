@@ -18,7 +18,6 @@ ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimens
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -350,3 +349,6 @@ If the Electricity predefined dimension member allocation basis is assigned as a
 ## Additional resources
 
 [Allocation bases](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

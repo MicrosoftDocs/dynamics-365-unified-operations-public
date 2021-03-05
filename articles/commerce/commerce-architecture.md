@@ -18,7 +18,6 @@ ms.search.form: RetailITWorkspace
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -197,3 +196,6 @@ Dataverse is the unified data store that integrates the data from all your busin
 [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview)
 
 [Microsoft Bing for Commerce](https://www.microsoft.com/bing/commerce)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

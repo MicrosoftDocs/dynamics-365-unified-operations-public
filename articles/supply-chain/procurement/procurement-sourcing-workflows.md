@@ -3,7 +3,7 @@
 
 title: Procurement and sourcing workflows
 description: Some organizations require that purchase requisitions and purchase orders are approved by a user other than the person who entered the transaction. To set up an approval process, you can create a workflow.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form: WorkflowTableListPageRnr
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2074
 ms.assetid: e54a1d59-b9fb-421b-821d-01f32878aa9b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -85,3 +84,6 @@ You can assign an approval step to the following groups of participants.
 - [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Purchase requisition workflow](purchase-requisitions-workflow.md)
 - [Onboard vendors](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

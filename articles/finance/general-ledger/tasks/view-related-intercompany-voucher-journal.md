@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, SysDataAreaSelectLo
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -57,3 +56,6 @@ The related voucher window shows the voucher from the offset company when postin
 3. In the list, mark the selected row.
 4. Click Voucher.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

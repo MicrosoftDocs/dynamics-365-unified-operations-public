@@ -17,7 +17,6 @@ ms.search.form: ReqIntercompanyPlanningGroupSetup, ReqIntercompanyPlanningGroupA
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -85,3 +84,6 @@ A production planner can create a baseline forecast either by using time series 
 5. Click Forecast line details.
     * In this page, you can see the accuracy values, historical demand, and forecast. You can make changes to the forecast as well.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

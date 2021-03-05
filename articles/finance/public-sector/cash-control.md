@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -99,3 +98,6 @@ If the invoice will exceed the cash control limit and the user doesn't have over
 - A user who has override privileges resubmits the invoice
 - The invoice is changed so that a different cash account is used
 - The cash control balance is change
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

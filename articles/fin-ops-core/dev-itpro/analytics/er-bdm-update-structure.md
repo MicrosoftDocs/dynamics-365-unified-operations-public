@@ -111,3 +111,6 @@ Complete the following procedures in [Business document management overview](er-
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Business document management overview](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Version control, metadata search, and navigation
-description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models. It will also help you learn about other productivity features in the development tools.
+description: This tutorial will walk you through configuring Azure DevOps to enable source control on your models.
 author: RobinARH
 manager: AnnBe
 ms.date: 07/24/2020
@@ -310,3 +310,6 @@ You can use Application Explorer to search for all or some elements of a model a
 
     > [!TIP]
     > To create a project from search results, you can add any type, name, or other filters to your search as long as all results are in the same model. For example: *model:"Fleet Management" type:Table name:^FM* will return all tables in the Fleet Management model with a name starting with the letters FM.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

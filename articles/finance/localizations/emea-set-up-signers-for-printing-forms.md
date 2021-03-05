@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263464
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
@@ -171,3 +170,6 @@ The Officials functionality shows the default predefined signers from the Offici
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

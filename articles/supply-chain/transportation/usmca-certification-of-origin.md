@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -145,3 +144,6 @@ The user signing the certification must manually enter the number of pages (for 
 ### Page numbers
 
 Current page and number of pages printed at the bottom of the document.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

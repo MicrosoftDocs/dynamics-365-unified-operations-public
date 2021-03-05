@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -140,3 +139,6 @@ You can also edit a fragment by selecting it on a page, in a template, or in a p
 [Work with preset layouts](work-with-layouts.md)
 
 [Work with publish groups](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

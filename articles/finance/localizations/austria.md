@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Austria
@@ -71,3 +70,6 @@ For general information about the setup of VAT statements, see [VAT reporting fo
 - [Microsoft Dynamics Localization Portal: Austria report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Austria.html)
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

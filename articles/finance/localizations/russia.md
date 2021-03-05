@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Russia
@@ -164,6 +163,7 @@ This topic provides information about functionality that supports Russian regula
 - [Expense and income codes](rus-expense-and-income-codes.md)
 - [Assets tax registers](rus-assets-tax-registers.md)
 - [Deferrals tax register](rus-deferred-expenses-register.md)
+- [Cash flow tax registers](rus-cash-flow-tax-registers.md)
 
 ## Additional resources
 
@@ -174,3 +174,6 @@ This topic provides information about functionality that supports Russian regula
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

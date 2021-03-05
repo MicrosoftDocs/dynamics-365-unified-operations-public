@@ -18,7 +18,6 @@ ms.search.form: TaxFiscalDocument_BR, TaxFiscalDocumentCancel_BR, TaxFiscalDocum
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269524
 
@@ -148,3 +147,6 @@ For more information, see the following topics:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

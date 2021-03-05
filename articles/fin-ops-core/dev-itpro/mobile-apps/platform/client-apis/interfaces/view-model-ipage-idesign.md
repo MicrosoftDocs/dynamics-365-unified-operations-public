@@ -173,3 +173,6 @@ type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 The type of the control as a string.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

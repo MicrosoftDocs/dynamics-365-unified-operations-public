@@ -18,7 +18,6 @@ ms.search.form: FBTaxAssessmentPayment_BR, FBTaxAssessmentPaymentOtherDebits_BR
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270254
 ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
@@ -169,3 +168,6 @@ For more information, see the following topics:
  - [Calculate interest and fines on customer payments](tasks/br-00066-2-calculate-interest-fines-customer-payments.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

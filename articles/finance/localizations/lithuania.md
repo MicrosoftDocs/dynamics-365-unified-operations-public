@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Lithuania
@@ -39,3 +38,6 @@ This topic provides links to documentation resources for Lithuania.
 - [Invoice and packing slip numbering](emea-invoices-packing-slips-numbering.md)
 - [VAT statement details](emea-ltu-vat-statement-details.md)
 - [i.SAF reporting](emea-ltu-isaf.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

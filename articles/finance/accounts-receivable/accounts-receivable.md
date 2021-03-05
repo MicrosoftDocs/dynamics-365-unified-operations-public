@@ -18,7 +18,6 @@ ms.search.form:  CustomerInvoiceWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20671
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
@@ -125,3 +124,6 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

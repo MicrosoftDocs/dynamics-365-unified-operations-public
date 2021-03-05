@@ -17,7 +17,6 @@ ms.search.form: AssetParameters, AssetPosting
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -63,3 +62,6 @@ This procedure was created using the demo data company JPMF.
 2. Expand or collapse the Accelerated depreciation section.
     * Specify the Main account and Offset account to use for Accelerated depreciation.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

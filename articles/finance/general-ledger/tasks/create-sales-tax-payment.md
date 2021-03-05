@@ -17,7 +17,6 @@ ms.search.form: Dialog
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -40,3 +39,6 @@ The settle and post sales tax job procedure settles sales tax balances on the sa
 5. In the **Transaction date** field, enter a date.
 6. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

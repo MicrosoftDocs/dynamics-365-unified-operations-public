@@ -58,3 +58,6 @@ The expression `IF( Invoice.DocumentDate = NULLDATE(), true, false)` returns **T
 ## Additional resources
 
 [Date and time functions](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

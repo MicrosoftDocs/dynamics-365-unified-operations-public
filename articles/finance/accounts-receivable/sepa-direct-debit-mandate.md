@@ -18,7 +18,6 @@ ms.search.form: CustParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59491
 ms.assetid: 653a135f-c515-4ae3-9da2-82b5e1f103b5
@@ -62,3 +61,6 @@ Additional resources
 
 [Create a direct debit mandate for a customer](tasks/create-direct-debit-mandate-customer.md) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -83,3 +82,6 @@ Set up Brazilian legal entity parameters. This task uses the BRMF demo company.
 49. Click Save.
 50. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

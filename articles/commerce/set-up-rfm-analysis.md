@@ -18,7 +18,6 @@ ms.search.form: MCRRFMDefinition
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 78943
 ms.assetid: 8ff9aac3-5ada-4150-85fd-18901c926d53
@@ -103,3 +102,6 @@ Use this procedure to view or clear the history of an RFM analysis record.
 2. On the **RFM analysis** page, select the record that you want to view.
 3. To view the record history, select the **History** FastTab.
 4. To clear the history of the record, select **Clear history**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ There are two ways to extend an enum:
     ![Create an extension enum (method 2)](media/AddEnum03.png)
 		
 The enum extension is created in the selected model. You can add new enum values to this extension.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

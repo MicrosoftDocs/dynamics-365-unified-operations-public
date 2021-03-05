@@ -15,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -384,3 +383,6 @@ A completed translation can't be processed more than one time. To rerun translat
 1. Go to **General ledger \> Periodic tasks \> Translation sessions**.
 2. In the lower part of the page, select the translation to cancel.
 3. Select **Cancellation**. The **Export status** and **Import status** fields are automatically updated to **Canceled**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266884
 ms.search.region: Lithuania
@@ -286,3 +285,6 @@ If you want to exclude an invoice from i.SAF report, select **Update status** on
 If you want to postpone reporting of an invoice in i.SAF report, select **Update status** on the Action Pane to update the status of the message items to **Postponed**. Invoices with a status of **Postponed** will not the included into the report. On the **Update status** dialog page, select **i.SAF** processing, select **Update to Postponed** in the **Action** field,  and then select **Postponed** in tje **New status** field. You can define additional criteria by using the **Filter** function, to specify reporting of which invoice(s) must be postponed by criteria.
 
 You can always reverse status of **Excluded** or **Postponed** message items by using the **Update to initial status** action.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

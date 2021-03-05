@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11464
 ms.search.region: Czech Republic, Estonia, Latvia, Lithuania, Poland
@@ -77,3 +76,6 @@ You must revalue and adjust bank accounts if there is a difference in the exchan
 
 > [!NOTE]
 > In the general ledger, you can view two separate transactions: one for the accounting currency and one for the reporting currency.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

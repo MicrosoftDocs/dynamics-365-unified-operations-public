@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -103,3 +102,6 @@ When you preview pages that are based on the template that you added the metatag
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

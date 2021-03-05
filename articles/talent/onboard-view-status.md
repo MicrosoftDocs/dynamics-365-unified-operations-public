@@ -18,7 +18,6 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 audience: Application User
 # ms.devlang:
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm:
 # ms.custom:
 # ms.assetid:
@@ -63,3 +62,6 @@ Microsoft Dynamics 365 Talent: Onboard lets you view the progress that your new 
 - [What's new or changed in Dynamics 365 Talent](./whats-new.md)
 - [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

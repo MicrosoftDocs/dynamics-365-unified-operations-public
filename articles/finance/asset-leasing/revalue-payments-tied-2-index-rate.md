@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -73,3 +72,6 @@ To view the effects of the lease revaluation process on IFRS 16 leases, open the
 You can view the newly generated payment schedule that starts on the revaluation date and show the total updated payment amount. A new lease liability amortization schedule and an asset depreciation schedule have also been created to reflect the adjusted payment schedule.
 
 The journal entry has automatically posted the adjustment journal entry to the account for the change in lease payments that are related to the index revaluation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

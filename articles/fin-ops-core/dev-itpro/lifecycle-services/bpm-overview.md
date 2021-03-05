@@ -69,3 +69,6 @@ Follow these steps to access BPM.
 - [Flowcharts in Business process modeler (BPM)](flowcharts-business-process-modeler.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

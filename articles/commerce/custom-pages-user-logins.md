@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,12 +30,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Set up custom pages for user sign-ins
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.
-
-## Overview
 
 To use custom pages that are authored in Dynamics 365 Commerce to handle user sign-in flows, you must set up the Azure AD policies that will be referenced in the Commerce environment. You can configure the "Sign up and sign in," "Profile editing," and "Password reset" Azure AD B2C policies by using the Azure AD B2C application. The Azure AD B2C tenant and policy names can then be referenced during the provisioning process that is done for the Commerce environment by using Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -219,3 +215,6 @@ After you update the global.json file and publish your changes, the new link tex
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
 [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

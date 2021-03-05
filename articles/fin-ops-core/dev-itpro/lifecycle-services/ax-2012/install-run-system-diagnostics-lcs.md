@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install and run System diagnostics
-description: In Microsoft Dynamics Lifecycle Services, System diagnostics includes an on-premises component that must be installed before you can use the service to discover Microsoft Dynamics AX environments and collect data.
+description: System diagnostics includes an on-premises component that must be installed before you can use the service to discover environments and collect data.
 author: PeterRFriis
 manager: AnnBe
 ms.date: 10/10/2018
@@ -234,3 +234,6 @@ You can collect data on demand from the **Environment Discovery** window. We rec
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

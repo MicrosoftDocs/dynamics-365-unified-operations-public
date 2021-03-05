@@ -18,7 +18,6 @@ ms.search.form: SMADispatchBoard
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -60,3 +59,6 @@ In order to help you quickly gauge the urgency of a service order, the Gantt cha
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

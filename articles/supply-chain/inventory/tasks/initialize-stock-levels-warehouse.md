@@ -17,7 +17,6 @@ ms.search.form: InventJournalMovement, InventJournalCreate, InventItemIdLookupSi
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -62,3 +61,6 @@ This procedure shows you how to get the on-hand inventory updated manually using
 25. Close the page.
 26. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

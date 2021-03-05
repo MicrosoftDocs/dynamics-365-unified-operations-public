@@ -112,3 +112,6 @@ For information about the layout properties, and for guidelines about scenarios 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

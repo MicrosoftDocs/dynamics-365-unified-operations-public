@@ -18,7 +18,6 @@ ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -62,3 +61,6 @@ A plan filter is set up that includes items A, B, and C. Master planning runs ar
 [View plan history and planning logs](plan-history-logs.md)
 
 [Cancel a planning job](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

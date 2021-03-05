@@ -23,7 +23,7 @@ ms.custom: 221444
 ms.assetid: 27ccec84-8e9a-465e-9b2a-fbe88d974068
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -131,3 +131,6 @@ To change the benefits, follow these steps:
 
     - Set up worker tax regions.
     - Change worker residency.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

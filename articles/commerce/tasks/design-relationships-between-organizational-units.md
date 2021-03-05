@@ -17,7 +17,6 @@ ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySe
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -65,3 +64,6 @@ This procedure walks through how to design the relationship between organization
 29. Click Publish.
 30. Click Close.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,12 +30,9 @@ ms.dyn365.ops.version:
 
 # Content block module
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 A content block module is used to market products or promotions through a combination of images and text. For example, a retailer can add a content block module to the home page of an e-Commerce site to promote a new product and attract the attention of customers.
 
@@ -111,3 +107,6 @@ To add a hero module to a new page and set the required properties, follow these
 [Text block module](add-content-rich-block.md)
 
 [Video player module](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

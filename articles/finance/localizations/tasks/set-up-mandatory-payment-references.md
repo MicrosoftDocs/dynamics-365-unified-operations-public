@@ -17,7 +17,6 @@ ms.search.form: MainAccount, LedgerJournalTable, LedgerJournalTransDaily
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Iceland
@@ -61,3 +60,6 @@ This functionality is typically used by accountants, accounting managers, accoun
 13. Click Save.
 14. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

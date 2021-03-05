@@ -17,7 +17,6 @@ ms.search.form: AssetDepreciationGroup_W
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265124
 ms.search.region: Czech Republic
@@ -44,3 +43,6 @@ To suspend fixed asset depreciation, on the **Fixed assets** page, select the fi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Support variable number of decimals - InventTestUpperTolerance
 - Support to skip prompt on transaction reversal
 - Enable extension of PSAProjQuotationApproval workflow
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -176,3 +176,6 @@ The editor is currently supported in the following web browsers:
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 - [Monaco editor](https://microsoft.github.io/monaco-editor)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

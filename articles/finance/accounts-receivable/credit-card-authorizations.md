@@ -18,7 +18,6 @@ ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 3041
 ms.assetid: 678f6899-bfa5-439b-aaca-b4affcc338ba
@@ -85,3 +84,6 @@ To void a credit card authorization, you can change the method of payment to ano
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
@@ -47,3 +46,6 @@ Depreciation conventions can be assigned to the setup for a fixed asset group bo
 | Mid month (15th of month) | To calculate your depreciation deduction for the year when you put the property in service, multiply the depreciation for a full year by a fraction. The numerator (top number) of this fraction is the number of full months in the year that the property is in service, plus 1/2 or (0.5). The denominator (bottom number) is 12. If you dispose of the property before the end of your recovery period, use the same method to calculate your depreciation deduction for the year of disposition. |
 | Half year (start of year) | Assets that have a <strong>Placed in service</strong> date in the first half of the year start to depreciate on the first day of the year (full year). Assets that have a <strong>Placed in service</strong> date in the second half of the year start to depreciate at the midpoint of the year. |
 | Half year (next year)     | Assets that have a <strong>Placed in service</strong> date in the first half of the year start to depreciate on the first day of the year (full year). Assets that have a <strong>Placed in service</strong> date in the second half of the year start to depreciate on the first day of the next year. Assets that are retired in the first half of the year are considered retired on the last day of the previous year for depreciation purposes. Any depreciation that is posted in the current year must be reversed or adjusted out. Assets that are retired in the second half of the year are considered retired on the last day of the year of retirement for depreciation purposes. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

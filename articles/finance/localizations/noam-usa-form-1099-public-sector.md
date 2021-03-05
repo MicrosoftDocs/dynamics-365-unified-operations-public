@@ -18,7 +18,6 @@ ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableL
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26181
 ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
@@ -63,3 +62,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: ReqTransFuturesListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
@@ -63,3 +62,6 @@ Additional resources
 --------
 
 [Coverage settings](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

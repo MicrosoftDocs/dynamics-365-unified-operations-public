@@ -17,7 +17,6 @@ ms.search.form: InventJournalLossProfit, InventJournalCreate, InventLocationIdLo
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -62,3 +61,6 @@ This procedure walks you through the process of creating and posting an inventor
 5. Close the form.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

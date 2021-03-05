@@ -18,7 +18,6 @@ ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
@@ -118,3 +117,6 @@ You can reverse the results of the revaluation out of date order, but you may ne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

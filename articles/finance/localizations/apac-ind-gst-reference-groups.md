@@ -21,7 +21,6 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
-# ms.search.scope: Core, Operations
 # ms.search.industry: 
 ms.author: ralin
 ms.dyn365.ops.version: 7.3.1
@@ -82,3 +81,6 @@ The India GST number sequence logic is based on the following conditions for upd
 - For a stock transfer receipt transaction, the system will copy the shipment transaction ID when the number sequence reference ID is generated for the shipment transaction.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: WHSRFMenuItem, WHSRFAutoConfirm, WHSRFMenu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -71,3 +70,6 @@ This topic shows how to set up a Mobile device menu item. In this example, the m
 5. Select the arrow that points to the right.
 6. Select **Save**.
 7. Close the page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

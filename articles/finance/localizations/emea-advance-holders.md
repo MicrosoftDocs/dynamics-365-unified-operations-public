@@ -18,7 +18,6 @@ ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262574
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
@@ -163,3 +162,6 @@ After the slip journal is processed, if the amount in the **Amount to be transfe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

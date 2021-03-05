@@ -141,3 +141,6 @@ Extensibility features are key features of the Dynamics AX platform because the 
 ## Additional resources
 
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

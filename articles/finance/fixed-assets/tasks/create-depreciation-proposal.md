@@ -15,7 +15,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User 
 # ms.devlang:
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -51,3 +50,6 @@ This topic describes how depreciation batch proposals work and explains how to p
 3. Select **Lines**.
 4. Select **Post**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

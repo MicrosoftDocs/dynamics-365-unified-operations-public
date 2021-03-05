@@ -127,3 +127,6 @@ To re-enable the **Information** form option, follow these steps:
 2. Find the **Information** form under the forms node. 
 3. Select the **Information** form and click **Enable security roles**. 
 4. Change the security setting to **Display to everyone**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

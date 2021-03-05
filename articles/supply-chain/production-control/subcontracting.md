@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -309,3 +308,6 @@ A production order of 10 pieces is created for product D8100, "Coated Cabinet." 
     ![Cost comparison charts](./media/subcontract35_cost-comparison-charts.png)
 
 Missing setup in data.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

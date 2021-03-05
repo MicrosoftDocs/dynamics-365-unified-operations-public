@@ -17,7 +17,6 @@ ms.search.form: LedgerFundType
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -41,3 +40,6 @@ This procedure was created using the PSUS demo company data in the public sector
 4. In the Description field, type a value.
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

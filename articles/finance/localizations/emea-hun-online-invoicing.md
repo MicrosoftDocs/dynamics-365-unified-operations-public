@@ -3,7 +3,7 @@
 
 title: Online invoicing system
 description: This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
-author: v-lurodi
+author: anasyash
 manager: AnnBe
 ms.date: 06/03/2020
 ms.topic: article
@@ -17,7 +17,6 @@ ms.search.form: AssetParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264684
 ms.search.region: Hungary
@@ -431,3 +430,6 @@ For a full description of the electronic message actions of **OnlineInvoicing** 
 | Submit invoice request         | No                 |
 | Submit status request          | No                 |
 | Submit token request           | No                 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

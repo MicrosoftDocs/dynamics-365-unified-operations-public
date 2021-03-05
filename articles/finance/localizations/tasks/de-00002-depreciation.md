@@ -17,7 +17,6 @@ ms.search.form: AssetParameters, AssetDepreciationProfile
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Germany
@@ -48,3 +47,6 @@ This guide demonstrates how to set up the calculation of depreciation for additi
 7. Check the Full year depreciation on additional acquisitions checkbox.
 8. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

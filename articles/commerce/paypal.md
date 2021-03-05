@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -182,3 +181,6 @@ To create a **Live** merchant account with PayPal, visit the [PayPal Checkout pa
 - [Payments FAQ](dev-itpro/payments-retail.md)
 - [Checkout module](add-checkout-module.md)
 - [Payment module](payment-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

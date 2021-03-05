@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14222
 ms.assetid: 2b19f7fd-9ff9-4ee4-bddf-f582946d008e
@@ -76,3 +75,6 @@ April can review the vendor transactions on the **Vendor transactions** page by 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

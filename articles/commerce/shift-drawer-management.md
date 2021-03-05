@@ -18,7 +18,6 @@ ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
@@ -164,3 +163,6 @@ Go to **Retail and Commerce \> Channels \> Stores \> All stores \> Statement/clo
 This setup helps guarantee that back-office statements include the same transactions as shifts in the POS, and that the data is summarized by that shift.
 
 For more information about statement and closing methods, see [Store configurations for Retail statement](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

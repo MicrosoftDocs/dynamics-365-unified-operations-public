@@ -18,7 +18,6 @@ ms.search.form: SMASubscriptionTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -53,3 +52,6 @@ ms.dyn365.ops.version: AX 7.0.0
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Switzerland
@@ -36,3 +35,6 @@ This topic provides links to documentation resources for Switzerland.
 
 - [ESR customer payments import](emea-che-esr-customer-payments-import.md)
 - [Swiss QR-bills](emea-che-swiss-qr-bills.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
@@ -109,3 +108,6 @@ Commerce supports fiscal registration via the [Fiscal integration framework](../
 | Integration of the POS with fiscal printers                              |                |                           |         | X           |
 
 \* *Fiscal book statements* are SPED (Sistema Público de Escrituração Digital) Fiscal, SPED Contributions, and ICMS-ST (Imposto sobre Circulação de Mercadorias e Serviços - Substituição Tributária) compensation and restitution statements for the supported states.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

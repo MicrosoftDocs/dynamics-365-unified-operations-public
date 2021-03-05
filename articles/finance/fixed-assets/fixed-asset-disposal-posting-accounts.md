@@ -18,7 +18,6 @@ ms.search.form: AssetPosting
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3461
 ms.assetid: dfdc0730-e030-48cc-8d93-15bdc7b23776
@@ -48,3 +47,6 @@ The disposal transaction for an asset in a low-value pool reduces the net book v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

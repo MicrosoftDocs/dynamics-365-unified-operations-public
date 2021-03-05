@@ -17,7 +17,6 @@ ms.search.form: PurchAgreement, PurchAgreementFinDimensionAccess_PSN
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -43,3 +42,6 @@ You can make sure that only approved departments can access a purchase agreement
     * Add additional departments until all authorized departments have been added to the purchase agreement.  
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

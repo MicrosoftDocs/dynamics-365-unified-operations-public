@@ -18,7 +18,6 @@ ms.search.form: CostControlCommittedCost
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
@@ -88,3 +87,6 @@ The vendor invoice will remain in a pending state until the actual vendor invoic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

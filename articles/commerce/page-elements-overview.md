@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -67,3 +66,6 @@ The following table provides a summary of terms that you should be familiar with
 [Templates and layouts overview](templates-layouts-overview.md)
 
 [Customize site navigation](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

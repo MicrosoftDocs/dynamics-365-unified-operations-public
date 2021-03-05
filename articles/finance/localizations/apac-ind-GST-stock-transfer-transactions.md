@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -96,3 +95,6 @@ Complete the procedures in this topic to create a stock transfer order that has 
 
 > [!NOTE]
 > The tax accounts for the "to" warehouse and GSTIN are posted.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

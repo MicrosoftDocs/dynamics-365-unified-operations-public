@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -179,3 +178,6 @@ The language that you added will now be available so that you can configure your
 [Add a copyright notice](add-copyright-notice.md)
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

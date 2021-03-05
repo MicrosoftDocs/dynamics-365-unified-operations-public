@@ -18,7 +18,6 @@ ms.search.form: LogisticsAddressSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29901
 ms.search.region: Belgium, Netherlands, Sweden
@@ -52,3 +51,6 @@ For some countries, you must use the Data management framework to import codes, 
 Instead of importing codes, you can use the **Address setup** page to manually add new ZIP/postal codes.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

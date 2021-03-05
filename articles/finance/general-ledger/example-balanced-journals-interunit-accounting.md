@@ -18,7 +18,6 @@ ms.search.form: LedgerParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15791
 ms.assetid: 301bd80e-f8b1-4f12-8194-e6d7de736084
@@ -60,3 +59,6 @@ Therefore, the following accounting entries are created automatically to balance
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

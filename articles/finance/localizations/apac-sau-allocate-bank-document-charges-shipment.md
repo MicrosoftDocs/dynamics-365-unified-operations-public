@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: 
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Saudi Arabia
@@ -81,3 +80,6 @@ Follow these steps to allocate bank document charges.
     > You can validate the allocation by selecting **Shipment charge transactions** on the **Lines** FastTab.
 
 8. To allocate shipment charge transactions to the purchase order lines, on the Action Pane, on the **Purchase** tab, in the **Charges** group, select **Maintain charges**, and then select **Allocate**. The bank document charge that you allocated to letter of credit or import collection lines should appear in the list.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

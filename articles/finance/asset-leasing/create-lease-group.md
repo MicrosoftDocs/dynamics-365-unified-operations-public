@@ -18,7 +18,6 @@ ms.search.form: TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -56,3 +55,6 @@ After you create lease groups, you can assign books to each group. When you crea
 1. Go to **Asset leasing \> Setup \> Lease group**.
 2. Select a lease group, and then select **Books**.
 3. Select **New**, and then, in the **Book type** field, select the book to assign to the lease group. You can assign multiple books to a lease group if a lease must be accounted for in different ways.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

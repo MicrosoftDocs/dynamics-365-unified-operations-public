@@ -93,7 +93,7 @@ The next steps walk through this process in Finance and Operations apps.
 
     - **User name** - Enter **dataverse integration** (or a different value).
 
-    - **Provider** - Leave at the default value.
+    - **Provider** - Set to **NonAAD**.
 
     - **Email** - Enter **dataverseintegration** (or a different value, does *not* need to be a valid email account).
 
@@ -172,3 +172,6 @@ From the development tooling, existing elements such as forms can be modified fo
 ![Solution](../media/fovesolution.png)
 
 When the solution is exported, it will contain hard dependencies on the virtual entity generated in the MicrosoftOperationsERPVE solution.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

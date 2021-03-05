@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -94,3 +93,6 @@ You can associate the tax rate type to the following taxable master data where i
 - Released product
 - Procurement/Sales categories
 - Charge code
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (June 11, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Darinkramer
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for June 11, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
 
@@ -68,13 +67,13 @@ For more details about Platform update 27 for Finance and Operations, see [Previ
 
 The **Feature management** workspace in **System administration** lets you view, enable, disable, and schedule features that have been delivered in each release. By default, new features are turned off. You can use the **Feature management** workspace to turn them on and view the documentation for them.
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-The Issuing agency entity now supports custom fields.
+The Issuing agency table now supports custom columns.
 
-### New Common Data Service entities
+### New Dataverse tables
 
-The Task group entity has been added.
+The Task group table has been added.
 
 ## In preview
 
@@ -97,3 +96,6 @@ A new option will let managers view the performance of both their direct reports
 ### Print performance reviews
 
 Employees, managers, and HR will be able to print an employee's performance review.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

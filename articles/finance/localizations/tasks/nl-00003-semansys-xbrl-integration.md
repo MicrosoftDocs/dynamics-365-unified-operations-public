@@ -17,7 +17,6 @@ ms.search.form: Dialog
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Netherlands
@@ -52,3 +51,6 @@ The following example shows the steps needed for a user to export the data for r
 5. Select **OK**.
 
 You can now take the Semansys DataBridge format package to the XBRLOne portal for next steps in the process.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumen
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -81,3 +80,6 @@ This task uses the USMF demo company.
 10. Click Save.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

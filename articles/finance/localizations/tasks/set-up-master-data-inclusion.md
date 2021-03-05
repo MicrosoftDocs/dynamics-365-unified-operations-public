@@ -17,7 +17,6 @@ ms.search.form: AssetAdvancedRule_JP, AssetAdvancedRuleCreateEdit_JP,  AssetBook
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -69,3 +68,6 @@ This procedure walks you through creating fixed asset rules with required master
 12. Click Save.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

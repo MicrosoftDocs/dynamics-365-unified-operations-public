@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Bahrain
@@ -191,3 +190,6 @@ Follow these steps to generate the tax declaration report.
     * SST for services
 
 6. Select **OK** to confirm your settings and generate the report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@
 
 title: Position budgeting troubleshooting
 description: This article provides answers to questions that you might have when you configure position budgeting. It addresses frequently asked questions about how to create budget cost elements, compensation groups, and compensation grids. 
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,13 +18,12 @@ ms.search.form: HcmBudgetPurposeType, HcmPositionForecast
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 88253
 ms.assetid: c44df01b-8700-4022-b4c6-c4b1cb84d31d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -69,3 +68,6 @@ The dates on the forecast position cost element line must be within the followin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

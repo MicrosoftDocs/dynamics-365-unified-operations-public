@@ -18,7 +18,6 @@ ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTabl
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -135,3 +134,6 @@ Fulfilling the safety stock requirement transaction is deprioritized if the syst
 During the coverage phase of master planning, safety stock replenishment is no longer deprioritized. On-hand inventory can be used before any other demand types. During the delay calculation, new logic will be added to go over the delayed sales lines, BOM line requirements, and all the other demand types, to determine whether they could be delivered on time, provided that the safety stock is used. If the system identifies that it can minimize delays by using safety stock, then the sales lines or BOM lines will replace their initial coverage with the safety stock, and the system will trigger the replenishment for the safety stock instead.
 
 If the plan or the item is not set up for delayed calculation, then the safety stock constraint will have the same priority as any other demand types. This means there is a reserve of on-hand and other available inventory before other demand types.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14584
 ms.assetid: e54936f5-053b-4ed3-b778-42c7e9aeb7cf
@@ -116,3 +115,6 @@ Arnie changes the value in the **Use cash discount** field back to **Normal**, b
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

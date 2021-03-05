@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:TMSTransportationStatus,TMSTransportationStatusMaster
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -54,3 +53,6 @@ To map a transportation status to a carrier status, follow these steps:
 1. Select the transportation status code that you want to map to the selected shipping carrier's code.
 1. Enter the external code that is used by the shipping carrier.
 1. Close the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

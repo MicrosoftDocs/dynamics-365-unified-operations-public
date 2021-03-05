@@ -128,3 +128,6 @@ When you've finished reviewing and editing the translation files in XLIFF, you m
 ![Regenerated output](./media/dts-regenerate-output.png "Regenerated output")
 
 You can repeat the regeneration process as many times as you require.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

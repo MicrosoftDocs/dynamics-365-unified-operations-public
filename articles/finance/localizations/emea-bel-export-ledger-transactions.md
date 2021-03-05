@@ -17,7 +17,6 @@ ms.search.form: TaxReportExtraFieldsBE
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273103
 ms.search.region: Belgium
@@ -107,3 +106,6 @@ Here is an explanation of the columns in this file:
 
 > [!NOTE]
 > To post ledger transactions for customer invoices, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**. For vendor invoices, go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

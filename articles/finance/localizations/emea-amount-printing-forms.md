@@ -17,7 +17,6 @@ ms.search.form: Currency
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264254
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
@@ -58,3 +57,6 @@ To set up full and short names for currency units and subunits for a language, c
 
 5. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

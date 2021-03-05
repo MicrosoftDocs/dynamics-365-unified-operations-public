@@ -17,7 +17,6 @@ ms.search.form: EUSalesList
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -164,3 +163,6 @@ When you've completed the reporting process for a specific period (for example, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

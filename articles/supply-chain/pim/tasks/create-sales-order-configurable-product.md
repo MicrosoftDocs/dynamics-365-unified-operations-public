@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrde
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -56,3 +55,6 @@ This procedure shows how to apply a configuration template to a product on a sal
 
 ## Select the product configuration
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

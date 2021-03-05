@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -69,3 +68,6 @@ A new inbound load handling feature, *Over receipt of load quantities*, fixes th
 1. Over receipt of load quantities
 
 For more information, see [Post registered product quantities against purchase orders](inbound-load-handling.md#post-registered-quantities).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

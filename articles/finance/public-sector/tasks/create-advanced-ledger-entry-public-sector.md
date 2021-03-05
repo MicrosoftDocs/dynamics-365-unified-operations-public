@@ -17,7 +17,6 @@ ms.search.form: AdvancedLedgerEntry, AdvancedLedgerEntryCreate, ProjTableLookup,
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ Public-sector organizations can use advanced ledger entries to create, adjust, a
     * Add a debit or a credit amount to this line. If needed, click Add line to add more lines.  
 17. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

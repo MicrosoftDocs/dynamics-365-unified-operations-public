@@ -18,7 +18,6 @@ ms.search.form: ISRConcept_MX, ISRConceptMainAccount_MX, ISRRateTable_MX
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270644
 ms.assetid: bcc395db-7c00-4151-9340-e83415cb0882
@@ -82,3 +81,6 @@ You can generate a detailed ISR report, or the report can summarize each main ac
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcess
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
@@ -88,3 +87,6 @@ After you've finished configuring the call center channel and defining channel u
 > [!NOTE]
 > To use call center functionality, the configuration key for **Multiple ship-to** must be enabled. This configuration key can be found in the **Trade configuration** keys under **System Administration**\> **Setup** \> **License Configuration**. This is required due to call center functionality that performs various validations based on the delivery address configured at the sales order line level. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

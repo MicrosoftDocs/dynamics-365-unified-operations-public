@@ -17,7 +17,6 @@ ms.search.form: CustOpenTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
@@ -112,3 +111,6 @@ For vendor payments, the due-to and due-from transactions in the legal entity of
 
 ## Withholding tax
 The vendor account that is associated with the invoice is used to determine whether withholding tax should be calculated. If withholding tax applies, it is calculated in the legal entity that is associated with the invoice. If the legal entities use different currencies, the exchange rate from the legal entity that is associated with the invoice is used.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

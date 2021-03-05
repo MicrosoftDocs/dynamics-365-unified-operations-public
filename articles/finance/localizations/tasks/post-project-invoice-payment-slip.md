@@ -17,7 +17,6 @@ ms.search.form: CustTable, ProjProjectContractsListPage, ProjInvoiceTableCreate,
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
@@ -100,3 +99,6 @@ This procedure was created using the demo data company DEMF.
 56. Click OK.
 57. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

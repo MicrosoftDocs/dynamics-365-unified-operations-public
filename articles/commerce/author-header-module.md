@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,8 +33,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 In Dynamics 365 Commerce, a page header is configured as a page fragment that includes the header, promo banner, and cookie consent modules. 
 
@@ -124,3 +121,6 @@ To help ensure that a header appears on every page, follow these steps on every 
 [Site selector module](site-selector.md)
 
 [Store selector module](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -159,3 +158,6 @@ The account that is selected for each expense type is debited when a payment for
 
 > [!NOTE]
 > The offset account is selected at the lease level on the lines for the executory cost payment schedule. This offset account can associated with the vendor, or with a ledger account.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

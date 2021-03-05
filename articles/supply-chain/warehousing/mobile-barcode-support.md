@@ -17,7 +17,6 @@ ms.search.form: BarcodeSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -39,3 +38,6 @@ The Dynamics 365 Supply Chain Management - warehouse app has been tested with a 
 
 As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

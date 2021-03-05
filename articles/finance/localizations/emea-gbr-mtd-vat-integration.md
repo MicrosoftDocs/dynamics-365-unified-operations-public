@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: United Kingdom
@@ -1317,3 +1316,6 @@ These versions of the ER configurations must be imported and used in the followi
 | Version | Check-in build |
 |---------|----------------|
 | 10.0.8  | 10.0.**314.0** |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

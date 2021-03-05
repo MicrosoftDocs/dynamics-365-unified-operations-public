@@ -17,7 +17,6 @@ ms.search.form: WrkCtrResourceGroup, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -102,3 +101,6 @@ A work cell is a specific form of resource groups that can be used in lean manuf
 ## Save
 1. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 260624
 ms.assetid: 
@@ -60,3 +59,6 @@ Select a feature area to learn more about it.
 - [Manage your e-Commerce site](online-store-overview.md)
 - [Fraud protection](dev-itpro/DFP.md)
 - [Commerce development and extensibility](dev-itpro/dev-retail-home-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

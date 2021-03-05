@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263424
 ms.search.region: Poland
@@ -59,3 +58,6 @@ The **Calculation of line discount** parameter affects the following documents:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set Benefits management and Employee self-service parameters for all companies
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Before you can set up benefit plans in Microsoft Dynamics 365 Human Resources, you must configure Benefits management parameters. These parameters set default values, reason codes, and other options. 
 
 ## Configure general parameters
@@ -69,3 +71,6 @@ Before you can set up benefit plans in Microsoft Dynamics 365 Human Resources, y
 3. Select **Save**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

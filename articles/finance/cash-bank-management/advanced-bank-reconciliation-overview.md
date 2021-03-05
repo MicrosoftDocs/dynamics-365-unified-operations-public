@@ -18,7 +18,6 @@ ms.search.form: BankReconciliationMatchRule
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 22104
 ms.assetid: b0705653-1fa6-4d94-9728-bcf9fb387ad1
@@ -56,3 +55,6 @@ The advanced bank reconciliation feature lets you import bank statements. The im
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

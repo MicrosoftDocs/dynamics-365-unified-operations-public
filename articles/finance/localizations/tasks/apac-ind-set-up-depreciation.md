@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: India
@@ -40,3 +39,6 @@ This procedure walks you through setting up fixed assets parameters to calculate
 6. In the Max. acquisition value to avail full depreciation field, enter a number.
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: BankLCImport
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18271
 ms.assetid: aa594beb-bdb2-4117-91c2-d097d9401b0f
@@ -58,3 +57,6 @@ For more information, see the following topics:
 [Create a bank facility agreement for a letter of credit](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

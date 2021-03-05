@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: global
@@ -69,3 +68,6 @@ From the AppBar, a user can select an operation. Depending on the status of the 
 - **Edit** – Allows users to make changes to the selected customer order.
 
 - **Pick up** – Launches the pickup flow, which allows the user to choose the products to be picked up and creates the pickup sales transaction.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

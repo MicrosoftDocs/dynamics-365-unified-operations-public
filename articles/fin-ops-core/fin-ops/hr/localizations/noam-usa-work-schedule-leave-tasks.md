@@ -23,7 +23,7 @@ ms.custom: 221494
 ms.assetid: 60ce2f9f-73a7-4903-89da-6af7d681cc7a
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -100,3 +100,6 @@ Time off that is part of a benefit accrual plan, such as vacation time or sick t
 ## Next step
 
 The next step is to set up benefit accrual plans. For more information, see [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: AssetWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21481
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
@@ -72,3 +71,6 @@ Check out the how-to videos that are now available on the
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

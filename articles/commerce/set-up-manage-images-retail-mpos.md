@@ -18,7 +18,6 @@ ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
@@ -214,3 +213,6 @@ The catalog, category, employee, and customer images that must be used in Offlin
 5. Follow a similar process for other entities, such as Category, Employee, and Customer.
 
     [![Offline image](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

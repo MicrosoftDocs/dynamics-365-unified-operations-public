@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -77,3 +76,6 @@ To revaluate fixed asset cost and depreciation, follow these steps.
 11. Select **FA journal**, and then, on the **FA journal** page, select **Lines**. The **Voucher transaction** page shows revaluation transactions. You can correct these transactions as you require.
 12. Select **Post** \> **Post** to post the journal.
 13. Validate the balance in the value model (**Fixed asset (Russia)** \> **Fixed assets** \> **Value models** \> **Balance**). The values in the **Cost revaluation** and **Depreciation revaluation** fields are updated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

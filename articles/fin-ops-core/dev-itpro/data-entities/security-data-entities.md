@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security and data entities
-description: This topic provides information about security for data entities. Because data entities support entry point security, they are governed by the role-based security framework. The model for mapping data entity entry points to privileges and duties depends on the target scenarios. Therefore, data entities enable separate security configuration for each integration mode.
+description: This topic provides information about security for data entities.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 03/11/2019
@@ -257,3 +257,6 @@ There are several advantages to granting explicit access to TPF-protected fields
 
 - You can more easily discover who has access to sensitive data.
 - You help reduce the risk that someone will gain access to sensitive data by accident, because a role gains access only if you assign both a duty and a privilege to it.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

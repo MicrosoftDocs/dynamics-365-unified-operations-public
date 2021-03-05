@@ -16,7 +16,6 @@ ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanni
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -62,3 +61,6 @@ This topic shows how to use the load planning workbench to create a load for a s
 5. Select **Assign**.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

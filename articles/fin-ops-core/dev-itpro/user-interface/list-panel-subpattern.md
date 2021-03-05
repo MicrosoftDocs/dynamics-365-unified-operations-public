@@ -2,7 +2,7 @@
 # required metadata
 
 title: List Panel subpattern
-description: This article provides information about the List Panel form subpattern. Application teams use this subpattern to manage two lists that move data between each other.
+description: This article provides information about the List Panel form subpattern, which manages two lists that move data between each other.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -126,3 +126,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![List Panel example](./media/listpanel4.png)](./media/listpanel4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

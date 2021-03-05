@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -58,3 +57,6 @@ This procedure shows how to assign a product lifecycle state to a released produ
 2. In the list, mark the selected row.
 3. In the Product lifecycle state field, enter or select a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

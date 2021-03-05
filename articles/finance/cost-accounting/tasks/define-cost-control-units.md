@@ -17,7 +17,6 @@ ms.search.form: CAMCostControlUnit
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -44,3 +43,6 @@ This procedure shows how to define cost control units in the cost accounting led
 10. In the Dimension field, enter or select a value.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

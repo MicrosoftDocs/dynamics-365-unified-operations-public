@@ -18,7 +18,6 @@ ms.search.form: CustBillingClassification, CustBillingCode, CustParameters, Cust
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19551
 ms.assetid: b6f96e12-5614-4edf-9f67-47bf011b6ee7
@@ -79,3 +78,6 @@ During the settlement process, settlement attributes are considered first, then 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

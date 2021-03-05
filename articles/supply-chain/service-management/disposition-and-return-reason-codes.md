@@ -18,7 +18,6 @@ ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -59,3 +58,6 @@ Assign a disposition code when an item is received or during the physical inspec
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268704
 ms.search.region: Brazil
@@ -108,3 +107,6 @@ For sales transactions with taxation codes that have a fiscal value of **1. with
 -   [Brazilian withholding taxes](tasks/br-00009-brazilian-withholding-taxes.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

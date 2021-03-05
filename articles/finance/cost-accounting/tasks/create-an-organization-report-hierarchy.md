@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -99,3 +98,6 @@ Use this procedure to create a report hierarchy for organization reporting. The 
     * Select the dimension member that corresponds to the node.  
 59. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

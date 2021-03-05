@@ -17,7 +17,6 @@ ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -64,3 +63,6 @@ Create a product master for the predefined variants. The demo data company used 
 10. Click **Save**.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

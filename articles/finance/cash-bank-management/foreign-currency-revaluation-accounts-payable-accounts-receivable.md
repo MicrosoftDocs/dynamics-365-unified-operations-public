@@ -18,7 +18,6 @@ ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14211
 ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
@@ -71,3 +70,6 @@ A record is kept every time that you run a foreign currency revaluation. From th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

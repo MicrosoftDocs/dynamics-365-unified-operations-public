@@ -17,7 +17,6 @@ ms.search.form: AssetBookTable, AssetGroupBookSetup, AssetDepProfileChangeApply_
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -61,3 +60,6 @@ This procedure was created using the demo data company JPMF.
 1. Go to Fixed assets > Setup > Depreciation rate schedules > Years passed schedules.
     * The corresponding data has to exist for the depreciation profile update.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

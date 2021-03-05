@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -48,3 +47,6 @@ This procedure shows how to create a new product lifecycle state that excludes t
 5. In the list, mark the selected row.
 6. In the Product lifecycle state field, enter or select a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

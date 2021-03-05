@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -159,3 +158,6 @@ If you try to use the warehouse app to run picking work against a work ID that i
 ## Other blocked operations
 
 Any operations that modify work lines, work inventory transactions, or replenishment links that are related to work that is being split will fail, and the following error message will be shown: "The work with ID \#\#\#\# is currently being split."
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

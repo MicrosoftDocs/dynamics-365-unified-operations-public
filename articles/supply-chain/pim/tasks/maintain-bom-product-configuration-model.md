@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -61,3 +60,6 @@ Running this procedure requires an existing product configuration model. The Hig
     * Verify if any of the product dimensions are active,  and therefore must have a value or attribute assigned.  
 9. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

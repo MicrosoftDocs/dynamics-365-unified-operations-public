@@ -17,7 +17,6 @@ ms.search.form: CustTable, DirPartyQuickCreateForm,  DefaultDashboard
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
@@ -50,3 +49,6 @@ This procedure walks you through creating a customer with the fiscal information
     * If the Company type for this customer is Foreign, this filed is required.  
 13. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

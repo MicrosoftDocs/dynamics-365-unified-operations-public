@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Russia
@@ -111,3 +110,6 @@ When you create a reverse transaction, the information and amount of the origina
 
     > [!NOTE]
     > To change the status to **Scheduled**, run the reverse acquisition transaction for all value models. If the asset that was reversed was built from inventory components, transactions are created to record the return of the components to the inventory. When you reverse an acquisition transaction, the cost price of the returned components may differ from the current warehouse cost price. However, after inventory closure, the components will reflect the current pricing.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

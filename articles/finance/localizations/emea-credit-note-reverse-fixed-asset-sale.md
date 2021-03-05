@@ -18,7 +18,6 @@ ms.search.form: CustFreeCreditNote_W, CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266944
 ms.search.region: Estonia, Lithuania
@@ -47,3 +46,6 @@ The fixed asset disposal transactions, created when you posted the credit note, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -54,3 +53,6 @@ You can create monthly invoices for individual leases, or you can use a batch pr
 6. After the transaction is posted, you can view the transaction information and the carrying value of the lease liability by selecting **Liability transactions** in the lease book.
 
     In the payment schedule, the **Journal posted** check box will be selected, and the line will show the invoice journal number. After a payment journal and an entry for that journal have been created, you must reverse the entry before it can be re-created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

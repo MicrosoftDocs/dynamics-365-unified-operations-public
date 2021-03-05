@@ -18,7 +18,6 @@ ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
@@ -46,3 +45,6 @@ Before you can offer products for resale in your commerce channels, you must cre
 4. **Add products to assortments.** An assortment represents a collection of products that you offer in your channels. You can define one or more assortments, and each product can be assigned to one or more assortments. To assign products to channels, you assign the assortments to those channels. When you create an assortment, you can add products that haven't yet been released to a legal entity. However, you must release the products to a legal entity before those products can be made available to the channels.
 5. **Add products to navigation hierarchies.** Before products can be browsed online or in point of sale (POS), they must be categorized in a Commerce navigation hierarchy.
 6. **Add products to catalogs.** Although this step is optional for POS, online stores require that products be included in at least one catalog.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

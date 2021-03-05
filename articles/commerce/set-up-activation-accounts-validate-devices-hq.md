@@ -18,7 +18,6 @@ ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPe
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 20471
 ms.assetid: 5394e10c-539c-4e26-a097-504c6950cd56
@@ -91,3 +90,6 @@ Before handing an activation account to a worker, an IT Pro must run the Validat
 9. Make sure that the register and store have a screen layout (checked by validation).
 10. Make sure that a primary address is set up for the legal entity.
 11. Make sure that the electronic funds transfer (EFT) configuration value is present.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: WHSRFMenuItem
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -39,3 +38,6 @@ This procedure shows you how to create a mobile device menu item for license pla
 5. In the Mode field, select 'Indirect'.
 6. In the Activity code field, select 'Consolidate license plates'.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

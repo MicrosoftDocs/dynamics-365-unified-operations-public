@@ -2,8 +2,8 @@
 # required metadata
 
 title: Integrate procurement between Supply Chain Management and Field Service
-description: This topic provides information about how dual-write integration supports purchase order creation and updates from both Microsoft Dynamics 365 Supply Chain Management and Dynamics 365 Field Service.
-author: mkirknel
+description: This topic describes how dual-write integration supports purchase order creation and updates from both Supply Chain Management and Field Service.
+author: RichardLuan
 manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
@@ -18,7 +18,7 @@ audience: Application User
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
 ---
@@ -190,6 +190,10 @@ Here are the situations where you might use the **Sync** function:
 - If you aren't sure whether a change might be the second successive change from Dataverse, it might make sense to run the **Sync** function.
 - If you receive an error message about updating a value from Supply Chain Management, run the **Sync** function, and then retry the update in Dataverse.
 
+## Cancelling the posting process
+
+If the product receipt posting process is cancelled during processing, then dual-write might create a product receipt row in Dataverse, but not create a product receipt row in Supply Chain Management. This situation happens because dual-write does not support distributed transactions.
+
 ## Templates
 
 The following templates are available for the integration of procurement-related documents.
@@ -213,3 +217,6 @@ The following templates are available for the integration of procurement-related
 [!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
 
 [!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

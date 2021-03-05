@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -41,3 +40,6 @@ Constraint-based product configuration models use components as building blocks 
 7. In the Description field, type a value.
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

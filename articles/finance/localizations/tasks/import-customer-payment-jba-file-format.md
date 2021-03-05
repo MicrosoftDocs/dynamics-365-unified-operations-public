@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, SrsReportViewerF
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -57,3 +56,6 @@ This procedure was created using the demo company data JPMF.
 11. In the Account field, specify the values 'JPMF-000001'.
 12. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

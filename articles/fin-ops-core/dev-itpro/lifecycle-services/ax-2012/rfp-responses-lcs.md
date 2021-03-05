@@ -2,7 +2,7 @@
 # required metadata
 
 title: Request for proposals (RFP) responses
-description: The RFP responses page contains common questions found on Requests for Proposals (RFPs), and recommended answers. This section of Microsoft Dynamics Lifecycle Services is only available to partners, in Pre-sales projects.
+description: The RFP responses page contains common questions found on Requests for Proposals (RFPs), and recommended answers.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -56,3 +56,6 @@ You can search for a common question, or browse and filter by functionality and 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

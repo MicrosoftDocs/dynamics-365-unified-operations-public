@@ -18,7 +18,6 @@ manager: annbe
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway
@@ -123,3 +122,6 @@ You can use the designer to review or change the configuration that you selected
 
 > [!NOTE]
 > You can combine several sales tax payments and print one combined report/XML file that includes summarized data for all selected records. You can combine only records that are related to one settlement period, and that have the same **From date** and **To date** values. For example, you can combine an **Original version** record and its **Corrections/Latest corrections** record.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

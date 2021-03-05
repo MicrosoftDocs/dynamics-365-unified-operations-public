@@ -17,7 +17,6 @@ ms.search.form: CustParameters, BankBillOfExchangeTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264644
 ms.search.region: Spain
@@ -62,3 +61,6 @@ If the **Date treatment on bill of exchange journal** parameter is set to **Yes*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: InventClosing
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 61973
 ms.assetid: c210c882-6849-4704-b78c-a777dd6cfdb6
@@ -91,3 +90,6 @@ Occasionally, you might have to reverse a completed inventory close to return se
 > [!NOTE] 
 > Only the last inventory period that was closed can be reopened. To reverse an earlier inventory close, you must reverse each subsequent inventory close one at a time, starting with the most recent close.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

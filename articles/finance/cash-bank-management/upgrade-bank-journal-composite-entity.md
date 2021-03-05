@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221654
 ms.assetid: adb8146b-eb21-4be2-a338-a5b299fcc9a0
@@ -61,3 +60,6 @@ Use the following steps to add the additional BankTransactionType field to the c
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ The demo data company used to create this task is USMF. This recording is intend
 7. Click the arrow to add the selected available teams to the address book.
 8. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

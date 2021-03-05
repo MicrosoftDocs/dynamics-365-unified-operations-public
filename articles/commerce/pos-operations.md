@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 
@@ -214,3 +213,6 @@ The following columns specify where the operations can be invoked:
 § When the POS is offline, only transactions in the current offline database can be recalled for return.
 
 \*\* When the POS is offline, only transactions in the current offline channel database are shown in the journal.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

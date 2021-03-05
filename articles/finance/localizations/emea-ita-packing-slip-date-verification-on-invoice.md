@@ -17,7 +17,6 @@ ms.search.form: CustPackingSlipJournal
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263824
 ms.search.region: Italy
@@ -42,3 +41,6 @@ For legal entities with primary addresses in Italy there is a packing slip date 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

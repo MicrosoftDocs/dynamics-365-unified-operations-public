@@ -17,7 +17,6 @@ ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLooku
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -70,3 +69,6 @@ This procedure focuses on the setup needed to create a kanban rule using a minim
 5. Expand the Kanbans section.
     * Notice that a kanban was created to transfer the needed material to warehouse 12.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

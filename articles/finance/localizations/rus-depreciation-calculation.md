@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -106,3 +105,6 @@ Use the **Depreciation bonus** page to calculate the depreciation bonus for fixe
 
 - [Set up depreciation (Russia)](rus-depreciation-setup.md)
 - [Depreciation methods (Russia)](rus-depreciation-methods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

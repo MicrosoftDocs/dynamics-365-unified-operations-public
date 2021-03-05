@@ -18,7 +18,6 @@ ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -135,3 +134,6 @@ You can view the invoice total on the **Pending vendor invoices** page by enabli
 - [Key invoice data into accounts payable using an approval journal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Key invoice data into the AP system using invoice pool](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Record a vendor invoice in the invoice journal](tasks/record-vendor-invoice-invoice-journal.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

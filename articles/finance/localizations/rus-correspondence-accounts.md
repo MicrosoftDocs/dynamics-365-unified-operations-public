@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -138,3 +137,6 @@ Use the manual transaction correspondence function to define a relationship betw
 8. On the Action Pane, select **Refresh data** to update the data on the **Manual correspondence** page.
 
 To remove the correspondence relations for a voucher, select the voucher in the left pane, and then, on the Action Pane, select **Remove ledger bond**. Then select **Refresh data** to update the data on the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

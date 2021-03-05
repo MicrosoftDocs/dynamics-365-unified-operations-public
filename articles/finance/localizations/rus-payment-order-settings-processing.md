@@ -15,7 +15,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia # ms.search.industry: 
@@ -132,3 +131,6 @@ To run the report, complete the following steps.
 4. Define the following filters for payment orders: **Payment order status**, **Curreny code**, **Bank account** and **Electronic payment** remark (All, Electronic, Printout form).
 5. Click **OK** to generate the report.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityWizard, LeanWorkCe
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -96,3 +95,6 @@ Prerequisites:
 12. Click Finish.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

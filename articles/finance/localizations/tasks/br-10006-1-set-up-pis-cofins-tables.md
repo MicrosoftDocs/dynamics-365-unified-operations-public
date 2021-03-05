@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -50,3 +49,6 @@ Before the PIS and COFINS tax assessment can be created, you must set up the tab
 14. Click Save.
 15. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

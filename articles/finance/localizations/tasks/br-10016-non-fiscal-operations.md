@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -67,3 +66,6 @@ Use this procedure to create non-fiscal document transactions that will be inclu
 33. Click Sync.
 34. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

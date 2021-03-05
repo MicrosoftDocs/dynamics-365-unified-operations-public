@@ -18,7 +18,6 @@ ms.search.form: BankPositivePayFormat
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 88433
 ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
@@ -170,3 +169,6 @@ If you must change a positive pay file, you can recall it. On the **Positive pay
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 271523
 ms.search.region: Spain
@@ -278,3 +277,6 @@ Notice the following details:
 ![Declaration 347 report format (ES) generated data](media/8_Declaration347.png)
 
 Notice that only the line that has corrections is printed on the report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -163,3 +162,6 @@ This issue occurs when the inventory transaction quantity is specified as a deci
 
 > [!IMPORTANT]
 > We strongly recommend that you carefully edit the script as required for your environment, test it in a test environment, and then check the resulting data before you run the script in a production environment.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

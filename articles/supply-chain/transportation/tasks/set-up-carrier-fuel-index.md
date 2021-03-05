@@ -16,7 +16,6 @@ ms.search.form: TMSFuelIndexRegion,TMSCarrierFuelIndexTable,TMSFuelIndex
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -68,3 +67,6 @@ This guide shows how to create a fuel index region, a fuel index and a carrier f
 12. In the list, click the link in the selected row.
 13. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

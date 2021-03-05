@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: India
@@ -57,3 +56,6 @@ This procedure walks you through defining a shift type and industry for a book a
 23. Close the page.
 24. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

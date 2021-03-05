@@ -16,7 +16,6 @@ ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHS
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -387,3 +386,6 @@ After all the required elements are in place, you can set up slotting to run aut
 1. Set the recurrence to run automatically, if you want.
 
 For the exercises in the scenario, do **not** set up automatic slotting.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

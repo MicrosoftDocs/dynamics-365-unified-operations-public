@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, Intras
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -117,3 +116,6 @@ This procedure was created using the demo data company DEMF.
     * For example, select 'Dispatches'.  
 27. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

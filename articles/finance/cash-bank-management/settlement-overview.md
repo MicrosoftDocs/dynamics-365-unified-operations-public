@@ -18,7 +18,6 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVen
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14551
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
@@ -83,3 +82,6 @@ When you try to settle a transaction, you might notice a symbol that indicates t
 ## Additional resources
 
 - [Settle remainder](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

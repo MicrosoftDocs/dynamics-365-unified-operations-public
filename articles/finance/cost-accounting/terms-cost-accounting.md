@@ -19,7 +19,6 @@ ms.search.form: CAMCostAccountingLedger
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
@@ -212,3 +211,6 @@ Statements are views for the managers who are responsible for controlling costs.
 Versions are used to simulate, view, and compare various outcomes. By default, all actual costs are viewed in one base version that is known as *actual*. For budgets and calculations, you can work with as many versions as you require. For example, you can import budget data into an original version and then revise the budget in a revised version. For calculations, you can create multiple versions. In these various versions, you can then create calculations by using different calculation rules that will be applied for cost allocation.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

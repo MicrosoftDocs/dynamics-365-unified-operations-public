@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -78,3 +77,6 @@ Advanced editor is enabled for Global Tax Engine formulas/conditions to improve 
 -	Tax information is not editable on the **Sales order after delivery** page.
 -	The invoice number does not show in Posted withholding tax inquiry.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

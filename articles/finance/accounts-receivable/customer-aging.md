@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
@@ -149,3 +148,6 @@ When you generate this report, the following default parameters are displayed. Y
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

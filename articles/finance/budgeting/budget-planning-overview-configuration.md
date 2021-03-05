@@ -3,7 +3,7 @@
 
 title: Budget planning overview
 description: This topic describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -18,7 +18,6 @@ ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
@@ -210,3 +209,6 @@ You can also use the **Actions** menu to create a new process by copying an exis
 Another useful command on the **Actions** menu is **View budget process status**. This command graphically shows the budget plans in a process, together with relevant data, such as the workflow status of the plans, summaries by amount and unit, and one-click navigation to the budget plans themselves.
 
 [![Budget planning process status](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

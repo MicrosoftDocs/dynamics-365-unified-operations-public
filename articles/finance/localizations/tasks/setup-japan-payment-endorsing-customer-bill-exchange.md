@@ -17,7 +17,6 @@ ms.search.form: CustPosting,  CustParameters
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -56,3 +55,6 @@ This task was recorded using the demo data company JPMF.
 5. In the list, click the link in the selected row.
 6. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

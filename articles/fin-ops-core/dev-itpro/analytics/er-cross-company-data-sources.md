@@ -81,3 +81,6 @@ Download the following files to complete the task guide:
 
 - [ER model configuration - CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER format configuration - CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

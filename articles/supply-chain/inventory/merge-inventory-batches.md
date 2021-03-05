@@ -18,7 +18,6 @@ ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
@@ -145,3 +144,6 @@ You can approve the inventory journal for the batch merge from the **All batch m
 
 ## After I merged a catchweight item, why can’t I see the catchweight information in the inventory journal?
 You can merge batches of catch-weight items just like all other items. However, the catch-weight information doesn't appear in the inventory journal. We recommend that you verify the catch-weight information before you transfer the batch merge to the inventory journal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

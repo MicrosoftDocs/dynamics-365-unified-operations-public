@@ -17,7 +17,6 @@ ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLe
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -86,3 +85,6 @@ This procedure steps through the year end close process that transfers balances 
 23. The year-end close defaults to run in batch. It's best practice for long-running processes to run in batch mode. This is typically one of those processes, which is why the default is to use batch mode.  
 24. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

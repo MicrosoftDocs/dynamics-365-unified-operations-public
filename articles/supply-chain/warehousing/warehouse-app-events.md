@@ -18,7 +18,6 @@ ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -85,3 +84,6 @@ To reset a failed warehouse app event message:
 1. Continue working until all relevant messages are reset.
 
 You can also remove a **Failed** event message by using the **Delete** option on the **Warehouse app event messages** toolbar.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

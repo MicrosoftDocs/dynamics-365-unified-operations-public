@@ -17,7 +17,6 @@ ms.search.form: CAMCostBehaviorRule
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -89,3 +88,6 @@ Cost behavior is the classification of costs as either fixed or variable. A poli
 15. In the Cost control unit field, enter or select a value.
 16. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: TMSAccessorialAssignment
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ This procedure shows how to set up an accessorial assignment. This is typically 
 14. In the Accessorial fee field, enter a number.
 15. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

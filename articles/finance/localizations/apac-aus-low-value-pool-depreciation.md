@@ -17,7 +17,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11104
 ms.assetid: 58d2b515-ccf2-4a23-9880-73bd8ef491a2
@@ -71,3 +70,6 @@ If you have a low-cost asset that has a net book value of AUD 800.00, the first-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

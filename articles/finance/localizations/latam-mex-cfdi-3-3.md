@@ -17,7 +17,6 @@ ms.search.form: CustPosting, VendParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Mexico
@@ -439,3 +438,6 @@ Specific complements are generated for the following withholding types:
 ### Inquire CFDI withholding documents
 
 After the CFDI withholding document is issued to PAC, you can view the status and complete the related actions by selecting **Accounts payables > Inquire > Journals > CFDI withholding journal**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

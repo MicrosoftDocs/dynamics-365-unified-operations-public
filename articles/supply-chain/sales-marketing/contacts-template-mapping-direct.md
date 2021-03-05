@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -146,3 +145,6 @@ The following illustrations show an example of a template mapping in Data integr
 [Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales](sales-invoice-template-mapping-direct.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

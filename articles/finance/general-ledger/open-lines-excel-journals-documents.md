@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62213
 ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3
@@ -60,3 +59,6 @@ To add financial dimensions to a template, additional changes are required. For 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

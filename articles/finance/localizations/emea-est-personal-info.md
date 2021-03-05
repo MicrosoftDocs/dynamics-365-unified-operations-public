@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Estonia
@@ -45,3 +44,6 @@ All companies must gather data about employees, customers, and vendors, and also
 ## Additional resources
 
 - [Resources for responding to a GDPR data request](../../dev-itpro/gdpr/gdpr-home-page.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

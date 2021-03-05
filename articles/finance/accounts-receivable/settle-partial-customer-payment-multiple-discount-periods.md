@@ -18,7 +18,6 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14471
 ms.assetid: b633a7c4-c18d-42e7-91cc-adcdc8a3ba98
@@ -103,3 +102,6 @@ The invoice balance is now 0.00. Arnie views the information on the **Customer t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

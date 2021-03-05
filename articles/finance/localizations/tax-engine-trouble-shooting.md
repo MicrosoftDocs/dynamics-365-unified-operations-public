@@ -17,7 +17,6 @@ ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: Application User
 # ms.devlang:
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.search.region: India
 # ms.search.industry:
@@ -122,3 +121,6 @@ To work around this issue, follow these steps.
     ![Add a new version of the sales tax hierarchies](media/IND-GST-add-new-hierarchy.png)
 
 2. On the **Maintain setoff hierarchy profiles** page, make the new version available by following the steps in [Set up a sales tax hierarchy](apac-ind-GST-set-up-activate-tax-hierarchy-tree.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

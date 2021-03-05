@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -145,3 +144,6 @@ You can't report the error quantity on a production order unless you also report
 ## Can I trace the serial numbers of finished goods against the serial numbers of consumed goods?
 
 You can't trace the serial numbers of finished goods against the serial numbers of material that a production order consumes to make those finished goods. This scenario isn't currently supported. The workaround is to create production orders for a quantity of 1.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

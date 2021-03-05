@@ -18,7 +18,6 @@ ms.search.form: SMATimeAgreement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -45,3 +44,6 @@ You can use time windows to optimize the scheduling of service order lines.
 ## Related topics
 
 [Time windows](time-windows.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

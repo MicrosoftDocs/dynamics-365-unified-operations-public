@@ -18,7 +18,6 @@ ms.search.form: WrkCtrCapability, WrkCtrTable, WrkCtrCapRes, WrkCtrApplicableRes
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29961
 ms.assetid: 30e38233-2a64-4070-911f-8ffd78dd8281
@@ -62,3 +61,6 @@ When you have operations resources of the **Human resources** type that are link
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

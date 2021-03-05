@@ -17,7 +17,6 @@ ms.search.form: AssetPosting, AssetBook, AssetBookTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30321
 ms.search.region: France
@@ -51,3 +50,6 @@ On the **Fixed asset posting profiles** page, you set up general ledger accounts
 ## Additional resources
 
 - [Fixed asset value model and depreciation book merge](../fixed-assets/fixed-asset-value-model-depreciation-book-merge.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

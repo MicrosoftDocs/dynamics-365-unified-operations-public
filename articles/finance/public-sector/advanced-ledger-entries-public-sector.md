@@ -18,7 +18,6 @@ ms.search.form: AdvancedLedgerEntry, BudgetControlConfiguration, LedgerParameter
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19511
 ms.assetid: 3db0233e-d767-4dc0-b008-733098b6ca70
@@ -54,3 +53,6 @@ Create an advanced ledger entry, select the **Reversing entry** option, and ente
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

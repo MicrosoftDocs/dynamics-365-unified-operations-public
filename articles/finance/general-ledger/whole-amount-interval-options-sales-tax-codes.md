@@ -18,7 +18,6 @@ ms.search.form: TaxData, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 5624
@@ -96,3 +95,6 @@ For more information, see [Sales tax rates based on the Marginal base and Calcul
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

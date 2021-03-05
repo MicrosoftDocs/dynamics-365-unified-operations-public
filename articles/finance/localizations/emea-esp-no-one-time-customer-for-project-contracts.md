@@ -18,7 +18,6 @@ ms.search.form: CustTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264394
 ms.search.region: Spain
@@ -51,3 +50,6 @@ A one-time customer is a customer who does not have a long-term relationship wit
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

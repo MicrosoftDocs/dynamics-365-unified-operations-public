@@ -285,3 +285,6 @@ If any of the previously listed configurations are missing in the configuration 
 6. In the **Bank account** field, select **DEMF OPER**.
 7. In the **Generate payments** dialog box, select **OK**.
 8. In the **Electronic report parameters** dialog box, select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

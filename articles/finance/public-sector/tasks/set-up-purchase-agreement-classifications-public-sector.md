@@ -17,7 +17,6 @@ ms.search.form: AgreementClassification
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -46,3 +45,6 @@ This procedure was created for the French public sector using the PSUS demo comp
 8. Optional: Select the Activities option to include information about tasks and milestones.
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

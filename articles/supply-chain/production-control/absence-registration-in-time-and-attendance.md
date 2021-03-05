@@ -17,7 +17,6 @@ ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -113,3 +112,6 @@ For example, a worker clocks in at 10 AM and selects an absence code that indica
 ### Calculate and approve absence
 
 - Select **Time attendance** &gt; **Review and approve** &gt; **Approve or Calculate**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

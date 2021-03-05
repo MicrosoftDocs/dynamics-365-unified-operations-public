@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
@@ -255,3 +254,6 @@ To help guarantee that the correct values are entered for your business, you mus
 ## See also
 
 For more discussion, see the original [More about (dynamic) negative days](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/) blog post.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

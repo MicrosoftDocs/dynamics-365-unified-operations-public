@@ -17,7 +17,6 @@ ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseReve
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -46,3 +45,6 @@ This task was created using the demo data company JPMF.
 6. Click Voucher.
     * Verify that an accounting voucher was generated for the reversal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Understand Date and Time fields
-description: Understand what to expect when using Date and Time fields in Microsoft Dynamics 365 Human Resources. Gain clarity in what to expect when interacting with Date and Time data in a form in Human Resources, an external source, or the Common Data Service.  
-author: Darinkramer
-manager: AnnBe
+description: Understand what to expect when using Date and Time fields in Microsoft Dynamics 365 Human Resources.
+author: andreabichsel
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -32,9 +32,11 @@ ms.dyn365.ops.version: Human Resources
 
 # Understand Date and Time fields
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-**Date and Time** fields are a fundamental concept in Dynamics 365 Human Resources. It's important to understand how to work with **Date and Time** data in Dynamics 365 Human Resources forms, Common Data Service, and external sources.
+**Date and Time** fields are a fundamental concept in Dynamics 365 Human Resources. It's important to understand how to work with **Date and Time** data in forms, Dataverse, and external sources.
 
 ## Understanding the difference between Date and Date and Time field data types
 
@@ -46,39 +48,39 @@ When displaying data in a **Date and Time** field, Human Resources adjusts the d
 
 ## Understanding Date and Time fields in forms 
 
-When entering data in a **Date and Time** field, the data displayed on the screen isn't the same as the data stored in the database if the user's time zone isn't set to Coordinated Universal Time (UTC). Data in **Date and Time** fields is always stored as UTC.
+**Date and Time** data displayed on the screen isn't the same as the data stored in the database if the user's time zone isn't set to Coordinated Universal Time (UTC). Data in **Date and Time** fields is always stored as UTC.
 
-[![Worker form](./media/worker-form.png)](./media/worker-form.png)
+[![Worker form UTC](./media/worker-form.png)](./media/worker-form.png)
 
 ## Understand Date and Time fields in the database 
 
-When Human Resources writes a **Date and time** value to the database, it stores the data in UTC. This allows users to see any **Date and Time** data relative to the time zone defined in their user options.
+When Human Resources writes a **Date and Time** value to the database, it stores the data in UTC. This allows users to see any **Date and Time** data relative to the time zone defined in their user options.
  
-In the example above, the start time is a point in time, not a particular date. By changing the time zone of the logged in user from GMT +12:00 to GMT UTC, the same record just created shows 04/30/2019 12:00:00 instead of 05/01/2019 12:00:00.
+In the example above, the start time is a point in time, not a particular date. By changing the time zone of the logged in user from GMT +12:00 to GMT UTC, the same record shows 04/30/2019 12:00:00 instead of 05/01/2019 12:00:00.
   
 In the example below, employee 000724’s employment becomes active at the same time regardless of time zone. The employee will be active on 04/30/2019 in the GMT time zone, which is the same as 05/01/2019 in GMT+12:00 time zone. Both refer to the same point in time and not a particular date. 
 
-[![Worker form](./media/worker-form2.png)](./media/worker-form2.png)
+[![Worker form GMT](./media/worker-form2.png)](./media/worker-form2.png)
 
-## Date and Time data in Data Management Framework, Excel, Common Data Service, and Power BI 
+## Date and Time data in Data Management Framework, Excel, Dataverse, and Power BI 
 
-The Data Management Framework, Excel Add-In, Common Data Service, and Power BI reporting are all designed to interact with data directly on the database level. Since there is no client to adjust **Date and Time** data to the time zone of the user, all **Date and Time** values are in UTC, which can lead to some incorrect assumptions when entering or viewing data.  
+The Data Management Framework, Excel Add-In, Dataverse, and Power BI reporting are all designed to interact with data directly on the database level. Since there's no client to adjust **Date and Time** data to the time zone of the user, all **Date and Time** values are in UTC, which can lead to some incorrect assumptions when entering or viewing data.  
  
-**Date and Time** data that is submitted via DMF, Excel, or Common Data Service is assumed to be in UTC by the database. This can cause some confusion when the submitted **Date and Time** value doesn't display as expected because the user viewing the data doesn't have their user time zone  set to UTC. 
+**Date and Time** data submitted via DMF, Excel, or Dataverse is assumed to be in UTC by the database. This can cause some confusion when the submitted **Date and Time** value doesn't display as expected because the user viewing the data doesn't have their user time zone  set to UTC. 
  
-The same thing can happen in reverse when data is exported. The **Date and Time** data in the exported DMF entity can be different then what is displayed in the Dynamics client. 
+The same thing can happen in reverse when data is exported. The **Date and Time** data in the exported DMF entity can be different than what is displayed in the Dynamics client. 
  
-When using external sources like DMF to view or author data, it is important to keep in mind that the **Date and Time** values are considered by default to be in UTC regardless of the time zone of the user's computer or their current user time zone settings. 
+When using external sources like DMF to view or author data, keep in mind that the **Date and Time** values are considered by default to be in UTC regardless of the time zone of the user's computer or their current user time zone settings. 
 
 ## Examples of the same record being displayed in different product areas 
 
 **Human Resources with user time zone set to UTC**
 
-[![Worker form](./media/worker-form3.png)](./media/worker-form3.png)
+[![Worker form set to UTC](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Human Resources with user time zone set to GMT +12:00** 
 
-[![Worker form](./media/worker-form4.png)](./media/worker-form4.png)
+[![Worker form set to GMT](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel Via OData**
 
@@ -90,13 +92,16 @@ When using external sources like DMF to view or author data, it is important to 
 
 **DMF Export**
 
-[![DMF Staging](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF Export](./media/DMFexport.png)](./media/DMFexport.png)
 
-**Excel via Common Data Service**
+**Excel via Dataverse**
 
-[![Excel via Common Data Service](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel via Dataverse](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## See also
 
 [Date and time data](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
 [User preferred time zones](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

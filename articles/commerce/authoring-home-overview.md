@@ -17,7 +17,6 @@ ms.technology:
 audience: Application USer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -126,3 +125,6 @@ After the authoring tool is loaded, you can select **Home** to return to the aut
 [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
 
 [Manage Content Security Policy (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

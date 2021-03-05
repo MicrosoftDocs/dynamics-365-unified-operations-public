@@ -18,7 +18,6 @@ ms.search.form: SMASubscriptionTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -126,3 +125,6 @@ When the transactions for March 2011 are invoiced, the sales price of EUR 200 is
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

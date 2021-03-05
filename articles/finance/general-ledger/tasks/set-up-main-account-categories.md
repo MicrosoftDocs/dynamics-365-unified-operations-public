@@ -17,7 +17,6 @@ ms.search.form: MainAccountCategory, MainAccountCategoryLink
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -45,3 +44,6 @@ This topic explains how to set up main account categories. Main account categori
 3. Select or clear the **Linked** option to choose the main accounts.
 4. Select **OK**.
 5. Select **Yes**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

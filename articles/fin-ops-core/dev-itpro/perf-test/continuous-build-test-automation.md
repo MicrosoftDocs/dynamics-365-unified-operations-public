@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy and use an environment that supports continuous build and test automation
+title: Deploy and use a continuous build and test automation environment
 description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deploy and use an environment that supports continuous build and test automation
+# Deploy and use a continuous build and test automation environment
 
 [!include [banner](../includes/banner.md)]
 
@@ -173,3 +173,6 @@ Select specific completed build and view success/ failure details.
 [![View details of build success or failure](./media/build10-1024x446.jpg)](./media/build10.jpg) Click on Test link to visualize test execution failure. 
 
 [![Visualize test execution failure](./media/build11-1024x455.jpg)](./media/build11.jpg)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

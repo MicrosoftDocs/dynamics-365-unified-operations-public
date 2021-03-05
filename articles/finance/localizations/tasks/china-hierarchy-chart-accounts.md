@@ -17,7 +17,6 @@ ms.search.form: LedgerChartOfAccounts, LedgerChartOfAccountsTreeLevel_CN, Ledger
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
@@ -60,3 +59,6 @@ This procedure was created using the demo data company CNMF. This procedure is f
     * Repeat the last three steps to create additional sub accounts, as necessary.  
 23. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

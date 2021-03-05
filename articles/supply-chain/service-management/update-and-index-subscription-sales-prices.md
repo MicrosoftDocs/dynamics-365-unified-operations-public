@@ -18,7 +18,6 @@ ms.search.form: SMASubscriptionTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -60,3 +59,6 @@ The base price or index of the subscription is updated with the specified value.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

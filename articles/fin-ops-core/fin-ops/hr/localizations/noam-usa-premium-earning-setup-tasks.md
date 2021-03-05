@@ -23,7 +23,7 @@ ms.custom: 221084
 ms.assetid: 50a441e2-b5b4-4ff0-9fc3-472c3b85c46f
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -231,3 +231,6 @@ You must create an earning code to calculate and pay the premium amounts for eac
 ## Additional resources
 
 [Set up earning codes and earning code groups](noam-usa-earning-code-group-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

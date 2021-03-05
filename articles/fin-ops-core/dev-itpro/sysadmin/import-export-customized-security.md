@@ -93,3 +93,6 @@ The following entities hold the customized, role-based security (that is, privil
 
 - [Data import and export jobs overview](../data-entities/data-import-export-job.md)
 - [Move all user and security settings with data entities (blog post)](https://dynamicspedia.com/2020/05/move-all-user-and-security-settings-with-data-entities/), by Andr&eacute; Arnaud de Calavon
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

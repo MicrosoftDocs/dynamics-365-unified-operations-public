@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -46,3 +45,6 @@ For example, a sales order has two items: one for delivery and one for pickup. B
 ### Issue resolution
 
 The release status applies only to order lines where the items are enabled for warehouse management. Therefore, the release status remains *Partially released* in this scenario. Microsoft has evaluated this issue and has determined that it's a feature limitation. An extension could be added as part of the packing slip and invoicing process to update the release status.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

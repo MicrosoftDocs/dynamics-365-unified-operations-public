@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil 
@@ -80,3 +79,6 @@ The new fields, **Responsible for withholding the ICMS-ST**, **ICMS-ST collectio
 
 > [!NOTE]
 > During the receipt of a fiscal document, when the ICMS-ST is taxable by using taxation code 10, even though it is entered in the **Responsible for withholding ICMS-ST** field, the financial and costing information is not included in the scope of localization.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Hungary
@@ -42,4 +41,8 @@ This topic provides links to documentation resources for Hungary.
 - [Tax reimbursement documents](emea-hun-tax-reimbursement-docs.md)
 - [Year-end close](emea-cze-hun-year-end.md)
 - [Online invoicing system](emea-hun-online-invoicing.md)
+- [Sales tax reports for Hungary](emea-hun-sales-tax-reports.md)
 - [Deferred sales tax calculations](emea-hun-deferred-vat.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

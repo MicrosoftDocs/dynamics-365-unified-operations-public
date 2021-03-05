@@ -18,13 +18,12 @@ ms.search.form: EntAssetRoundTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -122,3 +121,6 @@ The two illustrations below show a schedule job in the **Schedule maintenance ro
 - You can set up a batch job on the **Run in the background** FastTab to schedule rounds at regular intervals.  
 - If a round is included in several work order pools (refer to [Work order pools](../work-orders/work-order-pools.md)), one record is shown for each pool in **Open maintenance schedule pools**. This is done to optimize the filtering options for work order pools.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

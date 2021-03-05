@@ -18,13 +18,12 @@ ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleEx
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -143,3 +142,6 @@ To view and work with the gantt chart:
     - To reschedule a displayed work order, select and then drag it to the appropriate new date and time.
 
 1. If you made any changes, select **Save** on the Action Pane to save them.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

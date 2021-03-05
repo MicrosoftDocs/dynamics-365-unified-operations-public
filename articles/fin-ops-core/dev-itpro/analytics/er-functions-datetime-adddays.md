@@ -72,3 +72,6 @@ A positive value for `days` yields a future date. A negative value yields a past
 ## Additional resources
 
 [Date and time functions](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,13 +18,12 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -70,3 +69,6 @@ The following procedure describes the relation between assets, work orders, work
 
 7. To see an overview of the projects associated with a fixed asset, select **Fixed assets** > **Fixed assets** > **Fixed assets**, and then, in the **Fixed asset number** field, select the link for the fixed asset to open the details view. Expand the **Related information** pane on the right side of the page, and select the **Associated projects** FastTab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

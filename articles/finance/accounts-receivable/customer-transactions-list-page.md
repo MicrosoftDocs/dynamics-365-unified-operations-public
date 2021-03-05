@@ -17,7 +17,6 @@ ms.search.form:  CustTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -101,3 +100,6 @@ Each field has a different effect on the transaction when you edit it:
 - **Edit the cash discount terms** - The cash discounts are changed, based on the base date and the cash discount terms.
 
 When you've finished editing the payment settings, select **Close** to save your changes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

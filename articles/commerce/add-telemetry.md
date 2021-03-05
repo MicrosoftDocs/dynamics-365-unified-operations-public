@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -126,3 +125,6 @@ To add an external script directly to a template in site builder, follow these s
 [Add a copyright notice](add-copyright-notice.md)
 
 [Add languages to your site](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

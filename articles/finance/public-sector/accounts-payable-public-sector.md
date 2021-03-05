@@ -18,7 +18,6 @@ ms.search.form: BudgetParameters, CustParameters, LedgerJournalTable, OMLegalEnt
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19661
 ms.assetid: b4c903dd-5ec7-4ec5-9dc9-77ba4f00fab8
@@ -119,3 +118,6 @@ For more information, see the following topics:
 [Import and create multiple one-time vendors and invoices](tasks/import-multiple-one-time-vendors.md)
 
 [Set up purchase agreement classifications](tasks/set-up-purchase-agreement-classifications-public-sector.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

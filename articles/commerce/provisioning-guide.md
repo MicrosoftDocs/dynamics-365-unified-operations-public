@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -39,8 +38,6 @@ Before you begin, we recommend that you take a quick scan through this topic to 
 
 > [!NOTE]
 > Commerce evaluation environments aren't generally available, and are granted to partners and customers on a per-request basis. For more information, reach out to your Microsoft partner contact.
-
-## Overview
 
 To successfully provision a Commerce evaluation environment, you must create a project that has a specific product name and type. The environment and Commerce Scale Unit (CSU) also have some specific parameters that you must use when you expect to provision e-Commerce later. The instructions in this topic describe all the steps that are required to complete provisioning and the parameters that you must use.
 
@@ -196,3 +193,6 @@ To continue the process of provisioning and configuring your Commerce evaluation
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

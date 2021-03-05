@@ -18,7 +18,6 @@ ms.search.form: SMAServiceObjectTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -59,3 +58,6 @@ A template bill of materials (BOM) can be attached to a service object relation.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

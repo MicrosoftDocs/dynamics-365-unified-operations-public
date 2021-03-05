@@ -18,7 +18,6 @@ ms.search.form: SalesQuotationTable, SalesQuotationTableListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -43,3 +42,6 @@ If you try to set a sales quantity (**SalesQty** field) for an item of the *Serv
 
 You can't set a sales quantity for products that are service items. For example, if you offer a service to install an item, it doesn't make sense to record a quantity, because there is no physical item. There is only a service.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

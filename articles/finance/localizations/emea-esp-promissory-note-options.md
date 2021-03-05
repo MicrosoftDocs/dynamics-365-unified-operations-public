@@ -17,7 +17,6 @@ ms.search.form: VendParameters, BankPromissoryNoteTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264624
 ms.search.region: Spain
@@ -54,3 +53,6 @@ If the **Confirming invoices treatment** parameter is set to **Yes**, a separate
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

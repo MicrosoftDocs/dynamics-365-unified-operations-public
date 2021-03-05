@@ -4,8 +4,8 @@
 title: Human Resources app in Teams
 description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
-manager: AnnBe
-ms.date: 09/30/2020
+manager: tfehr
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Human Resources
 
 # Human Resources app in Teams
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams. Employees can interact with a bot to request information. The **Time off** tab provides more detailed information. In addition, they can send people information about upcoming time off in teams and chats outside the Human Resources app.
 
-![Human Resources Teams leaves app bot](./media/hr-admin-teams-leave-app-bot.png)
+![Human Resources Teams leaves app bot](./media/hr-teams-leave-app-bot.png)
 
 ![Human Resources Teams leave app Time off tab](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -44,16 +44,18 @@ The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees
 
 ## Install and setup
 
-You can find the Human Resources app in the Teams store. For information about installing the Teams app, see [Manage leave requests in Teams](hr-teams-leave-app.md).
+You can find the Dynamics 365 Human Resources app in the Teams store. For information about installing the Teams app, see [Manage leave requests in Teams](hr-teams-leave-app.md).
 
 For information about managing app permissions in Teams, see [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+If you want your users to view the Leave and absence calendar in the app, you'll need to enable the **Leave and absence calendar in Teams** in Feature management. For more information about enabling features, see [Manage features](hr-admin-manage-features.md).
+
 ## Enable notifications for the Human Resources app in Teams
 
-If you want users to receive leave request notifications in the Teams app, you must enable notifications in Human Resources.
+If you want users to receive leave request notifications in the Teams app, you must enable notifications in Dynamics 365 Human Resources.
 
 >[!NOTE]
->Only users who are signed into Teams and using the Human Resources Teams app will receive notifications.
+>Only users who are signed into Teams and using the Dynamics 365 Human Resources Teams app will receive notifications.
 
 1. In Human Resources, select **System administration**.
 
@@ -71,7 +73,7 @@ If you want users to receive leave request notifications in the Teams app, you m
 
 ### Turn Teams notifications on or off for individual users
 
-After you've enabled notifications for the Human Resources Teams app, you can turn notifications on or off for individual users.
+After you've enabled notifications for the Dynamics 365 Human Resources Teams app, you can turn notifications on or off for individual users.
 
 1. In Human Resources, select **System administration**.
 
@@ -87,9 +89,28 @@ After you've enabled notifications for the Human Resources Teams app, you can tu
 
 6. Select **Save**.
 
-## Known issues
+## Supported languages
 
-| Issue | Status |
+The Dynamics 365 Human Resources app in Teams supports the following languages:
+
+| Locale ID | Language |
+| --- | --- |
+| de-DE | German (Germany) |
+| es-ES | Spanish (Spain) |
+| es-MX | Spanish (Mexico) |
+| fr-CA | French (Canada) |
+| fr-FR | French (France) |
+| it-IT | Italian (Italy) |
+| nl-NL | Dutch (Netherlands) |
+| pt-BR | Portuguese (Brazil) |
+| tr-TR | Turkish (Turkey) |
+| zh-CN | Chinese (Simplified) |
+
+## Notes
+
+The following work items are slated for future releases:
+
+| Work item | Status |
 | --- | --- |
 | The balance is incorrect when submitting time off for a future date. | Forecasting isn't yet available. The balance displays for the current date. |
 | Unable to cancel an **In review** request. | This functionality isn't currently supported and will be added in a future release. |
@@ -101,11 +122,11 @@ If a user is having trouble signing into or using the Human Resources Teams app,
 
 ### Can't sign into the Human Resources app in Teams
 
-If a user contacts you because they can't sign into the app, verify that the user has an associated employee record in Human Resources.
+If a user contacts you because they can't sign into the app, verify that they have an associated employee record in Human Resources.
 
 ### Error when approving leave requests in the Human Resources app in Teams
 
-If a user receives an error while trying to approve leave requests in the Teams app, perform the following troubleshooting steps:
+If a user receives an error while trying to approve,  leave requests in the Teams app, try the following troubleshooting steps:
 
 1. Verify that their Teams account is the same one they use for accessing Human Resources.
 
@@ -139,3 +160,6 @@ To restrict access to the Human Resources app in Microsoft Teams for your organi
 [Microsoft Teams help center](https://support.office.com/teams)</br>
 [Manage leave requests in Teams](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

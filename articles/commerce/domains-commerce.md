@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -177,3 +176,6 @@ The Commerce-supplied Azure Front Door instance does not support apex domains (r
   [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
   [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: TMSGenericEngine, TMSRateEngine, TMSMileageEngine, TMSEnginePara
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 51661
 ms.assetid: 0473acef-755e-4b42-acf5-5e5aa902dc0e
@@ -153,3 +152,6 @@ This section explains how to set up Supply Chain Management to use a TMS engine,
 -   Every time that you change and recompile your ThirdPartyTMSEngines project, you must manually copy the resulting assembly to the binary location or deploy through a deployment package. Otherwise, you might run by using a stale assembly.
 -   After you execute TMS-specific operations inSupply Chain Management, the Internet Information Services (IIS) worker process might lock the ThirdPartyTMSEngines assembly so that the assembly can’t be updated. In this case, restart the w3svc process.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

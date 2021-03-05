@@ -17,7 +17,6 @@ ms.search.form: CustParameters, OMLegalEntity, UnitOfMeasure, ExtCodeTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
@@ -81,3 +80,6 @@ Before you can complete this task, you must import the OIOUBL electronic invoici
     * For example, enter EA.  
 10. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

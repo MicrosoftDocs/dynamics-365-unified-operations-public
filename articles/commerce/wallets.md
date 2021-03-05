@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -91,3 +90,6 @@ This capability ensures that the payment is never authorized by the terminal and
 
 - [Payments FAQ](dev-itpro/payments-retail.md)
 - [Dynamics 365 Payment Connector for PayPal](paypal.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

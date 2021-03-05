@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264294
 ms.search.region: Italy
@@ -1105,7 +1104,7 @@ Fields with **Total** selected in the **Calculation** field are marked in bold.
 
 ## Appendix 2. Example of the Yearly tax communication setup for 2020
 
-To download example setup for the 2020 declaration, see [IVA example setup 2020](https://mbs.microsoft.com/customersource/Global/AX/downloads/tax-regulatory-updates/ItalianAnnualVATdeclaration). To access the link, you need to have access to CustomerSource.
+To download example setup for the 2020 declaration, see [IVA example setup 2020](https://docs.microsoft.com/dynamics/s-e/ax/ItalianAnnualVATdeclaration_delta). To access the link, you need to have access to CustomerSource.
 
 1. Go to **Tax \> Setup \> Sales tax \> Yearly tax communication setup**.
 2. Select the **Open in Microsoft Office** button, and then, under **Open in Excel**, select **Yearly tax communication setup (DEMF)**.
@@ -1126,3 +1125,6 @@ To download example setup for the 2020 declaration, see [IVA example setup 2020]
    - VL032001 VAT payable (IVA a debito)
    - VL033001 VAT credit (IVA a credito)
    
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265204
 ms.search.region: Czech Republic
@@ -43,3 +42,6 @@ Depreciation amounts are rounded up or down, based on the value that is entered 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

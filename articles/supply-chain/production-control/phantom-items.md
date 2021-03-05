@@ -17,7 +17,6 @@ ms.search.form: SysOperationTemplateForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
 ms.search.region: Global
@@ -77,3 +76,6 @@ Phantom BOMs can also be used for a BOM that has a route network. In a route net
 In the following illustration, (a) is the BOM for product G and part F, and (b) is the route sheet for product G and part F.
 
 ![Product G and part F with route sheets](media/product-G-part-F-with-route-sheet.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

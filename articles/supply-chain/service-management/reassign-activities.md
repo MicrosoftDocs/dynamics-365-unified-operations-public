@@ -18,7 +18,6 @@ ms.search.form: SMADispatchBoard
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -63,3 +62,6 @@ Use the following steps to reassign an activity to another worker:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

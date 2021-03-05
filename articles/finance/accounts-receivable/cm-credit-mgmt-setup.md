@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -87,3 +86,6 @@ Several credit management statistics are included in the **Customer credit manag
 ### Number sequences and shared number sequence parameters
 
 A journal ID is required to process credit limit adjustments. You must add the credit limit adjustment number that should be used to generate the journal ID.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

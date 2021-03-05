@@ -18,7 +18,6 @@ ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19681
 ms.assetid: c99b2aeb-4ac2-4abe-b8b9-786b664c103d
@@ -146,3 +145,6 @@ For more information, see [Procurement and sourcing overview](../../supply-chain
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Spain
@@ -188,3 +187,6 @@ For more information, see [Download Electronic reporting configurations from Lif
 14.  Select **OK**, open the downloaded file, and review the data.
 
 ![Spanish VAT register book data](media/6_Spanish_VAT_register_book.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

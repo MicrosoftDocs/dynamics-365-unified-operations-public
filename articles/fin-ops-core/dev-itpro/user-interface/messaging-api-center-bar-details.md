@@ -31,7 +31,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Messaging APIs - Action center, message bar, and message details
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the messaging system in Finance and Operations apps, specifically in terms of the application programming interfaces (APIs) that are used to create and route messages to end users.  
 
@@ -140,3 +139,6 @@ SystemNotificationsManager::AddNotification(notification);
 ## Additional resources
 
 [User interface development home page](user-interface-development-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

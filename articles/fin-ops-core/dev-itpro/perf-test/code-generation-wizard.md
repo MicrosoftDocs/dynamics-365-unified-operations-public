@@ -88,3 +88,6 @@ Follow these steps to create the `AtlSpec` class by using the **Code generation*
 ### Additional optional steps
 
 Add a `spec` method to the data class that returns an instance of the `AtlSpec` class that you created earlier in this topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

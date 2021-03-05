@@ -18,7 +18,6 @@ ms.search.form: AssetReductionEntryMassUpdate_JP, AssetReductionEntryProfile_JP
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2871
 ms.search.region: Japan
@@ -111,3 +110,6 @@ If you don't have access to the pages that are used to complete this task, conta
 | Configuration keys | Make sure that the **Asset configuration** key is available under the **Data Dictionary** &gt; **Configuration Keys** node. |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

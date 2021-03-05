@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -73,3 +72,6 @@ The following illustration shows the logic that is used when the discount concur
 The following illustration shows the logic that is used when the discount concurrency control is set to **Best price only within priority, always compound across priority**.
 
 ![Logic for Best price only within priority, always compound across priority](./media/Model_2.png "Logic for Best price only within priority, always compound across priority").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

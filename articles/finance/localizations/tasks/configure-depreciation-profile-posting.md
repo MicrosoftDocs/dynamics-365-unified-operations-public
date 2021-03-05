@@ -17,7 +17,6 @@ ms.search.form: AssetDepreciationProfile,  AssetPosting
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -64,3 +63,6 @@ This procedure was created using the demo data company JPMF.
     * Optional: configure the Main account and Offset account.  
     * You must click Edit before you can modify these account fields.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

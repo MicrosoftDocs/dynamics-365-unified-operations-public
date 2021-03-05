@@ -16,7 +16,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -167,3 +166,6 @@ Settle the reverse charge liability from the cash account on the last day of the
 -	Base amount should not be zero (0) for a sales order when the transaction line is marked as exempt tax.
 -	Reversal of invoice posted with TDS displays incorrectly in the total invoice amount.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266884
 ms.search.region: Lithuania
@@ -78,3 +77,6 @@ To generate a VAT XML file, on the **Sales tax payments** page, select one or mo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

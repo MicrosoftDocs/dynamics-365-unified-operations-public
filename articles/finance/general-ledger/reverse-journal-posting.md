@@ -18,7 +18,6 @@ ms.search.form: LedgerTransVoucher, LedgerJournalTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschloma
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -80,3 +79,6 @@ If the number of voucher lines is 100 lines or fewer, the reversal process will 
 
 Transactions can be reversed only if they meet the business rules for reversing them. Vendor payments cannot be reversed using the capability described in this topic. Vendor payments must be reversed by following the steps listed in [Reverse a vendor payment](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

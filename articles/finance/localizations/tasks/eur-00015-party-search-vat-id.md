@@ -17,7 +17,6 @@ ms.search.form: DirPartyTable, DirPartTaxRegistrationSearch
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -45,3 +44,6 @@ This procedure applies to all European countries/regions. The procedure was crea
 7. Click Find.
     * All parties with that registration ID will be displayed.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

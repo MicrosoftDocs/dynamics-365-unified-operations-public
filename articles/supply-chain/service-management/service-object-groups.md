@@ -18,7 +18,6 @@ ms.search.form: SMAServiceObjectGroups
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -90,3 +89,6 @@ You can assign service objects to the group by using the **Service objects** for
 [Create service objects](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

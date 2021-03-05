@@ -17,7 +17,6 @@ ms.search.form: WrkCtrResourceGroup, ProdTableListPage, ProdTableCreate, InventI
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -64,3 +63,6 @@ This task guide shows an example of reporting as finished to a location that isn
 18. Click Work details.
     * When the production order was reported as finished, no work was generated for put-away. This occurs because a work policy is defined that prevents work from being generated when product L0101 is reported as finished to location 001.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

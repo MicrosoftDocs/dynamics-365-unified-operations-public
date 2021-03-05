@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -44,3 +43,6 @@ You can make electronic payments by transferring files between a legal entity an
 9. Click OK.
 10. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

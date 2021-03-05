@@ -17,7 +17,6 @@ ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationL
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -64,3 +63,6 @@ The information here applies to all European countries/regions. The task was cre
     * Assign the registration type that you created to a predefined registration category.  
 22. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

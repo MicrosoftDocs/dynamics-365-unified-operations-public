@@ -17,7 +17,6 @@ ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -78,3 +77,6 @@ Make a note of the number of the purchase order that you create, and also note t
     * After you have clicked OK, check the message bar. There should be a message saying that the operation completed.  
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: EInvoiceCFDIJour_MX, EInvoiceCFDIPACTable_MX, EInvoiceParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29791
 ms.assetid: b6861a2c-c132-48a2-97b5-9cb1020e0512
@@ -102,3 +101,6 @@ As is explained in detail in the Mexican localization scope document, integratio
 - [CFDI layout Version 3.3](latam-mex-cfdi-3-3.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

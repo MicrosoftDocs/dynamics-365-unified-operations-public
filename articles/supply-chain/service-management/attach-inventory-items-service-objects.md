@@ -18,7 +18,6 @@ ms.search.form: SMAServiceObjectTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -56,3 +55,6 @@ The item is now attached to the service object, and any inventory dimensions spe
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

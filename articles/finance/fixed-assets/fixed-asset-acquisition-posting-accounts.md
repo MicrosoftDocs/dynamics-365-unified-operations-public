@@ -18,7 +18,6 @@ ms.search.form: AssetPosting
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
@@ -50,3 +49,6 @@ For more information, see [Acquire assets through procurement](acquire-assets-pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

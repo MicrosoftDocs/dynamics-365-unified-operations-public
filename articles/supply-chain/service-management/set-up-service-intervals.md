@@ -18,7 +18,6 @@ ms.search.form: SMAAgreementinterval
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -59,3 +58,6 @@ You want to create a service interval of 10 days.
 ## Related topics
 
 [Service intervals](service-intervals.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

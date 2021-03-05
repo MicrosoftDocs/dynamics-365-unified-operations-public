@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: France
@@ -45,3 +44,6 @@ For more information about the import process, see [Import ISO20022 credit trans
 - [Set up method of payment for ISO20022 credit transfer](tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Set up vendors and vendor bank accounts for ISO20022 credit transfers](tasks/set-up-vendor-iso20022-credit-transfers.md)
 - [Create and export vendor payments using ISO20022 payment format](tasks/create-export-vendor-payments-iso20022-payment-format.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

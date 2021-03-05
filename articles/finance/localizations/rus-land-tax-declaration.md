@@ -15,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -849,3 +848,6 @@ steps.
     settings of Fixed assets parameters.
 
 6.  Validate and post the journal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

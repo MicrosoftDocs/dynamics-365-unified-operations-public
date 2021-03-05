@@ -18,7 +18,6 @@ ms.search.form: SMASubscriptionCreateDialog
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -48,3 +47,6 @@ For example, if the base price is EUR 1,000, and the index is 110, the sales pri
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

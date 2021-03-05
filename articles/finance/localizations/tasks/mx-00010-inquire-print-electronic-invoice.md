@@ -17,7 +17,6 @@ ms.search.form: EInvoiceCFDIJournal_AR, EInvoiceXMLViewer_MX, DefaultDashboard
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
@@ -46,3 +45,6 @@ Use the CFDI – Electronic invoices form to view, email, export, or print an al
 10. Close the page.
 11. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: WHSLocationProfile
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -45,3 +44,6 @@ This topic explains how to create a location profile in Dynamics 365 Supply Chai
 10. Select **Yes** in the **Allow cycle counting** field.
 11. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

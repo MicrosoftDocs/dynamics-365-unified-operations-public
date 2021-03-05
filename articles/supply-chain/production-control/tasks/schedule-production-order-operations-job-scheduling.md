@@ -17,7 +17,6 @@ ms.search.form: ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -59,3 +58,6 @@ This topic focuses on scheduling a production order with operations scheduling a
 6. On the Action Pane, select **Production order**.
 7. Select **All jobs**. Note that based on the active route, 5 jobs are created with job scheduling.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

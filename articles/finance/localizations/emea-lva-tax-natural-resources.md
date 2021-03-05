@@ -18,7 +18,6 @@ ms.search.form: LvNRTaxItemGroupLookup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270454
 ms.search.region: Latvia
@@ -158,3 +157,6 @@ Natural resources taxes are calculated during inventory journal transactions, an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

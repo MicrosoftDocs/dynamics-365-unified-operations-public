@@ -17,7 +17,6 @@ ms.search.form: VendCertificationType
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -38,3 +37,6 @@ You can create and assign vendor organizations any type of certification that th
 4. In the Description field, type a value.
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

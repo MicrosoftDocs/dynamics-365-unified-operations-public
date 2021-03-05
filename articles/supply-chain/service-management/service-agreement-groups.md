@@ -18,7 +18,6 @@ ms.search.form: SMAAgreementGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -47,3 +46,6 @@ In the **Service agreement group** field in the **Service management parameters*
 ## Related topics
 
 [Create service agreement groups](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

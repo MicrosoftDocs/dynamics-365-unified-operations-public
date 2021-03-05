@@ -512,3 +512,6 @@ Because there are no limits to the method that the exchange rate providers use t
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form:  AssetWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -79,3 +78,6 @@ The following table shows the visualizations that are available on each report p
 | Valuations maps        | Fixed asset details |
 
 To view the analytics with data, you must first refresh the AssetTransactionMeasure aggregate measurement on the **Entity Store** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

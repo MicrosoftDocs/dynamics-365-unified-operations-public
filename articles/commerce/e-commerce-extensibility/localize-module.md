@@ -5,7 +5,7 @@ title: Localize a module
 description: This topic describes how to localize a module for rendering, and how to localize general module information, such as the module name, description, and configuration fields.
 author: samjarawan
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -323,9 +322,45 @@ You can generate global.json files for module resources and authoring resources 
 }
 ```
 
-## Testing localized content
+## Override a resource string for a theme
 
-To test localized content, you must use a page mock and change the locale to the locale that you're testing. For more information about page mocks, see [Testing modules with page mocks](test-page-mock.md).
+The built-in module library set of modules and themes may have localized resource strings that you want to override. To override resource strings for a theme, modify the global.json resource file located in the src/resources/modules directory using the pattern in the following example.
+
+```json
+"{ThemeNamespace}.{ThemeName}.{ResourceString}": {
+    "value" : "",
+    "_value.comment": ""
+}
+```
+
+### Override resource strings for preinstalled themes
+
+To override resource strings for preinstalled themes (fabrikam or starter), use **@msdyn365-commerce-modules** as the theme namespace. The following example shows how to change the sign-in link text on the fabrikam theme.
+
+```json
+"@msdyn365-commerce-modules.fabrikam.signInLinkText": {
+    "value": "Sign in now",
+    "_value.comment": "Sign-in Link Text"
+}
+```
+
+### Override resource strings for custom or local themes
+
+For custom or local themes, use **__local__** for the theme namespace. The following example shows how to change the sign-in link text for a custom theme called "adventureworks."
+
+```json
+"__local__.adventureworks.signInLinkText": {
+    "value": "Log in",
+    "_value.comment": "Log in Link Text"
+}
+```
+
+> [!NOTE]
+> For [shared themes](extend-theme.md), child themes inherit all of the resources string overrides tied to the parent theme.
+
+## Test localized content
+
+To test localized content, you must use a page mock and change the locale to the locale you're testing. For more information about page mocks, see [Test modules by using page mocks](test-page-mock.md).
 
 ## Additional resources
 
@@ -347,3 +382,6 @@ To test localized content, you must use a page mock and change the locale to the
 
 [Create a page container module](create-page-containers.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

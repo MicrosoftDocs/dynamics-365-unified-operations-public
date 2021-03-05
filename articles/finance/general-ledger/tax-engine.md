@@ -17,7 +17,6 @@ ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
@@ -166,3 +165,6 @@ The set-off rule determines how the tax recoverable should be used to set off th
 - [Extend tax engine configurations](extend-tax-engine-configurations.md)
 - [Tax engine integration](tax-engine-integration.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

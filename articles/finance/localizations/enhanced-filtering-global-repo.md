@@ -18,7 +18,6 @@ ms.search.form: ERSolutionTable, ERWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 
@@ -51,3 +50,6 @@ You can further refine the search by selecting document type, for example 'vendo
 [![Applied filter and Import for business document type](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
 Filtered results can be imported into a users RCS repository or a Dynamics 365 Finance environment, either individually or as a set. To do this, select the group of configurations, and click **Import**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

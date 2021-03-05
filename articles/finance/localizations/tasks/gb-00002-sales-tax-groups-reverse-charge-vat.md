@@ -17,7 +17,6 @@ ms.search.form: TaxGroup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
@@ -65,3 +64,6 @@ In this task you'll create a new sales tax group that will contain a +ve sales t
 16. Select the Reverse charge check box.
 17. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

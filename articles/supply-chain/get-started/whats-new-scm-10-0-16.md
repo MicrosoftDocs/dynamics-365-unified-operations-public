@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview of Dynamics 365 Supply Chain Management 10.0.16 (February 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.16 (February 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.16. 
 author: kamaybac
 manager: annbe
@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -29,12 +28,11 @@ ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.16 (February 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.16 (February 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.16. This version has a build number of 10.0.689 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.16. This version has a build number of 10.0.689 and is available as follows:
 
 - **Preview of release:** November 2020
 - **General availability of release (self-update):** January 2021
@@ -45,8 +43,11 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
 - [Customizable shop floor execution interface](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - For more information, see [Set up a device to run the production floor execution interface](../production-control/production-floor-execution-setup.md).
+
 - [Inventory Visibility Add-in for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - For more information, see [Inventory Visibility Add-in](../inventory/inventory-visibility.md)
+
 - [Validate license plates on source document lines](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - For more information, see [Warehouse configuration overview](../warehousing/warehouse-configuration.md).
+
 - [Warehouse management outbound workload visualization](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - For more information, see [Outbound workload visualization](../warehousing/outbound-workload-visualization.md)
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
@@ -93,7 +94,7 @@ We have recently added or significantly updated the following help topics. They 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.16 includes platform updates. To learn more, see [Platform updates for version 10.0.16 of Finance and Operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.16 includes platform updates. To learn more, see [Platform updates for version 10.0.16 of Finance and Operations apps (February 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
 
 ### Bug fixes
 
@@ -115,3 +116,6 @@ The [Removed or deprecated features in Dynamics 365 Supply Chain Management](rem
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

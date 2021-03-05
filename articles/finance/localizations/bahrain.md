@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Bahrain
@@ -44,3 +43,6 @@ This topic includes information and links to documentation resources for Bahrain
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Business document management overview](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

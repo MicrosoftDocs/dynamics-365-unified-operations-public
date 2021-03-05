@@ -17,7 +17,6 @@ ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -60,3 +59,6 @@ The role of this procedure is Treasurer. This procedure uses the USMF demo compa
 18. Click Save.
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

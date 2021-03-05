@@ -17,7 +17,6 @@ ms.search.form: VendTable, VendBankAccounts
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -55,3 +54,6 @@ This is the fourth procedure, out of five, that illustrates the vendor payment p
 4. In the list, click the link in the SEPA CT row.
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

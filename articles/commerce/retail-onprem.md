@@ -17,7 +17,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -125,3 +124,6 @@ The following table indicates which inventory management components are availabl
 | Models of delivery             | Available          |
 | Return locations               | Available          |
 | Distributed order management   | Not available      |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

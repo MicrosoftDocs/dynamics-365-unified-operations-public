@@ -18,7 +18,6 @@ ms.search.form: RAssetPosting
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Russia
@@ -268,3 +267,6 @@ The component depreciated cost is calculated as the difference between the compo
 A partial take-down transaction has an indirect effect on the fixed asset balance. A partial take-down transaction creates value and depreciation revaluation transactions. These transactions, in turn, are already considered in the fixed asset balance.
 
 As a result of the calculation, a balance value, a balance depreciation, and a market value that equals the depreciated cost are created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

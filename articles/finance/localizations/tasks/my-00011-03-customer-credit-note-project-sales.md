@@ -17,7 +17,6 @@ ms.search.form: ProjProjectsListPage, ProjJournalTable, ProjJournalTransEmpl, Re
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
@@ -80,3 +79,6 @@ This task was created using the demo data company MYMF.
 14. Click OK.
     * Verify that the information on credit note report is correct.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

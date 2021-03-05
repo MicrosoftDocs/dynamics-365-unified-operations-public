@@ -18,7 +18,6 @@ ms.search.form: SMADispatchBoard
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -66,3 +65,6 @@ This topic describes how to view activities in a service order that don’t have
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14411
 ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
@@ -127,3 +126,6 @@ April then posts the payment. When she opens the **Vendor transactions** page, s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

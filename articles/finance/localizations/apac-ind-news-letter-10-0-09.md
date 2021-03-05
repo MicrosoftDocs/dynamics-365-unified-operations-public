@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -108,3 +107,6 @@ With debug mode enabled, the system will generate a log file that contains the d
 -	Tax calculation is incorrect when a customer discount is posted in the **General** journal. 
 -	**Adjusted amount origin** field shows the wrong value. 
 -	Difference between sales tax payment and the actual transaction posted to the tax authority.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

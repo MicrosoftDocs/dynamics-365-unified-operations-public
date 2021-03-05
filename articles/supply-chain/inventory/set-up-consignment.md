@@ -18,7 +18,6 @@ ms.search.form: DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, 
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 220804
 ms.assetid: 88822f78-4de5-462c-a55f-1f766c572719
@@ -55,3 +54,6 @@ The **Inventory ownership change** journal is used to record the transfer of own
 
 ## Vendor collaboration in consignment processes
 If your vendors are using the vendor collaboration interface, they can use this to monitor the consumption of inventory at your site. For more information about setting up vendors to use vendor collaboration, see [Vendor portal user security](../procurement/configure-security-vendor-portal-users.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

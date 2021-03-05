@@ -18,7 +18,6 @@ ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -125,3 +124,6 @@ Click **Setup** to customize the information that is shown in the tree view of t
 |     BOM     | Use the check boxes to select the criteria that are shown in the tree structure. The formula designer shows the selected criteria at the bottom of both tabs. |
 |    Route    |                                           Use the check boxes to select the criteria that are shown for the routes.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

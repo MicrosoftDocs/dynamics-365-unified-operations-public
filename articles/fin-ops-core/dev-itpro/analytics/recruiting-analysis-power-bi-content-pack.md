@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recruiting Power BI content
-description: This topic describes the Recruiting Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
+description: This topic describes the Recruiting Power BI content.
 author: jcart1106 
 manager: AnnBe
 ms.date: 12/19/2017
@@ -70,3 +70,6 @@ The following table shows the entities that the **Recruiting** Power BI content 
 | Performance          | Rating, description, and rating model                            | Applicant, Employed Applicant, Terminated Applicant |
 | Recruitment Project  | Project description, project status, and openings                | Applicant, Employed Applicant, Terminated Applicant |
 | Terminated Applicant | Terminated applicants, reason, performance, and termination date | Company, Calendar Offset, Date, Geographic Location, Performance, Demographics, Employment, Media, Recruitment Project, Applicant Name |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

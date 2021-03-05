@@ -18,7 +18,6 @@ ms.search.form: CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
@@ -172,3 +171,6 @@ The following fields change the behavior of the posting process.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

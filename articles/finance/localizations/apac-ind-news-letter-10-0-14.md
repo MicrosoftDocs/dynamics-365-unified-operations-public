@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -49,3 +48,6 @@ No new features were released in version 10.0.14.
 ## Upcoming critical fixes in 10.0.15 
 
 - GST Challan details aren't updating. Instead, the following warning appears, “The bank reference number constraint must be between 17 and 20 digits”.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

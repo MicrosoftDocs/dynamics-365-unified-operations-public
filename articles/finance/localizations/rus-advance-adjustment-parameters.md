@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -92,3 +91,6 @@ After the calculation is completed, a new line for the exchange adjustment is ge
 - Select **Voucher** to open the **Voucher transactions** page, where you can review the transactions that were completed for the general ledger.
 - Select **Transactions** to open the **Advance holder transactions** page, where you can review the transactions that were completed for the advance holder.
 - Select **Reviewed** to mark the selected line as reviewed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

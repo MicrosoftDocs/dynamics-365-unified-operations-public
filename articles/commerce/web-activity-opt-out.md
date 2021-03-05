@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
@@ -60,3 +59,6 @@ Administrators can let authenticated users opt out of web activity event collect
 ### Custom extensions
 
 Administrators can create their own extensions to manage the opt-out experience for users. For more information, see [Call Retail Server APIs](e-commerce-extensibility/call-retail-server-apis.md) and [Online channel extensibility](e-commerce-extensibility/overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

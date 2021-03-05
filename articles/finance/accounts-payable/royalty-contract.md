@@ -17,7 +17,6 @@ ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePa
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -131,3 +130,6 @@ The process for handling royalties involves multiple manual tracking tasks that 
 - Updating the vendor balance and the income statement with the royalties that are due
 
 In this way, the feature helps you avoid potential errors and interest on unpaid royalties, and contributes to a timely cash flow forecast for the company.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

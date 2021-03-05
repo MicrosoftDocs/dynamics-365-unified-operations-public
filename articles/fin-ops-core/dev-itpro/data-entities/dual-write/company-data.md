@@ -106,3 +106,6 @@ To apply filtering based on the company context on your custom forms or on custo
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Apply company context":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

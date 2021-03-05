@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschloma
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -110,3 +109,6 @@ You can create insurance policies and guarantees on the **All customers** page (
     In this case, the effective credit limit is 125,000 (= A + \[B × C\]).
     
     However, if you select the **Included in exposure** check box, the **Update credit limit** value of 50,000 (= 50.00 percent of 100,000) is removed, and the exposure value is 75,000 (= A + \[B × C\] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

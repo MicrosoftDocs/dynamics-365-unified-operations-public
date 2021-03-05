@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -61,3 +60,6 @@ This task uses the JPMF demo company data.
     * The proposed amount is discounted to present value.  
 13. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

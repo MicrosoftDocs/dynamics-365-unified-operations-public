@@ -18,7 +18,6 @@ ms.search.form: smmActivityTypeGroup, SMADispatchBoard
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -45,3 +44,6 @@ You can view the status of service activities in the **Dispatch board** form. Yo
 
 [Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
@@ -61,3 +60,6 @@ You can import exchange rates from the exchange rate providers source and add th
 | **Override existing exchange rates**   | This check box manages the update of the existing exchange rate for a currency pair when the exchange rate for a specific date already exists. If you do not select this check box, the exchange rate for the specific dates is not imported if another exchange rate already exists.                                                                                       |
 | **Prevent import on national holiday** | This check box manages the import of the exchange rate for public holiday's date. For example, if you select this check box and use the European Central Bank as the exchange rate provider, the system will not update the exchange rate on a public holiday that is related to the current legal entity. This option might not be available for some providers. |
 | **Rate from the previous day** | This check box is available if you enable **ECB import on the current or previous date** feature on the **Feature management** page. This check box is only available for the provider, *Central Bank of Europe*. Select this check box to import the currency exchange rate that is published by the European Central Bank on the previous working day at approximately 16:00 CET. By default, the check box is selected. Clear this check box to import the currency exchange rate that is published on the same working day.  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

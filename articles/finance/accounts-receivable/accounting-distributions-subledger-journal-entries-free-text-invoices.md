@@ -18,7 +18,6 @@ ms.search.form: CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
@@ -141,3 +140,6 @@ Before you post a free text invoice, you can view the full accounting entry of t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

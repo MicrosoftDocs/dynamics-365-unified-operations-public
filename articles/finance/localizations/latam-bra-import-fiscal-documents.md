@@ -18,7 +18,6 @@ ms.search.form: BrazilParameters, FiscalDocument_BR, PurchImportDeclaration_BR, 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270204
 ms.assetid: b2389297-1359-498f-b755-c20574248ae1
@@ -165,3 +164,6 @@ For this scenario, you must create and post a direct import fiscal document.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

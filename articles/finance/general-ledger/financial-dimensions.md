@@ -17,7 +17,6 @@ ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25871
 ms.search.region: Global
@@ -144,3 +143,6 @@ For more information, see the following topics:
 
 - [Define financial dimensions](tasks/define-financial-dimensions.md)
 - [Maintain financial dimension default templates](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

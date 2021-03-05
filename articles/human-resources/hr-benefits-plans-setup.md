@@ -4,7 +4,7 @@
 title: Create a benefits plan
 description: Set up benefit plans in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Create a benefits plan
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article shows you how to set up benefit plans in Dynamics 365 Human Resources.
 
@@ -164,3 +166,6 @@ You can provide a description of the plan to help employees with their benefits 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
 2. Select **Flex credit programs**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

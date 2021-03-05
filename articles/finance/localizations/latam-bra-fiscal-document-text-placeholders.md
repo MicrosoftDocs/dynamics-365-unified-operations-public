@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268684
 ms.search.region: Brazil
@@ -172,3 +171,6 @@ Tags that support fiscal document text for referenced processes
 |--------------------------------|----------------------------------------------------------------------|
 | %Substituto\_ICMS\_tax\_amount | The presumed ICMS tax amount from the ICMS substitute.                |
 | %Substituto\_FCP\_tax\_amount  | The presumed FCP amount from the ICMS substitute.                     |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

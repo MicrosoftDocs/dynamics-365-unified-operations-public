@@ -16,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -327,3 +326,6 @@ Find more details in the following topics:
 
 - [Inventory profile overview](rus-inventory-profile-overview.md)
 - [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: Accountant_BR, AccountantElectronicAddress_BR, AccountantPostalA
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269404
 ms.assetid: af0951b7-078d-49ea-9655-1037dbd0bfe1
@@ -326,3 +325,6 @@ In Brazil, you must specify the accountant details for tax reporting in the mont
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

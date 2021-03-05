@@ -18,7 +18,6 @@ ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -71,3 +70,6 @@ Both Planning Optimization and the planning engine that is built into Microsoft 
 - Autofirming is based on the requirement date (end date).
 - To help guarantee that orders are firmed in due time, the firming time fence must be longer than the lead time.
 - If you want to firm all orders that must start during the current week, the firming time fence must be the lead time plus one week.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

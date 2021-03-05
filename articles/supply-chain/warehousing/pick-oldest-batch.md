@@ -17,7 +17,6 @@ ms.search.form:  WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -45,3 +44,6 @@ For items that are set to use existing work, **Pick oldest batch** can be set to
 **Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch. If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control. 
 -	**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select. To be allowed to continue the work, the worker can select the same license plate or batch again.  
 -	**Force**: Workers will continue to receive the message that there is an older batch to pick.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

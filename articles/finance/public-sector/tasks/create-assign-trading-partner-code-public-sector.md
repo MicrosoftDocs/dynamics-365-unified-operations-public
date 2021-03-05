@@ -17,7 +17,6 @@ ms.search.form: CustGroup, CustTradingPartnerCode, CustTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -50,3 +49,6 @@ Create a trading partner code and assign it to a government agency that your org
 6. In the Trading partner code field, select the trading partner code for this agency..
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

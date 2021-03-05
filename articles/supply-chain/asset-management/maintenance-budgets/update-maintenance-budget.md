@@ -18,13 +18,12 @@ ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -80,3 +79,6 @@ On the **Maintenance budget lines** page, you can manually add a new budget line
 
 - You know that refurbishment of some assets is currently in the planning phase, but related jobs haven't yet been created in Asset Management. However, you want budget costs for those jobs to be included in the maintenance budget.
 - New assets or asset types have been created since you made the maintenance budget, but maintenance plans haven't yet been set up on those assets or asset types. However, you want budget costs for those asset types to be included in the maintenance budget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -5,7 +5,7 @@ title: Search results module
 description: This topic covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 12/15/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -63,6 +62,10 @@ The following table lists the properties of search result modules, together with
 > [!IMPORTANT]
 > In the Dynamics 365 Commerce 10.0.16 release and later, the **Show affiliation prices** configuration can be used to show affiliation prices on the page.
 
+## Supported modules
+
+The search results module supports the [quick view module](quick-view-module.md), which lets users view product information and add items to the cart from the search results page.
+
 ## Add a search results module to a category page
 
 To add a search results module to a category page, follow these steps.
@@ -89,3 +92,8 @@ To add a search results module to a category page, follow these steps.
 [Default category landing page and search results page overview](category-search-page-overview.md)
 
 [Module library overview](starter-kit-overview.md)
+
+[Quick view module](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

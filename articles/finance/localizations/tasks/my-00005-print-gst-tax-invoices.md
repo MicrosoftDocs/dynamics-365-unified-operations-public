@@ -17,7 +17,6 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
@@ -133,3 +132,6 @@ Legal entity 'MYMF' must be selected to execute this scenario successfully. The 
     * Validate the Tax invoice report.  
     * The Tax invoice report prints a GST summary section with GST code, amount origin, and GST amount.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

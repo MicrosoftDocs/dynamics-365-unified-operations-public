@@ -18,7 +18,6 @@ ms.search.form: BankStatementFormat
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
@@ -114,3 +113,6 @@ The following table lists examples of the technical layout definitions for advan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

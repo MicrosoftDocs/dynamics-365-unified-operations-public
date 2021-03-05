@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransA
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ This task guide steps through generating ledger accrual transactions that are ba
 17. Click OK.
 18. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

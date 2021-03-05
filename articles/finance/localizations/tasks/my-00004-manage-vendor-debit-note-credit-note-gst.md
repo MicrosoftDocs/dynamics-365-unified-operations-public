@@ -17,7 +17,6 @@ ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, VendIn
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
@@ -152,3 +151,6 @@ This procedure was created using the demo data company MYMF.
 46. Click OK.
     * Verify that everything looks correct on the credit note report with GST.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

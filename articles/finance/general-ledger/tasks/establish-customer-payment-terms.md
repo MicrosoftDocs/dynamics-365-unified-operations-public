@@ -17,7 +17,6 @@ ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -60,3 +59,6 @@ This procedure defines a cash discount and due date setup. This task guide uses 
 26. In the **Main account for vendor discounts** field, enter the main account to which the cash discount will post for vendor invoices.
 27. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -72,3 +71,6 @@ For this walkthrough, use the USMF demo company. This procedure is intended for 
 
 ## Save a free text invoice as a template
 You can also save an existing free text invoice as a template. When you select Save to template from the Invoice tab, provide a name and a description for the template. If a template with the name already exists, you will see a notification that a template with that name already exists. You can still click on Ok to replace it. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

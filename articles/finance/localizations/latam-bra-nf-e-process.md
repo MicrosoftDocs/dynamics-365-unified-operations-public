@@ -18,7 +18,6 @@ ms.search.form: EFDocContingencyMode_BR, EFDocContingencyModeHistory_BR, EFDocCo
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269114
 ms.assetid: 7cb522a4-2f84-4399-a60d-8692df6e08f3
@@ -74,3 +73,6 @@ After the status of the NF-e is received from SEFAZ, you can perform the followi
  - [NF-e 3.10 (Brazil)](tasks/br-00053-nf-e-3-10.md)
  - [Automatic transmission of NF-e fiscal documents (Brazil)](tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

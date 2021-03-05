@@ -74,3 +74,6 @@ When you've finished, the page includes additional fields, catch weight informat
 
 > [!NOTE]
 > You can't modify the **AutoDeclaration** property on controls. However, you can still access the controls by name from code. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

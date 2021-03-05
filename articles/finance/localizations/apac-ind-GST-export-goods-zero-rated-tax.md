@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -68,3 +67,6 @@ Complete the procedures in this topic to export goods that have zero-rated tax.
 
 1. Select **Inquiries** \> **Shipping bill**.
 2. Select **Voucher**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

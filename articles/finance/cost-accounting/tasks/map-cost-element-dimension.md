@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -48,3 +47,6 @@ A cost controller can use this procedure to map a cost element dimension to a co
     * For this example, select dimension member 6001004 Telefono.  
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

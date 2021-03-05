@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -64,3 +63,6 @@ Complete the following procedures to create a customer advance payment journal, 
 To validate the financial entries, in the journal, select **Inquiries \> Voucher**. Here is an example.
 
 ![Example of financial entries](media/Annotation-2019-05-21-131638.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

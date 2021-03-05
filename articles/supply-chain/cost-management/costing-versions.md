@@ -18,7 +18,6 @@ ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 54532
 ms.assetid: cd239da5-f434-4d1b-8196-5414c888d76d
@@ -72,3 +71,6 @@ The purchase price records for items are also used as reference information. By 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

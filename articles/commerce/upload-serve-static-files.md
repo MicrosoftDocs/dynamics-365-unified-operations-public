@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -29,8 +28,7 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Upload and serve static files
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to upload a static file into Microsoft Dynamics 365 Commerce site builder, and how to create a custom URL and file name that can be used to request that file.
 
@@ -110,3 +108,6 @@ To change the URL path, follow these steps.
 [Crop images](dam-crop-images.md)
 
 [Customize image focal points](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

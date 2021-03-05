@@ -18,7 +18,6 @@ ms.search.form: ReqGroup, ReqItemTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21841
 ms.assetid: acc608b7-2cad-4fba-afee-9b7cc93761ec
@@ -46,3 +45,6 @@ To prevent the calculation from occurring, select the **Stop explosion** flag th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

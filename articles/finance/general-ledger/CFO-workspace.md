@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
@@ -61,3 +60,6 @@ This topic explains how to add financial dimensions to the Chief Financial Offic
 16. Build your project, and then open the application to view the results.
 
     [![Completed workspace](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

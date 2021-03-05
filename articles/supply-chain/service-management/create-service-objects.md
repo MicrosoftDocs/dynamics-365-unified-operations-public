@@ -18,7 +18,6 @@ ms.search.form: SMAServiceObjectTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -48,3 +47,6 @@ Service objects are a customer’s assets and products for which you can perform
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Finance and tax data is integrated by using the following mappings:
 
 + [Integrated ledger](ledger-mapping.md)
 + [Integrated tax master](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -23,7 +23,7 @@ ms.custom: 221414
 ms.assetid: cd8cceb4-0ea3-4770-930b-0869e9bfa3c4
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -91,3 +91,6 @@ A tax code can belong to only one tax group that is enabled for posting definiti
 ## Don't see your question here?
 
 We're working to include as many questions as we can, so that Microsoft Dynamics AX Help will be more useful to people just like you. Tell us what question you would like to add to this topic. Send email to <adocs@microsoft.com>.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

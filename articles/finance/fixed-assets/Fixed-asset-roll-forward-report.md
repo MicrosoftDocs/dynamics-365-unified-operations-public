@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
@@ -71,3 +70,6 @@ The following table describes the fields that are available on the report.
 |           Disposals: Scrap value            |                                                                                               The scrap value for the fixed asset book with a disposal – scrap transaction.                                                                                               |
 |           Disposals: Profit/Loss            |                                                                                 The profit or loss value that is calculated as part of the disposal transaction for the fixed asset book.                                                                                 |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

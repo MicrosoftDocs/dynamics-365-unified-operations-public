@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -157,3 +156,6 @@ Regarding the coverage group calendar, it is important to consider that that has
 ### Updating SCM related calendars
 While it is important that all relevant calendars are assigned in their respective place (vendor, customer, warehouse, mode of delivery, or coverage group), updating them is as important so they reflect the changes. The system will define the production, transfer, purchase, and sales order dates depending on the combination of the assigned calendars. 
 It is a best practice to clarify who holds the responsibility for assigning and updating the calendars in its corresponding areas. In case of a breakdown or any other unusual change in the working days, it is essential to update the calendars according to it. All tasks which depend on calendars, such as master planning and production scheduling, must be rerun when calendars are updated. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

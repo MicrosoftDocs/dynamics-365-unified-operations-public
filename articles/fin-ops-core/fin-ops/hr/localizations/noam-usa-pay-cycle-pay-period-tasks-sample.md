@@ -23,7 +23,7 @@ ms.custom: 222624
 ms.assetid: d635184b-0905-43ab-841d-9f6cc95ab861
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -107,3 +107,6 @@ Typically, pay cycles are assigned to positions when the positions are set up fo
 If you must control the specific pay periods that various payroll elements are processed in, the next step is to set up payroll calculation frequencies. For more information, see [Set up payroll calculation frequencies](noam-usa-payroll-calculation-frequencies-tasks.md).
 
 If you decide not to set up payroll calculation frequencies, the next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Set up work cycles and work periods](noam-usa-work-cycle-work-period-tasks.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: VendPosting
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24691
 ms.assetid: 18def866-7655-4f0b-b299-eec83098d23a
@@ -124,3 +123,6 @@ Specify the following values to set up your posting profile
 | **Settlement** | Select this option to enable automatic settlement of transactions that have this posting profile. If this option is cleared, you must manually settle transactions by using the **Settle open transactions** page. |
 | **Cancel**     | Select this option if you want to be able to cancel transactions that have this posting profile.                                                                                                               |
 | **Close**      | Select a posting profile to change to when transactions that have this posting profile are closed. A transaction is regarded as closed when it has been settled in full.                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

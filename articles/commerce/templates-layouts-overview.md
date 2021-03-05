@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -116,3 +115,6 @@ To start to use preset layouts, see [Work with preset layouts](work-with-layouts
 [Work with preset layouts](work-with-layouts.md)
 
 [Work with publish groups](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ manager:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway
@@ -98,7 +97,9 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 
     ![External codes button on the Action Pane of the Sales tax code page](media/nor-saf-standard-tax-codes.jpg)
 
-3. On the **External codes** page, specify the Norwegian standard VAT tax codes that should be used for the selected sales tax code record for the purpose of SAF-T reporting.
+3. On the **External codes** page, specify the Norwegian standard VAT tax codes that should be used for the selected sales tax code record for the purpose of SAF-T reporting. On the **External codes** page, in the **Overview** section, in the **Code** field, select the identifier for the external code definition and enter a standard tax code that corresponds to the selected **Sales tax code** in **Value** field in **Value** section.
+
+    ![Setup Standard tax code for the selected Sales tax code](media/not-saf-external-codes-tax.png)
 
 ### Main accounts
 
@@ -192,3 +193,6 @@ In accordance with these requirements, the **SAF-T Format (NO)** ER format is im
 - Each individual XML file is validated against the schema.
 
 After the report is generated, if more than one XML file is generated, the user must manually number the generated files in the zip archive by adding **\_\<file number of total files\>** to the file names. The user must also make sure that there are no more than 10 XML files in the same zip archive. If there are more than 10 XML files in an archive, the user must manually split it into several archives, each of which has a maximum of 10 XML files.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

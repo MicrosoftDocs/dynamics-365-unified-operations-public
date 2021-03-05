@@ -70,3 +70,6 @@ If you enter **Vend** as the data source of the *Record list* data type that ref
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Embed Power Apps apps in Dynamics 365 Human Resources
 description: This topic explains how to resolve the issue where the Microsoft Power Apps menu item has disappeared from the System administration module.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -57,7 +56,7 @@ Here is an example.
 
     ![Power Apps button](media/png.png)
 
-3. Complete the fields in the **Add an app from Power Apps** dialog box.
+3. Complete the columns in the **Add an app from Power Apps** dialog box.
 
     ![Add an app from Power Apps dialog box](media/insert-powerapp.png)
 
@@ -72,3 +71,6 @@ Alternatively, follow these steps.
 2. On the toolbar, select **Add an app from Power Apps**.
 
     ![Add an app from Power Apps using the personalization toolbar](media/powerapp-bar.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

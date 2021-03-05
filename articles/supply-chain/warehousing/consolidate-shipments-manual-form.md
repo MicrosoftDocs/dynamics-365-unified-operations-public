@@ -18,7 +18,6 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
@@ -104,3 +103,5 @@ Follow these steps to release each sales order that you created for this scenari
 
 - [Shipment consolidation policies](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

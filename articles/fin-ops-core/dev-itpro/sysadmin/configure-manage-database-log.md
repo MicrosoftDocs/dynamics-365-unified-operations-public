@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure database logging
-description: This topic provides information about database logging. It explains how to set up database logging, how to manage security and performance, and how to clean up database logs.
+description: This topic describes how to set up database logging, how to manage security and performance, and how to clean up database logs.
 author: hasaid
 manager: AnnBe
 ms.date: 03/11/2020
@@ -72,7 +72,7 @@ Here are some practices that Microsoft recommends:
 
 You can use the **Logging database changes** wizard to set up database logging. This wizard provides a flexible way to set up logging for tables or fields.
 
-1. Go to **System administration** \> **Setup** \> **Database** \> **Database log setup**.
+1. Go to **System administration** \> **Setup** \> **Database log** \> **Database log setup**.
 2. Select **New** to open the **Logging database changes** wizard.
 3. Complete the wizard.
 
@@ -96,3 +96,6 @@ The consistency check will re-create any missing database log triggers. It will 
 
 1. Go to **System administration** \> **Inquiries** \> **Database** \> **Database log**.
 2. On the **Database log** page, select **Consistency check**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

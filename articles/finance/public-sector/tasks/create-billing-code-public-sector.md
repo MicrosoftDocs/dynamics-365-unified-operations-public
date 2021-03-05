@@ -17,7 +17,6 @@ ms.search.form: CustCustomField
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -43,3 +42,6 @@ Billing code custom fields allow you to collect values for billing code fields w
 7. Open the Billing code references section. When you assign this custom field to a billing code, the billing code will be listed here.
 8. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

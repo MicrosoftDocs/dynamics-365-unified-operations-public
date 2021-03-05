@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -59,3 +58,6 @@ Complete the procedures in this topic to import services that have Goods and Ser
 5. Select **Inquiries** \> **Voucher**.
 
 ![Example](media/Annotation-2019-05-21-104142.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

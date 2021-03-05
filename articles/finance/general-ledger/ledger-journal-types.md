@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalSetup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
@@ -73,3 +72,6 @@ This topic describes the journal types that you can set up for financial journal
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

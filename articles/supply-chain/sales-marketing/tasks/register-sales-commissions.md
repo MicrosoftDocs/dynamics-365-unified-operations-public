@@ -17,7 +17,6 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -74,3 +73,6 @@ Take note of the customer and item numbers that you have chosen for the commissi
 3. Close the page.
 4. Select **Voucher**. You can review the voucher transactions for the commission amounts that have been posted to the predefined commission expense and commission payable accounts.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

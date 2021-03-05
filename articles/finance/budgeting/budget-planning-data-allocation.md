@@ -18,7 +18,6 @@ ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15191
 ms.assetid: 89a918e8-59a4-4711-a2e9-b41989ddd0f1
@@ -82,3 +81,6 @@ Finally, add an automated task for budget planning stage allocation at the desir
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

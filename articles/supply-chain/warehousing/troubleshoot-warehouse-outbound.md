@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -66,3 +65,6 @@ An item is added to a sales line for direct delivery from a warehouse that is en
 ### Issue resolution
 
 Microsoft has evaluated this issue and has determined that it's a feature limitation. Currently, WMS doesn't support direct delivery. Therefore, to use direct delivery, you must select a non-WMS item and warehouse.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

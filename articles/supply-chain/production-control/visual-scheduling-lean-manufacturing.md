@@ -18,7 +18,6 @@ ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisu
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -98,3 +97,6 @@ Additional resources
 
 [Kanban job scheduling for lean manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

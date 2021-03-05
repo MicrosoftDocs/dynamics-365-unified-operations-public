@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -47,7 +46,8 @@ The production floor execution interface itself, plus several of the optional se
 
 ### The production floor execution interface
 
-This is the primary feature described in this topic. It adds the production floor execution interface to your system. To enable it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):  
+This is the primary feature described in this topic. It adds the production floor execution interface to your system. To enable it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
 - Production floor execution
 
 ### Generate license plates
@@ -69,6 +69,12 @@ These features make label printing functionality available to the production flo
 This feature adds a button to the production floor execution interface that enables workers to sanitize the touch screen. If you'd like to use it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Feature for locking job card device and job card terminal so that they can be sanitized
+
+### Asset management functionality for the production floor execution interface
+
+This feature adds an asset management tab to the production floor execution interface. Workers can use this tab to select an asset that is connected to a machine resource that is within the selected filter of the job list. For the selected machine asset, the worker can view the state and health of the asset from counter values for up to four selected counters. If you'd like to use this feature, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Asset management functionality for the production floor execution interface
 
 ## Work with production floor execution configurations
 
@@ -99,3 +105,6 @@ A batch job periodically cleans entries in the references table for devices that
 1. On the Action Pane, select **Clean up client configurations**.
 1. In the **Clean up client configuration** dialog box, set the **Number of days** field to the number of days of inactivity (before today) to consider. You will remove all configurations and sign-in records for devices that haven't been active during that time.
 1. Select **OK** to clean up the relevant configurations, based on the **Number of days** setting.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

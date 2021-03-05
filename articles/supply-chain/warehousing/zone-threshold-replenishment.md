@@ -16,7 +16,6 @@ ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSReq
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -347,3 +346,6 @@ Here are a few notes and tips for working with the feature:
 
 - If you're using dynamic locations, replenishment work will be created either for the first available location or for a location that already contains inventory, if the location directive action is set up to use the **Consolidate** strategy.
 - If you're using fixed locations instead of zones, you should use [standard min/max replenishment](tasks/set-up-min-max-replenishment-process.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

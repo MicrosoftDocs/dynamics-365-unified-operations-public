@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customization analysis in Lifecycle Services (LCS)
-description: In Microsoft Dynamics Lifecycle Services, Customization analysis offers Microsoft Dynamics AX 2012 customers an automated tool that validates the customer’s model files against Microsoft Dynamics AX best-practice rules for tables, classes, forms, and enums. It then generates reports, including a summary report display on the site, a detailed Microsoft Excel report that lists all issues, and a developer report that the developer can load in the Microsoft Dynamics AX development environment. 
+description: Customization analysis is a Microsoft Dynamics AX 2012 automated tool that validates model files against best-practice rules. 
 author: RobinARH
 manager: AnnBe
 ms.date: 11/13/2017
@@ -75,3 +75,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

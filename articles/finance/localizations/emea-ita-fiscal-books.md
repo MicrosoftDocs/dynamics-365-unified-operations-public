@@ -18,7 +18,6 @@ ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, Ta
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268654
 ms.search.region: Italy
@@ -263,3 +262,6 @@ To hide these functions from the user interface for all security roles, follow t
 ![Unpublished objects](./media/unpublished-objects.png)
 
 7.	Repeat these steps for the privilege, **Reverse vendor transactions**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, C
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -162,3 +161,6 @@ Additional resources
 [Define access rights for cost object controllers](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

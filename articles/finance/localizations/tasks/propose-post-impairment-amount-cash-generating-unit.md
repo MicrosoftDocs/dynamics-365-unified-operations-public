@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -56,3 +55,6 @@ This procedure was created using the demo data company JPMF.
 8. Click OK.
 9. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -59,3 +58,6 @@ This task uses the JPMF demo company data.
     * A .zip file will be generated and you will be prompted to download the file.  
     * The Payment status will now switch to be 'Sent'.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

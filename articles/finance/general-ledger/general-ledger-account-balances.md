@@ -18,7 +18,6 @@ ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13191
 ms.assetid: ea3650ac-34a0-4516-b75b-801c2164107d
@@ -56,3 +55,6 @@ For more information, see [View financial reports](view-financial-reports.md).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

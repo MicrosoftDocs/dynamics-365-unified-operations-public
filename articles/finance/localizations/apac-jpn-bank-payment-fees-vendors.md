@@ -17,7 +17,6 @@ ms.search.form: PaymFeeBankRule_JP, VendPaymFeeGroup_JP, VendPaymModeFee
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10214
 ms.assetid: aa8a8ef3-1e5e-4174-817b-3b98e1e51509
@@ -75,3 +74,6 @@ To differentiate two different bank accounts within the same bank, you can use t
 ## Additional resources
 - [Generate and post payment fee](./tasks/post-payment-fee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

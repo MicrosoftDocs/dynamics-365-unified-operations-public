@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -73,14 +72,14 @@ The following illustration shows a column definition in a side-by-side format.
 ![Column definition in a side-by-side format](./media/column-definition-side-by-side-format.png "Column definition in a side-by-side format")
 
 ## Consolidations that use organization structures that are created from legal entities
-Organization hierarchies that contain dimensions or legal entities dynamically create reporting tree definitions in Financial reporting. An easy way to streamline consolidations is to add an organization hierarchy to your report in Financial reporting. Based on the report date, Financial reporting will select tfhe organization hierarchy on or before the effective date, as shown in the following illustration.
+Organization hierarchies that contain dimensions or legal entities dynamically create reporting tree definitions in Financial reporting. An easy way to streamline consolidations is to add an organization hierarchy to your report in Financial reporting. Based on the report date, Financial reporting will select the organization hierarchy on or before the effective date, as shown in the following illustration.
 
 ![Dynamically create reporting tree definition](./media/dynamically-create-reporting-tree-definitions.png "Dynamically create reporting tree definition")
 
 ## Consolidations that involve eliminations
 Elimination transactions are a common part of the consolidation process. In this example, five accounts are eliminated during consolidation: 142600, 211400, 401420, 401180, and 510820. Companies might set up their intercompany accounts differently. For example, some companies set the last digit to 9 if the account is used in intercompany transactions. Regardless of the method, if you know the intercompany accounts, you can show eliminations on your consolidated financial statements.
 
-The following illustration shows a column definition for a consolidated income statement. Three profit and loss intercompany accounts are defined for each company by using the dimension filter. Column D includes the elimination accounts only for the USMF company, and column E includes eliminations only for the DEMF company. Both column D and column E are set up so that they are **not** printed on the financial statement.
+The following illustration shows a column definition for a consolidated income statement. Three profit and loss intercompany accounts are defined for each company by using the dimension filter. Columns F, G, and H include the elimination accounts only for the USMF, USRT, and DEMF companies. These columns are set up so that they are **not** printed on the financial statement.
 
 ![Column definition consolidated income statement](./media/column-definition-consolidated-income-statement.png "Column definition consolidated income statement")
 
@@ -146,7 +145,7 @@ Different legal entities might have different fiscal calendars but still be requ
 - Create a column definition, and use the period and year to map the appropriate periods for each company.
 - At **Settings** \> **Other** \> **Additional Options**, select whether to consolidate by using the period end date or the period number.
 
-When you're designing the column definition for multiple companies that have different fiscal periods, it's important that you consider which company will be assigned to the **Company name** field in the report definition. That company's fiscal calendar will be used as the base fiscal calendar for the report definition. For example, the following table shows the fiscal period setup for the USMF and INMF companies. For consolidated reports, you want to use the fiscal calendar that USMF uses. The "Mapping" column shows the equivalent period and year for each company if a report is generated for June 30, 2018.
+When you're designing the column definition for multiple companies that have different fiscal periods, it's important that you consider which company will be assigned to the **Company name** field in the report definition. That company's fiscal calendar will be used as the base fiscal calendar for the report definition. For example, the following table shows the fiscal period that was set up for the USMF and INMF companies. For consolidated reports, you want to use the fiscal calendar that USMF uses. The "Mapping" column shows the equivalent period and year for each company if a report is generated for June 30, 2018.
 
 | Company   | Fiscal year                                  | Mapping                     |
 |-----------|----------------------------------------------|-----------------------------|
@@ -199,7 +198,7 @@ There are four options for calculating exchange rates in Financial reporting:
 In Financial reporting, any report can be shown in any number of reporting currencies. The following fields in the report definition support this capability:
 
 - The **Currency Information** section in the **Report Definition** page. This section shows the currency that the values are shown in when a report is generated.
-- A new **Include all reporting currencies** check box. When this check box is selected, a report for each reporting currencies will be added to the report queue up after the report that uses the company's functional currency is generated. If the check box is cleared, you can still select a reporting currency in the Web Viewer. In this case, the reporting currency will be processed only when you select it.
+- A new **Include all reporting currencies** check box. When this check box is selected, a report for each reporting currency will be added to the report queue up after the report that uses the company's functional currency is generated. If the check box is cleared, you can still select a reporting currency in the Web Viewer. In this case, the reporting currency will be processed only when you select it.
 
 The options in the report definition let you easily translate a report into all your reporting currencies. Therefore, you might be able to eliminate duplicate report definitions that differ only in the currencies that are used. If you require a report that shows multiple currencies side by side, you can continue to use the **Currency display** field in the **Column Definition** page to translate just that column of the report into an alternate reporting currency.
 
@@ -230,3 +229,6 @@ To get correctly translated amounts when currencies are used, Financial reportin
 For more information about consolidation and currency translations, see the parent topic of this topic, [Financial consolidations and currency translation overview](./financial-consolidations-currency-translation.md).
 
 For more information about how to enter details of consolidations online, see [Online financial consolidations](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

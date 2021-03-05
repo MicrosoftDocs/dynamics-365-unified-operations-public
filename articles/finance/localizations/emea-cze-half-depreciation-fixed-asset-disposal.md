@@ -17,7 +17,6 @@ ms.search.form: AssetDepreciationProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264554
 ms.search.region: Czech Republic
@@ -62,3 +61,6 @@ After you set up the depreciation methods, you can apply half the yearly depreci
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

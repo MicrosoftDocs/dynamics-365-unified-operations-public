@@ -17,7 +17,6 @@ ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSi
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -66,3 +65,6 @@ This procedure walks you through the process of creating and posting an inventor
 2. Click Transactions.
     * Here you can see the transactions that were created when you posted your journal.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Report definitions in financial report designer
-description: This article provides information about report definitions. A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report. A report definition also provides options and settings that for customizing a report. 
+description: This article provides information about report definitions.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -89,3 +89,6 @@ The following table describes the tabs in a report definition and how the inform
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

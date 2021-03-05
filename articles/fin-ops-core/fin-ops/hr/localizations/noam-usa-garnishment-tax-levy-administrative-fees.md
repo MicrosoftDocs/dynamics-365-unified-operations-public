@@ -23,7 +23,7 @@ ms.custom: 221144
 ms.assetid: e87ff0bd-0594-45a6-bd54-5f8d085e1894
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -95,3 +95,6 @@ Yes. For example, if 1,000.00 remains before a worker's pay reaches 0 (zero), an
 [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 
 [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

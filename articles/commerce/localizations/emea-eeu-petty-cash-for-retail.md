@@ -17,12 +17,11 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ---
@@ -97,3 +96,6 @@ Use the following procedure to set up a payment method for cash payments in a st
 
 > [!NOTE]
 > You must set up offset accounts for both the cash tender payment method and the remove tender or float entry payment method for a store. This creates balanced general ledger entries for remove tender or float entry transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

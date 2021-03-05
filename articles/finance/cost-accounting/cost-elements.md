@@ -18,7 +18,6 @@ ms.search.form: CAMDimension
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 223204
 ms.assetid: 1eda0e62-760b-4737-9dfd-3c3c38d80c1a
@@ -81,3 +80,6 @@ As cost elements represent the lowest level of cost details, you should make sur
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -164,3 +163,6 @@ Find more details in the following topics:
 - [Agreements](rus-agreements.md)
 - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
 - [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -59,3 +58,6 @@ The fixed asset can now be depreciated by using the standard depreciation functi
 
 > [!NOTE]
 > If you associate a fixed asset with a lease, the **Asset depreciation** and **Lease impairment** buttons are disabled in Asset leasing. You can view asset depreciation and lease impairment transactions from Fixed assets. The **Asset transactions** button, which opens an inquiry form is also disabled. You can also open the **Asset transactions** inquiry form in Fixed assets.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

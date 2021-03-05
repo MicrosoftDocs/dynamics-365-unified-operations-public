@@ -18,7 +18,6 @@ ms.search.form: CustParameters, PrintMgmtSetupUIMain, Reasons
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273063
 ms.search.region: Czech Republic
@@ -104,3 +103,6 @@ you set up for credit notes. The document printout is named **Tax corrective
 document**. It includes the original invoice number, the VAT base and amount,
 and the reason why a correction was printed.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

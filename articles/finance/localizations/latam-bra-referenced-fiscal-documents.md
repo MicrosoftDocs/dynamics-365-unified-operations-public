@@ -18,7 +18,6 @@ ms.search.form: FiscalDocument_BR, SalesEditLines, TmpFiscalReference_BR
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270224
 
@@ -103,3 +102,6 @@ Fiscal document text placeholders are predefined tags that represent specific va
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

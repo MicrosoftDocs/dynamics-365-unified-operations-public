@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,7 @@ The new grid control provides several useful and powerful capabilities that you 
 -  Typing ahead of the system
 -  Evaluating math expressions 
 -  Grouping tabular data (enabled separately using the **(Preview) Grouping in grids** feature)
--  Pinned system columns
+-  Freezing columns
 
 ## Calculating totals
 In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids. A footer section at the bottom of the grid shows these totals. 
@@ -121,13 +121,19 @@ Note, prior to version 10.0.16/Platform update 40, only one level of grouping is
 The initial grouping of data will have all groups expanded. You can create summarized views of the data by collapsing individual groups, or you can use group expanding and collapsing to assist in navigating through the data. To expand or collapse a group, select the chevron (>) button in the corresponding group header row. Note that the expand/collapse state of individual groups is **not** saved in personalization.
 
 ### Selecting and unselecting rows at the group level
-In the same way that you can select (or unselect) all rows in the grid by selecting the check box at the top of the first column in the grid, you can also quickly select (or unselect) all the rows in a group by selecting the check box in the corresponding group header row. The check box in the group header row will always reflect the current selection state of rows in that group, regardless if all rows are selected, no rows are selected, or only some rows are selected.
+In the same way that you can select (or unselect) all rows in the grid by selecting the check box at the top of the first column in the grid, you can also quickly select (or unselect) all the rows in a group by selecting the check box in the corresponding group header row. The check box in the group header row will always reflect the current selection state of rows in that group, regardless of whether all rows are selected, no rows are selected, or only some rows are selected.
 
 ### Hiding column names
 When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14/Platform update 38, you can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
 
-## Pinned system columns
-The row selection column and row status column in the new grid are pinned, or frozen, on the leftmost part of the grid. Therefore, when these columns are included in a grid, they will always be visible to the user, regardless of the horizontal scroll position in the grid.   
+## Freezing columns
+Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you want the values in those columns always to be visible. In version 10.0.17, the **Freeze columns in grid** feature provides this flexibility to users. 
+
+To freeze a column, right-click in the column's header, and then select **Freeze column**. The first time that you complete this step, the selected column becomes the first column and will no longer scroll out of view. Any subsequent column that you freeze will be added to the right of the last frozen column. You can use the standard Move functionality to reorder frozen columns as you require. However, frozen columns can't be moved so that they appear among the set of unfrozen columns. Likewise, unfrozen columns can't be moved so that they appear among the set of frozen columns.
+
+To unfreeze a column, right-click in the frozen column's header, and then select **Unfreeze column**. 
+
+Note that the row selection and row status columns in the new grid are always frozen as the first two columns. Therefore, when these columns are included in a grid, they will always be visible to users, regardless of the horizontal scroll position in the grid. These two columns can't be reordered.
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
@@ -163,7 +169,7 @@ This API will be honored until the October 2021 release, when the new grid contr
 If a developer sets the **WidthMode** property to **SizeToAvailable** for columns inside the new grid, those columns initially have the same width that they would have if the property were set to **SizeToContent**. However, they stretch to use any extra available width inside the grid. If the property is set to **SizeToAvailable** for multiple columns, all those columns share any extra available width inside the grid. However, if a user manually resizes one of those columns, the column becomes static. It will remain at that width and will no longer stretch to take up extra available grid width.  
 
 ## Known issues
-This section maintains a list of known issues for the new grid control while the feature is in a preview state.  
+This section maintains a list of known issues for the new grid control.  
 
 ### Open issues
 -  After enabling the **New grid control** feature, some pages will continue to utilize the existing grid control. This will happen in the following situations:  
@@ -174,20 +180,44 @@ This section maintains a list of known issues for the new grid control while the
     When a user first encounters one of these situations, a message will display about refreshing the page. After this message appears, the page will continue to utilize the existing grid for all users until the next product version update. Better handling of these scenarios, so that the new grid can be utilized, will be considered for a future update.    
     
 -  [KB 4582758] Records are blurry when you change zoom from 100 to any other percentage
-    
+-  [KB 4592012] Unexpected client error in IE11 when pasting multiple lines from Excel
+    -  Microsoft is not pursuing a fix for this issue
+
+### Fixed as part of 10.0.16
+
+-  [KB 4598335] Multi-line string controls do not respect their DisplayHeights in lists/cards 
+-  [KB 4591891] Invoice proposal lines disappear when unmarking lines
+-  [KB 4592104] Unable to edit records after clicking "Fix issue" and moving to a different row without fixing the validation issue
+-  [KB 4594449] "Never" and "Clear" buttons missing inside the date picker 
+-  [KB 4594448] Entering time is treated differently with the new grid
+-  [KB 4600059] Unexpected client error with email throttling
+-  [KB 4574584] Expense attachment preview not available when hovering over the receipt icon
+
 ### Fixed as part of 10.0.15    
 
--  [KB 4582723]  Display options not showing when done later in the form life cycle
+-  (Quality update) [KB 4594444] Unexpected client error with preview for segmented entry control
+-  [KB 4582723] Display options not showing when done later in the form life cycle
+-  [KB 4591988] Issues using the keyboard to select a value from a ReferenceGroup lookup
+-  [KB 4588958] Regression Suite Automation Tool (RSAT) test fails with error: TypeError: Cannot read property 'text' of undefined
+-  [KB 4591970] Unexpected client error when pasting from Excel was done immediately after clicking into the grid
+-  [KB 4591904] Data changes are not saved if after editing a control the user immediately clicked and opened the lookup of a different control
+-  [KB 4584752] Unexpected client error with Project invoice proposals page
+-  [KB 4584540] Unable to leave the grid after pasting a single row into a journal line
+-  [KB 4591908] When creating a new row, focusing is staying in the column you were in
 
 ### Fixed as part of 10.0.14
 
 -  (Quality update) [KB 4584752] Unexpected client error with Project invoice proposals page
+-  [KB 4583880] Regression Suite Automation Tool (RSAT) tests fail on OpenLookup action with "Cannot read property RowIndex of undefined"
+-  [KB 4583847] Unexpected client error when navigating through lookups
 
 ### Fixed as part of 10.0.13
 
+-  (Quality update) [KB 4584752] Unexpected client error with Project invoice proposals page
 -  (Quality update) [KB 4583880] Regression Suite Automation Tool (RSAT) tests fail on OpenLookup action with "Cannot read property RowIndex of undefined"
 -  (Quality update) [KB 4583847] Unexpected client error when navigating through lookups 
 -  (Quality update) [Bug 471777] Cannot select fields in a grid to edit or create a mobile app
+-  [KB 4582727] Grid freezes after user gets dialog for items with multiple quantities
 -  [Bug 474851] Hyperlinks in reference group controls don't work 
 -  [Bug 474848] Enhanced previews with grids do not display
 -  [KB 4582726] The RotateSign property isn't being respected  
@@ -267,3 +297,6 @@ This section maintains a list of known issues for the new grid control while the
 ### Quality update for 10.0.9/Platform update 33
 
 - [KB 4550367] Time values aren't formatted correctly.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

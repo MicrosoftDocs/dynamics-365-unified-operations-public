@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
@@ -541,3 +540,6 @@ The following variations can be done for scenario 1, based on the requirements f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ loadLine = data.whs().loadLines().query().forLoad(load).withInventQty(10).single
 
 transferLine = data.invent().transferOrderLines().query().forTransferOrder(transferOrder).withInventDims([batch1]).single();
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

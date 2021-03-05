@@ -18,7 +18,6 @@ ms.search.form: SMADispatchBoard
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -57,3 +56,6 @@ For information about how to assign a worker to a team, see [Set up a preferred 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -47,3 +46,6 @@ Use this procedure to create a sales complementary fiscal document to adjust a s
 12. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
 13. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

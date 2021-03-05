@@ -382,3 +382,6 @@ Notice that the web browser offers a zip file for download. This file contains t
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

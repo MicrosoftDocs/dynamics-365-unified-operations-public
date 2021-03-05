@@ -17,7 +17,6 @@ ms.search.form:  WHSRFAutoConfirm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -52,3 +51,6 @@ You can configure batch and license plate confirmation from the mobile device me
 
 1. From the mobile device menu items, enter the work confirmation setup.  
 1. Select the option for either batch or license plate confirmation. Both options are available for work type picks that do not have automatic confirmation enabled.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: VendConsInvoice_JP, SysQueryForm
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -58,3 +57,6 @@ This procedure was created using the demo data company JPMF.
     * Confirm the purchase orders  invoiced before the Consolidation date  added  
 3. Click Confirm.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

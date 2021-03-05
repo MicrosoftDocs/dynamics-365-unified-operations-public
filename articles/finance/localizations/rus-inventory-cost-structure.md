@@ -16,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -222,3 +221,6 @@ On the **Settlements** page, you can view inventory cost adjustment transactions
 On the **Settlements** and **Cost explorer** pages, the miscellaneous charges codes that have the **Item** debit type and the **Ledger account** credit type are shown as a separate line. The miscellaneous charges codes that have other debit and credit types are included in the item cost price as direct charges (standard functionality). They aren't allocated on the **Settlements** page. Therefore, they aren't shown as a separate line on the **Cost explorer** page.
 
 If the **Charges code** field on the **Settlements** page isn't set, a charges code won't be shown on the **Cost explorer** page. If the **Charges code** field on the **Settlements** page is set, the charges code will be shown as a separate line on the **Cost explorer** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

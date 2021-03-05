@@ -17,7 +17,6 @@ ms.search.form: BankDocumentFacilityAgreement, BankAccountTableLookUp, BankDocum
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -54,3 +53,6 @@ This task walks through the creating a Bank facility agreement to process a Lett
 18. Click Extend.
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

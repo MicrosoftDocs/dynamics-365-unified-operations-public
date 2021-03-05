@@ -17,12 +17,11 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia 
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.1
 
@@ -93,3 +92,6 @@ Follow these steps to enable documents to be printed from POS on a Windows print
 
 4. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 5. Select job **1090**, and then select **Run now**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

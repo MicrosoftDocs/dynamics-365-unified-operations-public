@@ -72,12 +72,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.17 (April 2021)
+            href: get-started/whats-new-scm-10-0-17.md
           - name: Supply Chain Management 10.0.16 (February 2021)
             href: get-started/whats-new-scm-10-0-16.md
           - name: Supply Chain Management 10.0.15 (January 2021)
             href: get-started/whats-new-scm-10-0-15.md
-          - name: Supply Chain Management 10.0.14 (November 2020)
-            href: get-started/whats-new-scm-10-0-14.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -154,6 +154,8 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Standard saved views for Supply Chain Management
+          href: get-started/saved-views-scm.md
         - name: Grid capabilities
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
@@ -174,8 +176,8 @@
           href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
         - name: Architecture for Finance and Operations apps
           href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Microsoft FastTrack for Finance and Operations
-          href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Microsoft FastTrack
+          href: https://docs.microsoft.com/dynamics365/fasttrack/
         - name: Onboard an implementation project
           href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
         - name: Environment planning
@@ -224,6 +226,8 @@
         href: cloud-edge/cloud-edge-workload-manufacturing.md
       - name: Warehouse management workloads for cloud and edge scale units
         href: cloud-edge/cloud-edge-workload-warehousing.md
+      - name: Warehouse orders for cloud and edge scale units
+        href: cloud-edge/cloud-edge-warehouse-order.md
     - name: Asset management
       items:
       - name: Asset management overview
@@ -363,6 +367,8 @@
         items:
         - name: Forecasts, work orders, and projects
           href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+        - name: Bill for maintenance on customer-owned assets
+          href: asset-management/integration-to-project-management-and-accounting/customer-billing.md
       - name: Integrate asset management with fixed assets
         href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
       - name: Preventive and reactive maintenance
@@ -439,10 +445,14 @@
           href: asset-management/controlling-and-reporting/item-where-used.md
         - name: Maintenance status
           href: asset-management/controlling-and-reporting/maintenance-status.md
+      - name: Asset management from the mobile app
+        items: 
+        - name: Set up the Asset management mobile workspace
+          href: asset-management/set-up-asset-management-mobile.md
+        - name: Use the Asset management mobile workspace
+          href: asset-management/asset-management-mobile-workspace.md
       - name: Integrate asset management with Dynamics 365 Guides
         href: asset-management/asset-management-guides-integration.md
-      - name: Asset management mobile workspace
-        href: asset-management/asset-management-mobile-workspace.md
     - name: Data management
       items:
       - name: Target entities
@@ -1379,12 +1389,18 @@
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
+        - name: Purchase requisitions
+          href: master-planning/planning-optimization/purchase-requisitions.md
+        - name: Production planning
+          href: master-planning/planning-optimization/production-planning.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
           href: master-planning/planning-optimization/Intercompany-planning.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
+        - name: Coverage time fences
+          href: master-planning/planning-optimization/coverage-time-fence.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Auto-firming with Planning Optimization
@@ -1911,6 +1927,8 @@
           href: production-control/bom-designer-functionality.md
         - name: Use the formula designer
           href: production-control/formula-designer.md
+        - name: Override the default reservation principle for materials in production
+          href: production-control/override-default-reservation-principle.md
         - name: Add variant products to purchase orders using variant weights
           href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
         - name: Create a sales order for a configurable product
@@ -2003,6 +2021,8 @@
         href: engineering-change-management/engineering-attributes-and-search.md
       - name: Engineering versions and engineering product categories
         href: engineering-change-management/engineering-versions-product-category.md
+      - name: Enable change management on existing products
+        href: engineering-change-management/change-management-existing-products.md
       - name: Product lifecycle state and transactions
         href: engineering-change-management/product-lifecycle-state-transactions.md
       - name: Manage changes to engineering products
@@ -2029,6 +2049,8 @@
             href: production-control/bill-of-material-bom.md
           - name: BOM designer functionality
             href: production-control/bom-designer-functionality.md
+          - name: Override the default reservation principle for materials in production
+            href: production-control/override-default-reservation-principle.md
           - name: Phantom items
             href: production-control/phantom-items.md
           - name: BOM calculations
@@ -2109,6 +2131,8 @@
               href: production-control/production-floor-execution-setup.md
             - name: How workers use the production floor execution interface
               href: production-control/production-floor-execution-use.md
+            - name: User interface control styles for production floor execution
+              href: production-control/production-floor-execution-styles.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
@@ -2709,6 +2733,54 @@
         href: transportation/tasks/set-up-shipping-carriers.md
       - name: Set up transportation constraints for an item
         href: transportation/tasks/set-up-transportation-constraints-item.md
+    - name: Landed cost
+      items:
+      - name: Landed cost module overview
+        href: landed-cost/landed-cost-overview.md
+      - name: How Landed cost compares with Transportation management
+        href: landed-cost/landed-cost-vs-tms.md
+      - name: Set up and configure the Landed cost module
+        items:
+        - name: Landed cost parameters
+          href: landed-cost/landed-cost-parameters.md
+        - name: Landed cost procurement and sourcing parameters
+          href: landed-cost/landed-cost-procurement-parameters.md
+        - name: Voyage status setup
+          href: landed-cost/voyage-status-setup.md
+        - name: Shipping container setup
+          href: landed-cost/shipping-container-setup.md
+        - name: Delivery information setup
+          href: landed-cost/delivery-information-setup.md
+        - name: Multi-leg journey setup
+          href: landed-cost/multi-leg-journey-setup.md
+        - name: Shipping information setup
+          href: landed-cost/shipping-information-setup.md
+        - name: Costing parameter values setup
+          href: landed-cost/costing-parameters-setup.md
+        - name: Default descriptions for the general ledger
+          href: landed-cost/defult-descriptions.md
+      - name: Vendor settings added for Landed cost
+        href: landed-cost/vendors-landed-cost-settings.md
+      - name: Work with voyages, containers, and folios
+        items:
+        - name: Manage voyages
+          href: landed-cost/manage-voyages.md
+        - name: Manage shipping containers
+          href: landed-cost/manage-shipping-containers.md
+        - name: Manage folios
+          href: landed-cost/manage-folios.md
+      - name: Track inbound voyages and shipping container journeys
+        href: landed-cost/inbound-tracking.md
+      - name: Estimate and manage landed costs
+        href: landed-cost/estimate-manage-landed-costs.md
+      - name: In-transit processing
+        href: landed-cost/in-transit-processing.md
+      - name: Process over/under transactions
+        href: landed-cost/over-under-transactions.md
+      - name: Landed cost inquiries
+        href: landed-cost/landed-cost-inquiries.md
+      - name: Landed cost reports
+        href: landed-cost/landed-cost-reports.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
@@ -2759,6 +2831,8 @@
             href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
+          - name: Set different dimensions for packing and storage
+            href: warehousing/packing-vs-storage-dimensions.md
           - name: Set up containerization
             href: warehousing/tasks/set-up-containerization.md
           - name: Batch and license plate confirmation
@@ -2825,6 +2899,8 @@
             href: warehousing/wave-template-grouping.md
           - name: Reprint and void wave labels
             href: warehousing/reprint-and-void-wave-labels.md
+          - name: Small parcel shipping
+            href: warehousing/small-parcel-shipping.md
           - name: Troubleshoot load building and shipments
             href: warehousing/troubleshoot-warehouse-loads-shipments.md
         - name: Shipment consolidation policies
@@ -2917,12 +2993,16 @@
             href: warehousing/control-warehouse-location-directives.md
           - name: Work with location directives
             href: warehousing/create-location-directive.md
+          - name: Configure product filters for warehouse transactions
+            href: warehousing/filters-and-filter-codes.md
           - name: Location stocking limits
             href: warehousing/location-stocking-limits.md
           - name: Wave step codes
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
             href: warehousing/tasks/configure-wave-processing.md
+          - name: Schedule work creation during wave
+            href: warehousing/configure-wave-schedule-work-creation.md
           - name: Set up and use wave label printing
             href: warehousing/configure-wave-label-printing.md
           - name: Auto-update shipments
@@ -2957,6 +3037,10 @@
             href: warehousing/troubleshoot-warehouse-configuration.md
         - name: Install and configure the warehouse app
           items:
+          - name: Install and connect the Warehouse Management mobile app
+            href: warehousing/install-configure-warehouse-management-app.md
+          - name: Mobile device user settings
+            href: warehousing/mobile-device-user-settings.md
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
           - name: Scan bar codes using a camera in the warehouse app

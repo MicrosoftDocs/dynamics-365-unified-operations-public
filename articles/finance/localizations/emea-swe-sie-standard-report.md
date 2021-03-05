@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Sweden
@@ -43,3 +42,6 @@ You can export financial data using the formats specified by the Standard Import
   - Type 4I – Exports transactions. 
   - Type 4E – Exports period balances and transactions. 
 8. Click **OK**. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

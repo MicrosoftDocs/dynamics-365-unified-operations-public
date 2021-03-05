@@ -17,7 +17,6 @@ ms.search.form: FinancialDimensionDefaultTemplates, DimensionLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -45,3 +44,6 @@ This topic shows how to set up financial dimension default templates. The templa
 11. Enter the financial dimension values that correspond to the percent entered.
 12. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

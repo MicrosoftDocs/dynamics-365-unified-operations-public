@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Bahrain
@@ -35,3 +34,6 @@ ms.dyn365.ops.version: 10.0.13
 This topic includes information and links to documentation resources for Oman.
 
 - [Reverse charge VAT](emea-reverse-charge.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

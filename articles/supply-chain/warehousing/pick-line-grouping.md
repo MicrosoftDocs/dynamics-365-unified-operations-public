@@ -18,7 +18,6 @@ ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -176,3 +175,6 @@ Before you can set up pick line grouping, you must create some eligible outbound
 >   - Work lines that have unfinished replenishment work
 >   - Over-picking
 >   - Short picking with item reallocation
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

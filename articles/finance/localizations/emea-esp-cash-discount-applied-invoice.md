@@ -18,7 +18,6 @@ ms.search.form: LedgerParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261474
 ms.search.region: Spain
@@ -48,3 +47,6 @@ Usually, cash discounts are calculated during the settlement process for custome
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

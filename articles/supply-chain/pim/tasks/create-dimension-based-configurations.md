@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductO
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -56,3 +55,6 @@ This procedure shows how to define a configuration for a dimension-based product
     * Enter a description of the configuration to explain what it contains.  
 11. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: Taxreport770Table_IT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Italy
@@ -147,3 +146,6 @@ The Model 770 report exports the information to an ASCII file that will be submi
 23. Select **Export**, and then, on the **Export** page, in the **File name** field, specify the name of the compressed file to download. This compressed file contains the Model 770 report as an ASCII file.
 24. Select the **Final export** check box to start the import process by bypassing the validation logic in the government import tool. You can also select this check box if you're working with a report that was previously submitted and rejected, but that you consider correct and complete per the available information that is published on the [Italian Revenue Agency](https://www.agenziaentrate.gov.it) website.
 25. Select **OK** to export the Model 770 report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

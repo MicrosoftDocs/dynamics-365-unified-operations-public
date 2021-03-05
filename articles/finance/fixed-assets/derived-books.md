@@ -18,7 +18,6 @@ ms.search.form: AssetBookTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3401
 ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
@@ -53,3 +52,6 @@ For more information, see [Post with derived books](post-derived-value-models.md
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

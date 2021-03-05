@@ -17,7 +17,6 @@ ms.search.form: VendTable, VendCertification, DirPartyLookup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -46,3 +45,6 @@ You can create and assign to vendors any type of certification that they may hol
     * Complete the details.   
 12. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

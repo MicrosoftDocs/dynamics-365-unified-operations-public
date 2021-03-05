@@ -17,7 +17,6 @@ ms.search.form: WHSLoadTemplate
 audience: Application User 
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -57,3 +56,6 @@ This topic describes how to set up load templates, and how to associate a load t
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
 1. In the **Load template** dialog box, in the **Load template ID** field, select the template to apply.
 1. Select **OK** to apply the template.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, P
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
@@ -152,3 +151,6 @@ The accessible information is the vendor name, addresses, contact information, c
 ## Additional resources
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Practice manager Power BI content
-description: This topic describes what is included in the Practice manager Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that are used to build the content.
+description: This topic describes what is included in the Practice manager Power BI content.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -123,3 +123,6 @@ The following sections describe the aggregate measurements that are used in each
 | Key aggregate measurement       | Field               | Description |
 |---------------------------------|---------------------|-------------|
 | Completed activity planned cost | Sum(TotalCostPrice) | The total cost price in estimates for all project transaction types that have completed tasks. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

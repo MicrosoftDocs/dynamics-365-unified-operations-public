@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -54,3 +53,6 @@ This procedure was created using the demo data company JPMF.
     * Two fixed assets in the Impairment test were proposed with the following information: Fixed asset number, the impairment amount on credit, and the date as the date in impairment test.  
 11. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: VendPaymFee, VendPaymModeFee, BankAccountTableLookUp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -62,3 +61,6 @@ Set up vendor payment fees. This task uses the USMF demo company.
     * This currency is for the fee. The payment currency is used to define when the fee rule should be assessed based on the payment's currency. For example, your bank may charge a fee when a payment is made in EUR, but all other payments aren't assessed a fee.  
 18. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

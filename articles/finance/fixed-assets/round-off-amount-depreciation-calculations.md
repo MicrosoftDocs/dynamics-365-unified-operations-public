@@ -18,7 +18,6 @@ ms.search.form: AssetBookTable, AssetDepBookTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13931
 ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
@@ -55,3 +54,6 @@ Depreciation without rounding is calculated as 2,444.44. As the following table 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

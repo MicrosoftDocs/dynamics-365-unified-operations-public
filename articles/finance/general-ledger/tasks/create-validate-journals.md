@@ -3,7 +3,7 @@
  
 title: Create and validate journals
 description: This procedure creates and validates journals and journal lines. 
-author: ryansandness
+author: panolte
 manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransDaily
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -46,3 +45,6 @@ This procedure creates and validates journals and journal lines. You can try thi
 12. Click **Post**.
 13. Click **Voucher**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

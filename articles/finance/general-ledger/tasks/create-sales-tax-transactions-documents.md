@@ -17,7 +17,6 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTran
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -63,3 +62,6 @@ Sales tax on documents is calculated by providing a Sales tax group and an Item 
 29. Click Sales tax.
 30. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

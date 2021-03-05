@@ -17,7 +17,6 @@ ms.search.form: TMSRateRouteWorkbench, TMSDriverLogListPage, TMSTransportationTe
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -68,3 +67,6 @@ container is used.
 -   To set the container utilization percentage, click **Warehouse management**
     \> **Setup** \> **Containers** \> **Container groups**, and then enter a
     value in the **Container utilization percentage** field.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Switzerland
@@ -171,3 +170,6 @@ Create vendor payment journal lines by using the payment proposal functionality.
 For payments that are related to QR-bills, the credit transfer file is generated based on the payment ID value. This value is retrieved from the QR code.
 
 You can import the pain.002 and camt.054 files from the **Payment transfers** page. For more information, see [Import ISO20022 files](emea-iso20022-file-formats.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

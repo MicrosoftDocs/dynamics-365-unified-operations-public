@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
@@ -150,3 +149,6 @@ The following duties and privileges have been added for vendor payment proposal 
 | Inquiry into schedule occurrences | Accounts payable payment clerk, Accounts payable Centralized payment clerk | This duty grants the rights to view the payment proposal automation occurrences through the following privileges:<ul><li>View schedule occurrences</li><li>View the occurrence weekly view</li></ul> |
 | Inquire into schedule series      | None                                                                       | This duty grants the rights to view the settings of the series and occurrences through the following privileges:<ul><li>View schedule occurrences</li><li>View the occurrences list page</li><li>View the occurrence weekly view</li></ul>|
 | Maintain schedule occurrences     | None                                                                       | This duty grants the rights to create and maintain an occurrence through the following privileges:<ul><li>Maintain schedule occurrences</li><li>View the occurrence weekly view</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

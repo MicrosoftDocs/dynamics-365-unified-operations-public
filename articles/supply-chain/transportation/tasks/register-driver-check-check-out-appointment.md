@@ -17,7 +17,6 @@ ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -48,3 +47,6 @@ This procedure shows how to register a driver check-in and a driver check-out. T
 1. Click Driver check-out.
 2. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

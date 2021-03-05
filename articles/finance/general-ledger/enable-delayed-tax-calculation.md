@@ -19,7 +19,6 @@ ms.search.form: TaxTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -72,3 +71,6 @@ The system gives priority to the setting for the journal header. By default, thi
 4. On the **Setup** tab, set the **Delayed tax calculation** option to **Yes**.
 
 ![General journal page image](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

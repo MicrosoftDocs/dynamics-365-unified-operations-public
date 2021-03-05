@@ -17,7 +17,6 @@ ms.search.form: ERWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59201
 ms.search.region: Austria, Germany
@@ -226,3 +225,6 @@ The following tables show the Accounts payable data structure definitions.
 - [Import German audit file configuration](./tasks/import-german-audit-file-configuration.md)
 - [Customize German audit file configuration](./tasks/customize-german-audit-file-configuration.md)
 - [Generate German audit file](./tasks/german-audit-file.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

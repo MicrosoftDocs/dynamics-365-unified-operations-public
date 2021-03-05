@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -240,3 +239,6 @@ export default (props: IWarrantylistViewProps) => {
 [Event-based data actions](event-based-data-actions.md)
 
 [Core data actions](core-data-actions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: global
@@ -79,3 +78,6 @@ The **Alias**, **UPN**, and **External sub identifier** fields on the **Commerce
 [Create a retail functionality profile](retail-functionality-profile.md)
 
 [Configure a worker](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

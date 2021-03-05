@@ -17,7 +17,6 @@ ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJour
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -71,3 +70,6 @@ This is the fifth of five procedures that demonstrate the customer payment proce
 11. Click OK.
 12. Click OK.
 13. Click Create payments.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

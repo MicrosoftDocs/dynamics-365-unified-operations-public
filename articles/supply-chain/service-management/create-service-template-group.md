@@ -18,7 +18,6 @@ ms.search.form: smatemplategroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -44,3 +43,6 @@ You can use service template groups to sort and filter service templates.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

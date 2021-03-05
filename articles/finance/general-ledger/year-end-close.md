@@ -18,7 +18,6 @@ ms.search.form: LedgerClosingSheet
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
@@ -93,3 +92,6 @@ For more information, see [Close the general ledger at period end](close-general
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

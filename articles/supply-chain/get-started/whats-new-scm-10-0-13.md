@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -85,3 +84,6 @@ The [Removed or deprecated features in Dynamics 365 Supply Chain Management](rem
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

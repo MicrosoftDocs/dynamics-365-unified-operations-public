@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -51,3 +50,6 @@ This procedure walks through creating financial dimensions for point of sale (PO
 17. In the list, find and select the dimension value for the register being updated.
 18. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

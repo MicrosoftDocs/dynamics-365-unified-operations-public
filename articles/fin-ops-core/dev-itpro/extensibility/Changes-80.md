@@ -580,3 +580,6 @@ The following table lists additional changes that have been made for extensibili
 |Modify index: table InventTestAssociationTable|
 |Entity UnitOfMeasureEntity switched to public|
 |Entity UnitOfMeasureTranslationEntity switched to public|
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

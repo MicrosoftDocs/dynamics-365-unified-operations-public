@@ -1238,3 +1238,6 @@ Notice that the footer of the generated report doesn't contain the name of ER fo
 - [IF function](er-functions-logical-if.md)
 - [ORDERBY function](er-functions-list-orderby.md)
 - [SESSIONNOW function](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

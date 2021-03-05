@@ -17,7 +17,6 @@ ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -92,3 +91,6 @@ To ignore payments and credit memos when calculating the collection letter code,
 
 1. Go to **Navigation pane > Modules > Credit and collections > Setup > Accounts receivable parameters** and click the **Collections** tab. 
 2. Change the value of **Ignore payments and credit memos when calculating the collection letter code** to **Yes**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ In Finance and Operations version 10.0.5, the Backup storage of ER templates fea
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

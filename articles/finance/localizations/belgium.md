@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: belgium
@@ -57,3 +56,6 @@ For information about standard reports that can help you with the INTERVAT tax d
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Localization and regulatory features](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

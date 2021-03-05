@@ -17,7 +17,6 @@ ms.search.form: AssetParameters, AssetProposalDepreciation, DefaultDashboard, Le
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -54,3 +53,6 @@ Fixed asset depreciation can be run across legal entities in a single step. This
 5. Click Create journal.
 6. Go to Fixed assets > Journal entries > Fixed assets journal.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTabl
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -59,3 +58,6 @@ This task guide will walk through creation and acquisition of a fixed asset with
 17. In the list, click the link in the selected row.
 18. Click **Post**. The fixed asset will be created and acquired when the invoice is posted.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

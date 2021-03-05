@@ -17,7 +17,6 @@ ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269664
 ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
@@ -135,3 +134,6 @@ Per Italian legislation, rules apply to settlement periods. For example, after t
 |   <strong>Closed</strong>    | Indicates if the Italian sales tax book for the period has been updated and automatically closed. |
 | <strong>Last period</strong> |             Select this option if the period is the last period in a sales tax year.              |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

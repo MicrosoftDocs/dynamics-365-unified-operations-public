@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269174
 
@@ -80,3 +79,6 @@ When you post the approved payment lines, the three payment lines are posted to 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

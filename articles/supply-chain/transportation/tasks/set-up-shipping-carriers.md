@@ -16,7 +16,6 @@ ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -74,3 +73,6 @@ This topic shows how to set up a shipping carrier and define details such as ser
 9. In the **Transit time engine** field, select an option from the drop-down menu.
 10. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

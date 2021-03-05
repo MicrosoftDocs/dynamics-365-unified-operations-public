@@ -17,7 +17,6 @@ ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ This procedure shows how to create a special depreciation allowance and associat
     * The default for Percentage or Amount comes from the special depreciation allowance setup.  
 8. In the Priority field, enter a number.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -188,3 +187,6 @@ Here are some of the consolidation scenarios that Financial reporting supports:
 
 ## Generating consolidated financial statements
 For information about scenarios where you might generate consolidate financial statements, see [Generate consolidated financial statements](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransD
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
@@ -62,3 +61,6 @@ This procedure was created using the demo data company CNMF. For the CNMF demo d
 23. Select the Print account dimension check box.
 24. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

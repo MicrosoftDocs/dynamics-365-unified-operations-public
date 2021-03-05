@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
 ms.assetid: 
@@ -252,3 +251,6 @@ You can view the submission logs for all submitted documents.
 - [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
 - [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
 - [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

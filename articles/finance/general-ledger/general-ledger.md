@@ -18,7 +18,6 @@ ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65431
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
@@ -87,3 +86,6 @@ Check out the how-to videos that are now available on the
 
 - [What you should know about ledger in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

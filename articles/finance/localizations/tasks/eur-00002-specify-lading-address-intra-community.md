@@ -17,7 +17,6 @@ ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, Transp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
@@ -76,3 +75,6 @@ This procedure applies to all European countries/regions. The task was created u
 37. Click the General tab.
     * Find a newly created line and verify that the sender shipped the goods from Italy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -71,3 +70,6 @@ Use this procedure to create a sales quotation that uses Brazilian taxes. You ca
 35. Close the page.
 36. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -23,7 +23,7 @@ ms.custom: 233764
 ms.assetid: 233c40f6-3e9e-4ed4-b42c-4643a68946e1
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -82,3 +82,6 @@ After you finalize all the earnings, you're ready to generate pay statements. Fo
 ## Additional resources
 
 [Earnings and earnings generation FAQ](noam-usa-earnings-generation-process.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

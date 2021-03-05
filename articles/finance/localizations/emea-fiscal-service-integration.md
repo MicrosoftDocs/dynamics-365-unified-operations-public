@@ -17,7 +17,6 @@ ms.search.form: CashRegister_W
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria, Czech Republic 
@@ -354,3 +353,6 @@ The following table describes the fields for cash register payment transactions.
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

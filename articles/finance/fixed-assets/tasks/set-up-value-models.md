@@ -17,7 +17,6 @@ ms.search.form: AssetBookTable, AssetGroupBookSetup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-# ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -57,3 +56,6 @@ This procedure shows you to how create a new fixed asset book and associate it w
     * Note that Depreciation periods is calculated after setting the Service life.  
     * You are able to set the depreciation convention as required for tax purposes.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

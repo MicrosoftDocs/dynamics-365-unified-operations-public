@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-# ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -76,3 +75,6 @@ Every month, for each fiscal establishment, the tax credit amount is calculated 
 42. Close the page.
 43. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

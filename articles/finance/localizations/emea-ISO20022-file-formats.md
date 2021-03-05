@@ -17,7 +17,6 @@ ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-# ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
@@ -136,3 +135,6 @@ For more information about Electronic reporting, refer to [Electronic reporting 
 - [Set up method of payment for ISO20022 credit transfer](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Setup method of payment for ISO20022 direct debit](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Set up vendors and vendor bank accounts for ISO20022 credit transfers](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
