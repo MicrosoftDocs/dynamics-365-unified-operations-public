@@ -34,22 +34,26 @@ ms.dyn365.ops.version: 8.0
 
 A sale can occur even when the customer isn't physically present. Instead, a digital platform or marketplace can serve as an intermediary for the transaction. In these scenarios, the XML of the electronic fiscal document model 55 (NF-e) that is issued from the sale must contain a new tag to indicate that an intermediary participated in the operation.
 
+This feature supports the scenario where the digital platform or marketplace is owned or licensed by the fiscal document issuer.
+
 ## Enable the technical note in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
 1. Sign in to your instance of Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 2. Go to **Organization administration** \> **Organizations** \> **Fiscal establishments** \> **Fiscal establishments**.
 3. Select the fiscal establishment, and then select **Edit**.
 4. On the **NF-e and NFC-e federal** FastTab, in the **NF-e technical notes** field group, select **Enable NF-e technical note**.
-5. In the **NF-e technical notes** field, select **2020.006 v1.00 technical note**.
+5. In the **NF-e technical notes** field, select **2020.006 v1.10 technical note** for version 1.10 of the technical note.
 
 ## Enable the technical note in Dynamics AX 2012 R3
 
-To enable the technical note in Dynamics AX 2012 R3, apply KB 4598546.
+To enable the version 1.10 of the technical note in Dynamics AX 2012 R3, apply KB 4611321.
+To enable the version 1.00 of the technical note in Dynamics AX 2012 R3, apply KB 4598546.
 
 ## Sales that are intermediated by the taxpayer's own sales digital platform
 
 When a digital platform that the taxpayer owns serves as the intermediary for a sale, if the presence type is set to one of the following values on the header of the sales order that is created for the sale, the **&lt;indintermed&gt;** tag is added to the XML of the NF-e. The value is set to **0** (zero).
 
+- In person
 - Internet
 - Telesales
 - Others
