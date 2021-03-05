@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: [Dynamics 365 Commerce and Microsoft Teams integration - FAQs doc]
-description: This document helps managing stores and corresponding teams in Microsoft Teams mapping, in case if your organization has teams for corresponding stores already created in Microsoft Teams before enabling the integration between Dynamics 365 Commerce and Teams.
+title: Map stores and corresponding teams if your organization has pre-existing teams in Microsoft Teams
+description: This topic covers how to map stores and corresponding teams in Commerce headquarters if your organization has already created teams in Microsoft Teams before Dynamics 365 Commerce integration.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 03/04/2021
@@ -28,25 +28,25 @@ ms.dyn365.ops.version: 10.0.18
 
 #
 
-This topic covers how to map stores and corresponding teams in Microsoft Teams if your organization already has teams for corresponding stores already created in Microsoft Teams before enabling the integration between Dynamics 365 Commerce and Teams.
+This topic covers how to map stores and corresponding teams in Commerce headquarters if your organization has already created teams in Microsoft Teams before Dynamics 365 Commerce integration.
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Your organization may have teams created for some or all of your stores before using Dynamics 365 Commerce and Microsoft Teams. In that case to establish tasks synchronization between POS and Teams applications, you must provide the mapping of Store and corresponding team in Dynamics 365 Commerce headquarters using following steps:    
+Your organization may have teams created for some or all of your stores before using Dynamics 365 Commerce and Microsoft Teams. In that case, to establish task synchronization between Commerce POS and Teams applications you must provide the mapping of Store and corresponding team in Dynamics 365 Commerce headquarters using following steps:    
 
-1. Go to **System Administration** -> **Workspace** -> **Data management**
-2. Choose **Export**, add entity **Teams mapping between source and team** and use **CSV** as format: (refer to below screenshot) 
+1. Go to **System Administration \> Workspace \> Data management**.
+2. Select **Export**, add entity **Teams mapping between source and team** and use **CSV** as format: (refer to below screenshot) 
 
 ![Dynamics 365 Commerce - Data Management](media/d365-commerce-data-mgmt-export-entity.png)
 
 
-3. Then click **add**, and then click **Export now**. 
-4. In the CSV file you get, fill in SOURCETYPE, SOURCEID, and TEAMID values as follows:
+3. Select **Add**, and then select **Export now**. 
+4. In the exported CSV file, fill in SOURCETYPE, SOURCEID, and TEAMID values as follows:
 	1. SOURCETYPE as **RetailStore** , 
 	2. SOURCEID as the **store number** (e.g. 000135 for San Francisco store, you can find this @  **Retail and Commerce \> Channels \> Stores** )
 	3. TEAMID as the corresponding **team ID from Microsoft teams** e.g. 5f8bc92b-6aa8-451e-85d1-3949c01ddc6c (you can find this info from admin.teams.microsoft.com.)
-5. Then click import, add entity "Teams mapping between source and team" and upload the CSV:
+5. Select **Import**, add entity "Teams mapping between source and team" and upload the CSV:
 6. Click **Import now** to establish relationship between store and existing teams.
 
 
