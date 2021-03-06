@@ -53,6 +53,8 @@ configurations from Global repository:
 | SAF-T General model mapping     | Model mapping | 128.251     | Model mapping that provides general data sources mapping                                |
 | SAF-T Format (LT)               | Format        | 128.198     | The XML format that represents SAF-T in accordance with requirements for Lithuania.     |
 
+![ER configurations for Standard Audit File for Tax (SAF-T) for Lithuania](media/lt-saf-t-ger-configurations.png)
+
 SAF-T General model mapping provides general data sources mapping for the following master data:
 
 <ul>
@@ -82,6 +84,8 @@ Be sure to import the most recent versions of these configurations. The version
 description usually includes the number of the Microsoft Knowledge Base (KB)
 article that explains the changes that were introduced in the configuration
 version.
+
+![Default model mapping for Standard Audit File for Tax (SAF-T) for Lithuania](media/lt-saf-t-default-model-mapping.png)
 
 **Note:** After all the ER configurations from the preceding table are imported,
 set the **Default for model mapping** option to **Yes** for the **SAF-T General
