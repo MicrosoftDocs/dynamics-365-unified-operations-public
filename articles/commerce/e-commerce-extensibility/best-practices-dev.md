@@ -89,6 +89,13 @@ GIF is also a lossless format, but it only supports 256 colors in a single image
 
 Ultimately, the goal is to find the right balance to maintain image quality while keeping the image size as small as possible.
 
+### Disable image lazy loading
+Modules such as the [content block](..\add-hero-module.md) module that display images will generally defer the loading of the images until they are needed.  This may cause some perceived performance issues where the image is not ready when the user sees it.  For example when pressing the next arrow on a carousel module, if lazy load is on it may take a second or two for the image to load in.  These modules have a configuration option to disable the lazy loading and can be used to increase perceived performance in some scenarios since the images will be ready before they are needed.
+
+## Enable product collection module lazy load
+The [product collection](..\product-collection-module-overview.md) module data action calls can cause a small increase in page load time.  The module has a configuration **Enable module lazy load** setting that will allow the module to render client side, after the page has rendered which will allow the page to be available for user interaction sooner.
+
+
 ## Cache configuration
 
 Caching is often used on static content that doesn't often change, such as images, product content, and JavaScript and CSS files. Some scenarios may require custom cache settings to achieve the best performance results.
