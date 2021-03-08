@@ -49,14 +49,23 @@ This feature supports scenarios when a digital platform or marketplace is owned 
 - Apply KB 4611321 to enable version 1.10 of the technical note in Dynamics AX 2012 R3.
 - Apply KB 4598546 to enable version 1.00 of the technical note in Dynamics AX 2012 R3.
 
+## Enter the new NF-e rejection codes
+
+The technical note NT2020.006 introduced new NF-e rejection codes:
+1. Go to **Organization administration** \> **Organizations** \> **Electronic documents** \> **NF-e federal parameters**.
+2. Select **Rejection codes** tab.
+3. Select **New** to enter the new rejection codes. For the list of new rejection codes, consult the documentation of the NT2020.006 technical note available in the [NF-e Portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx)
+
 ## Sales that are intermediated by the taxpayer's own sales digital platform
 
-When a digital platform that the taxpayer owns serves as the intermediary for a sale, if the presence type is set to one of the following values on the header of the sales order that is created for the sale, the **&lt;indintermed&gt;** tag is added to the XML of the NF-e. The value is set to **0** (zero).
+When a digital platform that the taxpayer owns, serves as the intermediary for a sale, if the presence type is set to one of the following values on the header of the sales order that is created for the sale, the **&lt;indintermed&gt;** tag is added to the XML of the NF-e. The value is set to **0** (zero).
 
 - In person
 - Internet
 - Telesales
 - Others
+
+In another hand, when the presence type is different than the above list, the **&lt;indintermed&gt;** tag is not placed in the XML.
 
 ## Out of scope for the feature
 
