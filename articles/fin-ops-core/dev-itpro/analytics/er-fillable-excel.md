@@ -152,28 +152,28 @@ The **Footer** component is used to fill in footers at the bottom of a generated
 > [!NOTE]
 > You can add this component for every **Sheet** component to specify different footers for different worksheets in a generated Excel workbook.
 
-When you configure an individual **Footer** component, you can use the **Header/footer appearance** property to specify the pages for which this component is used.
+When you configure an individual **Footer** component, you can use the **Header/footer appearance** property to specify the pages that the component is used for. The following values are available:
 
-- Set the **Header/footer appearance** property to **Any** to execute the configured **Footer** component for any page of the parent Excel worksheet.
-- Set the **Header/footer appearance** property to **First** to execute the configured **Footer** component for the only first page of the parent Excel worksheet.
-- Set the **Header/footer appearance** property to **Even** to execute the configured **Footer** component for the only even pages of the parent Excel worksheet.
-- Set the **Header/footer appearance** property to **Odd** to execute the configured **Footer** component for the only odd pages of the parent Excel worksheet.
+- **Any** – Run the configured **Footer** component for any page of the parent Excel worksheet.
+- **First** – Run the configured **Footer** component for only the first page of the parent Excel worksheet.
+- **Even** – Run the configured **Footer** component for only the even pages of the parent Excel worksheet.
+- **Odd** – Run the configured **Footer** component for only the odd pages of the parent Excel worksheet.
 
-
-For a single **Sheet** component, you can add several **Footer** components with different **Header/footer appearance** properties to generate different footers for different type of pages in an Excel worksheet.
-
-Make sure that only one **Footer** component with a particular **Header/footer appearance** property is specified for a single **Sheet** component. Otherwise, a [validation error](er-components-inspections.md#i16) is thrown informing you about this inconsistency.
-
-Under the added **Footer** component, add the required nested components of the **Text\String**, **Text\DateTime**, or other types and configure the bindings for these components to specify how your page footer is filled in.
-
-You can also use special [formatting codes](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) to properly format the content of a generated footer. Complete the steps of [Example 1](#example-1) to learn how to do this.
+For a single **Sheet** component, you can add several **Footer** components, each of which has a different value for the **Header/footer appearance** property. In this way, you can generate different footers for different type of pages in an Excel worksheet.
 
 > [!NOTE]
-> Take into account the Excel [limit](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) and maximum number of characters for a single header or footer when you configure ER formats.
+> Make sure that each **Footer** component that you add to a single **Sheet** component has a different value for the **Header/footer appearance** property. Otherwise, a [validation error](er-components-inspections.md#i16) occurs. The error message that you receive notifies you about the inconsistency.
+
+Under the added **Footer** component, add the required nested components of the **Text\\String**, **Text\\DateTime**, or other type. Configure the bindings for those components to specify how your page footer is filled in.
+
+You can also use special [formatting codes](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) to correctly format the content of a generated footer. To learn how to use this approach, follow the steps in [Example 1](#example-1), later in this topic.
+
+> [!NOTE]
+> When you configure ER formats, be sure to consider the Excel [limit](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) and the maximum number of characters for a single header or footer.
 
 ## Header component
 
-The **Header** component is used to fill in headers at the top of a generated worksheet in an Excel workbook. Using this component is similar to using the **Footer** component.
+The **Header** component is used to fill in headers at the top of a generated worksheet in an Excel workbook. It's used like the **Footer** component.
 
 ## Edit an added ER format
 
@@ -209,36 +209,49 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 - Select **Manual** to avoid formula recalculation when a document is generated.
     >[!NOTE]
     > Formula recalculation is manually forced when a generated document is opened for preview using Excel.
-    > Don't use this option if you configure an ER destination that assumes the usage of a generated document without its preview in Excel (PDF conversion, emailing, etc.)because the generated document might not contain values in cells that contain formulas.
+    > Don't use this option if you configure an ER destination that assumes the usage of a generated document without its preview in Excel (PDF conversion, emailing, etc.) because the generated document might not contain values in cells that contain formulas.
 
-## <a name="example-1" />Example 1: Format a footer content
+## <a name="example-1"></a>Example 1: Format footer content
 
-1.  [Generate](er-generate-printable-fti-forms.md) a printable free text invoice (FTI) document using the provided ER configurations.
-2.  Review the footer of the generated document that contains information about the current page number and the number of total pages in the document.
-    ![Validate the footer of a generated document in Excel format](./media/er-fillable-excel-footer-1.gif)
-3.  [Open](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) the sample ER format in the ER format designer for review.
+1. Use the provided ER configurations to [generate](er-generate-printable-fti-forms.md) a printable free text invoice (FTI) document.
+2. Review the footer of the generated document. Notice that it contains information about the current page number and the total number of pages in the document.
 
-    The footer of the **Invoice** worksheet is generated based on the settings of two **String** components that resides under the **Footer** component:
-    - The first **String** component populates the special formatting codes to forces Excel do the following:
-        - **&C** is used to align the footer text to the center.
-        - **&"Segoe UI,Regular"&8** is used to present a footer text by using the **Segoe UI Regular** font of the size **8**.
-        
-    The second **String** component populates the text containing the current page number as well as the total number of pages in the current document.
-    ![Review the Footer ER format component on the Format designer page](./media/er-fillable-excel-footer-2.png)
+    ![Reviewing the footer of a generated document in Excel format](./media/er-fillable-excel-footer-1.gif)
 
-4.  Customize the sample ER format to modify the current page footer:
-    1.  [Create](er-quick-start2-customize-report.md#DeriveProvidedFormat) the derived ER format **Free text invoice (Excel) custom** based on the sample.
-    2.  Add the first new pair of **String** components for the **Footer** component of the **Invoice** worksheet:
-        1.  Add a **String** component to align the company name to the left of page footer and format by using the **Segoe UI Regular** font of the size **8**.
-        2.  Add a **String** component to populate the company name.
-    3.  Add the second new pair of **String** components for the **Footer** component of the **Invoice** worksheet:
-        1.  Add a **String** component to align the processing date to the right of page footer and format by using the **Segoe UI Regular** font of the size **8**.
-        2.  Add a **String** component to populate the processing date in a custom format.
-    ![Review the Footer ER format component on the Format designer page](./media/er-fillable-excel-footer-3.png)
-    4.  [Complete](er-quick-start2-customize-report.md#CompleteDerivedFormat) the draft version of the derived **Free text invoice (Excel) custom** ER format.
-5.  [Configure](er-generate-printable-fti-forms.md#configure-print-management) print management to use the derived **Free text invoice (Excel) custom** ER format instead of the sample one.
-6.  Generate a printable free text invoice (FTI) document and then review the footer of the generated document.
-    ![Validate the footer of a generated document in Excel format](./media/er-fillable-excel-footer-4.gif)
+3. In the ER format designer, [open](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) the sample ER format for review.
+
+    The footer of the **Invoice** worksheet is generated based on the settings of two **String** components that reside under the **Footer** component:
+
+    - The first **String** component fills in the following special formatting codes to force Excel to apply specific formatting:
+
+        - **&C** – Align the footer text in the center.
+        - **&"Segoe UI,Regular"&8** – Present the footer text in the "Segoe UI Regular" font at a size of 8 points.
+
+    - The second **String** component fills in the text that contains the current page number and the total number of pages in the current document.
+
+    ![Reviewing the Footer ER format component on the Format designer page](./media/er-fillable-excel-footer-2.png)
+
+4. Customize the sample ER format to modify the current page footer:
+
+    1. [Create](er-quick-start2-customize-report.md#DeriveProvidedFormat) a derived **Free text invoice (Excel) custom** ER format that is based on the sample ER format.
+    2. Add the first new pair of **String** components for the **Footer** component of the **Invoice** worksheet:
+
+        1. Add a **String** component that aligns the company name on the left and presents it in 8-point "Segoe UI Regular" font (**"&L&"Segoe UI,Regular"&8"**).
+        2. Add a **String** component that fills in the company name (**model.InvoiceBase.CompanyInfo.Name**).
+
+    3. Add the second new pair of **String** components for the **Footer** component of the **Invoice** worksheet:
+
+        1. Add a **String** component that aligns the processing date on the right and presents it in 8-point "Segoe UI Regular" font (**"&R&"Segoe UI,Regular"&8"**).
+        2. Add a **String** component that fills in the processing date in a custom format (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
+
+        ![Reviewing the Footer ER format component on the Format designer page](./media/er-fillable-excel-footer-3.png)
+
+    4. [Complete](er-quick-start2-customize-report.md#CompleteDerivedFormat) the draft version of the derived **Free text invoice (Excel) custom** ER format.
+
+5. [Configure](er-generate-printable-fti-forms.md#configure-print-management) Print management to use the derived **Free text invoice (Excel) custom** ER format instead of the sample ER format.
+6. Generate a printable FTI document, and review the footer of the generated document.
+
+    ![Reviewing the footer of a generated document in Excel format](./media/er-fillable-excel-footer-4.gif)
 
 ## Additional resources
 
