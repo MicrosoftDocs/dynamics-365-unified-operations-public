@@ -5,7 +5,7 @@ title: United Kingdom overview
 description: This topic provides links to documentation resources for the United Kingdom. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/24/2022
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
