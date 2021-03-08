@@ -40,7 +40,7 @@ To set up containerization, you must create the following:
 - **Container build template** ─ Create templates that define rules for containerization. For example, rules for mixing inventory and other packing strategies.
 - **Wave templates** – Set up one or more wave templates to create the picking work for containerization.
 
-## 1\. Set up a wave template for containerization
+## 1. Set up a wave template for containerization
 
 You must set up one or more shipping wave templates for containerization. Wave templates include criteria that determine the following:
 
@@ -50,7 +50,7 @@ You must set up one or more shipping wave templates for containerization. Wave t
 
 For more information, see [Create a wave template](create-a-wave-template.md).
 
-## 2\. Set up a container type
+## 2. Set up a container type
 
 Use container types to create descriptions of containers, including maximum values for physical size dimensions and weight capacity. When a containerized wave is processed, the containers are created based on the container type information.
 
@@ -68,25 +68,20 @@ To set up a container type, follow these steps:
 
 1. Select custom attribute values for the container in the fields for attributes. Attributes are custom values that are used to filter or sort items based on a value that is otherwise not available. For example, if you want to pack items for a particular customer, you can create an attribute for the customer name. You create attributes on the **Container attributes** page.
 
-## 3\. Set up a container group
+## 3. Set up a container group
 
 You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill. Microsoft Dynamics AX uses the size dimensions of the item to determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.
 
 To set up a container group, follow these steps:
 
 1. Go to **Warehouse management** \> **Setup** \> **Containers** \> **Container groups**.
-
 1. Select **New** to create a container group.
-
 1. Enter a unique ID and description for the container group.
-
 1. On the **Details** FastTab, select **New** to add a container type to the group.
-
 1. In the **Container type** field, select a container type.
-
 1. Select **Move up** or **Move down** to specify the sequence in which the container types are packed.
 
-## 4\. Set up a container build template
+## 4. Set up a container build template
 
 You can set up rules for the containerization process, such as inventory mixing rules and other packing strategies. For example, you can set up a rule so that workers cannot pack allocation lines that represent sales orders from different customers in the same container.
 
@@ -110,18 +105,14 @@ To set up a container build template, follow these steps.
         > To use nesting containers, you must make the containerization method repeatable. For more information, see [Wave templates](wave-templates.md).
 
 1. On the **General** FastTab, in the **Wave step code** field, enter the unique identifier of the wave process method that links the container build template to steps in a wave template.
-
 1. Select the **Allow split picks** check box to allow workers to pack items from a work order in separate containers. This requires that the entire quantity fits in the container. The largest unit of measure in the allocation line is always used.
-
 1. In the **Pack by unit** field, select the unit of measure that will represent the container. For example, you can indicate that a case is a container. If you pack by the unit of measure, you cannot also specify a container group because the unit of measure is the container.
-
 1. In the **Container packing strategy** field, select the packing strategy to use. The following options are available:
 
     > [!NOTE]
     > The strategy applies only to sales allocation lines and transfer allocation lines.
 
       - **Pack into all open containers** – The system evaluates whether the allocation line will fit in any container that was created during the containerization cycle.
-
       - **Pack into current container only** – The system only evaluates whether the allocation line will fit in the most recently created container.
 
 1. To set up rules for packing allocation lines in containers, select **Mixing Logic Breaks**. For example, you can create a rule that will allow workers to pack allocation lines for two different items in the same container. To define a mixing rule, follow these steps:
