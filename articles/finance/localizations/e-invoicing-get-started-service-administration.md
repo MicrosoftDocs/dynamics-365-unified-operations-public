@@ -40,7 +40,7 @@ ms.dyn365.ops.version: AX 10.0.12
 Before you complete the procedures in this topic, the following prerequisites must be in place:
 
 - You must have access to your Microsoft Dynamics Lifecycle Services (LCS) account.
-- You must have an LCS project that includes version 10.0.13 or later of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Additionally, these apps must be deployed in one of the following Azure geographies:
+- You must have an LCS project that includes version 10.0.17 or later of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Additionally, these apps must be deployed in one of the following Azure geographies:
 
     - East US
     - West US
