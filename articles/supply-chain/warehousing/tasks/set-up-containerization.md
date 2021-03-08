@@ -25,6 +25,9 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
+<!-- KFM: Recommend to delete this topic and replace with [Set up containerization](../wave-containerization.md) -->
+
 # Set up containerization
 
 [!include [banner](../../includes/banner.md)]

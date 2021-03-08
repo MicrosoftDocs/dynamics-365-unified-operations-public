@@ -57,11 +57,5 @@ Only the ad hoc movement is currently supported. That means that you will not be
 
 For the worker who should be allowed to move reserved inventory, select the **Allow movement of inventory with work associated** check box under **Warehouse management** > **Setup** > **Worker**.  
 
-### Backported
-
-This feature has also been back-ported to Microsoft Dynamics AX 2012 R3 and will be available as part of CU12.
-It can also be downloaded individually through KB number 3192548. 
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
