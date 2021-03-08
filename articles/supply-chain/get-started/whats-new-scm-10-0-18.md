@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.18. This version has a build number of 10.0.761 <!-- KFM: Find new build number--> and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.18. This version has a build number of 10.0.793 and is available as follows:
 
 - **Preview of release:** March 2021
 - **General availability of release (self-update):** April 2021
@@ -45,7 +45,7 @@ The following features are included in this release. Some of the listed features
 
 - Automatic release of purchase orders (enhancement for [Warehouse execution with scale units in the cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Enterprise-scale inventory performance improvements and archiving](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br><!-- KFM: Add this when copyedit is done: - For more information, see [Archive inventory transactions](../inventory/archive-inventory-transactions.md) -->
+- [Enterprise-scale inventory performance improvements and archiving](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Archive inventory transactions](../inventory/archive-inventory-transactions.md)
 
 - [Rebate management](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)
 
@@ -65,11 +65,11 @@ We have recently added or significantly updated the following help topics. They 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.18 includes platform updates. To learn more, see [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18.md) <!-- KFM: Confirm link -->.
+Microsoft Dynamics 365 Supply Chain Management 10.0.18 includes platform updates. To learn more, see [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.18, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=551039&dbType=3&qc=91219e7c3fc585acb17b810c915c3cbea499403538520c40e54de43a53aea6a8) <!-- KFM: Update link -->.
+For information about the bug fixes included in each of the updates that are part of 10.0.18, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=561679&dbType=3&qc=13bb1641c1be430ead8b21ae3d4e0f800d5b81c39b3a56e890db1de7ede59e46).
 
 ### Dynamics 365: 2021 release wave 1 plan
 
