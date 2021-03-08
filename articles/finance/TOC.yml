@@ -488,6 +488,8 @@
         href: accounts-receivable/original-invoice-numbers-credit-notes.md
       - name: Numbering documents and vouchers chronologically
         href: accounts-receivable/chrono-numbers.md
+      - name: Archive printed customer invoices with hash numbers
+        href: accounts-receivable/archive-printed-invoices.md
     - name: Budgeting
       items:
       - name: Budgeting home page
@@ -2016,12 +2018,14 @@
           items:
           - name: German audit file overview
             href: localizations/emea-deu-gdpdu-audit-data-export.md
-          - name: Customize audit file configuration
-            href: localizations/tasks/customize-german-audit-file-configuration.md
-          - name: Generate audit file
-            href: localizations/tasks/german-audit-file.md
           - name: Import audit file configuration
             href: localizations/tasks/import-german-audit-file-configuration.md
+          - name: Generate audit file
+            href: localizations/tasks/german-audit-file.md
+          - name: Customize audit file configuration
+            href: localizations/tasks/customize-german-audit-file-configuration.md
+          - name: Add filters to an audit file configuration
+            href: localizations/emea-deu-gdpdu-data-filtering.md
         - name: Depreciation adjustments for additional acquisitions in the second year
           href: localizations/tasks/de-00002-depreciation.md
         - name: Electronic transmission of VAT declaration (ELSTER)
@@ -2314,7 +2318,7 @@
           href: localizations/emea-ita-quarterly-vat-communication.md
         - name: Black list report
           href: localizations/emea-ita-black-list-report.md
-        - name: Competence date
+        - name: Competence date and fiscal journal
           href: localizations/emea-ita-competence-date.md
         - name: Depreciation of fixed assets
           href: localizations/emea-ita-depreciation-of-fixed-assets.md
