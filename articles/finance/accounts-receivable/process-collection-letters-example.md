@@ -124,9 +124,9 @@ The following illustration shows the information that's in the table as it would
 
    [![Verifies that different collection letter codes appear on the header and the lines](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
-    The codes differ because the **Ignore payments and credit memos when calculating collection letter code** option is to **Yes**.
+  The codes differ because the **Ignore payments and credit memos when calculating collection letter code** option is to **Yes**.
 
-    2. Don't post this collection letter.
+  2. Don't post this collection letter.
 
 11. Go to **Credit and collections \> Setup \> Accounts receivable parameters**, and then, on the **Collections** tab, set the **Ignore payments and credit memos when calculating collection letter code** option to **No**.
 
