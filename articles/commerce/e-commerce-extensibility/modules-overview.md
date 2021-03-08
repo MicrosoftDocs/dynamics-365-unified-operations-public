@@ -79,7 +79,7 @@ By using Commerce site builder, you can make the following code-free style chang
 
 By using the online SDK, you can make custom theme changes to achieve the following results:
 
-- [Modify the module CSS](../css-override-files.md) to change any of a module's styling.
+- [Modify the module CSS](theming.md) to change any of a module's styling.
 - [Extend a module's view](theme-module-extensions.md) to change the rendered HTML layout.
 - [Extend a module's definition file](theme-module-extensions.md) to add or remove configuration fields, slots, data actions, or resources.
 - [Override a module library component](override-theme-component.md) to change the component behavior.
