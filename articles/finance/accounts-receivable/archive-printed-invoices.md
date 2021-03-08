@@ -3,7 +3,7 @@
 
 title: Archive printed customer invoices with hash numbers
 description: This topic explains how to enable archiving in order to store printed customer invoices with hash numbers.  
-author: Ilya Kondratenko
+author: ilyako
 manager: AnnBe
 ms.date: 03/05/2021
 ms.topic: article
