@@ -50,6 +50,8 @@ In LCS, select the **Preview feature management** tile, and then turn on the **e
 
 Dynamics 365 Regulatory Configuration Services (RCS) is the interface that is used to configure the Electronic invoicing add-on. Resources such as environments and electronic invoicing features are created, maintained, and hosted in RCS. When the resources are ready, they are published to the Electronic invoicing add-on service.
 
+For sign-up in RCS, see [Regulatory services](https://marketing.configure.global.dynamics.com/)
+
 For more information about RCS, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md)
 
 ### Integration with the Electronic invoicing add-on
