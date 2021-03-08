@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  WHSWaveTemplateTable, WHSParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -144,3 +144,34 @@ If needed, you can cancel a wave that has been processed. To cancel a wave, and 
       - Go to **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**.
 
 1. Select the wave to cancel. On the Action Pane, on the **Work** tab, select **Cancel**.
+
+<!-- KFM: The following sections came from this PR: https://github.com/MicrosoftDocs/Dynamics-365-Operations/pull/10570/files  Please consider whether they belong here and review my edits. -->
+
+## Review wave batch job details
+
+<!-- KFM: Add to what's new in 10.0.17, and add preview banner here?  -->
+
+Use the **Wave batch job details** page to inspect the batch jobs and related tasks associated with any wave. This is especially useful for troubleshooting a wave that has failed. Without this feature, only administrators will typically have access to batch job details. The **Wave batch job details** page can be made available to non-admin users and provides a read-only view of batch jobs and related tasks.
+
+### Enable the Wave batch job details page
+
+If your system doesn't already include the **Wave batch job details** page, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Wave batch job details* feature.
+
+### Use the Wave batch job details page
+
+The **Wave batch job details** page combines batch jobs and batch job tasks, which lits you investigate all the wave steps without needing to navigate back and forth between a single batch job and the batch tasks list. The page also provides access to the batch log and, provided you have the suitable permissions, provides a link to the **Batch job** page.
+
+To open this page, select a wave on any of several different wave pages and then selecting the appropriate option from the Action Pane.
+
+## Load validation and error messages
+
+<!-- KFM: Add to what's new in 10.0.17, and add preview banner here?  -->
+<!-- KFM: I'm not sure this section is clear.  -->
+
+The system validates all load lines to make sure no errors occur during wave processing. For each load line that fails validation, the following error is shown: "Found invalid load lines in wave. Please remove the invalid load lines." This helps you to address all the failure in one go without requiring your to rerun to the wave process for each load line failure. <!-- KFM: I don't see how it does this. --> The **Wave processing history log** is still available for viewing all the warnings provided the **Create wave processing history log** option is enabled on the **Warehouse management parameters** page. <!-- KFM: Is this something different? -->
+
+## Errors during auto release to warehouse
+
+<!-- KFM: (Not sure this is the right page for it) (10.0.17) This looks like a feature that we describe in the C+E documentation--is it? -->
+
+During the batch execution of release one or more orders to warehouse, if an error occurs, the batch job is marked with *Error* instead of *Ended*, and an error is shown to guide you to where to look for more details.
