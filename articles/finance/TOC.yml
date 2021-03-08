@@ -488,6 +488,8 @@
         href: accounts-receivable/original-invoice-numbers-credit-notes.md
       - name: Numbering documents and vouchers chronologically
         href: accounts-receivable/chrono-numbers.md
+      - name: Archive printed customer invoices with hash numbers
+        href: accounts-receivable/archive-printed-invoices.md
     - name: Budgeting
       items:
       - name: Budgeting home page
