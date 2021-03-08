@@ -5,7 +5,7 @@ title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 11/30/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -62,7 +62,7 @@ The information in this section lists certain elements of the database that are 
 * All users except the admin will be set to **Disabled** status.
 
 #### When refreshing from sandbox environment to production environment
-This is also referred to as [Golden configuration promotion](/dbmovement-scenario-goldenconfig.md).
+This is also referred to as [Golden configuration promotion](dbmovement-scenario-goldenconfig.md).
 * Batch job history is stored in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 
 #### These elements are removed for all database refresh operations
