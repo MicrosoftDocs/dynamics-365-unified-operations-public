@@ -476,6 +476,8 @@
         href: accounts-receivable/tasks/create-collection-letter-sequence.md
       - name: Process collection letters
         href: accounts-receivable/tasks/process-collection-letters.md
+      - name: Process collection letters example
+        href: accounts-receivable/process-collection-letters-example.md
       - name: Set up and generate accounts receivable aging information
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
       - name: Customer aging report
