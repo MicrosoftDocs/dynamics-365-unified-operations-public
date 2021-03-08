@@ -5,7 +5,7 @@ title: Preview of Dynamics 365 Supply Chain Management 10.0.17 (April 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.17. 
 author: kamaybac
 manager: annbe
-ms.date: 01/28/2021
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2021-01-28 
+ms.search.validFrom: 2021-02-01 
 ms.dyn365.ops.version: 10.0.17
 ---
 

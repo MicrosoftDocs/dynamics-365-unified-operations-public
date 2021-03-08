@@ -5,7 +5,7 @@ title: Planning Optimization fit analysis
 description: This topic explains how to verify your current setup and data against the capabilities of the Planning Optimization functionality. 
 author: ChristianRytt
 manager: tfehr
-ms.date: 10/09/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
