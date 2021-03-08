@@ -164,3 +164,6 @@ Find more details in the following topics:
 
 - [Set up an inventory profile](rus-set-up-inventory-profile.md)
 - [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

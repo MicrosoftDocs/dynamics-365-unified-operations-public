@@ -57,3 +57,6 @@ On the **Coverage groups** page, you can select the action messages that you wan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

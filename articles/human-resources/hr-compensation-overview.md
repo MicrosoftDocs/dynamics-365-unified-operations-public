@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Compensation plans
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
 
 ### Introduction
@@ -137,3 +139,6 @@ After you run a process event, you can recommend adjustments to an employee’s 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

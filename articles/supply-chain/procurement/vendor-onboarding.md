@@ -178,3 +178,6 @@ By using the **Delete** action on the prospective vendor registration request, y
 |         Approved         |                                                                               The vendor request is approved.                                                                               |                                                                                                   The prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted.                                                                                                    |
 |         Rejected         |                                                                               The vendor request is rejected.                                                                               |                                                                                                   The prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

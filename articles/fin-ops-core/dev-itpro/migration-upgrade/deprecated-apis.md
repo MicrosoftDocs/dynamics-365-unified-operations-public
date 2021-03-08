@@ -175,3 +175,6 @@ Throughout this table, under the <br/>**Reason for Deprecation** heading, "the c
 | XmlWriter | Method | CreateNewFile |  |
 | XppCompiler | Class |  |  |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

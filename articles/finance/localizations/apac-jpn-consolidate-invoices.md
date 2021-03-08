@@ -68,3 +68,6 @@ Invoices are consolidated each month, based on the consolidation day that you sp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

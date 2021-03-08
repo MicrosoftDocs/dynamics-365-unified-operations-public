@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Integration with Finance FAQ
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic answers common questions associated about what data is synchronized when Dynamics 365 Human Resources is integrated with Dynamics 365 Finance.
@@ -220,3 +222,6 @@ of minutes to complete, then you should see those mappings. This issue occurs wh
 - Data Management:
 
   - [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

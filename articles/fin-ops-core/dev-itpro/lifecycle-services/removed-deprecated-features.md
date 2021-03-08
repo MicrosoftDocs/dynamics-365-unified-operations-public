@@ -70,3 +70,6 @@ This list is provided so that you can consider these removals and deprecations a
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

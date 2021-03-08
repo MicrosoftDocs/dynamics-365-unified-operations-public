@@ -110,3 +110,7 @@ If you need to calculate the number of the documents included in the Fiscal jour
     ![Excel pivot table](media/ExcelPivotTable.png)
 
 The number of documents is equal to number of lines in the pivot table.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

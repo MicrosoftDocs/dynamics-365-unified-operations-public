@@ -2,7 +2,7 @@
 # required metadata
 
 title: Flowcharts in Business process modeler (BPM)
-description: This topic explains how you can modify the default connected flowcharts in Microsoft Dynamics Lifecycle Services, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library.
+description: This topic describes how to modify connected flowcharts, create and upload flowcharts from Task recorder, and import a business process model flowchart.
 author: AngelMarshall 
 manager: AnnBe
 ms.date: 02/01/2021
@@ -156,3 +156,6 @@ A business process with an unconnected Visio flowchart associated with it will h
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
 --->
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

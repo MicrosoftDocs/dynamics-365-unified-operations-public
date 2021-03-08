@@ -67,3 +67,6 @@ This procedure shows how to use a purchase agreement when you create a purchase 
 3. Close the page.
 4. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

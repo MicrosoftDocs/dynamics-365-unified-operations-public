@@ -88,3 +88,6 @@ You can manually create item lines for assets.
 5. If the item will expire, in the **Expiration** field, enter an end date.
 6. In the **Item number** field, select the item. The name is automatically entered in the **Product name** field.
 7. In the **Quantity** field, enter the quantity that is used. The **Unit** field is automatically updated.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

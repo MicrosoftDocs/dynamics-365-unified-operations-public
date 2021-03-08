@@ -72,3 +72,6 @@ This procedure was created using the demo data company FRSI.
     * Change to Bank account = 1  
 29. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

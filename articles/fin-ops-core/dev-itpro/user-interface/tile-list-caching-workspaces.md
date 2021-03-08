@@ -185,3 +185,6 @@ Here a few general guidelines to consider when you optimize queries. This isn't 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

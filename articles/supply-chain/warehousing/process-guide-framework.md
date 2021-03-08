@@ -677,3 +677,6 @@ Where to extend:
 How to extend:
 
 -   Extend the **isComplete()** method to build the additional logic.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

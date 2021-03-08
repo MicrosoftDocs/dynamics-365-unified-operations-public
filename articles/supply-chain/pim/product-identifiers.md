@@ -191,3 +191,6 @@ You can now use the **Product entity common data service identifier entity**, **
 ## Related topic
 
 [Search for products and product variants during order entry](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

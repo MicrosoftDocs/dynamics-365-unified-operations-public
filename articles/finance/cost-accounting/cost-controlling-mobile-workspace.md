@@ -149,3 +149,6 @@ Download and install the Finance and Operations mobile app:
 11. View the performance of individual cost elements.
 12. You can also search for specific cost elements.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

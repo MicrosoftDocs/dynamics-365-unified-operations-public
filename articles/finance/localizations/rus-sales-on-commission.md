@@ -251,3 +251,6 @@ Find more details in the following topics:
 
 - [Transactions through intermediary](rus-transactions-through-intermediary.md) 
 - [Purchases on commission](rus-purchases-on-commission.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

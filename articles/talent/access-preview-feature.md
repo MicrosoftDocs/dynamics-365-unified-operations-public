@@ -4,7 +4,7 @@
 title: Manage features
 description: This topic describes how an administrator can enable preview features in Microsoft Dynamics 365 Talent, and it lists the features that are currently enabled for preview.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -79,3 +79,6 @@ Make sure that you don't include personal data (any information that could ident
 - [What's new or changed in Dynamics 365 Talent](./whats-new.md)
 - [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

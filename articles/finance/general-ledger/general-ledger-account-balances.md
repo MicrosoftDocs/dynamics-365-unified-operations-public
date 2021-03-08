@@ -55,3 +55,6 @@ For more information, see [View financial reports](view-financial-reports.md).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

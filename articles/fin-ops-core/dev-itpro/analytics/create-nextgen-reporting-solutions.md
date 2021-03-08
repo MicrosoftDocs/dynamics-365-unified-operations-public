@@ -251,3 +251,6 @@ This report uses embedded VB script to keep track of running totals so that the 
 - Built-in back office document management capabilities including email support, scheduled executions via Batch, and Print Archive
 - Parameterized views with drill-through navigations to forms and other reports
 - Used to produce precision documents for compliance with local regulatory business practices
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

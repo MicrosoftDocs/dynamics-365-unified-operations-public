@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Avoid text truncation on the position hierarchy and export to Visio
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Issue**
 
 When a customer views the position hierarchy in Microsoft Dynamics 365 Human Resources, the names of individuals and positions are truncated. Therefore, it can be difficult to take a screenshot, or to print and distribute the hierarchy.
@@ -111,3 +113,6 @@ Based on the fields that you selected to include in the diagram, each node shows
 **Additional option**
 
 In Human Resources, you might also be able to use the **People** workspace to view some hierarchy-related information.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

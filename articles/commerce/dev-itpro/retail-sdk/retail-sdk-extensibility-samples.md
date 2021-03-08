@@ -129,3 +129,6 @@ The Retail SDK includes extensibility samples. You can also use these projects a
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Therefore, the ship date is set to 10 days from now, based on the ATP calculatio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

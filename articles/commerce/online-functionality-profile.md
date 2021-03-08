@@ -29,12 +29,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Create an online functionality profile
 
-
 [!include [banner](includes/banner.md)]
 
 This topic presents an overview of setting up an online functionality profile for Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The online functionality profile provides various settings used for online channels. Each online channel must specify an online functionality profile.
 
@@ -70,3 +67,6 @@ The following image shows an example online functionality profile.
 [Set up a retail channel](channel-setup-retail.md)
 
 [Set up a call center channel](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

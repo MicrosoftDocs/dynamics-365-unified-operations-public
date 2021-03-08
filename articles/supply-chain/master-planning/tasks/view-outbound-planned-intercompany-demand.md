@@ -45,3 +45,6 @@ This procedure shows how to view all the planned orders that will be fulfilled b
 8. Expand the Upstream demand details section.
     * In this section, you can see the details about how the demand will be fulfilled. You may need to wait for master planning to be run in the supply company before you can see additional information here.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

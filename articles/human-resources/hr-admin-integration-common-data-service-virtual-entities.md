@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Dataverse virtual tables
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It provides full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. The data for virtual tables isn't stored in Dataverse, but in the application database.
@@ -225,3 +227,6 @@ The slideout pane displays the most recent execution results for the process. Yo
 [Create and edit virtual tables that contain data from an external data source](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [What is Power Apps portals?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

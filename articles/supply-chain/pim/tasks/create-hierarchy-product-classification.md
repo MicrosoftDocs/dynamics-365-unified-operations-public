@@ -69,3 +69,6 @@ This procedure shows how to create a new category hierarchy and assign a commodi
 8. In the list, click the link in the selected row.
 9. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

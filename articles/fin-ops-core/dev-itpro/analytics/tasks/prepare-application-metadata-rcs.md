@@ -83,3 +83,6 @@ We added metadata information about the Intrastat table of records.
 3.    Click **OK**. 
     
 The created ER metadata configuration has been saved as XML file that can be imported to RCS and used as the source of information about metadata for the foreign trade business domain. Based on this information, we can specify the mapping between application metadata and ER data model.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

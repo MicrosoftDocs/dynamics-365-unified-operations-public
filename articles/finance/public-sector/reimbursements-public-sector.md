@@ -69,3 +69,6 @@ No, not directly. However, you could use general journal entries to create trans
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

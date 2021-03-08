@@ -60,3 +60,6 @@ When you create a work order, you might want to define the service levels for it
 2. Select **New**.
 3. In the **Description** field, enter the description.
 4. Select **Save**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

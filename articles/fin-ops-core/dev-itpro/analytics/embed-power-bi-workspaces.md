@@ -62,3 +62,6 @@ The [How to edit an embedded report in an analytical workspace](https://youtu.be
 
 ## What's next?
 Going forward, new cloud deployments will come bundled with the Power BI Embedded service. Additional documentation describing the Developer ALM process will be made available to help partners and ISVs create new solutions that take advantage of the Power BI Embedded service integration options that are available.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

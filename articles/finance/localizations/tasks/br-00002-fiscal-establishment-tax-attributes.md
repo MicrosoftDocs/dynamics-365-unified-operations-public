@@ -91,3 +91,6 @@ Use this procedure to create one or more fiscal establishments for a legal entit
 58. Close the page.
 59. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

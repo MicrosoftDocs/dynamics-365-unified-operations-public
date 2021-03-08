@@ -74,3 +74,6 @@ Service management can be integrated with the following modules:
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ Use the following steps to create a service object relation for a service order:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

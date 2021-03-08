@@ -97,3 +97,6 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 21. Click **OK**.
 22. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

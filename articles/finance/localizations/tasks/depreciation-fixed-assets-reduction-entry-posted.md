@@ -55,3 +55,6 @@ This task was created using the JPMF demo data company.
     * The depreciation that is attributed to the reduction entry is separated from that of the underline fixed asset by Document type.  
 13. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

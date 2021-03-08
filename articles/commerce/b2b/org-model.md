@@ -65,3 +65,6 @@ Commerce headquarters users can look at the property values for all customer rec
 [Configure the customer account payment method for B2B e-commerce sites](payment-method.md)
 
 [Set product quantity limits for B2B e-commerce sites](quantity-limits.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

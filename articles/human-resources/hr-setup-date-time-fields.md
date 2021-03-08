@@ -3,8 +3,8 @@
 
 title: Understand Date and Time fields
 description: Understand what to expect when using Date and Time fields in Microsoft Dynamics 365 Human Resources.
-author: Andreabichsel
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Understand Date and Time fields
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -100,3 +102,6 @@ When using external sources like DMF to view or author data, keep in mind that t
 
 [Date and time data](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
 [User preferred time zones](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

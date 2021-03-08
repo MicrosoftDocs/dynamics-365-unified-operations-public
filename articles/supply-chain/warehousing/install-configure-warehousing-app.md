@@ -34,7 +34,10 @@ ms.dyn365.ops.version: Version 1611
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This topic describes how to configure warehousing for cloud deployments. If you're looking for information about how to configure warehousing for on-premises deployments, see [Warehousing for on-premises deployments](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> This topic describes how to configure the old warehouse app. If you're looking for information about how to configure the new Warehouse Management mobile app, see [Install and connect the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
+
+> [!NOTE]
+> This topic describes how to configure the warehouse app for cloud deployments. If you're looking for information about how to configure the warehouse app for on-premises deployments, see [Warehousing for on-premises deployments](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 The warehouse app is available from Google Play Store and Microsoft Store. It's provided as a standalone component. Therefore, you must download it on each device and then configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
 
@@ -277,3 +280,6 @@ In the event of a lost or compromised device, you must remove access to Supply C
 1. Make sure that the client ID of the application matches the client ID that you made a note of in step 2.
 1. On the toolbar, select **Delete**.
 1. In the confirmation message that appears, select **Yes**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Update process
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates. These updates contain both application and platform changes that often provide critical improvements to the service, including regulatory updates.
@@ -110,3 +112,6 @@ While testing preview features or trying new capabilities, you might find items 
 [What's new or changed in Dynamics 365 Human Resource](hr-admin-whats-new.md)</br>
 [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ To learn more about this feature, play the set of ER Generate documents with app
 - [ER data model configuration: Intrastat (model)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER model mapping configuration: Intrastat (mapping)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER format configuration: Intrastat (format)](https://go.microsoft.com/fwlink/?linkid=849038)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

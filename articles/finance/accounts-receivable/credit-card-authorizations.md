@@ -84,3 +84,6 @@ To void a credit card authorization, you can change the method of payment to ano
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

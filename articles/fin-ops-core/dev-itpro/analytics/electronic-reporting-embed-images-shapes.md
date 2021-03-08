@@ -96,3 +96,6 @@ The following table lists the files that are required in order to complete the *
 The following graphic provides an example of the test printout for a payment check that is generated from the Excel template.
 
 [![Payment check test printout](./media/embed-images-shapes-02.png)](./media/embed-images-shapes-02.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

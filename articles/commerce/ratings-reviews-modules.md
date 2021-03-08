@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.6
 
 This topic covers ratings and reviews modules used on product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision, and are also a mechanism for collecting customer feedback about products. 
 
 Ratings are shown on product list pages, category list pages, search results pages, and other site pages. 
@@ -104,3 +102,6 @@ The product reviews list module includes a slot where you can add a ratings hist
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

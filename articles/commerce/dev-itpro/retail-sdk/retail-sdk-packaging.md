@@ -380,3 +380,6 @@ After the Retail deployable package is generated, go to the RetailSDK\Packages\R
 
 For detailed information, see [Synchronize self-service installers in Dynamics 365 Commerce doc](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/synchronize-installers).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ You can also enter a confirmation message that will be displayed when the wizard
 4.	Open the **Country/regions** tab to select the country/region that the configuration should be used for.
 5.	Complete the configuration by following the guidelines for the default configuration.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

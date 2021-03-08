@@ -4,7 +4,7 @@
 title: Create email templates in Attract
 description: This topic provides information about the email templates that you can create and use in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/19/2018
 ms.topic: article
 ms.prod: 
@@ -85,3 +85,6 @@ When the hiring team sends an email, it can use the templates that the admin cre
 
 > [!NOTE] 
 > For emails that are sent automatically, multiple templates can be created. However, only one template can be set as the active template. Because this process is triggered by events, only the admin can determine which template should be used, based on the combination **Default** and **Autosent** badges in the template library.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

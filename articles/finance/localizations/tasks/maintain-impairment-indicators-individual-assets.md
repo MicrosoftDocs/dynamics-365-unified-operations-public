@@ -86,3 +86,6 @@ This task uses the JPMF demo company data.
     * Enter 1500000.00.  
 18. Click Update indicator.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

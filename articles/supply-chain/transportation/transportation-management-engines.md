@@ -103,3 +103,6 @@ Metadata for transportation management engines is configured differently for the
 | 3        | Destination start postal code | Assignment | String    | Postal Code    | Selected  |
 | 4        | Destination end postal code   | Assignment | String    | Postal Code    | Selected  |
 | 5        | Destination country           | Assignment | String    | Country/region |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

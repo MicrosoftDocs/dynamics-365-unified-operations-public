@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Authentication
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This article provides overview information about how to authenticate with the Microsoft Dynamics 365 Human Resources data application programming interface (API).
 
 ## Overview
@@ -190,3 +192,6 @@ namespace TalentODataPoC
 ```
 
 Once you've retrieved an access token, you'll pass the token in the Authorization header as a bearer token with each request you send to the data API, as described above.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

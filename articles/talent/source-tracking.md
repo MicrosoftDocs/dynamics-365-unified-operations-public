@@ -4,7 +4,7 @@
 title: Track candidate sources in Attract
 description: This topic provides information about tracking the source for candidate profiles and applications. 
 author: hachandr
-manager: AnnBe
+manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
@@ -106,3 +106,6 @@ To avoid negatively impacting the user interface (UI), don't edit or delete the 
 - **Other**
 
 Instead, you can extend the **TalentSource** enum to add other types of sources.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

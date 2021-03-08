@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EntAssetMaintenancePlan 
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -200,8 +200,7 @@ The following illustration shows an example of maintenance plans set up on an as
 
 ## Counter-based maintenance enhancements
 
-> [!IMPORTANT]
-> The functionality that is described in this section is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 The *Counter-based maintenance enhancements* feature introduces the following functionality:
 
@@ -243,3 +242,6 @@ You can configure the system to automatically reset a counter each time that a r
 1. Go to **Asset management \> Setup \> Work orders \> Lifecycle states**.
 1. In the list pane, select the work order lifecycle state that the relevant counter should be reset at.
 1. On the **General** FastTab, set the **Reset counter** option to *Yes*.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

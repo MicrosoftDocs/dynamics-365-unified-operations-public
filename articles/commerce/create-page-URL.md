@@ -110,3 +110,6 @@ To redirect a URL to a different URL, follow these steps.
 [Configure your domain name](configure-your-domain-name.md)
 
 [Add languages to your site](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

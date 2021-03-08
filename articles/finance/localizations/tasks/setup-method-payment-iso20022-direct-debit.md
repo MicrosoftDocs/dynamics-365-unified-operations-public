@@ -55,3 +55,6 @@ This is the third of five procedures that demonstrate the customer payment proce
     * Select the Require mandate parameter for customer payment formats, which require including mandate information in the payment message, like SEPA direct debit.  
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

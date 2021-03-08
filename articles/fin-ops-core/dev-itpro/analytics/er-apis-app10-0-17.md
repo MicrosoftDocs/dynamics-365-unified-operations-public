@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic reporting framework API changes for Application update 10.0.17
-description: This topic describes how the application programming interfaces (APIs) of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.17.
+description: This topic describes how the APIs of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.17.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/07/2020
@@ -79,3 +79,6 @@ if(formatMappingRun.parmShowPromptDialog(true))
 [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 
 [Design a new ER solution to print a custom report](er-quick-start1-new-solution.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

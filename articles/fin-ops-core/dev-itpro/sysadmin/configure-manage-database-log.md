@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure database logging
-description: This topic provides information about database logging. It explains how to set up database logging, how to manage security and performance, and how to clean up database logs.
+description: This topic describes how to set up database logging, how to manage security and performance, and how to clean up database logs.
 author: hasaid
 manager: AnnBe
 ms.date: 03/11/2020
@@ -96,3 +96,6 @@ The consistency check will re-create any missing database log triggers. It will 
 
 1. Go to **System administration** \> **Inquiries** \> **Database** \> **Database log**.
 2. On the **Database log** page, select **Consistency check**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

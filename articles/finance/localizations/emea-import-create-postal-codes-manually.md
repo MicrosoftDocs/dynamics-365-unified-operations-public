@@ -51,3 +51,6 @@ For some countries, you must use the Data management framework to import codes, 
 Instead of importing codes, you can use the **Address setup** page to manually add new ZIP/postal codes.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

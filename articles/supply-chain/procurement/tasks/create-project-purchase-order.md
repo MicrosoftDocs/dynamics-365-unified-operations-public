@@ -49,3 +49,6 @@ This procedure shows you how to create a project purchase order. This task uses 
     * Verify that the sales and cost prices are available. If they are not available but needed, enter the information.  
 14. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

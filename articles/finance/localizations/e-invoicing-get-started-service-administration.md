@@ -5,7 +5,7 @@ title: Get started with Electronic invoicing add-on service administration
 description: This topic explains how to get started with the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -78,7 +78,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 ## Create Key Vault secret
 
 1. Sign in to your RCS account.
-2. In the **Globalization feature** workspace, in the **Environment** section, select the **e-Invoicing** tile.
+2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing add-on** tile.
 3. On the **Environment setups** page, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
 4. Select **New** to create a key vault secret.
 5. In the **Name** field, enter the name of the key vault secret. In the **Description** field, enter a description.
@@ -87,22 +87,31 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Create Storage account secret
 
-1. On **Key vault parameters** page, in the **Certificates** section, select **Add**.
-2. In the **Name** field, enter the same of the storage account secret. In the **Description** field, enter a description.
-3. In the **Type** field, select **Certificate**.
-4. Select **Save**, and then close the page.
+1. Go to **System administration** > **Setup** > **Key Vault parameters**, and select a Key vault secret.
+2. In the **Certificates** section, select **Add**.
+3. In the **Name** field, enter the name of the storage account secret and in the **Description** field, enter a description.
+4. In the **Type** field, select **Certificate**.
+5. Select **Save**, and then close the page.
+
+## Create a digital certificate secret
+
+1. Go to **System administration** > **Setup** > **Key Vault parameters**, and select a Key vault secret.
+2. In the **Certificates** section, select **Add**.
+3. In the **Name** field, enter the name of the digital certificate secret and in the **Description** field, enter a description.
+4. In the **Type** field, select **Certificate**.
+5. Select **Save**, and then close the page.
 
 ## Create an Electronic invoicing add-on environment
 
 1. Sign in to your RCS account.
-2. In the **Globalization feature** workspace, in the **Environment** section, select the **e-Invoicing** tile.
+2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing add-on** tile.
 
 ## Create a service environment
 
-1. On the **Environment setups** page, on the action Pane, select **Service environment**.
+1. On the **Environment setups** page, on the Action Pane, select **Service environment**.
 2. Select **New** to create a new service environment.
 3. In the **Name** field, enter the name of the e-Invoicing environment. In the **Description** field, enter a description.
-4. In the **Storage SAS token secret** field, select the name of the certificate that must be used to authenticate access to the storage account.
+4. In the **Storage SAS token secret** field, select the name of the storage account secret that must be used to authenticate access to the storage account.
 5. In the **Users** section, select **Add** to add a user who is allowed to submit electronic invoices through the environment and also connect to the storage account.
 6. In the **User ID** field, enter the alias of the user. In the **Email** field, enter the user's email address.
 7. Select **Save**.
@@ -155,3 +164,6 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 3. In the **Environment** field, enter the name of the Electronic invoicing add-on environment.
 4. Select **Save**, and then close the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

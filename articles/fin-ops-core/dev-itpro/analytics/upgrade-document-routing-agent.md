@@ -62,3 +62,6 @@ For information about how to install the latest DRA that is available with your 
 
 > [!NOTE]
 > Be sure to open the DRA client after upgrading to refresh network user credentials.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

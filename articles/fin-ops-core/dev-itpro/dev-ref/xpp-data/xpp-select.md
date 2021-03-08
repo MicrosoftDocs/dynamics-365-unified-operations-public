@@ -72,3 +72,6 @@ info("AccountNum: " + custTable.AccountNum);
 ```
 
 For more examples, see [Select statement](xpp-select-statement.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

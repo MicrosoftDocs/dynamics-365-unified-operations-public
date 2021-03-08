@@ -43,3 +43,6 @@ Sales tax authorities are entities to which collected sales tax needs to be repo
 10. In the Round-off field, enter a number.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

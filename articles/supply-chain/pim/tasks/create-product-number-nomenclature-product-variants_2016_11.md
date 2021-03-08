@@ -104,3 +104,6 @@ This procedure shows you how to set up a product number nomenclature for configu
 43. Close the page.
 44. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

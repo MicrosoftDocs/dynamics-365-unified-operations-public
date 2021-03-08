@@ -90,3 +90,6 @@ If the `input` argument is empty, a new empty list is returned. If either the `i
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -50,7 +50,7 @@ The following elements are shown in the illustration:
 
 To create and configure a new tab, follow these steps:
 
-1. Go to **Production control &gt; Setup &gt; Manufacturing execution**.
+1. Go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**.
 
 1. Select **Design tabs** on the Action Pane to open the **Design tabs** page.
 
@@ -72,7 +72,7 @@ To create and configure a new tab, follow these steps:
 
 After you designed all the tabs you need, you can associate them with a configuration.
 
-1. Go to **Production control &gt; Setup &gt; Configure production floor execution**.
+1. Go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**.
 
     ![Configure production floor execution](media/pfe-config-prod-floor-execution.png "Configure production floor execution")
 
@@ -83,3 +83,6 @@ After you designed all the tabs you need, you can associate them with a configur
 1. Continue to add additional tabs as needed.
 
 1. Use the **Move up** and **Move down** buttons on the toolbar to arrange the tabs as needed. The tabs will be displayed from left to right in the order shown in the above screenshot (the tab at the top is shown on the left).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

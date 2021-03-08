@@ -51,3 +51,6 @@ This topic describes some ways to view posted sales tax transactions. You can vi
 2. On the Action Pane, select **Sales tax code**.
 3. Select **Posted sales tax**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

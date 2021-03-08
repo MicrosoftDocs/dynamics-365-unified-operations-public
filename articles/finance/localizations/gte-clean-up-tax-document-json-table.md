@@ -68,3 +68,6 @@ Before you begin the cleanup, complete the following tasks:
     ![Transaction date field in the Tax document extension information for India section](media/tax-document-json-02.png)
 
 5. Select **OK** to start the cleanup.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

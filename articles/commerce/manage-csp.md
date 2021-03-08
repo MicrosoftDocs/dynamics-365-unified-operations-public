@@ -157,3 +157,6 @@ You can turn off CSP in a page mock by using the following code.
 [Add script code to site pages to support telemetry](add-telemetry.md)
 
 [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

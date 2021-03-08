@@ -134,3 +134,6 @@ For more information, see the following topics:
 - [round Function](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ This procedure shows how to set up a project resource. This task uses the USMF d
 20. Click Save.
 21. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

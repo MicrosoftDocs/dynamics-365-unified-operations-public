@@ -47,3 +47,6 @@ Service agreement groups are useful for sorting and filtering service agreements
 ## Related topics
 
 [Service agreement overview](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

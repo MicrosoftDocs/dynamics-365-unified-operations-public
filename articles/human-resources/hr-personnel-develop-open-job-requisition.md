@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata 
  
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd, HcmPersonnelManagementWorkspace  
-audience: Application User 
+audience: Application User
 # ms.devlang:  
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Create and open job requisition
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Recruitment projects help you manage your recruiting process. After creating a recruitment project, you can do the following tasks:
 
@@ -70,3 +72,5 @@ Recruitment projects help you manage your recruiting process. After creating a r
 32. Select **Recruitment project status**.
 33. Select **Start**. The **Started** status means that the project is ready to receive applications.  
 34. Select **OK**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,7 @@
 title: Welcome to Dynamics 365 Human Resources
 description: Dynamics 365 Human Resources provides the workforce insights you need to build data-driven employee experiences across multiple areas.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -83,3 +83,6 @@ Human Resources connects people and operations data to help you optimize workfor
 [Manage leave and absence](hr-leave-and-absence-overview.md)</br>
 [Develop employees](hr-develop-performance-management-overview.md)</br>
 [Create courses](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ This procedure was completed using the demo data company JPMF.
 6. In the list, mark or unmark all rows.
 7. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

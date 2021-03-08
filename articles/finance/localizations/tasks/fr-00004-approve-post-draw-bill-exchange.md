@@ -48,3 +48,6 @@ This functionality is available for legal entities whose primary address is in F
 8. Click Post.
 9. Go to Accounts receivable > Inquiries and reports > Payments > Bill of exchange journal.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ This task walks you through creating the Bank account for Mexico and assigning t
     * Federal Registration for Taxpayers (RFC) number  is the tax identification number assigned by tax authorities to a person or a corporation. Tax registration IDs are validated according to the format specified by tax authorities in Mexico.  
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -230,3 +230,6 @@ The **Emailing.TxtToUse.Body** expression of the sample format is configured for
 
 ## Additional resources
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

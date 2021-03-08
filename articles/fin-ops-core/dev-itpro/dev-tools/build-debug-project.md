@@ -232,3 +232,6 @@ Earlier in this tutorial, you had the opportunity to add code to the project and
 4.  Mark the selections for some of the sets of Best Practice rules. For example, if you select the entry for **CodeStyleRules**, best practice guidelines for variables will be examined. After you've updated the selections, click **OK**.
 5.  Rebuild the Fleet Management project by right-clicking the project name and then clicking **Rebuild**. You'll notice that the violations of the best practice rules that you specified appear in the **Error list** window.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

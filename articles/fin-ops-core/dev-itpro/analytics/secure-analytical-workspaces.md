@@ -110,3 +110,6 @@ In this scenario, the workspaces and reports that the sales manager from Contoso
     3. Select the **CompanyFilter** check box.
 
 The reports will now show data as if you're running the USMF company.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

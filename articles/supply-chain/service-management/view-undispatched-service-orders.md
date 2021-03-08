@@ -65,3 +65,6 @@ This topic describes how to view activities in a service order that don’t have
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Therefore, the following accounting entries are created automatically to balance
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

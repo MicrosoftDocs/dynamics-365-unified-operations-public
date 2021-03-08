@@ -79,3 +79,6 @@ To confirm that the customer account payment method has been enabled, follow the
 [Set product quantity limits for B2B e-commerce sites](quantity-limits.md)
 
 [SDK and Module library updates](../e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

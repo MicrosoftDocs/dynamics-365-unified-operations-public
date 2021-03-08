@@ -204,3 +204,6 @@ form.
 
 2.  In the **Sales order** form, on the Action Pane, on the **Manage** tab,
     click **Check credit limit**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

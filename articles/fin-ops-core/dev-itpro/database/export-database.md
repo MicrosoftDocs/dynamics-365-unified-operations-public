@@ -96,3 +96,6 @@ The export process can time out on Azure SQL Database when large databases are i
 #### Export doesn't show any progress in LCS
 
 The export process differs from other database movement operations, and the general package deployment doesn't use a runbook. Therefore, the progress indicator in LCS doesn't show any output, even though it typically shows output in other scenarios. The LCS team is working to identify known error codes so that they can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

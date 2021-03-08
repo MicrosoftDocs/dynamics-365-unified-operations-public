@@ -49,3 +49,6 @@ Follow these steps to create a business vertical.
 3. Enter a name, description, and entity code for the new business vertical.
 4. Select **Close**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

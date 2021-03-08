@@ -49,3 +49,6 @@ Use this procedure to create a purchase complementary fiscal document to adjust 
 14. Close the page.
 15. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

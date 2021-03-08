@@ -68,3 +68,6 @@ The online platform provides a built-in script injector module that makes it eas
 [E-commerce architectural overview](architectural-overview.md)
 
 [CLI command reference](cli-command-reference.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

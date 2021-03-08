@@ -90,3 +90,6 @@ On the **Customers** page, for each customer who has agreed to pay by using a bi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

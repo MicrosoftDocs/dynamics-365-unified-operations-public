@@ -109,3 +109,6 @@ The ability to recall a journal in a workflow that has a status of "unrecoverabl
 
 ## Delete Journal Lines
 The ability to delete all journal lines quickly is enabled in a journal under **Functions** > **Delete Journal Lines**. To enable this feature, on the **Feature management**, select **Delete journal performance optimizations**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

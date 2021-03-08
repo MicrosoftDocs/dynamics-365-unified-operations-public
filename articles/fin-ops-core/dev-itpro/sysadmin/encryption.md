@@ -68,3 +68,6 @@ Finance and Operations apps only support the following cipher suites:
 * [Microsoft SQL Server Transparent Data Encryption (TDE)](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption)
 * [Azure Storage encryption](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)
 * [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

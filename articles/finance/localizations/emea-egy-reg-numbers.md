@@ -107,3 +107,6 @@ After you configure the registration numbers, you can use them for legal entitie
 ## Additional resources
 
 - [Registration IDs](emea-registration-ids.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

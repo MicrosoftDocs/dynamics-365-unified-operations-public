@@ -4,7 +4,7 @@
 title: Provision Onboard
 description: This topic provides information about how to provision the standalone Dynamics 365 Talent - Onboard app.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/16/2019
 ms.topic: article
 ms.prod: 
@@ -50,3 +50,6 @@ The following illustration shows the logic used for provisioning the standalone 
 [![Provisioning process for the standalone Onboard app, based on country/region](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 
 Unlike the full version of Talent, the standalone Onboard app doesn't maintain a list of the environments that each user can access. Users are automatically signed in to the last environment they used. They can then select different environments by using the **Settings** button (the gear symbol).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ You can export financial data using the formats specified by the Standard Import
   - Type 4I – Exports transactions. 
   - Type 4E – Exports period balances and transactions. 
 8. Click **OK**. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

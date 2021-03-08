@@ -222,3 +222,6 @@ Order fulfillment at the point of sale includes filtering to help the user easil
 - Created date
 - Delivery date
 - Receipt date
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

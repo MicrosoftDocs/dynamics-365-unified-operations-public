@@ -109,3 +109,6 @@ The stock transfer transaction upload is provided through the data entity so tha
   charges are not automatically updating on the sales order line to include charge amount in the assessable value of goods.  
 -	Importing the **General journal** lines with tax using the data import/export feature seems successful, but when verifying
   the tax document there is no tax information for the imported **General journal** transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

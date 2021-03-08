@@ -161,3 +161,6 @@ final class MySysUserLogCleanup_Extension
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

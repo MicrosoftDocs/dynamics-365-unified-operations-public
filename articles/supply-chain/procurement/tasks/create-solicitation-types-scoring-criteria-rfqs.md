@@ -54,3 +54,6 @@ This guide shows you how to create a solicitation type and associate this with a
 8. Click OK.
 9. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

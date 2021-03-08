@@ -110,3 +110,6 @@ To explain this apparent failure, you must understand the selection criteria for
 
 > [!NOTE]
 > You can't use location stocking limits to control, for example, the replenishment of items that have different quantities in the same location. In this case, use a *replenishment template*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

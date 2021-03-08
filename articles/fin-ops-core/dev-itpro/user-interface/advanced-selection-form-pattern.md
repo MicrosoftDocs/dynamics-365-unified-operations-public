@@ -69,3 +69,6 @@ Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procu
 [![Example of advanced selection](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

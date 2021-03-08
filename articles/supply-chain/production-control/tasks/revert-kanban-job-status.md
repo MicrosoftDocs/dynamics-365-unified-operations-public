@@ -56,3 +56,6 @@ This procedure focuses on reverting an incorrect kanban job status. This is usef
     * Select the same job.  
     * Notice that the job status for the kanban job is reverted to Planned, which is indicated by an empty kanban icon.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

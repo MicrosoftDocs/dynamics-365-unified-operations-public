@@ -44,3 +44,6 @@ This procedure shows how to import the German audit file electronic reporting da
 10. Click Import.
 11. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

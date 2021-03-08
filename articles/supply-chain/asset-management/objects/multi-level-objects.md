@@ -66,3 +66,6 @@ If an asset has related sub-assets, you can delete it only if no maintenance req
 
 > [!NOTE]
 > If you can't delete an asset by using this procedure, another way to handle deletion is to set up an asset lifecycle state for this purpose. For example, you can set up a **Scrapped** or **Deleted** lifecycle state on the **Asset lifecycle states** page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

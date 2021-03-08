@@ -164,3 +164,6 @@ This section provides a list of known issues for saved views while the feature i
 -  (Quality update) [KB 4564906] Personalization form doesn't load/Loading a published view for the first time takes a long time
 -  [KB 4568114] Views can be published to a blank legal entity
 -  [kB 4568113] "View query cannot be applied" message shown when loading a view that modifies existing filters
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

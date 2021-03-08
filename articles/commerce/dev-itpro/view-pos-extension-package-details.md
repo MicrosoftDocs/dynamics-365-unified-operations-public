@@ -63,3 +63,6 @@ The information in this view is based on the manifest file that is included in t
 > [!NOTE]
 > Dual display custom control and other extension details information related to dual display will not be shown in the extension details view.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

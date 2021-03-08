@@ -167,3 +167,6 @@ To run the draft version of the editable format, you must make it [runnable](../
 
 - [Design a new ER configuration to generate reports in Word format](../er-design-configuration-word.md)
 - [Embed images and shapes in documents that you generate by using ER](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -3,8 +3,8 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (April 3, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for April 3, 2020.
-author: Andreabichsel
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 04/03/2020
 ms.topic: article
 ms.prod: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (April 3, 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -142,3 +144,5 @@ If document preview for documents stored in SharePoint doesn't work, try the fol
 [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -124,3 +124,6 @@ A container control can contain any number of controls.
 | [Order](../interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#order) |Order: number (optional)  <br>|Number indicating the order in which a control will appear on a page.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) <br> |
 | [Type](../interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|String indicating the control type.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) <br> |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

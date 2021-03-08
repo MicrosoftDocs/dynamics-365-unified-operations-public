@@ -81,3 +81,6 @@ The following illustration shows the financial entry for the **Credit only**/**R
 The following illustration shows the financial entry for the **Credit**/**Replace and credit** disposition code.
 
 ![Financial entry for the Credit/Replace and credit disposition code](media/Annotation-2019-05-20-163405.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ The following table describes the tabs in a report definition and how the inform
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

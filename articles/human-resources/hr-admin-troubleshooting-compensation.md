@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Run the compensation process
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Issue**
 
 The customer is trying to run the compensation process in Microsoft Dynamics 365 Human Resources but isn't having any success.
@@ -53,3 +55,6 @@ Here is the documentation for compensation:
 - Process:
 
     - [Process compensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

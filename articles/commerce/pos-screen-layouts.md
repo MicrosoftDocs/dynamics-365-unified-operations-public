@@ -210,3 +210,6 @@ The button grid designer lets you configure button grids that can be used on the
 ## Additional resources
 
 [Install the Retail point of sale (POS) layout designer](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

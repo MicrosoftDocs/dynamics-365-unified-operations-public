@@ -60,3 +60,6 @@ This task uses the JPMF demo company data.
     * The proposed amount is discounted to present value.  
 13. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ These tasks are intended for system administrators.
 8. In the Country/region field, type 'PRT'.
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

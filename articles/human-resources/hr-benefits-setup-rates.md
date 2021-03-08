@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure rates
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Rates in Microsoft Dynamics 365 Human Resources define how much employers and employees contribute for a benefit. The value can be an amount or flex credits, depending on your configuration.
 
 Use rates to determine how much employees and employers pay for each benefit, based on several factors. Coverage rates are date-effective, so you can keep a historical record of rates. 
@@ -98,3 +100,6 @@ You can also use double tiers. If you select **Double tier** for the **Use tiers
    | **Flex credit smoker rate** | The number of flex credits the benefit costs, based on the calculation defined for the tier level for smokers. |
 
 5. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

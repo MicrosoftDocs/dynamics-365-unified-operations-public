@@ -138,3 +138,6 @@ Before local Hardware Station can consume your extension, the **composition** se
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

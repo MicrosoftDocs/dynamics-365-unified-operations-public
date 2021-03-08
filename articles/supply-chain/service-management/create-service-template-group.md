@@ -43,3 +43,6 @@ You can use service template groups to sort and filter service templates.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

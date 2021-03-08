@@ -113,3 +113,6 @@ For more information, see [Fixed assets integration](fixed-asset-integration.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

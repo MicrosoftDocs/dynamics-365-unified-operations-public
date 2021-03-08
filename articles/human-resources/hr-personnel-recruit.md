@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Recruit job candidates
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources helps you to manage recruiting requests. It also helps you seamlessly transition job candidates to employees. If your organization uses a separate recruiting application, your recruiting process might include the following steps:
 
@@ -230,3 +230,6 @@ If needed, you can dismiss a candidate after hiring them. For example, a candida
 [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organize your workforce](hr-personnel-departments-jobs-positions.md)<br>
 [Set up the components of a job](hr-personnel-jobs.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

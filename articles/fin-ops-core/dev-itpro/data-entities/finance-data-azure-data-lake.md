@@ -136,3 +136,6 @@ Due to the error, the system has paused data export – data that exists in the 
 > [!NOTE]
 > Deactivating and activating the table may cause the system to re-initialize the data in the lake by creating a full copy. If this is a large table, the initialize process may take some time. In the future, the system may automatically update data in the lake to reflect the table structure changes. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

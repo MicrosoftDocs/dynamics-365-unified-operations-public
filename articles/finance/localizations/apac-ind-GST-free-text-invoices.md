@@ -60,3 +60,6 @@ ms.dyn365.ops.version: 10.0.4
 2. Select **Voucher**.
 
 ![Financial entries for both the intrastate and interstate transactions](media/Annotation-2019-05-20-133425.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -358,3 +358,6 @@ The following scenarios illustrate how you could use the shipment consolidation 
 ## Additional resources
 
 - [Shipment consolidation policies](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

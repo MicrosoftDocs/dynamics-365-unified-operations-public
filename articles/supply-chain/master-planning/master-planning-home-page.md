@@ -90,3 +90,6 @@ Additional help is available as task guides. To access task guides, click the **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

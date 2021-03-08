@@ -112,3 +112,6 @@ The following key dimensions in the Sales Cube are used as filters to slice the 
 | Dates            | Dates                                                |
 
 By default, the content shows data for the current calendar year. However, you can change the date filter in the report filters section. You can also change the company filter.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

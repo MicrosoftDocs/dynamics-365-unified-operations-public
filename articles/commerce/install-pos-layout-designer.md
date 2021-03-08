@@ -66,3 +66,6 @@ The graphical design interface for MPOS or Cloud POS is controlled by the till l
 ## Additional resources
 
 [Configure, install, and activate Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

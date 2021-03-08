@@ -51,3 +51,6 @@ These topics describe the programs, tools, and processes available related to th
 ## Frequently asked questions
 
 [Go-live for implementation projects FAQ](go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

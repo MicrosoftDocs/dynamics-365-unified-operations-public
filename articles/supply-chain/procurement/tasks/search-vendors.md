@@ -41,3 +41,6 @@ Learn how to search for vendors based on specific criteria. This example shows y
 6. In the Country/region field, type a value.
 7. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

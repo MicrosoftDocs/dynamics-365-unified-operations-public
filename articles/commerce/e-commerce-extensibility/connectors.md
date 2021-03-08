@@ -365,3 +365,6 @@ Geolocation information that is generated will be saved in the **requestContext.
 ## Additional resources
 
 [Online channel extensibility overview](overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

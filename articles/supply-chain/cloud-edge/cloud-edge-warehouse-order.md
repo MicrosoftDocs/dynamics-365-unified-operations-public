@@ -55,6 +55,8 @@ To create a warehouse order, follow these steps.
 1. On the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.
 1. To view the related warehouse order lines, open the relevant purchase order, select a line in the **Purchase order lines** section, and then, on the toolbar, select **Warehouse \> Warehouse order lines**. To view all the lines, go to **Warehouse management \> Inquiries and reports \> Warehouse order lines**.
 
+You can also trigger the *Release to warehouse* process from a batch job by going to **Warehouse management > Release to warehouse > Automatic release of purchase orders**. When setting up the batch job, you can select specific purchase order lines based on a query. A typical scenario would be to set up a recurrent batch job that releases all the confirmed purchase order lines expected to arrive the next day.
+
 ## Cancel a warehouse order
 
 As part of the *Release to warehouse* process, purchase order inventory transactions are linked to warehouse orders and locked from being updated by the hub. If you released to the warehouse by mistake, or if you have some other reason to reverse the creation of warehouse order lines, you can request to cancel warehouse order lines.
@@ -75,3 +77,6 @@ In the **Warehouse order lines** view, you can monitor the progress of inbound r
 
 - Go to **Warehouse management \> Inquiries and reports \> Warehouse order lines**, and use the filter to find the lines that you're looking for.
 - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**, and open the relevant purchase order. In the **Purchase order lines** section, select one or more lines, and then, on the toolbar, select **Warehouse \> Warehouse receipt entries**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

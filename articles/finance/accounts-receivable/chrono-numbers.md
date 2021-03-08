@@ -111,3 +111,6 @@ When you post a document, the appropriate number sequence group is assigned to t
 
 > [!NOTE]
 > For some countries, there is a specific logic already implemented for document numbering. In this case, country-specific logic will override the **Chronological numbering** feature.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

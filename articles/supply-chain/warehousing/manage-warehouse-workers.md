@@ -61,3 +61,6 @@ Analysis of the time that is used to process work items can help drive improveme
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

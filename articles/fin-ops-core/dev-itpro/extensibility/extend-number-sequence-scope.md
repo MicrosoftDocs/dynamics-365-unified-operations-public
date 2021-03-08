@@ -57,3 +57,6 @@ To create a new scope and have it show up in the client, complete the following 
 8. Add an extension class for the **NumberSequenceTableEntity** and **NumberSequencesReferenceEntity** data entities. Create post handlers for the **GenerateNumberSequenceScopeTypes** and **GenerateNumberSequenceScopeValues** methods to generate the **NumberSequenceScope** for the new scope type.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

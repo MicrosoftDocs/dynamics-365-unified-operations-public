@@ -49,3 +49,6 @@ Electronic reporting (ER) record functions can be used to extract information fr
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Electronic reporting formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

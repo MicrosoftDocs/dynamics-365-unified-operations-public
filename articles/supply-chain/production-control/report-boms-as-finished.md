@@ -92,3 +92,6 @@ In this case, the two on-hand pieces of item number COMP are considered. However
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

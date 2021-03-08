@@ -66,3 +66,6 @@ This example shows an asset fault cost control calculation.
     ![Figure 1](media/05-controlling-and-reporting.png)
 
 For information about how to set up faults, see the [Fault management](../setup-for-work-orders/fault-management.md) topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

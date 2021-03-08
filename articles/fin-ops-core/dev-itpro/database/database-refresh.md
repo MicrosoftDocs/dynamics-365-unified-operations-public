@@ -5,7 +5,7 @@ title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 11/30/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -62,7 +62,7 @@ The information in this section lists certain elements of the database that are 
 * All users except the admin will be set to **Disabled** status.
 
 #### When refreshing from sandbox environment to production environment
-This is also referred to as [Golden configuration promotion](/dbmovement-scenario-goldenconfig.md).
+This is also referred to as [Golden configuration promotion](dbmovement-scenario-goldenconfig.md).
 * Batch job history is stored in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 
 #### These elements are removed for all database refresh operations
@@ -130,3 +130,6 @@ The database refresh process (self-service or via service request) cannot be com
 If upgrading your sandbox UAT environment to a newer Application version (for example, 7.3 to 8.1), be sure to perform the database refresh action prior to starting the upgrade. After your sandbox is upgraded to the newer version, you cannot restore an older production environment database in to the sandbox UAT environment.
 
 Conversely, if your production environment is newer than your target sandbox, you will need to either upgrade the target sandbox prior to the refresh or simply deallocate, delete, and redeploy prior to performing the refresh.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

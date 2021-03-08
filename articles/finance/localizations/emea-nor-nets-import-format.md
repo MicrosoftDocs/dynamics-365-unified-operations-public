@@ -56,3 +56,6 @@ You receive a message to update payment defaults values for the corresponding cu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

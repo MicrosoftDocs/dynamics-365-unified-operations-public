@@ -64,3 +64,6 @@ Execution of this function can have different results in different instances of 
 ## Additional resources
 
 [Other (business domain–specific) functions](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

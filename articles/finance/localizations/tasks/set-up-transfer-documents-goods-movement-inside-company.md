@@ -78,3 +78,6 @@ This procedure is intended for inventory accountants. This procedure is for a fe
 10. Click Packing slip.
 11. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

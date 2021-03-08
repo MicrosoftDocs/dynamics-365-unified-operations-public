@@ -177,3 +177,6 @@ Other, back-end improvements that users can see have been made to the statement 
 
     - Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce parameters**. Then, on the **Posting** tab, on the **Inventory update** FastTab, in the **Detail level** field, select **Summary**.
     - Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce parameters**. Then, on the **Posting** tab, on the **Aggregation** FastTab, set the **Voucher transactions** option to **Yes**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

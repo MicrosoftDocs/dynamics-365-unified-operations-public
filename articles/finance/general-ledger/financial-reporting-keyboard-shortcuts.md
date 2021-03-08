@@ -116,3 +116,6 @@ The following table provides a short, non-exhaustive list of keyboard shortcuts 
 | Backspace | Deletes the character before the insertion point when editing a cell. |
 | Ctrl+Enter | Commits any changes to the current cell without moving the focus. Also commits any changes to the current row. |
 |   |   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

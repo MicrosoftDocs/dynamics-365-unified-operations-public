@@ -51,3 +51,6 @@ This procedure shows how to settle transactions between ledger accounts and canc
 7. Click Ledger settlements.
 8. In the list, mark the selected row.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

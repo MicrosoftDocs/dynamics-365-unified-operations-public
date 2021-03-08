@@ -57,3 +57,6 @@ A cost group can be assigned a cost group type and a behavior for supplemental s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

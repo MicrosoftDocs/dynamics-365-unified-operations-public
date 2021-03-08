@@ -684,3 +684,6 @@ When you generate the JPK-V7M report in XML format for a period that is shorter 
 
 - The **\<Miesiac\>** tag will contain information about the date interval that report is generated for.
 - The **\<P_\*\>** tag of the **Deklaracja** part of the report contains calculated values that represent the aggregation of amounts from the **SprzedazWiersz** and **ZakupWiersz** parts of the report. The values in this tag will be rounded to 'a two-digit decimal value, but not an integer value.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

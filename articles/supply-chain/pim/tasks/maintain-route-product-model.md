@@ -69,3 +69,6 @@ Running this procedure requires that a product configuration model exists. This 
 15. In the Requirement field, enter or select a value.
 16. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

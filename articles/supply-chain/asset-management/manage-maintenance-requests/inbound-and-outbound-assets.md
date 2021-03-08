@@ -75,3 +75,6 @@ When you've completed the maintenance or repair job, you can register the asset 
 2. Select the asset or maintenance request.
 3. Select **Deliver assets**.
 4. In the **Delivered** field, enter the date and time. Then select **OK**. The record is removed from the **Outbound assets** list page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

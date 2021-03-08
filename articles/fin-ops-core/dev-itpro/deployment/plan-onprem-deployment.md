@@ -237,3 +237,6 @@ Additional services or components can be configured to extend an on-premises dep
 After you’ve completed the planning activities mentioned in this topic, you can begin the procedures listed in the [Onboard](on-premises-deployment-landing-page.md#onboard) section of the [On-premises deployment home page](on-premises-deployment-landing-page.md).
 
 Be sure to refer to the [On-premises deployment home page](on-premises-deployment-landing-page.md) throughout your implementation for more information about planning, deployment, maintenance, and troubleshooting.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

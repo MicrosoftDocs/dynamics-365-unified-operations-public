@@ -47,3 +47,6 @@ This procedure shows how to view and set up document types that are used for I-9
 9. Select the agency that issued the document type. Example: Province/territory
 10. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

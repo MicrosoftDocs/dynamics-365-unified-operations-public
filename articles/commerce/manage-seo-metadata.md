@@ -101,3 +101,6 @@ To modify page metadata, follow these steps.
 [Verify page content accessibility](verify-accessibility.md)
 
 [Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

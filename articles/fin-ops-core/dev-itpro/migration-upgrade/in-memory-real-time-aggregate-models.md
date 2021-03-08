@@ -55,3 +55,6 @@ Perspectives are now modeled using add-ins for Visual Studio. (Visual Studio is 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

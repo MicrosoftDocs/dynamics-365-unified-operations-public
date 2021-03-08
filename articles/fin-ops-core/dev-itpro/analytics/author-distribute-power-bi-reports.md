@@ -93,3 +93,6 @@ Power BI Desktop also supports the creation of calculations and lets you combine
 ## Validating reports in a demo environment
 
 The report shows the demo or test data in your developer environment. If you want to integrate the report into a demo environment, you can continue to publish this report to your PowerBI.com account and pin it to the client. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

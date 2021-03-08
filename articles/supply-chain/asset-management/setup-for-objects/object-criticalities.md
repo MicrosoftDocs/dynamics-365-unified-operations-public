@@ -66,3 +66,6 @@ To set up criticality, you first create the criticality types that should be use
 - The criticality on a work order is recalculated every time that a work order line is added to or deleted from the work order.
 - If a work order contains several work order jobs, the highest criticality, according to the **Factor** field on the **Criticality types** page, is always used on the work order.
 - Generally, asset criticality can change over a period. Criticality can be affected by the purchase of new equipment, refurbishments, and so on. Consider reevaluating your asset criticalities at regular intervals (for example, once per year or every other year) to make sure that your criticality definitions match your current production setup.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

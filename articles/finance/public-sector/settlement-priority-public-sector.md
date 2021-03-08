@@ -78,3 +78,6 @@ During the settlement process, settlement attributes are considered first, then 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

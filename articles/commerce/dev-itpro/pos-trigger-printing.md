@@ -53,7 +53,7 @@ The following table lists the available triggers and denotes whether they can be
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
 | PreUnlockTerminalTrigger         | Cancelable     | Executed before the POS register is unlocked.  |
 | PostDeviceActivationTrigger      | Non-Cancelable | Executed after the POS activation.   | 
-| PreElevateUserTrigger      | Cancelable | Executed before the manager override.   | 
+| PreElevateUserTrigger      | Cancelable | Executed before the manager override, this trigger will only work for non Microsoft Azure Active Directory (Azure AD) user authentication, if Azure AD is enabled this trigger will not work.   | 
 | PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
 | PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
 | PreOpenUrlTrigger      | Cancelable | Executed before the open URL operation.   | 
@@ -167,6 +167,8 @@ The following table lists the available triggers and denotes whether they can be
 | PostCreatePackingSlipTrigger	| Non-Cancelable 	 | Executed after the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
 | PostReturnInvoicedSalesLinesTrigger	| Non-Cancelable 	 | Executed after one or more invoices selected for return.|
 | PreResendEmailReceiptTrigger (10.0.13)	| Cancelable 	 | Executed before sending the email from the Show journal view.|
+| PreRecallCustomerQuoteTrigger (10.0.18)	| Cancelable 	 | Executed before the customer quote is recalled from the recall order view.|
+| PostRecallCustomerQuoteTrigger (10.0.18)	| Non-Cancelable 	 | Executed after the customer quote is recalled from the recall order view.|
 
 
 
@@ -721,3 +723,6 @@ This section explains how to override the existing CRT request to print a receip
 2. After the POS starts, sign in to POS and add an item to a transaction.
 3. Suspend the transaction.
 4. The custom receipt should print.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

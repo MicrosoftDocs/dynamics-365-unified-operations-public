@@ -2,7 +2,7 @@
 # required metadata
 
 title: Respond to GDPR data requests resources
-description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR) as a customer using Finance and Operations apps, and other Dynamics 365 products.
+description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR).
 author: rschloma
 manager: AnnBe
 ms.date: 07/23/2019
@@ -76,3 +76,6 @@ There are a number of resources to help you learn more about Compliance Manager 
 ## Additional resources
 
 For more information about the GDPR and the actions that your organization might need to take in response to a request for data, visit the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

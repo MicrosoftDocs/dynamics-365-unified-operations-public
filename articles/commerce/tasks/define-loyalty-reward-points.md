@@ -47,3 +47,6 @@ This procedure walks through defining loyalty reward points. You should set up l
 10. In the Expiration time unit field, select an option.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

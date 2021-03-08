@@ -749,3 +749,6 @@ The following table shows the required merchant property fields that must be set
 | MerchantAccount | SupportedTenderTypes | Visa;MasterCard;Amex;Discover;Debit |
 
 \* You **must** replace the sample values in this column with unique values for your own payment processor.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

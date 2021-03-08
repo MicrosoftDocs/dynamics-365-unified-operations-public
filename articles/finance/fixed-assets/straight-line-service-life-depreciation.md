@@ -112,3 +112,6 @@ The service life of the acquisition adjustment is the same as that of the fixed 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

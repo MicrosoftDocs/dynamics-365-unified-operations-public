@@ -42,3 +42,6 @@ Use this procedure to set up adjustment codes for Imposto sobre Produtos Industr
 9. Select **Save**.
 10. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

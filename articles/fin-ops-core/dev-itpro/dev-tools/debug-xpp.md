@@ -69,3 +69,6 @@ Additional resources
 --------
 
 [Develop and customize home page](developer-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ This is the fourth procedure, out of five, that illustrates the vendor payment p
 4. In the list, click the link in the SEPA CT row.
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

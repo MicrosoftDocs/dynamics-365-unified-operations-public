@@ -65,3 +65,6 @@ This procedure shows how to define a unit of measure, provide translations for t
 6. Click **OK**.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

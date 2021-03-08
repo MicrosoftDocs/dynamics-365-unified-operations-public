@@ -55,3 +55,6 @@ The following topics describe how the planning engine works, when different sett
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

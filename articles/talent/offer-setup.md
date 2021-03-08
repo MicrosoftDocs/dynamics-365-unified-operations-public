@@ -4,7 +4,7 @@
 title: Set up offer management in Attract
 description: This topic describes how to set up offers in Microsoft Dynamics 365 Talent.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
@@ -228,3 +228,6 @@ offers.
 
 
 To learn more about the offer creation process, see [Create, approve, and sign offers](./creating-offers.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

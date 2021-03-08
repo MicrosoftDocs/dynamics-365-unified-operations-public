@@ -4,7 +4,7 @@
 title: Add activities to a hiring process 
 description: This topic provides information about the various types of activities you can add to a hiring process in Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
-manager: AnnBe
+manager: tfehr
 ms.date: 05/28/2019
 ms.topic: article
 ms.prod: 
@@ -95,3 +95,6 @@ The hiring process template requires the Offer activity. To use the integrated o
 > The integrated Offer Management App is available only with the Comprehensive hiring add-on. For more information, see [Which version of Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -303,3 +303,6 @@ The list of ER configurations for Finance is constantly updated. Open the [Globa
 
 - [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md)
 - [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

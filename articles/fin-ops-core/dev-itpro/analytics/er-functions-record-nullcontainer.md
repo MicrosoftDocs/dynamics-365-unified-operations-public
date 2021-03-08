@@ -65,3 +65,6 @@ The resulting record value.
 ## Additional resources
 
 [Record functions](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

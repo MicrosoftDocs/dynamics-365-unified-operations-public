@@ -2,9 +2,9 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (October 1, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for October 1, 2018.
+author: andreabichsel
+manager: tfehr
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
@@ -81,3 +81,6 @@ leavers in an organization. Options include: Prorated, Full accrual, and No accr
     closed. If the FactBoxes are closed when the **Worker** page is loaded, the
     **Attachments** buttons will be enabled. (This issue will be fixed in the next
     platform update.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

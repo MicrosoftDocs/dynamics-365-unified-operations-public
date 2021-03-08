@@ -82,3 +82,6 @@ The `TRANSLATE` function replaces one character at a time. The function replaces
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

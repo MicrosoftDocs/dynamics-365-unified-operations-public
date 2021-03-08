@@ -2,7 +2,7 @@
 # required metadata
 
 title: Priority-based throttling FAQ
-description: This topic provides answers to some frequently asked questions (FAQ) about priority-based throttling for Open Data Protocol (OData) and custom service-based integrations.
+description: This topic provides answers to frequently asked questions (FAQ) about priority-based throttling for OData and custom service-based integrations.
 author: hasaid
 manager: AnnBe
 ms.date: 09/23/2020
@@ -115,3 +115,6 @@ The system will use default values if no priorities are configured after April 2
 ## Can the throttling engine be configured (thresholds)?
 
 No.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

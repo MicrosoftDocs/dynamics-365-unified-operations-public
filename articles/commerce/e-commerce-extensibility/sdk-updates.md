@@ -120,3 +120,6 @@ When a local configuration package is created by using the **yarn msdyn365 pack*
 ## Additional resources
 
 [Package configurations and deploy them to an online environment](package-deploy.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

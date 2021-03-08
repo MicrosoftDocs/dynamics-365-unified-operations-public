@@ -62,3 +62,6 @@ At this point in the upgrade project, we recommend that you categorize any bugs 
     - No workaround or mitigation is available for it.
 
 - **Non-blocking** – The upgrade project can proceed. Bugs of this type can be fixed in the upgraded system.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

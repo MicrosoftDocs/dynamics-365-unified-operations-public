@@ -73,3 +73,6 @@ After initialization is completed, you must configure additional commerce data. 
 - Commerce channels
 - Registers and devices
 - Assortments
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

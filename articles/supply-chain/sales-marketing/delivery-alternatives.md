@@ -154,3 +154,6 @@ This FastTab highlights the impact of the selected delivery alternative. If you 
 ## Additional resources
 
 [Order promising](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

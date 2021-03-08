@@ -76,3 +76,6 @@ You use the **Export** page (**System administration \> Workspaces \> Import/Exp
 5. Select **OK** to run the export.
 
 When the export is completed, you receive a message that shows the number of records that were saved in each file. You can then import the files into the consolidated legal entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

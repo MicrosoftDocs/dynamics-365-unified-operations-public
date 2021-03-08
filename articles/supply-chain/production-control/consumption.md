@@ -85,3 +85,6 @@ The bill of materials (BOM) quantity is 1, and the production quantity is 110. T
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
