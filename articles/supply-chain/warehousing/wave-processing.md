@@ -112,9 +112,7 @@ To process a wave, follow these steps:
 1. Depending on the type of wave to process, do the following:
 
     - Select **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
-
     - Select **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
-
     - Select **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
 
 1. Select the wave to process. On the Action Pane, select **Process**.
