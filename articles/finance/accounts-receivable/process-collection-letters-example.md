@@ -100,7 +100,7 @@ The following illustration shows the information that's in the table as it would
 
     1. Notice that the collection letter code on both the header and the transaction lines is **Collection letter 1**, because this collection letter is the first collection letter in the sequence. (To view the transaction lines, you might have to select the **Transactions** FastTab.)
 
-   [![Verifying that the same collection letter code appears on the header and the lines](./media/Ignore-payments-creditmemos-4.PNG)](./media/Inore-payments-creditmemos-4.PNG)
+   [![Verifying that the same collection letter code appears on the header and the lines](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
 
     2. On the Action Pane, select **Post**.
     3. In the **Posting date** field, enter **1/19/2021**.
@@ -124,7 +124,7 @@ The following illustration shows the information that's in the table as it would
 
    [![Verifies that different collection letter codes appear on the header and the lines](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
-        The codes differ because the **Ignore payments and credit memos when calculating collection letter code** option is to **Yes**.
+    The codes differ because the **Ignore payments and credit memos when calculating collection letter code** option is to **Yes**.
 
     2. Don't post this collection letter.
 
