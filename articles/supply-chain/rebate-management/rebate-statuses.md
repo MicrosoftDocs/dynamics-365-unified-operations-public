@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rebate reduction principle
-description: 
+description: This topic describes how to set up rebate statuses, which help you to track the status of each deal. You can also use statuses for reporting and inquiry purposes.
 author: sherry-zheng
 manager: tfehr
 ms.date: 02/19/2021

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process, review, and post rebates
-description: 
+description: This topic describes how to process your Rebate management deals, calculate their discounts, review the generated transactions, post transactions, and review the postings.
 author: sherry-zheng
 manager: tfehr
 ms.date: 02/19/2021
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Release 10.0.18
 # Process, review, and post rebates
 
 [!include [banner](../includes/banner.md)]
+
+This topic describes how to process your Rebate management deals, calculate their discounts, review the generated transactions, post transactions, and review the postings.
 
 ## Change the status of a deal
 

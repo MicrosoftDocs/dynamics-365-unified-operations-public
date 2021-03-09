@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rebate management posting setup
-description: 
+description: This topic describes how to set up posting profiles, which are used to determine posting entries for rebate management calculation lines
 author: sherry-zheng
 manager: tfehr
 ms.date: 02/19/2021

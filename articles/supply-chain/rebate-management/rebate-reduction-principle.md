@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rebate reduction principles
-description: 
+description: This topic describes how to set up reduction principles, which control what happens when multiple rebates apply to the same item or transaction
 author: sherry-zheng
 manager: tfehr
 ms.date: 02/19/2021

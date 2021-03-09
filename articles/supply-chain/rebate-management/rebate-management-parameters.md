@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rebate management parameters
-description: 
+description: This topic describes the Rebate management parameters** page, which  contains settings that affect posting, status updates, number sequences, and other behavior.
 author: sherry-zheng
 manager: tfehr
 ms.date: 02/19/2021
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  TAMRebateParameters
+ms.search.form: TAMRebateParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rebate management groups
-description: 
+description: This topic describes how to set up Rebate management groups, which can be used during rebate calculations and attached to a master record.
 author: sherry-zheng
 manager: tfehr
 ms.date: 02/19/2021
