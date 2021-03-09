@@ -72,6 +72,18 @@ To set up parallel processing:\
     - **Maximum number of batch tasks** - Specify the number of batch tasks that should be used for the allocation for the selected warehouse. The optimal number of batch tasks depends on the infrastructure available and what other batch jobs are being processed on the server. Tests done on a 4 core environment that was dedicated to wave processing showed that using 8 tasks lead to good results.
     - **Wave processing batch group** - Specific batch groups can be used for different warehouses in order to allow the allocation processing to scale out per warehouse.
 
+## Enable parallelization across all legal entities
+Having the AllocateWave method configured to run in parallel helps the performance of the wave processing.
+- The *Wave parallelization for Allocate Wave* method feature is enabled by default and configures wave templates to be run in parallel for all the warehouses from all legal entities. 
+- The **allocateWave** method has a task configuration setting where through **Wave process methods** form it is possible to define the number of tasks that will run simultaneously equivalent to the number of parallel processes. Roughly, the time used on the allocate wave step that is between 30 to 60% is reduced by a factor equivalent to the number of tasks. It’s also possible to define which batch that will be assigned to process these tasks. It’s important to notice that all the legal entities will be configured to process waves in batch. For the warehouse management that are already configured to process waves in batch and for the warehouses that are already configured to use **allocateWave** method in parallel, the existing configuration will be kept. 
+- All the new legal entities will be configured by default to process waves in Batch and all the new warehouses with the configuration **Warehouse Management Processes** enabled would have the **allocateWave** method configured to run in parallel by default. Furthermore the waves will be enable to be executed in batch and configure a default 15 seconds wave lock wait time. When a wave is running, it acquires a lock on the item and dimensions above location during allocation step. When a subsequent concurrent wave processing tries to acquire the same lock for the identical record, it is blocked. The value represents how long it is - as a maximum - acceptable to wait before the lock is released and can be acquired.
+- Disabling the wave processing to be run in batch can have an impact of the performance of the wave processing, especially if the wave processing is using a parallelization process defined at the task configuration at relevant wave methods.
+
+Each of the above defaulting can be reverted manually after enabling the *Wave parallelization for Allocate Wave method* feature. 
+- Warehouse parameters go to **Warehouse management \> Setup \> Warehouse management parameters** on the **Wave processing** tab, apply new values for *Process waves in batch* and *Wait for lock (ms)*
+- Wave methods go to **Warehouse management \> Setup \> Waves \> Wave process methods**, select *allocateWave*, on the Action Pane, select **Task configuration**, modify or delete the batch tasks and group for each warehouse.
+
+
 ## Troubleshooting
 
 ### Troubleshoot using the Infolog
