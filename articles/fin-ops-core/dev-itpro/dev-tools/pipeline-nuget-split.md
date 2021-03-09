@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Update the hosted Azure Pipeline for new NuGets
+# Update the hosted Azure Pipeline for new NuGet packages
 
 [!include [banner](../includes/banner.md)]
 
