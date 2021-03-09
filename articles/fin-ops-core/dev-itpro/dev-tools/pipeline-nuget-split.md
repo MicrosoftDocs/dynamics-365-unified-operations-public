@@ -4,11 +4,9 @@
 title: Update the hosted Azure Pipeline for new NuGets
 description: This topic explains how to update an Azure pipeline to use new NuGet packages.
 author: jorisdg
-manager: AnnBe
+manager: tfehr
 ms.date: 03/04/2021
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -33,15 +31,14 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This documentation does not apply to the legay build pipeline that uses the build virtual machine.
-
 > This documentation applies to pipelines that were set up for versions 10.0.17 or earlier, updating to 10.0.18 or above.
+> This documentation does not apply to the legacy build pipeline that uses the build virtual machine.
 
-Version 10.0.18 (PU42) introduces a new NuGet package as a result of a package split for the Application Build Reference code. As a result, some changes have to be made to a pipeline created for 10.0.17 or earlier versions.
+Platform updates for [version 10.0.18](../get-started/whats-new-platform-updates-10-0-18.md) introduce a new NuGet package. The new package is a result of a package split for the Application Build Reference code. As a result, you have to make changes to pipelines created for 10.0.17 or earlier versions.
 
 ## Add the new package to packages.config list
 
-The packages.config file used for your build will include three packages already:
+The **packages.config** file used for your build already includes three packages:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -52,7 +49,7 @@ The packages.config file used for your build will include three packages already
 </packages>
 ```
 
-A fourth package, **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp** needs to be added to the list. The resulting packages.config file should look like the example below, substituting the version number with the version number in use by your pipeline.
+You need to add a fourth package to the list, **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp**. The resulting **packages.config** file should look like the following example, substituting the version number with the version number that your pipeline uses.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -69,14 +66,14 @@ A fourth package, **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp** nee
 The pipeline uses variables to simplify and centralize parameters used in the pipeline tasks. There are already variables for each of the NuGet package names. Add a variable for the name of the new NuGet package.
 
 - On the **Variables** tab of the pipeline, click the **Add** link at the bottom of the list of variables.
-- In the name column, type `AppSuitePackage`
-- In the value column, type `Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp`
+- In the name column, type `AppSuitePackage`.
+- In the value column, type `Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp`.
 
 ## Update the **Build solution** step
 
-The **Build solution** step in the pipeline the path and names to all the NuGet packages are supplied as command line parameters to **MSBuild**. Add the new NuGet package to the semi-colon separated list of **ReferenceFolder** paths.
+In the **Build solution** step in the pipeline, the path and names to all the NuGet packages are supplied as command line parameters to **MSBuild**. Add the new NuGet package to the semi-colon separated list of **ReferenceFolder** paths.
 
-- If you used the existing template without modifying, the new **MSBuild Arguments** will be:
+- If you used the existing template without modifying it, the new **MSBuild Arguments** will be:
 
     `/p:BuildTasksDirectory="$(NugetsPath)\$(ToolsPackage)\DevAlm" /p:MetadataDirectory="$(MetadataPath)" /p:FrameworkDirectory="$(NuGetsPath)\$(ToolsPackage)" /p:ReferenceFolder="$(NuGetsPath)\$(PlatPackage)\ref\net40;$(NuGetsPath)\$(AppPackage)\ref\net40;$(MetadataPath);$(Build.BinariesDirectory);$(NuGetsPath)\$(AppSuitePackage)\ref\net40" /p:ReferencePath="$(NuGetsPath)\$(ToolsPackage)" /p:OutputDirectory="$(Build.BinariesDirectory)"`
 
