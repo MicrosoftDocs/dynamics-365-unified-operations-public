@@ -41,6 +41,13 @@ Before you go through this topic, it's important that you understand the concept
 
 The main content of this topic is organized into tables, where the first column includes lists of tag-like "associated areas" to help you more quickly find best practices that are related to your areas of concern. For new implementations, you might find it useful to copy these tables to a location where you can check off the various best practices as they are completed. In this way, you can help ensure that the implementation is prepared as well as possible before you move forward to production.
 
+## Maturing, recommended configurations
+The following configurations have been released, but are still maturing to validate usefulness for all customers.
+
+| Associated areas | Best practice |
+|------------------|---------------|
+|  |  |
+
 ## Updating configurations
 The following should be performed after every update to the Dynamics 365 environment.
 
