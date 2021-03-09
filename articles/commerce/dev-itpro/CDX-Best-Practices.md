@@ -44,7 +44,7 @@ The main content of this topic is organized into tables, where the first column 
 ## Maturing, recommended configurations
 The following configurations have been released but have not been forced (yet) across all environments. These are typically still maturing to fully validate usefulness for all customers in all scenarios. The following will change from month to month, so it is valuable to check back regarding the maturity of a particular feature and whether any new features have been added.
 
-| Feature | Key | Best practice | Maturity |
+| Feature | Key | Description | Maturity |
 |------------------|---------------------|------------------------------|-----------------------------------|
 | Delayed download session creation | CDX_ENABLE_DELAYED_OFFLINE_DOWNLOAD_SESSION_CREATION | This key delays the download sessions from being fully created until after the Modern POS device the download sessions are for is fully activated.  The | High (Released 10.0.15, well understood, tested thoroughly, in use) |
 | Package order enforcement | CDX_ENABLE_DOWNLOAD_SESSION_DEPENDENCY_ENFORCEMENT | Enables package order enforcement <NEEDS LARGER DESCRIPTION>. | Low (Released 10.0.18 <VERIFY?>, well understood, tested thoroughly, not in use) |
