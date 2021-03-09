@@ -47,10 +47,14 @@ To set up warehouse parameters for wave processing, follow these steps:
 1. On the **Wave processing** FastTab, make the following settings:
 
     - **Wave processing batch group** - Select the batch group to use when you process waves by using batch jobs. The batch group specifies the server that batch jobs will run on.
-    - **Process waves in batch** - Select this check box to enable waves to be automatically processed by a batch job. You set up the batch job on the **Process waves** page. (See also the note at the end of this list.)
-    - **Create wave processing history log** - Select this check box to automatically save information about a wave in a log file after the wave is processed.
-    - **Create containerization history log** - Select this check box to automatically save information about containerization for a wave in a log file after the wave is processed.
+    - **Process waves in batch** - Choose whether to enable waves to be automatically processed by a batch job. <!-- KFM: Maybe mention to enable this if you want to use parallel processing. --> You set up the batch job on the **Process waves** page. (See also the note at the end of this list.)
+    - **Create wave processing history log** - Choose whether to automatically save information about a wave in a log file after the wave is processed.
+    - **Create containerization history log** - Choose whether to automatically save information about containerization for a wave in a log file after the wave is processed.
     - **Wait for lock (ms)** - Enter the time, in milliseconds, that an allocation step will wait for a system resource that is locked by another allocation step. When this time is exceeded, the wave is not processed and an error message is displayed.
+
+1. On the **Release to warehouse** FastTab, make the following setting:
+
+    - **Error on batch failure** - Choose whether to generate an error when a release to warehouse batch job fails. If this is enabled, failed jobs will end with a status of *Error*. If this is disabled, failed jobs will end with a status of *Ended*.
 
 > [!NOTE]
 > On the wave template that is used to process the wave, you can specify the settings that automate wave processing. If you set up a schedule for the batch job, you should coordinate the timing with the settings for automation in the wave template. For more information, see [Create a wave template](wave-templates.md).
