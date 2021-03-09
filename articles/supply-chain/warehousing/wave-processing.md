@@ -165,9 +165,3 @@ To open this page, select a wave on any of several different wave pages and then
 <!-- KFM: I'm not sure this section is clear.  -->
 
 The system validates all load lines to make sure no errors occur during wave processing. For each load line that fails validation, the following error is shown: "Found invalid load lines in wave. Please remove the invalid load lines." This helps you to address all the failure in one go without requiring your to rerun to the wave process for each load line failure. <!-- KFM: I don't see how it does this. --> The **Wave processing history log** is still available for viewing all the warnings provided the **Create wave processing history log** option is enabled on the **Warehouse management parameters** page. <!-- KFM: Is this something different? -->
-
-## Errors during auto release to warehouse
-
-<!-- KFM: (Not sure this is the right page for it) (10.0.17) This looks like a feature that we describe in the C+E documentation--is it? -->
-
-During the batch execution of release one or more orders to warehouse, if an error occurs, the batch job is marked with *Error* instead of *Ended*, and an error is shown to guide you to where to look for more details.
