@@ -89,11 +89,16 @@ Follow these steps to set up Dataverse.
 
     For more information, see [Create an application user](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
 
+1. Import **"Inventory Visibility Dataverse Solution.zip"** file, which includes Dataverse configuration related entities and power apps:
+
+    1. Go to Solutions page.
+    1. Click Import.
+
 1. Import the configuration upgrade trigger flow:
 
     1. Go to the Microsoft Flow page.
     1. Make sure that the connection that is named *Dataverse (legacy)* exists. (If it doesn't exist, create it.)
-    1. Import the **InventoryVisibilityConfigurationUpgradeTrigger.zip** file. After it's imported, the trigger will appear under **My flows**.
+    1. Import the **"Inventory Visibility Configuration Trigger.zip"** file. After it's imported, the trigger will appear under **My flows**.
     1. Initialize the following four variables, based on the environment information:
 
         - Azure Tenant Id
@@ -123,7 +128,7 @@ To install the Inventory Visibility Add-in, do the following:
 1. Select **Inventory Visibility** in the list.
 1. Enter values for the following fields for your environment:
 
-    - **AAD application ID**
+    - **AAD application (client) ID**
     - **AAD tenant ID**
 
     ![Add in setup page](media/inventory-visibility-setup.png "Add-in setup page")
