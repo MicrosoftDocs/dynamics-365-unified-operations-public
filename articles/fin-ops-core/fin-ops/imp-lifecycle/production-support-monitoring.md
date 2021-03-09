@@ -57,7 +57,7 @@ Can be triggered by the user at any moment with no lead time, the self-service a
 - Performance actions
 
 ### Service Request
-Usually triggered by a ticked involve the cooperation of the Dynamics Service Engineering team (DSE) and have a lead time, some of these actions include:
+Usually triggered by a ticket, involve the cooperation of the Dynamics Service Engineering team (DSE) and lead time is required. Some of these actions include:
 
 - FastTrack assessment process for the PRODUCTION environment
 - Code promotion to production
@@ -66,11 +66,11 @@ Usually triggered by a ticked involve the cooperation of the Dynamics Service En
 
 #### Some of the recommended practices when working with the DSE team:
 - Account for the team SLAs
-- Not using service request when a support request is more adapted
+- Do not use a service request if a support request suits better your case
 - Consulting the service [request catalog](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that it&#39;s the right type of request you are making
 
 ### Support Request 
-Remaining not Self-service scenarios usually triggered by opening a ticket, generally have a lead time, included in the category are:
+Other non-Self service scenarios are usually triggered by opening a support request, and generally have a lead time. Included in that category are:
 
 - Production point-in-time restore after Go-Live
 - Flag a regression in a Service Update and ask for an exception opt-out
