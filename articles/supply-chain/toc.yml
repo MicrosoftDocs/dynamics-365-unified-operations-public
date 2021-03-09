@@ -2975,10 +2975,12 @@
             href: warehousing/change-work-pool-on-work.md
           - name: Item consolidation - location utilization
             href: warehousing/item-consolidation-location-utilization.md
-          - name: Troubleshoot warehouse work
-            href: warehousing/troubleshoot-warehouse-work.md
           - name: Work split
             href: warehousing/work-split.md
+          - name: Material handling equipment interface (MHAX)
+            href: warehousing/mhax.md
+          - name: Troubleshoot warehouse work
+            href: warehousing/troubleshoot-warehouse-work.md
       - name: Warehouse setup
         items:
         - name: Warehouse configuration
