@@ -50,9 +50,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Regular translation checkins for supported HCM languages - (394249) | |
-| Expand use of Base Worker and Position Entities for CDS Entities - (559790) | |
-| Regus CDS Filtering - (558688) | |
+| | |
 
 ### Bug fixes
 
@@ -65,10 +63,9 @@ The following bug fixes are included in this release.
 | --- | --- | --- |
 | When accruing based on hours worked and using holiday correction the negative accrual appears inaccurate - (528155) | | |
 | Leave of absence is shown on leave calendar when "Disable leave on all calendars" is enabled - (486611) | | |
-| Move inner loop engineering systems back to AMD VM SKU - (560363) | | |
 | Able to import record for employee not enrolled on a plan with a specific plan type.... with Leave and Absence Bank Transaction entity - (508972) | | |
 | Updating Calendar in Employment entity errors if default Legal entity in User options is different - (554854) | | |
-| 'Cannot create a record in Form configurations (FormRunConfiguration)' due to Personalization breaking change Dashboard error - (558347) | | |
+| 558347 | 'Cannot create a record in Form configurations (FormRunConfiguration)' appears when loading the start page. | Personalizations are causing the error 'Cannot create a record in Form configurations (FormRunConfiguration)' to appear when loading the start page |
 | HcmMeasurementDetail index MeasurementIdx being unique is breaking the upgrade and is a breaking change for FinOps - (558034) | | |
 
 ## In preview
@@ -88,22 +85,6 @@ The following new features are in preview. For more information about turning fe
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
-
-## Terminology updates for Microsoft Dataverse
-
-Effective November 2020, Common Data Service has been renamed to [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro). See the [official announcement](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) on the Power Apps blog to learn more. With this name change, some terminology in Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. For more information, see [Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
-
-In this release, terminology related to the Dynamics 365 Human Resources integration with Dataverse has been updated throughout the application to reflect these changes. For example, the **Common Data Service integration** form is now **Microsoft Dataverse integration**.
-
-To learn more about the Dynamics 365 Human Resources integration with Microsoft Dataverse, see [Configure Microsoft Dataverse integration](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service) and [Configure Microsoft Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
-
-## Updates to service deployment
-
-Beginning with the February 22, 2021 release, we're adjusting our regional service update deployment. The adjustments will include rotating the order in which global regions receive updates for the Human Resources service, and modifications in the wait time between update stages. These changes bring us more in line with Safe Deployment Practices (SDP) to improve service stability, quality, and supportability.
-
-We'll continue to follow the two-week deployment cadence. However, customers may notice that updates are typically applied to their Human Resources environments on a different day of the two-week cycle than in previous releases.
-
-For more information about the service update process, see [Update process](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-setup-update-process).
 
 ## See also
 
