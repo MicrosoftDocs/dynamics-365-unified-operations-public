@@ -50,7 +50,6 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Consolidate attachments under Worker datasource - (552264)  |  |
 | Regular translation checkins for supported HCM languages - (394249) | |
 | Expand use of Base Worker and Position Entities for CDS Entities - (559790) | |
 | Regus CDS Filtering - (558688) | |
