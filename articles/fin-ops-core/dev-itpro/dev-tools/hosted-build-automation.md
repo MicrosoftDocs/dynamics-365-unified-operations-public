@@ -72,27 +72,30 @@ To identify which packages should be used during the build, and where they can b
 
 The nuget.config file provides NuGet with the source feed where the packages can be found. The packages.config file specifies the packages and their versions. To build against a newer version, you just have to update the versions in the packages.config file. For more information, including a sample nuget.config file, see [Restore Package Management NuGet packages in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/packages/nuget-restore).
 
-The following example shows a packages.config file for the three main packages that are required for a typical X++ build. You will need to substitute the listed version with the actual versions of your NuGet packages.
+The following example shows a **packages.config** file for the three main packages that are required for a typical X++ build. You must substitute the listed version with the actual versions of your NuGet packages.
 
-- For version 10.0.17 or earlier, use the following packages.config layout:
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<packages>
-    <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5644.16778" targetFramework="net40" />
-    <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.464.13" targetFramework="net40" />
-    <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5644.16778" targetFramework="net40" />
-</packages>
-```
-- For version 10.0.18 or later, use the following packages.config layout:
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<packages>
-    <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5968.16973" targetFramework="net40" />
-    <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.793.16" targetFramework="net40" />
-    <package id="Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp" version="10.0.793.16" targetFramework="net40" />
-    <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5968.16973" targetFramework="net40" />
-</packages>
-```
++ For version 10.0.17 or earlier, use the following packages.config layout:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <packages>
+        <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5644.16778" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.464.13" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5644.16778" targetFramework="net40" />
+    </packages>
+    ```
+
++ For version 10.0.18 or later, use the following packages.config layout:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <packages>
+        <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5968.16973" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.793.16" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp" version="10.0.793.16" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5968.16973" targetFramework="net40" />
+    </packages>
+    ```
 
 ## Creating the pipeline
 
