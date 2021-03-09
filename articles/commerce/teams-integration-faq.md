@@ -76,6 +76,10 @@ If a store doesn't have managers, a team group will not created for the store or
 
 Anyone with the owner role can add a new store manager in Commerce headquarters and reprovision Teams so that the new manager will have the necessary privileges in Teams for the group. 
 
+#### How do you clear the Microsoft Graph API token stored in the session storage?
+
+A user who has signed in to the point of sale (POS) with an Azure Active Directory (Azure AD) account should sign out from the POS or close the application to clear the session storage. 
+
 ## Additional resources
 
 [Dynamics 365 Commerce and Microsoft Teams integration ](commerce-teams-integration.md)
