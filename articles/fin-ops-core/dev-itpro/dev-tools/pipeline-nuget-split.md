@@ -49,7 +49,7 @@ The **packages.config** file used for your build already includes three packages
 </packages>
 ```
 
-You need to add a fourth package to the list, **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp**. The resulting **packages.config** file should look like the following example, substituting the version number with the version number that your pipeline uses.
+You need to add a fourth package to the list, **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp**. The resulting **packages.config** file should look like the following example, replacing the version number with the version number that your pipeline uses.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -65,13 +65,13 @@ You need to add a fourth package to the list, **Microsoft.Dynamics.AX.Applicatio
 
 The pipeline uses variables to simplify and centralize parameters used in the pipeline tasks. There are already variables for each of the NuGet package names. Add a variable for the name of the new NuGet package.
 
-- On the **Variables** tab of the pipeline, click the **Add** link at the bottom of the list of variables.
+- On the **Variables** tab of the pipeline, select the **Add** link at the bottom of the list of variables.
 - In the name column, type `AppSuitePackage`.
 - In the value column, type `Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp`.
 
 ## Update the **Build solution** step
 
-In the **Build solution** step in the pipeline, the path and names to all the NuGet packages are supplied as command line parameters to **MSBuild**. Add the new NuGet package to the semi-colon separated list of **ReferenceFolder** paths.
+In the **Build solution** step in the pipeline, the path and names to all the NuGet packages are supplied as command-line parameters to **MSBuild**. Add the new NuGet package to the semi-colon separated list of **ReferenceFolder** paths.
 
 - If you used the existing template without modifying it, the new **MSBuild Arguments** will be:
 
@@ -81,4 +81,4 @@ In the **Build solution** step in the pipeline, the path and names to all the Nu
 
 ## Replace your existing template entirely
 
-As an alternative to making these changes, or as a way to verify your changes, please review the updated templates in the [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub repository.
+As an alternative to making these changes, or as a way to verify your changes, review the updated templates in the [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub repository.
