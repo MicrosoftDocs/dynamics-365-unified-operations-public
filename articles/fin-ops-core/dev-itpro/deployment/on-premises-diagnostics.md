@@ -22,7 +22,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
 
