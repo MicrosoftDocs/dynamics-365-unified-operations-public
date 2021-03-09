@@ -158,7 +158,7 @@ The **Balance by bank account** visual uses amounts in the bank accounts' curren
 
 The default financial statements don't include any financial dimensions but are focused only on the main account. Support for financial dimensions will be available in future releases, when the reports become editable. Organizations will then be able to filter on financial dimension values.
 
-Some financial statements contain dimensions that are based on subledger transactions. The goal of the new financial statements it to enable filtering on dimensions that aren't set up as financial dimensions. For example, the default Expenses by vendor report lets you expand down beyond the main account, so that you can see the balances broken down by vendor. The vendor isn't set up as a financial dimension. Instead, the system returns to the originating subledger transaction to find the vendor.
+Some financial statements contain dimensions that are based on subledger transactions. The goal of the new financial statements is to enable filtering on dimensions that aren't set up as financial dimensions. For example, the default Expenses by vendor report lets you expand down beyond the main account, so that you can see the balances broken down by vendor. The vendor isn't set up as a financial dimension. Instead, the system returns to the originating subledger transaction to find the vendor.
 
 The following dimensions are used on the default reports. None of these dimensions are financial dimensions.
 
@@ -171,7 +171,7 @@ The following dimensions are used on the default reports. None of these dimensio
 - City
 
 > [!IMPORTANT] 
-> If you summarize transactions for multiple vendors or customers in a single voucher by using the financial journals, the data will be incorrect. Reporting can't determine which vendor or customer is related to a specific ledger account in a journal entry, because that information isn't maintained anywhere. Therefore, we do not recommend that you enter multiple vendors, customers, fixed assets, or projects in a single voucher.
+> If you summarize transactions for multiple vendors or customers in a single voucher by using the financial journals, the data will be incorrect. The reporting process can't determine which vendor or customer is related to a specific ledger account in a journal entry, because that information isn't maintained anywhere. Therefore, we do not recommend that you enter multiple vendors, customers, fixed assets, or projects in a single voucher.
 
 ## Drill on data
 
@@ -189,7 +189,7 @@ To expand to the main accounts for all rows, you can again use the **Expand** bu
 
 ![Trial balance expand button](./media/trial-balance3.png)
 
-After you drill down on a single row, multiple clicks are required in order to return to the full trial balance. The **Drill up** button (the first button after the **Drill** on field) drills up only in the context of the **Sales** category, as shown in the following illustration.
+After you drill down on a single row, multiple clicks are required to return to the full trial balance. The **Drill up** button (the first button after the **Drill** on field) drills up only in the context of the **Sales** category, as shown in the following illustration.
 
 ![Trial balance drill up button](./media/trial-balance4.png)
 
