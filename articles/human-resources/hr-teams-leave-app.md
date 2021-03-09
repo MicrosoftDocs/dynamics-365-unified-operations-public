@@ -195,7 +195,11 @@ If you can't sign into the app, it's possible that the account you're using to s
 
 ### Translations don't display
 
-If translations don't display as expected, make sure that the language you select in Teams matches the language selected in the Human Resources app.
+If translations don't display as expected, make sure the language you select in Teams matches the language selected in Human Resources **User options**.
+
+
+
+![Human Resources User options](./media/hr-teams-leave-app-user-options.png)
 
 If you still see translation issues, let us know via support.
 
