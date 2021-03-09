@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

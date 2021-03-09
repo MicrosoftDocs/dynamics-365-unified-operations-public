@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/11/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
