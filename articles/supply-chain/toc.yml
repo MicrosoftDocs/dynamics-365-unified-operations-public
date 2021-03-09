@@ -2342,23 +2342,25 @@
     - name: Rebate management
       items:
       - name: Rebate management module overview
-        href: reabate-management/rebate-management-overview.md
+        href: rebate-management/rebate-management-overview.md
         - name: Set up and configure the Rebate management module
           items:
           - name: Rebate management parameters
-            href: reabate-management/rebate-management-parameters.md
+            href: rebate-management/rebate-management-parameters.md
           - name: Rebate management deal workflows
-            href: reabate-management/rebate-management-workflows.md
+            href: rebate-management/rebate-management-workflows.md
           - name: Rebate reduction principles
-            href: reabate-management/rebate-reduction-principle.md
+            href: rebate-management/rebate-reduction-principle.md
           - name: Rebate statuses
-            href: reabate-management/rebate-statuses.md
+            href: rebate-management/rebate-statuses.md
           - name: Rebate management groups
-            href: reabate-management/rebate-management-groups.md
+            href: rebate-management/rebate-management-groups.md
           - name: Rebate management posting setup
-            href: reabate-management/rebate-management-posting.md
+            href: rebate-management/rebate-management-posting.md
       - name: Rebate management deals
-        href: reabate-management/rebate-management-deals.md
+        href: rebate-management/rebate-management-deals.md
+      - name: Process, review, and post rebates
+        href: rebate-management/process-review-post.md
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
