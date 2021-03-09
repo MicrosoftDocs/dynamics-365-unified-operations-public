@@ -39,30 +39,32 @@ The servicing actions provided can be inserted in one three categories: Self-ser
 
 The servicing actions provided can be inserted in one three categories:
 
-**Self-service** - Can be triggered by the user at any moment with no lead time, the self-service actions include:
+### Self-service
+Can be triggered by the user at any moment with no lead time, the self-service actions include:
 
 - Code promotion (non-production)
-- [Database](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[movement](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[between](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[non-production](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[environments](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)
-- [Production upgrade](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
-- [Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode)
+- [Database](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[movement](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[between](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[non-production](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[environments](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)
+- [Production upgrade](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
+- [Maintenance mode](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode)
 - Pause upcoming automatic deployment of a service update
 - Restarting services on non-production environments
 - Performance actions
 
-**Service Request** - Usually triggered by a ticked involve the cooperation of the Dynamics Service Engineering team (DSE) and have a lead time, some of these actions include:
+### Service Request
+Usually triggered by a ticked involve the cooperation of the Dynamics Service Engineering team (DSE) and have a lead time, some of these actions include:
 
 - FastTrack assessment process for the PRODUCTION environment
 - Code promotion to production
 - Production Point in Time restore prior to go-live
 - Sandbox to Production prior to go-live
 
-Some of the recommended practices when working with the DSE team:
-
+#### Some of the recommended practices when working with the DSE team:
 - Account for the team SLAs
 - Not using service request when a support request is more adapted
 - Consulting the service [request catalog](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that it&#39;s the right type of request you are making
 
-**Support Request** - Remaining not Self-service scenarios usually triggered by opening a ticket, generally have a lead time, included in the category are:
+### Support Request 
+Remaining not Self-service scenarios usually triggered by opening a ticket, generally have a lead time, included in the category are:
 
 - Production point-in-time restore after Go-Live
 - Flag a regression in a Service Update and ask for an exception opt-out
@@ -80,9 +82,9 @@ A well identified problem and well-defined resolution process can make the diffe
 
 An **effective support request** should mention:
 
-**Quality input**
+### Quality input
 
-Quality investigation:
+#### Quality investigation:
 
 - Environment where the issue occurs
 - The process
@@ -91,7 +93,7 @@ Quality investigation:
 - Pre-investigation
 - Additional elements (error message, screenshots, session ID, trace, …)
 
-If high severity:
+#### If high severity:
 
 - Business impact: what&#39;s the impact of your business activities?
 - Financial impact: how does it impact you financially?
@@ -115,7 +117,7 @@ Before requesting support, you should remember that it is important to choose th
 
 LCS has integration with set of tools that can be used to properly monitor LCS projects, those tools include:
 
-Service Health Dashboard
+### Service Health Dashboard
 
 [Service Health Dashboard](http://portal.office.com/servicestatus) where the health status and incidents can be found for Office365 Services.
 
@@ -123,13 +125,13 @@ You can also view the service heath through admin center, go to  **Health**  \&g
 
 The All services tab (the default view) shows all services and their current health state. An icon and the Status column indicate the state of each service.
 
-If you&#39;re experiencing an issue with a Microsoft 365 service and you don&#39;t see it listed on the  **Service health**  page, tell us about it by selecting  **Report an issue** , and completing the short form.
+If you're experiencing an issue with a Microsoft 365 service and you don&#39;t see it listed on the  **Service health**  page, tell us about it by selecting  **Report an issue** , and completing the short form.
 
 Those reports will help identifying issues, once identified, incidents will be shown on the report.
 
 You can signup to receive email communication, ensuring quick alert on identified issues on the tenant and their status change.
 
-Environment monitoring
+### Environment monitoring
 
 Environment monitoring is a set of tolls that help you to monitor and troubleshoot the health of your environments through LCS portal.
 
@@ -137,9 +139,11 @@ Within a specific environment page of the project, you will find a link that wil
 
 Some of the tools available are:
 
-**Overview** common to most of the environment types, provides a filterable way to trace user activity, load and load by activity during a defined period.
+#### Overview 
+Common to most of the environment types, provides a filterable way to trace user activity, load and load by activity during a defined period.
 
-**Activity** tab will enable you to query through raw logs with the help of predefined queries for the most common events and metrics useful to monitor your environment. This tab has the additional functionality of adding your own custom filters and letting you export the logs into a csv file for analysis.
+#### Activity
+Tab will enable you to query through raw logs with the help of predefined queries for the most common events and metrics useful to monitor your environment. This tab has the additional functionality of adding your own custom filters and letting you export the logs into a csv file for analysis.
 
 Some of the pre-defined queries are for:
 
@@ -150,9 +154,11 @@ Some of the pre-defined queries are for:
 - Batch throttle
 - Distinct user sessions
 
-**Health metrics** dashboard provides a series of line charts, filtered by instance (AOS or Batch AOS) and time frame through winch its possible to observe SQL execution in **AOS** tab and system memory and CPU utilization over time in the tab **System**. Through this toll you can easily identify behavioral changes that may help you to trace in time issues and the impact of changes in the solution.
+#### Health Metrics
+Dashboard provides a series of line charts, filtered by instance (AOS or Batch AOS) and time frame through winch its possible to observe SQL execution in **AOS** tab and system memory and CPU utilization over time in the tab **System**. Through this toll you can easily identify behavioral changes that may help you to trace in time issues and the impact of changes in the solution.
 
-**SQL Insights** provides advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed analysis, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting).
+#### SQL Insights
+Provides advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed analysis, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting).
 
 It is a reliable way to collect performance metrics on demand. Enables customers and partners to execute a predefined set of actions that can be used to mitigate issues in a sandbox or production environment. This feature queries SQL Server directly, so you get query store metrics in near real-time.
 
