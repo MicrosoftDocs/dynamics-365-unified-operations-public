@@ -35,6 +35,8 @@ To ensure a good experience during the implementation and after the go-live of t
 
 Microsoft tools and support ensure the stability and effectiveness of implemented platform by providing infrastructural and applicational support, but the effectiveness of those is dependent on Partner/Client responsibility to correctly develop, test, configure, manage and monitor the implemented system and its environments.
 
+![Support Provided by Microsoft](./media/support-provided-microsoft.png)
+
 The servicing actions provided can be inserted in one three categories: Self-service, Service Request and Support Request; depending on the category of the action they are triggered in different ways and may encompass a lead time.
 
 The servicing actions provided can be inserted in one three categories:
@@ -144,6 +146,8 @@ Common to most of the environment types, provides a filterable way to trace user
 
 #### Activity
 Tab will enable you to query through raw logs with the help of predefined queries for the most common events and metrics useful to monitor your environment. This tab has the additional functionality of adding your own custom filters and letting you export the logs into a csv file for analysis.
+
+![Activity screen](./media/activity.png)
 
 Some of the pre-defined queries are for:
 
