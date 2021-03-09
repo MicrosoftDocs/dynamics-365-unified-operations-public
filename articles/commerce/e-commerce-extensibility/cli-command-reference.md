@@ -5,7 +5,7 @@ title: CLI command reference
 description: This topic covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 10/20/2020
+ms.date: 03/09/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic covers the command-line interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
-
-## Overview
 
 All the following commands must be run by using Yarn. They all have the following structure.
 
@@ -97,8 +95,8 @@ yarn msdyn365 add-component-override <themeName> <componentName> <--list-compone
 
 This command adds a component to the specified theme component folder. The component can then be modified as desired from that folder.
 
-The **--list-components** option is used to show a list of components.
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+- The **--list-components** option is used to show a list of components.
+- The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
 **Examples**
 
@@ -208,7 +206,7 @@ yarn msdyn365 clone content-block super-content-block
 yarn msdyn365 pack <--verbose>
 ```
 
-This command creates a package of the local site configurations (modules, data actions, themes, and so on). This package will then be uploaded to the node server by using Microsoft Dynamics Lifecycle Services (LCS). This command should be run from the root directory of your local SDK files.
+This command creates a package of the local site configurations (modules, data actions, themes, and so on). This package will then be uploaded to the Node server by using Microsoft Dynamics Lifecycle Services (LCS). This command should be run from the root directory of your local SDK files.
 
 The output is a zip file in the directory that the command was run from. The file name is built by using the name and version that are found in your SDK package.json file. For example, a zip file might be named **\@msdyn365-commerce-partners-fabrikam-1.2.73.zip**.
 
