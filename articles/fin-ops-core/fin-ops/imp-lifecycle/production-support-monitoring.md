@@ -49,7 +49,7 @@ The servicing actions provided can be inserted in one three categories:
 Can be triggered by the user at any moment with no lead time, the self-service actions include:
 
 - Code promotion (non-production)
-- [Database](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[movement](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[between](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[non-production](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)[environments](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)
+- [Database movement between non-production environments](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)
 - [Production upgrade](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
 - [Maintenance mode](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode)
 - Pause upcoming automatic deployment of a service update
