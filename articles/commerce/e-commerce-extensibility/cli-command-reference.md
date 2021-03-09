@@ -123,7 +123,7 @@ The **--verbose** option is used to provide more verbose debugging output in the
 **Example**
 
 ``` bash
-yarn msdyn365 add-data-action getMyData
+yarn msdyn365 add-data-action getMyData --verbose
 ```
 
 ## add-module
@@ -141,7 +141,7 @@ The **--verbose** option is used to provide more verbose debugging output in the
 **Example**
 
 ``` bash
-yarn msdyn365 add-module product-feature
+yarn msdyn365 add-module product-feature --verbose
 ```
 
 ## add-theme
@@ -159,7 +159,7 @@ The **--verbose** option is used to provide more verbose debugging output in the
 **Example**
 
 ``` bash
-yarn msdyn365 add-theme spring-theme
+yarn msdyn365 add-theme spring-theme --verbose
 ```
 
 ## add-view-extension
@@ -177,7 +177,7 @@ The **--verbose** option is used to provide more verbose debugging output in the
 **Example**
 
 ``` bash
-yarn msdyn365 add-view-extension spring-theme product-feature
+yarn msdyn365 add-view-extension spring-theme product-feature --verbose
 ```
 
 ## clone
@@ -195,7 +195,7 @@ The **--verbose** option is used to provide more verbose debugging output in the
 **Example**
 
 ``` bash
-yarn msdyn365 clone content-block super-content-block
+yarn msdyn365 clone content-block super-content-block --verbose
 ```
 
 ## pack
@@ -215,7 +215,7 @@ The **--verbose** option is used to provide more verbose debugging output in the
 **Example**
 
 ``` bash
-yarn msdyn365 pack
+yarn msdyn365 pack --verbose
 ```
 
 ## packages
