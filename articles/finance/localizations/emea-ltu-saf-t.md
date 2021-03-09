@@ -39,7 +39,7 @@ According to Article 16 of the Law on Accounting of the Republic of Lithuania, c
 
 For more information, see [SAF-T - VMI](https://www.vmi.lt/cms/web/guest/saf-t).
 
-## Setup
+## Setup  
 
 To start working with the **Lithuania SAF-T** report complete the following steps.
 
@@ -99,6 +99,12 @@ To start working with the **Lithuania SAF-T** report complete the following step
 5. When the lookup fields are set up, in the **State** field, select **Completed**, and then save the configuration.
 6. Go to **General ledger** \> **Setup** \> **General ledger parameters**, and select the **Standard Audit File for Tax** FastTab.
 7. In the **Standard Audit File for Tax (SAF-T)** field, set up the SAF-T format.
+8. Go to **Feature management** > **All**. In the feature list, locate and select the following features:
+
+    - **Optimization of query data source creation time during execution of ER reports**
+    - **Optimize datasets memory consumption at ER reports runtime**
+ 
+9. Select **Enable now**.
 
 ## Generate SAF-T
 
