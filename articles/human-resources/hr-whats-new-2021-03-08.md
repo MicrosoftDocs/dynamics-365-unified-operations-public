@@ -66,7 +66,7 @@ The following bug fixes are included in this release.
 | Able to import record for employee not enrolled on a plan with a specific plan type.... with Leave and Absence Bank Transaction entity - (508972) | | |
 | Updating Calendar in Employment entity errors if default Legal entity in User options is different - (554854) | | |
 | 558347 | 'Cannot create a record in Form configurations (FormRunConfiguration)' appears when loading the start page. | Personalizations are causing the error 'Cannot create a record in Form configurations (FormRunConfiguration)' to appear when loading the start page |
-| 558347 | Benefit Workspace: Gap appears above the grid. | Fixed User Experience issue with an unintended gap appearing on the table grid borders in Benefits workspace |
+| 557327 | Benefit Workspace: Gap appears above the grid. | Fixed User Experience issue with an unintended gap appearing on the table grid borders in Benefits workspace |
 | 557334 | Benefits Workspace : "Period" selection drop box should only appear in the "Summary" tab | Benefits Period selection dropdown now appears only when the "Summary" tab is Active in Benefits workspace, not for the Process results and Links sections. |
 | 557336 |Benefits Workspace : "Open Enrollment with checked out plans" , text getting truncated in the tile view..| Changed text in the tile view to "Checked out Plans .. Open enrollment" to avoid truncation of necessary context. |
 | HcmMeasurementDetail index MeasurementIdx being unique is breaking the upgrade and is a breaking change for FinOps - (558034) | | |
