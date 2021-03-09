@@ -98,8 +98,8 @@ Log a support ticket, and Microsoft will help you perform the action on your env
 
 If your critical action isn't listed earlier in this topic, add a comment to this topic or log a documentation bug, and Microsoft will address your requirement.
 
-## What regions are supported on self-service?
-New projects for Finance and Operations are onboarded to the following regions:
+## What regions are supported on self-service in North America?
+We now only support the following regions in North America. For more information on region availability please see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
 
 - East US
 - West US
@@ -117,8 +117,11 @@ Projects that have been onboarded on or after August 1, 2020 are no longer suppo
 > [!NOTE]
 > This will not affect any environments that have their data stored in the deprecated regions before August 2020. There is a transition plan to move customers in the deprecated regions into other regions. For a list of the latest supported regions, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
 
-- If you have any integrations or other dependencies that are latency driven and have questions regarding how the region change in regions will impact that, please contact Microsoft Support.
-- Please review all Azure resources in your current region and assess if they need to be collocated to a new region.
+- With all self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available, so you must add them now in preparation for the before your upcoming self-service migrations. You can find more information in about the IP addresses in the following section.
+- If you have any integrations or other dependencies that are latency driven and have questions regarding how the change in regions will impact that, please contact [Microsoft Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
+- If you are **planning to leverage dual-write, virtual entities, or any FO apps add-ins that have dependences on Dataverse**, please keep in mind that **Dataverse is not supported in Central US**. Our recommendation is to choose East or West US for continued functionality for such features on Self Service. Please contact [Microsoft Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support) should you choose to move to East or West US instead of Central, as part of your move to self-service
+-	Please review all your Azure resources in your current region and assess if they need to be co-located to the new region in preparation for the upcoming changes as part of migrations.
+- If you have questions about data movement related to cross region migrations, please see this [data movement on Self Service](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox#the-source-and-target-are-on-different-infrastructure-microsoft-managed-vs-self-service).
 
 ## For my Microsoft-managed environments, I have external components that have dependencies on an explicit outbound IP safe list. How can I ensure my service is not impacted after the move to self-service deployment?
 With self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available so you can add them in preparation for the upcoming self-service migrations or post migrations.
@@ -150,6 +153,8 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | South East Asia | 20.44.247.0/26
 | Japan East | 20.48.77.192/26
 | Japan West | 20.39.179.192/26
+| India South | 20.40.5.0/26
+| India Cental | 20.193.248.192/26
 
 ## Is there a potential impact on the environment's certificates?
 
