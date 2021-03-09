@@ -53,24 +53,18 @@ The following table describes the settings providing in the header section of ea
 ## Settings on the Posting FastTab
 
 The following table describes the settings on the **Posting** FastTab of each rebate management posting profile.
-<!-- KFM: I don't see how the example column is helping. Am I missing something? -->
-
-<!-- KFM: Review more carefully from here. -->
 
 | **Field** | **Description** |
 | --- | --- |
-| Debit Type | Select to debit Ledger or Customer/Vendor |
-| Debit account | The account which debit amount is posted to when rebates provision is being made |
-| Credit Type | Select to credit Ledger or Customer/Vendor |
-| Credit account | The account which credit amount is posted to when rebates provision is being made.This account will also be used as debit account when posting the rebate to credit the customer. |
+| Credit Type | Chose whether to credit *Ledger account* or *Customer/Vendor*. |
+| Credit account | The account to which credit amounts are posted  when rebates provisions are being made. This account will also be used as the debit account when posting the rebate to credit the customer. |
 | Provision: Name of Journal | Use the **Name of journal** field in the **Provision** section to select the name of journal used to record the posted provision. |
-| Type | Select to post the rebate to a ledger, Customer or Vendor accountThis field is set to Customer/Vendor when Payment type = Tax invoice customer deductions. |
-| Use account source | **None** - An account must be specified in the rebate account field **Deal Account** - Use the Customer or Vendor account specified on the rebate line_Note: Deal account can only be used where the Rebate management account code = Table and the reconcile by is completed at line level. It also doesn't apply to Customer royalty posting profiles._ |
+| Type | Choose whether to post the rebate to a *Ledger account* or to *Customer/Vendor*. This field is set to *Customer/Vendor* when **Payment type** is *Tax invoice customer deductions*. |
+| Use account source | Select one of the following:<ul><li>*None* - An account must be specified in the rebate account field</li><li>*Deal Account* - Use the customer or vendor account specified on the rebate line</li></ul><p>*Deal account* can only be used for deals where **Reconcile by** is *Line* and deal lines where the **Account code** is *Table*. It also doesn't apply to customer royalty posting profiles.</p> |
 | Rebate Account | The account which actual rebates expense will be posted to. |
-| Rebate management: Name of Journal | Use the **Name of journal** field in the **Rebate management** section to select the journal that will be used to post a credit note for the rebate amount to the customer. This field is disabled when Payment type = Tax invoice customer deductions |
-| Item sales tax group | Specify if the rebate is taxable |
-| Main Account | <!-- KFM: Appears to be missing. Not needed? --> Where the Rebate posted does not equal the Provision, the difference can be written off. The account which the write-off of Rebate management provision will be posted to |
-| Write off: Name of journal | Where the Rebate posted does not equal the Provision, the difference can be written off. Use the **Name of journal** field in the **Write off** section to select the journal used to record the posted write off |
+| Rebate management: Name of journal | Use the **Name of journal** field in the **Rebate management** section to select the journal that will be used to post a credit note for the rebate amount to the customer. This field is disabled when **Payment type** = *Tax invoice customer deductions*. |
+| Item sales tax group | Specify whether the rebate is taxable. |
+| Write off: Name of journal | Where the rebate posted does not equal the provision, the difference can be written off. Use the **Name of journal** field in the **Write off** section to select the journal used to record the posted write off. |
 
 ## The Posting by company FastTab
 
@@ -80,9 +74,9 @@ Use the buttons in the toolbar of the **Posting by company** FastTab to add and 
 
 For each company listed in the grid, select its row and then make the following settings using the fields below the grid:
 
-- **Debit type**
-- **Debit account**
-- **Main account**
+- **Debit type** - Choose whether to debit *Ledger account* or *Customer/Vendor*.
+- **Debit account** - Enter the account to which debit amount is posted when rebate provisions are being made.
+- **Main account** - Select the main account for write-offs.
 
 ## Payment types
 
@@ -100,7 +94,8 @@ The following table summarizes how various **Payment type** settings (made in th
 | **Reporting** | Daily journal | Vendor invoice journal | Customer royalty | Vendor account |
 | **Reporting** | Daily journal | Vendor rebate | Vendor account |
 
-> [!NOTE] <!-- KFM: review this text. -->
-> When configuring the Rebate management deals:
-> - 'Reconcile by' = Deal cannot use the Dynamic deal account in Rebate management posting. It needs the customer/vendor account specified.
-> - 'Reconcile by' = Line deals can have a posting profile offsetting to a Dynamic deal account on the deal line, as it can use the customer as per the deal line.
+> [!NOTE]
+> When you are setting up [Rebate management deals](rebate-management-deals.md):
+>
+> - For deals where **Reconcile by** is *Deal*, you can't use the dynamic deal account when posting. You must use a specified customer/vendor account.
+> - For deals where **Reconcile by** is *Line*, you can use a posting profile offsetting to a dynamic deal account on the deal line, because the customer is set per the deal line.

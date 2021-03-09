@@ -49,7 +49,7 @@ To work with rebate principles, go to **Rebate management \>  Setup \> Rebate pr
 
 The following table provides examples of various rebate reduction principle setups and the effects they will have. Each option may apply the reduction on the rebate. The rebate deduction by be based on provision, rebates, or both, and could exclude a deal from reduction or not.
 
-<!-- KFM: I don't understand the purpose of this table. Is the "Description" column telling me something useful? Or maybe we should have a "Notes" column. Is "Rebate category" the same as "Rebate principle"? Is this table related to the later examples? -->
+The following table provides some typical examples of rebate principle settings. The purpose of each is summarized in its **Description** column.
 
 | Rebate principle | Description | Apply reduction | Reduction basis | Exclude from reduction |
 | --- | --- | --- | --- | --- |
@@ -61,7 +61,7 @@ The following table provides examples of various rebate reduction principle setu
 | Rebate | Rebate only | Yes | Rebate | Yes  |
 
 ## Rebate reduction principle calculation examples
-<!-- KFM: I don't understand this example. Let's walk through it. -->
+
 Suppose you have a sales order with a single sales order line that has a value of $1,000, and that the following deals apply to this order:
 
 - Deal 1 = 10% on $1,000
@@ -69,8 +69,8 @@ Suppose you have a sales order with a single sales order line that has a value o
 - Deal 3 = 20% on $1,000
 - Deal 4 = 25% on $1,000
 
-The order of processing is very important. For example, if you use the order 1, 2, 3, 4, and only process the provisions, the following table summarizes the result.<!-- KFM: Add a link to the processing topic. -->
-<!-- KFM: Maybe link to the example table above. -->
+The order of processing is very important. For example, if you use the order 1, 2, 3, 4, and only process the provisions, the following table summarizes the result. The processing order is based on the way you work, as described in [Process, review, and post rebates](process-review-post.md).
+
 | Deal | Description and settings | Provision result |
 | --- | --- | --- |
 | 1 | Classification doesn't check other deals for reduction to take place. Checking is done for both (provision and rebates).<ul><li>**Apply reduction** - *No*</li><li>**Reduction basis** - *Both*</li><li>**Exclude from reduction** - *No*</li><ul> | $1,000 \* 10% = $100 |
