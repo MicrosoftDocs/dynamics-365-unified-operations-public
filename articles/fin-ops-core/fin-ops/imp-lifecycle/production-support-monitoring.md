@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer:
 ms.search.scope:
 # ms.tgt_pltfrm: 
 # ms.custom: NotInTOC
@@ -67,7 +67,7 @@ Usually triggered by a ticked involve the cooperation of the Dynamics Service En
 #### Some of the recommended practices when working with the DSE team:
 - Account for the team SLAs
 - Not using service request when a support request is more adapted
-- Consulting the service [request catalog](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that it&#39;s the right type of request you are making
+- Consulting the service [request catalog](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that it&#39;s the right type of request you are making
 
 ### Support Request 
 Remaining not Self-service scenarios usually triggered by opening a ticket, generally have a lead time, included in the category are:
@@ -125,7 +125,7 @@ LCS has integration with set of tools that can be used to properly monitor LCS p
 
 ### Service Health Dashboard
 
-[Service Health Dashboard](http://portal.office.com/servicestatus) where the health status and incidents can be found for Office365 Services.
+[Service Health Dashboard](https://portal.office.com/servicestatus) where the health status and incidents can be found for Office365 Services.
 
 You can also view the service heath through admin center, go to  **Health**  >  **Service health** , or select the  **Service health**  card on the  **Home dashboard**.
 
