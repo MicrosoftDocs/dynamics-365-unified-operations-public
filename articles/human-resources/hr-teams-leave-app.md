@@ -197,11 +197,15 @@ If you can't sign into the app, it's possible that the account you're using to s
 
 If translations don't display as expected, make sure the language you select in Teams matches the language selected in Human Resources **User options**.
 
+In Teams, look at **App language** in **Settings**.
 
+![Teams settings](./media/hr-teams-leave-app-settings.png)
+
+In Human Resources, select **Settings** and then select **User options**. Verify that the **Language** field matches the **App language** field in Teams.
 
 ![Human Resources User options](./media/hr-teams-leave-app-user-options.png)
 
-If you still see translation issues, let us know via support.
+If you still see translation issues, let us know. For information, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-support?toc=/dynamics365/human-resources/toc.json).
 
 ### Error when approving leave requests in the Human Resources app in Teams
 
