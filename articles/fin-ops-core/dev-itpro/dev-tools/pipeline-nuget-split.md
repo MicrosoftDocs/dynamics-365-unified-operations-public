@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Update the hosted Azure Pipeline for new NuGets
+title: Update the hosted Azure Pipeline for new NuGet packages
 description: This topic explains how to update an Azure pipeline to use new NuGet packages.
 author: jorisdg
 manager: tfehr
