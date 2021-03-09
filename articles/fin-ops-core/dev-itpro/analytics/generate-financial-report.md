@@ -59,7 +59,7 @@ To generate a report using **Report designer**, open the report definition and t
 
 ## Report Groups
 
-Report groups are an efficient way to generate a number of reports at the same time. For example, suppose you know that at month-end your users generate eight reports every month. Create a Report Group and instead of clicking “Generate” for each of the eight reports, you can click “Generate” for the report group and all eight reports will be generated in one step. Once the reports in the report group selected have been generated, you can go to Financial reports (**General Ledger > Inquires and reports > Financial reports**) to view the individual reports. Complete the following steps to set up a report group.
+Report groups are an efficient way to generate a number of reports at the same time. For example, suppose you know that at month-end your users generate eight reports every month. Create a Report group and rather than clicking **Generate** for each of the eight reports in the group, you can click **Generate** for the report group and the eight reports will be generated in one step. Once the reports in the report group selected have been generated, you can go to **Financial reports** (**General Ledger > Inquires and reports > Financial reports**) to view the individual reports. Complete the following steps to set up a report group.
 
 1. In Report designer, click **Report groups**. 
 2. Select the existing report definitions to include in your report group. 
