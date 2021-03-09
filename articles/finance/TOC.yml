@@ -3257,7 +3257,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
         - name: Financial performance
           href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-        - name: Financial insights
+        - name: Financial analysis
           href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
         - name: Fixed asset management
           href: fixed-assets/Fixed-asset-management-workspace.md
