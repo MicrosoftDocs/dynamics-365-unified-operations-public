@@ -5,7 +5,7 @@ title: Product search and customer search in the point of sale (POS)
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 03/09/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -119,32 +119,36 @@ Retailers can also set the default customer search mode in POS to **Search all s
 
 To help prevent unexpected performances issues, this configuration is hidden behind a flighting flag that his named **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Therefore, to show the **Default customer search mode** setting the user interface (UI), the retailer should create a support ticket for its user acceptance testing (UAT) and production environments. After the ticket is received, the engineering team will work with the retailer to make sure that the retailer does testing in its non-production environments to assess the performance and implement any optimizations that are required.
 
-## Cloud powered customer search
-As a part of 10.0.18 release, we have released the public preview of customer search capability using the Azure Cognitive Search service. Using this service, the users will not only see performance improvements, but also benefit from rich refinement and improved relevance capabilities. The performance improvements get even more evident when the  global search i.e. "Search all stores" feature of the POS is used. This is because the search results for this search are also fetched from the Azure search index instead of querying the data in headquarters. 
+## Cloud-powered customer search
 
-### Steps to enable this search
+Public preview of the customer search capability using the Azure Cognitive Search service has been released as part of the Commerce version 10.0.18 release. In addition to performance improvements, users of the service also benefit from rich refinement and improved relevance capabilities. The performance improvements are especially evident when the global search feature ("Search all stores") of the POS is used, because search results are fetched from the Azure search index instead of queried from the data in Commerce headquarters. 
 
-> [!NOTE]
-> It is required that both the headquarters and Commerce Scale Unit are updated to 10.0.18 version. But the update to POS is not required.
-
-- To enable this feature, navigate to the Feature Management workspace and enable the feature named "(Preview) Cloud powered customer search". 
-- Once the feature is enabled, then run the "Initialize commerce scheduler" to display the new "1010_CustomerSearch" job under the Distribution schedule form.
-- Run the 1010_CustomerSearch job. This job publishes the date to the Azure search index.
-- Once the publishing of index is complete, the status of this Job will be set to Applied.
-- Once this job status shows as Applied, then run the 1110 - Global configuration job, to update the POS channels of this newly enabled feature in Feature management
-- Run the 1010_CustomerSearch job at regular intervals to send the customer updates to the search index
+### Enable the cloud-powered search feature
 
 > [!NOTE]
-> For the first time publish, this job could a few hours to complete as it will send all the customer records to the Azure search index. But the subsequent updates should take a few mins. Secondly, even though this new service is enabled, but until the index publishing is completed, the customer search from POS will default to the existing SQL based search, thus ensuring no interruptions to the store operations
+> It is required that both Commerce headquarters and Commerce Scale Unit are updated to 10.0.18 version. Updating the POS is not required.
+
+To enable the cloud-powered search feature in Commerce headquarters, follow these steps.
+
+1. Go to **System administration \> Workspaces \> Feature management**.
+1. Find and select the **(Preview) Cloud powered customer search** feature, and then select **Enable now**.
+1. Go to **Retail and Commerce > Headquarters setup > Commerce scheduler > Initialize commerce scheduler** and select **OK** to display the new **1010_CustomerSearch** job on the **Distribution schedule** form.
+1. Go to **Retail and Commerce > Retail and Commerce IT > Distribution scheduler**.
+1. Run the **1010_CustomerSearch** job. This job publishes the date to the Azure search index. Once the publishing of the index is completed, the status of this job will be set to **Applied**.
+1. Once the job status is **Applied**, run the **1110 - Global configuration** job to update the POS channels of the newly-enabled feature in **Feature management**.
+1. Subsequently, run the **1010_CustomerSearch** job at regular intervals to send customer updates to the search index.
+
+> [!NOTE]
+> For the initial index publish, the **1010_CustomerSearch** job may take a few hours to complete as it will send all the customer records to the Azure search index. Subsequent updates should take a few minutes. In the time period when the cloud-powered search feature is enabled but the index publishing is not yet completed, the customer search from POS will default to the existing SQL-based search. This ensures no interruptions to store operations.
 
 ### Functional differences from the existing search
-- The customers created and edited in the headquarters will be sent to the Azure search index whenever the job 1010_CustomerSearch is run. At a minimum, these updates will take 15 - 20 mins to update the index and thus POS users will be able to search for these new customers or search based on updated information, around 15- 20 mins after the update occurred in headquarters. So, if for your business process, you need the customers created in headquarters to be immediately searchable in POS, then this might not be the right service for you.
-- The customers created in POS are immediately sent to Azure search index from the Commerce Scale Unit (aka CSU) and thus, these new customers will be searchable across any store immediately. However, if the Async customer creation feature is turned ON, then these customers will not be published to Azure search index from CSU and hence not searchable from POS until the customer information is synced to the headquarters, and a customer ID is generated for the async customers. The job 1010_CustomerSearch will then be able to send these customer records to the Azure search index. So on an average, please expect ~30 mins before the newly create Async customer can be searched on POS. This is assuming the 1010_CustomerSearch, P -job, and "Synchronize customers and business partners from async mode" are scheduled to run every 15 mins
-- This new search now also searches for the secondary emails and phone numbers of the customers, but for now, the customer search results view only displays the primary phone number and primary email of the customer. So, on the first look it might seem that irrelevant search results have been returned, but please check the secondary email and phone numbers of the returned customers to verify if the searched keyword matches them. To avoid such confusion, we plan to improve the search results page in future, to make it easy for the end users to understand why a search result was returned.
-- The requirement of searching by 4 characters in a global search aka "Search all stores" is not applicable to this service
+
+- Customers created and edited in Commerce headquarters will be sent to the Azure search index whenever the **1010_CustomerSearch** job is run. These updates will take a minimum of 15 to 20 minutes to update the index. POS users will be able to search for new customers (or search based on updated information) around 15 to 20 minutes after the updates occur in Commerce headquarters. If your business process requires that customers created in Commerce headquarters are immediately searchable in POS, this might not be the right service for you.
+- New customers created in POS are sent to the Azure search index from the Commerce Scale Unit and are immediately searchable across any store. However, if the Async customer creation feature is turned on, new customer records will not be published to Azure search index from the Commerce Scale Unit and will not be searchable from POS until the customer information is synced with Commerce headquarters and customer IDs are generated for the Async customers. The **1010_CustomerSearch** job will then be able to send the Async customer records to the Azure search index. On average, it will be around 30 minutes before newly-created Async customers can be searched on POS. This estimate assumes that the **1010_CustomerSearch**, **P-job**, and **Synchronize customers and business partners from async mode** jobs are scheduled to run every 15 minutes.
+- Cloud-powered search now also searches for the secondary emails and phone numbers of customers, but currently customer search results only display the primary phone number and primary email address of customers. At first glance it may seem that irrelevant search results have been returned, but checking the secondary email and phone number of a customer in search results can help verify if the searched-for keyword matches the customer. To avoid such confusion, there are future plans to improve the search results page to make it easy for users to understand why a search result was returned.
+- The requirement of searching using at least 4 characters in a global search (also known as "Search all stores") is not applicable to this service.
 
 > [!NOTE]
-> This service is available in limited regions for preview. Please contact support to confirm if this is supported in your region.
-
+> The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. Please contact Commerce support to confirm if it is currently supported in your region.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
