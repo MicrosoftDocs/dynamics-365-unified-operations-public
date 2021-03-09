@@ -55,7 +55,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 ### Inventory and logistics
 
-- [Integration framework for material handling equipment for automated warehouse processes (previously MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)
+- [Integration framework for material handling equipment for automated warehouse processes (previously MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - For more information, see [Material handling equipment interface (MHAX)](../warehousing/mhax.md).
 
 - [Landed cost](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - For more information, see [Landed cost module](../landed-cost/landed-cost-overview.md).
 

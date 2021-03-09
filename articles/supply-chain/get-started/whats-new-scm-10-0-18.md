@@ -59,6 +59,7 @@ We have recently added or significantly updated the following help topics. They 
 
 - [Inventory Visibility Add-in](../inventory/inventory-visibility.md)
 - [Landed cost module](../landed-cost/landed-cost-overview.md)
+- [Material handling equipment interface (MHAX)](../warehousing/mhax.md)
 - [Planning Optimization fit analysis](../master-planning/planning-optimization/planning-optimization-fit-analysis.md)
 
 ## Additional resources
