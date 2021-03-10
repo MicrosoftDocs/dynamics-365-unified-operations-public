@@ -69,7 +69,7 @@ From the AppBar, a user can select an operation. Depending on the status of the 
 
 - **Pick up** – This option will be available if the order has one or more lines designated for pickup at the user's current store. This operation launches the pickup flow, which allows the user to choose the products to be picked up and creates the pickup sales transaction.
 
-# Adding notifications to the recall order operation
+## Add notifications to the recall order operation
 
 In version 10.0.18 and later, you can configure POS notifications and live tile alerts for the **Order Recall** operation if desired. For more information, see [Show order notifications in the point of sale (POS)](notifications-pos.md).  
 
