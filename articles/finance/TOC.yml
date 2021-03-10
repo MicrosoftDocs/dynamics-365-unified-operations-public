@@ -83,7 +83,7 @@
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
-            href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md
+            href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
           - name: Removed or deprecated features in Dynamics 365 Finance
             href: get-started/removed-deprecated-features-finance.md
           - name: Removed or deprecated features in previous releases
