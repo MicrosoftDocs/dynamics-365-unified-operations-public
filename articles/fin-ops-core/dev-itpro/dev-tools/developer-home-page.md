@@ -99,6 +99,7 @@ The Finance and Operations applications represent the next-generation enterprise
 - [Upload assets by using Azure Pipelines](pipeline-asset-upload.md)
 - [Deploy assets by using Azure Pipelines](pipeline-deploy-asset.md)
 - [Create a Lifecycle Services (LCS) connection in Azure Pipelines](pipeline-lcs-connection.md)
+- [Update the hosted Azure Pipeline for new NuGet packages](pipeline-nuget-split.md)
 - [Update a legacy pipeline in Azure Pipelines](pipeline-msbuild-update.md)
 
 ## X++ programming language
