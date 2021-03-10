@@ -5,7 +5,7 @@ title: Tax feature support for transfer orders
 description: This topic explains the new tax feature support for transfer orders by using the tax calculation service.
 author: kailiang
 manager: tfehr
-ms.date: 03/02/2021
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,7 +48,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
 
 1. On the **Tax features** page, on the **Versions** tab, select the draft feature version, and then select **Edit**.
 
-    [![Selecting Edit](../media/image1.png)](/media/image1.png)
+    [![Selecting Edit](../media/image1.png)](./media/image1.png)
 
 2. On the **Tax features setup** page, on the **Tax codes** tab, select **Add** to create new tax codes. For this example, three tax codes are created: **NL-Exempt**, **BE-RC-21**, and **BE-RC+21**.
 
