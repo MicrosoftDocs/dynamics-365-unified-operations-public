@@ -13,6 +13,7 @@ Once the cluster is setup we will proceed with configuring our installation. The
 ![Example Windows Failover Cluster configuration](./media/WFC.png)
 
 1. Update your configuration file (ConfigTemplate.xml)
+
     1. Ensure that under the ServiceFabricCluster section you list all of your servers under the ReportServerType.
 
         ```xml
@@ -23,6 +24,7 @@ Once the cluster is setup we will proceed with configuring our installation. The
             </VMList>
         </NodeType>
         ```
+
     1. Update the SSRSHTTPS certificate settings
 
         ```xml
@@ -43,7 +45,7 @@ Once the cluster is setup we will proceed with configuring our installation. The
     > [!IMPORTANT]
     > Even if you are not going to generate the certificate using the infrastructure scripts provided, fill out the certificate information as other scripts will rely on the this information.
 
-    1. From this point on follow the setup guide as you normally would.
+1. From this point on follow the setup guide as you normally would.
 
     > [!IMPORTANT]
     > Ensure that the nodes are added to the Service Fabric Cluster if you have already created the cluster.
@@ -81,11 +83,79 @@ For existing environments that want to enable HA for their SSRS nodes, they can 
 Invoke command example:
 
 ```powershell
-Configure-SSRSHA.ps1 -Listener -MachinesList -TLSCertificate
+Configure-SSRSHA.ps1 -AgentShare "\\servername\D365FFOAgent" -Listener "LBDEN05FS1BI" -MachinesList "LBDEN05FS1BI1,LBDEN05FS1BI2" -TLSCertificateThumbprint "<cert thumbprint>" -ServiceAccount "contosoen05\svc-ReportSvc$"
 ```
 
 Configure-SSRSHA.ps1 script:
 
 ```powershell
+param (
+    [Parameter(Mandatory=$true)]
+    [string]
+    $AgentShare,
+
+    [Parameter(Mandatory=$true)]
+    [string]
+    $Listener,
+
+    [Parameter(Mandatory=$true)]
+    [string]
+    $MachinesList,
+
+    [Parameter(Mandatory=$true)]
+    [string]
+    $TLSCertificateThumbprint,
+
+    [Parameter(Mandatory=$true)]
+    [string]
+    $ServiceAccount,
+
+    [string]
+    $ssrsServicePort = ""
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $AgentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$configJsonPath = "$basePath\config.json"
+
+$configJson = Get-Content $configJsonPath | ConvertFrom-Json
+
+$updatedComponents = @()
+foreach ($component in $configJson.components)
+{
+    if($component.name -eq "AOS")
+    {
+        $component.parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value = $Listener
+        $component.parameters.biReporting.reportingServers.value = $MachinesList
+        $component.parameters.biReporting.ssrsUseHttps.value = "True"
+        $component.parameters.biReporting.ssrsHttpsPort.value = $ssrsServicePort
+    }
+    elseif($component.name -eq "ReportingServices")
+    {
+        $component.parameters.enableSecurity.value = "True"
+        $component.parameters.ssrsSslCertificateThumbprint.value = $TLSCertificateThumbprint
+        $component.parameters.ssrsServerFqdn.value = $Listener
+        $component.parameters.principalUserAccountType.value = "ManagedServiceAccount"
+        $component.parameters.principalUserAccountName.value = $ServiceAccount
+        $component.parameters.reportingServers.value = $MachinesList
+        $component.parameters.ssrsHttpsPort.value = $ssrsServicePort
+    }
+
+    $updatedComponents += $component
+}
+
+$configJson.components = $updatedComponents
+
+$configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
+
+Write-Host "Successfully updated the configuration for SSRS HA."
 
 ```
