@@ -42,12 +42,13 @@ Before you go through this topic, it's important that you understand the concept
 The main content of this topic is organized into tables, where the first column includes lists of tag-like "associated areas" to help you more quickly find best practices that are related to your areas of concern. For new implementations, you might find it useful to copy these tables to a location where you can check off the various best practices as they are completed. In this way, you can help ensure that the implementation is prepared as well as possible before you move forward to production.
 
 ## Maturing, recommended configurations
-The following configurations have been released but have not been forced (yet) across all environments. These are typically still maturing to fully validate usefulness for all customers in all scenarios. The following will change from month to month, so it is valuable to check back regarding the maturity of a particular feature and whether any new features have been added.
+The following configurations have been released but cause changes to logic that may not be useful for all usage scenarios. These are features that have been tested, but have not been thoroughly typically still maturing to fully validate usefulness for all customers in all scenarios. The following will change from month to month, so it is valuable to check back regarding the maturity of a particular feature and whether any new features have been added.
 
 | Feature | Key | Description | Maturity |
 |------------------|---------------------|------------------------------|-----------------------------------|
 | Delayed download session creation | CDX_ENABLE_DELAYED_OFFLINE_DOWNLOAD_SESSION_CREATION | This key delays the download sessions from being fully created until after the Modern POS device the download sessions are for is fully activated.  The | High (Released 10.0.15, well understood, tested thoroughly, in use) |
-| Package order enforcement | CDX_ENABLE_DOWNLOAD_SESSION_DEPENDENCY_ENFORCEMENT | Enables package order enforcement <NEEDS LARGER DESCRIPTION>. | Low (Released 10.0.18 <VERIFY?>, well understood, tested thoroughly, not in use) |
+| Package order enforcement | CDX_ENABLE_DOWNLOAD_SESSION_DEPENDENCY_ENFORCEMENT | Sequencing, first created session applied before next one.  If session fails (3 times, try count times), will mark as Suspended and then NOT PROCEED unless that suspended session is cancelled and deleted so that the system can continue.  Rerun of applied sessions cannot be done (Only on available or in suspended state).  
+Enables package order enforcement <NEEDS LARGER DESCRIPTION>. | Low (Released 10.0.18 <VERIFY?>, well understood, tested thoroughly, not in use) |
 | Rollback on failure | CDX_ENABLE_ROLLBACK_ON_FAILURE | When synchronizing uploaded data from offline databases (Based on the P-job distribution schedule), the system attempts to merge in transactions. If duplicate transaction IDs are found and could cause an error, this feature prevents overwriting the duplicated transaction IDs. | High (Released 10.0.13, well understood, tested thoroughly, in use) |
 
 ## Updating configurations
