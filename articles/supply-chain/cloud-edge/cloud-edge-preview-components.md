@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cloud and edge scale units for manufacturing and warehouse management workloads
-description: This topic provides information about cloud and edge scale units for manufacturing and warehouse management workloads.
+title: Preview capabilities for cloud and edge scale units for manufacturing and warehouse management
+description: This topic provides information about capabilities in preview for cloud and edge scale units for manufacturing and warehouse management.
 author: cabeln
 manager: 
-ms.date: 10/06/2020
+ms.date: 10/03/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,8 +24,8 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: SCM
 ms.author: cabeln
-ms.search.validFrom: 2021-03-10
-ms.dyn365.ops.version: 10.0.20
+ms.search.validFrom: 2021-04-01
+ms.dyn365.ops.version: 10.0.19
 ---
  
 # Cloud and edge scale unit capabilities in preview
