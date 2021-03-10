@@ -5,7 +5,7 @@ title: Recall order operation in POS
 description: This topic explains feature capabilities available for improved order recall pages in POS.
 author: hhainesms
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -51,7 +51,7 @@ When launching the **Recall order** operation from POS, if the display is config
 
 ![RecallOrderMainMenu](media/recallordermain.png)
 
-After search criteria are applied, the application will display a list of matching sales orders.  It's important to note that when using the search/filter options, the orders retreived do not have to be orders linked to the user's current store.  This search process will retrieve and display any customer order that matches the search criteria, even if the order was created or to be fulfilled by another store/channel or warehouse location.
+After search criteria are applied, the application will display a list of matching sales orders. It's important to note that when using the search/filter options, the orders retrieved do not have to be orders linked to the user's current store. This search process will retrieve and display any customer order that matches the search criteria, even if the order was created or set to be fulfilled by another store/channel or warehouse location.
 
 ![RecallOrderDetail](media/orderrecalldetail.png)
 
@@ -61,15 +61,16 @@ From the AppBar, a user can select an operation. Depending on the status of the 
 
 - **Return** – Initiates the process of creating a return for any of the invoiced products on the selected customer order.
 
-- **Cancel** – Issue a full cancellation of the selected sales order.  This option will not be available for orders initiated through a call center channel and can not be used to partially cancel an order.
+- **Cancel** – Issue a full cancellation of the selected sales order. This option will not be available for orders initiated through a call center channel and can not be used to partially cancel an order.
 
 - **Fulfill** – Transfers the user to the order fulfillment page, which will be pre-filtered for the selected order. Only order lines that are open for fulfillment by the user's store for the selected order will be displayed.
 
-- **Edit** – Allows users to make changes to the selected customer order.   Orders are only editable in [certain scenarios](https://docs.microsoft.com/en-us/dynamics365/commerce/customer-orders-overview#edit-an-existing-customer-order)
+- **Edit** – Allows users to make changes to the selected customer order. Orders are only editable in [certain scenarios](customer-orders-overview.md#edit-an-existing-customer-order).
 
-- **Pick up** – If the order has one or more lines designated for pickup at the user's current store, this option will be available.  This operation launches the pickup flow, which allows the user to choose the products to be picked up and creates the pickup sales transaction.
+- **Pick up** – This option will be available if the order has one or more lines designated for pickup at the user's current store. This operation launches the pickup flow, which allows the user to choose the products to be picked up and creates the pickup sales transaction.
 
 # Adding notifications to the recall order operation
 
-In version 10.0.18 and later, you can configure POS notifications and live tile alerts for the **Order Recall** operation if desired. Please refer to [this documentation] (https://docs.microsoft.com/en-us/dynamics365/commerce/notifications-pos) for more information   
+In version 10.0.18 and later, you can configure POS notifications and live tile alerts for the **Order Recall** operation if desired. For more information, see [Show order notifications in the point of sale (POS)](notifications-pos.md).  
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
