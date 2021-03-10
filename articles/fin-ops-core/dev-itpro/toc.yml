@@ -1452,6 +1452,8 @@
         href: sysadmin/pre-configured-system-accounts.md
       - name: Export B2B users to Azure AD
         href: sysadmin/implement-b2b.md
+      - name: Data maintenance
+        href: sysadmin/DataMaintenancePortal
       - name: Security
         items:
         - name: Role-based security
