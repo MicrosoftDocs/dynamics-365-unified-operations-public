@@ -164,4 +164,4 @@ For users investigating payment issues in headquarters or in their processor's p
 
 [Omni-channel Commerce order payments](commerce-payments.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]
