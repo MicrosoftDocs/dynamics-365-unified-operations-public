@@ -18,7 +18,6 @@ ms.search.form: AssetTransfer
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20891
 ms.assetid: 552c7969-f044-4774-82ec-080aeae8cf3f
@@ -55,3 +54,6 @@ For details, see [Funds in the public sector](funds-public-sector.md).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

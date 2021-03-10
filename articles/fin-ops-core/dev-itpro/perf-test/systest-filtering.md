@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -53,3 +52,6 @@ For advanced filtering syntax that can be used with the Visual Studio Test Conso
 
 > [!NOTE]
 > For test filtering purposes, the SysTest framework allows you to filter on **FullyQualifiedName** and **Name**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

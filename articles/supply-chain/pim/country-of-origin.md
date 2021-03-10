@@ -17,7 +17,6 @@ ms.search.form:  COOVendorCerts
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -95,3 +94,6 @@ When you generate a BOM report, you can include the country of origin for each p
 A report that shows information about the country of origin of each part is generated and shown. Here is an example of the report.
 
 ![Country of origin report](media/country-of-origin-report.png "Country of origin report")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

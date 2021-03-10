@@ -18,7 +18,6 @@ ms.search.form: BankChequeTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
@@ -44,3 +43,6 @@ On the **Checks** page, you perform maintenance tasks for checks. For example, y
 To open the **Checks** page, go to **Cash and bank management \> Bank accounts \> Bank accounts**, and then, on the Action Pane, on the **Manage payments** tab, in the **Related information** group, select **Checks**. Alternatively, go to **Cash and bank management \> Inquiries and reports \> Checks**.
 
 Then, to create checks that have **Blank** status, on the Action Pane, select **Create blank checks**. While the system is creating blank checks, the associated bank account is temporarily inactivated. This behavior reduces the risk that payments will be generated at the same time that blank checks are created. When the processing is completed, the associated bank account is reactivated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

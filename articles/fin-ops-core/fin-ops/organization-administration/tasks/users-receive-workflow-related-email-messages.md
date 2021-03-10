@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/01/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +16,6 @@ ms.search.form: SysUserManagement, SysUserSetup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -45,3 +43,6 @@ You can configure the system to send email messages to users when workflow-relat
 
 > [!NOTE]
 > The workflow email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

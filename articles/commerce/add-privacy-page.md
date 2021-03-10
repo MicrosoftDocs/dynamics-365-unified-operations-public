@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -114,3 +113,6 @@ The fragment can now be referenced in the template for other site pages. When th
 [Cookie compliance](cookie-compliance.md)
 
 [Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

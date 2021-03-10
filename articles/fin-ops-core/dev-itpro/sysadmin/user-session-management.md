@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +16,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-# ms.search.scope:
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -30,7 +28,6 @@ ms.dyn365.ops.version: 10.0.16
 # User session management
 
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 
 The user session setting represents the amount of time a user can be signed in before the user’s session expires. After the user’s session expires, the user is required to sign in with their credentials.
@@ -71,3 +68,6 @@ To delete the multiple users’ maximum session length:
 
 1. Select the rows that you want to delete. 
 2. Select **Delete**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

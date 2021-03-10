@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -142,3 +141,6 @@ The following illustrations show an example of a template mapping in Data integr
 [Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management](contacts-template-mapping-direct.md)
 
 [Synchronization of sales orders directly between Sales and Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
@@ -132,3 +131,6 @@ Translations of product-related information can be managed at any time. When tra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

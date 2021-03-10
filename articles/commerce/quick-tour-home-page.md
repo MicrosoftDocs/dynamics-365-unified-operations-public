@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -77,3 +76,6 @@ The main section of the home page can highlight products, categories, or promoti
 [Cart and checkout pages overview](quick-tour-cart-checkout.md)
 
 [Account management pages overview](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

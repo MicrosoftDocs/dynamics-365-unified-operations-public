@@ -17,7 +17,6 @@ ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -59,3 +58,6 @@ This procedure shows how to schedule production orders that are not yet started 
 4. Click Materials.
     * On this page, you can see the estimated material consumption for the operations on the production order and the current available inventory.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

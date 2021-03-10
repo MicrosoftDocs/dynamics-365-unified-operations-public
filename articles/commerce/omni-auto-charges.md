@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -226,3 +225,6 @@ If users manually override the calculated charges or add a manual charge to the 
 
 [Prorate header charges to matching sales lines](pro-rate-charges-matching-lines.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

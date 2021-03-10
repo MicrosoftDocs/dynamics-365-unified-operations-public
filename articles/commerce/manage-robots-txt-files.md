@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -30,12 +29,9 @@ ms.dyn365.ops.version:
 
 # Manage robots.txt files
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The robots exclusion standard, or robots.txt, is a standard that websites use to communicate with web robots. It instructs web robots about any areas of a website that should not be visited. Robots are often used by search engines to index websites.
 
@@ -111,3 +107,6 @@ To delete a robots.txt file in Commerce, follow these steps.
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
 [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

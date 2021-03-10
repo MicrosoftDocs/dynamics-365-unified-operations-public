@@ -17,7 +17,6 @@ ms.search.form:  WHSWorker
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -63,3 +62,6 @@ For the worker who should be allowed to move reserved inventory, select the **Al
 This feature has also been back-ported to Microsoft Dynamics AX 2012 R3 and will be available as part of CU12.
 It can also be downloaded individually through KB number 3192548. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

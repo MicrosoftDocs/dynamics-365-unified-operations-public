@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -136,3 +135,6 @@ When a mobile workspace is stored as an AOT resource, you can't delete it by usi
 
 4. When the build is completed, reopen the mobile app designer, and verify that the workspace is no longer there.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

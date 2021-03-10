@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Manage features
+title: Manage features in Human Resources
 description: Learn how to turn new features on or off in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
@@ -30,7 +30,9 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Manage features
+# Manage features in Human Resources
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 As part of our continuous rollout of new capabilities for Microsoft Dynamics 365 Human Resources, we want to let customers experience new features as soon as possible. We provide preview features, which are almost ready for general availability and have gone through extensive testing. We're just looking for a final round of customer feedback and validation before we release them for general availability.
 
@@ -99,3 +101,5 @@ Please don't include personal data (any information that could identify you) in 
 
 - [What's new in Human Resources](hr-admin-whats-new.md)
 - [Dynamics 365 and Power Platform Release Plan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

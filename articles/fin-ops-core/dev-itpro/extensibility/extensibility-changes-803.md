@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/03/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -316,3 +315,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Increase EDT string size for EcoResProductSearchName
 - Change CacheLookup property to NotInTTS for AssetLedgerAccounts
 - Change CacheLookup property to Found on TaxOnItem, TaxJurisdiction, TaxGroupData, and TaxData, and AssetLedgerAcounts
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

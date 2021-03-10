@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 05/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,9 +44,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
     ![Choose environment page](media/data-service-environment.png)
 
-5. Select your legal tables, and then select **Next**.
+5. Select your legal entities, and then select **Next**.
 
-    ![Select legal tables step](media/select-legal-entities.png)
+    ![Select legal entities step](media/select-legal-entities.png)
 
     A health check is run to verify that your system meets the requirements for enabling dual-write. The health check also verifies that all the prerequisites have been completed. If any health check test fails, make that you've completed all the prerequisites before you move on to the next step.
 
@@ -76,3 +75,6 @@ You've now successfully imported and applied a Microsoft-published dual-write ta
 ## Next steps
 
 [Enable table maps for dual-write](enable-entity-map.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

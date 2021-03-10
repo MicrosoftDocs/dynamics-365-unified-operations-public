@@ -18,7 +18,6 @@ ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -76,3 +75,6 @@ Use the following steps to create a service object relation for a service order:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -81,3 +80,6 @@ The following illustration shows the data flow.
 [Apply filters to a plan](plan-filters.md)
 
 [Cancel a planning job](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

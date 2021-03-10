@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -142,3 +141,6 @@ ImageStyleType: "square" &#124; "symbol" &#124; "wide" &#124; "circular" &#124; 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

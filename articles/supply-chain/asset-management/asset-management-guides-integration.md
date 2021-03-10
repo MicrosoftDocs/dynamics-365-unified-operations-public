@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -119,3 +118,6 @@ To associate a guide with a maintenance checklist template, follow these steps.
 
 - [Dual-write overview](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Asset management overview](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

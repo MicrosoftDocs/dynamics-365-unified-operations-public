@@ -17,7 +17,6 @@ ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable,
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -63,3 +62,6 @@ When you reconcile a carrier invoice and a freight bill, this is done line by li
 5. Click to follow the link in the Reference journal number field.
 6. Click Lines.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

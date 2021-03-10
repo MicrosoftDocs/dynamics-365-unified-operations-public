@@ -2,13 +2,12 @@
 # required metadata
 
 title: General form guidelines
-description: This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
+description: This topic contains the guidelines that apply to all forms. This checklist must be used in addition to any pattern-specific guidelines.
 author: jasongre
 manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -250,3 +249,6 @@ This section will have answers to frequently asked questions that are related t
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

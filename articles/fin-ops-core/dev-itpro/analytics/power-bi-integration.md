@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -119,3 +118,6 @@ Power BI tiles that are pinned to the Dynamics 365 client provide insightful vis
 As a power user, a business analyst, or a developer, you can use Power BI desktop to create reports that use Entity store. Not only are these reports rich and interactive, but your users can make changes without having to rely on another person.
 
 Although the reports in PowerBI.com are powerful and interactive on their own, they can also be pinned into workspaces. Your users can pin reports to workspaces themselves. For more information about how to pin reports to workspaces, see [Pin Power BI reports to workspaces](pin-power-bi-reports.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

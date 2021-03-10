@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -74,3 +73,6 @@ You're done! Launch the app from your mobile device to see the sample workspace.
 [Client APIs reference](client-apis/client-apis-reference.md)
 
 [Server APIs reference](mobile-workspace-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
@@ -116,3 +115,6 @@ You can print packing material weights on an invoice and indicate who pays the r
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. On the **Updates** tab, on the **Invoice** FastTab, set the **Print packing material weight** option to **Yes**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

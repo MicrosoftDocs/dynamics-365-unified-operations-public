@@ -3,12 +3,11 @@
 
 title: Expense management Power BI content
 description: This topic describes what is included in the Expense management Power BI content pack.
-author: RyanSand
+author: panolte
 manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -99,3 +98,6 @@ The content includes a set of report pages. Each page consists of a set of metri
 | Employee Statistics | Expense reports by cost type            |
 |                     | Personal expenses                       |
 |                     | Expense reports by statistics group     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

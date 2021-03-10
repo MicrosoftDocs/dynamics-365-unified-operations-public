@@ -17,7 +17,6 @@ ms.search.form: ProjProjectsListPage, SalesCreateOrder, SalesTable, CustInvoiceJ
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
@@ -110,3 +109,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations, v
 17. Click OK.
     * Validate debit note report  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

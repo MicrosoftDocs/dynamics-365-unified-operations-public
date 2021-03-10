@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
@@ -49,3 +47,6 @@ Before you create a workflow type, you must create a query that will access the 
 5. In the Application Object Tree (AOT), right-click the new query, and then select **Save**.
 
 For more information about how to create queries, see [Create queries by using the AOT](https://docs.microsoft.com/dynamicsax-2012/developer/how-to-create-queries-by-using-the-aot).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

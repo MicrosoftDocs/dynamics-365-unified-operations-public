@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: TMSMode,TMSMethod
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -52,3 +51,6 @@ To create a transportation method, follow these steps:
 1. Select **New** to create a new transportation method.
 1. Enter a unique ID and descriptive name for the transportation method.
 1. Close the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

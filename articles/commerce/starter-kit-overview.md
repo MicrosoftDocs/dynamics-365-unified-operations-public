@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,8 +33,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic presents an overview of the Microsoft Dynamics 365 Commerce module library.
-
-## Overview
 
 The Dynamics 365 Commerce module library is a collection of modules that can be used to build an e-Commerce website. Modules have both user interface (UI) aspects and functional behavior aspects.
 
@@ -70,3 +67,6 @@ The following types of modules are provided in the module library:
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

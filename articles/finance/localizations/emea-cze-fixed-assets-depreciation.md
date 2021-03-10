@@ -18,7 +18,6 @@ ms.search.form: AssetDepreciationGroup_W
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264314
 ms.search.region: Czech Republic
@@ -117,3 +116,6 @@ This example shows depreciation calculated using the accelerated CZ method of de
 | 7                   | (2\* 12431) / (4 - 2) = 12 430   |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCa
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53351
 ms.assetid: 885b0cdf-53d7-4cb4-92fe-da1b9e32b39f
@@ -123,3 +122,6 @@ Workers with job tasks that do not require immediate feedback, as is the case wi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

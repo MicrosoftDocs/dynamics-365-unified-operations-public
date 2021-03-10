@@ -17,7 +17,6 @@ ms.search.form: AssetAllocationRuleSetup_CN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10194
 ms.search.region: Japan
@@ -65,3 +64,6 @@ If the total rounded-down depreciation cost that must be allocated across each d
 
 ## Additional resources
 - [Allocate carrying amount of shared asset and goodwill to cash generating units](./tasks/allocate-carrying-amount.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

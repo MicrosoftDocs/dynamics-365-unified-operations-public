@@ -17,7 +17,6 @@ ms.search.form: BOMTable, BOMRouteCopyDialog, HcmWorkerLookUp
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -59,3 +58,6 @@ This procedure shows how to quickly create a new formula by copying from an exis
 3. Click OK.
 4. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

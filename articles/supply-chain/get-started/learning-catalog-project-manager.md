@@ -15,7 +15,6 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
@@ -107,3 +106,6 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Exam MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | This exam measures your ability to accomplish the following technical tasks: use common functionality and implementation tools; configure security, processes, and options; perform data migration; and validate and support the solution. | Exam, cost varies by region |
 | [Exam MB-320: Microsoft Dynamics 365 for Finance and Operations, Manufacturing](https://docs.microsoft.com/learn/certifications/exams/mb-320?wt.mc_id=learningredirect_certs-web-wwl) | This exam measures your ability to accomplish the following technical tasks: set up and configure manufacturing; create and manage production and lean orders; and create, process, and manage production batch orders. | Exam, cost varies by region |
 | [Exam MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | This exam measures your ability to accomplish the following technical tasks: implement product information management; implement inventory management; implement and manage supply chain processes; and implement warehouse management and transportation management and perform business processes. | Exam, cost varies by region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

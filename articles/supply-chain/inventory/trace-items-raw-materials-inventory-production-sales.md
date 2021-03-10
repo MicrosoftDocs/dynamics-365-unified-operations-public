@@ -18,7 +18,6 @@ ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
@@ -145,3 +144,6 @@ You can generate the **Shipped to customers** report to identify the amount of t
 
 ## Can I trace coproducts and byproducts?
 You can trace co-products, but you can’t trace a by-product, because tracking dimensions aren't typically assigned to by-products. When you trace an item, the trace details include any related co-products. A node that contains a co-product includes the word “co-product” in the details. You can also view details about a co-product by selecting the node in the trace details and then clicking the **Production** FastTab.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -46,3 +45,6 @@ Consider using field groups whenever possible. In this way, independent software
 
 ## Form controls
 Moving around form controls could potentially cause a break if the controls are made non-extensible by moving.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

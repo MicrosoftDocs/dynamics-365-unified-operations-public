@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -75,3 +74,6 @@ work.lines().assertExpectedLines(
     workLines.spec().withLineNum(5).withWorkType(WHSWorkType::Put).setQuantity(2).setStatus(WHSWorkStatus::Cancelled)
 );
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -151,3 +150,6 @@ Any of the following changes will break form extensions that reference the contr
 ### Application elements
 
 + **Removing any element** – Consumers might have a compile-time dependency on the existence of the element.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

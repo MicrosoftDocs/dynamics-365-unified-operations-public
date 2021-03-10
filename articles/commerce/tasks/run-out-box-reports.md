@@ -17,7 +17,6 @@ ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup,
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -66,3 +65,6 @@ The demo data company used to create this recording is USRT. This recording is i
 5. Click Export.
 6. Click PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

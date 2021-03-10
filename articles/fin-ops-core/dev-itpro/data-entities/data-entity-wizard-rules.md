@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -73,3 +72,6 @@ The default value of data entity fields is **auto**. This value is used unless i
 - If the field's **Is mandatory** property and the related field's **Is mandatory** are both **false**, both fields are explicitly set to **false**.
 
 If the field's **Is mandatory** property and the related field's **Is mandatory** property differ in value, both fields remain unchanged. In this case, the default value of **auto** is used.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

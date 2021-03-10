@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -57,3 +56,6 @@ With the release of Platform update 21, an additional level of control over when
 
 ![Assign Active Period](./media/assign-active-period.png)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransPeriodic, LedgerJournalTra
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -61,3 +60,6 @@ Periodic journals are sometimes called recurring journals because the amount, te
 27. In the **Periodic journal number** field, enter or select a value.
 28. In the list, click the link in the selected row.
 29. Click **OK**. The period journal can now be reviewed, approved or posted depending on requirement and setup.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -112,3 +111,6 @@ Power Automate can automatically configure the application for you. After you sa
 4. Select **Endpoints**.
 5. Verify that a new endpoint has been created, and that a globally unique identifier (GUID) has been appended to the name.
 6. On the **Active events** tab, verify that **Workflow workitem** is activated for the USMF company.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

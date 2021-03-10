@@ -17,7 +17,6 @@ ms.search.form: KanbanBoardWorkCell
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -44,3 +43,6 @@ This task focuses on preparing a process kanban job when all materials are avail
 6. Click Prepare.
     * The preparation process is now completed. The selected check box for all rows in the picking list indicates that the supply status is picked.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

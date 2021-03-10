@@ -2,13 +2,12 @@
 # required metadata
 
 title: Build and debug projects
-description: In this tutorial, you’ll learn about using the tools in Visual Studio to analyze and debug code in the Fleet Management application. You’ll go through a simple developer scenario in which you will set breakpoints, modify some code, and build the result. 
+description: This tutorial uses the Fleet Management app to show you how to set breakpoints, modify code, and build the result. 
 author: pvillads
 manager: AnnBe
 ms.date: 02/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -232,3 +231,6 @@ Earlier in this tutorial, you had the opportunity to add code to the project and
 4.  Mark the selections for some of the sets of Best Practice rules. For example, if you select the entry for **CodeStyleRules**, best practice guidelines for variables will be examined. After you've updated the selections, click **OK**.
 5.  Rebuild the Fleet Management project by right-clicking the project name and then clicking **Rebuild**. You'll notice that the violations of the best practice rules that you specified appear in the **Error list** window.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

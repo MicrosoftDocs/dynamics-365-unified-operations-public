@@ -17,7 +17,6 @@ ms.search.form:  WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WH
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -401,3 +400,6 @@ For this scenario, pallet 3 will be accepted.
 1. Select the Menu button (**≡**) at the top of the page, and then, on the menu, select **Cancel** to return to the menu.
 
 You can now close the mobile app.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

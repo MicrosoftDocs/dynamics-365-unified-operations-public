@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +16,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope:  Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -183,3 +181,6 @@ After all the environments have been deleted, and you've saved the LCS artifacts
 
 - **Cloud service provider** - Suspend the existing subscriptions against the old tenant.
 - **Volume Licensing Support** - Call Volume Licensing Support to confirm that you've completed the work and that the subscriptions can now be suspended against the old tenant.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

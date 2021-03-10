@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2741
 ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
@@ -124,3 +122,6 @@ You can create a report of all workers who have FMLA cases and the hours that ha
 
 1. On the **FMLA leave taken** page, enter the first and last day of the leave period to view.
 2. Click **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

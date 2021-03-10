@@ -17,12 +17,11 @@ ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10.0
 
@@ -153,3 +152,6 @@ The following fiscal integration functionality is also available in the Retail S
 The following legacy fiscal integration functionality that is available in Retail SDK does not use the fiscal integration framework and will be deprecated in later updates:
 
 - [Control unit integration sample for Sweden (legacy)](./retail-sdk-control-unit-sample.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

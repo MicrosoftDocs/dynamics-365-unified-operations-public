@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -78,3 +77,6 @@ All these events are one-way notifications from the client. However, the **onAct
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202694
 ms.assetid: 
@@ -100,3 +98,6 @@ You can add a calculated field to the workflow document class only if it meets t
 ## See also
 
 [Associate a workflow document class with a workflow type](workflow-type-associate-document.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

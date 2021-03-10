@@ -17,7 +17,6 @@ ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchE
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -76,3 +75,6 @@ This task guide will help you create a vendor invoice from a purchase order and 
 19. Click **Post**.
 20. Close the form. Note that the purchase order is no longer listed as received but not invoiced.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

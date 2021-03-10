@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -180,3 +179,6 @@ A tile caching system has been implemented to improve performance of workspaces,
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

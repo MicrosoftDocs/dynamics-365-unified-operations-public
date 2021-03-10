@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -70,3 +69,6 @@ These steps can be completed using any dataset. To complete these steps, you mus
     * Intrastat sample mapping  
 5. Click Create configuration.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

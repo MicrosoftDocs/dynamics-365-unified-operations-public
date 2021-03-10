@@ -17,7 +17,6 @@ ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob, WrkCtrCapResSum, 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -57,3 +56,6 @@ This procedure shows how to schedule a production order. The demo data company u
 6. Close the page.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

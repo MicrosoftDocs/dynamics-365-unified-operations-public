@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
@@ -170,3 +169,6 @@ Go to **Fiscal books** \> **Setup** \> **PIS and COFINS tables** \> **Revenue so
 
 > [!NOTE]
 > To use batch processing, select **Batch**, and then specify the options for batch processing execution. You might use batch processing if the file should be generated later, or if it should be generated on a server instead of on your computer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

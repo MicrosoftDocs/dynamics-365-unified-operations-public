@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: India
@@ -47,3 +46,6 @@ This procedure walks you through attaching a day-based calendar to a fixed asset
 13. In the Book field, enter or select a value.
 14. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria
@@ -88,3 +87,6 @@ When your organization reimburses a customer for VAT, you must indicate the reim
 3. Select **Tax reimbursement** &gt; **VAT settled**.
 
 The **VAT settled** check box is selected for the invoice and the invoice lines.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -109,3 +108,6 @@ ms.dyn365.ops.version: 10.0.4
 The following illustration shows the financial entries for both the intrastate transactions and the interstate transactions.
 
 ![Financial entries for intrastate and interstate transactions](media/Annotation-2019-05-20-133425.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

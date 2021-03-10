@@ -2,13 +2,12 @@
 # required metadata
 
 title: Power BI Embedded integration
-description: Power BI content that partners and ISVs develop can be embedded directly into the application. This topic describes some of the ways that you can use the Power BI Embedded integration.
+description: This topic describes some of the ways that you can use the Power BI Embedded integration.
 author: TJVass
 manager: AnnBe
 ms.date: 02/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -81,3 +80,6 @@ Currently, only English is supported. However, the Power BI team plans to add su
  
 ### Can I access analytical workspaces and reports in the on-premises version of Finance and Operations?
 No, you can't currently access analytical workspaces and reports in Dynamics 365 Finance + Operations (on-premises). Systems of Intelligence functions rely on cloud-hosted solutions.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

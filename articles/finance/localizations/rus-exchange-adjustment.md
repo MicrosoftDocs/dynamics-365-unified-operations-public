@@ -15,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -78,3 +77,6 @@ You can review the posted exchange adjustment transactions on the **Bank transac
 
 > [!NOTE]
 > If the **Ledger transaction type** column isn't visible, right-click anywhere in the grid row that shows the column names, select **Add columns**, select **Ledger transaction type** and then select **Insert**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

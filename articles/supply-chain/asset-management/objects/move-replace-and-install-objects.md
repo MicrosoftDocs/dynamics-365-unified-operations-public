@@ -18,13 +18,12 @@ ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObject
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -96,3 +95,6 @@ Use the **Install asset** function to install an asset structure on a functional
 4. In the **Functional location** field, select the new location.
 5. By default, the **Effective** field is set to the current date and time. However, you can select a different date and time that the installation on the asset structure is valid from.
 6. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

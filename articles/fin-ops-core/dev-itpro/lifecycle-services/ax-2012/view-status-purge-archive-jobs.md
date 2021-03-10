@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -221,3 +220,6 @@ This command lets you export selected rows from the data grid, from all workplac
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

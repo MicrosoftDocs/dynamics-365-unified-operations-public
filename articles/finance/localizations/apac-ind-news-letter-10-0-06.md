@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed for  India GST Localization in 10.0.06 (November 2019)
+title: What's new or changed for  India GST in 10.0.06 (November 2019)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.06.
 author: prabhatb
 manager: Annbe
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend 
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -28,7 +27,7 @@ ms.dyn365.ops.version: 10.0.6
 
 ---
 
-# What's new or changed for India GST Localization in 10.0.06 (November 2019)
+# What's new or changed for India GST in 10.0.06 (November 2019)
 
 [!include [banner](../includes/banner.md)]
 
@@ -83,3 +82,6 @@ Tax information has been enabled for procurement categories. Tax information can
 -	Incorrect calculation of GST for a credit note. 
 -	Incorrect TDS calculation on the **Open vendor invoice** page.  
 -	The **Business verticals** field for the GST registration number on the **Enterprise Tax Registration Numbers** page should be editable and not greyed out. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

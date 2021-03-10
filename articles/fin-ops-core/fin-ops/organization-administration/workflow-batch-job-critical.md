@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/11/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +16,6 @@ ms.search.form:  BatchJob
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 9dc45189-6e7e-4207-ad78-dbbb644dd1ce
@@ -44,3 +42,6 @@ Follow these steps to configure the **Workflow message processing** batch job as
 4. Click **Edit** in the action pane.
 5. Select the **Critical Job** check box.
 6. Click **Save** in the action pane.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,12 @@
 # required metadata
 
 title: Table of Contents form pattern
-description: This article provides information about the Table of Contents form pattern. This pattern should be used when two or more logically related forms are required for setup configuration. 
+description: This article provides information about the Table of Contents form pattern, which is used when two or more related forms are required for setup configuration. 
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -134,3 +133,6 @@ This section will have answers to frequently asked questions that are related to
 [![Example](./media/toc3.png)](./media/toc3.png)
 
 [![Example](./media/toc4.png)](./media/toc4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

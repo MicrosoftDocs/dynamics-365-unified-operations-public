@@ -17,7 +17,6 @@ ms.search.form: CustBillOfExchangeEndorseListPage, VendOpenTrans, CustBillOfExch
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -60,3 +59,6 @@ This task was created using the demo data company JPMF.
     * You can change the settlement date if necessary.  
     * Verify that the status has been updated to be "Endorsement settled".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

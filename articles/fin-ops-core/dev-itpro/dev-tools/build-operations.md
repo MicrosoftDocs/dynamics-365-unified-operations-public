@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -129,3 +128,6 @@ To make resolution easier, you can add the elements that are affected by the err
 [Development tools in Visual Studio](development-tools-overview.md)
 
 [Develop and customize home page](developer-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

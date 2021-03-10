@@ -8,7 +8,6 @@ manager: jdinham
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Introduction
 
-In Microsoft Dynamics AX 2009, the number of dimensions was limited to a minimum of three and a maximum of ten. Additionally, the dimensions were entered in a fixed order. Therefore, code customization and database synchronization were required for every dimension that was added. Then, in Microsoft Dynamics AX 2012, the dimension framework was expanded to allow for an unlimited number of dimensions. The user could also dynamically create dimensions and enter them in any order. Finance and Operations keeps the behavior from AX 2012. The unlimited nature of the model, the advantages that come from relational database design, and optimization for performance requirements have led to a data model that is more complex than any earlier data model.
+In Microsoft Dynamics AX 2009, the number of dimensions was limited to a minimum of three and a maximum of ten. Additionally, the dimensions were entered in a fixed order. Therefore, code customization and database synchronization were required for every dimension that was added. Then, in Microsoft Dynamics AX 2012, the dimension framework was expanded to allow for a greater number of dimensions - up to ~50 (due to SQL database limits on total column counts in our tables). The user could also dynamically create dimensions and enter them in any order. Finance and Operations keeps the behavior from AX 2012. The unlimited nature of the model, the advantages that come from relational database design, and optimization for performance requirements have led to a data model that is more complex than any earlier data model.
 
 ## Part 1: "What happens when I create a ledger account combination?"
 
@@ -403,3 +402,6 @@ The dimension framework doesn't directly support versioning or date-effective da
 When a structure or rule is changed, if ledger account combinations have been saved on unposted transactions, the dimension framework creates new combinations and updates any foreign key references to them on unposted transaction tables. It doesn't change the original combinations, because those combinations might be referenced from posted transactions. The two combinations aren't linked in any way. There is no way to determine what a structure and its rules looked like before the change. Some information can be determined by the data that is stored in the combination. However, because blank values aren't stored, this data is incomplete and can't be used to reconstruct a previous version.
 
 The dimension framework supports "valid from" and "valid to" dates at the level of a dimension value. These dates indicate when the value is considered "valid." They don't represent the historical state of the value in the same way that date-effective data does.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

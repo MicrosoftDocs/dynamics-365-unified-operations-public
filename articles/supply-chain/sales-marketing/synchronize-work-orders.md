@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -81,3 +80,6 @@ The following illustrations show the template mapping in Data integration.
 ### Work Orders with Project (Field Service to Supply Chain Management): WorkOrderService
 
 [![Template mapping in Data integration](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

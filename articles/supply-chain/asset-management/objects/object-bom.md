@@ -18,13 +18,12 @@ ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetStanda
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -89,3 +88,6 @@ You can manually create item lines for assets.
 5. If the item will expire, in the **Expiration** field, enter an end date.
 6. In the **Item number** field, select the item. The name is automatically entered in the **Product name** field.
 7. In the **Quantity** field, enter the quantity that is used. The **Unit** field is automatically updated.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

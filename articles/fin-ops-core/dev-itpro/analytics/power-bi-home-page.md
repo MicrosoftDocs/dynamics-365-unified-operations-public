@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ The following PowerBI.com solutions are available from [Microsoft AppSource](htt
 - Cost management
 - [Financial performance](financial-performance-power-bi-content-pack.md)
 - [Retail channel performance](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

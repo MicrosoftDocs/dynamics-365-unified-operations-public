@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -1130,3 +1129,6 @@ For advanced layout scenarios we encourage using Flexbox. Flexbox is compatible 
 
 ### Control Instantiation
 [![Extensibility process](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

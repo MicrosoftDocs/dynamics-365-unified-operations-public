@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqT
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -58,3 +57,6 @@ The production planner calculates the material and capacity requirements for the
 2. Click Firm.
 3. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

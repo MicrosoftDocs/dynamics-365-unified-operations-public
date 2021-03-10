@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +16,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope:  Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -84,3 +82,6 @@ Some of the environment's operations may be impacted by the subscription status:
 - **Suspended** - Your subscription has expired beyond the grace period. This subscription status may reduce the license quantity, impact your ability to deploy a new environment, or impact your ability to perform environment operations. 
 - **Deleted** - Your subscription has been deleted. This will impact your ability to deploy a new environment or perform environment operations.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106043
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
@@ -76,3 +75,6 @@ For example, you can define who does budgeting, what is budgeted, and what the p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

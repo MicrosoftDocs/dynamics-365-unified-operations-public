@@ -17,7 +17,6 @@ ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAss
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -44,3 +43,6 @@ This topic explains how to dispose of a fixed asset using the free text invoice.
 10. Enter or select a value in the **Fixed asset** field.
 11. Select **Post**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

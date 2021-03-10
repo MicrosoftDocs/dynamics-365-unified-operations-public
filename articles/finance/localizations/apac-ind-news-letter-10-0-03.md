@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed for India GST Localization in 10.0.03 (June 2019)
+title: What's new or changed for India GST in 10.0.03 (June 2019)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.03.
 author: prabhatb
 manager: Annbe
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -28,7 +27,7 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# What's new or changed for India GST Localization in 10.0.03 (June 2019)
+# What's new or changed for India GST in 10.0.03 (June 2019)
 
 [!include [banner](../includes/banner.md)]
 
@@ -78,3 +77,6 @@ With the release of 10.0.04, use the Tax transaction inquiry functionality for T
 - GSTR-2 mismatch in figures when the invoice journal is posted with a multi-line transaction.
 -	Standard sales tax doesn't get calculated in Accounts payable.
 -	Proforma invoices consume a number from the invoice number sequence. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

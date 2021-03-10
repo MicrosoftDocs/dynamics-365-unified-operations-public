@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +16,6 @@ ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPart
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -65,3 +63,6 @@ This procedure shows how to manually maintain information about applicants and t
 6. Click Save.
     * After saving the application, you can attach documents to it, including the applicant's experience, awards, and cover letter.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

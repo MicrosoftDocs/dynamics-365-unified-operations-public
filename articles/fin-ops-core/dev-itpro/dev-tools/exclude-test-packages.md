@@ -2,13 +2,12 @@
 # required metadata
 
 title: Exclude test packages from build output
-description: This topic explains how you can prevent specific packages from being included in the deployable package in the build output that the automated build process generates.
+description: This topic explains how to prevent specific packages from being included in the package in the build output that the automated build process generates.
 author: jorisdg
 manager: AnnBe
 ms.date: 05/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -77,3 +76,6 @@ To use the new feature, you must manually update any existing build definitions 
 1. Click **Save**.
 
 You can now use the new feature as described.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

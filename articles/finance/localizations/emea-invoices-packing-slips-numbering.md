@@ -18,7 +18,6 @@ ms.search.form: LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, Numbe
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268484
 ms.search.region: Latvia, Lithuania
@@ -133,3 +132,6 @@ The **Documents to update** field influences on the **Document status** field in
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

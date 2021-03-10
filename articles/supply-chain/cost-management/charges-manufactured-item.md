@@ -18,7 +18,6 @@ ms.search.form: CostingVersion, InventItemPrice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274483
 ms.assetid: 6f5b851b-c5a7-43ef-b380-0d316667c1ef
@@ -44,3 +43,6 @@ The charges for a manufactured item are always included in the item's unit cost 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

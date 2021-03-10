@@ -16,7 +16,6 @@ ms.search.form:  WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -131,3 +130,6 @@ Follow these steps to create some picking work.
 
 > [!IMPORTANT]
 > If you cancel just part of the quantity for a work line, you must also remove the obsolete quantity from the load line. Otherwise, unless under-delivery is set up correctly, the load line can't be ship-confirmed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

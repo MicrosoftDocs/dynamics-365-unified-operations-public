@@ -8,7 +8,6 @@ ms.date: 06/18/2020
 manager: AnnBe
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -457,3 +456,6 @@ The following illustration shows how the Data management package methods can be 
 ![Data package file export that uses the Data management package methods](./media/data-package-export.png)
 
 A sample console application that showcases the data import and data export methods is available on GitHub. For more information, go to <https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/FileBasedIntegrationSamples/ConsoleAppSamples>.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

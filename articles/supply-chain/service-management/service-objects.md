@@ -18,7 +18,6 @@ ms.search.form: SMAServiceObjectTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -70,3 +69,6 @@ line, and line 2 is the annual audit with a yearly interval assigned to it.
 
 [Create service objects](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

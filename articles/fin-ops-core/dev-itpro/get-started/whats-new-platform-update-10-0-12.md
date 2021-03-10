@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -47,7 +46,7 @@ This topic lists the features that are included in the platform updates for vers
 -  [Edit basic control values in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) – For more information, see [Task recorder resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
 -  [Scanning files and attachments for malicious code](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/scanning-files-attachments-malicious-code) – For more information, see [File upload control](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/file-upload-control) and [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 -  [Show related document attachments](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/show-related-document-attachments) – For more information, see [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
-- [Finance and Operations entities in Common Data Service as virtual entities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-entities-common-data-service-as-virtual-entities) – For more information, see [Microsoft Power Platform integration with Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/overview).
+- [Finance and Operations entities in Dataverse as virtual entities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-entities-common-data-service-as-virtual-entities) – For more information, see [Microsoft Power Platform integration with Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/overview).
 - Customer and vendor master data can be enabled using Feature Management – For more information, see [Customer and vendor master data sharing](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing#customer-and-vendor-master-data-sharing).
 - [Finance and Operations licensing](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing) – The product name, such as Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce, is displayed in the navigation bar and reflects the base license associated with the current user.
 
@@ -73,3 +72,6 @@ The [Removed or deprecated platform features](removed-deprecated-features-platfo
 A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

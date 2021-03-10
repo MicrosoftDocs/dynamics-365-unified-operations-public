@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -77,3 +75,6 @@ Our cloud-based Application Lifecycle Management (ALM) functions, including diag
 For the on-premises deployment scenario, the application servers and SQL database will run in a customer's or partner's data center. Customers and partners manage the application lifecycle through LCS in the Microsoft cloud, including designing the business processes, creating and deploying the software image to deploy onto the on-premises nodes, monitoring the on-premises nodes in a system health dashboard, and keeping up with innovation from Microsoft.
 
 For more information, see [The right cloud option for your business](https://community.dynamics.com/b/msftdynamicsblog/archive/2017/02/06/the-right-cloud-option-for-your-business). This blog post refers to the "local business data" deployment capability. This is the capability that's called "on-premises" in the product and documentation.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

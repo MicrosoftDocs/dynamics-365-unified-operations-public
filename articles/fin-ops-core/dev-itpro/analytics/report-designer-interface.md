@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -232,3 +231,6 @@ The report designer toolbar provides quick access to commands for navigating wit
 [Financial reporting](financial-reporting-intro.md)
 
 [Generate financial reports](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

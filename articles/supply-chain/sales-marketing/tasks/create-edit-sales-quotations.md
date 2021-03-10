@@ -17,7 +17,6 @@ ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTabl
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -73,3 +72,6 @@ This procedure demonstrates how to create and update a sales quotation. You can 
 13. Click **Sales orders**.
 14. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

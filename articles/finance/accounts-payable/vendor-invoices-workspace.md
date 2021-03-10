@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -121,3 +120,6 @@ The following table shows the visualizations that are available on each report p
 | Invoices that failed to import | <ul><li>Invoices that failed to import</li><li>Invoices that failed to import by company</li></ul> |
 | Reasons for automation failure | <ul><li>Invoices failed</li><li>Invoices failed by company</li><li>Invoices failed by vendor group</li></ul> |
 | Workflow status                | <ul><li>Invoices in workflow</li><li>Vendor invoice workflow instances</li><li>Assignment per approver</li><li>Vendor invoice workflow per company</li><li>Average days in workflow by approver</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVe
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28791
 ms.search.region: Japan
@@ -54,3 +53,6 @@ If the status of a BOE is **Endorsed**, a user can reserve its endorsement.
 - [Setup Japan payment by endorsing a customer bill of exchange](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
 - [Settle an endorsed bill of exchange](./tasks/settle-endorsed-bill-exchange.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,8 +33,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Breadcrumb modules are used to provide secondary navigation on site pages. They are typically shown at the top of a page, below the header. Although breadcrumb modules can be added to any page, they are most often used on product details pages (PDPs), to show the product category hierarchy and provide a quick way to move around a site. A breadcrumb module can also be used to show a "Back to results" link when users open a PDP from a search or list page. In this way, users can quickly return to their filtered list page to continue shopping.
 
@@ -99,3 +96,6 @@ To add a breadcrumb module to a PDP and set the required properties, follow thes
 [Buy box module](add-buy-box.md)
 
 [SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

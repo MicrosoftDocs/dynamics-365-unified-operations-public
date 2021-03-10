@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -375,3 +374,6 @@ The following table lists additional changes that have been made for extensibili
 - Enable percent controlled for a catch weight item.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

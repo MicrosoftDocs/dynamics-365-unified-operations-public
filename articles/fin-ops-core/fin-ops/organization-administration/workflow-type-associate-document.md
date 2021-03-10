@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
@@ -52,3 +50,6 @@ Before you begin the following procedure, you must create a workflow document cl
 [Create a new workflow type](workflow-type-create-new.md)
 
 [Create a workflow document class](workflow-type-document-create.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

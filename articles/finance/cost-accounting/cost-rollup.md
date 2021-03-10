@@ -18,7 +18,6 @@ ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -307,3 +306,6 @@ The clear separation between **Cost allocation** and **Cost rollup policies** pr
 -  [Cost element dimensions](cost-elements.md)
 -  [Dimension hierarchy](dimension-hierarchy.md)
 -  [Overhead calculation](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

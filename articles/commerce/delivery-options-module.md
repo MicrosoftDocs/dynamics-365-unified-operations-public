@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,8 +33,6 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](includes/banner.md)]
 
 This topic covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Delivery options modules let customers select a mode of delivery such as shipping or pickup for their online order. A shipping address is required to determine the mode of delivery. If the shipping address changes, the delivery options must be retrieved again. If an order includes only items that will be picked up in a store, this module is automatically hidden.
 
@@ -88,3 +85,6 @@ A delivery options module can be added only to a checkout module. For more infor
 [Prorate header charges to match sales lines](pro-rate-charges-matching-lines.md)
 
 [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -73,3 +72,6 @@ To complete the steps in this example, you must first complete the steps in [Cre
 ## Additional resource
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

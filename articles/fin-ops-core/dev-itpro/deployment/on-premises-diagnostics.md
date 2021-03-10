@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
 
@@ -252,3 +251,6 @@ In Kibana, on the **Discover** tab, write a query, and save it. After you save t
 ## Troubleshooting
 ### You don't receive any data in Kibana
 If you don't receive any data in Kibana, review the logs from Winlogbeat to Logstash, Elasticsearch, and Kibana. Note that the Winlogbeat installation puts its logs in C:\\ProgramData\\winlogbeat\\Logs, whereas the other Elastic Stack components put their logs close to the installation path (for example, in C:\\ELK\\Elasticsearch\\logs).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

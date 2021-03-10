@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -500,3 +499,6 @@ Make sure that the shared model mapping configuration isn't marked as the defaul
 - At least one version of the ER model mapping configuration has either **Completed** or **Shared** status. In this case, the version that has the highest version number will be used for ER format execution.
 - The **Run draft** option for the ER model mapping configuration is turned on. In this case, the version that has **Draft** status will be used for ER format execution.
 > The **Run draft** option becomes available on the **Configurations** page for each ER model mapping configuration when the **Run setting** ER user parameter is turned on.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -309,3 +308,6 @@ The follow illustration shows an example of another page of the report that is g
 
 - [ER Design a configuration for generating reports in OPENXML format (November 2016)](tasks/er-design-reports-openxml-2016-11.md)
 - [Design ER configurations to generate reports in Word format](tasks/er-design-configuration-word-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

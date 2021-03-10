@@ -3,7 +3,7 @@
  
 title: Create a purchase order
 description: This topic shows you how to create a purchase order manually. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 07/18/2019
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventDimParmFixed
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -77,3 +76,6 @@ This topic shows you how to create a purchase order manually. It's more typical 
 
 2. Select **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

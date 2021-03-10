@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Italy
@@ -46,3 +45,6 @@ Before you can post financial transactions for invoices that have a total amount
 The Posting invoices with zero amount feature applies to invoices that are created in the **Accounts receivable** and **Accounts payable** modules.
 
 When invoices that have an amount of 0 (zero) are posted, the system creates customer/vendor transactions and voucher transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

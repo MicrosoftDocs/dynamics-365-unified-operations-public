@@ -18,7 +18,6 @@ ms.search.form: RCashBalance, RCashCountStatementForm, RCashPosting, RCashRemain
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268504
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
@@ -484,3 +483,6 @@ The settled amount is reflected in the <strong>Settled currency</strong> field o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

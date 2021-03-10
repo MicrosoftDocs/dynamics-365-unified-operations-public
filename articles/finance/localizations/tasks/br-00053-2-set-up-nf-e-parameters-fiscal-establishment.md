@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -59,3 +58,6 @@ Use the following procedure to set up the parameters for a Nota Fiscal eletrôni
 18. Click Save.
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

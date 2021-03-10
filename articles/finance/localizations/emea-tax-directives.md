@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Latvia, Lithuania, Netherlands, Norway, Poland, Spain, Sweden, Switzerland, Turkey, United Kingdom
@@ -39,3 +38,6 @@ EU Directive lists the information that is required by suppliers for their custo
 
 > [!NOTE]
 > Verify that the **Sales tax specification** field is set to **Registration currency** or **Registration and company currency** on the **Form setup** page on the **General** tab (**Accounts receivable > Setup > Forms > Form setup** or **Project management and accounting > Setup > Forms > Form setup**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

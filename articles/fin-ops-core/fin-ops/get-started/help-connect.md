@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16141
 ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
@@ -105,3 +103,6 @@ If you want to collaborate with Microsoft on tools and processes for customizing
 [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md)  
 [Create documentation or training with Task Recorder](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Custom Help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

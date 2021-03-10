@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +16,6 @@ ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruiting
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -69,3 +67,6 @@ Recruitment projects help manage the recruiting process. For each recruitment pr
     * The Started status means that the project is ready to receive applications.  
 33. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -69,3 +68,6 @@ Electronic reporting (ER) list functions can be used to extract information from
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Electronic reporting formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: SMAAgreementTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -77,3 +76,6 @@ You can record the history of an element in a service BOM. Every time that you u
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

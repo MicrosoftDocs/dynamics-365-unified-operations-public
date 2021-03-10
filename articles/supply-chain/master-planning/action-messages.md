@@ -18,7 +18,6 @@ ms.search.form: ReqGroup, MCRSalesOrderMessages, MCRSalesTableDetailedStatus, TA
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19411
 ms.assetid: 52b46d93-7d02-46b5-aad1-9fd08206bf9d
@@ -58,3 +57,6 @@ On the **Coverage groups** page, you can select the action messages that you wan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

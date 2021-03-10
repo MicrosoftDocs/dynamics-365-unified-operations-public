@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom
 ms.search.region: Russia
@@ -47,3 +46,6 @@ Use the **Separate divisions** page to create a company division. If your compan
 5.  In the **Vendor account** field, select the vendor account number that is associated with the division.
 
 6.  Select the **Independent** check box to indicate that the selected division can report the tax declarations independently of the head office.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

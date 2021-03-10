@@ -19,7 +19,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -78,3 +77,6 @@ If you are uploading multiple types of assets simultaneously (for example, image
 [Customize image focal points](dam-custom-focal-point.md)
 
 [Upload and serve static files](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

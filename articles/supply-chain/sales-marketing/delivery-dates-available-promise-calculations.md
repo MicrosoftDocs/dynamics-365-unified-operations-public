@@ -18,7 +18,6 @@ ms.search.form: SalesATP, SalesAvailableDlvDates, SalesCarrier
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 193933
 ms.assetid: 676fc53a-fa25-4688-9f26-1005316763b8
@@ -86,3 +85,6 @@ Therefore, the ship date is set to 10 days from now, based on the ATP calculatio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, T
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
@@ -92,3 +91,6 @@ Supply Chain Management provides a load building strategy that is named the Volu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

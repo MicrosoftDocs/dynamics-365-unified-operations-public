@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -43,3 +42,6 @@ A public preview is available. You can sign up and deploy a cloud instance of th
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

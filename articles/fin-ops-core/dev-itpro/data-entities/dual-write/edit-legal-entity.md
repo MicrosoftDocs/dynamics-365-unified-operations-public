@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,3 +69,6 @@ Follow these steps to add a company or legal entity after dual-write has been se
 
 ![Legal entities update succeeded](media/legal-entities-updated.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

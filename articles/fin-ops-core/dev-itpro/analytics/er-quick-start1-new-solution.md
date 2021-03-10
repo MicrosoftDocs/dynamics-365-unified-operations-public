@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -1238,3 +1237,6 @@ Notice that the footer of the generated report doesn't contain the name of ER fo
 - [IF function](er-functions-logical-if.md)
 - [ORDERBY function](er-functions-list-orderby.md)
 - [SESSIONNOW function](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

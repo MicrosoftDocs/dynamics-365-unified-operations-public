@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: a765a61c-52a3-45c5-b578-68b9249c592a
@@ -211,3 +209,6 @@ You can now create a copy of the same batch jobs for different legal entities, a
 You can simultaneously set the description, company, schedule start date and time, recurrence, and the run by account. When you copy the batch job, any alerts and dependencies from the source job will also be copied.
 
 For more information, see [Copy a batch job](../../dev-itpro/sysadmin/copy-batch-job.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

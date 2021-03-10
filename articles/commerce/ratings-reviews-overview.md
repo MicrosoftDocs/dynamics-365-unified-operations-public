@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -62,3 +61,6 @@ The ratings and reviews solution also provides a business intelligence (BI) temp
 [Configure ratings and reviews](configure-ratings-reviews.md)
 
 [Sync product ratings in Dynamics 365 Commerce](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

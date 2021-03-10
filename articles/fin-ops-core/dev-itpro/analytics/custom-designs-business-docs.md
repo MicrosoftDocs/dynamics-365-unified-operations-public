@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -108,3 +107,6 @@ The following walkthrough shows the process of introducing a custom report desig
     [![Print Management settings after compilation](./media/app-extension-print-mgt-after-1024x608.png)](./media/app-extension-print-mgt-after.png)
 
 You’ve now finished customizing the business document. Users will now be presented with the custom report design for the business document when they process transactions in the application.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

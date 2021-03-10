@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -73,3 +72,6 @@ This example shows the following:
 - Augmenting the **PriceDiscParameters** class to add any generic parameters for the price discount search.
 - Augmenting the **PriceDisc** class to create the new price discount search methods for the new price types.
 - The **PriceDiscParameters** is accessible from all classes related to price and discount search and these could be augmented, based on the requirements. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

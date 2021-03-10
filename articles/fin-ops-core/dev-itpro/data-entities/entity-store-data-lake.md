@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -161,3 +160,6 @@ The following sections describe each task in more detail.
 Entity store data should now be populated in the storage location that you provided, not in the relational Entity store database.
 
 The aggregate measurements and refresh options that you select in the Entity store UI should now apply to data that is copied to Data Lake.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

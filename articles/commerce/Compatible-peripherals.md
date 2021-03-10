@@ -16,7 +16,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: 
 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -38,25 +37,25 @@ Devices listed on this page have been tested for compatibility with Dynamics 365
 
 ### Line display
 
-| Date tested | Tested by | Manufacturer | Mfg website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
+| Date tested | Tested by | Manufacturer | Manufacturer website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 10/17/2017 | HP | HP | https://www.hp.com | support@hp.com | | HPTD620Display | HPTD620Display | 6.6.5.6 | 1.02.11 | OPOS | USB | https://www.hp.com |
 
 ### MSR
 
-| Date tested | Tested by | Manufacturer | Mfg website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
+| Date tested | Tested by | Manufacturer | Manufacturer website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 10/17/2017 | HP | HP | https://www.hp.com | support@hp.com | | HPSinglenoSRDMSR | HPSinglenoSRDMSR | 3.29 | 5.37 | OPOS | USB | https://www.hp.com |
 
 ### Printer
 
-| Date tested | Tested by | Manufacturer | Mfg website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
+| Date tested | Tested by | Manufacturer | Manufacturer website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 10/17/2017 | HP | HP | https://www.hp.com | support@hp.com | | H300 | H300 | 1.14.1.19 | 1.61B | OPOS | USB | https://www.hp.com |
 
 ### Bar code scanner
 
-| Date tested | Tested by | Manufacturer | Mfg website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
+| Date tested | Tested by | Manufacturer | Manufacturer website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 10/17/2017 | HP | HP | https://www.hp.com | support@hp.com | | N3680-HP | N3680-HP | 1.14.0.5 | DX000010BAA | OPOS | USB | https://www.hp.com |
 
@@ -67,7 +66,7 @@ Devices listed on this page have been tested for compatibility with Dynamics 365
 
 Devices can be tested for compatibility using the Peripheral simulator. For details around device testing and how to produce test logs for submission to Microsoft, see [Peripheral simulator for Commerce](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator).
 
-Once a device has been successfully tested, in order for compatibility to be acknowledged, the test results must be submitted to <drpc@microsoft.com>. This simulator is can be obtained via a download link on the hardware profile within Dynamics 365. Device manufacturers likely do not have access to Dynamics 365. To obtain a copy of the Peripheral simulator, contact <drpc@microsoft.com>.
+Once a device has been successfully tested, in order for compatibility to be acknowledged, the test results must be submitted to <drpc@microsoft.com>. This simulator can be obtained via a download link on the hardware profile within Dynamics 365. Device manufacturers likely do not have access to Dynamics 365. To obtain a copy of the Peripheral simulator, contact <drpc@microsoft.com>.
 
 Testing must be performed for every peripheral setup that goes into production. If the compatibility list indicates that the exact same device/POS setup has been tested in the past, testing should still be done as part of UAT testing. In those cases, test results do not need to be submitted to Microsoft. For all other successful test results, it is encouraged to submit results to <drpc@microsoft.com> to help build the list of compatible devices.
 
@@ -82,3 +81,6 @@ Only devices that have been previously tested for compatibility, with results su
 This document is for informational purposes only. Results are based on testing specific devices and configurations in a controlled lab environment in which the specified Microsoft Dynamics software was used. Any difference in system hardware, software design or configuration, customizations, or transaction mix may affect actual performance or results.
 
 MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS SUMMARY. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

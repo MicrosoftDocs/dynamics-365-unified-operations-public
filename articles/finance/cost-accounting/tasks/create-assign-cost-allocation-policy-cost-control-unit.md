@@ -17,7 +17,6 @@ ms.search.form: CAMCostAccountingLedgerPolicyAssignment
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -70,3 +69,6 @@ Use this procedure to create and assign a cost allocation policy and the corresp
 5. In the Cost control unit field, enter or select a value.
 6. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

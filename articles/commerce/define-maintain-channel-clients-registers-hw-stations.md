@@ -18,7 +18,6 @@ ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
@@ -210,3 +209,6 @@ Additional activation-related information includes the worker who changed the ac
 ### Client data synchronization
 
 All changes to a POS client, except changes in the device activation status, must be synced to the channel database to take effect. To sync changes to the channel database, navigate to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**, and run the required distribution schedule. For client changes, you should run the **Registers** and **Channel configuration** distribution schedules.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

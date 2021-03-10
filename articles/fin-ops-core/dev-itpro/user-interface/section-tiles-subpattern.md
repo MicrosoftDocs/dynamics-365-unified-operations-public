@@ -2,13 +2,12 @@
 # required metadata
 
 title: Section Tiles subpattern
-description: This article provides information about the Section Tiles subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for the first panorama section (the Summary section) that contains a set of tiles, charts, and singleton cards. 
+description: This article provides information about the Section Tiles subpattern. 
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -87,3 +86,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

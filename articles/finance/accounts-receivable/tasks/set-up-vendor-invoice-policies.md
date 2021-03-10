@@ -17,7 +17,6 @@ ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPoli
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -76,3 +75,6 @@ This topic explains how to set up vendor invoice policies. Vendor invoice polici
 16. Select **OK**.
 17. Close the pages to return to the home page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

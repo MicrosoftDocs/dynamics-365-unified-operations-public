@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -81,3 +80,6 @@ This topic explains how to download the newest version of [Electronic reporting 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Download ER configurations from the Global repository of Configuration service](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

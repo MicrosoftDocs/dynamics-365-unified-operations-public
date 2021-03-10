@@ -17,7 +17,6 @@ ms.search.form: OMOperatingUnit, DefaultDashboard
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -51,3 +50,6 @@ Value streams are operating units, that group one or multiple production flows. 
 2. Close the page.
 3. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

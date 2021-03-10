@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55651
 ms.assetid: 
@@ -148,3 +146,6 @@ The Orchestrator service is the service that manages your deployment and the rel
 ## Virtualization and oversubscription
 
 Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – cores, memory, and disk.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

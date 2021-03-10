@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -57,3 +56,6 @@ This procedure shows how to create a sales price selection criterion for attribu
 4. In the Criteria field, select Customer group 10. 
 5. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

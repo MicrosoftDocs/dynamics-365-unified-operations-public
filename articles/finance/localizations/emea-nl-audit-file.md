@@ -16,7 +16,6 @@ ms.search.form: TaxEvatParameters_NL
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Finance
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Netherlands
@@ -51,3 +50,6 @@ The steps in this procedure walk you through using the Audit file.
 3. In the **To date** field, enter a date. 
 4. In the **Format mapping** field, enter **Audit file (NL)**.
 5. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

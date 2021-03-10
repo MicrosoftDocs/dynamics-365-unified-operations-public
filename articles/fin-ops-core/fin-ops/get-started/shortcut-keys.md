@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
@@ -262,3 +260,6 @@ As of Platform update 11, users can discover currently available shortcuts direc
 
 [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

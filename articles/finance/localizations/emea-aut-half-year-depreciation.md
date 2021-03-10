@@ -18,7 +18,6 @@ ms.search.form: AssetBook, AssetDepreciationProfile, AssetParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272663
 ms.search.region: Austria
@@ -54,3 +53,6 @@ When the **Apply specific rules for half year depreciation** and **Automatically
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

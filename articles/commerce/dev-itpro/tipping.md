@@ -18,7 +18,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -82,3 +81,6 @@ We recommend that a header-level charge be used to add the tip amount to the tra
 
 - [Adyen connector overview](adyen-connector.md?tabs=10-0-14.md)
 - [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

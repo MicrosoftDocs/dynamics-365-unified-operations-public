@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/12/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -82,3 +81,6 @@ This topic provides links to topics about financials development.
 
 - [Add templates to the Open lines in Excel menu](../user-interface/add-templates-open-lines-excel-menu.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

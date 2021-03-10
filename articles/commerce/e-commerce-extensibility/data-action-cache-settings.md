@@ -5,7 +5,7 @@ title: Data action cache settings
 description: This topic covers cache settings for data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/16/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic covers cache settings for data actions in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The software development kit (SDK) \\src\\settings\\cache.settings.json file holds cache settings for entities that are returned from data actions calls. After these entities are cached, they are returned from the cache for all data action requests that have the same cache key, provided that their time to refresh (TTR) and time to live (TTL) values are valid.
 
@@ -114,12 +111,14 @@ The following table provides cache setting descriptions for specific data action
 
 ## Inline cache options
 
-The Dynamics 365 Commerce online SDK's data action layer provides flexibility for controlling how a data action response should be cached and what its scope should be (application or request). For all custom data actions, the cache type can be defined as part of the [action input](data-actions.md#key-parts-of-a-data-action). A common scenario is for data actions to invoke a [Retail Server proxy action](call-retail-server-apis.md), or module business logic that will invoke a Retail Server proxy action. An example of such a scenario would be when a user selects a "find store" button. For these scenarios, a module can set the "bypassCache" option on the action context when invoking the Retail Server proxy action. This setting tells the SDK to honor the module's given cache preferences. 
+The Dynamics 365 Commerce online SDK's data action layer provides flexibility for controlling how a data action response should be cached and what its scope should be (application or request). For all custom data actions, the cache type can be defined as part of the [action input](data-actions.md#key-parts-of-a-data-action). A common scenario is for data actions to invoke a Retail Server proxy data action, or module business logic that will invoke a Retail Server proxy data action. An example of such a scenario would be when a user selects a "find store" button. For these scenarios, a module can set the "bypassCache" option on the action context when invoking the Retail Server proxy data  action. This setting tells the SDK to honor the module's given cache preferences. For more information about Retail Server proxy data actions, see [Call Retail Server APIs](call-retail-server-apis.md).
 
 Supported values for bypassCache are: 
  
 - **get** - Ignores cache while performing read and fetches the latest information from Retail Server.
 - **none** - Action response is cached per request. If byPassCache is not specified runtime defaults to this value.
+ 
+In general, for custom data actions and Retail Server proxy actions that read data from Retail Server (calling APIs with names that start with "get," "search," or "read"), the value of "bypassCache" is set to "none" by default. For all other Retail Server proxy actions configured to fetch the latest data from Retail Server, the value of "bypassCache" is set to "get" by default. These values can be overridden if needed.
  
 The following is an example of usage.
 
@@ -145,3 +144,6 @@ if (checkoutCartId) {
 [Commerce Scale Unit customer and consumer APIs](../dev-itpro/retail-server-customer-consumer-api.md)
 
 [Call Retail Server APIs](call-retail-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

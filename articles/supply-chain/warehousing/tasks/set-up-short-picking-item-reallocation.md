@@ -17,7 +17,6 @@ ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -66,3 +65,6 @@ The USMF demo data company was used to create this procedure.
 6. In the list, select a **User ID**. For example, 24.
 7. Expand the **Work** FastTab.
 8. Select **Yes** in the **Allow manual item reallocation** field.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

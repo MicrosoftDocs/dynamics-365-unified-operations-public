@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,7 +16,6 @@ ms.search.form:  FormRunConfigurationAddPAControl, FormRunConfigurationEditPACon
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -147,3 +145,6 @@ public final class ClassTest_Extension
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

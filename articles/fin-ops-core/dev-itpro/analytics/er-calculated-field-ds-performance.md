@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -306,3 +305,6 @@ For more information about ER configuration providers, see [Create configuration
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Trace the execution of ER formats to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md)
 - [Support parameterized calls of ER data sources of the Calculated field type](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

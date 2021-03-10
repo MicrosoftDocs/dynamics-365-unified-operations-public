@@ -18,7 +18,6 @@ ms.search.form: SMAServiceOrderTable, SMAParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -78,3 +77,6 @@ If you have specified that a reason code is required, you must enter a reason co
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY, TaxGSTReportConfi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10904
 ms.assetid: b14375b1-cb5e-4969-a5fd-3d6d2c8b6226
@@ -193,3 +192,6 @@ You should run the **Settle and post sales tax** process before you generate the
 - [Print GST customer invoices with a relief clause](./tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md)
 - [Print GST tax invoices](./tasks/my-00005-print-gst-tax-invoices.md)
 - [Set up GST relief clauses](./tasks/my-00006-01-gst-relief-clauses.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

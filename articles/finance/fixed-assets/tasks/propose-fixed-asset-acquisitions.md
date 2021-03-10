@@ -17,7 +17,6 @@ ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAss
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -46,3 +45,6 @@ This topic describes how to acquire a fixed asset using the acquisition proposal
 - Only fixed assets with the acquisition date and acquisition price set on the book will be included in the acquisition proposal.  
 11. On the page, select the **Books** tab.
 12. Select **Post**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

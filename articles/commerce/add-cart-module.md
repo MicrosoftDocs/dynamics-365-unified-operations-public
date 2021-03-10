@@ -5,7 +5,7 @@ title: Cart module
 description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/20/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -33,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/banner.md)]
 
 This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 A cart module shows the items that have been added to the cart before the customer proceeds to checkout. The module also shows an order summary and lets the customer apply or remove promotional codes.
 
@@ -57,6 +54,7 @@ The following image shows an example of a cart page on the Fabrikam site. In thi
 | Heading | Heading text and a heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | A heading for the cart, such as "Shopping bag" or "Items in your cart." |
 | Show out of stock errors | **True** or **False** | If this property is set to **True**, the cart page will show stock-related errors. We recommend that you set this property to **True** if inventory checks are applied on the site. |
 | Show shipping charges for line items | **True** or **False** | If this property is set to **True**, cart line items will show the shipping charges, if this information is available. This feature isn't supported in the Fabrikam theme, because users select shipping only in the checkout flow. However, this feature can be turned on in other workflows if it's applicable. |
+| Show available promotions| **True** or **False** | If this property is set to **True**, the cart shows available promotions, based on items in the cart. This capability is available in the Dynamics 365 Commerce 10.0.16 release. |
 
 ## Modules that can be used in a cart module
 
@@ -121,3 +119,6 @@ To add a cart module to a new page and set the required properties, follow these
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
 
 [Create an online functionality profile](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

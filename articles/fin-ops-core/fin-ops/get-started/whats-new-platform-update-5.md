@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273193
 ms.assetid: 025acbbf-7c05-407c-bed2-cde1935e11c9
@@ -50,3 +48,6 @@ This topic describes features that are either new or changed in Dynamics 365 for
 | Feature | Why this is important |
 |---------|-----------------------|
 | Enhanced administration features for personalization | The personalization administrator can now apply or remove form personalizations for groups of users. Previously personalization administration was only possible one user at a time. For more information, see [Personalize the user experience](personalize-user-experience.md). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

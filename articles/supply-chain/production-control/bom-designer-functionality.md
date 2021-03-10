@@ -18,7 +18,6 @@ ms.search.form: BOMDesigner, BOMDesignerSetup, BOMDesignerFilterDialog, BOMDesig
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20981
 ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
@@ -125,3 +124,6 @@ Click **Setup** to customize the information that is shown in the tree view of t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

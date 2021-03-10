@@ -15,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -93,3 +92,6 @@ A posting group must be specified for each sales tax code. Use the standard meth
 
 > [!NOTE]
 > Accounts in the **Posting type** field must have a **Tax** value. If the accounts don't have this value, you can add it on the **Posting validation** tab on the **Main accounts** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

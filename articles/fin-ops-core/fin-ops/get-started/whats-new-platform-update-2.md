@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 140993
 ms.assetid: 7ab12871-d7b9-4bf8-9bde-1ab372db421a
@@ -142,3 +140,6 @@ Extensibility features are key features of the Dynamics AX platform because the 
 ## Additional resources
 
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

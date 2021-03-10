@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -96,3 +94,6 @@ In Platform update 23, you can select to use Entity store as a Data Lake. When t
 
 ## Extensibility enhancements
 The [fourth wave of platform extensibility enhancements](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility4), included in Platform update 23, are documented in the October 2018 Release notes. There are six enhancements detailed, with one of the highlights being that we now allow adding new relations to query datasources.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

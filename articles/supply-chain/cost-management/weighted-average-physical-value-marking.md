@@ -19,7 +19,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 65501
@@ -236,3 +235,6 @@ The following diagram illustrates this series of transactions with the effects o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

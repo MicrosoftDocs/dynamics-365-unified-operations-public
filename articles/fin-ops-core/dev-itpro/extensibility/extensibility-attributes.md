@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -92,3 +91,6 @@ When a method is replaceable, it can be extended by using CoC, and the execution
 + **Don't** write logic that has a different responsibility than the logic that is being replaced.
 + **Do** call the base functionality (call next) when the replacement logic doesn't apply.
 + **Avoid** replacing logic completely by not calling the base functionality (call next).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

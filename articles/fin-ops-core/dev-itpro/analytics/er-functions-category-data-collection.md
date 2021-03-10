@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -53,3 +52,6 @@ Electronic reporting (ER) data collection functions are used to do counting and 
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Electronic reporting formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

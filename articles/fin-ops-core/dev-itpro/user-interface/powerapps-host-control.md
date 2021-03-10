@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -50,3 +49,6 @@ In Microsoft Power Apps, you can manage organizational data through apps that yo
 5.  In some cases, your app might be hosted in a development or sandbox Power Apps environment that is provided by Microsoft. In this case, you must supply that override URL as the value of the **Power Apps Environment Override** property.
 
 Sizing is determined by the container that you put your control in. If you put your control in a form pattern that has limited available space, and your app has been designed to be larger than the available space, your embedded app will have scroll bars.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

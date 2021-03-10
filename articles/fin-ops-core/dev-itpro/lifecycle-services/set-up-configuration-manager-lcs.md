@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -138,3 +137,6 @@ The environment is now ready for you to copy and manage configurations. For more
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

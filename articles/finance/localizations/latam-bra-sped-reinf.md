@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -711,3 +710,6 @@ After periodic events R-2010, R-2010, and R-2060 are closed through an event R-2
 11. Select **OK** to confirm the action.
 
 12. The **Evento de fechamento** message item type is updated, and the status of the message item is updated to **Aceito**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

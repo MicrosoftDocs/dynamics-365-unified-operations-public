@@ -2,13 +2,12 @@
 # required metadata
 
 title: Cost accounting analysis Power BI content
-description: This topic describes what is included in the Cost accounting analysis Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+description: This topic describes what is included in the Cost accounting analysis Power BI content.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -129,3 +128,6 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Fiscal calendars                   | Calendar, Calendar description                                                                                       |
 | Fiscal years                       | Calendar year                                                                                                        |
 | Fiscal periods                     | Calendar year period                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

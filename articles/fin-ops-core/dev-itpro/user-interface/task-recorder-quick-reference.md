@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -190,3 +189,6 @@ This symbol represents a step that was attempted by the playback system, but was
 <li>The step could not play because the name of the form or name of the control has changed.</li>
 <li>The step could not play because of a framework change to the control.</li>
 </ul>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

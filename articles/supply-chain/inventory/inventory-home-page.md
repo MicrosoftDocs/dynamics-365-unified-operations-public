@@ -18,7 +18,6 @@ ms.search.form: InventParameters
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
@@ -63,3 +62,6 @@ You can find opinions, news, and other information about Inventory management an
 
 ### Task guides
 Additional help is available as task guides. To access task guides, click the **Help** button on any page
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

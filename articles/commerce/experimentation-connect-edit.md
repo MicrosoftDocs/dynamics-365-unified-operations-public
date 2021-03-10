@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -99,3 +98,6 @@ If you defined the scope of your experiment as **entire** in the **Connect exper
 
 ## Next step
 [Preview and publish an experiment](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

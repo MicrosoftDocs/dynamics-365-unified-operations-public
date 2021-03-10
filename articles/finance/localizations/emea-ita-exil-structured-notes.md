@@ -17,7 +17,6 @@ ms.search.form: MCROrderNotes
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Italy
@@ -120,3 +119,6 @@ In Accounts payable, notes are automatically generated as attachments to new pur
 Advanced notes which are defined as **External** are printed in the related business documents depending on the settings on the **Form setup**
 
 ![Setup for printing advanced notes](media/emea-ita-exil-notes-printing.jpg)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

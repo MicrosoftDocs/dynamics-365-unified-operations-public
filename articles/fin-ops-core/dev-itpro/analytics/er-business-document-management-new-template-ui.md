@@ -2,13 +2,12 @@
 # required metadata
 
 title: New document user interface in Business document management
-description: This topic provides information about how to use the new document user interface (UI) in the Business document management feature of the Electronic reporting (ER) framework.
+description: This topic provides information about how to use the new document user interface in the Business document management feature of Electronic reporting.
 author: v-anamir
 manager: AnnBe
 ms.date: 05/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -69,3 +68,6 @@ Follow these steps to turn on this feature for all legal entities.
 The **New document** button is used to create and edit a template in an ER format configuration that is provided by another provider. In this example, the provider is Microsoft. When you select **New document**, you can view all the templates that are owned by current and other providers. After you select the template, it's opened for editing. The edited template will then be stored in a new ER format configuration that is automatically generated.
 
 For more information, see [Business document management overview](er-business-document-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

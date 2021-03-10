@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -279,3 +278,6 @@ WrapText: boolean (optional)
 If true then the text of the field control will wrap to the next line.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

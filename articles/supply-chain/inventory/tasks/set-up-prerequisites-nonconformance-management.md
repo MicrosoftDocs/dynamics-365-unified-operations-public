@@ -17,7 +17,6 @@ ms.search.form: InventParameters, InventTestReportSetup, SysUserManagement, SysU
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -82,3 +81,6 @@ Use this topic to enable nonconformance management processes. A nonconformance d
 4. In the **Description** field, type a value.
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

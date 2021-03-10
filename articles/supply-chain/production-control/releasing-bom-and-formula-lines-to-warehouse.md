@@ -18,7 +18,6 @@ ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSRelease
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
 ms.search.region: Global
@@ -104,3 +103,6 @@ You can release raw material for a partial quantity of finished goods or in a sp
     The units that are available are defined in the unit sequence group ID of the finished good.
 
     For example, a finished good has the following unit conversion between pounds (lbs.) and pallet (PL): 1 PL = 100 lbs. To create a production order for 10,000 lbs. of the finished good, you can release raw materials for the number of pallets that you plan to produce. Select **PL** as the unit, and then select a corresponding number in the **Quantity** field.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/18/2020
+ms.date: 12/08/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -120,8 +120,11 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 
 ## Adding extensions
 
-1. All extension table columns must have the NOT NULL constraint enforced. During upgrade, if the column value is blank it will be updated with NULL values and it may cause a runtime exception in CRT if the null value is not handled properly.
-2. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
+1. If you are creating an extended table and want to sync the data back to HQ, then the table must have the same primary key and clustered index as the HQ table in the extended table, if not, the CDX sync will fail. If you need to pull the data from the extension table to HQ, then the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,) is required in the extension table.
+
+2. All extension table columns must have the NOT NULL constraint enforced. During upgrade, if the column value is blank it will be updated with NULL values and it may cause a runtime exception in CRT if the null value is not handled properly.
+
+3. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
 
     ```sql
     --Tables:
@@ -144,14 +147,13 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     GO
     ```
 
-3. Grant **DataSyncUsersRole** permission if your table is going to send or receive data from HQ.
+4. Grant **DataSyncUsersRole** permission if your table is going to send or receive data from HQ.
 
     ```sql
     GRANT SELECT, INSERT, UPDATE, DELETE, ALTER ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
     GO
     ```
 
-4. If you are creating an extended table and want to sync the data back to HQ, you need to have the primary column of the parent table in the extended table.
 5. Always prefix your table, for example **ContosoRetailTransactionTable**, so that you can avoid conflicts with other customizations.
 
 ## Attributes
@@ -232,6 +234,10 @@ All new stored procedures, views or functions must be created in the **ext schem
 
 The deployment process determines if there are any modification to the database artifacts. If you have attempted to modify the CRT, AX, or DBO schema objects, or access them for any scenario directly in SQL, then deployment will fail.
 
+## Deployment timeout
+
+SQL server will time outs if the deployment script runs for more than 30 minutes. To avoid timeout and deployment failure, split the long running script into multiple smaller scripts, which run in less than 30 minutes.
+
 ## Extension scripts and deployment
 
 Channel Database extensions are provided by authoring one or more T-SQL script files and including them in a [deployable package](./retail-sdk/retail-sdk-packaging.md). This process is described in the [Retail SDK](./retail-sdk/retail-sdk-overview.md) documentation.
@@ -288,3 +294,6 @@ through the [Commerce Data Exchange](./cdx-extensibility.md). Data uploaded to t
 ### Do write backward compatible channel database extensions
 
 The Channel Database is expected to be backward compatible. This means that updating only the Channel Database without updating Commerce Scale Unit or POS must not prevent existing Commerce Scale Unit or POS operations from functioning correctly. During deployment flows, the different components of your Commerce Scale Unit and Modern POS are updated in the inverse other of dependency. This means that the Channel Database is the first component to be updated, and Commerce Scale Unit or POS are updated next. If Commerce Scale Unit or POS fails to update successfully, those components are rolled back to restore them to their previous working state. However, in such situations, the Channel Database is not rolled back to prevent data loss. If your extensions are not backward compatible, they may fail to work properly until a successful deployment is performed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

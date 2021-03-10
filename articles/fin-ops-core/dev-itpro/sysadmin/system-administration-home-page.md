@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -131,3 +130,6 @@ The process automation framework allows administrators to view and create automa
 - [Set the session inactivity timeout](session-idle-timeout.md)
 - [Build OData metadata cache when AOS starts](odata-warmup.md)
 - [Configure and manage database logging](configure-manage-database-log.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

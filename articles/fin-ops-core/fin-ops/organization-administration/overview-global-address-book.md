@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.search.form: DirPartyTable, DirPartyTableRoles
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23521
 ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074
@@ -76,3 +74,6 @@ Each party record's addresses, locations, and contact information are shared acr
 ### Locations and transactions
 
 When a party role is included in a transaction, the location, address, or contact information of the party can be accessed when transaction details are entered.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

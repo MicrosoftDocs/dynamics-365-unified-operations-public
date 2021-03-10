@@ -2,13 +2,12 @@
 # required metadata
 
 title: Customize the Open in Microsoft Office menu
-description: Most pages include an Open in Microsoft Office menu. This topic provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
-author: ChrisGarty
+description: This topic provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
+author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,13 +22,15 @@ ms.custom: 270774
 ms.assetid: 3ff1184b-1a8a-4102-9600-f1776634d95f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 
 ---
 
 # Customize the Open in Microsoft Office menu
+
+[!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -286,3 +287,6 @@ Then, a mouse click of this menu item button is equivalent to a mouse click of t
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

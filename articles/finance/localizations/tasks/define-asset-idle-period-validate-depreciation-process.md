@@ -17,7 +17,6 @@ ms.search.form: AssetParameters, AssetIdlePeriodAssign_JP, AssetTable, AssetBook
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -116,3 +115,6 @@ This task uses the JPMF demo company data.
 17. Click OK.
     * Validate no depreciation journal is created for the idle period  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

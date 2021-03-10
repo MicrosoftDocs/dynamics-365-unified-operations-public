@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -96,3 +95,6 @@ If the **model.RoundOff** parameter is set to **RoundOffType.RoundUp**, `ROUNDAM
 [Other (business domain–specific) functions](er-functions-category-other.md)
 
 [Mathematical functions](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

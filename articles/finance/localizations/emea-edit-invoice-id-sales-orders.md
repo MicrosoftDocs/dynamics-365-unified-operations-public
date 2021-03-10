@@ -17,7 +17,6 @@ ms.search.form: CustParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268014
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
@@ -65,3 +64,6 @@ For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, and P
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

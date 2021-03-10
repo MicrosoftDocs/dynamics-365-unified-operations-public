@@ -1,5 +1,20 @@
-{
+﻿{
   "redirections": [
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/impact-analysis-report.md",
+      "redirect_url": "lcs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/batch-job-sql-defragmentation.md",
+      "redirect_url": "../get-started/removed-deprecated-features-platform-updates#feature-removed-effective-january-28-2021",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md",
+      "redirect_url": "/dynamics365/fasttrack/",
+      "redirect_document_id": "false"
+    },
     {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md",
       "redirect_url": "cloud-prem-comparison",
@@ -3482,7 +3497,7 @@
     },
     {
       "source_path": "articles/dev-itpro/get-started/fasttrack-dynamics-365-overview.md",
-      "redirect_url": "/dynamics365/fin-and-ops/get-started/fasttrack-dynamics-365-overview",
+      "redirect_url": "/dynamics365/fasttrack/",
       "redirect_document_id": "false"
     },
     {
@@ -9177,7 +9192,7 @@
     },
     {
       "source_path": "articles/fin-and-ops/get-started/fasttrack-dynamics-365-overview.md",
-      "redirect_url": "../../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview",
+      "redirect_url": "/dynamics365/fasttrack/",
       "redirect_document_id": "false"
     },
     {

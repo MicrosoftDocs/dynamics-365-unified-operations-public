@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -116,3 +115,5 @@ function main(metadataService, dataService, cacheService, $q) {
     }; 
 }
 ```
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

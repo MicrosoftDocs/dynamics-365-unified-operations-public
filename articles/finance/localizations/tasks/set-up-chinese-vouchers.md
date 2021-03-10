@@ -17,7 +17,6 @@ ms.search.form: LedgerVoucherType_CN, HcmWorkerLookUp, LedgerParameters, LedgerP
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
@@ -104,3 +103,6 @@ This procedure was created using the demo data company CNMF. This procedure is f
 8. In the Print layout code field, select an option.
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

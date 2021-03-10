@@ -17,7 +17,6 @@ ms.search.form: AssetTable, AssetBook
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -49,3 +48,6 @@ This procedure uses the JPMF demo company data.
     * Note that the EQUP-M and 200NDB_CSR already has the SpeRE-1M as default configuration in the demo data.  
     * Allocation start convention, Allocation unit, and Allocation periods fill with default values. You can change them if needed. These are specific to the Reserve method for special depreciation.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

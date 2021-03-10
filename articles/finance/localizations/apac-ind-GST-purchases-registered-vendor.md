@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -148,3 +147,6 @@ The following illustration shows the financial entry for the purchase of goods w
 The following illustration shows the financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to **Others**.
 
 ![Financial entry for the purchase of goods where the reverse charge is set to 70 percent and the ITC category is set to Others](media/Annotation-2019-05-15-173734.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

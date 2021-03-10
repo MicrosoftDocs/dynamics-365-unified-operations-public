@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Commerce, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -32,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.16
 # Customize transactional emails by mode of delivery
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to set up custom email templates for specific notification types and modes of delivery in Microsoft Dynamics 365 Commerce.
 
@@ -78,3 +76,6 @@ To configure email templates for specific modes of delivery in Commerce headquar
 [Create call center orders](tasks/create-call-center-orders.md)
 
 [Change mode of delivery in POS](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

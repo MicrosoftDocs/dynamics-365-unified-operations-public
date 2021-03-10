@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -92,3 +91,6 @@ In accordance with International Financial Reporting Standard 16 (IFRS 16) and A
 | 1                                    | 22,889.87 ÷ 24 = 953.74                 |
 | 2                                    | 22,889.87 ÷ 24 = 953.74                 |
 | 3                                    | 22,889.87 ÷ 24 = 953.74                 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

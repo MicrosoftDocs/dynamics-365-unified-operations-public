@@ -17,7 +17,6 @@ ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, WMSJournalTable, W
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -60,3 +59,6 @@ This procedure shows you how to register items using the item arrival journal wh
 2. Click Product receipt.
 3. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

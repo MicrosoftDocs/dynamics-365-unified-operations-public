@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Bahrain
@@ -44,7 +43,6 @@ The VAT return form in Dynamics 365 Finance includes the following reports:
  - Sales transactions details grouped by box classification from Box1 to Box6.
  - Purchase transaction details grouped by box classification from Box8 to Box12.
  
- The feature is available 
  
 ## Prerequisites
 
@@ -222,3 +220,6 @@ Complete the following steps to generate the tax declaration report.
    - **Purchase transactions**
    - **Sales transactions**
   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

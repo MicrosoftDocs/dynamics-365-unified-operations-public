@@ -15,7 +15,6 @@ ms.search.form:  HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -154,3 +153,6 @@ Transactions for these workers can be posted by using advance holder accounts. T
 ## Set up the advance holder
 
 [Advance holders overview](emea-advance-holders.md#create-an-advance-holder)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

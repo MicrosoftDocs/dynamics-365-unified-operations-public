@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -125,3 +123,6 @@ respect to the software or its performance.
 hazardous environments requiring fail-safe controls, including without limitation, the design, 
 construction, maintenance or operation of nuclear facilities, aircraft navigation or communication 
 systems, air traffic control, and life support or weapons systems.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

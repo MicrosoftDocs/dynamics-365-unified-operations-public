@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -168,3 +167,6 @@ TypeScript files for new custom data actions are created under the \\src\\action
 [Core data actions](core-data-actions.md)
 
 [Call Retail Server APIs](call-retail-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

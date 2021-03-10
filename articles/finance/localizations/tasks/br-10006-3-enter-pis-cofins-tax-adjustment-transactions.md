@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -56,3 +55,6 @@ In Fiscal books, you can create and post a journal for manual PIS and COFINS tax
 22. Close the page.
 23. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

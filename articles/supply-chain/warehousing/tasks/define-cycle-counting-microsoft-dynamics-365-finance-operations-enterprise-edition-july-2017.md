@@ -16,7 +16,6 @@ ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPl
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -98,3 +97,6 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 21. Click **OK**.
 22. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +16,6 @@ ms.search.form: DirParameters
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -49,3 +47,6 @@ The demo data company used to create this task is USMF. This task is intended fo
 13. In the list, find and select the desired record. Press the Shift key to select multiple roles to add to the **Selected roles** pane and then click the arrow to add the selected roles.  
 14. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

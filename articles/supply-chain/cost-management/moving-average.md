@@ -18,7 +18,6 @@ ms.search.form: InventModelGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
@@ -159,3 +158,6 @@ In this moving average example, the inventory value report is printed to support
 
 > [!NOTE]
 > You cannot reconcile the general ledger with inventory by using the **Transaction time sorting** option. The report must be printed by using the **Posting date** option.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

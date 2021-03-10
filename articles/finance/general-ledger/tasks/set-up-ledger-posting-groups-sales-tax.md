@@ -17,7 +17,6 @@ ms.search.form: TaxAccountGroup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -45,3 +44,6 @@ Sales tax is calculated and posted to main accounts that are specified in Ledger
 11. In the **Customer case discount** field, select the main account to post cash discount for **Sales tax codes** associated with this **Ledger posting group**. This is optional and if no account is entered, the main account on the **Cash discount codes** will be used. It can be useful to use different accounts per **Ledger posting group** if using the reverse sales tax on cash discount option on **Sales tax groups**.  
 12. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

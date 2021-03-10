@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -169,3 +168,6 @@ Some formulas can't be tested at design time. For example, a formula might retur
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Electronic reporting formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

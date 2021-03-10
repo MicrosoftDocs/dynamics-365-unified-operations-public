@@ -17,7 +17,6 @@ ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAss
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -97,3 +96,6 @@ This procedure was created using the demo data company JPMF.
 14. Click Confirm.
     * Only confirmed Accelerated depreciation documents can be used for the proposal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

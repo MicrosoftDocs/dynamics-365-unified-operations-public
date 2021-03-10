@@ -15,7 +15,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -92,3 +91,6 @@ On the **Invoice journal** page, you can perform these actions:
 
 ### Post vendor invoices as credit corrections
 On the **Open vendor invoices** page, you can create and post vendor invoices as credit corrections for return item transactions. The procedure resembles the procedure for posting a reverse transaction for a purchase order credit note, earlier in the topic.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

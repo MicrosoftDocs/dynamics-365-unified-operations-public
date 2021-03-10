@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview of Dynamics 365 Supply Chain Management 10.0.15 (January 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.15 (January 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.15. 
 author: kamaybac
 manager: tfehr
@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -29,12 +28,11 @@ ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.15 (January 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.15 (January 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.15. This version has a build number of 10.0.644 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.15. This version has a build number of 10.0.644 and is available as follows:
 
 - **Preview of release:** October 2020
 - **General availability of release (self-update):** November 2020
@@ -90,3 +88,6 @@ The [Removed or deprecated features in Dynamics 365 Supply Chain Management](rem
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

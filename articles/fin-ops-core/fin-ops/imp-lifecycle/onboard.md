@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,7 +16,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -79,3 +77,6 @@ We recommend that you add key project members (such as project managers) from th
 Be sure to keep the milestone dates in your LCS project current. In this way, you help us connect with you at different project stages. When you're closer to your go-live date, we will contact you for a project Go-live assessment before we deploy your production environment.
 
 Milestone dates are stored in the LCS implementation methodology. For more information, see the [Methodologies](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) section of the "LCS for Customers" topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -225,3 +224,6 @@ Are you looking for more tools to help you prepare backup files from your develo
 
 * [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools that are created by the community.
 * [Community-provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

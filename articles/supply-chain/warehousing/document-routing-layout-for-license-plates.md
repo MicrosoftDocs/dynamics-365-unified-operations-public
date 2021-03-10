@@ -17,7 +17,6 @@ ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicens
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -30,6 +29,7 @@ ms.dyn365.ops.version: Release 10.0.10
 # Document routing layout for license plate labels
 
 [!include [banner](../includes/banner.md)]
+
 
 The document routing layout defines the layout of license plate labels, and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
 
@@ -56,6 +56,10 @@ As part of the label printing process, the text `$LicensePlateId$` in this examp
 To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.
 
 Several widely available label generation tools can help you format the text for the label layout. Many of these tools support the `$FieldName$` format. In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.
+
+## Turn on this feature for your system
+
+If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature.
 
 ## Custom number formats
 
@@ -140,3 +144,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## More information about how to print labels
 
 For more information about how to set up and print labels, see [Enable license plate label printing](tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

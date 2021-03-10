@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +16,6 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope:  Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -72,3 +70,6 @@ Access to the Provisioning guide can be found here:
 - [Provisioning guide on PartnerSource](https://mbs.microsoft.com/partnersource/global/deployment/documentation/user-guides/D365Ops_OnPremEEProvisionGuide)
 
 After you have logged into LCS, a project will be automatically provisioned for you. The LCS project will allow you to deploy an on-premises environment. For more details on getting started with your LCS project, see [Set up on-premises projects in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

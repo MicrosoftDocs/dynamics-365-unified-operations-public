@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -53,3 +52,6 @@ Use this procedure to set up tax exemptions for the Superintendência da Zona Fr
 18. Click Save.
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

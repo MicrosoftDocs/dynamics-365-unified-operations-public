@@ -18,7 +18,6 @@ ms.search.form: WMSArrivalOverview
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -63,3 +62,6 @@ After the journal is posted, the returned items are registered in inventory, and
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

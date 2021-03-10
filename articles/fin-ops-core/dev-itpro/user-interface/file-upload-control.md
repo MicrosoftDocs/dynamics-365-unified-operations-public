@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -108,3 +107,6 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
     }
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

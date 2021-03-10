@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -51,3 +50,6 @@ The client-side behavior for the control is defined by using HTML and JavaScript
 ## Control extensibility architecture overview
 
 The following diagram shows the artifacts that are involved and their relation to each other. [![Control extensibility architecture](./media/extensibilitycontrolarchitecture.png)](./media/extensibilitycontrolarchitecture.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

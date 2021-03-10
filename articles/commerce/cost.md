@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -176,3 +175,6 @@ You must set up the following fields for this combination:
 
 > [!IMPORTANT]
 > For DOM to consider these costs when it's run, you must add the cost factor to the relevant fulfillment profile.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

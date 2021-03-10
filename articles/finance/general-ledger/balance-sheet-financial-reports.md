@@ -18,7 +18,6 @@ ms.search.form: FinanicalReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
@@ -87,3 +86,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

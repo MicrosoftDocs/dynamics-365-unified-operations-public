@@ -18,7 +18,6 @@ ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Czech Republic
@@ -416,3 +415,6 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

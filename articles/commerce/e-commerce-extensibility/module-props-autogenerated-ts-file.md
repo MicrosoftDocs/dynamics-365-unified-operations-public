@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -88,3 +87,6 @@ export interface IProductFeatureProps<T> extends Msdyn365.IModule<T> {
 [Module mock file](module-mock-file.md)
 
 [Module test file](module-test-file.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

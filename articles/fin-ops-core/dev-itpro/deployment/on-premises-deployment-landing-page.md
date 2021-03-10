@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/07/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -78,3 +77,6 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Software lifecycle policy and on-premises releases](../migration-upgrade/on-prem-version-update-policy.md)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

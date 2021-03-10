@@ -18,7 +18,6 @@ ms.search.form: InflationAdjJournal_MX, InpcRateTable_MX, LedgerParameters, Main
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9391
 ms.assetid: 9076bf16-0021-47ad-a3b9-1bab75c583ec
@@ -130,3 +129,6 @@ This report shows the calculation of the capital and result account code inflati
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

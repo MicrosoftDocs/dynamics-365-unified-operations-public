@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -66,3 +65,6 @@ Note that the web service URL in this sample is fictional.  There is no known we
         info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
     }
     ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

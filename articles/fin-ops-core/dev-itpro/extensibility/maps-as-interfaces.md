@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -157,3 +156,6 @@ public class ISV2PurchTableSalesPurchTable extends ISV2SalesPurchTableInterface
 }
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -64,3 +63,6 @@ Make sure the Customer account field contains customer number US-001
     * There are two line discount agreements for product T0012, specifying a 5 percent discount for an order line quantity from 1 to 10, and 7 percent discount for order quantities above 10. Note that the discounts are applied to a group of products, in this example, Group code 01, of which product T0012 is a member.  
 4. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

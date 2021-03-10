@@ -18,7 +18,6 @@ ms.search.form: SMAServiceOrderTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -100,3 +99,6 @@ If all lines in a service order are marked as **Posted**, the progress of the st
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

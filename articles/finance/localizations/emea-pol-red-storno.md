@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Poland
@@ -89,3 +88,6 @@ On the  **Accounts payable parameters** page, in the **Invoice** area, set the *
  8. In the **Invoice date** field, enter a date.  
  9. Click **Post**.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

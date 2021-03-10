@@ -17,7 +17,6 @@ ms.search.form: CAMDimension, CAMAXFinancialDimensionMemberProviderConfiguration
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -54,3 +53,6 @@ This procedure shows how to create cost objects by importing the cost center fin
 ## View the imported cost centers
 1. Click View dimension members.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

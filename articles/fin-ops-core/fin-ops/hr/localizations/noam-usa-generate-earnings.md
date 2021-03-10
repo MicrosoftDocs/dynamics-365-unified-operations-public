@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +17,12 @@ ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220864
 ms.assetid: 87aac2bd-fcdb-4f97-a55f-7f25659d6940
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -202,3 +200,6 @@ After you generate earnings, you must release them before you can create pay sta
 [Post payroll distributions and generate vendor invoices](noam-usa-post-payroll-generate-vendor-invoices.md)
 
 [Process existing payroll payments](noam-usa-existing-payroll-payments.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

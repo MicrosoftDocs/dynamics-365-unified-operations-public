@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -72,3 +71,6 @@ You can use the **Clear reset date** functionality to clear future reset dates. 
 
 > [!NOTE]
 > Depending on the reset date that you select, and the receipt format, you might have duplicate receipt numbers. Although the point of sale (POS) system can handle these situations, they increase the amount of time that is required to process returns, because sales associates must select among the duplicate receipts. Other complications that are related to data cleanup can occur if the duplicate receipts weren't a planned consequence. Therefore, we recommend that you use dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt numbers after a reset.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -85,3 +84,6 @@ public static Query defaultCTQuery()
 	return q;
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,11 @@
 
 title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
 description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2.
-author: meeramahabala
+author: ShellyBakke
 manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +16,11 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: meeram
+ms.author: smiller
 ms.search.validFrom: 2018-10-31 
 ms.dyn365.ops.version: 8.1
 ---
@@ -73,3 +71,6 @@ The bug must be reproducible in Dynamics AX 2012 R3. If it is reproducible and a
 ### How are binary hotfixes handled for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2?
 
 If a hotfix is needed for a part of the system where Microsoft does not provide the source code and it is not a security bug, the hotfix will not be provided.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

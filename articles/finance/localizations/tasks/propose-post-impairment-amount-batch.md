@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -53,3 +52,6 @@ This task walks you through proposing and posting the impairment amount by batch
     * Confirm that the correct fixed assets were created and that they have the correct impairment amount.  
 14. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

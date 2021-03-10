@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -113,3 +112,6 @@ If a flow is trying to handle approval for work items, but it isn't firing, then
  - Is the event subscription from Flow visible in the Business Events form?
 - Are the workflow configuration and the event subscription from Flow for the correct legal entity (company)?
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

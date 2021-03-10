@@ -18,7 +18,6 @@ ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -341,3 +340,6 @@ The transfer orders are created without using the **Delivery date control** capa
 #### Can I use a license plate having physical negative inventory on hand?
 
 The feature only supports positive physical on-hand quantities. Make sure that you have positive physical on-hand quantities at the warehouse and inventory status level before assigning license plates to a transfer order.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

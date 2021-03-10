@@ -18,7 +18,6 @@ ms.search.form: InventQuarantineOrder
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -187,3 +186,6 @@ For each disposition code that you define, you must select a disposition action.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,12 @@
 # required metadata
 
 title: Cloud deployment overview
-description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
+description: This topic describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -137,11 +136,11 @@ High availability for databases is supported through Azure SQL. For more informa
 
 ### Disaster recovery features
 Production environments are configured with Azure disaster recovery support that includes the following:
-- Azure SQL active-geo replication for primary databases, with a Recovery Point Estimate (RPO) of < 5 seconds. For more information, see [Compare geo-replication with failover groups](https://docs.microsoft.com/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups). 
+- Azure SQL active-geo replication is configured for the Finance and Operations database of the production environment. For more information about SQL replication, see [Compare geo-replication with failover groups](https://docs.microsoft.com/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview#compare-geo-replication-with-failover-groups). 
 - Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions. For more information, see [Azure Storage redundancy](https://docs.microsoft.com/azure/storage/common/storage-redundancy).
 - Same secondary region for the Azure SQL and Azure blog storage replication.  
 
-Only primary data stores are supported by replication. This means that some application components, such as Management Reporter, and Entity store, which use transformed data from the primary database, must be generated after the recovery site has been set up and the service has started. Customer code artifacts and recovered data stores are used to re-deploy the site, with a Recovery Time Objective (RTO) of 10 hours and a Recovery Point Objective of 5 seconds. For more information, see [Azure SQL Database Point in Time Restore](https://azure.microsoft.com/blog/azure-sql-database-point-in-time-restore/).
+Only primary data stores are supported by replication. The Financial reporting services and Entity store database use transformed data from the primary database and must be generated after the recovery site has been set up and the Finance and Operations service has started. 
 
 ## Service availability in Azure Regions
 Finance and Operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see the [Service description white paper](https://aka.ms/D365-Cloud-Service-Operations).
@@ -225,3 +224,6 @@ This will not affect any environments that have their data stored in the depreca
 This is due to the license expiring, which means that you no longer have the minimum required licenses to obtain an environment slot.  Please review your [subscription status](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview#how-can-i-find-the-subscription-status) and then reactivate the expired license to enable the redeployment.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

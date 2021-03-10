@@ -18,7 +18,6 @@ ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -128,3 +127,6 @@ This behavior is expected. Because requisitions aren't always approved, a quanti
 
 You can create trade agreements for any replies for a request for quotation (RFQ), regardless of whether they were accepted or rejected. For more information, see [Requests for quotation (RFQs) overview](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

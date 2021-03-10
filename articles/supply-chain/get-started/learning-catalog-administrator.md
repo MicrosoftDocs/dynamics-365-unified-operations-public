@@ -15,7 +15,6 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
@@ -88,3 +87,6 @@ The following catalog is organized from core knowledge to specific domains, and 
 | Content  | Description  | Format  |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------|
 | [Dynamics 365 Fundamentals](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Prove that you understand Microsoft Dynamics 365, the Power Platform, cloud concepts, licensing options, and deployment and release options. | Exam, cost varies by region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

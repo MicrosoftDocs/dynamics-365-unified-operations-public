@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -93,4 +92,7 @@ The following entities were used as the basis of the **Financial performance** P
 - Ledgers
 - ChartofAccounts
 
-These entities were used to create calculated measures in the data model. The calculated measures are used to calculate the key performance indicators (KPIs) and reports that are used in the content. By default, the content brings in data for the last three years and one future year. To include additional calculations on your reports and dashboard, you can modify the [Microsoft Excel workbook](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). This workbook is the default data model that was used to create the content.
+These entities were used to create calculated measures in the data model. The calculated measures are used to calculate the key performance indicators (KPIs) and reports that are used in the content. By default, the content brings in data for the last three years and one future year. To include additional calculations on your reports and dashboard, you can modify the [Microsoft Excel workbook](https://docs.microsoft.com/dynamics/s-e/). This workbook is the default data model that was used to create the content.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

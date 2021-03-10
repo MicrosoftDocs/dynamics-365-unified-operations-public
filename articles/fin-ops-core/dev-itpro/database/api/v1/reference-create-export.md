@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -77,3 +76,6 @@ POST /databasemovement/v1/export/project/12345/environment/5362377c-bc37-4f92-b3
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

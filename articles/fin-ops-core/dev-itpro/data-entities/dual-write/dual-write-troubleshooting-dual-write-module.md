@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshoot issues with the dual-write module in Finance and Operations apps
+title: Troubleshoot dual-write issues in Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues with the Dual-write module in Finance and Operations apps.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +28,7 @@ ms.search.validFrom: 2020-03-16
 
 ---
 
-# Troubleshoot issues with the dual-write module in Finance and Operations apps
+# Troubleshoot dual-write issues in Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
 
@@ -48,7 +47,7 @@ If you can't open the **Dual-write** page by selecting the **Dual Write** tile i
 
 **Required credentials to fix the issue:** The same user that setup dual-write.
 
-You might receive the following error message when you try to configure a new entity for dual-write. The only user that can create a map is the user who setup the dual-write connection.
+You might receive the following error message when you try to configure a new table for dual-write. The only user that can create a map is the user who setup the dual-write connection.
 
 *Response status code does not indicate success: 401 (Unauthorized)*
 
@@ -86,7 +85,7 @@ This error occurs when the linked Dataverse environment isn't available.
 
 To fix the issue, create a ticket for the Data Integration team. Attach the network trace so that the Data Integration team can mark the maps as **Not running** in the back end.
 
-## Error while trying to start an table mapping
+## Error while trying to start a table mapping
 
 You might receive an error like the following when you try to set that state of a mapping to **Running**:
 
@@ -95,4 +94,7 @@ You might receive an error like the following when you try to set that state of 
 The fix for this error depends on the cause of the error:
 
 + If the mapping has dependent mappings, then make sure to enable the dependent mappings of this table mapping.
-+ The mapping might be missing source or destination fields. If a field in the Finance and Operations app is missing, then follow the steps in the section [Missing entity fields issue on maps](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). If a field in Dataverse is missing, then click **Refresh tables** button on the mapping so that the fields are automatically populated back into the mapping.
++ The mapping might be missing source or destination columns. If a column in the Finance and Operations app is missing, then follow the steps in the section [Missing table columns issue on maps](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). If a column in Dataverse is missing, then click **Refresh tables** button on the mapping so that the columns are automatically populated back into the mapping.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

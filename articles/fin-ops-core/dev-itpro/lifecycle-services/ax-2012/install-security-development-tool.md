@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/26/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -80,3 +79,6 @@ This section lists the procedures required to install and configure the Security
     |-------------------------------|------------------------------------|
     | SysSecRoleEntryPointDeveloper | SysContextMenu (AOT Add-Ins)       |
     | SysSecRoleEntryPoint          | System AdministrationSetupSecurity |
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

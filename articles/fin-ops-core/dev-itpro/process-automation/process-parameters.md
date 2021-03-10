@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -298,3 +297,6 @@ implements ProcessScheduleIExplodeOccurrences
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

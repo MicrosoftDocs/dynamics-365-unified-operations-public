@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -747,3 +746,6 @@ select * from custTable
     where custTable.accountNum > "100";
 info("AccountNum: " + custTable.AccountNum);
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

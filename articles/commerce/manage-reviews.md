@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -136,3 +135,6 @@ To view ratings and reviews trends in Commerce site builder, follow these steps.
 [Configure ratings and reviews](configure-ratings-reviews.md)
 
 [Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

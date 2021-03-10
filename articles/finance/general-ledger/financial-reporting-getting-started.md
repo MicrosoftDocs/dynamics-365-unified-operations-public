@@ -18,7 +18,6 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
@@ -53,6 +52,8 @@ To create and generate financial reports for a legal entity, you must set up the
 -   Ledger
 -   Chart of accounts
 -   Currency
+-   Post a transaction to at least one account
+-   MainAccount is listed in the Selected column in **General Ledger > Ledger Setup > Financial Reporting Setup**
 
 ## Granting security access to Financial Reporting
 The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles. The following sections list these privileges and duties, together with the associated roles.
@@ -178,3 +179,6 @@ Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but ar
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
 - [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

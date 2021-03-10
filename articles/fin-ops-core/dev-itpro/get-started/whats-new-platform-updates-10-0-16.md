@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -31,7 +30,6 @@ ms.dyn365.ops.version: 10.0.16
 # Platform updates for version 10.0.16 of Finance and Operations apps (February 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic lists the features that are included in the platform updates for version 10.0.16 of Finance and Operations apps. This version has a build number of 7.0.5860 and is available on the following schedule:
 
@@ -89,3 +87,6 @@ The [Removed or deprecated platform features](removed-deprecated-features-platfo
 A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

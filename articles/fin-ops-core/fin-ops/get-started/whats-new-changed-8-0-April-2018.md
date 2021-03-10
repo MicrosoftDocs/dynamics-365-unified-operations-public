@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: b265d51c-52d1-45c5-b578-64c5242c592a
@@ -107,9 +105,9 @@ Organizations can add custom fields to tailor their application to their busines
 
 ## Integration 
 
-### Integration with Common Data Service (CDS)
+### Integration with Dataverse
 
-Dynamics 365 for Finance and Operations has enabled cross-application business processes between Finance and Operations and Dynamics 365 for Field Service and between Finance and Operations and Dynamics 365 for Project Service Automation. These scenarios are configured using extensible Data integrator templates and CDS to enable the cross-application scenarios.
+Dynamics 365 for Finance and Operations has enabled cross-application business processes between Finance and Operations and Dynamics 365 for Field Service and between Finance and Operations and Dynamics 365 for Project Service Automation. These scenarios are configured using extensible Data integrator templates and Dataverse to enable the cross-application scenarios.
 
 ### Integration with Dynamics 365 for Field Service
 
@@ -196,3 +194,6 @@ Investments address the European privacy law's requirements. Go to the [Trust Ce
 ### Accessibility enhancements
 
 Go to the [Trust Center](https://www.microsoft.com/trustcenter/compliance/accessibility) to learn about our industry-leading accessibility standards.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

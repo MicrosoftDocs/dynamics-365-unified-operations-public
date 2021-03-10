@@ -18,7 +18,6 @@ ms.search.form: ProjParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -88,3 +87,6 @@ Also, you can enable the **Start time** and **End time** fields on the **Project
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

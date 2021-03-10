@@ -17,7 +17,6 @@ ms.search.form: ProdTableListPage, ProdParmRelease, SrsReportViewerForm, ProdSet
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -44,3 +43,6 @@ This procedure shows how to release a production order. The demo data company us
 6. Click OK.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

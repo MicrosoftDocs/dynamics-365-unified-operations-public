@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -57,3 +56,6 @@ When you right-click some higher-level elements, such as tables, the **View Refe
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

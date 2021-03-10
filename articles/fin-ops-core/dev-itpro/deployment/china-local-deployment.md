@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -79,7 +78,7 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   [Embedded Power Apps](../../fin-ops/get-started/embed-power-apps.md) and connectivity to Microsoft Power Apps and Microsoft Power Automate will be unavailable.
 
-    -   [Data integration using Common Data Service overview](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
+    -   [Data integration using Dataverse overview](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
     
   > [!NOTE]
   > The Lifecycle Services URL for implementations operated by 21Vianet in China is lcs.dynamics.cn.
@@ -104,3 +103,6 @@ Due to certain technical dependencies, the following features listed will not be
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
 - [Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-welcome)
 - [Business applications availability in China – operated by 21Vianet in China](https://docs.microsoft.com/power-platform/admin/business-applications-availability-china)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

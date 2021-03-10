@@ -18,7 +18,6 @@ ms.search.form: LedgerParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272683
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
@@ -102,3 +101,6 @@ The system behavior is the same, regardless of whether the **Correction** option
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

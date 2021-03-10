@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -68,3 +67,6 @@ The resulting numeric value.
 ## Additional resources
 
 [Mathematical functions](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

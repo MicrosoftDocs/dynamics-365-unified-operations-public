@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ The LocalAgent needs to communicate with Azure resources. As a result, the follo
 - dc.services.visualstudio.com
 - uswelcs1lcm.blob.core.windows.net
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

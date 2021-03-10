@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -61,7 +60,7 @@ Complete the following procedures in [Business document management overview](er-
 5. Select **OK** to create the new template.
 
     > [!NOTE]
-    > If you haven't yet signed in to Office Online, you're [directed to the Office 365 sign-in page](er-business-document-management.md#i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page). To return to your Finance environment, select the **Back** button in your browser.
+    > If you haven't yet signed in to Office Online, you're [directed to the Office 365 sign-in page](er-business-document-management.md#frequently-asked-questions). To return to your Finance environment, select the **Back** button in your browser.
 
     The new template is opened for editing in the Excel Online embedded control on the template editor page.
 
@@ -111,3 +110,6 @@ Complete the following procedures in [Business document management overview](er-
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Business document management overview](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

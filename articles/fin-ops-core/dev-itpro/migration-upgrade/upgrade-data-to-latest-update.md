@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -413,3 +412,6 @@ After upgrade, values in encrypted fields in the database will be unreadable. Ho
 ## Additional resources
 
 [Process for moving to the latest update of Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

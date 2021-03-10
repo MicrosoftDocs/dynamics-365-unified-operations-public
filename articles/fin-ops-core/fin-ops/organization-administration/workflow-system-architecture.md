@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56351
 ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
@@ -66,3 +64,6 @@ Developers can create workflows for the objects that they have added. The follow
 | 4    | Both                     | This same messaging pattern is repeated, as required, throughout the lifecycle of the workflow instance. |
 
 The workflow architecture helps provide a reliable and durable messaging system, and also helps guarantee that the state of the workflow is always synchronized with the state of the application. If an unexpected hardware or software failure occurs, the workflow instance state is returned to its last known saved point, and the message stays in the queue. Therefore, from an architecture perspective, the recovery model is to fix the problem and resume the workflow.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

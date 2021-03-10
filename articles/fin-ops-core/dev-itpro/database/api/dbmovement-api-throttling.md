@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,3 +50,6 @@ If you exceed the limit, you won't be able to start a new operation and will rec
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

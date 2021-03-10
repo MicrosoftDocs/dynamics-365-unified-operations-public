@@ -17,7 +17,6 @@ ms.search.form: LeanProductionFlowModel
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -48,3 +47,6 @@ Production flow models describe how the capacity of lean manufacturing work cell
 8. In the Capacity shortage reaction field, select an option.
     * The options include:   Postpone - Postponing the full demand of the scheduling event on the next available production day, with available throughput. Cancel - End the automatic planning for the scheduling event and leave the related jobs unplanned.   Add to requested day - Plan the requested jobs for the requested period. This overloads the cell for this day and requires the planner to review and to a manual interaction .   Distribute to available periods - Distribute the different jobs of the scheduling event to all available production days, beginning from the first available day. The minimum distribution quantity is the kanban job quantity. The distribution assigns the minimum planning quantity (kanban quantity) to every day with enough available throughput.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

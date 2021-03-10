@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -329,7 +328,7 @@ You should expect data requests to come to your company. You can categorize the 
 + Applicants
 + Competitors
 
-Personal data might also be contained in other roles that aren't listed here. Pages used to enter, view or edit personal data have been provided in worksheets for most roles in the preceding list. You can view or download the spreadsheets from the [Reference documents for finding and managing personal data](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/referencedocumentspersonaldata) page on CustomerSource. 
+Personal data might also be contained in other roles that aren't listed here. Pages used to enter, view or edit personal data have been provided in worksheets for most roles in the preceding list. You can view or download the spreadsheets from the [Reference documents for finding and managing personal data](https://docs.microsoft.com/dynamics/s-e/) page on CustomerSource. 
 
 ## Detailed inventory
 
@@ -383,3 +382,6 @@ When you've completed your entries in the system parameters, the link to your or
 + This documentation is provided for informational purposes only, and should not be relied upon as legal advice or to determine how the GDPR might apply to you and your organization. We encourage you to work with a legally qualified professional to discuss the GDPR, how it applies specifically to your organization, and how to best ensure compliance.
 + MICROSOFT MAKES NO WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY AS TO THE INFORMATION PROVIDED IN THIS PRESENTATION. This documentation is provided "as is." Information and views expressed in this documentation, including URL and other Internet website references, may change without notice.
 + This documentation does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this presentation for your internal, reference purposes only.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -52,3 +51,6 @@ The **Rebuild financial dimensions** option is set to **No** by default, as it i
 [Define financial dimensions](../../../finance/general-ledger/tasks/define-financial-dimensions.md)
 
 [Maintenance mode](../sysadmin/maintenance-mode.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -107,3 +106,6 @@ The tenant administrator of your Azure AD tenant will need to complete the follo
 7. **Save** the settings.
 
 Now you can start using the **Provision Azure AD B2B user** workflow task in your workflows to automatically export B2B users to Azure AD.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

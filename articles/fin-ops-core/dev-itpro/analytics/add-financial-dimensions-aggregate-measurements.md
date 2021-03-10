@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -182,3 +181,6 @@ We have modeled two dimension references for LedgerActivityMeaureGroup. The firs
 The second reference, OffsetDimensionCombination, is another reference to the same dimension. We have reused the DimensionCombination aggregate dimension and given it a new name. In the second case, we can join by using the **OffsetLedgerDimension** field.
 
 At runtime, the system will expand both these dimensions with additional fields. Therefore, you can report on primary and offset dimension fields.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

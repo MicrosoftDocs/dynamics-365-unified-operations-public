@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -263,3 +262,6 @@ static void JobDuplicKeyException44Job(Args _args)
     ---- .insert() successful.
 */
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

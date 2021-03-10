@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -604,3 +603,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Refactor whsWorkExecuteDisplayReprintLabel to ProcessGuide framework
 - Retail channel: Support BankDropOperationRequest
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

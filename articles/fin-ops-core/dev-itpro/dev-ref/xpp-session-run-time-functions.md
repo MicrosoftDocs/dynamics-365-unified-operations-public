@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -360,3 +359,6 @@ static void setPrefixExample(Args _arg)
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

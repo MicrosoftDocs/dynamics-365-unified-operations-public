@@ -18,7 +18,6 @@ ms.search.form: GST/HST, GIFT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -113,3 +112,6 @@ You can generate a Goods and Services Tax or Harmonized Sales Tax (GST/HST) Inte
    For easy identification, use the format GSTYYYYMMDD.tax (GST, followed by the reporting date, with a .tax extension) as in this example: GST20100728.tax.
 
 4. Click **OK** to export the GIFT file to the specified path.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

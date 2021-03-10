@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -172,3 +171,6 @@ EFFET JURIDIQUE. Le présent contrat décrit certains droits juridiques. Vous
 pourriez avoir d’autres droits prévus par les lois de votre pays. Le présent
 contrat ne modifie pas les droits que vous confèrent les lois de votre pays si
 celles-ci ne le permettent pas.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

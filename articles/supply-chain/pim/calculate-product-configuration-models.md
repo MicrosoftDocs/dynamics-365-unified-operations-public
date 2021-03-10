@@ -18,7 +18,6 @@ ms.search.form: PCConstraintEditor, PCProductConfigurationModelDetails, PCRuntim
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19191
 ms.assetid: 8993f9a1-d1c0-49f5-afd3-5e1077ded0fe
@@ -109,3 +108,6 @@ Calculations aren't included in the validation. You must test the product config
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

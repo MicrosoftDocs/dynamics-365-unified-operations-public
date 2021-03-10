@@ -17,7 +17,6 @@ ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
 ms.search.region: Global
@@ -103,3 +102,6 @@ earlier.
 -   To set the **Quantity** and **Allow release of partially released orders**
     parameters for sales orders, click **Warehouse management** \> **Release to
     warehouse** \> **Automatic release of sales orders**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

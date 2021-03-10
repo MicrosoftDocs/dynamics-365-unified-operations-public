@@ -18,13 +18,12 @@ ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObject
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -122,3 +121,6 @@ On this FastTab, you can add or remove maintenance rounds, which are related to 
 ## Financial dimensions
 
 You can select financial dimensions for the asset.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

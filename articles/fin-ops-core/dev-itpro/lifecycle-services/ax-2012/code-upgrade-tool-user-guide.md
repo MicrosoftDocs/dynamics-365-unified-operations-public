@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -41,3 +40,6 @@ The Code Upgrade Service has been deprecated. Use the Upgrade analysis tool. For
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

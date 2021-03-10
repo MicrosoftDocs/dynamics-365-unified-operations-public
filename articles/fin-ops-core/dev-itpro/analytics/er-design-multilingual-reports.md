@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -215,3 +214,6 @@ As described earlier in this topic, the **Label** and **Description** attributes
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Electronic Reporting functions](er-formula-language.md#functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

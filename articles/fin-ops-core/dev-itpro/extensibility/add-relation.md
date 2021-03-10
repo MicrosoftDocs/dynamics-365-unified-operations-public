@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -58,3 +57,6 @@ The following illustration shows the new relation.
 
 **Solution** - Navigation methods are not supported at this time.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

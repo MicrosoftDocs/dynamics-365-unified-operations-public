@@ -16,7 +16,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Eastern Europe
@@ -115,3 +114,6 @@ Follow these steps to create deployable packages that contain Commerce component
 
 3. Run **msbuild** for the Retail SDK to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

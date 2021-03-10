@@ -17,7 +17,6 @@ ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefini
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 
 ms.assetid: 
@@ -101,3 +100,6 @@ To learn more about how to use warehouse template to copy the configuration of a
 ## Related topic
 
 [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

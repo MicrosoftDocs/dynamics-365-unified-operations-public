@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
@@ -135,3 +134,6 @@ Download and install the Finance and Operations mobile app:
     -   By physical inventory (This view represents the total amount.)
     -   By physical reserved (This view represents the reserved amount.)
     -   By available physical (This view represents the available amount that has no reservations.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

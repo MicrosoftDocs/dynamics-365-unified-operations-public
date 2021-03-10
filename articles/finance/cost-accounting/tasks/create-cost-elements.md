@@ -17,7 +17,6 @@ ms.search.form: CAMDimension, CAMAXMainAccountDimensionMemberProviderConfigurati
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -61,3 +60,6 @@ There are several ways to create cost elements in Cost accounting. This procedur
 1. Click View dimension members.
     * View the imported ledger accounts as cost elements in your business that costs can flow to.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

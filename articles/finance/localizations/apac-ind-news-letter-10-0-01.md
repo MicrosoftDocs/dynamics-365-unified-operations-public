@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed for India GST Localization in 10.0.01 (April 2019)
+title: What's new or changed for India GST in 10.0.01 (April 2019)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.01.
 author: prabhatb
 manager: Wangcheng
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -28,7 +27,7 @@ ms.dyn365.ops.version: 10.0.1
 
 ---
 
-# What's new or changed for  India GST Localization in 10.0.01 (April 2019)
+# What's new or changed for  India GST in 10.0.01 (April 2019)
 
 [!include [banner](../includes/banner.md)]
 
@@ -86,3 +85,6 @@ You can create a non-GST item that is the default for **Tax information** in tax
 - GSTIN of e-commerce operator is always blank in GSTR1.
 - Place of supply is incorrect in GSTR2.
 - Project expense can't be posted when there is a sales tax group and an item sales tax group.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

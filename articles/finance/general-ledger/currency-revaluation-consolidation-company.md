@@ -18,7 +18,6 @@ ms.search.form: LedgerExchAdjHist
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62183
 ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
@@ -94,3 +93,6 @@ You will see additional transactions for the reporting currency amounts.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

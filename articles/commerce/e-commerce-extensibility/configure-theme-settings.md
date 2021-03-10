@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -103,3 +102,6 @@ Default grid breakpoint settings can also be set in the theme.settings.json file
 [Extend a theme from a base theme](extend-theme.md)
 
 [Add custom resources to your customization code](add-custom-resources.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

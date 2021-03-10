@@ -17,7 +17,6 @@ ms.search.form: RAssetTable, RAssetComponents
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -78,3 +77,6 @@ As a rule, fixed asset counting is done before the annual reporting. To register
     - **INV-1** is used to register the results of counting the company's fixed assets. During the counting process, the commission examines the fixed assets and fixes them in unified primary document form INV-1. 
     - **INV-1a** - is used to to register the results of counting the company's intangible assets.
     - **Collation statement** – INV-18 is a unified form that is used to document discrepancies between inventory results and accounting data on both fixed assets (FP) and intangible assets (NMA).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: BudgetReservation_PSN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -60,3 +59,6 @@ A general budget reservation is relieved differently, depending on the document 
 - If the document is a purchase order, the reservation is relieved when the purchase order is *confirmed*.
 - If the document is an invoice, and it doesn't reference a purchase order or purchase agreement, the general budget reservation is relieved when the invoice is *posted*.
 - If the document is a purchase requisition, the reservation is relieved when the purchase requisition is *approved*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

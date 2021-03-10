@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -183,7 +182,7 @@ This property can only be added through the design object.
 icon: string (optional) 
 
 Name of the icon that is displayed in the pagelink control.
-Here is a [list of available icons](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/AXSymbolFont).
+Here is a [list of available icons](https://docs.microsoft.com/dynamics/s-e/).
 
 
 ### justifyItems
@@ -267,3 +266,6 @@ The type of the control as a string.
 > Inherited from [Design](view-model-ipage-idesign.md).[type](view-model-ipage-idesign.md#type)
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,8 +33,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Promo banner modules are used to show inline informational messages on a page. They can be used to show site-wide promotions that appear on all pages of an e-Commerce site. 
 
@@ -100,3 +97,6 @@ To add a promo banner module to a page and set the required properties, follow t
 [Content block module](add-hero-module.md)
 
 [Video player module](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

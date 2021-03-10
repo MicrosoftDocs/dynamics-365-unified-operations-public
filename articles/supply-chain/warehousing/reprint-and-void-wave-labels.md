@@ -18,7 +18,6 @@ ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWa
 audience: Application User
 # ms.devlang:
 ms.reviewer: PJacobse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
@@ -226,3 +225,6 @@ Work exceptions control the behavior of short picking. Follow these steps to set
 1. Select **Short pick**.
 1. Select the work exception code that you created for this scenario.
 1. If you selected the correct exception, the **Void and reprint** check box should be available. Select this box and confirm. When confirmed, the label roll sequence identified by the **Label build ID** field is recalculated based on the changed work line quantity. It's then reprinted on the specified printer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

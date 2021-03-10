@@ -17,7 +17,6 @@ ms.search.form: KanbanRules, KanbanRuleDuplicate, InventItemIdLookupSimple
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -46,3 +45,6 @@ This procedure focuses on creating a duplicate of an existing kanban rule. This 
 3. Click OK.
     * Note that a duplicate of kanban rule 000017 is created.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

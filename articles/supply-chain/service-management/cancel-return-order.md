@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -53,3 +52,6 @@ You can cancel a return order, instead of deleting it, when you want to save a r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

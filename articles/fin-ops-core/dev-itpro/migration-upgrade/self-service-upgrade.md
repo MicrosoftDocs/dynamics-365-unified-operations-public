@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -235,3 +234,6 @@ This DVT error is intermittent and can be resolved by using the **Resume** butto
 **Application configuration sync failed. Call to TTSCOMMIT without first calling TTSBEGIN.**
 
 This TTSCOMMIT error is intermittent and can be resolved by using the **Resume** button for your data upgrade package. When you select **Resume**, the process resumes at the same step. (This issue is fixed in PU 21.)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

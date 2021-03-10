@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -90,3 +89,6 @@ url: string (optional)
 If provided, this link is directly opened.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
@@ -71,7 +70,7 @@ Changes will be made to Microsoft Dynamics 365 Finance, Microsoft Dynamics Lifec
 - The Active Directory tenant administrator will have to authorize the AI Builder application to access the data lake.
 - The feature will be turned on in Dynamics 365.
 
-Familiarity with the process of creating and managing resources in Azure, Common Data Service, and LCS will be helpful as you complete this process.
+Familiarity with the process of creating and managing resources in Azure, Microsoft Dataverse, and LCS will be helpful as you complete this process.
 
 ## Configure Finance insights
 
@@ -134,3 +133,6 @@ Please send an email to [Customer payment insights (Preview)](mailto:fiap@micros
 ## Privacy notice
 
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

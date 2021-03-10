@@ -19,3 +19,4 @@ PRODUCTCOLORID | >> | msdyn_productcolor.msdyn_productcolorname |
 PRODUCTCONFIGURATIONID | >> | msdyn_productconfiguration.msdyn_productconfiguration | 
 PRODUCTSIZEID | >> | msdyn_productsize.msdyn_productsize | 
 PRODUCTSTYLEID | >> | msdyn_productstyle.msdyn_productstyle | 
+ISTOCKEDPRODUCT | >> | msdyn_isstockedproduct |

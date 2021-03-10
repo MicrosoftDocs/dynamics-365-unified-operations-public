@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56381
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
@@ -78,3 +76,6 @@ There are several benefits of using the workflow system in your organization:
 + [Configure parallel branches in a workflow](configure-parallel-branch-workflow.md)
 + [Configure line-item workflows](configure-line-item-workflow.md)
 + [Workflow FAQ](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

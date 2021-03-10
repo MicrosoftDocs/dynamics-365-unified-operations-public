@@ -2,13 +2,12 @@
 # required metadata 
  
 title: ER Design a configuration for generating reports in OPENXML format (November 2016)
-description: This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. 
+description: This topic describes how to create a new Electronic reporting configuration that contains a template for generating electronic documents in OPENXML format. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -153,3 +152,6 @@ To complete these steps, you must first complete the steps in the "Create a conf
 17. In the **Bank account** field, type `GBSI OPER`.
 18. Select **OK**, then select **OK** again. Review the created worksheet, including details of payment lines as well as totals for each currency code used in this payment message.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

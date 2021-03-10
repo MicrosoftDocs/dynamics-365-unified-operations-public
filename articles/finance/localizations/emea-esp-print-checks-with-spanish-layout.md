@@ -18,7 +18,6 @@ ms.search.form: BankChequeLayout, LedgerJournalTransVendPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274753
 ms.search.region: Spain
@@ -43,3 +42,6 @@ To use the checks functionality together with the Spanish layout, you should con
 
 To generate the checks by using the Spanish layout, basic Payment journal (vendors) functionality is used. For more information, see [Vendor payment overview](../cash-bank-management/tasks/vendor-payment-overview.md). After you run the Generate payments function and select all required parameters as described in this topic, the checks are generated. If the currency on the payment journal line differs from the currency of the bank account, you can still generate a check if the check layout is set up to use other currencies.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

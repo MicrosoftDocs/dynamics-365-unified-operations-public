@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -85,3 +84,6 @@ GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
 [![Registering a new app in the Azure portal](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
 
 Azure AD assigns a unique application ID (client ID) to your app, and you're taken to the **Overview** page for your app. To add more capabilities to your app, you can select other configuration options, such as options for branding, and for certificates and secrets.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

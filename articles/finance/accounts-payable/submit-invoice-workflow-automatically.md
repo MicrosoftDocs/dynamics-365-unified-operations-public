@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Submit invoices to the workflow system and match product receipt lines (preview)
+title: Submit invoices to the workflow system and match product receipt lines
 description: This topic explains the process of submitting vendor invoices to the workflow system and automatically matching posted product receipt lines to vendor invoices.
 author: abruer
 manager: AnnBe
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
@@ -29,10 +28,9 @@ ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Submit invoices to the workflow system and match product receipt lines (preview)
+# Submit invoices to the workflow system and match product receipt lines
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains the process of submitting vendor invoices to the workflow system and automatically matching posted product receipt lines to vendor invoices.
 
@@ -52,10 +50,13 @@ The process will run until the matched product receipt quantity equals the invoi
 
 Invoice lines that have a three-way matching policy, where the matched receipt quantity is less than the invoice quantity, will be included in the automated match-to-product-receipt process.
 
-To view the **Last match** status for invoices that aren't part of the automated submit-to-workflow process, open the invoice from the **Vendor invoices** page. When you view the invoice, the matching validation information is updated.
+To view the **Last match** status for invoices that aren't part of the automated submit-to-workflow process, open the invoice from the **Vendor invoices** page. When you view the invoice, the matching validation information is updated. The **Last match** status can be updated automatically using the **Validate invoice matching** background task. You can configure the process of automatically updating the **Last match** status on the **Background processes** tab of the **Process automations** page (**System adminstration\> Setup\> Process automations**).
 
 An invoice line will be excluded from the automated processing if any of the following conditions are met:
 
 - The **Automated receipt match status** value of the invoice line is **Failed**.
 - The invoice is being used.
 - The invoice is in the workflow system.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

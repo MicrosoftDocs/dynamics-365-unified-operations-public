@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
 
 # optional metadata 
@@ -17,7 +16,6 @@ ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -59,3 +57,6 @@ The Immigration Reform and Control Act requires US employers to verify the emplo
 22. In the Document number field, enter or select a value.
 23. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

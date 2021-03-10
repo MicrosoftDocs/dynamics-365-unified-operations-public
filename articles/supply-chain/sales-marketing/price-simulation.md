@@ -18,7 +18,6 @@ ms.search.form: SalesQuotationPriceSimulation, SalesQuotationsTableLookup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
@@ -151,3 +150,6 @@ The price simulation affects only the line that it's applied to and reduces the 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

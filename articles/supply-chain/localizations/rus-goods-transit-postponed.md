@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -245,3 +244,6 @@ The following ledger transactions are posted:
   - **Debit**: Cost of goods sold, invoiced; **Credit**: Sales order, Goods shipped
   - **Debit**: Payment offset account (Sales tax); **Credit**: Shipped items tax
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

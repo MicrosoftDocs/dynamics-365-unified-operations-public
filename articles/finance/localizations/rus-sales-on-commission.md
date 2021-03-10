@@ -16,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -252,3 +251,6 @@ Find more details in the following topics:
 
 - [Transactions through intermediary](rus-transactions-through-intermediary.md) 
 - [Purchases on commission](rus-purchases-on-commission.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope:  Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -62,3 +61,6 @@ For more information, see [Loyalty overview](../../retail/set-up-customer-loyalt
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
 [Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

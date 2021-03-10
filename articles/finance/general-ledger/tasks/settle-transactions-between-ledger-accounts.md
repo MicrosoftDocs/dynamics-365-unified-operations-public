@@ -17,7 +17,6 @@ ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBa
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ This procedure shows how to settle transactions between ledger accounts and canc
 7. Click Ledger settlements.
 8. In the list, mark the selected row.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

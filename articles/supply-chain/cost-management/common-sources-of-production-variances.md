@@ -18,7 +18,6 @@ ms.search.form: InventCostTrans, ProdCalcVarianceTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79753
 ms.assetid: 14ac7db4-fb40-43c1-bb0d-1d51fc91d24f
@@ -67,3 +66,6 @@ Here are some typical sources of a **production substitution** variance:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

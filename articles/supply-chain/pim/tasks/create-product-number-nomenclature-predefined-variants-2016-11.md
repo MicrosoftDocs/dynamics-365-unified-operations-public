@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResN
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -61,3 +60,6 @@ This topic explains how to set up a product number nomenclature for predefined p
 5. In the **Product variant number nomenclature** field, enter or select a value.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

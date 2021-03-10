@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 54cfeac5-e977-4c02-8e7a-4ddb4b336713
@@ -119,3 +117,6 @@ public class abFormEvent
         }
     }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Brazil
@@ -92,3 +91,6 @@ Use this procedure to create one or more fiscal establishments for a legal entit
 58. Close the page.
 59. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

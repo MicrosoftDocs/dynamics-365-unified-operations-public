@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -74,3 +73,6 @@ For more information about how to use this function, see the [ER Use data of for
 ## Additional resources
 
 [Data collection functions](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

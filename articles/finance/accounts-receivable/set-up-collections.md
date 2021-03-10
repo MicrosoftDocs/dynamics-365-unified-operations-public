@@ -18,7 +18,6 @@ ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14031
 ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
@@ -120,3 +119,6 @@ For more information, see the following topics:
 
  - [Review collections information](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

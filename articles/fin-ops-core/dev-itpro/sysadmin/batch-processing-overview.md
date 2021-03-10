@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ Administrators and Batch managers can perform common tasks including creating an
 -  [Clean up the batch job history](batch-history-cleanup.md)
 -  [Abort an executing batch job](batch-abort.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

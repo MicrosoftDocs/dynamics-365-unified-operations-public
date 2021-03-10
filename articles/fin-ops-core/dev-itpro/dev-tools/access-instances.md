@@ -2,13 +2,12 @@
 # required metadata
 
 title: Deploy and access development environments
-description: This topic describes how to access development instances, configure local development VMs, and find important configuration settings for developers and administrators.
+description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
 manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -270,3 +269,6 @@ To restart the local runtime and redeploy all the packages, follow these steps.
 
 This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

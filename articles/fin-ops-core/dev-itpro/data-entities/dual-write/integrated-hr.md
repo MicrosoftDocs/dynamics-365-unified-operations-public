@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -87,3 +86,6 @@ HR data includes information about employees and contractors, positions, and job
 [!include [position worker assignment](includes/PositionWorkerAssignment-cdm-positionworkerassignmentmaps.md)]
 
 [!include [worker](includes/Worker-cdm-workers.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

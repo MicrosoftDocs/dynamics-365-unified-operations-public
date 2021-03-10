@@ -18,7 +18,6 @@ ms.search.form: JmgRegistration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70103
 ms.assetid: 52ba1cdd-767f-4edd-896f-61adce8479d3
@@ -66,3 +65,6 @@ Workers can make various types of registrations in manufacturing execution for w
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14262
 ms.assetid: af95c48a-afd1-476c-978d-e34995100be4
@@ -145,3 +144,6 @@ On July 20, April creates a final payment for 200.00. No discount is taken, beca
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

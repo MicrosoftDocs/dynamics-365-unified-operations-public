@@ -18,7 +18,6 @@ ms.search.form: SMAServiceOrderTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -50,3 +49,6 @@ View and modify the list of stage reasons for a service order. Use stage reasons
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -97,3 +96,6 @@ To update challan information, select **Functions** \> **Challan information**.
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
 2. Select the settlement period, and then select **Sales tax payments**.
 3. Verify that the settlement for the selected registration for the period is successfully posted.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,7 +18,6 @@ ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -112,3 +111,6 @@ The following table lists the forms that support the Fulfill service contracts b
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

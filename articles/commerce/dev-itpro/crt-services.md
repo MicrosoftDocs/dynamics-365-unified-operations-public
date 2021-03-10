@@ -46,6 +46,9 @@ There are three main layers in CRT:
 
 All CRT customization for business logic can be done in Services, Workflow or Data Access layers, other core layers that are required for CRT to work are runtime, authentication, and data access managers and you should avoid any customization on these layers.
 
+> [!NOTE]
+> Detailed information about all CRT classes can be found in the Retail SDK, which is found at RetailSDK\Documents\CommerceRuntimeMessages.chm.
+
 ## Overall flow
 The overall flow looks like this:
 
@@ -93,197 +96,10 @@ For more information about each service, see the CRT request/response document i
 | TaxService                 | This service calculates the sales tax for the current order. You can use sales tax information provided, or from a third-party sales tax service. |
 | TotalingService            | This service calculates the totals on the sales transactions and sales lines. |
 
-For extension scenarios, you can override any of the requests in the service class. For example, to change the customer search flow, extend the **CustomersSearchServiceRequest** request from the **CustomerService** service.
+For extension scenarios, you can add CRT triggers, create new services, and override any of the requests in the service class. For information about how to extend and understand CRT extension patterns, see [Commerce runtime (CRT) extensibility](commerce-runtime-extensibility.md).
 
 > [!NOTE]
 > CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
-
-## Sample service class implementation
-
-```C#
-public class MyService : IRequestHandler
-{
-    /// <summary>
-    /// Gets the collection of supported request types by this handler.
-    /// </summary>
-
-    public IEnumerable<Type> SupportedRequestTypes
-    {
-        get
-        {
-            return new[]
-            {
-                typeof(MyRequest),
-                typeof(MyRequest1),
-                typeof(MyRequest2),
-            };
-        }
-    }
-
-    /// <summary>
-    /// Entry point to my service. Takes a service request and returns the result
-    /// of the request execution.
-    /// </summary>
-
-    /// <param name="request">The my service request to execute.</param>
-
-    /// <returns>Result of executing request, or null object for void operations.</returns>
-
-    public Response Execute(Request request)
-    {
-        if (request == null)
-        {
-            throw new ArgumentNullException("request");
-        }
-        Type requestType = request.GetType();
-        Response response;
-        if (requestType == typeof(MyRequest))
-        {
-            response = MyRequestCustomMethod((MyRequest)request);
-        }
-        else if (requestType == typeof(MyRequest1))
-        {
-            response = MyRequest1CustomMethod ((MyRequest1)request);
-        }
-        else if (requestType == typeof(MyRequest2))
-        {
-            response = MyRequest2CustomMethod ((MyRequest2)request);
-        }
-        else
-        {
-            throw new NotSupportedException(string.Format(CultureInfo.InvariantCulture, "Request '{0}' is not supported.", request.GetType().ToString()));
-        }
-        return response;
-    }
-    private static MyResponse MyRequestCustomMethod (MyRequest request)
-    {
-        return myresponse;
-    }
-}
-```
-
-
-## How to execute the base handler in extension
-
-### NotHandledResponse()
-
-If the overridden logic executes the base handler for some scenarios, this can achieved by returning **NotHandledResponse().** If the NotHandledResponse is returned, the CRT framework will use the extension that is requesting to execute the base or out of band logic, so the CRT framework will execute the out of band handler.
-
-**NotHandledResponse** can be used in scenarios where the extension executes the base handler logic. For example, if the overridden request executes the base handler logic then it can return the NotHandledResponse for the base handler to execute. Or if the extension executes custom logic and base logic, then the extension code can return NotHandledResponse after executing the custom logic.
-
-```C#
-  private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizationCustomReceiptFieldServiceRequest request)
-        {
-            ThrowIf.Null(request.SalesOrder, nameof(request.SalesOrder));
-
-            string receiptFieldName = request.CustomReceiptField;
-            string receiptFieldValue = string.Empty;
-
-            if (request.SalesOrder.TaxCalculationType == TaxCalculationType.GTE)
-            {
-                switch (receiptFieldName)
-                {
-                    case "Sample":
-                        receiptFieldValue = this.GetGstRegistrationNumber(request);
-                        break;
-                    default:
-                        return new NotHandledResponse();
-                }
-            }
-            else
-            {
-                return new NotHandledResponse();
-            }
-
-            int receiptFieldLength = request.ReceiptItemInfo == null ? 0 : request.ReceiptItemInfo.Length;
-            var returnValue = ReceiptStringUtils.WrapString(receiptFieldValue, receiptFieldLength);
-
-            return new GetCustomReceiptFieldServiceResponse(returnValue);
-        }
-
-```
-
-## How to execute extension request for a channel type
-
-If an extension request needs to be executed only for a certain channel type, such as execute the request for online channel not for the Retail channel (physical store), then before executing the request, check the channel type and execute the custom logic executed or execute the base logic by calling the NotHandledResponse().
-
-```C#
-if (requestContext.GetChannel().OrgUnitType == RetailChannelType.RetailStore)
-{
-    // run your extension code here.
-}
-else
-{
-    return new NotHandledResponse();
-}
-```
-
-## Extension pattern for CRT
-
-- **Create a new service class, and implement one or more requests/responses** – Use this approach to create a new feature.
-- **Override the core request/response** – Use this approach to modify the standard workflow or business logic.
-- **Add a pre-trigger or post-trigger for any request/response** – Use this approach to add business logic or add custom fields, and so on.
-
-> [!NOTE]
-> It doesn't matter whether you create a data access request, a workflow request, or a service request. Everything in CRT is a request/response. You write the logic that is required in the request/response. Although the requests are classified into different types for logical reasons, everything is the same from the framework perspective.
-
-The following three classes will be implemented in all our requests/responses:
-
-- **Request class** – This class is POS/Retail server/E-commerce/CRT workflow class that is the request to do something.
-- **Response class** – This class returns the response, based on the request to the caller.
-- **Handler class** – This class contains the core logic for the request. In the handler class, you can call other requests, do custom logic, and so on.
-
-### Request class
-
-```C#
-public class MyRequest : Request
-{
-    /// <summary>
-    /// Initializes a new instance of the <see cref="MyRequest"/> class.
-    /// </summary>
-
-    public MyRequest ()
-    {
-    }
-
-    // other properties
-}
-```
-
-### Response class
-
-```C#
-public sealed class MyResponse : Response
-{
-    /// <summary>
-    /// Initializes a new instance of the <see cref=" MyResponse"/> class.
-    /// </summary>
-
-    public MyResponse ()
-    {
-    }
-}
-```
-
-### Handler class
-
-```C#
-public sealed class MyRequestHandler : SingleRequestHandler< MyRequest, MyResponse >
-{
-    /// <summary>
-    /// Saves (updating if it exists and creating a new one if it does not) the shopping cart on the request.
-    /// </summary>
-
-    /// <param name="request">The request.</param>
-
-    /// <returns><see cref=" MyResponse "/> object containing the cart with updated item quantities.</returns>
-
-    protected override MyResponse Process(MyRequest request)
-    {
-        //logic class.
-    }
-}
-```
 
 ### AddressService
 
@@ -411,62 +227,6 @@ Just like services, workflows use the request/response pattern. The request obje
 
 For example, when you create a cash-and-carry transaction or a customer order, many different steps or workflows are completed before the order is created. One of the workflow steps in the order process is the Save cart request. The Save cart request workflow is responsible for saving any changes that are made to the cart from the POS. For example, when you add an item to the cart, change the quantity, and so on, anything that you do in the POS will cause a call to the SaveCart to save the changes to the POS and database.
 
-The following three classes will be implemented in the Save cart request workflow.
-
-### Request class
-
-```C#
-public class SaveCartRequest : Request
-{
-    /// <summary>
-    /// Initializes a new instance of the <see cref="SaveCartRequest"/> class.
-    /// </summary>
-
-    public SaveCartRequest()
-    {
-    }
-
-    // other properties
-}
-```
-
-### Response class
-
-```C#
-public sealed class SaveCartResponse : Response
-{
-    /// <summary>
-    /// Initializes a new instance of the <see cref="SaveCartResponse"/> class.
-    /// </summary>
-
-    public SaveCartResponse()
-    {
-    }
-}
-```
-
-### Handler class
-
-```C#
-public sealed class SaveCartRequestHandler : SingleRequestHandler<SaveCartRequest, SaveCartResponse>
-{
-    /// <summary>
-    /// Saves (updating if it exists and creating a new one if it does not) the shopping cart on the request.
-    /// </summary>
-
-    /// <param name="request">The request.</param>
-
-    /// <returns><see cref="SaveCartResponse"/> object containing the cart with updated item quantities.</returns>
-
-    protected override SaveCartResponse Process(SaveCartRequest request)
-    {
-        //logic class.
-    }
-}
-```
-
-All your workflow classes will follow the same pattern.
-
 ### Default workflows and handlers
 
 The following table lists the default workflow requests and response. CRT services call the workflows request and response based on the operation you perform in POS. You can customize any of these workflows request and response according to your business scenario. 
@@ -504,3 +264,6 @@ The following table lists the default workflow requests and response. CRT servic
 | UpdateCommissionSalesGroupRequest | UpdateCommissionSalesGroupHandler       | This request encapsulates a request for updating the sales representative on the cart or the cart line.                    |
 | UploadOrderRequest                | UploadOrderRequestHandler               | This request uploads the sales order.                                                                                      |
 | ValidateCartForCheckoutRequest    | ValidateCartForCheckoutRequestHandler   | This request validates the cart for checkout.                                                                              |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

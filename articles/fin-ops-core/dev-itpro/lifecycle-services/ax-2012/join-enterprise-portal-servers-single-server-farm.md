@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -180,3 +179,6 @@ To learn the name of the WSS\_Content\_\* database for a particular site, follow
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

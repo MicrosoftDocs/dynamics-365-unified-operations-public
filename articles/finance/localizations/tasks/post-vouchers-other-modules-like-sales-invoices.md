@@ -17,7 +17,6 @@ ms.search.form: InventJournalMovement, InventJournalCreate, InventItemIdLookupSi
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
@@ -111,3 +110,6 @@ Before you can complete this task, you must add the current fiscal year to the c
 36. Click Voucher.
     * For example, you can see that the Chinese voucher type Tran has been assigned.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

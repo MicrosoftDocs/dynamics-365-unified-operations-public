@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,3 +53,6 @@ Warehouses | msdyn_warehouses |
 
 [!include [warehouses](includes/InventWarehouseEntity-msdyn-warehouse.md)]
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

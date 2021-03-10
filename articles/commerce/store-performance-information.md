@@ -18,7 +18,6 @@ ms.search.form: RetailChannelReport, RetailChannelManagementWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 57811
 ms.assetid: 495a66f0-491a-4688-842d-51c33c37676f
@@ -50,3 +49,6 @@ This report provides a snapshot of following summaries as part of store performa
 - Tax summary
 - Price overrides summary
 - Discounts summary
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

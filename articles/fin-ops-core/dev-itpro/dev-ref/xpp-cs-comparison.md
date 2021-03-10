@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -1644,3 +1643,6 @@ The following table lists other differences of the **select** statement between 
 |Cursors for navigating returned rows.|The while select statement provides cursor functionality. The alternative is to use the **next** keyword.|You can declare a **cursor** for looping through the rows that are returned from a **select** statement.||
 |**From** clause.|The **from** keyword is optional when no columns are listed and only one table is referenced. The following two syntax options are equivalent: <br>`select \* from tCustTable;` <br>`select tCustTable;`|A **select** statement cannot read from a table unless the **from** clause is used.|In X++ SQL, the simple **select** statement fills the table buffer variable with the first row that was returned. This is illustrated by the following code fragment: <br>`select \* from tCustTable;` <br>`info(tCustTable.Name);`|
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -124,3 +123,6 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 [Logical functions](er-functions-category-logical.md)
 
 [VALUEINLARGE functions](er-functions-logical-valueinlarge.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

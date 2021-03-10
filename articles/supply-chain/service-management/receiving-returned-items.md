@@ -18,7 +18,6 @@ ms.search.form: SMAServiceOrderTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -50,3 +49,6 @@ Depending on company policies, the items in the return shipment can be sent to q
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

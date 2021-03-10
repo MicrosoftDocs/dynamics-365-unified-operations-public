@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/banner.md)]
 
 This topic explains how to configure a Microsoft Dynamics 365 Commerce evaluation environment after it's provisioned.
-
-## Overview
 
 Complete the procedures in this topic only after your Commerce evaluation environment has been provisioned. For information about how to provision your Commerce evaluation environment, see [Provision a Commerce evaluation environment](provisioning-guide.md).
 
@@ -168,3 +165,6 @@ To configure optional features for your Commerce evaluation environment, see [Co
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

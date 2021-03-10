@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -580,3 +579,6 @@ The following table lists additional changes that have been made for extensibili
 |Modify index: table InventTestAssociationTable|
 |Entity UnitOfMeasureEntity switched to public|
 |Entity UnitOfMeasureTranslationEntity switched to public|
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

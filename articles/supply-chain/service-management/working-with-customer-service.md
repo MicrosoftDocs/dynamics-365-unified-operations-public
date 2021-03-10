@@ -18,7 +18,6 @@ ms.search.form: SMAServiceOrderTable, SMAAgreementTable, SMADispatchBoard
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -54,3 +53,6 @@ The topics in this section provide an overview of the Customer service business 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

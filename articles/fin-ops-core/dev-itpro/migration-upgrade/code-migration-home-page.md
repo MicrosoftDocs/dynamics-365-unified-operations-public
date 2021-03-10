@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -54,3 +53,6 @@ The following links (also included in the methodology) describe key concepts and
 - [Workflow subsystem updates in Finance and Operations](workflow-subsystem.md)
 - [Migrate upgraded AX 2012 R3 sales cubes to the entity store](migrate-upgraded-cube-entity-store.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

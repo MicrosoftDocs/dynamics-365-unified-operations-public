@@ -5,7 +5,7 @@ title: Removed or deprecated features in Dynamics 365 Finance
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: roschlom
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,11 +18,10 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: roschlom
 ms.search.validFrom: 2020-03-02 
 ms.dyn365.ops.version: Platform update 33
 
@@ -40,9 +39,31 @@ This topic describes features that have been removed, or that are planned for re
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 > [!NOTE]
-> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Features removed or deprecated in the Finance 10.0.17 release
+
+### LCS repository as a storage option for Electronic reporting configurations
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with the new Regulatory Configuration Service (RCS) Global repository |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Dynamics 365 Finance, Supply Chain Management, and Project Operations products|
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By April 01, 2022, we plan to no longer support the Microsoft Dynamics Lifecycle Services (LCS) repository as a storage option for Electronic reporting (ER) configurations. New Microsoft ER configurations will be published for download exclusively from the Global repository. The Global repository can be accessed from the Dynamics 365 products and RCS. For more information, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md). |
 
 ## Features removed or deprecated in the Finance 10.0.16 release
+
+### "VAT declaration (CZ)" and "Control statement export (CZ)" Electronic reporting formats for Czech Republic
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with new formats |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By January 22, 2022, we plan to no longer support "VAT declaration (CZ)", "Control statement export (CZ)" Electronic reporting (ER) formats. New VAT declaration XML (CZ), VAT declaration Excel (CZ), VAT control statement XML (CZ) formats are introduced instead under the "Tax declaration" model. |
 
 ### "Ledger transaction export format (BE)" Electronic reporting format and respective "Ledger transaction export (BE)" model for Belgium
 
@@ -113,3 +134,6 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Previous announcements about removed or deprecated features
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

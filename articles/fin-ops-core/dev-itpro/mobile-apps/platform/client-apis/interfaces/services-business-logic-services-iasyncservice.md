@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ AsyncService
 Creates a deferred object that can be used to return a promise from event handlers (where applicable) and resolve/reject them asynchronously.
 
 #### Returns [Deferred](defer-ideferred.md) &lt;T&gt;
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

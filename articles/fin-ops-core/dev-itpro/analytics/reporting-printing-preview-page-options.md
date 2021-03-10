@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +56,6 @@ Use the Feature Management area to access the document preview options. The two 
 - **Enable Network Printing on Report PDF viewer**
 
 Select these features, and then select **Enable now** to begin taking advantage of the new user options. For more information, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

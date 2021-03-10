@@ -18,7 +18,6 @@ ms.search.form: VendInvoiceWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21901
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
@@ -152,3 +151,6 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

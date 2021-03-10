@@ -17,7 +17,6 @@ ms.search.form: TaxProfileTable_CN, HcmWorkerLookUp, UnitOfMeasureLookup, CustTa
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
@@ -73,3 +72,6 @@ This procedure was created using the demo data company CNMF. This procedure is f
 35. In the Unit field, enter or select a value.
 36. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

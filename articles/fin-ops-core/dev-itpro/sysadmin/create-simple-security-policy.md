@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -100,3 +99,6 @@ This topic explains how to create a simple security policy that secures access t
 
 10.  As a final step, it is required that you build and synchronize the solution 
     to activate the policy.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

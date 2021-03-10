@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +16,6 @@ ms.search.form: SysConfiguration, SIGParameters, SIGReasonCode, SIGProcSetup
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -81,3 +79,6 @@ Use this procedure to set up electronic signatures. An electronic signature conf
 10. Click Save.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

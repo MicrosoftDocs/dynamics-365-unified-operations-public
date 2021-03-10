@@ -17,7 +17,6 @@ ms.search.form: CAMAXGeneralLedgerEntryProviderConfiguration
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -51,3 +50,6 @@ Use this procedure to manage the general ledger data source for a cost accountin
 14. In the Posting layer field, select Current.
 15. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

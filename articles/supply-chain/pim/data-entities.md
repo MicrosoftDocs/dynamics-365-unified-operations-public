@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -54,3 +53,6 @@ To import and export product data, you must use data entities. The following tab
 
 > [!NOTE]
 > You can use the **Released Products V2** data entity to import products into the system only if the shared product has already been created. Otherwise, to import products into the system, you must use the **Product creation** data entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

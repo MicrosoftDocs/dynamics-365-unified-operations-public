@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -1491,3 +1490,6 @@ Additional resources
 [X++ Language Reference](xpp-language-reference.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

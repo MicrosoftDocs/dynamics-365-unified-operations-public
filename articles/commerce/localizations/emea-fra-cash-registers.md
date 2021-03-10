@@ -17,7 +17,6 @@ ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: France
@@ -360,3 +359,6 @@ There is an option to separately configure the scheduler. Click **Commerce sched
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-deployment.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

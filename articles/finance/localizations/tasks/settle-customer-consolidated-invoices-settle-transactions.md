@@ -17,7 +17,6 @@ ms.search.form: CustConsInvoice_JP, CustTable, CustOpenTrans
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -55,3 +54,6 @@ This procedure was created using the demo data company JPMF.
 9. Go to Accounts receivable > Periodic tasks > Consolidated invoice.
     * Confirm that the status of the Consolidated invoice is updated to Settled.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

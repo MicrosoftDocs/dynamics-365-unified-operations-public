@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -94,3 +93,6 @@ GET /databasemovement/v1/databases/project/12345
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

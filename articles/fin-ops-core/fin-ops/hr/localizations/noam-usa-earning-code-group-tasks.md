@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +17,12 @@ ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221384
 ms.assetid: df18e3bb-bfad-45fb-8a6e-a3479e57b8df
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -270,3 +268,6 @@ The next step is to set up schedules, leave types, and benefit accrual plans. Fo
 [Generate earnings for workers](noam-usa-generate-earnings.md)
 
 [Standard payroll reports](noam-usa-generate-payroll-reports.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

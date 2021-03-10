@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -104,3 +103,6 @@ You can get help about using filter and filter syntax by opening the drop-down m
 |`code:"insert" type:table,form`    | Finds all places in the source code of either forms or tables that contain "insert".   |
 |`code:"public display" type:form,method`  | Finds all form methods that contain the code "public display". |
 |`type:formbuttoncontrol property:text=` | Finds all form Button Controls that have **empty** text properties. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

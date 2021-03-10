@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -59,3 +58,6 @@ The **ProcessScheduleQueryCriteriaApplicator** class is used to apply the saved 
 | Method | Description |
 |---|---|
 | `public static void applyCriteriaForOccurrenceExecution(Query _queryToApplyCriteria, RefRecId _scheduleOccurrenceRecId)` | |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

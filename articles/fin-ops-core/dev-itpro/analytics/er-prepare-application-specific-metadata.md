@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -287,3 +286,6 @@ When you must evaluate this model mapping by using the metadata of a different v
 ## Additional resources
 
 Alternatively, you can play the **Prepare application metadata that can be used in RCS** task guide in the application as as well as the **Access application metadata by using an ER configuration** and **Access application metadata by using connected applications** task guides in RCS. These task guides can be downloaded from the [Electronic Reporting Task Guides for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

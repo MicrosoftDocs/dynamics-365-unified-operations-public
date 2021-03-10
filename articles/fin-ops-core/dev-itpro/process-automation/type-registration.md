@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -212,3 +211,6 @@ The **ProcessSchedulelTypeRegistrationParameterTabItem** class represents inform
 | `public LabelId parmCaption(LabelId _caption = caption)` | The caption on the parameter page. |
 | `public LabelId parmHelpText(LabelId _helpText = helpText)` | The Help text for the parameter page. |
 | `public static ProcessScheduleTypeRegistrationParameterTabItem newFromMenuItem(MenuItemName _menuItemName)` | Constructor that initializes the instance with the specified menu item name. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

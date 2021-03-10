@@ -18,13 +18,12 @@ ms.search.form: EntAssetWorkerResponsible
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -59,3 +58,6 @@ Before you can set up responsible maintenance workers, you must set up the worke
 The following illustration shows an example of the **Responsible maintenance workers** page.
 
 ![Responsible maintenance workers page](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

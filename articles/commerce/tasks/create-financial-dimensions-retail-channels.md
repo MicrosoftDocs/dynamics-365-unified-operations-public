@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -58,3 +57,6 @@ This procedure walks through creating a commerce channel financial dimension wit
 24. In the list, click the link in the selected row.
 25. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

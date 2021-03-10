@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -58,3 +57,6 @@ Currently, the System administration utility supports only Delete operations. He
 - The network printer is deleted for all legal entities in the organization.
 - Domain admins can register devices by using the old printer name.
 - The organization admins can continue to use the existing tools to manage network printer settings for a single legal entity.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -72,3 +71,6 @@ This procedure shows how to create a cost rollup policy and create rules for the
     * Continue until all cost centers are mapped to their corresponding secondary cost elements.  
 16. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

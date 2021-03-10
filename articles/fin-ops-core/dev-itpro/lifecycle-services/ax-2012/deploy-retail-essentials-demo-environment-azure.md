@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -148,3 +147,6 @@ Complete the following procedure to connect to the virtual machine where the Dyn
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

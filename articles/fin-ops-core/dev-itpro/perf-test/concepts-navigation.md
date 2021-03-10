@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -154,3 +153,6 @@ AtlDataHelpers
 
 AtlDataWHSHelpers
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

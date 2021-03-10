@@ -2,13 +2,12 @@
 # required metadata
 
 title: Document Reporting Services
-description: This article describes the integrated reporting solution that is available in Finance and Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
+description: This topic describes the reporting solution that simplifies service administration, increases developer productivity, and provides enhanced report viewing.
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -107,3 +106,6 @@ The process for developing a report in the current version is easier than it is 
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

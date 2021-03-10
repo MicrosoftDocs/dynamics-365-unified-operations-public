@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,3 +48,6 @@ Businesses classify customers and provide sophisticated services, based on custo
 [!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
 
 [!include [mapping reward points](includes/LoyaltyRewardPoints-msdyn-loyaltyrewardpoints.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

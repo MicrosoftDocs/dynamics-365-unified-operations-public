@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -67,3 +66,6 @@ To replace a user ID in site builder, follow these steps.
 [Cookie compliance](cookie-compliance.md)
 
 [Add a privacy policy page](add-privacy-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

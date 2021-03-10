@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -253,3 +252,6 @@ SysDa queries support several clauses:
 ## Troubleshooting
 
 You can use the **toString()** method on **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects to view the statement that you're building.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

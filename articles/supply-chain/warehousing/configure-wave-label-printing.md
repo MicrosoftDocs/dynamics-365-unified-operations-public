@@ -18,7 +18,6 @@ ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDo
 audience: Application User
 # ms.devlang:
 ms.reviewer: PJacobse
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
@@ -938,3 +937,6 @@ You can view and reprint wave labels from the following pages:
 - Wave label history
 
 For most of these pages, you can find the relevant function by selecting **Wave labels** in the **Related information** group on the **Shipments** tab of the Action Pane.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

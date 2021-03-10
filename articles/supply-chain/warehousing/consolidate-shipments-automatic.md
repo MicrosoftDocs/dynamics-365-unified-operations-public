@@ -18,7 +18,6 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFi
 audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
@@ -324,3 +323,6 @@ When you've finished, you should see that four shipments were created:
 
 - [Shipment consolidation policies](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

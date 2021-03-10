@@ -17,12 +17,11 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 
@@ -47,3 +46,6 @@ You can set up the following information for customer invoices and return sales 
 
     * Go to **Organization administration \> Number sequences \> Counters management**. There should be a record where **Module** = **Sales** and **Type** = **Invoice**.
     * Go to **Organization administration \> Number sequences \> Invoice numbering setup**. Select the **Commerce** check box for the number sequence line that is used to number the customer invoices.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

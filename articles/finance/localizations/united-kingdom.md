@@ -5,7 +5,7 @@ title: United Kingdom overview
 description: This topic provides links to documentation resources for the United Kingdom. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: United Kingdom
@@ -44,7 +43,11 @@ This topic provides links to documentation resources for United Kingdom.
   - [Create a sales order that includes items subject to reverse charge VAT](tasks/gb-00002-sales-order.md)
 - [Making Tax Digital for VAT](emea-gbr-mtd-vat-integration.md)
 - [Statistics on payment practices report](emea-gbr-statistics-on-payment-practices-report.md)
+- [Finance (Globalization) guidance about Brexit impact](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 
 ## Regulatory updates for the United Kingdom
 
 For a complete list of regulatory updates for all countries/regions, see [Regulatory updates](regulatory-updates.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

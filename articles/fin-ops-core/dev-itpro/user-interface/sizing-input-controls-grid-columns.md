@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ As the previous table shows, if you change the width of a grid-hosted control fr
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

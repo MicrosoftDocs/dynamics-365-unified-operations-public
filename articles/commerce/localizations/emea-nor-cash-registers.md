@@ -17,7 +17,6 @@ ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway
@@ -223,3 +222,6 @@ You must also map required master data to predefined SAF-T standard codes. For m
 
 To enable Norway-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

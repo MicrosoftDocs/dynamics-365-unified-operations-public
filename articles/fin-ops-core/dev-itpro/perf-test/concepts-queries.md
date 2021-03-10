@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -86,3 +85,6 @@ loadLine = data.whs().loadLines().query().forLoad(load).withInventQty(10).single
 
 transferLine = data.invent().transferOrderLines().query().forTransferOrder(transferOrder).withInventDims([batch1]).single();
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

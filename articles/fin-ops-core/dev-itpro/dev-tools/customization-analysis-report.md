@@ -2,13 +2,12 @@
 # required metadata
 
 title: Customization Analysis Report (CAR)
-description: This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules. 
+description: This article describes how to generate a Customization Analysis Report for your model and describes some best practice rules that are included in the report. 
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -412,3 +411,6 @@ You can fix this warning by using one of the following patterns:
 | Error message       | %1 is a base table and must not be modified   |
 | Issue type/severity | MetaData/Warning     |
 | How to fix it       | Don't customize the table.    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

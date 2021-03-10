@@ -17,7 +17,6 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -34,8 +33,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/banner.md)]
 
 This topic covers order confirmation modules and describes how to use them in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The order confirmation module is used to show order confirmation details after an order has been placed. It shows the order confirmation ID, order contact information, and other order details, such as the items that were purchased, payment information, pickup options, and the shipping method.
 
@@ -92,3 +89,6 @@ To add an order confirmation module to a new page and set the required propertie
 [Pickup information module](pickup-info-module.md)
 
 [Gift card module](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

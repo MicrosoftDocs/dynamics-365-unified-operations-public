@@ -17,7 +17,6 @@ ms.search.form: JmgRegistrationTouch, JmgRegistrationTouchUserConfiguration, Jmg
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -67,3 +66,6 @@ To be able to run this procedure you must have the System administator or Machin
 29. Click OK.
 30. Select a reason why you are clocking out early.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

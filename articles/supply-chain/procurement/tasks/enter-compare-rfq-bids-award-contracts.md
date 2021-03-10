@@ -3,7 +3,7 @@
  
 title: Enter and compare RFQ bids and award contracts
 description: This topic explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 07/09/2019
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -111,3 +110,6 @@ You can enter the bid as either a vendor or a procurement professional. For more
 ## View the purchase order that is generated
 
 On the Action Pane, on the **General** tab, select **Purchase order**. The page that appears shows the purchase order that was generated when you accepted the bid.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -5,10 +5,9 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 01/14/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -126,6 +124,7 @@ The following tables list the application areas. Cloud and on-premises support i
 | Localizations                        |                                                                                           | Yes       | Yes             |
 | Manufacturing                        |                                                                                           | Yes       | Yes             |
 | Master planning and forecasting      |                                                                                           | Yes       | Yes             |
+| Planning optimization                |                                                                                           | Yes       | No              |
 | Mobile app, workspaces, and platform |                                                                                           | Yes       | Yes             |
 | Office integration                   |                                                                                           | Yes       | Yes             |
 | Organization administration          |                                                                                           | Yes       | Yes             |
@@ -181,3 +180,6 @@ To see a list of capabilities that are available in on-premises deployments, see
 
 \* In on-premises environments, PerfTimer only shows results for the client.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

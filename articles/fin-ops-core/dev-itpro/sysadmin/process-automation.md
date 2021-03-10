@@ -8,7 +8,6 @@ manager: tonyafehr
 ms.date: 08/12/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,3 +50,6 @@ Each occurrence can be modified without impacting other occurrences defined by t
 ## Developer documentation
 
 The process automation framework allows developers to extend the process automation framework. The [Process automation framework](../process-automation/process-automation-framework.md) documentation provides information about how you can create custom processes that you require to be run by the batch server scheduled with the process automation wizard and appear in the calendar view automatically.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

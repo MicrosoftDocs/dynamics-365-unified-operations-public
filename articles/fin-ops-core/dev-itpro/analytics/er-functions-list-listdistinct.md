@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 7/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -102,3 +101,6 @@ The following example shows how you can get the list of unique customer account 
 ## Additional resources
 
 [List functions](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

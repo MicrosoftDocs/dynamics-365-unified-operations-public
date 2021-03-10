@@ -2,13 +2,12 @@
 # required metadata
 
 title: Business events and Microsoft Forms Pro
-description: This topic goes through a scenario where a survey is sent to users when a product has been shipped. The survey information is gathered by using Microsoft Forms Pro.
+description: This topic goes through a scenario where a survey is sent to users when a product has been shipped.
 author: murrayfife
 manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ If you haven't used Forms Pro before, you should first read the [Forms Pro docum
     As users fill in the survey and submit it, Forms Pro shows some analytics.
 
     ![Survey analytics in Forms Pro](../../media/Forms_Pro2.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

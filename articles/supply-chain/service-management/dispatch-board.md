@@ -18,7 +18,6 @@ ms.search.form: SMADispatchBoard
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -58,3 +57,6 @@ For information about how to perform specific tasks in a dispatch board, see the
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

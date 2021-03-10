@@ -2,13 +2,12 @@
 # required metadata
 
 title: Wizard form pattern
-description: This article provides information about the Wizard form pattern. A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.
+description: This article provides information about the Wizard form pattern. A wizard is a user assistance form that takes the user through a task.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -121,3 +120,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![Previous version example](./media/wizard3.png)](./media/wizard3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

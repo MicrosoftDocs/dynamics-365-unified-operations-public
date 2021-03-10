@@ -3,8 +3,8 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (July 08, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for July 8, 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: 
@@ -24,13 +24,15 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (July 8, 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -76,9 +78,9 @@ Created and modified system fields are now enabled on the **WorkCalendarEmployme
 
 This release corrects an error (null reference) in streamlined employee entry when you hire an employee using the option to **Hire and add details**.
 
-## Changes made in the Common Data Service Worker entity don't reflect in Human Resources (455652)
+## Changes made in the Dataverse Worker entity don't reflect in Human Resources (455652)
 
-Changes made to the following fields in the **Worker** entity in Common Data Service will now show up in Human Resources:
+Changes made to the following fields in the **Worker** entity in Dataverse will now show up in Human Resources:
 
 - **Works from home**
 - **Seniority date**
@@ -136,9 +138,9 @@ A DMF entity is now available for accrual suspensions.
 
 ## Coming soon
 
-## Checklist entities included in Common Data Service
+## Checklist entities included in Dataverse
 
-Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Common Data Service.
+Checklist entities for Onboarding, Offboarding, Transfers, and Business processes will be available soon in Dataverse.
 
 ## See also
 
@@ -146,3 +148,6 @@ Checklist entities for Onboarding, Offboarding, Transfers, and Business processe
 [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -162,3 +161,6 @@ To automatically create lines on the **Receipt from another company** page, sele
 
     > [!NOTE]
     > You can view the information about the transfer of assets between companies on the **Receipt from another company** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

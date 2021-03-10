@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed for India GST Localization in 10.0.02 (May 2019)
+title: What's new or changed for India GST in 10.0.02 (May 2019)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.02.
 author: prabhatb
 manager: Wangcheng
@@ -17,7 +17,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: India
@@ -28,7 +27,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# What's new or changed for India GST Localization in 10.0.02 (May 2019)
+# What's new or changed for India GST in 10.0.02 (May 2019)
 
 [!include [banner](../includes/banner.md)]
 
@@ -78,3 +77,6 @@ Advanced editor is enabled for Global Tax Engine formulas/conditions to improve 
 -	Tax information is not editable on the **Sales order after delivery** page.
 -	The invoice number does not show in Posted withholding tax inquiry.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

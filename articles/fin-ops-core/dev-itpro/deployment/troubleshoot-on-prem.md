@@ -5,10 +5,9 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
 manager: AnnBe
-ms.date: 10/29/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom: 60373
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
@@ -628,7 +627,16 @@ Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMac
 
 If you receive the message, "Cannot find the certificate and private key to use for decryption," verify the axdataenciphermentcert and svc-AXSF$ AXServiceUser ACLs.
 
-If the credentials.json file has changed, delete and redeploy the environment from LCS.
+If the credentials.json file has changed, the action you should take depends on the status of the environment in LCS.
+
+- If your environment appears to be deployed in LCS, do the following:
+    1. Go to your environment page and select **Maintain**.
+    1. Select **Update settings**.
+    1. Do not change any settings. Select **Prepare**.
+    1. After a few minutes your environment will be prepared and you can select **Deploy**.
+
+- If your environment is in a failed state in LCS, do the following:
+    1. Select **Retry**. The new Credentials.json file will be used during the retry operation.
 
 If none of the preceding solutions work, follow these steps.
 
@@ -1208,7 +1216,26 @@ You can skip or modify the following sections in the deployment instructions.
 
 ## Redeploy SSRS reports
 
-Delete the entry in SF.SyncLog, and then restart one of the AOS machines. The AOS machine will rerun DB Sync and then deploy reports.
+#### Version 10.0.13 or later
+
+Run the following command against your business data database (AXDB):
+
+```sql
+	UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+```
+
+#### Version 10.0.12 or earlier
+
+Run the following command against your business data database (AXDB):
+
+```sql
+    DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CODEPACKAGEVERSION DESC)
+```
+
+>[!NOTE]
+> If you are using version 10.0.12 or earlier, a full database synchronization will be executed.
+
+After running the command, restart one of your AOS nodes through Service Fabric Explorer or restart the VM that the node is running on.
 
 ## Add axdbadmin to tempdb after a SQL Server restart via a stored procedure
 
@@ -1527,3 +1554,6 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
 use master
 GRANT ALTER ANY EVENT SESSION to axdbadmin;
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

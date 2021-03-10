@@ -17,7 +17,6 @@ ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, EInvoiceCF
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
@@ -59,3 +58,6 @@ Use the Free text invoice form to create and post a customer invoice as an elect
 20. In the list, mark the selected row.
 21. In the list, click the link in the selected row.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

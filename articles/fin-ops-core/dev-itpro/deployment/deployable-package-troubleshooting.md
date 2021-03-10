@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -207,3 +206,6 @@ Follow these steps to look for the DBSync.err file, find the errors, and inspect
     | Database execution failed: Invalid column name &#39;DEFAULTDIMENSION&#39;. CREATE VIEW | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
     | Database execution failed: Invalid object name &#39;PMBI\_DEPROJECTTIMESHEET&#39;. CREATE VIEW | This issue appears to be a SyncEngine issue. Create a ticket on Microsoft Support. |
     | %provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server%  | This issue should have been fixed in Platform Update 3. Retry the step. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

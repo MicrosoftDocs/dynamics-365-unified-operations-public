@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,7 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
 These topics describe dual-write integration.
 
 + [What is dual-write?](dual-write-overview.md)
@@ -45,7 +43,7 @@ These topics describe dual-write integration.
 
 + [What's new or changed in dual-write](whats-new-dual-write.md)
 + [Frequently asked questions](dual-write-faq.md)    
-    
+
 ## Dual-write setup
 
 + [System requirements for dual-write](dual-write-system-req.md)
@@ -60,13 +58,14 @@ These topics describe dual-write integration.
     + [Enable table map for dual-write](enable-entity-map.md)
 
 + [Currency data-type migration for dual-write](currrency-decimal-places.md)
-+ [Set up the mapping for the sales order status fields](sales-status-map.md)
++ [Set up the mapping for the sales order status columns](sales-status-map.md)
++ [Filter intercompany orders to avoid synchronizing Orders and OrderLines](filtering-intercompany-orders.md)
 
 ## Managing dual-write after setup
 
-+ [Customize entity and field mappings](customizing-mappings.md)
++ [Customize table and column mappings](customizing-mappings.md)
 + [Handling multiple table maps](multiple-entity-maps.md)
-+ [Edit a legal entity after dual-write setup](edit-legal-entity.md)
++ [Edit a legal table after dual-write setup](edit-legal-entity.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
 
@@ -86,7 +85,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 
 + [Company concept in Dataverse](company-data.md)
 
-    + [Bootstrap with company data FAQ](bootstrap-company-data.md)
+    + [Initialize company data](bootstrap-company-data.md)
 
 + [Organization hierarchy awareness](organization-mapping.md)
 + [Access to finance and tax reference data](finance-tax-reference.md)
@@ -94,22 +93,28 @@ These topics describe mapping between concepts in Finance and Operations applica
     + [Integrated ledger](ledger-mapping.md)
     + [Integrated tax master](tax-mapping.md)
 
-+ [Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine](pricing-engine.md)
++ [Integrate procurement in Supply Chain Management with Field Service](scm-field-service-procurement.md)
++ [Sync on-demand with the Supply Chain Management price engine](pricing-engine.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [Integrated worker, job, and position](integrated-hr.md)
++ [Onhand inventory availability](inventory-availability.md)
 
 ## Support
 
-+ [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
++ [Support for Field Service and Project Service Automation solutions](field-service-project-service-automation.md)
++ [Migrate Prospect to cash data from Data Integrator to dual-write](migrate-prospect-to-cash.md)
 
 ## Troubleshooting
 
-+ [Verify that dual-write is configured in Finance and Operations apps and Dataverse](dual-write-troubleshooting-verify-config.md)
++ [Verify dual-write configuration in Finance and Operations apps and Dataverse](dual-write-troubleshooting-verify-config.md)
 + [Troubleshoot issues during initial setup](dual-write-troubleshooting-initial-setup.md)
 + [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md)
-+ [Troubleshoot issues with the Dual-write module in Finance and Operations apps](dual-write-troubleshooting-dual-write-module.md)
++ [Troubleshoot dual-write issues in Finance and Operations apps](dual-write-troubleshooting-dual-write-module.md)
 + [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md)
 + [Troubleshoot issues related to solution awareness](dual-write-troubleshooting-solution-awareness.md)
-+ [Troubleshoot issues related to upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
++ [Troubleshoot issues from upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
 + [General troubleshooting](dual-write-troubleshooting.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

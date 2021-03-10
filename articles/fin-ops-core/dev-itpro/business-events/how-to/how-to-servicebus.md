@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -218,3 +217,6 @@ The business scenario involves sending an email or a message to a team channel w
 
 20. Save your logic app.
 21. Trigger the business event by posting a customer payment. Then verify that the logic app runs, and that you receive an email that includes customer payment details.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

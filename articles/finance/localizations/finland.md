@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Finland
@@ -36,3 +35,6 @@ This topic includes information and links to resources that can help you set up 
 
 - [Sales tax payment report for Finland](emea-fin-sales-tax-payment-report-finland.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: AssetImpairmentRecognitionTest_JP, SysQueryForm, AssetImpairment
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -58,3 +57,6 @@ This task was created using the demo data company JPMF.
     * The Confirmation form of the impaired fixed assets is displayed.  
     * The Impairment test ID is issued.     Remember the Impairment_test_ID for later use in Propose and post.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

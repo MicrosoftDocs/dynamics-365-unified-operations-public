@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,13 +17,12 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 248434
 ms.assetid: 33dae9aa-f673-4195-9b63-7cb41534c502
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -103,3 +101,6 @@ Maintaining your payroll data involves adjusting the carry-forward balances for 
 Standard payroll reports are provided to help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
 
 - [Standard payroll reports](noam-usa-generate-payroll-reports.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

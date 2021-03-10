@@ -17,7 +17,6 @@ ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -75,3 +74,6 @@ This procedure walks through creating product variants for a product master usin
     * You can generate descriptions for all your variants based on the combination of product dimension values. The descriptions are optional.  
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

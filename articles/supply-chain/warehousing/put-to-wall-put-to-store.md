@@ -16,7 +16,6 @@ ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -544,3 +543,6 @@ If sort positions should be closed manually, the **Auto close sort position** op
 
 > [!IMPORTANT]
 > After movement work has been created from the sorting location, you must not cancel the work. Otherwise, the position and the containers in it will be deleted from the system and unavailable for further processing. The inventory will also be removed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

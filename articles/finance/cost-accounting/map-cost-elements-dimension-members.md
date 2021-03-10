@@ -18,7 +18,6 @@ ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
@@ -58,3 +57,6 @@ You can update the mapping definitions for a cost element dimension at any time.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -147,3 +146,6 @@ Currently, this endpoint provides metadata for the following elements:
 - **Data entities** – Returns a JSON-formatted list of all the data entities in the system.
 
     **Example:** `https://[baseURI\]/Metadata/DataEntities`
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

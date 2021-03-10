@@ -18,7 +18,6 @@ ms.search.form: RetailTillLayout
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -180,3 +179,6 @@ Users have been provided for the various screen layouts. By using the following 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 
 <!-- END HIDDEN CONTENT -->
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,7 +17,6 @@ ms.search.form: CustBillingClassification
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -45,3 +44,6 @@ Public-sector organizations can use billing classifications to help manage free 
 10. In the list, click a billing code to add to this billing classification.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

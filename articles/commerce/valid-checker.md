@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
@@ -83,3 +82,6 @@ If a validation error is found, the only way to fix the error is to contact Micr
 
 > [!NOTE]
 > Additional validation rules to support more scenarios will be added in a future release.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-#ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -67,3 +65,6 @@ The default field value for the **Number of workflow items per batch** on the **
 
 ## What is the Workflow Enhanced Error feature?
 The Workflow Enhanced Error feature in version 10.0.13 adds error codes to differentiate different classes of workflow errors. The error messages reported will be mostly similar with minor differences to make them clearer.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

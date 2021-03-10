@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -107,3 +106,6 @@ If any data model change requires that a data upgrade script be run, consumers m
 	 
 ## Metadata extensions
 + **Not following the naming guidelines for metadata or augmentation classes** – Consumers might have elements that have the same name.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

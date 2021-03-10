@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -75,3 +74,6 @@ After your site is created, only users who are in the security groups that are a
 [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
 
 [Manage Content Security Policy (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

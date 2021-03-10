@@ -17,7 +17,6 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, DefaultDashbo
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Australia
@@ -98,3 +97,6 @@ This procedure was created using the demo data company 'USMF' with a primary leg
 7. Select or clear the Post and settle GST check box.
 8. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

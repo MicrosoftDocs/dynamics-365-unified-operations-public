@@ -18,7 +18,6 @@ ms.search.form: CostSheetDesigner, CostSheetCalculationFactor
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53201
 ms.assetid: e7d72b43-3892-49ae-8821-9eede3f4d24a
@@ -54,3 +53,6 @@ The costing sheet is displayed as part of the **Calculate item cost** page. The 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

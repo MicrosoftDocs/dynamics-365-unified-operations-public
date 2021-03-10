@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -141,3 +140,6 @@ Task recordings can be played as task guides. Task guides are used to guide user
 ## Additional resources
 
 Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

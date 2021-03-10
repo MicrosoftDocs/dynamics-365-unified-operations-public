@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -58,3 +57,6 @@ To set up your success metrics, follow these steps.
 
 ## Next step
 [Connect and edit an experiment](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

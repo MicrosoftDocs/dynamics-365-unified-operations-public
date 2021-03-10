@@ -18,7 +18,6 @@ ms.search.form: SMAAgreementTable, SMAServiceOrderTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -65,3 +64,6 @@ The service template lines are now copied to the new service order, together wit
 [Service templates](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

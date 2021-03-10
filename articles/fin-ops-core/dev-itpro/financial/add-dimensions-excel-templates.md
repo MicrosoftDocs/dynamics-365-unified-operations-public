@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -101,7 +100,7 @@ The only value that is present on Microsoft Excel templates after installation i
     DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
     ```
 
-    ![lookupwiki](./media/lookupwiki.png)
+    ![Relation properties in Visual Studio](./media/lookupwiki.png)
 
 9.  Build the project and then synchronize it with the database.
 
@@ -112,5 +111,7 @@ The only value that is present on Microsoft Excel templates after installation i
 
 [Extensibility home page](../extensibility/extensibility-home-page.md)
 
+[Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
 
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

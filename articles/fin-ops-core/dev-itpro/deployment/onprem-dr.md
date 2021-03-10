@@ -2,13 +2,12 @@
 # required metadata
 
 title: On-premises disaster recovery configuration
-description: This content describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery and the process for switching between the primary and secondary datacenters.
+description: This topic describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery.
 author: faix
 manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -276,3 +275,6 @@ Clean up your DR environment by manually unprovisioning all Dynamics Service Fab
 
 >[!IMPORTANT]
 > Your primary environment will be functioning as usual and can be serviced after you ensure that all items in the checklist are verified.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

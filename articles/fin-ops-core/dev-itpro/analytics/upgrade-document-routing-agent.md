@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +61,6 @@ For information about how to install the latest DRA that is available with your 
 
 > [!NOTE]
 > Be sure to open the DRA client after upgrading to refresh network user credentials.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

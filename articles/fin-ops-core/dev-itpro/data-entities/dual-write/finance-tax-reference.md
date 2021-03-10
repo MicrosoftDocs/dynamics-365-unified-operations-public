@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -41,3 +40,6 @@ Finance and tax data is integrated by using the following mappings:
 
 + [Integrated ledger](ledger-mapping.md)
 + [Integrated tax master](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

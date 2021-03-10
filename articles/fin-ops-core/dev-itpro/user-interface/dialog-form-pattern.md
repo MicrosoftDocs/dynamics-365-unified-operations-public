@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/08/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -266,3 +265,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![Previous version content](./media/dialogform10.png)](./media/dialogform10.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

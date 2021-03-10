@@ -18,7 +18,6 @@ ms.search.form: CustPackingSlipJournalHistory, SalesParmPackingSlipTrackingInfor
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -54,3 +53,6 @@ When you update a packing slip for a returned item that is from a sales agreemen
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

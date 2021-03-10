@@ -16,7 +16,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Russia
@@ -96,3 +95,6 @@ You should set the value of the **ExpenseAndIncomeCode** field in the following 
 
     > [!NOTE]
     > The **ExpenseAndIncomeCode** dimension is selected as the dimension for expense and income codes on the **General ledger parameters** page. It can’t be changed. If you set the **Empty dimension using** option to **Yes**, the expense or income code will also include transactions that have the same ledger accounts, but the **ExpenseAndIncomeCode** field is blank.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

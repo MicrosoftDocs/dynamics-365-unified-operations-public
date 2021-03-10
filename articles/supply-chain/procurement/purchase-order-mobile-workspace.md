@@ -3,7 +3,7 @@
 
 title: Purchase order approval mobile workspace
 description: This topic provides information about the Purchase order approval mobile workspace, which lets you view purchase orders and respond to them through actions. For example, you can approve or reject a purchase order.
-author: mkirknel 
+author: RichardLuan 
 manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
@@ -19,13 +19,12 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 
-ms.search.scope: Core, Operations, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 30211
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-11-30 
 ms.dyn365.ops.version: Version 1611 
 
@@ -120,3 +119,6 @@ After you've viewed the purchase order that is assigned to you and read the work
 5. Select the appropriate action.
 6. On the **Complete task** page, enter a comment. Note that if you select the **Delegate** action, you must select a user to delegate the task to.
 7. Select **Done**. After you refresh your workspace, the purchase order will no longer be in your list. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

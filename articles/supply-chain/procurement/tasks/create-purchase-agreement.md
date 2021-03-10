@@ -3,7 +3,7 @@
  
 title: Create a purchase agreement
 description: This topic guides you through the creation of a purchase agreement. 
-author: mkirknel
+author: RichardLuan
 manager: tfehr 
 ms.date: 07/18/2019
 ms.topic: business-process 
@@ -17,12 +17,11 @@ ms.search.form: PurchAgreement, PurchAgreementCreate, InventItemIdLookupSimple, 
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -75,3 +74,6 @@ This topic guides you through the creation of a purchase agreement. This would t
 5. Select **Purchase agreement confirmations**. The **Preview/Print** option allows you to generate a document for the purchase agreement which you can then print or send to the vendor. If you update the agreement later on and re-confirm it, both versions will be shown here.  
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

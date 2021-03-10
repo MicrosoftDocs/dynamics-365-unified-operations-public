@@ -17,7 +17,6 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -52,3 +51,6 @@ Running this procedure requires that at least one product configuration model is
     * Activate the product model version. It is only possible to have one product active for one product model at a time.  
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

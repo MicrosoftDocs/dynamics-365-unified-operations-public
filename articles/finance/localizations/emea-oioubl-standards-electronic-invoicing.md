@@ -17,7 +17,6 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10274
 ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
@@ -120,3 +119,6 @@ For more details about how to set up electronic invoices, you can play the follo
 
 > [!NOTE] 
 > Although these Task guides were created for Danish-specific e-invoice format *OIOUBL*, they are applicable for other supported countries/regions with minor deviations.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

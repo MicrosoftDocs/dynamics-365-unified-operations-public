@@ -18,7 +18,6 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -104,3 +103,6 @@ After enabling product recommendations, you will need to add the recommendations
 [Manually create curated recommendations](create-editorial-recommendation-lists.md)
 
 [Create recommendations with demo data](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

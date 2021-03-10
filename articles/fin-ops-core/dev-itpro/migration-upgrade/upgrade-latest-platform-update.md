@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -199,3 +198,6 @@ Additional resources
 --------
 
 [Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

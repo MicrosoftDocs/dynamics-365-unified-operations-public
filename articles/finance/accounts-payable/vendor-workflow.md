@@ -17,7 +17,6 @@ ms.search.form:  Vendor
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -65,3 +64,6 @@ After you have at least one proposed change, two additional tabs appear on the a
     The status on the page is changed to **Changes pending approval**.
 
 The workflow follows the standard workflow process. The approver is directed to the **Vendor** page where the changes can be reviewed on the **Proposed changes** page and then select **Workflow \> Approve** to approve the workflow. After all approvals are completed, the fields are updated with the values that you proposed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

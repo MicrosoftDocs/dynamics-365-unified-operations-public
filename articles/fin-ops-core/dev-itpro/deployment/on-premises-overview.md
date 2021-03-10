@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -70,3 +69,6 @@ Table 1: Customer data stored in Microsoft Azure data centers located in the Uni
   
 
 Additional services or components can be configured to extend an on-premises deployment as needed; however, configuration choices may cause core customer data to be transferred outside of the customer’s data center. For example, configuring data management features that are used to integrate external services with an on-premises deployment may result in the transfer of core customer data outside the on-premises deployment. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

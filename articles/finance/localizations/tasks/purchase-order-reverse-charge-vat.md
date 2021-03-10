@@ -17,7 +17,6 @@ ms.search.form: PurchTable, PurchCreateOrder, TaxTmpWorkTrans,  DefaultDashboard
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
@@ -72,3 +71,6 @@ Prior to this task, the "Set up reverse charge VAT" tasks should be completed.
     * Observe the calculated Reverse charge VAT transactions:   Sales tax transactions with incoming and outgoing direction  
 21. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,11 +51,11 @@ Forbidden."}}".*
 
 To fix the issue, follow the steps in [System requirements and prerequisites](requirements-and-prerequisites.md). To complete those steps, the dual-write application users who are created in Dataverse must have the system admin role. The default owning team must also have the system admin role.
 
-## Live synchronization for any entity consistently throws a similar error when you create a row in a Finance and Operations app
+## Live synchronization for any table consistently throws a similar error when you create a row in a Finance and Operations app
 
 **Required role to fix the issue:** System admin
 
-You might receive an error message like the following every time that you try to save entity data in a Finance and Operations app:
+You might receive an error message like the following every time that you try to save table data in a Finance and Operations app:
 
 *Cannot save the changes to the database. Unit of Work can not commit transaction. Unable to write data to entity uoms. Writes to UnitOfMeasureEntity failed with error message Unable to sync with entity uoms.*
 
@@ -64,8 +63,8 @@ To fix the issue, you must make sure that the prerequisite reference data exists
 
 If data exists on both sides, and you've confirmed that the issue isn't data-related, follow these steps.
 
-1. Stop the related entity.
-2. Sign in to the Finance and Operations app, and make sure that rows for the failing entity exist in the DualWriteProjectConfiguration and DualWriteProjectFieldConfiguration tables. For example, here is what the query looks like if the **Customers** entity is failing.
+1. Stop the related table.
+2. Sign in to the Finance and Operations app, and make sure that rows for the failing table exist in the DualWriteProjectConfiguration and DualWriteProjectFieldConfiguration tables. For example, here is what the query looks like if the **Customers** table is failing.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -74,7 +73,7 @@ If data exists on both sides, and you've confirmed that the issue isn't data-rel
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. If there are rows for the failing entity even after you stop the table mapping, delete the rows that are related to the failing entity. Make a note of the **projectname** column in the DualWriteProjectConfiguration table, and fetch the record in the DualWriteProjectFieldConfiguration table by using the project name to delete the row.
+3. If there are rows for the failing table even after you stop the table mapping, delete the rows that are related to the failing table. Make a note of the **projectname** column in the DualWriteProjectConfiguration table, and fetch the row in the DualWriteProjectFieldConfiguration table by using the project name to delete the row.
 4. Start the table mapping. Validate whether the data is synced without any issues.
 
 ## Handle read or write privilege errors when you create data in a Finance and Operations app
@@ -137,3 +136,6 @@ To fix the issue, follow these steps.
 
 3. Make sure that the **externalenvironmentURL** column has the correct Dataverse or app URL. Delete any duplicate rows that point to the wrong Dataverse URL. Delete the corresponding rows in the DUALWRITEPROJECTFIELDCONFIGURATION and DUALWRITEPROJECTCONFIGURATION tables.
 4. Stop the table mapping, and then restart it
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

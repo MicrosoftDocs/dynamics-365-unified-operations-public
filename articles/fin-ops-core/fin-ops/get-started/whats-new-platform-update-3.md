@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,6 @@ ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
-#ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220184
 ms.assetid: 8beb4e7f-4a71-4c50-adf7-7733e6a150d9
@@ -199,3 +197,6 @@ Lifecycle Services (LCS) releases new features every month. For information abou
 ## Additional resources
 
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/02/2020
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -70,3 +69,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

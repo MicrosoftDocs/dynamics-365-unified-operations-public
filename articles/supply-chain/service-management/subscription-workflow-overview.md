@@ -18,7 +18,6 @@ ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -62,3 +61,6 @@ At the end of each month, one month's revenue can be accrued from the customer's
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

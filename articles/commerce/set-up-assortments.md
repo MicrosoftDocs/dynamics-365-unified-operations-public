@@ -18,7 +18,6 @@ ms.search.form: RetailAssortmentDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 15811
 ms.assetid: d2580048-e798-4b33-85f9-d1bad7d262fc
@@ -60,3 +59,6 @@ After you complete the prerequisites, you can create an assortment and assign it
 2. Select the channels or the high-level groups of channels that the assortment applies to.
 3. Add product categories, individual products, or product variants to the assortment. You can include all products in a specific category, or you can exclude selected products from a category that is included in the assortment.
 4. Publish the assortment. When you publish an assortment, the assortment scheduler is automatically run. This process generates the list of products. When this process is completed, the products become available to the channels that the product assortment is assigned to. If changes are made to an assortment that has been published, or to the channels that the assortment is assigned to, the assortment must be updated. To update the assortment when changes are made, you can run the assortment scheduler as a batch job.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

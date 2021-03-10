@@ -5,10 +5,9 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25 
 
@@ -41,7 +40,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 > [!CAUTION]
 > The certificate rotation process should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x. 
 >
-> Upgrade your Service Fabric cluster to 7.2.x before attempting certificate rotation.
+> Upgrade your Service Fabric cluster to 7.2.x or later before attempting certificate rotation.
 
 ## Preparation steps 
 
@@ -51,15 +50,26 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 3. Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.
 
-4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically these steps:
+4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically these steps.
 
     ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-    > [!IMPORTANT]
-    > Self-signed certificates should never be used in production environments. If you're using trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
+    Alternatively, if you have or would like to switch to Active Directory Certificate Services (AD CS) certificates, use this information.
+
+    ```powershell
+    # Only run the first command if you have not generated the templates yet.
+    .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -CreateTemplates
+    .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+
+    > [!NOTE]
+    > The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.
+    > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
+
+    > Self-signed certificates should never be used in production environments. If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
 
     ```powershell
     # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder
@@ -213,24 +223,37 @@ You must reinstall the LocalAgent if:
 - You changed the service fabric client certificate.
 - You changed the LocalAgent certificate.
 
+1. Update your current localagent-config.json by replacing the **serverCertThumprint** and **clientCertThumbprint** values with the new thumbprints.
+
+    ```json
+    {
+    "serviceFabric": {
+        "connectionEndpoint": "192.168.8.22:19000",
+        "clusterId": "Orch",
+        "certificateSettings": {
+            "serverCertThumbprint": "New server thumbprint(Star/SF)",
+            "clientCertThumbprint": "New client thumbprint"
+        }
+    },
+    ```
 1. Run the following PowerShell command on one of the Orchestrator nodes.
 
     ```powershell
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-2. Run the following PowerShell command and note the new LocalAgent thumbprint.
+1. Run the following PowerShell command and note the new LocalAgent thumbprint.
 
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-3. Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu12.md#configurelcs).
+1. Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu12.md#configurelcs).
 
 	> [!NOTE] 
 	> If you receive the error **Update to existing credential with KeyId '\<key\>' is not allowed**, follow the instructions in [Error: "Updates to existing credential with KeyId '<key>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
 
-4. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu12.md#configureconnector), specifically the following changes:
+1. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu12.md#configureconnector), specifically the following changes:
 
 	- Client certificate thumbprint
 	- Server certificate thumbprint
@@ -260,8 +283,8 @@ Because you've updated your certificates, the configuration file that is present
         "connectionEndpoint": "192.168.8.22:19000",
         "clusterId": "Orch",
         "certificateSettings": {
-        "serverCertThumbprint": "Old server thumbprint(Star/SF)",
-        "clientCertThumbprint": "Old client thumbprint"
+            "serverCertThumbprint": "Old server thumbprint(Star/SF)",
+            "clientCertThumbprint": "Old client thumbprint"
         }
     },
     ```
@@ -274,8 +297,8 @@ Because you've updated your certificates, the configuration file that is present
         "connectionEndpoint": "192.168.8.22:19000",
         "clusterId": "Orch",
         "certificateSettings": {
-        "serverCertThumbprint": "New server thumbprint(Star/SF)",
-        "clientCertThumbprint": "New client thumbprint"
+            "serverCertThumbprint": "New server thumbprint(Star/SF)",
+            "clientCertThumbprint": "New client thumbprint"
         }
     },
     ```
@@ -382,3 +405,6 @@ After the above commands have been executed, restart your AOS nodes from Service
 
 > [!WARNING]
 > Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

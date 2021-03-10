@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -434,3 +433,6 @@ The following additional changes have been made for extensibility.
 
 - Convert queries where InventSumFields is used to SysDa.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

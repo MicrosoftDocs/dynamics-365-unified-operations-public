@@ -17,7 +17,6 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -78,3 +77,6 @@ The compiled partner package contains both the SDK and a module library. The SDK
 [E-commerce components](ecommerce-components.md)
 
 [CLI command reference](cli-command-reference.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

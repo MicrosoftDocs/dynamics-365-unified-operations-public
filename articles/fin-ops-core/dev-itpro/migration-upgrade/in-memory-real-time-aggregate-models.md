@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -55,3 +54,6 @@ Perspectives are now modeled using add-ins for Visual Studio. (Visual Studio is 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

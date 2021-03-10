@@ -17,7 +17,6 @@ ms.search.form: AssetImpairmentManageTestResult_JP, AssetImpairmentRecognition_J
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
@@ -61,3 +60,6 @@ This procedure was created using the demo data company JPMF.
     * You only can post confirmed recognition tests.  
 11. Click Yes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

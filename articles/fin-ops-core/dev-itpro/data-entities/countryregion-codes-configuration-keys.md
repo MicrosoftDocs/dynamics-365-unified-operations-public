@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -114,3 +113,5 @@ Entity E1
 
 |_F4 (UK inferred)
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
