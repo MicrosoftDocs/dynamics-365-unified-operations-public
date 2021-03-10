@@ -71,7 +71,7 @@ Follow these steps to set up Dataverse.
 
 1. Add a service principle to your tenant:
 
-    1. Install Azure AD PowerShell Module v2 as described in [Install Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+    1. Install Azure AD PowerShell Module v2 as described in [Install Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
     1. Run the following PowerShell command.
 
         ```powershell
