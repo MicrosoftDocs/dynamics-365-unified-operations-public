@@ -2,9 +2,9 @@
 # required metadata
 
 title: Set up and use wave execution notifications 
-description: This topic describes wave execution notifications and explains how to set it up.
-author: lbc
-manager: olkryva
+description: This topic describes wave execution notifications and explains how to set them up
+author: mirzaab
+manager: tfehr
 ms.date: 04/03/2021
 ms.topic: article
 ms.prod:
@@ -17,40 +17,41 @@ ms.search.form: WhsWaveNotificationPolicy, WHSParameters, WHSWaveTemplateTable, 
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: lbc
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2022-04-01
 ms.dyn365.ops.version: 10.0.0
 
 ---
 
-# Set up and use wave execution notifications 
+# Set up and use wave execution notifications
 
 [!include [banner](../includes/banner.md)]
 
-Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events.
+<!--KFM: This intro confuses me a bit with all the talk about business events. Let's set the scene a bit better in the first paragraph. (I edited it already, this may be enough...) -->
 
-Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process.
+The *Wave execution notifications* feature feature uses business events and the **Action center** to deliver notifications related to wave execution. The feature lets you configure which types of events will generate messages, which warehouses will generate the messages, and which users will receive them.
 
-For more information about business events see here (../../fin-ops-core/dev-itpro/business-events/home-page.md)
+The bell icon on the right side of the navigation bar indicates when an **Action center** message is available for the current user. The user can select the bell icon to open the **Action center** and review the messages.
 
-This feature uses business events and the action center to deliver notifications related to wave execution.
+Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events.
 
+For more information about business events see [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
 ## Turn on the Wave execution notifications feature
 
 Before you can use the *Wave execution notifications* feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
-- **Module:** *Warehouse management*
-- **Feature name:** *Wave execution notifications*
+- **Module** - *Warehouse management*
+- **Feature name** - *Wave execution notifications*
 
-## Scenario : Send wave batch execution notification to action center.
+## Scenario: Send wave batch execution notification to the action center
 
-This scenario shows the end-to-end flow on how to send notification to given role about wave batch execution errors in the message center. 
+This scenario shows the end-to-end flow for how to send message center notification about wave batch execution errors to a given role.
 
 ### Make demo data available
 
@@ -59,79 +60,83 @@ To follow this scenario, you must have demo data installed, and you must select 
 ### Make sure waves are executed in batch
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
-1. On the **Wave processing** FastTab, enable the *Process waves in batch*
+1. On the **Wave processing** FastTab, set **Process waves in batch** to *Yes*.
 
 > [!NOTE]
-> If you want to disable the wave batch execution notifications, enabled the *Disable wave processing batch notifications*.
+> If you want to disable the wave batch execution notifications, set **Disable wave processing batch notifications** to *Yes*.
 
-### Configure a wave notification policies
+### Configure a wave notification policy
 
-Wave notification policies defines when notification should be sent, if wave create should be notified and users to be notified.
+Wave notification policies define which types of notification should be sent and who should be notified.
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave notification policies**.
-1. Create a record that has the following settings:
+1. Create a record with the following settings:
 
-    - **Wave notification policy:** *24BatchError*
-    - **Description:** *Warehouse 24 wave batch error*
-    - **Send notification on:** *Error only*
-    - **To role:** *System administrator*
+    - **Wave notification policy** - *24BatchError*
+    - **Description** - *Warehouse 24 wave batch error*
+    - **Send notification on** - *Error only*
+    - **To role** - *System administrator*
+
 1. On the Action Pane, select **Save**.
 
 > [!NOTE]
-> For simplicity of the example, we use *System administrator* to ensure all users get the notification, but the idea is that you specific a specific role that should be notified about these wave errors e.g. *Warehouse manager*
-
+> To keep this example simple, we use *System administrator* to ensure all users get the notification, but in practice you should usually select a more specific role to notify about these wave errors, such as *Warehouse manager*.
+<!--KFM: Why would all users get messages target to the sys admin? -->
 ### Configure a wave template
 
-Wave templates let you link specific instances of wave methods to a corresponding wave label template.
+Wave templates let you link specific instances of wave methods to corresponding wave label templates.
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
-1. Select a wave template type *Shipping* and select the *24 Shipping Default* wave template for warhouse *24*.
-1. On the **General** FastTab, select the *24BatchError* for the **Wave notification policy**.
+1. In the list column, set **Wave template type** to *Shipping* and select the *24 Shipping Default* wave template for warehouse 24.
+1. On the **General** FastTab, set **Wave notification policy** to *24BatchError*.
 
 ### Configure a work template
 
-Work templates are used as part of the wave execution to generate work and for the purpose of this scenario we want the wave execution to trigger an error. 
-Changing the work template query to a none existing warehouse will ensure the wave execution to fail and send notification.
+Work templates are used during wave execution to generate work and, for the purpose of this scenario, we want the wave execution to trigger an error. By setting the work template query to use a non-existing warehouse, we will ensure that wave execution will fail and therefore send a notification.
 
 1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
-1. Select a work template type *Sales orders* and select the *24 SO Stage* work template for warhouse *24*.
+1. Set **Work template type** to *Sales orders* and select the *24 SO Stage* work template for warehouse 24.
 1. On the Action Pane, select **Edit query**.
-1. In the query editor dialog box, on the **Range** tab, add a row that has the following settings:
+1. In the query editor dialog box, on the **Range** tab, edit the following row (or add it if it doesn't exist): <!--KFM: I had to change this step to make it work. Please confirm. -->
 
-    - **Table:** *Temporary work transactions*
-    - **Derived table:** *Temporary work transactions*
-    - **Field:** *Warehouse*
-    - **Criteria:** *Error*
+    - **Table** - *Temporary work transactions*
+    - **Derived table** - *Temporary work transactions*
+    - **Field** - *Warehouse*
+    - **Criteria** - change from *24* to *Error*
+
+1. Select **OK** and confirm the change.
 
 ### Create a sales order and release it to the warehouse
 
 1. Go to **Sales and marketing \> Sales order \> All sales orders**.
-1. Create a sales order that has the following settings:
+1. Create a sales order with the following settings:
 
-    - **Customer account:** *US-001*
-    - **Warehouse:** *24*
+    - **Customer account** - *US-001*
+    - **Warehouse** - *24*
 
-1. Add a sales order line:
+1. On the **Sales order lines** FastTab, add a sales order line with the following settings:
 
-    - Sales order line:
-
-        - **Item number:** *A0001*
-        - **Quantity:** *10*
+    - **Item number** - *A0001*
+    - **Quantity** - *10*
 
     > [!NOTE]
-    > The items and quantities that are provided here are only examples. They must have stock in the specified warehouse.
+    > These items and quantities are only examples. Sufficient stock must exist in the specified warehouse.
 
-1. Select sales order line 1. Then, in the **Sales order line** section, on the **Inventory** menu, select **Reservations**.
-1. On the **Reservation** page, on the Action Pane, select **Reserve lot**, and then close the page.
-1. On the Action Pane, on the **Warehouse** tab, select **Release to warehouse**.
+1. With your new line still selected, select **Inventory \> Reservation** from the **Sales order lines** toolbar.
+1. The **Reservation** page opens. On the Action Pane, select **Reserve lot**, and then close the page.
+1. On the Action Pane, open the **Warehouse** tab and select **Release to warehouse**.
 
 ### Notifications from wave batch job execution
-The following events occur after some time depending on the business events setup, the user will get a notification in the Action center, with a message like this and a link to open the failed wave.
 
-**Error during wave execution**
-An error occurred while executing wave USMF-000000001. Last messages: No Work was created for Wave USMF-000000001.**
-Status : Active
-Open wave details (Link)
+After some time, depending on your business events setup, the **Action center** will show a message similar to the following, which includes a link to open the failed wave.
 
+> **Error during wave execution**<br>
+> An error occurred while executing wave USMF-000000001.<br>
+> Last messages: No Work was created for Wave USMF-000000001.
+>
+> **STATUS**<br>
+> Active
+>
+> Open wave details
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
