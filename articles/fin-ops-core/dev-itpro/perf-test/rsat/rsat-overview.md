@@ -44,6 +44,7 @@ RSAT usage is described in these topics:
 + [Validate expected values](rsat-validate-expected.md)
 + [Chain test cases](rsat-chain-test-cases.md)
 + [Derived test cases](rsat-derived-test-cases.md)
++ [Configure non-administrator users to use RSAT](rsat-configure-nonadmin.md)
 + [Regression Suite Automation Tool best practices](rsat-best-practices.md)
 + [Troubleshoot the Regression Suite Automation Tool](rsat-troubleshooting.md)
 

@@ -1382,6 +1382,8 @@
         href: perf-test/rsat/rsat-derived-test-cases.md
       - name: Regression suite automation tool tutorial
         href: perf-test/rsat/rsat-tutorial.md
+      - name: Configure non-administrator users to use RSAT
+        href: perf-test/rsat/rsat-configure-nonadmin.md
       - name: Best practices
         href: perf-test/rsat/rsat-best-practices.md
       - name: Data agnostic testing using the Regression Suite Automation Tool
