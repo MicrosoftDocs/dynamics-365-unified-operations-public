@@ -30,5 +30,17 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include[banner](../includes/banner.md)]
 
+The following topics provide information about removed or deprecated features in Finance and Operations apps:
 
-Content goes here.
+- [Removed or deprecated features in Dynamics 365 Finance](../../../finance/get-started/removed-deprecated-features-finance.md)
+- [Removed or deprecated features in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md)
+- [Removed or deprecated features in Dynamics 365 Commerce](../../../commerce/get-started/removed-deprecated-features-commerce.md)
+- [Removed or deprecated platform features](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md)
+- [Removed or deprecated features in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/removed-deprecated-features.md)
+- [Removed or deprecated features in previous releases](../../dev-itpro/migration-upgrade/deprecated-features.md)
+
+The following topic provides information about deprecations in the Microsoft Power Platform:
+
+- [Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps](https://docs.microsoft.com/power-platform/important-changes-coming)
+
+
