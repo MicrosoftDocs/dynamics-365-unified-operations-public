@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax feature support for transfer orders
-description: This topic explains the new tax feature support for transfer orders using the tax calculation service.
+description: This topic explains the new tax feature support for transfer orders by using the tax calculation service.
 author: kliang
 manager: tfehr
 ms.date: 03/02/2021
@@ -53,12 +53,36 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
 2. On the **Tax features setup** page, on the **Tax codes** tab, select **Add** to create new tax codes. For this example, three tax codes are created: **NL-Exempt**, **BE-RC-21**, and **BE-RC+21**.
 
     - When a transfer order is shipped from a warehouse in the Netherlands, the Netherlands VAT exempted tax code (**NL-Exempt**) is applied.
+      
+        Create the tax code **NL-Exempt**.
+        1. Select **Add**, enter **NL-Exempt** in the **Tax code** field.
+        2. Select **By Net Amount** in the **Tax component** field.
+        3. Select **Save**.
+        4. Select **Add** in the **Rate** table.
+        5. Swtich **Is Exempt** to **Yes** in the **General** section.
 
         [![NL-Exempt tax code](../media/image2.png)](./media/image2.png)
 
     - When a transfer order is received at a Belgium warehouse, the reverse charge mechanism is applied by using the **BE-RC-21** and **BE-RC+21** tax codes.
+        
+        Create the tax code **BE-RC-21**.      
+        1. Select **Add**, enter **BE-RC-21** in the **Tax code** field.
+        2. Select **By Net Amount** in the **Tax component** field.
+        3. Select **Save**.
+        4. Select **Add** in the **Rate** table.
+        5. Enter **-21** in the **Tax Rate** field.
+        6. Swtich **Is Reverse Charge** to **Yes** in the **General** section.
+        7. Select **Save**.
 
         [![BE-RC-21 tax code for reverse charges](../media/image3.png)](./media/image3.png)
+        
+        Create the tax code **BE-RC+21**.
+        1. Select **Add**, enter **BE-RC-21** in the **Tax code** field.
+        2. Select **By Net Amount** in the **Tax component** field.
+        3. Select **Save**.
+        4. Select **Add** in the **Rate** table.
+        5. Enter **21** in the **Tax Rate** field.
+        6. Select **Save**.
 
         [![BE-RC+21 tax code for reverse charges](../media/image4.png)](./media/image4.png)
 
@@ -70,15 +94,28 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         > Be sure to add the **Business process** and **Tax directions** columns to the table. Both columns are essential to the functionality for tax in transfer orders.
 
     2. Add applicability rules. Don't leave the **Tax codes**, **Tax group**, and **Item tax group** fields blank.
-
-        1. In the **Business process** field, select **Inventory** to make the rule applicable for a transfer order.
-        2. In one rule, in the **Tax direction** field, select **Output** to make the rule applicable to **Ship transfer order**.
-        3. In the other rule, in the **Tax direction** field, select **Input** to make the rule applicable to **Receive transfer order**.
+        
+        Add a new rule for transfer order shipment.
+        1. Select **Add** in the **Applicability rules** table.
+        2. In the **Business process** field, select **Inventory** to make the rule applicable for a transfer order.
+        3. In the **Ship From Country/Region** field, enter **NLD**.
+        4. In the **Ship To Country/Region** field, enter **BEL**.
+        5. In the **Tax direction** field, select **Output** to make the rule applicable to transfer order shipment.
+        6. In the **Tax codes** field, select **NL-Exempt**.
+        7. In the **Tax Group** field and the **Item Tax Group**, enter the related sales tax group and item sales tax group which are defined in your Finance system.
+        
+        Add another rule for transfer order receipt.
+        1. Select **Add** in the **Applicability rules** table.
+        2. In the **Business process** field, select **Inventory** to make the rule applicable for a transfer order.
+        3. In the **Ship From Country/Region** field, enter **NLD**.
+        4. In the **Ship To Country/Region** field, enter **BEL**.
+        5. In the **Tax direction** field, select **Input** to make the rule applicable to transfer order receipt.
+        6. In the **Tax codes** field, select **BE-RC+21** and **BE-RC-21**.
+        7. In the **Tax Group** field and the **Item Tax Group**, enter the related sales tax group and item sales tax group which are defined in your Finance system.
 
         [![Applicability rules](../media/image5.png)](./media/image5.png)
 
-4. Verify that "Multiple VAT ID configurations" has been set up.
-5. Complete and publish the new tax feature version.
+4. Complete and publish the new tax feature version.
 
     [![Changing the status of the new version](../media/image6.png)](../media/image6.png)
 
