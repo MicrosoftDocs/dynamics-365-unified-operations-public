@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service:
 ms.technology:
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom: 18861
 ms.assetid: 075b4e28-162f-47ae-8713-392d711bdaff
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 

@@ -72,7 +72,9 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
-          - name: Finance 10.0.17 (March 2021)
+          - name: Finance 10.0.18 (May 2021)
+            href: get-started/whats-new-changed-10-0-18.md
+          - name: Finance 10.0.17 (April 2021)
             href: get-started/whats-new-changed-10-0-17.md
           - name: Finance 10.0.16 (February 2021)
             href: get-started/whats-new-changed-10-0-16.md
@@ -80,6 +82,8 @@
             href: get-started/whats-new-changed-10-0-15.md
       - name: Removed or deprecated features
         items:
+          - name: Removed or deprecated features home page
+            href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
           - name: Removed or deprecated features in Dynamics 365 Finance
             href: get-started/removed-deprecated-features-finance.md
           - name: Removed or deprecated features in previous releases
@@ -474,6 +478,8 @@
         href: accounts-receivable/tasks/create-collection-letter-sequence.md
       - name: Process collection letters
         href: accounts-receivable/tasks/process-collection-letters.md
+      - name: Process collection letters example
+        href: accounts-receivable/process-collection-letters-example.md
       - name: Set up and generate accounts receivable aging information
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
       - name: Customer aging report
@@ -486,6 +492,8 @@
         href: accounts-receivable/original-invoice-numbers-credit-notes.md
       - name: Numbering documents and vouchers chronologically
         href: accounts-receivable/chrono-numbers.md
+      - name: Archive printed customer invoices with hash numbers
+        href: accounts-receivable/archive-printed-invoices.md
     - name: Budgeting
       items:
       - name: Budgeting home page
@@ -1318,6 +1326,8 @@
           href: public-sector/tasks/create-vendor-certification-type-public-sector.md
         - name: Import and create multiple one-time vendors and invoices in the public sector
           href: public-sector/tasks/import-multiple-one-time-vendors.md
+        - name: Restrict editing of accounting distributions on invoices
+          href: public-sector/restrict-edit-accounting-distributions.md
         - name: Plan for one-time vendors in the public sector
           href: public-sector/plan-one-time-vendors-public-sector.md
         - name: Control access to purchase agreements in the public sector
@@ -2012,12 +2022,14 @@
           items:
           - name: German audit file overview
             href: localizations/emea-deu-gdpdu-audit-data-export.md
-          - name: Customize audit file configuration
-            href: localizations/tasks/customize-german-audit-file-configuration.md
-          - name: Generate audit file
-            href: localizations/tasks/german-audit-file.md
           - name: Import audit file configuration
             href: localizations/tasks/import-german-audit-file-configuration.md
+          - name: Generate audit file
+            href: localizations/tasks/german-audit-file.md
+          - name: Customize audit file configuration
+            href: localizations/tasks/customize-german-audit-file-configuration.md
+          - name: Add filters to an audit file configuration
+            href: localizations/emea-deu-gdpdu-data-filtering.md
         - name: Depreciation adjustments for additional acquisitions in the second year
           href: localizations/tasks/de-00002-depreciation.md
         - name: Electronic transmission of VAT declaration (ELSTER)
@@ -2310,7 +2322,7 @@
           href: localizations/emea-ita-quarterly-vat-communication.md
         - name: Black list report
           href: localizations/emea-ita-black-list-report.md
-        - name: Competence date
+        - name: Competence date and fiscal journal
           href: localizations/emea-ita-competence-date.md
         - name: Depreciation of fixed assets
           href: localizations/emea-ita-depreciation-of-fixed-assets.md
@@ -3257,7 +3269,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
         - name: Financial performance
           href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-        - name: Financial insights
+        - name: Financial analysis
           href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
         - name: Fixed asset management
           href: fixed-assets/Fixed-asset-management-workspace.md
@@ -3497,12 +3509,18 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
             - name: Case
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
+            - name: Contains
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/finance/toc.json
+            - name: EndsWith
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/finance/toc.json
             - name: If
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
             - name: Not
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
             - name: Or
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
+            - name: StartsWith
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/finance/toc.json
             - name: ValueIn
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
             - name: ValueInLarge

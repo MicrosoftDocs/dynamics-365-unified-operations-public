@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

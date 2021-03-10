@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
