@@ -151,6 +151,10 @@ The following list shows the how the cloud-powered customer search functionality
 - The requirement of searching using at least 4 characters in a global search ("Search all stores") is not applicable to this service.
 
 > [!NOTE]
-> The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. Please contact Commerce Support to confirm if it is currently supported in your region.
+> The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. Please find below the regions where this service is *not* available:
+> - Brazil
+> - India
+> - Canada
+> - United Kingdom
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
