@@ -24,6 +24,8 @@
           href: get-started/whats-new-platform-updates-10-0-15.md
       - name: Removed or deprecated features
         items:
+        - name: Removed or deprecated features home page
+          href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Removed or deprecated platform features
           href: get-started/removed-deprecated-features-platform-updates.md
         - name: Removed or deprecated features in previous releases
@@ -1452,6 +1454,8 @@
         href: sysadmin/pre-configured-system-accounts.md
       - name: Export B2B users to Azure AD
         href: sysadmin/implement-b2b.md
+      - name: Data maintenance
+        href: sysadmin/DataMaintenancePortal.md
       - name: Security
         items:
         - name: Role-based security
