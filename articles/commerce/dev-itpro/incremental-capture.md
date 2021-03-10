@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce. This topic also describes how to enable incremental capture for the Dynamics 365 Payment Connector for Adyen, and how incremental capture can be added to third-party payment connectors using the payments software development kit (SDK).
 
-When incremental capture is enabled, orders that are fulfilled over time with multiple invoices will reference the original authorization for multiple invoices and captured payments. This is opposed to legacy support for fulfilling orders with multile invoices, which causes a new authorization to be obtained every time a portion of the order is fulfilled and the balance due changes.
+When incremental capture is enabled, orders that are fulfilled over time with multiple invoices will reference the original authorization for multiple invoices and captured payments. This is opposed to legacy support for fulfilling orders with multiple invoices, which causes a new authorization to be obtained every time a portion of the order is fulfilled and the balance due changes.
 
 Incremental capture is supported out-of-box with the Dynamics 365 Payment Connector for Adyen when orders are fulfilled from the POS and Commerce headquarters. 
 
@@ -61,17 +61,17 @@ The following features must be enabled prior to enabling incremental capture.
 | Feature name | Description |
 |---|---|
 | Unified payment posting journal defaults for Commerce | This feature changes the way that business logic creates customer payment and customer refund payment journals for orders that are created through the call center, POS, or e-commerce channel. |
-| Omni-channel payments | This feature enables omni-channel payment scenarios such as buy online, pick up in store (BOPIS). For more information, see [Omni-channel payments overview](omni-channel-payments.md). |  
+| Omni-channel payments | This feature enables omni-channel payment scenarios such as buy online, pick up in store (BOPIS). For more information, see [Omni-channel payments overview](../omni-channel-payments.md). |  
 | Duplicate payment protection on invoicing | This feature enables duplicate payment protection for invoicing scenarios. Commerce payments functionality might affect customizations in invoicing scenarios. If your organization has invoicing customizations, make sure that they are refactored before you turn on Commerce payments functionality in production environments. | 
 | Enable refunds over multiple captures | This functionality improves that capability to do multiple linked refunds against an order. |
 | Enable manual void of expired credit card payment lines when authorizations are expired | This feature adds support for manual deletion of payment lines if they expire and the authorization cannot be refreshed. |
 | Omni-channel Commerce order payments. | This feature rationalizes payments across channels and enables editing of payments for storefront and POS orders within the call center. Previously listed features are prerequisites for this feature, so it should be enabled last. For more information about this feature, see (Omni-channel Commerce order payments)[dev-itpro/commerce-payments.md]. |
 
-### Enable the "Extensiblity to support incremental credit card capture" feature
+### Enable the "Extensibility to support incremental credit card capture" feature
 
 This feature was originally introduced for incremental capture for headquarters invoicing through the payments SDK and has been augmented to also enable incremental capture support through the Dynamics 365 Payment Connector for Adyen and all channels. 
 
-To enable the "Extensiblity to support incremental credit card capture" feature in Commerce headquarters, follow these steps.
+To enable the "Extensibility to support incremental credit card capture" feature in Commerce headquarters, follow these steps.
 
 1. Go to **System administration \> Workspaces \> Feature management**. 
 1. Select the **All** tab to show all available features.
@@ -160,8 +160,8 @@ For users investigating payment issues in headquarters or in their processor's p
 
 [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
-[Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md?tabs=8-1-3)
+[Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3)
 
-[Omni-channel Commerce order payments](dev-itpro/commerce-payments.md)
+[Omni-channel Commerce order payments](commerce-payments.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
