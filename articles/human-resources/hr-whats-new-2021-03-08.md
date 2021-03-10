@@ -61,15 +61,14 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| When accruing based on hours worked and using holiday correction the negative accrual appears inaccurate - (528155) | | |
-| Leave of absence is shown on leave calendar when "Disable leave on all calendars" is enabled - (486611) | | |
-| Able to import record for employee not enrolled on a plan with a specific plan type.... with Leave and Absence Bank Transaction entity - (508972) | | |
-| Updating Calendar in Employment entity errors if default Legal entity in User options is different - (554854) | | |
+| 528155 | When accruing based on hours worked and using holiday correction the negative accrual is inaccurate | The negative accrual for hours worked is not accurate which makes the balance inaccurate.  |
+| 486611 | Leave of absence is shown on leave calendar when "Disable leave on all calendars" is enabled | If the calendar enhancements feature is off, the leaves of absence should not shown.  If the calendar enhancements feature is on, the options pertaining to leave should be either hidden or disabled. |
+| 508972 | Leave and Absence Bank Transaction entity missing validation of enroolment | Leave and Absence Bank Transaction entity should not allow import time for an amployee not enrolled on a plan with a specific plan type  |
+| 554854 | Updating Calendar in Employment entity errors if default Legal entity in User options is different | Update Calendar through entity Employment would cause an error if the legal entity in user options was not the same legal entity.  |
 | 558347 | 'Cannot create a record in Form configurations (FormRunConfiguration)' appears when loading the start page. | Personalizations are causing the error 'Cannot create a record in Form configurations (FormRunConfiguration)' to appear when loading the start page |
 | 557327 | Benefit Workspace: Gap appears above the grid. | Fixed User Experience issue with an unintended gap appearing on the table grid borders in Benefits workspace |
 | 557334 | Benefits Workspace : "Period" selection drop box should only appear in the "Summary" tab | Benefits Period selection dropdown now appears only when the "Summary" tab is Active in Benefits workspace, not for the Process results and Links sections. |
 | 557336 |Benefits Workspace : "Open Enrollment with checked out plans" , text getting truncated in the tile view..| Changed text in the tile view to "Checked out Plans .. Open enrollment" to avoid truncation of necessary context. |
-| HcmMeasurementDetail index MeasurementIdx being unique is breaking the upgrade and is a breaking change for FinOps - (558034) | | |
 
 ## In preview
 
