@@ -32,8 +32,6 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-<!--KFM: This intro confuses me a bit with all the talk about business events. Let's set the scene a bit better in the first paragraph. (I edited it already, this may be enough...) -->
-
 The *Wave execution notifications* feature feature uses business events and the **Action center** to deliver notifications related to wave execution. The feature lets you configure which types of events will generate messages, which warehouses will generate the messages, and which users will receive them.
 
 The bell icon on the right side of the navigation bar indicates when an **Action center** message is available for the current user. The user can select the bell icon to open the **Action center** and review the messages.
@@ -80,8 +78,8 @@ Wave notification policies define which types of notification should be sent and
 1. On the Action Pane, select **Save**.
 
 > [!NOTE]
-> To keep this example simple, we use *System administrator* to ensure all users get the notification, but in practice you should usually select a more specific role to notify about these wave errors, such as *Warehouse manager*.
-<!--KFM: Why would all users get messages target to the sys admin? -->
+> To keep this example simple, we use *System administrator* because we are working with demo data in this example, which means that you are signed in as a system administrator user, so you will see the notification. However, in practice you should usually select a more specific role to notify about these wave errors, such as *Warehouse manager*.
+
 ### Configure a wave template
 
 Wave templates let you link specific instances of wave methods to corresponding wave label templates.
@@ -97,12 +95,12 @@ Work templates are used during wave execution to generate work and, for the purp
 1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
 1. Set **Work template type** to *Sales orders* and select the *24 SO Stage* work template for warehouse 24.
 1. On the Action Pane, select **Edit query**.
-1. In the query editor dialog box, on the **Range** tab, edit the following row (or add it if it doesn't exist): <!--KFM: I had to change this step to make it work. Please confirm. -->
+1. In the query editor dialog box, on the **Range** tab, edit the following row (or add it if it doesn't exist):
 
     - **Table** - *Temporary work transactions*
     - **Derived table** - *Temporary work transactions*
     - **Field** - *Warehouse*
-    - **Criteria** - change from *24* to *Error*
+    - **Criteria** - Change from *24* to *Error*
 
 1. Select **OK** and confirm the change.
 
