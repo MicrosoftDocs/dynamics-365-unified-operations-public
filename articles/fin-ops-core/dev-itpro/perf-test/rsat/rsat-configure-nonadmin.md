@@ -48,7 +48,7 @@ The tools for enabling non-administrator use consists of three files, two PowerS
     + (string)[action] – Option to enable/disable non administrator mode. Pick from two available values: "enable" or "disable".
     + (string)[thumbprint] – Certificate thumbprint. This must be the same as specified in RSAT under General settings.
 
-    **DO NOT remove/copy this PowerShell script from the “Enable non admin” folder but run it only from this folder.
+    **DO NOT remove/copy this PowerShell script from the “Enable non admin” folder but run it only from this folder.**
 
     Example:
 
@@ -67,12 +67,10 @@ The tools for enabling non-administrator use consists of three files, two PowerS
     Run the script “Enable-non-admin-user.ps1” directly from “Enable non admin” folder and include passing of these required parameters:
 
     + (string)[action] – Option to define enable/disable non administrator mode. Has two available values: "enable" or "disable".
-
     + (string)[user] – The local username provided in the format "domain\userName"
-
     + (string)[thumbprint] – Certificate thumbprint. This must be the same as specified on RSAT settings form.
 
-    **DO NOT remove/copy this PowerShell script from the “Enable non admin” folder but run it only from this folder.
+    **DO NOT remove/copy this PowerShell script from the “Enable non admin” folder but run it only from this folder.**
 
     Example:
 
