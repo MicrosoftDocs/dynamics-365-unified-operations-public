@@ -59,7 +59,7 @@ You must add an **Excel\\File** component to the configured ER format to generat
 To specify the layout of the outbound document, attach an Excel workbook that has the .xlsx extension to the **Excel\\File** component as the template for outbound documents.
 
 > [!NOTE]
-> When you manually attach a template, you must use a [document type](../../fin-ops/organization-administration/configure-document-management#configure-document-types.md) that has been configured for that purpose in the [ER parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+> When you manually attach a template, you must use a [document type](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) that has been configured for that purpose in the [ER parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 ![Adding an attachment to the Excel\File component](./media/er-excel-format-add-file-component2.png)
 
