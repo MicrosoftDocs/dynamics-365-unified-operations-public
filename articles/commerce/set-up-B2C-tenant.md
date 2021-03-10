@@ -240,7 +240,7 @@ The following image shows an example of how to select identity providers on the 
 
 The following image shows an example of a default sign-in screen with a social identity provider sign-in button displayed.
  >[!NOTE]
- >If using the Custom Pages built in Commerce for your User Flows, the buttons for Social Identity Providers will need to be added using the extensibility features of the module library.
+ >If using the Custom Pages built in Commerce for your User Flows, the buttons for Social Identity Providers will need to be added using the extensibility features of the module library. Additionally, when setting up your applications with the specific Social Identity Provider (depending on the Social Provider's connection instructions), in some cases URL or configuring strings may be case sensitive.
  
 ![Example default login screen with Social Identity Provider sign-in button displayed](./media/B2CImage_17.png)
 
