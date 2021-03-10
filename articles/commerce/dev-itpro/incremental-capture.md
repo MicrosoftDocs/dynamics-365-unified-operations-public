@@ -36,13 +36,13 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce. This topic also describes how to enable incremental capture for the Dynamics 365 Payment Connector for Adyen, and how incremental capture can be added to third-party payment connectors using the payments software development kit (SDK).
 
-When incremental capture is enabled, orders that are fulfilled over time with multiple invoices will reference the original authorization for multiple invoices and captured payments. This is opposed to legacy support for fulfilling orders with multiple invoices, which causes a new authorization to be obtained every time a portion of the order is fulfilled and the balance due changes.
+When incremental capture is enabled, orders that are fulfilled over time with multiple invoices will reference the original authorization for multiple invoices and captured payments. This contrasts with legacy support for fulfilling orders with multiple invoices, which causes a new authorization to be obtained every time a portion of the order is fulfilled and the balance due changes.
 
 Incremental capture is supported out-of-box with the Dynamics 365 Payment Connector for Adyen when orders are fulfilled from the POS and Commerce headquarters. 
 
 Many merchants fulfill orders in multiple shipments. By default, the out-of-box process for handling credit card payments for orders that are fulfilled over multiple shipments is to capture payments as those shipments are invoiced and then get a new payment authorization for the balance due for the remaining items that must be shipped. This process ensures that payment capture can be consistently supported across payment processors. 
 
-However, there are also some downsides. For example, when an authorization is partially captured, and then a new authorization is created for the balance due, the old authorization and new authorization might overlap. In this case, open authorizations that exceed the order total might appear against customer payment cards. Consequently, authorizations might exceed open balances that are available for credit cards, or card issuers might block cards from being processed because of suspicion of fraud.
+However, there are also some downsides. For example, when an authorization is partially captured, and a new authorization is then created for the balance due, the old authorization and new authorization might overlap. In this case, open authorizations that exceed the order total might appear against customer payment cards, possibly resulting in authorizations that exceed open balances that are available for credit cards, or card issuers blocking cards from being processed due to suspicion of fraud.
 
 To address these issues, incremental capture support has been introduced for the Dynamics 365 Payment Connector for Adyen and payments SDK. If a processor supports incremental capture, payment connectors can be updated to capture against a single authorization multiple times over the course of order fulfillment. 
 
@@ -50,7 +50,7 @@ The following illustration shows the difference between the different payment ca
 
 ![Current payment capture framework vs. incremental capture](../dev-itpro/media/INC_DIFF.png)
 
-Incremental capture support for headquarters invoicing (in other words, any invoicing that occurs as part of order fulfillment in headquarters) was first added to the payments SDK in Commerce version 10.0.13. In Commerce version 10.0.18, incremental capture support through the SDK has been extended to channels outside of headquarters. For the storefront, Modern POS, and call center this means that authorizations created for new orders can be marked as **SupportsMultipleCaptures**. When those orders are later invoiced in headquarters or Modern POS, payments can be captured and the original authorization will be retained and referenced when payments are captured for subsequent invoices. 
+Incremental capture support for headquarters invoicing (in other words, any invoicing that occurs as part of order fulfillment in headquarters) was first added to the payments SDK in Commerce version 10.0.13. In Commerce version 10.0.18, incremental capture support through the SDK has been extended to channels outside of headquarters. For the storefront, Modern POS, and call center this extended support means that authorizations created for new orders can be marked as **SupportsMultipleCaptures**. When those orders are later invoiced in headquarters or Modern POS, payments can be captured and the original authorization will be retained and referenced when payments are captured for subsequent invoices. 
 
 ## Enable incremental capture
 
@@ -94,7 +94,7 @@ To uptake support for incremental capture as part of headquarters invoicing for 
 
 ### IPaymentReferenceProvider
 
-This version of the payment SDK adds the **IPaymentReferenceProvider** interface. This interface supports using a **PaymentTrackingID** value for each request and response. The **PaymentTrackingID** value can be used to track payment requests. It also ensures that, between back-office invoicing requests and the processor, duplicate requests can be caught before they are re-sent. In this way, it helps prevent duplicate payments.
+This version of the payment SDK adds the **IPaymentReferenceProvider** interface. This interface supports using a **PaymentTrackingID** value for each request and response. The **PaymentTrackingID** value can be used to track payment requests. It also ensures that, between back-office invoicing requests and the processor, duplicate requests can be caught before they are resent. In this way, it helps prevent duplicate payments.
 
 Here is a sample implementation from the SampleConnector.cs file in the payments SDK.
 
@@ -144,7 +144,7 @@ public static string SupportsMultipleCaptures
 }
 ```
 
-As back-office invoicing processes captures against authorizations that are enabled for multiple capture, the total captured amount is tracked. Capture requests continue to reference the original authorization until it's fully captured.
+As back-office invoicing processes captures against authorizations that are enabled for multiple captures, the total captured amount is tracked. Capture requests continue to reference the original authorization until it's fully captured.
 
 Authorizations that are expired according to Accounts receivable parameters aren't eligible for incremental capture. 
 
