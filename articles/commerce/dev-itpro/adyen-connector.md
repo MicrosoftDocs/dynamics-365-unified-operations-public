@@ -5,7 +5,7 @@ title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
