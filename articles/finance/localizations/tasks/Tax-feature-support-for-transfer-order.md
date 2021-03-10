@@ -3,7 +3,7 @@
 
 title: Tax feature support for transfer orders
 description: This topic explains the new tax feature support for transfer orders by using the tax calculation service.
-author: kliang
+author: kailiang
 manager: tfehr
 ms.date: 03/02/2021
 ms.topic: article
