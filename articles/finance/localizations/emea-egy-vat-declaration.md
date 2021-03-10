@@ -5,7 +5,7 @@ title: VAT declaration for Egypt
 description: This topic explains how to configure and generate the VAT return form for Egypt.
 author: sndray
 manager: AnnBe
-ms.date: 02/25/2021
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -84,7 +84,7 @@ The application-specific parameters let you establish the criteria of how tax tr
 
 The sales and purchase book reports for Egypt include a set of columns that correspond to specific transaction classifications as types of operations, products, and documents that are specific for Egypt. Instead of including these new classifications as new entry data when the transactions are posted, the classifications will be determined based on different lookups introduced in **Configurations** > **Set up application-specific parameters** > **Setup** to meet the requirements of VAT reports for Egypt. 
 
-![Declaration form](media/egypt-vat-declaration-setup1.png)
+![Application specific parameters page](media/egypt-vat-declaration-setup1.png)
 
 These following lookup configurations are used to classify the transactions in purchase and sales VAT books reports:
 
