@@ -1453,7 +1453,7 @@
       - name: Export B2B users to Azure AD
         href: sysadmin/implement-b2b.md
       - name: Data maintenance
-        href: sysadmin/DataMaintenancePortal
+        href: sysadmin/DataMaintenancePortal.md
       - name: Security
         items:
         - name: Role-based security
