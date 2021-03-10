@@ -216,7 +216,7 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 1. Use the provided ER configurations to [generate](er-generate-printable-fti-forms.md) a printable free text invoice (FTI) document.
 2. Review the footer of the generated document. Notice that it contains information about the current page number and the total number of pages in the document.
 
-    ![Reviewing the footer of a generated document in Excel format](./media/er-fillable-excel-footer-1.gif)
+    ![Review the footer of a generated document in Excel format](./media/er-fillable-excel-footer-1.gif)
 
 3. In the ER format designer, [open](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) the sample ER format for review.
 
@@ -229,7 +229,7 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 
     - The second **String** component fills in the text that contains the current page number and the total number of pages in the current document.
 
-    ![Reviewing the Footer ER format component on the Format designer page](./media/er-fillable-excel-footer-2.png)
+    ![Review the Footer ER format component on the Format designer page](./media/er-fillable-excel-footer-2.png)
 
 4. Customize the sample ER format to modify the current page footer:
 
