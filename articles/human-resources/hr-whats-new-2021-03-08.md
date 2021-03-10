@@ -49,6 +49,7 @@ This release includes the following new features and bug fixes. Changes apply to
 The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
+| --- | --- | --- |
 | Cross-company view of leave for managers | [Cross-company view of employee leave for managers](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Configure leave and absence parameters](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
 | | |
 
