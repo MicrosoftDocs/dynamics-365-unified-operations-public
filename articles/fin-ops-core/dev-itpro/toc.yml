@@ -25,7 +25,7 @@
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
-          href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+          href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Removed or deprecated platform features
           href: get-started/removed-deprecated-features-platform-updates.md
         - name: Removed or deprecated features in previous releases
