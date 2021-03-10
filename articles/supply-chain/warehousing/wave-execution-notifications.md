@@ -33,13 +33,11 @@ ms.dyn365.ops.version: 10.0.0
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The *Wave execution notifications* feature feature uses business events and the **Action center** to deliver notifications related to wave execution. The feature lets you configure which types of events will generate messages, which warehouses will generate the messages, and which users will receive them.
+The *Wave execution notifications* feature uses business events and the **Action center** to deliver notifications related to wave execution. The feature lets you configure which types of events will generate messages, which warehouses will generate the messages, and which users will receive them.
 
 The bell icon on the right side of the navigation bar indicates when an **Action center** message is available for the current user. The user can select the bell icon to open the **Action center** and review the messages.
 
-Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events.
-
-For more information about business events see [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
+Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events. For more information, see [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
 ## Turn on the Wave execution notifications feature
 
@@ -91,7 +89,7 @@ Wave templates let you link specific instances of wave methods to corresponding 
 
 ### Configure a work template
 
-Work templates are used during wave execution to generate work and, for the purpose of this scenario, we want the wave execution to trigger an error. By setting the work template query to use a non-existing warehouse, we will ensure that wave execution will fail and therefore send a notification.
+Work templates are used during wave execution to generate work and, for this scenario, we want the wave execution to trigger an error. By setting the work template query to use a non-existing warehouse, we will ensure that wave execution will fail and therefore send a notification.
 
 1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
 1. Set **Work template type** to *Sales orders* and select the *24 SO Stage* work template for warehouse 24.
