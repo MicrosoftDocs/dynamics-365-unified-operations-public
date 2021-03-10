@@ -5,7 +5,7 @@ title: Get started with the tax calculation add-in
 description: This topic explains how to set up the tax calculation add-in.
 author: wangchen
 manager: tfehr
-ms.date: 03/01/2021
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -116,7 +116,7 @@ The steps in this section aren't related to a specific legal entity. You must co
 
     For a reverse charge scenario, set up two tax codes, one of which has a positive tax rate, and the other of which has a negative tax rate but the same rate value. Mark the negative tax code as **Is reverse charge**. For more information about the reverse charge solution in Finance, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
     
-    For some tax types which should be excluded in the tax base amount calculation for price inclusive transactions, like custom duty in some countries, select the check box of "Exclude in Base Amount Calculation".
+    For some tax types which should be excluded in the tax base amount calculation for price inclusive transactions, like custom duty in some countries, select the **Exclude in Base Amount Calculation** check box.
 
     Maintain tax rates and the tax amount limits for this tax code.
 
