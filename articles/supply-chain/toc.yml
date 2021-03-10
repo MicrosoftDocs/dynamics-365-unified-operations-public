@@ -81,7 +81,7 @@
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
-            href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md
+            href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
           - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
             href: get-started/removed-deprecated-features-scm-updates.md
           - name: Removed or deprecated features in previous releases
