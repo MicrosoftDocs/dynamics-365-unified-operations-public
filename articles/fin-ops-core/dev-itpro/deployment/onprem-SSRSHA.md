@@ -4,11 +4,11 @@ This article explain how to configure multiple SSRS nodes for Finance + Operatio
 
 ## High Availability with Windows Failover Clusters
 
-In this scenario we will make use of Windows Failover Clusters. With this scenario we would have one active node that would receive all requests and one passive node that would be idle. In the event that the active node were to become unavailable then the cluster would detect this and the passive node would then receive all network traffic.
+In this scenario, we'll make use of Windows Failover Clusters. As such, we would have one active node that would receive all requests and one passive node that would be idle. If the active node were to become unavailable then the cluster would detect this event and the passive node would then receive all network traffic.
 
-Setting up Windows Failover Cluster is not covered in this guide. For more information see [Create Failover Cluster](https://docs.microsoft.com/windows-server/failover-clustering/create-failover-cluster).
+Setting up Windows Failover Cluster isn't covered in this guide. For more information, see [Create Failover Cluster](https://docs.microsoft.com/windows-server/failover-clustering/create-failover-cluster).
 
-Once the cluster is setup we will proceed with configuring our installation. The explanations from this point on will be based on the information from the screenshot below.
+Once the cluster is setup we'll continue with configuring our installation. The explanations from this point on will be based on the information from the screenshot below.
 
 ![Example Windows Failover Cluster configuration](./media/WFC.png)
 
@@ -45,7 +45,7 @@ Once the cluster is setup we will proceed with configuring our installation. The
     > [!IMPORTANT]
     > Even if you are not going to generate the certificate using the infrastructure scripts provided, fill out the certificate information as other scripts will rely on the this information.
 
-1. From this point on follow the setup guide as you normally would.
+1. Follow the setup guide as you normally would.
 
     > [!IMPORTANT]
     > Ensure that the nodes are added to the Service Fabric Cluster if you have already created the cluster.
@@ -53,19 +53,19 @@ Once the cluster is setup we will proceed with configuring our installation. The
 
 ## High Availability with load balancers
 
-In this scenario we will make use of a load balancer to distribute requests among the different nodes available. In this scenario the requests will be distributed among the different nodes available. When setting up this configuration it is important to note that it is required to setup session persistence or affinity. So the solution chosen must be able to support such requirement.
+In this scenario, a load balancer is configured to distribute requests among the different nodes available. All report generation requests will be distributed among the different nodes available. When setting up this configuration, it's important to note that it's required to setup session affinity. The solution chosen **must** support such a requirement.
 
-The type of session persistence or affinity that is required is client-based. Meaning that when a client (in our case an AOS node) makes a request, the load balancer should direct all requests for that AOS node to the same SSRS node (as long as that node is still available). If doing session persistence, set the idle timeout to at least 30 minutes. 
+The type of session affinity that is required is client-based. When the AOS node makes a request, the load balancer should direct all requests for that AOS node to the same SSRS node. 
 
-Instructions on setting up a specifc software load balancer or hardware load balancer is not covered in this documentation.
+Instructions on setting up a specifc software load balancer or hardware load balancer are not covered in this documentation.
 
 However, the general overview for this scenario is as follows.
 
 1. Decide on a load balancing strategy/product.
 1. Configure it according to your network topology.
-1. Ensure you have set client (source ip) session persistence or affinity.
+1. Ensure you have set client (source ip) affinity.
 1. Update the ConfigTemplate.xml using the example above as a guide.
-1. Proceed with cluster setup as you normally would. 
+1. Continue with cluster setup as you normally would. 
 
 > [!IMPORTANT]
 > Ensure that the additional nodes are added to the Service Fabric Cluster if you have already created the cluster.
@@ -76,7 +76,7 @@ However, the general overview for this scenario is as follows.
 > [!NOTE]
 > This configuration is only supported with PU41 and later deployments.
 
-For existing environments that want to enable HA for their SSRS nodes, they can use a predeployment script. For more information on predeployment scripts please see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md)
+For existing environments that want to enable HA for their SSRS nodes, they can use a predeployment script. For more information on predeployment scripts, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md)
 
 ### Predeployment script
 
