@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.18
 [!include[banner](../includes/preview-banner.md)]
 
 ## Overview
-This topic explains how to set up and generate the withholding tax declaration and the wihtholding tax declaration forms 41 and 11 for legal entities in Egypt 
+This topic explains how to set up and generate the withholding tax declaration and the withholding tax declaration forms 41 and 11 for legal entities in Egypt 
 
 All Egyptian entities must prepare the form  41 which summarizes all taxes that are retained from local suppliers and service providers. In addition to form 41, form 11 must be generated to detail all of the retained taxed from foreign providers. 
 
@@ -64,7 +64,7 @@ For more information about how to import Electronic reporting configurations, se
 
 ## Download Electronic reporting configurations
 
-The implementation of the WHT declaraton forms for Egypt is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+The implementation of the WHT declaration forms for Egypt is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 For production and user acceptance testing (UAT) environments, follow the instructions in the topic, [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -101,7 +101,6 @@ Complete the following steps to set up the different lookups used to generate th
 7. In the remaining columns, select **Not blank**. 
 
 > [!NOTE]
-> By adding this last record **Not applicable**, you define the following rule: When the **Withholding tax item group** that is passed as an argument doesn't satisfy any of the previous rules, the transactions won't be included in the Withholding declaration form 41. Although this rule is not used when generating the report, the rule does help avoid errors in report generation when there is a missing rule configuration.
 
 ## Set up General ledger parameters
 
@@ -114,14 +113,14 @@ To generate the WHT declaration form reports in Microsoft Excel, define an ER fo
 ![Declaration form](media/egypt-wht-declaration-setup1.png)
 
 ## Generate the Withholding declaration forms
-The process of preparing and submitting a Withholding declaration form for a specific period is based on the withholding tax transactions posted during the settle and post payment tax job. For more information about global witholding tax, see [Global withholding tax](../general-ledger/global-withholding-tax-overview.md).
+The process of preparing and submitting a Withholding declaration form for a specific period is based on the withholding tax transactions posted during the settle and post payment tax job. For more information about global withholding tax, see [Global withholding tax](../general-ledger/global-withholding-tax-overview.md).
 
 Complete the following steps to generate the tax declaration report.
 
 1. Go to **Tax** > **Declarations** > **Withholding tax** > **Withholding tax payment*.
-2. Select the settlement period and then select the from date for hte report. 
+2. Select the settlement period and then select the from date for the report. 
 3. Enter the transaction date and then select **OK**.
-4. In the dialog box that opens, select one or more of the form types **Form No 41 **, **Form No 11**, an **None**. If you select **None**, the standard report is generated. 
+4. In the dialog box that opens, select one or more of the form types **Form No 41 **, **Form No 11**, or **None**. If you select **None**, the standard report is generated. 
 5. Select the language. All reports are translated in **en-us** and **ar-eg**.
 6. Enter the branch and name of the bank where the tax payment will be paid.
 7. Select the business type and then enter the check and document numbers. 
