@@ -39,7 +39,7 @@ When a scale unit warehouse management workload does an inbound or outbound ware
 
 The following warehouse app work processes are currently using the **Warehouse inventory adjustment journal** on the scale unit workloads:
 -	Adjustment in/out
--	Cycle count   ing
+-	Cycle counting
 -	License plate loading
 
 Several inventory transactions will get created as part of a cloud & edge inventory adjustment process because the two deployments ‘share’ the inventory. Let’s look at an example of adding on-hand.
