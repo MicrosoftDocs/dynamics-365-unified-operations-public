@@ -88,16 +88,15 @@ Service operations reflect various aspects of provisioning and use of Finance an
 
 ### Onboarding and implementation
 
-Typical onboarding and implementation events and the expected
-responsibilities for each party are provided in **Table 1.**
+Typical onboarding and implementation events and the expected responsibilities for each party are provided in the following table.
 
-***Table 1.** Onboarding and implementation events *
-
-| **Request ** | <blockquote></br>**Expected Microsoft action **</br></blockquote> | <blockquote></br>**Expected Customer/ **</br>**Implementation Partner action **</br></blockquote> |
+| Request | Expected Microsoft action  | Expected Customer/Implementation Partner action |
 |-------------------------|-------------------------|-------------------------|
-| **Initial offer purchase ** | <blockquote></br>LCS project is created after the purchase of the offer.</br></blockquote> | <blockquote></br>Go through EA or CSP onboarding process. Partner creates tenant for Customer, if applicable.</br></blockquote> |
-| **Add-On purchase ** | <blockquote></br>Grant Customer access to Add-On selected during the implementation.</br></blockquote> | <blockquote></br>Not applicable.</br></blockquote> |
-| **Implementation planning and analysis ** | <blockquote></br>Provide relevant tools in LCS, such as Business Process Modeler and interoperability with Visual Studio Online.</br></blockquote> | <blockquote></br>Project planning, Visual Studio Team Services, System onboarding and admin account setup.</br></blockquote> |
+| Initial offer purchase | LCS project is created after the purchase of the offer. | Go through EA or CSP onboarding process. Partner creates tenant for Customer, if applicable. |
+| Add-On purchase | Grant Customer access to Add-On selected during the implementation. | Not applicable. |
+| Implementation planning and analysis | Provide relevant tools in LCS, such as Business Process Modeler and interoperability with Visual Studio Online. |Project planning, Visual Studio Team Services, System onboarding and admin account setup.|
+
+For more information about the onboarding process, see [Onboard an implementation project](../imp-lifecycle/onboard.md).
 
 
 ### Tenant and data management 
