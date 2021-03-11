@@ -5,7 +5,7 @@ title: Retail store doesn't appear in the list of stores to pick up from
 description: This topic provides troubleshooting guidance that can help when a retail store doesn't appear in the list of stores where items can be picked up.
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/23/2021
+ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
 ms.service: dynamics-365-retail
