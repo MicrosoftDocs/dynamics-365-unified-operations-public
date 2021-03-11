@@ -2,7 +2,7 @@
 # required metadata
 
 title: Items without inventory can be checked out
-description: This topic provides troubleshooting guidance for when customers can add out-of-stock items to the cart and proceed to check out. 
+description: This topic provides troubleshooting guidance that can help when customers can add out-of-stock items to their cart and proceed to checkout.
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -33,22 +33,22 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance for when customers can add out-of-stock items to the cart and proceed to check out.
+This topic provides troubleshooting guidance that can help when customers can add out-of-stock items to their cart and proceed to checkout.
 
 ## Description
 
-A user is able to add an item without on-hand inventory in the store to their cart and proceed to the checkout page.
+Users can add an item to their cart, even though there is no on-hand inventory in the store, and then proceed to the checkout page.
 
 ## Resolution
 
-### Enable the "Show Out Of Stock Errors" property in Commerce site builder
+### Enable the Show Out Of Stock Errors property in Commerce site builder
 
-To enable **Show Out Of Stock Errors** in Commerce site builder, follow these steps.
+To enable the **Show Out Of Stock Errors** property in Commerce site builder, follow these steps.
 
-1. Select the site you're working on.
-1. Select **Pages** in the left navigation.
-1. Select the **CartPage** to open it.
-1. Select the **Cart 1** slot, select **Edit**, and then select the **Show Out Of Stock Errors** check box in the properties pane.
+1. Select the site that you're working on.
+1. In the left navigation, select **Pages**.
+1. Select **CartPage** to open it.
+1. Select the **Cart 1** slot, select **Edit**, and then, in the properties pane, select the **Show Out Of Stock Errors** check box.
 1. Save and publish the page.
 
 ## Additional resources
