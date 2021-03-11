@@ -1,7 +1,37 @@
+---
+# required metadata
 
-# Configuring High Availability for SSRS nodes
+title: Configuring high availability for SQL Server Reporting Services (SSRS) nodes
+description: This article explains how to configure multiple SQL Server Reporting Services (SSRS) nodes for Finance + Operations (on-premises) deployments.
+author: faix
+manager: AnnBe
+ms.date: 03/11/2021
+ms.topic: article
+ms.prod:
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-This article explains how to configure multiple SSRS nodes for Finance + Operations (on-premises) deployments.
+# optional metadata
+
+# ms.search.form:
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: sericks
+# ms.tgt_pltfrm: 
+# ms.custom: NotInTOC
+ms.search.region: Global
+# ms.search.industry:
+ms.author: osfaixat
+ms.search.validFrom: 2021-03-21
+ms.dyn365.ops.version: 10.0.17
+---
+
+# Configuring high availability for SQL Server Reporting Services (SSRS) nodes
+
+[!include[banner](../includes/banner.md)]
+[!include[preview banner](../includes/preview-banner.md)]
+
+This article explains how to configure multiple SQL Server Reporting Services (SSRS) nodes for Finance + Operations (on-premises) deployments.
 
 ## High Availability with Windows Failover Clusters
 
