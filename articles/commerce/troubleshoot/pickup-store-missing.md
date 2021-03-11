@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail store doesn't appear in the list of stores to pick up from
-description: This topic provides troubleshooting guidance for when a retail store doesn't appear in the list of stores to pick up from. 
+description: This topic provides troubleshooting guidance that can help when a retail store doesn't appear in the list of stores where items can be picked up.
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -33,34 +33,34 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting information for when a retail store doesn't appear in the list of stores to pick up from. 
+This topic provides troubleshooting guidance that can help when a retail store doesn't appear in the list of stores where items can be picked up.
 
 ## Description
 
-This topic provides troubleshooting guidance for when a retail store doesn't appear in the list of stores to pick up from.
+A retail store doesn't appear in the list of stores where items can be picked up.
 
 ## Resolution
 
-### Configure longitude and latitude for the store address in Commerce headquarters
+### Configure the longitude and latitude for the store address in Commerce headquarters
 
-To configure longitude and latitude for the store address in Commerce headquarters, follow these steps.
+To configure the longitude and latitude for the store address in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
-1. Find the store that you want to be displayed in the pickup options on the e-commerce site, and take note of the **Operating unit number** value.
+1. Find the store that you want to appear among the pickup options on the e-commerce site. Make a note of its **Operating unit number** value.
 1. Go to **Organization administration \> Organizations \> Operating units**.
-1. Search for the operating unit number that you noted previously. and select the operating unit in the search results list.
+1. Search for the operating unit number that you noted earlier, and then select the operating unit in the search results.
 1. On the **Addresses** FastTab, select **More options**, and then select **Advanced**.
-1. On the **General** FastTab, ensure that the **Longitude** and **Latitude** values are set correctly, including whether they are positive or negative numbers.
+1. On the **General** FastTab, make sure that the **Longitude** and **Latitude** fields are correctly set. As part of this step, make sure that the values are correctly specified as positive or negative numbers.
 
 ### Configure fulfillment groups in Commerce headquarters
 
 To configure fulfillment groups in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channels \> Online stores**.
-1. Select the online store that you want to configure.
+1. Select the online store to configure.
 1. On the Action Pane, select **Set up**, and then select **Fulfillment group assignment**.
 1. On the **Fulfillment group assignment** page, select the fulfillment group for the online store.
-1. Under **Setup**, ensure the retail store is configured correctly for the fulfillment group.
+1. Under **Setup**, make sure that the retail store is correctly configured for the fulfillment group.
 
 ## Additional resources 
 
