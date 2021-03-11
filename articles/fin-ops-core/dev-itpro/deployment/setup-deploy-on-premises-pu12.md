@@ -686,7 +686,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 2. Run the SQL service as a domain user or a group-managed service account.
 3. Get an SSL certificate from a certificate authority to configure SQL Server for Finance + Operations. For testing purposes, you can create and use a self-signed certificate or an AD CS certificate. You will need to replace the computer name and domain name in the following examples.
 
-    **Self-signed certificate for an Always-On SQL instance**
+    **Certificates for an Always-On SQL instance**
 
     If you are setting up testing certificates for Always-On, use the following **remoting** script. This will perform the same as the following **manual** script and steps **a-e**.
 

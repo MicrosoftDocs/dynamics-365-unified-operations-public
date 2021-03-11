@@ -14,6 +14,14 @@ Once the cluster is set up we'll continue with configuring our installation. The
 
 1. Update your configuration file (ConfigTemplate.xml)
 
+    1. Update the ADServiceAccount for the reporting service bootstrappper service.
+
+        ```xml
+        <ADServiceAccount type="gMSA" name="svc-ReportSvc$"  refName="gmsaSSRS">
+            <DNSHostName>svc-ReportSvc.contosoen05.com</DNSHostName>
+        </ADServiceAccount>
+        ```
+
     1. Ensure that under the ServiceFabricCluster section you list all of your servers under the ReportServerType.
 
         ```xml
