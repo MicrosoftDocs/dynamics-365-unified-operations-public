@@ -50,8 +50,8 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
-| [Commerce price engine for sales quotations](commerce-pricing.md) | Get pricing for sales quotations using commerce price engine | General availability |
-| [Notes integration](notes-integration.md) | Notes are integrated between Customer Engagement applications and Finance and Operations applications for customers, vendors, sales orders and purchase orders  | General availability |
+| [Commerce price engine for sales quotations](commerce-pricing.md) | Get pricing for sales quotations using commerce price engine. | General availability |
+| [Notes integration](notes-integration.md) | Notes are integrated between customer engagement apps and Finance and Operations applications for customers, vendors, sales orders, and purchase orders.  | General availability |
 
 ## January 2021 release
 
