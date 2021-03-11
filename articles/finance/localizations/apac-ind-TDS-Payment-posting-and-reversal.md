@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payment, posting and reversal
-description: 
+description: This topic describes payments, posting of payments, and reversal of payments that are associated with Tax Deducted at Source (TDS).
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 10.0.17
 # Payment, posting and reversal
 
 [!include [banner](../includes/banner.md)]
+
+This topic describes payments, posting of payments, and reversal of payments that are associated with Tax Deducted at Source (TDS). 
 
 **Allocation of Payments using Proportional TDS Payment Schedule**
 
