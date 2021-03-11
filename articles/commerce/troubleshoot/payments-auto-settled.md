@@ -5,7 +5,7 @@ title: Payments are automatically settled before orders are invoiced or shipped
 description: This topic provides troubleshooting guidance that can help when a payment is settled in the Adyen portal immediately after an order is placed, even though the sales order hasn't been invoiced or shipped.
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/23/2021
+ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
 ms.service: dynamics-365-retail
