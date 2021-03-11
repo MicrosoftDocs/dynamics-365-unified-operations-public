@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Refund on return order is declined
-description: This topic provides troubleshooting guidance for when a refund on a return order is declined due to invoicing with a credit card that is different from the one used during the original payment authorization. 
+title: Refund on a return order is declined
+description: This topic provides troubleshooting guidance that can help when a refund on a return order is declined because the credit card that is used for invoicing differs from the card that was used during the original payment authorization.
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -29,25 +29,25 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Refund on return order is declined
+# Refund on a return order is declined
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance for when a refund on a return order is declined due to invoicing with a credit card that is different from the one used during the original payment authorization.
+This topic provides troubleshooting guidance that can help when a refund on a return order is declined because the credit card that is used for invoicing differs from the card that was used during the original payment authorization.
 
 ## Description
 
-A refund is declined when invoicing a return order with a credit card that's different from the card that was used during the original payment authorization. The following error message shown in the image below is displayed: "Some of the payments are not in the correct status for posting. Please re-validate the status of all payments prior to invoicing."
+A refund is declined when the credit card that is used to invoice a return order differs from the card that was used during the original payment authorization. You receive the following error message: "Some payments are not in the correct status for posting. Please re-validate the status of all payments prior to invoicing."
 
 The payment authorization details will include the following error message: "Adyen gateway SendRequest() failed with status 'InternalServerError'.22144; Empty response returned from Adyen.(22001);"
 
-![Refund on return order is declined error](media/refund-order-decline.jpg)
+![Declined refund on a return order error](media/refund-order-decline.jpg)
 
 ## Resolution
 
 ### Enable blind returns in Adyen
 
-To enable blind refunds, follow the steps in [Troubleshoot Dynamics 365 Payment Connector for Adyen issues](adyen-support.md) to reach out to the Adyen support team to request that blind refunds be enabled on your Adyen merchant account.
+To enable blind returns, follow the steps in [Troubleshoot Dynamics 365 Payment Connector for Adyen issues](adyen-support.md) to contact the Adyen support team and request that blind returns be enabled on your Adyen merchant account.
 
 ## Additional resources
 
