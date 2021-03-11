@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: The wave allocation method
+title: Wave allocation
 description:
 manager: tfehr
 ms.date: 03/08/2021
@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
 ---
 
-# The wave allocation method
+# Wave allocation
 
 [!include [banner](../includes/banner.md)]
 

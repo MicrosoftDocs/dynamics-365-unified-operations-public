@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: Set up containerization
-description: This topic describes how to automate the containerization of loads in Warehouse management. 
+title: Containerization setup overview
+description: This topic provides an overview of how to set up automated containerization of loads in Warehouse management. 
 author: ShylaThompson
 manager: tfehr 
 ms.date: 07/22/2019
@@ -28,14 +28,16 @@ ms.dyn365.ops.version: Version 7.0.0
 
 <!-- KFM: Recommend to delete this topic and replace with [Set up containerization](../wave-containerization.md) -->
 
-# Set up containerization
+# Containerization setup overview
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to automate the containerization of loads in Warehouse management. Automated containerization creates containers and the picking work for shipments when a wave is processed and work lines can be split into quantities that fit the containers. This helps warehouse workers to pick the items directly into the chosen container. Compared to the manual packing process, tasks such as creating containers, assigning items, and closing containers are automated by the system. This procedure uses the USMF demo company and is performed by a Warehouse manager.
+This topic provides an overview of how to set up automated containerization of loads in Warehouse management. Automated containerization creates containers and the picking work for shipments when a wave is processed and work lines can be split into quantities that fit the containers. This helps warehouse workers to pick the items directly into the chosen container. Compared to the manual packing process, tasks such as creating containers, assigning items, and closing containers are automated by the system.
 
+For more information about how to set up containerization, see [Containerization](../wave-containerization.md).
 
 ## Set up a wave template
+
 1. In the navigation pane, go to **Modules > Warehouse management > Setup > Waves > Wave templates**.
 2. Select **New**.
 3. In the **Wave template name** field, type a value.
@@ -48,6 +50,7 @@ This topic describes how to automate the containerization of loads in Warehouse 
 10. Close the page.
 
 ## Set up a container type
+
 1. In the navigation pane, go to **Modules > Warehouse management > Setup > Containers > Container types**. You can define your containers in the **Container types** page. You can configure the physical dimensions of containers including tare weight, maximum weight, maximum volume, length, width, and height. In this example, we have three different sizes of boxes.  
 2. Select **New**.
 3. In the **Container type code** field, type a value.
@@ -59,12 +62,13 @@ This topic describes how to automate the containerization of loads in Warehouse 
 9. In the **Height** field, enter a number.
 10. In the **Description** field, type a value.
 11. Select **Save**.
-13. Repeat steps 2-11 two more times to make three total container types.
-14. Close the page.
+12. Repeat steps 2-11 two more times to make three total container types.
+13. Close the page.
 
 ## Set up a container group
+
 1. In the navigation pane, go to **Modules > Warehouse management > Setup > Containers > Container groups**.
-2. On the Action Pane, select **New**. You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill.The size dimensions of the item is used to determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.    
+2. On the Action Pane, select **New**. You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill.The size dimensions of the item is used to determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.
 3. In the **Container group ID** field, type a value that you created earlier.
 4. In the **Description field**, type a value.
 5. Repeat steps 2-4 for all three container types you created earlier.
@@ -72,6 +76,7 @@ This topic describes how to automate the containerization of loads in Warehouse 
 7. Close the page.
 
 ## Set up a container build template
+
 1. In the navigation pane, go to **Modules > Warehouse management > Setup > Containers > Container build templates**.
 2. Select **New**. The container build template is based on which of the containerization processes are performed. Each container build template defines one containerization process that will be used by a wave template. The **Edit query** option allows you to define the conditions on which the selected template will be processed. For example, you may want to only run containerization for specific customers, products, or warehouses or you can add the corresponding query ranges to the template. The **Wave step code** field is how a container build template is linked to steps in a wave template. When a wave is executed, it determines which container build template(s) are used to initiate containerization. The Base query type field determines what to pack and what to base the filter query on. 
 3. In the **Container template ID** field, type a value.
@@ -84,7 +89,5 @@ This topic describes how to automate the containerization of loads in Warehouse 
 10. In the **Table** field, select an option.
 11. In the **Field Select** field, enter or select a value.
 12. Select **OK**.
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

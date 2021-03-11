@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: Configure wave processing
-description: This guide describes how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically. 
+title: Example of how to configure wave processing
+description: This topic provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically.
 author: ShylaThompson
 manager: tfehr 
 ms.date: 07/01/2019
@@ -25,14 +25,22 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Configure wave processing
+# Example of how to configure wave processing
 
 [!include [banner](../../includes/banner.md)]
 
-This guide describes how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically. You specify the criteria by setting up wave templates and queries that match a wave with released lines in sales orders, production orders, or kanban orders. Wave processing is used in warehouses that use the functionality in the Warehouse management module, and not those that use the functionality in the Inventory management module. You can run this procedure in demo data company USMF.
+This topic provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically. You specify the criteria by setting up wave templates and queries that match a wave with released lines in sales orders, production orders, or kanban orders.
+
+## Enable sample data
+
+To work through this scenario using the sample records and values specified here, you must be using a system where the standard demo data is installed. You must also select the **USMF** legal entity before you begin.
+
+## Example scenario: configure wave processing
+
+This example scenario walks through many of the diverse settings that affect the way waves are created, populated, processed, and released.
 
 1. Go to **Navigation pane > Modules > Warehouse management > Setup > Waves > Wave templates**.
-2. Click **New**.
+2. Select **New**.
 3. In the **Wave template name** field, type a value. When you set up a wave template, you specify the sequence in which the templates will be matched to released lines on sales orders, production orders, or kanbans. When a line is released to the warehouse or to production, it uses the first wave template that it meets the criteria for. We recommend that you put templates with the most specific criteria at the top of the list. The broader the criteria, the more likely it is for a line to meet the criteria, and this could lead to lines being assigned to the wrong wave.  
 4. In the **Wave template description** field, type a value.
 5. In the **Site** field, enter or select a value. If you're using USMF, you can select site 2.  
@@ -47,19 +55,19 @@ This guide describes how to set up the criteria that determine what work is gene
 
     - Wave template methods allow you to control the sequence of activities that each wave is going through when it's processed. For example, you might have a method for wave replenishment. When you add a method, it's automatically listed in the appropriate location in the sequence of steps. If you've set the Automate replenishment work release option to Yes, you need to add the replenish method here.  
     - Wave attributes act as filters, to restrict the kind of items that can use the wave. For example, you could specify an item group.  
-14. Click **Save**.
+14. Select **Save**.
 15. Close the page.
 16. Go to **Warehouse management > Setup > Warehouse management parameters**.
 17. Expand the **Wave processing** section.
 18. In the **Wave processing batch group** field, enter or select a value.
 19. Set the **Process waves in batch option** to **Yes**.
 20. In the **Wait for lock (ms)** field, enter a number. Enter the time, in milliseconds, that an allocation step will wait for a system resource that is locked by another allocation step. When this time is exceeded, the wave is not processed and an error message is displayed.  
-21. Click **Save**.
+21. Select **Save**.
 22. Close the page.
 23. Go to **Navigation pane > Modules > Production control > Setup > Production control parameters**.
 24. In the **Release to warehouse** field, select an option.
 
-For sales orders and kanban orders, inventory must be reserved before the order is released to the warehouse. Otherwise, the items or allocation lines cannot be processed in a wave. For production orders, you also have the option of choosing Allow partial reservation. For example, this is useful if you have the materials that you need to start production, and can then wait until the additional materials become available to finish the process. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available.  
+    For sales orders and kanban orders, inventory must be reserved before the order is released to the warehouse. Otherwise, the items or allocation lines cannot be processed in a wave. For production orders, you also have the option of choosing Allow partial reservation. For example, this is useful if you have the materials that you need to start production, and can then wait until the additional materials become available to finish the process. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available.  
 25. Close the page.
 
 

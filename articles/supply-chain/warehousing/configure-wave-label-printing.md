@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up and use wave label printing
+title: Wave label printing
 description: This topic describes wave label printing and explains how to set it up.
 author: GarmMSFT
 manager: PJacobse
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.0
 
 ---
 
-# Set up and use wave label printing
+# Wave label printing
 
 [!include [banner](../includes/banner.md)]
 

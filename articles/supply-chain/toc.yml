@@ -2835,8 +2835,6 @@
             href: warehousing/system-directed-cluster-pick.md
           - name: Set different dimensions for packing and storage
             href: warehousing/packing-vs-storage-dimensions.md
-          - name: Set up containerization
-            href: warehousing/tasks/set-up-containerization.md
           - name: Batch and license plate confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
           - name: Enable license plate label printing
@@ -2897,10 +2895,6 @@
             href: warehousing/advanced-load-building-during-wave.md
           - name: Release to warehouse rule
             href: warehousing/release-to-warehouse-rule.md
-          - name: Wave template grouping
-            href: warehousing/wave-template-grouping.md
-          - name: Reprint and void wave labels
-            href: warehousing/reprint-and-void-wave-labels.md
           - name: Small parcel shipping
             href: warehousing/small-parcel-shipping.md
           - name: Troubleshoot load building and shipments
@@ -2999,14 +2993,32 @@
             href: warehousing/filters-and-filter-codes.md
           - name: Location stocking limits
             href: warehousing/location-stocking-limits.md
-          - name: Wave step codes
-            href: warehousing/wave-step-codes.md
-          - name: Configure wave processing
-            href: warehousing/tasks/configure-wave-processing.md
-          - name: Schedule work creation during wave
-            href: warehousing/configure-wave-schedule-work-creation.md
-          - name: Set up and use wave label printing
-            href: warehousing/configure-wave-label-printing.md
+          - name: Wave generation, processing, and containerization
+            items:
+            - name: Wave creation and processing
+              href: warehousing/wave-processing.md
+            - name: Example of how to configure wave processing
+              href: warehousing/tasks/configure-wave-processing.md
+            - name: Warehouse parameters for wave processing
+              href: warehousing/wave-warehouse-parameters.md
+            - name: Wave templates
+              href: warehousing/wave-templates.md
+            - name: Wave step codes
+              href: warehousing/wave-step-codes.md
+            - name: Wave template grouping
+              href: warehousing/wave-template-grouping.md
+            - name: Wave allocation
+              href: warehousing/wave-allocation-method.md
+            - name: Schedule work creation during wave
+              href: warehousing/configure-wave-schedule-work-creation.md
+            - name: Wave label printing
+              href: warehousing/configure-wave-label-printing.md
+            - name: Reprint and void wave labels
+              href: warehousing/reprint-and-void-wave-labels.md
+            - name: Containerization
+              href: warehousing/wave-containerization.md
+            - name: Containerization setup overview
+              href: warehousing/tasks/set-up-containerization.md
           - name: Auto-update shipments
             href: warehousing/auto-update-shipment.md
           - name: Create a location profile

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create, process, and release a wave
+title: Wave creation and processing
 description: This topic describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
 author: Mirzaab
 manager: tfehr
@@ -27,11 +27,11 @@ ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
 ---
 
-# Create, process, and release a wave
+# Wave creation and processing
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order. You can create waves as follows:
+This topic describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order. You can create waves for the following types of orders:
 
 - **Sales orders** – Use shipping waves to include lines from sales orders. When a sales order is released to the warehouse, the sales order lines can be included in the wave.
 - **Production orders** – Use production waves to include lines from the bill of materials (BOM) for a product.
@@ -39,27 +39,32 @@ This topic describes how to create, process, and release a wave to create pickin
 
 For sales orders and kanban orders, inventory must be reserved before the order is released to the warehouse. Otherwise, the items or allocation lines can't be processed in a wave. However, production orders are slightly more flexible. For production orders, you can choose either of the following options:
 
-- Allow production orders to be released to the warehouse even though all materials can't be reserved. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available. For example, this is useful if you have the materials that you need to start a production, and can wait until the additional materials become available.
 - Require that all materials are reserved before an order can be released to the warehouse.
+- Allow production orders to be released to the warehouse even though all materials can't be reserved. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available. For example, this is useful if you have the materials that you need to start a production, and can wait until the additional materials become available.
 
-You can specify the default value in the **Release to warehouse** field in **Production control parameters**. However, you can change the setting for a specific production order at any time.
+You can specify which of these production order options to use by default using the **Requirement for material reservation** field on the **Production control parameters** page. However, you can change the setting for each specific production order as needed.
 
-> [!NOTE]
-> You can also automate all or part of the wave processing, and include containerization. For more information, see [Wave templates](wave-templates.md) and 
-[Set up containerization](wave-containerization.md).
+## Creation and process a wave
 
-The following diagram shows the process flow for manually creating, processing, and releasing a shipping wave. The numbers correspond to the procedures later in this topic.
+The following diagram shows the flow for how shipping waves are created, processed, and released. The numbers correspond to the sections later in this section.
 
 ![Process for creating a wave](media/wave-processing-diagram.png "Process for creating a wave")
 
-## Prerequisites
+### Prerequisites
 
-Before you start, a wave template must be available for the type of wave you want to create. This means either a shipping wave, production wave, or kanban wave. Additionally, settings for automation must not be enabled on the wave template. Wave templates determine how to process waves for shipments, production, or kanbans. For more information, see [Wave templates](wave-templates.md).
+Before you start, a wave template must be available for the type of wave you want to create (shipping, production, or kanban). The wave template establishes may settings for how the wave will be generated and processed, including which steps must be done manually and which are done automatically. For more information, see [Wave templates](wave-templates.md).
 
-## 1. Create a wave manually
+### Step 1: Create a wave
+
+#### Automatically create waves based on warehouse and order type
+
+To create waves automatically, set up a [Wave templates](wave-templates.md) that apply for each relevant order type and warehouse and make sure each has its **Automate wave creation** option set to *Yes*.
+
+#### Manually create waves
 
 To manually create a wave, follow these steps:
 
+1. Make sure that the relevant [Wave templates](wave-templates.md) aren't set to automatically create a wave for the warehouse and order types where you want to do so manually.
 1. Depending on the type of wave to create, do one of the following:
 
     - Go to **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
@@ -72,11 +77,22 @@ To manually create a wave, follow these steps:
 
 1. If you want to use wave attributes as additional query criteria for the wave, select the attributes in the **Wave attributes** fields.
 
-## 2. Add loads or shipments, bill of material lines, or kanban picking list to a wave
+### Step 2: Specify what to include in a wave
 
-If you are creating a wave manually, you must add the lines for a load, shipment, production order, or kanban order. This requires that a sales order, production order, or kanban order has been released to the warehouse.
+Once a wave has been created, you are ready to start adding content to it.
 
-To specify what to include in a wave, follow these steps:
+> [!NOTE]
+> If needed, you can add lines to a wave even after it has been processed, provided it has not yet been released.
+
+#### Automatically specify what to include in a wave
+
+To automatically specify what to include in a wave based on the order(s) that created it, make the following settings for each relevant [Wave template](wave-templates.md) that you created in step 1:
+
+<!-- KFM: I need these details. -->
+
+#### Manually specify what to include in a wave
+
+When a wave has been created but not yet released, you can manually specify what to include in it. To add lines to a wave manually:
 
 1. Depending on the type of wave to add lines to, do one of the following:
 
@@ -98,16 +114,23 @@ To specify what to include in a wave, follow these steps:
     > For shipment waves, you can quickly find a particular order by selecting a custom filter in the **Wave filter code** field. Wave filter codes contain query criteria for shipments, which are created in the **Wave filters** form. This field is not available for production waves or kanban waves.
     > A green check mark in the **On wave** column indicates that the shipment has been added to the wave.
 
-## 3. Process the wave to create the picking work
+### Step 3: Process the wave to create the picking work
 
-You can process a wave only when the status is **Created**. After you process a wave, the status of the wave is **Held**.
+Once a wave has been created and contains all of its required lines, you are ready to process it to create the corresponding picking work.
 
-> [!NOTE]
-> If needed, you can add lines to the wave after it has been processed.
+#### Automatically process a wave
 
-To process a wave, follow these steps:
+To automatically process a wave, make the following settings for each relevant [Wave template](wave-templates.md) that you created in step 1:
 
-1. Depending on the type of wave to process, do the following:
+<!-- KFM: I need these details. -->
+
+#### Manually process a wave
+
+You can process a wave only when the **Wave status** is *Created*. After you process a wave, the **Wave status** will be changed to *Held*.
+
+To manually process a wave that has all of its required content, follow these steps:
+
+1. Depending on the type of wave to process, do one of the following:
 
     - Select **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
     - Select **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
@@ -115,19 +138,31 @@ To process a wave, follow these steps:
 
 1. Select the wave to process. On the Action Pane, select **Process**.
 
-## 4. Release the wave to the warehouse to start picking and packing
+### Step 4: Release the wave to the warehouse to start picking and packing
 
 You must process a wave before you can release it. When you release the wave, the picking work is available in the warehouse. You can cancel a wave after it is released, and add more lines, but you can't change the lines.
 
-To release a wave, follow these steps:
+#### Automatically release a wave
 
-1. Depending on the type of wave to release, do the following:
+To automatically release a wave, make the following settings for each relevant [Wave template](wave-templates.md) that you created in step 1:
+
+<!-- KFM: I need these details. -->
+
+#### Manually release a wave
+
+To release a wave manually, follow these steps:
+
+1. Depending on the type of wave to release, do one of the following:
 
       - Select **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
       - Select **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
       - Select **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
 
 1. Select the wave to release. On the Action Pane, select **Release wave**.
+
+## Containerize a wave
+
+<!-- KFM: Give a short intro to what this is and why. Then just link to [Containerization](wave-containerization.md) -->
 
 ## Cancel a wave
 
