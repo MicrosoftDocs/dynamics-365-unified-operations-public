@@ -88,150 +88,158 @@ Service operations reflect various aspects of provisioning and use of Finance an
 
 ### Onboarding and implementation
 
-Typical onboarding and implementation events and the expected responsibilities for each party are provided in the following table.
+Typical onboarding and implementation events and the expected
+responsibilities for each party are provided in **Table 1.**
 
-|Request |	Expected Microsoft action |	Expected Customer/ Implementation Partner action |
-|--------|-----------------------------|--------------------------------------------------|
-|Initial offer purchase |	LCS project is created after the purchase of the offer.  |	Go through EA or CSP onboarding process. Partner creates tenant for Customer, if applicable. |
-|Add-On purchase |	Grant Customer access to Add-On selected during the implementation. |	Not applicable. |
-|Implementation planning and analysis |	Provide relevant tools in LCS, such as Business Process Modeler and interoperability with Visual Studio Online.| 	Project planning, Visual Studio Team Services, System onboarding and admin account setup. |
+***Table 1.** Onboarding and implementation events *
 
-For more information, see [Onboard an implementation project](../imp-lifecycle/onboard.md)
-  
+| **Request ** | <blockquote></br>**Expected Microsoft action **</br></blockquote> | <blockquote></br>**Expected Customer/ **</br>**Implementation Partner action **</br></blockquote> |
+|-------------------------|-------------------------|-------------------------|
+| **Initial offer purchase ** | <blockquote></br>LCS project is created after the purchase of the offer.</br></blockquote> | <blockquote></br>Go through EA or CSP onboarding process. Partner creates tenant for Customer, if applicable.</br></blockquote> |
+| **Add-On purchase ** | <blockquote></br>Grant Customer access to Add-On selected during the implementation.</br></blockquote> | <blockquote></br>Not applicable.</br></blockquote> |
+| **Implementation planning and analysis ** | <blockquote></br>Provide relevant tools in LCS, such as Business Process Modeler and interoperability with Visual Studio Online.</br></blockquote> | <blockquote></br>Project planning, Visual Studio Team Services, System onboarding and admin account setup.</br></blockquote> |
+
+
 ### Tenant and data management 
 
-Typical tenant and data management events for the Service and the responsibilities for each party are described in Table 2.1 for Production Instances and Table 2.2 for Non-Production Instances.   
+Typical tenant and data management events for the Service and the
+responsibilities for each party are described in **Table 2.1** for
+Production Instances and **Table 2.2** for Non-Production Instances.
 
-|Customer's request |	Customer's responsibility |	Microsoft's responsibility |	Microsoft's lead time |	Microsoft's estimated maintenance downtime |
-|-------------------|----------------------------|---------------------------|--------------------------|------------------------------------------|
-|Deploy a new Production Instance |	Request submitted through service request in LCS and available through LCS for self-service deployments.<br><br>- Accurately complete the sizing questionnaire in the LCS Subscription Estimator before requesting a Production Instance.<br><br>- Complete all implementation tasks specified in the LCS checklists. |- Complete Go live health check from Microsoft Fasttrack Services.<br><br>- Deploy a Production Instance only after Customer has completed all LCS checklists and notify Customer of the provisioned environment through email.|	2 business days* | N/A |
-|Copy a Non-Production Instance database to a Production Instance before go-live.<br><br>(Note: This request is not available if Customer already is live in production) |	Request submitted through service request in LCS and available through LCS for self-service deployments.<br><br>Validation and sign-off. 	|Copy a Non-Production Instance (e.g., Sandbox Tier 2 Add-on) database to a Production Instance as part of the go-live process. |	5 hours*| 	1-4 hours |
-|Maintenance mode 	| - Put AOS in maintenance mode through LCS.<br><br>- Complete necessary maintenance.<br><br>- Request to put the AOS back into active mode. |	N/A |	N/A 	|2 hours| 
+| **Customer's request ** | <blockquote></br>**Customer's responsibility **</br></blockquote> | <blockquote></br>**Microsoft's responsibility **</br></blockquote> | <blockquote></br>**Microsoft's lead time **</br></blockquote> | <blockquote></br>**Microsoft's estimated maintenance downtime **</br></blockquote> |
+|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
+| **Deploy a new **</br>**Production Instance ** | <blockquote></br>Request submitted through service request in LCS and available through LCS for self-service deployments.</br></blockquote></br><ul></br><li><blockquote></br>Accurately complete the sizing questionnaire in the LCS Subscription Estimator before requesting a Production Instance.</br></blockquote></li></br><li><blockquote></br>Complete all implementation tasks specified in the LCS checklists.</br></blockquote></li></br></ul> | <ul></br><li><blockquote></br>Complete Go live health check from Microsoft Fasttrack Services.</br></blockquote></li></br><li><blockquote></br>Deploy a Production</br></blockquote></li></br></ul></br><blockquote></br>Instance only after Customer has completed all LCS checklists and notify Customer of the provisioned environment through email.</br></blockquote> | <blockquote></br>2 business days*</br></blockquote> | <blockquote></br>N/A</br></blockquote> |
+| **Copy a Non-**</br>**Production Instance database to a Production Instance before go-live.** <em>(Note: This request is not available if Customer already is live in production)</em> | <blockquote></br>Request submitted through service request in LCS and available through LCS for self-service deployments.</br>• Validation and sign-off.</br></blockquote> | <blockquote></br>• Copy a Non-</br></blockquote></br>Production Instance</br>(e.g., Sandbox Tier 2</br><blockquote></br>Add-on) database to a Production Instance as part of the go-live process.</br></blockquote> | <blockquote></br>5 hours*</br></blockquote> | <blockquote></br>1-4 hours</br></blockquote> |
+| **Maintenance mode ** | <ul></br><li><blockquote></br>Put AOS in maintenance mode through LCS.</br></blockquote></li></br><li><blockquote></br>Complete necessary maintenance.</br></blockquote></li></br><li><blockquote></br>Request to put the AOS back into active mode.</br></blockquote></li></br></ul> | <blockquote></br>N/A</br></blockquote> | <blockquote></br>N/A</br></blockquote> | <blockquote></br>2 hours</br></blockquote> |
 
-Microsoft will provide point in time restoration of Customer’s Non-Production Instance databases as described in Table 2.2.
 
-|Customer's request |	Customer's responsibility |	Microsoft's responsibility |	Microsoft's lead time |	Microsoft's estimated maintenance downtime |
-|-------------------|-----------------------------|------------------------------|-----------------------|----------------------------------------|
-|New sandbox instance |	Request submitted through service request in LCS and available through LCS for selfservice deployments.<br><br>- Ensure all the instances needed, have been planned and Add-On offers purchased.<br><br>- Complete all implementation tasks specified in the LCS checklists. 	|- Ensure instance request is against a base subscription or an AddOn offer.<br><br>- Deploy the instance and notify the Customer and Implementation Partner.<br><br>- A sandbox instance is a Tier-1 development or build environment or a Tier-2 (or higher). Tier-2 (or higher) environments are multibox environments closer in topology to a production environment. |	2 business days* |	N/A |
-|Copy golden configuration database from Dev/Test to Sandbox before go-live |	- Validation and sign-off.<br><br>- Prepare and export the database from a development environment 
-(Tier 1).<br><br>- Trigger the import operation through LCS and update the database to a sandbox environment (Tier 2 or higher). |	N/A |	N/A 	|1-4 hours |
-|Copy a Production Instance database to a Non-Production Instance |	Trigger the copy operation through LCS.<br><br>- Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configuration (such as integration endpoints) and enable or add users.<br><br>- Customer should make these changes by applying a data package. |	N/A |	N/A 	|1-4 hours |
-|Non-Production Instance database point in time restore 	|Accept that process cannot be undone.<br><br>Trigger the point in time restore operation through Lifecycle Services.  |	N/A |	N/A 	|1-8 hours |
-|Copy Tier 2 Sandbox database to a Tier 1 Sandbox for troubleshooting and debugging |	Trigger database export operation through LCS on the sandbox environment.<br><br>Import and update the database in Tier 1 environment.| 	N/A |	N/A |	1-4 hours |
+Microsoft will provide point in time restoration of Customer's
+Non-Production Instance databases as described in **Table 2.2.**
+
+| **Customer's request ** | <blockquote></br>**Customer's responsibility **</br></blockquote> | <blockquote></br>**Microsoft's responsibility **</br></blockquote> | <blockquote></br>**Microsoft's lead time **</br></blockquote> | <blockquote></br>**Microsoft's estimated maintenance downtime **</br></blockquote> |
+|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
+| **New sandbox instance ** | <blockquote></br>Request submitted through service request in LCS and available through LCS for selfservice deployments.</br></blockquote></br><ul></br><li>Ensure all the instances needed, have been planned and Add-On offers purchased.</li></br><li>Complete all implementation tasks specified in the LCS checklists.</li></br></ul> | <ul></br><li>Ensure instance request is against a base subscription or an AddOn offer.</li></br><li>Deploy the instance and notify the Customer and Implementation Partner.</li></br><li>A sandbox instance is a Tier-1 development or build environment or a</li></br></ul></br><blockquote></br>Tier-2 (or higher). Tier-2</br>(or higher) environments are multibox environments closer in topology to a production environment.</br></blockquote> | <blockquote></br>2 business days*</br></blockquote> | <blockquote></br>N/A</br></blockquote> |
+| **Copy golden configuration database from Dev/Test to Sandbox before go-live ** | <ul></br><li>Validation and sign-off.</li></br><li>Prepare and export the database from a development environment</li></br></ul></br><blockquote></br>(Tier 1).</br></blockquote></br><ul></br><li>Trigger the import operation through LCS and update the database to a sandbox environment (Tier 2 or higher).</li></br></ul> | <blockquote></br>N/A</br></blockquote> | <blockquote></br>N/A</br></blockquote> | <blockquote></br>1-4 hours</br></blockquote> |
+| **Copy a Production Instance database to a Non-**</br>**Production Instance ** | <blockquote></br>Trigger the copy operation through LCS.</br></blockquote></br><ul></br><li>Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configuration (such as integration endpoints) and enable or add users.</li></br><li>Customer should make these changes by applying a data package.</li></br></ul> | <blockquote></br>N/A</br></blockquote> | <blockquote></br>N/A</br></blockquote> | <blockquote></br>1-4 hours</br></blockquote> |
+| **Non-Production Instance database point in time restore ** | <blockquote></br>Accept that process cannot be undone.</br>• Trigger the point in time restore operation through Lifecycle Services.</br></blockquote> | <blockquote></br>N/A</br></blockquote> | <blockquote></br>N/A</br></blockquote> | <blockquote></br>1-8 hours</br></blockquote> |
+| **Customer's request ** | <blockquote></br>**Customer's responsibility **</br></blockquote> | <blockquote></br>**Microsoft's responsibility **</br></blockquote> | <blockquote></br>**Microsoft's lead time **</br></blockquote> | <blockquote></br>**Microsoft's estimated maintenance downtime **</br></blockquote> |
+| **Copy Tier 2 **</br>**Sandbox database to a Tier 1 Sandbox for troubleshooting and debugging ** | <blockquote></br>Trigger database export operation through LCS on the sandbox environment.</br>• Import and update the database in Tier 1 environment.</br></blockquote> | <blockquote></br>N/A</br></blockquote> | <blockquote></br>N/A</br></blockquote> | <blockquote></br>1-4 hours</br></blockquote> |
+
 
 ### Data back-up and retention 
 
-Databases are protected by automatic back-ups. Automatic back-ups are Databases are protected retained for 30 days unless Microsoft performs a rollback. Rollbacks may by automatic back-ups as be performed in the event a failure occurs during any planned maintenance update specified in Table 4. For more information, see [Automated backups - Azure SQL Database & SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
+Databases are protected by automatic back-ups. Automatic back-ups are
+*Databases are protected* retained for 30 days unless Microsoft performs
+a rollback. Rollbacks may *by automatic back-ups as* be performed in the
+event a failure occurs during any planned maintenance update specified
+in **Table 4**.
 
-### Service activity responsibilities
+### Service activity responsibilities 
 
-The following table describes some typical scenarios and activities for the Service along with the responsibilities of Microsoft, Customer, or both concerning such activities.
+**Table 3** describes some typical scenarios and activities for the
+Service along with the responsibilities of Microsoft, Customer, or both
+concerning such activities.
 
-|Activity |	Microsoft |	Customer |
-|---------|---------------|--------|
-|**Provisioning initial tenants**  |
-|Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  | X|
-|Provision all Production Instances and Non-Production Instances | X |  | 	 
-|Validate the deployed Production Instances and Non-Production Instances |  |  X|	 
-|**Service updates** 	 |
-|Microsoft applies service updates to a designated Non-Production and |X  | X |
-|Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  | X |	 	
-|Request extension updates to be applied to the Production Instance 	 	| |  X|
-|Create code and data backup for Production Instance before applying any updates 		|X  |  | 
-|In case of any failure, roll back Production instance to code and data backup 	|X  |  | 	 
-|**Data management (Backup, restore, and update)** |
-|Backup database  	|X  |  |
-|Determine HA and disaster recovery plan |X  |  |	 	 
-|Monitor Production Instance database performance 	|X  | X |
-|Tuning the Production Instance database for performance  |X  |X  |	
-|Initiate copy of Production Instance database to Non-Production Instance 	 |  |X  |	
-|**Update infrastructure** 	 |
-|Schedule regular infrastructure updates |X  |  |		 
-|**Scale up and down (Users, storage, instances)**	 |
-|Purchase additional users and Non-Production add-ons |  | X |	 	
-|Changes in usage must be updated in the LCS’ Subscription Estimator tool|  |X  | 	  
-|Report any significant performance issues impacting usage of the Service |  | X |	 	
-|Proactively manage the resources needed for the Service applicable Service |X  |  |	 	 
-|Investigate and troubleshoot Incidents 	|X  |X  |
-|**Security (User access)** 	|
-|Provide user access to the Service 	|  |X  | 
-|Provide LCS project access for managing and operating instances deployed through LCS 	|  | X |
-|**Monitor Production Instance** 	  |
-|Monitor Production Instances 24x7 	| X | X |
-|Notify Customer proactively of incidents with the Production Instance |X  |  |		 
-|**Manage and Monitor Non-Production Instances**   |	
-|Manage Non-Production Instances with LCS |  | X | 	 
-|Monitor Non-Production Instances |  |X  |
+***Table 3.** Activities managed by Microsoft or Customer *
 
-### Service update strategy and maintenance windows
+| **Activity ** | **Microsoft ** |
+|-------------------------|-------------------------|
+| **Provisioning initial tenants ** |  |
+| Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  |
+| Provision all Production Instances and Non-Production Instances | ⚫ |
+| Validate the deployed Production Instances and Non-Production Instances |  |
+| **Service updates ** |  |
+| Microsoft applies service updates to a designated Non-Production and</br>Production Instances | ⚫ |
+| Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  |
+| Request extension updates to be applied to the Production Instance |  |
+| Create code and data backup for Production Instance before applying any updates | ⚫ |
+| In case of any failure, roll back Production instance to code and data backup | ⚫ |
+| **Data management** <em>(Backup, restore, and update)</em> |  |
+| Backup database | ⚫ |
+| Determine HA and disaster recovery plan | ⚫ |
+| Monitor Production Instance database performance | ⚫ |
+| Tuning the Production Instance database for performance | ⚫ |
+| Initiate copy of Production Instance database to Non-Production Instance |  |
 
-Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md). All versions of Finance and Supply Chain Management will use the new Microsoft Modern Lifecycle Policy. The Modern Lifecycle covers products that are serviced and supported continuously. 
 
-[Service updates](../../dev-itpro/lifecycle-services/oneversion-overview.md) to the Finance and Supply Chain Management application and platform are handled as follows. 
+| **Activity ** | **Microsoft ** |
+|-------------------------|-------------------------|
+| **Update infrastructure ** |  |
+| Schedule regular infrastructure updates | ⚫ |
+| **Scale up and down** <em>(Users, storage, instances)</em> |  |
+| Purchase additional users and Non-Production add-ons |  |
+| Changes in usage must be updated in the LCS' Subscription Estimator tool |  |
+| Report any significant performance issues impacting usage of the Service |  |
+| Proactively manage the resources needed for the Service applicable Service | ⚫ |
+| Investigate and troubleshoot Incidents | ⚫ |
+| **Security** <em>(User access)</em> |  |
+| Provide user access to the Service |  |
+| Provide LCS project access for managing and operating instances deployed through LCS |  |
+| **Monitor Production Instance** |  |
+| Monitor Production Instances 24x7 | ⚫ |
+| Notify Customer proactively of incidents with the Production Instance | ⚫ |
+| **Manage and Monitor Non-Production Instances** |  |
+| Manage Non-Production Instances with LCS |  |
+| Monitor Non-Production Instances |  |
 
--	**Customers that are on version 8.1 and higher**: The application and the platform components are released as a single cumulative update called deployable package for customers to uptake. Microsoft notifies the customer when a new service update is made available. Starting April 2019, Microsoft will update your environments to the latest released update by Microsoft within the maintenance window configured in your LCS project. Unless the service update is paused, the environment will be updated to the latest release. Customers have the option to take the update outside of the scheduled maintenance window. We recommend customers to stay current for a better service experience. 
 
--	**Customers that are on version 8.0 and lower**: The application updates are released as granular X++ updates while the platform is released as a cumulative binary update. Microsoft requires each customer to be current on the latest Finance and Supply Chain Management platform update. Starting April 2018, Microsoft will update your environments to the latest release of the platform within the maintenance window configured in your LCS project. Customers can also get the service update via LCS and can apply it to their environments on their own prior to Microsoft initiating the service update. 
+### Service update strategy and maintenance windows 
 
-    X++ updates must be applied on a development environment before they can be deployed on a sandbox, staging, or production environment. Binary updates can be applied directly on any environment but must be validated on the Customer’s sandbox environment before being promoted to a production environment. Refer to Table 4 for more detailed instructions. 
+Customers must stay current on the latest service updates in accordance
+with the [*software lifecycle*
+*policy*.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy)
+All versions of Finance and Supply Chain Management will use the new
+Microsoft Modern Lifecycle Policy. The Modern Lifecycle covers products
+that are serviced and supported continuously.
 
-Please note that some service updates may be mandatory and require no consent. To help protect our Customers and the service, Microsoft may apply critical security updates directly to a Customer’s Finance and Operations production environment. 
-Software lifecycle policy. 
- 
-For more information see, the Finance and Supply Chain Management [update FAQ](one-version.md). 
+Service
+[*Updates*](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview)
+to the Finance and Supply Chain Management application and platform are
+handled as follows.
 
-### Planned maintenance responsibilities
+- **Customers that are on version 8.1 and higher:** The application
+    > and the platform components are released as a single cumulative
+    > update called deployable package for customers to uptake.
+    > Microsoft notifies the customer when a new service update is made
+    > available. Starting April 2019, Microsoft will update your
+    > environments to the latest released update by Microsoft within the
+    > maintenance window configured in your LCS project. Unless the
+    > service update is paused, the environment will be updated to the
+    > latest release. Customers have the option to take the update
+    > outside of the scheduled maintenance window. We recommend
+    > customers to stay current for a better service experience.
 
-Microsoft provides Customers with the types of updates to Finance and Supply Chain Management set forth in Table 4. These updates may require downtime on the production environment. The downtime window can be categorized as Microsoft Planned Maintenance (initiated by Microsoft) or Customer Planned Maintenance (initiated by the Customer). Updates are scheduled with the Customer via LCS.
+- **Customers that are on version 8.0 and lower:** The application
+    > updates are released as granular X++ updates while the platform is
+    > released as a cumulative binary update. Microsoft requires each
+    > customer to be current on the latest Finance and Supply Chain
+    > Management platform update. Starting April 2018, Microsoft will
+    > update your environments to the latest release of the platform
+    > within the maintenance window configured in your LCS project.
+    > Customers can also get the service update via LCS and can apply it
+    > to their environments on their own prior to Microsoft initiating
+    > the service update.
 
-The responsibilities of Microsoft, the Implementation Partner, and the Customer are reflected in Table 4 for each update type.
+X++ updates must be applied on a development environment before they
+can be deployed on a sandbox, staging, or production environment.
+Binary updates can be applied directly on any environment but must be
+validated on the Customer's sandbox environment before being promoted
+to a production environment. Refer to **Table 4** for more detailed
+instructions.
 
-|Type of update | Expected action from Microsoft | Expected action from customer or implementation partner | Maintenance window (Microsoft's estimated maintenance downtime) |
-|---------------|--------------------------------|---------------------------------------------------------|------------------------------------------------------------------|
-|**Customers that are on version 8.1 and higher** |	
-|**Service updates**<br><br>**Service updates** are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible.| Initiate updates to the application within the configured maintenance window. | Customer must always stay current on the latest version of the application.| Microsoft initiated maintenance window:<br><br>30 minutes – 4 hours*| 
-|**Critical update**<br><br>Update that solves a critical issue. |Notify Customer of the critical update. <br><br>Initiate update within the specified timeline. | Apply the critical update. |	Microsoft initiated maintenance window:<br><br>30 minutes – 4 hours |
-|**Extensions**<br><br>Change to the standard business application logic. |	No action required. |	Validate extensions in customer’s Non-Production Instances and then promote them to Customer’s Production Instance. 	| Customer initiated maintenance window:<br><br> 1 – 4 hours |
-|**Customers that are on version 8.0 and lower**| 
-|**Platform updates Platform updates are collections of hot fixes and new features for the platform, provided as a deployable package. They are backward compatible. They are also backward compatible with the last major release of the applicable Service.  	Initiate updates to the platform within the configured maintenance window. 	Customer must always stay current on the latest version of the platform. 	Microsoft initiated maintenance window 
-30 minutes – 4 hours** 
-Major releases 
-Major releases for the Service include new functionality. The last major update is 8.1. 	Make the new major release available and publish to LCS. 	Prepare for the upgrade according to the LCS instructions and best practices. 	Customer initiated maintenance window 
-5 – 8 hours 
-Infrastructure updates Infrastructure updates are updates made to the underlying infrastructure like OS updates. These are done monthly. 	Initiate updates within the Microsoft planned maintenance window. 	No action needed. 	Microsoft initiated maintenance window 
-1 – 4 hours 
-Dynamics 365 for Finance and Supply Chain 
-Management   
-IP address whitelisting - 
-Securing access from 
-Customer’s corpnet to Supply Chain Management. 	Finance and 
-Operations is an Azure Service and uses Azure IP address range. 	Customers need to whitelist the Azure datacenter ranges for both their Primary and Geo-DR datacenters. 
-Link to doc for IP address ranges for Azure. 	N/A 
-N/A 
-Security 
-Secure Infrastructure. 	Microsoft installs  
-Anti-Malware, uses SSL, Rotate secrets, and adheres strictly to SOC/ISO standards. 	Refer to https://www. microsoft.com/en-us/ trustcenter/security/ dynamics365-security for more details on Security. 	N/A 
-N/A  
+Please note that some service updates may be mandatory and require no
+consent. To help protect our Customers and the service, Microsoft may
+apply critical security updates directly to a Customer's Finance and
+Operations production environment.
 
- 	 
-Type of update 
-Description 	Expected action 	Maintenance window 
-Microsoft's estimated maintenance downtime 
-	Microsoft 	Customer/ Implementation 
-Partner 	
-Customers that are on version 8.0 and lower 
-Network Security 
-Groups (NSG) 
-With the September LCS release, customers can configure Network Security Group rules to restrict RDP and WinRM access to their Microsoft managed sandbox VMs through LCS. 	Microsoft disallows Remote Desktop access to Sandbox 
-(Tier 1, Tier 2, Tier 3, Tier 4 & Tier 5) environments over the Internet. 
-For self service deployments, RDP is enabled only for Tier1 sandbox. 	Customers need to whitelist their IP Address ranges via LCS to enable RDP access to their environments in Microsoft managed subscriptions. Refer to https://docs.microsoft. com/en-us/dynamics365/ unified-operations/ devitpro/deployment/ clouddeploymentoverview#featuresof-thefinance-andoperationsproduction-instance for more information.  
-N/A 
-N/A 
-ExpressRoute 
-Dedicated connection to 
-Supply Chain Management. 	Finance and 
-Operations enabled ExpressRoute over public peering. 	Customers need to work with the Azure ExpressRoute service providers to acquire a dedicated connection to Finance and Supply Chain Management. 	N/A 
-N/A 
+*Software lifecycle policy.*
+
+*For more information see the* Finance and Supply Chain Management
+**[update
+FAQ.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Funified-operations%2Ffin-and-ops%2Fget-started%2Fone-version&data=02%7C01%7Cradhij%40microsoft.com%7Ce4e025be903e43c60cca08d746c30074%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637055675644947045&sdata=6qcz2mjRgRcT44DREigEsse3j8elWcZcxkJlyKRJyKw%3D&reserved=0)
+**
+
+### Planned maintenance responsibilities 
 
 Microsoft provides Customers with the types of updates to Finance and
 Supply Chain Management set forth in **Table 4.** These updates may
@@ -610,6 +618,3 @@ A single person consuming Finance and Operations, which is associated
 with a Customer's tenant.
 
 33
-
-
-
