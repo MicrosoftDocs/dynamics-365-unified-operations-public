@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Can't configure security group for Commerce site builder during initial deployment
-description: This topic provides troubleshooting guidance for when the Azure Active Directory (Azure AD) security group for Commerce site builder doesn't appear as a dialog box drop-down list option when creating e-commerce components in Microsoft Dynamics Lifecycle Services (LCS) during initial deployment of a new e-commerce tenant.
+title: You can't configure a security group for Commerce site builder during initial deployment
+description: This topic provides troubleshooting guidance that can help when the Microsoft Azure Active Directory (Azure AD) security group for Commerce site builder doesn't appear as an option when you create e-commerce components in Microsoft Dynamics Lifecycle Services (LCS) during initial deployment of a new e-commerce tenant.
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/24/2021
@@ -29,27 +29,27 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Can't configure security group for Commerce site builder during initial deployment
+# You can't configure a security group for Commerce site builder during initial deployment
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance for when the Azure Active Directory (Azure AD) security group for Commerce site builder doesn't appear as a dialog box drop-down list option when creating e-commerce components in Microsoft Dynamics Lifecycle Services (LCS) during initial deployment of a new e-commerce tenant.
+This topic provides troubleshooting guidance that can help when the Microsoft Azure Active Directory (Azure AD) security group for Commerce site builder doesn't appear as an option when you create e-commerce components in Microsoft Dynamics Lifecycle Services (LCS) during initial deployment of a new e-commerce tenant.
 
 ## Description
 
-When implementing the steps to deploy a new e-commerce tenant including the Commerce site builder component, the Azure AD security group doesn't appear as an LCS dialog box drop-down list option when creating the e-commerce components.
+When you create the e-commerce components as part of the process of deploying a new e-commerce tenant that includes the Commerce site builder component, the Azure AD security group doesn't appear as an option in the dialog box.
 
 ## Resolution
 
 ### Provision the e-commerce site with a user in the correct tenant
 
 1. Go to the [Azure portal](https://portal.azure.com/).
-1. Follow the instructions to [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) under the tenant that the LCS project for your e-commerce site was provisioned for.
-1. Go to the [LCS portal](https://lcs.dynamics.com/) and sign in with an account that shares the same tenant as the Azure AD security group that you just created. The account must have access to view the AAD security group.
-1. Navigate through the setup steps to configure the e-commerce site. The security group should now be visible in the dialog box when provisioning the e-commerce components.
+1. Under the tenant that the LCS project for your e-commerce site was provisioned for, follow the instructions in [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+1. Go to [LCS](https://lcs.dynamics.com/), and sign in by using an account that shares the same tenant as the Azure AD security group that you just created. The account must have access to view the Azure AD security group.
+1. Complete the setup steps to configure the e-commerce site. When you provision the e-commerce components, the security group should now appear as an option in the dialog box.
 
 > [!NOTE]
-> For the dialog box drop-down list to be populated with security groups, you must select **Enter** after entering the name of the AAD security group you created. The search results will list all the AAD security groups the user has access to that start with the search text, and you can use a shorter search term to allow for broader search results. 
+> To ensure that the field in the dialog box is filled with the list of security groups, you must select **Enter** after you enter the name of the Azure AD security group that you created. The search results will list all the Azure AD security groups that start with the search text, and that the user has access to. You can use a shorter search term to allow for broader search results.
 
 ## Additional resources
 
