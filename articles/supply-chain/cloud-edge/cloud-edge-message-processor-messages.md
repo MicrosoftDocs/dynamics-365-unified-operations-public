@@ -51,11 +51,11 @@ You can as well use the **Message content** field to filter a full-text search o
 ## Log and Message content
 For each message you can find detailed information as part of the **Log** and **Message content** sections where each processing event can get viewed. The **Message content** depends on the **Message type** and will therefore have different text length. A typically message content text will start with a **{** and end with a **}** and in between have field names like for example **“journalId”** following a **:** and the value like **“USMF-123456”**.
 
-In this area you will find the **Log** button where the processing results can get viewed. This is especially interesting for messages having a **Processing result** as Failed to understand the reason for the processing fail.
+In this area you will find the **Log** button where the processing results can get viewed. This is especially interesting for messages having a **Processing result** as *Failed* to understand the reason for the processing fail.
 
 Note that multiple message processing operations can run as part of the same batch process, this detailed data can get inquired by selecting the **Bundle** button where you e.g. will be able to see if dependencies between messages exists where the processing must happen in a specific sequence.
 
-Most of the message types can get reprocesses when being in a failed state by moving the message back into the Queued state. This gets achieved by selecting the **Queue** button.
+Most of the message types can get reprocesses when being in a failed state by moving the message back into the *Queued* state. This gets achieved by selecting the **Queue** button.
 A message can as well manually get processed or canceled depending on the current message state by selecting the buttons **Process** and **Cancel**.
 
 > [!Note]
