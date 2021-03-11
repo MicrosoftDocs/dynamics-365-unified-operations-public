@@ -89,4 +89,4 @@ The following illustration shows a Commerce infrastructure that includes an exte
 
 ## Additional resources
 
-[Add CDN Support](add-cdn-support.md)
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
