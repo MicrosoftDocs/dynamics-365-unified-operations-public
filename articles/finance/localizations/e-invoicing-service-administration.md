@@ -58,7 +58,7 @@ Before you can use RCS to configure electronic invoices, you must configure RCS 
 
 #### Service endpoint
 
-The URL of the Electronic invoicing add-on endpoint can vary according to the Azure datacenter geography. The following table lists the availability per region:
+The Electronic invoicing add-on is available in several Azure datacenter geography. The following table lists the availability per region:
 
 | Azure datacenter geography |
 |----------------------------|
