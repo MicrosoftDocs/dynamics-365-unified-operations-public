@@ -1,4 +1,5 @@
 
+# Configuring High Availability for SSRS nodes
 
 This article explains how to configure multiple SSRS nodes for Finance + Operations (on-premises) deployments.
 
