@@ -61,8 +61,8 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 486611 | Leave of absence is shown on leave calendar when **Disable leave on all calendars** is enabled | If **Disable leave on all calendars** is enabled, leave or leave of absence information is no longer displayed when the Leave and absence calendar enhancements feature is enabled.|
-| 508972 | Leave and Absence Bank Transaction entity missing validation of enrollment | When using the Leave and Absence Bank Transaction entity, employees not enrolled in a plan are no longer allowed to be imported. |
+| 486611 | Leave of absence is shown on leave calendar when **Disable leave on all calendars** is enabled | If **Disable leave on all calendars** is enabled, leave information no longer displays when the Leave and absence calendar enhancements feature is enabled.|
+| 508972 | Leave and Absence Bank Transaction entity missing validation of enrollment | When using the Leave and Absence Bank Transaction entity, employees not enrolled in a plan can no longer be imported. |
 | 554854 | Updating calendar in Employment entity errors if default Legal entity in User options is different | Using the Employment entity to update the calendar for an employee no longer gives an error if the default legal entity in User options is different. |
 | 558347 | "Cannot create a record in Form configurations (FormRunConfiguration)" appears when loading the start page. | Personalizations are causing the error "Cannot create a record in Form configurations (FormRunConfiguration)" to appear when loading the start page. |
 | 557327 | Benefits management workspace: Gap appears above the grid. | Fixed user experience issue with an unintended gap appearing on the table grid borders in Benefits workspace. |
