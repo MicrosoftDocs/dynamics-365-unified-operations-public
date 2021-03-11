@@ -50,8 +50,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Cross-company view of leave for managers | [Cross-company view of employee leave for managers](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Configure leave and absence parameters](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-| | |
+| Cross-company view of leave for managers | [Cross-company view of employee leave for managers](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers)<br>Configure leave and absence parameters](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
 
 ### Bug fixes
 
@@ -62,13 +61,13 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 486611 | Leave of absence is shown on leave calendar when "Disable leave on all calendars" is enabled | If disable leave on all calendars is enabled, no leave or leave of absence information is no longer displayed when the Leave and absence calendar enhancements feature is enabled.|
-| 508972 | Leave and Absence Bank Transaction entity missing validation of enrollment | When using the Leave and Absence Bank Transaction entity employees not enrolled in a plan are no longer allowed to be imported.  |
-| 554854 | Updating Calendar in Employment entity errors if default Legal entity in User options is different | Using the Employment entity to update the calendar for an employee no longer gives an error if the default legal entity in User options is different. |
-| 558347 | 'Cannot create a record in Form configurations (FormRunConfiguration)' appears when loading the start page. | Personalizations are causing the error 'Cannot create a record in Form configurations (FormRunConfiguration)' to appear when loading the start page |
-| 557327 | Benefit Workspace: Gap appears above the grid. | Fixed User Experience issue with an unintended gap appearing on the table grid borders in Benefits workspace |
-| 557334 | Benefits Workspace : "Period" selection drop box should only appear in the "Summary" tab | Benefits Period selection dropdown now appears only when the "Summary" tab is Active in Benefits workspace, not for the Process results and Links sections. |
-| 557336 |Benefits Workspace : "Open Enrollment with checked out plans" , text getting truncated in the tile view..| Changed text in the tile view to "Checked out Plans .. Open enrollment" to avoid truncation of necessary context. |
+| 486611 | Leave of absence is shown on leave calendar when **Disable leave on all calendars** is enabled | If **Disable leave on all calendars** is enabled, leave or leave of absence information is no longer displayed when the Leave and absence calendar enhancements feature is enabled.|
+| 508972 | Leave and Absence Bank Transaction entity missing validation of enrollment | When using the Leave and Absence Bank Transaction entity, employees not enrolled in a plan are no longer allowed to be imported. |
+| 554854 | Updating calendar in Employment entity errors if default Legal entity in User options is different | Using the Employment entity to update the calendar for an employee no longer gives an error if the default legal entity in User options is different. |
+| 558347 | "Cannot create a record in Form configurations (FormRunConfiguration)" appears when loading the start page. | Personalizations are causing the error "Cannot create a record in Form configurations (FormRunConfiguration)" to appear when loading the start page. |
+| 557327 | Benefits management workspace: Gap appears above the grid. | Fixed user experience issue with an unintended gap appearing on the table grid borders in Benefits workspace. |
+| 557334 | Benefits management workspace: **Period** selection dropdown box should only appear in the **Summary** tab | Benefits **Period** selection dropdown now appears only when the **Summary** tab is active in Benefits workspace, and not in the **Process results** and **Links** sections. |
+| 557336 | Benefits management workspace: **Open enrollment with checked out plans** text is truncated in the tile view | Changed text in the tile view to **Checked out plans...open enrollment** to avoid truncation of necessary context. |
 
 ## In preview
 
