@@ -44,6 +44,10 @@ Use Microsoft Azure to create the secrets for the key vault and storage account.
 
 Use Microsoft Dynamics Lifecycle Services (LCS) to enable the add-on for the microservices for your LCS deployment project.
 
+> [!NOTE]
+> The installation of the microservice add-on in LCS requires at least a Tier 2 virtual machine. For more information about environment planning, see [Environment planning](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning)
+> 
+
 ## Regulatory Configuration Services
 
 Dynamics 365 Regulatory Configuration Services (RCS) is the interface that is used to configure the Electronic invoicing add-on. Resources such as environments and electronic invoicing features are created, maintained, and hosted in RCS. When the resources are ready, they are published to the Electronic invoicing add-on service.
