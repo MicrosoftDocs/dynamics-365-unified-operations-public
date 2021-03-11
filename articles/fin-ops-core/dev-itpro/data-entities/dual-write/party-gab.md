@@ -26,7 +26,7 @@ Party and global address book are concepts in Finance and Operations application
 A *Party* is a person or an organization involved in the business. By using the Party concept, a person or an organization can play more than one role (worker, customer, vendor, or contact) in a business. The role is based on the context and purpose. Here are some examples from two fictitious companies, Contoso and Fabrikam.
 
 + **Worker**: An employee. For example, an employee of Contoso.
-+ **Vendor**: A supplier organization, or a sole proprietor who supplies goods or services to a business. For example, if Fabrikam sells supplies to Contoso, then Fabrikam is in the role of Vendor.
++ **Vendor**: A supplier organization, or a sole proprietor who supplies goods or services to a business. For example, if Fabrikam sells supplies to Contoso, then Fabrikam is in the role of vendor.
 + **Contact**: A person to contact. For example, if Contoso buys supplies from Fabrikam, an employee at Contoso would reach out to the contact at Fabrikam.
 + **Customer**: A customer is a person or company that buys things from a company. For example, if Contoso buys supplies from Fabrikam, then Contoso is a customer of Fabrikam.
 
@@ -43,7 +43,7 @@ The following image shows the data model for Party:
 > ![Tip]
 > When you are trying to create a new account record, use the “Party” field to search for the record by name. In case you find the record, you just need to select the record. The system auto fills all the data from the party. You don’t need to manually enter all the required fields. This behavior can be found on Account, Contact and Vendor forms shipped out-of-the-box.
 
-Not all party roles of Finance and Operations apps are supported by dual-write. For a complete list of party roles, see [Global address book overview](../../fin-ops/organization-administration/overview-global-address-book.md)
+Not all party roles of Finance and Operations apps are supported by dual-write. For a complete list of party roles, see [Global address book overview](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
 ### Global address book
 
