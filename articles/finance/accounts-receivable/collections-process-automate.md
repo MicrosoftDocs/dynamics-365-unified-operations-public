@@ -2,7 +2,7 @@
 # required metadata
 
 title: Collections process automation
-description: This topic describes the process of setting up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity (such as a phone call), or a collection letter to be sent to the customer. 
+description: This topic describes the process of setting up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity, or a collection letter to be sent to the customer. 
 author: panolte
 manager: AnnBe
 ms.date: 03/12/2021
@@ -32,12 +32,12 @@ ms.dyn365.ops.version: 10.0.13
 
 This topic describes the process of setting up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity (such as a phone call), or a collection letter to be sent to the customer. 
 
-Organizations spend significant time researching aged balance reports, customer accounts, and open invoices to learn which customers should to be contacted about an open invoice or account balance. This research takes times away from a collection agent’s time spent communicating with customers to collect past due balances or resolving invoice disputes. Collections process automation lets you set up a strategy-based approach to your collection process. This helps you apply collection activities consistently by providing customized email reminders, or programmed process for sending collection letters. 
+Organizations spend significant time researching aged balance reports, customer accounts, and open invoices to learn which customers should be contacted about an open invoice or account balance. This research takes times away from a collection agent’s time spent communicating with customers to collect past due balances or resolving invoice disputes. Collections process automation lets you set up a strategy-based approach to your collection process. This helps you apply collection activities consistently by providing customized email reminders, or programmed process for sending collection letters. 
 
 ## Collections process setup
 You can use the **Collections process setup** page (**Credit and collections > Setup > Collections process setup**) to create an automated collections process that will schedule activities, send email messages, and create and post customer collection letters. The process steps are based on the leading or oldest open invoice. Each step uses this invoice to determine what communication or activity should take place with a specific customer.  
 
-Collections teams typically send out an early notice related to each outstanding invoice so that a customer is notified that an invoice is about to become due. The **Pre-dunning** selection can be set to allow one step in each Process hierarchy to be acted on for every invoice as the invoice timing reaches that step.
+Collections teams typically send out an early notice related to each outstanding invoice so that a customer is notified when invoice is about to become due. The **Pre-dunning** selection can be set to allow one step in each process hierarchy to be acted on for every invoice as the invoice timing reaches that step.
 
 ### Process hierarchy
 Each customer pool can only be assigned to one process hierarchy. The hierarchy rank of this step identifies which process will take precedence if a customer is included in more than one pool that has a process hierarchy assigned. The pool ID determines which customers will be assigned to the process. 
@@ -120,7 +120,7 @@ The following tables list the pages and fields that the specified FastTabs can b
  ### Process simulation
 |     Page                           	|     Field    	|      Description                                                	|
 |------------------------------------	|--------------	|-----------------------------------------------------------	|
-|    Process simulation              	|              	|     Preview the actions that will be created if the selected process automation were run at this time. |
+|    Process simulation              	|              	|     Preview the actions that will be created if the selected process automation is run at this time. |
 
 ### Parameters
 |     Page                                                                 	|     Field                                            	|      Description                           	|
