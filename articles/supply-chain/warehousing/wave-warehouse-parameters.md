@@ -48,7 +48,8 @@ To set up warehouse parameters for wave processing, follow these steps:
 
     - **Wave processing batch group** - Select the batch group to use when you process waves by using batch jobs. The batch group specifies the server that batch jobs will run on.
     - **Process waves in batch** - Choose whether to enable waves to be automatically processed by a batch job. <!-- KFM: Maybe mention to enable this if you want to use parallel processing. --> You set up the batch job on the **Process waves** page. (See also the note at the end of this list.)
-    - **Create wave processing history log** - Choose whether to automatically save information about a wave in a log file after the wave is processed.
+    - **Create wave progress log** - <!-- KFM: Description needed. -->
+    - **Create wave processing history log** - Choose whether to automatically save information about a wave in a log file after the wave is processed, including during the parallel processing of pending allocations. You should normally only enable this during troubleshooting because it adds an extra overhead.
     - **Create containerization history log** - Choose whether to automatically save information about containerization for a wave in a log file after the wave is processed.
     - **Wait for lock (ms)** - Enter the time, in milliseconds, that an allocation step will wait for a system resource that is locked by another allocation step. When this time is exceeded, the wave is not processed and an error message is displayed.
 

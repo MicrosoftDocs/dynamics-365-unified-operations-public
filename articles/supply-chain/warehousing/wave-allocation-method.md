@@ -55,7 +55,7 @@ To use parallel allocation processing, go to **Warehouse management > Setup > Wa
 
 - **Wave processing batch group** - Select the batch group that the initial processing of the waves should use. The subsequent processing of allocation can be done using different batch groups.
 - **Process waves in batch** - Choose whether the waves are processed in batch. You must set this to *Yes* to use parallel processing.
-- **Create wave progress log** - Choose whether to automatically save information about a wave in a log file after the wave is processed, including during the parallel processing of pending allocations. You should normally only enable this during troubleshooting because it adds an extra overhead.
+- **Create pending allocation log** - <!-- KFM: This is no longer available. Was it removed or renamed? --> Choose whether to automatically save information about a wave in a log file after the wave is processed, including during the parallel processing of pending allocations. You should normally only enable this during troubleshooting because it adds an extra overhead.
 - **Wait for lock (ms)** - Enter the time, in milliseconds, that an allocation step will wait for a system resource that is locked by another allocation step. When this time is exceeded, the wave is not processed and an error message is displayed. We recommend that you allow at least a few seconds, since it allows for allocation of one logical unit to finish.
 
 <!-- KFM: This repeats info already available in [Warehouse parameters for wave processing](wave-warehouse-parameters.md). We should synchronize these description and maybe even just link to the other topic instead of repeat everything here. -->
@@ -104,4 +104,4 @@ In rare cases, for example if the SQL connection ended, it is possible for the w
 
 ### Troubleshoot using the wave progress log
 
-If the **Create wave progress log** option is enabled on the **Warehouse management parameters** page, then a log record is created every time allocation for an item and its dimensions begins and ends. Logging should only be enabled if you need it, for example, during initial testing or for troubleshooting. <!-- KFM: Where do we find this log? -->
+If the **Create pending allocation log** option  <!-- KFM: This is no longer available. Was it removed or renamed? --> is enabled on the **Warehouse management parameters** page, then a log record is created every time allocation for an item and its dimensions begins and ends. Logging should only be enabled if you need it, for example, during initial testing or for troubleshooting. <!-- KFM: Where do we find this log? -->
