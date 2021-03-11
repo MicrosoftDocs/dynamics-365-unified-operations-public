@@ -5,7 +5,7 @@ title: Credit card entry page shows an error at checkout
 description: This topic provides troubleshooting guidance that can help when the Payment method section isn't loaded and shows an error message.
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/23/2021
+ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
 ms.service: dynamics-365-retail
