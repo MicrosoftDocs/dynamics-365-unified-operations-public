@@ -222,10 +222,14 @@
                   href: data-entities/dual-write/commerce-pricing.md
                 - name: In-house assets for servicing
                   href: data-entities/dual-write/in-house-assets.md
-                - name: Integrated worker, job, and position
-                  href: data-entities/dual-write/integrated-hr.md
                 - name: Inventory availability
                   href: data-entities/dual-write/inventory-availability.md
+                - name: Integrated worker, job, and position
+                  href: data-entities/dual-write/integrated-hr.md
+                - name: Note integration
+                  href: data-entities/dual-write/notes-integration.md
+                - name: Mapping reference
+                  href: data-entities/dual-write/mapping-reference.md
             - name: Support for dual-write
               items:
                 - name: Support for Field Service and Project Service Automation solutions
