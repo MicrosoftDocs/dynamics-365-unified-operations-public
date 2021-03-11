@@ -2,7 +2,7 @@
 # required metadata
 
 title: Piece picking confirmation
-description: This topic describes how you set up and apply piece picking confirmation from a mobile device.
+description: Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.
 author: Mirzaab
 manager: tfehr
 ms.date: 05/26/2017

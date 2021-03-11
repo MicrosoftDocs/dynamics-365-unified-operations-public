@@ -2,7 +2,7 @@
 # required metadata
 
 title: Movement of inventory with associated work in Warehouse management
-description: This topic describes how you set up and apply piece picking confirmation from a mobile device.
+description: Using movement of inventory, you can decide which warehouse workers are allowed to move reserved inventory.
 author: Mirzaab
 manager: tfehr
 ms.date: 05/26/2017
