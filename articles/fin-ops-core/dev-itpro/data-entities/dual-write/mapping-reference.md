@@ -5,7 +5,6 @@ author: robinarh
 manager: tfehr
 ms.date: 12/22/2020
 ms.topic: reference
-ms.service: dynamics-365-crossapp
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
