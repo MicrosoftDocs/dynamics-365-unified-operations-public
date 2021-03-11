@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: \"Pick this up\" option not displayed on cart or product details pages
-description: This topic provides troubleshooting guidance for when the option to pick up in store isn't displayed on the cart or product details pages. 
+title: \"Pick this up\" option doesn't appear on cart or product details pages
+description: This topic provides troubleshooting guidance that can help when the option for in-store pickup doesn't appear on the cart page or product details pages.
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -29,44 +29,47 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# "Pick this up" option not displayed on cart or product details pages
+# "Pick this up" option doesn't appear on cart or product details pages
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance for when the option to pick up in store isn't displayed on the cart or product details pages.
+This topic provides troubleshooting guidance that can help when the option for in-store pickup doesn't appear on the cart page or product details pages.
 
 ## Description
 
-The **Pick this up** option isn't displayed on the cart or product details pages, as shown in the following example image.
+The **Pick this up** button doesn't appear on the cart page or product details pages.
 
-![Pick this up option](media/pickup-button-missing.jpg)
+The following illustration shows an example of a page that includes the **Pick this up** button.
+
+![Pick this up button](media/pickup-button-missing.jpg)
 
 ## Resolution
 
-### Enable "BOPIS" extension in Commerce site builder
+### Enable the BOPIS extension in Commerce site builder
 
-To enable the "BOPIS" extension in Commerce site builder, follow these steps.
+To enable the buy online, pick up in store (BOPIS) extension in Commerce site builder, follow these steps.
 
 1. Select your site.
 1. Select **Site settings**, and then select **Extensions**.
-1. Confirm that the **Disable BOPIS** option is not selected.
+1. Make sure that the **Disable BOPIS** option is cleared.
 
 ### Configure modes of delivery in Commerce headquarters
 
 To configure modes of delivery in Commerce headquarters, follow these steps.
 
 1. Go to **Procurement and sourcing \> Setup \> Modes of delivery**.
-1. Confirm that a **Customer pickup** mode of delivery has been created, and that products and addresses are assigned to it.
+1. Make sure that a **Customer pickup** mode of delivery has been created, and that products and addresses are assigned to it.
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters**.
-1. Select **Customer orders** on the left navigation pane.
-1. Confirm that the **Pickup mode of delivery** is configured correctly.
+1. In the left navigation, select **Customer orders**.
+1. Make sure that **Pickup mode of delivery** is correctly configured.
 
 ### Configure customer orders payments
 
 To configure customer orders payments in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters**.
-1. On the left navigation, select **Customer orders**. On the **Payments** FastTab, confirm that the **Terms of payment** and **Method of payment** drop-down list options are correct.
+1. In the left navigation, select **Customer orders**.
+1. On the **Payments** FastTab, make sure that the **Terms of payment** and **Method of payment** fields are correctly set.
 
 ### Additional resources
 
