@@ -40,7 +40,7 @@ The following image shows the data model for Party:
 
 ![Data model for Party](media/party-gab-image1.png)
 
-> ![Tip]
+> [!Tip]
 > When you are trying to create a new account record, use the “Party” field to search for the record by name. In case you find the record, you just need to select the record. The system auto fills all the data from the party. You don’t need to manually enter all the required fields. This behavior can be found on Account, Contact and Vendor forms shipped out-of-the-box.
 
 Not all party roles of Finance and Operations apps are supported by dual-write. For a complete list of party roles, see [Global address book overview](../../../fin-ops/organization-administration/overview-global-address-book.md).
