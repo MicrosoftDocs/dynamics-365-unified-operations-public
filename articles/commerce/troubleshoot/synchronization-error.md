@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Order synchronization error related to default payment service
-description: This topic provides troubleshooting guidance on how to fix an error that is displayed when synchronizing an online order.
+title: Order synchronization error related to the default payment service
+description: This topic provides troubleshooting guidance that can help fix an error that might occur when an online order is synced.
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/24/2021
@@ -29,26 +29,26 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Order synchronization error related to default payment service
+# Order synchronization error related to the default payment service
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance on how to fix an error that is displayed when synchronizing an online order.
+This topic provides troubleshooting guidance that can help fix an error that might occur when an online order is synced.
 
 ## Description
 
-When synchronizing an online order, the following error message is displayed as highlighted in the example image below: "There must be a default payment service to process credit card transactions."
+When you sync an online order, you receive the following error message: "There must be a default payment service to process credit card transactions."
 
-![Default payment service missing error](media/default-payment-method-error.jpg)
+![Missing default payment service error](media/default-payment-method-error.jpg)
 
 ## Resolution
 
-### Confirm or set the default payment service in Dynamics 365 Commerce headquarters
+### Confirm or set the default payment service in Commerce headquarters
 
-To confirm or set the default payment service in Dynamics 365 Commerce headquarters
+To confirm or set the default payment service in Commerce headquarters, follow these steps.
 
 1. Go to **Accounts receivable \> Payment setup \> Payment services**.
-1. Confirm that one payment service has the **Default processor for new credit cards** option is set to **Yes**. If not, set the option to **Yes** for one payment service.
+1. Make sure that the **Default processor for new credit cards** option is set to **Yes** for one payment service.
 
 ## Additional resources
 
