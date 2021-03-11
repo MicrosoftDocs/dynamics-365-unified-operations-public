@@ -220,7 +220,7 @@ The following tables show the Accounts payable data structure definitions.
 
 ### Fixed assets
 
-Starting from version **33** of the **Data export model** configuration, Fixed assets data export is supported.
+Starting in version **33** of the **Data export model** configuration, Fixed assets data export is supported.
 
 The following tables show the Fixed assets data structure definitions.
 
@@ -253,7 +253,7 @@ The following tables show the Fixed assets data structure definitions.
 | 9          | ANLAGENGRUPPE   | Zeichen     | Gruppe, der die Anlagenbuchung zugeordnet ist | \$AssetTransJoin/\$AssetTrans/AssetGroup               |
 | 10         | BUCHUNGSEBENE   | Zeichen     | 0- Steuerbilanz; sonst: interne Buchungen     | \$AssetTransJoin/\$AssetBookTable/CurrentOperationsTax |
 
-## Additional information
+## Additional resources
 
 - [Electronic Reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Import German audit file configuration](./tasks/import-german-audit-file-configuration.md)
