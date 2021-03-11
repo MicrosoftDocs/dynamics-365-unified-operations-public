@@ -47,7 +47,7 @@ All three CDN implementation options deliver only dynamic HTML content from cust
 
 The following illustration shows an overview of the Commerce architecture.
 
-![Overview of the Commerce architecture](media/Commerce_CDN-Options_Overview.png)
+![Overview of the Commerce architecture](media/Commerce_CDN-Options_ComparisonModels.png)
 
 For more information about how to set up an instance of Azure Front Door for your Commerce site, see [Add CDN Support](add-cdn-support.md).
 
