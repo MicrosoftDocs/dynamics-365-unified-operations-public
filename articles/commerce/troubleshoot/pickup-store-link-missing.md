@@ -71,7 +71,7 @@ To configure customer orders payments in Commerce headquarters, follow these ste
 1. In the left navigation, select **Customer orders**.
 1. On the **Payments** FastTab, make sure that the **Terms of payment** and **Method of payment** fields are correctly set.
 
-### Additional resources
+## Additional resources
 
 [Configure BOPIS](../cpe-bopis.md)
 
