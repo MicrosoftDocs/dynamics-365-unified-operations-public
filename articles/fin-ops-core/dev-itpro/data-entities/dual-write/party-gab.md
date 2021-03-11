@@ -1,6 +1,6 @@
 ---
-title: Party and Global Address Book (GAB)
-description: This topic describes the Party and Global Address Book (GAB) functionality of dual-write.
+title: Party and global address book
+description: This topic describes the Party and global address book functionality of dual-write.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 02/22/2021
@@ -13,13 +13,13 @@ ms.author: ramasri
 ms.search.validFrom: 2021-02-22
 ---
 
-# Party and Global Address Book (GAB)
+# Party and global address book
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Party and Global Address Book (GAB) are concepts in Finance and Operations applications. A Party can be an organization or a person. It's convenient to globally store and manage properties of a **Party**, like name, language, contacts, and addresses. When a property value changes at one place, it reflects in all places where the **Party** is involved.
+Party and global address book are concepts in Finance and Operations applications. A Party can be an organization or a person. It's convenient to globally store and manage properties of a **Party**, like name, language, contacts, and addresses. When a property value changes at one place, it reflects in all places where the **Party** is involved.
 
 ## Party
 
@@ -28,7 +28,7 @@ A *Party* is a person or an organization involved in the business. By using the 
 + **Worker**: An employee. For example, an employee of Contoso.
 + **Vendor**: A supplier organization, or a sole proprietor who supplies goods or services to a business. For example, if Fabrikam sells supplies to Contoso, then Fabrikam is in the role of Vendor.
 + **Contact**: A person to contact. For example, if Contoso buys supplies from Fabrikam, an employee at Contoso would reach out to the contact at Fabrikam.
-+ **Customer**: A customer is a person or company that buys things form a company. For example, if Contoso buys supplies from Fabrikam, then Contoso is a customer of Fabrikam.
++ **Customer**: A customer is a person or company that buys things from a company. For example, if Contoso buys supplies from Fabrikam, then Contoso is a customer of Fabrikam.
 
 The Party model is often used to represent medium to complex relationships between organizations and people, particularly when a party plays more than one role. Here are some common examples:
 
@@ -45,19 +45,19 @@ The following image shows the data model for Party:
 
 Not all party roles of Finance and Operations apps are supported by dual-write. For a complete list of party roles, see [Global address book overview](../../fin-ops/organization-administration/overview-global-address-book.md)
 
-### Global Address Book
+### Global address book
 
-The Global Address Book (GAB) is a directory of postal and electronic addresses of the organizations and individuals participating in a business.
+The global address book is a directory of postal and electronic addresses of the organizations and individuals participating in a business.
 
-The GAB stores and handles as many postal addresses and electronic addresses as needed. For example, suppose that Fabrikam has gas stations in 50 locations. Each location has a different postal address, email, and phone number. All business purchases are billed to the main gas station, but purchases are shipped directly to the specific gas station that requested the purchase. The GAB stores the main gas station as the billing address and each gas station as a shipping address for Fabrikam. The addresses can be stored once and retrieved as needed for quotations and orders.
+The global address book stores and handles as many postal addresses and electronic addresses as needed. For example, suppose that Fabrikam has gas stations in 50 locations. Each location has a different postal address, email, and phone number. All business purchases are billed to the main gas station, but purchases are shipped directly to the specific gas station that requested the purchase. The global address book stores the main gas station as the billing address and each gas station as a shipping address for Fabrikam. The addresses can be stored once and retrieved as needed for quotations and orders.
 
-A person or an organization can play more than one role based on the business context. When they do so, their postal addresses and electronic addresses might be the same. In this case, a change of address in one role should appear on the other role and vice versa. The GAB stores and handles addresses globally.
+A person or an organization can play more than one role based on the business context. When they do so, their postal addresses and electronic addresses might be the same. In this case, a change of address in one role should appear on the other role and vice versa. The global address book stores and handles addresses globally.
 
 ![Data model for Global Address Book](media/party-gab-image2.png)
 
 ## Contacts
 
-In customer engagement apps, a *Contact* is a person. However, the **Contact** table has been overloaded to represent a person, a portal user, a B2C customer, or a vendor. The representation is implicit and you cannot tell the difference without looking into related transactions. The **Contact** table has been limited to have a 1:1 relationship with the **Account** table. As part of Party and GAB model, dual-write introduces explicit properties for classification and dual-write allows N:N relationships between a **Contact** person and an organization (Account entity or Vendor entity).
+In customer engagement apps, a *Contact* is a person. However, the **Contact** table has been overloaded to represent a person, a portal user, a B2C customer, or a vendor. The representation is implicit and you cannot tell the difference without looking into related transactions. The **Contact** table has been limited to have a 1:1 relationship with the **Account** table. As part of Party and global address book model, dual-write introduces explicit properties for classification and dual-write allows N:N relationships between a **Contact** person and an organization (Account entity or Vendor entity).
 
 There are two types of **Contact** rows:
 
@@ -157,7 +157,7 @@ Party Contacts V3 (msdyn_partyelectronicaddresses) | | This is a new map added a
 
 ## Templates
 
-A collection of table maps work together Party and GAB interaction, as shown in the following table.
+A collection of table maps work together for party and global address book interaction, as shown in the following table.
 
 Finance and Operations app | Customer engagement app     | Description
 ----------------------------|-----------------------------|------------

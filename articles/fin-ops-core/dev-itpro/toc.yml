@@ -226,7 +226,7 @@
                   href: data-entities/dual-write/inventory-availability.md
                 - name: Integrated worker, job, and position
                   href: data-entities/dual-write/integrated-hr.md
-                - name: Party and Global Address Book
+                - name: Party and global address book
                   href: data-entities/dual-write/party-gab.md
                 - name: Note integration
                   href: data-entities/dual-write/notes-integration.md
