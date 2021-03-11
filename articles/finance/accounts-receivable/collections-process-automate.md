@@ -5,7 +5,7 @@ title: Collections process automation
 description: This topic describes the process of setting up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity (such as a phone call), or a collection letter to be sent to the customer. 
 author: panolte
 manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,7 @@ Organizations spend a significant amount of time researching aged balance report
 ## Collections process setup
 You can use the **Collections process setup** page (**Credit and collections > Setup > Collections process setup**) to create an automated collections process that will schedule activities, send email messages, and create and post customer collection letters. The process steps are based on the leading or oldest open invoice. Each step uses this invoice to determine what communication or activity should take place with a specific customer.  
 
-Typically collections teams will want to send out an early notice related to each invoice so a customer is notified of an invoice due in the upcoming days. The **Pre-dunning** selection box can be set to allow one step in each Process hierarchy to be acted upon for every invoice as the invoice timing reaches that step.
+Collections teams typically send out an early notice related to each outstanding invoice so that a customer is notified that an invoice is about to become due. The **Pre-dunning** selection can be set to allow one step in each Process hierarchy to be acted on for every invoice as the invoice timing reaches that step.
 
 ### Process hierarchy
 Each customer pool can only be assigned to one process hierarchy. The hierarchy rank of this step identifies which process will take precedence if a customer is included in more than one pool that has a process hierarchy assigned. The pool ID determines which customers will be assigned to the process. 
@@ -88,7 +88,7 @@ The following tables list the pages and fields that the specified FastTabs can b
 |                                                        	|     Business   document                       	|     Defines the   activity or email template that is used during the process step.                                                                      	|
 |                                                        	|     When                                      	|     Defines if   the process step will occur before or after the leading invoice due date   along with the **Days in relation to invoice due date** field.    	|
 |                                                        	|     Days in   relation to invoice due date    	|     Together   with the **When** field it identifies the timing of the process step.                                                                        	|
-|                                                        	|     Pre-dunning                                 	|     This selection allows for one step per process hierarchy to be set and run against every invoice as it reaches the timing criteria.                                               	|
+|                                                        	|     Pre-dunning                                 	|     This selection lets one step per process hierarchy be set and run against every invoice as it reaches the timing criteria.                                               	|
 |                                                        	|     Recipient                                 	|     Identifies   if an email will be sent to a Customer, Sales group, or Collections Agent contact.                                                  	|
 |                                                        	|     Business   purpose contact                	|     Determines   which recipient’s email address is used in email communications.                                                                             	|
 
@@ -107,12 +107,12 @@ The following tables list the pages and fields that the specified FastTabs can b
 ### Collections history 
 |     Page                           	|     Field    	|      Description                                                         	|
 |------------------------------------	|--------------	|---------------------------------------------------------------------	|
-|     Collections   process setup    	|              	|     View the   recent history for the selected process hierarchy.    	|
+|     Collections   process setup    	|              	|     View the recent history for the selected process hierarchy.    	|
 
 ### Collection process assignment
 |     Page                           	|     Field    	|      Description                                                	|
 |------------------------------------	|--------------	|-----------------------------------------------------------	|
-|     Collections   process setup    	|              	|     View   customers assigned to a collections process.  
+|     Collections   process setup    	|              	|     View customers assigned to a collections process.  
 |     Manual assignment               |               |     View customers that have been manually assigned to a process or select customers to be assigned to a process. |
 |     Preview process assignment      |               |     Preview the customers that will be assigned to a strategy when it is run.   |
 |     Preview customer assignment     |               |     View the strategy that a specific customer is assigned.    |
@@ -120,7 +120,7 @@ The following tables list the pages and fields that the specified FastTabs can b
  ### Process simulation
 |     Page                           	|     Field    	|      Description                                                	|
 |------------------------------------	|--------------	|-----------------------------------------------------------	|
-|    Process simulation              	|              	|     Preview of the actions that will be created if the process automation selected were run at this point in time. |
+|    Process simulation              	|              	|     Preview the actions that will be created if the selected process automation were run at this time. |
 
 ### Parameters
 |     Page                                                                 	|     Field                                            	|      Description                           	|
@@ -129,7 +129,7 @@ The following tables list the pages and fields that the specified FastTabs can b
 |     Accounts   receivable parameters > Collections process automation    	|     Post   Collection letters automatically          	|     Collection   letter action types will post the letter during the automation.                                     	|
 |     Accounts   receivable parameters > Collections process automation    	|     Create   activities for automation               	|     Create and   close activities for non-activity action types to view all automated steps   taken on an account.    	|
 |     Accounts   receivable parameters > Collections process automation    	|     Days to keep   collections process automation    	|     Defines the   number of days collections history is stored.                                                      	|
-|     Accounts   receivable parameters > Collections process automation    	|     Exclude invoice after activating last process step   	|     An invoice that reaches the last step of the collections process will no longer be used to create future process automation action types. The next oldest invoice will determine the next process automation step to ensure collection process automation actions do not stop.                                                      	|
+|     Accounts   receivable parameters > Collections process automation    	|     Exclude invoice after activating last process step   	|     An invoice that reaches the last step of the collections process won't be used to create future process automation action types. The next oldest invoice will determine the next process automation step to ensure collection process automation actions continue.                                                      	|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
