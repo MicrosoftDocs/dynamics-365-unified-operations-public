@@ -47,7 +47,7 @@ The following illustration shows an example of a page that includes the **Pick t
 
 ### Enable the BOPIS extension in Commerce site builder
 
-To enable the buy online, pick up in store (BOPIS) extension in Commerce site builder, follow these steps.
+To enable the "buy online, pick up in store" (BOPIS) extension in Commerce site builder, follow these steps.
 
 1. Select your site.
 1. Select **Site settings**, and then select **Extensions**.
