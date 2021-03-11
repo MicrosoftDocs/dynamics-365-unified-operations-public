@@ -5,7 +5,7 @@ title: Order synchronization error related to the default payment service
 description: This topic provides troubleshooting guidance that can help fix an error that might occur when an online order is synced.
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/24/2021
+ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
 ms.service: dynamics-365-retail
