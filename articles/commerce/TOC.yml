@@ -2384,9 +2384,9 @@
           href: troubleshoot/sign-in-redirects-back.md
         - name: Customer records don't appear in Commerce headquarters
           href: troubleshoot/customer-record-not-appearing.md
-        - name: Pickup in store option doesn't display
+        - name: Pick this up option doesn't appear
           href: troubleshoot/pickup-store-link-missing.md
-        - name: Retail store doesn't display when pickup in store selected
+        - name: Retail store doesn't appear in the list of stores
           href: troubleshoot/pickup-store-missing.md
         - name: Items without inventory can be checked out
           href: troubleshoot/items-without-inventory-checked-out.md
