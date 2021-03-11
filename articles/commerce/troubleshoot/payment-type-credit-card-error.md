@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: \"Payment type must be credit card\" error on Sales order page
-description: This topic provides troubleshooting guidance for when an error message is displayed on the sales order page after synchronizing an order. 
+title: \"Payment type must be credit card\" error on the sales order page
+description: This topic provides troubleshooting guidance that can help when an error message is shown on the sales order page after an order is synced.
 author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/23/2021
@@ -28,25 +28,25 @@ ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# "Payment type must be credit card" error
+# "Payment type must be credit card" error on the sales order page
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance for when an error message is displayed on the sales order page after synchronizing an order.  
+This topic provides troubleshooting guidance that can help when an error message is shown on the sales order page after an order is synced.
 
 ## Description
 
-When navigating to the **Sales order** page after synchronizing an order, this error message is displayed as shown in the following image: "The payment type must be credit card, since the credit card number has been specified."
+When you open the sales order page after you sync an order, you receive the following error message: "The payment type must be credit card, since the credit card number has been specified."
 
-![Payment type must be credit card](media/payment-type-must-be-credit-card.jpg)
+![Payment type must be credit card error](media/payment-type-must-be-credit-card.jpg)
 
 ## Resolution
 
 ### Set the payment type in Commerce headquarters
 
-1. Go to **Accounts receivable > Payment setup > Terms of payment**.
-1. Select your term of payment from the navigation pane on the left.
-1. For **Payment type**, ensure that **Credit card** is selected.
+1. Go to **Accounts receivable \> Payment setup \> Terms of payment**.
+1. In the left navigation, select your terms of payment.
+1. In the **Payment type** field, make sure that **Credit card** is selected.
 
 ## Additional resources
 
