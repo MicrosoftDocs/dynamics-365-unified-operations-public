@@ -2362,9 +2362,9 @@
           href: troubleshoot/refund-declined.md
         - name: Dynamics 365 Payment Connector for Adyen
           items:
-          - name: Troubleshoot Adyen Payment Connector issues
+          - name: Troubleshoot Dynamics 365 Payment Connector for Adyen issues
             href: troubleshoot/adyen-support.md
-          - name: Save for Next Payment option doesn't appear
+          - name: Save for my next payment option doesn't appear
             href: troubleshoot/next-payment-link-not-appearing.md
           - name: Credit card entry page displays error on checkout
             href: troubleshoot/credit-card-entry-form-error.md
