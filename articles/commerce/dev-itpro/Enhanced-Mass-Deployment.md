@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-02-20
 ms.dyn365.ops.version: Application update 3
 ---
 
-# Enhanced self-service mass deployment
+# Enhanced self-service with mass deployment
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +49,7 @@ The following table shows the delimiters that can be used in the command line ex
 | -SkipAppxInstallation     | Beginning in the October 2018 release of Dynamics 365, this delimiter will skip the installation of the APPX Retail Modern POS application. This delimiter is required to perform the application installation through the SYSTEM account or a service account (Any account that does not have a user profile). |
 | -Port | The port to be associated and used by the Retail Server virtual directory. If no port is set, the default port of 443 will be used. |
 | -SslCertThumbprint | The thumbprint of the certificate to be used to encrypt HTTP traffic to the scale unit. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the SslCertFullPath parameter. |
-| -SslcertFullPath | The fully formatted URN path with the thumbprint as the search metric of certificate's location to be used to encrypt HTTP traffic to the scale unit. For example: **store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>** is a properly formatted URN where the value **'\< MyThumbprint \>'** would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the SslCertThumbprint parameter. |
+| -SslcertFullPath | The fully formatted URN path with the thumbprint as the search metric of certificate's location to be used to encrypt HTTP traffic to the scale unit. For example: **store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>** is a properly formatted URN where the value **\< MyThumbprint \>** would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the SslCertThumbprint parameter. |
 | -AsyncClientCertThumbprint | The thumbprint of the Async Client Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the AsyncClientCertFullPath parameter. |
 | -AsyncClientCertFullPath | The fully formatted URN path with the thumbprint as the search metric of the Async Client Identity certificate's location to be used to authenticate with AAD for communications with Headquarters. For example: store://My/LocalMachine?FindByThumbprint=<MyThumbprint> is a properly formatted URN where the value '< MyThumbprint >' would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the AsyncClientCertThumbprint parameter. |
 | -RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the RetailServerCertFullPath parameter. |
