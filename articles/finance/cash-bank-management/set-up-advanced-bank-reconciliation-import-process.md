@@ -77,7 +77,7 @@ Below are examples of the advanced bank reconciliation import file technical lay
 | Technical layout definition                             | Bank statement example file          |
 |---------------------------------------------------------|--------------------------------------|
 | DynamicsAXMT940Layout                                   | [MT940StatementExample](//download.microsoft.com/download/2/d/c/2dcc4e55-ddc8-4a74-b79c-250fae201c3c/mt940StatementExample.txt)                |
-| DynamicsAXISO20022Layout                                | [ISO20022StatementExample](//download.microsoft.com/download/1/5/5/155d84ed-c250-48f3-b0b1-c5a431e7855b/ISO20022 - Multiple statements.xml)             |
+| DynamicsAXISO20022Layout                                | [ISO20022StatementExample](https://dmsstager3tx7y9x22.blob.core.windows.net/155d84ed-c250-48f3-b0b1-c5a431e7855b/iso20022-multiplestatements.xml?sv=2019-02-02&sr=b&sig=1bDx0f9SONFouCcwLNPhmFHNdxDOkaibNf5%2Btoj0f0A%3D&se=2021-03-11T01%3A05%3A41Z&sp=r)             |
 | DynamicsAXBAI2Layout                                    | [BAI2StatementExample](//download.microsoft.com/download/1/1/6/11693f57-bfc1-4993-a274-5fb978be70fa/BAI2StatementExample.txt)                 |
 
 
