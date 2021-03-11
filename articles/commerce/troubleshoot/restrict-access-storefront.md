@@ -5,7 +5,7 @@ title: Restrict access to a storefront during testing or development
 description: This topic explains how to restrict access to a Microsoft Dynamics 365 Commerce storefront while internal testing or development is occurring.
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 02/24/2021
+ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 
 ms.service: dynamics-365-retail
