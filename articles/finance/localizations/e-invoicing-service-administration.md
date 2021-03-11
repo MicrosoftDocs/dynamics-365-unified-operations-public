@@ -44,8 +44,6 @@ Use Microsoft Azure to create the secrets for the key vault and storage account.
 
 Use Microsoft Dynamics Lifecycle Services (LCS) to enable the add-on for the microservices for your LCS deployment project.
 
-In LCS, select the **Preview feature management** tile, and then turn on the **e-Invoicing Service** feature.
-
 ## Regulatory Configuration Services
 
 Dynamics 365 Regulatory Configuration Services (RCS) is the interface that is used to configure the Electronic invoicing add-on. Resources such as environments and electronic invoicing features are created, maintained, and hosted in RCS. When the resources are ready, they are published to the Electronic invoicing add-on service.
@@ -62,20 +60,12 @@ Before you can use RCS to configure electronic invoices, you must configure RCS 
 
 The URL of the Electronic invoicing add-on endpoint can vary according to the Azure datacenter geography. The following table lists the availability per region:
 
-| Azure datacenter geography | Service endpoint URL                                                       |
-|----------------------------|----------------------------------------------------------------------------|
-| East US                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-| West US                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-| North EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-| West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
-
-#### Application ID
-
-The application ID is the ID of the Electronic invoicing add-on application. In this case, the value is fixed: **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
-
-#### LCS environment ID
-
-The LCS environment ID is the ID of your organization's LCS subscription.
+| Azure datacenter geography |
+|----------------------------|
+| East US                    |
+| West US                    |
+| North EU                   |
+| West EU                    |
 
 ### Service environments
 
