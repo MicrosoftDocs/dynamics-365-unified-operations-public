@@ -42,7 +42,7 @@ For sales orders and kanban orders, inventory must be reserved before the order 
 - Require that all materials are reserved before an order can be released to the warehouse.
 - Allow production orders to be released to the warehouse even though all materials can't be reserved. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available. For example, this is useful if you have the materials that you need to start a production, and can wait until the additional materials become available.
 
-You can specify which of these production order options to use by default using the **Requirement for material reservation** field on the **Production control parameters** page. However, you can change the setting for each specific production order as needed.
+You can specify which of these production order options to use by default using the **Requirement for material reservation** field on the **Production control parameters** page. However, you can change the setting for each specific production order as needed. More information: [Warehouse parameters for wave processing](wave-warehouse-parameters.md)
 
 ## Creation and process a wave
 
