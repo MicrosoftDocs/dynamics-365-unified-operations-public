@@ -5,7 +5,7 @@ title: Get started with the Electronic invoicing add-on for Brazil
 description: This topic provides information that will help you get started with the Electronic invoicing add-on for Brazil in Finance and Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 02/10/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -132,7 +132,10 @@ Before you complete the procedure in this section, create and initiate a Brazili
 16. Select **Save** and then return to the topic, [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md) to deploy the Electronic invoicing feature.
 
 ## Privacy notice
-Enabling the **NF-e Federal - Brazilian electronic invoice (BR)** and the **NFS-e - Brazilian service (city) electronic invoice** features may require sending limited data, which includes the organization tax registration ID. This data will be transmitted to third-party agencies authorized by the tax authority for purposes of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. An administrator can enable and disable the **NF-e Federal - Brazilian electronic invoice (BR)** and the **NFS-e - Brazilian service (city) electronic invoice** features by navigating to **Organization administration** > **Setup** > **Electronic document parameters**. On the **Features** tab, select the row that contains the **NF-e Federal - Brazilian electronic invoice (BR)** or the **NFS-e - Brazilian service (city) electronic invoice** features, and select the feature. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
+Enabling the **NF-e Federal - Brazilian electronic invoice (BR)** and the **NFS-e - Brazilian service (city) electronic invoice** features may require sending limited data, including the organization tax registration ID. This data is transmitted to third-party agencies authorized by the tax authority for the purpose of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. As an administrator, you can enable or turn off the **NF-e Federal - Brazilian electronic invoice (BR)** and the **NFS-e - Brazilian service (city) electronic invoice** features. 
+
+1. Go to **Organization administration** > **Setup** > **Electronic document parameters**. 
+2. On the **Features** tab, select the row that contains the **NF-e Federal - Brazilian electronic invoice (BR)** or the **NFS-e - Brazilian service (city) electronic invoice** features, and select the feature. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
 
 
 ## Additional resources
