@@ -4,7 +4,7 @@ title: Dynamics 365 Commerce and Microsoft Teams integration FAQ
 description: This topic provides answers to frequently asked questions regarding Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 03/04/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic provides answers to frequently asked questions regarding Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 
-#### How do I assign the owner role to a user while provisioning Teams from Commerce? 
+#### Who in the store becomes a owner of a team while provisioning Teams from Commerce? 
 
 All store managers are automatically added as owners to the corresponding team group so that they can perform operations such as adding a private channel and adding or deleting members. 
 
@@ -75,7 +75,6 @@ If a store doesn't have managers, a team group will not created for the store or
 #### What happens if store managers leave the company?
 
 Anyone with the owner role can add a new store manager in Commerce headquarters and reprovision Teams so that the new manager will have the necessary privileges in Teams for the group. 
-
 
 ## Additional resources
 
