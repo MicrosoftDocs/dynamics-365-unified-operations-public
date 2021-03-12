@@ -243,40 +243,31 @@ The following table details the different levels of access for different Microso
 
 ### Monitoring 
 
-Microsoft has invested in an extensive toolset to monitor and diagnose
-Customers' production instances. Microsoft monitors Customers'
-production environments 24 hours a day, 7 days a week. Customer must
-monitor its Production Instances for application configurations and
-application errors as described in **Table 7.**
+Microsoft has invested in an extensive toolset to monitor and diagnose Customers' production instances. Microsoft monitors Customers' production environments 24 hours a day, 7 days a week. Customer must monitor its Production Instances for application configurations andapplication errors as described in the following table.
 
-***Table 7.** Monitoring responsibilities *
 
-| **Microsoft's responsibilities ** | <blockquote></br>**Customer's responsibilities **</br></blockquote> |
+
+| Microsoft's responsibilities | Customer's responsibilities |
 |-------------------------|-------------------------|
-| <ul></br><li>Availability monitoring for the service.</li></br><li>Continuous monitoring and alerts through health metrics and watchdogs for critical components such as AOS, Batch, DIXF, Retail, Management Reporter.</li></br><li>Monitoring for performance degradation caused by infrastructure services (AAD, Azure, SQL etc.).</li></br><li>In the event Microsoft determines that a single process or batch job is causing aberrations, these processes will be thwarted after communication with the Customer.</li></br></ul> | <ul></br><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</li></br><li>Application errors need to be diagnosed using the monitoring tools.</li></br><li>Diagnose user reported performance aberrations using these tools.</li></br><li>Inform Microsoft in the event that there are expected load on the system beyond projected peak usage.</li></br><li>In the event the applicable Service is unavailable in the Production Instance, Customer can create a "Production down" customer support request using LCS.</li></br></ul> |
+| <ul><li>Availability monitoring for the service.<br><li>Continuous monitoring and alerts through health metrics and watchdogs for critical components such as AOS, Batch, DIXF, Retail, Management Reporter.</li></br><li>Monitoring for performance degradation caused by infrastructure services (AAD, Azure, SQL etc.).<br><li>In the event Microsoft determines that a single process or batch job is causing aberrations, these processes will be thwarted after communication with the Customer. | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</br><li>Application errors need to be diagnosed using the monitoring tools.</br><li>Diagnose user reported performance aberrations using these tools.</br><li>Inform Microsoft in the event that there are expected load on the system beyond projected peak usage.</br><li>In the event the applicable Service is unavailable in the Production Instance, Customer can create a "Production down" customer support request using LCS. |
 
 
 ### Incident management 
 
-Microsoft responds to and resolves Incidents based on the severity
-levels set forth in **Table 8.1** and **Table 8.2.** Microsoft's
-Incident severity levels can be changed during initial assessment of the
-Incident and as more information about the impact and scope becomes
-available. If the Incident is mitigated, then the Incident severity
-remains unchanged.
+Microsoft responds to and resolves Incidents based on the severity levels set forth in the following tables. Microsoft's Incident severity levels can be changed during initial assessment of the Incident and as more information about the impact and scope becomes available. If the Incident is mitigated, then the Incident severity remains unchanged.
 
-**Table 8.1.** Severity Level Description
+#### Severity level description
 
-| **Classification ** | <blockquote></br>**Description **</br></blockquote> |
+| Classification | Description |
 |-------------------------|-------------------------|
-| **Severity 0** <em>(Sev-0) </em></br>**Catastrophic** | <blockquote></br>• Catastrophic event in which all functions of a service in a region are down or inaccessible.</br>**Note:** Sev-0 Incidents normally start as Sev-1, then get upgraded with management approval based on assessment of impact type/scope.</br></blockquote> |
-| **Severity 1** <em>(Sev-1) </em></br>**Critical** | <ul></br><li>Severe outage of a Service caused by confirmed systemic problem, resulting in a broad scope of impact, requiring a Technical Control Bridge and engagement from applicable engineering teams.</li></br><li>Suspected breach of a security or privacy boundary.</li></br></ul> |
-| **Severity 2** <em>(Sev-2)</em></br>**Urgent** | <ul></br><li>Service outage with narrow scope of impact (&gt; 25% customers).</li></br><li>Degradation of customer experience caused by confirmed systemic event with broad scope (&gt; 25% customers).</li></br><li>Service outage with limited scope of impact (single organization or subset of users).</li></br></ul> |
-| **Severity 3** <em>(Sev-3)</em></br>**Moderate** | <blockquote></br>• Degradation of customer experience caused by confirmed systemic event with narrow scope.</br></blockquote> |
-| **Severity 4** <em>(Sev-4) </em></br>**Non-SLA Impacting** | <ul></br><li>Monitoring or Customer reported incidents requiring action to avoid potential service impact.</li></br><li>General maintenance events with no Customer impact.</li></br><li>Standard service change requests.</li></br></ul> |
+| Severity 0 (Sev-0)</br>Catastrophic | <ul><li>Catastrophic event in which all functions of a service in a region are down or inaccessible.</br><br>**Note:** Sev-0 Incidents normally start as Sev-1, then get upgraded with management approval based on assessment of impact type/scope. |
+| Severity 1 (Sev-1)</br>Critical | <ul><li>Severe outage of a Service caused by confirmed systemic problem, resulting in a broad scope of impact, requiring a Technical Control Bridge and engagement from applicable engineering teams.</li></br><li>Suspected breach of a security or privacy boundary. |
+| Severity 2 (Sev-2)</br>Urgent| <ul><li>Service outage with narrow scope of impact (&gt; 25% customers).</br><li>Degradation of customer experience caused by confirmed systemic event with broad scope (&gt; 25% customers).</br><li>Service outage with limited scope of impact (single organization or subset of users). |
+| Severity 3 (Sev-3)</br>Moderate | <ul><li> Degradation of customer experience caused by confirmed systemic event with narrow scope. |
+| Severity 4 (Sev-4) </br>Non-SLA Impacting | <ul><li>Monitoring or Customer reported incidents requiring action to avoid potential service impact.</br><li>General maintenance events with no Customer impact.</br><li>Standard service change requests.|
 
 
-***Table 8.2.** Incident Scope and Severity Level Impact *
+#### Incident scope and severity level impact
 
 | Incident impact | Entire geo OR &gt; 25% of global footprint | 1 customer OR subset of users belonging to one customer |
 |-------------------------|-------------------------|-------------------------|
@@ -288,91 +279,50 @@ remains unchanged.
 
 ## Business continuity with high availability and disaster recovery 
 
-Customer's Production Instances include High Availability (HA) and
-Disaster Recovery (DR) features.
+Customer's Production Instances include High Availability (HA) and Disaster Recovery (DR) features.
 
-- **High Availability.** HA functionality provides ways to prevent
-    > Downtime caused by the failure of a single node within an Azure
-    > datacenter. Each Service's cloud architecture uses Azure
-    > availability sets for the compute tier to prevent
-    > single-point-of-failure events. HA for databases is supported
-    > through Azure SQL (a platform-as-a-service (PaaS) offering from
-    > Microsoft).
+- **High Availability**: HA functionality provides ways to prevent Downtime caused by the failure of a single node within an Azure datacenter. Each Service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is supported through Azure SQL (a platform-as-a-service (PaaS) offering from Microsoft).
 
-- **Disaster Recovery.** DR features protect each Service against
-    > outages broadly impacting an entire Azure datacenter and include
-    > the following:
+- **Disaster Recovery**: DR features protect each Service against outages broadly impacting an entire Azure datacenter and include the following:
 
-− Azure SQL active-geo replication for primary database (business
-database), with a Recovery Point Objective (RPO) estimate of ≤ 5
-seconds.
+    − Azure SQL active-geo replication for primary database (business database), with a Recovery Point Objective (RPO) estimate of ≤ 5 seconds.
 
-− Geo-redundant copies of Azure blob storage (containing document
-attachments) in other Azure regions.
+    − Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions.
 
-− Same secondary region for the Azure SQL and Azure blob storage
-replications.
+    − Same secondary region for the Azure SQL and Azure blob storage replications.
 
-The primary data stores are supported for replication. This means that
-components for each Service, such Management Reporter and Entity Store,
-use transformed data from the primary database, which need to be
-generated after the recovery site has been setup and service started.
-Customer code artifacts and recovered data stores is used to re-deploy
-the site, with a Recovery Time Objective (RTO) of up to 10 hours. This
-will enable state replication of the compute nodes along with networking
-and other components to set up the secondary site using the recovered
-data stores. In the event DR is utilize to recover Customer's Production
-Instance, each of Microsoft and Customer will perform the
-responsibilities described in **Table 8.1** and **Table 8.2. **
+The primary data stores are supported for replication. This means that components for each Service, such Management Reporter and Entity Store, use transformed data from the primary database, which need to be generated after the recovery site has been setup and service started. Customer code artifacts and recovered data stores is used to re-deploy the site, with a Recovery Time Objective (RTO) of up to 10 hours. This will enable state replication of the compute nodes along with networking and other components to set up the secondary site using the recovered data stores. In the event DR is utilize to recover Customer's Production Instance, each of Microsoft and Customer will perform the responsibilities described in **Table 8.1** and **Table 8.2. **
 
-***Table 9.** Responsibilities for Disaster Recovery *
 
-| **Microsoft's responsibilities ** | <blockquote></br>**Customer's responsibilities **</br></blockquote> |
+| Microsoft's responsibilities  | Customer's responsibilities |
 |-------------------------|-------------------------|
-| Microsoft provisions a secondary environment in the Azure paired datacenters at the time of deployment of the primary Production Instance.</br>See the business continuity and disaster recovery (BCDR): Azure Paired Regions here [https://docs.microsoft.com/en-us/azure/best-practicesavailability-paired-regions f](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions)or details. | <blockquote></br>None.</br></blockquote> |
-| Microsoft enables Geo Redundancy of SQL and Azure Storage at the time of deployment of the primary Production Instance. | <blockquote></br>None.</br></blockquote> |
-| Microsoft backs up the VMs regularly using Azure backup. | <blockquote></br>None.</br></blockquote> |
-| On outage, Microsoft determines if a failover needs to be executed for Customer and if there will be a data loss. Data loss can be up to 5 sec. For details, see Azure SQL Database Geo-Restore here: [https:// azure.microsoft.com/en-us/blog/azure-sql-database-geo-restore/ ](https://azure.microsoft.com/en-in/blog/azure-sql-database-geo-restore/)</br>In the event of a data loss, Microsoft will send a request to Customer asking for its sign-off on a failover. | <blockquote></br>Customer may need to provide written sign-off to trigger the failover in the event of data loss.</br></blockquote> |
-| The applicable Service will be operated in limited mode on failover. Update maintenance cannot be triggered in failover mode. | <blockquote></br>Customer cannot request package deployments or other regular maintenance requests in failover mode.</br></blockquote> |
-| Microsoft fails back to the Production Instance in the primary Azure region when the datacenter becomes operational. Normal operations are resumed. | <blockquote></br>Customer may need to sign-off on fail back to the Production Instance in the primary Azure region.</br></blockquote> |
+| Microsoft provisions a secondary environment in the Azure paired datacenters at the time of deployment of the primary Production Instance.</br><br>See the [Business continuity and disaster recovery (BCDR): Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) for details. | None |
+| Microsoft enables Geo Redundancy of SQL and Azure Storage at the time of deployment of the primary Production Instance. | None|
+| Microsoft backs up the VMs regularly using Azure backup. |None |
+| On outage, Microsoft determines if a failover needs to be executed for Customer and if there will be a data loss. Data loss can be up to 5 sec. For details, see [Azure SQL Database Geo-Restore]https://azure.microsoft.com/blog/azure-sql-database-geo-restore). <br>In the event of a data loss, Microsoft will send a request to Customer asking for its sign-off on a failover. | Customer may need to provide written sign-off to trigger the failover in the event of data loss.|
+| The applicable Service will be operated in limited mode on failover. Update maintenance cannot be triggered in failover mode. | Customer cannot request package deployments or other regular maintenance requests in failover mode. |
+| Microsoft fails back to the Production Instance in the primary Azure region when the datacenter becomes operational. Normal operations are resumed. | Customer may need to sign-off on fail back to the Production Instance in the primary Azure region.|
 
 
 ## Application support offerings 
 
-Microsoft offers VL customers three support plans: Premier, Professional
-Direct, and the support included in the subscription. The level of
-support differs per plan and highlights are provided in the **Table
-10.**
+Microsoft offers VL customers three support plans: Premier, Professional Direct, and the support included in the subscription. The level of support differs per plan and highlights are provided in the following table.
 
-***Table 10.** Key VL support service features *
-
-| **Service feature ** | <blockquote></br>**Premier **</br></blockquote> | **Professional direct ** | <blockquote></br>**Subscription **</br></blockquote> |
-|-------------------------|-------------------------|-------------------------|-------------------------|
-| Unlimited break/fix incidents | <blockquote></br>N/A</br></blockquote> | N/A | <blockquote></br>N/A</br></blockquote> |
-| 24x7 support | <blockquote></br>N/A</br></blockquote> | N/A | <blockquote></br>Local business hours</br></blockquote> |
-| Fastest response times | <blockquote></br>&lt;1 hour</br></blockquote> | &lt;1 hour | <blockquote></br>Next business day</br></blockquote> |
+| Service feature | Premier | Professional direct  | Subscription ------------------|
+| Unlimited break/fix incidents | N/A | N/A | N/A |
+| 24x7 support | N/A | N/A | Local business hours |
+| Fastest response times | &lt;1 hour | &lt;1 hour | Next business day |
 
 
 ### Process to engage support 
 
-In case of incidents with Finance and Operations, Customers can submit
-support tickets to Microsoft by phone or through LCS. CSS will handle
-incidents depending on the Customer's support plan and severity of the
-incident as designated by CSS.
+In case of incidents with Finance and Operations, Customers can submit support tickets to Microsoft by phone or through LCS. CSS will handle incidents depending on the Customer's support plan and severity of the incident as designated by CSS.
 
 ## Service Level Agreement 
 
-Microsoft is committed to an availability of 99.9% per month of the
-Service. If Microsoft does not achieve and maintain the service level
-for the applicable Service described in the SLA, then Customer may be
-eligible for a credit towards a portion of its monthly service fees for
-the applicable Service. See the "Claims" section of the SLA for details
-on how to initiate a service credit.
+Microsoft is committed to an availability of 99.9% per month of the Service. If Microsoft does not achieve and maintain the service level for the applicable Service described in the SLA, then Customer may be eligible for a credit towards a portion of its monthly service fees for the applicable Service. See the "Claims" section of the [SLA](https://www.microsoft.com/licensing/product-licensing/products?lc=1033) for details on how to initiate a service credit. 
 
-### Dynamics 365 Finance and Supply Chain Management Service description
-
-**More information about Finance and Supply Chain Management can be
-found in the sources published below. **
+## Library
 
 ### Trust Center 
 
