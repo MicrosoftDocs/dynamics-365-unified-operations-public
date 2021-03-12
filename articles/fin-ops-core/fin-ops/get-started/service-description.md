@@ -5,7 +5,7 @@ title: Service description for Dynamics 365 Finance and Dynamics 365 Supply Chai
 description: This topic provides the service description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: shellybakke
 manager: AnnBe
-ms.date: 03/04/2021
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -202,7 +202,7 @@ The responsibilities of Microsoft, the Implementation Partner, and the Customer 
 | **Dynamics 365 for Finance and Supply ChainManagement**</br>*IP address whitelisting - Securing access from Customer's corpnet to Supply Chain Management.* | Finance and Operations is an Azure Service and uses Azure IP address range. | Customers need to whitelist the Azure datacenter ranges for both their Primary and Geo-DR datacenters.</br><br>Link to doc for IP address ranges for Azure. | N/A |
 | **Security**</br>*Secure Infrastructure.* | Microsoft installs anti-malware, uses SSL, rotate secrets, and adheres strictly to SOC/ISO standards.|Refer to the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security/dynamics365-security)or more details on Security. | N/A |
 | Customers that are on version 8.0 and lower ||  |  |
-| **Network Security Groups (NSG)**</br>*With the September LCS release, customers can configure Network Security Group rules to restrict RDP and WinRM access to their Microsoft managed sandbox VMs through LCS.* | Microsoft disallows Remote Desktop access to Sandbox (Tier 1, Tier 2, Tier 3, Tier 4 and Tier 5) environments over the Internet.</br><br>For self-service deployments, RDP is enabled only for Tier1 sandbox. | Customers need to whitelist their IP Address ranges via LCS to enable RDP access to their environments in Microsoft-managed subscriptions. Refer to [Cloud deployment overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview#features-of-the-finance-and-operations-production-instance) for more information. | N/A|
+| **Network Security Groups (NSG)**</br>*With the September LCS release, customers can configure Network Security Group rules to restrict RDP and WinRM access to their Microsoft managed sandbox VMs through LCS.* | Microsoft disallows Remote Desktop access to Sandbox (Tier 1, Tier 2, Tier 3, Tier 4 and Tier 5) environments over the Internet.</br><br>For self-service deployments, RDP is enabled only for Tier1 sandbox. | Customers need to whitelist their IP Address ranges via LCS to enable RDP access to their environments in Microsoft-managed subscriptions. Refer to [Cloud deployment overview](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview#features-of-the-finance-and-operations-production-instance) for more information. | N/A|
 | **ExpressRoute**</br>*Dedicated connection to Supply Chain Management.*| Finance and Operations enabled ExpressRoute over public peering. | Customers need to work with the Azure ExpressRoute service providers to acquire a dedicated connection to Finance and Supply Chain Management. | N/A |
 
 
