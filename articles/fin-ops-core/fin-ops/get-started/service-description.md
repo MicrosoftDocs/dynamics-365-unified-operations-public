@@ -308,7 +308,8 @@ The primary data stores are supported for replication. This means that component
 
 Microsoft offers VL customers three support plans: Premier, Professional Direct, and the support included in the subscription. The level of support differs per plan and highlights are provided in the following table.
 
-| Service feature | Premier | Professional direct  | Subscription ------------------|
+| Service feature | Premier | Professional direct  | Subscription |
+|-----------------|-------------|-----------------|--------------|
 | Unlimited break/fix incidents | N/A | N/A | N/A |
 | 24x7 support | N/A | N/A | Local business hours |
 | Fastest response times | &lt;1 hour | &lt;1 hour | Next business day |
