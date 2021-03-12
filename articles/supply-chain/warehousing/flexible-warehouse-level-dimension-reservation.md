@@ -871,6 +871,7 @@ The following tables provide an overview that shows how the system handles order
 
 [Batch and license plate confirmation](batch-and-license-plate-confirmation.md)
 
+[Troubleshoot reservations in warehouse management](troubleshoot-warehouse-reservations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
