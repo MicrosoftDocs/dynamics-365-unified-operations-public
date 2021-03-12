@@ -48,7 +48,7 @@ When you use an item that has a "batch-above" reservation hierarchy, the **Relea
 
 However, if you use an item that has a "batch below" reservation hierarchy, you can release a load from the **Load planning workbench** page for a partial quantity.
 
-## Issue cause
+### Issue cause
 
 When a dimension is above the **Location** dimension in the reservation hierarchy, it must be specified before the release to the warehouse. Partial quantities can't be released if one or more dimensions above **Location** aren't specified.
 
@@ -81,4 +81,4 @@ However, when you use batch-below items the current on-hand is considered as exp
 The slotting template header may be defined for **Ordered,** **Reserved,** or **Released** demand strategies. For the **Ordered** demand strategy the same reservation hierarchy requirements apply as they would to reservation or releasing to warehouse processes. For items with "batch-above" and "serial-below" reservation hierarchies this menas that the batch or serial number must be specified in the demend order (sales or transfer). Alternatively, the **Reserved** demand strategy may be used to select the batch or serial number before generating the warehouse slotting demand.
 
 
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
