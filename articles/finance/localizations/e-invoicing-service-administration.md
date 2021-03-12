@@ -5,7 +5,7 @@ title: Electronic invoicing add-on administration components
 description: This topic provides information about the components that are related to administration of the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,14 +45,14 @@ Use Microsoft Azure to create the secrets for the key vault and storage account.
 Use Microsoft Dynamics Lifecycle Services (LCS) to enable the add-on for the microservices for your LCS deployment project.
 
 > [!NOTE]
-> The installation of the microservice add-on in LCS requires at least a Tier 2 virtual machine. For more information about environment planning, see [Environment planning](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning)
-> 
+> The installation of the microservice add-on in LCS requires at least a Tier 2 virtual machine. For more information about environment planning, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+ 
 
 ## Regulatory Configuration Services
 
 Dynamics 365 Regulatory Configuration Services (RCS) is the interface that is used to configure the Electronic invoicing add-on. Resources such as environments and electronic invoicing features are created, maintained, and hosted in RCS. When the resources are ready, they are published to the Electronic invoicing add-on service.
 
-For sign-up in RCS, see [Regulatory services](https://marketing.configure.global.dynamics.com/)
+For RCS sign-up, see [Regulatory services](https://marketing.configure.global.dynamics.com/)
 
 For more information about RCS, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md)
 
@@ -62,7 +62,7 @@ Before you can use RCS to configure electronic invoices, you must configure RCS 
 
 #### Service endpoint
 
-The Electronic invoicing add-on is available in several Azure datacenter geography. The following table lists the availability per region:
+The Electronic invoicing add-on is available in several Azure datacenter geographies. The following table lists the availability per region:
 
 | Azure datacenter geography |
 |----------------------------|
