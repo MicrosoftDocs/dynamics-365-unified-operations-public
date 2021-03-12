@@ -4,7 +4,7 @@ title: Manage user roles in Microsoft Teams
 description: This topic covers how to manage Dynamics 365 Commerce user roles in Microsoft Teams, and provides answers to frequently asked questions.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 03/01/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -39,24 +39,6 @@ The following image shows an example list of team members and their user roles i
 ![Dynamics 365 Commerce and Teams integration - User Roles](media/d365-commerce-teams-integration-user-roles.png)
 
 For more information, see [Assign team owners and members in Microsoft Teams](https://docs.microsoft.com/microsoftteams/assign-roles-permissions).
-
-## FAQ
-
-#### How do you assign the owner role to a user while provisioning Teams from Commerce? 
-
-All store managers are automatically added as owners to the corresponding team group so that they can perform operations such as adding a private channel and adding or deleting members. 
-
-#### What happens if a store doesn't have store managers?
-
-If a store doesn't have managers, a team group will not created for the store or in Teams. 
-
-#### What happens if store managers leave the company?
-
-Anyone with the owner role can add a new store manager in Commerce headquarters and reprovision Teams so that the new manager will have the necessary privileges in Teams for the group. 
-
-#### How do you clear the Microsoft Graph API token stored in the session storage?
-
-A user who has signed in to the point of sale (POS) with an Azure Active Directory (Azure AD) account should sign out from the POS or close the application to clear the session storage. 
 
 ## Additional resources
 
