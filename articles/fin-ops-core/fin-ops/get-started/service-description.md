@@ -191,89 +191,53 @@ The responsibilities of Microsoft, the Implementation Partner, and the Customer 
 
 | Type of update | Expected action from Microsoft | Expected action from Customer/Implementation Partner | Maintenance window<br><br>(Microsoft's estimated maintenance downtime)|
 |-------------------------|-------------------------|-------------------------|------|
-| **Customers that are on version 8.1 and higher ** |  |  |  |
+| **Customers that are on version 8.1 and higher** |  |  |  |
 | **Service updates**</br>*Service updates are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible* | Initiate updates to the application within the configured maintenance window. | Customer must always stay current on the latest version of the application. | Microsoft initiated maintenance window<br>(30 minutes – 4 hours*)|
 | **Critical update**</br>*Update that solves a critical issue.* | <ul><li>Notify Customer of the critical update.</br><br><li>Initiate update within the specified timeline. | Apply the critical update.| Microsoft initiated maintenance window<br>(30 minutes – 4 hours) |
 | **Extensions**</br>*Change to the standard business application logic.* | No action required. | Validate extensions in Customer's Non-Production Instances and then promote them to Customer's Production Instance.| Customer initiated maintenance window</br>(1 – 4 hours) |
+| **Customers that are on version 8.0 and lower ** |  |  |  |
+| **Platform updates**<br>*Platform updates are collections of hot fixes and new features for the platform, provided as a deployable package. They are backward compatible. They are also backward compatible with the last major release of the applicable Service.* | Initiate updates to the platform within the configured maintenance window.| Customer must always stay current on the latest version of the platform. | Microsoft initiated maintenance window</br>(30 minutes – 4 hours**) |
+| **Major releases**</br>*Major releases for the Service include new functionality. The last major update is 8.1.* | Make the new major release available and publish to LCS. | Prepare for the upgrade according to the LCS instructions and best practices.| Customer initiated maintenance window</br>(5 – 8 hours) |
+| **Infrastructure updates**<br>*Infrastructure updates are updates made to the underlying infrastructure like OS updates. These are done monthly.* | Initiate updates within the Microsoft planned maintenance window. | No action needed. | Microsoft initiated maintenance window</br>(1 – 4 hours)  |
+| **Dynamics 365 for Finance and Supply ChainManagement**</br>*IP address whitelisting - Securing access from Customer's corpnet to Supply Chain Management.* | Finance and Operations is an Azure Service and uses Azure IP address range. | Customers need to whitelist the Azure datacenter ranges for both their Primary and Geo-DR datacenters.</br><br>Link to doc for IP address ranges for Azure. | N/A |
+| **Security**</br>*Secure Infrastructure.* | Microsoft installs anti-malware, uses SSL, rotate secrets, and adheres strictly to SOC/ISO standards.|Refer to the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security/dynamics365-security)or more details on Security. | N/A |
+| **Customers that are on version 8.0 and lower ** ||  |  |
+| **Network Security Groups (NSG)**</br>*With the September LCS release, customers can configure Network Security Group rules to restrict RDP and WinRM access to their Microsoft managed sandbox VMs through LCS.* | Microsoft disallows Remote Desktop access to Sandbox (Tier 1, Tier 2, Tier 3, Tier 4 and Tier 5) environments over the Internet.</br><br>For self-service deployments, RDP is enabled only for Tier1 sandbox. | Customers need to whitelist their IP Address ranges via LCS to enable RDP access to their environments in Microsoft-managed subscriptions. Refer to [Cloud deployment overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview#features-of-the-finance-and-operations-production-instance) for more information. | N/A|
+| **ExpressRoute**</br>*Dedicated connection to Supply Chain Management.*| Finance and Operations enabled ExpressRoute over public peering. | Customers need to work with the Azure ExpressRoute service providers to acquire a dedicated connection to Finance and Supply Chain Management. | N/A |
 
 
-| **Type of update**</br><em>Description</em> | **Expected action ** | **Maintenance window **</br><em>Microsoft's estimated maintenance downtime</em> |
-|-------------------------|-------------------------|-------------------------|
-|  | **Microsoft ** | **Customer/ Implementation **</br>**Partner ** |  |
-| **Customers that are on version 8.0 and lower ** |
-| **Platform updates** <em>Platform updates are collections of hot fixes and new features for the platform, provided as a deployable package. They are backward compatible. They are also backward compatible with the last major release of the applicable Service.</em> | <blockquote></br>Initiate updates to the platform within the configured maintenance window.</br></blockquote> | <blockquote></br>Customer must always stay current on the latest version of the platform.</br></blockquote> | <blockquote></br>Microsoft initiated maintenance window</br><em>30 minutes – 4 hours** </em></br></blockquote> |
-| **Major releases **</br><em>Major releases for the Service include new functionality. The last major update is 8.1.</em> | <blockquote></br>Make the new major release available and publish to LCS.</br></blockquote> | <blockquote></br>Prepare for the upgrade according to the LCS instructions and best practices.</br></blockquote> | <blockquote></br>Customer initiated maintenance window</br><em>5 – 8 hours</em></br></blockquote> |
-| **Infrastructure updates** <em>Infrastructure updates are updates made to the underlying infrastructure like OS updates. These are done monthly.</em> | <blockquote></br>Initiate updates within the Microsoft planned maintenance window.</br></blockquote> | <blockquote></br>No action needed.</br></blockquote> | <blockquote></br>Microsoft initiated maintenance window</br><em>1 – 4 hours </em></br></blockquote> |
-| **Dynamics 365 for Finance and Supply Chain **</br>**Management **</br><em>IP address whitelisting - </em></br><em>Securing access from </em></br><em>Customer's corpnet to Supply Chain Management.</em> | <blockquote></br>Finance and</br>Operations is an Azure Service and uses Azure IP address range.</br></blockquote> | <blockquote></br>Customers need to whitelist the Azure datacenter ranges for both their Primary and Geo-DR datacenters.</br>Link to doc for IP address ranges for Azure.</br></blockquote> | <blockquote></br>N/A</br><em>N/A</em></br></blockquote> |
-| **Security **</br><em>Secure Infrastructure.</em> | <blockquote></br>Microsoft installs</br>Anti-Malware, uses SSL, Rotate secrets, and adheres strictly to SOC/ISO standards.</br></blockquote> | <blockquote></br>Refer to [https://www. microsoft.com/en-us/ trustcenter/security/ dynamics365-security f](https://www.microsoft.com/en-us/trustcenter/security/dynamics365-security)or more details on Security.</br></blockquote> | <blockquote></br>N/A</br><em>N/A</em></br></blockquote> |
-
-
-| **Type of update**</br><em>Description</em> | **Expected action ** | **Maintenance window **</br><em>Microsoft's estimated maintenance downtime</em> |
-|-------------------------|-------------------------|-------------------------|
-|  | **Microsoft ** | **Customer/ Implementation **</br>**Partner ** |  |
-| **Customers that are on version 8.0 and lower ** |
-| **Network Security **</br>**Groups (NSG) **</br><em>With the September LCS release, customers can configure Network Security Group rules to restrict RDP and WinRM access to their Microsoft managed sandbox VMs through LCS. </em> | <blockquote></br>Microsoft disallows Remote Desktop access to Sandbox</br>(Tier 1, Tier 2, Tier 3, Tier 4 &amp; Tier 5) environments over the Internet.</br>For self service deployments, RDP is enabled only for Tier1 sandbox.</br></blockquote> | <blockquote></br>Customers need to whitelist their IP Address ranges via LCS to enable RDP access to their environments in Microsoft managed subscriptions. Refer to [https://docs.microsoft. com/en-us/dynamics365/ unified-operations/ devitpro/deployment/ clouddeploymentoverview#featuresof-thefinance-andoperationsproduction-instance](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview#features-of-the-finance-and-operations-production-instance) for more information.</br></blockquote> | <blockquote></br>N/A</br><em>N/A </em></br></blockquote> |
-| **ExpressRoute **</br><em>Dedicated connection to </em></br><em>Supply Chain Management.</em> | <blockquote></br>Finance and</br>Operations enabled ExpressRoute over public peering.</br></blockquote> | <blockquote></br>Customers need to work with the Azure ExpressRoute service providers to acquire a dedicated connection to Finance and Supply Chain Management.</br></blockquote> | <blockquote></br>N/A</br><em>N/A</em></br></blockquote> |
-
-
-\*\*Promoting an update to a Customer's production environment is a
-service request to Microsoft that must be initiated from LCS. This is
-within the Customer planned maintenance window. Request is planned to be
-executed within two business days. Generally, 95% of updates are applied
-in less than an hour.
+\*\*Promoting an update to a Customer's production environment is a service request to Microsoft that must be initiated from LCS. This is within the Customer planned maintenance window. Request is planned to be executed within two business days. Generally, 95% of updates are applied in less than an hour.
 
 ### Microsoft planned maintenance schedule and communication 
 
-Scheduled downtime means periods of downtime related to network,
-hardware, or Service maintenance or upgrades. Microsoft will publish
-notice or notify Customers at least **five days** prior to the
-commencement of such downtime. The default downtime window as listed
-below are scheduled on weekends in time windows defined per region to
-minimize the impact to the Customers' business.
+Scheduled downtime means periods of downtime related to network, hardware, or Service maintenance or upgrades. Microsoft will publish notice or notify Customers at least **five days** prior to the commencement of such downtime. The default downtime window as listed below are scheduled on weekends in time windows defined per region to minimize the impact to the Customers' business.
 
-**Microsoft's Planned Maintenance Schedule. **
+**Microsoft's Planned Maintenance Schedule **
 
 - **NAM:** 2 AM to 10 AM
-
 - **EMEA:** 10 PM to 6 AM
-
 - **APAC:** 12 PM to 9 PM
 
 ## Security and administrative access 
 
-Administrative access to a Finance and Supply Chain Management
-production environment is strictly controlled and logged. Customer Data
-is handled in accordance with the Microsoft Online Services Terms.
-Customer's tenant administrator can access Production Instances or
-Non-Production Instances as described in **Table 5.** Microsoft's
-Administrator access is described in **Table 5.**
+Administrative access to a Finance and Supply Chain Management production environment is strictly controlled and logged. Customer Data is handled in accordance with the Microsoft Online Services Terms. Customer's tenant administrator can access Production Instances or Non-Production Instances as described in **Table 5.** Microsoft's Administrator access is described in **Table 5.**
 
-**Table 5.** Customer's administrative access *Downtime has the meaning
-given to it in the
-[*SLA*.](https://www.microsoft.com/en-us/licensing/product-licensing/products)
-*
+For more information, see [Licensing Terms and Documentation](https://www.microsoft.com/licensing/product-licensing/products).
 
-*Microsoft Online Services Terms.*
-
-| **Environment type ** | <blockquote></br>**Purpose **</br></blockquote> | <blockquote></br>**Level of Customer access **</br></blockquote> |
+| Environment type | Purpose  | Level of Customer access  |
 |-------------------------|-------------------------|-------------------------|
-| **Non-Production Instance - **</br>**Sandbox Tier 1: Developer **</br>**Instance ** | <blockquote></br>Non-Production Instance that Customer can use for development or as build machines or to customize any Service and unit test Customer changes.</br></blockquote> | <blockquote></br>As of platform update 12 for the applicable Service, Customer will not have administrator access to development environment VMs running in the Microsoft subscription. Customer will continue to have full administrative access to the SQL Azure server installed on the environment.</br></blockquote> |
-| **Non-Production Instance – **</br>**Sandbox Tier 2: Standard Acceptance Testing Instance (or any Sandbox Tier Add-on) ** | <blockquote></br>Non-Production Instance that Customer can use for user acceptance testing, integration testing, and training of any Service.</br></blockquote> | <blockquote></br>Customer will not have remote desktop access or access to the SQL server associated with the NonProduction Instance. Customer can connect as an administrator to the database.</br></blockquote> |
-| **Production Instance ** | <blockquote></br>Use to go-live with any Service.</br></blockquote> | <blockquote></br>All access is only through the Finance and Operations client or through LCS.</br></blockquote> |
+| **Non-Production Instance**</br>Sandbox Tier 1: Developer Instance | Non-Production Instance that Customer can use for development or as build machines or to customize any Service and unit test Customer changes. | As of platform update 12 for the applicable Service, Customer will not have administrator access to development environment VMs running in the Microsoft subscription. Customer will continue to have full administrative access to the SQL Azure server installed on the environment. |
+| **Non-Production Instance**</br>Sandbox Tier 2: Standard Acceptance Testing Instance (or any Sandbox Tier Add-on)| Non-Production Instance that Customer can use for user acceptance testing, integration testing, and training of any Service. | Customer will not have remote desktop access or access to the SQL server associated with the NonProduction Instance. Customer can connect as an administrator to the database. |
+| **Production Instance** | Use to go-live with any Service. | All access is only through the Finance and Operations client or through LCS.|
 
+The following table details the different levels of access for different Microsoft administrators.
 
-**Table 6** details the different levels of access for different
-Microsoft administrators.
-
-***Table 6.** Microsoft's administrator access *
-
-| **Administrator ** | <blockquote></br>**Customer data **</br></blockquote> |
+| Administrator | Customer data  |
 |-------------------------|-------------------------|
-| **Operations responses team **</br>**<em>{Limited to key personnel only)</em> ** | <blockquote></br>Yes, granted by support ticket. Access is audited and limited to the duration of the support activity.</br></blockquote> |
-| **Microsoft Customer Support Services ** | <blockquote></br>No direct access. Customer may use screen sharing to work with support staff to debug issues.</br></blockquote> |
-| **Engineering ** | <blockquote></br>No direct access. Operations response team may use screen sharing to work with engineering to debug issues.</br></blockquote> |
-| **Others in Microsoft ** | <blockquote></br>No access.</br></blockquote> |
-
+| Operations responses team<br>(Limited to key personnel only) |Yes, granted by support ticket. Access is audited and limited to the duration of the support activity. |
+| Microsoft Customer Support Services | No direct access. Customer may use screen sharing to work with support staff to debug issues. |
+| Engineering | No direct access. Operations response team may use screen sharing to work with engineering to debug issues. |
+| Others in Microsoft | No access.|
 
 ## Monitoring and incident management 
 
