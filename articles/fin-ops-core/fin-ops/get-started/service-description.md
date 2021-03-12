@@ -193,8 +193,8 @@ The responsibilities of Microsoft, the Implementation Partner, and the Customer 
 |-------------------------|-------------------------|-------------------------|------|
 | **Customers that are on version 8.1 and higher ** |  |  |  |
 | **Service updates**</br>*Service updates are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible* | Initiate updates to the application within the configured maintenance window. | Customer must always stay current on the latest version of the application. | Microsoft initiated maintenance window<br>(30 minutes – 4 hours*)|
-| **Critical update **</br>*Update that solves a critical issue.* | <ul><li>Notify Customer of the critical update.</br><br><li>Initiate update within the specified timeline. | Apply the critical update.| Microsoft initiated maintenance window<br>(30 minutes – 4 hours) |
-| **Extensions **</br>*Change to the standard business application logic.* | No action required. | Validate extensions in Customer's Non-Production Instances and then promote them to Customer's Production Instance.| Customer initiated maintenance window</br>(1 – 4 hours) |
+| **Critical update**</br>*Update that solves a critical issue.* | <ul><li>Notify Customer of the critical update.</br><br><li>Initiate update within the specified timeline. | Apply the critical update.| Microsoft initiated maintenance window<br>(30 minutes – 4 hours) |
+| **Extensions**</br>*Change to the standard business application logic.* | No action required. | Validate extensions in Customer's Non-Production Instances and then promote them to Customer's Production Instance.| Customer initiated maintenance window</br>(1 – 4 hours) |
 
 
 | **Type of update**</br><em>Description</em> | **Expected action ** | **Maintenance window **</br><em>Microsoft's estimated maintenance downtime</em> |
