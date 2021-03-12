@@ -191,17 +191,17 @@ The responsibilities of Microsoft, the Implementation Partner, and the Customer 
 
 | Type of update | Expected action from Microsoft | Expected action from Customer/Implementation Partner | Maintenance window<br><br>(Microsoft's estimated maintenance downtime)|
 |-------------------------|-------------------------|-------------------------|------|
-| **Customers that are on version 8.1 and higher** |  |  |  |
+| Customers that are on version 8.1 and higher |  |  |  |
 | **Service updates**</br>*Service updates are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible* | Initiate updates to the application within the configured maintenance window. | Customer must always stay current on the latest version of the application. | Microsoft initiated maintenance window<br>(30 minutes – 4 hours*)|
 | **Critical update**</br>*Update that solves a critical issue.* | <ul><li>Notify Customer of the critical update.</br><br><li>Initiate update within the specified timeline. | Apply the critical update.| Microsoft initiated maintenance window<br>(30 minutes – 4 hours) |
 | **Extensions**</br>*Change to the standard business application logic.* | No action required. | Validate extensions in Customer's Non-Production Instances and then promote them to Customer's Production Instance.| Customer initiated maintenance window</br>(1 – 4 hours) |
-| **Customers that are on version 8.0 and lower ** |  |  |  |
+| Customers that are on version 8.0 and lower |  |  |  |
 | **Platform updates**<br>*Platform updates are collections of hot fixes and new features for the platform, provided as a deployable package. They are backward compatible. They are also backward compatible with the last major release of the applicable Service.* | Initiate updates to the platform within the configured maintenance window.| Customer must always stay current on the latest version of the platform. | Microsoft initiated maintenance window</br>(30 minutes – 4 hours**) |
 | **Major releases**</br>*Major releases for the Service include new functionality. The last major update is 8.1.* | Make the new major release available and publish to LCS. | Prepare for the upgrade according to the LCS instructions and best practices.| Customer initiated maintenance window</br>(5 – 8 hours) |
 | **Infrastructure updates**<br>*Infrastructure updates are updates made to the underlying infrastructure like OS updates. These are done monthly.* | Initiate updates within the Microsoft planned maintenance window. | No action needed. | Microsoft initiated maintenance window</br>(1 – 4 hours)  |
 | **Dynamics 365 for Finance and Supply ChainManagement**</br>*IP address whitelisting - Securing access from Customer's corpnet to Supply Chain Management.* | Finance and Operations is an Azure Service and uses Azure IP address range. | Customers need to whitelist the Azure datacenter ranges for both their Primary and Geo-DR datacenters.</br><br>Link to doc for IP address ranges for Azure. | N/A |
 | **Security**</br>*Secure Infrastructure.* | Microsoft installs anti-malware, uses SSL, rotate secrets, and adheres strictly to SOC/ISO standards.|Refer to the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security/dynamics365-security)or more details on Security. | N/A |
-| **Customers that are on version 8.0 and lower ** ||  |  |
+| Customers that are on version 8.0 and lower ||  |  |
 | **Network Security Groups (NSG)**</br>*With the September LCS release, customers can configure Network Security Group rules to restrict RDP and WinRM access to their Microsoft managed sandbox VMs through LCS.* | Microsoft disallows Remote Desktop access to Sandbox (Tier 1, Tier 2, Tier 3, Tier 4 and Tier 5) environments over the Internet.</br><br>For self-service deployments, RDP is enabled only for Tier1 sandbox. | Customers need to whitelist their IP Address ranges via LCS to enable RDP access to their environments in Microsoft-managed subscriptions. Refer to [Cloud deployment overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview#features-of-the-finance-and-operations-production-instance) for more information. | N/A|
 | **ExpressRoute**</br>*Dedicated connection to Supply Chain Management.*| Finance and Operations enabled ExpressRoute over public peering. | Customers need to work with the Azure ExpressRoute service providers to acquire a dedicated connection to Finance and Supply Chain Management. | N/A |
 
@@ -212,7 +212,7 @@ The responsibilities of Microsoft, the Implementation Partner, and the Customer 
 
 Scheduled downtime means periods of downtime related to network, hardware, or Service maintenance or upgrades. Microsoft will publish notice or notify Customers at least **five days** prior to the commencement of such downtime. The default downtime window as listed below are scheduled on weekends in time windows defined per region to minimize the impact to the Customers' business.
 
-**Microsoft's Planned Maintenance Schedule **
+Microsoft's planned maintenance schedule:
 
 - **NAM:** 2 AM to 10 AM
 - **EMEA:** 10 PM to 6 AM
