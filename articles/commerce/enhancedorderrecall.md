@@ -61,7 +61,7 @@ From the AppBar, a user can select an operation. Depending on the status of the 
 
 - **Return** – Initiates the process of creating a return for any of the invoiced products on the selected customer order.
 
-- **Cancel** – Issue a full cancellation of the selected sales order. This option will not be available for orders initiated through a call center channel and can not be used to partially cancel an order.
+- **Cancel** – Issue a full cancellation of the selected sales order. This option will not be available for orders initiated through a call center channel and cannot be used to partially cancel an order.
 
 - **Fulfill** – Transfers the user to the order fulfillment page, which will be pre-filtered for the selected order. Only order lines that are open for fulfillment by the user's store for the selected order will be displayed.
 
