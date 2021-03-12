@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 This topic lists the steps to for viewing Tax Deducted at Source (TDS) payments and transactions that have been posted for a settlement period. 
 
-Complete the rollowing steps to view TDS payments and TDS transactions posted for a TDS settlement period.
+Complete the following steps to view TDS payments and TDS transactions posted for a TDS settlement period.
 
 Begin by opening the **Withholding tax settlement periods** page (**Tax > Indirect taxes > Withholding tax > Withholding tax settlement periods**).
 
