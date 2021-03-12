@@ -134,17 +134,17 @@ The following table describes some typical scenarios and activities for the serv
 
 | Activity  | Responsibility of Microsoft  | Responsibility of Customer |
 |-------------------------|-------------------------|------|
-| Provisioning initial tenants  |  |   |
+| **Provisioning initial tenants**  |  |   |
 | Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  | ⚫ |
 | Provision all Production Instances and Non-Production Instances | ⚫ |   |
 | Validate the deployed Production Instances and Non-Production Instances |  | ⚫  |
-| Service updates  |  |
+| **Service updates**  |  |
 | Microsoft applies service updates to a designated Non-Production and</br>Production Instances | X  | X  |
 | Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  | X  |
 | Request extension updates to be applied to the Production Instance |  | X |
 | Create code and data backup for Production Instance before applying any updates | X  |   |
 | In case of any failure, roll back Production instance to code and data backup | X  |    |
-| Data management (Backup, restore, and update)|  |   |
+| **Data management (Backup, restore, and update)**|  |   |
 | Backup database | X  |   |
 | Determine HA and disaster recovery plan | X  |    |
 | Monitor Production Instance database performance | X   | X  |
