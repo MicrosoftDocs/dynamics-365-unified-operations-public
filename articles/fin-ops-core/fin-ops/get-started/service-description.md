@@ -133,11 +133,11 @@ For more information about automatic back-ups, see [Automated backups - Azure SQ
 The following table describes some typical scenarios and activities for the service along with the responsibilities of Microsoft, Customer, or both concerning such activities.
 
 | Activity  | Responsibility of Microsoft  | Responsibility of Customer |
-|-------------------------|-------------------------|
+|-------------------------|-------------------------|------|
 | Provisioning initial tenants  |  |   |
-| Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  | X |
-| Provision all Production Instances and Non-Production Instances | X |   |
-| Validate the deployed Production Instances and Non-Production Instances |  | X  |
+| Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  | ⚫ |
+| Provision all Production Instances and Non-Production Instances | ⚫ |   |
+| Validate the deployed Production Instances and Non-Production Instances |  | ⚫  |
 | Service updates  |  |
 | Microsoft applies service updates to a designated Non-Production and</br>Production Instances | X  | X  |
 | Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  | X  |
