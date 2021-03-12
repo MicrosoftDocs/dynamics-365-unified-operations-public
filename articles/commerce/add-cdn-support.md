@@ -5,7 +5,7 @@ title: Add support for a content delivery network (CDN)
 description: This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 author: brianshook
 manager: annbe
-ms.date: 03/11/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add support for a content delivery network (CDN)
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
-
-## Overview
 
 When you set up an e-commerce environment in Dynamics 365 Commerce, you can configure it to work with your CDN service. 
 
@@ -49,7 +46,7 @@ Additionally, the *statics* (JavaScript or Cascading Style Sheets \[CSS\] files)
 
 ## Set up SSL
 
-After you provision your Commerce environment with the custom domain that is provided, or after you provide the custom domain for your environment by using a service request, you need to work with Commerce Onboarding Team to plan the DNS changes.
+After you provision your Commerce environment with the custom domain that is provided, or after you provide the custom domain for your environment by using a service request, you need to work with the Commerce onboarding team to plan the DNS changes.
 
 As was previously mentioned, the generated host name or endpoint supports an SSL certificate only for \*.commerce.dynamics.com. It doesn't support SSL for custom domains.
 
