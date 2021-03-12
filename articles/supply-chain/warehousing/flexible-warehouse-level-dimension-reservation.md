@@ -43,12 +43,12 @@ This topic describes the inventory reservation policy that lets these businesses
 
 This section summarizes the existing inventory reservation hierarchy.
 
-The inventory reservation hierarchy dictates that, as far as storage dimensions are concerned, the demand order carries the mandatory dimensions of site, warehouse, and inventory status, whereas the warehouse logic is responsible for assigning a location to the requested quantities and reserving the location. In other words, in the interactions between the demand order and the warehouse operations, the demand order is expected to indicate where the order must be shipped from (that is, what site and warehouse). The warehouse then relies on its logic to find the required quantity in the warehouse premises.
+The inventory reservation hierarchy dictates that, as far as storage dimensions are concerned, the demand order carries the mandatory dimensions of site, warehouse, and inventory status, in other words, the mandatory dimensions are all the dimensions above the location dimension in the reservation hierarchy. Whereas the warehouse logic is responsible for assigning a location to the requested quantities and reserving the location. In other words, in the interactions between the demand order and the warehouse operations, the demand order is expected to indicate where the order must be shipped from (that is, what site and warehouse - above location dimensions); and the warehouse then relies on its logic to find the required quantity in the warehouse premises.
 
 However, to reflect the operational model of the business, tracking dimensions (batch and serial numbers) are subject to more flexibility. An inventory reservation hierarchy can accommodate scenarios where the following conditions apply:
 
-- The business relies on its warehouse operations to manage picking of quantities that have batch or serial numbers after the quantities have been found in the warehousing storage space. This model is often referred to as *Batch-below\[location\]*. It's typically used when a product's batch or serial number identification isn't important to the customers who place the demand with the selling company.
-- If batch or serial numbers are part of a customer's order specification, and they are recorded on the demand order, the warehouse operations that find the quantities in the warehouse are constrained by the specific requested numbers and aren't allowed to change them. This model is referred to as *Batch-above\[location\]*. In other words, the dimensions above location are the specific requirements for the demands to be fulfilled, in consequence when using batch-above or serial-above reservation hierarchies the batch or serial number *must* be specified in the demand order or in the related reservations.
+- The business relies on its warehouse operations to manage picking of quantities that have batch or serial numbers after the quantities have been found in the warehousing storage space. This model is often referred to as *Batch-below\[location\]* or *Serial-below\[location\]*. It's typically used when a product's batch or serial number identification isn't important to the customers who place the demand with the selling company.
+- If batch or serial numbers are part of a customer's order specification, and they are recorded on the demand order, the warehouse operations that find the quantities in the warehouse are constrained by the specific requested numbers and aren't allowed to change them. This model is referred to as *Batch-above\[location\]* or *Serial-above\[location\]*. In other words, the dimensions above location are the specific requirements for the demands to be fulfilled, in consequence when using batch-above or serial-above reservation hierarchies the batch or serial number *must* be specified in the demand order or in the related reservations.
 
 In these scenarios, the challenge is that only one inventory reservation hierarchy can be assigned to each released product. Therefore, for the WMS to handle tracked items, after the hierarchy assignment determines when the batch or serial number should be reserved (either when the demand order is taken or during the warehouse picking work), this timing can't be changed on an ad-hoc basis.
 
@@ -860,6 +860,14 @@ The following tables provide an overview that shows how the system handles order
     - Transfer orders and raw material picking
 
 - The container consolidation rule for packing by directive unit has limitations. For order-committed reservations, we recommend that you not use container build templates where the **Pack by directive unit** field is enabled. In the current design, location directives aren't used when warehouse work is created. Therefore, only the lowest unit in the unit sequence group (the inventory unit) is applied during the containerization wave step.
+
+## See also
+
+[Batch numbers in Warehouse management](batch-numbers-in-warehouse-management.md)
+[Reserve the same batch for a sales order](reserve-same-batch-sales-ordert.md)
+[Pick oldest batch on a mobile device](pick-oldest-batch.md)
+[Batch and license plate confirmation](batch-and-license-plate-confirmation.md)
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
