@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Manage user roles in Microsoft Teams
-description: This topic covers how to manage Dynamics 365 Commerce user roles in Microsoft Teams, and provides answers to frequently asked questions.
+description: This topic covers how to manage Dynamics 365 Commerce user roles in Microsoft Teams.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 03/12/2021
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers how to manage Dynamics 365 Commerce user roles in Microsoft Teams, and provides answers to frequently asked questions.
+This topic covers how to manage Dynamics 365 Commerce user roles in Microsoft Teams.
 
 As you create a team per store or channel in Microsoft Teams, a group membership corresponding to the team is created, for example `HOUSTON_D365@<YourTenantAADDomain>.com`. All the store workers under a team group membership are assigned one of two user roles: "owner" or "member." A store employee with the owner user role, typically a store manager, can perform operations such as adding a private channel and adding or deleting members. 
 
