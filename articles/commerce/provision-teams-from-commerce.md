@@ -4,7 +4,7 @@ title: Provision Microsoft Teams from Dynamics 365 Commerce
 description: This topic describes how to provision Microsoft Teams using organizational data from Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 03/01/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -80,9 +80,8 @@ To upload a Commerce organizational hierarchy to Teams, follow these steps.
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Microsoft Teams Integration Configuration**.
 1. Select **Download targeting hierarchy**, and then select **Retail Stores by Region** to download a CSV file of the organizational hierarchy. 
 1. Install the Teams PowerShell module following the steps outlined in [Install Microsoft Teams PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-install). 
+1. In the PowerShell window, when prompted sign in using the administrator account for your Azure AD tenant.
 1. Use the Teams Powershell module to upload the targeting hierarchy CSV file by following the steps in [Set up your team targeting hierarchy](https://docs.microsoft.com/microsoftteams/set-up-your-team-hierarchy). 
-1. Go to the [Teams administrator portal](https://admin.teams.microsoft.com/) and sign in as administrator of your e-commerce tenant.
-1.
 
 ## Validate that the organizational hierarchy was uploaded to Teams
 
