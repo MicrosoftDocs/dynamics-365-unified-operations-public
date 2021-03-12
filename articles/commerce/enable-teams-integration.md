@@ -49,11 +49,13 @@ To register the Teams application with your tenant at the Azure portal, follow t
 
 To enable Teams integration in Commerce headquarters, follow these steps.
 
-1. Go to **Retail and Commerce \> Channel setup \> Microsoft Teams Integration Configuration**.
+1. Go to **Retail and Commerce \> Channel setup \> Microsoft Teams integration configuration**.
 1. Select **Edit** on the Action Pane.
 1. Set **Enable Microsoft Teams Integration** to **Yes**.
-1. For **Application ID** and **Application Key**, enter the values you obtained when registering Teams at the Azure portal. 
+1. For **Application ID** and **Application key**, enter the values you obtained when registering Teams at the Azure portal. 
 1. Select **Save** on the Action Pane.
+
+The following image shows an example of the **Enable Microsoft Teams Integration** setting and **Application ID** and **Application key** values in Commerce headquarters.
 
 ![Dynamics 365 Commerce - Teams integration configuration](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)
 
