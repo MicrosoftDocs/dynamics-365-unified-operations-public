@@ -57,10 +57,10 @@ To begin, open the **Update certificate** (**Tax > Declarations > Withholding ta
 
 6. In the **Overview** tab (upper-pane), view details of TDS transactions that are posted during the selected period range for the vendor or customer in the following fields:
 
-- **Voucher** Voucher number of the TDS transaction.
-- **Date** Date of the TDS transaction.
-- **Amount** Invoice amount that the TDS was calculated on.
-- **Tax amount** TDS tax amount calculated for the transaction.
+- **Voucher**: Voucher number of the TDS transaction.
+- **Date**: Date of the TDS transaction.
+- **Amount**: Invoice amount that the TDS was calculated on.
+- **Tax amount**: TDS tax amount calculated for the transaction.
 
 7.  Click the **Include** button to move a specific **TDS transaction** from the grid area (upper-pane) to the grid area (lower-pane). Click the **Include all** button to move all TDS transactions from the grid area (upper-pane) to the grid area (lower-pane).
 
@@ -68,6 +68,6 @@ To begin, open the **Update certificate** (**Tax > Declarations > Withholding ta
 
 8. Click the **Update** button to update the certificate number and certificate date for TDS transactions that are displayed in the grid area (lower-pane) in the **Certificate number** field and in the **Certificate date** field respectively.
 
-9. Click **Tax > Indirect taxes > Withholding tax > Recoverable certificate > Inquiry button** to view the updated transaction lines with the certificate numbers in the **Certificate transactions** page.
+9. Click **Tax > Indirect taxes > Withholding tax > Recoverable certificate > Inquiry button** to view the updated transaction lines with the certificate numbers on the **Certificate transactions** page.
 
  [![Certificate transactions](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
