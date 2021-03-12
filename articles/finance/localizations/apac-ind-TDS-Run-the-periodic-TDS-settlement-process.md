@@ -2,7 +2,7 @@
 # required metadata
 
 title: Run the periodic TDS settlement process
-description: This topic lists the steps to settle the periodic Tax Deducted at Source (TDS).
+description: This topic lists the steps to complete for settling periodic Tax Deducted at Source (TDS).
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)
 
-This topic lists the steps to settle the periodic Tax Deducted at Source (TDS).
+This topic lists the steps to complete for settling periodic Tax Deducted at Source (TDS).
 
 Begin by opening the **Withholding tax payment** page (**Tax > Declarations > Withholding tax > Withholding tax payment**).
 
@@ -62,17 +62,14 @@ Begin by opening the **Withholding tax payment** page (**Tax > Declarations > Wi
 7. In the **Withholding tax payment version** field, select the TDS settlement version. The options are:
 
 - **Original**: Use this option to run the TDS settlement process the first time. The TDS settlement process is run only once using the Original payment version for a Tax Account Number (TAN), withholding tax component group, and withholding tax settlement period combination.
+- **Latest versions:** Use this option if the TDS settlement process has been run once already for the specified period. Include back-dated transactions posted after the settlement process was run once for the period. Run the settlement process using the **Latest versions** option any number of times.
 
-- **Latest versions:** Use this option if the TDS settlement process is run already once for the specified period. Include back-dated transactions posted after the settlement process was run once for the period. Run the settlement process using the Latest versions option any number of times.
-
-8. Select the **Update** check box to run the TDS settlement process and post the amounts to the ledger accounts. If this check box is not selected, the settlement process will not take place and the financial entries will not be generated.
+8. Select the **Update** check box to run the TDS settlement process and post the amounts to the ledger accounts. If this check box is cleared, the settlement process won't take place and the financial entries won't be generated.
 
 9. Click **OK** to run the TDS settlement process and generate the withholding tax payment report. The TDS transactions that are included in the settlement process are displayed with the **Settled** status on the **Settlement** page (**Accounts payable > Payments > Vendor payment journal > Lines button > Functions button > Settlement**).
 
-**Important points**
+### Important points
 
 - If a withholding tax component group isn't selected during the settlement process, the settlement takes place for all the withholding tax component groups for the selected TAN and settlement period. Separate lines are created for each withholding tax component group in the **Open transaction editing** page.
-
 - The settlement process takes place based on the nature of assessee for a settlement period. The transactions with **Company** as the nature of assessee are settled and displayed on the **Open transaction editing** page as one line. The transactions with nature of assessee other than **Company** are settled and displayed on the **Open transaction editing** page as one line.
-
 - The due date for the settled TDS transaction lines in the **Open transaction editing** page is based on the terms of payment defined for the TDS authority vendor in the **Vendors** page. If the terms of payments are not defined for the TDS authority vendor, the last day of the settlement period is displayed as the due date.
