@@ -5,7 +5,7 @@ title: Get started with Electronic invoicing add-on service administration
 description: This topic explains how to get started with the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
-ms.date: 02/11/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,14 +57,12 @@ Before you complete the procedures in this topic, the following prerequisites mu
 2. Select the **Preview feature management** tile.
 3. In the **Public Preview Features** section, select **e-Invoicing service**.
 4. Make sure that the **Preview feature enabled** option is set to **Yes**.
-5. Go back to your LCS dashboard.
-6. Select your LCS deployment project. The LCS project must be up and running.
+5. On your LCS dashboard, select your LCS deployment project. The LCS project must be running.
 7. On the **Environment add-ins** tab, select **Install a new add-in**.
-8. Select **e-invoicing Services**.
-9. In the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This is a 
+8. Select **e-invoicing Services** and in the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This is a 
 fixed value.
 10. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account.
-11. Review the terms and conditions, and mark the check box.
+11. Review the terms and conditions, and then select the check box.
 12. Select **Install**.
 
 
