@@ -41,26 +41,26 @@ This topic provides an example of how Tax Deducted at Source (TDS) is calculated
 - Set up TDS tax codes and attach TDS components to the tax codes using the **Withholding tax codes** page. 
 - Set up TDS tax groups using the **Withholding tax groups** page. Then attach the TDS tax codes to the tax group, and define the formula, using the **Formula designer** page. 
 
-**Example formula**:
+**Example formula**
 
-In this example, the TDS group, Rent, is attached to a purchase invoice that's created for vendor A. The invoice amount is 100000. Refer to the following table to view the TDS calculation for the invoice.
+In this example, the TDS group, Rent, is attached to a purchase invoice that's created for vendor A. The invoice amount is $100,000. Refer to the following table to view the TDS calculation for the invoice.
 
-| TDS  Group                                                   | TDS tax codes attached to the TDS group | Value              | Taxable basis  (Formula designer) | Calculation expression  (Formula designer) | Base amount | Calculated TDS amount |
+| TDS  group                                                   | TDS tax codes attached to the TDS group | Value              | Taxable basis  (Formula designer) | Calculation expression  (Formula designer) | Base amount | Calculated TDS amount |
 | ------------------------------------------------------------ | --------------------------------------- | ------------------ | --------------------------------- | :----------------------------------------: | ----------- | --------------------- |
-| Rent                                                         | TDS  (TDS component-TDS)                | 10%                | Gross amount                      |                                            | 100000      | 10000                 |
-| Surcharge  (TDS component-Surcharge)                         | 10%                                     | Excl. gross amount | +TDS                              |                   10000                    | 1000        |                       |
+| Rent                                                         | TDS  (TDS component-TDS)                | 10%                | Gross amount                      |                                            | 100,000      | 10,000                 |
+| Surcharge  (TDS component-Surcharge)                         | 10%                                     | Excl. gross amount | +TDS                              |                   10000                    | 1,000        |                       |
 | PE-Cess  (TDS component- PE-Cess)                            | 2%                                      | Excl. gross amount | +TDS+Surcharge                    |                   11000                    | 220         |                       |
 | SHE Cess  (TDS component- SHE Cess)                          | 1%                                      | Excl. gross amount | +TDS+Surcharge                    |                   11000                    | 110         |                       |
-| **Total** **TDS**  **calculated** **for** **the** **invoice** | **11330**                               |                    |                                   |                                            |             |                       |
+| **Total** **TDS**  **calculated** **for** **the** **invoice** | **11,330**                               |                    |                                   |                                            |             |                       |
 
-The voucher entries are created as follows:
+The voucher entries are created as follows.
 
 | Account           | Debit  | Credit |
 | ----------------- | ------ | ------ |
-| Rent              | 100000 |        |
-| Vendor A          |        | 100000 |
-| Vendor A          | 11330  |        |
-| TDS payable       |        | 10000  |
-| Surcharge payable |        | 1000   |
+| Rent              | 100,000 |        |
+| Vendor A          |        | 100,000 |
+| Vendor A          | 11,330  |        |
+| TDS payable       |        | 10,000  |
+| Surcharge payable |        | 1,000   |
 | PE-Cess payable   |        | 220    |
 | SHE Cess payable  |        | 110    |
