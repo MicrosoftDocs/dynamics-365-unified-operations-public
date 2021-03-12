@@ -135,9 +135,9 @@ The following table describes some typical scenarios and activities for the serv
 | Activity  | Responsibility of Microsoft  | Responsibility of Customer |
 |-------------------------|-------------------------|------|
 | **Provisioning initial tenants**  |  |   |
-| Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  | ⚫ |
-| Provision all Production Instances and Non-Production Instances | ⚫ |   |
-| Validate the deployed Production Instances and Non-Production Instances |  | ⚫  |
+| Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  | X |
+| Provision all Production Instances and Non-Production Instances | X |   |
+| Validate the deployed Production Instances and Non-Production Instances |  | X  |
 | **Service updates**  |  |
 | Microsoft applies service updates to a designated Non-Production and</br>Production Instances | X  | X  |
 | Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  | X  |
@@ -151,19 +151,19 @@ The following table describes some typical scenarios and activities for the serv
 | Tuning the Production Instance database for performance | X  | X  |
 | Initiate copy of Production Instance database to Non-Production Instance |  | X  |
 | **Update infrastructure**  |  |  |
-| Schedule regular infrastructure updates | ⚫ |    |
+| Schedule regular infrastructure updates | X |    |
 | **Scale up and down (Users, storage, instances)**|  |   |
 | Purchase additional users and Non-Production add-ons |  |  X |
 | Changes in usage must be updated in the LCS' Subscription Estimator tool |  | X |
 | Report any significant performance issues impacting usage of the Service |  | X |
-| Proactively manage the resources needed for the Service applicable Service | ⚫ |   |
-| Investigate and troubleshoot Incidents | ⚫ | ⚫ |
+| Proactively manage the resources needed for the Service applicable Service | X |   |
+| Investigate and troubleshoot Incidents | X | X |
 | **Security (User access)**|  |   |
 | Provide user access to the Service |  |  X |
 | Provide LCS project access for managing and operating instances deployed through LCS |  | X |
 | **Monitor Production Instance**|  |  |
-| Monitor Production Instances 24x7 | ⚫ |⚫   |
-| Notify Customer proactively of incidents with the Production Instance | ⚫ |   |
+| Monitor Production Instances 24x7 | X |X   |
+| Notify Customer proactively of incidents with the Production Instance | X |   |
 | **Manage and Monitor Non-Production Instances** |  |   |
 | Manage Non-Production Instances with LCS |  | X  |
 | Monitor Non-Production Instances |  | X  |
