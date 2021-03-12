@@ -54,14 +54,14 @@ Begin by opening the **Vendor payment journal** page (**Accounts payable > Payme
 
 5. On the **Overview** tab, select the **Mark** check box for TDS transactions to settle to the TDS authority vendor. View the information for the open TDS transactions in the following fields.
 
-- **Date** The TDS transaction date.
-- **Voucher** The voucher number.
+- **Date**: The TDS transaction date.
+- **Voucher**: The voucher number.
 - **Source** The module that the TDS transaction is posted in.
-- **Vendor/Customer** The vendor or customer account number that the TDS is deducted from.
-- **Name of deductee/party** The vendor or customer name that the TDS is deducted from.
-- **Nature of assessee** The nature of the assessee category that the deductee belongs to.
-- **Amount** The invoice amount that the TDS is calculated on.
-- **Tax** **amount** The TDS amount calculated for the transaction.
+- **Vendor/Customer**: The vendor or customer account number that the TDS is deducted from.
+- **Name of deductee/party**: The vendor or customer name that the TDS is deducted from.
+- **Nature of assessee**: The nature of the assessee category that the deductee belongs to.
+- **Amount**: The invoice amount that the TDS is calculated on.
+- **Tax amount**: The TDS amount calculated for the transaction.
 
 > [!Note]
 > Clear the **Mark** check box for  TDS transactions that should not be settled to the TDS authority vendor.  
