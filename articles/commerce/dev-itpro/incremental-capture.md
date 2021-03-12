@@ -5,7 +5,7 @@ title: Incremental payment capture
 description: This topic describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce.
 author: rubendel
 manager: annbe
-ms.date: 3/10/2021
+ms.date: 3/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -65,7 +65,7 @@ The following features must be enabled prior to enabling incremental capture.
 | Duplicate payment protection on invoicing | This feature enables duplicate payment protection for invoicing scenarios. Commerce payment functionality may affect customizations in invoicing scenarios. If your organization has invoicing customizations, make sure that they are refactored before you turn on Commerce payment functionality in production environments. | 
 | Enable refunds over multiple captures | This functionality improves that capability to do multiple linked refunds against an order. |
 | Enable manual void of expired credit card payment lines when authorizations are expired | This feature adds support for manual deletion of payment lines if they expire and the authorization cannot be refreshed. |
-| Omni-channel Commerce order payments. | This feature rationalizes payments across channels and enables editing of payments for storefront and POS orders within the call center. Previously listed features are prerequisites for this feature, so this feature should be enabled last. For more information, see [Omni-channel Commerce order payments](dev-itpro/commerce-payments.md). |
+| Omni-channel Commerce order payments. | This feature rationalizes payments across channels and enables editing of payments for storefront and POS orders within the call center. Previously listed features are prerequisites for this feature, so this feature should be enabled last. For more information, see [Omni-channel Commerce order payments](commerce-payments.md). |
 
 ### Enable the "Extensibility to support incremental credit card capture" feature
 
