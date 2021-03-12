@@ -124,38 +124,32 @@ Microsoft will provide point in time restoration of Customer's Non-Production In
 
 ### Data back-up and retention 
 
-Databases are protected by automatic back-ups. Automatic back-ups are
-*Databases are protected* retained for 30 days unless Microsoft performs
-a rollback. Rollbacks may *by automatic back-ups as* be performed in the
-event a failure occurs during any planned maintenance update specified
-in **Table 4**.
+Databases are protected by automatic back-ups. Automatic back-ups are *Databases are protected* retained for 30 days unless Microsoft performs a rollback. Rollbacks may *by automatic back-ups as* be performed in the event a failure occurs during any planned maintenance update specified in **Table 4**.
+
+For more information about automatic back-ups, see [Automated backups - Azure SQL Database & SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
 ### Service activity responsibilities 
 
-**Table 3** describes some typical scenarios and activities for the
-Service along with the responsibilities of Microsoft, Customer, or both
-concerning such activities.
+The following table describes some typical scenarios and activities for the service along with the responsibilities of Microsoft, Customer, or both concerning such activities.
 
-***Table 3.** Activities managed by Microsoft or Customer *
-
-| **Activity ** | **Microsoft ** |
+| Activity  | Responsibility of Microsoft  | Responsibility of Customer |
 |-------------------------|-------------------------|
-| **Provisioning initial tenants ** |  |
-| Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  |
-| Provision all Production Instances and Non-Production Instances | ⚫ |
-| Validate the deployed Production Instances and Non-Production Instances |  |
+| **Provisioning initial tenants ** |  |   |
+| Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  | ⚫ |
+| Provision all Production Instances and Non-Production Instances | ⚫ |   |
+| Validate the deployed Production Instances and Non-Production Instances |  | ⚫ |
 | **Service updates ** |  |
-| Microsoft applies service updates to a designated Non-Production and</br>Production Instances | ⚫ |
-| Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  |
-| Request extension updates to be applied to the Production Instance |  |
-| Create code and data backup for Production Instance before applying any updates | ⚫ |
-| In case of any failure, roll back Production instance to code and data backup | ⚫ |
-| **Data management** <em>(Backup, restore, and update)</em> |  |
-| Backup database | ⚫ |
-| Determine HA and disaster recovery plan | ⚫ |
-| Monitor Production Instance database performance | ⚫ |
-| Tuning the Production Instance database for performance | ⚫ |
-| Initiate copy of Production Instance database to Non-Production Instance |  |
+| Microsoft applies service updates to a designated Non-Production and</br>Production Instances | ⚫ | ⚫ |
+| Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  | ⚫ |
+| Request extension updates to be applied to the Production Instance |  | ⚫ |
+| Create code and data backup for Production Instance before applying any updates | ⚫ |   |
+| In case of any failure, roll back Production instance to code and data backup | ⚫ |    |
+| **Data management** (Backup, restore, and update)|  |   |
+| Backup database | ⚫ |   |
+| Determine HA and disaster recovery plan | ⚫ |    |
+| Monitor Production Instance database performance | ⚫ | ⚫ |
+| Tuning the Production Instance database for performance | ⚫ | ⚫ |
+| Initiate copy of Production Instance database to Non-Production Instance |  | ⚫ |
 
 
 | **Activity ** | **Microsoft ** |
