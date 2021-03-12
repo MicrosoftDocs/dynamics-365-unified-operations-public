@@ -54,19 +54,19 @@ Follow the steps below to record the TDS certificate numbers and dates:
 
 6. Click **Inquiries** button to open the **Certificate Transactions** page to view the TDS transactions that the TDS certificate number and date are updated for. This information can be updated on the **Updatecertificate** page (**Tax > Declarations > Withholding tax > Update certificate**). View the TDS transactions information in the following fields.
 
-- **Date** field: Posting date of the TDS transaction.
-- **Voucher** field: Voucher number of the TDS transaction.
-- **Source** field: Module that the TDS transaction is created in.
-- **Account** field: Vendor, customer, or ledger account number that the TDS transaction was created for.
-- **Name** field: Vendor, customer, or ledger account name that the TDS transaction was created for.
-- **Amount** field: Invoice amount that the TDS was calculated on.
-- **Tax amount** field: TDS tax amount calculated for the transaction.
-- **Certificate date** field: TDS certificate date updated for the TDS transaction.
-- **Certificate number** field: TDS certificate number updated for the TDS transaction.
+- **Date**: Posting date of the TDS transaction.
+- **Voucher**: Voucher number of the TDS transaction.
+- **Source**: Module that the TDS transaction is created in.
+- **Account**: Vendor, customer, or ledger account number that the TDS transaction was created for.
+- **Name**: Vendor, customer, or ledger account name that the TDS transaction was created for.
+- **Amount**: Invoice amount that the TDS was calculated on.
+- **Tax amount**: TDS tax amount calculated for the transaction.
+- **Certificate date**: TDS certificate date updated for the TDS transaction.
+- **Certificate number**: TDS certificate number updated for the TDS transaction.
 
 7. On the **Recoverable certificates** page, select the **Closed** check box to close the TDS certificate number after updating it for TDS transactions on the **Update certificate** page.
 
 >   [!Note]
->   TDS certificate numbers with the **Closed** check box selected are not available in the **Update certificate** page.  
+>   TDS certificate numbers with the **Closed** check box selected are not available on the **Update certificate** page.  
 
 8. Click the **Mark all** button to select the **Closed** check box for all records on the page.
