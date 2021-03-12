@@ -2,7 +2,7 @@
 # required metadata
 
 title: Threshold limit and exception threshold limit
-description: This topic describes the threshold and exception limits for Tax Deducted at Source (TDS). The TDS on invoices and payments is always calculated considering the threshold limit and exception threshold limit defined for the TDS tax components in the Withholding tax components page.
+description: This topic describes the threshold and exception limits for Tax Deducted at Source (TDS).
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -51,8 +51,8 @@ If the **Overlook threshold** check box is selected for a specific TDS group for
 
 For example, the threshold limit is 25000. The following invoices are created for Vendor A.
 
-Invoice 1 – 2,0000 – (**Overlook threshold** check box is not selected): TDS is not calculated.
+- Invoice 1 – 2,0000 – (**Overlook threshold** check box is not selected): TDS is not calculated.
 
-Invoice 2 – 4,000 – (**Overlook threshold** check box is selected): TDS is calculated on 4,000.
+- Invoice 2 – 4,000 – (**Overlook threshold** check box is selected): TDS is calculated on 4,000.
 
-Invoice 2 – 3,000 – (**Overlook threshold** check box is not selected): TDS is calculated as the cumulative invoice amount, that is, 27,000 (20000+4000+3000) exceeded the threshold limit. TDS is calculated on the cumulative amount of invoices on which the TDS has not been calculated earlier, that is, 23,000 (20000+3000).
+- Invoice 2 – 3,000 – (**Overlook threshold** check box is not selected): TDS is calculated as the cumulative invoice amount, that is, 27,000 (20000+4000+3000) exceeded the threshold limit. TDS is calculated on the cumulative amount of invoices on which the TDS has not been calculated earlier, that is, 23,000 (20000+3000).
