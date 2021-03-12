@@ -123,6 +123,8 @@ The following warehouse execution processes can be enabled for a WES workload on
 - Processing sales and transfer order warehouse work using the warehouse app (including replenishment work)
 - Querying on-hand inventory by using the warehouse app
 - Creating and running inventory movements by using the warehouse app
+- Creating and processing cycle counting work by using the warehouse app
+- Making inventory adjustments by using the warehouse app
 - Registering purchase orders and doing putaway work by using the warehouse app
 
 The following work order types are currently supported for WES workloads on scale unit deployments:
@@ -131,9 +133,10 @@ The following work order types are currently supported for WES workloads on scal
 - Transfer issue
 - Replenishment
 - Inventory movement
+- Cycle counting
 - Purchase orders (linked to warehouse orders)
 
-No other types source-documents processing or warehouse work are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (transfer receipt) or process cycle counting work.
+No other types source-documents processing or warehouse work are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (transfer receipt), this would need to get processed against the hub instance.
 
 > [!NOTE]
 > Mobile device menu items and buttons for unsupported functionalities aren't shown in the _warehouse app_ when it is connected to a scale unit deployment.
@@ -165,7 +168,6 @@ The following warehouse management functionality isn't currently supported for s
 - Processing with negative on-hand inventory
 - Warehouse work processing with custom work types
 - Warehouse work processing with shipment notes
-- Warehouse work processing with cycle counting threshold triggering
 - Warehouse work processing with material handling/warehouse automation
 - Use of product master data image (for example, on the warehouse app)
 
@@ -241,7 +243,7 @@ The following table shows which inbound features are supported, and where they a
 | Receiving with quality order creation                            | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Work processing - Directed by *Cluster putaway*                             | Yes | No |
 | Work processing with *Short pick*                                           | Yes | No |
-| License plate loading                                           | Yes | No |
+| License plate loading                                           | Yes | Yes |
 
 ### Warehouse operations and exception handing
 
@@ -257,9 +259,9 @@ The following table shows which warehouse operations and exception handing featu
 | Movement by template                               | Yes | Yes                          |
 | Warehouse transfer                                 | Yes | No                           |
 | Create transfer order from warehouse app           | Yes | No                           |
-| Adjustment (in/out)                                | Yes | No                           |
+| Adjustment (in/out)                                | Yes | Yes<p>But not for the *Adjust out* scenario where inventory reservation must get removed via the setting **Remove reservations** on the *Inventory adjustment types*</p>                           |
 | Inventory status change                            | Yes | No                           |
-| Cycle counting and Counting discrepancy processing | Yes | No                           |
+| Cycle counting and Counting discrepancy processing | Yes | Yes                           |
 | Reprint label (license plate printing)             | Yes | Yes                          |
 | License plate build                                | Yes | No                           |
 | License plate break                                | Yes | No                           |
