@@ -183,7 +183,7 @@ Customers must stay current on the latest service updates in accordance with the
 
 Please note that some service updates may be mandatory and require no consent. To help protect our Customers and the service, Microsoft may apply critical security updates directly to a Customer's Finance and Operations production environment.
 
-### Planned maintenance responsibilities 
+#### Planned maintenance responsibilities 
 
 Microsoft provides Customers with the types of updates to Finance and Supply Chain Management set forth in the table below. These updates may require downtime on the production environment. The downtime window can be categorized as Microsoft Planned Maintenance (initiated by Microsoft) or Customer Planned Maintenance (initiated by the Customer). Updates are scheduled with the Customer via LCS.
 
@@ -208,7 +208,7 @@ The responsibilities of Microsoft, the Implementation Partner, and the Customer 
 
 \*\*Promoting an update to a Customer's production environment is a service request to Microsoft that must be initiated from LCS. This is within the Customer planned maintenance window. Request is planned to be executed within two business days. Generally, 95% of updates are applied in less than an hour.
 
-### Microsoft planned maintenance schedule and communication 
+#### Microsoft planned maintenance schedule and communication 
 
 Scheduled downtime means periods of downtime related to network, hardware, or Service maintenance or upgrades. Microsoft will publish notice or notify Customers at least **five days** prior to the commencement of such downtime. The default downtime window as listed below are scheduled on weekends in time windows defined per region to minimize the impact to the Customers' business.
 
@@ -218,7 +218,7 @@ Microsoft's planned maintenance schedule:
 - **EMEA:** 10 PM to 6 AM
 - **APAC:** 12 PM to 9 PM
 
-## Security and administrative access 
+### Security and administrative access 
 
 Administrative access to a Finance and Supply Chain Management production environment is strictly controlled and logged. Customer Data is handled in accordance with the Microsoft Online Services Terms. Customer's tenant administrator can access Production Instances or Non-Production Instances as described in **Table 5.** Microsoft's Administrator access is described in **Table 5.**
 
@@ -239,9 +239,9 @@ The following table details the different levels of access for different Microso
 | Engineering | No direct access. Operations response team may use screen sharing to work with engineering to debug issues. |
 | Others in Microsoft | No access.|
 
-## Monitoring and incident management 
+### Monitoring and incident management 
 
-### Monitoring 
+#### Monitoring 
 
 Microsoft has invested in an extensive toolset to monitor and diagnose Customers' production instances. Microsoft monitors Customers' production environments 24 hours a day, 7 days a week. Customer must monitor its Production Instances for application configurations andapplication errors as described in the following table.
 
@@ -252,11 +252,11 @@ Microsoft has invested in an extensive toolset to monitor and diagnose Customers
 | <ul><li>Availability monitoring for the service.<br><li>Continuous monitoring and alerts through health metrics and watchdogs for critical components such as AOS, Batch, DIXF, Retail, Management Reporter.</li></br><li>Monitoring for performance degradation caused by infrastructure services (AAD, Azure, SQL etc.).<br><li>In the event Microsoft determines that a single process or batch job is causing aberrations, these processes will be thwarted after communication with the Customer. | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</br><li>Application errors need to be diagnosed using the monitoring tools.</br><li>Diagnose user reported performance aberrations using these tools.</br><li>Inform Microsoft in the event that there are expected load on the system beyond projected peak usage.</br><li>In the event the applicable Service is unavailable in the Production Instance, Customer can create a "Production down" customer support request using LCS. |
 
 
-### Incident management 
+#### Incident management 
 
 Microsoft responds to and resolves Incidents based on the severity levels set forth in the following tables. Microsoft's Incident severity levels can be changed during initial assessment of the Incident and as more information about the impact and scope becomes available. If the Incident is mitigated, then the Incident severity remains unchanged.
 
-#### Severity level description
+##### Severity level description
 
 | Classification | Description |
 |-------------------------|-------------------------|
@@ -267,7 +267,7 @@ Microsoft responds to and resolves Incidents based on the severity levels set fo
 | Severity 4 (Sev-4) </br>Non-SLA Impacting | <ul><li>Monitoring or Customer reported incidents requiring action to avoid potential service impact.</br><li>General maintenance events with no Customer impact.</br><li>Standard service change requests.|
 
 
-#### Incident scope and severity level impact
+##### Incident scope and severity level impact
 
 | Incident impact | Entire geo OR &gt; 25% of global footprint | 1 customer OR subset of users belonging to one customer |
 |-------------------------|-------------------------|-------------------------|
@@ -277,7 +277,7 @@ Microsoft responds to and resolves Incidents based on the severity levels set fo
 | Incidents requiring action to avoid potential impact or service disruption | Sev-3 | Sev-4 |
 
 
-## Business continuity with high availability and disaster recovery 
+### Business continuity with high availability and disaster recovery 
 
 Customer's Production Instances include High Availability (HA) and Disaster Recovery (DR) features.
 
@@ -304,7 +304,7 @@ The primary data stores are supported for replication. This means that component
 | Microsoft fails back to the Production Instance in the primary Azure region when the datacenter becomes operational. Normal operations are resumed. | Customer may need to sign-off on fail back to the Production Instance in the primary Azure region.|
 
 
-## Application support offerings 
+### Application support offerings 
 
 Microsoft offers VL customers three support plans: Premier, Professional Direct, and the support included in the subscription. The level of support differs per plan and highlights are provided in the following table.
 
@@ -315,11 +315,11 @@ Microsoft offers VL customers three support plans: Premier, Professional Direct,
 | Fastest response times | &lt;1 hour | &lt;1 hour | Next business day |
 
 
-### Process to engage support 
+#### Process to engage support 
 
 In case of incidents with Finance and Operations, Customers can submit support tickets to Microsoft by phone or through LCS. CSS will handle incidents depending on the Customer's support plan and severity of the incident as designated by CSS.
 
-## Service Level Agreement 
+### Service Level Agreement 
 
 Microsoft is committed to an availability of 99.9% per month of the Service. If Microsoft does not achieve and maintain the service level for the applicable Service described in the SLA, then Customer may be eligible for a credit towards a portion of its monthly service fees for the applicable Service. See the "Claims" section of the [SLA](https://www.microsoft.com/licensing/product-licensing/products?lc=1033) for details on how to initiate a service credit. 
 
