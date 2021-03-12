@@ -52,7 +52,7 @@ Use Microsoft Dynamics Lifecycle Services (LCS) to enable the add-on for the mic
 
 Dynamics 365 Regulatory Configuration Services (RCS) is the interface that is used to configure the Electronic invoicing add-on. Resources such as environments and electronic invoicing features are created, maintained, and hosted in RCS. When the resources are ready, they are published to the Electronic invoicing add-on service.
 
-For RCS sign-up, see [Regulatory services](https://marketing.configure.global.dynamics.com/)
+For RCS sign-up, see [Regulatory services](https://marketing.configure.global.dynamics.com/).
 
 For more information about RCS, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md)
 
@@ -62,7 +62,7 @@ Before you can use RCS to configure electronic invoices, you must configure RCS 
 
 #### Service endpoint
 
-The Electronic invoicing add-on is available in several Azure datacenter geographies. The following table lists the availability per region:
+The Electronic invoicing add-on is available in several Azure datacenter geographies. The following table lists the availability per region.
 
 | Azure datacenter geography |
 |----------------------------|
