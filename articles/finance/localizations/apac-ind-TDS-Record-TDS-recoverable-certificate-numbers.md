@@ -52,7 +52,7 @@ Follow the steps below to record the TDS certificate numbers and dates:
 
 5.  In the **Certificate amount** field, enter the amount of the TDS certificate. In the **Date** field, enter the certificate date for the certificate number.
 
-6. Click **Inquiries** button to open the **Certificate Transactions** page to view the TDS transactions that the TDS certificate number and date are updated for. This information can be updated on the **Updatecertificate** page (**Tax > Declarations > Withholding tax > Update certificate**). View the TDS transactions information in the following fields.
+6. Click **Inquiries** button to open the **Certificate Transactions** page to view the TDS transactions that the TDS certificate number and date are updated for. This information can be updated on the **Update certificate** page (**Tax > Declarations > Withholding tax > Update certificate**). View the TDS transactions information in the following fields.
 
 - **Date**: Posting date of the TDS transaction.
 - **Voucher**: Voucher number of the TDS transaction.
