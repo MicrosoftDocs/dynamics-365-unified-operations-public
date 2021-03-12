@@ -46,14 +46,14 @@ Begin by opening the **Withholding tax settlement periods** page (**Tax > Indire
 
 2. On the **Overview** tab, view the information in the following fields:
 
-- **Date** Date of TDS settlement.
-- **Voucher** Voucher number of the TDS settlement transaction.
-- **Tax type** The tax type that the settlement process is run for.
-- **Tax Account Number (TAN)** The Tax Account Number of the settled TDS transaction.
-- **Settlement** **period** The settlement period that the TDS settlement process is run for.
-- **From date** The starting date of the settlement period.
-- **To date** The ending date of the settlement period.
-- **Withholding tax payment version** The version of the withholding tax payment, that is, **Original**, **Latest** **corrections**, or **Total** **list**.
+- **Date**: Date of TDS settlement.
+- **Voucher**: Voucher number of the TDS settlement transaction.
+- **Tax type**: The tax type that the settlement process is run for.
+- **Tax Account Number (TAN)**: The Tax Account Number of the settled TDS transaction.
+- **Settlement period**: The settlement period that the TDS settlement process is run for.
+- **From date**: The starting date of the settlement period.
+- **To date**: The ending date of the settlement period.
+- **Withholding tax payment version**: The version of the withholding tax payment, that is, **Original**, **Latest corrections**, or **Total list**.
 
 3. Click the **Voucher** button to view the voucher entries for the TDS transaction.
 
