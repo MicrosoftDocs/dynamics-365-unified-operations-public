@@ -150,106 +150,51 @@ The following table describes some typical scenarios and activities for the serv
 | Monitor Production Instance database performance | X   | X  |
 | Tuning the Production Instance database for performance | X  | X  |
 | Initiate copy of Production Instance database to Non-Production Instance |  | X  |
-
-
-| **Activity ** | **Microsoft ** |
-|-------------------------|-------------------------|
-| **Update infrastructure ** |  |
-| Schedule regular infrastructure updates | ⚫ |
-| **Scale up and down** <em>(Users, storage, instances)</em> |  |
-| Purchase additional users and Non-Production add-ons |  |
-| Changes in usage must be updated in the LCS' Subscription Estimator tool |  |
-| Report any significant performance issues impacting usage of the Service |  |
-| Proactively manage the resources needed for the Service applicable Service | ⚫ |
-| Investigate and troubleshoot Incidents | ⚫ |
-| **Security** <em>(User access)</em> |  |
-| Provide user access to the Service |  |
-| Provide LCS project access for managing and operating instances deployed through LCS |  |
-| **Monitor Production Instance** |  |
-| Monitor Production Instances 24x7 | ⚫ |
-| Notify Customer proactively of incidents with the Production Instance | ⚫ |
-| **Manage and Monitor Non-Production Instances** |  |
-| Manage Non-Production Instances with LCS |  |
-| Monitor Non-Production Instances |  |
+| **Update infrastructure**  |  |  |
+| Schedule regular infrastructure updates | ⚫ |    |
+| **Scale up and down (Users, storage, instances)**|  |   |
+| Purchase additional users and Non-Production add-ons |  |  X |
+| Changes in usage must be updated in the LCS' Subscription Estimator tool |  | X |
+| Report any significant performance issues impacting usage of the Service |  | X |
+| Proactively manage the resources needed for the Service applicable Service | ⚫ |   |
+| Investigate and troubleshoot Incidents | ⚫ | ⚫ |
+| **Security (User access)**|  |   |
+| Provide user access to the Service |  |  X |
+| Provide LCS project access for managing and operating instances deployed through LCS |  | X |
+| **Monitor Production Instance**|  |  |
+| Monitor Production Instances 24x7 | ⚫ |⚫   |
+| Notify Customer proactively of incidents with the Production Instance | ⚫ |   |
+| **Manage and Monitor Non-Production Instances** |  |   |
+| Manage Non-Production Instances with LCS |  | X  |
+| Monitor Non-Production Instances |  | X  |
 
 
 ### Service update strategy and maintenance windows 
 
-Customers must stay current on the latest service updates in accordance
-with the [*software lifecycle*
-*policy*.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy)
-All versions of Finance and Supply Chain Management will use the new
-Microsoft Modern Lifecycle Policy. The Modern Lifecycle covers products
-that are serviced and supported continuously.
+Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). All versions of Finance and Supply Chain Management will use the new Microsoft Modern Lifecycle Policy. The Modern Lifecycle covers products that are serviced and supported continuously.
 
-Service
-[*Updates*](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview)
-to the Finance and Supply Chain Management application and platform are
-handled as follows.
+[Service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview) to the Finance and Supply Chain Management application and platform are handled as follows.
 
-- **Customers that are on version 8.1 and higher:** The application
-    > and the platform components are released as a single cumulative
-    > update called deployable package for customers to uptake.
-    > Microsoft notifies the customer when a new service update is made
-    > available. Starting April 2019, Microsoft will update your
-    > environments to the latest released update by Microsoft within the
-    > maintenance window configured in your LCS project. Unless the
-    > service update is paused, the environment will be updated to the
-    > latest release. Customers have the option to take the update
-    > outside of the scheduled maintenance window. We recommend
-    > customers to stay current for a better service experience.
+- **Customers that are on version 8.1 and higher:** The application and the platform components are released as a single cumulative update called deployable package for customers to uptake. Microsoft notifies the customer when a new service update is made available. Starting April 2019, Microsoft will update your environments to the latest released update by Microsoft within the maintenance window configured in your LCS project. Unless the service update is paused, the environment will be updated to the latest release. Customers have the option to take the update outside of the scheduled maintenance window. We recommend customers to stay current for a better service experience.
 
-- **Customers that are on version 8.0 and lower:** The application
-    > updates are released as granular X++ updates while the platform is
-    > released as a cumulative binary update. Microsoft requires each
-    > customer to be current on the latest Finance and Supply Chain
-    > Management platform update. Starting April 2018, Microsoft will
-    > update your environments to the latest release of the platform
-    > within the maintenance window configured in your LCS project.
-    > Customers can also get the service update via LCS and can apply it
-    > to their environments on their own prior to Microsoft initiating
-    > the service update.
+- **Customers that are on version 8.0 and lower:** The application updates are released as granular X++ updates while the platform is released as a cumulative binary update. Microsoft requires each customer to be current on the latest Finance and Supply Chain Management platform update. Starting April 2018, Microsoft will update your environments to the latest release of the platform within the maintenance window configured in your LCS project. Customers can also get the service update via LCS and can apply it to their environments on their own prior to Microsoft initiating the service update.
 
-X++ updates must be applied on a development environment before they
-can be deployed on a sandbox, staging, or production environment.
-Binary updates can be applied directly on any environment but must be
-validated on the Customer's sandbox environment before being promoted
-to a production environment. Refer to **Table 4** for more detailed
-instructions.
+    X++ updates must be applied on a development environment before they can be deployed on a sandbox, staging, or production environment. Binary updates can be applied directly on any environment but must be validated on the Customer's sandbox environment before being promoted to a production environment. Refer to **Table 4** for more detailed instructions.
 
-Please note that some service updates may be mandatory and require no
-consent. To help protect our Customers and the service, Microsoft may
-apply critical security updates directly to a Customer's Finance and
-Operations production environment.
-
-*Software lifecycle policy.*
-
-*For more information see the* Finance and Supply Chain Management
-**[update
-FAQ.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Funified-operations%2Ffin-and-ops%2Fget-started%2Fone-version&data=02%7C01%7Cradhij%40microsoft.com%7Ce4e025be903e43c60cca08d746c30074%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637055675644947045&sdata=6qcz2mjRgRcT44DREigEsse3j8elWcZcxkJlyKRJyKw%3D&reserved=0)
-**
+Please note that some service updates may be mandatory and require no consent. To help protect our Customers and the service, Microsoft may apply critical security updates directly to a Customer's Finance and Operations production environment.
 
 ### Planned maintenance responsibilities 
 
-Microsoft provides Customers with the types of updates to Finance and
-Supply Chain Management set forth in **Table 4.** These updates may
-require downtime on the production environment. The downtime window can
-be categorized as Microsoft Planned Maintenance (initiated by Microsoft)
-or Customer Planned Maintenance (initiated by the Customer). Updates are
-scheduled with the Customer via LCS.
+Microsoft provides Customers with the types of updates to Finance and Supply Chain Management set forth in the table below. These updates may require downtime on the production environment. The downtime window can be categorized as Microsoft Planned Maintenance (initiated by Microsoft) or Customer Planned Maintenance (initiated by the Customer). Updates are scheduled with the Customer via LCS.
 
-The responsibilities of Microsoft, the Implementation Partner, and the
-Customer are reflected in **Table 4** for each update type.
+The responsibilities of Microsoft, the Implementation Partner, and the Customer are reflected in the table for each update type.
 
-***Table 4.** Planned maintenance for updates *
-
-| **Type of update**</br><em>Description</em> |  | **Maintenance window **</br><em>(Microsoft's estimated maintenance downtime)</em> |
-|-------------------------|-------------------------|-------------------------|
-|  | **Microsoft ** | <blockquote></br>**Customer / Implementation **</br></blockquote></br>**Partner ** |  |
-| **Customers that are on version 8.1 and higher ** |  |
-| **Service updates**</br><em>Service updates are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible</em> | <blockquote></br>Initiate updates to the application within the configured maintenance window.</br></blockquote> | <blockquote></br>Customer must always stay current on the latest version of the application.</br></blockquote> | <blockquote></br>Microsoft initiated maintenance window</br><em>30 minutes – 4 hours*</em></br></blockquote> |
-| **Critical update **</br><em>Update that solves a critical issue.</em> | <blockquote></br>Notify Customer of the critical update.</br>Initiate update within the specified timeline.</br></blockquote> | <blockquote></br>Apply the critical update.</br></blockquote> | <blockquote></br>Microsoft initiated maintenance window</br><em>30 minutes – 4 hours</em></br></blockquote> |
-| **Extensions **</br><em>Change to the standard business application logic.</em> | <blockquote></br>No action required.</br></blockquote> | <blockquote></br>Validate extensions in</br>Customer's Non-Production Instances and then promote them to Customer's</br>Production Instance.</br></blockquote> | <blockquote></br>Customer initiated maintenance window</br><em>1 – 4 hours</em></br></blockquote> |
+| Type of update | Expected action from Microsoft | Expected action from Customer/Implementation Partner | Maintenance window<br><br>(Microsoft's estimated maintenance downtime)|
+|-------------------------|-------------------------|-------------------------|------|
+| **Customers that are on version 8.1 and higher ** |  |  |  |
+| **Service updates**</br>*Service updates are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible* | Initiate updates to the application within the configured maintenance window. | Customer must always stay current on the latest version of the application. | Microsoft initiated maintenance window<br>(30 minutes – 4 hours*)|
+| **Critical update **</br>*Update that solves a critical issue.* | <ul><li>Notify Customer of the critical update.</br><br><li>Initiate update within the specified timeline. | Apply the critical update.| Microsoft initiated maintenance window<br>(30 minutes – 4 hours) |
+| **Extensions **</br>*Change to the standard business application logic.* | No action required. | Validate extensions in Customer's Non-Production Instances and then promote them to Customer's Production Instance.| Customer initiated maintenance window</br>(1 – 4 hours) |
 
 
 | **Type of update**</br><em>Description</em> | **Expected action ** | **Maintenance window **</br><em>Microsoft's estimated maintenance downtime</em> |
