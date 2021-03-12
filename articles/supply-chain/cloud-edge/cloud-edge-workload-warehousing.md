@@ -294,17 +294,13 @@ Several batch jobs run on both the hub and scale units.
 
 On the hub deployment, you can manually maintain the batch jobs. You can manage the following batch jobs at **Warehouse management \> Periodic tasks \> Back-office workload management**:
 
-- Process work status update events
 - Scale unit to hub message processor
 - Register source order receipts
 - Complete warehouse orders
-- Process quantity update responses for warehouse order lines
 
 On the workload in scale units, you can manage the following batch jobs at **Warehouse management \> Periodic tasks \> Workload management**:
 
 - Process wave table records
 - Warehouse hub to scale unit message processor
-- Process quantity update requests for warehouse order lines
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
