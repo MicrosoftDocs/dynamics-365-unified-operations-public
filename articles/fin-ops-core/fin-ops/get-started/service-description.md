@@ -323,29 +323,15 @@ In case of incidents with Finance and Operations, Customers can submit support t
 
 Microsoft is committed to an availability of 99.9% per month of the Service. If Microsoft does not achieve and maintain the service level for the applicable Service described in the SLA, then Customer may be eligible for a credit towards a portion of its monthly service fees for the applicable Service. See the "Claims" section of the [SLA](https://www.microsoft.com/licensing/product-licensing/products?lc=1033) for details on how to initiate a service credit. 
 
-## Library
+## Important links
 
-### Trust Center 
+- [Trust Center](https://www.microsoft.com/trust-center): Information on where your Finance and Supply Chain Management data is stored, plus additional information on privacy, compliance, and security procedures.
 
-Information on where your Finance and Supply Chain Management data is
-stored, plus additional information on privacy, compliance, and security
-procedures
+- [Volume licensing](https://www.microsoftvolumelicensing.com/): Quickly access licensing terms, conditions, and supplemental information relevant to the use of products and services licensed through Microsoft Volume Licensing programs.
 
-### Online Service Terms 
+- [Service Level Agreement](https://www.microsoft.com/licensing/product-licensing/): The licensing terms resources on this page define the terms and conditions for the software and online services products you purchase through Microsoft Commercial Licensing programs.
 
-Terms and conditions of Microsoft's online services
-
-### Service Level Agreement 
-
-Service Level Agreement
-
-### Update policies 
-
-Online updates
-
-### Online Services lifecycle support policy 
-
-Support policy
+- [Microsoft Lifecycle Policy](https://docs.microsoft.com/lifecycle/): Provides consistent and predictable guidelines for the availability of support throughout the life of a product.
 
 ### Licensing guide 
 
