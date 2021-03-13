@@ -5,7 +5,7 @@ title: Account management pages and modules
 description: This topic covers account management pages and modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 03/11/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -57,9 +57,9 @@ The order history page uses the order history module to show all the recent orde
 
 The order details page provides detailed information for each order and is accessed from the order history page. It uses the order details module, which requires the sales ID or transaction ID to retrieve the order details.
 
-### User profile page
+### My profile page
 
-The user profile page shows user account details, such as a user's name and email address. It uses the user profile details and user profile edit modules. The user profile page also shows user preferences that enable a user to opt in or opt out from certain features, such as personalization of recommendation lists. Additional Information can also be updated by the user in this page (see more in **Custom Customer Attributes**).
+The My profile page shows the user's account profile details using the account profile module. The page shows the email address associated with the user's account, as well as preferences set up for the account. If setting up custom customer attributes, an "Additional Information" section will also display those attributes. Users can edit their name, preferences, or additional information (if available).
 
 ### User address page
 
