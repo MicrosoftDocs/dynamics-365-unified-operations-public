@@ -5,7 +5,7 @@ title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 06/22/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -37,11 +37,11 @@ This topic describes how to set up your Azure Active Directory (Azure AD) busine
 
 Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentication flows. A user can sign up, sign in, and reset their password through these flows. Azure AD B2C stores sensitive user authentication information, such as username and password. The user record in the B2C tenant will store either a B2C local account record or a B2C social identity provider record. These B2C records will link back to the customer record in the Commerce environment.
 
->[!WARNING]
->Legacy AAD B2C User Flows will be deprecated by **August 1, 2021**. All user flows should be migrated to their Recommended version. More information can be referenced in the information note within the 'User flows' section of your AAD B2C Tenant in the Azure Portal. The Dynamics 365 Commerce **10.0.15 or higher module library** should be utilized with the Recommended B2C User Flows.
+> [!WARNING] 
+> Azure AD B2C will retire old (legacy) user flows by August 1, 2021. Therefore, you should plan to migrate your user flows to the new recommended version. The new version provides feature parity and new features. The module library for Commerce version 10.0.15 or higher should be used with the recommended B2C user flows. For more information, see [User flows in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/user-flow-overview).
  
- >[!NOTE]
- >Dynamics 365 Commerce 'Evaluation' environments come with a pre-loaded AAD B2C tenant for demonstration purposes. Loading your own AAD B2C Tenant per the below steps is not required for the Evaluation environments.
+ > [!NOTE]
+ > Commerce evaluation environments come with a pre-loaded Azure AD B2C tenant for demonstration purposes. Loading your own Azure AD B2C tenant using the steps below is not required for evaluation environments.
 
 ## Create or link to an existing AAD B2C tenant in the Azure portal
 
@@ -82,20 +82,19 @@ The following image shows an example of an Azure AD B2C **Troubleshoot** banner.
 
 ## Create the B2C application
 
-Once the B2C tenant has been created, you will create a B2C application within your new AAD B2C tenant to interact with the Commerce actions.
+Once the B2C tenant has been created, you will create a B2C application within your new Azure AD B2C tenant to interact with Commerce.
 
 To create the B2C application, follow these steps.
 
-1. In the Azure portal, select **App registrations** and then select **New registration**.
-1. Under **Name**, enter the name to give this AAD B2C application.
+1. In the Azure portal, select **App registrations**, and then select **New registration**.
+1. Under **Name**, enter the name to give this Azure AD B2C application.
 1. Under **Supported account types**, select **Accounts in any identity provider or organizational directory (for authenticating users with user flows)**.
-1. For **Redirect URI**, enter your dedicated reply URLs with the 'Web' type selected. See [Reply URLs](#reply-urls) below for information on reply URLs and how to format them here.
+1. For **Redirect URI**, enter your dedicated reply URLs as type **Web**. For information on reply URLs and how to format them, see [Reply URLs](#reply-urls) below.
 1. For **Permissions**, select **Grant admin consent to openid and offline_access permissions**.
 1. Select **Register**.
-1. Select the newly created App and navigate to the **Authentication** menu
-1. Note that here you can add additional **Redirect URIs** at a futue point as needed. Continue to the next step if not needed currently.
-1. Under **Implicit grant**, select to enable both **Access tokens** and **ID tokens** for the application. Hit **Save** to save these changes.
-1. Now within the application in the Azure Portal, go to the **Overview** menu and copy the **Application (client) ID**. Note this ID for later setting up steps (referenced later as the **Client GUID**).
+1. Select the newly-created application and navigate to the **Authentication** menu. Here you can add additional **Redirect URIs** if needed (now or later). Continue to the next step if not currently needed.
+1. Under **Implicit grant**, select both **Access tokens** and **ID tokens** to enable them for the application. Select **Save**.
+1. Go to the **Overview** menu of the Azure portal and copy the **Application (client) ID**. Note this ID for later setup steps (referenced later as the **Client GUID**).
 
 ### Reply URLs
 
@@ -125,7 +124,7 @@ To create a sign up and sign in user flow policy, follow these steps.
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
-1. Select **Sign up and sign in** policy and choose the **Recommended** version.
+1. Select the **Sign up and sign in** policy, and then select the **Recommended** version.
 1. Under **Name**, enter a policy name. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
 1. Under **Identity providers**, select the appropriate check box.
 1. Under **Multifactor Authentication**, select the appropriate choice for your company. 
@@ -155,9 +154,9 @@ To create a profile editing user flow policy, follow these steps.
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
-1. Select **Profile editing** and choose the **Recommended** version.
+1. Select **Profile editing**, and then select the **Recommended** version.
 1. Under **Name**, enter the profile editing user flow. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
-1. Under **Identity providers**, select **Email signIn**.
+1. Under **Identity providers**, select **Email SignIn**.
 1. Under **User attributes**, select the following check boxes:
     - **Email Addresses** (**Return claim** only)
     - **Given Name** (**Collect attribute** and **Return claim**)
@@ -176,7 +175,7 @@ To create a password reset user flow policy, follow these steps.
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
-1. Select **Password Reset** and choose the **Recommended** version.
+1. Select **Password Reset**, and then select the **Recommended** version.
 1. Under **Name**, enter a name for the password reset user flow.
 1. Under **Identity providers**, select **Reset password using email address**.
 1. Select **Create**.
@@ -239,8 +238,9 @@ The following image shows an example of how to select identity providers on the 
 ![Select each Social Identity Provider to enable for your policy](./media/B2CImage_16.png)
 
 The following image shows an example of a default sign-in screen with a social identity provider sign-in button displayed.
- >[!NOTE]
- >If using the Custom Pages built in Commerce for your User Flows, the buttons for Social Identity Providers will need to be added using the extensibility features of the module library. Additionally, when setting up your applications with the specific Social Identity Provider (depending on the Social Provider's connection instructions), in some cases URL or configuring strings may be case sensitive.
+
+> [!NOTE]
+> If using the custom pages built in Commerce for your user flows, the buttons for social identity providers will need to be added using the extensibility features of the Commerce module library. Additionally, when setting up your applications with a specific social identity provider, in some cases URL or configuration strings may be case sensitive. Refer to your social identity provider's connection instructions for more information.
  
 ![Example default login screen with Social Identity Provider sign-in button displayed](./media/B2CImage_17.png)
 
@@ -267,10 +267,10 @@ To update headquarters with the new Azure AD B2C information, follow these steps
 ### Obtain issuer URL
 
 To obtain your identity provider issuer URL, follow these steps.
-1. Navigate to your **Sign up and sign in** user flow in the Azure AD B2C page of the Azure Portal.
-1. Select **Page layouts** in the left menu and with 'Unified sign up or sign in page' selected under Layout name, select **Run user flow**.
-1. Make sure your 'Application' is set to your intended AAD B2C Application created above, and click the link presented under the **Run user flow** header (the link includes ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``.
-1. In the tab that opens in your browser, a metadata page is displayed. Copy the identity provider issuer URL (the value for **"issuer"**).
+1. On the Azure AD B2C page of the Azure portal, navigate to your **Sign up and sign in** user flow.
+1. Select **Page layouts** in the left navigation menu, under **Layout name** select **Unified sign up or sign in page**, and then select **Run user flow**.
+1. Make sure your application is set to your intended Azure AD B2C application created above, and then select the link under the **Run user flow** header that includes ``.../.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``.
+1. A metadata page is displayed in your browser tab. Copy the identity provider issuer URL (the value for **"issuer"**).
    - Example: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
  
 **OR**: To construct the same metadata URL manually, do the following steps.
