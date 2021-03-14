@@ -49,7 +49,7 @@ Because invoice printing isn't supported in Dynamics 365 Commerce, there are no 
     4. In the **Text ID** field, enter the identifier of the new language text.
     5. In the **Text** field, enter the new language text (for example, **Tax invoice QR code**).
 
-       ![Creating a language text for a QR code receipt field](media/languate-text-page.png)
+       ![Creating a language text for a QR code receipt field](media/language-text-page.png)
 
 2.  Create a new custom receipt field for a QR code:
 
