@@ -159,7 +159,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
 ## Appendix A
 ### Sample of a CRT extension class for printing QR codes
 
- ```
+ ```x++
     namespace Contoso
     {
         namespace Commerce.Runtime.ReceiptsIndia
