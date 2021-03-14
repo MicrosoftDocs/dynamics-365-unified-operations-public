@@ -137,7 +137,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
 
 6. Add the required extensions to **CommerceRuntime.Ext.config**. Here, **Contoso.Commerce.Runtime.ReceiptsIndia** is the name of the new extension for printing the QR code assembly.
 
-        <commerceRuntimeExtensions>
+    ``` <commerceRuntimeExtensions>
           <composition>
             <!--
             Register your own assemblies or types here.
@@ -159,7 +159,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
 ## Appendix A
 ### Sample of a CRT extension class for printing QR codes
 
-    namespace Contoso
+``` namespace Contoso
     {
         namespace Commerce.Runtime.ReceiptsIndia
         {
