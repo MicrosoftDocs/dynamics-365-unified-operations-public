@@ -5,7 +5,7 @@ title: Generate QR codes and print them on receipts
 description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts.
 author: prabhatb2011
 manager: tfehr
-ms.date: 03/12/2021
+ms.date: 03/14/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.17
 
 Functionality for generating QR codes in the Commerce runtime (CRT) was introduced in Microsoft Dynamics 365 Commerce version 10.0.13. Therefore, the information in this topic is valid only for version 10.0.13 and later.
 
-Starting in version 10.0.17, printing QR codes on receipts using Hardware station is supported. Before this version QR codes can be printed only from MPOS.
+Commerce versions 10.0.17 and later support printing QR codes on receipts using Retail Hardware Station. In versions 10.0.16 and earlier, QR codes can only be printed from Modern POS (MPOS).
 
 ## Data schema changes
 
