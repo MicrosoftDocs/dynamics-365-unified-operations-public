@@ -94,7 +94,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
 4. Create a class to handle public class GetSalesTransactionCustomReceiptFieldService : IRequestHandlerAsync, ICountryRegionAware. {…}
 5. Implement a handler method that will handle the new custom receipt field and return a QR code as a string.
 
-        /// &lt;summary&gt;
+    ``` /// &lt;summary&gt;
         /// Gets the custom receipt field value for sales receipt.
         /// &lt;/summary&gt;
         /// &lt;param name="request"&gt;The service request to get custom receipt field value.&lt;/param&gt;
@@ -123,7 +123,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
      2. Run **EncodeQrCodeServiceRequest** to generate a QR code. (**EncodeQrCodeServiceRequest** is part of the **Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting** package.)
      3. Wrap the QR code string that is returned in an **&lt;L:&gt;** tag.
 
-            var qrCodeRequest = new
+        ``` var qrCodeRequest = new
             EncodeQrCodeServiceRequest(stringBuilder.ToString())
             {
               Width = 150, // Replace with desired QR code width
