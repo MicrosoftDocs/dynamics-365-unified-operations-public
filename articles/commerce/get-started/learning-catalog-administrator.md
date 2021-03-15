@@ -7,7 +7,6 @@ ms.date: 07/23/2020
 ms.author: margoc
 
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology:
 
 # optional metadata
