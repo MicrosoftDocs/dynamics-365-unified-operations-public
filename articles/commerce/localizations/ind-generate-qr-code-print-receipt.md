@@ -91,10 +91,16 @@ Follow these steps to handle the new custom receipt field for a QR code.
     - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
     - Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia
 
-4. Create a class to handle public class GetSalesTransactionCustomReceiptFieldService : IRequestHandlerAsync, ICountryRegionAware. {…}
-5. Implement a handler method that will handle the new custom receipt field and return a QR code as a string.
+4. Create a class to handle 
 
-    ``` /// &lt;summary&gt;
+    ```C#
+       public class GetSalesTransactionCustomReceiptFieldService : IRequestHandlerAsync, ICountryRegionAware.
+       {…}
+       
+6. Implement a handler method that will handle the new custom receipt field and return a QR code as a string.
+
+    ```C#
+        /// &lt;summary&gt;
         /// Gets the custom receipt field value for sales receipt.
         /// &lt;/summary&gt;
         /// &lt;param name="request"&gt;The service request to get custom receipt field value.&lt;/param&gt;
@@ -137,7 +143,8 @@ Follow these steps to handle the new custom receipt field for a QR code.
 
 6. Add the required extensions to **CommerceRuntime.Ext.config**. Here, **Contoso.Commerce.Runtime.ReceiptsIndia** is the name of the new extension for printing the QR code assembly.
 
-    ``` <commerceRuntimeExtensions>
+    ```C# 
+    <commerceRuntimeExtensions>
           <composition>
             <!--
             Register your own assemblies or types here.
@@ -159,7 +166,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
 ## Appendix A
 ### Sample of a CRT extension class for printing QR codes
 
- ```x++
+ ```C#
     namespace Contoso
     {
         namespace Commerce.Runtime.ReceiptsIndia
