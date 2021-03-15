@@ -29,12 +29,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add support for a content delivery network (CDN)
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
-
-## Overview
 
 When you set up an e-commerce environment in Dynamics 365 Commerce, you can configure it to work with your CDN service. 
 
@@ -147,25 +144,7 @@ Your CDN should now be correctly configured so that it can be used with your Com
 
 ## Additional resources
 
-[Configure your domain name](configure-your-domain-name.md)
-
-[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
-
-[Create an e-commerce site](create-ecommerce-site.md)
-
-[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
-
-[Manage robots.txt files](manage-robots-txt-files.md)
-
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
-
-[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
-
-[Set up custom pages for user logins](custom-pages-user-logins.md)
-
-[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
-
-[Enable location-based store detection](enable-store-detection.md)
+[Content delivery network implementation options](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

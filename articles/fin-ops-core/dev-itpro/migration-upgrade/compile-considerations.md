@@ -10,7 +10,6 @@ ms.date: 10/15/2019
 
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

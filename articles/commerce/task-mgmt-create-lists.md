@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.9
 
 This topic describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 A *task* defines a specific piece of work or an action that someone must complete on or before a specified due date. In Dynamics 365 Commerce, a task can include detailed instructions and information about a contact person. It can also include links to back-office operations, point of sale (POS) operations, or site pages, to help improve productivity and provide the context that the task owner requires to complete the task efficiently.
 
 A *task list* is a collection of tasks that must be completed as part of a business process. For example, there might be a task list that a new worker must complete during onboarding, a task list for cashiers who work evening shifts, or a task list that must be completed to prepare the store for an upcoming holiday season. In Commerce, every task list that has a target date can be assigned to any number of stores or employees, and it can be configured to recur.

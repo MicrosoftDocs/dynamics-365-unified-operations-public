@@ -5,10 +5,9 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
 manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 02/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -78,6 +77,7 @@ SharePoint communication works for the current user only if the following condit
 - A Microsoft 365 license is associated with the user's account.
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
+- The SharePoint site is configured to **Allow this site to appear in search results**.
 - The user has access to the folder that the document is stored in.
 
 If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 
@@ -245,9 +245,9 @@ File types include Microsoft Word documents and images. A file type is denoted b
 
 Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the **URL** document type.
 
-### How does the default storage location for Document Management change in Finance + Operations environments?
+### What is the default storage location for attachments in Finance + Operations environments?
 
-For Finance + Operations, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premises instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
+By default, attachments are saved in Azure Blob storage automatically as part of the product cloud offering.
 
 ### If I accidentally delete an attachment stored in Azure Blob storage, can it be restored?
 

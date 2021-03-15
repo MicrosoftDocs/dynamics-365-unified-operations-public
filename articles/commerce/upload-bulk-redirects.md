@@ -33,8 +33,6 @@ ms.dyn365.ops.version:
 
 This topic describes how to implement URL redirects in bulk by uploading a redirect comma-separate values (CSV) file in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 After you've finished creating a new e-commerce site in Dynamics 365 Commerce, and it's ready to go live, you must make the Domain Name System (DNS) switch from your old site to your new site. After you make this switch, the URLs for the new site will likely differ from the URLs for the old site. For specific URLs, traffic that uses the old URL can be redirected to the new URL. In this way, you ensure that site visitors reach the desired location. Redirects help prevent broken links for your customers and help you maintain your established search engine optimization (SEO) results.
 
 Although redirects for individual links can be manually configured in DNS, manual configuration becomes tedious if multiple links must be redirected. To streamline the redirect process, Commerce provides the capability to upload a data file that contains bulk redirect mappings for your site. In the site settings in Commerce site builder, your system admin can upload and publish a CSV file that handles bulk URL redirects.
