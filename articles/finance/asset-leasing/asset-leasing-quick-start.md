@@ -136,8 +136,8 @@ The initial recognition of a leased asset uses the calculated net present value 
 
 |     Type                                      	|     Debit                   	|     Credit                         	|
 |-----------------------------------------------	|-----------------------------	|------------------------------------	|
-|     Operating   lease under  US GAAP          	|     Right-of-use   asset    	|     Operating   lease liability    	|
-|     Finance lease   under IFRS and US GAAP    	|     Right-of-use   asset    	|     Operating   lease liability    	|
+|     Operating lease under  US GAAP          	|     Right-of-use asset    	|     Operating lease liability    	|
+|     Finance lease under IFRS and US GAAP    	|     Right-of-use asset    	|     Finance lease liability    	|
 
 #### Lease liability amortization (interest expense) 
 The interest for a lease is recognized by calculating interest for the lease’s beginning balance, period lease payment, interest borrowing rate, and compound interval periods per year. The interest amount increases the operating lease liability account by crediting it, which will be reflected on the organization’s balance sheet. The transaction also includes a debit entry to the interest expense account, which is reflected on the profit and loss statement for finance leases, and to the lease expense account for operating leases.
