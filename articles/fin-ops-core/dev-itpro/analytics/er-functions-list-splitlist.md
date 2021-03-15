@@ -5,7 +5,7 @@ title: SPLITLIST ER function
 description: This topic provides information about how the SPLITLIST Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
-ms.date: 12/12/2019
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -78,7 +78,7 @@ The list of batches that is returned contains the following elements:
 
     The number of the current batch in the returned list.
 
-When the on-demand reading flag is set to **True**, sublists are generated upon request. It allows to reduce memory consumption but may cause performance degradation if elements are not used sequentially.
+When the on-demand reading flag is set to **True**, sublists are generated upon request which allows for a reduction in memory consumption but may cause performance degradation if elements aren't used sequentially.
 
 ## Example
 
