@@ -101,8 +101,9 @@ For more information about the onboarding process, see [Onboard an implementatio
 
 ### Tenant and data management 
 
-Typical tenant and data management events for the service and the responsibilities for each party are described in the following table for
-production instances.
+Typical tenant and data management events for the Service and the responsibilities for each party are described are described in the following tables.
+
+#### Tenant and data management events for Production Instances
 
 | Customer's request  | Customer's responsibility  | Microsoft's responsibility  | Microsoft's lead time  |Microsoft's estimated maintenance downtime  |
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
@@ -110,7 +111,7 @@ production instances.
 | Copy a Non-Production Instance database to a Production Instance before go-live.<br><br>*(Note: This request is not available if Customer already is live in production)* | Request submitted through service request in LCS and available through LCS for self-service deployments.<br><br><ul><li>Validation and sign-off. | <ul><li>Copy a Non-Production Instance (e.g., Sandbox Tier 2 Add-on) database to a Production Instance as part of the go-live process. | 5 hours* | 1-4 hours|
 | Maintenance mode | <ul><li>Put AOS in maintenance mode through LCS.</br></li></br><li>Complete necessary maintenance.</br></li></br><li>Request to put the AOS back into active mode.</br> | N/A | N/A| 2 hours|
 
-
+#### Tenant and data management events for Non-Production Instances
 Microsoft will provide point in time restoration of Customer's Non-Production Instance databases as described in the following table.
 
 | Customer's request  | Customer's responsibility  | Microsoft's responsibility | Microsoft's lead time  | Microsoft's estimated maintenance downtime  |
