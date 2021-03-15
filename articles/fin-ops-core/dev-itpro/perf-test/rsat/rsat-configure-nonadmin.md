@@ -90,9 +90,9 @@ The tools for enabling non-administrator use consists of three files, two PowerS
 
     **DO NOT remove the old shortcut as this is a shared file that is used by all users on the machine. If you remove the file, then it will disappear for all users. It is fine to remove the old shortcut if all users are getting enabled to run non administrator use but notice that the shortcut  will reappear next time a new version of RSAT is installed on the machine.
 
-8. Make sure to run RSAT using an administrator user at least once after it has been installed on the machine. This is for RSAT to complete installation of the Selenium framework, or installing new drivers needed with updated browser versions. Those installation steps still require to be run by a user with administrator privileges.
+8. RSAT will when started the first time require download and installation of the Selenium framework, and will also require download and installation of drivers that match the version of the selected browser . Users that are not administrators on a machine may be restricted such that they cannot complete this. In this case RSAT may fail and generate exceptions. Should this happen then run RSAT with administrator right once to complete installation, which can be done by right-clicking the new shotcut **Regression Suite Automation Tool (Non admin)** and select run as administrator. When installation has completed close RAST and have the user start RSAT again.
 
-9. Finally, instruct the user to use the new shortcut Regression Suite Automation Tool (Non admin) for starting RSAT.
+9. Finally, instruct the user to use the new shortcut **Regression Suite Automation Tool (Non admin)** for starting RSAT.
 
 ## Instructions for disabling non-administrator RSAT use
 
