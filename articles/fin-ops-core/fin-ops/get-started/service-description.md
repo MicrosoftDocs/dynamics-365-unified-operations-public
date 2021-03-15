@@ -128,7 +128,7 @@ Microsoft will provide point in time restoration of Customer's Non-Production In
 
 ### Data back-up and retention 
 
-Databases are protected by automatic back-ups. Automatic back-ups are *Databases are protected* retained for 30 days unless Microsoft performs a rollback. Rollbacks may *by automatic back-ups as* be performed in the event a failure occurs during any planned maintenance update specified in **Table 4**.
+Databases are protected by automatic back-ups. Automatic back-ups are *Databases are protected* retained for 30 days unless Microsoft performs a rollback. Rollbacks may *by automatic back-ups as* be performed in the event a failure occurs during any planned maintenance update specified in [Planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities).
 
 For more information about automatic back-ups, see [Automated backups - Azure SQL Database & SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
