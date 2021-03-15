@@ -327,94 +327,54 @@ In case of incidents with Finance and Operations, Customers can submit support t
 
 Microsoft is committed to an availability of 99.9% per month of the Service. If Microsoft does not achieve and maintain the service level for the applicable Service described in the SLA, then Customer may be eligible for a credit towards a portion of its monthly service fees for the applicable Service. See the "Claims" section of the [SLA](https://www.microsoft.com/licensing/product-licensing/products?lc=1033) for details on how to initiate a service credit. 
 
-## Important links
+## Important resources
 
 - [Trust Center](https://www.microsoft.com/trust-center): Information on where your Finance and Supply Chain Management data is stored, plus additional information on privacy, compliance, and security procedures.
 
-- [Volume licensing](https://www.microsoftvolumelicensing.com/): Quickly access licensing terms, conditions, and supplemental information relevant to the use of products and services licensed through Microsoft Volume Licensing programs.
+- [Licensing terms and documentation](https://www.microsoftvolumelicensing.com/): Quickly access licensing terms, conditions, and supplemental information relevant to the use of products and services licensed through Microsoft Volume Licensing programs.
 
-- [Service Level Agreement](https://www.microsoft.com/licensing/product-licensing/): The licensing terms resources on this page define the terms and conditions for the software and online services products you purchase through Microsoft Commercial Licensing programs.
+- [Licensing terms](https://www.microsoft.com/licensing/product-licensing/): The licensing terms resources on this page define the terms and conditions for the software and online services products you purchase through Microsoft Commercial Licensing programs.
 
 - [Microsoft Lifecycle Policy](https://docs.microsoft.com/lifecycle/): Provides consistent and predictable guidelines for the availability of support throughout the life of a product.
 
-### Licensing guide 
+- [Licensing guide](NEED LINK)
 
-Overview of service licensing
+- [Customer support](https://dynamics.microsoft.com/support/): Get industry-leading support for your Microsoft Dynamics 365 applications.
 
-### Customer support 
+- [Dynamics Lifecycle Services](https://lcs.dynamics.com/): Manage your application lifecycle and move towards predictable, repeatable, high quality implementations.
 
-Details about the three support plans for customers
+## Definitions
 
-### Dynamics Lifecycle Services 
+### Azure region
+A geographical region where one or more Azure datacenters exist; for example, US and Europe.
 
-Access LCS
-
-**The following table contains the meaning of terms used in this
-document. **
-
-**Azure region**
-
-A geographical region where one or more Azure datacenters exist; for
-example, US and Europe.
-
-### Business Process Manager (BPM) 
-
-A tool in LCS to help complete a fit-gap analysis for a given
-implementation using business process definitions as defined in APQC and
-their support within Finance and Operations.
+### Business Process Manager (BPM)
+A tool in LCS to help complete a fit-gap analysis for a given implementation using business process definitions as defined in APQC and their support within Finance and Operations.
 
 ### Cloud Solution Provider (CSP) 
-
-Partners who are part of Microsoft's CSP program and provide Customers
-with value-added cloud services, Customer support, one invoice, and
-Customer management at scale.
+Partners who are part of Microsoft's CSP program and provide Customers with value-added cloud services, Customer support, one invoice, and Customer management at scale.
 
 ### Customer 
+A business entity that consumes Finance and Operations and is represented by a tenant in Microsoft Office 365.
 
-A business entity that consumes Finance and Operations and is
-represented by a tenant in Microsoft Office 365.
-
-**Development environment**
-
+### Development environment
 Tenant used for developing extensions.
 
 ### Downtime 
 
-Any period of time when end users are unable to login or access to their
-Active
-
-Tenant, due to a failure in the unexpired Platform or the Service
-Infrastructure as Microsoft determines from automated health monitoring
-and system logs. Downtime does not include Scheduled Downtime, the
-unavailability of Service add-on features, the inability to access the
-Service due to your modifications of the Service, or periods where the
-Scale Unit capacity is exceeded.
+Any period of time when end users are unable to login or access to their Active Tenant, due to a failure in the unexpired Platform or the Service Infrastructure as Microsoft determines from automated health monitoring and system logs. Downtime does not include Scheduled Downtime, the unavailability of Service add-on features, the inability to access the Service due to your modifications of the Service, or periods where the Scale Unit capacity is exceeded.
 
 ### Implementation Partner 
-
-The partner that Customer choses to customize, configure, implement, and
-manage its Finance and Operations solution.
+The partner that Customer choses to customize, configure, implement, and manage its Finance and Operations solution.
 
 ### Microsoft Dynamics Lifecycle Services (LCS) 
+Administrative portal for lifecycle management of Finance and Operations from trial to implementation to post-production management and support.
 
-Administrative portal for lifecycle management of Finance and Operations
-from trial to implementation to post-production management and support.
-
-### Microsoft Online Services Terms (OST) 
-
-The OST contains terms that apply to Customer's use of Online Services.
-
-*Click the links below for more information.*
-
-**Microsoft Customer support (CSS) **
-
-Microsoft's support team dedicated to providing quality service for
-Finance and Operations.
+### Microsoft Customer support 
+Microsoft's support team dedicated to providing quality service for Finance and Operations.
 
 ### Non-Production Instance 
-
-Any of the following instances of a Service that are used by Customer
-for validating extensions and other development tasks:
+Any of the following instances of a Service that are used by Customer for validating extensions and other development tasks:
 
 - **Sandbox Tier 1:** Developer Instance
 
@@ -423,38 +383,23 @@ for validating extensions and other development tasks:
 - **Sandbox Tier 3:** Add-on through Sandbox Tier 5 Add-on
 
 ### Production Instance 
-
-Instance of Finance and Supply Chain Management used by Customer for
-managing its "live" daily transactions.
+Instance of Finance and Supply Chain Management used by Customer for managing its "live" daily transactions.
 
 ### Sandbox/staging environment 
-
-Instance of Finance and Supply Chain Management used by Customer for
-validating extensions and other development tasks.
+Instance of Finance and Supply Chain Management used by Customer for validating extensions and other development tasks.
 
 ### Service 
-
-The core services which are included in Microsoft Dynamics 365 for
-Finance and Supply Chain Management; Microsoft Dynamics 365 for Retail;
-or both.
+The core services which are included in Microsoft Dynamics 365 for Finance and Supply Chain Management; Microsoft Dynamics 365 for Retail; or both.
 
 ### Service Level Agreement for Microsoft Online Services (SLA) 
-
-The SLA applies to Microsoft's Online Services, including Finance and
-Supply Chain Management .
+The SLA applies to Microsoft's Online Services, including Finance and Supply Chain Management .
 
 ### Incident 
+An issue with the Finance and Supply Chain Management that Customer encounters while using the service.
 
-An issue with the Finance and Supply Chain Management that Customer
-encounters while using the service.
-
-**Update request**
-
+### Update request
 Request raised to Microsoft for specific update.
 
-**User**
+### User
+A single person consuming Finance and Operations, which is associated with a Customer's tenant.
 
-A single person consuming Finance and Operations, which is associated
-with a Customer's tenant.
-
-33
