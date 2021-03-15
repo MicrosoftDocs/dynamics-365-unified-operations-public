@@ -20,9 +20,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/preview-banner.md)]
 
-The Regression suite automation tool (RSAT) uses privileged resources on the machine it is running on. A user must be an administrator on the machine to be able to run RSAT tests. This topic explains how it is possible to grant these privileged resources to users, if you are using **RSAT version 2.2 or later**. The non-administrator user will be able to run RSAT tests, and they do not need to be and administrator on the machine.
+The Regression suite automation tool (RSAT) uses privileged resources on the machine it is running on. A user must be an administrator on the machine to be able to run RSAT tests. This topic explains how it is possible to grant these privileged resources to users, if you are using **RSAT version 2.2 or later**. The non-administrator user will be able to run RSAT tests, and they don't need to be and administrator on the machine.
 
-These instructions will not allow a non-administrator user to install RSAT on the machine. The instructions only enable using RSAT once it has been installed. This includes first-time use of RSAT where the Selenium framework install, or with new browser driver installation after updating browser versions. Those installation steps still require running RSAT with administrator privileges.
+These instructions will not allow a non-administrator user to install RSAT on the machine. The instructions only enable using RSAT once it has been installed. This situation includes first-time use of RSAT where the Selenium framework installed, or with new browser driver installation after updating browser versions. Those installation steps still require running RSAT with administrator privileges.
 
 When RSAT is installed on a virtual machine (VM) that is shared by multiple users, then users can become blocked when multiple users run RSAT at the same time. For example, a user might hold resources while running tests cases, which then blocks access to other users. These instructions do not change that behavior.
 
@@ -46,15 +46,15 @@ To enable non-administrator RSAT use, you need two PowerShell scripts and a new 
     Run the script **Enable-non-admin-mode.ps1** directly from the **Enable non admin** folder, using these required parameters:
 
     + **action**: (string) Option to enable or disable non-administrator mode. Valid values are **enable** and **disable**.
-    + **thumbprint**: (string) Certificate thumbprint. This must be the same specified in RSAT under General settings.
+    + **thumbprint**: (string) Certificate thumbprint. This value must be the same specified in RSAT under General settings.
 
-    Here is an example:
+    Here's an example:
 
     ```powershell
     .\Enable-non-admin-mode.ps1 "enable" "23055S5DXXXXXXXXXXXXXXXXXXXXXX"
     ```
 
-    To get help execute this command:
+    To get help, execute this command:
 
     ```powershell
     help .\Enable-non-admin-mode.ps1 -full
@@ -68,16 +68,16 @@ To enable non-administrator RSAT use, you need two PowerShell scripts and a new 
     Run the script **Enable-non-admin-user.ps1** directly from **Enable non admin** folder, using these required parameters:
 
     + **action**: (string) Option to enable or disable non-administrator mode. Valid values are **enable** and **disable**.
-    + **thumbprint**: (string) Certificate thumbprint. This must be the same specified in RSAT under General settings.
+    + **thumbprint**: (string) Certificate thumbprint. This value must be the same specified in RSAT under General settings.
     + **user**: (string) The local username in the format `domain\userName`.
 
-    Here is an example:
+    Here's an example:
 
     ```powershell
     .\Enable-non-admin-user.ps1 "enable" "TESTDOMAIN\testuser" "23055S5DXXXXXXXXXXXXXXXXXXXXXX"
     ```
 
-    To get help execute this command:
+    To get help, execute this command:
 
     ```powershell
     help .\Enable-non-admin-user.ps1 -full
@@ -93,7 +93,7 @@ To enable non-administrator RSAT use, you need two PowerShell scripts and a new 
     > [!IMPORTANT]
     > DO NOT remove the old shortcut, because it is a shared file that is used by all users on the machine. If you remove the file, then it will disappear for all users. It is fine to remove the old shortcut if all users will be enabled to run non-administrator. However, the shortcut will reappear every time a new version of RSAT is installed on the machine.
 
-8. When you start RSAT the first tim, you must download and installation the Selenium framework, and the drivers that match the version of your browser. Users that are not administrators might not be able to download and install these components. In this case RSAT might fail and generate exceptions. To download and install the components, run RSAT with administrator privileges to complete the installation. To run with administrator privileges, right-click the new shotcut **Regression Suite Automation Tool (Non admin)** and select **Run as administrator**. After the installation finishes, close RSAT and then have the user start RSAT again.
+8. When you start RSAT the first time, you must download and installation the Selenium framework, and the drivers that match the version of your browser. Users that are not administrators might not be able to download and install these components. In this case RSAT might fail and generate exceptions. To download and install the components, run RSAT with administrator privileges to complete the installation. To run with administrator privileges, right-click the new shortcut **Regression Suite Automation Tool (Non admin)** and select **Run as administrator**. After the installation finishes, close RSAT and then have the user start RSAT again.
 
 9. Use to use the new shortcut **Regression Suite Automation Tool (Non admin)** to starting RSAT.
 
@@ -107,6 +107,6 @@ If you need to revert the machine back to run with administrator use, the run Po
 
 ## What about future versions of RSAT?
 
-The current plan is to collect feedback from users running RSAT with this non-administrator mode. The experience gained from this may result in that non-administrator mode becomes the standard operation. We might change the installation process to automatically include the steps that enable this.
+The current plan is to collect feedback from users running RSAT with this non-administrator mode. The feedback might result in that non-administrator mode becomes the standard operation. We might change the installation process to automatically include the steps that enable non-administrator users.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
