@@ -60,4 +60,4 @@ The hub will now process a counting journal posting via the  [Message processor 
 | Counting                                | +1         | <-        | +1  |
 | Warehouse inventory adjustment (Offset) | -1         | <-        | -1  |
 
-You can on the hub from the first **Warehouse inventory adjustment journal** inquire and jump to both the *Counting journal* and the *Offset warehouse inventory adjustment journal* which was created as part of the adjustment process.
+You can on the hub from the first **Warehouse inventory adjustment journal** created by the scale unit inquire and jump to both the *Counting journal* and the *Offset journal* which gets created as part of the adjustment process by the hub.
