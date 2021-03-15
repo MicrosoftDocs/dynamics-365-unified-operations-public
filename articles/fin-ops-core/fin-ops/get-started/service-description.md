@@ -111,7 +111,7 @@ Typical tenant and data management events for the Service and the responsibiliti
 | Copy a Non-Production Instance database to a Production Instance before go-live.<br><br>*(Note: This request is not available if Customer already is live in production)* | Request submitted through service request in LCS and available through LCS for self-service deployments.<br><br><ul><li>Validation and sign-off. | <ul><li>Copy a Non-Production Instance (e.g., Sandbox Tier 2 Add-on) database to a Production Instance as part of the go-live process. | 5 hours* | 1-4 hours|
 | Maintenance mode | <ul><li>Put AOS in maintenance mode through LCS.</br></li></br><li>Complete necessary maintenance.</br></li></br><li>Request to put the AOS back into active mode.</br> | N/A | N/A| 2 hours|
 
-*\ No lead time for self-service deployments.
+\* No lead time for self-service deployments.
 
 #### Tenant and data management events for Non-Production Instances
 Microsoft will provide point in time restoration of Customer's Non-Production Instance databases as described in the following table.
@@ -124,6 +124,7 @@ Microsoft will provide point in time restoration of Customer's Non-Production In
 | Non-Production Instance database point in time restore |Accept that process cannot be undone.</br><br><ul><li>Trigger the point in time restore operation through Lifecycle Services.| N/A | N/A | 1-8 hours |
 | Copy Tier 2 Sandbox database to a Tier 1 Sandbox for troubleshooting and debugging  | Trigger database export operation through LCS on the sandbox environment.</br><br><ul><li>Import and update the database in Tier 1 environment. | N/A | N/A<| 1-4 hours |
 
+\* No lead time for self-service deployments.
 
 ### Data back-up and retention 
 
