@@ -46,5 +46,9 @@ This topic describes how to acquire a fixed asset using the acquisition proposal
 11. On the page, select the **Books** tab.
 12. Select **Post**.
 
+The acquisition transaction can be created using Excel add-ins, by going to **Fixed assets > Journal entries > Fixed asset journal**. Create a new journal and move to the **Lines** section on the page and select the Excel icon, and then select a Fixed asset journal line. The system will create and open an Excel template representing journal lines. You can add data for the journal lines you're adding into the template, and then publish that information back into the system. 
+
+If default dimensions have been set up for the selected asset book and the corresponding fixed assets that were entered in the Excel template, the default financial dimensions will be called from the asset book master data when the journal is published from the Excel to the system. To include financial dimensions on an asset book automatically while publishing the fixed asset journal from the Excel add-in, the default dimensions must be set up in advance.  
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
