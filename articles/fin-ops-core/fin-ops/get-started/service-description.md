@@ -224,15 +224,19 @@ Microsoft's planned maintenance schedule:
 
 ### Security and administrative access 
 
-Administrative access to a Finance and Supply Chain Management production environment is strictly controlled and logged. Customer Data is handled in accordance with the Microsoft Online Services Terms. Customer's tenant administrator can access Production Instances or Non-Production Instances as described in **Table 5.** Microsoft's Administrator access is described in **Table 5.**
+Administrative access to a Finance and Supply Chain Management production environment is strictly controlled and logged. Customer Data is handled in accordance with the Microsoft Online Services Terms. Customer's tenant administrator can access Production Instances or Non-Production Instances as described in the following table.
 
 For more information, see [Licensing Terms and Documentation](https://www.microsoft.com/licensing/product-licensing/products).
+
+#### Customer's administrative access
 
 | Environment type | Purpose  | Level of Customer access  |
 |-------------------------|-------------------------|-------------------------|
 | **Non-Production Instance**</br>Sandbox Tier 1: Developer Instance | Non-Production Instance that Customer can use for development or as build machines or to customize any Service and unit test Customer changes. | As of platform update 12 for the applicable Service, Customer will not have administrator access to development environment VMs running in the Microsoft subscription. Customer will continue to have full administrative access to the SQL Azure server installed on the environment. |
 | **Non-Production Instance**</br>Sandbox Tier 2: Standard Acceptance Testing Instance (or any Sandbox Tier Add-on)| Non-Production Instance that Customer can use for user acceptance testing, integration testing, and training of any Service. | Customer will not have remote desktop access or access to the SQL server associated with the NonProduction Instance. Customer can connect as an administrator to the database. |
 | **Production Instance** | Use to go-live with any Service. | All access is only through the Finance and Operations client or through LCS.|
+
+#### Microsoft's administrator access
 
 The following table details the different levels of access for different Microsoft administrators.
 
