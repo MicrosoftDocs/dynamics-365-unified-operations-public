@@ -97,49 +97,50 @@ Follow these steps to handle the new custom receipt field for a QR code.
        public class GetSalesTransactionCustomReceiptFieldService : IRequestHandlerAsync, ICountryRegionAware.
        {…}
        
-6. Implement a handler method that will handle the new custom receipt field and return a QR code as a string.
+5. Implement a handler method that will handle the new custom receipt field and return a QR code as a string.
 
-    ```C#
-        /// &lt;summary&gt;
-        /// Gets the custom receipt field value for sales receipt.
-        /// &lt;/summary&gt;
-        /// &lt;param name="request"&gt;The service request to get custom receipt field value.&lt;/param&gt;
-        /// &lt;returns&gt;The value of custom receipt field.&lt;/returns&gt;
-        private async Task&lt;Response&gt;
-        GetCustomReceiptFieldForSalesTransactionReceiptsAsync(GetSalesTransactionCustomReceiptFieldServiceRequest
-        request)
-        {
-          ThrowIf.Null(request.SalesOrder, "sales order");
-          string receiptFieldName = request.CustomReceiptField;
-          string receiptFieldValue = string.Empty;
-          switch (receiptFieldName)
-          {
-              case "TAXINVOICE\_QR":
-                receiptFieldValue = await GetQRCode(request).ConfigureAwait(false);
-                break;
-              default:
-                return new NotHandledResponse();
-          }
-          return new GetCustomReceiptFieldServiceResponse(receiptFieldValue);
-        }
+            ```C#
+                /// &lt;summary&gt;
+                /// Gets the custom receipt field value for sales receipt.
+                /// &lt;/summary&gt;
+                /// &lt;param name="request"&gt;The service request to get custom receipt field value.&lt;/param&gt;
+                /// &lt;returns&gt;The value of custom receipt field.&lt;/returns&gt;
+                private async Task&lt;Response&gt;
+                GetCustomReceiptFieldForSalesTransactionReceiptsAsync(GetSalesTransactionCustomReceiptFieldServiceRequest
+                request)
+                {
+                  ThrowIf.Null(request.SalesOrder, "sales order");
+                  string receiptFieldName = request.CustomReceiptField;
+                  string receiptFieldValue = string.Empty;
+                  switch (receiptFieldName)
+                  {
+                      case "TAXINVOICE\_QR":
+                        receiptFieldValue = await GetQRCode(request).ConfigureAwait(false);
+                        break;
+                      default:
+                        return new NotHandledResponse();
+                  }
+                  return new GetCustomReceiptFieldServiceResponse(receiptFieldValue);
+                }
 
-   The handler should include the following steps.
+    The handler should include the following steps.
 
-     1. Generate UPI link based on the sales order (**SalesOrder**) that is passed as the request parameter.
-     2. Run **EncodeQrCodeServiceRequest** to generate a QR code. (**EncodeQrCodeServiceRequest** is part of the **Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting** package.)
-     3. Wrap the QR code string that is returned in an **&lt;L:&gt;** tag.
+      1. Generate UPI link based on the sales order (**SalesOrder**) that is passed as the request parameter.
+      2. Run **EncodeQrCodeServiceRequest** to generate a QR code. (**EncodeQrCodeServiceRequest** is part of the **Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting** package.)
+      3. Wrap the QR code string that is returned in an **&lt;L:&gt;** tag.
 
-        ``` var qrCodeRequest = new
-            EncodeQrCodeServiceRequest(stringBuilder.ToString())
-            {
-              Width = 150, // Replace with desired QR code width
-              Height = 150 // Replace with desired QR code width
-            };
+            ```C#
+            var qrCodeRequest = new
+                EncodeQrCodeServiceRequest(stringBuilder.ToString())
+                {
+                  Width = 150, // Replace with desired QR code width
+                  Height = 150 // Replace with desired QR code width
+                };
 
-            EncodeQrCodeServiceResponse qrCodeDataResponse = await
-            request.RequestContext.ExecuteAsync&lt;EncodeQrCodeServiceResponse&gt;(qrCodeRequest).ConfigureAwait(false);
-            receiptFieldValue = $"&lt;I:{qrCodeDataResponse.QRcode}&gt;";
-            return receiptFieldValue;
+                EncodeQrCodeServiceResponse qrCodeDataResponse = await
+                request.RequestContext.ExecuteAsync&lt;EncodeQrCodeServiceResponse&gt;(qrCodeRequest).ConfigureAwait(false);
+                receiptFieldValue = $"&lt;I:{qrCodeDataResponse.QRcode}&gt;";
+                return receiptFieldValue;
 
 6. Add the required extensions to **CommerceRuntime.Ext.config**. Here, **Contoso.Commerce.Runtime.ReceiptsIndia** is the name of the new extension for printing the QR code assembly.
 
