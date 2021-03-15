@@ -273,7 +273,7 @@ Microsoft responds to and resolves Incidents based on the severity levels set fo
 
 ##### Incident scope and severity level impact
 
-| Incident impact | Entire geo OR &gt; 25% of global footprint | 1 customer OR subset of users belonging to one customer |
+| Incident impact | Entire geo <br>-OR- <br>less than 25% of global footprint | One customer <br>-OR- <br>subset of users belonging to one customer |
 |-------------------------|-------------------------|-------------------------|
 | Service is unavailable | Sev-1 | Sev-2 |
 | Service is usable only through a workaround or critical subset feature is malfunctioning | Sev-2 | Sev-3 |
