@@ -5,7 +5,7 @@ title: Issue electronic invoices in Finance and Supply Chain Management
 description: This topic explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through the Electronic invoicing add-on.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,25 +39,35 @@ This topic explains how to issue electronic invoices in Microsoft Dynamics 365 F
 
 ## Feature activation
 
-To start issuing electronic invoices through the Electronic invoicing add-on, it is necessary to activate the Feature reference in Finance and Supply Chain Management.
+To issue electronic invoices through the Electronic invoicing add-on, you must activate the Feature in Finance and Supply Chain Management.
 
-Each Feature reference corresponds to a specific electronic invoicing feature that complies to the electronic invoicing requirements from a country/region.
+Each feature corresponds to a specific electronic invoicing feature that complies with the electronic invoicing requirements for a country/region.
 
-The following table shows the list of feature References that the Electronic invoicing add-on supports.
+The following table shows the list of features that the Electronic invoicing add-on may support.
 
-| Feature reference | Name                                              | Country/region |
-|-------------------|---------------------------------------------------|----------------|
-| BR-00053          | NF-e Federal - Brazilian electronic invoice       | Brazil         |
-| BR-00095          | NFS-e Brazilian electronic invoices               | Brazil         |
-| DK-00001          | E-invoicing to the public sector (OIOUBL) – DK    | Denmark        |
-| EG-00008          | E-invoicing for Egypt                             | Egypt          |
-| ES-00025          | Electronic Invoice to the public sector           | Spain          |
-| EUR-00023         | European Union E-invoicing to Public sector       | Europe         |
-| ITA-00036         | IT - E-invoicing to the public sector (FatturaPA) | Italy          |
-| MX-00010          | E-invoicing CFDI                                  | Mexico         |
-| MX-00016          | E-invoicing CFDI - cancellation process           | Mexico         |
+| Name                                              | Country/region |
+|---------------------------------------------------|----------------|
+|Austrian electronic invoice                        |Austria         |
+|Belgian electronic invoice                         |Belgium         |
+|NF-e  Federal - Brazilian electronic invoice       |Brazil          |
+|NFS-e - Brazilian service (city) electronic invoice|Brazil          |
+|Danish electronic invoice                          |Denmark         |
+|Egyptian electronic invoice                        |Egypt           |
+|Estonian electronic invoice                        |Estonia         |
+|Finnish electronic invoice                         |Finland         |
+|French electronic invoice                          |France          |
+|German electronic invoice                          |Germany         |
+|PEPPOL - Global electronic invoice                 |Global          |
+|Italian electronic invoice                         |Italy           |
+|CFDI - Mexican electronic invoice                  |Mexico          |
+|Dutch electronic invoice                           |Netherlands     |
+|Norwegian electronic invoice                       |Norway          |
+|Spanish electronic invoice                         |Spain           |
 
-In the cases where there is a legacy electronic invoicing feature, supported the country localizations scope, the activation of the Feature reference enables the issuing of electronic invoices through the Electronic invoicing add-on and turns-off the former feature.
+When there is a legacy Electronic invoicing feature that is supported in a country/region's localizations scope, activating one of these features turns off the legacy feature and enables electronic invoices to be issued through the Electronic invoicing add-on.
+
+> [!IMPORTANT]
+> After the Electronic invoicing add-on integration feature is enabled, the new Electronic invoicing experience is turned off by default. You can use the feature concept to selectively enable new experiences for legal entities using country/region-specific functionality. The **Global** option controls the new experience for the remaining county/regions that aren't specifically listed in the table.
 
 ## Submit electronic documents
 

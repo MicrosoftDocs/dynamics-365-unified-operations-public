@@ -68,7 +68,6 @@ The following table shows the electronic invoicing features that are currently i
 | Belgium        | Belgian electronic invoice (BE)      | Sales invoices and project invoices |
 | Brazil         | Brazilian NF-e (BR)                  | Fiscal document model 55, correction letters, cancellations, and discards |
 | Brazil         | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
-| Brazil         | Brazilian NFS-e São Paulo (BR)       | Service fiscal documents |
 | Denmark        | Danish electronic invoice (DK)       | Sales invoices and project invoices |
 | Egypt          | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
 | Estonia        | Estonian electronic invoice (EE)     | Sales invoices and project invoices |
@@ -123,10 +122,6 @@ The following lists show the ER format configurations that are available for the
 
 - NFS-e ABRASF Curitiba (BR)
 - NFS-e ABRASF Inquire Curitiba (BR)
-
-#### Brazilian (BR) NFS-e: NFS-e São Paulo city
-
-- NFS-e Sao Paulo (BR)
 
 #### Danish (DK) electronic invoice: Sales and project invoices for Denmark
 

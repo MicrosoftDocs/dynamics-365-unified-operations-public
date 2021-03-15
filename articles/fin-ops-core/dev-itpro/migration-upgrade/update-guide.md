@@ -6,7 +6,6 @@ author: rbadawy
 manager: AnnBe
 ms.date: 10/22/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global

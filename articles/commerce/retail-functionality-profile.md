@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,12 +28,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Create a retail functionality profile
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create a functionality profile in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The commerce functionality profile provides various settings used for online channels. Each channel must specify a functionality profile.
 

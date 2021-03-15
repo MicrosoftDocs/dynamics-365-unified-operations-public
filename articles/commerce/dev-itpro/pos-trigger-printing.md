@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -53,7 +52,7 @@ The following table lists the available triggers and denotes whether they can be
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
 | PreUnlockTerminalTrigger         | Cancelable     | Executed before the POS register is unlocked.  |
 | PostDeviceActivationTrigger      | Non-Cancelable | Executed after the POS activation.   | 
-| PreElevateUserTrigger      | Cancelable | Executed before the manager override.   | 
+| PreElevateUserTrigger      | Cancelable | Executed before the manager override, this trigger will only work for non Microsoft Azure Active Directory (Azure AD) user authentication, if Azure AD is enabled this trigger will not work.   | 
 | PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
 | PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
 | PreOpenUrlTrigger      | Cancelable | Executed before the open URL operation.   | 
