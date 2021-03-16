@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Rebate reduction principle
-description: This topic describes how to set up rebate statuses, which help you to track the status of each deal. You can also use statuses for reporting and inquiry purposes.
+title: Rebate statuses
+description: This topic describes how to set up rebate statuses. Rebate statuses help you track the status of each deal. You can also use them for reporting and inquiry purposes.
 author: sherry-zheng
 manager: tfehr
 ms.date: 02/19/2021
@@ -17,7 +17,7 @@ ms.search.form: TAMRebateStatusTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-Rebate statuses help you to track the status of each Rebate management deal. You can also use statuses for reporting and inquiry purposes. You can set up and name as many rebate status values as you need to support your business process. 
+Rebate statuses help you to track the status of each Rebate management deal. You can also use them for reporting and inquiry purposes. You can set up and name as many rebate status values as you require to support your business process. 
 
-To set up the rebate statuses, go to **Rebate management \> Setup \> Status \> Status**. Use commands on the Action Pane to add and remove status values as needed. For each status, make the following settings:
+To set up rebate statuses, go to **Rebate management \> Setup \> Status \> Status**. Then use the buttons on the Action Pane to add and remove status values as required. For each status, set the following fields:
 
-- **Rebate status** - Enter a name for the status (such as Negotiating, Agreed or Completed).
-- **Description** - Enter a description of the status to provide more information about how it should be used.
+- **Rebate status** – Enter a name for the status (such as *Negotiating*, *Agreed*, or *Completed*).
+- **Description** – Enter a description of the status to provide more information about how it should be used.
 
-You can choose the default status to be assigned to all new Rebate management deals by going to the [**Rebate management parameters** page](rebate-management-parameters.md).
+On the [**Rebate management parameters** page](rebate-management-parameters.md), you can select a default status. That status will then be assigned to all new Rebate management deals that are created.
