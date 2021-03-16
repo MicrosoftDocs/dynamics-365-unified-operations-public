@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rebate management module overview
-description: This topic provides an overview of the Rebate management module for Supply Chain Management
+description: This topic provides an overview of the Rebate management module for Microsoft Dynamics 365 Supply Chain Management.
 author: sherry-zheng
 manager: tfehr
 ms.date: 02/19/2021
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -31,25 +31,31 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-Use the Rebate management module to create contracts, deals, or agreements between your business and its customers or vendors for the purpose of calculating rebates, deductions, and royalties. The Rebate management module tracks and maintains rebate and deduction transactions in a central location where users can create, review and process them effectively.
+You can use the **Rebate management** module to create contracts, deals, or agreements between your business and its customers or vendors, so that you can calculate rebates, deductions, and royalties. Rebate management tracks and maintains rebate and deduction transactions in a central location where users can effectively create, review, and process them.
 
-The Rebate management module supports creation, maintenance, and processing of rebates, or the return of a portion of a purchase price by a seller or a buyer, typically based on the purchase of a specific quantity or value of goods within a specific period. These returns, unlike discounts, are done after the full invoice of the purchase amount.
+Rebate management supports the creation, maintenance, and processing of *rebates*. A rebate is the return of part of the purchase price by a seller or a buyer. Rebates are typically based on the purchase of a specific quantity or value of goods during a specific period. Unlike discounts, rebates are done after the purchase amount is fully invoiced.
 
-Also supported are deductions. A deduction is a compensation, consideration or fee paid for a license or privilege to use intellectual property such as a brand, copyright, or patent, or the privilege to use a natural resource such as for fishing, hunting, or mining. Deductions are usually computed as a percentage of revenue or profit from realized use. The more use, the greater the deduction realized.
+Rebate management also supports *deductions*. A deduction is compensation, a consideration, or a fee that is paid either for a license or the privilege to use intellectual property such as a brand, copyright, or patent, or for the privilege to use a natural resource for a purpose such as for fishing, hunting, or mining. Deductions are usually calculated as a percentage of the revenue or profit from realized use. The more the intellectual property or natural resource is used, the greater the deduction that is realized.
 
-Customer royalties are also supported. Royalties are payments made by one party to the licensee or franchisee for the right for use of the asset. Rebates, royalties, and deductions are all supported by the new Rebate management module.
+Additionally, Rebate management supports customer *royalties*. Royalties are payments that one party makes to the licensee or franchisee for the right to use an asset.
 
-With the Rebate management module, posting profiles can be defined for provision, rebate, and write-off. The postings can additionally be specified for a particular customer or vendor, as not all deals may apply to all customer or vendor scenarios and can be tracked accordingly via postings. Rebate transactions are automatically generated based on the calculation method selected and scheduled into batch jobs. Additionally, workflows can be set to manage, review, and approve agreements.
+Rebate management lets you define posting profiles for provisions, rebates, and write-offs. Furthermore, the postings can be defined for a specific customer or vendor. In this way, deals that don't apply to all customer or vendor scenarios can be tracked via postings.
 
-## Basis calculation differentiation
+Rebate transactions are automatically generated, based on the calculation method that is selected and scheduled in batch jobs. Additionally, you can set up workflows to manage, review, and approve agreements.
 
-Customer rebates, royalties, and vendor rebates can all utilize a different basis based on your business requirements. Customer rebates can be based on sales orders, delivery notes, or invoices. Customer royalties can be based on sales orders, delivery notes, or paid invoices as well. Vendor rebates can be based on either purchase or sales orders. The vendor rebate can be calculated based on products purchased from the rebate vendor and sold to customers via sales invoices.
+## Basis calculation
 
-## Calculations are flexible
+Customer rebates, customer royalties, and vendor rebates can all use a different basis, depending on your business requirements:
 
-Rebate calculation periods are available for both customer and vendor deals. A calculation period defines the length of the deal, the frequency, and calculation period. The rebates can be accrued based on the sales order quantities or amounts for qualified products within the rebate period.
+- Customer rebates can be based on sales orders, delivery notes, or invoices.
+- Customer royalties can be based on sales orders, delivery notes, or paid invoices.
+- Vendor rebates can be based on either purchase orders or sales orders. They can be calculated based on products that are purchased from the rebate vendor and sold to customers via sales invoices.
 
-For each agreement calculation, periods can be set to:
+## Flexible calculations
+
+Rebate calculation periods are available for both customer deals and vendor deals. A calculation period defines the length of the deal, the calculation frequency, and the calculation period. The rebates can be accrued based on the sales order quantities or amounts for qualified products during the rebate period.
+
+For each agreement calculation, any of the following periods can be set:
 
 - Invoice
 - Day
@@ -58,41 +64,43 @@ For each agreement calculation, periods can be set to:
 - Quarter
 - Year
 - Customized period
-- Any multiples thereof
+- Any multiple of any of the previously listed periods
 
-The calculation can be applied to individual, groups of, or all customers and products. Rebates having multiple detail lines can have different qualifying date ranges. The provision and claim periods can differ, for example process provision daily and claims once a month.
+The calculation can be applied to individual customers and products, groups of customers and products, or all customers and products. Rebates that have multiple detail lines can have different qualifying date ranges. The provision and claim periods can differ. For example, provisions can be processed every day, whereas claims are processed once per month.
 
-Rebates can be configured based on many diverse parameters such as percentage (%), rate or fixed amount. There are four core methods of calculation including:
+Rebates can be configured based on many different parameters. For example, they can be configured as a percentage, a rate, or a fixed amount. There are four main calculation methods:
 
 - Stepped
 - Cumulative
 - Rolling
 - Total value
 
-Rebate calculations can be reduced by other rebates as well, depending on whether the rebate is set to calculate on the net amount or not.
+Rebate calculations can also be reduced by other rebates, depending on whether the rebate is set up to calculate based on the net amount.
 
-On the vendor side, rebates can calculate the price basis to FIFO, latest purchase price, average purchase price, or sales price.
+On the vendor side, rebates can calculate the price based on a first in, first out (FIFO) rule, the latest purchase price, the average purchase price, or the sales price.
 
 ## Rebate target transactions
 
-The output generated by the rebate deal or agreement could be a financial or item.
+The outputs that the rebate deal or agreement generates can be financials or items.
 
-For a financial output, the outputs are determined by the posting profile's payment type assigned to the agreement. These can include customer deduction journals, free text invoices or vendor invoices. For audit purposes, financial rebate target transactions will include a reference back to the originating rebate agreement.
+Financial outputs are determined by the payment type that is assigned to the agreement from the posting profile. These outputs can include customer deduction journals, free text invoices, and vendor invoices. For auditing purposes, financial rebate target transactions include a reference to the originating rebate agreement.
 
-Item rebate outputs create a free item sales order for customer rebates and a purchase order for vendor rebates. Item rebate target transactions contain options to determine which rebate reference to populate on the free item sales or purchase order.
+Item outputs create a free item sales order for customer rebates and a purchase order for vendor rebates. Item rebate target transactions contain options to determine which rebate reference should be entered on the free item sales order or purchase order.
 
 ## Accurate rebate calculations
 
-Rebates calculations can be made accurately and precisely based on the combinate of the deals associated, the frequency of the calculations, the calculation basis, and the calculation method selected. Rebate provisions can additionally be used to accrue posted and claimed values. Provisions can be managed daily or monthly, but the facility can allocate/pay or receive payment of the rebate at any defined frequency. The user can easily adjust a plan or payment amounts at any time during the payout.
+The combination of the associated deals, the frequency of the calculations, the calculation basis, and the calculation method that is selected determine the accuracy and precision of rebate calculations. Rebate provisions can be used to accrue posted and claimed values.
 
-Users no longer need to double handle a deal or provision. Provisions and write offs post directly into the ledger. Additionally, credit notes can be automatically created. This gives a complete integration into accounts payable and receivable. These calculations consider settlement discounts, paid invoices, trade discounts, and existing credit notes while processing, which ensures total accuracy in the amounts and values calculated.
+Provisions can be managed daily or monthly. However, the functionality can allocate or pay the rebate, or receive payment of it, at any defined frequency. Users can easily adjust a plan or payment amounts at any time during the payout.
 
-When rebates are calculated, the process creates transactions which can be reviewed before posting. From there, a journal, credit note, or debit transaction can be created. A separate process posts rebate and deduction transactions. Reporting statements and transaction listings can be obtained to ensure compliance, effectiveness, and transparency.
+Users no longer have to double-handle deals or provisions. Provisions and write-offs are posted directly to the ledger. Additionally, credit notes can be created automatically. Therefore, there is full integration with accounts payable and accounts receivable. During processing, the calculations consider settlement discounts, paid invoices, trade discounts, and existing credit notes to ensure that amounts and values are accurately calculated.
+
+When rebates are calculated, the process creates transactions that can be reviewed before posting occurs. A journal, credit note, or debit transaction can then be created. A separate process posts rebate and deduction transactions. Reporting statements and transaction listings can be obtained to ensure compliance, effectiveness, and transparency.
 
 ## Guaranteed royalty payments
 
-With the Rebate management module, royalties are handled quickly and easily with automatic payment generation, including where guaranteed minimums apply.
+In Rebate management, automatic payment generation enables royalties to be handled quickly and easily, even when guaranteed minimums apply. 
 
-## Maximize spend versus rebates
+## Maximizing spend versus rebates
 
-Vendors and/or products can additionally be grouped by territory, and different offers can be provided based on the geography of the transaction. At the time of product selection, users can define what items are included and how many items will be used in the rebate settlement.
+Vendors and products can be grouped by territory, and different offers can be provided, depending on the country or region of the transaction. When users select products, they can define the items that are included and the number of items that will be used in the rebate settlement.
