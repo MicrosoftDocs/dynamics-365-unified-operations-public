@@ -3,7 +3,7 @@
 
 title: Create work orders from maintenance requests
 description: This topic explains how to create a work order from a maintenance request in Asset Management.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom:
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 

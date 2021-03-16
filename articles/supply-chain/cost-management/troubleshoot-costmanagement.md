@@ -3,7 +3,7 @@
 
 title: Troubleshoot cost management
 description: This topic describes how to fix issues that you might encounter while working with cost management.
-author: riluan
+author: AndersGirke
 manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
 

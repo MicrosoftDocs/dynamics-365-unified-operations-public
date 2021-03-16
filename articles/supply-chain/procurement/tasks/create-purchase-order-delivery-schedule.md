@@ -3,7 +3,7 @@
  
 title: Create a purchase order with a delivery schedule
 description: This topic demonstrates how to create a delivery schedule for a purchase order. 
-author: RichardLuan
+author: kamaybac
 manager: tfehr 
 ms.date: 08/01/2019
 ms.topic: business-process 
@@ -20,7 +20,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
