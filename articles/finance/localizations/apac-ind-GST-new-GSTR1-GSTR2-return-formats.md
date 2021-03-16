@@ -5,7 +5,7 @@ title: New GSTR-1 and GSTR-2 return formats
 description: This topic provides information about how to generate GSTR-1 and GSTR-2 reports in Microsoft Dynamics 365 according to the new format that was released by Goods and Services Tax (GST) Suvidha Providers, or GSPs.
 author: prabhatb
 manager: tfehr
-ms.date: 03/02/2021
+ms.date: 03/16/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -245,7 +245,7 @@ Follow these steps to generate a GSTR-1 report in the new format.
 5. In the **Configuration** field, select **GSTR-1 for New Return**.
 6. In the **File name** field, enter **GSTR-1 for New Return**.
 
-    ![GER export to GSTR CSV dialog box for the GSTR-2 report](media/New-GSTR-Format-007.PNG)
+    ![GER export to GSTR CSV dialog box for GSTR-2 report](media/New-GSTR-Format-007.PNG)
 
 7. Select **OK** to save the report.
 
