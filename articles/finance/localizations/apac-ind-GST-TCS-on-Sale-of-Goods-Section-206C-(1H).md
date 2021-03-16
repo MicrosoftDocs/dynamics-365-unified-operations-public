@@ -56,7 +56,7 @@ However, the accumulation is based on vendors or customers in one legal entity. 
 
 Per the interpretation of TCS on sales of goods under section 206C (1H), tax should be collected "at the time of receipt." The law clarifies that TCS on sales of goods will be collected when actual payment is received by the seller.
 
-However, to collect TCS on sales of goods, the seller must increase the amount of the sales invoice, including the amount of TCS. The seller must also account for the amount in the books as a TCS liability, even though it isn't actually payable. Although the TCS amount is debited to the buyer, the liability under section 206C (1H) doesn't arise until the amount is collected. To accommodate this requirement, a new **Tax liability on payment** option is added for the withholding tax group.
+However, to collect TCS on sales of goods, the seller must increase the amount of the sales invoice, including the amount of TCS. The seller must also account for the amount in the books as a TCS liability, even though it isn't payable. Although the TCS amount is debited to the buyer, the liability under section 206C (1H) doesn't arise until the amount is collected. To accommodate this requirement, a new **Tax liability on payment** option is added for the withholding tax group.
 
 When this option is selected, the **Interim account** field for the withholding tax code becomes available. When a sale of goods is posted, the tax amount on the invoice is posted to the interim TCS payable account and debited to the customer account. When the user receives payment from the buyer, the system posts an invoice transaction to accrue the TCS liability on the payment.
 
@@ -151,7 +151,7 @@ The following example shows how the accumulated value is determined for TCS calc
    | 25-Sep-20 | Payment | 20,00,000 |
    | 10-Oct-20 | Payment | 12,00,000 |
 
-The initial accumulated value is determined by adding the payments that are received between April 1 and September 30, 2020: 15,00,000 + 5,00,000 + 20,00,000 = 40,00,000. The first payment value after October 10, 2020 is 12,00,000. Therefore, the total accumulated value would is 40,00,000 + 12,00,000 = 52,00,000.
+The initial accumulated value is determined by adding the payments that are received between April 1 and September 30, 2020: 15,00,000 + 5,00,000 + 20,00,000 = 40,00,000. The first payment value after October 10, 2020 is 12,00,000. Therefore, the total accumulated value is 40,00,000 + 12,00,000 = 52,00,000.
 In this case, TCS is calculated as (52,00,000 – 50,00,000) × 0.1 percent = 20.
 
 To calculate the initial accumulated value, follow these steps.
@@ -172,7 +172,7 @@ You can edit the system-generated initial threshold value for any customer. When
    > [!IMPORTANT]
    > Don't select an interim account yet. You will select it after you set the **Tax liability on payment** option to **Yes** for the withholding tax group in the next procedure.
 
-3.	Set the **Enable threshold hierarchy** option to **Yes**. The **PAN based accumulation** option become available.
+3.	Set the **Enable threshold hierarchy** option to **Yes**. The **PAN based accumulation** option becomes available.
 4.	If multiple customers have the same PAN, set the **PAN based accumulation** option to **Yes**.
 
    ![Withholding tax codes page](media/TCS-on-Sale-of-Goods-002.PNG)
