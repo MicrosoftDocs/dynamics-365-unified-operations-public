@@ -3,12 +3,11 @@
 
 title: Forecasts, work orders, and projects
 description: This topic explains forecasts and work order integration with the Project management and accounting module in Asset Management.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
 ms.date: 08/29/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 

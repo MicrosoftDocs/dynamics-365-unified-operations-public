@@ -3,12 +3,11 @@
  
 title: Create a purchase agreement
 description: This topic guides you through the creation of a purchase agreement. 
-author: RichardLuan
+author: kamaybac
 manager: tfehr 
 ms.date: 07/18/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -21,7 +20,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
