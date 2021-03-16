@@ -38,14 +38,13 @@ One important aspect of this feature is that if multiple customers have the same
 
 The following illustration shows the process flow for this feature.
 
-![Flow diagram](media/TCS-on-Sale-of-Goods-001.PNG)
+   ![Flow diagram](media/TCS-on-Sale-of-Goods-001.PNG)
 
 ## Base amount for TCS deduction
 
 Central Board of Direct Taxes (CBDT) vide circular no. 17, dated September 30, 2020, clarified the base amount for TCS deduction. Because the collection is based on receipt of the amount of the sale consideration, no adjustment because of indirect taxes, including Goods and Services Tax (GST), is required for the collection of tax under this provision. Therefore, TCS that is collected on the sale consideration must include GST.
 
 In the withholding tax group, you can include the GST tax component and charges in the base amount for TCS calculation.
-
 
 ## PAN-based accumulation of transactions for multiple customers
 
@@ -112,8 +111,8 @@ To make the solution comply with the new interpretation, the following changes h
 
 The feature is supported in following versions of Microsoft Dynamics 365 Finance, or later versions:
 
-- 10.0.14
-- 10.0.15
+   - 10.0.14
+   - 10.0.15
 
 ## Set up TCS on sales of goods on a collection-of-payment basis
 
@@ -190,7 +189,7 @@ You can edit the system-generated initial threshold value for any customer. When
 8. If charges aren't part of the TCS calculation, in the **Exclude charges for TDS or TCS calculation** field, select **Yes**.
 9. On the Action Pane, select **Designer**, and define the formula for TCS calculation.
 
-![Withholding tax groups page](media/TCS-on-Sale-of-goods-003.PNG)
+   ![Withholding tax groups page](media/TCS-on-Sale-of-goods-003.PNG)
 
 ## Define threshold definitions
 
@@ -201,7 +200,7 @@ You can edit the system-generated initial threshold value for any customer. When
     - 0-Max
     - Max-0
 
-![Threshold designer page](media/TCS-on-Sale-of-Goods-004.PNG)
+   ![Threshold designer page](media/TCS-on-Sale-of-Goods-004.PNG)
 
 ## Set up the TCS threshold for sales of goods
 
