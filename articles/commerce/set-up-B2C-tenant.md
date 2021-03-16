@@ -96,7 +96,7 @@ To create the B2C application, follow these steps.
 1. Under **Implicit grant**, select both **Access tokens** and **ID tokens** to enable them for the application. Select **Save**.
 1. Go to the **Overview** menu of the Azure portal and copy the **Application (client) ID**. Note this ID for later setup steps (referenced later as the **Client GUID**).
 
-For additional reference on App Registrations in AAD B2C, please see [The new App registrations experience for Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/app-registrations-training-guide)
+For additional reference on App Registrations in Azure AD B2C, please see [The new App registrations experience for Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/app-registrations-training-guide)
 
 ### Reply URLs
 
