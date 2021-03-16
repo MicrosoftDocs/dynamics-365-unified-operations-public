@@ -33,7 +33,7 @@ This topic describes how to acquire a fixed asset using the acquisition proposal
 
 ## Create an asset acquisition proposal
 
-Compplete the following steps to create an asset acquisition proposal. 
+Complete the following steps to create an asset acquisition proposal. 
 
 1. In the navigation pane, go to **Modules > Fixed assets > Journal entries > Fixed assets journal**.
 2. Select **New**.
