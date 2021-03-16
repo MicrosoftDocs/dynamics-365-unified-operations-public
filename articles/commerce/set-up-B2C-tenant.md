@@ -96,6 +96,8 @@ To create the B2C application, follow these steps.
 1. Under **Implicit grant**, select both **Access tokens** and **ID tokens** to enable them for the application. Select **Save**.
 1. Go to the **Overview** menu of the Azure portal and copy the **Application (client) ID**. Note this ID for later setup steps (referenced later as the **Client GUID**).
 
+For additional reference on App Registrations in AAD B2C, please see [The new App registrations experience for Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/app-registrations-training-guide)
+
 ### Reply URLs
 
 Reply URLs are important as they provide an allow list of the return domains when your site calls Azure AD B2C to authenticate a user. This permits the return of the authenticated user back to the domain from which they are signing into (your site domain). 
