@@ -5,7 +5,7 @@ title: TCS on sales of goods
 description: This topic provides information about the functionality for Tax Collection at Source (TCS) on sales of goods.
 author: prabhatb
 manager: tfehr
-ms.date: 03/15/2021
+ms.date: 03/16/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -152,29 +152,39 @@ The following example shows how the accumulated value is determined for TCS calc
    | 25-Sep-20 | Payment | 20,00,000 |
    | 10-Oct-20 | Payment | 12,00,000 |
 
+The initial accumulated value is determined by adding the payments that are received between April 1 and September 30, 2020: 15,00,000 + 5,00,000 + 20,00,000 = 40,00,000. The first payment value after October 10, 2020 is 12,00,000. Therefore, the total accumulated value would is 40,00,000 + 12,00,000 = 52,00,000.
+In this case, TCS is calculated as (52,00,000 – 50,00,000) × 0.1 percent = 20.
+
+To calculate the initial accumulated value, follow these steps.
+
+1.	Go to **Tax** > **Setup** > **Withholding tax** > **Initial threshold achieved values**.
+2.	Use the **From date** and **To date** fields to define the date range from April 1 through September 30, 2020.
+3.	Select **Initialize**. The payment transaction that is run in the defined date range is automatically considered to determine the initial threshold achieved value for each customer. After you select **Initialize**, and the initialization process is run, the button is no longer available and can't be selected again.
+
+You can edit the system-generated initial threshold value for any customer. When you save the changes, the new value is recorded for the customer. You can also manually add new customers. For example, a new customer might be created in the system after the initialization process is run. However, initial threshold value must be manually updated.
 
 ## Create a new withholding tax code for sales of goods
 
-1. Go to **Tax \> Setup \> Withholding tax code**.
-2. In the left pane, select **Sale of Goods**.
+1.	Go to **Tax** > **Setup** > **Withholding tax code**.
+2.	In the left pane, select **Sale of Goods**.
 
-    When you attach a withholding tax component of the **TCS** type, the new **Interim account** field on the **General** FastTab becomes available.
+   When you attach a withholding tax component of the TCS type, the new **Interim account** field on the **General** FastTab becomes available.
 
-    > [!IMPORTANT]
-    > Don't select an interim account yet. You will select it after you set the **Tax liability on payment** option to **Yes** for the withholding tax group in the next procedure.
+   > [!IMPORTANT]
+   > Don't select an interim account yet. You will select it after you set the **Tax liability on payment** option to **Yes** for the withholding tax group in the next procedure.
 
-3. Set the **Enable threshold hierarchy** option to **Yes**. The **PAN based accumulation** option become available.
-4. If multiple customers have the same PAN, set the **PAN based accumulation** option to **Yes**.
+3.	Set the **Enable threshold hierarchy** option to **Yes**. The **PAN based accumulation** option become available.
+4.	If multiple customers have the same PAN, set the **PAN based accumulation** option to **Yes**.
 
-![Withholding tax codes page](media/TCS-on-Sale-of-Goods-002.PNG)
+   ![Withholding tax codes page](media/TCS-on-Sale-of-Goods-002.PNG)
 
 ## Create a new withholding tax group for sales of goods
 
 1. Go to **Tax \> Setup \> Withholding tax group**.
 2. In the left pane, select **Sale of Goods**.
 3. Create a withholding tax group that has the **TCS** tax type, and set the **Tax liability on payment** option to **Yes**.
-4. Go to **Tax \> Setup \> Withholding tax code**.
-5. On the **Withholding tax codes** page, in the **Interim account** field, select **Interim TCS payable account**. This account was created in the chart of account and has the **India withholding tax (TCS)** posting type.
+4. Go to **Tax** \> **Setup** \> **Withholding tax code**.
+5. On the **Withholding tax codes** page, in the **Interim account** field, select **Interim TCS payable account**. This account was created in the chart of accounts and has the **India withholding tax (TCS)** posting type.
 6. Return to the **Withholding tax groups** page.
 7. In the **Include GST tax component for TDS or TCS calculation** field, include the GST tax component if it's part of the calculation of the TCS base amount.
 8. If charges aren't part of the TCS calculation, in the **Exclude charges for TDS or TCS calculation** field, select **Yes**.
@@ -184,7 +194,7 @@ The following example shows how the accumulated value is determined for TCS calc
 
 ## Define threshold definitions
 
-1. Go to **Tax \> Setup \> Threshold definitions**.
+1. Go to **Tax** \> **Setup** \> **Threshold definitions**.
 2. Define a threshold definition for sales of goods.
 3. Define two threshold slabs:
 
@@ -195,15 +205,15 @@ The following example shows how the accumulated value is determined for TCS calc
 
 ## Set up the TCS threshold for sales of goods
 
-TCS on sales of goods applies to either a single customer or multiple customers that have the same PAN.
+TCS on sales of goods applies to a single customer or multiple customers that have the same PAN.
 
-If the customer PAN isn't available, a higher tax rate will be applied after the exempted turnover amount is passed. If the customer PAN is available, the lower tax rate will be applied.
+If the customer PAN isn't available, a higher tax rate is applied after the exempted turnover amount is passed. If the customer PAN is available, the lower tax rate is applied.
 
 1. Define threshold references for customers.
 
     ![Threshold references page](media/TCS-on-Sale-of-goods-005.PNG)
 
-2. Select **Threshold designer**.
+2. In the Action Pane, select **Threshold designer**.
 3. Define two threshold slabs that have the following options:
 
     - With PAN number
@@ -227,74 +237,67 @@ If the customer PAN isn't available, a higher tax rate will be applied after the
         - **Calculate previous non-tax transactions:** No
         - **Include in turnover base:** Yes
 
-![Threshold designer page](media/TCS-on-Sale-of-Goods-006.PNG)
+      ![Threshold designer page](media/TCS-on-Sale-of-Goods-006.PNG)
+
+      > [!IMPORTANT]
+      > On the **Threshold designer** page, you must define the date for each slab from April 1, 2020, through March 31, 2021. The system verifies that the threshold date range includes the initial amount date range. If it does, the system adopts the defined initial amount as part of the turnover and doesn't consider the transactions during the initial amount date range, because the turnover during the date range has been defined as the initial amount. In the previous example, the threshold date range (April 1, 2020, through March 31, 2021) includes the date range April 1 through September 30, 2020. Therefore, the initial threshold amount is included as part of the turnover. Then the payments of the date range October 1, 2020, through March 31, 2021, are cumulated as another part of the turnover. Finally, the total turnover is the initial threshold amount plus the cumulative amount of October 1, 2020, through March 31, 2021.
 
 ## Activate the calculation of TCS for customers
 
-- Go to **Accounts receivable \> Customers \> All customers**.
+- Go to **Accounts receivable** \> **Customers** \> **All customers**.
 
-![All customer page](media/TCS-on-Sale-of-Goods-007.PNG)
+   ![All customer page](media/TCS-on-Sale-of-Goods-007.PNG)
 
-## Invoice posting
+When an invoice and payment transactions are posted, the following values are used to calculate TCS:
 
-When an invoice is posted, if the accumulated transaction passes the threshold limit, the following accounting entry is posted.
+   -	Threshold limit: 50,00,000
+   -	TCS rate: 0.0750 percent
 
-| Item | Qty | Unit price | Net amt. | Tax group | IGST     | Tax rate | Threshold value |
-|------|-----|------------|----------|-----------|----------|----------|-----------------|
-| A    | 6   | 10,000     | 60,000   | Cust1     | IGST @10 | 10       | 50,000          |
+The following table shows the transaction details.
 
-If the customer PAN is available, the TCS rate is 0.1 percent.
+| Date      | Payment received | Accumulated threshold | TCS applicable | Reason                                                                                                                                |
+|-----------|------------------|-----------------------|----------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| 5-Apr-20  | 20,00,000        | 20,00,000             | No             | TCS is applicable from October   1, 2020.                                                                                             |
+| 10-May-20 | 15,00,000        | 35,00,000             | No             | TCS is applicable from October   1, 2020.                                                                                             |
+| 10-Aug-20 | 10,00,000        | 45,00,000             | No             | TCS is applicable from October   1, 2020                                                                                              |
+| 1-Sep-20  | 8,00,000         | 53,00,000             | No             | Transaction accumulation will   start from April 1, 2020.                                                                             |
+| 1-Oct-20  | 2,00,150         | 2,00,150              | Yes            | The threshold of INR 50,00,000   was already crossed before October 1,2020. TCS will apply on (2,00,150 ÷   1.0750) × 0.0750 percent. |
 
-> [!NOTE]
-> From October 1, 2019, through March 31, 2020, the TCS rate is 0.0750 percent.
+When you initialize the initial threshold achieved value, the system calculates and shows INR 53,00,000.
 
-The invoice is posted as shown here.
+When you post a payment of 2,00,150 that is received from the customer, the following accounting entry is posted.
 
-| Account                                       | Debit  | Credit |
-|-----------------------------------------------|--------|--------|
-| Customer A/C (Invoice amount)                 | 66,016 |        |
-| Ledger A/C (Sales A/C)                        |        | 60,000 |
-| GST Payable                                   |        | 6,000  |
-| Interim TCS Payable A/C (0.1% on 66000-50000) |        | 16     |
-
-## TCS liability that arises when payment is collected
-
-When payment is received, and the invoice is attached to the payment transaction, the TCS amount is calculated based on the full payment amount and reversed through a related voucher. However, another related voucher is generated together with the invoice. This related vouched shows tax liability recognition in books for the eligible amount only.
-
-| Account             | Debit  | Credit |
-|---------------------|--------|--------|
-| Bank                | 66,016 |        |
-| Customer            |        | 66,016 |
-| Interim TCS Payable | 65.95  |        |
-| TCS Payable         |        | 65.95  |
-
-The related voucher is generated as shown here.
-
-| Account             | Debit | Credit |
-|---------------------|-------|--------|
-| Interim TCS payable |       | 65.95  |
-| TCS Payable         | 65.95 |        |
-
-> [!IMPORTANT]
-> Another related voucher will be generated together with the posted sales invoice to book the actual TCS liability.
-
-Go to the posted sales invoice voucher, and check the related voucher entry.
-
-| Account             | Debit | Credit |
-|---------------------|-------|--------|
-| Interim TCS payable | 16.00 |        |
-| TCS Payable         |       | 16.00  |
+| Account                       | DR       | CR       |
+|-------------------------------|----------|----------|
+| Bank   A/C                    | 2,00,150 |          |
+| Customer   A/C                |          | 2,00,150 |
+| TCS   Interim payable account | 150      |          |
+| TCS   Payable                 |          | 150      |
 
 > [!NOTE]
-> In the case of a purchase transaction where the vendor is deducting TCS, you must create a new TCS withholding group.
+> The first time that the system crosses the threshold amount, you must manually adjust the calculated TCS amount. The amount to adjust should be minor. The variation in the calculation occurs because the current algorithms work differently. This difference will be corrected in the future.
+When an invoice is posted against the last payment transaction, the following entry is posted.
+> | Account               | DR       | CR       |
+> |-----------------------|----------|----------|
+> | Customer   A/C        | 2,00,000 |          |
+> | To Sales              |          | 2,00,000 |
+> | Customer              | 150      |          |
+> | Interim   TCS payable |          | 150      |
 
 ## TCS that vendors deduct on purchases of goods
 
-If the selling vendor deducts TCS against the organization, you must create a separate **TCS on purchase of goods** withholding tax group. On the **Withholding tax group** page, in the **Apply threshold** section, set the **PAN based accumulation** option to **Yes**. You must define a threshold definition for the vendor and attach the withholding tax group to the vendor. When the purchase order is posted, the TCS amount that the vendor deducted will be posted to the TCS recoverable account.
+If the selling vendor deducts TCS against the organization, you can apply the same **TCS on sales of goods** withholding tax group. The threshold won't apply on the purchase transaction. When you post the purchase order, the TCS amount that the vendor deducted is posted directly to the TCS recoverable account. To match the recoverable amount before you make your claim, you must download Form 26AS from the appropriate government website.
 
-Every organization will claim a credit for the TCS deduction after the deduction is reconciled by using Form 26AS.
+| Account               | DR       | CR       |
+|-----------------------|----------|----------|
+| Purchase              | 2,00,000 |          |
+| Vendor   A/C          |          | 2,00,000 |
+| TCS   Recoverable A/C | 150      |          |
+| Vendor   A/C          |          | 150      |
 
-1. Go to **Tax \> Inquiries and reports \> TDS/TCS inquiry**.
+Every organization will claim a credit for TCS deduction after it reconciles the deduction with Form 26AS.
+
+1. Go to **Tax** \> **Inquiries and reports** \> **TDS/TCS inquiry**.
 2. Select the required column fields to generate the report.
 
-![Tax transaction inquiry page](media/TCS-on-Sale-of-Goods-008.PNG)
+   ![Tax transaction inquiry page](media/TCS-on-Sale-of-Goods-008.PNG)
