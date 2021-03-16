@@ -245,7 +245,7 @@ Follow these steps to generate a GSTR-1 report in the new format.
 5. In the **Configuration** field, select **GSTR-1 for New Return**.
 6. In the **File name** field, enter **GSTR-1 for New Return**.
 
-    ![GER export to GSTR CSV dialog box for GSTR-2 report](media/New-GSTR-Format-007.PNG)
+    ![GER export to GSTR CSV dialog box for the GSTR-1 report](media/New-GSTR-Format-007.PNG)
 
 7. Select **OK** to save the report.
 
