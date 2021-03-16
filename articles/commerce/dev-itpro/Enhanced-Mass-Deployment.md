@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Application update 3
 
 [!include [banner](../includes/banner.md)]
 
-This topic is for the new, enhanced self-service installers. It explains how to use these installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
+This topic is for the new, enhanced self-service installers released each month beginning with the 10.0.18 release. This article explains how to use these installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
 
 ## Delimiters for mass deployment
 
