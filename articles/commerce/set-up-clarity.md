@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title:Setting up Clarity in Commerce
-description: This topic reviews setting up the Clarity service in your Dynamics 365 Commerce environment.
+title: Set up Microsoft Clarity in Dynamics 36 Commerce
+description: This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 author: BrianShook
 manager: BrendanSullivanMSFT
-ms.date: 01/25/2021
+ms.date: 03/16/2021
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,15 +29,16 @@ ms.dyn365.ops.version:
 
 ---
 
-# Setting up Clarity in Dynamics 365 Commerce
+# Set up Microsoft Clarity in Dynamics 365 Commerce
 
-This topic covers the set up of Clarity service in your Dynamics 365 Commerce environment. 
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-## Overview
+This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 
-[Clarity](https://clarity.microsoft.com/) is a behavioral analysis tool which helps you as a site owner understand your public user's interactions with your site. Clarity's analysis tools enable visibility using Session Recordings, Heatmaps, and ML Insights to review and study user interactions. Integrating Clarity in your Dynamics 365 Commerce site is easy. Just follow the below steps to get Clarity running in your site and enabling an in-depth look at your user interactions!
+[Microsoft Clarity](https://clarity.microsoft.com/) is a user behavior analytics tool which can help site owners understand user interactions with their e-commerce site. Clarity's analysis tools enable visibility using session recordings, heatmaps, and machine learning insights to review and study user interactions. Integrating Clarity into your Dynamics 365 Commerce site is easy. Just follow the below steps to get Clarity running in your site and enabling an in-depth look at your user interactions.
 
-## Sign Up for Clarity
+## Sign up for Clarity
 
 Navigate to the [Clarity](https://clarity.microsoft.com/) website and use the "Get started" option to sign-up for Clarity. 
 
@@ -45,11 +46,11 @@ During the setup process, use the production website url that will be associated
 
 See Clarity's [Getting Started](https://docs.microsoft.com/en-us/clarity/getting-started) guide for additional details for initial Clarity setup.
 
-## Integrate Clarity with your Commerce Site
+## Integrate Clarity with your Commerce site
 
 Once you have completed the Clarity setup, follow these steps in Commerce to connect Clarity to your Commerce site:
 
-### Set the Content security policy for Clarity
+### Set the Content Security Policy for Clarity
 
 Open the e-Commerce authoring tool instance for your commerce environment associated to your site. Then follow these steps:
 
@@ -61,7 +62,7 @@ Open the e-Commerce authoring tool instance for your commerce environment associ
 - Repeat these steps for the **connect-src** and **script-src** sections also, adding the "https://www.clarity.ms" lines per section
 - Then click the **Save and Publish** button to commit the changes
 
-### Set up the Correlation Header Excluded Domain in Site Settings
+### Set up the correlation header excluded domain in site builder
 
 In the e-Commerce authoring tool, now set up the **Correlation header excluded domains** item for Clarity.
 
@@ -96,7 +97,8 @@ The **Inline script** module will be needed to include the Clarity script. This 
 
 Now all pages utilizing the Templates updated with the Clarity fragment will have the Clarity code included. You can test that the script is present using the steps outlined in the (Clarity Set-Up: Verification)[https://docs.microsoft.com/en-us/clarity/clarity-setup#verification] section of the Clarity Setup page.
 
-### Page-Specific Addition Option
+### Page-specific addition option
+
 If choosing to add the Clarity script to a specific page only, 
 - Select a page you wish to track with Clarity from the **Pages** section of e-Commerce authoring tool and check-out for Editing
 - Within the page editor, select the main or top-most node in the module tree view
