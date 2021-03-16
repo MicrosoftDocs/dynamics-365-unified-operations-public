@@ -200,7 +200,7 @@ You can edit the system-generated initial threshold value for any customer. When
     - 0-Max
     - Max-0
 
-   ![Threshold designer page](media/TCS-on-Sale-of-Goods-004.PNG)
+   ![Design two threshold slabs on Threshold designer page ](media/TCS-on-Sale-of-Goods-004.PNG)
 
 ## Set up the TCS threshold for sales of goods
 
@@ -276,6 +276,7 @@ When you post a payment of 2,00,150 that is received from the customer, the foll
 > [!NOTE]
 > The first time that the system crosses the threshold amount, you must manually adjust the calculated TCS amount. The amount to adjust should be minor. The variation in the calculation occurs because the current algorithms work differently. This difference will be corrected in the future.
 When an invoice is posted against the last payment transaction, the following entry is posted.
+>
 > | Account               | DR       | CR       |
 > |-----------------------|----------|----------|
 > | Customer   A/C        | 2,00,000 |          |
