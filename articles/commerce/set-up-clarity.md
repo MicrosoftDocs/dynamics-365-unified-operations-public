@@ -4,7 +4,7 @@
 title: Set up Microsoft Clarity in Dynamics 36 Commerce
 description: This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 author: BrianShook
-manager: BrendanSullivanMSFT
+manager: annbe
 ms.date: 03/16/2021
 ms.topic: article
 ms.prod: 
@@ -40,38 +40,34 @@ This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce 
 
 ## Sign up for Clarity
 
-Navigate to the [Clarity](https://clarity.microsoft.com/) website and use the "Get started" option to sign-up for Clarity. 
-
-During the setup process, use the production website url that will be associated to your Commerce site (the live production domain).
-
-See Clarity's [Getting Started](https://docs.microsoft.com/en-us/clarity/getting-started) guide for additional details for initial Clarity setup.
+To sign up for Clarity, go to the [Clarity](https://clarity.microsoft.com/) website and select **Get started**. During the setup process, use the live production domain URL associated with your Commerce site. For additional details on initial Clarity setup, see [Getting started](https://docs.microsoft.com/en-us/clarity/getting-started).
 
 ## Integrate Clarity with your Commerce site
 
-Once you have completed the Clarity setup, follow these steps in Commerce to connect Clarity to your Commerce site:
+Once you have set up Clarity, follow these steps in Commerce to integrate Clarity with your Commerce site.
 
-### Set the Content Security Policy for Clarity
+### Set the Content Security Policy in Commerce site builder
 
-Open the e-Commerce authoring tool instance for your commerce environment associated to your site. Then follow these steps:
+To set the Content Security Policy in Commerce site builder, follow these steps.
 
-- Navigate to your site in the e-Commerce authoring tool
-- Select **Site Settings > Extensions**
-- Click on the **Content security policy** tab
-- In the **child-src** section, click **Add**
-- Enter "https://www.clarity.ms"
-- Repeat these steps for the **connect-src** and **script-src** sections also, adding the "https://www.clarity.ms" lines per section
-- Then click the **Save and Publish** button to commit the changes
+1. Navigate to your Commerce site.
+1. Select **Site Settings \> Extensions**.
+1. Select the **Content security policy** tab.
+1. In the **child-src** directive section, select **Add**.
+1. Enter **``https://www.clarity.ms``**.
+1. Repeat steps 4 and 5 for the **connect-src** and **script-src** directives.
+1. Select **Save and Publish**.
 
 ### Set up the correlation header excluded domain in site builder
 
 In the e-Commerce authoring tool, now set up the **Correlation header excluded domains** item for Clarity.
 
-- Navigate to your site in the e-Commerce authoring tool if not already there from the previous setup steps.
-- Select **Site Settings > Extensions**.
-- Click on teh **Configruation** tab.
-- In the **correlation header excluded domains** section, click **Add**.
-- Enter "*.clarity.ms".
-- Then click the **Save and Publish** button to commit the changes.
+1. Navigate to your Commerce site.
+1. Select **Site Settings > Extensions**.
+1. Select the **Configuration** tab.
+1. In the **Correlation header excluded domains** section, select **Add**.
+1. Enter **\*.clarity.ms**.
+1. Select **Save and Publish**.
 
 ### Embed the Clarity tracking code into your site pages
 
