@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 10.0.14
 
 [!include[banner](../includes/banner.md)]
 
-To ensure a good experience during the implementation and after the go-live of the project it is important to understand the several types of servicing available and how to get the proper support for every scenario. Let&#39;s take a look into how to properly engage into each type of support and learn about some of the tools that will help you to keep the business continuity accounting for all the needs.
+To ensure a good experience during the implementation and after the go-live of the project it is important to understand the several types of servicing available and how to get the proper support for every scenario. The following will provide you with an overview of how to engage each type of support and how some of the tools will help you keep your business continually accounting for all business needs.
 
-Microsoft tools and support ensure the stability and effectiveness of implemented platform by providing infrastructural and applicational support, but the effectiveness of those is dependent on Partner/Client responsibility to correctly develop, test, configure, manage and monitor the implemented system and its environments.
+Microsoft tools and support ensure the stability and effectiveness of an implemented platform by providing infrastructural and applicational support. However, the effectiveness of this support is dependent on Partner/Client responsibility to correctly develop, test, configure, manage and monitor the implemented system and its environments.
 
 :::row:::
    :::column span="":::
@@ -41,112 +41,113 @@ Microsoft tools and support ensure the stability and effectiveness of implemente
    :::column-end:::
 :::row-end:::
 
-The servicing actions provided can be inserted in one three categories: Self-service, Service Request and Support Request; depending on the category of the action they are triggered in different ways and may encompass a lead time.
+Supporting actions can be grouped into three categories:
 
-The servicing actions provided can be inserted in one three categories:
+- Self-service
+- Service Request
+- Support Request
+
+Depending on the category, the actions are triggered in different ways and may encompass different lead times.
+
+The servicing actions are:
 
 ### Self-service
-Can be triggered by the user at any moment with no lead time, the self-service actions include:
+Can be triggered by the user at any moment with no lead time. The reasons to initiate a self-service action include:
 
-- Code promotion (non-production)
-- [Database movement between non-production environments](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)
-- [Production upgrade](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
+- Promote Code (non-production)
+- [Move databases between non-production environments](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)
+- [Upgrade Production](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
 - [Maintenance mode](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode)
 - Pause upcoming automatic deployment of a service update
-- Restarting services on non-production environments
+- Restart services on non-production environments
 - Performance actions
 
-### Service Request
-Usually triggered by a ticket, involve the cooperation of the Dynamics Service Engineering team (DSE) and lead time is required. Some of these actions include:
 
-- FastTrack assessment process for the PRODUCTION environment
-- Code promotion to production
-- Production Point in Time restore prior to go-live
-- Sandbox to Production prior to go-live
+### Service Request
+Usually triggered by a creating a support ticket. It involves the cooperation of the Dynamics Service Engineering team (DSE) and each request will have a designated lead time. Some of the reasons to create a Service Request are:
+
+- Environment deployment request
 
 #### Some of the recommended practices when working with the DSE team:
-- Account for the team SLAs
-- Do not use a service request if a support request suits better your case
-- Consulting the service [request catalog](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that it&#39;s the right type of request you are making
+- Consider that there are turn-around times or Service Level Agreements (SLAs) for each type of service request.
+- Do not use a service request if a support request better suits your case.
+- Consult the service [request catalog](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that you are making the right type of request
+
 
 ### Support Request 
-Other non-Self service scenarios are usually triggered by opening a support request, and generally have a lead time. Included in that category are:
+There are other scenarios that can usually be resolved by opening a support request. These requests have a lead time. Some of the reasons to create a support request are:
 
 - Production point-in-time restore after Go-Live
 - Flag a regression in a Service Update and ask for an exception opt-out
 - Performance related requests (for tasks not possible through self service)
-- Flighting feature activation (e.g. customer and vendor master data sharing)
+- Flighting feature activation (for example customer and vendor master data sharing)
 - Production resizing (Update and upload a new usage profile in the LCS subscription estimator first)
 - Additional LCS project on the same tenant
 - Moving tenant of PRODUCTION environments
 
+
 ## Requesting Support
 
-For an effective support process a clear escalation path has to be defined, project supporting teams (client/partner) should be able to monitor and read environment telemetry as well as being capable of doing an initial troubleshooting.
+For an effective support process, a clear escalation path must be defined. Project teams (Client/Partner) should be able to monitor and read environment telemetry and be capable of conducting initial troubleshooting when necessary.
 
-A well identified problem and well-defined resolution process can make the difference on the effectiveness of the resolution scenario.
+A well identified problem and a well-defined resolution process can make a difference in the effectiveness of the outcome.
 
-An **effective support request** should mention:
+An **effective support request** should include:
+
 
 ### Quality input
 
 #### Quality investigation:
 
 - Environment where the issue occurs
-- The process
-- The reproduction steps
+- The process in which the issue was identified
+- Reproducible steps to show where the issue occurred
 - The expected result / actual result
-- Pre-investigation
+- Pre-investigation of the issue
 - Additional elements (error message, screenshots, session ID, trace, …)
+
 
 #### If high severity:
 
-- Business impact: what&#39;s the impact of your business activities?
-- Financial impact: how does it impact you financially?
+- Business impact: what is the impact of the issue on your business activities?
+- Financial impact: how does this issue impact your business on a financial level?
 
-To effectively identify the reported issue, a pre-analysis of the problem should be done before reporting, providing the most detailed information, with the gathered telemetry using the available tools, the incident resolution will be much quicker, saving precious time on information gathering to identify and replicate the issue.
+A thorough analysis of the problem should be done before reporting the issue. When the request for support includes detailed information, using all available tools and telemetries, the incident resolution will be much quicker. Including the proper information up front will save a great deal of time in back-and-forth communications that often takes place to identify the problem and replicate the issue.
 
-There is a verity of [support plans](https://go.microsoft.com/fwlink/?LinkId=871952&amp;clcid=0x409) to choose from, so that there will always be right one for each business.
+There are a variety of [support plans](https://go.microsoft.com/fwlink/?LinkId=871952&amp;clcid=0x409) to choose from, so that there will always be the right one for each business.
 
 Before requesting support, you should remember that it is important to choose the proper level of severity.
 
-|     Severity level                                       	|     Customer's situation                                                                                                                                           	|     Initial Response Time                                                                   	|
-|----------------------------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------	|
-|     Production Outage     (exclusive to LCS Projects)    	|     Critical business impact     Production   down scenarios (see   this Docs article)     Make sure to   inform the TAM / FastTrack SA via email for awareness    	|     <30   minutes, 24/7                                                                     	|
-|     Critical                                             	|     Critical business impact   Customer's business has significant loss or degradation of services and   requires immediate attention.                             	|     Unified Core/Advanced: < 1 hour, 24/7    Unified Performance: < 30 minutes, 24/7        	|
-|     Severity A                                           	|     Critical business impact   Customer's business has significant loss or degradation of services and   requires immediate attention.                             	|     Subscription: < 1 hour, 24/7    ProDirect: < 1 hour, 24/7    Premier: < 1 hour, 24/7    	|
-|     Severity B                                           	|     Moderate business impact   Customer's business has moderate loss or degradation of services, but work   can reasonably continue in an impaired manner.         	|     Subscription: < 4 hours    ProDirect: < 2 hours    Premier: < 2 hours, 24/7             	|
-|     Standard                                             	|     Standard business impact   Customer's business has moderate loss or degradation of services, but work   can reasonably continue in an impaired manner.         	|     Unified Core: < 8 hours, 24/7    Unified Advanced/Performance: < 4 hours, 24/7          	|
-|     Severity C                                           	|     Minimum business impact   Customer's business is functioning with minor impediments of services.                                                               	|     Subscription: < 8 hours    ProDirect: < 4 hours    Premier: < 4 hours                   	|
+To identify the correct severity level and estimate the initial response time for you request please consult the [support overview](https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request) and [production outage](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) docs.
 
 ## Monitoring elements
 
-LCS has integration with set of tools that can be used to properly monitor LCS projects, those tools include:
+LCS has integrated a set of tools that can be used to properly monitor LCS projects. These tools include:
 
 ### Service Health Dashboard
 
-[Service Health Dashboard](https://portal.office.com/servicestatus) where the health status and incidents can be found for Office365 Services.
+[Service Health Dashboard](http://portal.office.com/servicestatus) where the health status and incidents can be found for Office365 Services.
 
-You can also view the service heath through admin center, go to  **Health**  >  **Service health** , or select the  **Service health**  card on the  **Home dashboard**.
+You can also view the service health through the admin center. Go to  **Health**  \&gt;  **Service health** or select the  **Service health**  card on the  **Home dashboard**.
 
-The All services tab (the default view) shows all services and their current health state. An icon and the Status column indicate the state of each service.
+The **All services** tab (the default view) shows all services and their current health state. An icon and the **Status** column indicate the state of each service.
 
-If you're experiencing an issue with a Microsoft 365 service and you don&#39;t see it listed on the  **Service health**  page, tell us about it by selecting  **Report an issue** , and completing the short form.
+If you are experiencing an issue with a Microsoft 365 service and you do not see it listed on the  **Service health**  page, tell us about it by selecting  **Report an issue** , and completing the short form.
 
-Those reports will help identifying issues, once identified, incidents will be shown on the report.
+These reports will help to identify issues. Once identified, incidents will be shown in the report.
 
-You can signup to receive email communication, ensuring quick alert on identified issues on the tenant and their status change.
+You can sign up to receive email communication, ensuring quick alerts on identified issues on the tenant and their status change.
 
 ### Environment monitoring
 
-Environment monitoring is a set of tolls that help you to monitor and troubleshoot the health of your environments through LCS portal.
+Environment monitoring is a set of tools that help you to monitor and [troubleshoot the health of your environments through LCS portal](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics).
 
 Within a specific environment page of the project, you will find a link that will guide you to this dashboard on the monitoring section.
 
 Some of the tools available are:
 
 #### Overview 
-Common to most of the environment types, provides a filterable way to trace user activity, load and load by activity during a defined period.
+Common to most of the environment types, provides a filterable way to trace user activity, and load by activity during a defined period.
 
 #### Activity
 Tab will enable you to query through raw logs with the help of predefined queries for the most common events and metrics useful to monitor your environment. This tab has the additional functionality of adding your own custom filters and letting you export the logs into a csv file for analysis.
@@ -167,13 +168,13 @@ Some of the pre-defined queries are for:
 - Distinct user sessions
 
 #### Health Metrics
-Dashboard provides a series of line charts, filtered by instance (AOS or Batch AOS) and time frame through winch its possible to observe SQL execution in **AOS** tab and system memory and CPU utilization over time in the tab **System**. Through this toll you can easily identify behavioral changes that may help you to trace in time issues and the impact of changes in the solution.
+This Dashboard provides a series of line charts, filtered by instance (AOS or Batch AOS) and time frame through which it is possible to observe SQL execution in the **AOS** tab and system memory and CPU utilization over time in the **System tab**. Through this tool you can easily identify behavioral changes that may help you to trace in time issues and the impact of changes in the solution.
 
 #### SQL Insights
-Provides advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed analysis, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting).
+SQL Insights provides advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed analysis, see [Performance troubleshooting using tools ￼.](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting).
 
-It is a reliable way to collect performance metrics on demand. Enables customers and partners to execute a predefined set of actions that can be used to mitigate issues in a sandbox or production environment. This feature queries SQL Server directly, so you get query store metrics in near real-time.
+SQL Insights is a reliable way to collect performance metrics on demand and enables customers and partners to execute a predefined set of actions that can be used to mitigate issues in a sandbox or production environment. This feature queries SQL Server directly, so you get query store metrics in near real-time.
 
-Monitoring nature isn&#39;t always of active involvement, it&#39;s important to be aware that Microsoft also uses the provided emails in LCS notification list to directly inform about high importance issues, actions that need to be taken and to give preventive guidance for the implementation.
+While it is important to monitor your environments, it does not mean that you must always be on constant lookout. Microsoft also uses the emails provided to you in the LCS notification list to alert you to important issues and actions that you need to take, as well as to provide preventive guidance for the implementation itself.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
