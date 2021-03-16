@@ -81,8 +81,15 @@ The following table shows the delimiters that can be used in the command line ex
 | -SkipSqlServerCheck | Switch indicating whether to skip SQL Server prerequisite checks. Default is false. |
 | -SkipNetFrameworkCheck | Switch indicating whether to skip .Net framework prerequisite checks. Default is false. |
 
+## General overview
 
-
+The new framework for Self-service installers have a variety of features and improvements.
+<ul>
+  <li>Sealed - The new installer framework completely separates Microsoft distributed base component installers from the extensibility-based customizations.  The customizations shall be installed afterwards, but will be then untethered in regards to updating (Allowing updating only the Microsoft base component or only the customizations or both.</li>
+  <li>GUI-less - There is no longer a user interface, meaning it is completely a command-line driven executable for each component installer.  This is one of several key changes or features used to focus the new installer framework for use with mass deployment.</li>
+  <li>Deeper logging - Enhanced installer logs allow for better validation of installation completion or failure, the steps performed, and any warnings or errors that were generated.</li>
+  <li>Clean-up - The component installers, under the new framework, work harder to maintain installation directory cleanliness by clearing the full contents of the component folder before installing the newer components.  This makes certain there are no leftover files that could cause issues with installation completing successfully.</li>
+</ul>
 
 
 
