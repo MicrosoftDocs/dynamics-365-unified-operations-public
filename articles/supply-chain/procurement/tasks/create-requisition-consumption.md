@@ -3,7 +3,7 @@
  
 title: Create a requisition for consumption
 description: This topic describes the process of creating a requisition. 
-author: RichardLuan
+author: kamaybac
 manager: tfehr 
 ms.date: 07/09/2019
 ms.topic: business-process 
@@ -20,7 +20,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

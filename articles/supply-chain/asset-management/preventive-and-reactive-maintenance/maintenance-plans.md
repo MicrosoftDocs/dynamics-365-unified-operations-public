@@ -3,7 +3,7 @@
 
 title: Maintenance plans
 description: This topic explains maintenance plans in Asset Management.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
 ms.date: 01/20/2021
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 

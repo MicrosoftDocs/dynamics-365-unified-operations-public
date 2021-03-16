@@ -3,7 +3,7 @@
 
 title: Maintenance requests
 description: This topic provides an overview of maintenance requests in Asset Management.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
 ms.date: 07/26/2019
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
 
