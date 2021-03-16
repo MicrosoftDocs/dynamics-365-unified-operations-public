@@ -33,7 +33,6 @@ ms.dyn365.ops.version: 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-
 ## Feature exposure
 
 To use warehouse management to process catch weight products, you must use a license configuration key to turn on the functionality. Go to **System administration \> Setup \> License configuration**. Then, on the **Configuration keys** tab, expand **Trade \> Warehouse and Transportation management**, and select the check box for **Catch weight for warehouse**.
@@ -59,7 +58,7 @@ Because the weight of inventory when it comes into a warehouse can differ from t
 > [!NOTE]
 > Mobile device activity will trigger the transaction adjustments only if the Outbound weight variance method of the item's catch weight item handling policy is **Allow weight variance**.
 
-**Example 1**
+### Example 1
 
 During a **Report as finished** production process, the inbound weight of a license plate that contains eight boxes of a catch weight product is captured as 80.1 kg. The license plate is then stored away in the finished goods area, and during the storage period, some weight is lost into the air.
 
@@ -67,7 +66,7 @@ Later, as part of a sales order picking process, the weight of the same license 
 
 In this case, the system automatically adjusts the difference by posting a transaction for the missing 0.3 kg.
 
-**Example 2**
+### Example 2
 
 In its definition, a product is set up to tolerate a minimum weight of 8 kg and a maximum weight of 12 kg for the **Box** catch weight unit.
 
@@ -203,7 +202,7 @@ Not all workflows support catch weight product processing with warehouse managem
 
 A catch weight tag can be created by using a warehouse app process, it can be manually created in the form **Warehouse management > Inquiries and reports > Catch weight tag** or it can be created by using a data entity process. If a catch weight tag is associated with an inbound source document line, such as purchase order line, the tag will be registered. If the line is used for outbound processing, the tag will be updated as shipped. You can view all the historical catch weight tag registration events via the **Catch weight tag registration** option from the **Catch weight tag** page.
 
-You can use the **Change tag captured weight** option to manually update the weight value for a catch weight tag. Note that the weight for the inventory on-hand will not get adjusted as part of this manual process, but you can easily use the **On-hand discrepancies for catch weight tagged items** page to lookup any  discrepancies between the currently active catch weight tags and the current inventory.
+You can use the **Change tag captured weight** option to manually update the weight value for a catch weight tag. Note that the weight for the inventory on-hand won't get adjusted as part of this manual process, but you can easily use the **On-hand discrepancies for catch weight tagged items** page to look up any discrepancies between the currently active catch weight tags and the current inventory.
 
 Other manual options are to **Register tag** to a source document line and **Register work** against a existing warehouse work.
 
