@@ -5,7 +5,7 @@ title: Set up Microsoft Clarity in Dynamics 36 Commerce
 description: This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 author: BrianShook
 manager: annbe
-ms.date: 03/16/2021
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -69,39 +69,44 @@ In the e-Commerce authoring tool, now set up the **Correlation header excluded d
 1. Enter **\*.clarity.ms**.
 1. Select **Save and Publish**.
 
-### Embed the Clarity tracking code into your site pages
+### Embed Clarity tracking script code into site pages
 
-Now you can embed the Clarity provided tracking code into any Commerce site page you wish to track with Clarity.
+You can embed Clarity tracking script code into any Commerce site page you want to track with Clarity.
 
-- In the Clarity portal, copy the provided **Clarity tracking code** from your Clarity project. Note that for use in the Commerce inline script module, you can remove the surrounding '<script>' tags from the string copied directly from the Clarity portal (The inline script module will add the necessary '<script>' tags when the page or fragment is published and rendered).
+In the Clarity portal, copy the Clarity tracking code for your project. Note that for use in the Commerce inline script module, you can remove the surrounding **\<script\>** tags from the string copied directly from the Clarity portal (The inline script module will add the necessary '<script>' tags when the page or fragment is published and rendered).
 
-The **Inline script** module will be needed to include the Clarity script. This module can be added to a specific page directly or may be required to be added as an allowable option in your page's template- depending on your set up. The following instructions will provide an efficient means to include the Clarity script in Commerce by using the **Inline script** module in its own fragment and including the fragment into your template. This is the most efficient example to include the Clarity script across a range of pages (using the template).
+The Clarity script code will be need to be added to an *Inline script* module. Depending on your configuration, the inline script module can be added directly to a specific page  or may be required to be added as an allowable option in the site page's template. 
 
-- Navigate to your e-Commerce authoring tool instance for your Commerce environment associated to your site.
-- Select the **Fragments** menu and click **New** to add a new fragment.
-- In the **New fragment** dialogue, under the "Select a module" section, search for "Inline" and select the **Inline script** module name presented.
-- In the **Fragment name** input, provide a name for your fragment. Click **OK** to create the fragment.
-- With the new fragment page, select the "Default inline script" module selected, in the property panel under the "script tag", paste the Clarity script into the **Inline script** section. Be sure to remove the surrounding '<script>' tags if included in your copied script string from the Clarity portal.
-- Click **Save** and then **Publish**.
-- Navigate to the **Templates** menu in site builder and choose the template you wish to include with the fragment with Clarity inline script code.
-- Click **Edit** on the chosen template.
-- Select the "HTML Head" section of the template tree, click the '...' and choose **Add fragment**.
-- In the "Select fragment" dialogue, choose your newly created fragment with the Clarity code by name.
-- Click **Ok** Verify you see the fragment under the "HTML Head" section of the template tree.
-- Click **Save** and then **Publish**.
-- Repeat these last 6 steps for any additional templates you wish to add the Clarity code.
+The most efficient way to include Clarity tracking script code to a range of site pages is to embed the script code in a shared template. The following procedure describes how to insert Clarity script code into a fragment containing an inline script module that is then used by a template. 
 
-Now all pages utilizing the Templates updated with the Clarity fragment will have the Clarity code included. You can test that the script is present using the steps outlined in the (Clarity Set-Up: Verification)[https://docs.microsoft.com/en-us/clarity/clarity-setup#verification] section of the Clarity Setup page.
+To embed the Clarity tracking code into site pages in Commerce site builder, follow these steps.
 
-### Page-specific addition option
+1. Go to your site in Commerce site builder.
+1. Select **Fragments**, and then select **New**
+1. In the **New fragment** dialog box, select the **Inline script** module.
+1. For **Fragment name**, enter a name, and then select **OK**.
+1. Select the **Default inline script** module slot, and then in the module property pane, under **Inline script** paste in the Clarity script. Be sure to remove the surrounding **\<script\>** tags if present in your copied script string.
+1. Select **Save**, and then select **Publish**.
+1. Select **Templates**, and then select the template to which you want to add the fragment with the Clarity script code.
+1. Select **Edit**.
+1. Select the **HTML Head** slot, select the ellipsis ("*...*"), and then select **Add fragment**.
+1. In the **Select fragment** dialog box, select the new fragment with the Clarity script code, and then select **OK**. Verify you see the fragment under the **HTML Head** slot.
+1. Select **Save**, and then select **Publish**. All site pages that use the updated template will now have the embedded Clarity script code.
+1. Repeat the previous steps as needed for any additional templates to which you want to add the Clarity script code.
 
-If choosing to add the Clarity script to a specific page only, 
-- Select a page you wish to track with Clarity from the **Pages** section of e-Commerce authoring tool and check-out for Editing
-- Within the page editor, select the main or top-most node in the module tree view
-- In the properties pane to the right-hand side, under **SEO Properties**, drop down the **INLINE SCRIPT** segment
-    - **Note** that the Template for the page will require an **Inline script** module be added to the **HTML Head** section for **INLINE SCRIPT** to be available in a page instance.
-- Expand the **script tag** dropdown and paste the Clarity tracking code into the **Inline script** section. Be sure to remove the surrounding '<script>' tags if included in your copied script string from the Clarity portal.
-- **Save** your changes and **Check-in** your page edit. Then select **Publish** to publish the page.
+For information on how to test that the Clarity script is embedded in site pages, follow the steps in [Clarity Set-Up: Verification](https://docs.microsoft.com/clarity/clarity-setup#verification).
 
-Once the Clarity script is added to your site content, you should begin to see data and captures in your Clarity portal. Log in to Clarity and review results. Some time or traffic may be needed to begin seeing results.
+### Embed Clarity tracking script code into a specific site page
+
+> [!NOTE] 
+> The template for the page will require an inline script module be added to the **HTML Head** section for the Clarity script code to be available in a page instance.
+
+To embed the Clarity tracking code into a specific site page in site builder, follow these steps.
+
+1. Select **Pages**, select the page to which you want to add Clarity script code, and then select **Edit**.
+1. Select the main or top-most slot.
+1. In the properties pane under **SEO Properties**, expand the **script tag** section. Under **Inline script**, paste the Clarity tracking code. Be sure to remove the surrounding **\<script\>** tags if present in your copied script string.
+1. Select **Save**, select **Finish editing**, and then select **Publish**.
+
+Once Clarity script is added to your site pages, you should begin to see data and captures in your Clarity portal. Some time or page views may be needed before you begin seeing results.
 
