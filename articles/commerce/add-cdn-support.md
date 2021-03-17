@@ -87,6 +87,10 @@ The following illustration shows the **Add a backend pool** dialog box in Azure 
 
 ![Add a backend pool dialog box continued](./media/CDN_BackendPool_2.png)
 
+> [!NOTE]
+> Be sure to disable **Health Probes** when setting up your own Azure Front Door service for Commerce.
+
+
 ### Set up rules in Azure Front Door Service
 
 To set up a routing rule in Azure Front Door Service, follow these steps.
@@ -101,6 +105,7 @@ To set up a routing rule in Azure Front Door Service, follow these steps.
 1. In the **Forwarding protocol** field group, select the **Match request** option. 
 1. Set the **URL rewrite** option to **Disabled**.
 1. Set the **Caching** option to **Disabled**.
+
 
 > [!WARNING]
 > If the domain that you will use is already active and live, create a support ticket from the **Support** tile in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) to get assistance for your next steps. For more information, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
