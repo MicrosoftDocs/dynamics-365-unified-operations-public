@@ -5,7 +5,7 @@ title: Online invoicing system
 description: This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: anasyash
 manager: AnnBe
-ms.date: 03/04/2021
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -199,7 +199,7 @@ Version 94.50 of the **RTIR Invoice Data (HU)** format was released to support X
 
 ## Import a package of data entities that includes a predefined EM setup
 
-EM functionality is provided to maintain different electronic reporting processes for different document types. For more information about electronic messages, see [Electronic messaging](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/HU-RTIR/articles/finance/general-ledger/electronic-messaging.md).
+EM functionality is provided to maintain different electronic reporting processes for different document types. For more information about electronic messages, see [Electronic messaging](../general-ledger/electronic-messaging.md).
 
 The process of setting up the EM functionality for RTIR has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
@@ -301,7 +301,7 @@ After the data entities are imported into the database, follow these steps to ma
 
     Alternatively, if you set the **Use advanced certificate store** option to **No**, manually enter the technical user name and password, signature key, and replacement key that you obtained for interoperation with the Hungarian Online invoicing system. For more information, see the [information about the registration procedure](https://onlineszamla-test.nav.gov.hu/tajekoztatas_a_regisztraciorol).
 
-    ![Online invoicing system parameters where Use advance certificate store option is set to yes](media/7_system_parameters.png)
+    ![Online invoicing system parameters where Use advance certificate store option is set to no](media/7_system_parameters.png)
 
 11. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services.
 
