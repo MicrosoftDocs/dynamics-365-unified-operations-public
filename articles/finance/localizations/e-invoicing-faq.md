@@ -5,7 +5,7 @@ title: Electronic invoicing add-in FAQ
 description: This topic provides information about frequently asked questions regarding the Electronic invoicing add-in.
 author: gionoder
 manager: AnnBe
-ms.date: 03/15/2021
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -61,7 +61,7 @@ The current platform doesn't allow the use the on-premises version and there are
 
 ## Does the Electronic invoicing add-in interface with the vendor import automation feature?
 
-No. There are plans for this interface, but there is no planned timeline. When planned, the dates will be announced in the release plans.
+No. There are plans for this interface, but there is no planned timeline. When planned, the dates will be announced in the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/).
 
 ## How does the Electronic invoicing add-in handle file attachments into the electronic invoice? Is a SharePoint server needed when embedding PDF files into the XML file?
 
