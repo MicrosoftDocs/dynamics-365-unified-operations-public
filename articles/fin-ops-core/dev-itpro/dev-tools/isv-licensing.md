@@ -170,8 +170,8 @@ Follow these steps to enable licensing for your solution.
     | --metadatadir                 | Use this parameter to specify the metadata directory. You should use the default packages directory.   |
     | --bindir                      | Use this parameter to specify the binaries directory. You should use the default packages directory.   |
     | --sqlserver                   | Use this parameter to specify the Microsoft SQL Server. For one-box environment, use a period (**.**). |
-    | --sqldatabase                 | Use this parameter to specify the SQL Server database. For one-box environments, pass in **AXDB**.     |
-    | --sqluser                     | Use this parameter to specify the SQL Server user. You should pass in **axdbadminr**.                  |
+    | --sqldatabase                 | Use this parameter to specify the SQL Server database. For one-box environments, use **AXDB**.     |
+    | --sqluser                     | Use this parameter to specify the SQL Server user. You should use **axdbadminr**.                  |
     | --sqlpwd                      | Use this parameter to specify the SQL Server password.                                                 |
     | --licensefilename             | Use this parameter to specify the license file that will be loaded.                                    |
 
