@@ -24,14 +24,18 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: SCM
 ms.author: cabeln
-ms.search.validFrom: 2020-09-23
-ms.dyn365.ops.version: 10.0.15
+ms.search.validFrom: 2021-03-10
+ms.dyn365.ops.version: 10.0.20
 ---
  
 # Cloud and edge scale units for manufacturing and warehouse management workloads
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
+> [!IMPORTANT]
+> The scale unit capability for Supply Chain Management is made available only if you agree to the [legal terms for Finance and Operations](https://go.microsoft.com/fwlink/?LinkID=290927).
+>
+> By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about the data processing with cloud and edge scale units, see the [documentation](cloud-edge-landing-page.md#data-processing-in-the-distributed-hybrid-topology-using-scale-units).
 
 Cloud and edge scale units enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. It's provided by the following add-ins:
 
@@ -40,76 +44,20 @@ Cloud and edge scale units enable distribution of shop floor and warehouse execu
 
 Companies that work with manufacturing and distribution must be able to run key business processes 24/7, without interruption and at scale. Cloud and edge scale units enable companies to run key mission-critical manufacturing and warehouse processes without interruption, even when faced with occasional network connectivity or latency issues.
 
-## Public preview information
-
-The preview provides one environment that functions as a cloud-based hub of your Dynamics 365 Supply Chain Management environment and one environment that functions as a cloud scale unit.
-
-<!-- You will also be able to use Local Business Data (LBD) to configure an on-premises environment as an edge scale unit for the hub you received as part of the preview program.-->
-
-### Preview availability
-
-The preview for cloud and edge scale units becomes available for existing customers of Supply Chain Management in October 2020.
-
-To access the October preview release 10.0.15/Platform update 39 for deployment in your [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) environment, you must be part of the preview early access program (also known as PEAP) for Supply Chain Management. You can join PEAP if you're already a member of the broader [Dynamics Insider Program](https://experience.dynamics.com/insider). Just select the specific program that is named "Finance & Operations: Preview early access program (PEAP)."
-
-> [!IMPORTANT]
-> The scale unit capability for Supply Chain Management is made available only if you agree to the [Cloud + Edge Preview for Finance and Operations terms](https://Aka.ms/SCMCnETerms).
-
-### Data processing for the preview
-
-During the public preview, some management services will only be hosted in the United States. However, when the feature becomes generally available, these management services will be available in all geographies supported by Supply Chain Management. This affects the transfer and storage of administrative information used by the scale unit manager, including:
-
-- Your tenant names and IDs
-- Your LCS project IDs
-- Administrator emails used to sign in
-- Environment IDs for hub and scale units
-- Workload configurations
-- Collected metrics (such as latency and throughput) which are displayed on the map analysis page
-
-Data transferred to and stored in the US data centers will be deleted when your preview environments are shut down.
-
-### Sign up for the preview
-
-To sign up for the cloud and edge preview for Supply Chain Management, your organization must already have a live Supply Chain Management cloud environment.
-
-The scale unit capabilities are currently in public preview. When you sign up, you must use a user account on the specific tenant. You must also be a project owner or an environment admin in LCS for an active Dynamics 365 LCS project in that tenant.
-
-When you sign up for the preview, you will select a tenant and go through the sign-up steps. As soon as Microsoft can allocate preview capacity, we will send you an email that includes the provisioning details and the promotion (promo) codes for two environments (a hub and a scale unit) for the appropriate LCS project. You will then be able to deploy the two environments as tier-2 sandbox environments. Those environments will be valid 60 days from the creation date of the promo codes. You should not use the two environments until the step that is described in the next paragraph is completed.
-
-After you confirm with Microsoft that the two environments have been deployed by using the promo codes, one of the environments will be configured to work as a hub, and the other will be configured to work as a scale unit. You can then configure the scale units and deploy selected warehouse management and manufacturing workloads by using the [Scale Unit Manager portal](https://aka.ms/SCMSUM).
-
-Preview environments will automatically be deleted after 60 days. However, they might be deleted sooner if it appears that they aren't being used. After your preview environments have been deleted, you can sign up and queue up for a new preview deployment.
-
-To sign up for the preview, go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM).
-
-### Limitations that apply during the preview period
-
-> [!IMPORTANT]
-> For the initial phase of the preview program for this feature, Microsoft is supporting only hubs that have cloud scale units, not hubs that have edge scale units. Edge scale units are installed on-premises and are expected to become available during an upcoming phase of the program.
-
-Because cloud and edge scale units are a preview feature, services that are related to them are currently available in limited countries and regions. By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. By enabling cloud and edge scale units, you also agree to the [Cloud + Edge Preview for Finance and Operations terms](https://Aka.ms/SCMCnETerms). To learn more about cloud and edge scale units, see the [documentation](https://aka.ms/scmcne).
-
-Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://aka.ms/privacy).
-
-> [!IMPORTANT]
-> Some business functionality isn't fully supported in the public preview when workloads are used on scale units. For more information about the functional workloads, see the sections later in this topic.
-
 ## Scale units and dedicated workloads
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with scale units":::
 
 Scale units extend your central Supply Chain Management hub environment by adding dedicated processing capacity. Scale units can run in the cloud. Alternatively, they can run on the edge at your local facility premises. Scale units can temporarily be disconnected from the hub environment. When they are connected, scale units receive all the information that is required to run the dedicated processing for assigned workloads.
 
-:::image type="content" source="media/cloud_edge-previewoptions.png" alt-text="Scale unit options in the public preview":::
-
-For the public preview, you can configure a hub environment with selected workloads on a cloud scale unit by using the Scale Unit Manager portal. Preview participants who have access to a Local Business Data (LBD) on-premises environment can also configure the LBD environment as an edge scale unit.
+You can configure your hub environment and  cloud scale units for selected workloads by using the [Scale Unit Manager](https://sum.dynamics.com) portal.
 
 A workload is a defined set of business functionality that can be factored out and delegated to a scale unit. Currently, the preview features two types of workloads:
 
 - Manufacturing execution
 - Warehouse management
 
-You can assign one of each type of workload per scale unit. 
+You can assign multiple workloads per scale unit. (Please refer to [limitations](#limitations-that-apply-during-the-preview-period) in your release)
 
 ### Dedicated manufacturing execution workload capabilities in a scale unit
 
@@ -134,13 +82,39 @@ For warehouse management, cloud and edge scale units deliver the following capab
 
 For more information, see the [warehouse scale unit workload details](cloud-edge-workload-warehousing.md).
 
-## Onboard scale units for your Supply Chain Management environment
+## How to enable the distributed hybrid topology for Supply Chain Management
 
-### Deploy the preview for cloud and edge scale units
+By enabling the hybrid distributed topology you transition your supply chain management environment in the cloud to functions as a hub that may be supported by additional environments configured as scale units in the cloud or on the edge.
 
-The following illustration shows the sign-up and provisioning flow for the public preview for cloud scale units.
+### Onboarding steps
 
-:::image type="content" source="media/cloud_edge-previewsignup.png" alt-text="Preview sign-up steps":::
+ Before you begin with onboarding your sandbox or production environments we recommend exploring scale units in a development setup (one-box aka. Tier1 environments) to validate processes, customizations and solutions. In this phase data and customizations will be applied to the one-box environments. One environment takes the role of the hub and the other the role of a scale unit. This setup provides the best way to identify and solve issues. This can also be done using the latest early access (PEAP) build. 
+
+In order to onboard one of your sandbox or production environment to the new topology you can acquire add-ins for one or more cloud scale units and going forward also for edge scale units. The add-ins will grant corresponding projects and environments slots in [LCS](https://lcs.dynamics.com/) for the purpose of deploying the scale units environments.
+For this stage, the scale unit deployment tools for one-box development environments should be used. It allows you to configure hub and scale units in one or two separate one-box environments. The tool is provided as binary release and in source code on GitHub. Please study the project Wiki with a step by step guide that describes how the tool is used.
+
+You may also participate in the preview program for to experience incremental enhancements to be release in upcoming releases. Find more information on how to [experience the capabilities in preview](cloud-edge-preview-components.md).
+
+
+
+### Data processing in the distributed hybrid topology using scale units
+
+When enabling the your Dynamics 365 environment for the distributed hybrid topology to support cloud and edge scale units, some management services will only be hosted in the United States, similar to LCS. This affects only the transfer and storage of certain administrative and configuration information used by the 'scale unit manager', including:
+
+- Your tenant names and IDs
+- Your LCS project IDs
+- Administrator and project owner emails used to sign in
+- Environment IDs for hub and scale units
+- Workload configurations including names and physical address of legal entities and facilities that allows displaying your topology on a geographic map.
+- Collected metrics (such as latency and throughput) which are displayed on the map analysis page
+
+Data transferred to and stored in the US data centers will be deleted according to the data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://aka.ms/privacy).
+
+### Limitations for the current release
+ 
+
+
+## DELETE -Onboard scale units for your Supply Chain Management environment
 
 ### Select your LCS project tenant and the detailed preview process
 

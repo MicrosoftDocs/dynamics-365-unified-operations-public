@@ -46,12 +46,13 @@ This article lists the functionality that is available in preview.
 For any preview participation we recommend to onboard through two stages.
 
 1. **Stage 1:** In the first stage we recommend exploring scale units in a development setup (one-box aka. Tier1 environments) to validate processes, customizations and solutions. In this phase data and customizations will be applied to the one-box environments. One environment takes the role of the hub and the other the role of a scale unit. This setup provides the best way to identify and solve issues.
-For this stage, the scale unit deployment tools for one-box development environments should be used. It allows you to configure hub and scale units in one or two separate one-box environments. The tool is provided as binary release and in source code on [GitHub](https://github.com/microsoft/SCMScaleUnitDevTools). Please study the project Wiki with a step by step guide that describes how the tool is used.
 
-1. **Stage 2:** The second stage is targeting specifically implementation projects with a customer and follows completion of Step 1. We will provide two new (60 days time limited) sandbox Tier 2 environments in the LCS implementation project. Stage 2 requires sign-up through the [Scale unit manager portal](https://sum.dynamcis.com) by the LCS project owner. potential mitigations from Stage 1 to customizations shall then be applied to the sandbox environments.
+   For this stage, the scale unit deployment tools for one-box development environments should be used. It allows you to configure hub and scale units in one or two separate one-box environments. The tool is provided as binary release and in source code on [GitHub](https://github.com/microsoft/SCMScaleUnitDevTools). Please study the project Wiki with a step by step guide that describes how the tool is used.
+
+1. **Stage 2:** The second stage is open to select customers with implementation projects, and it follows completion of Step 1. Microsoft may provide two new (60 days time limited) sandbox Tier 2 environments in the LCS implementation project. Stage 2 requires sign-up through the [Scale unit manager portal](https://sum.dynamcis.com) by the LCS project owner. Potential changes to customizations found in Stage 1 shall then be applied to these sandbox Tier 2 environments.
 To succeed with this step we like to setup a meeting with you to understand how we can help you best in the configuration process and help you succeed.
 
-<!-- You will also be able to use Local Business Data (LBD) to configure an on-premises environment as an edge scale unit for the hub you received as part of the preview program.-->
+As part of the preview program you will also be able to configure an [edge scale unit](#preview-for-edge-scale-units) and connect it to your your preview hub. You may do that in an on-premises appliance you may own.
 
 ### Preview availability
 
@@ -79,13 +80,15 @@ Data transferred to and stored in the US data centers will be deleted when your 
 
 ### Sign up for the preview In Stage 2 for cloud hosted environments
 
-To sign up for **Stage 2** in the preview, your organization must already have a live Supply Chain Management cloud environment which includes a LCS implementation project.
+To sign up for **Stage 2** in the preview, your organization must already have a live Supply Chain Management cloud environment which includes a LCS implementation project is running on the service fabric topology. This is required such that environments slots can be allocated for the preview.
 
 To sign up, you must use a user account on the specific tenant. And you must also be a project owner or an environment admin in LCS for an active Dynamics 365 LCS project in that tenant.
 
-When you sign up for the preview, you will select a tenant where above requirements is fulfilled, and go through the sign-up steps. As soon as Microsoft can allocate preview capacity, we will send you an email and invite you to a closer collaboration. We will mandatory engage in a meeting to understand the best way to support you with the preview capabilities.
+Sign up for the preview goes through the same experience that you use to enable the hybrid distributed topology. and When you sign up for the preview, you will select a tenant where above requirements is fulfilled, and go through the sign-up steps. As soon as Microsoft can allocate preview capacity, we will send you an email and invite you to a closer collaboration. We will mandatory engage in a meeting to understand the best way to support you with the preview capabilities.
 
-:::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Sign-up option for a tenant":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Sign-up option for a tenant":::
+
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Agree to terms an privacy statement":::
 
 In the process we may provide you with provisioning details and the promotion (promo) codes for two environments (a hub and a scale unit) for the appropriate LCS project. You will then be able to deploy the two environments as tier-2 sandbox environments. Those environments will be valid 60 days from the creation date of the promo codes. You should not use the two environments until the step that is described in the next paragraph is completed. But we will guide you through all the steps.
 
@@ -93,13 +96,13 @@ After you confirm with Microsoft that the two environments have been deployed by
 
 The preview environments from the promo codes will automatically be deleted after 60 days. However, they might be deleted sooner if it appears that they aren't being used. After your preview environments have been deleted, you can sign up and queue up for a new preview deployment.
 
-To sign up for the preview **Stage 2** , go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM).
+To request participation in **Stage 2** of the preview, go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM).
 
 ## Capabilities lighting up in preview
 
 ### Preview for the manufacturing execution workload
 
-For manufacturing execution, cloud and edge scale units deliver the following capabilities, even when the edge units aren't connected to the cloud:
+For manufacturing execution, scale units deliver the following capabilities in the configured workload:
 
 - Machine operators and shop floor supervisors can access the operational production plan.
 - Machine operators can keep the plan up to date by running discrete and process manufacturing jobs.
