@@ -97,7 +97,7 @@ This can be achieved by configuration. To test invoice submission, you can conne
 
 ## Is there any documentation about the out-of-box country-specific Electronic invoicing add-in features?
 
-Yes. For information about the availability of Electronic invoicing add-in features and the formats they support, see [Availability of electronic invoicing features](e-invoicing-configuration-rcs#availability-of-electronic-invoicing-features.md).
+Yes. For information about the availability of Electronic invoicing add-in features and the formats they support, see [Availability of electronic invoicing features](e-invoicing-configuration-rcs.md#availability-of-electronic-invoicing-features).
 
 > [!NOTE] 
 > If you didn't find the answer you are looking for, email your question to the Product Development Team at <D365EInvoicePreview@microsoft.com>. We will either contact you or improve the coverage of this FAQ.
