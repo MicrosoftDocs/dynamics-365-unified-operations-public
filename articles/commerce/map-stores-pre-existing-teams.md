@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Map stores and corresponding teams if your organization has pre-existing teams in Microsoft Teams
+title: Map stores and teams if there are pre-existing teams in Microsoft Teams
 description: This topic covers how to map stores and corresponding teams in Dynamics 365 Commerce headquarters if your organization has already created teams in Microsoft Teams before Commerce integration.
 author: gvrmohanreddy
 manager: annbe
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.18
 ---
 
 
-# Map stores and corresponding teams if your organization has pre-existing teams in Microsoft Teams
+# Map stores and teams if there are pre-existing teams in Microsoft Teams
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
