@@ -1446,6 +1446,8 @@
             href: localizations/e-invoicing-mex-get-started.md
           - name: Set up the Electronic invoicing add-on
             href: localizations/e-invoicing-setup.md
+        - name: Electronic invoicing add-in FAQ
+          href: localizations/e-invoicing-faq.md
       - name: Australia
         items:
         - name: Australia overview
@@ -3391,11 +3393,11 @@
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
           - name: Prepare application specific metadata
             items: 
-            - name: (ER) Prepare application metadata to be used in RCS
+            - name: Prepare application metadata in ER to be used in RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-            - name: (RCS) Access application metadata by using ER configuration
+            - name: Access application metadata in RCS by using ER configuration
               href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-            - name: (RCS) Access application metadata by using connected applications
+            - name: Access application metadata in RCS by using connected applications
               href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
             - name: Define model mappings and select data sources 
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -3413,7 +3415,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
           - name: Upgrade your format by adopting a new base version of that format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json  
-      - name: Formula designers in Electronic reporting
+      - name: Formula designers in ER
         items:
         - name: Formula designer
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json  
@@ -3685,7 +3687,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
             - name: "Text: Text"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-      - name: Design ER formats to generate outgoing electronic documents in various formats
+      - name: Design ER formats to generate outbound documents in various formats
         items: 
         - name: Design configurations to generate outgoing documents in Excel format
           items:
@@ -3713,7 +3715,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
         - name: Embed images and shapes
           items:
-          - name: (ER) Embed images and shapes in documents that you generate
+          - name: Embed images and shapes in documents that you generate
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
           - name: Example of embedding images and shapes
             items: 
@@ -3727,7 +3729,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
         - name: Suppress BOM characters in generated files
           href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json
-      - name: Update application data using Electronic reporting
+      - name: Update application data using ER
         items:
         - name: Generate electronic documents and update application data
           href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
@@ -3773,8 +3775,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
         - name: Regulatory service (RCS)
           items:
-          - name: Regulatory Configuration Services (RCS) - Globalization features
-            href: localizations/rcs-globalization-feature.md
+          - name: Globalization features in RCS
+            href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
           - name: Download ER configurations to Finance
             items: 
             - name: Download configurations from RCS
@@ -3906,17 +3908,17 @@
           - name: Destination types
             items:
               - name: Archive destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/finance/toc.json
               - name: Email destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/finance/toc.json
               - name: File destination
-                href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/finance/toc.json
               - name: Power BI destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/finance/toc.json
               - name: Printer destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/finance/toc.json
               - name: Screen destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
+                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/finance/toc.json
           - name: Configure destinations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
           - name: Configure action-dependent destinations
@@ -3929,11 +3931,11 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
           - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-          - name: Automate testing with Electronic reporting
+          - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
         - name: Automate business processes by using Electronic reporting configurations
           items: 
-          - name: Configure Electronic reporting to pull data into Power BI
+          - name: Configure ER to pull data into Power BI
             href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
           - name: Generate printable free text invoice (FTI) forms
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
