@@ -5,7 +5,7 @@ title: Propose fixed asset acquisitions
 description: This topic describes how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. 
 author: saraschi2
 manager: AnnBe 
-ms.date: 07/27/2020
+ms.date: 03/17/2021
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -38,14 +38,14 @@ Complete the following steps to create an asset acquisition proposal.
 1. In the navigation pane, go to **Modules > Fixed assets > Journal entries > Fixed assets journal**.
 2. Select **New**.
 3. In the **Name** field, enter or select a value.
-4. In the action pane, select **Lines**.
+4. In the Action Pane, select **Lines**.
 5. Select **Proposals**.
 6. Select **Acquisition proposal**.
-7. Select **Filter**. Select **Reset** to clear out previous values.
+7. Select **Filter**. Select **Reset** to clear previous values.
 8. Select the **Fixed asset number** row.
 9. In the **Criteria** field, enter or select a value. Set the remaining criteria for the fixed assets that you want to acquire with this proposal.  
 10. Select **OK** twice to exit out of the pane.
-- Verify the transaction lines created.  
+- Verify that the transaction lines are created.  
 - Only fixed assets with the acquisition date and acquisition price set on the book will be included in the acquisition proposal.  
 11. On the page, select the **Books** tab.
 12. Select **Post**.
