@@ -54,7 +54,7 @@ To map stores and corresponding teams in Commerce headquarters, follow these ste
     - For **SOURCEID**, enter the store number (for example, "000135" for the San Francisco store). You can find store numbers at **Retail and Commerce \> Channels \> Stores**.
     - For **TEAMID**, enter the corresponding team ID from Microsoft teams (for example, "5f8bc92b-6aa8-451e-85d1-3949c01ddc6c"). You can find team ID information at [admin.teams.microsoft.com](https://admin.teams.microsoft.com).
 1. Save the CSV file to your local machine.
-1. Go to **System Administration \> Workspace \> Data management**, select **Import**.
+1. Go to **System Administration \> Workspace \> Data management**, and then select **Import**.
 1. On the **Selected entities** FastTab, select **Add file**. The **Add file** dialog box appears.
 1. In the **Entity name** drop-down list, select **Teams mapping between source and team**.
 1. In the **Source data format** drop-down list, select **CSV**.
