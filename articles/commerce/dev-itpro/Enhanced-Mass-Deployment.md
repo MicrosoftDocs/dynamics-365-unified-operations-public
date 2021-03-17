@@ -97,9 +97,9 @@ There are three components that have not migrated to the new framework. These ex
 
 Migrating from the legacy Self-service framework component installers to the new framework component installers requires uninstallation of the legacy components.
 <ul>
-  <li>**Modern POS** - The new installer framework caused the application to be given a new application signature ID. This .</li>
-  <li>**Hardware station** - Thedfa a f afnt.</li>
-  <li>**Commerce Scale Unit (CSU, Self-hosted)** - Enhasdfasdfasdfc vsd.</li>
+  <li>**Modern POS** - The new installer framework caused the application to be given a new application signature ID. This requires a full uninstallation of legacy components prior to installation of the new framework Modern POS. Due to the requirement for full uninstallation, device activation will be required again (Still a one time occurrence going forward, presuming uninstallation does not occur again).</li>
+  <li>**Hardware station** - As an IIS website, the new installer framework requires a reworking of how the base folder structure exists.  Due to this, a full uninstallation of legacy components is required prior to installation of the new framework hardware station component.</li>
+  <li>**Commerce Scale Unit (CSU, Self-hosted)** - As a series of IIS websites, the new installer framework requires a reworking of how the base folder structure exists.  Due to this, a full uninstallation of legacy components is required prior to installation of the new framework CSU (Self-hosted) component.</li>
 </ul>
 
 
