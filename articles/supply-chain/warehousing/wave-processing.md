@@ -162,7 +162,7 @@ To release a wave manually, follow these steps:
 
 ## Containerize a wave
 
-<!-- KFM: Give a short intro to what this is and why. Then just link to [Containerization](wave-containerization.md) -->
+Automated containerization creates containers and the picking work for shipments when a wave is processed. For details on how to set it up, see [Containerization](wave-containerization.md).
 
 ## Cancel a wave
 

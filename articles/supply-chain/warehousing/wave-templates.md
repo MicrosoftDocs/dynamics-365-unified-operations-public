@@ -43,7 +43,7 @@ When you set up a wave template, you specify the following:
 - The wave attributes to use for the wave template. Wave attributes are useful for assigning additional criteria, such as a specific customer name, to a wave template. You create these attributes in the **Wave attributes** form.
 
 > [!NOTE]
-> If needed, a developer can create additional methods and add them to the AOS. You can view the full list of methods on the **Wave process methods** page.
+> If needed, a developer can create additional methods. You can view the full list of methods on the **Wave process methods** page. <!-- KFM: To discuss: ---- From Lars-Bo: "We should leave out the "and add them to the AOS". We don't have any doc page on how to do this, but here is an example which we of course cannot copy. But maybe we can add a little more details in this Note: https://blog.bhsolutions.com/whs-wave-configuration-in-d365fo." ---- KFM: I'm not able to judge whether to include this and what to include from that blog post. Maybe we should not go into this right now. Maybe we should consider this a new project and add a content deliverable for it. -->
 
 Some settings represent strategic decisions for wave processing, as follows:
 
@@ -77,11 +77,13 @@ To set up a wave template, follow these steps:
 1. In the **Site** and **Warehouse** fields, select the site and warehouse that the wave template will create waves and picking work for.
 1. If you want to automate wave processing, make the following settings as needed:
 
-    - **Automate wave creation** - Select this check box to automatically create a wave when a sales order, production order, or kanban is released to the warehouse.
-    - **Process wave at release to warehouse** - Select this check box to automatically process the wave and create work when a line is released to the warehouse.
-    - **Process wave automatically at threshold** - Select this check box to automatically process the wave when its values reach the thresholds for weight, shipment, and lines specified in the **Wave thresholds** field group. This check box is available only if *Shipping* is selected in the **Wave template type** field.
-    - **Automate wave release** - Select this check box to automatically release the wave. The picking work is created and made available on mobile devices.
-    - **Automate replenishment work** - Select this check box to create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template, and create a replenishment template of the type *Wave demand*. Set up a replenishment template on the **Replenishment templates** page. This requires that you add the replenish method to the wave template.
+    - **Automate wave creation** - Set this to *Yes* to automatically create a wave when a sales order, production order, or kanban is released to the warehouse.
+    - **Assign to open waves** - Set this to *Yes* to automatically assign shipments to open wave of criteria is met.
+    - **Process wave at release to warehouse** - Set this to *Yes* to automatically process the wave and create work when a line is released to the warehouse.
+    - **Process wave automatically at threshold** - Set this to *Yes* to automatically process the wave when its values reach the thresholds for weight, shipment, and lines specified in the **Wave thresholds** field group. This setting is only active if *Shipping* is selected in the **Wave template type** field.
+    - **Automate wave release** - Set this to *Yes* to automatically release the wave. The picking work is created and made available on mobile devices.
+    - **Automate replenishment work release** - Set this to *Yes* to create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template, and create a replenishment template of the type *Wave demand*. Set up a replenishment template on the **Replenishment templates** page. This requires that you add the replenish method to the wave template.
+    - **Continue wave processing when work creation fails** - When set to *Yes*, the system will use a blank location if it can't reserve inventory at teh location proposed by the location directive (for example, because the inventory is no longer available). When set to *No*, the wave will fail if the system can't reserve the inventory.
 
 1. If you want to assign lines to an open wave when the lines are released, select the **Assign to open waves** check box. Lines are assigned to waves based on the query filter for the wave template.
 1. In the **Default values** field group, select the wave attributes to use as additional criteria for the wave template.

@@ -5,7 +5,7 @@ title: Example of how to configure wave processing
 description: This topic provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically.
 author: ShylaThompson
 manager: tfehr 
-ms.date: 07/01/2019
+ms.date: 03/17/2021
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
