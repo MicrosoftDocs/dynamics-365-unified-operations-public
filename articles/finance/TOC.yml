@@ -2252,6 +2252,16 @@
               href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
             - name: Export services that have zero-rated tax
               href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
+            - name: Credit or debit note against an export order
+              href: localizations/apac-ind-GST-credit-debit-note-against-export-order.md
+            - name: TCS on sale of goods
+              href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+          - name: GSTR reports
+            items:
+            - name: New GSTR Offline Tool for ANX-1 and Purchase Register
+              href: localizations/apac-ind-GST-new-GSTR-offline-tool-ANX1-purchase-register.md
+            - name: New GSTR-1 and GSTR-2 return formats
+              href: localizations/apac-ind-GST-new-GSTR1-GSTR2-return-formats.md
           - name: Stock transaction
             items:
             - name: Stock transfer orders
