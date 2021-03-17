@@ -1446,6 +1446,8 @@
             href: localizations/e-invoicing-mex-get-started.md
           - name: Set up the Electronic invoicing add-on
             href: localizations/e-invoicing-setup.md
+        - name: Electronic invoicing add-in FAQ
+          href: localizations/e-invoicing-faq.md
       - name: Australia
         items:
         - name: Australia overview
