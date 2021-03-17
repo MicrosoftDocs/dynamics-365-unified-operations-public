@@ -55,11 +55,11 @@ Performance benefits of parallel processing fall in two categories:
 To use parallel allocation processing, go to **Warehouse management > Setup > Warehouse management parameters**, open the **Wave processing** tab, and make the following settings:
 
 - **Wave processing batch group** - Select the batch group that the initial processing of the waves should use. The subsequent processing of allocation can be done using different batch groups.
-- **Process waves in batch** - Choose whether the waves are processed in batch. You must set this to *Yes* to use parallel processing.
-- **Create pending allocation log** - <!-- KFM: This is no longer available. Was it removed or renamed? --> Choose whether to automatically save information about a wave in a log file after the wave is processed, including during the parallel processing of pending allocations. You should only enable this option during troubleshooting because it adds an extra overhead.
+- **Process waves in batch** - Set this to *Yes* to use parallel processing.
 - **Wait for lock (ms)** - Enter the time, in milliseconds, that an allocation step will wait for a system resource that is locked by another allocation step. When this time is exceeded, the wave is not processed and an error message is displayed. We recommend that you allow at least a few seconds, since it allows for allocation of one logical unit to finish.
+<!--KFM: I removed mention of settings not strictly needed to enable parallel processing. Agree? Put some back?  -->
 
-More information: [Warehouse parameters for wave processing](wave-warehouse-parameters.md)
+For information about these and other wave processing options on the **Warehouse management parameters** page, see [Warehouse parameters for wave processing](wave-warehouse-parameters.md)
 
 ## Wave process methods
 
@@ -92,7 +92,7 @@ If necessary, you can undo each of the settings made by default when the *Wave p
 
 ### Troubleshoot using the Infolog
 
-Because the batch framework is used, errors that occur during wave processing will be captured as part of the batch jobs Infologs. To read the batch jobs related to a wave:
+Because the batch framework is used, errors that occur during wave processing will be captured as part of the batch jobs Infologs. To read the batch jobs related to a wave: <!-- KFM: Does this require a log to be enabled on Warehouse parameters? -->
 
 1. Go to **Warehouse management \> Outbound waves \> Shipment waves \> All waves**.
 1. Select the wave you want to inspect.

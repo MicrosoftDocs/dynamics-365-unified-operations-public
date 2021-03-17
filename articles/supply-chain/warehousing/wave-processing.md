@@ -44,7 +44,7 @@ For sales orders and kanban orders, inventory must be reserved before the order 
 
 You can specify which of these production order options to use by default using the **Requirement for material reservation** field on the **Production control parameters** page. However, you can change the setting for each specific production order as needed. More information: [Warehouse parameters for wave processing](wave-warehouse-parameters.md)
 
-## Creation and process a wave
+## Create and process a wave
 
 The following diagram shows the flow for how shipping waves are created, processed, and released. The numbers correspond to the sections later in this section.
 
@@ -180,7 +180,7 @@ If needed, you can cancel a wave that has been processed. To cancel a wave, and 
 
 ## Review wave batch job details
 
-<!-- KFM: Add to what's new in 10.0.17, and add preview banner here?  -->
+<!-- KFM: Add to what's new in 10.0.17, and add preview banner here? FM needed?  -->
 
 Use the **Wave batch job details** page to inspect the batch jobs and related tasks associated with any wave. This is especially useful for troubleshooting a wave that has failed. Without this feature, only administrators will typically have access to batch job details. The **Wave batch job details** page can be made available to non-admin users and provides a read-only view of batch jobs and related tasks.
 
@@ -190,13 +190,15 @@ If your system doesn't already include the **Wave batch job details** page, go t
 
 ### Use the Wave batch job details page
 
-The **Wave batch job details** page combines batch jobs and batch job tasks, which lits you investigate all the wave steps without needing to navigate back and forth between a single batch job and the batch tasks list. The page also provides access to the batch log and, provided you have the suitable permissions, provides a link to the **Batch job** page.
+The **Wave batch job details** page combines batch jobs and batch job tasks, which lets you investigate all the wave steps without needing to navigate back and forth between a single batch job and the batch tasks list. The page also provides access to the batch log and, provided you have the suitable permissions, provides a link to the **Batch jobs** page.
 
-To open this page, select a wave on any of several different wave pages and then selecting the appropriate option from the Action Pane.
+To open this page, select a wave on any of several different wave pages and then select the appropriate option from the Action Pane. <!-- KFM: What are the actual button name(s)? Can we name the "several different pages"?  -->
 
-## Load validation and error messages
+## Review load validation and error messages
 
-<!-- KFM: Add to what's new in 10.0.17, and add preview banner here?  -->
-<!-- KFM: I'm not sure this section is clear.  -->
+<!-- KFM: Add to what's new in 10.0.17, and add preview banner here? FM needed? -->
+<!-- KFM: I'm not sure this section is clear. Is this really about wave processing?  -->
 
-The system validates all load lines to make sure no errors occur during wave processing. For each load line that fails validation, the following error is shown: "Found invalid load lines in wave. Please remove the invalid load lines." This helps you to address all the failure in one go without requiring your to rerun to the wave process for each load line failure. <!-- KFM: I don't see how it does this. --> The **Wave processing history log** is still available for viewing all the warnings provided the **Create wave processing history log** option is enabled on the **Warehouse management parameters** page. <!-- KFM: Is this something different? -->
+The system validates all load lines to make sure no errors occur during wave processing. For each load line that fails validation, the following error is shown: "Found invalid load lines in wave. Please remove the invalid load lines." This helps you to address all the failures at once, without requiring your to rerun to the wave process for each load line failure. <!-- KFM: I don't see how it does this. We should add a few more details. -->
+
+You can still use the *Wave processing history log* to view all the warnings, provided the **Create wave processing history log** option is enabled on the **Warehouse management parameters** page.
