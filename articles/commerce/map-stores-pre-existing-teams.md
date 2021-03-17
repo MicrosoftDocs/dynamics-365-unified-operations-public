@@ -4,7 +4,7 @@ title: Map stores and corresponding teams if your organization has pre-existing 
 description: This topic covers how to map stores and corresponding teams in Dynamics 365 Commerce headquarters if your organization has already created teams in Microsoft Teams before Commerce integration.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 03/12/2021
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -43,9 +43,9 @@ To map stores and corresponding teams in Commerce headquarters, follow these ste
 1. Select **Export**. 
 1. Select **New** on the Action Pane.
 1. Under **Group name**, enter "Export Teams mapping."
-1. Under **Selected entities**, select **Add entity**. The **Add entity** dialog box appears.  
-1. For the **Entity name**, enter "Teams mapping between source and team."
-1. For **Target data format**, enter "CSV."
+1. On the **Selected entities** FastTab, select **Add entity**. The **Add entity** dialog box appears.  
+1. In the **Entity name** drop-down list, select **Teams mapping between source and team**.
+1. In the **Target data format** drop-down list, select **CSV**.
 1. Select **Add**, and then select **Close**.
 1. On the top left under the Action Pane, select **Export now**.
 1. Under **Entity processing status**, select **Download file**.
@@ -53,10 +53,16 @@ To map stores and corresponding teams in Commerce headquarters, follow these ste
     - For **SOURCETYPE**, enter "RetailStore." 
     - For **SOURCEID**, enter the store number (for example, "000135" for the San Francisco store). You can find store numbers at **Retail and Commerce \> Channels \> Stores**.
     - For **TEAMID**, enter the corresponding team ID from Microsoft teams (for example, "5f8bc92b-6aa8-451e-85d1-3949c01ddc6c"). You can find team ID information at [admin.teams.microsoft.com](https://admin.teams.microsoft.com).
-1. Select **Import**, add entity "Teams mapping between source and team" and upload the CSV file.
-1. Select **Import now** to establish relationship between store and existing teams.
+1. Save the CSV file to your local machine.
+1. Go to **System Administration \> Workspace \> Data management**, select **Import**.
+1. On the **Selected entities** FastTab, select **Add file**. The **Add file** dialog box appears.
+1. In the **Entity name** drop-down list, select **Teams mapping between source and team**.
+1. In the **Source data format** drop-down list, select **CSV**.
+1. Select **Upload and add**, select the CSV file you saved previously, and then select **Open**..
+1. In the **Add file** dialog box, select **Close**.
+1. On the Action Pane, select **Save** , and then select **Import**.
 
-The following example image shows the **Export teams mapping** group in Commerce with add entity elements and the exported CSV file headers highlighted.
+The following example image shows the **Export teams mapping** group in Commerce with **Add entity** elements and the exported CSV file headers highlighted.
 
 ![Export teams mapping group in Commerce with add entity elements and the exported CSV file headers highlighted](media/d365-commerce-data-mgmt-export-entity.png)
 
