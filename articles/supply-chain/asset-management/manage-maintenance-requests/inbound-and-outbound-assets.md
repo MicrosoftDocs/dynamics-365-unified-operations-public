@@ -3,12 +3,11 @@
 
 title: Inbound and outbound assets
 description: This topic explains how to register inbound and outbound assets in Asset Management.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 

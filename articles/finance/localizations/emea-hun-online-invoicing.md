@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -587,3 +586,4 @@ After you've finished, any posted and printed invoices for the specified custome
 To ensure correct reporting of system data in the Online invoicing system, create one credit note for each invoice. Avoid scenarios where one credit note is created for multiple invoices.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

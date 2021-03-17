@@ -5,10 +5,9 @@ title: Preview of Dynamics 365 Supply Chain Management 10.0.17 (April 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.17. 
 author: kamaybac
 manager: annbe
-ms.date: 01/28/2021
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -24,7 +23,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2021-01-28 
+ms.search.validFrom: 2021-02-01 
 ms.dyn365.ops.version: 10.0.17
 ---
 
@@ -55,9 +54,9 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 ### Inventory and logistics
 
-- [Integration framework for material handling equipment for automated warehouse processes (previously MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)
+- [Integration framework for material handling equipment for automated warehouse processes (previously MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - For more information, see [Material handling equipment interface (MHAX)](../warehousing/mhax.md).
 
-- [Landed cost](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)
+- [Landed cost](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - For more information, see [Landed cost module](../landed-cost/landed-cost-overview.md).
 
 - [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - For more information, see [Set different dimensions for packing and storage](../warehousing/packing-vs-storage-dimensions.md).
 

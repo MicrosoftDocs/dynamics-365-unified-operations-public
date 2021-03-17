@@ -9,7 +9,6 @@ manager: Ann Beebe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

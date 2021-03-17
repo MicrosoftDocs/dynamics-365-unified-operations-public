@@ -3,17 +3,16 @@
 
 title: Maintenance plans
 description: This topic explains maintenance plans in Asset Management.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: EntAssetMaintenancePlan 
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -23,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -200,8 +199,7 @@ The following illustration shows an example of maintenance plans set up on an as
 
 ## Counter-based maintenance enhancements
 
-> [!IMPORTANT]
-> The functionality that is described in this section is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 The *Counter-based maintenance enhancements* feature introduces the following functionality:
 

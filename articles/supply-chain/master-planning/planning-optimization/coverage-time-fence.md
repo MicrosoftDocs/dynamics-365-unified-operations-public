@@ -8,12 +8,11 @@ manager: tfehr
 ms.date: 01/18/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: ReqGroup, ReqItemTable, ReqPlanSched
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

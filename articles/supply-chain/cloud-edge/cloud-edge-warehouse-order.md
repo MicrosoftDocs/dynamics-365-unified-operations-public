@@ -8,7 +8,6 @@ manager: tfeyr
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,6 +53,8 @@ To create a warehouse order, follow these steps.
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. On the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.
 1. To view the related warehouse order lines, open the relevant purchase order, select a line in the **Purchase order lines** section, and then, on the toolbar, select **Warehouse \> Warehouse order lines**. To view all the lines, go to **Warehouse management \> Inquiries and reports \> Warehouse order lines**.
+
+You can also trigger the *Release to warehouse* process from a batch job by going to **Warehouse management > Release to warehouse > Automatic release of purchase orders**. When setting up the batch job, you can select specific purchase order lines based on a query. A typical scenario would be to set up a recurrent batch job that releases all the confirmed purchase order lines expected to arrive the next day.
 
 ## Cancel a warehouse order
 

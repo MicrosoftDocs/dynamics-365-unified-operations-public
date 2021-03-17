@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -39,6 +38,8 @@ This topic includes information and links to documentation resources for Egypt.
 - [Configure registration numbers](emea-egy-reg-numbers.md)
 - [Configure invoice layout for Egypt](emea-egy-invoice-layout.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
+- [VAT declaration for Egypt](emea-egy-vat-declaration.md)
+- [Withholding tax declarations for Egypt](emea-egy-wht-declaration.md)
 
 ## Additional resources
 

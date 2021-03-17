@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -43,7 +42,6 @@ The following table lists the Electronic invoicing features and the business doc
 | Belgian electronic invoice (BE)      | <p>Sales invoice</p><p>Project invoice</p> |
 | Brazilian NF-e (BR)                  | <p>Fiscal document model 55</p><p>Correction letter</p> |
 | Brazilian NFS-e ABRASF Curitiba (BR) | Service Fiscal document |
-| Brazilian NFS-e São Paulo (BR)       | Service Fiscal document |
 | Danish electronic invoice (DK)       | <p>Sales invoice</p><p>Project invoice</p> |
 | Egyptian electronic invoice (EG)     | <p>Sales invoice</p><p>Project invoice</p> |
 | Estonian electronic invoice (EE)     | <p>Sales invoice</p><p>Project invoice</p> |
@@ -107,7 +105,6 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Belgian electronic invoice (BE)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | Brazilian NF-e (BR)                  | <p>Fiscal document</p><p>Correction letter</p> | Fiscal document |
     | Brazilian NFS-e ABRASF Curitiba (BR) | Service Fiscal document | Fiscal document |
-    | Brazilian NFS-e São Paulo (BR)       | Service Fiscal document | Fiscal document |
     | Danish electronic invoice (DK)       | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | Egyptian electronic invoice (EG)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | Estonian electronic invoice (EE)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
@@ -129,7 +126,6 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Belgian electronic invoice (BE)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | Brazilian NF-e (BR)                  | <p>Fiscal document</p><p>Correction letter</p> | <p>Customer invoice context model – Fiscal document context</p><p>Customer invoice context model – FD correction letter context</p> |
     | Brazilian NFS-e ABRASF Curitiba (BR) | Service Fiscal document| Customer invoice context model – Fiscal document context |
-    | Brazilian NFS-e São Paulo (BR)       | Service Fiscal document| Customer invoice context model – Fiscal document context |
     | Danish electronic invoice (DK)       | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | Egyptian electronic invoice (EG)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | Estonian electronic invoice (EE)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
@@ -151,7 +147,6 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Belgian electronic invoice (BE)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | Brazilian NF-e (BR)                  | <p>Fiscal document</p><p>Correction letter</p> | <p>Fiscal document mapping – Fiscal document mapping</p><p>Fiscal document mapping – correction letter mapping</p> |
     | Brazilian NFS-e ABRASF Curitiba (BR) | Service Fiscal document | Fiscal document mapping – Fiscal document mapping |
-    | Brazilian NFS-e São Paulo (BR)       | Service Fiscal document | Fiscal document mapping – Fiscal document mapping |
     | Danish electronic invoice (DK)       | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | Egyptian electronic invoice (EG)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | Estonian electronic invoice (EE)     | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |

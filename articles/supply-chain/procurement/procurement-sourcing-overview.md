@@ -3,12 +3,11 @@
 
 title: Procurement and sourcing overview
 description: This article gives an overview of the functionality that's available in the Procurement and sourcing module.
-author: RichardLuan
+author: kamaybac
 manager: tfehr
 ms.date: 05/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom: 58021
 ms.assetid: eea24e23-a803-4de0-a218-6485757cde1b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

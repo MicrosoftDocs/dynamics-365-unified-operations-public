@@ -8,7 +8,6 @@ manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -88,7 +87,14 @@ The hub owns the following data:
 > [!NOTE]
 > The inbound purchase order flow is conceptually different from the outbound flow. You can operate the same warehouse on either the scale unit or the hub depending on whether the purchase order has been released to warehouse or not. Once you have released an order to the warehouse, you can only work with that order while signed in on the scale unit.
 
-If you're using the *release to warehouse* process, [*warehouse orders*](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
+If you're using the *Release to warehouse* process, [*warehouse orders*](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
+
+You must sign in on the hub to use the *Release to warehouse* process. Go to one of the following pages to run or schedule it:
+
+- **Procurement and sourcing > Purchase orders > All purchase orders > Warehouse > Actions > Release to warehouse**
+- **Warehouse management > Release to warehouse > Automatic release of purchase orders**
+
+When using **Automatic release of purchase orders**, you can select specific purchase order lines based on a query. A typical scenario would be to set up a recurrent batch job that releases all the confirmed purchase order lines expected to arrive the next day.
 
 The worker can run the receiving process by using a warehouse app that is connected to the scale unit. The data is then recorded by the scale unit and reported against the inbound warehouse order. The creation and processing of the subsequent putaway will also be handled by the scale unit.
 
@@ -225,7 +231,7 @@ The following table shows which inbound features are supported, and where they a
 | Transfer order line receiving and put away                        | Yes | No |
 | Cancel work (inbound)                                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but only when the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) is cleared</p> |
 | Purchase order product receipt processing                          | Yes | No |
-| Purchase order receiving with underdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No, because you can only cancel the full warehouse order line quantities |
+| Purchase order receiving with underdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes, but only by making a cancellation request from the hub |
 | Purchase order receiving with overdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes  |
 | Receiving with creation of *Cross docking*  work                   | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of *Quality order* work                  | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |

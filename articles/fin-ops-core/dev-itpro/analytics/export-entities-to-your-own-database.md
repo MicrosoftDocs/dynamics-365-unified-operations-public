@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -192,7 +191,7 @@ Because BYOD is your own database, you must ensure that there are no active lock
 
 #### You can't export composite entities into your own database
 
-Currently, composite entities aren't supported. You must export individual entities that make up the composite entity. However, you can export both the entities in the same data project.
+Currently, composite entities aren't supported. You must export individual entities that make up the composite entity which can be done in the same data project.
 
 #### Entities that don't have unique keys can't be exported by using incremental push
 

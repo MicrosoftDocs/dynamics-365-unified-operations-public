@@ -5,10 +5,9 @@ title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 01/26/2021
+ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -675,6 +674,23 @@ Before you can generate a SAF VAT invoices file, you must complete the following
 5. Configure Application-specific parameters for the format of the report.
 
 Steps one to four of the setup resembles the additional setup that you completed for the **SAF VAT sales and purchase register** excepting **Configure the ER model, and format for the report.**
+
+### Enable the (Poland) SAF VAT invoices (JPK_FA) report improvement feature
+Starting with version **128.60.76** of the **VAT Invoices (PL)** ER, the improved ER configurations for the JPK_FA report must be enabled. Complete the following steps to enable the configurations.
+
+1. Go to **Workspaces** > **Feature management** and enable the feature, **(Poland) SAF VAT invoices (JPK_FA) report improvement**. 
+	> [!NOTE]
+	> When you turn on or turn off the **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature, the ER format setup in the **SAF VAT invoices** field on the **General Ledger parameters** page will be cleaned up. Make sure you fill in the **SAF VAT invoices** field in **General Ledger parameters** before you run the **SAF VAT invoices** report. When you enable the **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature, import and use version 128.60.76 of the **VAT Invoices (PL)** ER format.
+	
+2. Import the following into your Electronic reporting workspace:
+	- **VAT Invoices (PL)** ER format: Version **128.60.76** or higher 
+	- **Standard Audit File model mapping**: Version **128.255** or higher
+	
+3. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
+4. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT invoices** field, select the ER format, **VAT Invoices (PL)**. 
+	
+When the **(Poland) SAF VAT invoices (JPK_FA) report improvement** feature is enabled, you will see the **VAT Invoices (PL)** ER format in the list only if you previously imported version 128.60.76 or higher from the Global repository.
+
 
 ### Configure the ER model and format for the report
 

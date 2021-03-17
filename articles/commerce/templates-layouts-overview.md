@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
