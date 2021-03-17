@@ -37,7 +37,7 @@ Automatic firming lets you firm (that is, release) planned orders as part of the
 > [!NOTE]
 > Auto-firming of a planned purchase order can occur only if the item is associated with a vendor.
 > 
-> And when firming derived orders (subcontract purchase orders) they end up in 'In-review' state when case change tracking is enabled.
+> Firmed derived orders (subcontract purchase orders) will show a status of *In-review* when case change tracking is enabled.
 
 ## Turn on autofirming
 
