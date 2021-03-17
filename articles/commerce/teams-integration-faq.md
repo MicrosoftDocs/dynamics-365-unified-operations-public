@@ -4,7 +4,7 @@ title: Dynamics 365 Commerce and Microsoft Teams integration FAQ
 description: This topic provides answers to frequently asked questions regarding Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 03/12/2021
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -25,7 +25,7 @@ ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Microsoft Dynamics 365 Commerce and Microsoft Teams integration FAQ
+# Dynamics 365 Commerce and Microsoft Teams integration FAQ
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
@@ -49,7 +49,7 @@ To assign the retail task manager role to an employee in Commerce headquarters, 
 
 ### How do I make a specific organization hierarchy available to upload into Microsoft Teams?
 
-In Commerce Headquarters, every organization's hierarchy is associated with one or more purposes. Make sure the hierarchy that you want to provision into Microsoft Teams has the **Retail reporting** purpose associated with it, as shown in the following example image. 
+In Commerce headquarters, every organization's hierarchy is associated with one or more purposes. Make sure the hierarchy that you want to provision into Microsoft Teams has the **Retail reporting** purpose associated with it, as shown in the following example image. 
 
 ![Example of an organization hierarchy purpose in Commerce headquarters](media/d365-commerce-organization-hierarchies-purpose.png)
 
@@ -59,7 +59,7 @@ For information on how to configure the Commerce POS sign-in experience to use A
 
 ### How do I map stores and corresponding teams in Commerce headquarters if my organization has already created teams in Microsoft Teams?
 
-See [Map stores and corresponding teams if your organization has pre-existing teams in Microsoft Teams](map-stores-pre-existing-teams.md).
+For information on how to map stores and teams if there are pre-existing teams, see [Map stores and corresponding teams if your organization has pre-existing teams in Microsoft Teams](map-stores-pre-existing-teams.md).
 
 ### How do you clear the Microsoft Graph API token stored in the session storage?
 
@@ -68,11 +68,11 @@ A user who has signed in to the point of sale (POS) with an Azure Active Directo
 > [!TIP]
 > A recommended best practice is to always have store workers lock the POS terminal or sign out from a session when not using the terminal. 
 
-#### What happens if a store doesn't have store managers?
+### What happens if a store doesn't have store managers?
 
 If a store doesn't have managers, a team group will not created for the store or in Teams. 
 
-#### What happens if store managers leave the company?
+### What happens if store managers leave the company?
 
 Anyone with the owner role can add a new store manager in Commerce headquarters and reprovision Teams so that the new manager will have the necessary privileges in Teams for the group. 
 
