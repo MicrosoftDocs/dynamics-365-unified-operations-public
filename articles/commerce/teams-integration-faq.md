@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic provides answers to frequently asked questions regarding Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 
-### Who in the store becomes a owner of a team while provisioning Teams from Commerce? 
+### Who in the store becomes an owner of a team while provisioning Teams from Commerce? 
 
 All store managers are automatically added as owners to the corresponding team group so that they can perform operations such as adding a private channel and adding or deleting members. 
 
@@ -55,13 +55,13 @@ In Commerce headquarters, every organization's hierarchy is associated with one 
 
 ### How do I enable retail store workers to sign in to Commerce point of sale (POS) using Azure Active Directory (Azure AD)?
 
-For information on how to configure the Commerce POS sign-in experience to use Azure AD authentication, see [Enable Azure Active Directory authentication for POS sign-in](aad-pos-logon.md).
+For information about how to configure the Commerce POS sign-in experience to use Azure AD authentication, see [Enable Azure Active Directory authentication for POS sign-in](aad-pos-logon.md).
 
 ### How do I map stores and corresponding teams in Commerce headquarters if my organization has already created teams in Microsoft Teams?
 
 For information on how to map stores and teams if there are pre-existing teams, see [Map stores and corresponding teams if your organization has pre-existing teams in Microsoft Teams](map-stores-pre-existing-teams.md).
 
-### How do you clear the Microsoft Graph API token stored in the session storage?
+### How do I clear the Microsoft Graph API token stored in the session storage?
 
 A user who has signed in to the point of sale (POS) with an Azure Active Directory (Azure AD) account should sign out from the POS or close the application to clear the session storage. 
 
@@ -70,9 +70,9 @@ A user who has signed in to the point of sale (POS) with an Azure Active Directo
 
 ### What happens if a store doesn't have store managers?
 
-If a store doesn't have managers, a team group will not created for the store or in Teams. 
+If a store doesn't have managers, a team group will not be created for the store or in Teams. 
 
-### What happens if store managers leave the company?
+### What happens if a store manager leaves the company?
 
 Anyone with the owner role can add a new store manager in Commerce headquarters and reprovision Teams so that the new manager will have the necessary privileges in Teams for the group. 
 
