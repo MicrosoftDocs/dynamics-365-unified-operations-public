@@ -65,8 +65,8 @@ The following table summarizes how the various settings of the **Payment type** 
 | Tax invoice customer deductions | Free text invoice | Customer rebate | Customer account |
 | Trade spending | Daily journal | Customer rebate | Customer account |
 | Reporting | Daily journal | Customer rebate | Customer account |
-| Reporting | Daily journal | Vendor invoice journal | Customer royalty | Vendor account |
-| Reporting | Daily journal | Vendor rebate | Vendor account |
+| Reporting | Vendor invoice journal | Customer royalty | Vendor account |
+| Reporting | Vendor invoice journal | Vendor rebate | Vendor account |
 
 > [!NOTE]
 > Consider the following points when you set up [Rebate management deals](rebate-management-deals.md):
