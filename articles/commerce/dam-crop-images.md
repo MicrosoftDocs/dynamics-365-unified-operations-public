@@ -34,8 +34,6 @@ ms.dyn365.ops.version:
 
 This topic describes how to crop images in Microsoft Dynamics 365 Commerce site builder.
 
-## Overview
-
 The Commerce site builder Media Library allows you to crop images to optimize them for different module types and viewports.
 
 ## Crop an image
