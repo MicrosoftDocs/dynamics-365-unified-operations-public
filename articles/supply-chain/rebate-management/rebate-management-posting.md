@@ -72,7 +72,7 @@ The following table summarizes how the various settings of the **Payment type** 
 > Consider the following points when you set up [Rebate management deals](rebate-management-deals.md):
 >
 > - For deals where the **Reconcile by** field is set to *Deal*, you can't use the dynamic deal account during posting. You must use a specified customer or vendor account.
-> - For deals where the **Reconcile by** field is set to *Line*, you can use a posting profile offsetting to a dynamic deal account on the deal line, because the customer is set per deal line.
+> - For deals where the **Reconcile by** field is set to *Line*, you can use a posting profile that offsets to a dynamic deal account on the deal line, because the customer is set per deal line.
 
 ## Posting FastTab
 
@@ -81,7 +81,7 @@ The following table describes the fields that are available on the **Posting** F
 | Field | Description |
 |---|---|
 | Credit type | Select whether to credit a ledger account, or a customer or vendor. |
-| Credit account | The account that credit amounts are posted to when rebates provisions are made. This account will also be used as the debit account when the rebate is posted to credit the customer. |
+| Credit account | The account that credit amounts are posted to when rebate provisions are made. This account will also be used as the debit account when the rebate is posted to credit the customer. |
 | Name of journal<br>(In the **Provision** section) | Select the name of the journal to use to record the posted provision. |
 | Type | Select whether to post the rebate to a ledger account, or to a customer or vendor. If the **Payment type** field on the header is set to *Tax invoice customer deductions*, this field is set to *Customer/Vendor*. |
 | Use account source | <p>Select one of the following values:</p><ul><li>*None* – If you select this value, you must specify an account in the **Rebate account** field.</li><li>*Deal Account* – Use the customer or vendor account that is specified on the rebate line. You can select this value only for deals where the **Reconcile by** field is set to *Line* and deal lines where the **Account code** field is set to *Table*. It doesn't apply to customer royalty posting profiles.</li></ul> |

@@ -31,27 +31,27 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-You can group Rebate management deals into *reduction principles* to reduce other provisions that are associated with an item, and/or to reduce the resulting values of rebate calculations. After the rebate principles are set up, you can optionally assign them, as required, to the lines of your Rebate management deals.
+You can group Rebate management deals into *reduction principles* to reduce other provisions that are associated with an item, and/or to reduce the resulting values of rebate calculations. After the rebate reduction principles are set up, you can optionally assign them, as required, to the lines of your Rebate management deals.
 
-The rebate principle rules apply only when rebate deals overlap. Therefore, they might grant multiple rebates in situations where multiple rebates aren't owed.
+The rebate reduction principle rules apply only when rebate deals overlap. Therefore, they might grant multiple rebates in situations where multiple rebates aren't owed.
 
-## Manage rebate principles
+## Manage rebate reduction principles
 
-To work with rebate principles, go to **Rebate management \> Setup \> Rebate principles**. Then use the buttons on the Action Pane to add and remove principles as required. For each principle, set the fields as described in the following table.
+To work with rebate reduction principles, go to **Rebate management \> Setup \> Rebate reduction principles**. Then use the buttons on the Action Pane to add and remove reduction principles as required. For each principle, set the fields as described in the following table.
 
 | Field | Description |
 |---|---|
-| Rebate principle | Enter a unique name for the rebate principle. |
-| Description | Enter a description of the rebate principle. |
-| Apply reduction | Select this check box to apply a reduction basis to rebates that belong to this rebate principle. |
+| Rebate reduction principle | Enter a unique name for the rebate reduction principle. |
+| Description | Enter a description of the rebate reduction principle. |
+| Apply reduction | Select this check box to apply a reduction basis to rebates that belong to this rebate reduction principle. |
 | Reduction basis | If you selected the **Apply reduction** check box, select the reduction basis (*Provision*, *Rebates*, or *Both*). If you select *Both*, and if both a provision and a rebate have been posted for a previous deal, only the rebate will be applied. |
-| Exclude from reduction | If this check box is selected, provisions and rebates that belong to this rebate principle will be excluded from subsequent reductions. The setting of the **Reduction basis** field doesn't apply to this setting. |
+| Exclude from reduction | If this check box is selected, provisions and rebates that belong to this rebate reduction principle will be excluded from subsequent reductions. The setting of the **Reduction basis** field doesn't apply to this setting. |
 
 ## Examples of rebate reduction principle setups
 
-The following table shows some typical examples of rebate principle setups. For each of these rebate principles, the value of the **Description** field describes the purpose of the rebate principle.
+The following table shows some typical examples of rebate reduction principle setups. For each of these rebate reduction principles, the value of the **Description** field describes the purpose of the rebate reduction principle.
 
-| Rebate principle | Description | Apply reduction | Reduction basis | Exclude from reduction |
+| rebate reduction principle | Description | Apply reduction | Reduction basis | Exclude from reduction |
 |---|---|---|---|---|
 | Deferred | Reduce rebate | Yes | Both | No |
 | Exclreb | Exclude rebate | Yes | Rebate | Yes |
@@ -80,7 +80,7 @@ For example, the following table summarizes the result if you use the order *1, 
 | 3 | <p>The classification checks other deals for reductions. The check is done for both provisions and rebates.</p><ul><li>**Apply reduction:** *Yes*</li><li>**Reduction basis:** *Both*</li><li>**Exclude from reduction:** *No*</li></ul> | ($1,000 – Deal 1) × 20% = $180 |
 | 4 | <p>The classification checks other deals for reductions. The check is done for both provisions and rebates.</p><ul><li>**Apply reduction:** *Yes*</li><li>**Reduction basis:** *Both*</li><li>**Exclude from reduction:** *No*</li></ul> | ($1,000 – Deal 1 – Deal 3) × 25% = $180 |
 
-The following table shows some examples where the provision is processed in different orders, and where different totals are therefore achieved. The variance in the provisions depends on the order that the system processes the deals in. It's important that you understand how the order of processing affects the deduction amount.
+The following table shows some examples where the provision is processed in different orders, and where different totals are therefore achieved. The variance in the provisions depends on the order that the system processes the deals in. It's important that you understand how the order of processing affects the final rebate amount.
 
 | Sequence | Calculation |
 |---|---|

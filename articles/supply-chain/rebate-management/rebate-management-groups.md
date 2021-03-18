@@ -37,7 +37,7 @@ Rebate and deduction calculations can be driven by groups. Rebate management gro
 
 The calculation for a group of customers is often created for a chain of companies, such as a supermarket chain or a franchise company. This type of calculation is usually related to a rebate.
 
-A deduction is often calculated without considering who it was sold to. However, there are exceptions. For example, a licensee might create a deduction scheme where customer group A will receive 4 percent, but customer group B will receive only 3 percent.
+A deduction is often calculated without considering who the qualifying order was sold to. However, there are exceptions. For example, a licensee might create a deduction scheme where customer group A will receive 4 percent, but customer group B will receive only 3 percent.
 
 ### Set up customer groups
 
