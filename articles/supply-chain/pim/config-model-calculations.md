@@ -21,91 +21,87 @@ This topic describes how to create calculations, which enable product designers 
 
 ## Prerequisites
 
-The following table shows the prerequisites that must be in place before you start.
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Category</p></th>
-<th><p>Prerequisite</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Related setup tasks</p></td>
-<td><p>Calculations can be used in a product configuration model to calculate the configuration values for a product. For an overview of the setup process for configuration models and the related tasks, see <a href="setting-up-and-maintaining-product-configuration-models.md">Setting up and maintaining product configuration models</a>.</p></td>
-</tr>
-</tbody>
-</table>
-
+Calculations are used in a product configuration model to calculate the configuration values for a product. Before you can start to set up calculations, the related product configuration model must exist.  For an overview of the setup process for configuration models and the related tasks, see [Set up a product configuration model](set-up-maintain-product-configuration-model.md).
 
 ## Create a calculation
 
-You create a calculation for a product configuration model. A calculation consists of an expression and a target attribute. For more information, see [Calculations for product configuration models](calculations-for-product-configuration-models.md).
+You create a calculation for a product configuration model. A calculation consists of an expression and a target attribute. For more information, see [Calculations for product configuration models FAQ](calculate-product-configuration-models.md).
 
 To create a calculation, follow these steps:
 
-1.  Click **Product information management** \> **Common** \> **Product configuration models**.
+1. Go to **Product information management \> Common \> Product configuration models**.
 
-2.  Select a product configuration model, and then click **Edit**.
+1. Select a product configuration model, and then select **Edit**.
 
-3.  In the **Constraint-based product configuration model details** form, on the **Calculations** FastTab, click **Add** to add a new calculation.
+1. In the **Constraint-based product configuration model details** form, on the **Calculations** FastTab, select **Add** to add a new calculation.
 
-4.  In the **Target attribute** field, select one of the attributes that are included in the product configuration model.
+1. In the **Target attribute** field, select one of the attributes that are included in the product configuration model.
 
-5.  In the **Expression** field, click the drop-down arrow or press Alt, Down Arrow.
+1. In the **Expression** field, select the drop-down arrow or press Alt + Down Arrow.
 
-6.  In the **Expression constraint editor** form, on the **All symbols** tab, double-click a symbol or press Enter to enter the symbol in the **Expression** field.
+1. In the **Expression constraint editor** form, on the **All symbols** tab, double-click a symbol or press Enter to enter the symbol in the **Expression** field.
 
-7.  Use the same method to add attributes, operators, and values to the expression. For more information about how to use attributes, operators, and values, see [Expression constraints and table constraints](expression-constraints-and-table-constraints.md).
+1. Use the same method to add attributes, operators, and values to the expression. For more information about how to use attributes, operators, and values, see [Expression constraints and table constraints in product configuration models](expression-constraints-table-constraints-product-configuration-models.md).
 
-## Example of a calculation
+## Calculation examples
 
-In the following example, the target attribute is of the Boolean type, and the calculation uses an If expression:
+### Example 1
 
-If\[(decimalAttribute1 / decimalAttribute2) \< 1, True, False\]
+The target attribute is of the Boolean type, and the calculation uses the following conditional expression:
 
-This expression returns a value of “True” to the target attribute if decimalAttribute2 is greater than or equal to decimalAttribute1. Otherwise, the expression returns a value of “False.”
+`If[(decimalAttribute1 / decimalAttribute2) < 1, True, False]`
+
+This expression returns a value of *True* to the target attribute if `decimalAttribute2` is greater than or equal to `decimalAttribute1`. Otherwise, the expression returns a value of *False*.
+
+### Example 2
+
+This example uses the target attribute `textFixedList`, which is of type *Text* and contains the following fixed list:
+
+| Value | Solver value |
+|---|---|
+| AA | 1aa |
+| BB | 2bb |
+
+The following screenshot shows how this could look in your system.
+
+![Attribute type settings for example 2](media/model-calculations-example2.png "Attribute type settings, example 2")
+
+A calculation that uses a conditional statement could look like this:
+
+`If[integerAttribute < 150, 0, 2]`
+
+The expression returns the text value of the first record on the fixed list, which is "A", if the `integerAttribute` is less than 150. Otherwise, it returns the text value of the third record on the fixed list, which is "C".
+
+Note that the fixed list is equivalent to a zero-based enum, and its values are accessed by the right integer value. That's why the first fixed list value ("A") is matched to 0, the second value ("B") is matched to 1 and the third value ("C") to 2.
+
+### Example 3
+
+This example uses the target attribute `textFixedList` from the previous example, and another text attribute `textAttribute`, which contains the following fixed list:
+
+| Value | Solver value |
+|---|---|
+| A | 1a |
+| B | 2b |
+| C | 2c |
+
+The following screenshot shows how this could look in your system.
+
+![Attribute type settings for example 3](media/model-calculations-example3.png "Attribute type settings, example 3")
+
+A calculation that uses a conditional statement could look like this:
+
+`If[textAttribute == "1aa", 0, 2]`
+
+This expression returns the text value of the first record on the `textFixedList` fixed list, which is "A" if the `textAttribute` value has a solver value that equals "1aa". Otherwise, it returns the text value of the third record on the `textFixedList` fixed list, which is "C".
+
+Note that in these scenarios, the solver value of the attribute must be used in the conditional statement.
+
+Note that non-fixed list text attributes can't be used in calculations.
 
 ## Related tasks
 
-[Create an expression constraint for a product component](create-an-expression-constraint-for-a-product-component.md)
-
-## Technical information for system administrators
-
-If you don't have access to the pages that are used to complete this task, contact your system administrator and provide the information that is shown in the following table.
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Category</p></th>
-<th><p>Prerequisite</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Configuration keys</strong></p></td>
-<td><p>No configuration key is needed for this task.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Security roles</strong></p></td>
-<td><p>To use calculations, you must be a member of the Product designer (BOMProductDesigner) security role.</p></td>
-</tr>
-</tbody>
-</table>
-
+[Add an expression constraint to a product configuration model](tasks/add-expression-constraint-product-configuration-model.md)
 
 ## See also
 
-[About product configuration models](about-product-configuration-models.md)
-
-  
-
+[Product configuration models overview](product-configuration-models.md)
