@@ -2079,6 +2079,8 @@
           items:
           - name: Set up a product configuration model
             href: pim/set-up-maintain-product-configuration-model.md
+          - name: Product configuration model calculations
+            href: pim/config-model-calculations.md
           - name: Calculation for product configuration model FAQ
             href: pim/calculate-product-configuration-models.md
           - name: Configuration rule

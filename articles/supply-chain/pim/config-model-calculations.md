@@ -5,6 +5,7 @@ author: t-benebo
 manager: tfehr
 ms.date: 03/18/2021
 ms.topic: article
+ms.search.form: PCProductConfigurationModelListPage, PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -100,10 +101,8 @@ If the `textAttribute` value has a solver value that equals "1aa", this expressi
 > - The conditional statement must use the solver value of the attribute.
 > - Only fixed-list text attributes can be used in calculations.
 
-## Related tasks
-
-[Add an expression constraint to a product configuration model](tasks/add-expression-constraint-product-configuration-model.md)
-
 ## See also
 
-[Product configuration models overview](product-configuration-models.md)
+- [Calculations for product configuration models FAQ](calculate-product-configuration-models.md)
+- [Add an expression constraint to a product configuration model](tasks/add-expression-constraint-product-configuration-model.md)
+- [Product configuration models overview](product-configuration-models.md)
