@@ -71,7 +71,7 @@ Usually triggered by a creating a support ticket. It involves the cooperation of
 #### Some of the recommended practices when working with the DSE team:
 - Consider that there are turn-around times or Service Level Agreements (SLAs) for each type of service request.
 - Do not use a service request if a support request better suits your case.
-- Consult the service [request catalog](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that you are making the right type of request
+- Consult the [service request catalog](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that you are making the right type of request
 
 
 ### Support Request 
