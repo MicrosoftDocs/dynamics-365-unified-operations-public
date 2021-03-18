@@ -304,11 +304,11 @@ After the data entities are imported into the database, follow these steps to ma
 
 11. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services.
 
-    | Web service name     | Testing internet address                                                            |
+    | Web service name     | Testing internet address (for Online invoicing system XSD 3.0)                      |
     |----------------------|-------------------------------------------------------------------------------------|
-    | Manage invoices      | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/manageInvoice`          |
-    | Query invoice status | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/queryTransactionStatus` |
-    | Token exchange       | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/tokenExchange`          |
+    | Manage invoices      | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v3/manageInvoice`          |
+    | Query invoice status | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v3/queryTransactionStatus` |
+    | Token exchange       | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v3/tokenExchange`          |
 
     Internet addresses are subject to change by the Hungarian Online invoicing system. Therefore, we recommend that you check for actual internet addresses on the [official web site of the Hungarian Online invoicing system](https://onlineszamla.nav.gov.hu/). The website also has information about the actual *production* internet addresses that you should set up.
 
@@ -351,9 +351,10 @@ All message items have additional fields that are required for processing. The s
 | Additional field           | Description |
 |----------------------------|-------------|
 | Operation                  | Values include **Create**, **Modify**, and **Storno**. Finance sets the value of this additional field during execution of the **Evaluate EM items** action. The value of the **Operation** additional field can be defined automatically or through a financial reason on the invoice. For more information, see the [Set up financial reasons for RTIR](#set-up-financial-reasons-for-rtir) section earlier in this topic. |
-| Original invoice item      | If the **Operation** additional field is set to **Modify** or **Storno**, the **Original invoice item** additional field must be set. If the system can't set this field, it sets the status of the related message item to **Manual editing**, and you must manually set this field. |
+| Original message item      | If the **Operation** additional field is set to **Modify** or **Storno**, the **Original message item** additional field must be set. If the system can't set this field, it sets the status of the related message item to **Manual editing**, and you must manually set this field. |
 | Index                      | This additional field specifies the invoice position in the request (package of invoices). The value is reported in the **\<index\>** element in the **ManageInvoiceRequest.xml** file. This additional field is automatically filled in when the **Generate invoice request** action is run. |
-| Last line reference number | For message items of the **Create** operation type, this additional field contains the last number (invoice line quantity) in the package. For message items of the **Modify** or **Storno** operation type, this additional field contains the **Index** value of the original invoice, as reported in the **\<modificationIndex\>** element. This additional field is automatically filled in when the **Evaluation** action is run. |
+| Modification index         | This additional field specifies the unique sequence number referring to the original invoice (the modifying document sequntial number). This value is reported in the **\<modificationIndex\>** element. This additional field is automatically filled in when the **Evaluate EM items** action is run. |
+| Last line reference number | For message items of the **Create** operation type, this additional field contains the last number (invoice line number) in the invoice. This value is reported in the **\<lineNumberReference\>** element. For message items of the **Modify** or **Storno** operation type, this additional field contains the last line number within the whole chain of documents starting from the original invoice adn including all its modifications. This additional field is automatically filled in when the **Evaluate EM items** action is run. |
 
 ### Run Online invoicing processing
 
@@ -500,9 +501,9 @@ As of **XSD version 3.0**, the Online invoicing system requires reporting of the
 
 | Value           | Description |
 |-----------------|-------------|
-| DOMESTIC        | Domestic VAT subject. |
-| PRIVATE\_PERSON | Non-VAT subject (domestic or foreign) natural person. |
-| OTHER           | Other (domestic non-VAT subject, non-natural person, foreign VAT subject and foreign non-VAT subject, non-natural person). |
+| DOMESTIC        | The customer is a domestic customer who is subject to VAT. |
+| PRIVATE\_PERSON | The customer is a domestic or foreign natual person who isn't subject to VAT. |
+| OTHER           | The customer has some other status. For example, the customer is a domestic non-natural person who isn't subject to VAT, a foreign non-natural person who is subject to VAT, or a foreign non-natural person who isn't subject to VAT. |
 
 As of **version 94.50**, which was released to support XSD version 3.0 of the Online invoicing system, the **RTIR Invoice Data (HU)** format supports the following algorithm to define the **customerVatStatus** value.
 
@@ -510,7 +511,7 @@ As of **version 94.50**, which was released to support XSD version 3.0 of the On
 |-------------------------|----------|
 | DOMESTIC                | **CustTable.partyType() == DirPartyType.Organization**, and the customer has either a Hungarian **VATNum** value or a Hungarian **TaxRegistrationId** value. |
 | PRIVATE\_PERSON         | **CustTable.partyType() == DirPartyType.Person**, and the customer has neither a Hungarian **VATNum** value nor a Hungarian **TaxRegistrationId** value. |
-| OTHER                   | Otherwise. |
+| OTHER                   | This value will be applied if criteria for DOMESTIC or PRIVATE\_PERSON are not applicable. |
 
 ### Reporting advance payment invoices and final invoices
 
@@ -520,9 +521,9 @@ The following business process is considered a subject for the "Advance payment 
 
 1. The supplier issues a request for advance payment. This request is a non-VAT document.
 2. After the payment is made by the customer and received by the supplier, the supplier issues an invoice for the advance payment.
-3. The final invoice is issued upon fulfillment of the supply. This invoice considers the amount of the advance payment. The VAT amount is payable on the difference of the total consideration reduced by the advance payments.
+3. The final invoice is issued upon fulfillment of the supply. This invoice considers the amount of the advance payment. The VAT amount is payable on the total consideration reduced by the advance payments.
 
-Finance's support of the "Advance payment invoices and final invoices" reporting scenario is based on the following assumptions:
+In Dynamics 365 Finance's solution for Hungarian Online invoicing system supports reporting of described below scenarios of "Advance payment invoices and final invoices".
 
 #### Scenario 1: A prepayment that has sales tax transactions is posted (Accounts receivable module)
 
@@ -539,7 +540,7 @@ Finance's support of the "Advance payment invoices and final invoices" reporting
     > [!NOTE]
     > To ensure correct reporting in the Online invoicing system, avoid linking multiple invoices to multiple advance invoices on the same sales order.
 
-    The posted final invoice is reported to the Online invoicing system. It includes reference information in the **\<advancePaymentData\>** node and amounts in summary as the difference between the posted sales tax from prepayments that are linked to the same advance invoice. The exchange rate of the advance invoice is reported for the referenced advance invoice information. However, if the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice, and they will be recalculated in the currency of the final document.
+    The posted final invoice is reported to the Online invoicing system. It includes reference information in the **\<advancePaymentData\>** node and amounts in summary reducedby the posted sales tax from prepayments that are linked to the same advance invoice. The exchange rate of the advance invoice is reported for the referenced advance invoice information. However, if the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice, and they will be recalculated in the currency of the final document.
 
 #### Scenario 2: A prepayment that has no sales tax transactions is posted (Accounts receivable module)
 
@@ -557,7 +558,7 @@ Finance's support of the "Advance payment invoices and final invoices" reporting
     > [!NOTE]
     > To ensure correct reporting in the Online invoicing system, avoid linking multiple invoices to multiple advance invoices on the same sales order.
 
-    The posted final invoice is reported to the Online invoicing system. It includes reference information in the **\<advancePaymentData\>** node and amounts in summary as the difference between the posted sales tax from prepayments that are linked to the same advance invoice. The exchange rate of the advance invoice is reported for the referenced advance invoice information. However, if the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice, and they will be recalculated in the currency of the final document.
+    The posted final invoice is reported to the Online invoicing system. It includes reference information in the **\<advancePaymentData\>** node and amounts in summary reducedby the posted sales tax from prepayments that are linked to the same advance invoice. The exchange rate of the advance invoice is reported for the referenced advance invoice information. However, if the currency of the advance invoice differs from the currency of the final document, all lines of the advance invoice will be reported as negative amounts to the final invoice, and they will be recalculated in the currency of the final document.
 
 #### Scenario 3: An advance invoice is posted by using the customer advance on a project (Project management and accounting module)
 
@@ -568,7 +569,7 @@ Finance's support of the "Advance payment invoices and final invoices" reporting
 
 3. Create and post a project invoice, and select the customer advance that was previously posted.
 
-    The posted project invoice is reported to the Online invoicing system as the final invoice. It includes reference information in the **\<advancePaymentData\>** node and amounts in summary as the difference between the posted sales tax from the customer advance that is linked to the final project invoice.
+    The posted project invoice is reported to the Online invoicing system as the final invoice. It includes reference information in the **\<advancePaymentData\>** node and amounts in summary reduced by the posted sales tax from the customer advance that is linked to the final project invoice.
 
 ### Support for archiving digital invoices and including the hash value on the data report
 
