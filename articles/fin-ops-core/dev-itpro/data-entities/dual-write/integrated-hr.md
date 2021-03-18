@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-While mastered in only one app, worker data can be synchronized across multiple Dynamics 365 apps. For example, human resources data can be mastered in Dynamics 365 Human Resources and synchronized with Dynamics 365 Commerce, Dynamics 365 Finance and Operations, and Dynamics 365 Supply Chain Management. The data is integrated seamlessly behind the scenes. The ability to integrate data about workers ensures you are working with the same data across all Dynamics 365 apps, providing you a comprehensive view of your information.
+While mastered in only one app, worker data can be synchronized across multiple Dynamics 365 apps. For example, human resources (HR) data can be mastered in Dynamics 365 Human Resources and synchronized with Dynamics 365 Commerce, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. The data is integrated seamlessly behind the scenes. The ability to integrate data about workers ensures you're working with the same data across all Dynamics 365 apps, providing you a comprehensive view of your information.
 
 ## Human resources
 
