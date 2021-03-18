@@ -39,7 +39,6 @@ The following table shows the delimiters that can be used in the command line ex
 
 | Delimiter                 | Description |
 |---------------------------|-------------|
-| -S or -Silent             | Silently run the installer. No graphical user interface (GUI) is used. The **-Q** and **-Quiet** delimiters have the same effect and can also be used. |
 | -C or -Config             | Specify the location and file name of the configuration file to use as part of this installation. |
 | -FilePath                 | Specify a custom installation location.<p>We don't recommend that you use this delimiter for a standard installation.</p> |
 | -LogFile                  | Specify a custom file location for the installation logs.<p>We don't recommend that you use this delimiter for a standard installation.</p> |
@@ -92,6 +91,9 @@ The new framework for Self-service installers have a variety of features and imp
 </ul>
 
 There are three components that have not migrated to the new framework. These excluded components are the Virtual Peripheral Simulator, Async Server Connector Service (Used for Dynamics AX 2012 R3 support), and the Real-time Service Replacement (Used for Dynamics AX 2012 R3 support).
+
+> [!NOTE]
+> Installers are stored locally and retained.  It is important, over time, to manage or delete the retained installers to not waste disk space. 
 
 ## Migration
 
