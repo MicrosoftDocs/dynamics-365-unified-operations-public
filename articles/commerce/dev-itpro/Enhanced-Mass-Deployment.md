@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Mass deployment of enhanced self-service components
-description: This topic explains how you can use enhanced self-service to do silent installation and servicing deployments. It also explains aspects of special deployment.
+title: Mass deployment of new, sealed self-service components
+description: This topic explains how you can use the new framework of self-service component installers to perform silent installation and servicing deployments. It also explains aspects of special deployments.
 author: jashanno
 manager: AnnBe
 ms.date: 06/02/2020
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Application update 3
 
 [!include [banner](../includes/banner.md)]
 
-This topic is for the new, enhanced self-service installers released each month beginning with the 10.0.18 release. This article explains how to use these installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
+This topic is for the new, sealed framework component installers released each month, beginning with the 10.0.18 release. This article explains how to use these installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
 
 ## Delimiters for mass deployment
 
