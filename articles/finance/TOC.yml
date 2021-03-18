@@ -1803,7 +1803,7 @@
         - name: VAT declaration for Egypt
           href: localizations/emea-egy-vat-declaration.md
         - name: Withholding tax declaration for Egypt 
-          href: localizations/emea-egy-wht-declaration
+          href: localizations/emea-egy-wht-declaration.md
       - name: Estonia
         items:
         - name: Estonia overview
