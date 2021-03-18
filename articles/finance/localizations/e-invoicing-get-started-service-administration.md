@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get started with Electronic invoicing add-on service administration
-description: This topic explains how to get started with the Electronic invoicing add-on.
+title: Get started with Electronic invoicing add-in service administration
+description: This topic explains how to get started with the Electronic invoicing add-in.
 author: gionoder
 manager: AnnBe
 ms.date: 03/12/2021
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with Electronic invoicing add-on service administration
+# Get started with Electronic invoicing add-in service administration
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,7 +50,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 - You must activate the Globalization feature for your RCS account in Feature management. For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md).
 - You must create a key vault and a storage account in Azure. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
-## Install the add-on for microservices in Lifecycle Services
+## Install the add-in for microservices in Lifecycle Services
 
 1. Sign in to your LCS account.
 2. Select the **Preview feature management** tile.
@@ -65,7 +65,7 @@ fixed value.
 12. Select **Install**.
 
 
-## Set up the parameters for RCS integration with the Electronic invoicing add-on
+## Set up the parameters for RCS integration with the Electronic invoicing add-in
 
 1. Sign in to your RCS account.
 2. In the **Electronic reporting** workspace, in the **Related links** section, select **Electronic reporting parameters**.
@@ -85,7 +85,7 @@ fixed value.
 ## Create Key Vault secret
 
 1. Sign in to your RCS account.
-2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing add-on** tile.
+2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing add-in** tile.
 3. On the **Environment setups** page, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
 4. Select **New** to create a key vault secret.
 5. In the **Name** field, enter the name of the key vault secret. In the **Description** field, enter a description.
@@ -108,10 +108,10 @@ fixed value.
 4. In the **Type** field, select **Certificate**.
 5. Select **Save**, and then close the page.
 
-## Create an Electronic invoicing add-on environment
+## Create an Electronic invoicing add-in environment
 
 1. Sign in to your RCS account.
-2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing add-on** tile.
+2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing add-in** tile.
 
 ## Create a service environment
 
@@ -149,12 +149,12 @@ fixed value.
 3. In the **Service environment** field, select a service environment.
 4. Select **Save**, and then close the page.
 
-## Set up the Electronic invoicing add-on integration in Finance and Supply Chain Management
+## Set up the Electronic invoicing add-in integration in Finance and Supply Chain Management
 
-### Turn on the Electronic invoicing add-on integration feature
+### Turn on the Electronic invoicing add-in integration feature
 
 1. Sign in to your Finance or Supply Chain Management instance.
-2. In the **Feature management** workspace, search for the **Electronic invoicing add-on integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
+2. In the **Feature management** workspace, search for the **Electronic invoicing add-in integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
 3. Select the feature, and then select **Enable now**.
 
 ### Set up the service endpoint URL
@@ -169,7 +169,7 @@ fixed value.
     | North EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
     | West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
-3. In the **Environment** field, enter the name of the Electronic invoicing add-on environment.
+3. In the **Environment** field, enter the name of the Electronic invoicing add-in environment.
 4. Select **Save**, and then close the page.
 
 
