@@ -1800,6 +1800,10 @@
           href: localizations/emea-egy-invoice-layout.md
         - name: Customer electronic invoices in Egypt
           href: localizations/emea-egy-e-invoices.md
+        - name: VAT declaration for Egypt
+          href: localizations/emea-egy-vat-declaration.md
+        - name: Withholding tax declaration for Egypt 
+          href: localizations/emea-egy-wht-declaration
       - name: Estonia
         items:
         - name: Estonia overview
