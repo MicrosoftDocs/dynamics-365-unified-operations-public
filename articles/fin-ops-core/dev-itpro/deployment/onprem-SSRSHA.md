@@ -1,19 +1,49 @@
+---
+# required metadata
 
-# Configuring High Availability for SSRS nodes
+title: Configuring high availability for SQL Server Reporting Services (SSRS) nodes
+description: This article explains how to configure multiple SQL Server Reporting Services (SSRS) nodes for Finance + Operations (on-premises) deployments.
+author: faix
+manager: AnnBe
+ms.date: 03/11/2021
+ms.topic: article
+ms.prod:
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-This article explains how to configure multiple SSRS nodes for Finance + Operations (on-premises) deployments.
+# optional metadata
 
-## High Availability with Windows Failover Clusters
+# ms.search.form:
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: sericks
+# ms.tgt_pltfrm: 
+# ms.custom: NotInTOC
+ms.search.region: Global
+# ms.search.industry:
+ms.author: osfaixat
+ms.search.validFrom: 2021-03-21
+ms.dyn365.ops.version: 10.0.17
+---
+
+# Configuring high availability for SQL Server Reporting Services (SSRS) nodes
+
+[!include[banner](../includes/banner.md)]
+[!include[preview banner](../includes/preview-banner.md)]
+
+This article explains how to configure multiple SQL Server Reporting Services (SSRS) nodes for Finance + Operations (on-premises) deployments.
+
+## High availability with Windows Failover Clusters
 
 In this scenario, we'll make use of Windows Failover Clusters. As such, we would have one active node that would receive all requests and one passive node that would be idle. If the active node were to become unavailable, then the cluster would detect this event and the passive node would then receive all network traffic.
 
 Setting up Windows Failover Cluster isn't covered in this guide. For more information, see [Create Failover Cluster](https://docs.microsoft.com/windows-server/failover-clustering/create-failover-cluster).
 
-Once the cluster is set up we'll continue with configuring our installation. The explanations from this point on will be based on the information from the screenshot below.
+Once the cluster is set up, we'll continue with configuring our installation. The explanations from this point on will be based on the information from the screenshot below.
 
 ![Example Windows Failover Cluster configuration](./media/WFC.png)
 
-1. Update your configuration file (ConfigTemplate.xml)
+1. Update your configuration file (ConfigTemplate.xml).
 
     1. Update the ADServiceAccount for the reporting service bootstrappper service.
 
@@ -23,7 +53,7 @@ Once the cluster is set up we'll continue with configuring our installation. The
         </ADServiceAccount>
         ```
 
-    1. Ensure that under the ServiceFabricCluster section you list all of your servers under the ReportServerType.
+    1. Ensure that under the ServiceFabricCluster section, you list all of your servers under the ReportServerType.
 
         ```xml
         <NodeType name="ReportServerType" primary="false" namePrefix="Rep" purpose="BI">
@@ -34,7 +64,7 @@ Once the cluster is set up we'll continue with configuring our installation. The
         </NodeType>
         ```
 
-    1. Update the SSRSHTTPS certificate settings
+    1. Update the SSRSHTTPS certificate settings.
 
         ```xml
         <Certificate type="SSRSHTTPS" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
@@ -58,9 +88,10 @@ Once the cluster is set up we'll continue with configuring our installation. The
 
     > [!IMPORTANT]
     > Ensure that the nodes are added to the Service Fabric Cluster if you have already created the cluster.
+    > 
     > Ensure that the certificate for the SSRS web server gets distributed to all of the ReportServer nodes by rerunning the Export-PfxFiles.ps1 script and rerunning the Complete-Prereqs.ps1 on the appropriate machines.
 
-## High Availability with load balancers
+## High availability with load balancers
 
 In this scenario, a load balancer is configured to distribute requests among the different nodes available. All report generation requests will be distributed among the different nodes available. When setting up this configuration, it's important to note that it's required to set up session affinity. The solution chosen **must** support such a requirement.
 
@@ -68,24 +99,25 @@ The type of session affinity that is required is client-based. When the AOS node
 
 Instructions on setting up a specific software load balancer or hardware load balancer are not covered in this documentation.
 
-However, the general overview for this scenario is as follows.
+However, the general overview for this scenario is as follows:
 
 1. Decide on a load-balancing strategy/product.
 1. Configure it according to your network topology.
-1. Ensure you have set client (source ip) affinity.
+1. Ensure that you have set client (source IP) affinity.
 1. Update the ConfigTemplate.xml using the example above as a guide.
-1. Continue with cluster set up as you normally would. 
+1. Continue with cluster set up, as you normally would. 
 
 > [!IMPORTANT]
-> Ensure that the additional nodes are added to the Service Fabric Cluster if you have already created the cluster.
+> Ensure that the additional nodes are added to the Service Fabric cluster if you have already created the cluster.
+> 
 > Ensure that the certificate for the SSRS web server gets distributed to all of the ReportServer nodes by rerunning the Export-PfxFiles.ps1 script and rerunning the Complete-Prereqs.ps1 on the appropriate machines.
 
-## Deployed environments with Pre-PU41 base deployments
+## Deployed environments with pre-Platform Update 41 base deployments
 
 > [!NOTE]
-> This configuration is only supported with PU41 and later deployments.
+> This configuration is only supported with Platform update 41 and later deployments.
 
-For existing environments that want to enable HA for their SSRS nodes, they can use a predeployment script. For more information on predeployment scripts, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md)
+For existing environments that want to enable high availability for their SSRS nodes, they can use a predeployment script. For more information on predeployment scripts, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md)
 
 ### Predeployment script
 

@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 03/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -264,7 +264,7 @@ You must reinstall the LocalAgent if:
 
 ## Update your current deployment configuration
 
-Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the cleanup job will probably fail. (This manual update must be done just this one time.)
+Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the clean-up job will probably fail. (This manual update must be done just this one time.)
 
 1. Open your configuration file. You can find the location of this file by running the following command.
 
