@@ -33,8 +33,6 @@ ms.dyn365.ops.version:
 
 This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Inventory settings specify whether inventory should be checked before products are added to the cart. They also define inventory-related merchandising messages, such as "In stock" and "Only a few left." These settings ensure that a product can't be purchased if it's out of stock.
 
 Dynamics 365 Commerce provides estimates of on-hand availability for products. For information about how estimated on-hand availability is calculated, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
