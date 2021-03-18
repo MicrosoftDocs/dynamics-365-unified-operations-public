@@ -113,7 +113,7 @@ Migrating from the legacy Self-service framework component installers to the new
 
 ### Before you begin
 
-To use this functionality, you must be using version 7.3 or later. It's assumed that the configuration of all stores, registers, and devices, and other configurations in the headquarters have already been completed. If any configuration is still required, complete it before you follow the instructions in this topic.
+It is critical to remove the legacy Self-service Modern POS component. See the migration steps above for additional information.
 
 ### Examples of silent deployment
 
