@@ -93,7 +93,7 @@ The new framework for Self-service installers have a variety of features and imp
 There are three components that have not migrated to the new framework. These excluded components are the Virtual Peripheral Simulator, Async Server Connector Service (Used for Dynamics AX 2012 R3 support), and the Real-time Service Replacement (Used for Dynamics AX 2012 R3 support).
 
 > [!NOTE]
-> Installers are stored locally and retained.  It is important, over time, to manage or delete the retained installers to not waste disk space. 
+> Installers are stored locally and retained.  It is important, over time, to manage or delete the retained installers to not waste disk space. It is recommended to keep the current installer for the base component(s) and any extension installers for the latest version(s) for purposes of recovery from extreme situations.
 
 ## Migration
 
