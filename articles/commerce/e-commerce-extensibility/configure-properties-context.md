@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Configure module properties to be shown based on context
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 
