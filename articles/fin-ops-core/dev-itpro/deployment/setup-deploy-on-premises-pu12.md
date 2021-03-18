@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 02/01/2021
+ms.date: 03/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -98,7 +98,7 @@ If you are using VMWare, you must implement the fixes that are documented on the
 - [Several issues with vmxnet3 virtual adapter](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure cloud services. However it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/en-us/products/azure-stack/hub/) appliances.
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) appliances.
 
 The hardware configuration includes the following components:
 
