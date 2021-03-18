@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mass deployment of new, sealed self-service components
+title: Mass deployment of new, sealed Commerce self-service components
 description: This topic explains how you can use the new framework of self-service component installers to perform silent installation and servicing deployments. It also explains aspects of special deployments.
 author: jashanno
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-02-20
 ms.dyn365.ops.version: Application update 3
 ---
 
-# Enhanced self-service with mass deployment
+# Mass deployment of new, sealed Commerce self-service components
 
 [!include [banner](../includes/banner.md)]
 
