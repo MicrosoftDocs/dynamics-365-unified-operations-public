@@ -79,12 +79,12 @@ To add Clarity to the correlation header excluded domains list in Commerce site 
 
 You can embed Clarity tracking script code into any Commerce site page you want to track with Clarity.
 
-To get started, copy the tracking script code for your project from the Clarity portal. The Clarity tracking script code will then need to be added to an *inline script module*. Depending on your configuration, the inline script module may be added directly to a specific site page, or may be required to be added as an allowable option in the site page's template. 
+To get started, copy the tracking script code for your project from the Clarity portal. The Clarity tracking script code will then need to be added to a Commerce module library *inline script module*. Depending on your configuration, the inline script module may be added directly to a specific site page, or may be required to be added as an allowable option in a site page template. 
 
 > [!NOTE]
 > When copying the Clarity tracking script code to the inline script module, you can remove the surrounding **\<script\>** tags from the string. The inline script module will add the necessary **\<script\>** tags when the page or fragment is published and rendered.
 
-The most efficient way to include Clarity tracking script code to a range of site pages is to embed the script code in a shared template. The following procedure describes how to insert Clarity script code into a fragment containing an inline script module that is then used by a site page template. 
+The most efficient way to include Clarity tracking script code to a range of site pages is to embed the script code in a shared site page template. The following procedure describes how to insert Clarity script code into a fragment containing an inline script module that is then used by a site page template. 
 
 To embed the Clarity tracking code into site pages in Commerce site builder, follow these steps.
 
