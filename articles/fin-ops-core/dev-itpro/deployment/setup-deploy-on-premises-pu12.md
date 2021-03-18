@@ -98,7 +98,7 @@ If you are using VMWare, you must implement the fixes that are documented on the
 - [Several issues with vmxnet3 virtual adapter](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) appliances.
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) services.
 
 The hardware configuration includes the following components:
 
