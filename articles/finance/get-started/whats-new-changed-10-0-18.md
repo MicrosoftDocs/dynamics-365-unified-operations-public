@@ -59,7 +59,6 @@ The following features are included in this release. Some of the listed features
 - [Tax – using packing slip date as tax calculation date](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax--using-packing-slip-date-as-tax-calculation-date)
 - [Extended Italian localization – payment traceability improvements](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/extended-italian-localization--payment-traceability-improvements)
 - [Regulatory Configuration Service expanded regional coverage to Europe](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage-europe)
-- [Regulatory Configuration Services (RCS) - Globalization features](https://docs.microsoft.com/dynamics365/finance/localizations/rcs-globalization-feature)
 
 ## Additional resources
 
