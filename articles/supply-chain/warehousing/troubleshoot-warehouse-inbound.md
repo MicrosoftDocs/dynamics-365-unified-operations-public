@@ -69,5 +69,22 @@ A new inbound load handling feature, *Over receipt of load quantities*, fixes th
 
 For more information, see [Post registered product quantities against purchase orders](inbound-load-handling.md#post-registered-quantities).
 
+## I get the error "The quantity is not valid" when registering inbound orders.
+
+### Issue description
+
+When **License plate grouping policy** is set to *User defined* on a mobile device menu item used to register inbound orders, I get the error "The quantity is not valid" and I am unable to complete the registration.
+
+### Issue cause
+
+When using *User defined* as a **License plate grouping policy** the system will split the incoming inventory into separate license plates as indicated by the unit sequence group. If batch or serial numbers are used to track the item being received, the quantities of each batch or serial must be specified per license plate registered. If the quantity specified for a license plate is greater than the quantity left to receive for the current dimensions, the above error will be shown.
+
+### Issue resolution
+
+When registering an item using a mobile device menu item that has **License plate grouping policy** set to *User defined* the system may require you to confirm or input license plate numbers, batch numbers, or serial numbers. For the license plate confirmation screen the system will display the quantity allocated for the current license plate.
+
+For batch or serial confirmation screens the system will display the *quantity left to receive* on the current license plate and an input for the quantity to be registered with the current license plate, and batch or serial number. In this case, ensure that the quantity being registered for the license plate is not greater than the *quantity left to receive*.
+
+Alternatively, if too many license plates are being generated on inbound order registration, the **License plate grouping policy** may be changed to *License plate grouping*, or a new **Unit sequence group** may be assigned to the item, or the **License plate grouping** option in the **Unit sequence group** may be deactivated.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
