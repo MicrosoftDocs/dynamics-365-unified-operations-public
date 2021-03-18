@@ -29,12 +29,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Manage SEO metadata
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 SEO metadata for a site can be managed by using site maps and page metadata.
 	
