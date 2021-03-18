@@ -1418,13 +1418,13 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
-      - name: Electronic invoicing add-on
+      - name: Electronic invoicing add-in
         items: 
-        - name: Electronic invoicing add-on overview
+        - name: Electronic invoicing add-in overview
           href: localizations/e-invoicing-service-overview.md
-        - name: Electronic invoicing add-on administration components
+        - name: Electronic invoicing add-in administration components
           href: localizations/e-invoicing-service-administration.md
-        - name: Configure the Electronic invoicing add-on in Regulatory Configuration Services (RCS)
+        - name: Configure the Electronic invoicing add-in in Regulatory Configuration Services (RCS)
           href: localizations/e-invoicing-configuration-rcs.md
         - name: Issue electronic invoices in Finance and Supply Chain Management
           href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
@@ -1432,19 +1432,19 @@
           href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
         - name: Get started 
           items:
-          - name: Get started with Electronic invoicing add-on service administration
+          - name: Get started with Electronic invoicing add-in service administration
             href: localizations/e-invoicing-get-started-service-administration.md
-          - name: Get started with the Electronic invoicing add-on
+          - name: Get started with the Electronic invoicing add-in
             href: localizations/e-invoicing-get-started.md
-          - name: Get started with Electronic invoicing add-on for Brazil
+          - name: Get started with Electronic invoicing add-in for Brazil
             href: localizations/e-invoicing-bra-get-started.md
-          - name: Get started with Electronic invoicing add-on for Egypt
+          - name: Get started with Electronic invoicing add-in for Egypt
             href: localizations/e-invoicing-eg-get-started.md
-          - name: Get started with Electronic invoicing add-on for Italy
+          - name: Get started with Electronic invoicing add-in for Italy
             href: localizations/e-invoicing-ita-get-started.md
-          - name: Get started with the Electronic invoicing add-on for Mexico
+          - name: Get started with the Electronic invoicing add-in for Mexico
             href: localizations/e-invoicing-mex-get-started.md
-          - name: Set up the Electronic invoicing add-on
+          - name: Set up the Electronic invoicing add-in
             href: localizations/e-invoicing-setup.md
         - name: Electronic invoicing add-in FAQ
           href: localizations/e-invoicing-faq.md
