@@ -33,8 +33,6 @@ ms.dyn365.ops.version:
 
 This topic describes how to upload images in Microsoft Dynamics 365 Commerce site builder.
 
-## Overview
-
 The Commerce site builder Media Library allows you to upload images, either singly or in bulk using folders. You should always upload the version of the image with highest resolution and quality, because the image resizer component will automatically optimize the image for different viewports and their breakpoints.
 
 ### Image information specified during upload

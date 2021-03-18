@@ -28,12 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Add a welcome message
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a welcome message to your Microsoft Dynamics 365 Commerce website.
-
-## Overview
 
 A welcome message on your e-Commerce website can inform visitors about ongoing sales, site updates, or availability of seasonal collections. The welcome message is set by using the alert module.
 

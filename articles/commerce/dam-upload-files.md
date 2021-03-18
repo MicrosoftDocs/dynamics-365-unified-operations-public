@@ -34,8 +34,6 @@ ms.dyn365.ops.version:
 
 This topic describes how to upload files other than images and videos in Microsoft Dynamics 365 Commerce site builder.
 
-## Overview
-
 The Commerce site builder Media Library supports the uploading of binary assets other than images or videos. For example, you might want to upload Microsoft Excel, Microsoft Word, Microsoft PowerPoint, or PDF files.
 
 The following document types are supported:

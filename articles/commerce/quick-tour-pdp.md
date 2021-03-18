@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 A PDP provides detailed information about a product, and lets customers select product options such as a size, style, and color. A PDP should showcase all the product information that a customer requires to make a purchase decision.
 
 The following illustration shows an example of a PDP.

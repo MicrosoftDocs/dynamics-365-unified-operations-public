@@ -33,8 +33,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Privacy is an important factor when tracking technologies that affect e-Commerce customers. Because of privacy compliance standards such as the General Data Protection Regulation (GDPR) in the European Union (EU), electronic privacy guidelines must be considered for any site that is active today. Because many e-Commerce sites are globally accessible by default, it's important that you review the compliance standards for your e-Commerce site.
 
 To learn more about the basic principles that Microsoft uses for cookie compliance, visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center). On that site, you can also get more information about areas of compliance and privacy.

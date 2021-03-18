@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Fragments allow for a centralized authoring experience for module configurations that must be reused throughout your site. For example, headers, footers, and banners are often configured as fragments, because they are shared across many pages. You can think of fragments as miniature webpages that can be inserted into other pages on your site. Fragments have their own lifecycle. In other words, they are created, referenced, updated, and deleted as independent entities in the authoring tools.
 
 After fragments are configured, they can be used wherever modules can be used in your site structure. Fragments can be referenced on pages, in layouts, in templates, and in other fragments.
