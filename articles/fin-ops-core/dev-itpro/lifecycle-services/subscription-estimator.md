@@ -85,7 +85,7 @@ When there is a valid active estimate, the **Configure** button becomes availabl
 
 Make sure that you have all the required licenses active before submitting the ticket and be aware that in cases were resizing of the production environment is needed it may require a downtime.
 
-[!NOTE] There is no need of FastTrack Solutions Architect involvement in Subscription Estimator upload or update. Support will provide the aid to mark it as active and to request resizing if needed.
+[!NOTE] FastTrack Solutions Architects have not involvement in uploading or updating Subscription Estimator. If you get warnings regarding Subscription Estimator in LCS, follow the instructions above. If you keep having issues, contact Microsoft Support. 
 
 If you receive any other error message or encounter any other issue, create a support request, and attach your active estimate so that the support team can address the issue.
  
