@@ -5,7 +5,7 @@ title: Deploy custom edge scale units on custom hardware using LBD
 description: Provision edge scale units on premises using custom hardware and LBD based deployment
 author: cabeln
 manager: 
-ms.date: 10/06/2020
+ms.date: 2020-01-01
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,20 +25,23 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: SCM
 ms.author: cabeln
-ms.search.validFrom: 2020-09-23
+ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Deploy custom edge scale units on custom hardware using LBD
+# Preview: Deploying custom edge scale units using Local Business Data (LBD) projects
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Edge scale units can be deployed by creating a Local Business Data (LBD) environment and then configuring it to function as a scale unit. This is achieved by associating the LBD environment with a Supply Chain Management cloud environment that has been configured to function as a hub for scale units.  
+Edge scale units can be deployed by creating a Local Business Data (LBD) environment and then configuring it to function as a scale unit in your distributed hybrid topology for supply chain management. This is achieved by associating the LBD environment with a Hub Supply Chain Management cloud environment.  
 
-This document describes how to set up an on-premises LBD environment as an edge scale unit, which can then be associated to a hub-configured cloud service fabric based environment.
+Edge scale units are still in preview. Therefore you may use such environment according to the preview terms.
+ 
 
-## Create an environment for an on-premises edge scale unit using LBD deployment mechanics
+This document describes how to set up an on-premises LBD environment as an edge scale unit,and then how to associate it to a hub.
+
+## 1. Create an environment for an on-premises edge scale unit using LBD deployment mechanics
 
 The following table provides an overview of the deployment steps.
 
