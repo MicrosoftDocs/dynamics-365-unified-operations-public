@@ -55,12 +55,13 @@ When a batch job is stuck in an "Executing" or "Cancelling" state, you can reset
 
 5. On the **Select new status** page, select **Waiting**, and select **OK**.
 
-   ![Dynamics 365 HR Virtual Tables in Power Apps](./media/hr-admin-reset-batch-status.png)
+   ![Select a new batch job status](./media/hr-admin-reset-batch-status.png)
 
 When the batch job status has been set to "Waiting", it will be picked up again for execution in the next scheduled batch run.
 
 ## Additional resources
 
+[Optimize performance by scheduling batch jobs after hours](hr-admin-troubleshooting-batch-jobs.md)
 [Optimize performance with auto cleanup tasks](hr-admin-troubleshooting-batch-history.md)
 
 
