@@ -5,7 +5,7 @@ title: India Tax Deducted at Source (TDS) overview
 description: This topic provides detailed information about India Tax Deducted at Source (TDS). The TTCS documentation covers the functionality of the Tax Deducted at Source (TDS) feature. 
 author: kailiang
 manager: AnnBe
-ms.date: 02/12/2021
+ms.date: 03/19/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kailiang
-ms.search.validFrom: 2021-02-12
+ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: AX 10.0.17
 
 ---
@@ -34,17 +34,17 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides detailed information about India Tax Deducted at Source (TDS).
+This topic provides detailed information about India Tax Deducted at Source (TDS). The documentation for this capability includes the following content. 
 
-- Basic setup for TDS
+- [Basic setup for TDS](apac-ind-TDS-TDS-ledger-accounts-setup.md)
 
-- Formula designer and threshold limit functionality used for TDS calculation
+- [Formula designer and threshold limit functionality used for TDS calculation](apac-ind-TDS-Formula-designer.md)
 
-- Calculation of TDS on invoices, payments, promissory notes, and intercompany transactions
+- [Calculation of TDS on invoices, payments, promissory notes, and intercompany transactions](apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md)
 
-- Periodic TDS settlement process and settlement of TDS amounts to TDS authority vendors
+- [Periodic TDS settlement process and settlement of TDS amounts to TDS authority vendors](apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md)
 
-- Recording and updating TDS certificate numbers and dates
+- [Recording and updating TDS certificate numbers and dates](apac-ind-TDS-Record-TDS-concession-certificate-numbers.md)
 
 ### Introduction
 
@@ -132,18 +132,18 @@ Income in respect of units of non-residents (Under section 196A)
 
 - Income from Units purchased in foreign currency or long-term capital gain arising from the transfer of such Units purchased in foreign currency (Section196B)
 
-- Payment of any income to non-residents in respect of interest or dividend on bonds and shares (Section 196C) etc.
+- Payment of any income to non-residents in respect of interest or dividend on bonds and shares (Section 196C)
 
-TDS is calculated on purchase, sales, sales return, credit notes, fixed assets acquisition, prepayments, advance payments, promissory notes, works tax, and intercompany transactions.
+TDS is calculated on purchase, sales, sales return, credit notes, fixed assets acquisitions, prepayments, advance payments, promissory notes, works tax, and intercompany transactions.
 
 >  [!NOTE]
->  In the current Indian tax scenario,  TDS is not calculated on sales transactions. Microsoft Dynamics AX  has a provision to calculate TDS recoverable on sales transactions to cater  to intercompany transactions. 
+>  In the current Indian tax scenario,  TDS is not calculated on sales transactions. The system includes a provision to calculate TDS recoverable on sales transactions tespecially for intercompany transactions. 
 
-TDS is always calculated considering the threshold limit and the exception threshold limit defined for the TDS component.
+TDS is always calculated considering the threshold limit and the exception threshold limit that are defined for the TDS component.
 
 The periodic TDS settlement process must be run and the TDS payments must be settled to TDS authority vendors.
 
-The certificate numbers and dates for TDS certificates received from vendors or customers can be recorded and updated. The Form 26Q and Form 27Q quarterly statements and the Form 16A certificate for TDS also can be generated in Microsoft Dynamics AX 2009.
+The certificate numbers and dates for TDS certificates received from vendors or customers can be recorded and updated. The Form 26Q and Form 27Q quarterly statements and the Form 16A certificate for TDS also can be generated in Microsoft Dynamics 365 Finance.
 
 [![TDS overview](./media/apac-ind-TDS-3.png)](./media/apac-ind-TDS-3.png)
 
