@@ -47,7 +47,7 @@ When a batch job is stuck in an "Executing" or "Canceling" state, you can reset 
 3. On the action ribbon, select the **Force cancel** action, and confirm the action.
 
    > [!NOTE]
-   > The **Force cancel** action is only available when the selected batch job has a status of either "Executing" or "Canceling".
+   > The **Force cancel** action is only available when the selected batch job has a status of either "Executing" or "Canceling", and no batch execution or cancellation processes are running for the job.
 
 4. On the action ribbon, select **Change status**.
 
