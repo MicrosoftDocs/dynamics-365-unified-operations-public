@@ -40,7 +40,7 @@ This topic explains how to set up payment fees that are charged for Tax Deducted
 
     [![Payment fee page](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
-2. On the **Overview** tab, select **Alt+N** to create a payment fee, and enter the required details.
+2. Select **New** to create a payment fee, and enter the required details.
 3. In the **Fee type** field, select the type of payment fee:
 
     - **None**
