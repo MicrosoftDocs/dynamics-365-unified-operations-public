@@ -39,7 +39,7 @@ This topic provides an overview of the component versioning requirements and dep
 
 The following illustration shows an overview of Dynamics 365 Commerce components and corresponding versioning requirements and dependencies.
 
-<a href="https://docs.microsoft.com/en-us/dynamics365/commerce/media/commerce-component-versioning.jpg" target="_blank">![Dynamics 365 Commerce Component versioning requirements and dependencies](./media/commerce-component-versioning.jpg)</a>
+<a href="https://docs.microsoft.com/dynamics365/commerce/media/commerce-component-versioning.jpg" target="_blank">![Dynamics 365 Commerce Component versioning requirements and dependencies](./media/commerce-component-versioning.jpg)</a>
 
 ## Component dependencies
 
