@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to enable and use the cross-channel sharing feature of Microsoft Dynamics 365 Commerce site builder.
 
-## Overview
-
 Cross-channel sharing lets retailers reuse and share content among multiple channels of a site. This capability is useful when the site channels have a compatible base language, or when they have numerous content items in common.
 
 Cross-channel sharing works by enabling a default channel that will be searched for available content when a channel-specific version of the requested content isn't found. Content that is intended to be shared among channels is created in the default channel. That content can be localized for any locale that is used on any site channel.

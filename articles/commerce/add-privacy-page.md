@@ -29,12 +29,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a privacy policy page
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Privacy compliance includes organizational measures that inform site users about how their data is collected and handled. Users can then decide how they want their personal data to be handled and can take appropriate action.
 

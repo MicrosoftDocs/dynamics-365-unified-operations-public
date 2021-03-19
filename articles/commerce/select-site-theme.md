@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to set or change your site's theme in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 A site's layout and style (for example, fonts, sizes, and colors) are defined by the theme that you select and apply to the site. A theme is created and deployed by a developer at your company. For an overview of themes, see [Theming overview](e-commerce-extensibility/theming.md). For more information about how to create and deploy themes, see [Create a new theme](e-commerce-extensibility/create-theme.md).
 
 By default, when you first create a site, it uses a theme that is named **Fabrikam**. This default theme is provided as part of the Commerce module library. After you've deployed additional themes for your site, you can configure the site so that it uses one of them instead.

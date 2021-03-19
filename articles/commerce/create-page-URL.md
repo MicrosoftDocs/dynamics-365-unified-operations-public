@@ -28,12 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Create a page URL
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers the basic concepts and procedures for creating a page URL on your site.
-
-## Overview
 
 The full, or absolute, URL that points to a page on your site consists of distinct parts. For example, the URL `https://www.contoso.com/en-us/contactus` has the following parts:
 
