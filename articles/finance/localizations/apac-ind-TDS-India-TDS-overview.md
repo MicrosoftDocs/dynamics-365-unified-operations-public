@@ -37,9 +37,13 @@ ms.dyn365.ops.version: AX 10.0.17
 This topic provides detailed information about India Tax Deducted at Source (TDS).
 
 - Basic setup for TDS
+
 - Formula designer and threshold limit functionality used for TDS calculation
+
 - Calculation of TDS on invoices, payments, promissory notes, and intercompany transactions
+
 - Periodic TDS settlement process and settlement of TDS amounts to TDS authority vendors
+
 - Recording and updating TDS certificate numbers and dates
 
 ### Introduction
@@ -50,43 +54,41 @@ As per the Income tax Act, 1961, income tax is deducted at source by the receive
 
 The services that are notified by the Government of India on which TDS is applied are listed below:
 
- 
+### Residents
 
-**Residents**
+- Income from salaries (Under section 192)
 
-Income from salaries (Under section 192)
+- Income from interest on securities (Under section 193)
 
-Income from interest on securities (Under section 193)
+- Income from dividend (Under section 194)
 
-Income from dividend (Under section 194)
+- Income from interest (Under section 194A)
 
-Income from interest (Under section 194A)
+- Income from lotteries or puzzles (Under section 194B)
 
-Income from lotteries or puzzles (Under section 194B)
+- Winning from horse races etc. (Under section 194BB)
 
-Winning from horse races etc. (Under section 194BB)
+- Contractors and sub-contractors (Under section 194C)
 
-Contractors and sub-contractors (Under section 194C)
+- Insurance commission (Under section 194D)
 
-Insurance commission (Under section 194D)
+- Income from deposit under national saving scheme (Under section 194EE)
 
-Income from deposit under national saving scheme (Under section 194EE)
+- Income from mutual fund or UTI (Under section 194F)
 
-Income from mutual fund or UTI (Under section 194F)
+- Commission, Remuneration, Prize etc., on sale or lottery (Under section 194G)
 
-Commission, Remuneration, Prize etc., on sale or lottery (Under section 194G)
+- Payment of Commission or brokerage (Under section 194H)
 
-Payment of Commission or brokerage (Under section 194H)
+- Rent (Under section 194I)
 
-Rent (Under section 194I)
+- Professional service (Under section 194J)
 
-Professional service (Under section 194J)
+- Income from Units (Under section 194K)
 
-Income from Units (Under section 194K)
+- Payment of compensation on acquisition of certain immovable property (Under section 194LA)
 
-Payment of compensation on acquisition of certain immovable property (Under section 194LA)
-
-**Non-residents**
+### Non-residents
 
 Payments to Non-resident sportsmen or sports association (Under section 194E)
 
@@ -94,49 +96,47 @@ Other sums (Under section 195)
 
 Income in respect of units of non-residents (Under section 196A)
 
-Income from foreign currency bonds or shares of Indian Company (Under section 196C)
+- Income from foreign currency bonds or shares of Indian Company (Under section 196C)
 
-Incomes of foreign institutional investors from securities (Under section 196D)
+- Incomes of foreign institutional investors from securities (Under section 196D)
 
-Salary and all other positive incomes under any head on income (Section 192)
+- Salary and all other positive incomes under any head on income (Section 192)
 
-Interest on securities (Section 193)
+- Interest on securities (Section 193)
 
-Interest other than interest on securities (Section 194A)
+- Interest other than interest on securities (Section 194A)
 
-Payments to contractors and sub-contractors (Section 194C)
+- Payments to contractors and sub-contractors (Section 194C)
 
-Winnings from Lottery or crossword puzzles (Section 194B)
+- Winnings from Lottery or crossword puzzles (Section 194B)
 
-Winnings from horse races (Section 194BB)
+- Winnings from horse races (Section 194BB)
 
-Insurance Commission covering all payments for procuring Insurance business (Section 194D)
+- Insurance Commission covering all payments for procuring Insurance business (Section 194D)
 
-Any interest other than interest on securities payable to non-residents not being a company or to a foreign company (Section 195)
+- Any interest other than interest on securities payable to non-residents not being a company or to a foreign company (Section 195)
 
-Payment to non-resident sportsman including athlete or sports association or institution. In case of non-resident sportsman, payments in respect of advertisements as well as articles on any game/sports in India in newspapers, magazines, and so. is included (Section 194E)
+- Payment to non-resident sportsman including athlete or sports association or institution. In case of non-resident sportsman, payments in respect of advertisements as well as articles on any game/sports in India in newspapers, magazines, and so. is included (Section 194E)
 
-Payment in respect of deposits under NSS \[National Savings Scheme\](Section 194EE)
+- Payment in respect of deposits under NSS \[National Savings Scheme\](Section 194EE)
 
-Payment on account of repurchase of Units by Mutual Fund or UTI (Section 194F)
+- Payment on account of repurchase of Units by Mutual Fund or UTI (Section 194F)
 
-Payment for Commission or brokerage (Section 194H)
+- Payment for Commission or brokerage (Section 194H)
 
-Payment of rent (Section 194I)
+- Payment of rent (Section 194I)
 
-Payment of fees for professional or technical services (Section 194J)
+- Payment of fees for professional or technical services (Section 194J)
 
-Commission to Stockiest, distributors, buyers and sellers of Lottery tickets including remuneration or prize on such tickets (Section 194G)
+- Commission to Stockiest, distributors, buyers and sellers of Lottery tickets including remuneration or prize on such tickets (Section 194G)
 
-Income from Units purchased in foreign currency or long-term capital gain arising from the transfer of such Units purchased in foreign currency (Section196B)
+- Income from Units purchased in foreign currency or long-term capital gain arising from the transfer of such Units purchased in foreign currency (Section196B)
 
-Payment of any income to non-residents in respect of interest or dividend on bonds and shares (Section 196C) etc.
+- Payment of any income to non-residents in respect of interest or dividend on bonds and shares (Section 196C) etc.
 
 TDS is calculated on purchase, sales, sales return, credit notes, fixed assets acquisition, prepayments, advance payments, promissory notes, works tax, and intercompany transactions.
 
-
-
->  [!Note]
+>  [!NOTE]
 >  In the current Indian tax scenario,  TDS is not calculated on sales transactions. Microsoft Dynamics AX  has a provision to calculate TDS recoverable on sales transactions to cater  to intercompany transactions. 
 
 TDS is always calculated considering the threshold limit and the exception threshold limit defined for the TDS component.
