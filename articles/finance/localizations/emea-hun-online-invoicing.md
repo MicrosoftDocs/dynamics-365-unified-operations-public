@@ -64,7 +64,7 @@ To prepare your Microsoft Dynamics 365 Finance application for RTIR, you must im
 > [!NOTE]
 > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **RTIR mapping** and **RTIR import model mapping** configurations.
 
-For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo).
+For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## Set up application-specific parameters
 
@@ -582,7 +582,7 @@ As of XSD version 3.0, the Online invoicing system supports archiving digital in
 2. Go to **Organization administration** \> **Document management** \> **Document management parameters**, and set up the archive directory.
 3. Specify the customers and project invoices that must be archived. Open the **Customer** page for each customer, select **Invoice and delivery** \> **eInvoice**, and then set the **eInvoice attachment** option to **Yes**.
 
-For more information, see [Archive printed customer invoices with hash numbers](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/archive-printed-invoices).
+For more information, see [Archive printed customer invoices with hash numbers](../accounts-receivable/archive-printed-invoices.md).
 
 After you've finished, any posted and printed invoices for the specified customers will have an attachment where the **Type** field is set to **File** and the **Restriction** field is set to **External**. To review attachments, select **Document handling**. The **General** FastTab of the **Document handling** page shows the hash number that is related to an invoice. If an attachment that was created for an invoice has a hash number, when the invoice is reported to the Online invoicing system, it will include the hash number value that is stored in the system.
 
