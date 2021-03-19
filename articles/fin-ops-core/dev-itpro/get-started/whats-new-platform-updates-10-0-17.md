@@ -56,7 +56,7 @@ The following features are included in this release. Some of the listed features
 
 - [executeQueryWithParameters](../dev-ref/query-with-parameters.md) method<br>- This method runs SQL queries by using statement parameters that can help mitigate SQL injection attacks.
 
-- **Batch notifications**<br>- The batch framework of Finance and Operations apps now raises business events when a batch is started, completed, failed, and cancelled. Customers can subscribe to these events using Power Automate or other mechanisms and get notified of these events. For example, customers may find that it's particularly useful to be notified when a batch fails or runs longer than normal. For more information, see [Batch business events](../business-events/system-business-events.md).
+- [Batch notifications](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/batch-notifications)<br>- For more information, see [Batch business events](../business-events/system-business-events.md).
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
