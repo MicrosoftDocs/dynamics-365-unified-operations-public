@@ -39,33 +39,54 @@ For core data actions that are provided in the SDK, the cache key is implicitly 
 
 For all entities, the default TTR is 60 seconds, and the default TTL is 600 seconds.
 
-The following example shows a JavaScript Object Notation (JSON) file that includes a section for TTR and TTL settings. Each section contains name of the entity for the data action's cache key followed by the time in seconds.
+The following example shows a JavaScript Object Notation (JSON) file that includes a section for TTR and TTL settings. Each section contains name of the entity for the data action's cache key followed by the time in seconds. Note, the below example file may be different from what's included in the SDK as the SDK gets updated regularly.
 
 ```json
 {
+    "checkPeriodInSeconds": 1800,
     "ttlInSeconds": {
-        "AttributeValue": 1800,
-        "Category": 1800,
-        "CategoryHierarchy": 1800,
-        "ChannelConfiguration": 1800,
-        "FullProduct": 1800,
-        "ProductRating": 1800,
-        "OrgUnit": 1800,
-        "ProductCatalog": 1800,
-        "SimpleProduct": 1800      
+        "ChannelConfiguration": 43200,
+        "ChannelDeliveryConfiguration": 43200,
+        "SimpleProduct": 43200,
+        "FeatureState": 43200,
+        "ProductRating": 43200,
+        "Category": 43200,
+        "CategoryPath": 43200,
+        "ProductCatalog": 43200,
+        "OrgUnit": 43200,
+        "MappedSearchInput": 43200,
+        "FullProduct": 43200,
+        "Product": 43200,
+        "CategoryHierarchy": 43200,
+        "AttributeValue": 43200,
+        "OrgUnitLocation": 43200,
+        "ProductDimensionValue": 43200,
+        "FullProductSearchResult": 43200,
+        "ProductRefiner": 43200,
+        "PRODUCTLIST-RECOMMENDATION":43200,
+        "PRODUCTLIST-RELATEDPRODUCTS":43200
     },
     "ttrInSeconds": {
-        "AttributeValue": 900,
-        "Category": 900,
-        "CategoryHierarchy": 1800, 
         "ChannelConfiguration": 1800,
-        "FullProduct": 900,
-        "OrgUnit": 1800,
-        "Product": 900,
-        "ProductCatalog": 300,
-        "ProductDimensionValue": 900,
+        "ChannelDeliveryConfiguration": 1800,
+        "SimpleProduct": 900,
+        "FeatureState": 900,
         "ProductRating": 900,
-        "SimpleProduct": 900        
+        "Category": 900,
+        "CategoryPath": 900,
+        "ProductCatalog": 900,
+        "OrgUnit": 1800,
+        "MappedSearchInput": 900,
+        "FullProduct": 900,
+        "Product": 900,
+        "CategoryHierarchy": 1800,
+        "AttributeValue": 900,
+        "OrgUnitLocation": 900,
+        "ProductDimensionValue": 1800,
+        "FullProductSearchResult": 900,
+        "ProductRefiner": 900,
+        "PRODUCTLIST-RECOMMENDATION":900,
+        "PRODUCTLIST-RELATEDPRODUCTS":900
     }
 }
 ```
