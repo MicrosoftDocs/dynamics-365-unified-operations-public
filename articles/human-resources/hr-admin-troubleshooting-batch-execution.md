@@ -36,11 +36,11 @@ ms.dyn365.ops.version: Platform update 42
 
 ## Issue
 
-Microsoft Dynamics 365 Human Resources can experience issues with batch jobs that are stuck in either an "Executing" or "Cancelling" state, and do not complete execution.
+Microsoft Dynamics 365 Human Resources can experience issues with batch jobs that are stuck in either an "Executing" or "Canceling" state, and do not complete execution.
 
 ## Resolution
 
-When a batch job is stuck in an "Executing" or "Cancelling" state, you can reset the status of the job by forcing the cancellation of the job. Once the batch canceled, you can reset the batch by setting it to a "Waiting" status.
+When a batch job is stuck in an "Executing" or "Canceling" state, you can reset the status by forcing the cancellation of the job. Once the batch is canceled, you can reset the batch job by setting it to a "Waiting" status. It will then be picked up again for execution in the next scheduled batch run.
 
 1. In the **System administration** workspace, select the **Links** page, and select **Batch jobs**.
 
@@ -49,15 +49,13 @@ When a batch job is stuck in an "Executing" or "Cancelling" state, you can reset
 3. On the action ribbon, select the **Force cancel** action, and confirm the action.
 
    > [!NOTE]
-   > The **Force cancel** action is only available when the selected batch job has a status of either "Executing" or "Cancelling".
+   > The **Force cancel** action is only available when the selected batch job has a status of either "Executing" or "Canceling".
 
 4. On the action ribbon, select **Change status**.
 
 5. On the **Select new status** page, select **Waiting**, and select **OK**.
 
    ![Select a new batch job status](./media/hr-admin-reset-batch-job-status.png)
-
-When the batch job status has been set to "Waiting", it will be picked up again for execution in the next scheduled batch run.
 
 ## Additional resources
 
