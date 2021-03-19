@@ -71,7 +71,7 @@ Usually triggered by a creating a support ticket. It involves the cooperation of
 #### Some of the recommended practices when working with the DSE team:
 - Consider that there are turn-around times or Service Level Agreements (SLAs) for each type of service request.
 - Do not use a service request if a support request better suits your case.
-- Consult the [service request catalog](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that you are making the right type of request
+- Consult the [service request catalog](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that you are making the right type of request
 
 
 ### Support Request 
@@ -126,7 +126,7 @@ LCS has integrated a set of tools that can be used to properly monitor LCS proje
 
 ### Service Health Dashboard
 
-[Service Health Dashboard](http://portal.office.com/servicestatus) where the health status and incidents can be found for Office365 Services.
+[Service Health Dashboard](https://portal.office.com/servicestatus) where the health status and incidents can be found for Office365 Services.
 
 You can also view the service health through the admin center. Go to  **Health**  >  **Service health** or select the  **Service health**  card on the  **Home dashboard**.
 
@@ -171,7 +171,7 @@ Some of the pre-defined queries are for:
 This Dashboard provides a series of line charts, filtered by instance (AOS or Batch AOS) and time frame through which it is possible to observe SQL execution in the **AOS** tab and system memory and CPU utilization over time in the **System tab**. Through this tool you can easily identify behavioral changes that may help you to trace in time issues and the impact of changes in the solution.
 
 #### SQL Insights
-SQL Insights provides advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed analysis, see [Performance troubleshooting using tools](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) and watch the [TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18).
+SQL Insights provides advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed analysis, see [Performance troubleshooting using tools](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) and watch the [TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18).
 
 SQL Insights is a reliable way to collect performance metrics on demand and enables customers and partners to execute a predefined set of actions that can be used to mitigate issues in a sandbox or production environment. This feature queries SQL Server directly, so you get query store metrics in near real-time.
 
