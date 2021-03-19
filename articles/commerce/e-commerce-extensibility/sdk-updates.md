@@ -33,8 +33,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
-## Overview
-
 Regular updates will be released as part of the Dynamics 365 Commerce online SDK and module library. These updates might include new features or product fixes. Product release notes will be provided for all changes.
 
 ## Dependency versions in the packages.json file
