@@ -61,7 +61,7 @@ When the batch job status has been set to "Waiting", it will be picked up again 
 
 ## Additional resources
 
-[Optimize performance by scheduling batch jobs after hours](hr-admin-troubleshooting-batch-jobs.md)
+[Optimize performance by scheduling batch jobs after hours](hr-admin-troubleshooting-batch-jobs.md)<br>
 [Optimize performance with auto cleanup tasks](hr-admin-troubleshooting-batch-history.md)
 
 
