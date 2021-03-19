@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuring high availability for SQL Server Reporting Services (SSRS) nodes
-description: This article explains how to configure multiple SQL Server Reporting Services (SSRS) nodes for Finance + Operations (on-premises) deployments.
+title: Configure high availability for SQL Server Reporting Services (SSRS) nodes
+description: This topic explains how to configure multiple Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
 author: faix
 manager: AnnBe
 ms.date: 03/11/2021
@@ -26,34 +26,34 @@ ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
 ---
 
-# Configuring high availability for SQL Server Reporting Services (SSRS) nodes
+# Configure high availability for SQL Server Reporting Services (SSRS) nodes
 
 [!include[banner](../includes/banner.md)]
 [!include[preview banner](../includes/preview-banner.md)]
 
-This article explains how to configure multiple SQL Server Reporting Services (SSRS) nodes for Finance + Operations (on-premises) deployments.
+This topic explains how to configure multiple Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
 
-## High availability with Windows Failover Clusters
+## High availability with Windows failover clusters
 
-In this scenario, we'll make use of Windows Failover Clusters. As such, we would have one active node that would receive all requests and one passive node that would be idle. If the active node were to become unavailable, then the cluster would detect this event and the passive node would then receive all network traffic.
+This scenario uses Windows failover clusters. Therefore, you will have one active node that receives all requests and one passive node that is idle. If the active node becomes unavailable, the cluster will detect this event, and the passive node will start to receive all network traffic.
 
-Setting up Windows Failover Cluster isn't covered in this guide. For more information, see [Create Failover Cluster](https://docs.microsoft.com/windows-server/failover-clustering/create-failover-cluster).
+This topic doesn't cover the setup of Windows failover clusters. For information, see [Create a failover cluster](https://docs.microsoft.com/windows-server/failover-clustering/create-failover-cluster).
 
-Once the cluster is set up, we'll continue with configuring our installation. The explanations from this point on will be based on the information from the screenshot below.
+After the cluster is set up, you can configure your installation. From this point onward, the explanations will be based on the information in the following illustration.
 
-![Example Windows Failover Cluster configuration](./media/WFC.png)
+![Example of a Windows failover cluster configuration](./media/WFC.png)
 
-1. Update your configuration file (ConfigTemplate.xml).
+1. Update your configuration file (**ConfigTemplate.xml**):
 
-    1. Update the ADServiceAccount for the reporting service bootstrappper service.
+    1. Update **ADServiceAccount** for the reporting service bootstrapper service.
 
         ```xml
-        <ADServiceAccount type="gMSA" name="svc-ReportSvc$"  refName="gmsaSSRS">
+        <ADServiceAccount type="gMSA" name="svc-ReportSvc$" refName="gmsaSSRS">
             <DNSHostName>svc-ReportSvc.contosoen05.com</DNSHostName>
         </ADServiceAccount>
         ```
 
-    1. Ensure that under the ServiceFabricCluster section, you list all of your servers under the ReportServerType.
+    1. In the **ServiceFabricCluster** section, under **ReportServerType**, make sure that all your servers are listed.
 
         ```xml
         <NodeType name="ReportServerType" primary="false" namePrefix="Rep" purpose="BI">
@@ -64,7 +64,7 @@ Once the cluster is set up, we'll continue with configuring our installation. Th
         </NodeType>
         ```
 
-    1. Update the SSRSHTTPS certificate settings.
+    1. Update the **SSRSHTTPS** certificate settings.
 
         ```xml
         <Certificate type="SSRSHTTPS" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
@@ -72,62 +72,62 @@ Once the cluster is set up, we'll continue with configuring our installation. Th
             <Name>LBDEN05FS1BI</Name>
             <!-- Specify the file name of the pfx that will be used in export and import operations. If not specified, the name property will be used -->
             <FileName>LBDEN05FS1BI</FileName>
-            <!-- Specify the dns names for the listener, and of each of the report nodes in the cluster. -->
-            <!-- The FQDNS will only be accessed from within the environment so its not necessary to create external DNS entries for them. -->
+            <!-- Specify the DNS names for the listener, and of each of the report nodes in the cluster. -->
+            <!-- The FQDNS will only be accessed from within the environment so it's not necessary to create external DNS entries for them. -->
             <DNSName>LBDEN05FS1BI;LBDEN05FS1BI1;LBDEN05FS1BI2</DNSName>
             <Subject>LBDEN05FS1BI</Subject>
             <Thumbprint></Thumbprint>
             <ProtectTo></ProtectTo>
         </Certificate>
         ```
-    
-    > [!IMPORTANT]
-    > Even if you aren't going to generate the certificate using the infrastructure scripts provided, fill out the certificate information as other scripts will rely on the this information.
-
-1. Follow the setup guide as you normally would.
 
     > [!IMPORTANT]
-    > Ensure that the nodes are added to the Service Fabric Cluster if you have already created the cluster.
-    > 
-    > Ensure that the certificate for the SSRS web server gets distributed to all of the ReportServer nodes by rerunning the Export-PfxFiles.ps1 script and rerunning the Complete-Prereqs.ps1 on the appropriate machines.
+    > Even if you won't be using the infrastructure scripts that are provided to generate the certificate, you should fill in the certificate information, because other scripts will rely on that information.
+
+1. Follow the setup guide to complete the setup in your usual way.
+
+    > [!IMPORTANT]
+    > If you've already created the Azure Service Fabric cluster, make sure that the nodes are added to it.
+    >
+    > Rerun the Export-PfxFiles.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
 
 ## High availability with load balancers
 
-In this scenario, a load balancer is configured to distribute requests among the different nodes available. All report generation requests will be distributed among the different nodes available. When setting up this configuration, it's important to note that it's required to set up session affinity. The solution chosen **must** support such a requirement.
+In this scenario, a load balancer is configured to distribute requests among the different nodes that are available. These requests include all report generation requests.
 
-The type of session affinity that is required is client-based. When the AOS node makes a request, the load balancer should direct all requests for that AOS node to the same SSRS node. 
+When you set up this configuration, note that you must set up session affinity. The solution that you select **must** support this requirement. The type of session affinity that is required depends on the client. When the Application Object Server (AOS) node makes a request, the load balancer should direct all requests for that AOS node to the same SSRS node.
 
-Instructions on setting up a specific software load balancer or hardware load balancer are not covered in this documentation.
+This topic doesn't include instructions for setting up a specific software load balancer or hardware load balancer.
 
-However, the general overview for this scenario is as follows:
+Here is a general overview of this scenario:
 
-1. Decide on a load-balancing strategy/product.
-1. Configure it according to your network topology.
-1. Ensure that you have set client (source IP) affinity.
-1. Update the ConfigTemplate.xml using the example above as a guide.
-1. Continue with cluster set up, as you normally would. 
+1. Choose a load balancing strategy or product.
+1. Configure the strategy or product according to your network topology.
+1. Make sure that you've set up client (source IP) affinity.
+1. Update the **ConfigTemplate.xml** file. Use the previous example as a guide.
+1. Continue to set up the cluster in your usual way.
 
 > [!IMPORTANT]
-> Ensure that the additional nodes are added to the Service Fabric cluster if you have already created the cluster.
-> 
-> Ensure that the certificate for the SSRS web server gets distributed to all of the ReportServer nodes by rerunning the Export-PfxFiles.ps1 script and rerunning the Complete-Prereqs.ps1 on the appropriate machines.
+> If you've already created the Service Fabric cluster, make sure that the additional nodes are added to it.
+>
+> Rerun the Export-PfxFiles.ps1 script, and rerun the Complete-Prereqs.ps1 script on the appropriate machines, to ensure that the certificate for the SSRS web server is distributed to all the ReportServer nodes.
 
-## Deployed environments with pre-Platform Update 41 base deployments
+## Deployed environments where the base deployment is earlier than Platform update 41
 
 > [!NOTE]
-> This configuration is only supported with Platform update 41 and later deployments.
+> This configuration is supported only for Platform update 41 and later deployments.
 
-For existing environments that want to enable high availability for their SSRS nodes, they can use a predeployment script. For more information on predeployment scripts, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md)
+If you want to enable high availability for the SSRS nodes in existing environments, you can use a predeployment script. For more information about predeployment scripts, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
 
 ### Predeployment script
 
-Invoke command example:
+#### Invoke command example
 
 ```powershell
 Configure-SSRSHA.ps1 -AgentShare "\\servername\D365FFOAgent" -Listener "LBDEN05FS1BI" -MachinesList "LBDEN05FS1BI1,LBDEN05FS1BI2" -TLSCertificateThumbprint "<cert thumbprint>" -ServiceAccount "contosoen05\svc-ReportSvc$"
 ```
 
-Configure-SSRSHA.ps1 script:
+#### Configure-SSRSHA.ps1 script
 
 ```powershell
 param (
@@ -198,5 +198,4 @@ $configJson.components = $updatedComponents
 $configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
 
 Write-Host "Successfully updated the configuration for SSRS HA."
-
 ```
