@@ -80,7 +80,7 @@ You can use the **Logging database changes** wizard to set up database logging. 
    > Database logging is not available on all tables in the Human Resources database. Selecting **Show all tables** below the list expands the list of tables and fields to show all database tables for which database logging is available, but this will be a subset of the full list of database tables.
 
 4. On the **Types of change** page of the wizard, select the data operations for which you want to track changes for each of the tables and fields, and select **Next**. See the table below for a description of the data operations that are available for logging.
-5. On the **Finish** page, review the changes that will be made, and select **Finsih**.
+5. On the **Finish** page, review the changes that will be made, and select **Finish**.
 
 | Operation | Description |
 | -- | -- |
