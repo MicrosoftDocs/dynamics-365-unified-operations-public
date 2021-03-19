@@ -70,6 +70,6 @@ This topic explains how to set up information about the Tax Deducted at Source (
     [![Tax information FastTab](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **Registration IDs**.
-10. On the **Tax information** tab, select **Add** or **Edit** to maintain the tax registration entry.
+10. On **Manage addresses** page, on the **Tax information** FastTab, select **Add** or **Edit** to maintain the tax registration entry.
 11. On the **Withholding tax** tab, in the **Tax Account Number (TAN)** field, enter the TAN. The TAN must consist of four alphabetic characters, then five numeric characters, and then one alphabetic character. Here is an example: **AFGH54821T**.
 12. Close the page.
