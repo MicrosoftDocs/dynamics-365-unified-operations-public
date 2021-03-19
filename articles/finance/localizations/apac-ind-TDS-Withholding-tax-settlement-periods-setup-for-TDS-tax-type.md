@@ -41,7 +41,7 @@ This topic explains how to set up settlement periods for Tax Deducted at Source 
     [![Withholding tax settlement periods page](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
 
 2. In the **Tax type** field, select **TDS** to set up withholding tax settlement periods for the TDS tax type.
-3. On the **Overview** tab, select **Ctrl+N** to create a line.
+3. Select **New** to create a line.
 4. In the **Settlement period** field, enter a name for the TDS settlement period.
 5. In the **Description** field, enter a description.
 6. In the **Withholding tax authority** field, select the TDS authority that you're defining the TDS settlement period for.
