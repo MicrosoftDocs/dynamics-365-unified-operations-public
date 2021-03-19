@@ -43,7 +43,7 @@ This topic explains how to set up tax codes for Tax Deducted at Source (TDS).
 2. On the Action Pane, select **New** to create a withholding tax code for TDS, and enter the required details.
 3. On the **General** FastTab, in the **Tax type** field, select **TDS** to categorize the tax code as a TDS tax code.
 4. In the **Settlement period** field, select the TDS settlement period for the TDS tax code.
-5. In the **Account** field, select the ledger account that the TDS amount should be posted to.
+5. In the **Main account** field, select the ledger account that the TDS amount should be posted to.
 6. In the **Receivable account** field, select the receivable account that the TDS amount that is deducted in sales transactions should be posted to.
 
     The **Origin** field is automatically set to **Percentage of gross amount**, and the value can't be changed.
@@ -62,6 +62,6 @@ This topic explains how to set up tax codes for Tax Deducted at Source (TDS).
 11. Close the **Withholding tax values** page to return to the **Withholding tax codes** page.
 
     > [!NOTE]
-    > The **Limits** button isn't available for tax codes of the TDS tax type.
+    > The **Limits** button on the **Withholding tax codes** page isn't available for tax codes of the TDS tax type.
 
 12. Close the page.
