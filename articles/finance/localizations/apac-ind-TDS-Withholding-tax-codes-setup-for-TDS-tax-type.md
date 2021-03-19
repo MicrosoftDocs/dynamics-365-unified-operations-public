@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 This topic explains how to set up tax codes for Tax Deducted at Source (TDS).
 
-1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax codes**.
+1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax codes**.
 
     [![Withholding tax codes page](./media/apac-ind-TDS-17.png)](./media/apac-ind-TDS-17.png)
 
