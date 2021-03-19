@@ -97,6 +97,7 @@ Modules such as the [content block](../add-hero-module.md) module that display i
 ## Enable product collection module lazy load
 The [product collection](../product-collection-module-overview.md) module data action calls can cause a small increase in page load time.  The module has a configuration **Enable module lazy load** setting that will allow the module to render client side, after the page has rendered which will allow the page to be available for user interaction sooner.
 
+![Enable module lazy load](media/best-practices-dev-2.png)
 
 ## Cache configuration
 
