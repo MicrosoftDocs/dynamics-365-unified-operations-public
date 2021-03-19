@@ -40,7 +40,7 @@ This topic explains how to set up information about the Tax Deducted at Source (
 
     [![All vendors page](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
-2. On the Action Pane, select **New** to create a vendor or customer, and enter the required details. Alternatively, select an existing customer.
+2. On the Action Pane, select **New** to create a vendor or customer, and enter the required details. Alternatively, select an existing vendor or customer.
 3. On the **Setup** FastTab, in the **Withholding tax** section, select the **Calculate withholding tax** check box to calculate withholding tax, TDS, or Tax Collected at Source (TCS) for the vendor or customer.
 4. TDS for a purchase invoice is calculated based on the default TDS group that is defined for the vendor or customer. In the **TDS group** field, select the default TDS group.
 
