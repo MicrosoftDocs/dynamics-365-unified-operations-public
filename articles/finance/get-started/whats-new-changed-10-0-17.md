@@ -27,7 +27,7 @@ ms.search.validFrom: 2021-01-25
 ms.dyn365.ops.version: 10.0.17
 
 ---
-# Preview features in Dynamics 365 Finance 10.0.17 (April 2021)
+# What's new or changed in Dynamics 365 Finance 10.0.17 (April 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
