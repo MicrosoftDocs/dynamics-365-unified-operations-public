@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Platform update 42
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
 ## Issue
 
 Microsoft Dynamics 365 Human Resources can experience issues with batch jobs that are stuck in either an "Executing" or "Canceling" state, and do not complete execution.
