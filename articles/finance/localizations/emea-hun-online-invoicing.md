@@ -5,7 +5,7 @@ title: Online invoicing system
 description: This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: anasyash
 manager: AnnBe
-ms.date: 03/17/2021
+ms.date: 03/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -393,15 +393,15 @@ Although this appendix includes the most important information about the setup, 
 
 ### Web service settings
 
-**Online Invoicing** processing uses the following web services.
+**Online invoicing** processing uses the following web services.
 
-| Web service name     | Testing Internet address (for Online invoicing system XSD 3.0)                      |
+| Web service name     | Testing internet address (for Online invoicing system XSD 3.0)                      |
 |----------------------|-------------------------------------------------------------------------------------|
 | Manage invoices      | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v3/manageInvoice`          |
 | Query invoice status | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v3/queryTransactionStatus` |
 | Token exchange       | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v3/tokenExchange`          |
 
-Internet addresses are subject to change by the Hungarian Online invoicing system. Therefore, we recommend that you check for actual internet addresses on the official web site of the Hungarian Online invoicing system. The website also has information about the actual production internet addresses that you should set up.
+Internet addresses are subject to change by the Hungarian Online invoicing system. You should verify the actual internet addresses on the official web site of the Hungarian Online invoicing system. The website also has information about the actual production internet addresses that you should set up.
 
 ### Additional fields
 
@@ -582,7 +582,7 @@ As of XSD version 3.0, the Online invoicing system supports archiving digital in
 2. Go to **Organization administration** \> **Document management** \> **Document management parameters**, and set up the archive directory.
 3. Specify the customers and project invoices that must be archived. Open the **Customer** page for each customer, select **Invoice and delivery** \> **eInvoice**, and then set the **eInvoice attachment** option to **Yes**.
 
-Find more details about how to [Archive printed customer invoices with hash numbers](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/archive-printed-invoices) 
+For more information, see [Archive printed customer invoices with hash numbers](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/archive-printed-invoices).
 
 After you've finished, any posted and printed invoices for the specified customers will have an attachment where the **Type** field is set to **File** and the **Restriction** field is set to **External**. To review attachments, select **Document handling**. The **General** FastTab of the **Document handling** page shows the hash number that is related to an invoice. If an attachment that was created for an invoice has a hash number, when the invoice is reported to the Online invoicing system, it will include the hash number value that is stored in the system.
 
