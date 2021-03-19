@@ -128,7 +128,7 @@ LCS has integrated a set of tools that can be used to properly monitor LCS proje
 
 [Service Health Dashboard](http://portal.office.com/servicestatus) where the health status and incidents can be found for Office365 Services.
 
-You can also view the service health through the admin center. Go to  **Health**  \&gt;  **Service health** or select the  **Service health**  card on the  **Home dashboard**.
+You can also view the service health through the admin center. Go to  **Health**  >  **Service health** or select the  **Service health**  card on the  **Home dashboard**.
 
 The **All services** tab (the default view) shows all services and their current health state. An icon and the **Status** column indicate the state of each service.
 
