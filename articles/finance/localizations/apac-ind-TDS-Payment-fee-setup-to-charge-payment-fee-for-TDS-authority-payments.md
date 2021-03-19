@@ -64,11 +64,12 @@ This topic explains how to set up payment fees that are charged for Tax Deducted
 8. If you selected **Table** or **Group** in the **Groupings** field, in the **Bank relation** field, select the specific bank account or bank group that you're setting up the payment fee for.
 9. In the **Method of payment** field, select the method of payment for the payment of fees.
 10. In the **Payment specification** field, select or enter the payment specification code that was generated on the **Payment specification** page.
-11. In the **Payment currency** field, select the currency that activates the fee. Only transactions that use the selected currency can activate the fee. If you leave this field blank, all currencies activate the fee.
-12. In the **Percentage/Amount** field, select the calculation method. The options are **Amount**, **Percent**, and **Interval**.
-13. In the **Fee amount** field, specify the fee amount as either a percentage of the payment or the amount for one payment.
-14. In the **Fee currency** field, specify the currency code for the fee.
-15. Select the **General** tab to view or modify the details for the selected bank account.
+    - The Payment specification is used with electronic fund transfer methods of payment.
+12. In the **Payment currency** field, select the currency that activates the fee. Only transactions that use the selected currency can activate the fee. If you leave this field blank, all currencies activate the fee.
+13. In the **Percentage/Amount** field, select the calculation method. The options are **Amount**, **Percent**, and **Interval**.
+14. In the **Fee amount** field, specify the fee amount as either a percentage of the payment or the amount for one payment.
+15. In the **Fee currency** field, specify the currency code for the fee.
+16. Select the **General** tab to view or modify the details for the selected bank account.
 
     [![General tab](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
