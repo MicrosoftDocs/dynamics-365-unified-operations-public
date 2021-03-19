@@ -47,6 +47,6 @@ This topic explains how to set up Tax Deducted at Source (TDS) authorities.
 6. On the **General** FastTab, in the **Vendor account** field, select the vendor account for the TDS authority.
 
     > [!NOTE]
-    > You must define the name of the bank where funds that are owed to the TDS authority vendor will be deposited. The bank's name is defined on the **Bank accounts** page (**Accounts payable \> Vendors \> Setup button \> Bank accounts**).
+    > You must define the name of the bank where funds that are owed to the TDS authority vendor will be deposited. The bank's name is defined on the **Bank accounts** page (**Accounts payable \> All vendors \> Vendor \> Set up \> Bank accounts**).
 
 7. Close the page.
