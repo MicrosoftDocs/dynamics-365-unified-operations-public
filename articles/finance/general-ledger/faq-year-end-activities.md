@@ -28,6 +28,8 @@ ms.dyn365.ops.version: 10.0.14
 
 # Year-end activities FAQ 
 
+[!include [banner](../includes/banner.md)]
+
 This topic has been compiled to assist with year-end closing activities. The information in this topic primarily focuses on questions concerning year-end closing activities  for General ledger and Accounts payable.
 
 ## General ledger: How do I know that we're running year-end close and not undoing year-end close?
