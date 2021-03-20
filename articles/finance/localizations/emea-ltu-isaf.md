@@ -284,9 +284,26 @@ Setup paramers for **Generate message** action of **i.SAF** electronic message p
 
 7. Save parameters by **OK** button.
 
-1. To generate i.SAF report, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Message itemss**, and on the Action Pane, select **Run processing** 
-2. Select **i.SAF** in the **Processing** field and then select **"Generate message"** in the **Action** field to generate i.SAF report. 
+To generate i.SAF report in batch mode, follow the next steps:
+
+1. Open **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Message itemss** page, and on the Action Pane, select **Run processing** 
+2. Select **i.SAF** in the **Processing** field, mark **Choose action** parameter and then select **"Generate message"** in the **Action** field to generate i.SAF report. 
 3. Use **Run in the background** fast tab to specify parameters of the batch and click **OK** button to start i.SAF generation.
+
+![i.SAF Invoice type evaluation](media/isaf-run-processing.png)
+
+4. As a result of the **Generate message** action, for all of the EM items with a status of **Evaluated** and fitting in the parameters specified for the report, an electronic message will be created and shown in **Message** column in relation with each invoice. The **Status** of the messages items included to the report will be changed to **Reported**.
+5. To view the file, select the electronic message item, and then select **Attachments** (paper clip icon) in the upper-right corner of the page. 
+6. On the **Attachments** page for the selected message, select the last attachment, and then, on the Action Pane, select **Open**.
+
+To generate i.SAF report in non-batch mode, follow the next steps:
+
+1. Open **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Message itemss** page, and on the Action Pane, select **Generate report** 
+2. Select **i.SAF** in the **Processing** field and then select **"Generate message"** in the **Action** field to generate i.SAF report. 
+3. In the **Electronic report parameters** dialog page you can adjust parameters which were specified for the **Generate message** action before and start report generation.
+4. As a result of the **Generate message** action, for all of the EM items with a status of **Evaluated** and fitting in the parameters specified for the report, an electronic message will be created and shown in **Message** column in relation with each invoice. The **Status** of the messages items included to the report will be changed to **Reported**.
+5. To view the file, select the electronic message item, and then select **Attachments** (paper clip icon) in the upper-right corner of the page. 
+6. On the **Attachments** page for the selected message, select the last attachment, and then, on the Action Pane, select **Open**.
 
 ![i.SAF Invoice type evaluation](media/isaf-run-processing.png)
 
