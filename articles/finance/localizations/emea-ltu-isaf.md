@@ -254,9 +254,7 @@ When invoices are successfully populated from data sources to the **Message item
 
 The i.SAF report must be generated and provided to the Tax Authority in XML format.
 
-1. To generate i.SAF report, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Message itemss**, and on the Action Pane, select **Generate report**. 
-2. Select **i.SAF** in the **Processing** field and then select **"Generate message"** in the **Action** field to generate i.SAF report. 
-3. In the **Electronic report parameters** dialog page define the following parameters:
+i.SAF report has following parameters:
 
 | **Parameter name** | **Description** |
 |----------------|-------------|
@@ -267,7 +265,32 @@ The i.SAF report must be generated and provided to the Tax Authority in XML form
 | **Part number** | Enter the number of the part of the report. |
 | **Number of parts** | Enter the number of the parts. |
 
-As a result of the **"Generate message"** action, for all of the invoices with a status of **Evaluated**, an electronic message will be created and shown in **Message** column in relation with each invoice. The **Status** of the messages items included to the report will be changed to **Reported**.
+These parameters must be defined before you start generating i.SAF.
+
+If you plan to generate i.SAF in batch mode, check that **Use parameters** check box is marked for **Generate message** action of **i.SAF** electronic messages processing.
+
+![i.SAF Invoice type evaluation](media/isaf-use-parameters.png)
+
+Setup paramers for **Generate message** action of **i.SAF** electronic message processing:
+
+1. Open **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing** page
+2. Select **i.SAF** electronic message processing on the left
+3. Select **Generate message** action on **Action** fast tab
+4. Check that **Use parameters** check box is marked
+5. Click **Parameters** button on the Action pane of the **Action** fast tab
+6. Define parameters for i.SAF report which will be used by the system during i.SAF generation as they are explaned in the table above. You do not need to fill in any value for **Message** parametr.
+
+![i.SAF Invoice type evaluation](media/isaf-parameters-setup.png)
+
+7. Save parameters by **OK** button.
+
+1. To generate i.SAF report, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Message itemss**, and on the Action Pane, select **Run processing** 
+2. Select **i.SAF** in the **Processing** field and then select **"Generate message"** in the **Action** field to generate i.SAF report. 
+3. Use **Run in the background** fast tab to specify parameters of the batch and click **OK** button to start i.SAF generation.
+
+![i.SAF Invoice type evaluation](media/isaf-run-processing.png)
+
+4. As a result of the **"Generate message"** action, for all of the EM items with a status of **Evaluated** and fitting in the parameters specified for the report, an electronic message will be created and shown in **Message** column in relation with each invoice. The **Status** of the messages items included to the report will be changed to **Reported**.
 5. To view the file, select the electronic message item, and then select **Attachments** (paper clip icon) in the upper-right corner of the page. 
 6. On the **Attachments** page for the selected message, select the last attachment, and then, on the Action Pane, select **Open**.
 
