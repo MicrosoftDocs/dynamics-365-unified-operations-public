@@ -115,8 +115,9 @@ When upgrading the module library, there may be new settings that are applicable
 
 When a local configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, the local app.settings.json file updates will be included. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS). You will then see the new settings in the site builder tool.
 
-## Update using a global module library extension (Note: only use if you have no e-commerce customizations)
+## Update module libray using a global module library extension
 
+**Note: only use if you have no e-commerce customizations**
 If you have an environment that has no e-commerce extension customizations (modules, data actions or themes) such as a newly deployed environment, you can update it using a pre-configured e-Commerce global extension within LCS.  Deploying with one of the globally available customizations will overwrite the deployed e-Commerce extension package so it is important to make sure you do not have any customizations already uploaded as it will be overwritten.  Follow the steps below to update an environment.  You need to also ensure you are not upgrading to a version above the deployed Commerce scale unit version as shown above.
 
 ### Steps to deploy a global e-commerce extension
