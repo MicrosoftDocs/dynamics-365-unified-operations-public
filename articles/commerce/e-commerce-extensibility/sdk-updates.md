@@ -133,9 +133,12 @@ If you have an environment that has no e-commerce extension customizations (modu
 
 ![Import into asset library](media/module-library-update-3.png)
 
-Notice the naming convention of the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version as shown in the above image (example the filename in the above screen shot is for the Commerce release 10.0.16 and the module library version is 9.26.15).  Only general availability versions will be made available.
+Notice the naming convention of the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version.  For example in the above image, the filename is for the Commerce release 10.0.16 and includes module library version 9.26.15.  Only general availability versions will be made available.
 
-4. Once the package has completed
+4. Once the package has been imported, it can be deployed into an e-commerce environment. Select the environment to updated in LCS followed by the **manage** button to get to the screen shot shown below.  Select the **e-Commerce** tab and **Apply extension** to brin gup the extension picker.  Select the extension you want to deploy and select the **Update** button.  This deployment may take from 15-30 minutes to complete. For more details on how to upload the extension see the [Package configurations and deploy them to an online environment](package-deploy.md) article.
+
+![Import into asset library](media/module-library-update-4.png)
+
 
 ## Additional resources
 
