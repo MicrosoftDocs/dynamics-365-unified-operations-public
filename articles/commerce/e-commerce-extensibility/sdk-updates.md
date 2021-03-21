@@ -115,19 +115,27 @@ When upgrading the module library, there may be new settings that are applicable
 
 When a local configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, the local app.settings.json file updates will be included. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS). You will then see the new settings in the site builder tool.
 
-## Update using globabl module library extensions (only use if you have no e-commerce customizations)
+## Update using a global module library extension (Note: only use if you have no e-commerce customizations)
 
 If you have an environment that has no e-commerce extension customizations (modules, data actions or themes) such as a newly deployed environment, you can update it using a pre-configured e-commerce global extension within LCS.  Deploying with one of the globally available customizations will overwrite the deployed e-commerce extension package so it is important to make sure you do not have any customizations already uploaded as it will be overwritten.  Follow the steps below to update an environment.  You need to also ensure you are not upgrading to a version above the deployed Commerce scale unit version as shown above.
 
 ### Steps to deploy a global e-commerce extension
 
-1. From within LCS project select the asset libary as shown below.
+1. From within LCS project select the **Asset libary** as shown below.
 
-![Asset Library](media/module-library-update-1.png)
+![Asset library](media/module-library-update-1.png)
 
-2. 
+2. From within the **Asset library** page, select the **e-Commerce package** tab and select the **Import** button as shown below.
 
-but want to update the module library to the
+![Import into asset library](media/module-library-update-2.png)
+
+3. Select the package to import followed by the **Pick** button as shown below. It may take 15-30 minutes for the package to be available.
+
+![Import into asset library](media/module-library-update-3.png)
+
+Notice the naming convention of the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version as shown in the above image (example the filename in the above screen shot is for the Commerce release 10.0.16 and the module library version is 9.26.15).  Only general availability versions will be made available.
+
+4. Once the package has completed
 
 ## Additional resources
 
