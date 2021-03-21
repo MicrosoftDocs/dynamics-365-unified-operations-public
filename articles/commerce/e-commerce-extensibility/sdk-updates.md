@@ -117,7 +117,7 @@ When a local configuration package is created by using the **yarn msdyn365 pack*
 
 ## Update using a global module library extension (Note: only use if you have no e-commerce customizations)
 
-If you have an environment that has no e-commerce extension customizations (modules, data actions or themes) such as a newly deployed environment, you can update it using a pre-configured e-commerce global extension within LCS.  Deploying with one of the globally available customizations will overwrite the deployed e-commerce extension package so it is important to make sure you do not have any customizations already uploaded as it will be overwritten.  Follow the steps below to update an environment.  You need to also ensure you are not upgrading to a version above the deployed Commerce scale unit version as shown above.
+If you have an environment that has no e-commerce extension customizations (modules, data actions or themes) such as a newly deployed environment, you can update it using a pre-configured e-Commerce global extension within LCS.  Deploying with one of the globally available customizations will overwrite the deployed e-Commerce extension package so it is important to make sure you do not have any customizations already uploaded as it will be overwritten.  Follow the steps below to update an environment.  You need to also ensure you are not upgrading to a version above the deployed Commerce scale unit version as shown above.
 
 ### Steps to deploy a global e-commerce extension
 
@@ -133,7 +133,7 @@ If you have an environment that has no e-commerce extension customizations (modu
 
 ![Import into asset library](media/module-library-update-3.png)
 
-Notice the naming convention of the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version.  For example in the above image, the filename is for the Commerce release 10.0.16 and includes module library version 9.26.15.  Only general availability versions will be made available.
+Notice the naming convention of the global e-Commerce extension file has the Commerce release version and the module library release version to help you pick the correct version.  For example in the above image, the filename is for the Commerce release 10.0.16 and includes module library version 9.26.15.  Only general availability versions will be made available.
 
 4. Once the package has been imported, it can be deployed into an e-commerce environment. Select the environment to updated in LCS followed by the **manage** button to get to the screen shot shown below.  Select the **e-Commerce** tab and **Apply extension** to brin gup the extension picker.  Select the extension you want to deploy and select the **Update** button.  This deployment may take from 15-30 minutes to complete. For more details on how to upload the extension see the [Package configurations and deploy them to an online environment](package-deploy.md) article.
 
