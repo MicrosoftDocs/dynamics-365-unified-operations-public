@@ -40,7 +40,7 @@ The module preview data is stored in a special PREVIEW_NAME.preview.json file un
 
 ## Preview json file structure
 
-The json file is configured similar to the [module mock file](module-mock-file.md) and below is an example:
+The json file is configured similar to the [module mock file](module-mock-file.md) with exception to images (see below more details on images).  Below is a example json file:
 
 ```json
 {
@@ -50,8 +50,8 @@ The json file is configured similar to the [module mock file](module-mock-file.m
 	    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
 	    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
 	    "productImage": {
-		    "src": "https://bit.ly/33cMGxr",
-		    "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+		    "src": "svg.large",
+		    "hint": "image"
 	    },
 	    "buttonText": "Buy Now",
 	    "productIds": "68719498121"
@@ -60,11 +60,19 @@ The json file is configured similar to the [module mock file](module-mock-file.m
 ```
 ### Preview json field definitions
 *"Id" - maps to the module Id
+
 *"config" - the config section contains a list of configuration values based on the name of the configuration stored in the modules definition file.
 
 ## Preview data for images
-Definining images is a bit different, the site builder 
 
+Images rendered in the site builder can choose to show the default image picker using **"src": "svg.large"** and **"hint": "image"** as shown below when no image is set.
+
+```json
+"productImage": {
+    "src": "svg.large",
+    "hint": "image"
+}
+```
 
 ## Additional resources
 
