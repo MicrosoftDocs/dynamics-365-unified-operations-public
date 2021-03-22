@@ -66,11 +66,11 @@ The JSON file is configured similar to a [module mock file](module-mock-file.md)
     }
 }
 ```
-### Preview json field definitions
+### Preset JSON field definitions
 * "id" - maps to the module Id
 * "config" - the config section contains a list of configuration values based on the name of the configuration stored in the modules definition file.
 
-## Preview data for images
+## Preset data for images
 When using module configuration presets, specifying custom images is not currently supported, but a hint can be provided for the editor to display an svg placeholder image which will allow selecting the image to set a new image.  Set the image configuration to the following: **"src": "svg.large"** and **"hint": "image"** as shown below:
 
 ```json
