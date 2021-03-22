@@ -57,3 +57,11 @@ Verify that the "Cash flow measure V2" and "LedgerCovLiquidityMeasurement" measu
 ## Have the Entity store entities been refreshed?
 
 You must periodically refresh your entities to ensure that the data is current and accurate. To manually refresh a specific entity, go to **System administration \> Setup \> Entity store**, select the entity, and then select **Refresh**. The data can also be updated automatically. On the **Entity store** page, set the **Automatic refresh enabled** option to **Yes**.
+
+## Which calculation method should be used when calculating cash flow forecast?
+
+Cash flow forecast calculation method has two important selection options.  "New" will calculate cash flow forecasts for new documents and documents that have changed since the last batch job execution.  This option is much faster because it only needs to process a smaller subset of documents.  "Total" will recalculate cash flow forecasts for every document in the system.  This option takes more time because it has more work to complete.
+
+## What can be done to improve the performance of the cash flow forecasting recurring batch job?
+
+Cash flow forecasting should be calculated one time per day during the off-peak hours using the "New" calculation method six days of the week.  The "Total" calculation method should be set up to run once per week on the day with the least amount of activity.
