@@ -2,7 +2,7 @@
 # required metadata
 
 title: Module configuration presets
-description: This topic covers how to create module configuration presets, which are default configuration field values used in the site builder tool preview when no value is set.
+description: This topic covers how to create module configuration presets, which are default configuration field values used in the site builder tool  when no value is set.
 author: samjarawan
 manager: annbe
 ms.date: 03/09/2021
@@ -30,13 +30,21 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers how to create module configuration presets, which are default configuration field values used in the site builder tool preview when no value is set.
+This topic covers how to create module configuration presets, which are default configuration field values used in the site builder tool  when no value is set.
 
 ## Overview
 
-When a module is placed on a page within site builder, a preset value can be used for each configuration field when the field is not set. This is useful to show default values within the site builder preview pane which can help a site author see what the module will look like prior to the appropriate data being set.  When the module is saved, the preview value will be stored for all fields except image fields (see information below for images).
+When a module is added to any editing surface where defaults are not set at the template or layout level, the module presets will be used as the default configuration field values. 
 
-The module preview data is stored in a special PREVIEW_NAME.preview.json file under the module folder where PREVIEW_NAME can be any name.  Any number of preview files can exist and can be selected in the site builder too.  For example, a custom module named **product-feature** has a preview file stored under the modules directory: **/src/modules/product-feature/previews/defaultValues.preview.json**.
+Module configuration presets can be created at the module level and/or within a theme, allowing different sets of data to be used based on the theme selected.  If no theme module preset exists for a given theme, the site builder will fall back to the module level preset if one exists. If both a module level preset and theme preset exists the theme level preset will override the module level preset.
+
+## Module configuration presets
+
+The module configuration preset data is stored in a file with the name **MODULE_NAME.preview.json** in a **previews** folder under the module folder. For example, a custom module named **product-feature** has a preview file stored under the modules directory: **\src\modules\product-feature\previews\product-feature.preview.json**.
+
+## Theme configuration presets
+
+Themes can also contain module configuration preset files which will be used when a theme is selected.  The module configuration preset file needs to be created under the theme directory using a pattern:  **\src\themes\THEME_NAME\previews\modules\MODULE_NAME\MODULE_NAME.preview.json"**. For example, for a theme called **spring**, the **product-feature** module theme configuration preset file would be **\src\themes\spring\previews\modules\product-feature\product-feature.preview.json"**. 
 
 ## Preview json file structure
 
@@ -44,27 +52,26 @@ The json file is configured similar to a [module mock file](module-mock-file.md)
 
 ```json
 {
-	"id": "product-feature",
-	"config": {
-	    "imageAlignment": "left",
-	    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
-	    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
-	    "productImage": {
-		    "src": "svg.large",
-		    "hint": "image"
-	    },
-	    "buttonText": "Buy Now",
-	    "productIds": "68719498121"
-	}
-} 
+    "id": "product-feature",
+    "config": {
+        "imageAlignment": "left",
+        "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+        "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+        "productImage": {
+            "src": "svg.large",
+	    "hint": "image"
+        },
+        "buttonText": "Buy Now",
+        "productIds": "68719498121"
+    }
+}
 ```
 ### Preview json field definitions
 * "id" - maps to the module Id
 * "config" - the config section contains a list of configuration values based on the name of the configuration stored in the modules definition file.
 
 ## Preview data for images
-
-Image preview data can be used to specify that site builder should show its default image in the preview pane.  This can be done using **"src": "svg.large"** and **"hint": "image"** as shown below when no image is set.
+When using module configuration presets, specifying custom images is not currently supported, but a hint can be provided for the editor to display an svg placeholder image which will allow selecting the image to set a new image.  Set the image configuration to the following: **"src": "svg.large"** and **"hint": "image"** as shown below:
 
 ```json
 "productImage": {
