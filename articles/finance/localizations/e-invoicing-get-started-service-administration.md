@@ -32,8 +32,6 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 ## Prerequisites
 
 Before you complete the procedures in this topic, the following prerequisites must be in place:
