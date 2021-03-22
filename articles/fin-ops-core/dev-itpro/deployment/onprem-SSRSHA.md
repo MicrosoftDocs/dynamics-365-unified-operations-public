@@ -39,7 +39,7 @@ This scenario uses Windows failover clusters. Therefore, you will have one activ
 
 This topic doesn't cover the setup of Windows failover clusters. For information, see [Create a failover cluster](https://docs.microsoft.com/windows-server/failover-clustering/create-failover-cluster).
 
-After the cluster is set up, you can configure your installation. From this point onward, the explanations will be based on the information in the following illustration.
+After the cluster is set up, you can configure your installation. The examples below will be based on the information displayed in the following illustration.
 
 ![Example of a Windows failover cluster configuration](./media/WFC.png)
 
@@ -65,7 +65,8 @@ After the cluster is set up, you can configure your installation. From this poin
         ```
 
     1. Update the **SSRSHTTPS** certificate settings.
-
+        
+        This example has been configured using the screenshot from above. The Subject attribute should be set to the client access name. Additionally for convinience we have set the name and filename to be the same value. For the DNSName we have an entry for each of the preffered owners as well as the client access name. 
         ```xml
         <Certificate type="SSRSHTTPS" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
             <!-- Specify the friendly name of the certificate during import operations. -->
@@ -126,6 +127,9 @@ If you want to enable high availability for the SSRS nodes in existing environme
 ```powershell
 Configure-SSRSHA.ps1 -AgentShare "\\servername\D365FFOAgent" -Listener "LBDEN05FS1BI" -MachinesList "LBDEN05FS1BI1,LBDEN05FS1BI2" -TLSCertificateThumbprint "<cert thumbprint>" -ServiceAccount "contosoen05\svc-ReportSvc$"
 ```
+
+> [!NOTE]
+> These example values have been filled out according to the values used in the **ConfigTemplate.xml** from the [High availability with Windows failover clusters](#high-availability-with-windows-failover-clusters) section.
 
 #### Configure-SSRSHA.ps1 script
 
