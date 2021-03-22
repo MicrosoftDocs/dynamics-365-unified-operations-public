@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.17 (April 2021)
+title: What's new or changed in Dynamics 365 Commerce 10.0.17 (April 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.17. 
 author: josaw1
 manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -28,11 +27,9 @@ ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
 
 ---
-# Preview features in Dynamics 365 Commerce 10.0.17 (April 2021)
+# What's new or changed in Dynamics 365 Commerce 10.0.17 (April 2021)
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
-
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.17. This version has a build number of 10.0.761 and is available on the following schedule:
 
@@ -57,7 +54,7 @@ The following features are included in this release. The feature titles link to 
 - [Refactored payment processing in storefront checkout](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/refactored-payment-processing-storefront-checkout)
 - [Email receipt improvements and new features](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/email-receipt-improvements-new-features)
 - [Exclusive threshold discounts compete with exclusive non-threshold periodic discounts](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/exclusive-threshold-discounts-compete-exclusive-non-threshold-periodic-discounts)
-- [Improved user experience for pickup order processing in point of sale](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improved-user-experience-pick-up-order-processing-point-sale)<br> - For more information, see [Process customer order pickups in POS](../process-order-pickup-pos.md).
+- [Improved user experience for pickup order processing in point of sale](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/improved-user-experience-pick-up-order-processing-point-sale)<br> - For more information, see [Process customer order pickups in POS](../process-order-pickup-POS.md).
 - [Independent deployment and installation packages for MPOS, CPOS, HWS, and CSU extensions](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/independent-deployment-installation-packages-modern-pos-cloud-pos-hardware-station-cloud-scale-unit-extensions)
 - [Simplified Commerce SDK update and developer experience](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/simplified-commerce-sdk-update-developer-experience)
 - [Commerce localization for Brazil](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/commerce-localization-brazil)<br> - For more information, see [Commerce localization for Brazil](../localizations/latam-bra-commerce-localization.md).

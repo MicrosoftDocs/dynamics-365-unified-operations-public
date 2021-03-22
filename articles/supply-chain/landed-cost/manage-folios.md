@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Manage folios
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A folio is often determined by customs regulations. It can consist of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
 

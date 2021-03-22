@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,7 +30,6 @@ ms.dyn365.ops.version: 10.0.17
 # Standard saved views for Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management includes several saved views that you can enable and use as needed. Some of these standard saved views are optimized and named for a specific role or task (for example, "Quality control" or "Receiving"). Others are optimized so that they include only the fields and settings that Microsoft usage statistics indicate are most often used by customers. These saved views are typically referred to as *simplified* views. This topic describes the standard saved views that are available, and explains how to enable and customize them.
 

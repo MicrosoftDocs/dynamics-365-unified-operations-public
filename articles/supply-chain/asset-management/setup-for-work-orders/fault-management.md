@@ -3,12 +3,11 @@
 
 title: Fault management
 description: This topic explains fault management in Asset Management.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
 

@@ -8,7 +8,6 @@ manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -232,7 +231,7 @@ The following table shows which inbound features are supported, and where they a
 | Transfer order line receiving and put away                        | Yes | No |
 | Cancel work (inbound)                                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but only when the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) is cleared</p> |
 | Purchase order product receipt processing                          | Yes | No |
-| Purchase order receiving with underdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No, because you can only cancel the full warehouse order line quantities |
+| Purchase order receiving with underdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes, but only by making a cancellation request from the hub |
 | Purchase order receiving with overdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes  |
 | Receiving with creation of *Cross docking*  work                   | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of *Quality order* work                  | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |

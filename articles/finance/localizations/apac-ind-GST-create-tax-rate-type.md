@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

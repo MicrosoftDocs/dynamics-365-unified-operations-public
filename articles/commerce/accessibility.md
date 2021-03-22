@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,12 +29,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Accessibility features and capabilities
 
-
 [!include [banner](includes/banner.md)]
 
 This topic provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Accessibility features and capabilities provide the functional means for all users to access and perform actions so that they can accomplish their goals. This broad range of users might require assistive tools for hearing, vision, mobility, or neurodiversity.
 

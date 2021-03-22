@@ -7,7 +7,6 @@ ms.topic: article
 ms.author: margoc
 
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology:
 
 # optional metadata

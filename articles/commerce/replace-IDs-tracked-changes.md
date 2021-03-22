@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -33,8 +32,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic describes how to replace user IDs that are associated with tracked content changes in Microsoft Dynamics 365 Commerce site builder.
-
-## Overview
 
 In Dynamics 365 Commerce, the site builder authoring tool tracks changes that are made to items in the content management system (CMS). Therefore, a document change history can be shown to help teams track their efforts when they collaborate on content. To assign user identities to tracked changes, the system uses user IDs from the Azure Active Directory (Azure AD) identity management system. These user IDs are also the email addresses that are issued by Azure AD. Commerce system admins can replace user ID references in the change tracking history logs in site builder as they require.
 

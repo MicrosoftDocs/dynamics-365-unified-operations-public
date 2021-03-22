@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.8
 # Search results module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

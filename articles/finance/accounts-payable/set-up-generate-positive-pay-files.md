@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -145,6 +144,9 @@ Positive pay files are created by using data entities. Before you can generate a
   </xsl:template>
 </xsl:stylesheet>
 ```
+
+> [!NOTE]
+> XML names in the XSLT must match the casing of the nodes in the XML. Both the XSLT and XML files are case sensitive. 
 
 ## Assign the positive pay format to a bank account
 For each bank account that you want to generate positive pay information for, you must assign the positive pay format that you specified in the previous section. On the **Bank accounts** page, select the positive pay format that corresponds to the bank account. In the **Positive pay start date** field, enter the first date to generate positive pay files. It's important that you enter a date in this field. Otherwise, the first positive pay file that you generate will include all checks that have ever been created for this bank account.

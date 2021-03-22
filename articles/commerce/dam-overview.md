@@ -9,7 +9,6 @@ manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -34,8 +33,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview of digital asset management in Microsoft Dynamics 365 Commerce site builder.
-
-## Overview
 
 Dynamics 365 Commerce site builder's Media Library features rich digital asset management functionality, including support for the following:
 - Image assets

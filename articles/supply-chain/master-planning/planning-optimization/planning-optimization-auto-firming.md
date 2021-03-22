@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,6 +36,8 @@ Automatic firming lets you firm (that is, release) planned orders as part of the
 
 > [!NOTE]
 > Auto-firming of a planned purchase order can occur only if the item is associated with a vendor.
+> 
+> Firmed derived orders (subcontract purchase orders) will show a status of *In-review* when case change tracking is enabled.
 
 ## Turn on autofirming
 
