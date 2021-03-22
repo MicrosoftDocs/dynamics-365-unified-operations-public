@@ -52,7 +52,7 @@ Page summary modules simplifies entry of page summary metadata which can be used
 
 ## Adding a page module to a template
 
-1. From within a site builder template select the **Add Module** option within the **...** of the **HTML Head** slot and select the page summary module followed by the **OK** button as shown below.  Ensure you add the appropriate page summary module based on the page types the template will be used for.
+From within a site builder template select the **Add Module** option within the **...** of the **HTML Head** slot and select the page summary module followed by the **OK** button as shown below.  Ensure you add the appropriate page summary module based on the page types the template will be used for.
 
 ![Add new module](media/page-summary-1.png)
 
