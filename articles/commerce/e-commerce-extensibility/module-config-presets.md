@@ -30,13 +30,13 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers how to preset default configuration preview values that will show up in the site builder tool for each module configuration field.
+This topic covers how to create module configuration presets, which are default configuration field values used in the site builder tools preview when no value is set.
 
 ## Overview
 
-When a module is placed on a page within site builder, a preset value can be used for the module preview for each configuration field when the field is not set. This is useful to show default values such as images within the site builder preview to show the site author what the module will look like.
+When a module is placed on a page within site builder, a preset value can be used for the module preview for each configuration field when the field is not set. This is useful to show default values such as images within the site builder preview pane which can help a site author see what the module will look like prior to the appropriate data being set.
 
-Each module configuration field can be configured with a default **preview** value, which will show up in site builder when no value is set.  This module preview data is stored in a special PREVIEW_NAME.preview.json file under the module folder where PREVIEW_NAME can be any name.  Any number of preview files can exist and can be selected in the site builder too.  For example, a custom module named **product-feature** has a preview file stored under the modules directory: **/src/modules/product-feature/previews/defaultValues.preview.json**.
+The module preview data is stored in a special PREVIEW_NAME.preview.json file under the module folder where PREVIEW_NAME can be any name.  Any number of preview files can exist and can be selected in the site builder too.  For example, a custom module named **product-feature** has a preview file stored under the modules directory: **/src/modules/product-feature/previews/defaultValues.preview.json**.
 
 ## Preview json file structure
 
@@ -58,10 +58,12 @@ The json file is configured similar to the [module mock file](module-mock-file.m
 	}
 } 
 ```
-and contains the following structure
+### Preview json field definitions
 *"Id" - maps to the module Id
-*"config" - Array of contains configuration values
+*"config" - the config section contains a list of configuration values based on the name of the configuration stored in the modules definition file.
 
+## Preview data for images
+Definining images is a bit different, the site builder 
 
 
 ## Additional resources
