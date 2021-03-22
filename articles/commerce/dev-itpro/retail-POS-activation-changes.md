@@ -114,8 +114,8 @@ The following steps are required so that device activation works correctly when 
 9. Select **Add permissions** at the bottom of the slider.
 10. Select **Grant admin consent for \<your AAD name\>**. Select **Yes**. This grants consent and can be verified with the **Granted** displaying in the **Status** column in the **AccessRetailServer** row.
 
-        > [!NOTE]
-        > Granting consent is not required, but simplifies the process by consenting in advance for all users in your tenant (and you as the Admin). If this step is not completed, then each user will be asked for consent the first time that they try to activate Modern POS.
+    > [!NOTE]
+    > Granting consent is not required, but simplifies the process by consenting in advance for all users in your tenant (and you as the Admin). If this step is not completed, then each user will be asked for consent the first time that they try to activate Modern POS.
 
 ### Configure Dynamics 365 Headquarters
 

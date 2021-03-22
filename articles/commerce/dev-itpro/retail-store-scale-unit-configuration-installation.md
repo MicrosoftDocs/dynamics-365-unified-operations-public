@@ -320,7 +320,7 @@ For detailed information about SQL Server and Windows Firewall, see [Configure a
 
 On the second computer, run the Commerce Scale Unit Self-service installer as described earlier in this topic, but make the following changes.
 
-1. Select only Retail Server and Cloud POS as the components to install. If only Retail Server must to be installed, don't select Cloud POS. Then select **Next** to continue with the installation.
+1. Select only Retail Server and Cloud POS as the components to install. If you are installing only Retail Server, don't select Cloud POS. Then select **Next** to continue with the installation.
 2. Enter the domain user credentials (user name and password) that have permission to access SQL Server on the first computer. Then select **Next**.
 
     > [!NOTE]

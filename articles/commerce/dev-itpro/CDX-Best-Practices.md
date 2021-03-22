@@ -41,7 +41,7 @@ Before you go through this topic, it's important that you understand the concept
 
 The main content of this topic is organized into tables, where the first column includes lists of tag-like "associated areas" to help you more quickly find best practices that are related to your areas of concern. For new implementations, you might find it useful to copy these tables to a location where you can check off the various best practices as they are completed. In this way, you can help ensure that the implementation is prepared as well as possible before you move forward to production.
 
-## Recommended configurations (with up-to date maturity information to denote confidence of functionality)
+## Recommended configurations (with up to date maturity information to denote confidence of functionality)
 
 The following configurations have been released but cause changes to logic that may not be useful for all usage scenarios. These are features that have been tested but have not been thoroughly validated in all scenarios. In the following table, maturity has been listed to provide insight in regard to confidence of functionality.
 
@@ -51,7 +51,7 @@ The features will change from month to month, so it is valuable to check back re
 |------------------|---------------------|------------------------------|-----------------------------------|
 | Delayed download session creation | CDX_ENABLE_DELAYED_OFFLINE_DOWNLOAD_SESSION_CREATION | This key requires a Modern POS device to be activated prior to creating the associated download sessions. This feature prevents creating exceptionally large amounts of download sessions for POS registers that could sit unused for an unknown, extended length of time.<br><br>The default value is **0**.  To enable the feature, set the value to **1**.| High<br><br>(Feature was released in version 10.0.15.) |
 | Package order enforcement | CDX_ENABLE_DOWNLOAD_SESSION_DEPENDENCY_ENFORCEMENT | This key forces download session application to apply in order.<br><br>If session application fails (based on the **Try count times** value, which is by default a value of three), the session will be marked as **Suspended** and session applications will not proceed until the suspended session is retried or canceled.<br><br>Using this key and rerunning previously applied sessions (sessions that are not in **Available** or **Suspended** states) cannot be done.<br><br>The default value should be **0**. | Moderate<br><br>(Feature was released in version 10.0.18.) |
-| Rollback on failure | CDX_ENABLE_ROLLBACK_ON_FAILURE | When synchronizing uploaded data from offline databases (based on the P-job distribution schedule), the system attempts to merge transactions.<br><br>If duplicate transaction IDs are found this could cause an error. This feature prevents overwriting the duplicated transaction IDs.<br><br>The default value should be **1**. | High<br><br>(Feature was released in version 10.0.13.) |
+| Roll back on failure | CDX_ENABLE_ROLLBACK_ON_FAILURE | When synchronizing uploaded data from offline databases (based on the P-job distribution schedule), the system attempts to merge transactions.<br><br>If duplicate transaction IDs are found this could cause an error. This feature prevents overwriting the duplicated transaction IDs.<br><br>The default value should be **1**. | High<br><br>(Feature was released in version 10.0.13.) |
 
 ## Updating configurations
 
