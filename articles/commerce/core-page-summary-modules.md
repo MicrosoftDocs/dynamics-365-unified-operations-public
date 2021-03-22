@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Default page module
-description: This topic covers the default page module and describes how to add one to a template in Microsoft Dynamics 365 Commerce.
+title: Page summary modules
+description: This topic covers the page summary modules and describes how to add one to a template in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 02/11/2021
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Default page module
+# Page summary modules
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the default page module and describes how to add one to a template page in Microsoft Dynamics 365 Commerce.
+This topic covers the page summary modules and describes how to add one to a template in Microsoft Dynamics 365 Commerce.
 
-The default page module is a special module that becomes the root of a page and can only be added to a templates **Body** slot. Only one page module is available with the module library but additional page modules can be created using the [online channel extensibility SDK](e-commerce-extensibility/overview.md) if desired.  The default page module defines the core slots ("Header Slot", "Sub Header Slot", "Main Slot", "Sub Footer Slot" and "Footer Slot") that will show up in the page editor within site builder as shown in the below image.
+Page summary modules simplifies entry of page summary metadata which can be used by search engines and social sharing sites, including the canonical link.  The module library contains several page summary modules including **Page summary**, **Category page summary**, **List page summary** and **Product page summary** pages.  Each one is SEO tuned for the specific page types they will be used for. 
 
 ![Page module slots](media/page-module-1.png)
 
@@ -48,23 +48,19 @@ The default page module is a special module that becomes the root of a page and 
 
 ## Adding a page module to a template
 
-1. From within a site builder template select the **Add Module** option within the **...** of the **Body** slot as shown below.
+1. From within a site builder template select the **Add Module** option within the **...** of the **HTML Head** slot and select the page summary module followed by the **OK** button as shown below.
 
-![Add new module](media/page-module-2.png)
+![Add new module](media/page-summary-1.png)
 
-2. From within the "Add Module" dialog box, select the **Default Page** module and the **OK** button as shown below.
+Once the summary module is added it should look similar to the below iamge.  The module can now be configured and the template can be saved and published.
 
-![Add default page module](media/page-module-3.png)
-
-Once the default page module is added it should look similar to the below iamge.  The module can now be configured and the template can be saved and published.
-
-![Default page module added](media/page-module-4.png)
+![Page summary module added](media/page-summary-2.png)
 
 ## Additional resources
 
 [Module library overview](starter-kit-overview.md)
 
-[Page summary modules](page-summary-modules.md)
+[Default page module](core-default-page-module.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
