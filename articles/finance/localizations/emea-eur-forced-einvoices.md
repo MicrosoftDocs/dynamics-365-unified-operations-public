@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic explains how to configure the forced generation of electronic invoice files immediately after related customer invoices are posted, regardless of the printing options that are selected.
 
 ## Prerequisites
