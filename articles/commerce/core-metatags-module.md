@@ -36,7 +36,7 @@ This topic covers the metatags module and describes how to add one to a template
 
 The metatags module can be added to a template's **HTML Head** slot.  One or more meta tags can be added using the **Add Meta Tag** configuration field button.  An example below shows a metatags module added to the HTML head of a template:
 
-![Metatags modules](media/metatags-modules-1.png)
+![Metatags modules](media/metatags-module-1.png)
 
 ## Metatags module properties
 
