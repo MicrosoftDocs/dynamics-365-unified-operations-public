@@ -46,7 +46,7 @@ The following table shows the delimiters that can be used in the command line ex
 | -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.<br><br>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation. |
 | -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation.<br><br>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.|
 | -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the legacy self-service installer for Hardware station.<br><br>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.|
-| -SkipAppxInstallation     | Beginning in the October 2018 release of Dynamics 365, this delimiter will skip the installation of the APPX Retail Modern POS application. This delimiter is required to perform the application installation through the SYSTEM account or a service account (Any account that does not have a user profile). |
+| -SkipAppxInstallation     | Beginning in the October 2018 release of Dynamics 365, this delimiter will skip the installation of the APPX Retail Modern POS application. This delimiter is required to perform the application installation through the SYSTEM account or a service account. (Any account that does not have a user profile.) |
 | -Port | The port to be associated and used by the Retail Server virtual directory. If no port is set, the default port of 443 will be used. |
 | -SslCertThumbprint | The thumbprint of the certificate to be used to encrypt HTTP traffic to the scale unit. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the SslCertFullPath parameter. |
 | -SslcertFullPath | The fully formatted URN path with the thumbprint as the search metric of certificate's location to be used to encrypt HTTP traffic to the scale unit. For example: **store:\/\/My\/LocalMachine\?FindByThumbprint\=\<MyThumbprint\>** is a properly formatted URN where the value **\< MyThumbprint \>** would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the SslCertThumbprint parameter. |
@@ -54,9 +54,9 @@ The following table shows the delimiters that can be used in the command line ex
 | -AsyncClientCertFullPath | The fully formatted URN path with the thumbprint as the search metric of the Async Client Identity certificate's location to be used to authenticate with AAD for communications with Headquarters. For example: store://My/LocalMachine?FindByThumbprint=<MyThumbprint> is a properly formatted URN where the value '< MyThumbprint >' would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the AsyncClientCertThumbprint parameter. |
 | -RetailServerCertThumbprint | The thumbprint of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the RetailServerCertFullPath parameter. |
 | -RetailServerCertFullPath | The fully formatted URN path with the thumbprint as the search metric of the Retail Server Identity certificate to be used to authenticate with AAD for communications with Headquarters. For example: store://My/LocalMachine?FindByThumbprint=<MyThumbprint> is a properly formatted URN where the value '< MyThumbprint >' would be replaced with the certificate thumbprint to be used. Do not use this parameter along with the RetailServerCertThumbprint parameter. |
-| -AsyncClientAadClientId | AAD client id to be used by Async Client while communicating with HQ. |
-| -RetailServerAadClientId | AAD client id to be used by Retail Server while communicating with HQ. |
-| -CposAadClientId | AAD client id to be used by Cloud POS while activating a device. Not required for LBD deployments. |
+| -AsyncClientAadClientId | AAD client ID to be used by Async Client while communicating with HQ. |
+| -RetailServerAadClientId | AAD client ID to be used by Retail Server while communicating with HQ. |
+| -CposAadClientId | AAD client ID to be used by Cloud POS while activating a device. Not required for LBD deployments. |
 | -RetailServerAadResourceId | Retail Server's AAD App Resource ID to be used while activating a device. Not required for LBD deployments. |
 | -SqlServerName | SQL Server Name, if not specified the installer will try to locate default instance. |
 | -SkipSqlFullTextCheck | Switch indicating whether to skip validating SQL Server prerequisite requiring Full Text Search. Default is false. |
@@ -83,7 +83,7 @@ The following table shows the delimiters that can be used in the command line ex
 
 ## General overview
 
-The new framework for Self-service installers have a variety of features and improvements. The new framework currently only generates installers for Modern POS, hardware station, and Commerce Scale Unit (CSU, Self-hosted).
+The new framework for self-service installers have a variety of features and improvements. The new framework currently only generates installers for Modern POS, hardware station, and Commerce Scale Unit (CSU, Self-hosted).
 <ul>
   <li>**Sealed** - The new installer framework completely separates Microsoft distributed base component installers from the extensibility-based customizations. The customizations shall be installed afterwards, but will be then untethered in regards to updating (Allowing updating only the Microsoft base component or only the customizations or both.</li>
   <li>**GUI-less** - There is no longer a user interface, meaning it is completely a command-line driven executable for each component installer. This is one of several key changes or features used to focus the new installer framework for use with mass deployment.</li>
