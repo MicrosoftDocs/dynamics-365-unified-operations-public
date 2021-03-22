@@ -66,7 +66,7 @@ After the cluster is set up, you can configure your installation. The examples b
 
     1. Update the **SSRSHTTPS** certificate settings.
         
-        This example has been configured using the screenshot from above. The Subject attribute should be set to the client access name. Additionally for convinience we have set the name and filename to be the same value. For the DNSName we have an entry for each of the preffered owners as well as the client access name. 
+        This example has been configured using the screenshot shown above. The **Subject** attribute should be set to the client access name. Additionally, for convinience, we have set the name and file name to be the same value. For the **DNSName** we have an entry for each of the preffered owners, as well as the client access name. 
         ```xml
         <Certificate type="SSRSHTTPS" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
             <!-- Specify the friendly name of the certificate during import operations. -->
@@ -129,7 +129,7 @@ Configure-SSRSHA.ps1 -AgentShare "\\servername\D365FFOAgent" -Listener "LBDEN05F
 ```
 
 > [!NOTE]
-> These example values have been filled out according to the values used in the **ConfigTemplate.xml** from the [High availability with Windows failover clusters](#high-availability-with-windows-failover-clusters) section.
+> These example values have been filled out according to the values used in the **ConfigTemplate.xml** file from the [High availability with Windows failover clusters](#high-availability-with-windows-failover-clusters) section.
 
 #### Configure-SSRSHA.ps1 script
 
