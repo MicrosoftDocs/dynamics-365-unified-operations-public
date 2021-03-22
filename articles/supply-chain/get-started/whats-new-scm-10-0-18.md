@@ -47,7 +47,7 @@ The following features are included in this release. Some of the listed features
 
 - [Enterprise-scale inventory performance improvements and archiving](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Archive inventory transactions](../inventory/archive-inventory-transactions.md)
 
-- [Rebate management](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)
+- [Rebate management](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - For more information, see [Rebate management module overview](../rebate-management/rebate-management-overview.md)
 
 - Simplified interface for clock in and out only (enhancement for [Enhanced production floor execution interface for manufacturing](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
 

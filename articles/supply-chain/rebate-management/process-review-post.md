@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Release 10.0.18
 # Process, review, and post rebates
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to process your Rebate management deals, calculate their discounts, review the transactions that are generated, post transactions, and review the postings.
 
