@@ -42,19 +42,26 @@ Page summary modules simplifies entry of page summary metadata which can be used
 
 | Property name     | Values | Description |
 |-------------------|--------|-------------|
-| Skip to main content text | Text | Text to be displayed in the "skip to main content" link on a page. |
-| Theme             | A list of available themes will be shown | Specifies the theme to use for the pages derived from this template.  **Note: this configuration property has been deprecated and will be removed in a future release. Themes should only be set at the site level.**
-| Requires sign-in? | **True** or **False** | This boolean property controls whether the page requires sign-in to be accessed.  If set to true the user will be redirected to the sign in page if not signed in. |
+| title | Text | The title of the web page. |
+| descripton | Text | A brief description of the page contents. |
+| keywords | Text | A series of comma seperated keywords that are relevant to the page. |
+| Disable Twitter Tags | **True** or **False** | If set to true twitter tags will not be rendered in the HTML. |
+| Sharing Image | Image selector | Image is used for when sharing the page. |
+| Disable Facebook OG Tags | **True** or **False** | If set to true Facebook tags will not be rendered in the HTML. |
+| Ignores the prefix and suffix specified in the application settings | **True** or **False** | If set to true, the site level prefix and suffix setting will be ignored. |
 
 ## Adding a page module to a template
 
-1. From within a site builder template select the **Add Module** option within the **...** of the **HTML Head** slot and select the page summary module followed by the **OK** button as shown below.
+1. From within a site builder template select the **Add Module** option within the **...** of the **HTML Head** slot and select the page summary module followed by the **OK** button as shown below.  Ensure you add the appropriate page summary module based on the page types the template will be used for.
 
 ![Add new module](media/page-summary-1.png)
 
 Once the summary module is added it should look similar to the below iamge.  The module can now be configured and the template can be saved and published.
 
 ![Page summary module added](media/page-summary-2.png)
+
+
+**Note:** default values can be set in the template but can be overridden on pages that derive from the page.
 
 ## Additional resources
 
