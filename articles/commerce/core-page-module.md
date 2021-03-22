@@ -64,7 +64,7 @@ Once the default page module is added it should look similar to the below iamge.
 
 [Module library overview](starter-kit-overview.md)
 
-[Footer module](author-footer-module.md)
+[Page summary modules](page-summary-modules.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
