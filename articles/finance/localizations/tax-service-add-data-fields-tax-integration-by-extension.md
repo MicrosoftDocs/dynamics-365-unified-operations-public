@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Add data fields in tax integration by extensions
-description: This topic explains how to use X++ extensions to add data fields in tax integration.
+title: Add data fields in the tax integration by using extensions
+description: This topic explains how to use X++ extensions to add data fields in the tax integration.
 author: qire
 manager: tfehr
 ms.date: 03/05/2021
@@ -27,30 +27,26 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Add data fields in tax integration by extension
+# Add data fields in the tax integration by using extension
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic provides information about how to use X++ extensions to add data fields in tax integration. These fields can be extended to the tax data model of tax service for tax code determination. For more information, see [Add fields in tax configuration](tax-service-add-data-fields-tax-configurations.md).
-
-The following sections in this topic show the principle and practice of tax service integration.
-
-- Data model
-- Integration flow 
-- Extension implementation detail
+This topic explains how to use X++ extensions to add data fields in the tax integration. These fields can be extended to the tax data model of the tax service for tax code determination. For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 
 ## Data model
-The data in the data model is _carried_ by objects, implemented by classes.
 
-The major objects:
+The data in the data model is carried by objects and implemented by classes.
+
+Here is a list of the major objects:
+
 * AxClass/TaxIntegration**Document**Object
 * AxClass/TaxIntegration**Line**Object
 * AxClass/TaxIntegration**TaxLine**Object
-  
 
-The relationship of these objects is:
+The following illustration shows how these objects are related.
+
 ```
 ┏━━━━━━━━━━┓       ┏━━━━━━━━━━┓1  0..n┏━━━━━━━━━━┓1  0..n┏━━━━━━━━━━┓
 ┃          ┃       ┃          ┃⯁────ᗒ┃  Charge  ┃⯁────ᗒ┃ Tax Line ┃
@@ -62,16 +58,17 @@ The relationship of these objects is:
 ┃          ┃⯁────ᗒ┃  Charge  ┃⯁────ᗒ┃ Tax Line ┃
 ┗━━━━━━━━━━┛       ┗━━━━━━━━━━┛       ┗━━━━━━━━━━┛
 ```
+
+A **Document** object can contain many **Line** objects. Each object contains metadata for the tax service.
+
+- `TaxIntegrationDocumentObject` has `originAddress` metadata, which contains information about the source address, and `includingTax` metadata, which indicates whether the line amount includes sales tax.
+- `TaxIntegrationLineObject` has `itemId`, `quantity`, and `categoryId` metadata.
+
 > [!NOTE]
-> **Charge** is also implemented by `TaxIntegrationLineObject` and focuses on **Document** and **Line** objects.
-
-A **Document** object may contain many **Line** objects and each object contains metadata for the tax service.
-
-- For `TaxIntegrationDocumentObject`, there is `originAddress` which contains the source address info and `includingTax`which indicates whether the line amount includes sales tax.
-- For `TaxIntegrationLineObject`, it has `itemId`, `quantity`, and `categoryId`.
-
+> `TaxIntegrationLineObject` also implements **Charge** objects. **Charge** objects focus on **Document** and **Line** objects.
 
 ## Integration flow
+
 The data in the flow is manipulated by activities.
 
 ### Key activities
@@ -82,41 +79,19 @@ The data in the flow is manipulated by activities.
 * AxClass/TaxIntegration**DataRetrieval**ActivityOnDocument
 * AxClass/TaxIntegration**SettingRetrieval**ActivityOnDocument
 
-Activities are executed in the following order:
-```
-             │
-             ᗐ
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃     Setting Retrieval     ┃
-┗━━━━━━━━━━━━┯━━━━━━━━━━━━━━┛
-             │
-             ᗐ
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃      Data Retrieval       ┃
-┗━━━━━━━━━━━━┯━━━━━━━━━━━━━━┛
-             │
-             ᗐ               
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃    Calculation Service    ┃
-┗━━━━━━━━━━━━┯━━━━━━━━━━━━━━┛
-             │
-             ᗐ
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃     Currency Exchange     ┃
-┗━━━━━━━━━━━━┯━━━━━━━━━━━━━━┛
-             │
-             ᗐ
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃     Data Persistence      ┃
-┗━━━━━━━━━━━━┯━━━━━━━━━━━━━━┛
-             │
-             ᗐ
-```
-For example, extend **Data Retrieval** and **Calculation Service**.
+Activities are run in the following order:
 
-#### Data Retrieval
+1. Setting Retrieval
+2. Data Retrieval
+3. Calculation Service
+4. Currency Exchange
+5. Data Persistence
 
-The data is retrieved from the database by **Data Retrieval** activities.  Adapters for different transactions are available to retrieve data from different transaction tables:
+For example, extend **Data Retrieval** before **Calculation Service**.
+
+#### Data Retrieval activities
+
+**Data Retrieval** activities retrieve data from the database. Adapters for different transactions are available to retrieve data from different transaction tables:
 
 - AxClass/TaxIntegration**PurchTable**DataRetrieval
 - AxClass/TaxIntegration**PurchParmTable**DataRetrieval
@@ -126,24 +101,30 @@ The data is retrieved from the database by **Data Retrieval** activities.  Adapt
 - AxClass/TaxIntegration**SalesTable**DataRetrieval
 - AxClass/TaxIntegration**SalesParm**DataRetrieval
 
-In these **Data Retrieval** activities, data is copied from the database to `TaxIntegrationDocumentObject` and `TaxIntegrationLineObject`. All these activities extend the same abstract template class, so they have common methods.
+In these **Data Retrieval** activities, data is copied from the database to `TaxIntegrationDocumentObject` and `TaxIntegrationLineObject`. Because all these activities extend the same abstract template class, they have common methods.
 
-#### Calculation Service
-The **Calculation Service** activity is the link between **tax service** and **tax integration**. This activity is responsible for the following functions:
+#### Calculation Service activities
+
+The **Calculation Service** activity is the link between the tax service and the tax integration. This activity is responsible for the following functions:
 
 1. Construct the request.
-2. Post the request to **tax service**.
-3. Get the response from **tax service**.
+2. Post the request to the tax service.
+3. Get the response from the tax service.
 4. Parse the response.
 
-Add the data field to the request and it will be posted with other metadata. 
+A data field that you add to the request will be posted together with other metadata. 
 
 ## Extension implementation
 
-This section provies the detailed steps of the extension implementation. Use the two financial dimensions, **Cost center** and **Project** as examples in these procedures.
+This section provides detailed steps that explain how to implement the extension. It uses the **Cost center** and **Project** financial dimensions as examples.
 
-### 1. Add data variable in **Object** class
-The object class contains the data variable and getter/setter method for the data. Based on the data field level, add the field to `TaxIntegrationDocumentObject` or `TaxIntegrationLineObject`. Use the line level as an example, in the `TaxIntegrationLineObject_Extension.xpp`:
+### Step 1. Add the data variable in the object class
+
+The object class contains the data variable and getter/setter methods for the data. Add the data field to either `TaxIntegrationDocumentObject` or `TaxIntegrationLineObject`, depending on the level of the field. The following example uses the line level, and the file name is `TaxIntegrationLineObject_Extension.xpp`.
+
+> [!NOTE]
+> If the data field that you're adding is at the document level, change the file name to `TaxIntegrationDocumentObject_Extension.xpp`.
+
 ```X++
 [ExtensionOf(classStr(TaxIntegrationLineObject))]
 final class TaxIntegrationLineObject_Extension
@@ -186,54 +167,55 @@ final class TaxIntegrationLineObject_Extension
     {
         this.projectId = _value;
     }
-
 }
 ```
-**Cost center** and **Project** are added as private variables. Create getter and setter for these data fields to manipulate the data.
+
+**Cost center** and **Project** are added as private variables. Create getter and setter methods for these data fields to manipulate the data.
+
+### Step 2. Retrieve data from the database
+
+Specify the transaction, and extend the appropriate adapter classes to retrieve the data. For example, if you use a **Purchase order** transaction, you must extend `TaxIntegrationPurchTableDataRetrieval` and `TaxIntegrationVendInvoiceInfoTableDataRetrieval`. 
 
 > [!NOTE]
-> If the fields to be added are at the document level, change the file name to `TaxIntegrationDocuementObject_Extension`.
-
-### 2. Retrieve data from the database
-Specify the transaction and extend the respective adapter classes to retrieve the data. For example, if you use a **Purchase order** transaction, you need to extend `TaxIntegrationPurchTableDataRetrieval` and `TaxIntegrationVendInvoiceInfoTableDataRetrieval`. 
-
-> [!NOTE]
-> `TaxIntegrationPurchParmTableDataRetrieval` is inherited from `TaxIntegrationPurchTableDataRetrieval` and shouldn't be modified unless the logic is different between `purchTable` and `purchParmTable`.
+> `TaxIntegrationPurchParmTableDataRetrieval` is inherited from `TaxIntegrationPurchTableDataRetrieval`. It should not be changed unless the logic of the `purchTable` and `purchParmTable` tables differs.
 
 If the data field should be added for all transactions, extend all `DataRetrieval` classes.
 
-All **Data Retrieval** activates extend same template class, so the class structures, variables, and methods are similar.
-```X++
-    protected TaxIntegrationDocumentObject document;
+Because all **Data Retrieval** activities extend the same template class, the class structures, variables, and methods are similar.
 
-    /// <summary>
-    /// Copies to the document.
-    /// </summary>
-    protected abstract void copyToDocument()
-    {
-        // It is recommended to implemented as:
-        //
-        // this.copyToDocumentByDefault();
-        // this.copyToDocumentFromHeaderTable();
-        // this.copyAddressToDocument();
-    }
+```X++
+protected TaxIntegrationDocumentObject document;
+
+/// <summary>
+/// Copies to the document.
+/// </summary>
+protected abstract void copyToDocument()
+{
+    // It is recommended to implement as:
+    //
+    // this.copyToDocumentByDefault();
+    // this.copyToDocumentFromHeaderTable();
+    // this.copyAddressToDocument();
+}
  
-    /// <summary>
-    /// Copies to the current line of the document.
-    /// </summary>
-    /// <param name = "_line">The current line of the document.</param>
-    protected abstract void copyToLine(TaxIntegrationLineObject _line)
-    {
-        // It is recommended to implemented as:
-        //
-        // this.copyToLineByDefault(_line);
-        // this.copyToLineFromLineTable(_line);
-        // this.copyQuantityAndTransactionAmountToLine(_line);
-        // this.copyAddressToLine(_line);
-        // this.copyToLineFromHeaderTable(_line);
-    }
+/// <summary>
+/// Copies to the current line of the document.
+/// </summary>
+/// <param name = "_line">The current line of the document.</param>
+protected abstract void copyToLine(TaxIntegrationLineObject _line)
+{
+    // It is recommended to implement as:
+    //
+    // this.copyToLineByDefault(_line);
+    // this.copyToLineFromLineTable(_line);
+    // this.copyQuantityAndTransactionAmountToLine(_line);
+    // this.copyAddressToLine(_line);
+    // this.copyToLineFromHeaderTable(_line);
+}
 ```
-Using `PurchTable` as an example, the basic structure is:
+
+The following example shows the basic structure when the `PurchTable` table is used.
+
 ```X++
 public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstractDataRetrievalTemplate
 {
@@ -258,56 +240,60 @@ public class TaxIntegrationPurchTableDataRetrieval extends TaxIntegrationAbstrac
     ...
 }
 ```
-When `CopyToDocument` is called, there is already the `this.purchTable` buffer. The goal of this method is to copy all the necessary data from `this.purchTable` to the `document` object by using the `setter` method created in `DocumentObject` class.
 
-Similarly, in the `CopyToLine` method, we already have a `this.purchLine` buffer. The goal of  this method is to copy all the necessary data from `this.purchLine` to the `_line` object by using the `setter` method created in `LineObject` class.
+When the `CopyToDocument` method is called, the `this.purchTable` buffer already exists. The purpose of this method is to copy all the required data from `this.purchTable` to the `document` object by using the setter method that was created in the `DocumentObject` class.
 
-The most straight forward practice is to extend `CopyToDocument` and `CopyToLine`, however it is still recommened to try `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable` first. If these don't work as needed, implement your own method, and call it in `CopyToDocument` and `CopyToLine`. There are three common circumstances:
+Likewise, a `this.purchLine` buffer already exists in the `CopyToLine` method. The purpose of this method is to copy all the required data from `this.purchLine` to the `_line` object by using the setter method that was created in the `LineObject` class.
 
-- If the necessary field is right at `PurchTable` or `PurchLine`, you could extend `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable`. The sample code is:
+The most straightforward approach is to extend the `CopyToDocument` and `CopyToLine` methods. However, we recommend that you try the `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable` methods first. If they don't work as you require, implement your own method, and call it in `CopyToDocument` and `CopyToLine`. There are three common situations where you might use this approach:
 
-```X++
-	/// <summary>
-	/// Copies to the current line of the document from.
-	/// </summary>
-	/// <param name = "_line">The current line of the document.</param>
-	protected void copyToLineFromLineTable(TaxIntegrationLineObject _line)
-	{
-		next copyToLineFromLineTable(_line);
-		// if we already added XXX in TaxIntegrationLineObject
-		_line.setXXX(this.purchLine.XXX);
-	}
-```
-- The necessary data isn't at the default table of the transaction, but there are some join relationship with the default table and this field is needed in most lines. In this situation, replace the `getDocumentQueryObject` or `getLineObject` to query the table by join relationship. The following is an example of integrating the **Deliver Now** field to the sales order at the line level.
+- The required field is in `PurchTable` or `PurchLine`. In this situation, you can extend `copyToDocumentFromHeaderTable` and `copyToLineFromLineTable`. Here is the sample code.
 
-~~~X++
-public class TaxIntegrationSalesTableDataRetrieval
-{
-	protected MCRSalesLineDropShipment mcrSalesLineDropShipment;
+    ```X++
+    /// <summary>
+    /// Copies to the current line of the document from.
+    /// </summary>
+    /// <param name = "_line">The current line of the document.</param>
+    protected void copyToLineFromLineTable(TaxIntegrationLineObject _line)
+    {
+        next copyToLineFromLineTable(_line);
+        // if we already added XXX in TaxIntegrationLineObject
+        _line.setXXX(this.purchLine.XXX);
+    }
+    ```
 
-	/// <summary>
-	/// Gets the query for the lines of the document.
-	/// </summary>
-	/// <returns>The query for the lines of the document</returns>
-	[Replaceable]
-	protected SysDaQueryObject getLineQueryObject()
-	{
-		return SysDaQueryObjectBuilder::from(this.salesLine)
-			.where(this.salesLine, fieldStr(SalesLine, SalesId)).isEqualToLiteral(this.salesTable.SalesId)
-			.outerJoin(this.mcrSalesLineDropShipment)
-			.where(this.mcrSalesLineDropShipment, fieldStr(MCRSalesLineDropShipment, SalesLine)).isEqualTo(this.salesLine, fieldStr(SalesLine, RecId))
-			.toSysDaQueryObject();
-	}
-}
-```
-We declare a mcrSalesLineDropShipment buffer, and define the query at `getLineQueryObject`, by the relationship that `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`. While extending in this circumstance, we can replace this `getLineQueryObject` by our own constructed query object. Just need to note 2 points:
-* The return value of this method is SysDaQueryObject, we need to construct this object by the SysDa way.
-* Cannot remove existed table.
-~~~
+- The required data isn't in the default table of the transaction. However, there are some join relationships with the default table, and the field is required on most lines. In this situation, replace `getDocumentQueryObject` or `getLineObject` to query the table by join relationship. In the following example, the **Deliver Now** field is integrated with the sales order at the line level.
 
-- If the necessary data is related to the transaction table by a complicated join relationship, or the relation is not 1:1 but 1:N, things become little complicated. This is the situtation for the example of **financial dimensions**. 
-   
-    In this case, you can implement your own method to retrieve the data. The following is the sample code in `TaxIntegrationPurchTableDataRetrieval_Extension.xpp`.
+    ```X++
+    public class TaxIntegrationSalesTableDataRetrieval
+    {
+        protected MCRSalesLineDropShipment mcrSalesLineDropShipment;
+
+        /// <summary>
+        /// Gets the query for the lines of the document.
+        /// </summary>
+        /// <returns>The query for the lines of the document</returns>
+        [Replaceable]
+        protected SysDaQueryObject getLineQueryObject()
+        {
+            return SysDaQueryObjectBuilder::from(this.salesLine)
+                .where(this.salesLine, fieldStr(SalesLine, SalesId)).isEqualToLiteral(this.salesTable.SalesId)
+                .outerJoin(this.mcrSalesLineDropShipment)
+                .where(this.mcrSalesLineDropShipment, fieldStr(MCRSalesLineDropShipment, SalesLine)).isEqualTo(this.salesLine, fieldStr(SalesLine, RecId))
+                .toSysDaQueryObject();
+        }
+    }
+    ```
+
+    In this example, a `mcrSalesLineDropShipment` buffer is declared, and the query is defined in `getLineQueryObject`. The query uses the relationship `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`. While you're extending in this situation, you can replace `getLineQueryObject` with your own constructed query object. However, note the following points:
+
+    * Because the return value of this method is `SysDaQueryObject`, you must construct this object by using the SysDa approach.
+    * Can't remove existed table.
+
+- The required data is related to the transaction table by a complicated join relationship, or the relation isn't one to one (1:1) but one to many (1:N). In this situation, things become a little complicated. This situation applies to the example of financial dimensions. 
+
+    In this situation, you can implement your own method to retrieve the data. Here is the sample code in the `TaxIntegrationPurchTableDataRetrieval_Extension.xpp` file.
+
     ```X++
     [ExtensionOf(classStr(TaxIntegrationPurchTableDataRetrieval))]
     final class TaxIntegrationPurchTableDataRetrieval_Extension
@@ -332,7 +318,6 @@ We declare a mcrSalesLineDropShipment buffer, and define the query at `getLineQu
             }
             next copyToLineFromLineTable(_line);
         }
-
         private Map getDimensionAttributeMapByDefaultDimension(RefRecId _defaultDimension)
         {
             DimensionAttribute dimensionAttribute;
@@ -354,11 +339,13 @@ We declare a mcrSalesLineDropShipment buffer, and define the query at `getLineQu
             }
             return ret;
         }
-
     }
     ```
-### 3. Add data to the request
-Extend the methods `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` or `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` to add data to the request. The following is the sample code in `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp`.
+
+### Step 3. Add data to the request
+
+Extend the `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject` or `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method to add data to the request. Here is the sample code in the `TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp` file.
+
 ```X++
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
@@ -374,25 +361,25 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
     /// <param name = "_source"><c>TaxIntegrationLineObject</c>.</param>
     protected static void copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine(Microsoft.Dynamics.TaxCalculation.ApiContracts.TaxableDocumentLineWrapper _destination, TaxIntegrationLineObject _source)
     {
-		next copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine(_destination, _source);
-		// Set the field we need to integrated for tax service
+        next copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine(_destination, _source);
+        // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
     }
-
 }
 ```
-The `_destination` is the wrapper object used to generate the post request and `_source` is the `TaxIntegrationLineObject`. 
+
+In this code, `_destination` is the wrapper object that is used to generate the post request, and `_source` is the `TaxIntegrationLineObject` object. 
 
 > [!NOTE]
-> * Define the `key` used in the request form as `private const str`.
-> * Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method. The second parameter should be `string` type. If the data type is not string, convert it to string.
->
+> * Define the key that is used in the request form as `private const str`.
+> * Set the field in the `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` method by using the `SetField` method. The data type of the second parameter should be `string`. If the data type isn't `string`, convert it to `string`.
 
 ## Appendix
-The following is the complete sample code for financial dimensions integration (**Cost center** and **Project**) at the line level.
 
-`TaxIntegrationLineObject_Extension.xpp`:
+This appendix shows the complete sample code for the integration of financial dimensions (**Cost center** and **Project**) at the line level.
+
+### TaxIntegrationLineObject_Extension.xpp
 
 ```X++
 [ExtensionOf(classStr(TaxIntegrationLineObject))]
@@ -436,11 +423,11 @@ final class TaxIntegrationLineObject_Extension
     {
         this.projectId = _value;
     }
-
 }
 ```
 
-`TaxIntegrationPurchTableDataRetrieval_Extension.xpp`:
+### TaxIntegrationPurchTableDataRetrieval_Extension.xpp
+
 ```X++
 [ExtensionOf(classStr(TaxIntegrationPurchTableDataRetrieval))]
 final class TaxIntegrationPurchTableDataRetrieval_Extension
@@ -465,21 +452,18 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
         }
         next copyToLineFromLineTable(_line);
     }
-
     private Map getDimensionAttributeMapByDefaultDimension(RefRecId _defaultDimension)
     {
         DimensionAttribute dimensionAttribute;
         DimensionAttributeValue dimensionAttributeValue;
         DimensionAttributeValueSetItem dimensionAttributeValueSetItem;
         Map ret = new Map(Types::String, Types::String);
-
         select Name, RecId from dimensionAttribute
             join dimensionAttributeValue
                 where dimensionAttributeValue.dimensionAttribute == dimensionAttribute.RecId
             join DimensionAttributeValueSetItem
                 where DimensionAttributeValueSetItem.DimensionAttributeValue == DimensionAttributeValue.RecId
                     && DimensionAttributeValueSetItem.DimensionAttributeValueSet == _defaultDimension;
-
         while(dimensionAttribute.RecId)
         {
             ret.insert(dimensionAttribute.Name, dimensionAttributeValue.DisplayValue);
@@ -487,16 +471,16 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
         }
         return ret;
     }
-
 }
 ```
 
-`TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp`:
+### TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension.xpp
+
 ```X++
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-	// Define key for the form in post request
+    // Define key for the form in post request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 
@@ -507,11 +491,10 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
     /// <param name = "_source"><c>TaxIntegrationLineObject</c>.</param>
     protected static void copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine(Microsoft.Dynamics.TaxCalculation.ApiContracts.TaxableDocumentLineWrapper _destination, TaxIntegrationLineObject _source)
     {
-		next copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine(_destination, _source);
-		// Set the field we need to integrated for tax service
+        next copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine(_destination, _source);
+        // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
     }
-
 }
 ```
