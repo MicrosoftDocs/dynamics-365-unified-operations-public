@@ -50,6 +50,7 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
 
 ## Work in your on-premises deployment
+- [Configure high availability for SQL Server Reporting Services (SSRS) nodes](onprem-SSRSHA.md)
 - [Configure document management](../../fin-ops/organization-administration/configure-document-management.md)
 - [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
