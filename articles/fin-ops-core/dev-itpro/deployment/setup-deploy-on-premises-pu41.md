@@ -436,7 +436,7 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
 
 ### <a name="configurecert"></a>Step 8. Configure certificates
 
-1. Go to the machine that has the **infrastructure** folder.
+1. Go to the machine that you originally unzipped the **infrastructure** folder to.
 2. Generate certificates:
 
     1. If you must generate certificates, run the following commands. These commands create the certificate templates in AD CS, generate the certificates from the templates, put the certificates in the **CurrentUser\\My** certificate store on the machine, and update the thumbprints in the XML file.
@@ -555,7 +555,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 
 4. You might have to make additional modifications to your cluster configuration, based on your environment. For more information, see [Step 1B: Create a multi-machine cluster](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
 5. Copy the **ClusterConfig.json** file that is generated to **\<ServiceFabricStandaloneInstallerPath\>**.
-6. Open Windows PowerShell in elevated mode, go to **\<ServiceFabricStandaloneInstallerPath\>**, and run the following command to test **ClusterConfig**.
+6. Open Windows PowerShell in elevated mode, go to **\<ServiceFabricStandaloneInstallerPath\>**, and run the following command to test the **ClusterConfig.json** file.
 
     ```powershell
     .\TestConfiguration.ps1 -ClusterConfigFilePath .\clusterConfig.json
@@ -592,7 +592,7 @@ Only user accounts that have the Global Administrator directory role can add cer
 
 > [!IMPORTANT]
 > - You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant must use the same certificate to connect with LCS.
-> - If you run this on a server machine (for example, a machine that is running Windows Server 2016), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page will be blocked.
+> - If you run the script below on a server machine (for example, a machine that is running Windows Server 2016), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page will be blocked.
 
 1. Sign in to the customer's [Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
 2. From the **infrastructure** folder, run the following commands to determine whether the certificate is already registered.
@@ -707,7 +707,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 2. Run the SQL service as either a domain user or a gMSA.
 3. Get an SSL certificate from a CA to configure SQL Server for Finance + Operations. For testing purposes, you can create and use a certificate that is generated through AD CS. You will have to replace the computer name and domain name in the following examples.
 
-    **AD CS certificate for an Always-On SQL instance**
+    **AD CS certificate for an Always-On SQL availability group**
 
     If you're setting up testing certificates for Always-On, use the following remoting script. This script works like the manual script that follows.
 
@@ -718,7 +718,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
     ```
 
-    **AD CS certificate for a single SQL instance**
+    **AD CS certificate for a single SQL availability group**
 
     ```powershell
     #If you need to create self-signed certs
@@ -727,7 +727,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser
     ```
 
-    **Manual AD CS steps for an Always-On SQL instance or Windows Server Failover Clustering with SQL Server** 
+    **Manual AD CS steps for an Always-On SQL availability group or Windows Server Failover Clustering with SQL Server** 
 
     For each node of the SQL cluster, follow these steps. 
 
@@ -776,9 +776,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 4. The zip file contains a single backup (.bak) file. Select the file to download, based on your requirements.
 5. Make sure that the database section in the **infrastructure\\ConfigTempate.xml** file is configured correctly with the following information:
 
-    1. The database name.
-    2. The database file and log settings. The database settings should not be lower than the default values that are specified.
-    3. The path of the backup file that you downloaded earlier. The default name of the Finance + Operations database is **AXDB**.
+    - The database name.
+    - The database file and log settings. The database settings should not be lower than the default values that are specified.
+    - The path of the backup file that you downloaded earlier. The default name of the Finance + Operations database is **AXDB**.
 
     > [!IMPORTANT]
     > - The user who is running the SQL service and the user who is running the scripts should have **Read** access on the folder or share where the backup file is located.
@@ -796,8 +796,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     The Initialize-Database.ps1 script performs the following actions:
 
-    - Create an empty database that is named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
-    - Grant **db\_owner** permissions on the database to the local agent gMSA (**svc-LocalAgent$**).
+    1. Create an empty database that is named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
+    1. Grant **db\_owner** permissions on the database to the local agent gMSA (**svc-LocalAgent$**).
 
 #### Configure the Finance + Operations database
 
@@ -903,7 +903,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 ### <a name="setupssis"></a>Step 16. Set up SSIS
 
-To enable Data management and Integration workloads, you must install SSIS on each AOS VM. Follow these steps on each AOS VM.
+To enable Data management and SSIS workloads, you must install SSIS on each AOS VM. Follow these steps on each AOS VM.
 
 1. Verify that the machine has access to the SSIS installation, and open the **SSIS Setup** wizard.
 2. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** check boxes.
@@ -1011,7 +1011,7 @@ You've now completed the setup of the infrastructure. The following sections des
 6. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** check box.
 7. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
 8. After the file is unzipped, go back to your on-premises connector in LCS.
-9. On the **2: Configure agent** tab, select **Enter configuration**, and enter the configuration settings. To get the required values, run the following command on any machine that has access to it and the configuration file.
+9. On the **2: Configure agent** tab, select **Enter configuration**, and enter the configuration settings. To get the required values, run the following command on any machine that has the **infrastructure** folder and up to date configuration files.
 
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -1054,29 +1054,29 @@ If the previous remoting Windows PowerShell window was accidentally closed, and 
 
     During the preparation phase, LCS assembles the Service Fabric application packages for your environment. It then sends a message to the local agent to start deployment. You should notice that the environment state is **Preparing**.
 
-    ![Environment in a Preparing state](./media/Preparing.png)
+    ![Environment in a Preparing state](./media/Preparing2021.png)
 
 4. Select **Full details** to open the environment details page. Notice that the upper-right corner of the page shows the environment status as **Preparing**.
 
-    ![Environment details page showing Preparing status](./media/Details_Preparing.png)
+    ![Environment details page showing Preparing status](./media/Details_Preparing2021.png)
 
     The local agent picks up the deployment request, starts the deployment, and communicates back to LCS when the environment is ready. When deployment is started, you should notice that the environment state is changed to **Deploying**.
 
-    ![Environment in a Deploying state](./media/Deploying.png)
+    ![Environment in a Deploying state](./media/Deploying2021.png)
 
 5. Select **Full details** to open the environment details page. Notice that the upper-right corner of the page shows the environment status as **Deploying**.
 
-    ![Environment details page showing Deploying status](./media/Details_Deploying.png)
+    ![Environment details page showing Deploying status](./media/Details_Deploying2021.png)
 
 6. If the deployment fails, the environment state is changed to **Failed**, and the **Reconfigure** button becomes available for the environment. Fix the underlying issue, select **Reconfigure**, update any configuration changes, and then select **Deploy** to retry the deployment.
 
-    ![Reconfigure button for an environment in a Failed state](./media/Failed.png)
+    ![Reconfigure button for an environment in a Failed state](./media/Failed2021.png)
 
     For information about how to reconfigure an environment, see [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 
 The following illustration shows a successful deployment. Notice that the upper-right corner of the page shows the environment status as **Deployed**.
 
-![Successfully deployed environment](./media/Deployed.png)
+![Successfully deployed environment](./media/Deployed2021.png)
 
 ### <a name="connect"></a>Step 22. Connect to your Finance + Operations environment
 
