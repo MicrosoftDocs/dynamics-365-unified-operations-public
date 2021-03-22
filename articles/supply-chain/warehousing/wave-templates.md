@@ -37,13 +37,13 @@ This topic describes how to set up the criteria that determine whether waves are
 
 When you set up a wave template, you specify the following:
 
-- The site and warehouse that the template will create work for.
-- The sequence in which the templates are matched to released lines on sales orders, production orders, and kanbans. When a line on a sales order, production order, or kanban is released to the warehouse or to production, the system applies the first wave template that the line meets the criteria for. We recommend that you put the template with the most specific criteria at the top of the list. The broader the criteria, the more likely it is for a line to meet the criteria, which could lead to lines being assigned to the wrong wave.
-- The wave methods that perform the actions that are created by the template, such creating or distributing work for each type of wave template. These actions are also referred to as wave steps. Wave methods are predefined for each type of wave template, and are displayed in the **Selected methods** list on the **Methods** FastTab. You cannot remove the predefined wave methods, however, you can rearrange the order of the methods and add additional methods. For example, if you’re creating a wave template for shipping, you can add methods for replenishment and containerization. Wave containerization can be added to a sequence of wave methods to define the containerization of the lines processed in a wave template.
-- The wave attributes to use for the wave template. Wave attributes are useful for assigning additional criteria, such as a specific customer name, to a wave template. You create these attributes in the **Wave attributes** form.
+- The **Site** and **Warehouse** that the template will create work for.
+- The order in which the templates will be evaluated. The sequence in which the templates are matched to released lines on sales orders, production orders, and kanbans. When a line is released, the system applies the first wave template that the line meets the criteria for. The broader the criteria, the more likely it is for a line to meet the criteria, so you should put the templates with the most specific criteria at the top of the list. Use the **Move up** and **Move down** buttons on the Action Pane to arrange templates in the list.
+- The actions taken by each template. The wave **Methods** perform the actions that are created by the template, such creating or distributing work for each type of wave template.
+- The wave attributes (filters) that must apply for the wave template to be used.
 
 > [!NOTE]
-> If needed, a developer can create additional methods. You can view the full list of methods on the **Wave process methods** page. <!-- KFM: To discuss: ---- From Lars-Bo: "We should leave out the "and add them to the AOS". We don't have any doc page on how to do this, but here is an example which we of course cannot copy. But maybe we can add a little more details in this Note: https://blog.bhsolutions.com/whs-wave-configuration-in-d365fo." ---- KFM: I'm not able to judge whether to include this and what to include from that blog post. Maybe we should not go into this right now. Maybe we should consider this a new project and add a content deliverable for it. -->
+> If needed, a developer can create additional methods. You can view the full list of methods on the **Wave process methods** page.
 
 Some settings represent strategic decisions for wave processing, as follows:
 
@@ -78,22 +78,27 @@ To set up a wave template, follow these steps:
 1. If you want to automate wave processing, make the following settings as needed:
 
     - **Automate wave creation** - Set this to *Yes* to automatically create a wave when a sales order, production order, or kanban is released to the warehouse.
-    - **Assign to open waves** - Set this to *Yes* to automatically assign shipments to open wave of criteria is met.
+    - **Assign to open waves** - Set this to *Yes* to automatically assign lines to an open wave when the lines are released. Lines are assigned to waves based on the query filter for the wave template.
     - **Process wave at release to warehouse** - Set this to *Yes* to automatically process the wave and create work when a line is released to the warehouse.
     - **Process wave automatically at threshold** - Set this to *Yes* to automatically process the wave when its values reach the thresholds for weight, shipment, and lines specified in the **Wave thresholds** field group. This setting is only active if *Shipping* is selected in the **Wave template type** field.
     - **Automate wave release** - Set this to *Yes* to automatically release the wave. The picking work is created and made available on mobile devices.
     - **Automate replenishment work release** - Set this to *Yes* to create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template, and create a replenishment template of the type *Wave demand*. Set up a replenishment template on the **Replenishment templates** page. This requires that you add the replenish method to the wave template.
     - **Continue wave processing when work creation fails** - When set to *Yes*, the system will use a blank location if it can't reserve inventory at teh location proposed by the location directive (for example, because the inventory is no longer available). When set to *No*, the wave will fail if the system can't reserve the inventory.
 
-1. If you want to assign lines to an open wave when the lines are released, select the **Assign to open waves** check box. Lines are assigned to waves based on the query filter for the wave template.
-1. In the **Default values** field group, select the wave attributes to use as additional criteria for the wave template.
-1. On the **Methods** FastTab, the **Selected methods** pane lists the methods for the selected wave template type. To add an additional method, do the following:
+1. Make the **Wave thresholds** field group as needed:
+    - **Wave weight threshold** - Enter the maximum weight a wave can contain.
+    - **Shipment threshold** - Enter the maximum number of shipments that can be included in a wave.
+    - **Line threshold** - Enter the maximum number of lines that can be included in a wave.
+
+1. In the **Default values** field group, select the wave attributes to use as additional criteria for the wave template. Wave attributes are useful for assigning additional criteria, such as a specific customer name, to a wave template. You create these attributes on the **Wave attributes** page. <!-- KFM: Add link to new topic (wave-execution-notifications.md) about the **Wave notification policy** setting. -->
+
+1. On the **Methods** FastTab, the **Selected methods** pane lists the methods for the selected wave template. The wave methods perform the actions that are created by the template, such creating or distributing work. These actions are also referred to as wave steps. Wave methods are predefined for each type of wave template. You cannot remove the predefined wave methods, however, you can rearrange the order of the methods and add additional methods. For example, if you’re creating a wave template for shipping, you can add methods for replenishment and containerization. Wave containerization can be added to a sequence of wave methods to define the containerization of the lines processed in a wave template. To add an additional method, do the following:
 
     - Select a method on the **Remaining methods** pane, and then select the **Left** arrow to add it to the **Selected methods** pane.
     - To change the sequence, select a method, and then select **Up** or **Down** arrows.
 
-        > [!NOTE]
-        > When you add a method, it’s automatically listed in the appropriate location in the sequence of steps.
+    > [!NOTE]
+    > When you add a method, it’s automatically listed in the appropriate location in the sequence of steps.
 
-1. To set up the query that will match released lines to an appropriate wave, select **Load**.
+1. To set up the query that will match released lines to an appropriate wave, select **Edit query** on the Action Pane.
 1. To verify that the wave template settings are valid, select **Validate template**.

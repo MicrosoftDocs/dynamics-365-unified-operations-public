@@ -57,7 +57,6 @@ To use parallel allocation processing, go to **Warehouse management > Setup > Wa
 - **Wave processing batch group** - Select the batch group that the initial processing of the waves should use. The subsequent processing of allocation can be done using different batch groups.
 - **Process waves in batch** - Set this to *Yes* to use parallel processing.
 - **Wait for lock (ms)** - Enter the time, in milliseconds, that an allocation step will wait for a system resource that is locked by another allocation step. When this time is exceeded, the wave is not processed and an error message is displayed. We recommend that you allow at least a few seconds, since it allows for allocation of one logical unit to finish.
-<!--KFM: I removed mention of settings not strictly needed to enable parallel processing. Agree? Put some back?  -->
 
 For information about these and other wave processing options on the **Warehouse management parameters** page, see [Warehouse parameters for wave processing](wave-warehouse-parameters.md)
 
@@ -75,15 +74,15 @@ To set up parallel processing:\
 
 ## Enable or disable parallelization across all legal entities
 
-We recommend that you set the `allocateWave` method to run in parallel across all legal entities because this helps improve the performance of the wave processing. Therefore, starting with Supply Chain Management version 10.0.17, <!-- KFM: Confirm version number --> the *Wave parallelization for Allocate Wave method* feature will be enabled by default for all new and updated installations. On enabling this feature, the following occur:
+We recommend that you set the `allocateWave` method to run in parallel across all legal entities because this helps improve the performance of the wave processing. Therefore, starting with Supply Chain Management version 10.0.17, the *Wave parallelization for Allocate Wave method* feature will be enabled by default for all new and updated installations, and can't be turned off again. On enabling this feature, the following occur:
 
 - The `allocateWave` method is updated to include a task configuration setting that lets you use the **Wave process methods** page to define the number of tasks that will run simultaneously, equivalent to the number of parallel processes. As a result, the time used on the allocate-wave step (which is typically 30% to 60% of the total processing time) is reduced by a factor roughly equivalent to the number of tasks. It's also possible to select which batch will be assigned to process these tasks. It's important to notice that all of your legal entities will be configured to process waves in batch. For the warehouses that are already configured to process waves in batch, and for the warehouses that are already configured to use the `allocateWave` method in parallel, the existing configuration will be kept.
 - All the new legal entities are configured by default to process waves in batch and all new warehouses with the **Warehouse management processes** option enabled would have the `allocateWave` method configured to run in parallel by default.
-- On the **Warehouse management parameters** page, **Process saves in batch** is set to *Yes* and  **Wait for lock (ms)** set to a default 15 seconds. This means that all waves will be executed in batch. When a wave is running, it acquires a lock on the item and dimensions above location during the allocation step. When a subsequent concurrent <!-- KFM: how can it both be subsequent and concurrent? --> wave processing tries to acquire the same lock for the identical record, it is blocked. The **Wait for lock (ms)** settings establishes the maximum time the system will wait before the lock is released.
+- On the **Warehouse management parameters** page, **Process saves in batch** is set to *Yes* and  **Wait for lock (ms)** set to a default 15 seconds. This means that all waves will be executed in batch. When a wave is running, it acquires a lock on the item and dimensions above location during the allocation step. When another wave processing task tries to acquire the same lock for the identical record, it is blocked until the current process is finished. The **Wait for lock (ms)** settings establishes the maximum time the system will wait before the lock is released.
 
 Parallel allocation processing requires wave processing to run in batch. Therefore, you will reduce your wave processing performance if you disable the **Process saves in batch** setting, especially if wave processing is using a parallel process as defined at the task configuration for the relevant wave methods.
 
-If necessary, you can undo each of the settings made by default when the *Wave parallelization for Allocate Wave method* feature is automatically (or manually) enabled for your instance. To do so:
+If necessary, you can undo each of the settings made by default when the *Wave parallelization for Allocate Wave method* feature is automatically enabled for your instance. To do so:
 
 - Go to **Warehouse management \> Setup \> Warehouse management parameters**. On the **Wave processing** tab, apply your preferred values for **Process waves in batch** and **Wait for lock (ms)**
 - Go to **Warehouse management \> Setup \> Waves \> Wave process methods**. Select the `allocateWave` method. On the Action Pane, select **Task configuration** to open a page that lists each warehouse where the method is set to run in parallel. Modify or delete the number of batch tasks and the assigned wave group for each listed warehouse as needed.
@@ -92,7 +91,7 @@ If necessary, you can undo each of the settings made by default when the *Wave p
 
 ### Troubleshoot using the Infolog
 
-Because the batch framework is used, errors that occur during wave processing will be captured as part of the batch jobs Infologs. To read the batch jobs related to a wave: <!-- KFM: Does this require a log to be enabled on Warehouse parameters? -->
+Because the batch framework is used, errors that occur during wave processing will be captured as part of the batch jobs Infologs. To read the batch jobs related to a wave:
 
 1. Go to **Warehouse management \> Outbound waves \> Shipment waves \> All waves**.
 1. Select the wave you want to inspect.

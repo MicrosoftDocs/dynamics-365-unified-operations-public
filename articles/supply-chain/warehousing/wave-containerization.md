@@ -26,7 +26,7 @@ ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
 ---
-<!-- KFM: Recommend to replace existing topic (https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/tasks/set-up-containerization) with this one. We should not have both. -->
+
 # Containerization
 
 [!include [banner](../includes/banner.md)]

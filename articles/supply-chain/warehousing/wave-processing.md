@@ -86,9 +86,7 @@ Once a wave has been created, you are ready to start adding content to it.
 
 #### Automatically specify what to include in a wave
 
-To automatically specify what to include in a wave based on the order(s) that created it, make the following settings for each relevant [Wave template](wave-templates.md) that you created in step 1:
-
-<!-- KFM: I need these details. -->
+To create waves automatically, set up a [Wave templates](wave-templates.md) that apply for each relevant order type and warehouse and make sure each has its **Automate wave creation** option set to *Yes*. Alternatively, your template could automatically assign lines to any qualifying open wave if it has its **Assign to open waves** option set to *Yes*.
 
 #### Manually specify what to include in a wave
 
@@ -120,9 +118,7 @@ Once a wave has been created and contains all of its required lines, you are rea
 
 #### Automatically process a wave
 
-To automatically process a wave, make the following settings for each relevant [Wave template](wave-templates.md) that you created in step 1:
-
-<!-- KFM: I need these details. -->
+To automatically process a wave, set up the relevant [Wave template](wave-templates.md) with the automatic processing options required.
 
 #### Manually process a wave
 
@@ -144,9 +140,7 @@ You must process a wave before you can release it. When you release the wave, th
 
 #### Automatically release a wave
 
-To automatically release a wave, make the following settings for each relevant [Wave template](wave-templates.md) that you created in step 1:
-
-<!-- KFM: I need these details. -->
+To automatically process a wave, set up the relevant [Wave template](wave-templates.md) with the automatic processing options required.
 
 #### Manually release a wave
 
@@ -164,6 +158,28 @@ To release a wave manually, follow these steps:
 
 Automated containerization creates containers and the picking work for shipments when a wave is processed. For details on how to set it up, see [Containerization](wave-containerization.md).
 
+## Work with the scheduled work creation
+
+When the *Schedule work creation* functionality is enabled, wave processing will create planned work, which will eventually be used by the new work creation process. During work creation, the work will be blocked using the *Organization-wide work blocking* feature. More information: [Schedule work creation during wave](configure-wave-schedule-work-creation.md)
+
+The following flowchart shows how planned work is created during wave processing.
+
+![Schedule work creation](media/schedule-work-creation-process.png)
+
+### Planned work
+
+The **Planned work details** page (**Warehouse management \> Work \> Planned work details**) shows information about the planned work, which is initially created during wave processing. The following **Process status** values are available:
+
+- **Queued** - The planned work is waiting to be used to create work.
+- **Completed** - The planned work has been used to create work.
+- **Failed** – The wave processing has failed. Note that the planned work can be in a **Failed** state with or without related actual work. When the actual work creation process fails, the actual work remains in status *Cancelled*.
+
+### Batch job for the work creation process
+
+To view the batch jobs for processing waves, select **Batch jobs** on the Action Pane on the **All waves** page.
+
+From here, you can view all the batch task details for each of the batch job IDs.
+
 ## Cancel a wave
 
 If needed, you can cancel a wave that has been processed. To cancel a wave, and the picking work that was created, follow these steps:
@@ -176,11 +192,7 @@ If needed, you can cancel a wave that has been processed. To cancel a wave, and 
 
 1. Select the wave to cancel. On the Action Pane, on the **Work** tab, select **Cancel**.
 
-<!-- KFM: The following sections came from this PR: https://github.com/MicrosoftDocs/Dynamics-365-Operations/pull/10570/files  Please consider whether they belong here and review my edits. -->
-
 ## Review wave batch job details
-
-<!-- KFM: Add to what's new in 10.0.17, and add preview banner here? FM needed?  -->
 
 Use the **Wave batch job details** page to inspect the batch jobs and related tasks associated with any wave. This is especially useful for troubleshooting a wave that has failed. Without this feature, only administrators will typically have access to batch job details. The **Wave batch job details** page can be made available to non-admin users and provides a read-only view of batch jobs and related tasks.
 
@@ -192,13 +204,17 @@ If your system doesn't already include the **Wave batch job details** page, go t
 
 The **Wave batch job details** page combines batch jobs and batch job tasks, which lets you investigate all the wave steps without needing to navigate back and forth between a single batch job and the batch tasks list. The page also provides access to the batch log and, provided you have the suitable permissions, provides a link to the **Batch jobs** page.
 
-To open this page, select a wave on any of several different wave pages and then select the appropriate option from the Action Pane. <!-- KFM: What are the actual button name(s)? Can we name the "several different pages"?  -->
+To open this page, select a wave on any of several different wave pages and then select **Wave batch job details** from the Action Pane.
 
 ## Review load validation and error messages
 
-<!-- KFM: Add to what's new in 10.0.17, and add preview banner here? FM needed? -->
-<!-- KFM: I'm not sure this section is clear. Is this really about wave processing?  -->
+During wave processing, the system validates and displays the status (pass or warning) for each load line in the wave. If no warnings occur, it creates the associated work. If warnings do occur, it doesn't create any work and instead shows the following error after it has finished validating the entire wave:
 
-The system validates all load lines to make sure no errors occur during wave processing. For each load line that fails validation, the following error is shown: "Found invalid load lines in wave. Please remove the invalid load lines." This helps you to address all the failures at once, without requiring your to rerun to the wave process for each load line failure. <!-- KFM: I don't see how it does this. We should add a few more details. -->
+> Found invalid load lines in wave. Please remove the invalid load lines.
 
-You can still use the *Wave processing history log* to view all the warnings, provided the **Create wave processing history log** option is enabled on the **Warehouse management parameters** page.
+You are then able to review the final status of each load line in the wave and correct all warnings before trying again. This lets you address all the warnings at once before reprocessing the wave. (In previous releases, the system stopped processing the wave after the first warning, so you could only fix warnings one at a time.)
+
+The way the system displays your wave processing status messages depends on how you have set the **Create wave processing history log** option on the **Warehouse management parameters** page.
+
+- When **Create wave processing history log** is set to *No*, the load line status messages are shown in the **Infolog**.
+- When **Create wave processing history log** is set to *Yes*, the load line status messages are shown on the **Wave processing history log** page. To view the log, go to **Warehouse management \> Outbound waves \> Wave processing history log**.
