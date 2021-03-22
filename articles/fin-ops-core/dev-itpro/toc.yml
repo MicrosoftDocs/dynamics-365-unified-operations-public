@@ -530,7 +530,7 @@
             href: deployment/deploy-retail-onprem.md
           - name: Develop and deploy custom models to on-premises environments
             href: deployment/develop-deploy-custom-models-on-premises.md
-        - name: Environment maintenance
+        - name: Environment operations
           items:
           - name: Apply updates to an on-premises deployment
             href: deployment/apply-updates-on-premises.md
@@ -540,6 +540,8 @@
             href: user-interface/client-disconnected.md
           - name: Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
             href: deployment/onprem-batchonly.md
+          - name: Configure high availability for SQL Server Reporting Services (SSRS) nodes
+            href: deployment/onprem-SSRSHA.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
           - name: On-premises diagnostics
