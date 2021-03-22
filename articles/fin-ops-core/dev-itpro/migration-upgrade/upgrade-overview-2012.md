@@ -50,6 +50,8 @@ The following diagram shows the end-to-end upgrade process, and the activities t
 
 ![Upgrade process](./media/upgrade-process.png)
 
+To learn the most important elements and best practices for successfully upgrading your Dynamics AX 2012 solution to Finance and Operations apps, see [Upgrade Dynamics AX 2012 to Finance and Operations apps](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/).
+
 ## Analyze
 
 The activities in the Analyze phase help you estimate the effort that is required for the upgrade. They also help you prepare a project plan. These activities can be done before you buy Finance and Operations. They will help you make an informed purchase decision by providing a data point about the effort and resources that you will require.
