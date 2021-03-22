@@ -56,7 +56,7 @@ From within a site builder template select the **Add Module** option within the 
 
 ![Add new module](media/page-summary-1.png)
 
-Once the summary module is added it should look similar to the below iamge.  The module can now be configured and the template can be saved and published.
+Once the summary module is added it should look similar to the below image.  The module can now be configured and the template can be saved and published.
 
 ![Page summary module added](media/page-summary-2.png)
 
@@ -67,6 +67,8 @@ Once the summary module is added it should look similar to the below iamge.  The
 [Module library overview](starter-kit-overview.md)
 
 [Default page module](core-default-page-module.md)
+
+[Script modules](core-script-modules.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
