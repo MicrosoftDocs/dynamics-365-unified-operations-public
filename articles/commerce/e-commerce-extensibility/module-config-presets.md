@@ -40,15 +40,15 @@ Module configuration presets can be created at the module level and/or within a 
 
 ## Module configuration presets
 
-The module configuration preset data is stored in a file with the name **MODULE_NAME.preview.json** in a **previews** folder under the module folder. For example, a custom module named **product-feature** has a preview file stored under the modules directory: **\src\modules\product-feature\previews\product-feature.preview.json**.
+The module configuration preset data is stored in a JSON file with the name **MODULE_NAME.preview.json** in a **previews** folder under the module folder. For example, a custom module named **product-feature** has a preview file stored under the modules directory: **\src\modules\product-feature\previews\product-feature.preview.json**.
 
 ## Theme configuration presets
 
 Themes can also contain module configuration preset files which will be used when a theme is selected.  The module configuration preset file needs to be created under the theme directory using a pattern:  **\src\themes\THEME_NAME\previews\modules\MODULE_NAME\MODULE_NAME.preview.json"**. For example, for a theme called **spring**, the **product-feature** module theme configuration preset file would be **\src\themes\spring\previews\modules\product-feature\product-feature.preview.json"**. 
 
-## Preview json file structure
+## Preset file structure
 
-The json file is configured similar to a [module mock file](module-mock-file.md) with exception to images (see below more details on images).  Below is a example json file:
+The JSON file is configured similar to a [module mock file](module-mock-file.md) with exception to images (see below more details on images).  Below is a example json file:
 
 ```json
 {
