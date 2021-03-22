@@ -47,17 +47,15 @@ The metatags module can be added to a template's **HTML Head** slot.  One or mor
 
 ## Adding a metatags module to a template
 
-1. From within a site builder template select the **Add Module** option within the **...** of the slot you intend to add the script module to as shown below.
+1. From within a site builder template select the **Add Module** option within the **...** of the **HTML Head** slot as shown below.
 
 ![Add new module](media/metatags-module-2.png)
 
-2. Select the script module followed by the **OK** button as shown below. 
+2. Select the metatags module followed by the **OK** button as shown below. 
 
 ![Add script module](media/metatags-module-3.png)
 
-Once the summary module is added it should look similar to the below image.  The module can now be configured and the template can be saved and published.
-
-![Inline script module added](media/script-modules-4.png)
+Once the module is added it can now be configured and the template can be saved and published.
 
 
 ## Additional resources
