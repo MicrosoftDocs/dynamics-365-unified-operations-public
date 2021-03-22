@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.12
 # Electronic invoicing add-in administration components
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic provides information about the components that are related to administration of the Electronic invoicing add-in. It also provides information about how to configure the Electronic invoicing add-in service.
 
