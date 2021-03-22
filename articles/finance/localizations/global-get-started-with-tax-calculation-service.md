@@ -55,7 +55,7 @@ Before you can complete the procedures in this topic, the following prerequisite
 ## Set up the tax calculation add-in in LCS
 
 1. Sign in to [LCS](https://lcs.dynamics.com)
-2. Complete the setup for Microsoft Power Platform integration. For more information, see [Add-ins overview](../../dev-itpro/power-platform/add-ins-overview.md).
+2. Complete the setup for Microsoft Power Platform integration. For more information, see [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
 3. Select one of your deployed non-production environments, and then select **Install a new add-in**.
 4. Select **Tax calculation (preview)**.
 5. Read and agree to the terms and conditions, and then select **Install**.
