@@ -79,5 +79,7 @@ Once the summary module is added it should look similar to the below image.  The
 
 [Page summary modules](core-page-summary-modules.md)
 
+[Metatags module](core-metatags-module.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
