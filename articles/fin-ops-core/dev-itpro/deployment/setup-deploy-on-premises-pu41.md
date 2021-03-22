@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
 manager: AnnBe
-ms.date: 03/11/2021
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -1011,7 +1011,7 @@ You've now completed the setup of the infrastructure. The following sections des
 6. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** check box.
 7. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
 8. After the file is unzipped, go back to your on-premises connector in LCS.
-9. On the **2: Configure agent** tab, select **Enter configuration**, and enter the configuration settings. To get the required values, run the following command on any machine that has the **infrastructure** folder and up to date configuration files.
+9. On the **2: Configure agent** tab, select **Enter configuration**, and enter the configuration settings. To get the required values, run the following command on any machine that has the **infrastructure** folder and up-to-date configuration files.
 
     ```powershell
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
