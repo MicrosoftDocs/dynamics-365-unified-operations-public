@@ -524,13 +524,15 @@
           items: 
           - name: Set up on-premises projects in LCS
             href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-          - name: Set up and deploy on-premises environments
+          - name: Set up and deploy on-premises environments (Platform update 41 and later)
+            href: deployment/setup-deploy-on-premises-pu41.md
+          - name: Set up and deploy on-premises environments (Platform updates 12 through 40)
             href: deployment/setup-deploy-on-premises-pu12.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
           - name: Develop and deploy custom models to on-premises environments
             href: deployment/develop-deploy-custom-models-on-premises.md
-        - name: Environment maintenance
+        - name: Environment operations
           items:
           - name: Apply updates to an on-premises deployment
             href: deployment/apply-updates-on-premises.md
@@ -540,6 +542,8 @@
             href: user-interface/client-disconnected.md
           - name: Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
             href: deployment/onprem-batchonly.md
+          - name: Configure high availability for SQL Server Reporting Services (SSRS) nodes
+            href: deployment/onprem-SSRSHA.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
           - name: On-premises diagnostics

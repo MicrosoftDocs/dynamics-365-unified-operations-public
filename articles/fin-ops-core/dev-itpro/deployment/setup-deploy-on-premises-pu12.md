@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up and deploy on-premises environments (Platform update 12 and later)
-description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
+title: Set up and deploy on-premises environments (Platform updates 12 through 40)
+description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform updates 12 through 40.
 author: PeterRFriis
 manager: AnnBe
 ms.date: 03/18/2021
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Set up and deploy on-premises environments (Platform update 12 and later)
+# Set up and deploy on-premises environments (Platform updates 12 through 40)
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
+This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12-40.
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. You can post questions or feedback you may have about the on-premises deployment there.
 
@@ -686,7 +686,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 2. Run the SQL service as a domain user or a group-managed service account.
 3. Get an SSL certificate from a certificate authority to configure SQL Server for Finance + Operations. For testing purposes, you can create and use a self-signed certificate or an AD CS certificate. You will need to replace the computer name and domain name in the following examples.
 
-    **Self-signed certificate for an Always-On SQL instance**
+    **Certificates for an Always-On SQL instance**
 
     If you are setting up testing certificates for Always-On, use the following **remoting** script. This will perform the same as the following **manual** script and steps **a-e**.
 
