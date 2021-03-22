@@ -68,5 +68,7 @@ Once the default page module is added it should look similar to the below image.
 
 [Script modules](core-script-modules.md)
 
+[Metatags module](core-metatags-module.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
