@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce Scale Unit customer and consumer APIs
-description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
+description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients.
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/02/2020
@@ -34,9 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 
-Overview
---------
-
 - Commerce Scale Unit business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
 - The embedded commerce runtime (CRT) enables a unified omni-channel platform.
 - The application programming interfaces (APIs) are stateless and can process requests from many channels.
@@ -45,6 +42,7 @@ Overview
 - The APIs are built on the .NET stack by using C\#.
 
 ## Roles
+
 Every request to Commerce Scale Unit (via commerce proxy) operates under these main roles:
 
 - CommerceRole.Employee
@@ -56,7 +54,6 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 
 > [!NOTE]
 > By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
-
 
 ## Customer controller
 
@@ -404,8 +401,6 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetEstimatedAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | ProductWarehouseInventoryInformation  | Employee, Customer, Anonymous, Application               | Get estimated product availability based on search criteria.                                                                                               |
 | GetEstimatedProductWarehouseAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | IEnumerable\<ProductWarehouse\>                 | Employee, Customer, Anonymous, Application               | Get estimated product availability for specific product warehouse pairs.                                                                                               |
 
-
-
 ## Sales orders fulfillment controller
 
 | API                            | Parameter                                                                                                                                  | Return value                       | Supported Commerce Roles | Description                                                                |
@@ -459,7 +454,6 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | API           | Parameter                    | Return value                | Supported Commerce Roles | Description          |
 |---------------|------------------------------|-----------------------------|--------------------------|----------------------|
 | GetStoreSafes | QueryResultSettings settings | PageResult\<StoreSafe\> | Employee,                | Get store safe list. |
-
 
 ## Warehouse controller
 
@@ -689,13 +683,11 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetEntityByKey                     | string journalId                                                                                                  | StockCountJournal                              | Employee                 | Creates journal entity.                                                                                   |
 | UpdateEntity                       | StockCountJournal entity                                                                                          | StockCountJournal                              | Employee                 | Updates journal entity.                                                                                   |
 | PatchEntity                        | StockCountJournal entity                                                                                          | StockCountJournal                              | Employee                 | Partially updates journal entity.                                                                         |
+
 ## Scan result controller
 
 | API            | Parameter          | Return value | Supported Commerce Roles | Description                        |
 |----------------|--------------------|--------------|--------------------------|------------------------------------|
 | GetEntityByKey | string scannedText | ScanResult   | Employee                 | Gets the ScanResult entity by key. |
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,24 +2,24 @@
 # required metadata
 
 title: Commerce Data Exchange implementation guidance
-description: This topic is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, or CDX) in a Microsoft Dynamics 365 Commerce environment. It gives an overview, implementation tips, and overall guidance that you should consider as you plan your implementation, in regard to pages, setup, configuration, best practices, and more.
+description: This topic provides an overview of Commerce Data Exchange, including implementation tips, and overall guidance.
 author: jashanno
 manager: AnnBe
 ms.date: 08/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 
 # optional metadata
 
 ms.search.form: RetailTerminalTable, RetailDevice
-# ROBOTS: 
+# ROBOTS:
 audience: IT Pro
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+# ms.tgt_pltfrm:
+ms.custom:
+ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: 10.0.12
 ---
 
 # Commerce Data Exchange implementation guidance
+
 [!include[banner](../includes/banner.md)]
 
 This topic is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, \[CDX\]) in a Microsoft Dynamics 365 Commerce environment. It gives an overview, implementation tips, and overall guidance that you should consider as you plan your implementation, in regard to pages, setup, configuration, best practices, and more.
@@ -36,7 +37,7 @@ This topic is intended for people who implement functionality that is related to
 
 Proper configuration and synchronization of data is crucial to a correct implementation. Regardless of business requirements, IT infrastructure, and overall preparedness, if data isn't correctly synchronized, the whole environment is effectively useless. Therefore, a top priority is to understand what is required to configure, generate, synchronize, and verify data across the full implementation. This goes from Commerce headquarters through the Commerce Scale Unit to the brick-and-mortar stores that use Modern POS (With or without an offline database) and other in-store components. CDX is the Commerce functionality that replicates and synchronizes data across databases. However, CDX differs from typical data replication functionality because it also allows for filtering. Therefore, CDX helps minimize data sets by generating only data that is specific to the channels that were specified for selection, filtering specific tables from offline databases, and filtering expired records for data that is no longer used, such as expired discounts.
 
-Before you go through this topic, it's important that you understand the concepts of a channel (store), registers and devices, and the Modern POS offline database. Therefore, we recommend that you review some of the resources at the end of this topic, such as the Device management implementation guide and the overview of the Commerce architecture. 
+Before you go through this topic, it's important that you understand the concepts of a channel (store), registers and devices, and the Modern POS offline database. Therefore, we recommend that you review some of the resources at the end of this topic, such as the Device management implementation guide and the overview of the Commerce architecture.
 
 ### Important Commerce headquarters pages
 
@@ -105,7 +106,7 @@ This section describes configurations that you should consider when you begin to
 
 - **Create a Scheduler job calendar** – How often will each job occur? How many times per day will each job occur? Will large, non-critical jobs occur only during off-hours, when the overall environment isn't heavily used? By creating a calendar (either physical or virtual, as you prefer), you can learn the details about how jobs will intersect with other workloads that affect performance (for example, statement posting), hours of operation, batch processing for external data, and any customizations that push or pull data at specified times (or frequently throughout the day, just like a CDX job).
 - **Pause offline synchronization** – As a retail organization expands, it should take advantage of this offline profile feature as fully as possible. Growth is good, but data generation should be managed to help minimize the performance impact on the currently operating business. This feature enables the creation of channels, registers, and databases, but without requiring a massive, performance-affecting amount of data generation long before the registers are ever used.
-- **Advanced offline** – The previously described advanced offline features can be helpful, but they should be used only if they suit the priorities and values of the retail organization. Although the advanced offline health check interval can help maximize online time, it will also be more forceful about pushing a register to offline mode if Commerce headquarters or the Commerce Scale Unit becomes unresponsive or unavailable for any reason. It can be valuable to maximize the performance of registers by quickly switching to offline mode instead of waiting for time-outs or repeated retry responses. However, this approach must be understood and managed against the standard seamless offline model that tries to stay online as long as possible, to allow for operations such as loyalty operations, additional payment methods, and customer orders. 
+- **Advanced offline** – The previously described advanced offline features can be helpful, but they should be used only if they suit the priorities and values of the retail organization. Although the advanced offline health check interval can help maximize online time, it will also be more forceful about pushing a register to offline mode if Commerce headquarters or the Commerce Scale Unit becomes unresponsive or unavailable for any reason. It can be valuable to maximize the performance of registers by quickly switching to offline mode instead of waiting for time-outs or repeated retry responses. However, this approach must be understood and managed against the standard seamless offline model that tries to stay online as long as possible, to allow for operations such as loyalty operations, additional payment methods, and customer orders.
 - **Offline data exclusion** – In general, a small data set is typically faster than a large data set. It can be valuable to exclude data that isn't relevant to the functionality of the offline database when you want to reduce the overall database size (for example, SQL Express allows for databases of only 10 gigabytes \[GB\]), and also when you want to minimize the amount of data that the POS terminal queries as part of general operations while it's in offline mode.
 
     This feature varies widely, depending on the business requirements of the retail organization. Therefore, it's crucial that you know what data is required for customizations to work, or even what data is required for standard day-to-day operations. For example, if a customer doesn't have to be attached to a transaction, customers can be excluded from the offline databases. <!--How about **Loyalty information** or **Modes of delivery**? **OPEN QUESTIONS ON TABLES TO EXCLUDE!!!!!!!**-->
@@ -116,13 +117,12 @@ This section describes configurations that you should consider when you begin to
 
 ## Resources
 
-- [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md) 
-- [Commerce Data Exchange best practices](CDX-Best-Practices.md) 
-- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md) 
-- [Select an in-store topology](retail-in-store-topology.md) 
-- [Device management implementation guidance](../implementation-considerations-devices.md) 
-- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) 
-- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md) 
-
+- [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
+- [Commerce Data Exchange best practices](CDX-Best-Practices.md)
+- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
+- [Select an in-store topology](retail-in-store-topology.md)
+- [Device management implementation guidance](../implementation-considerations-devices.md)
+- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
+- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
