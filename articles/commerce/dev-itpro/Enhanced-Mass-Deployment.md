@@ -84,39 +84,30 @@ The following table shows the delimiters that can be used in the command line ex
 ## General overview
 
 The new framework for self-service installers have a variety of features and improvements. The new framework currently only generates installers for Modern POS, hardware station, and Commerce Scale Unit (CSU, Self-hosted).
-<ul>
-  <li>**Sealed** - The new installer framework completely separates Microsoft distributed base component installers from the extensibility-based customizations. The customizations shall be installed afterwards, but will be then untethered in regards to updating (Allowing updating only the Microsoft base component or only the customizations or both.</li>
-  <li>**GUI-less** - There is no longer a user interface, meaning it is completely a command-line driven executable for each component installer. This is one of several key changes or features used to focus the new installer framework for use with mass deployment.</li>
-  <li>**Deeper logging** - Enhanced installer logs allow for better validation of installation completion or failure, the steps performed, and any warnings or errors that were generated.</li>
-  <li>**Clean-up** - The component installers, under the new framework, work harder to maintain installation directory cleanliness by clearing the full contents of the component folder before installing the newer components. This makes certain there are no leftover files that could cause issues with installation completing successfully.</li>
-</ul>
 
-There are three components that have not migrated to the new framework. These excluded components are the Virtual Peripheral Simulator, Async Server Connector Service (Used for Dynamics AX 2012 R3 support), and the Real-time Service Replacement (Used for Dynamics AX 2012 R3 support).
+- **Sealed** - The new installer framework completely separates Microsoft-distributed base component installers from the extensibility-based customizations. The customizations shall be installed afterwards, but will be then untethered in regards to updating (allowing updating only the Microsoft-base component or only the customizations or both.
+- **GUI-less** - There is no longer a user interface, meaning it is completely a command-line driven executable for each component installer. This is one of several key changes or features used to focus the new installer framework for use with mass deployment.
+- **Deeper logging** - Enhanced installer logs allow for better validation of installation completion or failure, the steps performed, and any warnings or errors that were generated.
+- **Clean-up** - The component installers, under the new framework, work harder to maintain installation directory cleanliness by clearing the full contents of the component folder before installing the newer components. This makes certain there are no leftover files that could cause issues with installation completing successfully.
+
+There are three components that have not migrated to the new framework. These excluded components are the Virtual Peripheral Simulator, Async Server Connector Service (used for Dynamics AX 2012 R3 support), and the Real-time Service Replacement (used for Dynamics AX 2012 R3 support).
 
 > [!NOTE]
 > Installers are stored locally and retained.  It is important, over time, to manage or delete the retained installers to not waste disk space. It is recommended to keep the current installer for the base component(s) and any extension installers for the latest version(s) for purposes of recovery from extreme situations.
 
 ## Migration
 
-Migrating from the legacy Self-service framework component installers to the new framework component installers requires uninstallation of the legacy components.
-<ul>
-  <li>**Modern POS** - The new installer framework caused the application to be given a new application signature ID. This requires a full uninstallation of legacy components prior to installation of the new framework Modern POS. Due to the requirement for full uninstallation, device activation will be required again (Still a one time occurrence going forward, presuming uninstallation does not occur again).</li>
-  <li>**Hardware station** - As an IIS website, the new installer framework requires a reworking of how the base folder structure exists.  Due to this, a full uninstallation of legacy components is required prior to installation of the new framework hardware station component.</li>
-  <li>**Commerce Scale Unit (CSU, Self-hosted)** - As a series of IIS websites, the new installer framework requires a reworking of how the base folder structure exists.  Due to this, a full uninstallation of legacy components is required prior to installation of the new framework CSU (Self-hosted) component.</li>
-</ul>
+Migrating from the legacy self-service framework component installers to the new framework component installers requires uninstallation of the legacy components.
 
-
-
-
-
-
-
+- **Modern POS** - The new installer framework caused the application to be given a new application signature ID. This requires a full uninstallation of legacy components prior to installation of the new framework Modern POS. Due to the requirement for full uninstallation, device activation will be required again (still a one-time occurrence going forward, presuming uninstallation does not occur again).
+- **Hardware station** - As an IIS website, the new installer framework requires a reworking of how the base folder structure exists.  Due to this, a full uninstallation of legacy components is required prior to installation of the new framework hardware station component.
+-**Commerce Scale Unit (CSU, self-hosted)** - As a series of IIS websites, the new installer framework requires a reworking of how the base folder structure exists.  Due to this, a full uninstallation of legacy components is required prior to installation of the new framework CSU (self-hosted) component.
 
 ## Mass deployment of Modern POS
 
 ### Before you begin
 
-It is critical to remove the legacy Self-service Modern POS component. See the migration steps above for additional information.
+It is critical to remove the legacy self-service Modern POS component. See the migration steps above for additional information.
 
 ### Examples of silent deployment
 
@@ -159,7 +150,6 @@ HardwareStationSetup_V10.exe -S -SkipMerchantInfo
 
 #### Silently install Commerce Scale Unit (Self-hosted)
 
-
 ## Silent servicing
 
 ### Before you begin
@@ -189,13 +179,10 @@ The following command silently updates the current installation of Commerce Scal
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
 ```
 
-
 #### Mass deployment examples using InTune
 
 
 #### Mass deployment examples using SCCM (System Center Configuration Manager)
-
-
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
