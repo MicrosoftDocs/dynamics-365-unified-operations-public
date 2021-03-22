@@ -49,8 +49,6 @@ The remaining sections of this topic provide tables that describe the standard s
 
 ## Saved views for the Inventory management module
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 The following table describes the saved views available for the Inventory management module.
 
 | Page | View name | View description | Feature name |
@@ -66,8 +64,6 @@ The following table describes the saved views available for the Inventory manage
 | Transfer orders | Financials | This simplified view lets you focus on financial information while you manage transfer orders. | Saved views for Inventory management |
 
 ## Saved views for the Master planning module
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 The following table describes the saved views available for the Master planning module.
 
@@ -89,16 +85,14 @@ The following table describes the saved views available for the Procurement and 
 
 ## Saved views for the Production control module
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 The following table describes the saved views available for the Production control module.
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| Production order BOM page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | (Preview) Saved views for production control |
-| Production order details page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | (Preview) Saved views for production control |
-| Production order picking list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | (Preview) Saved views for production control |
-| Production orders list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | (Preview) Saved views for production control |
+| Production order BOM page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
+| Production order details page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
+| Production order picking list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
+| Production orders list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
 
 ## Saved views for the Sales and marketing module
 
