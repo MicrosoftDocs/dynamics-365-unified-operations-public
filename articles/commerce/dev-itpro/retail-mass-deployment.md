@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Application update 3
 
 [!include [banner](../includes/banner.md)]
 
-This topic is for legacy self-service installers. It explains how you can use legacy self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.  For the newly enhanced self-service installers, review the new documentation in the [Enhanced self-service mass deployment](/Enhanced-Mass-Deployment.md) article.
+This topic is for legacy self-service installers. It explains how you can use legacy self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.  For the newly enhanced self-service installers, review the new documentation in the [Enhanced self-service mass deployment](/Enhanced-Mass-Deployment.md) topic.
 
 ## Delimiters for mass deployment
 
