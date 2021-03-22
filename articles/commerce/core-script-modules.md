@@ -62,7 +62,7 @@ If you have content security policy enabled, external scripts may not run.  You 
 
 ![Add new module](media/script-modules-2.png)
 
-2. Select the script module followed by the **OK** button as shown below.  Ensure you add the appropriate page summary module based on the page types the template will be used for.
+2. Select the script module followed by the **OK** button as shown below. 
 
 ![Add script module](media/script-modules-3.png)
 
