@@ -42,9 +42,9 @@ The default page module is a special module that becomes the root of a page and 
 
 | Property name     | Values | Description |
 |-------------------|--------|-------------|
-| Skip to main content text |  | Text to be displayed in the "skip to main content" link on a page. |
+| Skip to main content text | Text | Text to be displayed in the "skip to main content" link on a page. |
 | Theme             | A list of available themes will be shown | Specifies the theme to use for the pages derived from this template.  **Note: this configuration property has been deprecated and will be removed in a future release. Themes should only be set at the site level.**
-| Requires sign-in? | True/False | This boolean property controls whether the page requires sign-in to be accessed.  If set to true the user will be redirected to the sign in page if not signed in. |
+| Requires sign-in? | **True** or **False** | This boolean property controls whether the page requires sign-in to be accessed.  If set to true the user will be redirected to the sign in page if not signed in. |
 
 ## Adding a page module to a template
 
