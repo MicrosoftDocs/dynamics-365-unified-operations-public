@@ -5,7 +5,7 @@ title: Mass deployment of new, sealed Commerce self-service components
 description: This topic explains how you can use the new framework of self-service component installers to perform silent installation and servicing deployments. It also explains aspects of special deployments.
 author: jashanno
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -16,21 +16,22 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jashanno
-ms.search.validFrom: 2021-02-20
-ms.dyn365.ops.version: Application update 3
+ms.search.validFrom: 2021-03-31
+ms.dyn365.ops.version: 10.0.18
+
 ---
 
 # Mass deployment of new, sealed Commerce self-service components
 
 [!include [banner](../includes/banner.md)]
 
-This topic is for the new, sealed framework component installers released each month, beginning with the 10.0.18 release. This article explains how to use these installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
+This topic is for the new, sealed framework component installers released each month, beginning with the 10.0.18 release. This topic explains how to use these installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
 
 ## Delimiters for mass deployment
 
@@ -40,11 +41,11 @@ The following table shows the delimiters that can be used in the command line ex
 | Delimiter                 | Description |
 |---------------------------|-------------|
 | -C or -Config             | Specify the location and file name of the configuration file to use as part of this installation. |
-| -FilePath                 | Specify a custom installation location.<p>We don't recommend that you use this delimiter for a standard installation.</p> |
-| -LogFile                  | Specify a custom file location for the installation logs.<p>We don't recommend that you use this delimiter for a standard installation.</p> |
-| -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-| -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the legacy self-service installer for Hardware station.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
+| -FilePath                 | Specify a custom installation location.<br><br>We don't recommend that you use this delimiter for a standard installation. |
+| -LogFile                  | Specify a custom file location for the installation logs.<br><br>We don't recommend that you use this delimiter for a standard installation. |
+| -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.<br><br>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation. |
+| -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation.<br><br>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.|
+| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the legacy self-service installer for Hardware station.<br><br>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.|
 | -SkipAppxInstallation     | Beginning in the October 2018 release of Dynamics 365, this delimiter will skip the installation of the APPX Retail Modern POS application. This delimiter is required to perform the application installation through the SYSTEM account or a service account (Any account that does not have a user profile). |
 | -Port | The port to be associated and used by the Retail Server virtual directory. If no port is set, the default port of 443 will be used. |
 | -SslCertThumbprint | The thumbprint of the certificate to be used to encrypt HTTP traffic to the scale unit. This thumbprint will be used to search the LocalMachine/My store location and name to find the correct certificate to use. Do not use this parameter along with the SslCertFullPath parameter. |
