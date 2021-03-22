@@ -56,7 +56,7 @@ The default page module is a special module that becomes the root of a page and 
 
 ![Add default page module](media/page-module-3.png)
 
-Once the default page module is added it should look similar to the below iamge.  The module can now be configured and the template can be saved and published.
+Once the default page module is added it should look similar to the below image.  The module can now be configured and the template can be saved and published.
 
 ![Default page module added](media/page-module-4.png)
 
@@ -65,6 +65,8 @@ Once the default page module is added it should look similar to the below iamge.
 [Module library overview](starter-kit-overview.md)
 
 [Page summary modules](core-page-summary-modules.md)
+
+[Script modules](core-script-modules.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
