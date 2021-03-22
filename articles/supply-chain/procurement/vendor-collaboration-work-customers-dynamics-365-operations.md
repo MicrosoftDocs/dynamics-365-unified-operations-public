@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 10.0.15
 # Vendor collaboration with customers
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 Supply Chain Management. Vendors can complete a series of business processes from the following workspaces:
 

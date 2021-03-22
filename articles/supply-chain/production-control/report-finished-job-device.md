@@ -67,7 +67,7 @@ The job card device supports three scenarios for reporting on batch items. These
 To enable your job card devices to accept a batch number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features (in this order):
 
 1. Improved user experience for the Report progress dialog in the Job Card Device
-1. Enable to enter batch and serial numbers while reporting as finished from the Job Card Device (Preview)
+1. Enable to enter batch and serial numbers while reporting as finished from the Job Card Device
 
 ### Configure products that require batch number reporting
 
@@ -145,7 +145,7 @@ The job card device supports three scenarios for reporting on serial-controlled 
 To enable your job card devices to accept a serial number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features (in this order):
 
 1. Improved user experience for the Report progress dialog in the Job Card Device
-1. Enable to enter batch and serial numbers while reporting as finished from the Job Card Device (Preview)
+1. Enable to enter batch and serial numbers while reporting as finished from the Job Card Device
 
 ### Configure products that require serial-number reporting
 
