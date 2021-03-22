@@ -66,7 +66,7 @@ After the cluster is set up, you can configure your installation. The examples b
 
     1. Update the **SSRSHTTPS** certificate settings.
         
-        This example has been configured using the screenshot shown above. The **Subject** attribute should be set to the client access name. Additionally, for convinience, we have set the name and file name to be the same value. For the **DNSName** we have an entry for each of the preffered owners, as well as the client access name. 
+        This example has been configured using the screenshot shown above. The **Subject** attribute should be set to the client access name. Additionally, for convenience, we have set the name and file name to be the same value. For the **DNSName** we have an entry for each of the prefered owners, as well as the client access name. 
         ```xml
         <Certificate type="SSRSHTTPS" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
             <!-- Specify the friendly name of the certificate during import operations. -->
