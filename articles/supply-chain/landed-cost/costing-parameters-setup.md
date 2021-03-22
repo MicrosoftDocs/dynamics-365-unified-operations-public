@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Costing parameter values setup
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 When you set up the **Landed cost** module, you can define several sets of common values and related settings per value. These values will then be available when you select specific types of costing parameter values in other parts of the app. This topic explains how to set up these sets of values.
 

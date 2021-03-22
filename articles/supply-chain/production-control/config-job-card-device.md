@@ -53,7 +53,7 @@ To make this feature available, enable the following features in [feature manage
 
 To make this feature available, enable the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- (Preview) Feature for locking job card device and job card terminal so that they can be sanitized
+- Feature for locking job card device and job card terminal so that they can be sanitized
 
 ## Manage your device configurations
 

@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.17
 # Standard saved views for Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management includes several saved views that you can enable and use as needed. Some of these standard saved views are optimized and named for a specific role or task (for example, "Quality control" or "Receiving"). Others are optimized so that they include only the fields and settings that Microsoft usage statistics indicate are most often used by customers. These saved views are typically referred to as *simplified* views. This topic describes the standard saved views that are available, and explains how to enable and customize them.
 
@@ -50,6 +49,8 @@ The remaining sections of this topic provide tables that describe the standard s
 
 ## Saved views for the Inventory management module
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 The following table describes the saved views available for the Inventory management module.
 
 | Page | View name | View description | Feature name |
@@ -65,6 +66,8 @@ The following table describes the saved views available for the Inventory manage
 | Transfer orders | Financials | This simplified view lets you focus on financial information while you manage transfer orders. | Saved views for Inventory management |
 
 ## Saved views for the Master planning module
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 The following table describes the saved views available for the Master planning module.
 
@@ -86,14 +89,16 @@ The following table describes the saved views available for the Procurement and 
 
 ## Saved views for the Production control module
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 The following table describes the saved views available for the Production control module.
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| Production order BOM page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
-| Production order details page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
-| Production order picking list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
-| Production orders list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved views for production control |
+| Production order BOM page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | (Preview) Saved views for production control |
+| Production order details page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | (Preview) Saved views for production control |
+| Production order picking list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | (Preview) Saved views for production control |
+| Production orders list page | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | (Preview) Saved views for production control |
 
 ## Saved views for the Sales and marketing module
 

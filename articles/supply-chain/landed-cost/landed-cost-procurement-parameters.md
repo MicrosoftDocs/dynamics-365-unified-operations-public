@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Procurement and sourcing parameters for Landed cost
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you use the **Landed cost** module. Use the **Update order lines** dialog box that is opened from the **Procurement and sourcing parameters** page to specify whether purchase order lines should automatically be updated when changes are made on the purchase order header.
 
