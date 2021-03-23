@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 For Italian companies who work with public sector companies, there might be requirements to control the Tender procedure identification and CIPE codes during end-to-end processing from the original invoice to the payment. This required control can be in both the Accounts Receivable and Accounts Payable modules.
 

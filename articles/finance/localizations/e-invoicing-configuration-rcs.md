@@ -32,8 +32,6 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/banner.md)]
-
 This topic provides information about the configuration capabilities of the Electronic invoicing add-in in Dynamics 365 Regulatory Configuration Services (RCS).
 
 It is through the configuration capabilities that Electronic invoicing add-in helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web services, the configuration capabilities also help you meet the requirements for exchanging messages with a web services, without doing any code.
