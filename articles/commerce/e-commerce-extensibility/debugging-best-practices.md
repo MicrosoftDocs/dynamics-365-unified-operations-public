@@ -74,10 +74,47 @@ Navigate to any page on localhost and add the query string parameter `debug=true
 ## Accessing debug data through the browser console window
 In your browser once the page loads, you can use the Console tab in your web debugger to examine information about page state that might be useful for debugging.
 
+### Initial Data
+
 The ```___initialData___``` object provides information about the modules that were loaded, the request context and cache information that was computed during server-side render. 
 To access this information, open the console tab in the web debugger and type in ```___initialData___``` and hit enter to reveal this debug information. In the request context object you can check your SDK version and starter-kit version (if installed).
 
 ![Debug data](media/debugging-best-practices-7.png)
+
+### _msdyn365
+The _msdyn365 also provided additional debug information in the debug console. This object contains request details after the client-render has also completed. It can be useful to check if there are any differences between _msdyn365 and ___initialData___ to see if there is a mismatch between server and client-side renders.
+
+
+## Useful query strings
+The online SDK provides a handful of query strings that can be appended to any page to gather debugging information.
+
+### Debug query string
+Adding the query string ```?debug=true``` turns on debug mode and displays module errors. In addition, if this query string is added to a request that is hitting your local dev server, the server-side action calls will show up in a network debugging tool such as Fiddler.
+
+### Node service proxy query string
+Adding the query string ```?item=nodeserviceproxy:true``` will return the raw page context in JSON format provided by the platform. This can be useful to determine which modules that page is rendering in as well as checking request context properties. 
+
+### Lazy load module query string
+Adding the query string ```setswitch=node_lazyload_{module | all}``` will force a module (or all modules) to be loaded client side. When hitting a production url, the server-side actions are abstracted away from the browser causing these requests to not show up in browser’s networking tab. When this query string is applied the actions and modules will be forced to load client-side at which point you can use a networking tool such as Fiddler or the Chrome network tab to track the data-actions requests a module is making. 
+
+
+## Help with common issues
+
+### My module is not loading
+1.	Try loading the page with the debug=true query string parameter. If the module has any errors, it will log the error there. If the error module displays an error the most likely case is the module is misconfigured. Contact the module author to debug further.
+2.	If no error module loads check that the module is in the page context. Add the item=nodeserviceproxy:true flag to see if it is present. If the module is not present update the page in tooling or your pagemock
+3.	If the module is present, verify that it is registered. Check your server for any build errors or the versions page to see if your module is registered.
+
+### My data action is not firing
+1.	Load the action client side so you can check the API calls in your browser's network tab using the lazyload switch.
+2.	If the network call you expect is not executing but a breakpoint in your action using the JavaScript debugger. You should be able to trace what is happening.
+3.	If the debugger is never triggered verify that your module definition includes the expected action chain.
+
+## Other tips and tricks
+*	You may use console.trace() statements to print debug information to the console. One thing to note is that if these console.trace() statements are in server-side actions, these logs will not show up in the browser or console unless the debugger is attached to the running node process.
+*	It can be helpful sometimes to run yarn –force to force yarn to fetch the latest packages even if they’ve already been installed
+*	To perform a clean install, remove the node_modules, yarn.lock file and run yarn cache clean before running yarn.
+
 
 ## Additional resources
 
