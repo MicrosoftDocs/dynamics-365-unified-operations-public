@@ -5,7 +5,7 @@ title: Create and maintain an inventory blocking
 description: This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking. 
 author: perlynne
 manager: tfehr 
-ms.date: 08/08/2019
+ms.date: 03/23/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -24,34 +24,43 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create and maintain an inventory blocking
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking. You can run the procedure in demo data company USMF using the example values that are shown. You need to have an item with physical on-hand inventory available before you start this procedure.
+This topic shows how to use inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents. You must have an item with physical on-hand inventory available before you start this procedure.
+
+## Block inventory
+
+To create an inventory blocking record, and thereby block inventory:
 
 
-## Create an inventory blocking
-1. In the **Navigation pane**, go to **Modules > Inventory management > Periodic tasks > Inventory blocking**.
-2. Click **New**.
-3. In the **Item number** field, click the drop-down button to open the lookup.
-4. In the list, select the item you want to choose. Select an item number with physical on-hand inventory that you want to block. If you're using USMF you can select item M9201.  
-5. In the **Quantity** field, enter a number. If you're using item M9201, you need to select less than 200.
-6. Expand the **Inventory dimensions** fastTab.
-7. In the **Warehouse** field, click the drop-down button to open the lookup.
-8. In the list, find and select the desired record. If you're using item M9201, you can select warehouse 51.  
-9. Click **Save**.
+1. Go to **Inventory management > Periodic tasks > Inventory blocking**.
+1. On the Action Pane, select **New**.
+1. In the header of the new blocking record, set **Item number** to the item you want to block and add a **Description**.
+1. Expand the **General** FastTab and enter the number of items to block in the **Quantity** field.
+1. Expand the **Inventory dimensions** fastTab and specify the **Site** and **Warehouse** where the items you want to block are currently located.
+1. On the Action Pane, select **Save**.
 
 ## Update the conditions of the inventory blocking
-1. In the **General** fastTab, in the **Quantity** field, enter a number. Update the inventory quantity field to reflect the quantity to block.  
-2. In the **Expected date** field, enter a date. You might want to indicate when the blocked inventory is expected to become available for reservation by assigning an expected date. If the Expected receipts option is selected for the inventory blocking, as it is by default when you manually create a blocking, this date will appear on the expected transaction.  
-3. Click **Save**.
 
-## Remove the inventory blocking
-1. On the **Action Pane**, click **Delete**.
-2. Click **Yes**.
-3. Close the page.
+To update an inventory blocking record:
+
+1. Go to **Inventory management > Periodic tasks > Inventory blocking**.
+1. Select the relevant blocking record from the list pane.
+1. Edit the record as needed. For example, you might change the **Expected date** to indicate when the blocked inventory is expected to become available for reservation. If the **Expected receipts** option is selected, as it is by default when you manually create a blocking, this date will appear on the expected transaction.  
+1. On the Action Pane, select **Save**.
+
+## Unblock inventory
+
+To remove an inventory blocking record, and thereby unblock inventory:
+
+1. Go to **Inventory management > Periodic tasks > Inventory blocking**.
+1. Select the relevant blocking record from the list pane.
+1. On the Action Pane, select **Delete**.
+1. You are asked to confirm the operation. Select **Yes** to continue.
+1. Close the page.
 
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

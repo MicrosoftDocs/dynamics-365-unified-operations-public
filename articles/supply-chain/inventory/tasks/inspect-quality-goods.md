@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Inspect the quality of goods
-description: This topic explains how to process a quality order. 
+description: This topic provides a set of procedures that show how to process a quality order.
 author: perlynne
 manager: tfehr 
-ms.date: 08/01/2019
+ms.date: 03/23/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -28,29 +28,37 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to process a quality order. You can run this guide in demo data company USMF. Before you start this example procedure, you need to confirm purchase order "000016" and post a product receipt. This will automatically create a quality order. Quality inspections are typically carried out by a quality clerk.
+This topic provides a set of procedures that show how to process a quality order. Quality inspections are typically carried out by a quality clerk.
 
+You can run these procedures using the standard demo data if you have it installed. To use it, select the *USMF* legal entity before you begin. Then, you must also confirm purchase order "000016" and post a product receipt. This will automatically create a quality order.
 
-## Select a quality order
-1. In the navigation pane, go to **Modules > Inventory management > Periodic tasks > Quality management > Quality orders**.
-2. Select the quality order that was created before you started this procedure.  
+## Step 1: Select a quality order
 
-## Record test results
+Do the following to select a quality order:
+
+1. Go to **Inventory management > Periodic tasks > Quality management > Quality orders**.
+1. Select the quality order that was created before you started this procedure.  
+
+## Step 2: Record test results
+
+Do the following to record test results:
+
 1. Select **Results**.
-2. Select **Edit**.
-3. In the **Result quantity** field, enter a number.
-4. In the **Outcome** field, select the desired record in the drop-down menu.  
-- In this example the result is based on a pre-defined outcome. Normally you would record a more specific test result, for example a size or other dimension.  
-5. Select **Save**.
-6. Close the page.
+1. Select **Edit**.
+1. In the **Result quantity** field, enter a number.
+1. In the **Outcome** field, select the desired record in the drop-down menu. In this example, the result is based on a pre-defined outcome. Normally you would record a more specific test result, for example a size or other dimension.  
+1. Select **Save**.
+1. Close the page.
 
-## Validate the quality order
+## Step 3: Validate the quality order
+
+Do the following to validate the quality order:
+
 1. Select **Validate**.
-2. In the **Validated by** field, select the user performing the inspection from the drop-down menu.  
-3. Click **Select**.
-4. Select **OK**.
-5. Close the page.
+1. In the **Validated by** field, select the user performing the inspection from the drop-down menu.  
+1. Select **Select**.
+1. Select **OK**.
+1. Close the page.
 
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
