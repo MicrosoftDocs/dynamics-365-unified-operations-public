@@ -61,4 +61,4 @@ Do the following to validate the quality order:
 1. Close the page.
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

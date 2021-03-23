@@ -214,4 +214,4 @@ To close a nonconformance:
 - [Quality management for warehouse processes](../quality-management-for-warehouses-processes.md)
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

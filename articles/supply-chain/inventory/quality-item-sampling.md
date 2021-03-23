@@ -46,7 +46,7 @@ Do the following to set up item sampling:
 9. Close the page.
 
 > [!NOTE]
-> The *Quality management for warehouse processes* feature provides additional item sampling capabilities. It adds a concept of *item sampling scope* and the ability to define a full license plate as the quantity specification. If you have enabled this feature, then see [Quality management for warehouse processes](../quality-management-for-warehouses-processes.md) for details.
+> The *Quality management for warehouse processes* feature provides additional item sampling capabilities. It adds a concept of *item sampling scope* and the ability to define a full license plate as the quantity specification. If you have enabled this feature, then see [Quality management for warehouse processes](quality-management-for-warehouses-processes.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
