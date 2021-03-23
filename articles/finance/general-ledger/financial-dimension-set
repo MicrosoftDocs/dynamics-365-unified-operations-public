@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial dimension sets
-description: This topic describes various details related to financial dimension sets.
+description: This topic describes various information related to financial dimension sets.
 author: yukonpeegs
 manager: AnnBe
 ms.date: 03/23/2021
@@ -34,13 +34,13 @@ This topic describes various information related to financial dimension sets.
 
 Use the **Financial dimension sets** page to create and manage financial dimension sets.
 
-A dimension set is an ordered combination of financial dimensions that can be used to summarize general ledger data in a user-defined way.
+A dimension set is an ordered list of financial dimensions that can be used to summarize general ledger data in a user-defined way. The dimension set that contains only the main account is the only standard dimension set.
 
-The primary purpose of a dimension set is to define a trial balance.
+A primary purpose of a dimension set is to define a trial balance.
 
 ## Dimension set balances
 
-The balances contain general ledger data that is summarized based on the financial dimensions of the dimension set. The balances are summarized to increase the performance.
+The balances of a dimension set contain general ledger data that is summarized based on the financial dimensions of the dimension set. The balances exist and are summarized to improve performance related to retrieving  balances from general ledger data.
 
 ## Create balances
 
@@ -51,17 +51,17 @@ Use **Create balances** to initialize the balances on a dimension set that does 
 
 ## Update balances
 
-Use **Update balances** to include the latest general ledger posting activity in the balances. An update is incremental and only has to process the general ledger posting activity since the last update.
+Use **Update balances** to include the latest general ledger posting activity in the balances. Updating balances is a light operations and only has to process the general ledger posting activity since the last update.
 
 > [!NOTE]
 > Displaying the trial balance forces an update to make sure the balances are current. Consider using a recurring batch job to make sure updates to your most frequently used dimension sets are quick because that will minimize the wait for the trial balance user.
 
 ## Rebuild balances
 
-Use **Rebuild balances** to recreate all the balances to ensure they match the general ledger data. Rebuilding the balances is a heavy operation and should not normally be necessary.
+Use **Rebuild balances** to recreate the balances from scratch, ensuring they match the general ledger data. Rebuilding balances is a heavy operation and should not normally be necessary.
 
 > [!NOTE]
-> If you have a scenario that regularly requires a rebuild of the balances, open a support case to determine why the balances do not match the general ledger for your scenario.
+> If you have a scenario that regularly requires rebuilding balances, open a support case to determine why the balances do not match the general ledger data for your scenario.
 
 ## Clear balances
 
@@ -112,6 +112,5 @@ For more information, see the following topics:
 
 - [Financial dimensions](tasks/financial-dimensions.md)
 - [Maintain financial dimension default templates](tasks/maintain-financial-dimension-default-templates.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
