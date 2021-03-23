@@ -136,11 +136,13 @@ To deploy a global e-commerce extension, follow these steps.
 
     ![LCS Asset library page with the e-Commerce package tab and Import button highlighted](media/module-library-update-2.png)
 
-1. In the **Pick a e-Commerce package** dialog box, select the package to import, then select **Pick**. It may take 15-30 minutes for the package to be available. The naming convention for the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version. In the following example image, the filename is for the Commerce release 10.0.16 and includes module library version 9.26.15. Only general availability versions will be made available.
+1. In the **Pick a e-Commerce package** dialog box, select the package to import, and then select **Pick**. It may take 15-30 minutes for the package to be available. 
 
+    The naming convention for the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version. In the following example image, the filename is for the Commerce release 10.0.16 and includes module library version 9.26.15. Only general availability versions will be made available.
+    
     ![Pick a e-Commerce package dialog box with the package name and Pick button highlighted](media/module-library-update-3.png)
 
-1. Once the package has been imported, it can be deployed into an e-commerce environment. Select the environment to be updated, and then select **manage**.  
+1. Once the package has been imported, it can be deployed into an e-commerce environment. Select the environment to be updated, and then select **Manage**.  
 1. Select the **e-Commerce** tab, and then select **Apply extension** to bring up the **Update e-Commerce** dialog box. Select the extension you want to deploy, and then select **Update**. The deployment may take from 15-30 minutes to complete.
 
     ![Update e-Commerce dialog box with an extension highlighted](media/module-library-update-4.png)
