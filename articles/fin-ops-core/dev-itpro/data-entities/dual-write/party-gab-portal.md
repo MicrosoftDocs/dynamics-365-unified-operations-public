@@ -38,7 +38,7 @@ When you install dual-write orchestration solution version 2.0.999.0 and above, 
 
 Here is how the table relationship looks like without the Party and GAB data model: 
 
-   ![without party model](media/without-party-model.png)
+   ![without party model](media/without-party-model.PNG)
 
 Here is how the table relationship looks like with Party and GAB data model: 
 
