@@ -73,7 +73,7 @@ The following bug fixes are included in this release.
 | 562286 | Terminate worker sends multiple updates to Dataverse | When a worker is terminated, more than one update operation is sent to Dataverse resulting in two update notifications for the same change. This can cause multiple triggers if a Power Automate flow is configured to trigger from the action. |
 | ## "Un-representable DateTime" when opening Leave & Absence enrollments - (527340) | - | - |
 | 561663 | Increase wait time interval for cluster provisioning | Improve infrastructure stability and provisioning consistency with updates to cluster provisioning. |
-
+| 486129 | Custom fields in position-->manage changes can't be edited. | This bug fixes the issue where custom fields could not be edited in the manage changes tabs for positions. |
 ## In preview
 
 The following new features are in preview. For more information about turning features on or off, see [Manage features](hr-admin-manage-features.md).
