@@ -34,7 +34,7 @@ This topic describes some best practices to follow when debugging Dynamics 365 C
 
 ## Step through code in a modern browser on localhost
 
-An easy way to debug code is to use a modern browser's debugger to step through code such as a module or data action that is normally run on the server side. This can be done if you have set up a local development environment according to the steps in [Set up a development environment](setup-dev-environment.md) and are using a Chromium based browser such as Microsoft Edge or Google Chrome.
+An easy way to debug code is to use a modern browser's debugger to step through code such as a module or data action that is normally run on the server side. This can be done if you have set up a local development environment according to the steps in [Set up a development environment](setup-dev-environment.md) and are using a Chromium-based browser such as Microsoft Edge or Google Chrome.
 
 You should first identify the breakpoints in your code, or where you would like to start stepping through the code. To create a breakpoint in your code, add the **debugger** statement. 
 
@@ -106,7 +106,7 @@ Adding the query string ```setswitch=node_lazyload_{module | all}``` will force 
 ### My module is not loading
 
 1. Try loading the page with the ```debug=true``` query string parameter. If the module has any errors, it will log the errors there. If module displays errors, the most likely case is that the module is misconfigured. Contact the module author to debug further.
-1. If the module does not display any errors, check that the module is in the page context by add the ```item=nodeserviceproxy:true``` flag. If the module is not present, update the page in tooling or your page mock.
+1. If the module does not display any errors, check that the module is in the page context by adding the ```item=nodeserviceproxy:true``` flag. If the module is not present, update the page in tooling or your page mock.
 1. If the module is present after checking if it is in the page context, verify that it is registered by checking your server for any build errors, or the versions page to confirm that the module is registered.
 
 ### My data action is not firing
