@@ -70,7 +70,7 @@ The following bug fixes are included in this release.
 | 562656 | SysRecordChangeLogValidTimeState menu item should be included in a security privilege and an extension of the SystemExternalBasicMaintain security duty | Non-system admin roles were missing the 'View changes' button on the date manager forms |
 | 505989 | Life events processing:  Change of eligibility not processed correctly due to date used | Fixed issue where change in eligibility processing was dependent on the position start date and not just the current position. |
 | 562286 | Terminate worker sends multiple updates to Dataverse | When a worker is terminated, more than one update operation is sent to Dataverse resulting in two update notifications for the same change. This can cause multiple triggers if a Power Automate flow is configured to trigger from the action. |
-| 527340 | "Unrepresentable DateTime" when opening Leave & Absence enrollments | In the leave and absence form, when user selects a specific record for the first time would result in the error: "The added or subtracted value results in an un-representable DateTime. Parameter name: months" |
+| 527340 | "Unrepresentable DateTime" error is presented when opening leave and absence enrollments | When selecting a leave and absence enrollment, an error will no longer be shown.  |
 | 561663 | Increase wait time interval for cluster provisioning | Improve infrastructure stability and provisioning consistency with updates to cluster provisioning. |
 | 486129 | Custom fields in position-->manage changes can't be edited. | This bug fixes the issue where custom fields could not be edited in the manage changes tabs for positions. |
 
