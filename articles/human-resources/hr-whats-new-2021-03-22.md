@@ -50,9 +50,8 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-|## Investigate / implement workaround for batch SysServerSessions issue - (560976) | - | - |
+| Option to force the cancellation and reset of stuck batch jobs - (560976) | - | [Reset stuck batch jobs](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-troubleshooting-batch-execution) |
 | ## [EHR] Update UX for creating a new benefit plan - (419941) | - | - |
-| ## Regular translation checkins for supported HCM languages - (394249) | - | - |
 | ## Payroll Integration focused position details entity - (552750) | - | - |
 | ## Flighting and feature management for Payroll Integration changes and features - (453940) Feature name: (Preview) Payroll integration | - | - |
 | ## Payroll Integration focused Employee entity - (552743) | - | - |
@@ -66,11 +65,10 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| ## Investigate adding the suggested index to the BUSINESSPROCESSTASKASSIGNMENT table - (554239) | - | - |
+| 554239 | Performance improvements for entities related to the BUSINESSPROCESSTASKASSIGNMENT table | Improve performance of entities related to the BUSINESSPROCESSTASKASSIGNMENT table by adding suggested suggested indexes to the table. |
 | ## Label @Leave:Leave_Type_Title is not resolved - (565099) There is an entity called "@Leave:Leave_Type_Title" on the Data Management Entities form. It is clear that this is just failing to resolve a label. | - | - |
 | ## When accruing based on hours worked and using holiday correction the negative accrual appears inaccurate - (528155) | - | - |
-| ## Remove V2 Entity Fallback Code From Nightly Sync - (566061) The V2 fallback code for nightly sync is no longer needed and prevents filtered sync from working as expected | - | - |
-| ## Batch jobs stuck in "Executing" status because batch job recovery code relies on SysServerSessions which is not reliable - (562283) | - | - |
+| 566061 | Remove V2 Entity Fallback Code From Nightly Sync | Remove V2 fallback code for nightly Dataverse sync. The fallback is no longer necessary and prevents filtered sync from working as expected. The change enhances consistency of the Dataverse data sync. |
 | ## Worker benefit plans > Remove checkout throwing error - (538024) | - | - |
 | ## Benefits Workspace : " Active Life Events" link should be visible only when "Benefits workspace feature is turned On - (557965) | - | - |
 | ## Payroll employee entity needs to filter results based on the Identification type selected in the Payroll tab in HRParameters - (562542) | - | - |
@@ -82,10 +80,10 @@ The following bug fixes are included in this release.
 | ## Labels in payroll integration need to be udpated - (561672) | - | - |
 | ## The custom fields in position worker assignment cant be updated through talent. - (486129) | - | - |
 | ## All of the validation for Position worker assignments can be bypassed using the Position date manager form if you trigger Save without leaving record - (563146) | - | - |
-| ## Terminate worker sends multiple updates to CDS - (562286) | - | - |
+| 562286 | Terminate worker sends multiple updates to Dataverse | When a worker is terminated, more than one update operation is sent to Dataverse resulting in two update notifications for the same change. This can cause multiple triggers if a Power Automate flow is configured to trigger from the action. |
 | ## "Un-representable DateTime" when opening Leave & Absence enrollments - (527340) | - | - |
 | ## Accruing leave for a worker accrues for all plans, not the plans the worker is enrolled in - (563109) | - | - |
-| ## Repair Item: Increase Set-ClusterProvisioningVersion.ps1 wait time interval - (561663) | - | - |
+| 561663 | Increase wait time interval for cluster provisioning | Improve infrastructure stability and provisioning consistency with updates to cluster provisioning. |
 
 ## In preview
 
