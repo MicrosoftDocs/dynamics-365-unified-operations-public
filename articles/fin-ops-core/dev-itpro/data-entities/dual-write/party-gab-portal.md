@@ -35,9 +35,13 @@ ms.search.validFrom: 2021-03-22
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 When you install dual-write orchestration solution version 2.0.999.0 and above, you will notice that the customer portal web-roles aren’t working as expected. It is because, the dual-write orchestration solution brings in Party and GAB functionality that contains data model changes around account and contact entities that allow many-to-many relationships for advanced business scenarios. These data model changes are not supported by portal web-roles (including customer portal) that are either shipped out of the box or existing in the system prior to dual-write. For the web-roles to work as expected, you need to create new web-roles using the new data model. This page explains the steps for creating new web-roles with the advanced data model. 
+
 Here is how the table relationship looks like without the Party and GAB data model: 
+
    ![without party model](media/without-party-model.png)
+
 Here is how the table relationship looks like with Party and GAB data model: 
+
    ![with party model](media/with-party-model.png)
 
 
@@ -48,38 +52,38 @@ The way the entities interact changes, but the entity permissions in the custome
 3.	In the side bar navigate to Security > Entity permissions
 
 ### Now you’ll need to create 3 new entity permissions:
-1.	Contact to Party Connection
-    a.	Party to Account Connection
-        i.	Account to Order Connection
+1.	Contact to Party Connection      
+2.	Party to Account Connection
+3.	Account to Order Connection
         
 #### Contact to Party Connection:
 Set the following values to each parameter:
-    a.	Name: Party to Account Connection (or your choice)
-    b.	Table Name: msdyn_contactforparty
-    c.	Website: Customer Portal
-    d.	Scope: Contact
-    e.	Select all privileges.
-    f.	Web roles: Authenticated Users, Customer Representative (or your choice)
-    g.  Save
++ Name: Party to Account Connection (or your choice)
++ Table Name: msdyn_contactforparty
++ Website: Customer Portal
++ Scope: Contact
++ Select all privileges
++ Web roles: Authenticated Users, Customer Representative (or your choice)
++ Save
 
 #### Party to Account Connection
 Set the following values to each parameter:
-    i.	Name: Party to Account Connection (or your choice)
-    ii.	Entity Name: account
-    iii.	Website: Customer Portal
-    iv.	Scope: Parent
-    v.	Parent Entity Permission: Contact to Party Connection
-    vi.	Select all privileges.
-Save
++ Name: Party to Account Connection (or your choice)
++ Entity Name: account
++ Website: Customer Portal
++ Scope: Parent
++ Parent Entity Permission: Contact to Party Connection
++ Select all privileges
++ Save
 
 #### Account to Order Connection:
 Set the following values to each parameter:
-    a.	Name: Account to Order Connection (or your choice)
-    b.	Entity Name: salesorder
-    c.	Website: Customer Portal
-    d.	Scope: Parent
-    e.	Parent Entity Permission: Party to Account Connection
-    f.	Select all privileges
-Save
++ Name: Account to Order Connection (or your choice)
++ Entity Name: salesorder
++ Website: Customer Portal
++ Scope: Parent
++ Parent Entity Permission: Party to Account Connection
++ Select all privileges
++ Save
 
 
