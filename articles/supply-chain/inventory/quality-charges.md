@@ -42,7 +42,7 @@ Use the **Quality charges** page to define the types of charges that can be adde
 
 You work for a manufacturing company. Your company has contracts with several vendors that outline ship on time, damages, and product quality standards for items. Likewise, several of your customers have agreements with your company about returns, damages, and quality of the products.
 
-A fee structure is defined for each circumstance and defined in the contract. You can configure quality charges to outline the various types of charges such as Damages, Late Shipment, Quality, and so on. Then, when you create a nonconformance you add one more more Operations. On each operation, you click **Charges** to define the details about the fees.
+A fee structure is defined for each circumstance and defined in the contract. You can configure quality charges to outline the various types of charges such as *Damages*, *Late shipment*, *Quality*, and so on. Then, when you create a nonconformance you add one more *Operations*. On each operation, you click **Charges** to define the details about the fees.
 
 ## Create a quality charge
 

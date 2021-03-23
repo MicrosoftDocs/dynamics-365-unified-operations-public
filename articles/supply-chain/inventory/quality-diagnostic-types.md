@@ -40,7 +40,7 @@ Use the **Diagnostic types** page to define a classification of diagnostic actio
 
 ## Examples of diagnostic types
 
-You work for a manufacturing company and several items have failed quality tests. The items are moved into a quarantine area and marked as nonconforming products. A nonconformance record is created in Dynamics 365 Supply Chain Management to track the details through the issue resolution. It is found that bearings in the machine that packages the items have gone bad and are overheating, which is causing the quality issues. The correction for this problem is to replace the parts on the machine. When you configure the diagnostic types, you could create multiple records to represent each type of possible problem with the machine or you could create one generic diagnostic type to represent machine repair.
+You work for a manufacturing company and several items have failed quality tests. The items are moved into a quarantine area and marked as nonconforming products. A nonconformance record is created in Dynamics 365 Supply Chain Management to track the details through the issue resolution. Bearings in the machine that packages the items have gone bad and are overheating, which is causing the quality issues. The correction for this problem is to replace the parts on the machine. When you configure the diagnostic types, you could create multiple records to represent each type of possible problem with the machine or you could create one generic diagnostic type to represent machine repair.
 
 ## Create a diagnostic type
 
