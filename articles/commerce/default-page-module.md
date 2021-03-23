@@ -66,11 +66,11 @@ Once the default page module is added, it should look similar to the following e
 
 [Module library overview](starter-kit-overview.md)
 
-[Page summary modules](core-page-summary-modules.md)
+[Page summary modules](page-summary-module.md)
 
-[Script modules](core-script-modules.md)
+[Script modules](script-module.md)
 
-[Metatags module](core-metatags-module.md)
+[Metatags module](metatags-module.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
