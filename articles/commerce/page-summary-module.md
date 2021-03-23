@@ -43,8 +43,8 @@ Page summary modules simplifies entry of page summary metadata which can be used
 | Property name     | Values | Description |
 |-------------------|--------|-------------|
 | title | Text | The title of the web page. |
-| descripton | Text | A brief description of the page contents. |
-| keywords | Text | A series of comma seperated keywords that are relevant to the page. |
+| description | Text | A brief description of the page contents. |
+| keywords | Text | A series of comma separated keywords that are relevant to the page. |
 | Disable Twitter Tags | **True** or **False** | If set to true twitter tags will not be rendered in the HTML. |
 | Sharing Image | Image selector | Image is used for when sharing the page. |
 | Disable Facebook OG Tags | **True** or **False** | If set to true Facebook tags will not be rendered in the HTML. |
