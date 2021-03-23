@@ -60,7 +60,7 @@ For a user to be able to approve or reject nonconformances, their user record mu
 ## Additional resources
 
 - [Quality management overview](quality-management-processes.md)
-- [Nonconformance management](enable-nonconformance-management.md)
+- [Enable quality and nonconformance management](enable-quality-management.md)
 - [Quality charges](quality-charges.md)
 - [Quarantine zones for nonconformances](quality-quarantine-zones.md)
 - [Diagnostic types for nonconformances](quality-diagnostic-types.md)

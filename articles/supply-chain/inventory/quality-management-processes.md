@@ -118,8 +118,7 @@ It's a good idea to define a unique document type for corrections by using the *
 
 ## Additional resources
 
-- [Enable quality management](enable-quality-management.md)
-- [Nonconformance management](enable-nonconformance-management.md)
+- [Enable quality and nonconformance management](enable-quality-management.md)
 - [Inventory blocking](inventory-blocking.md)
 - [Quarantine orders](quarantine-orders.md)
 - [Inspect the quality of goods](tasks/inspect-quality-goods.md)

@@ -188,7 +188,7 @@ Create cases related to quality orders to track additional details about issues 
 - [Quality test groups](quality-test-groups.md)
 - [Quality associations](quality-associations.md)
 - [Quality management processes](quality-management-processes.md)
-- [Nonconformance management](enable-nonconformance-management.md)
+- [Enable quality and nonconformance management](enable-quality-management.md)
 - [Quality management for warehouse processes](quality-management-for-warehouses-processes.md)
 
 

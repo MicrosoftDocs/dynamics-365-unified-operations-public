@@ -433,7 +433,7 @@ In production, if you set the **Event type** field to **Report as finished** and
 ## Additional resources
 
 - [Quality management processes](quality-management-processes.md)
-- [Nonconformance management](enable-nonconformance-management.md)
+- [Enable quality and nonconformance management](enable-quality-management.md)
 - [Quality management for warehouse processes](quality-management-for-warehouses-processes.md)
 
 

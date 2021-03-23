@@ -59,7 +59,7 @@ For details about how to add operations to a nonconformance and apply charges to
 ## Additional resources
 
 - [Quality management overview](quality-management-processes.md)
-- [Nonconformance management](enable-nonconformance-management.md)
+- [Enable quality and nonconformance management](enable-quality-management.md)
 - [Workers responsible for approving nonconformances](quality-responsible-workers.md)
 - [Quarantine zones for nonconformances](quality-quarantine-zones.md)
 - [Diagnostic types for nonconformances](quality-diagnostic-types.md)

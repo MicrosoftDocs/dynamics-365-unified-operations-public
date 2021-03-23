@@ -68,7 +68,7 @@ In this example, three or four operations could be created to represent the work
 ## Additional resources
 
 - [Quality management overview](quality-management-processes.md)
-- [Nonconformance management](enable-nonconformance-management.md)
+- [Enable quality and nonconformance management](enable-quality-management.md)
 - [Create and process nonconformances](tasks/create-process-non-conformance.md)
 - [Workers responsible for approving nonconformances](quality-responsible-workers.md)
 - [Quarantine zones for nonconformances](quality-quarantine-zones.md)

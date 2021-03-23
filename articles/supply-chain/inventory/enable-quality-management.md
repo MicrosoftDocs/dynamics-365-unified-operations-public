@@ -78,7 +78,7 @@ Once the configuration is complete, you can start creating and processing noncon
 ## Additional resources
 
 - [Quality management overview](quality-management-processes.md)
-- [Nonconformance management](enable-nonconformance-management.md)
+- [Enable quality and nonconformance management](enable-quality-management.md)
 - [Quality management for warehouse processes](quality-management-for-warehouses-processes.md)
 
 
