@@ -36,36 +36,36 @@ Use the **Financial dimension sets** page to create and manage financial dimensi
 
 A dimension set is an ordered combination of financial dimensions that can be used to summarize general ledger data in a user-defined way.
 
-Here are some of the considerations:
-
-- A primary purpose of a dimension set is to define a view for the trial balance.
-- 
+The primary purpose of a dimension set is to define a trial balance.
 
 ## Dimension set balances
 
-The dimension set balances contain general ledger data that is summarized based on the dimension set. The balances are summarized increase the performance.
+The balances contain general ledger data that is summarized based on the financial dimensions of the dimension set. The balances are summarized to increase the performance.
 
 ## Create balances
 
-Use **Create balances** to create balances on a dimension set that does not currently have balances.
+Use **Create balances** to initialize the balances on a dimension set that does not currently have balances.
 
 > [!NOTE]
 > Limit the number of dimension sets with balances because updating the balances has an impact on all general ledger posting activities.
 
 ## Update balances
 
-Use **Update balances** to make sure the dimension set balances contain the latest general ledger posting activity. Consider using a recurring batch job to make sure the balances are current on your most frequently used dimension sets.
+Use **Update balances** to include the latest general ledger posting activity in the balances. An update is incremental and only has to process the general ledger posting activity since the last update.
 
 > [!NOTE]
-> The trial balance will make sure the balances are current, but the recurring batch job will ensure the update can be processed quickly which will prevent the trial balance user from having to wait.
+> Displaying the trial balance forces an update to make sure the balances are current. Consider using a recurring batch job to make sure updates to your most frequently used dimension sets are quick because that will minimize the wait for the trial balance user.
 
 ## Rebuild balances
 
-Use **Rebuild balances** to reset the balances and ensure they match the general ledger data.
+Use **Rebuild balances** to recreate all the balances to ensure they match the general ledger data. Rebuilding the balances is a heavy operation and should not normally be necessary.
+
+> [!NOTE]
+> If you have a scenario that regularly requires a rebuild of the balances, open a support case to determine why the balances do not match the general ledger for your scenario.
 
 ## Clear balances
 
-Use **Clear balances** to remove any existing balances and stop any further updates. The dimension set will no longer have an impact on general ledger posting activities.
+Use **Clear balances** to remove the balances and stop any further updates. The dimension set will no longer have an impact on general ledger posting activities.
 
 ## Derived dimensions
 
