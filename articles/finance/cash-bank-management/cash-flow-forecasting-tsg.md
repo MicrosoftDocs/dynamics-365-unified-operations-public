@@ -60,8 +60,9 @@ You must periodically refresh your entities to ensure that the data is current a
 
 ## Which calculation method should be used when calculating cash flow forecast?
 
-Cash flow forecast calculation method has two important selection options.  "New" will calculate cash flow forecasts for new documents and documents that have changed since the last batch job execution.  This option is much faster because it only needs to process a smaller subset of documents.  "Total" will recalculate cash flow forecasts for every document in the system.  This option takes more time because it has more work to complete.
 
-## What can be done to improve the performance of the cash flow forecasting recurring batch job?
+The Cash flow forecast calculation method has two important selection options.  The **New** option will calculate cash flow forecasts for new documents and documents that have changed since the last batch job ran. This option tends to run faster because it processes a smaller subset of documents. The **Total** option will recalculate cash flow forecasts for every document in the system. This option takes more time because it has more work to complete.
 
-Cash flow forecasting should be calculated one time per day during the off-peak hours using the "New" calculation method six days of the week.  The "Total" calculation method should be set up to run once per week on the day with the least amount of activity.
+### What can be done to improve the performance of the cash flow forecasting recurring batch job?
+
+We recommend running the your cash flow forecast should be calculated once each day during the off-peak hours using the New calculation method. We recommend using this approach six days per week. Then run a cash flow forecast once each week using the **Total** calculation method on the day with the least amount of activity.
