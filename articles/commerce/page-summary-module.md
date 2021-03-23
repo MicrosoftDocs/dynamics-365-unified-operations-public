@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Page summary modules
+title: Page summary module
 description: This topic covers the page summary modules and describes how to add one to a template in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 02/11/2021
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -66,11 +66,11 @@ Once the summary module is added it should look similar to the below image.  The
 
 [Module library overview](starter-kit-overview.md)
 
-[Default page module](core-default-page-module.md)
+[Default page module](default-page-module.md)
 
-[Script modules](core-script-modules.md)
+[Script modules](script-module.md)
 
-[Metatags module](core-metatags-module.md)
+[Metatags module](metatags-module.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
