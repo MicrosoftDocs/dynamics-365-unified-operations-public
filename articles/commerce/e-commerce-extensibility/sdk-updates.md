@@ -5,7 +5,7 @@ title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 03/19/2021
+ms.date: 03/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -70,6 +70,8 @@ Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, 
 }
 ...
 ```
+### Module library versions mapped to Commerce Scale Unit versions 
+
 The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **March 19, 2021**.
 
 | Commerce Scale Unit version | Maximum module library version |
@@ -115,32 +117,35 @@ When upgrading the module library, there may be new settings that are applicable
 
 When a local configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, the local app.settings.json file updates will be included. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS). You will then see the new settings in the site builder tool.
 
-## Update module libray using a global module library extension
+## Update module library using a global module library extension
 
-**Note: only use if you have no e-commerce customizations**
+> [!NOTE] 
+> Only update the module library using a global module library extension if you have no e-commerce extension customizations.
 
-If you have an environment that has no e-commerce extension customizations (modules, data actions or themes) such as a newly deployed environment, you can update it using a pre-configured e-Commerce global extension within LCS.  Deploying with one of the globally available customizations will overwrite the deployed e-Commerce extension package so it is important to make sure you do not have any customizations already uploaded as it will be overwritten.  Follow the steps below to update an environment.  You need to also ensure you are not upgrading to a version above the deployed Commerce scale unit version as shown above.
+If you have an environment that has no e-commerce extension customizations (in other words, no modules, data actions, or themes) such as a newly deployed environment, you can update the module library using a preconfigured e-commerce global extension within LCS. Deploying with one of the globally available customizations will overwrite the deployed e-commerce extension package, so it is important to ensure that you do not have any customizations already uploaded. You must also ensure that you are not upgrading to a module library version later than that associated with the deployed Commerce Scale Unit version, [as shown above](#module-library-versions-mapped-to-commerce-cale-unit-versions).
 
-### Steps to deploy a global e-commerce extension
+### Deploy a global e-commerce extension
 
-1. From within LCS project select the **Asset libary** as shown below.
+To deploy a global e-commerce extension, follow these steps.
 
-![Asset library](media/module-library-update-1.png)
+1. From within your LCS project select **Asset library**.
 
-2. From within the **Asset library** page, select the **e-Commerce package** tab and select the **Import** button as shown below.
+    ![LCS project screen with the Asset library tile highlighted](media/module-library-update-1.png)
 
-![Import into asset library](media/module-library-update-2.png)
+1. On the **Asset library** page, select the **e-Commerce package** tab, and then select **Import**.
 
-3. Select the package to import followed by the **Pick** button as shown below. It may take 15-30 minutes for the package to be available.
+    ![LCS Asset library page with the e-Commerce package tab and Import button highlighted](media/module-library-update-2.png)
 
-![Import into asset library](media/module-library-update-3.png)
+1. In the **Pick a e-Commerce package** dialog box, select the package to import, then select **Pick**. It may take 15-30 minutes for the package to be available. The naming convention for the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version. In the following example image, the filename is for the Commerce release 10.0.16 and includes module library version 9.26.15. Only general availability versions will be made available.
 
-Notice the naming convention of the global e-Commerce extension file has the Commerce release version and the module library release version to help you pick the correct version.  For example in the above image, the filename is for the Commerce release 10.0.16 and includes module library version 9.26.15.  Only general availability versions will be made available.
+    ![Pick a e-Commerce package dialog box with the package name and Pick button highlighted](media/module-library-update-3.png)
 
-4. Once the package has been imported, it can be deployed into an e-Commerce environment. Select the environment to be updated in LCS followed by the **manage** button to get to the screen shot shown below.  Select the **e-Commerce** tab and **Apply extension** to bring up the extension picker.  Select the extension you want to deploy and select the **Update** button.  This deployment may take from 15-30 minutes to complete. For more details on how to upload the extension see the [Package configurations and deploy them to an online environment](package-deploy.md) article.
+1. Once the package has been imported, it can be deployed into an e-commerce environment. Select the environment to be updated, and then select **manage**.  
+1. Select the **e-Commerce** tab, and then select **Apply extension** to bring up the **Update e-Commerce** dialog box. Select the extension you want to deploy, and then select **Update**. The deployment may take from 15-30 minutes to complete.
 
-![Import into asset library](media/module-library-update-4.png)
+    ![Update e-Commerce dialog box with an extension highlighted](media/module-library-update-4.png)
 
+For more information on how to upload an extension package, see [Package configurations and deploy them to an online environment](package-deploy.md).
 
 ## Additional resources
 
