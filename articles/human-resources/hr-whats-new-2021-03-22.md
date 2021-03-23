@@ -51,7 +51,7 @@ The following features are generally available with this release.
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Option to force the cancellation and reset of stuck batch jobs - (560976) | - | [Reset stuck batch jobs](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-troubleshooting-batch-execution) |
-| Minor UX updates for creating new Benefits plan - (419941) | NA | [Creating Benefits Plans] (https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-benefits-plans-setup) |
+| Minor UX updates for creating new Benefits plan - (419941) | NA | [Creating Benefits Plans] (https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-plans-setup) |
 
 
 ### Bug fixes
@@ -63,15 +63,15 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 554239 | Performance improvements for entities related to the BUSINESSPROCESSTASKASSIGNMENT table | Improve performance of entities related to the BUSINESSPROCESSTASKASSIGNMENT table by adding suggested suggested indexes to the table. |
+| 554239 | Performance improvements for entities related to the BUSINESSPROCESSTASKASSIGNMENT table | Improve performance of entities related to the BUSINESSPROCESSTASKASSIGNMENT table by adding suggested indexes to the table. |
 | 566061 | Remove V2 Entity Fallback Code From Nightly Sync | Remove V2 fallback code for nightly Dataverse sync. The fallback is no longer necessary and prevents filtered sync from working as expected. The change enhances consistency of the Dataverse data sync. |
 | 538024 | Worker benefit plans > Remove checkout throwing error | Fixed error while removing checkout for Benefit plan option in Worker Benefits form. |
 | 557965 | Benefits Workspace : " Active Life Events" link should be visible always in Link section | Fixed issue where Active Life Event link was visible in Link section but was throwing error while trying to navigate if Workspace feature is not turned ON  | 
 | 556672 | Unable to process accruals for a terminated employee when Streamlined employee entry is enabled in Feature Management | The option to accrue leave and absence plans has been added to  More options under Work history for employees when streamlined employee entry is enabled in Feature Management.   | 
 | ## The SysRecordChangeLogValidTimeState menu item should be included in a security privilege and an extension of the SystemExternalBasicMaintain security duty - (562656) | - | - |
-| (505989) | Life events processing:  Change of eligibility not processed correctly due to date used | Fixed issue where change in eligibility processing was dependant on the position start date and not just the current position. |
+| (505989) | Life events processing:  Change of eligibility not processed correctly due to date used | Fixed issue where change in eligibility processing was dependent on the position start date and not just the current position. |
 | 562286 | Terminate worker sends multiple updates to Dataverse | When a worker is terminated, more than one update operation is sent to Dataverse resulting in two update notifications for the same change. This can cause multiple triggers if a Power Automate flow is configured to trigger from the action. |
-| ## "Un-representable DateTime" when opening Leave & Absence enrollments - (527340) | - | - |
+| ## "Unrepresentable DateTime" when opening Leave & Absence enrollments - (527340) | - | - |
 | 561663 | Increase wait time interval for cluster provisioning | Improve infrastructure stability and provisioning consistency with updates to cluster provisioning. |
 | 486129 | Custom fields in position-->manage changes can't be edited. | This bug fixes the issue where custom fields could not be edited in the manage changes tabs for positions. |
 ## In preview
