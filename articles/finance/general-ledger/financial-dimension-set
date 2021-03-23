@@ -34,52 +34,38 @@ This topic describes various information related to financial dimension sets.
 
 Use the **Financial dimension sets** page to create and manage financial dimension sets.
 
-A financial dimension set is an ordered combination of financial dimensions that is used to summarize general ledger data.
+A dimension set is an ordered combination of financial dimensions that can be used to summarize general ledger data in a user-defined way.
 
 Here are some of the considerations:
 
-- A primary purpose of a financial dimension set is to define the grouping of the trial balance.
+- A primary purpose of a dimension set is to define a view for the trial balance.
 - 
 
 ## Dimension set balances
 
-The dimension set balances contain summarized general ledger data that is based on the definition of the dimension set.
+The dimension set balances contain general ledger data that is summarized based on the dimension set. The balances are summarized increase the performance.
 
 ## Create balances
 
-Use **Create balances** to create balances on a dimension set that does not currently have balances. 
+Use **Create balances** to create balances on a dimension set that does not currently have balances.
 
 > [!NOTE]
-> Limit the number of dimension sets with balances becaues the updating the balances has an impact on all general ledger posting activities.
+> Limit the number of dimension sets with balances because updating the balances has an impact on all general ledger posting activities.
 
 ## Update balances
 
-Use **Update balances** to make sure the dimension set balances are current.
+Use **Update balances** to make sure the dimension set balances contain the latest general ledger posting activity. Consider using a recurring batch job to make sure the balances are current on your most frequently used dimension sets.
+
+> [!NOTE]
+> The trial balance will make sure the balances are current, but the recurring batch job will ensure the update can be processed quickly which will prevent the trial balance user from having to wait.
 
 ## Rebuild balances
 
-Not all dimensions are valid for all legal entities. Additionally, some dimensions might be relevant only for a specific period. In these cases, you can use the **Legal entity overrides** section to specify the companies that the dimension should be suspended for, the owner, and the period when the dimension is active.
+Use **Rebuild balances** to reset the balances and ensure they match the general ledger data.
 
 ## Clear balances
 
-To help maintain referential integrity of the data, financial dimensions can rarely be deleted. If you try to delete a financial dimension, the following criteria are evaluated:
-
-- Has the financial dimension been used on any posted or unposted transactions, or in any type of dimension value combination?
-- Is the financial dimension used in any active account structure, advanced rule structure, or financial dimension set?
-- Is the financial dimension part of a default financial dimension integration format?
-- Has the financial dimension been set up as a default dimension?
-
-If any of the criteria are met, you can't delete the financial dimension.
-
-## Default dimension values
-
-You can use values from master records, such as customer and vendor, as default values in new dimensions. When the new dimensions are created, the master record ID is entered in the dimension values for those master records. For example, when you create a new customer, the customer ID is entered in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules are used, and the customer ID is added to the document.
-
-This feature is controlled by a setting in the dimension. This setting is named **Copy values to this dimension on each new DimensionName created**, where **DimensionName** is the name of the dimension. By default, the feature is turned off. However, it can be turned on at any time.
-
-If records already exist for the dimension, the master records are updated when you turn the feature on. However, existing documents and transactions aren't updated.
-
-If you are using a template to create a master record, make sure that the template value for the master dimension is blank. For example, if you're creating customers from a template, make sure that the customer dimension in the template is blank. The customer dimension value will default from the new customer number when you create the new customer.  
+Use **Clear balances** to remove any existing balances and stop any further updates. The dimension set will no longer have an impact on general ledger posting activities.
 
 ## Derived dimensions
 
