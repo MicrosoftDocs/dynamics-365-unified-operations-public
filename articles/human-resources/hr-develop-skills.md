@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Align workforce skills with business needs
+title: Configure skills
 description: You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively. You can also specify the skills that are required for a specific job.
 author: andreabichsel
 manager: tfehr
@@ -66,28 +66,9 @@ Skill types are categories that individual skills fall under, such as Administra
 
 5. Select **Save**.
 
-## Create a skill
-
-Before you can assign a skill to a person or a job, create a skill-mapping search, or create a skill profile, you must enter information about the skills on the **Skills** page. For each skill, you can select a skill type and a rating model.
-
-1. In the **Employee development** workspace, select **Links**.
-
-2. Under **Competency setup**, select **Skills**.
-
-3. Select **New**.
-
-4. Complete the following fields:
-
-   - **Skill**: Enter a name for the skill.
-   - **Description**: Enter a description for the skill.
-   - **Rating**: Select the rating model you want to use for this skill.
-   - **Skill type**: Select from the list of skill types.
-
-5. Select **Save**.
-
 ## Create a rating model
 
-Rating models help evaluate a person's actual level of skill, the level they should work to achieve, or the level of skill required for a job. Each level in a rating model is assigned a factor. 
+Rating models help evaluate a person's actual level of skill, the level they should work to achieve, or the level of skill required for a job. Each level in a rating model is assigned a factor.
 
 1. In the **Employee development** workspace, select **Links**.
 
@@ -110,29 +91,25 @@ Rating models help evaluate a person's actual level of skill, the level they sho
 
 6. Select **Save**.
 
-## Specify job skills
-When you enter information about a job, you can specify the skills that a person should have to perform the work required for the job.  In addition you can specify the desired level for each skill as well the level of importance of the skill. Different jobs can require different levels of importance for the same skill.
+## Create a skill
 
-## Enter skills for workers, applicants, or contacts
-You can enter target skills or actual skills for workers, applicants, or contacts. A target skill is a skill that a person plans to achieve. An actual skill is a skill that a person currently has.
+Before you can assign a skill to a person or a job, create a skill-mapping search, or create a skill profile, you must enter information about the skills on the **Skills** page. For each skill, you can select a skill type and a rating model.
 
-## Skill mapping and Skill mapping profiles
-You can create a skill-mapping search to find a worker, applicant, or contact person who is qualified to perform a specific type of task. Skill-mapping searches look across skills, education, certificates, positions of trust and project experience and return results that match the criteria entered.  For example, it might be useful to know which workers in your organization earned their CPA.
+1. In the **Employee development** workspace, select **Links**.
 
-Skill-mapping profiles allow you to find current employees or candidates with qualifications that directly correspond to business needs.  For example, you could create a skill-mapping profile for an open position in your organization. By creating a profile for a particular job and copying the skills, education and certificates from that job to the profile, you can quickly search workers, applicants and contact persons who match one or more of the criteria entered on the profile and view a list of the candidates whose skills most closely match the skills required for the job.
+2. Under **Competency setup**, select **Skills**.
 
-> **Note**
-> Only workers, applicants, and contact persons who are selected to be included in skill mapping searches can be displayed in a skill-mapping results list, or included in a skill profile. To include a worker, applicant, or contact person in skill mapping searches, set the **Include in skill mapping** selection to Yes in the following pages:
-> 
-> + Worker
-> + Employee
-> + Applicant
-> + Contacts
+3. Select **New**.
 
-## Skill gap analysis and skill profile analysis
-You can create a skill profile analysis to view a list of the competencies of a worker, applicant, or contact person as of a specific date. You can create a skill gap analysis to compare a person’s skills and the skills that are required for a specific job.  
+4. Complete the following fields:
 
+   - **Skill**: Enter a name for the skill.
+   - **Description**: Enter a description for the skill.
+   - **Rating**: Select the rating model you want to use for this skill.
+   - **Skill type**: Select from the list of skill types.
 
+5. Select **Save**.
 
+## See also
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
