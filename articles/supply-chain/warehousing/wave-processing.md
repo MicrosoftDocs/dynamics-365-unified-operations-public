@@ -208,7 +208,7 @@ To open this page, select a wave on any of several different wave pages and then
 
 ## Review load validation and error messages
 
-During wave processing, the system validates and displays the status (pass or warning) for each load line in the wave. If no warnings occur, it creates the associated work. If warnings do occur, it doesn't create any work and instead shows the following error after it has finished validating the entire wave:
+During wave processing, the system validates and displays the status for each load line in the wave. If no warnings occur, it continues to the next wave step. If warnings do occur, it instead shows the following error after it has finished validating the entire wave:
 
 > Found invalid load lines in wave. Please remove the invalid load lines.
 
