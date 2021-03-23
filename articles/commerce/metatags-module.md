@@ -5,7 +5,7 @@ title: Metatags modules
 description: This topic covers the metatags module and describes how to add one to a template in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 02/11/2021
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -62,9 +62,9 @@ Once the module is added it can now be configured and the template can be saved 
 
 [Module library overview](starter-kit-overview.md)
 
-[Default page module](core-default-page-module.md)
+[Default page module](default-page-module.md)
 
-[Page summary modules](core-page-summary-modules.md)
+[Page summary modules](page-summary-module.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
