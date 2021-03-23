@@ -70,8 +70,6 @@ The following bug fixes are included in this release.
 | 556672 | Unable to process accruals for a terminated employee when Streamlined employee entry is enabled in Feature Management | The option to accrue leave and absence plans has been added to  More options under Work history for employees when streamlined employee entry is enabled in Feature Management.   | 
 | ## The SysRecordChangeLogValidTimeState menu item should be included in a security privilege and an extension of the SystemExternalBasicMaintain security duty - (562656) | - | - |
 | ## Life events processing:  Change of eligibility not processed correctly due to date used - (505989) | - | - |
-| ## The custom fields in position worker assignment cant be updated through talent. - (486129) | - | - |
-| ## All of the validation for Position worker assignments can be bypassed using the Position date manager form if you trigger Save without leaving record - (563146) | - | - |
 | 562286 | Terminate worker sends multiple updates to Dataverse | When a worker is terminated, more than one update operation is sent to Dataverse resulting in two update notifications for the same change. This can cause multiple triggers if a Power Automate flow is configured to trigger from the action. |
 | ## "Un-representable DateTime" when opening Leave & Absence enrollments - (527340) | - | - |
 | 561663 | Increase wait time interval for cluster provisioning | Improve infrastructure stability and provisioning consistency with updates to cluster provisioning. |
