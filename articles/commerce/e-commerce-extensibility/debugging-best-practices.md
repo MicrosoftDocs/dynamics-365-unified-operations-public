@@ -1,4 +1,3 @@
----
 # required metadata
 
 title: Debugging best practices for Dynamics 365 Commerce development 
@@ -95,7 +94,7 @@ Adding the query string ```?debug=true``` turns on debug mode and displays modul
 
 ### Node service proxy query string
 
-Adding the query string ```?item=nodeserviceproxy:true``` will return the raw page context provided by the platform in JSON format. This can be useful to determine which modules the page is rendering, and is aso useful for checking request context properties. 
+Adding the query string ```?item=nodeserviceproxy:true``` will return the raw page context provided by the platform in JSON format. This can be useful to determine which modules the page is rendering, and is also useful for checking request context properties. 
 
 ### Lazy load module query string
 
