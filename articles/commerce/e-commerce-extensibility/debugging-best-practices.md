@@ -73,17 +73,17 @@ Next, navigate to any page on localhost and add the query string parameter `debu
 
 Once a page loads in your browser, you can use the web debugger console tab to examine information about the page state that might be useful for debugging.
 
-### \___initialData___ object
+### The \_\_\_initialData\_\_\_ object
 
-The **\___initialData___** object provides information about the modules that were loaded, the request context, and cache information that was computed during the server-side render. 
+The **\_\_\_initialData\_\_\_** object provides information about the modules that were loaded, the request context, and cache information that was computed during the server-side render. 
 
-To access this information, open the web debugger console tab and enter **\___initialData___** to reveal this debug information. In the **requestContext** object, you can check your Commerce online software development kit (SDK) and module library versions (if installed) as shown in the following example image.
+To access this information, open the web debugger console tab and enter **\_\_\_initialData\_\_\_** to reveal this debug information. In the **requestContext** object, you can check your Commerce online software development kit (SDK) and module library versions (if installed) as shown in the following example image.
 
 ![Initial data_debug information](media/debugging-best-practices-7.png)
 
-### \_msdyn365 object
+### The \_msdyn365 object
 
-The \_msdyn365 object also provides additional debug information in the web debugger debug console. This object contains request details after the client render has also completed. It can be useful to check if there are any differences between the **\_msdyn365** and **\___initialData___** objects to determine whether there is a mismatch between server and client-side renders.
+The **\_msdyn365** object also provides additional debug information in the web debugger debug console. This object contains request details after the client render has also completed. It can be useful to check if there are any differences between the **\_msdyn365** and **\___initialData___** objects to determine whether there is a mismatch between server and client-side renders.
 
 ## Useful query strings
 
@@ -105,21 +105,21 @@ Adding the query string ```setswitch=node_lazyload_{module | all}``` will force 
 
 ### My module is not loading
 
-1. Try loading the page with the debug=true query string parameter. If the module has any errors, it will log the error there. If the error module displays an error the most likely case is the module is misconfigured. Contact the module author to debug further.
-2.	If no error module loads check that the module is in the page context. Add the item=nodeserviceproxy:true flag to see if it is present. If the module is not present update the page in tooling or your pagemock
-3.	If the module is present, verify that it is registered. Check your server for any build errors or the versions page to see if your module is registered.
+1. Try loading the page with the ```debug=true``` query string parameter. If the module has any errors, it will log the errors there. If module displays errors, the most likely case is that the module is misconfigured. Contact the module author to debug further.
+1. If the module does not display any errors, check that the module is in the page context by add the ```item=nodeserviceproxy:true``` flag. If the module is not present, update the page in tooling or your page mock.
+1. If the module is present after checking if it is in the page context, verify that it is registered by checking your server for any build errors, or the versions page to confirm that the module is registered.
 
 ### My data action is not firing
 
-1.	Load the action client side so you can check the API calls in your browser's network tab using the lazyload switch.
-2.	If the network call you expect is not executing but a breakpoint in your action using the JavaScript debugger. You should be able to trace what is happening.
-3.	If the debugger is never triggered verify that your module definition includes the expected action chain.
+1. Load the action on the client side so that you can check the API calls in your browser's network tab using the lazy load query string.
+1. If the network call you expect is not executing, put a breakpoint in your action using the JavaScript debugger. You should then be able to trace what is happening.
+1. If the debugger is never triggered, verify that your module definition includes the expected action chain.
 
 ## Other tips and tricks
 
-- You may use console.trace() statements to print debug information to the console. One thing to note is that if these console.trace() statements are in server-side actions, these logs will not show up in the browser or console unless the debugger is attached to the running node process.
-- It can be helpful sometimes to run yarn –force to force yarn to fetch the latest packages even if they’ve already been installed
-- To perform a clean install, remove the node_modules, yarn.lock file and run yarn cache clean before running yarn.
+- You may use console.trace() statements to print debug information to the console. If the console.trace() statements are in server-side actions, these logs will not appear in the browser or console unless the debugger is attached to the running Node process.
+- It can sometimes be helpful to run the **yarn –force** command to force yarn to fetch the latest packages, even if they've already been installed.
+- To perform a clean install, remove the **yarn.lock** file from the **node_modules** directory, and then run **yarn cache clean** before running yarn.
 
 ## Additional resources
 
