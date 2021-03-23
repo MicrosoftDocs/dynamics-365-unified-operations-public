@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 # Override the default reservation principle for materials in production
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 The *Override default production reservation* feature lets you set a default reservation principle for each item model group. Therefore, different reservation principles can automatically be applied for each item that is part of a production bill of materials (BOM) or batch order formula. You can select whether each item model group should override the default reservation principle that is set for an order, and what reservation principle should be used instead (*manual*, *estimation*, *scheduling*, *release*, or *start*).
 
@@ -41,7 +42,7 @@ For example, if you have raw materials or ingredients that require pick work, BO
 Before you can use the feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Production control*
-- **Feature name:** *Override default production reservation*
+- **Feature name:** *(Preview) Override default production reservation*
 
 ## Assign a production reservation policy to an item model group
 
