@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic describes some best practices to follow when debugging Dynamics 365 Commerce customizations. 
 
 
-## Stepping through code in a modern browser on localhost using Chromium DevTools
+## Stepping through code in a modern browser on localhost
 An easy way to debug code is to use a modern browsers debugger and stepping through code such as a module or data action that is normally run on the server side.  This can be done if you have set up a local development environment as found in the [Set up a development environment](setup-dev-environment.md) article and are using a Chromium based browser such as Edge or Chrome.
 
 First, you will want to identify the breakpoints in your code or where you would like to start stepping through the code. To create a breakpoint in your code, add the **debugger** statement. 
@@ -66,6 +66,18 @@ The local Node server is now ready to handle requests. Next navigate to the page
 The breakpoint has been triggered. From here we can step through the code and debug as necessary.
 You may also add additional breakpoints in this file or in any other files by clicking on the line numbers. These breakpoints will get triggered on the next request.
 
+## Using Fiddler to capture network requests
+
+To enable Fiddler to capture network requests, startup Fiddler before you start your node server in local dev mode.  You will then need to enable Fiddler to [capture HTTPS traffic](https://docs.telerik.com/fiddler/configure-fiddler/tasks/decrypthttps). Once that is complete, start your node server using `yarn start`.
+Navigate to any page on localhost and add the query string parameter `debug=true`, you will see a popup in Fiddler about the certificate not being validated.  Select the "Ignore erorrs (unsafe) and proceed" option. You should now be able to intercept and inspect network requests the Node server is making.
+
+## Accessing debug data through the browser console window
+In your browser once the page loads, you can use the Console tab in your web debugger to examine information about page state that might be useful for debugging.
+
+The ```___initialData___``` object provides information about the modules that were loaded, the request context and cache information that was computed during server-side render. 
+To access this information, open the console tab in the web debugger and type in ```___initialData___``` and hit enter to reveal this debug information. In the request context object you can check your SDK version and starter-kit version (if installed).
+
+![Debug data](media/debugging-best-practices-7.png)
 
 ## Additional resources
 
