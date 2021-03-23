@@ -5,7 +5,7 @@ title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 03/21/2021
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -122,7 +122,7 @@ When a local configuration package is created by using the **yarn msdyn365 pack*
 > [!NOTE] 
 > Only update the module library using a global module library extension if you have no e-commerce extension customizations.
 
-If you have an environment that has no e-commerce extension customizations (in other words, no modules, data actions, or themes) such as a newly deployed environment, you can update the module library using a preconfigured e-commerce global extension within LCS. Deploying with one of the globally available customizations will overwrite the deployed e-commerce extension package, so it is important to ensure that you do not have any customizations already uploaded. You must also ensure that you are not upgrading to a module library version later than that associated with the deployed Commerce Scale Unit version, [as shown above](#module-library-versions-mapped-to-commerce-cale-unit-versions).
+If you have an environment that has no e-commerce extension customizations (in other words, no modules, data actions, or themes) such as a newly deployed environment, you can update the module library using a preconfigured e-commerce global extension within LCS. Deploying with one of the globally available customizations will overwrite the deployed e-commerce extension package, so it is important to ensure that you do not have any customizations already uploaded. You must also ensure that you are not upgrading to a module library version later than that associated with the deployed Commerce Scale Unit version, [as shown above](#module-library-versions-mapped-to-commerce-scale-unit-versions).
 
 ### Deploy a global e-commerce extension
 
