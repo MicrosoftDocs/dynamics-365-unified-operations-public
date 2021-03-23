@@ -32,7 +32,7 @@ A *Party* is a person or an organization involved in the business. By using the 
 
 The Party model is often used to represent medium to complex relationships between organizations and people, particularly when a party plays more than one role. Here are some common examples:
 
-+ A party can be both a customer and a vendor, but only in certain situations. For example, in North America, Fabrikam sells electric wires to Contoso and purchases assembled speakers from Contoso. In Europe, Fabrikam sells parts to Contoso, but doesn't by anything from Contoso.
++ A party can be both a customer and a vendor. For example, in North America, Fabrikam sells electric wires to Contoso and purchases assembled speakers from Contoso. In Europe, Fabrikam sells parts to Contoso, but doesn't by anything from Contoso.
 + A party can be both an employee and a customer. For example, an employee of Contoso buys electronics from Contoso for personal use.
 + There can be a many-to-many relationship between a person and an organization. For example, Fabrikam supplies service specialists and employs a placement coordinator. The coordinator matches the service specialists for the work requests from several of Fabrikam's customers. Contoso is one of the customer accounts. When Contoso needs a specialist, Contoso contacts the coordinator, who then facilitates the request. The coordinator handles requests for all customers, creating a many-to-many relationship.
 
