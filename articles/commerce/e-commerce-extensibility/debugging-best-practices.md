@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: Debugging best practices for Dynamics 365 Commerce development 
