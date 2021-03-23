@@ -5,7 +5,7 @@ title: Set up Microsoft Clarity in Dynamics 36 Commerce
 description: This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 author: BrianShook
 manager: annbe
-ms.date: 03/18/2021
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -106,13 +106,13 @@ For information on how to test that the Clarity script is embedded in site pages
 ### Embed Clarity tracking script code into a specific site page
 
 > [!NOTE] 
-> The template for the page will require an inline script module be added to the **HTML Head** section for the Clarity script code to be available in a page instance.
+> An inline script module must be present in the **HTML Head** section of a page's template to be able to add Clarity script code to the page instance.
 
 To embed the Clarity tracking code into a specific site page in Commerce site builder, follow these steps.
 
 1. Go to your site in Commerce site builder.
 1. Select **Pages**, select the page to which you want to add Clarity script code, and then select **Edit**.
-1. Select the main or top-most slot.
+1. Select the root node slot in the module outline pane.
 1. In the properties pane under **SEO Properties**, expand the **script tag** section. Under **Inline script**, paste the Clarity tracking code. Be sure to remove the surrounding **\<script\>** tags if present in your copied script string.
 1. Select **Save**, select **Finish editing**, and then select **Publish**.
 
