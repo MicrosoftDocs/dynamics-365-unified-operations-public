@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -41,3 +40,6 @@ When approval or a contract in the form of a purchase order is not required, you
     * Duplicate vendor names or Federal tax IDs will be looked for.  Important: If you choose not to process duplicate vendors, the related invoices won't be processed either. You can manually create an invoice by using the information in the CSV file.    
 7. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

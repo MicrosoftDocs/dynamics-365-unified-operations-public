@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -507,3 +506,6 @@ Additional resources
 [Nonconformance management](enable-nonconformance-management.md)
 
 [Quality management for warehouse processes](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

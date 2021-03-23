@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -100,6 +99,7 @@ The Finance and Operations applications represent the next-generation enterprise
 - [Upload assets by using Azure Pipelines](pipeline-asset-upload.md)
 - [Deploy assets by using Azure Pipelines](pipeline-deploy-asset.md)
 - [Create a Lifecycle Services (LCS) connection in Azure Pipelines](pipeline-lcs-connection.md)
+- [Update the hosted Azure Pipeline for new NuGet packages](pipeline-nuget-split.md)
 - [Update a legacy pipeline in Azure Pipelines](pipeline-msbuild-update.md)
 
 ## X++ programming language
@@ -162,7 +162,7 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 - [Testing and validations](../perf-test/testing-validation.md)
 - [Test projects in Visual Studio](../perf-test/testing-support.md)
-- [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
+- [Deploy and use a continuous build and test automation environment](../perf-test/continuous-build-test-automation.md)
 - [Task recorder resources](../user-interface/task-recorder.md)
 
 ## Office integration
@@ -193,3 +193,6 @@ The client is an HTML web client that runs in all major browsers. For informatio
 ## Additional resources
 
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

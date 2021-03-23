@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -175,3 +174,6 @@ The entity work is now complete, and we can build it.
 [Export Dynamics AX 7 Entities to your own Azure SQL Database](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/27/export-dynamics-ax7-entities-to-your-own-azure-sql-database/)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

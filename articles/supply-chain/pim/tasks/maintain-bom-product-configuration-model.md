@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -60,3 +59,6 @@ Running this procedure requires an existing product configuration model. The Hig
     * Verify if any of the product dimensions are active,  and therefore must have a value or attribute assigned.  
 9. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

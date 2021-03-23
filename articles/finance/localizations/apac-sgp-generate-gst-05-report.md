@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -100,3 +99,6 @@ Follow these steps to generate the tax declaration report.
 
 > [!NOTE]
 > Remember to run the sales tax settlement process to generate the related tax payment.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

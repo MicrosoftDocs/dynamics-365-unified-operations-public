@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -63,3 +62,6 @@ You can issue a fiscal document for a customer who bought goods from the fiscal 
 30. Go to Accounts receivable > Fiscal documents > Electronic fiscal documents > Export/import NF-e process.
 31. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

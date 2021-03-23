@@ -2,13 +2,12 @@
 # required metadata
 
 title: Dual-write overview
-description: This topic provides an overview dual-write. Dual-write is an infrastructure that provides near-real-time interaction between Microsoft Dynamics 365 model-driven apps and Finance and Operations apps.
+description: This topic provides an overview dual-write, which provides near-real-time interaction between customer engagement apps and Finance and Operations apps.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -113,3 +112,6 @@ To create parity with Finance and Operations applications, dual-write makes some
 
 For more information about upcoming changes, see [What's new or changed in dual-write](whats-new-dual-write.md).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

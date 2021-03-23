@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -61,3 +60,6 @@ This guide will help you set up an aging period definition, age customer balance
 2. Select a customer with a balance.
 3. Expand the **Aging fact** box area to view the aged balances. The aging period definition for the fact box is taken from the default aging period definition specified in the parameters. You can change it using the Collect menu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

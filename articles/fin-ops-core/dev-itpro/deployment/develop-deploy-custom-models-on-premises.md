@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -105,3 +104,6 @@ As of the July 2017 release of Microsoft Dynamics 365 for Finance and Operations
 
 4. In the **Select the AOT packages to be deployed** field, select the application (AOT) deployable package that contains your customizations. This field lists all the AOT packages in your Asset library.
 5. Click **Done** to close the **Deployment settings** page, and then continue with the environment deployment process.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

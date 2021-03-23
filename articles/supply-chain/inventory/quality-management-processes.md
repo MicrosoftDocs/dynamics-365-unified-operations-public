@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -105,3 +104,6 @@ Additional resources
 [Set up quality orders](tasks/set-up-quality-orders.md)
 
 [Inspect the quality of goods](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

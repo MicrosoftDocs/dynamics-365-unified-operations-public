@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -59,3 +58,6 @@ Follow these steps to add and configure the branches of this parallel activity.
     > The order of the branches is not important because all the branches of a parallel activity run at the same time.
 
 3. To configure each branch, see [Configure parallel branches in a workflow](configure-parallel-branch-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

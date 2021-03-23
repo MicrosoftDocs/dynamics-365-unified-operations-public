@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -73,3 +72,6 @@ Enrich the channel by adding channel and product attributes. You must add the ch
 33. Click OK.
 34. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

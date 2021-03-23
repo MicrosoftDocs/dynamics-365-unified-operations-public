@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -46,3 +45,6 @@ You can set up the following information for customer invoices and return sales 
 
     * Go to **Organization administration \> Number sequences \> Counters management**. There should be a record where **Module** = **Sales** and **Type** = **Invoice**.
     * Go to **Organization administration \> Number sequences \> Invoice numbering setup**. Select the **Commerce** check box for the number sequence line that is used to number the customer invoices.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

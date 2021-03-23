@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -60,3 +59,6 @@ This topic explains how to add financial dimensions to the Chief Financial Offic
 16. Build your project, and then open the application to view the results.
 
     [![Completed workspace](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

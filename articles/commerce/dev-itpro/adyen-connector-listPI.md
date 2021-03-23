@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -110,3 +109,6 @@ The main difference between the standard flow and the List PI flow is that the c
 ## Related articles
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -99,3 +98,6 @@ If all lines in a service order are marked as **Posted**, the progress of the st
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

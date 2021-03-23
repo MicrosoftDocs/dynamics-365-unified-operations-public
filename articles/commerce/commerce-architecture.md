@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -39,7 +38,7 @@ This topic provides an overview of all components in the Microsoft Dynamics 365 
 
 The following illustration shows an overview of Dynamics 365 Commerce components.
 
-<a href="https://docs.microsoft.com/en-us/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerce Component Overview](./media/commerce-component-overview.jpg)</a>
+<a href="https://docs.microsoft.com/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerce Component Overview](./media/commerce-component-overview.jpg)</a>
 
 ## Architecture benefits
 
@@ -196,3 +195,6 @@ Dataverse is the unified data store that integrates the data from all your busin
 [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview)
 
 [Microsoft Bing for Commerce](https://www.microsoft.com/bing/commerce)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

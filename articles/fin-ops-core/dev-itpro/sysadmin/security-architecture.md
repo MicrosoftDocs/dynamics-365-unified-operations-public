@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ Additionally, the Table Permissions Framework helps protect some data. Data secu
 Auditing of user sign in and sign out is enabled, which means that the system logs when a user signs in or out of the application. A sign out is logged even if the user's session expires or ends.
 
 A system administrator or security administrator can access the audit logs by going to  the **User log** page (**System administration** > **Inquiries** > **User log**).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

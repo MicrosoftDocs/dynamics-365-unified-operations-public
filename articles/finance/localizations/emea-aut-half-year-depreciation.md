@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +52,6 @@ When the **Apply specific rules for half year depreciation** and **Automatically
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

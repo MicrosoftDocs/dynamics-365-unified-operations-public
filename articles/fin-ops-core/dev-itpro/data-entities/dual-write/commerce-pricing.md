@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +56,6 @@ When users initiate a quotation in Sales, the dual-write framework copies the qu
 ## Additional resources
 
 [Prospect-to-cash in dual-write](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

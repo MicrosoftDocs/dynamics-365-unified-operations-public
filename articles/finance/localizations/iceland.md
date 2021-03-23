@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,3 +36,6 @@ This topic provides links to documentation resources for Iceland.
 - [Set up an invoice declaration for vendors](tasks/set-up-invoice-declaration-vendors.md)
 - [Set up mandatory payment references](tasks/set-up-mandatory-payment-references.md)
 - [Update vendor invoice declarations and generate the report](tasks/update-vendor-invoice-declarations-report.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

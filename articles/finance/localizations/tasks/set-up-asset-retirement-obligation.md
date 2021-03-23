@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -69,3 +68,6 @@ This procedure was created using the demo data company JPMF.
 2. In the **Transaction date** field, enter the date on which to recognize the asset retirement obligation
 3. In the **Estimated retirement cost adjustment** field, enter the cash flow amount
 4. Click **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

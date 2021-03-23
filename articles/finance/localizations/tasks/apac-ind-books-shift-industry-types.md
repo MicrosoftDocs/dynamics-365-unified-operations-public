@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -56,3 +55,6 @@ This procedure walks you through defining a shift type and industry for a book a
 23. Close the page.
 24. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

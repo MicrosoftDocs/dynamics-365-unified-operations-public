@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -115,3 +114,6 @@ Arnie changes the value in the **Use cash discount** field back to **Normal**, b
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

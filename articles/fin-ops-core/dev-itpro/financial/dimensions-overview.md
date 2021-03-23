@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -138,3 +137,6 @@ To support interactions with dimensions as columns, for example, in the Microsof
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

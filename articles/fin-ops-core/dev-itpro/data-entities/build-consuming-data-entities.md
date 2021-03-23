@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -441,3 +440,6 @@ If an entity has container fields and these fields need to be exported, the enti
 ## Additional resources
 
 [Develop entities for data migration](develop-entity-for-data-migration.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

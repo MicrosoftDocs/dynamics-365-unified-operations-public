@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -85,3 +84,6 @@ The bill of materials (BOM) quantity is 1, and the production quantity is 110. T
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

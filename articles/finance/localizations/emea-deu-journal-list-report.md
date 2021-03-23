@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,3 +41,6 @@ The **German journal list** report shows a list of transactions that are produce
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

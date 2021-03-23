@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -79,3 +78,6 @@ This guide shows how to create an accessorial assignment, carrier accessorial ch
 6. In the list, click the link in the selected row.
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

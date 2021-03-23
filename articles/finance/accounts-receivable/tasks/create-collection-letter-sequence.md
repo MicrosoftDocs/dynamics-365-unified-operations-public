@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -61,3 +60,6 @@ Use this task guide to create a collection letter sequence. This task uses the U
 26. Expand the **Note** fastTab.
 27. Enter the text to appear on the collection letter for the selected collection letter code. You can translate this text in to multiple languages using the Translations menu above the note box.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

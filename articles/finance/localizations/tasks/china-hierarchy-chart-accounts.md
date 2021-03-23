@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -59,3 +58,6 @@ This procedure was created using the demo data company CNMF. This procedure is f
     * Repeat the last three steps to create additional sub accounts, as necessary.  
 23. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

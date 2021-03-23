@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -84,3 +83,6 @@ To reset a failed warehouse app event message:
 1. Continue working until all relevant messages are reset.
 
 You can also remove a **Failed** event message by using the **Delete** option on the **Warehouse app event messages** toolbar.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

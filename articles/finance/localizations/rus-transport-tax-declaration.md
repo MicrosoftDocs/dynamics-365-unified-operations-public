@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -813,3 +812,6 @@ Following these steps.
     settings of Fixed assets parameters.
 
 6.  Validate and post the journal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/06/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -95,3 +94,6 @@ This procedure walks you through how to create a corrective invoice. This proced
 3. Click Transactions.
 4. Click the General tab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

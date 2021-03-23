@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -53,3 +52,6 @@ Fixed asset depreciation can be run across legal entities in a single step. This
 5. Click Create journal.
 6. Go to Fixed assets > Journal entries > Fixed assets journal.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,6 +17,7 @@ ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Employee and Manager self service overview
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article provides an overview of the employee and manager self service workspace.
 
@@ -218,3 +220,5 @@ Managers can see all goals for their team through the **Team performance goals**
 The **Reviews** tab summarizes the reviews the employee has in each state: **In progress**, **Ready for review**, and **Final review**. To access an employee's review, select the **Details** button and then select reviews to collaborate on. Based on where a review is within the workflow process, you can see if the review is available for updating. 
 
 You can see all reviews for your team through the **Team performance reviews** tile in the **Summary** section of **My team**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

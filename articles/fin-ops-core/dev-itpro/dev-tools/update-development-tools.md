@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -63,3 +62,6 @@ In order to install a new version of the development tools, you'll need to unins
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/26/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -86,3 +85,6 @@ This topic describes the configuration of basic inventory counting processes by 
 5. In the drop-down menu of the **Counting group** field, select a counting group. You can select a specific counting group that should apply to the item in the specific warehouse you have selected. When counting is performed in that warehouse, this counting policy will override the general counting policy for the item.  
 6. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

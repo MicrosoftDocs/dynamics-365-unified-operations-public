@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -51,3 +50,6 @@ The following example shows the steps needed for a user to export the data for r
 5. Select **OK**.
 
 You can now take the Semansys DataBridge format package to the XBRLOne portal for next steps in the process.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

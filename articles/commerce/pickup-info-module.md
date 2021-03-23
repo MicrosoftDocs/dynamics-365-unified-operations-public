@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 11/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -73,3 +72,6 @@ The following illustration shows an example of an e-Commerce checkout page that 
 [Order confirmation module](order-confirmation-module.md)
 
 [Order details module](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
  [!include [banner](includes/banner.md)]
 
 This topic provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Websites can be created to support various business needs. They can represent a whole business, offer a single channel of the business, or target a specific audience or segment of an audience. For example, a clothing manufacturer might have a website that showcases all the brands that it owns. The same clothing manufacturer might then have a separate website for each of those brands, and also a set of websites that feature luxury fashion, outdoor fashion, and children's fashion.
 
@@ -125,3 +122,6 @@ After the authoring tool is loaded, you can select **Home** to return to the aut
 [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
 
 [Manage Content Security Policy (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

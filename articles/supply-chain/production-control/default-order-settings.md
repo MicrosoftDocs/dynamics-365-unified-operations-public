@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -209,3 +208,6 @@ To set the validation option:
 1. On the **General** tab, set **Validation on default order quantities** to one of the following values:
     - **Strict** - Select this option to ensure that all **Standard order quantity** values will be a multiple of the **Multiple** value for each FastTab (**Purchase order**, **Inventory**, and **Sales order**).
     - **Standard** - Select this option to use standard validation (which works the same as when this feature isn't enabled).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

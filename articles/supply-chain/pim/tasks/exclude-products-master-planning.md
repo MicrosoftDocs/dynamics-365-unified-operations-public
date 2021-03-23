@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 12/05/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -47,3 +46,6 @@ This procedure shows how to create a new product lifecycle state that excludes t
 5. In the list, mark the selected row.
 6. In the Product lifecycle state field, enter or select a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/17/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -90,3 +89,6 @@ On the **Customers** page, for each customer who has agreed to pay by using a bi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

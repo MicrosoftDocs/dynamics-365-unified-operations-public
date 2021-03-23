@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -119,3 +118,6 @@ I'm using version 10.0.16 or later, and I receive the following error message wh
 > Please complete the following questionnaire to get started and if relevant request exception from migration to Planning Optimization.
 
 **Answer:** No, master planning isn't blocked. Your master planning run was successfully completed, and you can use the result in the usual way. However, to avoid receiving this error message during future master planning runs, you must either migrate to Planning Optimization immediately or request an exception by using the link in the error message.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

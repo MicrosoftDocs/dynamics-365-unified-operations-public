@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -89,3 +88,6 @@ You can assign service objects to the group by using the **Service objects** for
 [Create service objects](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

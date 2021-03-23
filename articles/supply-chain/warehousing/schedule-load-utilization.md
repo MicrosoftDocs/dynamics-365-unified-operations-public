@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -75,3 +74,6 @@ You can project the space utilization by generating the **Warehouse load utiliza
 
 4. In the **Load type** field, select **Volume** or **Weight** to specify the warehouse operating unit to project space for.
 5. In the **Space utilization setup** field, select the space utilization setup that the projection should be based on.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

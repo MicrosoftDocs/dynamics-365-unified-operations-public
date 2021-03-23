@@ -9,7 +9,6 @@ manager: annbe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -226,3 +225,6 @@ After the document is in **Requested** status, it's visible on the **Active** ta
 ## Related topics
 
 [Outbound inventory operation in POS](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

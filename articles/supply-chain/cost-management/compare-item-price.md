@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -124,3 +123,6 @@ The following is an example of how to export a **Compare item prices storage** r
 1. The **Execution summary** page opens, where you can see the status of your export job and a list of entities that were exported. Select the **Compare item prices** entity listed in the **Entity processing status** area and then select **Download file** to download the data exported from that entity.
 
 For more information about how to use data management to export data, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

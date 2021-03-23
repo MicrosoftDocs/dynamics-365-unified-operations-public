@@ -8,7 +8,6 @@ manager: Wangcheng
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -85,3 +84,6 @@ You can create a non-GST item that is the default for **Tax information** in tax
 - GSTIN of e-commerce operator is always blank in GSTR1.
 - Place of supply is incorrect in GSTR2.
 - Project expense can't be posted when there is a sales tax group and an item sales tax group.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

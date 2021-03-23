@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -147,3 +146,6 @@ Additional resources
 --------
 
 [Install and configure the warehouse app overview](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ The settlement will be 100.00, and will include a payment of 99.00 and a discoun
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

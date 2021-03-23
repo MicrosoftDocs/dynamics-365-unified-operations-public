@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -72,3 +71,6 @@ For full flexibility in mixed mode, we recommend that you use production type BO
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +51,6 @@ You can preview ledger transactions before you post the ledger journal.
 
     > [!NOTE]
     > You can include only journal lines, only transactions, or both journal lines and transactions on the report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

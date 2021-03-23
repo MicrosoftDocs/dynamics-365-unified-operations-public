@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -166,3 +165,6 @@ Overriding occurs when the superclass's implementation of a method is changed by
 
 By contrast, *overloading* occurs when more than one method has the same name, but the methods have different signatures (return types, parameter lists, or both). X++ supports overriding, but it doesn't support overloading.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

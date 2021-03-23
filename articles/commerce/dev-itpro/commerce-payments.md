@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -223,3 +222,6 @@ In Commerce version 10.0.12 and earlier, payment journal assignment is inconsist
 Orders that are created at the POS don't include a check number when they're created in Commerce headquarters. When the omni-channel Commerce order payments feature is turned on, **9999** will be entered as the check number for orders that are created at the POS and paid for by check.
 
 Additionally, the check number won't be required when **Check** is specified as the refund method of payment.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

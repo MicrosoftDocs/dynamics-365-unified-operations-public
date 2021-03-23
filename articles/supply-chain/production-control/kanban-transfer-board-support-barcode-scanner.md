@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -195,3 +194,6 @@ The status of the selected job and the status of any pegged jobs for event kanba
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -123,3 +122,6 @@ This topic briefly describes some country-specific scenarios, such as intra-comm
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

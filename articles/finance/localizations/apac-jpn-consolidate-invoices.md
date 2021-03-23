@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -68,3 +67,6 @@ Invoices are consolidated each month, based on the consolidation day that you sp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

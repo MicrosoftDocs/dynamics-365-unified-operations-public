@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -198,3 +197,6 @@ You can now use the new chain data action wherever you need both the basic produ
 [Data action overrides](data-action-overrides.md)
 
 [Data action hooks](data-action-hooks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

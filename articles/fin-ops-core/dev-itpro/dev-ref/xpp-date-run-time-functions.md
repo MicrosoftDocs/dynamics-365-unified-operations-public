@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -692,3 +691,6 @@ year(0221998); //Returns the value 1998.
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

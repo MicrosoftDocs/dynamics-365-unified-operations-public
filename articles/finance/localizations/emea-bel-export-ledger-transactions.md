@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -106,3 +105,6 @@ Here is an explanation of the columns in this file:
 
 > [!NOTE]
 > To post ledger transactions for customer invoices, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**. For vendor invoices, go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

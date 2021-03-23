@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +51,6 @@ The following are potential uses cases for business events. These use cases aren
 | Production orders | Many organizations use third-party MESs to control and manage their machinery on the production floor. Integration with these systems is often complex. Additionally, communication between the production floor and the back office can be difficult. | By creating business events that are triggered when production orders are updated, you can help improve communications between the back office and the production floor. When integration is required with third-party systems for production, the business events can also be used to help simplify the integration process. |
 | Case management | Case management is a platform feature that lets you track and manage various requests and issues that are internally or externally reported or requested. Typically, each type of case has a different process, and various contributors to the case might be involved throughout the case's lifecycle. The processes can be manual, and communication can often be delayed. Sometimes, contributors to the cases or stakeholders in them might not be users of the system. | By using Power Automate when cases are updated, you can streamline and automate the business processes that are related to various case types. You can also automate communication and implement approval processes when necessary, depending on your organizational requirements. |
 | Transportation management | Many organizations have separate and disconnected systems for managing transportation. Additionally, the staff that is responsible for arranging transportation is typically not the same staff that creates and confirms orders, or the same staff that carries out the work to ship or receive orders. This situation can lead to a breakdown or lack of communication, and can require manual processes to notify various departments when an order is ready for the next step in the process. In many cases, third-party shipping software is used, and data is entered into many systems or tracked in paper logs. | By using business events together with Power Automate, you can streamline the overall transportation management process and help improve communications between departments. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

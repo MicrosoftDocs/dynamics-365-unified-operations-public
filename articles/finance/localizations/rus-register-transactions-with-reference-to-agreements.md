@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -133,3 +132,6 @@ Find more details in the following topics:
 - [Agreements](rus-agreements.md)
 - [Set up and create agreements](rus-set-up-and-create-agreements.md)
 - [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

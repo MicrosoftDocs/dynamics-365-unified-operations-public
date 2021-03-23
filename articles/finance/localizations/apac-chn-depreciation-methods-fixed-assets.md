@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +45,6 @@ To create a depreciation profile:
 For more information, see [Setup fixed asset depreciation allocation](./tasks/fixed-asset-depreciation-allocation.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

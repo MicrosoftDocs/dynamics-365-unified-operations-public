@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -68,3 +67,6 @@ ms.dyn365.ops.version: 10.0.4
 6. On the **Overview** tab, select **Voucher**.
 
 ![Example](media/Annotation-2019-05-21-134817.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

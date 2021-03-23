@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +52,6 @@ For more information see, [Derived books](derived-books.md) and [Post with deriv
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

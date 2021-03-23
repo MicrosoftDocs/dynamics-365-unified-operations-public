@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +45,6 @@ In the **Service agreement group** field in the **Service management parameters*
 ## Related topics
 
 [Create service agreement groups](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

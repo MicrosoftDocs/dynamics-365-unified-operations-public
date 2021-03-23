@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +56,6 @@ You can specify which documents are active for a specific customer or vendor.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

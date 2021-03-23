@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +56,6 @@ The topic explains how to set up an approval workflow that will run when a new l
 14. On the **Create workflow** page, select **Close**.
 14. Select the new workflow, and then select **Versions**. Then select **Make active** to ensure that the workflow is active.
 15. Select **Close**. The new active version appears.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

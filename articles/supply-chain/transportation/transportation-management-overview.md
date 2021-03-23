@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -91,3 +90,6 @@ Supply Chain Management provides a load building strategy that is named the Volu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

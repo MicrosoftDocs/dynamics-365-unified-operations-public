@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -216,3 +215,6 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
     The initial synchronization of the rows is now completed.
 
 8. In the Finance and Operations app, turn change tracking back on for the **Customers V3** table.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -103,7 +102,7 @@ The integration follows the complete sequence of changes. In the example, the cu
 
 Each linked environment-pair (Finance and Operations apps environment and Dataverse environment) should be treated as a single unit and refreshed accordingly. For example, if you are refreshing a sandbox from production, then both Finance and Operations app sandbox environment and the Dataverse sandbox environment should be refreshed from their production counterparts. If dual-write is already used in target environments, those environments need to be unlinked. After the data refresh on target environments, these tables should be cleaned up:
 
-+ Finance and Operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectcolumnConfiguration**, and **BusinessEventsDefinition**. 
++ Finance and Operations apps tables: **DualWriteProjectConfiguration**, **DualWriteProjectFieldConfiguration**, and **BusinessEventsDefinition**. 
 + Dataverse tables: **DualwriteRuntimeConfiguration**. 
 
 The environments need to be relinked and maps reactivated manually.
@@ -148,3 +147,6 @@ To enable table maps for dual-write, you must define an alternate key in Dataver
 ### Is there a document about best practices for table usage? Should I use Customers V2, Customers V3, or Customer Details? What is the difference between these tables, and what is the use case for each?
 
 You should use the [out-of-box scenarios](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping) if you can, because they cover common scenarios such as customer/vendor integration.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

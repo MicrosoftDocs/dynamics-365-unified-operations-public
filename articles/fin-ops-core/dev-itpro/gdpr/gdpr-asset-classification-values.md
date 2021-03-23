@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -51,3 +50,6 @@ Through customization, you can change the classification of the following data t
 -  **Account data** – A value provided by or used by the tenant to identify the billing information or identify the software used by the tenant.
 
 -  **Support data** – Information used to provide customer support.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

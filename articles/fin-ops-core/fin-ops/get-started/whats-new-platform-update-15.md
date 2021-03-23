@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -163,3 +162,6 @@ public final class abClassTable_Extension
 ```
 
 The form or form extension can then consume the display and edit methods from a form control by providing the **\<ClassName\>.\<MethodName\>** in the DataMethod property.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

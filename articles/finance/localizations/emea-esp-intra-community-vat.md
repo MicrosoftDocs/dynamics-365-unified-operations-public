@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -101,3 +100,6 @@ The following example shows how you can set up sales tax codes and post and prin
     ![Sales tax transaction lines](media/2_Sales_tax.png)
 
 9.  Select **Post** to post the transaction and then select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

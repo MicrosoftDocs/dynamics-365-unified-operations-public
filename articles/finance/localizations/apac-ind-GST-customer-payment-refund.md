@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -59,3 +58,6 @@ ms.dyn365.ops.version: 10.0.4
 To validate the financial entries, select **Inquiries \> Voucher**. Here is an example.
 
 ![Example of financial entries](media/Annotation-2019-05-21-132929.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

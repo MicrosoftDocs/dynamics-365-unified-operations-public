@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -115,3 +114,6 @@ For more information about registration IDs processing, including required prere
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

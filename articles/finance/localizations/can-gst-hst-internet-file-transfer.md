@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 08/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -91,3 +90,6 @@ To file your GST/HST returns and remit payments, you can generate a GIFT file an
     > For easy identification of the GIFT file, use the format *GSTYYYYMMDD.tax* for the file name. (In other words, enter **GST** followed by the reporting date, and then add the **.tax** file name extension.) For example, if the reporting date is July 28, 2010, enter **GST20100728.tax** as the name of the GIFT file.
 
 4. Select **OK** to export the GIFT file to the specified path.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

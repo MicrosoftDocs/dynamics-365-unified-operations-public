@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -66,3 +65,6 @@ Command-line interface (CLI) tools are provided as part of the online SDK. These
 [CLI command reference](cli-command-reference.md)
 
 [Package configurations and deploy them to an online environment](package-deploy.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

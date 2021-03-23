@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,3 +57,6 @@ This procedure demonstrates how to configure a worker as a sales representative 
 6. In the Default group field, enter or select a value.
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

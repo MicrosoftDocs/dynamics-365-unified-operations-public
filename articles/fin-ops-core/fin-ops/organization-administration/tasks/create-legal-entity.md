@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -48,3 +47,6 @@ A legal entity is an organization that is identified through registration with a
 15. Expand the **Tax registration** section. In the **Tax registration** section, enter the registration numbers that are used to report to tax authorities.
 16. Expand the **Tax 1099** section. In the **Tax 1099** section, enter 1099 information for the legal entity.  
 17. Click **Save**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -92,3 +91,6 @@ Commerce uses organization hierarchies to structure channels. Organization hiera
 > [!NOTE]
 > To use Commerce sales functionality, the configuration key for **Multiple ship-to** must be enabled. This configuration key can be found in the **Trade configuration** keys under **System Administration**\> **Setup** \> **License Configuration**. This is required due to various validations based on the delivery address configured at the sales order line level.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

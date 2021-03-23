@@ -2,13 +2,12 @@
 # required metadata
 
 title: Image type
-description: Image control interface for representing images in the mobile app. Images can be of any of the following types&amp;58 DataUri, Base64, URL, AOTResource, or Symbol.
+description: Image control interface for representing images in the mobile app.
 author: robinarh
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -228,3 +227,6 @@ Returns the root form instance (page) of this control.
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

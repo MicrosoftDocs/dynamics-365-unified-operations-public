@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -123,3 +122,6 @@ The following example shows how to add a new table map that is named **Address b
 ## Next steps
 
 [Error management and alert notifications](errors-and-alerts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

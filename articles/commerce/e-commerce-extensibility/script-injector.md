@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -151,3 +150,6 @@ After a custom script injector module is deployed to a Dynamics 365 Commerce env
 ## Additional resources
 
 [Online channel extensibility overview](overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

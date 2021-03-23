@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -148,3 +147,6 @@ An error may occur while a previous payment is being recovered on Modern POS. Th
 ## Additional resources
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

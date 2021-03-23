@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -108,3 +107,6 @@ For more details, see the [main data upgrade topic](upgrade-data-to-latest-updat
 ### Recommendation for the first data upgrade run
 
 When you run the data upgrade against your dataset for the first time, and especially when there many customizations or many custom data upgrade scripts, you might find the [feature to skip failed scripts](upgrade-data-to-latest-update.md) useful. By using this feature, you gain visibility into as many errors as possible in one run. Otherwise, only one critical issue is discovered per run. Be aware that, because dependencies exist between scripts, you might receive errors in related child scripts if you skip the parent script. These errors occur only because the parent wasn’t run correctly. They will be resolved when the issue in the parent script is resolved.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

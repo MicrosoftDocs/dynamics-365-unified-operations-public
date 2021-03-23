@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -107,3 +106,6 @@ An SSRS service account will be updated to use the local system. A new SSRS cata
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

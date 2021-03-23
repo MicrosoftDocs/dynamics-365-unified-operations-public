@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -106,3 +105,6 @@ Typically, the output warehouse and location of a subcontracted resource group a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

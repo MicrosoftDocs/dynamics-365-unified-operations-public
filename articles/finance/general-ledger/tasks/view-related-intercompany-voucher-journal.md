@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -56,3 +55,6 @@ The related voucher window shows the voucher from the offset company when postin
 3. In the list, mark the selected row.
 4. Click Voucher.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

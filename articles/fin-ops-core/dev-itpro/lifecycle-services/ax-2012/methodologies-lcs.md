@@ -2,13 +2,12 @@
 # required metadata
 
 title: Methodologies in Lifecycle Services (LCS)
-description: Methodologies in LCS provide a tool that you can use to ensure more repeatable, predictable implementation projects. You can use one of our methodologies, or create your own. With a methodology, you can easily track and report on your progress.
+description: Methodologies in LCS provide a tool that you can use to ensure more repeatable, predictable implementation projects.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service:
 ms.technology:
 
 # optional metadata
@@ -71,3 +70,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

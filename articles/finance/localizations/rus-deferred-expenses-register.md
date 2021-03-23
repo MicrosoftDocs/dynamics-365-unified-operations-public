@@ -8,7 +8,6 @@ manager: anasyash
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -292,3 +291,6 @@ The following two examples use the **RUMF** company:
 
 17. Approve the journal, and then create the tax register journal for two months of the 2019 calendar year.
 18. Calculate the registers. In the **Deferrals** register, you should see the same line that you saw in the **Deferrals** register for one month. However, the **Amount of months** field will be set to **2.00** instead of **1.00**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

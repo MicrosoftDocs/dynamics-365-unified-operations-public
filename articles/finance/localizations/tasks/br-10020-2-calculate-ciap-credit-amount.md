@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -75,3 +74,6 @@ Every month, for each fiscal establishment, the tax credit amount is calculated 
 42. Close the page.
 43. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

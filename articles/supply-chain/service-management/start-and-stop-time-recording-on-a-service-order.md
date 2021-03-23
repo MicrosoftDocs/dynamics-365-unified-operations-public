@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -68,3 +67,6 @@ Use this procedure to start and stop time recording for a service order for whic
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

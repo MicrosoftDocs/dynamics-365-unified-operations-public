@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -100,3 +99,6 @@ This task was created using the demo data company JPMF.
 | 9214               | Taxable purchase related to non-taxable sales - Credit note                           | Item 8                                                        | Item 4                     | Item 22-Item 23 (at tax rates)         |
 | 9215               | Common taxable purchase in common - Credit note                                       | Item 8, Item 15 (if Ratio \<0.95 & Individual method)         | Item 4                     | Item 22-Item 23 (at tax rates)         |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

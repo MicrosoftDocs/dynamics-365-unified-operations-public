@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -127,3 +126,6 @@ This behavior is expected. Because requisitions aren't always approved, a quanti
 
 You can create trade agreements for any replies for a request for quotation (RFQ), regardless of whether they were accepted or rejected. For more information, see [Requests for quotation (RFQs) overview](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -43,3 +42,6 @@ In the following illustration, an InventTable extension is used to define an ind
 
 > [!WARNING]
 > You should not use this approach to create unique indexes. This change is an intrusive change that might break the solutions of other independent software vendors (ISVs) if those solutions are deployed in the same environment. This capability will be removed in future platform releases.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

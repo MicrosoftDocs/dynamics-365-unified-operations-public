@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -94,3 +93,6 @@ All journal entries that are created in Asset leasing are contained in the Asset
 
 > [!NOTE]
 > The Asset leasing journal can't be created manually. It's automatically created when lease schedules are created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -255,3 +254,6 @@ Use the **Revise header** button to correct the header fields of the facture.
 
     Select **Print** \> **Copy** to print the original facture.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

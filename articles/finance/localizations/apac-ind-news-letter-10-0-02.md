@@ -8,7 +8,6 @@ manager: Wangcheng
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -77,3 +76,6 @@ Advanced editor is enabled for Global Tax Engine formulas/conditions to improve 
 -	Tax information is not editable on the **Sales order after delivery** page.
 -	The invoice number does not show in Posted withholding tax inquiry.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

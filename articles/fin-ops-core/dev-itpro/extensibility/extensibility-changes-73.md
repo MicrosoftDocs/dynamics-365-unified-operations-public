@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -1575,3 +1574,6 @@ The following table lists changes that were requested for extensibility but were
 |            Other: Bug fix on CompanyHelper.testCreateParameter             |
 | Table CustCollectionLetterJour - class cancelCollectionLetterCodeCustTrans |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

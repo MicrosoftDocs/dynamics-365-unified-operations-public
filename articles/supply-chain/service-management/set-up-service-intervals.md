@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,3 +57,6 @@ You want to create a service interval of 10 days.
 ## Related topics
 
 [Service intervals](service-intervals.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

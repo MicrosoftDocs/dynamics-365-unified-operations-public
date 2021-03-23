@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -137,3 +136,6 @@ To use template BOMs, you must set up two number sequences. Set up one number se
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

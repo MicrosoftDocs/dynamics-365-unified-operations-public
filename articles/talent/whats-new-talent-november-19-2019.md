@@ -2,13 +2,12 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (November 19, 2019)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for November 19, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 11/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -76,16 +75,19 @@ In the **New worker** form, **Personnel number** now displays in the banner for 
 
 In this release, **Compensation start date** determines the level assigned to the new job.
 
-### Custom pick list fields in the Position table aren't synchronized to Common Data Service (387503)
+### Custom pick list columns in the Position table aren't synchronized to Dataverse (387503)
 
-With this release, pick list items are now synchronized with Common Data Service.
+With this release, pick list items are now synchronized with Dataverse.
 
-### Worker address entity doesn't synchronize with Common Data Service while importing new data (349673)
+### Worker address table doesn't synchronize with Dataverse while importing new data (349673)
 
-In this week's release, address data now synchronizes with Common Data Service while importing new data.
+In this week's release, address data now synchronizes with Dataverse while importing new data.
 
 ## In preview
 
 ### Print performance reviews
 
 See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

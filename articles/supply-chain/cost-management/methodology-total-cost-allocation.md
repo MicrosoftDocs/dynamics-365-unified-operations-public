@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ The **By-product cost allocation** field on the **Co-products** page is an enume
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

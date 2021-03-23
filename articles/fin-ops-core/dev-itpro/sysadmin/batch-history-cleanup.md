@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ The custom batch job lets you to apply additional filtering, based on criteria s
 4. Select **OK**.
 
 ![Custom job](./media/batch-cleanup-custom.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -92,3 +91,6 @@ The following example shows how to use the guided form to update the entry point
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

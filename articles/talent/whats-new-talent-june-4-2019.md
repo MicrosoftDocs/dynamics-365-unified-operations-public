@@ -2,13 +2,12 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (June 4, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365  Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for June 4, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -68,9 +67,9 @@ Organizations might require reason codes for specific leave types when employees
 
 The ability to track employee time off and understand how time off is calculated not only helps HR answer employee questions but also helps guarantee accurate time-off awards for employees. HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind time-off balances.
 
-### Deleting a record from Talent doesn't remove the record from Common Data Service
+### Deleting a record from Talent doesn't remove the record from Dataverse
 
-Records that are removed from Talent: Core HR are now also removed from Common Data Service.
+Records that are removed from Talent: Core HR are now also removed from Dataverse.
 
 ### Variable compensation plan valid from/to dates aren't being honored
 
@@ -101,3 +100,6 @@ A new option will let managers view the performance of both their direct reports
 ### Print performance reviews
 
 Employees, managers, and HR will be able to print an employee's performance review.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/28/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -69,3 +68,6 @@ Use this procedure to create and assign a cost allocation policy and the corresp
 5. In the Cost control unit field, enter or select a value.
 6. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

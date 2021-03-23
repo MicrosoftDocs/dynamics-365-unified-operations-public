@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +56,6 @@ You should have a role of Accounts receivables clerk to complete this procedure.
 14. Go to Accounts receivable > Inquiries and reports > Payments > Bill of exchange journal.
     * Verify that Status for the newly posted journal should be Protested. If yes, the process is complete  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

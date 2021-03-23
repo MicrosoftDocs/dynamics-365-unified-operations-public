@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -66,3 +65,6 @@ By default, the **Maximum execution time** setting isn't available. If you want 
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Maximum execution time for the warehouse management on-hand entries cleanup job*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

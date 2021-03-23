@@ -10,7 +10,6 @@ ms.date: 06/19/2020
 
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -338,3 +337,6 @@ OData does not support array fields in entities. This must be taken into conside
 
 ### After restarting AOS, the first OData call may take a long time to process
 The first OData call processed by an AOS that was restarted may take a long time to process because the metadata is not being cached. This latency can be avoided by warming up OData on AOS startup. For more details, see  [Build OData metadata cache when the AOS starts](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/odata-warmup).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

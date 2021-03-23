@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.16 (February 2021)
+title: What's new and changed in Dynamics 365 Commerce 10.0.16 (February 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.16. 
 author: josaw1
 manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -28,10 +27,10 @@ ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
 
 ---
-# Preview features in Dynamics 365 Commerce 10.0.16 (February 2021)
+# What's new and changed in Dynamics 365 Commerce 10.0.16 (February 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.16. This version has a build number of 10.0.689 and is available on the following schedule:
 
@@ -77,3 +76,6 @@ The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

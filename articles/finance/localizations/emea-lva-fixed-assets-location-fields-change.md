@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +49,6 @@ Your modification is saved when you click **Save** or when you move your focus a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

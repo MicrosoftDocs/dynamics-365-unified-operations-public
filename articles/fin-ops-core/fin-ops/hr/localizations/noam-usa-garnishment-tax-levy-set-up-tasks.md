@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -255,3 +254,6 @@ The next step is to enroll workers in garnishments and tax levies. For more info
 [Set up benefits](noam-usa-benefit-set-up-tasks.md)
 
 [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

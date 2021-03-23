@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -47,3 +46,6 @@ You can make manual adjustment transactions to adjust the credit or debit of PIS
 14. In the Adjustment code field, type a value.
 15. In the Valid From Date field, enter a date.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

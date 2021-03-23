@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -185,3 +184,6 @@ For example, an item has lead time of one day and a receipt margin of three days
 [Get started with Planning Optimization](get-started.md)
 
 [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

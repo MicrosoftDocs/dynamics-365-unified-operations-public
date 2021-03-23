@@ -2,13 +2,12 @@
 # required metadata
 
 title: Azure Data Lake overview
-description: This topic provides an overview of Microsoft Azure Data Lake. Data Lake is a technology that is designed to make big data analytics and artificial intelligence (AI) available in the Azure cloud.
+description: This topic provides an overview of Microsoft Azure Data Lake.
 author: MilindaV2
 manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -203,3 +202,6 @@ You can plan your transition to Data Lake in multiple stages, as shown in the fo
 2. **Getting easy access to data:** As you gain access to tables, entities, and aggregate measurements in Data Lake, you will be able to retire BYOD and use the data that is readily available. Therefore, management effort and costs can be reduced, as was discussed earlier. You can keep your existing downstream data warehouses and pipelines to manage project scope and budget.
 3. **Empowering power users:** Analytical workspaces will be transitioned to Data Lake as a service update. Therefore, ready-made analytical workspaces are based on the same data that is available in the data lake. Power users can easily extend analytical workspaces. When the service update occurs, you will be able to make the full capabilities of PowerBI.com available to your power users. By using capabilities such as Power BI dataflows, power users can easily combine data from online services and data is already available in the data lake. The same reports that are available in analytical workspaces can be consumed directly on PowerBI.com.  
 4. **Modernizing your previous data warehouse:** Modernization will probably be the investment that brings the most benefits. You can move data that currently exists in your on-premises data warehouse to the cloud. You can rely on cloud-based computing services and apply the same transformations on a pay-per-use basis. You can also combine your business data with sensor and device data.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

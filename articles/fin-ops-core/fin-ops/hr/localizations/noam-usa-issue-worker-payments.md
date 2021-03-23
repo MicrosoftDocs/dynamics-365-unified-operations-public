@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -160,3 +159,6 @@ To post a payment journal, follow these steps.
 
 1. On the **Payment journal** page, select the payment journal, and then, on the Action Pane, click **Lines** to open the **Journal voucher** page.
 2. On the **Post** menu, click **Post**. The payment journal lines are settled to the vendor invoice that was created and posted. You receive a message that indicates the number of vouchers that were posted.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -107,3 +106,6 @@ In Finance and Operations version 10.0.5, the Backup storage of ER templates fea
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

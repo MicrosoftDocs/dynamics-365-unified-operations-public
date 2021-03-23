@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,3 +55,6 @@ You can search on batch attributes when you do batch reservations for a sales or
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

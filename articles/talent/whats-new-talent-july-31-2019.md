@@ -2,13 +2,12 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (July 30, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for July 30, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 07/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -75,3 +74,6 @@ For more information about how changes are published, see [Provision Talent](htt
 ### View extended information for performance in manager self-service
 
 A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews. In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

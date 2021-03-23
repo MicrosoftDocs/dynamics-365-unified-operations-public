@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -100,3 +99,6 @@ public void init()
 ## Notes
 -  Multiple feature callouts can be shown on a page at one time.
 -  Only one feature callout is allowed per control. If multiple callouts exist, the last one to get triggered will be displayed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

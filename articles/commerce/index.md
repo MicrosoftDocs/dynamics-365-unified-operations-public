@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -59,3 +58,6 @@ Select a feature area to learn more about it.
 - [Manage your e-Commerce site](online-store-overview.md)
 - [Fraud protection](dev-itpro/DFP.md)
 - [Commerce development and extensibility](dev-itpro/dev-retail-home-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

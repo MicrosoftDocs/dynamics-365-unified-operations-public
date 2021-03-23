@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -348,3 +347,6 @@ You can import reviewed configurations from RCS by using the ER repository of th
 - [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
 - [Improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources](er-calculated-field-ds-performance.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

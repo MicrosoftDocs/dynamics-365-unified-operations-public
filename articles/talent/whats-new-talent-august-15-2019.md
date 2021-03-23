@@ -2,13 +2,12 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (August 13, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
-ms.date: 8/13/2019
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for August 15, 2019.
+author: andreabichsel
+manager: tfehr
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +16,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: andreabichsel
+ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -64,3 +63,6 @@ For more details about Platform update 29 for Finance and Operations see [Previe
 Changes to employee records rarely take effect immediately. You need to update data as of the employee's start date, which is often in the future, and you also need to update information in the past. With this streamlined navigation model, you'll be able to update future and past data without navigating to multiple forms or changing the date context. This change also dynamically promotes and displays key information in the upper banner area of the employee record.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

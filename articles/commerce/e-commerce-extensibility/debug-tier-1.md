@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -127,3 +126,6 @@ When the Retail Server is configured with HTTP instead of HTTPS, you may receive
 [Configure a development environment (.env) file](configure-env-file.md)
 
 [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

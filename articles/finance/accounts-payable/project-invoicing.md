@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -136,3 +135,6 @@ You can create an invoice that has a negative amount, which becomes an invoice t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

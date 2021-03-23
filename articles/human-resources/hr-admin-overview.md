@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Overview
+title: Administration overview
 description: This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,6 +17,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -29,7 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Overview
+# Administration overview
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -45,7 +47,7 @@ This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365
 
 - Set up data integration
   - [Choose a data integration technology](hr-admin-integration-choose-technology.md)
-  - [Configure Common Data Service integration](hr-admin-integration-common-data-service.md)
+  - [Configure Dataverse integration](hr-admin-integration-common-data-service.md)
   - [Configure integration with Finance](hr-admin-integration-finance.md)
   - [Configure integration with Dayforce](hr-admin-integration-dayforce.md)
   - [Create a recurring data export app](hr-admin-integration-recurring-data-export.md)
@@ -106,3 +108,5 @@ This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365
 - [What's new or changed in Human Resources](hr-admin-whats-new.md)
 - [Developer Guide](hr-developer-overview.md)
 - [User Guide](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

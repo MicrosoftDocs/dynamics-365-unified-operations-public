@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -86,3 +85,6 @@ Regardless of whether you've mapped accounts, clear the **Use consolidation acco
 
 > [!NOTE]
 > You can use this method to create a chart of accounts in the consolidated legal entity from the chart of accounts in one of the subsidiary legal entities. (For more information, see [Consolidation account groups and additional consolidation accounts](../budgeting/consolidation-account-groups-consolidation-accounts.md).) Then assign an appropriate consolidation conversion principle to each consolidated main account, and run the consolidation for all the subsidiary legal entities.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

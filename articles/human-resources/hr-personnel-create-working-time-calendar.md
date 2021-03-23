@@ -4,11 +4,10 @@
 title: Create calendars and generate working times
 description: Calendars describe the capacity and working times of operations resources. This article explains how to define a work calendar based on a working time template.  
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,6 +16,7 @@ ms.search.form: OpResLifeCycleManagementWorkspace, WorkCalendarTable, WorkCalend
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -26,6 +26,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create calendars and generate working times
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -45,3 +47,6 @@ Calendars describe the capacity and working times of operations resources. This 
 12. Select **OK**.
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

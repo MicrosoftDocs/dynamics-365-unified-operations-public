@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -80,3 +79,6 @@ The footer that contains the copyright notice automatically appears at the botto
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

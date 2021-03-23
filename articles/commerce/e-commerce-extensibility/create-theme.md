@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -122,3 +121,6 @@ In a similar way, if you're mocking data for a custom module, you can add new mo
 [Add custom resources to your customization code](add-custom-resources.md)
 
 [Configure a development .env file](configure-env-file.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

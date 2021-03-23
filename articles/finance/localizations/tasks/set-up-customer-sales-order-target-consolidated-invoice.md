@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -56,3 +55,6 @@ This task uses the JPMF demo company data.
     * Verify that the Target of consolidation slider is set to 'Yes'.  
     * If the slider is set to "No", unlock the task guide and then click Edit to update the field.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

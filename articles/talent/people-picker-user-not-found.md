@@ -4,11 +4,10 @@
 title: User not found in People Picker in Attract or Onboard
 description: This topic explains what to do when users in the company tenant aren't showing up in the People Picker in Dynamics 365 Talent - Attract or Onboard.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ Note the **UserType** property on the user. If the **UserType** is blank, for ex
 ```
 PS C:\>Set-AzureADUser -ObjectId "testUpn@tenant.com" -UserType Member
 ```
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

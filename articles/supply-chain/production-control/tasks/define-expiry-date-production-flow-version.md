@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -42,3 +41,6 @@ To end the validity and the processing of a production flow version on a given d
 6. In the Expiration date field, enter a date and time.
     * For the expiration date, a new version will not start or become activated. It will also no longer be possible to create or start jobs for this production flow. You can still complete started jobs after the expiration date.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

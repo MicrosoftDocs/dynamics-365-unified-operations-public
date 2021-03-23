@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -440,3 +439,6 @@ The text file that is generated should first be validated by using the tax autho
 7.  In the **File type** field, select type of the file.
 
 The file is submitted by using web services. A certificate is required. After the return message is received together with the result of government validation, the response is saved in the same location where the file was generated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

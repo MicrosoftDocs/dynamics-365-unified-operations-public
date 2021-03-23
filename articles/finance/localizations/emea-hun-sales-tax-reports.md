@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -218,3 +217,6 @@ The **Itemized VAT statement** report contains the following data:
 
 In this table, line 102 includes the sales order, line 103 includes the credit note for the sales order, and line 105 includes two vendor invoices.
 Other sections contain the same information for each partner separately, and the list of invoices for each item.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

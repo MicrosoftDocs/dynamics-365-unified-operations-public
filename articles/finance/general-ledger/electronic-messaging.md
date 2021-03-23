@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -542,3 +541,6 @@ You can now either delete or update the message status. To update the message st
 ![Update the message status](media/update-status.png)
 
 The message status is updated to **Prepared**, and you can now generate the report by selecting **Generate report**. The report is generated, and the message status and action log are updated. To view the generated report, select the **Attachment** button (the paper clip symbol) in the upper-right corner of the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

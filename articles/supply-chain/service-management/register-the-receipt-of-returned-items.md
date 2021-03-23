@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -117,3 +116,6 @@ As an alternative to using the **Arrival overview** form, you can use the **Regi
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

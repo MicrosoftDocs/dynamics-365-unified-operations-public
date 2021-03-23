@@ -4,7 +4,6 @@ title: Cash flow tax registers
 description: This topic provides information about cash flow tax registers.
 ms.date: 01/11/2021
 ms.topic: article
-ms.service: dynamics365-financials
 author: akroshkina
 ms.author: anasyash
 manager: tfehr
@@ -104,3 +103,6 @@ The tax register lines show the following information:
    - **Flag**: The amount and currency code, if the funds were withdrawn in a foreign currency. This value is taken from the corresponding source document.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

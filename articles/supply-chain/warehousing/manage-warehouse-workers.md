@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +60,6 @@ Analysis of the time that is used to process work items can help drive improveme
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

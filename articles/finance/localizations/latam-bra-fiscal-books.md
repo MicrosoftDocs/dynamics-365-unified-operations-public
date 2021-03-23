@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -60,3 +59,6 @@ The Public Digital Bookkeeping System, or Sistema Público de Escrituração Dig
 -   [Service electronic fiscal document](latam-bra-service-electronic-fiscal-document.md)   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

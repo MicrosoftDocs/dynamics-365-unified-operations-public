@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -111,3 +110,6 @@ The following illustrations show the template mapping in Data integration.
 ### Agreement invoices (Field Service to Supply Chain Management): Invoice lines
 
 [![Template mapping in Data integration](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

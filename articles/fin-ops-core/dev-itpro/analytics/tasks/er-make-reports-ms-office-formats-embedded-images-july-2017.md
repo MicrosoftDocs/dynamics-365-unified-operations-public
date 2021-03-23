@@ -2,13 +2,12 @@
 # required metadata 
  
 title: Design configurations to generate reports in Office format that have embedded images
-description: The steps in this topic provide information about how to design Electronic reporting (ER) configurations that generate electronic documents in Microsoft Office formats (Excel and Word) that contain embedded images. 
+description: This topic describes about how to design configurations that generate electronic documents in Excel and Word formats that contain embedded images. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 01/23/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -96,3 +95,6 @@ This procedure is created for users with the assigned role of system administrat
  30. Select Yes in the Allow prenote creation on inactive bank accounts: field.  
  31. Click Save.  
  32. Close the page.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

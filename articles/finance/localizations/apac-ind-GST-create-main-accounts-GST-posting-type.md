@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +52,6 @@ Follow these steps to create main accounts for the GST posting type.
 7. Repeat steps 2 through 6 to create all the required state-wide ledger accounts.
 
 ![Main accounts for the GST posting type](media/Create-main-accounts-for-the-GST-posting-type.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,3 +57,6 @@ A template bill of materials (BOM) can be attached to a service object relation.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

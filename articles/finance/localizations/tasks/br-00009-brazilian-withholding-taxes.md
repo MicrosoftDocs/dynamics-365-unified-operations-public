@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -77,3 +76,6 @@ This procedure sets up a withholding tax code, withholding tax type, and calcula
 44. Click Save.
 45. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

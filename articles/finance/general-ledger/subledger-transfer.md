@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,3 +46,6 @@ In version 10.0.8, improvements were made to enhance the performance of the Asyn
  
 This functionality improves the transfer of data from the subledger to the general ledger. It allows the process to be more efficient, and it groups together sets of smaller transactions to transfer. This allows for a more efficient use of the batch server. 
 This functionality requires that the batch server be set up, online, and functioning in order for the Asynchronous transfer option to work. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

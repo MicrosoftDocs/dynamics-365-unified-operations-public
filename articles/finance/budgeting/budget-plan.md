@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -250,3 +249,6 @@ C. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning co
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

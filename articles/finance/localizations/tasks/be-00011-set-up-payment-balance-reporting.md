@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/12/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -80,3 +79,6 @@ This functionality is available for legal entities that have their primary addre
 10. Select the Include payment check box.
     * Note that payment transactions won't be transferred to the payment balance survey by default. The user must activate the Include payment field for purpose codes.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

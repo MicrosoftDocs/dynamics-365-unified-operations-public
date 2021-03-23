@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -51,3 +50,6 @@ Running this procedure requires that at least one product configuration model is
     * Activate the product model version. It is only possible to have one product active for one product model at a time.  
 13. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -147,3 +146,6 @@ To disable a scenario, follow these steps.
 2. On the tile for the scenario, select **Configure**.
 3. Select **Next** to go to the last wizard page.
 4. Set the option to disable the scenario.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

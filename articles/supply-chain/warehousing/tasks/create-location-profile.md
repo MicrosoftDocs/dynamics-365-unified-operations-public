@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -44,3 +43,6 @@ This topic explains how to create a location profile in Dynamics 365 Supply Chai
 10. Select **Yes** in the **Allow cycle counting** field.
 11. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

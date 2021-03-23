@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -64,3 +63,6 @@ while select custTable
     info(strFmt("%1 , %2", custTable.AccountNum, custTable.SalesGroup));
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

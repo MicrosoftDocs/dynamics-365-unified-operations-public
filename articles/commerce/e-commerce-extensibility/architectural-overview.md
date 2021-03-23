@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -77,3 +76,6 @@ The compiled partner package contains both the SDK and a module library. The SDK
 [E-commerce components](ecommerce-components.md)
 
 [CLI command reference](cli-command-reference.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

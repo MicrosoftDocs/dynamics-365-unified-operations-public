@@ -8,7 +8,6 @@ manager: aolson
 ms.date: 08/31/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,3 +69,6 @@ You can also copy customers by using the Tax exempt number search feature that i
 
 1. A **Copy customer** option appears. By default, this option is set to **No**. To copy the customer to the current legal entity, set the option to **Yes**. 
 2. Select **Select**. The new customer is created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

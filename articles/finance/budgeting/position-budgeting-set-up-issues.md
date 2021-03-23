@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -68,3 +67,6 @@ The dates on the forecast position cost element line must be within the followin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

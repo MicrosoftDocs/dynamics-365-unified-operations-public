@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -95,3 +94,6 @@ With either approach, the data upgrade script will also use the number sequence 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

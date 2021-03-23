@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +52,6 @@ The costing sheet is displayed as part of the **Calculate item cost** page. The 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

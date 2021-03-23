@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +56,6 @@ This procedure walks through creating a commerce channel financial dimension wit
 24. In the list, click the link in the selected row.
 25. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

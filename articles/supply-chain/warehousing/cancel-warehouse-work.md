@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,3 +50,6 @@ Only work of the **Sales**, **Transfer issue**, **Raw material picking**, or **R
 To unblock the work, the system cancels any remaining work lines and fixes the warehouse data that is associated with the work ID that the user specified. Any regular warehouse-handling operations that involve the affected item quantity can then resume.
 
 To put the affected item in a specific location after the work is canceled, the user must use an inventory movement or quantity adjustment operation on a mobile device.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

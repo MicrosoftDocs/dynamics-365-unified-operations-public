@@ -8,7 +8,6 @@ manager: vastrup
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -359,3 +358,6 @@ There is an option to separately configure the scheduler. Click **Commerce sched
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-deployment.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

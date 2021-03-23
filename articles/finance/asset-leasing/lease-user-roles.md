@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,3 +48,6 @@ Follow these steps to assign users to the roles that are used in Asset leasing.
 1. Go to **System administration \> Security \> Assign users to roles**.
 2. Select the **Maintain lease**, **Lease clerk**, or **View lease** role, and then select **Manually assign/exclude users**.
 3. Select the user to assign to the role, and then select **Assign to role**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

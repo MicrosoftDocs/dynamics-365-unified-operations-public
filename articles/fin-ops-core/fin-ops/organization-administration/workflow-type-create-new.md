@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ After you create a workflow type, the next step is to create a workflow document
 [Create a workflow type](workflow-type-create.md)
 
 [Create a workflow category](workflow-type-category.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -103,3 +102,6 @@ ControlType: "FileUpload" &#124; "Barcode" &#124; "Input" &#124; "MultilineInput
 
 Controls must be assigned any of the types listed in ControlType.
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -2,13 +2,12 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Go live (Cutover)
-description: This topic explains the final cutover process that starts after you turn off Dynamics AX 2012 and completes with Finance and Operations running an upgraded version of your code and database.
+description: This topic explains the final cutover process from Dynamics AX 2012 to the Finance and Operations app running an upgraded version of your code and database.
 author: jorisdg
 manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -68,3 +67,6 @@ Before you can perform an upgrade in the production environment the following pr
 - [Onboarding](../../fin-ops/imp-lifecycle/onboard.md)
 - [Submit service requests to the Dynamics Service Engineering team](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
 - [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

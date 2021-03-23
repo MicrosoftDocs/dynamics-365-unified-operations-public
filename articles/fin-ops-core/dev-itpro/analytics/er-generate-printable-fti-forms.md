@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/24/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -230,3 +229,6 @@ The **Emailing.TxtToUse.Body** expression of the sample format is configured for
 
 ## Additional resources
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

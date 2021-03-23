@@ -9,7 +9,6 @@ manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -34,8 +33,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic describes how to crop images in Microsoft Dynamics 365 Commerce site builder.
-
-## Overview
 
 The Commerce site builder Media Library allows you to crop images to optimize them for different module types and viewports.
 
@@ -70,3 +67,6 @@ After custom cropping is completed, image modifications will take effect almost 
 [Customize image focal points](dam-custom-focal-point.md)
 
 [Upload and serve static files](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

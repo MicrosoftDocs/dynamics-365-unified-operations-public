@@ -7,7 +7,6 @@ ms.date: 07/27/2020
 ms.author: margoc
 
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology:
 
 # optional metadata
@@ -51,3 +50,6 @@ For training about features shared with other Finance and Operations apps, see t
 | Content | Description  | Format   | Length    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Configure and work with   e-Commerce in Dynamics 365   Commerce](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | The online channels and the e-Commerce site of Dynamics 365   Commerce enable retailers to create an online presence of their brand. | Free, self-paced online learning path | 4 hours   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

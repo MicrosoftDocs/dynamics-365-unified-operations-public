@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -131,3 +130,6 @@ Build your project, and synchronize the database.
 To validate your changes, you must create a layout in budget planning beyond 36 monetary and/or quantity columns. If you completed all the steps correctly, you should be able to enter a value in every column, save the value, and edit it in Excel.
 
 After the changes are verified, the extension can be published and promoted beyond the local development environment. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

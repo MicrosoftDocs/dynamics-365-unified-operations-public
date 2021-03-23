@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -253,3 +252,6 @@ For controls that need to support either Copy, Paste, or Validate (mainly for ad
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

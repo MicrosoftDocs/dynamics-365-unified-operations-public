@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -512,3 +511,6 @@ As a result of posting the marked factures, the following actions occur:
     > If the **Date of fine calculation** field was set before the calculation was done, the facture won't be included in the calculation.
 
 11. In the **Fine amount** field, you can view the calculated fine amount.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

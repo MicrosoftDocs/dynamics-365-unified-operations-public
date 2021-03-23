@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -98,3 +97,6 @@ After you've created a compensation proposal in a journal, and your compensation
 **Q: Is the compensation function available for all countries or regions?**
 
 **A:** The compensation function is available only for legal entities that have their primary address in Hungary or Poland.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

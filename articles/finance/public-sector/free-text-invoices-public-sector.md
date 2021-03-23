@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -72,3 +71,6 @@ The interest code can be set on the billing code, the billing classification, or
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

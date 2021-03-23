@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -158,3 +157,6 @@ If you receive an error message that states, "DIXF service is unavailable," comp
 5. Select all three check boxes to apply all the rules, and then select **Next**.
 6. Enter the name of the rule, and then select **Finish**.
 7. Repeat these steps for outbound rules.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

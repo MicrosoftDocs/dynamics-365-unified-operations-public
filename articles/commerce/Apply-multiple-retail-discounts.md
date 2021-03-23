@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/31/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -244,3 +243,6 @@ The final amount due for prod1 is 6.37, Prod 2 is 12.75, and Prod 3 is 7.5.
 
 > [!NOTE]
 > For the same discount setting, the results vastly differ depending on which discount concurrency control model is selected.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

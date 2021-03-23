@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -143,3 +142,6 @@ The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

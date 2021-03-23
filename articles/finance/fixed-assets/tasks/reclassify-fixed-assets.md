@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/14/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -49,3 +48,6 @@ Follow these steps to reclassify a fixed asset:
 5. In the **Reclassification date** field, enter a date.
 6. In the **Voucher series** field, enter or select a value.
 7. Click **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

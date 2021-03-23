@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -84,3 +83,6 @@ To void a credit card authorization, you can change the method of payment to ano
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -120,3 +119,6 @@ There are a few changes to X++ that require corresponding changes in legacy cust
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

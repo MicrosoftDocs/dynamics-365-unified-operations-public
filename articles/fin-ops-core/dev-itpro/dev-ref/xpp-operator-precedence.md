@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -56,3 +55,6 @@ The operators in the following table are listed in precedence order. The higher 
 | conditional                                              | `? :`                   |
 
 Operators on the same line in the table have equal precedence. If there are more than one of these operators in an expression, the expression is evaluated from left to right unless assignment operators are used. Assignment operators are evaluated from right to left. For example, `&&` (logical AND) and `||` (logical OR) have the same precedence and are evaluated from left to right. This means that `0 && 0 || 1 == 1`, and `1 || 0 && 0 == 0`
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,10 @@
 title: Create departments and include them in the department hierarchy
 description: A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. You can use departments to report on functional areas. Departments might have profit and loss responsibility.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,6 +17,7 @@ ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorksp
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Create departments and include them in the department hierarchy
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. You can use departments to report on functional areas. Departments might have profit and loss responsibility.
 
@@ -58,3 +60,6 @@ To add a department to the department hierarchy, follow these steps.
 
 ## Steps for creating a department
 Refer to the [Define new departments](../fin-and-ops/hr/tasks/define-new-departments.md) article for the step-by-step procedure for creating a new department. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

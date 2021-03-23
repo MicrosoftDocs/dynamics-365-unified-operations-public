@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -551,3 +550,6 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 #### Solution
 
 A hotfix is available that resolves this issue. The Microsoft Knowledge Base (KB) number is 4095640.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -69,3 +68,6 @@ The POS user's language setting is set from **All workers** on the **Worker** pa
 | **Company** | Default                    | Default                                                       |
 | **Store**   | Overrides company          | Overrides company                                             |
 | **User**    | Overrides store or company | Never                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +51,6 @@ You can use a tax journal to post a tax adjustment journal. For reverse charge t
 17. Select **Tax document**.
 18. Select **Close**, and then select **Post**.
 19. Close the message that you receive, and then select **Voucher**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +51,6 @@ To set up a relationship between a specific report and a journal type, on the **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

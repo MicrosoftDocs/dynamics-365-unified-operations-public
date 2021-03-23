@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +56,6 @@ This procedure shows how to create a batch attribute, assign default value range
 22. Click Save.
 23. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

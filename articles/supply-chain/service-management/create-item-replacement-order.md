@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ Item replacement orders are usually created after a product is returned and insp
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

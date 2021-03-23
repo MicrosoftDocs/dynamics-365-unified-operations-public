@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -203,3 +202,6 @@ To get a more analytical overview of the various performance measures for the pr
 
 To get a more analytical overview of the various performance measures for the promotion, you can use the Analysis view. To go to the Analysis view, click **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, click **Analysis**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

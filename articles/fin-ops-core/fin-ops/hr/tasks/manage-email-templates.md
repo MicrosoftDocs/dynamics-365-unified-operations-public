@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -50,3 +49,6 @@ You can transfer information from your organization's database to the bookmarks 
 8. Continue typing your email message, inserting the bookmark fields where you need them.
 9. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

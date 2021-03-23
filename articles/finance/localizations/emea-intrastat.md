@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -244,3 +243,6 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

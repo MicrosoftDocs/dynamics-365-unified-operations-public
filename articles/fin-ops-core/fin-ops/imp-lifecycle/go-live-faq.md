@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -113,3 +112,6 @@ For more information, see [Apply updates to cloud environments](../../dev-itpro/
 ## What should I do if my production environment is down?
 
 To report a production outage, follow the process described in the topic, [Report a production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -89,3 +88,6 @@ if ((select custTable where CustTable.AccountNum == '3000').CreditMax < 5000)
     info('This customer has a credit maximum less than $5000.');
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

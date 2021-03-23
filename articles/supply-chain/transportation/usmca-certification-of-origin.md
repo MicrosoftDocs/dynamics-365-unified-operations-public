@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -144,3 +143,6 @@ The user signing the certification must manually enter the number of pages (for 
 ### Page numbers
 
 Current page and number of pages printed at the bottom of the document.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

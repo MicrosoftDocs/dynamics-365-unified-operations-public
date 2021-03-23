@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -64,3 +63,6 @@ The additional costs to deploy and manage these capabilities might lead to highe
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

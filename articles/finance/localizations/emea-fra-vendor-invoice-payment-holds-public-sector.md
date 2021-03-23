@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -74,3 +73,6 @@ If you are assigned to the same user role as the user who placed the hold, you c
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

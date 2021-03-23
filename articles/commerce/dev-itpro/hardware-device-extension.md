@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -265,3 +264,6 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
         "Sample", "Custom parameters or custom object");
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

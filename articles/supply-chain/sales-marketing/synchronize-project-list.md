@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,3 +69,6 @@ Enable change tracking for Data entity projects.
 ### Projects (Supply Chain Management to Field Service): Projects
 
 [![Template mapping in Data integration](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

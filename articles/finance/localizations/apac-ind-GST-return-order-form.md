@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -81,3 +80,6 @@ The following illustration shows the financial entry for the **Credit only**/**R
 The following illustration shows the financial entry for the **Credit**/**Replace and credit** disposition code.
 
 ![Financial entry for the Credit/Replace and credit disposition code](media/Annotation-2019-05-20-163405.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

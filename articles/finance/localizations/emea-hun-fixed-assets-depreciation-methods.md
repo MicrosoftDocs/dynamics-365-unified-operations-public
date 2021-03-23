@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -166,3 +165,6 @@ If you set the period frequency to a unit that is smaller than a **Yearly** (for
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,3 +69,6 @@ This feature is especially useful if there is unplanned maintenance. For example
 ## Next steps
 
 [Application lifecycle management](app-lifecycle-management.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

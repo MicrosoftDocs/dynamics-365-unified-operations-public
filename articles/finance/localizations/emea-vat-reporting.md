@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -281,3 +280,6 @@ The VAT statement for each country must meet the requirements of the country’s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

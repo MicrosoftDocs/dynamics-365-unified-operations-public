@@ -7,7 +7,6 @@ manager: Annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -166,3 +165,6 @@ Settle the reverse charge liability from the cash account on the last day of the
 -	Base amount should not be zero (0) for a sales order when the transaction line is marked as exempt tax.
 -	Reversal of invoice posted with TDS displays incorrectly in the total invoice amount.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

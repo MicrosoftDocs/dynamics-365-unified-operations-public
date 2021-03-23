@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -51,3 +50,6 @@ This topic describes some ways to view posted sales tax transactions. You can vi
 2. On the Action Pane, select **Sales tax code**.
 3. Select **Posted sales tax**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

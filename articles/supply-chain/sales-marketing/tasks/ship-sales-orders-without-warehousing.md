@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,3 +57,6 @@ This topic explains how to update a sales order when products are shipped to the
 19. On the Action Pane, select **Pick and pack**.
 20. Select **Packing slip**. The **Packing slip journal** page contains all the packing slip documents that were generated for your order. You can review details of each document and print them, if you wish.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

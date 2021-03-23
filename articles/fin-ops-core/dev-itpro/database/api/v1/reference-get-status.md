@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -97,3 +96,6 @@ GET /databasemovement/v1/fetchstatus/project/12345/environment/5362377c-bc37-4f9
 | RollbackInProgress | Reversal of the action is in progress.                |
 | RollbackFailed     | Reversal of the action was halted.                    |
 | RollbackCompleted  | Reversal of the action was successfully completed.    |
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

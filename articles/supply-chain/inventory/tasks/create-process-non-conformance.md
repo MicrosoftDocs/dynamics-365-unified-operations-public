@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/07/2019
 ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications
 ms.technology:  
 
 # optional metadata
@@ -69,3 +68,6 @@ This topic explains how to perform nonconformance management, based on an existi
 2. Select **Close non conformance**.
 3. Select **Yes**.
 4. Close the pages.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

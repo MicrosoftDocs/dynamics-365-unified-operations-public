@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -39,3 +38,6 @@ Exporting data for a product configuration model requires that you have at least
 5. Click Export product model.
     * The download behavior varies from browser to browser depending on how the security settings are set up.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

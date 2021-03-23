@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -117,3 +116,6 @@ To learn more about personalized recommendations, see [Enable personalized recom
 
 [Product recommendations FAQ](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

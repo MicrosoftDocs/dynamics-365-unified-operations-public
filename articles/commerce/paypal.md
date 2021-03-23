@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -181,3 +180,6 @@ To create a **Live** merchant account with PayPal, visit the [PayPal Checkout pa
 - [Payments FAQ](dev-itpro/payments-retail.md)
 - [Checkout module](add-checkout-module.md)
 - [Payment module](payment-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

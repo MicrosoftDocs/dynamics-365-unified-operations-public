@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -88,3 +87,6 @@ By default, the **Partial sales** field value is **100**. When a user selects th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

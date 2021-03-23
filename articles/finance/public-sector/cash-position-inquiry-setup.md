@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -90,3 +89,6 @@ This inquiry differs from other inquiries because you can customize the terminol
     - Optional: To filter the values for a specific dimension, in the fields below the **Financial dimension set** field, select the dimensions to include. The options that are available vary, depending on the financial dimension set that you selected.
 
 3. Select **Calculate balances** to run the inquiry.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

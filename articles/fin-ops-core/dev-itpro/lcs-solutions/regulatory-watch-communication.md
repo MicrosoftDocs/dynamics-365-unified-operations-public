@@ -2,13 +2,12 @@
 # required metadata
 
 title: Regulatory watch and communication of regulatory updates
-description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must undertake their regulatory watch by taking advantage of localization tools in Microsoft Dynamics Lifecycle Services (LCS).
+description: Localization ISV solution providers must undertake their regulatory watch by taking advantage of localization tools in Microsoft Dynamics Lifecycle Services.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -157,3 +156,6 @@ The following table describes the processing options that are available for aler
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

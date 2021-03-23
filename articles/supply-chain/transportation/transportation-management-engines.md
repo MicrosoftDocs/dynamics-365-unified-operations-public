@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -103,3 +102,6 @@ Metadata for transportation management engines is configured differently for the
 | 3        | Destination start postal code | Assignment | String    | Postal Code    | Selected  |
 | 4        | Destination end postal code   | Assignment | String    | Postal Code    | Selected  |
 | 5        | Destination country           | Assignment | String    | Country/region |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

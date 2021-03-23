@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -277,3 +276,6 @@ Notice the following details:
 ![Declaration 347 report format (ES) generated data](media/8_Declaration347.png)
 
 Notice that only the line that has corrections is printed on the report.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

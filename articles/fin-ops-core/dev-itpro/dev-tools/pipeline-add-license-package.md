@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -48,3 +47,6 @@ To add the task to your build for the YML or Classic pipeline, search the task l
 | --- | --- | --- |
 | Search pattern for license files to add to the package | Yes | A list of license files on the build agent, or a search pattern for files on the build agent. To make the license files available on the build agent, you can add them to source control. Alternatively, they can be downloaded or generated in an earlier step of the pipeline. For more information, see [File matching patterns reference](https://docs.microsoft.com/azure/devops/pipelines/tasks/file-matching-patterns). |
 | Filename and path of the deployable package to update | Yes | The path and file name of an existing deployable package zip file that the license files should be added to. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

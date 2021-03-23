@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -73,3 +72,6 @@ After initialization is completed, you must configure additional commerce data. 
 - Commerce channels
 - Registers and devices
 - Assortments
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

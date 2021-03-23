@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -206,3 +205,6 @@ To learn how to maintain your signing identities and certificates, refer to [Wha
 
 > [!NOTE]
 > If you are using the certificates as a part of Apple Developer Enterprise Program and you install an app manually (such as for testing), then you must also manually establish trust. For more information, see [Install custom enterprise apps on iOS](https://support.apple.com/HT204460).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

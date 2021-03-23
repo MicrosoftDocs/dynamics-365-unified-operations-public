@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -300,3 +299,6 @@ OnRowSelect: function(row: [Row](view-model-control-list-ilist-irow.md)): void (
 An event that is triggered when a row is selected.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

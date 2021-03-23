@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -98,3 +97,6 @@ An order-specific BOM calculation represents a variation of a BOM calculation fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

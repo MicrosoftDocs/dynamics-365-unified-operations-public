@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -102,3 +101,6 @@ The following illustration shows an example of the resulting chart.
 ![Zone vs. work status visualization](media/work-viz-chart.png "Zone vs. work status visualization")
 
 This chart shows two zones that are named **FLOOR** and **BULK**, plus a zone that is named **Blank**. The **Blank** zone represents all work lines that aren't members of any zones. The chart always shows all unrelated filtered data as **Blank**, to provide as much visibility as possible. In the **FLOOR** zone, the chart shows three closed lines and four open lines. In the **BULK** zone, the chart shows four closed lines, one open line, and 24 canceled lines. Finally, the chart shows eight closed lines that aren't part of any zone and are therefore listed as **Blank**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

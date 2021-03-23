@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +61,6 @@ Miscellaneous charges can be allocated to the cost of goods, either works or ser
 ![Allocate charges page](media/2%20Allocate%20charges.png)
 
 6. Specify other details and post the facture as usual.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

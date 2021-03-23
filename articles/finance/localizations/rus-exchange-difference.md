@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -269,3 +268,6 @@ Use the following procedures to create an amount difference facture and link it 
 8. Select the **Include in book** check box to update the amount difference facture in the sales book.
 9. Select **Print**.
 10. Set the **Included only** option to **Yes** to print the original facture together with only the selected amount difference factures. If you set this option to **No**, all amount difference factures are printed together with the original facture.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

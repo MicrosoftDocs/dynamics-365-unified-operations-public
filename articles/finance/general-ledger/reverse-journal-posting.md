@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,3 +78,6 @@ If the number of voucher lines is 100 lines or fewer, the reversal process will 
 
 Transactions can be reversed only if they meet the business rules for reversing them. Vendor payments cannot be reversed using the capability described in this topic. Vendor payments must be reversed by following the steps listed in [Reverse a vendor payment](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

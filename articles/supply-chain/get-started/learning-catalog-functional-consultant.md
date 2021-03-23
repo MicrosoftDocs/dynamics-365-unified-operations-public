@@ -7,7 +7,6 @@ ms.date: 07/27/2020
 ms.author: margoc
 
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology:
 
 # optional metadata
@@ -113,3 +112,6 @@ For functional consultants, our job-task analysis research showed that everyone 
 | [Exam MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | This exam measures your ability to accomplish the following technical tasks: use common functionality and implementation tools; configure security, processes, and options; perform data migration; and validate and support the solution. | Exam, cost varies by region |
 | [Exam MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | This exam measures your ability to accomplish the following technical tasks: implement product information management; implement inventory management; implement and manage supply chain processes; and implement warehouse management and transportation management and perform business processes. | Exam, cost varies by region |
 | [Exam MB-320: Microsoft Dynamics 365 for Finance and Operations, Manufacturing](https://www.microsoft.com/learning/exam-MB-320.aspx) | This exam measures your ability to accomplish the following technical tasks: set up and configure manufacturing; create and manage production and lean orders; and create, process, and manage production batch orders. | Exam, cost varies by region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

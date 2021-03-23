@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -97,3 +96,6 @@ You can't release a partially shipped load to the warehouse. When you do the rel
 ### Issue resolution
 
 [KB issue 470069](https://fix.lcs.dynamics.com/Issue/Details?kb=4574490&bugId=470069&dbType=3&qc=84ce1e09d7032d8b8ef86f5a0c68b86badf3dfaf29686c5ebbe97c53c0957b5f) ("Partially shipped loads can be re-waved and re-processed") is fixed in [release 10.0.15](../get-started/whats-new-scm-10-0-15.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

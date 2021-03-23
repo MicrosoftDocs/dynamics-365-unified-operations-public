@@ -9,7 +9,6 @@ manager: annbe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -490,3 +489,6 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

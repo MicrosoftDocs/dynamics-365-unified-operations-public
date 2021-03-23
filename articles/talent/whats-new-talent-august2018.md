@@ -2,13 +2,12 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (August 2018)
-description: This topic describes features that are new or changed in Microsoft Dynamics 365 Talent - Core HR.
+description: This topic describes features that are new or changed in Microsoft Dynamics 365 Talent - Core HR for August 2018.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -63,7 +62,7 @@ By default, the new configuration options are set to not change the capabilities
 
 ## Leave and absence
 
-There are now additional Date fields available in Leave and Absence.
+There are now additional Date columns available in Leave and Absence.
 
 With this feature, you can set the accrual period basis at the plan level to
 use specific employee dates. Dates other than the plan start
@@ -97,5 +96,8 @@ Additional information about this feature is available in the
 
 ## Other fixes
 
-This release also includes a number of bug fixes, the addition of new entities, fixes to
-existing entities, and localized label changes.
+This release also includes a number of bug fixes, the addition of new tables, fixes to
+existing tables, and localized label changes.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

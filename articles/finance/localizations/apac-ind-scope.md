@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -372,3 +371,6 @@ The following table lists the localization features that are supported in Financ
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

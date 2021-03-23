@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,3 +41,6 @@ Before you can use hub consolidation, you must enable the **In transit planning*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

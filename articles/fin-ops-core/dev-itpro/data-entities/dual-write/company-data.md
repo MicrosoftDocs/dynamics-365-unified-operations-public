@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -106,3 +105,6 @@ To apply filtering based on the company context on your custom forms or on custo
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Apply company context":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -71,3 +70,6 @@ You can post a fiscal document that you receive from the acquisition of fixed as
 38. Close the page.
 39. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

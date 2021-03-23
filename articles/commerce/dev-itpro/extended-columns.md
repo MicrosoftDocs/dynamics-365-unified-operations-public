@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -161,10 +160,15 @@ The following table lists the columns that are pre-extended.
 | LOGISTICSPOSTALADDRESS        | STREET                                                                        | nvarchar(400) | ValidateAddressLength |                                     |
 | LOGISTICSPOSTALADDRESS        | COUNTY                                                                        | nvarchar(60)  | ValidateAddressLength |                                     |
 | LOGISTICSADDRESSCITY          | COUNTYID                                                                      | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSCITY          | STATEID                                                                      | nvarchar(60)  |                       |                                     |
 | LOGISTICSADDRESSCOUNTY        | COUNTYID                                                                      | nvarchar(60)  |                       |                                     |
 | LOGISTICSADDRESSDISTRICT      | COUNTYID\_RU                                                                  | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSDISTRICT      | STATEID\_RU                                                                  | nvarchar(60)  |                       |                                     |
 | LOGISTICSADDRESSZIPCODE       | STREETNAME                                                                    | nvarchar(400) |                       |                                     |
 | LOGISTICSADDRESSZIPCODE       | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSZIPCODE       | STATE                                                                        | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSZIPCODE       | ZIPCODE                                                                        | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSSTATE        | STATEID                                                                        | nvarchar(60)  |                       |                                     |
 | RETAILASYNCADDRESS            | STREET                                                                        | nvarchar(400) |                       |                                     |
 | RETAILASYNCADDRESS            | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
 | RETAILASYNCCUSTOMER           | STREET                                                                        | nvarchar(400) |                       |                                     |
@@ -177,6 +181,7 @@ The following table lists the columns that are pre-extended.
 | RETAILTRANSACTIONSALESTRANS   | INVENTBATCHID                                                                 | nvarchar(50)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | INVENTSERIALID                                                                | nvarchar(50)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | WAREHOUSELOCATION                                                             | nvarchar(60)  |                       |                                     |
+| RETAILDLVMODEADDRESSEXPLODED   | STATE                                                                        | nvarchar(60)  |                       |                                     |
 | INVENTDIM                     | INVENTBATCHID                                                                 | nvarchar(50)  |                       |                                     |
 | INVENTDIM                     | INVENTSERIALID                                                                | nvarchar(50)  |                       |                                     |
 | INVENTDIM                     | CONFIGID                                                                      | nvarchar(60)  |                       |                                     |
@@ -203,3 +208,6 @@ The following table lists the columns that are pre-extended.
 |                               | GIFTCARDINQUIRYPRINTHISTORY INT NULL DEFAULT(0)                               |               |                       |                                     |
 | RETAILINFOCODETABLE           | PRINTINPUTONFISCALRECEIPT \[int\] NULL DEFAULT (0) PRINTTEXTONFISCALRECEIPT \[nvarchar\] (50) NULL DEFAULT('') |               |                       |                                     |
 | RETAILINFORMATIONSUBCODETABLE | PRINTTEXTONFISCALRECEIPT \[nvarchar\](50) NULL DEFAULT('')                    |               |                       |                                     |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

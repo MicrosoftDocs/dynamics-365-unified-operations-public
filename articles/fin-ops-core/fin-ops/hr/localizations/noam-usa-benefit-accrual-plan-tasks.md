@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -186,3 +185,6 @@ If the service date basis is set to **Seniority date**, make sure that a seniori
 
 ## Next step
 The next step is to set up payroll taxes. For more information, see [Set up taxes, tax regions, tax codes, and tax groups](noam-usa-tax-information-tasks.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

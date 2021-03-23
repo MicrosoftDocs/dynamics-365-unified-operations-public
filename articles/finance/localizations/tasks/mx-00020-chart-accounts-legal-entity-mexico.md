@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -70,3 +69,6 @@ Set up specific parameters in the chart of accounts to allow the generation of e
     * You need to repeat this action for each main account created in your company. If you have a lot of main accounts to create, you can use the Data management tool to import the main accounts from a Microsoft Excel file.  
 19. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -75,3 +74,6 @@ If a positive or negative amount is entered in the **Debit** field on a journal 
 
     > [!NOTE]
     > In the journal you can use the **Proposal** function for various proposal types to create transactions for fixed asset groups. Asset group depreciation doesn't apply to proposals of the **Consumption depreciation**, **Revenue recognition of reserves**, or **Extraordinary depreciation** type.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

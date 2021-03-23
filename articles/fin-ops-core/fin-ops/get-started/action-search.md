@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -81,3 +80,6 @@ In the previous example, action search showed results from the standard Action P
 ## Action search vs. Navigation search
 
 Whereas action search is intended to find and run actions on a page, there is a separate search mechanism for finding and navigating to pages. For more information about that feature, see the [Navigation search](navigation-search.md) article.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -75,3 +74,6 @@ Item requirements for service orders are processed through a project. To create 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

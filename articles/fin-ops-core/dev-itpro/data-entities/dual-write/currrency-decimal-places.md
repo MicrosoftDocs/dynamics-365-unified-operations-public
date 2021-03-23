@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -98,3 +97,6 @@ If you require that the currency precision for a specific currency differ from t
 ### tables: Currency column
 
 The number of decimal places that can be configured for specific currency columns is limited to four.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

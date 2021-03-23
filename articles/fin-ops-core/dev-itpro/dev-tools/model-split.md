@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -137,4 +136,4 @@ There are currently support code extensions, table extensions, form extensions, 
 
 
 
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

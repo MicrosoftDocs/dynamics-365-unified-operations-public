@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -51,3 +50,6 @@ Public-sector organizations can use advanced ledger entries to create, adjust, a
     * Add a debit or a credit amount to this line. If needed, click Add line to add more lines.  
 17. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -90,3 +89,6 @@ Occasionally, you might have to reverse a completed inventory close to return se
 > [!NOTE] 
 > Only the last inventory period that was closed can be reopened. To reverse an earlier inventory close, you must reverse each subsequent inventory close one at a time, starting with the most recent close.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

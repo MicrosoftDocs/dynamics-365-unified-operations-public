@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -482,3 +481,6 @@ After you've calculated and approved tax registers, and generated an assessed ta
 4. In the **Name** field, select the name of the assessed tax journal.
 5. Select **Lines** to view the journal lines that have assessed tax accrual transactions that were created based on the tax register data and the settings of Fixed assets parameters.
 6. Validate and post the journal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

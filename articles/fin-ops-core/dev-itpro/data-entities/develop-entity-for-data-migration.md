@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -208,3 +207,6 @@ In this exercise, you will use a new set of files to import data through the exi
 - The **Execution summary** page shows that five records were created, three records were updated, and two records have errors.
 - In the staging view, two records have errors.
 - After you fix the records and run the import again, the staging view shows that all records are completed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

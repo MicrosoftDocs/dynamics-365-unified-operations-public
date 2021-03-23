@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -436,3 +435,6 @@ After you've set up non-deductible costs, you can perform the following tasks on
 - **Print report**
 
 The FactBox pane shows the totals in the journal and the total overdue amount.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -67,3 +66,6 @@ This procedure shows how to calculate minimum coverage proposals based on histor
 5. On the **Action Pane**, click Plan.
 6. Click **Item coverage**. Notice that the **Minimum quantity** has been updated with the new minimum quantity from the safety stock journal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

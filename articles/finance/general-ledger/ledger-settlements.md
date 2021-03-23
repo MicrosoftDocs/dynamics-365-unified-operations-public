@@ -8,7 +8,6 @@ manager: aolson
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -80,3 +79,6 @@ You can reverse a settlement that was made by mistake.
 ## Update the list of accounts that are included in the list of transactions
 
 Select **Ledger settlement accounts** to open a dialog box where you can edit the accounts that are included in the list of transactions. Select **New** to add new accounts to the list. This list is used to filter the list of transactions that appears on the **Ledger settlements** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

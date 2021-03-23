@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +52,6 @@ To map a transportation status to a carrier status, follow these steps:
 1. Select the transportation status code that you want to map to the selected shipping carrier's code.
 1. Enter the external code that is used by the shipping carrier.
 1. Close the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

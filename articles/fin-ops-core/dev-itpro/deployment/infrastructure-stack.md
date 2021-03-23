@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ Customers using the self-service capabilities will see the following changes in 
 
     > [!IMPORTANT]
     > Support for sub report items has been re-introduced with the Platform update 36 release. Customers dependent on solutions that include properly formatted sub report items can transition to self-service deployments running on Platform update 36 or later.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

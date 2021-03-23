@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -187,3 +186,6 @@ This procedure uses the USMF demo company.
     * Verify the report lists the transactions with Bank document number, Facility limit, utilized amount and the facility balance amount.  
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

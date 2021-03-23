@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -77,3 +76,6 @@ Make a note of the number of the purchase order that you create, and also note t
     * After you have clicked OK, check the message bar. There should be a message saying that the operation completed.  
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

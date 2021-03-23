@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -110,3 +109,6 @@ When the **NumSeq** data source is called, it returns the new generated value of
 ## Additional resources
 
 [Other (business domain–specific) functions](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

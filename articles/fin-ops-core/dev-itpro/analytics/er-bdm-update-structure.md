@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -111,3 +110,6 @@ Complete the following procedures in [Business document management overview](er-
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Business document management overview](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

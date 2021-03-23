@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -88,3 +87,6 @@ Under both SEPA Direct Debit schemes, customers have certain rights to refunds. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -91,3 +90,6 @@ When the `DATETIMEFORMAT` function converts a given date/time value, it consider
 ## Additional resources
 
 [Date and time functions](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

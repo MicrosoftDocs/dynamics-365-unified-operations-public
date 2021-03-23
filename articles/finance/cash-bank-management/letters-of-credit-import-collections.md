@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,3 +57,6 @@ An import collection helps guarantee that the seller is paid when the buyer coll
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

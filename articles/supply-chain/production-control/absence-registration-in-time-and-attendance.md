@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -112,3 +111,6 @@ For example, a worker clocks in at 10 AM and selects an absence code that indica
 ### Calculate and approve absence
 
 - Select **Time attendance** &gt; **Review and approve** &gt; **Approve or Calculate**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

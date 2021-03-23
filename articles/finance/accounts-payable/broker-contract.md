@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -145,3 +144,6 @@ If you were handling differences in a fee scenario where the customer pays the b
 > [!NOTE]
 > The write-off expense account number is specified in the **Main account** field for a specific reason code on the **Differential reasons** page.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

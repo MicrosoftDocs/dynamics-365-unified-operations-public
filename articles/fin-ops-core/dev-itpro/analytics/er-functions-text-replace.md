@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -86,3 +85,6 @@ If the `regular expression flag` argument is **FALSE**, this function returns th
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

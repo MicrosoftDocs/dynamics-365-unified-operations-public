@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -59,3 +58,6 @@ In the **Accounts payable** module, go to **Invoices** \> **Invoice journal**, s
 In the **Accounts payable** module, go to **Purchase orders** \> **All purchase orders**, and then, on the Action Pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
 
 ![All purchase orders page with Credit invoicing page](./media/ita-credit-invoicing-po.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

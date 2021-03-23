@@ -4,11 +4,10 @@
 title: Overview
 description: The Dynamics 365 Human Resources User Guide provides you with instructions on setting up Human Resources, setting up compensation and benefits for your employees, and managing your workforce.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,6 +17,7 @@ ms.search.form: EssWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Overview
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The Dynamics 365 Human Resources User Guide provides you with instructions on setting up Human Resources, setting up compensation and benefits for your employees, and managing your workforce.
 
@@ -64,7 +66,6 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 [Modify reporting relationships for a position](hr-personnel-modify-reporting-relationships-position.md)</br>
 [Enter worker information](hr-personnel-enter-worker-information.md)</br>
 [Loan items to workers](hr-personnel-loan-item-worker.md)</br>
-[Enter project timesheets](hr-personnel-enter-project-timesheets.md)</br>
 [Mass hire projects](hr-personnel-mass-hire-projects.md)</br>
 [Set up positions](hr-personnel-set-up-positions.md)</br>
 [Set up injury and illness information](hr-personnel-set-up-injury-illness-information.md)</br>
@@ -132,3 +133,6 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

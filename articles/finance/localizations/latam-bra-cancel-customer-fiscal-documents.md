@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/05/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -65,3 +64,6 @@ You can cancel an incorrect customer fiscal document by using the **Cancel fisca
 ## Additional resources
 
 [Cancel vendor fiscal documents](latam-bra-cancel-vendor-fiscal-documents.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

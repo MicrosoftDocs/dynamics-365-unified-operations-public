@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -78,3 +77,6 @@ The following illustration shows the tax integration process.
 - [Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md) (Not applicable for Microsoft Dynamics 365 for Finance and Operations version 10.0 \[April 2019\] and later)
 - [Chinese tax integration modification for VAT customer invoices FAQ](apac-chn-tax-integration-vat-customer-invoices.md)
 - [Set up basic tax integration profile for China](./tasks/set-up-basic-tax-integration-profile-china.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,10 @@
 title: Create a buy and sell leave request workflow
 description: Create a buy and sell leave request workflow to manage to buy and sell leave requests consistently in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,6 +17,7 @@ ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Create a buy and sell leave request workflow
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can create a workflow in Dynamics 365 Human Resources to consistently manage your buy and sell leave requests. A **Buy and sell leave** workflow lets you:
 
@@ -85,3 +87,6 @@ These examples show how you can create different types of workflow conditions by
 [Leave and absence overview](hr-leave-and-absence-overview.md)<br>
 [Manage buy and sell leave policies](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

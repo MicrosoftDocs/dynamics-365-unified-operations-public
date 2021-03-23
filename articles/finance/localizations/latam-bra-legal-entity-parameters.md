@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -325,3 +324,6 @@ In Brazil, you must specify the accountant details for tax reporting in the mont
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

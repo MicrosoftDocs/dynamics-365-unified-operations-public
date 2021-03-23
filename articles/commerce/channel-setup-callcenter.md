@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -139,3 +138,6 @@ To set up a price group, do the following.
 [Set up and work with fraud alerts](set-up-fraud-alerts.md)
 
 [Set up continuity programs for call centers](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

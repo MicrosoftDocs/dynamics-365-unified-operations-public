@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -110,3 +109,6 @@ To explain this apparent failure, you must understand the selection criteria for
 
 > [!NOTE]
 > You can't use location stocking limits to control, for example, the replenishment of items that have different quantities in the same location. In this case, use a *replenishment template*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -49,3 +48,6 @@ This report provides a snapshot of following summaries as part of store performa
 - Tax summary
 - Price overrides summary
 - Discounts summary
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ For the second parameter on `addToDialog`, choose the controller class that sati
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

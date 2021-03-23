@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -112,3 +111,6 @@ Legal entities in Poland can link fixed assets to depreciation groups. Depreciat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

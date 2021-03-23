@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +75,6 @@ The following illustrations show the template mapping in Data integration.
 ### Field Service Products (Supply Chain Management to Field Service): Products - Products
 
 [![Template mapping in Data integration](./media/FSProduct.png)](./media/FSProduct.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

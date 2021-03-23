@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -88,3 +87,6 @@ If you're working with a customization element or an extension element, you can 
 The value of a node in the element designer is often a reference to another element. For example, a field node in a table element is typically based on an extended data type (EDT) element. When you right-click a node in the element designer, you can click the **Go to &lt;element&gt;** command to navigate to that related element. For example, when you right-click the **FuelType** node in the list of fields for the FMVehicle table, you can click **Go to Base Enum FMFuelType** to show the base enumeration that is used to define the field.
 
 [![Navigate to elements](./media/22_devotoolsconcept.png)](./media/22_devotoolsconcept.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

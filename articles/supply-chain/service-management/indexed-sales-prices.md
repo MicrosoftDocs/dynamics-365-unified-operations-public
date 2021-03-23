@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,3 +46,6 @@ For example, if the base price is EUR 1,000, and the index is 110, the sales pri
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

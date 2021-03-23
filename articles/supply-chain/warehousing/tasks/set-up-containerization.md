@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -82,3 +81,6 @@ This topic describes how to automate the containerization of loads in Warehouse 
 11. In the **Field Select** field, enter or select a value.
 12. Select **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

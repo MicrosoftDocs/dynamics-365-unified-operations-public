@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -132,3 +131,6 @@ The **Documents to update** field influences on the **Document status** field in
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

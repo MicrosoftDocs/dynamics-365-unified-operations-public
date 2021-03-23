@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -148,3 +147,6 @@ For more information about how to set up electronic messaging functionality, see
 14. To review the report that is generated, select **Attachments** (the paper clip symbol) in the upper-right corner of the page. Then select **Open** to open the file.
 
 You must also manually upload the generated file to the special third-party software for data preview and data updates, and to transfer the profit tax declaration files to the tax authorities through the communication channels.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

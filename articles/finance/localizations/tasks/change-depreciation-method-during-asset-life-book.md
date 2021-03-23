@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -60,3 +59,6 @@ This procedure was created using the demo data company JPMF.
 1. Go to Fixed assets > Setup > Depreciation rate schedules > Years passed schedules.
     * The corresponding data has to exist for the depreciation profile update.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

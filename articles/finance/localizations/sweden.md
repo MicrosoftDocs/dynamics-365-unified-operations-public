@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,3 +36,6 @@ This topic provides links to documentation resources for Sweden.
 - [Import payment formats](emea-swe-payment-formats-import.md)
 - [Cash register functionality](../../retail/localizations/emea-swe-cash-registers.md)
 - [Sales tax payment report for Sweden](emea-swe-sales-tax-payment-report-sweden.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +75,6 @@ You can record the history of an element in a service BOM. Every time that you u
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

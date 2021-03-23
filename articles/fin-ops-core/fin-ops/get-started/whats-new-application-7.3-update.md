@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -303,3 +302,6 @@ This enhancement ensures that the tare weight of a container used in the contain
 The volume of the container is now represented with greater detail, including gross volume, remaining volume, and the ability to capture actual volume.
 
 These updated values are consumed by the rate route engines, as well as by the transportation tender.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

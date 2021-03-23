@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -201,3 +200,6 @@ Sometimes, a solution might contain different implementations of a table map. Fo
     ![Upgrading your table maps](media/upgrade-entity-maps.png)
 
 The upgrade takes a few minutes. When it's completed, you receive a notification.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -49,3 +48,6 @@ When a kanban is emptied by mistake or a received kanban needs to be emptied, yo
 2. In the list, mark the selected row.
     * Notice that the Handling unit status is Emptied.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

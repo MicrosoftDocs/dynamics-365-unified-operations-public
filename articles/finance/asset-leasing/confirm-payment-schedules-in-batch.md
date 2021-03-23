@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +45,6 @@ To confirm multiple payment schedules, follow these steps.
     - To confirm all books, turn on the **For all books** parameter.
 
 Information for the newly confirmed books is shown on the **Confirmed books** page. After the payment schedules are confirmed, the initial recognition journal entries can be posted against the leases.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

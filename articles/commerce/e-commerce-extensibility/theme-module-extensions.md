@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -228,3 +227,6 @@ export default (props: IProductFeatureViewProps & IProductFeatureProps<{ICartExt
 [Extend a theme from a base theme](extend-theme.md)
 
 [Add custom resources to your customization code](add-custom-resources.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,3 +53,6 @@ Saudi companies of all types and companies owned by nationals of the Gulf Cooper
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

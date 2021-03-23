@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -57,3 +56,6 @@ When this task is run on the build VM, NuGet is already available, and no action
 
 > [!NOTE]
 > Because of the introduction of semantic versioning in NuGet version 3.4 and later, you must install version 3.3.0 or earlier.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

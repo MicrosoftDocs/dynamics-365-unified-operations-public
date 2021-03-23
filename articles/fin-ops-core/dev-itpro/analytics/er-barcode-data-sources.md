@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -308,3 +307,6 @@ However, when you use the **Barcode** data source to produce bar codes, the rend
 - [Electronic Reporting destinations](electronic-reporting-destinations.md)
 - [Electronic reporting formula language](er-formula-language.md)
 - [NUMBERFORMAT function](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

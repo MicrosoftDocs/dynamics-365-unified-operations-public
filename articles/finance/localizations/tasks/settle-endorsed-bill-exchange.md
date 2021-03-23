@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -59,3 +58,6 @@ This task was created using the demo data company JPMF.
     * You can change the settlement date if necessary.  
     * Verify that the status has been updated to be "Endorsement settled".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

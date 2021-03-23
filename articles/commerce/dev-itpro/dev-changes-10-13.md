@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Important development and ALM changes from version 10.0.10 to 10.0.13 
+title: Development and ALM changes from version 10.0.10 to 10.0.13 
 description: This topic highlights the major changes in the development tools, software development kits (SDKs), and Application Lifecycle Management (ALM).
 author: RobBertram 
 manager: AnnBe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -28,7 +27,7 @@ ms.search.validFrom: 2020-04-10
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Important development and ALM changes from version 10.0.10 to 10.0.13
+# Development and ALM changes from version 10.0.10 to 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
@@ -138,3 +137,6 @@ For a general overview of each application release, always check the "What's new
 3. Check the [Retail SDK FAQ](retail-sdk/sdk-faq.md). It's updated as common issues are identified.
 4. Submit a support request through LCS. Provide as much information as you can about the issue. When you submit the request, send a copy to your FastTrack solution architect.
 5. Expect to share your screen with your partner, the support specialist, your solution architect, or even a combination of the three. Be prepared to reproduce the error.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

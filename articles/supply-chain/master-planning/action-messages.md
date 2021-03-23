@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +56,6 @@ On the **Coverage groups** page, you can select the action messages that you wan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

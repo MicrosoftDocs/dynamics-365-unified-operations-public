@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -757,3 +756,6 @@ The following procedure provides an example that shows how to post a correction 
     |------------------------|-----------------|----------------------|
     | VATDeductionCorrection | CORR            | Purchase             |
     | VATDeductionCorrection | CORR            | Purchase credit note |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,10 @@
 title: Talent updates
 description: This article provides information about the release process and cadence for Microsoft Dynamics 365 Talent.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -46,7 +45,7 @@ Talent updates are applied to all environments automatically. Talent provides tw
 
     All supported data centers update weekly, unless otherwise noted. Weekly updates typically begin on Wednesday and complete by Sunday. US, Australia, Europe, UK, Asia, and Canada regions are included in weekly updates. 
 
-- **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates release to the same regions as the weekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with weekly service updates.
+- **Dataverse solution updates**: These updates occur approximately every six weeks, as needed. They include new tables and changes to existing tables in Dataverse. These updates release to the same regions as the weekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with weekly service updates.
 
 The following table shows a sample schedule:
 
@@ -122,3 +121,6 @@ While testing preview features or trying new capabilities, you might find items 
 - [Dynamics 365 and Power Platform Release Plans](https://docs.microsoft.com/dynamics365/release-plans)
 - [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new)
 - [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -534,3 +533,6 @@ A dimension value set is a named group of dimension values. A dimension value se
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

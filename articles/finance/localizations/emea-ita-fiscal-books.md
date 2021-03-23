@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -262,3 +261,6 @@ To hide these functions from the user interface for all security roles, follow t
 ![Unpublished objects](./media/unpublished-objects.png)
 
 7.	Repeat these steps for the privilege, **Reverse vendor transactions**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

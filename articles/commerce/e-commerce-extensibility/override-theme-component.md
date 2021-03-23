@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -89,3 +88,6 @@ yarn msdyn365 add-component-override spring add-to-cart
 [Extend a theme from a base theme](extend-theme.md)
 
 [Add custom resources to your customization code](add-custom-resources.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

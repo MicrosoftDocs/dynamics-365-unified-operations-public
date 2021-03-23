@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -66,3 +65,6 @@ To be able to run this procedure you must have the System administator or Machin
 29. Click OK.
 30. Select a reason why you are clocking out early.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

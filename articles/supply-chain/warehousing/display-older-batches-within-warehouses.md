@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,3 +42,6 @@ The **Display older batches within warehouse** configuration is available on mob
 
 - Under **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**, set **Use existing work** to **Yes** for the menu item, and select **Warn** in the **Pick oldest batch** field. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

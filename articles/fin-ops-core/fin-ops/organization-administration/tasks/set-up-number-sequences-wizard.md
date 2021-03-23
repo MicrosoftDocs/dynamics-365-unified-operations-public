@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/18/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -41,3 +40,6 @@ Number sequences are used to generate readable, unique identifiers for master da
 4. Select **Next**.
 5. Select **Finish**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

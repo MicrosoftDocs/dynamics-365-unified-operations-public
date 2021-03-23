@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/08/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -65,3 +64,6 @@ This procedure shows how to define a unit of measure, provide translations for t
 6. Click **OK**.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

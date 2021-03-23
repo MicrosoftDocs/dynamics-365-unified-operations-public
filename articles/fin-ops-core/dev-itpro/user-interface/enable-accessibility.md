@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -184,3 +183,6 @@ Finance and Operations apps provide a context menu. When the application author 
 - *aria-valuemax* - Defines the maximum allowed value for a range widget.
 
 - *aria-valuemin* - Defines the minimum allowed value for a range widget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

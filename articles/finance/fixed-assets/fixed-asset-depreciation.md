@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +60,6 @@ For more information, see [Depreciation methods and conventions](depreciation-me
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

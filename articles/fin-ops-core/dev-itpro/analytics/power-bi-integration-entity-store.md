@@ -2,13 +2,12 @@
 # required metadata
 
 title: Power BI integration with Entity store
-description: Entity store is an operational data store that is included with Microsoft Dynamics 365 Finance. This topic describes how Entity store enables Power BI integration.
+description: This topic describes how Entity store enables Power BI integration.
 author: MilindaV2
 manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -77,3 +76,6 @@ For troubleshooting and diagnostics, you can connect to the Entity store databas
     * The login will be axdwadmin and the password will be the value from LCS.
 3. Using the **Options** button or by browsing to the **Connection Properties** tab, change the **Connect to database** property from the default value to your **Database Name** value from LCS.
 4. Click **Connect** to access the database.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

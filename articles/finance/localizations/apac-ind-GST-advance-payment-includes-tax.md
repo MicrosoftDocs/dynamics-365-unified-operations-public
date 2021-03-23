@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +62,6 @@ Complete the following procedures to create a customer advance payment journal, 
 To validate the financial entries, in the journal, select **Inquiries \> Voucher**. Here is an example.
 
 ![Example of financial entries](media/Annotation-2019-05-21-131638.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

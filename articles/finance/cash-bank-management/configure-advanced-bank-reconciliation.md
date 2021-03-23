@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ The option to **Reconcile after import** will automatically validate the bank st
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

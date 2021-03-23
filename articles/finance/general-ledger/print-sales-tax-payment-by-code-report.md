@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +49,6 @@ In the **Feature management** workspace, turn on the following feature: **Genera
 The following illustration shows an example of the report that is generated. The report shows that reporting code **101** has the **EUR** currency if the **Sales tax currency** field is set to **EUR** for the sales tax code that the reporting code is assigned to.
 
 ![Example of the Sales tax payment by code report](media/Sales-tax-payment-by-code-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

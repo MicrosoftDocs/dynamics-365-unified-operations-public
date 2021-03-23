@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -168,3 +167,6 @@ For more information, see the following topics:
  - [Calculate interest and fines on customer payments](tasks/br-00066-2-calculate-interest-fines-customer-payments.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

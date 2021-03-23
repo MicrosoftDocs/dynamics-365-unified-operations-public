@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,3 +53,6 @@ After you've turned on and set up the feature, the printed invoice report will c
 
 > [!NOTE]
 > The new layout is applicable only to invoices that are based on sales orders. It isn't applicable to free-text invoices, because they don't use packing slips.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

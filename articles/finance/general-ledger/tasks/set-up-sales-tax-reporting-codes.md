@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -41,3 +40,6 @@ This recording uses the DEMF demo company.
 6. In the **Brief description** field, enter a description for internal purposes.
 7. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

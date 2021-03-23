@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -443,3 +442,6 @@ Additional resources
 [Inventory statuses](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -62,3 +61,6 @@ When you reconcile a carrier invoice and a freight bill, this is done line by li
 5. Click to follow the link in the Reference journal number field.
 6. Click Lines.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

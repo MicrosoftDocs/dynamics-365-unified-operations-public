@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +62,6 @@ When a sales order is posted, the posted cost amount is USD 10.00, because the r
 
 > [!NOTE]
 > For comparison, if you select the **Include physical value** check box for this item, when a sales order is posted, the posted cost amount will be USD 12.00.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

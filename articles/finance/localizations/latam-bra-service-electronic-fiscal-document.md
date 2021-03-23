@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -105,3 +104,6 @@ When you import an electronic fiscal document for services, information about th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

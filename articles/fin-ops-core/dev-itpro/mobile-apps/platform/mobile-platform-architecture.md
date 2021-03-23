@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -90,3 +89,6 @@ The mobile app designer lets you select the specific data fields from forms that
 [Action design guidelines](action-design-guidelines.md)
 
 [Form design requirements](form-design-requirements.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

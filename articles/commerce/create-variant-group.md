@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -75,3 +74,6 @@ The following image shows an example of a size group for "casual shirt sizes".
 [Set up retail products](set-up-retail-products.md)
 
 [Product dimensions](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,12 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (April 9, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for April 9, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 04/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -89,7 +88,10 @@ Tracking employee time off and understanding how time off is calculated not only
 ## Coming soon
 
 ### Improvements to the user interface for duplicate employee check
-With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
+With this change, duplicates are detected as you enter name columns, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't automatically open.
 
 ###  Email support for alerts
 With Platform update 25 for Finance and Operations, users can create alert rules that automatically send email notifications to contacts when triggered by an event. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

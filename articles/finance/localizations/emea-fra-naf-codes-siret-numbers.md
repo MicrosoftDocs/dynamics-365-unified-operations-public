@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,3 +42,6 @@ You can set up Siret numbers for customers, vendors, and prospects. The Siret is
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

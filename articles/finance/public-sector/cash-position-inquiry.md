@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -90,3 +89,6 @@ Optional:
 - Set the **Display segments in separate columns** option to **Yes** to show the account names for each dimension as separate columns in the grid.
 - If you want to filter the values for a specific dimension selected, select the dimensions you want in the fields below the **Financial dimension set** field. The choices you have to select from depend on which financial dimension set you selected.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

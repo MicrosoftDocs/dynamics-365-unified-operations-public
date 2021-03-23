@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -64,3 +63,6 @@ ms.dyn365.ops.version: 10.0.4
 
 > [!NOTE]
 > The general journal also lets you create a purchase credit note that has details of the original invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

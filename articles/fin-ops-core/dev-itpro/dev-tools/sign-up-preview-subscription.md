@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -172,3 +171,6 @@ LCS is the starting point for performing online administrative activities. Here 
         > To access the page, you must be a member of the **Global Administrator** role for your organization's Microsoft Online Services tenant. The installing user is always a global administrator, but other users must be added to this role.
 
         [![Active users in Microsoft 365 admin center](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

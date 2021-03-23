@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -98,3 +97,6 @@ The following table shows the tax entries that are generated when an invoice pay
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

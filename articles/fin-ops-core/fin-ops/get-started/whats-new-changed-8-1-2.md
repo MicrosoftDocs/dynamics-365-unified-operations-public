@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -135,3 +134,6 @@ These configuration versions are released as public preview and will be updated 
 
 For more information, see [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

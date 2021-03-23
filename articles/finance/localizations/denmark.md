@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -44,3 +43,6 @@ This topic provides links to documentation resources for Denmark.
 - [Set up customer accounts for OIOUBL electronic invoicing](tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md)
 - [Set up OIOUBL electronic invoicing](tasks/set-up-oioubl-electronic-invoicing.md)
 - [Set up payment slip format](tasks/set-up-payment-slip-format.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

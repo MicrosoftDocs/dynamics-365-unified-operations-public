@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,3 +41,6 @@ To use the checks functionality together with the Spanish layout, you should con
 
 To generate the checks by using the Spanish layout, basic Payment journal (vendors) functionality is used. For more information, see [Vendor payment overview](../cash-bank-management/tasks/vendor-payment-overview.md). After you run the Generate payments function and select all required parameters as described in this topic, the checks are generated. If the currency on the payment journal line differs from the currency of the bank account, you can still generate a check if the check layout is set up to use other currencies.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

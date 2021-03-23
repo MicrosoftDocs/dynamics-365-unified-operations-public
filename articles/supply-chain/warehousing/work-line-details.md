@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -130,3 +129,6 @@ Follow these steps to create some picking work.
 
 > [!IMPORTANT]
 > If you cancel just part of the quantity for a work line, you must also remove the obsolete quantity from the load line. Otherwise, unless under-delivery is set up correctly, the load line can't be ship-confirmed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

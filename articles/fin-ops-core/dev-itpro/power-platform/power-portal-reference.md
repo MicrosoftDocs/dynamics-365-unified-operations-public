@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -55,3 +54,6 @@ When authenticated users from a different tenant need to be added to Finance and
 
 > [!NOTE]
 > Access from the Power Apps Portal will fail if the user (authenticated or anonynous) has been assigned the System administrator role in any Finance and Operations apps.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

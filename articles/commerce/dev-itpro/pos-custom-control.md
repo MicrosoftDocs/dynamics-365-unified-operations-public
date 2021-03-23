@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -202,3 +201,6 @@ Next, you must add the constructor and initialize the data list with the product
     ![Product availability information in the product details view](media/pos-custom-control-2.png)
 
 You can copy the full code for this sample from RetailSDK\\Code\\POS\\Extensions\\SampleExtensions\\ViewExtensions\\SimpleProductDetails.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

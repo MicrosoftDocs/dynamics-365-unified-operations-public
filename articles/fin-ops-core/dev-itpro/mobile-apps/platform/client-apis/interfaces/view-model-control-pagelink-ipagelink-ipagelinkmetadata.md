@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 # optional metadata
 # ms.search.form:
@@ -131,7 +130,7 @@ Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontro
 Icon: string (optional)
 
 Name of the icon that is displayed in the page link control.
-Here is a [list of available icons](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/AXSymbolFont).
+Here is a [list of available icons](https://docs.microsoft.com/dynamics/s-e/).
 
 ### IconSize
 
@@ -219,3 +218,6 @@ OnNavigate: function(navigation: [NavigationArgs](view-model-ipage-inavigationar
 
 An event that is triggered when the navigation is triggered.
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

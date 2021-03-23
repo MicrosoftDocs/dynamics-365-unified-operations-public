@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -396,3 +395,6 @@ onSyncStatusChange: [EventHook](event-ievent-ieventhook.md) &lt;null&gt;
 Event that fires when the page sync status changes.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

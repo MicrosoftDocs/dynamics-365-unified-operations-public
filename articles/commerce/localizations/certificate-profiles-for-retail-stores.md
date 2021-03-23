@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -124,3 +123,6 @@ If a new version of the certificate is introduced, but it can't be updated in al
 
 > [!NOTE]
 > In the Commerce runtime, the new version of the certificate will be called first. If the certificate hasn't yet been updated in a specific store or on a specific terminal, the previous version will be called.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

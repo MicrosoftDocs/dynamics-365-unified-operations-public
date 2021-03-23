@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +49,6 @@ A one-time customer is a customer who does not have a long-term relationship wit
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

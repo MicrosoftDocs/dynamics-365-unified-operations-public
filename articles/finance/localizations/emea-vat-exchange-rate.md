@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +62,6 @@ After you've configured the system to use VAT exchange rates, if you must enter 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

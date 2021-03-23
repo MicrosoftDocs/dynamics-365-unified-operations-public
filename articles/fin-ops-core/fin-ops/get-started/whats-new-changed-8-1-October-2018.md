@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -114,3 +113,6 @@ Standard sales tax functionality in Finance and Operations now fulfils the major
 - Sales Invoice and Credit notes for UAE now print in two languages, including a new ar-AE Arabic language for user interface.
 - VAT Return declaration report is printed to an electronic file format ready for uploading to e-TAX FTA portal.
 - Standard audit file functionality has been shared with UAE local functionality. This is required by bht Federal Tax Authorities FTA VAT audit file - (FAF) and can be exported to a comma separated file format.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

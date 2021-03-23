@@ -7,7 +7,6 @@ manager: tfehr
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -163,3 +162,6 @@ Before the coverage step starts, there is a pre-coverage step during which items
 - **One heavy routine at a time** – Don't run master planning together with any other heavy routine.
 - **Review the session log.**
 - **Filtering of items** – Use the lifecycle state to exclude items from the master planning run. (Don't use the item numbers.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

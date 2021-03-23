@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -90,3 +89,6 @@ ms.dyn365.ops.version: 10.0.4
 8. Select **Save**, and then select **Close**.
 
     ![New active configuration](media/update-configuration-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

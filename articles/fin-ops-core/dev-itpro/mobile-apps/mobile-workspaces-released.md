@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -47,3 +46,6 @@ This topic lists the mobile workspaces that are available for use with the Dynam
 | [Sales orders](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | You can stay up to date on your sales orders.                                                                                                                          |  January 2017                  |
 | [Vendor collaboration](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Vendors can stay up to date on the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts. |January 2017    |
 | [Asset management](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | This workspace lets users view and create maintenance requests and work orders. Users can also view the assigned work order jobs in a calendar or list view. Assets and functional locations can also be viewed and searched for. |October 2019    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

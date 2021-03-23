@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -141,3 +140,6 @@ The new running average cost price reflects the average of the financially and p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

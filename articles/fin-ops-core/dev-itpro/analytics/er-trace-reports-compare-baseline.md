@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -249,3 +248,6 @@ The baseline is added for the **Format to learn ER baselines** format.
 ## Additional resources
 
 - [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

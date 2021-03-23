@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +56,6 @@ A cost group can be assigned a cost group type and a behavior for supplemental s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

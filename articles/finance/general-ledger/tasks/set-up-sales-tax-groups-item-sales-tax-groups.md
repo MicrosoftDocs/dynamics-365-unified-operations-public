@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -52,3 +51,6 @@ This task recording walks you through the setup of Sales tax and Item sales tax 
 19. In the list, click the link in the selected row.
 20. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

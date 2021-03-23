@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -261,3 +260,6 @@ salesOrder = data.sales().salesOrders().find(salesOrderId);
 ### Automatic prerequisite setup
 
 If the entity has query support, the implementation should use the query that has already set up prerequisite support. Otherwise, after you find the record buffer and initialize the new instance of the entity, you should subscribe `ensure` methods to the business operation events of the entity.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

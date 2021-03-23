@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/12/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -54,3 +53,6 @@ To provide better visibility into the various amounts for the cart, three new am
 - **Deposit applied** – The deposit amount that is applied on a transaction when the user does a customer order pickup. If there is no deposit override, and a 10-percent deposit is configured, the amount in this field is 90 percent of the total amount of the customer order.
 - **Carry out amount** – The total amount for lines where the delivery mode was set to **Carry out** when the customer order was created or edited, or during a customer order exchange. The amount in this field includes taxes and charges.
 - **Return amount** – The total amount for lines that have negative quantities during the customer order exchange. The amount in this field includes taxes and charges.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

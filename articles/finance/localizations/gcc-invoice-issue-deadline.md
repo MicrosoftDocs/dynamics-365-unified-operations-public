@@ -8,7 +8,6 @@ manager: Annbe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -87,3 +86,6 @@ Based on the settings, the system enters a value in the **Invoice issue due date
 
 > [!NOTE]
 > If you set the **Invoice date control** field on the **Accounts receivable parameters** page to **None**, the system leaves the **Invoice issue due date** field in the packing slip journal blank.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

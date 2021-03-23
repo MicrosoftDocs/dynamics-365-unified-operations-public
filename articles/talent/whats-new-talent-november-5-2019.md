@@ -2,13 +2,12 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (November 5, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for November 5, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -54,9 +53,9 @@ In this week's release, you can use Microsoft Dynamics Lifecycle Services (LCS) 
 
 - [Copy a Core HR instance](hr-copy-instance.md) in Talent documentation
 
-### Common Data Service integration batch jobs aren't created when Common Data Service integration is enabled (388030)
+### Dataverse integration batch jobs aren't created when Dataverse integration is enabled (388030)
 
-This change will create batch jobs for Common Data Service integration when it's enabled.
+This change will create batch jobs for Dataverse integration when it's enabled.
 
 ### The HcmPersonImageEntity doesn't resize the person image when uploaded (369469)
 
@@ -70,9 +69,9 @@ With this change, a warning will appear if you select an **Available for assignm
 
 This release corrects an issue when requesting compensation changes through employee self-service for step-based plans. 
 
-### Reason code doesn't sync to Common Data Service if the description is longer than 30 characters, Core HR allows 60 (352682)
+### Reason code doesn't sync to Dataverse if the description is longer than 30 characters, Core HR allows 60 (352682)
 
-with this change, reason codes with more than 30 characters will be updated in Common Data Service. Changes made in Common Data Service will also be reflected back in Talent.
+with this change, reason codes with more than 30 characters will be updated in Dataverse. Changes made in Dataverse will also be reflected back in Talent.
 
 ### Address integration from Talent to Finance and Operations (351961)
 
@@ -89,3 +88,6 @@ See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-p
 Features are added and updated in every release. The feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
 To learn more about the changes coming with feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

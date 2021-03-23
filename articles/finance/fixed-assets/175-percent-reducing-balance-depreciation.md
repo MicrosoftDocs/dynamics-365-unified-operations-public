@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,3 +91,6 @@ The 175% reducing balance depreciation method divides 175 percent by the servic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

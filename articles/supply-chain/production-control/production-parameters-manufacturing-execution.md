@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -156,3 +155,6 @@ You can use the following settings if materials should always be manually deduct
 | Report as finished |   Automatic BOM consumption    | <strong>Never</strong>  |
 | Report as finished | Update finished report on-line | <strong>Status</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

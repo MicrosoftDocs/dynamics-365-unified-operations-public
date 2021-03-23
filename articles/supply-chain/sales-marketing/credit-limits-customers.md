@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -204,3 +203,6 @@ form.
 
 2.  In the **Sales order** form, on the Action Pane, on the **Manage** tab,
     click **Check credit limit**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -51,3 +50,6 @@ This procedure demonstrates how to look up loyalty card information and adjust l
 15. Click Card transactions.
 16. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

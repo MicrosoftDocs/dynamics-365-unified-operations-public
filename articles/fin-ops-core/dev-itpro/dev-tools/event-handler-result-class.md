@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -92,3 +91,6 @@ if (result.hasResult())
     ret = result.isAccepted();
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

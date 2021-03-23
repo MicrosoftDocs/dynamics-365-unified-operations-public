@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -189,3 +188,6 @@ The following illustration shows the class structure of the extension.
 10. To call the Commerce Scale Unit extension in your client, you must generate the Commerce proxy. You can then use the proxy to call your new Commerce Scale Unit APIs from the client.
 
     For information about how to generate the proxy, see [Typescript and C# proxies for Retail point of sale (POS)](typescript-proxy-retail-pos.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

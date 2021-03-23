@@ -4,11 +4,10 @@
 title: Define new jobs
 description: This task focuses on the creation of a new job. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -17,6 +16,7 @@ ms.search.form: HcmJob, HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -26,6 +26,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Define new jobs
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -73,3 +75,6 @@ This task focuses on the creation of a new job. It will be completed using manua
 33. Toggle the expansion of the Education section.
 34. Click Save.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

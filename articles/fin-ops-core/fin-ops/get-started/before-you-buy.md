@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -99,3 +98,6 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 ## If you are upgrading from Dynamics AX 2012 or migrating from AX 2009
 
 If you are a customer who is upgrading from Microsoft Dynamics AX 2012 or migrating from Microsoft Dynamics AX 2009, you may be eligible for a longer trial. Contact <daxcf@microsoft.com> for more information.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

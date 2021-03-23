@@ -7,7 +7,6 @@ ms.date: 07/27/2020
 ms.author: margoc
 
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology:
 
 # optional metadata
@@ -41,3 +40,6 @@ For training about features shared with other Finance and Operations apps, see t
 | Content  | Description  | Format  | Length    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Deploy and extend Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | This learning path describes how to deploy Dynamics 365 Commerce environments and perform post-provisioning steps, for successful Commerce implementations using the correct topology for each retailer's business needs. | Free, self-paced online learning path | 5 hours   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -95,3 +94,6 @@ The amount of the invoice transaction will be subject to sales tax calculation o
 The details of the intent letter will be also included in a printable layout of the invoice.
 
 ![Print invoice](media/emea-ita-exil-intent-inv-print.jpg)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

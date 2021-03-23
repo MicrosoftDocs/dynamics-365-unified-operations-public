@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -36,6 +35,7 @@ To see what's new or changed in each release of Dynamics 365 Finance, see the fo
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|--------------|-------------|
+| 10.0.16 |    10.0.689  | February 2021  | [What's new and changed in Dynamics 365 Finance version 10.0.16](whats-new-changed-10-0-16.md) |
 | 10.0.15 |    10.0.644  | January 2021  | [What's new and changed in Dynamics 365 Finance version 10.0.15](whats-new-changed-10-0-15.md) |
 | 10.0.14 |    10.0.605  | November 2020 | [What's new and changed in Dynamics 365 Finance version 10.0.14](whats-new-changed-10-0-14.md) |
 | 10.0.13 |    10.0.569  | October 2020  | [What's new and changed in Dynamics 365 Finance version 10.0.13](whats-new-changed-10-0-13.md) |
@@ -71,3 +71,6 @@ To see what's new or changed in releases before November 2019, see the following
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | May 2016         | [What's new or changed in Dynamics AX application version 7.0.1 (May 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | February 2016    | [What's new or changed in Dynamics AX 7.0 (February 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

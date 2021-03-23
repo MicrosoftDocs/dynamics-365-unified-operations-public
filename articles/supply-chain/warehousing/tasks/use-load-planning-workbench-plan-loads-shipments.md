@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -61,3 +60,6 @@ This topic shows how to use the load planning workbench to create a load for a s
 5. Select **Assign**.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,10 @@
 title: Track candidate sources in Attract
 description: This topic provides information about tracking the source for candidate profiles and applications. 
 author: hachandr
-manager: AnnBe
+manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -38,14 +37,14 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 When candidates apply for a job, Attract automatically tracks the source of their applications, providing you with valuable information to help you target your recruiting efforts. Recruiters and hiring managers can also select an application source while manually adding a candidate to a job or talent pool.
 
-You can view the application source in the application activity details under the **Activity** tab, as well as in the application history available under **Profile** in talent pools. You can find a candidate's profile source in the candidate details under the **Profile** tab in both applications and talent pools.
+You can view the application source in the application activity details under the **Activity** tab and in the application history available under **Profile** in talent pools. You can find a candidate's profile source in the candidate details under the **Profile** tab in both applications and talent pools.
 
 > [!NOTE] 
 > You can find process templates in the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 
 ## Pre-configured sources
 
-The default source list contains common application sources. Some source types, like **Job board** and **Social Network**, have additional source details. For example, **Social Network** includes Facebook and Twitter. The **Referral** source type allows you to specify an internal employee as the referrer. The default source list includes the following pre-configured sources:
+The default source list contains common application sources. Some source types, like **Job board** and **Social Network**, have more source details. For example, **Social Network** includes Facebook and Twitter. The **Referral** source type allows you to specify an internal employee as the referrer. The default source list includes the following pre-configured sources:
 
 -   Attract career site
 
@@ -97,12 +96,15 @@ The default source list contains common application sources. Some source types, 
 
 ## Customize the source list 
 
-You can extend the source list to include additional application sources. To customize this list, follow the instructions in [Extending Option Sets in Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Edit the **TalentSource** entity to include additional sources. 
+You can extend the source list to include more application sources. To customize this list, follow the instructions in [Extending Option Sets in Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Edit the **TalentSource** table to include more sources. 
 
-To avoid negatively impacting the user interface (UI), don't edit or delete the **TalentCategory** enum values (not names) for the following:
+To avoid negatively impacting the user interface (UI), don't edit or delete the **TalentCategory** enum values (not names) for the following values:
 
 - **Referral**
 - **LinkedIn**
 - **Other**
 
 Instead, you can extend the **TalentSource** enum to add other types of sources.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

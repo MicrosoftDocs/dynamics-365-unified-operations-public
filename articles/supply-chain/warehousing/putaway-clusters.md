@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -300,3 +299,6 @@ Before the items in the cluster can be put away, the cluster must be closed.
 ## Notes and tips
 
 For cases where the cluster ID becomes the parent license plate for a nested pallet, the put position is automatically given when the cluster ID is scanned. No further license plate must be scanned, even if license plate generation is set to manual.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

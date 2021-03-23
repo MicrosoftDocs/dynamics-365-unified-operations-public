@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/06/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -206,3 +205,6 @@ Select **Group operations** \> **Writing-off** after step 4 to create writing-of
 ## Additional resources
 
 - [Working clothes/special rigging accounting (Russia)](rus-working-clothes-instruments-accounting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

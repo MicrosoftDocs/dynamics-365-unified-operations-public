@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -400,3 +399,6 @@ For this scenario, pallet 3 will be accepted.
 1. Select the Menu button (**≡**) at the top of the page, and then, on the menu, select **Cancel** to return to the menu.
 
 You can now close the mobile app.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

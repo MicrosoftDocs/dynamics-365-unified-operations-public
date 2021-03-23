@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -141,3 +140,6 @@ The same build machine used for MSBuild  with the Azure DevOps pipeline can be u
 5. In Azure DevOps pipeline, change the MSBuild version to 15.0 or later.
 
 If the build from Azure DevOps pipeline fails with a NuGet error, the Azure pipeline may not be not using MSBuild version 15.0 for NuGet restore or the extension projects are not upgraded to use the package reference model.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,3 +48,6 @@ Depending on company policies, the items in the return shipment can be sent to q
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

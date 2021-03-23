@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -95,3 +94,6 @@ For more information, see [Sales tax rates based on the Marginal base and Calcul
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

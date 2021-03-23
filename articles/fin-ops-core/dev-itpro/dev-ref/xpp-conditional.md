@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -165,3 +164,6 @@ str level = x <= 1000 ? "A" : (x <= 2000 ? "B" : "C");
 info(level);
 // Output is "B".
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

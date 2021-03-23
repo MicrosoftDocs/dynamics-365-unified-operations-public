@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -144,3 +143,6 @@ You can adjust differences in the counted value and then accept the counted valu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

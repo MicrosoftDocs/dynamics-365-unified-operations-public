@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -119,3 +118,6 @@ For more details about how to set up electronic invoices, you can play the follo
 
 > [!NOTE] 
 > Although these Task guides were created for Danish-specific e-invoice format *OIOUBL*, they are applicable for other supported countries/regions with minor deviations.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

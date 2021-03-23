@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +75,6 @@ You must revalue and adjust bank accounts if there is a difference in the exchan
 
 > [!NOTE]
 > In the general ledger, you can view two separate transactions: one for the accounting currency and one for the reporting currency.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

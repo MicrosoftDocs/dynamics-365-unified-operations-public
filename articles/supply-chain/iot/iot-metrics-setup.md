@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -74,3 +73,6 @@ The chart is shown.
 1. In Supply Chain Management, go to **Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**.
 2. On the **Metric keys** page, select the metric key to delete.
 3. Select **Delete**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

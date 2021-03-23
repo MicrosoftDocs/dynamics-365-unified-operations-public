@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -72,3 +71,6 @@ info("AccountNum: " + custTable.AccountNum);
 ```
 
 For more examples, see [Select statement](xpp-select-statement.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

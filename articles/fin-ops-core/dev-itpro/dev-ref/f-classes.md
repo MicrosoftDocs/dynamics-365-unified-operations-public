@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -290,3 +289,6 @@ System API classes that start with the letter F.
 [FormTreeItem class](system-classes/FormTreeItem-class.md)
 
 [FormWindowControl class](system-classes/FormWindowControl-class.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

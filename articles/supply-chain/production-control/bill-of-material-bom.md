@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -122,3 +121,6 @@ Select the **Vendor** line type if the production process uses a subcontractor, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

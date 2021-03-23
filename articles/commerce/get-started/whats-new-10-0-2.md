@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -59,3 +58,6 @@ For more information, see [Shipping discount overview](../../retail/retail-shipp
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
 [Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

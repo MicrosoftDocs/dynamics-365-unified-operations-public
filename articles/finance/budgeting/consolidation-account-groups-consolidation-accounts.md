@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,3 +57,6 @@ For more information, see [Create consolidation groups and additional consolidat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager:
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -112,3 +111,6 @@ To review the history of manufacturing jobs that have been processed on a scale 
 ### Manufacturing hub to scale unit message processor job
 
 The _Manufacturing hub to scale unit message processor_ job processes data from the hub to the scale unit. This job is automatically started when the manufacturing execution workload is deployed. However, you can run it manually at any time by going to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing hub to scale unit message processor**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

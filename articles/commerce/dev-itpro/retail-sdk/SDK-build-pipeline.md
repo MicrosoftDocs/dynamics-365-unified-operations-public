@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -124,3 +123,6 @@ If the build from Azure DevOps fails with a NuGet error, check for these issues:
 
 - The Azure pipeline isn't using **msbuild**, version 15.0, for NuGet restore.
 - The extension projects haven't been upgraded to use the package reference model.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -115,3 +114,6 @@ Use this procedure to cancel the absorbed costs that are not posted to the ledge
 2.  In the **Month/Year to cancel** field, select the month and year to cancel the absorbed costs for.
 
 3.  Click **OK** to cancel the absorbed costs for the selected month and year.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

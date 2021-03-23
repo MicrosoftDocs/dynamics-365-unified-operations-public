@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -388,3 +387,6 @@ You can find the full sample code in the Retail SDK at Retail SDK\\POS\\Extensio
         return isB2B;
     } } } }
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

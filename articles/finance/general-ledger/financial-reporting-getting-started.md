@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -179,3 +178,6 @@ Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but ar
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
 - [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

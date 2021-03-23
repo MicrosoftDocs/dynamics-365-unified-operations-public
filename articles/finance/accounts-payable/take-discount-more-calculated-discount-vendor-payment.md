@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -55,3 +54,6 @@ April posts the payment journal. The invoice is fully settled by using a payment
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

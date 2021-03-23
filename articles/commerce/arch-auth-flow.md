@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -112,3 +111,6 @@ The following illustration shows third-party application authentication flows in
 [Configure authentication providers](/dev-itpro/configure-authentication-providers.md)
 
 [Point of Sale (POS) device activation](/dev-itpro/retail-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

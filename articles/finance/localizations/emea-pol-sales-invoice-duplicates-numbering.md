@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +45,6 @@ To delete a duplicate invoice, click **Delete**. **Note:** Only the last duplica
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

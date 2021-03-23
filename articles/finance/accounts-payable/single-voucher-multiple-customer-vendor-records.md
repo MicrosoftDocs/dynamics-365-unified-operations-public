@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -238,3 +237,6 @@ To avoid unwanted issues with future settlements for this transaction, instead o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,3 +44,6 @@ The **Status** field helps you tack your progress using the following values:
 - **Approved:** If you want to keep edits or are planning to firm a planned order, change the status to *Approved*. Planned orders with *Approved* status are considered as fixed and expected supply by master planning, so they are not modified or deleted during later master planning runs. To achieve this, the planning logic copies the *Approved* planned orders from the old plan version to the new plan version during master planning. Note that *Approved* planned orders are only considered supply within the specific master plan.
 
 You can manage planned orders from the  **Master planning**  workspace, the  **Planned order**  list, or the  **Planned production orders**,  **Planned purchase orders**, and  **Planned transfer**  lists.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

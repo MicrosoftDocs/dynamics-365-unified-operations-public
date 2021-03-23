@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -495,3 +494,6 @@ The following settings are added:
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds (ms), that the driver will wait for a response from the fiscal registration service.
 - **Show fiscal registration notifications** – If this parameter is turned on, notifications from the fiscal service will be shown as user messages at the POS.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

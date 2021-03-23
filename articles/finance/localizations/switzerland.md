@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,3 +34,6 @@ This topic provides links to documentation resources for Switzerland.
 
 - [ESR customer payments import](emea-che-esr-customer-payments-import.md)
 - [Swiss QR-bills](emea-che-swiss-qr-bills.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

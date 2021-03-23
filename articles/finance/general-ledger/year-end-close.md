@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,3 +91,6 @@ For more information, see [Close the general ledger at period end](close-general
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

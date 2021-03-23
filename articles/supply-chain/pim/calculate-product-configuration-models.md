@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -108,3 +107,6 @@ Calculations aren't included in the validation. You must test the product config
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

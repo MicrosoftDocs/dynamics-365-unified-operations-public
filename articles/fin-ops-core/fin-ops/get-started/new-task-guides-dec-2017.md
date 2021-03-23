@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -375,3 +374,6 @@ When a BPM line is deleted, any task guide that was associated with the BPM line
 **Deleted BPM line**
 
 - Move scheduled kanban jobs
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

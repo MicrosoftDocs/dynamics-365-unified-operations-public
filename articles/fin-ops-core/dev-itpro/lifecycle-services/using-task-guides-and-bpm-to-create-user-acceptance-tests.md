@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
-ms.service:  dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -174,3 +173,6 @@ Functional power users can automate the execution of their test cases using the 
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
 For more information on testing and test management in Azure DevOps, see the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

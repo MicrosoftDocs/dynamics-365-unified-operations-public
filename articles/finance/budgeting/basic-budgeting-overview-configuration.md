@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,3 +91,6 @@ A company that is using Budget planning functionality can create and use *budget
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -156,3 +155,6 @@ The following illustration shows the effects of the LIFO inventory model on this
 - Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
 - Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

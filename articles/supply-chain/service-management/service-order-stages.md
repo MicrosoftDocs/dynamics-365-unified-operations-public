@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +49,6 @@ When you set up a service stage, you can create multiple options, or branches, t
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

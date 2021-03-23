@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -56,3 +55,6 @@ Additionally, you must complete the [ER Create required configurations to import
 | Title                  | File name |
 |------------------------|-----------|
 | ER model configuration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=874111) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

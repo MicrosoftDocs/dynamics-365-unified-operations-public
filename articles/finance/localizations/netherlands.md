@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,3 +36,6 @@ This topic provides links to documentation resources for the Netherlands.
 - [Electronic tax declarations (EVAT)](tasks/nl-00010-electronic-tax-declarations-evat.md)
 - [Semansys XBRL integration](tasks/nl-00003-semansys-xbrl-integration.md)
 - [Audit file (XML Auditfile Financieel, XAF)](emea-nl-audit-file.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -7,7 +7,6 @@ manager: kfend
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -77,3 +76,6 @@ You can review the posted exchange adjustment transactions on the **Bank transac
 
 > [!NOTE]
 > If the **Ledger transaction type** column isn't visible, right-click anywhere in the grid row that shows the column names, select **Add columns**, select **Ledger transaction type** and then select **Insert**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

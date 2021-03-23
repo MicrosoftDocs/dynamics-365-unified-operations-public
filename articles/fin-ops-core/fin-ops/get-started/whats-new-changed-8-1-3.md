@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -95,3 +94,6 @@ To use this feature, the following electronic reporting configurations should be
 - Payment model mapping to destination (RU).version.22.4
 - Bank statement (RU).version.22.6
 - Payment order (RU).version.22.4
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

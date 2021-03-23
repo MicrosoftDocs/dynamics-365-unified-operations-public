@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -84,3 +83,6 @@ To change a user ID, you must rename the key in the database. When you change a 
 For more options to implement B2B users, see [Export B2B users to Azure AD](../implement-b2b.md).
 
 For information about preconfigured system accounts, see [Preconfigured system accounts](../pre-configured-system-accounts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

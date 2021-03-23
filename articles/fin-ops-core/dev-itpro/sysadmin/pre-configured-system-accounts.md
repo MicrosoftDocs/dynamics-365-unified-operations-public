@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -44,3 +43,6 @@ Pre-configured system accounts are included on deployed environments so that Mic
 | `FRServiceUser` | This account is the Financial Reporting service user account, which is used by the Management Reporter application for integrations with Finance and Operations. |
 | `RetailServiceAccount` | This account is used for Retail services to connect to the Finance and Operations environment. |
 | `SysHealthServiceUser` or `Axping` (depending on the deployed product version) | This account is used to monitor the availability and health of the environment and provide alerts when necessary. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

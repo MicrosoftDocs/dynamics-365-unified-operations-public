@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -141,3 +140,6 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 ## Generate invoices
 
 After you've completed all the previous procedures in this topic, you can print invoices that are based on sales orders and free text invoices, in accordance with Bahraini legal requirements.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

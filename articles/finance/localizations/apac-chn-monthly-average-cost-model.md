@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -72,3 +71,6 @@ Many Chinese manufacturing and trading companies use a monthly average cost mode
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ After recurring invoices are posted, you can print the invoices from the free te
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

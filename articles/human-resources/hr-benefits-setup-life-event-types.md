@@ -4,11 +4,10 @@
 title: Configure life event types
 description: Microsoft Dynamics 365 Human Resources uses life event types to define events where it is valid to update employee benefits enrollment.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,6 +17,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,7 +31,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure life event types
 
-icrosoft Dynamics 365 Human Resources uses life event types to define events where it is valid to update employee benefits enrollment. For example, getting married or having a child. Each life event type ID may only be associated with one life event type. For example, if you create a life event ID called Address change that is associated with the life event type Employee address change, you can’t create another ID labeled Employee address change and associate it with the life event type Employee address change. 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dynamics 365 Human Resources uses life event types to define events where it is valid to update employee benefits enrollment. For example, getting married or having a child. Each life event type ID may only be associated with one life event type. For example, if you create a life event ID called Address change that is associated with the life event type Employee address change, you can’t create another ID labeled Employee address change and associate it with the life event type Employee address change. 
 
 After you create life event types, you need to associate them with plan types. For more information, see [Create plan types](hr-benefits-setup-plan-types.md).
 
@@ -92,3 +94,6 @@ You can choose from the following life events when you create a life event type:
 | **Eligibility rule override expiration (not US-specific)** | Human resources advanced > Benefits > Plans > Benefits > Eligibility rule override | Using Life event change processing. For example, if you edit a plan’s eligibility rule override expiration date to be today at 5:00 pm, anytime after 5:00 pm or the following days, and then run Life event change processing, a message appears saying that the eligibility rule override has expired. |
 | **New benefit plan (not US-specific)** | Human resources advanced > Benefits > Plans > New | <ul><li>Eligibility options are added to a current plan</li><li>A new plan with eligibility options attached is added</li></ul></br></br>HR personnel should run Life event eligibility processing in this instance. |
 | **Eligibility rule change (not US-specific)** | Human resources advanced > Benefits > Rules/options > Eligibility rules | Using Life event eligibility processing. Logged when **EhrBenefitEligibilityRule** records have the following values changed: **UseEmplCategory**, **UseEmplStatus**, or **UseEmplType**. Only updates life event transactions that already exist for a changed rule or eligibility criteria. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

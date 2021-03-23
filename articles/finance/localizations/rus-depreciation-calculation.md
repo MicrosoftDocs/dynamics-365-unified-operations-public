@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -105,3 +104,6 @@ Use the **Depreciation bonus** page to calculate the depreciation bonus for fixe
 
 - [Set up depreciation (Russia)](rus-depreciation-setup.md)
 - [Depreciation methods (Russia)](rus-depreciation-methods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

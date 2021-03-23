@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -39,3 +38,6 @@ This procedure shows how to add an image to a product The demo data company used
 5. Click New.
     * Click Browse. Find the image that you want to use, select it, and then close the dialog box.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

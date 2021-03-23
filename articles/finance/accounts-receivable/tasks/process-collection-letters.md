@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -91,3 +90,6 @@ To ignore payments and credit memos when calculating the collection letter code,
 
 1. Go to **Navigation pane > Modules > Credit and collections > Setup > Accounts receivable parameters** and click the **Collections** tab. 
 2. Change the value of **Ignore payments and credit memos when calculating the collection letter code** to **Yes**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

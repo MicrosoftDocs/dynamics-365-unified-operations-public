@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -113,3 +112,6 @@ Alternatively, an organization can set the **Allow payment override** option to 
 ## Additional resources
 
 [Payment methods in call centers](work-with-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

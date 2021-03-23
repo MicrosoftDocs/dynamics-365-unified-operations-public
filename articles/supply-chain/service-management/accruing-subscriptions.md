@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -155,3 +154,6 @@ You can control the number of ledger transactions that are created when you post
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

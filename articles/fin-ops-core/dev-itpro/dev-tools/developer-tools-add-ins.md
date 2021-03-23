@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -45,3 +44,6 @@ To make it easier to create your own add-ins, you can select the **Dynamics Deve
 For more information on add-ins, see:
 - [Visual Studio add-ins that support form patterns](../user-interface/form-pattern-add-ins.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

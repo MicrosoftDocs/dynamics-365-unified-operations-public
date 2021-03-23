@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -95,3 +94,6 @@ The following reports provide reference information about the objects:
 - [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services (SSRS) reports that are available](SSRS-report.md)
 - [Workflow types report](../../fin-ops/organization-administration/workflow-types-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

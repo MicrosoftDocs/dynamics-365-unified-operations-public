@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -44,3 +43,6 @@ The following options, which can be found on the **Commerce** tab of released pr
 > These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.
 
 [![Prevent discounts field](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

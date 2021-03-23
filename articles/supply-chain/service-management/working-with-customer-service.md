@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +52,6 @@ The topics in this section provide an overview of the Customer service business 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

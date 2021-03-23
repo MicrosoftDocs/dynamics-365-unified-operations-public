@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/08/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +45,6 @@ Use the **Separate divisions** page to create a company division. If your compan
 5.  In the **Vendor account** field, select the vendor account number that is associated with the division.
 
 6.  Select the **Independent** check box to indicate that the selected division can report the tax declarations independently of the head office.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,12 @@
 # required metadata
 
 title: Analytical Workspaces (using Power BI Embedded)
-description: Dynamics Finance and Operations apps now deliver rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
+description: This topic describes how you can use Power BI to deliver rich, interactive reports seamlessly integrated into application workspaces.
 author: TJVass
 manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -62,3 +61,6 @@ The [How to edit an embedded report in an analytical workspace](https://youtu.be
 
 ## What's next?
 Going forward, new cloud deployments will come bundled with the Power BI Embedded service. Additional documentation describing the Developer ALM process will be made available to help partners and ISVs create new solutions that take advantage of the Power BI Embedded service integration options that are available.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

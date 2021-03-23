@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,3 +78,6 @@ The established guidelines and ALM for entity development in Finance and Operati
 ### Managing a Finance and Operation instance in a Dataverse environment for virtual entities
 
 One Finance and Operations instance must be linked to a Dataverse environment for virtual entities. The connection setup information that is required is captured in a virtual entity data source for Finance and Operations. This data source is included in the MicrosoftOperationsERPCatalog solution.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

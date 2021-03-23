@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/30/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -116,3 +115,6 @@ However, if the invoice expenses are included in the order line that corresponds
 18. Click **Balance** to open the **FA balances** page. The details are displayed in the **Leaving (sale)** and **Gain/Loss** fields.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

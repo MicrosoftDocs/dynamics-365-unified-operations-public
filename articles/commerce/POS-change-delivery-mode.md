@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 03/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -51,3 +50,6 @@ After you select the new mode of delivery, the transaction page is displayed. To
 [Create call center orders](tasks/create-call-center-orders.md)
 
 [Customize transactional emails by mode of delivery](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

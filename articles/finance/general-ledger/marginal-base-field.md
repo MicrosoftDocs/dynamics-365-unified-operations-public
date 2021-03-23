@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -226,3 +225,6 @@ For more information, see [Whole amount and Interval calculation options for sal
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

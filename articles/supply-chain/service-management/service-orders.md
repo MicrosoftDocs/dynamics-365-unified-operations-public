@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,3 +91,6 @@ During the second half of the year, your customer decides that the service visit
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

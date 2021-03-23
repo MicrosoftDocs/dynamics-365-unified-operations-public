@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -812,3 +811,6 @@ For information about reconciliation reports for Belgium, see [Reconciliation re
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

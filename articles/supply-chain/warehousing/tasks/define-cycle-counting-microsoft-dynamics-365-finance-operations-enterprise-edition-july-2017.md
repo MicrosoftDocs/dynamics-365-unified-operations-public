@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -97,3 +96,6 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 21. Click **OK**.
 22. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

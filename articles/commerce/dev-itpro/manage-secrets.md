@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -133,3 +132,6 @@ When this approach is used for credential management, credential rotation is mor
 ## Offline support
 
 Offline support for credentials requires that the extension code handle failover to offline when Key Vault credentials aren't available or accessible.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

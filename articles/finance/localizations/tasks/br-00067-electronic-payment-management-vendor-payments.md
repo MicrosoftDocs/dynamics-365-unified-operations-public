@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -43,3 +42,6 @@ You can make electronic payments by transferring files between a legal entity an
 9. Click OK.
 10. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

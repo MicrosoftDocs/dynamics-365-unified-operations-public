@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/16/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -73,3 +72,6 @@ This procedure shows how to set up data for automatic freight reconciliation. Th
 11. In the Underpayment reason code field, enter or select a value.
 12. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

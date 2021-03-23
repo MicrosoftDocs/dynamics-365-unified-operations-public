@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -66,3 +65,6 @@ You can designate the deferred VAT posting on ledger accounts.
 
 - **Deferred VAT payable** - Select the deferred VAT account or tax debit account for the selected ledger posting group.
 - **Deferred VAT receivable** - Select the deferred VAT account or tax credit account for the selected ledger posting group.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

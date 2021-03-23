@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/31/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -48,3 +47,6 @@ This topic explains how to create a method of payment for customer payments. Thi
 15. Use the **Payment attributes** tab to define which payment attributes you want to use for this method of payment.
 16. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/17/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -52,3 +51,6 @@ This is the fifth procedure, out of five, that illustrates the vendor payment pr
     3.    In the **File name** field, type a value. For this example, because of the EUR payment, the generated file will be SEPA compliant. ISO20022 credit transfer as well as other vendor payment formats can also be used for generating payments in other currencies.
     4.    In the **Bank account** field, enter or select a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

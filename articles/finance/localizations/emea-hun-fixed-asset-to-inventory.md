@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +45,6 @@ To transfer a fixed asset to inventory, follow these steps.
 7.  Validate that the fixed asset and inventory transactions were created correctly.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -181,3 +180,6 @@ The following procedure shows how to allocate header-level charges to a line. Be
         > When you work with the **Choose lines to exclude from allocation** grid, be sure to leave the grid open until you select **Allocate**. If you close the grid before you select **Allocate**, your settings in the grid will be lost. Therefore, charges will be allocated based on the criteria that you previously defined.
 
 1. Select **Allocate** to apply your settings and close the dialog box.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

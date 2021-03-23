@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -395,3 +394,6 @@ You post the settlement of foreign currency purchase transactions to generate fo
 4. Select **Post**. The exchange rate difference transaction is generated. Ledger accounts for the foreign currency exchange difference are taken from the **Realized gain** and **Realized loss** accounts that are specified in the setup of foreign currency parameters.
 5. You can review the transactions that are generated. On the **Bank groups** page, select **Transactions**.
 6. You can also post an unsettlement of transactions. On **Bank groups** page, select **Functions \> Closed transitions editing**, mark transactions, and then select **Reverse**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

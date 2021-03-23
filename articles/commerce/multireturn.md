@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/27/2020
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -58,3 +57,6 @@ When the orders are selected, a list of all the returnable products across all t
 
 If the order is fully returned, the amount of taxes returned to the customer will be equal to the amount of tax originally charged.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

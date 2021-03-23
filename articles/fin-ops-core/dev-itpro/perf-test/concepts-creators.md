@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -77,3 +76,6 @@ item = new AtlCreatorProductsReleasedVariant()
 ## When should creators be used instead of entities?
 
 For information that will help you choose between entities and creators, see [Should I implement an entity or a creator class](atl-faq.md#should-i-implement-an-entity-or-a-creator-class).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

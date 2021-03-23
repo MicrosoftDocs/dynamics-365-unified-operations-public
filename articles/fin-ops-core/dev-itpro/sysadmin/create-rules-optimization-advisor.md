@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -259,3 +258,6 @@ public final class SkeletonSelfHealingRule extends SelfHealingRule implements ID
 ```
 
 For more information, watch the short YouTube video: [Optimization advisor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

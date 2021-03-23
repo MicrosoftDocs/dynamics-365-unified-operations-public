@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -87,3 +86,6 @@ Bar codes masks must be assigned to bar codes before they can be used. Continuin
 5. Click **Save**.
 
 The bar code mask can now be used to create bar codes for products. The above steps are examples of how to create bar code masks for products, but they also illustrate how to create bar code masks for any of the other supported bar code types. Bar code masks, types, and lengths should be adjusted for use in your specific environment.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

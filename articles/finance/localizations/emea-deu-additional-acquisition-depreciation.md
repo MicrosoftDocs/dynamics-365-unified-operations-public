@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +49,6 @@ In 2015, your organization acquired a fixed asset for 60,000. Your organization 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

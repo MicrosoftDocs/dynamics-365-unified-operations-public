@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -104,3 +103,6 @@ You can also activate a workflow by using the workflow configuration ID or the w
 [Workflow::activateFromWorkflowSequenceNumber method](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812415(v=ax.60))
 
 [Workflow::activateFromWorkflowConfigurationId method](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812414(v=ax.60))
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

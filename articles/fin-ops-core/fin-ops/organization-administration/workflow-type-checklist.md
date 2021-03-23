@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +61,6 @@ After you create a workflow type, you can add tasks, automated tasks, and approv
 [Configure automated tasks in a workflow](configure-automated-task-workflow.md)
 
 [Configure approval processes in a workflow](configure-approval-process-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

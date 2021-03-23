@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -131,3 +130,6 @@ After the deployment is completed, you should see your changes in the authoring 
 [SDK and core library updates](sdk-updates.md)
 
 [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

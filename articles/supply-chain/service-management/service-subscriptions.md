@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,3 +41,6 @@ A period code indicates the extent of the subscription fee period, or the interv
 The period code is defined in the service subscription group. It is defined for the subscriptions through the service subscription group. Any new subscription fee that you create has a suggested start date. This is the start date of the period, if it is the first period that is created, or the end of the previous period, if it is the second or later period.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

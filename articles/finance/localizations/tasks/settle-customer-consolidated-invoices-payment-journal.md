@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -63,3 +62,6 @@ This procedure was created using the demo data company JPMF.
 14. Go to Accounts receivable > Periodic tasks > Consolidated invoice.
     * Confirm that the status of the consolidated invoice has been updated to be Settled.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

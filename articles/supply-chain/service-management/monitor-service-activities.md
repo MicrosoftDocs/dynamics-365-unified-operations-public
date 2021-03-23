@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/04/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -64,3 +63,6 @@ Click **Service management** \> **Periodic** \> **Dispatch board**.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

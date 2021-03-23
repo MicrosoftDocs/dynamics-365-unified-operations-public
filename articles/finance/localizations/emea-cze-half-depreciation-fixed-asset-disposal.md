@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +60,6 @@ After you set up the depreciation methods, you can apply half the yearly depreci
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

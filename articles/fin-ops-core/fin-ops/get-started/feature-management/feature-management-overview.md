@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -205,3 +204,6 @@ Features can be:
 - `PublicPreview` - Shown by default but with a warning that the feature is in preview.
 - `Released` - Fully released.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

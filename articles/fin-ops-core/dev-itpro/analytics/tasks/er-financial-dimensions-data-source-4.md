@@ -2,13 +2,12 @@
 # required metadata 
  
 title: ER Use financial dimensions as a data source (Part 4 - Run the report)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
+description: This topic describes how to configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. (Part 4)
 author: NickSelin
 manager: AnnBe 
 ms.date: 05/27/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -52,3 +51,6 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 ![ER configurations page](../media/er-financial-dimensions-guides-run3.png)
     * Review the generated output. For each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this instance.  
 ![ER configurations page](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

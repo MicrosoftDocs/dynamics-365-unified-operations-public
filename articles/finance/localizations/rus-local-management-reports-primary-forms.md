@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/05/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -220,5 +219,8 @@ In the **Details and sorting parameters** section, select the available fields t
 
 ## Additional resources
 
-[SQL Server Reporting Services Reports report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)
+[SQL Server Reporting Services Reports report](https://docs.microsoft.com/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

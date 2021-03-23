@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 
@@ -98,3 +97,6 @@ Use the steps in this topic to configure SQL Server Reporting Services (SSRS) fo
 13. Click **Exit** to close the **Reporting Services Configuration Manager**.
 
     [![close reporting services configuration manager](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -175,3 +174,6 @@ When the **Create customer order in async mode** option is set to **Yes**, custo
 ## Additional resources
 
 [Hybrid customer orders](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

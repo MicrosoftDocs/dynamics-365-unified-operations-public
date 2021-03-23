@@ -8,7 +8,6 @@ manager: PJacobse
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -937,3 +936,6 @@ You can view and reprint wave labels from the following pages:
 - Wave label history
 
 For most of these pages, you can find the relevant function by selecting **Wave labels** in the **Related information** group on the **Shipments** tab of the Action Pane.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

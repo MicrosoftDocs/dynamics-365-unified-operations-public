@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -139,3 +138,6 @@ After a hotfix has been installed on a development VM as described in this artic
 ## Deploy
 After you’ve applied a metadata hotfix to your development environment, resolved conflicts, and validated your changes, you must create a deployable package and apply your changes to your test or sandbox environment. If you use a build instance for build and test automation, the build process will automatically create the deployable package for you. For more information, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

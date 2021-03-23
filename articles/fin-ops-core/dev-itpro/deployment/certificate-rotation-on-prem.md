@@ -5,10 +5,9 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 01/07/2021
+ms.date: 03/11/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: perahlff
+ms.author: peterfriis
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Platform update 25 
 
@@ -51,15 +50,26 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 3. Copy **ConfigTemplate.xml** and **ClusterConfig.json** from **InfrastructureOld** to **Infrastructure**.
 
-4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically these steps:
+4. Configure certificates as needed in **ConfigTemplate.xml**. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu12.md#configurecert), specifically these steps.
 
     ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-    > [!IMPORTANT]
-    > Self-signed certificates should never be used in production environments. If you're using trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
+    Alternatively, if you have or would like to switch to Active Directory Certificate Services (AD CS) certificates, use this information.
+
+    ```powershell
+    # Only run the first command if you have not generated the templates yet.
+    .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -CreateTemplates
+    .\New-ADCSCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+
+    > [!NOTE]
+    > The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.
+    > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
+
+    > Self-signed certificates should never be used in production environments. If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
 
     ```powershell
     # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder
@@ -249,9 +259,12 @@ You must reinstall the LocalAgent if:
 	- Server certificate thumbprint
 	- Tenant service principle certificate thumbprint
 
+    > [!IMPORTANT]
+    > Do **not** create a new connector in LCS. Update the configuration of your existing connector and download the settings again.
+
 ## Update your current deployment configuration
 
-Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the cleanup job will probably fail. (This manual update must be done just this one time.)
+Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the clean-up job will probably fail. (This manual update must be done just this one time.)
 
 1. Open your configuration file. You can find the location of this file by running the following command.
 
@@ -392,3 +405,6 @@ After the above commands have been executed, restart your AOS nodes from Service
 
 > [!WARNING]
 > Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +60,6 @@ If the **Date treatment on bill of exchange journal** parameter is set to **Yes*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

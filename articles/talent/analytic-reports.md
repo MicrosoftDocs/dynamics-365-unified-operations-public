@@ -4,11 +4,10 @@
 title: Use analytic reports in Attract
 description: This topic describes the analytic reports for hiring process insights in Microsoft Dynamics 365 Talent - Attract
 author: fewatson
-manager: AnnBe
+manager: tfehr
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -91,3 +90,6 @@ One of the great features of Power BI is the way all visuals on a report page ar
 ## Export to Excel
 
 To view report data in Excel, you can click the options menu (three dots) on a visual and select **Export underlying data**. Exported data will export as filtered, respecting user permissions in Attract. For more information, see [Export data from visualizations](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

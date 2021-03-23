@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -67,3 +66,6 @@ The cloud architecture consists of these conceptual areas:
 
 > [!NOTE]
 > Although many features of the Azure platform are used, you don't have to have an Azure subscription to deploy Finance and Operations apps in the Microsoft-managed cloud. You must have an Azure subscription only if you want to deploy Finance and Operations apps cloud-hosted environments in your own Azure subscription.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

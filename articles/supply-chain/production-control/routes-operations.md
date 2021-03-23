@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -263,3 +262,6 @@ Therefore, when Activation is selected for Overlap, the rest of the settings (Jo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

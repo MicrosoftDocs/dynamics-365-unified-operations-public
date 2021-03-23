@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -105,3 +104,6 @@ You can view a report of your estimated weekly peak load and the operating sites
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

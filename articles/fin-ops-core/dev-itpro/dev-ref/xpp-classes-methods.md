@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -583,3 +582,6 @@ The **this** reference can't be used in the following ways:
 
 The depth of the call stack is limited to 100.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -118,3 +117,6 @@ For more information, see the following topics:
 [Import and create multiple one-time vendors and invoices](tasks/import-multiple-one-time-vendors.md)
 
 [Set up purchase agreement classifications](tasks/set-up-purchase-agreement-classifications-public-sector.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

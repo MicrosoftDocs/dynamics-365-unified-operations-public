@@ -8,7 +8,6 @@ manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -101,3 +100,6 @@ Each field has a different effect on the transaction when you edit it:
 - **Edit the cash discount terms** - The cash discounts are changed, based on the base date and the cash discount terms.
 
 When you've finished editing the payment settings, select **Close** to save your changes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

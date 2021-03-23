@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -39,3 +38,6 @@ You can view credit and debit amounts for ledger accounts in two separate column
 1.  Click **General ledger** &gt; **Ledger Setup** &gt; **General ledger parameters**.
 2.  Set the **Show amount in debit/credit columns** slider to **Yes**.
 3.  Open **General ledger** &gt; **Inquiries and reports** &gt; **Voucher transactions** to confirm.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

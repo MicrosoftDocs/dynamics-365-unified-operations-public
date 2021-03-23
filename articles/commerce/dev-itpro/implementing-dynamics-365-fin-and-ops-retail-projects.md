@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 # optional metadata
 
@@ -43,3 +42,6 @@ The information focuses on implementations of Finance and Operations apps that i
 [Update code and environments for Commerce projects](./updating-environments.md)
 
 [Testing and performance issues](./retail-implementation-testing-performance.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

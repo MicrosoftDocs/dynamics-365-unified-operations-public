@@ -2,13 +2,12 @@
 # required metadata
 
 title: Dual-write setup from Lifecycle Services
-description: This topic explains how to set up a dual-write connection between a new Finance and Operations environment and a new Dataverse environment from Microsoft Dynamics Lifecycle Services (LCS).
+description: This topic explains how to set up a dual-write connection from Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,8 +31,6 @@ ms.search.validFrom: 2020-01-06
 # Dual-write setup from Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [preview-banner](../../includes/preview-banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -80,9 +77,9 @@ Follow these steps to set up the dual-write connection.
         ![Dataverse tab when your tenant doesn't already have a Dataverse environment](../dual-write/media/lcs_setup_2.png)
 
 7. Complete the remaining steps in the **Deployment settings** wizard.
-8. After the environment has a status of **Deployed**, open the environment details page. The **Dataverse environment information** section shows the names of the Finance and Operations environment and the Dataverse environment that are linked.
+8. After the environment has a status of **Deployed**, open the environment details page. The **Power Platform Integration** section shows the names of the Finance and Operations environment and the Dataverse environment that are linked.
 
-    ![Dataverse environment information section](../dual-write/media/lcs_setup_3.png)
+    ![Power Platform Integration section](../dual-write/media/lcs_setup_3.png)
 
 9. An admin of the Finance and Operations environment must sign in to LCS and select **Link to CDS for Apps** to complete the link. The environment details page shows the admin's contact information.
 
@@ -90,7 +87,11 @@ Follow these steps to set up the dual-write connection.
 
 10. To open the **Data integration** workspace in the Finance and Operations environment and control the templates that are available, select **Link to CDS for Apps**.
 
-    ![Link to CDS for Apps button in the Dataverse environment information section](../dual-write/media/lcs_setup_4.png)
+    ![Link to CDS for Apps button in the Power Platform Integration section](../dual-write/media/lcs_setup_4.png)
 
 > [!NOTE]
 > You can't unlink environments by using LCS. To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.
+
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

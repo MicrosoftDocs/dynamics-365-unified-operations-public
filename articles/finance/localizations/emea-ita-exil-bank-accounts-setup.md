@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -80,3 +79,6 @@ When the Bank account setup enhancement feature is turned on, two additional des
 During the setup of a bank account, the additional descriptive fields for bank groups are available and allow for more precise selection of a bank.
 
 ![Additional descriptive fields in a bank account setup](media/emea-ita-exil-bank-pic2.jpg)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

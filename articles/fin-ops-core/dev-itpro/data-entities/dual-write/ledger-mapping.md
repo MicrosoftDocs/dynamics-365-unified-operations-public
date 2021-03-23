@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,3 +91,6 @@ LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

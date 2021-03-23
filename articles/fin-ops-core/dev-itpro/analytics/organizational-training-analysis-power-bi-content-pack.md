@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -63,3 +62,6 @@ Application data is used to populate the reports in the Organizational training 
 | Training\_Position        | Position, title, and full-time equivalent (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | First name, last name, and full name                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Title and seniority date                                         | Training\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

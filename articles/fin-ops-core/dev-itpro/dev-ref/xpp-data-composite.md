@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -316,7 +315,7 @@ public class Singleton
 
 ### Class elements in Application Explorer
 
-Under most class nodes in Application Explorer, there are two special nodes: a **classDeclaration** node and a **new** node. A **classDeclaration** always contains the X++ **class** keyword. Additional keywords, such as **extends**, can be included to modify the class. This node can also contain declarations of member variables. The member variables can't be initialized to a value in **classDeclaration**, and they can't be static. 
+Under most class nodes in Application Explorer, there are two special nodes: a **classDeclaration** node and a **new** node. A **classDeclaration** always contains the X++ **class** keyword. Additional keywords, such as **extends**, can be included to modify the class. This node can also contain declarations of member variables.  
 
 In the following example, the variables **m\_priority** and **m\_rectangle** are members of the class.
 
@@ -469,3 +468,6 @@ public void printCust()
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

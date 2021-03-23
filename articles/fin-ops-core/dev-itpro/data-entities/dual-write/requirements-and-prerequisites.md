@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -224,3 +223,6 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 ## Next steps
 
 [Use the dual-write wizard to link your environments](link-your-environment.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

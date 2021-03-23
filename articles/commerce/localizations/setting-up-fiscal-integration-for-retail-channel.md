@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -228,3 +227,6 @@ To enable manual execution of a postponed fiscal registration, you should add a 
     1. Select the layout to update.
     2. Add a new button, and set the **Complete fiscal registration process** button property.
     3. On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

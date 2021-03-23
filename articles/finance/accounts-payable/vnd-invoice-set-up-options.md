@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -67,3 +66,6 @@ The following parameters are available:
 
 - **Number of times to attempt automatic matching** – Select the number of times that the system should try to match product receipts to an invoice line before it concludes that the process failed. When the specified number of attempts is reached, the invoice is removed from automation processing.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

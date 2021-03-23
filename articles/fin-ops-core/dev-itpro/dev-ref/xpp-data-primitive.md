@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -501,3 +500,6 @@ public void UtcdatetimeMethod()
     utcdatetime myUtc4 = DateTimeUtil::parse("1988-07-20T13:34:45");
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -39,3 +38,6 @@ This procedure walks through how to release a product or product master into one
 6. Click Next.
 7. Click Finish.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

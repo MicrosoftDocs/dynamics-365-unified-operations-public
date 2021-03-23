@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -60,3 +59,6 @@ The following illustration shows the file structure for a connector that is name
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

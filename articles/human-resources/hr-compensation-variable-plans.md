@@ -4,11 +4,10 @@
 title: Create variable compensation plans
 description: Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This article describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,6 +17,7 @@ ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan, 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 16011
 ms.assetid: fc3a394e-9ac6-4f8c-9162-dc16ec22720f
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Create variable compensation plans
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This article describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
 
@@ -103,3 +105,6 @@ You can use the **Overrides** tab to override specific values for the employee. 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

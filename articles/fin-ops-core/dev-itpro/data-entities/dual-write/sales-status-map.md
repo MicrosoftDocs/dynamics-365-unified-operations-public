@@ -8,7 +8,6 @@ manager: tonyafehr
 ms.date: 06/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -153,3 +152,6 @@ To enable the **isIntegrationUser** attribute, follow these steps.
     ![Changing the value of the Integration user mode column](media/sales-map-user-mode-yes.png)
 
 Your sales orders are now mapped.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

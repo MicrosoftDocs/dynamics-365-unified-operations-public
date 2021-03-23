@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -62,3 +61,6 @@ Follow these steps to set up alerts for batch legacy forms.
 
 > [!NOTE] 
 > To receive email notifications, in the **Batch job alerts** dialog box, set the **Email** option to **Yes**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

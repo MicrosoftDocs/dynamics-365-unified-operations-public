@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -93,3 +92,6 @@ No, but there’s a way to get the results you need anyway. Let’s say that you
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

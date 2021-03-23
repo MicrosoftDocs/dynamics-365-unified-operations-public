@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -67,3 +66,6 @@ This procedure focuses on creating a formula that includes the same ingredients 
 5. Click Select.
 6. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

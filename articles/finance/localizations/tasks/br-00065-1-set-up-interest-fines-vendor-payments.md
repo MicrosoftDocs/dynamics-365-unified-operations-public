@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -82,3 +81,6 @@ You must set up accounts for financial interest and fines, default codes for int
 49. Close the page.
 50. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

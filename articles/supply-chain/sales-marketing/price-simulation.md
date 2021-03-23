@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -150,3 +149,6 @@ The price simulation affects only the line that it's applied to and reduces the 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

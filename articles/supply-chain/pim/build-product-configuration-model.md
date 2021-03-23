@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -166,3 +165,6 @@ If configuration will be done at a site, or even a company, that differs from th
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

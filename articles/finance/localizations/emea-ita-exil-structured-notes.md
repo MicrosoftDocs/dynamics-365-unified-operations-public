@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -119,3 +118,6 @@ In Accounts payable, notes are automatically generated as attachments to new pur
 Advanced notes which are defined as **External** are printed in the related business documents depending on the settings on the **Form setup**
 
 ![Setup for printing advanced notes](media/emea-ita-exil-notes-printing.jpg)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

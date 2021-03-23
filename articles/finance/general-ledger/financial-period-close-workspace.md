@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -112,3 +111,6 @@ After a closing schedule is completed, select the **Closed** option for it. The 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

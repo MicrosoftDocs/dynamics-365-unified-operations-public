@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 08/14/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -87,3 +86,6 @@ The following illustration shows the fixed asset balance.
 The following illustration shows the voucher that is posted.
 
 [![Net book value](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -73,3 +72,6 @@ The next step is to set up earning codes and earning code groups. For more infor
 ## Additional resources
 
 [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

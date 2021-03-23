@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -60,3 +59,6 @@ This topic explains how to set up a product number nomenclature for predefined p
 5. In the **Product variant number nomenclature** field, enter or select a value.
 6. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

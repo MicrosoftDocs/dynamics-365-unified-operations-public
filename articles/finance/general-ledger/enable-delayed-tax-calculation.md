@@ -9,7 +9,6 @@ manager: Ann Beebe
 ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ The system gives priority to the setting for the journal header. By default, thi
 4. On the **Setup** tab, set the **Delayed tax calculation** option to **Yes**.
 
 ![General journal page image](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

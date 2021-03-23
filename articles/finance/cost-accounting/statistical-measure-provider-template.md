@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -349,3 +348,6 @@ If the Electricity predefined dimension member allocation basis is assigned as a
 ## Additional resources
 
 [Allocation bases](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

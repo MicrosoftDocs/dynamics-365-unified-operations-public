@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -45,3 +44,6 @@ This procedure shows how to modify the forecast for an item. The demo data compa
 1. Click **Open** in Microsoft Office.
 2. Click **Edit Demand forecast** in Excel. In Excel, you can add, delete and edit demand forecast lines. If you are not able to see the data in Excel, you need to sign in with the "Keep me signed in" option enabled and you need to trust the data connection app.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

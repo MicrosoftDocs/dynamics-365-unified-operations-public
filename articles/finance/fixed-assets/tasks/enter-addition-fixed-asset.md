@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -48,3 +47,6 @@ The procedure uses the Accountant role and demo data for the USMF legal entity.
     * Set **Increases service life** to **Yes** if the addition increases the service life of the asset.  
     * This field is informational only. To increase the service life, modify the Service life on the Value models and/or Depreciation books for the asset.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

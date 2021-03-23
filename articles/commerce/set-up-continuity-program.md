@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -54,3 +53,6 @@ After you've set up a continuity program as described above, you can create a co
 - **Extend continuity lines** (if required) – Extend the number of times that a continuity event can be repeated. The repetition of shipments can then extend beyond the limit that was set in the **Continuity repeat threshold** field in the call center parameters.
 - **Perform a continuity update** (if required) – Synchronize changes between the continuity program and the continuity parent sales orders.
 - **Close continuity parent lines and orders** – Close continuity orders.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

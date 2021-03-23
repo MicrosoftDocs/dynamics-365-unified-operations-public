@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/11/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -374,5 +373,8 @@ The India GST release takes advantage of Microsoft Dynamics 365 for Operations (
 
 For detailed information that includes documentation and downloads for release packages, see the following pages:
 
-- [CustomerSource page for the India GST release](https://mbs.microsoft.com/customersource/global/AX/downloads/tax-regulatory-updates/GST-India)
+- [CustomerSource page for the India GST release](https://docs.microsoft.com/dynamics/s-e/)
 - [PartnerSource page for the India GST release](https://mbs.microsoft.com/partnersource/northamerica/deployment/downloads/tax-regulatory-updates/GST-India) (Sign-in is required.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

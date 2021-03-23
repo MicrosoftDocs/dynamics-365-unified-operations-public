@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 01/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -49,7 +48,13 @@ Dual-write has these limitations:
 + Dual-write requires that the Finance and Operations app and the customer engagement app must be in the same Microsoft Azure Active Directory (Azure AD) tenant.
 + Dual-write requires that the Finance and Operations app and the customer engagement app must be deployed in the same Microsoft Azure datacenter.
 + Dual-write is not triggered by the **doInsert**, **doUpdate**, and **doDelete** events of Finance and Operations apps. Use the **Insert**, **Update**, and **Delete** events in Finance and Operations apps when you want to trigger dual-write. 
++ Dual-write doesn't support distributed transactions. For example, if the [product receipt posting process is cancelled](scm-field-service-procurement.md#cancelling-the-posting-process), dual-write might create the product receipt in Dataverse but not create it in Supply Chain Management. 
+
+
 
 ## One Version
 
 Future updates of the dual-write solution will be available through One Version.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

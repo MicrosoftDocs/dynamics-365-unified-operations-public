@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -100,3 +99,6 @@ Use this procedure to set up a dimension set for dimension control for settlemen
 
 1. Select **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimension sets**.
 2. Press Ctrl+N to create a dimension set, and enter the required details.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

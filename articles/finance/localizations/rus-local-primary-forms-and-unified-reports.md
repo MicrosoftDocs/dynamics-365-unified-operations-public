@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 11/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -138,3 +137,6 @@ If the cash account allows for accounting in different currencies, the **More cu
 4. Select **OK** to generate the cash counting act.
 
     ![Cash counting act report](media/cash-primary-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

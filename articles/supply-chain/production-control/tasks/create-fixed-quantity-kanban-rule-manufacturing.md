@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -75,3 +74,6 @@ This procedure focuses on the setup needed to create a fixed manufacturing kanba
     * This will create 5 kanbans.  
     * Note that 5 kanbans, for 10 each, was created for this manufacturing kanban rule. This is the last step in this procedure.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

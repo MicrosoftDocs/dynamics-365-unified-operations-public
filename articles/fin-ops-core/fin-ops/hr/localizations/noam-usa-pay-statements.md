@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -167,3 +166,6 @@ Benefit accrual lines are created when you submit a pay statement for payment. Y
 ## Reverse a pay statement
 
 To reverse a pay statement that has been posted or submitted for payment, see [Process existing payroll payments](noam-usa-existing-payroll-payments.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

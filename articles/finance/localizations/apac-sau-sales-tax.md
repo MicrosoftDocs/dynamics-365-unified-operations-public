@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -121,3 +120,6 @@ The following illustration shows an example of the **Sales tax payment by code**
 
 - [Create a sales tax payment](../general-ledger/tasks/create-sales-tax-payment.md)
 - [FAQ: VAT returns (Government website)](https://www.vat.gov.sa/en/e-services/vat-returns)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

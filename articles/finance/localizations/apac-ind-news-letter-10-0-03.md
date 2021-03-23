@@ -8,7 +8,6 @@ manager: Annbe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -77,3 +76,6 @@ With the release of 10.0.04, use the Tax transaction inquiry functionality for T
 - GSTR-2 mismatch in figures when the invoice journal is posted with a multi-line transaction.
 -	Standard sales tax doesn't get calculated in Accounts payable.
 -	Proforma invoices consume a number from the invoice number sequence. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

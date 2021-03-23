@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -87,3 +86,6 @@ If there is no user-defined settlement priority, transactions are automatically 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

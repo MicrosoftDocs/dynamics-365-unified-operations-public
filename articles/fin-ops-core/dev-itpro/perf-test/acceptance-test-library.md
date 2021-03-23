@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -91,3 +90,6 @@ Queries and specifications help simplify the process of creating entities. For m
 ## Further reading
 
 Microsoft has used ATL internally for several years, as the foundation for thousands of tests. For more information see, [Best practices for the Acceptance test library](atl-best-practices.md) and [Acceptance test library FAQ](atl-faq.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

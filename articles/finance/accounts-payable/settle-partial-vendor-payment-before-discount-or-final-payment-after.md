@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -126,3 +125,6 @@ April then posts the payment. When she opens the **Vendor transactions** page, s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

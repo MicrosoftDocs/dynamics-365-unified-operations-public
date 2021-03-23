@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -231,3 +230,6 @@ You must create an earning code to calculate and pay the premium amounts for eac
 ## Additional resources
 
 [Set up earning codes and earning code groups](noam-usa-earning-code-group-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

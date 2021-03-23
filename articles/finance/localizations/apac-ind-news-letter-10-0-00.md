@@ -8,7 +8,6 @@ manager: Wangcheng
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,3 +78,6 @@ You can multi-select lookup columns and search available columns.
 - No customer billing name for stock transfer in GSTR.
 -	No default logic for original GST transaction ID for a credit note.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

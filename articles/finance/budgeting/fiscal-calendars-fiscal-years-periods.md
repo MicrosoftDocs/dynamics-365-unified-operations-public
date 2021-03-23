@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -68,3 +67,6 @@ You can use the Ledger calendar page to view the details of the fiscal calendar,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

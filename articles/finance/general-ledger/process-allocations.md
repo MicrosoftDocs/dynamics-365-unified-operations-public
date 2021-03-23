@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,3 +47,6 @@ Ledger allocation rules can be used for budget plans. When you use ledger alloca
 > [!NOTE]
 > You can’t use intercompany ledger allocation rules for budget planning.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

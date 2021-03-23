@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -40,3 +39,6 @@ You can use Dataverse to enable the flow of data between Finance and Operations 
 For more information about Dataverse data integration, see [Integrate data into Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) in the Microsoft Power Apps documentation.
 
 For an example of using Dataverse, see [Prospect to cash](../../../supply-chain/sales-marketing/prospect-to-cash.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

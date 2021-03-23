@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -136,3 +135,6 @@ In addition to the basic functionality, ER has other functionality that you can 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 - [Configuration service of Regulatory Services](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -76,3 +75,6 @@ To configure email templates for specific modes of delivery in Commerce headquar
 [Create call center orders](tasks/create-call-center-orders.md)
 
 [Change mode of delivery in POS](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

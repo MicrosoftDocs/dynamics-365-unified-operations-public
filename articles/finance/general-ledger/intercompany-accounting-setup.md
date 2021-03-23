@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,3 +53,6 @@ A reciprocal relationship can easily be set up on the **Intercompany accounting*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

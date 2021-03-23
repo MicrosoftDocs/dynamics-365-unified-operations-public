@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -87,3 +86,6 @@ The **Factors for deferrals writing off** report shows a list of deferral factor
     | Start date (on the **Records to include** Fast Tab)      | The start date of the period that the report is generated for. |
     | Deferrals group (on the **Records to include** Fast Tab) | The identification code of the deferrals group for which the deferral factors are included on the report. |
     | Expense code (on the **Records to include** Fast Tab)    | The expense code of the deferral factors that are included on the report. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

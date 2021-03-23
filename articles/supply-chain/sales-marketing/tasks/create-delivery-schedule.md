@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -67,3 +66,6 @@ This procedure demonstrates how to create a delivery schedule for a sales order.
 22. Click OK.
 23. Click Yes.
 24. Close the page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,3 +57,6 @@ This topic describes how to create a dispatch team. After you create a dispatch 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

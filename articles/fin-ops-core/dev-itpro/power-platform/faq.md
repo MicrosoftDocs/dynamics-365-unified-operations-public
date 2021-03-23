@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -55,7 +54,9 @@ Generally, users see all entities where **IsPublic** is set to **Yes**. These en
 
 ### Do all Microsoft Power Platform users have to be users in Finance and Operations?
 
-Any user of Microsoft Power Platform who tries to access Finance and Operations data through a virtual entity must also exist as a user in Finance and Operations. Therefore, technically, not *all* users have to be users in Finance and Operations. Only those users who access Finance and Operations data through virtual entities must be users in Finance and Operations.
+Any **interactive user** of Microsoft Power Platform who tries to access Finance and Operations data through a virtual entity must also exist as a user in Finance and Operations. Therefore, technically, not *all* users have to be users in Finance and Operations. Only those users who access Finance and Operations data through virtual entities must be users in Finance and Operations.
+
+A **S2S application user** can also be used to call into virtual entities. For this kind of integration, the application user must be set up in **System administration > Setup > Configure Azure Active Directory Applications**. This allows for applications to integrate with Finance and Operations using virtual entities.
 
 ### Where do I find the catalog entity?
 
@@ -121,3 +122,6 @@ Yes, if the Finance and Operations entity can auto generate number sequences, th
 If there are no fields added in the quick find view for the entity, then the search box does nothing. The workaround is to add one or more fields of the entity to the quick find view.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

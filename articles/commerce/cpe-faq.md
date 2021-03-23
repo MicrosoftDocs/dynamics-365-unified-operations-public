@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -74,3 +73,6 @@ Extension of the time limit is an exception to the norm and is considered on a c
 [Configure BOPIS in a Dynamics 365 Commerce evaluation environment](cpe-bopis.md)
 
 [Configure optional features for a Dynamics 365 Commerce evaluation environment](cpe-optional-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

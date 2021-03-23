@@ -7,7 +7,6 @@ ms.date: 07/27/2020
 ms.author: margoc
 
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology:
 
 # optional metadata
@@ -94,3 +93,6 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Exam MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | This exam measures your ability to accomplish the following technical tasks: use common functionality and implementation tools; configure security, processes, and options; perform data migration; and validate and support the solution. | Exam, cost varies by region | |
 | [Exam MB-310: Microsoft Dynamics 365 for Finance and Operations, Financials](https://docs.microsoft.com/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | This exam measures your ability to accomplish the following technical tasks: set up and configure financial management; manage and apply common processes; implement and manage accounts payable and receivable; and manage budgeting and fixed assets. | Exam, cost varies by region | |
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, Financials Functional Consultant Associate](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, Financials Functional Consultants unify global financials and operations and automate tasks and workflows, streamline customer ordering, selling, invoicing, and reporting. | Certification, cost varies by region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,3 +47,6 @@ A production order can be created in the following scenarios:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

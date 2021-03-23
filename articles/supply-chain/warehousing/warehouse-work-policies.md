@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -304,3 +303,6 @@ For more information about mobile device menu items, see [Set up mobile devices 
 For more information about license plate receiving and work policies, see [License plate receiving via the warehouse app](warehousing-mobile-device-app-license-plate-receiving.md).
 
 For more information about inbound load management, see [Warehouse handling of inbound loads for purchase orders](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

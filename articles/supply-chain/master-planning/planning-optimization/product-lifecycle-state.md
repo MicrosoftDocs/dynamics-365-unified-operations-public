@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -44,3 +43,6 @@ Released products and variants where the **Product lifecycle state** field is le
 For more information about product lifecycle states, see [Product lifecycle state overview](../../pim/product-lifecycle.md).
 
 For detailed information that includes steps for using product lifecycle states to exclude products from master planning and BOM-level calculations, see [Create a product lifecycle state to exclude products from Master planning](../../pim/tasks/exclude-products-master-planning.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

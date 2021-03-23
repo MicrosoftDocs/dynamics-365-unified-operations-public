@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -139,3 +138,6 @@ Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use t
 ## Additional resources
 
 [Install deployable packages from the command line](install-deployable-package.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -56,3 +55,6 @@ Complete the procedures in this topic to export services that have zero-rated ta
 3. Select **Post** \> **Post**.
 4. Close the message that you receive.
 5. Select **Inquiries** \> **Voucher**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -909,3 +908,6 @@ The following table lists additional changes that have been made for extensibili
 |         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions          |
 |            WhsRFControlData.processControl must reference WhsControl.data instead of _data in the switch block             |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

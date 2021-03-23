@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +56,6 @@ This task uses the JPMF demo company data.
 5. Click Confirm.
     * The Status of the consolidated invoice changes to be 'Confirmed' after you click Confirm. When confirmed, the consolidated invoice will be locked and you cannot edit it.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

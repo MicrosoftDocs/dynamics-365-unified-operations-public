@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 10/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -229,6 +228,8 @@ If you do not configure this file, during local development you may encounter er
 
 [App settings](app-settings.md)
 
+[Platform settings file](platform-settings.md)
+
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
@@ -237,4 +238,9 @@ If you do not configure this file, during local development you may encounter er
 
 [Mock the signed-in state during local development](mock-sign-in.md)
 
+[Configure module properties to be shown based on context](configure-properties-context.md)
+
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

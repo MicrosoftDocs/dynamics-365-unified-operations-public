@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -149,3 +148,6 @@ When reverssing a transaction with the **Putting into operation** type for the f
 
 > [!NOTE]
 > You can reverse **Putting into operation** transactions via the Fixed asset journal (**Fixed asset (Russia) \> Journals \> FA journal**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

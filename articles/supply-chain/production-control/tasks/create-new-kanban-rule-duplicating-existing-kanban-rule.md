@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -45,3 +44,6 @@ This procedure focuses on creating a duplicate of an existing kanban rule. This 
 3. Click OK.
     * Note that a duplicate of kanban rule 000017 is created.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

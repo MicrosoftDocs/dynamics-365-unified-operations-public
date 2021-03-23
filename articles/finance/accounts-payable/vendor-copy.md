@@ -8,7 +8,6 @@ manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ You can also copy vendors by using the Tax exempt number search feature that is 
 
 1. A **Copy vendor** option appears. By default, this option is set to **No**. To copy the vendor to the current legal entity, set the option to **Yes**.
 2. Select **Select**. The new vendor is created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +51,6 @@ To set up posting profiles, you must open a company bank account. When the syste
 ## Use posting profiles in remittance journal posting
 
 If posting profiles have been set up in the bank account, the system will use them to specify the offset account when a remittance journal is posted. If posting profiles haven't been set up, the system selects the posting profile from the **Ledger and sales tax** tab on the **Accounts receivable parameters** and **Accounts payable parameters** pages.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

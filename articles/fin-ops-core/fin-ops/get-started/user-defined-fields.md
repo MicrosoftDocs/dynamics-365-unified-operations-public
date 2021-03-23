@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -166,3 +165,6 @@ For performance and technical reasons, only tables that meet the following condi
 ### Can I reference custom fields from the developer tools?  
 
 Custom fields can only be managed through the user interface and cannot be referenced by code. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -7,7 +7,6 @@ author: liza-golub
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -741,3 +740,6 @@ To maintain data integrity between these electronic message items and report lin
 | A report line is added during **Generation** function.                      | This will be a new electronic message item. Use the standard process to register it in the SII system.                                                                                                                                                                   |
 
 To maintain data integrity, lines on the **Collections in cash** report can't be manually deleted.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

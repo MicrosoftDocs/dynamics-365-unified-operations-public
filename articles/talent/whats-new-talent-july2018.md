@@ -2,13 +2,12 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (July 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for July 2018.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/31/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -54,10 +53,13 @@ For more information, see [Configure the payroll integration between Talent and 
 
 Support has been added for tax regions outside the United States. When tax regions are assigned to workers, they can drive tax calculations and can be used in integrations with external payroll solutions.
 
-## The title field has been expanded in Talent
+## The title column has been expanded in Talent
 
-Titles have been expanded in this update. The field is now 65 characters. This change has been implemented everywhere that title is selected, such as workers, positions, and jobs.
+Titles have been expanded in this update. The column is now 65 characters. This change has been implemented everywhere that title is selected, such as workers, positions, and jobs.
 
 ## Benefit enrollment status report
 
 Built-in reporting about open enrollment for benefits helps you easily understand where your employees are in the open enrollment process. You can learn how many employees have completed the process, are currently completing it, and haven't started it. Additionally, you can quickly view any issues that occur during employee enrollment and a full log of all employee submissions. Therefore, you can easily verify and audit employee submissions.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

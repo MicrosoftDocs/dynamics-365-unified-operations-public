@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -239,3 +238,6 @@ export default (props: IWarrantylistViewProps) => {
 [Event-based data actions](event-based-data-actions.md)
 
 [Core data actions](core-data-actions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

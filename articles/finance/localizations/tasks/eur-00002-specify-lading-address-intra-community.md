@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -75,3 +74,6 @@ This procedure applies to all European countries/regions. The task was created u
 37. Click the General tab.
     * Find a newly created line and verify that the sender shipped the goods from Italy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

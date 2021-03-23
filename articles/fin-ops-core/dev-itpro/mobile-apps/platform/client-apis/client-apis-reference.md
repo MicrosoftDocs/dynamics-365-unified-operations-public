@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -211,3 +210,6 @@ ms.dyn365.ops.version:
 
   * [PageData](interfaces/services-business-logic-services-ipagedata.md)
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

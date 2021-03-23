@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -519,3 +518,6 @@ To start to use the new functionality of version 3.3 of the **BACS (UK)** format
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Download ER configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Download ER configurations from Global repository of Configuration service](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

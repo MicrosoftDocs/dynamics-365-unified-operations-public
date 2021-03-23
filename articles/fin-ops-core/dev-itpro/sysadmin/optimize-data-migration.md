@@ -5,10 +5,9 @@ title: Optimize data migration for Finance and Operations apps
 description: The topic provides an overview of steps and actions that you can use to optimize data migration for Finance and Operations apps.
 author: skaue-ms
 manager: AnnBe
-ms.date: 01/19/2021
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -96,9 +95,6 @@ We recommend that you clean up the staging tables. In Platform update 29 and lat
 > [!NOTE]
 > You must first turn on the **Execution history cleanup** feature in the **Feature management** workspace.
 
-## Defragment indexes
-
-Review the [configuration of the index defragmentation job](batch-job-sql-defragmentation.md). We recommend that this job be run daily, but not at the same that a data migration job is being run. Review the parameters to make sure that the job captures the tables and indexes that are being changed via the data migration job.
 
 ## Update statistics
 
@@ -195,3 +191,6 @@ For more information about performance troubleshooting and optimization, see the
 
 * [Performance troubleshooting using tools in Lifecycle Services (LCS)](../lifecycle-services/performancetroubleshooting.md)
 * [Query cookbook](../lifecycle-services/querycookbook.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

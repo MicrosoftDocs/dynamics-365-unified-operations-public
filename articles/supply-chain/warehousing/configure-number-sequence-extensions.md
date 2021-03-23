@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -97,3 +96,6 @@ To create and edit number sequences, follow these steps.
     | Check digit | This segment type adds a check digit, which is a modulo 10 calculation. (This behavior matches the existing logic for license plate IDs.) For this segment type, the **Value** field is always set to a caret (*^*), and the **Length** field is always set to *1*. |
 
 1. To view an example of your final number format, inspect the **Format** field at the bottom of the **Segments** FastTab.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

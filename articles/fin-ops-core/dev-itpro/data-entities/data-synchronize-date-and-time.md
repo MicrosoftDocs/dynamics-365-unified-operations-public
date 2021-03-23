@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -46,3 +45,6 @@ This dual conversion causes dates to change between applications. For example, t
 4. Change **Timezone** to **Coordinated Universal Timezone**, and change **Language** to **En-US**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

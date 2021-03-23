@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ For more information, see the following topics:
 
 [Cancel a purchase complementary fiscal document (Brazil)](tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

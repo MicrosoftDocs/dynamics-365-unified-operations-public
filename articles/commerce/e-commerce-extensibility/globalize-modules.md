@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -360,6 +359,8 @@ export interface INumberFormatOptions {
 
 [App settings](app-settings.md)
 
+[Platform settings file](platform-settings.md)
+
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
@@ -368,4 +369,9 @@ export interface INumberFormatOptions {
 
 [Mock the signed-in state during local development](mock-sign-in.md)
 
+[Configure module properties to be shown based on context](configure-properties-context.md)
+
 [Set up Azure Key Vault for secure key management](set-up-key-vault.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

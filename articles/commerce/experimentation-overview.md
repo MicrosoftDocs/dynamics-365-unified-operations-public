@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -60,3 +59,6 @@ To learn more about each step in the experimentation process, refer to the follo
 
 ## Next step
 [Identify a hypothesis and determine success metrics for an experiment](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

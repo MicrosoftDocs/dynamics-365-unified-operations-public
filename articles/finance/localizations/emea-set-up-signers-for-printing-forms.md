@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -170,3 +169,6 @@ The Officials functionality shows the default predefined signers from the Offici
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

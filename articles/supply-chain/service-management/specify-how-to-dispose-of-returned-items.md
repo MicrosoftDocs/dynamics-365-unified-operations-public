@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -186,3 +185,6 @@ For each disposition code that you define, you must select a disposition action.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

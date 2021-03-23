@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -143,3 +142,6 @@ For more information, see the following topics:
 
 - [Define financial dimensions](tasks/define-financial-dimensions.md)
 - [Maintain financial dimension default templates](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

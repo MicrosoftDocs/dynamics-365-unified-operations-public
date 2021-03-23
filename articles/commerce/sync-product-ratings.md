@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology:
 
 # optional metadata
@@ -138,3 +137,6 @@ The following illustration shows an example of product ratings in call center ch
 [Manage ratings and reviews](manage-reviews.md)
 
 [Configure ratings and reviews](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

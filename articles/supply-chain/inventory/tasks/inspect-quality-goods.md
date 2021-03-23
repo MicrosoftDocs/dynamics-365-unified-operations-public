@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -52,3 +51,6 @@ This topic explains how to process a quality order. You can run this guide in de
 4. Select **OK**.
 5. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

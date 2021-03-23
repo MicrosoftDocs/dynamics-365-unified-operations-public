@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -412,3 +411,6 @@ The allocation history can be shown either for a specific invoice or for all inv
     > - If the redrawing of debt is being canceled, you will receive an informational message that contains links to the documents that were created for customers or vendors.
 
 6.    Select **Inquiries** > **Voucher** to view the transactions that were created because of allocation cancellation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

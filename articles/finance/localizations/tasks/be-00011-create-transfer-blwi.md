@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/12/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -54,3 +53,6 @@ Customer/vendor transactions marked with one of the chosen payment purpose codes
 17. Click OK.
 18. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

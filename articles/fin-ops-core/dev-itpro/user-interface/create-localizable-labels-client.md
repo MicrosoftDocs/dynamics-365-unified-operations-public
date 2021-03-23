@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -118,3 +117,6 @@ The form previewer isn't currently configured to load labels via the label resou
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

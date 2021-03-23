@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 04/03/2018
 ms.topic: article
 ms.prod:
-ms.service:  dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -136,3 +135,6 @@ You can search for words or phrases in your BPM library. The search functionalit
 ![Search box](./media/searching.png "Search box")
 
    
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

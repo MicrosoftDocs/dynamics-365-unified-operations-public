@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -118,3 +117,6 @@ You can copy financial dimensions to either document headers or individual lines
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -244,3 +243,6 @@ The following ledger transactions are posted:
   - **Debit**: Cost of goods sold, invoiced; **Credit**: Sales order, Goods shipped
   - **Debit**: Payment offset account (Sales tax); **Credit**: Shipped items tax
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

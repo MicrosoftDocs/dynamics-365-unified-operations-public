@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -86,3 +85,6 @@ Several credit management statistics are included in the **Customer credit manag
 ### Number sequences and shared number sequence parameters
 
 A journal ID is required to process credit limit adjustments. You must add the credit limit adjustment number that should be used to generate the journal ID.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

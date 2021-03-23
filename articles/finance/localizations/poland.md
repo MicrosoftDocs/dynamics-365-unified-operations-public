@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +45,6 @@ This topic provides links to documentation resources for Poland.
 - [Turnover and balances statement](emea-pol-turnover-balances-statement.md)
 - [Split AP/AR exchange difference](emea-pol-split-ap-ar-exchange-difference.md)
 - [VAT declaration with registers (JPK_V7M, VDEK)](emea-pol-vdek.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -107,3 +106,6 @@ Record templates can help you to create records more quickly. You can create a r
 - [Configure document management](configure-document-management.md)
 - [Configure and send email](configure-email.md)
 - [Date/time data and time zones](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -83,3 +82,6 @@ For the **EN-US** culture, `NUMBERFORMAT (0.45, "p")` returns **"45.00 %"**, and
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

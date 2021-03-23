@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -158,3 +157,6 @@ If you try to use the warehouse app to run picking work against a work ID that i
 ## Other blocked operations
 
 Any operations that modify work lines, work inventory transactions, or replenishment links that are related to work that is being split will fail, and the following error message will be shown: "The work with ID \#\#\#\# is currently being split."
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

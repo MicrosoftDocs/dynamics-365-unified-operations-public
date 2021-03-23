@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -41,3 +40,6 @@ To set up a batch job, or to process payment invoices, depreciation, or interest
 > Subsequent transactions, such as liability amortization schedules, payments, depreciation, and expenses, will be posted only after the initial recognition for corresponding leases is posted.
 >
 > The journal entries are created, but they won't be posted until you select the **Run** command.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

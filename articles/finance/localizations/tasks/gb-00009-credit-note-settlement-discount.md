@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -87,3 +86,6 @@ Prior to this task, the "Setup parameters for credit note on prompt payment disc
 40. Close the page.
     * Verify that the reason for cash discount as well as original invoice number and date are printed in the credit note for the discount.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

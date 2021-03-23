@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/11/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -85,3 +84,6 @@ This procedure steps through the year end close process that transfers balances 
 23. The year-end close defaults to run in batch. It's best practice for long-running processes to run in batch mode. This is typically one of those processes, which is why the default is to use batch mode.  
 24. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -7,7 +7,6 @@ author: edupont04
 manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 
 # optional metadata
 
@@ -67,3 +66,6 @@ The Custom Help Toolkit is available at [https://github.com/microsoft/dynamics36
 [Connect a custom Help website to the Help pane](connect-help-pane.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

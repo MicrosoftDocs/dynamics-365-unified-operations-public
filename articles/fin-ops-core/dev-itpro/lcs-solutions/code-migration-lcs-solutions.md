@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ Additional resources
 [Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
 
 [Develop and customize home page](../dev-tools/developer-home-page.md#code-migration)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

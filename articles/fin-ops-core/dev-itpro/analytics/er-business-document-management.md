@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -584,3 +583,6 @@ The following table shows the list of ER configurations that support configurabl
 |                             | Sales order packing slip (LT) (Excel)           |
 |                             | Sales order packing slip (PL) (Excel)           |
 |                             | Sales order packing slip (Word)                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

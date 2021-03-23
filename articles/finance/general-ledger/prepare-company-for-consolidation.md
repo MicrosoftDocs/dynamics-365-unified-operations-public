@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -73,3 +72,6 @@ The consolidated legal entity is now set up for the **Consolidate** periodic job
 
 > [!NOTE]
 > Before you can process the consolidation, you must prepare the subsidiary legal entities for consolidation. For more information, see [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

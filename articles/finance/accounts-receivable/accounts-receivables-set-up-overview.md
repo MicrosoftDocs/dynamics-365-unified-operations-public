@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -114,3 +113,6 @@ For more information, see [Credit and collections in Accounts receivable](collec
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

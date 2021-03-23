@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -86,3 +85,6 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 6. In the **Business vertical** field, select a value.
 
 ![Customer registration numbers](media/IND-GST-GSTIN-4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -186,3 +185,6 @@ The **InvoiceProject Copy** model mapping of the **Project invoice model mapping
 - [Manage ER model mapping in separate ER configurations](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Configure country context dependent ER model mappings](er-country-dependent-model-mapping.md)
 - [Electronic reporting framework API changes](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

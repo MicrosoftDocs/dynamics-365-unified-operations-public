@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -137,3 +136,6 @@ The following steps explain how a user in the System Administrator or Electronic
 3. Click **Browse** and select the file, **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**.
 4. Click **OK**.
 5. Review the generated file. Note that same file has been imported as the format design now consider the 'id' attribute for the 'document' element as optional.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

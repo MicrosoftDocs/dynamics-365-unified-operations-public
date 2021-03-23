@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,3 +46,6 @@ Additional buttons on the **Cost categories** page let you access project-relate
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

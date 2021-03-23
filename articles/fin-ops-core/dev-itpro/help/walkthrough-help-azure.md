@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -263,3 +262,6 @@ The next step is to extend the **Help** pane so that it can detect your content.
 [Custom Help overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

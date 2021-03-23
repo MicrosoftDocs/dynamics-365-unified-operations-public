@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/14/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -49,3 +48,6 @@ To enable these scenarios, the functionality profile for stores must be configur
 
 > [!NOTE]
 > Payment or settlement of partial amounts is not yet supported.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

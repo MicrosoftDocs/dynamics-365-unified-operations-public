@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/14/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 
@@ -50,3 +49,6 @@ This procedure walks through creating financial dimensions for point of sale (PO
 17. In the list, find and select the dimension value for the register being updated.
 18. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

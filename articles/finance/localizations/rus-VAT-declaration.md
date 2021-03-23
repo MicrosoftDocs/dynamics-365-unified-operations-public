@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -451,3 +450,6 @@ Next, you must manually upload the files that are generated to the special third
 - [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Electronic messaging](../general-ledger/electronic-messaging.md)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

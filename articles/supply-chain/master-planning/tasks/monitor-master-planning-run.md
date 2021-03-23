@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/04/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -130,3 +129,6 @@ The color is shown only on the lowest level in the Gantt chart. Select **Expand 
 1. In the grid, select the row where the **Field** field is set to **Item number**.
 1. In the **Criteria** field, enter a value.
 1. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

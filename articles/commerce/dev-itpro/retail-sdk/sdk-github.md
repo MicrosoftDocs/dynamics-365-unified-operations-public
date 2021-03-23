@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology:
 
 # optional metadata
@@ -202,3 +201,6 @@ After a new version of the SDK samples is released, you must merge it with your 
 ```DOS
 git checkout master git merge release/x.x.x
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

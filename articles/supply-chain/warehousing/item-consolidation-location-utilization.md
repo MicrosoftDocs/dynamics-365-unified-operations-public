@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -210,3 +209,6 @@ The following scenario uses the warehouse app on a mobile device to make an inve
 
     > [!NOTE]
    > The system creates one work ID for each move that must be completed. If you specify a location that already contains inventory, only one work ID is created. If you specify a new location, two work IDs are created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -102,3 +101,6 @@ The configuration version is deleted, and confirmation message is shown.
 > [!NOTE]
 > Configurations can only be deleted by the Configuration provider that created them. If the configuration has been shared with another organization, the configuration will need to be unshared before you delete it.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

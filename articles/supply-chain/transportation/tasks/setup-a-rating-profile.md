@@ -8,7 +8,6 @@ manager:
 ms.date: 10/30/2020
 ms.topic: business-process 
 ms.prod: 
-ms.service: dynamics-ax-applications 
 ms.technology: 
  
 # optional metadata 
@@ -63,3 +62,6 @@ On the **Rating profiles** page, you can review all available rating profiles. Y
 
 > [!NOTE]
 > Profiles that are created on the **Shipping carriers** page are also shown on the **Rating profiles** page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,12 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (July 23, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for July 23, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -54,9 +53,9 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2394.
 
-### Entity support for custom fields in Common Data Service 
+### Table support for custom columns in Dataverse 
 
-With this release, **Work calendar** and **Work calendar** day now support custom fields in Common Data Service.
+With this release, **Work calendar** and **Work calendar** day now support custom columns in Dataverse.
 
 ### Restrict leave types in time-off requests
 
@@ -81,3 +80,6 @@ A new option will let managers view the performance of both their direct reports
 We are pleased to announce that Canada and Southeast Asia regions will be available for Talent on August 1, 2019. With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described here [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Data migration of existing projects from other regions to the Canadian and Asian regions is not supported. Only new projects can be provisioned to the these new supported regions.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

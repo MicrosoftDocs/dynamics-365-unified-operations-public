@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -48,3 +47,6 @@ This procedure focuses on removing a planned process kanban job from the schedul
 4. Click OK.
     * This will revert the current job status from 'Planned' to 'Not planned' and remove it from the process board.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

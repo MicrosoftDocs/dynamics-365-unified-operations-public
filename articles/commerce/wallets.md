@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -90,3 +89,6 @@ This capability ensures that the payment is never authorized by the terminal and
 
 - [Payments FAQ](dev-itpro/payments-retail.md)
 - [Dynamics 365 Payment Connector for PayPal](paypal.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

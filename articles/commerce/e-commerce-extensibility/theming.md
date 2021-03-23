@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -137,3 +136,6 @@ Because the CSS code used in RTL and LTR layouts is generally the same except fo
 [Add custom resources to your customization code](add-custom-resources.md)
 
 [CLI command reference](cli-command-reference.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

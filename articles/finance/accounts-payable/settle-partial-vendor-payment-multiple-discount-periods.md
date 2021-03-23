@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -144,3 +143,6 @@ On July 20, April creates a final payment for 200.00. No discount is taken, beca
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

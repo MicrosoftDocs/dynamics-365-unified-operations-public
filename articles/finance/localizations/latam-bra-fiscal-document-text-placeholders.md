@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -171,3 +170,6 @@ Tags that support fiscal document text for referenced processes
 |--------------------------------|----------------------------------------------------------------------|
 | %Substituto\_ICMS\_tax\_amount | The presumed ICMS tax amount from the ICMS substitute.                |
 | %Substituto\_FCP\_tax\_amount  | The presumed FCP amount from the ICMS substitute.                     |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

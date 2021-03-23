@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 10/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -169,3 +168,6 @@ The Weighted-average discount rate report satisfies the US GAAP disclosure requi
 |     Currency                       	|     The abbreviation for the transactional currency used. All reports will convert the transactional currency to the reporting currency. 	|
 |     Lease payments remaining       	|     The total amount of unpaid lease payments from the payment schedule remaining from the **As of** date.         	|
 |     Weighted payments remaining    	|     The lease payments remaining multiplied by the discount rate used.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

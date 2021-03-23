@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -81,3 +80,6 @@ The India GST number sequence logic is based on the following conditions for upd
 - For a stock transfer receipt transaction, the system will copy the shipment transaction ID when the number sequence reference ID is generated for the shipment transaction.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -383,3 +382,6 @@ In the first transaction for subscription 00020\_135, the sales price of EUR 550
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

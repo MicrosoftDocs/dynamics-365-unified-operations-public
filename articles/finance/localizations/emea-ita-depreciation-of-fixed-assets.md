@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +49,6 @@ The **Depreciation run date** should be set up at the time of acquisition and is
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -65,3 +64,6 @@ The demo data company used to create this recording is USRT. This recording is i
 5. Click Export.
 6. Click PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -423,3 +422,6 @@ The **AxTableName** attribute isn't specified, because the framework can already
 #### MPOS offline transaction sync
 
  Switch MPOS to offline mode and do some transaction. Switch back to online and verify that the data is synced properly from the offline database to the channel database and then to headquarters.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

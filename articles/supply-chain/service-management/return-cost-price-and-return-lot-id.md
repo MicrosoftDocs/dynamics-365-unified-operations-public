@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -116,3 +115,6 @@ When you use the **Return lot ID** field on a return order line to specify the r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

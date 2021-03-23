@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,3 +69,6 @@ If you have a low-cost asset that has a net book value of AUD 800.00, the first-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

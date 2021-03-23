@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -56,3 +55,6 @@ This procedure shows you to how create a new fixed asset book and associate it w
     * Note that Depreciation periods is calculated after setting the Service life.  
     * You are able to set the depreciation convention as required for tax purposes.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

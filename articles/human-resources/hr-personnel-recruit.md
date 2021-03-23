@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 12/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,6 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Recruit job candidates
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources helps you to manage recruiting requests. It also helps you seamlessly transition job candidates to employees. If your organization uses a separate recruiting application, your recruiting process might include the following steps:
 
@@ -42,7 +42,7 @@ Dynamics 365 Human Resources helps you to manage recruiting requests. It also he
 If you aren't using a separate recruiting application, you can also manually manage candidates in Human Resources.
 
 >[!NOTE]
->If you're an admin or developer and want to integrate Human Resources with a third-party recruiting application, see [Configure Common Data Service integration](hr-admin-integration-common-data-service.md) and [Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md)
+>If you're an admin or developer and want to integrate Human Resources with a third-party recruiting application, see [Configure Dataverse integration](hr-admin-integration-common-data-service.md) and [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > You can also find recruiting integration apps on [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
@@ -50,15 +50,13 @@ If you aren't using a separate recruiting application, you can also manually man
 
 ## Enable recruiting requests
 
-If you want to submit recruiting requests in Human Resources, you must first enable the functionality in **Human resources parameters**.
+If you want to submit recruiting requests in Human Resources, you must first enable the functionality in **Human resources shared parameters**.
 
 1. In the **Personnel management** workspace, select **Links**.
 
-2. Under **Setup**, select **Human resources parameters**.
+2. Under **Setup**, select **Human resources shared parameters**.
 
-3. On the **General** tab, under **RECRUITING**, set **Enable recruiting requests** to **Yes**.
-
-   ![Enable recruiting requests](./media/hr-recruit-0-enable-requests.png)
+3. On the **Recruitment** tab, under **RECRUITING**, set **Enable recruiting requests** to **Yes**.
 
 ## Add a recruiting request location
 
@@ -228,6 +226,9 @@ If needed, you can dismiss a candidate after hiring them. For example, a candida
 
 ## See also
 
-[Configure Common Data Service virtual entities](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organize your workforce](hr-personnel-departments-jobs-positions.md)<br>
 [Set up the components of a job](hr-personnel-jobs.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

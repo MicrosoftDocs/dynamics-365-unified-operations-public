@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -84,3 +83,6 @@ Because the models and runtime packages are in source control, other developers 
 As of Platform update 4, the automated build process will also pick up the runtime packages. Therefore, dependencies in packages that are built will be resolved correctly. This feature is also available for Platform update 3 and Platform update 2 through a hotfix.
 
 In Platform update 6, the build process will include this runtime package in the final deployable package. This allows customers to take the deployable package from the build and have one package to deploy to their environments. The one package includes both custom solutions and all the third party solutions.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

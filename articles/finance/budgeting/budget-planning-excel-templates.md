@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -135,3 +134,6 @@ You can also create and use pivot tables and charts for additional groupings and
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -81,3 +80,6 @@ Finally, add an automated task for budget planning stage allocation at the desir
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

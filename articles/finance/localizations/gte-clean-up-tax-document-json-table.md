@@ -8,7 +8,6 @@ manager: Annbe
 ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -68,3 +67,6 @@ Before you begin the cleanup, complete the following tasks:
     ![Transaction date field in the Tax document extension information for India section](media/tax-document-json-02.png)
 
 5. Select **OK** to start the cleanup.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

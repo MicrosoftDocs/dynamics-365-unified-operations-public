@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -62,3 +61,6 @@ Sales tax on documents is calculated by providing a Sales tax group and an Item 
 29. Click Sales tax.
 30. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

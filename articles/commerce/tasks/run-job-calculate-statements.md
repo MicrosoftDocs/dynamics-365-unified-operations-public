@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -46,3 +45,6 @@ This procedure walks through configuring and running recurrent batch jobs to cre
 11. Click OK.
 12. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

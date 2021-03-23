@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -62,3 +61,6 @@ You can post a fiscal document that you received from the acquisition of invento
 29. Close the page.
 30. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

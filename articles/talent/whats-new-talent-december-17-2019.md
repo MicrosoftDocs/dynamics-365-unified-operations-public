@@ -2,13 +2,12 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (December 17, 2019)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for December 17, 2019.
+author: andreabichsel
+manager: tfehr
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -59,3 +58,6 @@ This week's changes correct an issue where calendar days couldn't be generated.
 ### Current balance report in leave PBI doubles employee balance (385581)
 
 This change corrects the current balance report in this scenario.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

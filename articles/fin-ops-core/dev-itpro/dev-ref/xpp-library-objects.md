@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -222,3 +221,6 @@ The integration with the environment is typically implemented by classes. Here a
 -   **IO** – Read and write external files.
 -   **ODBCConnection** – An Open Database Connectivity (ODBC) interface to a foreign database.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

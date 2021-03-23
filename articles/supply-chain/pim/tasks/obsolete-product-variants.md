@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 12/05/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -76,3 +75,6 @@ This procedure shows how to find obsolete released products or product variants 
 
 8. In the list, find and select the desired record.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

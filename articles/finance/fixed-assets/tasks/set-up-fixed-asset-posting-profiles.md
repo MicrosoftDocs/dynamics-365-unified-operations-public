@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -125,3 +124,6 @@ This task guide will set up Fixed asset posting profiles.  It uses the Accountan
 88. In the **Main account** field, specify the desired values.
 89. In the **Offset account** field, specify the desired values.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

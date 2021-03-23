@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,3 +91,6 @@ The following table provides examples that show how various settings for a relea
 ## Additional resources
 
 [Purchase agreements](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

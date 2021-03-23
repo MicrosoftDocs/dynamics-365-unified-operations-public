@@ -4,10 +4,9 @@ title: Statistics on payment practices report
 description: This topic provides information about the Statistics on payment practices report.
 author: anasyash
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 01/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -82,7 +81,13 @@ You can specify the date when the purchase invoice was received and then use thi
 6. Review the **Payments due** tab.
 
     ![Payments due tab](media/Payments_due.png)
+    
+    > [NOTE]
+    > This tab contains all invoices that are due, paid before the due date, and overdue. Only overdue invoices are visible by default. Excel rows with invoices paid before the due date are hidden. To view all invoices, unhide the Excel rows.
 
 ## Publish the reporting about payment practices
 
 After you generate the **Statistics on payment practices (UK)** report in Excel, you can use the report data to prepare the final report about payment practices for publication.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

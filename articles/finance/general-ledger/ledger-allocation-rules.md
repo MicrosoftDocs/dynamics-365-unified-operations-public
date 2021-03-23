@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -55,3 +54,6 @@ Each allocation rule has four components: general, source, destination, and offs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

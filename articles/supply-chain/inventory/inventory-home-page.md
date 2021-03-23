@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -62,3 +61,6 @@ You can find opinions, news, and other information about Inventory management an
 
 ### Task guides
 Additional help is available as task guides. To access task guides, click the **Help** button on any page
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,10 @@
 title: Source candidates with talent pools in Attract
 description: This topic explains how to create and set up talent pools in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -91,7 +90,7 @@ Talent pools allow you to view a candidate's profile, LinkedIn information, rela
 >[!NOTE]
 > When you add new candidates or applicants, the new additions can take up to 15 minutes to be indexed for search.
 
-With the improved search experience, you can search through all candidate documents and filter by silver medalists, sources, skills, education, and more. In previous versions, you had to specify the entity you wanted to search through. Attract can now search all candidate-related fields and rank the results.
+With the improved search experience, you can search through all candidate documents and filter by silver medalists, sources, skills, education, and more. In previous versions, you had to specify the table you wanted to search through. Attract can now search all candidate-related columns and rank the results.
 
 1. To start a new search through the candidate database, enter the text that you want to search for in the search box on the **Talent pools** tab. 
 
@@ -105,11 +104,11 @@ The search results show highlights for the various attributes that matched your 
 
 | Operator | Usage                                                      | Example              |
 |----------|------------------------------------------------------------|----------------------|
-| \*       | Searches for substrings; can be used to return all records | Input: Mi\* <br></br> Result: All records containing fields that begin with "Mi", such as Microsoft, Micro systems, Midtown Enterprises, or Middleton <br></br>Input: \* <br></br> Result: All records in database |
+| \*       | Searches for substrings; can be used to return all records | Input: Mi\* <br></br> Result: All records containing columns that begin with "Mi", such as Microsoft, Micro systems, Midtown Enterprises, or Middleton <br></br>Input: \* <br></br> Result: All records in database |
 | “”       | Searches for an exact match                                | Input: “Microsoft” <br></br> Result: All records containing “Microsoft”                    |
 
 >[!WARNING]
-> Don't turn off relevance search for your Common Data Service instance. This will disable the search experience in Attract.
+> Don't turn off relevance search for your Dataverse instance. This will disable the search experience in Attract.
 
 All users have a common view of candidate profiles. The **Profile** tab shows any information about skills, work experience, and education that the candidate provided as part of their applications using the career portal.
 
@@ -136,7 +135,7 @@ From the search results or a talent pool, you can push a candidate to any active
      
      A list of jobs that you belong to the hiring team for, as either a recruiter or a hiring manager, is shown.
 
-1. Select the job to add the candidate to, and then select **Add**. You can also search for the job by using the search field at the top of the **Add candidate to job** dialog box.
+1. Select the job to add the candidate to, and then select **Add**. You can also search for the job by using the search column at the top of the **Add candidate to job** dialog box.
 
     If prospecting was enabled for the job, the candidate is added to the **Prospect** stage.
 
@@ -153,3 +152,6 @@ Often, several good candidates for a job aren't selected, but you don't want to 
 1. On the application page, select **Add to talent pool**. A list of talent pools that you have access to is shown.
 
 1. Select or search for the talent pool, and then select **Add** to add the candidate to that talent pool.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

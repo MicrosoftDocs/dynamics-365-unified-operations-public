@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -87,3 +86,6 @@ This procedure explains how to modify an Electronic reporting (ER) format config
 ## Use the modified draft version of the ER format for payment journal processing
 
 Review the created worksheet, including new detail of payment lines – payment date.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

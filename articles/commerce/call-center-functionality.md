@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -73,3 +72,6 @@ This page provides links to relevant documentation related to the setup, configu
 ## Configure continuity programs
 
 [Set up continuity programs for call centers](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

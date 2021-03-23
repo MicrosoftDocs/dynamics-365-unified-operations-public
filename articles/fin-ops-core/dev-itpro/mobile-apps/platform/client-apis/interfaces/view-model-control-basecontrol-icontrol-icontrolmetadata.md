@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -145,3 +144,6 @@ Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 String indicating the control type.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

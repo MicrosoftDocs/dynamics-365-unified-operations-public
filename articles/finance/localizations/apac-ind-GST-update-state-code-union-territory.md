@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -51,3 +50,6 @@ Follow these steps to update the state code and union territory.
 5. Select **Close**.
 
 ![Address setup](media/IND-GST-UpdateState.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

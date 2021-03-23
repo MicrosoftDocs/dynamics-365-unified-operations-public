@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -138,3 +137,6 @@ Before local Hardware Station can consume your extension, the **composition** se
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

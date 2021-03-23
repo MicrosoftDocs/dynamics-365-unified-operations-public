@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -53,3 +52,6 @@ This task uses the USMF demo company.
 18. In the **Fee currency** field, select the currency of the fee. This is the currency in which the fee will be created.  
 19. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

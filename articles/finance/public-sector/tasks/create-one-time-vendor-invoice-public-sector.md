@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -39,3 +38,6 @@ The vendor record uses values from the default one-time vendor account. To view 
 5. Click Create.
     * The Vendor invoice page opens, displaying the vendor information.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

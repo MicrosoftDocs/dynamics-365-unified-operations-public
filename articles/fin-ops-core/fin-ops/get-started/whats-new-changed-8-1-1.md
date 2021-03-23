@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ In this release of Finance and Operations, numerous extensibility enhancements h
 ## VAT declaration for Russia
 
 In this release, you can review the ER configurations for generating VAT declaration for Russia in electronic format. For detailed information, see [RUS/Russia VAT Declaration in electronic format](https://support.microsoft.com/help/4477332/rusrussiavatdeclarationinelectronicformat).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

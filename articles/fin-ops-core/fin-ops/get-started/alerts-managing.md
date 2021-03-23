@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/10/2010
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -88,3 +87,6 @@ If you set up a batch processing window, an alert is sent when the alert rule is
 
 1. Go to **System administration** &gt; **Periodic tasks** &gt; **Alerts** &gt; **Due date alerts**.
 2. In the **Due date alerts** dialog box, enter the appropriate information.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -124,3 +123,6 @@ Click **Setup** to customize the information that is shown in the tree view of t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

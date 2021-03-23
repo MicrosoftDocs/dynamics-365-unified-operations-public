@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -68,3 +67,6 @@ The online platform provides a built-in script injector module that makes it eas
 [E-commerce architectural overview](architectural-overview.md)
 
 [CLI command reference](cli-command-reference.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

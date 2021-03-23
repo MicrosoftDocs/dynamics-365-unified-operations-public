@@ -3,12 +3,11 @@
 
 title: Asset measures
 description: The topic explains how to create asset measure types in Asset Management.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -71,3 +70,6 @@ When asset types are added to a counter type in **Counters**, that counter is au
 
 ![Figure 1](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

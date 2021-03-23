@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -87,3 +86,6 @@ Use the following criteria in the database inquiry page to retrieve lines.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

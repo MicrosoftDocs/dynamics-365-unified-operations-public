@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -107,3 +106,6 @@ You must set up a revenue typology in the **Revenue typology** field in the **In
 ## Process the Unique certification
 
 After the Unique certification is generated and filled with data, you can select **Validate** to validate the data before the output file is generated. After the output file is validated, select **Export** to generate the electronic output file in the legally required format.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

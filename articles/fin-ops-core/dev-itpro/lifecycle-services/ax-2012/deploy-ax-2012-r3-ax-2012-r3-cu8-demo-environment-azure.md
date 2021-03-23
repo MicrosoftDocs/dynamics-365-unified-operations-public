@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -106,3 +105,6 @@ Complete the following procedure to connect to the virtual machine where the AX 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

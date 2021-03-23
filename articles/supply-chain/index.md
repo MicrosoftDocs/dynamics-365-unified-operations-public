@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -105,9 +104,12 @@ There are many topics about manufacturing and supply chain management on the [Dy
 
 ## White papers
 
-- [Lean manufacturing: Capable to promise and kanban job scheduling](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
+- [Lean manufacturing: Capable to promise and kanban job scheduling](https://docs.microsoft.com/dynamics/s-e/)
 - [BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## eLearning courses
 
 For online courses and training, check out [Dynamics 365 Supply Chain Management on Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

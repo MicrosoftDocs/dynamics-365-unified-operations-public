@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -433,3 +432,6 @@ Here is an example of a cost distribution rule if the Electricity fixed formula 
 |    CC002    |     FI      | 3,075.00  | (3,075.00 ÷ 18,162.50) × Amount  |
 |    CC003    |     IT      | 13,250.00 | (13,250.00 ÷ 18,162.50) × Amount |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

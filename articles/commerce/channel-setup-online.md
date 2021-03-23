@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -137,3 +136,6 @@ The following image shows an example of a fulfillment group assignment setup.
 [Set up a call center channel](channel-setup-callcenter.md)
 
 [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

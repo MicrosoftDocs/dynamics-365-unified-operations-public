@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -46,3 +45,6 @@ This topic demonstrates how to create a record template so that field values tha
 13. Select **OK**.
 14. Select **Close**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

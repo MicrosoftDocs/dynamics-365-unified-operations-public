@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -135,3 +134,6 @@ The following example resembles the previous example. It shows that you can also
 
 [Add custom resources to your customization code](add-custom-resources.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

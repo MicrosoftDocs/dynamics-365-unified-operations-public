@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -40,3 +39,6 @@ By creating lines on the **Tag counting** page, you place a tag number on each i
 ## Additional resources
 
 [Cycle counting](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

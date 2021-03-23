@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -49,3 +48,6 @@ Follow these steps to create a business vertical.
 3. Enter a name, description, and entity code for the new business vertical.
 4. Select **Close**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

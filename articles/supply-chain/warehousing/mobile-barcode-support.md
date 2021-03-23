@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,3 +37,6 @@ The Dynamics 365 Supply Chain Management - warehouse app has been tested with a 
 
 As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

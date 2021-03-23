@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/29/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +51,6 @@ When you generate the report, the following default parameters are shown.  You c
 | Unfilled only | Set this option to Yes to exclude positions that are currently filled. |
 | Suppress total | Set this option to Yes to exclude totals from appearing on the report. |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

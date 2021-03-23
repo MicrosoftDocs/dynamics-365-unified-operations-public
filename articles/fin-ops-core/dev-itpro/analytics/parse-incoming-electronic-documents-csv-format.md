@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -73,3 +72,6 @@ Download the following file that is required to complete the task guide mentione
 | Title                  | File name                                                       |
 |------------------------|-----------------------------------------------------------------|
 | ER model configuration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

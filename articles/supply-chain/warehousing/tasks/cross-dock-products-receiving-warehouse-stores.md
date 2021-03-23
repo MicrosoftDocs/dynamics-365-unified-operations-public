@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 02/17/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -50,3 +49,6 @@ This procedure walks through the steps to create and process a Cross-dock to dis
 15. In the list, find and select a warehouse that received products
 16. Click Order to view the orders that got created for the selected warehouse
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

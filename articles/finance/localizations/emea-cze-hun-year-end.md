@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +45,6 @@ Before you can post opening transactions to a different account for each of main
 
 ## Additional resources
 [Year-end close](../general-ledger/year-end-close.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

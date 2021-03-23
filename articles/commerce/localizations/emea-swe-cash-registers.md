@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -160,3 +159,6 @@ You must specify the following general settings for Sweden.
 
     
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

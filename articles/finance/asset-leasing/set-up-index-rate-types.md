@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,3 +47,6 @@ You must select either **Index rate value difference** or **Index rate value** a
 
 - Select the **Index rate value difference** method to calculate a new lease payment, based on the difference between the index rate on the start date and the most recent index rate. The index rate is defined in the **Index rate (%)** field.
 - Select the **Index rate value** method to calculate the lease payment by using the percentage that is specified in the **Index rate (%)** field.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

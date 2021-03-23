@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -41,4 +40,8 @@ This topic provides links to documentation resources for Hungary.
 - [Tax reimbursement documents](emea-hun-tax-reimbursement-docs.md)
 - [Year-end close](emea-cze-hun-year-end.md)
 - [Online invoicing system](emea-hun-online-invoicing.md)
+- [Sales tax reports for Hungary](emea-hun-sales-tax-reports.md)
 - [Deferred sales tax calculations](emea-hun-deferred-vat.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

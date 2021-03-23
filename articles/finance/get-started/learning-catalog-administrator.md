@@ -7,7 +7,6 @@ ms.date: 07/23/2020
 ms.author: margoc
 
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology:
 
 # optional metadata
@@ -84,3 +83,6 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Finance and Operations: Regression Suite Automation Tool -- Background & Setup (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | This is the first of a two-part series on Regression Suite Automation Testing (RSAT). In this session, we will cover how to keep pace with continuous updates using automated testing via RSAT. Learnings and recommendations on creating task recordings and executing tests using RSAT will be covered, along with a step-by-step walkthrough of the installation and setup. | Free recording of a web conference | 70 minutes |
 | [Finance and Operations: Regression Suite Automation Tool -- Testing Lifecycle Demo (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | This is the second of a two-part series on Regression Suite Automation Testing (RSAT). This session will cover a demo of the whole cycle of creating and saving task recordings from Finance and Operations to the BPM library in LCS, synchronizing the BPM library to create test cases in Azure DevOps, grouping the test cases into test suites, and loading and executing the test suites in RSAT. | Free recording of a web conference | 70 minutes |
 | [Finance and Operations: Performance Troubleshooting Tools for Dynamics 365 (DYN541PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) | In this Tech Talk, we will present the different tools that can be used to troubleshoot Microsoft Dynamics 365 for Finance and Operations performance issues. This session will contain some scenario-based demonstrations and initial guidance on how to approach typical performance issues. | Free recording of a web conference | 64 minutes |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

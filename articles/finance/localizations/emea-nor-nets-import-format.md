@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,3 +55,6 @@ You receive a message to update payment defaults values for the corresponding cu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

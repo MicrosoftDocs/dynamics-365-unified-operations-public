@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -127,3 +126,6 @@ You can define a standard debiting payment account per method of payment regardl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

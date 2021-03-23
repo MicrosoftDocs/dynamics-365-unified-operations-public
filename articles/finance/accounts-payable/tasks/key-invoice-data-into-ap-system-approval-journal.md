@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -56,3 +55,6 @@ This topic explains how to use the invoice register to create invoices and then 
 10. Select **Post**.
 11. Select **Voucher** to view the entries that were posted. The Invoice Pending Approval account is reversed and replaced with the actual expense account.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

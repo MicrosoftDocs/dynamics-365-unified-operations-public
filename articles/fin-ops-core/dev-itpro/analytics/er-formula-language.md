@@ -8,7 +8,6 @@ manager: kfend
 ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -179,3 +178,6 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Extend the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

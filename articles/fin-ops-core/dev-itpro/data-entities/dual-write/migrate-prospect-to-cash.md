@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -102,3 +101,6 @@ Because data from the **Products** table is designed to flow one way, from the F
 ## Quote and Quote product tables
 
 For the **Quote** table, follow the instructions in the [Order table](#order-table) section earlier in this topic. For the **Quote product** table, follow the instructions in the [Order products table](#order-products-table) section.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

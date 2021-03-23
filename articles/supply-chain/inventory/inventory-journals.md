@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -123,3 +122,6 @@ These two inventory journals only support the *Initialize stock* scenario as par
 ## Additional resources
 
 [Data entities](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

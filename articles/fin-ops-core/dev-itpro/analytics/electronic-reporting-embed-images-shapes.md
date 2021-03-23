@@ -2,13 +2,12 @@
 # required metadata
 
 title: Embed images and shapes in documents that you generate by using ER
-description: This topic explains how to use the Electronic reporting (ER) tool to generate business documents in Microsoft Excel and Microsoft Word format that have embedded images and shapes.
+description: This topic explains how to use the Electronic reporting tool to generate business documents that have embedded images and shapes.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -96,3 +95,6 @@ The following table lists the files that are required in order to complete the *
 The following graphic provides an example of the test printout for a payment check that is generated from the Excel template.
 
 [![Payment check test printout](./media/embed-images-shapes-02.png)](./media/embed-images-shapes-02.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

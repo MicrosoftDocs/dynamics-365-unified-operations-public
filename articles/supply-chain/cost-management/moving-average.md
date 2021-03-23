@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -158,3 +157,6 @@ In this moving average example, the inventory value report is printed to support
 
 > [!NOTE]
 > You cannot reconcile the general ledger with inventory by using the **Transaction time sorting** option. The report must be printed by using the **Posting date** option.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

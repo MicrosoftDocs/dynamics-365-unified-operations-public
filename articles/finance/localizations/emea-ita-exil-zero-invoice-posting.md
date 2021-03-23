@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,3 +44,6 @@ Before you can post financial transactions for invoices that have a total amount
 The Posting invoices with zero amount feature applies to invoices that are created in the **Accounts receivable** and **Accounts payable** modules.
 
 When invoices that have an amount of 0 (zero) are posted, the system creates customer/vendor transactions and voucher transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

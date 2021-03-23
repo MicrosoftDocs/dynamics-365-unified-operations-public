@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -132,3 +131,6 @@ In the call center app, call center agents can select the pickup store or locati
 ## Additional resources
 
 [Pickup information module](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

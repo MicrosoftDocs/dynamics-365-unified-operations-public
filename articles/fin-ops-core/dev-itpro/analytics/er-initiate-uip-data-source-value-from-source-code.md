@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -139,3 +138,6 @@ You can only initiate data source values of the *User input parameter* type that
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Parse incoming documents](er-parse-incoming-documents.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

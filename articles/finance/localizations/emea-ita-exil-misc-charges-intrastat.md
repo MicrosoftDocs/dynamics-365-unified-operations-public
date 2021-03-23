@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +61,6 @@ If a **Charges percentage** value is also entered, both types of miscellaneous c
 ![Charges calculation](media/emea-ita-exil-misc-charge-kg-pic2.jpg)
 
 For more information, see [Transfer transactions to the Intrastat](tasks/transfer-transactions-intrastat.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

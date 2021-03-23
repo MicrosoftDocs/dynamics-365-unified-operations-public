@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -65,3 +64,6 @@ When you post a general budget reservation for a project, a committed cost is cr
 3. Select **Committed costs**. The **Committed costs** page appears and shows the committed costs that are related to the selected line.
 
     Committed costs for general budget reservations are based on amount, regardless of whether the committed cost includes a discrete quantity and unit cost. The committed cost quantity will always be 1.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

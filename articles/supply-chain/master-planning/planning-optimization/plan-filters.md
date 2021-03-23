@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +60,6 @@ A plan filter is set up that includes items A, B, and C. Master planning runs ar
 [View plan history and planning logs](plan-history-logs.md)
 
 [Cancel a planning job](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -140,3 +139,6 @@ Before you post a free text invoice, you can view the full accounting entry of t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

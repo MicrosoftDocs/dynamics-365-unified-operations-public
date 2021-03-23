@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,3 +69,6 @@ An invoice for 1000 USD with cash discount terms of 20D2% is posted on February 
 > [!NOTE]
 > If the Calculate cash discounts for partial payments option is selected in the Accounts receivable parameters or Accounts payable parameters pages, the exchange rate that is in effect on the date of each partial payment is used. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -71,3 +70,6 @@ This procedure walks through creating channel-specific sales price trade agreeme
 38. On the **Action Pane**, click Sell.
 39. Click **Sales price**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

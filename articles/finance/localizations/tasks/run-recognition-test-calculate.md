@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +56,6 @@ This task was created using the demo data company JPMF.
     * The Confirmation form of the impaired fixed assets is displayed.  
     * The Impairment test ID is issued.     Remember the Impairment_test_ID for later use in Propose and post.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

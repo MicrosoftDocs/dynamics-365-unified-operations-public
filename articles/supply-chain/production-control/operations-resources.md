@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -88,3 +87,6 @@ When you define an activity such as a route operation or a project hour forecast
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

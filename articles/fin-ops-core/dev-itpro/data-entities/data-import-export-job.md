@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -250,3 +249,6 @@ To download the archived execution history, go to the data management workspace 
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -62,3 +61,6 @@ This guide describes how to set up the criteria that determine what work is gene
 For sales orders and kanban orders, inventory must be reserved before the order is released to the warehouse. Otherwise, the items or allocation lines cannot be processed in a wave. For production orders, you also have the option of choosing Allow partial reservation. For example, this is useful if you have the materials that you need to start production, and can then wait until the additional materials become available to finish the process. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available.  
 25. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

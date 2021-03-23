@@ -2,13 +2,12 @@
 # required metadata 
  
 title: Upload a configuration into Lifecycle Services
-description: This topic explains how a user in the System administrator or Electronic reporting developer role can create a new Electronic reporting (ER) configuration and upload it into Microsoft Dynamics Lifecycle Services (LCS).
+description: This topic explains how to create a new Electronic reporting (ER) configuration and upload it into Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe 
 ms.date: 09/14/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -148,3 +147,6 @@ In this example, you will create a configuration and upload it into LCS for a sa
     The ER configuration that you uploaded should be listed.
 
     Note that the uploaded LCS configuration can be imported into another instance if providers have access to this LCS project.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

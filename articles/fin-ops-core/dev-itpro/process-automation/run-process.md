@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -95,3 +94,6 @@ The **ProcessScheduleWorkItem** class has many pieces of information and is desi
 | `public ProcessScheduleDateTime parmScheduledDateTime(ProcessScheduleDateTime _scheduledDateTime = scheduledDateTime)` | The date and time when the process was scheduled to run. This date and time might differ from the actual date and time when the process runs. |
 | `public UserGroupId parmOwnerId(UserGroupId _ownerId = ownerId)` | The owner of the occurrence that is being run. |
 | `public void initializeFromScheduleWorkItem(ProcessScheduleWorkItem _item)` | Initializes an instance of **ProcessScheduleWorkItem** from another instance. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

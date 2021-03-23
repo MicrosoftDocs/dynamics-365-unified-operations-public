@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -78,3 +77,6 @@ The following table shows the visualizations that are available on each report p
 | Valuations maps        | Fixed asset details |
 
 To view the analytics with data, you must first refresh the AssetTransactionMeasure aggregate measurement on the **Entity Store** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

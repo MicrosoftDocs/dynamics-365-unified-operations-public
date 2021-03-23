@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -39,3 +38,6 @@ To minimize future breaks in extensible controls, an effort has been made to dif
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

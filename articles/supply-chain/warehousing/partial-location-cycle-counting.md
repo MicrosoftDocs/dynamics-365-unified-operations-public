@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -64,3 +63,6 @@ For this example, only item number A0001 must be counted in warehouse 61.
 ## Additional resources
 
 [Cycle counting](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

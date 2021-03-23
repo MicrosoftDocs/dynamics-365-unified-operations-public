@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -53,3 +52,6 @@ You can register details of a postdated check received from a customer. You can 
 15. Click Post.
 16. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

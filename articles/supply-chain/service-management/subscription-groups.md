@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,3 +57,6 @@ You can also complete the following tasks for all subscriptions that are attache
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

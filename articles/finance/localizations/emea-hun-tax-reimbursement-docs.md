@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -87,3 +86,6 @@ When your organization reimburses a customer for VAT, you must indicate the reim
 3. Select **Tax reimbursement** &gt; **VAT settled**.
 
 The **VAT settled** check box is selected for the invoice and the invoice lines.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

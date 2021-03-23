@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -80,3 +79,6 @@ Before you can complete this task, you must import the OIOUBL electronic invoici
     * For example, enter EA.  
 10. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

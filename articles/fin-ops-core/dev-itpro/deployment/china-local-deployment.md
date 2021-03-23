@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -104,3 +103,6 @@ Due to certain technical dependencies, the following features listed will not be
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
 - [Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-welcome)
 - [Business applications availability in China – operated by 21Vianet in China](https://docs.microsoft.com/power-platform/admin/business-applications-availability-china)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

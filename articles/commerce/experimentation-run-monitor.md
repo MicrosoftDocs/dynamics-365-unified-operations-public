@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -56,3 +55,6 @@ If for any reason you need to modify your variations, follow the steps below.
 
 ## Next step
 [Promote a variation and complete an experiment](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

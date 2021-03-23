@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -59,3 +58,6 @@ The Embedded PDF viewer experience delivers a closed document that exactly match
 
 - By default, embedded drill-thru navigation links are only available while previewing PDF documents.
 - PDF documents do not support expandable and collapsible sections. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

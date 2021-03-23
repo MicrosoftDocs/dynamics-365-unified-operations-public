@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -262,3 +261,6 @@ There are two exceptions to the rule that batch orders are applicable for batch 
 1. If the formula unit of measure is different from the inventory unit of measure of the active ingredient, the batch order isn't applicable for batch balancing.
 
 A batch order that isn't applicable for batch balancing goes through the regular process cycle for batch orders.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

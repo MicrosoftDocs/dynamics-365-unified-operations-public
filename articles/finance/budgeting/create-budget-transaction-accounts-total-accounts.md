@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +49,6 @@ Therefore, you can create separate budgets for the most significant transaction 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

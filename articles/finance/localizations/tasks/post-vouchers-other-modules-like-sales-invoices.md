@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -110,3 +109,6 @@ Before you can complete this task, you must add the current fiscal year to the c
 36. Click Voucher.
     * For example, you can see that the Chinese voucher type Tran has been assigned.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

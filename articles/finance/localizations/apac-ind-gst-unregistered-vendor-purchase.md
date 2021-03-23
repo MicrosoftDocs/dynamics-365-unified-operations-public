@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +62,6 @@ This topic walks you through creating a purchase order that includes a taxable i
 
 14. Close the page.
 15. Click **Voucher** to validate the financial entries.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

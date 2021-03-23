@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +62,6 @@ You can also view when the time recording for a service order was started and st
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

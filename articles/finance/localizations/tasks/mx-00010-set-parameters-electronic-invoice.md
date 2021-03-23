@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -75,3 +74,6 @@ This procedure walks you through setting up an electronic invoice and the PAC ac
 15. In the list, click the link in the selected row.
 16. Select or clear the Send report file - PDF check box.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -88,3 +87,6 @@ The Case category hierarchy provides a list of categories that you can assign ca
     - If so, what are the activity category, type, purpose, and phase?
     - Should a follow-up activity for the case be created?
     - If so, what are the follow-up activity category, type, purpose, and phase?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

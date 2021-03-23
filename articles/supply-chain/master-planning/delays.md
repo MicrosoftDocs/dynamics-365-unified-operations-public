@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 03/31/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +61,6 @@ Additional resources
 --------
 
 [Coverage settings](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

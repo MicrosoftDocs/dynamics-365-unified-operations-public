@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/04/2020
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -82,3 +81,6 @@ To create and configure an Excel workbook so that you can edit retail transactio
 [Edit financial dimensions for retail transactions](edit-financial-dim.md)
 
 [Add fields to an Excel workbook to edit retail transactions](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

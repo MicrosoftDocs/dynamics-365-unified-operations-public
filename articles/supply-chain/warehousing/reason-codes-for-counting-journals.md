@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -147,3 +146,6 @@ The following fields will be added to the mobile device menu item when **Adjustm
 - Default counting reason code
 - Display counting reason code
 - Edit counting reason code
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

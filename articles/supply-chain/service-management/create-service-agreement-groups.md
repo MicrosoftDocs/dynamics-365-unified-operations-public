@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,3 +46,6 @@ Service agreement groups are useful for sorting and filtering service agreements
 ## Related topics
 
 [Service agreement overview](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

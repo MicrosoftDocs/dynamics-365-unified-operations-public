@@ -3,12 +3,11 @@
 
 title: Vendor collaboration mobile workspace
 description: This topic provides information about the Vendor collaboration mobile workspace. This workspace helps your vendors stay up to date about the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts.
-author: RichardLuan 
+author: kamaybac 
 manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -175,3 +174,6 @@ Any changes that have been made to the order line response are shown. However, u
 
 ### Open confirmed orders
 When the purchase order is confirmed by the customer (that is, the status of the purchase order is changed to **Confirmed**), it appears in the open confirmed order. It will remain in the list until it's registered as received by the customer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

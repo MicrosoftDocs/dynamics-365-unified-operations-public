@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 09/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -108,3 +107,6 @@ If a module encounters an error during server-side rendering, the failed module 
 [Create a page container module](create-page-containers.md)
 
 [Localize a module](localize-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

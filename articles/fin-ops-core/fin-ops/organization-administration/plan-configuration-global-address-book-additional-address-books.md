@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +61,6 @@ After you create the global address book, you can create additional address book
 **Decision:**
 
 - How many additional address books will you create?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

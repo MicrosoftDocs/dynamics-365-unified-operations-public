@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -109,3 +108,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations, v
 17. Click OK.
     * Validate debit note report  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

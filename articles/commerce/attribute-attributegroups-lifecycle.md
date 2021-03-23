@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -260,3 +259,6 @@ The default values of attributes can be overridden for individual products at th
 
     > [!NOTE]
     > If shared product media and shared product attributes are created, they apply to all the products.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

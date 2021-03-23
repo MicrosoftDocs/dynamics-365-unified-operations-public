@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -129,3 +128,6 @@ You should run backflush costing to periodically value the WIP and produce an en
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

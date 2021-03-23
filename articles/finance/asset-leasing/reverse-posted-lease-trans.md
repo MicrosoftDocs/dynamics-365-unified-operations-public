@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +60,6 @@ To revoke a reversed transaction, follow these steps.
 When you select **Reverse tracing**, a dialog box appears that shows both the original transactions and the reversed transactions, together with a linked trace number.
 
 You can also track revocations by using the appropriate **Schedules** page. The **Reverse** field is cleared, whereas the **Journal posted** field is selected. Additionally, the **Latest journal number** field is updated with the journal number of the revocation transaction, and the **Journal number** field is updated with the reversal journal number.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

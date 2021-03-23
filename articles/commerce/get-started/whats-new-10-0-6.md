@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -55,3 +54,6 @@ To better support future enhancements to headless installation, the merchant pro
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
 Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

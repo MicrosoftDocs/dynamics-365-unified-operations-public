@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,3 +70,6 @@ The purchase price records for items are also used as reference information. By 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

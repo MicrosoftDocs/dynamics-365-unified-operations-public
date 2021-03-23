@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -100,3 +99,6 @@ To learn more about how to use warehouse template to copy the configuration of a
 ## Related topic
 
 [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

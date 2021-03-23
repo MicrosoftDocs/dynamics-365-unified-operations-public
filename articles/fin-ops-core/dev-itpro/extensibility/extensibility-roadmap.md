@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -56,3 +55,6 @@ The Modern support policy provides three years of support for a release. Given t
 There is a substantial amount of work for Microsoft, partners, and customers to accomplish this goal. Workshops, office hours, Help topics, and additional resources are available for training and collaboration in this ecosystem. Internally, we are ready to build more extensibility features in both the core platform and the application. We’re working closely with partners with applications on AppSource to define patterns as they migrate to extensions.
 
 The benefits of reducing upgrade friction and enabling innovation uptake will be worth the effort to remove overlayering.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

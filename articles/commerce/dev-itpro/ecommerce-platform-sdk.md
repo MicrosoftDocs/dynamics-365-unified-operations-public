@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -113,3 +112,6 @@ The e-Commerce platform uses OpenID as the mechanism for authentication. You can
 2.  The **Retail Shared Parameters -&gt; Open ID Providers** form can be used to register additional providers.
 3.  Run distribution schedule 1110.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

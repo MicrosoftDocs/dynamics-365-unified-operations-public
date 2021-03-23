@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -162,3 +161,6 @@ After the slip journal is processed, if the amount in the **Amount to be transfe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Overview
+title: Development overview
 description: This Developer Guide provides an API and custom fields reference. It also provides information on integrating with other apps.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,6 +17,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -29,7 +29,9 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Overview
+# Development overview
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -39,13 +41,13 @@ This Developer Guide provides an API and custom fields reference. It also provid
 
 - [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)
 
-- [Human Resources entities in Common Data Service](hr-developer-entities.md)
+- [Human Resources entities in Dataverse](hr-developer-entities.md)
 
 - [Custom fields](hr-developer-custom-fields.md)
 
 - Set up data integration
   - [Choose a data integration technology](hr-admin-integration-choose-technology.md)
-  - [Configure Common Data Service integration](hr-admin-integration-common-data-service.md)
+  - [Configure Dataverse integration](hr-admin-integration-common-data-service.md)
   - [Configure integration with Finance](hr-admin-integration-finance.md)
   - [Configure integration with Dayforce](hr-admin-integration-dayforce.md)
   - [Create a recurring data export app](hr-admin-integration-recurring-data-export.md)
@@ -66,3 +68,6 @@ This Developer Guide provides an API and custom fields reference. It also provid
 - [What's new or changed in Human Resources](hr-admin-whats-new.md)
 - [Administrator Guide](hr-admin-overview.md)
 - [User Guide](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

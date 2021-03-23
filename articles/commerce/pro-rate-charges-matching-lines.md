@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -179,3 +178,6 @@ When this method of calculation is used in a partial return scenario, if the cha
 [Omni-channel advanced auto charges](omni-auto-charges.md)
 
 [Enable and configure auto charges by channel](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

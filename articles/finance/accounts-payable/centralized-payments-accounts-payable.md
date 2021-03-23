@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/12/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -305,3 +304,6 @@ Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee. The paymen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

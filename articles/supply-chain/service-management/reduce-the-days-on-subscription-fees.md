@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -59,3 +58,6 @@ Also, if the **From date** on the reduction period is January 21 (31 minus 10), 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

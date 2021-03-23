@@ -2,13 +2,12 @@
 # required metadata
 
 title: Advanced selection form pattern
-description: This article provides information about the Advanced Selection form pattern. This Dialog form pattern lets users filter and select items from a large, wide list. Like the List Panel pattern, this pattern should be used when the primary user task is to select a set of items.
+description: This article provides information about the Advanced Selection form pattern, which lets users filter and select items from a large, wide list.
 author: jasongre
 manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -69,3 +68,6 @@ Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procu
 [![Example of advanced selection](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

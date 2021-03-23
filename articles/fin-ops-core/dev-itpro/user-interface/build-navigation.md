@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -190,3 +189,6 @@ Now you’ll add a new main menu section that contains a tile that points to the
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

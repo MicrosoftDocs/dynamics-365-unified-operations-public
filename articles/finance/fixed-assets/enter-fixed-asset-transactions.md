@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -72,3 +71,6 @@ Any fixed asset transaction type can be posted in the General journal page. You 
 The Depreciation periods remaining value of the fixed asset is not updated when a depreciation transaction type journal line is manually created or imported through a data entity. This value is updated when the depreciation proposal process is used to create the journal line.
 
 For more information, see [Fixed assets integration](fixed-asset-integration.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

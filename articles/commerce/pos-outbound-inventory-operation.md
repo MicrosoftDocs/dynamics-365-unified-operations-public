@@ -9,7 +9,6 @@ manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -198,3 +197,6 @@ Fully shipped transfer orders are moved to the **Complete** tab of the **Outboun
 ## Related topics
 
 [Inbound inventory operation in POS](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

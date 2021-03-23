@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 12/05/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +56,6 @@ This procedure shows how to assign a product lifecycle state to a released produ
 2. In the list, mark the selected row.
 3. In the Product lifecycle state field, enter or select a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

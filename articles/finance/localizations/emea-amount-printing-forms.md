@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +56,6 @@ To set up full and short names for currency units and subunits for a language, c
 
 5. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

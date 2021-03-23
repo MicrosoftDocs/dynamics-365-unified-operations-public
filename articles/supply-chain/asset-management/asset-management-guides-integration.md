@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -118,3 +117,6 @@ To associate a guide with a maintenance checklist template, follow these steps.
 
 - [Dual-write overview](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Asset management overview](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

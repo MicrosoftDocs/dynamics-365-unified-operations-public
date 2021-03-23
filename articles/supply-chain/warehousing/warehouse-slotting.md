@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -386,3 +385,6 @@ After all the required elements are in place, you can set up slotting to run aut
 1. Set the recurrence to run automatically, if you want.
 
 For the exercises in the scenario, do **not** set up automatic slotting.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

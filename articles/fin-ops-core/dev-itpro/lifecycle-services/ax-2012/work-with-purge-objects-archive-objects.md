@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata
@@ -335,3 +334,6 @@ The following tables provide descriptions for the controls in the **Validate all
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

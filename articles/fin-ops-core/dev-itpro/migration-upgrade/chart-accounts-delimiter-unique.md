@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/30/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,3 +46,6 @@ If there is a conflict with the chart of accounts, the chart of accounts delimit
 
 ## How to determine if your environment requires updated delimiters 
 If delimiters in your upgraded environment are conflicting, you may experience instability when entering values in a segmented entry control or dimension entry control. This means that you will need to always use lookups or a flyout menu when entering account and dimension combinations.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

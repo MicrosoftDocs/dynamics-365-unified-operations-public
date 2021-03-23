@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 02/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -56,3 +55,6 @@ To see what's new or changed in Lifecycle Services, see the following topic:
 - [What's new or changed in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

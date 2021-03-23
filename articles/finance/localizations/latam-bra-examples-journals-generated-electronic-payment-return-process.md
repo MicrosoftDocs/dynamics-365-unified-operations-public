@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,3 +78,6 @@ When you post the approved payment lines, the three payment lines are posted to 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

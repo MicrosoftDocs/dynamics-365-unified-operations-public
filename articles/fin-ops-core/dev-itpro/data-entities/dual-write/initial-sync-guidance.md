@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -297,3 +296,6 @@ For information about known issues, see [Troubleshoot issues during initial sync
 - Position worker assignments (cdm\_positionworkerassignmentmaps)
 - Warehouse locations (msdyn\_inventorylocations)
 - Modes of delivery (msdyn\_shipvias)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

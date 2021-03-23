@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,3 +47,6 @@ The following table lists the import format that you should use when you do a co
 | 6            | BusinessUnit, 1 Department, 2 | The financial dimension attributes that are defined in the segment order.<p>You can use the **Export** page to verify how the attributes are defined.</p> |
 | 7            | 002,1,658 | <ul><li>The financial dimension value</li><li>The financial dimension, as the index that is provided in RecordDimensions</li><li>An ambiguous, unique record ID that is associated with the unique record ID from RecordTrans or RecordTrans2</li></ul> |
 | 8            | 002,1,1 | <ul><li>Dimension values that are associated with the transaction from RecordBudget</li><li>The financial dimension, as the index that is provided in RecordDimensions</li><li>An ambiguous line record ID that is aligned with the order of the transaction lines in the file</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

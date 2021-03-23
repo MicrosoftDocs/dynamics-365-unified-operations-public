@@ -7,7 +7,6 @@ author: Anasyash
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -330,3 +329,6 @@ For more information, see [Electronic messaging](../general-ledger/electronic-me
 9. Select **Generate report** to run the ER format for the financial report.
 10. If you're prompted, enter user parameters in the dialog box.
 11. Review the generated file in **Attachments**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

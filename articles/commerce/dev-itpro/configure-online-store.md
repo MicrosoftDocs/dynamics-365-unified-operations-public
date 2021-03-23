@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -68,3 +67,6 @@ The topics listed in the following table help you configure Commerce components 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

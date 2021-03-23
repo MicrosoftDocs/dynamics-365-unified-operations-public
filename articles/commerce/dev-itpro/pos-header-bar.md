@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -276,3 +275,6 @@ Follow these steps to validate the customization.
 2. Look at the header bar. The custom button that you added should be visible.
 
 You can view the status of the extension package on the [POS settings page](view-pos-extension-package-details.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

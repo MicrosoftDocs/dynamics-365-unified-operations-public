@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +62,6 @@ In addition to a bank statement, banks can provide specific messages, containing
 -   (SWE) BankGirot return – Vendor payments return format, which corresponds to Bankgirot export format
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

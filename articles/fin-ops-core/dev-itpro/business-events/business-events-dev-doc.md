@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -775,3 +774,6 @@ public DateTimeIso8601 testIsoEdtUtcDateTime(DateTimeIso8601 _value = this._test
     return this._testIsoDateTime;
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

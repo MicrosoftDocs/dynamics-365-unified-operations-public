@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -40,3 +39,6 @@ The demo data company used to create this procedure is USMF. This procedure is i
 7. In the From date field, enter a date.
 8. In the To date field, enter a date.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

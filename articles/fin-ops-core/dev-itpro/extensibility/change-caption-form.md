@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -45,3 +44,6 @@ The following illustration shows what the form caption looks like in a browser.
 
 > [!NOTE]
 > None of the other properties on the form design can be changed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

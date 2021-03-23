@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.13
 # Set up a mobile device menu item to provide a pick line overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to configure options that are related to the pick line overview for mobile device menu items that are used to process picking work. The pick line overview lets warehouse workers view and select from a list of all the work lines that are related to their current task. This capability can help workers optimize their picking sequence. The feature provides options that replace the standard **Skip** button that lets workers cycle through the lines one at a time, in a fixed order. (However, the option to use that button is still available.)
 
@@ -73,3 +71,6 @@ To set up a mobile device menu item to provide a pick line overview, follow thes
     - Use the remaining **Display field** fields to add up to seven additional display fields, as you require. In each **Display field** field, select the name of a work line field. Each line will then show a value for that field. The values will be shown in the order that you select here. You can leave some of the **Display field** fields blank if you don't require all seven values.
 
 1. On the Action Pane, select **Save**, and then close the **Field list** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

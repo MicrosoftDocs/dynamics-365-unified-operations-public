@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,3 +44,6 @@ Item verification for cluster picking works the same way as when you verify item
 |        Option        |                                    Description                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Product confirmation | Allows you to verify each piece of inventory from the mobile device when scanned. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

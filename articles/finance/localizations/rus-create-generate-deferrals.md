@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -114,3 +113,6 @@ When you generate deferrals for vendor invoices by using the periodic task, defe
 To view manually and automatically created deferrals, go to **General ledger > Deferrals > Deferrals**.
 
 ![Deferrals page, list of deferrals](media/6_Deferrals.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

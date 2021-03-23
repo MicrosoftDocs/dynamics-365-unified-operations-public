@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -353,3 +352,6 @@ The following table describes the fields for cash register payment transactions.
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

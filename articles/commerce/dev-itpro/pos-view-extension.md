@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -67,14 +66,13 @@ The following table shows the POS views that currently support extensions. It al
 | SearchPickingAndReceivingView   | No                            | Yes                          | Yes                                   |
 | CustomerOrderHistoryView        | No                            | Yes                          | No                                   |
 | SearchStockCountView            | No                            | Yes                          | No                                   |
-| StockCountDetailsView           | No                            | Yes                          | No                                   |
+| StockCountDetailsView           | No                            | Yes                          | Yes                                   |
 | ResumeCartView                  | No                            | Yes                          | Yes                                    |
 | InventoryLookupMatrixView       | No                            | No                           | Yes                                   |
 | SuspendTransactionView          | No                            | Yes                          | No                               |   
 | ManageShiftView                 | No                            | No                           | Yes                               |  
 | ReportDetailsView               | No                            | No                           | Yes                               |
 | SearchReceiptsView              | No                            | No                           | Yes                               |
-| StockCountDetailsView           | No                            | No                           | Yes                               |
 | TransferOrderDetailsView        | No                            | No                           | Yes                               |
 | FulfillmentLineView             | No                            | Yes                          | Yes                               |
 | ReturnTransactionView           | No                            | Yes                          | Yes                               |
@@ -423,3 +421,6 @@ Follow these steps to validate the customization.
     You should see the custom columns that you added.
 
 3. Select a customer, and then select the new app bar button. A dialog box should appear that contains details about the selected customer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

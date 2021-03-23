@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -90,3 +89,6 @@ The drill-down report includes the following information:
 - Debit and credit details for the actuals voucher
 - Positive and negative amounts for the budget, encumbrance, and pre-encumbrance voucher
 - Opening, closing, and running balances for the ledger account
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

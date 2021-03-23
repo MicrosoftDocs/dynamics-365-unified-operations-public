@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -55,3 +54,6 @@ The advanced bank reconciliation feature lets you import bank statements. The im
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

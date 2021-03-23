@@ -7,7 +7,6 @@ ms.date: 07/27/2020
 ms.author: margoc
 
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology:
 
 # optional metadata
@@ -103,3 +102,6 @@ The following catalog is organized from core knowledge to specific domains, and 
 | Content  | Description  | Format  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Exam MB-700: Microsoft Dynamics 365: Finance and Operations Apps Solution Architect](https://docs.microsoft.com/learn/certifications/exams/mb-700) | This exam measures your ability to accomplish the following technical tasks: identify solution requirements; design solution components; and define solution testing and management strategies. | Exam, cost varies by region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

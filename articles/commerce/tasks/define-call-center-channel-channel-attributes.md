@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 
@@ -103,3 +102,6 @@ This procedure walks through creating a new commerce channel and defining channe
 65. Click Save.
 66. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

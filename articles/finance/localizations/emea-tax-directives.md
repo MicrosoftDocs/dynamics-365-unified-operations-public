@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,3 +37,6 @@ EU Directive lists the information that is required by suppliers for their custo
 
 > [!NOTE]
 > Verify that the **Sales tax specification** field is set to **Registration currency** or **Registration and company currency** on the **Form setup** page on the **General** tab (**Accounts receivable > Setup > Forms > Form setup** or **Project management and accounting > Setup > Forms > Form setup**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

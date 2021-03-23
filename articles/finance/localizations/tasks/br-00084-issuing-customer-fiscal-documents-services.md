@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -54,3 +53,6 @@ You can issue a service fiscal document for a customer who bought services from 
 21. Close the page.
 22. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

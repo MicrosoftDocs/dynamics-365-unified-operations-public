@@ -2,13 +2,12 @@
 # required metadata
 
 title: VAT declaration for Germany
-description: This topic provides information about how to generate QR-bills (QR-slips) and process incoming QR-bills.
+description: This topic provides information about how to generate QR-bills and process incoming QR-bills.
 author: anasyash
 manager: AnnBe
-ms.date: 05/12/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -723,6 +722,10 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 > [!NOTE]
 > For sample forms of advance VAT returns that include declaration row codes, see [Forms in the VAT procedure for the year 2020](https://umsatzsteuer-voranmeldung-2020.taxpool.net/Umsatzsteuer-Voranmeldung-2020.pdf).
 
+## Prerequisite
+
+Before you begin, go to the **General ledger parameters** page and expand the **Tax options** FastTab. In the **Special report** field group, make sure that the **Include corrections** parameter isn't enabled. 
+
 ## Set up sales tax codes
 
 Set up sales tax codes by following the instructions in [Sales tax codes for VAT reporting](emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
@@ -869,16 +872,16 @@ The following table shows how to assign the sales tax reporting codes to sales t
 7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Electronic tax declaration log**, and select the required line.
 8. Select the **Preview** tab, and review the reported values.
 
-![Preview of Electronic tax declaration log](media/5_Electronic_tax_declaration_log.png)
+    ![Preview of Electronic tax declaration log](media/5_Electronic_tax_declaration_log.png)
 
-Note that a correction transaction is added to the declaration in codes **86** and **83**.
+    A correction transaction is added to the declaration in codes **86** and **83**.
 
 9. Select the paper clip symbol in the upper-right corner.
 10. Select **Open** at the top of the page, and review the XML file.
 
-![XML file](media/6_XML_file.png)
+    ![XML file to review](media/6_XML_file.png)
 
-Note that a correction transaction is added to the declaration in codes **86** and **83**.
+    A correction transaction is added to the declaration in codes **86** and **83**.
 
 ## Review sales tax report amounts 
 
@@ -963,3 +966,6 @@ You can also generate the German sales tax report by using the **Report sales ta
 | 181                | 19                   |
 | 186                | 7                    |
 | 193                | 7                    |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

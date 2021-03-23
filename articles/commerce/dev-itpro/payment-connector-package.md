@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -94,3 +93,6 @@ For information about how to apply a deployable package to an environment, see [
 ## Remove a deployable package
 
 For information about how to uninstall or remove a deployable package from an environment, see [Uninstall a package](../../fin-ops-core/dev-itpro/deployment/uninstall-deployable-package.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

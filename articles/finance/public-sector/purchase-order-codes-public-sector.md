@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,3 +48,6 @@ If you assign a confirming PO code to a purchase order on the **Unplanned purcha
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

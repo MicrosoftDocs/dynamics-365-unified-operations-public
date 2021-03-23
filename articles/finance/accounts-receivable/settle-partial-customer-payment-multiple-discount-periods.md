@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -102,3 +101,6 @@ The invoice balance is now 0.00. Arnie views the information on the **Customer t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

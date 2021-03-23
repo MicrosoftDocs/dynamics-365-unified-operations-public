@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -140,3 +139,6 @@ class WHSMinMaxReplenishmentScenarioTest extends SysTestCase
 ### Considerations
 
 You don't have to create a shortcut for every navigation node that you need. However, consider creating them for the navigation nodes that are frequently used.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

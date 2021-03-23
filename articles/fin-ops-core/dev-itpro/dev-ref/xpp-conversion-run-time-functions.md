@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/26/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -1085,3 +1084,6 @@ info(uint2str(3123456789)); //returns 3123456789 as a string.
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

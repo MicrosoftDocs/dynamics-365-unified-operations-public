@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -104,3 +103,6 @@ For more information, see the following topics:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

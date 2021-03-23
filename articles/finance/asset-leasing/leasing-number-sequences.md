@@ -8,7 +8,6 @@ manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,6 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 # Assign number sequences
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to create number sequences for lease IDs. It also explains how to create unique IDs that are used in the index revaluation process.
 
@@ -41,3 +41,7 @@ This topic explains how to create number sequences for lease IDs. It also explai
 3. Select **Number sequences** in the side bar.
 4. Select the number sequence for the **Lease ID** reference. This number sequence will be used to generate the unique identifier for each lease.
 5. Select the number sequence for the **Process ID** reference. This number sequence will be used to generate the unique identifier for each index revaluation process.
+6. Select the number sequence for the **Termination Proposal ID** reference. This number sequence will be used to generate the unique identifier for each termination proposal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

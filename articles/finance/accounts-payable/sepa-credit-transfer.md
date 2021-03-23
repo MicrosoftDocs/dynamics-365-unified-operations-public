@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -130,3 +129,6 @@ When you generate payments, the payment file is generated, and you're asked to s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

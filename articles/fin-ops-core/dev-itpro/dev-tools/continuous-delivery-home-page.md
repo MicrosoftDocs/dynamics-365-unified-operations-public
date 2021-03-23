@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/16/2019
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -63,3 +62,6 @@ FAQ and guidelines
 - [Install metadata hotfixes in development environments](../migration-upgrade/install-metadata-hotfix-package.md)
 - [Patch SQL Server Reporting Services (SSRS) in one-box environments](../migration-upgrade/patch-reporting-service-environment.md)
 - [Update the Visual Studio development tools](update-development-tools.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

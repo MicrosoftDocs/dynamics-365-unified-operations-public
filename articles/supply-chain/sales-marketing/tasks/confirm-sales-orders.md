@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -66,3 +65,6 @@ This procedure demonstrates how to confirm sales orders. You'll be shown how to 
 11. Click **OK**.
 12. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

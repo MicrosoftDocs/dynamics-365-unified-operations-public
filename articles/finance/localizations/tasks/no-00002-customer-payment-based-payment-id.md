@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -91,3 +90,6 @@ This task was created using the demo data company DEMF with the country/region o
 2. Click Show filters.
 3. Apply the following filters: Enter a filter value of "" on the "Payment ID" field using the "is not" filter operator.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

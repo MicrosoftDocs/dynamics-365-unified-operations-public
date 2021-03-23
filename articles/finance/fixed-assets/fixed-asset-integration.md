@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -99,3 +98,6 @@ For more information, see [Acquire assets through procurement](acquire-assets-pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,3 +69,6 @@ Each standard Dataverse table is extended through references to the **Intercompa
 8. After **Quotations** is extended, apply a filter that has `CUSTGROUP != "<company>"` as the query string.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Edit query dialog box for CDS Sales Quotation Header":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

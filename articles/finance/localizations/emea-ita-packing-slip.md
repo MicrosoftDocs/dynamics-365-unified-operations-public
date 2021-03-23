@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/06/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -72,3 +71,6 @@ If the details of the contractor, loader, owner, and compiler aren't set on the 
 9. In the **Additional declarations**, **Additional notes**, and **Additional instructions** fields, enter any additional information that should be printed on the packing slip.
 10. Select **OK** to post and print a packing slip that includes the transportation document information.
 11. Close the page to save your changes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

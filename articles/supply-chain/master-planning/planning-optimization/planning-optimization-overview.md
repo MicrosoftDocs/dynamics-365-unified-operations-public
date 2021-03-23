@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -80,3 +79,6 @@ The following illustration shows the data flow.
 [Apply filters to a plan](plan-filters.md)
 
 [Cancel a planning job](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

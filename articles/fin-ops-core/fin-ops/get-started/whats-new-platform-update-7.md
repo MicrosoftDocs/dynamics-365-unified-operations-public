@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -118,3 +117,6 @@ public class abFormEvent
         }
     }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

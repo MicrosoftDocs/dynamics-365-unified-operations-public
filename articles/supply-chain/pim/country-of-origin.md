@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.9
 # Country of origin
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country of origin. The country of origin feature lets you link a product to its country of origin and keep track of its product certifications.
 
@@ -94,3 +92,6 @@ When you generate a BOM report, you can include the country of origin for each p
 A report that shows information about the country of origin of each part is generated and shown. Here is an example of the report.
 
 ![Country of origin report](media/country-of-origin-report.png "Country of origin report")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

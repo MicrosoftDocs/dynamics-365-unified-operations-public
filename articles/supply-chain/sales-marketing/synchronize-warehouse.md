@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -84,3 +83,6 @@ The following illustration shows the template mapping in Data integration.
 ### Warehouses (Supply Chain Management to Field Service): Warehouse
 
 [![Template mapping in Data integration](./media/Warehouse1.png)](./media/Warehouse1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -308,3 +307,6 @@ A production order of 10 pieces is created for product D8100, "Coated Cabinet." 
     ![Cost comparison charts](./media/subcontract35_cost-comparison-charts.png)
 
 Missing setup in data.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

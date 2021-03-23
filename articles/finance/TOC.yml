@@ -72,14 +72,16 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.18 (May 2021)
+            href: get-started/whats-new-changed-10-0-18.md
+          - name: Finance 10.0.17 (April 2021)
+            href: get-started/whats-new-changed-10-0-17.md
           - name: Finance 10.0.16 (February 2021)
             href: get-started/whats-new-changed-10-0-16.md
-          - name: Finance 10.0.15 (January 2021)
-            href: get-started/whats-new-changed-10-0-15.md
-          - name: Finance 10.0.14 (November 2020)
-            href: get-started/whats-new-changed-10-0-14.md
       - name: Removed or deprecated features
         items:
+          - name: Removed or deprecated features home page
+            href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
           - name: Removed or deprecated features in Dynamics 365 Finance
             href: get-started/removed-deprecated-features-finance.md
           - name: Removed or deprecated features in previous releases
@@ -474,6 +476,8 @@
         href: accounts-receivable/tasks/create-collection-letter-sequence.md
       - name: Process collection letters
         href: accounts-receivable/tasks/process-collection-letters.md
+      - name: Process collection letters example
+        href: accounts-receivable/process-collection-letters-example.md
       - name: Set up and generate accounts receivable aging information
         href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
       - name: Customer aging report
@@ -482,6 +486,12 @@
         href: accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Advanced notes management
         href: localizations/emea-ita-exil-structured-notes.md
+      - name: References to original invoices in credit notes
+        href: accounts-receivable/original-invoice-numbers-credit-notes.md
+      - name: Numbering documents and vouchers chronologically
+        href: accounts-receivable/chrono-numbers.md
+      - name: Archive printed customer invoices with hash numbers
+        href: accounts-receivable/archive-printed-invoices.md
     - name: Budgeting
       items:
       - name: Budgeting home page
@@ -862,10 +872,14 @@
           href: asset-leasing/record-rou-asset-depreciation.md
         - name: Reverse posted lease transactions 
           href: asset-leasing/reverse-posted-lease-trans.md
+        - name: Asset leasing conventions
+          href: asset-leasing/asset-leasing-convention.md
         - name: Adjust a lease 
           href: asset-leasing/adjust-lease.md
         - name: Impair a right-of-use asset
           href: asset-leasing/impair-rou-asset.md
+        - name: Propose a lease termination  
+          href: asset-leasing/lease-termination.md
         - name: Associate a lease with a fixed asset          
           href: asset-leasing/associate-lease-with-fixed-asset.md
         - name: Record leases in foreign currencies
@@ -1028,6 +1042,8 @@
           href: general-ledger/import-currency-exchange-rates.md
         - name: One voucher
           href: general-ledger/one-voucher.md
+        - name: One voucher FAQ
+          href: general-ledger/one-voucher-faq.md
         - name: Ledger settlements
           href: general-ledger/ledger-settlements.md
       - name: Period-end close
@@ -1082,12 +1098,26 @@
           href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
         - name: Set up sales tax settlement periods
           href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-        - name: Set up withholding tax
-          href: general-ledger/tasks/set-up-withholding-tax.md
         - name: View posted sales tax transactions
           href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
         - name: Print the Sales tax payment by code report
           href: general-ledger/print-sales-tax-payment-by-code-report.md
+      - name: Withholding tax
+        items:
+        - name: Set up withholding tax
+          href: general-ledger/tasks/set-up-withholding-tax.md
+        - name: Global withholding tax
+          items: 
+          - name: Global withholding tax overview
+            href: general-ledger/global-withholding-tax-overview.md
+          - name: Set up global withholding tax
+            href: general-ledger/set-up-global-withholding-tax.md
+          - name: Withholding tax in purchase transactions
+            href: general-ledger/withholding-tax-in-purchase-transactions.md
+          - name: Withholding tax in sales transactions
+            href: general-ledger/withholding-tax-in-sales-transactions.md
+          - name: Create a withholding tax payment
+            href: general-ledger/create-a-withholding-tax-payment.md
       - name: Audit workbench
         items:
         - name: Audit policy rules
@@ -1096,6 +1126,52 @@
           href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
+    - name: Financial reporting
+      items:
+      - name: Get started with Financial reporting
+        href: general-ledger/financial-reporting-getting-started.md
+      - name: Financial reporting overview
+        href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
+      - name: Financial report components
+        href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+      - name: Currency capabilities in financial reporting
+        href: general-ledger/financial-reporting-currency-capability.md        
+      - name: Balance sheet financial reports
+        href: general-ledger/balance-sheet-financial-reports.md
+      - name: Generate financial reports
+        href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
+      - name: Income statement financial report
+        href: general-ledger/income-statement-financial-report.md
+      - name: Trial balance financial reports
+        href: general-ledger/trial-balance-financial-reports.md
+      - name: View financial reports
+        href: general-ledger/view-financial-reports.md
+      - name: Report designer interface
+        href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
+      - name: Keyboard shortcuts for financial reporter
+        href: general-ledger/financial-reporting-keyboard-shortcuts.md
+      - name: User preferences in financial report designer
+        href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
+      - name: Advanced formatting options
+        href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
+      - name: Organize report components in report designer
+        href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
+      - name: Report definitions
+        href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
+      - name: Row definitions
+        href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
+      - name: Column definitions
+        href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+      - name: Reporting tree definitions in financial reports
+        href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
+      - name: Modify row definition cells
+        href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
+      - name: Reset the financial reporting data mart
+        href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
+      - name: When to reset a data mart
+        href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
+      - name: Financial reporting FAQ
+        href: general-ledger/financial-reporting-faq.md
     - name: Finance insights
       items:
       - name: Finance insights home page
@@ -1248,6 +1324,8 @@
           href: public-sector/tasks/create-vendor-certification-type-public-sector.md
         - name: Import and create multiple one-time vendors and invoices in the public sector
           href: public-sector/tasks/import-multiple-one-time-vendors.md
+        - name: Restrict editing of accounting distributions on invoices
+          href: public-sector/restrict-edit-accounting-distributions.md
         - name: Plan for one-time vendors in the public sector
           href: public-sector/plan-one-time-vendors-public-sector.md
         - name: Control access to purchase agreements in the public sector
@@ -1332,72 +1410,42 @@
         href: public-sector/tasks/add-certification-type-vendor-public-sector.md
       - name: Calculating Canadian Harmonized Sales Tax 
         href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md        
-    - name: Financial reporting
-      items:
-      - name: Get started with Financial reporting
-        href: general-ledger/financial-reporting-getting-started.md
-      - name: Financial reporting overview
-        href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
-      - name: Financial report components
-        href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
-      - name: Currency capabilities in financial reporting
-        href: general-ledger/financial-reporting-currency-capability.md        
-      - name: Balance sheet financial reports
-        href: general-ledger/balance-sheet-financial-reports.md
-      - name: Generate financial reports
-        href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
-      - name: Income statement financial report
-        href: general-ledger/income-statement-financial-report.md
-      - name: Trial balance financial reports
-        href: general-ledger/trial-balance-financial-reports.md
-      - name: View financial reports
-        href: general-ledger/view-financial-reports.md
-      - name: Report designer interface
-        href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
-      - name: Keyboard shortcuts for financial reporter
-        href: general-ledger/financial-reporting-keyboard-shortcuts.md
-      - name: User preferences in financial report designer
-        href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
-      - name: Advanced formatting options
-        href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
-      - name: Organize report components in report designer
-        href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
-      - name: Report definitions
-        href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
-      - name: Row definitions
-        href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
-      - name: Column definitions
-        href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
-      - name: Reporting tree definitions in financial reports
-        href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
-      - name: Modify row definition cells
-        href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
-      - name: Reset the financial reporting data mart
-        href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
-      - name: When to reset a data mart
-        href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
     - name: Globalization
       items:
       - name: Globalization resources
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
-      - name: Electronic invoicing add-on
+      - name: Electronic invoicing add-in
         items: 
-        - name: Electronic invoicing add-on overview
+        - name: Electronic invoicing add-in overview
           href: localizations/e-invoicing-service-overview.md
+        - name: Electronic invoicing add-in administration components
+          href: localizations/e-invoicing-service-administration.md
+        - name: Configure the Electronic invoicing add-in in Regulatory Configuration Services (RCS)
+          href: localizations/e-invoicing-configuration-rcs.md
+        - name: Issue electronic invoices in Finance and Supply Chain Management
+          href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
         - name: Create an Azure storage account and a Key Vault
           href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-        - name: Get started with the Electronic invoicing add-on
-          href: localizations/e-invoicing-get-started.md
-        - name: Get started with Electronic invoicing add-on for Brazil
-          href: localizations/e-invoicing-bra-get-started.md
-        - name: Get started with Electronic invoicing add-on for Italy
-          href: localizations/e-invoicing-ita-get-started.md
-        - name: Get started with the Electronic invoicing add-on for Mexico
-          href: localizations/e-invoicing-mex-get-started.md
-        - name: Set up the Electronic invoicing add-on
-          href: localizations/e-invoicing-setup.md
+        - name: Get started 
+          items:
+          - name: Get started with Electronic invoicing add-in service administration
+            href: localizations/e-invoicing-get-started-service-administration.md
+          - name: Get started with the Electronic invoicing add-in
+            href: localizations/e-invoicing-get-started.md
+          - name: Get started with Electronic invoicing add-in for Brazil
+            href: localizations/e-invoicing-bra-get-started.md
+          - name: Get started with Electronic invoicing add-in for Egypt
+            href: localizations/e-invoicing-eg-get-started.md
+          - name: Get started with Electronic invoicing add-in for Italy
+            href: localizations/e-invoicing-ita-get-started.md
+          - name: Get started with the Electronic invoicing add-in for Mexico
+            href: localizations/e-invoicing-mex-get-started.md
+          - name: Set up the Electronic invoicing add-in
+            href: localizations/e-invoicing-setup.md
+        - name: Electronic invoicing add-in FAQ
+          href: localizations/e-invoicing-faq.md
       - name: Australia
         items:
         - name: Australia overview
@@ -1542,6 +1590,8 @@
             href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+          - name: NT2020.006 – Intermediary sales digital platform for NF-e
+            href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
           - name: NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
             href: localizations/bra-use-tax-exemption-nf-e.md
         - name: SPED ECD
@@ -1738,6 +1788,20 @@
           href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
         - name: Set up payment slip format
           href: localizations/tasks/set-up-payment-slip-format.md
+      - name: Egypt
+        items: 
+        - name: Egypt overview
+          href: localizations/egypt.md
+        - name: Configure registration numbers in Egypt
+          href: localizations/emea-egy-reg-numbers.md
+        - name: Configure invoice layout for Egypt
+          href: localizations/emea-egy-invoice-layout.md
+        - name: Customer electronic invoices in Egypt
+          href: localizations/emea-egy-e-invoices.md
+        - name: VAT declaration for Egypt
+          href: localizations/emea-egy-vat-declaration.md
+        - name: Withholding tax declaration for Egypt 
+          href: localizations/emea-egy-wht-declaration.md
       - name: Estonia
         items:
         - name: Estonia overview
@@ -1828,6 +1892,8 @@
           href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
         - name: Supported standards for electronic invoicing
           href: localizations/emea-oioubl-standards-electronic-invoicing.md
+        - name: Forced electronic invoices generation
+          href: localizations/emea-eur-forced-einvoices.md
         - name: Original invoice reference (Eastern Europe)
           href: localizations/tasks/ee-00004-original-invoice-reference.md
         - name: Party search using VAT ID
@@ -1960,12 +2026,14 @@
           items:
           - name: German audit file overview
             href: localizations/emea-deu-gdpdu-audit-data-export.md
-          - name: Customize audit file configuration
-            href: localizations/tasks/customize-german-audit-file-configuration.md
-          - name: Generate audit file
-            href: localizations/tasks/german-audit-file.md
           - name: Import audit file configuration
             href: localizations/tasks/import-german-audit-file-configuration.md
+          - name: Generate audit file
+            href: localizations/tasks/german-audit-file.md
+          - name: Customize audit file configuration
+            href: localizations/tasks/customize-german-audit-file-configuration.md
+          - name: Add filters to an audit file configuration
+            href: localizations/emea-deu-gdpdu-data-filtering.md
         - name: Depreciation adjustments for additional acquisitions in the second year
           href: localizations/tasks/de-00002-depreciation.md
         - name: Electronic transmission of VAT declaration (ELSTER)
@@ -1996,6 +2064,8 @@
           href: localizations/emea-cze-hun-year-end.md
         - name: Online invoicing system
           href: localizations/emea-hun-online-invoicing.md
+        - name: Sales tax reports for Hungary
+          href: localizations/emea-hun-sales-tax-reports.md
         - name: Deferred sales tax calculations
           href: localizations/emea-hun-deferred-vat.md
       - name: Iceland
@@ -2186,6 +2256,16 @@
               href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
             - name: Export services that have zero-rated tax
               href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
+            - name: Credit or debit note against an export order
+              href: localizations/apac-ind-GST-credit-debit-note-against-export-order.md
+            - name: TCS on sale of goods
+              href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+          - name: GSTR reports
+            items:
+            - name: New GSTR Offline Tool for ANX-1 and Purchase Register
+              href: localizations/apac-ind-GST-new-GSTR-offline-tool-ANX1-purchase-register.md
+            - name: New GSTR-1 and GSTR-2 return formats
+              href: localizations/apac-ind-GST-new-GSTR1-GSTR2-return-formats.md
           - name: Stock transaction
             items:
             - name: Stock transfer orders
@@ -2252,9 +2332,11 @@
           href: localizations/italy.md
         - name: VAT statements details
           href: localizations/emea-ita-vat-statements-details.md
+        - name: Quarterly VAT communication report
+          href: localizations/emea-ita-quarterly-vat-communication.md
         - name: Black list report
           href: localizations/emea-ita-black-list-report.md
-        - name: Competence date
+        - name: Competence date and fiscal journal
           href: localizations/emea-ita-competence-date.md
         - name: Depreciation of fixed assets
           href: localizations/emea-ita-depreciation-of-fixed-assets.md
@@ -2306,6 +2388,10 @@
           href: localizations/emea-ita-e-invoices.md
         - name: Yearly tax communication
           href: localizations/emea-ita-yearly-tax-communication.md
+        - name: Payment traceability
+          href: localizations/emea-ita-payment-traceability.md
+        - name: Unified posting date control
+          href: localizations/emea-ita-post-date-control.md
       - name: Japan
         items:
         - name: Japan overview
@@ -2938,6 +3024,10 @@
           href: localizations/apac-tha-substitution-and-adjustment-invoices.md
         - name: Unrealized VAT
           href: localizations/apac-tha-unrealized-vat.md
+        - name: Tax branch dimensions
+          href: localizations/apac-tha-tax-branch-dimensions.md
+        - name: Sales VAT report
+          href: localizations/apac-tha-sales-vat-report.md
         - name: Withholding tax
           href: localizations/apac-tha-withholding-tax.md          
       - name: United Arab Emirates (UAE)
@@ -3023,7 +3113,7 @@
         - name: Develop a succession plan
           href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
         - name: Enter project timesheets
-          href: ../human-resources/hr-personnel-enter-project-timesheets.md?toc=/dynamics365/finance/toc.json
+          href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
         - name: Mass hire projects
           href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
         - name: Create a mass hire project
@@ -3193,7 +3283,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
         - name: Financial performance
           href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-        - name: Financial insights
+        - name: Financial analysis
           href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
         - name: Fixed asset management
           href: fixed-assets/Fixed-asset-management-workspace.md
@@ -3305,11 +3395,11 @@
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
           - name: Prepare application specific metadata
             items: 
-            - name: (ER) Prepare application metadata to be used in RCS
+            - name: Prepare application metadata in ER to be used in RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-            - name: (RCS) Access application metadata by using ER configuration
+            - name: Access application metadata in RCS by using ER configuration
               href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-            - name: (RCS) Access application metadata by using connected applications
+            - name: Access application metadata in RCS by using connected applications
               href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
             - name: Define model mappings and select data sources 
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -3327,7 +3417,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
           - name: Upgrade your format by adopting a new base version of that format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json  
-      - name: Formula designers in Electronic reporting
+      - name: Formula designers in ER
         items:
         - name: Formula designer
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json  
@@ -3433,12 +3523,18 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
             - name: Case
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
+            - name: Contains
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/finance/toc.json
+            - name: EndsWith
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/finance/toc.json
             - name: If
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
             - name: Not
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
             - name: Or
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
+            - name: StartsWith
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/finance/toc.json
             - name: ValueIn
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
             - name: ValueInLarge
@@ -3593,7 +3689,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
             - name: "Text: Text"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-      - name: Design ER formats to generate outgoing electronic documents in various formats
+      - name: Design ER formats to generate outbound documents in various formats
         items: 
         - name: Design configurations to generate outgoing documents in Excel format
           items:
@@ -3615,11 +3711,13 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
           - name: Reuse ER configurations with Excel templates to generate reports in Word format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+          - name: Suppress Word content controls in generated reports
+            href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/finance/toc.json
         - name: Design configurations to fill out PDF templates
           href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
         - name: Embed images and shapes
           items:
-          - name: (ER) Embed images and shapes in documents that you generate
+          - name: Embed images and shapes in documents that you generate
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
           - name: Example of embedding images and shapes
             items: 
@@ -3631,7 +3729,9 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
         - name: Split generated XML files based on file size and content quantity
           href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-      - name: Update application data using Electronic reporting
+        - name: Suppress BOM characters in generated files
+          href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json
+      - name: Update application data using ER
         items:
         - name: Generate electronic documents and update application data
           href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/finance/toc.json
@@ -3677,8 +3777,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
         - name: Regulatory service (RCS)
           items:
-          - name: Regulatory Configuration Services (RCS) - Globalization features
-            href: localizations/rcs-globalization-feature.md
+          - name: Globalization features in RCS
+            href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
           - name: Download ER configurations to Finance
             items: 
             - name: Download configurations from RCS
@@ -3697,6 +3797,8 @@
               href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
             - name: Share configurations in GR  
               href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
@@ -3787,7 +3889,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
-      - name: Use Electronic reporting solutions in Finance and Operations
+      - name: Use ER solutions in Finance
         items: 
         - name: Configure the framework
           items: 
@@ -3808,19 +3910,21 @@
           - name: Destination types
             items:
               - name: Archive destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/finance/toc.json
               - name: Email destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/finance/toc.json
               - name: File destination
-                href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/finance/toc.json
               - name: Power BI destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/finance/toc.json
               - name: Printer destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/finance/toc.json
               - name: Screen destination
-                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
+                href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/finance/toc.json
           - name: Configure destinations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+          - name: Configure action-dependent destinations
+            href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
         - name: Set up a reference to an ER format
           href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
         - name: Automatically validate generated reports
@@ -3829,11 +3933,11 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
           - name: Improvements in tracing results of generated ER reports and comparisons with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-          - name: Automate testing with Electronic reporting
+          - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
         - name: Automate business processes by using Electronic reporting configurations
           items: 
-          - name: Configure Electronic reporting to pull data into Power BI
+          - name: Configure ER to pull data into Power BI
             href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
           - name: Generate printable free text invoice (FTI) forms
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
@@ -3861,6 +3965,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
           - name: Application update 10.0.11
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
+          - name: Application update 10.0.17
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -172,3 +171,6 @@ From the development tooling, existing elements such as forms can be modified fo
 ![Solution](../media/fovesolution.png)
 
 When the solution is exported, it will contain hard dependencies on the virtual entity generated in the MicrosoftOperationsERPVE solution.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

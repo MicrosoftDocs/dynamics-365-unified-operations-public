@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -192,7 +191,7 @@ Because BYOD is your own database, you must ensure that there are no active lock
 
 #### You can't export composite entities into your own database
 
-Currently, composite entities aren't supported. You must export individual entities that make up the composite entity. However, you can export both the entities in the same data project.
+Currently, composite entities aren't supported. You must export individual entities that make up the composite entity which can be done in the same data project.
 
 #### Entities that don't have unique keys can't be exported by using incremental push
 
@@ -224,3 +223,6 @@ OLE DB Destination failed the pre-execute phase and returned error code 0xC02020
 
 **Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

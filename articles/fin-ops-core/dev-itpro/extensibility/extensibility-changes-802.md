@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -94,3 +93,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Support for extensions to map: CustVendTrans
 - Support for extensions to map: CustVendTransOpen
 - Support extensibility for SQL statement:  PriceDiscAdmCheckPost.postJournal
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

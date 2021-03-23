@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -89,3 +88,6 @@ The following table lists each tax authority and the solution that you should us
 Sefaz Virtual de Contingência Rio Grande do Sul (SVC-RS)|	AM, BA, CE, GO, MA, MS, MT, PA, PE, PI, PR|	No additional solution is required|
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

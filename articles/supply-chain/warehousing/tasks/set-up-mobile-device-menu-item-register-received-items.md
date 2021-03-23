@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/16/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -61,3 +60,6 @@ You can use this guide in demo data company USMF. This procedure is intended for
 6. Select **Save**.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

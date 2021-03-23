@@ -8,7 +8,6 @@ manager: Annbe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -74,3 +73,6 @@ A posting failure can occur due to missing or incorrect setup of the GST number 
 -	The GTE set off hierarchy version is not the latest version. 
 -	There is an issue with the journal voucher description transaction for GST transactions.
 -	Per government notification, there is a change in the hierarchy of the tax settlement components.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

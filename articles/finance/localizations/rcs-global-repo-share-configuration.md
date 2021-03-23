@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -77,3 +76,6 @@ After a configuration has been created under your configuration provider, you ca
 The configuration is shared with the external organization and is available to that organization in the Global repository. From there, it can be imported into the organization's instance of RCS or into its instances of Finance and Operations apps.
 
 6. To unshare a configuration that has been previously shared with an external organization, select the configuration and click **Unshare**, and then select **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

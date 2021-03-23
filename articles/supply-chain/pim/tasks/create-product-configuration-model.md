@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -85,3 +84,6 @@ This procedure shows how to create a product configuration model and enter basic
 17. In the Per series field, enter a number.
 18. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

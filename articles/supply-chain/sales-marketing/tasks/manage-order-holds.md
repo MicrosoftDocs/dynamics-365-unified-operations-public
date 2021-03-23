@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -72,3 +71,6 @@ You can run this procedure in demo data company USMF or on your own data.
     - The **Clear and submit** action is only applicable when you use Call center functionality.  
 8. Click **Clear holds**. The hold has now been cleared from the order and removed from the list of Active holds. To see all the holds or their subset according to a specific status, change the value in the Show field.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

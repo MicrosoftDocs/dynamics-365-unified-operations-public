@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -83,3 +82,6 @@ If this information isn't specified correctly, you receive a message when you ge
 3. In the **Order type** field, select **Planned and confirmed**, **Planned**, or **Confirmed** to indicate the type of orders to project on the report.
 4. In the **Load type** field, select a load type to specify whether the workload capacity should be projected for volume or weight.
 5. In the **Workload capacity** field, select a workload capacity setup.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

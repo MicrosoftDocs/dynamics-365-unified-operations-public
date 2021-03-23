@@ -4,11 +4,10 @@
 title: Save task guides to LCS and replay them
 description: This article explains how to save task guides to Microsoft Dynamics Lifecycle Services (LCS) and then replay them.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,6 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Save task guides to LCS and replay them
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Environment details** 
 
@@ -68,3 +70,6 @@ Follow these steps to replay a task guide from LCS.
 2. Select **Open from LCS**.
 3. Select the library and the BPM node that have the saved task guide.
 4. Open the task guide.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

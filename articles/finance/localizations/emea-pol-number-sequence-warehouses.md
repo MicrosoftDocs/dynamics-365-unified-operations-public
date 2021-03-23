@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +61,6 @@ You can set up a number sequence for sales packing slips by warehouse on the **A
 
 > [!NOTE]
 > You can also set up delivery document numbering by warehouse for a sales order. To do this, select a specific warehouse on the **Packing slip** page. After you post a packing slip, the order status will not change to **Delivered** or **Received** in the sales order until all sales lines for all warehouses are posted for the sales order. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

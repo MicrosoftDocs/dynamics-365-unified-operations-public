@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -69,3 +68,6 @@ This setup lets you confirm a transport load that includes a full load or a part
 
 1. Select **Warehouse management** \> **Loads** \> **Transport loads**.
 2. On the Action Pane, on the **Ship and receive** tab, in the **Confirm** group, select **Transport**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

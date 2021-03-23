@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -62,3 +61,6 @@ This task guide requires Dynamics AX platform 7.1 or later.
 27. Refresh the page.
 28. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

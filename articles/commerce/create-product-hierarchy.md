@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -83,3 +82,6 @@ Category attribute groups can also be assigned to each group as required.
 [Manage product categories and products ](category-management-product-creation.md)
 
 [Change the sort order for merchandizing entities](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -1022,3 +1021,6 @@ For the next major release, the following features are currently planned and mor
 - Support a split load scenario for the outbound flow.
 - Allow to release for a partial quantity of the finished good and release per operation number.
 - Allow for partial quantity of the opportunistic X-dock to transfer when reporting as finished.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

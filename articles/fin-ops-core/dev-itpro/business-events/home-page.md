@@ -2,13 +2,12 @@
 # required metadata
 
 title: Business events overview
-description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 Finance and Operations applications.
+description: This topic provides information about business events, which allow external systems to receive notifications from Dynamics 365 Finance and Operations apps.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -288,3 +287,6 @@ To ensure backward compatibility of business events with versions prior to Platf
 
 > [!NOTE]
 > To ensure uninterrupted functionality, it is important to understand the backward-compatibility behavior described above before you enable security on business events.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 10/23/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -92,3 +91,6 @@ Follow these steps to enable documents to be printed from POS on a Windows print
 
 4. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 5. Select job **1090**, and then select **Run now**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

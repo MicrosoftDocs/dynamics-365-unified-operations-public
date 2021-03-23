@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -91,3 +90,6 @@ The following eight task guides are listed in the order in which you should comp
 7.  [Create configuration rules](tasks/create-configuration-rules.md)
 8.  [Create dimension-based configurations](tasks/create-dimension-based-configurations.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -87,3 +86,6 @@ To check for existing dupclicates, select **Show Duplicates**, and then delete t
 ### Enter non-exist master data
 
 When **Tax setup validation** is enabled, the system will verify entered and imported master data including HSN and SAC.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

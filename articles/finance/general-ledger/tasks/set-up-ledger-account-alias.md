@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -43,3 +42,6 @@ This procedure shows how to create an account alias that provides a shortcut for
 9. In the Initial focus field, select the dimension that will have focus when the alias is used.
     * After you type the shortcut, and the account and dimensions are populated, the Initial focus field is where the cursor or focus will move to.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

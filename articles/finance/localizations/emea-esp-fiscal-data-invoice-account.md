@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -74,3 +73,6 @@ When the **Invoice account** field is changed, the following fields can be updat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

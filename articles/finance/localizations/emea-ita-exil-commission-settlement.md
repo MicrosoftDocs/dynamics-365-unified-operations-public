@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -109,3 +108,6 @@ You can also view commission transactions on the **Invoice journal** page.
 
 > [!NOTE]
 > When you post the invoice, the system creates commission and voucher transactions. If the value in the **Commission settlement** field is **On invoice** in the sales order header, the system creates a **Settlement** record. If the value in the **Commission settlement** field is **On payment** in the sales order header, the **Settlement** record is created only after the invoice and a payment are settled.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

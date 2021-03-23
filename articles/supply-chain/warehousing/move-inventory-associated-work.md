@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +61,6 @@ For the worker who should be allowed to move reserved inventory, select the **Al
 This feature has also been back-ported to Microsoft Dynamics AX 2012 R3 and will be available as part of CU12.
 It can also be downloaded individually through KB number 3192548. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

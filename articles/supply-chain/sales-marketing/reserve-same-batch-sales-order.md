@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,3 +47,6 @@ When you reserve inventory for a product on a sales order line that is set up fo
 - The batch doesn't have enough shelf-life days remaining, based on the expiration date and best-before date, plus any customer sellable days.
 
 For items associated with a storage dimension group that has **Use warehouse management processes** enabled, you can reserve specific batch numbers by using a reservation hierarchy with the batch number inventory dimension defined above the location dimension. The **Batch reservation** page for sales and transfer order lines also lets you select and reserve multiple lines based on the available batch numbers. For more information about what to do if you are using a reservation hierarchy that has the batch number dimension below the location, see [Flexible warehouse-level dimension reservation policy](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

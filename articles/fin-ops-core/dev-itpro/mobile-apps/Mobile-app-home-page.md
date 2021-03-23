@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -157,3 +156,6 @@ The following table includes links to resources that can help you implement both
 
 ## Troubleshooting
 [Mobile platform resources](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

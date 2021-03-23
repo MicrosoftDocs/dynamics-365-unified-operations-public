@@ -7,7 +7,6 @@ manager: annbe
 ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 
@@ -102,3 +101,6 @@ Note the following limitations:
 
 - All invoices from an original sales order are included in a return electronic invoice as the related CFDI documents.
 - The scenario of a customer order return that involves an exchange is supported only for Global CFDI electronic invoices.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

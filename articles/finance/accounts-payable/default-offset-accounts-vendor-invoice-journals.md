@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -102,3 +101,6 @@ Use the following table to help decide where you should assign default accounts 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

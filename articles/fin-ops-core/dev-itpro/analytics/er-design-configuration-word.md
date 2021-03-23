@@ -2,13 +2,12 @@
 # required metadata 
  
 title: Design a new ER configuration to generate reports in Word format
-description: This topic explains how users in the System administrator or Electronic reporting functional consultant role can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents. 
+description: This topic explains how users can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 12/17/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -76,3 +75,6 @@ When you run the configured ER format, the attached Word template is used to gen
 
 - [Reuse ER configurations with Excel templates to generate reports in Word format](./tasks/er-design-configuration-word-2016-11.md)
 - [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

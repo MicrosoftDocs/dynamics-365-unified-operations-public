@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -103,3 +102,6 @@ After enabling product recommendations, you will need to add the recommendations
 [Manually create curated recommendations](create-editorial-recommendation-lists.md)
 
 [Create recommendations with demo data](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

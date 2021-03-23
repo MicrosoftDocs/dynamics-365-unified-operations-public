@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -212,3 +211,6 @@ The following illustrations show an example of a template mapping in Data integr
 ## Related topics
 
 [Prospect to cash](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

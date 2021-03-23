@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -64,3 +63,6 @@ The classes, interfaces, and extensions described in these steps are shown in th
 
 ![MapClassExtensions](media/TableMaps.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,3 +42,6 @@ Picking work is blocked because of dependent replenishment work.
 ### Issue resolution
 
 When you use wave demand replenishment, if a picking location must be replenished to fulfill the source order demand, the system creates both the replenishment work and the picking work. However, it blocks the picking work until the replenishment work is completed. This behavior is intentional, because the picking location won't have enough inventory unless the replenishment work is completed. Complete the replenishment work, and then process the picking work.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

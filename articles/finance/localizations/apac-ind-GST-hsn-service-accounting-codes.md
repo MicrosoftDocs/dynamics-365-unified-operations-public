@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -103,3 +102,6 @@ The following setup is required for the calculation of GST:
     When this charge code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
 
     
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

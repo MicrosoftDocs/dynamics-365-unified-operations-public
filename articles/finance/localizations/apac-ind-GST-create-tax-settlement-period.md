@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -55,3 +54,6 @@ Follow these steps to create a tax settlement period.
 3. Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax settlement periods**, and create a tax period for GST.
 
     ![Tax settlement period](media/tax-settlement-period.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

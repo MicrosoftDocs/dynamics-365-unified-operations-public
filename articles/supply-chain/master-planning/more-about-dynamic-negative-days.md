@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -254,3 +253,6 @@ To help guarantee that the correct values are entered for your business, you mus
 ## See also
 
 For more discussion, see the original [More about (dynamic) negative days](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/) blog post.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

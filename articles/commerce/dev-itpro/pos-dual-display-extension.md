@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -614,3 +613,6 @@ You will add a custom control column in the POS Dual display view to show the ca
 3. Add any item to the transaction. For example, add item number **0005**.
 4. Add any customer to transaction. For example, add **Karen Berg**.
 5. The dual display should show the cart, total, employee, and customer details.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

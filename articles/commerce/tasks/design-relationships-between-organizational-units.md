@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -64,3 +63,6 @@ This procedure walks through how to design the relationship between organization
 29. Click Publish.
 30. Click Close.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

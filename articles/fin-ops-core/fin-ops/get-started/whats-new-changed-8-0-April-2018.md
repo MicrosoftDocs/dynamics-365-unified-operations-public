@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -195,3 +194,6 @@ Investments address the European privacy law's requirements. Go to the [Trust Ce
 ### Accessibility enhancements
 
 Go to the [Trust Center](https://www.microsoft.com/trustcenter/compliance/accessibility) to learn about our industry-leading accessibility standards.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

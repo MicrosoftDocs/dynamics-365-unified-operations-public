@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -129,3 +128,6 @@ The following command silently installs the current installation of Retail hardw
 ```Console
 HardwareStationSetup_V10.exe -S -SkipMerchantInfo -C "C:\Temp\HardwareStationSetup_V10__20-19-35.xml"
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

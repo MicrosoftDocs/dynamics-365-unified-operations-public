@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -289,7 +288,7 @@ int strFind(str _text, str _characters, int _position, int _number)
 
 ### Return value
 
-The value of the position of the first occurrence of one of the specified characters.
+The value of the position of the first occurrence of one of the specified characters, or 0 when none found.
 
 ### Remarks
 
@@ -540,7 +539,7 @@ int strNFind(str _text, str _characters, int _position, int _number)
 
 ### Return value
 
-The position of the first occurrence of a character that isn't specified by the *\_characters* parameter.
+The position of the first occurrence of a character that isn't specified by the *\_characters* parameter, or 0 when none found.
 
 ### Remarks
 
@@ -807,3 +806,6 @@ subStr("abcdef",2,-3); //Returns the string "ab".
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -90,3 +89,6 @@ Before handing an activation account to a worker, an IT Pro must run the Validat
 9. Make sure that the register and store have a screen layout (checked by validation).
 10. Make sure that a primary address is set up for the legal entity.
 11. Make sure that the electronic funds transfer (EFT) configuration value is present.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

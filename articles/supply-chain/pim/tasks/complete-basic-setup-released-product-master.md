@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -55,3 +54,6 @@ This is the third procedure out of eight which explains how to build combination
 20. Close the page.
 21. Close the **Released product details** form.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

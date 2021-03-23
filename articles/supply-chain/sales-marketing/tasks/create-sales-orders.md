@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -70,3 +69,6 @@ The products sold by your organization may come in variants differentiated by di
     The **Totals** page displays details about the entire order. This includes the subtotal amount, which is a sum of all line net amounts adjusted for eventual line discounts, the total invoice amount, which is a subtotal amount adjusted for eventual order-level discount, charges, and sales tax, the customer credit limit situation, and more. The invoice amount is the amount that will appear on the customer's invoice document.  
     
 3. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

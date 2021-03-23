@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -53,3 +52,6 @@ This procedure shows how to prevent physical on-hand inventory from being reserv
 2. Click **Yes**.
 3. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

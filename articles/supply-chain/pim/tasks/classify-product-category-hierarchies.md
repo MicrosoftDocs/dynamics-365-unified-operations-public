@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -44,3 +43,6 @@ This topic describes how to classify a product using category hierarchies. Use c
 11. In the **Category** field, enter or select a value.
 12. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

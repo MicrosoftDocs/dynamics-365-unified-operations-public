@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -113,3 +112,6 @@ When you use the *System directed cluster picking* process, if you configure a c
 ### Issue resolution
 
 To fix this issue, edit the cluster profile, and set the **Activate positions** option to *No*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

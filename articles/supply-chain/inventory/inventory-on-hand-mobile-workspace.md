@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -134,3 +133,6 @@ Download and install the Finance and Operations mobile app:
     -   By physical inventory (This view represents the total amount.)
     -   By physical reserved (This view represents the reserved amount.)
     -   By available physical (This view represents the available amount that has no reservations.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

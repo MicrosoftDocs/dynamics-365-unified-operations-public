@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -63,3 +62,6 @@ For more information on POS and RSAT, see [Test recorder and Regression suite au
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
 Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

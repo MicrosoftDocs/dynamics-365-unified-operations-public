@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 
@@ -367,3 +366,6 @@ In addition to the refactored methods, the following extensibility enhancements 
 - Metadata change: WHSContainerLine, Relations WHSLoadLine & WHSShipmentTable.On Delete.
 - Metadata change: WHSContainerTable, Relation WHSShipmentTable.On Delete.
 - Project pricing: complete uptake of new pricing find methods.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

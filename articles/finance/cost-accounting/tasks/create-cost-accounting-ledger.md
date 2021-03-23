@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -41,3 +40,6 @@ A cost accounting ledger represents the overall reporting unit. It is defined by
 8. In the Statistical dimension field, enter or select a value.
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

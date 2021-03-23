@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,3 +53,6 @@ Depreciation without rounding is calculated as 2,444.44. As the following table 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

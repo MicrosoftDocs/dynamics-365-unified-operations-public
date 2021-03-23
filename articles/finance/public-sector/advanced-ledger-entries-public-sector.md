@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +52,6 @@ Create an advanced ledger entry, select the **Reversing entry** option, and ente
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -506,3 +505,6 @@ After the status is updated to **Complete**, the configuration is ready for depl
 5.  Select **Country/Region of Origin** as the lookup column, and then click the right arrow button.
 6.  Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,10 @@
 title: Develop a compensation structure
 description: This article walks you through creating a fixed compensation plan and enrolling employees in the plan through eligibility rules. 
 author: andreabichsel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 02/10/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-human-resources 
 ms.technology:  
  
 # optional metadata 
@@ -17,6 +16,7 @@ ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPar
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Develop a compensation structure
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article walks you through creating a fixed compensation plan and enrolling employees in the plan through eligibility rules. This article uses the USMF demo data and applies to Compensation and Benefits Managers.
 
@@ -117,3 +119,6 @@ You can't assign a fixed compensation plan to an employee until you define eligi
 
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

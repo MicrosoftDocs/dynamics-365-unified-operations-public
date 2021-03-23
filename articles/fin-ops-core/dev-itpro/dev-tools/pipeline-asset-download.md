@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -51,3 +50,6 @@ The following table describes the options that are available for this task.
 | Search Pattern | Yes | Select the type of search pattern that should be used to find the asset in the Asset library in LCS. Depending on the value that you select, the following options are available:<ul><li>**Asset ID (guid)** – If you select this value, in the **LCS File Asset Id(s)** field, enter the asset ID or a semicolon-separated list of asset IDs. Asset IDs are globally unique identifiers (GUIDs).</li><li>**Name** – If you select this value, in the **LCS File Asset Type** field, select the asset type. Then, in the **LCS File Asset Name** field, specify the name to search for. You can use an asterisk (\*) as a wildcard character in the name. For example, you might enter **MyPackage\***.</li></ul> |
 
 After a successful download, an output variable can be used to capture a list of the file paths. If there are multiple files, a semicolon-separated list of file paths is assigned to the output variable. For more information about output variables in Azure DevOps, see [Use output variables from tasks](https://docs.microsoft.com/azure/devops/pipelines/process/variables#use-output-variables-from-tasks).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

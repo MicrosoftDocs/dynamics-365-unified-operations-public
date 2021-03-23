@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +56,6 @@ This procedure walks through the process of creating a new depreciation book and
 6. In the Service life field, enter a number.
     * Notice the Depreciation periods field value is calculated after setting the Service life.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -9,7 +9,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -93,3 +92,6 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 10. For sales with government companies or other agencies, in the **Customer type** field, select **Govt company or other agencies**.
 
     ![Tax information FastTab](media/E-commerce-operator_upd.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

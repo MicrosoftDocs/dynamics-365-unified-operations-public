@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -59,3 +58,6 @@ In order to help you quickly gauge the urgency of a service order, the Gantt cha
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

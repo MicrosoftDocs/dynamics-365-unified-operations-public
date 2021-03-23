@@ -3,12 +3,11 @@
 
 title: Maintenance schedule
 description: This topic explains maintenance schedule in Asset Management.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -72,3 +71,6 @@ The illustration below shows the **All maintenance schedule** list page.
 
 ![Figure 1](media/16-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

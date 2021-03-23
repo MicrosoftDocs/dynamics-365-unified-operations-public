@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -151,3 +150,6 @@ Additional reports that are available include the **Forecast positions by budget
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

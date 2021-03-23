@@ -5,10 +5,9 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 22 (December 2018). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 02/21/2019
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -86,4 +85,6 @@ Starting in Platform update 22, the "is one of" operator in the Filter Pane and 
 ## Batch job to handle SQL index defragmentation
 In Platform update 22, a new system batch job has been introduced to rebuild fragmented indexes. Index fragmentation results in notable performance degradation in specific scenarios. To address fragmentation issues and keep the database in a top-performing state, this batch job will rebuild highly fragmented indexes periodically at a scheduled time. By default, the job scheduled to run at 3:00 AM local time every day for a maximum of 2 hours. If the batch job finds that not many fragmented indexes need to be rebuilt, it will complete early.  
 
-For more information, see [Batch job to handle SQL index defragmentation](../../dev-itpro/sysadmin/batch-job-SQL-defragmentation.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

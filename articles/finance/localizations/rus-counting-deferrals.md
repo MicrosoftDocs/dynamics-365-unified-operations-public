@@ -7,7 +7,6 @@ manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -218,3 +217,6 @@ Before you generate the **Inventory act (INV-11)** report, you must create defer
     4. On the Action Pane, select **Print** to open the **Deferrals counting** dialog box.
     5. In the **Model number** field, select the deferral model number.
     6. Select **OK** to print the **Inventory act (INV-11)** by using the Excel template for the selected model number.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

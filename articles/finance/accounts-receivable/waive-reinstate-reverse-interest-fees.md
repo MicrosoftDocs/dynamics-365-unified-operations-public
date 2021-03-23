@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -99,3 +98,6 @@ You can reverse interest transactions by using the **History** button on the **C
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

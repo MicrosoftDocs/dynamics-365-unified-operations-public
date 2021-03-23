@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -43,3 +42,6 @@ This option is useful if your business process can't wait for the OData metadata
 
 > [!NOTE]
 > When you enable this functionality, the AOS should already be running and should have served one OData request. This means that the cache is already built. This new functionality will take effect during the next AOS restart.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

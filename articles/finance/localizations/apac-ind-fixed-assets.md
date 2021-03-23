@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,3 +47,6 @@ The topics in this section provide information about fixed assets for India.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

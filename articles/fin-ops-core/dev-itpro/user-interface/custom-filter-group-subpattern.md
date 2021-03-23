@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -159,3 +158,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![Example](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

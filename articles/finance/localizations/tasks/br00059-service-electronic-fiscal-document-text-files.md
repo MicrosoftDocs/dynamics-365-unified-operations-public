@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -40,3 +39,6 @@ After a sales invoice for a service is issued in São Paulo city, you can genera
 7. In the Fiscal document type field, enter or select a value.
 8. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

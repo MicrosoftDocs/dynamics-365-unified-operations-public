@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -80,3 +79,6 @@ This scenario is a simple dialog scenario around Segmented Entry. More advanced 
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

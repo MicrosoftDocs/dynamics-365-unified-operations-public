@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -34,3 +33,6 @@ ms.dyn365.ops.version: 10.0.13
 This topic includes information and links to documentation resources for Bahrain.
 
 - [Reverse charge VAT](emea-reverse-charge.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

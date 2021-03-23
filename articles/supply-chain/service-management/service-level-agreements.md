@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -85,3 +84,6 @@ When you create a new service order for a service agreement that an SLA is assig
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

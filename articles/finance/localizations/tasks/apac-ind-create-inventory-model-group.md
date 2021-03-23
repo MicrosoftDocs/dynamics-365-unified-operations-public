@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -39,3 +38,6 @@ This procedure walks you through creating an inventory model group for capital i
 6. In the Inventory model field, select an option.
 7. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -1316,3 +1315,6 @@ These versions of the ER configurations must be imported and used in the followi
 | Version | Check-in build |
 |---------|----------------|
 | 10.0.8  | 10.0.**314.0** |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

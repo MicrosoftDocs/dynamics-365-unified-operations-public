@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -173,3 +172,6 @@ This procedure demonstrates how to set up and register transactions for an advan
 12. Close the page.
 13. Click Transactions.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

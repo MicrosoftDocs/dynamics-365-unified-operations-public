@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -124,3 +123,6 @@ When all goods have been registered, the warehouse manager or purchasing manager
 
 ## Summary
 The **Arrival overview** page can help the warehouse manager and warehouse workers achieve an overview of expected work that must be done as part of an inbound process. The page can also be used to start the item arrival process, to help guarantee that items are tracked at the first entry into the warehouse.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

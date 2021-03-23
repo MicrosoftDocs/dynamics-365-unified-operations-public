@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -677,3 +676,6 @@ Where to extend:
 How to extend:
 
 -   Extend the **isComplete()** method to build the additional logic.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

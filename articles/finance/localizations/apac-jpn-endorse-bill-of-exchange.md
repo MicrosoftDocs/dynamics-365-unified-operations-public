@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +52,6 @@ If the status of a BOE is **Endorsed**, a user can reserve its endorsement.
 - [Setup Japan payment by endorsing a customer bill of exchange](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
 - [Settle an endorsed bill of exchange](./tasks/settle-endorsed-bill-exchange.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

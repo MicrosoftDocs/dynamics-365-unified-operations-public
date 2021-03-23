@@ -8,7 +8,6 @@ manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -67,3 +66,6 @@ Complete the procedures in this topic to export goods that have zero-rated tax.
 
 1. Select **Inquiries** \> **Shipping bill**.
 2. Select **Voucher**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

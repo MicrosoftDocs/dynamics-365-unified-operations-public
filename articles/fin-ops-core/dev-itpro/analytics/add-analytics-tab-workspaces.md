@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -181,3 +180,6 @@ public static void initializeReportControl(
 | showFilterPane   | A Boolean value that indicates whether the filter pane should be shown (**true**) or hidden (**false**).     |
 | showNavPane      | A Boolean value that indicates whether the navigation pane should be shown (**true**) or hidden (**false**). |
 | defaultFilters   | The default filters for the Power BI report.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

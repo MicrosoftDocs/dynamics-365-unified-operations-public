@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,3 +53,6 @@ The following options become available for selection when the work type is pick 
 | Piece picking confirmation | Available for pick and counting work types. Product confirmation is automatically selected. Allows you to confirm each piece of inventory from the mobile device. |
 |  Maximum number of pieces  |                   Available for pick work if piece picking confirmation is enabled. Sets a limit to the number of pieces that you must confirm.                   |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

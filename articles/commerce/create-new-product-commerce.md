@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -118,3 +117,6 @@ The following image shows an example configuration for a released product.
 [Create legal entities](channels-legal-entities.md)
 
 [Create a variant group](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

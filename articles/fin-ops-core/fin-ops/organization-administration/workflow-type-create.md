@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +51,6 @@ You create workflow types to define the following elements:
 - [Create a workflow document class](workflow-type-document-create.md)
 - [Create a SubmitToWorkflow class](workflow-type-submit-to-workflow.md)
 - [Associate a workflow document class with a workflow type](workflow-type-associate-document.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

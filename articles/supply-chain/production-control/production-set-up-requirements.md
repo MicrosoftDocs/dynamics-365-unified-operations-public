@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -84,3 +83,6 @@ If you're working with routes, operations must be defined for every production r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

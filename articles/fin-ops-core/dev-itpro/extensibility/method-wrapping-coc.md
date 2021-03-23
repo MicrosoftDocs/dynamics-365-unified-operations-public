@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -445,3 +444,6 @@ Constructors cannot be extended. A **new** method that is defined on an extensio
 
 ### Tooling
 For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

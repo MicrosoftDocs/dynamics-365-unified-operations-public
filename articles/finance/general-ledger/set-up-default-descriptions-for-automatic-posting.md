@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -92,3 +91,6 @@ After you complete the steps in the [Set up default descriptions](#set-up-defaul
 2. In the **Reference table** field, select the database table from which to add parameter data to the description.
 3. In the **Reference field** field, select the field from which to add parameter data to the description.
 4. Repeat steps 1 through 3 to add more parameters.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -213,3 +212,6 @@ In General ledger consolidation, a new option has been added to consolidate eith
 -  You can now choose whether to use the accounting currency or the reporting currency from the source company as the transaction currency in the consolidation company.
 
 - The accounting or reporting currency amounts from the source company will be copied directly to the accounting or reporting currency amounts in the consolidation company, if either of the currencies are the same. The accounting and reporting currency amounts in the consolidation company are calculated using the exchange rate if neither of the currencies is the same.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

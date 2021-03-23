@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -52,3 +51,6 @@ The following table describes the options that are available for this task.
 | LCS Asset Name | No | Enter the name to show for the asset in the Asset library. If you don't enter a name here, the file name will be used. |
 | LCS Description | No | Enter the description to show for the asset in the asset details. |
 | Wait for Validation | No | For asset types that require validation, use this check box to instruct the task to wait until validation of the asset has either succeeded or failed. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

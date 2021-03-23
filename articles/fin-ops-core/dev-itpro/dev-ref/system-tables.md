@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -3651,3 +3650,6 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
