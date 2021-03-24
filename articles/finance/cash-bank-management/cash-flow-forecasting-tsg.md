@@ -63,7 +63,7 @@ The Cash flow forecast calculation method has two important selection options. T
 
 ### How do I improve the performance of the cash flow forecasting recurring batch job?
 
-We recommend running the your cash flow forecast should be calculated once each day during the off-peak hours using the New calculation method. We recommend using this approach six days per week. Then run a cash flow forecast once each week using the **Total** calculation method on the day with the least amount of activity.
+We recommend running your cash flow forecast once each day during the off-peak hours using the **New** calculation method. We recommend using this approach six days per week. Then run a cash flow forecast once each week using the **Total** calculation method on the day with the least amount of activity.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
