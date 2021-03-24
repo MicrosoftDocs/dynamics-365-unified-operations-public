@@ -112,4 +112,7 @@ Before you can assign a skill to a person or a job, create a skill-mapping searc
 
 ## See also
 
+[Enter skills](hr-develop-enter-skills.md)<br>
+[Map skills](hr-develop-map-skills.md)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
