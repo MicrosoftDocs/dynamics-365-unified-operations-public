@@ -37,6 +37,6 @@ This topic provides links to documentation resources for Lithuania.
 - [Invoice and packing slip numbering](emea-invoices-packing-slips-numbering.md)
 - [VAT statement details](emea-ltu-vat-statement-details.md)
 - [i.SAF reporting](emea-ltu-isaf.md)
-
+- [Standard Audit File for Tax (SAF-T)](emea-ltu-saf-t.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
