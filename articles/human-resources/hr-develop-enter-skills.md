@@ -50,20 +50,33 @@ To enter skills without requiring approval, you must create a workflow to auto-a
 
 4. In the **Create workflow** pane, select **Worker skills**.
 
-    [![Select Worker skills workflow](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
+   [![Select Worker skills workflow](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
 5. In the **Open this file?** dialogue, select **Open**. When prompted, enter your credentials.
 
 6. In the workflow editor, select the **Approve skills** workflow element and drag it onto the canvas.
 
-    [![Select Approve skills workflow element](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
+   [![Select Approve skills workflow element](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
 7. Connect the **Start** element to the **Approve skills 1** element, and then connect the **Approve skills 1** element to the **End** element. You might need to scroll down to see the **End** element. You can drag it closer to the other elements, if desired.
 
-    [![Connect workflow elements](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
+   [![Connect workflow elements](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
-8. Right-click the **Approve skills 1** element, and then select **Properties**.
+8. Double-click the **Approve skills 1** workflow element, and then right-click the **Step 1** element. Right-click the **Step 1** element, and then select **Properties**.
 
+9. In the **Properties** window, select **Condition** on the left-hand nav bar.
+
+10. Select **Run this step only when the following condition is met**.
+
+11. Select **Add condition**. After **Where**, select **Employee self service skills**, and then select **Employee self service skills.Person**. After **is**, select **field**, and then select **User to person relationship.Person**.
+
+12. Select **Assignment** on the left-hand nav bar.
+
+13. On the **Assignment type** tab, select **Hierarchy**.
+
+14. On the **Hierarchy selection** tab, in the **Hierachy type:** field, select **Managerial hierarchy**.
+
+15. Select **Close**, and then select 
 
 For more information about creating workflows, see [Workflow system overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=/dynamics365/human-resources/toc.json).
 
