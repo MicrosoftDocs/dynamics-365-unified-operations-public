@@ -29,9 +29,8 @@ A full markdown block is shown at the top of this file. The metadata is divided 
 Here are some key things to note about metadata.
 
 - **title** - The title will appear in search engine results. 
-    - You can add a pipe (|) followed by the product name (for example, `title: Action search`). 
     - The title doesn't need be identical to the title in your H1 heading, though we prefer that the TOC entry, the title, and the H1 heading all match. 
-    - The title should contain 65 characters or fewer (including | PRODUCT NAME).
+    - The title should contain 65 characters or fewer.
 - **description** - This is the full description that appears in the search results. It should contain 160 characters or fewer.
 - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
 - **manager** - Use "tonyafehr" in this field.
