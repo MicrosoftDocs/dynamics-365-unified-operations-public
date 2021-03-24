@@ -5,7 +5,7 @@ title: Configure ER formats to use parameters that are specified per legal entit
 description: This topic explains how you can configure Electronic reporting (ER) formats to use parameters that are specified per legal entity.
 author: NickSelin
 manager: AnnBe
-ms.date: 10/26/2019
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -53,14 +53,14 @@ We recommend that you complete the steps in the [Support parameterized calls of 
 
 ## Import ER configurations into RCS
 
-From [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=851448), download the **Support parameterized calls of ER data sources of CALCULATED FIELD type** zip file. This zip file contains the following ER configurations that must be extracted and stored locally.
+Download and locally store the following ER configurations.
 
 | **Content description**                        | **File name**                                        |
 |------------------------------------------------|------------------------------------------------------|
-| Sample **ER data model** configuration file    | Model to learn parameterized calls.version.1.xml     |
-| Sample **ER metadata** configuration file      | Metadata to learn parameterized calls.version.1.xml  |
-| Sample **ER model mapping** configuration file | Mapping to learn parameterized calls.version.1.1.xml |
-| Sample **ER format** configuration             | Format to learn parameterized calls.version.1.1.xml  |
+| Sample **ER data model** configuration file    | [Model to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/2/d/b/2db913a0-3622-494e-91a2-97fc494af9b9/Modeltolearnparameterizedcalls.version.1.xml)     |
+| Sample **ER metadata** configuration file      | [Metadata to learn parameterized calls.version.1.xml](https://download.microsoft.com/download/1/b/3/1b343968-5a47-4000-b5a8-6487698ef4c0/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Sample **ER model mapping** configuration file | [Mapping to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/8/6/6/866e0ab6-2e05-4d98-9d52-d2da2038f6e4/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Sample **ER format** configuration             | [Format to learn parameterized calls.version.1.1.xml](https://download.microsoft.com/download/e/3/9/e392eadc-b9b4-4834-95c3-b8066dd00b9c/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 Next, sign in to your RCS instance.
 
