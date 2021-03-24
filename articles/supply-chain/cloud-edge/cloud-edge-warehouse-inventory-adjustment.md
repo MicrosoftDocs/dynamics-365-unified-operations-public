@@ -33,31 +33,31 @@ ms.dyn365.ops.version: 10.0.19
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This feature is used when running [Cloud and edge scale units for manufacturing and warehouse management workloads](cloud-edge-workload-warehousing.md).
+This feature is used when running cloud and edge scale units for [manufacturing workloads](cloud-edge-workload-manufacturing.md) and [warehouse management workloads](cloud-edge-workload-warehousing.md).
 
-When a scale unit warehouse management workload does an inbound or outbound warehouse app inventory on-hand adjustment, the physical on-hand update will get processed via a **Warehouse management > Periodic tasks > Warehouse inventory adjustment journal**.
+When a worker does an inventory adjustment using the warehouse app against a scale unit warehouse management workload, the physical on-hand update must get processed using the **Warehouse inventory adjustment journal** page (**Warehouse management > Periodic tasks > Warehouse inventory adjustment journal**).
 
-The following warehouse app work processes are currently using the **Warehouse inventory adjustment journal** on the scale unit workloads:
--	Adjustment in/out
--	Cycle counting
--	License plate loading
+The following warehouse app work processes currently use the **Warehouse inventory adjustment journal** on scale unit workloads:
 
-Several inventory transactions will get created as part of a cloud & edge inventory adjustment process because the two deployments ‘share’ the inventory. Let’s look at an example of adding on-hand.
+- Adjustment in/out
+- Cycle counting
+- License plate loading
+
+Several inventory transactions are created as part of a cloud and edge inventory adjustment process because the two deployments share the inventory. Let's look at an example of adding on-hand.
 
 ## Inventory adjustment example
 
-First the scale unit workload will create a Warehouse inventory adjustment transaction for the positive physical adjustment which will get synchronized to the hub and thereby result in increase of the on-hand on the hub.
+First, the scale unit workload creates a warehouse inventory adjustment transaction for the positive physical adjustment, which will be synchronized to the hub and thereby result in an increase of the on-hand on the hub.
 
 | Type                                    | Scale unit | Direction | Hub |
 |-----------------------------------------|------------|-----------|-----|
 | Warehouse inventory adjustment          | +1         | ->        | +1  |
 
-
-The hub will now process a counting journal posting via the  [Message processor messages](cloud-edge-message-processor-messages.md) to get the cost updated for the additional inventory on-hand and to not get double inventory on-hand the hub will create an offset transaction as part of this process and thereby remove the previously recorded on-hand related to the Warehouse inventory adjustment.
+The hub now processes a counting journal posting via the  [Message processor messages](cloud-edge-message-processor-messages.md) update the additional inventory on-hand. To prevent double inventory on-hand, the hub creates an offset transaction as part of this process and thereby removes the previously recorded on-hand related to the warehouse inventory adjustment.
 
 | Type                                    | Scale unit | Direction | Hub |
 |-----------------------------------------|------------|-----------|-----|
 | Counting                                | +1         | <-        | +1  |
 | Warehouse inventory adjustment (Offset) | -1         | <-        | -1  |
 
-You can on the hub from the first **Warehouse inventory adjustment journal** created by the scale unit inquire and jump to both the *Counting journal* and the *Offset journal* which gets created as part of the adjustment process by the hub.
+Once a scale unit has created a *Warehouse inventory adjustment journal* on the hub, you can review both the *Counting journal* and the *Offset journal*, which are created by the hub as part of the adjustment process.

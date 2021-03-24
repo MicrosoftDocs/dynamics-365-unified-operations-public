@@ -55,7 +55,7 @@ A scale unit can maintain only the data that it owns. The data ownership concept
 The scale units own the following data:
 
 - **Shipment wave processing data** – Selected wave process methods are handled as part of the scale unit wave processing.
-- **Work processing data** – The warehouse work getting created on a scale unit will be in the ownership of this specific scale unit. The following types of work order processing are supported:
+- **Work processing data** – Warehouse work created on a scale unit will be owned by this specific scale unit. The following types of work order processing are supported:
 
   - **Inventory movements** (manual movement and movement by template work)
   - **Cycle counting** and the approval/rejection process as part of counting operations
@@ -63,7 +63,7 @@ The scale units own the following data:
   - **Sales orders** (simple picking and loading work)
   - **Transfer orders** (only outbound with simple picking and loading work)
 
-- **Warehouse order receipt data** – This data is used only for purchase orders which have been released to a warehouse.
+- **Warehouse order receipt data** – This data is used only for purchase orders that have been released to a warehouse.
 - **License plate data** – License plates can be created on the hub and the scale unit. Dedicated conflict handling has been provided. Note that this data isn't warehouse-specific.
 
 ## Outbound process flow
@@ -137,7 +137,7 @@ The following work order types are currently supported for WES workloads on scal
 - Cycle counting
 - Purchase orders (linked to warehouse orders)
 
-No other types source-documents processing or warehouse work are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (transfer receipt), this would need to get processed against the hub instance.
+No other types source-documents processing or warehouse work are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (transfer receipt); instead, this must be processed by the hub instance.
 
 > [!NOTE]
 > Mobile device menu items and buttons for unsupported functionalities aren't shown in the _warehouse app_ when it is connected to a scale unit deployment.
@@ -194,14 +194,14 @@ The following table shows which outbound features are supported, and where they 
 | Maintain shipments for wave                                  | Yes | No |
 | Warehouse work processing (incl. license plate print)        | No  | <p>Yes, but only for the above mentioned supported capabilities. |
 | Cluster picking                                              | No  | Yes|
-| Manual packing processing, incl. 'Packed container picking' work processing                                           | No <P>Some processing can be done after a initial picking process handled by a scale unit, but not recommended due to following blocked operations.</p>  | No  |
-| Remove container from group                        | No  | No                           |
+| Manual packing processing, incl. 'Packed container picking' work processing | No <P>Some processing can be done after a initial picking process handled by a scale unit, but not recommended due to following blocked operations.</p>  | No |
+| Remove container from group                                  | No  | No |
 | Outbound sorting processing                                  | No  | No |
 | Printing of load related documents                           | Yes | No |
 | Bill of lading and ASN generation                            | Yes | No |
-| Shipment confirm                    | Yes  | No |
-| Shipment confirmation with "Confirm and transfer"                    | No  | No |
-| Packing slip and invoicing processing                | Yes | No |
+| Shipment confirm                                             | Yes | No |
+| Shipment confirmation with "Confirm and transfer"            | No  | No |
+| Packing slip and invoicing processing                        | Yes | No |
 | Short picking (sales and transfer orders)                    | No  | No |
 | Over picking (sales and transfer orders)                     | No  | No |
 | Change of work locations (sales and transfer orders)         | No  | Yes|
@@ -220,30 +220,30 @@ The following table shows which inbound features are supported, and where they a
 
 | Process                                                          | Hub | WES workload on a scale unit<BR>*(Items marked "Yes" apply only for warehouse orders)*</p> |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Source&nbsp;document&nbsp;processing                                       | Yes | No |
+| Source&nbsp;document&nbsp;processing                             | Yes | No |
 | Load and transportation management processing                    | Yes | No |
-| Inbound shipment confirmation                                            | Yes | No |
+| Inbound shipment confirmation                                    | Yes | No |
 | Purchase order release to warehouse (warehouse order processing) | Yes | No |
-| Cancellation of warehouse order lines<p>Note that this only is supported when no registration has happened against the line</p>          | Yes | No |
+| Cancellation of warehouse order lines<p>Note that this only is supported when no registration has happened against the line</p> | Yes | No |
 | Purchase order item receiving and put away                       | <p>Yes,&nbsp;when&nbsp;there&nbsp;isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p> |
-| Purchase order line receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p></p> |
-| Return order receiving and put away                               | Yes | No |
-| Mixed license plate receiving and put away                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
-| Load item receiving                                             | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
-| License plate receiving and put away                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
-| Transfer order item receiving and put away                        | Yes | No |
-| Transfer order line receiving and put away                        | Yes | No |
-| Cancel work (inbound)                                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but only when the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) is cleared</p> |
-| Purchase order product receipt processing                          | Yes | No |
-| Purchase order receiving with underdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No, because you can only cancel the full warehouse order line quantities |
-| Purchase order receiving with overdelivery                        | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes  |
-| Receiving with creation of *Cross docking*  work                   | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Purchase order line receiving and put away                       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, when a purchase order isn't part of a <i>load</i></p></p> |
+| Return order receiving and put away                              | Yes | No |
+| Mixed license plate receiving and put away                       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Load item receiving                                              | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| License plate receiving and put away                             | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
+| Transfer order item receiving and put away                       | Yes | No |
+| Transfer order line receiving and put away                       | Yes | No |
+| Cancel work (inbound)                                            | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | <p>Yes, but only when the <b>Unregister receipt when canceling work</b> option (on the <b>Warehouse management parameters</b> page) is cleared</p> |
+| Purchase order product receipt processing                        | Yes | No |
+| Purchase order receiving with underdelivery                      | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No, because you can only cancel the full warehouse order line quantities |
+| Purchase order receiving with overdelivery                       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | Yes  |
+| Receiving with creation of *Cross docking*  work                 | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of *Quality order* work                  | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of *Quality item sampling* work          | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with creation of *Quality in quality check* work       | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
 | Receiving with quality order creation                            | <p>Yes, when there isn't a warehouse order</p><p>No, when there is a warehouse order</p> | No |
-| Work processing - Directed by *Cluster putaway*                             | Yes | No |
-| Work processing with *Short pick*                                           | Yes | No |
+| Work processing - Directed by *Cluster putaway*                 | Yes | No |
+| Work processing with *Short pick*                               | Yes | No |
 | License plate loading                                           | Yes | Yes |
 
 ### Warehouse operations and exception handing
@@ -260,7 +260,7 @@ The following table shows which warehouse operations and exception handing featu
 | Movement by template                               | Yes | Yes                          |
 | Warehouse transfer                                 | Yes | No                           |
 | Create transfer order from warehouse app           | Yes | No                           |
-| Adjustment (in/out)                                | Yes | Yes<p>But not for the *Adjust out* scenario where inventory reservation must get removed via the setting **Remove reservations** on the *Inventory adjustment types*</p>                           |
+| Adjustment (in/out)                                | Yes | Yes<p>But not for the *adjust out* scenario where inventory reservation must be removed using the **Remove reservations** setting on the inventory adjustment types.</p>                           |
 | Inventory status change                            | Yes | No                           |
 | Cycle counting and Counting discrepancy processing | Yes | Yes                           |
 | Reprint label (license plate printing)             | Yes | Yes                          |
