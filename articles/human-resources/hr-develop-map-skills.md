@@ -54,4 +54,9 @@ You can create a skill profile analysis to view a list of the competencies of a 
 
 To create a gap analysis, go to **Employee development > Links > Skill gap analysis job - person**. To create a skill profile analysis, go to **Employee development > Links > Skill profile analysis**.
 
+## See also
+
+[Configure skills](hr-develop-skills.md)<br>
+[Enter skills](hr-develop-enter-skills.md)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
