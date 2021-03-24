@@ -100,6 +100,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [In-house assets for servicing](in-house-assets.md)
 + [Onhand inventory availability](inventory-availability.md)
 + [Integrated worker, job, and position](integrated-hr.md)
++ [Using Power Portal with the Party data model](party-gab-portal.md)
 + [Note integration](notes-integration.md)
 + [Mapping reference](mapping-reference.md)
 
