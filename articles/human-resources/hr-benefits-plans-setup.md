@@ -5,7 +5,7 @@ title: Create a benefits plan
 description: Set up benefit plans in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
-ms.date: 04/06/2020
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -125,7 +125,7 @@ You can view the workers who are enrolled in a selected benefit plan.
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Enrolled workers**.
+2. On the **Benefits** tab in the navigation bar, select **Enrolled workers**.
 
 ## Attach coverage options
 
@@ -133,7 +133,7 @@ You can add coverage options to the selected benefits plan. Attaching coverage o
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Attach coverage options**.
+2. On the **Benefits** tab in the navigation bar, select **Attach coverage options**.
 
 ## Override eligibility rules
 
@@ -141,7 +141,7 @@ You can add workers to a plan as exceptions to the eligibility rules. Each worke
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Eligibility rule override**.
+2. On the **Benefits** tab in the navigation bar, select **Eligibility rule override**.
 
 ## View attached periods
 
@@ -157,13 +157,13 @@ You can provide a description of the plan to help employees with their benefits 
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Plan description**.
+2. On the **Benefits** tab in the navigation bar, select **Plan description**.
 
 ## View flex credit programs
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Flex credit programs**.
+2. On the **Benefits** tab in the navigation bar, select **Flex credit programs**.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
