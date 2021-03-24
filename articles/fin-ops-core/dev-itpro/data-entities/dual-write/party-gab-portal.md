@@ -35,7 +35,7 @@ To create these new table permissions, follow these steps:
 
 1. Sign in to [Power Apps](https://make.powerapps.com), and go to your apps.
 2. Select your Portal Management app.
-3. In the side bar, select **Security > Entity permissions**.
+3. In the side bar, select **Security > Table permissions**.
 
     You must create three new permissions:
 
@@ -55,19 +55,19 @@ To create these new table permissions, follow these steps:
 5. Create and save a new permission for the Party to Account connection, setting these parameters:
 
     + **Name**: Party to Account Connection (or your choice)
-    + **Entity Name**: account
+    + **Table Name**: account
     + **Website**: Customer Portal
     + **Scope**: Parent
     + **Privileges**: Select all
-    + **Parent Entity Permission**: Contact to Party Connection
+    + **Parent Table Permission**: Contact to Party Connection
 
 6. Create and save a new permission for the Account to Order connection, setting these parameters:
 
     + **Name**: Account to Order Connection (or your choice)
-    + **Entity Name**: salesorder
+    + **Table Name**: salesorder
     + **Website**: Customer Portal
     + **Scope**: Parent
     + **Privileges**: Select all
-    + **Parent Entity Permission**: Party to Account Connection
+    + **Parent Table Permission**: Party to Account Connection
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
