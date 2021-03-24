@@ -103,4 +103,9 @@ For more information about creating workflows, see [Workflow system overview](ht
 
 4. When you're done entering skills, select **Save**.
 
+## See also
+
+[Configure skills](hr-develop-skills.md)<br>
+[Map skills](hr-develop-map-skills.md)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
