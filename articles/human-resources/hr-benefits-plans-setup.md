@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Create a benefits plan
+# Create a benefit plan
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -50,9 +50,8 @@ This article shows you how to set up benefit plans in Dynamics 365 Human Resourc
    | **Program** | Specifies a program to optionally assign the plan to. |
    | **Bundle** | Specifies a bundle to optionally assign the plan to. |
    | **Master** | Specifies whether the plan is the master plan within the bundle it is assigned to. |
-   | **Status** | Indicates the current status of the benefits plan. The default value is Active. If you change the status to Inactive, the plan won’t be available as a selection during enrollment. |
    | **Valid from date and time** | The date and time the plan starts. The default value is the current system date. |
-   | **Valid to date and time** | The date and time the plan ends (the status is set to Inactive). The default value is 12/31/2154, which signifies never. |
+   | **Valid to date and time** | The date and time the plan ends. The default value is 12/31/2154, which signifies never. |
 
 4. On the **Configuration** tab, specify values for the following fields, depending on the type of plan you're creating:
 
@@ -152,13 +151,13 @@ You can see a list of the available benefits periods.
 
 2. Select **Periods**.
 
-## View plan information
+## View plan description
 
-You can provide a description of the plan to help employees with their benefits selections. The plan information you enter here displays in Employee self service when hovering on the plan in the coverage options list.
+You can provide a description of the plan to help employees with their benefits selections. The plan description you enter here displays in Employee self service when hovering on the plan in the coverage options list.
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Plan information**.
+2. Select **Plan description**.
 
 ## View flex credit programs
 
