@@ -149,7 +149,7 @@ You can see a list of the available benefits periods.
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
-2. Select **Periods**.
+2. Select the **Periods** tab in the navigation bar.
 
 ## View plan description
 
