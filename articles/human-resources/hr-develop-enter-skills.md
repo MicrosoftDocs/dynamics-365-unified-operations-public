@@ -62,7 +62,7 @@ To enter skills without requiring approval, you must create a workflow to auto-a
 
     [![Connect workflow elements](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
-8.  Right-click the **Approve skills 1** element, and then select **Properties**.
+8. Right-click the **Approve skills 1** element, and then select **Properties**.
 
 
 For more information about creating workflows, see [Workflow system overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=/dynamics365/human-resources/toc.json).
