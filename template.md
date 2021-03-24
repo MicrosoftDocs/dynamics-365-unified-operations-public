@@ -31,36 +31,20 @@ Here are some key things to note about metadata.
 - **title** - The title will appear in search engine results. 
     - You can add a pipe (|) followed by the product name (for example, `title: Action search`). 
     - The title doesn't need be identical to the title in your H1 heading, though we prefer that the TOC entry, the title, and the H1 heading all match. 
-    - The title should contain 65 characters or less (including | PRODUCT NAME).
-- **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
+    - The title should contain 65 characters or fewer (including | PRODUCT NAME).
+- **description** - This is the full description that appears in the search results. It should contain 160 characters or fewer.
 - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
 - **manager** - Use "tonyafehr" in this field.
 - **ms.date** - This should be the first proposed publication date, in the mm/dd/yy format.
 - **ms.topic** - Enter "article" here.
-- **ms.prod**  - Leave this blank.
-- **ms.service**: Use these values:
-    - `dynamics-ax-platform`: core content (fin-ops-core folder)
-    - `dynamics-ax-applications`: Finance and Supply Chain
-    - `dynamics-365-commerce`: Commerce
-    - `dynamics-365-talent`: Talent
-    - `dynamics-human-resources`: Human Resources
-- **ms.technology** 
-
-- **Optional metadata**
-    - **audience** - Use these values: Application User, Developer, or IT Pro. If you use more than one value, separate them with a comma.
-    - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
-    - **ms.custom** - Add NotInToc if the topic is not in the table of contents. If you use more than one value, separate them with a comma.
-    - **ms.search.region** - Use "global" or enter a country-region value.
-    - **ms.author** - Use your Microsoft alias.  
-    - **ms.search.industry** - Leave blank for most, retail, public sector
-    - **ms.search.validFrom** - Month/year of release that feature was introduced in, in format yyyy-mm-dd.
-    - **ms.dyn365.ops.version** - Name of release that feature was introduced in, see list here: [Help system and Versions metadata for docs topics](https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29])
-
-- **Metadata set at folder-level**
-    - Do not add metadata for these in your file, unless the value is different from the folder level.
-    - To find the folder-level setting, see [docfx.json](articles/docfx.json).
-    - Set at folder level:
-        - **ms.search.scope**: The values are mostly self-explanatory. **Core** means to show the topic in the Help Pane (current). **ShowInHelp** means to show the topic in the Help Pane (future).
+- **audience** - Use these values: Application User, Developer, or IT Pro. If you use more than one value, separate them with a comma.
+- **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
+- **ms.custom** - Add NotInToc if the topic is not in the table of contents. If you use more than one value, separate them with a comma.
+- **ms.search.region** - Use "global" or enter a country-region value.
+- **ms.author** - Use your Microsoft alias.  
+- **ms.search.industry** - Leave blank for most, retail, public sector
+- **ms.search.validFrom** - Month/year of release that feature was introduced in, in format yyyy-mm-dd.
+- **ms.dyn365.ops.version** - Name of release that feature was introduced in, see list here: [Help system and Versions metadata for docs topics](https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29])
 
 ### Don't use these metadata
 
@@ -79,13 +63,23 @@ If you think you need to use any of these, talk to your content strategist first
         + CrossApp - This topics usually also have ShowInHelp.
         + Developer - These topics usually don't have ShowInHelp.
 
-- **ms.service** - Set at the folder level. see [docfx.json](articles/docfx.json).
+- **ms.service** - Set at the folder level. see [docfx.json](articles/docfx.json). We are using these values:
+    - `dynamics-365-finance`: Finance
+    - `dynamics-365-cross-app`: Cross app
+    - `dynamics-365-supply-chain`: Supply Chain Management
+    - `dynamics-365-commerce`: Commerce
+    - `dynamics-365-talent`: Talent
+    - `dynamics-365-human-resources`: Human Resources
 - **manager** - The best practice is to not use **manager**.
 
 ### Metadata that you might use
 
 - **ms.assetid** - We aren't using this value anymore, but it's not in conflict with any other metadata.
-- 
+- **ms.prod** - This is only used for AX2012 content. You can't have both **ms.prod** and **ms.service**.
+
+### No blank metadata
+
+If the metadata is blank, it's better to leave it out altogether.
 
 ## Basic Markdown, GFM, and special characters
 
@@ -249,9 +243,11 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ![this is the alt text](../images/Logo_DotNet.png)
 
-### Linked image
+### Image with border
 
-[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net) 
+Sometimes it's nice to have a border an around an image, especially if it's screenshot where background matches the docs page.
+
+:::image type="content" source="<folderPath>" alt-text="<alt text>":::
 
 ## Videos
 
