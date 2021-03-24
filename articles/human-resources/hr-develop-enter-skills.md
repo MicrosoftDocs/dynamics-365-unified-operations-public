@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ## Enter skills for workers, applicants, or contacts
 
-You can enter target skills or actual skills for workers, applicants, or contacts. A target skill is a skill that a person plans to achieve. An actual skill is a skill that a person currently has.
+You can enter target skills or actual skills for workers, applicants, or contacts in Dynamics 365 Human Resources. A target skill is a skill that a person plans to achieve. An actual skill is a skill that a person currently has.
 
 
 
