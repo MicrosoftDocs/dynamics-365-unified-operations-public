@@ -1,6 +1,6 @@
 ---
 title: Using Power Portal with the Party data model
-description: This topic describes the changes to the Power Portal web roles due to the party data model in dual-write.
+description: This topic describes the changes to the Power Portal web roles because of the party data model in dual-write.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -17,15 +17,15 @@ ms.search.validFrom: 2021-03-22
 
 [!INCLUDE[rename-banner](~/includes/cc-data-platform-banner.md)]
 
-The Dual-write application orchestration solution version 2.0.999.0 and later includes data model changes to party and global address book for the Account and Contact tables. The changes allows many-to-many relationships that support advanced business scenarios. These changes are not supported by portal web roles, including the customer portal, that are shipped out-of-the-box or that existed in your environment prior to dual-write. For the web roles to work as expected, you need to create new web roles using the new data model. 
+The Dual-write application orchestration solution version 2.0.999.0 and later includes data model changes to party and global address book for the Account and Contact tables. The changes allow many-to-many relationships that support advanced business scenarios. These changes are not supported by portal web roles, including the customer portal, that are shipped out-of-the-box or that existed in your environment before you installed dual-write. For the web roles to work as expected, you need to create new web roles using the new data model. 
 
-In summary, the way the tables interact has changed, but the table permissions in the customer portal have not changed. This topic explains how to create new web roles that work with the new advanced data model.
+In summary, the way the tables interact has changed, but the table permissions in the customer portal haven't changed. This topic explains how to create new web roles that work with the new advanced data model.
 
-This is the table relationship **without** the party and global address book data model:
+This diagram shows the table relationship **without** the party and global address book data model:
 
    ![without party model](media/without-party-model.PNG)
 
-This is the table relationship **with** the party and global address book data model:
+This diagram shows the table relationship **with** the party and global address book data model:
 
    ![with party model](media/with-party-model.png)
 
@@ -37,7 +37,7 @@ To create these new table permissions, follow these steps:
 2. Select your Portal Management app.
 3. In the side bar, select **Security > Entity permissions**.
 
-    You will create three new permissions:
+    You must create three new permissions:
 
     + Contact to Party connection
     + Party to Account connection
