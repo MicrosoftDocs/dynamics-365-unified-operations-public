@@ -4,38 +4,23 @@
 title: Metadata and markdown template
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
 author: tonyafehr
-manager: AnnBe
 ms.date: 06/20/2020
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope:
-# ms.tgt_pltfrm: 
-# ms.custom: NotInTOC
+ms.custom: <remove if blank>
 ms.search.region: Global
-# ms.search.industry:
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Metadata and Markdown template
 
 [!include[banner](../includes/banner.md)]
 
-
 This template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D) and the [rendered view](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/master/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
-
 
 ## Metadata 
 
@@ -43,30 +28,28 @@ A full markdown block is shown at the top of this file. The metadata is divided 
 
 Here are some key things to note about metadata.
 
-- **Required metadata**
-    - **title** - The title will appear in search engine results. 
-        - You can add a pipe (|) followed by the product name (for example, `title: Action search`). 
-        - The title doesn't need be identical to the title in your H1 heading, though we prefer that the TOC entry, the title, and the H1 heading all match. 
-        - The title should contain 65 characters or less (including | PRODUCT NAME).
-    - **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
-    - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
-    - **manager** - Use "tonyafehr" in this field.
-    - **ms.date** - This should be the first proposed publication date, in the mm/dd/yy format.
-    - **ms.topic** - Enter "article" here.
-    - **ms.prod**  - Leave this blank.
-    - **ms.service**: Use these values:
-        - `dynamics-ax-platform`: core content (fin-ops-core folder)
-        - `dynamics-ax-applications`: Finance and Supply Chain
-        - `dynamics-365-commerce`: Commerce
-        - `dynamics-365-talent`: Talent
-        - `dynamics-human-resources`: Human Resources
-    - **ms.technology** 
+- **title** - The title will appear in search engine results. 
+    - You can add a pipe (|) followed by the product name (for example, `title: Action search`). 
+    - The title doesn't need be identical to the title in your H1 heading, though we prefer that the TOC entry, the title, and the H1 heading all match. 
+    - The title should contain 65 characters or less (including | PRODUCT NAME).
+- **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
+- **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
+- **manager** - Use "tonyafehr" in this field.
+- **ms.date** - This should be the first proposed publication date, in the mm/dd/yy format.
+- **ms.topic** - Enter "article" here.
+- **ms.prod**  - Leave this blank.
+- **ms.service**: Use these values:
+    - `dynamics-ax-platform`: core content (fin-ops-core folder)
+    - `dynamics-ax-applications`: Finance and Supply Chain
+    - `dynamics-365-commerce`: Commerce
+    - `dynamics-365-talent`: Talent
+    - `dynamics-human-resources`: Human Resources
+- **ms.technology** 
 
 - **Optional metadata**
     - **audience** - Use these values: Application User, Developer, or IT Pro. If you use more than one value, separate them with a comma.
     - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
     - **ms.custom** - Add NotInToc if the topic is not in the table of contents. If you use more than one value, separate them with a comma.
-    - **ms.assetid** - This is the GUID of the article that is used for internal tracking purposes. When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com).
     - **ms.search.region** - Use "global" or enter a country-region value.
     - **ms.author** - Use your Microsoft alias.  
     - **ms.search.industry** - Leave blank for most, retail, public sector
@@ -78,6 +61,31 @@ Here are some key things to note about metadata.
     - To find the folder-level setting, see [docfx.json](articles/docfx.json).
     - Set at folder level:
         - **ms.search.scope**: The values are mostly self-explanatory. **Core** means to show the topic in the Help Pane (current). **ShowInHelp** means to show the topic in the Help Pane (future).
+
+### Don't use these metadata
+
+If you think you need to use any of these, talk to your content strategist first.
+
+- **ms.search.scope** - Set at the folder level, see [docfx.json](articles/docfx.json). We are using these values:
+    + Legacy values. Don't remove these from topics. They need to stay until all customers are on the new system.
+        + Core - Indicates that a topic should show up in the Help Pane.
+        + Operations
+        + Retail
+    + New values.
+        + ShowInHelp - Indicates that a topic should show up in the Help Pane.
+        + Commerce
+        + Finance
+        + Supply Chain
+        + CrossApp - This topics usually also have ShowInHelp.
+        + Developer - These topics usually don't have ShowInHelp.
+
+- **ms.service** - Set at the folder level. see [docfx.json](articles/docfx.json).
+- **manager** - The best practice is to not use **manager**.
+
+### Metadata that you might use
+
+- **ms.assetid** - We aren't using this value anymore, but it's not in conflict with any other metadata.
+- 
 
 ## Basic Markdown, GFM, and special characters
 
