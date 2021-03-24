@@ -33,7 +33,6 @@ Here are some key things to note about metadata.
     - The title should contain 65 characters or fewer.
 - **description** - This is the full description that appears in the search results. It should contain 160 characters or fewer.
 - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
-- **manager** - Use "tonyafehr" in this field.
 - **ms.date** - This should be the first proposed publication date, in the mm/dd/yy format.
 - **ms.topic** - Enter "article" here.
 - **audience** - Use these values: Application User, Developer, or IT Pro. If you use more than one value, separate them with a comma.
@@ -41,8 +40,9 @@ Here are some key things to note about metadata.
 - **ms.custom** - Add NotInToc if the topic is not in the table of contents. If you use more than one value, separate them with a comma.
 - **ms.search.region** - Use "global" or enter a country-region value.
 - **ms.author** - Use your Microsoft alias.  
-- **ms.search.industry** - Leave blank for most, retail, public sector
+- **ms.search.industry** - retail, public sector. Leave it out, rather than leaving it blank.
 - **ms.search.validFrom** - Month/year of release that feature was introduced in, in format yyyy-mm-dd.
+- **ms.search.form** - The form ID. This value is used to lookup relevant topics from the Help Pane for specific forms.
 - **ms.dyn365.ops.version** - Name of release that feature was introduced in, see list here: [Help system and Versions metadata for docs topics](https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29])
 
 ### Don't use these metadata
