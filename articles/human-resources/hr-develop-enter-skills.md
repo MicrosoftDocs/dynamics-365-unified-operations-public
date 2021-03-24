@@ -70,11 +70,15 @@ To enter skills without requiring approval, you must create a workflow to auto-a
 
 11. Select **Add condition**. After **Where**, select **Employee self service skills**, and then select **Employee self service skills.Person**. After **is**, select **field**, and then select **User to person relationship.Person**.
 
+   [![Specify condition](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
+
 12. Select **Assignment** on the left-hand nav bar.
 
 13. On the **Assignment type** tab, select **Hierarchy**.
 
 14. On the **Hierarchy selection** tab, in the **Hierachy type:** field, select **Managerial hierarchy**.
+
+   [![Specify managerial hierarchy](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
 15. Select **Close**, select **Workflow** in the canvas breadcrumb, and then select **Save and close**.
 
