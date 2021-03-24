@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure skills
-description: You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively. You can also specify the skills that are required for a specific job.
+description: You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively. You can also specify the skills that are required for a specific job in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
 ms.date: 03/23/2021
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-You can track the skills of workers, applicants, or contact persons. You can also specify the skills required for each job.
+You can track the skills of workers, applicants, or contact persons in Dynamics 365 Human Resources. You can also specify the skills required for each job.
 
 Examples of skills you can track include the following:
 
