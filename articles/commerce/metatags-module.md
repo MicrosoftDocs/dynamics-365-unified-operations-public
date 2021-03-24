@@ -2,10 +2,10 @@
 # required metadata
 
 title: Metatags module
-description: This topic describes the metatags module and how to add it to a template in Microsoft Dynamics 365 Commerce.
+description: This topic covers metatags modules and describes how to them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 03/23/2021
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,9 +32,13 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the metatags module and how to add it to a template in Microsoft Dynamics 365 Commerce.
+This topic covers metatags modules and describes how to them to templates in Microsoft Dynamics 365 Commerce.
 
-The metatags module can be added to a template's **HTML Head** slot.  One or more meta tags can be added using the **Add Meta Tag** configuration field button.  An example below shows a metatags module added to the HTML head of a template:
+The metatags module supports the entry of custom HTML meta tags that can improve site page search engine optimization (SEO) rankings.
+
+The metatags module can be added to a template's **HTML Head** slot, which will make the module available to configure both in the template and in the site pages that use the template. One or more general meta tags can be added to a template, but page-specific meta tags should be added to those site pages. 
+
+The following example image shows a metatags module added to the **HTML Head** slot of a template.
 
 ![Metatags modules](media/metatags-module-1.png)
 
@@ -46,15 +50,20 @@ The metatags module can be added to a template's **HTML Head** slot.  One or mor
 
 ## Adding a metatags module to a template
 
-1. From within a site builder template select the **Add Module** option within the **...** of the **HTML Head** slot as shown below.
+1. In site builder for your site, select **Templates**. 
+1. Select a template, and then select **Edit**.
+1. In the **HTML Head** slot, select the ellipsis (**...**), and then select **Add Module**.
 
     ![Add new module](media/metatags-module-2.png)
 
-1. Select the metatags module followed by the **OK** button as shown below. 
+1. In the **Add Module** dialog box, select the **Metatags*** module, and then select **OK**.
 
     ![Add script module](media/metatags-module-3.png)
 
-Once the module is added it can now be configured and the template can be saved and published.
+1. To add meta tags, select the **Metatags** slot. In the module properties pane, select **Add Meta Tag** to add each meta tag. Reorder the meta tags by selecting the up or down arrows. 
+1. When done editing the template, select **Save**, select **Finish editing**, and then select **Publish** to publish it.  
+
+Once the meta tags module is added to a template, page-specific meta tags can then be added to site pages that use the template.
 
 ## Additional resources
 
