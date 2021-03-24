@@ -5,7 +5,7 @@ title: Design ER configurations to fill in PDF templates
 description: This topic provides information about how to design an Electronic reporting (ER) format to fill in a PDF template.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/19/2019
+ms.date: 04/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -53,15 +53,15 @@ Before you begin, you must have one of the following types of access, depending 
 You must also complete the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md)
 procedure.
 
-Finally, you must download the following files from [CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111).
+Finally, download the following files.
 
 | Content description                       | File name                                     |
 |-------------------------------------------|-----------------------------------------------|
-| Template for the first page of the report | [IntrastatReportTemplate1.pdf](https://mbs.microsoft.com/Files/public/CS)                  |
-| Template for other pages of the report    | [IntrastatReportTemplate2.pdf](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatReportTemplate2.pdf)                  |
-| Sample ER format - PDF                          | [Intrastat report (PDF).version.1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatreportPDFversion11.xml)        |
-| Sample ER format - Excel                          | [Intrastat (import from Excel).version.1.1.xml](https://mbs.microsoft.com/Files/public/CS/AX/IntrastatimportfromExcelversion11.xml) |
-| Sample dataset                            | [Intrastat sample data.xlsx](https://mbs.microsoft.com/Files/public/CS/AX/Intrastatsampledata.xlsx)                    |
+| Template for the first page of the report | [IntrastatReportTemplate1.pdf](https://download.microsoft.com/download/0/8/3/0832c82b-4448-4562-afbf-01e0efc8d999/IntrastatReportTemplate1.pdf)                  |
+| Template for other pages of the report    | [IntrastatReportTemplate2.pdf](https://download.microsoft.com/download/c/7/a/c7a8a806-2192-4034-9052-e8b84b527d5e/IntrastatReportTemplate2.pdf)                  |
+| Sample ER format - PDF                          | [Intrastat report (PDF).version.1.1.xml](https://download.microsoft.com/download/a/8/7/a87aea3e-3f60-404c-8899-c471d20e7ea9/IntrastatreportPDFversion1.1.xml)        |
+| Sample ER format - Excel                          | [Intrastat (import from Excel).version.1.1.xml](https://download.microsoft.com/download/a/2/c/a2c0c145-d989-4e55-9d47-9647c02e4ee4/IntrastatimportfromExcelversion1.1.xml) |
+| Sample dataset                            | [Intrastat sample data.xlsx](https://download.microsoft.com/download/9/f/1/9f1c5b96-3800-475f-8cf6-1ddd42873758/Intrastatsampledata.xlsx)                    |
 
 ## Design the format configuration
 
