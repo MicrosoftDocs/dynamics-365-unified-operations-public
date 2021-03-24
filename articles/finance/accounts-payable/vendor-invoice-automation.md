@@ -5,7 +5,7 @@ title: Invoice automation for scanned documents
 description: This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
 author: abruer
 manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the data entities that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
+This topic explains the data entities that are available for end-to-end automation of vendor invoices, including invoices with attachments.
 
 Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient. In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider. They then receive machine-readable invoice metadata together with a scanned image of each invoice. To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system. Now this “last mile” automation is enabled out of the box, through an invoice automation solution.
 
@@ -95,7 +95,7 @@ In scenarios where vendor invoices come into Finance and Operations via integrat
 
 ### Vendor invoices that failed to import list page
 
-The new list page for invoice exceptions is available at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**. This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity. Note that you can view the same records from the **Data management** workspace, where you can also perform the same actions that are provided in the exception handling feature. However, the UI that the exception handling feature provides is optimized for a functional user.
+The new list page for invoice exceptions is available at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**. This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity. Note that you can view the same records from the **Data management** workspace. You can also perform the same actions that are provided in the exception handling feature from the **Data management** workspace. The exception handling feature has been optimized for a functional user, which should make it easier to use.
 
 ![Exceptions list page](media/vendor_invoice_automation_02.png)
 
@@ -129,11 +129,9 @@ The list page supports the following actions:
 
 ### Vendor invoices that failed to import details page
 
-When you start edit mode, the **Vendor invoices that failed to import details** page for the invoice that has issues appears. If there are issues with an invoice that has an attachment, the attachment will not be displayed on the **Vendor invoices that failed to import details** page. The attachment must be reattached to the invoice.
+When you start edit mode, the **Vendor invoices that failed to import details** page for the invoice that has issues will open. If there are issues with an invoice that has an attachment, the attachment won't be displayed. The attachment must be reattached to the invoice.
 
-The **Vendor invoices that failed to import details** page supports the following operation:
-
-+ **Create pending invoice** – After you’ve fixed the issues on the invoice as part of exception processing, you can click this button to create the pending invoice. The creation of pending invoices occurs in the background (as an asynchronous operation).
+The **Vendor invoices that failed to import details** page lets you create a pending invoice. After you’ve fixed the issues on an invoice as part of processing an exception, you can click the **Create pending invoice** button to create the pending invoice. The pending invoice will be created in the background. 
 
 ### Shared service vs. organization-based exception processing
 
