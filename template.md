@@ -51,16 +51,16 @@ If you think you need to use any of these, talk to your content strategist first
 
 - **ms.search.scope** - Set at the folder level, see [docfx.json](articles/docfx.json). We are using these values:
     + Legacy values. Don't remove these from topics. They need to stay until all customers are on the new system.
-        + Core - Indicates that a topic should show up in the Help Pane.
-        + Operations
-        + Retail
+        + `Core` - Indicates that a topic should show up in the Help Pane.
+        + `Operations`
+        + `Retail`
     + New values.
-        + ShowInHelp - Indicates that a topic should show up in the Help Pane.
-        + Commerce
-        + Finance
-        + Supply Chain
-        + CrossApp - This topics usually also have ShowInHelp.
-        + Developer - These topics usually don't have ShowInHelp.
+        + `ShowInHelp` - Indicates that a topic should show up in the Help Pane.
+        + `Commerce`
+        + `Finance`
+        + `Supply Chain`
+        + `CrossApp` - This topics usually also have ShowInHelp.
+        + `Developer` - These topics usually don't have ShowInHelp.
 
 - **ms.service** - Set at the folder level. see [docfx.json](articles/docfx.json). We are using these values:
     - `dynamics-365-finance`: Finance
@@ -70,9 +70,6 @@ If you think you need to use any of these, talk to your content strategist first
     - `dynamics-365-talent`: Talent
     - `dynamics-365-human-resources`: Human Resources
 - **manager** - The best practice is to not use **manager**.
-
-### Metadata that you might use
-
 - **ms.assetid** - We aren't using this value anymore, but it's not in conflict with any other metadata.
 - **ms.prod** - This is only used for AX2012 content. You can't have both **ms.prod** and **ms.service**.
 
