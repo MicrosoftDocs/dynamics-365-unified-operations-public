@@ -287,14 +287,14 @@ Next, you will modify the existing calculated field so that it uses the configur
 
 ## Complete the draft version of a derived format
 
-1.	On the **Versions** fast tab, select **Change status**.
+1.	On the **Versions** FastTab, select **Change status**.
 2.	Select **Complete**.
 3.	Select **OK**.
 
 ## Export completed version of modified format
 
 1.	In the configuration tree, select the **Format to learn how to lookup LE data** item.
-2.	On the **Versions** fast tab, select the record that has a status of **Completed**.
+2.	On the **Versions** FastTab, select the record that has a status of **Completed**.
 3.	Select **Exchange**.
 4.	Select **Export as XML file**.
 5.	Select **OK**.
