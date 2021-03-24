@@ -62,7 +62,7 @@ In addition to the basic information, you can also add the following details to 
 - **Quality charges**: You can create a list of charges that are incurred or billed out to external sources.
 - **Timesheet**: You can create a log of the time spent on the operation by each worker.
 
-Each of the additional configurations are optional. The cost for each of the items, quality charges, and the timesheet are summed and displayed on the operation. You can't directly edit the **Cost** field on the operation.
+The remaining settings are optional. The cost for each of the items, quality charges, and the timesheet are summed and displayed on the operation. You can't directly edit the **Cost** field on the operation.
 
 ### Create an operation on a nonconformance
 
