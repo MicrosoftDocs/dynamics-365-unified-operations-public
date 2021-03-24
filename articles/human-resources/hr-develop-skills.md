@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure skills
-description: You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively. You can also specify the skills that are required for a specific job in Dynamics 365 Human Resources.
+description: You can track your worker's skills in Dynamics 365 Human Resources. You can also specify the skills that are required for a specific job.
 author: andreabichsel
 manager: tfehr
 ms.date: 03/23/2021
@@ -33,21 +33,21 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-You can track the skills of workers, applicants, or contact persons in Dynamics 365 Human Resources. You can also specify the skills required for each job.
+You can track your worker's skills in Dynamics 365 Human Resources. You can also specify the skills that are required for a specific job.
 
-Examples of skills you can track include the following:
+Examples of skills you can track include:
 
 - Supervisory – Ability to supervise the work of others.
 - Leadership – Ability to lead employees and business domains.
-- Planning – Ability to look ahead, to form visions, and to see them through.
+- Planning – Ability to look ahead, to form vision statements, and to see them through.
 - HTML – Ability to write HTML code.
 
-If you haven't already set up skill types and rating models, create those before creating skills.
+If you haven't already set up skill types and rating models, you'll need to add some before creating skills.
 
 The following people can enter skills for a worker:
 
-- Workers can enter skills for themselves in Employee self service. These skills require manager approval.
-- Managers can enter skills on behalf of their workers. You can create a workflow that auto-approves these skills.
+- Workers can enter skills for themselves in Employee self-service. These skills require manager approval.
+- Managers can enter skills for their workers. You can create a workflow that auto-approves these skills.
 
 ## Create a skill type
 
@@ -93,7 +93,7 @@ Rating models help evaluate a person's actual level of skill, the level they sho
 
 ## Create a skill
 
-Before you can assign a skill to a person or a job, create a skill-mapping search, or create a skill profile, you must enter information about the skills on the **Skills** page. For each skill, you can select a skill type and a rating model.
+Before you can assign a skill, or create a skill-mapping search or skill profile, you must enter information about the skills on the **Skills** page. For each skill, you can select a skill type and a rating model.
 
 1. In the **Employee development** workspace, select **Links**.
 
