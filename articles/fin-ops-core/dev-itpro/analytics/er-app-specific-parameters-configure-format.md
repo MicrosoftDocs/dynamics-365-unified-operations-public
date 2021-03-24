@@ -134,7 +134,7 @@ Next, you will add a new ER format enumeration. The values of this format enumer
 12.	Select **Add** again.
 13.	In the **Name** field, enter **Other**.
 
-    ![Text translation slide out](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![New record on Format enumerations page](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Because the business users might use different languages to specify legal entity–dependent sets of tax codes, we recommend that you translate the values of this enumeration into the languages that are configured as the preferred languages for those users in Finance.
 
@@ -147,7 +147,7 @@ Next, you will add a new ER format enumeration. The values of this format enumer
 20.	In the **Translated text** field, enter **keine Besteuerung**.
 21.	Select **Translate**.
 
-    ![ER Operation designer page](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Text translation slide out](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
 22.	Select **Save**.
 23.	Close the **Format enumerations** page.
