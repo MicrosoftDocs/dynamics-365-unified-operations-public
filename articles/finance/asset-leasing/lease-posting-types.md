@@ -95,15 +95,6 @@ The account is associated with the contra-asset account of the ROU asset. This a
 **Debit:** Depreciation expense XXX<br>
 **Credit:** Accumulated depreciation XXX
 
-## Retained earnings
-
-The account is associated with retained earnings. This account might be either debited or credited in a transition adjustment journal entry by using the full retrospective method or the cumulative catch-up option A method. The difference between the initial ROU asset and lease liability is booked to retained earnings. In rare cases, the retained earnings might also be affected during lease modification, if the classification of a lease is changed from finance to operating to write the ROU asset up or down so that it equals the lease liability.
-
-**Example journal entries:** Transition adjustment (full retrospective or cumulative catch-up option A method)<br>
-**Debit:** Lease liability XXX<br>
-**Credit:** Lease asset XXX<br>
-**Credit:** Retained earnings XXX
-
 ## Variable payment
 
 The account is associated with variable lease payments that are produced by an index revaluation under ASC 842, ASC 840, and IAS 17 leases. In the lease payment schedule, variable payments are included in the **Variable payment** column. This account is debited when an invoice is created against a payment schedule line that contains a variable payment.

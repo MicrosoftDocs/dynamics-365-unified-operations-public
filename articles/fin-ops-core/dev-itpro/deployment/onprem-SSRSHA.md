@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.17
 # Configure high availability for SQL Server Reporting Services (SSRS) nodes
 
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 This topic explains how to configure multiple Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
 

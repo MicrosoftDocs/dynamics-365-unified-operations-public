@@ -70,6 +70,8 @@ This feature adds a button to the production floor execution interface that enab
 
 ### Asset management functionality for the production floor execution interface
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 This feature adds an asset management tab to the production floor execution interface. Workers can use this tab to select an asset that is connected to a machine resource that is within the selected filter of the job list. For the selected machine asset, the worker can view the state and health of the asset from counter values for up to four selected counters. If you'd like to use this feature, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Asset management functionality for the production floor execution interface
