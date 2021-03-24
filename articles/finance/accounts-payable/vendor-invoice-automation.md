@@ -95,7 +95,7 @@ In scenarios where vendor invoices come into Finance and Operations via integrat
 
 ### Vendor invoices that failed to import list page
 
-The new list page for invoice exceptions is available at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**. This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity. Note that you can view the same records from the **Data management** workspace. You can also perform the same actions that are provided in the exception handling feature from the **Data management** workspace. The exception handling feature has been optimized for a functional user, which should make it easier to use.
+The new list page for invoice exceptions is available at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**. This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity. Note that you can view the same records from the **Data management** workspace. You can also perform the same actions that are provided in the exception handling feature from the **Data management** workspace. The exception handling feature has been optimized for a functional user, which makes it easier to use.
 
 ![Exceptions list page](media/vendor_invoice_automation_02.png)
 
@@ -129,9 +129,9 @@ The list page supports the following actions:
 
 ### Vendor invoices that failed to import details page
 
-When you start edit mode, the **Vendor invoices that failed to import details** page for the invoice that has issues will open. If there are issues with an invoice that has an attachment, the attachment won't be displayed. The attachment must be reattached to the invoice.
+When you start edit mode, the **Vendor invoices that failed to import details** page for the invoice that has issues will open. If there are issues with an invoice that has an attachment, the attachment won't be displayed. The attachment must be re-attached to the invoice.
 
-The **Vendor invoices that failed to import details** page lets you create a pending invoice. After you’ve fixed the issues on an invoice as part of processing an exception, you can click the **Create pending invoice** button to create the pending invoice. The pending invoice will be created in the background. 
+The **Vendor invoices that failed to import details** page lets you create a pending invoice. After you’ve fixed the issues on an invoice as part of processing an exception, select the **Create pending invoice** button to create the pending invoice. The pending invoice will be created in the background. 
 
 ### Shared service vs. organization-based exception processing
 
