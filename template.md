@@ -59,6 +59,7 @@ If you think you need to use any of these, talk to your content strategist first
         + `Commerce`
         + `Finance`
         + `Supply Chain`
+        + `Talent`
         + `CrossApp` - This topics usually also have ShowInHelp.
         + `Developer` - These topics usually don't have ShowInHelp.
 
