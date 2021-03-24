@@ -2582,6 +2582,8 @@
           href: localizations/emea-ltu-vat-statement-details.md
         - name: i.SAF reporting for Lithuania
           href: localizations/emea-ltu-isaf.md
+        - name: Standard Audit File for Tax (SAF-T) for Lithuania
+          href: localizations/emea-ltu-saf-t.md
       - name: Malaysia
         items:
         - name: Malaysia overview
