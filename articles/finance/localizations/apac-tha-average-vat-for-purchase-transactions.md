@@ -1,12 +1,29 @@
-﻿---
-title: 
-description: 
-ms.date: 03.24.2021
-ms.topic: article
-ms.service: dynamics365-financials
+---
+# required metadata
+
+title: Average VAT for purchase transactions
+description: This topic provides information about average value-added tax (VAT) for Thailand. It also explains how to settle transactions that have average VAT, and what reports can be generated.
 author: andosip
-ms.author: andosip
 manager: anasyash
+ms.date: 03/24/2021
+ms.topic: article
+ms.prod:
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:
+audience: 
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope:
+# ms.tgt_pltfrm: 
+# ms.custom: NotInTOC
+ms.search.region: 
+# ms.search.industry:
+ms.author: 
+ms.search.validFrom: 
+ms.dyn365.ops.version:
 ---
 
 # Average VAT for purchase transactions
@@ -72,18 +89,18 @@ values** page.
     6.  In the **From date** and **To date** fields, define the date
         interval for the proportion.
 
-For more information, see Thailand unrealized and realized VAT\[link\]
+For more information, see [Thailand unrealized and realized VAT](apac-tha-unrealized-vat.md)
 and [Set up sales tax
-codes](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-codes).
+codes](../general-ledger/tasks/set-up-sales-tax-codes.md).
 
-1.  Go to **Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax
+5.  Go to **Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax
     groups**, and set up sales tax groups for average unrealized VAT and
     average realized VAT. For example, for average realized VAT, create
     an item sales tax group that is named **AVAT**. For average
     unrealized VAT, create an item sales tax group that is named
  **AUVAT**.
 
-2.  Go to **Tax &gt; Indirect taxes &gt; Sales tax &gt; Item sales tax
+6.  Go to **Tax &gt; Indirect taxes &gt; Sales tax &gt; Item sales tax
     groups**, and set up item sales tax groups for average unrealized
     VAT and average realized VAT. For example, for average realized VAT,
     create an item sales tax group that is named **AItem**. For average
@@ -109,8 +126,8 @@ the non-VAT businesses is posted either to the inventory account for an
 item as part of the inventory amount or to the expense account for a
 service as part of the expense.
 
-For more information about unrealized and realized VAT, see Tax invoice
-for Thailand\[link\].
+For more information about unrealized and realized VAT, see [Tax invoice
+for Thailand]().
 
 ### Post a vendor payment transaction when the VAT ratio is updated after the invoice is posted
 
@@ -129,8 +146,8 @@ If unrealized VAT was posted when you posted the invoice, when you
 receive the tax invoice from the vendor, you can reverse the unrealized
 VAT and post the realized VAT by using the **Reversal journal** page.
 
-For more information, see Reverse the posted unrealized purchase
-VAT\[link\].
+For more information, see [Reverse the posted unrealized purchase
+VAT](https://docs.microsoft.com/dynamics365/finance/localizations/apac-tha-unrealized-vat#reverse-the-unrealized-purchase-vat).
 
 If the VAT ratio is updated for an advance payment transaction after you
 post the invoice, you can manage the average VAT adjustment for the
@@ -153,26 +170,152 @@ between the VAT businesses and the non-VAT businesses is 50 percent to
 The VAT is calculated and posted to different accounts, as shown in the
 following table.
 
-| </br><tr class="header"></br><th>Account | Debit (THB) | Credit (THB) |
-|-------------------------|-------------------------|-------------------------|
-| Inventory | 103.85 |  |
-| Purchase VAT | 3.15 |  |
-| Accounts payable |  | 107.00 |
+<table style="width: 100.058%;">
+<tbody>
+<tr>
+<td style="width: 49.2322%;">
+<p><strong>VAT calculated and posted when the invoice is posted</strong></p>
 </td>
-<td><p>A payment of THB 100.00 is made to settle the invoice.</p>
+<td style="width: 49.3858%;">
+<p><strong>VAT calculated and adjusted when the invoice is settled with updated VAT ratio</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 49.2322%;">
+<p>The invoice amount is THB 100.00.</p>
 <p>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.</p>
 <ul>
-<li><p><strong>VAT calculated for the VAT businesses:</strong> 50 percent of the 7-percent VAT = THB 3.50</p></li>
-<li><p><strong>VAT calculated for the non-VAT businesses:</strong> 50 percent of the 7-percent VAT = THB 3.50</p></li>
+<li><strong>VAT calculated for the VAT businesses:</strong> 45 percent of the 7-percent VAT = THB 3.15</li>
+<li><strong>VAT calculated for the non-VAT businesses:</strong> 55 percent of the 7-percent VAT = THB 3.85</li>
+</ul>
+<p>The following table shows the amounts that are posted to different accounts.</p>
+<table>
+<tbody>
+<tr>
+<td width="99">
+<p><strong>Account</strong></p>
+</td>
+<td width="99">
+<p><strong>Debit (THB)</strong></p>
+</td>
+<td width="99">
+<p><strong>Credit (THB)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Inventory</p>
+</td>
+<td width="99">
+<p>103.85</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Purchase VAT</p>
+</td>
+<td width="99">
+<p>3.15</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Accounts payable</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+<td width="99">
+<p>107.00</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="width: 49.3858%;">
+<p>A payment of THB 100.00 is made to settle the invoice.</p>
+<p>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.</p>
+<ul>
+<li><strong>VAT calculated for the VAT businesses:</strong> 50 percent of the 7-percent VAT = THB 3.50</li>
+<li><strong>VAT calculated for the non-VAT businesses:</strong> 50 percent of the 7-percent VAT = THB 3.50</li>
 </ul>
 <p>The following table shows the amounts that are adjusted in different accounts.</p>
-| Account | Debit (THB) | Credit (THB) |
-|-------------------------|-------------------------|-------------------------|
-| Inventory |  | 0.35 |
-| Purchase VAT |  | 3.15 |
-| Purchase VAT | 3.50 |  |
-| Accounts payable | 107.00 |  |
-| Bank |  | 107.00 |
+<table>
+<tbody>
+<tr>
+<td width="99">
+<p><strong>Account</strong></p>
+</td>
+<td width="99">
+<p><strong>Debit (THB)</strong></p>
+</td>
+<td width="99">
+<p><strong>Credit (THB)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Inventory</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+<td width="99">
+<p>0.35</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Purchase VAT</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+<td width="99">
+<p>3.15</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Purchase VAT</p>
+</td>
+<td width="99">
+<p>3.50</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Accounts payable</p>
+</td>
+<td width="99">
+<p>107.00</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="99">
+<p>Bank</p>
+</td>
+<td width="99">
+<p>&nbsp;</p>
+</td>
+<td width="99">
+<p>107.00</p>
+</td>
+</tr>
+</tbody>
+</table>
 </td>
 </tr>
 </tbody>
@@ -221,12 +364,12 @@ Revenue Department of Thailand every month.
 The following illustration shows an example of a detailed **Average
 VAT** report.
 
-![detailed Average VAT report](media/image1.png)
+![detailed Average VAT report](media/apac-tha-detailed-average-vat-report.png)
 
 The following illustration shows an example of a summarized **Average
 VAT** report.
 
-![summarized Average VAT report](media/image2.png)
+![summarized Average VAT report](media/apac-tha-summarized-average-vat-report.png)
 
 The following table explains the information that is shown on the
 **Average VAT** report.
@@ -282,7 +425,7 @@ and will use the new proportion.
 | AVAT | 1/1/2021 | 12/31/2021 | 0.00 | 0.00 | 7.00 | 45.00 | 55.00 |
 
 
-1.  Set up sales tax codes for average unrealized VAT.
+2.  Set up sales tax codes for average unrealized VAT.
 
     1.  In the **Sales tax code** field, enter **AUVAT**.
 
@@ -309,15 +452,15 @@ and will use the new proportion.
 | AUVAT | 1/1/2021 | 12/31/2021 | 0.00 | 0.00 | 7.00 | 45.00 | 55.00 |
 
 
-1.  Create a purchase order for THB 1,000.00.
+3.  Create a purchase order for THB 1,000.00.
 
-2.  In the **Sales tax group** field, select the sales tax group for
+4.  In the **Sales tax group** field, select the sales tax group for
     average unrealized VAT.
 
-3.  In the **Item sales tax group** field, select the item sales tax
+5.  In the **Item sales tax group** field, select the item sales tax
     group for average unrealized VAT.
 
-4.  Post an invoice. Enter the following information:
+6.  Post an invoice. Enter the following information:
 
 - **Invoice number:** INV01
 
@@ -333,12 +476,12 @@ The following transactions are created for the voucher:
 
 - **Deductible VAT:** THB 70 × 50 percent = THB 28
 
-    ![Voucher transactions](media/image3.png)
+    ![Voucher transactions](media/apac-tha-voucher-transactions.png)
 
-1.  Go to **Accounts payable &gt; Payments &gt; Vendor payment
+7.  Go to **Accounts payable &gt; Payments &gt; Vendor payment
     journal**, and settle the transaction.
 
-2.  Go to **Accounts payable &gt; Payments &gt; Reversal journal**, and
+8.  Go to **Accounts payable &gt; Payments &gt; Reversal journal**, and
     reverse the unrealized VAT. Enter the following information:
 
 - **Tax invoice number:** TXINV\_01
@@ -347,13 +490,13 @@ The following transactions are created for the voucher:
 
 - **Tax invoice receipt date:** 3/4/2021
 
-For more information about reversal journals, see Thailand unrealized
-and realized VAT\[link\].
+For more information about reversal journals, see [Thailand unrealized
+and realized VAT](apac-tha-unrealized-vat.md).
 
-1.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
+9.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
     Average VAT**.
 
-2.  In the **Tax month** field, select **March 2021**, and review the
+10.  In the **Tax month** field, select **March 2021**, and review the
     report results:
 
 - **Deductible VAT:** THB 70 × 55 percent = THB 38.50
@@ -361,5 +504,5 @@ and realized VAT\[link\].
 The difference between the old nondeductible VAT and the new
 nondeductible VAT amount is THB 10.50.
 
-![Average VAT report](media/image4.png)
+![Average VAT report](media/apac-tha-average-vat-report.png)
 
