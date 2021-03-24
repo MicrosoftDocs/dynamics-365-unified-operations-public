@@ -17,7 +17,9 @@ ms.search.validFrom: 2021-03-22
 
 [!INCLUDE[rename-banner](~/includes/cc-data-platform-banner.md)]
 
-The Dual-write application orchestration solution version 2.0.999.0 and later includes data model changes to party and global address book for the Account and Contact tables. The changes allows many-to-many relationships that support advanced business scenarios. These changes are not supported by portal web roles, including the customer portal, that are shipped out-of-the-box or that existed in your environment prior to dual-write. For the web roles to work as expected, you need to create new web roles using the new data model. This topic explains how to create new web roles that work with the new advanced data model.
+The Dual-write application orchestration solution version 2.0.999.0 and later includes data model changes to party and global address book for the Account and Contact tables. The changes allows many-to-many relationships that support advanced business scenarios. These changes are not supported by portal web roles, including the customer portal, that are shipped out-of-the-box or that existed in your environment prior to dual-write. For the web roles to work as expected, you need to create new web roles using the new data model. 
+
+In summary, the way the tables interact has changed, but the table permissions in the customer portal have not changed. This topic explains how to create new web roles that work with the new advanced data model.
 
 This is the table relationship **without** the party and global address book data model:
 
@@ -29,7 +31,7 @@ This is the table relationship **with** the party and global address book data m
 
 ## Create a new table permission
 
-The way the tables interact changes, but the table permissions in the customer portal have not been updated. To create these new table permissions, follow these steps:
+To create these new table permissions, follow these steps:
 
 1. Sign in to [Power Apps](https://make.powerapps.com), and go to your apps.
 2. Select your Portal Management app.
