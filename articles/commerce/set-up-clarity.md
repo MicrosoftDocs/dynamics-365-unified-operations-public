@@ -36,17 +36,17 @@ ms.dyn365.ops.version:
 
 This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 
-[Microsoft Clarity](https://clarity.microsoft.com/) is a user behavior analytics tool which can help site owners understand user interactions with their e-commerce sites. Clarity's analysis tools enable visibility using session recordings, heatmaps, and machine learning insights to review and study user interactions. 
+[Microsoft Clarity](https://clarity.microsoft.com/) is a user behavior analytics tool that can help site owners understand user interactions with their e-commerce sites. Clarity's analysis tools enable visibility using session recordings, heatmaps, and machine learning insights to review and study user interactions. 
 
-Integrating Clarity into your Dynamics 365 Commerce site is easy, just follow the steps below to enable Clarity to provide you with an in-depth look at your user interactions.
+Integrating Clarity into your Dynamics 365 Commerce site is easy, just follow the steps in this topic to enable Clarity to provide you with an in-depth look at your user interactions.
 
 ## Sign up for Clarity
 
-To sign up for Clarity, go to the [Clarity](https://clarity.microsoft.com/) website and select **Get started**. During the setup process, use the live production domain URL associated with your Commerce site. For additional details on initial Clarity setup, see [Getting started](https://docs.microsoft.com/clarity/getting-started).
+To sign up for Clarity, go to the [Clarity](https://clarity.microsoft.com/) website and select **Get started**. During the setup process, use the live production domain URL associated with your Commerce site. For additional details about Clarity setup, see [Getting started](https://docs.microsoft.com/clarity/getting-started).
 
 ## Integrate Clarity with your Commerce site
 
-Once you have signed up for Clarity, follow these steps in Commerce site builder to integrate Clarity with your e-commerce site.
+After you have signed up for Clarity, follow these steps in Commerce site builder to integrate Clarity with your e-commerce site.
 
 ### Configure Content Security Policy for Clarity
 
@@ -77,7 +77,7 @@ To add Clarity to the correlation header excluded domains list in Commerce site 
 
 ### Embed Clarity tracking script code into site pages
 
-You can embed Clarity tracking script code into any Commerce site page you want to track with Clarity.
+You can embed Clarity tracking script code into any Commerce site page that you want to track with Clarity.
 
 To get started, copy the tracking script code for your project from the Clarity portal. The Clarity tracking script code will then need to be added to a Commerce module library *inline script module*. Depending on your configuration, the inline script module may be added directly to a specific site page, or may be required to be added as an allowable option in a site page template. 
 
@@ -92,16 +92,16 @@ To embed the Clarity tracking code into site pages in Commerce site builder, fol
 1. Select **Fragments**, and then select **New**
 1. In the **New fragment** dialog box, select the **Inline script** module.
 1. For **Fragment name**, enter a name, and then select **OK**.
-1. Select the **Default inline script** module slot, and then in the module property pane, under **Inline script** paste in the Clarity script. Be sure to remove the surrounding **\<script\>** tags if present in your copied script string.
+1. Select the **Default inline script** module slot, and then in the module property pane, under **Inline script** paste in the Clarity script. Be sure to remove the surrounding **\<script\>** tags if you copied the script string.
 1. Select **Save**, and then select **Publish**.
 1. Select **Templates**, and then select the template to which you want to add the fragment with the Clarity script code.
 1. Select **Edit**.
-1. Select the **HTML Head** slot, select the ellipsis ("*...*"), and then select **Add fragment**.
-1. In the **Select fragment** dialog box, select the new fragment with the Clarity script code, and then select **OK**. Verify you see the fragment under the **HTML Head** slot.
+1. Select the **HTML Head** slot, select the ellipsis (...), and then select **Add fragment**.
+1. In the **Select fragment** dialog box, select the new fragment with the Clarity script code, and then select **OK**. Verify that the fragment appears under the **HTML Head** slot.
 1. Select **Save**, and then select **Publish**. All site pages that use the updated template will now have the embedded Clarity script code.
 1. Repeat the previous steps as needed for any additional templates to which you want to add the Clarity script code.
 
-For information on how to test that the Clarity script is embedded in site pages, see [Clarity Set-Up: Verification](https://docs.microsoft.com/clarity/clarity-setup#verification).
+For information about how to test if the Clarity script is embedded in site pages, see [Clarity Set-Up: Verification](https://docs.microsoft.com/clarity/clarity-setup#verification).
 
 ### Embed Clarity tracking script code into a specific site page
 
@@ -113,10 +113,10 @@ To embed the Clarity tracking code into a specific site page in Commerce site bu
 1. Go to your site in Commerce site builder.
 1. Select **Pages**, select the page to which you want to add Clarity script code, and then select **Edit**.
 1. Select the root node slot in the module outline pane.
-1. In the properties pane under **SEO Properties**, expand the **script tag** section. Under **Inline script**, paste the Clarity tracking code. Be sure to remove the surrounding **\<script\>** tags if present in your copied script string.
+1. In the properties pane under **SEO Properties**, expand the **script tag** section. Under **Inline script**, paste the Clarity tracking code. Be sure to remove the surrounding **\<script\>** tags if you copied the script string.
 1. Select **Save**, select **Finish editing**, and then select **Publish**.
 
-Once Clarity script has been added to your site pages, you should begin to see data and captures in your Clarity portal. Some time may be needed to accumulate page views before you begin seeing results.
+After Clarity script has been added to your site pages, you should begin to see data and captures in your Clarity portal. Additional time may be needed to accumulate page views before you begin seeing results.
 
 ## Additional resources
 
