@@ -50,8 +50,8 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Option to force the cancellation and reset of stuck batch jobs - (560976) | - | [Reset stuck batch jobs](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-troubleshooting-batch-execution) |
-| Minor UX updates for creating new Benefits plan - (419941) | NA | [Creating Benefits Plans](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-plans-setup) |
+| Option to force the cancellation and reset of stuck batch jobs - (560976) | NA | [Reset stuck batch jobs](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-troubleshooting-batch-execution) |
+| Minor UX updates for creating new Benefits plan - (419941) | NA | [Create a benefits plan](hr-benefits-plans-setup.md) |
 
 ### Bug fixes
 
