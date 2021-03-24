@@ -76,7 +76,7 @@ To enter skills without requiring approval, you must create a workflow to auto-a
 
 14. On the **Hierarchy selection** tab, in the **Hierachy type:** field, select **Managerial hierarchy**.
 
-15. Select **Close**, and then select 
+15. Select **Close**, select **Workflow** in the canvas breadcrumb, and then select **Save and close**.
 
 For more information about creating workflows, see [Workflow system overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=/dynamics365/human-resources/toc.json).
 
