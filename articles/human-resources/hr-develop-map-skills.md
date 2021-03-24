@@ -46,12 +46,12 @@ Skill-mapping profiles allow you to find current employees or candidates with qu
 > - Applicant<br>
 > - Contacts<br>
 
-To create a skill mapping, go to **Employee development > Links > Skill mapping**.
-
-To create a skill mapping or skill mapping profile, go to **Employee development > Links > Skill mapping** or 
+To create a skill mapping, go to **Employee development > Links > Skill mapping**. To create a skill mapping profile, go to **Employee development > Links > Skill mapping profiles**.
 
 ## Skill gap analysis and skill profile analysis
 
-You can create a skill profile analysis to view a list of the competencies of a worker, applicant, or contact person as of a specific date. You can create a skill gap analysis to compare a person’s skills and the skills that are required for a specific job.  
+You can create a skill profile analysis to view a list of the competencies of a worker, applicant, or contact person as of a specific date. You can create a skill gap analysis to compare a person’s skills and the skills that are required for a specific job.
+
+To create a gap analysis, go to **Employee development > Links > Skill gap analysis job - person**. To create a skill profile analysis, go to **Employee development > Links > Skill profile analysis**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
