@@ -45,7 +45,7 @@ Complete the following steps to immediately cancel the running task.
 2. Select a batch job that has a **Status** of **Canceling**.
 3. On the **Batch tasks** tab, select **Abort** on the task, and then select **OK**.
 
-# Enhanced cancellation feature
+## Enhanced cancellation feature
 Starting PU40, an enhancement to the batch abort functionality has been introduced, which upon confirmation from the customer, will drain and restart the batch server currently running the batch tasks that the customer is attempting to abort in order to make the abort functionality more resilient to limitations, and ensure that tasks of the job the customer is trying cancel are truly preempted.
 
 To use the new functionality, please follow the steps below:
