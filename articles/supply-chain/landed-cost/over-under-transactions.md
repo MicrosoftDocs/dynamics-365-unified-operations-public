@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Over/under transactions
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 When the orders in a voyage are processed, the system expects the item quantity that is received in the final destination warehouse for consumption to match the quantity that is specified on the purchase order lines that are associated with the voyage. However, because the exact quantity on the purchase order lines isn't always received in the warehouse, the **Landed cost** module defines a set of rules that are used to handle over-receiving and under-receiving of goods. These rules are especially important because the original purchase order has been invoiced and can no longer be modified. By setting up the details of over/under transaction policies, you enable the system to determine how to manage the over-processing and under-processing of goods at the time of receipt. You can also manually manage over and under inventory by using the **Over/under transactions** page.
 

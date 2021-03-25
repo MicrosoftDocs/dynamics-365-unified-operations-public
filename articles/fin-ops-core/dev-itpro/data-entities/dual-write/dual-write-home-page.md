@@ -93,12 +93,16 @@ These topics describe mapping between concepts in Finance and Operations applica
     + [Integrated ledger](ledger-mapping.md)
     + [Integrated tax master](tax-mapping.md)
 
-+ [Integrate procurement in Supply Chain Management with Field Service](scm-field-service-procurement.md)
 + [Sync on-demand with the Supply Chain Management price engine](pricing-engine.md)
++ [Sync on-demand with the Commerce price engine](commerce-pricing.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
++ [Integrate procurement in Supply Chain Management with Field Service](scm-field-service-procurement.md)
 + [In-house assets for servicing](in-house-assets.md)
-+ [Integrated worker, job, and position](integrated-hr.md)
 + [Onhand inventory availability](inventory-availability.md)
++ [Integrated worker, job, and position](integrated-hr.md)
++ [Party and global address book](party-gab.md)
++ [Note integration](notes-integration.md)
++ [Mapping reference](mapping-reference.md)
 
 ## Support
 

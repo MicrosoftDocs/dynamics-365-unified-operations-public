@@ -5,7 +5,7 @@ title: On-premises deployment home page
 description: This topic provides information and links to content about on-premises deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 11/23/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,12 +43,14 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 
 ## Onboard
 - [Set up on-premises projects in Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md)
+- [Set up and deploy on-premises environments (Platform update 41 and later)](setup-deploy-on-premises-pu41.md)
+- [Set up and deploy on-premises environments (Platform updates 12 through 40)](setup-deploy-on-premises-pu12.md)
 - [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
 - [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md)
 - [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md)
 
 ## Work in your on-premises deployment
+- [Configure high availability for SQL Server Reporting Services (SSRS) nodes](onprem-SSRSHA.md)
 - [Configure document management](../../fin-ops/organization-administration/configure-document-management.md)
 - [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)

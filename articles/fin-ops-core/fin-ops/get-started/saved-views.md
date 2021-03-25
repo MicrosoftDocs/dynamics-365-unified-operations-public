@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 28
 # Saved views
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 ## Introduction
 

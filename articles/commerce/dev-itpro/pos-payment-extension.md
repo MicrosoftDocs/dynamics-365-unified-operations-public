@@ -2,13 +2,12 @@
 # required metadata
 
 title: Point of sale (POS) payment extension
-description: You can implement the core payment logic in the payment device or payment connector using the Hardware station APIs by using the extension points in POS to support payment extensibility.
+description: This topic describes how to implement the core payment logic in the payment device or payment connector using the Hardware station APIs.
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

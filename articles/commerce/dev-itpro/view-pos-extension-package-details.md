@@ -2,13 +2,12 @@
 # required metadata
 
 title: View POS extension package information
-description: This topic provides information about the Extension packages section of the Settings view in the point of sale (POS). This new section lists the extension packages that are included as part of the core POS, and it lets you view status information and other details.
+description: This topic provides information about the Extension packages section of the Settings view in the point of sale (POS).
 author: mugunthanm
 manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -29,11 +28,7 @@ ms.dyn365.ops.version: AX 10.0.1
 
 # View POS extension package information
 
-
 [!include [banner](../includes/banner.md)]
-
-
-
 
 In the **Settings** view in the point of sale (POS), the **Extension packages** section shows the list of POS extension packages that are included as part of the core POS. The tile for each package shows the status of that package. The package status indicates whether the extension was loaded, could not be loaded, or was skipped.
 

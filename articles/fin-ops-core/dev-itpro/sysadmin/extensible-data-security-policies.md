@@ -43,7 +43,7 @@ be accessible from the restricted tables.
     customer group, the **CustTable** would be the constrained table.
 
 -   **Primary table**: Used to secure the content of the related constrained
-    table. In the above example, the **CustGroup**table would be the primary table.
+    table. In the above example, the **CustGroup** table would be the primary table.
     The primary table must have an explicit relationship to the constrained table.
 
 -   **Policy query**: Used to secure the constrained tables content using a range

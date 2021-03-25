@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up and deploy on-premises environments (Platform update 12 and later)
-description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
+title: Set up and deploy on-premises environments (Platform updates 12 through 40)
+description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform updates 12 through 40.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 02/01/2021
+ms.date: 03/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Set up and deploy on-premises environments (Platform update 12 and later)
+# Set up and deploy on-premises environments (Platform updates 12 through 40)
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
+This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12-40.
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. You can post questions or feedback you may have about the on-premises deployment there.
 
@@ -97,8 +97,8 @@ If you are using VMWare, you must implement the fixes that are documented on the
 - [After upgrading a virtual machine to hardware version 11, network dependent workloads experience performance degradation (2129176)](https://kb.vmware.com/s/article/2129176)
 - [Several issues with vmxnet3 virtual adapter](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
- > [!WARNING]
- > Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Azure.
+> [!IMPORTANT]
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) services.
 
 The hardware configuration includes the following components:
 
@@ -686,7 +686,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 2. Run the SQL service as a domain user or a group-managed service account.
 3. Get an SSL certificate from a certificate authority to configure SQL Server for Finance + Operations. For testing purposes, you can create and use a self-signed certificate or an AD CS certificate. You will need to replace the computer name and domain name in the following examples.
 
-    **Self-signed certificate for an Always-On SQL instance**
+    **Certificates for an Always-On SQL instance**
 
     If you are setting up testing certificates for Always-On, use the following **remoting** script. This will perform the same as the following **manual** script and steps **a-e**.
 

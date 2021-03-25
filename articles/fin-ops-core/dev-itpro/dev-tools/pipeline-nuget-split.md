@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This documentation applies to pipelines that were set up for versions 10.0.17 or earlier, updating to 10.0.18 or above.
-> This documentation does not apply to the legacy build pipeline that uses the build virtual machine.
+> This topic applies to pipelines that were set up for versions 10.0.17 or earlier. This does not apply to the legacy build pipeline that uses the build virtual machine.
 
 Platform updates for [version 10.0.18](../get-started/whats-new-platform-updates-10-0-18.md) introduce a new NuGet package. The new package is a result of a package split for the Application Build Reference code. As a result, you have to make changes to pipelines created for 10.0.17 or earlier versions.
 
@@ -63,15 +62,15 @@ You need to add a fourth package to the list, **Microsoft.Dynamics.AX.Applicatio
 
 ## Add a pipeline variable
 
-The pipeline uses variables to simplify and centralize parameters used in the pipeline tasks. There are already variables for each of the NuGet package names. Add a variable for the name of the new NuGet package.
+The pipeline uses variables to simplify and centralize parameters used in the pipeline tasks. There are already variables for each of the NuGet package names. To add a variable for the name of the new NuGet package, do the following:
 
-- On the **Variables** tab of the pipeline, select the **Add** link at the bottom of the list of variables.
-- In the name column, type `AppSuitePackage`.
-- In the value column, type `Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp`.
+1. On the **Variables** tab of the pipeline, select the **Add** link at the bottom of the list of variables.
+2. In the **Name** column, type `AppSuitePackage`.
+3. In the **Value** column, type `Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp`.
 
 ## Update the **Build solution** step
 
-In the **Build solution** step in the pipeline, the path and names to all the NuGet packages are supplied as command-line parameters to **MSBuild**. Add the new NuGet package to the semi-colon separated list of **ReferenceFolder** paths.
+In the **Build solution** step in the pipeline, the path and names to all the NuGet packages are supplied as command-line parameters to **MSBuild**. To add the new NuGet package to the semi-colon separated list of **ReferenceFolder** paths, do either of the following:
 
 - If you used the existing template without modifying it, the new **MSBuild Arguments** will be:
 
@@ -79,6 +78,6 @@ In the **Build solution** step in the pipeline, the path and names to all the Nu
 
 - If you've modified the arguments list, find the **ReferenceFolder** property argument and add `$(NuGetsPath)\$(AppSuitePackage)\ref\net40` to the semi-colon separated list. Add a semi-colon to separate this new entry from other paths in the list.
 
-## Replace your existing template entirely
+## Use the updated templates on GitHub as an alternative
 
 As an alternative to making these changes, or as a way to verify your changes, review the updated templates in the [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub repository.

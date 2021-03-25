@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Get started with the Electronic invoicing add-on for Italy
-description: This topic provides information that will help you get started with the Electronic invoicing add-on for Italy Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+title: Get started with the Electronic invoicing add-in for Italy
+description: This topic provides information that will help you get started with the Electronic invoicing add-in for Italy in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -29,19 +28,19 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with the Electronic invoicing add-on for Italy
+# Get started with the Electronic invoicing add-in for Italy
 
 [!include [banner](../includes/banner.md)]
 
 
 > [!IMPORTANT]
-> The Electronic invoicing add-on for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. 
+> The Electronic invoicing add-in for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. 
 
-This topic provides information that will help you get started with the Electronic invoicing add-on for Italy. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the process for submitting electronic invoices that are generated in the Italy-specific **FatturaPA** format through the service, and it explains how to review the results of processing.
+This topic provides information that will help you get started with the Electronic invoicing add-in for Italy. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS) and Finance. It also guides you through the process for submitting electronic invoices that are generated in the Italy-specific **FatturaPA** format through the service, and it explains how to review the results of processing.
 
 ## Prerequisites
 
-Before you complete the steps in this topic, you must complete the steps in [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
+Before you complete the steps in this topic, you must complete the steps in [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
 ## RCS setup
 
@@ -53,7 +52,7 @@ During the RCS setup, you will complete these tasks:
 4. Publish the e-Invoicing feature.
 
 > [!NOTE]
-> "The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the Electronic invoicing add-on server. In this case, the export of customer electronic invoices is the e-Invoicing feature that you will set up.
+> "The e-Invoicing feature" is the generic name for the resource that is configured and published to consume the Electronic invoicing add-in server. In this case, the export of customer electronic invoices is the e-Invoicing feature that you will set up.
 
 ## Import the e-Invoicing feature
 
@@ -158,7 +157,7 @@ You can publish the e-Invoicing feature by changing the version status to **Comp
 
 ![Changing the status of the e-Invoicing feature](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
-## Set up the Electronic invoicing add-on integration in Finance
+## Set up the Electronic invoicing add-in integration in Finance
 
 During the setup of Finance, you will complete these tasks:
 
@@ -198,17 +197,17 @@ During the setup of Finance, you will complete these tasks:
 
 During processing in Finance, you will complete these tasks:
 
-1. Generate Italian e-invoices through the Electronic invoicing add-on
+1. Generate Italian e-invoices through the Electronic invoicing add-in
 2. View the execution logs and review the results of processing
 
 ### Generate electronic invoices
 
-After you turn on the **Configurable Electronic invoicing add-on integration** feature and activate the **IT00036** feature, the old Finance process for generating Italian e-invoices can no longer be used. It's replaced by a new process that is named **Submit electronic documents**.
+After you turn on the **Configurable Electronic invoicing add-in integration** feature and activate the **IT00036** feature, the old Finance process for generating Italian e-invoices can no longer be used. It's replaced by a new process that is named **Submit electronic documents**.
 
 You can submit the documents manually, based on your demand for e-invoice documents.
 
 > [!NOTE]
-> Before you continue, verify that the setup that is required for Italian e-invoices was completed. For more information, see [Customer electronic invoices](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Be aware that some of the setup steps that are described in that topic might be unavailable because of Electronic invoicing add-on activation.
+> Before you continue, verify that the setup that is required for Italian e-invoices was completed. For more information, see [Customer electronic invoices](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Be aware that some of the setup steps that are described in that topic might be unavailable because of Electronic invoicing add-in activation.
 
 1. Go to **Organization administration \> Periodic \> Electronic documents \> Submit electronic documents**.
 2. For the first submission of any document, set the **Resubmit documents** option to **No**. If you must resubmit a document through the service, set this option to **Yes**.
@@ -226,7 +225,7 @@ You can submit the documents manually, based on your demand for e-invoice docume
 3. Select **OK** submit the selected documents.
 
 > ![NOTE]
-> During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the Electronic invoicing add-on. Select **Click here to connect to Electronic Document Submission Service**.
+> During your first attempt to submit a document through the service, you will be prompted to confirm the connection with the Electronic invoicing add-in. Select **Click here to connect to Electronic Document Submission Service**.
 
 #### View submission logs
 
@@ -248,9 +247,9 @@ You can view the submission logs for all submitted documents.
 
 ## Related topics
 
-- [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
-- [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)
-- [Set up the Electronic invoicing add-on](e-invoicing-setup.md)
+- [Electronic invoicing add-in overview](e-invoicing-service-overview.md)
+- [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md)
+- [Set up the Electronic invoicing add-in](e-invoicing-setup.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
