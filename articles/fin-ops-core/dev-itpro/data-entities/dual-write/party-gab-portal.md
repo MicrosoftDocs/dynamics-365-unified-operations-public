@@ -45,7 +45,7 @@ To create these new table permissions, follow these steps:
 
 4. Create and save a new permission for the Contact to Party connection, setting these parameters:
 
-    + **Name**: Contact to Party Connection (or your choice)
+    + **Name**: Party to Account Connection (or your choice)
     + **Table Name**: msdyn_contactforparty
     + **Website**: Customer Portal
     + **Scope**: Contact
