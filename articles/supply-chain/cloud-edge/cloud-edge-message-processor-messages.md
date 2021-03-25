@@ -41,14 +41,11 @@ A large amount of data is exchanged between the hub and scale unit deployment en
 
 You can use the fields at the top of the **Message processor messages** page to help find any particular messages you are looking for. Most of these filters match the column headings in the message grid. The following filters and column headings are available:
 
-- **Message type** – Specifies the type of message. The message types are:
-  - *Request inventory adjustment financial update* – Creates and posts a counting journal on the hub when a worker uses the warehouse app to [register an inventory adjustment](cloud-edge-warehouse-inventory-adjustment.md) on a scale unit warehouse management workload.
-  - *Hub to warehouse execution scale unit* – 
-  - *Hub to manufacturing execution scale unit* – 
-- **Message queue** – <!-- KFM: Description needed -->
-    - *Scale unit to hub* – The process originates from a scale unit
-    - <!-- KFM: List and describe the others -->
-    - <!-- KFM: List and describe the others -->
+- **Message type** – Specifies the type of message.
+- **Message queue** – Specifies the name of the queue in which the message is to be processed. The following queues are provided:
+  - *Scale unit to hub*
+  - *Hub to warehouse execution scale unit*
+  - *Hub to manufacturing execution scale unit*
 - **Message state** – Specifies the state of the message. The following states exists:
   - *Queued* – The message is ready to be processed by the message processor.
   - *Processed* – The message was successfully processed by the message processor.
@@ -95,7 +92,7 @@ As part of the activation process, you will be guided to specify whether the eve
 
 As an example, let's use **When a Business Event occurs** with *Microsoft Power Automate* to send e-mails containing InfoLog messages and hyperlinks to open the **Message processor messages** page for a specific failed message on the hub deployment. If needed, you can add extra logic to send out the notifications in parallel via different channels and control the recipients based on the event data, but in this section we will look at a simple example.
 
-1. In [Power Automate](https://preview.flow.microsoft.com/en-us/), you start by creating a new automated cloud flow for the flow trigger **When a Business Event occurs - Fn & Ops App (Dynamics 365)** followed by the **Parse JSON** and **Send an email** steps, as shown in the following illustration.
+1. In [Power Automate](https://preview.flow.microsoft.com/en-us/), you start by creating a new automated cloud flow for the flow trigger **When a Business Event occurs - Fin & Ops App (Dynamics 365)** followed by the **Parse JSON** and **Send an email** steps, as shown in the following illustration.
 
     :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automated cloud flow":::
 

@@ -65,16 +65,15 @@ The hub then processes a counting journal posting, which are received through [m
 Once a scale unit has created a *Warehouse inventory adjustment journal* on the hub, you can review both the *Counting journal* and the *Offset journal*, which are created by the hub as part of the adjustment process.
 
 You can review each of these journal entires and transaction in Supply Chain Management by doing the following steps:
-<!-- KFM: Please review and confirm this. -->
 
 1. Sign in on the scale unit.
-1. Go to <!-- KFM: Path? -->.
+1. Go to **Warehouse management \> Periodic tasks \> Warehouse inventory adjustment journal**.
 1. On the **Warehouse inventory adjustment journal** page, find and open the journal that recorded the on-hand inventory change. The **Journal lines** section shows each adjustment recorded by this journal.
 1. Sign in on the hub.
-1. Go to <!-- KFM: Path? -->.
+1. Go to **Warehouse management \> Periodic tasks \> Warehouse inventory adjustment journal**.
 1. On the **Warehouse inventory adjustment journal** page, you should see the same journal listed (provided the hub and scale unit have synced).
 1. Open the journal. Provided the [message processor messages](cloud-edge-message-processor-messages.md) have been processed, you will see links to the **Counting journal** and the **Offset journal** in the header.
-    - The **Counting journal** should show the same journal line that you saw on the scale unit.
+    - The **Counting journal** should show the same dimension values that you saw for the journal line.
     - The **Offset journal** should show the offset, which removes the double inventory adjustment.
     > [!NOTE]
     > When all syncing and processing is complete, the *Counting journal* and the *Offset journal* are synced back to the scale unit and can also be viewed from the relevant **Warehouse inventory adjustment journal** page there.
