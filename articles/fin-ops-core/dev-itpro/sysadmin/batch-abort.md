@@ -50,7 +50,7 @@ Starting PU40, an enhancement to the batch abort functionality has been introduc
 
 To use the new functionality, please follow the steps below:
 1. Make sure you are running PU40 or later, or have the necessary quality package installed
-2. Enable the **Enhanced batch abort** in the [Feature Management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) form.
+2. Enable the **Enhanced batch abort** in the [Feature Management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) form.
 3. Follow the same instructions to [cancel an executing batch job](#legacy-abort)
  
 You will be prompted that the batch server running the cancelling tasks will be restarted, which can potentially disrupt a list of other batch jobs; you must proceed in order to abort the cancelling tasks
