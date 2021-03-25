@@ -2,10 +2,10 @@
 # required metadata
 
 title: Page summary module
-description: This topic covers the page summary modules and describes how to add one to a template in Microsoft Dynamics 365 Commerce.
+description: This topic covers page summary modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 03/23/2021
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the page summary modules and describes how to add one to a template in Microsoft Dynamics 365 Commerce.
+This topic covers page summary modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 
-Page summary modules simplifies entry of page summary metadata which can be used by search engines and social sharing sites, including the canonical link.  The module library contains several page summary modules including **Page summary**, **Category page summary**, **List page summary** and **Product page summary** pages.  Each one is SEO tuned for the specific page types they will be used for. All summary page modules share the same set of properties defined below.
+Page summary modules simplify the entry of page summary metadata which can be used by search engines and social sharing sites, including the canonical link. The module library contains several page summary modules including **Page summary**, **Category page summary**, **List page summary** and **Product page summary** pages.  Each one is SEO tuned for the specific page types they will be used for. All summary page modules share the same set of properties defined below.
 
 ![Page module slots](media/page-module-1.png)
 
