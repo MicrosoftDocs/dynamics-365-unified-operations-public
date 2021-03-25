@@ -180,9 +180,9 @@ Customers must stay current on the latest service updates in accordance with the
 
 - **Customers on version 8.0 and lower:** The application updates are released as granular X++ updates while the platform is released as a cumulative binary update. Microsoft requires each customer to be current on the latest Finance and Supply Chain Management platform update. Starting April 2018, Microsoft will update customer environments to the latest release of the platform within the maintenance window configured in the customer's LCS project. Customers can also get the service update via LCS and can apply it to their environments on their own prior to Microsoft initiating the service update.
 
-X++ updates must be applied on a development environment before they can be deployed on a sandbox, staging, or production environment. Binary updates can be applied directly on any environment but must be validated on the Customer's sandbox environment before being promoted to a production environment. Refer to the table in [Planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities) for more detailed instructions.
+  X++ updates must be applied on a development environment before they can be deployed on a sandbox, staging, or production environment. Binary updates can be applied directly on any environment but must be validated on the Customer's sandbox environment before being promoted to a production environment. Refer to the table in [Planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities) for more detailed instructions.
 
-Please note that some service updates may be mandatory and require no consent. To help protect our Customers and the service, Microsoft may apply critical security updates directly to a Customer's Finance and Supply Chain production environment.
+  Please note that some service updates may be mandatory and require no consent. To help protect our Customers and the service, Microsoft may apply critical security updates directly to a Customer's Finance and Supply Chain production environment.
 
 #### Planned maintenance responsibilities 
 
