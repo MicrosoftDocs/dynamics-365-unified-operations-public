@@ -3133,6 +3133,8 @@
             href: warehousing/wave-step-codes.md
           - name: Configure wave processing
             href: warehousing/tasks/configure-wave-processing.md
+          - name: Wave execution notifications
+            href: warehousing/wave-execution-notifications.md
           - name: Schedule work creation during wave
             href: warehousing/configure-wave-schedule-work-creation.md
           - name: Set up and use wave label printing
