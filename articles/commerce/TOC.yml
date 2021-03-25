@@ -2306,6 +2306,8 @@
             href: e-commerce-extensibility/best-practices-dev.md
           - name: Dynamics 365 Commerce online SDK FAQ
             href: e-commerce-extensibility/sdk-faq.md
+          - name: Debugging best practices for Dynamics 365 Commerce development
+            href: e-commerce-extensibility/debugging-best-practices.md
       - name: Retail SDK
         items:
         - name: Retail SDK architecture
