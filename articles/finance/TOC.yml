@@ -2166,6 +2166,8 @@
                 href: general-ledger/tax-engine-integration.md
               - name: Extending the Tax engine
                 href: general-ledger/extend-tax-engine-configurations.md
+              - name: Clean up the TaxDocumentJSON table
+                href: localizations/gte-clean-up-tax-document-json-table.md
               - name: Troubleshoot GTE
                 href: localizations/tax-engine-trouble-shooting.md
             - name: Master data setup
@@ -2278,8 +2280,6 @@
                   href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                 - name: Credit or debit note against an export order
                   href: localizations/apac-ind-GST-credit-debit-note-against-export-order.md
-                - name: TCS on sale of goods
-                  href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
               - name: Stock transfer transactions
                 items:
                 - name: Stock transfer orders
@@ -2300,6 +2300,16 @@
                   href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
                 - name: Customer payment refunds
                   href: localizations/apac-ind-GST-customer-payment-refund.md
+              - name: Tax adjustment
+                items:
+                - name: Tax amount adjustment
+                  href: localizations/apac-ind-GST-tax-adjustments.md
+                - name: Create a tax journal
+                  href: localizations/apac-ind-GST-tax-journal.md
+              - name: Tax document inquiries
+                items: 
+                - name: Tax inquiry
+                  href: localizations/apac-ind-GST-tax-inquiry.md
             - name: Tax settlement
               items:
               - name: Rule-based tax settlement
@@ -2322,16 +2332,10 @@
               href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
             - name: Include GST when calculating tax collections
               href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
-            - name: Tax amount adjustment
-              href: localizations/apac-ind-GST-tax-adjustments.md
-            - name: Create a tax journal
-              href: localizations/apac-ind-GST-tax-journal.md
-            - name: Tax inquiry
-              href: localizations/apac-ind-GST-tax-inquiry.md
-            - name: Clean up the TaxDocumentJSON table
-              href: localizations/gte-clean-up-tax-document-json-table.md
             - name: Tax thresholds FAQ
-              href: localizations/apac-ind-tax-thresholds.md          
+              href: localizations/apac-ind-tax-thresholds.md  
+            - name: TCS on sale of goods
+              href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
           - name: GST integration for cash registers
             href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
       - name: Italy
