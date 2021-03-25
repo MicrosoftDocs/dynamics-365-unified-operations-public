@@ -2,7 +2,7 @@
 # required metadata
 
 title: Metatags module
-description: This topic covers metatags modules and describes how to them to templates in Microsoft Dynamics 365 Commerce.
+description: This topic covers metatags modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 03/25/2021
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers metatags modules and describes how to them to templates in Microsoft Dynamics 365 Commerce.
+This topic covers metatags modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 
 The metatags module supports the entry of custom HTML meta tags that can improve site page search engine optimization (SEO) rankings.
 
-The metatags module can be added to a template's **HTML Head** slot, which will make the module available to configure both in the template and in the site pages that use the template. One or more general meta tags can be added to a template, but page-specific meta tags should be added to those site pages. 
+The metatags module is added to a template's **HTML Head** slot, which makes the module available to configure both in the template and in the site pages derived from the template. One or more general meta tags can be added to a template, but page-specific meta tags should be added to those site pages. Page-level metatags overwrite template-level meta tags. 
 
 The following example image shows a metatags module added to the **HTML Head** slot of a template.
 
@@ -52,7 +52,7 @@ The following example image shows a metatags module added to the **HTML Head** s
 
 To add a metatags module to a template, follow these steps.
 
-1. In site builder for your site, select **Templates**. 
+1. In Commerce site builder for your site, select **Templates**. 
 1. Select a template, and then select **Edit**.
 1. In the **HTML Head** slot, select the ellipsis (**...**), and then select **Add Module**.
 
