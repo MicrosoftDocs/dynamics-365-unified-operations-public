@@ -2146,7 +2146,9 @@
       - name: 'Mixed mode planning: Combine discrete, process, and lean sourcing'
         href: production-control/mixed-mode-plan.md
       - name: Manage subcontracting work in production
-        href: production-control/manage-subcontract-work-production.md
+        href: production-control/manage-subcontract-work-production.md  
+      - name: Unified number sequence for job IDs
+        href: production-control/unified-job-ids.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
