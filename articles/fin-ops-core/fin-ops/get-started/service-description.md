@@ -125,7 +125,7 @@ LCS provides provisioning and database movement operations that are used by Cust
 
 ### Data back-up and retention 
 
-Databases for Microsoft-managed environments are protected by automatic back-ups. Automatic back-ups are retained for 28 days for Production environments and 14 days for Sandbox (Tier2+) environments. unless Microsoft performs a rollback. Rollbacks may *by automatic back-ups as* be performed in the event a failure occurs during any planned maintenance update specified in [Planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities).
+Databases for Microsoft-managed environments are protected by automatic back-ups. Automatic back-ups are retained for 28 days for Production environments (unless Microsoft performs a rollback) and 14 days for Sandbox (Tier2+) environments. A rollback of Production may be performed in the event a failure occurs during any planned maintenance update specified in [Planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities).
 
 For more information about automatic back-ups, see [Automated backups - Azure SQL Database & SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
@@ -140,7 +140,7 @@ The following table describes some typical scenarios and activities for the serv
 | Provision all Production Instances and Non-Production Instances | X |   |
 | Validate the deployed Production Instances and Non-Production Instances |  | X  |
 | **Service updates**  |  |
-| Microsoft applies service updates to a designated Non-Production and</br>Production Instances | X  | X  |
+| Microsoft applies service updates to designated Non-Production and Production Instances | X  | X  |
 | Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  | X  |
 | Request extension updates to be applied to the Production Instance |  | X |
 | Create code and data backup for Production Instance before applying any updates | X  |   |
@@ -155,15 +155,15 @@ The following table describes some typical scenarios and activities for the serv
 | Schedule regular infrastructure updates | X |    |
 | **Scale up and down (Users, storage, instances)**|  |   |
 | Purchase additional users and Non-Production add-ons |  |  X |
-| Changes in usage must be updated in the LCS' Subscription Estimator tool |  | X |
+| Changes in usage updated in the LCS Subscription Estimator tool |  | X |
 | Report any significant performance issues impacting usage of the Service |  | X |
-| Proactively manage the resources needed for the Service applicable Service | X |   |
+| Proactively manage the resources needed for the applicable Service | X |   |
 | Investigate and troubleshoot Incidents | X | X |
 | **Security (User access)**|  |   |
 | Provide user access to the Service |  |  X |
 | Provide LCS project access for managing and operating instances deployed through LCS |  | X |
 | **Monitor Production Instance**|  |  |
-| Monitor Production Instances 24x7 | X |X   |
+| Monitor Production Instances 24x7 | X |   |
 | Notify Customer proactively of incidents with the Production Instance | X |   |
 | **Manage and Monitor Non-Production Instances** |  |   |
 | Manage Non-Production Instances with LCS |  | X  |
@@ -172,46 +172,45 @@ The following table describes some typical scenarios and activities for the serv
 
 ### Service update strategy and maintenance windows 
 
-Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). All versions of Finance and Supply Chain Management will use the new Microsoft Modern Lifecycle Policy. The Modern Lifecycle covers products that are serviced and supported continuously.
+Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). All versions of Finance and Supply Chain Management follow the Microsoft Modern Lifecycle Policy. The Modern Lifecycle covers products that are serviced and supported continuously.
 
-[Service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview) to the Finance and Supply Chain Management application and platform are handled as follows.
+[Service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview) to the Finance and Supply Chain Management application and platform are handled as follows:
 
-- **Customers that are on version 8.1 and higher:** The application and the platform components are released as a single cumulative update called deployable package for customers to uptake. Microsoft notifies the customer when a new service update is made available. Starting April 2019, Microsoft will update your environments to the latest released update by Microsoft within the maintenance window configured in your LCS project. Unless the service update is paused, the environment will be updated to the latest release. Customers have the option to take the update outside of the scheduled maintenance window. We recommend customers to stay current for a better service experience.
+- **Customers on version 8.1 and higher:** The application and the platform components are released as a single cumulative update, known as a deployable package, for customers to uptake. Microsoft notifies the customer when a new service update is made available. Starting April 2019, Microsoft will updates customer environments to the latest released update by Microsoft within the maintenance window configured in the customer's LCS project. Unless the service update is paused, the environment will be updated to the latest release. Customers have the option to take the update outside of the scheduled maintenance window. We recommend customers stay current for a better service experience.
 
-- **Customers that are on version 8.0 and lower:** The application updates are released as granular X++ updates while the platform is released as a cumulative binary update. Microsoft requires each customer to be current on the latest Finance and Supply Chain Management platform update. Starting April 2018, Microsoft will update your environments to the latest release of the platform within the maintenance window configured in your LCS project. Customers can also get the service update via LCS and can apply it to their environments on their own prior to Microsoft initiating the service update.
+- **Customers on version 8.0 and lower:** The application updates are released as granular X++ updates while the platform is released as a cumulative binary update. Microsoft requires each customer to be current on the latest Finance and Supply Chain Management platform update. Starting April 2018, Microsoft will update customer environments to the latest release of the platform within the maintenance window configured in the customer's LCS project. Customers can also get the service update via LCS and can apply it to their environments on their own prior to Microsoft initiating the service update.
 
-    X++ updates must be applied on a development environment before they can be deployed on a sandbox, staging, or production environment. Binary updates can be applied directly on any environment but must be validated on the Customer's sandbox environment before being promoted to a production environment. Refer to the table in [Planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities) for more detailed instructions.
+X++ updates must be applied on a development environment before they can be deployed on a sandbox, staging, or production environment. Binary updates can be applied directly on any environment but must be validated on the Customer's sandbox environment before being promoted to a production environment. Refer to the table in [Planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities) for more detailed instructions.
 
-Please note that some service updates may be mandatory and require no consent. To help protect our Customers and the service, Microsoft may apply critical security updates directly to a Customer's Finance and Operations production environment.
+Please note that some service updates may be mandatory and require no consent. To help protect our Customers and the service, Microsoft may apply critical security updates directly to a Customer's Finance and Supply Chain production environment.
 
 #### Planned maintenance responsibilities 
 
-Microsoft provides Customers with the types of updates to Finance and Supply Chain Management set forth in the table below. These updates may require downtime on the production environment. The downtime window can be categorized as Microsoft Planned Maintenance (initiated by Microsoft) or Customer Planned Maintenance (initiated by the Customer). Updates are scheduled with the Customer via LCS.
+Microsoft provides Customers with the types of updates to Finance and Supply Chain Management set forth in the table below. These updates may require downtime on the production environment. The downtime window can be categorized as Microsoft Planned Maintenance (initiated by Microsoft) or Customer Planned Maintenance (initiated by the Customer). Updates are initiated or scheduled by the Customer via LCS.
 
 The responsibilities of Microsoft, the Implementation Partner, and the Customer are reflected in the table for each update type.
 
 | Type of update | Expected action from Microsoft | Expected action from Customer/Implementation Partner | Maintenance window<br><br>*(Microsoft's estimated maintenance downtime)*|
 |-------------------------|-------------------------|-------------------------|------|
-| Customers that are on version 8.1 and higher |  |  |  |
+| Customers on version 8.1 and higher |  |  |  |
 | **Service updates**</br>*Service updates are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible* | Initiate updates to the application within the configured maintenance window. | Customer must always stay current on the latest version of the application. | Microsoft initiated maintenance window<br>*(30 minutes – 4 hours*)*|
 | **Critical update**</br>*Update that solves a critical issue.* | <ul><li>Notify Customer of the critical update.</br><br><li>Initiate update within the specified timeline. | Apply the critical update.| Microsoft initiated maintenance window<br>*(30 minutes – 4 hours)* |
-| **Extensions**</br>*Change to the standard business application logic.* | No action required. | Validate extensions in Customer's Non-Production Instances and then promote them to Customer's Production Instance.| Customer initiated maintenance window</br>*(1 – 4 hours)* |
-| Customers that are on version 8.0 and lower |  |  |  |
+| **Extensions**</br>*Change to the standard business application logic.* | No action required. | Validate extensions in Customer's Non-Production Instances then promote them to Customer's Production Instance.| Customer initiated maintenance window</br>*(1 – 4 hours)* |
+| Customers on version 8.0 and lower |  |  |  |
 | **Platform updates**<br>*Platform updates are collections of hot fixes and new features for the platform, provided as a deployable package. They are backward compatible. They are also backward compatible with the last major release of the applicable Service.* | Initiate updates to the platform within the configured maintenance window.| Customer must always stay current on the latest version of the platform. | Microsoft initiated maintenance window</br>*(30 minutes – 4 hours**)* |
 | **Major releases**</br>*Major releases for the Service include new functionality. The last major update is 8.1.* | Make the new major release available and publish to LCS. | Prepare for the upgrade according to the LCS instructions and best practices.| Customer initiated maintenance window</br>*(5 – 8 hours)* |
 | **Infrastructure updates**<br>*Infrastructure updates are updates made to the underlying infrastructure like OS updates. These are done monthly.* | Initiate updates within the Microsoft planned maintenance window. | No action needed. | Microsoft initiated maintenance window</br>*(1 – 4 hours)*  |
-| **Dynamics 365 for Finance and Supply ChainManagement**</br>*IP address whitelisting - Securing access from Customer's corpnet to Supply Chain Management.* | Finance and Operations is an Azure Service and uses Azure IP address range. | Customers need to whitelist the Azure datacenter ranges for both their Primary and Geo-DR datacenters.</br><br>Link to doc for IP address ranges for Azure. | N/A |
+| **Dynamics 365 for Finance and Supply Chain Management**</br>*IP address whitelisting - Securing access from Customer's corpnet to Supply Chain Management.* | Finance and Operations is an Azure Service and uses Azure IP address range. | Customers need to whitelist the Azure datacenter ranges for both their Primary and Geo-DR datacenters.</br><br>Link to doc for IP address ranges for Azure. | N/A |
 | **Security**</br>*Secure Infrastructure.* | Microsoft installs anti-malware, uses SSL, rotate secrets, and adheres strictly to SOC/ISO standards.|Refer to the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security/dynamics365-security)or more details on Security. | N/A |
-| Customers that are on version 8.0 and lower ||  |  |
-| **Network Security Groups (NSG)**</br>*With the September LCS release, customers can configure Network Security Group rules to restrict RDP and WinRM access to their Microsoft managed sandbox VMs through LCS.* | Microsoft disallows Remote Desktop access to Sandbox (Tier 1, Tier 2, Tier 3, Tier 4 and Tier 5) environments over the Internet.</br><br>For self-service deployments, RDP is enabled only for Tier1 sandbox. | Customers need to whitelist their IP Address ranges via LCS to enable RDP access to their environments in Microsoft-managed subscriptions. Refer to [Cloud deployment overview](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview#features-of-the-finance-and-operations-production-instance) for more information. | N/A|
-| **ExpressRoute**</br>*Dedicated connection to Supply Chain Management.*| Finance and Operations enabled ExpressRoute over public peering. | Customers need to work with the Azure ExpressRoute service providers to acquire a dedicated connection to Finance and Supply Chain Management. | N/A |
-
+| Customers on version 8.0 and lower ||  |  |
+| **Network Security Groups (NSG)**</br>*Within the Azure Portal, customers can configure Network Security Group rules to restrict RDP access to their Tier1 sandbox VMs deployed to their own Azure subscription through LCS.* | Microsoft prohibits Remote Desktop access to any Tier2+ Sandbox environment.</br><br>For self-service deployments, RDP is enabled only for the Tier1 sandbox. | Customers need to whitelist their IP Address ranges via the Azure Portal to enable RDP access to their Tier1 sandbox environments. Refer to [Cloud deployment overview](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview#features-of-the-finance-and-operations-production-instance) for more information. | N/A|
+| **ExpressRoute**</br>*Dedicated connection to Finance and Supply Chain Management.*| Finance and Supply Chain enabled ExpressRoute over public peering. | Customers must work with their Azure ExpressRoute service provider to acquire a dedicated connection to Finance and Supply Chain Management. | N/A |
 
 \*\*Promoting an update to a Customer's production environment is a service request to Microsoft that must be initiated from LCS. This is within the Customer planned maintenance window. Request is planned to be executed within two business days. Generally, 95% of updates are applied in less than an hour.
 
 #### Microsoft planned maintenance schedule and communication 
 
-Scheduled downtime means periods of downtime related to network, hardware, or Service maintenance or upgrades. Microsoft will publish notice or notify Customers at least **five days** prior to the commencement of such downtime. The default downtime window as listed below are scheduled on weekends in time windows defined per region to minimize the impact to the Customers' business.
+Scheduled downtime means periods of downtime related to network, hardware, or Service maintenance or updates. Microsoft will publish notice or notify Customers at least **five days** prior to the commencement of such downtime. The default downtime window as listed below are scheduled on weekends in time windows defined per region to minimize the impact to the Customers' business.
 
 Microsoft's planned maintenance schedule:
 
