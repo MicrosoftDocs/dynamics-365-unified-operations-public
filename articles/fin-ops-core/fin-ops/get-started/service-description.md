@@ -107,8 +107,8 @@ Typical environment and data management events for the Service and the responsib
 
 | Customer's request  | Customer's responsibility  | Microsoft's responsibility  | Microsoft's lead time  |Microsoft's estimated maintenance downtime  |
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-| Deploy a new Production Instance | Submitted through service request in LCS.</br></br><ul><li>Accurately complete the sizing questionnaire in the LCS Subscription Estimator before requesting a Production Instance.</li></br><li>Complete all implementation tasks specified in the LCS checklists. | <ul><li>Complete Go live health check from Microsoft Fasttrack Services.</br></li></br><li>Deploy a Production Instance only after Customer has completed all LCS checklists and notify Customer of the provisioned environment through email.</br> | </br>2 business days</br></blockquote> | </br>N/A</br></blockquote> |
-| Copy a Sandbox database to a Production Instance prior to go-live.<br><br>*(Note: This request is not available if Customer is already live in production)* | Initiated in LCS for self-service deployments.<br><br><ul><li>Validation and sign-off. | <ul><li>Copy a Non-Production Instance (e.g., Sandbox Tier 2 Add-on) database to a Production Instance as part of the go-live process. | N/A | N/A|
+| Deploy a new Production Instance |<ul><li>Submit Production Environment service request in LCS. </br></li></br><li>Accurately complete the sizing questionnaire in the LCS Subscription Estimator before requesting a Production Instance.</br></li></br><li>Complete all implementation tasks specified in the LCS checklists. | <ul><li>Complete Go live health check from Microsoft Fasttrack Services.</br></li></br><li>Deploy a Production Instance only after Customer has completed all LCS checklists and notify Customer of the provisioned environment through email.</br> | </br>2 business days</br></blockquote> | </br>N/A</br></blockquote> |
+| Copy a Sandbox database to a Production Instance prior to go-live.<br><br>*(Note: This request is not available if Customer is already live in production)* | <ul><li>Initiated in LCS for self-service deployments.</br></li></br><li>Validation and sign-off. | <ul><li>Copy a Non-Production Instance (e.g., Sandbox Tier 2 Add-on) database to a Production Instance as part of the go-live process. | N/A | N/A|
 | Maintenance mode | <ul><li>Put AOS in maintenance mode through LCS.</br></li></br><li>Complete necessary maintenance.</br></li></br><li>Request to put the AOS back into active mode.</br> | N/A | N/A| N/A |
 
 #### Environment and data management events for Non-Production Instances
@@ -373,7 +373,7 @@ Any of the following instances of a Service that are used by Customer for valida
 
 - **Sandbox Tier 2:** Standard Acceptance Testing Instance (Microsoft Managed)
 
-- **Sandbox Tiers 3-5:** Add-on Sandboxes (Microsoft Managed) [Details for each Tier] (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?toc=/dynamics365/finance/toc.json#selecting-the-correct-tier-2-or-higher-environment)
+- **Sandbox Tiers 3-5:** Add-on Sandboxes (Microsoft Managed) [Details for each Tier](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?toc=/dynamics365/finance/toc.json#selecting-the-correct-tier-2-or-higher-environment)
 
 ### Production Instance 
 Instance of Finance and Supply Chain Management used by Customer for managing its "live" daily transactions.
