@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 27
 
 ---
 
-# Cancel an executing batch job
+# <a id="legacy-abort"></a>Cancel an executing batch job
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE] 
@@ -44,6 +44,19 @@ Complete the following steps to immediately cancel the running task.
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 2. Select a batch job that has a **Status** of **Canceling**.
 3. On the **Batch tasks** tab, select **Abort** on the task, and then select **OK**.
+
+# Enhanced cancellation feature
+Starting PU40, an enhancement to the batch abort functionality has been introduced, which upon confirmation from the customer, will drain and restart the batch server currently running the batch tasks that the customer is attempting to abort in order to make the abort functionality more resilient to limitations, and ensure that tasks of the job the customer is trying cancel are truly preempted.
+
+To use the new functionality, please follow the steps below:
+1. Make sure you are running PU40 or later, or have the necessary quality package installed
+2. Enable the **Enhanced batch abort** in the [Feature Management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) form.
+3. Follow the same instructions to [cancel an executing batch job](#legacy-abort)
+ 
+You will be prompted that the batch server running the cancelling tasks will be restarted, which can potentially disrupt a list of other batch jobs; you must proceed in order to abort the cancelling tasks
+![image](https://user-images.githubusercontent.com/7556912/112464897-ba820680-8d6c-11eb-871a-e1aff1d82665.png)
+
+If you do not want to abort other running batch jobs in the server and would prefer the old behavior of aborting single task and not all the jobs running, you can disable the **Enhanced batch abort** feature in feature management workspace and try to [cancel the executing batch job](#legacy-abort) again.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
