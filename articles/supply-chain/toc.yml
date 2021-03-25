@@ -2139,6 +2139,8 @@
         href: engineering-change-management/product-readiness.md
       - name: Release product structure
         href: engineering-change-management/release-product-structure.md
+      - name: Engineering change management FAQs
+        href: engineering-change-management/change-management-faq.md
     - name: Production control
       items:
       - name: Production process overview
