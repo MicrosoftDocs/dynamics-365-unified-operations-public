@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Message processor messages for cloud and edge workloads
-description: This topic provides information about the Message processor messages feature for C&E workloads.
+title: Message processor messages
+description: This topic provides information about the Message processor messages feature for scale unit workloads.
 author: perlynne
 manager: tfeyr
 ms.date: 03/10/2021
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: 10.0.19
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Message processor messages are used when running cloud and edge scale units for [manufacturing workloads](cloud-edge-workload-manufacturing.md) and [warehouse management workloads](cloud-edge-workload-warehousing.md). 
+Message processor messages are used when running cloud and edge scale units for [manufacturing workloads](cloud-edge-workload-manufacturing.md) and [warehouse management workloads](cloud-edge-workload-warehousing.md).
 
-A large amount of data is exchanged between the hub and scale unit deployment environments to keep them in sync, but only a few of these data exchanges will be processed by the *message processor*. You can view the messages processed by the message processor by going to **System administration > Message processor > Message processor messages**. 
+A large amount of data is exchanged between the hub and scale unit deployment environments to keep them in sync, but only a few of these data exchanges will be processed by the *message processor*. You can view the messages processed by the message processor by going to **System administration > Message processor > Message processor messages**.
 
 ## Message grid columns and filters
 
@@ -92,7 +92,7 @@ As part of the activation process, you will be guided to specify whether the eve
 
 As an example, let's use **When a Business Event occurs** with *Microsoft Power Automate* to send e-mails containing InfoLog messages and hyperlinks to open the **Message processor messages** page for a specific failed message on the hub deployment. If needed, you can add extra logic to send out the notifications in parallel via different channels and control the recipients based on the event data, but in this section we will look at a simple example.
 
-1. In [Power Automate](https://preview.flow.microsoft.com/en-us/), you start by creating a new automated cloud flow for the flow trigger **When a Business Event occurs - Fin & Ops App (Dynamics 365)** followed by the **Parse JSON** and **Send an email** steps, as shown in the following illustration.
+1. In [Power Automate](https://preview.flow.microsoft.com), you start by creating a new automated cloud flow for the flow trigger **When a Business Event occurs - Fin & Ops App (Dynamics 365)** followed by the **Parse JSON** and **Send an email** steps, as shown in the following illustration.
 
     :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automated cloud flow":::
 
@@ -100,11 +100,11 @@ As an example, let's use **When a Business Event occurs** with *Microsoft Power 
 
     :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate When a Business Event occurs step":::
 
-1. For the **Parse JSON** step, enter a **Schema** that defines the extended fields. You can use the *Download schema* option on the **Business events catalog** page in  Supply Chain Management or start by pasting in the example schema text provided after the illustration. 
- 
+1. For the **Parse JSON** step, enter a **Schema** that defines the extended fields. You can use the *Download schema* option on the **Business events catalog** page in  Supply Chain Management or start by pasting in the example schema text provided after the illustration.
+
     :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parse JSON step":::
-    
-    ```json 
+
+    ```json
     {
         "properties": {
             "BusinessEventId": {
@@ -186,11 +186,12 @@ As an example, let's use **When a Business Event occurs** with *Microsoft Power 
         "type": "object"
     }
     ```
+
 1. In the **Send an email** step, you can select the individual fields or start by pasting email body example provided after the following illustration into the **Body** field.
 
     :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate send an email step":::
-    
-    ```plaintext 
+
+    ```plaintext
     Message queue: @{body('Parse_JSON')?['MessageQueue']}
     Message queue label: @{body('Parse_JSON')?['MessageQueueLabel']}
     Message type: @{body('Parse_JSON')?['MessageQueueType']}

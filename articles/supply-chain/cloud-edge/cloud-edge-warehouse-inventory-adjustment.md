@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Message processor messages for cloud and edge workloads
-description: This topic provides information about the Warehouse inventory adjustment journal and processing.
+title: Warehouse inventory adjustment
+description: This topic provides information about the Warehouse inventory adjustment journal and processing when you are using scale units.
 author: perlynne
 manager: tfeyr
 ms.date: 03/10/2021
