@@ -5,7 +5,7 @@ title: Debugging best practices for Dynamics 365 Commerce development
 description: This topic describes some best practices to follow when debugging Dynamics 365 Commerce customizations.  
 author: samjarawan
 manager: annbe
-ms.date: 03/23/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -135,5 +135,6 @@ If your data action is not firing, try the following steps to resolve this issue
 
 [Best practices for Dynamics 365 Commerce development](best-practices-dev.md)
 
+[Dynamics 365 Commerce online SDK FAQ](sdk-faq.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
