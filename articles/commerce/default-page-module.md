@@ -2,7 +2,7 @@
 # required metadata
 
 title: Default page module
-description: This topic describes the default page module and how to add it to a page template in Microsoft Dynamics 365 Commerce.
+description: This topic covers default page modules and describes how to add them to page templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 03/25/2021
@@ -32,25 +32,30 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the default page module and how to add it to a page template in Microsoft Dynamics 365 Commerce.
+This topic covers default page modules and describes how to add them to page templates in Microsoft Dynamics 365 Commerce.
 
-The default page module is a special module that becomes the root of a page and can only be added to a template's **Body** slot. Only one default page module is available with the Commerce module library, but additional default page modules can be created using the [online channel extensibility SDK](e-commerce-extensibility/overview.md) as needed. The default page module defines the core slots ("Header Slot," "Sub Header Slot," "Main Slot," "Sub Footer Slot," and "Footer Slot") that will appear in the Commerce site builder page editor, as shown in the following image.
+The default page module is a special module that becomes the root container of a page and can only be added to a template's **Body** slot. The default page module defines the core slots (**Header Slot**, **Sub Header Slot**, **Main Slot**, **Sub Footer Slot**, and **Footer Slot**) that appear in the Commerce site builder page editor, as shown in the following example image.
 
 ![Page module slots](media/page-module-1.png)
+
+The Commerce module library provides only one type of default page module, but additional custom default page modules can be created as needed using the [Commerce online channel extensibility software development kit (SDK)](e-commerce-extensibility/overview.md). 
 
 ## Page module properties
 
 | Property name     | Values | Description |
 |-------------------|--------|-------------|
-| Skip to main content text | Text | Text to be displayed in the "skip to main content" link on a page. |
-| Theme             | A theme picked from a list of available themes. | Specifies the theme to use for the pages derived from this template.  **Note: this configuration property has been deprecated and will be removed in a future release. Themes should only be set at the site level.**
+| Skip to main content text | Text | Link text to be displayed in the "Skip to main content" page link. The default value is **Skip to main content**.|
+| Theme             | A theme picked from a list of available themes. | Specifies the theme to use for the pages derived from this template. This property has been deprecated, see note below.
 | Requires sign-in? | **True** or **False** | This boolean property controls whether the page requires user sign-in to be accessed. If set to **True**, users who are not signed-in will be redirected to the sign-in page. |
+
+> [!NOTE]
+> The **Theme** configuration property has been deprecated and will be removed in a future release. Themes should only be set at the site level.
 
 ## Add a default page module to a template
 
 To add a default page module to a template, follow these steps.
 
-1. In site builder for your site, select **Templates**. 
+1. In Commerce site builder for your site, select **Templates**. 
 1. Select a template, and then select **Edit**.
 1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
 
