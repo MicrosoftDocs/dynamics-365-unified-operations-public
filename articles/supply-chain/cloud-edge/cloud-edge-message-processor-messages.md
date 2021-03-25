@@ -35,168 +35,184 @@ ms.dyn365.ops.version: 10.0.19
 
 Message processor messages are used when running cloud and edge scale units for [manufacturing workloads](cloud-edge-workload-manufacturing.md) and [warehouse management workloads](cloud-edge-workload-warehousing.md). 
 
-A large amount of data is exchanged between the hub and scale unit deployment environments to keep them in sync, but only a few of these data exchanges will be processed using the **Message processor messages** page (**System administration > Message processor > Message processor messages**). By looking in the **Message type** field here, you can inquire and filter on all the supported message types.
+A large amount of data is exchanged between the hub and scale unit deployment environments to keep them in sync, but only a few of these data exchanges will be processed by the *message processor*. You can view the messages processed by the message processor by going to **System administration > Message processor > Message processor messages**. 
+
+## Message grid columns and filters
+
+You can use the fields at the top of the **Message processor messages** page to help find any particular messages you are looking for. Most of these filters match the column headings in the message grid. The following filters and column headings are available:
+
+- **Message type** – Specifies the type of message. The message types are:
+  - *Request inventory adjustment financial update* – Creates and posts a counting journal on the hub when a worker uses the warehouse app to [register an inventory adjustment](cloud-edge-warehouse-inventory-adjustment.md) on a scale unit warehouse management workload.
+  - *Hub to warehouse execution scale unit* – 
+  - *Hub to manufacturing execution scale unit* – 
+- **Message queue** – <!-- KFM: Description needed -->
+    - *Scale unit to hub* – The process originates from a scale unit
+    - <!-- KFM: List and describe the others -->
+    - <!-- KFM: List and describe the others -->
+- **Message state** – Specifies the state of the message. The following states exists:
+  - *Queued* – The message is ready to be processed by the message processor.
+  - *Processed* – The message was successfully processed by the message processor.
+  - *Canceled* – The message was processed, but processing failed.
+- **Message content** – This filter does a full-text search of message content. (Message content is not shown in the grid.) The filter treats most special symbols (such as "-") as spaces, and treats all space characters as Boolean OR operators. This means that, if you, for example, search for a specific `journalid` value equal "USMF-123456", the system will find all messages that contain "USMF" or "123456", which is likely to be a long list. Therefore, it would be better to enter just "123456" alone because that will return more specific results.
 
 ## Example message type: Request inventory adjustment financial update
 
-For example, the message type *Request inventory adjustment financial update* is used to create and post a counting journal on the hub when a worker does an [inventory adjustment using the warehouse app](cloud-edge-warehouse-inventory-adjustment.md) against a scale unit warehouse management workload. Because this specific process originates from a scale unit the **Message queue** field will contain the value *Scale unit to hub*. Other message type values are *Hub to warehouse execution scale unit* and *Hub to manufacturing execution scale unit*.
+For example, the **Message type** *Request inventory adjustment financial update* is used to create and post a counting journal on the hub when a worker uses the warehouse app to [register an inventory adjustment](cloud-edge-warehouse-inventory-adjustment.md) on a scale unit warehouse management workload. Because this specific process originates from a scale unit, the **Message queue** field will show the value *Scale unit to hub*.
 
-For the message type *Request inventory adjustment financial update*, a scale unit workload will record this message as part of a warehouse app inventory adjustment operation. This message data gets transferred to the hub as part of the same process as used for the [Commerce data exchange architecture](../../commerce/commerce-architecture.md) and the message will get updated to the *Queued* state, after which it will either end up as *Processed* when succeeded or *Canceled* when failing during the message processing.
+For this message type, a scale unit workload records the message as part of a warehouse app inventory adjustment operation. The message data is then transferred to the hub as part of the same process as used for the [Commerce data exchange architecture](../../commerce/commerce-architecture.md) and the message will be updated to show a **Message state** of *Queued*. The message processor then attempts to process the message and updates its **Message state** to *Processed* on success, or *Canceled* on failure.
 
-The **Message state** field can be used to filter the messages. The following states exists:
+## View the message log, message content, and details
 
-- Queued
-- Processed
-- Canceled
+You can find detailed information about a message by selecting it in the grid and then opening the **Log** or **Message content** tabs beneath the message grid, where each processing event is shown.
 
-You can use the **Message content** field to filter using a full-text search of message content. The filter treats most special symbols (such as "-") as spaces, and treats all space characters as Boolean OR operators. This means that, if you, for example, search for a specific `journalid` value equal "USMF-123456", the system will find all messages that contain "USMF" or "123456". Therefore, it would be best to enter "123456" alone because that will return more accurate results.
+The **Message content** depends on the **Message type** and will therefore have different text length. A typical message content text will start with a **{** and end with a **}** and in between have field names such as `journalId` followed by a **:** and a value such as *USMF-123456*.
 
-## Log and message content
+The toolbar on the **Log** tab includes the following buttons:
 
-For each message, you can find detailed information as part of the **Log** and **Message content** sections where each processing event is shown. The **Message content** depends on the **Message type** and will therefore have different text length. A typical message content text will start with a **{** and end with a **}** and in between have field names such as `journalId` followed by a **:** and a value such as *USMF-123456*.
+- **Log** – Displays the processing results. This is especially helpful for understanding the reasons for a processing failure for messages having a **Processing result** of *Failed*.
+- **Bundle** – Multiple message processing operations can run as part of the same batch process. Select this button to view this detailed data. Here you can see, for example, whether dependencies exist that require the system to process certain messages in a specific sequence.
 
-This area includes a **Log** button, which you can use to view the processing results. This is especially helpful for understanding the reasons for a processing failure for messages having a **Processing result** of *Failed*.
+## The Message processor batch job
 
-Note that multiple message processing operations can run as part of the same batch process. You can view this detailed data by selecting the **Bundle** button where you, for example, can see whether dependencies between messages exists in which processing must occur in a specific sequence.
+When running a cloud and edge deployment, the *Message processor* batch job will automatically be evoked when a new message is created for processing, so you won't usually need to schedule this job manually.
 
-You can process most types of failed messages by selecting the **Queue** button, which moves selected messages back into the *Queued* state .
+If necessary, you can access the batch job by going to **System administration > Message  processor > Message processor**.
 
-You manually process or cancel a message, depending its current state, by selecting **Process** or **Cancel**.
+## Manually process or cancel a message
 
-> [!Note]
-> When running a cloud and edge deployment, the *Message processor* batch job (**System administration > Message  processor > Message processor**) will automatically be evoked when a new message is created for processing, so you don't need to schedule this job manually.
+If needed, you can manually process or cancel a message, depending on its current state. To do so, select the message in the grid and then select **Process** or **Cancel** on the Action Pane
 
-## Business events for failed processing results
+## Set up business events to deliver alerts for failed processing results
 
-In addition to filtering on the **Message state** value *Canceled* to inquire for failed messages, you set up [Business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) on the hub to inform about failed processing results. To do so, activate the business event named *Message processor message processed*  on the **Business events catalog** page (**System administration > Setup > Business events > Business events catalog**).
+In addition to filtering on the **Message state** value *Canceled* to inquire for failed messages, you can set up [Business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) on the hub to alert you to failed processing results. To do so, activate the business event named *Message processor message processed*  on the **Business events catalog** page (**System administration > Setup > Business events > Business events catalog**).
 
 As part of the activation process, you will be guided to specify whether the event is specific to one or all legal entities and provide an **Endpoint name**, which must be defined upfront.
 
 >[!Note]
-> When **When a Business Event occurs** is set to *Microsoft Power Automate* rather than *HTTPS* for example, the **Endpoint name** will automatically be created in Supply Chain Management based on the *Microsoft Power Automate* setup.
+> When **When a Business Event occurs** is set to *Microsoft Power Automate* (rather than *HTTPS*, for example) the **Endpoint name** will automatically be created in Supply Chain Management based on the *Microsoft Power Automate* setup.
 
-## Microsoft Power Automate example
+### Microsoft Power Automate example
 
 As an example, let's use **When a Business Event occurs** with *Microsoft Power Automate* to send e-mails containing InfoLog messages and hyperlinks to open the **Message processor messages** page for a specific failed message on the hub deployment. If needed, you can add extra logic to send out the notifications in parallel via different channels and control the recipients based on the event data, but in this section we will look at a simple example.
 
-In [Power Automate](https://preview.flow.microsoft.com/en-us/), you start by creating a new automated cloud flow for the flow trigger **When a Business Event occurs - Fn & Ops App (Dynamics 365)** followed by the **Parse JSON** and **Send an email** steps, as shown in the following illustration.
+1. In [Power Automate](https://preview.flow.microsoft.com/en-us/), you start by creating a new automated cloud flow for the flow trigger **When a Business Event occurs - Fn & Ops App (Dynamics 365)** followed by the **Parse JSON** and **Send an email** steps, as shown in the following illustration.
 
-:::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automated cloud flow":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automated cloud flow":::
 
-In the **When a Business Event occurs** step, you can look-up or enter the hub **Instance** following the **Category** and then the **Business event** *Message processor message processed*, as shown in the following illustration.
+1. In the **When a Business Event occurs** step, you can look-up or enter the hub **Instance** following the **Category** and then the **Business event** *Message processor message processed*, as shown in the following illustration.
 
-:::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate When a Business Event occurs step":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate When a Business Event occurs step":::
 
-For the **Parse JSON** step, enter a **Schema** that defines the extended fields. You can use the *Download schema* option on the **Business events catalog** page in  Supply Chain Management or start by pasting in the example schema text provided after the illustration.  
-:::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parse JSON step":::
+1. For the **Parse JSON** step, enter a **Schema** that defines the extended fields. You can use the *Download schema* option on the **Business events catalog** page in  Supply Chain Management or start by pasting in the example schema text provided after the illustration. 
+ 
+    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parse JSON step":::
+    
+    ```json 
+    {
+        "properties": {
+            "BusinessEventId": {
+                "type": "string"
+            },
+            "ControlNumber": {
+                "type": "integer"
+            },
+            "EventId": {
+                "type": "string"
+            },
+            "EventTime": {
+                "type": "string"
+            },
+            "MajorVersion": {
+                "type": "integer"
+            },
+            "MessageContent": {
+                "type": "string"
+            },
+            "MessageDestinationCompanyId": {
+                "type": "string"
+            },
+            "MessageDestinationOperationalSiteId": {
+                "type": "string"
+            },
+            "MessageDestinationWarehouseId": {
+                "type": "string"
+            },
+            "MessageDestinationWorkloadName": {
+                "type": "string"
+            },
+            "MessageInfolog": {
+                "type": "string"
+            },
+            "MessageProcessingResult": {
+                "type": "string"
+            },
+            "MessageProcessingResultLabel": {
+                "type": "string"
+            },
+            "MessageProcessorMessagePageUrl": {
+                "type": "string"
+            },
+            "MessageQueue": {
+                "type": "string"
+            },
+            "MessageQueueLabel": {
+                "type": "string"
+            },
+            "MessageSourceCompanyId": {
+                "type": "string"
+            },
+            "MessageSourceOperationalSiteId": {
+                "type": "string"
+            },
+            "MessageSourceWarehouseId": {
+                "type": "string"
+            },
+            "MessageSourceWorkloadName": {
+                "type": "string"
+            },
+            "MessageState": {
+                "type": "string"
+            },
+            "MessageStateLabel": {
+                "type": "string"
+            },
+            "MessageType": {
+                "type": "string"
+            },
+            "MessageTypeLabel": {
+                "type": "string"
+            },
+            "MinorVersion": {
+                "type": "integer"
+            }
+        },
+        "type": "object"
+    }
+    ```
+1. In the **Send an email** step, you can select the individual fields or start by pasting email body example provided after the following illustration into the **Body** field.
 
-```json 
-{
-    "properties": {
-        "BusinessEventId": {
-            "type": "string"
-        },
-        "ControlNumber": {
-            "type": "integer"
-        },
-        "EventId": {
-            "type": "string"
-        },
-        "EventTime": {
-            "type": "string"
-        },
-        "MajorVersion": {
-            "type": "integer"
-        },
-        "MessageContent": {
-            "type": "string"
-        },
-        "MessageDestinationCompanyId": {
-            "type": "string"
-        },
-        "MessageDestinationOperationalSiteId": {
-            "type": "string"
-        },
-        "MessageDestinationWarehouseId": {
-            "type": "string"
-        },
-        "MessageDestinationWorkloadName": {
-            "type": "string"
-        },
-        "MessageInfolog": {
-            "type": "string"
-        },
-        "MessageProcessingResult": {
-            "type": "string"
-        },
-        "MessageProcessingResultLabel": {
-            "type": "string"
-        },
-        "MessageProcessorMessagePageUrl": {
-            "type": "string"
-        },
-        "MessageQueue": {
-            "type": "string"
-        },
-        "MessageQueueLabel": {
-            "type": "string"
-        },
-        "MessageSourceCompanyId": {
-            "type": "string"
-        },
-        "MessageSourceOperationalSiteId": {
-            "type": "string"
-        },
-        "MessageSourceWarehouseId": {
-            "type": "string"
-        },
-        "MessageSourceWorkloadName": {
-            "type": "string"
-        },
-        "MessageState": {
-            "type": "string"
-        },
-        "MessageStateLabel": {
-            "type": "string"
-        },
-        "MessageType": {
-            "type": "string"
-        },
-        "MessageTypeLabel": {
-            "type": "string"
-        },
-        "MinorVersion": {
-            "type": "integer"
-        }
-    },
-    "type": "object"
-}
-```
+    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate send an email step":::
+    
+    ```plaintext 
+    Message queue: @{body('Parse_JSON')?['MessageQueue']}
+    Message queue label: @{body('Parse_JSON')?['MessageQueueLabel']}
+    Message type: @{body('Parse_JSON')?['MessageQueueType']}
+    Message type label: @{body('Parse_JSON')?['MessageQueueTypeLabel']}
+    Message content: @{body('Parse_JSON')?['MessageContent']}
+    Message state: @{body('Parse_JSON')?['MessageState']}
+    Message state label: @{body('Parse_JSON')?['MessageStateLabel']}
+    Message processing result: @{body('Parse_JSON')?['MessageProcessingResult']}
+    Message processing result label: @{body('Parse_JSON')?['MessageProcessingResultLabel']}
+    Message infolog: @{body('Parse_JSON')?['MessageInfolog']}
+    Message source company ID: @{body('Parse_JSON')?['MessageSourceCompanyId']}
+    Message source workload name: @{body('Parse_JSON')?['MessageSourceWorkloadName']}
+    Message source site ID: @{body('Parse_JSON')?['MessageSourceOperationalSiteId']}
+    Message source warehouse ID: @{body('Parse_JSON')?['MessageSourceWarehouseId']}
+    Message destination company ID: @{body('Parse_JSON')?['MessageDestinationCompanyId']}
+    Message destination workload name: @{body('Parse_JSON')?['MessageDestinationWorkloadName']}
+    Message destination site ID: @{body('Parse_JSON')?['MessageDestinationOperationalSiteId']}
+    Message destination warehouse ID: @{body('Parse_JSON')?['MessageDestinationWarehouseId']}
+    Message processor message page URL: @{body('Parse_JSON')?['MessageProcessorMessagePageUrl']}
+    ```
 
-In the **Send an email** step, you can select the individual fields or start by pasting email body example provided after the following illustration into the **Body** field.
-
-:::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate send an email step":::
-
-```plaintext 
-Message queue: @{body('Parse_JSON')?['MessageQueue']}
-Message queue label: @{body('Parse_JSON')?['MessageQueueLabel']}
-Message type: @{body('Parse_JSON')?['MessageQueueType']}
-Message type label: @{body('Parse_JSON')?['MessageQueueTypeLabel']}
-Message content: @{body('Parse_JSON')?['MessageContent']}
-Message state: @{body('Parse_JSON')?['MessageState']}
-Message state label: @{body('Parse_JSON')?['MessageStateLabel']}
-Message processing result: @{body('Parse_JSON')?['MessageProcessingResult']}
-Message processing result label: @{body('Parse_JSON')?['MessageProcessingResultLabel']}
-Message infolog: @{body('Parse_JSON')?['MessageInfolog']}
-Message source company ID: @{body('Parse_JSON')?['MessageSourceCompanyId']}
-Message source workload name: @{body('Parse_JSON')?['MessageSourceWorkloadName']}
-Message source site ID: @{body('Parse_JSON')?['MessageSourceOperationalSiteId']}
-Message source warehouse ID: @{body('Parse_JSON')?['MessageSourceWarehouseId']}
-Message destination company ID: @{body('Parse_JSON')?['MessageDestinationCompanyId']}
-Message destination workload name: @{body('Parse_JSON')?['MessageDestinationWorkloadName']}
-Message destination site ID: @{body('Parse_JSON')?['MessageDestinationOperationalSiteId']}
-Message destination warehouse ID: @{body('Parse_JSON')?['MessageDestinationWarehouseId']}
-Message processor message page URL: @{body('Parse_JSON')?['MessageProcessorMessagePageUrl']}
-```
-
-When you save the business event, it will automatically get activated and ready to be used as part of Supply Chain Management.
+1. When you save the business event, it will automatically get activated and ready to be used as part of Supply Chain Management.
