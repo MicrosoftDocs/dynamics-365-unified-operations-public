@@ -5,7 +5,7 @@ title: Page summary module
 description: This topic covers page summary modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 03/24/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -34,33 +34,37 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers page summary modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 
-Page summary modules simplify the entry of page summary metadata which can be used by search engines and social sharing sites, including the canonical link. The module library contains several page summary modules including **Page summary**, **Category page summary**, **List page summary** and **Product page summary** pages.  Each one is SEO tuned for the specific page types they will be used for. All summary page modules share the same set of properties defined below.
-
-![Page module slots](media/page-module-1.png)
+Page summary modules simplify the entry of page summary metadata (including canonical links) that can be used by search engines and social sharing sites. The Dynamics 365 Commerce module library contains several page summary modules including the page summary, category page summary, list page summary, and product page summary modules. Each page summary module has SEO metadata tuned for the specific page types they will be used for. All summary page modules share the same set of properties defined below.
 
 ## Summary page module properties
 
 | Property name     | Values | Description |
 |-------------------|--------|-------------|
-| title | Text | The title of the web page. |
-| description | Text | A brief description of the page contents. |
-| keywords | Text | A series of comma separated keywords that are relevant to the page. |
-| Disable Twitter Tags | **True** or **False** | If set to true twitter tags will not be rendered in the HTML. |
-| Sharing Image | Image selector | Image is used for when sharing the page. |
-| Disable Facebook OG Tags | **True** or **False** | If set to true Facebook tags will not be rendered in the HTML. |
-| Ignores the prefix and suffix specified in the application settings | **True** or **False** | If set to true, the site level prefix and suffix setting will be ignored. |
+| Title | Text | The title of the site page. |
+| Description | Text | A brief description of the site page contents. |
+| Keywords | Text | A series of comma-separated keywords that are relevant to the page. |
+| Disable Twitter Tags | **True** or **False** | If set to **True**, Twitter tags will not be rendered in the HTML. |
+| Sharing image | Image selector | The image used when sharing the page. |
+| Disable Facebook OG tags | **True** or **False** | If set to **True**, Facebook Open Graph (OG) tags will not be rendered in the HTML. |
+| Ignore the prefix and suffix specified in the application settings | **True** or **False** | If set to **True**, the site-level prefix and suffix setting will be ignored. |
 
-## Adding a page module to a template
+## Add a page summary module to a template
 
-From within a site builder template select the **Add Module** option within the **...** of the **HTML Head** slot and select the page summary module followed by the **OK** button as shown below.  Ensure you add the appropriate page summary module based on the page types the template will be used for.
+To add a page summary module to a template, follow these steps.
 
-![Add new module](media/page-summary-1.png)
+1. In site builder for your site, select **Templates**. 
+1. Select a template, and then select **Edit**.
+1. In the **HTML Head** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Page summary** module (or another page summary module such as the list page summary module), and then select **OK**. Ensure that you add the appropriate page summary module based on the page types the template will be used for.
 
-Once the summary module is added it should look similar to the below image.  The module can now be configured and the template can be saved and published.
+    ![Add new module](media/page-summary-1.png)
+
+Once the summary module is added, it should look similar to the following example image. The module can now be configured and the template can be saved and published.
 
 ![Page summary module added](media/page-summary-2.png)
 
-**Note:** default values can be set in the template but can be overridden on pages that derive from the page.
+> [!NOTE]
+> You can set default values in the template, but they can be overwritten on pages that use the template.
 
 ## Additional resources
 
