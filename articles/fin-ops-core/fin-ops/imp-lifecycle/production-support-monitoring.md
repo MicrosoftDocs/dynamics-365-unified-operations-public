@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.14
 
 [!include[banner](../includes/banner.md)]
 
-To ensure a good experience during the implementation and after the go-live of the project, it is important to understand the several types of servicing available and how to get the proper support for every scenario. The following will provide you with an overview of how to engage each type of support and how some of the tools will help you keep your business continually accounting for all business needs.
+To ensure a good experience during the implementation and after the go-live of the project, it's important to understand the several types of servicing available and how to get the proper support for every scenario. The following will provide you with an overview of how to engage each type of support and how some of the tools will help you keep your business continually accounting for all business needs.
 
 Microsoft tools and support ensure the stability and effectiveness of an implemented platform by providing infrastructural and application support. However, the effectiveness of this support is dependent on Partner/Client responsibility to correctly develop, test, configure, manage and monitor the implemented system and its environments.
 
@@ -70,8 +70,8 @@ Usually triggered by a creating a support ticket. It involves the cooperation of
 
 #### Some of the recommended practices when working with the DSE team:
 - Consider that there are turn-around times or Service Level Agreements (SLAs) for each type of service request.
-- Do not use a service request if a support request better suits your case.
-- Consult the [service request catalog](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that you are making the right type of request
+- Don't use a service request if a support request better suits your case.
+- Consult the [service request catalog](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that you're making the right type of request
 
 
 ### Support Request 
@@ -116,7 +116,7 @@ A thorough analysis of the problem should be done before reporting the issue. Wh
 
 There are a various of [support plans](https://go.microsoft.com/fwlink/?LinkId=871952&amp;clcid=0x409) to choose from, there will always be the right one for each business.
 
-Before requesting support, you should remember that it is important to choose the proper level of severity.
+Before requesting support, you should remember that it's important to choose the proper level of severity.
 
 To identify the correct severity level and estimate the initial response time for you request please consult the [support overview](https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request) and [production outage](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) docs.
 
@@ -132,7 +132,7 @@ You can also view the service health through the admin center. Go to  **Health**
 
 The **All services** tab (the default view) shows all services and their current health state. An icon and the **Status** column indicate the state of each service.
 
-If you are experiencing an issue with a Microsoft 365 service and you do not see it listed on the  **Service health**  page, tell us about it by selecting  **Report an issue**, and completing the short form.
+If you're experiencing an issue with a Microsoft 365 service and you don't see it listed on the  **Service health**  page, tell us about it by selecting  **Report an issue**, and completing the short form.
 
 These reports will help to identify issues. Once identified, incidents will be shown in the report.
 
@@ -142,7 +142,7 @@ You can sign up to receive email communication, ensuring quick alerts on identif
 
 Environment monitoring is a set of tools that help you to monitor and [troubleshoot the health of your environments through LCS portal](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics).
 
-Within a specific environment page of the project, you will find a link that will guide you to this dashboard on the monitoring section.
+Within a specific environment page of the project, you'll find a link that will guide you to this dashboard on the monitoring section.
 
 Some of the tools available are:
 
@@ -168,13 +168,13 @@ Some of the pre-defined queries are for:
 - Distinct user sessions
 
 #### Health Metrics
-This Dashboard provides a series of line charts, filtered by instance (AOS or Batch AOS) and time frame through which it is possible to observe SQL execution in the **AOS** tab and system memory and CPU utilization over time in the **System tab**. Through this tool, you can easily identify behavioral changes that may help you to trace in time issues and the impact of changes in the solution.
+This Dashboard provides a series of line charts, filtered by instance (AOS or Batch AOS) and time frame through which it's possible to observe SQL execution in the **AOS** tab and system memory and CPU utilization over time in the **System tab**. Through this tool, you can easily identify behavioral changes that may help you to trace in time issues and the impact of changes in the solution.
 
 #### SQL Insights
 SQL Insights provide advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed analysis, see [Performance troubleshooting using tools](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) and watch the [TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18).
 
 SQL Insights is a reliable way to collect performance metrics on demand and enables customers and partners to execute a predefined set of actions that can be used to mitigate issues in a sandbox or production environment. This feature queries SQL Server directly, so you get query store metrics in near real time.
 
-While it is important to monitor your environments, it does not mean that you must always be on constant lookout. Microsoft also uses the emails provided to you in the LCS notification list to alert you to important issues and actions that you need to take, as well as to provide preventive guidance for the implementation itself.
+While it's important to monitor your environments, it doesn't mean that you must always be on constant lookout. Microsoft also uses the emails provided to you in the LCS notification list to alert you to important issues and actions that you need to take, as well as to provide preventive guidance for the implementation itself.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
