@@ -57,11 +57,11 @@ To add product dimensions:
 1. Open the **Size** tab and select **New** on the toolbar to add a row to the grid. Make the following settings for the new row:
     - **Size:** Select a size value.
     - **Name:** Enter a name for the size.
-1. Select **New** on the toolbar and add another size to the grid with a new **Size** and **Name**.
+1. Select **New** on the toolbar and add a second size to the grid with a new **Size** and **Name**.
 1. Open the **Colors** tab and select **New** on the toolbar to add a row to the grid. Make the following settings for the new row:
     - **Color:** Select a color value.
     - **Name:** Enter a name for the color.
-1. Select **New** on the toolbar and add another color to the grid with a new **Color** and **Name**.
+1. Select **New** on the toolbar and add a second color to the grid with a new **Color** and **Name**.
 1. Select **Save**.
 1. Close the page to return to your new product master.
 
