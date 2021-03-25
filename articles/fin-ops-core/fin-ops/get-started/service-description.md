@@ -249,12 +249,9 @@ The following table details the different levels of access for different Microso
 
 Microsoft has invested in an extensive toolset to monitor and diagnose Customers' production instances. Microsoft monitors Customers' production environments 24 hours a day, 7 days a week. Customer must monitor its Production Instances for application configurations and application errors as described in the following table.
 
-
-
 | Microsoft's responsibilities | Customer's responsibilities |
 |-------------------------|-------------------------|
-| <ul><li>Availability monitoring for the service.<br><li>Continuous monitoring and alerts through health metrics and watchdogs for critical components such as AOS, Batch, DIXF, Retail, Management Reporter.</li></br><li>Monitoring for performance degradation caused by infrastructure services (AAD, Azure, SQL etc.).<br><li>In the event Microsoft determines that a single process or batch job is causing aberrations, these processes will be thwarted after communication with the Customer. | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</br><li>Application errors need to be diagnosed using the monitoring tools.</br><li>Diagnose user reported performance aberrations using these tools.</br><li>Inform Microsoft in the event that there are expected load on the system beyond projected peak usage.</br><li>In the event the applicable Service is unavailable in the Production Instance, Customer can create a "Production down" customer support request using LCS. |
-
+|<ul><li>Availability monitoring of the service. <br><li>Continuous monitoring and alerts through health metrics and watchdogs for critical components such as AOS, Batch, DIXF, Retail, and Management Reporter. </br><li>Monitoring for performance degradation caused by infrastructure services (AAD, Azure SQL, etc.). </br><li>In the event Microsoft determines that a single process or batch job is causing aberrations, these processes will be thwarted after communication with the Customer.|<ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues. </br><li>Application errors need to be diagnosed using the monitoring tools. Diagnose user reported performance aberrations using these tools.</br><li>Inform Microsoft in the event that there is expected load on the system beyond projected peak usage.</br><li>In the event the applicable Service is unavailable in the Production Instance, Customer can create a "Production down" customer support request using LCS. |
 
 #### Incident management 
 
@@ -270,7 +267,6 @@ Microsoft responds to and resolves Incidents based on the severity levels set fo
 |**Severity 3 (Sev-3)**<br>Moderate | <ul><li> Degradation of customer experience caused by confirmed systemic event with narrow scope. |
 |**Severity 4 (Sev-4)**<br>Non-SLA Impacting | <ul><li>Monitoring or Customer reported incidents requiring action to avoid potential service impact.</br><li>General maintenance events with no Customer impact.</br><li>Standard service change requests.|
 
-
 ##### Incident scope and severity level impact
 
 | Incident impact | Entire geo <br>-OR- <br>less than 25% of global footprint | One customer <br>-OR- <br>subset of users belonging to one customer |
@@ -285,14 +281,12 @@ Microsoft responds to and resolves Incidents based on the severity levels set fo
 
 Customer's Production Instances include High Availability (HA) and Disaster Recovery (DR) features.
 
-- **High Availability**: HA functionality provides ways to prevent Downtime caused by the failure of a single node within an Azure datacenter. Each Service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is supported through Azure SQL (a platform-as-a-service (PaaS) offering from Microsoft).
+- **High Availability**: HA functionality provides ways to prevent downtime caused by the failure of a single node within an Azure datacenter. Each Service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is provided through Azure SQL (a platform-as-a-service (PaaS) offering from Microsoft).
 
 - **Disaster Recovery**: DR features protect each Service against outages broadly impacting an entire Azure datacenter and include the following:
 
     − Azure SQL active-geo replication for primary database (business database), with a Recovery Point Objective (RPO) estimate of ≤ 5 seconds.
-
     − Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions.
-
     − Same secondary region for the Azure SQL and Azure blob storage replications.
 
 The primary data stores are supported for replication. This means that components for each Service, such Management Reporter and Entity Store, use transformed data from the primary database, which need to be generated after the recovery site has been setup and service started. Customer code artifacts and recovered data stores is used to re-deploy the site, with a Recovery Time Objective (RTO) of up to 10 hours. This will enable state replication of the compute nodes along with networking and other components to set up the secondary site using the recovered data stores. In the event DR is utilize to recover Customer's Production Instance, each of Microsoft and Customer will perform the responsibilities in [Incident management](service-description.md#incident-management).
