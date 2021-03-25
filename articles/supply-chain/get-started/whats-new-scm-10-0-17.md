@@ -71,6 +71,8 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 - [Warehouse management mobile application](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - For more information, see [Install and connect the Warehouse Management app](../warehousing/install-configure-warehouse-management-app.md) and [Mobile device user settings](../warehousing/mobile-device-user-settings.md).
 
+- Wave execution notifications<br> - For more information, see [Wave execution notifications](../warehousing/wave-execution-notifications.md)
+
 ### Manufacturing
 
 - [Asset management capabilities in the production floor execution interface](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
