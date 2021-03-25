@@ -84,7 +84,7 @@ Some payment methods do not support incremental capture. Those payment methods c
 
 One example of a payment method variant that does not support incremental capture is Interac. In the Adyen documentation, the string listed for the Interac payment method variant is **interac**. If payment services are being configured for a Canadian merchant that accepts Interac, this payment method variant should be added to the list of "Non incremental capture payment methods" in the connector merchant properties.  
 
-Merchants enabling incremental capture for the Dynamics 365 Payment Connector for Adyen should also contact Adyen to ensure that the "Multiple partial capture" flag is enabled for their merchant account. If this flag is not enabled at the merchant account level, the capture logic at the time of invoicing will fall back to legacy supported flows. 
+Merchants enabling incremental capture for the Dynamics 365 Payment Connector for Adyen should also contact Adyen to ensure that the **allowMultiplePartialCapture** flag set to **Yes** on their merchant account. If this flag is not enabled at the merchant account level, the capture logic at the time of invoicing will fall back to legacy supported flows. 
 
 ## Uptake incremental capture for third-party payment connectors
 
