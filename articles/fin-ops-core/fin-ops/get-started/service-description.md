@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Service description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management apps
+# Service description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
@@ -70,15 +70,15 @@ Finance and Operations scales with transaction volume and User load. Each Custom
 
 Microsoft configures and sizes production environments to handle the transaction volumes and user concurrency. Microsoft is responsible for: 
 
--	Proper allocation of resources of production environments, based on the Customer’s profiling information in the LCS Subscription Estimator; 
--	Continually monitoring and diagnosing service availability of production environments; and 
--	Analyzing and troubleshooting system performance issues with Finance and Supply Chain. 
+-	Proper allocation of resources of production environments, based on the Customer’s profiling information in the LCS Subscription Estimator. 
+-	Continually monitoring and diagnosing service availability of production environments. 
+-	Analyzing and troubleshooting system performance issues with Finance and Supply Chain Management. 
 
 To ensure that an implementation is configured for high performance, Customers must:
 
--	Provide accurate usage information for the Finance and Supply Chain Management implementation through the LCS Subscription Estimator; 
-- Build and test extensions for performance and scale; and 
--	Test data configurations appropriately for performance. 
+-	Provide accurate usage information for the Finance and Supply Chain Management implementation through the LCS Subscription Estimator. 
+- Build and test extensions for performance and scale in a performance Sandbox environment. 
+-	Test data configurations appropriately for performance, also in a performance Sandbox environment. 
 
 ## Service operations
 
