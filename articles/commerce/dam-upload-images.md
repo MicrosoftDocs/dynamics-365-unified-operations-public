@@ -59,7 +59,8 @@ The default naming convention varies based on the category:
 - Employee images should be named "**/Workers/\{WorkerNumber\}.jpg**"
 - Product images should be named "**/Products/\{ProductNumber\}_000_001.png**"
     - 001 is the sequence of the image and it can be 001, 002, 003, 004 or 005
-- Product variant images should be named "**/Products/\{ProductNumber\}\_\{Size\}\_\{Color\}\_\{Style\}\_000_001.png**"
+- Product variant images should be named "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
+    - For example: 93039 \^ \^ 2 \^ Black \^_000_001.png
 
 ## Upload an image
 
