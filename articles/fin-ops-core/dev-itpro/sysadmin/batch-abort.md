@@ -46,10 +46,10 @@ Complete the following steps to immediately cancel the running task.
 3. On the **Batch tasks** tab, select **Abort** on the task, and then select **OK**.
 
 ## Enhanced cancellation feature
-Starting PU40, an enhancement to the batch abort functionality has been introduced, which upon confirmation from the customer, will drain and restart the batch server currently running the batch tasks that the customer is attempting to abort in order to make the abort functionality more resilient to limitations, and ensure that tasks of the job the customer is trying cancel are truly preempted.
+Starting 10.0.16, an enhancement to the batch abort functionality has been introduced, which upon confirmation from the customer, will drain and restart the batch server currently running the batch tasks that the customer is attempting to abort in order to make the abort functionality more resilient to limitations, and ensure that tasks of the job the customer is trying cancel are truly preempted.
 
 To use the new functionality, please follow the steps below:
-1. Make sure you are running PU40 or later, or have the necessary quality package installed
+1. Make sure you are running 10.0.16 or later, or have the necessary quality package installed
 2. Enable the **Enhanced batch abort** in the [Feature Management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) form.
 3. Follow the same instructions to [cancel an executing batch job](#legacy-abort)
  
