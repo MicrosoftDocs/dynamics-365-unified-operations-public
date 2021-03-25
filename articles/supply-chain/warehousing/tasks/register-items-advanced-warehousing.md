@@ -77,7 +77,7 @@ The following scenario shows how to create an item arrival journal header that u
 1. Select **Post** on the Action Pane.
 1. The **Post journal** dialog box opens. Select **OK**.
 1. Review the message bar. There should be messages denoting that the operation completed.
-1. Select **Functions > Product receipt** on the Action Pane to *Product receipt* update the purchase order line.
+1. Select **Functions > Product receipt** on the Action Pane to update the purchase order line and post a product receipt.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
