@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic explains how to use X++ extensions to add data fields in the tax integration. These fields can be extended to the tax data model of the tax service for tax code determination. For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+This topic explains how to use X++ extensions to add data fields in the tax integration. These fields can be extended to the tax data model of the tax service and used to determine tax codes. For more information, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 
 ## Data model
 
@@ -47,17 +47,7 @@ Here is a list of the major objects:
 
 The following illustration shows how these objects are related.
 
-```
-┏━━━━━━━━━━┓       ┏━━━━━━━━━━┓1  0..n┏━━━━━━━━━━┓1  0..n┏━━━━━━━━━━┓
-┃          ┃       ┃          ┃⯁────ᗒ┃  Charge  ┃⯁────ᗒ┃ Tax Line ┃
-┃          ┃1  0..n┃   Line   ┃       ┗━━━━━━━━━━┛       ┗━━━━━━━━━━┛
-┃          ┃⯁────ᗒ┃          ┃1  0..n┏━━━━━━━━━━┓
-┃ Document ┃       ┃          ┃⯁────ᗒ┃ Tax Line ┃
-┃          ┃       ┗━━━━━━━━━━┛       ┗━━━━━━━━━━┛
-┃          ┃1  0..n┏━━━━━━━━━━┓1  0..n┏━━━━━━━━━━┓
-┃          ┃⯁────ᗒ┃  Charge  ┃⯁────ᗒ┃ Tax Line ┃
-┗━━━━━━━━━━┛       ┗━━━━━━━━━━┛       ┗━━━━━━━━━━┛
-```
+[![Data model object relationship](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)
 
 A **Document** object can contain many **Line** objects. Each object contains metadata for the tax service.
 
@@ -65,7 +55,7 @@ A **Document** object can contain many **Line** objects. Each object contains me
 - `TaxIntegrationLineObject` has `itemId`, `quantity`, and `categoryId` metadata.
 
 > [!NOTE]
-> `TaxIntegrationLineObject` also implements **Charge** objects. **Charge** objects focus on **Document** and **Line** objects.
+> `TaxIntegrationLineObject` also implements **Charge** objects.
 
 ## Integration flow
 
@@ -287,7 +277,7 @@ The most straightforward approach is to extend the `CopyToDocument` and `CopyToL
 
     In this example, a `mcrSalesLineDropShipment` buffer is declared, and the query is defined in `getLineQueryObject`. The query uses the relationship `MCRSalesLineDropShipment.SalesLine == SalesLine.RecId`. While you're extending in this situation, you can replace `getLineQueryObject` with your own constructed query object. However, note the following points:
 
-    * Because the return value of this method is `SysDaQueryObject`, you must construct this object by using the SysDa approach.
+    * Because the return value of the `getLineQueryObject` method is `SysDaQueryObject`, you must construct this object by using the SysDa approach.
     * Can't remove existed table.
 
 - The required data is related to the transaction table by a complicated join relationship, or the relation isn't one to one (1:1) but one to many (1:N). In this situation, things become a little complicated. This situation applies to the example of financial dimensions. 
