@@ -284,19 +284,18 @@ Customer's Production Instances include High Availability (HA) and Disaster Reco
 - **High Availability**: HA functionality provides ways to prevent downtime caused by the failure of a single node within an Azure datacenter. Each Service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is provided through Azure SQL (a platform-as-a-service (PaaS) offering from Microsoft).
 
 - **Disaster Recovery**: DR features protect each Service against outages broadly impacting an entire Azure datacenter and include the following:
-
-    − Azure SQL active-geo replication for primary database (business database), with a Recovery Point Objective (RPO) estimate of ≤ 5 seconds.
-    − Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions.
-    − Same secondary region for the Azure SQL and Azure blob storage replications.
+  - Azure SQL active-geo replication for primary database (business database), with a Recovery Point Objective (RPO) estimate of ≤ 5 seconds.
+  - Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions.
+  - Same secondary region for the Azure SQL and Azure blob storage replications.
 
 The primary data stores are supported for replication. This means that components for each Service, such Management Reporter and Entity Store, use transformed data from the primary database, which need to be generated after the recovery site has been setup and service started. Customer code artifacts and recovered data stores is used to re-deploy the site, with a Recovery Time Objective (RTO) of up to 10 hours. This will enable state replication of the compute nodes along with networking and other components to set up the secondary site using the recovered data stores. In the event DR is utilize to recover Customer's Production Instance, each of Microsoft and Customer will perform the responsibilities in [Incident management](service-description.md#incident-management).
 
 
 | Microsoft's responsibilities  | Customer's responsibilities |
 |-------------------------|-------------------------|
-| Microsoft provisions a secondary environment in the Azure paired datacenters at the time of deployment of the primary Production Instance.</br><br>See the [Business continuity and disaster recovery (BCDR): Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) for details. | None |
+| Microsoft provisions a secondary environment in the Azure paired datacenter at the time of deployment of the primary Production Instance.</br><br>See the [Business continuity and disaster recovery (BCDR): Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) for details. | None |
 | Microsoft enables Geo Redundancy of SQL and Azure Storage at the time of deployment of the primary Production Instance. | None|
-| Microsoft backs up the VMs regularly using Azure backup. |None |
+| Microsoft enables automatic backup on the Azure SQL databases. |None |
 | On outage, Microsoft determines if a failover needs to be executed for Customer and if there will be a data loss. Data loss can be up to 5 sec. For details, see [Azure SQL Database Geo-Restore]https://azure.microsoft.com/blog/azure-sql-database-geo-restore). <br>In the event of a data loss, Microsoft will send a request to Customer asking for its sign-off on a failover. | Customer may need to provide written sign-off to trigger the failover in the event of data loss.|
 | The applicable Service will be operated in limited mode on failover. Update maintenance cannot be triggered in failover mode. | Customer cannot request package deployments or other regular maintenance requests in failover mode. |
 | Microsoft fails back to the Production Instance in the primary Azure region when the datacenter becomes operational. Normal operations are resumed. | Customer may need to sign-off on fail back to the Production Instance in the primary Azure region.|
@@ -311,11 +310,12 @@ Microsoft offers VL customers three support plans: Premier, Professional Direct,
 | Unlimited break/fix incidents | N/A | N/A | N/A |
 | 24x7 support | N/A | N/A | Local business hours |
 | Fastest response times | &lt;1 hour | &lt;1 hour | Next business day |
-
+| Advisory hours | Pools acquired per agreement | N/A | N/A |
+| Dedicated Support Account Manager | Yes | N/A | N/A |
 
 #### Process to engage support 
 
-In case of incidents with Finance and Operations, Customers can submit support tickets to Microsoft by phone or through LCS. CSS will handle incidents depending on the Customer's support plan and severity of the incident as designated by CSS.
+In case of incidents with Finance and Supply Chain, Customers can submit support tickets to Microsoft through LCS. CSS will handle incidents depending on the Customer's support plan and severity of the incident as designated by CSS.
 
 ### Service Level Agreement 
 
@@ -352,20 +352,19 @@ Partners who are part of Microsoft's CSP program and provide Customers with valu
 A business entity that consumes Finance and Operations and is represented by a tenant in Microsoft Office 365.
 
 ### Development environment
-Tenant used for developing extensions.
+Also known as a Tier 1 Sandbox. An environment used for developing extensions.
 
 ### Downtime 
-
 Any period of time when end users are unable to login or access to their Active Tenant, due to a failure in the unexpired Platform or the Service Infrastructure as Microsoft determines from automated health monitoring and system logs. Downtime does not include Scheduled Downtime, the unavailability of Service add-on features, the inability to access the Service due to your modifications of the Service, or periods where the Scale Unit capacity is exceeded.
 
 ### Implementation Partner 
-The partner that Customer choses to customize, configure, implement, and manage its Finance and Operations solution.
+The partner that Customer choses to customize, configure, implement, and manage its Finance and Supply Chain solution.
 
 ### Microsoft Dynamics Lifecycle Services (LCS) 
-Administrative portal for lifecycle management of Finance and Operations from trial to implementation to post-production management and support.
+The Administrative portal for lifecycle management of Finance and Supply Chain from trial to implementation to post-production management and support.
 
 ### Microsoft Customer support 
-Microsoft's support team dedicated to providing quality service for Finance and Operations.
+Microsoft's support team dedicated to providing quality service for Finance and Supply Chain.
 
 ### Non-Production Instance 
 Any of the following instances of a Service that are used by Customer for validating extensions and other development tasks:
@@ -374,7 +373,7 @@ Any of the following instances of a Service that are used by Customer for valida
 
 - **Sandbox Tier 2:** Standard Acceptance Testing Instance (Microsoft Managed)
 
-- **Sandbox Tier 3:** Add-on through Sandbox Tier 5 Add-on (Microsoft Managed)
+- **Sandbox Tiers 3-5:** Add-on Sandboxes (Microsoft Managed) [Details for each Tier] (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?toc=/dynamics365/finance/toc.json#selecting-the-correct-tier-2-or-higher-environment)
 
 ### Production Instance 
 Instance of Finance and Supply Chain Management used by Customer for managing its "live" daily transactions.
@@ -383,10 +382,10 @@ Instance of Finance and Supply Chain Management used by Customer for managing it
 Instance of Finance and Supply Chain Management used by Customer for validating extensions and other development tasks.
 
 ### Service 
-The core services which are included in Microsoft Dynamics 365 for Finance and Supply Chain Management; Microsoft Dynamics 365 for Retail; or both.
+The core services included in Microsoft Dynamics 365 for Finance, Supply Chain Management, or both.
 
 ### Service Level Agreement for Microsoft Online Services (SLA) 
-The SLA applies to Microsoft's Online Services, including Finance and Supply Chain Management .
+The SLA applies to Microsoft's Online Services, including Finance and Supply Chain Management.
 
 ### Incident 
 An issue with the Finance and Supply Chain Management that Customer encounters while using the service.
@@ -395,5 +394,4 @@ An issue with the Finance and Supply Chain Management that Customer encounters w
 Request raised to Microsoft for specific update.
 
 ### User
-A single person consuming Finance and Operations, which is associated with a Customer's tenant.
-
+A single person consuming Finance and Supply Chain, associated with a Customer's tenant.
