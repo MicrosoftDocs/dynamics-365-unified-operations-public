@@ -68,11 +68,11 @@ Finance and Operations scales with transaction volume and User load. Each Custom
 -	**Extension and configuration:** Extension mechanisms of Finance and Supply Chain Management with code extensions, ISV solutions, and unique configurations including workflows, integrations, and report configurations. 
 -	**Usage patterns:** A unique combination of online and batch usage combined with the ability to integrate with upstream and downstream systems for unified data flow and the ability to differentiate based on the information views used by Customers in their business processes. 
 
-Microsoft configures production tenants sized to handle the transaction volumes and user concurrency. Microsoft is responsible for: 
+Microsoft configures and sizes production environments to handle the transaction volumes and user concurrency. Microsoft is responsible for: 
 
--	Proper allocation of resources of production tenants, based on the Customer’s profiling information in the LCS Subscription Estimator; 
--	Continually monitoring and diagnosing service availability of production tenants; and 
--	Analyzing and troubleshooting system performance issues with Finance and Operations. 
+-	Proper allocation of resources of production environments, based on the Customer’s profiling information in the LCS Subscription Estimator; 
+-	Continually monitoring and diagnosing service availability of production environments; and 
+-	Analyzing and troubleshooting system performance issues with Finance and Supply Chain. 
 
 To ensure that an implementation is configured for high performance, Customers must:
 
@@ -99,11 +99,11 @@ Typical onboarding and implementation events and the expected responsibilities f
 For more information about the onboarding process, see [Onboard an implementation project](../imp-lifecycle/onboard.md).
 
 
-### Tenant and data management 
+### Environment and data management 
 
-Typical tenant and data management events for the Service and the responsibilities for each party are described are described in the following tables.
+Typical environment and data management events for the Service and the responsibilities for each party are described are described in the following tables.
 
-#### Tenant and data management events for Production Instances
+#### Environment and data management events for Production Instances
 
 | Customer's request  | Customer's responsibility  | Microsoft's responsibility  | Microsoft's lead time  |Microsoft's estimated maintenance downtime  |
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
@@ -111,7 +111,7 @@ Typical tenant and data management events for the Service and the responsibiliti
 | Copy a Sandbox database to a Production Instance prior to go-live.<br><br>*(Note: This request is not available if Customer is already live in production)* | Initiated in LCS for self-service deployments.<br><br><ul><li>Validation and sign-off. | <ul><li>Copy a Non-Production Instance (e.g., Sandbox Tier 2 Add-on) database to a Production Instance as part of the go-live process. | N/A | N/A|
 | Maintenance mode | <ul><li>Put AOS in maintenance mode through LCS.</br></li></br><li>Complete necessary maintenance.</br></li></br><li>Request to put the AOS back into active mode.</br> | N/A | N/A| N/A |
 
-#### Tenant and data management events for Non-Production Instances
+#### Environment and data management events for Non-Production Instances
 
 LCS provides provisioning and database movement operations that are used by Customers as described in the following table.
 
@@ -228,9 +228,9 @@ For more information, see [Licensing Terms and Documentation](https://www.micros
 
 | Environment type | Purpose  | Level of Customer access  |
 |-------------------------|-------------------------|-------------------------|
-| **Non-Production Instance**</br>Sandbox Tier 1: Developer Instance | Non-Production Instance that Customer can use for development or as build machines or to customize any Service and unit test Customer changes. | As of platform update 12 for the applicable Service, Customer will not have administrator access to development environment VMs running. Customer will continue to have full administrative access to the SQL Azure server installed on the environment.  These environments are fully managed by the customer and available to deploy via Cloud Hosted Environments. |
-| **Non-Production Instance**</br>Sandbox Tier 2: Standard Acceptance Testing Instance (or any Sandbox Tier Add-on)| Non-Production Instance that Customer can use for user acceptance testing, integration testing, and training of any Service. | Customer will not have remote desktop access or access to the SQL server associated with the NonProduction Instance. Customer can connect as an administrator to the database.  These environments are managed by Microsoft. |
-| **Production Instance** | Use to go-live with any Service. | All access is only through the Finance and Operations client or through LCS. These environments are managed by Microsoft.|
+| **Non-Production Instance**</br>Sandbox Tier 1: Developer Instance | A Non-Production Instance that Customer can use for development or to customize any Service and unit test Customer changes. | A Tier 1 Sandbox is deployed as a VM to a Customer's own Azure Subscription via LCS. Because it is a VM in Customer's own Azure Subscription, Customer has full administrator access to development environment. Customer will continue to have full administrative access to the SQL server installed in the environment. These environments are fully managed by the customer and available to deploy via Cloud Hosted Environments. |
+| **Non-Production Instance**</br>Sandbox Tier 2: Standard Acceptance Testing Instance (or any Sandbox Tier Add-on)| Non-Production Instance that Customer can use for user acceptance testing, integration testing, and training of any Service. | Customer will not have remote desktop access or access to the SQL server associated with the Non-Production Instance. Customer can connect as an administrator to the database.  These environments are managed by Microsoft. |
+| **Production Instance** | Use to go-live with any Service. | All access is only through the Finance and Supply Chain browser client, service endpoints, or through LCS. These environments are managed by Microsoft.|
 
 #### Microsoft's administrator access
 
@@ -247,7 +247,7 @@ The following table details the different levels of access for different Microso
 
 #### Monitoring 
 
-Microsoft has invested in an extensive toolset to monitor and diagnose Customers' production instances. Microsoft monitors Customers' production environments 24 hours a day, 7 days a week. Customer must monitor its Production Instances for application configurations andapplication errors as described in the following table.
+Microsoft has invested in an extensive toolset to monitor and diagnose Customers' production instances. Microsoft monitors Customers' production environments 24 hours a day, 7 days a week. Customer must monitor its Production Instances for application configurations and application errors as described in the following table.
 
 
 
