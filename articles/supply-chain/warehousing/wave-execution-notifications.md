@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.0
 
 The *Wave execution notifications* feature uses business events and the Action center to deliver notifications that are related to wave execution. It lets you specify the types of events that generate notifications, the warehouses that generate them, and the users who receive them.
 
-The bell symbol on the right side of the navigation bar indicates when an Action center message is available for the current user. The user can then select the bell symbol to open the Action center and review the message.
+The **Show messages** button (bell symbol) on the right side of the navigation bar indicates when an Action center message is available for the current user. The user can select the **Show messages** button to open the Action center and review the messages.
 
 Business events occur when business processes are run. Business processes are made up of tasks. During a business process, the users who participate in it perform business actions to complete those tasks. Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events. For more information, see [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
