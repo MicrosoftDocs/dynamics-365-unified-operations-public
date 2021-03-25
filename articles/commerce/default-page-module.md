@@ -5,7 +5,7 @@ title: Default page module
 description: This topic describes the default page module and how to add it to a page template in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 03/23/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -46,7 +46,9 @@ The default page module is a special module that becomes the root of a page and 
 | Theme             | A theme picked from a list of available themes. | Specifies the theme to use for the pages derived from this template.  **Note: this configuration property has been deprecated and will be removed in a future release. Themes should only be set at the site level.**
 | Requires sign-in? | **True** or **False** | This boolean property controls whether the page requires user sign-in to be accessed. If set to **True**, users who are not signed-in will be redirected to the sign-in page. |
 
-## Add a page module to a template
+## Add a default page module to a template
+
+To add a default page module to a template, follow these steps.
 
 1. In site builder for your site, select **Templates**. 
 1. Select a template, and then select **Edit**.
