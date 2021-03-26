@@ -36,11 +36,9 @@ This topic provides information that will help you get started with the Electron
 
 ## Country-specific configuration for Brazilian NF-e (BR) Electronic invoicing feature
 
-Configuring the Brazilian NF-e (BR) Electronic invoicing feature requires that specific steps be completed. Some of the parameters from the configurations are published with default values, so they must be reviewed and updated to better fit your business operation.
+Some of the parameters from the **Brazilian NF-e (BR) Electronic invoicing feature** are published with default values. Review and if necessary update what will be necessary to better fit your business operation before you deploy the Electronic invoicing feature to the Service environment.
 
-### Prerequisites
-
-Before you complete the procedure in this section, you must have created a Brazilian NF-e (BR) Electronic invoicing feature for your organization, as described in the **Create an Electronic invoicing feature under your organization provider** section of the topic, [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
+This section complements the **Country-specific configuration of Application setup** section in the topic, [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-in** tile.
 2. On the **Electronic invoicing add-in Features** page, verify that the **Brazilian NF-e (BR)** Electronic invoicing feature you created is selected.
