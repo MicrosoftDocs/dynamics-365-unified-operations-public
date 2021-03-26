@@ -4,7 +4,7 @@
 title: Schedule work creation during wave
 description: This topic describes how to set up and use the Schedule work creation wave processing method.
 author: perlynne
-manager: mirzaab
+manager: tfehr
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod:
@@ -59,12 +59,12 @@ If you enable the *Organization-wide "Schedule work creation" wave method* featu
 - All legal entities will process waves in batches and **Wait for lock (ms)** will be set to a default value of *60,000* ms if it was previously set to *0* ms.
 - All the new wave templates that you create will have the *Schedule work creation* wave method instead of the *Create Work* method.
 
-Other than this, the existing task and wave processing configurations will be kept for all legal entities that are already configured to process waves in batches, and for all warehouses that are already configured to use the *Schedule work creation* method in parallel.
+The existing task and wave processing configurations will also be kept for all legal entities that are already configured to process waves in batches, and for all warehouses that are already configured to use the *Schedule work creation* method in parallel.
 
 If necessary, you can manually revert any or all of the settings made automatically when you enabled the *Organization-wide Schedule work creation wave method* feature by doing the following:
 
 - For wave templates, go to **Warehouse management \> Setup \> Waves \> Wave templates**. Replace *Schedule work creation* method with *Create work*.
-- For warehouse parameters, go to **Warehouse management \> Setup \> Warehouse management parameters**. On the **Wave processing** tab, apply your preferred values for **Process waves in batch** and **Wait for lock (ms)**
+- For warehouse parameters, go to **Warehouse management \> Setup \> Warehouse management parameters**. On the **Wave processing** tab, apply your preferred values for **Process waves in batch** and **Wait for lock (ms)**.
 - For the wave methods, go to **Warehouse management \> Setup \> Waves \> Wave process methods**. Select `WHSScheduleWorkCreationWaveStepMethod` and, on the Action Pane, select **Task configuration**. Modify or delete the number of batch tasks and the assigned wave group for each listed warehouse as needed.
 
 ## Manually configure scheduled work creation
@@ -104,11 +104,11 @@ Now you are ready to update an existing wave template (or create a new one) to u
 
 The system will create default wave task processing threshold data the first time a wave process runs using any task-based processing. The data is used to control when wave processing will run asynchronously and be task-based, which enables it to process and create work in parallel.
 
-The default data will initially use a threshold value of 15 for the minimum number of load lines (`MINIMUMWAVELOADLINES`). This means that when the system processes a wave with more than 15 loads lines, it will use asynchronous task processing. You can manually insert/update this data in the `WHSWaveTaskProcessingThresholdParameters` table in your test environments, but if you need to change this setting in a production environment, you must contact Microsoft Support to request the update.
+The default data will initially use a threshold value of 15 for the minimum number of load lines (`MINIMUMWAVELOADLINES`). This means that when the system processes a wave with more than 15 loads lines, it will use asynchronous task processing. You can manually insert/update this data in the `WHSWaveTaskProcessingThresholdParameters` table in your test environments. If you need to change this setting in a production environment, you must contact Microsoft Support to request the update.
 
 ## Work with the scheduled work creation
 
-For details about how to work with scheduled work creation, see [Wave creation and processing](wave-processing.md) 
+For details about how to work with scheduled work creation, see [Wave creation and processing](wave-processing.md). 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
