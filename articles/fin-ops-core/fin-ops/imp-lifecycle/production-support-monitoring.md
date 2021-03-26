@@ -139,12 +139,8 @@ Common to most of the environment types, provides a filterable way to trace user
 #### Activity
 Tab will enable you to query through raw logs with the help of predefined queries for the most common events and metrics useful to monitor your environment. This tab has the additional functionality of adding your own custom filters and letting you export the logs into a csv file for analysis.
 
-:::row:::
-   :::column span="":::
 ![Activity screen](./media/activity.png)
-   :::column-end:::
-:::row-end:::
-
+ 
 Some of the pre-defined queries are for:
 
 - Slow queries
