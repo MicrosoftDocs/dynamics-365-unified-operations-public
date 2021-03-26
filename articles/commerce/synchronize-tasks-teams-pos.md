@@ -10,7 +10,7 @@ ms.prod:
 ms.service: dynamics-365-commerce
 ms.technology: 
 # optional metadata
-# ms.search.form:  
+# ms.search.form: 
 #ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -30,55 +30,55 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes how to synchronize task management between Microsoft Teams and Microsoft Dynamics 365 Commerce point of sale (POS).
+This topic describes how to synchronize task management between Microsoft Teams and Dynamics 365 Commerce point of sale (POS).
 
-One of the key objectives of Microsoft Teams integration is synchronizing task management between the POS application and Microsoft Teams, so that store employees can use either of the applications to manage tasks without needing to switch applications. 
+One of the main purposes of Teams integration is to enable the synchronization of task management between the POS application and Teams. In this way, store employees can use either the POS application or Teams to manage tasks, and don't have to switch applications.
 
-Since Planner in Microsoft Teams is used as repository for tasks, there must be a link between Microsoft Teams and Dynamics 365 Commerce. This link is made by using a specific plan ID for a given store team. 
+Because Planner is used as a repository for tasks in Teams, there must be a link between Teams and Dynamics 365 Commerce. This link is established by using a specific plan ID for a given store team.
 
-The following procedures provide the steps needed to set up task management synchronization between the POS and Teams applications.
+The following procedures show how to set up task management synchronization between the POS and Teams applications.
 
 ## Publish a test task list in Teams
 
-The following procedure assumes that your store teams are using Teams task management integration with Dynamics 365 Commerce for the first time.
+The following procedure assumes that your store teams are using Microsoft Teams task management integration with Commerce for the first time.
 
 To publish a test task list in Teams, follow these steps.
 
-1. Sign in to Microsoft Teams as a communication manager. This is typically a user with the "regional manager" role in Dynamics 365 Commerce. 
-1. In the left navigation pane, select **Tasks by Planner**. 
-1. At the bottom left of the **Published lists** tab, select **New list** and name the list "Test task list."
+1. Sign in to Teams as a communications manager. Typically, communications managers are users who have the **Regional manager** role in Commerce.
+1. In the left navigation pane, select **Tasks by Planner**.
+1. On the **Published lists** tab, select **New list** in the lower left, and name the new list **Test task list**.
 1. Select **Create**. The new list appears under **Drafts**.
-1. Under **Task title**, give the first task the title "Testing Teams integration" and then select **Enter**.
-1. In the **Drafts** list, select the task list, then select **Publish** in the top right corner.
+1. Under **Task title**, give the first task the title **Testing Teams integration**. Then select **Enter**.
+1. In the **Drafts** list, select the task list. Then select **Publish** in the upper-right corner.
 1. In the **Select who to publish to** dialog box, select the teams that should receive the test task list.
-1. Select **Next** to review your publication plan. To make changes, select **Back**. 
-1. Select **Confirm to proceed**, and then select **Publish**. 
-1. Once publishing is done, a message at the top of the **Published lists** tab will indicate if your task list was successfully delivered.
+1. Select **Next** to review your publication plan. If you must make changes, select **Back**. 
+1. Select **Confirm to proceed**, and then select **Publish**.
+1. After publishing is completed, a message at the top of the **Published lists** tab indicates whether your task list was successfully delivered.
 
 For more information, see [Publish task lists to create and track work in your organization](https://support.microsoft.com/office/publish-task-lists-to-create-and-track-work-in-your-organization-095409b3-f5af-40aa-9f9e-339b54e705df).
 
 ## Link POS and Teams for task management
 
-To link POS and Teams applications for task management in Commerce headquarters, follow these steps.
+To link the POS and Microsoft Teams applications for task management in Commerce headquarters, follow these steps.
 
-1. Go to **Retail and Commerce \> Task management \> Tasks integration with Microsoft Teams**. 
-1. Select **Edit** on the Action Bar.
+1. Go to **Retail and Commerce \> Task management \> Tasks integration with Microsoft Teams**.
+1. On the Action Pane, select **Edit**.
 1. Set the **Enable Task Management Integration** option to **Yes**.
-1. Select **Save** on the Action Bar.
-1. Select **Setup task management** on the Action Bar. You should see a notification indicating that a batch job called "Teams provision" is being created. 
-1. Go to **System administration \> Inquiries \> Batch jobs** and find the most recent job that has the description "Teams provision." Wait until the execution of this job is completed.
-1. Run the **CDX job 1070** to publish the plan ID & store references to Retail Server. 
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, select **Setup task management**. You should receive a notification that indicates that a batch job that is named **Teams provision** is being created.
+1. Go to **System administration \> Inquiries \> Batch jobs**, and find the most recent job that has the description **Teams provision**. Wait until this job has finished running.
+1. Run the **CDX job 1070** to publish the plan ID and store references to Retail Server.
 
-![Dynamics 365 Commerce - Provision teams from Dynamics 365 Commerce](media/d365-commerce-teams-synchronizing-tasks.png)
+![Tasks integration with Microsoft Teams page](media/d365-commerce-teams-synchronizing-tasks.png)
 
 ## Additional resources
 
 [Manage the Tasks app for your organization in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-tasks-app)
 
-[Dynamics 365 Commerce and Microsoft Teams integration ](commerce-teams-integration.md)
+[Dynamics 365 Commerce and Microsoft Teams integration](commerce-teams-integration.md)
 
 [Provision Microsoft Teams from Dynamics 365 Commerce](provision-teams-from-commerce.md)
 
-[Enable Microsoft Teams integration](enable-teams-integration.md)
+[Enable Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md)
 
 [Manage user roles in Microsoft Teams](manage-user-roles-teams.md)
