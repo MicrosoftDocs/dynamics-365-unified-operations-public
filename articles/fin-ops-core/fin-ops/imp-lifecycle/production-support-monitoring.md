@@ -35,12 +35,8 @@ To ensure a good experience during the implementation and after the go-live of t
 
 Microsoft tools and support ensure the stability and effectiveness of your enivornment by providing infrastructural and application support. However, the effectiveness of this support is dependent on partner/client responsibility to correctly develop, test, configure, manage, and monitor the implemented system and its environments.
 
-:::row:::
-   :::column span="":::
 ![Support Provided by Microsoft](./media/support-provided-microsoft.png)
-   :::column-end:::
-:::row-end:::
-
+ 
 ## Supporting actions
 Supporting actions can be grouped into three categories:
 
