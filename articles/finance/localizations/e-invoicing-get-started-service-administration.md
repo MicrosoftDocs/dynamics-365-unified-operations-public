@@ -87,24 +87,26 @@ Before you complete the procedures in this topic, the following prerequisites mu
 3. On the **Environment setups** page, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
 4. Select **New** to create a key vault reference.
 5. In the **Name** field, enter the name of the key vault reference. In the **Description** field, enter a description.
-6. In the **Key Vault URI** field, paste the key vault secret from Azure Key Vault.
+6. In the **Key Vault URI** field, paste the key vault secret from Azure Key Vault. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
 7. Select **Save**.
 
 ## Create Storage account secret
 
 1. On the **Environment setups** page, on the action Pane, select **Service environment** and then select **Key Vault parameters**.
 2. Select a **Key Vault reference** and then in the **Certificates** section, select **Add**.
-3. In the **Name** field, enter the name of the storage account secret and in the **Description** field, enter a description.
-4. In the **Type** field, select **Secret**.
-5. Select **Save**, and then close the page.
+3. In the **Name** field, enter the name of the storage account secret. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
+4. In the **Description** field, enter a description.
+5. In the **Type** field, select **Secret**.
+6. Select **Save**, and then close the page.
 
 ## Create a digital certificate secret
 
 1. On the **Environment setups** page, on the action Pane, select **Service environment** and then select **Key Vault parameters**.
 2. Select a **Key Vault reference** and then in the **Certificates** section, select **Add**.
-3. In the **Name** field, enter the name of the digital certificate secret and in the **Description** field, enter a description.
-4. In the **Type** field, select **Certificate**.
-5. Select **Save**, and then close the page.
+3. In the **Name** field, enter the name of the digital certificate secret. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
+4. In the **Description** field, enter a description.
+5. In the **Type** field, select **Certificate**.
+6. Select **Save**, and then close the page.
 
 ## Create a Service environment
 
