@@ -2336,8 +2336,6 @@
               href: localizations/apac-ind-tax-thresholds.md  
             - name: TCS on sale of goods
               href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
-          - name: GST integration for cash registers
-            href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
       - name: Italy
         items:
         - name: Italy overview
