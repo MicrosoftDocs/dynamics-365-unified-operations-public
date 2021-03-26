@@ -32,28 +32,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you get started with the Electronic invoicing add-in.
-
-The following table lists the Electronic invoicing features and the business documents that they can be applied to.
-
-| Feature name                         | Business document |
-|--------------------------------------|-------------------|
-| Austrian electronic invoices (AT)    | <p>Sales invoice</p><p>Project invoice</p> |
-| Belgian electronic invoice (BE)      | <p>Sales invoice</p><p>Project invoice</p> |
-| Brazilian NF-e (BR)                  | <p>Fiscal document model 55</p><p>Correction letter</p> |
-| Brazilian NFS-e ABRASF Curitiba (BR) | Service Fiscal document |
-| Danish electronic invoice (DK)       | <p>Sales invoice</p><p>Project invoice</p> |
-| Egyptian electronic invoice (EG)     | <p>Sales invoice</p><p>Project invoice</p> |
-| Estonian electronic invoice (EE)     | <p>Sales invoice</p><p>Project invoice</p> |
-| Finish electronic invoice (FI)       | <p>Sales invoice</p><p>Project invoice</p> |
-| French electronic invoice (FR)       | <p>Sales invoice</p><p>Project invoice</p> |
-| German electronic invoice (DE)       | <p>Sales invoice</p><p>Project invoice</p> |
-| FatturaPA (IT)                       | <p>Sales invoice</p><p>Project invoice</p> |
-| Mexican CFDI Interfactura (MX)       | <p>Sales invoice</p><p>Packing slip</p><p>Inventory transfer</p><p>Payment complement</p> |
-| Dutch electronic invoice (NL)        | <p>Sales invoice</p><p>Project invoice</p> |
-| Norwegian electronic invoice (NO)    | <p>Sales invoice</p><p>Project invoice</p> |
-| Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> |
-| PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> |
+This topic provides information that will help you get started with the Electronic invoicing add-in. It guides you through the common configuration steps in Regulatory Configuration Services (RCS) and Finance. It also guides you through the steps that you must follow in Finance to submit Business documents through the service, and it explains how to review the processing results.
 
 ## Prerequisites
 
