@@ -59,9 +59,7 @@ The following table lists the Electronic invoicing features and the business doc
 
 Before you complete the procedures in this topic, the following prerequisites must be in place:
 
-- Configure your Regulatory Configuration Service (RCS) and your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment so that you can submit to the Electronic invoicing add-in.
-- Create a service environment, and publish it to the Electronic invoicing add-in. For more information, see [Get started with the Electronic invoicing add-in service administration](e-invoicing-get-started-service-administration.md).
-- Create a connected application. For more information, see [Get started with the Electronic invoicing add-in service administration](e-invoicing-get-started-service-administration.md).
+- Configured your Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) and your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment. For more information, see [Get started with the Electronic invoicing add-in service administration](e-invoicing-get-started-service-administration.md).
 - Create a configuration provider for your organization. For more information, see [Create configuration provider and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## Import an Electronic invoicing feature from the Microsoft configuration provider 
@@ -80,7 +78,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 4. In the **Base feature field**, select the imported Electronic invoicing feature from the Microsoft configuration provider.
 5. Select **Create feature**.
 
-## Configure the Electronic invoicing feature
+## Country or region Electronic invoicing feature configuration
 
 Depending on the country or region, the Electronic invoicing feature might require additional configuration. 
 
@@ -155,8 +153,12 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
 
-    > [!NOTE]
-    > Depending on the country or region, the Electronic invoicing feature might require additional configuration. For specific steps, see the "Get started" documentation that is available for your country or region.
+
+## Country or region Application setup
+
+Depending on the country or region, the Application setup might require additional configuration. 
+
+For the specific steps, see the "Get started" documentation that is available for your country or region.
 
 ## Deploy the Electronic invoicing feature to Service environment
 
