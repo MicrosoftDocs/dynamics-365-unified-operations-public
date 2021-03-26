@@ -53,7 +53,7 @@ Some settings represent strategic decisions for wave processing, as follows:
   - **Manual processing** – The line is added to a wave and the inventory is reserved, however, you must select **Process** on the **All waves** list page to create the picking work for the order.
   - **Automatic processing** – You can fully or partially automate wave processing. If you fully-automate wave processing, a wave is created that includes the line from the sales order, production order, or kanban when a sales order, production order, or kanban is created. The items are deducted from on-hand inventory and the picking work is created. If you partially automate wave processing, you can specify values that will trigger wave processing. For example, you can specify a maximum weight for shipments that will trigger wave processing when the total weight of the lines in the wave reaches the value.
 
-- If you assign shipments to an open wave. For example, if you promise customers that an order placed by 12:00 PM will ship within 24 hours, you can set up the wave template to automatically assign order lines to an open wave until 12:00 PM. At that time the wave is automatically processed.
+- If you assign shipments to an open wave. For example, if you promise customers that an order placed by 12:00 PM will ship within 24 hours, you can set up the wave template to automatically assign order lines to an open wave until 12:00 PM. At that time, the wave is automatically processed.
 
 When a wave is processed, the picking work that is created is based on the work template and the location directive that is specified for the warehouse. The work template specifies how the picking work is created, and the location directive specifies the pick and put locations.
 
@@ -82,10 +82,10 @@ To set up a wave template, follow these steps:
     - **Process wave at release to warehouse** - Set this to *Yes* to automatically process the wave and create work when a line is released to the warehouse.
     - **Process wave automatically at threshold** - Set this to *Yes* to automatically process the wave when its values reach the thresholds for weight, shipment, and lines specified in the **Wave thresholds** field group. This setting is only active if *Shipping* is selected in the **Wave template type** field.
     - **Automate wave release** - Set this to *Yes* to automatically release the wave. The picking work is created and made available on mobile devices.
-    - **Automate replenishment work release** - Set this to *Yes* to create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template, and create a replenishment template of the type *Wave demand*. Set up a replenishment template on the **Replenishment templates** page. This requires that you add the replenish method to the wave template.
-    - **Continue wave processing when work creation fails** - When set to *Yes*, the system will use a blank location if it can't reserve inventory at teh location proposed by the location directive (for example, because the inventory is no longer available). When set to *No*, the wave will fail if the system can't reserve the inventory.
+    - **Automate replenishment work release** - Set this to *Yes* to create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template, and create a replenishment template using the *Wave demand* type. Set up a replenishment template on the **Replenishment templates** page. This requires that you add the replenish method to the wave template.
+    - **Continue wave processing when work creation fails** - When set to *Yes*, the system will use a blank location if it can't reserve inventory at the location proposed by the location directive (for example, because the inventory is no longer available). When set to *No*, the wave will fail if the system can't reserve the inventory.
 
-1. Make the **Wave thresholds** field group as needed:
+1. Set the **Wave thresholds** field group as needed:
     - **Wave weight threshold** - Enter the maximum weight a wave can contain.
     - **Shipment threshold** - Enter the maximum number of shipments that can be included in a wave.
     - **Line threshold** - Enter the maximum number of lines that can be included in a wave.
