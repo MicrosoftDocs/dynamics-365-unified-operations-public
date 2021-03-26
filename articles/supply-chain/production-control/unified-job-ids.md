@@ -26,12 +26,12 @@ If your system doesn't already include the feature described in this topic, go t
 
 ## Set up the unified number sequence for job IDs
 
-On enabling this feature, the existing **Job identification** number-sequence settings located on the parameters pages for the Production control, Manufacturing execution, and Time and attendance modules will be deprecated and a new **Unified job ID** field will be added. The **Unified job ID** field value is shared by all three modules, thus ensuring that they will all reference the same number sequence. Job IDs will therefore be unique across all three modules and the conflict will never occur.
+After enabling this feature, the existing **Job identification** number-sequence settings located on the parameters pages for the Production control, Manufacturing execution, and Time and attendance modules will be deprecated and a new **Unified job ID** field will be added. The **Unified job ID** value is shared by all three modules, thus ensuring that all modules reference the same number sequence. Job IDs will therefore be unique across all three modules and a conflict will never occur.
 
 To set up the unified number sequence for job IDs:
 
 1. Turn on the feature as described in the previous section.
-1. Either identify the number sequence you want to use for your unified job IDs, or create a new one. See also [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
-1. Go to the **Production control parameters**, **Manufacturing execution parameters**, or **Time and attendance parameters** page. It doesn't matter which one you choose because when you make this setting on any of those pages, all of the others will update automatically.
+1. Either identify the number sequence you want to use for your unified job IDs, or create a new one. For more information, see [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
+1. Go to the **Production control parameters**, **Manufacturing execution parameters**, or **Time and attendance parameters** page. It doesn't matter which one you choose because when you make this setting on any of those pages, all of the other pages will update automatically.
 1. Open the **Number sequences** tab on your selected parameters page.
-1. Assign the **Number sequence code** that you identified previously to the the **Unified job IDs** row of the grid.
+1. Assign the **Number sequence code** that you identified previously to the **Unified job IDs** row of the grid.
