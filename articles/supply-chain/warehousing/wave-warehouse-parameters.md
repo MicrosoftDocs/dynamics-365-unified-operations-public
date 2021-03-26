@@ -48,9 +48,9 @@ To set up warehouse parameters for wave processing, follow these steps:
 
     - **Wave processing batch group** - Select the batch group to use when you process waves by using batch jobs. The batch group specifies the server that batch jobs will run on.
     - **Process waves in batch** - Choose whether to enable waves to be automatically processed by a batch job. You must set this to *Yes* to use parallel processing. You set up the batch job on the **Process waves** page. (See also the note at the end of this list.)
-    - **Create wave progress log** - Choose whether the system should generate a log record every time allocation for an item and its dimensions begins and ends. You should only enable this log when you need it, for example, during initial testing or for troubleshooting. More information: [Wave allocation](wave-allocation-method.md)
-    - **Create wave processing history log** - Choose whether to automatically save information about a wave in a log file after the wave is processed, including during the parallel processing of pending allocations. You should normally only enable this during troubleshooting because it adds an extra overhead. To view the log, go to **Warehouse management \> Outbound waves \> Wave processing history log**. More information: [Wave creation and processing](wave-processing.md)
-    - **Create containerization history log** - Choose whether to automatically save information about containerization for a wave in a log file after the wave is processed. To view the log, go to **Warehouse management \> Packing and containerization \> Containerization history**
+    - **Create wave progress log** - Choose whether the system should generate a log record every time allocation for an item and its dimensions begins and ends. You should only enable this log when you need it, for example, during initial testing or for troubleshooting. For more information, see [Wave allocation](wave-allocation-method.md).
+    - **Create wave processing history log** - Choose whether to automatically save information about a wave in a log file after the wave is processed, including during the parallel processing of pending allocations. Typically you should only enable this during troubleshooting because it adds extra overhead. To view the log, go to **Warehouse management \> Outbound waves \> Wave processing history log**. For more information, see [Wave creation and processing](wave-processing.md).
+    - **Create containerization history log** - Choose whether to automatically save information about containerization for a wave in a log file after the wave is processed. To view the log, go to **Warehouse management \> Packing and containerization \> Containerization history**.
     - **Wait for lock (ms)** - Enter the time, in milliseconds, that an allocation step will wait for a system resource that is locked by another allocation step. When this time is exceeded, the wave is not processed and an error message is displayed.
 
 1. On the **Release to warehouse** FastTab, make the following setting:
@@ -60,7 +60,6 @@ To set up warehouse parameters for wave processing, follow these steps:
 > [!NOTE]
 > On the wave template that is used to process the wave, you can specify the settings that automate wave processing. If you set up a schedule for the batch job, you should coordinate the timing with the settings for automation in the wave template. For more information, see [Create a wave template](wave-templates.md).
 
-> [!NOTE]
 > If you are using *Transportation management* and *Advanced warehouse management*, you can specify whether to consolidate loads when you process a wave. For example, this is useful when several small loads can be shipped at the same time. To consolidate loads when you process a wave, on the **Loads** tab, select the **Consolidate loads during wave processing** check box.</P>
 
 ## Set up full or partial reservation for production waves
