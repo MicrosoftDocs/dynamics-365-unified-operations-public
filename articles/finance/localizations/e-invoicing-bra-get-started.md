@@ -51,7 +51,7 @@ This section complements the **Country-specific configuration for Electronic inv
 9. In the **Value** field, if necessary, review and update the URL of the web services published by the SEFAZ documentation for your state and then select **Save.**
 10. On the **Applicability rules** tab, in the **Setup of applicability rule** field group, review and update the **State** field criteria as necessary for the same state which the URL of the web services is referred to.
 11. Select **Save** and close the page.
-12. To deploy the Electronic invoicing feature, see [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
+12. To deploy the Electronic invoicing feature to the Service environment, see [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
 ## Country-specific configuration of Application setup for Brazilian NF-e (BR) Electronic invoicing feature
 
@@ -71,7 +71,7 @@ This section complements the **Country-specific configuration of Application set
 10. Select **New** and in the **Response type** field, enter "ResponseData" as a fixed value and in the **Description** field, enter "Description".
 11. In the **Submission status** field, select **Pending**.
 12. In the **Model mapping** field, select **Response data import** with **(Preview) NF-e response data import format (BR)**, and then select **Save**.
-13. To deploy the Application setup for the Electronic invoicing feature, see [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
+13. To deploy the Application setup to the Finance or Supply Chain Connected application, see [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
 ## Country-specific configuration for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature
 
@@ -96,7 +96,7 @@ This section complements the **Country-specific configuration for Electronic inv
 15. In the **Parameters** field group, select **URL address** parameter.
 16. In the **Value** field, if necessary, review and update the URL of the web services published by the tax department for the city of Curitiba.
 17. Select **Save** and then close the page.
-18. To deploy the Electronic invoicing feature, see [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
+18. To deploy the Electronic invoicing feature to the Service environment, see [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
 ## Country-specific configuration of Application setup for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature
 
@@ -120,7 +120,7 @@ This section complements the **Country-specific configuration of Application set
 14. In the **Submission status** field, select **Pending**.
 15. In the **Model mapping** field, select **Response message import**, with **(Preview) NFS-e ABRASF Curitiba response message import (BR).**
 16. Select **Save** and close the page.
-17. To deploy the Application setup for the Electronic invoicing feature, see [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
+17. To deploy the Application setup to the Finance or Supply Chain Connected application, see [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
 ## Privacy notice
 Enabling the **NF-e Federal - Brazilian electronic invoice (BR)** and the **NFS-e - Brazilian service (city) electronic invoice** features may require sending limited data, including the organization tax registration ID. This data is transmitted to third-party agencies authorized by the tax authority for the purpose of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. As an administrator, you can enable or turn off the **NF-e Federal - Brazilian electronic invoice (BR)** and the **NFS-e - Brazilian service (city) electronic invoice** features. The following steps show how to do this: 
