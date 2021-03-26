@@ -89,15 +89,10 @@ For the specific steps, see the "Get started" documentation that is available fo
 ## Configure the application setup
 
 1. Select the Electronic invoicing feature that you created.
-2. On the **Version** tab, verify that the **Draft** version is selected.
-3. On the **Setups** tab, select **Application setup**.
-
-    > [!NOTE]
-    > Verify that your organization is set as the **Active** configuration provider. For more information, see [Create configuration provider and mark them as active.](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-
-4. Select **Feature setup**, and then select **Connected application**.
-5. In the **Electronic document types** section, select **Add**.
-6. For each business document that the feature supports, select and enter a **Table name** value according to the following table.
+2. On the **Setups** tab, select **Application setup**.
+3. On the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
+4. In the **Electronic document types** section, select **Add**.
+5. Select and enter a **Table name** value according to the following table given by Feature name and Business document it supports:
 
     | Feature name                         | Business document | Table name |
     |--------------------------------------|-------------------|------------|
@@ -118,7 +113,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
 
-7. For each business document that the feature supports, select and enter a **Context** value according to the following table.
+7. For each **Table name** created before, select and enter a **Context** value according to the following table given by Feature name and Business document it supports:
 
     | Feature name                         | Business document | Context |
     |--------------------------------------|-------------------|---------|
@@ -139,7 +134,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
 
-8. For each business document that the feature supports, select and enter a **Business document mapping** value according to the following table.
+8. For each **Table name** and **Context** entered before, select and enter a **Business document mapping** value according to the following table given by Feature name and Business document it supports:
 
     | Feature name                         | Business document | Business document mapping |
     |--------------------------------------|-------------------|---------------------------|
@@ -160,21 +155,28 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
 
-Depending on the country or region, the Electronic invoicing feature might require additional configuration.
+    > [!NOTE]
+    > Depending on the country or region, the Electronic invoicing feature might require additional configuration. For specific steps, see the "Get started" documentation that is available for your country or region.
 
-For specific steps, see the "Get started" documentation that is available for your country or region.
-
-## Deploy the Electronic invoicing feature
+## Deploy the Electronic invoicing feature to Service environment
 
 1. On the **Versions** tab, select the version of the Electronic invoicing feature that you want to deploy.
 2. Select **Change status** \> **Complete**.
 3. Select **Change status** \> **Publish**.
 4. Select **Deploy**.
+5. Set the **Deploy to connected application** option to **No**.
+6. Set the **Deploy to service environment** option to **Yes**.
+7. In the **Service environment** field, select the Electronic invoicing add-in service environment where you want to deploy the Electronic invoicing feature.
+8. In the **From date** field, select the date when the Electronic invoicing feature must become effective in the Electronic invoicing add-in.
+9. Select **OK**.
+
+## Deploy the Electronic invoicing feature to Connected application
+
+1. On the **Versions** tab, select a version of the Electronic invoicing feature that you want to deploy.
+4. Select **Deploy**.
 5. Set the **Deploy to connected application** option to **Yes**.
-6. On the **Connect application** page, select the connection that is associated with your instance of Finance or Supply Chain Management.
-7. Set the **Deploy to service environment** option to **Yes**.
-8. In the **Service environment** field, select the Electronic invoicing add-in service environment where you want to deploy the Electronic invoicing feature.
-9. In the **From date** field, select the date when the Electronic invoicing feature must become effective in the Electronic invoicing add-in.
+6. On the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
+7. Set the **Deploy to service environment** option to **No**.
 10. Select **OK**.
 
 ## Turn on the Electronic invoicing feature in Finance or Supply Chain Management
