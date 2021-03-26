@@ -3,7 +3,7 @@
 
 title: Cancel an executing batch job
 description: This topic provides information about how to cancel an executing batch job.
-author: Peakerbl
+author: karimelazzouni
 manager: AnnBe
 ms.date: 03/26/2021
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: kaelazzo
 ms.search.validFrom: 2019-05-08
 ms.dyn365.ops.version: Platform update 27
 
