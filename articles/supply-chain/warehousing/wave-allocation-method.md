@@ -45,8 +45,8 @@ In order to utilize parallel processing, the wave must run in batch.
 
 Performance benefits of parallel processing fall in two categories:
 
-- **Improved throughput**: The throughput of waves will typically improve even if parallel processing isn't configured, especially for scenarios where there is no overlap of items within the waves.
-- **Improvement of the allocation for a single wave**: Testing on customer data has shown a near 50% performance improvement after switching to parallel allocation. The parallel processing is done per items and dimensions above the location, so the improvements depend on how many different items a wave contains, the infrastructure available, and the duration of the allocation versus the duration of the work creation.
+- **Improved throughput** - The throughput of waves will typically improve even if parallel processing isn't configured, especially for scenarios where there is no overlap of items within the waves.
+- **Improvement of the allocation for a single wave** - Testing on customer data has shown a near 50% performance improvement after switching to parallel allocation. The parallel processing is done per items and dimensions above the location, so the improvements depend on how many different items a wave contains, the infrastructure available, and the duration of the allocation versus the duration of the work creation.
 
 ## Configure parallel allocation
 
