@@ -78,7 +78,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 4. In the **Base feature field**, select the imported Electronic invoicing feature from the Microsoft configuration provider.
 5. Select **Create feature**.
 
-## Country or region Electronic invoicing feature specific configuration
+## Country-specific configuration for Electronic invoicing feature
 
 Depending on the country or region, the Electronic invoicing feature might require specific configuration. 
 
@@ -154,7 +154,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
 
 
-## Country or region Application setup specific configuration
+## Country-specific configuration of Application setup
 
 Depending on the country or region, the Application setup might require specific configuration. 
 
