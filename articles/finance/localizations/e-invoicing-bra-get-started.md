@@ -36,7 +36,7 @@ This topic provides information that will help you get started with the Electron
 
 ## Country-specific configuration for Brazilian NF-e (BR) Electronic invoicing feature
 
-Some of the parameters from the **Brazilian NF-e (BR) Electronic invoicing feature** are published with default values. Review and, if necessary, update the necessary values to better fit your business operation before you deploy the Electronic invoicing feature to the Service environment.
+Some of the parameters from the **Brazilian NF-e (BR) Electronic invoicing feature** are published with default values. Review and, if necessary, update the values to better fit your business operation needs before you deploy the Electronic invoicing feature to the Service environment.
 
 This section complements the **Country-specific configuration for Electronic invoicing feature** section in the topic, [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
@@ -55,7 +55,7 @@ This section complements the **Country-specific configuration for Electronic inv
 
 ## Country-specific configuration of Application setup for Brazilian NF-e (BR) Electronic invoicing feature
 
-Complete these steps before you deploy the Application setup to your Finance or Supply Chain Connected application.
+Complete these steps before you deploy the Application setup to your Finance or Supply Chain Management Connected application.
 
 This section complements the **Country-specific configuration of Application setup** section in the topic, [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
@@ -75,7 +75,7 @@ This section complements the **Country-specific configuration of Application set
 
 ## Country-specific configuration for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature
 
-Some of the parameters from the **Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature** are published with default values. Review and, if necessary, update the necessary values to better fit your business operation before you deploy the Electronic invoicing feature to the Service environment.
+Some of the parameters from the **Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature** are published with default values. Review and, if necessary, update the values to better fit your business operation needs before you deploy the Electronic invoicing feature to the Service environment.
 
 This section complements the **Country-specific configuration for Electronic invoicing feature** section in the topic, [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
@@ -100,7 +100,7 @@ This section complements the **Country-specific configuration for Electronic inv
 
 ## Country-specific configuration of Application setup for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature
 
-Complete these steps before you deploy the Application setup to your Finance or Supply Chain Connected application.
+Complete these steps before you deploy the Application setup to your Finance or Supply Chain Management Connected application.
 
 This section complements the **Country-specific configuration of Application setup** section in the topic, [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
