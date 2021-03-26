@@ -4,7 +4,7 @@
 title: Warehouse management workloads for cloud and edge scale units
 description: This topic provides information about the feature that enables scale units to run selected processes from your warehouse management workload.
 author: perlynne
-manager: tfeyr
+manager: tfehr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
@@ -259,7 +259,7 @@ The following table shows which warehouse operations and exception handing featu
 | Movement by template                               | Yes | Yes                          |
 | Warehouse transfer                                 | Yes | No                           |
 | Create transfer order from warehouse app           | Yes | No                           |
-| Adjustment (in/out)                                | Yes | Yes<p>But not for the *adjust out* scenario where inventory reservation must be removed using the **Remove reservations** setting on the inventory adjustment types.</p>                           |
+| Adjustment (in/out)                                | Yes | Yes, but not for the adjust out scenario where inventory reservation must be removed using the **Remove reservations** setting on the inventory adjustment types.</p>                           |
 | Inventory status change                            | Yes | No                           |
 | Cycle counting and Counting discrepancy processing | Yes | Yes                           |
 | Reprint label (license plate printing)             | Yes | Yes                          |
