@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Post Go-live FAQ
-description: types of support involved in the lifecycle of the project and best practices on monitoring your environments.
+title: Production support and monitoring
+description: This topic describes the types of support involved in the lifecycle of the project and best practices on monitoring your environments.
 author: PedroTubal
 manager: AnnBe
-ms.date: 03/08/2020
+ms.date: 03/26/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -14,26 +14,26 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 # ms.devlang: 
-ms.reviewer:
-ms.search.scope:
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 # ms.custom: NotInTOC
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-petbal
-ms.search.validFrom: 2021-03-03
-ms.dyn365.ops.version: AX 10.0.14
+ms.search.validFrom: 2021-03-31
+ms.dyn365.ops.version: 10.0.14
+
 ---
 
-# Production Support and Monitoring
+# Production support and monitoring
 
 [!include[banner](../includes/banner.md)]
 
 To ensure a good experience during the implementation and after the go-live of the project, it's important to understand the several types of servicing available and how to get the proper support for every scenario. The following will provide you with an overview of how to engage each type of support and how some of the tools will help you keep your business continually accounting for all business needs.
 
-Microsoft tools and support ensure the stability and effectiveness of an implemented platform by providing infrastructural and application support. However, the effectiveness of this support is dependent on Partner/Client responsibility to correctly develop, test, configure, manage and monitor the implemented system and its environments.
+Microsoft tools and support ensure the stability and effectiveness of your enivornment by providing infrastructural and application support. However, the effectiveness of this support is dependent on partner/client responsibility to correctly develop, test, configure, manage, and monitor the implemented system and its environments.
 
 :::row:::
    :::column span="":::
@@ -41,59 +41,54 @@ Microsoft tools and support ensure the stability and effectiveness of an impleme
    :::column-end:::
 :::row-end:::
 
+## Supporting actions
 Supporting actions can be grouped into three categories:
 
 - Self-service
-- Service Request
-- Support Request
+- Service request
+- Support request
 
 Depending on the category, the actions are triggered in different ways and may encompass different lead times.
 
-The servicing actions are:
-
 ### Self-service
-Can be triggered by the user at any moment with no lead time. The reasons to initiate a self-service action include:
+Self-service action can be triggered by the user at any moment with no lead time. The reasons to initiate a self-service action include:
 
-- Promote Code (non-production)
-- [Move databases between non-production environments](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations)
-- [Upgrade Production](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update)
-- [Maintenance mode](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode)
+- Promote code (non-production)
+- [Move databases between non-production environments](../../dev-itpro/database/dbmovement-operations.md)
+- [Upgrade production](../../dev-itpro/migration-upgrade/upgrade-latest-update.md)
+- [Maintenance mode](../../dev-itpro/sysadmin/maintenance-mode.md)
 - Pause upcoming automatic deployment of a service update
 - Restart services on non-production environments
 - Performance actions
 
-
-### Service Request
-Usually triggered by a creating a support ticket. It involves the cooperation of the Dynamics Service Engineering team (DSE) and each request will have a designated lead time. Some of the reasons to create a Service Request are:
+### Service request
+A service request is usually triggered by a creating a Support ticket. It involves the cooperation of the Dynamics Service Engineering (DSE) team  and each request will have a designated lead time. Some of the reasons to create a service request are:
 
 - Environment deployment request
 
-#### Some of the recommended practices when working with the DSE team:
+#### Recommended practices when working with the DSE team:
 - Consider that there are turn-around times or Service Level Agreements (SLAs) for each type of service request.
 - Don't use a service request if a support request better suits your case.
-- Consult the [service request catalog](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team#service-request-types-and-slas) to make sure that you're making the right type of request
+- Consult the [Service request types and SLAs](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md#service-request-types-and-slas) to make sure that you're making the right type of request
 
-
-### Support Request 
+### Support request 
 There are other scenarios that can usually be resolved by opening a support request. These requests have a lead time. Some of the reasons to create a support request are:
 
 - Production point-in-time restore after Go-Live
 - Flag a regression in a Service Update and ask for an exception opt-out
 - Performance related requests (for tasks not possible through self-service)
 - Flighting feature activation (for example customer and vendor master data sharing)
-- Production resizing (Update and upload a new usage profile in the LCS subscription estimator first)
+- Production resizing (update and upload a new usage profile in the LCS subscription estimator first)
 - Additional LCS project on the same tenant
-- Moving tenant of PRODUCTION environments
+- Moving tenant of Production environments
 
+## Requesting support
 
-## Requesting Support
-
-For an effective support process, a clear escalation path must be defined. Project teams (Client/Partner) should be able to monitor and read environment telemetry and be capable of conducting initial troubleshooting when necessary.
+For an effective support process, a clear escalation path must be defined. Project teams (client/partner) should be able to monitor and read environment telemetry and be capable of conducting initial troubleshooting when necessary.
 
 A well-identified problem and a well-defined resolution process can make a difference in the effectiveness of the outcome.
 
 An **effective support request** should include:
-
 
 ### Quality input
 
