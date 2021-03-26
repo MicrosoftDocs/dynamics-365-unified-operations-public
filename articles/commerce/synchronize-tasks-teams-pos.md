@@ -69,8 +69,6 @@ To link the POS and Microsoft Teams applications for task management in Commerce
 1. Go to **System administration \> Inquiries \> Batch jobs**, and find the most recent job that has the description **Teams provision**. Wait until this job has finished running.
 1. Run the **CDX job 1070** to publish the plan ID and store references to Retail Server.
 
-![Tasks integration with Microsoft Teams page](media/d365-commerce-teams-synchronizing-tasks.png)
-
 ## Additional resources
 
 [Manage the Tasks app for your organization in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-tasks-app)
