@@ -59,6 +59,6 @@ Only the ad hoc movement is currently supported. That means that you will not be
 
 ### Set up permission to move reserved inventory for individual workers
 
-For the worker who should be allowed to move reserved inventory, select the **Allow movement of inventory with work associated** check box under **Warehouse management \> Setup \> Worker**.  
+For the worker who is allowed to move reserved inventory, select the **Allow movement of inventory with work associated** check box under **Warehouse management \> Setup \> Worker**.  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
