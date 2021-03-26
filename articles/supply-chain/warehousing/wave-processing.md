@@ -42,7 +42,7 @@ For sales orders and kanban orders, inventory must be reserved before the order 
 - Require that all materials are reserved before an order can be released to the warehouse.
 - Allow production orders to be released to the warehouse even though all materials can't be reserved. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available. For example, this is useful if you have the materials that you need to start a production, and can wait until the additional materials become available.
 
-You can specify which of these production order options to use by default using the **Requirement for material reservation** field on the **Production control parameters** page. However, you can change the setting for each specific production order as needed. More information: [Warehouse parameters for wave processing](wave-warehouse-parameters.md)
+You can specify which of these production order options to use by default using the **Requirement for material reservation** field on the **Production control parameters** page. However, you can change the setting for each specific production order as needed. For more information, see [Warehouse parameters for wave processing](wave-warehouse-parameters.md).
 
 ## Create and process a wave
 
@@ -52,20 +52,20 @@ The following diagram shows the flow for how shipping waves are created, process
 
 ### Prerequisites
 
-Before you start, a wave template must be available for the type of wave you want to create (shipping, production, or kanban). The wave template establishes may settings for how the wave will be generated and processed, including which steps must be done manually and which are done automatically. For more information, see [Wave templates](wave-templates.md).
+Before you start, a wave template must be available for the type of wave you want to create (shipping, production, or kanban). The wave template establishes many settings for how the wave will be generated and processed, including which steps must be done manually and which are done automatically. For more information, see [Wave templates](wave-templates.md).
 
-### Step 1: Create a wave
+### Create a wave
 
 #### Automatically create waves based on warehouse and order type
 
-To create waves automatically, set up a [Wave templates](wave-templates.md) that apply for each relevant order type and warehouse and make sure each has its **Automate wave creation** option set to *Yes*.
+To create waves automatically, set up [Wave templates](wave-templates.md) that apply for each relevant order type and warehouse. Make sure each template has the **Automate wave creation** option set to *Yes*.
 
 #### Manually create waves
 
 To manually create a wave, follow these steps:
 
 1. Make sure that the relevant [Wave templates](wave-templates.md) aren't set to automatically create a wave for the warehouse and order types where you want to do so manually.
-1. Depending on the type of wave to create, do one of the following:
+1. Depending on the type of wave you want to create, do one of the following:
 
     - Go to **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
     - Go to **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
@@ -77,16 +77,16 @@ To manually create a wave, follow these steps:
 
 1. If you want to use wave attributes as additional query criteria for the wave, select the attributes in the **Wave attributes** fields.
 
-### Step 2: Specify what to include in a wave
+### Specify what to include in a wave
 
-Once a wave has been created, you are ready to start adding content to it.
+After a wave has been created, you are ready to start adding content to it.
 
 > [!NOTE]
-> If needed, you can add lines to a wave even after it has been processed, provided it has not yet been released.
+> If needed, you can add lines to a wave even after it has been processed as long as it has not been released.
 
 #### Automatically specify what to include in a wave
 
-To create waves automatically, set up a [Wave templates](wave-templates.md) that apply for each relevant order type and warehouse and make sure each has its **Automate wave creation** option set to *Yes*. Alternatively, your template could automatically assign lines to any qualifying open wave if it has its **Assign to open waves** option set to *Yes*.
+To create waves automatically, set up [Wave templates](wave-templates.md) that apply for each relevant order type and warehouse. Make sure each template has the **Automate wave creation** option set to *Yes*. Alternatively, your template could automatically assign lines to any qualifying open wave if the **Assign to open waves** option is set to *Yes*.
 
 #### Manually specify what to include in a wave
 
@@ -109,16 +109,16 @@ When a wave has been created but not yet released, you can manually specify what
     Repeat this step for each line to add. To add all lines, select **Add all**.
 
     > [!TIP]
-    > For shipment waves, you can quickly find a particular order by selecting a custom filter in the **Wave filter code** field. Wave filter codes contain query criteria for shipments, which are created in the **Wave filters** form. This field is not available for production waves or kanban waves.
+    > For shipment waves, you can quickly find a specific order by selecting a custom filter in the **Wave filter code** field. Wave filter codes contain query criteria for shipments, which are created in the **Wave filters** form. This field is not available for production waves or kanban waves.
     > A green check mark in the **On wave** column indicates that the shipment has been added to the wave.
 
-### Step 3: Process the wave to create the picking work
+### Process the wave to create the picking work
 
-Once a wave has been created and contains all of its required lines, you are ready to process it to create the corresponding picking work.
+After a wave has been created and contains all of its required lines, you are ready to process it to create the corresponding picking work.
 
 #### Automatically process a wave
 
-To automatically process a wave, set up the relevant [Wave template](wave-templates.md) with the automatic processing options required.
+To automatically process a wave, set up the relevant [Wave templates](wave-templates.md) with the automatic processing options required.
 
 #### Manually process a wave
 
@@ -134,13 +134,13 @@ To manually process a wave that has all of its required content, follow these st
 
 1. Select the wave to process. On the Action Pane, select **Process**.
 
-### Step 4: Release the wave to the warehouse to start picking and packing
+### Release the wave to the warehouse to start picking and packing
 
 You must process a wave before you can release it. When you release the wave, the picking work is available in the warehouse. You can cancel a wave after it is released, and add more lines, but you can't change the lines.
 
 #### Automatically release a wave
 
-To automatically process a wave, set up the relevant [Wave template](wave-templates.md) with the automatic processing options required.
+To automatically process a wave, set up the relevant [Wave templates](wave-templates.md) with the automatic processing options required.
 
 #### Manually release a wave
 
@@ -156,11 +156,11 @@ To release a wave manually, follow these steps:
 
 ## Containerize a wave
 
-Automated containerization creates containers and the picking work for shipments when a wave is processed. For details on how to set it up, see [Containerization](wave-containerization.md).
+Automated containerization creates containers and the picking work for shipments when a wave is processed. For details about how to set it up, see [Containerization](wave-containerization.md).
 
 ## Work with the scheduled work creation
 
-When the *Schedule work creation* functionality is enabled, wave processing will create planned work, which will eventually be used by the new work creation process. During work creation, the work will be blocked using the *Organization-wide work blocking* feature. More information: [Schedule work creation during wave](configure-wave-schedule-work-creation.md)
+When the *Schedule work creation* functionality is enabled, wave processing will create planned work, which will eventually be used by the new work creation process. During work creation, the work will be blocked using the *Organization-wide work blocking* feature. For more information, see [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
 
 The following flowchart shows how planned work is created during wave processing.
 
@@ -202,7 +202,7 @@ If your system doesn't already include the **Wave batch job details** page, go t
 
 ### Use the Wave batch job details page
 
-The **Wave batch job details** page combines batch jobs and batch job tasks, which lets you investigate all the wave steps without needing to navigate back and forth between a single batch job and the batch tasks list. The page also provides access to the batch log and, provided you have the suitable permissions, provides a link to the **Batch jobs** page.
+The **Wave batch job details** page combines batch jobs and batch job tasks, which lets you investigate all the wave steps without needing to navigate back and forth between a single batch job and the batch tasks list. The page also provides access to the batch log and, if you have the required permissions, provides a link to the **Batch jobs** page.
 
 To open this page, select a wave on any of several different wave pages and then select **Wave batch job details** from the Action Pane.
 
