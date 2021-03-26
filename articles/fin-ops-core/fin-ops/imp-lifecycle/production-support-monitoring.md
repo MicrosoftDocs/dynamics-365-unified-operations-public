@@ -151,10 +151,10 @@ Some of the pre-defined queries are for:
 - Distinct user sessions
 
 #### Health Metrics
-This Dashboard provides a series of line charts, filtered by instance (AOS or Batch AOS) and time frame through which it's possible to observe SQL execution in the **AOS** tab and system memory and CPU utilization over time in the **System tab**. Through this tool, you can easily identify behavioral changes that may help you to trace in time issues and the impact of changes in the solution.
+This dashboard provides a series of line charts, filtered by instance (AOS or Batch AOS) and time frame through which it's possible to observe SQL execution in the **AOS** tab and system memory and CPU utilization over time in the **System tab**. Through this tool, you can easily identify behavioral changes that may help you to trace in time issues and the impact of changes in the solution.
 
 #### SQL Insights
-SQL Insights provide advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed analysis, see [Performance troubleshooting using tools](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) and watch the [TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18).
+SQL Insights provide advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed analysis, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) and watch the [Performance troubleshooting tools TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18).
 
 SQL Insights is a reliable way to collect performance metrics on demand and enables customers and partners to execute a predefined set of actions that can be used to mitigate issues in a sandbox or production environment. This feature queries SQL Server directly, so you get query store metrics in near real time.
 
