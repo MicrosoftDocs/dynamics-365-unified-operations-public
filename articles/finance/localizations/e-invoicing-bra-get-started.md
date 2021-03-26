@@ -57,11 +57,9 @@ Before you complete the procedure in this section, you must have created a Brazi
 
 ## Country-specific configuration of Application setup for Brazilian NF-e (BR) Electronic invoicing feature
 
-Configuring the Application setup for Brazilian NF-e (BR) Electronic invoicing feature requires that specific steps be completed. Complete these steps before you deploy your Application setup to your Electronic invoicing add-in Service environment.
+Configuring the Application setup for Brazilian NF-e (BR) Electronic invoicing feature requires that specific steps be completed. Complete these steps before you deploy the Application setup to your Finance or Supply Chain Connected application.
 
-### Prerequisites
-
-Before you complete the procedure in this section, create and initiate the application configuration of the Brazilian NF-e (BR) Electronic invoicing feature as described in the **Configure the application setup** section in the topic, [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
+This section complements the **Configure the application setup** section in the topic, [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-in** tile.
 2. On the **Electronic invoicing add-in Features** page, verify that the **Brazilian NF-e (BR)** Electronic invoicing feature is selected.
@@ -106,11 +104,9 @@ Before you complete the procedure in this section, you must have created a Brazi
 
 ## Country-specific configuration of Application setup for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature
 
-Configuring the application setup for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature requires that specific steps be completed before you deploy your Application setup to your Electronic invoicing add-in Service environment.
+Configuring the application setup for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature requires that specific steps be completed. Complete these steps before you deploy the Application setup to your Finance or Supply Chain Connected application.
 
-### Prerequisites
-
-Before you complete the procedure in this section, create and initiate a Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature as described in the section **Configure the application setup** in the topic, [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
+This section complements the **Configure the application setup** section in the topic, [Get started with the Electronic invoicing add-in](e-invoicing-get-started.md).
 
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-in** tile.
 2. On the **Electronic invoicing add-in Features** page, verify that the **Brazilian NFS-e ABRASF Curitiba (BR)** Electronic invoicing feature is selected.
