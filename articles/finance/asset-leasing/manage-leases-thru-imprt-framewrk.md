@@ -78,7 +78,7 @@ To process an individual lease, select **Migrate lease records** on the **Import
 After the leases are compared, you can run a report to view the differences for each lease that is included in the import ID. To run the report for one lease, select that lease in the staging data, and then select **Compare and view report \> Differences report**.
 
 > [!NOTE]
-> To migrate multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic \> Validate** and select **Compare**. 
+> To migrate multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic** and select **Compare**. 
 
 ## Set up update fields
 
