@@ -40,7 +40,7 @@ To set up containerization, you must create the following:
 - **Container build template** ─ Create templates that define rules for containerization. For example, rules for mixing inventory and other packing strategies.
 - **Wave templates** – Set up one or more wave templates to create the picking work for containerization.
 
-## 1. Create wave templates for containerization
+## Create wave templates for containerization
 
 You must set up one or more shipping wave templates for containerization. Wave templates include criteria that determine the following:
 
@@ -50,7 +50,7 @@ You must set up one or more shipping wave templates for containerization. Wave t
 
 For more information, see [Wave templates](wave-templates.md).
 
-## 2. Create container types
+## Create container types
 
 Use container types to create descriptions of containers, including maximum values for physical size dimensions and weight capacity. When a containerized wave is processed, the containers are created based on the container type information.
 
@@ -68,9 +68,9 @@ To set up a container type, follow these steps:
 
 1. Select custom attribute values for the container in the fields for attributes. Attributes are custom values that are used to filter or sort items based on a value that is otherwise not available. For example, if you want to pack items for a particular customer, you can create an attribute for the customer name. You create attributes on the **Container attributes** page.
 
-## 3. Create container groups
+## Create container groups
 
-You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill. Microsoft Dynamics AX uses the size dimensions of the item to determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.
+You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill. The size dimensions of the item determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.
 
 To set up a container group, follow these steps:
 
@@ -81,7 +81,7 @@ To set up a container group, follow these steps:
 1. In the **Container type** field, select a container type.
 1. Select **Move up** or **Move down** to specify the sequence in which the container types are packed.
 
-## 4. Create container build templates
+## Create container build templates
 
 You can set up rules for the containerization process, such as inventory mixing rules and other packing strategies. For example, you can set up a rule so that workers cannot pack allocation lines that represent sales orders from different customers in the same container.
 
