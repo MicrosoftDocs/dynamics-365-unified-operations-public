@@ -84,46 +84,42 @@ For an effective support process, a clear escalation path must be defined. Proje
 
 A well-identified problem and a well-defined resolution process can make a difference in the effectiveness of the outcome.
 
-An **effective support request** should include:
-
-### Quality input
-
-#### Quality investigation:
+An effective support request should include:
 
 - Environment where the issue occurs
 - The process in which the issue was identified
 - Reproducible steps to show where the issue occurred
-- The expected result / actual result
+- The expected result and the actual result
 - Pre-investigation of the issue
 - Additional elements (error message, screenshots, session ID, trace, …)
 
+### High severity support requests
+A high severity support request should include:
 
-#### If high severity:
+- **Business impact**: What is the impact of the issue on your business activities?
+- **Financial impact**: How does this issue impact your business on a financial level?
 
-- Business impact: what is the impact of the issue on your business activities?
-- Financial impact: how does this issue impact your business on a financial level?
+A thorough analysis of the problem should be done before reporting the issue. When the request for support includes detailed information, using all available tools and telemetries, the incident resolution will be much quicker. Including the proper information up-front will save a great deal of time in back-and-forth communications that often takes place to identify the problem and replicate the issue.
 
-A thorough analysis of the problem should be done before reporting the issue. When the request for support includes detailed information, using all available tools and telemetries, the incident resolution will be much quicker. Including the proper information up front will save a great deal of time in back-and-forth communications that often takes place to identify the problem and replicate the issue.
-
-There are a various of [support plans](https://go.microsoft.com/fwlink/?LinkId=871952&amp;clcid=0x409) to choose from, there will always be the right one for each business.
+There are various [support plans](https://go.microsoft.com/fwlink/?LinkId=871952) to choose from, there will always be the right one for each business.
 
 Before requesting support, you should remember that it's important to choose the proper level of severity.
 
-To identify the correct severity level and estimate the initial response time for you request please consult the [support overview](https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request) and [production outage](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) docs.
+To identify the correct severity level and estimate the initial response time for you request, please consult the [Support overview](https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request) and [Report a production outage](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage) documentation.
 
 ## Monitoring elements
 
-LCS has integrated a set of tools that can be used to properly monitor LCS projects. These tools include:
+LCS has integrated a set of tools that can be used to properly monitor LCS projects.
 
-### Service Health Dashboard
+### Service health dashboard
 
-[Service Health Dashboard](https://portal.office.com/servicestatus) where the health status and incidents can be found for Office365 Services.
+The [Service health dashboard](https://portal.office.com/servicestatus) provides the health status for Office 365 Services.
 
-You can also view the service health through the admin center. Go to  **Health**  >  **Service health** or select the  **Service health**  card on the  **Home dashboard**.
+You can also view the service health through the admin center. Go to **Health** > **Service health** or select the **Service health** card on the **Home dashboard**.
 
 The **All services** tab (the default view) shows all services and their current health state. An icon and the **Status** column indicate the state of each service.
 
-If you're experiencing an issue with a Microsoft 365 service and you don't see it listed on the  **Service health**  page, tell us about it by selecting  **Report an issue**, and completing the short form.
+If you're experiencing an issue with a Microsoft 365 service and you don't see it listed on the **Service health** page, tell us about it by selecting **Report an issue**, and completing the short form.
 
 These reports will help to identify issues. Once identified, incidents will be shown in the report.
 
