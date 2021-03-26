@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Manage user roles in Microsoft Teams
-description: This topic covers how to manage Dynamics 365 Commerce user roles in Microsoft Teams.
+description: This topic describes how to manage Microsoft Dynamics 365 Commerce user roles in Microsoft Teams.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 03/12/2021
@@ -10,7 +10,7 @@ ms.prod:
 ms.service: dynamics-365-commerce
 ms.technology: 
 # optional metadata
-# ms.search.form:  
+# ms.search.form: 
 #ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -30,22 +30,22 @@ ms.dyn365.ops.version: 10.0.18
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers how to manage Dynamics 365 Commerce user roles in Microsoft Teams.
+This topic describes how to manage Microsoft Dynamics 365 Commerce user roles in Microsoft Teams.
 
-As you create a team per store or channel in Microsoft Teams, a group membership corresponding to the team is created, for example `HOUSTON_D365@<YourTenantAADDomain>.com`. All the store workers under a team group membership are assigned one of two user roles: "owner" or "member." A store employee with the owner user role, typically a store manager, can perform operations such as adding a private channel and adding or deleting members. 
+As you create a team for each store or channel in Teams, a group membership that corresponds to the team is created (for example, `HOUSTON_D365@<YourTenantAzureADDomain>.com`). All the store workers under a team group membership are assigned one of two user roles: **Owner** or **Member**. Store employees who have the **Owner** user role can perform operations such as adding a private channel, and adding or deleting members. Typically, store managers have the **Owner** user role.
 
-The following image shows an example list of team members and their user roles in Microsoft Teams.
+The following illustration shows an example of a list of team members and their user roles in the Microsoft Teams admin center.
 
-![Dynamics 365 Commerce and Teams integration - User Roles](media/d365-commerce-teams-integration-user-roles.png)
+![Team members and user roles in the Microsoft Teams admin center](media/d365-commerce-teams-integration-user-roles.png)
 
 For more information, see [Assign team owners and members in Microsoft Teams](https://docs.microsoft.com/microsoftteams/assign-roles-permissions).
 
 ## Additional resources
 
-[Dynamics 365 Commerce and Microsoft Teams integration ](commerce-teams-integration.md)
+[Dynamics 365 Commerce and Microsoft Teams integration](commerce-teams-integration.md)
 
 [Provision Microsoft Teams from Dynamics 365 Commerce](provision-teams-from-commerce.md)
 
-[Synchronize task management between Microsoft Teams and POS](synchronize-tasks-teams-pos.md)
+[Synchronize task management between Microsoft Teams and Dynamics 365 Commerce POS](synchronize-tasks-teams-pos.md)
 
-[Enable Microsoft Teams integration](enable-teams-integration.md)
+[Enable Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md)
