@@ -41,7 +41,7 @@ When the functionality is enabled, planned work will automatically get created, 
 
 ## Turn on the scheduled work creation features in feature management
 
-To work with the features described in this topic, they must be turned on for your system. Use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the following features in the following order:
+To use the features described in this topic, they must be turned on for your system. Use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the following features in the following order:
 
 1. **Organization-wide work blocking** - Required for both manual and automatic configuration of scheduled work creation.
 1. **Schedule work creation** - Required for both manual and automatic configuration of scheduled work creation.
