@@ -54,9 +54,9 @@ To use the new functionality, refer to the following steps:
 2. Enable the **Enhanced batch abort** feature in the [Feature management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) workspace.
 3. Follow the same instructions to [cancel an executing batch job](#legacy-abort).
  
-You will be prompted that the batch server, which is running the canceling tasks, will be restarted. This can potentially disrupt a list of other batch jobs. You must proceed in order to end the cancelling tasks.
+You will be prompted that the batch server, which is running the canceling tasks, will be restarted. This can potentially disrupt a list of other batch jobs. You must proceed in order to end the canceling tasks.
 
-![image](https://user-images.githubusercontent.com/7556912/112464897-ba820680-8d6c-11eb-871a-e1aff1d82665.png)
+![Confirm that you want to end the canceling tasks.](https://user-images.githubusercontent.com/7556912/112464897-ba820680-8d6c-11eb-871a-e1aff1d82665.png)
 
 If you do not want to cancel other running batch jobs on the server and would prefer the old behavior of canceling a single task and not all the jobs running, you can turn off the **Enhanced batch abort** feature in the Feature management workspace and try to [cancel the executing batch job](#legacy-abort) again.
 
