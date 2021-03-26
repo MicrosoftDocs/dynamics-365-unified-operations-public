@@ -84,6 +84,33 @@ Depending on the country or region, the Electronic invoicing feature might requi
 
 For the specific steps, see the "Get started" documentation that is available for your country or region.
 
+## Import the Model mapping configurations from Electronic reporting module
+
+1. In RCS, select the **Electronic reporting** workspace.
+2. Select **Repositories** from **Microsoft** Configuration providers.
+3. Select **Global** and on action Pane select **Open**.
+4. Import the Model mapping configurations according to the following table given by Feature name:
+
+| Feature name                         | Model mapping configuration |
+|--------------------------------------|-----------------------------|
+| Austrian electronic invoices (AT)    | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Belgian electronic invoice (BE)      | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Brazilian NF-e (BR)                  | <p>Customer invoice context model</p><p>Fiscal documents</p><p>Response message model</p> |
+| Brazilian NFS-e ABRASF Curitiba (BR) | <p>Customer invoice context model</p><p>Fiscal documents</p><p>Response message model</p> |
+| Danish electronic invoice (DK)       | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Egyptian electronic invoice (EG)     | <p>Customer invoice context model</p><p>Invoice model</p><p>Response message model</p> |
+| Estonian electronic invoice (EE)     | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Finish electronic invoice (FI)       | <p>Customer invoice context model</p><p>Invoice model</p> |
+| French electronic invoice (FR)       | <p>Customer invoice context model</p><p>Invoice model</p> |
+| German electronic invoice (DE)       | <p>Customer invoice context model</p><p>Invoice model</p> |
+| FatturaPA (IT)                       | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Mexican CFDI Interfactura (MX)       | <p>Customer invoice context model</p><p>Invoice model</p><p>Response message model</p> |
+| Dutch electronic invoice (NL)        | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Norwegian electronic invoice (NO)    | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Spanish electronic invoice (ES)      | <p>Customer invoice context model</p><p>Invoice model</p> |
+| PEPPOL electronic invoice            | <p>Customer invoice context model</p><p>Invoice model</p> |
+
+
 ## Configure the application setup
 
 1. Select the Electronic invoicing feature that you created.
