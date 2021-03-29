@@ -9,7 +9,6 @@ manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

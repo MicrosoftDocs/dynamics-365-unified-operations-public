@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,7 +31,6 @@ ms.dyn365.ops.version: 10.0.17
 # Create dynamic e-commerce pages based on URL parameters
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to set up a Microsoft Dynamics 365 Commerce e-commerce page that can serve dynamic content, based on URL parameters.
 

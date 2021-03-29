@@ -2,13 +2,12 @@
 # required metadata 
  
 title: Register items for an advanced warehousing enabled item using an item arrival journal
-description: This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes. 
+description: This topic presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. 
 author: ShylaThompson
 manager: tfehr 
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -29,54 +28,55 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes. This would usually be done by a receiving clerk. 
+This topic presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. This would usually be done by a receiving clerk.
 
-You can run this procedure in demo data company USMF, or on your own data. You need to have a confirmed purchase order with an open purchase order line before you start this guide. The item on the line must be stocked, and it must not use product variants, and must not have tracking dimensions. And the item needs to be associated with a warehouse management process enabled storage dimension group. The warehouse that's used must be enabled for warehouse management processes and the location that you use for receiving must be license plate controlled. If you're using USMF, you can use company account 1001, Warehouse 51, and item M9200 to create your PO. 
+## Enable sample data
 
-Make a note of the number of the purchase order that you create, and also note the item number and the site that you used for your purchase order line.
+To work through this scenario using the sample records and values specified in this topic, you must be using a system where the standard demo data is installed, and you must select the *USMF* legal entity before you begin.
 
+You can instead work through this scenario by substituting values from your own data provided that you have the following data available:
 
-## Create an item arrival journal header
-1. Go to Item arrival.
-2. Click New.
-3. In the Name field, type a value.
-    * If you are using USMF, you can type WHS. If you're using other data, the journal whose name you choose has to have the following properties: Check picking location must be set to No, and Quarantine management must be set to No.  
-4. In the Number field, type a value.
-5. In the Site field, type a value.
-    * Select the site that you used for your purchase order line. This will serve as a default value, which will default to all lines in the journal. If you used warehouse 51 in USMF, choose site 5.  
-6. In the Warehouse field, type a value.
-    * Select a valid warehouse for the site that you've selected. This will serve as a default value, which will default to all lines in the journal. If you're using the example values in USMF, select 51.  
-7. In the Location field, type a value.
-    * Select a valid location in the warehouse that you've selected. The location has to be associated with a location profile, which is license plate controlled. This will serve as a default value, which will default to all lines in the journal. If you're using the example values in USMF, select Bulk-008.  
-8. Right-click on the drop-down arrow in the License plate field and then select View details.
-9. Click New.
-10. In the License plate field, type a value.
-    * Make a note of the value.  
-11. Click Save.
-12. Close the page.
-13. In the License plate field, type a value.
-    * Enter the value of the license plate that you just created. This will serve as a default value, which will default to all lines in the journal.  
-14. Click OK.
+- You must have a confirmed purchase order with an open purchase order line.
+- The item on the line must be stocked. It must not use product variants, and must not have tracking dimensions.
+- The item must be associated with a storage dimension group that has warehouse management process enabled.
+- The warehouse that's used must be enabled for warehouse management processes and the location that you use for receiving must be license plate controlled.
 
-## Add a line
-1. Click Add line.
-2. In the Item number field, type a value.
-    * Enter the item number that you used on the purchase order line.  
-3. In the Quantity field, enter a number.
-    * Enter the quantity that you want to register.  
-    * The Date field determines the date on which the on-hand quantity of this item will be registered in the inventory.  
-    * The lot ID will be populated by the system if it can be uniquely identified from the information provided. Otherwise you will have to add this manually. This is a mandatory field, which links this registration to a specific source document line.  
+## Create an item arrival journal header that uses warehouse management
 
-## Complete the registration
-1. Click Validate.
-    * This checks that the journal is ready to be posted. If the validation fails you will need to fix the errors before you can post the journal.  
-2. Click OK.
-    * After you clicked OK, check the message. There should be a message saying that the journal is OK.  
-3. Click Post.
-4. Click OK.
-    * After you have clicked OK, check the message bar. There should be a message saying that the operation completed.  
-5. Close the page.
+The following scenario shows how to create an item arrival journal header that uses warehouse management:
 
+1. Make sure your system contains a confirmed purchase order that fulfils the requirements outlined in the previous section. This scenario uses a purchase order for company *USMF*, vendor account *1001*, warehouse *51*, with an order line for *10 PL* (10 pallets) of item number *M9200*.
+1. Make a note of the purchase order number that you will use.
+1. Go to **Inventory management \> Journal entries \> Item arrival \> Item arrival**.
+1. Select **New** on the Action Pane.
+1. The **Create warehouse management journal** dialog box opens. Select a journal name in the **Name** field.
+    - If you are using *USMF* sample data, select *WHS*.
+    - If you're using your own data, the journal you choose must have **Check picking location** set to *No* and **Quarantine management** set to *No*.
+1. Set **Reference** to *Purchase order*.
+1. Set **Account number** to *1001*.
+1. Set **Number** to the number of the purchase order that you identified for this exercise.
+
+    ![Item arrival journal](../media/item-arrival-journal-header.png "Item arrival journal")
+
+1. Select the **OK** to create the journal header.
+1. In the **Journal lines** section, select **Add line** and enter the following data:
+    - **Item number** – Set to *M9200*. The **Site**, **Warehouse**, and **Quantity** will get set based on the inventory transaction data for the 10 pallets (1000 ea.).
+    - **Location** – Set to  *001*. This specific location does not track license plates.
+
+    ![Item arrival journal line](../media/item-arrival-journal-line.png "Item arrival journal line")
+
+    > [!NOTE]
+    > The **Date** field determines the date on which the on-hand quantity of this item will be registered in the inventory.  
+    >
+    > The **Lot ID** will be populated by the system if it can be uniquely identified from the information provided. Otherwise you will have to enter this manually. This is a required field, which links this registration to a specific source document line.  
+
+1. Select **Validate** on the Action Pane. This checks that the journal is ready to be posted. If the validation fails you will need to fix the errors before you can post the journal.  
+1. The **Check journal** dialog box opens. Select **OK**.
+1. Review the message bar. There should be a message denoting that the operation was completed.  
+1. Select **Post** on the Action Pane.
+1. The **Post journal** dialog box opens. Select **OK**.
+1. Review the message bar. There should be messages denoting that the operation completed.
+1. Select **Functions > Product receipt** on the Action Pane to update the purchase order line and post a product receipt.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

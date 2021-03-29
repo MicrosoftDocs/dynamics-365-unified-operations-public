@@ -10,7 +10,6 @@ ms.date: 06/19/2020
 
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

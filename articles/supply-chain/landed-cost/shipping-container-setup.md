@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Shipping container setup
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to set up shipping containers for the **Landed cost** module.
 

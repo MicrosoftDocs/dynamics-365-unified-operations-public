@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -49,7 +48,7 @@ This tutorial requires that you have access to an environment, and that you be p
 ## Create the Fleet Management tutorial model
 
 1. Start Visual Studio using **Run as administrator**.
-2. From the **Dynamics 365** window, select **Model Management &gt; Create model** to open the **Create model** wizard.
+2. From the **Dynamics 365** menu, select **Model Management &gt; Create model** to open the **Create model** wizard.
 3. Enter the following values for model parameters.
 
     | Property               | Value                                                                                                                    |

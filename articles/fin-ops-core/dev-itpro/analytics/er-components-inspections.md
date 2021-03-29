@@ -5,10 +5,9 @@ title: Inspect the configured ER component to prevent runtime issues
 description: This topic explains how to inspect the configured Electronic reporting (ER) components to prevent runtime issues that might occur.
 author: NickSelin
 manager: AnnBe
-ms.date: 02/10/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -226,6 +225,15 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td>
 <p>More than one model mapping exists for the &lt;model name (root descriptor)&gt; data model in the configurations &lt;configuration names separated by comma&gt;. Set one of the configurations as default</p>
 <p><b>Runtime error:</b> More than one model mapping exists for the &lt;model name (root descriptor)&gt; data model in the configurations &lt;configuration names separated by comma&gt;. Set one of the configurations as default.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i16'>Inconsistent setting of Header or Footer components</a></td>
+<td>Data integrity</td>
+<td>Error</td>
+<td>
+<p>Headers/footers (&lt;component type: Header or Footer&gt;) are inconsistent</p>
+<p><b>Runtime:</b> The last configured component is used at runtime if the draft version of the configured ER format is executed.</p>
 </td>
 </tr>
 </tbody>
@@ -846,6 +854,24 @@ Modify the using Word template by [adding](er-design-configuration-word-suppress
 When the [Missing binding](#i11) inspection is done, the inspected format bindings are evaluated against the bindings of the relevant model mapping component. Because you can import [several](./tasks/er-manage-model-mapping-configurations-july-2017.md) ER model mapping configurations to your Finance instance, and each configuration might contain the applicable model mapping component, one configuration must be selected as the default configuration. Otherwise, when you try to run, edit, or validate the inspected ER format, an exception will occur, and you will receive the following message: "More than one model mapping exists for the \<model name (root descriptor)\> data model in the configurations \<configuration names separated by comma\>. Set one of the configurations as default."
 
 For an example that shows how this issue might occur and how it can be fixed, see [Manage several derived mappings for a single model root](er-multiple-model-mappings.md).
+
+## <a id="i16"></a>Inconsistent setting of Header or Footer components
+
+When you [configure](er-fillable-excel.md) an ER format component to use an Excel template to generate an outbound document, you can add the **Excel\\Header** component to fill in headers at the top of a worksheet in an Excel workbook. You can also add the **Excel\\Footer** component to fill in footers at the bottom of a worksheet. For every **Excel\\Header** or **Excel\\Footer** component that you add, you must set the **Header/footer appearance** property to specify the pages that the component is run for. Because you can configure several **Excel\\Header** or **Excel\\Footer** components for a single **Sheet** component, and you can generate different headers or footers for different type of pages in an Excel worksheet, you must configure a single **Excel\\Header** or **Excel\\Footer** component for a specific value of the **Header/footer appearance** property. If more than one **Excel\\Header** or **Excel\\Footer** component is configured for a specific value of the **Header/footer appearance** property, a validation error occurs, and you receive the following error message: "Headers/footers (&lt;component type: Header or Footer&gt;) are inconsistent."
+
+### Automatic resolution
+
+No option to automatically fix this issue is available.
+
+### Manual resolution
+
+#### Option 1
+
+Modify the configured format by deleting one of the inconsistent **Excel\\Header** or **Excel\\Footer** components.
+
+#### Option 2
+
+Modify the value of the **Header/footer appearance** property for one of the inconsistent **Excel\\Header** or **Excel\\Footer** components.
 
 ## Additional resources
 

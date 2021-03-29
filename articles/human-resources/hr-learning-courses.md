@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

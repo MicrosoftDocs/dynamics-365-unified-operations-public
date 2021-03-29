@@ -9,7 +9,6 @@ manager: AnnBe
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata

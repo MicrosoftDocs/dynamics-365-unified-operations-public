@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.11
 # Hazardous materials in products, orders, shipments, and loads
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to set hazardous material properties for released products, how to put stock limits on hazardous items, and how to include hazardous materials in a sales order, shipment, or load.
 

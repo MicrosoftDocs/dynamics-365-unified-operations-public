@@ -8,7 +8,6 @@ manager:
 ms.date: 09/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

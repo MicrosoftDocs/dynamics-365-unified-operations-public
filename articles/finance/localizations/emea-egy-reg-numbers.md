@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,8 +30,6 @@ ms.dyn365.ops.version: 10.0.17
 # Configure registration numbers in Egypt
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 There are different types of registration numbers that are used in Egypt. This topic explains how to configure and use **Commercial registration numbers**, **National numbers**, and **File tax numbers**.
 

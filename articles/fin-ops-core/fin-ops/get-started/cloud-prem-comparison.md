@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -49,9 +48,9 @@ The following tables list the application areas. Cloud and on-premises support i
 |---------------------|-----------------------------|-----------|-----------------|
 | Compliance and certifications        |                                                                                           | Yes       | Yes             |
 |                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
-| Data management and integration      |                                                                                           | Yes       | Yes             
+| Data management and integration      |                                                                                           | Yes       | Yes             |
 |                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
-|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes              |
+|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes             |
 |                                      | Data integrations                                                                         | Yes       | Yes             |
 | Document management                  |                                                                                           | Yes       | Yes             |
 | Financial management                 |                                                                                           | Yes       | Yes             |
@@ -68,7 +67,7 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | Analytical workspaces                                                                     | Yes       | No              |
 |                                      | Intelligent business process: Recommendations                                             | Yes       | No              |
 |                                      | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools    | Yes       | No              |
-|                                      | SQL Server Reporting Services (SSRS) supports scaling out                                 | Yes       | No              |
+|                                      | SQL Server Reporting Services (SSRS) supports scaling out                                 | Yes       | Yes             |
 |                                      | Telemetry is transferred into the cloud                                                   | Yes       | No              |
 | Lifecycle services                   |                                                                                           | Yes       | Yes             |
 |                                      | Configurable business processes                                                           | Yes       | No              |
@@ -91,7 +90,7 @@ The following tables list the application areas. Cloud and on-premises support i
 
 | **Area**                | **Feature**             | **Cloud** | **On-premises** |
 |-------------------------|-------------------|-----------|-----------------|
-| Asset management                     |                                                                                           | Yes       | No |
+| Asset management                     |                                                                                           | Yes       | No              |
 | Compliance and certifications        |                                                                                           | Yes       | Yes             |
 |                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
 | Cost accounting                      |                                                                                           | Yes       | Yes             |
@@ -102,7 +101,7 @@ The following tables list the application areas. Cloud and on-premises support i
 | Data management and integration      |                                                                                           | Yes       | Yes             |
 |                                      | Configuration-driven extension                                                            | Yes       | No              |
 |                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
-|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes              |
+|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes             |
 |                                      | Data integrations                                                                         | Yes       | Yes             |
 | Document management                  |                                                                                           | Yes       | Yes             |
 | Help                                 |                                                                                           | Yes       | No              |
@@ -117,7 +116,7 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | Analytical workspaces                                                                     | Yes       | No              |
 |                                      | Intelligent business process: Recommendations                                             | Yes       | No              |
 |                                      | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools    | Yes       | No              |
-|                                      | SQL Server Reporting Services (SSRS) supports scaling out                                 | Yes       | No              |
+|                                      | SQL Server Reporting Services (SSRS) supports scaling out                                 | Yes       | Yes             |
 |                                      | Telemetry is transferred into the cloud                                                   | Yes       | No              |
 | Inventory management                 |                                                                                           | Yes       | Yes             |
 | Lifecycle services                   |                                                                                           | Yes       | Yes             |

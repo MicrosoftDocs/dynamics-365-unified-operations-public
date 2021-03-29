@@ -2,25 +2,24 @@
 # required metadata
 
 title: Commerce Data Exchange implementation guidance
-description: This topic is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, or CDX) in a Microsoft Dynamics 365 Commerce environment. It gives an overview, implementation tips, and overall guidance that you should consider as you plan your implementation, in regard to pages, setup, configuration, best practices, and more.
+description: This topic provides an overview of Commerce Data Exchange, including implementation tips, and overall guidance.
 author: jashanno
 manager: AnnBe
 ms.date: 08/01/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-365-retail
-ms.technology: 
+ms.prod:
+ms.technology:
 
 # optional metadata
 
 ms.search.form: RetailTerminalTable, RetailDevice
-# ROBOTS: 
+# ROBOTS:
 audience: IT Pro
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+# ms.tgt_pltfrm:
+ms.custom:
+ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
@@ -29,6 +28,7 @@ ms.dyn365.ops.version: 10.0.12
 ---
 
 # Commerce Data Exchange implementation guidance
+
 [!include[banner](../includes/banner.md)]
 
 This topic is intended for people who implement functionality that is related to data synchronization (Commerce Data Exchange, \[CDX\]) in a Microsoft Dynamics 365 Commerce environment. It gives an overview, implementation tips, and overall guidance that you should consider as you plan your implementation, in regard to pages, setup, configuration, best practices, and more.
@@ -37,7 +37,7 @@ This topic is intended for people who implement functionality that is related to
 
 Proper configuration and synchronization of data is crucial to a correct implementation. Regardless of business requirements, IT infrastructure, and overall preparedness, if data isn't correctly synchronized, the whole environment is effectively useless. Therefore, a top priority is to understand what is required to configure, generate, synchronize, and verify data across the full implementation. This goes from Commerce headquarters through the Commerce Scale Unit to the brick-and-mortar stores that use Modern POS (With or without an offline database) and other in-store components. CDX is the Commerce functionality that replicates and synchronizes data across databases. However, CDX differs from typical data replication functionality because it also allows for filtering. Therefore, CDX helps minimize data sets by generating only data that is specific to the channels that were specified for selection, filtering specific tables from offline databases, and filtering expired records for data that is no longer used, such as expired discounts.
 
-Before you go through this topic, it's important that you understand the concepts of a channel (store), registers and devices, and the Modern POS offline database. Therefore, we recommend that you review some of the resources at the end of this topic, such as the Device management implementation guide and the overview of the Commerce architecture. 
+Before you go through this topic, it's important that you understand the concepts of a channel (store), registers and devices, and the Modern POS offline database. Therefore, we recommend that you review some of the resources at the end of this topic, such as the Device management implementation guide and the overview of the Commerce architecture.
 
 ### Important Commerce headquarters pages
 
@@ -57,7 +57,7 @@ When a scheduler job is run, the channel database group selects, from the fields
 
 Data is generated and flows in a specific direction (either download or upload). To understand how best to configure the timing and select data for synchronization, it's important that you understand how the various pages in Commerce headquarters are used and how data generation occurs. When data generation is done correctly, it helps increase performance and reduce Commerce headquarters utilization.
 
-The following illustration shows the various pages in Commerce headquarters and how they are related to each another. (For descriptions of these pages, see the previous section.) CDX data generation can occur only if it's fully configured across all these pages. Data can be downloaded or uploaded. The data synchronization status is viewable on two different pages in Headquarters: Download sessions and Upload sessions. CDX data generation occurs through Headquarters and is synchronized down (download). Modern Point of Sale (POS) transactional data generated while offline requires the data to be synchronized up (upload).
+The following illustration shows the various pages in Commerce headquarters and how they are related to each other. (For descriptions of these pages, see the previous section.) CDX data generation can occur only if it's fully configured across all these pages. Data can be downloaded or uploaded. The data synchronization status is viewable on two different pages in Headquarters: Download sessions and Upload sessions. CDX data generation occurs through Headquarters and is synchronized down (download). Modern Point of Sale (POS) transactional data generated while offline requires the data to be synchronized up (upload).
 
 ![Commerce Data Exchange association map](./media/CommerceDataExchange-AssociationMap.png)
 
@@ -94,7 +94,7 @@ This feature can be configured in the offline profile. Three settings are relate
 This feature began to be released in version 10.0.11, and the full feature set was completed in version 10.0.12. This feature is intended to help reduce that amount of data that is synced to offline databases. On the **Scheduler job** and **Scheduler subjob** pages in Commerce headquarters, an option that is named **Exclude from offline databases** lets you exclude data (tables) when you sync data to the offline database.
 
 - On the **Scheduler job** page, set the option to **Yes** to stop all generated data packages for the job from being synced to offline databases. If the **Full data sync** command is run for the excluded job from the **Channel database** page, the relevant tables in offline databases will be emptied (that is, all data that previously existed will be cleared).
-- On the **Scheduler subjob**, set the option to **Yes** to stop the associated table for any job that contain the subjob from being synchronized to offline databases. For example, the channel database SQL table **DIRPARTYTABLE** is synchronized by three different scheduler jobs. Therefore, if you exclude the **DIRPARTYTABLE** table, you stop its data from being synced to offline databases by all three jobs. (We don't recommend that you exclude this example table (**DIRPARTYTABLE**) as it is critical for the staff related data it stores in the offline database).
+- On the **Scheduler subjob**, set the option to **Yes** to stop the associated table for any job that contains the subjob from being synchronized to offline databases. For example, the channel database SQL table **DIRPARTYTABLE** is synchronized by three different scheduler jobs. Therefore, if you exclude the **DIRPARTYTABLE** table, you stop its data from being synced to offline databases by all three jobs. (We don't recommend that you exclude this example table (**DIRPARTYTABLE**) as it is critical for the staff-related data it stores in the offline database).
 
 This feature also represents the first step in row-level filtering. In Commerce headquarters, the **Commerce channel schema** page includes a new option that is named **Filter shared customer data tables**. (To open the **Commerce channel schema** page, go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**, and then, in the **Commerce channel schema** field, select a value. The default value is **AX7**.) By setting the option to **Yes**, you flag all customer data in shared tables. This setting works only for standard Microsoft-created tables (that is, tables that aren't custom-created tables). When you set this option to **Yes**, you receive a message that states, "This will remove customer data from the records in the channel data distribution only. All schedule jobs that contain customer data also need to be marked to skip offline synchronization." You can then select either **Yes** or **No**. This message is intended as a reminder that the **Exclude from offline databases** option must also be set to **Yes** for all customer data jobs. (By default, the only customer data job is the 1010 job.)
 
@@ -106,7 +106,7 @@ This section describes configurations that you should consider when you begin to
 
 - **Create a Scheduler job calendar** – How often will each job occur? How many times per day will each job occur? Will large, non-critical jobs occur only during off-hours, when the overall environment isn't heavily used? By creating a calendar (either physical or virtual, as you prefer), you can learn the details about how jobs will intersect with other workloads that affect performance (for example, statement posting), hours of operation, batch processing for external data, and any customizations that push or pull data at specified times (or frequently throughout the day, just like a CDX job).
 - **Pause offline synchronization** – As a retail organization expands, it should take advantage of this offline profile feature as fully as possible. Growth is good, but data generation should be managed to help minimize the performance impact on the currently operating business. This feature enables the creation of channels, registers, and databases, but without requiring a massive, performance-affecting amount of data generation long before the registers are ever used.
-- **Advanced offline** – The previously described advanced offline features can be helpful, but they should be used only if they suit the priorities and values of the retail organization. Although the advanced offline health check interval can help maximize online time, it will also be more forceful about pushing a register to offline mode if Commerce headquarters or the Commerce Scale Unit becomes unresponsive or unavailable for any reason. It can be valuable to maximize the performance of registers by quickly switching to offline mode instead of waiting for time-outs or repeated retry responses. However, this approach must be understood and managed against the standard seamless offline model that tries to stay online as long as possible, to allow for operations such as loyalty operations, additional payment methods, and customer orders. 
+- **Advanced offline** – The previously described advanced offline features can be helpful, but they should be used only if they suit the priorities and values of the retail organization. Although the advanced offline health check interval can help maximize online time, it will also be more forceful about pushing a register to offline mode if Commerce headquarters or the Commerce Scale Unit becomes unresponsive or unavailable for any reason. It can be valuable to maximize the performance of registers by quickly switching to offline mode instead of waiting for time-outs or repeated retry responses. However, this approach must be understood and managed against the standard seamless offline model that tries to stay online as long as possible, to allow for operations such as loyalty operations, additional payment methods, and customer orders.
 - **Offline data exclusion** – In general, a small data set is typically faster than a large data set. It can be valuable to exclude data that isn't relevant to the functionality of the offline database when you want to reduce the overall database size (for example, SQL Express allows for databases of only 10 gigabytes \[GB\]), and also when you want to minimize the amount of data that the POS terminal queries as part of general operations while it's in offline mode.
 
     This feature varies widely, depending on the business requirements of the retail organization. Therefore, it's crucial that you know what data is required for customizations to work, or even what data is required for standard day-to-day operations. For example, if a customer doesn't have to be attached to a transaction, customers can be excluded from the offline databases. <!--How about **Loyalty information** or **Modes of delivery**? **OPEN QUESTIONS ON TABLES TO EXCLUDE!!!!!!!**-->
@@ -117,13 +117,12 @@ This section describes configurations that you should consider when you begin to
 
 ## Resources
 
-- [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md) 
-- [Commerce Data Exchange best practices](CDX-Best-Practices.md) 
-- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md) 
-- [Select an in-store topology](retail-in-store-topology.md) 
-- [Device management implementation guidance](../implementation-considerations-devices.md) 
-- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) 
-- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md) 
-
+- [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
+- [Commerce Data Exchange best practices](CDX-Best-Practices.md)
+- [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
+- [Select an in-store topology](retail-in-store-topology.md)
+- [Device management implementation guidance](../implementation-considerations-devices.md)
+- [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
+- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
