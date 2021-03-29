@@ -208,10 +208,8 @@ Beginning August 1, 2020, new projects for Finance and Operations will be onboar
 - East US
 - West US
 - Central US
-
-> [!IMPORTANT]
-> Central US is no longer being provided as an option for Self Service migrations beginning April 1st 2021.
-
+ > [!IMPORTANT]
+ > Central US is no longer being provided as an option for Self Service migrations beginning April 1st 2021.
 -	East US2
 -	West US2
 -	West Central US
