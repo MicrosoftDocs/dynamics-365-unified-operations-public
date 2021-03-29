@@ -59,7 +59,7 @@ To set up warehouse parameters for wave processing, follow these steps:
 
 > [!NOTE]
 > On the wave template that is used to process the wave, you can specify the settings that automate wave processing. If you set up a schedule for the batch job, you should coordinate the timing with the settings for automation in the wave template. For more information, see [Create a wave template](wave-templates.md).
-
+>
 > If you are using *Transportation management* and *Advanced warehouse management*, you can specify whether to consolidate loads when you process a wave. For example, this is useful when several small loads can be shipped at the same time. To consolidate loads when you process a wave, on the **Loads** tab, select the **Consolidate loads during wave processing** check box.</P>
 
 ## Set up full or partial reservation for production waves
