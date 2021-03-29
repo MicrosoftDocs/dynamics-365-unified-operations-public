@@ -61,6 +61,7 @@ In the example in the following illustration, a buy box on a PDP hosts product i
 | Zoom image quality | This property defines the image quality for the zoomed-in images. It can be set to 100% to ensure the zoomed image always uses the highest resolution possible. This is not applicable to PNGs as they are loseless format. This capability is available in Commerce 10.0.19 release |
 | Images | Images that are selected from site builder Media Library | In addition to being rendered from a product, images can be curated for a media gallery module. These images will be appended to any product images that are available. This capability is available in Commerce version 10.0.12. |
 | Thumbnail orientation | **Vertical** or **Horizontal** | This property specifies whether thumbnail images should be shown in a vertical strip or a horizontal strip. |
+|Hide master product images for variant| True or False| If true, when a variant is selected,  images of the master product are hidden unless the variant has no images. For products with no variants, there is no impact with this setting |
 
 The following illustration shows an example of a media gallery module where the full-screen and zoom options are available.
 
