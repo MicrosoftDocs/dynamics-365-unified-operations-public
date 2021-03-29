@@ -159,7 +159,7 @@ Next, you will add a new data source to specify how business users will specify 
 1.	On the **Mapping** tab, select **Add**.
 2.	Select **Format enumeration\Lookup**.
 
-    You just identified that each rule that business users specify for taxation level recognition will return a value of an ER format enumeration. Notice that the **Lookup** data source type can be accessed under the **Data model** and **Dynamics 365 for Operations** blocks in addition to the **Format enumeration** block. Therefore, ER data model enumerations and application enumerations can be used to specify the type of values that is are returned for data sources of that type.
+    You just identified that each rule that business users specify for taxation level recognition will return a value of an ER format enumeration. Notice that the **Lookup** data source type can be accessed under the **Data model** and **Dynamics 365 for Operations** blocks in addition to the **Format enumeration** block. Therefore, ER data model enumerations and application enumerations can be used to specify the type of values that is are returned for data sources of that type. To learn more about the **Lookup** data sources, review the [Configure Lookup data sources to use the ER application-specific parameters feature](er-lookup-data-sources.md) article.
     
 3.	In the **Name** field, enter **Selector**.
 4.	In the **Format enumeration** field, select **List of taxation levels**.
@@ -313,6 +313,8 @@ To learn how to use the configured **Format to learn how to lookup LE data** ER 
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Set up the parameters of an ER format per legal entity](er-app-specific-parameters-set-up.md)
+
+[Configure Lookup data sources to use the ER application-specific parameters feature](er-lookup-data-sources.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
