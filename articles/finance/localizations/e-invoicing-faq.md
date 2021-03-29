@@ -43,7 +43,7 @@ Organizations have begun to move away from paper invoices to reduce cost and spe
 
 The world is shifting to paperless document processing and without implementing electronic invoicing, customers may risk compliance issues, unnecessary costs, and lag behind competitors. 
 
-## Doesn't Finance, Supply Chain Management, and Project Operations already include electronic invoicing functionality? What value does it bring to me as a customer? 
+## Doesn't Finance, Supply Chain Management, and Project Operations already include electronic invoicing functionality? What value does this provide to me as a customer? 
 
 Electronic invoicing extends the electronic invoicing capabilities that exist in Finance, Supply Chain Management, and Project Operations. The functionality also simplifies adherence to the newest electronic invoicing standards and provides coherent experiences for different geographies in electronic invoice processing and exchange. Electronic invoicing's capabilities unlock an array of benefits including: 
 
