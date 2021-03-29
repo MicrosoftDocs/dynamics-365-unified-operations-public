@@ -5,7 +5,7 @@ title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 03/10/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -104,6 +104,8 @@ We currently only support the following regions in North America.
 - East US
 - West US
 - Central US
+  > [!NOTE]
+  > Central US is no longer being provided as an option for self-service migrations beginning April 1, 2021.
 
 For more information about region availability, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
 
@@ -121,7 +123,8 @@ Projects that have been onboarded on or after August 1, 2020 are no longer suppo
 
 - With all self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available, so you must add them before your upcoming self-service migrations. For more information about IP addresses, see [For my Microsoft-managed environments, I have external components that have dependencies on an explicit outbound IP safe list. How can I ensure my service is not impacted after the move to self-service deployment?](deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment).
 - If you have any integrations or other dependencies that are latency-driven and have questions regarding how the change in regions will impact that, please contact [Microsoft Support](../lifecycle-services/lcs-support.md).
-- If you are planning to leverage dual-write, virtual entities, or any Finance and Operations add-ins that have dependences on Dataverse, keep in mind that **Dataverse is not supported in Central US**. We recommend that you choose East US or West US for continued functionality for features on self-service. Contact [Microsoft Support](../lifecycle-services/lcs-support.md) if you want to move to East US or West US instead of Central US, as part of your move to self-service.
+- Central US is no longer an option for self-service migrations. If a customer plans to leverage dual-write functionality, virtual entities, or any Finance and Operations apps add-ins that have dependencies on Dataverse, keep in mind that Dataverse is not supported in Central US. There are currently no plans to support Dataverse in Central US in the foreseeable future. For continued functionality of features in a supported region, we will plan to move your environment to East US or West US instead of Central US.
+- If you have a project which has a few environments using self-service capabilities in Central US and others in North Central, South Central or West Central, the rest of the IaaS environments can still be moved to East or West US as part of migrations. For the environments already on Service Fabric and in Central US, please contact Microsoft Support to get them moved to East/West US based on your preference.
 -	Please review all the Azure resources in your current region and assess if they need to be co-located to the new region in preparation for the upcoming changes as part of migrations.
 - If you have questions about data movement related to cross-region migrations, see [The source and target are on different infrastructure (Microsoft-managed vs. self-Service)](../database/database-pitr-prod-sandbox.md#the-source-and-target-are-on-different-infrastructure-microsoft-managed-vs-self-service).
 
