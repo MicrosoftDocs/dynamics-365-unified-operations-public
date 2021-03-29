@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.15
 
 This topic describes how to fix common issues that you might encounter while you work with warehouse reservations in Microsoft Dynamics 365 Supply Chain Management.
 
-For topics related to batch and serial number registrations see also: [Troubleshoot warehouse batch and serial reservation hierarchies](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md).
+For topics that are related to batch and serial number registrations, see [Troubleshoot warehouse batch and serial reservation hierarchies](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md).
 
 ## I receive the following error message: "Reservations cannot be removed because there is work created which relies on the reservations."
 
