@@ -90,7 +90,9 @@ To set up a wave template, follow these steps:
     - **Shipment threshold** - Enter the maximum number of shipments that can be included in a wave.
     - **Line threshold** - Enter the maximum number of lines that can be included in a wave.
 
-1. In the **Default values** field group, select the wave attributes to use as additional criteria for the wave template. Wave attributes are useful for assigning additional criteria, such as a specific customer name, to a wave template. You create these attributes on the **Wave attributes** page. <!-- KFM: Add link to new topic (wave-execution-notifications.md) about the **Wave notification policy** setting. -->
+1. In the **Default values** field group, select the wave attributes to use as additional criteria for the wave template. Wave attributes are useful for assigning additional criteria, such as a specific customer name, to a wave template. You create these attributes on the **Wave attributes** page. 
+
+1. Set **Wave notification policy** to the policy you want to use for generating notifications related to waves that use this template. For an example of a wave notification policy, see [Wave execution notifications](wave-execution-notifications.md).
 
 1. On the **Methods** FastTab, the **Selected methods** pane lists the methods for the selected wave template. The wave methods perform the actions that are created by the template, such creating or distributing work. These actions are also referred to as wave steps. Wave methods are predefined for each type of wave template. You cannot remove the predefined wave methods, however, you can rearrange the order of the methods and add additional methods. For example, if you’re creating a wave template for shipping, you can add methods for replenishment and containerization. Wave containerization can be added to a sequence of wave methods to define the containerization of the lines processed in a wave template. To add an additional method, do the following:
 
