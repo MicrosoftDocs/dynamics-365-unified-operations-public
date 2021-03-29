@@ -36,7 +36,7 @@ This topic provides information that will help you get started with Electronic i
 
 ## Country-specific configuration for Brazilian NF-e (BR) Electronic invoicing feature
 
-Some of the parameters from the **Brazilian NF-e (BR) Electronic invoicing feature** are published with default values. Review the vaules and if necessary, update the values to better reflect your business operation before you deploy the Electronic invoicing feature to the Service environment.
+Some of the parameters from the **Brazilian NF-e (BR) Electronic invoicing feature** are published with default values. Review the values and if necessary, update the values to better reflect your business operation before you deploy the Electronic invoicing feature to the Service environment.
 
 This section complements the **Country-specific configuration for Electronic invoicing feature** section in the topic, [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
@@ -49,7 +49,7 @@ This section complements the **Country-specific configuration for Electronic inv
 7. On the **Actions** tab, in the **Actions** field group, select **(Preview) Call Brazilian SEFAZ service** action.
 8. In the **Parameters** field group, select **URL address** parameter.
 9. In the **Value** field, if necessary, review and update the URL of the web services published by the SEFAZ documentation for your state and then select **Save.**
-10. On the **Applicability rules** tab, in the **Setup of applicability rule** field group, review and update the **State** field criteria as necessary for the same state which the URL of the web services is referred to.
+10. On the **Applicability rules** tab, in the **Setup of applicability rule** field group, review and update the **State** field criteria as necessary for the same state, which the URL of the web services is referred to.
 11. Select **Save** and close the page.
 12. To deploy the Electronic invoicing feature to the Service environment, see [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
