@@ -1,9 +1,9 @@
 --- 
 # required metadata 
  
-title: Example of how to configure wave processing
+title: Configure wave processing example
 description: This topic provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically.
-author: ShylaThompson
+author: Mirzaab
 manager: tfehr 
 ms.date: 03/17/2021
 ms.topic: business-process 
@@ -25,7 +25,7 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Example of how to configure wave processing
+# Configure wave processing example
 
 [!include [banner](../../includes/banner.md)]
 
