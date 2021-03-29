@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.15
 # Configure the production floor execution interface
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Shop floor workers use the production floor execution interface to register their daily work, such as when they start a job, report feedback about jobs, register indirect activities, and report absence. These registrations are the basis for tracking progress and cost on production orders, and for calculating the basis for the workers' pay.
 
@@ -71,6 +69,8 @@ This feature adds a button to the production floor execution interface that enab
 - Feature for locking job card device and job card terminal so that they can be sanitized
 
 ### Asset management functionality for the production floor execution interface
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 This feature adds an asset management tab to the production floor execution interface. Workers can use this tab to select an asset that is connected to a machine resource that is within the selected filter of the job list. For the selected machine asset, the worker can view the state and health of the asset from counter values for up to four selected counters. If you'd like to use this feature, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

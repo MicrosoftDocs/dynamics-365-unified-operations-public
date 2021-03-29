@@ -8,7 +8,6 @@ manager: ezubov
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

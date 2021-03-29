@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Enable change management on existing products
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how you can enable change management for existing products. It also describes cases where your ability to enable change management is limited.
 

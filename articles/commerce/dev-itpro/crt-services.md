@@ -2,13 +2,12 @@
 # required metadata
 
 title: Commerce runtime (CRT) services
-description: This topic describes the Commerce runtime (CRT) services, which are a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality.
+description: This topic describes the Commerce runtime (CRT) services, the libraries that contain the business logic for the commerce channel and pricing functionality.
 author: mugunthanm 
 manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -50,6 +49,7 @@ All CRT customization for business logic can be done in Services, Workflow or Da
 > Detailed information about all CRT classes can be found in the Retail SDK, which is found at RetailSDK\Documents\CommerceRuntimeMessages.chm.
 
 ## Overall flow
+
 The overall flow looks like this:
 
 CRT service request \< \> Zero or more workflow requests \< \> Zero or more data access requests

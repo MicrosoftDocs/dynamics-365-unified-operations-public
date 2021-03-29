@@ -3,12 +3,11 @@
  
 title: Set up permissions for ordering products on behalf of someone else
 description: This topic explains how to grant workers permission to prepare purchase requisitions on behalf of other workers. 
-author: RichardLuan
+author: kamaybac
 manager: tfehr 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -21,7 +20,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

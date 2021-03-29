@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 05/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -171,14 +170,15 @@ Follow these steps to enable licensing for your solution.
     | --metadatadir                 | Use this parameter to specify the metadata directory. You should use the default packages directory.   |
     | --bindir                      | Use this parameter to specify the binaries directory. You should use the default packages directory.   |
     | --sqlserver                   | Use this parameter to specify the Microsoft SQL Server. For one-box environment, use a period (**.**). |
-    | --sqluser                     | Use this parameter to specify the SQL Server user. You should pass in **AOSUser**.                     |
+    | --sqldatabase                 | Use this parameter to specify the SQL Server database. For one-box environments, use **AXDB**.     |
+    | --sqluser                     | Use this parameter to specify the SQL Server user. You should use **axdbadminr**.                  |
     | --sqlpwd                      | Use this parameter to specify the SQL Server password.                                                 |
     | --licensefilename             | Use this parameter to specify the license file that will be loaded.                                    |
 
     Here is an example.
 
     ```Console
-    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
+    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ******** --licensefilename c:\templicense.txt
     ```
 
 4.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -80,8 +79,6 @@ For an example of how to accept a product, see [Review and accept the product be
 ## Release policies
 
 Not all operational companies need the same product data. In general, operational companies that manufacture engineering products require a BOM, whereas operational company that only sell engineering products don't require a BOM. You can use release policies to establish the parameters that are used for the release of products.
-
-For engineering products, the release policy is assigned in the engineering product category, and the field is mandatory. For standard products, the policy is assigned to the shared product, and the field is optional.
 
 For more information about engineering product categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 

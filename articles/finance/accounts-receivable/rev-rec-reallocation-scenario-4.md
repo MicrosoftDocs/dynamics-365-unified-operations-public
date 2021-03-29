@@ -8,7 +8,6 @@ manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -63,14 +62,14 @@ When needed, Human Resources also provides the following types of fixes:
 
 Releases are reviewed, tested, and validated on an internal environment. After builds are signed off, they're then deployed to production.
 
-## Release cadence exceptions in 2020
+## Release cadence exceptions in 2021
 
-To account for holidays, the release schedule for November and December 2020 is as follows:
+To account for holidays, the release schedule for November and December 2021 is as follows:
 
-- November release: November 2 - November 13
-- December release: November 30 - December 11
+- November release: November 1 - November 14
+- December release: November 29 - December 12
  
-The two-week release cadence will resume as usual on January 11, 2021.
+The two-week release cadence will resume as usual on January 10, 2022.
 
 ## Communications
 

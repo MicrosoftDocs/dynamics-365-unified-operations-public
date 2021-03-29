@@ -2,13 +2,12 @@
 # required metadata
 
 title: Commerce runtime (CRT) architecture and configuration
-description: This article provides information about the architecture and configuration of the Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the commerce channel. 
+description: This article provides information about the architecture and configuration of the Commerce Runtime (CRT).
 author: AamirAllaq
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -35,8 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This article provides information about the architecture and configuration of Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the commerce channel. 
 
-Commerce Runtime architecture
------------------------------
+## Commerce Runtime architecture
 
 The following diagram shows the components of the Microsoft Dynamics 365 Commerce Runtime (CRT). 
 
@@ -59,10 +57,7 @@ On top of the services layer is the workflow layer. A workflow is a collection o
 On top of the workflow layer is the application programming interface (API) layer. You can use the API for tasks such as getting information about items, calculating prices, calculating shipping charges, and placing orders. You can extend the API to fit your business processes.
 
 ## Commerce Runtime configuration
+
 Services are enumerated as types in the CRT configuration file. You can add types in the CRT configuration file to control which services are loaded in the CRT. Services are loaded in the order in which they are listed in the configuration file. All the default services are loaded automatically. However, if you add a new service above one of the default services, the new service replaces the default service.
-
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

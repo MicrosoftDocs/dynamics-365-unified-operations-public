@@ -8,7 +8,6 @@ manager: tfehr
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,7 +31,6 @@ ms.dyn365.ops.version: 10.0.17
 # Install and connect the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
 > This topic describes how to configure the new Warehouse Management mobile app. If you're looking for information about how to configure the old warehouse app, see [Install and connect the warehouse app](../../supply-chain/warehousing/install-configure-warehousing-app.md).

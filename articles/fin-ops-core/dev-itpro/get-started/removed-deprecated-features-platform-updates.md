@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -55,8 +54,6 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ## Platform updates for version 10.0.17 of Finance and Operations apps
 
-> [!IMPORTANT]
-> Version 10.0.17 is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ### Visual Studio 2015
 

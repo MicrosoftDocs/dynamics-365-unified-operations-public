@@ -5,10 +5,9 @@ title: Application Connector
 description: This topic provides information about the Application Connector for Microsoft Power Automate and Logic Apps.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/09/2020
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,6 +91,7 @@ This action can be used to get the list of entities for further use in the app t
 *Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Power Automate, Power Apps, or Logic App.
 
 **List items present in the table**
+
 This action can be used to get the list of records from an entity. This action supports cross-company reading of data.
 
 

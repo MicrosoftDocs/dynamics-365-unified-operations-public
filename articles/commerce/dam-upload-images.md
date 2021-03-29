@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +32,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic describes how to upload images in Microsoft Dynamics 365 Commerce site builder.
-
-## Overview
 
 The Commerce site builder Media Library allows you to upload images, either singly or in bulk using folders. You should always upload the version of the image with highest resolution and quality, because the image resizer component will automatically optimize the image for different viewports and their breakpoints.
 
@@ -62,7 +59,8 @@ The default naming convention varies based on the category:
 - Employee images should be named "**/Workers/\{WorkerNumber\}.jpg**"
 - Product images should be named "**/Products/\{ProductNumber\}_000_001.png**"
     - 001 is the sequence of the image and it can be 001, 002, 003, 004 or 005
-- Product variant images should be named "**/Products/\{ProductNumber\}\_\{Size\}\_\{Color\}\_\{Style\}\_000_001.png**"
+- Product variant images should be named "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
+    - For example: 93039 \^ \^ 2 \^ Black \^_000_001.png
 
 ## Upload an image
 

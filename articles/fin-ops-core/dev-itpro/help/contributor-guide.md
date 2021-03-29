@@ -3,7 +3,6 @@ title: Extend, customize, and collaborate on the Help
 description: This topic provides tips and tricks for working with the GitHub repos and Markdown files for Finance and Operations apps.
 author: edupont04
 ms.topic: article
-ms.service: dynamics-ax-platform
 
 # optional metadata
 

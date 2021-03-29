@@ -8,7 +8,6 @@ manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

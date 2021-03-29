@@ -1,6 +1,11 @@
 ﻿{
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/impact-analysis-report.md",
+      "redirect_url": "lcs",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/batch-job-sql-defragmentation.md",
       "redirect_url": "../get-started/removed-deprecated-features-platform-updates#feature-removed-effective-january-28-2021",
       "redirect_document_id": "false"

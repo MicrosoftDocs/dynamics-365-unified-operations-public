@@ -3,13 +3,12 @@
 # required metadata
 
 title: Set up new environments, Azure DevOps, and branches for projects
-description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce implementation projects.
+description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce projects.
 author: andreashofmann1
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 # optional metadata
 
@@ -32,13 +31,13 @@ ms.dyn365.ops.version: Retail 7.3
 
 [!include [banner](../../includes/banner.md)]
 
-Most environments for Microsoft Dynamics 365 Commerce projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more details, see the [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
+Most environments for Microsoft Dynamics 365 Commerce projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more information, see the [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## Development Tier 1 environments
 
 Development environments are called Tier 1 environments. There are three options for hosting a development environment:
 
-+ The Commerce app comes with one Sandbox Tier 1 environment. (For details, see the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).)
++ The Commerce app comes with one Sandbox Tier 1 environment. (For more information, see the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).)
 + A cloud-hosted environment that you run on your own Microsoft Azure subscription. This type of environment is known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services (LCS).
 + A downloaded virtual machine (VM) that you host in a location of your choice.
 
@@ -115,7 +114,7 @@ Here is an explanation of the setup. The numbers in brackets refer to the number
 
 For small projects, it's acceptable to have only two branches (Main = Dev branch). However, developers must be more disciplined, because any code submissions can immediately affect the quality of test builds. 
 
-You can build deployable packages out of multiple branches. In this case, you must have one build definition for each branch that can be built. The initial build definition is automatically created when a build environment is deployed (Main branch). You can make copies of the build for other branches. Note that you must make small additions to incorporate the Commerce code.
+You can build deployable packages out of multiple branches. In this case, you must have one build definition for each branch that can be built. The initial build definition is automatically created when a build environment is deployed (Main branch). You can make copies of the build for other branches. You must make small additions to incorporate the Commerce code.
 
 The following high-level steps are used to set up an environment so that development work can begin. For details about the numbers in brackets, see the previous illustration and the related information.
 
@@ -337,7 +336,7 @@ If you had multiple build branches and environments, just clone the build defini
 
 - Change the version of the Commerce customization in each branch. The version should be different in the Dev, Main, and ProdRel1 branches. Either change the Customization.settings file, or add a new global.props file under the **RetailSdk\\BuildTools** folder. You can use any kind of numbering for the file name. For example, you can number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.
 - For efficiency, shut down build or development environments when they aren't being used.
-- If you're using cloud-hosted Tier 1 development environments (where you have administrative privileges), you can switch from IIS Express to IIS. Using IIS for running all web application is more robust, more performant, and avoids the switching. For details, see [MSDyn365FO. How to switch from IIS Express to IIS on development VM](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/).
+- If you're using cloud-hosted Tier 1 development environments (where you have administrative privileges), you can switch from IIS Express to IIS. Using IIS for running all web application is more robust, more performant, and avoids the switching. For more information, see [MSDyn365FO. How to switch from IIS Express to IIS on development VM](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/).
 - For prototyping purposes, a developer might want to change the Retail SDK on a development VM without using Azure DevOps source control. Always keep the original Retail SDK untouched, and make a copy that you can work in temporarily. In that way, you can take the unchanged Retail SDK into your mirror branch later, if it's required.
 - Currently, a build environment must be on the same platform and binary hotfix version as the target environment.
 

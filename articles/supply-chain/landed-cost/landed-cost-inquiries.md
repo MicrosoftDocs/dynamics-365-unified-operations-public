@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Landed cost inquiries
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 ## Voyage line inquiries
 
