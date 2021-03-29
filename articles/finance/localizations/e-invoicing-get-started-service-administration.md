@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Get started with Electronic invoicing add-in service administration
-description: This topic explains how to get started with the Electronic invoicing add-in.
+title: Get started with Electronic invoicing service administration
+description: This topic explains how to get started with Electronic invoicing.
 author: gionoder
 manager: AnnBe
-ms.date: 03/12/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with Electronic invoicing add-in service administration
+# Get started with Electronic invoicing service administration
 
 [!include [banner](../includes/banner.md)]
 
@@ -63,7 +63,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 12. Select **Install**.
 
 
-## Set up the parameters for RCS integration with the Electronic invoicing add-in
+## Set up the parameters for RCS integration with Electronic invoicing
 
 1. Sign in to your RCS account.
 2. In the **Electronic reporting** workspace, in the **Related links** section, select **Electronic reporting parameters**.
@@ -83,7 +83,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 ## Create Key Vault references
 
 1. Sign in to your RCS account.
-2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing add-in** tile.
+2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
 3. On the **Environment setups** page, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
 4. Select **New** to create a key vault reference.
 5. In the **Name** field, enter the name of the key vault reference. In the **Description** field, enter a description.
@@ -92,8 +92,8 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Create Storage account secret
 
-1. On the **Environment setups** page, on the action Pane, select **Service environment** and then select **Key Vault parameters**.
-2. Select a **Key Vault reference** and then in the **Certificates** section, select **Add**.
+1. On the **Environment setups** page, on the Action Pane, select **Service environment** > **Key Vault parameters**.
+2. Select a **Key Vault reference** and in the **Certificates** section, select **Add**.
 3. In the **Name** field, enter the name of the storage account secret. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
 4. In the **Description** field, enter a description.
 5. In the **Type** field, select **Secret**.
@@ -108,10 +108,10 @@ Before you complete the procedures in this topic, the following prerequisites mu
 5. In the **Type** field, select **Certificate**.
 6. Select **Save**, and then close the page.
 
-## Create a Service environment
+## Create a service environment
 
 1. Sign in to your RCS account.
-2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing add-in** tile.
+2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
 3. On the **Environment setups** page, on the Action Pane, select **Service environment**.
 4. Select **New** to create a new service environment.
 5. In the **Name** field, enter the name of the e-Invoicing environment. In the **Description** field, enter a description.
@@ -145,12 +145,12 @@ Before you complete the procedures in this topic, the following prerequisites mu
 3. In the **Service environment** field, select a service environment.
 4. Select **Save**, and then close the page.
 
-## Set up the Electronic invoicing add-in integration in Finance and Supply Chain Management
+## Set up Electronic invoicing integration in Finance and Supply Chain Management
 
-### Turn on the Electronic invoicing add-in integration feature
+### Turn on the Electronic invoicing integration feature
 
 1. Sign in to your Finance or Supply Chain Management instance.
-2. In the **Feature management** workspace, search for the **Electronic invoicing add-in integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
+2. In the **Feature management** workspace, search for the **Electronic invoicing integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
 3. Select the feature, and then select **Enable now**.
 
 ### Set up the service endpoint URL
@@ -165,7 +165,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
     | North EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
     | West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
-3. In the **Environment** field, enter the name of the Service environment published in Electronic invoicing add-in.
+3. In the **Environment** field, enter the name of the service environment published in Electronic invoicing.
 4. Select **Save**, and then close the page.
 
 ### Enable Flighting keys
