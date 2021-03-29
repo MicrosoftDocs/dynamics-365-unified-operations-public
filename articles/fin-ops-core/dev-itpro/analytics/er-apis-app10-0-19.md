@@ -115,6 +115,6 @@ To learn more about this interface, complete the example in the [Implement a cus
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
-
+    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
