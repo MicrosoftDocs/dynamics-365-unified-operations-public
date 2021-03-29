@@ -143,7 +143,7 @@ When enabling the your Dynamics 365 environment for the distributed hybrid topol
 - Workload configurations including names and physical address of legal entities and facilities that allows displaying your topology on a geographic map.
 - Collected metrics (such as latency and throughput) which are displayed on the map analysis page
 
-Data transferred to and stored in the US data centers will be deleted according to the data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://aka.ms/privacy).
+Data transferred to and stored in the US data centers will be deleted according to the data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ### Limitations for the current release
 
