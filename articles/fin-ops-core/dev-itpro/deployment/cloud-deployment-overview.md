@@ -209,8 +209,8 @@ Beginning August 1, 2020, new projects for Finance and Operations will be onboar
 - West US
 - Central US
 
-### My environments are currently in the regions that will be deprecated. How will this change affect me?
-We will deprecate support for the following regions only for new projects that will be onboarded on or after August 1, 2020:
+> [!IMPORTANT]
+> Central US is no longer being provided as an option for Self Service migrations beginning April 1st 2021.
 
 -	East US2
 -	West US2
