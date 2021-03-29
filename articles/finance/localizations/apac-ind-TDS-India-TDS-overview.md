@@ -2,7 +2,7 @@
 # required metadata
 
 title: Indian Tax Deducted at Source (TDS) overview
-description: This topic provides detailed information about Indian Tax Deducted at Source (TDS). The TTCS documentation covers the functionality of the TDS feature. 
+description: This topic provides detailed information about Indian Tax Deducted at Source (TDS). The TDS documentation covers the functionality of this capability. 
 author: kailiang
 manager: AnnBe
 ms.date: 03/19/2021
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 This topic provides detailed information about Indian Tax Deducted at Source (TDS).
 
-The TTCS documentation covers the functionality of the TDS feature. It also explains how to do the basic setup for TDS, calculate TDS on transactions, complete the TDS settlement process, record TDS certificate numbers, and generate TDS inquiries, TDS statements, and TDS certificates. The documentation includes the following topics:
+The TDS documentation covers the functionality of this capability. It also explains how to do the basic setup for TDS, calculate TDS on transactions, complete the TDS settlement process, record TDS certificate numbers, and generate TDS inquiries, TDS statements, and TDS certificates. The documentation includes the following topics:
 
 - [Basic setup for TDS](apac-ind-TDS-TDS-ledger-accounts-setup.md)
 - [Formula designer and threshold limit functionality used for TDS calculation](apac-ind-TDS-Formula-designer.md)
