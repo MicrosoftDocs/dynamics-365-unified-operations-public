@@ -39,8 +39,9 @@ ms.dyn365.ops.version: 10.0.20
 
 Cloud and edge scale units enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. It's provided by the following add-ins:
 
-- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
-- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management
+- **Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management**
+ (*available by 1st of April* 2021)
+- **Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management** (*available in the future*)
 
 Companies that work with manufacturing and distribution must be able to run key business processes 24/7, without interruption and at scale. Cloud and edge scale units enable companies to run key mission-critical manufacturing and warehouse processes without interruption, even when faced with occasional network connectivity or latency issues.
 
@@ -52,10 +53,8 @@ Scale units extend your central Supply Chain Management hub environment by addin
 
 You can configure your hub environment and  cloud scale units for selected workloads by using the [Scale Unit Manager](https://sum.dynamics.com) portal.
 
-A workload is a defined set of business functionality that can be factored out and delegated to a scale unit. Currently, the preview features two types of workloads:
-
-- Manufacturing execution
-- Warehouse management
+A workload is a defined set of business functionality that can be factored out and delegated to a scale unit.
+The workload for warehouse management has been released, while the manufacturing execution workload is still in preview.
 
 You can assign multiple workloads per scale unit. (Please refer to [limitations](#limitations-that-apply-during-the-preview-period) in your release)
 
@@ -82,20 +81,56 @@ For warehouse management, cloud and edge scale units deliver the following capab
 
 For more information, see the [warehouse scale unit workload details](cloud-edge-workload-warehousing.md).
 
-## How to enable the distributed hybrid topology for Supply Chain Management
+## What to consider before enabling the distributed hybrid topology for Supply Chain Management
 
 By enabling the hybrid distributed topology you transition your supply chain management environment in the cloud to functions as a hub that may be supported by additional environments configured as scale units in the cloud or on the edge.
 
-### Onboarding steps
+### Prerequisites
 
- Before you begin with onboarding your sandbox or production environments we recommend exploring scale units in a development setup (one-box aka. Tier1 environments) to validate processes, customizations and solutions. In this phase data and customizations will be applied to the one-box environments. One environment takes the role of the hub and the other the role of a scale unit. This setup provides the best way to identify and solve issues. This can also be done using the latest early access (PEAP) build. 
+Microsoft is in the process of transitioning all cloud environments of SCM from an IaaS model to Service Fabric hosted topology. The move brings better scalability, eases the service management which results in faster deployment and maintenance operations. The service components migrate into the concept of micro services, and the service hosting model [transitions](/virtualization/windowscontainers/about/containers-vs-vm) from VM model to light weight containerized architecture.
 
-In order to onboard one of your sandbox or production environment to the new topology you can acquire add-ins for one or more cloud scale units and going forward also for edge scale units. The add-ins will grant corresponding projects and environments slots in [LCS](https://lcs.dynamics.com/) for the purpose of deploying the scale units environments.
-For this stage, the scale unit deployment tools for one-box development environments should be used. It allows you to configure hub and scale units in one or two separate one-box environments. The tool is provided as binary release and in source code on GitHub. Please study the project Wiki with a step by step guide that describes how the tool is used.
+Ultimately the same service fabric based containerized service infrastructure will power both cloud and edge instances of the service, be it a hub in the cloud or a scale unit in the cloud or on the edge.
 
-You may also participate in the preview program for to experience incremental enhancements to be release in upcoming releases. Find more information on how to [experience the capabilities in preview](cloud-edge-preview-components.md).
+**To onboard to the hybrid topology supporting scale units your project Tenant must have been transitioned to the Service Fabric hosted model.**
 
+Therefore, new environments will be created in Service Fabric. You might have still older existing environments that still run as IaaS until converted. Please note that your planned hub environment must have been converted to Service Fabric. Until then you can create new environments for hub and scale units, which will suffice the requirements – if the LCS project tenant has already been enabled for Service Fabric.
 
+> [!TIP]
+> Reach out to your Microsoft contact if you need to inquire about the status of your LCS project tenant.
+
+### Onboarding in two stages
+
+Onboarding to the distributed hybrid topology 
+
+#### Stage 1: Evaluate customization in one-box development environments
+
+Before you begin with onboarding your sandbox or production environments we recommend exploring scale units in a development setup (one-box aka. Tier1 environments) to validate processes, customizations and solutions. In this phase data and customizations will be applied to the one-box environments. One environment takes the role of the hub and the other the role of a scale unit. This setup provides the best way to identify and solve issues. This can also be done using the latest early access (PEAP) build.
+
+For Stage 1, the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools) should be used. It allows you to configure hub and scale units in one or two separate one-box environments. The tool is provided as binary release and in source code on GitHub. Please study the project Wiki with a step by step guide that describes how the tool is used.
+
+#### Stage 2: Acquire add-ins and deploy in your sandbox and production environments
+
+In order to onboard one of your sandbox or production environment to the new topology you must acquire add-ins for one or more cloud scale units (and in the future also for edge scale units). The add-ins will grant corresponding projects and environments slots in [LCS](https://lcs.dynamics.com/) for the purpose of deploying the scale units environments.
+
+> [!NOTE]
+> The scale unit add-ins are not coupled to a limited number of users but can be used by any user in the existing subscription, based on the roles the administrator assigns.
+
+Scale units are offered in multiple SKU and pricing options that you can chose to best match the planned monthly transaction volume and performance requirements.
+The entry level SKU is called ‘Basic’, the more performing model is ‘Standard’. Each SKU comes loaded with a certain number of monthly transactions. Additional overage add-ins can be added for each to increase the monthly transaction budget.
+
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Addins for cloud scale units":::
+
+> [!TIP]
+> To identify the best fitting sizing customers shall work with their partner and Microsoft to understand the required monthly transaction size.
+
+The purchase of each scale unit add-ins not only gives you a monthly volume of transactions but also entitlements for a certain number of environment slots in LCS. For each Cloud Scale unit Add-in you are entitled to one new production and one new sandbox slot. In the onboarding process a new LCS projects will be added with these slots. The usage right for the slots is bound to be used as scale units with a cloud hub.
+
+Overage add-ins do not entitle new environments slots.
+
+If you wish to acquire mode sand box environments, you can do so by purchasing additional regular sand box slots, which Microsoft can help you to enable for the hybrid topology as sandbox scale units.
+
+> [!TIP]
+> As part of the early-access program you may also apply for an early preview of incremental enhancements in upcoming releases. Find more information on how to [experience the capabilities in preview](cloud-edge-preview-components.md).
 
 ### Data processing in the distributed hybrid topology using scale units
 
@@ -111,38 +146,34 @@ When enabling the your Dynamics 365 environment for the distributed hybrid topol
 Data transferred to and stored in the US data centers will be deleted according to the data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://aka.ms/privacy).
 
 ### Limitations for the current release
- 
 
+In the current release for scale units certain capabilities are not available yet and will be added in incremental releases over time.
 
-## DELETE -Onboard scale units for your Supply Chain Management environment
+- Management capabilities that help on the movement of workloads are limited. Certain management operations are not supported in a self-service manner and you might need to request support through your partner or Microsoft contact. Examples are certain workload movement between scale units, and temporary ad-hoc movements in disaster scenarios.
+- Metrics and measures that may help on selecting the best application for your scale units.
+
+## Onboard to the distributed hybrid topology for Supply Chain Management
 
 ### Select your LCS project tenant and the detailed preview process
 
-In the public preview, the [Scale Unit Manager portal](https://aka.ms/SCMSUM) shows the list of tenants that your account is part of, and where you're an owner or environment admin for an LCS project.
+After you have planned on how to onboard to the distributed hybrid topology for supply chain management you will use the [Scale Unit Manager portal](https://aka.ms/SCMSUM)  to commence the onboarding. In the portal navigate to the tab "Dynamics 365 Tenants"where you will find the list of tenants that your account is part of, and where you're an owner or environment admin for an LCS project.
 
 If the tenant that you're looking for isn't in this list, go to [LCS](https://lcs.dynamics.com/v2), and make sure that you're either an environment admin or a project owner of the LCS project for that tenant. Note that only Azure Active Directory (Azure AD) accounts from the selected tenant are authorized to complete the sign-up experience.
 
 > [!NOTE]
 > After you apply changes to LCS, it might take up to 30 minutes for the list of tenants to reflect the changes.
 
-For each tenant, the list shows the sign-up status.
+For each tenant, the list shows the onboarding status.
 
-:::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Sign-up option for a tenant":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Sign-up option for a tenant":::
 
-Select the **Click here to sign up** link to sign up your LCS tenant to participate in the preview. You must accept the terms. You must also supply a business email address where Microsoft can send communications that are related the preview sign-up process.
+Select the **Click here to enable environments** link to request onboarding for the LCS tenant. You must accept the terms. You must also supply a business email address where Microsoft may send communications that are related the onboarding process.
 
-:::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Sign-up submission for a tenant":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Sign-up submission for a tenant":::
 
-Microsoft will review your request and inform you about the next steps by sending an email to the address that you supplied on the sign-up form.
+Microsoft will review your request and inform you about the next steps by sending an email to the address that you supplied on the sign-up form. We will be working closely with you to enable scale units in the hybrid topology for your business scenario.
 
-After you've been granted access to the preview program, you will receive two promo codes for your LCS project. You can now use those promo codes to deploy two environments in LCS. The environments must use PEAP release 10.0.15 or later. When you've finished applying the promo codes, notify Microsoft (as instructed), so that we can finish enabling the environments for the preview features. Microsoft will let you know when this configuration step is completed.
-
-You can now start to configure scale units and workloads in your preview environment.
-
-> [!IMPORTANT]
-> When you configure cloud scale units, you can [do all the required steps in the Scale Unit Manager portal](#scale-unit-manager-portal).
-<!-- 
-> If want to use edge scale units with your preview deployment, you must do all scale unit configuration in the user interface on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). You can't use Scale Unit Manager portal if you include an edge scale unit. -->
+After the onboarding is complete you will be able to configure scale units and workloads using the portal.
 
 ### <a name="scale-unit-manager-portal"></a>Manage cloud scale units and workloads by using the Scale Unit Manager portal
 
@@ -150,21 +181,13 @@ Go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM), and sign in by usi
 
 :::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale unit and workload management experience":::
 
-To add one or more scale units that are available in your topology, select **Add scale units**. In the preview, you should see the cloud scale unit that you deployed from one of the promo codes that you received as part of the preview program.
+To add one or more scale units that are available in your subscriptions, select **Add scale units**.
 
-<!--  [!IMPORTANT]
-> In the public preview, the Scale Unit Manager portal shows the cloud scale unit that you received as part of the preview program. Any edge scale unit that you created based on an LBD configuration can't be managed in the Scale Unit Manager portal yet. For configuration details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md) -->
-
-On the **Defined workloads** tab, use the **Create workload** button to add a warehouse management or manufacturing execution workload to one of your scale units. For each workload, you must specify the context of the processes that will be owned by the workload. For warehouse management workloads, the context is a specific warehouse in a specific site and legal entity. For manufacturing execution workloads, the context is a specific site in a legal entity.
+On the **Defined workloads** tab, use the **Create workload** button to add a warehouse management to one of your scale units. If you participate in the preview, you can use the manufacturing execution workload in your preview environments. For each workload, you must specify the context of the processes that will be owned by the workload. For warehouse management workloads, the context is a specific warehouse in a specific site and legal entity. For manufacturing execution workloads, the context is a specific site in a legal entity.
 
 :::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Workload creation":::
 
 > [!IMPORTANT]
-> The Scale Unit Manager portal in the preview doesn't let you remove workloads from scale units or unassign a scale unit from a hub after the assignment is made. If you must remove an assignment, reach out to your contact person for preview program management.
-
-<!-- ### Create an edge scale unit using your custom on-premises hardware appliance
-
-In the public preview, you can create on-premises edge scale units on your custom hardware using the LBD environments. For details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md). -->
-
+> The Scale Unit Manager portal in this release doesn't let you reassign workloads tor a different scale unit or back to the hub once  the assignment is made. If you must remove an assignment, reach out to your contact person at Microsoft. The movement of workloads will be added in an upcoming incremental enhancement.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

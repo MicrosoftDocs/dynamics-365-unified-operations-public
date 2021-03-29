@@ -74,7 +74,7 @@ Some management services will only be hosted in the United States, which corresp
 - Administrator emails used to sign in
 - Environment IDs for hub and scale units
 - Workload configurations
-- Collected metrics (such as latency and throughput) which are displayed on the map analysis page, when this capability lights up in the preview. 
+- Collected metrics (such as latency and throughput) which are displayed on the map analysis page, when this capability lights up in the preview.
 
 Data transferred to and stored in the US data centers will be deleted when your preview environments are shut down.
 
@@ -84,7 +84,7 @@ To sign up for **Stage 2** in the preview, your organization must already have a
 
 To sign up, you must use a user account on the specific tenant. And you must also be a project owner or an environment admin in LCS for an active Dynamics 365 LCS project in that tenant.
 
-Sign up for the preview goes through the same experience that you use to enable the hybrid distributed topology. and When you sign up for the preview, you will select a tenant where above requirements is fulfilled, and go through the sign-up steps. As soon as Microsoft can allocate preview capacity, we will send you an email and invite you to a closer collaboration. We will mandatory engage in a meeting to understand the best way to support you with the preview capabilities.
+The sign up for functionality still in preview goes through the same experience that you use to enable the hybrid distributed topology. In the sign-up process first select a tenant where above requirements is fulfilled, and go through the sign-up steps. As soon as Microsoft can allocate preview capacity, we will send you an email and invite you to a closer collaboration. We will require a meeting with you to understand the best way to support you with the preview capabilities.
 
 :::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Sign-up option for a tenant":::
 
@@ -113,7 +113,8 @@ For more information, see the [manufacturing scale unit workload details](cloud-
 
 ### Preview for edge scale units
 
-Preview participants who have access to a Local Business Data (LBD) on-premises environment can also configure the LBD environment as an edge scale unit. and deploy workloads.
-For details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md).
+Preview participants who have access to a Local Business Data (LBD) on-premises environment will be able to configure an edge scale unit and deploy workloads.
+
+For details, see [Deploy custom edge scale units on custom hardware using LBD deployment](cloud-edge-edge-scale-units-lbd.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
