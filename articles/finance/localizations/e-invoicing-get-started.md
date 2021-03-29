@@ -96,7 +96,7 @@ For the specific steps, see the "Get started" documentation that is available fo
 2. On the **Setups** tab, select **Application setup**.
 3. In the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
 4. In the **Electronic document types** section, select **Add**.
-5. Select and enter a Table name value according to the following table.
+5. Select and enter a **Table name** value according to the following table.
 
     | Feature name                         | Business document | Table name |
     |--------------------------------------|-------------------|------------|
