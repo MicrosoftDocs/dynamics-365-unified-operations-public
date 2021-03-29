@@ -47,7 +47,7 @@ The following illustration shows the main components of an Electronic invoicing 
 
 Because of variations in invoice formats and action flows, the feature setup might vary according to country or region, or according to business requirements.
 
-## Set up the Electronic invoicing eature
+## Set up the Electronic invoicing feature
 
 The setup process must be completed in your RCS environment. Follow these steps to create a new Electronic invoicing feature.
 
