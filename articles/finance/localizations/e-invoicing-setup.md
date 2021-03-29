@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up the Electronic invoicing add-in
-description: This topic explains how to set up the Electronic invoicing add-in in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+title: Set up Electronic invoicing
+description: This topic explains how to set up lectronic invoicing  in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,55 +28,55 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Set up the Electronic invoicing add-in
+# Set up Electronic invoicing
 
 [!include [banner](../includes/banner.md)]
 
 
-Electronic invoicing add-in feature setup is the process of creating the required configuration through the Regulatory Configuration Services (RCS) environment and publishing that configuration to the Electronic invoicing add-in server. The setup lets you create the configurable rules that enable the Electronic invoicing add-in to use a secure protocol over the internet to communicate and exchange data with a third-party entity through web services.
+The Electronic invoicing feature setup is the process of creating the required configuration through the Regulatory Configuration Services (RCS) environment and publishing that configuration to the Electronic invoicing server. The setup lets you create the configurable rules that enable Electronic invoicing to use a secure protocol over the internet to communicate and exchange data with a third-party entity through web services.
 
 The configurability relies on the Electronic reporting (ER) format configuration as a means to build content that is sent and received through digital files. It also relies on the orchestration of communication actions to send requests to and receive responses from third-party web services without requiring that you write code.
 
 ## Overview
 
-"The Electronic invoicing add-in feature" is the generic name for the resource that is configured and published to consume the Electronic invoicing add-in server. The feature setup combines, among other things, the use of ER configuration formats to create configurable export and import files, and the use of actions and actions flows to enable the creation of configurable rules to send requests, import responses, and parse the response contents.
+"The Electronic invoicing feature" is the generic name for the resource that is configured and published to consume the Electronic invoicing server. The feature setup combines, among other things, the use of ER configuration formats to create configurable export and import files, and the use of actions and actions flows to enable the creation of configurable rules to send requests, import responses, and parse the response contents.
 
-The following illustration shows the main components of an Electronic invoicing add-in feature.
+The following illustration shows the main components of an Electronic invoicing feature.
 
-![Electronic invoicing add-in feature overview](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Electronic invoicing feature overview](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 Because of variations in invoice formats and action flows, the feature setup might vary according to country or region, or according to business requirements.
 
-## Set up the Electronic invoicing add-in feature
+## Set up the Electronic invoicing eature
 
-The setup process must be completed in your RCS environment. Follow these steps to create a new Electronic invoicing add-in feature.
+The setup process must be completed in your RCS environment. Follow these steps to create a new Electronic invoicing feature.
 
 1. Sign in to your RCS environment.
-2. In the **Globalization features** workspace, in the **Features** section, select the **Electronic invoicing add-in** tile.
-3. On the **Electronic invoicing add-in features** page, select **Import** to import the ER data model configuration from the Global repository.
-4. Select **Add** to create an Electronic invoicing add-in feature. You can either create the feature from the scratch or derive it from an existing Electronic invoicing add-in feature.
+2. In the **Globalization features** workspace, in the **Features** section, select the **Electronic invoicing** tile.
+3. On the **Electronic invoicing features** page, select **Import** to import the ER data model configuration from the Global repository.
+4. Select **Add** to create an Electronic invoicing feature. You can either create the feature from the scratch or derive it from an existing Electronic invoicing feature.
 
-    ![Adding an Electronic invoicing add-in feature](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Adding an Electronic invoicing feature](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
-> When you create a new Electronic invoicing add-in feature, it has a version number, and its default status is set to **Draft**.
+> When you create a new Electronic invoicing feature, it has a version number, and its default status is set to **Draft**.
 
 ### Configurations
 
-Configurations hold the ER format configurations that are required for transformations and to create the files that will be exchanged during the communication with third-party web services. An Electronic invoicing add-in feature can have as many ER file format configurations as are required, based on the integration technical specification that is provided by the web service provider.
+Configurations hold the ER format configurations that are required for transformations and to create the files that will be exchanged during the communication with third-party web services. An Electronic invoicing feature can have as many ER file format configurations as are required, based on the integration technical specification that is provided by the web service provider.
 
-Follow these steps to add ER formats to the Electronic invoicing add-in feature.
+Follow these steps to add ER formats to the Electronic invoicing feature.
 
-1. On the **Electronic invoicing add-in features** page, on the **Configurations** tab, select **Add** to add ER file format configurations for the Electronic invoicing add-in feature.
+1. On the **Electronic invoicing features** page, on the **Configurations** tab, select **Add** to add ER file format configurations for the Electronic invoicing feature.
 
-    ![Adding Electronic invoicing add-in feature configurations](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Adding Electronic invoicing feature configurations](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
-    > When you create an Electronic invoicing add-in feature from scratch, you must manually add all the ER file format configurations. When you derive an Electronic invoicing add-in feature from an existing feature, the ER file format configurations are automatically created, because they are inherited from the original Electronic invoicing add-in feature.
+    > When you create an Electronic invoicing feature from scratch, you must manually add all the ER file format configurations. When you derive an Electronic invoicing feature from an existing feature, the ER file format configurations are automatically created, because they are inherited from the original Electronic invoicing feature.
 
 2. Select **Edit** to open the **Format designer** page, where you can edit the ER file format configuration.
 
-    ![Editing Electronic invoicing add-in feature configurations](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Editing Electronic invoicing feature configurations](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > While you're editing the format, the status of the configuration version is set to **Draft**.
@@ -87,20 +87,20 @@ Follow these steps to add ER formats to the Electronic invoicing add-in feature.
 
 ### Feature setups
 
-Feature setups encapsulate the rules for communication and security with a third-party web service. An Electronic invoicing add-in feature can have as many feature setups as are required, based on the business rule that you want to accomplish.
+Feature setups encapsulate the rules for communication and security with a third-party web service. An Electronic invoicing feature can have as many feature setups as are required, based on the business rule that you want to accomplish.
 
-Follow these steps to add feature setups to the Electronic invoicing add-in feature.
+Follow these steps to add feature setups to the Electronic invoicing feature.
 
-1. On the **Electronic invoicing add-in features** page, on the **Setups** tab, select **Add** to add feature setups to the Electronic invoicing add-in feature.
+1. On the **Electronic invoicing features** page, on the **Setups** tab, select **Add** to add feature setups to the Electronic invoicing feature.
 
-    ![Adding Electronic invoicing add-in feature setups](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Adding Electronic invoicing feature setups](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
-    > When you create an Electronic invoicing add-in feature from scratch, you must manually add all the feature setups that you require. When you derive an Electronic invoicing add-in feature from an existing feature, all feature setups are automatically created, because they are inherited from the original Electronic invoicing add-in feature.
+    > When you create an Electronic invoicing feature from scratch, you must manually add all the feature setups that you require. When you derive an Electronic invoicing feature from an existing feature, all feature setups are automatically created, because they are inherited from the original Electronic invoicing feature.
 
 2. Select **Edit** to edit the feature version setup.
 
-    ![Editing Electronic invoicing add-in feature setups](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Editing Electronic invoicing feature setups](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Use the **Feature version setup** page to configure actions, applicability rules, and variables.
 
@@ -108,7 +108,7 @@ Follow these steps to add feature setups to the Electronic invoicing add-in feat
 
 ### Actions
 
-Actions are a predefined list of operations that are run in sequential order. This list represents the breakdown of the steps that are required for full execution of the Electronic invoicing add-in feature. The actions can encapsulate, in the same Electronic invoicing add-in feature, communication in both directions: sending a request for a destination, and receiving a response and parsing its contents.
+Actions are a predefined list of operations that are run in sequential order. This list represents the breakdown of the steps that are required for full execution of the Electronic invoicing feature. The actions can encapsulate, in the same Electronic invoicing feature, communication in both directions: sending a request for a destination, and receiving a response and parsing its contents.
 
 Each action contains a predefined list of parameters that are required for the action to accomplish its purpose. Additional parameters might optionally be provided.
 
@@ -259,7 +259,7 @@ The available parameters vary, depending on the action that is selected on the *
 
 ### Applicability rules
 
-Applicability rules let you create logical rules that determine the usage context for the feature setup. Thus, the matching between the context given by the business document that is sent for processing, along with the applicability rule criteria, determine which Electronic invoicing add-in feature is used to process that submission.
+Applicability rules let you create logical rules that determine the usage context for the feature setup. Thus, the matching between the context given by the business document that is sent for processing, along with the applicability rule criteria, determine which Electronic invoicing feature is used to process that submission.
 
 #### Set up applicability rules
 
@@ -294,7 +294,7 @@ The following table describes the fields that are available on the **Applicabili
 
 ### Variables
 
-You can create variables and then use them as the input value for a parameter of a specific action. You can also use them to exchange, between the Electronic invoicing add-in services and the client, information that is the result of execution of a specific action as part of the flow of submissions.
+You can create variables and then use them as the input value for a parameter of a specific action. You can also use them to exchange, between the Electronic invoicing services and the client, information that is the result of execution of a specific action as part of the flow of submissions.
 
 #### Set up variables
 
@@ -322,45 +322,45 @@ The validation checks the consistency of the whole configuration. For example, i
 
 ## Environments
 
-An Electronic invoicing add-in environment must be associated with the Electronic invoicing add-in feature and enabled for it. Electronic invoicing add-in environments must be created and published in advance, through the configuration of Globalization features in your organization's RCS account.
+An Electronic invoicing environment must be associated with the Electronic invoicing feature and enabled for it. Electronic invoicing environments must be created and published in advance, through the configuration of Globalization features in your organization's RCS account.
 
-Follow these steps to enable an Electronic invoicing add-in environment for the Electronic invoicing add-in feature.
+Follow these steps to enable an Electronic invoicing environment for the Electronic invoicing feature.
 
-1. On the **Electronic invoicing add-in features** page, on the **Environments** tab, select **Enable** to add an Electronic invoicing add-in environment.
+1. On the **Electronic invoicing features** page, on the **Environments** tab, select **Enable** to add an Electronic invoicing environment.
 2. In the **Effective from** field, enter the date when the new environment becomes effective.
 
-![Enabling an Electronic invoicing add-in environment](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Enabling an Electronic invoicing environment](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## Organizations
 
-The Electronic invoicing add-in feature can be shared across multiple organizations.
+The Electronic invoicing feature can be shared across multiple organizations.
 
-- On the **Electronic invoicing add-in features** page, on the **Organizations** tab, select **Share with** to add the organization that you want to share the Electronic invoicing add-in feature with.
+- On the **Electronic invoicing features** page, on the **Organizations** tab, select **Share with** to add the organization that you want to share the Electronic invoicing feature with.
 
-To stop sharing the Electronic invoicing add-in feature with the organization, select **Unshare**.
+To stop sharing the Electronic invoicing feature with the organization, select **Unshare**.
 
 ## Versions
 
-Versions help control the lifecycle of the Electronic invoicing add-in feature by managing its status. You can create a new version of an existing Electronic invoicing add-in feature, or, when all configuration for the Electronic invoicing add-in feature is completed, you can change the feature's status to **Complete** and then to **Publish**.
+Versions help control the lifecycle of the Electronic invoicing feature by managing its status. You can create a new version of an existing Electronic invoicing feature, or, when all configuration for the Electronic invoicing feature is completed, you can change the feature's status to **Complete** and then to **Publish**.
 
-### Create a new version of an existing Electronic invoicing add-in feature
+### Create a new version of an existing Electronic invoicing feature
 
-1. On the **Electronic invoicing add-in features** page, in the grid on the left, select the Electronic invoicing add-in feature.
-2. On **Versions** tab, select **New** to add a new version of the Electronic invoicing add-in feature.
+1. On the **Electronic invoicing features** page, in the grid on the left, select the Electronic invoicing feature.
+2. On **Versions** tab, select **New** to add a new version of the Electronic invoicing feature.
 
-### Change the status of the Electronic invoicing add-in feature
+### Change the status of the Electronic invoicing feature
 
-Follow these steps to manage the lifecycle of the Electronic invoicing add-in feature.
+Follow these steps to manage the lifecycle of the Electronic invoicing feature.
 
-1. On the **Electronic invoicing add-in features** page, in the grid on the left, select the Electronic invoicing add-in feature.
+1. On the **Electronic invoicing features** page, in the grid on the left, select the Electronic invoicing feature.
 2. On **Versions** tab, select **Change status**, and then change the status from **Draft** to **Complete**.
-3. You're prompted to confirm that you want to complete the Electronic invoicing add-in feature and all its components. Select **Yes** to confirm the action or **No** to cancel it.
+3. You're prompted to confirm that you want to complete the Electronic invoicing feature and all its components. Select **Yes** to confirm the action or **No** to cancel it.
 
     > [!NOTE]
-    > When you select **Yes**, the status of configuration versions, which are components of the Electronic invoicing add-in feature, is automatically changed from **Draft** to **Completed**.
+    > When you select **Yes**, the status of configuration versions, which are components of the Electronic invoicing feature, is automatically changed from **Draft** to **Completed**.
 
 4. Select **Change status**, and then change the status from **Complete** to **Publish**.
-5. You're prompted to confirm that you want to publish the Electronic invoicing add-in feature and all its components to the Global repository. Select **Yes** to confirm the action or **No** to cancel it.
+5. You're prompted to confirm that you want to publish the Electronic invoicing feature and all its components to the Global repository. Select **Yes** to confirm the action or **No** to cancel it.
 
     > [!NOTE]
     > When you select **Yes**, the status of configuration versions is automatically changed from **Completed** to **Shared**.
