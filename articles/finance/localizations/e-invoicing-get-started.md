@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Get started with the Electronic invoicing add-in
-description: This topic provides information that will help you get started with the Electronic invoicing add-in in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+title: Get started with Electronic invoicing
+description: This topic provides information that will help you get started with Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 02/22/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,30 +28,30 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Get started with the Electronic invoicing add-in
+# Get started with Electronic invoicing
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you get started with the Electronic invoicing add-in. It guides you through the common configuration steps in Regulatory Configuration Services (RCS) and Finance. It also guides you through the steps that you must follow in Finance to submit Business documents through the service, and it explains how to review the processing results.
+This topic provides information that will help you get started with Electronic invoicing. This topic guides you through the common configuration steps in Regulatory Configuration Services (RCS) and Dynamics 365 Finance, and provides the steps you must follow to submit business documents and review the processing results.
 
 ## Prerequisites
 
 Before you complete the procedures in this topic, the following prerequisites must be in place:
 
-- Configured your Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) and your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment. For more information, see [Get started with the Electronic invoicing add-in service administration](e-invoicing-get-started-service-administration.md).
-- Create a configuration provider for your organization. For more information, see [Create configuration provider and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+- Configure your Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), and your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment. For more information, see [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md).
+- Create a configuration provider for your organization. For more information, see [Create a configuration provider and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## Import an Electronic invoicing feature from the Microsoft configuration provider 
 
 1. Sign in to your Regulatory Configuration Service (RCS) account.
-2. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing add-in** tile.
+2. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
 3. Select **Import**, and then select **Synchronize**.
 4. Filter the **Configuration provider** column by the term **Microsoft**.
 5. Select the name of an Electronic invoicing feature from the table at the beginning of this topic, and then select **Import**.
 
 ## Create an Electronic invoicing feature under your organization provider
 
-1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing add-in** tile.
+1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
 2. Select **Add** > **Based on existing feature**, and in the **Name** field, enter the name of the Electronic invoicing feature.
 3. In the **Description** field, enter a description of the feature.
 4. In the **Base feature field**, select the imported Electronic invoicing feature from the Microsoft configuration provider.
@@ -63,12 +63,12 @@ Depending on the country or region, the Electronic invoicing feature might requi
 
 For the specific steps, see the "Get started" documentation that is available for your country or region.
 
-## Import the Model mapping configurations from Electronic reporting module
+## Import the model mapping configurations from Electronic reporting
 
 1. In RCS, select the **Electronic reporting** workspace.
-2. Select **Repositories** from **Microsoft** Configuration providers.
-3. Select **Global** and on action Pane select **Open**.
-4. Import the Model mapping configurations according to the following table given by Feature name:
+2. From the list of **Microsoft** Configuration providers. select **Repositories**.
+3. Select **Global** and on Action Pane, select **Open**.
+4. Import the model mapping configurations according to the following table by feature name.
 
 | Feature name                         | Model mapping configuration |
 |--------------------------------------|-----------------------------|
@@ -94,9 +94,9 @@ For the specific steps, see the "Get started" documentation that is available fo
 
 1. Select the Electronic invoicing feature that you created.
 2. On the **Setups** tab, select **Application setup**.
-3. On the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
+3. In the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
 4. In the **Electronic document types** section, select **Add**.
-5. Select and enter a **Table name** value according to the following table given by Feature name and Business document it supports:
+5. Select and enter a Table name value according to the following table.
 
     | Feature name                         | Business document | Table name |
     |--------------------------------------|-------------------|------------|
@@ -117,7 +117,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
 
-7. For each **Table name** created before, select and enter a **Context** value according to the following table given by Feature name and Business document it supports:
+7. For each table name you create, select and enter a context value according to the following table.
 
     | Feature name                         | Business document | Context |
     |--------------------------------------|-------------------|---------|
@@ -138,7 +138,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
 
-8. For each **Table name** and **Context** entered before, select and enter a **Business document mapping** value according to the following table given by Feature name and Business document it supports:
+8. For each table name and context, select and enter a business document mapping value according to the following table.
 
     | Feature name                         | Business document | Business document mapping |
     |--------------------------------------|-------------------|---------------------------|
@@ -160,7 +160,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
 
 
-## Country-specific configuration of Application setup
+## Country-specific configuration of application setup
 
 Depending on the country or region, the Application setup might require specific configuration. 
 
@@ -174,8 +174,8 @@ For the specific steps, see the "Get started" documentation that is available fo
 4. Select **Deploy**.
 5. Set the **Deploy to connected application** option to **No**.
 6. Set the **Deploy to service environment** option to **Yes**.
-7. In the **Service environment** field, select the Electronic invoicing add-in service environment where you want to deploy the Electronic invoicing feature.
-8. In the **From date** field, select the date when the Electronic invoicing feature must become effective in the Electronic invoicing add-in.
+7. In the **Service environment** field, select the Electronic invoicing service environment where you want to deploy the Electronic invoicing feature.
+8. In the **From date** field, select the date when the Electronic invoicing feature must become effective in Electronic invoicing.
 9. Select **OK**.
 
 ## Deploy the Electronic invoicing feature to Connected application
@@ -242,11 +242,11 @@ For the specific steps, see the "Get started" documentation that is available fo
 
 ## Related topics
 
-- [Electronic invoicing add-in overview](e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing add-in service administration](e-invoicing-get-started-service-administration.md)
-- [Get started with the Electronic invoicing add-in for Brazil](e-invoicing-bra-get-started.md)
-- [Get started with the Electronic invoicing add-in for Mexico](e-invoicing-mex-get-started.md)
-- [Get started with the Electronic invoicing add-in for Italy](e-invoicing-ita-get-started.md)
+- [Electronic invoicing overview](e-invoicing-service-overview.md)
+- [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md)
+- [Get started with Electronic invoicing for Brazil](e-invoicing-bra-get-started.md)
+- [Get started with Electronic invoicing for Mexico](e-invoicing-mex-get-started.md)
+- [Get started with Electronic invoicing for Italy](e-invoicing-ita-get-started.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
 
 
