@@ -301,9 +301,15 @@ To enable quick add on Cart page, follow these steps
 9. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 
+> [!NOTE] 
+> Quick add module is available in the Dynamics 365 Commerce 10.0.17 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+
 ## Additional resources
 
 [Module library overview](../starter-kit-overview.md)
+
+[SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Authoring page overview](../authoring-home-overview.md)
 
