@@ -46,7 +46,7 @@ This section complements the **Country-specific configuration for Electronic inv
 
 Before you complete the procedure in this section, you must:
 
-- Create a digital certificate secret, as described in the **Create digital certificate secret** section in [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md). For testing purposes, the Egyptian tax authority provides specific test digital certificates that must be used only during testing and solution validation phases. For more information, consult the Egyptian tax authority web site using the link provided in the [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+- Create a digital certificate secret, as described in the **Create digital certificate secret** section in [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md). For testing purposes, the Egyptian tax authority provides specific test digital certificates that must be used only during testing and solution validation phases. For more information, consult the Egyptian tax authority website using the link provided in the [Egyptian e-invoicing SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
 
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
 2. On the **Electronic invoicing Features** page, verify that the **Egyptian electronic invoice (EG)** Electronic invoicing feature you created is selected.
