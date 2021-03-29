@@ -938,5 +938,8 @@ You can view and reprint wave labels from the following pages:
 
 For most of these pages, you can find the relevant function by selecting **Wave labels** in the **Related information** group on the **Shipments** tab of the Action Pane.
 
+## Additional resources
+
+- [Reprint and void wave labels](reprint-and-void-wave-labels.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
