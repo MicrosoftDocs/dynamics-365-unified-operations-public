@@ -2,10 +2,10 @@
 # required metadata
 
 title: Issue electronic invoices in Finance and Supply Chain Management
-description: This topic explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through the Electronic invoicing add-in.
+description: This topic explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through Electronic invoicing.
 author: gionoder
 manager: AnnBe
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,16 +32,16 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through the Electronic invoicing add-in.
+This topic explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through Electronic invoicing.
 
 
 ## Feature activation
 
-To issue electronic invoices through the Electronic invoicing add-in, you must activate the Feature in Finance and Supply Chain Management.
+To issue electronic invoices through Electronic invoicing, you must activate the Feature in Finance and Supply Chain Management.
 
 Each feature corresponds to a specific electronic invoicing feature that complies with the electronic invoicing requirements for a country/region.
 
-The following table shows the list of features that the Electronic invoicing add-in may support.
+The following table shows the list of features that Electronic invoicing may support.
 
 | Name                                              | Country/region |
 |---------------------------------------------------|----------------|
@@ -62,19 +62,19 @@ The following table shows the list of features that the Electronic invoicing add
 |Norwegian electronic invoice                       |Norway          |
 |Spanish electronic invoice                         |Spain           |
 
-When there is a legacy Electronic invoicing feature that is supported in a country/region's localizations scope, activating one of these features turns off the legacy feature and enables electronic invoices to be issued through the Electronic invoicing add-in.
+When there is a legacy Electronic invoicing feature that is supported in a country/region's localizations scope, activating one of these features turns off the legacy feature and enables electronic invoices to be issued through Electronic invoicing.
 
 > [!IMPORTANT]
-> After the Electronic invoicing add-in integration feature is enabled, the new Electronic invoicing experience is turned off by default. You can use the feature concept to selectively enable new experiences for legal entities using country/region-specific functionality. The **Global** option controls the new experience for the remaining county/regions that aren't specifically listed in the table.
+> After the Electronic invoicing integration feature is enabled, the new Electronic invoicing experience is turned off by default. You can use the feature concept to selectively enable new experiences for legal entities using country/region-specific functionality. The **Global** option controls the new experience for the remaining county/regions that aren't specifically listed in the table.
 
 ## Submit electronic documents
 
-The process of submitting electronic documents represents the single point of communication between Finance and Supply Chain Management and the Electronic invoicing add-in. During each submission event, the communication flows in both directions:
+The process of submitting electronic documents represents the single point of communication between Finance and Supply Chain Management and Electronic invoicing. During each submission event, the communication flows in both directions:
 
-- **From Finance and Supply Chain Management to the Electronic invoicing add-in** – Finance and Supply Chain Management send the abstract invoices to the Electronic invoicing add-in. As required, they also send the contents of variables that were configured as part of the electronic invoicing features.
-- **From the Electronic invoicing add-in to Finance and Supply Chain Management** – Depending on the electronic invoicing feature, Finance and Supply Chain Management receive updates from the Electronic invoicing add-in about the processing results of invoices that were previously submitted. They also receive the contents of variables that were configured as part of the electronic invoicing features.
+- **From Finance and Supply Chain Management to the Electronic invoicing** – Finance and Supply Chain Management send the abstract invoices to Electronic invoicing. As required, they also send the contents of variables that were configured as part of the electronic invoicing features.
+- **From the Electronic invoicing to Finance and Supply Chain Management** – Depending on the electronic invoicing feature, Finance and Supply Chain Management receive updates from Electronic invoicing about the processing results of invoices that were previously submitted. They also receive the contents of variables that were configured as part of the electronic invoicing features.
 
-To submit electronic documents to the Electronic invoicing add-in, in Finance and Supply Chain Management, go to **Organization administration &gt; Periodic &gt; Electronic documents &gt; Submit electronic documents**.
+To submit electronic documents to Electronic invoicing, in Finance and Supply Chain Management, go to **Organization administration &gt; Periodic &gt; Electronic documents &gt; Submit electronic documents**.
 
 The starting point is a posted invoice. This invoice can come from different origins, such as sales orders, project invoices, or free text invoices.
 
@@ -85,25 +85,25 @@ The submission process can be run manually or in the background.
 
 ## View the submission logs
 
-In Finance and Supply Chain Management, you can use the submission logs to view the results of processing the submission to the Electronic invoicing add-in. Go to **Organization administration &gt; Periodic &gt; Electronic documents &gt; Electronic document submission**, and then, in the **Document type** field, select a value to filter the type of invoices that the logs show.
+In Finance and Supply Chain Management, you can use the submission logs to view the results of processing the submission to Electronic invoicing. Go to **Organization administration &gt; Periodic &gt; Electronic documents &gt; Electronic document submission**, and then, in the **Document type** field, select a value to filter the type of invoices that the logs show.
 
 There are three possible submission statuses:
 
-- **Scheduled** – The Electronic invoicing add-in received the submission from Finance and Supply Chain Management, and processing of the electronic invoicing feature is in progress.
-- **Completed** – The Electronic invoicing add-in successfully processed the electronic invoicing feature as it was configured to run it.
-- **Failed** – The Electronic invoicing add-in encountered an error or was stopped by an exception during processing of the electronic invoicing feature.
+- **Scheduled** – Electronic invoicing received the submission from Finance and Supply Chain Management, and processing of the electronic invoicing feature is in progress.
+- **Completed** – Electronic invoicing successfully processed the electronic invoicing feature as it was configured to run it.
+- **Failed** – Electronic invoicing encountered an error or was stopped by an exception during processing of the electronic invoicing feature.
 
 > [!IMPORTANT]
-> The submission status refers to the status of the processing that the Electronic invoicing add-in does on the electronic invoicing feature. It doesn't refer to the final status of the electronic invoice itself.
+> The submission status refers to the status of the processing that Electronic invoicing does on the electronic invoicing feature. It doesn't refer to the final status of the electronic invoice itself.
 >
-> For example, if an electronic invoice must be submitted to an external web service for approval, the submission status might be **Completed**, but the status of the electronic invoice might be **Rejected**. In this case, the Electronic invoicing add-in was able to successfully process the electronic invoicing feature as it's configured to process that feature. However, the electronic invoice was rejected because it didn't meet the criteria that the web service established for invoice approval.
+> For example, if an electronic invoice must be submitted to an external web service for approval, the submission status might be **Completed**, but the status of the electronic invoice might be **Rejected**. In this case, Electronic invoicing was able to successfully process the electronic invoicing feature as it's configured to process that feature. However, the electronic invoice was rejected because it didn't meet the criteria that the web service established for invoice approval.
 
 The submission logs include the following additional functions:
 
 - **Submission details** – View the details of the main submission. The visualization shows the complete execution log of the actions that are configured in the electronic invoicing feature. It also lets users download the files that are created during the processing. In scenarios where the invoice must be approved by an external web service, it lets users view the status of the invoice.
 - **Related submissions** – View the details of child submissions.
-- **Cancel submissions** – This function enables a special submission process in scenarios where the electronic invoice must be approved by an external web service. It instructs the Electronic invoicing add-in to send the web service a specific message that is intended to cancel the status of an approved electronic invoice in the web service database.
-- **Resubmit document** – Resubmit an electronic document that has already been submitted to the Electronic invoicing add-in. A whole new log is created on the **Submission details** page.
+- **Cancel submissions** – This function enables a special submission process in scenarios where the electronic invoice must be approved by an external web service. It instructs Electronic invoicing to send the web service a specific message that is intended to cancel the status of an approved electronic invoice in the web service database.
+- **Resubmit document** – Resubmit an electronic document that has already been submitted to Electronic invoicing. A whole new log is created on the **Submission details** page.
 - **Send related submission**
 
 
