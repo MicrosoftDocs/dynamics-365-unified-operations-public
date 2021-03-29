@@ -36,11 +36,11 @@ Use the **Financial dimension sets** page to create and manage financial dimensi
 
 A dimension set is an ordered list of financial dimensions that can be used to summarize general ledger data in a user-defined way. The dimension set that contains only the main account is the only standard dimension set.
 
-A primary purpose of a dimension set is to define a trial balance.
+A primary use of a dimension set is to define a trial balance.
 
 ## Dimension set balances
 
-The balances of a dimension set contain general ledger data that is summarized based on the financial dimensions of the dimension set. The balances exist and are summarized to improve performance related to retrieving  balances from general ledger data.
+A dimension set can have balances that are based on the financial dimensions of the dimension set. The balances exist and are summarized from the general ledger data to improve performance related to retrieving the balances.
 
 ## Create balances
 
@@ -67,50 +67,8 @@ Use **Rebuild balances** to recreate the balances from scratch, ensuring they ma
 
 Use **Clear balances** to remove the balances and stop any further updates. The dimension set will no longer have an impact on general ledger posting activities.
 
-## Derived dimensions
-
-You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
-
-You can set up derived values on the dimensions page.
-
-1. Select a dimension and then select **Derived dimensions**.
-
-    The **Derived dimensions** page includes a grid. The selected dimension segment is the first column in this grid.
-
-2. Add the segments that should be derived. Each segment appears as a column.
-
-Enter the dimension combinations that should be derived from the dimension in the first column. For example, to use the cost center as the dimension that the department and location are derived from, enter cost center 10, department 20, and location 30. Then, when you enter cost center 10 in a master record or on a transaction page, department 20 and location 30 are entered by default.
-
-### Overriding existing values with derived dimensions
- 
-By default, the derived dimension process doesn't override existing values for derived dimensions. For example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if you change the cost center, the values that have already been established aren't changed. Therefore, you can establish default dimensions on master records, and those dimensions won't be changed by derived dimensions.
-
-You can change the behavior of derived dimensions to override existing values by selecting the **Replace existing dimension values with derived values** check box on the **Derived dimensions** page. If this field is selected, you can enter a dimension with derived dimension values and those derived dimension values will override any values that already exist. Using the previous example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if the values were already department 50 and location 60, the values will now be changed to department 20 and location 30.
- 
-Derived dimensions with this setting do not automatically replace the existing default dimensions values when dimension values are defaulted. Dimension values will only be overridden when you enter a new dimension value on a page and there are existing derived values for that dimension on the page.
-
-### Preventing changes with derived dimensions
- 
-When you use **Add segment"** on the **Derived dimensions page** to add a segment as a derived dimension, an option is provided at the bottom of the **Add segment** page that allows you to prevent changes to that dimension when it is derived on a page. The default setting is off so it does not prevent the derived dimension values from being changed. Change the setting to **Yes** if you want prevent the dimension from being changed after it has been derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value cannot be changed if the **Prevent changes** setting is **Yes**. 
- 
-The setting does not prevent changes if the dimension value is valid but it is not listed in the derived dimensions list. For example, if Department 20 is derived from Cost center 10 and you enter Cost center 10, then you will not be able to edit Department 20. However, if you enter Cost center 20 and it is not in the list of derived dimensions for Cost center, then you can edit the Department value. 
- 
-In all cases, the account value and all dimensions values will still be validated against the account structures after the derived dimensions values have been applied. If you use derived dimensions and they fail validation when used on a page, you must change the derived dimensions values on the derived dimensions page before you can use them in transactions. 
- 
-When you change dimensions on the **Financials dimensions** FastTab, the dimension that is marked to prevent changes will not be editable. If you are entering an account and dimensions into the segmented entry control on a page, the dimensions are editable. However, when you move the highlight off the segmented entry control and move to another field or take an action, the account and dimensions will be validated against the derived dimensions list and the account structures to ensure that you have entered the appropriate values. 
-
-### Derived dimensions and entities
-
-You can set up the derived dimensions segments and values by using entities.
-
-- The Derived dimensions entity sets up the driving dimensions and the segments that are used for those dimensions.
-- The Derived dimensions value entity lets you import the values that should be derived for each driving dimension.
-
-When you use an entity to import data, if that entity imports dimensions, the derived dimension rules are applied during the import unless the entity specifically overrides those dimensions.
-
 For more information, see the following topics:
 
 - [Financial dimensions](tasks/financial-dimensions.md)
-- [Maintain financial dimension default templates](tasks/maintain-financial-dimension-default-templates.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
