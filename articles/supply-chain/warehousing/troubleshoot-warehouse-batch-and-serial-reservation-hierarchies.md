@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot warehouse batch and serial reservation hierarchies
-description: This topic describes how to fix common issues that you might encounter while reservation hierarchies that use batch or serial dimensions.
+description: This topic describes how to fix common issues that you might encounter while you work with reservation hierarchies that use batch or serial dimensions.
 author: perlynne
 manager: tfehr
 ms.date: 3/12/2021
@@ -31,51 +31,50 @@ ms.search.validFrom: 3/12/2021
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to fix common issues that you might encounter while you work with warehouse reservations that include batch or serial numbers.
+This topic describes how to fix common issues that you might encounter while you work with reservation hierarchies that use batch or serial dimensions.
 
 For more information, see [Flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md).
 
-The reservation hierarchy of an item dictates the requirement of storage dimensions that must be fulfilled in order to assign a location to a demand order. These can be described as dimensions above location, for all the necessary dimensions to fullfil before assigning a location; and dimensions below location that may be allocated after a location has been assigned to the demand order. This is also known as *batch-above* and *batch-below*, or *serial-above* and *serial-below* reservation hierarchies.
+The reservation hierarchy of an item dictates the requirement of storage dimensions that must be fulfilled to assign a location to a demand order. These dimensions can be described as *dimensions above location*, for all the dimensions that must be fulfilled before a location is assigned, and *dimensions below location*, for dimensions that can be allocated after a location has been assigned to the demand order. These reservation hierarchies are also known as *batch-above* and *batch-below* reservation hierarchies, or *serial-above* and *serial-below* reservation hierarchies.
 
-Whenever allocating inventory, there must not be gaps in the dimensions above location in order for the allocating process to succeed. For example, in a *batch-above* reservation hierarchies we expect to have **Site,** **Warehouse,** and **Batch number** dimensions specified in the demand order, missing any of these dimensions will cause the allocation process to fail. In contrast, a *batch-below* or serial-below reservation hierarchy may have a batch or serial number specified in the demand order but it is not a necessary specification for the allocation process.
+Inventory can be successfully allocated only if there are no gaps in the dimensions above location. For example, in a *batch-above* reservation hierarchy, you expect **Site,** **Warehouse,** and **Batch number** dimensions to be specified on the demand order. If any of these dimensions are missing, the allocation process will fail. By contrast, in a *batch-below* or *serial-below* reservation hierarchy, a batch or serial number might be specified on the demand order, but the allocation process doesn't require it.
 
 ## I receive the following error message: "To be assigned to wave, load lines must specify the dimensions above the location. To assign these dimensions, reserve and recreate the load line."
 
 ### Issue description
 
-When you use an item that has a *batch-above* reservation hierarchy, the **Release to warehouse** command on the **Load planning workbench** page for a partial quantity doesn't work. You receive this error message, and no work is created for the partial quantity.
+When you use an item that has a *batch-above* reservation hierarchy, the **Release to warehouse** command on the **Load planning workbench** page doesn't work if you try to release a load for a partial quantity. You receive this error message, and no work is created for the partial quantity.
 
-However, if you use an item that has a "batch below" reservation hierarchy, you can release a load from the **Load planning workbench** page for a partial quantity.
+However, when you use an item that has a *batch-below* reservation hierarchy, you can release a load for a partial quantity from the **Load planning workbench** page.
 
 ### Issue cause
 
 When a dimension is above the **Location** dimension in the reservation hierarchy, it must be specified before the release to the warehouse. Partial quantities can't be released if one or more dimensions above **Location** aren't specified.
 
-## Auto-reservation prompt for Batch number is triggering despite having available inventory.
+## The auto-reservation prompt for a batch number is triggered even though there is available inventory.
 
 ### Issue description
 
-When you use an item that has *batch-above* reservation hierarchy in a warehouse that has not enabled warehouse processes and automatic reservation enabled, even if there is a single batch available for picking, the auto-reservation prompt for batch number is shown.
+When you use an item that has a *batch-above* reservation hierarchy in a warehouse that hasn't enabled warehouse processes and automatic reservation enabled, the auto-reservation prompt for a batch number is shown even if only one batch is available for picking.
 
-However, when you use the same item in a warehouse with warehouse processes enabled the auto-reservation prompt is not shown.
+However, when you use the same item in a warehouse where warehouse processes are enabled, the auto-reservation prompt isn't shown.
 
 ### Issue cause
 
-Defining a reservation hierarchy as *batch-above* or *serial-above* requires for this dimension to always be specified on the demand order. Whenever possible, warehouse processes may be able to complete the information if a single batch or serial is available. However, given that the warehouse is not enabled for warehouse processes, all the above location dimensions must always be specified by the user.
+If a reservation hierarchy is defined as *batch-above* or *serial-above*, the referenced dimension (**Batch number** or **Serial number**) must always be specified on demand orders. Warehouse processes might be able to complete the information if a single batch or serial number is available. However, because the warehouse isn't enabled for warehouse processes, the user must always specify all the dimensions above **Location**.
 
-## Slotting templates with slot criteria: Consider on-hand doesn't consider current on-hand for batch enabled items.
+## Slotting templates that have the Consider on-hand slot criterion don't consider current on-hand inventory for batch-enabled items.
 
 For more information, see [Warehouse slotting](warehouse-slotting.md).
 
 ### Issue description
 
-The slotting template with slot criteria: Consider on-hand doesn't consider current on-hand for *batch-above* items and only consider it if the batch number is specified on the sales order line.
+Slotting templates that have the *Consider on-hand* slot criterion don't consider current on-hand inventory for *batch-above* items. They consider it only if the batch number is specified on the sales order line.
 
-However, when you use *batch-below* items the current on-hand is considered as expected.
+However, when you use *batch-below* items, the current on-hand inventory is considered as expected.
 
 ### Issue cause
 
-The slotting template header may be defined for *Ordered,* *Reserved*, or *Released* demand strategies. For the *Ordered* demand strategy the same reservation hierarchy requirements apply as they would to reservation or releasing to warehouse processes. For items with *batch-above* and *serial-below* reservation hierarchies this means that the batch or serial number must be specified in the demand order (sales or transfer). Alternatively, the *Reserved* demand strategy may be used to select the batch or serial number before generating the warehouse slotting demand.
-
+The slotting template header can be defined for the *Ordered,* *Reserved*, or *Released* demand strategy. For the *Ordered* demand strategy, the same reservation hierarchy requirements apply that apply to reservation or release to warehouse processes. Therefore, for items that have *batch-above* and *serial-below* reservation hierarchies, the batch or serial number must be specified on the demand order (sales or transfer). Alternatively, the *Reserved* demand strategy can be used to select the batch or serial number before the warehouse slotting demand is generated.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
