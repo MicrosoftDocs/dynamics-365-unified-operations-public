@@ -69,22 +69,22 @@ A new inbound load handling feature, *Over receipt of load quantities*, fixes th
 
 For more information, see [Post registered product quantities against purchase orders](inbound-load-handling.md#post-registered-quantities).
 
-## I get the error "The quantity is not valid" when registering inbound orders.
+## When I register inbound orders, I receive the following error message: "The quantity is not valid."
 
 ### Issue description
 
-When **License plate grouping policy** is set to *User defined* on a mobile device menu item used to register inbound orders, I get the error "The quantity is not valid" and I am unable to complete the registration.
+If the **License plate grouping policy** field is set to *User defined* for a mobile device menu item that is used to register inbound orders, you receive an error message ("The quantity is not valid"), and you can't complete the registration.
 
 ### Issue cause
 
-When using *User defined* as a **License plate grouping policy** the system will split the incoming inventory into separate license plates as indicated by the unit sequence group. If batch or serial numbers are used to track the item being received, the quantities of each batch or serial must be specified per license plate registered. If the quantity specified for a license plate is greater than the quantity left to receive for the current dimensions, the above error will be shown.
+When *User defined* is used as a license plate grouping policy, the system splits the incoming inventory into separate license plates, as indicated by the unit sequence group. If batch or serial numbers are used to track the item that is being received, the quantities of each batch or serial must be specified per license plate that is registered. If the quantity that is specified for a license plate exceeds the quantity that must still be received for the current dimensions, you receive the error message.
 
 ### Issue resolution
 
-When registering an item using a mobile device menu item that has **License plate grouping policy** set to *User defined* the system may require you to confirm or input license plate numbers, batch numbers, or serial numbers. For the license plate confirmation screen the system will display the quantity allocated for the current license plate.
+When you register an item by using a mobile device menu item where the **License plate grouping policy** field is set to *User defined*, the system might require that you confirm or enter license plate numbers, batch numbers, or serial numbers.
 
-For batch or serial confirmation screens the system will display the *quantity left to receive* on the current license plate and an input for the quantity to be registered with the current license plate, and batch or serial number. In this case, ensure that the quantity being registered for the license plate is not greater than the *quantity left to receive*.
+On the license plate confirmation page, the system will show the quantity that is allocated for the current license plate. On the batch or serial confirmation pages, the system will show the quantity that must still be received on the current license plate. It will also show an input for the quantity to be registered with the current license plate, and batch or serial number. In this case, make sure that the quantity that is being registered for the license plate doesn't exceed the quantity that must still be received.
 
-Alternatively, if too many license plates are being generated on inbound order registration, the **License plate grouping policy** may be changed to *License plate grouping*, or a new **Unit sequence group** may be assigned to the item, or the **License plate grouping** option in the **Unit sequence group** may be deactivated.
+Alternatively, if too many license plates are being generated on inbound order registration, the value of the **License plate grouping policy** field can be changed to *License plate grouping*, a new unit sequence group can be assigned to the item, or the **License plate grouping** option for the unit sequence group can be inactivated.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
