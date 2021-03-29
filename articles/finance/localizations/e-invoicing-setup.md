@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Electronic invoicing
-description: This topic explains how to set up lectronic invoicing  in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+description: This topic explains how to set up electronic invoicing  in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
 ms.date: 03/29/2021
