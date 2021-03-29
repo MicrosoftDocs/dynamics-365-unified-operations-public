@@ -38,7 +38,7 @@ This topic provides information that will help you get started with Electronic i
 
 ## Country-specific configuration for Egyptian electronic invoice (EG) Electronic invoicing feature
 
-Some of the parameters from the **Egyptian electronic invoice (EG) Electronic invoicing feature** are published with default values. Review teh values and if necessary, update the values to better reflect your business operation before you deploy the Electronic invoicing feature to the Service environment.
+Some of the parameters from the **Egyptian electronic invoice (EG) Electronic invoicing feature** are published with default values. Review the values and if necessary, update the values to better reflect your business operation before you deploy the Electronic invoicing feature to the Service environment.
 
 This section complements the **Country-specific configuration for Electronic invoicing feature** section in the topic [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
