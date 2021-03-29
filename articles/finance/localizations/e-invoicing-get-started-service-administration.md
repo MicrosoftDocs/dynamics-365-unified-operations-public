@@ -77,7 +77,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
     | West EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
 4. Verify that the **Application Id** field is set to **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
-5. In the **LCS Environment Id** field, enter the Id of your LCS environment.
+5. In the **LCS Environment Id** field, enter the ID of your LCS environment.
 6. Select **Save**, and then close the page.
 
 ## Create Key Vault references
