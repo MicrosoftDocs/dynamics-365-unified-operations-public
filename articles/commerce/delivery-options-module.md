@@ -56,6 +56,7 @@ The following illustration shows an example of a delivery options module on a ch
 | Heading | Heading text and a heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | An optional heading for the delivery options module. |
 | Custom CSS class name | Text | A custom Cascading Style Sheets (CSS) class name that will be used to render this module, if applicable. |
 | Filter Delivery Mode Option | **Do not filter** or **Non-shipping modes** | A value that specifies whether the delivery options module should filter out all non-shipping delivery modes. |
+|Auto select delivery options| This settings applies the first availble delivery options to checkout without requiring a user to select. It should be used only if there is one available delivery option. This setting is supported in Dynamics 365 Commerce 10.0.19 release|
 
 ## Add a delivery options module to a checkout page and set the required properties
 
