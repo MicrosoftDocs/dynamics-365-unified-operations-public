@@ -36,7 +36,7 @@ This topic covers settings that can be leveraged to display a product unit of me
 A product can be sold in different units such as each, dozen, pair, lbs etc. In Dynamics 365 Commerce headquarters the Sell by unit of measure can be defined for a product. This unit of measure of can be displayed in e-commerce using this site setting. For instance if a retailer is selling products as each and in dozens they may want to indicate this along with other the product information.
 
 The following image shows an example of a product configured with a Sell Unit of Measure of "ea" (each) in Dynamics 365 Commerce Headquarters.
-![Example of a product configured in Dynamics 365 Commerce with unit of measure](./media/ProductUnit-headquarters.png)
+![Example of a product configured in Dynamics 365 Commerce with unit of measure](./media/Productunit-headquarters.PNG)
 
 > [!NOTE]
 > Support for displaying unit of measure is available in 10.0.19 Dynamics Commerce 365 release.
@@ -57,11 +57,11 @@ In Commerce, unit of measure settings are defined at **Site Settings \> Extensio
 Buy box, wishlist, cart, cart icon, search results container, product collection, checkout and order details modules use the unit of measure settings.
 
 The following image shows an example of a product details page (PDP) that is showing the unit of measure  for a product
-![Example of a PDP module that has unit of measure](./media/pdp-InStock.png)
+![Example of a PDP module that has unit of measure](./media/Productunit-PDP.png)
 
-The following image shows an example of a search results page showing the unit of measure for a product
+The following image shows an example of a product collection showing the unit of measure for a product
 
-![Example of a Search results module that has unit of measure](./media/pdp-outofstock.png)
+![Example of a Product collection module that has unit of measure](./media/Productunit-productcollection.png)
 
 
 ## Additional resources
