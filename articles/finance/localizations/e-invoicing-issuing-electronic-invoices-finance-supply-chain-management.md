@@ -103,7 +103,7 @@ The submission logs include the following additional functions:
 - **Submission details** – View the details of the main submission. The visualization shows the complete execution log of the actions that are configured in the electronic invoicing feature. It also lets users download the files that are created during the processing. In scenarios where the invoice must be approved by an external web service, it lets users view the status of the invoice.
 - **Related submissions** – View the details of child submissions.
 - **Cancel submissions** – This function enables a special submission process in scenarios where the electronic invoice must be approved by an external web service. It instructs Electronic invoicing to send the web service a specific message that is intended to cancel the status of an approved electronic invoice in the web service database.
-- **Resubmit document** – Resubmit an electronic document that has already been submitted to Electronic invoicing. A whole new log is created on the **Submission details** page.
+- **Resubmit document** – Resubmit an electronic document that has already been submitted to Electronic invoicing. A new log is created on the **Submission details** page.
 - **Send related submission**
 
 
