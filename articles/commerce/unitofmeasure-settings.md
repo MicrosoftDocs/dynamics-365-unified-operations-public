@@ -31,11 +31,12 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic covers settings that can be leveraged to display the product unit of measure in Microsoft Dynamics 365 Commerce.
+This topic covers settings that can be leveraged to display a product unit of measure in Microsoft Dynamics 365 Commerce.
 
-A product can be sold in ... 
+A product can be sold in different units such as each, dozen, pair, lbs etc. In Dynamics 365 Commerce headquarters the Sell by unit of measure can be defined for a product. This unit of measure of can be displayed in e-commerce using this site setting. For instance if a retailer is selling products as each and in dozens they may want to indicate this along with other the product information.
 
-
+The following image shows an example of a product configured with a Sell Unit of Measure of "ea" (each) in Dynamics 365 Commerce Headquarters.
+![Example of a product configured in Dynamics 365 Commerce with unit of measure](./media/ProductUnit-headquarters.png)
 
 > [!NOTE]
 > Support for displaying unit of measure is available in 10.0.19 Dynamics Commerce 365 release.
@@ -44,7 +45,9 @@ A product can be sold in ...
 
 In Commerce, unit of measure settings are defined at **Site Settings \> Extensions \> Display unit of measure for products** in site builder.  There are 3 settings supported.
 
-** ** 
+**Do not display** : When this setting is selected, the e-commerce site will not display the unit of measure of the product. This is the default behavior.
+**Display in product buying experience**: With this setting, the unit of measure is displayed in the product details page, cart, checkout, order history and order details experiences.
+**Display in product browsing and product buying experience** : With this setting, the unit of measure is displayed in the product buying experience as stated above and during the product browse expereince. This includes Search results and Product collection modules.
 
 > [!IMPORTANT] 
 > These settings are available in the Dynamics 365 Commerce 10.0.19 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
@@ -65,15 +68,11 @@ The following image shows an example of a search results page showing the unit o
 
 [Module library overview](starter-kit-overview.md)
 
-[Configure inventory buffers and inventory levels](inventory-buffers-levels.md)
-
 [Cart module](add-cart-module.md)
 
 [Buy box module](add-buy-box.md)
 
 [Account management pages and modules](account-management.md)
-
-[Store selector module](store-selector.md)
 
 [SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
 
