@@ -66,7 +66,7 @@ For the specific steps, see the "Get started" documentation that is available fo
 ## Import the model mapping configurations from Electronic reporting
 
 1. In RCS, select the **Electronic reporting** workspace.
-2. From the list of **Microsoft** Configuration providers. select **Repositories**.
+2. From the list of **Microsoft** Configuration providers, select **Repositories**.
 3. Select **Global** and on Action Pane, select **Open**.
 4. Import the model mapping configurations according to the following table by feature name.
 
