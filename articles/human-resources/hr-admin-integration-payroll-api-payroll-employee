@@ -65,8 +65,5 @@ This topic provides an example query for the Payroll employee entity in Dynamics
                 <NavigationProperty Name="mshr_FK_PayrollFixedCompensationPlanEntity_Employee" Type="Collection(mscrm.mshr_payrollfixedcompensationplanentity)" Partner="mshr_FK_Employee_id" />
                 <NavigationProperty Name="mshr_FK_PayrollWorkerPayrollPositionDetailChangesEntity_Worker" Type="Collection(mscrm.mshr_payrollworkerpayrollpositiondetailchangesentity)" Partner="mshr_FK_Worker_id" />
             </EntityType>
-
-
-
 ```
 
