@@ -30,8 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system. A device is only Android-compatible if it can run apps that are written for the Android execution environment.
-However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware. Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it. 
+Because Android is an open-source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system. A device is only Android-compatible if it can run apps that are written for the Android execution environment.
+
+However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware. Microsoft can't take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer's bar code scanning hardware and the Android version that runs on it.
 
 The Warehouse Management mobile app has been tested with a selection of Android powered devices for bar code scanning. These tests only cover a sample of the devices that are available on the market.
 
