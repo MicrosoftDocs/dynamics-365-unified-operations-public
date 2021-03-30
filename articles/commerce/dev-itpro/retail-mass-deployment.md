@@ -5,7 +5,7 @@ title: Mass deployment of legacy self-service components
 description: This topic explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. 
 author: jashanno
 manager: AnnBe
-ms.date: 03/22/2021
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
