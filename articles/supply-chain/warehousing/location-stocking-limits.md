@@ -89,7 +89,7 @@ In this example, you will run a purchase order receiving flow for two lines. How
 
 You will first receive a quantity of *4* of unit *PL* in size *S*, and review the put line locations for the work that is created. You will then receive a quantity of *4* of unit *PL* in size *L*, and review the put line locations for the work that is created.
 
-1. In the warehouse app, sign in by using *24* as the user ID and *1* as the password.
+1. In the Warehouse Management mobile app, sign in by using *24* as the user ID and *1* as the password.
 1. Select **Inbound** \> **Purchase Receive**.
 1. Receive *4* *PL* of item number *D0013* in size *S*.
 1. Review the putaway work that was created. You should see the following result:

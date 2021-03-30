@@ -215,7 +215,7 @@ A production order of 10 pieces is created for product D8100, "Coated Cabinet." 
 
     ![Two sets of work for raw material picking on the Work page](./media/subcontract22_work-page.png)
 
-26. Start the warehouse app to process the warehouse work for operation 10.
+26. Start the Warehouse Management mobile app to process the warehouse work for operation 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -227,13 +227,13 @@ A production order of 10 pieces is created for product D8100, "Coated Cabinet." 
     - In the **From Oper. No.** field, select **10**.
     - In the **To Oper. No.** field, select **10**.
 
-    ![Values set on the General tab](./media/subcontract23_start-dialog.png)
+    ![Values set on the General tab 1](./media/subcontract23_start-dialog.png)
 
 31. Select **OK** to close the **Start** dialog box and return to the **All production orders** page.
 
     Notice that the status of the production order is now **Started**. The materials for operation 10 are consumed by an automatic posting of the picking list journal. Time consumption for operation 10 is accounted for by an automatic posting of a route card journal.
 
-32. Start the warehouse app to process the warehouse work for operation 20.
+32. Start the Warehouse Management mobile app to process the warehouse work for operation 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -245,7 +245,7 @@ A production order of 10 pieces is created for product D8100, "Coated Cabinet." 
     - In the **Quantity** field, enter **10**.
     - Set the **Post picking list now** option to **No**.
 
-    ![Values set on the General tab](./media/subcontract24_general-tab.png)
+    ![Values set on the General tab 2](./media/subcontract24_general-tab.png)
 
 35. Select **OK** to close the **Start** dialog box and return to the **All production orders** page.
 
