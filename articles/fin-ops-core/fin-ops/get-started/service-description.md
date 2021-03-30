@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.18
 Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management are cloud Enterprise Resource Planning (ERP) services for enterprises, built on and for Microsoft Azure. The apps provide organizations with ERP functionality that supports their unique requirements and helps them adjust to constantly changing business environments, without managing infrastructure. Finance and Supply Chain Management bring together a set of ERP, business intelligence, infrastructure, compute, and database services and enable organizations to run industry-specific and operational business processes that are extendable with specific solutions from Independent Software Vendors (ISVs). Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
 
 - [Microsoft AppSource](https://appsource.microsoft.com/partners)
-- [Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
+- [Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544) (This link is wrong. Is there a vanity aka URL to latest?)
 
 The Finance and Supply Chain Management cloud service is comprised of the components illustrated below.
 
@@ -45,7 +45,7 @@ The Finance and Supply Chain Management cloud service is comprised of the compon
 
 The operating model of Finance and Supply Chain Management distinguishes specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service. 
 
-Microsoft maintains the Finance and Supply Chain Management service by deploying, actively monitoring, and servicing the customer’s production tenants.  This includes allocating the required system infrastructure to run the service and proactive communication to customers about the service’s health. 
+Microsoft maintains the Finance and Supply Chain Management service by deploying, actively monitoring, and servicing the customer’s production environments.  This includes allocating the required system infrastructure to run the service and proactive communication to Customers about the service’s health. 
 
 ![Implementation roles and responsibilities](media/implementation-roles-responsibilities.png)
 
@@ -61,23 +61,23 @@ For any of these scenarios, the customer defines, develops, and tests any modifi
 
 ## System configuration
 
-Finance and Supply Chain Management scale with transaction volume and user load. Each customer implementation of Finance and Supply Chain Management produces a unique solution due to the following variables: 
+Finance and Supply Chain Management scales with transaction volume and user load. Each Customer implementation of Finance and Supply Chain Management produces a unique solution comprised of the following: 
 
 -	**Data composition:** A unique set of parameters that control behavior, layout of the organization, structure of master data (such as financial and inventory dimensions), and granularity of transaction tracking. 
 -	**Extension and configuration:** Extension mechanisms of Finance and Supply Chain Management with code extensions, ISV solutions, and unique configurations including workflows, integrations, and report configurations. 
 -	**Usage patterns:** A unique combination of online and batch usage combined with the ability to integrate with upstream and downstream systems for unified data flow and the ability to differentiate based on the information views used by customers in their business processes. 
 
-Microsoft configures and sizes production environments to handle the transaction volumes and user concurrency. Microsoft is responsible for: 
+Microsoft configures production environments sized to handle the transaction volumes and user concurrency. Microsoft is responsible for: 
 
--	Proper allocation of resources of production environments, based on the customer’s profiling information in the LCS Subscription Estimator. 
--	Continually monitoring and diagnosing service availability of production environments. 
+-	Proper allocation of resources of production environments, based on the Customer’s profiling information in the LCS Subscription Estimator; 
+-	Continually monitoring and diagnosing service availability of production environments; and 
 -	Analyzing and troubleshooting system performance issues with Finance and Supply Chain Management. 
 
 To ensure that an implementation is configured for high performance, customers must:
 
--	Provide accurate usage information for the Finance and Supply Chain Management implementation through the LCS Subscription Estimator. 
-- Build and test extensions for performance and scale in a performance sandbox environment. 
--	Test data configurations appropriately for performance, also in a performance sandbox environment. 
+-	Provide accurate usage information for the Finance and Supply Chain Management implementation through the LCS Subscription Estimator 
+- Build and test extensions for performance and scale 
+-	Test data configurations appropriately for performance 
 
 ## Service operations
 
