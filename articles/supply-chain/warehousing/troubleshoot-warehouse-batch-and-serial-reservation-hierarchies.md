@@ -55,7 +55,7 @@ When a dimension is above the **Location** dimension in the reservation hierarch
 
 ### Issue description
 
-When you use an item that has a *batch-above* reservation hierarchy in a warehouse that hasn't enabled warehouse processes and automatic reservation enabled, the auto-reservation prompt for a batch number is shown even if only one batch is available for picking.
+When you use an item that has a *batch-above* reservation hierarchy in a warehouse that hasn't enabled warehouse processes, and automatic reservation is enabled, the auto-reservation prompt for a batch number is shown even if only one batch is available for picking.
 
 However, when you use the same item in a warehouse where warehouse processes are enabled, the auto-reservation prompt isn't shown.
 
