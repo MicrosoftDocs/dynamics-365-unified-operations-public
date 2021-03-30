@@ -66,7 +66,7 @@ For functional consultants, our job-task analysis research showed that everyone 
 | [Course MB-300T03-A: Data migration and preparing for go-live with Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | This course discusses data migration and go-live preparation for Microsoft Dynamics 365 for Finance and Operations. | Instructor-led in person or online training, cost varies by region and partner | 1 day |
 | [Implementation Lifecycle home page](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | These topics describe the programs, tools, and processes available related to the implementation lifecycle of your Microsoft Dynamics 365 for Finance and Operations project. | Documentation | |
 
-## Migration and upgrade(a name="migration"></a>
+## Migration and upgrade<a name="migration"></a>
 
 | Content | Description | Format | Length |
 |---------|-------------|--------|--------|
