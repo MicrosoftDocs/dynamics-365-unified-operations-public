@@ -87,7 +87,7 @@ The main account is revalued on January 31.  The unrealized gain/loss is calcula
 
 | Current balance in transaction currency | Current balance in accounting currency | Exchange rate at revaluation | New accounting currency amount | Unrealized gain/loss    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833.33 EUR (500 x 1.666667)        | 166.67 loss (833.33 – 1000) |
+| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833.33 USD (500 x 1.666667)        | 166.67 loss (833.33 – 1000) |
 
 The following accounting entry will be created.
 
