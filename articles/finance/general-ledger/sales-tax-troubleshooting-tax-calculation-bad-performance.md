@@ -35,19 +35,19 @@ ms.dyn365.ops.version: 10.0.1
 
 ## **Symptom**
 
-- The transaction operation meets bad performance and the most consumer point is tax calculation, e.g. TaxCalculation::calculateTax(), TaxUncommitted::deleteForDocumentLine().
+- The transaction operation meets bad performance and the most consumer point is tax calculation, for example, TaxCalculation::calculateTax(), TaxUncommitted::deleteForDocumentLine().
 
  
 
 ## **Trouble shooting guide**
 
-- **Step 1: Check whether the transaction with a large number of lines (e.g., more than hundreds of lines) in the below scenarios. If yes, delay the tax calculation ([reference](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/enable-delayed-tax-calculation)) can resolve this issue; otherwise, check step 2.**
+- **Step 1: Check whether the transaction with a large number of lines (for example, more than hundreds of lines) in the below scenarios. If yes, delay the tax calculation ([reference](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/enable-delayed-tax-calculation)) can resolve this issue; otherwise, check step 2.**
 
   1. Import transactions from large files.
 
-  2. Multiple session process the same transaction tax calculation at the same time.
+  2. Multiple sessions process the same transaction tax calculation at the same time.
 
-  3. The transaction has multiple lines, and there are views refresh in real-time, e.g., the 'Calculated sales tax amount' in General journal form, the 'Calculated sales tax amount' refresh in real-time when line's fields changed.
+  3. The transaction has multiple lines, and there are views refresh in real-time, for example, the 'Calculated sales tax amount' in General journal form, the 'Calculated sales tax amount' refresh in real-time when line's fields changed.
 
      [![Direct taxes (tab)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
@@ -62,7 +62,7 @@ ms.dyn365.ops.version: 10.0.1
 
      [![Direct taxes (tab)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
 
-  2. TaxUncommitted's methods cost too much time than other methods, e.g., TaxUncommitted::updateTaxUncommitted() cost 43347.42 seconds, but other methods just cost 0.09 second.
+  2. TaxUncommitted's methods cost too much time than other methods, for example, TaxUncommitted::updateTaxUncommitted() cost 43347.42 seconds, but other methods just cost 0.09 seconds.
 
      [![Direct taxes (tab)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
 
