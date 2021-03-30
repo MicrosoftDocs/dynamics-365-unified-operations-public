@@ -1,0 +1,72 @@
+---
+# required metadata
+
+title: Payroll Employee API
+description: This topic provides details and an example query for the Payroll employee entity in Dynamics 365 Human Resources.
+author: jcart
+manager: tfehr
+ms.date: 02/05/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: anbichse
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: jcart
+ms.search.validFrom: 2021-02-05
+ms.dyn365.ops.version: Human Resources
+---
+
+# Properties
+
+
+# Example query for Payroll employee
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+This topic provides an example query for the Payroll employee entity in Dynamics 365 Human Resources.
+
+**Query**
+
+```<EntityType Name="mshr_payrollemployeeentity" BaseType="mscrm.crmbaseentity">
+                <Key>
+                    <PropertyRef Name="mshr_payrollemployeeentityid" />
+                </Key>
+                <Property Name="mshr_personnelnumber" Type="Edm.String" Unicode="false" />
+                <Property Name="mshr_primaryfield" Type="Edm.String" Unicode="false" />
+                <Property Name="mshr_lastname" Type="Edm.String" Unicode="false" />
+                <Property Name="mshr_legalentityid" Type="Edm.String" Unicode="false" />
+                <Property Name="mshr_namevalidfrom" Type="Edm.DateTimeOffset" />
+                <Property Name="mshr_gender" Type="Edm.Int32" />
+                <Property Name="mshr_payrollemployeeentityid" Type="Edm.Guid" />
+                <Property Name="mshr_employmentstartdate" Type="Edm.DateTimeOffset" />
+                <Property Name="mshr_identificationtypeid" Type="Edm.String" Unicode="false" />
+                <Property Name="mshr_employmentenddate" Type="Edm.DateTimeOffset" />
+                <Property Name="_mshr_dataareaid_id_value" Type="Edm.Guid" />
+                <Property Name="mshr_namevalidto" Type="Edm.DateTimeOffset" />
+                <Property Name="mshr_birthdate" Type="Edm.DateTimeOffset" />
+                <Property Name="mshr_identificationnumber" Type="Edm.String" Unicode="false" />
+                <Property Name="mshr_dataareaid" Type="Edm.String" Unicode="false" />
+                <Property Name="mshr_firstname" Type="Edm.String" Unicode="false" />
+                <Property Name="mshr_middlename" Type="Edm.String" Unicode="false" />
+                <NavigationProperty Name="mshr_dataAreaId_id" Type="mscrm.cdm_company" Nullable="false" Partner="mshr_PayrollEmployeeEntity_dataAreaId_rel">
+                    <ReferentialConstraint Property="_mshr_dataareaid_id_value" ReferencedProperty="cdm_companyid" />
+                </NavigationProperty>
+                <NavigationProperty Name="mshr_FK_PayrollWorkerPayrollPositionDetailEntity_Worker" Type="Collection(mscrm.mshr_payrollworkerpayrollpositiondetailentity)" Partner="mshr_FK_Worker_id" />
+                <NavigationProperty Name="mshr_FK_PayrollFixedCompensationPlanEntity_Employee" Type="Collection(mscrm.mshr_payrollfixedcompensationplanentity)" Partner="mshr_FK_Employee_id" />
+                <NavigationProperty Name="mshr_FK_PayrollWorkerPayrollPositionDetailChangesEntity_Worker" Type="Collection(mscrm.mshr_payrollworkerpayrollpositiondetailchangesentity)" Partner="mshr_FK_Worker_id" />
+            </EntityType>
+
+
+
+```
+
