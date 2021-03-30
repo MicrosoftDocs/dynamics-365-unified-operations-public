@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# SPED-Reinf setup**
+# SPED-Reinf set up
 
 This section describes the configuration that is required.
 
