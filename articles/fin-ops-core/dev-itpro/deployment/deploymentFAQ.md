@@ -161,8 +161,8 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | India South | 20.40.5.0/26
 | India Cental | 20.193.248.192/26
 
-## What does the downtime look like for Self service migrations?
-Self Service migration for any environment takes 3 hours of 100% downtime with a 6 hours of pre-migration window leading up to the actual migration downtime of 3 hrs. The environment will be available with limited servicing capabilities during the 6 hours pre-migration window and will be completely unavailable in the 3 hours window. We reccomend customers do not schedule any servicing activity like package deployment during the pre-migration window since it will interfere with migrations and will trigger a migration cancellation.
+## What does the downtime look like for self-service migrations?
+Self-service migration for any environment takes three hours of 100% downtime, with a six hour pre-migration window leading up to the actual migration downtime of 3 hours. The environment will be available with limited servicing capabilities during the six hour pre-migration window and will be completely unavailable in the three hour migration window. We reccomend that customers do not schedule any servicing activity, like package deployment, during the pre-migration window since it will interfere with migrations and will trigger a migration cancellation.
 
 ## Is there a potential impact on the environment's certificates?
 
