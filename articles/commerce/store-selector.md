@@ -49,9 +49,9 @@ For Store selector to display the available stores, its required that the fulfil
 In addition, for each store in the Fulfillment group, the latitude and longitude of the store location must be defined in headquarters.
 
 The example below shows how latitude and longitude can be defined.
-![Example of a Store details in headquarters](./media/BOPIS.PNG)
+![Example of a Store details in headquarters](./media/Store-address.png)
 
-![Example of a latitude and longitude setup for a store in headquarters](./media/BOPIS.PNG)
+![Example of a latitude and longitude setup for a store in headquarters](./media/Store-latitude-longitude.png)
 
 
 
