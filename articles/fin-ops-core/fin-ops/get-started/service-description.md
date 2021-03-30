@@ -93,7 +93,7 @@ Typical onboarding and implementation events and the expected responsibilities f
 |-------------------------|-------------------------|-------------------------|
 | Initial offer purchase | LCS project is created after the purchase of the offer. | Go through EA or CSP onboarding process. Partner creates tenant for customer, if applicable. |
 | Add-on purchase | Grant customer access to add-on selected during the implementation. | Not applicable. |
-| Implementation planning and analysis | Provide relevant tools in LCS, such as Business process modeler and interoperability with Visual Studio Online. |Project planning, Visual Studio Team Services, System onboarding and admin account setup.|
+| Implementation planning and analysis | Provide relevant tools in LCS, such as Business process modeler and interoperability with Azure DevOps. |Project planning, Azure DevOps, System onboarding and admin account setup.|
 
 For more information about the onboarding process, see [Onboard an implementation project](../imp-lifecycle/onboard.md).
 
