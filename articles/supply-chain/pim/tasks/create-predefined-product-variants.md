@@ -104,10 +104,9 @@ To generate product variant suggestions when the *Variant suggestions page impro
 1. Open or create a product master and add the required product dimensions to it, as described in the previous section.
 1. With the product master open, select **Product variants** on the Action Pane.
 1. Select **Variant suggestions** on the Action Pane.
-1. Select the values you want to use for each of the dimensions. You can use multiselect to select any number of values.
-1. Select **Suggest**.
-1. The system generates a list with all possible combinations of the sizes and colors you selected. Select the check box for each product dimension combination that you want to use, or select **Select all** on the toolbar to select all of them.  
-1. Select **Create**.
-1. Select **Save**.
+1. Select the values you want to use for each of the dimensions.
+1. On the top toolbar, select **Suggest**.
+1. The system generates a list with all possible combinations of the sizes and colors you selected. On the **Suggested variants** FastTab, select the check box for each product dimension combination that you want to use, or select **Select all** on the toolbar to select all of them.  
+1. Select **Create** too add the variants to the current product master.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
