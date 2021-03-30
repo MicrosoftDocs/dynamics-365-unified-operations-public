@@ -4,7 +4,6 @@
 title: Set up LinkedIn integration with Attract
 description: This topic explains how to configure LinkedIn integration for Microsoft Dynamics 365 Talent - Attract so that you can easily post jobs to LinkedIn from Attract, and so that your recruiters can sync their recruiting information with a candidate's LinkedIn profile.
 author: andreabichsel
-manager: tfehr
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 

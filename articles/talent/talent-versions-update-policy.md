@@ -4,7 +4,6 @@
 title: Talent system requirements
 description: This topic lists requirements for Dynamics 365 Talent.
 author: andreabichsel
-manager: tfehr
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: 
