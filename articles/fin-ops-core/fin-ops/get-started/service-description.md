@@ -53,7 +53,7 @@ With the support of their implementation partner, customers determine the config
 
 -	**Solution 1:** Standard Finance and Supply Chain Management configuration (no extension) 
 -	**Solution 2:** Finance and Supply Chain Management configuration with customer-specific extensions 
--	**Solution 3:** Finance and Supply Chain Management configuration with customer-specific extensions and one or more ISV solutions  
+-	**Solution 3:** Finance and Supply Chain Management configuration with customer-specific extensions and one or more ISV solution  
 
 For any of these scenarios, the customer defines, develops, and tests any modifications using Microsoft Dynamics Lifecycle Services (LCS) and tools. 
 
