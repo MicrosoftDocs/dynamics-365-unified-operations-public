@@ -151,7 +151,7 @@ This section describes how to prepare your system to use item consolidation and 
 
 ## Example scenario
 
-The following scenario uses the warehouse app on a mobile device to make an inventory *adjustment in* to two locations in the warehouse.
+The following scenario uses the Warehouse Management mobile app to make an inventory *adjustment in* to two locations in the warehouse.
 
 ### Add inventory to locations
 

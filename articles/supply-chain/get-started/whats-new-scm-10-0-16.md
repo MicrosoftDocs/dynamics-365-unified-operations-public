@@ -81,7 +81,7 @@ We have recently added or significantly updated the following help topics. They 
 - [Troubleshoot sales orders](../sales-marketing/troubleshooting-sales.md)
 - [Troubleshoot sales quotations](../sales-marketing/troubleshooting-salesquotation.md)
 - [Troubleshoot upgrade and migration to advanced warehouse management](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Troubleshoot warehouse app connection issues](../warehousing/troubleshoot-warehouse-app-connection.md)
+- [Troubleshoot Warehouse Management mobile app connection issues](../warehousing/troubleshoot-warehouse-app-connection.md)
 - [Troubleshoot warehouse configuration](../warehousing/troubleshoot-warehouse-configuration.md)
 - [Troubleshoot warehouse replenishment](../warehousing/troubleshoot-warehouse-replenishment.md)
 - [Troubleshoot warehouse setup](../warehousing/troubleshoot-warehouse-setup.md)

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the Help experience for Finance and Operations apps
-description: This topic provides information about the components of the Help system for some Microsoft Dynamics 365 apps. It also explains how to connect those apps and provides a summary of the process for creating custom Help. 
+description: This topic provides information about the components of the Help system for some Microsoft Dynamics 365 apps.
 author: margoc
 manager: AnnBe
 ms.date: 05/11/2020

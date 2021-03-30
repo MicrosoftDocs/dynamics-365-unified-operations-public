@@ -234,7 +234,7 @@ This scenario simulates putaway cluster processing.
 
 #### Receive and sort the inventory into a cluster
 
-1. Sign in to the warehouse app as a user who is set up for warehouse *61*.
+1. Sign in to the Warehouse Management mobile app as a user who is set up for warehouse *61*.
 1. On the main menu, select **Inbound**.
 1. On the **Inbound** menu, select **Receive and sort cluster**.
 1. In the **Ponum** field, enter the purchase order number.
@@ -276,7 +276,7 @@ Before the items in the cluster can be put away, the cluster must be closed.
 
 #### Put the cluster away
 
-1. Sign in to the warehouse app as a user who is set up for warehouse *61*.
+1. Sign in to the Warehouse Management mobile app as a user who is set up for warehouse *61*.
 1. On the main menu, select **Inbound**.
 1. On the **Inbound** menu, select **Cluster putaway**.
 1. Select **Cluster ID**, and enter the cluster ID that you entered earlier for the closed cluster.
