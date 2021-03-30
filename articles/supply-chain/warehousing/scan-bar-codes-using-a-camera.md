@@ -34,7 +34,7 @@ This topic explains how to set up the Warehouse Management mobile app to scan ba
 
 ## Setup
 
-In the Display settings of the Warehouse Management mobile app, you can select if the camera should be used for bar code scanning. If you enable **Use the camera as scanner**, you can use the camera on every input field that has the preferred input mode set to **Scanning**.
+In the display settings of the Warehouse Management mobile app, you can select if the camera should be used for bar code scanning. If you enable **Use the camera as scanner**, you can use the camera on every input field that has the preferred input mode set to **Scanning**.
 
 To control whether an input field should be scannable, on the **Warehouse app field names** page, set **Preferred input mode** to **Scanning**. When this option is selected, a camera can be used for scanning in the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 
@@ -44,17 +44,13 @@ The most common bar code formats are supported, including Code 128, Code 39, Cod
 
 ## Navigation
 
-The camera page will be initiated on each page where the input field has the preferred input mode set to Scanning, when you are on the Camera page use the following options to navigate:
+The camera page will be initiated on each page where the input field has its **Preferred input mode** set to *Scanning*, when you are on the camera page use the following options to navigate:
 
-- Click the back button to go back to the Task and details page.
-- Click the pencil on the Task and details page to go to the page where you can type input manually.
-- Click the camera on the Task and details page to go back to the Camera page.
+- Select the back button to go back to the **Task and details** page.
+- Select the pencil on the **Task and details** page to go to the page where you can type input manually.
+- Select the camera on the **Task and details** page to go back to the camera page.
 
-| Task and details page | Camera page |
-| :---------------------: | :--------------------: |
-| ![Camera scanning example task detail page](./media/camera-scanning-example-task-detail-page50.png)          | ![Camera scanning example camera page smaller](./media/camera-scanning-example-camera-page50.png)          |
-
-On the camera page, when you click the Camera button, it will appear dimmed while trying to identify a bar code. If a bar code is not identified within 5 seconds, the process will time out and the Camera button will become available again. You will then be able to try to scan a bar code again.
+On the camera page, when you select the camera button, it will appear dimmed while trying to identify a bar code. If a bar code is not identified within 5 seconds, the process will time out and the camera button will become available again. You will then be able to try to scan a bar code again.
 
 When you aim the camera at a bar code, keep the bar code aligned within the brackets for best result. When a bar code is scanned successfully, the result will be processed, and you will be taken to the next step. If the next step contains another input field with the preferred input mode set to Scanning, the camera page will start again. If the next step is not a scanning field, then the camera page will not be initiated.
 
