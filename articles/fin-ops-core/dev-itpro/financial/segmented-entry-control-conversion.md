@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate Segmented Entry controls
-description: This topic describes migration scenarios for the Segmented Entry control, a simple using SMAServiceOrderTable and a complex scenario using LedgerJournalTransDaily.
+description: This topic describes migration scenarios for the Segmented Entry control.
 author: robinarh
 manager: AnnBe
 ms.date: 11/10/2017

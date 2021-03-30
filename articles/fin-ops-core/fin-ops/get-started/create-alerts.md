@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create alert rules
-description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
+description: This topic provides information about alerts and explains how to create an alert rule.
 author: tjvass
 manager: AnnBe
 ms.date: 10/08/2020
