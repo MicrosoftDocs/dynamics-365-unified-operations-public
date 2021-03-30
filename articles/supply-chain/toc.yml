@@ -2949,6 +2949,8 @@
             href: warehousing/flexible-warehouse-level-dimension-reservation.md
           - name: Troubleshoot reservations in warehouse management
             href: warehousing/troubleshoot-warehouse-reservations.md
+          - name: Troubleshoot warehouse batch and serial reservation hierarchies
+            href: warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md
         - name: Partial release and partial shipment
           items:
           - name: Partial shipment of a transport load
