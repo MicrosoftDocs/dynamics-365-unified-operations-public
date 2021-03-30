@@ -70,7 +70,7 @@ Dynamics 365 is a collection of applications that together provide comprehensive
 
 #### POS
 
-Dynamics 365 Commerce POS simplify the experience for the retailers by providing Omnichannel solutions in emerging channels to perform variety of commerce business operations like cash and carry transactions, cash/shift management, Customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, reporting etc.
+POS simplifies the experience for the retailers by providing Omnichannel solutions in emerging channels. These channels perform a variety of commerce business operations like cash and carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
 #### Modern POS
 
@@ -80,9 +80,7 @@ In addition to standard "cash and carry" transaction processing, Modern POS incl
 
 #### Store Commerce
 
-Store Commerce app is Windows store application which supports similar functionalities as Modern POS wihtout offline.  h is a cross-platform (Windows, iOS, and Android), multi–form factor (desktop, tablet, and phone) solution for all in-store first-line workers, such as cashiers, sales associates, stock clerks, and store managers. It can be deployed as an app that has offline capabilities. Alternatively, it can be deployed in the cloud and accessed through a web browser. The application is role-based and fully configurable from headquarters. It's also highly customizable, and can be extended or integrated into third-party services by using the Retail software development kit (SDK).
-
-In addition to standard "cash and carry" transaction processing, Modern POS includes features for assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, cash/shift management, and reporting. For more information, see [Modern POS (MPOS) architecture](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-modern-pos-architecture) and [Choose between Modern POS (MPOS) and Cloud POS](https://docs.microsoft.com/dynamics365/commerce/mpos-or-cpos).
+The Store Commerce app is a Windows store application which supports similar functionalities as Modern POS wihtout offline. The app is cross-platform (Windows, iOS, and Android) and multi–form factor (desktop, tablet, and phone). It is in-store for first-line workers, such as cashiers, sales associates, stock clerks, and store managers. It can be deployed as an app that has offline capabilities. It can also be deployed in the cloud and accessed through a web browser. The application is role-based and fully configurable from headquarters. It's also highly customizable and can be extended or integrated into third-party services by using the Retail software development kit (SDK).
 
 #### E-commerce storefront
 
