@@ -33,48 +33,48 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of sales tax group selection for different online order types. 
+Your e-commerce channel may want to support options like delivery or pickup for online orders. The sales tax applicability is based on the option selected by your online customers. 
+This topic provides an overview of sales tax group selection for different online order types using destination-based taxes vs customer account-based taxes settings. 
 
-Your e-commerce channel may want to support options like delivery or pickup for online orders. The sales tax applicability is based on the option selected by your online users. When a site customer chooses to buy an item online and gets it shipped to an address, the sales tax is determined based on the customer's shipping address tax group setting. When a customer opts to pick up a purchased item at a store, the sales tax is determined based on the pickup store's tax group setting. 
+## Destination-based taxes for online orders
+In general, taxes for online orders that ship to customer addresses are defined by the destination. Every sales tax group has a retail destination-based tax configuration in which your business can define destination details such as county/region, state, county, and city in a hierarchical form.
+### Orders delivered to customer address
+When an online order is placed, the Commerce tax engine uses the delivery address of every line item in the order and finds sales tax groups with matching destination-based tax criteria. For example, for an online order with a line-item delivery address to San Francisco, California, the tax engine will find the sales tax group and sales tax code for California and then calculate tax for each line item accordingly.
+### Order pickup in store
+For order lines with pickup in store or curbside pickup specified, the tax group from the selected pickup store will be applied. For details about how to set up sales taxes for a given store, see [Set other tax options for stores](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores)
 
-## Orders shipped to a customer address 
+## Customer’s account-based taxes for online orders
+There may be a business scenario where you want to configure a Sales Tax Group on a specific customer account in headquarters.  In Commerce headquarters, there are two places where you can configure sales tax on a customer account as follows:
 
-In general, taxes for online orders that ship to customer addresses are defined by the destination. Every sales tax group has a retail destination-based tax configuration in which your business can define destination details such as county/region, state, county, and city in a hierarchical form. When an online order is placed, the Commerce tax engine uses the delivery address of every line item in the order, and finds sales tax groups with matching destination-based tax criteria. For example, for an online order with a line item delivery address to San Francisco, California, the tax engine will find the sales tax group and sales tax code for California and then calculate tax for each line item accordingly.  
+1.	On **Customer** details page under **Invoice and delivery** tab **Sales Tax group** field. 
+2.	On **Customer** details page, for a specific **Customer Address** > **Advanced** settings, under **General** tab Sales tax group field.
 
-## Customer-based tax groups
 
-In Commerce headquarters, there are two places where customer tax groups are configured:
+[!Tip]
+For online customer orders, if you want to apply only the destination-based taxes and avoid customer account based taxes, ensure that Customer account > Invoice and delivery tab > Sales tax group field is empty.  You should also check **default customer** settings for online channel and **Customer group** settings as well and make sure to leave Sales tax group field as blank. This way **new customers** those sign-up via online channel do not inherit the Sales tax group settings from **default customer** settings or from **Customer group** settings. 
 
-- **Customer's profile**
-- **Customer's shipping address**
+## Destination-based vs customer account-based taxes applicability 
+Below matrix illustrates how a destination-based taxes vs customer account bases taxes are applied for online orders. 
 
-### If a customer's profile has a tax group configured
-
-A customer's profile record in headquarters may have a sales tax group configured, however for online orders the sales tax group configured in a customer's profile will not be used by the tax engine. 
-
-### If a customer's shipping address has a tax group configured
-
-If a customer's shipping address record has a tax group configured and an online order (or line item) is shipped to the customer's shipping address, the tax group configured in the customer's address record will be used by the tax engine for tax calculations.
-
-#### Configure a tax group for a customer's shipping address record
-
-To configure a tax group for a customer's shipping address record in Commerce headquarters, follow these steps.
-
-1. Go to **All customers**, and then select the desired customer. 
-1. On the **Addresses** FastTab, select the desired address, and then select **More options \> Advanced**. 
-1. Under the **General** tab on the **Manage addresses** page, set the sales tax value as needed.
-
-> [!NOTE]
-> The tax group is defined using the delivery address of the order line and the destination-based taxes are configured at the tax group itself. For more information, see [Set up taxes for online stores based on destination](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
-
-## Order pickup in store
-
-For order lines with pickup in store or curbside pickup specified, the tax group from the selected pickup store will be applied. For details about how to configure the tax group for a given store, see [Set other tax options for stores](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
-
-> [!NOTE]
-> When an order line is picked up at a store, a customer's address tax settings (if set up) will be ignored by the tax engine and the pickup store's tax configuration will be applied. 
+|Customer Type	|Shipping Address 	|Customer > Invoice and delivery tab Sales Tax group	|Address on Customer 
+account in HQ	|Customer Address > Advanced > General tab Sales tax group.	|Sales Tax Group applied|
+    |-------------------|--------------------|-------------------------------|------------------|------------------------|--------------------|
+|Guest	|Manhattan, NY	|None	|None	|None	|NY (Destination based taxes)|
+|Signed In	|Austin TX	|None	|Yes	|None
+new address added via online channel.	|TX (Destination based taxes)|
+|Signed In	|San Francisco CA 
+(pickup at store)	|Yes (NY)	|N/A	|N/A	|CA (Destination based taxes)|
+|Signed In	|Houston TX	|Yes (NY)	|Yes	|Yes (NY) 
+new address added via online channel and Sales tax group is inherited from Customer account	|NY (Customer account based)|
+|Signed in	|Austin TX	|Yes (NY)	|Yes	|Yes (NY) 
+new address added via online channel and Sales tax group is inherited from Customer account	|NY (Customer account based)|
+|Signed In	|Sarasota, FL	|Yes (NY)	|Yes	|Yes (WA) 
+Manually set to WA	|WA (Customer account based) |
+|Signed In	|Sarasota, FL	|None	|Yes	|Yes (WA) 
+Manually set to WA	|WA (Customer account based) |
 
 ## Additional resources
+[Set up taxes for online stores based on destination](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
 
 [Sales tax overview](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
 
