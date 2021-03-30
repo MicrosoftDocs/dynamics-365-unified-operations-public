@@ -38,13 +38,13 @@ ms.dyn365.ops.version: 10.0.15
 
 ## Warehouse execution on scale units
 
-This feature enables scale units to run selected processes from the warehouse management capabilities. Cloud scale units run their workloads in the cloud by using dedicated processing capacity in your selected Microsoft Azure region. For edge scale units, you can run some workloads independently on premises, even while the scale units are temporarily disconnected from the cloud.
+This feature enables scale units to run selected processes from the warehouse management capabilities.
 
 In this topic, warehouse management executions in a warehouse that is defined as a scale unit are known as a *Warehouse execution system* (*WES*).
 
 ## Prerequisites
 
-You must have a Dynamics 365 Supply Chain Management hub and a scale unit that has been deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Cloud and edge scale units for manufacturing and warehouse management workloads](cloud-edge-landing-page.md).
+You must have a Dynamics 365 Supply Chain Management hub and a scale unit that has been deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Use scale units to increase resilience for supply chain management workloads](cloud-edge-landing-page.md).
 
 ## How the WES workload works on scale units
 

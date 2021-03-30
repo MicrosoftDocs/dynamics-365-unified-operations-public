@@ -34,9 +34,10 @@ ms.dyn365.ops.version: 10.0.15
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> The manufacturing execution workload is available in preview at this point in time.
 > Some business functionality isn't fully supported in the public preview when workload scale units are used.
 
-In manufacturing execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the hub:
+In manufacturing execution, scale units deliver the following capabilities:
 
 - Machine operators and shop floor supervisors can access the operational production plan.
 - Machine operators can keep the plan up to date by running discrete and process manufacturing jobs.
