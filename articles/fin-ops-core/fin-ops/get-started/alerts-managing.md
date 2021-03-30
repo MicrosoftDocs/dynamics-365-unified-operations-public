@@ -3,7 +3,7 @@
 
 title: Batch processing of alerts
 description: This topic provides information about batch processing of alerts.
-author: tjvass
+author: RichdiMSFT
 manager: AnnBe
 ms.date: 09/10/2010
 ms.topic: article
@@ -21,7 +21,7 @@ ms.reviewer: sericks
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30 
 ms.dyn365.ops.version: Platform update 15
 ---

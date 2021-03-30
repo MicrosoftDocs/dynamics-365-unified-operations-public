@@ -5,7 +5,7 @@ title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 03/29/2021
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -160,6 +160,9 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | Japan West | 20.39.179.192/26
 | India South | 20.40.5.0/26
 | India Cental | 20.193.248.192/26
+
+## What does the downtime look like for self-service migrations?
+Self-service migration for any environment takes three hours of 100% downtime, with a six-hour pre-migration window leading up to the actual migration downtime of 3 hours. The environment will be available with limited servicing capabilities during the six-hour pre-migration window, but will be completely unavailable in the three-hour migration window. We recommend that customers do not schedule any servicing activity, like package deployment, during the pre-migration window because it will interfere with migrations and will trigger a migration cancellation.
 
 ## Is there a potential impact on the environment's certificates?
 

@@ -3,7 +3,7 @@
 
 title: Customize embedded reports in analytical workspaces
 description: This topic describes how power users can customize the application reports that are embedded in analytical workspaces.
-author: TJVass
+author: RichdiMSFT
 manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: milindav
+ms.author: richdi
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
 

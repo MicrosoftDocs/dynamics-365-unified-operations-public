@@ -3,7 +3,7 @@
 
 title: Power BI Embedded integration
 description: This topic describes some of the ways that you can use the Power BI Embedded integration.
-author: TJVass
+author: RichdiMSFT
 manager: AnnBe
 ms.date: 02/09/2018
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom: 270754
 ms.assetid: ca4b2ccf-d68d-4344-833e-1c45d966246c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 
