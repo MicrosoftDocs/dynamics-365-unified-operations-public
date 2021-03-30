@@ -21,7 +21,7 @@ ms.reviewer: kfend
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-author: richdi
+ms.author: richdi
 ms.search.validFrom: 2019-05-21 
 ms.dyn365.ops.version: Platform update 28
 ---

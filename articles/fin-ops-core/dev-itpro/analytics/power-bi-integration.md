@@ -22,7 +22,7 @@ ms.custom: 31001
 ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
 ms.search.region: Global
 # ms.search.industry: 
-author: richdi
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -21,7 +21,7 @@ ms.reviewer: sericks
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-author: richdi
+ms.author: richdi
 ms.search.validFrom: 2018-3-30 
 ms.dyn365.ops.version: Platform update 15
 ---

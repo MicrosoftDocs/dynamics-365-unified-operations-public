@@ -22,7 +22,7 @@ ms.custom: 21551
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-author: richdi
+ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -22,7 +22,7 @@ ms.custom: 266574
 ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
 ms.search.region: Global
 # ms.search.industry: 
-author: richdi
+ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
