@@ -227,7 +227,7 @@ A production order of 10 pieces is created for product D8100, "Coated Cabinet." 
     - In the **From Oper. No.** field, select **10**.
     - In the **To Oper. No.** field, select **10**.
 
-    ![Values set on the General tab](./media/subcontract23_start-dialog.png)
+    ![Values set on the General tab 1](./media/subcontract23_start-dialog.png)
 
 31. Select **OK** to close the **Start** dialog box and return to the **All production orders** page.
 
@@ -245,7 +245,7 @@ A production order of 10 pieces is created for product D8100, "Coated Cabinet." 
     - In the **Quantity** field, enter **10**.
     - Set the **Post picking list now** option to **No**.
 
-    ![Values set on the General tab](./media/subcontract24_general-tab.png)
+    ![Values set on the General tab 2](./media/subcontract24_general-tab.png)
 
 35. Select **OK** to close the **Start** dialog box and return to the **All production orders** page.
 
