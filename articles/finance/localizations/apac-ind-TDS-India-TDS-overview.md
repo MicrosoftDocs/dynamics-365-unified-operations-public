@@ -50,7 +50,7 @@ Per the Income tax Act, 1961, income tax is deducted at the source by the receiv
 
 The following sections list the services that TDS is applied on, as specified by the Government of India.
 
-### Residents
+**Residents**
 
 - Income from salaries (Under section 192)
 - Income from interest on securities (Under section 193)
@@ -69,7 +69,7 @@ The following sections list the services that TDS is applied on, as specified by
 - Income from Units (Under section 194K)
 - Payment of compensation on acquisition of certain immovable property (Under section 194LA)
 
-### Non-residents
+**Non-residents**
 
 - Payments to Non-resident sportsmen or sports association (Under section 194E)
 - Other sums (Under section 195)
@@ -113,7 +113,7 @@ Here is an overview of the process for setting up and working with TDS:
     - Parameter setup:
 
         - In General ledger parameters, activate parameters that are related to TDS.
-        - In General ledger parameters, set up the overlook threshold parameter and the reference for the number sequence for withholding tax payments.
+        - In General ledger parameters, set up the number sequence for withholding tax payments.
         - Set up parameters in Accounts payable and Accounts receivable.
 
     - Basic setup:
