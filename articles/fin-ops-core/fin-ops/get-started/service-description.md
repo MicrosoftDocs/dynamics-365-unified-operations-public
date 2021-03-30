@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Service description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+# Service Description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
