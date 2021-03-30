@@ -42,7 +42,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.18 release
 
-### Dynamics 365 for Finance and Operations - Warehousing (the Warehouse Management mobile app)
+### Dynamics 365 for Finance and Operations - Warehousing (the warehouse app)
 
 |   |  |
 |------------|--------------------|
