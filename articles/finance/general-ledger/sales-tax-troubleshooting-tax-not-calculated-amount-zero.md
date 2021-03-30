@@ -47,7 +47,7 @@ ms.dyn365.ops.version: 10.0.1
 
      [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
 
-  2. Go to *Tax > Indirect taxes > Sales tax > Sales tax groups > The sales tax group > Setup*, and go to *Tax > Indirect taxes > Sales tax > Item sales tax groups > The item sales tax group > Setup*. Make sure their intersection are the target tax codes. If not, please add correct sales tax codes into them; otherwise, go to next step 2.
+  2. Go to *Tax > Indirect taxes > Sales tax > Sales tax groups > The sales tax group > Setup*, and go to *Tax > Indirect taxes > Sales tax > Item sales tax groups > The item sales tax group > Setup*. Make sure their intersection are the target tax codes. If not, add correct sales tax codes into them; otherwise, go to next step 2.
 
      [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
 
@@ -55,11 +55,11 @@ ms.dyn365.ops.version: 10.0.1
 
 - **Step 2: Check whether the picked tax codes are not exempt, and the picked tax codes have the correct tax rate value. If the tax code is exempt or the tax rate is 0, the tax calculation result is 0.**
 
-- 1. Go to *Tax  > Indirect taxes > Sales tax > Sales tax groups > The sales tax group > Setup*, make sure the tax code '*Exempt*' is unmarked. If not, please unmark it; otherwise, go to next step 2.b.
+- 1. Go to *Tax  > Indirect taxes > Sales tax > Sales tax groups > The sales tax group > Setup*, make sure the tax code '*Exempt*' is unmarked. If not, unmark it; otherwise, go to next step 2.b.
 
      [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated tax-amount-zero-Picture4.png)
 
-  2. Go to *Tax > Indirect taxes > Sales tax > Sales tax codes > The sales tax code  > Value*,  make sure the tax rate value is not equal to 0. If not, please fill it     with the correct tax rate; otherwise, go to next step 3.
+  2. Go to *Tax > Indirect taxes > Sales tax > Sales tax codes > The sales tax code  > Value*,  make sure the tax rate value is not equal to 0. If not, fill it with the correct tax rate; otherwise, go to next step 3.
 
      [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
 
