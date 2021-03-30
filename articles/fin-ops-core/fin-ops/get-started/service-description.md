@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.18
 
 ## Overview
 
-Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management are cloud Enterprise Resource Planning (ERP) services for enterprises, built on and for Microsoft Azure. They provide organizations with ERP functionality that support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Supply Chain Management bring together a set of ERP, business intelligence, infrastructure, compute, and database services and enable organizations to run industry-specific and operational business processes that are extendable with specific solutions from Independent Software Vendors (ISVs). Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
+Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management are Enterprise Resource Planning (ERP) services for enterprises that are built on and for the Microsoft Azure Cloud. These services provide organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Supply Chain Management bring together a set of ERP, business intelligence, infrastructure, compute, and database services and enable organizations to run industry-specific and operational business processes that are extendable with specific solutions from Independent Software Vendors (ISVs). Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
 
 - [Microsoft AppSource](https://appsource.microsoft.com/partners)
 - [Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
@@ -69,13 +69,13 @@ Finance and Supply Chain Management scales with transaction volume and user load
 
 Microsoft configures production environments that are sized to handle the transaction volumes and user concurrency. Microsoft is responsible for: 
 
--	Proper allocation of resources of production environments, based on the Customer’s profiling information in the [LCS Subscription Estimator](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator); 
+-	Proper allocation of resources of production environments, based on the Customer’s profiling information in the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator); 
 -	Continually monitoring and diagnosing service availability of production environments; and 
 -	Analyzing and troubleshooting system performance issues with Finance and Supply Chain Management. 
 
 To ensure that an implementation is configured for high performance, customers must:
 
--	Provide accurate usage information for the Finance and Supply Chain Management implementation in the [LCS Subscription Estimator](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) 
+-	Provide accurate usage information for the Finance and Supply Chain Management implementation in the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) 
 - Build and test extensions for performance and scale 
 -	Test data configurations appropriately for performance 
 
@@ -93,7 +93,7 @@ Typical onboarding and implementation events and the expected responsibilities f
 |-------------------------|-------------------------|-------------------------|
 | Initial offer purchase | LCS project is created after the purchase of the offer. | Go through EA or CSP onboarding process. Partner creates tenant for customer, if applicable. |
 | Add-on purchase | Grant customer access to add-on selected during the implementation. | Not applicable. |
-| Implementation planning and analysis | Provide relevant tools in LCS, such as Business process modeler and interoperability with Visual Studio Online. |Project planning, Visual Studio Team Services, System onboarding and admin account setup.|
+| Implementation planning and analysis | Provide relevant tools in LCS, such as Business process modeler and interoperability with Azure DevOps. |Project planning, Azure DevOps, System onboarding and admin account setup.|
 
 For more information about the onboarding process, see [Onboard an implementation project](../imp-lifecycle/onboard.md).
 
