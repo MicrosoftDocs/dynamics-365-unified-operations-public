@@ -5,7 +5,7 @@ title: Known issues with self-service deployment
 description: This topic lists known issues that you might experience when using self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 10/06/2020
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,15 +58,17 @@ The following feature will not be implemented in self-service deployment.
 The following feature is no longer supported with self-service deployment.
 
 #### FTP
-Customizations relying on FTP are not supported with self-service deployment and should consider the following actions.
+Customizations relying on FTP are not supported with self-service deployment. You should consider the following information:
 
-We do not guarantee all outbound requests from an AOS are on a static IP address. Until June 2021, we will guarantee all outbound requests during a particular AOS session will be on the same IP address. This can have implications for some processes, such as FTP. We recommend removing the use of FTP by using powerapps to pull the files in and make api calls into F&O to import the files using the Data Integration framework [Data entities integration overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview) Some specific examples:
+- We do not guarantee that all outbound requests from an AOS are on a static IP address. 
 
-- Use the native SFTP connector (as described in [Monitor, create, and manage SFTP files in Azure Logic Apps](https://docs.microsoft.com/azure/connectors/connectors-create-api-sftp)), which still requires some port opening on the firewall to call the on-premises service. Consider that for Logic Apps, the list of IPs is much shorter than the entire [region allow list](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound) and the [limits and configuration in Power Automate](https://docs.microsoft.com/power-automate/limits-and-config#logic-apps).
+- Until June 2021, we guarantee that all outbound requests during a particular AOS session will be on the same IP address. This can have implications for some processes, such as FTP. We recommend removing the use of FTP by using Power Apps to pull the files in and make API calls into Finance and Operations apps to import the files using the Data Integration framework. For more information, see [Data entities integration overview](../data-entities/integration-overview.md). Some specific examples include:
 
-- Use the “Local Filesystem” connector, as described in [Outbound IP addresses](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound), in combination with the on-premises data gateway. For more information, see [Install on-premises data gateway for Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-gateway-install). This solution completely removes the need for the IP allow list, which is deprecated in self-service deployment, while keeping a very high-level of security.
+ - Use the native SFTP connector (as described in [Monitor, create, and manage SFTP files in Azure Logic Apps](https://docs.microsoft.com/azure/connectors/connectors-create-api-sftp)), which still requires some port opening on the firewall to call the on-premises service. Consider that for Logic Apps, the list of IPs is much shorter than the entire [region allow list](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound) and the [limits and configuration in Power Automate](https://docs.microsoft.com/power-automate/limits-and-config#logic-apps).
 
-- **Self Service**:  If FTP scenarios are failing after migrating to Self-Service, the please review the configuration at the FTP server. The most frequent cause of problems is needing to update the allowed [IP list](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/deploymentfaq#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-im) with the ranges for Self-Service environments.
+ - Use the “Local Filesystem” connector, as described in [Outbound IP addresses](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config#outbound), in combination with the on-premises data gateway. For more information, see [Install on-premises data gateway for Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-gateway-install). This solution completely removes the need for the IP allow list, which is deprecated in self-service deployment, while keeping a very high-level of security.
+
+ - Self-service capabilities:  If FTP scenarios are failing after migrating to self-service capabilities, review the configuration at the FTP server. The most frequent cause of problems is needing to update the allowed [IP list](../deployment/deploymentfaq.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-im) with the ranges for self-service environments.
 
 > [!NOTE]
 > For more information about deprecated features, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md) and [Removed or deprecated features from previous releases](../migration-upgrade/deprecated-features.md) and [Removed or deprecated features in previous releases](../get-started/removed-deprecated-features-platform-updates.md).
