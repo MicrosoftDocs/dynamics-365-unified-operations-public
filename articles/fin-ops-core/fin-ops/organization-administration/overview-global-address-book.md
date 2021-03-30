@@ -2,7 +2,7 @@
 # required metadata
 
 title: Global address book overview
-description: The global address book can help you understand the relationships among people and organizations that are associated with your organization. For example, a customer may also be a vendor in a marketing campaign, or a worker in your organization may also be a vendor.
+description: The global address book can help you understand the relationships among people and organizations that are associated with your organization.
 author: msftbrking
 manager: AnnBe
 ms.date: 07/25/2019

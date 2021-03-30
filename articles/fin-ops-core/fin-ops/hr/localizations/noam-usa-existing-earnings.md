@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process existing earnings
-description: This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
+description: This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/20/2017
