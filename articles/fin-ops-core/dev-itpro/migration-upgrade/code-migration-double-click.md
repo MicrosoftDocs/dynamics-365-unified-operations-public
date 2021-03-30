@@ -4,7 +4,6 @@
 title: Code migration - Mouse double-click logic
 description: This topic explains how the mouseDblClick() override has been deprecated, and how you will need to move this logic to new controls.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

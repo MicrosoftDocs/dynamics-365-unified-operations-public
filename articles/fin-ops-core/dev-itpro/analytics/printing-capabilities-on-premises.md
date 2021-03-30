@@ -4,7 +4,6 @@
 title: Document generation, publishing, and printing in on-premises deployments
 description: This topic describes the capabilities for generating, publishing, and printing documents in on-premises deployments.
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 

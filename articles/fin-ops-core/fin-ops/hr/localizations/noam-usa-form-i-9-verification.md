@@ -4,7 +4,6 @@
 title: Form I-9 verification
 description: This topic provides information about Form I-9 verification.
 author: ShielaSogge
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 

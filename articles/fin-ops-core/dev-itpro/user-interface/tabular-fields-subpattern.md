@@ -4,7 +4,6 @@
 title: Tabular Fields subpattern
 description: This article provides information about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format. 
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

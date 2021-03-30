@@ -4,7 +4,6 @@
 title: Generate earnings for workers
 description: This topic describes the various ways that you can generate earnings for workers.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Import updated versions of ER configurations 
 description: This topic explains how to import updated versions of Electronic reporting (ER) configurations from the Global repository of the Configuration service.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 

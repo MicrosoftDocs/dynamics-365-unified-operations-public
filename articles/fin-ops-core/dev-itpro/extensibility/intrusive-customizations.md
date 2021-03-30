@@ -4,7 +4,6 @@
 title: Intrusive customizations
 description: This topic defines the characteristics of an intrusive customization.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 

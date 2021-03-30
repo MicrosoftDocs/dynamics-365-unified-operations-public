@@ -4,7 +4,6 @@
 title: X++ interfaces
 description: This topic describes interfaces in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: 

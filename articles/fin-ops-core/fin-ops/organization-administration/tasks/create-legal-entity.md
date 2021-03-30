@@ -4,7 +4,6 @@
 title: Create a legal entity
 description: A legal entity is an organization that is identified through registration with a legal authority. 
 author: sericks007
-manager: AnnBe 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: SysTest filtering using class and method attributes
 description: This topic outlines attributes that can be used with SysTest classes and methods for the purpose of test filtering.
 author: jorisdg
-manager: AnnBe
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: 

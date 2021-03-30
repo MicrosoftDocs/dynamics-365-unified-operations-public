@@ -4,7 +4,6 @@
 title: Show counts in fields
 description: This topic explains how to calculate a count that is correct and that appears quickly. 
 author: robinarh
-manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 

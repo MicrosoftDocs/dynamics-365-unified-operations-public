@@ -4,7 +4,6 @@
 title: License codes and configuration keys report
 description: This topic points you to a report that lists the license codes and configuration keys available in Finance and Operations.
 author: sericks007
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 

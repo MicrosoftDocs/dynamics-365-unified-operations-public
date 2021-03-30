@@ -2,7 +2,6 @@
 title: Create and automate user acceptance tests
 description: This topic provides information about using Task guides and BPM to create and execute acceptance test suites.
 author: jorisdg
-manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 

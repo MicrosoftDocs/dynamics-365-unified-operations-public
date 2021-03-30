@@ -4,7 +4,6 @@
 title: Person search report
 description: This topic provides information about the Personal data report for Finance and Operations apps.
 author: rschloma
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 

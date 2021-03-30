@@ -4,7 +4,6 @@
 title: Export a database
 description: This topic explains how to export a database for Finance and Operations.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 

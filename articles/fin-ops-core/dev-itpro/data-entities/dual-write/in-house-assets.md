@@ -4,7 +4,6 @@
 title: In-house assets for servicing
 description: This topic describes how you can use Microsoft Dtnamics 365 Field Service to service both customer assets and in-house assets.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 

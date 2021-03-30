@@ -4,7 +4,6 @@
 title: Configure the Workflow Message Processing batch job as critical
 description: Configure the workflow Message Processing batch job as critical
 author: ChrisGarty
-manager: AnnBe
 ms.date: 05/11/2017
 ms.topic: article
 ms.prod: 

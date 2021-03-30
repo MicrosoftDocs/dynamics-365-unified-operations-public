@@ -4,7 +4,6 @@
 title: System tables
 description: This topic describes the system tables.
 author: RobinARH
-manager: AnnBe
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 

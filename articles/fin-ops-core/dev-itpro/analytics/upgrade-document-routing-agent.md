@@ -4,7 +4,6 @@
 title: Update the Document Routing Agent
 description: This topic explains how to update the Document Routing Agent.
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 

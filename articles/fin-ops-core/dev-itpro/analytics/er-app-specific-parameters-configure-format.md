@@ -4,7 +4,6 @@
 title: Configure ER formats to use parameters that are specified per legal entity
 description: This topic explains how you can configure Electronic reporting (ER) formats to use parameters that are specified per legal entity.
 author: NickSelin
-manager: AnnBe
 ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 

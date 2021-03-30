@@ -4,7 +4,6 @@
 title: Export and import models
 description: This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 author: RobinARH
-manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 

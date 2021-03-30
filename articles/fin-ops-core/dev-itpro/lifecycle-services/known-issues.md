@@ -4,7 +4,6 @@
 title: Known issues
 description: This topic explains how to view the known issues that you might experience when you use Finance and Operations.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
