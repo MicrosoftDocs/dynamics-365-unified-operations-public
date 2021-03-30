@@ -3,7 +3,7 @@
 
 title: Document printing overview
 description: You can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
-author: TJVass
+author: RichdiMSFT
 manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom: 69161
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

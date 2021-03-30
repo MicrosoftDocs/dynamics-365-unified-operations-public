@@ -3,7 +3,7 @@
 
 title: Supported fonts
 description: Finance and Operations apps include access to over 270 standard business-ready fonts available for documents rendered by the cloud-hosted service. 
-author: TJVass
+author: RichdiMSFT
 manager: AnnBe
 ms.date: 02/10/2020
 ms.topic: article
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: tjvass
+author: richdi
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
 ---

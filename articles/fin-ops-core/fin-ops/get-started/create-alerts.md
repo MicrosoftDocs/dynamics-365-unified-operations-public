@@ -3,7 +3,7 @@
 
 title: Create alert rules
 description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
-author: tjvass
+author: RichdiMSFT
 manager: AnnBe
 ms.date: 10/08/2020
 ms.topic: article
@@ -21,7 +21,7 @@ ms.reviewer: sericks
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---

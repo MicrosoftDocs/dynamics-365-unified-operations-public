@@ -3,7 +3,7 @@
 
 title: Help prevent long-running reports from timing out
 description: This article provides tips that can help you prevent reports that run for a long time from timing out.
-author: TJVass
+author: RichdiMSFT
 manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom: 20521
 ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
