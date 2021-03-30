@@ -43,6 +43,18 @@ The store selector module lets users enter a location (city, state, address, and
 - A store selector module can be used on a cart page to select a store for pickup.
 - A store selector module can be used on a standalone page that shows all available stores.
 
+## Fulfillment group setup in Headquarters
+For Store selector to display the available stores, its required that the fulfillment group is setup in headquarters. For more details refer to [Fulfillment group setup](customer-orders-overview.md).
+
+In addition, for each store in the Fulfillment group, the latitude and longitude of the store location must be defined in headquarters.
+
+The example below shows how latitude and longitude can be defined.
+![Example of a Store details in headquarters](./media/BOPIS.PNG)
+
+![Example of a latitude and longitude setup for a store in headquarters](./media/BOPIS.PNG)
+
+
+
 ## Bing Maps integration
 
 The store selector module is integrated with the [Bing Maps REST application programming interfaces (APIs)](https://docs.microsoft.com/bingmaps/rest-services/) to use Bing's Geocoding and Autosuggest features. A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. The Geocoding API is used to convert a location to latitude and longitude values. The integration with the Autosuggest API is used to show search suggestions when users enter locations in the search field.
@@ -53,6 +65,7 @@ For the Autosuggest REST API, you must ensure that the following URLs are allowe
 - To the **img-src** directive, add **&#42;.virtualearth.net**.
 - To the **script-src** directive, **add &#42;.bing.com, &#42;.virtualearth.net**.
 - To the **script style-src** directive, add **&#42;.bing.com**.
+
  
 ## Pickup in store mode
 
