@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: RCS, Regulatory Configuration Services
+ms.search.form: RCS, Regulatory Configuration Services, Localization
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -27,7 +27,6 @@ ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
 
 ---
-
 # Microsoft Dynamics 365 Regulatory Configuration Service
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,9 @@ RCS provides the following capabilities:
 ## Accessing Regulatory Configuration Service (RCS)
 You can sign up/into RCS through the RCS marketing page accessed from the following link: https://marketing.configure.global.dynamics.com/ 
 
-Media link: articles/finance/localizations/media/202103_RCS Marketing page_updated.PNG 
+    ![Regulatory Configuration Services sign up / sign in](./localizations/media/202103_RCS Marketing page_updated.JPG) 
+
+    ![Globalization features in Feature management](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
 
 Once you land on the service marketing page you need to review and accept the supplementary terms and conditions for use of the service. Then select either:
 -	Sign up – if you are a first-time user to the service using a business email to provision your organization a service environment, or 
