@@ -22,7 +22,7 @@ ms.custom: 27661
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: milindav
+ms.author: richdi
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
