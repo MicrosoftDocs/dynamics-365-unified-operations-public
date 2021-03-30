@@ -1,0 +1,100 @@
+---
+# required metadata
+
+title: Payroll integration API introduction
+description: This topic describes the Dynamics 365 Human Resources Payroll integration API.
+author: andreabichsel
+manager: tfehr
+ms.date: 02/03/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: anbichse
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: jcart
+ms.search.validFrom: 2021-02-03
+ms.dyn365.ops.version: Human Resources
+---
+
+# Payroll integration API introduction
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+This document describes the Dynamics 365 Human Resources Payroll integration API. The intent of the API is to enable streamlined end-to-end integrations between Dynamics 365 Human Resources and partnering Payroll systems. The integrated experience begins in Human Resources with the employee profile, salary and deduction and contribution information. When an employee is hired and required profile and pay information is entered into Dynamics 365 Human Resources, the payroll system pulls this information to be used when processing payroll. Any updates made to the employee or pay information are also pulled to be used in subsequent pay runs. 
+
+![Payroll integration flow](media/hr-admin-integration-ats-api-introduction-flow.png)
+
+
+To enable the integration, Human Resources is adding the following components:
+
+1.	Functionality to mark an employee as ready to pay.
+2.	An integration API opening up the new functionality to integrating applications.
+
+
+
+## Microsoft Dataverse
+
+This API is built on Microsoft Dataverse (formerly Common Data Service). All RESTful interaction with this API is done via the Microsoft Dataverse Web API, which uses OData. This API is a subset of the Dataverse Web API. The Dataverse Web API defines characteristics such as authentication, SLAs, batch, concurrency control, and error handling.
+
+For more general information about the Microsoft Dataverse Web API, see:
+
+- [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+- [Use the Microsoft Dataverse Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
+- [Microsoft Dataverse developer guide](https://docs.microsoft.com/powerapps/developer/data-platform)
+
+The above documentation includes detail and developer guidance on using the Dataverse Web API, such as [managing authentication](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api), [performing operations](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api), [using Postman with the API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api), and [using change tracking or delta tokens](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) with the API.
+
+### Option sets
+
+The data model for the Payroll integration API described in this document includes option sets that provide enumerated values associated with entity properties. For detail on working with option sets in the Dataverse Web API, see [Create and update option sets using the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets). Option sets are defined for each Dataverse environment.
+
+### Virtual tables for Human Resources in Dataverse
+
+The endpoints for the ATS integration API use the virtual table platform capabilities of Microsoft Dataverse. By default, the virtual tables and their associated API endpoints are not deployed for Human Resources environments, enabling organizations to determine which OData endpoints will be exposed for the environment. To use the API, the virtual tables for the Human Resources entities must be generated for the environment. 
+
+For information on generating the virtual tables for the API, see [Configure Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+
+## Data model
+
+The data model contains the following entities: 
+
+
+The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to payroll integration scenarios. However, there are many other entities in the Dataverse Web API for Dynamics 365 Human Resources that may also be relevant to your integration.  Some of these entities are referenced in foreign key relationships or navigation properties.
+
+![Payroll Integration API data model](media/hr-admin-integration-ats-api-data-model.png)
+
+## Payroll employee and related entities and option sets
+
+Entities:
+
+- [Payroll Employee](hr-admin-integration-payroll-api-payroll-employee)
+- [Base worker](hr-admin-integration-payroll-api-payroll-worker-base-entity)
+- [Payroll Worker address](hr-admin-integration-payroll-api-payroll-worker-address)
+- [Payroll Fixed compensation plan](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Payroll position job](hr-admin-integration-payroll-api-payroll-position-job)
+- [Payroll position](hr-admin-integration-payroll-api-payroll-position)
+
+Option sets:
+
+- [TBD](hr-admin-integration-payroll- TBD.md)
+
+
+## See also
+
+[Configure Human Resources parameters](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-setup-parameters)<br>
+[Configure Human Resources shared parameters](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-setup-shared-parameters)<br>
+[What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
+[Use the Microsoft Dataverse Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
+[Create and update option sets using the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
