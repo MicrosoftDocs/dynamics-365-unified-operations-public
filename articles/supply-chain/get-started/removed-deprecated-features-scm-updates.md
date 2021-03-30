@@ -40,6 +40,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.18 release
+
+### The old warehouse app, Dynamics 365 for Finance and Operations - Warehousing
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Effective April 2021, the old warehouse app, Dynamics  365 for Finance and Operations - Warehousing is deprecated, and won't be supported after April 2022. The new Warehouse Management mobile app was released with 10.0.17, replacing the old warehouse app. The new app is a complete replacement but with same underlying framework, to make migration easy. It can also be used side-by-side with the old app to help users gradually adjust and start using the new app. |
+| **Replaced by another feature?**   | Yes, replaced with the new Warehouse Management mobile app. |
+| **Product areas affected**         | Supply Chain Management - Warehouse Management mobile app |
+| **Deployment option**              | Cloud and On-Premise. |
+| **Status**                         | Deprecated. It will receive support with bug and security fixes, however, no more feature enhancements will be provided. After April 2022, the old Warehouse Management mobile app will not be supported anymore and customers will be asked to move to the new Warehouse Management mobile app. It will be removed from the Microsoft Store and Google Play store.  |
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.15 release
 
 ### Internet Explorer 11 support for Dynamics 365 is deprecated
