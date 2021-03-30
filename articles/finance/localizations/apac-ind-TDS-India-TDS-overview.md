@@ -106,6 +106,8 @@ The periodic TDS settlement process must be run, and the TDS payments must be se
 
 The certificate numbers and dates for TDS certificates that are received from vendors or customers can be recorded and updated. Additionally, Form 26Q and Form 27Q quarterly statements, and the Form 16A certificate for TDS, can be generated in Finance.
 
+## Setting up and working with TDS
+
 Here is an overview of the process for setting up and working with TDS:
 
 1. **TDS setup:**
