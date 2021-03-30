@@ -42,7 +42,7 @@ Microsoft Dynamics supports the generation of SPED-Reinf events through the **Fi
 
 **Scope**
 
--   Supported SPED-Reinf version: 1.3.
+-   Supported SPED-Reinf version: 1.4 and 1.5.1
 
 -   Supported versions: Microsoft Dynamics AX 2012 R3 and Microsoft Dynamics 365
     for Finance and Operations.
@@ -51,23 +51,26 @@ Microsoft Dynamics supports the generation of SPED-Reinf events through the **Fi
 
 **Table of events**
 
-| Event | Description                                                   | Event type             | Supported in Microsoft Dynamics | Comments                                                                                                                                                                |
-|-----------|-------------------------------------------------------------------|----------------------------|-------------------------------------|----------------------------------------|
-| R-1000    | Taxpayer information                                              | Initial                    | **Yes**                             | Support for taxpayers as legal entities.   |
-| R-1070    | Administrative and Judicial process                               | When a process is in place | **Yes**                             |                                              |
-| R-2010    | Acquired services                                                 | Periodic event             | **Yes**                             | No support for acquirer fiscal establishments as civil constructions. (Civil constructions require a CNO instead of a CNPJ.)                                                |
-| R-2020    | Provided services                                                 | Periodic event             | **Yes**                             | No support for service takers (customers) as civil constructions. (Civil constructions require a CNO instead of a CNPJ.)                                                    |
-| R-2030    | Amounts received by sport associations                            | Periodic event             | **No**                              |                                              |
-| R-2040    | Amounts paid to sport associations                                | Periodic event             | **No**                              |                                              |
-| R-2050    | Trade of rural production by rural legal entities or agribusiness | Periodic event             | **No**                              |                                               |
-| R-2060    | INSS-CPRB assessment                                              | Periodic event             | **Yes**                             | No support for CPRB tax assessment from Commerce operations.  |
-| R-2070    | Withholding on payments (IR, CSLL, PIS, COFINS)                   | Periodic event             | **No**                              | Support will be included as a separate feature in the next release. For more information, see **Sped REINF - event R-2070** in Microsoft Dynamics Lifecycle Services (LCS). |
-| R-2098    | Reopening of periodic                                             | Periodic event             | **Yes**                             |                                                |
-| R-2099    | Closing                                                           | Periodic event             | **Yes**                             |                                              |
-| R-3010    | Sport spectacle revenue                                           | Non-periodic event         | **No**                              |                                                |
-| R-5001    | Consolidated tax calculation basis by taxpayer                    | Non-periodic event         | **No**                              |                                               
-| R-5011    | Consolidated base and tax amount                                  | Non-periodic event         | **Yes**                             | This event is used to inquire about the status of closing event R-2099. |
-| R-9000    | Deletion                                                          | Non-periodic event         | **Yes**                             |                                                |
+| Event | Description | Event type | Supported |
+|-|-|-|-|
+| R-1000     | Taxpayer information | Initial | **Yes** |
+| R-1070     | Administrative and Judicial process | When a process is in place | **Yes** |
+| R-2010     | Acquired services | Periodic event | **Yes** |
+| R-2020     | Provided services | Periodic event | **Yes** |
+| R-2030     | Amounts received by sport associations | Periodic event | **No** |
+| R-2040     | Amounts paid to sport associations | Periodic event | **No** |
+| R-2050 | Trade of rural production by rural legal entities or agribusiness | Periodic event | **No** |
+| R-2055 | Acquisition from agriculture vendor | Periodic event | **Yes** |
+| R-2060     | INSS-CPRB assessment | Periodic event | **Yes** |
+| R-2098     | Reopening of periodic | Periodic event | **Yes** |
+| R-2099     | Closing | Periodic event | **Yes** |
+| R-3010     | Sport shows revenue | Non-periodic event | **No** |
+| R-5001     | Consolidated tax calculation basis by taxpayer | Non-periodic event | **No** |
+| R-5011     | Consolidated base and tax amount | Non-periodic event | **Yes** |
+| R-9000     | Deletion | Non-periodic event | **Yes** |
+
+
+
 
 -   Only taxpayers that comply with SPED-ECD are supported.
 
