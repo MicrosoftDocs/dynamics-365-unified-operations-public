@@ -72,29 +72,25 @@ You can completely override existing functionality or customize it according to 
 
 + You want to override the search functionality to search from an external system instead of using the out-of-box search functionality.
 
-Its recommended not to override the handler, unless it’s necessary, try to implement the CRT extension scenarios by using pre-triggers or post-triggers. 
+You should not override the handler, unless it’s necessary. Instead, implement the CRT extension scenarios by using pre-triggers or post-triggers. 
 
 ### Executing the Next CRT handler - Chain of handlers
 
-Starting Application version 10.0.19 or later CRT framework supports **ExecuteNextAsync** and **GetNextAsyncRequestHandler** to execute base request and handler in the overridden extension code. CRT framework also support executing same handler multiple times based on the order listed in the CommerceRuntime.Ext.config.
+With platform update version 10.0.19 and later, the CRT framework supports **ExecuteNextAsync** and **GetNextAsyncRequestHandler**. Use these methods to execute the base request and handler in the overridden extension code. The CRT framework also supports executing the same handler multiple times based on the order listed in the **CommerceRuntime.Ext.config** file.
 
 #### ExecuteNextAsync
 
-You can override the request and call the base request using the **ExecuteNextAsync** method and do some custom logic to set extension properties etc.
-Ex: Override Customer save request, call the base customer request first using **ExecuteNextAsync** and then do additional logic to save customer extension properties.
+You can override the request and call the base request using the **ExecuteNextAsync** method. In the override, you can add custom logic, for example, to set extension properties. For example, override the **Customer** save request, call the base customer request first using **ExecuteNextAsync** and then add additional logic to save the customer extension properties.
 
 #### GetNextAsyncRequestHandler
 
-Suppose if you want to override the handler and call the base handler to execute the OOB logic and then modify the results of base handler with custom logic then use the **GetNextAsyncRequestHandler**. 
+If you want to override the handler and call the base handler to execute the out-of-box logic and then modify the results of base handler with custom logic, then use the **GetNextAsyncRequestHandler**. 
 
-Ex: Search for a Product using OOB Azure Search handler and do additional logic to modify the result based on inventory etc. to include custom search results or filter the results.
+For example, you can search for a **Product** using the out-of-box Azure Search handler and add additional logic to modify the result based on inventory. You could include custom search results or filter the results.
 
 ### NotHandledResponse
 
-Suppose from the overridden handler, you want to run the base handler and return the base response instead of custom logic then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler.
-
-**NotHandledResponse** can be used in scenarios where the extension want to run custom logic only on certain conditions else runs the base handler logic.
-
+If in the the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
 
 ### CRT data service and data service with entities
 
@@ -448,87 +444,82 @@ namespace Contoso
 
 #### ExecuteNextAsync
 
-You can override the request and call the base request using the **ExecuteNextAsync** method and do some custom logic to set extension properties etc.
-Ex: Override Customer save request, call the base customer request first using **ExecuteNextAsync** and then do additional logic to save customer extension properties.
+You can override the request and call the base request using the **ExecuteNextAsync** method and add custom logic to set extension properties. For example, you can override the **Customer** save request, call the base customer request first using **ExecuteNextAsync**, and then add additional logic to save customer extension properties.
 
 ```csharp
+/// <summary>
+/// Create or update customer data request handler.
+/// </summary>
+public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncRequestHandler<CreateOrUpdateCustomerDataRequest>
+{
+    /// <summary>
+    /// Executes the workflow to create or update a customer.
+    /// </summary>
+    /// <param name="request">The request.</param>
+    /// <returns>The response.</returns>
+    protected override async Task<Response> Process(CreateOrUpdateCustomerDataRequest request)
+    {
+        ThrowIf.Null(request, "request");
 
- /// <summary>
-        /// Create or update customer data request handler.
-        /// </summary>
-        public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncRequestHandler<CreateOrUpdateCustomerDataRequest>
+        using (var databaseContext = new DatabaseContext(request.RequestContext))
+        using (var transactionScope = new TransactionScope())
         {
-            /// <summary>
-            /// Executes the workflow to create or update a customer.
-            /// </summary>
-            /// <param name="request">The request.</param>
-            /// <returns>The response.</returns>
-            protected override async Task<Response> Process(CreateOrUpdateCustomerDataRequest request)
+            // Execute original functionality to save the customer.
+            var response = await this.ExecuteNextAsync<SingleEntityDataServiceResponse<Customer>>(request).ConfigureAwait(false);
+
+            // Execute additional functionality to save the customer's extension properties.
+            if (!request.Customer.ExtensionProperties.IsNullOrEmpty())
             {
-                ThrowIf.Null(request, "request");
-
-                using (var databaseContext = new DatabaseContext(request.RequestContext))
-                using (var transactionScope = new TransactionScope())
-                {
-                    // Execute original functionality to save the customer.
-                    var response = await this.ExecuteNextAsync<SingleEntityDataServiceResponse<Customer>>(request).ConfigureAwait(false);
-
-                    // Execute additional functionality to save the customer's extension properties.
-                    if (!request.Customer.ExtensionProperties.IsNullOrEmpty())
-                    {
-                        // The stored procedure will determine which extension properties are saved to which tables.
-                        ParameterSet parameters = new ParameterSet();
-                        parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesExtTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
-                        await databaseContext.ExecuteStoredProcedureNonQueryAsync("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters, resultSettings: null).ConfigureAwait(false);
-                    }
-                    
-                    transactionScope.Complete();
-
-                    return response;
-                }
+                // The stored procedure will determine which extension properties are saved to which tables.
+                ParameterSet parameters = new ParameterSet();
+                parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesExtTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
+                await databaseContext.ExecuteStoredProcedureNonQueryAsync("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters, resultSettings: null).ConfigureAwait(false);
             }
+
+            transactionScope.Complete();
+
+            return response;
         }
+    }
+}
 ```
 
 #### GetNextAsyncRequestHandler
 
-Suppose if you want to override the handler and call the base handler to execute the OOB logic and then modify the results of base handler with custom logic then use the **GetNextAsyncRequestHandler**. 
-
-Ex: Search for a Product using OOB Azure Search handler and do additional logic to modify the result based on inventory etc. to include custom search results or filter the results.
+If you want to override the handler and call the base handler to execute the OOB logic and then modify the results of base handler with custom logic, then use the **GetNextAsyncRequestHandler**. For example, you could search for a product using the out-of-box Azure Search handler and add additional logic to modify the result based on inventory, including custom search results or filter the results.
 
 ```csharp
 
 protected override async Task<Response> Process(SaveSalesTransactionDataRequest request)
-            {
-                ThrowIf.Null(request, "request");
+{
+    ThrowIf.Null(request, "request");
 
-                // The extension should do nothing If fiscal registration is enabled and legacy extension were used to run registration process.
-                if (!string.IsNullOrEmpty(request.RequestContext.GetChannelConfiguration().FiscalRegistrationProcessId))
-                {
-                    return new NotHandledResponse();
-                }
+    // The extension should do nothing If fiscal registration is enabled and legacy extension were used to run registration process.
+    if (!string.IsNullOrEmpty(request.RequestContext.GetChannelConfiguration().FiscalRegistrationProcessId))
+    {
+        return new NotHandledResponse();
+    }
 
-                NullResponse response;
+    NullResponse response;
 
-                using (var databaseContext = new DatabaseContext(request.RequestContext))
-                using (var transactionScope = CreateReadCommittedTransactionScope())
-                {
-                    // Execute original logic.
-                    var requestHandler = request.RequestContext.Runtime.GetNextAsyncRequestHandler(request.GetType(), this);
-                    response = await request.RequestContext.Runtime.ExecuteAsync<NullResponse>(request, request.RequestContext, requestHandler, false).ConfigureAwait(false);
+    using (var databaseContext = new DatabaseContext(request.RequestContext))
+    using (var transactionScope = CreateReadCommittedTransactionScope())
+    {
+        // Execute original logic.
+        var requestHandler = request.RequestContext.Runtime.GetNextAsyncRequestHandler(request.GetType(), this);
+        response = await request.RequestContext.Runtime.ExecuteAsync<NullResponse>(request, request.RequestContext, requestHandler, false).ConfigureAwait(false);
 
-                    // Extension logic.
-                    if (request.RequestContext.GetChannelConfiguration().CountryRegionISOCode == CountryRegionISOCode.FR)
-                    {
-                        response = await SaveSalesTransactionExtAsync(request).ConfigureAwait(false);
-                    }
+        // Extension logic.
+        if (request.RequestContext.GetChannelConfiguration().CountryRegionISOCode == CountryRegionISOCode.FR)
+        {
+            response = await SaveSalesTransactionExtAsync(request).ConfigureAwait(false);
+        }
 
-                    transactionScope.Complete();
-                }
+        transactionScope.Complete();
+    }
 
-                return response;
-            }
-
+    return response;
+}
 ```
 
 ### NotHandledResponse
