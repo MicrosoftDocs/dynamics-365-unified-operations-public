@@ -41,7 +41,7 @@ You can't any use role except the administrator tole to access the mobile device
 
 ### Issue resolution
 
-The mobile device app emulator is set to work only with the administrator account. For all testing and live process purposes, we recommend that you use the warehouse app itself.
+The mobile device app emulator is set to work only with the administrator account. For all testing and live process purposes, we recommend that you use the Warehouse Management mobile app itself.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

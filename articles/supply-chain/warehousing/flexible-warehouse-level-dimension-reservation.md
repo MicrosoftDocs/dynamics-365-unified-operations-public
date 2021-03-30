@@ -415,7 +415,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Override location</strong> menu item on the warehouse app when you start picking work.</li>
+<li>Select the <strong>Override location</strong> menu item on the Warehouse Management mobile app when you start picking work.</li>
 <li>Select <strong>Suggest</strong>.</li>
 <li>Confirm the new location that is suggested based on batch quantity availability.</li>
 </ol>
@@ -432,7 +432,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Override location</strong> menu item on the warehouse app when you start picking work.</li>
+<li>Select the <strong>Override location</strong> menu item on the Warehouse Management mobile app when you start picking work.</li>
 <li>Manually enter a location.</li>
 </ol>
 </td>
@@ -460,7 +460,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Not applicable</td>
 <td>
 <ol>
-<li>Select the <strong>Full</strong> menu item on the warehouse app when you process picking work.</li>
+<li>Select the <strong>Full</strong> menu item on the Warehouse Management mobile app when you process picking work.</li>
 <li>In the <strong>Pick Qty</strong> field, enter a partial quantity of the required pick to indicate the full capacity.</li>
 </ol>
 </td>
@@ -535,7 +535,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Start a movement on the warehouse app.</li>
+<li>Start a movement on the Warehouse Management mobile app.</li>
 <li>Enter "from" and "to" locations.</li>
 </ol></td>
 <td>
@@ -651,7 +651,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Pick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, enter <strong>No reallocation</strong>.</li>
 </ol>
@@ -680,7 +680,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Pick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, enter <strong>No reallocation</strong>.</li>
 </ol>
@@ -704,7 +704,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 <li>Select the location/license plate in the list.</li>
@@ -730,7 +730,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 </ol>
@@ -743,7 +743,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 <li>Select the location/license plate in the list.</li>
@@ -767,7 +767,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Not applicable</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with automatic reallocation</strong>.</li>
 </ol>

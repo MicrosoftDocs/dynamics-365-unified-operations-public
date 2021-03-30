@@ -162,15 +162,15 @@ Both TMS and Landed cost provide functionality for managing the receipt of goods
 
 ### TMS receiving by container features
 
-TMS supports inbound ASNs, all variants of receiving through the warehouse app, and all methods of receiving through the Supply Chain Management client.
+TMS supports inbound ASNs, all variants of receiving through the Warehouse Management mobile app, and all methods of receiving through the Supply Chain Management client.
 
 ### Landed cost receiving by container features
 
 To support receiving by container, Landed cost creates shipping container records and associates purchase orders with a specific shipping container by using its container ID. Overhead costs can then be applied to that shipping container and broken down so that they are associated with the relevant purchase orders.
 
-Containers in Landed cost can be received through a new type of receipt that is known as a *goods in transit receipt*, through arrival journals, or through mobile device receiving. When arrival journals are used, the quantities can be initialized from the goods in transit order or the original purchase order lines in the container. Landed cost provides two work types for receiving through the warehouse app.
+Containers in Landed cost can be received through a new type of receipt that is known as a *goods in transit receipt*, through arrival journals, or through mobile device receiving. When arrival journals are used, the quantities can be initialized from the goods in transit order or the original purchase order lines in the container. Landed cost provides two work types for receiving through the Warehouse Management mobile app.
 
-Landed cost doesn't provide an ASN for the electronic receipt of goods. Additionally, it doesn't support warehouse app flows that process load receiving, license plate receiving, or mixed license plate receiving.
+Landed cost doesn't provide an ASN for the electronic receipt of goods. Additionally, it doesn't support Warehouse Management mobile app flows that process load receiving, license plate receiving, or mixed license plate receiving.
 
 ## Rate shopping by vendor
 

@@ -43,7 +43,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Inventory on-hand report storage](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 
-- [License plate receiving enhancements for the warehouse app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - For more information, see [License plate receiving via the warehouse app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [License plate receiving enhancements for the warehouse app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - For more information, see [License plate receiving via the Warehouse Management mobile app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
 - [Line reservation enhancements for the batch number reservation form](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - For more information, see [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md).
 

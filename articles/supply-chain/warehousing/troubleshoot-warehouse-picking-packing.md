@@ -47,7 +47,7 @@ The **Default receipt location** field is blank for a transit warehouse of the "
 
 ### Issue description
 
-You receive this error message in the warehouse app when you scan a license plate ID.
+You receive this error message in the Warehouse Management mobile app when you scan a license plate ID.
 
 ### Issue resolution
 
@@ -71,7 +71,7 @@ You receive this error message when you try to perform a *split pick* across mul
 
 ### Issue resolution
 
-The warehouse worker must use the *Short picking* process in the warehouse app. If you're trying to pick multiple batches from the same location, you can also use the **Full** option in the warehouse app.
+The warehouse worker must use the *Short picking* process in the Warehouse Management mobile app. If you're trying to pick multiple batches from the same location, you can also use the **Full** option in the app.
 
 ## I can't move inventory to a location that is license plate–controlled.
 
