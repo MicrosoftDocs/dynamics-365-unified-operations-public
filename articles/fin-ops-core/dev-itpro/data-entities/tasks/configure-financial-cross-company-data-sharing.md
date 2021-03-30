@@ -4,7 +4,6 @@
 title: Configure financial cross-company data sharing
 description: This procedure shows how to configure, enable, validate, and resolve conflicts when sharing data between companies. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  

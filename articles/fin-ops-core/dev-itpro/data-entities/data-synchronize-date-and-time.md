@@ -4,7 +4,6 @@
 title: Synchronize date and time in import jobs
 description: Use UTC time zones in import jobs to avoid problems with time zone conversions.
 author: Sunil-Garg
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 

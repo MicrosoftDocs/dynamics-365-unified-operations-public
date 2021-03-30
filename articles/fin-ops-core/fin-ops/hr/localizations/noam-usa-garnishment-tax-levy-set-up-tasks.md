@@ -4,7 +4,6 @@
 title: Set up garnishments and tax levies
 description: This topic explains how to set up garnishments and tax levies.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Contextual data entry for lookups
 description: This topic explains how contextual data entry works and provides implementation details and tips for developers who want their lookups to have this behavior.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

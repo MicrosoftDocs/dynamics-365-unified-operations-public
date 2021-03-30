@@ -4,7 +4,6 @@
 title: Set up payroll calculation frequencies
 description: This topic describes how to set up payroll calculation frequencies.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

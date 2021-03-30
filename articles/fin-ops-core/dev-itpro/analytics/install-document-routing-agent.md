@@ -4,7 +4,6 @@
 title: Install the Document Routing Agent to enable network printing
 description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 

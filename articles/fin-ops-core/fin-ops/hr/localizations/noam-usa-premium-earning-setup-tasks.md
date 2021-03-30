@@ -4,7 +4,6 @@
 title: Set up premium earnings
 description: This topic provides information about premium earnings and how to set them up.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

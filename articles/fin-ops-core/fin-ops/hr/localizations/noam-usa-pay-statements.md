@@ -4,7 +4,6 @@
 title: Generate and work with pay statements
 description: This topic describes the process for generating pay statements.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Troubleshoot service authentication issues
 description: This topic provides some tips for troubleshooting issues that involve service authentication.
 author: nimakms
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

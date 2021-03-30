@@ -4,7 +4,6 @@
 title: Embed canvas apps from Power Apps
 description: This topic explains how to embed canvas apps from Microsoft Power Apps into the client to augment the product's functionality.
 author: jasongre
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 

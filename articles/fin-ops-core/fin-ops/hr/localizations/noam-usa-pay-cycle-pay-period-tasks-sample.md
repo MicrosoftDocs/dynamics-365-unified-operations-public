@@ -4,7 +4,6 @@
 title: Set up pay cycles and pay periods
 description: This topic explains setup variations in pay cycles, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

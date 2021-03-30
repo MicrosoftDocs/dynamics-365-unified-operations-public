@@ -4,7 +4,6 @@
 title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
-manager: AnnBe
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 

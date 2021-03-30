@@ -4,7 +4,6 @@
 title: General form guidelines
 description: This topic contains the guidelines that apply to all forms. This checklist must be used in addition to any pattern-specific guidelines.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Fields and Field Groups subpattern
 description: This topic provides information about the Field and Field Groups form subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 

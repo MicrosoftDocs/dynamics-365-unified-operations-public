@@ -4,7 +4,6 @@
 title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
-manager: AnnBe
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: 

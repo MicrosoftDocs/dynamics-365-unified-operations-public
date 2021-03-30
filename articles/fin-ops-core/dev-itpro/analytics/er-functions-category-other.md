@@ -4,7 +4,6 @@
 title: List of ER functions in the business domain–specific category
 description: This topic provides information about the business domain–specific functions that are supported in Electronic reporting (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 

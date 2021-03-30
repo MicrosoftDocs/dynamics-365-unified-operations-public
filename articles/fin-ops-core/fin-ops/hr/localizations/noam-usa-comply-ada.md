@@ -4,7 +4,6 @@
 title: Comply with the Americans with Disabilities Act (ADA)
 description: This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA).
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

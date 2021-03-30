@@ -4,7 +4,6 @@
 title: Code Upgrade Service user guide
 description: The Code Upgrade Service has been deprecated. Use the Upgrade analysis tool. 
 author: kfend
-manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

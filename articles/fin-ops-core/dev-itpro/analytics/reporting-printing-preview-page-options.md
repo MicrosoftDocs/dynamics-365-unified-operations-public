@@ -4,7 +4,6 @@
 title: Document reporting preview options 
 description: This topic provides information about the options available in the embedded document reporting previewer.
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Manage recruiting processes
 description: This article describes a concept that recruiters can use to track the steps in a recruiting process.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

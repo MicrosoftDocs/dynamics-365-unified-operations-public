@@ -4,7 +4,6 @@
 title: Encryption in Finance and Operations apps
 description: This topic describes the encryption technology that is used to protect customer data while at rest in an environment's SQL Server database and Azure Storage.
 author: nedb
-manager: 
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 

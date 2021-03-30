@@ -4,7 +4,6 @@
 title: Manage support experiences for Finance and Operations apps
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 

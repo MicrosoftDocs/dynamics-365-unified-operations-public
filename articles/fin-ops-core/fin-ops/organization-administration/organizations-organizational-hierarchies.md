@@ -4,7 +4,6 @@
 title: Organizations and organizational hierarchies overview
 description: Organizational hierarchies represent the relationships between the organizations that make up your business.
 author: sericks007
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
