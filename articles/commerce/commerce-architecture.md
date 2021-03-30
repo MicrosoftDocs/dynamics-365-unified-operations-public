@@ -78,10 +78,6 @@ Modern POS is a cross-platform (Windows, iOS, and Android), multi–form factor 
 
 In addition to standard "cash and carry" transaction processing, Modern POS includes features for assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, cash/shift management, and reporting. For more information, see [Modern POS (MPOS) architecture](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-modern-pos-architecture) and [Choose between Modern POS (MPOS) and Cloud POS](https://docs.microsoft.com/dynamics365/commerce/mpos-or-cpos).
 
-#### Store Commerce
-
-The Store Commerce app is a Windows store application which supports similar functionalities as Modern POS wihtout offline. The app is cross-platform (Windows, iOS, and Android) and multi–form factor (desktop, tablet, and phone). It is in-store for first-line workers, such as cashiers, sales associates, stock clerks, and store managers. It can be deployed as an app that has offline capabilities. It can also be deployed in the cloud and accessed through a web browser. The application is role-based and fully configurable from headquarters. It's also highly customizable and can be extended or integrated into third-party services by using the Retail software development kit (SDK).
-
 #### E-commerce storefront
 
 The e-commerce storefront is the customer-facing website rendering system. It's built on the React.js framework, and uses a combination of server-side and client-side rendering to deliver responsive web experiences for one or more online channels. Although the storefront has a rich set of out-of-box capabilities, it's also highly customizable, and delivers an efficient and scalable solution for online business. For more information, see [Online store overview](https://docs.microsoft.com/dynamics365/commerce/online-store-overview).
