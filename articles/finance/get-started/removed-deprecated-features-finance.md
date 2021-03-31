@@ -44,7 +44,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### LCS repository as a storage option for Electronic reporting configurations
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Replaced with the new Regulatory Configuration Service (RCS) Global repository |
 | **Replaced by another feature?**   | Yes |
@@ -123,7 +123,8 @@ This list is intended to help you consider these removals and deprecations for y
 ## Features removed or deprecated in the Finance 10.0.7 release
 
 ### Workflow request change dialog box no longer includes user selection drop-down list
-|   |  |
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Changed to the feature with account groups selection.  |
 | **Replaced by another feature?**   | Yes |

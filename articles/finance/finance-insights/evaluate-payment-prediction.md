@@ -72,7 +72,7 @@ For a deeper analysis of the results, a good starting point is to review the "Co
 
 You can expand this data in the following way.
 
-|                          | Predicted On time | Predicted Late | Predicted Very late |
+| &nbsp;                   | Predicted On time | Predicted Late | Predicted Very late |
 |--------------------------|-------------------|----------------|---------------------|
 | Actual on time payment   | **71**            | 0              | 21                  |
 | Actual late payment      | 5                 | **0**          | 27                  |
