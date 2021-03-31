@@ -111,7 +111,7 @@ After you've edited an asset, follow these steps to move the edited asset back t
 
 The asset is saved from the project-level Asset library back to the Shared asset library, and the scope is set to **Me**.
 
-# Asset library (Preview) 
+## Asset library (Preview) 
 To improve the performance and reliability of the Asset library, we’re enabling a Preview version of the Asset library with an improved page loading experience. 
 
 The Preview version of the Asset library will be available for both the **Shared asset library** and the **project-level Asset library** across all LCS regions and project types. 
