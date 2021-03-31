@@ -4,7 +4,6 @@
 title: Create custom localized error messages for payment terminal extensions
 description: This topic explains how to create custom error messages for payment terminal extensions.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
 ms.prod: 

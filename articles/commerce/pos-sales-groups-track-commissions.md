@@ -4,7 +4,6 @@
 title: Track commissions in the point of sale (POS) by using sales groups
 description: It's a common retail practice to track sales by the associate who worked with the customer—providing assistance, up-selling, cross-selling, and processing the transaction.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

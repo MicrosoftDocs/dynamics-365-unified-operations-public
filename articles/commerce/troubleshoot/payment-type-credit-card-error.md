@@ -4,7 +4,6 @@
 title: Payment type must be credit card error on the sales order page
 description: This topic provides troubleshooting guidance that can help when an error message is shown on the sales order page after an order is synced.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 

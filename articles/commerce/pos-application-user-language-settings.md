@@ -4,7 +4,6 @@
 title: Point of sale (POS) application and user language settings
 description: This topic describes how to change language settings in Modern POS (MPOS) and Cloud POS.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

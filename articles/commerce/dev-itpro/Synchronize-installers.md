@@ -4,7 +4,6 @@
 title: Synchronize self-service installers in Dynamics 365 Commerce
 description: This topic explains how to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism.
 author: jashanno
-manager: AnnBe
 ms.date: 07/14/2020
 ms.topic: article
 ms.prod: 

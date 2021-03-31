@@ -3,7 +3,6 @@
 title: Deployment guidelines for Advance Invoice report printing for Czech Republic, Hungary, and Poland
 description: This topic describes how to build extensions of the Commerce components to enable printing advance invoices from POS in Czech Republic, Hungary, and Poland.
 author: anmukh
-manager: ezubov
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 

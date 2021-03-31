@@ -4,7 +4,6 @@
 title: Base price and trade agreements
 description: This procedure walks through creating channel-specific sales price trade agreements. 
 author: josaw1
-manager: AnnBe 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  

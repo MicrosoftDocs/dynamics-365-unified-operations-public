@@ -4,7 +4,6 @@
 title: Generate online channel reports
 description: This topic describes how to generate reports for your online channel in Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 

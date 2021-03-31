@@ -5,7 +5,6 @@
 title: What's new or changed in Dynamics 365 for Retail version 10.0.5
 description: This topic describes features that are in new or changed in Dynamics 365 for Retail. 
 author: josaw1
-manager: AnnBe
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 

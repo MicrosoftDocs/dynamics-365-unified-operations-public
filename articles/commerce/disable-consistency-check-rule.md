@@ -3,7 +3,6 @@
 title: Disable rules in the retail transaction consistency checker
 description: This topic describes the functionality for disabling transaction consistency checker rules in Microsoft Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: index-page
 ms.prod: 

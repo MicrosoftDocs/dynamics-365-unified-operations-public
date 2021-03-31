@@ -4,7 +4,6 @@
 title: Goods and Services Tax (GST) integration for cash registers for India
 description: This topic provides an overview of the cash register functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-manager: annbe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod:

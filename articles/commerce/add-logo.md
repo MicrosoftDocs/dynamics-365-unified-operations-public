@@ -4,7 +4,6 @@
 title: Add a logo
 description: This topic describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 

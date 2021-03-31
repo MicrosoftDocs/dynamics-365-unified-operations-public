@@ -4,7 +4,6 @@
 title: Set product quantity limits for B2B e-commerce sites
 description: This topic describes how to set product quantity limits for business-to-business (B2B) e-commerce sites.
 author: josaw1
-manager: AnnBe
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 

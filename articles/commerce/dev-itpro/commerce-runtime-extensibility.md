@@ -4,7 +4,6 @@
 title: Commerce runtime (CRT) extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server.
 author: mugunthanm
-manager: AnnBe
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: 
