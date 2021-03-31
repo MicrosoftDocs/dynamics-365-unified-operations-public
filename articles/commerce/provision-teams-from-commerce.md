@@ -96,10 +96,14 @@ To verify that the organizational hierarchy was uploaded to Microsoft Teams, fol
 
 ## Additional resources
 
-[Dynamics 365 Commerce and Microsoft Teams integration](commerce-teams-integration.md)
-
-[Synchronize task management between Microsoft Teams and Dynamics 365 Commerce POS](synchronize-tasks-teams-pos.md)
+[Dynamics 365 Commerce and Microsoft Teams integration overview](commerce-teams-integration.md)
 
 [Enable Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md)
 
+[Synchronize task management between Microsoft Teams and Dynamics 365 Commerce POS](synchronize-tasks-teams-pos.md)
+
 [Manage user roles in Microsoft Teams](manage-user-roles-teams.md)
+
+[Map stores and teams if there are pre-existing teams in Microsoft Teams](map-stores-existing-teams.md)
+
+[Dynamics 365 Commerce and Microsoft Teams integration FAQ](teams-integration-faq.md)
