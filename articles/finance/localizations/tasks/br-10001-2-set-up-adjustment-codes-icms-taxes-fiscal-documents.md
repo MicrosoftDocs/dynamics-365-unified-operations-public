@@ -4,7 +4,6 @@
 title: Set up adjustment codes for ICMS taxes on fiscal documents (Brazil)
 description: You can create tax adjustment codes to manually adjust ICMS tax amounts on fiscal documents. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  

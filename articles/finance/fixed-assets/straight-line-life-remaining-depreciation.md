@@ -4,7 +4,6 @@
 title: Straight line life remaining depreciation
 description: This article gives an overview of the Straight line life remaining method of depreciation.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

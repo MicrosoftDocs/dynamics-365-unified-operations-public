@@ -4,7 +4,6 @@
 title: Get started with Electronic invoicing for Mexico
 description: This topic provides information that will help you get started with Electronic invoicing for Mexico.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 

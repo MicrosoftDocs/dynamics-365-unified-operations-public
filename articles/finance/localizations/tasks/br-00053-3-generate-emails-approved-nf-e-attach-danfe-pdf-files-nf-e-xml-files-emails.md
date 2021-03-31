@@ -4,7 +4,6 @@
 title: Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails (Brazil)
 description: You can generate a PDF file from the Documento Auxiliar da Nota Fiscal Eletrônica (DANFE) for a Nota Fiscal eletrônica (NF-e). 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  

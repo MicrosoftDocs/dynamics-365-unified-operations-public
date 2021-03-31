@@ -4,7 +4,6 @@
 title: Set up officials (Russia)
 description: This topic explains how to set up officials in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/11/2018
 ms.topic: article
 ms.prod: 

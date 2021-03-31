@@ -4,7 +4,6 @@
 title: Take a cash discount outside the cash discount period
 description: This article provides two scenarios that show how a cash discount can be taken even if the payment is made outside the cash discount period.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 

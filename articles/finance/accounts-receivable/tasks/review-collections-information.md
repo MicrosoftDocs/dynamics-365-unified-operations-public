@@ -4,7 +4,6 @@
 title: Review collections information
 description: This topic explains how to review collections information as well as various setup options and collections transactions. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  

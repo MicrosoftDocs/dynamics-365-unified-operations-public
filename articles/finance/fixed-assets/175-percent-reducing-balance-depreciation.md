@@ -4,7 +4,6 @@
 title: 175 percent reducing balance depreciation
 description: This topic gives an overview of the 175 percent reducing balance method of depreciation.
 author: saraschi2
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 

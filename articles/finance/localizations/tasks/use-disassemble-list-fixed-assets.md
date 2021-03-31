@@ -4,7 +4,6 @@
 title: Use disassemble list for fixed assets
 description: In Japan, you can transfer a component of a fixed asset to inventory. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

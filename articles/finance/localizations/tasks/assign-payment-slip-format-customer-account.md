@@ -4,7 +4,6 @@
 title: Assign a payment slip format to a customer account
 description: This procedure walks you through setting up the payment slip attachment format for a selected customer. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

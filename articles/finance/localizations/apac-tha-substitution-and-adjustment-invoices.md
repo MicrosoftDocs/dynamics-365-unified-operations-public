@@ -11,7 +11,6 @@ ms.technology:
 
 # optional metadata
 
-manager: vastrup
 ms.search.form: CustInvoiceJournal, CustInvoiceJourAdjustment, ProjInvoiceListPage, CustParameters
 audience: Application User
 ms.reviewer: kfend

@@ -6,7 +6,6 @@ ms.date: 01/11/2021
 ms.topic: article
 author: akroshkina
 ms.author: anasyash
-manager: tfehr
 ---
 
 # Cash flow tax registers

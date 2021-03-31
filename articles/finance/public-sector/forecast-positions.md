@@ -4,7 +4,6 @@
 title: Forecast position distribution
 description: This topic provides information about the position budgeting functionality that is available for the public sector. 
 author: velofog
-manager: AnnBe
 ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 

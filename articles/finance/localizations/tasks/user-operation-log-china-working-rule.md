@@ -4,7 +4,6 @@
 title: CN-00016 User operation log by China working rule
 description: This procedure demonstrates how to generate a user operation log. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

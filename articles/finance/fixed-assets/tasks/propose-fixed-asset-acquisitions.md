@@ -4,7 +4,6 @@
 title: Propose fixed asset acquisitions
 description: This topic describes how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 03/17/2021
 ms.topic: business-process 
 ms.prod:  

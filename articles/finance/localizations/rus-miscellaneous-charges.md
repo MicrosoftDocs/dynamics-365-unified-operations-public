@@ -3,7 +3,6 @@
 title: Allocation of miscellaneous charges in proportion to weight and volume 
 description: This topic provides information about allocating miscellaneous charges.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 

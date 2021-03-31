@@ -4,7 +4,6 @@
 title: Create main accounts for the GST posting type
 description: This topic explains how to create main accounts for the GST posting type. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

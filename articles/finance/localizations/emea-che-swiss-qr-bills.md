@@ -4,7 +4,6 @@
 title: Swiss QR-bills
 description: This topic provides information about how to generate QR-bills (QR-slips) and process incoming QR-bills.
 author: neserovleo
-manager: AnnBe
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: 

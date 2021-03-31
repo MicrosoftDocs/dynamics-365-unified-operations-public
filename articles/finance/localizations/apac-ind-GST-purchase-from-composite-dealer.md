@@ -4,7 +4,6 @@
 title: Purchases from composite dealers
 description: This topic provides information about purchases that are made from a composite dealer.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

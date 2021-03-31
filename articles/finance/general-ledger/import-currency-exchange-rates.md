@@ -4,7 +4,6 @@
 title: Import currency exchange rates
 description: This topic provides information about the requirements for importing foreign exchange reference rates that are published by exchange rate providers.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 

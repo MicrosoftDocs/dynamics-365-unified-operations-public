@@ -4,7 +4,6 @@
 title: Register and post a postdated check for a customer
 description: You can register details of a postdated check received from a customer. 
 author: kweekley
-manager: AnnBe 
 ms.date: 10/26/2017
 ms.topic: business-process 
 ms.prod:  
