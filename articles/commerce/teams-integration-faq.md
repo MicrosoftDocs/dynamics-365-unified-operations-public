@@ -59,7 +59,7 @@ For information about how to configure the Commerce POS sign-in experience to us
 
 ### How do I map stores and corresponding teams in Commerce headquarters if my organization has already created teams in Microsoft Teams?
 
-For information on how to map stores and teams if there are pre-existing teams, see [Map stores and corresponding teams if your organization has pre-existing teams in Microsoft Teams](map-stores-pre-existing-teams.md).
+For information on how to map stores and teams if there are pre-existing teams, see [Map stores and corresponding teams if your organization has pre-existing teams in Microsoft Teams](map-stores-existing-teams.md).
 
 ### How do I clear the Microsoft Graph API token stored in the session storage?
 
