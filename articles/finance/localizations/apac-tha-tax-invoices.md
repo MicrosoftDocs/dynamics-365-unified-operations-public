@@ -77,7 +77,7 @@ should be set up before you can start to work with tax invoices.
 | Receipt / Tax invoice | The number sequence reference for receipts or tax invoices. |
 
 
-1.  Go to **Accounts payable &gt; Setup &gt; Accounts payable
+2.  Go to **Accounts payable &gt; Setup &gt; Accounts payable
     parameters**, and then, on the **Number sequences** tab, set up a
     number sequence for the **Vendor unrealized reversal ID** reference
     that you want to associate with the vendor.
@@ -117,16 +117,16 @@ For more information, see [Thailand unrealized and realized VAT](\apac-tha-unrea
 -   If you receive payment from the customer when you post a free text
     invoice, follow these steps:
 
-1.  Go to **Accounts receivable &gt; Invoices &gt; All free text
+    1.  Go to **Accounts receivable &gt; Invoices &gt; All free text
     invoices**.
 
-2.  In the **Invoice lines** section, in the **Sales tax** and **Item
+    2.  In the **Invoice lines** section, in the **Sales tax** and **Item
     sales tax** **group** fields, select the corresponding sales tax
     group for realized VAT.
 
-3.  On the Action Pane, select **Post** to post the invoice.
+    3.  On the Action Pane, select **Post** to post the invoice.
 
-4.  In the **Post free text invoice** dialog box, in the **Parameters**
+    4.  In the **Post free text invoice** dialog box, in the **Parameters**
     section, set the **Print invoice** option to **Yes**.
 
     A tax invoice is printed. Send this invoice to the customer.
@@ -171,14 +171,14 @@ The following illustration shows an example of a printed tax invoice.
 
 A tax invoice or a receipt/tax invoice is printed.
 
-Note
-
--   If the lines on the invoice that a payment is settled to have a
+> [!NOTE]
+>
+>-   If the lines on the invoice that a payment is settled to have a
     realized tax type, a receipt is printed. The receipt shows the
     invoice lines together with the realized tax type and the line
     total.
-
--   If multiple lines on the settled invoice have realized and
+>
+>-   If multiple lines on the settled invoice have realized and
     unrealized tax types, a receipt and a receipt/tax invoice are
     printed. The receipt/tax invoice shows the invoice lines together
     with the unrealized tax type and the line total.
@@ -186,6 +186,7 @@ Note
 The following illustration shows an example of a printed receipt.
 
 ![Timeline Description automatically generated with low confidence](media/apac-tha-tax-invoices-receipt.png)
+
 
 The following illustration shows an example of a printed receipt/tax
 invoice.
