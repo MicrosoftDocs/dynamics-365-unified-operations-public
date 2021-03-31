@@ -28,6 +28,8 @@ ms.dyn365.ops.version:
 
 # Tax invoices
 
+[!include [banner](../includes/banner.md)]
+
 This topic explains how to set up tax invoices and when they are
 generated.
 
@@ -90,7 +92,7 @@ when a sales order, a purchase invoice, a purchase order, or a payment
 that generates a realized VAT entry is posted. If an unrealized VAT
 entry is generated, an invoice is generated instead of a tax invoice.
 
-For more information, see [Thailand unrealized and realized VAT](\apac-tha-unrealized-vat.md).
+For more information, see [Thailand unrealized and realized VAT](apac-tha-unrealized-vat.md).
 
 -   If you receive payment from the customer when you post a sales
     order, follow these steps:
