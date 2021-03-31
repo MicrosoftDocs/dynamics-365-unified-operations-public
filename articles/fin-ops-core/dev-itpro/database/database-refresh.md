@@ -35,6 +35,8 @@ ms.dyn365.ops.version: AX 7.0.0
 You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of the database to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional and financial reporting databases of your production environment into the target, sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
 
 > [!IMPORTANT]
+> Copying production data during business hours or peak hours could have an impact on the production system. So it's a recommended practise to do the refresh database operation during off peak hours.
+> [!IMPORTANT]
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.
 
 ## Self-service database refresh
