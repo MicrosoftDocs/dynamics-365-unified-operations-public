@@ -30,8 +30,8 @@ Here are some key things to note about metadata.
 
 - **title** - The title will appear in search engine results. 
     - The title doesn't need be identical to the title in your H1 heading, though we prefer that the TOC entry, the title, and the H1 heading all match. 
-    - The title should contain 65 characters or fewer.
-- **description** - This is the full description that appears in the search results. It should contain 160 characters or fewer.
+    - The title should contain 65 or fewer characters.
+- **description** - This is the full description that appears in the search results. It should contain 160 or fewer characters.
 - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
 - **ms.date** - This should be the first proposed publication date, in the mm/dd/yy format.
 - **ms.topic** - Enter "article" here.
