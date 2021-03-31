@@ -48,19 +48,19 @@ complete the following steps.
 
 4.  In the **Calculation method** field, select one of the following:
 
-   - **Whole amount**: Determine the percentage of the expenses eligible
+    - **Whole amount**: Determine the percentage of the expenses eligible
     for tax accounting in the current period.
 
-   - **Interval**: Determine the amount limit for tax accounting in the
+    - **Interval**: Determine the amount limit for tax accounting in the
     current period.
 
 5.  If you selected **Whole amount**, on the **Values** FastTab, do the
     following:
 
-   -   In the **Start date** field, enter the date from which the value of
+    -   In the **Start date** field, enter the date from which the value of
     the rate will be used in the sequence of calculation.
 
-   -   In the **Value** field, enter the ratio value that will be used in
+    -   In the **Value** field, enter the ratio value that will be used in
     the sequence of calculation.
 
 ![1 rated expenses](media/1 rated expenses.png)
@@ -68,10 +68,10 @@ complete the following steps.
 6.  If you selected **Interval**, on the **Values** FastTab, do the
     following:
 
-   -   In the **Start date** field, enter the date from which the value of
+    -   In the **Start date** field, enter the date from which the value of
     the rate will be used in the sequence of calculation
 
-   -   In the **Criterion type** field, select the rate calculation
+    -   In the **Criterion type** field, select the rate calculation
     criteria type, **Minimum** or **Maximum**.
 
    On the **Intervals** FastTab:
@@ -122,20 +122,20 @@ rated expenses.
 10. In the **Register** **field** column, select a value to determine
     the column of tax register to which the line value should be output:
 
-   - **Amount**: The total amount of the expense.
+    - **Amount**: The total amount of the expense.
 
-   - **Quantity**: The number of rated units. This value comes from the
+    - **Quantity**: The number of rated units. This value comes from the
     corresponding field in the source document.
 
-   - **Price**: The amount per unit. This value comes from the
+    - **Price**: The amount per unit. This value comes from the
     corresponding field in the source document.
 
-   - **Normalized amount**: The rated amount of the expense.
+    - **Normalized amount**: The rated amount of the expense.
 
-   - **Ratio**: The calculated amount using the ratio for the expense
+    - **Ratio**: The calculated amount using the ratio for the expense
     code from the sequences of calculation.
 
-   - **Deferral amount**: The difference between the total amount and
+    - **Deferral amount**: The difference between the total amount and
     normalized amount accounted for in the expenses of the future
     period.
 
