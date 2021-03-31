@@ -153,6 +153,7 @@ Data transferred to and stored in the US data centers will be deleted according 
 In the current release for scale units certain capabilities are not available yet and will be added in incremental releases over time.
 
 - The scale unit add-ins can only be applied if your Lifecycle Services (LCS) project today is managed in a US data center (lcs.dynamics.com). Going forward, when more LCS  projects will be managed in other data regions, support will also be added for those regions.
+- Scale unit add-ins are not available in sovereign clouds like Mooncake and GCC.  
 - The tenant for your LCS project must have already been converted to support the Service Fabric hosting model.
 - Management capabilities that help on the movement of workloads are limited. Certain management operations are not supported in a self-service manner and you might need to request support through your partner or Microsoft contact. Examples are certain workload movement between scale units, and temporary ad-hoc movements in disaster scenarios.
 - Metrics and measures that may help on selecting the best application for your scale units are not available yet. Please work with your Microsoft contact or implementation partner to select the most beneficial application.
