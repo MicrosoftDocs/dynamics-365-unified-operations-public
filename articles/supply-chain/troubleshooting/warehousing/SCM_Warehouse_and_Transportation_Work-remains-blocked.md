@@ -38,7 +38,7 @@ On the Action Pane, open the **Related information** and, from the **Related inf
 If the previous steps didn't resolve the issue, you can cancel the work using the following steps:
 
 1. Go to **Warehouse management \> Periodic tasks \> Clean up \> Cancel work**.
-1. In the **Work ID** field, specify the work ID that you want to cancel, and which currently has a **Work status** of *Open*, *In progress*, *Cancelled*, *Combined* or *Closed*.
+1. In the **Work ID** field, specify the work ID that you want to cancel, and which currently has a **Work status** of *Open*, *In progress*, *Canceled*, *Combined* or *Closed*.
 1. Select **OK**.
 1. Select **Yes** to confirm that you want to cancel the work.
 

@@ -27,7 +27,7 @@ The system displays the following error message:
 The wave data can't be cleaned up and you see one of the following symptoms:
 
 - The **Wave status** is set to *Executing*.
-- On the Action Pane, open the **Wave** tab and, from the **Wave** group, select **Batch job**. The **Status** is not set to *Ended*, *Error* or *Canceled*, indicating that a batch job is currently running.
+- On the Action Pane, open the **Wave** tab and, from the **Wave** group, select **Batch job**. The **Status** is not set to *Ended*, *Error*, or *Canceled*, indicating that a batch job is currently running.
 
 ## Resolution
 
