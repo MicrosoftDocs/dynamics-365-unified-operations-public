@@ -49,14 +49,19 @@ For the store selector to display available stores, the fulfillment group must b
 
 In addition, for each store in the fulfillment group the latitude and longitude of the store location must be defined in headquarters.
 
-To enter the latitude and longitude values for a store location, follow these steps.
+To enter the latitude and longitude values for a store location in Commerce headquarters, follow these steps.
 
 1. Go to **Inventory management \> Setup \> Inventory breakdown**.
 1. Select the warehouse location in the left pane.
 1. On the **Addresses** FastTab, select **Advanced**.
+
     ![Example of store details in headquarters](./media/Store-address.png)
+
+1. On the Action Pane, select **Edit**.
 1. On the **General** FastTab, enter values for **Latitude** and **Longitude**.
+
     ![Example of latitude and longitude setup for a store in headquarters](./media/Store-latitude-longitude.png)
+
 1. On the Action Pane, select **Save**. 
 
 ## Bing Maps integration
