@@ -4,7 +4,6 @@
 title: Process existing payroll payments
 description: This topic describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Report a production outage
 description: This topic explains how to report a production outage through Lifecycle Services (LCS).
 author: angelmarshall
-manager: AnnBe
 ms.date: 05/06/2019
 ms.topic: article
 ms.prod: 

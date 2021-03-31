@@ -4,7 +4,6 @@
 title: Deploy Retail e-Commerce dev/test environments on Azure
 description: This topic explains how to deploy a Retail e-commerce dev/test environment on Microsoft Azure.
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012 

@@ -2,7 +2,6 @@
 title: Dual-write mapping reference
 description: This topic lists the column mappings for each dual-write mapping.
 author: robinarh
-manager: tfehr
 ms.date: 12/22/2020
 ms.topic: reference
 audience: Developer

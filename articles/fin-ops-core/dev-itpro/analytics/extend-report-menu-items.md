@@ -4,7 +4,6 @@
 title: Extend report menu items to redirect user navigation
 description: This topic shows how to extend existing application menu items so that navigations are redirected to a custom reporting solution. 
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

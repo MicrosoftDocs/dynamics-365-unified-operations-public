@@ -4,7 +4,6 @@
 title: Identify and resolve conflicts in segregation of duties
 description: This topic explains how to identify and resolve conflicts in segregation of duties.
 author: peakerbl
-manager: AnnBe 
 ms.date: 01/04/2021
 ms.topic: business-process 
 ms.prod:  

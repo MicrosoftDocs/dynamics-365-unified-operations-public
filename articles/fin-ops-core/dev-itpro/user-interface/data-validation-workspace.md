@@ -4,7 +4,6 @@
 title: Data validation checklist workspace
 description: The Data validation checklist workspace lets you track data validation processes across companies, areas, and people.
 author: bking
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 

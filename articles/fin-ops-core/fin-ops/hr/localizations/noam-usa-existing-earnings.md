@@ -4,7 +4,6 @@
 title: Process existing earnings
 description: This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Best practices for the Acceptance test library
 description: This topic provides best practices for the Acceptance test library.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 

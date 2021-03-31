@@ -4,7 +4,6 @@
 title: Build operations
 description: This topic reviews the process to build projects and full build of model packages.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:

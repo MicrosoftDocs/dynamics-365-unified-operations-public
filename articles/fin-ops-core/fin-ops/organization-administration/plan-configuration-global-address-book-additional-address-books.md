@@ -4,7 +4,6 @@
 title: Plan for the global address book and other address books
 description: This topic describes the considerations and decisions that you must make during the planning process.
 author: msftbrking 
-manager: AnnBe
 ms.date: 01/13/2020
 ms.topic: article
 ms.prod: 

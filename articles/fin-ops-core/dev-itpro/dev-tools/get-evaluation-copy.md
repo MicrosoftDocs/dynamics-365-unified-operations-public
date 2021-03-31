@@ -4,7 +4,6 @@
 title: Get evaluation copies
 description: A public preview is available. 
 author: RobinARH
-manager: AnnBe
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 

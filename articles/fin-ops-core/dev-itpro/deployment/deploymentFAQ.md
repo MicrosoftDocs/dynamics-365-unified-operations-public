@@ -4,7 +4,6 @@
 title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
-manager: AnnBe
 ms.date: 03/30/2021
 ms.topic: article
 ms.prod: 

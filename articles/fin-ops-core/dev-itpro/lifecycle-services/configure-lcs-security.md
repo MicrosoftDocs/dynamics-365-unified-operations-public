@@ -4,7 +4,6 @@
 title: Configure Lifecycle Services (LCS) security
 description: This topic explains how security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level.
 author: AngelMarshall
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 

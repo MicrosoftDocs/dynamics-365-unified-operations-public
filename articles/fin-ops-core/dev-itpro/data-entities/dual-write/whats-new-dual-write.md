@@ -4,7 +4,6 @@
 title: What's new or changed in dual-write
 description: This topic provides links to the release plans, major announcements, and documentation for dual-write.
 author: robinarh
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 

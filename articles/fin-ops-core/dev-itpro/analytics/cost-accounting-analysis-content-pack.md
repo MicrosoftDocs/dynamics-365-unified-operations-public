@@ -4,7 +4,6 @@
 title: Cost accounting analysis Power BI content
 description: This topic describes what is included in the Cost accounting analysis Power BI content.
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 

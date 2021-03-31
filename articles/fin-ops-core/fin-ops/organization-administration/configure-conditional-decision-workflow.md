@@ -4,7 +4,6 @@
 title: Configure conditional decisions in a workflow
 description: Use the following procedure to configure the properties of a conditional decision.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

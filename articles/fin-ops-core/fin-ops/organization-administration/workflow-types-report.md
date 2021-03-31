@@ -4,7 +4,6 @@
 title: Workflow types report
 description: This topic points you to a report that lists the available workflow types.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 

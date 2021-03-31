@@ -4,7 +4,6 @@
 title: Pay statements and payment generation FAQ
 description: This topic answers questions that are related to activities that go beyond standard payroll processing.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

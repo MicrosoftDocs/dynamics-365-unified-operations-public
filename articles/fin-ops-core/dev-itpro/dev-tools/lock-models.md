@@ -4,7 +4,6 @@
 title: Turn off model customization and deprecate functionality
 description: This article describes the process of disabling customization of a model. By following this process, you make it ineligible for over-layering.
 author: pvillads
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
