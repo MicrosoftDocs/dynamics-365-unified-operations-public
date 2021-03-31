@@ -34,7 +34,7 @@ This topic explains how to set up your environment to use the Tax Calculation ma
 
 1. Set up power platform integration in LCS (Lifecycle Services). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
 2. Set up Dynamics 365 Finance and Dynamics 365 Dataverse. For more information, see [Getting the solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Import the *prerequisite tax service virtual entity solution* from [Tax service virtual entity](https://go.microsoft.com/fwlink/?linkid=2158160).
+3. Import the *Prerequisite tax service virtual entity solution* from the [Tax service virtual entity](https://go.microsoft.com/fwlink/?linkid=2158160).
 4. Set up the Dynamics 365 Regulatory Configuration Service (RCS). 
 5. Cntact your Microsoft solution architect to enable flighting of the following features:
 
@@ -47,7 +47,7 @@ This topic explains how to set up your environment to use the Tax Calculation ma
       - (Preview) Tax Service Dataverse datasources support
       - (Preview) Globalization features
 
-5. Log in to RCS using a tenant admin account
+5. Log in to RCS using a tenant admin account.
 6. Go to **Electronic reporting** > **Connected applications**. 
 7. Select **New** to add a record, and enter the following field information. 
 
