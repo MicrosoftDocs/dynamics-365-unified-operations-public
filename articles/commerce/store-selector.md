@@ -45,7 +45,7 @@ The store selector module lets users enter a location (city, state, address, and
 
 ## Fulfillment group setup in Commerce headquarters
 
-For the store selector to display available stores, the fulfillment group must be set up in Commerce headquarters. For more information, see [Fulfillment group setup](customer-orders-overview.md).
+For the store selector to display available stores, the fulfillment group must be set up in Commerce headquarters. For more information, see [Set up fulfillment groups](customer-orders-overview.md#set-up-fulfillment-groups).
 
 In addition, for each store in the fulfillment group the latitude and longitude of the store location must be defined in headquarters.
 
