@@ -28,15 +28,15 @@ This topic lists the Visual Studio 2017 components that are required to run the 
 The supported editions are Visual Studio 2017 Professional and Visual Studio 2017 Enterprise.
 
 > [!NOTE]
-> Different Visual Studio editions have different licensing requirements and costs. Consult the [Visual Studio website](https://visualstudio.microsoft.com) for more information.
+> Different Visual Studio editions have different licensing requirements and costs. For more information, see [Visual Studio website](https://visualstudio.microsoft.com).
 
 ## Required Visual Studio Components
 
-The following tables lists the required Visual Studio components.
+The following table lists the required Visual Studio components.
 
 | Type | Name | Required | Notes |
 | --- | --- | --- | --- |
 | Workload | .NET desktop development | Yes | |
 | Individual Component | Modeling SDK | Yes | |
 | Individual Component | Directed Graph Markup Language (.dgml) editor | No | This component is used for dependency graph features. |
-| Marketplace | Microsoft Reporting Services Projects | Yes (for report development) | This component is needed for report development. If the component is not installed, Visual Studio will prompt you when you try to open report designs. |
+| Marketplace | Microsoft Reporting Services Projects | Yes (for report development) | This component is needed for report development. If the component isn't installed, Visual Studio will prompt you when you try to open report designs. |
