@@ -4,7 +4,6 @@
 title: Use Barcode data sources to generate bar code images
 description: This topic explains how to use Barcode data sources to generate bar code images.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 

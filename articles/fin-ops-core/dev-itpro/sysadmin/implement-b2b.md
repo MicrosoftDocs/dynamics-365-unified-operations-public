@@ -4,7 +4,6 @@
 title: Export business-to-business (B2B) users to Azure Active Directory
 description: This topic provides information about implementing the business-to-business transaction functionality.
 author: sarvanisathish
-manager: AnnBe
 ms.date: 04/09/2019
 ms.topic: article
 ms.prod: 

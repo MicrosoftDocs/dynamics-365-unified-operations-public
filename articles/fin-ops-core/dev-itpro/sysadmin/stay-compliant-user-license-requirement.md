@@ -4,7 +4,6 @@
 title: Stay compliant with user licensing requirements
 description: This topic provides information about how you can stay compliant with the user licensing requirements for Finance and Operations apps.
 author: peakerbl 
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 

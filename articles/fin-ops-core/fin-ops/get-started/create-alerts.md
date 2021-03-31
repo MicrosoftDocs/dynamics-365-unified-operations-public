@@ -4,7 +4,6 @@
 title: Create alert rules
 description: This topic provides information about alerts and explains how to create an alert rule.
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 

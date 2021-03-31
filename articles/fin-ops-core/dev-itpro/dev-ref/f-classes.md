@@ -4,7 +4,6 @@
 title: F classes
 description: System API classes that start with the letter F.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

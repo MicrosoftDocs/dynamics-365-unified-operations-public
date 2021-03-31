@@ -4,7 +4,6 @@
 title: Add financial dimensions to aggregate measurements
 description: This topic explains how a power user can include financial dimensions in ready-made Power BI reports.
 author: MilindaV2 
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 

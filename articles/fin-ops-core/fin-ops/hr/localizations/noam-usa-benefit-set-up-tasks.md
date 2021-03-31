@@ -4,7 +4,6 @@
 title: Set up benefits
 description: This topic describes how to set up benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits.
 author: andreabichsel
-manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 

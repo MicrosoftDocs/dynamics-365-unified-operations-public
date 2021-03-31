@@ -4,7 +4,6 @@
 title: Removed or deprecated features home page
 description: This topic provides a list of help topics about removed or deprecated features in Finance and Operations apps.
 author: sericks007
-manager: tonyafehr
 ms.date: 03/10/2021
 ms.topic: article
 ms.prod:

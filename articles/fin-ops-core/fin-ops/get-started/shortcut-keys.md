@@ -4,7 +4,6 @@
 title: Keyboard shortcuts
 description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 

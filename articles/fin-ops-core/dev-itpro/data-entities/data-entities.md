@@ -4,7 +4,6 @@
 title: Data entities overview
 description: This topic describes data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 

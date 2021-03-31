@@ -4,7 +4,6 @@
 title: Security Development Tool
 description: This topic describes the user interface of the Security Development Tool.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

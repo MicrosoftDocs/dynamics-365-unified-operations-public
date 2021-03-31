@@ -4,7 +4,6 @@
 title: What's new or changed for extensibility
 description: This topic provides links to topics about extensibility updates.
 author: RobinARH
-manager: AnnBe
 ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Post payroll distributions and generate vendor invoices
 description: This topic walks you through the process for posting payroll distributions and generating the required vendor invoices.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

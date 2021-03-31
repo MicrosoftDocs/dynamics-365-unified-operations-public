@@ -4,7 +4,6 @@
 title: Write extensible code
 description: This topic provides information about how to write extensible code.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 

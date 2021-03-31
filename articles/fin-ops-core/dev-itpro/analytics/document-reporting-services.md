@@ -4,7 +4,6 @@
 title: Document Reporting Services
 description: This topic describes the reporting solution that simplifies service administration, increases developer productivity, and provides enhanced report viewing.
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

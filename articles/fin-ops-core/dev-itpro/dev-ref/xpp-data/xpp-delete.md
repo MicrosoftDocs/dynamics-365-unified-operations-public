@@ -4,7 +4,6 @@
 title: Delete data
 description: This topic describes the delete and doDelete methods in the X++ language.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod:

@@ -4,7 +4,6 @@
 title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod:

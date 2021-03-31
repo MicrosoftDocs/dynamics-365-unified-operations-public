@@ -4,7 +4,6 @@
 title: Information access and reporting
 description: This topic explains the various reporting options available as part of the platform.
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 

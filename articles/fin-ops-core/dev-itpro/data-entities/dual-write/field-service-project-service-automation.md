@@ -4,7 +4,6 @@
 title: Support for Field Service and Project Service Automation solutions
 description: This topic provides information about the support for Field Service solutions and Project Service Automation solutions.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/09/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: One Version service updates FAQ
 description: This topic provides clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
-manager: AnnBe
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Business events in financial period close
 description: This topic explains how to use business events in the financial period close business process to gain insights and provide internal controls.
 author: suhasrao1985
-manager: AnnBe
 ms.date: 10/11/2019
 ms.topic: article
 ms.prod: 
