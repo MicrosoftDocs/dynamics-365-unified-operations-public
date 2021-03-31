@@ -35,7 +35,7 @@ When a load line is created, the weight fields from the product will be defaulte
 1. Set **Check/Fix** to *Fix error*.
 1. In the check box list, select the **Warehouse load weight consistency check** check box and make sure that only this row is highlighted.
 1. At the top of the check box list, select the ellipsis button to open a drop-down list and then select **Dialog** from the list.
-1. The **Warehouse load weight consistency check** dialog box opens. Make the following settings to specify the values for which the consistency should run:
+1. The **Warehouse load weight consistency check** dialog box opens. Make the following settings to specify the values for which the consistency check should run:
 
     - **Load ID:** Specify a load ID. Leave this blank to check all load IDs.
     - **Item number:** Specify an item number. Leave this blank to check all items.
