@@ -42,10 +42,14 @@ For more information, see [Assign team owners and members in Microsoft Teams](ht
 
 ## Additional resources
 
-[Dynamics 365 Commerce and Microsoft Teams integration](commerce-teams-integration.md)
+[Dynamics 365 Commerce and Microsoft Teams integration overview](commerce-teams-integration.md)
+
+[Enable Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md)
 
 [Provision Microsoft Teams from Dynamics 365 Commerce](provision-teams-from-commerce.md)
 
 [Synchronize task management between Microsoft Teams and Dynamics 365 Commerce POS](synchronize-tasks-teams-pos.md)
 
-[Enable Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md)
+[Map stores and teams if there are pre-existing teams in Microsoft Teams](map-stores-existing-teams.md)
+
+[Dynamics 365 Commerce and Microsoft Teams integration FAQ](teams-integration-faq.md)
