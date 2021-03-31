@@ -112,13 +112,18 @@ In theory, no, you don't have to refresh the entity list. At most, you might hav
 
 ### Do you have guidance on when to use a virtual entity and when to use dual-write?
 
-Dual-write is only provided for a few key data entities where the data needs to be natively in Dataverse. Those data entities are not available as virtual entities.
+This is covered in the [integrations strategy overview section](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview).
 
 ### When adding records using virtual entities is there any way to use number sequences?
 Yes, if the Finance and Operations entity can auto generate number sequences, then it will work the same way from the virtual entity.
 
 ### Why does 'search view' not work in Power Apps?
 If there are no fields added in the quick find view for the entity, then the search box does nothing. The workaround is to add one or more fields of the entity to the quick find view.
+
+### The virtual entitiy performance is slow when the virtual entity has relationships to other entities. Any guidance on how to avoid such issues?
+There could be serveral reasons for slow performance of the query. This section will be updated as new patterns are identified. Below are the currently known patterns which can be used as a guidance.
+
+When virtual entities have relationships to other entities, the virtual entity framework needs to query the related entities if the field select list includes the foreign key values for the related entities. By default, queries against the entities return all fields unless the caller requests a specific set of fields (specifying a narrow select list is the guidance and best practice that should be followed). This can guard against slow performance.
 
 
 
