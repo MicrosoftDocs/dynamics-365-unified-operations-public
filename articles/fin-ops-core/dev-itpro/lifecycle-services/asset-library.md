@@ -117,11 +117,12 @@ To improve the performance and reliability of the Asset library, we’re enablin
 
 The Preview version of the Asset library will be available for both the **Shared asset library** and the **project-level Asset library** across all LCS regions and project types. 
 
-The Asset library (Preview) still supports all type of assets and has the same functionalities with a few enhancements – 
-1. Asset load on demand.  To reduce the page loading time, there will be no default asset displayed upon loading the asset library page until you click on the asset type you wish to access, and you won’t need to wait until the entire asset library page complete loading to navigate around the asset types.  
-2. Refresh for file assets.  A new refresh button is added to refresh a file list, you’ll be able to refresh a file asset list without having to refresh the entire page. 
+The Asset library (Preview) supports all types of assets and has the same functionalities with a few enhancements:
 
-You can still access the existing Asset library while trying out the Preview version, we’ll continue monitoring the performance and usage during the preview period for the coming month and address any known issues before we switch to the new experience permanently. 
+- **Asset load on demand**: To reduce the page loading time, there will be no default asset displayed upon loading the asset library page until you click on the asset type you wish to access, and you won’t need to wait until the entire asset library page complete loading to navigate around the asset types.  
+- **Refresh for file assets**:  A new refresh button is added to refresh a file list. You’ll be able to refresh a file asset list without having to refresh the entire page. 
+
+You can still access the existing Asset library while trying out the Preview version. We’ll monitor the performance and usage during the preview period for the coming month and address any known issues before we switch to the new experience permanently. 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
