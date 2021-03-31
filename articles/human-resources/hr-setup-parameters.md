@@ -4,7 +4,6 @@
 title: Configure Human resources parameters
 description: This topic explains how to set up company-specific parameters in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Payment Application Data Security Standards (PA-DSS) certification
 description: This topic explains the past, current, and pending listings of PA-DSS certification.
 author: rapraj
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 

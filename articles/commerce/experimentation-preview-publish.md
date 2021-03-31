@@ -4,7 +4,6 @@
 title: Preview and publish an experiment
 description: This topic describes how to preview and publish an experiment from Dynamics 365 Commerce.
 author:  sushma-rao 
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 

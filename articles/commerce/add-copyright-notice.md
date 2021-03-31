@@ -4,7 +4,6 @@
 title: Add a copyright notice
 description: This topic describes how to add a copyright notice to your e-Commerce website.
 author: psimolin
-manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 

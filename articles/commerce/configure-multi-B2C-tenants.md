@@ -4,7 +4,6 @@
 title: Configure multiple B2C tenants in a Commerce environment
 description: This topic describes when and how to set up multiple per-channel Microsoft Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user authentication in a dedicated Dynamics 365 Commerce environment.
 author: BrianShook
-manager: annbe
 ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 

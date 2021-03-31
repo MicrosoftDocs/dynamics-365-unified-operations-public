@@ -4,7 +4,6 @@
 title: Create performance reviews
 description: This topic explains how to create a performance review and describes the purpose for each section of the review. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 05/05/2020
 ms.topic: business-process 
 ms.prod:  

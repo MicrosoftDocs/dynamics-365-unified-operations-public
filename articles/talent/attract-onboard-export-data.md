@@ -4,7 +4,6 @@
 title: Export data from Attract and Onboard
 description: Export data from Dynamics 365 Talent - Attract and Onboard.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/14/2020
 ms.topic: article
 ms.prod: 

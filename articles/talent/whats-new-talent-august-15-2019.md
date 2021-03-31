@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Talent (August 13, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for August 15, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 

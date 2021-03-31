@@ -4,7 +4,6 @@
 title: Show order notifications in the point of sale (POS)
 description: This topic describes how to enable order notifications in the point of sale and the notification framework.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 

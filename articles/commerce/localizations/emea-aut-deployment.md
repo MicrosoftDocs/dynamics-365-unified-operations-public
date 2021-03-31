@@ -4,7 +4,6 @@
 title: Deployment guidelines for cash registers for Austria
 description: This topic is a deployment guide for the Commerce localization for Austria.
 author: AlexChern0v
-manager: ezubov
 ms.date: 
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Configure a worker
 description: This procedure demonstrates how to configure a worker as a sales representative who is eligible for commission on sales in POS. 
 author: jblucher
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

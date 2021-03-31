@@ -4,7 +4,6 @@
 title: Create a new module
 description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 09/29/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Choose a data integration technology
 description: This article provides information about integrating with data managed by Human Resources. It describes different integration technologies to help you decide which technologies best fit your needs.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/28/2020
 ms.topic: article
 ms.prod: 

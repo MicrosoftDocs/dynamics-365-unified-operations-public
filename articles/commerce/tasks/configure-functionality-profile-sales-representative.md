@@ -4,7 +4,6 @@
 title: Configure the functionality profile for a sales representative
 description: This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. 
 author: jblucher
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

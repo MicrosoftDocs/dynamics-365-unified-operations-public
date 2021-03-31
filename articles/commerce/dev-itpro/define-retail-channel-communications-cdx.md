@@ -4,7 +4,6 @@
 title: Commerce Data Exchange and commerce channel communications
 description: This topic provides an overview of Commerce Data Exchange and its components.
 author: athinesh99
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 

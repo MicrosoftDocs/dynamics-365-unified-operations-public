@@ -4,7 +4,6 @@
 title: Associate a Dynamics 365 Commerce site with an online channel
 description: This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 

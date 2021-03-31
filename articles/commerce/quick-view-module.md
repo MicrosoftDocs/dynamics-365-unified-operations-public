@@ -4,7 +4,6 @@
 title: Quick view module
 description: This topic covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 

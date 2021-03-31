@@ -4,7 +4,6 @@
 title: Order synchronization error related to the default payment service
 description: This topic provides troubleshooting guidance that can help fix an error that might occur when an online order is synced.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Log extension events to Application Insights
 description: This topic explains how to log events to Customer Application Insights from Commerce runtime (CRT) extensions.
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
