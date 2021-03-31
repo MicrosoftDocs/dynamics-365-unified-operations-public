@@ -2,7 +2,12 @@
 # required metadata
 
 title: Journal reports
-description: This topic provides information about unrealized and realized value-added tax (VAT) for Thailand. 
+description: Periodically, Belgian companies must print a report for each journal.
+The report provides a chronological list of all the postings to the
+general ledger accounts for each journal. These reports prove the
+integrity of the accountancy and are used during financial audits to
+reconcile VAT settlement with the postings on the corresponding general
+ledger accounts.
 author: anasyash
 ms.date: 03/31/2021
 ms.topic: article
@@ -258,15 +263,15 @@ codes](https://docs.microsoft.com/dynamics365/finance/localizations/emea-bel-int
 12.  Select **TVA19.6**, and on the **Report setup** FastTab, in the
  **Sale** section, select the following:
 
-    -   In the **Taxable sales** field, select 03.
+   -   In the **Taxable sales** field, select 03.
 
-    -   In the **Sales tax payable** field, select 54.
+   -   In the **Sales tax payable** field, select 54.
 
 13.  In the **Purchase** section, select the following:
 
-    -   In the **Tax purchases** field, select 81.
+   -   In the **Tax purchases** field, select 81.
 
-    -   In the **Sales tax receivable**, select 59.
+   -   In the **Sales tax receivable**, select 59.
 
 ### Print the Sales journal report
 
@@ -308,7 +313,7 @@ To print the **Sales journal** report, follow these steps:
 8.  In the **Final print** field, select **Yes**. Select **OK** to
     review the report.
 
-![Table Description automatically generated](media/emea-bel-journal-reports-sales-journal-report.png)
+![emea-bel-journal-reports-sales-journal-report](media/emea-bel-journal-reports-sales-journal-report.png)
 
 ### Print the Purchase journal report
 
@@ -357,10 +362,10 @@ To print the **Purchase journal** report, follow these steps:
 13. In the **Final print** field, select **Yes**. Select **OK** to view
     the report.
 
-![Table Description automatically generated](media/emea-bel-journal-reports-purchase-journal-report-1.png)
-![Table Description automatically generated](media/emea-bel-journal-reports-purchase-journal-report-2.png)
-![Table Description automatically generated](media/emea-bel-journal-reports-purchase-journal-report-3.png)
-![Table Description automatically generated](media/emea-bel-journal-reports-purchase-journal-report-4.png)
+![emea-bel-journal-reports-purchase-journal-report-1](media/emea-bel-journal-reports-purchase-journal-report-1.png)
+![emea-bel-journal-reports-purchase-journal-report-2](media/emea-bel-journal-reports-purchase-journal-report-2.png)
+![emea-bel-journal-reports-purchase-journal-report-3](media/emea-bel-journal-reports-purchase-journal-report-3.png)
+![emea-bel-journal-reports-purchase-journal-report-4](media/emea-bel-journal-reports-purchase-journal-report-4.png)
 
 ### Print the Financial journal report
 
@@ -404,9 +409,9 @@ To print the **Financial journal** report, follow these steps:
 9.  In the **Final print** field select **Yes**. Select **OK** to review
     the report.
 
-![Table Description automatically generated](media/emea-bel-journal-reports-financial-journal-report.png)
+![emea-bel-journal-reports-financial-journal-report](media/emea-bel-journal-reports-financial-journal-report.png)
 
-![Table Description automatically generated](media/emea-bel-journal-reports-financial-journal-report-2.png)
+![emea-bel-journal-reports-financial-journal-report-2](media/emea-bel-journal-reports-financial-journal-report-2.png)
 
 Print the Other journal report
 
@@ -451,8 +456,8 @@ To print the **Other journal** report, follow these steps:
 
 10. Select **OK** and review the report result.
 
-![Table Description automatically generated](media/emea-bel-journal-reports-other-journal-report-1.png)
-![Table Description automatically generated](media/emea-bel-journal-reports-other-journal-report-2.png)
+![emea-bel-journal-reports-other-journal-report-1](media/emea-bel-journal-reports-other-journal-report-1.png)
+![emea-bel-journal-reports-other-journal-report-2](media/emea-bel-journal-reports-other-journal-report-2.png)
 
 Print overview journal report
 
@@ -467,5 +472,5 @@ To print the **Overview journal** report, follow these steps:
 
 14.  Select **OK** and review the report result.
 
-![Table Description automatically generated](media/emea-bel-journal-reports-overview-journal-report.png)
+![emea-bel-journal-reports-overview-journal-report](media/emea-bel-journal-reports-overview-journal-report.png)
 
