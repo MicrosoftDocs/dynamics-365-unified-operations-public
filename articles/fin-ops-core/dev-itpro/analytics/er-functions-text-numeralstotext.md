@@ -4,7 +4,6 @@
 title: NUMERALSTOTEXT ER function
 description: This topic provides information about how the NUMERALSTOTEXT Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 

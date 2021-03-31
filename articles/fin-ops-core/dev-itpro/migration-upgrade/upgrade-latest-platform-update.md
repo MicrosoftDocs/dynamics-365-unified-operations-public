@@ -4,7 +4,6 @@
 title: Apply the latest platform update to environments
 description: This topic explains how to apply the latest platform update to your Finance and Operations environment.
 author: tariqbell
-manager: AnnBe
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 

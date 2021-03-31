@@ -4,7 +4,6 @@
 title: Container modules
 description: Container modules help you control the layout when you build complex modules or pages out of small component modules. 
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 

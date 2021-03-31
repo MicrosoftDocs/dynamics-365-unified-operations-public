@@ -4,7 +4,6 @@
 title: Use cases for business events
 description: This topic lists use cases for business events.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Loan item to a worker
 description: This procedure shows how to loan an item to a worker and record the worker returning an item. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

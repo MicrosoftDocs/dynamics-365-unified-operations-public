@@ -4,7 +4,6 @@
 title: Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool
 description: This topic explains how to use the Upgrade analyzer tool to plan upgrade from Dynamics AX 2012.
 author: tariqbell
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 

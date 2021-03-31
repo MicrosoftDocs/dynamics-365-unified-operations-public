@@ -4,7 +4,6 @@
 title: Certificate type
 description: This topic describes the Certificate type entity for Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 

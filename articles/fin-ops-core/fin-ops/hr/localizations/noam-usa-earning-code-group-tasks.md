@@ -4,7 +4,6 @@
 title: Set up earning codes and earning code groups
 description: This topic explains how to set up earning codes and earning code groups.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: 

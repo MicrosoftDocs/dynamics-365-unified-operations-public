@@ -52,7 +52,7 @@ On July 2, customer 4027 makes a partial payment of 297.00 for the invoice. The 
 
 Discount information appears at the bottom of the **Settle open transactions** page. If you don't change the **Amount to settle** value to 297.00, the **Cash discount amount** values that appear will differ. However, 3.00 will be taken as the cash discount when the payment is posted, because settlement automatically adjusts the **Amount to settle **value for you.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 10.00     |
@@ -77,7 +77,7 @@ On July 11, which is after the discount period, customer 4027 pays the rest of t
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 0.00      |
@@ -93,7 +93,7 @@ If Arnie changes the value in the **Use cash discount** field to **Always**, the
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 7.00      |

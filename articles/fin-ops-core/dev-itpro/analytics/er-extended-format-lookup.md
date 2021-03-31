@@ -4,7 +4,6 @@
 title: Electronic reporting (ER) extended format lookup
 description: This topic describes how an ER format reference can be set up in the ER format lookup when the required format is stored in the Global repository.
 author: NickSelin
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 

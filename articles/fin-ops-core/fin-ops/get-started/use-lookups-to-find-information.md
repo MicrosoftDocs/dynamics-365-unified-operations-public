@@ -4,7 +4,6 @@
 title: Find information by using lookups
 description: In this topic, you will learn about lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.  
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

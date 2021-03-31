@@ -4,7 +4,6 @@
 title: Generate financial reports
 description: This topic provides information about generating a financial report.
 author: jinniew
-manager: AnnBe
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 

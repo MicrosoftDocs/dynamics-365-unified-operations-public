@@ -5,7 +5,6 @@
 title: Add new inventory dimensions through extension
 description: This topic describes how to add new inventory dimensions through extensions.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 02/01/2018
 ms.topic: article
 ms.prod: 

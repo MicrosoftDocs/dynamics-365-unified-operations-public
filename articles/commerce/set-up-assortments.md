@@ -4,7 +4,6 @@
 title: Set up assortments
 description: This article describes what an assortment is and explains how to set up assortments in Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

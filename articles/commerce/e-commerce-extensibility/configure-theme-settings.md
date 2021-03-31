@@ -4,7 +4,6 @@
 title: Configure theme settings
 description: This topic describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 

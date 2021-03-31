@@ -4,7 +4,6 @@
 title: Garnishments, tax levies, and administrative fees FAQ
 description: This topic lists frequently asked questions and answers about garnishments and tax levies.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

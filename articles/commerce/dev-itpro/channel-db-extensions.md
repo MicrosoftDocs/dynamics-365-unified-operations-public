@@ -4,7 +4,6 @@
 title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod:

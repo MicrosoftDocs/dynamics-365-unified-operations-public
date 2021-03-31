@@ -4,7 +4,6 @@
 title: View purge and archive jobs
 description: This topic provides information about how to use the Intelligent Data Management Framework (IDMF) to view purge and archive jobs. 
 author: kfend
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

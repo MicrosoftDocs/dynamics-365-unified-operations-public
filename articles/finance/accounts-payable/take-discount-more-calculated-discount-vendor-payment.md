@@ -42,7 +42,7 @@ Vendor 3051 gives Fabrikam a cash discount of 4 percent if an invoice is paid in
 
 Discount information appears at the bottom of the **Settle transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/12/2015 |
 | Cash discount amount         | 60.00     |

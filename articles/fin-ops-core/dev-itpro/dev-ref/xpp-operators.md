@@ -4,7 +4,6 @@
 title: X++ operators
 description: This topic describes the operators supported in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 

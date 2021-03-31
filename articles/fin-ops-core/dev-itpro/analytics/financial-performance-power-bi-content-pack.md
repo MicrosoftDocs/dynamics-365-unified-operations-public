@@ -4,7 +4,6 @@
 title: Financial performance PowerBI.com solution
 description: This topic describes the Financial performance PowerBI.com solution. 
 author: kweekley
-manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 

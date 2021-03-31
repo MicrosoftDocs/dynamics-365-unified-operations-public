@@ -4,7 +4,6 @@
 title: Human Resources app in Teams
 description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/23/2021
 ms.topic: article
 ms.prod: 

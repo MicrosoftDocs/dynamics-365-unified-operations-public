@@ -4,7 +4,6 @@
 title: Batch processing of alerts
 description: This topic provides information about batch processing of alerts.
 author: RichdiMSFT
-manager: AnnBe
 ms.date: 09/10/2010
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Extensibility FAQ
 description: This topic provides answers to some frequently asked questions about extensibility.
 author: FrankDahl
-manager: AnnBe
 ms.date: 02/25/2019
 ms.topic: article
 ms.prod: 

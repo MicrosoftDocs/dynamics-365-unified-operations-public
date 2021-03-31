@@ -4,7 +4,6 @@
 title: Create and update store hours
 description: This topic describes how to create and update store hours in Commerce Headquarters.
 author: josaw1
-manager: AnnBe
 ms.date: 7/30/2019
 ms.topic: article
 ms.prod: 

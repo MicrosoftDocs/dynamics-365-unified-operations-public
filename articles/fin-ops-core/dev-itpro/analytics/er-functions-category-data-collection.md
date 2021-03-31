@@ -4,7 +4,6 @@
 title: List of ER functions in the data collection category
 description: This topic provides information about the data collection functions that are supported in Electronic reporting (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 

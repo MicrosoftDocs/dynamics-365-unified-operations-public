@@ -4,7 +4,6 @@
 title: Install the Security Development Tool
 description: This topic provides information about how to install the Security Development Tool. 
 author: kfend
-manager: AnnBe
 ms.date: 07/26/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012 

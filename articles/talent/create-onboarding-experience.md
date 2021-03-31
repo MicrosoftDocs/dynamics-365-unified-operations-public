@@ -4,7 +4,6 @@
 title: Get started with Onboard
 description: This topic will help you get started with Microsoft Dynamics 365 Talent - Onboard. Onboard helps your new hires get off to a strong start by giving them a guide that takes them smoothly through the onboarding process.
 author: andreabichsel
-manager:
 ms.date: 06/21/2019
 ms.topic: article
 ms.prod:

@@ -127,12 +127,13 @@ A dimension hierarchy that meets the organizational reporting requirements can b
 
 The dimension hierarchy for reporting can be set up as shown here.
 
-|                   | Dimension member ranges   |                         |
+**Dimension member ranges**
+
+|   Nodes           |   From dimension member   |   To dimension member   |
 |-------------------|---------------------------|-------------------------|
-| **Nodes**         | **From dimension member** | **To dimension member** |
 | Organization      |                           |                         |
 | &nbsp;&nbsp;Admin         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Finance   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Finance   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;HR        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Production    |                           |                         |
@@ -149,12 +150,13 @@ A dimension hierarchy that meets the policy requirement can be set up as shown h
 
 The dimension hierarchy for the policy can be set up as shown here.
 
-|                   | Dimension member ranges   |                         |
+**Dimension member ranges**
+
+|   Nodes           |   From dimension member   |   To dimension member   |
 |-------------------|---------------------------|-------------------------|
-| **Nodes**         | **From dimension member** | **To dimension member** |
 | Cost behavior     |                           |                         |
 | &nbsp;&nbsp;Fixed cost    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Variable cost | 40001                     | 40010                   |
+| &nbsp;&nbsp;Variable cost | 40001                     | 40010                   |
 
 > [!NOTE]
 > Under **Dimension member ranges**, a node can contain 1:_n_ dimension member ranges. You can insert dimension member IDs that don’t yet exist as dimension members. This approach makes the hierarchy resilient for the future.  
@@ -300,9 +302,10 @@ Potentially, all managers will be able to access highly sensitive business data,
 
 A new **Users** FastTab is available in the hierarchy designer. Here, you can insert one or more user IDs at each node in the hierarchy.
 
-|                 | Users            | Dimension member ranges   |                         |
+**Users and dimension member ranges**
+
+|   Nodes         |   User ID        |   From dimension member   |   To dimension member   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Nodes**       | **User ID**      | **From dimension member** | **To dimension member** |
 | Organization    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Admin         | April            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finance   | Alicia           | CC002                     | CC003                   |

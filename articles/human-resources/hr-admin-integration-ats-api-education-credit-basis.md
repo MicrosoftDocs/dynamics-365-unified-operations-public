@@ -4,7 +4,6 @@
 title: Education credit basis
 description: This topic describes the Education credit basis option set for Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 

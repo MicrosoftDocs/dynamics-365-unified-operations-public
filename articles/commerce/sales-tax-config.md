@@ -4,7 +4,6 @@
 title: Configure sales tax for online orders
 description: This topic provides an overview of sales tax group selection for different online order types in Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: AnnBe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Financial report components
 description: This article describes how the components, or building blocks, of report definitions are used in financial reporting.
 author: aprilolson
-manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 

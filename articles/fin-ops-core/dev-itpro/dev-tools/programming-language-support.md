@@ -4,7 +4,6 @@
 title: Changes in X++ and the X++ compiler
 description: This topic reviews the changes made to the compiler for Finance and Operations applications.
 author: pvillads
-manager: AnnBe
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 

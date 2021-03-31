@@ -4,7 +4,6 @@
 title: Process automation framework development
 description: This topic provides an overview of development that uses the process automation framework.
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Translation memory files
 description: This topic describes when and where translation memory files can be created, edited, and used to result in a quality translation output file.
 author: kfend
-manager: AnnBe
 ms.date: 03/29/2018
 ms.topic: article
 ms.prod: 

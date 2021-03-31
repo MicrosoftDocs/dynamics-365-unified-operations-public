@@ -60,7 +60,7 @@ On July 2, April wants to pay 300.00 against this invoice. She creates a one-off
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/02/2015 |
 | Cash discount amount         | -20.00    |
@@ -76,7 +76,7 @@ Because a cash discount is available, April wants to change the payment amount s
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/02/2015 |
 | Cash discount amount         | -20.00    |
@@ -109,7 +109,7 @@ April decides to pay 495.00 and take the 5.00 cash discount. Therefore, the tota
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/12/2015 |
 | Cash discount amount         | -10.00    |
