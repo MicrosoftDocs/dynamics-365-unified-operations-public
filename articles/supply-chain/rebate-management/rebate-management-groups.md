@@ -4,7 +4,6 @@
 title: Rebate management groups
 description: This topic describes how to set up Rebate management groups. Rebate management groups can be used during rebate calculations and can be attached to a master record.
 author: sherry-zheng
-manager: tfehr
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 

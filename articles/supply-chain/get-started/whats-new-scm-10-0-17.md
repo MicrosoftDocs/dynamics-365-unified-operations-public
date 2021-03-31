@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.17 (April 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.17. 
 author: kamaybac
-manager: annbe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 

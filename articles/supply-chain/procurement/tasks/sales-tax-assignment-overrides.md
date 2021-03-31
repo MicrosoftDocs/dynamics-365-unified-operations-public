@@ -4,7 +4,6 @@
 title: Sales tax assignment and overrides
 description: This procedure demonstrates how to assign sales tax groups to commerce channels. 
 author: kamaybac
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Create a bill of materials for a dimension-based product master
 description: For this procedure you should have completed the previous 4 guides in this sequence of eight recordings. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

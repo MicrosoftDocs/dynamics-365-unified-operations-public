@@ -4,7 +4,6 @@
 title: Report BOMs as finished
 description: This article provides information about reporting BOMs as finished.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

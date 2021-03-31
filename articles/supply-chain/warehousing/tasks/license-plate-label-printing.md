@@ -4,7 +4,6 @@
 title: Enable license plate label printing
 description: This topic shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process. 
 author: perlynne
-manager: tfehr 
 ms.date: 07/19/2019
 ms.topic: business-process 
 ms.prod:  

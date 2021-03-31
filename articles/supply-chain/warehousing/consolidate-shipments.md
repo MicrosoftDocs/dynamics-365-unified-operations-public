@@ -4,7 +4,6 @@
 title: Consolidate shipments by using shipment consolidation policies
 description: This topic provides a collection of links to scenarios that show how to work with shipment consolidation policies.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:

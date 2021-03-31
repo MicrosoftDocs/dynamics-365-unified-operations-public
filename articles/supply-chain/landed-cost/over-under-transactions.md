@@ -4,7 +4,6 @@
 title: Over/under transactions
 description: This topic provides information that will help you set up the details of policies for over/under transactions, so that the system can determine how to manage the over-processing and under-processing of goods at the time of receipt.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 

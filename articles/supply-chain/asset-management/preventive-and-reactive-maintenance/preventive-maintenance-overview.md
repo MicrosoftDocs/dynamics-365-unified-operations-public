@@ -4,7 +4,6 @@
 title: Preventive maintenance overview
 description: This topic explains preventive maintenance in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 

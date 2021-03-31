@@ -4,7 +4,6 @@
 title: Vendor collaboration with customers
 description: This topic describes how you can use vendor collaboration to work with POs and monitor consignment inventory.
 author: TaylorVH
-manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 

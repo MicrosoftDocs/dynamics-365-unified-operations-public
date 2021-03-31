@@ -4,7 +4,6 @@
 title: Add a calculation to a product configuration model
 description: This procedure shows how to add a new calculation to a product configuration model. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

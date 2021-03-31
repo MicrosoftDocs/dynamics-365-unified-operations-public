@@ -4,7 +4,6 @@
 title: Schedule work creation during wave
 description: This topic describes how to set up and use the Schedule work creation wave processing method.
 author: perlynne
-manager: tfehr
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod:

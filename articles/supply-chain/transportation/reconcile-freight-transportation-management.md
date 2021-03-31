@@ -4,7 +4,6 @@
 title: Reconcile freight in transportation management
 description: This topic describes the freight reconciliation process.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

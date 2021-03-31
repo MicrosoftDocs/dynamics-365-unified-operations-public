@@ -4,7 +4,6 @@
 title: Standard saved views for Supply Chain Management
 description: This topic describes the standard saved views that are available and explains how to enable them.
 author: kamaybac
-manager: annbe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: 

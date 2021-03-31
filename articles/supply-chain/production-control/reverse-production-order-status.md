@@ -4,7 +4,6 @@
 title: Reverse the production order status
 description: This topic describes how to reverse production order status. 
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

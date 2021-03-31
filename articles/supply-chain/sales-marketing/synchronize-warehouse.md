@@ -4,7 +4,6 @@
 title: Synchronize warehouses from Supply Chain Management to Field Service
 description: This topic discusses the templates and underlying tasks that are used to synchronize warehouses from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 author: ChristianRytt
-manager: tfehr
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 

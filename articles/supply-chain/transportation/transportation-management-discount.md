@@ -4,7 +4,6 @@
 title: Transportation management discounts
 description: This topic describes the options for setting up discounts for transportation charges.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 

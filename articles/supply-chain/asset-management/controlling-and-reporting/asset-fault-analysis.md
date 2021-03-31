@@ -4,7 +4,6 @@
 title: Asset fault analysis
 description: This topic explains asset fault analysis in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: 

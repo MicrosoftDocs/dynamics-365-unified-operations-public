@@ -4,7 +4,6 @@
 title: Quality management for warehouse processes
 description: This topic provides information about the Quality management for warehouse processes feature. This feature extends the capabilities of quality management and lets users integrate item sampling controls into the warehouse receiving process by using advanced warehouse management. 
 author: Henrikan
-manager: tfehr
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: 

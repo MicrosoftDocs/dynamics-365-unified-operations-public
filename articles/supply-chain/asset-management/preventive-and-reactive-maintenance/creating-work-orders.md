@@ -4,7 +4,6 @@
 title: Creating work orders
 description: This topic explains how to create work orders in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 

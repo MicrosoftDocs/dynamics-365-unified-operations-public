@@ -4,7 +4,6 @@
 title: Integrate asset management with fixed assets
 description: This topic explains how to integrate the Asset management and Fixed assets modules, so that you can link fixed assets with maintenance assets.
 author: kamaybac
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
