@@ -5,7 +5,7 @@ title: Configure sales tax for online orders
 description: This topic provides an overview of sales tax group selection for different online order types in Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: AnnBe
-ms.date: 11/16/2020
+ms.date: 03/31/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -57,7 +57,7 @@ For online customer orders, if you want to apply only the destination-based taxe
 
 Below matrix illustrates how a destination-based taxes vs customer account bases taxes are applied for online orders. 
 
-| Customer type | Shipping address                   | Customer > Invoice and delivery > Sales Tax group? | Address on customer account in headquarters? | Customer address > Advanced > General > Sales tax group?                                              | Sales tax group applied      |
+| Customer type | Shipping address                   | Customer > Invoice and delivery > Sales tax group? | Address on customer account in headquarters? | Customer address > Advanced > General > Sales tax group?                                              | Sales tax group applied      |
 |---------------|------------------------------------|-----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------|
 | Guest         | Manhattan, NY                      | None                                                | None                              | None                                                                                                   | NY (Destination-based taxes) |
 | Signed in     | Austin, TX                          | None                                                | Yes                               | None (New address added via online channel)                                                            | TX (Destination-based taxes) |
