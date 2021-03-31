@@ -4,7 +4,6 @@
 title: Call server-side data actions with AJAX
 description: This topic describes how to call server-side data actions by using Asynchronous JavaScript and XML (AJAX) in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 

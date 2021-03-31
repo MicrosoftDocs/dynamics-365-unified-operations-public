@@ -4,7 +4,6 @@
 title: Use event-based data actions
 description: This topic describes how to use event-based data actions. 
 author: samjarawan
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 

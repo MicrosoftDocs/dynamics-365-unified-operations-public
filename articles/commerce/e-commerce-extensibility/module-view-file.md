@@ -4,7 +4,6 @@
 title: Module view file
 description: This topic covers the module view file in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
-manager: annbe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 

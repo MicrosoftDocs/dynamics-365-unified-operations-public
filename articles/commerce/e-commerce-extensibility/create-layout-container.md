@@ -4,7 +4,6 @@
 title: Create a layout container module
 description: This topic describes how to create, test, and preview a layout container module.
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 

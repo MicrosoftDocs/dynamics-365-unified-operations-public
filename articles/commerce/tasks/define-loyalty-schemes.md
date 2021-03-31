@@ -4,7 +4,6 @@
 title: Define loyalty schemes
 description: This procedure walks through how to define a loyalty scheme. 
 author: jashanno
-manager: AnnBe 
 ms.date: 11/14/2017
 ms.topic: business-process 
 ms.prod:  

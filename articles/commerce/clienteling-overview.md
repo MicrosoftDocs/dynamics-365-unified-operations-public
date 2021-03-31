@@ -4,7 +4,6 @@
 title: Clienteling overview
 description: This topic provides an overview of new clienteling capabilities that are available in the store application.
 author: bebeale
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 

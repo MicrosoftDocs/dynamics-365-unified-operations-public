@@ -4,7 +4,6 @@
 title: Dynamics 365 Commerce architecture overview
 description: This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
