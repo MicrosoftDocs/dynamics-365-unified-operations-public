@@ -4,7 +4,6 @@
 title: Change Employee self service workspace name
 description: This topic describes how to change the display name of the Employee self-service workspace in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 

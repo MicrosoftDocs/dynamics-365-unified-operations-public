@@ -4,7 +4,6 @@
 title: Create and open job requisition
 description: Recruitment projects help you manage your recruiting process. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 02/03/2021
 ms.topic: business-process 
 ms.prod:  

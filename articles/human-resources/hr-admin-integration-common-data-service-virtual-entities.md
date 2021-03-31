@@ -4,7 +4,6 @@
 title: Configure Dataverse virtual tables
 description: This topic shows how to configure virtual tables for Dynamics 365 Human Resources. Generate and update existing virtual tables, and analyze generated and available tables. 
 author: andreabichsel
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 

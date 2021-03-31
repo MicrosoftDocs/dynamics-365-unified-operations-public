@@ -4,7 +4,6 @@
 title: Applicant integration result
 description: This topic describes the Applicant integration result option set for Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
