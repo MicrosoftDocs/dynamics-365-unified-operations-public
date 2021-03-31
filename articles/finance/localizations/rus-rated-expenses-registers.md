@@ -63,7 +63,7 @@ complete the following steps.
     -   In the **Value** field, enter the ratio value that will be used in
     the sequence of calculation.
 
-![1 rated expenses](media/1 rated expenses.png)
+[1 rated expenses](media/1 rated expenses.png)
 
 6.  If you selected **Interval**, on the **Values** FastTab, do the
     following:
@@ -139,7 +139,7 @@ rated expenses.
     normalized amount accounted for in the expenses of the future
     period.
 
-![2 rated expenses](media/2 rated expenses.png)
+[2 rated expenses](media/2 rated expenses.png)
 
 ### Assign calculation sequences to the register
 
@@ -152,7 +152,7 @@ rated expenses.
     numbers of the calculation sequences to form the register from the
     list.
 
-![3 rated expenses](media/3 rated expenses.png)
+[3 rated expenses](media/3 rated expenses.png)
 
 ## Standard expenses in current period register
 
@@ -162,7 +162,7 @@ The **Standard expenses in current period** register reflects
 information about the expenses of the current period, their rated part,
 and the part that exceeds the standard.
 
-![4 rated expenses](media/4 rated expenses.png)
+[4 rated expenses](media/4 rated expenses.png)
 
 View the following information on the register lines:
 
