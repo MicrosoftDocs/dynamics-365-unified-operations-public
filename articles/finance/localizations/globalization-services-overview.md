@@ -39,12 +39,14 @@ The following configurable globalization services extend the capabilities that e
 
 - **Tax Calculation** provides enhanced flexibility through supporting multiple tax ID’s, tax code determination and tax calculation designer, plus runtime engine to comply with very complex tax regulations worldwide. [Learn more.](https://microsoft-my.sharepoint.com/personal/janeaug_microsoft_com/Documents/Products/Regulatory services/Globalization svc/Tax service (preview) - Dynamics 365 Release Plan | Microsoft Docs.md)
 
-These globalization services provide out of the box integration with the Dynamics 365 online services in the table below.
+These globalization services provide out of the box integration with the Dynamics 365 online services in the table below:
 
-Online Service	Regulatory configuration service*	Electronic Invoicing 	Tax Calculation (Preview)
-Dynamics 365 Finance	Yes	Yes	Yes
-Dynamics 365 Supply Chain Management	Yes	Yes	Yes
-Dynamics 365 Project Operations	Yes	Yes	Yes
-Dynamics 365 Commerce	Yes	N/A	N/A
+|Online Service | Regulatory Configuration Service* | Electronic Invoicing  | Tax Calculation (Preview) |
+|---------------|-----------------------------------|-----------------------|---------------------------|
+| Dynamics 365 Finance | Yes | Yes | Yes | 
+| Dynamics 365 Supply Chain Management | Yes | Yes | Yes | 
+| Dynamics 365 Project Operations | Yes | Yes | Yes | 
+| Dynamics 365 Commerce | Yes | N/A | N/A | 
+
 ______________________
 *Configuring this service may result in the transfer of customer data outside of the selected Azure geographic location (geo) for the applicable Dynamics 365 online service due to different geo availability of the Regulatory Configuration Service. You can find more information [here.](https://aka.ms/rcs/D365Productavailabilityguide)
