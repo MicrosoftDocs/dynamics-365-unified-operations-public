@@ -404,7 +404,7 @@ To print the **Financial journal** report, follow these steps:
 9.  In the **Final print** field select **Yes**. Select **OK** to review
     the report.
 
-![Table Description automatically generated](media/emea-bel-journal-reports-financial-journal-report-1.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-financial-journal-report.png)
 
 ![Table Description automatically generated](media/emea-bel-journal-reports-financial-journal-report-2.png)
 
