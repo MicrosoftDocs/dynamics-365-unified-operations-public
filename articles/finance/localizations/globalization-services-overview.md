@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 10.0.9
 The following configurable globalization services extend the capabilities that exist in some Dynamics 365 online services:
 - **Dynamics Regulatory Configuration Service (RCS)** supports configuration of different types of electronic documents and reports by providing an enhanced version of Electronic Reporting designer with configuration repository as a standalone service. [Learn more.](https://aka.ms/rcs/overview)
 
-- **Electronic Invoicing** brings together configurable formats for transformations, digital signatures, and configurable integrations for connectivity with external web services including certification and response handling. [Learn more.](https://microsoft-my.sharepoint.com/personal/janeaug_microsoft_com/Documents/Products/Regulatory services/Globalization svc/Electronic Invoicing Add-on for Dynamics 365 (general availability) - Dynamics 365 Release Plan | Microsoft Docs.md) 
+- **Electronic Invoicing** brings together configurable formats for transformations, digital signatures, and configurable integrations for connectivity with external web services including certification and response handling. [Learn more.](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-add-on-dynamics-365-ga) 
 
-- **Tax Calculation** provides enhanced flexibility through supporting multiple tax ID’s, tax code determination and tax calculation designer, plus runtime engine to comply with very complex tax regulations worldwide. [Learn more.](https://microsoft-my.sharepoint.com/personal/janeaug_microsoft_com/Documents/Products/Regulatory services/Globalization svc/Tax service (preview) - Dynamics 365 Release Plan | Microsoft Docs.md)
+- **Tax Calculation** provides enhanced flexibility through supporting multiple tax ID’s, tax code determination and tax calculation designer, plus runtime engine to comply with very complex tax regulations worldwide. [Learn more.](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview)
 
 These globalization services provide out of the box integration with the Dynamics 365 online services in the table below:
 
