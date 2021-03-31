@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Talent (January 14, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for January 14, 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/14/2020
 ms.topic: article
 ms.prod: 

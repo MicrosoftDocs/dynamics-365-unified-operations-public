@@ -4,7 +4,6 @@
 title: Track changes in recruiting data 
 description: The process auditing feature allows you to track when candidates, job openings, or job applications change for reporting or compliance reasons.
 author: tracykeya
-manager: tfehr
 ms.date: 04/17/2019
 ms.topic: article
 ms.prod: 
