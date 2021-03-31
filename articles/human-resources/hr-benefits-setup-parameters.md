@@ -3,7 +3,6 @@
 title: Set Benefits management and Employee self-service parameters for all companies
 description: Configure parameters for Benefits management and Employee self-service in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Create a buy and sell leave request workflow
 description: Create a buy and sell leave request workflow to manage to buy and sell leave requests consistently in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 

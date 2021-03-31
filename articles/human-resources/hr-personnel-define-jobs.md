@@ -4,7 +4,6 @@
 title: Define new jobs
 description: This task focuses on the creation of a new job. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

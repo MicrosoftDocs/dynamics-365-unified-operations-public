@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Human Resources January 28, 2021
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for January 28, 2021.
 author: marcelbf
-manager: tfehr
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod:
