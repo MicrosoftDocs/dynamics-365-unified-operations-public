@@ -1,12 +1,29 @@
-﻿---
-title: 
-description: 
-ms.date: 04.01.2021
-ms.topic: article
-ms.service: dynamics365-financials
+---
+# required metadata
+
+title: Tax invoices
+description: This topic explains how to set up tax invoices and when they are generated.
 author: andosip
-ms.author: andosip
 manager: anasyash
+ms.date: 03/31/2021
+ms.topic: article
+ms.prod:
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:
+audience: 
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope:
+# ms.tgt_pltfrm: 
+# ms.custom: NotInTOC
+ms.search.region: 
+# ms.search.industry:
+ms.author: 
+ms.search.validFrom: 
+ms.dyn365.ops.version:
 ---
 
 # Tax invoices
@@ -35,8 +52,7 @@ sequences for the following references:
 
 -   Customer invoice voucher
 
-For more information, see [Number sequences
-overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
+For more information, see [Number sequences overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
 
 ## Setup
 
@@ -74,8 +90,7 @@ when a sales order, a purchase invoice, a purchase order, or a payment
 that generates a realized VAT entry is posted. If an unrealized VAT
 entry is generated, an invoice is generated instead of a tax invoice.
 
-For more information, see [Thailand unrealized and realized
-VAT](file:///C:\Users\anasyash\Documents\FIM%20team\FY21\Content\Andrey%20Osipov\TH\apac-tha-unrealized-vat.md).
+For more information, see [Thailand unrealized and realized VAT](\apac-tha-unrealized-vat.md).
 
 -   If you receive payment from the customer when you post a sales
     order, follow these steps:
@@ -130,7 +145,7 @@ to print the tax invoice.
 
 The following illustration shows an example of a printed tax invoice.
 
-![Table Description automatically generated](media/image1.png)
+![Table Description automatically generated](media/apac-tha-tax-invoices-tax-invoice.png)
 
 -   If you receive payment from the customer after you post a sales
     order or a free text invoice, follow these steps:
@@ -150,8 +165,7 @@ The following illustration shows an example of a printed tax invoice.
 
 5.  Go to **Accounts receivable &gt; Payments &gt; Customer payments
     journal**, and settle the payment. For more information, see
-    [Customer payment
-    overview](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/tasks/customer-payment-overview).
+    [Customer payment overview](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/tasks/customer-payment-overview).
 
 6.  Select **Print**, and then select **Payments**.
 
@@ -171,10 +185,10 @@ Note
 
 The following illustration shows an example of a printed receipt.
 
-![Timeline Description automatically generated with low confidence](media/image2.png)
+![Timeline Description automatically generated with low confidence](media/apac-tha-tax-invoices-receipt.png)
 
 The following illustration shows an example of a printed receipt/tax
 invoice.
 
-![A picture containing graphical user interface Description automatically generated](media/image3.png)
+![A picture containing graphical user interface Description automatically generated](media/apac-tha-tax-invoices-receipt-tax-invoice.png)
 
