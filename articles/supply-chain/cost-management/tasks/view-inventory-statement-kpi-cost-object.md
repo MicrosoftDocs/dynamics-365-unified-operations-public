@@ -4,7 +4,6 @@
 title: View inventory statement and KPI by cost object
 description: The demo data company used to create this procedure is USMF. 
 author: AndersGirke
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Track inbound voyages and shipping container journeys
 description: This topic explains how you can use the Inbound tracking page to track the progress of your voyages and shipping container journeys.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 

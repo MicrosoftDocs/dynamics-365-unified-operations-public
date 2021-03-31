@@ -4,7 +4,6 @@
 title: Create a vendor bank account
 description: This procedure shows you how to create a bank account for a vendor. 
 author: kamaybac
-manager: tfehr 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  

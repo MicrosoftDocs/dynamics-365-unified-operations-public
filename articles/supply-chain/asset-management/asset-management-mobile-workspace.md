@@ -5,7 +5,6 @@ title: Use the Asset management mobile workspace
 
 description: This topic provides information about the Asset management mobile workspace.
 author: johanhoffmann 
-manager: tfehr
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 

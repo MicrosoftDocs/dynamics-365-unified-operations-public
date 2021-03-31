@@ -4,7 +4,6 @@
 title: Report a production order as finished
 description: This procedure shows how to report a production order as finished. 
 author: johanhoffmann
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

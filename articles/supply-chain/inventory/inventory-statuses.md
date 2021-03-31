@@ -4,7 +4,6 @@
 title: Inventory statuses
 description: This article describes how you can use inventory statuses to categorize and keep track of inventory.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:

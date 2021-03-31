@@ -4,7 +4,6 @@
 title: Item where used
 description: This topic explains how to get an overview of where an item is used in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Work order project setup
 description: This topic explains work order project setup in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 

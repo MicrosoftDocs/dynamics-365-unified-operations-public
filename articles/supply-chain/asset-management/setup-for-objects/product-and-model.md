@@ -4,7 +4,6 @@
 title: Asset manufacturers and models
 description: This topic explains how to set up asset manufacturers and related models in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 

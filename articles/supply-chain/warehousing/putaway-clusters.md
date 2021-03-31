@@ -4,7 +4,6 @@
 title: Putaway clusters
 description: Putaway clusters offer a way to pick multiple license plates at the same time and then take them for putaway in different locations. They can be very useful for retail businesses, where license plates typically aren't full pallets of inventory.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 

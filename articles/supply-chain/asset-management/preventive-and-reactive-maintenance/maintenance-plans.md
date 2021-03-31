@@ -4,7 +4,6 @@
 title: Maintenance plans
 description: This topic explains maintenance plans in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 

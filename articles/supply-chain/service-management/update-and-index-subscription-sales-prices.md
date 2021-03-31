@@ -4,7 +4,6 @@
 title: Update and index subscription sales prices 
 description: Update and index subscription sales prices 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Create a sales order for a configurable product
 description: This procedure shows how to apply a configuration template to a product on a sales order. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

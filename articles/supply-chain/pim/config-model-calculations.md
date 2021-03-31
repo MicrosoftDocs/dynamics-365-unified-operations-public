@@ -2,7 +2,6 @@
 title: Product configuration model calculations
 description: This topic describes how to create calculations for attributes in a product configuration model
 author: t-benebo
-manager: tfehr
 ms.date: 03/18/2021
 ms.topic: article
 ms.search.form: PCProductConfigurationModelListPage, PCProductConfigurationModelDetails

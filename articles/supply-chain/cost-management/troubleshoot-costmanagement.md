@@ -4,7 +4,6 @@
 title: Troubleshoot cost management
 description: This topic describes how to fix issues that you might encounter while working with cost management.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: 

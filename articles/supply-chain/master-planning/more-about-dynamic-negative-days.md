@@ -4,7 +4,6 @@
 title: Negative days and dynamic negative days
 description: This topic provides information about negative days and dynamic negative days, and how you can use them to help your business.
 author: t-benebo
-manager: tfehr
 ms.date: 06/06/2019
 ms.topic: article
 ms.prod: 

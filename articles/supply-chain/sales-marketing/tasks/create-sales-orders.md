@@ -4,7 +4,6 @@
 title: Create sales orders
 description: This procedure shows you how to create a sales order. 
 author: omulvad
-manager: tfehr 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  

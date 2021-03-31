@@ -4,7 +4,6 @@
 title: Safety stock fulfillment for items
 description: This topic discusses safety stock fulfillment and how to set up safety stock quantity for items. 
 author: roxanadiaconu
-manager: tfehr
 ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 

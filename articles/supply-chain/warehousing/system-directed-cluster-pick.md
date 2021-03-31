@@ -4,7 +4,6 @@
 title: System-directed cluster picking
 description: This topic provides an overview of system-directed cluster picking in Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 

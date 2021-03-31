@@ -4,7 +4,6 @@
 title: Import vendor catalogs
 description: This topic describes the process to import vendor catalog data.
 author: kamaybac
-manager: tfehr
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 

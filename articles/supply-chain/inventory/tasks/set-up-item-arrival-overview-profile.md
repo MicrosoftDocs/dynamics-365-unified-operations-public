@@ -4,7 +4,6 @@
 title: Set up an item arrival overview profile
 description: This topic focuses on the setup of an arrival overview profile. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 07/30/2019
 ms.topic: business-process 
 ms.prod:  

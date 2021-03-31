@@ -4,7 +4,6 @@
 title: Master planning with demand forecasts
 description: This topic explains how to include demand forecasts during master planning with Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
