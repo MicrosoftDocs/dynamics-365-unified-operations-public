@@ -32,22 +32,22 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-When an inventory reservation hierarchy of the "Batch-below\[location\]" type is associated with products, businesses that sell batch-tracked products and run their logistics as operations that are enabled for the Microsoft Dynamics 365 Warehouse Management System (WMS) can't reserve specific batches of those products for customer sales orders.
+When an inventory reservation hierarchy of the *Batch-below\[location\]* type is associated with products, businesses that sell batch-tracked products and run their logistics as operations that are enabled for the Microsoft Dynamics 365 Warehouse Management System (WMS) can't reserve specific batches of those products for customer sales orders.
 
 In a similar way, specific license plates can't be reserved for products on sales orders when those products are associated with the default reservation hierarchy.
 
-This topic describes the inventory reservation policy that lets these businesses reserve specific batches or license plates, even when the products are associated with a "Batch-below\[location\]" reservation hierarchy.
+This topic describes the inventory reservation policy that lets these businesses reserve specific batches or license plates, even when the products are associated with a *Batch-below\[location\]* reservation hierarchy.
 
 ## Inventory reservation hierarchy
 
 This section summarizes the existing inventory reservation hierarchy.
 
-The inventory reservation hierarchy dictates that, as far as storage dimensions are concerned, the demand order carries the mandatory dimensions of site, warehouse, and inventory status, whereas the warehouse logic is responsible for assigning a location to the requested quantities and reserving the location. In other words, in the interactions between the demand order and the warehouse operations, the demand order is expected to indicate where the order must be shipped from (that is, what site and warehouse). The warehouse then relies on its logic to find the required quantity in the warehouse premises.
+The inventory reservation hierarchy dictates that, as far as storage dimensions are concerned, the demand order carries the mandatory dimensions of site, warehouse, and inventory status. In other words, the mandatory dimensions are all the dimensions above the location dimension in the reservation hierarchy, while the warehouse logic is responsible for assigning a location to the requested quantities and reserving the location. In the interactions between the demand order and the warehouse operations, the demand order is expected to indicate where the order must be shipped from (that is, what site and warehouse). The warehouse then relies on its logic to find the required quantity in the warehouse premises.
 
 However, to reflect the operational model of the business, tracking dimensions (batch and serial numbers) are subject to more flexibility. An inventory reservation hierarchy can accommodate scenarios where the following conditions apply:
 
-- The business relies on its warehouse operations to manage picking of quantities that have batch or serial numbers after the quantities have been found in the warehousing storage space. This model is often referred to as *Batch-below\[location\]*. It's typically used when a product's batch or serial number identification isn't important to the customers who place the demand with the selling company.
-- If batch or serial numbers are part of a customer's order specification, and they are recorded on the demand order, the warehouse operations that find the quantities in the warehouse are constrained by the specific requested numbers and aren't allowed to change them. This model is referred to as *Batch-above\[location\]*.
+- The business relies on its warehouse operations to manage picking of quantities that have batch or serial numbers *after* the quantities have been found in the warehousing storage space. This model is often referred to as *Batch-below\[location\]* or *Serial-below\[location\]*. It's typically used when a product's batch or serial number identification isn't important to the customers who place the demand with the selling company.
+- The business relies on its warehouse operations to manage picking of quantities that have batch or serial numbers *before* the quantities have been found in the warehousing storage space. If batch or serial numbers are necessary as part of a customer's order specification, they are recorded on the demand order, and the warehouse operations that find the quantities in the warehouse aren't allowed to change them. This model is referred to as *Batch-above\[location\]* or *Serial-above\[location\]*. Because the dimensions above location are the specific requirements for the demands that must be fulfilled, the warehouse logic won't allocate them. These dimensions **must** always be specified on the demand order or in the related reservations.
 
 In these scenarios, the challenge is that only one inventory reservation hierarchy can be assigned to each released product. Therefore, for the WMS to handle tracked items, after the hierarchy assignment determines when the batch or serial number should be reserved (either when the demand order is taken or during the warehouse picking work), this timing can't be changed on an ad-hoc basis.
 
@@ -55,16 +55,16 @@ In these scenarios, the challenge is that only one inventory reservation hierarc
 
 ### Business scenario
 
-In this scenario, a company uses an inventory strategy where finished goods are tracked by batch numbers. This company also uses the WMS workload. Because this workload has well-equipped logic for planning and running warehouse picking and shipping operations for batch-enabled items, most of the finished items are associated with a "Batch-below\[location\]" inventory reservation hierarchy. The advantage of this type of operational setup is that decisions (which are effectively reservation decisions) about which batches to pick and where to put them in the warehouse are postponed until the warehouse picking operations start. They aren't made when the customer's order is placed.
+In this scenario, a company uses an inventory strategy where finished goods are tracked by batch numbers. This company also uses the WMS workload. Because this workload has well-equipped logic for planning and running warehouse picking and shipping operations for batch-enabled items, most of the finished items are associated with a *Batch-below\[location\]* inventory reservation hierarchy. The advantage of this type of operational setup is that decisions (which are effectively reservation decisions) about which batches to pick and where to put them in the warehouse are postponed until the warehouse picking operations start. They aren't made when the customer's order is placed.
 
-Although the "Batch-below\[location\]" reservation hierarchy serves the company's business goals well, many of the company's established customers require the same batch that they previously purchased when they reorder products. Therefore, the company is looking for flexibility in the way that the batch reservation rules are handled, so that, depending on the customers' demand for the same item, the following behaviors occur:
+Although the *Batch-below\[location\]* reservation hierarchy serves the company's business goals well, many of the company's established customers require the same batch that they previously purchased when they reorder products. Therefore, the company is looking for flexibility in the way that the batch reservation rules are handled, so that, depending on the customers' demand for the same item, the following behaviors occur:
 
 - A batch number can be recorded and reserved when the order is taken by the sales processor, and it can't be changed during warehouse operations and/or taken by other demands. This behavior helps guarantee that the batch number that was ordered is shipped to the customer.
 - If the batch number isn't important to the customer, the warehouse operations can determine a batch number during picking work, after sales order registration and reservation have been done.
 
 ### Allowing reservation of a specific batch on the sales order
 
-To accommodate the desired flexibility in the batch reservation behavior for items that are associated with a "Batch-below\[location\]" inventory reservation hierarchy, inventory managers must select the **Allow reservation on demand order** check box for the **Batch number** level on the **Inventory reservation hierarchies** page.
+To accommodate the desired flexibility in the batch reservation behavior for items that are associated with a *Batch-below\[location\]* inventory reservation hierarchy, inventory managers must select the **Allow reservation on demand order** check box for the **Batch number** level on the **Inventory reservation hierarchies** page.
 
 ![Making the inventory reservation hierarchy flexible](media/Flexible-inventory-reservation-hierarchy.png)
 
@@ -75,25 +75,25 @@ When the **Batch number** level in the hierarchy is selected, all dimensions abo
 >
 > **Batch number** and **License plate** are the only levels in the hierarchy that are open for the flexible reservation policy. In other words, you can't select the **Allow reservation on demand order** check box for the **Location** or **Serial number** level.
 >
-> If your reservation hierarchy includes the serial number dimension (which must always be below the **Batch number** level), and if you've turned on batch-specific reservation for the batch number, the system will continue to handle serial number reservation and picking operations, based on the rules that apply to the "Serial-below\[location\]" reservation policy.
+> If your reservation hierarchy includes the serial number dimension (which must always be below the **Batch number** level), and if you've turned on batch-specific reservation for the batch number, the system will continue to handle serial number reservation and picking operations, based on the rules that apply to the *Serial-below\[location\]* reservation policy.
 
-At any point, you can allow batch-specific reservation for an existing "Batch-below\[location\]" reservation hierarchy in your deployment. This change won't affect any reservations and open warehouse work that were created before the change occurred. However, the **Allow reservation on demand order** check box can't be cleared if inventory transactions of the **Reserved ordered**, **Reserved physical**, or **Ordered** issue type exist for one or more items that are associated with that reservation hierarchy.
+At any point, you can allow batch-specific reservation for an existing *Batch-below\[location\]* reservation hierarchy in your deployment. This change won't affect any reservations and open warehouse work that were created before the change occurred. However, the **Allow reservation on demand order** check box can't be cleared if inventory transactions of the **Reserved ordered**, **Reserved physical**, or **Ordered** issue type exist for one or more items that are associated with that reservation hierarchy.
 
 > [!NOTE]
 > If an item's existing reservation hierarchy doesn't allow batch specification on the order, you can reassign it to a reservation hierarchy that does allow batch specification, provided that the hierarchy level structure is the same in both hierarchies. Use the **Change reservation hierarchy for items** function to do the reassignment. This change might be relevant when you want to prevent flexible batch reservation for a subset of batch-tracked items but allow it for the rest of the product portfolio.
 
-Regardless of whether you've selected the **Allow reservation on demand order** check box, if you don't want to reserve a specific batch number for the item on an order line, default warehouse operations logic that is valid for a "Batch-below\[location\]" reservation hierarchy will still apply.
+Regardless of whether you've selected the **Allow reservation on demand order** check box, if you don't want to reserve a specific batch number for the item on an order line, default warehouse operations logic that is valid for a *Batch-below\[location\]* reservation hierarchy will still apply.
 
 ### Reserve a specific batch number for a customer order
 
-After a batch-tracked item's "Batch-below\[location\]" inventory reservation hierarchy is set up to allow reservation of specific batch numbers on sales orders, sales order processors can take customer orders for the same item in one of the following ways, depending on the customer's request:
+After a batch-tracked item's *Batch-below\[location\]* inventory reservation hierarchy is set up to allow reservation of specific batch numbers on sales orders, sales order processors can take customer orders for the same item in one of the following ways, depending on the customer's request:
 
 - **Enter order details without specifying a batch number** – This approach should be used when the product's batch specification isn't important to the customer. All existing processes that are associated with handling an order of this type in the system remain unchanged. No additional considerations are required on the part of users.
 - **Enter order details and reserve a specific batch number** – This approach should be used when the customer requests a specific batch. Typically, customers will request a specific batch when they are reordering a product that they previously purchased. This type of batch-specific reservation is referred to as *order-committed reservation*.
 
 The following set of rules is valid when quantities are processed, and a batch number is committed to a specific order:
 
-- To allow reservation of a specific batch number for an item under the "Batch-below\[location\]" reservation policy, the system must reserve all dimensions up through location. This range typically includes the license plate dimension.
+- To allow reservation of a specific batch number for an item under the *Batch-below\[location\]* reservation policy, the system must reserve all dimensions up through location. This range typically includes the license plate dimension.
 - Location directives aren't used when picking work is created for a sales line that uses order-committed batch reservation.
 - During warehouse processing of work for order-committed batches, neither the user nor the system is allowed to change the batch number. (This processing includes exception handling.)
 
@@ -137,19 +137,19 @@ For this example, demo data must be installed, and you must use the **USMF** dem
 2. Select **New**.
 3. On the sales order header, in the **Customer account** field, enter **US-003**.
 4. Add a line for the new item, and enter **10** as the quantity. Make sure that the **Warehouse** field is set to **24**.
-5. On the **Sales order lines** FastTab, select **Inventory**, and then, in the **Maintain** group, select **Batch reservation**. The **Batch reservation** page shows a list of batches that are available for reservation for the order line. For this example, it shows a quantity of **20** for batch number **B11** and a quantity of **10** for batch number **B22**. Note that the **Batch reservation** page cannot be accessed from a line if the item on that line is associated with "Batch-below\[location\]" reservation hierarchy unless it is set up to allow batch-specific reservation.
+5. On the **Sales order lines** FastTab, select **Inventory**, and then, in the **Maintain** group, select **Batch reservation**. The **Batch reservation** page shows a list of batches that are available for reservation for the order line. For this example, it shows a quantity of **20** for batch number **B11** and a quantity of **10** for batch number **B22**. Note that the **Batch reservation** page cannot be accessed from a line if the item on that line is associated with *Batch-below\[location\]* reservation hierarchy unless it is set up to allow batch-specific reservation.
 
     > [!NOTE]
     > To reserve a specific batch for a sales order, you must use the **Batch reservation** page.
     >
-    > If you enter the batch number directly on the sales order line, the system will behave as though you entered a specific batch value for an item that is subject to the "Batch-below\[location\]" reservation policy. When you save the line, you will receive a warning message. If you confirm that the batch number should be specified directly on the order line, the line won't be handled by the regular warehouse management logic.
+    > If you enter the batch number directly on the sales order line, the system will behave as though you entered a specific batch value for an item that is subject to the *Batch-below\[location\]* reservation policy. When you save the line, you will receive a warning message. If you confirm that the batch number should be specified directly on the order line, the line won't be handled by the regular warehouse management logic.
     >
-    > If you reserve the quantity from the **Reservation** page, no specific batch will be reserved, and the execution of warehouse operations for the line will follow the rules that are applicable under the "Batch-below\[location\]" reservation policy.
+    > If you reserve the quantity from the **Reservation** page, no specific batch will be reserved, and the execution of warehouse operations for the line will follow the rules that are applicable under the *Batch-below\[location\]* reservation policy.
 
-    In general, this page works and is interacted with in the same way that it works and is interacted with for items that have an associated reservation hierarchy of the "Batch-above\[location\]" type. However, the following exceptions apply:
+    In general, this page works and is interacted with in the same way for items that have an associated reservation hierarchy of the *Batch-above\[location\]* type. However, the following exceptions apply:
 
     - The **Batch numbers committed to source line** FastTab shows the batch numbers that are reserved for the order line. The batch values in the grid will be shown throughout the fulfillment cycle of the order line, including the warehouse processing stages. By contrast, on the **Overview** FastTab, regular order line reservation (that is, reservation that is done for the dimensions above the **Location** level) is shown in the grid up to the point when warehouse work is created. The work entity then takes over the line reservation, and the line reservation no longer appears on the page. The **Batch numbers committed to source line** FastTab helps guarantee that the sales order processor can view the batch numbers that were committed to the customer's order at any point during its lifecycle, up through invoicing.
-    - In addition to reserving a specific batch, a user can manually select the batch's specific location and license plate instead of letting the system automatically select them. This capability is related to the design of the order-committed batch reservation mechanism. As was mentioned earlier, when a batch number is reserved for an item under the "Batch-below\[location\]" reservation policy, the system must reserve all dimensions up through location. Therefore, warehouse work will carry the same storage dimensions that were reserved by the users who worked with the orders, and it might not always represent the item storage placement that is convenient, or even possible, for picking operations. If order processors are aware of the warehouse constraints, they might want to manually select the specific locations and license plates when they reserve a batch. In this case, the user must use the **Display dimensions** functionality on the page header, and must add the location and license plate in the grid on the **Overview** FastTab.
+    - In addition to reserving a specific batch, a user can manually select the batch's specific location and license plate instead of letting the system automatically select them. This capability is related to the design of the order-committed batch reservation mechanism. As was mentioned earlier, when a batch number is reserved for an item under the *Batch-below\[location\]* reservation policy, the system must reserve all dimensions up through location. Therefore, warehouse work will carry the same storage dimensions that were reserved by the users who worked with the orders, and it might not always represent the item storage placement that is convenient, or even possible, for picking operations. If order processors are aware of the warehouse constraints, they might want to manually select the specific locations and license plates when they reserve a batch. In this case, the user must use the **Display dimensions** functionality on the page header, and must add the location and license plate in the grid on the **Overview** FastTab.
 
 6. On the **Batch reservation** page, select the line for batch **B11**, and then select **Reserve line**. There is no designated logic for assigning locations and license plates during automatic reservation. You can manually enter the quantity in the **Reservation** field. Notice that, on the **Batch numbers committed to source line** FastTab, batch **B11** is shown as **Committed**.
 
@@ -178,7 +178,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
     The work that handles the picking operation for batch quantities that are committed to the sales order line has the following characteristics:
 
     - To create work, the system uses work templates but not location directives. All the standard settings that are defined for work templates, such as a maximum number of pick lines or a specific unit of measure, will be applied to determine when new work should be created. However, the rules that are associated with location directives for identifying pick locations aren't considered, because the order-committed reservation already specifies all the inventory dimensions. Those inventory dimensions include the dimensions at the warehouse storage level. Therefore, the work inherits those dimensions without having to consult location directives.
-    - The batch number isn't shown on the pick line (as is the case for the work line that is created for an item that has an associated "Batch-above\[location\]" reservation hierarchy.) Instead, the "from" batch number and all other storage dimensions are shown on the work line's work inventory transaction that is referenced from the associated inventory transactions.
+    - The batch number isn't shown on the pick line (as is the case for the work line that is created for an item that has an associated *Batch-above\[location\]* reservation hierarchy.) Instead, the "from" batch number and all other storage dimensions are shown on the work line's work inventory transaction that is referenced from the associated inventory transactions.
 
         ![Warehouse inventory transaction for work that originates from order-committed reservation](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
@@ -221,7 +221,7 @@ You can enable license plate reservation on the order at any point in your deplo
 
 Even if the **Allow reservation on demand order** check box is selected for the **License plate** level, it's still possible *not* to reserve a specific license plate on the order. In this case, the default warehouse operations logic that is valid for the reservation hierarchy applies.
 
-To reserve a specific license plate, you must use an [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) process.In the application, you can do this reservation directly from a sales order by using the **Order-committed reservations per license plate** option of the **Open in Excel** command. In the entity data that is opened in the Excel add-in, you must enter the following reservation-related data and then select **Publish** to send the data back to Supply Chain Management:
+To reserve a specific license plate, you must use an [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) process. In the application, you can do this reservation directly from a sales order by using the **Order-committed reservations per license plate** option of the **Open in Excel** command. In the entity data that is opened in the Excel add-in, you must enter the following reservation-related data and then select **Publish** to send the data back to Supply Chain Management:
 
 - Reference (Only the *Sales order* value is supported.)
 - Order number (The value can be derived from the lot.)
@@ -415,7 +415,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Override location</strong> menu item on the warehouse app when you start picking work.</li>
+<li>Select the <strong>Override location</strong> menu item on the Warehouse Management mobile app when you start picking work.</li>
 <li>Select <strong>Suggest</strong>.</li>
 <li>Confirm the new location that is suggested based on batch quantity availability.</li>
 </ol>
@@ -432,7 +432,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Override location</strong> menu item on the warehouse app when you start picking work.</li>
+<li>Select the <strong>Override location</strong> menu item on the Warehouse Management mobile app when you start picking work.</li>
 <li>Manually enter a location.</li>
 </ol>
 </td>
@@ -460,7 +460,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Not applicable</td>
 <td>
 <ol>
-<li>Select the <strong>Full</strong> menu item on the warehouse app when you process picking work.</li>
+<li>Select the <strong>Full</strong> menu item on the Warehouse Management mobile app when you process picking work.</li>
 <li>In the <strong>Pick Qty</strong> field, enter a partial quantity of the required pick to indicate the full capacity.</li>
 </ol>
 </td>
@@ -535,7 +535,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Start a movement on the warehouse app.</li>
+<li>Start a movement on the Warehouse Management mobile app.</li>
 <li>Enter "from" and "to" locations.</li>
 </ol></td>
 <td>
@@ -651,7 +651,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Pick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, enter <strong>No reallocation</strong>.</li>
 </ol>
@@ -680,7 +680,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Pick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, enter <strong>No reallocation</strong>.</li>
 </ol>
@@ -704,7 +704,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Yes</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 <li>Select the location/license plate in the list.</li>
@@ -730,7 +730,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 </ol>
@@ -743,7 +743,7 @@ The following tables provide an overview that shows how the system handles order
 <td>No</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
 <li>Select the location/license plate in the list.</li>
@@ -767,7 +767,7 @@ The following tables provide an overview that shows how the system handles order
 <td>Not applicable</td>
 <td>
 <ol>
-<li>Select the <strong>Shortpick</strong> menu item on the warehouse app when you run picking work.</li>
+<li>Select the <strong>Shortpick</strong> menu item on the Warehouse Management mobile app when you run picking work.</li>
 <li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
 <li>In the <strong>Reason</strong> field, select <strong>Short Picking with automatic reallocation</strong>.</li>
 </ol>
@@ -859,6 +859,14 @@ The following tables provide an overview that shows how the system handles order
     - Transfer orders and raw material picking
 
 - The container consolidation rule for packing by directive unit has limitations. For order-committed reservations, we recommend that you not use container build templates where the **Pack by directive unit** field is enabled. In the current design, location directives aren't used when warehouse work is created. Therefore, only the lowest unit in the unit sequence group (the inventory unit) is applied during the containerization wave step.
+
+## See also
+
+- [Batch numbers in Warehouse management](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Pick oldest batch on a mobile device](pick-oldest-batch.md)
+- [Batch and license plate confirmation](batch-and-license-plate-confirmation.md)
+- [Troubleshoot reservations in warehouse management](troubleshoot-warehouse-reservations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: License plate receiving via the warehouse app
-description: This topic explains how to set up the warehouse app to support using a license plate receiving process to receive physical inventory.
+title: License plate receiving via the Warehouse Management mobile app
+description: This topic explains how to set up the Warehouse Management mobile app to support using a license plate receiving process to receive physical inventory.
 author: perlynne
 manager: tfehr
 ms.date: 04/29/2020
@@ -25,11 +25,11 @@ ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
 ---
 
-# License plate receiving via the warehouse app
+# License plate receiving via the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up the warehouse app so that it supports using a license plate receiving process to receive physical inventory.
+This topic explains how to set up the Warehouse Management mobile app so that it supports using a license plate receiving process to receive physical inventory.
 
 You can use this functionality to quickly record the receipt of inbound inventory that is related to an advance ship notice (ASN). The system automatically creates an ASN when warehouse management processes are used to ship a transfer order. For the purchase order process, an ASN can be manually recorded, or it can be automatically imported by using an inbound ASN data entity process.
 
@@ -75,7 +75,7 @@ To make this functionality available on your system, you must turn on the *Licen
 
 ## Show or skip the receiving summary page
 
-You can use the *Control whether to display a receiving summary page on mobile devices* feature to take advantage of an additional detailed Warehouse app flow as part of the license plate receiving process.
+You can use the *Control whether to display a receiving summary page on mobile devices* feature to take advantage of an additional detailed Warehouse Management mobile app flow as part of the license plate receiving process.
 
 When this feature is turned on, mobile device menu items for license plate receiving or license plate receiving and put-away will provide a **Display receiving summary page** setting. This setting has the following options:
 

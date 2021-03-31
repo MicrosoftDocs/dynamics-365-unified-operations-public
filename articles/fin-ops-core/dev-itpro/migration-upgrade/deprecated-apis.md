@@ -4,7 +4,6 @@
 title: Deprecated APIs
 description: This document provides the list of deprecated APIs and migration guidance for some of the deprecated APIs.
 author: aneesmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

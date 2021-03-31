@@ -4,7 +4,6 @@
 title: Create a new Retail Server extension
 description: This topic explains how to create a new Commerce Scale Unit extension.
 author: mugunthanm
-manager: AnnBe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Create a workflow type
 description: This topic describes how to create workflow types.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Install metadata hotfixes in development environments
 description: This topic will guide you through installing an Application Metadata hotfix on your development environment.
 author: RobinARH
-manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Configure batch-only and interactive-only AOS nodes in on-premises deployments
 description: This topic explains how to configure your environment so that you can deploy batch-only and interactive-only AOS nodes.
 author: faix
-manager: AnnBe
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Ways to add content 
 description: This topic provides an overview and select links for where and how to begin managing content using the Microsoft Dynamics 365 Commerce site builder web authoring tool set.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Upgrades, updates, and hotfixes resources
 description: This topic shows where to find information about upgrading, updating, and applying hotfixes to your Finance and Operations environment and data.
 author: margoc
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: index-page
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Dynamics Symbol font
 description: This topic provides a link to the list of available symbols for each release.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

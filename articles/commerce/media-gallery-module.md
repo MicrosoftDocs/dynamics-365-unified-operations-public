@@ -4,7 +4,6 @@
 title: Media gallery module
 description: This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 

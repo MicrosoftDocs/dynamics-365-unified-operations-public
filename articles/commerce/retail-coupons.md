@@ -4,7 +4,6 @@
 title: Set up coupons for retail sales
 description: This topic provides an overview of coupons and explains how to set them up.
 author: scott-tucker
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 

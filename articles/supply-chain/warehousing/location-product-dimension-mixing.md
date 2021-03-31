@@ -209,9 +209,9 @@ You will create a purchase order that has three lines: two lines for the same pr
 
 1.Select **Save**.
 
-### Receive purchase order lines in the warehouse app
+### Receive purchase order lines in the Warehouse Management mobile app
 
-1. Sign in to the warehouse app as a user who is enabled for warehouse *24*.
+1. Sign in to the Warehouse Management mobile app as a user who is enabled for warehouse *24*.
 1. Select the **Inbound** menu.
 1. Select **PO Line receiving**.
 1. Select the **PONUM** field, and then enter the purchase order number.

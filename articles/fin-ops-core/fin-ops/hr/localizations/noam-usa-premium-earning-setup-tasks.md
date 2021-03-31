@@ -2,9 +2,8 @@
 # required metadata
 
 title: Set up premium earnings
-description: This topic provides information about premium earnings and how to set them up. Premium earnings are extra earnings, such as bonuses or overtime premiums, that are paid to workers when specific conditions are met. Other types of premium earnings include a differential for hours that are worked on a second or third shift, and additional pay for workers who hold a certificate for advanced training or qualifications.
+description: This topic provides information about premium earnings and how to set them up.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

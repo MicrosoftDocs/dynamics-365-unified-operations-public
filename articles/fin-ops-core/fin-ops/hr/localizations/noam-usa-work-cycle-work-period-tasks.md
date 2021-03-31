@@ -2,9 +2,8 @@
 # required metadata
 
 title: Set up work cycles and work periods
-description: This topic explains how to set up work cycles and work periods. You use work cycles to specify the frequency of work periods. Some earnings, such as the regular-rate overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods.
+description: This topic explains how to set up work cycles and work periods.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

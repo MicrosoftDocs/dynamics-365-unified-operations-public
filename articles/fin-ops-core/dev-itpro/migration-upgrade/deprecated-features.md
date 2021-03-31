@@ -4,7 +4,6 @@
 title: Removed or deprecated features in previous releases
 description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases.
 author: sericks007
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 

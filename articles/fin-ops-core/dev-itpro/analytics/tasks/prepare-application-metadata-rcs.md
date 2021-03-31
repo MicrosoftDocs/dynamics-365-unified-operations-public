@@ -4,7 +4,6 @@
 title: Prepare application metadata to be used in RCS
 description: This topic describes how to create a new reporting configuration that contains application metadata.
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/28/2019
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Write select statements as expressions
 description: This topic explains how you can use a select statement as an expression.
 author: robinarh
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 

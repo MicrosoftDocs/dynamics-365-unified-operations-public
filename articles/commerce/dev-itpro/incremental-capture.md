@@ -4,7 +4,6 @@
 title: Incremental payment capture  
 description: This topic describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce.
 author: rubendel
-manager: annbe
 ms.date: 3/12/2021
 ms.topic: article
 ms.prod: 

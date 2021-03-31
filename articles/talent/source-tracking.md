@@ -4,7 +4,6 @@
 title: Track candidate sources in Attract
 description: This topic provides information about tracking the source for candidate profiles and applications. 
 author: hachandr
-manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 

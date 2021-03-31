@@ -4,7 +4,6 @@
 title: Integrated worker, job, and position
 description: This topic provides information about integrated worker data in Microsoft Dynamics 365 apps.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 

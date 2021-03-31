@@ -4,7 +4,6 @@
 title: API, class, and table resources
 description: This topic describes where to find API documentation in Visual Studio and on the Microsoft docs site.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 

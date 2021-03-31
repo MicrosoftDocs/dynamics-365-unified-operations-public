@@ -69,7 +69,7 @@ When an inbound load first arrives at the warehouse, warehouse workers must regi
 
 - **A mobile device menu that is configured to support load receiving**
 
-    The [warehouse app](install-configure-warehousing-app.md) for mobile devices supports the following work creation processes:
+    The [Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) for mobile devices supports the following work creation processes:
 
     - Load item receiving
     - Load item receiving and put away
@@ -288,7 +288,7 @@ To work through these scenarios by using the specified sample records and values
 
 Before warehouse receiving clerks can use a mobile device to register inbound inventory that is linked to a load, you must create a mobile device menu item for that purpose.
 
-In this section, you will create a mobile device menu item and add it to an existing menu. A warehouse worker can then select the menu item in the warehouse app.
+In this section, you will create a mobile device menu item and add it to an existing menu. A warehouse worker can then select the menu item in the Warehouse Management mobile app.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**, and make sure that your mobile device menu includes a menu item that has the following settings:
 

@@ -4,7 +4,6 @@
 title: Active batch periods
 description: This topic provides information about setting up and working with active batch periods.
 author: hasaid
-manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 

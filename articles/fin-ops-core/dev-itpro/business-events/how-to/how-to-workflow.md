@@ -4,7 +4,6 @@
 title: Business events and workflow approvals
 description: This topic explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/13/2019
 ms.topic: article
 ms.prod: 

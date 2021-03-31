@@ -4,7 +4,6 @@
 title: Optimize BYOD scheduled batch jobs
 description: This topic explains how to optimize performance when you're using the bring your own database (BYOD) feature with Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 

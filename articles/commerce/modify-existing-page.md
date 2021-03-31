@@ -4,7 +4,6 @@
 title: Modify an existing site page
 description: This topic describes how to modify an existing site page in Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Set up a call center channel
 description: This topic describes how to create a new call center channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: 

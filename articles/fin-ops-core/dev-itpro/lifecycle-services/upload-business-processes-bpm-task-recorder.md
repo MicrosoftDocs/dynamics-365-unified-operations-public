@@ -4,7 +4,6 @@
 title: Upload custom business processes to Business process modeler (BPM)
 description: In Microsoft Dynamics Lifecycle Services, you can record information about custom business processes by using an updated version of Task recorder.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

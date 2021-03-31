@@ -4,7 +4,6 @@
 title: Action design guidelines
 description: This topic provides in-depth information on designing mobile apps.
 author: robinarh
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
