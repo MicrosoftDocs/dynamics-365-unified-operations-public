@@ -226,19 +226,19 @@ FRRT legal entity.
 | ODComptabl | Other |
 
 
-1.  Go to **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt; **Item
+6.  Go to **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt; **Item
     sales tax groups**.
 
-2.  Select the **NORMAL** item sales tax group and in the **Reporting
+7.  Select the **NORMAL** item sales tax group and in the **Reporting
     type** field, select **Item**.
 
-3.  Go to **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt;
+8.  Go to **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt;
  **Sales tax authorities**.
 
-4.  Select the **TAXFRA** and on the **General** FastTab, in the
+9.  Select the **TAXFRA** and on the **General** FastTab, in the
  **Report layout** field, select **Belgium report layout**.
 
-5.  Go to **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Sales tax
+10.  Go to **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Sales tax
     reporting codes** and create the following reporting codes.
 
 | **Reporting layout** | **Reporting code** | **Report text** |
@@ -252,17 +252,17 @@ FRRT legal entity.
 For more information, see [Set up sales tax reporting
 codes](https://docs.microsoft.com/dynamics365/finance/localizations/emea-bel-intervat-tax-declaration#set-up-sales-tax-reporting-codes).
 
-1.  Go to **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt;
+11.  Go to **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt;
  **Sales tax codes**.
 
-2.  Select **TVA19.6**, and on the **Report setup** FastTab, in the
+12.  Select **TVA19.6**, and on the **Report setup** FastTab, in the
  **Sale** section, select the following:
 
     -   In the **Taxable sales** field, select 03.
 
     -   In the **Sales tax payable** field, select 54.
 
-3.  In the **Purchase** section, select the following:
+13.  In the **Purchase** section, select the following:
 
     -   In the **Tax purchases** field, select 81.
 
@@ -308,7 +308,7 @@ To print the **Sales journal** report, follow these steps:
 8.  In the **Final print** field, select **Yes**. Select **OK** to
     review the report.
 
-![Table Description automatically generated](media/image1.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-sales-journal-report.png)
 
 ### Print the Purchase journal report
 
@@ -357,10 +357,10 @@ To print the **Purchase journal** report, follow these steps:
 13. In the **Final print** field, select **Yes**. Select **OK** to view
     the report.
 
-![Table Description automatically generated](media/image2.png)
-![Table Description automatically generated](media/image3.png)
-![Table Description automatically generated](media/image4.png)
-![Table Description automatically generated](media/image5.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-purchase-journal-report-1.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-purchase-journal-report-2.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-purchase-journal-report-3.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-purchase-journal-report-4.png)
 
 ### Print the Financial journal report
 
@@ -404,9 +404,9 @@ To print the **Financial journal** report, follow these steps:
 9.  In the **Final print** field select **Yes**. Select **OK** to review
     the report.
 
-![Table Description automatically generated](media/image6.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-financial-journal-report-1.png)
 
-![Table Description automatically generated](media/image7.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-financial-journal-report-2.png)
 
 Print the Other journal report
 
@@ -451,21 +451,21 @@ To print the **Other journal** report, follow these steps:
 
 10. Select **OK** and review the report result.
 
-![Table Description automatically generated](media/image8.png)
-![Table Description automatically generated](media/image9.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-other-journal-report-1.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-other-journal-report-2.png)
 
 Print overview journal report
 
 To print the **Overview journal** report, follow these steps:
 
-1.  Go to **General ledger** &gt; **Inquiries and reports** &gt;
+11.  Go to **General ledger** &gt; **Inquiries and reports** &gt;
  **Journal reports** &gt; **Overview journals.**
 
-2.  In the **From date** field, select 4/1/2021.
+12.  In the **From date** field, select 4/1/2021.
 
-3.  In the **To date** field, select 5/31/2021.
+13.  In the **To date** field, select 5/31/2021.
 
-4.  Select **OK** and review the report result.
+14.  Select **OK** and review the report result.
 
-![Table Description automatically generated](media/image10.png)
+![Table Description automatically generated](media/emea-bel-journal-reports-overview-journal-report.png)
 
