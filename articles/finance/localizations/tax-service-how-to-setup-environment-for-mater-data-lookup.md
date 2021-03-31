@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 
 1. Set up power platform integration in LCS (Lifecycle Services). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
