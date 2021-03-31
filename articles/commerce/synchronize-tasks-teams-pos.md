@@ -71,12 +71,14 @@ To link the POS and Microsoft Teams applications for task management in Commerce
 
 ## Additional resources
 
-[Manage the Tasks app for your organization in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-tasks-app)
-
-[Dynamics 365 Commerce and Microsoft Teams integration](commerce-teams-integration.md)
-
-[Provision Microsoft Teams from Dynamics 365 Commerce](provision-teams-from-commerce.md)
+[Dynamics 365 Commerce and Microsoft Teams integration overview](commerce-teams-integration.md)
 
 [Enable Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md)
 
+[Provision Microsoft Teams from Dynamics 365 Commerce](provision-teams-from-commerce.md)
+
 [Manage user roles in Microsoft Teams](manage-user-roles-teams.md)
+
+[Map stores and teams if there are pre-existing teams in Microsoft Teams](map-stores-existing-teams.md)
+
+[Dynamics 365 Commerce and Microsoft Teams integration FAQ](teams-integration-faq.md)
