@@ -162,7 +162,7 @@ The **Standard expenses in current period** register reflects
 information about the expenses of the current period, their rated part,
 and the part that exceeds the standard.
 
-1[4 rated expenses](media/4_rated_expenses.png)
+![4 rated expenses](media/4_rated_expenses.png)
 
 View the following information on the register lines:
 
