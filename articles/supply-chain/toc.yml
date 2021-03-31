@@ -3098,23 +3098,23 @@
       - name: Warehouse management
         items:
         - name: The last closed work line must be a put
-          href: (troubleshooting/warehousing/SCM_Warehouse_and_Transportation_The-last-closed-work.md)
+          href: troubleshooting/warehousing/SCM_Warehouse_and_Transportation_The-last-closed-work.md
         - name: The weight fields on load lines do not match the weight fields on load
-          href: (troubleshooting/warehousing/SCM_Warehouse_and_Transportation_The-weight-fields-on.md)
+          href: troubleshooting/warehousing/SCM_Warehouse_and_Transportation_The-weight-fields-on.md
         - name: Wave is not eligible for cleanup
-          href: (troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Wave-is-not-eligible.md)
+          href: troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Wave-is-not-eligible.md
         - name: Weight must be positive
-          href: (troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Weight-must-be-posit.md)
+          href: troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Weight-must-be-posit.md
         - name: Work can't be cancelled because it is blocked
-          href: (troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Work-cannot-be-cance_1.md)
+          href: troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Work-cannot-be-cance_1.md
         - name: Work can't be canceled because of status
-          href: (troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Work-cannot-be-cance.md)
+          href: troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Work-cannot-be-cance.md
         - name: Work is not blocked
-          href: (troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Work-is-not-blocked.md)
+          href: troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Work-is-not-blocked.md
         - name: Work remains blocked
-          href: (troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Work-remains-blocked.md)
+          href: troubleshooting/warehousing/SCM_Warehouse_and_Transportation_Work-remains-blocked.md
         - name: You can't cancel work that is on a user
-          href: (troubleshooting/warehousing/SCM_Warehouse_and_Transportation_You-cannot-cancel-wo.md)
+          href: troubleshooting/warehousing/SCM_Warehouse_and_Transportation_You-cannot-cancel-wo.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
