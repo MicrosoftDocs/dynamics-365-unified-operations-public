@@ -162,6 +162,21 @@ Personal character types (msdyn_personalcharactertypes)| 1.0.0.0 | This is a new
 Salutations (msdyn_salutations)| 1.0.0.0 | This is a new map added as part of this release.
 Employment job functions (msdyn_employmentjobfunctions)| 1.0.0.0 | This is a new map added as part of this release.
 
+3. Before running the above maps , make sure the integration keys are updated properly as follows:
+
+Account :  accountnumber [Account Number], msdyn_company.cdm_companycode [Company (Company Code)] 
+Contact : msdyn_contactpersonid [Account Number/Contact Person ID], msdyn_company.cdm_companycode [Company (Company Code)] 
+Contact For Customer/Vendor : msdyn_contactforpartynumber [Contact For Party Number], msdyn_associatedcompanyid.cdm_companycode [Company (Company Code)] 
+Vendor : msdyn_vendoraccountnumber [Vendor Account Number], msdyn_company.cdm_companycode [Company (Company Code)] 
+
+4. Run the maps. In case you get "Project validation failed. Missing destination field..." error, open the map, click 'Refresh Tables' and then run the map.
+
+> [!Note] The CDS Contacts V2 (contacts) maps is the old map that you stopped in the step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. You need to make sure you dont run these. 
+
+> [!Note] Note: In the presence of <party-gap> solution, you need to disable the "Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead" plugin. If you decide to un-install <party-gab> solution, then make sure you enable the plugin.
+
+
+
 ## Templates
 
 A collection of table maps work together for party and global address book interaction, as shown in the following table.
