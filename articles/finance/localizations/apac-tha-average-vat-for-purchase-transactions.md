@@ -28,6 +28,8 @@ ms.dyn365.ops.version:
 
 # Average VAT for purchase transactions
 
+[!include [banner](../includes/banner.md)]
+
 An individual or legal entity might purchase goods or services that are
 used by both value-added tax (VAT) businesses and non-VAT businesses. In
 these cases, if there is no clear division of the proportion of the
@@ -90,8 +92,7 @@ values** page.
         interval for the proportion.
 
 For more information, see [Thailand unrealized and realized VAT](apac-tha-unrealized-vat.md)
-and [Set up sales tax
-codes](../general-ledger/tasks/set-up-sales-tax-codes.md).
+and [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).
 
 5.  Go to **Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax
     groups**, and set up sales tax groups for average unrealized VAT and
@@ -127,7 +128,7 @@ item as part of the inventory amount or to the expense account for a
 service as part of the expense.
 
 For more information about unrealized and realized VAT, see [Tax invoice
-for Thailand]().
+for Thailand](apac-tha-tax-invoices.md).
 
 ### Post a vendor payment transaction when the VAT ratio is updated after the invoice is posted
 
