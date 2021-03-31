@@ -142,17 +142,26 @@ If you are an existing dual-write customer, then the following setup instruction
 
 Map | Update to this version | Changes
 ---|---|---
+CDS Parties (msdyn_parties)| 1.0.0.0 | This is a new map added as part of this release.
+Contacts V2 (msdyn_contactforparties)| 1.0.0.5 | This is a new map added as part of this release.
 Customers V3 (accounts) | 1.0.0.5 |Removed the PartyNumber and other party-related fields like name, personal details, postal address fields, electronic contact address fields etc.
 Customer V3 (contacts) | 1.0.0.5 | Removed the PartyNumber and other party-related fields like name, personal details, postal address fields, electronic contact address fields etc.
 Vendors V2 (msdyn_vendors) | 1.0.0.6 | Removed the PartyNumber and other party-related fields like name, personal details, postal address fields, electronic contact address fields etc.
-CDS Sales quotation headers (quotes) | 1.0.0.6 | Replaced the contact person with ContactforParty reference.
+CDS Sales quotation headers (quotes) | 1.0.0.7 | Replaced the contact person with ContactforParty reference.
 Sales invoice headers V2 (invoices) | 1.0.0.4 | Replaced the contact person with ContactforParty reference.
 CDS Sales order headers (salesorders) | 1.0.0.5 | Replaced the contact person with ContactforParty reference.
 Contacts V2 (msdyn_contactforparties) | 1.0.0.2 | This is a new map. If you have a previous version of the party solution, make sure to update this map to the latest version as mentioned.
 CDS Party postal address locations (msdyn_partypostaladdresses) | 1.0.0.1  | This is a new map added as part of previous party preview release.
-CDS postal address history V2 (msdyn_postaladdresses) | | This is a new map added as part of previous party preview release.
-CDS postal address locations (msdyn_postaladdresscollections) | | This is a new map added as part of previous party preview release.
-Party Contacts V3 (msdyn_partyelectronicaddresses) | | This is a new map added as part of this release.
+CDS postal address history V2 (msdyn_postaladdresses) | 1.0.0.1 | This is a new map added as part of previous party preview release.
+CDS postal address locations (msdyn_postaladdresscollections) | 1.0.0.0 | This is a new map added as part of previous party preview release.
+Party Contacts V3 (msdyn_partyelectronicaddresses) | 1.0.0.0 | This is a new map added as part of this release.
+Complimentary Closings ( msdyn_compliemntaryclosings)| 1.0.0.0 | This is a new map added as part of this release.
+Decision making roles (msdyn_decisionmakingroles)| 1.0.0.0 | This is a new map added as part of this release.
+Loyalty levels (msdyn_loyaltylevels)| 1.0.0.0 | This is a new map added as part of this release.
+Contact person titles (msdyn_salescontactpersontitles)| 1.0.0.0 | This is a new map added as part of this release.
+Personal character types (msdyn_personalcharactertypes)| 1.0.0.0 | This is a new map added as part of this release.
+Salutations (msdyn_salutations)| 1.0.0.0 | This is a new map added as part of this release.
+Employment job functions (msdyn_employmentjobfunctions)| 1.0.0.0 | This is a new map added as part of this release.
 
 ## Templates
 
@@ -181,3 +190,30 @@ Finance and Operations app | Customer engagement app     | Description
 [Vendors V2](mapping-reference.md#202) | msdyn_vendors |
 
 For more information, see [Dual-write mapping reference](mapping-reference.md).
+
+## Known Issues/Limitations
+1. In F&O, when a customer a customer with address and hit save, it syncs to Dataverse until msdyn_postaladdress entity but it doesn’t reflect on the address entity. This is due to Dataverse sequencing issues with the multi-level relational data.  To overcome this situation, please make sure you create the customer first and save and then add address to it.
+2. When a customer has got multiple addresses, the "initial sync" functionality is syncing only few address records and not all. In such case you need to re-run the initial sync for the address entity. We are actively investigating this issue.
+3. In F&O, when a customer record has a primary address and say the user is creating a new contact for that customer, then the contact record inherits a primary address from the associated customer record.  This behavior can be seen for vendor contact as well. However, Dataverse doesn’t support this behavior today. We are still debating the need for it in Dataverse.  Note: In the presence of dual-write, the customer contacts inherited with a primary address from F&O gets synchronized to Dataverse along with its address.  
+4. Electronic addresses from the msdyn_partyelectronicaddress entity does not flow to the electronic address fields on Account and Contact entity. This is a known issue and will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will not be overwritten. 
+5. Electronic addresses set on the electronic address tab of the Account/Contact/Vendor forms are coming from msdyn_partyelectronicaddress entity. This information does not flow to its associated transactions like sales order, quotation,  purchase order etc.. This will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will continue to work on transactions like sales order, quotation, purchase order etc.
+6. In F&O, you can create a contact record from the “Add Contact” form for a customer.
+![image](https://user-images.githubusercontent.com/35249833/113216329-0d5a3300-9231-11eb-82d7-7defcdb00f62.png)
+If you try to create a new contact from the “View Contact” form, the contact creation will fail. This is a known issue and we don’t have a solution for it. 
+
+
+7. "Initial sync" functionality does not support the "Available From" and "Available To" date fields on "ContactForParty" as DIXF doesn’t support type conversions. 
+8. When a postal address is used for more than one reason like business communication address as well as a billing address, it should be presented as "Business;Invoice" as shown below. In case you add a space in between, you will get an error. This is not a good user experience. Ideally, it should be a multi-select lookup control where the user can select one or more roles and it gets concatenated behind the scenes. 
+
+
+9. Localization for strings in javascript files in GAB extended and Party solutions
+<We can support 20 languages otherwise it is for only english>
+
+Dupe detection rules - from yammer
+
+Possible configuration matrix and what is supported and what is not? 
+<When entering forward dating postal address in F&O is not supported. What is the effect? How to mitigate? Coming in future?>
+10. Initial sync Ordering - get from pradeep - this Is not an issue.
+![image](https://user-images.githubusercontent.com/35249833/113216353-164b0480-9231-11eb-9305-d48ffbf2f3b3.png)
+
+
