@@ -139,7 +139,7 @@ rated expenses.
     normalized amount accounted for in the expenses of the future
     period.
 
-[2 rated expenses](media/2_rated_expenses.png)
+![2 rated expenses](media/2_rated_expenses.png)
 
 ### Assign calculation sequences to the register
 
@@ -152,7 +152,7 @@ rated expenses.
     numbers of the calculation sequences to form the register from the
     list.
 
-[3 rated expenses](media/3_rated_expenses.png)
+![3 rated expenses](media/3_rated_expenses.png)
 
 ## Standard expenses in current period register
 
@@ -162,7 +162,7 @@ The **Standard expenses in current period** register reflects
 information about the expenses of the current period, their rated part,
 and the part that exceeds the standard.
 
-[4 rated expenses](media/4_rated_expenses.png)
+1[4 rated expenses](media/4_rated_expenses.png)
 
 View the following information on the register lines:
 
