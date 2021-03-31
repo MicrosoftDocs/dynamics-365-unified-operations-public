@@ -4,7 +4,6 @@
 title: Show custom notifications in the POS
 description: This topic explains how to add custom notifications in the point of sale (POS).
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Set up custom pages for user sign-ins
 description: This topic describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.
 author: brianshook
-manager: annbe
 ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 

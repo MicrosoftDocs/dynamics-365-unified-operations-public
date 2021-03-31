@@ -4,7 +4,6 @@
 title: Gender
 description: This topic describes the Gender option set for Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 

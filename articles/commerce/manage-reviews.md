@@ -4,7 +4,6 @@
 title: Manage ratings and reviews 
 description: This topic explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
 author:  gvrmohanreddy 
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 

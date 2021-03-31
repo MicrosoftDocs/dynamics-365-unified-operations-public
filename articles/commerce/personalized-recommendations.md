@@ -4,7 +4,6 @@
 title: Enable personalized product recommendations
 description: This topic describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce. 
 author: bebeale
-manager: AnnBe
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: 

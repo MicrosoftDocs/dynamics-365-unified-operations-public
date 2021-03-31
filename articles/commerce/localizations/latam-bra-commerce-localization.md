@@ -4,7 +4,6 @@
 title: Commerce localization for Brazil
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Brazil.
 author: josaw
-manager: annbe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 

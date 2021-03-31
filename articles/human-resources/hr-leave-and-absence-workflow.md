@@ -4,7 +4,6 @@
 title: Create a leave request workflow
 description: Create a Leave and absence request workflow to manage leave requests consistently in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 05/08/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Get started with e-commerce online extensibility development
 description: This topic provides an overview that will help you start to develop e-commerce customizations by using the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 

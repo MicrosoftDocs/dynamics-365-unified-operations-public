@@ -4,7 +4,6 @@
 title: Schedule interviews in Attract
 description: This topic provides information about interview scheduling and feedback activities in Attract.
 author: hasrivas
-manager: tfehr
 ms.date: 04/10/2019
 ms.topic: article
 ms.prod: 

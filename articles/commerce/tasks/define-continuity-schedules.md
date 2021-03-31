@@ -4,7 +4,6 @@
 title: Define continuity schedules
 description: This topic walks through setting up a continuity program (otherwise known as reoccurring orders). 
 author: josaw1
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

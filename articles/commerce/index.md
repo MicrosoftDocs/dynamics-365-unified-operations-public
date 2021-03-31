@@ -4,7 +4,6 @@
 title: Commerce home page
 description: Home page for Dynamics 365 Commerce.
 author: bebeale
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 

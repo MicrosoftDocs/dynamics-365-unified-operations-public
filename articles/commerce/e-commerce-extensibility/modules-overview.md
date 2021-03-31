@@ -4,7 +4,6 @@
 title: Modules overview
 description: This topic provides an overview of module development in Microsoft Dynamics 365 Commerce. It includes best practices about when and how to extend a module's style or features.
 author: samjarawan
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-manager: annbe
 ms.date: 03/25/2021
 ms.topic: article
 ms.prod: 

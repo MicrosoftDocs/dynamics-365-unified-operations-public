@@ -2955,7 +2955,9 @@
           - name: Deferrals tax register
             href: localizations/rus-deferred-expenses-register.md
           - name: Cash flow tax registers
-            href: localizations/rus-cash-flow-tax-registers.md           
+            href: localizations/rus-cash-flow-tax-registers.md 
+          - name: Rated expenses registers
+            href: localizations/rus-rated-expenses-registers.md   
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview

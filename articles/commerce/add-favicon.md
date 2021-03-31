@@ -4,7 +4,6 @@
 title: Add a favicon
 description: This topic explains how to add a favicon to your site.
 author: bicyclingfool
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 

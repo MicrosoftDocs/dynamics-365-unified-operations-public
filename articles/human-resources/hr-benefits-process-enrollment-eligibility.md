@@ -4,7 +4,6 @@
 title: Process enrollment eligibility
 description: This article explains how to run the enrollment eligibility process.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
