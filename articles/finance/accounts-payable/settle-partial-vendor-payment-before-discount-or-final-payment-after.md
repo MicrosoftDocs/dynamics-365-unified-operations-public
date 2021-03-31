@@ -52,7 +52,7 @@ On July 2, April wants to settle 300.00 of this invoice. The payment is eligible
 
 Discount information appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | -10.00    |
@@ -77,7 +77,7 @@ April pays the rest of the invoice on July 15, which is after the discount perio
 
 Discount information appears at the bottom of the **Settle transactions** page. April can see that she has already taken a 3.00 discount.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 0.00      |
@@ -103,7 +103,7 @@ If the vendor lets April take a discount even though she is paying after the dis
 
 Discount information appears at the bottom of the **Settle transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/09/2015 |
 | Cash discount amount         | 7.00      |

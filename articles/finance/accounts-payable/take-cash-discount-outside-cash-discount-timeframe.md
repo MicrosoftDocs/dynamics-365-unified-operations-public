@@ -47,7 +47,7 @@ April marks the invoice for payment. No cash discount is taken, because the paym
 
 Discount information appears at the bottom of the **Settle transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/12/2015 |
 | Cash discount amount         | -20.00    |
@@ -65,7 +65,7 @@ If both the invoice and the payment have been posted, the cash discount can stil
 
 Discount information appears at the bottom of the **Settle open transactions** page. The discount amount that is taken is 20.00, because the amount to settle for the invoice is the default amount, 1,980.00.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/12/2015 |
 | Cash discount amount         | -20.00    |
@@ -82,7 +82,7 @@ April updates the value in the **Amount to settle** field to **500.00**. The val
 
 Discount information appears at the bottom of the **Settle open transactions** page. The value in the **Cash discount amount to take** field is **5.05**, because the amount to settle for the invoice was changed to the payment amount, 500.00.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/12/2015 |
 | Cash discount amount         | -20.00    |

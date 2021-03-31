@@ -40,7 +40,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ## Quick links
 
-|      |   |
+| &nbsp; | &nbsp;  |
 |------|---|
 |  [Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)  |[Cost element dimensions](cost-elements.md)  |
 |  [Dimension hierarchy](dimension-hierarchy.md)  |[Define cost control units](./tasks/define-cost-control-units.md)| 
@@ -50,7 +50,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ## Get started videos<br/>
 
-|  |  |                             |
+| &nbsp; | &nbsp;  | &nbsp;  |
 |------------------------|--------------------|-----------------------------|
 | [Get started with cost accounting](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Cost accounting mobile workspace](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Use Excel for cost accounting analysis](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
 

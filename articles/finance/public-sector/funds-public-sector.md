@@ -78,9 +78,8 @@ Here’s a list of some of the funds that might be used by a town government:
 
 The following table shows these funds grouped by fund class and fund type.
 
-|                |                        |                 |                                  |
+| Fund class | Fund type          | Fund number | Fund name                    |
 |----------------|------------------------|-----------------|----------------------------------|
-| **Fund class** | **Fund type**          | **Fund number** | **Fund name**                    |
 | Governmental   | General Fund           | 1103            | General Fund                     |
 |                | Special Revenue Funds  | 1343            | School of Technology             |
 |                |                        | 1372            | Information Technology           |
