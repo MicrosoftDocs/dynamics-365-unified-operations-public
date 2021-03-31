@@ -4,7 +4,6 @@
 title: Vendor transactions list page
 description: This topic provides information about the Vendor transactions list page for Microsoft Dynamics 365 Finance.
 author: mikefalkner
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Cost rollup policy and overhead calculation 
 description: This topic provides information about how to determine the correct level of secondary cost elements and create cost rollup rules that fit into organization reporting and cost traceability. 
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 

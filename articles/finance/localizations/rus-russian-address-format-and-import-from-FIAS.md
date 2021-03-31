@@ -3,7 +3,6 @@
 title: Russian address formats
 description: This topic provides information about Russian address formats and importing from the FIAS.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 

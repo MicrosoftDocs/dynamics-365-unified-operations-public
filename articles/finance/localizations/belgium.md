@@ -4,7 +4,6 @@
 title: Belgium overview
 description: This topic provides an overview of functionality specific to Belgium.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

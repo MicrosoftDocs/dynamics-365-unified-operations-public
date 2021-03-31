@@ -4,7 +4,6 @@
 title: Set up vendors for 1099 reporting
 description: This topic explains how to set up vendor records so that a 1099 box is associated with a main account. 
 author: v-kiarnd
-manager: Ann Beebe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 

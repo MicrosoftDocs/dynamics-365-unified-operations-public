@@ -4,7 +4,6 @@
 title: Mandats de paiement in the public sector in France
 description: The mandat de paiement is used by the director to notify and authorize the accountant to pay a specific amount to another entity.
 author: rschloma
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 

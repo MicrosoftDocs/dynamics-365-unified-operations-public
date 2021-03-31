@@ -4,7 +4,6 @@
 title: VAT statement for the Czech Republic
 description: Set up and generate the VAT statement for users in legal entities located in the Czech Republic.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

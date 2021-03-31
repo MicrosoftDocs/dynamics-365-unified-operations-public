@@ -4,7 +4,6 @@
 title: Three-way matching policies
 description: This topic provides examples of three-way matching.
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 

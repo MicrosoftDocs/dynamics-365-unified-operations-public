@@ -4,7 +4,6 @@
 title: MY-00006 02 Print GST customer invoices with a relief clause
 description: After you complete these procedures, when you generate a tax invoice for a customer who has bought a GST relieved item or service, the relief clause is automatically included in the final printed invoice. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

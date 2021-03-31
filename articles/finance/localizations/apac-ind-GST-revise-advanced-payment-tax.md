@@ -4,7 +4,6 @@
 title: Revise advance payments that include tax
 description: This topic explains how to revise an advance payment that includes tax.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Create dimensions and import dimension members
 description: Cost accounting is an independent module that requires master data from other modules.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/20/2017
 ms.topic: article
 ms.prod: 

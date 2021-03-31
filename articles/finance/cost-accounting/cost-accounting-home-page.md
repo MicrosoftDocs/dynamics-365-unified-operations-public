@@ -4,7 +4,6 @@
 title: Cost accounting home page
 description: This topic provides a list of the help topics and other resources that are available for Cost accounting.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 

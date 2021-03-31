@@ -4,7 +4,6 @@
 title: Issue customer fiscal documents (for SUFRAMA customers) (Brazil)
 description: Use this procedure to set up tax exemptions for the Superintendência da Zona Franca de Manaus (SUFRAMA) region. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  

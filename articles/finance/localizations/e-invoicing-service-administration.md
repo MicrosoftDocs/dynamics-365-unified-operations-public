@@ -4,7 +4,6 @@
 title: Electronic invoicing administration components
 description: This topic provides information about the components that are related to administration of Electronic invoicing.
 author: gionoder
-manager: AnnBe
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 

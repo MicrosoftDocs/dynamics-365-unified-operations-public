@@ -4,7 +4,6 @@
 title: Thailand unrealized and realized VAT
 description: This topic provides information about unrealized and realized value-added tax (VAT) for Thailand. 
 author: anasyash
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 

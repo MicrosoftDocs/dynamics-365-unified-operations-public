@@ -4,7 +4,6 @@
 title: Reconcile bank statements by using advanced bank reconciliation
 description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This topic explains the reconciliation process.  
 author: saraschi2
-manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 

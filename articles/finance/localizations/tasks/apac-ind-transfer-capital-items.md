@@ -4,7 +4,6 @@
 title: Transfer capital items to the fixed asset (India)
 description: This procedure walks you through transferring a capital item by issuing inventory items to the Fixed assets journal. 
 author: AdamTrukawka
-manager: AnnBe 
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  

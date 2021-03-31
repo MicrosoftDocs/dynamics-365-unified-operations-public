@@ -4,7 +4,6 @@
 title: Quality orders that involve destruction of the sampling item
 description: This topic provides information about quality orders that involve destroyed sample items.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
