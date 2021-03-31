@@ -150,10 +150,9 @@ Vendors V2 (msdyn_vendors) | 1.0.0.6 | Removed the PartyNumber and other party-r
 CDS Sales quotation headers (quotes) | 1.0.0.7 | Replaced the contact person with ContactforParty reference.
 Sales invoice headers V2 (invoices) | 1.0.0.4 | Replaced the contact person with ContactforParty reference.
 CDS Sales order headers (salesorders) | 1.0.0.5 | Replaced the contact person with ContactforParty reference.
-Contacts V2 (msdyn_contactforparties) | 1.0.0.2 | This is a new map. If you have a previous version of the party solution, make sure to update this map to the latest version as mentioned.
-CDS Party postal address locations (msdyn_partypostaladdresses) | 1.0.0.1  | This is a new map added as part of previous party preview release.
-CDS postal address history V2 (msdyn_postaladdresses) | 1.0.0.1 | This is a new map added as part of previous party preview release.
-CDS postal address locations (msdyn_postaladdresscollections) | 1.0.0.0 | This is a new map added as part of previous party preview release.
+CDS Party postal address locations (msdyn_partypostaladdresses) | 1.0.0.1  | This is a new map added as part of this release.
+CDS postal address history V2 (msdyn_postaladdresses) | 1.0.0.1 | This is a new map added as part of this release.
+CDS postal address locations (msdyn_postaladdresscollections) | 1.0.0.0 | This is a new map added as part of this release.
 Party Contacts V3 (msdyn_partyelectronicaddresses) | 1.0.0.0 | This is a new map added as part of this release.
 Complimentary Closings ( msdyn_compliemntaryclosings)| 1.0.0.0 | This is a new map added as part of this release.
 Decision making roles (msdyn_decisionmakingroles)| 1.0.0.0 | This is a new map added as part of this release.
