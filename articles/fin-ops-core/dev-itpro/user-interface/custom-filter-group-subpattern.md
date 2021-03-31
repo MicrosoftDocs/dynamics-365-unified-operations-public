@@ -4,7 +4,6 @@
 title: Custom Filter Group subpattern
 description: This topic provides information about the Custom Filter Group subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 

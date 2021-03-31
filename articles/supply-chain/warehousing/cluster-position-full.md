@@ -216,7 +216,7 @@ Two work IDs should have been created, each of which has two pick lines. Follow 
 
 ### Mobile device flow execution – Work confirmation setup for the product
 
-1. Sign in to the warehouse app as a user in warehouse *61*.
+1. Sign in to the Warehouse Management mobile app as a user in warehouse *61*.
 1. Go to **Outbound \> Cluster pick create**.
 
     The **TASK: Assign work to Cluster** page appears.

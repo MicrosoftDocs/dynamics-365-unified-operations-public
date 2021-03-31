@@ -4,7 +4,6 @@
 title: Manage access to sensitive data
 description: This topic provides information about the user log functionality.
 author: ToddLefor
-manager: AnnBe
 ms.date: 12/31/2017
 ms.topic: article
 ms.prod: 

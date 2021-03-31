@@ -4,7 +4,6 @@
 title: Derived test cases
 description: This topic shows how you can use the Regression suite automation tool to execute the same test case with multiple configurations.
 author: FrankDahl
-manager: AnnBe
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 

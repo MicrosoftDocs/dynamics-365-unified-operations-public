@@ -4,7 +4,6 @@
 title: Purchase spend analysis Power BI content
 description: This topic describes what is included in the Purchase spend analysis Power BI content.
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 

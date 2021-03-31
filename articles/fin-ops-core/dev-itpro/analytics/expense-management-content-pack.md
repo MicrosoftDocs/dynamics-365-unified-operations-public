@@ -4,7 +4,6 @@
 title: Expense management Power BI content
 description: This topic describes what is included in the Expense management Power BI content pack.
 author: panolte
-manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 

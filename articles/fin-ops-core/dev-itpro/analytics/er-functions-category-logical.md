@@ -4,7 +4,6 @@
 title: List of ER functions in the logical category
 description: This topic provides information about the logical functions that are supported in Electronic reporting (ER).
 author: NickSelin
-manager: kfend
 ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 

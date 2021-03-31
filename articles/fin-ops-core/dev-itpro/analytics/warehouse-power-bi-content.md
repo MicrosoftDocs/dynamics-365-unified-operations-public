@@ -4,7 +4,6 @@
 title: Warehouse performance Power BI content
 description: This topic describes what's included in the Warehouse performance Power BI content.
 author: Mirzaab 
-manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 

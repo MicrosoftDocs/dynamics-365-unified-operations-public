@@ -4,7 +4,6 @@
 title: Patch SQL Server Reporting Services (SSRS) in one-box environments
 description: Apply SSRS hotfixes to a one-box development environment. 
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

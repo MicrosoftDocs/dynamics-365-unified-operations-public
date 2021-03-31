@@ -4,7 +4,6 @@
 title: Defer the execution of sequence elements in ER formats
 description: This topic explains how to defer the execution of a sequence element in an Electronic reporting (ER) format.
 author: NickSelin
-manager: kfend
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 

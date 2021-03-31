@@ -4,7 +4,6 @@
 title: Details Transaction form pattern
 description: This topic provides information about the Details Transaction form pattern. Using this pattern, users can switch between a Header view and a Line view.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

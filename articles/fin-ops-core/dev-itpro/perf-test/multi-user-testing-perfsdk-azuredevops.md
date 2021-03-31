@@ -4,7 +4,6 @@
 title: Multi-user testing with the Performance SDK and Azure DevOps
 description: This topic explains how to do multi-user testing by using the Performance SDK, Microsoft Azure DevOps, and the Task Recorder performance test scripts. 
 author: hasaid
-manager: AnnBe
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

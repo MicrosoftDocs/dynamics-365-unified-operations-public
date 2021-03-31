@@ -4,7 +4,6 @@
 title: Upgrade single-voucher journals and currency revaluations
 description: This topic describes how to upgrade single-voucher journals and currency revaluations.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

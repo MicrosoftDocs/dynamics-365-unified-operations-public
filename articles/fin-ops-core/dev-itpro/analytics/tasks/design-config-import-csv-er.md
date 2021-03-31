@@ -4,7 +4,6 @@
 title: Design ER configurations to import data from external CSV files
 description: Use this procedure to design Electronic reporting configurations to import data in to a Finance and Operations app from an external file in CSV format.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod:

@@ -4,7 +4,6 @@
 title: Dual-write home page
 description: This topic provides links to information about dual-write.
 author: robinarh
-manager: AnnBe
 ms.date: 02/08/2020
 ms.topic: article
 ms.prod: 
