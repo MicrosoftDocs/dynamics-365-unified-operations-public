@@ -1,15 +1,35 @@
-﻿---
-title: 
-description: 
-ms.date: 04.01.2021
+---
+# required metadata
+
+title: Journal reports
+description: This topic provides information about unrealized and realized value-added tax (VAT) for Thailand. 
+author: anasyash
+ms.date: 03/31/2021
 ms.topic: article
-ms.service: dynamics365-financials
-author: andosip
-ms.author: andosip
-manager: anasyash
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: TaxTable, VendParameters, CustParameters
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 265924
+ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
+ms.search.region: Thailand
+# ms.search.industry: 
+ms.author: anasyash
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+
 ---
 
 # Journal reports (Posting journals)
+
+[!include [banner](../includes/banner.md)]
 
 Periodically, Belgian companies must print a report for each journal.
 The report provides a chronological list of all the postings to the
@@ -106,12 +126,9 @@ the general ledger. This report summarizes the following:
 
 -   The overall debits and credits per general ledger account.
 
--   The tax details per tax code and voucher number, including the tax
-    > base amount and tax amount distribution against goods, services,
-    > and investments.
+-   The tax details per tax code and voucher number, including the tax base amount and tax amount distribution against goods, services, and investments.
 
--   A list of the tax postings sorted by their corresponding tax
-    > reporting codes.
+-   A list of the tax postings sorted by their corresponding tax reporting codes.
 
 This report is typically used by collections agents, collections
 managers, chief financial officers, accounts receivable clerks, accounts
