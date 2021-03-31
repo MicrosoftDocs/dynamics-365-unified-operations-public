@@ -4,7 +4,7 @@ title: Map stores and teams if there are pre-existing teams in Microsoft Teams
 description: This topic covers how to map stores and corresponding teams in Dynamics 365 Commerce headquarters if your organization has already created teams in Microsoft Teams before Commerce integration.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 03/17/2021
+ms.date: 03/31/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -71,13 +71,13 @@ The following example image shows the **Export teams mapping** group in Commerce
 
 ## Additional resources
 
-[Dynamics 365 Commerce and Microsoft Teams integration ](commerce-teams-integration.md)
+[Dynamics 365 Commerce and Microsoft Teams integration overview](commerce-teams-integration.md)
+
+[Enable Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md)
 
 [Provision Microsoft Teams from Dynamics 365 Commerce](provision-teams-from-commerce.md)
 
-[Synchronize task management between Microsoft Teams and POS](synchronize-tasks-teams-pos.md)
-
-[Enable Microsoft Teams integration](enable-teams-integration.md)
+[Synchronize task management between Microsoft Teams and Dynamics 365 Commerce POS](synchronize-tasks-teams-pos.md)
 
 [Manage user roles in Microsoft Teams](manage-user-roles-teams.md)
 
