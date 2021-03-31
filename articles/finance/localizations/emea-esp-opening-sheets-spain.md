@@ -42,9 +42,8 @@ When you close the entries for the previous fiscal year, you can create several 
 ## Create a new opening sheet
 To create a new **Opening sheet,** click **New** on the **Opening sheets** page, and specify the following.
 
-|                    |                                                                                                                                                                                                                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Field**          | **Description**                                                                                                                                                                                                                                                                                   |
+|  Field           |  Description |
+|--------------------|----------------------------------|
 | **Opening sheets** | Enter a code for the opening sheet. You can create several opening sheets for each year, but each must have a unique identifier in the **Opening sheets** field.                                                                                                                                  |
 | **Name**           | Name for the opening sheet.                                                                                                                                                                                                                                                                       |
 | **Posting layer**  | Select the posting layer for the transactions.                                                                                                                                                                                                                                                    |
