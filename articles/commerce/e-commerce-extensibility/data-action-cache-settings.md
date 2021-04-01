@@ -5,7 +5,7 @@ title: Data action cache settings
 description: This topic covers cache settings for data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 02/11/2021
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -39,7 +39,7 @@ For core data actions that are provided in the SDK, the cache key is implicitly 
 
 For all entities, the default TTR is 60 seconds, and the default TTL is 600 seconds.
 
-The following example shows a JavaScript Object Notation (JSON) file that includes a section for TTR and TTL settings. Each section contains name of the entity for the data action's cache key followed by the time in seconds. Note, the below example file may be different from what's included in the SDK as the SDK gets updated regularly.
+The following example shows a JavaScript Object Notation (JSON) file that includes a section for TTR and TTL settings. Each section contains name of the entity for the data action's cache key followed by the time in seconds. The example file below may be different from what is included in the SDK since the SDK gets updated regularly.
 
 ```json
 {
@@ -122,7 +122,7 @@ The following table provides cache setting descriptions for specific data action
 | Category | Contains the metadata of the category information shown in a navigation module. For better performance, and to reduce round trips to Retail Server, it is recommended to cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the category information shown. For information about the APIs returning this entity, see [Categories controller](../dev-itpro/retail-server-customer-consumer-api.md#categories-controller). |
 | CategoryHierarchy	| Contains the metadata of the hierarchy of available categories shown in a navigation module. For better performance, and to reduce round trips to Retail Server, we recommended that you cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the categories hierarchy information shown. For information about the APIs returning this entity, see [Categories controller](../dev-itpro/retail-server-customer-consumer-api.md#categories-controller). |
 | CategoryPath | Contains the metadata of the category path used in the breadcrumb module. For better performance, and to reduce round trips to Retail Server, it is recommended to cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the category path information.  |
-| ChannelConfiguration | Contains the metadata of the channel information used in the purchase flows. For better performance, and to reduce round trips to Retail Server, it is recommended to cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the channel configuration shown. For information about the APIs returning this entity, see [Org units controller](../dev-itpro/retail-server-customer-consumer-api.md#org-units-controller)  |
+| ChannelConfiguration | Contains the metadata of the channel information used in the purchase flows. For better performance, and to reduce round trips to Retail Server, it is recommended to cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the channel configuration shown. For information about the APIs returning this entity, see [Org units controller](../dev-itpro/retail-server-customer-consumer-api.md#org-units-controller).  |
 | ChannelDeliveryConfiguration | Contains the metadata of the channel delivery configuration used in checkout and order confirmation. For better performance, and to reduce round trips to Retail Server, it is recommended to cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the channel delivery configuration. |
 | FeatureState | Contains the metadata of the feature state used in purchase flows and order templates. For better performance, and to reduce round trips to Retail Server, it is recommended to cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the feature state information. |
 | FullProduct | Contains the metadata of the full product used in order templates and search scenarios. For better performance, and to reduce round trips to Retail Server, it is recommended to cache the entity with optimum TTR and TTL values. Longer TTR affects the freshness of the full product shown. |
