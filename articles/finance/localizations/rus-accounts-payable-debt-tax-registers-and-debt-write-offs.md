@@ -1,4 +1,4 @@
-﻿---
+---
 title: Accounts payable debt tax registers and debt write-offs
 description: This topic provides information about accounts payable debt tax registers and debt write-offs.
 ms.date: 04/01/2021
