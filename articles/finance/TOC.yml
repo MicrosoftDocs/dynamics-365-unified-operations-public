@@ -2957,7 +2957,9 @@
           - name: Cash flow tax registers
             href: localizations/rus-cash-flow-tax-registers.md 
           - name: Rated expenses registers
-            href: localizations/rus-rated-expenses-registers.md   
+            href: localizations/rus-rated-expenses-registers.md
+          - name: Accounts payable debt tax registers and debt write-offs
+            href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
