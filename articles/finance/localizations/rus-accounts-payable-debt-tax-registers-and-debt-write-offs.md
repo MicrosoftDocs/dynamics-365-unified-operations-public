@@ -106,15 +106,15 @@ In the journal, you should approve the **Accounts payable inventory act** regist
 2.  Go to **Accounts payable &gt; Periodic tasks &gt; Amortization &gt; Trade liabilities amortization**.
 3.  In the **Calculation date** field, select a date that indicates the required calculation period.
 
-The page shows the debts that have expired as of the indicated reporting date:
+    The page shows the debts that have expired as of the indicated reporting date:
 
--   The **Customers** tab shows the list of customer prepayments.
--   The **Vendors** tab shows the list of vendor invoices.
+    -   The **Customers** tab shows the list of customer prepayments.
+    -   The **Vendors** tab shows the list of vendor invoices.
 
 4.  To review the original customer or vendor transactions, select **Transactions** on the appropriate tab.
 5.  Select the debts to write off. The **Total** field in the **Marked** section shows the total amount of the transactions that have been marked for debiting.
 
-![5 AP_tax](media/image5.png)
+![5 AP_tax](media/5-AP_tax.png)
 
 6.  On the Action Pane, select **Update**. The marked transactions are no longer shown. In the **Written off** section, the amounts are increased to the value that appeared in the **Total** field in the **Marked** section before you selected **Update**. Transactions for customers/vendors are created. Additionally, transactions for writing off each debt are created in the general ledger. The date of the write-off operations corresponds to the date that you selected in the **Calculation date** field.
 
