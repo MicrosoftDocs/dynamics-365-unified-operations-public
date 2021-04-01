@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update certificate numbers and dates for TDS transactions
-description: This topic lists the steps for updating the recoverable certificate numbers and dates recorded for vendor, customer, and ledger accounts for Tax Deducted at Source (TDS). 
+description: This topic explains how to update the recoverable certificate numbers and dates that were recorded for vendor, customer, and ledger accounts for Tax Deducted at Source (TDS).
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -34,40 +34,37 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the steps for updating the recoverable certificate numbers and dates recorded for vendor, customer, and ledger accounts for Tax Deducted at Source (TDS). You can view certificates for TDS transactions on the **Recoverable certificates** page. You can update the certificates using the **Update Certificates** page.
+This topic explains how to update the recoverable certificate numbers and dates that were recorded for vendor, customer, and ledger accounts for Tax Deducted at Source (TDS). You can view the certificates for TDS transactions on the **Recoverable certificates** page. You can update the certificates by using the **Update Certificates** page.
 
-Complete the following steps to update certificate numbers and dates for TDS transactions.
+Follow these steps to update certificate numbers and dates for TDS transactions.
 
-To begin, open the **Update certificate** (**Tax > Declarations > Withholding tax > Update certificate**). 
+1. Go to **Tax \> Declarations \> Withholding tax \> Update certificate**.
 
- [![Update certificate](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
+    [![Update certificate page](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
 
-1. Under the **Select** field group, in the **Tax type** field, select the **TDS** option.
+2. On the **Update certificate** page, in the **Select** section, in the **Tax type** field, select **TDS**.
+3. In the **Certificate number** field, select the customer's or vendor's TDS certificate number.
 
-2. In the **Certificate number** field, select the customer or vendor TDS certificate number. In the **Certificate date** field, view the certificate date.
+    > [!NOTE]
+    > The **Certificate number** field lists only TDS certificate numbers that the **Closed** check box is cleared for on the **Recoverable certificates** page.
 
->   [!Note]
->   The TDS certificate numbers that the **Closed**  check box isn't selected for in the **Recoverable certificates** page are only available for selection in the **Certificate number**  field.   
+    The **Certificate date** field shows the certificate date. The **Account type** field shows the type of account that the TDS certificate number is received for, and the **Name** field shows the name of the account.
 
-3. In the **Account type** field, the account type that the TDS certificate number is received for is displayed. In the **Name** field, the account name is displayed.
+5. In the **From date** and **To date** fields, select the start and end dates of the period to show the TDS transactions for.
+6. Select **Show data** to view the TDS transactions that were posted during the selected period.
 
-4. In the **From date** field and the **To date** field, select the starting date and ending date range to display the TDS transactions.
+    On the **Overview** tab, the grid in the upper pane shows the following information about each TDS transaction that was posted for the vendor or customer during the selected period:
 
-5. Click the **Show data** button to display the TDS transactions posted during the selected period range in the grid area (upper-pane).
+    - **Voucher** – The voucher number of the TDS transaction.
+    - **Date** – The date of the TDS transaction.
+    - **Amount** – The invoice amount that the TDS was calculated on.
+    - **Tax amount** – The TDS tax amount that was calculated for the transaction.
 
-6. In the **Overview** tab (upper-pane), view details of TDS transactions that are posted during the selected period range for the vendor or customer in the following fields:
+7. To move specific TDS transactions from the upper grid to the lower grid, select the transactions, and then select **Include**. Alternatively, select **Include all** to move all TDS transactions from the upper grid to the lower grid.
 
-- **Voucher**: Voucher number of the TDS transaction.
-- **Date**: Date of the TDS transaction.
-- **Amount**: Invoice amount that the TDS was calculated on.
-- **Tax amount**: TDS tax amount calculated for the transaction.
+    To move specific TDS transactions or all TDS transactions from the lower grid to the upper grid, use the **Exclude** or **Exclude all** button.
 
-7.  Click the **Include** button to move a specific **TDS transaction** from the grid area (upper-pane) to the grid area (lower-pane). Click the **Include all** button to move all TDS transactions from the grid area (upper-pane) to the grid area (lower-pane).
+8. Select **Update** to update the **Certificate number** and **Certificate date** fields for TDS transactions in the lower grid.
+10. Go to **Tax \> Indirect taxes \> Withholding tax \> Recoverable certificate**, and select **Inquiry** to view the updated transaction lines that have the new certificate numbers on the **Certificate transactions** page.
 
-   Click the **Exclude** button or **Exclude all** button to move back a specific TDS transaction or all TDS transactions from the grid area (lower-pane) to the grid area (upper-pane).
-
-8. Click the **Update** button to update the certificate number and certificate date for TDS transactions that are displayed in the grid area (lower-pane) in the **Certificate number** field and in the **Certificate date** field respectively.
-
-9. Click **Tax > Indirect taxes > Withholding tax > Recoverable certificate > Inquiry button** to view the updated transaction lines with the certificate numbers on the **Certificate transactions** page.
-
- [![Certificate transactions](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
+    [![Certificate transactions page](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
