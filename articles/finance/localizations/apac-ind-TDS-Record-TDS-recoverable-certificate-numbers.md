@@ -2,7 +2,7 @@
 # required metadata
 
 title: Record TDS recoverable certificate numbers
-description: This topic describes how to record the certificate numbers and dates for Tax Deducted at Source (TDS) certificates received for a specific vendor, customer, or ledger using the Recoverable certificates page.
+description: This topic explains how to use the Recoverable certificates page to record the certificate numbers and dates for Tax Deducted at Source (TDS) certificates that are received for a specific vendor, customer, or ledger.
 author: kailiang
 manager: AnnBe
 ms.date: 02/12/2021
@@ -34,39 +34,38 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to record the certificate numbers and dates for Tax Deducted at Source (TDS) certificates received for a specific vendor, customer, or ledger using the **Recoverable certificates** page. You can update the TDS certificate numbers and dates recorded in this page for TDS transactions on the **Update certificate** page (**General ledger > Periodic > Withholding tax > Update certificate**). Close **TDS certificate numbers** after the update.
+This topic explains how to use the **Recoverable certificates** page to record the certificate numbers and dates for Tax Deducted at Source (TDS) certificates that are received for a specific vendor, customer, or ledger. To update the TDS certificate numbers and dates that are recorded for TDS transactions on this page, use the **Update certificate** page (**General ledger \> Periodic \> Withholding tax \> Update certificate**). After you've finished updating TDS certificate numbers, close them.
 
-Follow the steps below to record the TDS certificate numbers and dates:
+Follow these steps to record the TDS certificate numbers and dates.
 
- Begin by opening the **Recoverable certificates** page (**Tax > Indirect tax > Withholding tax > Recoverable certificates**).
+1. Go to **Tax \> Indirect tax \> Withholding tax \> Recoverable certificates**.
 
-[![Recoverable certificates](./media/apac-ind-TDS-49.png)](./media/apac-ind-TDS-49.png) 
+    [![Recoverable certificates page](./media/apac-ind-TDS-49.png)](./media/apac-ind-TDS-49.png) 
 
-1. In the **Tax type** field, select the **TDS** option.
+2. On the **Recoverable certificates** page, in the **Tax type** field, select **TDS**.
+3. Select **New** to create a record.
+4. In the **Certificate number** field, enter the TDS certificate number.
+5. In the **Account type** field, select the type of account that the TDS certificate is received for: **Vendor**, **Customer**, or **Ledger**.
+6. In the **Account** field, select the vendor, customer, or ledger account number, depending on the account type that you selected. The **Name** field shows the name of the vendor, customer, or ledger account.
+7. In the **Certificate amount** field, enter the amount of the TDS certificate.
+8. In the **Date** field, enter the certificate date for the certificate number.
+9. Select **Inquiries** to open the **Certificate transactions** page, where you can view the TDS transactions that the TDS certificate number and date are updated for. This information can be updated on the **Update certificate** page (**Tax \> Declarations \> Withholding tax \> Update certificate**).
 
-2. Click **NEW** to create a new record. In the **Certificate number** field, enter the TDS certificate number.
+    The **Update certificate** page shows the following information for each TDS transaction:
 
-3. In the **Account** **type** field, select the account type that the TDS certificate is received for. The options are **Vendor**, **Customer**, or **Ledger**.
+    - **Date** – The posting date of the TDS transaction.
+    - **Voucher** – The voucher number of the TDS transaction.
+    - **Source** – The module that the TDS transaction was created in.
+    - **Account** – The vendor, customer, or ledger account number that the TDS transaction was created for.
+    - **Name** – The name of the vendor, customer, or ledger account that the TDS transaction was created for.
+    - **Amount** – The invoice amount that the TDS was calculated on.
+    - **Tax amount** – The TDS tax amount that was calculated for the transaction.
+    - **Certificate date** – The TDS certificate date that was updated for the TDS transaction.
+    - **Certificate number** – TDS certificate number that was updated for the TDS transaction.
 
-4. In the **Account** field, select the vendor, customer, or ledger account number based on the selected account type. In the **Name** field, view the vendor, customer, or ledger account name.
+10. On the **Recoverable certificates** page, select the **Closed** check box to close the TDS certificate number after you've finished updating it for TDS transactions on the **Update certificate** page.
 
-5.  In the **Certificate amount** field, enter the amount of the TDS certificate. In the **Date** field, enter the certificate date for the certificate number.
+    To select the **Closed** check box for all records on the page, select **Mark all**.
 
-6. Click **Inquiries** button to open the **Certificate Transactions** page to view the TDS transactions that the TDS certificate number and date are updated for. This information can be updated on the **Update certificate** page (**Tax > Declarations > Withholding tax > Update certificate**). View the TDS transactions information in the following fields.
-
-- **Date**: Posting date of the TDS transaction.
-- **Voucher**: Voucher number of the TDS transaction.
-- **Source**: Module that the TDS transaction is created in.
-- **Account**: Vendor, customer, or ledger account number that the TDS transaction was created for.
-- **Name**: Vendor, customer, or ledger account name that the TDS transaction was created for.
-- **Amount**: Invoice amount that the TDS was calculated on.
-- **Tax amount**: TDS tax amount calculated for the transaction.
-- **Certificate date**: TDS certificate date updated for the TDS transaction.
-- **Certificate number**: TDS certificate number updated for the TDS transaction.
-
-7. On the **Recoverable certificates** page, select the **Closed** check box to close the TDS certificate number after updating it for TDS transactions on the **Update certificate** page.
-
->   [!Note]
->   TDS certificate numbers with the **Closed** check box selected are not available on the **Update certificate** page.  
-
-8. Click the **Mark all** button to select the **Closed** check box for all records on the page.
+    > [!NOTE]
+    > TDS certificate numbers that the **Closed** check box is selected for aren't available on the **Update certificate** page.
