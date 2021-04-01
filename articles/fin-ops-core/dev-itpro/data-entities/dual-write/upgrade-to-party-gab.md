@@ -34,7 +34,6 @@ This pages provides step by step instructions to use the ADF template and upgrad
 2. [Access to “Upgrade to Party-GAB” template]() 
 
   
-
 ## Assumptions and Recommendations  
 
 1. You are an existing dual-write customer. 
@@ -50,7 +49,6 @@ This pages provides step by step instructions to use the ADF template and upgrad
 6. Take snapshot of both systems F&O and CE to restore back to previous state if needed. 
 
   
-
 ## Deployment Steps
 
 1. Download the ARM template (zip file) from here.   
@@ -65,18 +63,27 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
 6. Open the data factory and click on "Author & Monitor" tile shown below. 
 
-      + Go to Manage tab and click on "ARM template" from the left panel. 
+    ![ADF1](media/ADF1.png)
 
-      + Click on Import ARM template to import the party template. 
+7. Go to Manage tab and click on "ARM template" from the left panel. 
+  
+8. Click on Import ARM template to import the party template. 
 
-7. Import ARM template into the data factory. During import, a settings section appears as shown below. Enter the configuration values. For more guidance, please follow FO Linked Service Configuration and CRM Linked Service Configuration. 
+   ![ADF2](media/ADF2.png)
 
-8. After deployment, validate the Datasets, Data flow and Linked Service.  
+9. Import ARM template into the data factory. During import, a settings section appears as shown below. Enter the configuration values. For more guidance, please follow FO Linked Service Configuration and CRM Linked Service Configuration. 
 
-9. Go to Manage. Under "Connections" you will see "Linked Service" menu. When you click on it, you will see "DynamicsCrmLinkedService" item. When you click on it, you will find "Edit Linked Service" form sliding from the right.  You need to provide the Service URI as shown below. 
+   ![ADF3](media/ADF3.png)
+
+10. After deployment, validate the Datasets, Data flow and Linked Service.  
+
+   ![ADF4](media/ADF4.png)
+
+11. Go to Manage. Under "Connections" you will see "Linked Service" menu. When you click on it, you will see "DynamicsCrmLinkedService" item. When you click on it, you will find "Edit Linked Service" form sliding from the right.  You need to provide the Service URI as shown below. 
+
+  ![ADF5](media/ADF5.png)
 
   
-
 ## Run the Data Factory with “Upgrade to Party-GAB” Template 
 
 1. Stop the following Account, Contact and Vendor dual-write maps inside F&O. 
@@ -137,12 +144,15 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
 7. Now, go to your Data Factory and run the "Upgrade to Party- GAB" template by clicking on "Trigger now" as shown below. This may take few hours to complete based on the volume. [Note: In case you have customizations around Account, Contact and Vendor, then you need to add those customizations to the given template before running.] 
 
+    ![ADF6](media/ADF6.png)
 
 8. Import new party records in F&O 
 
     + Download FONewParty.csv file from Azure blob storage - (Path: partybootstrapping/output/FONewParty.csv) 
 
     + Convert the FONewParty.csv file into an Excel and import it into F&O. [Note: In case CSV import works for you, you can import CSV file directly.] This step could take few hours to complete depending on the volume. 
+
+  ![ADF7](media/ADF7.png)
 
 9. Now in CE, enable the following plugin steps  
 
@@ -177,6 +187,8 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
 3. “Monitoring” tab provide information about all steps and data processed by ADF, click on the specific step to debug. 
 
+    ![ADF8](media/ADF8.png)
+    
 
 ## Learn more about the "Upgrade to Party-GAB" template  
 
