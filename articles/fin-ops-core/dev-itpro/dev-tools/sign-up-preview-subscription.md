@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Sign up for preview subscriptions
 description: This topic explains how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

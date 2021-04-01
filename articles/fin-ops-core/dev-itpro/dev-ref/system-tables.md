@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: System tables
 description: This topic describes the system tables.
 author: RobinARH
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 104503
-ms.assetid: 90f8562a-075d-4d5a-96ec-b0ff1ae98fb5
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # System tables

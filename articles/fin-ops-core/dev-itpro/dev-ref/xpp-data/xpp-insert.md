@@ -1,25 +1,13 @@
 ---
-# required metadata
-
 title: Insert data
 description: This topic describes how to insert data into tables by using X++.
 author: robinarh
 ms.date: 06/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150273
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28

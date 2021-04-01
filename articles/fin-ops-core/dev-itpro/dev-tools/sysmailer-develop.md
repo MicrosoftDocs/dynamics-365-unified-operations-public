@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Develop email experiences by using the SysMailer framework
 description: This topic describes how you can use the SysMailer framework to send email.
 author: ChrisGarty
@@ -8,8 +6,6 @@ ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

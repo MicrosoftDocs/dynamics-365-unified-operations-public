@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Date effectivity
 description: This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity.
 author: Sunil-Garg
@@ -8,8 +6,6 @@ ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

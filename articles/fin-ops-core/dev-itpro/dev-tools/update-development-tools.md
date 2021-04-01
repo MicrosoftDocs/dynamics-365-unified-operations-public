@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Update the Visual Studio development tools
 description: This topic explains how to update the development tools.
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

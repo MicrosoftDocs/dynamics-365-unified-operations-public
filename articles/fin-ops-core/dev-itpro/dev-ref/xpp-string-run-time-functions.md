@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: X++ string runtime functions
 description: This topic describes the string run-time functions.
 author: RobinARH
 ms.date: 08/15/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 31401
-ms.assetid: f8d76054-c863-40de-b32a-73dfaa77aeff
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ string runtime functions

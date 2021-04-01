@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Code editor features
 description: This topic describes the code editor for Visual Studio.
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Create deployable packages in Azure Pipelines
 description: This topic explains how you can create a software deployable package when you run build automation in Microsoft Azure DevOps.
 author: jorisdg
@@ -8,8 +6,6 @@ ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

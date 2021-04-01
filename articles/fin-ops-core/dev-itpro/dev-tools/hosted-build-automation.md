@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Build automation that uses Microsoft-hosted agents and Azure Pipelines
 description: The topic explains how you can automate the process of building X++ on any agents in Microsoft Azure DevOps.
 author: jorisdg
@@ -8,8 +6,6 @@ ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

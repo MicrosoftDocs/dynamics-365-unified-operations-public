@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Metadata search in Visual Studio
 description: This article describes how to use metadata search to search your code and metadata for arbitrary patterns and content.
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:

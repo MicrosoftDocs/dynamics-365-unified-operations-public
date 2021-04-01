@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: All-in-one deployable packages
 description: This topic describes the all-in-one deployable package concept and its use.
 author: laneswenka
@@ -8,8 +6,6 @@ ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

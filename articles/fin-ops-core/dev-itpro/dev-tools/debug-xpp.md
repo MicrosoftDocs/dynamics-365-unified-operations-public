@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Debug X++ code by using the debugger in Visual Studio
 description: This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio. 
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

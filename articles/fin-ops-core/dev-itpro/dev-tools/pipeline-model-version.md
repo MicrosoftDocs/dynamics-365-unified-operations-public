@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: X++ model-versioning in Azure Pipelines
 description: The topic explains how you can automatically version X++ models when you run build automation in Microsoft Azure DevOps.
 author: jorisdg
@@ -8,8 +6,6 @@ ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

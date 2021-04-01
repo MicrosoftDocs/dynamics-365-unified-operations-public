@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Customize through extension and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements, overlayering and extensions.
 author: jorisdg
@@ -8,8 +6,6 @@ ms.date: 09/25/2018
 ms.topic: article
 ms.prod:
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Build operations
 description: This topic reviews the process to build projects and full build of model packages.
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:

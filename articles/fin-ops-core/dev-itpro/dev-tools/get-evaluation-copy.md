@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Get evaluation copies
 description: A public preview is available. 
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

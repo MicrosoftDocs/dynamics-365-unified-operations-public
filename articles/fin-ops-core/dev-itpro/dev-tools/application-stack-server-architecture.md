@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Application stack and server architecture
 description: The application stack is divided into several models - Application Platform, Application Foundation, Test Essentials, and the application suites. 
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

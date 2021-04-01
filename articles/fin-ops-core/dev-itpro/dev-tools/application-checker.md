@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Application checker
 description: This topic describes the application checker tool.
 author: AndreasHassing
@@ -8,8 +6,6 @@ ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form:  
 audience: Developer

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Independent software vendor (ISV) licensing (on-premises)
 description: This topic describes the independent software vendor (ISV) licensing feature for on-premises environments.
 author: jorisdg
@@ -8,8 +6,6 @@ ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

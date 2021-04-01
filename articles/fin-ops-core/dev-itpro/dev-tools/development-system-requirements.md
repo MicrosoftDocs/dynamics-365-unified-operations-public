@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Development system requirements
 description: This topic lists the system requirements for development.
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

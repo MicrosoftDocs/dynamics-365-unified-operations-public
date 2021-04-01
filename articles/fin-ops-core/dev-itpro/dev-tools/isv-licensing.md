@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Independent software vendor (ISV) licensing
 description: This topic describes the independent software vendor (ISV) licensing feature. 
 author: jorisdg
@@ -8,8 +6,6 @@ ms.date: 05/08/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

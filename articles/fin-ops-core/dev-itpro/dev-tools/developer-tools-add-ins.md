@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Tools add-ins for Visual Studio
 description: This topic reviews the Add-ins infrastructure that has been added to Microsoft Visual Studio, so that developers can more easily add tools for development.
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

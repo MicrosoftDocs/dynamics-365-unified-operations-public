@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Continuous delivery home page
 description: These topics describe tools and guidelines related to application lifecycle management and continuous delivery of your solution.
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 10/16/2019
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

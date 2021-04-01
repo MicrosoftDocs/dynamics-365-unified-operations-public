@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Export and import models
 description: This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

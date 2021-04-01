@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: User-configurable queries
 description: This topic describes how to create configurable queries and use them with the process automation framework.
 author: RyanCCarlson2

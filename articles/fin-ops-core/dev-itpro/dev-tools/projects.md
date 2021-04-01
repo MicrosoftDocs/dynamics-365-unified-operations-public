@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Finance and Operations project type in Visual Studio
 description: The Finance and Operations project type is part of the development tools. 
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 09/12/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

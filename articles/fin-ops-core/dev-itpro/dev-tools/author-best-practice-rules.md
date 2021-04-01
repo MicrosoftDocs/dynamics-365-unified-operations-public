@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Write best practice rules
 description: This topic describes how you can author best practice rules in C#, for both metadata and X++ code. 
 author: pvillads
@@ -8,8 +6,6 @@ ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

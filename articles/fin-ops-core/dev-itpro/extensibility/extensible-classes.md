@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Write extensible classes
 description: This topic provides information about how to write extensible classes.
 author: smithanataraj
@@ -9,8 +7,6 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

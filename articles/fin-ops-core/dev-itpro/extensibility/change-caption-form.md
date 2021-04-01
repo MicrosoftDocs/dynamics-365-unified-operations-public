@@ -1,7 +1,5 @@
 ---
 
-# required metadata
-
 title: Change the captions of forms through extension
 description: This topic explains how to change the form caption that helps the user identify the current page in a web browser.
 author: ivanv-microsoft
@@ -10,8 +8,6 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
