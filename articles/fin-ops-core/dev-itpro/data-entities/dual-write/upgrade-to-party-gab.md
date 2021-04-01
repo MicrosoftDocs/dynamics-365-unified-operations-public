@@ -81,7 +81,7 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
 11. Go to Manage. Under "Connections" you will see "Linked Service" menu. When you click on it, you will see "DynamicsCrmLinkedService" item. When you click on it, you will find "Edit Linked Service" form sliding from the right.  You need to provide the Service URI as shown below. 
 
-  ![ADF5](media/ADF5.png)
+    ![ADF5](media/ADF5.png)
 
   
 ## Run the Data Factory with “Upgrade to Party-GAB” Template 
@@ -152,7 +152,7 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
     + Convert the FONewParty.csv file into an Excel and import it into F&O. [Note: In case CSV import works for you, you can import CSV file directly.] This step could take few hours to complete depending on the volume. 
 
-  ![ADF7](media/ADF7.png)
+    ![ADF7](media/ADF7.png)
 
 9. Now in CE, enable the following plugin steps  
 
