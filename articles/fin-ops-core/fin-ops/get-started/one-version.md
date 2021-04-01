@@ -142,11 +142,13 @@ For all online services of Microsoft managed environments, including all sandbox
 
 When it’s running on a version that’s out of service, you will see a warning message on top of your environment, you should apply a latest Service Update as soon as possible to keep it current.  If you don’t take any action to keep it up to date, some functionalities of Lifecycle Services (LCS) may not be available for that environment when the next version is released.  The functionalities are but not limited to - 
 
-•	Enable maintenance mode
-•	Move database
-•	Enable access
-•	Download RSAT certificate
-•	Regenerate RSAT certificate
+ - Enable maintenance mode
+ - Move database
+ - Enable access
+ - Download RSAT certificate
+ - Regenerate RSAT certificate
+
+Once you apply a latest Service Update, these functionalities will be available again to the environment.  
 
 ### What if I find an issue during the sandbox update?
 
