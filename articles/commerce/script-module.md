@@ -34,45 +34,45 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers external and inline script modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 
-External and inline script modules enable you to add JavaScript client-side scripts to site pages, either inline or called from an external file. External and inline script modules can be added to a template's **HTML Head**, **Body Begin**, or **Body End** slots. 
+External and inline script modules let you add client-side JavaScript scripts to site pages. The scripts can be inline, or they can be called from an external file. External and inline script modules can be added to a template's **HTML Head**, **Body Begin**, or **Body End** slot.
 
-The following example image shows external and inline script modules added to the various supported slots in a template.
+The following illustration shows an example where external and inline script modules have been added to the various supported slots in a template.
 
-![Script modules](media/script-modules-1.png)
+![Script modules in different slots of a template](media/script-modules-1.png)
 
 ## External script module properties
 
-| Property name     | Values | Description |
-|-------------------|--------|-------------|
+| Property name | Values | Description |
+|---------------|--------|-------------|
 | Script source | Text | The URL of the script file location. |
-| Execute script asynchronously | **True** or **False** | If set to **True**, the script will execute asynchronously. |
-| Defer script execution | **True** or **False** | If set to **True**, the script will execute when the page has finished executing. |
+| Execute script asynchronously | **True** or **False** | If this property is set to **True**, the script will run asynchronously. |
+| Defer script execution | **True** or **False** | If this property is set to **True**, the script will run when the page has finished running. |
 
 ## Inline script module properties
 
-| Property name     | Values | Description |
-|-------------------|--------|-------------|
-| Inline script | Text | The collection of scripting statements that will be inserted inline into script tags on the HTML page. |
+| Property name | Values | Description |
+|---------------|--------|-------------|
+| Inline script | Text | The collection of scripting statements that will be inserted inline into **\<script\>** tags on the HTML page. |
 
 ## Content security policy
 
-If you have content security policy (CSP) enabled, external scripts may not run. To allow external scripts to run, you must first add their domain URLs to the **script-src** CSP directive in Commerce site builder. For more information, see [Manage Content Security Policy](manage-csp.md).
+If content security policy (CSP) is enabled, external scripts might not run. To enable external scripts to run, you must first add their domain URLs to the **script-src** CSP directive in Commerce site builder. For more information, see [Manage Content Security Policy](manage-csp.md).
 
 ## Add a script module to a template
 
 To add a script module to a template, follow these steps.
 
-1. In Commerce site builder for your site, select **Templates**. 
+1. In Commerce site builder for your site, select **Templates**.
 1. Select a template, and then select **Edit**.
-1. In the **Body Begin** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Body Begin** slot, select the ellipsis (**...**), and then select **Add module**.
 
-    ![Add new module](media/script-modules-2.png)
+    ![Adding a new module](media/script-modules-2.png)
 
-1. In the **Add Module** dialog box, select either the **External script** or **Inline script** module, and then select **OK**.
+1. In the **Add Module** dialog box, select either the **External script** module or the **Inline script** module, and then select **OK**.
 
-    ![Add script module](media/script-modules-3.png)
+    ![Adding a script module](media/script-modules-3.png)
 
-Once the script module is added, it should look similar to the following example image. The module can now be configured and the template can be saved and published.
+After the script module is added, it should resemble the example in the following illustration. The module can now be configured, and the template can be saved and published.
 
 ![Inline script module added](media/script-modules-4.png)
 
@@ -85,6 +85,5 @@ Once the script module is added, it should look similar to the following example
 [Page summary modules](page-summary-module.md)
 
 [Metatags module](metatags-module.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
