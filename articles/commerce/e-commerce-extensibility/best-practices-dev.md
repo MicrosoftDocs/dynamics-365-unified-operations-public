@@ -5,7 +5,7 @@ title: Best practices for Dynamics 365 Commerce development
 description: This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations. 
 author: samjarawan
 manager: annbe
-ms.date: 02/11/2021
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -90,12 +90,18 @@ GIF is also a lossless format, but it only supports 256 colors in a single image
 Ultimately, the goal is to find the right balance to maintain image quality while keeping the image size as small as possible.
 
 ### Disable image lazy loading
-Modules such as the [content block](../add-hero-module.md) module that display images will generally defer the loading of the images until they are needed.  This may cause some perceived performance issues where the image is not ready when the user sees it.  For example when pressing the next arrow on a carousel module, if lazy load is on it may take a second or two for the image to load in.  These modules have a configuration option to disable the lazy loading and can be used to increase perceived performance in some scenarios since the images will be ready before they are needed.  The below image shows how to access the setting from within the site builder tool on a selected module.
 
-![Disable lazy load](media/best-practices-dev-1.png)
+Modules such as the [content block module](../add-hero-module.md) that display images will generally defer the loading of images until they are needed. This may cause some perceived performance issues where the image is not loaded when the user is ready to view it. For example, when pressing the next arrow on a carousel module, if lazy load is on it may take a second or two for the image to load. These types of modules that display images have a configuration setting to disable lazy loading that can be used to increase perceived performance in some scenarios by loading the images before they are needed.  
+
+The following example image shows a selected contect block module in Commerce site builder with the **Disable Lazy Load** setting highlighted.
+
+![Disable lazy load option in site builder](media/best-practices-dev-1.png)
 
 ## Enable product collection module lazy load
-The [product collection](../product-collection-module-overview.md) module data action calls can cause a small increase in page load time.  The module has a configuration **Enable module lazy load** setting that will allow the module to render client side, after the page has rendered which will allow the page to be available for user interaction sooner. The below image shows how to access the setting from within the site builder tool on a selected module.
+
+The [product collection module](../product-collection-module-overview.md) data action calls can cause a small increase in page load times. The product collection module has an **Enable module lazy load** configuration setting that allows the module to render client side after the page has rendered, which makes the page available for user interaction sooner. 
+
+The following example image shows a selected product collection module in Commerce site builder with the **Enable module lazy load** setting highlighted.
 
 ![Enable module lazy load](media/best-practices-dev-2.png)
 
