@@ -96,7 +96,7 @@ Before you can write off hopeless debts, you must create a register journal for 
 
 In the journal, you should approve the **Accounts payable inventory act** register.
 
->Important!
+> [!Important!]
 
 >Don't approve the **Accounts payable movement** register.
 
