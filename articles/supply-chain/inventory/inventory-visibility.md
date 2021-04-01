@@ -4,11 +4,9 @@
 title: Inventory Visibility Add-in
 description: This topic describes how to install and configure the Inventory Visibility Add-in for Dynamics 365 Supply Chain Management.
 author: sherry-zheng
-manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,9 +54,9 @@ Before you install the Inventory Visibility Add-in, you must do the following:
 - Make sure that the prerequisites for setting up add-ins provided in the [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) have been completed. Inventory Visibility doesn't require dual-write linking.
 - Contact the Inventory Visibility Team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the following three required files:
 
-    - **Inventory Visibility Dataverse Solution.zip**
-    - **Inventory Visibility Configuration Trigger.zip**
-    - **Inventory Visibility Integration.zip** (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
+    - `Inventory Visibility Dataverse Solution.zip`
+    - `Inventory Visibility Configuration Trigger.zip`
+    - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
 
 > [!NOTE]
 > The currently supported countries and regions include Canada, the United States, and the European Union (EU).
@@ -71,7 +69,7 @@ Follow these steps to set up Dataverse.
 
 1. Add a service principle to your tenant:
 
-    1. Install Azure AD PowerShell Module v2 as described in [Install Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+    1. Install Azure AD PowerShell Module v2 as described in [Install Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
     1. Run the following PowerShell command.
 
         ```powershell
@@ -89,15 +87,20 @@ Follow these steps to set up Dataverse.
 
     For more information, see [Create an application user](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
 
+1. Import the `Inventory Visibility Dataverse Solution.zip` file, which includes Dataverse configuration related entities and Power Apps:
+
+    1. Go to the **Solutions** page.
+    1. Select **Import**.
+
 1. Import the configuration upgrade trigger flow:
 
     1. Go to the Microsoft Flow page.
     1. Make sure that the connection that is named *Dataverse (legacy)* exists. (If it doesn't exist, create it.)
-    1. Import the **InventoryVisibilityConfigurationUpgradeTrigger.zip** file. After it's imported, the trigger will appear under **My flows**.
+    1. Import the `Inventory Visibility Configuration Trigger.zip` file. After it's imported, the trigger will appear under **My flows**.
     1. Initialize the following four variables, based on the environment information:
 
-        - Azure Tenant Id
-        - Azure Application Client Id
+        - Azure Tenant ID
+        - Azure Application Client ID
         - Azure Application Client Secret
         - Inventory Visibility Endpoint
 
@@ -123,7 +126,7 @@ To install the Inventory Visibility Add-in, do the following:
 1. Select **Inventory Visibility** in the list.
 1. Enter values for the following fields for your environment:
 
-    - **AAD application ID**
+    - **AAD application (client) ID**
     - **AAD tenant ID**
 
     ![Add in setup page](media/inventory-visibility-setup.png "Add-in setup page")
@@ -198,7 +201,7 @@ The platform security token is used to call the Inventory Visibility Add-in. The
 
 Get a security service token by doing the following:
 
-1. Sign in to Azure Portal and use it to find the `clientId` and `clientSecret` for your Supply Chain Management application.
+1. Sign in to Azure portal and use it to find the `clientId` and `clientSecret` for your Supply Chain Management application.
 1. Fetch an Azure Active Directory token (`aadToken`) by submitting an HTTP request with the following properties:
     - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
     - **Method** - `GET`

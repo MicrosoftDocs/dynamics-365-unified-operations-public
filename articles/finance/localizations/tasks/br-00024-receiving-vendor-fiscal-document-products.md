@@ -4,11 +4,9 @@
 title: Receive vendor fiscal documents (products) (Brazil)
 description: You can post a fiscal document that you received from the acquisition of inventory goods, where the ICMS, IPI, and PIS/COFINS taxes are deducted from the tax assessment payment. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

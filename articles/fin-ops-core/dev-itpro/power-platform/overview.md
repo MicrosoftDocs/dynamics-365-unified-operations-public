@@ -4,11 +4,9 @@
 title: Microsoft Power Platform integration with Finance and Operations
 description: This topic describes virtual entities for Finance and Operations in Dataverse.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

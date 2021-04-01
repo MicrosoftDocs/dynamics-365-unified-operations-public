@@ -4,11 +4,9 @@
 title: Pre-extended columns in the channel database
 description: This topic explains how the pre-extended columns in the channel database are consumed for extensions.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Reporting tree definitions in financial reports
-description: This article describes reporting tree definitions. A reporting tree definition is a report component that defines the structure of an organization.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+description: This article describes reporting tree definitions. A reporting tree definition is a report component that defines the structure of an organization. 
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
@@ -80,7 +78,7 @@ To create a reporting tree definition, follow these steps.
     | Include/Character position       | This section lists the dimensions that are defined in the financial data and shows the number of characters in the longest value that is defined for each dimension. Select the check box for a dimension to include that dimension in the reporting tree hierarchy. |
     | Segment hierarchy and ranges     | This section shows the dimension hierarchy. You can move the dimensions in the list to change their reporting order. In the **From Dimension** and **To Dimension** fields, you can specify a range of values in each dimension. If you don't specify a range, all dimension values are inserted into the reporting tree.<blockquote>[!NOTE] If you're using more than one dimension, only dimension combinations that have been posted to are returned in the results.</blockquote> |
 
-    For a screen shot that shows an example of the **Insert Reporting Units from Dimensions** dialog box, see the "Example of the Insert Reporting Units from Dimensions dialog box" section later in this article.
+    For an illustration that shows an example of the **Insert Reporting Units from Dimensions** dialog box, see the "Example of the Insert Reporting Units from Dimensions dialog box" section later in this article.
 
 5. To create additional segments (for example, by split one segment into two shorter segments), click the correct location in a **Character position** field, and then click **Split Segments**.
 6. To merge two segments into one segment, click in either of the segment boxes to merge, and then click **Combine Segments**.
@@ -192,23 +190,23 @@ Here is the structure of the reporting units in the following reporting tree:
 - The lowest-level detail reporting units (Home Sales, Auto Sales, Client Services, and Operations) represent departments in the financial data. These reporting units are in the shaded area of the diagram.
 - The higher-level summary units summarize information from the detail units.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso Summary Report Structure - Example 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### Reporting unit structure – Example 2
 
 In the following diagram, the reporting tree has an organizational structure that is divided by business function.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso Summary Report Structure - Example 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### Example of the Insert Reporting Units from Dimensions dialog box
 
 The following illustration shows an example of the **Insert Reporting Units from Dimensions** dialog box. For this example, the results will return the combination of business units, cost centers, and departments.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Insert Reporting Units](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 The resulting reporting tree definition is sorted by business unit, then by cost center, and then by department. The dimension for the fifth reporting unit is **Business Unit = \[001\], Cost Center =\[\], Department = \[022\]**, and identifies a reporting unit for accounts that are specific to business unit 001 and department 022.
 
-[![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Illustration of the Reporting Tree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### Examples of data roll-up
 
@@ -216,11 +214,11 @@ The following examples show possible information that is used in a reporting tre
 
 #### Example 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Mutli-company roll-up](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### Example 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Cross Company Department Roll-up](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## Additional resources
 

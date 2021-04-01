@@ -4,11 +4,9 @@
 title: Troubleshooting guide for testing with the Performance SDK
 description: This topic provides troubleshooting information for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
 author: hasaid
-manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata

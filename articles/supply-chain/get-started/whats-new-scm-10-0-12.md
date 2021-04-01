@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.12 (August 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.12. 
 author: kamaybac
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,9 +50,9 @@ The following features are included in this release. The feature titles link to 
 
 - [IoT intelligence core insights](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - For more information, see [IoT Intelligence home page](../iot/iot-intelligence-home-page.md).
 
-- [License plate receiving enhancements for the warehouse app (continued)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - For more information, see [License plate receiving via the warehouse app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [License plate receiving enhancements for the warehouse app (continued)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - For more information, see [License plate receiving via the Warehouse Management mobile app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Mass deployment for Warehouse mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - For more information, see [Install and configure the warehouse app overview](../warehousing/install-configure-warehousing-app.md).
+- [Mass deployment for Warehouse mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - For more information, see [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md).
 
 - [Maximum execution time for the warehouse management on-hand entries cleanup job](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - For more information, see [Warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md).
 

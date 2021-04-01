@@ -4,11 +4,9 @@
 title: Create shareable, secured URLs (deep links)
 description: Learn how to create shareable, secured URLs to forms and records.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

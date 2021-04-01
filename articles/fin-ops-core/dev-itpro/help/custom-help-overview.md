@@ -4,11 +4,9 @@
 title: Custom Help overview
 description: This topic explains how you can extend the Microsoft Help system so that it reflects your solution and then connect your content to the Help pane. 
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

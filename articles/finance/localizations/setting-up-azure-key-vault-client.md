@@ -4,11 +4,9 @@
 title: Set up the Azure Key Vault client
 description: This topic provides information about storing advanced certificates and defining the certificate storage type.
 author: anasyash
-manager: AnnBe
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

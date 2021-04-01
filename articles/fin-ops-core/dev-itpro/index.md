@@ -4,11 +4,9 @@
 title: Development and administration for Finance and Operations apps
 description: This page helps developers and IT Pros get started with Finance and Operations.
 author: robinarh
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

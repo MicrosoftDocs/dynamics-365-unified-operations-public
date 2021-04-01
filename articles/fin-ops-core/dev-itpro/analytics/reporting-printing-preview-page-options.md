@@ -3,12 +3,10 @@
 
 title: Document reporting preview options 
 description: This topic provides information about the options available in the embedded document reporting previewer.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -22,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2020-06-21 
 ms.dyn365.ops.version: Platform update 34
 ---

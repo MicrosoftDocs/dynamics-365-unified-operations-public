@@ -4,38 +4,23 @@
 title: Metadata and markdown template
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
 author: tonyafehr
-manager: AnnBe
 ms.date: 06/20/2020
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-ms.search.scope:
-# ms.tgt_pltfrm: 
-# ms.custom: NotInTOC
+ms.custom: <remove if blank>
 ms.search.region: Global
-# ms.search.industry:
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Metadata and Markdown template
 
 [!include[banner](../includes/banner.md)]
 
-
 This template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D) and the [rendered view](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/master/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
-
 
 ## Metadata 
 
@@ -43,41 +28,55 @@ A full markdown block is shown at the top of this file. The metadata is divided 
 
 Here are some key things to note about metadata.
 
-- **Required metadata**
-    - **title** - The title will appear in search engine results. 
-        - You can add a pipe (|) followed by the product name (for example, `title: Action search`). 
-        - The title doesn't need be identical to the title in your H1 heading, though we prefer that the TOC entry, the title, and the H1 heading all match. 
-        - The title should contain 65 characters or less (including | PRODUCT NAME).
-    - **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
-    - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
-    - **manager** - Use "tonyafehr" in this field.
-    - **ms.date** - This should be the first proposed publication date, in the mm/dd/yy format.
-    - **ms.topic** - Enter "article" here.
-    - **ms.prod**  - Leave this blank.
-    - **ms.service**: Use these values:
-        - `dynamics-ax-platform`: core content (fin-ops-core folder)
-        - `dynamics-ax-applications`: Finance and Supply Chain
-        - `dynamics-365-commerce`: Commerce
-        - `dynamics-365-talent`: Talent
-        - `dynamics-human-resources`: Human Resources
-    - **ms.technology** 
+- **title** - The title will appear in search engine results. 
+    - The title doesn't need be identical to the title in your H1 heading, though we prefer that the TOC entry, the title, and the H1 heading all match. 
+    - The title should contain 65 or fewer characters.
+- **description** - This is the full description that appears in the search results. It should contain 160 or fewer characters.
+- **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
+- **ms.date** - This should be the first proposed publication date, in the mm/dd/yy format.
+- **ms.topic** - Enter "article" here.
+- **audience** - Use these values: Application User, Developer, or IT Pro. If you use more than one value, separate them with a comma.
+- **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
+- **ms.custom** - Add NotInToc if the topic is not in the table of contents. If you use more than one value, separate them with a comma.
+- **ms.search.region** - Use "global" or enter a country-region value.
+- **ms.author** - Use your Microsoft alias.  
+- **ms.search.industry** - retail, public sector. Leave it out, rather than leaving it blank.
+- **ms.search.validFrom** - Month/year of release that feature was introduced in, in format yyyy-mm-dd.
+- **ms.search.form** - The form ID. This value is used to lookup relevant topics from the Help Pane for specific forms.
+- **ms.dyn365.ops.version** - Name of release that feature was introduced in, see list here: [Help system and Versions metadata for docs topics](https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29])
 
-- **Optional metadata**
-    - **audience** - Use these values: Application User, Developer, or IT Pro. If you use more than one value, separate them with a comma.
-    - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
-    - **ms.custom** - Add NotInToc if the topic is not in the table of contents. If you use more than one value, separate them with a comma.
-    - **ms.assetid** - This is the GUID of the article that is used for internal tracking purposes. When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com).
-    - **ms.search.region** - Use "global" or enter a country-region value.
-    - **ms.author** - Use your Microsoft alias.  
-    - **ms.search.industry** - Leave blank for most, retail, public sector
-    - **ms.search.validFrom** - Month/year of release that feature was introduced in, in format yyyy-mm-dd.
-    - **ms.dyn365.ops.version** - Name of release that feature was introduced in, see list here: [Help system and Versions metadata for docs topics](https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29])
+### Don't use these metadata
 
-- **Metadata set at folder-level**
-    - Do not add metadata for these in your file, unless the value is different from the folder level.
-    - To find the folder-level setting, see [docfx.json](articles/docfx.json).
-    - Set at folder level:
-        - **ms.search.scope**: The values are mostly self-explanatory. **Core** means to show the topic in the Help Pane (current). **ShowInHelp** means to show the topic in the Help Pane (future).
+If you think you need to use any of these, talk to your content strategist first.
+
+- **ms.search.scope** - Set at the folder level, see [docfx.json](articles/docfx.json). We are using these values:
+    + Legacy values. Don't remove these from topics. They need to stay until all customers are on the new system.
+        + `Core` - Indicates that a topic should show up in the Help Pane.
+        + `Operations`
+        + `Retail`
+    + New values.
+        + `ShowInHelp` - Indicates that a topic should show up in the Help Pane.
+        + `Commerce`
+        + `Finance`
+        + `Supply Chain`
+        + `Talent`
+        + `CrossApp` - This topics usually also have ShowInHelp.
+        + `Developer` - These topics usually don't have ShowInHelp.
+
+- **ms.service** - Set at the folder level. see [docfx.json](articles/docfx.json). We are using these values:
+    - `dynamics-365-finance`: Finance
+    - `dynamics-365-cross-app`: Cross app
+    - `dynamics-365-supply-chain`: Supply Chain Management
+    - `dynamics-365-commerce`: Commerce
+    - `dynamics-365-talent`: Talent
+    - `dynamics-365-human-resources`: Human Resources
+- **manager** - The best practice is to not use **manager**.
+- **ms.assetid** - We aren't using this value anymore, but it's not in conflict with any other metadata.
+- **ms.prod** - This is only used for AX2012 content. You can't have both **ms.prod** and **ms.service**.
+
+### No blank metadata
+
+If the metadata is blank, it's better to leave it out altogether.
 
 ## Basic Markdown, GFM, and special characters
 
@@ -241,9 +240,11 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ![this is the alt text](../images/Logo_DotNet.png)
 
-### Linked image
+### Image with border
 
-[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net) 
+Sometimes it's nice to have a border an around an image, especially if it's screenshot where background matches the docs page.
+
+:::image type="content" source="<folderPath>" alt-text="<alt text>":::
 
 ## Videos
 

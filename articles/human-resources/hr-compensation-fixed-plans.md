@@ -4,11 +4,9 @@
 title: Create fixed compensation plans
 description: Fixed compensation refers to an employee's regular gross salary or wages. This article describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

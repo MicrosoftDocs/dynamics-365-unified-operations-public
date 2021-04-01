@@ -4,11 +4,9 @@
 title: Streamlined employee entry and navigation
 description: Data entry for workers in Dynamics 365 Talent has been enhanced to allow quick entry for all employees, past, active or future. A simplified/consolidated navigation model has been updated to quickly find related information and view and make any necessary updates.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

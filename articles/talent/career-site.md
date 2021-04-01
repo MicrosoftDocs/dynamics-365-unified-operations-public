@@ -5,11 +5,9 @@
 title:  Set up your career site in Attract
 description: This topic provides an overview of the candidate-facing career site functionality in Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
-manager: tfehr
 ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

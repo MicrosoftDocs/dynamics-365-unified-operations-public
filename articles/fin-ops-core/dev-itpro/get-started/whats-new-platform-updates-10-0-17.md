@@ -4,11 +4,9 @@
 title: Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.17 of Finance and Operations apps.
 author: sericks007
-manager: AnnBe
-ms.date: 03/01/2021
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -31,7 +29,6 @@ ms.dyn365.ops.version: 10.0.17
 # Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic lists the features that are included in the platform updates for version 10.0.17 of Finance and Operations apps. This version has a build number of 7.0.5934 and is available on the following schedule:
 
@@ -56,6 +53,8 @@ The following features are included in this release. Some of the listed features
 -  View independent software vendor (ISV) license status<br>- It is now possible to view status and expiration dates for an ISV license. For more information, see [View independent software vendor license status](../sysadmin/view-isv-license-status.md).
 
 - [executeQueryWithParameters](../dev-ref/query-with-parameters.md) method<br>- This method runs SQL queries by using statement parameters that can help mitigate SQL injection attacks.
+
+- [Batch notifications](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/batch-notifications)<br>- For more information, see [Batch business events](../business-events/system-business-events.md).
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 

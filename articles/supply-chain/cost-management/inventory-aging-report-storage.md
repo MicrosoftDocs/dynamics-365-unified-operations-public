@@ -4,11 +4,9 @@
 title: Inventory aging report storage
 description: This topic describes the functionality that lets you run an Inventory aging report and make the output available as a form and a chart.
 author: AndersGirke
-manager: tfehr
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: End-to-end scenario for the Fleet Management sample application
 description: This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

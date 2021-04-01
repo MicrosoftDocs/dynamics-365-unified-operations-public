@@ -4,11 +4,9 @@
 title: Flushing principles
 description: This topic describes the four flushing principles that are used for raw material consumption.
 author: johanhoffmann
-manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

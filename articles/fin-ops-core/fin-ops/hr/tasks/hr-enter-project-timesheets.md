@@ -4,11 +4,9 @@
 title: Enter project timesheets
 description: This procedure lets you create a timesheet by using an empty timesheet form. 
 author: andreabichsel
-manager: tfehr
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

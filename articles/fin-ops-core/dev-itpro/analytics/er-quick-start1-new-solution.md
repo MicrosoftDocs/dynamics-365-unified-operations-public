@@ -4,11 +4,9 @@
 title: Design a new ER solution to print a custom report
 description: This topic explains how to design an Electronic reporting (ER) solution to print a custom report.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Search engine optimization (SEO) considerations for your site
 description: This topic covers search engine optimization (SEO) considerations for your site from development to production.
 author: psimolin
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

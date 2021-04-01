@@ -4,11 +4,9 @@
 title: Dynamics 365 Commerce evaluation environment FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.
 author: v-chgri
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Define and maintain retail channels
 description: This topic provides an overview of the process for setting up brick-and-mortar stores, which are referred to as stores in Dynamics 365 Commerce. It includes information about the tasks that you must complete both before and after you set up a store.
 author: mugunthanm
-manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

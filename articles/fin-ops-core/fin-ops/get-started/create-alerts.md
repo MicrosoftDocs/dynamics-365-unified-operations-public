@@ -2,13 +2,11 @@
 # required metadata
 
 title: Create alert rules
-description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
-author: tjvass
-manager: AnnBe
+description: This topic provides information about alerts and explains how to create an alert rule.
+author: RichdiMSFT
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -22,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---

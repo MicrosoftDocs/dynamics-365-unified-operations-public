@@ -4,11 +4,9 @@
 title: Feature callouts
 description: Trigger feature callouts raise awareness of new capabilities to users.
 author: jasongre
-manager: AnnBe
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

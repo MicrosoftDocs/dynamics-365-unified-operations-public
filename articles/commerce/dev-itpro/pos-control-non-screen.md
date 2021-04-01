@@ -4,11 +4,9 @@
 title: Add custom controls to non-screen designer-based POS views
 description: This topic demonstrates how to add a custom control to a non-screen layout designer-based view.
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

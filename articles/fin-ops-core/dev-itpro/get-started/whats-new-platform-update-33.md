@@ -4,11 +4,9 @@
 title: What's new or changed in Platform update 33 for Finance and Operations apps (April 2020)
 description: This topic lists the features that are new or changed in Platform update 33 for Finance and Operations apps. 
 author: sericks007
-manager: AnnBe
 ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Choose a version of Attract
 description: This topic provides information about the capabilities in the different versions of Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

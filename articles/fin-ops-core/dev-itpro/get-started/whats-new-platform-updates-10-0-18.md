@@ -4,8 +4,7 @@
 title: Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.18 of Finance and Operations apps.
 author: sericks007
-manager: AnnBe
-ms.date: 03/05/2021
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,19 +46,17 @@ The following features are included in this release. Some of the listed features
 
 -  [Allow configuration of the publish batch size for the Excel add-in](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [View and update entity data with Excel](../office-integration/use-excel-add-in.md).
 
-<!---
-this is not live in the release plans yet
--  [Align interaction patterns for combo boxes with those of look-up controls](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=eed024a3-3d51-eb11-a813-000d3a8faea9&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)
--->
+- [Extra NuGet file requires manual update to hosted Azure DevOps build pipeline](../dev-tools/pipeline-nuget-split.md)
 
-<!---
-this is not live in the release plans yet
-- [(Preview) Ensure required unbound controls are filled in](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=1438f773-7478-eb11-a812-0022482041cc&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)
--->
+-  [Align interaction patterns for combo boxes with those of look-up controls](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/align-interaction-patterns-combo-boxes-those-look-up-controls)
+
+- [(Preview) Ensure required unbound controls are filled in](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/ensure-required-unbound-controls-are-filled)
 
 - Allow admins to select default document types<br>- For more information, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
 
 - Updates to the global address book<br>- For more information, see [Address books FAQ](../../fin-ops/organization-administration/qa-address-books.md).
+
+-  Automatic retry settings for batch jobs<br>- In a cloud application, there is a chance of connection loss to the database. Currently, if the application experiences a connection loss, the batch jobs are terminated. In release 10.0.18, a **retryable** flag has been introduced, which sets a flag on every Microsoft batch job. This flag is used to safely retry batch jobs when a transient connection loss is experienced. This is a fully extensible property and can be extended to set the retry property on custom batch jobs.
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 

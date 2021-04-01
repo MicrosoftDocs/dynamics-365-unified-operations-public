@@ -4,11 +4,9 @@
 title: Delegates
 description: This topic provides information about how to write extensible code and delegates.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 

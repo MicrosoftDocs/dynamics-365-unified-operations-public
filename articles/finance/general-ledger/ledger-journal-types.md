@@ -4,11 +4,9 @@
 title: Ledger journal types
 description: This topic describes the journal types that you can set up for financial journals.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

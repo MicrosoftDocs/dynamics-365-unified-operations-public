@@ -4,11 +4,9 @@
 title: Guidance for dual-write setup
 description: This topic describes the scenarios that are supported for dual-write setup.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

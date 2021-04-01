@@ -4,11 +4,9 @@
 title: Cash register functionality for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-manager: vastrup
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

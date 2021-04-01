@@ -4,11 +4,9 @@
 title: Data integration using Dataverse overview
 description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

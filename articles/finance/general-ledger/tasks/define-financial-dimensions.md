@@ -4,11 +4,9 @@
 title: Define financial dimensions
 description: This task guide demonstrates adding an entity backed financial dimension and a custom financial dimension. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

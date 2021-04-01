@@ -4,11 +4,9 @@
 title: Mitigate a SQL injection attack
 description: This topic explains how to mitigate SQL injection attacks in X++.
 author: pvillads
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

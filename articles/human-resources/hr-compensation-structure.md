@@ -4,11 +4,9 @@
 title: Develop a compensation structure
 description: This article walks you through creating a fixed compensation plan and enrolling employees in the plan through eligibility rules. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 02/10/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-human-resources 
 ms.technology:  
  
 # optional metadata 

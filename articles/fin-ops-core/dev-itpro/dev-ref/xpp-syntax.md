@@ -4,11 +4,9 @@
 title: X++ syntax
 description: This topic contains the syntax reference for X++. 
 author: RobinARH
-manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

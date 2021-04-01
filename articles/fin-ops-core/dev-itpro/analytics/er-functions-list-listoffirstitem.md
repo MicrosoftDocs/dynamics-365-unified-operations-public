@@ -4,11 +4,9 @@
 title: LISTOFFIRSTITEM ER function
 description: This topic provides information about how the LISTOFFIRSTITEM Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

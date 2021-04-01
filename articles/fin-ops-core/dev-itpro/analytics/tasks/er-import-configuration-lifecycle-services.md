@@ -4,11 +4,9 @@
 title: Import a configuration from Lifecycle Services
 description: This topic describes how to import a new version of an Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS). 
 author: NickSelin
-manager: AnnBe 
 ms.date: 09/14/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
 
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Configuration for Finance Insights (preview)
 description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 11/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Configure line-item workflows
 description: This topic explains how to configure a line-item workflow element.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

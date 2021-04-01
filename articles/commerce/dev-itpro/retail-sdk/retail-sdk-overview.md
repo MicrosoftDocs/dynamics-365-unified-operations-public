@@ -2,13 +2,11 @@
 # required metadata
 
 title: Retail software development kit (SDK)
-description: This topic provides general information about the Retail software development kit (SDK). The Retail SDK includes code, code samples, templates, and tools that you can use to customize commerce functionality.
+description: The Retail SDK includes code, code samples, templates, and tools that you can use to customize commerce functionality.
 author: robinarh
-manager: AnnBe
 ms.date: 01/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -77,7 +75,7 @@ To develop or build extensions by using the Retail SDK, you must have the follow
     + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
     + TypeScript version 2.2.2
 
-        Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2, because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it. 
+        Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2, because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it.
 
 ## Build the Retail SDK
 
@@ -275,6 +273,7 @@ The following tables provide information about the components in the Retail SDK 
 </table>
 
 ### TypeScript proxy
+
 <table>
 <tbody>
 <tr>

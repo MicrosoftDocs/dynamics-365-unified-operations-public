@@ -4,11 +4,9 @@
 title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -71,13 +69,6 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
-# [10.0.7](#tab/10-0-7)
-### Dynamics 365 Retail POS version 10.0.7
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_38p5 | adyen_v1_45p3 |
-| | *Note: Validation testing has been performed on adyen_v1_56p5. See the note below for more details.* |
-
 # [10.0.8](#tab/10-0-8)
 ### Dynamics 365 Retail POS version 10.0.8
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
@@ -132,6 +123,12 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_56p9 | adyen_v1_56p9 |
+
+# [10.0.17](#tab/10-0-17)
+### Dynamics 365 Retail POS version 10.0.17
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_59p7 | adyen_v1_59p7 |
 
 ---
 
@@ -340,11 +337,12 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | [SCA payment redirect](https://go.microsoft.com/fwlink/?linkid=2131175) | | ✔<br>(Starting with 10.0.12) |
 | [Dedicated payment terminals and prompts for a printer and cash drawer](https://docs.microsoft.com/dynamics365/commerce/pos-multi-hws) | ✔<br>(Starting with 10.0.12) | |
 | [SDK-level tipping support through the Adyen connector](tipping.md) | ✔<br>(Starting with 10.0.14) | |
+| [Incremental capture for order invoicing](incremental-capture.md) |  | ✔<br>(Starting with 10.0.18) |
 
 
 ## Sign up with Adyen
 
-To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account, visit the [Adyen website](https://www.adyen.com/partners).
+To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account, visit the [Adyen website](https://www.adyen.com/signup).
 
 ## Setup and configuration
 
@@ -658,7 +656,6 @@ When payment transactions aren't successfully processed through the Adyen paymen
 
 ## Additional resources
 
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+[Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../../includes/footer-banner.md)]

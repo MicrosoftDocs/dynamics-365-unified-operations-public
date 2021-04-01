@@ -4,11 +4,9 @@
 title: Settle transactions by using CustTrans::settleTransaction
 description: This topics describes the new CustTrans::settleTransaction method and explains why CustTrans::settleTransact is now obsolete.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

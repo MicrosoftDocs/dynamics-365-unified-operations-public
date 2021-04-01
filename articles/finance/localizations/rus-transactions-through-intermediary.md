@@ -3,11 +3,9 @@
 title: Transactions through intermediary
 description: This topic provides information about the functionality for accounting intermediary deals that are made by an agent. 
 author: v-nadyuz
-manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Troubleshoot environments deployed through self-service deployment
 description: This topic explains how to troubleshoot and diagnose issues in an environment that was deployed using the self-service deployment experience.
 author: laneswenka
-manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

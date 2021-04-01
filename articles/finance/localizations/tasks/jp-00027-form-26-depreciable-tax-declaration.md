@@ -4,11 +4,9 @@
 title: JP-00027 Form 26 for depreciable tax declaration
 description: This task walks you through assigning a registration number to a fixed asset and printing the form 26 report. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

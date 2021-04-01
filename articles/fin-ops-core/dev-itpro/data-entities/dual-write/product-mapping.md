@@ -4,11 +4,9 @@
 title: Unified product experience
 description: This topic describes the integration of product data between Finance and Operations apps and Dataverse.
 author: t-benebo 
-manager: AnnBe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

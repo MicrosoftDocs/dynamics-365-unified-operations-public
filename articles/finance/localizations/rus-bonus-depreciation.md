@@ -4,11 +4,9 @@
 title: Depreciation bonuses (Russia)
 description: This topic provides information about depreciation bonuses for Russian fixed assets.
 author: anasyash
-manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

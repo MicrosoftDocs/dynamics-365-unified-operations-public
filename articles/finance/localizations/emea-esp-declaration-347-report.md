@@ -4,11 +4,9 @@
 title: Declaration 347 report
 description: This topic provides information about how to generate the Declaration 347 report that is available to legal entities that have their primary address in Spain.
 author: Anasyash
-manager: AnnBe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

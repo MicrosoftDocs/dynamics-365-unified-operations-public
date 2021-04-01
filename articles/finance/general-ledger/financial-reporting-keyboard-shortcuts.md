@@ -4,11 +4,9 @@
 title: Keyboard shortcuts for missing account analysis
 description: This topic lists the keyboard shortcuts that are available when you run a missing account analysis in Management Reporter.
 author: panolte
-manager: AnnBe
 ms.date: 08/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Currency data-type migration for dual-write
 description: This topic describes how to change the number of decimal places that dual-write supports for currency.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

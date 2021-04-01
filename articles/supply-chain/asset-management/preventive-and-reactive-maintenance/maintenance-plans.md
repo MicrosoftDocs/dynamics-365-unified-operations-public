@@ -3,12 +3,10 @@
 
 title: Maintenance plans
 description: This topic explains maintenance plans in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -200,8 +198,6 @@ The following illustration shows an example of maintenance plans set up on an as
 
 ## Counter-based maintenance enhancements
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 The *Counter-based maintenance enhancements* feature introduces the following functionality:
 
 - The option to automatically insert a counter that has a value of *0* (zero) when an asset is created. This option can be useful when you use predictive maintenance that is based on counters. When the *Counter-based maintenance enhancements* feature isn't used, counters that have a value of *0* (zero) must be manually inserted.
@@ -214,7 +210,7 @@ The *Counter-based maintenance enhancements* feature introduces the following fu
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Asset Management*
-- **Feature name:** *(Preview) Counter-based maintenance enhancements*
+- **Feature name:** *Counter-based maintenance enhancements*
 
 ### Create and initialize counters when an asset is created
 

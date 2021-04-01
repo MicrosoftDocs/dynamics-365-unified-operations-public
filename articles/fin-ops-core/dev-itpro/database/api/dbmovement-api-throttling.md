@@ -4,11 +4,9 @@
 title: Database movement API - Throttling
 description: This topic provides an overview of throttling for the Database Movement application programming interface (API).
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

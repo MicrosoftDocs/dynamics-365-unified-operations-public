@@ -4,11 +4,9 @@
 title: Create Electronic reporting (ER) model mapping configurations
 description: Use this procedure to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 12/12/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: ROUNDDOWN ER function
 description: This topic provides information about how the ROUNDDOWN Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

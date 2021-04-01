@@ -4,11 +4,9 @@
 title: Enter a CIAP transaction (Brazil)
 description: You can enter a CIAP transaction in two ways - post a fiscal document, or enter a transaction. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

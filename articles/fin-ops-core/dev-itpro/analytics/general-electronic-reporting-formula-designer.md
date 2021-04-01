@@ -4,11 +4,9 @@
 title: Formula designer in Electronic reporting (ER)
 description: This topic provides information about how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

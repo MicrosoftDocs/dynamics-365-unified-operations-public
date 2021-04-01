@@ -4,11 +4,9 @@
 title: Enroll an employee in a variable compensation plan
 description: The Compensation and Benefits manager can enroll employees in variable compensation plans to calculate cash and non-cash awards for employees. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

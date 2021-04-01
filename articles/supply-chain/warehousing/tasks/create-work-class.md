@@ -4,11 +4,9 @@
 title: Create a work class
 description: This procedure shows you how to set up a work class. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

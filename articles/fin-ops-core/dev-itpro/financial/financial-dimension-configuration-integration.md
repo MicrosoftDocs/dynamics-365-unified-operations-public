@@ -4,11 +4,9 @@
 title: Financial dimension configuration
 description: This topic describes the Financial dimension configuration for integrating applications page.
 author: aprilolson
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

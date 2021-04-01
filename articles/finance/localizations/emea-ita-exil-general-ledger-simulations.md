@@ -4,11 +4,9 @@
 title: General ledger simulations (Italy)
 description: This topic provides information about posting ledger transactions as a simulation from the general journal and then review reports that include the simulated transactions.
 author: anasyash
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

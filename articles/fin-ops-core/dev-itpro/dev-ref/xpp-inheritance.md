@@ -4,11 +4,9 @@
 title: X++ inheritance
 description: This topic describes inheritance in X++.
 author: robinarh
-manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Schedule work creation during wave
 description: This topic describes how to set up and use the Schedule work creation wave processing method.
 author: perlynne
-manager: mirzaab
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -33,32 +31,49 @@ ms.dyn365.ops.version: 10.0.17
 # Schedule work creation during wave
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Use the *Schedule work creation* feature as part of your waving process to help increase wave processing throughput by having the system create work using parallel processing.
 
 When the functionality is enabled, planned work will automatically get created, which the system will eventually process to create actual work. If the number of wave load lines reaches a predetermined threshold, the system will create actual work more quickly by applying parallel, asynchronous processing.
 
-## Enable the Schedule work creation feature
+## Turn on the scheduled work creation features in feature management
 
-### Enable the feature in feature management
+To use the features described in this topic, they must be turned on for your system. Use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the following features in the following order:
 
-Before you can use the *Schedule work creation* feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+1. **Organization-wide work blocking** - Required for both manual and automatic configuration of scheduled work creation.
+1. **Schedule work creation** - Required for both manual and automatic configuration of scheduled work creation.
+1. **Organization-wide "Schedule work creation" wave method** - Required for automatic configuration of scheduled work creation. You don't need this feature if you will only use manual configuration.
 
-- **Module:** *Warehouse management*
-- **Feature name:** *Schedule work creation*
+<a name="Auto-enable-schedule-work-creation"></a>
 
-> [!NOTE]
-> The *Organization-wide work blocking* feature must be enabled before you can enable *Schedule work creation*.
+## Automatically configure scheduled work creation
+
+If you enable the *Organization-wide "Schedule work creation" wave method* feature, the following automatically occurs on your system:
+
+- The *Schedule work creation* wave method (`WHSScheduleWorkCreationWaveStepMethod`) is added and configured to run in parallel across all legal entities.
+- Wave templates from all legal entities that have **Wave template type** set to *Shipping* and **Template status** set to *Valid* will have the *Create work* method replaced by the *Schedule work creation* method. However, wave templates from legal entities where the *Create work* method is allowed to be repeatable will not be modified.
+- Task configurations for the *Schedule work creation* method will be created for all warehouses from all legal entities that have **Use warehouse management processes** enabled. This means that the *Schedule work creation* method will now run in parallel by default. Existing warehouses for which you change **Use warehouse management processes** from *No* to *Yes* will also run this method in parallel by default.
+- All legal entities will process waves in batches and **Wait for lock (ms)** will be set to a default value of *60,000* ms if it was previously set to *0* ms.
+- All the new wave templates that you create will have the *Schedule work creation* wave method instead of the *Create Work* method.
+
+The existing task and wave processing configurations will also be kept for all legal entities that are already configured to process waves in batches, and for all warehouses that are already configured to use the *Schedule work creation* method in parallel.
+
+If necessary, you can manually revert any or all of the settings made automatically when you enabled the *Organization-wide Schedule work creation wave method* feature by doing the following:
+
+- For wave templates, go to **Warehouse management \> Setup \> Waves \> Wave templates**. Replace *Schedule work creation* method with *Create work*.
+- For warehouse parameters, go to **Warehouse management \> Setup \> Warehouse management parameters**. On the **Wave processing** tab, apply your preferred values for **Process waves in batch** and **Wait for lock (ms)**.
+- For the wave methods, go to **Warehouse management \> Setup \> Waves \> Wave process methods**. Select `WHSScheduleWorkCreationWaveStepMethod` and, on the Action Pane, select **Task configuration**. Modify or delete the number of batch tasks and the assigned wave group for each listed warehouse as needed.
+
+## Manually configure scheduled work creation
+
+If you didn't enable the [*Organization-wide "Schedule work creation" wave method* feature](#Auto-enable-schedule-work-creation), then you can use the procedures provided in this section to manually configure scheduled work creation as needed.
 
 ### Manually enable batch processing of waves
 
 To take advantage of a parallel asynchronous method to create warehouse work, your wave process must be running in batch. To set this up:
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
-
 1. On the **General** tab, set **Process waves in batch** to *Yes*. Optionally, you can also select a dedicated **Wave processing batch group** to prevent your batch queue processing from running at the same time as other processes.
-
 1. Set the **Wait for lock (ms) time**, which applies when the system is processing several waves at the same time. For most larger waving processes, we recommend a value of *60000*.
 
 ### Manually enable the new wave step method for existing wave templates
@@ -66,58 +81,31 @@ To take advantage of a parallel asynchronous method to create warehouse work, yo
 Start by creating the new wave step method and enabling it for parallel asynchronous task processing.
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave process methods**.
-
 1. Select **Regenerate method** and note that *WHSScheduleWorkCreationWaveStepMethod* has been added to the list of wave process methods you can use in your shipping wave templates.
-
 1. Select the record with the **Method name** *WHSScheduleWorkCreationWaveStepMethod* and select **Task configuration**.
-
 1. To add a new row to the grid, select **New** on the Action Pane and use the following settings:
 
     - **Warehouse** - Select the warehouse you will use to schedule work creation processing.
-
     - **Maximum number of batch tasks** - Specify a maximum number of batch tasks. In most cases, this value should be in the range from 8-16, however we recommend that you experiment with the optimal setting based on your scenarios.
-
     - **Wave processing batch group** - Select a dedicated wave processing batch group to optimize your batch queue processing.
 
 Now you are ready to update an existing wave template (or create a new one) to use the *Schedule work creation* wave processing method.
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
-
 1. Select **Edit** on the Action Pane.
-
 1. In the list pane, select the wave template you would like to update (if you are testing using demo data, then you could use *24 Shipping default*).
-
 1. Expand the **Methods** FastTab and select the row with the **Name** *Schedule work creation* in the **Remaining methods** grid.
-
-1. Select the arrow pointing to the **Selected methods** column to move the selected row to that column. (You can only have one selected method at a time that uses either *WHSScheduleWorkCreationWaveStepMethod* or *createWork*, so the existing row with **Method name** *createWork* is automatically moved to the **Remaining methods** grid.)
+1. Select the arrow pointing to the **Selected methods** column to move the selected row to that column. (You can only have one selected method at a time that uses either `WHSScheduleWorkCreationWaveStepMethod` or `createWork`, so the existing row with **Method name** `createWork` is automatically moved to the **Remaining methods** grid.)
 
 ## Set wave task processing threshold data
 
 The system will create default wave task processing threshold data the first time a wave process runs using any task-based processing. The data is used to control when wave processing will run asynchronously and be task-based, which enables it to process and create work in parallel.
 
-The default data will initially use a threshold value of 15 for the minimum number of load lines (MINIMUMWAVELOADLINES). This means that when the system processes a wave with more than 15 loads lines, it will use asynchronous task processing. You can manually insert/update this data in the **WHSWaveTaskProcessingThresholdParameters** table in your test environments, but if you need to change this setting in a production environment, you must contact Microsoft Support to request the update.
+The default data will initially use a threshold value of 15 for the minimum number of load lines (`MINIMUMWAVELOADLINES`). This means that when the system processes a wave with more than 15 loads lines, it will use asynchronous task processing. You can manually insert/update this data in the `WHSWaveTaskProcessingThresholdParameters` table in your test environments. If you need to change this setting in a production environment, you must contact Microsoft Support to request the update.
 
-## Work with the feature
+## Work with the scheduled work creation
 
-When the *Schedule work creation* functionality is enabled, wave processing will create planned work, which will eventually be used by the new work creation process. During work creation, the work will be blocked using the *Organization-wide work blocking* feature.
-
-The following flowchart shows how planned work is created during wave processing.
-
-![Schedule work creation](media/schedule-work-creation-process.png)
-
-### Planned work
-
-The **Planned work details** page (**Warehouse management \> Work \> Planned work details**) shows information about the planned work, which is initially created during wave processing. The following **Process status** values are available:
-
-- **Queued** - The planned work is waiting to be used to create work.
-- **Completed** - The planned work has been used to create work.
-- **Failed** – The wave processing has failed. Note that the planned work can be in a **Failed** state with or without related actual work. When the actual work creation process fails, the actual work remains in status *Cancelled*.
-
-### Batch job for the work creation process
-
-To view the batch jobs for processing waves, select **Batch jobs** on the Action Pane on the **All waves** page.
-
-From here, you can view all the batch task details for each of the batch job IDs.
+For details about how to work with scheduled work creation, see [Wave creation and processing](wave-processing.md). 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

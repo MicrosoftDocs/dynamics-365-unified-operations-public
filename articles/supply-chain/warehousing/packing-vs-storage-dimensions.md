@@ -4,11 +4,9 @@
 title: Set different dimensions for packing and storage
 description: This topic shows how to specify which process (packing, storage, or nested packing) each specified dimension is used for.
 author: mirzaab
-manager: tfehr
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -30,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Set different dimensions for packing and storage
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Some items are packed or stored in such a way that you may need to track physical dimensions differently for each of several different processes. The *Packaging product dimensions* feature lets you set up one or several types of dimensions for each product. Each dimension type provides a set of physical measurements (weight, width, depth, and height), and establishes the process where those physical measurement values apply. When this feature is enabled, your system will support the following types of dimensions:
 

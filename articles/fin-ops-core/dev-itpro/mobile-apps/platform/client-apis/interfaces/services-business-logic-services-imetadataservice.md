@@ -4,11 +4,9 @@
 title: MetadataService type
 description: Provides ability to access and configure various metadata elements under the application workspace.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

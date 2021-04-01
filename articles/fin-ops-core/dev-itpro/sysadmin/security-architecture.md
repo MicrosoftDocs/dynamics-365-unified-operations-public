@@ -4,11 +4,9 @@
 title: Security architecture
 description: This topic provides an overview of the security architecture of Finance and Operations.
 author: Peakerbl
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

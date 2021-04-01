@@ -4,11 +4,9 @@
 title: Plan for one-time vendors in the public sector
 description: This article explains how to prepare to import and create multiple one-time vendors and invoices. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

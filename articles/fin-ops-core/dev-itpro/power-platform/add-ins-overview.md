@@ -4,11 +4,9 @@
 title: Add-ins overview
 description: This topic provides information about add-ins, which can be used to extend the functionality of Finance and Operations apps.
 author: ankugo
-manager: AnnBe
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

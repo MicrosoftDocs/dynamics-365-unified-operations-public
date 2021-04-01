@@ -4,11 +4,9 @@
 title: Use JOIN data sources in ER model mappings to get data from multiple application tables
 description: This topic explains how you can use JOIN type data sources in Electronic reporting (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

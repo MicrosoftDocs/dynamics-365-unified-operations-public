@@ -4,11 +4,9 @@
 title: Depreciation methods and conventions
 description: This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

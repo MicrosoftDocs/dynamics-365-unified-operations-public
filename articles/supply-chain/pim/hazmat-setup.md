@@ -4,11 +4,9 @@
 title: Set up hazardous materials
 description: This topic explains how to set up the data that is required to classify items as hazardous materials. When you create a sales order that includes an item that is classified as a hazardous material, the system generates hazardous material documentation for that sales order when it's shipped.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +27,6 @@ ms.dyn365.ops.version: Release 10.0.11
 # Set up hazardous materials
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 To use hazardous materials functionality, you must first set up the data that is required to classify items as hazardous materials. Then, when you create a sales order that includes an item that is classified as a hazardous material, the system generates hazardous material documentation for that sales order when it's shipped.
 

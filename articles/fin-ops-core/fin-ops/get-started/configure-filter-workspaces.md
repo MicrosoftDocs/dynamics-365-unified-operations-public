@@ -4,11 +4,9 @@
 title: Configure and filter workspaces
 description: This article provides an overview about how to configure and filter workspaces.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

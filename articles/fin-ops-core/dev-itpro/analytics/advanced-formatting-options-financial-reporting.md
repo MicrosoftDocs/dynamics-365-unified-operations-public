@@ -4,11 +4,9 @@
 title: Advanced formatting options in financial reporting
 description: This topic describes advanced formatting functions, including filters, restrictions, non-printing rows, and conditional statements in calculations.
 author: panolte
-manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata

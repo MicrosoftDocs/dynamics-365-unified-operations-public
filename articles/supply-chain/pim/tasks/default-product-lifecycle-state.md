@@ -4,11 +4,9 @@
 title: Create a default product lifecycle state
 description: This procedure shows how to create a default product lifecycle state as well as how to associate the default state with released products. 
 author: cvocph 
-manager: tfehr 
 ms.date: 12/05/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

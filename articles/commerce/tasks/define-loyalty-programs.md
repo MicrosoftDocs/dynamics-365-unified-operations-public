@@ -4,11 +4,9 @@
 title: Define loyalty programs
 description: This procedure shows how to set up a loyalty program with two loyalty tiers. 
 author: jashanno
-manager: AnnBe 
 ms.date: 11/14/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 

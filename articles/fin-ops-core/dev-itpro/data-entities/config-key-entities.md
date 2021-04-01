@@ -4,11 +4,9 @@
 title: Configuration keys and data entities
 description: This topic describes the relationship between configuration keys and data entities.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Lease termination proposal
 description: This topic explains how to propose a lease for termination.
 author: moaamer
-manager: Ann Beebe
 ms.date: 1/14/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

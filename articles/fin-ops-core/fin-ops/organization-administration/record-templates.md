@@ -4,11 +4,9 @@
 title: Record templates overview
 description: This article introduces the concept of record templates and explains how they can be used to create records that share information.
 author: pvillads
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

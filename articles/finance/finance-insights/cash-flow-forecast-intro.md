@@ -4,11 +4,9 @@
 title: Cash flow forecast (preview)
 description: This topic describes the Cash flow forecasting capability.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 05/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

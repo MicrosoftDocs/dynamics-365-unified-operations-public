@@ -4,11 +4,9 @@
 title: Edit personal information
 description: This article describes how to edit personal information in Employee and manager self service.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

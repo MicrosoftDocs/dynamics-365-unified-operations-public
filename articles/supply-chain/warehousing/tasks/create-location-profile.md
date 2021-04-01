@@ -4,11 +4,9 @@
 title: Create a location profile
 description: This topic explains how to create a location profile in Dynamics 365 Supply Chain Management. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

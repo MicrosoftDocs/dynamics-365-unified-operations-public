@@ -4,11 +4,9 @@
 title: Form design requirements
 description: This topic provides in-depth information on designing mobile apps.
 author: robinarh
-manager: AnnBe
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

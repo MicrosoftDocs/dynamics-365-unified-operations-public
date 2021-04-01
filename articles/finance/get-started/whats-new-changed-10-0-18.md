@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.18 (May 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.18 preview release.
 author: roschlom
-manager: AnnBe
 ms.date: 03/05/2021
 ms.topic: article
 ms.prod: 
@@ -50,14 +49,14 @@ The following features are included in this release. Some of the listed features
 
 - [Electronic Invoicing Add-on for Dynamics 365 (GA)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-add-on-dynamics-365-ga)
 - [Electronic Invoicing Add-on – Configurable Egyptian e-invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-add-on-configurable-egyptian-e-invoice)
+- [Invoicing – improved Natura codes handling in FatturaPA electronic invoice](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/invoicing--improved-natura-codes-handling-fatturapa-electronic-invoice)
+- [Collections – interest note calculation based on number of days between due and payment date](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/collections--interest-note-calculation-based-number-days-between-due-payment-date)
 - [Regulatory Configuration Service – simplified globalization feature management for globalization services](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
 - [Regulatory Configuration Service expanded regional coverage to Europe](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage-europe)
 - [Global withholding tax](https://docs.microsoft.com/dynamics365/finance/general-ledger/global-withholding-tax-overview)
 - [Tax – enhanced global withholding tax](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax--enhanced-global-withholding-tax)
 - [Tax – using packing slip date as tax calculation date](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax--using-packing-slip-date-as-tax-calculation-date)
 - [Extended Italian localization – payment traceability improvements](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/extended-italian-localization--payment-traceability-improvements)
-- [Regulatory Configuration Service expanded regional coverage to Europe](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-expanded-regional-coverage-europe)
-- [Regulatory Configuration Services (RCS) - Globalization features](https://docs.microsoft.com/dynamics365/finance/localizations/rcs-globalization-feature)
 
 ## Additional resources
 

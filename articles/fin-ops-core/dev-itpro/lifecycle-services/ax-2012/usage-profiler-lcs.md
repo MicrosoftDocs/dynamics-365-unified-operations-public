@@ -4,11 +4,9 @@
 title: Usage profiler in Lifecycle Services (LCS)
 description: This topic provides information about the data that is collected by the Usage profiler. 
 author: kfend
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata

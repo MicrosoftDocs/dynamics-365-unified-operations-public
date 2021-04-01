@@ -4,11 +4,9 @@
 title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

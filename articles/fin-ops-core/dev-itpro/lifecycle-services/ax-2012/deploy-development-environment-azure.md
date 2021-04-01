@@ -4,11 +4,9 @@
 title: Deploy development environments on Azure
 description: This topic provides information about how to deploy a development environment on Microsoft Azure. 
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata

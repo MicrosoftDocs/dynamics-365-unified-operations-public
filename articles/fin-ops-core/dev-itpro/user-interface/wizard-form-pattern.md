@@ -4,11 +4,9 @@
 title: Wizard form pattern
 description: This article provides information about the Wizard form pattern. A wizard is a user assistance form that takes the user through a task.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

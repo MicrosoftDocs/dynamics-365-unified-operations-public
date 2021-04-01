@@ -4,11 +4,9 @@
 title: Propose special depreciation
 description: In Japan, a special depreciation is permitted under certain conditions. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

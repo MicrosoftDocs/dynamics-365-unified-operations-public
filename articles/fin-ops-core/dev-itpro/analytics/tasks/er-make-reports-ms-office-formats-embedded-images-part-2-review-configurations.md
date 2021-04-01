@@ -4,11 +4,9 @@
 title: Review configurations to generate reports in Office format that have embedded images
 description: This topic describes how to design reporting configurations to generate electronic documents that contain embedded images. (Part 1 - Set up parameters). 
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/13/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

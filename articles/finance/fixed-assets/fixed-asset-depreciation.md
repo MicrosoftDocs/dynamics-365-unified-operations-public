@@ -4,11 +4,9 @@
 title: Fixed asset depreciation
 description: This topic provides an overview of depreciation for fixed assets.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

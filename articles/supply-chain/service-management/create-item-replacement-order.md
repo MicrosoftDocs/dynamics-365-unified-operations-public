@@ -4,11 +4,9 @@
 title: Create an item replacement order   
 description: Item replacement orders are usually created after a product is returned and inspected.
 author: josaw1
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Report Designer interface
 description: This article explains how to navigate through Report Designer and how to use the various options to meet your specific requirements.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

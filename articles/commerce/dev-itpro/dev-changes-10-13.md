@@ -4,11 +4,9 @@
 title: Development and ALM changes from version 10.0.10 to 10.0.13 
 description: This topic highlights the major changes in the development tools, software development kits (SDKs), and Application Lifecycle Management (ALM).
 author: RobBertram 
-manager: AnnBe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Asset leasing reports
 description: This topic lists and briefly describes the reports that are available in Asset leasing.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

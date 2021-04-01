@@ -4,11 +4,9 @@
 title: Create and post a customer invoice for a public sector customer
 description: This procedure walks you through creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Transportation management modes and methods
 description: This topic shows how to set up Transportation management modes and methods.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

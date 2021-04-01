@@ -4,11 +4,9 @@
 title: Respond to GDPR data requests resources
 description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR).
 author: rschloma
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

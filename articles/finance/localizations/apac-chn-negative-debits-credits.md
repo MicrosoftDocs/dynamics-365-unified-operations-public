@@ -4,11 +4,9 @@
 title: Display debit and credit amounts in ledger accounts for China
 description: This topic shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

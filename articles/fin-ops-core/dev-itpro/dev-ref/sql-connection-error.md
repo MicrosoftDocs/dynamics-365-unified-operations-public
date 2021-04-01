@@ -4,11 +4,9 @@
 title: SQL connection error X++ exception
 description: This topic describes the SQL connection error exception types in X++.
 author: yiqju
-manager: AnnBe
 ms.date: 09/27/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

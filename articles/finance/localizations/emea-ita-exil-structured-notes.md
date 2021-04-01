@@ -4,11 +4,9 @@
 title: Advanced notes management
 description: This topic explains how to set up and print predefined notes for customers, vendors, and products.
 author: ilkond
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Create an observable data action
 description: This topic describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

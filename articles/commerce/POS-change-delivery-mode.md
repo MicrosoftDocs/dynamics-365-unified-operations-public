@@ -4,11 +4,9 @@
 title: Change mode of delivery in POS
 description: This topic describes how to configure and use the change mode of delivery operation in POS.
 author: hhainesms
-manager: annbe
 ms.date: 03/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

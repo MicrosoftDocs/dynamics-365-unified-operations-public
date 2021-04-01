@@ -4,11 +4,9 @@
 title: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
 description: This topic explains how to enable and test Azure Data Lake Storage for a Dynamics 365 Commerce environment, which is a prerequisite for enabling product recommendations.
 author: bebeale
-manager: AnnBe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

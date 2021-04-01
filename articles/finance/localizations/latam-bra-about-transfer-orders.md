@@ -4,11 +4,9 @@
 title: Transfer orders (Brazil)
 description: This topic provides information about transfer orders for Brazil. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

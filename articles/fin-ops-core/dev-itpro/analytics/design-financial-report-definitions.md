@@ -4,11 +4,9 @@
 title: Report definitions in financial report designer
 description: This article provides information about report definitions.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
