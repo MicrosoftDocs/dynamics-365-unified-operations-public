@@ -38,7 +38,7 @@ A dimension set is an ordered list of financial dimensions that can be used to s
 
 ## Dimension set balances
 
-A dimension set can have balances that are based on the financial dimensions of the dimension set. The balances exist and are summarized from the data in General ledger to improve performance related to retrieving the balances. The balances are based on the dimension set definition and are summarized from the General ledger data to improve performance when the balances are retrieved, for example, when a trial balance is generated.
+A dimension set can have balances that are based on the financial dimensions of the dimension set. The balances exist in General ledger and are based on the dimension set definition. They're summarized from the General ledger data to improve performance when the balances are retrieved, for example, when a trial balance is generated.
 
 ## Create balances
 
