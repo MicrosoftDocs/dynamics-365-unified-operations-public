@@ -4,7 +4,6 @@
 title: Create a new warehouse layout
 description: This topic describes how to set up information about the locations in a warehouse. 
 author: perlynne
-manager: tfehr 
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  

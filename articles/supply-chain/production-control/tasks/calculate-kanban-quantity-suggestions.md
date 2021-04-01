@@ -4,7 +4,6 @@
 title: Calculate kanban quantity suggestions
 description: This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  

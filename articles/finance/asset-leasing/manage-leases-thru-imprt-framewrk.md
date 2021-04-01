@@ -4,7 +4,6 @@
 title: Manage leases through the Lease import framework
 description: This topic explains how to use the Lease import framework to adjust multiple leases at the same time.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 

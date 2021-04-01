@@ -4,7 +4,6 @@
 title: Tax calculation service (Preview)
 description: This topic explains the overall scope and features of the tax calculation service.
 author: wangchen
-manager: beya
 ms.date: 03/02/2021
 ms.topic: article
 ms.prod: 

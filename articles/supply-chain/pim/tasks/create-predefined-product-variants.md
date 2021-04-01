@@ -4,7 +4,6 @@
 title: Create predefined product variants
 description: This procedure walks through creating product variants for a product master using the combinations of product dimensions. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

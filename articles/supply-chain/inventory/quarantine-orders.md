@@ -4,7 +4,6 @@
 title: Quarantine orders
 description: This topic describes how quarantine orders are used to block inventory.
 author: perlynne
-manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod:

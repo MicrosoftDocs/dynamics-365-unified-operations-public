@@ -4,7 +4,6 @@
 title: Piece picking confirmation
 description: Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 

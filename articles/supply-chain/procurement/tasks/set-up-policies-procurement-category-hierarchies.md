@@ -4,7 +4,6 @@
 title: Set up policies for procurement category hierarchies
 description: Use this procedure to set up rules for ordering products in a category. 
 author: kamaybac
-manager: tfehr 
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  

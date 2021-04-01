@@ -4,7 +4,6 @@
 title: Transportation management statuses
 description: This topic explains how to create a transportation status and map that status to a carrier status.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 

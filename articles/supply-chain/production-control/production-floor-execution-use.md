@@ -4,7 +4,6 @@
 title: How workers use the production floor execution interface
 description: This topic describes how to use the production floor execution interface from a worker's point of view.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 

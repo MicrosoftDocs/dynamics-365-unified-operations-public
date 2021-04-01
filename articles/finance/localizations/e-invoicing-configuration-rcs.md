@@ -4,7 +4,6 @@
 title: Configure Electronic invoicing in Regulatory Configuration Services (RCS)
 description: This topic explains how to configure Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS). 
 author: gionoder
-manager: AnnBe
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 

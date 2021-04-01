@@ -4,7 +4,6 @@
 title: Import or manually create postal codes
 description: This topic explains how to import and manually create postal codes in the correct format. 
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 

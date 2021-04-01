@@ -4,7 +4,6 @@
 title: Product lifecycle states and transactions
 description: This topic explains how you can control which transactions are allowed for each lifecycle state as an engineering product goes through its lifecycle.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 

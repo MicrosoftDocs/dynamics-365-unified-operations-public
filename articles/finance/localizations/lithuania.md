@@ -4,7 +4,6 @@
 title: Lithuania overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Lithuania. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

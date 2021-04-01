@@ -4,7 +4,6 @@
 title: Purchase requisition workflow
 description: The workflow process moves purchase requisitions through the review process, from an initial status of Draft to a final status of Approved. When a purchase requisition is submitted for review, the workflow process is started. After a purchase requisition is approved, a purchase order can be generated for the purchase requisition lines and submitted to the vendor for order fulfillment.
 author: kamaybac
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

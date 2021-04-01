@@ -4,7 +4,6 @@
 title: Set up and use PKWiU codes for Poland
 description: This topic walks you through setting up the PKWiU code for Poland.  
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/20/2018
 ms.topic: article
 ms.prod: 

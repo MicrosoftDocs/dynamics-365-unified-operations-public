@@ -4,7 +4,6 @@
 title: General ledger and Financial reporting overview
 description: Use General ledger to define and manage the legal entity’s financial records.  
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/14/2020
 ms.topic: article
 ms.prod: 

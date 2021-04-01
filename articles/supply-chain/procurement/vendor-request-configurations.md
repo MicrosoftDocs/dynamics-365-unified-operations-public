@@ -4,7 +4,6 @@
 title: Vendor request configurations
 description: This topic describes the fields that are required to be populated in a new vendor request.
 author: kamaybac
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

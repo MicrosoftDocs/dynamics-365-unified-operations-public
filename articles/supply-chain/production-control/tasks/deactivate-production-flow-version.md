@@ -4,7 +4,6 @@
 title: Deactivate a production flow version
 description: When an active production flow version is no longer needed, it can be deactivated. 
 author: cvocph
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Fiscal service (ESR) integration
 description: This topic provides information about the fiscal service integration for Austria and the Czech Republic.
 author: Anasyash
-manager: AnnBe
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 

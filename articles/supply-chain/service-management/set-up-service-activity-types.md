@@ -4,7 +4,6 @@
 title: Set up service activity types 
 description: Set up service activity types. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

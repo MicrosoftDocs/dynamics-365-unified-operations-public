@@ -4,7 +4,6 @@
 title: Asset view
 description: This topic describes the asset view in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 

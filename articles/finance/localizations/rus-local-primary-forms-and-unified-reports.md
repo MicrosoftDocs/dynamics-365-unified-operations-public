@@ -3,7 +3,6 @@
 title: Cash - Local primary forms and unified reports
 description: This topic provides information about cash transaction reports that are available for companies with Russian context.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 11/13/2019
 ms.topic: article
 ms.prod: 

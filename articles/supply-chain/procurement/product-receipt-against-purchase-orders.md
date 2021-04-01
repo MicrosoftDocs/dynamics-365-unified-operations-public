@@ -4,7 +4,6 @@
 title: Product receipt against purchase orders
 description: This topic describes the various options for registering products as received.
 author: kamaybac
-manager: tfehr
 ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 

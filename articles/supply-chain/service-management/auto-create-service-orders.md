@@ -4,7 +4,6 @@
 title: Automatically create service orders  
 description: You can generate service orders that are based on a service agreement for the valid period of the service agreement.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

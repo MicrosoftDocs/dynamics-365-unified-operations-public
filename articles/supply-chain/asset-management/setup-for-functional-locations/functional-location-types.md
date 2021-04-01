@@ -4,7 +4,6 @@
 title: Functional location types
 description: This topic describes how to create functional location types in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 

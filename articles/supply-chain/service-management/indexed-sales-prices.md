@@ -4,7 +4,6 @@
 title: Indexed sales prices   
 description: You set up the index for a subscription sales price when you create a subscription fee.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

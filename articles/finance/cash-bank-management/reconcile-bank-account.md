@@ -4,7 +4,6 @@
 title: Reconcile a bank account
 description: This topic describes how to reconcile a bank account.
 author: panolte
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: 

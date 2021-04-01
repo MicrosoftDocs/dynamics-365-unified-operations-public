@@ -4,7 +4,6 @@
 title: Mobile barcode support
 description: This topic describes how to handle the Warehouse mobile scanning app on Android-compatible devices.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Set up fixed assets
 description: This topic provides an overview of the setup of the Fixed assets module.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 

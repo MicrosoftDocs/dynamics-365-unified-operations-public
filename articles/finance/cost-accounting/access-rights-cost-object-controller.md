@@ -4,7 +4,6 @@
 title: Access rights for cost object controllers
 description: This topic provides information about access rights for cost object controllers. 
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
 ms.prod: 

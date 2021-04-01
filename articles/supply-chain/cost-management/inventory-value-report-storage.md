@@ -4,7 +4,6 @@
 title: Inventory value storage report
 description: This topic explains how to run an Inventory value storage report and make the output available digitally, either as an interactive page in Microsoft Dynamics 365 Supply Chain Management or as an exported document in any of several formats.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 

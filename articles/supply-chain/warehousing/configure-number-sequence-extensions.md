@@ -4,7 +4,6 @@
 title: Configure number sequences for warehouse flows
 description: This topic provides an overview of the functionality that provides number sequence extensions for license plate IDs, wave label IDs, container IDs, and bill of lading IDs.
 author: GarmMSFT
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod:

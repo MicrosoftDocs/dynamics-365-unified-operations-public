@@ -4,7 +4,6 @@
 title: Assets and work orders
 description: This topic describes assets and work orders in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 

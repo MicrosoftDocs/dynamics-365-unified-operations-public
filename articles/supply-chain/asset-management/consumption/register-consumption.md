@@ -4,7 +4,6 @@
 title: Register consumption
 description: This topic explains how to register consumption in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: 

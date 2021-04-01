@@ -4,7 +4,6 @@
 title: Electronic invoicing FAQ
 description: This topic provides information about frequently asked questions regarding Electronic invoicing.
 author: gionoder
-manager: AnnBe
 ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 

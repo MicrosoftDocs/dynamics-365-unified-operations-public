@@ -4,7 +4,6 @@
 title: Release a dimension-based product master
 description: This procedure shows how to release a product master, which will be used for the dimension-based configurations. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

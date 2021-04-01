@@ -4,7 +4,6 @@
 title: Bank data usability enhancement
 description: This topic explains how you can help save time and simplify bank data registration for customers and vendors.
 author: ilkond
-manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: 

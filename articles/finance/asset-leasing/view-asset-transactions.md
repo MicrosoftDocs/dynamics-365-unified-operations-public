@@ -4,7 +4,6 @@
 title: View liability, asset, and expense transactions
 description: This topic explains how to view transactions for a leased asset. These transactions include lease liability transactions and executory expense transactions that have been posted.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 

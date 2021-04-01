@@ -4,7 +4,6 @@
 title: Create an Azure storage account and a key vault
 description: This topic explains how to create an Azure storage account and key vault. 
 author: gionoder
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 

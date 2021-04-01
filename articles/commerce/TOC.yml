@@ -846,6 +846,22 @@
         href: task-mgmt-assign-lists.md
       - name: Task management in POS
         href: task-mgmt-pos.md
+      - name: Dynamics 365 Commerce and Microsoft Teams integration
+        items:
+        - name: Commerce and Teams integration overview
+          href: commerce-teams-integration.md
+        - name: Enable Commerce and Teams integration
+          href: enable-teams-integration.md
+        - name: Provision Teams from Commerce
+          href: provision-teams-from-commerce.md
+        - name: Synchronize task management between Teams and Commerce POS
+          href: synchronize-tasks-teams-pos.md
+        - name: Manage user roles in Teams
+          href: manage-user-roles-teams.md
+        - name: Map stores and teams if there are pre-existing teams in Teams
+          href: map-stores-existing-teams.md
+        - name: Commerce and Teams integration FAQ
+          href: teams-integration-faq.md
     - name: Manage your e-commerce site 
       items:
       - name: E-commerce site overview
