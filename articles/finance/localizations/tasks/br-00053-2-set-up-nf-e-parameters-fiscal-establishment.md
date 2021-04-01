@@ -4,7 +4,6 @@
 title: Set up NF-e parameters for a fiscal establishment (Brazil)
 description: Use the following procedure to set up the parameters for a Nota Fiscal eletrônica (NF-e) for a fiscal establishment. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  

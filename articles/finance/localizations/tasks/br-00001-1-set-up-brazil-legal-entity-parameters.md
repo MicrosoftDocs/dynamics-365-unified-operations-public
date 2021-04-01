@@ -4,7 +4,6 @@
 title: Set up legal entity parameters (Brazil)
 description: Set up Brazilian legal entity parameters. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  

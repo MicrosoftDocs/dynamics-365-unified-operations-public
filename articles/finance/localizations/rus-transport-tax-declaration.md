@@ -3,7 +3,6 @@
 title: Transport tax declaration (Russia)
 description: This topic provides information about the Transport tax declaration for Russia.
 author: anasyash
-manager: AnnBe
 ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Troubleshoot warehouse batch and serial reservation hierarchies
 description: This topic describes how to fix common issues that you might encounter while you work with reservation hierarchies that use batch or serial dimensions.
 author: perlynne
-manager: tfehr
 ms.date: 3/12/2021
 ms.topic: article
 ms.prod: 

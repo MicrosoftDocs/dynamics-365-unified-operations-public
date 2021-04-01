@@ -4,7 +4,6 @@
 title: Prioritize service orders   
 description: Prioritize service orders.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

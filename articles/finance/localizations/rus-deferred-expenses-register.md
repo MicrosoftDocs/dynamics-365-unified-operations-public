@@ -4,7 +4,6 @@
 title: Deferred expenses register
 description: This topic provides information about how to generate and set up deferrals.
 author: Akroshkina
-manager: anasyash
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 

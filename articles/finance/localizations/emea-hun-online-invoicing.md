@@ -4,7 +4,6 @@
 title: Online invoicing system
 description: This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: anasyash
-manager: AnnBe
 ms.date: 03/19/2021
 ms.topic: article
 ms.prod: 

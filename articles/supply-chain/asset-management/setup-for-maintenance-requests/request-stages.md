@@ -4,7 +4,6 @@
 title: Maintenance request lifecycle states
 description: This topic describes how to set up maintenance request lifecycle states in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 

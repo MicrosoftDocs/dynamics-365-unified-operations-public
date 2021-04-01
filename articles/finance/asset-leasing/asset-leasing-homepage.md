@@ -4,7 +4,6 @@
 title: Asset leasing home page
 description: This topic provides an overview of Asset leasing documentation, and links to specific topics.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/27/2020
 ms.topic: article
 ms.prod: 

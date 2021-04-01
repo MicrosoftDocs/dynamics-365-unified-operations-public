@@ -4,7 +4,6 @@
 title: Schedule work orders
 description: This topic explains how to schedule work orders in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 

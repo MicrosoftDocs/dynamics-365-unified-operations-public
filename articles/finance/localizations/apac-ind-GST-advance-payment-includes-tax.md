@@ -4,7 +4,6 @@
 title: Advance payments that include tax
 description: This topic explains how to create a customer advance payment journal, and then validate the tax information and financial entries.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 

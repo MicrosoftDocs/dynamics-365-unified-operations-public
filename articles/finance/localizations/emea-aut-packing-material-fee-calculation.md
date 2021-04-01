@@ -4,7 +4,6 @@
 title: Packing material fee calculation for Austria
 description: This topic provides information about packing material rates and fees in Austria.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

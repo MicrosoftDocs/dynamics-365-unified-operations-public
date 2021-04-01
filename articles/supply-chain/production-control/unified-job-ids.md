@@ -2,7 +2,6 @@
 title: Unified number sequence for job IDs
 description: This feature provides a single, unified number sequence that generates job IDs for the Production control, Manufacturing execution, and Time and attendance modules.
 author: johanhoffmann
-manager: tfehr
 ms.date: 03/25/2021
 ms.topic: article
 # ms.search.form:  [Operations AOT form name to tie this topic to]

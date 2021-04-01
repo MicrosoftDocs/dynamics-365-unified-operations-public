@@ -4,7 +4,6 @@
 title: Document routing layout for license plate labels
 description: This topic describes how to use formatting methods to print values on labels.
 author: perlynne
-manager: tfehr
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 

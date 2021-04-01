@@ -4,7 +4,6 @@
 title: Create and post budget journals for fixed asset acquisitions (Russia)
 description: This topic explains how to create and post a budget journal for a fixed asset acquisition for Russia. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 

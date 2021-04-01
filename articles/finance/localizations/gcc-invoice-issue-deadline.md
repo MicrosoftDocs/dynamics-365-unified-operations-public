@@ -4,7 +4,6 @@
 title: Invoice issue deadline (GBL)
 description: This topic provides information about how to calculate the due dates for issuing customer invoices.
 author: v-oloski
-manager: Annbe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 

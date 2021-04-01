@@ -4,7 +4,6 @@
 title: Create service subscriptions from a project 
 description: You can create a service subscription from a project in Project management and accounting.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

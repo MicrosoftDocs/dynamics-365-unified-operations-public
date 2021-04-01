@@ -4,7 +4,6 @@
 title: Purchase return orders
 description: This topic provides information about return orders on purchases.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

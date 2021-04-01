@@ -4,7 +4,6 @@
 title: Generate consolidated financial statements
 description: This topic describes the various scenarios where you might generate consolidated financial statements.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Create a purchase release order when creating the purchase order
 description: This procedure shows how to use a purchase agreement when you create a purchase order. 
 author: kamaybac
-manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  

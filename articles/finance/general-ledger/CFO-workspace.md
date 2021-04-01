@@ -4,7 +4,6 @@
 title: Add financial dimensions to the CFO workspace
 description: This topic explains how to add financial dimensions to the CFO workspace, so that they can be used for the ledger and budget reports. 
 author: aprilolson
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 

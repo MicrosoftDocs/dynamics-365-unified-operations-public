@@ -4,7 +4,6 @@
 title: Warehouse location status
 description: This topic provides an overview of the Warehouse location status feature.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 

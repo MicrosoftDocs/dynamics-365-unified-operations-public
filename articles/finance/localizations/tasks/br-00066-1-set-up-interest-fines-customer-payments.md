@@ -4,7 +4,6 @@
 title: Set up interest and fines on customer payments (Brazil)
 description: Use this procedure to set up interest and fines on customer payments. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  

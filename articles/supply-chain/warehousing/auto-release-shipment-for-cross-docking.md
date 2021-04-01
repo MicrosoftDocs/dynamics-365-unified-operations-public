@@ -4,7 +4,6 @@
 title: Auto-release shipment for cross-docking 
 description: This topic describes a cross-docking strategy that lets you automatically release a demand order to the warehouse when the production order that supplies the demand quantity is reported as finished, so that the quantity is moved directly from the production output location to the outbound location.
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 

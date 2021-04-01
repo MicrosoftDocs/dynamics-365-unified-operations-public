@@ -4,7 +4,6 @@
 title: Functional locations and assets
 description: This topic describes functional locations and assets in Asset Management. Asset Management is an advanced module for managing assets and maintenance jobs in Dynamics 365 Supply Chain Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 

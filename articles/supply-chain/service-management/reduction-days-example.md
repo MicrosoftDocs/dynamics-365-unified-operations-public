@@ -4,7 +4,6 @@
 title: Reduction days example   
 description: Reduction days example. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

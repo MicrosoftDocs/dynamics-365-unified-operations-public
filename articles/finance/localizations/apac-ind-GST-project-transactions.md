@@ -4,7 +4,6 @@
 title: Goods and Service Tax (GST) project transactions
 description: This topic provides information about transactions for Goods and Service Tax (GST) projects.
 author: kfend
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Create and manage Customer portal users
 description: This topic explains how to create Customer portal user accounts and set permissions for them.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 

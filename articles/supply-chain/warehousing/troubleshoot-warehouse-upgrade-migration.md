@@ -4,7 +4,6 @@
 title: Troubleshoot upgrade and migration to advanced warehouse management
 description: This topic describes how to fix common issues that you might encounter while you upgrade and migrate to advanced warehouse management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 

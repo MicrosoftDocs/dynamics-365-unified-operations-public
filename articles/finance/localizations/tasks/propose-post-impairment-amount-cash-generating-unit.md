@@ -4,7 +4,6 @@
 title: Propose and post the impairment amount on a cash generating unit
 description: For Japan, after the calculation of the impairment amount, you can propose and post it in a fixed asset journal. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

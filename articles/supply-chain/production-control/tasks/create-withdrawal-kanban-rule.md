@@ -4,7 +4,6 @@
 title: Create a withdrawal kanban rule
 description: This procedure shows the setup that is needed to create a withdrawal kanban rule for transferring material in a lean environment. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

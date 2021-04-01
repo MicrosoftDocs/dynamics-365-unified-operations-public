@@ -4,7 +4,6 @@
 title: Customize and use the Customer portal
 description: This topic explains how to customize the Customer portal after it has been added to your system.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 

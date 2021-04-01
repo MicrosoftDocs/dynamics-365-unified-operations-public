@@ -4,7 +4,6 @@
 title: Get started with Electronic invoicing for Brazil
 description: This topic provides information that will help you get started with Electronic invoicing for Brazil in Finance and Supply Chain Management.
 author: gionoder
-manager: AnnBe
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 

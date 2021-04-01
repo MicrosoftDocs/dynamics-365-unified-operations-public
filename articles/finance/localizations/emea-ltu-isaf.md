@@ -4,7 +4,6 @@
 title: i.SAF reporting for Lithuania
 description: This topic explains how to set up and work with the i.SAF report for legal entities in Lithuania.
 author: LizaGolub
-manager: AnnBe
 ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 

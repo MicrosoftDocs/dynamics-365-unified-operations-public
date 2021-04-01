@@ -4,7 +4,6 @@
 title: Create and confirm a customer consolidated invoice
 description: In Japan, sales and purchase invoices during the month are consolidated at the end of the month to calculate the due amount. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Inventory marking with Planning Optimization
 description: This topic provides information about the options that are available for marking inventory in firmed orders when you use Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
