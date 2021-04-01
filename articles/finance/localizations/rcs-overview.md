@@ -45,7 +45,7 @@ RCS provides the following capabilities:
 ## Access Regulatory Configuration Service (RCS)
 You can sign up for or sign in to RCS from the [Regulatory services page](https://marketing.configure.global.dynamics.com/). 
 
-    ![Regulatory Configuration Service sign up/sign in](./localizations/media/202103_RCS Marketing page_updated_1.JPG) 
+   ![Regulatory Configuration Service sign up/sign in](./localizations/media/202103_RCS Marketing page_updated_1.JPG) 
     
 When you open the **Regulatory services** page, review and accept the supplemental terms and conditions for use of the service, and then select:
 
