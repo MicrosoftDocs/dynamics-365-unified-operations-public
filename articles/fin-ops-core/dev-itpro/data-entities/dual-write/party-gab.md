@@ -169,7 +169,11 @@ Contact : msdyn_contactpersonid [Account Number/Contact Person ID], msdyn_compan
 Contact For Customer/Vendor : msdyn_contactforpartynumber [Contact For Party Number], msdyn_associatedcompanyid.cdm_companycode [Company (Company Code)] 
 Vendor : msdyn_vendoraccountnumber [Vendor Account Number], msdyn_company.cdm_companycode [Company (Company Code)] 
 
-4. Run the maps in the following order. In case you get "Project validation failed. Missing destination field..." error, open the map, click 'Refresh Tables' and then run the map.
+4. In dataverse, we have increased the duplicate detection rules character limits from 450 to 700 characters. This will allow you to add one or more keys to the duplicate detection rules. Please use it to expand the duplicate detection rules for Account and Contact entity with *Party ID* and *Company* as shown below.
+    ![dupe-rule-1](media/dupe-rule-1.png)
+    ![dupe-rule-2](media/dupe-rule-2.png)
+
+5. Run the maps in the following order. In case you get "Project validation failed. Missing destination field..." error, open the map, click 'Refresh Tables' and then run the map.
 
 > [!Note] The CDS Contacts V2 (contacts) maps is the old map that you stopped in the step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. You need to make sure you dont run these. 
 
@@ -212,10 +216,9 @@ For more information, see [Dual-write mapping reference](mapping-reference.md).
 4. Electronic addresses from the msdyn_partyelectronicaddress entity does not flow to the electronic address fields on Account and Contact entity. This is a known issue and will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will not be overwritten. 
 5. Electronic addresses set on the electronic address tab of the Account/Contact/Vendor forms are coming from msdyn_partyelectronicaddress entity. This information does not flow to its associated transactions like sales order, quotation,  purchase order etc.. This will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will continue to work on transactions like sales order, quotation, purchase order etc.
 6. In F&O, you can create a contact record from the “Add Contact” form for a customer. But, when you try to create a new contact from the “View Contact” form, the contact creation will fail. This is a known issue and we don’t have a solution for it. 
-7. *Initial sync* functionality does not support the "Available From" and "Available To" date fields on "ContactForParty" as DIXF doesn’t support type conversions. 
+7. *Initial sync* functionality does not support the "Available From" and "Available To" *time* fields on "ContactForParty" as DIXF converts it into string rather than an integer, which results in an error while creating records in dataverse as dataverse cannot automatically convert string to an integer.
 8. When a postal address is used for more than one reason like business communication address as well as a billing address, it should be presented as "Business;Invoice" as shown below. In case you add a space in between, you will get an error. This is not a good user experience. Ideally, it should be a multi-select lookup control where the user can select one or more roles and it gets concatenated behind the scenes. 
     ![party-gab-image7](media/Party-gab-image7.png)
-9. In dataverse, we have increased the duplicate detection rules character limits from 450 to 700 characters. This will allow you to add one or more keys to the duplicate detection rules. However, you cannot ship the duplicate detection rules as part of your solution. 
-10. Entering forward dating postal address inside Finance and Operations is not supported for dual-write. It is because the dataverse platform does not support date effectivity concept. Even if you enter a future date, it synchronizes to dataverse partially and does not reflect in the address entity. So you will see an inconsistent information. 
+9. Entering forward dating postal address inside Finance and Operations is not supported in dual-write. It is because the dataverse platform does not support date effectivity concept. In case you enter a future dated postal address inside Finance and Operations application, it will synchronizes to dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future dated and not current for Finance and Operations application. 
 
 
