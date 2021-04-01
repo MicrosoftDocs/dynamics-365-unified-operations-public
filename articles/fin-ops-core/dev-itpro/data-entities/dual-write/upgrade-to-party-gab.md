@@ -65,15 +65,15 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
 6. Open the data factory and click on "Author & Monitor" tile shown below. 
 
-- Go to Manage tab and click on "ARM template" from the left panel. 
+      + Go to Manage tab and click on "ARM template" from the left panel. 
 
-- Click on Import ARM template to import the party template. 
+      + Click on Import ARM template to import the party template. 
 
-Import ARM template into the data factory. During import, a settings section appears as shown below. Enter the configuration values. For more guidance, please follow FO Linked Service Configuration and CRM Linked Service Configuration. 
+7. Import ARM template into the data factory. During import, a settings section appears as shown below. Enter the configuration values. For more guidance, please follow FO Linked Service Configuration and CRM Linked Service Configuration. 
 
-After deployment, validate the Datasets, Data flow and Linked Service.  
+8. After deployment, validate the Datasets, Data flow and Linked Service.  
 
-Go to Manage. Under "Connections" you will see "Linked Service" menu. When you click on it, you will see "DynamicsCrmLinkedService" item. When you click on it, you will find "Edit Linked Service" form sliding from the right.  You need to provide the Service URI as shown below. 
+9. Go to Manage. Under "Connections" you will see "Linked Service" menu. When you click on it, you will see "DynamicsCrmLinkedService" item. When you click on it, you will find "Edit Linked Service" form sliding from the right.  You need to provide the Service URI as shown below. 
 
   
 
@@ -81,15 +81,15 @@ Go to Manage. Under "Connections" you will see "Linked Service" menu. When you c
 
 1. Stop the following Account, Contact and Vendor dual-write maps inside F&O. 
 
-- Customers V3(accounts) 
+    + Customers V3(accounts) 
 
-- Customers V3(contacts) 
+    + Customers V3(contacts) 
 
-- CDS Contacts V2(contacts) 
+    + CDS Contacts V2(contacts) 
 
-- CDS Contacts V2(contacts) 
+    + CDS Contacts V2(contacts) 
 
-- Vendor V2 (msdyn_vendor) 
+    + Vendor V2 (msdyn_vendor) 
 
 2. Make sure the above 5 maps are removed from the "msdy_dualwriteruntimeconfig" entity in Dataverse. 
 
@@ -97,39 +97,39 @@ Go to Manage. Under "Connections" you will see "Linked Service" menu. When you c
 
 4. In F&O, if the following tables contain data, then please run "Initial Sync" for them. Otherwise, you can skip this step.  
 
-- Salutations 
+    + Salutations 
 
-- Personal character types 
+    + Personal character types 
 
-- Complimentary closing 
+    + Complimentary closing 
 
-- Contact person titles 
+    + Contact person titles 
 
-- Decision making roles 
+    + Decision making roles 
 
-- Loyalty levels 
+    + Loyalty levels 
 
 5. In CE, disable the following plugin steps. 
 
-- Account Update  
+    + Account Update  
 
-Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account 
+          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account 
 
-Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Update of account 
+          + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Update of account 
 
-- Contact Update  
+    + Contact Update  
 
-Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromContactEntity: Update of contact 
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromContactEntity: Update of contact 
 
-Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForSellableContact: Update of contact 
+         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForSellableContact: Update of contact 
 
-- msdyn_party Update 
+    + msdyn_party Update 
 
-Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromPartyEntity: Update of msdyn_party 
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromPartyEntity: Update of msdyn_party 
 
-- msdyn_vendor Update  
+    + msdyn_vendor Update  
 
-Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor 
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor 
 
 6. In CE, disable the following workflows: 
 
@@ -140,31 +140,31 @@ Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Up
 
 8. Import new party records in F&O 
 
-- Download FONewParty.csv file from Azure blob storage - (Path: partybootstrapping/output/FONewParty.csv) 
+    + Download FONewParty.csv file from Azure blob storage - (Path: partybootstrapping/output/FONewParty.csv) 
 
-- Convert the FONewParty.csv file into an Excel and import it into F&O. [Note: In case CSV import works for you, you can import CSV file directly.] This step could take few hours to complete depending on the volume. 
+    + Convert the FONewParty.csv file into an Excel and import it into F&O. [Note: In case CSV import works for you, you can import CSV file directly.] This step could take few hours to complete depending on the volume. 
 
 9. Now in CE, enable the following plugin steps  
 
-- Account Update  
+    + Account Update  
 
-Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account 
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account 
 
-Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Update of account 
+         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Update of account 
 
-- Contact Update  
+    + Contact Update  
 
-Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromContactEntity: Update of contact 
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromContactEntity: Update of contact 
 
-Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForSellableContact: Update of contact 
+         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForSellableContact: Update of contact 
 
-- msdyn_party Update 
+    + msdyn_party Update 
 
-Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromPartyEntity: Update of msdyn_party 
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromPartyEntity: Update of msdyn_party 
 
-- msdyn_vendor Update  
+    + msdyn_vendor Update  
 
-Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor 
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor 
 
 10. Run Party related maps as instructed here. 
 
@@ -180,32 +180,32 @@ Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Up
 
 ## Learn more about the "Upgrade to Party-GAB" template  
 
-Steps 1 to 6 identifies the companies that are enabled for dual-write and builds a filter clause for them. 
+    + Steps 1 to 6 identifies the companies that are enabled for dual-write and builds a filter clause for them. 
 
-Steps  7-1 to 7-9 retrieves the data from both F&O and CE and stage the data for upgrade.   
+    + Steps  7-1 to 7-9 retrieves the data from both F&O and CE and stage the data for upgrade.   
 
-Steps 8 to 9 compare the party number for Account, Contact and Vendor between F&O and CE. The records that doesn’t have party number are skipped here. 
+    + Steps 8 to 9 compare the party number for Account, Contact and Vendor between F&O and CE. The records that doesn’t have party number are skipped here. 
 
-Step 10 generate 2 csv file for party records to create in CE and F&O 
+    + Step 10 generate 2 csv file for party records to create in CE and F&O 
 
-FOCDSParty.csv contains all party records of both systems irrespective of company enabled for dual write 
+    + FOCDSParty.csv contains all party records of both systems irrespective of company enabled for dual write 
 
-FONewParty.csv contains subset of the party which Dataverse is aware of e.g. account of type prospect. 
+    + FONewParty.csv contains subset of the party which Dataverse is aware of e.g. account of type prospect. 
 
-Step 11 creates the Parties in CE. 
+    + Step 11 creates the Parties in CE. 
 
-Step 12 retrieves the Party guids from CE and stage it for associating with Account, Contact and Vendor records in the subsequent steps.  
+    + Step 12 retrieves the Party guids from CE and stage it for associating with Account, Contact and Vendor records in the subsequent steps.  
 
-Step 13 associates the Account, Contact and Vendor records with Party guid. 
+    + Step 13 associates the Account, Contact and Vendor records with Party guid. 
 
-Steps 14-1 to 14-3 updates the Account, Contact and Vendor records in CE with Party guid.  
+    + Steps 14-1 to 14-3 updates the Account, Contact and Vendor records in CE with Party guid.  
 
-Steps 15-1 to 15-3 prepare "Contact for Party" records for Account, Contact and Vendor. 
+    + Steps 15-1 to 15-3 prepare "Contact for Party" records for Account, Contact and Vendor. 
 
-Steps 16-1 to 16-7 retrieves the reference data like salutations, personal character types etc. and associate them with "Contact for Party" records. 
+    + Steps 16-1 to 16-7 retrieves the reference data like salutations, personal character types etc. and associate them with "Contact for Party" records. 
 
-Step 17 merges the "Contact for Party" records for Account, Contact and Vendor. 
+    + Step 17 merges the "Contact for Party" records for Account, Contact and Vendor. 
 
-Step 18 Import "Contact for Party" records into CE. 
+    + Step 18 Import "Contact for Party" records into CE. 
 
  
