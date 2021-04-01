@@ -57,9 +57,7 @@ A reporting tree definition contains the columns that are described in the follo
 | Unit Description      | The reporting unit title appears in the report header or footer if you enter **UnitDesc** as a code on the **Headers and Footers** tab of the report definition. The title appears in the report row description if you enter **UnitDesc** in the **Description** cell of the row definition. |
 | Dimensions            | A reporting unit that draws information directly from the financial data. It defines the logical positioning and lengths for the account and related segments. Every reporting unit row must have a dimension in this column. You can also put a dimension in a summary unit row (for example, for expenses that are directly related to that unit). If you enter a dimension in a summary unit row, accounts that are used in parent units should not be used in child units. Otherwise, amounts might be duplicated. |
 | Row Definitions       | The name of the row definition for the reporting unit. The same row definition is used for each unit of the reporting tree. When you generate a report, this row definition is used for each reporting unit. The row definition can include multiple financial dimensions links. If a row definition is specified in the reporting tree, select the **Use row definition from reporting tree** check box on the **Report** tab of the report definition. |
-| Row link              | The row link to use for the reporting unit. Row links are defined for the row definition to identify the financial dimensions to link to. |
-| External link         | The row link to use for this reporting unit. Row links are defined for the row definition to identify the report to link to. |
-| External file         | The file path of the financial reporting worksheet to pull data from. |
+| Financial Dimensions link| The financial dimensions link to use for the reporting unit. Financial dimensions links are defined for the row definition to identify the financial dimensions to link to. |
 | Page Options          | This column controls whether the details for the reporting unit are suppressed when the report is viewed or printed. |
 | Rollup %              | The percentage of the reporting unit that should be allocated to the parent unit. The percentage that you enter in this column applies to each row of the row definition before the value in the row is added to the parent report. For example, if a child unit must be divided evenly between two departments, the amounts in each row are multiplied by 50 percent before the value is added to the department report. One reporting unit can't have two parent units. To allocate the amounts from a reporting unit to two parent units, create another reporting unit that has the same dimension to roll up the additional 50 percent. Enter whole percentages without a decimal point. For example, **25** represents 25-percent allocation to the parent. If you include a decimal point (**.25**), 0.25 percent is allocated to the parent. To use a percentage that is less than 1 percent, use the **Allow Rollup &lt;1%** option in the report definition. This option is on the **Additional Options** tab in the **Report Settings** dialog box. You access this dialog box from the **Other** button on the **Settings** tab of the report definition. |
 | Unit Security         | Restrictions on the users and groups that can access the information for the reporting unit. |
@@ -118,10 +116,10 @@ Each reporting tree definition is displayed in unique views. There is a graphica
 
 The following types of reporting units are used in financial reporting:
 
-- A detail unit draws information directly from the financial data, from an Excel worksheet, or from another financial reporting worksheet.
+- A detail unit draws information directly from the financial data.
 - A summary unit summarizes data from lower-level units.
 
-A parent reporting unit is a summary unit that aggregates summarized information from a detail unit. A summary unit can be both a detail unit and a summary unit. Therefore, a summary unit can draw information from a lower-level unit, the financial data, or an Excel worksheet. A parent unit can be the child unit of a higher-level parent unit. A child reporting unit can be a detail unit that pulls information directly from the financial data or an Excel worksheet. A child reporting unit can also be an intermediate summary unit. In other words, it can be the parent unit of a lower-level unit and also the child unit of a higher-level summary unit. In the most common scenario for reporting units, parent units have a blank cell in the **Dimensions** column, and child units have links to specific or wildcard dimension combinations.
+A parent reporting unit is a summary unit that aggregates summarized information from a detail unit. A summary unit can be both a detail unit and a summary unit. Therefore, a summary unit can draw information from a lower-level unit, the financial data. A parent unit can be the child unit of a higher-level parent unit. A child reporting unit can be a detail unit that pulls information directly from the financial data. A child reporting unit can also be an intermediate summary unit. In other words, it can be the parent unit of a lower-level unit and also the child unit of a higher-level summary unit. In the most common scenario for reporting units, parent units have a blank cell in the **Dimensions** column, and child units have links to specific or wildcard dimension combinations.
 
 ### Organize reporting units
 
@@ -166,19 +164,6 @@ You can prevent certain users and groups from accessing a reporting unit. You ca
 2. Double-click the **Unit Security** cell for the reporting unit row to remove access to.
 3. In the **Unit Security** dialog box, select a name, and then click **Remove**.
 4. Click **OK**.
-
-### Link to reports
-
-After you've created a **report** column in the row definition and specified the report to include on the report, you must update the reporting tree with the linked column and the information about the report. A report can be imported into any unit in the reporting tree.
-
-### Identify the report in a reporting tree
-
-1. In Report Designer, open the reporting tree definition to modify.
-2. In the **Row Definitions** column, the information in the cells is based on the information for the selected row, because the same row definition must be used in all units of the reporting tree. Double-click the **Row Definitions** cell, and then select the row definition that contains information about the report.
-3. In the **Worksheet Link** cell for a reporting unit, select the link name that corresponds to the report.
-4. In the **Workbook or Report Path** cell for a reporting unit, enter the name of the report, or browse to select the report.
-5. To specify a worksheet in a report, enter the name of the worksheet in the **Worksheet name** cell.
-6. Repeat steps 3 through 5 for each reporting unit that should receive data from a report. To prevent incorrect data from appearing in your report, make sure that the correct report names appear in the corresponding unit of the reporting tree.
 
 ## Examples
 ### Reporting unit structure – Example 1
