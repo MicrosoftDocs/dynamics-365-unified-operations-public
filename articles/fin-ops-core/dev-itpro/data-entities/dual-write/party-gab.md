@@ -131,36 +131,38 @@ Electronic addresses are available only on this grid. In future releases, all el
 
 ## Setup instructions
 
-If you are an existing dual-write customer, then the following setup instructions are required. Otherwise you can skip this section.
+1. Install the latest version (2.2.2.50) of [dual-write orchestration solution](https://aka.ms/dual-write-app) from appsource. 
 
-1. Stop the following maps, because they aren't required anymore. Instead, run the Contacts V2 (msdyn_contactforparties) map.
+2. Install the [dual-write party and global address book solution](https://aka.ms/dual-write-gab) from appsource.
+
+3. Stop the following maps, because they aren't required anymore. Instead, run the Contacts V2 (msdyn_contactforparties) map.
 
     + CDS Contacts V2 and Contacts (refers to customer contacts)
     + CDS Contacts V2 and Contacts (refers to vendor contacts)
 
-2. The following entity mappings are updated for party functionality, so the latest version must be applied to these mappings.
+4. The following entity mappings are updated for party functionality, so the latest version must be applied to these mappings.
 
-Map | Update to this version | Changes
----|---|---
-CDS Parties (msdyn_parties)| 1.0.0.0 | This is a new map added as part of this release.
-Contacts V2 (msdyn_contactforparties)| 1.0.0.5 | This is a new map added as part of this release.
-Customers V3 (accounts) | 1.0.0.5 |Removed the PartyNumber and other party-related fields like name, personal details, postal address fields, electronic contact address fields etc.
-Customer V3 (contacts) | 1.0.0.5 | Removed the PartyNumber and other party-related fields like name, personal details, postal address fields, electronic contact address fields etc.
-Vendors V2 (msdyn_vendors) | 1.0.0.6 | Removed the PartyNumber and other party-related fields like name, personal details, postal address fields, electronic contact address fields etc.
-CDS Sales quotation headers (quotes) | 1.0.0.7 | Replaced the contact person with ContactforParty reference.
-Sales invoice headers V2 (invoices) | 1.0.0.4 | Replaced the contact person with ContactforParty reference.
-CDS Sales order headers (salesorders) | 1.0.0.5 | Replaced the contact person with ContactforParty reference.
-CDS Party postal address locations (msdyn_partypostaladdresses) | 1.0.0.1  | This is a new map added as part of this release.
-CDS postal address history V2 (msdyn_postaladdresses) | 1.0.0.1 | This is a new map added as part of this release.
-CDS postal address locations (msdyn_postaladdresscollections) | 1.0.0.0 | This is a new map added as part of this release.
-Party Contacts V3 (msdyn_partyelectronicaddresses) | 1.0.0.0 | This is a new map added as part of this release.
-Complimentary Closings ( msdyn_compliemntaryclosings)| 1.0.0.0 | This is a new map added as part of this release.
-Decision making roles (msdyn_decisionmakingroles)| 1.0.0.0 | This is a new map added as part of this release.
-Loyalty levels (msdyn_loyaltylevels)| 1.0.0.0 | This is a new map added as part of this release.
-Contact person titles (msdyn_salescontactpersontitles)| 1.0.0.0 | This is a new map added as part of this release.
-Personal character types (msdyn_personalcharactertypes)| 1.0.0.0 | This is a new map added as part of this release.
-Salutations (msdyn_salutations)| 1.0.0.0 | This is a new map added as part of this release.
-Employment job functions (msdyn_employmentjobfunctions)| 1.0.0.0 | This is a new map added as part of this release.
+    Map | Update to this version | Changes
+    ---|---|---
+    CDS Parties (msdyn_parties)| 1.0.0.0 | This is a new map added as part of this release.
+    Contacts V2 (msdyn_contactforparties)| 1.0.0.5 | This is a new map added as part of this release.
+    Customers V3 (accounts) | 1.0.0.5 |Removed the PartyNumber and other party-related fields like name, personal details, postal address fields, electronic contact address         fields etc.
+    Customer V3 (contacts) | 1.0.0.5 | Removed the PartyNumber and other party-related fields like name, personal details, postal address fields, electronic contact address         fields etc.
+    Vendors V2 (msdyn_vendors) | 1.0.0.6 | Removed the PartyNumber and other party-related fields like name, personal details, postal address fields, electronic contact address     fields etc.
+    CDS Sales quotation headers (quotes) | 1.0.0.7 | Replaced the contact person with ContactforParty reference.
+    Sales invoice headers V2 (invoices) | 1.0.0.4 | Replaced the contact person with ContactforParty reference.
+    CDS Sales order headers (salesorders) | 1.0.0.5 | Replaced the contact person with ContactforParty reference.
+    CDS Party postal address locations (msdyn_partypostaladdresses) | 1.0.0.1  | This is a new map added as part of this release.
+    CDS postal address history V2 (msdyn_postaladdresses) | 1.0.0.1 | This is a new map added as part of this release.
+    CDS postal address locations (msdyn_postaladdresscollections) | 1.0.0.0 | This is a new map added as part of this release.
+    Party Contacts V3 (msdyn_partyelectronicaddresses) | 1.0.0.0 | This is a new map added as part of this release.
+    Complimentary Closings ( msdyn_compliemntaryclosings)| 1.0.0.0 | This is a new map added as part of this release.
+    Decision making roles (msdyn_decisionmakingroles)| 1.0.0.0 | This is a new map added as part of this release.
+    Loyalty levels (msdyn_loyaltylevels)| 1.0.0.0 | This is a new map added as part of this release.
+    Contact person titles (msdyn_salescontactpersontitles)| 1.0.0.0 | This is a new map added as part of this release.
+    Personal character types (msdyn_personalcharactertypes)| 1.0.0.0 | This is a new map added as part of this release.
+    Salutations (msdyn_salutations)| 1.0.0.0 | This is a new map added as part of this release.
+    Employment job functions (msdyn_employmentjobfunctions)| 1.0.0.0 | This is a new map added as part of this release.
 
 3. Before running the above maps , make sure the integration keys are updated properly as follows:
 
@@ -173,7 +175,30 @@ Vendor : msdyn_vendoraccountnumber [Vendor Account Number], msdyn_company.cdm_co
     ![dupe-rule-1](media/dupe-rule-1.png)
     ![dupe-rule-2](media/dupe-rule-2.png)
 
-5. Run the maps in the following order. In case you get "Project validation failed. Missing destination field..." error, open the map, click 'Refresh Tables' and then run the map.
+5. If you are an exiting dual-write user, please follow the instructions provided [here](upgrade-to-party-gab.md) and upgrade your data to party-gab model. Note: In case you have customizations around account, contact and vendor, you may need to expand the given ADF template to cater to your customizations.
+
+6. Run the maps in the following order. In case you get "Project validation failed. Missing destination field..." error, open the map, click 'Refresh Tables' and then run the map.
+Finance and Operations app | Customer engagement app  
+----------------------------|-----------------------------
+[CDS Parties](mapping-reference.md#220) | msdyn_parties 
+[CDS postal address locations](mapping-reference.md#234) | msdyn_postaladdresscollections 
+[CDS postal address history V2](mapping-reference.md#235) | msdyn_postaladdresses 
+[CDS Party postal address locations](mapping-reference.md#233) | msdyn_partypostaladdresses 
+[Party contacts V3](mapping-reference.md#236) | msdyn_partyelectronicaddresses 
+[Customers V3](mapping-reference.md#101) | accounts 
+[Customers V3](mapping-reference.md#116) | contacts 
+[Vendors V2](mapping-reference.md#202) | msdyn_vendors 
+[Contact person titles](mapping-reference.md#223) | msdyn_salescontactpersontitles 
+[Complimentary closings](mapping-reference.md#222) | msdyn_complimentaryclosings 
+[Salutations](mapping-reference.md#228) | msdyn_salutations 
+[Decision making roles](mapping-reference.md#224) | msdyn_decisionmakingroles 
+[Employment job functions](mapping-reference.md#225) | msdyn_employmentjobfunctions 
+[Loyalty levels](mapping-reference.md#226) | msdyn_loyaltylevels 
+[Personal character types](mapping-reference.md#227) | msdyn_personalcharactertypes 
+[Contacts V2](mapping-reference.md#221) | msdyn_contactforparties 
+[CDS sales quotation header](mapping-reference.md#215) | quotes 
+[CDS sales order headers](mapping-reference.md#217) | salesorders 
+[Sales invoice headers V2](mapping-reference.md#118) | invoices 
 
 > [!Note] The CDS Contacts V2 (contacts) maps is the old map that you stopped in the step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. You need to make sure you dont run these. 
 
@@ -210,15 +235,15 @@ Finance and Operations app | Customer engagement app     | Description
 For more information, see [Dual-write mapping reference](mapping-reference.md).
 
 ## Known Issues/Limitations
-1. In F&O, when a customer a customer with address and hit save, it syncs to Dataverse until msdyn_postaladdress entity but it doesn’t reflect on the address entity. This is due to Dataverse sequencing issues with the multi-level relational data.  To overcome this situation, please make sure you create the customer first and save and then add address to it.
-2. When a customer has got multiple addresses, the "initial sync" functionality is syncing only few address records and not all. In such case you need to re-run the initial sync for the address entity. We are actively investigating this issue.
-3. In F&O, when a customer record has a primary address and say the user is creating a new contact for that customer, then the contact record inherits a primary address from the associated customer record.  This behavior can be seen for vendor contact as well. However, Dataverse doesn’t support this behavior today. We are still debating the need for it in Dataverse.  Note: In the presence of dual-write, the customer contacts inherited with a primary address from F&O gets synchronized to Dataverse along with its address.  
-4. Electronic addresses from the msdyn_partyelectronicaddress entity does not flow to the electronic address fields on Account and Contact entity. This is a known issue and will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will not be overwritten. 
-5. Electronic addresses set on the electronic address tab of the Account/Contact/Vendor forms are coming from msdyn_partyelectronicaddress entity. This information does not flow to its associated transactions like sales order, quotation,  purchase order etc.. This will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will continue to work on transactions like sales order, quotation, purchase order etc.
-6. In F&O, you can create a contact record from the “Add Contact” form for a customer. But, when you try to create a new contact from the “View Contact” form, the contact creation will fail. This is a known issue and we don’t have a solution for it. 
-7. *Initial sync* functionality does not support the "Available From" and "Available To" *time* fields on "ContactForParty" as DIXF converts it into string rather than an integer, which results in an error while creating records in dataverse as dataverse cannot automatically convert string to an integer.
-8. When a postal address is used for more than one reason like business communication address as well as a billing address, it should be presented as "Business;Invoice" as shown below. In case you add a space in between, you will get an error. This is not a good user experience. Ideally, it should be a multi-select lookup control where the user can select one or more roles and it gets concatenated behind the scenes. 
+1. In Finance and Operations, when you create a customer along with address and hit save, intermittently it may not reach until address entity. This is due to dual-write platform sequencing issue. To overcome this situation, please make sure you create the customer first and save and then add address to it.
+2. In Finance and Operations, when a customer record has a primary address and say the user is creating a new contact for that customer, then the contact record inherits a primary address from the associated customer record.  This behavior can be seen for vendor contact as well. However, Dataverse doesn’t support this behavior today. We are still debating the need for it in Dataverse.  Note: In the presence of dual-write, the customer contacts inherited with a primary address from F&O gets synchronized to Dataverse along with its address.  
+3. Electronic addresses from the msdyn_partyelectronicaddress entity does not flow to the electronic address fields on Account and Contact entity. This is a known issue and will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will not be overwritten. 
+4. Electronic addresses set on the electronic address tab of the Account/Contact/Vendor forms are coming from msdyn_partyelectronicaddress entity. This information does not flow to its associated transactions like sales order, quotation,  purchase order etc.. This will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will continue to work on transactions like sales order, quotation, purchase order etc.
+5. In Finance and Operations, you can create a contact record from the “Add Contact” form for a customer. But, when you try to create a new contact from the “View Contact” form, the contact creation will fail. This is a known issue.
+    ![party-gab-image10](media/party-gab-image10.png)
+6. *Initial sync* functionality does not support the "Available From" and "Available To" *time* fields on "ContactForParty" as DIXF converts it into string rather than an integer, which results in an error "Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32”. 
+7. When a postal address is used for more than one reason like business communication address as well as a billing address, it should be presented as "Business;Invoice" as shown below. In case you add a space in between, you will get an error. This is not a good user experience. Ideally, it should be a multi-select lookup control where the user can select one or more roles and it gets concatenated behind the scenes. 
     ![party-gab-image7](media/Party-gab-image7.png)
-9. Entering forward dating postal address inside Finance and Operations is not supported in dual-write. It is because the dataverse platform does not support date effectivity concept. In case you enter a future dated postal address inside Finance and Operations application, it will synchronizes to dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future dated and not current for Finance and Operations application. 
+8. Entering forward dating postal address inside Finance and Operations is not supported in dual-write. It is because the dataverse platform does not support date effectivity concept. In case you enter a future dated postal address inside Finance and Operations application, it will synchronizes to dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future dated and not current for Finance and Operations application. 
 
 
