@@ -41,6 +41,21 @@ Check out the latest information about dual-write features and changes in the [r
 + [Data in Dataverse – phase 1 & 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Finance and Operations data in Dataverse – Phase 3](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
+## March 2021 release
+
+The March 2021 release of the [Dual-write application orchestration solution version  2.2.2.50](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
+
+This release contains the features and bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| [Party and Global Address Book](party-gab.md) | Brings schema parity with Finance and operations and gives the ability to solve complex business problems on dataverse around customers, vendors and contact persons. To avail this feature, you need to install [dual-write Party and Global Address Book solutions](http://aka.ms/dual-write-gab) from appsource. Supported Finance and Operations verisons are 10.0.605.30025 PU14; 10.0.644.20031 PU15; 10.0.689.10027 PU16; 10.0.761.1 PU17 | General availability |
+| Bug fix| Product category name is part of the natural/integration key of the "Product Categories" entity. Updating the name inside Finance and Operations applications cause an insert in Dataverse instead of an update. Please use the new map "msdyn_productcategories - Product categories" with version 1.0.0.1. Supported Finance and Operations version is 10.0.778.0 PU42 | General availability |
+| Bug fix| Localization bug fixes and updates. | General availability |
+| Bug fix| A note without a description throws error. | General availability |
+| Bug fix| In Finance and operations, running the "Calculate Sales Totals" batch job updates all orders modified within last 24 hours and fixes the totals irrespective of the status of the order (canceled; fulfilled etc.) which then triggers a re-cancellation or re-fulfillment causing a conflict error. | General availability |
+
+
 ## February 2021 release
 
 The February 2021 release of the [Dual-write application orchestration solution version  2.2.2.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.16 (10.0.689.10004) or newer of Finance and Operations apps and version 9.1.0000.11732 or newer of Dataverse.
