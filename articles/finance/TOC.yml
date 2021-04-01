@@ -1446,6 +1446,20 @@
             href: localizations/e-invoicing-setup.md
         - name: Electronic invoicing FAQ
           href: localizations/e-invoicing-faq.md
+      - name: Tax Calculation
+        items:
+        - name: Tax Calculation overview
+          href: localizations/global-tax-calcuation-service-overview.md
+        - name: Get started with Tax Calculation
+          href: localizations/global-get-started-with-tax-calculation-service.md
+        - name: Tax feature support for transfer orders
+          href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+        - name: Add data fields in tax configurations
+          href: localizations/tax-service-add-data-fields-tax-configurations.md
+        - name: Add data fields in the tax integration by using extensions
+          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+        - name: Multiple VAT registration numbers
+          href: localizations/emea-multiple-vat-registration-numbers.md
       - name: Australia
         items:
         - name: Australia overview
