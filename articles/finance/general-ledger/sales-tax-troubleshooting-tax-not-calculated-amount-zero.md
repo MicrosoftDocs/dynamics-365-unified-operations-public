@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: Tax is not calculated or the tax amount is 0
-description:
-author: shtao,maplnan
-manager: beya
-ms.date: 02/04/2021
+title: Tax isn't calculated or the tax amount is zero
+description: This topic provides troubleshooting information related to zero tax or tax that isn't calculated.
+author: shtao
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,44 +27,48 @@ ms.dyn365.ops.version: 10.0.1
 ---
 
 
-
-# Tax is not calculated or the tax amount is 0
+# Tax isn't calculated or the tax amount is zero
 
 [!include [banner](../includes/banner.md)]
 
-## **Symptom**
 
-- The transaction has line amount that is not equal to 0, but the tax is not calculated, or the tax amount is 0.
+A transaction can have a line amount that isn't equal to zero, but the tax isn't calculated, or the calculated tax amount is zero. Complete the steps in the following sections as needed, to troubleshoot the issue. 
 
- 
+## Verify tax codes are selected correctly by the transaction
 
-## **Trouble shooting guide**
+Check whether the transaction selects the tax codes correctly. If the transaction doesn't pick the correct tax codes, or any tax codes, taxes won't be calculated on the transaction.
 
-- **Step 1: Check whether the transaction picks the tax codes correctly. If the transaction does not pick tax codes, the transaction will not have tax calculation.**
+  1. On the transaction line, select **Line details** > **Setup** > **Sales tax** and verify that the **Item sales tax group** and **Sales tax group** fields have the correct tax groups selected. If not, select the correct tax groups.
 
-  1. Go to *The transaction line > Line details > Setup > SALES TAX*, make sure the Item sales tax group* and *Sales tax group* have correct values. If not, please fill them with correct values; otherwise, go to next step 1.b.
+     [![Line details page, Sales tax fields](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
 
-     [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
+  2. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
+  3. Select the appropriate sales tax group, expand the **Setup** FastTab, and note the tax code in the **Sales tax code** field.
+  5. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Item sales tax groups**. 
+  6. Select the appropriate item sales tax group, expand the **Setup** FastTab and verify that the tax code in the **Sales tax code** field is the same as the tax code for the sales tax groups.
+  7. If the tax codes aren't the same, update one of the groups with the correct sales tax code.
 
-  2. Go to *Tax > Indirect taxes > Sales tax > Sales tax groups > The sales tax group > Setup*, and go to *Tax > Indirect taxes > Sales tax > Item sales tax groups > The item sales tax group > Setup*. Make sure their intersection are the target tax codes. If not, add correct sales tax codes into them; otherwise, go to next step 2.
+     [![Sales tax groups page](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
 
-     [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
+     [![Item sales tax groups page](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
 
-     [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
+## Verify the selected tax codes aren't exempt and have the correct tax rate value
+Check whether the selected tax codes are exempt and verify if the codes have the correct tax rate applied. If the tax code is exempt or the tax rate is 0, the tax calculation result is 0.
 
-- **Step 2: Check whether the picked tax codes are not exempt, and the picked tax codes have the correct tax rate value. If the tax code is exempt or the tax rate is 0, the tax calculation result is 0.**
-
-- 1. Go to *Tax  > Indirect taxes > Sales tax > Sales tax groups > The sales tax group > Setup*, make sure the tax code '*Exempt*' is unmarked. If not, unmark it; otherwise, go to next step 2.b.
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
+2. Select the appropriate sales tax group and on the **Setup** FastTab,, make sure **Exempt** check box isn't selected. If the check box is selected, unmark it.
 
      [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated tax-amount-zero-Picture4.png)
 
-  2. Go to *Tax > Indirect taxes > Sales tax > Sales tax codes > The sales tax code  > Value*,  make sure the tax rate value is not equal to 0. If not, fill it with the correct tax rate; otherwise, go to next step 3.
+3. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
+4. Select the appropriate sales tax code and in the **Value** field, verify that tax rate value is not equal to zero. If the tax rate is zero, update the field with thecorrect tax rate.
 
      [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
 
-- **Step 3: Check whether the zero tax is the correct result. Some scenarios with zero tax are expected results.**
+## Verify whether zero is correct
+There are some scenarios where zero tax is the correct result. Verify whether that is the case for your transaction.
 
-  1. Go to *General ledger* *> Ledger setup > General ledger parameters > Sales tax* to check whether the tax calculation method is Total.
+  1. Go to **General ledger** > **Ledger setup** > **General ledger parameters** > Sales tax* to check whether the tax calculation method is Total.
 
      [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
 
@@ -75,6 +78,7 @@ ms.dyn365.ops.version: 10.0.1
 
      [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture7.png)](./media/tax-not-calculated-tax-amount-zero-Picture7.png)
 
-- **Step 4: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
+## Verify customization 
+If you have completed the steps in the previous sections and no issue is found, check whether customization exists. If it doesn't, create a Microsoft service request for further support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
