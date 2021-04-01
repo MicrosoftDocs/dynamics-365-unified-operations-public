@@ -169,7 +169,7 @@ Contact : msdyn_contactpersonid [Account Number/Contact Person ID], msdyn_compan
 Contact For Customer/Vendor : msdyn_contactforpartynumber [Contact For Party Number], msdyn_associatedcompanyid.cdm_companycode [Company (Company Code)] 
 Vendor : msdyn_vendoraccountnumber [Vendor Account Number], msdyn_company.cdm_companycode [Company (Company Code)] 
 
-4. Run the maps. In case you get "Project validation failed. Missing destination field..." error, open the map, click 'Refresh Tables' and then run the map.
+4. Run the maps in the following order. In case you get "Project validation failed. Missing destination field..." error, open the map, click 'Refresh Tables' and then run the map.
 
 > [!Note] The CDS Contacts V2 (contacts) maps is the old map that you stopped in the step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. You need to make sure you dont run these. 
 
@@ -211,23 +211,11 @@ For more information, see [Dual-write mapping reference](mapping-reference.md).
 3. In F&O, when a customer record has a primary address and say the user is creating a new contact for that customer, then the contact record inherits a primary address from the associated customer record.  This behavior can be seen for vendor contact as well. However, Dataverse doesn’t support this behavior today. We are still debating the need for it in Dataverse.  Note: In the presence of dual-write, the customer contacts inherited with a primary address from F&O gets synchronized to Dataverse along with its address.  
 4. Electronic addresses from the msdyn_partyelectronicaddress entity does not flow to the electronic address fields on Account and Contact entity. This is a known issue and will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will not be overwritten. 
 5. Electronic addresses set on the electronic address tab of the Account/Contact/Vendor forms are coming from msdyn_partyelectronicaddress entity. This information does not flow to its associated transactions like sales order, quotation,  purchase order etc.. This will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will continue to work on transactions like sales order, quotation, purchase order etc.
-6. In F&O, you can create a contact record from the “Add Contact” form for a customer.
-![image](https://user-images.githubusercontent.com/35249833/113216329-0d5a3300-9231-11eb-82d7-7defcdb00f62.png)
-If you try to create a new contact from the “View Contact” form, the contact creation will fail. This is a known issue and we don’t have a solution for it. 
-
-
-7. "Initial sync" functionality does not support the "Available From" and "Available To" date fields on "ContactForParty" as DIXF doesn’t support type conversions. 
+6. In F&O, you can create a contact record from the “Add Contact” form for a customer. But, when you try to create a new contact from the “View Contact” form, the contact creation will fail. This is a known issue and we don’t have a solution for it. 
+7. *Initial sync* functionality does not support the "Available From" and "Available To" date fields on "ContactForParty" as DIXF doesn’t support type conversions. 
 8. When a postal address is used for more than one reason like business communication address as well as a billing address, it should be presented as "Business;Invoice" as shown below. In case you add a space in between, you will get an error. This is not a good user experience. Ideally, it should be a multi-select lookup control where the user can select one or more roles and it gets concatenated behind the scenes. 
-
-
-9. Localization for strings in javascript files in GAB extended and Party solutions
-<We can support 20 languages otherwise it is for only english>
-
-Dupe detection rules - from yammer
-
-Possible configuration matrix and what is supported and what is not? 
-<When entering forward dating postal address in F&O is not supported. What is the effect? How to mitigate? Coming in future?>
-10. Initial sync Ordering - get from pradeep - this Is not an issue.
-![image](https://user-images.githubusercontent.com/35249833/113216353-164b0480-9231-11eb-9305-d48ffbf2f3b3.png)
+    [!party-gab-image7](party-gab-image7.png]
+9. In dataverse, we have increased the duplicate detection rules character limits from 450 to 700 characters. This will allow you to add one or more keys to the duplicate detection rules. However, you cannot ship the duplicate detection rules as part of your solution. 
+10. Entering forward dating postal address inside Finance and Operations is not supported for dual-write. It is because the dataverse platform does not support date effectivity concept. Even if you enter a future date, it synchronizes to dataverse partially and does not reflect in the address entity. So you will see an inconsistent information. 
 
 
