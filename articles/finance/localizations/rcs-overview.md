@@ -68,8 +68,8 @@ For more information on related components, see the following available document
 - **Global repository:**
   -	[Create ER configuration & upload to Global repo](rcs-global-repo-upload.md)	
   -	[Share configuration in Global repo](rcs-global-repo-share-configuration.md)	
-  -	[Enhanced filtering in Global repo](enhanced-filtering-global-repo?toc=/dynamics365/finance/toc.json.md)	
-  -	[Import latest versions of ER configurations from Global repo](er-download-configurations-global-repomd) 
+  -	[Enhanced filtering in Global repo](enhanced-filtering-global-repo.md)	
+  -	[Import latest versions of ER configurations from Global repo](er-download-configurations-global-repo.md) 
   -	[Discontinuing configurations in Global repo](discontinuing-configurations-rcs-global-repo.md)
 
 -	**Globalization feature:**
