@@ -59,8 +59,6 @@ The 2 places to configure sales tax for a customer account are:
 
 > [!TIP]
 > For online customer orders, if you only want to apply the destination-based taxes and avoid customer account-based taxes, ensure that the **Sales tax group** field is empty on the **Invoice and delivery** FastTab of the customer details page. To ensure that new customers who sign up via the online channel do not inherit the sales tax group settings from default customer or customer group settings, check that the **Sales tax group** field is also empty for the online channel default customer settings and customer group settings (**Retail and Commerce \> Customers \> Customer groups**).
-> 
-> You should also check **default customer** settings for online channel and **Customer group** settings as well and make sure to leave Sales tax group field as blank. 
 
 ## Determine destination-based tax or customer account-based tax applicability 
 
