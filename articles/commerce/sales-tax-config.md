@@ -5,7 +5,7 @@ title: Configure sales tax for online orders
 description: This topic provides an overview of sales tax group selection for different online order types in Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: AnnBe
-ms.date: 03/31/2021
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,13 +50,15 @@ For order lines with pick up in store or curbside pickup specified, the tax grou
 
 ## Customer account-based taxes for online orders
 
-There may be a business scenario where you want to configure a sales tax group on a specific customer account in Commerce headquarters. There are two places in headquarters where you can configure sales tax on a customer account:
+There may be a business scenario where you want to configure a sales tax group on a specific customer account in Commerce headquarters. There are two places in headquarters where you can configure sales tax on a customer account. To access these, you'll first need to get to a customer detail page by going to **Retail and Commerce \> Customers \> All customers** and then selecting a customer.
 
-- On **Customer** details page under **Invoice and delivery** tab **Sales Tax group** field. 
-- On **Customer** details page, for a specific **Customer Address** > **Advanced** settings, under **General** tab Sales tax group field.
+The 2 places to configure sales tax for a customer account are:
+
+- **Sales tax group** on the **Invoice and delivery** FastTab of the customer details page . 
+- **Sales tax** on the **General** FastTab of the **Manage addresses** page. To get there from the customer details page, select a specific address under the **Addresses** FastTab and then select **Advanced**.
 
 > [!TIP]
-> For online customer orders, if you want to apply only the destination-based taxes and avoid customer account-based taxes, ensure that Customer account \> Invoice and delivery tab \> Sales tax group field is empty. You should also check **default customer** settings for online channel and **Customer group** settings as well and make sure to leave Sales tax group field as blank. This way new customers those sign-up via online channel do not inherit the Sales tax group settings from **default customer** settings or from **Customer group** settings. 
+> For online customer orders, if you want to apply only the destination-based taxes and avoid customer account-based taxes, ensure that **Sales tax group** is empty on the **Invoice and delivery** FastTab of the customer details page. You should also check **default customer** settings for online channel and **Customer group** settings as well and make sure to leave Sales tax group field as blank. This way new customers those sign-up via online channel do not inherit the Sales tax group settings from **default customer** settings or from **Customer group** settings. 
 
 ## Determine destination-based tax or customer account-based tax applicability 
 
