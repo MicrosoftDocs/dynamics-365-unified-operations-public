@@ -1,0 +1,67 @@
+---
+# required metadata
+
+title: Enable customer check-in notifications in point of sale (POS)
+description: 
+author: bicyclingfool
+ms.date: 04/01/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+ROBOTS: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer:
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+# ms.search.industry: Retail
+ms.author: stuharg
+ms.search.validFrom: 2021-04-01
+ms.dyn365.ops.version: 10.0.19
+
+---
+
+# Enable customer check-in notifications in point of sale (POS)
+
+[!include [banner](includes/banner.md)]
+
+Organizations can provide a link or button in "order ready for pickup" emails that lets their customers notify the store that they are on the premises and waiting for their package to be brought out to them. When customers notify the store that they are present, they will receive a check-in confirmation and the store will receive a notification as a task in their point of sale (POS). This task serves as a prompt for a sales associate to deliver the order to the customer's vehicle without the customer having to enter the store.
+
+The customer check-in workflow can also be configured to collect additional information from the customer such as parking spot number, automobile make, model and/or color, or delivery instructions that the retail store attendant can use to facilitate order fulfillment.
+
+## Enable customer check-in
+
+The customer check-in feature is enabled through a feature management switch that generates a stronger order confirmation ID (aka channel reference ID) as well as generating order confirmation IDs for orders created through point of sale (POS) or call center channels. To enable this feature, go to Feature management in headquarters (Workspaces > Feature management) and enable the **Generate a consistent channel reference ID format across channels** feature switch. 
+
+## Create e-commerce pages
+
+You'll create a new page on your e-commerce site that will serve the check-in confirmation experience and if configured, a form for collecting additional information from them to facilitate order fulfillment. See the [Customer check-in module](check-in-for-pickup-module.md) help topic to learn how to set up the page and module.
+
+## Set up transactional email template
+
+You will add a link or button in the template for the transactional email that customers receive when their order has been packed. This is the "I am here" button your customers will use to tell the store they have arrived. 
+
+Add the link or button to the template that is mapped to the Packing completed notification type and the mode of delivery that you are using for curbside order fulfillment. See the Customize transactional emails by mode of delivery topic for more information about configuring email templates. 
+
+Within the template, create an HTML button or link that points to the URL of the page you created so serve the additional information and/or check-in confirmation experience for your customers. Example:
+
+```
+<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%channelreferenceid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>
+```
+
+## Point of sale (POS)
+
+When customers receive the check-in confirmation, a task is created in the Tasks list within point of sale for the store where they're picking up the order. The task contains all the necessary customer and order information needed to fulfill the order. Any information collected from the customer in the additional information screen will be displayed in the instructions field within the task. 
+
+
+
+## Additional resources
+
+[Customer check-in module](check-in-for-pickup-module.md)
+
