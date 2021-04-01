@@ -4,11 +4,9 @@
 title: Modify row definition cells
 description: This topic describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Get started with the cost accounting service (private preview)
 description: This topic provides licensing details and installation instructions for the cost accounting service.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

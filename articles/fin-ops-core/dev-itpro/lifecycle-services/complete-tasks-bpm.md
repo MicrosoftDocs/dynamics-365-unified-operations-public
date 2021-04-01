@@ -2,11 +2,9 @@
 title: Complete tasks in Business process modeler (BPM)
 description: This topic provides information about additional tasks that you can complete in Business process modeler (BPM).
 author: AngelMarshall 
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service:  dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

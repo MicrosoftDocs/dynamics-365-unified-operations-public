@@ -4,11 +4,9 @@
 title: CLI command reference
 description: This topic covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-manager: annbe
-ms.date: 10/20/2020
+ms.date: 03/09/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,28 +31,70 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers the command-line interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
-## Overview
-
 All the following commands must be run by using Yarn. They all have the following structure.
 
 ```bash
-yarn msdyn365 {command} {command-arguments}
+yarn {msdyn365} {command} {command-arguments}
 ```
 
 For information about each command, see the entries in this topic, or use the **yarn --help** or **yarn msdyn365 {command} --help** command.
 
+## start
+
+**Usage**
+
+``` bash
+yarn start <--verbose>
+```
+
+This command will build and launch the Node server using the port defined in the .env file.
+
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+
+**Examples**
+
+``` bash
+yarn start
+```
+
+``` bash
+yarn start --verbose
+```
+
+## build
+
+**Usage**
+
+``` bash
+yarn build <--verbose>
+```
+
+This command will perform a complete build on the customization code.
+
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+
+**Examples**
+
+``` bash
+yarn build
+```
+
+``` bash
+yarn build --verbose
+```
 
 ## add-component-override
 
 **Usage**
 
 ``` bash
-yarn msdyn365 add-component-override <themeName> <componentName> <--list-components>
+yarn msdyn365 add-component-override <themeName> <componentName> <--list-components> <--verbose>
 ```
 
 This command adds a component to the specified theme component folder. The component can then be modified as desired from that folder.
 
-The **--list-components** option is used to show a list of components.
+- The **--list-components** option is used to show a list of components.
+- The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
 **Examples**
 
@@ -71,15 +111,17 @@ yarn msdyn365 add-component-override --list-components
 **Usage**
 
 ``` bash
-yarn msdyn365 add-data-action <action-name>
+yarn msdyn365 add-data-action <action-name> <--verbose>
 ```
 
 This command adds a template data action to the root/src/actions folder.
 
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+
 **Example**
 
 ``` bash
-yarn msdyn365 add-data-action getMyData
+yarn msdyn365 add-data-action getMyData --verbose
 ```
 
 ## add-module
@@ -87,15 +129,17 @@ yarn msdyn365 add-data-action getMyData
 **Usage**
 
 ``` bash
-yarn msdyn365 add-module <module-name>
+yarn msdyn365 add-module <module-name> <--verbose>
 ```
 
 This command adds a module to the root/src/modules folder. Note that module names are case-insensitive. 
 
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+
 **Example**
 
 ``` bash
-yarn msdyn365 add-module product-feature
+yarn msdyn365 add-module product-feature --verbose
 ```
 
 ## add-theme
@@ -103,15 +147,17 @@ yarn msdyn365 add-module product-feature
 **Usage**
 
 ``` bash
-yarn msdyn365 add-theme <theme-name>
+yarn msdyn365 add-theme <theme-name> <--verbose>
 ```
 
 This command adds a theme to the root/src/themes folder.
 
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+
 **Example**
 
 ``` bash
-yarn msdyn365 add-theme spring-theme
+yarn msdyn365 add-theme spring-theme --verbose
 ```
 
 ## add-view-extension
@@ -119,15 +165,17 @@ yarn msdyn365 add-theme spring-theme
 **Usage**
 
 ``` bash
-yarn msdyn365 add-view-extension <theme-name> <Module-name>
+yarn msdyn365 add-view-extension <theme-name> <Module-name> <--verbose>
 ```
 
 This command adds a module view extension to the root/src/themes/\<theme-name\>/views folder. The theme can then add more module definition items, such as configurations, resources, and slots.
 
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+
 **Example**
 
 ``` bash
-yarn msdyn365 add-view-extension spring-theme product-feature
+yarn msdyn365 add-view-extension spring-theme product-feature --verbose
 ```
 
 ## clone
@@ -135,15 +183,17 @@ yarn msdyn365 add-view-extension spring-theme product-feature
 **Usage**
 
 ``` bash
-yarn msdyn365 clone <module-library-module-name> <new-module-name>
+yarn msdyn365 clone <module-library-module-name> <new-module-name> <--verbose>
 ```
 
 This command creates a renamed copy of a module library module and adds the source code to the local root/src/modules folder.
 
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+
 **Example**
 
 ``` bash
-yarn msdyn365 clone content-block super-content-block
+yarn msdyn365 clone content-block super-content-block --verbose
 ```
 
 ## pack
@@ -151,17 +201,19 @@ yarn msdyn365 clone content-block super-content-block
 **Usage**
 
 ``` bash
-yarn msdyn365 pack
+yarn msdyn365 pack <--verbose>
 ```
 
-This command creates a package of the local site configurations (modules, data actions, themes, and so on). This package will then be uploaded to the node server by using Microsoft Dynamics Lifecycle Services (LCS). This command should be run from the root directory of your local SDK files.
+This command creates a package of the local site configurations (modules, data actions, themes, and so on). This package will then be uploaded to the Node server by using Microsoft Dynamics Lifecycle Services (LCS). This command should be run from the root directory of your local SDK files.
 
 The output is a zip file in the directory that the command was run from. The file name is built by using the name and version that are found in your SDK package.json file. For example, a zip file might be named **\@msdyn365-commerce-partners-fabrikam-1.2.73.zip**.
+
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
 **Example**
 
 ``` bash
-yarn msdyn365 pack
+yarn msdyn365 pack --verbose
 ```
 
 ## packages

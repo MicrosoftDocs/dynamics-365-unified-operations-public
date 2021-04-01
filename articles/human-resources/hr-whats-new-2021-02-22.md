@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Human Resources February 22, 2021
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for February 22, 2021.
 author: marcelbf
-manager: tfehr
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod:
@@ -75,8 +74,8 @@ The following new features are in preview. For more information about turning fe
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Cross-company view of leave for managers | [Cross-company view of employee leave for managers](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Configure leave and absence parameters](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-| Benefits management workspace | [Benefits Management Workspace (Preview)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
-| Restrict employees from editing business contact details | [Restricting employees from editing business contact details](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Configure employee service to restrict employees from editing business contact details](https://go.microsoft.com/fwlink/?linkid=2152750)|
+| Benefits management workspace | [Benefits management workspace (Preview)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
+| Restrict employees from editing business contact details | [Restricting employees from editing business contact details](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Restrict editing of personal information](hr-employee-self-service-restrict-editing.md)|
 
 ## Coming soon
 

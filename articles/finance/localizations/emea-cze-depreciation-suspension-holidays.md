@@ -4,11 +4,9 @@
 title: Depreciation suspension (holidays)
 description: This topic provides information about the suspension, or postponement, of depreciation for the Czech Republic.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Subscriptions, LCS projects, and Azure Active Directory tenants FAQ
 description: This topic provides answers to frequently asked questions about subscriptions and licenses, Azure AD tenants, and LCS Implementation projects.
 author: ClaudiaBetz-Haubold 
-manager: AnnBe
 ms.date: 08/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

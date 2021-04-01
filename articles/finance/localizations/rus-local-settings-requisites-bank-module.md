@@ -3,11 +3,9 @@
 title: Set up bank accounts (Russia)
 description: This topic provides information about local settings and prerequisites for bank modules for Russia. 
 author: anasyash
-manager: AnnBe
 ms.date: 12/06/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

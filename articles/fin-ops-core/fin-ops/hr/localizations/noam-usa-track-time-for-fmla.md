@@ -4,11 +4,9 @@
 title: Track time off for the Family and Medical Leave Act (FMLA)
 description: This article explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
 author: ShielaSogge
-manager: AnnBe
 ms.date: 11/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Configure email settings in Attract
 description: This topic explains how to configure settings for email that is sent by Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

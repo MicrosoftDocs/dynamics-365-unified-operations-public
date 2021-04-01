@@ -4,11 +4,9 @@
 title: Commerce Scale Unit (self-hosted)
 description: This topic describes Commerce Scale Unit (self-hosted) and when to use it.
 author: athinesh99
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

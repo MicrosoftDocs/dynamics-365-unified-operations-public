@@ -3,11 +3,9 @@
 title: Pagelink module
 description: A pagelink is a control that navigates to another page.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:

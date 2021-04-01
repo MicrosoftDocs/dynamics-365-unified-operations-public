@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Electronic invoicing add-on overview
-description: This topic provides information about the Electronic invoicing add-on in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+title: Electronic invoicing overview
+description: This topic provides information about Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 01/22/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -29,16 +27,16 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Electronic invoicing add-on overview
+# Electronic invoicing overview
 
 [!include [banner](../includes/banner.md)]
 
-The Electronic invoicing add-on for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management is a hyper-scalable multitenant service that enables configurable processing of electronic invoice documents and configurable document exchange. The processing and integration rules are fully configurable, and the logic is run outside Finance and Supply Chain Management. The service is targeted mainly at e-invoice processing in business-to-government scenarios, but it can be custom-configured for other purposes.
+Electronic invoicing for Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management is a hyper-scalable multitenant service that enables configurable processing of electronic invoice documents and configurable document exchange. The processing and integration rules are fully configurable, and the logic is run outside Finance and Supply Chain Management. The service is targeted mainly at e-invoice processing in business-to-government scenarios, but it can be custom-configured for other purposes.
 
-The Electronic invoicing add-on can help you achieve the following goals:
+Electronic invoicing can help you achieve the following goals:
 
 - Fast and easy adoption of country/region-specific requirements
-- Standardized implementations of an Electronic invoicing add-on solution
+- Standardized implementations of an Electronic invoicing solution
 - Enhanced traceability of document history
 - Shorter implementation cycle
 - Reduced total cost of ownership (TCO)
@@ -47,29 +45,29 @@ The Electronic invoicing add-on can help you achieve the following goals:
 - Built-in export, import, and integration, and easy extensibility in the processing of e-invoice documents
 - Easy reuse of the same export, import, and integration configurations across companies
 
-To use the Electronic invoicing add-on, you must install it from your project in Microsoft Dynamics Lifecycle Services (LCS). Next, follow the setup procedure to turn on the integration with Finance or Supply Chain Management. For more information, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
+To use Electronic invoicing, you must install it from your project in Microsoft Dynamics Lifecycle Services (LCS). Next, follow the setup procedure to turn on the integration with Finance or Supply Chain Management. For more information, see [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 ## <a name="availability"></a>Service availability
 
-Currently the Electronic invoicing add-on is available to customers through the preview program, and in the next phase, the service will become generally available. Because functionality that addresses country/region-specific requirements might be limited at different phases of the release, you should always check the most up-to-date documentation that highlights the coverage and scope of supported country/region-specific solutions.
+Currently Electronic invoicing is available to customers through the preview program, and in the next phase, the service will become generally available. Because functionality that addresses country/region-specific requirements might be limited at different phases of the release, you should always check the most up-to-date documentation that highlights the coverage and scope of supported country/region-specific solutions.
 
-The Electronic invoicing add-on is deployed in the following Azure geographies:
+Electronic invoicing is deployed in the following Azure geographies:
 
 - United States
 - Europe
 
 > [!NOTE]
-> The Electronic invoicing add-on doesn't support on-premises deployments.
+> Electronic invoicing doesn't support on-premises deployments.
 
 ## Extended configurability
 
-The Electronic invoicing add-on can be used in scenarios where you must create and send an electronic document to the designated parties. It's specifically designed for running a configurable flow of processing actions, based on received data. The configurability options that are available in Finance and Supply Chain Management are limited to document transformation. The service extends these options by adding the configurable integrations that are available in it. In addition, all the electronic invoice functionalities that were previously available, such as Brazilian Nota fiscal eletrônica (NF-e), Mexican Comprobante Fiscal Digital por Internet (CFDI), or other Western European Universal Business Language (UBL)/Pan-European Public Procurement OnLine (PEPPOL) functionalities, will use configurations for export and import, and to enable integrations with external web services.
+Electronic invoicing can be used in scenarios where you must create and send an electronic document to the designated parties. It's specifically designed for running a configurable flow of processing actions, based on received data. The configurability options that are available in Finance and Supply Chain Management are limited to document transformation. The service extends these options by adding the configurable integrations that are available in it. In addition, all the electronic invoice functionalities that were previously available, such as Brazilian Nota fiscal eletrônica (NF-e), Mexican Comprobante Fiscal Digital por Internet (CFDI), or other Western European Universal Business Language (UBL)/Pan-European Public Procurement OnLine (PEPPOL) functionalities, will use configurations for export and import, and to enable integrations with external web services.
 
 ## Feature highlights
 
 - Out-of-box integration with Finance and Supply Chain management
 - Consistent user experience for the configuration and monitoring of the e-invoice process for all countries or regions
-- Faster, easier, and less expensive adoption of Electronic invoicing add-on solutions in new countries or regions
+- Faster, easier, and less expensive adoption of Electronic invoicing solutions in new countries or regions
 - Configuration of the service through the Regulatory Configuration Service (RCS) and Globalization feature setup
 - Transformation of business data into multiple e-invoice formats (XML, JavaScript Object Notation \[JSON\], TXT, and comma-separated values \[CSV\]) by using configurations that are defined in RCS:
 
@@ -88,7 +86,7 @@ The Electronic invoicing add-on can be used in scenarios where you must create a
 
 ## Architecture and data flow
 
-When the Electronic invoicing add-on is installed from LCS, and the required setup is completed in all required applications, a secure connection is established. The service is currently located in data centers in the United States and Europe. Therefore, the service location might differ from the location of the related Finance or Supply Chain Management instance. After you complete the setup of the Electronic invoicing add-on and turn on the integration, whenever an electronic invoice is sent, master data and transactional data that are related to a specific document are sent to the Electronic invoicing add-on.
+When Electronic invoicing is installed from LCS, and the required setup is completed in all required applications, a secure connection is established. The service is currently located in data centers in the United States and Europe. Therefore, the service location might differ from the location of the related Finance or Supply Chain Management instance. After you complete the setup of Electronic invoicing and turn on the integration, whenever an electronic invoice is sent, master data and transactional data that are related to a specific document are sent to Electronic invoicing.
 
 > [!NOTE]
 > If your electronic invoice or any other document contains personal data, verify that your use of this feature meets the General Data Protection Regulation (GDPR) and other regulations that are related to the transfer of personal data.
@@ -103,12 +101,12 @@ When the Electronic invoicing add-on is installed from LCS, and the required set
 6. The service provides on-demand information to the client about the processing status of the business document that was sent.
 7. The client receives information about the completed processing execution and makes all the log information available. It also makes the document that was created or received during flow processing available.
 
-The following illustration shows how data flows to and from the Electronic invoicing add-on.
+The following illustration shows how data flows to and from Electronic invoicing.
 
-![Data flow for the Electronic invoicing add-on](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Data flow for Electronic invoicing](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## Privacy notice
-Enabling and using Electronic invoicing add-on may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
+Enabling and using Electronic invoicing may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
 
 ## Additional resources
 - [Service administration](e-invoicing-service-administration.md)

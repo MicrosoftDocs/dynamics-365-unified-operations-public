@@ -4,11 +4,9 @@
 title: Specify how to dispose of returned items 
 description: Specify how to dispose of returned items.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

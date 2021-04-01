@@ -2,13 +2,11 @@
 # required metadata
 
 title: Advanced filtering and query syntax
-description: This topic describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the matches operator in the Filter pane or grid column header filters.  
+description: This topic describes the filtering and query options for the Advanced filter/sort dialog and the matches operator in the Filter pane or grid column header filters.  
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

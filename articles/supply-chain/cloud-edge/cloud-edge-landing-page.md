@@ -4,11 +4,9 @@
 title: Cloud and edge scale units for manufacturing and warehouse management workloads
 description: This topic provides information about cloud and edge scale units for manufacturing and warehouse management workloads.
 author: cabeln
-manager: 
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -127,10 +125,10 @@ For more information, see the [manufacturing scale unit workload details](cloud-
 For warehouse management, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the cloud:
 
 - Processing of selected wave methods is enabled for sales orders and demand replenishment.
-- Warehouse workers can run sales and demand replenishment warehouse work by using the warehouse app.
-- Warehouse workers can inquire into on-hand inventory by using the warehouse app.
-- Warehouse workers can create and run inventory movements by using the warehouse app.
-- Warehouse workers can register purchase orders and do putaway by using the warehouse app.
+- Warehouse workers can run sales and demand replenishment warehouse work by using the Warehouse Management mobile app.
+- Warehouse workers can inquire into on-hand inventory by using the Warehouse Management mobile app.
+- Warehouse workers can create and run inventory movements by using the Warehouse Management mobile app.
+- Warehouse workers can register purchase orders and do putaway by using the Warehouse Management mobile app.
 
 For more information, see the [warehouse scale unit workload details](cloud-edge-workload-warehousing.md).
 

@@ -4,11 +4,9 @@
 title: Posting invoices with zero amount
 description: This topic explains how you can post financial transactions for invoices that have an amount of 0 (zero).
 author: ilkond
-manager: AnnBe
 ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

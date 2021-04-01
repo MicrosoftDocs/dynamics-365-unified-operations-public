@@ -4,11 +4,9 @@
 title: Peripherals
 description: This topic explains the concepts that are related to Commerce peripherals. 
 author: rubencdelgado
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

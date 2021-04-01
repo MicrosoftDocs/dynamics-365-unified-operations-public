@@ -4,11 +4,9 @@
 title: View independent software vendor license status
 description: The topic explains how to view the status of an independent software vendor in Finance and Operations apps.
 author: Peakerbl
-manager: AnnBe
 ms.date: 01/26/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Ship orders from another store by using the Charge send feature
 description: This topic describes the Charge send feature.
 author: ashishmsft
-manager: AnnBe
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

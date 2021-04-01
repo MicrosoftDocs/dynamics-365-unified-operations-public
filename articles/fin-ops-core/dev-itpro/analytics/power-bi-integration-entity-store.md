@@ -4,11 +4,9 @@
 title: Power BI integration with Entity store
 description: This topic describes how Entity store enables Power BI integration.
 author: MilindaV2
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

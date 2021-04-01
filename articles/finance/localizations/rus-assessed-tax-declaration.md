@@ -4,11 +4,9 @@
 title: Assessed tax declaration (Russia)
 description: This topic explains how to set up and use assessed tax declarations for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

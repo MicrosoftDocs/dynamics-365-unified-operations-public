@@ -4,11 +4,9 @@
 title: Accruing subscriptions  
 description: With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: My team mobile workspace
 description: This topic provides information about the My team mobile workspace, which lets managers view their direct reports and extended staff.
 author: ShielaSogge
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

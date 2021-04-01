@@ -4,11 +4,9 @@
 title: What's new or changed in Platform update 29 for Finance and Operations apps (October 2019)
 description: This topic describes features in Platform update 29 for Finance and Operations apps. 
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

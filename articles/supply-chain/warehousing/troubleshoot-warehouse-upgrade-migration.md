@@ -4,11 +4,9 @@
 title: Troubleshoot upgrade and migration to advanced warehouse management
 description: This topic describes how to fix common issues that you might encounter while you upgrade and migrate to advanced warehouse management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,11 +36,11 @@ This topic describes how to fix common issues that you might encounter while you
 
 ### Issue description
 
-You receive this error message in the warehouse app, because self-signed certificates aren't trusted on Android 8+ in on-premises environments.
+You receive this error message in the Warehouse Management mobile app, because self-signed certificates aren't trusted on Android 8+ in on-premises environments.
 
 ### Issue resolution
 
-Use an external (public) certifying authority (CA). A fix for this issue is available in version 1.9.0.0 of the warehouse app. For more information about this issue and how to fix it, see [Troubleshoot warehouse app connection issues](troubleshoot-warehouse-app-connection.md).
+Use an external (public) certifying authority (CA). A fix for this issue is available in version 1.9.0.0 of the warehouse app. For more information about this issue and how to fix it, see [Troubleshoot Warehouse Management mobile app connection issues](troubleshoot-warehouse-app-connection.md).
 
 ## What is the approved process for moving from basic warehousing to advanced warehousing?
 

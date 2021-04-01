@@ -4,11 +4,9 @@
 title: Evaluate the initial customer payment prediction model (preview)
 description: This topic describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness. 
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -73,7 +71,7 @@ For a deeper analysis of the results, a good starting point is to review the "Co
 
 You can expand this data in the following way.
 
-|                          | Predicted On time | Predicted Late | Predicted Very late |
+| &nbsp;                   | Predicted On time | Predicted Late | Predicted Very late |
 |--------------------------|-------------------|----------------|---------------------|
 | Actual on time payment   | **71**            | 0              | 21                  |
 | Actual late payment      | 5                 | **0**          | 27                  |

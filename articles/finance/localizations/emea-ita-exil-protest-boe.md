@@ -4,11 +4,9 @@
 title: Bills of exchange protest import 
 description: This topic explains how to set up and import Protest information from an electronic Bill of exchange protest file.
 author: neserovleo
-manager: AnnBe
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

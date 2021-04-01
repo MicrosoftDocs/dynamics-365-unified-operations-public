@@ -4,11 +4,9 @@
 title: Advance invoices for Commerce for Eastern Europe
 description: This topic explains how to set up advance notices for Commerce for Eastern Europe. 
 author: epopov
-manager: annbe
 ms.date: 10/23/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

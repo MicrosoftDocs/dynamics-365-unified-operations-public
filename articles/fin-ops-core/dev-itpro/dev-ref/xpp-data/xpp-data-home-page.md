@@ -4,11 +4,9 @@
 title: X++ data selection and manipulation overview
 description: This topic provides links to topics about X++ data selection and manipulation.
 author: robinarh
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata

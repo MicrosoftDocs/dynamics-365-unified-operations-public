@@ -4,11 +4,9 @@
 title: Update the Visual Studio development tools
 description: This topic explains how to update the development tools.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

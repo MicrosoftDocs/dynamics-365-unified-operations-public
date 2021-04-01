@@ -4,11 +4,9 @@
 title: Workflow elements
 description: This topic describes the various elements that make up a workflow.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

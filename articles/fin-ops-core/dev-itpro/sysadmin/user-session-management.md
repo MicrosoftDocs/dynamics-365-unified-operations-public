@@ -4,11 +4,9 @@
 title: User session management
 description: The user session setting represents the amount of time a user can be signed in before the user’s session expires.
 author: paulliew
-manager: AnnBe
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

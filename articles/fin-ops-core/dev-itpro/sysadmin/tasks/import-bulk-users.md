@@ -4,11 +4,9 @@
 title: Import users from Azure Active Directory
 description: This procedure can be used by system administrators to manually import selected users or to import a large number of users from Azure Active Directory. 
 author: peakerbl
-manager: AnnBe 
 ms.date: 07/07/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

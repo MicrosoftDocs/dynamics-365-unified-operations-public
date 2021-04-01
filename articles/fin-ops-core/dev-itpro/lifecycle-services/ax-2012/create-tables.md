@@ -4,11 +4,9 @@
 title: Create tables by using the Application Object Tree (AOT)
 description: This topic provides information about how to use the Application Object Tree (AOT) to create tables in which to store data.
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service:
 ms.technology:
 
 # optional metadata

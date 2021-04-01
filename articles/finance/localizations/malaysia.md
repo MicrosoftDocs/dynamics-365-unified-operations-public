@@ -4,11 +4,9 @@
 title: Malaysia overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Malaysia. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Deployment options
 description: Finance and Operations apps can run in the cloud or on-premises. This topic provides information about the different deployment options. 
 author: kfend
-manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

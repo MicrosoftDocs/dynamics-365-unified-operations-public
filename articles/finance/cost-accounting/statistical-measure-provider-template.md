@@ -4,11 +4,9 @@
 title: Provider templates for statistical dimension members and measure providers
 description: This topic provides information about statistical dimension members and statistical measure provider templates. Statistical dimension members can be used as an allocation base in policies such as cost distribution and cost allocation. They can also be used to report non-monetary cost consumption.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -166,7 +164,7 @@ After the source data for the statistical measure is processed, the following st
 
 **Statistical entries**
 
-| Cost object |    | Accounting date | Statistical dimension member |  Description        | Magnitude |
+| Cost object |  Description  | Accounting date | Statistical dimension member |  Description        | Magnitude |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | HR | 31-01-2017      | FTEs                         | Full time employees | 1.00      |
 | CC002       | FI | 31-01-2017      | FTEs                         | Full time employees | 2.00      |
@@ -332,7 +330,7 @@ Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statis
 
 **Statistical entries**
 
-| Cost object |    | Accounting date | Statistical dimension member |      Description                   | Magnitude  |
+| Cost object | Description | Accounting date | Statistical dimension member |      Description                   | Magnitude  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | HR | 31-01-2017      | Electricity                  | Electricity consumption | 2,450.00   |
 | CC002       | FI | 31-01-2017      | Electricity                  | Electricity consumption | 4,100.00   |
@@ -340,11 +338,11 @@ Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statis
 
 If the Electricity predefined dimension member allocation basis is assigned as an allocation base in a cost distribution rule, the cost will be distributed by using the following allocation factor.
 
-| Cost object |    | Magnitude | Allocation factor          |
-|-------------|----|-----------|----------------------------|
-| CC001       | HR | 2,450.00  | (2,450 ÷ 21,550) × Amount  |
-| CC002       | FI | 4,100.00  | (4,100 ÷ 21,550) × Amount  |
-| CC003       | IT | 15,000.00 | (15,000 ÷ 21,550) × Amount |
+| Cost object | Description   | Magnitude | Allocation factor          |
+|-------------|---------------|-----------|----------------------------|
+| CC001       | HR            | 2,450.00  | (2,450 ÷ 21,550) × Amount  |
+| CC002       | FI            | 4,100.00  | (4,100 ÷ 21,550) × Amount  |
+| CC003       | IT            | 15,000.00 | (15,000 ÷ 21,550) × Amount |
 
 ## Additional resources
 

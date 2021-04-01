@@ -4,11 +4,9 @@
 title: Parse incoming documents
 description: This topic provides information about how to set up Electronic reporting formats that can be used to parse incoming documents. 
 author: nickselin
-manager: AnnBe
-ms.date: 02/20/2019
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,12 +54,12 @@ To complete some steps of the task guide, you must download the following files:
 
 | Content description           | File                                                              |
 |-------------------------------|-------------------------------------------------------------------|
-| ER data model configuration   | [EFSTAmodel.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
-| ER format configuration       | [EFSTAformat.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
-| Web service response sample 1 | [Response1.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-| Web service response sample 2 | [Response2.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-| Web service response sample 3 | [Response3.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-| Web service response sample 4 | [Response4.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
+| ER data model configuration   | [EFSTAmodel.xml](https://download.microsoft.com/download/9/d/9/9d9c8562-7281-4db9-8bb3-b9083c6e2b5d/EFSTAmodel.xml)  |
+| ER format configuration       | [EFSTAformat.xml](https://download.microsoft.com/download/8/8/e/88e230cf-120f-4d58-93eb-779f2db1190f/EFSTAformat.xml) |
+| Web service response sample 1 | [Response1.xml](https://download.microsoft.com/download/8/0/5/805cc4fc-c6d2-447f-90e8-67ca6e970f2d/Response1.xml)   |
+| Web service response sample 2 | [Response2.xml](https://download.microsoft.com/download/e/0/a/e0a53eca-0d75-4958-8e3d-f9b1d91f1421/Response2.xml)   |
+| Web service response sample 3 | [Response3.xml](https://download.microsoft.com/download/e/c/2/ec24dcfa-84cd-44b9-9398-ff90f9627986/Response3.xml)   |
+| Web service response sample 4 | [Response4.xml](https://download.microsoft.com/download/6/6/b/66ba9a89-989a-454a-96c2-5e50b7e53fd7/Response4.xml)   |
 
 ## Parse incoming documents in Excel format
 
@@ -76,14 +74,14 @@ Download the following files to complete the task guides mentioned above.
 
 | Content description                         | File                                                                       |
 |---------------------------------------------|----------------------------------------------------------------------------|
-| Incoming file in .XLSX format - template    | [1099import-template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266) |
-| Incoming file in .XLSX format - sample data | [1099import-data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
+| Incoming file in .XLSX format - template    | [1099import-template.xlsx](https://download.microsoft.com/download/b/8/b/b8ba3c9c-97c6-4fc2-898f-7701aac6035c/1099import-template.xlsx) |
+| Incoming file in .XLSX format - sample data | [1099import-data.xlsx](https://download.microsoft.com/download/f/f/4/ff4dbce9-8364-4391-adee-877945ff01f7/1099import-data.xlsx)     |
 
 If you have not yet played the following task guide, [ER Create required configurations to import data from an external file](./tasks/er-required-configurations-import-data.md) in the current Finance and Operations application, download the following file.
 
 | Content description    | File                                                            |
 |------------------------|-----------------------------------------------------------------|
-| ER model configuration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+| ER model configuration | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml) |
 
 ##  Parse incoming documents in CSV format
 
@@ -121,14 +119,14 @@ Download the following files to complete the task guide mentioned above.
 
 | Title                                  | File name                                                            |
 |----------------------------------------|----------------------------------------------------------------------|
-| ER format configuration                | [1099formatcsv.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
-| Sample of incoming file in .csv format | [1099entriescsv.csv](https://go.microsoft.com/fwlink/?linkid=862266) |
+| ER format configuration                | [1099formatcsv.xml](https://download.microsoft.com/download/c/0/1/c014b0fa-d4ee-4de6-8f55-fa539df9ce83/1099formatcsv.xml)  |
+| Sample of incoming file in .csv format | [1099entriescsv.csv](https://download.microsoft.com/download/0/0/c/00c7c78c-55d5-46ba-b6ac-971fb9646502/1099entriescsv.csv) |
 
 Download the following file that is required to complete the task guide mentioned above if you have not played the task guide, **ER Create required configurations to import data from an external file for electronic reporting** in the current Finance and Operations application.
 
 | Title                  | File name                                                       |
 |------------------------|-----------------------------------------------------------------|
-| ER model configuration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+| ER model configuration | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml) |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

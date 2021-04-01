@@ -5,6 +5,10 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: March 22, 2021
+      href: hr-whats-new-2021-03-22.md
+    - name: March 8, 2021
+      href: hr-whats-new-2021-03-08.md
     - name: February 22, 2021
       href: hr-whats-new-2021-02-22.md
     - name: January 28, 2021
@@ -91,9 +95,9 @@
         href: hr-admin-integration-common-data-service.md
       - name: Dataverse tables
         href: hr-developer-entities.md
-      - name: Configure Dataverse virtual entities
+      - name: Configure Dataverse virtual tables
         href: hr-admin-integration-common-data-service-virtual-entities.md
-      - name: Human Resources virtual entities FAQ
+      - name: Human Resources virtual tables FAQ
         href: hr-admin-virtual-entity-faq.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
@@ -263,6 +267,8 @@
         href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks
         href: hr-admin-troubleshooting-batch-history.md
+      - name: Reset stuck batch jobs
+        href: hr-admin-troubleshooting-batch-execution.md
       - name: Analytic reports aren't updated
         href: hr-admin-troubleshooting-analytic-reports.md
       - name: Can't create an environment in the Power Apps Admin center
@@ -787,3 +793,5 @@
         href: hr-employee-self-service-workspace-name.md
       - name: Edit personal information
         href: hr-employee-manager-self-service-edit-personal-information.md
+      - name: Restrict editing of personal information
+        href: hr-employee-self-service-restrict-editing.md

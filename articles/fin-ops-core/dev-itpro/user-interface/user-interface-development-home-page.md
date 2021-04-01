@@ -4,11 +4,9 @@
 title: User interface development home page
 description: This topic contains links to topics about developing user interface elements.
 author: RobinARH
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

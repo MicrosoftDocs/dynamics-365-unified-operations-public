@@ -4,11 +4,9 @@
 title: Daylight saving time support for active batch periods
 description: This topic provides information about daylight saving time support for active batch periods.
 author: karimelazzouni
-manager: AnnBe
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

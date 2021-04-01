@@ -4,11 +4,9 @@
 title: Business process modeler (BPM) in Lifecycle Services (LCS)
 description: This article provides information about Business process modeler in Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
-manager: AnnBe
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: 
 ms.technology: 
 
 # optional metadata

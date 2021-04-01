@@ -4,11 +4,9 @@
 title: Parse incoming documents to update application data
 description: This topic provides information about how to set up Electronic reporting (ER) formats that can be used to parse incoming documents.
 author: nickselin
-manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

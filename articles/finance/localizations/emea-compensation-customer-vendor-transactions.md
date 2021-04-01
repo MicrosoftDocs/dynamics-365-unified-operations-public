@@ -4,11 +4,9 @@
 title: Set up customer and vendor compensation
 description: This topic provides information about how to run the vendor and customer account compensation process for legal entities that have their primary address in Hungary or Poland.
 author: mrolecki
-manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

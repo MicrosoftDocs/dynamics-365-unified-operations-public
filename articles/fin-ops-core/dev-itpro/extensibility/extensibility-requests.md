@@ -4,11 +4,9 @@
 title: Extensibility requests
 description: This topic explains how to file a request for additional extension points for Finance and Operations. 
 author: FrankDahl
-manager: AnnBe
 ms.date: 06/02/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

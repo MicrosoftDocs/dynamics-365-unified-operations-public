@@ -4,13 +4,11 @@
 title: Plan and prepare for compiling code against the latest update
 description: This topic highlights potential issues that a developer might see when compiling partner code with the latest product updates.
 author: dfroslie
-manager: AnnBe
 
 ms.date: 10/15/2019
 
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

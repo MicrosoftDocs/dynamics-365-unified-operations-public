@@ -4,11 +4,9 @@
 title: Configure module properties to be shown based on context
 description: This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 author: samjarawan
-manager: annbe
 ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -31,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Configure module properties to be shown based on context
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 

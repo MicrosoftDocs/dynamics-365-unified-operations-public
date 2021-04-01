@@ -4,11 +4,9 @@
 title: Vendor workflow
 description: Modify vendor information and use workflow to approve it.
 author: mikefalkner
-manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

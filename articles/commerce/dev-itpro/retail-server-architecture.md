@@ -2,13 +2,11 @@
 # required metadata
 
 title: Commerce Scale Unit architecture
-description: This article describes the architecture of Commerce Scale Unit. Commerce Scale Unit provides stateless services and business logic for Modern Point of Sale (POS) and E-Commerce clients.
+description: Commerce Scale Unit provides stateless services and business logic for Modern Point of Sale (POS) and E-Commerce clients.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -34,9 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 [!include [banner](../includes/banner.md)]
 
 This article describes the architecture of Commerce Scale Unit. Commerce Scale Unit provides stateless services and business logic for  Modern Point of Sale (MPOS) and E-Commerce clients.
-
-Commerce Scale Unit architecture
---------------------------
 
 The commerce runtime is wrapped in a Commerce Scale Unit layer. Commerce Scale Unit uses a web API and OData to support thin clients both in the store and online on tablets and phones. The commerce runtime communicates with Headquarters through Commerce Data Exchange services. The following diagram shows the architecture of Commerce Scale Unit. 
 

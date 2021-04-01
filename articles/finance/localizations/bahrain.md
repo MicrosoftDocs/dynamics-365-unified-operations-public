@@ -4,11 +4,9 @@
 title: Bahrain overview
 description: This topic provides an overview of functionality specific to Bahrain. 
 author: ilkond
-manager: AnnBe
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

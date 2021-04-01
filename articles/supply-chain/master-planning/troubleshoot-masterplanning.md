@@ -4,11 +4,9 @@
 title: Troubleshoot master planning
 description: This topic describes how to fix issues that you might encounter while you work with master planning.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 11/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

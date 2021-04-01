@@ -4,11 +4,9 @@
 title: Personnel actions FAQ
 description: This article contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

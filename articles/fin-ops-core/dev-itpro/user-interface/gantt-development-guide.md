@@ -4,11 +4,9 @@
 title: Gantt control development guide
 description: This topic describes how to create new forms by using the Gantt control.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

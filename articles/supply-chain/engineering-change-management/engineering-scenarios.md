@@ -4,11 +4,9 @@
 title: Engineering change management feature walkthrough
 description: This topic provides an end-to-end walkthrough that shows how to work with engineering change management.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

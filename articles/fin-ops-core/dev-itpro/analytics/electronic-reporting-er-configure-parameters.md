@@ -4,11 +4,9 @@
 title: Configure the Electronic reporting (ER) framework
 description: This topic explains how to configure parameters of the Electronic reporting (ER) framework.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Set up the parameters of an ER format per legal entity
 description: This topic explains how you can set up the parameters of an Electronic reporting (ER) format per legal entity.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/29/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

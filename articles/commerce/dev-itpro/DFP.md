@@ -4,11 +4,9 @@
 title: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 description: This topic describes out-of-box integrations that are available between Microsoft Dynamics 365 Fraud Protection and Dynamics 365 Commerce. 
 author: rubendel
-manager: AnnBe
 ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

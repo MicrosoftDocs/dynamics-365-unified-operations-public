@@ -4,11 +4,9 @@
 title: Upgrade budget planning
 description: This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
 author: panolte
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

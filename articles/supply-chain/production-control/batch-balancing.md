@@ -4,11 +4,9 @@
 title: Batch balancing
 description: This topic describes the batch balancing process.
 author: johanhoffmann
-manager: tfehr
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

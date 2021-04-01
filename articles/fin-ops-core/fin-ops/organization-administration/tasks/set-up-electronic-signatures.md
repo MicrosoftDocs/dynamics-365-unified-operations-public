@@ -4,11 +4,9 @@
 title: Set up electronic signatures
 description: Use this procedure to set up electronic signatures. 
 author: maertenm
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

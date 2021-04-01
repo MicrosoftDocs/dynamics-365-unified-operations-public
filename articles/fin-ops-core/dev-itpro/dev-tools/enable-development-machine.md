@@ -4,11 +4,9 @@
 title: Create new users on development machines
 description: When an environment is first deployed, only one user account is enabled as a developer. This article explains how to enable another user account.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

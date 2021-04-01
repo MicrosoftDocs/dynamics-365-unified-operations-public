@@ -4,11 +4,9 @@
 title: United States
 description: This topic provides links to documentation resources for the United States. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

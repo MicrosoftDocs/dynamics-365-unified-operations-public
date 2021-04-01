@@ -4,11 +4,9 @@
 title: View and evaluate the results of questionnaires
 description: This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

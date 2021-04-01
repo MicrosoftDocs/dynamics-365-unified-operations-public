@@ -4,11 +4,9 @@
 title: Create a query for a workflow type
 description: This topic describes how to create a query for a workflow type.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

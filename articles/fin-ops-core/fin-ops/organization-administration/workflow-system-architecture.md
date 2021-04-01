@@ -4,11 +4,9 @@
 title: Workflow system architecture
 description: This article describes the architecture of the workflow system.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

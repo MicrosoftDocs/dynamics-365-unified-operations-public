@@ -4,11 +4,9 @@
 title: Data action hooks
 description: This topic describes how to hook into pre- and post- data action events to further process data if needed.
 author: samjarawan
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

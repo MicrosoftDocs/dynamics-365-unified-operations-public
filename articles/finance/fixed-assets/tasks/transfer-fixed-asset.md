@@ -4,11 +4,9 @@
 title: Transfer a fixed asset
 description: This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

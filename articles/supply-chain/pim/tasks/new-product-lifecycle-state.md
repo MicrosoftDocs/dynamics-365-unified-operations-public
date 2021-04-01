@@ -4,11 +4,9 @@
 title: Create a new product lifecycle state
 description: This procedure shows how to create a new product lifecycle state. 
 author: cvocph 
-manager: tfehr 
 ms.date: 12/05/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Tax engine import configuration
 description: This topic provides information about import tax engine configuration.
 author: yijialuan
-manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

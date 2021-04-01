@@ -4,11 +4,9 @@
 title: Example query for Candidate to hire
 description: This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

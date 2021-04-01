@@ -4,11 +4,9 @@
 title: Import OIOUBL electronic invoicing configurations
 description: This procedure shows how to import OIOUBL electronic invoice configurations. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

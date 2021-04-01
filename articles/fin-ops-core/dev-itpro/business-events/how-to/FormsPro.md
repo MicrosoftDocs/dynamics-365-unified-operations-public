@@ -4,11 +4,9 @@
 title: Business events and Microsoft Forms Pro
 description: This topic goes through a scenario where a survey is sent to users when a product has been shipped.
 author: murrayfife
-manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

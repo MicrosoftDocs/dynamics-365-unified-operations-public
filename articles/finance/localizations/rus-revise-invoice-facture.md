@@ -3,11 +3,9 @@
 title: Revision factures and corrective factures
 description: This topic provides information about issuing a corrective or revision facture with an original facture.
 author: anasyash
-manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

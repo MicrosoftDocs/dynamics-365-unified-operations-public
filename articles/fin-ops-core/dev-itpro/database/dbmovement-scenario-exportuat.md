@@ -4,11 +4,9 @@
 title: Export a copy of the standard user acceptance testing (UAT) database
 description: This topic explains a database export scenario for Finance and Operations.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -149,6 +147,23 @@ END CATCH
 CLOSE retail_ftx; 
 DEALLOCATE retail_ftx; 
 -- End Refresh Retail FullText Catalogs
+
+--Begin create retail channel database record--
+declare @ExpectedDatabaseName nvarchar(64) = 'Default';
+declare @DefaultDataGroupRecId BIGINT;
+declare @ExpectedDatabaseRecId BIGINT; 
+IF NOT EXISTS (select 1 from RETAILCONNDATABASEPROFILE where NAME = @ExpectedDatabaseName)
+BEGIN 
+	select @DefaultDataGroupRecId = RECID from RETAILCDXDATAGROUP where NAME = 'Default'; 
+	insert into RETAILCONNDATABASEPROFILE (DATAGROUP, NAME, CONNECTIONSTRING, DATASTORETYPE)
+	values (@DefaultDataGroupRecId, @ExpectedDatabaseName, NULL, 0); 
+	select @ExpectedDatabaseRecId = RECID from RETAILCONNDATABASEPROFILE where NAME = @ExpectedDatabaseName; 
+	insert into RETAILCDXDATASTORECHANNEL (CHANNEL, DATABASEPROFILE)
+	select RCT.RECID, @ExpectedDatabaseRecId from RETAILCHANNELTABLE RCT
+	inner join RETAILCHANNELTABLEEXT RCTEX on RCTEX.CHANNEL = RCT.RECID
+        update RETAILCHANNELTABLEEXT set LIVECHANNELDATABASE = @ExpectedDatabaseRecId where LIVECHANNELDATABASE = 0
+END; 
+--End create retail channel database record
 ```
 
 ### Turn on change tracking

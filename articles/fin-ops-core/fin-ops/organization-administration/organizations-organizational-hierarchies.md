@@ -2,13 +2,11 @@
 # required metadata
 
 title: Organizations and organizational hierarchies overview
-description: An organization is a group of people who are working together to carry out a business process or achieve a goal. Organizational hierarchies represent the relationships between the organizations that make up your business.
+description: Organizational hierarchies represent the relationships between the organizations that make up your business.
 author: sericks007
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

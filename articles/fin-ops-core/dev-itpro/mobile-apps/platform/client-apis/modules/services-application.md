@@ -3,11 +3,9 @@
 title: Application module
 description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it.
 author: robinarh
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:

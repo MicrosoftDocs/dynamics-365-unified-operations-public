@@ -4,11 +4,9 @@
 title: Set up Commerce SDK build pipeline
 description: This topic shows how to set up the Azure DevOps build pipeline for the Retail SDK.
 author: mugunthanm 
-manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

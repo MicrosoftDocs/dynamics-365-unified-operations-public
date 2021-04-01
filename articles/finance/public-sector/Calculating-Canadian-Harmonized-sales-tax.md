@@ -4,11 +4,9 @@
 title: Canadian Harmonized sales tax
 description: This topic provides information about the functionality to support Harmonized sales tax for the public sector.
 author: velofog
-manager: Ann Beebe
 ms.date: 04/2/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

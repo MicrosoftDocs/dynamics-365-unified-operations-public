@@ -4,11 +4,9 @@
 title: MY-00003 Manage customer Debit note and Credit note for GST
 description: This procedure walks you through how to print a Malaysian goods and services tax (GST) invoice for a credit note or debit note. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

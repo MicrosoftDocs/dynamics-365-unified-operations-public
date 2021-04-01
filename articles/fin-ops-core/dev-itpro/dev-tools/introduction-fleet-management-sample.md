@@ -4,11 +4,9 @@
 title: Fleet Management sample application
 description: This topic is an overview of the Fleet Management sample application.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
