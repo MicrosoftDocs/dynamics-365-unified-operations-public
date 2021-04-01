@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-03-31
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-For the existing dual-write customers, the [Upgrade to Party-GAB](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/951898316800) ADF template helps to upgrade the Account, Contact and Vendor data from pre-Party data model to Party-GAB model. It includes 38 steps in total to reconcile the data from both Finance and Operations applications and Customer Engagement applications. At the end of the process, Party and Contact for Party records will be created and associated with Account, Contact and Vendor records in and Customer Engagement applications. A csv file (FONewParty.csv) is generated to create new Party records inside Finance and Operations. Right now, you need to manually import this csv file into Finance and Operations. However, we are exploring options to automate it end to end.  
+For the existing dual-write customers, the [Upgrade to Party-GAB](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) ADF template helps to upgrade the Account, Contact and Vendor data from pre-Party data model to Party-GAB model. It includes 38 steps in total to reconcile the data from both Finance and Operations applications and Customer Engagement applications. At the end of the process, Party and Contact for Party records will be created and associated with Account, Contact and Vendor records in and Customer Engagement applications. A csv file (FONewParty.csv) is generated to create new Party records inside Finance and Operations. Right now, you need to manually import this csv file into Finance and Operations. However, we are exploring options to automate it end to end.  
 This pages provides step by step instructions to use the ADF template and upgrade your data.  
 
 "Upgrade to Party-GAB" ADF template is a working template. If you don’t have any customizations, you can consume this template as-is. In case you have customizations around Account, Contact and Vendor then you need to modify the template to cater to your customizations and use it as instructed below. 
@@ -31,7 +31,7 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
 1. [Azure subscription](https://portal.azure.com/) 
 
-2. [Access to Upgrade to Party-GAB template](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/951898316800) 
+2. [Access to Upgrade to Party-GAB template](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) 
 
   
 ## Assumptions and Recommendations  
@@ -51,7 +51,7 @@ This pages provides step by step instructions to use the ADF template and upgrad
   
 ## Deployment Steps
 
-1. Download the ARM template from [here](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/951898316800).   
+1. Download the ARM template from [here](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json).   
 
 2. Sign in to the [Azure portal](https://portal.azure.com/). 
 
