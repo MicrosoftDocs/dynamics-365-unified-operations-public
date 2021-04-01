@@ -4,23 +4,14 @@ description: This topic reviews the process to build projects and full build of 
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
 ms.custom: 76764
 ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431
 ms.search.region: Global
-# ms.search.industry:
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Build operations

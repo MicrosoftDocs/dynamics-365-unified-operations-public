@@ -4,23 +4,14 @@ description: This tutorial will walk you through configuring Azure DevOps to ena
 author: RobinARH
 ms.date: 07/24/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 23401
 ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Version control, metadata search, and navigation

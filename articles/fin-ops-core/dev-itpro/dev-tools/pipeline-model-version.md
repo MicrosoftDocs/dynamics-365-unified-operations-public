@@ -4,23 +4,14 @@ description: The topic explains how you can automatically version X++ models whe
 author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ model-versioning in Azure Pipelines

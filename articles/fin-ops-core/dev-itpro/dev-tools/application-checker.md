@@ -4,17 +4,10 @@ description: This topic describes the application checker tool.
 author: AndreasHassing
 ms.date: 09/22/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form:  
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: anniels
 ms.search.validFrom: 2020-09-22
 ms.dyn365.ops.version: Platform update 25

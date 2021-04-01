@@ -4,23 +4,14 @@ description: This topic reviews the Add-ins infrastructure that has been added t
 author: RobinARH
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 27521
 ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Tools add-ins for Visual Studio

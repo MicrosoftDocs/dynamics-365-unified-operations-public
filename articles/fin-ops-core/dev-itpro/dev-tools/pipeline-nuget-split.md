@@ -4,21 +4,13 @@ description: This topic explains how to update an Azure pipeline to use new NuGe
 author: jorisdg
 ms.date: 03/04/2021
 ms.topic: article
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Update the hosted Azure Pipeline for new NuGet packages

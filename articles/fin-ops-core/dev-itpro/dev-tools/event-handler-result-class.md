@@ -4,23 +4,14 @@ description: This topic describes how to use EventHandlerResult classes with del
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 3b2a9b85-f779-4358-b347-7b11a8e7960c
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # EventHandlerResult classes in request or response scenarios

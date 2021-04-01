@@ -4,23 +4,14 @@ description: This tutorial uses the Fleet Management app to show you how to set 
 author: pvillads
 ms.date: 02/06/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Build and debug projects

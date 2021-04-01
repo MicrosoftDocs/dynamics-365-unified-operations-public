@@ -4,22 +4,13 @@ description: This tutorial illustrates the interoperability between C# and X++. 
 author: pvillads
 ms.date: 02/07/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26821
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Write business logic by using C# and X++ source code

@@ -4,23 +4,14 @@ description: This article describes how to use metadata search to search your co
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
 ms.custom: 83303
 ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7
 ms.search.region: Global
-# ms.search.industry:
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Metadata search in Visual Studio

@@ -4,19 +4,11 @@ description: This article describes the process of disabling customization of a 
 author: pvillads
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 89593
 ms.assetid: f3df4b82-84d9-401e-8d7f-cfd42772621c
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1

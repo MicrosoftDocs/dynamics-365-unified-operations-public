@@ -4,23 +4,14 @@ description: This tutorial walks you through an end-to-end scenario that the Fle
 author: RobinARH
 ms.date: 07/08/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 10254
 ms.assetid: e289504e-a1d9-44b7-8f84-f99f330321d6
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # End-to-end scenario for the Fleet Management sample application

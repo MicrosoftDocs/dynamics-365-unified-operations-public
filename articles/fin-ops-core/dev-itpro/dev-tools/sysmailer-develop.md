@@ -4,22 +4,13 @@ description: This topic describes how you can use the SysMailer framework to sen
 author: ChrisGarty
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 270774
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-
 ---
 
 # Develop email experiences by using the SysMailer framework

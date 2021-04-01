@@ -4,19 +4,11 @@ description: This topic answers to questions that are frequently asked by ISVs a
 author: RobinARH
 ms.date: 01/21/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 202614
 ms.assetid: bc80fee3-8f54-43c4-9162-f058056c956c
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2

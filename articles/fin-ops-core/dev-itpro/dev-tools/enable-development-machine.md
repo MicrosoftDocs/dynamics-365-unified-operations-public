@@ -4,23 +4,14 @@ description: When an environment is first deployed, only one user account is ena
 author: RobinARH
 ms.date: 07/11/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 31621
 ms.assetid: c56d5cdf-3c01-4730-bda5-bb5f8f79e375
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Create new users on development machines
