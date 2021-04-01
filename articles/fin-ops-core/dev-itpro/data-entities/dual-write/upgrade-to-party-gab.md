@@ -140,7 +140,21 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
 6. In CE, disable the following workflows: 
 
- 
+    + Create Vendors in Accounts Table 		 
+
+    + Create Vendors in Accounts Table 		 
+
+    + Create Vendors of type person in Contacts Table 		 
+
+    + Create Vendors of type Person in Vendors Table 		 
+
+    + Update Vendors in Accounts Table 		 
+
+    + Update Vendors in Vendors Table 		 
+
+    + Update Vendors of type Person in Contacts Table 		 
+
+    + Update Vendors of type Person in Vendors Table 
 
 7. Now, go to your Data Factory and run the "Upgrade to Party- GAB" template by clicking on "Trigger now" as shown below. This may take few hours to complete based on the volume. [Note: In case you have customizations around Account, Contact and Vendor, then you need to add those customizations to the given template before running.] 
 
@@ -176,7 +190,25 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor 
 
-10. Run Party related maps as instructed here. 
+10. Now in CE, activate the following workflows if deactivated in above steps: 
+
+    + Create Vendors in Accounts Table 		 
+
+    + Create Vendors in Accounts Table 		 
+
+    + Create Vendors of type person in Contacts Table 		 
+
+    + Create Vendors of type Person in Vendors Table 		 
+
+    + Update Vendors in Accounts Table 		 
+
+    + Update Vendors in Vendors Table 		 
+
+    + Update Vendors of type Person in Contacts Table 		 
+
+    + Update Vendors of type Person in Vendors Table 
+
+11. Run Party related maps as instructed here. 
 
 
 ## Tips for troubleshooting the ADF execution: 
