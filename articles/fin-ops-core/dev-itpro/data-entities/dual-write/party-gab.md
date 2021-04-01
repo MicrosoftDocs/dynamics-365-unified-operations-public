@@ -172,37 +172,48 @@ Contact For Customer/Vendor : msdyn_contactforpartynumber [Contact For Party Num
 Vendor : msdyn_vendoraccountnumber [Vendor Account Number], msdyn_company.cdm_companycode [Company (Company Code)] 
 
 4. In dataverse, we have increased the duplicate detection rules character limits from 450 to 700 characters. This will allow you to add one or more keys to the duplicate detection rules. Please use it to expand the duplicate detection rules for Account and Contact entity with *Party ID* and *Company* as shown below.
-    ![dupe-rule-1](media/dupe-rule-1.png)
-    ![dupe-rule-2](media/dupe-rule-2.png)
+    ![dupe-rule-1](media/dupe-rule-1.PNG)
+    ![dupe-rule-2](media/dupe-rule-2.PNG)
 
 5. If you are an exiting dual-write user, please follow the instructions provided [here](upgrade-to-party-gab.md) and upgrade your data to party-gab model. Note: In case you have customizations around account, contact and vendor, you may need to expand the given ADF template to cater to your customizations.
 
 6. Run the maps in the following order. In case you get "Project validation failed. Missing destination field..." error, open the map, click 'Refresh Tables' and then run the map.
-Finance and Operations app | Customer engagement app  
-----------------------------|-----------------------------
-[CDS Parties](mapping-reference.md#220) | msdyn_parties 
-[CDS postal address locations](mapping-reference.md#234) | msdyn_postaladdresscollections 
-[CDS postal address history V2](mapping-reference.md#235) | msdyn_postaladdresses 
-[CDS Party postal address locations](mapping-reference.md#233) | msdyn_partypostaladdresses 
-[Party contacts V3](mapping-reference.md#236) | msdyn_partyelectronicaddresses 
-[Customers V3](mapping-reference.md#101) | accounts 
-[Customers V3](mapping-reference.md#116) | contacts 
-[Vendors V2](mapping-reference.md#202) | msdyn_vendors 
-[Contact person titles](mapping-reference.md#223) | msdyn_salescontactpersontitles 
-[Complimentary closings](mapping-reference.md#222) | msdyn_complimentaryclosings 
-[Salutations](mapping-reference.md#228) | msdyn_salutations 
-[Decision making roles](mapping-reference.md#224) | msdyn_decisionmakingroles 
-[Employment job functions](mapping-reference.md#225) | msdyn_employmentjobfunctions 
-[Loyalty levels](mapping-reference.md#226) | msdyn_loyaltylevels 
-[Personal character types](mapping-reference.md#227) | msdyn_personalcharactertypes 
-[Contacts V2](mapping-reference.md#221) | msdyn_contactforparties 
-[CDS sales quotation header](mapping-reference.md#215) | quotes 
-[CDS sales order headers](mapping-reference.md#217) | salesorders 
-[Sales invoice headers V2](mapping-reference.md#118) | invoices 
+
+    Finance and Operations app | Customer engagement app  
+    ----------------------------|------------------------
+    [CDS Parties](mapping-reference.md#220) | msdyn_parties 
+    [CDS postal address locations](mapping-reference.md#234) | msdyn_postaladdresscollections 
+    [CDS postal address history V2](mapping-reference.md#235) | msdyn_postaladdresses 
+    [CDS Party postal address locations](mapping-reference.md#233) | msdyn_partypostaladdresses 
+    [Party contacts V3](mapping-reference.md#236) | msdyn_partyelectronicaddresses 
+    [Customers V3](mapping-reference.md#101) | accounts 
+    [Customers V3](mapping-reference.md#116) | contacts 
+    [Vendors V2](mapping-reference.md#202) | msdyn_vendors 
+    [Contact person titles](mapping-reference.md#223) | msdyn_salescontactpersontitles 
+    [Complimentary closings](mapping-reference.md#222) | msdyn_complimentaryclosings 
+    [Salutations](mapping-reference.md#228) | msdyn_salutations 
+    [Decision making roles](mapping-reference.md#224) | msdyn_decisionmakingroles 
+    [Employment job functions](mapping-reference.md#225) | msdyn_employmentjobfunctions 
+    [Loyalty levels](mapping-reference.md#226) | msdyn_loyaltylevels 
+    [Personal character types](mapping-reference.md#227) | msdyn_personalcharactertypes 
+    [Contacts V2](mapping-reference.md#221) | msdyn_contactforparties 
+    [CDS sales quotation header](mapping-reference.md#215) | quotes 
+    [CDS sales order headers](mapping-reference.md#217) | salesorders 
+    [Sales invoice headers V2](mapping-reference.md#118) | invoices 
+
 
 > [!Note] The CDS Contacts V2 (contacts) maps is the old map that you stopped in the step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. You need to make sure you dont run these. 
 
-> [!Note] Note: In the presence of <party-gap> solution, you need to disable the "Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead" plugin. If you decide to un-install <party-gab> solution, then make sure you enable the plugin.
+> [!Note] In the presence of <party-gap> solution, you need to disable the "Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead" plugin. If you decide to un-install <party-gab> solution, then make sure you enable the plugin.
+
+> [!Note]
+> The msdyn_*partynumber field (a single line text field) present in the account, contact and vendor tables should not be used going forward. We have prefixed the label name with "(Deprecated)" for clarity. Instead you will be using the msdyn_partyid field which is a lookup to msdyn_party table. 
+
+>Table Name | Old field | New field
+>--------|-------|--------
+>Account	| msdyn_partynumber	| msdyn_partyid
+>Contact	| msdyn_partynumber	| msdyn_partyid
+>msdyn_vendor	| msdyn_vendorpartynumber	| msdyn_partyid
 
 
 
@@ -234,13 +245,14 @@ Finance and Operations app | Customer engagement app     | Description
 
 For more information, see [Dual-write mapping reference](mapping-reference.md).
 
+
 ## Known Issues/Limitations
 1. In Finance and Operations, when you create a customer along with address and hit save, intermittently it may not reach until address entity. This is due to dual-write platform sequencing issue. To overcome this situation, please make sure you create the customer first and save and then add address to it.
 2. In Finance and Operations, when a customer record has a primary address and say the user is creating a new contact for that customer, then the contact record inherits a primary address from the associated customer record.  This behavior can be seen for vendor contact as well. However, Dataverse doesn’t support this behavior today. We are still debating the need for it in Dataverse.  Note: In the presence of dual-write, the customer contacts inherited with a primary address from F&O gets synchronized to Dataverse along with its address.  
 3. Electronic addresses from the msdyn_partyelectronicaddress entity does not flow to the electronic address fields on Account and Contact entity. This is a known issue and will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will not be overwritten. 
 4. Electronic addresses set on the electronic address tab of the Account/Contact/Vendor forms are coming from msdyn_partyelectronicaddress entity. This information does not flow to its associated transactions like sales order, quotation,  purchase order etc.. This will be fixed in the incremental release. The existing data on the electronic address fields on the account and contact will continue to work on transactions like sales order, quotation, purchase order etc.
 5. In Finance and Operations, you can create a contact record from the “Add Contact” form for a customer. But, when you try to create a new contact from the “View Contact” form, the contact creation will fail. This is a known issue.
-    ![party-gab-image10](media/party-gab-image10.png)
+    ![party-gab-10](media/party-gab-10.PNG)
 6. *Initial sync* functionality does not support the "Available From" and "Available To" *time* fields on "ContactForParty" as DIXF converts it into string rather than an integer, which results in an error "Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32”. 
 7. When a postal address is used for more than one reason like business communication address as well as a billing address, it should be presented as "Business;Invoice" as shown below. In case you add a space in between, you will get an error. This is not a good user experience. Ideally, it should be a multi-select lookup control where the user can select one or more roles and it gets concatenated behind the scenes. 
     ![party-gab-image7](media/Party-gab-image7.png)
