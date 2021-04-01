@@ -4,7 +4,6 @@
 title: Configure wave processing example
 description: This topic provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically.
 author: Mirzaab
-manager: tfehr 
 ms.date: 03/17/2021
 ms.topic: business-process 
 ms.prod:  

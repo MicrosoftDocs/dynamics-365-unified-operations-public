@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Finance 
 description: This topic points to topics that describe the new and changed features in each release of Dynamics 365 Finance
 author: roschlom
-manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 

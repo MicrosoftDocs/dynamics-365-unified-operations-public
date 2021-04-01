@@ -4,7 +4,6 @@
 title: Number of books per journal
 description: This topic describes the relationship between journals and asset books when you create a fixed asset acquisition or depreciation proposal through a batch job. You can define the maximum number of books that are included for each acquisition and for depreciation.
 author: moaamer
-manager: Ann Beebe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 

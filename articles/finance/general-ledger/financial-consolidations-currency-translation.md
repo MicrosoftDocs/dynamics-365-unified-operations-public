@@ -4,7 +4,6 @@
 title: Financial consolidations and currency translation overview
 description: This topic describes financial consolidations and currency translation in General ledger.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

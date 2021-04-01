@@ -4,7 +4,6 @@
 title: Country of origin
 description: Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country of origin. This topic provides information about the country of origin feature, which lets you link a product to its country of origin and keep track of its product certifications.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 

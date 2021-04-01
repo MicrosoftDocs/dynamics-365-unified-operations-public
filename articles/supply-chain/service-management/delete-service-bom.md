@@ -4,7 +4,6 @@
 title: Delete a service BOM 
 description: A service order represents a visit that a service technician makes to a customer site on a specific date.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

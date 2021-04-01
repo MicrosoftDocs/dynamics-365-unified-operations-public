@@ -4,7 +4,6 @@
 title: Derived books
 description: This article provides an overview of derived book functionality.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Update standard costs in a non-manufacturing environment
 description: This article provides guidance for updating standard costs in a non-manufacturing environment.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

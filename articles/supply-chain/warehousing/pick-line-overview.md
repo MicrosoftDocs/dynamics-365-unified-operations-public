@@ -4,7 +4,6 @@
 title: Set up a mobile device menu item to provide a pick line overview
 description: This topic explains how to define when a list of all work lines will be shown to warehouse workers who are processing warehouse work on a mobile device. This capability can be useful for warehouse workers who often require an overview of the pick lines in a work order so that they can optimize their picking sequence.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 

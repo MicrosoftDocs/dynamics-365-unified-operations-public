@@ -4,7 +4,7 @@
 title: Finance and Operations virtual entities FAQ
 description: This topic is a list of frequently asked questions about Finance and Operations virtual entities.
 author: Sunil-Garg
-ms.date: 09/17/2020
+ms.date: 03/31/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -110,9 +110,9 @@ Finance and Operations business logic that resides on forms isn't invoked throug
 
 In theory, no, you don't have to refresh the entity list. At most, you might have to either reset Internet Information Services (IIS) or restart IIS Express, depending on where Application Object Server (AOS) is running. The fact that the list of entities is accurate is cached in SysGlobalObjectCache, which is a per-process cache. Any time that this cache doesn't indicate that the list is accurate, the list is rebuilt. The rebuild process takes about five seconds. Therefore, when you restart your AOS process (w3wp.exe or iisexpress.exe), the list will be accurate the next time that you query it from Dataverse. Additionally, although recompilation *should* flush the SysGlobalObjectCache cache, it might not. In that case, an AOS restart will flush it.
 
-### Do you have guidance on when to use a virtual entity and when to use dual-write?
+### Is there guidance on when to use a virtual entity and when to use dual-write?
 
-Dual-write is only provided for a few key data entities where the data needs to be natively in Dataverse. Those data entities are not available as virtual entities.
+Guidance on when to use a virtual entity and when to use dual-write is covered in [Choose a data integration strategy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview).
 
 ### When adding records using virtual entities is there any way to use number sequences?
 Yes, if the Finance and Operations entity can auto generate number sequences, then it will work the same way from the virtual entity.
@@ -120,7 +120,10 @@ Yes, if the Finance and Operations entity can auto generate number sequences, th
 ### Why does 'search view' not work in Power Apps?
 If there are no fields added in the quick find view for the entity, then the search box does nothing. The workaround is to add one or more fields of the entity to the quick find view.
 
+### The virtual entity performance is slow when a virtual entity has relationships to other entities. Is there guidance on how to avoid these issues?
+There could be several reasons why performance is slow when a virtual entity has relationships to other entities. This section will be updated as new patterns are identified. The following  is  currently known patterns, which can be used as a guidance.
 
+When virtual entities have relationships to other entities, the virtual entity framework needs to query the related entities if the field select list includes the foreign key values for the related entities. By default, queries against the entities return all fields unless the caller requests a specific set of fields. The best practice is to specify a narrow select list. This can help to prevent slow performance.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

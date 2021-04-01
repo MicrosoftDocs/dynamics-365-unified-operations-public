@@ -4,7 +4,6 @@
 title: Troubleshoot product information
 description: This topic describes how to fix issues that you might encounter while you work with product information.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 11/04/2020
 ms.topic: article
 ms.prod: 

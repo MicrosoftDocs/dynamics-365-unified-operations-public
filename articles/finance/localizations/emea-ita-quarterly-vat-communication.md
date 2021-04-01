@@ -4,7 +4,6 @@
 title: Quarterly VAT communication report
 description: This topic provides information about Quarterly VAT communication report in Italy.
 author: LizaGolub
-manager: AnnBe
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: 

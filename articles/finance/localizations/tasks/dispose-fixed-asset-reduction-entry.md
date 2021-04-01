@@ -4,7 +4,6 @@
 title: Dispose of a fixed asset with reduction entry
 description: Use this task to learn how to dispose of a fixed asset with reduction entry for Japan. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

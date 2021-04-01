@@ -4,7 +4,6 @@
 title: Settle a partial vendor payment that has discounts on credit notes
 description: This article walks you through a scenario where a credit memo is settled against an invoice.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
@@ -46,7 +45,7 @@ On June 29, April creates an invoice for 1,000.00 for vendor 3050. On July 2, sh
 
 Discount information for the credit note appears at the bottom of the **Settle open transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/13/2015 |
 | Cash discount amount         | 2.00      |

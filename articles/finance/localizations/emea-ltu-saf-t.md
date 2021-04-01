@@ -13,7 +13,6 @@ ms.technology:
 
 # optional metadata
 
-manager: 
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 

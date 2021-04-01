@@ -4,7 +4,6 @@
 title: Sales tax specification by ledger transaction report
 description: This topic explains how to use the Sales tax specification by ledger transaction report to view and print information about ledger transactions that sales tax is calculated for.
 author: ericwang
-manager: Ann Beebe
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 

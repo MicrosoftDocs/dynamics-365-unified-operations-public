@@ -4,7 +4,6 @@
 title: Configure ledgers
 description: This topic provides information about how to configure ledgers for each legal entity. It includes information about how to select currencies, fiscal calendars, the chart of accounts, and the account structures that should be used with each legal entity.
 author: kweekley
-manager: 
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 

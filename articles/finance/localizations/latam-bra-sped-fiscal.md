@@ -4,7 +4,6 @@
 title: SPED fiscal files
 description: This topic explains how to set up and generate SPED fiscal export files for Brazil. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 

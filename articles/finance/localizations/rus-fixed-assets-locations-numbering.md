@@ -4,7 +4,6 @@
 title: Set up fixed asset locations and numbering (Russia)
 description: This topic explains how to set up locations and numbering for Russian fixed asset.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 

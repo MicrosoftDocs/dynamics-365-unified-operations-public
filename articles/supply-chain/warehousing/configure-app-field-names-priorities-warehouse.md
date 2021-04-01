@@ -4,7 +4,6 @@
 title: Configure fields for the Warehouse Management mobile app
 description: This topic describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app. 
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

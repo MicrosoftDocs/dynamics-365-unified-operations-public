@@ -4,7 +4,6 @@
 title: Containerization
 description: This topic describes how to automate the containerization of loads. Automated containerization creates containers and the picking work for shipments when a wave is processed.
 author: Mirzaab
-manager: tfehr
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Russia overview
 description: This topic provides an overview of functionality that is specific to Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 12/11/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Location stocking limits
 description: This topic describes the functionality for location stocking limits.
 author: perlynne
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 

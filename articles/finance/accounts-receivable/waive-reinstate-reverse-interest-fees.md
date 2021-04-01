@@ -4,7 +4,6 @@
 title: Waive, reinstate, or reverse interest fees
 description: This article explains how to waive, reinstate, and reverse charges for interest and fees.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 

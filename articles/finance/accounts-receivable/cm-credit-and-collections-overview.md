@@ -4,7 +4,6 @@
 title: Credit and collections overview
 description: This topic provides an overview of the functionality for credit and collections.
 author: mikefalkner
-manager: AnnBe
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 

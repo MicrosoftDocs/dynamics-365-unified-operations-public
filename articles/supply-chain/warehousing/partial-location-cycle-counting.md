@@ -4,7 +4,6 @@
 title: Partial location cycle counting 
 description: Cycle count plans guide the actual counting operations. You can request that only specific products and product variants be counted instead of all on-hand inventory in a location.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: 

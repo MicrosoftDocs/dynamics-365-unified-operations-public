@@ -4,7 +4,6 @@
 title: Manage warehouse workers
 description: This article describes how you can use the Warehouse Management mobile app to help control and monitor the work that's carried out by employees in your warehouses.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

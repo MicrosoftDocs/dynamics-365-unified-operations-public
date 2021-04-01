@@ -4,7 +4,6 @@
 title: Submit invoices to the workflow system and match product receipt lines
 description: This topic explains the process of submitting vendor invoices to the workflow system and automatically matching posted product receipt lines to vendor invoices.
 author: abruer
-manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: 

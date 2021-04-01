@@ -4,7 +4,6 @@
 title: Collections process automation
 description: This topic describes the process of setting up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity, or a collection letter to be sent to the customer. 
 author: panolte
-manager: AnnBe
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 

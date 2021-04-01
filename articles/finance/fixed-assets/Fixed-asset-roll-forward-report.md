@@ -4,7 +4,6 @@
 title: Fixed assets roll forward report
 description: This topic explains how to use the Fixed assets roll forward report.
 author: saraschi2
-manager: 
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 

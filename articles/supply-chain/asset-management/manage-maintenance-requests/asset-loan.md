@@ -4,7 +4,6 @@
 title: Asset loans
 description: This topic describes how to register loan assets in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 

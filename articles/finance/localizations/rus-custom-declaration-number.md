@@ -3,7 +3,6 @@
 title: Customs declaration numbers
 description: This topic provides information about how to set up and track customs declaration numbers.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 

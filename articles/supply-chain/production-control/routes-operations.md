@@ -4,7 +4,6 @@
 title: Routes and operations
 description: This topic provides information about routes and operations. 
 author: sorenva
-manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 

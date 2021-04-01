@@ -4,7 +4,6 @@
 title: Accounting distributions and journal entries for vendor invoices
 description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 author: abruer
-manager: AnnBe
 ms.date: 08/20/2017
 ms.topic: article
 ms.prod: 

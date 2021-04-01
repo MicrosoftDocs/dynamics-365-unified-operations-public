@@ -4,7 +4,6 @@
 title: Get started with Planning Optimization
 description: This topic explains how to start to use the Planning Optimization functionality. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Fulfill service agreements overview 
 description: This topic provides an overview of the tasks to fulfill service agreements. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 

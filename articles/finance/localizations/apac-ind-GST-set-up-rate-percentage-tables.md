@@ -4,7 +4,6 @@
 title: Set up rate and percentage tables
 description: This topic explains how to set up rate and percentage tables.
 author: EricWang
-manager: RichardLuan
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 

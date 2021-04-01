@@ -4,7 +4,6 @@
 title: Customer electronic invoices
 description: This topic provides information about the management of customer electronic invoices for Italy.
 author: v-oloski
-manager: tfehr
 ms.date: 02/24/2021
 ms.topic: article
 ms.: 

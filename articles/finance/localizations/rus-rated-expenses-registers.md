@@ -5,7 +5,6 @@ ms.date: 03/31/2021
 ms.topic: article
 author: akroshkina
 ms.author: anasyash
-manager: tfehr
 ---
 
 # Rated expenses registers

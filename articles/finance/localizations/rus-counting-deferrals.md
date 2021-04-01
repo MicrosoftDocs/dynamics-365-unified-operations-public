@@ -3,7 +3,6 @@
 title: Deferrals counting (Russia)
 description: This topic explains how to do deferrals counting.
 author: anasyash
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 

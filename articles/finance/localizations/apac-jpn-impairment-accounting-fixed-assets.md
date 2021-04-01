@@ -4,7 +4,6 @@
 title: Impairment accounting for fixed assets for Japan
 description: This topic includes information about impairment accounting for fixed assets in Japan.
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Hungary overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Hungary. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: 

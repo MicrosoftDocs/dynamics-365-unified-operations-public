@@ -4,7 +4,6 @@
 title: Planning Optimization overview
 description: This topic provides an overview of the Planning Optimization functionality.
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
