@@ -4,11 +4,9 @@
 title: Offline point of sale (POS) functionality
 description: This article provides information about offline mode for Modern POS, in which POS devices automatically switch from the channel database to the offline database if the Commerce Scale Unit is unavailable. This article also includes general setup information for offline mode and explains the data synchronization that occurs between the offline database and the channel database.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 [!include [banner](includes/banner.md)]
 
 This article provides information about offline mode for Modern POS, in which POS devices automatically switch from the channel database to the offline database if the Commerce Scale Unit is unavailable. This article also includes general setup information for offline mode and explains the data synchronization that occurs between the offline database and the channel database.
-
-## Overview
 
 In Modern POS, a point of sale (POS) device goes into offline mode whenever the Commerce Scale Unit is unavailable. Therefore, if the connection is lost, the POS automatically switches to the offline database. 
 

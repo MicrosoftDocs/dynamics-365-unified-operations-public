@@ -4,11 +4,9 @@
 title: Platform updates for version 10.0.14 of Finance and Operations apps (November 2020)
 description: This topic lists the features are included in the platform updates for version 10.0.14 of Finance and Operations apps.
 author: sericks007
-manager: AnnBe
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

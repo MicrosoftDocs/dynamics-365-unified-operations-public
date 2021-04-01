@@ -5,11 +5,9 @@
 title: Call Retail Server APIs
 description: This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Retail Server from a data action or directly from module code.
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

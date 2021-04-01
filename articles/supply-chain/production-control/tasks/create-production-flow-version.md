@@ -4,11 +4,9 @@
 title: Create a production flow version
 description: This procedure focuses on creating a new production flow version. 
 author: cvocph
-manager: tfehr 
 ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

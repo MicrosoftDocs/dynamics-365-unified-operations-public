@@ -4,11 +4,9 @@
 title: Perform invoice updates for returns  
 description: This functionality supports the business processes of organizations that choose to have return orders and sales orders invoiced at the same time and by the same person.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

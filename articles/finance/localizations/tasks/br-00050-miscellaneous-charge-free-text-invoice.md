@@ -4,11 +4,9 @@
 title: Miscellaneous charges on free text invoices (Brazil)
 description: Brazilian legislation taxes  miscellaneous charges such as freight. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/23/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

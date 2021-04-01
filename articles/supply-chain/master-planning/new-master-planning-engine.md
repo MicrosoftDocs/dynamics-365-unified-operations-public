@@ -4,11 +4,9 @@
 title: Migration to Planning Optimization for master planning
 description: This topic provides information about the new master planning engine, Planning Optimization, and about migration from the existing engine. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

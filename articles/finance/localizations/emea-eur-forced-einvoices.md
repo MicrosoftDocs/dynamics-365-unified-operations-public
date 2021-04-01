@@ -4,11 +4,9 @@
 title: Forced electronic invoices generation
 description: This topic explains how to set up and use the functionality for forced generation of electronic invoices.
 author: ilkond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,8 +29,6 @@ ms.dyn365.ops.version: 10.0.17
 # Forced electronic invoices generation
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to configure the forced generation of electronic invoice files immediately after related customer invoices are posted, regardless of the printing options that are selected.
 

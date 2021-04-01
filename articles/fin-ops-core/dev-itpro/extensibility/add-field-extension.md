@@ -4,11 +4,9 @@
 title: Add fields to tables through extension
 description: This topic describes how to use a table extension to add a field to a table.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 

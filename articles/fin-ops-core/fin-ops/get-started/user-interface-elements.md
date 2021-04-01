@@ -4,11 +4,9 @@
 title: User interface elements
 description: This topic describes the user interface (UI) elements in the app.
 author: tlefor
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

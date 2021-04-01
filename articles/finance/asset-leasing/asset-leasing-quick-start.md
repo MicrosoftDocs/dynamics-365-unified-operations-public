@@ -4,11 +4,9 @@
 title: Asset leasing get started
 description: This topic describes the Asset leasing capability and walks through the steps for creating an asset lease and view information for those leases. 
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,16 +44,16 @@ A leased asset contains the following main components:
 
 - **Lease agreement** - The lessor owns the asset and agrees with the lessee to lease an asset for specific period in exchange for periodic lease payments. In addition to the legal contract between the lessor and lessee, the lease agreement captures management decisions such as the likelihood of exercising a renewal option and transfer of ownership.
 
-- **Lease calculation and classification per accounting standard** - The lease calculation and classification identify the accounting standard that will be applied in the initial and subsequent measurement, as well as the classification test that determines what the lease type will be. A lease can be a finance lease, an operating lease, a short-term lease, or a low-value lease. The system also calculates the present value of future minimum lease payments for the purpose of valuation and classification.
+- **Lease calculation and classification per accounting standard** - The lease calculation and classification identify the accounting standard that will be applied in the initial and subsequent measurement, as well as the classification test that determines what the lease type will be. A lease can be a finance lease, an operating lease, a short-term lease, or a low-value lease. The system also calculates the net present value of future minimum lease payments for the purpose of valuation and classification.
 
-- **Lease transactions** - Asset leasing supports the initial recognition of the right-of-use asset for leases on the balance sheet, as well as subsequent measurement for either on-balance sheet leases or off-balance sheet leases. The initial recognition transaction measures the present value of future minimum lease payments. This data is used to determine the value of the initial right-of-use asset and lease liability, which affect the organization's balance sheet. The subsequent measurement of monthly lease transactions involves the accumulation of interest on the lease liability, which increases the lease liability. It also measures the accrual of lease payments that decrease the lease liability, and that will subsequently be paid to the lessor. The measurement also includes the amortization of the right-of-use asset.
+- **Lease transactions** - Asset leasing supports the initial recognition of the right-of-use asset for leases on the balance sheet, as well as subsequent measurement for either on-balance sheet leases or off-balance sheet leases. The initial recognition transaction measures the net present value of future minimum lease payments. This data is used to determine the value of the initial right-of-use asset and lease liability, which affect the organization's balance sheet. The subsequent measurement of monthly lease transactions involves the accumulation of interest on the lease liability, which increases the lease liability. It also measures the accrual of lease payments that decrease the lease liability, and that will subsequently be paid to the lessor. The measurement also includes the amortization of the right-of-use asset.
 
   For off-balance sheet leases, the system calculates the straight-line lease expense over whichever is less: the economic life of the asset, or the lease term. Lease adjustments measure contract modifications such as a lease extension or expansion, and the impairment transaction that uses the right-of-use asset for non-recoverable costs.
 
   Asset leasing integrates with General ledger to ensure that all posted lease transactions update your chart of accounts. Asset leasing integrates with Accounts payable to track lessor invoices in Accounts payable and take future payments from there. The integration with Fixed assets lets you track leases in the fixed assets register and post right-of-use assets transactions, including the initial recognition, depreciation, and impairment of the asset, from within Fixed assets.   
 
 ## Asset leasing components 
-Asset leasing maps lease information, payment schedules, starting and ending dates, and the payment frequency. It also automates calculations for present value, monthly lease payments, interest, and lease amortization. The system performs lease classification tests, depending on the configuration. The system also creates and posts the corresponding lease transactions, which are based on the framework defined by the accounting standard you’re following.
+Asset leasing maps lease information, payment schedules, starting and ending dates, and the payment frequency. It also automates calculations for net present value, monthly lease payments, interest, and lease amortization. The system performs lease classification tests, depending on the configuration. The system also creates and posts the corresponding lease transactions, which are based on the framework defined by the accounting standard you’re following.
 
 The following diagram shows the lease book, the lease, calculated payment schedule, the classification tests for leases and lease books, and the corresponding accounting transactions.
 
@@ -67,13 +65,13 @@ The following diagram shows the lease book, the lease, calculated payment schedu
 
 - **Asset useful life** - This represents the remaining periods of the useful life of an asset, from the lease commencement date. The useful life of an asset will be considered in the classification test equation. It differs from the useful life as defined in Fixed assets.
 
-- **Incremental borrowing rate** - This is the interest rate that will be used to calculate the present value. The system will use the implicit rate if it's defined in the lease data to calculate the present value of the lease payments. If the implicit rate isn't defined, the system will use the incremental borrowing rate.
+- **Incremental borrowing rate** - This is the interest rate that will be used to calculate the net present value. The system will use the implicit rate if it's defined in the lease data to calculate the net present value of the lease payments. If the implicit rate isn't defined, the system will use the incremental borrowing rate.
 
 - **Annuity type** - This is the lease payment due either at the beginning of the payment period or at the end of the period. This could be payment-in-advance or annuity due (at the beginning of the lease payment period), or ordinary annuity (at the end of the lease payment period).
 
   The first month will be considered period number zero for payment in advance; the first month will be considered period one for payment arrears.
 
-- **Compounding interval** - This represents the number periods that interest is compounded per year. This could be monthly (12 period per year), quarterly (4 periods per year), semi-annually (2 periods per year), or annually (1 period per year). The number of periods will be considered in the present value calculation.
+- **Compounding interval** - This represents the number periods that interest is compounded per year. This could be monthly (12 period per year), quarterly (4 periods per year), semi-annually (2 periods per year), or annually (1 period per year). The number of periods will be considered in the net present value calculation.
 
 - **Commencement date** - This is the date that the lessor makes the asset available for use by the lessee. All lease calculations and transactions will be based on the commencement date. The commencement date should be at the beginning of a period (first of the month) to ensure the accuracy of subsequent calculations. You can use the **Contract signature date** field to enter the actual date when the contract was signed.
 
@@ -86,7 +84,7 @@ The following diagram shows the lease book, the lease, calculated payment schedu
 
 - **Payment frequency** - This indicates whether the payment is monthly, quarterly, semiannually, or annually. The end date is calculated automatically based on the start date and the number of periods entered.
 
-- **Payment schedule** - This is the calculated present value, based on the length of time covered by the lease payments, the amount of the payments, the compounding periods, and the annuity type.
+- **Payment schedule** - This is the calculated net present value, based on the length of time covered by the lease payments, the amount of the payments, the compounding periods, and the annuity type.
 
 - **Periods** - These are the lease periods that reflect the compounding internal and annuity type. The compounding interval determines how periods will be divided. You can set the following compounding intervals:
 
@@ -97,10 +95,10 @@ The following diagram shows the lease book, the lease, calculated payment schedu
 
 The first period will start with period zero, if the annuity type is annuity due. Otherwise the first period will start with one, if the annuity type is payment arrears.
 
-- **Months** - This indicates the number of calendar months over the length of the lease. The payment amount is the amount due as defined in the payment frequency. The calculated present value is the present value-based lease payment per period, the compounding intervals, and the incremental borrowing rate.
+- **Months** - This indicates the number of calendar months over the length of the lease. The payment amount is the amount due as defined in the payment frequency. The calculated net present value is the net present value-based lease payment per period, the compounding intervals, and the incremental borrowing rate.
 
 > [!NOTE] 
-> The present value is calculated based on the discounted cash flow equation.
+> The net present value is calculated based on the discounted cash flow equation.
 
 - **Books** - This is the pre-configured setup that will be associated with each lease. The book defines the applied accounting standard, lease types, and threshold that's used as the basis for the classification tests. Classification tests are used to specify the lease type automatically.
 
@@ -112,7 +110,7 @@ The first period will start with period zero, if the annuity type is annuity due
 
   - **Lease term** - This is the percentage of the useful life to be used in the classification test. The system will classify the lease as finance if the lease type is set to automatic, and if the lease term over the asset’s useful life is greater than or equal to the percentage defined here.
 
-  - **Present value** - This is the percentage of the asset’s fair value to be used in the classification test. The system will classify the lease as finance if the lease type is set to automatic and if present value of future lease payments over the asset’s fair value is greater than or equal to the percentage defined here.
+  - **Net present value** - This is the percentage of the asset’s fair value to be used in the classification test. The system will classify the lease as finance if the lease type is set to automatic and if net present value of future lease payments over the asset’s fair value is greater than or equal to the percentage defined here.
 
   - **Short-term lease** - If the lease term is less than or equal to the defined value, the lease will be classified as a short-term lease.
 
@@ -120,7 +118,7 @@ The first period will start with period zero, if the annuity type is annuity due
 
   - **Lease classification and transactions** The lease classification is an automated process to classify the leases based on the defined thresholds in books besides other classification test criteria to identify if the lease is a finance lease, operating lease, short term lease, or low value lease. This is also used to identify if the deferred rent process is followed.
 
-Classification tests include Transfer of ownership, Purchase option, Lease term, Present value, and Unique asset. The following diagram illustrates the lease classification tests.
+Classification tests include Transfer of ownership, Purchase option, Lease term, Net present value, and Unique asset. The following diagram illustrates the lease classification tests.
 
 [![Lease classification tests](./media/overview-03.png)](./media/overview-03.png)
 
@@ -129,22 +127,22 @@ Each lease type handles accounting differently for different lease transactions.
 ## Asset leasing transactions
 
 #### Initial recognition 
-The initial recognition of a leased asset uses the calculated present value so that it can be reported on the balance sheet. The accounting entry for this is generated automatically. This transaction debits the right-of-use asset account and credits the operating lease liability account as follows. If a fixed asset is associated with the lease, the initial recognition entry will be reflected as a fixed asset acquisition. In this scenario, you must define a fixed assets posting profile  to post to the right-of-use asset account. 
+The initial recognition of a leased asset uses the calculated net present value so that it can be reported on the balance sheet. The accounting entry for this is generated automatically. This transaction debits the right-of-use asset account and credits the operating lease liability account as follows. If a fixed asset is associated with the lease, the initial recognition entry will be reflected as a fixed asset acquisition. In this scenario, you must define a fixed assets posting profile  to post to the right-of-use asset account. 
 
 > [!NOTE]
 > Operating leases are supported only by US GAAP ASC 842.
 
 |     Type                                      	|     Debit                   	|     Credit                         	|
 |-----------------------------------------------	|-----------------------------	|------------------------------------	|
-|     Operating   lease under  US GAAP          	|     Right-of-use   asset    	|     Operating   lease liability    	|
-|     Finance lease   under IFRS and US GAAP    	|     Right-of-use   asset    	|     Operating   lease liability    	|
+|     Operating lease under  US GAAP          	|     Right-of-use asset    	|     Operating lease liability    	|
+|     Finance lease under IFRS and US GAAP    	|     Right-of-use asset    	|     Finance lease liability    	|
 
 #### Lease liability amortization (interest expense) 
 The interest for a lease is recognized by calculating interest for the lease’s beginning balance, period lease payment, interest borrowing rate, and compound interval periods per year. The interest amount increases the operating lease liability account by crediting it, which will be reflected on the organization’s balance sheet. The transaction also includes a debit entry to the interest expense account, which is reflected on the profit and loss statement for finance leases, and to the lease expense account for operating leases.
 
 |     Type                                      	|     Debit                   	|     Credit                         	|
 |-----------------------------------------------	|-----------------------------	|------------------------------------	|
-|     Operating lease liability entry under  US GAAP ASC 842  	|     Interest expense    	    |     Operating lease liability       	|
+|     Operating lease liability entry under  US GAAP ASC 842  	|     Lease expense    	    |     Operating lease liability       	|
 |     Finance lease liability entry under IFRS and US GAAP    	|     Interest expense    	    |     Finance lease liability         	|
 
 #### Accrued lease payment
@@ -156,7 +154,7 @@ An accrued lease payment is recognized as a lease future payment that’s due to
 |     Finance lease   under IFRS and US GAAP    	|  Finance lease liability      |   Vendor liability (subledger)/Notes payable 	|
 
 #### Asset depreciation
-The right-of-use asset is depreciated over whichever is less - the asset useful life or the lease term. The method for calculating depreciation for US GAAP (ASC 842) is based on the difference between the straight-line lease expense and the interest amount. Interest on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. For operating leases, the depreciation is crediting the lease expense account. If the lease is linked to a fixed asset, the depreciation transactions will be executed from fixed assets module only. 
+The right-of-use asset is depreciated over whichever is less - the asset useful life or the lease term. The method for calculating depreciation for US GAAP operating lease (ASC 842) is based on the difference between the straight-line lease expense and the interest amount. Depreciation on finance leases is calculated using a standard straight-line method. The lease depreciation affects the profit and loss statement by debiting interest expense. The balance sheet is affected by crediting accumulated right-of-use asset account for finance leases. If the lease is linked to a fixed asset, the depreciation transactions will be executed from fixed assets module only. 
 
 |     Type                                      	|     Debit                   	|     Credit                         	|
 |-----------------------------------------------	|-----------------------------	|------------------------------------	|

@@ -4,11 +4,9 @@
 title: Production feedback
 description: This article provides information about production feedback, which gives workers feedback about production jobs. The article includes information about the various ways that production feedback can be updated.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

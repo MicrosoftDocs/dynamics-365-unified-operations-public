@@ -4,11 +4,9 @@
 title: SUMIF ER function
 description: This topic provides information about how the SUMIF Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

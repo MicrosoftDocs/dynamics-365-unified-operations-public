@@ -4,11 +4,9 @@
 title: Configure approval processes in a workflow
 description: Use the following procedure to configure the properties of the approval process.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 01/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

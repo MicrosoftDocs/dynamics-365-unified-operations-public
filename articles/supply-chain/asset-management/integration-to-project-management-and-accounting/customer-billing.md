@@ -4,16 +4,14 @@
 title: Bill for maintenance on customer-owned assets
 description: This topic explains how to create, process, and bill maintenance work that is done on assets that your customers own.
 author: johanhoffmann
-manager: tfehr
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: EntAssetWorkOrderProjCostInfoPart 
+ms.search.form: ProjProjectContractsListPage, ProjInvoiceTable, ProjProjectsListPage, ProjTable, EntAssetWorkOrderType, EntAssetWorkOrderProjectSetup, EntAssetObjectTable, EntAssetWorkOrderTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

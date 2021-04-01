@@ -4,11 +4,9 @@
 title: Build operational workspaces
 description: This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

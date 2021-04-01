@@ -4,11 +4,9 @@
 title: Issue ICMS tax credit fiscal documents (Brazil)
 description: You can create a new tax fiscal document and generate a Nota Fiscal eletrônica (NF-e). 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

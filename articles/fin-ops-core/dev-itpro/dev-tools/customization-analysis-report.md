@@ -4,11 +4,9 @@
 title: Customization Analysis Report (CAR)
 description: This article describes how to generate a Customization Analysis Report for your model and describes some best practice rules that are included in the report. 
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Select data
 description: This topic describes select statements in the X++ language.
 author: robinarh
-manager: AnnBe
 ms.date: 06/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

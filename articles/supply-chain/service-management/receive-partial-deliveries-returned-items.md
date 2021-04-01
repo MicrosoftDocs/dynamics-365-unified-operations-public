@@ -4,11 +4,9 @@
 title: Receive partial deliveries of returned items   
 description: Partial deliveries are defined in terms of return order lines, not return order shipments.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

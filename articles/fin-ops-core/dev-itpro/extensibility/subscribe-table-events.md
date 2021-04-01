@@ -4,11 +4,9 @@
 title: Perform business actions throughout the lifecycle of table records
 description: This topic provides information about business actions that you can perform throughout the lifecycle of a table record.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 07/11/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 

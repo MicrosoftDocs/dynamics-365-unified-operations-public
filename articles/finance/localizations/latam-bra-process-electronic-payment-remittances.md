@@ -4,11 +4,9 @@
 title: Process electronic payment remittances
 description: You can create the instructions for electronic payment of vendor invoices that must be sent to the bank.
 author: v-gonode
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

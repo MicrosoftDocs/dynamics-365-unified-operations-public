@@ -4,11 +4,9 @@
 title: X++ runtime function resources
 description: This topic describes the X++ run-time functions.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

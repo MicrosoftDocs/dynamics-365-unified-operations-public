@@ -4,11 +4,9 @@
 title: Adjust an ER format to generate a custom electronic document
 description: This topic explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

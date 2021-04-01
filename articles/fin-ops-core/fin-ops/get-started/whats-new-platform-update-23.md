@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (January 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 23 (January 2019). 
 author: tonyafehr
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

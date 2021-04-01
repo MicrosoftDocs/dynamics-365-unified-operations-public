@@ -4,11 +4,9 @@
 title: X++ and debugger features
 description: This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features.
 author: pvillads
-manager: AnnBe
 ms.date: 11/25/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Enable just-in-time database access
 description: This topic provides the steps necessary to enable database access in a just-in-time (JIT) fashion.
 author: laneswenka
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -6,11 +6,9 @@ title: Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Ch
 
 description: This topic provides an overview of product and warehouse management migration options.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

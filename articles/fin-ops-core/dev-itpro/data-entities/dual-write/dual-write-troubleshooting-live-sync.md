@@ -4,11 +4,9 @@
 title: Troubleshoot live synchronization issues
 description: This topic provides troubleshooting information that can help you fix issues with live synchronization.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

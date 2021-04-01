@@ -4,11 +4,9 @@
 title: Specify a custom storage location for generated documents
 description: This topic explains how to extend the list of storage locations for documents that Electronic reporting (ER) formats generate.
 author: NickSelin
-manager: AnnBe
 ms.date: 02/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

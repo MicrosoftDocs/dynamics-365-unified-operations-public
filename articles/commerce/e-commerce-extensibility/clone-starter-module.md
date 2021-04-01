@@ -4,11 +4,9 @@
 title: Clone a module library module
 description: This topic describes how to clone a module library module.
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

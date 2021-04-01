@@ -4,11 +4,9 @@
 title: Modify formats by reapplying Excel templates
 description: To complete the steps in this procedure, you must first complete the procedure, ER - Design a configuration for generating reports in OPENXML format. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Dynamics 365 Commerce authentication flows
 description: This topic provides an overview of the various authentication flows in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: AnnBe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

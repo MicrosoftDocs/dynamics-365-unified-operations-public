@@ -3,11 +3,9 @@
 title: Inquiries and reports with agreements  
 description: This topic provides information about restoring previously deducted VAT amounts for fixed assets.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

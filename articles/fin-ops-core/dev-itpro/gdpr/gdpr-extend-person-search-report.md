@@ -4,11 +4,9 @@
 title: Extend the Person search report
 description: This topic walks you through the process of extending the Person search report for Finance and Operations.
 author: rschloma
-manager: AnnBe
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

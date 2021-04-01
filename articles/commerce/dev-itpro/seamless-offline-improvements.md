@@ -4,11 +4,9 @@
 title: Seamless offline switch for gift card and credit memo operations
 description: This topic provides an overview of improvements that provide a seamless offline switch for specific payment types. 
 author: rubendel
-manager: AnnBe
 ms.date: 02/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

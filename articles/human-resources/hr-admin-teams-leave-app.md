@@ -4,11 +4,9 @@
 title: Human Resources app in Teams
 description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
-manager: tfehr
-ms.date: 02/10/2021
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -34,11 +32,9 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [banner](includes/preview-feature.md)]
+The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams. Employees can interact with a bot to request information. The **Time off** tab provides more detailed information. In addition, they can send people information about upcoming time off in teams and chats outside the Human Resources app.
 
-The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams. Employees can interact with a bot to request information. The **Time off** tab provides more detailed information. Employees can send others information about upcoming time off in Teams and chats outside the Human Resources app.
-
-![Human Resources Teams leaves app bot](./media/hr-admin-teams-leave-app-bot.png)
+![Human Resources Teams leaves app bot](./media/hr-teams-leave-app-bot.png)
 
 ![Human Resources Teams leave app Time off tab](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -49,6 +45,8 @@ The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees
 You can find the Dynamics 365 Human Resources app in the Teams store. For information about installing the Teams app, see [Manage leave requests in Teams](hr-teams-leave-app.md).
 
 For information about managing app permissions in Teams, see [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
+
+If you want your users to view the Leave and absence calendar in the app, you'll need to enable the **Leave and absence calendar in Teams** in Feature management. For more information about enabling features, see [Manage features](hr-admin-manage-features.md).
 
 ## Enable notifications for the Human Resources app in Teams
 
@@ -106,9 +104,11 @@ The Dynamics 365 Human Resources app in Teams supports the following languages:
 | tr-TR | Turkish (Turkey) |
 | zh-CN | Chinese (Simplified) |
 
-## Known issues
+## Notes
 
-| Issue | Status |
+The following work items are slated for future releases:
+
+| Work item | Status |
 | --- | --- |
 | The balance is incorrect when submitting time off for a future date. | Forecasting isn't yet available. The balance displays for the current date. |
 | Unable to cancel an **In review** request. | This functionality isn't currently supported and will be added in a future release. |

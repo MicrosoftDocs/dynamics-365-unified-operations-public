@@ -4,11 +4,9 @@
 title: Item consolidation - location utilization
 description: This topic provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the Item Consolidation page to consolidate items and therefore make better use of warehouse space.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -152,7 +150,7 @@ This section describes how to prepare your system to use item consolidation and 
 
 ## Example scenario
 
-The following scenario uses the warehouse app on a mobile device to make an inventory *adjustment in* to two locations in the warehouse.
+The following scenario uses the Warehouse Management mobile app to make an inventory *adjustment in* to two locations in the warehouse.
 
 ### Add inventory to locations
 

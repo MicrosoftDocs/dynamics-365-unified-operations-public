@@ -4,11 +4,9 @@
 title: Production setup requirements
 description: This article provides information about setup requirements before you can work with Production control. 
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

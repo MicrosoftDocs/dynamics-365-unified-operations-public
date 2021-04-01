@@ -4,11 +4,9 @@
 title: Import format for consolidation
 description: This topic provides detailed information about the import format that is used when you consolidate financial data from multiple legal entities.
 author: jinniew
-manager: AnnBe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Prepare a legal entity for the consolidation process
 description: During a consolidation, you gather transactions from several sets of legal entity accounts into a single set of legal entity accounts. This topic explains how to prepare a legal entity for a consolidation.
 author: jinniew
-manager: AnnBe
 ms.date: 10/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

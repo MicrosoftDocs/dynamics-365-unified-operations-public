@@ -4,11 +4,9 @@
 title: Create a bank facility agreement for a letter of credit
 description: This task walks through the creating a Bank facility agreement to process a Letter of credit. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

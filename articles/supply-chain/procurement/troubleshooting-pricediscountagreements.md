@@ -4,11 +4,9 @@
 title: Troubleshoot prices, discounts, agreements, and rebates
 description: This topic describes how to fix issues that you might encounter while you work with prices, discounts, agreements, and rebates.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

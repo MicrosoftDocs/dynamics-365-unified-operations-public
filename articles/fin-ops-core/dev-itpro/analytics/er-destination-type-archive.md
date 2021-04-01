@@ -4,11 +4,9 @@
 title: Archive ER destination type
 description: This topic provides information about how to configure an archive destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: X++ loop statements
 description: This topic describes loop statements in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

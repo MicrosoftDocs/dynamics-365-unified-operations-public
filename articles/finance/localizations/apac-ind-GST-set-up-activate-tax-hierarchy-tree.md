@@ -4,11 +4,9 @@
 title: Set up a sales tax hierarchy and the setoff rules
 description: This topic explains how to set up a sale tax hierarchy and the setoff rules.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

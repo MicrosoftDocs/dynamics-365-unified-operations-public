@@ -4,11 +4,9 @@
 title: Create an Azure storage account and a key vault
 description: This topic explains how to create an Azure storage account and key vault. 
 author: gionoder
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -49,7 +47,7 @@ In this topic, you will complete two main steps:
 
 ## Set up the Azure storage account to get the storage account URI
 
-1. Open the storage account that you plan to use with the Electronic invoicing add-on.
+1. Open the storage account that you plan to use with Electronic invoicing.
 2. Go to **Blob service** \> **Containers**, and create a new container.
 3. Enter a name for the container, and set the **Public access level** field to **Private (no anonymous access)**.
 4. Open the container, and go to **Settings \> Access policy**.
@@ -68,12 +66,12 @@ In this topic, you will complete two main steps:
 
 ## Set up the key vault to store the storage account URI
 
-1. Open the key vault that you intend to use with the Electronic invoicing add-on.
+1. Open the key vault that you intend to use with Electronic invoicing.
 2. Go to **Settings** \> **Secrets**, and then select **Generate/Import** to create a new secret.
 3. On the **Create a secret** page, in the **Upload options** field, select **Manual**.
 4. Enter the name of the secret. This name will be used during setup of the service in Regulatory Configuration Service (RCS) and will be referred to as the *key vault secret name*.
 5. In the **Value** field, select **Shared Access Signature URI**, and then select **Create**.
-6. Set up the access policy to grant the Electronic invoicing add-on the correct level of secure access to the secret you created. Go to **Settings \> Access policy**, and select **Add Access Policy**.
+6. Set up the access policy to grant Electronic invoicing the correct level of secure access to the secret you created. Go to **Settings \> Access policy**, and select **Add Access Policy**.
 7. Set the secret permissions for the **Get** and **List** operations.
 
     ![Granting service access](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
@@ -82,9 +80,12 @@ In this topic, you will complete two main steps:
 
     ![Granting certificate permission](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
-9. In the **Principal** dialog box, select the principal by adding **Electronic invoicing add-on**.
-10. Select **Add**, and then select **Save Key Vault changes**.
-11. On the **Overview** page, copy the **DNS name** value for the key vault. This value will be used during setup of the service in RCS and will be referred as the *key vault URI*.
+9. In the **Select principal** field, select **None selected**.
+10. In the **Principal** dialog box, select the principal by adding **e-Invoicing Service**.
+11. Select **Add**, and then select **Save Key Vault changes**.
+12. On the **Overview** page, copy the **DNS name** value for the key vault. This value will be used during setup of the service in RCS and will be referred as the *key vault URI*.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

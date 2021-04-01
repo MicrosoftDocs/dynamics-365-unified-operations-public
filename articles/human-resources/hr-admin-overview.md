@@ -4,11 +4,9 @@
 title: Administration overview
 description: This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata

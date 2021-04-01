@@ -4,11 +4,9 @@
 title: Import Electronic reporting (ER) configurations
 description: This topic explains how to import Electronic reporting (ER) configurations from Lifecycle Services (LCS) to a local business data application.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

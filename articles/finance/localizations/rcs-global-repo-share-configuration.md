@@ -4,11 +4,9 @@
 title: Share ER configurations in RCS/the Global repository with external organizations
 description: This topic explains how to share Electronic reporting (ER) configurations in Microsoft Regulatory Configuration Services (RCS)/the Global repository directly with external organizations.
 author: JaneA07
-manager: AnnBe
 ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

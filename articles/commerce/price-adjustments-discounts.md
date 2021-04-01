@@ -4,11 +4,9 @@
 title: Price adjustments and discounts
 description: This article provides information about price adjustments and discounts in Dynamics 365 Commerce.
 author: scott-tucker
-manager: AnnBe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

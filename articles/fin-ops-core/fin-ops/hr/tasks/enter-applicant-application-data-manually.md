@@ -4,11 +4,9 @@
 title: Enter applicant and application data manually
 description: This procedure shows how to manually maintain information about applicants and their application. 
 author: andreabichsel
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

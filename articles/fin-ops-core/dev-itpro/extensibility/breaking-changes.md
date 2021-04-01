@@ -4,11 +4,9 @@
 title: Breaking changes
 description: This topic provides information about breaking changes.
 author: smithanataraj
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 

@@ -4,11 +4,9 @@
 title: One-time customers
 description: This topic provides information about one-time customers.  
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

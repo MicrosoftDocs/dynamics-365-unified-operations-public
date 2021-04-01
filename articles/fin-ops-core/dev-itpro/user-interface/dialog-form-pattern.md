@@ -4,11 +4,9 @@
 title: Dialog form pattern
 description: This topic provides information about the Dialog form pattern. A dialog box represents an action or activity that users can explicitly commit or cancel.
 author: jasongre
-manager: AnnBe
 ms.date: 10/08/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

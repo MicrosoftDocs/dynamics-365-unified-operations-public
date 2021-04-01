@@ -4,11 +4,9 @@
 title: EUR-00012 Receive an EU entry certificate
 description: This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

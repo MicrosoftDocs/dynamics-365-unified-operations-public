@@ -4,11 +4,9 @@
 title: Continuous delivery home page
 description: These topics describe tools and guidelines related to application lifecycle management and continuous delivery of your solution.
 author: RobinARH
-manager: AnnBe
 ms.date: 10/16/2019
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

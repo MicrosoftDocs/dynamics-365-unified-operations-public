@@ -4,11 +4,9 @@
 title: Configure invoice layout for Egypt
 description: This topic explains how to configure the invoice layout for Egypt.
 author: ilkond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,7 +30,6 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to configure printable invoice layouts to ensure compliance with Egyptian legal requirements. Egypt-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see [Business document management overview](../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md). 
 

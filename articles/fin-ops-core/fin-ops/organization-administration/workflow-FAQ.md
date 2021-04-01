@@ -4,11 +4,9 @@
 title: Workflow FAQ
 description: This topic answers frequently asked questions about the workflow system.
 author: ChrisGarty 
-manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

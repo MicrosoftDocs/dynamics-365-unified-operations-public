@@ -4,11 +4,9 @@
 title: Troubleshoot analytic reports
 description: This article explains what to do if a customer's data changes don't appear in any of the customer's workspaces.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

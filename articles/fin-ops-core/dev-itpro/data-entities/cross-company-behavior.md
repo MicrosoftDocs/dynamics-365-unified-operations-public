@@ -4,11 +4,9 @@
 title: Cross-company behavior of data entities
 description: This topic provides information about how data entities interact with the cross-company concept.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

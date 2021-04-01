@@ -4,11 +4,9 @@
 title: Test services by using third-party utilities
 description: This topic describes how to set up third-party utilities to test services.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

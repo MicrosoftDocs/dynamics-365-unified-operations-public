@@ -4,11 +4,9 @@
 title: Define shift and industry types for books (India)
 description: This procedure walks you through defining a shift type and industry for a book and then assigning the book to a fixed asset. 
 author: AdamTrukawka
-manager: AnnBe 
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

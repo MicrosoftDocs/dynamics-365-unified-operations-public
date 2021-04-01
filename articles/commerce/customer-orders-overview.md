@@ -4,11 +4,9 @@
 title: Customer orders in Point of Sale (POS)
 description: This topic provides information about customer orders in Point of Sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -66,7 +64,8 @@ In Commerce version 10.0.12 and later, organizations can define whether the ware
 
 When you work with customer orders in POS, you must consider some of the settings of the store channel. These settings are found on the **Stores** page in Commerce headquarters.
 
-- **Warehouse** – This field indicates the warehouse that is used to fulfill orders that are configured for shipment from the store.
+- **Warehouse** – This field indicates the warehouse that will be used when decrementing inventory for cash and carry and customer pickup orders tied to this store. As a best practice, we encourage the use of unique warehouses for each store channel, to prevent conflicting business logic issues across stores.
+- **Shipping Warehouse** - This field indicates the warehouse that will be used when decrementing inventory for customer orders to be shipped from the selected store. If the feature **Ability to specify locations as “Shipping” or “Pickup” enabled within Fulfillment group** has been enabled in your environment, POS users can choose a specific warehouse to ship from in POS, instead of choosing a store to ship from. Therefore, when that feature is enabled, the shipping warehouse is no longer utilized, since the user will pick the specific warehouse to ship the order from when the order is created.
 - **Fulfillment group assignment** – Select this button (on the **Set up** tab on the Action Pane) to link the fulfillment groups that are referenced to show options for pickup locations or shipment origins when customer orders are created in POS.
 - **Use destination-based tax** – This option indicates whether the shipping address is used to determine the tax group that is applied to order lines that are shipped to the customer's address.
 - **Use customer-based tax** – This option indicates whether the tax group that is defined for the customer's delivery address is used to tax customer orders that are created in POS for shipment to the customer's home.

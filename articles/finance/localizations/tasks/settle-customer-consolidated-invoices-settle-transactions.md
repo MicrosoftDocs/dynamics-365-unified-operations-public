@@ -4,11 +4,9 @@
 title: Settle customer consolidated invoices by using settle transactions
 description: This topic provides information about payments that are made and settled against consolidated invoices. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

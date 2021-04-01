@@ -4,11 +4,9 @@
 title: Process and consume data packages in Dynamics 365 Finance and Operations apps solution
 description: This topic explains how to process and consume data packages in a solution.
 author: kfend
-manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

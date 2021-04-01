@@ -3,12 +3,10 @@
 
 title: Alerts overview
 description: This topic provides general information about alerts. You can use alerts to stay informed about events that you want to track during the workday.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -22,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---

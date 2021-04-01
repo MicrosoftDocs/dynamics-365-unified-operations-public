@@ -4,11 +4,9 @@
 title: Manage business partner users on B2B e-commerce websites
 description: This topic describes how administrators can add, edit, and delete business partner users on business-to-business (B2B) e-commerce websites.
 author: josaw1
-manager: AnnBe
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 # optional metadata
 ms.search.form: RetailOperations

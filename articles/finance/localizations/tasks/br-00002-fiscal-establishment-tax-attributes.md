@@ -4,11 +4,9 @@
 title: Fiscal establishment tax attributes (Brazil)
 description: Use this procedure to create one or more fiscal establishments for a legal entity. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

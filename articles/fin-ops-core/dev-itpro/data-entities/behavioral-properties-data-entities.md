@@ -4,11 +4,9 @@
 title: Behavioral properties on data entities
 description: This topic describes data entity properties that let you override property values on the tables or views that are the data sources of that entity. 
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

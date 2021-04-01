@@ -4,11 +4,9 @@
 title: Schedule a production order with operations and job scheduling
 description: This topic focuses on scheduling a production order with operations scheduling and job scheduling. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/19/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

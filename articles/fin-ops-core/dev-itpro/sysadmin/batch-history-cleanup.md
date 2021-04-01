@@ -4,11 +4,9 @@
 title: Clean up the batch job history 
 description: This topic provides information about how to clean up the batch job history.
 author: Peakerbl
-manager: AnnBe
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

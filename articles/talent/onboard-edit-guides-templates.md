@@ -4,11 +4,9 @@
 title: Edit onboarding guides and templates in Dynamics 365 Talent - Onboard
 description: This topic explains how to add activities and other information to onboarding guides and templates in Microsoft Dynamics 365 Talent - Onboard.
 author: andreabichsel
-manager:
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-talent
 ms.technology:
 
 # optional metadata

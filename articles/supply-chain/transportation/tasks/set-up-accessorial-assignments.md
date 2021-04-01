@@ -4,11 +4,9 @@
 title: Set up accessorial assignments
 description: This procedure shows how to set up an accessorial assignment. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

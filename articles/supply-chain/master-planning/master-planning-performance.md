@@ -3,11 +3,9 @@
 title: Improve master planning performance
 description: This topic explains the various options that can help you improve the performance of master planning or troubleshoot issues.
 author: t-benebo
-manager: tfehr
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

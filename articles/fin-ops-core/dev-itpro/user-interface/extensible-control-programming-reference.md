@@ -4,11 +4,9 @@
 title: Extensible control programming reference
 description: This topic provides reference content for extensible control programming.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -1009,7 +1007,7 @@ If the Observer returns a value, then that value will also be returned by the ca
 
 ##### Usage
 
-Calls the apply method on specified function. Is cannot be used during an interaction.
+Calls the apply method on specified function. It cannot be used during an interaction.
 
 ##### Arguments
 
@@ -1027,7 +1025,7 @@ The arguments to pass to the supplied function.
 
 ###### Callback (function, optional)
 
-The callback function to call when the supplied Function has returned. The callback will be passed any values that are returned by the function that is called. The following example calls the **apply** function on the **printName** function.
+The callback function to call when the supplied function has returned. The callback will be passed any values that are returned by the function that is called. The following example calls the **apply** function on the **printName** function.
 
 ```xpp
 self.Name = "Joanne M Gordon";

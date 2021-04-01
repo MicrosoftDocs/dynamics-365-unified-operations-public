@@ -4,11 +4,9 @@
 title: Unified product experience
 description: This topic describes the integration of product data between Finance and Operations apps and Dataverse.
 author: t-benebo 
-manager: AnnBe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -96,9 +94,13 @@ Because the product is represented as a SKU, the concepts of distinct products, 
 
 With the dual-write functionality enabled, the products from Finance and Operations will be synchronized in other Dynamics 365 products in **Draft** state. They are added to the first price list with the same currency. In other words, they are added to the first price list in a Dynamics 365 app that matches the currency of your legal table where the product is released in a Finance and Operations app. If there is no price list for the given currency, a price list will automatically be created and the product will be assigned to it. 
 
+The current implementation of the dual-write plugins that associate the default price list to the unit look up the currency associated with the Finance and Operations app and find the first price list in the customer engagement app using alphabetical sort on the price list name. To set a default price list for a specific currency when you have multiple price lists for that currency, you must update the price list name to a name that is earlier in alphabetical order than any other price lists for that same currency.
+
 By default products from Finance and Operations apps are synchronized to other Dynamics 365 apps in **Draft** state. To synchronize the product with **Active** state so that you can directly use it in sales order quotations, for example, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**. 
 
 When products are synchronized, you must enter a value for the **Sales unit** field in the Finance and Operations app, because it is a mandatory field in Sales.
+
+The creation of product families from Dynamics 365 Sales is not supported with the dual-write synchronization of products.
 
 The synchronization of products happens from the Finance and Operations app to Dataverse. This means that the values of the product table columns can be changed in Dataverse, but when the synchronization is triggered (when a product column is modified in a Finance and Operations app), this will overwrite the values in Dataverse. 
 

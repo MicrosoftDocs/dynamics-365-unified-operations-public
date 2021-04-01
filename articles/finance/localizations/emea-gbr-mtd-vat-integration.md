@@ -4,11 +4,9 @@
 title: Prepare for integration with MTD for VAT (United Kingdom)
 description: This topic explains the process of setting up Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
 author: liza-golub
-manager: AnnBe
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

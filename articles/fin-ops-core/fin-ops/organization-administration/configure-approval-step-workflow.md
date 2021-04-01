@@ -4,11 +4,9 @@
 title: Configure approval steps in a workflow
 description: This topic explains how to configure the properties of an approval step.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Location directive inventory picking aging
 description: This topic explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
 author: mirzaab
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -123,7 +121,7 @@ The FIFO strategy finds the location that contains the oldest aging date, and it
 1. On the **Sales order** page, on the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**. You receive informational messages. The system creates a shipment, adds it to a new load, and creates the required work.
 1. On the **Sales order lines** FastTab, on the **Warehouse** menu, select **Work details** to open the work that was created for this sales order. Notice that the line where the **Work type** value is *Pick* shows a **Location** value of *FL-002*. This location contains the license plate that has the oldest aging date (FIFO).
 1. Select **Warehouse \> Shipment details**.
-1. On the ***General** FastTab, make a note of the wave ID, so that you can use it in scenario 2.
+1. On the **General** FastTab, make a note of the wave ID, so that you can use it in scenario 2.
 
 ### Scenario 2: Set up and use LIFO location aging
 

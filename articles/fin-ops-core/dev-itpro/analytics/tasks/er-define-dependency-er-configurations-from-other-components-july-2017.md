@@ -4,11 +4,9 @@
 title: Define the dependency of ER configurations on other components
 description: This topic describes how to design an Electronic reporting (ER) configuration and specify its dependency from other software components.
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/23/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

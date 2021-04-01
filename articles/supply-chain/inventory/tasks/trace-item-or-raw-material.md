@@ -4,11 +4,9 @@
 title: Trace an item or raw material
 description: This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used. 
 author: pjacobse
-manager: tfehr 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

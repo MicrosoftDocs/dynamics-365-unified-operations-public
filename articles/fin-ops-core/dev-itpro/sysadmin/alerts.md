@@ -4,11 +4,9 @@
 title: Set up alerts
 description: This topic explains how to set up alerts for batch jobs.
 author: hasaid
-manager: AnnBe
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

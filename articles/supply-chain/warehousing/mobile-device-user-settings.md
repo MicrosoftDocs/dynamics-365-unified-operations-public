@@ -4,11 +4,9 @@
 title: Mobile device user settings
 description: This topic explains how to manage mobile device user settings for warehouse workers.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -30,6 +28,8 @@ ms.dyn365.ops.version: 10.0.17
 ---
 
 # Mobile device user settings
+
+[!include [banner](../../includes/banner.md)]
 
 The new Warehouse Management mobile app has a set of app-specific settings that help tailor the user experience. Because the app can be used on devices of different screen sizes and configurations (such as tablet, phone, or arm-held), it can be useful to centrally manage these settings from Microsoft Dynamics 365 Supply Chain Management.
 

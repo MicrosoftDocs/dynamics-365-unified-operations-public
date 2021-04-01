@@ -4,11 +4,9 @@
 title: ALLITEMS ER function
 description: This topic provides information about how the ALLITEMS Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

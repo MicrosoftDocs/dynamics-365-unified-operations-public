@@ -4,11 +4,9 @@
 title: Resolve issues after entity store maintenance
 description: This topic describes procedures that must be completed after entity store maintenance.
 author: sarvanisathish
-manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Design ER expressions to call application class methods
 description: This topic describes how to reuse the existing application logic in Electronic reporting configurations by calling required methods of application classes. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 12/12/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -3,11 +3,9 @@
 title: Error management and alert notifications
 description: This topic explains error logs and alert notifications that can help you troubleshoot issues.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Correspondence of accounts
 description: This topic provides information about correspondence of accounts in Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -3,11 +3,9 @@
 title: Customize table and column mappings
 description: This topic explains how to customize table and column mappings.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

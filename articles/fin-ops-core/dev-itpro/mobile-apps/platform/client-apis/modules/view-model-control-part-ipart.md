@@ -3,11 +3,9 @@
 title: Part module
 description: A part is a container control that contains only a page, allowing for a page to be embedded within a page.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:

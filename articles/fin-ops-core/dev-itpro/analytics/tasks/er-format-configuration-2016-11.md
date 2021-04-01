@@ -4,11 +4,9 @@
 title: ER Create a format configuration (November 2016)
 description: This topic explains how to create a format configuration for Electronic reporting (ER). 
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

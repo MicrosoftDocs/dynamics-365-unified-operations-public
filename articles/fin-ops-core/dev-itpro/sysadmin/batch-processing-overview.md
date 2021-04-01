@@ -4,11 +4,9 @@
 title: Batch processing overview
 description: This topic provides an overview of batch processing.
 author: Peakerbl
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
