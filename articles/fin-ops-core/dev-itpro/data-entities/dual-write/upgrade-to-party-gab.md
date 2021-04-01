@@ -113,9 +113,9 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
     + Account Update  
 
-          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account 
-
-          + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Update of account 
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account
+         
+         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Update of account 
 
     + Contact Update  
 
@@ -180,32 +180,32 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
 ## Learn more about the "Upgrade to Party-GAB" template  
 
-    + Steps 1 to 6 identifies the companies that are enabled for dual-write and builds a filter clause for them. 
+  + Steps 1 to 6 identifies the companies that are enabled for dual-write and builds a filter clause for them. 
 
-    + Steps  7-1 to 7-9 retrieves the data from both F&O and CE and stage the data for upgrade.   
+  + Steps  7-1 to 7-9 retrieves the data from both F&O and CE and stage the data for upgrade.   
 
-    + Steps 8 to 9 compare the party number for Account, Contact and Vendor between F&O and CE. The records that doesn’t have party number are skipped here. 
+  + Steps 8 to 9 compare the party number for Account, Contact and Vendor between F&O and CE. The records that doesn’t have party number are skipped here. 
 
-    + Step 10 generate 2 csv file for party records to create in CE and F&O 
+  + Step 10 generate 2 csv file for party records to create in CE and F&O 
 
-    + FOCDSParty.csv contains all party records of both systems irrespective of company enabled for dual write 
+  + FOCDSParty.csv contains all party records of both systems irrespective of company enabled for dual write 
 
-    + FONewParty.csv contains subset of the party which Dataverse is aware of e.g. account of type prospect. 
+  + FONewParty.csv contains subset of the party which Dataverse is aware of e.g. account of type prospect. 
 
-    + Step 11 creates the Parties in CE. 
+  + Step 11 creates the Parties in CE. 
 
-    + Step 12 retrieves the Party guids from CE and stage it for associating with Account, Contact and Vendor records in the subsequent steps.  
+  + Step 12 retrieves the Party guids from CE and stage it for associating with Account, Contact and Vendor records in the subsequent steps.  
 
-    + Step 13 associates the Account, Contact and Vendor records with Party guid. 
+  + Step 13 associates the Account, Contact and Vendor records with Party guid. 
 
-    + Steps 14-1 to 14-3 updates the Account, Contact and Vendor records in CE with Party guid.  
+  + Steps 14-1 to 14-3 updates the Account, Contact and Vendor records in CE with Party guid.  
 
-    + Steps 15-1 to 15-3 prepare "Contact for Party" records for Account, Contact and Vendor. 
+  + Steps 15-1 to 15-3 prepare "Contact for Party" records for Account, Contact and Vendor. 
 
-    + Steps 16-1 to 16-7 retrieves the reference data like salutations, personal character types etc. and associate them with "Contact for Party" records. 
+  + Steps 16-1 to 16-7 retrieves the reference data like salutations, personal character types etc. and associate them with "Contact for Party" records. 
 
-    + Step 17 merges the "Contact for Party" records for Account, Contact and Vendor. 
+  + Step 17 merges the "Contact for Party" records for Account, Contact and Vendor. 
 
-    + Step 18 Import "Contact for Party" records into CE. 
+  + Step 18 Import "Contact for Party" records into CE. 
 
  
