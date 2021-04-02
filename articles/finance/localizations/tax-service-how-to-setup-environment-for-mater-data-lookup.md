@@ -34,22 +34,22 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 
-1. Set up power platform integration in LCS (Lifecycle Services). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
-2. Set up Dynamics 365 Finance and Dynamics 365 Dataverse. For more information, see [Getting the solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
+1. Set up power platform integration in Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
+2. Set up Dynamics 365 Finance and Microsoft Dataverse. For more information, see [Getting the solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
 3. Import the *Prerequisite tax service virtual entity solution* from the [Tax service virtual entity](https://go.microsoft.com/fwlink/?linkid=2158160).
 4. Set up the Dynamics 365 Regulatory Configuration Service (RCS). 
-5. Cntact your Microsoft solution architect to enable flighting of the following features:
+5. Contact your Microsoft solution architect to enable flighting of the following features:
 
       - ERCdsFeature
       - TaxServiceCDSFeature
 
-6. In Finance, go to the **Feature management** workspace, and enable the following features.
+6. In Finance, go to the **Feature management** workspace, and enable the following features:
 
       - (Preview) Electronic reporting Dataverse datasources support
       - (Preview) Tax Service Dataverse datasources support
       - (Preview) Globalization features
 
-5. Log in to RCS using a tenant admin account.
+5. Sign in to RCS using a tenant admin account.
 6. Go to **Electronic reporting** > **Connected applications**. 
 7. Select **New** to add a record, and enter the following field information. 
 
@@ -57,7 +57,7 @@ This topic explains how to set up your environment to use the Tax Calculation ma
    - In the **Type** field, select **Dataverse**.
    - In the **Application** field, enter your Dataverse URL.
    - In the **Tenant** field, enter your tenant.
-   - In the **Custom URL** field, enter your Dataverse URL, but append it with "/api/data/v9.1".
+   - In the **Custom URL** field, enter your Dataverse URL and append it with "/api/data/v9.1".
 
 8. Select **Check connection**, and finish the connection process. 
 
@@ -67,8 +67,8 @@ This topic explains how to set up your environment to use the Tax Calculation ma
 
    [![Tax configurations page, Tax data model tree](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
 
-10. Go to the **Taxable document model mapping**, or **Dataverse Model Mapping** if you are using a Microsoft configruation, and in the **Connected application** field, select the record you created in step 7.
-11. Set the **Default for model mapping** slider to **Yes**.
+10. Go to the **Taxable document model mapping**, or **Dataverse Model Mapping** if you are using a Microsoft configuration, and in the **Connected application** field, select the record that you created in step 7.
+11. Set **Default for model mapping** to **Yes**.
 
    [![Model mapping page](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
 
