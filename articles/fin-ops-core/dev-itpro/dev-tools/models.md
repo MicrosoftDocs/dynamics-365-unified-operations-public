@@ -42,7 +42,7 @@ A model is a group of elements, such as metadata and source files, that typicall
 You use the **Create model** wizard to create new models. You can access this wizard from **Model Management** on the **Dynamics 365** menu. You can create two types of models:
 
 -   **A model that is deployed in its own package** – You can use this type of model to create new model elements, and extend the metadata and business logic of referenced models. The wizard lets you select the referenced models. This type of model is compiled into its own assembly and binaries, and will simplify and reduce the cost of upgrades, deployment, and application lifecycle management in general.
--   **A model that is a part of an existing package** – You can use this type of model to perform advanced customizations, such as overlayering source code and metadata.
+-   **A model that is a part of an existing package** – You can use this type of model to temporarily use legacy features such as overlayering source code and metadata. This feature is considered legacy and is supported only to upgrade from legacy versions.
 
 In the **Create model** wizard, select **usr** for the layer. This layer will store user customizations. If needed, you can patch your customizations using the **usp** layer. If there are multiple versions of the same object in different layers, then the top layer will take precedence and will be used.
 
@@ -80,20 +80,21 @@ The following steps assume the local model store folder is C:\AOSService\Package
 
 If your model belongs to its own package. For example an extension package with no other models in the package.
 
-1. Stop the following services: AOS web service and Batch Management service.
-2. Delete the package folder C:\AOSService\PackagesLocalDirectory\MyModel1.
-3. Restart the services that were stopped in step 1.
-4. If Visual Studio is running, refresh your models (**Visual Studio > Dynamics 365 > Model management > Refresh models**)
+1. Close all instances of Visual Studio.
+2. Stop the following services: AOS web service and Batch Management service.
+3. Delete the package folder `C:\AOSService\PackagesLocalDirectory\MyModel1`. On cloud-hosted environments this folder may be located on another drive letter such as `K:`.
+4. Restart the services that you stopped in step 1.
 5. In Visual Studio, perform a full database synchronization (**Visual Studio > Dynamics 365 > Synchronize database**).
 
 If your model belongs to a package with multiple models. For example, the MyModel1 overlays Application Suite.
 
-1. Stop the following services: AOS web service and  Batch Management service.
-2. Delete the model folder C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1. In this example. PackageName=ApplicationSuite.
-3. Restart the services that were stopped in step 1.
-4. In Visual Studio, refresh your models (**Visual Studio > Dynamics 365 > Model management > Refresh models**).
-5. In Visual Studio, build the package that the deleted models belonged to (**Visual Studio > Dynamics 365 > Build models**).
-6. In Visual Studio, perform a full database synchronization (**Visual Studio > Dynamics 365 > Synchronize database**).
+1. Close all instances of Visual Studio.
+2. Stop the following services: AOS web service and Batch Management service.
+3. Delete the model folder `C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1`. In this example, it's `PackageName=ApplicationSuite`. On cloud-hosted environments this folder may be located on another drive letter such as `K:`.
+4. Remove the descriptor file for the model in `C:\AOSService\PackagesLocalDirectory\<PackageName>\Descriptor\MyModel1.xml`. On cloud-hosted environments this folder may be located on another drive letter such as `K:`.
+5. Restart the services that you stopped in step 1.
+6. In Visual Studio, build the package that the deleted models belonged to (**Visual Studio > Dynamics 365 > Build models**).
+7. In Visual Studio, perform a full database synchronization (**Visual Studio > Dynamics 365 > Synchronize database**).
 
 ## Additional resources
 
