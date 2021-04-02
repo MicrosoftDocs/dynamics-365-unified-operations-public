@@ -41,7 +41,8 @@ The **platform.settings.json** file under the **\\src\\settings\\** directory ho
     "dataActionTimeoutInMs": 4000,
     "minClientChunkSize": 30000,
     "excludeModules": [ ],
-    "namespaceExtensions" : [ ]
+    "namespaceExtensions" : [ ],
+    "secretsManagerOUN" : 128
 }
 ```
 
@@ -60,6 +61,10 @@ The **excludedModules** property defines a set of modules that will be excluded 
 ## namespaceExtensions
 
 The **namespaceExtensions** property defines the supported namespaces that are used for module registration. By default, the only supported namespace is **@msdyn365-commerce-modules**. This namespace contains all the module library modules and the core set of modules. The module package name is defined in the following format: **\<namespace\>\/\<module_name\>**. If modules are published that use a new namespace, the namespace can be added to the settings.
+
+## secretsManagerOUN
+
+The **secretsManagerOUN** property defines the OUN (Operating Unit Number) to use when retrieving secret values using the secret manager class. This OUN should represent the OUN (Operating Unit Number) of the store that was used in your Retail Server HQ to configure key vault parameters.  See the [Set up Azure Key Vault](set-up-key-vault.md) topic for more information.
 
 
 ## Additional resources
