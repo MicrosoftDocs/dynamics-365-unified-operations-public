@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 This document describes the Dynamics 365 Human Resources Payroll integration API. The intent of the API is to enable streamlined end-to-end integrations between Dynamics 365 Human Resources and partnering Payroll systems. The integrated experience begins in Human Resources with the employee profile, salary and deduction and contribution information. When an employee is hired and required profile and pay information is entered into Dynamics 365 Human Resources, the payroll system pulls this information to be used when processing payroll. Any updates made to the employee or pay information are also pulled to be used in subsequent pay runs. 
 
-![Payroll integration flow](media/hr-admin-integration-ats-payroll-introduction-flow.png)
+![Payroll integration flow](media/hr-admin-integration-payroll-introduction-flow.png)
 
 
 To enable the integration, Human Resources is adding the following components:
