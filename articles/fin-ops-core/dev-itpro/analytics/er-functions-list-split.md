@@ -91,7 +91,7 @@ Yo can use the [INDEX](er-functions-list-index.md) function to access individual
 
 ## Example 4
 
-The [ENUMERATE](er-functions-list-enumerate.md) function can also help you to access individual elements of the specified input string. If you enter the **MyList** data source of the **Calculated field** type and configure for it the `SPLIT("abc", 1)` expression, then enter the **EnumeratedList** data source of the **Calculated field** type and configure for it the `ENUMERATE(MyList)` expression, the expression `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value` returns the text **"b"**.
+The [ENUMERATE](er-functions-list-enumerate.md) function can also help you access individual elements of the specified input string. If you first enter the **MyList** data source of the **Calculated field** type and configure for it the `SPLIT("abc", 1)` expression, and then enter the **EnumeratedList** data source of the **Calculated field** type and configure for it the `ENUMERATE(MyList)` expression, the expression `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value` returns the text **"b"**.
 
 ## Additional resources
 
