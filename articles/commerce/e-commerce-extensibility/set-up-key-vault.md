@@ -156,7 +156,7 @@ Next, to add an access policy in your Key Vault, follow these steps.
 Next, to add the Key Vault details in Retail Server, follow these steps.
 
 1.	In Commerce headquarters, go to **Key Vault parameters**. 
-1. From the store selector on the top right, select **USRT**.
+1. From the store selector on the top right, select the store in which you wish to configure the secret key and values
 1.	Select **New**, and then enter a name to represent your Key Vault.
 1.	Enter the **Key Vault URL**. This is the **Vault URI** value listed on your Key Vault's **Overview** page. 
 1. Enter the **Key Vault client**. This is the application ID of the registered app. 
@@ -167,7 +167,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
  ![Key Vault Secrets page with secret selected](media/key-vault-04.png)
  
  > [!IMPORTANT]
- > The Key Vault must be configured in the **USRT** store.
+ > Take note of the OUN of the store that was used to configure the secret key and values. You will need to specify this value in the platform settings json document. More information below.
 
 ## Access secret values within your e-Commerce Node application
 
@@ -203,6 +203,9 @@ Note that `secretManager` is a nullable property on msdyn365Commerce because the
 As a developer, you should only use the `SecretManager` class on code that is ensured to run server-side (for example, data actions that will run only on server-side), because you will otherwise be unable to access the secret value. If you include this property in code that will run in both contexts (server-side and client-side), it is important to include a fallback option if the `secretManager` property is undefined.
 
 If the request to fetch the secret value fails, the error property will be set. You can use this to debug any issues you may encounter when trying to fetch secret values.
+
+### Update the platform settings file
+Update the **secretsManagerOUN** property in the platform.settings.json file to specify the OUN (Operating Unit Number) of the store / channel where the key vault paramaters were configured. See [Platform settings file](platform-settings.md) topic for more information.
 
 ## Local development
 
