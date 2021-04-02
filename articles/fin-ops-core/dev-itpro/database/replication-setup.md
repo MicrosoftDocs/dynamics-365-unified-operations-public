@@ -24,10 +24,10 @@ ms.search.validFrom: 2021-04-30
 -	SA Authentication: User should have DB_Owner privilege in Source Database & Target Database. In Source Database, the user should have access to masterDb and sourceDb
 -	Update the target firewall by allow-listing the source IP. This can be done via LCS portal and this allows only for 8Hrs. After allow-listing execute this below sp in the target database to have access more than 8 Hrs.
 
-  To reate database-level firewall setting for IP a.b.c.d:
+   To reate database-level firewall setting for IP a.b.c.d:
   
-  ```sql
-  EXECUTE sp_set_database_firewall_rule N'AX 2012 Upgrade', 'a.b.c.d', 'a.b.c.d'; 
-  ```
+   ```sql
+   EXECUTE sp_set_database_firewall_rule N'AX 2012 Upgrade', 'a.b.c.d', 'a.b.c.d'; 
+   ```
 
 
