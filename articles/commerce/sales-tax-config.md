@@ -38,7 +38,7 @@ You may want your e-commerce channel to support options like delivery or pickup 
 
 ## Destination-based taxes for online orders
 
-In general, taxes for online orders that ship to customer addresses are defined by the destination. Every sales tax group has a retail destination-based tax configuration in which your business can define destination details such as country or region, state, county, and city in a hierarchical form.
+In general, taxes for online orders that ship to customer addresses are defined by the destination. Every sales tax group has a retail destination-based tax configuration in which your business can define destination details, such as country or region, state, county, and city in a hierarchical form.
 
 ### Orders delivered to customer address
 
@@ -52,27 +52,27 @@ For order lines with pick up in store or curbside pickup specified, the tax grou
 
 There may be a business scenario where you want to configure a sales tax group on a specific customer account in Commerce headquarters. There are two places in headquarters where you can configure sales tax on a customer account. To access these, you'll first need to get to a customer detail page by going to **Retail and Commerce \> Customers \> All customers** and then selecting a customer.
 
-The 2 places to configure sales tax for a customer account are:
+The two places where you configure sales tax for a customer account are:
 
 - **Sales tax group** on the **Invoice and delivery** FastTab of the customer details page . 
 - **Sales tax** on the **General** FastTab of the **Manage addresses** page. To get there from the customer details page, select a specific address under the **Addresses** FastTab and then select **Advanced**.
 
 > [!TIP]
-> For online customer orders, if you only want to apply the destination-based taxes and avoid customer account-based taxes, ensure that the **Sales tax group** field is empty on the **Invoice and delivery** FastTab of the customer details page. To ensure that new customers who sign up via the online channel do not inherit the sales tax group settings from default customer or customer group settings, check that the **Sales tax group** field is also empty for the online channel default customer settings and customer group settings (**Retail and Commerce \> Customers \> Customer groups**).
+> For online customer orders, if you only want to apply the destination-based taxes and avoid customer account-based taxes, ensure that the **Sales tax group** field is empty on the **Invoice and delivery** FastTab of the customer details page. To ensure that new customers who sign up using the online channel do not inherit the sales tax group settings from default customer or customer group settings, ensure that the **Sales tax group** field is also empty for the online channel default customer settings and customer group settings (**Retail and Commerce \> Customers \> Customer groups**).
 
 ## Determine destination-based tax or customer account-based tax applicability 
 
-The following table explains whether destination-based taxes or customer account bases taxes are applied for online orders. 
+The following table explains whether destination-based taxes or customer account-based taxes are applied for online orders. 
 
 | Customer type | Shipping address                   | Customer > Invoice and delivery > Sales tax group? | Address on customer account in headquarters? | Customer address > Advanced > General > Sales tax group?                                              | Sales tax group applied      |
 |---------------|------------------------------------|-----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------|
-| Guest         | Manhattan, NY                      | No (blank)                                                | No (blank)                              | No (blank)                                                                                                   | NY (Destination-based taxes) |
-| Signed in     | Austin, TX                          | No (blank)                                             | Yes                               | None<br/><br/>New address added via online channel.                                                            | TX (Destination-based taxes) |
-| Signed in     | San Francisco, CA (Pick up at store) | Yes (NY)                                            | N/A                               | N/A                                                                                                    | CA (Destination-based taxes) |
-| Signed in     | Houston, TX                         | Yes (NY)                                            | Yes                               | Yes (NY)<br/><br/>New address added via online channel and sales tax group inherited from customer account. | NY (Customer account-based taxes)  |
-| Signed in     | Austin, TX                          | Yes (NY)                                            | Yes                               | Yes (NY)<br/><br/>New address added via online channel and sales tax group inherited from customer account. | NY (Customer account-based taxes)  |
-| Signed in     | Sarasota, FL                       | Yes (NY)                                            | Yes                               | Yes (WA)<br/><br/>Manually set to WA.                                                                          | WA (Customer account-based taxes)  |
-| Signed in     | Sarasota, FL                       | No (blank)                                                | Yes                               | Yes (WA)<br/><br/>Manually set to WA.                                                                          | WA (Customer account-based taxes)  |
+| Guest         | Manhattan, NY                      | No (blank)                                                | No (blank)                              | No (blank)                                                                                                   | NY (destination-based taxes) |
+| Signed in     | Austin, TX                          | No (blank)                                             | Yes                               | None<br/><br/>New address added via online channel.                                                            | TX (destination-based taxes) |
+| Signed in     | San Francisco, CA (Pick up at store) | Yes (NY)                                            | Not applicable                              | Not applicable                                                                                                    | CA (destination-based taxes) |
+| Signed in     | Houston, TX                         | Yes (NY)                                            | Yes                               | Yes (NY)<br/><br/>New address added via online channel and sales tax group inherited from customer account. | NY (customer account-based taxes)  |
+| Signed in     | Austin, TX                          | Yes (NY)                                            | Yes                               | Yes (NY)<br/><br/>New address added via online channel and sales tax group inherited from customer account. | NY (customer account-based taxes)  |
+| Signed in     | Sarasota, FL                       | Yes (NY)                                            | Yes                               | Yes (WA)<br/><br/>Manually set to WA.                                                                          | WA (customer account-based taxes)  |
+| Signed in     | Sarasota, FL                       | No (blank)                                                | Yes                               | Yes (WA)<br/><br/>Manually set to WA.                                                                          | WA (customer account-based taxes)  |
 
 ## Additional resources
 
