@@ -287,4 +287,4 @@ For more information, see [Dual-write mapping reference](mapping-reference.md).
 
     ![Known issue with Address](media/party-gab-address-issue.png)
 
-+ You can't enter a forward-dated postal address using a Finance and Operations app with dual-write, because the Dataverse does not support date effectivity. If you enter a future-dated postal address using a Finance and Operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the Finance and Operations app.
++ You can't enter a forward-dated postal address using a Finance and Operations app with dual-write, because Dataverse does not support date effectivity. If you enter a future-dated postal address using a Finance and Operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the Finance and Operations app.
