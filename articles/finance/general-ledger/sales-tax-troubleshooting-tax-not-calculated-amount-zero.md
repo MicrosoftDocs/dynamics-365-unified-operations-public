@@ -58,25 +58,24 @@ Check whether the selected tax codes are exempt and verify if the codes have the
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
 2. Select the appropriate sales tax group and on the **Setup** FastTab,, make sure **Exempt** check box isn't selected. If the check box is selected, unmark it.
 
-     [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated tax-amount-zero-Picture4.png)
+     [![Sales tax groups, Exempt check box](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
 
 3. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
 4. Select the appropriate sales tax code and in the **Value** field, verify that tax rate value is not equal to zero. If the tax rate is zero, update the field with thecorrect tax rate.
 
-     [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
+     [![Value field](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
 
 ## Verify whether zero is correct
 There are some scenarios where zero tax is the correct result. Verify whether that is the case for your transaction.
 
-  1. Go to **General ledger** > **Ledger setup** > **General ledger parameters** > Sales tax* to check whether the tax calculation method is Total.
+  1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
+  2. On the **Sales tax** tab, in the **Calculation method** field, check to see if **Total** is selected.
 
-     [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
+     [![Sales tax tab, Calculation method field](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
 
-  2. Go to *Tax > Indirect taxes > Sales tax > Sales tax codes > The sales tax code > Calculation > Marginal base* to check the marginal base is *Net amount of invoice balance* or *Invoice total incl. other sales tax amounts*. Refer to https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/marginal-base-field#invoice-total-incl-other-sales-tax-amounts 
-
-  3. If one of step 3.a or step 3.b is met, then check whether the transaction's total amount is 0. If yes, the zero tax is the expected result. Because the tax calculation base on the total amount of the invoice balance, not line by line, after the tax calculation, the zero tax will be allocated to each line. So the expected is 0 and 0, not 190 and -190. 
-
-     [![Direct taxes (tab)](./media/tax-not-calculated-tax-amount-zero-Picture7.png)](./media/tax-not-calculated-tax-amount-zero-Picture7.png)
+  3. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**. 
+  4. Select the appropriate sales tax code, and then select **Calculation** > **Marginal base** to verify that the marginal base is set to **Net amount of invoice balance** or **Invoice total incl. other sales tax amounts**. For more information, see the [Invoice total incl. other sales tax amounts](marginal-base-field.md#invoice-total-incl-other-sales-tax-amounts). 
+  5. If the results of step 2 or step 4 are as expected, check whether the transaction's total amount is zero. If the total amount is zero, zero tax is the expected result. Because the tax calculation base on the total amount of the invoice balance, which isn't line-by-line, the zero tax will be allocated to each line after the tax calculation. 
 
 ## Verify customization 
 If you have completed the steps in the previous sections and no issue is found, check whether customization exists. If it doesn't, create a Microsoft service request for further support.
