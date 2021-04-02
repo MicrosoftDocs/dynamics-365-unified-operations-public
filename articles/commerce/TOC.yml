@@ -1056,6 +1056,16 @@
             href: author-header-module.md
           - name: Footer module
             href: author-footer-module.md
+        - name: Page, metadata, and script modules
+          items:
+          - name: Default page module
+            href: default-page-module.md
+          - name: Page summary modules
+            href: page-summary-module.md
+          - name: Metatags module
+            href: metatags-module.md
+          - name: External and inline script modules
+            href: script-module.md
         - name: Product detail page modules
           items:
           - name: Buy box module
