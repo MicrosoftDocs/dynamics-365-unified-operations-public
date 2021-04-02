@@ -95,4 +95,7 @@ EXEC master.dbo.sp_configure 'xp_cmdshell', 1
 RECONFIGURE WITH OVERRIDE
 ```
 
-    
+Below are the publications that will get created on source database when setting up the replication.
+
+![The publications that will get created on source database when setting up the replication](media/Replication.png)
+
