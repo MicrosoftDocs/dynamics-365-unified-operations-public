@@ -99,3 +99,21 @@ Below are the publications that will get created on source database when setting
 
 ![The publications that will get created on source database when setting up the replication](media/Replication.png)
 
+## To know replication status and get exception
+
+Execute the power shell script and wait for it to finish.
+
+**GetStatus.ps1** - If we execute this script, Replication status table will be listed, with this scheam AgentId, PublicationName, Job, LastSynced, JobStatus, ReplicationStatus, Comments.
+
+- AgentId - Will be use to fetch the exception details about the job
+- PublicationName - This is the publication names what we created for replicating the data, you can find the same in the SQLServerExplorer under Replication folder
+- Job - It will have two types of jobs, Snapshot & Data Replication
+- JobStatus - This will display any of these status, Started, Succeeded, In Progress, Idle, Retrying, Failed, for Snapshot jobs after it got succeeded this will not execute, but for the data replication jobs the job status will keep changing based on the new data update in the database.
+- ReplicationStatus - This status applies only to the Data Replication jobs, will display Waiting, In Progress, Completed
+- Comments - This will keep changing when the job is InProgress stat
+ 
+**GetException.ps1** - To get the exception, need to provide AgengId this can be retrieve/get from the status
+
+## To know replication configuration and status via SQL Server Management Studio
+
+
