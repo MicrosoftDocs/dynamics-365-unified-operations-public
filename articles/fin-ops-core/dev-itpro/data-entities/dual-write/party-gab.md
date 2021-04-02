@@ -282,9 +282,9 @@ For more information, see [Dual-write mapping reference](mapping-reference.md).
 
     ![Known issue with Add Contact](media/party-gab-contact-issue.png)
 
-+ **Initial sync** does not support the **Available From** and **Available To** time fields on **ContactForParty**, because when DIXF converts the value into a string rather than an integer. The conversion triggers the error `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
++ **Initial sync** does not support the **Available From** and **Available To** time fields on **ContactForParty**, because DIXF converts the value into a string instead of an integer. The conversion triggers the error `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
 + When a postal address is used for more than one reason, for example, business communication address and billing address, it should appear as `Business;Invoice` as shown in the following image. If you add a space in between the values, you will get an error.
 
     ![Known issue with Address](media/party-gab-address-issue.png)
 
-+ You can't enter a forward-dated postal address using a Finance and Operations app with dual-write, because the dataverse platform does not support date effectivity. If you enter a future-dated postal address using a Finance and Operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the Finance and Operations app.
++ You can't enter a forward-dated postal address using a Finance and Operations app with dual-write, because the Dataverse does not support date effectivity. If you enter a future-dated postal address using a Finance and Operations app, it synchronizes to Dataverse fully and you will see the address on the user interface immediately. Any updates to this record will result in an error as it is future-dated and not current in the Finance and Operations app.
