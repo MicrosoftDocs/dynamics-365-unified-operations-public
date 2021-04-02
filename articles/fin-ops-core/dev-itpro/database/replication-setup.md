@@ -114,25 +114,25 @@ Execute the power shell script and wait for it to finish.
  
 **GetException.ps1** - To get the exception, need to provide AgengId this can be retrieve/get from the status
 
-## To know replication configuration and status via SQL Server Management Studio
+## To know the replication configuration and status via SQL Server Management Studio
 
-- To know replication feature is available/installed in the server, via server explorer should have the replication folder as in the below screen shot
+- To know that the replication feature is available/installed on the server, you should see the Replication folder in Object Explorer, as shown in the image below.
    
-   ![explorer should have the replication folder](media/Replication1.png)
+   ![Replication folder shown](media/Replication1.png)
 
-- After executing the Replication_03_PublisherTables.ps1 script we should be able to see the publisher configured under replication folder.
+- After executing the **Replication_03_PublisherTables.ps1** script, you should be able to see the publisher configured under the Replication folder.
     
-    ![see the publisher configured under replication folder](media/Replication2.png)
+    ![See publishers under the Replication folder](media/Replication2.png)
 
-- To know the replication status right click on the replication folder, and select the Launch Replication Monitor
+- To know the replication status, right-click on the Replication folder and select the Launch Replication Monitor.
    
-   ![The publications that will get created on source database when setting up the replication](media/Replication3.png)
+   ![Select Launch Replication Monitor in the menu.](media/Replication3.png)
 
-- In the monitor screen we can see all the publishers that we have created for replication
+- In the Replication Montior window, you can see all the publishers that have been created for replication.
     
-    ![The publications that will get created on source database when setting up the replication](media/Replication4.png)
+    ![See all the publishers that have been created for replication](media/Replication4.png)
 
-- Selecting the snapshot tab, we can see the status of the snapshot
+- Selecting the Snapshot tab, you can see the status of the snapshot.
   
   ![The publications that will get created on source database when setting up the replication](media/Replication5.png)
 
