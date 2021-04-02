@@ -5,7 +5,7 @@ title: Configure ER formats to use parameters that are specified per legal entit
 description: This topic explains how you can configure Electronic reporting (ER) formats to use parameters that are specified per legal entity.
 author: NickSelin
 manager: AnnBe
-ms.date: 03/29/2021
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 8.1.3
 
 ## Overview
 
-In many of the Electronic reporting (ER) formats that you will design, you must filter data by using a set of values that are specific to each legal entity of your instance (for example, a set of tax codes to filter tax transactions). Currently, when filtering of this type is configured in an ER format, values that are dependent on the legal entity (for example, tax codes) are used in expressions of the ER format to specify data filtering rules. Therefore, the ER format is made legal entity–specific, and to generate the required reports, you must create derived copies of the original ER format for each legal entity where you have to run the ER format. Each derived ER format must be edited to bring legal entity–specific values into it, rebased whenever the original (base) version has been updated, exported from a test environment and imported into a production environment when it must be deployed for production use, and so on. Therefore, maintenance of this type of configured ER solution is quite complex and time-consuming for several reasons:
+In many of the Electronic reporting (ER) formats that you will design, you must filter data by using a set of values that are specific to each legal entity of your instance (for example, a set of tax codes to filter tax transactions). Currently, when filtering of this type is configured in an ER format, values that are dependent on the legal entity (for example, tax codes) are used in expressions of the ER format to specify data filtering rules. Therefore, the ER format is made legal entity–specific, and to generate the required reports, you must create derived copies of the original ER format for each legal entity where you have to run the ER format. Each derived ER format must be edited to bring legal entity–specific values into it, rebased whenever the original (base) version has been updated, exported from a test environment, and imported into a production environment when it must be deployed for production use, and so on. Therefore, maintenance of this type of configured ER solution is complex and time-consuming for several reasons:
 
 -	The more legal entities there are, the more ER format configurations must be maintained.
 -	Maintenance of ER configurations requires that business users have ER knowledge.
@@ -92,7 +92,7 @@ In this example, you will create a configuration for the Litware, Inc sample com
 
     ![The Model.Data.Summary data source list of tax transactions](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
-    The **Model.Data.Summary.Level** calculated field has been configured so that it contains an ER expression. Note that tax codes (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD**, and **InVAT0**) are hardcoded into this configuration. Therefore, this ER format is dependent on the legal entity where these tax codes were configured.
+    The **Model.Data.Summary.Level** calculated field has been configured so that it contains an ER expression. Tax codes (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD**, and **InVAT0**) are hardcoded into this configuration. Therefore, this ER format is dependent on the legal entity where these tax codes were configured.
 
     ![The Model.Data.Summary.Level calculated field with hardcoded tax codes](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
@@ -141,7 +141,7 @@ Next, you will add a new ER format enumeration. The values of this format enumer
 14.	Select the **No taxation** record.
 15.	Click in the **Label** field.
 16.	Select **Translate**.
-17.	In the **Text translation** pane, in the **Label Id** field, enter **LBL_LEVELENUM_NO**.
+17.	In the **Text translation** pane, in the **Label ID** field, enter **LBL_LEVELENUM_NO**.
 18.	In the **Text in default language** field, enter **No taxation**.
 19.	In the **Language** field, select **DE**.
 20.	In the **Translated text** field, enter **keine Besteuerung**.
@@ -159,12 +159,12 @@ Next, you will add a new data source to specify how business users will specify 
 1.	On the **Mapping** tab, select **Add**.
 2.	Select **Format enumeration\Lookup**.
 
-    You just identified that each rule that business users specify for taxation level recognition will return a value of an ER format enumeration. Notice that the **Lookup** data source type can be accessed under the **Data model** and **Dynamics 365 for Operations** blocks in addition to the **Format enumeration** block. Therefore, ER data model enumerations and application enumerations can be used to specify the type of values that is are returned for data sources of that type. To learn more about the **Lookup** data sources, see [Configure Lookup data sources to use the ER application-specific parameters feature](er-lookup-data-sources.md).
+    You just identified that each rule that business users specify for taxation level recognition will return a value of an ER format enumeration. Notice that the **Lookup** data source type can be accessed under the **Data model** and **Dynamics 365 for Operations** blocks in addition to the **Format enumeration** block. Therefore, ER data model enumerations and application enumerations can be used to specify the type of values that are returned for data sources of that type. To learn more about the **Lookup** data sources, see [Configure Lookup data sources to use the ER application-specific parameters feature](er-lookup-data-sources.md).
     
 3.	In the **Name** field, enter **Selector**.
 4.	In the **Format enumeration** field, select **List of taxation levels**.
 
-    You just specified that, for each rule that is specified in this data source, a business user must select one of the values of the **List of taxation levels** format enumeration as a returned value.
+    You specified that, for each rule that is specified in this data source, a business user must select one of the values of the **List of taxation levels** format enumeration as a returned value.
     
 5.	Select **Edit lookup**.
 6.	Select **Columns**.
@@ -196,7 +196,7 @@ Next, you will add a new data source to specify how business users will specify 
     
     ![Format designer page with new data source](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
-    Note that the evaluation of configured rules depends on the data type of the fields that have been selected to define conditions of those rules. When you select a field that is configured as a field of either the **Numeric** or **Date** data type, the criteria will differ from the criteria that were described earlier for the **String** data type. For **Numeric** and **Date** fields, the rule must be specified as a range of values. The condition of the rule will then be considered satisfied when a value that is passed to the data source is in the configured range.
+    The evaluation of configured rules depends on the data type of the fields that have been selected to define conditions of those rules. When you select a field that is configured as a field of either the **Numeric** or **Date** data type, the criteria will differ from the criteria that were described earlier for the **String** data type. For **Numeric** and **Date** fields, the rule must be specified as a range of values. The condition of the rule will then be considered satisfied when a value that is passed to the data source is in the configured range.
     
     The following illustration shows an example of this type of setup. In addition to the **Model.Data.Tax.Code** field of the **String** data type, the **Model.Tax.Summary.Base** field of the **Real** data type is used to specify conditions for a lookup data source.
     
@@ -222,7 +222,7 @@ Because business users might use different languages to specify legal entity–d
 2.	Select **Edit**.
 3.	Click in the **Label** field.
 4.	Select **Translate**.
-5.	In the **Text translation** pane, in the **Label Id** field, enter **LBL_SELECTOR_DS**.
+5.	In the **Text translation** pane, in the **Label ID** field, enter **LBL_SELECTOR_DS**.
 6.	In the **Text in default language** field, enter **Select tax level by tax code**.
 7.	In the **Language** field, select **DE**.
 8.	In the **Translated text** field, enter **Steuerebene für Steuerkennzeichen auswählen**.
@@ -277,7 +277,7 @@ Next, you will modify the existing calculated field so that it uses the configur
 
     ![ER Operation designer page](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
     
-    Notice that the expression of the **Model.Data.Summary.Level** field will now return the taxation level, based on the tax code of the current record and the set of rules that that a business user configures in the **Model.Data.Selector** lookup data source.
+    Notice that the expression of the **Model.Data.Summary.Level** field will now return the taxation level, based on the tax code of the current record and the set of rules that a business user configures in the **Model.Data.Selector** lookup data source.
     
 5.	Select **Save**.
 6.	Close **Formula designer** page.
@@ -293,20 +293,20 @@ Next, you will modify the existing calculated field so that it uses the configur
 
 ## Export completed version of modified format
 
-1.	In the configuration tree, select the **Format to learn how to lookup LE data** item.
+1.	In the configuration tree, select the **Format to learn how to look up LE data** item.
 2.	On the **Versions** FastTab, select the record that has a status of **Completed**.
 3.	Select **Exchange**.
 4.	Select **Export as XML file**.
 5.	Select **OK**.
-6.	The web browser downloads a **Format to learn how to lookup LE data.xml** file. Store this file locally.
+6.	The web browser downloads a **Format to learn how to look up LE data.xml** file. Store this file locally.
 
-Repeat steps in this section for parent items of the **Format to learn how to lookup LE data** format, and store the following files locally:
+Repeat steps in this section for parent items of the **Format to learn how to look up LE data** format, and store the following files locally:
 
 -	Format to learn parameterized calls.xml
 -	Mapping to learn parameterized calls.xml
 -	Model to learn parameterized calls.xml
 
-To learn how to use the configured **Format to learn how to lookup LE data** ER format to set up legal entity–dependent sets of tax codes to filter tax transactions by different taxation levels, complete the steps in the [Set up the parameters of an ER format per legal entity](er-app-specific-parameters-set-up.md) topic.
+To learn how to use the configured **Format to learn how to look up LE data** ER format to set up legal entity–dependent sets of tax codes to filter tax transactions by different taxation levels, complete the steps in the [Set up the parameters of an ER format per legal entity](er-app-specific-parameters-set-up.md) topic.
 
 ## Additional resources
 
