@@ -88,6 +88,27 @@ Option sets:
 
 - [TBD](hr-admin-integration-payroll- TBD.md)
 
+## Generating Payroll entities
+Use this Odata function to generate the entities needed for the payroll integration.  If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh metadata of each entity.  The response contains an operation ID that can be monitored to know when the generation process is completed.
+
+**Request**
+```http
+GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
+```
+**Body**
+```json
+{
+    "PhysicalNames" : ["PayrollEmployeeEntity", "HcmWorkerBaseEntity", "PayrollPositionEntity", "PayrollPositionJobEntity", "PayrollWorkerAddressEntity", "HcmJobDetailEntity", "HcmCompFixedPlanTableEntity", "PayrollFixedCompensationPlanEntity", "HcmEmploymentDetailEntity"]
+}
+```
+
+**Response**
+
+```json
+{
+    "AsyncOperationId": "8b98d338-f939-4c86-9a91-80b76b6ab2ea"
+}
+```
 
 ## See also
 
