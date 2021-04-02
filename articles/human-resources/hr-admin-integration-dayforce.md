@@ -71,6 +71,7 @@ Turning on the payroll integration has two primary effects:
 
 > [!NOTE]
 > The data package transferred to the SFTP endpoint is encrypted using a key that is unique to the package. The key is in an Azure Key Vault that is accessible only by Ceridian. It is not possible to decrypt and examine the data package contents. If you need to examine the contents of the data package, you need to export the "Payroll integration export" data project manually, download it, and then open it. Manual export will not apply encryption or transfer the package.
+> For those instances where the integration files are being sent from a Dynamics 365 Human Resources UAT or Sandbox environment to a Ceridian Dayforce Test environment, the following key vault URL can be used:  https://payrollintegrationprod.vault.azure.net
 
 ## Configure your data 
 
