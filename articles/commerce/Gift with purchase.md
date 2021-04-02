@@ -4,7 +4,7 @@
 title: Gift with purchase
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
 author: rubendel
-ms.date: 11/18/2020
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
