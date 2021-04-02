@@ -4,7 +4,6 @@
 title: Japan overview
 description: This topic provides an overview of functionality specific to Japan.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

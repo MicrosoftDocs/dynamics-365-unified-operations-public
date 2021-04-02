@@ -4,7 +4,6 @@
 title: Deploy AX 2012 R3 or AX 2012 R3 CU8 demo environments on Azure
 description: This topic provides information about how to deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Microsoft Azure.
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

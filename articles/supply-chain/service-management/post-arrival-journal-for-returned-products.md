@@ -4,7 +4,6 @@
 title: Post arrival journal for returned products 
 description: Post arrival journal for returned products.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

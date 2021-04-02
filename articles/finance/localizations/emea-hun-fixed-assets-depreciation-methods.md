@@ -4,7 +4,6 @@
 title: Fixed assets depreciation methods for Hungary
 description: This topic provides information about fixed asset depreciation for legal entities in Hungary.
 author: Anasyash
-manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Manage subcontracting work in production
 description: This topic explains how subcontracted operations are managed in Dynamics 365 Supply Chain Management. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 author: cvocph
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 

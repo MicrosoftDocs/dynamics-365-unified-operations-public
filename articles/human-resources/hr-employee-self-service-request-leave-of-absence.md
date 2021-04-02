@@ -4,7 +4,6 @@
 title: Request a leave of absence
 description: Submit a leave of absence request. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 

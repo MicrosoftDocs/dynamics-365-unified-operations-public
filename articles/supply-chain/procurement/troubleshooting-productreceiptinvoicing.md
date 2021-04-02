@@ -4,7 +4,6 @@
 title: Troubleshoot product receipts and invoicing
 description: This topic describes how to fix issues that you might encounter while you work with product receipts and invoicing.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 

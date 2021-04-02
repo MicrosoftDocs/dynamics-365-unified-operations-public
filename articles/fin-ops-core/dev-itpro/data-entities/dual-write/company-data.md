@@ -4,7 +4,6 @@
 title: Company concept in Dataverse
 description: This topic describes the integration of company data between Finance and Operations and Dataverse.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 08/04/2020
 ms.topic: article
 ms.prod: 

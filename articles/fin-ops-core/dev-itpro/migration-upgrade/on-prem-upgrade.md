@@ -4,7 +4,6 @@
 title: In-place upgrade process for on-premises environments
 description: This topic provides the detailed process for upgrading on-premises environments from versions 7.x to 10.0.x.  
 author: laneswenka
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: 

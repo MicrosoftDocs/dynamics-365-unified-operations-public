@@ -4,7 +4,6 @@
 title: Develop a succession plan
 description: As your organization grows, you must begin succession planning.
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

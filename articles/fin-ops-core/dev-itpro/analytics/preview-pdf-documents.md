@@ -3,8 +3,7 @@
 
 title: Preview PDF documents using a PDF viewer 
 description: This topic explains how to use the embedded PDF Preview option to view business documents.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2019-05-21 
 ms.dyn365.ops.version: Platform update 28
 ---

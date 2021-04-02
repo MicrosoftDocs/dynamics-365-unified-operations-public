@@ -4,7 +4,6 @@
 title: New GSTR-1 and GSTR-2 return formats
 description: This topic provides information about how to generate GSTR-1 and GSTR-2 reports in Microsoft Dynamics 365 according to the new format that was released by Goods and Services Tax (GST) Suvidha Providers, or GSPs.
 author: prabhatb
-manager: tfehr
 ms.date: 03/16/2021
 ms.topic: article
 ms.prod: 

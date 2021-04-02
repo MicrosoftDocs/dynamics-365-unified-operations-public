@@ -4,7 +4,6 @@
 title: Procurement and sourcing home page
 description: This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
 author: kamaybac
-manager: tfehr
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 

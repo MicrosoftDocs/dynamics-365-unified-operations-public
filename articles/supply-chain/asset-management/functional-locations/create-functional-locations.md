@@ -4,7 +4,6 @@
 title: Create functional locations
 description: This topic explains how to create a functional location in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: 

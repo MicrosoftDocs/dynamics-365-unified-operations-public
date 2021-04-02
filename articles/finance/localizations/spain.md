@@ -4,7 +4,6 @@
 title: Spain overview
 description: This topic provides links to documentation resources for Spain. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 

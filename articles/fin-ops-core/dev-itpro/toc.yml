@@ -226,6 +226,8 @@
                   href: data-entities/dual-write/integrated-hr.md
                 - name: Party and global address book
                   href: data-entities/dual-write/party-gab.md
+                - name: Using Power Portal with the Party data model
+                  href: data-entities/dual-write/party-gab-portal.md
                 - name: Note integration
                   href: data-entities/dual-write/notes-integration.md
                 - name: Mapping reference

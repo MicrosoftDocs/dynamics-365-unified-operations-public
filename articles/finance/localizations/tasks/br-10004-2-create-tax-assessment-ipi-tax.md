@@ -4,7 +4,6 @@
 title: Create a tax assessment - IPI tax (Brazil)
 description: You can create a tax assessment for the IPI tax for a given booking period. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  

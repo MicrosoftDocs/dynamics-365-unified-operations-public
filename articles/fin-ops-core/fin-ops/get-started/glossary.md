@@ -4,7 +4,6 @@
 title: Glossary
 description: This glossary defines key terms and concepts in Finance and Operations apps.
 author: tonyafehr
-manager: AnnBe
 ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 

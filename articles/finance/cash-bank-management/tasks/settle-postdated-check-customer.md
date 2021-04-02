@@ -4,7 +4,6 @@
 title: Settle a postdated check from a customer
 description: You can settle a postdated check after the check has been cleared by the bank. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

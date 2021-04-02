@@ -4,7 +4,6 @@
 title: Bonus depreciation
 description: This article provides an overview of the bonus depreciation functionality.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

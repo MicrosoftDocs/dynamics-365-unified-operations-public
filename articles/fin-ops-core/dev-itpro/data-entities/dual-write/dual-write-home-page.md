@@ -4,7 +4,6 @@
 title: Dual-write home page
 description: This topic provides links to information about dual-write.
 author: robinarh
-manager: AnnBe
 ms.date: 02/08/2020
 ms.topic: article
 ms.prod: 
@@ -101,6 +100,7 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [Onhand inventory availability](inventory-availability.md)
 + [Integrated worker, job, and position](integrated-hr.md)
 + [Party and global address book](party-gab.md)
++ [Using Power Portal with the Party data model](party-gab-portal.md)
 + [Note integration](notes-integration.md)
 + [Mapping reference](mapping-reference.md)
 

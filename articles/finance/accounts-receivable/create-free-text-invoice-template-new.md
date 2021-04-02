@@ -4,7 +4,6 @@
 title: Create a free text invoice template
 description: This procedure demonstrates how to create a free text invoice template. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 05/29/2018
 ms.topic: article 
 ms.prod:  

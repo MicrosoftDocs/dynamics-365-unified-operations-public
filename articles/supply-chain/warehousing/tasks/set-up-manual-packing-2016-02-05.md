@@ -4,7 +4,6 @@
 title: Set up manual packing (February 2016 & May 2016)
 description: The packing process allows you to validate and pack products into containers. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

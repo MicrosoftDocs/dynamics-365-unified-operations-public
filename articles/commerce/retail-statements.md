@@ -4,7 +4,6 @@
 title: Retail statements
 description: This topic describes how statements are created and posted.
 author: ashishmsft
-manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 

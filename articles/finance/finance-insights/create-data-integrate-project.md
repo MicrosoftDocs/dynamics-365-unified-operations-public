@@ -4,7 +4,6 @@
 title: Create a data integrator project (preview)
 description: This topic explains how to create a data integrator project.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 

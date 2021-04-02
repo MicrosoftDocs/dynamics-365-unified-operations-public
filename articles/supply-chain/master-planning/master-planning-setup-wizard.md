@@ -4,7 +4,6 @@
 title: Master planning setup wizard 
 description: This topic describes various important strategies and parameters that are used to set up master planning.
 author: t-benebo
-manager: tfehr
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: 

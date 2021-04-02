@@ -4,7 +4,6 @@
 title: Set up dimension control for settlements (Russia)
 description: This topic explains how to set up dimension control for settlements in Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 

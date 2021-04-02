@@ -4,7 +4,6 @@
 title: Create subscription fee transactions
 description: This topic describes how to create subscription fee transactions.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

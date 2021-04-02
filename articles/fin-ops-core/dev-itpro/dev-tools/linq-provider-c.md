@@ -4,7 +4,6 @@
 title: Language Integrated Query (LINQ) provider for C#
 description: This topic discusses the LINQ provider.
 author: pvillads
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod:

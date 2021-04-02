@@ -4,7 +4,6 @@
 title: Filters and Toolbar subpatterns
 description: This topic provides information about the Filters and Toolbar subpatterns, which show filters and actions inside panorama sections that host lists and charts.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

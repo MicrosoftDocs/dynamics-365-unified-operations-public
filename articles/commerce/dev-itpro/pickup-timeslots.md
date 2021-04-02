@@ -4,7 +4,6 @@
 title: Create and update time slots for customer pickup
 description: This topic describes how to create, configure, and update customer pickup time slots in Commerce headquarters.
 author: anupamar-ms
-manager: AnnBe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod: 

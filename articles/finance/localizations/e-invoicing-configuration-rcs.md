@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: Configure the Electronic invoicing add-in in Regulatory Configuration Services (RCS)
-description: This topic explains how to configure the Electronic invoicing add-in in Dynamics 365 Regulatory Configuration Services (RCS). 
+title: Configure Electronic invoicing in Regulatory Configuration Services (RCS)
+description: This topic explains how to configure Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS). 
 author: gionoder
-manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,25 +27,25 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Configure the Electronic invoicing add-in in Regulatory Configuration Services (RCS)
+# Configure Electronic invoicing in Regulatory Configuration Services (RCS)
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the configuration capabilities of the Electronic invoicing add-in in Dynamics 365 Regulatory Configuration Services (RCS).
+This topic provides information about the configuration capabilities of Electronic invoicing in Dynamics 365 Regulatory Configuration Services (RCS).
 
-It is through the configuration capabilities that Electronic invoicing add-in helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web services, the configuration capabilities also help you meet the requirements for exchanging messages with a web services, without doing any code.
+It is through the configuration capabilities that Electronic invoicing helps you meet business and regulatory requirements of electronic invoices without having to do any coding. And in the scenarios where electronic invoices must be electronically approved by a web services, the configuration capabilities also help you meet the requirements for exchanging messages with a web services, without doing any code.
 
 ## Electronic reporting
 
-Electronic reporting (ER) supports the Electronic invoicing add-in.
+Electronic reporting (ER) supports Electronic invoicing.
 
-The data model mapping and formats are configurable components that are created and maintained through ER and used in the Electronic invoicing add-in. The ER format designer is the tool for creating and maintaining file formats. It's used to configure the electronic invoicing features.
+The data model mapping and formats are configurable components that are created and maintained through ER and used in Electronic invoicing. The ER format designer is the tool for creating and maintaining file formats. It's used to configure the electronic invoicing features.
 
 For more information, see [Electronic reporting (ER) overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## Electronic invoicing features
 
-The electronic invoicing features are responsible for generating electronic invoices through the Electronic invoicing add-in. They encapsulate the configuration rules and use them to process the data that Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management send to the Electronic invoicing add-in and to electronic invoices.
+The electronic invoicing features are responsible for generating electronic invoices through Electronic invoicing. They encapsulate the configuration rules and use them to process the data that Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management send to Electronic invoicing and to electronic invoices.
 
 The features also support scenarios where compliance with file format specifications is required and the output is a standalone electronic file. In most cases, the file format specifications are published by the tax authority.
 
@@ -83,13 +82,13 @@ The following table shows the electronic invoicing features that are currently i
 
 The electronic invoicing features consist of the following groups of configurable components:
 
-- **Formats** – Formats let you configure what the Electronic invoicing add-in must generate when an electronic document becomes an electronic invoice. Formats include the format configuration for the electronic invoice, and for files and messages that are used to submit requests and receive responses when communication with an external web service is required.
-- **Actions** – Actions let you configure how the Electronic invoicing add-in generates the transformation of an electronic document that Finance and Supply Chain Management submitted into an electronic invoice.
-- **Applicability rules** – Applicability rules let you configure the context that the Electronic invoicing add-in must consider to process an electronic invoicing feature.
-- **Variables** – Variables let you configure the support for the construction of the configuration logic. Variables can work as the input of values to perform a specific action. Alternatively, they can work as an exchange of values between Finance and Supply Chain Management and the Electronic invoicing add-in.
-- **Electronic document model mapping** – The electronic document model mapping lets you configure the ER model mapping. The model mapping defines the data mapping of the abstract invoice that is integrated into the Electronic invoicing add-in when electronic documents are submitted.
+- **Formats** – Formats let you configure what Electronic invoicing must generate when an electronic document becomes an electronic invoice. Formats include the format configuration for the electronic invoice, and for files and messages that are used to submit requests and receive responses when communication with an external web service is required.
+- **Actions** – Actions let you configure how Electronic invoicing generates the transformation of an electronic document that Finance and Supply Chain Management submitted into an electronic invoice.
+- **Applicability rules** – Applicability rules let you configure the context that Electronic invoicing must consider to process an electronic invoicing feature.
+- **Variables** – Variables let you configure the support for the construction of the configuration logic. Variables can work as the input of values to perform a specific action. Alternatively, they can work as an exchange of values between Finance and Supply Chain Management and Electronic invoicing.
+- **Electronic document model mapping** – The electronic document model mapping lets you configure the ER model mapping. The model mapping defines the data mapping of the abstract invoice that is integrated into Electronic invoicing when electronic documents are submitted.
 - **Invoice context model** – The invoice context model lets you configure the ER invoice context model and define the context of an electronic invoicing feature.
-- **Response types** – Response types let you configure what the Electronic invoicing add-in must update in Finance and Supply Chain Management as a result of the electronic invoice processing.
+- **Response types** – Response types let you configure what Electronic invoicing must update in Finance and Supply Chain Management as a result of the electronic invoice processing.
 
 ### Formats
 
@@ -239,7 +238,7 @@ Electronic invoicing feature versions follow a lifecycle that has up to three st
 
 - **Draft** – If a feature version is in this status, you can edit its configuration attributes and any of its artifacts (for example, file format configurations).
 - **Complete** – If a feature version is in this status, it has been published to the Global repository that is associated with your organization. You can no longer edit the feature version or any of the ER components.
-- **Published** – If a feature version is in this status, it has been published to the Electronic invoicing add-in. You can no longer edit the feature version or any of the ER components.
+- **Published** – If a feature version is in this status, it has been published to Electronic invoicing. You can no longer edit the feature version or any of the ER components.
 
 ### Feature configurations
 
@@ -268,14 +267,14 @@ Through the application setup, you can configure the part of an electronic invoi
 
 In RCS, you use the **Deploy** command to target-publish an electronic invoicing feature version. Select **Deploy**, and then select one of the following options to define the target of the deployment: 
 
-- **Service environment** – When the target of the deployment is the service environment, the electronic invoicing feature version is published to the service environment. The Electronic invoicing add-in is then ready to receive and process electronic documents that Finance and Supply Chain Management send.
+- **Service environment** – When the target of the deployment is the service environment, the electronic invoicing feature version is published to the service environment. Electronic invoicing is then ready to receive and process electronic documents that Finance and Supply Chain Management send.
 - **Connected application** – When the target of the deployment is the connected application, the configuration that is provided by the application setup is written in the Finance and Supply Chain Management instance that was previously associated with it.
 
 Only electronic invoicing feature versions that have a status of **Completed** can be deployed to either a service environment or a connected application.
 
 ### Removing feature versions
 
-In RCS, you use the **Undeploy** command to remove a specific electronic invoicing feature version from a service environment in the Electronic invoicing add-in.
+In RCS, you use the **Undeploy** command to remove a specific electronic invoicing feature version from a service environment in Electronic invoicing.
 
 > [!IMPORTANT]
 > The **Undeploy** command works only in service environments. It doesn't remove electronic invoicing feature versions from connected applications.

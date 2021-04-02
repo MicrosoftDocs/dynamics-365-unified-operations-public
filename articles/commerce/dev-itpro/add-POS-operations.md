@@ -4,7 +4,6 @@
 title: Add POS operations to POS layouts by using Button grid designer
 description: This topic explains how to create a new POS operation and add it to the POS layout by using Button grid designer.
 author: mugunthanm
-manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 

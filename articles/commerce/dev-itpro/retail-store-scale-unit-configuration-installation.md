@@ -4,7 +4,6 @@
 title: Configure and install Commerce Scale Unit (self-hosted)
 description: This topic explains how to use self-service to configure and install Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
 author: jashanno
-manager: AnnBe
 ms.date: 02/08/2021
 ms.topic: article
 ms.prod:

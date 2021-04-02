@@ -4,7 +4,6 @@
 title: Change the service order stage 
 description: You can change the service order stage.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

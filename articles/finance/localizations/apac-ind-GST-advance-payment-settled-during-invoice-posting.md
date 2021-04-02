@@ -4,7 +4,6 @@
 title: Advance payments that are settled during invoice posting
 description: This topic provides information about the tax that is posted on a customer advance payment when the payment is settled and the customer invoice is posted.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 

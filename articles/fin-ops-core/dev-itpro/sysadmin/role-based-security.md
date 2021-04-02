@@ -4,7 +4,6 @@
 title: Role-based security
 description: This topic provides an overview of the elements of role-based security. 
 author: peakerbl
-manager: AnnBe
 ms.date: 01/27/2021
 ms.topic: article
 ms.prod: 

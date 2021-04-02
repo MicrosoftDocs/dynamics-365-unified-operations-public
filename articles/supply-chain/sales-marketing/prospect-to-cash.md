@@ -4,7 +4,6 @@
 title: Prospect to cash
 description: This topic provides an overview of the Prospect to cash solution between Dynamics 365 Supply Chain Management and Dynamics 365 Sales. 
 author: ChristianRytt 
-manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 

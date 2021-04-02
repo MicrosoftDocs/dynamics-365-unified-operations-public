@@ -4,7 +4,6 @@
 title: ADDDAYS ER function
 description: This topic provides information about how the ADDDAYS Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/03/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Depreciation rounding
 description: This topic explains how you can round fixed asset depreciation amounts up or down to the nearest whole number. 
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Mixed license plate receiving
 description: This topic describes how to use mixed license plate receiving to register and create work for multiple items with a mobile device.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 

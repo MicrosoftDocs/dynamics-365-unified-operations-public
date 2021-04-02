@@ -4,7 +4,6 @@
 title: Client APIs home page
 description: Mobile platform client APIs
 author: robinarh
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 

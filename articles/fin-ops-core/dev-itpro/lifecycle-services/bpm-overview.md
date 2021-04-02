@@ -2,7 +2,6 @@
 title: Business process modeler (BPM) in Lifecycle Services (LCS)
 description: This topic provides information about the Business process modeler tool in Lifecycle Services (LCS).
 author: AngelMarshall 
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 

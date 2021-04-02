@@ -4,7 +4,6 @@
 title: X++ math runtime functions
 description: This topic describes the math run-time functions.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

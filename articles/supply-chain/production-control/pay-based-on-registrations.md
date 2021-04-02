@@ -4,7 +4,6 @@
 title: Pay based on registrations
 description: This topic explains how pay is calculated based on worker registrations.
 author: johanhoffmann
-manager: tfehr
 ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 

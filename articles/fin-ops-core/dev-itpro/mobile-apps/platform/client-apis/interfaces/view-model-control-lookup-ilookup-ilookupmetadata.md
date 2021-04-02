@@ -3,7 +3,6 @@
 title: LookupMetadata type
 description: Lookup metadata type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 

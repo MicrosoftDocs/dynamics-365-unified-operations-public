@@ -4,7 +4,6 @@
 title: Create product packages for purchase orders
 description: This procedure walks through creating a product package and using it on a purchase order. 
 author: josaw1
-manager: AnnBe 
 ms.date: 11/14/2017
 ms.topic: business-process 
 ms.prod:  

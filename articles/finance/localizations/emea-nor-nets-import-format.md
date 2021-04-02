@@ -4,7 +4,6 @@
 title: Nets import format
 description: This topic provides information about importing payment information in the Nets format.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

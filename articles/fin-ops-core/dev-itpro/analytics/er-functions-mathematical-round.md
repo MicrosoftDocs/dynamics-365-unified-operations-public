@@ -4,7 +4,6 @@
 title: ROUND ER function
 description: This topic provides information about how the ROUND Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 

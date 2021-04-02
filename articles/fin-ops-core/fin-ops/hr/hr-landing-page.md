@@ -2,9 +2,8 @@
 # required metadata
 
 title: Human resources overview
-description: Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.
+description: Human resources streamlines routine recordkeeping tasks, automates processes related to staffing your organization, and provides a framework for human resources staff to manage areas of oversight.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Multi-leg journey setup
 description: This topic describes how to set up multi-leg journeys for the Landed cost module.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 

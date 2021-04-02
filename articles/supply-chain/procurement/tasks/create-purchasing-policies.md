@@ -4,7 +4,6 @@
 title: Create purchasing policies
 description: This topic shows you how to create purchasing policies to align with your business processes for purchasing. 
 author: kamaybac
-manager: tfehr 
 ms.date: 07/31/2019
 ms.topic: business-process 
 ms.prod:  

@@ -3,7 +3,6 @@
 title: Fixed assets overview 
 description: This topic provides information about the Fixed assets module for Russia.
 author: v-oloski
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 

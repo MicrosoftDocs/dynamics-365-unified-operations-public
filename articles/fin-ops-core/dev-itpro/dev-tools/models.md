@@ -4,7 +4,6 @@
 title: Models and packages
 description: This topic describes the concept of models and packages. It explains how to create new models, update parameters, and visualize dependencies between models.
 author: jorisdg
-manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
