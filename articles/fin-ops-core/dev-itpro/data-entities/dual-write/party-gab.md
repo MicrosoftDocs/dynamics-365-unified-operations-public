@@ -177,15 +177,15 @@ Electronic addresses are available only on this grid. In future releases, all el
 
     | Field | Value |
     |-------|-------|
-    | Name | Contacts with the same first name and last name. |
-    | Description | Detects contact records that have the same values in the First Name and Last Name fields. |
-    | Base Record Type | Contact |
-    | Matching Record Type | Contact |
-    | First Name | Exact Match |
-    | Last Name | Exact Match |
-    | Company | Exact Match |
-    | Party Id | Exact Match |
-    | Select | (blank) |
+    | Name | Accounts with the same account name. |
+    | Description | Detects account records that have the same value in the Account Name attribute. |
+    | Base Record Type | Account |
+    | Matching Record Type | Account |
+    | Account Name (field) | Exact Match |
+    | Company (field) | Exact Match |
+    | Relationship Type (field) | Exact Match |
+    | Party Id (field) | Exact Match |
+    | Select (field) | (blank) |
 
     ![Duplicate rule for Accounts](media/duplicate-rule-1.PNG)
 
@@ -197,11 +197,11 @@ Electronic addresses are available only on this grid. In future releases, all el
     | Description | Detects contact records that have the same values in the First Name and Last Name fields. |
     | Base Record Type | Contact |
     | Matching Record Type | Contact |
-    | First Name | Exact Match |
-    | Last Name | Exact Match |
-    | Company | Exact Match |
-    | Party Id | Exact Match |
-    | Select | (blank) |
+    | First Name (field) | Exact Match |
+    | Last Name (field) | Exact Match |
+    | Company (field) | Exact Match |
+    | Party Id (field) | Exact Match |
+    | Select (field) | (blank) |
 
     ![Duplicate rule for Contacts](media/duplicate-rule-2.PNG)
 
