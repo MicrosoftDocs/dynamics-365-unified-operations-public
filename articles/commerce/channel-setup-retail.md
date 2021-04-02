@@ -177,7 +177,7 @@ As of the Commerce version 10.0.18 release, transaction IDs generated for the po
 - A fixed part, which is a concatenation of store ID and terminal ID. 
 - A sequential part, which is a number sequence. 
 
-Specifically, the format is *{store}-{terminal}-{numberseq}*. 
+Specifically, the format is *{store}-{terminal}-{numbersequence}*. 
 
 Since transaction IDs can be generated in offline and online modes, there have been instances of duplicate transaction IDs being generated. Eliminating duplicate transaction IDs then requires a lot of manual data fixing. 
 
