@@ -49,12 +49,11 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
-| [Party and Global Address Book](party-gab.md) | Brings schema parity with Finance and operations and gives the ability to solve complex business problems on dataverse around customers, vendors and contact persons. To avail this feature, you need to install [dual-write Party and Global Address Book solutions](http://aka.ms/dual-write-gab) from appsource. Supported Finance and Operations verisons are 10.0.605.30025 PU14; 10.0.644.20031 PU15; 10.0.689.10027 PU16; 10.0.761.1 PU17 | General availability |
-| Bug fix| Product category name is part of the natural/integration key of the "Product Categories" entity. Updating the name inside Finance and Operations applications cause an insert in Dataverse instead of an update. Please use the new map "msdyn_productcategories - Product categories" with version 1.0.0.1. Supported Finance and Operations version is 10.0.778.0 PU42 | General availability |
+| [Party and Global Address Book](party-gab.md) | Brings schema parity with Finance and Operations apps, and gives you the ability to solve complex business problems on Dataverse related to customers, vendors, and contact persons. To use this feature, install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).<br>Supported Finance and Operations versions are 10.0.605.30025 (platform udpate 14), 10.0.644.20031 (platform update15), 10.0.689.10027 (platform update 16), and 10.0.761.1 (platform update 17) | General availability |
+| Bug fix | **Product category name** is part of the natural/integration key of the **Product Categories** table. Updating the name using a Finance and Operations app cause an insert in Dataverse instead of an update. Please use the new map for `msdyn_productcategories - Product categories` with version 1.0.0.1. The supported Finance and Operations version is 10.0.778.0 (platform update 42) | General availability |
 | Bug fix| Localization bug fixes and updates. | General availability |
 | Bug fix| A note without a description throws error. | General availability |
-| Bug fix| In Finance and operations, running the "Calculate Sales Totals" batch job updates all orders modified within last 24 hours and fixes the totals irrespective of the status of the order (canceled; fulfilled etc.) which then triggers a re-cancellation or re-fulfillment causing a conflict error. | General availability |
-
+| Bug fix| In Finance and Operations apps, running the "Calculate Sales Totals" batch job updates all orders modified within last 24 hours and fixes the totals regardless of the status of the order for example, **canceled** or **fulfilled**. That action triggers a re-cancellation or re-fulfillment causing a conflict error. | General availability |
 
 ## February 2021 release
 
