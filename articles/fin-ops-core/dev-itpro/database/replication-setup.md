@@ -116,9 +116,9 @@ Execute the power shell script and wait for it to finish.
 
 ## To know the replication configuration and status via SQL Server Management Studio
 
-- To know that the replication feature is available/installed on the server, you should see the Replication folder in Object Explorer, as shown in the image below.
+- To know that the replication feature is available and installed on the server, you should see the Replication folder in Object Explorer, as shown in the image below.
    
-   ![Replication folder shown](media/Replication1.png)
+   ![Replication folder](media/Replication1.png)
 
 - After executing the **Replication_03_PublisherTables.ps1** script, you should be able to see the publisher configured under the Replication folder.
     
@@ -134,12 +134,12 @@ Execute the power shell script and wait for it to finish.
 
 - Selecting the Snapshot tab, you can see the status of the snapshot.
   
-  ![The publications that will get created on source database when setting up the replication](media/Replication5.png)
+  ![Selecting the Snapshot tab, you can see the status of the snapshot.](media/Replication5.png)
 
-- To view the detail log/transaction double click on the grid item.
+- To view the detail log/transaction, double-click on the item.
    
-   ![The publications that will get created on source database when setting up the replication](media/Replication6.png)
+   ![To view the detail log/transaction, double-click on the item.](media/Replication6.png)
 
-- To view the data replication to the target select the All Subscription tab and double click subscription from the grid item. Like in the above screen shot can view thr detail logs
+- To view the data replication to the target, select the All Subscription tab and double-click the subscription from the item. 
 
 
