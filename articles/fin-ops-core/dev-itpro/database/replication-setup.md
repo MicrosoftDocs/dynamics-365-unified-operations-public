@@ -82,4 +82,12 @@ SQLTransactionalReplication folder has all the PowerShell scripts that required 
 6. **CutOver_02_PKDeletion_PostReplication.ps1** ==> This will clean up the temp tables created for no Primary Key tables. Deletes Publication --> AX_PUB_NoPKTable
 7. **CutOver_03_RetrieveAndCreateNoPKConstraints.ps1** ==> This extracts constraints for the non PK tables from the source and create them in the target database
 8. **CutOver_04_RemoveReplication.ps1** ==> After successful replication of database, we can execute this script to remove replication setup. If you want to remove the Snap Shot folder without error execute this below SP in the source Db (or) After execution you will get an exception unable to remove the snap shot folders and can be removed manually.
+
+```sql
+EXEC master.dbo.sp_configure 'show advanced options', 1
+RECONFIGURE WITH OVERRIDE
+EXEC master.dbo.sp_configure 'xp_cmdshell', 1
+RECONFIGURE WITH OVERRIDE
+```
+
     
