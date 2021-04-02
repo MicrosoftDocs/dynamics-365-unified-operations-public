@@ -57,10 +57,6 @@ The JSON file is configured similar to a [module mock file](module-mock-file.md)
         "imageAlignment": "left",
         "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
         "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
-        "productImage": {
-            "src": "svg.large",
-	    "hint": "image"
-        },
         "buttonText": "Buy Now",
         "productIds": "68719498121"
     }
@@ -70,15 +66,6 @@ The JSON file is configured similar to a [module mock file](module-mock-file.md)
 * "id" - maps to the module Id
 * "config" - the config section contains a list of configuration values based on the name of the configuration stored in the modules definition file.
 
-## Preset data for images
-When using module configuration presets, specifying custom images is not currently supported, but a hint can be provided for the editor to display an svg placeholder image which will allow selecting the image to set a new image.  Set the image configuration to the following: **"src": "svg.large"** and **"hint": "image"** as shown below:
-
-```json
-"productImage": {
-    "src": "svg.large",
-    "hint": "image"
-}
-```
 
 ## Additional resources
 
