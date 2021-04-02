@@ -1,21 +1,20 @@
 ---
 # required metadata
 
-title: Metadata and markdown template
+title: Replication setup
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
-author: tonyafehr
-ms.date: 06/20/2020
+author: sarvanisathish
+ms.date: 04/02/2021
 ms.topic: article
-audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
-ms.custom: <remove if blank>
+audience: IT Pro
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
-ms.search.validFrom: 2017-06-20
+ms.author: sarvanis
+ms.search.validFrom: 2021-04-30
 ---
 
-# Metadata and Markdown template
+# Replication setup
 
 [!include[banner](../includes/banner.md)]
 
-This template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBj
+Content goes here.
