@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 This document describes the Dynamics 365 Human Resources Payroll integration API. The intent of the API is to enable streamlined end-to-end integrations between Dynamics 365 Human Resources and partnering Payroll systems. The integrated experience begins in Human Resources with the employee profile, salary and deduction and contribution information. When an employee is hired and required profile and pay information is entered into Dynamics 365 Human Resources, the payroll system pulls this information to be used when processing payroll. Any updates made to the employee or pay information are also pulled to be used in subsequent pay runs. 
 
-![Payroll integration flow](media/hr-admin-integration-ats-api-introduction-flow.png)
+![Payroll integration flow](media/hr-admin-integration-ats-payroll-introduction-flow.png)
 
 
 To enable the integration, Human Resources is adding the following components:
@@ -71,18 +71,18 @@ The data model contains the following entities:
 
 The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to payroll integration scenarios. However, there are many other entities in the Dataverse Web API for Dynamics 365 Human Resources that may also be relevant to your integration.  Some of these entities are referenced in foreign key relationships or navigation properties.
 
-![Payroll Integration API data model](media/hr-admin-integration-ats-api-data-model.png)
+![Payroll Integration API data model](media/hr-admin-integration-payroll-api-data-model.png)
 
 ## Payroll employee and related entities and option sets
 
 Entities:
 
-- [Payroll Employee](hr-admin-integration-payroll-api-payroll-employee)
-- [Base worker](hr-admin-integration-payroll-api-payroll-worker-base-entity)
-- [Payroll Worker address](hr-admin-integration-payroll-api-payroll-worker-address)
+- [Payroll Employee](hr-admin-integration-payroll-api-payroll-employee.md)
+- [Base worker](hr-admin-integration-payroll-api-payroll-worker-base-entity.md)
+- [Payroll Worker address](hr-admin-integration-payroll-api-payroll-worker-address.md)
 - [Payroll Fixed compensation plan](hr-admin-integration-ats-api-recruiting-request-education.md)
-- [Payroll position job](hr-admin-integration-payroll-api-payroll-position-job)
-- [Payroll position](hr-admin-integration-payroll-api-payroll-position)
+- [Payroll position job](hr-admin-integration-payroll-api-payroll-position-job.md)
+- [Payroll position](hr-admin-integration-payroll-api-payroll-position.md)
 
 Option sets:
 
