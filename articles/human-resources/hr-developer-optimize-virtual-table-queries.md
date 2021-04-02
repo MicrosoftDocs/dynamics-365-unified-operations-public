@@ -44,7 +44,10 @@ An example where you may see the impact of this is in queries against the Worker
 
 - The query against the virtual table may return the expected results, but take longer than expected to complete execution of the query.
 - The query may time out and return the following error: "A token was obtained to call Finance and Operations, but Finance and Operations returned an error of type InternalServerError."
+- The query may return an error type 400 with the following message: "An unexpected error occurred."
 - The query may overuse server resources, and become subject to [throttling](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-throttling-faq). In this case the query returns the following error: "A token was obtained to call Finance and Operations, but Finance and Operations returned an error of type 429."
+
+  ![Error type 429 on HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType429.png)
 
 ## Resolution
 
