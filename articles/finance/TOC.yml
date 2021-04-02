@@ -930,12 +930,12 @@
           href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
         - name: General ledger account balances
           href: general-ledger/general-ledger-account-balances.md
-        - name: Financial dimension sets
-          href: general-ledger/financial-dimension-sets.md
         - name: Define financial dimensions
           href: general-ledger/tasks/define-financial-dimensions.md
         - name: Maintain financial dimension default templates
           href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+        - name: Financial dimension sets
+          href: general-ledger/financial-dimension-sets.md
         - name: Create account structures
           href: general-ledger/tasks/create-account-structures.md
         - name: Financial dimensions and posting
