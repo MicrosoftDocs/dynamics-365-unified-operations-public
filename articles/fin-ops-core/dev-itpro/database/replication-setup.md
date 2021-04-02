@@ -64,5 +64,19 @@ Update params.json
     <IgnoreTables>                      <IgnoreFunctions>
         <Name>SYSDATABASELOG</Name>         <Name></Name>
     </IgnoreTables>                      </IgnoreFunctions>
+    ```
     
+## Configuring replication
+
+SQLTransactionalReplication folder has all the PowerShell scripts that required to configure the SQL transactional replication. These scripts should be executed in the same sequence as below and wait for it to finish.
+
+1. **Replication_01_DataBaseCleanup.ps1** ==> will empty the target database
+2. **Replication_02_Distributor.ps1** ==> Upon completing distributor database will get created in the source database server under system database.
+3. **Replication_03_PublisherTables.ps1** ==> Once the Publisher scripts are executed successfully, publication will get created under the replication folder. FYI: This will take some time to complete. Created Publishers -> AXDB_PUB_TABLE_Obj_[*].
+WARNING: Wait for data replication to complete before executing cutover scripts. You can check the status via 1). Replication Monitor: On the source server, right click 4. 'Replication' folder and select 'Launch Replication Monitor'. 2). Run GetStatus.ps1 script embedded in the replication toolkit. 'DataReplicationStatus' must be set to complete for each of the AXDB_PUB_TABLE_Obj_[/*/] publication.
+4. **Replication_04_PublisherOtherObjects.ps1** ==> Replicates functions to target database by creating new publication. This step can be omitted if you don't want to move functions. FYI: this will be completed quickly. Creates Publisher -> AX_PUB_OtherObjects
+5. **CutOver_01_PublisherNoPK**.ps1 ==> This creates two publications to replicate 1) Non Primary Key tables, 2) Locked tables with publication names -> AX_PUB_NoPKTable, AXDB_PUB_TABLE_Locked
+6. **CutOver_02_PKDeletion_PostReplication.ps1** ==> This will clean up the temp tables created for no Primary Key tables. Deletes Publication --> AX_PUB_NoPKTable
+7. **CutOver_03_RetrieveAndCreateNoPKConstraints.ps1** ==> This extracts constraints for the non PK tables from the source and create them in the target database
+8. **CutOver_04_RemoveReplication.ps1** ==> After successful replication of database, we can execute this script to remove replication setup. If you want to remove the Snap Shot folder without error execute this below SP in the source Db (or) After execution you will get an exception unable to remove the snap shot folders and can be removed manually.
     
