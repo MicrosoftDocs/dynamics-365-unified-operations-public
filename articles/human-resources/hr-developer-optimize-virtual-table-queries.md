@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimize Dataverse virtual table queries
-description: Tips to optimize and troubleshoot performance of Dataverse virtual table queries
+description: Optimize and troubleshoot performance of Dataverse virtual table queries
 author: andreabichsel
 ms.date: 04/02/2021
 ms.topic: article
@@ -87,7 +87,9 @@ If you experience any of the aforementioned indications of slow performance when
 1. In Power BI Desktop, select **More...** from the **Get data** drop-down list on the action ribbon.
 2. In the Get Data window, enter **Common Data Service** in the search box, select the **Common Data Service** connector, and click **Connect**.
 3. In the **Server Url** field of the Common Data Service window, enter the organization URI for your Dataverse environment, and click **OK**.
+  
   ![Enter the URI for your Dataverse environment](./media/PowerBIDataverseURLSetup.png)
+  
 4. In the Navigator window, expand the **Entities** node.
 5. In the search box, enter **mshr_hcmworkerbaseentity**, and select the entity.
 6. Select **Transform Data**.
@@ -114,17 +116,20 @@ If you experience any of the aforementioned indications of slow performance when
 
 You're then able to begin building your Power BI report against the columns selected from the virtual table.
 
-### Implement paging
+### Selecting columns in Power Apps
 
-### Filter records
+As with Dataverse Web API queries and Power BI, you can improve query performance for Power Apps based on Dataverse virtual tables by excluding foreign key columns from your app. You can validate this by checking the data fields included on each data form of your Power App.
 
+1. In the Tree view pane, select the data form for the screen.
+2. In the **Properties** pane, select **Edit** on the **Fields** property.
+3. In the **Data** pane, verify that none of the selected fields are foreign key fields of the virtual table of the data source.
 
+You can use the [Power Apps Monitor](https://docs.microsoft.com/powerapps/maker/monitor-overview) to ensure that only the columns you need are being included in the query to get the data for the Power App.
 
 ## See also
 
-- [What's new or changed in Human Resources](hr-admin-whats-new.md)
-- [Administrator Guide](hr-admin-overview.md)
-- [User Guide](hr-hrpro-overview.md)
+- [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)
+- [Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
