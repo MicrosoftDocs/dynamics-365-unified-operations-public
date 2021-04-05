@@ -34,7 +34,6 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](../includes/preview-banner.md)]
 
-
 This topic describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.19.
 
 ## <a name="er-api-extend-destination"></a>API to extend the list of ER destinations
@@ -90,7 +89,7 @@ public interface ERIFormatFileDestinationSettings extends SysPackable
     }
 
     /// <summary>
-    /// Gets a settings key, this key should starts with or be an implementation class name, also this key should be persistent and should not be changed over time.
+    /// Gets a settings key. This key should start with or be an implementation class name. It should also be persistent and should not be changed over time.
     /// This key will be used to retrieve this type of settings from a settings storage.
     /// </summary>
     /// <remarks>Examples of good keys: MyCustomDestinationSettings, MyCustomDestinationSettings#UniqueKey.</remarks>
@@ -105,19 +104,17 @@ public interface ERIFormatFileDestinationSettings extends SysPackable
     void validate()
     {
     }
-
 }
 ```
 
-This interface allows you to offer parameters of a custom destination on the ER destinations dialog box to set them up at design time and use the configured destination at runtime to store generated [outbound](general-electronic-reporting.md#FormatComponentOutbound) documents.
+This interface lets you offer parameters of a custom destination in the ER destinations dialog box, so that they can be set at design time. The configured destination can then be used at runtime to store generated [outbound](general-electronic-reporting.md#FormatComponentOutbound) documents.
 
-To learn more about this interface, complete the example in the topic, [Implement a custom destination for generated documents](er-custom-file-destination.md).
+To learn more about this interface, complete the example in [Implement a custom destination for generated documents](er-custom-file-destination.md).
 
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
-   
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
