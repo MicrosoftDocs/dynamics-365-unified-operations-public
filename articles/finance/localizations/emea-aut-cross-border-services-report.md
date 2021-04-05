@@ -162,7 +162,7 @@ entity.
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
 | 3/22/2021 | DE_TX_001 | 3/22/2021 | AU_0006 | 3800 | Ledger | 700002 | Germany | FULL |
 
-1.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt; Cross-border services**, and follow these steps:
+12. Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt; Cross-border services**, and follow these steps:
 
     1.  In the **From date** field, select **3/1/2021**. In the **To date** field, select **3/31/2021**.
 
@@ -174,26 +174,27 @@ entity.
         select **Main account**.
         
     5.  In the **Criteria** field enter **700001, 700002**. For more
-        information, see Advanced filtering and query syntax.
+        information, see [Advanced filtering and query
+        syntax](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options).
 
 ![cross-border-services-report-country](media/emea-aut-cross-border-services-report-country-region.png)
 
-14.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
+14. Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
     Cross-border services**, and follow these steps:
 
-   1.  In the **From date** field, select **3/1/2021**. In the **To
+    1.  In the **From date** field, select **3/1/2021**. In the **To
         date** field, select **3/31/2021**.
 
-   2.  In the **Group by** field, select **Service**.
+    2.  In the **Group by** field, select **Service**.
 
-   3.  On the **Records to include** FastTab, select **Filter**.
+    3.  On the **Records to include** FastTab, select **Filter**.
 
-   4.  In the **Table**, **Derived table**, and **Field** fields,
+    4.  In the **Table**, **Derived table**, and **Field** fields,
         select **Main account**.
 
-   5.  In the **Criteria** field, enter **700001, 700002**. For more
+    5.  In the **Criteria** field, enter **700001, 700002**. For more
         information, see [Advanced filtering and query
-        syntax](../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md).
+        syntax](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options).
 
 15.  Select **OK**, and review the report results.
 
