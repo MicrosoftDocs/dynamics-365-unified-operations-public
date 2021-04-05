@@ -80,7 +80,7 @@ These prerequisites are required:
 
 10. After deployment, validate the datasets, data flow, and linked service of the data factory.
 
-   ![Datasets, data flow, and linked service](media/data-factory-4.png)
+   ![Datasets, data flow, and linked service](media/data-factory-validate.png)
 
 11. Navigate to **Manage**. Under **Connections**, select **Linked Service**. Select **DynamicsCrmLinkedService**. In the **Edit linked service (Dynamics CRM)** form, enter the following values:
 
@@ -143,9 +143,9 @@ These prerequisites are required:
     + Update Vendors of type Person in Contacts Table
     + Update Vendors of type Person in Vendors Table
 
-7. In the data factor and run the template by selecting on **Trigger now** as shown in the following image. This process might take a few hours to complete based on the data volume.
+7. In the data factory, run the template by selecting on **Trigger now** as shown in the following image. This process might take a few hours to complete based on the data volume.
 
-    ![ADF6](media/data-factory-6.png)
+    ![Trigger run](media/data-factory-trigger.png)
 
     > [!NOTE]
     > If you have customizations for **Account**, **Contact**, and **Vendor** then you must modify the template.
@@ -155,7 +155,7 @@ These prerequisites are required:
     + Download the `FONewParty.csv` file from Azure blob storage. The path is `partybootstrapping/output/FONewParty.csv`.
     + Convert the `FONewParty.csv` file into an Excel file and import it into the Finance and Operations app.  If the CSV import works for you, you can import CSV file directly. The import could take a few hours to run, depending on the data volume. For more information, see [Data import and export jobs overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).
 
-    ![Import the Datavers party records](media/data-factory-7.png)
+    ![Import the Datavers party records](media/data-factory-import-party.png)
 
 9. In the customer engagement apps, enable the following plugin steps:
 
@@ -181,7 +181,7 @@ These prerequisites are required:
     + Update Vendors of type Person in Contacts Table
     + Update Vendors of type Person in Vendors Table
 
-11. Run the **Party** related maps as instructed in [Party and global address book](party-gab.md).
+11. Run the **Party**-related maps as instructed in [Party and global address book](party-gab.md).
 
 ## Troubleshooting
 
@@ -190,8 +190,8 @@ These prerequisites are required:
 3. The data factory runs based on csv files that are comma-delimited. If there is a field value that has a comma, it may interfere with the results. You need to remove the commas.
 4. The **Monitoring** tab provides information about all steps and data processed. Select a specific step to debug it.
 
-    ![Monitoring tab](media/data-factory-8.png)
+    ![Monitoring tab](media/data-factory-monitor.png)
 
 ## Learn more about the "Upgrade to Party-GAB" template
 
-You can find comments for the template the [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) file.
+You can find comments for the template the [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md) file.
