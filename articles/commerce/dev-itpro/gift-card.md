@@ -181,7 +181,6 @@ For the call center and storefront, the Adyen connector supports the following g
 > [!NOTE]
 >  Only gift cards of type "Email" can be issued in an online order at this time. 
 >  In the out-of-box Adyen connector, gift cards are not configured by default. To specify the gift card provider in the merchant properties of the payment connector, follow the instructions in the [documentation for the Adyen payment connector](adyen-connector.md?tabs=8-1-3).
->
 
 
 ### Tokenization
