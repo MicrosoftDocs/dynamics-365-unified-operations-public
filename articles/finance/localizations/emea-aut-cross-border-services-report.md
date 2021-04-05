@@ -165,9 +165,8 @@ entity.
 
 12.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
     Cross-border services**, and follow these steps:
-
-    1.  In the **From date** field, select **3/1/2021**. In the **To
-        date** field, select **3/31/2021**.
+    
+    1.  In the **From date** field, select **3/1/2021**. In the **To date** field, select **3/31/2021**.
 
     2.  In the **Group by** field, select **Country/region**.
 
@@ -181,7 +180,7 @@ entity.
 
 13.  Select **OK**, and review the report results.
 
-    ![cross-border-services-report-country](media/emea-aut-cross-border-services-report-country-region.png)
+![cross-border-services-report-country](media/emea-aut-cross-border-services-report-country-region.png)
 
 14.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
     Cross-border services**, and follow these steps:
@@ -198,11 +197,8 @@ entity.
 
     5.  In the **Criteria** field, enter **700001, 700002**. For more
         information, see [Advanced filtering and query
-        syntax](fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md).
+        syntax](/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md).
 
 15.  Select **OK**, and review the report results.
 
-    ![cross-border-services-report-service](media/emea-aut-cross-border-services-report-service.png)
-
-
-
+![cross-border-services-report-service](media/emea-aut-cross-border-services-report-service.png)
