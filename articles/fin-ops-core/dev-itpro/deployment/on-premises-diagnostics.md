@@ -4,7 +4,7 @@
 title: On-premises diagnostics
 description: This topic provides information about how to expose the diagnostic data for Dynamics 365 Finance + Operations (on-premises) deployments. 
 author: PeterRFriis
-ms.date: 09/18/2019
+ms.date: 04/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
