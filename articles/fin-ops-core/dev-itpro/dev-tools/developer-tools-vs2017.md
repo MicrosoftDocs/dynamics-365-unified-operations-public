@@ -2,7 +2,7 @@
 # required metadata
 
 title: Visual Studio 2017 requirements for X++
-description: This topic lists the Visual Studio 2017 components that are required to run the **Visual Studio** extension for X++.
+description: This topic lists the Visual Studio 2017 components that are required to run the Visual Studio extension for X++.
 author: jorisdg
 ms.date: 04/01/2021
 ms.topic: article
@@ -42,4 +42,4 @@ The following table lists the required Visual Studio components.
 | Workload | .NET desktop development | Yes | |
 | Individual component | Modeling SDK | Yes | |
 | Individual component | Directed Graph Markup Language (.dgml) editor | No | This component is used for dependency graph features. |
-| Marketplace | Microsoft Reporting Services projects | Yes (for report development) | This component is needed for report development. If the component isn't installed, Visual Studio will prompt you when you try to open report designs. |
+| Visual Studio Marketplace | Microsoft Reporting Services Projects | Yes | This component is needed for report development. If the component isn't installed, Visual Studio will prompt you when you try to open report designs. |
