@@ -2300,6 +2300,10 @@
                   href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
                 - name: Customer payment refunds
                   href: localizations/apac-ind-GST-customer-payment-refund.md
+              - name: Project management transactions
+                items:
+                - name: Goods and Service Tax (GST) project transactions
+                  href: localizations/apac-ind-gst-project-transactions.md
               - name: Tax adjustment
                 items:
                 - name: Tax amount adjustment
