@@ -205,7 +205,7 @@ The following sample queries can help you start probing the diagnostic data. If 
 #### Thirty-day data retention
 To keep its hard disks free from stale data, Microsoft used Curator v5.5 to clean up indexes that were older than 30 days.
 
-Microsoft downloaded Curator to one of the Orchestrator nodes at C:\\ELK\\Curator. The sample configuration file, curator.yml, available in the [LCS Shared Asset library, under the Model asset type in zipped file "LBD Diagnostic configurations"](https://lcs.dynamics.com/V2/SharedAssetLibrary), was then put in C:\\ELK\\Curator to connect Curator to its Elasticsearch cluster. You'll need to edit the file to refenece your specific servers. 
+Microsoft downloaded Curator to one of the Orchestrator nodes at C:\\ELK\\Curator. The sample configuration file, curator.yml, available in the [LCS Shared Asset library, under the Model asset type in zipped file "LBD Diagnostic configurations"](https://lcs.dynamics.com/V2/SharedAssetLibrary), was then put in C:\\ELK\\Curator to connect Curator to its Elasticsearch cluster. You'll need to edit the file to reference your specific servers. 
 
 Curator runs actions, and Microsoft created an action confile file "30day_data_retention_actions.yml" to clean up 30-day-old indexes that was put in C:\\ELK\\Curator. The  retention configuration file, available in the [LCS Shared Asset Library, under the Model asset type in zipped file "LBD Diagnostic configurations"](https://lcs.dynamics.com/V2/SharedAssetLibrary).
 
