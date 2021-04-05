@@ -2,10 +2,7 @@
 # required metadata
 
 title: Cross-border services report
-description: The Cross-border services report shows a summary of incoming and
-outgoing cross-border services, the countries or regions that are the
-providers or recipients of the cross-border services, and the net
-amounts that were paid for the services.
+description: The Cross-border services report shows a summary of incoming and outgoing cross-border services, the countries or regions that are the providers or recipients of the cross-border services, and the net amounts that were paid for the services.
 author: anasyash
 ms.date: 04/5/2021
 ms.topic: article
@@ -50,30 +47,23 @@ the status of sales transactions.
     parameters**, and then, on the **Sales tax** tab, set the **Tax
     direction requirement** option to **Yes**.
 
-Go to **General ledger &gt; Chart of accounts &gt; Accounts &gt; Main
-accounts**, and create an account for each cross-border service. As
-part of the setup for each account that you create, follow these
-steps:
+    Go to **General ledger &gt; Chart of accounts &gt; Accounts &gt; Main accounts**, and create an account for each cross-border service. As part of the setup for each account that you create, follow these steps:
 
-1.  On the **Legal entity overrides** FastTab, select **Add**, and
+    1.  On the **Legal entity overrides** FastTab, select **Add**, and
     select the legal entity.
 
-2.  On the **Legal entity overrides** FastTab select **Sales tax**, and
+    2.  On the **Legal entity overrides** FastTab select **Sales tax**, and
     then, in the **Sales tax direction** field, select either
  **Purchase** or **Sales**, depending on sales tax direction.
+    For more information about how to create main accounts, see Create a main account.
 
-For more information about how to create main accounts, see Create a
-main account.
-
-1.  Go to **Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax
+2.  Go to **Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax
     groups**, and create a sales tax group for each country or region
     that a service is delivered to. As part of the setup for each group
     that you create, on the **General** FastTab, in the **Sales tax
     description** section, in the **Country/region or state** field,
     enter the country/region code.
-
-For more information about how to create sales tax groups, see Set up
-sales tax groups and item sales tax groups.
+    For more information about how to create sales tax groups, see Set up sales tax groups and item sales tax groups.
 
 ## Work with the Cross-border services report
 
@@ -153,7 +143,7 @@ entity.
 | Germany | DEU | EU0, EU19, EU7 |
 
 
-1.  Go to **Accounts receivable &gt; Invoices &gt; All free text
+9.  Go to **Accounts receivable &gt; Invoices &gt; All free text
     invoices**, and create and post free text invoices that have the
     following settings.
 
@@ -163,10 +153,9 @@ entity.
 | DE-12 | 3/17/2021 | 700001 | France | FULL | 1 | 500 |
 
 
-1.  Go to **Accounts payable &gt; Invoices &gt; Invoice journal**, and
+10.  Go to **Accounts payable &gt; Invoices &gt; Invoice journal**, and
     create a journal.
-
-2.  On the Action Pane, select **Lines**, and then create a record that
+11.  On the Action Pane, select **Lines**, and then create a record that
     has the following settings.
 
 | Date | Account | Invoice date | Invoice | Credit | Offset account type | Offset account | Sales tax group | Item sales tax group |
@@ -174,7 +163,7 @@ entity.
 | 3/22/2021 | DE_TX_001 | 3/22/2021 | AU_0006 | 3800 | Ledger | 700002 | Germany | FULL |
 
 
-1.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
+12.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
     Cross-border services**, and follow these steps:
 
     1.  In the **From date** field, select **3/1/2021**. In the **To
@@ -190,11 +179,11 @@ entity.
     5.  In the **Criteria** field enter **700001, 700002**. For more
         information, see Advanced filtering and query syntax.
 
-2.  Select **OK**, and review the report results.
+13.  Select **OK**, and review the report results.
 
-    ![Timeline Description automatically generated](media/emea-aut-cross-border-services-report-country-region.png)
+    ![cross-border-services-report-country](media/emea-aut-cross-border-services-report-country-region.png)
 
-3.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
+14.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
     Cross-border services**, and follow these steps:
 
     1.  In the **From date** field, select **3/1/2021**. In the **To
@@ -209,11 +198,11 @@ entity.
 
     5.  In the **Criteria** field, enter **700001, 700002**. For more
         information, see [Advanced filtering and query
-        syntax](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options).
+        syntax](fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md).
 
-4.  Select **OK**, and review the report results.
+15.  Select **OK**, and review the report results.
 
-    ![Table Description automatically generated with low confidence](media/emea-aut-cross-border-services-report-services.png)
+    ![cross-border-services-report-service](media/emea-aut-cross-border-services-report-service.png)
 
 
 
