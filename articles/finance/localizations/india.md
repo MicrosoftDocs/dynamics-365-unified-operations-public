@@ -3,9 +3,9 @@
 
 title: India overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for India. 
-author: ShylaThompson
+author: Skfend
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 04/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -77,14 +77,14 @@ This topic provides links to documentation resources for India.
 
 #### Tax engine
 - [Tax engine overview](../general-ledger/tax-engine.md)
-  - [Tax engine import configuration](../general-ledger/tax-engine-import-configuration.md)
-  - [Electronic reporting advanced formula editor](../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md)
-  - [Tax engine applicability](../general-ledger/tax-engine-applicability.md)
-  - [Create tax components](tax-engine-create-tax-component.md)
-  - [Tax engine integration](../general-ledger/tax-engine-integration.md)
-  - [Extend tax engine configurations](../general-ledger/extend-tax-engine-configurations.md)
-  - [Clean up the TaxDocumentJSON table](gte-clean-up-tax-document-json-table.md)
-  - [Troubleshoot GTE](tax-engine-trouble-shooting.md)
+- [Tax engine import configuration](../general-ledger/tax-engine-import-configuration.md)
+- [Electronic reporting advanced formula editor](../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md)
+- [Tax engine applicability](../general-ledger/tax-engine-applicability.md)
+- [Create tax components](tax-engine-create-tax-component.md)
+- [Tax engine integration](../general-ledger/tax-engine-integration.md)
+- [Extend tax engine configurations](../general-ledger/extend-tax-engine-configurations.md)
+- [Clean up the TaxDocumentJSON table](gte-clean-up-tax-document-json-table.md)
+- [Troubleshoot GTE](tax-engine-trouble-shooting.md)
 
 #### Master data setup
 - [Create a business vertical](apac-ind-gst-create-business-vertical.md)
@@ -164,6 +164,10 @@ This topic provides links to documentation resources for India.
 - [Revise advance payments that include tax](apac-ind-gst-revise-advanced-payment-tax.md)
  - [Customer payment refunds](apac-ind-gst-customer-payment-refund.md)
    
+**Project transactions**
+
+- [Goods and Service Tax (GST) project transactions](apac-ind-gst-project-transactions.md)
+
 **Tax adjustment**
 
 - [Tax amount adjustment](apac-ind-gst-tax-adjustments.md)
@@ -191,7 +195,6 @@ This topic provides links to documentation resources for India.
 - [Include GST when calculating tax collections](apac-ind-gst-include-gst-calculating-tax-collections.md)
 - [Tax thresholds for India FAQ](apac-ind-tax-thresholds.md)
 - [TCS on sales of goods](apac-ind-gst-tcs-on-sale-of-goods-section-206c-(1h).md)
-
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
