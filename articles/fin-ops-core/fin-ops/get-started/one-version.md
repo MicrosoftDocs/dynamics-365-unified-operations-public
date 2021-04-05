@@ -137,18 +137,18 @@ You can pause an update up to 4 months or 3 consecutive service updates by way o
 
 No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to the production environment if the environments are more than 3 service updates old. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1, 10.0.2, and 10.0.3 then service update 10.0.4 will be auto applied to the sandbox. 
 
-### What happens to if an environment is running on a version that’s out of support?
-For all online services of Microsoft managed environments, including all sandbox, add-on, and production environments, as well as on-premises implementation environments, some Lifecycle Services (LCS) functionalities may not be available to the environment when its version is out of support. 
+### What happens to an environment that is running a Finance and Operations version that is no longer supported?
+Environments that are running a Finance and Operations version that is no longer supported display a warning message at the top of the environment details page in LCS.
 
-When an environment is running on a version that’s out of support, you will see a warning message on top of your environment in the LCS portal, you should apply a latest Service Update as soon as possible to keep it current.  If you don’t take any action to keep it up to date, some functionalities of LCS may not be available for that environment when the next version is released.  The functionalities are but not limited to - 
+For all Microsoft-managed environments, including sandbox and production environments, as well as on-premises implementation environments, some Lifecycle Services (LCS) functionality may not be available when an environment is running a Finance and Operations version that is no longer supported. The LCS functionality that may not be available includes the ability to do the following:
 
  - Enable maintenance mode
- - Move database
+ - Move databases
  - Enable access
- - Download RSAT certificate
- - Regenerate RSAT certificate
+ - Download RSAT certificates
+ - Regenerate RSAT certificates
 
-Once you apply a latest Service Update, these functionalities will be available again to the environment.  
+After you apply a service update, this functionality will be available in the affected environment.
 
 ### What if I find an issue during the sandbox update?
 
