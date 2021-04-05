@@ -12,7 +12,7 @@ ms.author: ramasri
 ms.search.validFrom: 2021-03-31
 ---
 
-# Upgrade your dual-write data to "Party and Global Address Book" model
+# Upgrade to party and global address book model
 
 [!include [banner](../../includes/banner.md)]
 
@@ -63,25 +63,25 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
 6. Open the data factory and click on "Author & Monitor" tile shown below. 
 
-    ![ADF1](media/ADF1.png)
+    ![ADF1](media/data-factory-1.png)
 
 7. Go to Manage tab and click on "ARM template" from the left panel. 
   
 8. Click on Import ARM template to import the party template. 
 
-   ![ADF2](media/ADF2.png)
+   ![ADF2](media/data-factory-2.png)
 
 9. [Import ARM template](https://docs.microsoft.com/en-us/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment) into the data factory. During import, a settings section appears as shown below. Enter the configuration values. For more guidance, please follow [FO Linked Service Configuration](https://docs.microsoft.com/en-us/azure/data-factory/connector-dynamics-ax#linked-service-properties) and [CRM Linked Service Configuration](https://docs.microsoft.com/en-us/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online). 
 
-   ![ADF3](media/ADF3.png)
+   ![ADF3](media/data-factory-3.png)
 
 10. After deployment, validate the Datasets, Data flow and Linked Service.  
 
-   ![ADF4](media/ADF4.png)
+   ![ADF4](media/data-factory-4.png)
 
 11. Go to Manage. Under "Connections" you will see "Linked Service" menu. When you click on it, you will see "DynamicsCrmLinkedService" item. When you click on it, you will find "Edit Linked Service" form sliding from the right.  You need to provide the Service URI as shown below. 
 
-    ![ADF5](media/ADF5.png)
+    ![ADF5](media/data-factory-5.png)
 
   
 ## Run the Data Factory with “Upgrade to Party-GAB” Template 
@@ -158,7 +158,7 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
 7. Now, go to your Data Factory and run the "Upgrade to Party- GAB" template by clicking on "Trigger now" as shown below. This may take few hours to complete based on the volume. [Note: In case you have customizations around Account, Contact and Vendor, then you need to add those customizations to the given template before running.] 
 
-    ![ADF6](media/ADF6.png)
+    ![ADF6](media/data-factory-6.png)
 
 8. Import new party records in Finance and Operations 
 
@@ -166,7 +166,7 @@ This pages provides step by step instructions to use the ADF template and upgrad
 
     + Convert the FONewParty.csv file into an Excel and [import it into Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job). In case CSV import works for you, you can import CSV file directly. This step could take few hours to complete depending on the volume. 
 
-    ![ADF7](media/ADF7.png)
+    ![ADF7](media/data-factory-7.png)
 
 9. Now in Customer Engagement applications, enable the following plugin steps  
 
