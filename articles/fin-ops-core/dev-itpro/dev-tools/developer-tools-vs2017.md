@@ -21,22 +21,25 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic lists the Visual Studio 2017 components that are required to run the **Visual Studio** extension for X++.
 
 > [!NOTE]
-> We do not recommend installing Visual Studio manually on the downloadable VHD or virtual machines deployed from LCS. Instead, it is strongly encouraged to download or deploy a new virtual machine. Virtual machines deployed with versions 10.0.13 or later all have Visual Studio 2017 and its prerequisites installed, and come with other updates outside of Visual Studio to help keep the machines compatible and secure.
+> We do not recommend installing Visual Studio manually on the downloadable virtual hard drive (VHD) or virtual machines deployed from Lifecycle Services (LCS). Instead, we strongly recommend that you download or deploy a new virtual machine. Virtual machines deployed with versions 10.0.13 or later all have Visual Studio 2017 and its prerequisites installed, and come with other updates outside of Visual Studio to help keep the machines compatible and secure.
 
-## Visual Studio Editions
+## Visual Studio editions
 
-The supported editions are Visual Studio 2017 Professional and Visual Studio 2017 Enterprise.
+The supported editions of Visual Studio include:
+
+- Visual Studio 2017 Professional
+- Visual Studio 2017 Enterprise
 
 > [!NOTE]
-> Different Visual Studio editions have different licensing requirements and costs. For more information, see [Visual Studio website](https://visualstudio.microsoft.com).
+> Different Visual Studio editions have different licensing requirements and costs. For more information, see [Visual Studio](https://visualstudio.microsoft.com).
 
-## Required Visual Studio Components
+## Required Visual Studio components
 
 The following table lists the required Visual Studio components.
 
 | Type | Name | Required | Notes |
 | --- | --- | --- | --- |
 | Workload | .NET desktop development | Yes | |
-| Individual Component | Modeling SDK | Yes | |
-| Individual Component | Directed Graph Markup Language (.dgml) editor | No | This component is used for dependency graph features. |
-| Marketplace | Microsoft Reporting Services Projects | Yes (for report development) | This component is needed for report development. If the component isn't installed, Visual Studio will prompt you when you try to open report designs. |
+| Individual component | Modeling SDK | Yes | |
+| Individual component | Directed Graph Markup Language (.dgml) editor | No | This component is used for dependency graph features. |
+| Marketplace | Microsoft Reporting Services projects | Yes (for report development) | This component is needed for report development. If the component isn't installed, Visual Studio will prompt you when you try to open report designs. |
