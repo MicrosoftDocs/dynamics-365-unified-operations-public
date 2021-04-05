@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial dimension sets
-description: This topic describes various information related to financial dimension sets.
+description: This topic describes financial dimension sets and provides some tips for optimizing their use.
 author: yukonpeegs
 manager: AnnBe
 ms.date: 03/23/2021
@@ -32,38 +32,40 @@ ms.dyn365.ops.version: 10.0.16
 
 This topic describes financial dimension sets and provides some tips for optimizing their use.
 
-Use the **Financial dimension sets** page to create and manage financial dimension sets.
+A dimension set is an ordered list of financial dimensions that can be used to summarize General ledger data in a user-defined way. A primary use of dimension sets is to define a trial balance.
 
-A dimension set is an ordered list of financial dimensions that can be used to summarize General ledger data in a user-defined way. The dimension set that contains only the main account is the only standard dimension set. A primary use of a dimension set is to define a trial balance.
+The only standard dimension set is the dimension set that contains only the main account.
+
+You use the **Financial dimension sets** page to create and manage financial dimension sets.
 
 ## Dimension set balances
 
-A dimension set can have balances that are based on the financial dimensions of the dimension set. The balances exist in General ledger and are based on the dimension set definition. They're summarized from the General ledger data to improve performance when the balances are retrieved, for example, when a trial balance is generated.
+A dimension set can have balances that are based on its financial dimensions. The balances exist in General ledger and are based on the dimension set definition. The balances are summarized from the General ledger data to help improve performance when they are retrieved (for example, when a trial balance is generated).
 
 ## Create balances
 
-Use the **Create balances** button to initialize the balances on a dimension set that does not currently have balances.
+Use the **Create balances** button to initialize the balances for a dimension set that doesn't currently have balances.
 
 > [!NOTE]
-> We recommend limiting the number of dimension sets with balances, because updating the balances has an impact on all General ledger posting activities.
+> We recommend that you limit the number of dimension sets that have balances, because balance updates affect all General ledger posting activities.
 
 ## Update balances
 
-Use the **Update balances** button to include the latest General ledger posting activity in the balances. Updating balances is a light operation and only has to process the General ledger posting activity since the last update.
+Use the **Update balances** button to include the latest General ledger posting activity in the balances. Balance updates are light operations. They must process only the General ledger posting activity that has occurred since the last update.
 
 > [!NOTE]
-> Displaying the trial balance forces an update to make sure the balances are current. Consider using a recurring batch job to make sure updates to your most frequently used dimension sets are quick because that will minimize the wait for the trial balance user.
+> Display of the trial balance forces an update, to ensure that the balances that are shown are current. Consider using a recurring batch job so that updates to your most frequently used dimension sets are quick. In this way, you help minimize the time that trial balance users must wait.
 
 ## Rebuild balances
 
-Use the **Rebuild balances** button to recreate the balances from scratch, ensuring they match the data in General ledger. Rebuilding balances requires a lot of processing and shouldn't be necessary most of the time.
+Use the **Rebuild balances** button to re-create the balances from scratch. In this way, you help ensure that they match the data in General ledger. A rebuild of balances requires lots of processing and should not usually be required.
 
 > [!NOTE]
-> If you have a scenario that regularly requires rebuilding balances, we recommend contacting customer support for help in determining the reason that balances don't match the the data in General ledger.
+> If you have a scenario that regularly requires a rebuild of balances, we recommend that you contact customer support. Customer support can help you determine why balances don't match the data in General ledger.
 
 ## Clear balances
 
-Use **Clear balances** to remove the balances and stop any further updates. The dimension set will no longer have an impact on General ledger posting activities.
+Use the **Clear balances** button to remove the balances and stop any further updates. The dimension set will no longer have an impact on General ledger posting activities.
 
 For more information, see [Financial dimensions](tasks/financial-dimensions.md).
 
