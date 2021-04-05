@@ -1,6 +1,6 @@
 ---
-title: Upgrade your dual-write data to "Party and Global Address Book" model 
-description: This topic describes the steps to upgrade the existing dual-write data to the "Party and Global Address Book" schema of dual-write.
+title: Upgrade to the party and global address book model
+description: This topic describes how to upgrade dual-write data to the party and global address book model.
 author: RamaKrishnamoorthy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,246 +12,186 @@ ms.author: ramasri
 ms.search.validFrom: 2021-03-31
 ---
 
-# Upgrade to party and global address book model
+# Upgrade to the party and global address book model
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+The [Azure Data Factory template](https://aka.ms/dual-write-gab-adf) helps you upgrade existing **Account**, **Contact**, and **Vendor** table data in dual-write to the party and global address book model. The template reconciles the data from both Finance and Operations apps and customer engagement applications. At the end of the process, **Party** and **Contact** fields for **Party** records will be created and associated with **Account**, **Contact**, and **Vendor** records in customer engagement applications. A .csv file (`FONewParty.csv`) is generated to create new **Party** records inside the Finance and Operations app. Without the template, you had to manually import this .csv file into the Finance and Operations app. This topic provides the instructions to use the Data Factory template and upgrade your data.
 
-For the existing dual-write customers, the [Upgrade to Party-GAB](https://aka.ms/dual-write-gab-adf) ADF template helps to upgrade the Account, Contact and Vendor data from pre-Party data model to Party-GAB model. It includes 38 steps in total to reconcile the data from both Finance and Operations applications and Customer Engagement applications. At the end of the process, Party and Contact for Party records will be created and associated with Account, Contact and Vendor records in and Customer Engagement applications. A csv file (FONewParty.csv) is generated to create new Party records inside Finance and Operations. Right now, you need to manually import this csv file into Finance and Operations. However, we are exploring options to automate it end to end.  
-This pages provides step by step instructions to use the ADF template and upgrade your data.  
+The template is a working template. If you don’t have any customizations, you can use the template as-is. If you have customizations for **Account**, **Contact**, and **Vendor** then you must modify the template using the following instructions.
 
-"Upgrade to Party-GAB" ADF template is a working template. If you don’t have any customizations, you can consume this template as-is. In case you have customizations around Account, Contact and Vendor then you need to modify the template to cater to your customizations and use it as instructed below. 
+> [!Note]
+> The template helps to upgrade only the **Party** data. In a future release, postal and electronic addresses will be included.
 
->[!Note] Scope: At present, the template helps to upgrade only the Party data. This will be expanded to include postal and electronic addresses. But the work is currently in progress. Once it is available, it will be added to the zip file. 
+## Prerequisites
 
+These prerequisites are required:
 
-## Prerequisites 
++ [Azure subscription](https://portal.azure.com/)
++ [Access to the template](https://aka.ms/dual-write-gab-adf)
++ You are an existing dual-write customer.
 
-1. [Azure subscription](https://portal.azure.com/) 
+## Prepare for the upgrade
 
-2. [Access to Upgrade to Party-GAB template](https://aka.ms/dual-write-gab-adf) 
++ **Fully synched**: Both systems are in fully synched state for **Account (Customer)**, **Contact**, and **Vendor**.
++ **Integration keys**: **Account (Customer)**, **Contact**, and **Vendor** tables in customer engagement apps are using the integration keys that shipped out-of-the-box. If you customized the integration keys, you must customize the template.
++ **Party number**: All **Account (Customer)**, **Contact**, and **Vendor** records that will be upgraded have a **Party** number. Records without a **Party** number will be ignored. If you want to upgrade those records, add a **Party** number to them before you start the upgrade process.
++ **System outage**: During the upgrade process, you will have to take both the Finance and Operations and customer engagement apps offline.
++ **Snapshot**: Take snapshots of both the Finance and Operations and customer engagement apps. Use the snapshots to restore the previous state if you need to.
 
-  
-## Assumptions and Recommendations  
-
-1. You are an existing dual-write customer. 
-
-2. Both systems are in fully synced state for Account(Customer), Contact and Vendor. 
-
-3. Account(Customer), Contact and Vendor entities on Customer Engagement applications are using the integration keys we shipped out-of-the-box. If not, you need to customize the ADF Party template we have provided you. 
-
-4. All Account (Customer), Contact and Vendor records that require upgrade has a party number. In case party number is missing, those will be ignored. If you want to upgrade them as well, then you need to add it before proceeding further.  
-
-5. This upgrade needs a system outage for both Finance and Operations applications and Customer Engagement applications. So, make sure no one is using the system until the upgrade is complete. 
-
-6. Take snapshot of both systems Finance and Operations applications and Customer Engagement applications to restore back to previous state if needed. 
-
-  
 ## Deployment Steps
 
-1. Download the ARM template from [here](https://aka.ms/dual-write-gab-adf).   
+1. Download the template from [Dynamics-365-FastTrack-Implementation-Assets](https://aka.ms/dual-write-gab-adf).
 
-2. Sign in to the [Azure portal](https://portal.azure.com/). 
+2. Sign in to [Microsoft Azure](https://portal.azure.com/).
 
-3. Create a  [Resource group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal). 
+3. Create a [resource group](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-4. Create a [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal) in the above resource group.  
+4. Create a [storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) in the resource group that you created.
 
-5. Create a [Data factory](https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-portal) in above resource group.  
+5. Create a [data factory](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal) in above resource group that you created.
 
-6. Open the data factory and click on "Author & Monitor" tile shown below. 
+6. Open the data factory and select the **Author & Monitor** tile.
 
-    ![ADF1](media/data-factory-1.png)
+7. On the **Manage** tab, select **ARM template**.
 
-7. Go to Manage tab and click on "ARM template" from the left panel. 
-  
-8. Click on Import ARM template to import the party template. 
+8. Select the **Import ARM template** to import the party template.
 
-   ![ADF2](media/data-factory-2.png)
+9. Import the template into the data factory. Enter the following values for the **Project details** and the **Instance details**.
 
-9. [Import ARM template](https://docs.microsoft.com/en-us/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment) into the data factory. During import, a settings section appears as shown below. Enter the configuration values. For more guidance, please follow [FO Linked Service Configuration](https://docs.microsoft.com/en-us/azure/data-factory/connector-dynamics-ax#linked-service-properties) and [CRM Linked Service Configuration](https://docs.microsoft.com/en-us/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online). 
+    Field | Value
+    ---|---
+    Subscription | Azure subscription
+    Resource group | Provide same resource under which storage account is created.
+    Region | Specify region.
+    Factory Name | Specify factory name.
+    FO Linked Service_service Principal Key | Specify the application's key.
+    Azure Blob Storage_connection String | Azure Blob storage connection string.
+    Dynamics Crm Linked Service_password | The password for the user account you specified as the username.
+    FO Linked Service_properties_type Properties_url  | `https://sampledynamics.sandbox-operationsdynamics.com/data`
+    FO Linked Service_properties_type Properties_tenant | Specify the tenant information (domain name or tenant ID) under which your application resides.
+    FO Linked Service_properties_type Properties_aad Resource Id | `https://sampledynamics.sandboxoperationsdynamics.com`
+    FO Linked Service_properties_type Properties_service Principal Id | Specify the application's client ID.
+    Dynamics Crm Linked Service_properties_type Properties_username | The username to connect to Dynamics.
 
-   ![ADF3](media/data-factory-3.png)
+    For more information, see [Manually promote a Resource Manager template for each environment](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [FO Linked Service Configuration](https://docs.microsoft.com/azure/data-factory/connector-dynamics-ax#linked-service-properties), and [CRM Linked Service Configuration](https://docs.microsoft.com/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
-10. After deployment, validate the Datasets, Data flow and Linked Service.  
+10. After deployment, validate the datasets, data flow, and linked service of the data factory.
 
-   ![ADF4](media/data-factory-4.png)
+   ![Datasets, data flow, and linked service](media/data-factory-4.png)
 
-11. Go to Manage. Under "Connections" you will see "Linked Service" menu. When you click on it, you will see "DynamicsCrmLinkedService" item. When you click on it, you will find "Edit Linked Service" form sliding from the right.  You need to provide the Service URI as shown below. 
+11. Navigate to **Manage**. Under **Connections**, select **Linked Service**. Select **DynamicsCrmLinkedService**. In the **Edit linked service (Dynamics CRM)** form, enter the following values:
 
-    ![ADF5](media/data-factory-5.png)
+    Field | Value
+    ---|---
+    Name | DynamicsCrmLinkedService
+    Description | Linked services to connect with CRM instance to fetch entities data
+    Connect via integration runtime | AutoResolvelntegrationRuntime
+    Deployment type | Online
+    Service Uri | `https://<organization-name>.crm[x].dynamics.com`
+    Authentication type | Office365
+    User name |
+    Password or Azure Key Vault | Password
+    Password |
 
-  
-## Run the Data Factory with “Upgrade to Party-GAB” Template 
+## Run the Data Factory with “Upgrade to Party-GAB” Template
 
-1. Stop the following Account, Contact and Vendor dual-write maps inside Finance and Operations. 
+1. Stop the following **Account**, **Contact**, and **Vendor** dual-write using the Finance and Operations app.
 
-    + Customers V3(accounts) 
+    + Customers V3(accounts)
+    + Customers V3(contacts)
+    + CDS Contacts V2(contacts)
+    + CDS Contacts V2(contacts)
+    + Vendor V2 (msdyn_vendor)
 
-    + Customers V3(contacts) 
+2. Make sure the maps are removed from the `msdy_dualwriteruntimeconfig` table in Dataverse.
 
-    + CDS Contacts V2(contacts) 
+3. Install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab) from AppSource.
 
-    + CDS Contacts V2(contacts) 
+4. In the Finance and Operations app, if the following tables contain data, then run **Initial Sync** for them.
 
-    + Vendor V2 (msdyn_vendor) 
+    + Salutations
+    + Personal character types
+    + Complimentary closing
+    + Contact person titles
+    + Decision making roles
+    + Loyalty levels
 
-2. Make sure the above 5 maps are removed from the "msdy_dualwriteruntimeconfig" entity in Dataverse. 
+5. In the customer engagement app, disable the following plugin steps.
 
-3. Install [dual-write Party & Global Address Book solution](https://aka.ms/dual-write-gap) from Appsource.
-
-4. In Finance and Operations, if the following tables contain data, then please run "Initial Sync" for them. Otherwise, you can skip this step.  
-
-    + Salutations 
-
-    + Personal character types 
-
-    + Complimentary closing 
-
-    + Contact person titles 
-
-    + Decision making roles 
-
-    + Loyalty levels 
-
-5. In Customer Engagement applications, disable the following plugin steps. 
-
-    + Account Update  
-
+    + Account Update
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account
-         
-         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Update of account 
+         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Update of account
+    + Contact Update
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromContactEntity: Update of contact
+         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForSellableContact: Update of contact
+    + msdyn_party Update
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromPartyEntity: Update of msdyn_party
+    + msdyn_vendor Update
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor
 
-    + Contact Update  
+6. In the customer engagement app, disable the following workflows:
 
-         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromContactEntity: Update of contact 
+    + Create Vendors in Accounts Table
+    + Create Vendors in Accounts Table
+    + Create Vendors of type person in Contacts Table
+    + Create Vendors of type Person in Vendors Table
+    + Update Vendors in Accounts Table
+    + Update Vendors in Vendors Table
+    + Update Vendors of type Person in Contacts Table
+    + Update Vendors of type Person in Vendors Table
 
-         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForSellableContact: Update of contact 
-
-    + msdyn_party Update 
-
-         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromPartyEntity: Update of msdyn_party 
-
-    + msdyn_vendor Update  
-
-         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor 
-
-6. In CE, disable the following workflows: 
-
-    + Create Vendors in Accounts Table 		 
-
-    + Create Vendors in Accounts Table 		 
-
-    + Create Vendors of type person in Contacts Table 		 
-
-    + Create Vendors of type Person in Vendors Table 		 
-
-    + Update Vendors in Accounts Table 		 
-
-    + Update Vendors in Vendors Table 		 
-
-    + Update Vendors of type Person in Contacts Table 		 
-
-    + Update Vendors of type Person in Vendors Table 
-
-7. Now, go to your Data Factory and run the "Upgrade to Party- GAB" template by clicking on "Trigger now" as shown below. This may take few hours to complete based on the volume. [Note: In case you have customizations around Account, Contact and Vendor, then you need to add those customizations to the given template before running.] 
+7. In the data factor and run the template by selecting on **Trigger now** as shown in the following image. This process might take a few hours to complete based on the data volume.
 
     ![ADF6](media/data-factory-6.png)
 
-8. Import new party records in Finance and Operations 
+    > [!NOTE]
+    > If you have customizations for **Account**, **Contact**, and **Vendor** then you must modify the template.
 
-    + Download FONewParty.csv file from Azure blob storage - (Path: partybootstrapping/output/FONewParty.csv) 
+8. Import the new **Party** records in the Finance and Operations app.
 
-    + Convert the FONewParty.csv file into an Excel and [import it into Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job). In case CSV import works for you, you can import CSV file directly. This step could take few hours to complete depending on the volume. 
+    + Download the `FONewParty.csv` file from Azure blob storage. The path is `partybootstrapping/output/FONewParty.csv`.
+    + Convert the `FONewParty.csv` file into an Excel file and import it into the Finance and Operations app.  If the CSV import works for you, you can import CSV file directly. The import could take a few hours to run, depending on the data volume. For more information, see [Data import and export jobs overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).
 
-    ![ADF7](media/data-factory-7.png)
+    ![Import the Datavers party records](media/data-factory-7.png)
 
-9. Now in Customer Engagement applications, enable the following plugin steps  
+9. In the customer engagement apps, enable the following plugin steps:
 
-    + Account Update  
+    + Account Update
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account
+         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Update of account
+    + Contact Update
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromContactEntity: Update of contact
+         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForSellableContact: Update of contact
+    + msdyn_party Update
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromPartyEntity: Update of msdyn_party
+    + msdyn_vendor Update
+         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor
 
-         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromAccountEntity: Update of account 
+10. In the customer engagement apps, activate the following workflows if you deactivated them in previous steps:
 
-         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForCustomerTypeCodes: Update of account 
+    + Create Vendors in Accounts Table
+    + Create Vendors in Accounts Table
+    + Create Vendors of type person in Contacts Table
+    + Create Vendors of type Person in Vendors Table
+    + Update Vendors in Accounts Table
+    + Update Vendors in Vendors Table
+    + Update Vendors of type Person in Contacts Table
+    + Update Vendors of type Person in Vendors Table
 
-    + Contact Update  
+11. Run the **Party** related maps as instructed in [Party and global address book](party-gab.md).
 
-         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromContactEntity: Update of contact 
+## Troubleshooting
 
-         + Microsoft.Dynamics.FinanceExtended.Plugins.TriggerNotesForSellableContact: Update of contact 
+1. In the process fails, rerun the data factory starting from the failed activity.
+2. Some files are generated by the data factor that you can use for data validation purpose.
+3. The data factory runs based on csv files that are comma-delimited. If there is a field value that has a comma, it may interfere with the results. You need to remove the commas.
+4. The **Monitoring** tab provides information about all steps and data processed. Select a specific step to debug it.
 
-    + msdyn_party Update 
+    ![Monitoring tab](media/data-factory-8.png)
 
-         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromPartyEntity: Update of msdyn_party 
+## Learn more about the "Upgrade to Party-GAB" template
 
-    + msdyn_vendor Update  
-
-         + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor 
-
-10. Now in CE, activate the following workflows if deactivated in above steps: 
-
-    + Create Vendors in Accounts Table 		 
-
-    + Create Vendors in Accounts Table 		 
-
-    + Create Vendors of type person in Contacts Table 		 
-
-    + Create Vendors of type Person in Vendors Table 		 
-
-    + Update Vendors in Accounts Table 		 
-
-    + Update Vendors in Vendors Table 		 
-
-    + Update Vendors of type Person in Contacts Table 		 
-
-    + Update Vendors of type Person in Vendors Table 
-
-11. Run Party related maps as instructed [here](party-gab.md). 
-
-
-## Tips for troubleshooting the ADF execution: 
-
-1. In case of failure, re-run data factory from failed activity. 
-
-2. Few files get generated by the ADF which could be used for data validation purpose. 
-
-3. ADF works based on csv files that is comma delimited. If there is a field value like a name or description (say notes) that has a comma, it may interfere with the results. So you need to remove those commas. 
-
-4. “Monitoring” tab provide information about all steps and data processed by ADF, click on the specific step to debug. 
-
-    ![ADF8](media/ADF8.png)
-    
-
-## Learn more about the "Upgrade to Party-GAB" template  
-
-  + Steps 1 to 6 identifies the companies that are enabled for dual-write and builds a filter clause for them. 
-
-  + Steps  7-1 to 7-9 retrieves the data from both Finance and Operations and Customer Engagement applications and stage the data for upgrade.   
-
-  + Steps 8 to 9 compare the party number for Account, Contact and Vendor between Finance and Operations and Customer Engagement applications. The records that doesn’t have party number are skipped here. 
-
-  + Step 10 generate 2 csv file for party records to create in Customer Engagement applications and Finance and Operations applications. 
-
-  + FOCDSParty.csv contains all party records of both systems irrespective of company enabled for dual write 
-
-  + FONewParty.csv contains subset of the party which Dataverse is aware of e.g. account of type prospect. 
-
-  + Step 11 creates the Parties in Customer Engagement applications. 
-
-  + Step 12 retrieves the Party guids from Customer Engagement applications and stage it for associating with Account, Contact and Vendor records in the subsequent steps.  
-
-  + Step 13 associates the Account, Contact and Vendor records with Party guid. 
-
-  + Steps 14-1 to 14-3 updates the Account, Contact and Vendor records in Customer Engagement applications with Party guid.  
-
-  + Steps 15-1 to 15-3 prepare "Contact for Party" records for Account, Contact and Vendor. 
-
-  + Steps 16-1 to 16-7 retrieves the reference data like salutations, personal character types etc. and associate them with "Contact for Party" records. 
-
-  + Step 17 merges the "Contact for Party" records for Account, Contact and Vendor. 
-
-  + Step 18 Import "Contact for Party" records into Customer Engagement applications. 
-
- 
+You can find comments for the template the [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) file.
