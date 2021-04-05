@@ -1482,6 +1482,8 @@
           href: localizations/emea-aut-packing-material-fee-calculation.md
         - name: VAT statement
           href: localizations/emea-aut-vat-statement-details.md
+        - name: Cross-border services report
+          href: localizations/emea-aut-cross-border-services-report.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
