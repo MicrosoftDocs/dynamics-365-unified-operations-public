@@ -1,12 +1,14 @@
-﻿---
-title: 
-description: 
+---
+# required metadata
+
+title: GB/T 24589-2010 export
+description: You can use the GB/T 24589-2010 export feature to export accounting data, including master data and transaction data, to several XML files for a specific period
 ms.date: 04.05.2021
 ms.topic: conceptual
 ms.service: dynamics365-financials
 author: anasyash
 ms.author: anasyash
-manager: 
+
 ---
 
 You can use the GB/T 24589-2010 export feature to export accounting
