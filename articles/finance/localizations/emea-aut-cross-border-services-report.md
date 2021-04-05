@@ -1,15 +1,36 @@
-﻿---
-title: 
-description: 
-ms.date: 04.05.2021
+---
+# required metadata
+
+title: Cross-border services report
+description: The Cross-border services report shows a summary of incoming and
+outgoing cross-border services, the countries or regions that are the
+providers or recipients of the cross-border services, and the net
+amounts that were paid for the services.
+author: anasyash
+ms.date: 04/5/2021
 ms.topic: article
-ms.service: dynamics365-financials
-author: andosip
-ms.author: andosip
-manager: anasyash
+ms.prod:
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:
+audience: 
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope:
+# ms.tgt_pltfrm: 
+# ms.custom: NotInTOC
+ms.search.region: 
+# ms.search.industry:
+ms.author: anasyash
+ms.search.validFrom: 2
+ms.dyn365.ops.version:
 ---
 
 # Cross-border services report
+
+[!include [banner](../includes/banner.md)]
 
 Austrian companies must periodically report services that are purchased
 and sold across borders, if those services meet specific thresholds for
@@ -72,7 +93,7 @@ following parameters.
 | Group by | Select whether the report should be printed by the type of service or by country or region. |
 
 
-## 
+
 
 ## Example
 
