@@ -38,12 +38,12 @@ Check whether the transaction has a large number of lines, for example more than
 
   1. Import transactions from large files.
   2. Multiple sessions process the same transaction tax calculation at the same time.
-  3. The transaction has multiple lines, and there are views refresh in real-time, for example, the 'Calculated sales tax amount' in General journal form, the 'Calculated sales tax amount' refresh in real-time when line's fields changed.
+  3. The transaction has multiple lines and the views refresh in real time. For example, the **Calculated sales tax amount** field on the **General journal** page refreshes in real time when line's fields changed.
 
      [![Calculated sales tax amount field on the Jounal voucher page](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
 ## Check call stack 
-Check the call stack to verify whether tax calculation is called multiple times. If yes, reduce the tax calculation times according to the following steps. If is isn't, skip to the next section.
+Check the call stack to verify whether tax calculation is called multiple times. If yes, reduce the tax calculation times according to the following steps. If it isn't, skip to the next section.
 
 1. If the journal has considered the transaction, see [Enable delayed tax calculation on journals](enable-delayed-tax-calculation.md) to delay tax calculation.
 2. If it's a purchase order and the application version is higher than 10.0.15, enabling the flighting for **PurchTableChangeMgmtDistributionUpdateOnToggle_KillSwitc**h can delay the tax calculation until the final calculation.
@@ -55,11 +55,11 @@ Check the call stack timeline to confirm whether the following issues exist. If 
 
      [![Session ended message](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
 
-- The **TaxUncommitted** methods cost significantly more time than other methods. For example, **TaxUncommitted::updateTaxUncommitted()** costs 43347.42 seconds, but other methods cost 0.09 seconds.
+- The **TaxUncommitted** methods cost more time than other methods. For example, **TaxUncommitted::updateTaxUncommitted()** costs 43,347.42 seconds, but other methods cost 0.09 seconds.
 
      [![Showing the time count](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
 
-## Customizing and calling Tax Calcuation
+## Customizing and calling Tax Calculation
 When you are customizing, don't call tax calculation at the insert() or update() for each line. Tax calculation should be called at the transaction level.
 
 ## Verify customization
