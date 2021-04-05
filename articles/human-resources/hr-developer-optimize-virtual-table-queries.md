@@ -38,9 +38,9 @@ ms.dyn365.ops.version: Human Resources
 
 ### Overview 
 
-When using Dataverse virtual tables to develop integrations and other data connections with Dynamics 365 Human Resources, you can experience performance issues with the queries against the virtual tables. The slow query execution can occur across various clients or interfaces. For example, you may experience the issue when querying a virtual table through the Dataverse Web API, when creating a Power App against a virtual table, or when building a Power BI report on a virtual table. All these interfaces have the potential to surface the performance issue. 
+When using Dataverse virtual tables to develop integrations and other data connections with Dynamics 365 Human Resources, you can experience performance issues with queries against the virtual tables. The slow query execution can occur across various clients or interfaces. For example, you may experience the issue when querying a virtual table through the Dataverse Web API, when creating a Power App against a virtual table, or when building a Power BI report on a virtual table. All these interfaces have the potential to surface the performance issue. 
 
-One of the causes of slow performance with Dataverse virtual tables for Human Resources is the foreign key columns of the virtual table related to the table's [navigation properties](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/web-api-types-operations#navigation-properties). When navigation properties are created for a virtual table, a foreign key column is automatically added to the table to represent the value of the key for the related virtual table's key column. For example, the `_mshr_fk_person_id_value` column is added to the `mshr_hcmworkerbaseentity` entity with the foreign key property from the `mshr_dirpersonentity` entity. Because of how the values for these foreign key columns are maintained in an entity, fetching the values can have a negative impact on the performance of a query against the virtual table.
+One of the causes of slow performance with Dataverse virtual tables for Human Resources is the foreign key columns of the virtual table related to the table's [navigation properties](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/web-api-types-operations#navigation-properties). When navigation properties are created for a virtual table, a foreign key column is automatically added to the table to represent the value of the key for the related virtual table's key column. For example, the `_mshr_fk_person_id_value` column is added to the `mshr_hcmworkerbaseentity` entity with the foreign key property from the `mshr_dirpersonentity` entity. Because of how the values for these foreign key columns are maintained in a table, fetching the values can have a negative impact on the performance of a query against the virtual table.
 
 ### Potential symptoms
 
@@ -90,7 +90,7 @@ See [Retrieve related entity records with a query](https://docs.microsoft.com/po
 
 #### Selecting columns in Power BI
 
-If you experience any of the aforementioned indications of slow performance when building a Power BI report against a Dataverse virtual table, you can improve the performance by excluding foreign key columns from the columns selected from the table for the report. For example, if you are using Power BI Desktop to create a report against the `mshr_hcmworkerbaseentities` entity, you can use the following steps to select the columns you want included in the report query.
+If you experience any of the aforementioned indications of slow performance when building a Power BI report against a Dataverse virtual table, you can improve the performance by excluding foreign key columns from the columns selected from the table for the report. For example, if you are using Power BI Desktop to create a report against the `mshr_hcmworkerbaseentity` entity, you can use the following steps to select the columns you want included in the report query.
 
 1. In Power BI Desktop, select **More...** from the **Get data** drop-down list on the action ribbon.
 2. In the Get Data window, enter **Common Data Service** in the search box, select the **Common Data Service** connector, and click **Connect**.
@@ -126,7 +126,7 @@ You're then able to begin building your Power BI report against the columns sele
 
 #### Selecting columns in Power Apps
 
-Similar to Dataverse Web API queries and Power BI, you can improve query performance for Power Apps based on Dataverse virtual tables by excluding columns of related tables from your app. If any columns from a related table have been included on a page, then the request URL constructed to fetch the data will include foreign key properties of the related table. This, as in the examples of Selecting columns in an OData Query above, reduces performance by causing additional data lookups.
+Similar to Dataverse Web API queries and Power BI, you can improve query performance for Power Apps based on Dataverse virtual tables by excluding columns of related tables from your app. If any columns from a related table have been included on a page, then the request URL constructed to fetch the data will include foreign key properties of the related table. This, as in the examples of [Selecting columns in an OData Query](#selecting-columns-in-power-apps) above, reduces performance by causing additional data lookups.
 
 To work around this, you can validate that no data fields from related tables have been included on any data form of your Power App.
 
@@ -148,7 +148,9 @@ See [Filter results](https://docs.microsoft.com/powerapps/developer/data-platfor
 
 ### Limiting the page size of the query
 
-If you are working with large data sets, you can divide query results into multiple pages by adding the `odata.maxpagesize` preference header to data queries. For more information on paging, see [Specify the number of entities to return in a page](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/query-data-web-api#specify-the-number-of-entities-to-return-in-a-page).
+If you are working with large data sets, you can divide query results into multiple pages by adding the `odata.maxpagesize` preference header to data queries. 
+
+For more information on paging, see [Specify the number of entities to return in a page](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/query-data-web-api#specify-the-number-of-entities-to-return-in-a-page).
 
 ## See also
 
