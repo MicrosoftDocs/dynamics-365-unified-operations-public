@@ -140,15 +140,15 @@ No, service updates will be automatically applied to the sandbox, then 7 days la
 ### What happens to an environment that is running a Finance and Operations version that is no longer supported?
 Environments that are running a Finance and Operations version that is no longer supported display a warning message at the top of the environment details page in LCS.
 
-For all Microsoft-managed environments, including sandbox and production environments, as well as on-premises implementation environments, some Lifecycle Services (LCS) functionality may not be available when an environment is running a Finance and Operations version that is no longer supported. The LCS functionality that may not be available includes the ability to do the following:
+For all Microsoft-managed environments, as well as sandbox and production environments in on-premises implementation projects, some Lifecycle Services (LCS) functionality may not be available when an environment is running a Finance and Operations version that is no longer supported. The LCS functionality that may not be available includes the ability to do the following:
 
  - Enable maintenance mode
- - Move databases
- - Enable access
+ - Use all capabilities provided for moving databases on an environment or across environments
+ - Enable firewall access to SQL Server databases
  - Download RSAT certificates
  - Regenerate RSAT certificates
 
-After you apply a service update, this functionality will be available in the affected environment.
+After you apply a service update for a supported version, this functionality will be available in the affected environment.
 
 ### What if I find an issue during the sandbox update?
 
