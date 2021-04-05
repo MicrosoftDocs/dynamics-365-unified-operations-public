@@ -171,7 +171,7 @@ entity.
 
 2.  Select **OK**, and review the report results.
 
-    ![Timeline Description automatically generated](media/image1.png)
+    ![Timeline Description automatically generated](media/emea-aut-cross-border-services-report-country-region.png)
 
 3.  Go to **Tax &gt; Inquiries and reports &gt; Sales tax reports &gt;
     Cross-border services**, and follow these steps:
@@ -192,7 +192,7 @@ entity.
 
 4.  Select **OK**, and review the report results.
 
-    ![Table Description automatically generated with low confidence](media/image2.png)
+    ![Table Description automatically generated with low confidence](media/emea-aut-cross-border-services-report-services.png)
 
 
 
