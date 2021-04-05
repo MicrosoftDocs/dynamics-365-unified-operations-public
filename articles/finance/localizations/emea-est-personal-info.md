@@ -4,7 +4,6 @@
 title: Personal information requests for Estonia
 description: This topic provides information about personal information requests for Estonia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/26/2018
 ms.topic: article
 ms.prod: 

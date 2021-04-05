@@ -4,7 +4,6 @@
 title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
 description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2.
 author: ShellyBakke
-manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: 

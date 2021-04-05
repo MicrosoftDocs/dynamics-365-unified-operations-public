@@ -4,7 +4,6 @@
 title: Create a new address book
 description: This topic describes how to create address books in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 

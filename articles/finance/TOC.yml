@@ -1416,13 +1416,13 @@
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
-      - name: Electronic invoicing add-in
+      - name: Electronic invoicing
         items: 
-        - name: Electronic invoicing add-in overview
+        - name: Electronic invoicing overview
           href: localizations/e-invoicing-service-overview.md
-        - name: Electronic invoicing add-in administration components
+        - name: Electronic invoicing administration components
           href: localizations/e-invoicing-service-administration.md
-        - name: Configure the Electronic invoicing add-in in Regulatory Configuration Services (RCS)
+        - name: Configure Electronic invoicing in Regulatory Configuration Services (RCS)
           href: localizations/e-invoicing-configuration-rcs.md
         - name: Issue electronic invoices in Finance and Supply Chain Management
           href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
@@ -1430,22 +1430,36 @@
           href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
         - name: Get started 
           items:
-          - name: Get started with Electronic invoicing add-in service administration
+          - name: Get started with Electronic invoicing service administration
             href: localizations/e-invoicing-get-started-service-administration.md
-          - name: Get started with the Electronic invoicing add-in
+          - name: Get started with Electronic invoicing
             href: localizations/e-invoicing-get-started.md
-          - name: Get started with Electronic invoicing add-in for Brazil
+          - name: Get started with Electronic invoicing for Brazil
             href: localizations/e-invoicing-bra-get-started.md
-          - name: Get started with Electronic invoicing add-in for Egypt
+          - name: Get started with Electronic invoicing for Egypt
             href: localizations/e-invoicing-eg-get-started.md
-          - name: Get started with Electronic invoicing add-in for Italy
+          - name: Get started with Electronic invoicing for Italy
             href: localizations/e-invoicing-ita-get-started.md
-          - name: Get started with the Electronic invoicing add-in for Mexico
+          - name: Get started with the Electronic invoicing for Mexico
             href: localizations/e-invoicing-mex-get-started.md
-          - name: Set up the Electronic invoicing add-in
+          - name: Set up Electronic invoicing
             href: localizations/e-invoicing-setup.md
-        - name: Electronic invoicing add-in FAQ
+        - name: Electronic invoicing FAQ
           href: localizations/e-invoicing-faq.md
+      - name: Tax Calculation
+        items:
+        - name: Tax Calculation overview
+          href: localizations/global-tax-calcuation-service-overview.md
+        - name: Get started with Tax Calculation
+          href: localizations/global-get-started-with-tax-calculation-service.md
+        - name: Tax feature support for transfer orders
+          href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+        - name: Add data fields in tax configurations
+          href: localizations/tax-service-add-data-fields-tax-configurations.md
+        - name: Add data fields in the tax integration by using extensions
+          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+        - name: Multiple VAT registration numbers
+          href: localizations/emea-multiple-vat-registration-numbers.md
       - name: Australia
         items:
         - name: Australia overview
@@ -2959,7 +2973,9 @@
           - name: Deferrals tax register
             href: localizations/rus-deferred-expenses-register.md
           - name: Cash flow tax registers
-            href: localizations/rus-cash-flow-tax-registers.md           
+            href: localizations/rus-cash-flow-tax-registers.md 
+          - name: Rated expenses registers
+            href: localizations/rus-rated-expenses-registers.md   
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview

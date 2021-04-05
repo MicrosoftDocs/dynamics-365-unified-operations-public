@@ -4,7 +4,6 @@
 title: Parse incoming documents
 description: This topic provides information about how to set up Electronic reporting formats that can be used to parse incoming documents. 
 author: nickselin
-manager: AnnBe
 ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 

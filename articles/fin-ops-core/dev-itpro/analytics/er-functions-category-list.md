@@ -4,7 +4,6 @@
 title: List of ER functions in the list category
 description: This topic provides information about the list functions that are supported in Electronic reporting (ER).
 author: NickSelin
-manager: kfend
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 

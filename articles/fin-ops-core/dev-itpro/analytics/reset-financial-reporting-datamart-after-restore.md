@@ -4,8 +4,7 @@
 title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
-manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -111,7 +110,7 @@ An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip p
 Run the following scripts against the database (not against the Financial reporting database):
 
 - DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
-- DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql
+- DataUpgrade.zip\\AosService\\Scripts\\GrantAxViewChangeTracking.sql
 
 These scripts help guarantee that the users, roles, and change tracking settings are correct.
 

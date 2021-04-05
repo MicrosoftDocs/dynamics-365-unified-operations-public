@@ -4,7 +4,6 @@
 title: X++ extended data types
 description: This topic describes extended data types in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: 

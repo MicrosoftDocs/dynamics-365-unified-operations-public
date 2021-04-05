@@ -4,7 +4,6 @@
 title: New document user interface in Business document management
 description: This topic provides information about how to use the new document user interface in the Business document management feature of Electronic reporting.
 author: v-anamir
-manager: AnnBe
 ms.date: 05/12/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Maintenance workers and worker groups
 description: This topic explains maintenance workers and worker groups in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 

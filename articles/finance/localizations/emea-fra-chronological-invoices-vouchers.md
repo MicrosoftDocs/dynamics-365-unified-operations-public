@@ -4,7 +4,6 @@
 title: Chronological invoice and voucher numbers
 description: This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable.  
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 

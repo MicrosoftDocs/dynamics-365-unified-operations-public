@@ -4,7 +4,6 @@
 title: Install and run System diagnostics
 description: System diagnostics includes an on-premises component that must be installed before you can use the service to discover environments and collect data.
 author: PeterRFriis
-manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012 

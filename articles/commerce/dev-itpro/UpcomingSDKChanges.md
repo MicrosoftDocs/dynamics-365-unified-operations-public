@@ -4,7 +4,6 @@
 title: Upcoming changes in the Retail SDK
 description: This topic contains a list of upcoming changes in the Retail software development kit (SDK).
 author: mugunthanm 
-manager: AnnBe
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 

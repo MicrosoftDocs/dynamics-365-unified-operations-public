@@ -4,7 +4,6 @@
 title: EUR-00015 Registration of vendor VAT ID
 description: This procedure shows how to add VAT registration IDs and a tax except number to a vendor account. 
 author: v-oloski
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Override POS request handler
 description: This topic explains how to override a POS request handler.
 author: mugunthanm
-manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 

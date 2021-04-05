@@ -4,7 +4,6 @@
 title: Scheduled work order maintenance jobs
 description: This topic explains scheduled work order maintenance jobs in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: X++ exception handling
 description: This topic describes exception handling in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 11/01/2019
 ms.topic: article
 ms.prod: 

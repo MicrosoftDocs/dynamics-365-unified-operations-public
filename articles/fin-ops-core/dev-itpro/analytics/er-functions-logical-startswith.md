@@ -4,7 +4,6 @@
 title: STARTSWITH ER function
 description: This topic provides information about how the STARTSWITH Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 

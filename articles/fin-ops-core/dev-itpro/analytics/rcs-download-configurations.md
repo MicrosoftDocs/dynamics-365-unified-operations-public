@@ -4,7 +4,6 @@
 title: Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)
 description: This topic provides information about how to import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS).
 author: NickSelin
-manager: AnnBe
 ms.date: 11/07/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Asset BOMs
 description: This topic describes asset bills of materials (BOMs) in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 

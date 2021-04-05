@@ -4,7 +4,6 @@
 title: EventHandlerResult classes in request or response scenarios
 description: This topic describes how to use EventHandlerResult classes with delegate methods.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Brazilian tax in sales quotations
 description: Use this procedure to create a sales quotation that uses Brazilian taxes. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  

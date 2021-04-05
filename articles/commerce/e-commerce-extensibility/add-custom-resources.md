@@ -4,7 +4,6 @@
 title: Add custom resources to your customization code
 description: This topic describes how to add custom static resources to your SDK customization code so that they can be accessed from within your theme.
 author: samjarawan
-manager: annbe
 ms.date: 09/29/2020
 ms.topic: article
 ms.prod: 

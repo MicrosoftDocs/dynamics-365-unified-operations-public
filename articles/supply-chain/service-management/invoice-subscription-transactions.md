@@ -4,7 +4,6 @@
 title: Invoice subscription transactions 
 description: Invoice subscription transactions 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 

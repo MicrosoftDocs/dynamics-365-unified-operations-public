@@ -4,7 +4,6 @@
 title: Configure registration numbers in Egypt
 description: This topic explains how to configure and use registration numbers in Egypt. 
 author: ilkond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 

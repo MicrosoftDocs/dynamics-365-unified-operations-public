@@ -4,7 +4,6 @@
 title: Service electronic fiscal document for Brazil
 description: This topic provides an overview of the service electronic fiscal document.
 author: sndray
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 

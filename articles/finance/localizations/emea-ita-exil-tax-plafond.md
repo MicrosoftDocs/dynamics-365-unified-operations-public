@@ -4,7 +4,6 @@
 title: Tax plafond
 description: This topic explains how to set up and work with tax plafond, which is a tax exemption process.
 author: ilkond
-manager: AnnBe
 ms.date: 02/04/2021
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Withholding taxes on customer payments (Brazil)
 description: You use the Journal voucher page to enter and post payments that you receive from customers for the sale of items or services. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  

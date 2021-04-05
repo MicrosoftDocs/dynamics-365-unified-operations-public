@@ -4,7 +4,6 @@
 title: Consolidated batch orders
 description: This article describes the concept of consolidated batch orders.
 author: ShylaThompson
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: X++ event terminology and keywords
 description: This topic describes event terminology and keywords in X++.
 author: robinarh
-manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
 ms.prod: 

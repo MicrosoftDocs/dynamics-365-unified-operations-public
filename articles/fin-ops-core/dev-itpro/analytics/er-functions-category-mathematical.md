@@ -4,7 +4,6 @@
 title: List of ER functions in the mathematical category
 description: This topic provides information about the mathematical functions that are supported in Electronic reporting (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 

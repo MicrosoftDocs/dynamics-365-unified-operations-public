@@ -4,7 +4,6 @@
 title: Sell and return products that aren't part of a store's assortment
 description: With Dynamics 365 Commerce, you can sell and return products outside of assortments.
 author: pdp1207
-manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
 ms.prod: 

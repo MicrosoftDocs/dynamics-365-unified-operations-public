@@ -4,7 +4,6 @@
 title: Preconfigured system accounts
 description: This topic provides information about the system accounts that are pre-configured on your Finance and Operations environments.
 author: laneswenka
-manager: AnnBe
 ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 

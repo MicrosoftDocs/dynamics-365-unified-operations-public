@@ -4,7 +4,6 @@
 title: Shipping containers
 description: This topic describes how to set up shipping containers for the Landed cost module.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: 

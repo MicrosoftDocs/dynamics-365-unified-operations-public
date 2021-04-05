@@ -4,7 +4,6 @@
 title: X++ date runtime functions
 description: This topic describes the date run-time functions.
 author: RobinARH
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Business document management overview
 description: This topic provides information about how to use the Business document management feature of the ER framework.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: 

@@ -5,7 +5,6 @@
 title: Fiscal registration service integration sample for Austria
 description: This topic provides an overview of the fiscal integration sample for Austria.
 author: josaw
-manager: annbe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod:

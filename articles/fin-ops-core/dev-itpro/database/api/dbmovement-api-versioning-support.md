@@ -4,7 +4,6 @@
 title: Database Movement API - Versioning and support
 description: This topic provides an overview of the versioning and breaking change policies for the Database Movement application programming interface (API).
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 

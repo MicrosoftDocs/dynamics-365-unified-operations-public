@@ -4,7 +4,6 @@
 title: Define a tax rate type and assign it to relevant master data  
 description: This topic explains how to define the tax rate type and assign it to the relevant master data. 
 author: yijialuan 
-manager: kfend
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 

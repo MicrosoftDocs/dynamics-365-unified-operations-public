@@ -4,7 +4,6 @@
 title: VAT register transactions for Eastern Europe
 description: This topic provides information about VAT register transactions for Estonia, Lithuania, Czech Republic, Hungary, Latvia, and Poland. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

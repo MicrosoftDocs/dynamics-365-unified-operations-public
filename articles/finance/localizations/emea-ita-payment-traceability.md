@@ -4,7 +4,6 @@
 title: Italian localization - Payment traceability 
 description: This topic explains how to control the Tender procedure identification and CIPE codes during end-to-end processing from the original invoice to the payment.
 author: neserovleo
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 

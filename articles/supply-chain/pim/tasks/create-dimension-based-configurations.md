@@ -4,7 +4,6 @@
 title: Create dimension-based configurations
 description: This procedure shows how to define a configuration for a dimension-based product. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Series registration
 description: This topic describes how to create a series for the process automation framework.
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 

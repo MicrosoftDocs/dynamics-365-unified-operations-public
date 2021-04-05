@@ -4,7 +4,6 @@
 title: Fixed assets depreciation for Poland
 description: This topic provides information about fixed assets depreciation for legal entities in Poland.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 

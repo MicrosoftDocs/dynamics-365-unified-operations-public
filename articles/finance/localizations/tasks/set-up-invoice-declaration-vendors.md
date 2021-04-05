@@ -4,7 +4,6 @@
 title: Set up an invoice declaration for vendors
 description: This procedure walks you through setting up the Icelandic invoice declaration. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

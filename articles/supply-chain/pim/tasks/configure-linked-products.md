@@ -4,7 +4,6 @@
 title: Configure linked products
 description: This procedure walks through configuring linked products. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  

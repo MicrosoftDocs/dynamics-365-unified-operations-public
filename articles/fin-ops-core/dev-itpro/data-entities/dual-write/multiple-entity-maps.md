@@ -3,7 +3,6 @@
 title: Manage multiple table maps
 description: This topic describes how to select table maps, list dependent table maps, enable the table maps and all of its related tables, and copy pre-existing data.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 08/12/2020
 ms.topic: article
 ms.prod: 

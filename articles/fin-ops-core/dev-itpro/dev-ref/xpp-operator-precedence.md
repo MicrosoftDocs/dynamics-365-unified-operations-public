@@ -4,7 +4,6 @@
 title: Operator precedence
 description: This topic describes operator precedence.
 author: pvillads
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: 

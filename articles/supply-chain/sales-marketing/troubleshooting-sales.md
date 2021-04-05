@@ -4,7 +4,6 @@
 title: Troubleshoot sales orders
 description: This topic describes how to fix issues that you might encounter while you work with sales orders.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 

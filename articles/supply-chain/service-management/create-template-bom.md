@@ -4,7 +4,6 @@
 title: Create a template BOM   
 description: You can create a template BOM by using a variety of methods. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

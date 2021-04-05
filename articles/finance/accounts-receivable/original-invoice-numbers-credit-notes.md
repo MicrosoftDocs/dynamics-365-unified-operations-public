@@ -4,7 +4,6 @@
 title: References to original invoices in credit notes
 description: This topic explains how to set up and print the original invoice numbers in related credit notes.
 author: ilkond
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 

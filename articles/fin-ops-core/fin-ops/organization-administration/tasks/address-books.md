@@ -2,9 +2,8 @@
 # required metadata 
  
 title: Configure address books
-description: Use this procedure, and the decisions that you made in the Planning the configuration of the global address book and additional address books topic, to set up additional address books for your organization. 
+description: Use this procedure to set up additional address books for your organization. 
 author: msftbrking 
-manager: AnnBe 
 ms.date: 08/09/2019
 ms.topic: business-process 
 ms.prod:  

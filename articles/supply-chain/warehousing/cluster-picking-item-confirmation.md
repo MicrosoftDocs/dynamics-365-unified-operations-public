@@ -4,7 +4,6 @@
 title: Product confirmation for cluster picking
 description: This topic describes how you set up item verification together with cluster picking.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 

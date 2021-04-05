@@ -4,7 +4,6 @@
 title: Import goods that have GST
 description:  This topic explains how to import goods that have Goods and Services Tax (GST).
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

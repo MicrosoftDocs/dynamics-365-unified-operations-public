@@ -4,7 +4,6 @@
 title: Service object relations 
 description: You can create service object relations between a service object and a service agreement or service order. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 

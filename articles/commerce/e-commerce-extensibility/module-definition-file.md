@@ -4,7 +4,6 @@
 title: Module definition file
 description: This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 

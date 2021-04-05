@@ -4,7 +4,6 @@
 title: Location product dimension mixing
 description: This topic provides information about location product dimension mixing. This location profile functionality helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
@@ -209,9 +208,9 @@ You will create a purchase order that has three lines: two lines for the same pr
 
 1.Select **Save**.
 
-### Receive purchase order lines in the warehouse app
+### Receive purchase order lines in the Warehouse Management mobile app
 
-1. Sign in to the warehouse app as a user who is enabled for warehouse *24*.
+1. Sign in to the Warehouse Management mobile app as a user who is enabled for warehouse *24*.
 1. Select the **Inbound** menu.
 1. Select **PO Line receiving**.
 1. Select the **PONUM** field, and then enter the purchase order number.

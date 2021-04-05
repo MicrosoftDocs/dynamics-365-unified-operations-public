@@ -4,7 +4,6 @@
 title: Budget analysis report
 description: This topic provides information about the Budget analysis report, which you use to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity during a period that you specify.
 author: velofog
-manager: AnnBe
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 

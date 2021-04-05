@@ -4,7 +4,6 @@
 title: Lifecycle Services (LCS) for Finance and Operations apps customers
 description: This topic describes Lifecycle Services (LCS) for Finance and Operations apps customers.
 author: angelmarshall
-manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Commerce 
 description: This topic points to topics that describe the new and changed features in each release of Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 03/19/2021
 ms.topic: article
 ms.prod: 

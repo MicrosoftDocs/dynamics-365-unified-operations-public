@@ -4,7 +4,6 @@
 title: Store order fulfillment
 description: This topic provides an overview of store order fulfillment. 
 author: rubencdelgado
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 

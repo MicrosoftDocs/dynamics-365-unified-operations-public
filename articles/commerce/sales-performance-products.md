@@ -4,7 +4,6 @@
 title: Assess sales performance by product
 description: You can study profitability for the top 10 products using Dynamics 365 Commerce. 
 author: ashishmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

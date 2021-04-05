@@ -4,7 +4,6 @@
 title: Improvements to statement posting functionality
 description: This topic describes improvements that have been made to the statement posting feature.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2019
 ms.topic: article
 ms.prod: 

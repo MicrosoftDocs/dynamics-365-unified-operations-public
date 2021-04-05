@@ -226,6 +226,8 @@
                   href: data-entities/dual-write/integrated-hr.md
                 - name: Party and global address book
                   href: data-entities/dual-write/party-gab.md
+                - name: Using Power Portal with the Party data model
+                  href: data-entities/dual-write/party-gab-portal.md
                 - name: Note integration
                   href: data-entities/dual-write/notes-integration.md
                 - name: Mapping reference
@@ -712,6 +714,8 @@
         items:
         - name: X++ and debugger features
           href: dev-tools/new-x-debugger-features.md
+        - name: Visual Studio 2017 requirements for X++
+          href: dev-tools/developer-tools-vs2017.md
         - name: Debug X++ code
           href: dev-tools/debug-xpp.md
         - name: EventHandlerResult classes in request or response scenarios

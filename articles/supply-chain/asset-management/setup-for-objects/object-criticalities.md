@@ -4,7 +4,6 @@
 title: Asset criticality types
 description: The topic explains asset criticality types in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 

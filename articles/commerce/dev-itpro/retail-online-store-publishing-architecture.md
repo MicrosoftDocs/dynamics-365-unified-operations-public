@@ -4,7 +4,6 @@
 title: Online store publishing architecture
 description: This topic contains conceptual information to help you understand how channels and catalogs are published from the commerce module to an online store.
 author: robinarh
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

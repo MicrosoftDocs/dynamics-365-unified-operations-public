@@ -4,7 +4,6 @@
 title: NF-e custom certificate validation
 description: This topic provides information about enabling and using the NF-e custom certificate.
 author: gionoder
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Service tasks overview
 description: Use service tasks to describe the task to be completed during a service order. Both technicians and customers can see this information. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

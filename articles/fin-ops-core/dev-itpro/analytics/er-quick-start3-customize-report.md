@@ -4,7 +4,6 @@
 title: Customize Electronic reporting configurations to generate an electronic document
 description: This topic explains how to customize the Microsoft-provided Electronic reporting (ER) configurations that are used to generate a custom electronic document.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 

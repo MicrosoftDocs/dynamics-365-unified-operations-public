@@ -4,7 +4,6 @@
 title: Register items for an advanced warehousing enabled item using an item arrival journal
 description: This topic presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 03/24/2021
 ms.topic: business-process 
 ms.prod:  

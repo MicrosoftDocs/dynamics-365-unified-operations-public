@@ -4,7 +4,6 @@
 title: Test Data Transfer Tool (beta) 
 description: The Test Data Transfer Tool is a command-line tool that exports data from a Microsoft Dynamics AX 2012 business database environment.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

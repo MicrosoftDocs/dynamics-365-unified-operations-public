@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Retail
 description: This page points you to resources that can help you learn about the new features in the latest releases of Microsoft Dynamics 365 Retail.
 author: sericks007
-manager: AnnBe
 ms.date: 10/20/2018
 ms.topic: article
 ms.prod: 
