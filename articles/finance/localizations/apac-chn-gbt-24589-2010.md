@@ -79,7 +79,7 @@ the **LCS Shared asset library**.
     library, and then select the **Localized financial report** asset
     type.
 
-2.  Download the **China Financial Statements.tdbx** file**.**
+2.  Download the **China Financial Statements.tdbx** file.
 
 3.  Upload the downloaded file in the **Report Designer** following the
     guidelines in [Import a building block
@@ -107,7 +107,7 @@ To set up GB/T 24589-2010 parameters, complete the following steps.
 
 ![GBT 24589 2010 parameters ](media/image1.png)
 
-1.  On the **Financial statements** tab, select the appropriate
+3.  On the **Financial statements** tab, select the appropriate
     financial statements in the following fields:
 
 - **Select financial statement – Balance sheet**
@@ -134,10 +134,10 @@ To generate GB/T 24589-2010 parameters, complete the following steps.
 
 ![Generate financial report](media/image3.png)
 
-1.  Select **Clip** to open the attachments. Verify that the system XML
+3.  Select **Clip** to open the attachments. Verify that the system XML
     file is attached to the report.
 
-2.  For any financial statements that you selected on the **GB/T
+4.  For any financial statements that you selected on the **GB/T
     24589-2010 parameters** page, you can select a line on the
  **Reports** FastTab, and then select **Attach report** to attach the
     system XML file to the report if the original file is lost or
@@ -160,17 +160,16 @@ statement report line according to the value in **Reporting fiscal
 period** field. The system XML file content is added into the **GB/T
 24589-2010 General ledger.xml** report.
 
-1.  On the **Run in the background** FastTab, set **Batch processing**
+3.  On the **Run in the background** FastTab, set **Batch processing**
     to **Yes** to run the report in batch.
 
-2.  Select **OK**.
+4.  Select **OK**.
 
 ![GBT 24589 export](media/image4.png)
 
-1.  Go to **Organization administration &gt; Electronic reporting &gt;
-    Electronic reporting jobs. **
+5.  Go to **Organization administration &gt; Electronic reporting &gt; Electronic reporting jobs**
 
-2.  Select the line and when the job status is marked as **Finished**,
+6.  Select the line and when the job status is marked as **Finished**,
     select **Show files** to review the generated files.
 
 
