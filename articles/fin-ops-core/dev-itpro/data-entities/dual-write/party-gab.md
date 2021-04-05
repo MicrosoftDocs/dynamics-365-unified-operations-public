@@ -205,7 +205,9 @@ Electronic addresses are available only on this grid. In future releases, all el
 
     ![Duplicate rule for Contacts](media/duplicate-rule-2.PNG)
 
-8. Run the maps in the following order. If you get an error that states "Project validation failed. Missing destination field...", then open the map and select **Refresh Tables**. Then run the map.
+8. If you are an existing dual-write user, follow the instructions in [Upgrade to the party and global address book model](upgrade-to-party-gab.md) and upgrade your data to party-gab model.
+
+9. Run the maps in the following order. If you get an error that states "Project validation failed. Missing destination field...", then open the map and select **Refresh Tables**. Then run the map.
 
     Finance and Operations app | Customer engagement app  
     ----------------------------|------------------------
