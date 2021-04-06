@@ -60,7 +60,7 @@ The Retail SDK reference libraries use PackageReference. All the SDK samples use
 
 There are two ways to migrate:
 
-- Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and manually install the Visual Studio 2017. LCS developer VM with Visual Studio 2017 will be available in a future release.
+- Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and manually install the Visual Studio 2017. Starting with version 10.0.13, the VHD templates that you use to provision developer and test environments will include Visual Studio 2017. For more information, see [Visual Studio 2017 requirements for X++](../../../fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017.md).
 - Update extensions to Visual Studio 2017 in an existing development environment:
 
     - Install Visual Studio 2017 Community, Professional, or Enterprise edition on the existing build and development virtual machine (VM) with the following workloads:
