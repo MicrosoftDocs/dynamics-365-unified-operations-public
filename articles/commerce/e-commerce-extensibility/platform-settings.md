@@ -64,7 +64,7 @@ The **namespaceExtensions** property defines the supported namespaces that are u
 
 ## secretsManagerOUN
 
-The **secretsManagerOUN** property specifies the operating unit number (OUN) to use when retrieving secret values using the secret manager class. This OUN should match that of the store that was used in your Retail Server HQ to configure key vault parameters. For more information, see [Set up Azure Key Vault for secure key management](set-up-key-vault.md).
+The **secretsManagerOUN** property specifies the operating unit number (OUN) to use when retrieving secret values using the secret manager class. This OUN should match that of the store that was used in Commerce headquarters to configure key vault parameters for Retail Server. For more information, see [Set up Azure Key Vault for secure key management](set-up-key-vault.md).
 
 ## Additional resources
 
