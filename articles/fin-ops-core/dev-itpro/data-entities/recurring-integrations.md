@@ -93,7 +93,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
     ![Manage scheduled data jobs](./media/image013.jpg)
 
 ## Submitting data to recurring data jobs
-You can use integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
+You can use integration REST endpoints to integrate with the client, submit documents (import), or pull available documents for download (export). These endpoints support OAuth.
 
 ## Integration REST APIs
 The following set of APIs is used to exchange data between the integration client and the application.
