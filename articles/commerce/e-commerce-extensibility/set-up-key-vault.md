@@ -4,7 +4,7 @@
 title: Set up Azure Key Vault for secure key management
 description: This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
 author: samjarawan
-ms.date: 10/23/2020
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -156,7 +156,7 @@ Next, to add an access policy in your Key Vault, follow these steps.
 Next, to add the Key Vault details in Retail Server, follow these steps.
 
 1.	In Commerce headquarters, go to **Key Vault parameters**. 
-1. From the store selector on the top right, select the store in which you wish to configure the secret key and values
+1. From the store selector on the top right, select the store for which you wish to configure the secret key and values.
 1.	Select **New**, and then enter a name to represent your Key Vault.
 1.	Enter the **Key Vault URL**. This is the **Vault URI** value listed on your Key Vault's **Overview** page. 
 1. Enter the **Key Vault client**. This is the application ID of the registered app. 
@@ -167,7 +167,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
  ![Key Vault Secrets page with secret selected](media/key-vault-04.png)
  
  > [!IMPORTANT]
- > Take note of the OUN of the store that was used to configure the secret key and values. You will need to specify this value in the platform settings json document. More information below.
+ > Take note of the operating unit number (OUN) of the store that was used to configure the secret key and values. You will need to specify this value in the platform settings JSON file.
 
 ## Access secret values within your e-Commerce Node application
 
@@ -205,7 +205,8 @@ As a developer, you should only use the `SecretManager` class on code that is en
 If the request to fetch the secret value fails, the error property will be set. You can use this to debug any issues you may encounter when trying to fetch secret values.
 
 ### Update the platform settings file
-Update the **secretsManagerOUN** property in the platform.settings.json file to specify the OUN (Operating Unit Number) of the store / channel where the key vault paramaters were configured. See [Platform settings file](platform-settings.md) topic for more information.
+
+You must update the **secretsManagerOUN** property in the platform.settings.json file to specify the OUN of the store or channel where the key vault paramaters were configured. For more information, see [Platform settings file](platform-settings.md).
 
 ## Local development
 
