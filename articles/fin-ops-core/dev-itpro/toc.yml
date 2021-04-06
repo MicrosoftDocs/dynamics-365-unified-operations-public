@@ -228,6 +228,8 @@
                   href: data-entities/dual-write/party-gab.md
                 - name: Using Power Portal with the Party data model
                   href: data-entities/dual-write/party-gab-portal.md
+                - name: Upgrade to the party and global address book model
+                  href: data-entities/dual-write/upgrade-party-gab.md
                 - name: Note integration
                   href: data-entities/dual-write/notes-integration.md
                 - name: Mapping reference
