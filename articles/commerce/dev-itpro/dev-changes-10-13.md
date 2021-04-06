@@ -127,7 +127,7 @@ For a general overview of each application release, always check the "What's new
 ## What's changed in the 10.0.13 release
 
 - In version 10.0.13, application development that uses X++ requires Visual Studio 2017. If you haven't yet updated to Visual Studio 2017, review the section about version 10.0.11 earlier in this topic.
-- Starting with version 10.0.13, the VHD templates that you use to provision developer and test environments will include Visual Studio 2017. For more information, see [Visual Studio 2017 requirements for X++](../../fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017) and [Action Required - .NET version and Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
+- Starting with version 10.0.13, the VHD templates that you use to provision developer and test environments will include Visual Studio 2017. For more information, see [Visual Studio 2017 requirements for X++](../../fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017.md) and [Action Required - .NET version and Visual Studio 2017](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/action-required---net-version-and-visual-studio-2017).
 
 ## Where to go for help
 
