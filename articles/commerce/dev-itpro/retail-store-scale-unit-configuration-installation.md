@@ -183,7 +183,7 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
 
     > [!NOTE]
     > - To meet the prerequisites, SQL Server must have full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. Review the system requirements for the supported versions of SQL Server.
-    > - If a system restart is required, the installer will prompt the user.  This prompt is based upon a Windows system registry key that tells all applications if a restart is required.  While it is recommended to restart prior to continuing the installation, a restart is not mandatory and the installer can continue without restarting the computer.
+    > - If a system restart is required, the installer will prompt the user.  This prompt is based upon a Windows system registry key that notifies all applications if a restart is required. While it is recommended to restart prior to continuing the installation, a restart is not required and the installer can continue without restarting the computer.
 
 3. Verify the URL for Application Object Server (AOS), and then select **Next**. (The AOS URL is the URL that is used to access Headquarters.)
 
