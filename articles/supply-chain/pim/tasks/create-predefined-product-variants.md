@@ -3,7 +3,7 @@
  
 title: Create predefined product variants
 description: This procedure walks through creating product variants for a product master using the combinations of product dimensions. 
-author: ShylaThompson
+author: t-benebo 
 manager: tfehr 
 ms.date: 03/25/2021
 ms.topic: business-process 
@@ -20,7 +20,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: 10.0.19
 ---
