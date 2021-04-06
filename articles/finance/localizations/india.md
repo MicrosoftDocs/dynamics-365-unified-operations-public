@@ -54,21 +54,6 @@ This topic provides links to documentation resources for India.
 - [What's new or changed for India GST in 10.0.13 (September 2020)](ind-news-letter-10-0-13.md)
 - [What's new or changed for India GST in 10.0.14 (October 2020)](apac-ind-news-letter-10-0-14.md)
   
-## Fixed assets
-- [Fixed assets overview](apac-ind-fixed-assets.md)
-- [India fixed assets overview](apac-ind-fixed-assets.md)   
-- [Attach a day-based calendar to a fixed asset book](tasks/apac-ind-attach-day-based-calendar.md)
-- [Calculate shift depreciation](apac-ind-shift-depreciation-rates.md)
-- [Create an inventory model group for capital items](tasks/apac-ind-create-inventory-model-group.md)
-- [Create and post depreciation for a fixed asset group by using depreciation books](apac-ind-calculate-post-depreciation.md)
-- [Define type of shift and industry for books and attach to fixed asset](tasks/apac-ind-books-shift-industry-types.md)
-- [Reversing fixed asset transactions](apac-ind-reverse-fixed-assets-transactions.md)
-- [Shift depreciation calculation for Indian fixed assets](apac-ind-calculation-shift-depreciation.md)
-- [Set up a day-based fiscal calendar](tasks/apac-ind-day-based-calendar.md)
-- [Set up parameters to calculate depreciation](tasks/apac-ind-set-up-depreciation.md)
-- [Set up asset group depreciation for depreciation books](tasks/apac-ind-set-up-asset-group-dep.md)
-- [Transfer of capital items to the fixed asset](tasks/apac-ind-transfer-capital-items.md)
-  
 ## Indirect taxes
 
 ### India GST
@@ -195,6 +180,21 @@ This topic provides links to documentation resources for India.
 - [Include GST when calculating tax collections](apac-ind-gst-include-gst-calculating-tax-collections.md)
 - [Tax thresholds for India FAQ](apac-ind-tax-thresholds.md)
 - [TCS on sales of goods](apac-ind-gst-tcs-on-sale-of-goods-section-206c-(1h).md)
+
+## Fixed assets
+- [Fixed assets overview](apac-ind-fixed-assets.md)
+- [India fixed assets overview](apac-ind-fixed-assets.md)   
+- [Attach a day-based calendar to a fixed asset book](tasks/apac-ind-attach-day-based-calendar.md)
+- [Calculate shift depreciation](apac-ind-shift-depreciation-rates.md)
+- [Create an inventory model group for capital items](tasks/apac-ind-create-inventory-model-group.md)
+- [Create and post depreciation for a fixed asset group by using depreciation books](apac-ind-calculate-post-depreciation.md)
+- [Define type of shift and industry for books and attach to fixed asset](tasks/apac-ind-books-shift-industry-types.md)
+- [Reversing fixed asset transactions](apac-ind-reverse-fixed-assets-transactions.md)
+- [Shift depreciation calculation for Indian fixed assets](apac-ind-calculation-shift-depreciation.md)
+- [Set up a day-based fiscal calendar](tasks/apac-ind-day-based-calendar.md)
+- [Set up parameters to calculate depreciation](tasks/apac-ind-set-up-depreciation.md)
+- [Set up asset group depreciation for depreciation books](tasks/apac-ind-set-up-asset-group-dep.md)
+- [Transfer of capital items to the fixed asset](tasks/apac-ind-transfer-capital-items.md)
 
 ## Feedback
 - [Experience Dynamics 365](https://experience.dynamics.com/)
