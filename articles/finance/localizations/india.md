@@ -63,7 +63,7 @@ This topic provides links to documentation resources for India.
 #### Tax engine
 - [Tax engine overview](../general-ledger/tax-engine.md)
 - [Tax engine import configuration](../general-ledger/tax-engine-import-configuration.md)
-- [Electronic reporting advanced formula editor](../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md)
+- [Electronic reporting advanced formula editor](../../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md)
 - [Tax engine applicability](../general-ledger/tax-engine-applicability.md)
 - [Create tax components](tax-engine-create-tax-component.md)
 - [Tax engine integration](../general-ledger/tax-engine-integration.md)
@@ -74,7 +74,7 @@ This topic provides links to documentation resources for India.
 #### Master data setup
 - [Create a business vertical](apac-ind-gst-create-business-vertical.md)
 - [Update the state code and union territory](apac-ind-gst-update-state-code-union-territory.md)
-- [Create a GSTIN master](apac-ind-gst-create-gstin-master)
+- [Create a GSTIN master](apac-ind-gst-create-gstin-master.md)
 - [Define GSTINs and reference number sequences](apac-ind-gst-define-gstin-numbers-number-sequences.md)\
 - [Define HSN codes and Service Accounting Codes](apac-ind-gst-hsn-service-accounting-codes.md)
 - [Define tax rate type](apac-ind-gst-create-tax-rate-type.md)
@@ -197,7 +197,9 @@ This topic provides links to documentation resources for India.
 - [Transfer of capital items to the fixed asset](tasks/apac-ind-transfer-capital-items.md)
 
 
-- [Experience Dynamics 365](https://experience.dynamics.com/)
+## Request new features and functionality 
+You can visit [Dynamics 365 Application Ideas](https://experience.dynamics.com/) to view, search, or vote for existing ideas, or to add new ideas.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
