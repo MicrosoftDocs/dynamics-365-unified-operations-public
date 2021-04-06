@@ -96,8 +96,6 @@ Follow these steps to provide required information before you upload a template.
 
 6. Select **Create document** to confirm that you want to create a template and start the editing process.
 
-    ![New template](./media/BDM_overview_new_UI_import_11.jpg) 
-
 For more information, see [Business document management overview](er-business-document-management.md).
 
 
