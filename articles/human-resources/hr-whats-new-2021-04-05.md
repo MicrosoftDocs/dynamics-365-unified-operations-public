@@ -66,7 +66,6 @@ The following bug fixes are included in this release.
 | ## Historic Worker Actions for Fixed Compensation change gives error for terminated users - (559564) | | |
 | ## Employment category dropdown is not filtering on worker type and shows categories for employees and contractors - (560074) | | |
 | 567388 | Some of the information for newly created Employees does not sync immediately to the cdm_worker table in Dataverse | When creating a new employee record, the new record would sync to the cdm_worker table in Dataverse, but not all properties would be included in the Dataverse record. |
-| ## Extensible enum integer cast compiler warnings - (519380) The following compiler warnings were found related to extensible enum implicit integer casts:ExtensibleEnumInNumericalAssignmentCastFromExtensibleEnumExtensibleEnumInComparisonAgainstNumericalValueTo look for warnings to fix, simply search for the warning moniker. They have been temporarily suppressed in CompileError.xml for respective modules. | | | 
 | 563837 | Features that shouldn't be available in HR | Several features that are not applicable to Human Resources are displaying in Feature Management. These are now removed from the list of features available to enable in HR. |
 
 ## In preview
