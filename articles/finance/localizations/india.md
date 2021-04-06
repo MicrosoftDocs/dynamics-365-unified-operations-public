@@ -45,7 +45,7 @@ This topic provides links to documentation resources for India.
 - [What's new or changed for India GST in 10.0.4 (July 2019)](apac-ind-news-letter-10-0-04.md)
 - [What's new or changed for India GST in 10.0.5 (October 2019)](apac-ind-news-letter-10-0-05.md)
 - [What's new or changed for India GST in 10.0.6 (November 2019)](apac-ind-news-letter-10-0-06.md)
-- [What's new or changed for India GST in 10.0.7 (January 2020)](apac-ind-news-letter-10-0-7.md)
+- [What's new or changed for India GST in 10.0.7 (January 2020)](apac-ind-news-letter-10-0-07.md
 - [What's new or changed for India GST in 10.0.8 (February 2020)](apac-ind-news-letter-10-0-08.md)
 - [What's new or changed for India GST in 10.0.9 (April 2020)](apac-ind-news-letter-10-0-09.md)
 - [What's new or changed for India GST in 10.0.10 (May 2020)](apac-ind-news-letter-10-0-10.md)
@@ -75,7 +75,7 @@ This topic provides links to documentation resources for India.
 - [Create a business vertical](apac-ind-gst-create-business-vertical.md)
 - [Update the state code and union territory](apac-ind-gst-update-state-code-union-territory.md)
 - [Create a GSTIN master](apac-ind-gst-create-gstin-master)
-- [Define GSTINs and reference number sequences](pac-ind-gst-define-gstin-numbers-number-sequences.md)\
+- [Define GSTINs and reference number sequences](apac-ind-gst-define-gstin-numbers-number-sequences.md)\
 - [Define HSN codes and Service Accounting Codes](apac-ind-gst-hsn-service-accounting-codes.md)
 - [Define tax rate type](apac-ind-gst-create-tax-rate-type.md)
 - [Create main accounts for the GST posting type](apac-ind-gst-create-main-accounts-gst-posting-type.md)
@@ -115,7 +115,7 @@ This topic provides links to documentation resources for India.
 - [Sales of taxable goods to consumers](apac-ind-gst-sell-taxable-goods-consumer.md)
 - [Sales to registered customers](apac-ind-gst-sell-registered-customer.md)
 - [Free text invoices](apac-ind-gst-free-text-invoices.md)
-- [Sales of taxable goods where there is a reverse charge](apac-ind-gst-sell-taxable-goods-reverse-charge)
+- [Sales of taxable goods where there is a reverse charge](apac-ind-gst-sell-taxable-goods-reverse-charge.md)
 - [Sales of exempted items](apac-ind-gst-sales-exempted-item.md)
 - [Sales of zero-rated goods](apac-ind-gst-sell-zero-rated-goods.md)
 - [Sales of non-GST goods](apac-ind-gst-sell-non-gst-goods.md)
@@ -185,7 +185,7 @@ This topic provides links to documentation resources for India.
 - [Fixed assets overview](apac-ind-fixed-assets.md)
 - [India fixed assets overview](apac-ind-fixed-assets.md)   
 - [Attach a day-based calendar to a fixed asset book](tasks/apac-ind-attach-day-based-calendar.md)
-- [Calculate shift depreciation](apac-ind-shift-depreciation-rates.md)
+- [Calculate shift depreciation](tasks/apac-ind-shift-depreciation-rates.md)
 - [Create an inventory model group for capital items](tasks/apac-ind-create-inventory-model-group.md)
 - [Create and post depreciation for a fixed asset group by using depreciation books](apac-ind-calculate-post-depreciation.md)
 - [Define type of shift and industry for books and attach to fixed asset](tasks/apac-ind-books-shift-industry-types.md)
@@ -196,7 +196,7 @@ This topic provides links to documentation resources for India.
 - [Set up asset group depreciation for depreciation books](tasks/apac-ind-set-up-asset-group-dep.md)
 - [Transfer of capital items to the fixed asset](tasks/apac-ind-transfer-capital-items.md)
 
-## Feedback
+
 - [Experience Dynamics 365](https://experience.dynamics.com/)
 
 
