@@ -43,7 +43,7 @@ By default, the **Workers without employment** form is available to the followin
 
 In the **Workers without employment** list, you can delete the individuals listed. By default, this privilege is given to the Human Resources Assistant role. You can give this privilege to other roles with the following steps:
 
-1. Select **System administration** tile, and then select **Security configuration**.
+1. Select **System administration**, and then select **Security configuration**.
 
 2. In the **Privileges** tab, filter the **Privileges** list to **Maintain workers**.
 
