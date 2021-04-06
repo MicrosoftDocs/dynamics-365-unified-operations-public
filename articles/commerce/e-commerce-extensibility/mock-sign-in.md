@@ -108,7 +108,7 @@ From the examples above, you have now obtained the following information:
 ### Configure scope and register the native application
 
 1.	In the Azure AD B2C settings, go to **App registrations**.
-1.	Open the application created above which is currently being used by the e-Commerce rendering application.
+1.	Open the application which is currently being used by the e-Commerce rendering application (in the Azure portal, it is the application whose Client ID is used in the AAD B2C configuration for your site. If AAD B2C is already configured, the Application ID used for your e-Commerce site can be found in **HQ:** in the **ClientId** field under Relying Parties in HQ > Commerce Shared Parameters > Identity Providers **or** in **site builder** as the **Client GUID** in Tenant Settings > B2C Settings within the B2C Application configuration used for your site).
 1.	In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one does not exist, select **Add a scope** to create one. When prompted for an **Application ID URI**, leave the application ID URI as is and then add "user_impersonation" for the **Scope name**. Then enter friendly values for **Admin consent display name** and **Admin consent description**.
 
     ![Expose an API](media/local-sign-in-04.png)
