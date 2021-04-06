@@ -5,7 +5,7 @@ title: Mass deployment of legacy self-service components
 description: This topic explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. 
 author: jashanno
 manager: AnnBe
-ms.date: 03/30/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Application update 3
 
 [!include [banner](../includes/banner.md)]
 
-This topic is for legacy self-service installers. It explains how you can use legacy self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.  For the newly enhanced self-service installers, review the new documentation in the [Enhanced self-service mass deployment](/Enhanced-Mass-Deployment.md) topic.
+This topic is for legacy self-service installers. It explains how you can use legacy self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available. 
 
 ## Delimiters for mass deployment
 
