@@ -4,11 +4,9 @@
 title: Alerts as business events
 description: This topic describes alerts as business events.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

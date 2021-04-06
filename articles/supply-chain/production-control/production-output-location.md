@@ -4,11 +4,9 @@
 title: Production output location
 description: This topic describes the hierarchy that is used to identify the production output location.
 author: johanhoffmann
-manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

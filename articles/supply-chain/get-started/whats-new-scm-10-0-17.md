@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Preview of Dynamics 365 Supply Chain Management 10.0.17 (April 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.17 (April 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.17. 
 author: kamaybac
-manager: annbe
-ms.date: 01/28/2021
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -24,16 +22,15 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-31 
+ms.search.validFrom: 2021-02-01 
 ms.dyn365.ops.version: 10.0.17
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.17 (April 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.17 (April 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.17. This version has a build number of 10.0.761 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.17. This version has a build number of 10.0.761 and is available as follows:
 
 - **Preview of release:** February 2021
 - **General availability of release (self-update):** March 2021
@@ -41,86 +38,103 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
+The following features are included in this release.  Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
+
+Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features may still be in preview, though most are now generally available.
+
+### Asset management
 
 - [Apply rules for grouping work orders while running a maintenance plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - For more information, see [Creating work orders](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
 
-<!-- KFM: Blocked for now. Dana will followup.
-- [Approve and save vendor-submitted bank details](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) 
--->
-
-- Asset management capabilities in the production floor execution interface<br> - For more information, see [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md).  <!-- KFM: Not yet published on release plan, but is ready. Should be in the next publish. -->
-
 - [Bill customers for maintenance work](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - For more information, see [Bill for maintenance on customer-owned assets](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
-
-- [Coverage time fence support for Planning Optimization](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - For more information, see [Coverage time fences](../master-planning/planning-optimization/coverage-time-fence.md).
-
-- [Enable change management on existing products](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)
-
-<!-- KFM: Add this when the feature appears in release plan at next update:
-- Enterprise-scale inventory performance improvements and archiving  -->
-
-- [Landed cost](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)
-
-- [Manufacturing execution with scale units in the cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - For more information, see [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md).
-
-- [Material handling/warehouse automation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/material-handlingwarehouse-automation) <!-- KFM: Update RP link when the new one goes live -->
-
-- [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - For more information, see [Set different dimensions for packing and storage](../warehousing/packing-vs-storage-dimensions.md)
-
-- Override the default reservation principle for materials in production<br> - For more information, see [Override the default reservation principle for materials in production](../production-control/override-default-reservation-principle.md). <!-- KFM: Not yet published on release plan, but is ready. Should be in the next publish. -->
 
 - [Plan maintenance based on accumulated asset counter values](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - For more information, see [Maintenance plans](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
 
-- [Purchase requisition support for Planning Optimization](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - For more information, see [Purchase requisitions](../master-planning/planning-optimization/purchase-requisitions.md).
+### Inventory and logistics
+
+- [Integration framework for material handling equipment for automated warehouse processes (previously MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - For more information, see [Material handling equipment interface (MHAX)](../warehousing/mhax.md).
+
+- [Landed cost](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - For more information, see [Landed cost module](../landed-cost/landed-cost-overview.md).
+
+- [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - For more information, see [Set different dimensions for packing and storage](../warehousing/packing-vs-storage-dimensions.md).
 
 - [Saved views for inventory and logistics](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
-
-- [Saved views for planned orders](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
-
-- [Saved views for production control](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
 
 - [Schedule warehouse work creation](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - For more information, see [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md).
 
 - [Set default financial dimensions for inventory standard cost revaluation vouchers](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - For more information, see [Manage standard cost updates](../cost-management/manage-standard-cost-updates.md).
 
-- [Small parcel shipping (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)<br> - For more information, see [Small parcel shipping](../warehousing/small-parcel-shipping.md). <!-- KFM: Update RP link when the new one goes live -->
+- [Small parcel shipping (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - For more information, see [Small parcel shipping](../warehousing/small-parcel-shipping.md).
 
 - [Warehouse execution with scale units in the cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md) and [Warehouse orders for cloud and edge scale units](../cloud-edge/cloud-edge-warehouse-order.md).
 
-- [Warehouse management mobile application](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - For more information, see [Install and connect the Warehouse Management app](../warehousing/install-configure-warehouse-management-app.md).
+- [Warehouse management mobile application](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - For more information, see [Install and connect the Warehouse Management app](../warehousing/install-configure-warehouse-management-app.md) and [Mobile device user settings](../warehousing/mobile-device-user-settings.md).
 
-Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+- Wave execution notifications<br> - For more information, see [Wave execution notifications](../warehousing/wave-execution-notifications.md)
+
+### Manufacturing
+
+- [Asset management capabilities in the production floor execution interface](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
+
+- Unified number sequence for job IDs<br> - For more information, see 
+
+- [Override the default reservation principle for materials in production](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - For more information, see [Override the default reservation principle for materials in production](../production-control/override-default-reservation-principle.md).
+
+- [Saved views for production control](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
+
+- [Manufacturing execution with scale units in the cloud](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - For more information, see [Manufacturing execution workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-manufacturing.md).
+
+### Planning
+
+- [Coverage time fence support for Planning Optimization](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - For more information, see [Coverage time fences](../master-planning/planning-optimization/coverage-time-fence.md).
+
+- [Forecast submodel support for Planning Optimization](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - For more information, see [Master planning with demand forecasts](../master-planning/planning-optimization/demand-forecast.md).
+
+- [Purchase requisition support for Planning Optimization](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - For more information, see [Purchase requisitions](../master-planning/planning-optimization/purchase-requisitions.md).
+
+- [Saved views for planned orders](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
+
+### Product information management
+
+- [Enable change management on existing products](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - For more information, see [Enable change management on existing products](../engineering-change-management/change-management-existing-products.md).
 
 ## New and updated documentation resources
 
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
+### Cost management
+
+- [Troubleshoot cost management](../cost-management/troubleshoot-costmanagement.md)
+
+### Asset management
+
+- [Set up the Asset management mobile workspace](../asset-management/set-up-asset-management-mobile.md)
+
+### Inventory and logistics
+
 - [Configure product filters for warehouse transactions](../warehousing/filters-and-filter-codes.md)
-
-- [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md)
-
-- [Intercompany planning](../master-planning/planning-optimization/Intercompany-planning.md)
-
-- [Inventory marking with Planning Optimization](../master-planning/planning-optimization/marking.md)
-
-- [Master planning with demand forecasts](../master-planning/planning-optimization/demand-forecast.md)
 
 - [Partial location cycle counting](../warehousing/partial-location-cycle-counting.md)
 
 - [Pick line grouping](../warehousing/pick-line-grouping.md)
 
-- [Production planning](../master-planning/planning-optimization/production-planning.md) <!--KFM: Remember to add YouTube link to this topic -->
-
-- [Purchase requisitions in master planning](../master-planning/planning-optimization/purchase-requisitions.md)
-
-- [Set up the Asset management mobile workspace](../asset-management/set-up-asset-management-mobile.md)
-
-- [Troubleshoot cost management](../cost-management/troubleshoot-costmanagement.md)
-
 - [Troubleshoot inventory operations](../inventory/troubleshoot-inventory-operations.md)
 
 - [Warehouse slotting](../warehousing/warehouse-slotting.md)
+
+### Manufacturing
+
+- [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md)
+
+### Planning
+
+- [Intercompany planning](../master-planning/planning-optimization/Intercompany-planning.md)
+
+- [Inventory marking with Planning Optimization](../master-planning/planning-optimization/marking.md)
+
+- [Production planning](../master-planning/planning-optimization/production-planning.md)
+
+- [Purchase requisitions in master planning](../master-planning/planning-optimization/purchase-requisitions.md)
 
 ## Additional resources
 

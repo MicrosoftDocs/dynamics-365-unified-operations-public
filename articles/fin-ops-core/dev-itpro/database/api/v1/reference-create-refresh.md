@@ -4,11 +4,9 @@
 title: Database movement API - Reference - v1 - Create a database refresh
 description: This topic provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
 author: laneswenka
-manager: AnnBe
 ms.date: 09/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

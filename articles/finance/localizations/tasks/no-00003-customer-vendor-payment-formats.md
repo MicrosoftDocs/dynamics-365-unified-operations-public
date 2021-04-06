@@ -4,11 +4,9 @@
 title: NO-00003 Customer and vendor payment formats
 description: This task walks you through setting up and maintaining Norwegian payment IDs. 
 author: epodkolz
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

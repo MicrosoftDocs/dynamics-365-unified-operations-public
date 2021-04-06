@@ -4,11 +4,9 @@
 title: Workflow type checklist
 description: This topic describes the steps that are required to create a new workflow type.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

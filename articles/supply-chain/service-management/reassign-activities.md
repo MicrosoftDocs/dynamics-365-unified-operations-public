@@ -4,11 +4,9 @@
 title: Reassign activities 
 description: This topic describes how to reassign service activities from one worker to another worker.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

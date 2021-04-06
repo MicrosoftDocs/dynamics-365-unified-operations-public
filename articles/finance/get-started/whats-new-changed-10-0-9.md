@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Finance version 10.0.9 (April 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.8.
 author: roschlom
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

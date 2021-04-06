@@ -4,11 +4,9 @@
 title: Add or copy leases (Preview)
 description: This topic describes how to create a new lease by entering information for it in Asset leasing or copying information from an existing lease.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

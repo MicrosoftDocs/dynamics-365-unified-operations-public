@@ -4,11 +4,9 @@
 title: Define a tax configuration and deploy it to legal entities
 description: This topic explains how to define a tax configuration, and then deploy it to one or more legal entities. 
 author: EricWang
-manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

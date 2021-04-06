@@ -4,11 +4,9 @@
 title: Support for Finance and Operations operated by 21Vianet in China
 description: Finance and Operations apps provides many self-service support options and support through 21Vianet. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

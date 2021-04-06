@@ -4,11 +4,9 @@
 title: X++ composite data types
 description: This topic describes composite data types in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

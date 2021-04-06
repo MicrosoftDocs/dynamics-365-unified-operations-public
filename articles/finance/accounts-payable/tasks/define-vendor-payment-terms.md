@@ -4,11 +4,9 @@
 title: Define vendor payment terms
 description: This topic explains how to set up payment terms for vendor invoices.  
 author: abruer
-manager: AnnBe 
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

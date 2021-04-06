@@ -4,11 +4,9 @@
 title: Deploy high-availability environments on Azure
 description: This article explains how to deploy a high availability environment on Microsoft Azure.
 author: kfend
-manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata

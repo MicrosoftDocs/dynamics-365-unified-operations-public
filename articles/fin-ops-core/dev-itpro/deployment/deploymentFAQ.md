@@ -4,11 +4,9 @@
 title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
-manager: AnnBe
-ms.date: 11/09/2020
+ms.date: 03/30/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -99,6 +97,36 @@ Log a support ticket, and Microsoft will help you perform the action on your env
 
 If your critical action isn't listed earlier in this topic, add a comment to this topic or log a documentation bug, and Microsoft will address your requirement.
 
+## What regions are supported on self-service in North America?
+We currently only support the following regions in North America.
+
+- East US
+- West US
+- Central US
+  > [!NOTE]
+  > Central US is no longer being provided as an option for self-service migrations beginning April 1, 2021.
+
+For more information about region availability, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
+
+### My environments are currently in the regions that are no longer supported. How will this change affect me?
+Projects that have been onboarded on or after August 1, 2020 are no longer supported in the following regions:
+
+-	East US2
+-	West US2
+-	West Central US
+-	North Central US
+-	South Central US
+
+> [!NOTE]
+> This will not affect any environments that have their data stored in the deprecated regions before August 2020. There is a transition plan to move customers in the deprecated regions into other regions. For a list of the latest supported regions, see [International availability of Dynamics 365](https://www.microsoft.com/trustcenter/privacy/dynamics365-operations-location).
+
+- With all self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available, so you must add them before your upcoming self-service migrations. For more information about IP addresses, see [For my Microsoft-managed environments, I have external components that have dependencies on an explicit outbound IP safe list. How can I ensure my service is not impacted after the move to self-service deployment?](deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment).
+- If you have any integrations or other dependencies that are latency-driven and have questions regarding how the change in regions will impact that, please contact [Microsoft Support](../lifecycle-services/lcs-support.md).
+- Central US is no longer an option for self-service migrations. If a customer plans to leverage dual-write functionality, virtual entities, or any Finance and Operations apps add-ins that have dependencies on Dataverse, keep in mind that Dataverse is not supported in Central US. There are currently no plans to support Dataverse in Central US in the foreseeable future. For continued functionality of features in a supported region, we will plan to move your environment to East US or West US instead of Central US.
+- If you have a project which has a few environments using self-service capabilities in Central US and others in North Central, South Central or West Central, the rest of the IaaS environments can still be moved to East or West US as part of migrations. For the environments already on Service Fabric and in Central US, please contact Microsoft Support to get them moved to East/West US based on your preference.
+-	Please review all the Azure resources in your current region and assess if they need to be co-located to the new region in preparation for the upcoming changes as part of migrations.
+- If you have questions about data movement related to cross-region migrations, see [The source and target are on different infrastructure (Microsoft-managed vs. self-Service)](../database/database-pitr-prod-sandbox.md#the-source-and-target-are-on-different-infrastructure-microsoft-managed-vs-self-service).
+
 ## For my Microsoft-managed environments, I have external components that have dependencies on an explicit outbound IP safe list. How can I ensure my service is not impacted after the move to self-service deployment?
 With self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available so you can add them in preparation for the upcoming self-service migrations or post migrations.
 
@@ -129,6 +157,11 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | South East Asia | 20.44.247.0/26
 | Japan East | 20.48.77.192/26
 | Japan West | 20.39.179.192/26
+| India South | 20.40.5.0/26
+| India Cental | 20.193.248.192/26
+
+## What does the downtime look like for self-service migrations?
+Self-service migration for any environment takes three hours of 100% downtime, with a six-hour pre-migration window leading up to the actual migration downtime of 3 hours. The environment will be available with limited servicing capabilities during the six-hour pre-migration window, but will be completely unavailable in the three-hour migration window. We recommend that customers do not schedule any servicing activity, like package deployment, during the pre-migration window because it will interfere with migrations and will trigger a migration cancellation.
 
 ## Is there a potential impact on the environment's certificates?
 

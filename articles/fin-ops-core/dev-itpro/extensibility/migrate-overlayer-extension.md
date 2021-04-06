@@ -4,11 +4,9 @@
 title: Migrate from overlayering to extensions
 description: This topic provides information about migration from customizations that are based on overlayered code to customizations that are based on extensions.
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

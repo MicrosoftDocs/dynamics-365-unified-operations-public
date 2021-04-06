@@ -4,11 +4,9 @@
 title: Process invoice factures for export trade
 description: This topic provides information about invoice factures for export sales in Russia.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Sales of taxable goods to consumers
 description: This topic provides information about the sale of taxable goods to a consumer.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

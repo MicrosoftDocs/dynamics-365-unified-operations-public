@@ -4,11 +4,9 @@
 title: ER migration cleanup
 description: This topic explains how you can use the ER migration cleanup function to resolve issues with ER templates.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

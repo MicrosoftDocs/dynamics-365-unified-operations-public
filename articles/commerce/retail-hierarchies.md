@@ -4,11 +4,9 @@
 title: Commerce hierarchies
 description: This article describes hierarchies in Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

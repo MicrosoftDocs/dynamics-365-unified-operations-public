@@ -4,11 +4,9 @@
 title: Commission settlement on payments
 description: This topic provides information about commission settlement on payments.
 author: ilkond
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

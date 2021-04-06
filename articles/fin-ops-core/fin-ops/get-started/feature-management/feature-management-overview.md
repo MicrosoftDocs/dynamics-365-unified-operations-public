@@ -3,11 +3,9 @@
 title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

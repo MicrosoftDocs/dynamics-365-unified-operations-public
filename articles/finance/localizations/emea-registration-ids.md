@@ -4,11 +4,9 @@
 title: Registration IDs
 description: This topic provides information about setting up and using registration IDs.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Development and continuous delivery FAQ
 description: This topic answers to questions that are frequently asked by ISVs and partners about development, testing, delivery, and lifecycle management.
 author: RobinARH
-manager: AnnBe
 ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

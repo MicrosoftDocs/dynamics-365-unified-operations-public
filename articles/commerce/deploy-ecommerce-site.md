@@ -4,11 +4,9 @@
 title: Deploy a new e-commerce tenant
 description: This topic describes how to deploy a new Dynamics 365 Commerce e-commerce site by using Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,12 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Deploy a new e-commerce tenant
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to deploy a new Dynamics 365 Commerce e-commerce site by using Microsoft Dynamics Lifecycle Services (LCS).
-
-## Overview
 
 Microsoft Dynamics Lifecycle Services (LCS) is a cloud-based collaborative workspace that partners and customers can use to manage their projects and environments, view the latest information about Microsoft Dynamics products and features, and create, track, and browse support incidents. E-commerce management features are integrated into LCS.
 

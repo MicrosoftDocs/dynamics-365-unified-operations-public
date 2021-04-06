@@ -4,11 +4,9 @@
 title: Commerce capabilities that are available in on-premises deployments
 description: This topic lists the Commerce capabilities available in on-premises deployments.
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

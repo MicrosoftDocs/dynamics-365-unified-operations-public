@@ -2,13 +2,11 @@
 # required metadata
 
 title: Payroll data updates FAQ
-description: A number of changes can and do happen at the end of a year that require changes to your payroll data. Workers can change their benefit election, or your company might change benefit rates, and benefit balances. Workers who move into different positions also result in changes to payroll data. This topic lists questions and answers that address these kinds of changes.
+description: This topic lists questions and answers that address changes to payroll data.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

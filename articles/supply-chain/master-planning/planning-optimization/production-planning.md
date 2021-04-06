@@ -4,11 +4,9 @@
 title: Production planning
 description: This topic describes planning for production and explains how to modify planned production orders by using Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,11 @@ ms.dyn365.ops.version: 10.0.13
 
 Planning Optimizations supports several production scenarios. If you're migrating from the existing, built-in master planning engine, it's important that you be aware of some changed behavior.
 
-<!-- The following video gives a short introduction to some of the current capabilities. 
-KFM: Link to video for production functionality, coming soon... -->
+The following video gives a short introduction to some of the concepts discussed in this topic: [Dynamics 365 Supply Chain Management: Planning Optimization enhancements](https://youtu.be/u1pcmZuZBTw).
+
+## Turn on this feature for your system
+
+If your system doesn't already include the features described in this topic, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Planned production orders for Planning Optimization* feature.
 
 ## Planned production orders
 

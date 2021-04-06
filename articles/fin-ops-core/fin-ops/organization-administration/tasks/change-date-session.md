@@ -4,11 +4,9 @@
 title: Change the date for a session
 description: This topic explains how to change the date for a session.
 author: pvillads
-manager: AnnBe 
 ms.date: 07/31/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

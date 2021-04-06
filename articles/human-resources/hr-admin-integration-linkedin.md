@@ -4,11 +4,9 @@
 title: Integrate with LinkedIn Talent Hub
 description: This topic explains how to set up integration between Microsoft Dynamics 365 Human Resources and LinkedIn Talent Hub.
 author: jaredha
-manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata

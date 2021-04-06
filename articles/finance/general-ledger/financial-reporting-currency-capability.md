@@ -4,11 +4,9 @@
 title: Currency capabilities in financial reporting
 description: Financial reporting includes features that support complex currency reporting requirements.
 author: panolte
-manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

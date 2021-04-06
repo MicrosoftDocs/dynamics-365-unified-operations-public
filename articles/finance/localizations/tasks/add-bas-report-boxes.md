@@ -4,11 +4,9 @@
 title: Add BAS report boxes and generate the Australia Business Activity Statement BAS
 description: This procedure walks you through adding BAS report boxes and generating the BAS. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

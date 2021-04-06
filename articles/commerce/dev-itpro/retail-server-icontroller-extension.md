@@ -4,11 +4,9 @@
 title: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 description: This topic explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: mugunthanm
-manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -216,6 +214,52 @@ public static class CommerceRoles
     public static readonly string[] All;
 }
  ```
+
+### Support paging in Retail Server APIs
+
+Starting in release 10.0.18, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
+
+The extension can pass **QueryResultSettings** to the CRT request, which the CRT request can use when there is a database query.
+
+The full sample code is available in the Retail SDK:
+RetailSDK\SampleExtensions\CommerceRuntime\Extensions.StoreHoursSample\StoreHoursDataService.cs
+RetailSDK\SampleExtensions\RetailServer\Extensions.StoreHoursSample\StoreHoursController.cs"
+
+```csharp
+
+    [HttpPost]
+        [Authorization(CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
+        public async Task<PagedResult<SampleDataModel.StoreDayHours>> GetStoreDaysByStore(IEndpointContext context, string StoreNumber, QueryResultSettings queryResultSettings)
+        {
+            var request = new GetStoreHoursDataRequest(StoreNumber) { QueryResultSettings = queryResultSettings };
+            var hoursResponse = await context.ExecuteAsync<GetStoreHoursDataResponse>(request).ConfigureAwait(false);
+            return hoursResponse.DayHours;
+        }
+
+```
+
+```csharp
+
+private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
+            {
+                ThrowIf.Null(request, "request");
+
+                using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
+                {
+                    var query = new SqlPagedQuery(request.QueryResultSettings)
+                    {
+                        DatabaseSchema = "ext",
+                        Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
+                        From = "CONTOSORETAILSTOREHOURSVIEW",
+                        Where = "STORENUMBER = @storeNumber",
+                    };
+
+                    query.Parameters["@storeNumber"] = request.StoreNumber;
+                    return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
+                }
+            }
+            
+  ```
 
 ### Register the extension
 

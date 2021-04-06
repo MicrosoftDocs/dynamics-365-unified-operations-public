@@ -4,11 +4,9 @@
 title: Enter and post tax adjustment transactions (Brazil)
 description: Use this procedure to create and post tax adjustment transactions. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

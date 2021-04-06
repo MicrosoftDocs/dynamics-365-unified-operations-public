@@ -4,11 +4,9 @@
 title: Customize through extension and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements, overlayering and extensions.
 author: jorisdg
-manager: AnnBe
 ms.date: 09/25/2018
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata

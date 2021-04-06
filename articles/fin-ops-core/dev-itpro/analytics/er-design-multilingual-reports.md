@@ -4,11 +4,9 @@
 title: Design multilingual reports in Electronic reporting
 description: This topic explains how you can use Electronic reporting (ER) labels to design and generate multilingual reports.
 author: NickSelin
-manager: AnnBe
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

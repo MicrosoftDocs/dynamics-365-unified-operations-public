@@ -4,11 +4,9 @@
 title: Self-service deployment overview
 description: This topic provides an overview of self-service deployment.
 author: rashmansur
-manager: AnnBe
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

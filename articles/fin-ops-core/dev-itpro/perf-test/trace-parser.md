@@ -4,11 +4,9 @@
 title: Diagnose issues and analyze performance by using Trace parser
 description: This topic explains how you can use the Trace parser to consume traces and analyze performance in your deployment. 
 author: RobinARH
-manager: AnnBe
 ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

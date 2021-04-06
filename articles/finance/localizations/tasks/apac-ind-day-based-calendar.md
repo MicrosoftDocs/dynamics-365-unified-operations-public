@@ -4,11 +4,9 @@
 title: Set up a day-based fiscal calendar (India)
 description: This procedure walks you through creating a day-based fiscal calendar that includes one fiscal year. 
 author: AdamTrukawka
-manager: AnnBe 
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

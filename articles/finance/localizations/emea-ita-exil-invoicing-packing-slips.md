@@ -4,11 +4,9 @@
 title: Sort sales invoice lines by packing slip
 description: This topic explains how to set up and print accompanying invoices that include required packing slips details.
 author: ilkond
-manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

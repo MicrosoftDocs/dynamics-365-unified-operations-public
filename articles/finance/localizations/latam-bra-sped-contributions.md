@@ -4,11 +4,9 @@
 title: Set SPED EFD contributions 
 description: This topic explains how to set up parameters and generate the SPED EFD - Contributions statement for Brazil. 
 author: sndray
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata

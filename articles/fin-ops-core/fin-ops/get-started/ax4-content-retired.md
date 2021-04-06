@@ -4,11 +4,9 @@
 title: AX 4.0 content that has been retired
 description: The Dynamics AX 4.0 content on TechNet and MSDN has been retired.
 author: margoc
-manager: AnnBe
 ms.date: 09/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

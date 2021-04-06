@@ -3,11 +3,9 @@
 title: Create a depreciation proposal
 description: This topic describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. 
 author: abruer
-manager: AnnBe 
 ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
 
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Set up bar codes
 description: This article describes how to use bar codes in Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

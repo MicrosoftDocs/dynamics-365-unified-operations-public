@@ -3,11 +3,9 @@
 title: Third party miscellaneous charges  
 description: This topic explains how to handle services that are purchased though a separate invoice as miscellaneous charges.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

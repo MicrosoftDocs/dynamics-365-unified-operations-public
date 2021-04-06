@@ -4,11 +4,9 @@
 title: Cross-company data sources in Electronic reporting (ER)
 description: This topic explains how you can use cross-company data sources in Electronic reporting (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

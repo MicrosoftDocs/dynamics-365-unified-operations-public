@@ -4,11 +4,9 @@
 title: Configure account structures
 description: This topic provides information about account structures and financial dimensions.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

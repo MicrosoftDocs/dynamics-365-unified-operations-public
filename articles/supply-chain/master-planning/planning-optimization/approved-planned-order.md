@@ -4,11 +4,9 @@
 title: Approve planned orders
 description: This topic describes approval of planned orders that are supported in Planning Optimization. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

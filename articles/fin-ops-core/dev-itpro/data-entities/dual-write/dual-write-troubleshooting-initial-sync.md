@@ -4,11 +4,9 @@
 title: Troubleshoot issues during initial synchronization
 description: This topic provides troubleshooting information that can help you fix issues that might occur during initial synchronization.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

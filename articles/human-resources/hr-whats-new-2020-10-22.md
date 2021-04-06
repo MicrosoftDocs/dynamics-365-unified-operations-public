@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Human Resources October 22, 2020
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for October 22, 2020.
 author: jcart1106
-manager: tfehr
 ms.date: 10/22/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-human-resources
 ms.technology:
 
 # optional metadata

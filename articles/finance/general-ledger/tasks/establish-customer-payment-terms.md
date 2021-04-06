@@ -4,11 +4,9 @@
 title: Establish customer payment terms
 description: This procedure defines a cash discount and due date setup. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

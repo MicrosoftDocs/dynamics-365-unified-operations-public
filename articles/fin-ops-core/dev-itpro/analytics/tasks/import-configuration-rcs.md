@@ -4,11 +4,9 @@
 title: (ER) Import configurations from RCS
 description: This topic provides information about how a user can import a new version of an ER configuration from RCS.
 author: NickSelin
-manager: AnnBe 
 ms.date: 07/03/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

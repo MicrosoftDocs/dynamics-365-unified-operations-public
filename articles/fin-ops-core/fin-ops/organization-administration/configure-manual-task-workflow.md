@@ -4,11 +4,9 @@
 title: Configure manual tasks in a workflow
 description: This topic explains how to configure the properties for a manual task.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

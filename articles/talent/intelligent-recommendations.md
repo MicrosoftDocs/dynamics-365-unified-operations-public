@@ -4,11 +4,9 @@
 title: Intelligent recommendations in Attract
 description: This article explains how machine learning can be used to provide recommendations for jobs and job candidates in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

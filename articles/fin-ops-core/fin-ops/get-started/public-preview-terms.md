@@ -4,11 +4,9 @@
 title: Supplemental Terms of Use for Microsoft Dynamics 365 Previews
 description: Topic description
 author: ShellyBakke
-manager: AnnBe
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Set up rate masters
 description: This procedure shows you how to set up a rate master. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 10/16/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

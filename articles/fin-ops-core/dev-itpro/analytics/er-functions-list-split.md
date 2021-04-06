@@ -4,11 +4,9 @@
 title: SPLIT ER function
 description: This topic provides information about how the SPLIT Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -86,6 +84,14 @@ If the `input` argument is empty, a new empty list is returned. If either the `i
 ## Example 2
 
 `SPLIT ("XAb aBy", "aB")` returns a new list that consists of three records that have the **Value** field of the *String* type. The **Value** field in the first record contains the text **"X"**, the **Value** field in the second record contains the text **"&nbsp;"**, and the **Value** field in the third record contains the text **"y"**. 
+
+## Example 3
+
+Yo can use the [INDEX](er-functions-list-index.md) function to access individual elements of the specified input string. If you enter the **MyList** data source of the **Calculated field** type and configure for it the `SPLIT("abc", 1)` expression, the expression `INDEX(MyList,2).Value` returns the text **"b"**.
+
+## Example 4
+
+The [ENUMERATE](er-functions-list-enumerate.md) function can also help you access individual elements of the specified input string. If you first enter the **MyList** data source of the **Calculated field** type and configure for it the `SPLIT("abc", 1)` expression, and then enter the **EnumeratedList** data source of the **Calculated field** type and configure for it the `ENUMERATE(MyList)` expression, the expression `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value` returns the text **"b"**.
 
 ## Additional resources
 

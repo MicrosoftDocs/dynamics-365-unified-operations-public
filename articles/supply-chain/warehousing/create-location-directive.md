@@ -4,11 +4,9 @@
 title: Work with location directives
 description: This topic describes how to work with location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -155,7 +153,7 @@ The fields on the **Location directives** FastTab are specific to the work order
     > [!IMPORTANT]
     > To be able to do both multi-item puts and single-SKU puts, you must specify two lines that have same structure and setup, but you must set the **Multiple SKU** option to *Yes* for one line and *No* for the other. Therefore, for put operations, you must have two identical location directives, even if you don't have to distinguish single SKUs and multiple SKUs on a work ID. Often, if you don't set up both these location directives, unexpected business process locations will come from the applied Location directive. You must use a similar setup for location directives that have a **Work type** of *pick* if you need to process orders that include multiple SKUs.
 
-    Use the **Multiple SKU** option for work lines that handle more than one item number. (The item number will be blank in the work details, and it will be shown as **Multiple** on the processing pages in the warehouse app.)
+    Use the **Multiple SKU** option for work lines that handle more than one item number. (The item number will be blank in the work details, and it will be shown as **Multiple** on the processing pages in the Warehouse Management mobile app.)
 
     In a typical example scenario, a work template is set up so that it has more than one pick/put pair. In this case, you might want to search for a specific staging location to use for lines with a **Work type** of *Put*.
 
@@ -174,7 +172,7 @@ The fields on the **Location directives** FastTab are specific to the work order
     > [!NOTE]
     > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
 
-- **Disposition code** – This field is used for location directives that have a work order type of *Purchase orders*, *Finished goods putaway*, or *Return orders*, and a work type of *Put*. Use it to guide the flow to use a specific location directive, depending on the disposition code that a worker selected in the warehouse app. For example, you can direct returned goods to an inspection location before they are returned to stock. A disposition code can be linked to an inventory status. In this way, it can be used to change the inventory status as part of a receiving process. For example, you have a disposition code, *QA*, that sets the inventory status to *QA*. You can then have a separate location directive to move that inventory to a quarantine location.
+- **Disposition code** – This field is used for location directives that have a work order type of *Purchase orders*, *Finished goods putaway*, or *Return orders*, and a work type of *Put*. Use it to guide the flow to use a specific location directive, depending on the disposition code that a worker selected in the Warehouse Management mobile app. For example, you can direct returned goods to an inspection location before they are returned to stock. A disposition code can be linked to an inventory status. In this way, it can be used to change the inventory status as part of a receiving process. For example, you have a disposition code, *QA*, that sets the inventory status to *QA*. You can then have a separate location directive to move that inventory to a quarantine location.
 
     > [!NOTE]
     > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
@@ -242,7 +240,7 @@ You can define multiple location directive actions for each line. Once again, a 
     - **Round up to the full LP and FEFO batch** – This strategy combines the elements of the *FEFO batch reservation* and *Round up to a full LP* strategies. It's valid only for batch-enabled items and location directives that have a work type of *Pick*. The line must be batch-enabled to use the *FEFO batch reservation* strategy, and the *Round up to a full LP* strategy can be used only for replenishment. If this strategy is configured together with a location stocking limit, it can cause the selected put work location to be overloaded and stocking limits to be ignored.
     - **Round up to a full LP** – This strategy is used to round up the inventory quantity so that it matches the license plate quantity that is assigned to the items that must be picked. You can use this strategy only for replenishment location directives of the *Pick* type. If this strategy is configured together with a location stocking limit, it can cause the selected put work location to be overloaded and stocking limits to be ignored.
     - **License plate guided** – Use this strategy when you release the order to the warehouse to create the pick-and-put work. You can use this approach for multiple license plates. This strategy will try to reserve and create picking work against the locations that hold the requested license plates that have been associated with the transfer order lines. However, if these actions can't be completed, but you still want to create picking work, you should fall back to another strategy for location directive actions. Depending on your business process requirements, you might also want to search for inventory in another area of the warehouse.
-    - **Empty location with no incoming work** – Use this strategy to locate empty locations. A location is considered empty if it has no physical inventory and no expected incoming work. You can use this strategy only for location directives that have a work type of *Pick*.
+    - **Empty location with no incoming work** – Use this strategy to locate empty locations. A location is considered empty if it has no physical inventory and no expected incoming work. You can use this strategy only for location directives that have a work type of *Put*.
     - **Location aging FIFO** – Use the first in, first out (FIFO) strategy to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where no expiration date is available to use for sorting. The FIFO strategy finds the location that contains the oldest aging date, and then allocates picking based on that aging date.
     - **Location aging LIFO** – Use the last in, last out (LIFO) strategy to ship both batch-tracked items and non-batch-tracked items, based on the date when the inventory entered the warehouse. This capability can be especially useful for non-batch-tracked inventory, where no expiration date is available to use for sorting. The LIFO strategy finds the location that contains the newest aging date, and then allocates picking based on that aging date.
 

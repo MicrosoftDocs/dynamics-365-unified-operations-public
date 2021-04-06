@@ -4,11 +4,9 @@
 title: Pay a vendor transaction by endorsing a customer bill of exchange
 description: This task walks you through paying a vendor transaction by endorsing a customer bill of exchange. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

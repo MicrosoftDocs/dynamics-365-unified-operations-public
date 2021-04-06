@@ -4,11 +4,9 @@
 title: Assign number sequences
 description: This topic explains how to create number sequences for lease IDs. It also explains how to create unique IDs that are used in the index revaluation process.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

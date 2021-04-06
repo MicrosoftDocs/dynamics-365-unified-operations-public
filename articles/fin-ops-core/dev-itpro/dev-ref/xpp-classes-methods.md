@@ -4,11 +4,9 @@
 title: Classes and methods
 description: This topic describes how to create and use classes in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Support for upgrade and N-1 for India
 description: This topic provides an overview N-1 support for Commerce customers in India.
 author: kfend 
-manager: ezubov
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

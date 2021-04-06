@@ -4,11 +4,9 @@
 title: Tax interest and free-hand interest for Poland
 description: This topic walks you through the process of setting up and calculating tax interest for Poland.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

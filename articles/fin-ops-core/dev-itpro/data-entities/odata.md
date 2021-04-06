@@ -4,13 +4,11 @@
 title: Open Data Protocol (OData)
 description: This topic provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 author: Sunil-Garg
-manager: AnnBe
 
 ms.date: 06/19/2020
 
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Create ER configurations in RCS and upload them to the Global repository
 description: This topic explains how to create an Electronic reporting (ER) configuration in Microsoft Regulatory Configuration Services (RCS) and upload it to the Global repository.
 author: JaneA07
-manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

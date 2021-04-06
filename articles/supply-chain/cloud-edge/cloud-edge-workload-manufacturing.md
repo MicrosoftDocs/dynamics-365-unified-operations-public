@@ -4,11 +4,9 @@
 title: Manufacturing execution workloads for cloud and edge scale units
 description: This topic describes how manufacturing execution workloads work with cloud and edge scale units.
 author: cabeln
-manager: 
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

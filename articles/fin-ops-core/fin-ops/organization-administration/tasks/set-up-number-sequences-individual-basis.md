@@ -4,11 +4,9 @@
 title: Set up number sequences on an individual basis
 description: This topic explains how to set up number sequences on an individual basis.  
 author: sericks007  
-manager: AnnBe 
 ms.date: 08/16/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

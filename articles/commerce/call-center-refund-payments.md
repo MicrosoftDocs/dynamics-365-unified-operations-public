@@ -4,11 +4,9 @@
 title: Refund payment processing in call centers
 description: This topic explains how payment refunds are generated through call centers when returns are created, or when orders or order lines are canceled.
 author: hhainesms
-manager: annbe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

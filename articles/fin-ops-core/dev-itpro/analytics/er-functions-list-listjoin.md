@@ -4,11 +4,9 @@
 title: LISTJOIN ER function
 description: This topic provides information about how the LISTJOIN Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Reporting and analytics with Power BI home page
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Use external data in cash flow forecasts (preview)
 description: This topic describes the setup steps that you must complete so that external data can be entered or imported into cash flow forecasts.
 author: rcarlson
-manager: AnnBe
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

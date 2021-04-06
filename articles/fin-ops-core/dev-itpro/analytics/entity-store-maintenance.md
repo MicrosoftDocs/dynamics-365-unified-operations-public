@@ -4,11 +4,9 @@
 title: Resolve issues after entity store maintenance
 description: This topic describes procedures that must be completed after entity store maintenance.
 author: sarvanisathish
-manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -69,7 +67,7 @@ After the refresh completes, the application analytical workspaces and reports w
 After refreshing the entity store (as described above), redeploy the reports using the **Deploy Power BI report files** page by selecting **System Administration** \> **Setup** \> **Deploy Power BI files**.
 
 > [!NOTE]
-> Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete and redeploy the report after the maintenance activity is completed.
+> Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete the report and the related dataset, and then redeploy the report after the maintenance activity is completed.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

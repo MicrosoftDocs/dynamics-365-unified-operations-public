@@ -4,11 +4,9 @@
 title: Electronic reporting (ER) overview
 description: This topic provides an overview of the Electronic reporting tool. It describes key concepts, supported scenarios, and formats that are part of the solution.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

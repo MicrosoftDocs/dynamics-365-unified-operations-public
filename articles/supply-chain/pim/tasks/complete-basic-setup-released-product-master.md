@@ -4,11 +4,9 @@
 title: Complete basic setup of a released product master
 description: This topic shows how to complete the minimum setup that is required before the product master can be used in BOM versions.  
 author: ShylaThompson
-manager: tfehr 
 ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

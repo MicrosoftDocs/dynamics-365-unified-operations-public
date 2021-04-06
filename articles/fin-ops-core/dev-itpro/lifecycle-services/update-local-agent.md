@@ -4,11 +4,9 @@
 title: Update the local agent
 description: This topic explains how to update the local agent.
 author: faix
-manager: AnnBe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

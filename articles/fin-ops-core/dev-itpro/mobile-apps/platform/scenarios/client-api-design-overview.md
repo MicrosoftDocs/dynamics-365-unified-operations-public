@@ -4,11 +4,9 @@
 title: Client-side design APIs
 description: This topic provides an overview of the client-side design APIs and includes recommendations for using them.
 author: robinarh
-manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

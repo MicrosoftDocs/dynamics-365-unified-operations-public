@@ -4,11 +4,9 @@
 title: Mobile invoice approvals
 description: This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. 
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

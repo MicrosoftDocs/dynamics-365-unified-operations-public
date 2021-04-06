@@ -4,11 +4,9 @@
 title: Define resource capabilities
 description: Resource capabilities describe what operations resources can do. 
 author: sorenva
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

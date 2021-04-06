@@ -4,11 +4,9 @@
 title: Trickle feed-based order creation for retail store transactions
 description: This topic describes the trickle feed-based order creation for store transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 09/04/2020
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 description: This topic explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
 author: mugunthanm 
-manager: AnnBe
 ms.date: 08/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

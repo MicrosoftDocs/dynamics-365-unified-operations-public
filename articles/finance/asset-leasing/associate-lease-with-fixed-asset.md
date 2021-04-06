@@ -4,11 +4,9 @@
 title: Associate fixed assets with leases
 description: The topic explains how to associate an existing fixed asset with a new lease. 
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

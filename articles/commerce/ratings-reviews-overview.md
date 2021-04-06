@@ -3,11 +3,9 @@
 title: Ratings and reviews overview
 description: This topic covers ratings and reviews in Microsoft Dynamics 365 Commerce. 
 author: gvrmohanreddy 
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

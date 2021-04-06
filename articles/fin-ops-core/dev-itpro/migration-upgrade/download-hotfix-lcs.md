@@ -4,11 +4,9 @@
 title: Download updates from Lifecycle Services (LCS)
 description: This topic covers what updates you should expect to see and how you can get the updates from Lifecycle Services (LCS).
 author: AngelMarshall
-manager: AnnBe
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

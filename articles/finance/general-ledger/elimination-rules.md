@@ -4,11 +4,9 @@
 title: Elimination rules
 description: This topic provides information about elimination rules and the various options for reporting about eliminations.
 author: aprilolson
-manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

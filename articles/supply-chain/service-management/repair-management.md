@@ -4,11 +4,9 @@
 title: Repair management   
 description: Group problems systematically to help with the suggestion of solutions that have been successful in the past.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,15 +40,11 @@ You set up symptoms, diagnosis, and resolution settings. All these can later be 
 
 Use the following setup forms to enter information that will be used to specify the symptoms, the diagnosis, and the resolution, of the repair.
 
-1.  Click **Service management** \> **Setup** \> **Repair** \> **Conditions**.
-
-2.  Click **Service management** \> **Setup** \> **Repair** \> **Symptom areas**.
-
-3.  Click **Service management** \> **Setup** \> **Repair** \> **Diagnosis areas**.
-
-4.  Click **Service management** \> **Setup** \> **Repair** \> **Resolutions**.
-
-5.  Click **Service management** \> **Setup** \> **Repair** \> **Repair stages**.
+- **Service management** \> **Setup** \> **Repair** \> **Conditions**.
+- **Service management** \> **Setup** \> **Repair** \> **Symptom areas**.
+-  **Service management** \> **Setup** \> **Repair** \> **Diagnosis areas**.
+- **Service management** \> **Setup** \> **Repair** \> **Resolutions**.
+- **Service management** \> **Setup** \> **Repair** \> **Repair stages**.
 
 ## Symptoms and conditions
 
@@ -86,19 +80,19 @@ You can create repair lines for each step in the repair process.
 
 ## Create a repair line on a service order
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Go to **Service management** \> **Common** \> **Service orders** \> **Service orders**.
 
 2.  Select the service order with the service object that needs repair.
 
-3.  Click **Repair** \> **Repair lines** to open the **Repair lines** form.
+3.  Select **Repair** \> **Repair lines** to open the **Repair lines** form.
 
-4.  Press CTRL+N to create a new line.
+4.  Select **New** to create a new line.
 
 5.  Select a service object. You can select any service object that has been set up with an object relation on the service order.
 
-6.  Select any of the preset symptoms, diagnosis, and execution values that are relevant in the repair line and then click the **Note** tab to create a note on the repair line, if needed.
+6.  Select any of the preset symptoms, diagnosis, and execution values that are relevant in the repair line and then select the **Note** tab to create a note on the repair line, if needed.
 
-7.  Press CTRL+S to save the new repair line. The **Created date and time** field in the **General** tab of the **Repair lines** form is updated with the time of saving.
+7.  Select **Save** to save the new repair line. The **Created date and time** field in the **General** tab of the **Repair lines** form is updated with the time of saving.
 
 ## Tracking progress and resolving a repair issue
 

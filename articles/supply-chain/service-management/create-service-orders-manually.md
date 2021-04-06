@@ -4,11 +4,9 @@
 title: Create service orders manually   
 description: You can create service orders manually by using a service agreement or by using the **Service orders** form. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,17 +38,17 @@ You can create service orders manually by using a service agreement or by using 
 
 ## Create a service order manually from a service agreement
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Select **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
 
 2.  Select a service agreement or create a new service agreement.
 
-3.  Click the **Deliver** tab and in the **Create** group click **Planned service orders** to open the **Create service orders** form.
+3.  Select the **Deliver** tab and in the **Create** group select **Planned service orders** to open the **Create service orders** form.
 
 ## Create a service order manually in the Service orders form
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Select **Service management** \> **Common** \> **Service orders** \> **Service orders**.
 
-2.  Press Ctrl+N to create a new service order.
+2.  Select **New** to create a new service order.
 
 3.  Create service order lines for the service order.
 
@@ -59,9 +57,9 @@ You can create service orders manually by using a service agreement or by using 
 
 ## Create a service order from a project
 
-1.  Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.
+1.  Go to **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.
 
-2.  In the **Projects** form, on the **Action Pane**, click the **Manage** tab \> click **Service** \> **Service orders**.
+2.  In the **Projects** form, on the **Action Pane**, select the **Manage** tab \> select **Service** \> **Service orders**.
 
 3.  Follow the previous procedure to create a service order manually in the **Service orders** form. The **Project ID** field displays the project reference.
 
@@ -72,19 +70,19 @@ You can create service orders manually by using a service agreement or by using 
 
 You can create a service order from the **Sales orders** form by using the **Create a new service order based on the sales order** wizard.
 
-1.  Click **Sales and marketing** \> **Common** \> **Sales orders** \> **All sales orders**.
+1.  Go to **Sales and marketing** \> **Common** \> **Sales orders** \> **All sales orders**.
 
 2.  Open the relevant sales order.
 
-3.  On the **Sales order** tab, click **Service order** to start the **Create a new service order based on the sales order** wizard.
+3.  On the **Sales order** tab, select **Service order** to start the **Create a new service order based on the sales order** wizard.
 
-4.  Click **Next \>**, and then complete the following steps on the **Select agreement for service order** page:
+4.  Select **Next \>**, and then complete the following steps on the **Select agreement for service order** page:
     
       - Use the **Service agreement** field to select the service agreement with which the new service order should be associated.
     
       - Optional: Use the **Project ID** field to associate this service order with a particular project.
 
-5.  Click **Next \>**, and then complete the following steps on the **Create service order** page:
+5.  Select **Next \>**, and then complete the following steps on the **Create service order** page:
     
       - Enter a date and time for the service call to begin in the **Preferred service time** field.
     
@@ -94,7 +92,7 @@ You can create a service order from the **Sales orders** form by using the **Cre
     
       - In the **Contact ID** field, select the person in the customer's company who should be contacted regarding this service order.
 
-6.  Click **Next \>**, and then click **Finish**.
+6.  Select **Next \>**, and then select **Finish**.
 
 
 ## See also

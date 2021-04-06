@@ -4,11 +4,9 @@
 title: Plan your organizational hierarchy
 description: Before you set up organizations and organization hierarchies, make sure that you understand how to best model your business. 
 author: sericks007
-manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -171,7 +169,7 @@ Operating units use the country context of the parent legal entity. Operating un
 
 #### If the organization is modeled as a legal entity
 
-For countries/regions that are supported, most statutory reports can be created. For information about which reports are available for each country/region, see the [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/). (A CustomerSource logon is required.)
+For countries/regions that are supported, most statutory reports can be created. 
 
 > [!NOTE]
 > A posting layer in the general ledger allows you to make adjusting entries to a parent company that uses a different accounting standard than the child company. For example, for a company that uses generally accepted accounting practices in the United Kingdom (UK GAAP), you can make adjusting entries in the posting layer. These entries can be consolidated into a parent company that uses generally accepted accounting principles (GAAP) in the United States. The adjusting entries do not affect UK GAAP reporting.

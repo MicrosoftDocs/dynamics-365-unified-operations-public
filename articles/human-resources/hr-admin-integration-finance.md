@@ -4,11 +4,9 @@
 title: Configure integration with Finance
 description: This article describes the functionality available for integration from Dynamics 365 Human Resources and Dynamics 365 Finance.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata

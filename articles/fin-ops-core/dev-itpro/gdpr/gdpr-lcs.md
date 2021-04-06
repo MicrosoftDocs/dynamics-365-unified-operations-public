@@ -4,11 +4,9 @@
 title: GDPR data requests for Lifecycle Services (LCS)
 description: This topic offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). 
 author: tfehr
-manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

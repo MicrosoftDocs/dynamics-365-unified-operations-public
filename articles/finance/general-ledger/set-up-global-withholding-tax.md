@@ -5,11 +5,9 @@ title: Set up global withholding tax
 description: This topic lists the steps for setting up global withholding tax for sales and purchases. 
 
 author: roschlom
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
