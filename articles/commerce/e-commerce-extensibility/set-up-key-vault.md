@@ -206,7 +206,7 @@ If the request to fetch the secret value fails, the error property will be set. 
 
 ### Update the platform settings file
 
-You must update the **secretsManagerOUN** property in the platform.settings.json file to specify the OUN of the store or channel where the key vault paramaters were configured. For more information, see [Platform settings file](platform-settings.md).
+You must update the **secretsManagerOUN** property in the platform.settings.json file to specify the OUN of the store or channel where the key vault parameters were configured. For more information, see [Platform settings file](platform-settings.md).
 
 ## Local development
 
