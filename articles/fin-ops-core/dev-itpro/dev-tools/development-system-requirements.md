@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Development system requirements
 description: This topic lists the system requirements for development.
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 33221
 ms.assetid: f39dbe39-7dc3-463c-923e-f22af231b979
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Development system requirements

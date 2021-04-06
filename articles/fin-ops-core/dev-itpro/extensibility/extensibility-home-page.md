@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Extensibility home page
 description: This topic provides links to topics about extensibility.
 author: FrankDahl
@@ -8,8 +6,6 @@ ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

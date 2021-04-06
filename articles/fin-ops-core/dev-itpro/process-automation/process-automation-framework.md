@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Process automation framework development
 description: This topic provides an overview of development that uses the process automation framework.
 author: RyanCCarlson2

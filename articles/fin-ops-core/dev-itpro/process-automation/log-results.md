@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Log results and messages
 description: This topic describes how to log results and messages from process automation.
 author: RyanCCarlson2

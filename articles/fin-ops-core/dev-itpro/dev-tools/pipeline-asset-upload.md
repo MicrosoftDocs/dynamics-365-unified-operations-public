@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Upload assets by using Azure Pipelines
 description: This topic explains how you can upload assets to the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using Azure Pipelines.
 author: jorisdg
 ms.date: 03/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Upload assets by using Azure Pipelines

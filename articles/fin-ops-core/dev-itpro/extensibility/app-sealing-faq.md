@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Extensibility FAQ
 description: This topic provides answers to some frequently asked questions about extensibility.
 author: FrankDahl
@@ -8,8 +6,6 @@ ms.date: 02/25/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 audience: Developer
