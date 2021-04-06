@@ -2132,32 +2132,6 @@
             href: localizations/ind-news-letter-10-0-13.md
           - name: What's new or changed in 10.0.14
             href: localizations/apac-ind-news-letter-10-0-14.md 
-        - name: Fixed assets
-          items:
-          - name: India fixed assets overview
-            href: localizations/apac-ind-fixed-assets.md
-          - name: Attach a day-based calendar to a fixed asset book
-            href: localizations/tasks/apac-ind-attach-day-based-calendar.md
-          - name: Calculate shift depreciation
-            href: localizations/tasks/apac-ind-shift-depreciation-rates.md
-          - name: Create an inventory model group for capital items
-            href: localizations/tasks/apac-ind-create-inventory-model-group.md
-          - name: Create and post depreciation
-            href: localizations/apac-ind-calculate-post-depreciation.md
-          - name: Define type of shift and industry for books and attach to fixed asset
-            href: localizations/tasks/apac-ind-books-shift-industry-types.md
-          - name: Reversing fixed asset transactions
-            href: localizations/apac-ind-reverse-fixed-assets-transactions.md
-          - name: Shift depreciation calculation
-            href: localizations/apac-ind-calculation-shift-depreciation.md
-          - name: Set up a day-based fiscal calendar
-            href: localizations/tasks/apac-ind-day-based-calendar.md
-          - name: Set up parameters to calculate depreciation
-            href: localizations/tasks/apac-ind-set-up-depreciation.md
-          - name: Set up asset group depreciation for depreciation books
-            href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
-          - name: Transfer of capital items to the fixed asset
-            href: localizations/tasks/apac-ind-transfer-capital-items.md
         - name: Indirect taxes
           items: 
           - name: India GST
@@ -2354,6 +2328,32 @@
               href: localizations/apac-ind-tax-thresholds.md  
             - name: TCS on sale of goods
               href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+        - name: Fixed assets
+          items:
+          - name: India fixed assets overview
+            href: localizations/apac-ind-fixed-assets.md
+          - name: Attach a day-based calendar to a fixed asset book
+            href: localizations/tasks/apac-ind-attach-day-based-calendar.md
+          - name: Calculate shift depreciation
+            href: localizations/tasks/apac-ind-shift-depreciation-rates.md
+          - name: Create an inventory model group for capital items
+            href: localizations/tasks/apac-ind-create-inventory-model-group.md
+          - name: Create and post depreciation
+            href: localizations/apac-ind-calculate-post-depreciation.md
+          - name: Define type of shift and industry for books and attach to fixed asset
+            href: localizations/tasks/apac-ind-books-shift-industry-types.md
+          - name: Reversing fixed asset transactions
+            href: localizations/apac-ind-reverse-fixed-assets-transactions.md
+          - name: Shift depreciation calculation
+            href: localizations/apac-ind-calculation-shift-depreciation.md
+          - name: Set up a day-based fiscal calendar
+            href: localizations/tasks/apac-ind-day-based-calendar.md
+          - name: Set up parameters to calculate depreciation
+            href: localizations/tasks/apac-ind-set-up-depreciation.md
+          - name: Set up asset group depreciation for depreciation books
+            href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
+          - name: Transfer of capital items to the fixed asset
+            href: localizations/tasks/apac-ind-transfer-capital-items.md
       - name: Italy
         items:
         - name: Italy overview
