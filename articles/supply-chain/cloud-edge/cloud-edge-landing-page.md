@@ -148,13 +148,20 @@ When enabling the your Dynamics 365 environment for the distributed hybrid topol
 
 Data transferred to and stored in the US data centers will be deleted according to the data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-### Limitations for the current release
+### Prerequisites and limitations for cloud scale units
 
-In the current release for scale units certain capabilities are not available yet and will be added in incremental releases over time.
+In the current release for scale units certain capabilities are not available yet and some may be added in incremental releases over time.
 
-- The scale unit add-ins can only be applied if your Lifecycle Services (LCS) project today is managed in a US data center (lcs.dynamics.com). Going forward, when more LCS  projects will be managed in other data regions, support will also be added for those regions.
-- Scale unit add-ins are not available in sovereign clouds like Mooncake and GCC.  
-- The tenant for your LCS project must have already been converted to support the Service Fabric hosting model.
+- You must be a licensed customer of Dynamics 365 Supply Chain Management.
+- Your existing Lifecycle Services (LCS) project must be administered via the global commercial version of <https://lcs.dynamics.com>.
+  - Local versions of LCS are not supported  e.g. <https://eu.lcs.dynamics.com/>, <https://fr.lcs.dynamics.com/>.
+  - Governmental Cloud versions of LCS are not supported.
+  - Mooncake version of LCS is not supported.
+- Your current production environment must be of type "Self-Service” in LCS. This indicates that the tenant of your LCS project has already been converted to support the Service Fabric hosting model.
+  - Environment types running as IaaS are not supported, which are typically are tagged as “Microsoft Managed” in LCS.
+  If you have this type of environment, please work with your Microsoft contact to understand your migration timeline to "Self-Service".
+- Local Business Data (On-Prem) environment are not supported for Cloud Scale Units.
+
 - Management capabilities that help on the movement of workloads are limited. Certain management operations are not supported in a self-service manner and you might need to request support through your partner or Microsoft contact. Examples are certain workload movement between scale units, and temporary ad-hoc movements in disaster scenarios.
 - Metrics and measures that may help on selecting the best application for your scale units are not available yet. Please work with your Microsoft contact or implementation partner to select the most beneficial application.
 
