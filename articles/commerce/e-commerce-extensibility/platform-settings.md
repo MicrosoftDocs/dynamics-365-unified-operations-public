@@ -5,7 +5,7 @@ title: Platform settings file
 description: This topic covers the various properties that are configured in the platform settings file in Microsoft Dynamics 365 Commerce.
 
 author: samjarawan
-ms.date: 02/11/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -64,8 +64,7 @@ The **namespaceExtensions** property defines the supported namespaces that are u
 
 ## secretsManagerOUN
 
-The **secretsManagerOUN** property defines the OUN (Operating Unit Number) to use when retrieving secret values using the secret manager class. This OUN should represent the OUN (Operating Unit Number) of the store that was used in your Retail Server HQ to configure key vault parameters.  See the [Set up Azure Key Vault](set-up-key-vault.md) topic for more information.
-
+The **secretsManagerOUN** property specifies the operating unit number (OUN) to use when retrieving secret values using the secret manager class. This OUN should match that of the store that was used in your Retail Server HQ to configure key vault parameters. For more information, see [Set up Azure Key Vault for secure key management](set-up-key-vault.md).
 
 ## Additional resources
 
