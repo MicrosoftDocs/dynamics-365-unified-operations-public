@@ -51,14 +51,13 @@ Workload capabilities are being release on a continuous basis with incremental e
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with scale units":::
 
-Scale units extend your central Supply Chain Management hub environment by adding dedicated processing capacity. Scale units can run in the cloud. Alternatively, they can run on the edge at your local facility premises. Scale units can temporarily be disconnected from the hub environment. When they are connected, scale units receive all the information that is required to run the dedicated processing for assigned workloads.
-
-You can configure your hub environment and  cloud scale units for selected workloads by using the [Scale Unit Manager](https://sum.dynamics.com) portal.
+Scale units extend your central Supply Chain Management hub environment by adding dedicated processing capacity. Scale units can run in the cloud. Alternatively, they can run on the edge, on-premises at your local facility.
+Scale units provide resilience, reliability and scale for the assigned workloads. Edge scale units can be temporarily disconnected from the cloud hub environment and workers continue with the work in the assigned workloads on the edge.
 
 A workload is a defined set of business functionality that can be factored out and delegated to a scale unit.
 The workload for warehouse management has been released, while the manufacturing execution workload is still in preview.
 
-You can assign multiple workloads per scale unit. (Please refer to [limitations](#limitations-that-apply-during-the-preview-period) in your release)
+You can configure your hub environment and  cloud scale units for selected workloads by using the [Scale Unit Manager](https://sum.dynamics.com) portal. You can also assign  multiple workloads per scale unit. (Please refer to [prerequisites and limitations](#Prerequisites-and-limitations-for-cloud-scale-units) in the current release)
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
@@ -87,32 +86,74 @@ For more information, see the [manufacturing scale unit workload details (in pre
 
 ## What to consider before enabling the distributed hybrid topology for Supply Chain Management
 
-By enabling the hybrid distributed topology you transition your supply chain management environment in the cloud to functions as a hub that may be supported by additional environments configured as scale units in the cloud or on the edge.
+By enabling the hybrid distributed topology you transition your cloud supply chain management environment to functions as a hub. And you may associate additional environments in the cloud or on the edge which are configured as scale units.
 
-### Prerequisites
+### Prerequisites and limitations for cloud scale units
+
+In the current release for scale units certain capabilities are not available yet and some may be added in incremental releases over time.
+
+#### You must be a licensed customer of Dynamics 365 Supply Chain Management
+
+To onboard to the distributed topology you must have a license to Dynamics 365 Supply Chain Management. Your existing cloud environment will become the hub in the. You can maintain both sandbox and production environments as hub environments and add scale units according the add-is you acquire.  
+ 
+#### Your existing Lifecycle Services (LCS) project must be administered via the global commercial version of <https://lcs.dynamics.com>
+
+- Local versions of LCS are not supported  e.g. <https://eu.lcs.dynamics.com/>, <https://fr.lcs.dynamics.com/>.
+- Governmental Cloud versions of LCS are not supported.
+- Mooncake version of LCS is not supported.
+
+#### Your current production environment must be of type "Self-Service” in LCS 
+
+This indicates that the tenant of your LCS project has already been converted to support the Service Fabric hosting model.
+
+- Environment types running as IaaS are not supported, which are typically are tagged as “Microsoft Managed” in LCS.
+If you have this type of environment, please work with your Microsoft contact to understand your migration timeline to "Self-Service".
 
 Microsoft is in the process of transitioning all cloud environments of SCM from an IaaS model to Service Fabric hosted topology. The move brings better scalability, eases the service management which results in faster deployment and maintenance operations. The service components migrate into the concept of micro services, and the service hosting model [transitions](/virtualization/windowscontainers/about/containers-vs-vm) from VM model to light weight containerized architecture.
 
 Ultimately the same service fabric based containerized service infrastructure will power both cloud and edge instances of the service, be it a hub in the cloud or a scale unit in the cloud or on the edge.
 
-**To onboard to the hybrid topology supporting scale units your project Tenant must have been transitioned to the Service Fabric hosted model.**
-
-Therefore, new environments will be created in Service Fabric. You might have still older existing environments that still run as IaaS until converted. Please note that your planned hub environment must have been converted to Service Fabric. Until then you can create new environments for hub and scale units, which will suffice the requirements – if the LCS project tenant has already been enabled for Service Fabric.
+To onboard to the hybrid topology supporting scale units your project Tenant must have been transitioned to the Service Fabric hosted model. Also any environment that shall act as a hub must have been converted.
 
 > [!TIP]
-> Reach out to your Microsoft contact if you need to inquire about the status of your LCS project tenant.
+> Look up the type of your environment in LCS or reach out to your Microsoft contact if you need to inquire about the status of your LCS project tenant.
 
-### Onboarding in two stages
+#### Local Business Data (On-Prem) environment are not supported as a hub with Scale Units
 
-Onboarding to the distributed hybrid topology 
+On-premises environments cannot function as a hub with scale units. Hub environments are always cloud hosted.
 
-#### Stage 1: Evaluate customization in one-box development environments
+#### Limited scale unit management capabilities
+
+ Management capabilities that help on the movement of workloads are limited. Certain management operations are not supported in a self-service manner and you might need to request support through your partner or Microsoft contact. Examples are certain workload movement between scale units, and temporary ad-hoc movements in disaster scenarios.
+
+#### Metrics and measurements
+
+Metrics and measures that may help on selecting the best application for your scale units are not available yet. Please work with your Microsoft contact or implementation partner to select the most beneficial application.
+
+### Data processing when managing scale units
+
+When enabling the your Dynamics 365 environment for the distributed hybrid topology to support cloud and edge scale units, some management services will only be hosted in the United States, similar to LCS. This affects only the transfer and storage of certain administrative and configuration information used by the 'scale unit manager', including:
+
+- Your tenant names and IDs
+- Your LCS project IDs
+- Administrator and project owner emails used to sign in
+- Environment IDs for hub and scale units
+- Workload configurations including names and physical address of legal entities and facilities that allows displaying your topology on a geographic map.
+- Collected metrics (such as latency and throughput) which will be displayed on the map analysis page to help you selecting the most beneficial use of your scale units.
+
+Data transferred to and stored in the US data centers will be deleted according to the data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+
+## Onboarding in two stages
+
+Onboarding to the distributed hybrid topology goes through two stages. In the first stage the customizations must be validated to work in the distributed topology with scale units. Only in the second stage sandbox and production environments will can be moved.
+
+### Stage 1: Evaluate customization in one-box development environments
 
 Before you begin with onboarding your sandbox or production environments we recommend exploring scale units in a development setup (one-box aka. Tier1 environments) to validate processes, customizations and solutions. In this phase data and customizations will be applied to the one-box environments. One environment takes the role of the hub and the other the role of a scale unit. This setup provides the best way to identify and solve issues. This can also be done using the latest early access (PEAP) build.
 
 For Stage 1, the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools) should be used. It allows you to configure hub and scale units in one or two separate one-box environments. The tool is provided as binary release and in source code on GitHub. Please study the project Wiki with a step by step guide that describes how the tool is used.
 
-#### Stage 2: Acquire add-ins and deploy in your sandbox and production environments
+### Stage 2: Acquire add-ins and deploy in your sandbox and production environments
 
 In order to onboard one of your sandbox or production environment to the new topology you must acquire add-ins for one or more cloud scale units (and in the future also for edge scale units). The add-ins will grant corresponding projects and environments slots in [LCS](https://lcs.dynamics.com/) for the purpose of deploying the scale units environments.
 
@@ -132,36 +173,6 @@ The purchase of each scale unit add-ins not only gives you a monthly volume of t
 Overage add-ins do not entitle new environments slots.
 
 If you wish to acquire mode sand box environments, you can do so by purchasing additional regular sand box slots, which Microsoft can help you to enable for the hybrid topology as sandbox scale units.
-
-### Data processing when managing scale units
-
-When enabling the your Dynamics 365 environment for the distributed hybrid topology to support cloud and edge scale units, some management services will only be hosted in the United States, similar to LCS. This affects only the transfer and storage of certain administrative and configuration information used by the 'scale unit manager', including:
-
-- Your tenant names and IDs
-- Your LCS project IDs
-- Administrator and project owner emails used to sign in
-- Environment IDs for hub and scale units
-- Workload configurations including names and physical address of legal entities and facilities that allows displaying your topology on a geographic map.
-- Collected metrics (such as latency and throughput) which are displayed on the map analysis page
-
-Data transferred to and stored in the US data centers will be deleted according to the data retention policies. Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
-
-### Prerequisites and limitations for cloud scale units
-
-In the current release for scale units certain capabilities are not available yet and some may be added in incremental releases over time.
-
-- You must be a licensed customer of Dynamics 365 Supply Chain Management.
-- Your existing Lifecycle Services (LCS) project must be administered via the global commercial version of <https://lcs.dynamics.com>.
-  - Local versions of LCS are not supported  e.g. <https://eu.lcs.dynamics.com/>, <https://fr.lcs.dynamics.com/>.
-  - Governmental Cloud versions of LCS are not supported.
-  - Mooncake version of LCS is not supported.
-- Your current production environment must be of type "Self-Service” in LCS. This indicates that the tenant of your LCS project has already been converted to support the Service Fabric hosting model.
-  - Environment types running as IaaS are not supported, which are typically are tagged as “Microsoft Managed” in LCS.
-  If you have this type of environment, please work with your Microsoft contact to understand your migration timeline to "Self-Service".
-- Local Business Data (On-Prem) environment are not supported for Cloud Scale Units.
-
-- Management capabilities that help on the movement of workloads are limited. Certain management operations are not supported in a self-service manner and you might need to request support through your partner or Microsoft contact. Examples are certain workload movement between scale units, and temporary ad-hoc movements in disaster scenarios.
-- Metrics and measures that may help on selecting the best application for your scale units are not available yet. Please work with your Microsoft contact or implementation partner to select the most beneficial application.
 
 ## Onboard to the distributed hybrid topology for Supply Chain Management
 
