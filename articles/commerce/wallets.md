@@ -72,6 +72,9 @@ To map a processor payment method to a card or wallet, select the card or wallet
 
 ![Mapped processor payment method](media/Payments/Mapped.png)
 
+> [!NOTE]
+> The **Processor payment method mapping** capability adds a new table that must by synchonized to the channel databse. To add this data to the commerce scheduler, you will need to initialize the commerce scheduler. For details, please refer to documentation related to (updating commerce scheduler configurations)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/cdx-best-practices#updating-configurations]. 
+
 ### When not to use processor payment method mapping
 
 In certain cases, processor payment method mapping may not be granular enough for reporting needs. For example, some retailers differentiate external gift cards from the same provider by their BIN range. In this scenario, the gift cards should not be mapped using the above scenario. Instead, they should continue to use traditional BIN range mapping. 
