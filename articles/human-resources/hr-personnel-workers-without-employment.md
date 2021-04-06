@@ -43,12 +43,24 @@ By default, the **Workers without employment** form is available to the followin
 
 In the **Workers without employment** list, you can delete the individuals listed. By default, this privilege is given to the Human Resources Assistant role. You can give this privilege to other roles with the following steps:
 
-1. Go to Security configuration.
-2. In the Privileges tab, filter the Privileges list to Maintain workers.
-3. In the References column, select Display menu items.
-4. In Display menu items, select HcmWOrkersWithoutEmployment.
-5. Set the Delete permission to Grant.
-6. Select the Unpublished objects tab.
-7. Select Publish all.
+1. Select **System administration** tile, and then select **Security configuration**.
+
+2. In the **Privileges** tab, filter the **Privileges** list to **Maintain workers**.
+
+   [![Filter Privileges list](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
+
+3. In the **References** column, select **Display menu items**.
+
+4. In **Display menu items**, select **HcmWorkersWithoutEmployment**.
+
+   [![Filter Privileges list](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
+
+5. Set the **Delete** permission to **Grant**.
+
+6. Select the **Unpublished objects** tab.
+
+7. Select **Publish all**.
+
+   [![Publish changes](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
