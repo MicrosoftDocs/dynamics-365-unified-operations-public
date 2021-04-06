@@ -100,7 +100,10 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [Onhand inventory availability](inventory-availability.md)
 + [Integrated worker, job, and position](integrated-hr.md)
 + [Party and global address book](party-gab.md)
-+ [Using Power Portal with the Party data model](party-gab-portal.md)
+
+    + [Using Power Portal with the Party data model](party-gab-portal.md)
+    + [Upgrade to the party and global address book model](upgrade-party-gab.md)
+
 + [Note integration](notes-integration.md)
 + [Mapping reference](mapping-reference.md)
 
