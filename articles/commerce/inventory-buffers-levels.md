@@ -4,11 +4,9 @@
 title: Configure inventory buffers and inventory levels
 description: This topic explains how to configure inventory buffers and inventory levels that determine inventory availability messaging on Microsoft Dynamics 365 Commerce sites.
 author: boycezhu
-manager: annbe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

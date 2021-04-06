@@ -4,7 +4,6 @@
 title: Saved views
 description: This topic describes how to use the saved views features.
 author: jasongre
-manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
@@ -29,7 +28,7 @@ ms.dyn365.ops.version: Platform update 28
 # Saved views
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 ## Introduction
 

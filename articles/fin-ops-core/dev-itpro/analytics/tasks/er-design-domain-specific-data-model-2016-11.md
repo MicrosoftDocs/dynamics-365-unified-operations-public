@@ -4,7 +4,6 @@
 title: ER Design domain specific data model
 description: THis topic describes how to create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

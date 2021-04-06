@@ -4,7 +4,6 @@
 title: Configure export to Azure Data Lake
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 

@@ -4,11 +4,9 @@
 title: Brazilian withholding taxes 
 description: This procedure sets up a withholding tax code, withholding tax type, and calculation parameter to calculate withholding taxes for consultancy services or professional service payments. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,7 +4,6 @@
 title: Build the Customer form
 description: In this lab you’ll create a Master Details form and apply form pattern and subpatterns. A Master Details form shows primary data that has many fields.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

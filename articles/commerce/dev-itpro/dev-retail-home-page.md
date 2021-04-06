@@ -4,11 +4,9 @@
 title: Commerce for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Commerce.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

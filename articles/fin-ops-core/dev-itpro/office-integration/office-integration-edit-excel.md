@@ -4,7 +4,6 @@
 title: Create Open in Excel experiences
 description: Learn about creating Open in Office experiences for Excel and Word.
 author: jasongre
-manager: AnnBe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: 

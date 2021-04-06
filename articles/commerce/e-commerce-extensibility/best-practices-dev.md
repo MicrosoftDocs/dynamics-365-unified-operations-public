@@ -4,11 +4,9 @@
 title: Best practices for Dynamics 365 Commerce development 
 description: This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations. 
 author: samjarawan
-manager: annbe
 ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

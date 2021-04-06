@@ -4,16 +4,14 @@
 title: Visibility into material exceptions
 description: This topic describes how you can get better visibility into exceptions for raw materials for production orders and batch orders.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -62,7 +60,11 @@ When you select the tile, the **Release to warehouse** page is opened. This page
 
 When a BOM or formula line is released, it's added to either a new production wave or an existing open wave, depending on the configuration of the production wave template. Through the configuration of the wave template, you can also set up a wave so that it's automatically processed when a BOM or formula line is released. When the wave is processed, warehouse work for raw material picking is generated. If the wave template is configured so that waves aren't processed at the time of release, the wave remains in an unprocessed state. The **Unprocessed waves needing attention** tile shows the number of BOM and formula lines that have been released to the warehouse on unprocessed waves, and that have a raw material date that is earlier than or the same as the workspace date. The lines must also be consumed by an operation resource that applies to the filter of the workspace.
 
-When the tile is selected, the **All production waves** page is opened. This page is filtered by the number of open waves that contain wave lines from released BOM and formula lines that meet the criteria for the tile. From the **All production waves** page, you can manually process the wave.
+When the tile is selected, the **All production waves** page opens. This page is filtered by the number of open waves that contain wave lines from released BOM and formula lines that meet the criteria for the tile.
+
+### Manually maintain production waves
+
+On the **All production waves** page, you can use buttons on **Wave** tab of the Action Pane to manually **Process** and **Release** a wave. You can also use the **Maintain productions** option to view and maintain **Prod BOM Pool** data, which is used to handle the waving process.
 
 ## Open warehouse work needing attention
 

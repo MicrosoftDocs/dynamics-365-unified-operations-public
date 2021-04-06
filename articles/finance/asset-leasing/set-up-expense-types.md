@@ -4,11 +4,9 @@
 title: Set up expense types
 description: This topic explains how to set up expense types in Asset leasing.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

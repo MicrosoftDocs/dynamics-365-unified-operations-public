@@ -4,11 +4,9 @@
 title: Create service task relations   
 description: You can associate service tasks with service agreements or service orders in order to describe the service task to be completed for the agreement or order.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

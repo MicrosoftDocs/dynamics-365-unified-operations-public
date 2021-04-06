@@ -4,7 +4,6 @@
 title: Shipping information setup
 description: This topic describes how to set up shipping information for the Landed cost module.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
@@ -30,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Shipping information setup
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to set up shipping information for the **Landed cost** module.
 

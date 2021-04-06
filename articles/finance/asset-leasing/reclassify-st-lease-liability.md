@@ -4,11 +4,9 @@
 title: Reclassify the short-term portion of a lease liability
 description: This topic explains how to create a monthly journal entry to reclassify a portion of the lease liability as short-term.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,8 +41,7 @@ To create and post the short-term liability reclassification journal entry, foll
 2. In the **Batch journal creation** dialog box, in the **Select schedule** field, select **Short-term lease liability reclass**.
 3. In the **Lease group** field, select a lease group. Alternatively, in the **Book ID** field, select the book ID.
 4. Turn on the **Post** parameter. Alternatively, if the entry should be created but not posted, leave this parameter turned off.
-5. Turn on the **Preview before posting** parameter to view the entry before it's posted.
-6. Select **OK**.
+5. Select **OK**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

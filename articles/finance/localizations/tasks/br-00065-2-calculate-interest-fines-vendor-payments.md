@@ -4,11 +4,9 @@
 title: Calculate interest and fines on vendor payments (Brazil)
 description: You can apply interest and fines on vendor payments that are delayed. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,7 +4,6 @@
 title: Troubleshoot package application issues
 description: The topic provides troubleshooting information for issues that might occur when you apply packages on Tier 1 or Tier 2 through Tier 5 environments.  
 author: laneswenka
-manager: AnnBe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 

@@ -4,11 +4,9 @@
 title: Buy and sell leave
 description: In Dynamics 365 Human Resources, you can submit requests to buy and sell leave based on the buy and sell leave policies set up by your company.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata

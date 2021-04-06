@@ -4,8 +4,7 @@
 title: Upgrade from AX 2012 to Finance and Operations 
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 12/16/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -49,6 +48,8 @@ The overall upgrade process can be visualized as three overarching phases: Analy
 The following diagram shows the end-to-end upgrade process, and the activities that we consider part of each phase. 
 
 ![Upgrade process](./media/upgrade-process.png)
+
+To learn the most important elements and best practices for successfully upgrading your Dynamics AX 2012 solution to Finance and Operations apps, see [Upgrade Dynamics AX 2012 to Finance and Operations apps](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/).
 
 ## Analyze
 

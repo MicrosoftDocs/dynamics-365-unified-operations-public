@@ -4,11 +4,9 @@
 title: Mixed mode planning - Combine discrete, process, and lean sourcing
 description: This topic provides information about mixed mode planning. 
 author: cvocph
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

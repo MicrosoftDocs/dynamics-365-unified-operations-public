@@ -4,7 +4,6 @@
 title: Goods-in-transit processing
 description: This topic describes how to work with goods-in-transit orders. When an order or voyage is set up to use goods-in-transit processing, goods can be invoiced before they have been received in the warehouse for consumption.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
@@ -30,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.17
 # Goods-in-transit processing
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to work with goods-in-transit orders. This type of order is used only by the **Landed cost** module. When an order or voyage is set up to use goods-in-transit processing, you don't have to wait until goods are received in the warehouse before you can invoice them. Instead, the goods are invoiced when they leave the vendor's warehouse or port of origin, and the financial costs are recognized when the voyage begins. This functionality lets you correctly take ownership of inventory, because goods often become the property of your organization when they leave the shipping port.
 
@@ -139,7 +137,7 @@ Landed cost adds the following work creation processes to the mobile device menu
 
 The configuration settings for these processes resemble the settings for the [purchase order receive and putaway work creation processes](https://technet.microsoft.com/library/dn553216.aspx). However, the *Goods in transit item receiving and putaway* process also adds the following field.
 
-- **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the warehouse app will provide an additional option that is named **Shipping container complete**. When that option is selected, the worker will be asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction.
+- **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app will provide an additional option that is named **Shipping container complete**. When that option is selected, the worker will be asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction.
 
 ### Location directives
 

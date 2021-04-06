@@ -4,11 +4,9 @@
 title: Generate the Standard Audit File for France (FEC)
 description: This topic walks you through generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance.
 author: anasyash
-manager: AnnBe
 ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

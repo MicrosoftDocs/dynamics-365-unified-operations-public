@@ -4,11 +4,9 @@
 title: Cost accounting home page
 description: This topic provides a list of the help topics and other resources that are available for Cost accounting.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -41,7 +39,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ## Quick links
 
-|      |   |
+| &nbsp; | &nbsp;  |
 |------|---|
 |  [Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)  |[Cost element dimensions](cost-elements.md)  |
 |  [Dimension hierarchy](dimension-hierarchy.md)  |[Define cost control units](./tasks/define-cost-control-units.md)| 
@@ -51,7 +49,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ## Get started videos<br/>
 
-|  |  |                             |
+| &nbsp; | &nbsp;  | &nbsp;  |
 |------------------------|--------------------|-----------------------------|
 | [Get started with cost accounting](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Cost accounting mobile workspace](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Use Excel for cost accounting analysis](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
 

@@ -4,11 +4,9 @@
 title: Set up fixed asset posting profiles
 description: This task guide will set up Fixed asset posting profiles. 
 author: saraschi2
-manager: AnnBe 
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Use analytic reports in Attract
 description: This topic describes the analytic reports for hiring process insights in Microsoft Dynamics 365 Talent - Attract
 author: fewatson
-manager: tfehr
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

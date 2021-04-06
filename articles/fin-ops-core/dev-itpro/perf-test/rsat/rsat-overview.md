@@ -3,8 +3,7 @@
 
 title: Regression suite automation tool
 description: The Regression suite automation tool lets you record business tasks using the task recorder and convert them into automated tests without writing code.
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod:
@@ -21,7 +20,7 @@ ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
 # ms.search.industry:
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -43,6 +42,7 @@ RSAT usage is described in these topics:
 + [Validate expected values](rsat-validate-expected.md)
 + [Chain test cases](rsat-chain-test-cases.md)
 + [Derived test cases](rsat-derived-test-cases.md)
++ [Configure non-administrator users to use RSAT](rsat-configure-nonadmin.md)
 + [Regression Suite Automation Tool best practices](rsat-best-practices.md)
 + [Troubleshoot the Regression Suite Automation Tool](rsat-troubleshooting.md)
 

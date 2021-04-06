@@ -4,7 +4,6 @@
 title: What's new and changed in Platform update 31 for Finance and Operations apps (January 2020)
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
-manager: AnnBe
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 

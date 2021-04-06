@@ -4,11 +4,9 @@
 title: Manage product categories and products
 description: This topic describes how merchandising managers can use product categories to manage relationships between the Commerce product hierarchy and released product details. 
 author: ashishmsft
-manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

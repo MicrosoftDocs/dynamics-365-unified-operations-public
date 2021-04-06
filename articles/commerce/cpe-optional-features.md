@@ -4,11 +4,9 @@
 title: Configure optional features for a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata

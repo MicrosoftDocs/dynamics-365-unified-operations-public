@@ -4,11 +4,9 @@
 title: EUR-00012 Issue an EU entry certificate
 description: This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

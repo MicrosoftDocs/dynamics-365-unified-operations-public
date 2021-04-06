@@ -4,11 +4,9 @@
 title: Create a schedule for a site
 description: This procedure shows how to schedule production orders that are not yet started for a site. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

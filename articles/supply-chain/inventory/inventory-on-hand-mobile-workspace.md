@@ -4,11 +4,9 @@
 title: Inventory on-hand mobile workspace
 description: This topic provides information about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
 author: Mirzaab
-manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

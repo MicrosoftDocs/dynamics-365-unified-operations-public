@@ -4,11 +4,9 @@
 title: Scope of the Indian localization
 description: This topic provides information about the strategy and scope of the tax, finance, and accounting laws and regulations in India that were implemented as part of Microsoft Dynamics 365 Finance. 
 author: kfend
-manager: AnnBe
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

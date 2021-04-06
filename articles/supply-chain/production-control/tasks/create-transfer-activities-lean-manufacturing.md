@@ -4,11 +4,9 @@
 title: Create transfer activities for lean manufacturing
 description: Create a transfer activity for lean manufacturing. 
 author: cvocph
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Manage assortments (November 2016)
 description: This procedure demonstrates how to create and publish a new product assortment and uses the demo data company USRT. 
 author: jashanno
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

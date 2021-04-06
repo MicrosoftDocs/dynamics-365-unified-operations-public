@@ -3,11 +3,9 @@
 title: Agreements
 description: This topic provides information about sales and purchase agreements for Russian localization.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

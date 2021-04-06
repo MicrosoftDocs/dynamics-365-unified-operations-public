@@ -4,7 +4,6 @@
 title: Get support for Finance and Operations apps or Lifecycle Services (LCS)
 description: This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 author: EricMoos
-manager: AnnBe
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 

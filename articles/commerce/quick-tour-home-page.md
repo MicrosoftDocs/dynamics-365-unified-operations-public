@@ -4,11 +4,9 @@
 title: Home page overview
 description: This topic provides an overview of the home page in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview of the home page in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The home page is the default page that shoppers go to when they visit an e-Commerce site. Typically, this page showcases products and promotions by using a combination of marketing modules. The home page should be rich with images and text to keep shoppers engaged.
 

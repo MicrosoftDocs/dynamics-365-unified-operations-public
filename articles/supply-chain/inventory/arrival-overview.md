@@ -4,11 +4,9 @@
 title: Arrival overview
 description: This topic provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
 author: perlynne
-manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata

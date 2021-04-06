@@ -4,7 +4,6 @@
 title: Methodologies in Lifecycle Services (LCS)
 description: Methodologies in LCS provide a tool that you can use to ensure more repeatable, predictable implementation projects.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

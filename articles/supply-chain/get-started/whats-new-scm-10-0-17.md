@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Preview of Dynamics 365 Supply Chain Management 10.0.17 (April 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.17 (April 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.17. 
 author: kamaybac
-manager: annbe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -28,12 +26,11 @@ ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.17 (April 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.17 (April 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.17. This version has a build number of 10.0.761 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.17. This version has a build number of 10.0.761 and is available as follows:
 
 - **Preview of release:** February 2021
 - **General availability of release (self-update):** March 2021
@@ -41,9 +38,9 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
+The following features are included in this release.  Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
-Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features may still be in preview, though most are now generally available.
 
 ### Asset management
 
@@ -73,9 +70,13 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 - [Warehouse management mobile application](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - For more information, see [Install and connect the Warehouse Management app](../warehousing/install-configure-warehouse-management-app.md) and [Mobile device user settings](../warehousing/mobile-device-user-settings.md).
 
+- Wave execution notifications<br> - For more information, see [Wave execution notifications](../warehousing/wave-execution-notifications.md)
+
 ### Manufacturing
 
-- [Asset management capabilities in the production floor execution interface](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - For more information, see [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md).
+- [Asset management capabilities in the production floor execution interface](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
+
+- Unified number sequence for job IDs<br> - For more information, see 
 
 - [Override the default reservation principle for materials in production](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - For more information, see [Override the default reservation principle for materials in production](../production-control/override-default-reservation-principle.md).
 

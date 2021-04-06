@@ -4,7 +4,6 @@
 title: Right-to-left language support and bidirectional text
 description: This topic discusses the issue of bidirectional text and how it's handled.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

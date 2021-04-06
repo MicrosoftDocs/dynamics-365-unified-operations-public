@@ -4,11 +4,9 @@
 title: Partial location cycle counting 
 description: Cycle count plans guide the actual counting operations. You can request that only specific products and product variants be counted instead of all on-hand inventory in a location.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,7 +49,7 @@ Before partial cycle count work can be processed, you must, at a minimum, select
 For the partial cycle count process, the **Last cycle count** date/time won’t be updated for the location, even though all the items on hand at a given location are counted. The partial cycle count doesn't consider the parameter **Days between cycle counting** on  the **Cycle count plans** page. Partial cycle count doesn't support simultaneous counting of multiple items at the same location. Partial cycle count functionality may result in the same location being counted multiple times for an item when **Process cycle counting plan** is run. To avoid that scenario, specify filters in the **Select locations** field.
 
 > [!NOTE]
-> The warehouse app doesn't provide the **Add LP or item** button when you use the partial cycle count process.
+> The Warehouse Management mobile app doesn't provide the **Add LP or item** button when you use the partial cycle count process.
 
 ## Example
 

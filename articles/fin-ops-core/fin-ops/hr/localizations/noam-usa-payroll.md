@@ -2,9 +2,8 @@
 # required metadata
 
 title: US Payroll overview
-description: Payroll provides full gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
+description: Payroll provides full gross-to-net processing for employees in the United States.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

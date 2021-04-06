@@ -4,7 +4,6 @@
 title: ER Design a configuration for generating reports in OPENXML format (November 2016)
 description: This topic describes how to create a new Electronic reporting configuration that contains a template for generating electronic documents in OPENXML format. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  

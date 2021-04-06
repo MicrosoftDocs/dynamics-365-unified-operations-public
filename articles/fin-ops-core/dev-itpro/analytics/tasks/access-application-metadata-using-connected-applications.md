@@ -4,7 +4,6 @@
 title: Access application metadata by using connected applications
 description: The steps in this topic explain how a Regulatory configuration service user can design a new Electronic reporting model mapping by using metadata.
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/29/2019
 ms.topic: business-process 
 ms.prod:  

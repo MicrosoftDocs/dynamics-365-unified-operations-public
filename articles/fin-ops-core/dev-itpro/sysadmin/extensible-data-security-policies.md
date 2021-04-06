@@ -4,7 +4,6 @@
 title: Extensible data security policies 
 description: This topic provides an overview of Extensible Data Security (XDS) policies in Finance and Operations apps.
 author: Peakerbl
-manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 
@@ -43,7 +42,7 @@ be accessible from the restricted tables.
     customer group, the **CustTable** would be the constrained table.
 
 -   **Primary table**: Used to secure the content of the related constrained
-    table. In the above example, the **CustGroup**table would be the primary table.
+    table. In the above example, the **CustGroup** table would be the primary table.
     The primary table must have an explicit relationship to the constrained table.
 
 -   **Policy query**: Used to secure the constrained tables content using a range

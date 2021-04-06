@@ -4,11 +4,9 @@
 title: Create an inventory model group for capital items (India)
 description: This procedure walks you through creating an inventory model group for capital items. 
 author: AdamTrukawka
-manager: AnnBe 
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

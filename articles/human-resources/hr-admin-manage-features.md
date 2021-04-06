@@ -4,11 +4,9 @@
 title: Manage features in Human Resources
 description: Learn how to turn new features on or off in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata

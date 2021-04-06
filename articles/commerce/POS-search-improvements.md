@@ -4,11 +4,9 @@
 title: Product search and customer search in the point of sale (POS)
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
-manager: AnnBe
-ms.date: 03/09/2021
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -151,6 +149,10 @@ The following list shows the how the cloud-powered customer search functionality
 - The requirement of searching using at least 4 characters in a global search ("Search all stores") is not applicable to this service.
 
 > [!NOTE]
-> The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. Please contact Commerce Support to confirm if it is currently supported in your region.
+> The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. The customer search capability is *not* available in the following regions:
+> - Brazil
+> - India
+> - Canada
+> - United Kingdom
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

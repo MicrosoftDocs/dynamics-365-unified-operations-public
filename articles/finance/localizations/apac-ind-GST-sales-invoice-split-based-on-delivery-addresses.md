@@ -4,11 +4,9 @@
 title: Sales invoices that are split based on delivery addresses
 description: This topic provides information about sales invoices that are split based on delivery addresses.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

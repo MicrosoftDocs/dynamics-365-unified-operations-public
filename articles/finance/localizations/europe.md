@@ -4,11 +4,9 @@
 title: Europe overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Europe. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

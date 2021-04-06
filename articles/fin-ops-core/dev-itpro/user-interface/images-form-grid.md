@@ -4,7 +4,6 @@
 title: Images on a page or in a grid
 description: This topic describes the steps for displaying images on a page or in a grid.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 

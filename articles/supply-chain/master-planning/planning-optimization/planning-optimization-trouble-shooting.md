@@ -4,11 +4,9 @@
 title: Troubleshoot Planning Optimization
 description: This topic describes how to fix issues that you might encounter while working with Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

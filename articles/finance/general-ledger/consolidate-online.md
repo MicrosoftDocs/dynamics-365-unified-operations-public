@@ -4,11 +4,9 @@
 title: Online financial consolidations
 description: This topic describes online financial consolidations in General ledger.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

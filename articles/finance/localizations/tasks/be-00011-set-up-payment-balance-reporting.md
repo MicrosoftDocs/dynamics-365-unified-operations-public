@@ -4,11 +4,9 @@
 title: Set up payment balance reporting (Belgium)
 description: Use this procedure to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information for Belgium. 
 author: v-oloski
-manager: AnnBe 
 ms.date: 07/12/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

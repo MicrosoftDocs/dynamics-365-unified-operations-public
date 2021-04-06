@@ -4,11 +4,9 @@
 title: Delivery alternatives
 description: Sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options.
 author: ChristianRytt
-manager: tfehr
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

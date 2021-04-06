@@ -4,7 +4,6 @@
 title: Updates for AX 2012 R3 in Lifecycle Services (LCS)
 description: This topic describes the Updates page. It hosts the update installer that is used for cumulative updates for Microsoft Dynamics AX 2012 R3.
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

@@ -4,11 +4,9 @@
 title: Set up withholding tax
 description: This topic explains how to set up withholding tax.   
 author: twheeloc
-manager: AnnBe 
 ms.date: 07/11/2019  
 ms.topic: business-process  
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

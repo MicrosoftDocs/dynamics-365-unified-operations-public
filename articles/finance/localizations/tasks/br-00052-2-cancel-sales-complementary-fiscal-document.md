@@ -4,11 +4,9 @@
 title: Cancel a sales complementary fiscal document (Brazil)
 description: You can cancel an incorrect sales complementary fiscal document and provide a reason for the cancellation. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -5,6 +5,10 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: March 22, 2021
+      href: hr-whats-new-2021-03-22.md
+    - name: March 8, 2021
+      href: hr-whats-new-2021-03-08.md
     - name: February 22, 2021
       href: hr-whats-new-2021-02-22.md
     - name: January 28, 2021
@@ -263,6 +267,8 @@
         href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks
         href: hr-admin-troubleshooting-batch-history.md
+      - name: Reset stuck batch jobs
+        href: hr-admin-troubleshooting-batch-execution.md
       - name: Analytic reports aren't updated
         href: hr-admin-troubleshooting-analytic-reports.md
       - name: Can't create an environment in the Power Apps Admin center
@@ -299,6 +305,8 @@
         href: hr-admin-integration-choose-technology.md
       - name: Configure Dataverse integration
         href: hr-admin-integration-common-data-service.md
+      - name: Configure Dataverse virtual tables
+        href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Configure integration with Dayforce
@@ -315,6 +323,12 @@
           href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Troubleshoot Office integration
           href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Troubleshoot development with Dataverse virtual tables
+      items:
+      - name: Optimize Dataverse virtual table queries
+        href: hr-developer-optimize-virtual-table-queries.md
+      - name: Human Resources virtual tables FAQ
+        href: hr-admin-virtual-entity-faq.md
     - name: Entity API reference
       items: 
       - name: Authentication

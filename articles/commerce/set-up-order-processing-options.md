@@ -4,11 +4,9 @@
 title: Set up call center channels
 description: This topic provides information about how to process orders for call centers by using Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

@@ -4,7 +4,6 @@
 title: Finance and Operations application documentation
 description: Documentation for Finance and Operations apps. 
 author: robinarh
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: 

@@ -4,11 +4,9 @@
 title: Design the production floor execution interface
 description: This topic describes how to design the content of the user interface for each configuration.
 author: johanhoffmann
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +27,6 @@ ms.dyn365.ops.version: Release 10.0.16
 # Design the production floor execution interface
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 You can design the content of the user interface for each configuration used by the production floor execution interface. For example, workers in one work cell might need to be able to open job instructions on the production floor, while in another work cell, instructions are not needed. In that case, two configurations should be created, one with a button for opening document attachments and one without this button.
 

@@ -4,11 +4,9 @@
 title: Procurement and sourcing in the public sector in France
 description: This article explains how the standard features that are related to procurement and sourcing are augmented for French entities in the public sector. These features are used to help meet the requirements of the Code des Marchés Publics. 
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

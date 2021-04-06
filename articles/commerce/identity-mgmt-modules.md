@@ -4,7 +4,6 @@
 title: Identity management pages and modules
 description: This topic covers identity management pages and modules in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 

@@ -4,11 +4,9 @@
 title: Subledger transfer to the General ledger
 description: This topic describes capabilities in Microsoft Dynamics 365 Finance related to the subledger transfer process in the general ledger.
 author: roschlom
-manager: AnnBe
 ms.date: 09/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,7 +4,6 @@
 title: Log results and messages
 description: This topic describes how to log results and messages from process automation.
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 

@@ -4,11 +4,9 @@
 title: Provision Talent
 description: This topic walks you through the process of provisioning a new environment for Microsoft Dynamics 365 Talent. 
 author: andreabichsel
-manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

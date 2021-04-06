@@ -4,7 +4,6 @@
 title: Compatibility checker tool
 description: This topic provides information about the compatibility checker tool, which finds and reports metadata breaking changes.
 author: smithanataraj
-manager: AnnBe
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 

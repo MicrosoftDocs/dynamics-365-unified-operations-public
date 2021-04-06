@@ -4,11 +4,9 @@
 title: Modello 770 report
 description: This topic provides information about the Modello 770 report for Italy.
 author: ilkond
-manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

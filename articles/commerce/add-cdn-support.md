@@ -4,11 +4,9 @@
 title: Add support for a content delivery network (CDN)
 description: This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 author: brianshook
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -46,11 +44,7 @@ Additionally, the *statics* (JavaScript or Cascading Style Sheets \[CSS\] files)
 
 ## Set up SSL
 
-To help guarantee that SSL is set up, and that statics are cached, you must configure your CDN so that it is associated with the host name that Commerce generated for your environment. You must also cache the following pattern for statics only: 
-
-/\_msdyn365/\_scnr/\*
-
-After you provision your Commerce environment with the custom domain that is provided, or after you provide the custom domain for your environment by using a service request, point your custom domain to the host name or endpoint that Commerce generated.
+After you provision your Commerce environment with the custom domain that is provided, or after you provide the custom domain for your environment by using a service request, you need to work with the Commerce onboarding team to plan the DNS changes.
 
 As was previously mentioned, the generated host name or endpoint supports an SSL certificate only for \*.commerce.dynamics.com. It doesn't support SSL for custom domains.
 
@@ -67,7 +61,7 @@ The CDN setup process consists of these general steps:
 
 1. Add a front-end host.
 1. Configure a backend pool.
-1. Set up rules for routing and caching.
+1. Set up rules for routing.
 
 ### Add a front-end host
 
@@ -79,8 +73,9 @@ For information about how to set up Azure Front Door Service, see [Quickstart: C
 
 To configure a backend pool in Azure Front Door Service, follow these steps.
 
-1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a backend pool as a custom host that has an empty backend host header.
+1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a backend pool as a custom host that has a backend host header that is the same as **&lt;ecom-tenant-name&gt;.commerce.dynamics.com**.
 1. Under **Load balancing**, leave the default values.
+1. Disable health checks for the backend pool.
 
 The following illustration shows the **Add a backend** dialog box in Azure Front Door Service with the backend host name entered.
 
@@ -89,6 +84,10 @@ The following illustration shows the **Add a backend** dialog box in Azure Front
 The following illustration shows the **Add a backend pool** dialog box in Azure Front Door Service with the default load balancing values.
 
 ![Add a backend pool dialog box continued](./media/CDN_BackendPool_2.png)
+
+> [!NOTE]
+> Be sure to disable **Health Probes** when setting up your own Azure Front Door service for Commerce.
+
 
 ### Set up rules in Azure Front Door Service
 
@@ -105,24 +104,6 @@ To set up a routing rule in Azure Front Door Service, follow these steps.
 1. Set the **URL rewrite** option to **Disabled**.
 1. Set the **Caching** option to **Disabled**.
 
-To set up a caching rule in Azure Front Door Service, follow these steps.
-
-1. Add a caching rule.
-1. In the **Name** field, enter **statics**.
-1. In the **Accepted protocol** field, select **HTTP and HTTPS**.
-1. In the **Frontend hosts** field, enter **dynamics-ecom-tenant-name.azurefd.net**.
-1. Under **Patterns to match**, in the upper field, **/\_msdyn365/\_scnr/\***.
-1. Under **Route Details**, set the **Route type** option to **Forward**.
-1. In the **Backend pool** field, select **ecom-backend**.
-1. In the **Forwarding protocol** field group, select the **Match request** option.
-1. Set the **URL rewrite** option to **Disabled**.
-1. Set the **Caching** option to **Disabled**.
-1. In the **Query string caching behavior** field, select **Cache every unique URL**.
-1. In the **Dynamic compression** field group, select the **Enabled** option.
-
-The following illustration shows the **Add a rule** dialog box in Azure Front Door Service.
-
-![Add a rule dialog box](./media/CDN_CachingRule.png)
 
 > [!WARNING]
 > If the domain that you will use is already active and live, create a support ticket from the **Support** tile in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) to get assistance for your next steps. For more information, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
@@ -145,25 +126,7 @@ Your CDN should now be correctly configured so that it can be used with your Com
 
 ## Additional resources
 
-[Configure your domain name](configure-your-domain-name.md)
-
-[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
-
-[Create an e-commerce site](create-ecommerce-site.md)
-
-[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
-
-[Manage robots.txt files](manage-robots-txt-files.md)
-
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
-
-[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
-
-[Set up custom pages for user logins](custom-pages-user-logins.md)
-
-[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
-
-[Enable location-based store detection](enable-store-detection.md)
+[Content delivery network implementation options](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

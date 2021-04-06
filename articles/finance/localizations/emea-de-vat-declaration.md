@@ -4,11 +4,9 @@
 title: VAT declaration for Germany
 description: This topic provides information about how to generate QR-bills and process incoming QR-bills.
 author: anasyash
-manager: AnnBe
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

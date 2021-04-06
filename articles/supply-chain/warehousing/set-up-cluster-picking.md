@@ -4,11 +4,9 @@
 title: Set up cluster picking
 description: This topic describes how to set up cluster picking and how to apply item confirmation with cluster picking.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -20,10 +20,10 @@
           href: get-started/whats-new-platform-updates-10-0-17.md
         - name: Platform updates for 10.0.16 (February 2021)
           href: get-started/whats-new-platform-updates-10-0-16.md
-        - name: Platform updates for 10.0.15 (January 2021)
-          href: get-started/whats-new-platform-updates-10-0-15.md
       - name: Removed or deprecated features
         items:
+        - name: Removed or deprecated features home page
+          href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Removed or deprecated platform features
           href: get-started/removed-deprecated-features-platform-updates.md
         - name: Removed or deprecated features in previous releases
@@ -220,10 +220,20 @@
                   href: data-entities/dual-write/commerce-pricing.md
                 - name: In-house assets for servicing
                   href: data-entities/dual-write/in-house-assets.md
-                - name: Integrated worker, job, and position
-                  href: data-entities/dual-write/integrated-hr.md
                 - name: Inventory availability
                   href: data-entities/dual-write/inventory-availability.md
+                - name: Integrated worker, job, and position
+                  href: data-entities/dual-write/integrated-hr.md
+                - name: Party and global address book
+                  href: data-entities/dual-write/party-gab.md
+                - name: Using Power Portal with the Party data model
+                  href: data-entities/dual-write/party-gab-portal.md
+                - name: Upgrade to the party and global address book model
+                  href: data-entities/dual-write/upgrade-party-gab.md
+                - name: Note integration
+                  href: data-entities/dual-write/notes-integration.md
+                - name: Mapping reference
+                  href: data-entities/dual-write/mapping-reference.md
             - name: Support for dual-write
               items:
                 - name: Support for Field Service and Project Service Automation solutions
@@ -520,13 +530,15 @@
           items: 
           - name: Set up on-premises projects in LCS
             href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-          - name: Set up and deploy on-premises environments
+          - name: Set up and deploy on-premises environments (Platform update 41 and later)
+            href: deployment/setup-deploy-on-premises-pu41.md
+          - name: Set up and deploy on-premises environments (Platform updates 12 through 40)
             href: deployment/setup-deploy-on-premises-pu12.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
           - name: Develop and deploy custom models to on-premises environments
             href: deployment/develop-deploy-custom-models-on-premises.md
-        - name: Environment maintenance
+        - name: Environment operations
           items:
           - name: Apply updates to an on-premises deployment
             href: deployment/apply-updates-on-premises.md
@@ -536,6 +548,8 @@
             href: user-interface/client-disconnected.md
           - name: Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
             href: deployment/onprem-batchonly.md
+          - name: Configure high availability for SQL Server Reporting Services (SSRS) nodes
+            href: deployment/onprem-SSRSHA.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
           - name: On-premises diagnostics
@@ -702,6 +716,8 @@
         items:
         - name: X++ and debugger features
           href: dev-tools/new-x-debugger-features.md
+        - name: Visual Studio 2017 requirements for X++
+          href: dev-tools/developer-tools-vs2017.md
         - name: Debug X++ code
           href: dev-tools/debug-xpp.md
         - name: EventHandlerResult classes in request or response scenarios
@@ -1130,20 +1146,24 @@
           href: lifecycle-services/use-translation-service-tm.md
     - name: Microsoft Power Platform integration
       items:
-      - name: Microsoft Power Platform integration with Finance and Operations
-        href: power-platform/overview.md
-      - name: Add-ins overview
-        href: power-platform/add-ins-overview.md
-      - name: Entity modeling
-        href: power-platform/entity-modeling.md
-      - name: Application lifecycle management
-        href: power-platform/application-lifecycle-management.md
-      - name: Finance and Operations and Dataverse admin reference
-        href: power-platform/admin-reference.md
-      - name: Power Apps portals with Finance and Operations
-        href: power-platform/power-portal-reference.md
-      - name: Finance and Operations virtual entities FAQ
-        href: power-platform/faq.md
+      - name: Virtual entities
+        items:
+        - name: Microsoft Power Platform integration with Finance and Operations
+          href: power-platform/overview.md
+        - name: Entity modeling
+          href: power-platform/entity-modeling.md
+        - name: Application lifecycle management
+          href: power-platform/application-lifecycle-management.md
+        - name: Finance and Operations and Dataverse admin reference
+          href: power-platform/admin-reference.md
+        - name: Power Apps portals with Finance and Operations
+          href: power-platform/power-portal-reference.md
+        - name: Finance and Operations virtual entities FAQ
+          href: power-platform/faq.md
+      - name: Add-ins
+        items:
+        - name: Add-ins overview
+          href: power-platform/add-ins-overview.md
     - name: Mobile platform
       items:
       - name: Mobile platform resources
@@ -1384,6 +1404,8 @@
         href: perf-test/rsat/rsat-derived-test-cases.md
       - name: Regression suite automation tool tutorial
         href: perf-test/rsat/rsat-tutorial.md
+      - name: Configure non-administrator users
+        href: perf-test/rsat/rsat-configure-nonadmin.md
       - name: Best practices
         href: perf-test/rsat/rsat-best-practices.md
       - name: Data agnostic testing using the Regression Suite Automation Tool
@@ -1452,6 +1474,8 @@
         href: sysadmin/pre-configured-system-accounts.md
       - name: Export B2B users to Azure AD
         href: sysadmin/implement-b2b.md
+      - name: Data maintenance
+        href: sysadmin/DataMaintenancePortal.md
       - name: Security
         items:
         - name: Role-based security

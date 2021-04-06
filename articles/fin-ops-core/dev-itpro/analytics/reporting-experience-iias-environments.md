@@ -3,8 +3,7 @@
 
 title: Default reporting experiences in IaaS environments
 description: This topic provides information about paginated reporting in Finance and Operations apps.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 05/13/2020
 ms.topic: article
 ms.prod: 
@@ -22,7 +21,7 @@ ms.custom: 27661
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: milindav
+ms.author: richdi
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

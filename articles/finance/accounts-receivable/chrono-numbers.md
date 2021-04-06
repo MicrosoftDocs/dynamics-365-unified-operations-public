@@ -4,11 +4,9 @@
 title: Numbering documents and vouchers chronologically
 description: This topic explains how to set up and use chronological numbers for applicable documents and related vouchers.  
 author: ikond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,7 +31,6 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 In some countries, there is a legal requirement to number documents and related vouchers in chronological order. The chronology must be supported by periods. All of the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
 This topic explains how to configure and use chronological numbers for applicable documents and related vouchers.
