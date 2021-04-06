@@ -44,6 +44,10 @@ Customers will be able to take up to 8 service updates per year and are required
 
 |          Version          | Preview availability (PEAP) | Generally available (self-update) | Auto-update schedule (via LCS Update Settings) production start date |   End of service   |
 |:-------------------------:|:---------------------------:|:---------------------------------:|:--------------------------------------------------------------------:|:------------------:|
+|          10.0.24          |       December 3, 2021      |          January 14, 2022         |                           February 4, 2022                           |   April 15, 2022   |
+|          10.0.23          |       October 15, 2021      |         December 10, 2021         |                           December 31, 2021                          |   March 18, 2022   |
+|          10.0.22          |      September 3, 2021      |          October 22, 2021         |                           November 5, 2021                           |  January 14, 2022  |
+|          10.0.21          |        August 2, 2021       |         September 17, 2021        |                            October 1, 2021                           |  December 10, 2021 |
 |          10.0.20          |         May 28, 2021        |           July 16, 2021           |                             July 30, 2021                             |  October 22, 2021  |
 |          10.0.19          |        April 23, 2021       |            June 18, 2021           |                             July 2, 2021                             | September 17, 2021 |
 |          10.0.18          |        March 5, 2021        |           April 16, 2021          |                            April 30, 2021                            |    July 16, 2021   |
@@ -64,7 +68,8 @@ Customers will be able to take up to 8 service updates per year and are required
 | 10.0.3/Platform update 27 |         May 10, 2019        |           June 14, 2019           |                             July 1, 2019                             |  September 9, 2019 |
 | 10.0.2/Platform update 26 |        April 12, 2019       |            May 17, 2019           |                             June 1, 2019                             |   August 12, 2019  |
 | 10.0.1/Platform update 25 |                             |                                   |                              May 1, 2019                             |    June 10, 2019   |
-|                           |                             |                                   |                                                                      |                
+
+            
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
 
@@ -85,7 +90,7 @@ Each new release is designed and developed by the Dynamics 365 team. Any new rel
 
 Preview Early Access Program (PEAP) is available to partners, customers, and ISV’s who opt in through the [PEAP Survey](https://aka.ms/PEAP).  As a participant in the PEAP program you will have first access and visibility into the preview for the upcoming service update.  The preview service update is used to validate customizations, learn about new features, and provide feedback to Microsoft.  During this phase, the service update must be deployed on a Dev/Test environment.  This release cannot be used in production. To join the PEAP program, sign up via the [PEAP Survey](https://aka.ms/PEAP). 
 
-The First Release program is open to all customers. Customers who join the First Release program will be the first, select group of customers to take the service update all the way to production.  Microsoft will manage the deployment of this service update to a UAT sandbox and then 7 days later will auto-deploy the update to production. Customers participating in this program have the additional benefit of having dedicated Microsoft engineers closely monitoring the environments for any issues after updates have been applied. To join First Release, sign up via the [First Release Survey](https://aka.ms/FirstRelease).  
+The First Release program is open to all customers. Customers who join the First Release program will be the first, select group of customers to take the service update all the way to production.  Microsoft will manage the deployment of this service update to a UAT sandbox and then 7 days later will auto-deploy the update to production. Customers participating in this program have the additional benefit of having dedicated Microsoft engineers closely monitoring the environments for any issues after updates have been applied. To join First Release, sign up via the [First Release Survey](https://aka.ms/FirstReleaseFnO).  
 
 The service update will be made generally available using the action center in LCS.  When the service update is available, it can be manually applied to all environments including production.  If the service update has not been applied to the designated sandbox or production environment, Microsoft will auto-apply the update based on the Update settings for the LCS project. To learn more, see [Configure service updates through Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-service-updates).
 
