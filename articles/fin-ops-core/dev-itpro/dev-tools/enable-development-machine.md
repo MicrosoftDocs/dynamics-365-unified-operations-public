@@ -47,12 +47,7 @@ To enable a new user account to develop on the VM, the user account must be an a
     1.  In Visual Studio, open **Source Control Explorer**, select the workspace drop-down and select **Manage workspaces**.
     2.  Select the application workspace, click **Edit,** then click **Advanced** and set the workspace to **Public workspace**.
     
-    [![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)
-
-
-
-
-
+    [![Selecting the public workspace](./media/publicworkspace.png)](./media/publicworkspace.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
