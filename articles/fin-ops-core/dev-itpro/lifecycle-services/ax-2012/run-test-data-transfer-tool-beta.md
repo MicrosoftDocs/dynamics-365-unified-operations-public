@@ -4,7 +4,6 @@
 title: Run the Test Data Transfer Tool (beta)
 description: This topic provides information about how to run the Test Data Transfer Tool in Microsoft Dynamics AX.
 author: kfend
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

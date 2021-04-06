@@ -4,7 +4,6 @@
 title: Create an advanced ledger entry in the public sector
 description: Public-sector organizations can use advanced ledger entries to create, adjust, and reverse ledger entries. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Not valuable fixed assets (NVFAs) (Russia)
 description: This topic provides information about how to maintain not valuable fixed assets (NVFAs) for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/06/2018
 ms.topic: article
 ms.prod: 

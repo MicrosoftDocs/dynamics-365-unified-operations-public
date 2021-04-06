@@ -4,7 +4,6 @@
 title: Work hour control
 description: This topic explains work hour control in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: 

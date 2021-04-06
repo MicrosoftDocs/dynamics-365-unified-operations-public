@@ -4,7 +4,6 @@
 title: Create checks that have Blank status 
 description: This topic explains how to create blank checks for a bank account on the Checks page. 
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: 

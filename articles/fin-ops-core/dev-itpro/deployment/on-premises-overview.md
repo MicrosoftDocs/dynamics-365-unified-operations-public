@@ -4,7 +4,6 @@
 title: On-premises deployment overview
 description: Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. 
 author: cabeln
-manager: AnnBe
 ms.date: 03/18/2021
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Check box support in tree controls
 description: This article is intended as a primer for using check box controls in the tree control. It's not a general 'how to' for using tree controls.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

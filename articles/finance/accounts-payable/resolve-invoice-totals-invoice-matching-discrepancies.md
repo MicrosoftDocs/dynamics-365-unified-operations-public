@@ -4,7 +4,6 @@
 title: Resolve discrepancies during invoice totals matching overview
 description: You can use invoice totals matching to help guarantee that total invoice amounts don't deviate from expected amounts by more than an acceptable variance.
 author: abruer
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

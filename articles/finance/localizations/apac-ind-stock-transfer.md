@@ -4,7 +4,6 @@
 title: Stock transfer orders for India
 description:  This topic provides information about the stock transfer functionality that is available for India in Microsoft Dynamics 365 Finance.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 

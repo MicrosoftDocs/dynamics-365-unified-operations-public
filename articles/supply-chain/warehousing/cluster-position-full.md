@@ -4,7 +4,6 @@
 title: Cluster position full
 description: This topic provides information about the Cluster position full feature. This feature offers an alternative to more rigid enforcement of work break rules when cluster picking is used, because it enables a larger margin of error in the volumetric constraints of containers or totes.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: 
@@ -216,7 +215,7 @@ Two work IDs should have been created, each of which has two pick lines. Follow 
 
 ### Mobile device flow execution – Work confirmation setup for the product
 
-1. Sign in to the warehouse app as a user in warehouse *61*.
+1. Sign in to the Warehouse Management mobile app as a user in warehouse *61*.
 1. Go to **Outbound \> Cluster pick create**.
 
     The **TASK: Assign work to Cluster** page appears.

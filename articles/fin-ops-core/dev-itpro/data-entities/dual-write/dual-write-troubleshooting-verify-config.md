@@ -4,7 +4,6 @@
 title: Verify dual-write configuration in Finance and Operations apps and Dataverse
 description: This topic explains how you can determine whether dual-write is configured in Finance and Operations apps and in Dataverse.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 

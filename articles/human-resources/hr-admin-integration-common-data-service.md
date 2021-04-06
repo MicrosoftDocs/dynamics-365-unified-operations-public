@@ -4,7 +4,6 @@
 title: Configure Dataverse integration
 description: You can turn integration between Microsoft Dataverse and Dynamics 365 Human Resources on or off. You can also view synchronization details, clear tracking data, and resync a table to help troubleshoot data issues between the two environments.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 

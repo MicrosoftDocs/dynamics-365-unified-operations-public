@@ -4,7 +4,6 @@
 title: Modify a demand forecast manually
 description: This procedure shows how to modify the forecast for an item. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  

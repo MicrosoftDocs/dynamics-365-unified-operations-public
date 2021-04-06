@@ -4,7 +4,6 @@
 title: Finance and Operations apps in France
 description: This topic provides information about the availability of Finance and Operations apps in France's data centers.
 author: tfehr
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Asset measures
 description: The topic explains how to create asset measure types in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 

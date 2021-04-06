@@ -4,7 +4,6 @@
 title: Create a scoring method for RFQs
 description: This procedure shows you how to create a scoring method. 
 author: kamaybac
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

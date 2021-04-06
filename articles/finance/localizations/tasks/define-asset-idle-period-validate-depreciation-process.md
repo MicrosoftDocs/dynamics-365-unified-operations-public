@@ -4,7 +4,6 @@
 title: Define asset idle period and validate depreciation process
 description: Use this task to learn how to define fixed asset idle period. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

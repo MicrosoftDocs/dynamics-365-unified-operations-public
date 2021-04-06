@@ -5,7 +5,7 @@ title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -37,11 +37,32 @@ Customers can use the store selector module to pick up a product in a selected s
 
 The store selector module lets users enter a location (city, state, address, and so on) to search for stores within a search radius. When the module is first opened, it uses the customer's browser location to find stores (if consent is provided).
 
-## Store selector module usage in e-Commerce
+## Store selector module usage
 
 - A store selector module can be used on a product details page (PDP) to select a store for pickup.
 - A store selector module can be used on a cart page to select a store for pickup.
 - A store selector module can be used on a standalone page that shows all available stores.
+
+## Fulfillment group setup in Commerce headquarters
+
+For the store selector to display available stores, the fulfillment group must be set up in Commerce headquarters. For more information, see [Set up fulfillment groups](customer-orders-overview.md#set-up-fulfillment-groups).
+
+In addition, for each store in the fulfillment group, the latitude and longitude of the store location must be defined in headquarters.
+
+To enter the latitude and longitude values for a store location in Commerce headquarters, follow these steps.
+
+1. Go to **Inventory management \> Setup \> Inventory breakdown**.
+1. Select the warehouse location in the left pane.
+1. On the **Addresses** FastTab, select **Advanced**.
+
+    ![Example of store details in headquarters](./media/Store-address.png)
+
+1. On the Action Pane, select **Edit**.
+1. On the **General** FastTab, enter values for **Latitude** and **Longitude**.
+
+    ![Example of latitude and longitude setup for a store in headquarters](./media/Store-latitude-longitude.png)
+
+1. On the Action Pane, select **Save**. 
 
 ## Bing Maps integration
 
@@ -53,6 +74,7 @@ For the Autosuggest REST API, you must ensure that the following URLs are allowe
 - To the **img-src** directive, add **&#42;.virtualearth.net**.
 - To the **script-src** directive, **add &#42;.bing.com, &#42;.virtualearth.net**.
 - To the **script style-src** directive, add **&#42;.bing.com**.
+
  
 ## Pickup in store mode
 

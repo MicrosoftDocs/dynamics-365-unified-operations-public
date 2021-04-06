@@ -4,7 +4,6 @@
 title: Fiscal documents and fiscal document framework for Brazil
 description: This topic describes fiscal documents for Brazil.
 author: sndray
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

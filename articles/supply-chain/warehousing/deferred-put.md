@@ -4,7 +4,6 @@
 title: Deferred processing of warehouse work
 description: This topic describes the functionality that makes deferred processing of warehouse work put operations available in  Dynamics 365 Supply Chain Management.
 author: josaw1
-manager: tfehr
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Omni-channel Commerce order payments
 description: This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce.
 author: rubendel
-manager: annbe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
@@ -119,6 +118,7 @@ After the prerequisites that are described in the previous section are in place,
 
 > [!IMPORTANT]
 > The omni-channel Commerce order payments feature includes many changes to payments and order management workflows. You should do exhaustive testing before you turn on this feature in a production environment.
+> After this feature is enabled, the 1070 and 1110 scheduler jobs must be run to synchronize changes to the channel database. 
 
 To distinguish channel orders that are created while the omni-channel Commerce order payments feature is turned on from other orders, the system shows a **Payments type** field on the order header when the feature is turned on. For POS and e-commerce orders, this field is set to **Commerce**.
 

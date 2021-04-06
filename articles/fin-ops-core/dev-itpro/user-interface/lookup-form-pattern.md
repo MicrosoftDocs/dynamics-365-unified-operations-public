@@ -4,7 +4,6 @@
 title: Lookup form pattern
 description: This topic provides information about the Lookup form pattern. 
 author: jasongre
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 

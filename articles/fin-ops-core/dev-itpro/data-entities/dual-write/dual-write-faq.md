@@ -4,7 +4,6 @@
 title: Dual-write FAQ
 description: This topic answers frequently asked questions about dual-write.
 author: robinarh
-manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod:

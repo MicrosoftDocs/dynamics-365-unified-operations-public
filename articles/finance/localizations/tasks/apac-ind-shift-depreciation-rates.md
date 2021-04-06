@@ -4,7 +4,6 @@
 title: Define shift depreciation rates (India)
 description: This procedure walks you through defining shift depreciation rates. 
 author: AdamTrukawka
-manager: AnnBe 
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  

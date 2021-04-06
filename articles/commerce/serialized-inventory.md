@@ -4,7 +4,6 @@
 title: Point of sale (POS) improvements for serialized products
 description: This topic lists improvements that have been made to serialized products to help you save time and be more productive.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

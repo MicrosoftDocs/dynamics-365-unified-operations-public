@@ -4,7 +4,6 @@
 title: Demo data overview
 description: This topic provides an overview of the demo data.
 author: sericks007
-manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 

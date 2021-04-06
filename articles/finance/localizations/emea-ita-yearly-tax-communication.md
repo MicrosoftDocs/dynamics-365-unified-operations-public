@@ -4,7 +4,6 @@
 title: Yearly tax communication
 description: This topic provides information about the yearly tax communication report in Italy. 
 author: anasyash
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 

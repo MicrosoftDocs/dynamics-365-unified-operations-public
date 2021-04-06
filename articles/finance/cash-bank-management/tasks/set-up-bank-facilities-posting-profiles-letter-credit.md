@@ -4,7 +4,6 @@
 title: Set up bank facilities and posting profiles for letter of credit
 description: This procedure walks through creating a Bank facility and posting profile required to process Letters of credit. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

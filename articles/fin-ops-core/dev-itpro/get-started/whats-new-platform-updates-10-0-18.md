@@ -4,7 +4,6 @@
 title: Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.18 of Finance and Operations apps.
 author: sericks007
-manager: AnnBe
 ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 

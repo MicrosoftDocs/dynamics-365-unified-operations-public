@@ -4,7 +4,6 @@
 title: Generate fiscal documents for a load
 description: This topic explains how to generate fiscal documents for a load for Brazil.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/05/2018
 ms.topic: article
 ms.prod: 

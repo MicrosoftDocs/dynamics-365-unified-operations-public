@@ -4,7 +4,6 @@
 title: Create a product
 description: This procedure walks through creating a new product in the Commerce product hierarchy. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

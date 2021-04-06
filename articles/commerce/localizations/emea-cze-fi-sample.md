@@ -5,7 +5,6 @@
 title: Fiscal registration service integration sample for Czech Republic
 description: This topic provides an overview of the fiscal integration sample for Czech Republic.
 author: josaw
-manager: annbe
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.17 (April 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.17. 
 author: kamaybac
-manager: annbe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
@@ -76,6 +75,8 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 ### Manufacturing
 
 - [Asset management capabilities in the production floor execution interface](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
+
+- Unified number sequence for job IDs<br> - For more information, see 
 
 - [Override the default reservation principle for materials in production](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - For more information, see [Override the default reservation principle for materials in production](../production-control/override-default-reservation-principle.md).
 

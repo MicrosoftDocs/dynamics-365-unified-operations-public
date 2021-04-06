@@ -4,7 +4,6 @@
 title: Create a bank facility agreement for the letter of guarantee
 description: This task creates a bank facility agreement to process a letter of guarantee. 
 author: panolte
-manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
 ms.prod:  

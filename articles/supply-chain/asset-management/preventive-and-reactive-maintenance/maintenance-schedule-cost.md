@@ -4,7 +4,6 @@
 title: Maintenance schedule cost
 description: This topic explains maintenance schedule cost in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 

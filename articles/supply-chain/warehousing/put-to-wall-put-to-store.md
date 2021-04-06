@@ -4,7 +4,6 @@
 title: Put to wall - put to store
 description: This topic provides information about the Put to wall - put to store functionality. This functionality lets you handle scenarios where you must consolidate a product to a prepack staging area, based on configurable criteria. It helps decrease picking time because it allows for picking to a single target license plate and can use more put positions than cluster picking.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
@@ -526,7 +525,7 @@ Now that all inventory has been put to the sorting location, it must be sorted t
 
 If sort positions should be closed manually, the **Auto close sort position** option for the outbound sorting template must be set to *No*, and closing must be done before inventory can be moved to the bay door area. Positions can be closed in various ways:
 
-- Via the warehouse app:
+- Via the Warehouse Management mobile app:
 
     - The user can scan one of the items that are already on the position and then select **Close** to close the position.
     - If the user scans a container that has already been sorted container, an error message is shown. However, the user can still continue to close the position.

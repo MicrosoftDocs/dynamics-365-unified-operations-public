@@ -4,7 +4,6 @@
 title: Visual scheduling for lean manufacturing 
 description: This topic provides information about the Kanban schedule board, which the production planner can use to control and optimize the production plan for kanban jobs.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 

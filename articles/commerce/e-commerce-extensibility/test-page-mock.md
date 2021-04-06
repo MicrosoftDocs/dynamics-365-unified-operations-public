@@ -4,7 +4,6 @@
 title: Test modules by using page mocks
 description: This topic describes how to test modules by using page mocks.
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 

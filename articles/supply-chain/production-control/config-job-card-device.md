@@ -4,7 +4,6 @@
 title: Configure job card for devices
 description: This topic describes the various options for configuring the job card device.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Issue customer fiscal documents (project) (Brazil)
 description: You can issue a fiscal document for a project. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  

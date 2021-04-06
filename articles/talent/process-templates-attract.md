@@ -4,7 +4,6 @@
 title: Create a hiring process template in Attract
 description: This topic provides information about how to create a hiring process template in Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: 

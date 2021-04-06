@@ -4,7 +4,6 @@
 title: Rebate reduction principles
 description: This topic describes how to set up reduction principles. Reduction principles control the behavior when multiple rebates apply to the same item or transaction.
 author: sherry-zheng
-manager: tfehr
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 

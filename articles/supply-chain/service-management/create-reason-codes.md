@@ -4,7 +4,6 @@
 title: Create reason codes   
 description: You can create reason codes to explain why you are updating a stage of a service order. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

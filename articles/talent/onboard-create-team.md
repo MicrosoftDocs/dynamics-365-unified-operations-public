@@ -4,7 +4,6 @@
 title: Create a hiring team by using Dynamics 365 Talent - Onboard
 description: This topic explains how to use the Microsoft Dynamics 365 Talent - Onboard app to create onboarding teams.
 author: andreabichsel
-manager:
 ms.date: 05/02/2019
 ms.topic: article
 ms.prod:

@@ -4,7 +4,6 @@
 title: FR-00004 Approve and post draw bill of exchange
 description: This procedure walks you through approval and posting Bill of Exchange. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

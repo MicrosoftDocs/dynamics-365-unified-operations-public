@@ -4,7 +4,6 @@
 title: Inventory aging report examples and logic
 description: This topic presents some examples that show how to interpret the results of an Inventory aging report.
 author: AndersGirke
-manager: tfehr
 ms.date: 5/29/2020
 ms.topic: article
 ms.prod:

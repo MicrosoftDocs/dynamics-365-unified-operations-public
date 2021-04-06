@@ -4,7 +4,6 @@
 title: Attributes that make methods extensible
 description: This topic provides information about attributes that make methods extensible.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 

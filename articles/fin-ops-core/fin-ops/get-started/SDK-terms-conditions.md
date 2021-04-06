@@ -4,7 +4,6 @@
 title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS 
 description: These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). 
 author: ShellyBakke
-manager: AnnBe
 ms.date: 09/26/2019
 ms.topic: article
 ms.prod: 

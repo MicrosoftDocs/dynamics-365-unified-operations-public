@@ -4,7 +4,6 @@
 title: Settle an endorsed bill of exchange
 description: This task walks you through settling an endorsed bill of exchange. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

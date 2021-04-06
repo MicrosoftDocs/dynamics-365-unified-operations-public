@@ -4,7 +4,6 @@
 title: System diagnostics in Lifecycle Services (LCS)
 description: This topic provides information about System diagnostics in Lifecycle Services (LCS).
 author: kfend
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

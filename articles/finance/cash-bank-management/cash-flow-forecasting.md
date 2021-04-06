@@ -4,7 +4,6 @@
 title: Cash flow forecasting
 description: This topic provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
 author: JodiChristiansen
-manager: AnnBe
 ms.date: 12/16/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Immediate replenishment
 description: This topic describes how you can use immediate replenishment to replenish inventory when a location directive fails to allocate inventory.
 author: Mirzaab
-manager: tfehr
 ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 

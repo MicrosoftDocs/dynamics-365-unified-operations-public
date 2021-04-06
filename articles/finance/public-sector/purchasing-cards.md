@@ -4,7 +4,6 @@
 title: Purchasing cards
 description: This topic explains how to setup and track purchasing card transactions.
 author: velofog
-manager: AnnBe
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: 

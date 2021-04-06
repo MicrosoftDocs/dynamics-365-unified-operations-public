@@ -4,7 +4,6 @@
 title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
-manager: AnnBe
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
@@ -108,6 +107,7 @@ The Finance and Operations applications represent the next-generation enterprise
 
 - [X++ and debugger features](new-x-debugger-features.md)
 - [Write business logic by using C\# and X++ source code](write-business-logic.md)
+- [Visual Studio 2017 requirements for X++](developer-tools-vs2017.md)
 
 ### Language support
 

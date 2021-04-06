@@ -4,8 +4,7 @@
 title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-manager: annbe
-ms.date: 03/19/2021
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -70,6 +69,8 @@ Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, 
 }
 ...
 ```
+### Module library versions mapped to Commerce Scale Unit versions 
+
 The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **March 19, 2021**.
 
 | Commerce Scale Unit version | Maximum module library version |
@@ -114,6 +115,38 @@ In the SDK **/src/settings** directory, there's a file called **app.settings.jso
 When upgrading the module library, there may be new settings that are applicable and need to be added manually. The latest app.settings.json file can be found in the [online SDK GitHub settings directory](https://github.com/microsoft/Msdyn365.Commerce.Online/tree/master/src/settings). This file contains settings for the latest available module library. If you haven't made any additions to the app.settings.json file, you can copy the contents of this file to your version or do a diff and merge the new settings manually. If you're updating to an older module library, you can find the specific app.settings.json file under the specific build branch located on the [GitHub branches page](https://github.com/microsoft/Msdyn365.Commerce.Online/branches). You'll need to manually merge the contents to your app.settings.json file.
 
 When a local configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, the local app.settings.json file updates will be included. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS). You will then see the new settings in the site builder tool.
+
+## Update module library using a global module library extension
+
+> [!NOTE] 
+> Only update the module library using a global module library extension if you have no e-commerce extension customizations.
+
+If you have an environment that has no e-commerce extension customizations (in other words, no modules, data actions, or themes) such as a newly deployed environment, you can update the module library using a preconfigured e-commerce global extension within LCS. Deploying with one of the globally available customizations will overwrite the deployed e-commerce extension package, so it is important to ensure that you do not have any customizations already uploaded. You must also ensure that you are not upgrading to a module library version later than that associated with the deployed Commerce Scale Unit version, as shown in the [Module library versions mapped to Commerce Scale Unit versions](#module-library-versions-mapped-to-commerce-scale-unit-versions) section above.
+
+### Deploy a global e-commerce extension
+
+To deploy a global e-commerce extension, follow these steps.
+
+1. From within your LCS project, select **Asset library**.
+
+    ![LCS project screen with the Asset library tile highlighted](media/module-library-update-1.png)
+
+1. On the **Asset library** page, select the **e-Commerce package** tab, and then select **Import**.
+
+    ![LCS Asset library page with the e-Commerce package tab and Import button highlighted](media/module-library-update-2.png)
+
+1. In the **Pick a e-Commerce package** dialog box, select the package to import, and then select **Pick**. It may take 15-30 minutes for the package to be available. 
+
+    The naming convention for the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version. In the following example image, the file name is for Commerce release 10.0.16 and includes module library version 9.26.15. Only general availability versions will be made available.
+    
+    ![Pick an e-Commerce package dialog box with the package name and Pick button highlighted](media/module-library-update-3.png)
+
+1. After the package has been imported, it can be deployed into an e-commerce environment. Select the environment to be updated, and then select **Manage**.  
+1. Select the **e-Commerce** tab, and then select **Apply extension** to display the **Update e-Commerce** dialog box. Select the extension you want to deploy, and then select **Update**. The deployment may take from 15-30 minutes to complete.
+
+    ![Update e-Commerce dialog box with an extension highlighted](media/module-library-update-4.png)
+
+For more information about how to upload an extension package, see [Package configurations and deploy them to an online environment](package-deploy.md).
 
 ## Additional resources
 

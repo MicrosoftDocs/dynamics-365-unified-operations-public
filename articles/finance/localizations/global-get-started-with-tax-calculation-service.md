@@ -4,7 +4,6 @@
 title: Get started with the tax calculation add-in
 description: This topic explains how to set up the tax calculation add-in.
 author: wangchen
-manager: tfehr
 ms.date: 03/10/2021
 ms.topic: article
 ms.prod: 

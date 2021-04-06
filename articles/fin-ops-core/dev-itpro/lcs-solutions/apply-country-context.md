@@ -4,7 +4,6 @@
 title: Apply country/region context
 description: This topic provides information about how to apply country/region context to meet localization and translation requirements.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

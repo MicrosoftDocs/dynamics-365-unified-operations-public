@@ -3,7 +3,6 @@
 title: Enable table maps for dual-write
 description: This topic describes how the table maps work for dual-write.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 

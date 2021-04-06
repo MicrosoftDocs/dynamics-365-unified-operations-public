@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations version 8.1.2 (December 2018)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.2. This version was released in December 2018.
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 

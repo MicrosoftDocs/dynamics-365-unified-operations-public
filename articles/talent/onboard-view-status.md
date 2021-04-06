@@ -4,7 +4,6 @@
 title: View the status of onboarding employees and your tasks
 description: This topic explains how to use the Microsoft Dynamics 365 Talent - Onboard app to track where new hires are in their onboarding process.
 author: andreabichsel
-manager:
 ms.date: 05/02/2019
 ms.topic: article
 ms.prod:

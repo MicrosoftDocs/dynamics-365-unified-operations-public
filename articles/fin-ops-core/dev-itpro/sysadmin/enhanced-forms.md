@@ -4,7 +4,6 @@
 title: Enhanced batch forms
 description: This topic provides information about enhanced batch forms.
 author: hasaid
-manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 

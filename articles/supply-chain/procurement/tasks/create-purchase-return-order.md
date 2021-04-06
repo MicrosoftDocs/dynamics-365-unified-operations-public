@@ -4,7 +4,6 @@
 title: Create a purchase return order
 description: This procedure shows you how to create a purchase return order by using the Credit note action to copy lines from a vendor invoice document to a new PO. 
 author: kamaybac
-manager: tfehr 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  

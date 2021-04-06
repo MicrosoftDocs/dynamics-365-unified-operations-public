@@ -4,7 +4,6 @@
 title: Purchases from unregistered vendors
 description: This topic explains how to work with purchase requisitions for unregistered vendors.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

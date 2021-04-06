@@ -4,7 +4,6 @@
 title: Schedule maintenance plans
 description: This topic explains schedule maintenance plans in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 

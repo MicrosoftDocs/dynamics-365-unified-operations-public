@@ -4,7 +4,6 @@
 title: Mass create sales quotations
 description: This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers. 
 author: omulvad
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

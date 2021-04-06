@@ -4,7 +4,6 @@
 title: Replace user IDs associated with tracked content changes
 description: This topic describes how to replace user IDs that are associated with tracked content changes in Microsoft Dynamics 365 Commerce site builder.
 author: BrianShook
-manager: annbe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 

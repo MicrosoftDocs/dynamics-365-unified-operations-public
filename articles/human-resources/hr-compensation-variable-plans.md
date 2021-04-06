@@ -4,7 +4,6 @@
 title: Create variable compensation plans
 description: Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This article describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

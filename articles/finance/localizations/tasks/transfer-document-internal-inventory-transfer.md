@@ -4,7 +4,6 @@
 title: Generate a transfer document for an internal inventory transfer
 description: This procedure shows how to create transfer documents for goods movement inside a company. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

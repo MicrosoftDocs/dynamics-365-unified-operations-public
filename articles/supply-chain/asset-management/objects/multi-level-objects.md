@@ -4,7 +4,6 @@
 title: Multi-level assets
 description: This topic explains how to create and delete multi-level assets.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 
