@@ -53,7 +53,7 @@ In the **Workers without employment** list, you can delete the individuals liste
 
 4. In **Display menu items**, select **HcmWorkersWithoutEmployment**.
 
-   [![Filter Privileges list](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
+   [![Select form](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
 
 5. Set the **Delete** permission to **Grant**.
 
