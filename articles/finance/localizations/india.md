@@ -5,7 +5,7 @@ title: India overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for India. 
 author: kfend
 manager: AnnBe
-ms.date: 04/05/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -195,6 +195,9 @@ This topic provides links to documentation resources for India.
 - [Include GST when calculating tax collections](apac-ind-gst-include-gst-calculating-tax-collections.md)
 - [Tax thresholds for India FAQ](apac-ind-tax-thresholds.md)
 - [TCS on sales of goods](apac-ind-gst-tcs-on-sale-of-goods-section-206c-(1h).md)
+
+## Feedback
+- [Experience Dynamics 365](https://experience.dynamics.com/)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
