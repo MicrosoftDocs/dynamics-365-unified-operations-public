@@ -125,9 +125,6 @@ For the LBD edge scale units you need to fill the *ScaleUnitConfiguration* secti
 <!--
 # DELETE BELOW
 
-
-
-
 To assign your scale unit to a Supply Chain Management hub environment, run the following steps on the hub environment:
 
 1. Open the **ScaleUnitHubSetup** menu item.

@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.20
 > [!IMPORTANT]
 > The scale unit capability for Supply Chain Management is made available to you under the terms that govern the use of the service [legal terms for Finance and Operations](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about the data processing with cloud and edge scale units, see the [**documentation**](cloud-edge-landing-page.md#data-processing-in-the-distributed-hybrid-topology-using-scale-units).
+> By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about the data processing with cloud and edge scale units, see the [**data processing documentation**](#data-processing-when-managing-scale-units).
 
 **The core value proposition for scale units:**
 
@@ -57,7 +57,7 @@ Scale units provide resilience, reliability and scale for the assigned workloads
 A workload is a defined set of business functionality that can be factored out and delegated to a scale unit.
 The workload for warehouse management has been released, while the manufacturing execution workload is still in preview.
 
-You can configure your hub environment and  cloud scale units for selected workloads by using the [Scale Unit Manager](https://sum.dynamics.com) portal. You can also assign  multiple workloads per scale unit. (Please refer to [prerequisites and limitations](#Prerequisites-and-limitations-for-cloud-scale-units) in the current release)
+You can configure your hub environment and  cloud scale units for selected workloads by using the [Scale Unit Manager](https://sum.dynamics.com) portal. You can also assign  multiple workloads per scale unit. (Please refer to [prerequisites and limitations](#prerequisites-and-limitations-for-cloud-scale-units) in the current release)
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
@@ -102,7 +102,7 @@ To onboard to the distributed topology you must have a license to Dynamics 365 S
 - Governmental Cloud versions of LCS are not supported.
 - Mooncake version of LCS is not supported.
 
-#### Your current production environment must be of type "Self-Service” in LCS 
+#### Your current production environment must be of type "Self-Service” in LCS
 
 This indicates that the tenant of your LCS project has already been converted to support the Service Fabric hosting model.
 
