@@ -5,7 +5,7 @@ title: Set up a B2B e-commerce site
 description: This topic describes how to set up a business-to-business (B2B) e-commerce site in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 01/20/2021
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -287,29 +287,35 @@ To create an invoice details page in site builder, follow these steps.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
 
+## Add the quick add module to the cart page
 
-## Quick add items to cart
-The **Quick add** module  provides a way to quickly add multiple items to the cart using item id (sku id). This module can be added to the cart page for instance to quickly add multiple items to the user's cart.
+The *quick add* module provides a way to quickly add multiple items to the cart using item IDs (also known as SKU IDs). The quick add module is added to a site's cart page.
 
-### Enable quick add on cart page
+To add a quick add module to a cart page in Commerce site builder, follow these steps.
 
-To enable quick add on Cart page, follow these steps
-
-1. Go to the **Cart** template and add **Quick add** module to a Container in Main slot.
-2. Go to **Cart** page, **Main slot**, add a **Container module** and Set Container width to Fit Container.
-3. To the newly added **Container module** add **Quick add** module.
-9. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
-
+1. Go to **Templates** and select your site's cart page template.
+1. Select **Edit**.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (...), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (...), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Quick add** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Go to **Pages** and select your site's cart page.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (...), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** module's properties pane, under **Width** select **Fill Container**.
+1. In the **Container** slot, select the ellipsis (...), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Quick add** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 > [!NOTE] 
-> Quick add module is available in the Dynamics 365 Commerce 10.0.17 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
-
+> The quick add module is available as of the Commerce version 10.0.17 release. If you are updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## Additional resources
 
 [Module library overview](../starter-kit-overview.md)
 
-[SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
+[SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Authoring page overview](../authoring-home-overview.md)
 
@@ -323,7 +329,7 @@ To enable quick add on Cart page, follow these steps
 
 [Content block module](../add-hero-module.md)
 
-[Product Collection](../product-collection-module-overview.md)
+[Product collection module](../product-collection-module-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
