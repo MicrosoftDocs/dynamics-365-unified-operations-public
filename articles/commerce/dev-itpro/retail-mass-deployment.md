@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Mass deployment of self-service components
+title: Mass deployment of legacy self-service components
 description: This topic explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. 
 author: jashanno
-ms.date: 06/02/2020
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,11 +24,11 @@ ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3
 ---
 
-# Mass deployment of self-service components
+# Mass deployment of legacy self-service components
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available.
+This topic is for legacy self-service installers. It explains how you can use legacy self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available. 
 
 ## Delimiters for mass deployment
 
@@ -43,7 +43,7 @@ The following table shows the delimiters that can currently be used in execution
 | -LogFile                  | Specify a custom file location for the installation logs.<p>We don't recommend that you use this delimiter for a standard installation.</p> |
 | -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
 | -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
-| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the self-service installer for Hardware station.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
+| -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the legacy self-service installer for Hardware station.<p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
 | -SkipAppxInstallation     | Beginning in the October 2018 release of Dynamics 365, this delimiter will skip the installation of the APPX Retail Modern POS application. This delimiter is required to perform the application installation through the SYSTEM account or a service account (Any account that does not have a user profile). |
 
 ## Silent servicing
@@ -54,7 +54,7 @@ Note that silent servicing maintains all components that are currently installed
 
 ### Examples of commands for silent servicing
 
-This section shows examples of commands that are used for self-service mass deployment. These commands work for all the standard self-service installers, such as the installers for Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Commerce Scale Unit (self-hosted).
+This section shows examples of commands that are used for legacy self-service mass deployment. These commands work for all the standard installers, such as the installers for Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Commerce Scale Unit (self-hosted).
 
 #### Silently update the current installation of Modern POS
 
@@ -83,7 +83,7 @@ To use this functionality, you must be using version 7.3 or later. It's assumed 
 
 ### Examples of commands for silent mass deployment
 
-This section shows examples of commands that are used for self-service mass deployment of Modern POS, even Modern POS with offline and the installer without offline support. Examples of Windows PowerShell scripts are also included to help users do the installations.
+This section shows examples of commands that are used for legacy self-service mass deployment of Modern POS, even Modern POS with offline and the installer without offline support. Examples of Windows PowerShell scripts are also included to help users do the installations.
 
 #### Silently install Modern POS
 
