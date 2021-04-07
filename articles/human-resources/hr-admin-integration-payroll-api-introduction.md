@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This document describes the Dynamics 365 Human Resources Payroll integration API. The intent of the API is to enable streamlined end-to-end integrations between Dynamics 365 Human Resources and partnering payroll systems. The integrated experience begins in Human Resources with the employee profile, salary and deduction, and contribution information. When an employee is hired and required profile and pay information is entered into Dynamics 365 Human Resources, the payroll system pulls this information to use when processing payroll. Any updates made to the employee or pay information are also pulled for use in subsequent pay runs.
+This document describes the Dynamics 365 Human Resources Payroll integration API. The API enables streamlined end-to-end integrations between Human Resources and partnering payroll systems. The integrated experience begins in Human Resources with the employee profile, salary and deduction, and contribution information. When you hire an employee and enter the required profile and pay information into Human Resources, the payroll system pulls this information to use when processing payroll. Any updates made to the employee or pay information are also pulled for use in later pay runs.
 
 ![Payroll integration flow](media/hr-admin-integration-payroll-introduction-flow.png)
 
@@ -58,20 +58,22 @@ This documentation includes details and developer guidance for using the Dataver
 
 ### Option sets
 
-The data model for the Payroll integration API described in this document includes option sets that provide enumerated values associated with entity properties. For detail on working with option sets in the Dataverse Web API, see [Create and update option sets using the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets). Option sets are defined for each Dataverse environment.
+The data model for the Payroll integration API described in this document includes option sets that provide enumerated values associated with entity properties. For details on working with option sets in the Dataverse Web API, see [Create and update option sets using the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets). Option sets are defined for each Dataverse environment.
 
 ### Virtual tables for Human Resources in Dataverse
 
-The endpoints for the ATS integration API use the virtual table platform capabilities of Microsoft Dataverse. By default, the virtual tables and their associated API endpoints are not deployed for Human Resources environments, enabling organizations to determine which OData endpoints will be exposed for the environment. To use the API, the virtual tables for the Human Resources entities must be generated for the environment. 
+The endpoints for the Payroll integration API use the virtual table platform capabilities of Microsoft Dataverse. By default, the virtual tables and their associated API endpoints aren't deployed for Human Resources environments, enabling organizations to determine which OData endpoints will be exposed for the environment. To use the API, the virtual tables for the Human Resources entities must be generated for the environment.
 
 For information on generating the virtual tables for the API, see [Configure Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
 ## Data model
 
-The data model contains the following entities: 
+The data model contains the following entities:
 
+- TBD
+- TBD
 
-The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to payroll integration scenarios. However, there are many other entities in the Dataverse Web API for Dynamics 365 Human Resources that may also be relevant to your integration.  Some of these entities are referenced in foreign key relationships or navigation properties.
+The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to payroll integration scenarios. However, there are many other entities in the Dataverse Web API for Human Resources that may also be relevant to your integration. Some of these entities are referenced in foreign key relationships or navigation properties.
 
 ![Payroll Integration API data model](media/hr-admin-integration-payroll-api-data-model.png)
 
@@ -88,11 +90,10 @@ Entities:
 
 Option sets:
 
-- [TBD](hr-admin-integration-payroll- TBD.md)
-
-
+- [TBD](hr-admin-integration-payroll-TBD.md)
 
 ## See also
+
 [Generate and review payroll entities](hr-admin-integration-payroll-api-generate-review-entities.md)
 [Configure Human Resources parameters](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-setup-parameters)<br>
 [Configure Human Resources shared parameters](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-setup-shared-parameters)<br>
