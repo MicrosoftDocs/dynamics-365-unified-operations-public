@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll employee API
 
+This topic provides details and an example query for the Payroll employee entity in Dynamics 365 Human Resources.
+
 ## Properties
 
 | Property<br>**Physical name**<br>***Type*** | Use | Description |S
