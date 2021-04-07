@@ -60,11 +60,11 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 550852 | Approval buttons does not validate with respect to mandatory fields set on Review form. | When setting a field on review form as mandatory and publishing the changes for the manager role, the form does not validate as expected. |
-| 559564 | Historic Worker Actions for Fixed Compensation change gives error for terminated users. | Worker action of an exited employee compensation throws error. After an employee is terminated the worker action of promotion before termination throws. |
-| 560074 | Employment category dropdown is not filtering on worker type and shows categories for employees and contractors. | On employee form, employment category dropdown should be showing either employees or contractors categories based on that employee’s worker type. |
-| 567388 | Some of the information for newly created Employees does not sync immediately to the cdm_worker table in Dataverse | When creating a new employee record, the new record would sync to the cdm_worker table in Dataverse, but not all properties would be included in the Dataverse record. |
-| 563837 | Features that shouldn't be available in HR | Several features that are not applicable to Human Resources are displaying in Feature Management. These are now removed from the list of features available to enable in HR. |
+| 550852 | Approval button doesn't validate with respect to mandatory fields set on the **Review** form. | When setting a field on the **Review** form as mandatory and publishing the changes for the manager role, the form doesn't validate as expected. |
+| 559564 | Historic worker actions for fixed compensation change gives error for terminated users. | Worker action of an exited employee compensation gives an error. After an employee is terminated, the worker action of promotion before termination gives an error. |
+| 560074 | Employment category dropdown isn't filtering on **Worker type** and shows categories for employees and contractors. | On the **Employee** form, the **Employment category** dropdown should show either employee or contractor categories, based on the employee’s worker type. |
+| 567388 | Some of the information for newly created employees doesn't sync immediately to the **cdm_worker** table in Dataverse. | When creating a new employee record, the new record would sync to the **cdm_worker** table in Dataverse, but not all properties would be included in the Dataverse record. |
+| 563837 | Features display that aren't available in Human Resources  | Several features that don't apply to Human Resources display in Feature management. These are now removed from the list of features available to enable in Human Resources. |
 
 ## In preview
 
