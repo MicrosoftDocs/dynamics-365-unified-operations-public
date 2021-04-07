@@ -3054,10 +3054,14 @@
           href: localizations/thailand.md
         - name: Stock card reports
           href: localizations/apac-tha-stock-card-reports.md
+        - name: Tax invoices
+          href: localizations/apac-tha-tax-invoices.md
         - name: Substitution/adjustment tax invoice
           href: localizations/apac-tha-substitution-and-adjustment-invoices.md
         - name: Unrealized VAT
           href: localizations/apac-tha-unrealized-vat.md
+        - name: Average VAT for purchase transactions
+          href: localizations/apac-tha-average-vat-for-purchase-transactions.md        
         - name: Tax branch dimensions
           href: localizations/apac-tha-tax-branch-dimensions.md
         - name: Sales VAT report
