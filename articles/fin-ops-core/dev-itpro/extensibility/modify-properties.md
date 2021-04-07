@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Modify table properties through extension
 description: This topic describes how to modify properties on a table by using an extension.
 author: ivanv-microsoft
@@ -9,8 +7,6 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

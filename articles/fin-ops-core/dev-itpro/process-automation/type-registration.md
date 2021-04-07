@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Type registration
 description: This topic describes how to register types from the process automation framework.
 author: RyanCCarlson2

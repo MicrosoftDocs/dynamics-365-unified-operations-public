@@ -1,7 +1,5 @@
 ---
 
-# required metadata
-
 title: Add methods to tables through extension
 description: This topic describes how to add a method to a table by using an extension.
 author: ivanv-microsoft
@@ -10,8 +8,6 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

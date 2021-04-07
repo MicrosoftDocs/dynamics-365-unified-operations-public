@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Process parameters
 description: This topic describes how to implement custom parameters in the process automation framework.
 author: RyanCCarlson2

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Write extensible methods
 description: This topic provides information about how to write extensible methods.
 author: smithanataraj
@@ -9,8 +7,6 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

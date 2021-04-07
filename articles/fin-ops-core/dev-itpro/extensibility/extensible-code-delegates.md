@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Delegates
 description: This topic provides information about how to write extensible code and delegates.
 author: MichaelFruergaardPontoppidan
@@ -9,8 +7,6 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

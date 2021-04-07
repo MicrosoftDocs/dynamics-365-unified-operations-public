@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: X++ interfaces
 description: This topic describes interfaces in X++.
 author: RobinARH
 ms.date: 06/17/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150303
-ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ interfaces
