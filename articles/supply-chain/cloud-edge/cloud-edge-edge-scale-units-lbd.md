@@ -44,25 +44,29 @@ This document describes how to set up an on-premises LBD environment as an edge 
 
 The following table provides an overview of the deployment steps.
 
-|Step  |Details  |
+|Actions  |Details  |
 |---------|---------|
 |1. Enable an LBD slot in your LBD LCS project.|LBD edge scale unit during preview target existing LBD customers. An additional 60 day limited LBD sandbox slot will be only provided in certain customer situations.|
-|2. Deploy the LBD environment through LCS with latest PEAP build. Set up the LBD environment with an **empty** database. | More information: [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md) |
-|3. Optionally upload a customization package that was deployed on the hub to the LCS asset library of the on-premises project.|If you want to deploy customizations then deploy them both into the hub and the edge scale unit.|
-|Service the LBD environment with the previously uploaded application and platform package.|This ensures that the hub and spoke have the same build deployed.|
-|Set up the cloud and edge pre-deployment script on the LBD environment.|This script injects the attributes needed by the topology (instance ID, triggers enabled, and scale unit enabled).|
-|Run the "update settings" action through LCS.|Run this action with the same settings that already exist on the environment. This action then redeploys what was already deployed on the environment, but it will run the previously setup pre-deployment script, which will inject the necessary attributes so they can be passed to DbSync execution.|
-|Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#step-2-assign-your-lbd-environment-as-an-edge-scale-unit-to-a-hub) |
+|2. Setup and deploy an LBD environment with an **empty** database. | Deploy the LBD environment through LCS with latest PEAP build and empty database. [See details here](#setup-and-deploy-an-lbd-environment-with-empty-database). |
+|3. Upload target packages into LBD project assets  in LCS.|Prepare application, platform and customizations package that you use across hub and edge scale unit. [See details here.](#upload-target-packages-into-lbd-project-assets-in-lcs)|
+|4. Service the LBD environment with the target packages.|This ensures that the hub and spoke have the same build and customizations deployed. [See details here.](#service-the-lbd-environment-with-target-packages)|
+|5. Set up the cloud and edge pre-deployment script on the LBD environment.|Configure the script that injects the attributes needed in the distributed topology topology (instance ID, triggers enabled, and scale unit enabled). [See details here.](#set-up-the-cloud-and-edge-pre-deployment-script-on-the-lbd-environment)|
+|6. Run the "update settings" action through LCS.|Redeploy your environment with the chosen settings but also the pre/deployment scripts. [See details here.](#run-the-update-settings-action-through-lcs)|
+|7. Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#step-2-assign-your-lbd-edge-scale-unit-to-a-hub) |[See details here](#step-2-assign-your-lbd-edge-scale-unit-to-a-hub)
 
-### Set up and deploy an LBD environment with empty database
+### Setup and deploy an LBD environment with empty database
+
+This step will give you a functional LBD environment. But the environment has not necessarily has the same application and platform version as the hub environment, is still missing the customizations and has not been enabled to function as a scale unit.
 
 Do the following:
 
-1. Follow the instructions given in [Set up and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md).
-1. [Step 14. Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md#configuredb) describes how to set up database with either demo data or empty data. Use the empty data .bak file for this step.
+1. Follow the instructions given in [Setup and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md). Use the latest PEAP build.
+1. [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md#configuredb) describes how to set up database with either demo data or empty data. Use the empty data .bak file for this step.
 1. Final step is deploying the environment. Deploy the latest available application and platform version.
 
-### Upload target packages to LCS
+### Upload target packages into LBD project assets  in LCS
+
+With this step you prepare application and platform versions and the customizations to be transitioned to your future LBD scale unit environment.
 
 Do the following:
 
@@ -70,6 +74,8 @@ Do the following:
 1. Upload the custom deployable package that was applied to the hub environment to the asset library of the LCS on-premises project.
 
 ### Service the LBD environment with target packages
+
+With this step you align application and platform versions and the customizations on your future LBD scale unit environment with the hub.
 
 Do the following:
 
@@ -80,7 +86,7 @@ Do the following:
 
     :::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbdenv2.png" alt-text="Service LBD Environment 2":::
 
-### Update topology
+### Setup the cloud and edge pre-deployment script on the LBD environment.
 
 Do the following:
 
@@ -100,18 +106,20 @@ Do the following:
         & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
         ```
 
-1. Redeploy the environment.
+### Run the "update settings" action through LCS
 
-    - This can be done by triggering the **Update settings** action from LCS without changing any of the values in the form.
-    - That action will redeploy the environment and `PreDeployment.ps1` will be invoked before deployment, which will update environment's topology.
-    - The **Update settings** action is often used to update some topology values such as certificate thumbprints, but it can also be used for this purposes if all the values are left unchanged.
-    - The **Update settings** action consists of two steps:
-        - **Prepare** - This is triggered through LCS by selecting **Maintain > Update settings**.
-        - **Deploy** - This must be triggered after the preparation step is finished, which takes a few minutes. Deployment can be triggered from the environment's details LCS page.
+In this step you will redeploy the environment, but it will run the previously configured pre-deployment script. This script will inject the necessary attributes so they can be passed to sync processes when you associate scale unit to a hub.
 
-        :::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbd-updatesettings.png" alt-text="Deploy updates from LBD":::
+- This can be done by triggering the **Update settings** action from LCS without changing any of the values in the form.
+- That action will redeploy the environment and `PreDeployment.ps1` will be invoked before deployment, which will update environment's topology.
+- The **Update settings** action is often used to update some topology values such as certificate thumbprints, but it can also be used for this purposes if all the values are left unchanged.
+- The **Update settings** action consists of two steps:
+  - **Prepare** - This is triggered through LCS by selecting **Maintain > Update settings**.
+  - **Deploy** - This must be triggered after the preparation step is finished, which takes a few minutes. Deployment can be triggered from the environment's details LCS page.
 
-## Step 2: Assign your LBD environment as an edge scale unit to a hub
+  :::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbd-updatesettings.png" alt-text="Deploy updates from LBD":::
+
+## Step 2: Assign your LBD edge scale unit to a hub
 
 > [!IMPORTANT]
 > **Scale unit configuration tool:** In the preview phase when using edge scale units you need to use the [scale unit deployment tools](https://github.com/microsoft/SCMScaleUnitDevTools) available from GitHub. The process will enable a LBD configuration as an edge scale unit and associate to the hub. This works similar to when configuring One-Box development environments.
