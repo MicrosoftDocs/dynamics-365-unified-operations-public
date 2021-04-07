@@ -1462,6 +1462,8 @@
           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
         - name: Multiple VAT registration numbers
           href: localizations/emea-multiple-vat-registration-numbers.md
+        - name: Set up an environment for master data lookup
+          hreF: localizations/tax-service-set-up-environment-master-data-lookup.md
       - name: Australia
         items:
         - name: Australia overview
