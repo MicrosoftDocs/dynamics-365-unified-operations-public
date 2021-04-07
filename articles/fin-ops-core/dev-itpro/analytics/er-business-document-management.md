@@ -277,7 +277,23 @@ The **Edit template** option is available for the selected template. This option
 
 ![Confirm the start of the editing process to create a new template](./media/BDM-Overview-EditingTemplate4.png)
 
+If there is no any provider it will be offered to create. If there is no active provider it will be offered to choose it for activate.
+
+To create provider in the **Name** field change the name of the provider, in the **Internet address** field change the internet address of the provider. Select **OK** to confirm creating and activating of the provider.
+
+![Create new provider in BDM](./media/BDM_create provider.png)
+
+To activate existing provider in the **Configuration provider** field choose the name of the provider to activate. Select **OK** to confirm setting provider as active.
+
+![Activate provider in BDM](./media/choose provider.png)
+
+> [!NOTE]
+> Each BDM template will refer to the provider as the author of the configuration. Therefore, an active provider is required for the template
+
+
 The **New document** option is always available for a template in an ER format configuration provided by current and another provider (Microsoft in this example) that doesn't have any revision. The edited template will then be stored in a new ER format configuration that is automatically generated.
+
+
 
 ### Start editing a template
 
