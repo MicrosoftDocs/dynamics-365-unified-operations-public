@@ -73,7 +73,7 @@ For more information about related components, see the following documentation:
     - [Create ER configuration & upload to Global repo](rcs-global-repo-upload.md)
     - [Share configuration in Global repo](rcs-global-repo-share-configuration.md)
     - [Enhanced filtering in Global repo](enhanced-filtering-global-repo.md)
-    - [Download ER configurations from the Global repository](er-download-configurations-global-repo.md)
+    - [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md)
     - [Discontinuing configurations in Global repo](discontinuing-configurations-rcs-global-repo.md)
 
 - **Globalization feature:**
