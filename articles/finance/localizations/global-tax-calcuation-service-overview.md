@@ -37,7 +37,7 @@ The tax calculation service is a hyper-scalable multitenant service that enables
 
 The tax calculation service integrates with Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Eventually, it will also integrate with Dynamics 365 Project Operations, Dynamics 365 Commerce, and other first-party and third-party applications.
 
-The tax calculation service is a Microsoft-based tax engine that offers exponential scalability. It can help you perform the following tasks:
+The tax calculation service is a microservice-based tax engine that offers exponential scalability. It can help you perform the following tasks:
 
 - Configure the tax calculation service through Regulatory Configuration Service (RCS). RCS is an enhanced version of the Electronic reporting (ER) designer and is available as a standalone service.
 - Configure the tax matrix to automatically determine tax codes and rates.
@@ -57,8 +57,6 @@ The tax calculation service is deployed in the following Azure geographies. It w
 
 - United States
 - Europe
-- France
-- United Kingdom
 
 > [!NOTE]
 > The tax calculation service doesn't support on-premises deployments of Dynamics 365. It also doesn't support earlier versions, such as Dynamics AX 2012.
@@ -66,9 +64,9 @@ The tax calculation service is deployed in the following Azure geographies. It w
 ## Feature highlights
 
 - A configurable tax matrix to automatically determine and calculate tax
-- Support for multiple value-added tax (VAT) registration numbers
+- Support for multiple tax registration numbers
 - Transfer order support for tax determination and calculation
-- Transfer order support for determination of multiple VAT registration numbers
+- Transfer order support for determination of multiple tax registration numbers
 
 ## Supported transactions
 
