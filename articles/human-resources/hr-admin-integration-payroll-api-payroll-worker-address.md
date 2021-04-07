@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Payroll Worker Address API
+title: Payroll worker address API
 description: This topic provides details and an example query for the Payroll worker address entity in Dynamics 365 Human Resources.
 author: jcart
 manager: tfehr
-ms.date: 02/05/2021
+ms.date: 04/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,11 +22,16 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jcart
-ms.search.validFrom: 2021-02-05
+ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Properties
+# Payroll worker address API
+
+This topic provides details and an example query for the Payroll worker address entity in Dynamics 365 Human Resources.
+
+## Properties
+
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **City**<br>mshr_city<br>*GUID* | String<br>Required |  |
@@ -44,14 +49,16 @@ ms.dyn365.ops.version: Human Resources
 | **Lived in address**<br>mshr_islivedinaddressbr>*GUID* | String<br>Required | Denotes if the address is where the employee lives. |
 | **Middle state**<br>mshr_state<br>*GUID* | String<br>Required |  |
 
-# Example query 
+## Example query 
+
 identificationtypeid
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-
-
 **Query**
+
 **Request**
+
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_payrollworkeraddressentities?$filter=mshr_personnelnumber eq @personnelnumber and mshr_postaladdressvalidfrom le @asofdate and mshr_postaladdressvalidto ge @asofdate&@personnelnumber='000041'&@asofdate=2021-04-01
 ```
@@ -78,4 +85,3 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollworkeraddressentities?$filter=ms
 
 }
 ```
-
