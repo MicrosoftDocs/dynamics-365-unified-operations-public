@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Payroll Position API
+title: Payroll position API
 description: This topic provides details and an example query for the Payroll position entity in Dynamics 365 Human Resources.
 author: jcart
 manager: tfehr
-ms.date: 02/05/2021
+ms.date: 04/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,19 +22,24 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jcart
-ms.search.validFrom: 2021-02-05
+ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Properties
+# Payroll position API
+
+This topic provides details and an example query for the Payroll position entity in Dynamics 365 Human Resources.
+
+## Properties
+
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Personnel number**<br>mshr_personnelnumber<br>*GUID* | String<br>Required |  |
 
-
-
 **Query**
+
 **Request**
+
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_payrollpositionentities?$filter=mshr_positionid eq @positionid and mshr_validfrom le @asofdate and mshr_validto ge @asofdate&@positionid='000276'&@asofdate=2021-04-01
 ```
@@ -53,7 +58,5 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollpositionentities?$filter=mshr_po
             "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
             "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
             "mshr_payrollpositionentityid": "00010097-0000-0000-df00-014105000000"
-
 }
 ```
-
