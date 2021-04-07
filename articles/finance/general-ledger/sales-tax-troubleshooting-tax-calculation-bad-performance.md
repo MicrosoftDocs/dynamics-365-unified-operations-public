@@ -5,7 +5,7 @@ title: Tax Calculation performance impacts the transaction
 description: This topic provides troubleshooting information related to Tax Calculation performance and the impact on transactions.
 author: shtao
 manager: beya
-ms.date: 04/05/2021
+ms.date: 04/07/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,11 +36,15 @@ There are times when a transaction is impacted by Tax Calculation performance is
 ## Check the transaction line count
 Check whether the transaction has a large number of lines, for example more than several hundred. If the transaction does have several hundred lines, delay the tax calculation. For more information, see [Enable delayed tax calculation on journals](enable-delayed-tax-calculation.md). If the transaction doesn't have that many lines, move to the next section. 
 
-  1. Import transactions from large files.
-  2. Multiple sessions process the same transaction tax calculation at the same time.
-  3. The transaction has multiple lines and the views refresh in real time. For example, the **Calculated sales tax amount** field on the **General journal** page refreshes in real time when line's fields changed.
+Next, you can check for the following:
 
-     [![Calculated sales tax amount field on the Jounal voucher page](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
+  - Import transactions from large files.
+  - Multiple sessions that process the same transaction tax calculation at the same time.
+  - A transaction has multiple lines and the views refresh in real time. For example, the **Calculated sales tax amount** field on the **General journal** page refreshes in real time when line's fields changed.
+
+If any of these are true, delay the tax calculation. 
+
+   [![Calculated sales tax amount field on the Jounal voucher page](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
 ## Check call stack 
 Check the call stack to verify whether tax calculation is called multiple times. If yes, reduce the tax calculation times according to the following steps. If it isn't, skip to the next section.
