@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Configure one-box development environments
 description: This article describes recommended configurations of your one-box developer environment.
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 23361
 ms.assetid: 09dbb06c-dbc7-468d-a78e-e89a97a59fe6
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Configure one-box development environments

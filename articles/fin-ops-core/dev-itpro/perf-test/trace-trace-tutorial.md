@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Take traces by using Trace parser
 description: This tutorial provides guidelines on how to take traces.
 author: RobinARH
@@ -8,8 +6,6 @@ ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

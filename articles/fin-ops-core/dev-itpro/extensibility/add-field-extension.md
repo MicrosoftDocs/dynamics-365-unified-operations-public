@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Add fields to tables through extension
 description: This topic describes how to use a table extension to add a field to a table.
 author: ivanv-microsoft
@@ -9,8 +7,6 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
