@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Set up an environment for mater data lookup
+# Set up an environment for master data lookup
 
 [!include [banner](../includes/banner.md)]
 
