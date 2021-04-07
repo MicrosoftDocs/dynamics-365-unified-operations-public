@@ -67,7 +67,7 @@ Currently, exceptions for Planning Optimization migration are only relevant if y
 
 After the required features become available, Microsoft will provide a grace period until the exception expires. The environment admin will be informed when the required features have become available and the grace period has started.
 
-The following flowchart summarizes the information provided in this topic so you can quickly find out whether you need to request an exception. If you do need to request an exception, please fill out and submit the [Planning Optimization migration and exception questionnaire](http://go.microsoft.com/fwlink/?linkid=2144962).
+The following flowchart summarizes the information provided in this topic so you can quickly find out whether you should request an exception. If you do need to request an exception, please fill out and submit the [Planning Optimization migration and exception questionnaire](http://go.microsoft.com/fwlink/?linkid=2144962).
 
 ![Exception flowchart](media/exception-diagram.png "Exception flowchart")
 
