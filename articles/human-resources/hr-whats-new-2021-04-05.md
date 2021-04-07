@@ -49,7 +49,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Restrict employees from editing business contact details | [Restricting employees from editing business contact details](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Restrict editing of personal information](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-employee-self-service-restrict-editing)|
+| Restrict employees from editing business contact details | [Restricting employees from editing business contact details](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Restrict editing of personal information](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-restrict-editing)|
 
 ### Bug fixes
 
@@ -61,7 +61,7 @@ The following bug fixes are included in this release.
 | Issue number | Issue |  Description |
 | --- | --- | --- |
 | 550852 | Approval buttons does not validate with respect to mandatory fields set on Review form. | When setting a field on review form as mandatory and publishing the changes for the manager role, the form does not validate as expected. |
-| 559564 | Historic Worker Actions for Fixed Compensation change gives error for terminated users. | Worker action of an exited employee compensation throws error. After an employee is terminated the worker action of his promotion before termination throws. |
+| 559564 | Historic Worker Actions for Fixed Compensation change gives error for terminated users. | Worker action of an exited employee compensation throws error. After an employee is terminated the worker action of promotion before termination throws. |
 | 560074 | Employment category dropdown is not filtering on worker type and shows categories for employees and contractors. | On employee form, employment category dropdown should be showing either employees or contractors categories based on that employee’s worker type. |
 | 567388 | Some of the information for newly created Employees does not sync immediately to the cdm_worker table in Dataverse | When creating a new employee record, the new record would sync to the cdm_worker table in Dataverse, but not all properties would be included in the Dataverse record. |
 | 563837 | Features that shouldn't be available in HR | Several features that are not applicable to Human Resources are displaying in Feature Management. These are now removed from the list of features available to enable in HR. |
@@ -73,7 +73,6 @@ The following new features are in preview. For more information about turning fe
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | Benefits management workspace | [Benefits management workspace (Preview)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
-
 
 ## Coming soon
 
@@ -89,6 +88,5 @@ For a complete list of planned features and their scheduled releases, see [Overv
 [Overview of Dynamics 365 Human Resources 2021 release wave 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
