@@ -4,7 +4,6 @@
 title: Finance and Operations apps data in Azure Data Lake
 description: This topic explains how to configure your Finance and Operations apps environment so that it has a data lake.
 author: MilindaV2
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 

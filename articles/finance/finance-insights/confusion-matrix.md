@@ -4,7 +4,6 @@
 title: Results of machine learning models (preview)
 description: This topic discusses confusion matrices, classification problems, and accuracy in machine learning (ML) models. The purpose is to enhance your understanding of accuracy in ML prediction results.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 06/05/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Design ER configurations to parse incoming documents
 description: This procedure shows how to design Electronic reporting (ER) configurations to parse an incoming electronic document.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod:

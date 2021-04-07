@@ -4,7 +4,6 @@
 title: Foreign currency sales, purchases, and transfers
 description: This topic describes the functionality for registering transactions for the sale, purchase, and transfer of currency.
 author: anasyash
-manager: AnnBe
 ms.date: 02/20/2019
 ms.topic: article
 ms.prod: 

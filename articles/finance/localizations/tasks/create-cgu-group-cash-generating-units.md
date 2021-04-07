@@ -4,7 +4,6 @@
 title: Create CGU group and cash generating units
 description: In Japan, an impairment on fixed assets can be based on either individual fixed assets or cash generating units. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

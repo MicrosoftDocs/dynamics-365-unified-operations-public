@@ -4,7 +4,6 @@
 title: Start and stop time recording on a service order 
 description: Start and stop time recording on a service order.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Preview and debug a module
 description: This topic describes how to test a module by previewing and debugging it in a web browser.
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 

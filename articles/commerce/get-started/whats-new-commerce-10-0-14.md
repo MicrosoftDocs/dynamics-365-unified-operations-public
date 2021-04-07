@@ -4,7 +4,6 @@
 title: What's new and changed in Dynamics 365 Commerce 10.0.14 (November 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.14. 
 author: josaw1
-manager: AnnBe
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 

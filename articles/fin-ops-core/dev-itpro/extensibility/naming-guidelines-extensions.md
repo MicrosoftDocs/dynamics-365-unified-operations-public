@@ -1,16 +1,11 @@
 ---
-# required metadata
-
 title: Naming guidelines for extensions
 description: This topic describes the naming guidelines for extensions. Artifacts must have a name that is unique across all models at installation time. 
 author: LarsBlaaberg
-manager: AnnBe
 ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

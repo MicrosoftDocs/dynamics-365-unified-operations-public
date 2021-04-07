@@ -4,7 +4,6 @@
 title: Configure call center delivery modes and charges
 description: This topic describes how to set up modes of delivery and charges for a call center order in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
 ms.prod: 

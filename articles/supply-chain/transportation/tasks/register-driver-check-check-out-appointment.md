@@ -4,7 +4,6 @@
 title: Register driver check-in and check-out for an appointment
 description: This procedure shows how to register a driver check-in and a driver check-out. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

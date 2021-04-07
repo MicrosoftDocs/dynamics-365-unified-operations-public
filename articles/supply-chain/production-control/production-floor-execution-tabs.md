@@ -4,7 +4,6 @@
 title: Design the production floor execution interface
 description: This topic describes how to design the content of the user interface for each configuration.
 author: johanhoffmann
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 

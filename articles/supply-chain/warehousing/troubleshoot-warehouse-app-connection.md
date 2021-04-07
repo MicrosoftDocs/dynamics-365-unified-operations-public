@@ -1,10 +1,9 @@
 ---
 # required metadata
 
-title: Troubleshoot warehouse app connection issues
+title: Troubleshoot Warehouse Management mobile app connection issues
 description: This topic describes how to fix common issues that you might encounter while connecting the Dynamics 365 for Finance and Operations - Warehousing application to Dynamics 365 Supply Chain Management.
 author: ivanv-microsoft
-manager: tfehr
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
@@ -27,7 +26,7 @@ ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.14
 ---
 
-# Troubleshoot warehouse app connection issues
+# Troubleshoot Warehouse Management mobile app connection issues
 
 This topic describes how to fix common issues that you might encounter while connecting the Dynamics 365 for Finance and Operations - Warehousing application to Dynamics 365 Supply Chain Management.
 

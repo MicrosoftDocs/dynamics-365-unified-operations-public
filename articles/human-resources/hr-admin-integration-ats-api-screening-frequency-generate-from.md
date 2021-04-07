@@ -4,7 +4,6 @@
 title: Screening frequency generate from
 description: This topic describes the Screening frequency generate from option set for Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 

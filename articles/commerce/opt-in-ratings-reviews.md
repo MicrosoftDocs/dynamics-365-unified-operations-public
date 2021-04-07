@@ -4,7 +4,6 @@
 title: Opt in to use ratings and reviews 
 description: This topic explains how to opt in to use ratings and reviews on your Microsoft Dynamics 365 Commerce site.
 author:  gvrmohanreddy 
-manager: annbe
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: 

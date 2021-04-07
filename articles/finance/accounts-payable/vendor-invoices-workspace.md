@@ -4,7 +4,6 @@
 title: Vendor invoice entry workspace
 description: This topic explains how to set up the workspace that is related to vendor invoices and that shows the information that is available through Microsoft Power BI.
 author: abruer
-manager: AnnBe
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 

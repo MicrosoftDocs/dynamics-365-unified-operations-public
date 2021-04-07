@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Create new users on development machines
 description: When an environment is first deployed, only one user account is enabled as a developer. This article explains how to enable another user account.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/11/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 31621
 ms.assetid: c56d5cdf-3c01-4730-bda5-bb5f8f79e375
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Create new users on development machines
@@ -61,12 +47,7 @@ To enable a new user account to develop on the VM, the user account must be an a
     1.  In Visual Studio, open **Source Control Explorer**, select the workspace drop-down and select **Manage workspaces**.
     2.  Select the application workspace, click **Edit,** then click **Advanced** and set the workspace to **Public workspace**.
     
-    [![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)
-
-
-
-
-
+    [![Selecting the public workspace](./media/publicworkspace.png)](./media/publicworkspace.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,7 +4,6 @@
 title: Inventory management overview
 description: This topic provides an overview of Inventory management.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod:

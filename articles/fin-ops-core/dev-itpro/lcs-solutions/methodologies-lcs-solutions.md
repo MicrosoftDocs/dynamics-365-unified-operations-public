@@ -4,7 +4,6 @@
 title: Add methodologies to solutions
 description: This topic explains how to create and modify methodologies in Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
-manager: AnnBe
 ms.date: 04/13/2018
 ms.topic: article
 ms.prod: 

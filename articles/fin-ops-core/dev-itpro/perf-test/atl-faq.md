@@ -1,16 +1,11 @@
 ---
-# required metadata
-
 title: Acceptance test library FAQ
 description: This topic provides answers to frequently asked questions about the Acceptance test library.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

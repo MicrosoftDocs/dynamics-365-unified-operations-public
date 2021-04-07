@@ -4,7 +4,6 @@
 title: Nonconformance management
 description: This article describes the basic setup that is required in order to use nonconformances. Additional setup is required if you want to use quality orders.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:

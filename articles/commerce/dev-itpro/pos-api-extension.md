@@ -4,7 +4,6 @@
 title: Call point of sale (POS) APIs or operations from POS extensions
 description: The Retail POS APIs help you to build extensions or add new features to POS. 
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 

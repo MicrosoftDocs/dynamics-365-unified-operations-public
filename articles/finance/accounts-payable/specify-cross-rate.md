@@ -4,7 +4,6 @@
 title: Specify the cross rate
 description: This topic provides information about cross rates in Microsoft Dynamics 365 Finance. 
 author: abruer
-manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: 

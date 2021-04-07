@@ -4,7 +4,6 @@
 title: Client internet connectivity
 description: This topic covers what will happen if a client machine cannot access the internet in on-premises deployments.
 author: jasongre
-manager: AnnBe
 ms.date: 05/05/2020
 ms.topic: article
 ms.prod: 

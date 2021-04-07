@@ -4,7 +4,6 @@
 title: Send email receipts from Modern POS (MPOS)
 description: In Modern Point of Sale (MPOS), you can send receipt emails when a transaction is tendered at the point of sale (POS).  
 author: jashanno
-manager: AnnBe
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Fixed asset depreciation conventions
 description: This topic describes depreciation conventions for fixed assets.
 author: saraschi2
-manager: AnnBe
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: 

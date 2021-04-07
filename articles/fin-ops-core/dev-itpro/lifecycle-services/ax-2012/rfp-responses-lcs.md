@@ -4,7 +4,6 @@
 title: Request for proposals (RFP) responses
 description: The RFP responses page contains common questions found on Requests for Proposals (RFPs), and recommended answers.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

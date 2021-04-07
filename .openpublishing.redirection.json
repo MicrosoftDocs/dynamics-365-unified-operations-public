@@ -1,6 +1,11 @@
 ﻿{
   "redirections": [
     {
+      "source_path": "articles/supply-chain/warehousing/tasks/set-up-containerization.md",
+      "redirect_url": "../wave-containerization",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/impact-analysis-report.md",
       "redirect_url": "lcs",
       "redirect_document_id": "false"

@@ -4,7 +4,6 @@
 title: Inbound and outbound assets
 description: This topic explains how to register inbound and outbound assets in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 

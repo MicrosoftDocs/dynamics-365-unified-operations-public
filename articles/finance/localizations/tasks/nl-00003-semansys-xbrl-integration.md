@@ -4,7 +4,6 @@
 title: Semansys XBRL integration
 description: This procedure walks you through using Dutch functionality to export financial data in the XML format. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 05/28/2020
 ms.topic: business-process 
 ms.prod:  

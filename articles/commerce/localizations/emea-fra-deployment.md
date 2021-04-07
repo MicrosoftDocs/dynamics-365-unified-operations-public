@@ -4,7 +4,6 @@
 title: Deployment guidelines for cash registers for France
 description: This topic is a deployment guide for the Commerce localization for France.
 author: AlexChern0v
-manager: ezubov
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 

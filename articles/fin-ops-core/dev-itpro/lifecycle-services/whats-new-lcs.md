@@ -4,7 +4,6 @@
 title: What's new or changed in Lifecycle Services (LCS)
 description: This topic provides links to the release plans, major announcements, and more for Microsoft Dynamics Lifecycle Services (LCS). 
 author: laneswenka
-manager: AnnBe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 

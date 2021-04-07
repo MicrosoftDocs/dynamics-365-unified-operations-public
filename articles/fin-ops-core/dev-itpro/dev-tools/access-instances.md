@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Deploy and access development environments

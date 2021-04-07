@@ -4,7 +4,6 @@
 title: Purchases of fixed assets
 description: This topic provides information about purchases of fixed assets.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

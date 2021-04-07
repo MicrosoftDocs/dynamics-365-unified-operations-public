@@ -4,7 +4,6 @@
 title: Implement Commerce projects
 description: This topic describes recommended practices for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 

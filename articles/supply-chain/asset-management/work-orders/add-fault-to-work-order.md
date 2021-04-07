@@ -5,7 +5,6 @@
 title: Add fault to work order
 description: This topic describes how to add fault registrations to work orders in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 

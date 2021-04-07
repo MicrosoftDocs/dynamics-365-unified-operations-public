@@ -4,7 +4,6 @@
 title: Report 340 for Spain
 description: This topic provides information about how to set up and generate Report 340 for Spain.
 author: anasyash
-manager: AnnBe
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 

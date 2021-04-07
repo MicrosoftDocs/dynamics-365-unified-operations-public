@@ -4,7 +4,6 @@
 title: Reset stuck batch jobs
 description: This topic explains how to resolve resolve issues with batch jobs that are stuck.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/19/2021
 ms.topic: article
 ms.prod: 

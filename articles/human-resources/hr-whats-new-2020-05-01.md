@@ -4,7 +4,6 @@
 title: What's new or changed in Dynamics 365 Human Resources (May 1, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for May 1, 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: 

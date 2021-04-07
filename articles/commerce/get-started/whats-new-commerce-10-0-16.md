@@ -4,7 +4,6 @@
 title: What's new and changed in Dynamics 365 Commerce 10.0.16 (February 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.16. 
 author: josaw1
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Add a predecessor to a production flow activity
 description: In a production flow version, all activities must be sequenced. 
 author: cvocph
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

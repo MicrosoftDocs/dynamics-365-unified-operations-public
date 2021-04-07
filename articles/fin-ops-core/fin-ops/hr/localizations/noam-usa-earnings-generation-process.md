@@ -2,9 +2,8 @@
 # required metadata
 
 title: Earnings and earnings generation FAQ
-description: This topic answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation. 
+description: This topic answers some frequently asked questions about earnings and generating earnings.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

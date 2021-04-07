@@ -4,7 +4,6 @@
 title: Propose and post the impairment amount by using fixed asset journal
 description: Use this procedure to learn how to propose and post the impairment amount by using a fixed asset journal. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

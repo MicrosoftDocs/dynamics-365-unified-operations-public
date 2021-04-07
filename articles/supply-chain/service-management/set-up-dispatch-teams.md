@@ -4,7 +4,6 @@
 title: Set up dispatch teams   
 description: This topic describes how to create a dispatch team.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

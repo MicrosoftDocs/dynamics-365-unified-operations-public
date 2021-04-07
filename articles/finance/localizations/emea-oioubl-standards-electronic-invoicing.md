@@ -3,7 +3,6 @@
 title: Supported standards for electronic invoicing in Europe
 description: This topic explains the level of coverage that exists for electronic invoicing for Europe. 
 author: mrolecki
-manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 

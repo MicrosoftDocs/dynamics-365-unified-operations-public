@@ -1,18 +1,13 @@
 ---
 
-# required metadata
-
 title: Modify the properties of form controls through extension
 description: This topic explains how you can modify the properties of a control by using an extension.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

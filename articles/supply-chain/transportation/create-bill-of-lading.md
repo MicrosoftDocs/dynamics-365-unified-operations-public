@@ -4,7 +4,6 @@
 title: Create a bill of lading
 description: This topic describes how to create a bill of lading when using warehouse management processes.  
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

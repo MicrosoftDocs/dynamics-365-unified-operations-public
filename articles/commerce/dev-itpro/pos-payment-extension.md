@@ -4,7 +4,6 @@
 title: Point of sale (POS) payment extension
 description: This topic describes how to implement the core payment logic in the payment device or payment connector using the Hardware station APIs.
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
 description: Full description that appears in the search results. Often the first paragraph of your topic.
 author: ShellyBakke
-manager: AnnBe
 ms.date: 04/18/2019
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Introduction to functional locations
 description: This topic provides an overview of functional locations in Asset Management.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: 

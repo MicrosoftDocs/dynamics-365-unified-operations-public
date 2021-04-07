@@ -3,7 +3,6 @@
 title: MultiLookupDesign type
 description: Multi-Lookup design object type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 

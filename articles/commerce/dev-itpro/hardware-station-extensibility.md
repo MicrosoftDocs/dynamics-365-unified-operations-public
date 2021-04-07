@@ -4,7 +4,6 @@
 title: Hardware Station extensibility
 description: This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Inventory statuses
 description: This article describes how you can use inventory statuses to categorize and keep track of inventory.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -56,7 +55,7 @@ For outbound work, you can use different non-blocking inventory statuses to cont
 > [!NOTE]
 > You can't change the status of inventory at locations where open work exists. For example, if you did a purchase receive for an item, but didn't do the putaway step, then open work would exist for the receiving location and you would get an error if you tried to change the status of inventory at that location. Completing or cancelling the related work would allow you to change the status.
 >
-> Usually, the status of on-hand inventory related to open warehouse work is only changed by workers using the warehouse app on a mobile device, for example while executing a movement process.
+> Usually, the status of on-hand inventory related to open warehouse work is only changed by workers using the Warehouse Management mobile app, for example while executing a movement process.
 
 After you set up inventory statuses, you can set the default inventory status for a site, item, and warehouse. You can also set a default status for sales, transfer, and purchase orders. The default status for sales orders and outbound transfer order can't have the **Inventory blocking** option set to *Yes*. The inventory status that is inherited from the default settings on a site, warehouse, item, purchase order, transfer order or sales order can be changed by using the mobile device, or on the purchase order, sales order, or transfer order line.
 

@@ -280,7 +280,7 @@
           href: dev-itpro/secure-retail-cloud-pos.md
         - name: Retail Hardware Station configuration and installation
           href: retail-hardware-station-configuration-installation.md
-        - name: Mass deployment of self-service components
+        - name: Mass deployment of legacy self-service components
           href: dev-itpro/retail-mass-deployment.md
         - name: Commerce component events for diagnostics and troubleshooting
           href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
@@ -846,6 +846,22 @@
         href: task-mgmt-assign-lists.md
       - name: Task management in POS
         href: task-mgmt-pos.md
+      - name: Dynamics 365 Commerce and Microsoft Teams integration
+        items:
+        - name: Commerce and Teams integration overview
+          href: commerce-teams-integration.md
+        - name: Enable Commerce and Teams integration
+          href: enable-teams-integration.md
+        - name: Provision Teams from Commerce
+          href: provision-teams-from-commerce.md
+        - name: Synchronize task management between Teams and Commerce POS
+          href: synchronize-tasks-teams-pos.md
+        - name: Manage user roles in Teams
+          href: manage-user-roles-teams.md
+        - name: Map stores and teams if there are pre-existing teams in Teams
+          href: map-stores-existing-teams.md
+        - name: Commerce and Teams integration FAQ
+          href: teams-integration-faq.md
     - name: Manage your e-commerce site 
       items:
       - name: E-commerce site overview
@@ -1040,6 +1056,16 @@
             href: author-header-module.md
           - name: Footer module
             href: author-footer-module.md
+        - name: Page, metadata, and script modules
+          items:
+          - name: Default page module
+            href: default-page-module.md
+          - name: Page summary modules
+            href: page-summary-module.md
+          - name: Metatags module
+            href: metatags-module.md
+          - name: External and inline script modules
+            href: script-module.md
         - name: Product detail page modules
           items:
           - name: Buy box module

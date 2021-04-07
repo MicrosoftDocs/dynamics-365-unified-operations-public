@@ -4,7 +4,6 @@
 title: Upgrade from AX 2012 - Dacpac process to upgrade data in Sandbox Tiers 2-5 environments
 description: This topic is for customers who don't have Remote Desktop protocol (RDP) access to their sandbox environments when they upgrade.
 author: laneswenka
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 

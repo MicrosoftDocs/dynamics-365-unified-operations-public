@@ -4,7 +4,6 @@
 title: Custom fields
 description: You can add custom fields to pages in Dynamics 365 Human Resources. 
 author: andreabichsel
-manager: tfehr
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 

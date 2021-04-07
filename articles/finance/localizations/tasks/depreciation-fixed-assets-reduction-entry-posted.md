@@ -4,7 +4,6 @@
 title: Depreciation of fixed assets with reduction entry posted
 description: Use this task to learn how to run fixed asset depreciation with reduction entries. In order to complete this task, the Fixed Asset configuration key must be selected. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

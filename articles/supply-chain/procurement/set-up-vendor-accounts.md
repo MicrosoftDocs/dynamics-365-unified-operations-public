@@ -4,7 +4,6 @@
 title: Set up vendor accounts
 description: This topic describes the types of information that you must specify when you create a new vendor account.
 author: kamaybac
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 

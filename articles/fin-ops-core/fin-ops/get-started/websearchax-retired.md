@@ -4,7 +4,6 @@
 title: WebSearchAX page has been retired
 description: We've had to retire the WebSearchAX page. We recommend that you use site search from your favorite search engine to replace it.
 author: margoc
-manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 

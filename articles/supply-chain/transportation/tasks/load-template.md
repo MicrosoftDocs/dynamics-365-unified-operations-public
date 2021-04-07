@@ -4,7 +4,6 @@
 title: Load templates
 description: This topic describes how to set up load templates, and how to associate a load template with a new load.
 author: Henrikan
-manager: 
 ms.date: 10/30/2020
 ms.topic: business-process 
 ms.prod: 

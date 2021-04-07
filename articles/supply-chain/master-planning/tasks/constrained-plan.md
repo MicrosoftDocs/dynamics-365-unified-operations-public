@@ -4,7 +4,6 @@
 title: Generate a constrained plan
 description: This topic explains how to create a plan that takes into account both material and capacity constraints. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  

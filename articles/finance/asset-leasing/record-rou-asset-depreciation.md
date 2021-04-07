@@ -4,7 +4,6 @@
 title: Record right-of-use asset depreciation (Preview)
 description: This topic explains how to create the journal entry for the amortization that is required for leases that are recognized on an organization's balance sheet. 
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 

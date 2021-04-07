@@ -4,7 +4,6 @@
 title: Payment methods
 description: Each payment type that a retailer accepts must be configured when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/17/2020
 ms.topic: article
 ms.prod: 

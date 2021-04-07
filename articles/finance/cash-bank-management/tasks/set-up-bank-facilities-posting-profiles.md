@@ -4,7 +4,6 @@
 title: Set up bank facilities and posting profiles for letters of guarantee
 description: This task creates a Bank facility and posting profile that is needed to process a letter of guarantee. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

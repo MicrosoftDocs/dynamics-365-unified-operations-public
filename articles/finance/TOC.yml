@@ -934,6 +934,8 @@
           href: general-ledger/tasks/define-financial-dimensions.md
         - name: Maintain financial dimension default templates
           href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+        - name: Financial dimension sets
+          href: general-ledger/financial-dimension-sets.md
         - name: Create account structures
           href: general-ledger/tasks/create-account-structures.md
         - name: Financial dimensions and posting
@@ -1446,6 +1448,22 @@
             href: localizations/e-invoicing-setup.md
         - name: Electronic invoicing FAQ
           href: localizations/e-invoicing-faq.md
+      - name: Tax Calculation
+        items:
+        - name: Tax Calculation overview
+          href: localizations/global-tax-calcuation-service-overview.md
+        - name: Get started with Tax Calculation
+          href: localizations/global-get-started-with-tax-calculation-service.md
+        - name: Tax feature support for transfer orders
+          href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+        - name: Add data fields in tax configurations
+          href: localizations/tax-service-add-data-fields-tax-configurations.md
+        - name: Add data fields in the tax integration by using extensions
+          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+        - name: Multiple VAT registration numbers
+          href: localizations/emea-multiple-vat-registration-numbers.md
+        - name: Set up an environment for master data lookup
+          hreF: localizations/tax-service-set-up-environment-master-data-lookup.md
       - name: Australia
         items:
         - name: Australia overview
@@ -2118,32 +2136,6 @@
             href: localizations/ind-news-letter-10-0-13.md
           - name: What's new or changed in 10.0.14
             href: localizations/apac-ind-news-letter-10-0-14.md 
-        - name: Fixed assets
-          items:
-          - name: India fixed assets overview
-            href: localizations/apac-ind-fixed-assets.md
-          - name: Attach a day-based calendar to a fixed asset book
-            href: localizations/tasks/apac-ind-attach-day-based-calendar.md
-          - name: Calculate shift depreciation
-            href: localizations/tasks/apac-ind-shift-depreciation-rates.md
-          - name: Create an inventory model group for capital items
-            href: localizations/tasks/apac-ind-create-inventory-model-group.md
-          - name: Create and post depreciation
-            href: localizations/apac-ind-calculate-post-depreciation.md
-          - name: Define type of shift and industry for books and attach to fixed asset
-            href: localizations/tasks/apac-ind-books-shift-industry-types.md
-          - name: Reversing fixed asset transactions
-            href: localizations/apac-ind-reverse-fixed-assets-transactions.md
-          - name: Shift depreciation calculation
-            href: localizations/apac-ind-calculation-shift-depreciation.md
-          - name: Set up a day-based fiscal calendar
-            href: localizations/tasks/apac-ind-day-based-calendar.md
-          - name: Set up parameters to calculate depreciation
-            href: localizations/tasks/apac-ind-set-up-depreciation.md
-          - name: Set up asset group depreciation for depreciation books
-            href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
-          - name: Transfer of capital items to the fixed asset
-            href: localizations/tasks/apac-ind-transfer-capital-items.md
         - name: Indirect taxes
           items: 
           - name: India GST
@@ -2300,6 +2292,10 @@
                   href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
                 - name: Customer payment refunds
                   href: localizations/apac-ind-GST-customer-payment-refund.md
+              - name: Project management transactions
+                items:
+                - name: Goods and Service Tax (GST) project transactions
+                  href: localizations/apac-ind-gst-project-transactions.md
               - name: Tax adjustment
                 items:
                 - name: Tax amount adjustment
@@ -2336,6 +2332,32 @@
               href: localizations/apac-ind-tax-thresholds.md  
             - name: TCS on sale of goods
               href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+        - name: Fixed assets
+          items:
+          - name: India fixed assets overview
+            href: localizations/apac-ind-fixed-assets.md
+          - name: Attach a day-based calendar to a fixed asset book
+            href: localizations/tasks/apac-ind-attach-day-based-calendar.md
+          - name: Calculate shift depreciation
+            href: localizations/tasks/apac-ind-shift-depreciation-rates.md
+          - name: Create an inventory model group for capital items
+            href: localizations/tasks/apac-ind-create-inventory-model-group.md
+          - name: Create and post depreciation
+            href: localizations/apac-ind-calculate-post-depreciation.md
+          - name: Define type of shift and industry for books and attach to fixed asset
+            href: localizations/tasks/apac-ind-books-shift-industry-types.md
+          - name: Reversing fixed asset transactions
+            href: localizations/apac-ind-reverse-fixed-assets-transactions.md
+          - name: Shift depreciation calculation
+            href: localizations/apac-ind-calculation-shift-depreciation.md
+          - name: Set up a day-based fiscal calendar
+            href: localizations/tasks/apac-ind-day-based-calendar.md
+          - name: Set up parameters to calculate depreciation
+            href: localizations/tasks/apac-ind-set-up-depreciation.md
+          - name: Set up asset group depreciation for depreciation books
+            href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
+          - name: Transfer of capital items to the fixed asset
+            href: localizations/tasks/apac-ind-transfer-capital-items.md
       - name: Italy
         items:
         - name: Italy overview
@@ -2955,7 +2977,9 @@
           - name: Deferrals tax register
             href: localizations/rus-deferred-expenses-register.md
           - name: Cash flow tax registers
-            href: localizations/rus-cash-flow-tax-registers.md           
+            href: localizations/rus-cash-flow-tax-registers.md 
+          - name: Rated expenses registers
+            href: localizations/rus-rated-expenses-registers.md   
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
@@ -3032,10 +3056,14 @@
           href: localizations/thailand.md
         - name: Stock card reports
           href: localizations/apac-tha-stock-card-reports.md
+        - name: Tax invoices
+          href: localizations/apac-tha-tax-invoices.md
         - name: Substitution/adjustment tax invoice
           href: localizations/apac-tha-substitution-and-adjustment-invoices.md
         - name: Unrealized VAT
           href: localizations/apac-tha-unrealized-vat.md
+        - name: Average VAT for purchase transactions
+          href: localizations/apac-tha-average-vat-for-purchase-transactions.md        
         - name: Tax branch dimensions
           href: localizations/apac-tha-tax-branch-dimensions.md
         - name: Sales VAT report
@@ -3867,10 +3895,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
             - name: Modify and run formats to use Document management files
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-          - name: Debug data sources
-            href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
           - name: Use BARCODE to generate barcode images
             href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json 
+          - name: Configure LOOKUP data sources to use ER application-specific parameters
+            href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json 
+          - name: Debug data sources
+            href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
         - name: Configure model mappings
           items: 
           - name: Configure country context dependent ER model mappings

@@ -4,7 +4,6 @@
 title: Control checklist
 description: This article categorizes and describes all the release criteria for controls.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

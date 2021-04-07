@@ -4,7 +4,6 @@
 title: Header module
 description: This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 

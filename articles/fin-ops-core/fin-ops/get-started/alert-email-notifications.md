@@ -3,8 +3,7 @@
 
 title: Client alert notifications by email
 description: This topic provides information about how to set up rules that send email notifications predefined events occur.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
 ---
