@@ -37,7 +37,6 @@ The category request process allows vendors to request new procurement categorie
 After this feature is enabled, procurement categories can still be added to vendors manually when necessary. For more information, see [Approve vendors for specific procurement categories - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories#:~:text=%20Approve%20vendors%20for%20specific%20procurement%20categories%20,DESK%20ACCESSORIES%20%28OFFICE...%207%20Select%20Save.%20More%20).
 
 ##Vendor setup
-
 For vendors to initiate category requests they must be setup for vendor collaboration.
 
 The vendor must have at least one vendor collaboration user with either the Vendor contact (external) or Vendor admin (external) security role. This vendor user will be able to create and submit category requests.
