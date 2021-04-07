@@ -62,20 +62,20 @@ Go to **Fiscal books \> Setup \> SPED Reinf \> Codes explanation suspension**, a
 
 ## Set up acquisition type determination
 
-This setup is used to determine the type of agriculture acquisition of incoming fiscal document and reported in the tag **indAquis** for the event R-2055. 
-Go to **Fiscal books > Setup > SPED Reinf > Acquisition of rural production** details setup and determine the acquisition based on the following criteria's 
+This setup is used to determine the type of agriculture acquisition of incoming fiscal documents and reported in the tag **indAquis** for the event R-2055. 
+Go to **Fiscal books > Setup > SPED Reinf > Acquisition of rural production** to determine the classification of fiscal document based on the following criteria:
 
-- Vendor account: All, group or table
-- CFOP : All, group or table
-- Fiscal classification 
+- **Vendor account**: All, group or table
+- **CFOP** : All, group or table
+- **Fiscal classification**
 
 ## GILRAT and SENAR taxes
 
-Go to **Fiscal books > Setup > SPED Reinf > GILRAT tax codes** or **SENAR tax codes** to identify which sales tax codes are used for these taxes. Sales tax code must be defined as Tax type = Other. This identification is used in the event R-2055 for the tags **vlrRatDescPR** and **vlrSenarDesc**
+Go to **Fiscal books > Setup > SPED Reinf > GILRAT tax codes** or **SENAR tax codes** to identify which sales tax codes are used to represent these taxes. Sales tax code should be defined as Tax type = **Other**. The amount of these taxes are used in the event R-2055 in the tags **vlrRatDescPR** and **vlrSenarDesc**
 
 ## Vendor setup
 
-Go to **Accounts payable > Vendors > All vendors > Fiscal information > SPED Reinf > Reinf taxation over payroll**. This new attribute is included to determine the taxation type of the vendor account because this information is required in event R-2055 in tag **indOpcCP**.
+Go to **Accounts payable > Vendors > All vendors > Fiscal information > SPED Reinf > Reinf taxation over payroll**. This new attribute is included to determine the type of taxation because this information is required in event R-2055 in tag **indOpcCP**.
 
 ## Set up fiscal books parameters
 
