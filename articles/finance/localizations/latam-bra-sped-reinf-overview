@@ -87,9 +87,9 @@ Microsoft Dynamics supports the generation of SPED-Reinf events through the **Fi
 
 In order to generate and submit the related events to tax authority you'll need to follow these steps
 
-1. Set up electronic message functionality
-2. Set up fiscal books
-3. Process and submit the events
+1. [Set up electronic message functionality](latam-bra-sped-reinf-electronic-messages.md). 
+2. [Set up fiscal books](latam-bra-sped-reinf-setup-fiscal-books.md)
+3. [Process and submit the events](latam-bra-sped-reinf-process.md)
 
 
 
