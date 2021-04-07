@@ -45,25 +45,26 @@ The following example image shows a product configured with a sell unit of measu
 
 ## Unit of measure settings
 
-In Commerce, unit of measure settings are defined at **Site Settings \> Extensions \> Display unit of measure for products** in site builder.  There are 3 settings supported.
+Unit of measure display settings are defined in Commerce site builder at **Site settings \> Extensions \> Display unit of measure for products**. There are 3 supported settings.
 
-**Do not display** : When this setting is selected, the e-commerce site will not display the unit of measure of the product. This is the default behavior.
-**Display in product buying experience**: With this setting, the unit of measure is displayed in the product details page, cart, checkout, order history and order details experiences.
-**Display in product browsing and product buying experience** : With this setting, the unit of measure is displayed in the product buying experience as stated above and during the product browse expereince. This includes Search results and Product collection modules.
+**Do not display**: When this setting is selected, the e-commerce site will not display the unit of measure of the product. This is the default behavior.
+**Display in the product buying experience**: When this setting is selected, the unit of measure is displayed on the product details, cart, checkout, order history, and order details pages.
+**Display in the product browsing and buying experience**: When this setting is selected, the unit of measure is displayed in the product buying experience as stated above and also during the product browsing experience. This includes displaying units of measure in search results and product collection modules.
 
 > [!IMPORTANT] 
-> These settings are available in the Dynamics 365 Commerce 10.0.19 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+> Unit of measure display settings are available as of the Commerce version 10.0.19 release. If you are updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## Modules that use unit of measure settings
 
-Buy box, wishlist, cart, cart icon, search results container, product collection, checkout and order details modules use the unit of measure settings.
+Modules that use the unit of measure settings include the buy box, wishlist, cart, cart icon, search results container, product collection, checkout, and order details modules.
 
-The following image shows an example of a product details page (PDP) that is showing the unit of measure  for a product
-![Example of a PDP module that has unit of measure](./media/Productunit-PDP.png)
+The following image shows an example of a product details page (PDP) that is displaying the unit of measure for a product.
 
-The following image shows an example of a product collection showing the unit of measure for a product
+![Example of a PDP displaying the unit of measure](./media/Productunit-PDP.png)
 
-![Example of a product collection module that has unit of measure](./media/Productunit-productcollection.png)
+The following image shows an example of a product collection that is displaying the unit of measure for a product.
+
+![Example of a product collection module displaying the unit of measure](./media/Productunit-productcollection.png)
 
 ## Additional resources
 
