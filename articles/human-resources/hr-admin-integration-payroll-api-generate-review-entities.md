@@ -119,3 +119,4 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_ha
 }
 ```
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -30,17 +30,14 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This document describes the Dynamics 365 Human Resources Payroll integration API. The intent of the API is to enable streamlined end-to-end integrations between Dynamics 365 Human Resources and partnering Payroll systems. The integrated experience begins in Human Resources with the employee profile, salary and deduction and contribution information. When an employee is hired and required profile and pay information is entered into Dynamics 365 Human Resources, the payroll system pulls this information to be used when processing payroll. Any updates made to the employee or pay information are also pulled to be used in subsequent pay runs. 
+This document describes the Dynamics 365 Human Resources Payroll integration API. The intent of the API is to enable streamlined end-to-end integrations between Dynamics 365 Human Resources and partnering payroll systems. The integrated experience begins in Human Resources with the employee profile, salary and deduction, and contribution information. When an employee is hired and required profile and pay information is entered into Dynamics 365 Human Resources, the payroll system pulls this information to use when processing payroll. Any updates made to the employee or pay information are also pulled for use in subsequent pay runs.
 
 ![Payroll integration flow](media/hr-admin-integration-payroll-introduction-flow.png)
 
+To enable the integration, Human Resources includes the following components:
 
-To enable the integration, Human Resources is adding the following components:
-
-1.	Functionality to mark an employee as ready to pay.
-2.	An integration API opening up the new functionality to integrating applications.
-
-
+- Functionality to mark an employee as ready to pay
+- An integration API opening up the new functionality to integrating applications
 
 ## Microsoft Dataverse
 
@@ -52,7 +49,12 @@ For more general information about the Microsoft Dataverse Web API, see:
 - [Use the Microsoft Dataverse Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
 - [Microsoft Dataverse developer guide](https://docs.microsoft.com/powerapps/developer/data-platform)
 
-The above documentation includes detail and developer guidance on using the Dataverse Web API, such as [managing authentication](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api), [performing operations](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api), [using Postman with the API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api), and [using change tracking or delta tokens](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) with the API.
+This documentation includes details and developer guidance for using the Dataverse Web API, including the following topics:
+
+- [Authenticate to Microsoft Dataverse with the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api)
+- [Perform operations using the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api)
+- [Use Postman with the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api)
+- [Use change tracking to synchronize data with external systems](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)
 
 ### Option sets
 
