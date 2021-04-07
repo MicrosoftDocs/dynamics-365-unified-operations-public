@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: SPED-Reinf setup (Brazil)
-description: This topic provides information about setting up SPED-Reinf events using Fiscal books and the SII reporting register framework in Microsoft Dynamics 365 Finance for Brazil.
+title: SPED-Reinf electronic messages
+description: This topic provides information about setting up electronic messages for SPED-Reinf events in Microsoft Dynamics 365 Finance for Brazil.
 author: sndray
 manager: AnnBe
 ms.date: 01/19/2019
@@ -28,17 +28,13 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# SPED-Reinf set up
-
-This section describes the configuration that is required.
-
-## **Set up Electronic messages functionality**
+# SPED-Reinf set up electronic messages
 
 Electronic messages functionality is new in Dynamics 365 Finance. It lets you maintain and track various processes for electronic messages when there is an exchange of information between Finance and tax authority web services.
 
-Before you issue SPED-Reinf events to government website, use the predefined configuration that Microsoft has prepared to meet SPED-Reinf requirements. This configuration is delivered as a data entity. After it's imported into Finance, users will able to generate, validate, and deliver all events that are described in the SPED-Reinf scope.
+Before you issue SPED-Reinf events to government website, use the predefined configuration that Microsoft has prepared to meet SPED-Reinf requirements. This configuration is delivered as a data entity. After it's imported into Dynamics 365 Finance, users will able to generate, validate, and deliver all events that are described in the SPED-Reinf scope.
 
-### Import the configuration from the data entity
+## Import the configuration from the data entity
 
 To set up Electronic messages functionality for SPED-Reinf event communications, use the predefined configuration that is available in LCS.
 
@@ -68,7 +64,7 @@ To set up Electronic messages functionality for SPED-Reinf event communications,
 
 	![Execution summary page](media/bra-execution-summary-page.png)
 
-### Structure of electronic messages
+## Structure of electronic messages
 
 Every event that is created, delivered, and received is represented by a message and a message item.
 
@@ -109,7 +105,7 @@ Go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on 
 > [!NOTE]
 > The number sequence must be defined as non-continuous.
 
-### Certificates
+## Certificates
 
 Trusted certificates must be configured and used by Microsoft Dynamics, because the SPED-Reinf should always be signed by an e-CNPJ certificate that is authorized by the ICP-Brazil entity, regardless of any other signatures. This e-CNPJ certificate should match the first eight digits of the root fiscal establishment's CNPJ, because the report is issued by the root fiscal establishment and the related fiscal establishments.
 
@@ -131,7 +127,7 @@ For information about how to set up a Key Vault client, see [Setting up Azure Ke
 
 After registration, associate the certificate in the setup parameters for the **Report generation** action, as described in the next section.
 
-### Setup parameters 
+## Setup parameters 
 
 Every time that a message is created, prepared, validated, delivered, or received, the related action must be identified through a X++ class at **Tax \> Setup \> Electronic messages \> Executable class settings**.
 
@@ -150,7 +146,7 @@ Every time that a message is created, prepared, validated, delivered, or receive
 > [!NOTE]
 > Don't remove this configuration. This configuration is included in the package.
 
-### Specific actions
+## Specific actions
 
 Before a message is delivered, you must set up XML schema validation to prevent rejections from the government website.
 
