@@ -113,6 +113,8 @@ Power Apps Portal can also access virtual entities. Because Power Apps Portal au
     
     For more information, see [Use service admin roles to manage your tenant](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant).
 
+- All users who create Power Platform environments must be licensed. The Finance and Operations environment administrator account should have the "**Dynamics 365 Unified Operations Plan**" license applied via the Microsoft 365 admin center.
+
 ## Enabling Power Platform Integration
 Currently Power Platform Integration can only be setup after the Finance and Operations environment is deployed.  In the future, this will also be possible during deployment of the Finance and Operations environment itself as well for new Sandbox and Production environments.
 
