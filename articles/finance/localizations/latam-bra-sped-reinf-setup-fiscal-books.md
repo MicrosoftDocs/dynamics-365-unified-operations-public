@@ -90,7 +90,7 @@ Go to **Fiscal books \> Setup \> Fiscal books parameters**, and set up the numbe
 
 -   **Reference:** SPED-Reinf event ID
 
-**SPED-Reinf events**
+## SPED-Reinf events
 
 All the information that the SPED-Reinf provides about taxes and contributions in a given assessment period is known as a *movement*. Therefore, every movement can contain one or more events.
 
