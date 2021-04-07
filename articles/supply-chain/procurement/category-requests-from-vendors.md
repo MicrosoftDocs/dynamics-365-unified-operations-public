@@ -39,11 +39,9 @@ After this feature is enabled, procurement categories can still be added to vend
 ## Vendor collaboration requirements
 For vendors to initiate category requests they must be setup for vendor collaboration.
 
-The vendor must have at least one vendor collaboration user with one or more of the following security roles:
+The vendor must have at least one vendor collaboration user with one or more of the following security roles. Vendor users with either of these roles can create and submit category requests.
 - Vendor contact (external)
 - Vendor admin (external) security role
-
-Vendor users with either of the above security roles can create and submit category requests.
 
 For more information, see [Set up and maintain vendor collaboration - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/set-up-maintain-vendor-collaboration).
 
