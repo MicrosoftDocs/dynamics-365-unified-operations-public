@@ -38,7 +38,7 @@ This topic provides information about how to view, manage, and approve planned o
 
 You can view and manage planned orders by going to any of the following pages, depending on which kinds of planned orders you want to work with:
 
-- **Master planning \> Master planning**
+- **Master planning \> Workspaces \> Master planning**
 - **Master planning \> Master planning \> Planned orders**
 - **Production control \> Production orders \> Planned production orders**
 - **Procurement and sourcing \> Purchase orders \> Planned purchase orders**
@@ -46,6 +46,7 @@ You can view and manage planned orders by going to any of the following pages, d
 - **Inventory management \> Outbound orders \> Planned transfers**
 
 <!-- KFM: Anything under warehouse management? -->
+<!-- OBA: No, nothing that I know of -->
 <!-- KFM: Can we link somewhere that describes how these orders are created and what their many settings are for? -->
 
 ## View and edit planned order status values
