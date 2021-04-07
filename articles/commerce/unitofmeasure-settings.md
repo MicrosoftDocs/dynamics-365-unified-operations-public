@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Display unit of measure settings
-description: This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
+title: Apply unit of measure settings
+description: This topic covers unit of measure settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -27,21 +27,23 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Display Unit of Measure Settings
+# Apply unit of measure settings
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic covers settings that can be leveraged to display a product unit of measure in Microsoft Dynamics 365 Commerce.
+This topic covers unit of measure settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
-A product can be sold in different units such as each, dozen, pair, lbs etc. In Dynamics 365 Commerce headquarters the Sell by unit of measure can be defined for a product. This unit of measure of can be displayed in e-commerce using this site setting. For instance if a retailer is selling products as each and in dozens they may want to indicate this along with other the product information.
+A product can be sold in different units such as "each," "pair," and "dozen." In Commerce headquarters, the sell by unit of measure can be defined for a product and displayed on an e-commerce site using this setting. For example, if a retailer is selling a product both individually and in dozens, the units of measure available can be displayed along with other product information.
 
-The following image shows an example of a product configured with a Sell Unit of Measure of "ea" (each) in Dynamics 365 Commerce Headquarters.
-![Example of a product configured in Dynamics 365 Commerce with unit of measure](./media/Productunit-headquarters.PNG)
+The following example image shows a product configured with a sell unit of measure of **ea** (each) in Commerce Headquarters.
+
+![Example of a product configured with unit of measure in Commerce headquarters](./media/Productunit-headquarters.PNG)
 
 > [!NOTE]
-> Support for displaying unit of measure is available in 10.0.19 Dynamics Commerce 365 release.
+> Support for applying and displaying the unit of measure is available as of the Commerce version 10.0.19 release.
 
-## Unit of Measure
+## Unit of measure settings
 
 In Commerce, unit of measure settings are defined at **Site Settings \> Extensions \> Display unit of measure for products** in site builder.  There are 3 settings supported.
 
@@ -61,8 +63,7 @@ The following image shows an example of a product details page (PDP) that is sho
 
 The following image shows an example of a product collection showing the unit of measure for a product
 
-![Example of a Product collection module that has unit of measure](./media/Productunit-productcollection.png)
-
+![Example of a product collection module that has unit of measure](./media/Productunit-productcollection.png)
 
 ## Additional resources
 
