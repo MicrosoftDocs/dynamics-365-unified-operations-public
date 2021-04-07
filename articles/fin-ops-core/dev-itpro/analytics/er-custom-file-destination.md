@@ -62,7 +62,7 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
 
 ## Extend the source code
 
-1. Append your Microsoft Visual Studio project with a new class (`ERFileDestinationFolder` in this example), and write code that implements your custom destination by using the `ERIFileDestination` public interface. In the following example, the class is designed to store generated documents as files in a folder of the local file system.
+1. Append your Microsoft Visual Studio project with a new class (`ERFileDestinationFolder` in this example), and write code that uses the `ERIFileDestination` public interface to implement your custom destination. In the following example, the class is designed to store generated documents as files in a folder of the local file system.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -244,7 +244,7 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
 
     ![Reviewing a custm UI in the Visual Studio designer](media/er-custom-file-destination-form-extension.png)
 
-4. Add one more new classes (`ERFormatDestinationSettingsEventHandlers` in this example) to your Visual Studio project, and write the event handler code for an extended destination form. This step requires that the public `ERIFormatFileDestinationSettingsStorage` interface be implemented.
+4. Add another new class (`ERFormatDestinationSettingsEventHandlers` in this example) to your Visual Studio project, and write the event handler code for an extended destination form. This step requires that the public `ERIFormatFileDestinationSettingsStorage` interface be implemented.
 
     ```xpp
     public class ERFormatDestinationSettingsEventHandlers
