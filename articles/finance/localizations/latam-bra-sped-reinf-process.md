@@ -1,6 +1,6 @@
 # SPED Reinf events process
 
-Essentially, this process includes the following steps:
+Essentially, the process to generates each event includes the following steps:
 
 1.  Use an electronic message to create, validate, and deliver the event or batch of events through electronic message items.
 
@@ -258,7 +258,9 @@ The fiscal documents have a status of Approved or Canceled.
 
 The fiscal document model 04 or 55 (Series number between 920 to 969) 
 
-The tax type is INSS, and it's retained (the Retained tax/to recuperate check box is selected) and tax type is Other
+The tax type is INSS, and it's retained (the Retained tax/to recuperate check box is selected) 
+
+The tax type is Other, and it's retained (the Retained tax/to recuperate check box is selected) and identification of GILRAT or SENAR taxes
 
 
 ## Event R-2060, "INSS CPRB"
