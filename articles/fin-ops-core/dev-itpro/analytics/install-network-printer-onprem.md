@@ -65,7 +65,7 @@ The environment administrator uses the information in this section to enable net
 
 > [!IMPORTANT]
 > This section requires at least version 2.9.0 of the Infrastructure Scripts.
-> Additionally, you need to download the [SysInternals Suite](https://docs.microsoft.com/en-us/sysinternals/downloads/).
+> Additionally, you need to download the [SysInternals Suite](https://docs.microsoft.com/sysinternals/downloads/).
 
 1. Update the Printers.json file by adding the network location of each printer that should be made available to the AOS.
 2. Run the following command from the Infrastructure Scripts folder:
@@ -84,12 +84,12 @@ The environment administrator uses the information in this section to enable net
 > .\Disable-CredSSP-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml.
 > ```
 
-    ```powershell
-    # If Remoting, execute
-    # .\Install-PrintersOnGmsa-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite -ForcePushLBDScripts
+```powershell
+# If Remoting, execute
+# .\Install-PrintersOnGmsa-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite -ForcePushLBDScripts
 
-    .\Install-PrintersOnGmsa.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite
-    ```
+.\Install-PrintersOnGmsa.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite
+```
 
 ## Manage network printers
 
