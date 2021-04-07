@@ -36,7 +36,7 @@ The category request process allows vendors to request new procurement categorie
 
 After this feature is enabled, procurement categories can still be added to vendors manually when necessary. For more information, see [Approve vendors for specific procurement categories - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories#:~:text=%20Approve%20vendors%20for%20specific%20procurement%20categories%20,DESK%20ACCESSORIES%20%28OFFICE...%207%20Select%20Save.%20More%20).
 
-**Vendor setup**
+##Vendor setup
 
 For vendors to initiate category requests they must be setup for vendor collaboration.
 
@@ -44,7 +44,7 @@ The vendor must have at least one vendor collaboration user with either the Vend
 
 For more information, see [Set up and maintain vendor collaboration - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/set-up-maintain-vendor-collaboration).
 
-**Vendor category request workflow setup**
+##Vendor category request workflow setup
 
 The **Vendor category request workflow** must be setup in the procurement and sourcing workflows. Vendors will submit new category requests that you can review and approve. Requested procurement categories are added to a vendor account after a category request is approved.
 
@@ -83,7 +83,7 @@ Tip: If your agency does not require approval of category requests then workflow
 
 For more information on workflow setup, see [Set Up Workflows - Business Central | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/business-central/across-set-up-workflows).
 
-**Create and submit a category request**
+##Create and submit a category request
 
 This section describes how vendors can use the vendor information workspace to create, edit, view, and submit category requests.
 
@@ -153,7 +153,7 @@ Viewing completed requests:
     2. Open More details and select **Categories**. The newly added categories will show here.
   - _Rejected_ – Indicates that the request was rejected. If needed, a new category request can be created.
 
-**Reviewing a category request**
+##Reviewing a category request
 
 This section describes how customers can approve, reject, and delegate vendor submitted category requests as well as view completed requests. These workflow actions are for the entire category request.
 
