@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 
 # Set up fiscal books
 
-The following topic describes the required configuration process in Fiscal Books module to generate and submit the events to tax authorities. 
+The following topic describes the required set up in Fiscal Books module to generate and issue events to the tax authorities. 
 
 ## Set up service types
 
