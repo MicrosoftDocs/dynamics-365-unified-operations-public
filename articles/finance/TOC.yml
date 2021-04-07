@@ -1598,10 +1598,14 @@
           href: localizations/latam-bra-sped-ecd.md
         - name: SPED-Reinf
           items:
-          - name: SPED-Reinf overview
+          - name: Overview
             href: localizations/latam-bra-sped-reinf-overview.md
-          - name: SPED-Reinf set up
-            href: localizations/latam-bra-sped-reinf-setup.md
+          - name: Set up electronic message
+            href: localizations/latam-bra-sped-reinf-setup-electronic-messages.md
+          - name: Set up fiscal books
+            href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
+          - name: Events
+            href: localizations/latam-bra-sped-reinf-process.md
         - name: SPED fiscal resolution 13/2019 RJ
           href: localizations/latam-bra-resolution-13-2019-RJ.md
         - name: SPED fiscal 2020 - Complementary information of the ICMS-ST for SPED fiscal layout 014
