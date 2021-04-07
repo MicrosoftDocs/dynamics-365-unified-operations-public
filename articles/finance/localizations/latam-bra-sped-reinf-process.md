@@ -1,4 +1,4 @@
-# SPED Reinf events process
+# Processing events
 
 Essentially, the process to generates each event includes the following steps:
 
@@ -65,6 +65,20 @@ All events are managed and controlled at **Tax \> Inquiries and reports \> Elect
 
 -   **Accepted with errors** – The event was sent to the web services and was accepted by the tax authority system, even though there were errors.
 
+## Booking period
+
+Before to start the generation of these event through electronic message framework, you need to book all fiscal documents in the related event. 
+
+1. Go to **Fiscal books > Common > Booking period** and select the related booking period ID and fiscal establishment (head).
+2. Click **Sync** to Synchronize all fiscal documents 
+3. Under **SPED REINF** action group click the related event button.
+   - R-2010 and click **Update**  to collect all incoming fiscal documents and model = SE with INSS tax type
+   - R-2020 and click **Update**  to collect all outgoing fiscal documents and model = SE with INSS tax type
+   - R-2055 and click **Update**  to collect all incoming and outgoing  fiscal documents with SENAR or GILRAT taxes
+4. Click Inquire if you want to view the fiscal documents included in the related event. 
+
+> [!NOTE]
+> Additional criteria may be included during the collection of transactions by using Filters option.
 
 ## Event R-1000, "Taxpayer information"
 
