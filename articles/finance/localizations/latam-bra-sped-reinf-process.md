@@ -52,7 +52,7 @@ The digital certificates that are used to sign the events that are sent to the S
 The events in the SPED-Reinf must be transmitted by using a valid digital certificate. However, an exception is made for micro and small businesses (ME and EPP) that meet the Simple Nacional criteria and have seven or fewer employees. These businesses can transmit their events by using an access code.
 
 
-## Event process 
+## General process 
 
 Essentially, the process to generate each event includes the following steps:
 
