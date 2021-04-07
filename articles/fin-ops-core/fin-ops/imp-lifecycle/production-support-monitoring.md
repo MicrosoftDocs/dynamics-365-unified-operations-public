@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include[banner](../includes/banner.md)]
 
-To ensure a good experience during the implementation of a project and after go-live, it's important that you understand the different types of servicing that are available and how you can get the correct support for every scenario. This topic explains how to engage each type of support and how some of the tools can help you keep your business continually accounting for all business needs.
+To ensure a good experience during the implementation of a project and after go-live, it's important that you understand the different types of servicing that are available and how you can get the correct support for every scenario. This topic explains how to engage each type of support and learn about some of the tools that will help to keep the business continuity accounting for all the possible needs.
 
 Microsoft tools and support help ensure the stability and effectiveness of your environment by providing infrastructure and application support. However, this support can be effective only if partners and clients correctly develop, test, configure, manage, and monitor the implemented system and its environments.
 
@@ -117,13 +117,13 @@ LCS has an integrated set of tools that you can use to monitor LCS projects.
 
 The [Service health dashboard](https://portal.office.com/servicestatus) provides the health status for Office 365 services.
 
-You can also view the service health through the admin center. Go to **Health** \> **Service health**, or select the **Service health** card on the **Home** dashboard.
+You can also view the service health through the [Microsoft 365 admin center](https://admin.microsoft.com). Go to **Health** \> **Service health**, or select the **Service health** card on the **Home** dashboard.
 
 By default, the **All services** tab is selected on the **Service health** page. It shows all services and their current health state. A symbol and a value in the **Status** column indicate the state of each service.
 
 If you're experiencing an issue with a Microsoft 365 service, but it isn't listed on the **Service health** page, you can notify Microsoft by selecting **Report an issue** and completing a short form.
 
-These reports will help identify issues. After incidents are identified, they will be shown on a report.
+The issue reporting will help to identify issues and how widespread they are. After incidents are identified, they will be shown on the dashboard under **service health**.
 
 You can sign up to receive email communication. In this way, you can ensure that you're quickly alerted about issues that are identified in the tenant and their status change.
 
@@ -131,7 +131,7 @@ You can sign up to receive email communication. In this way, you can ensure that
 
 Environment monitoring is a set of tools that help you monitor and [troubleshoot the health of your environments through LCS](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics).
 
-On a specific environment page for a project, the **Monitoring** section includes a link that will take you to the **Environment monitoring** dashboard.
+On a specific environment page for a project, the **Monitoring** section includes a **'Environment monitoring'** link that will take you to the **Environment monitoring dashboard**.
 
 The following subsections describe some of the tools that are available.
 
@@ -141,7 +141,7 @@ The **Overview** section is common to most environment types. It provides a filt
 
 #### Activity
 
-The **Activity** tab lets you query through raw logs. It provides predefined queries for the most common events and metrics to help you monitor your environment. Here are some examples of the predefined queries that are available:
+The **Activity** tab lets you query raw logs. It provides predefined queries for the most common events and metrics to help you monitor your environment. Here are some examples of the predefined queries that are available:
 
 - Slow queries
 - Deadlocks
@@ -156,7 +156,7 @@ Additionally, you can add your own custom filters and export the logs to a comma
 
 #### Health Metrics
 
-The **Health Metrics** dashboard provides a series of line charts that are filtered by instance (AOS or Batch AOS) and time frame. On the **AOS** tab, you can observe SQL execution. On the **System** tab, you can observe system memory and CPU utilization over time. This tool lets you easily identify behavioral changes. Therefore, it can help you trace in time issues and the impact of changes in the solution.
+The **Health Metrics** dashboard provides a series of line charts that are filtered by instance (AOS or Batch AOS) and time frame. On the **AOS** tab, you can observe SQL execution. On the **System** tab, you can observe system memory and CPU utilization over time. This tool lets you easily identify behavioral changes. Therefore, it can help you trace issues over a timeline and the impact of changes in the solution.
 
 #### SQL Insights
 
