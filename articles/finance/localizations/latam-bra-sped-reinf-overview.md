@@ -85,7 +85,7 @@ Microsoft Dynamics supports the generation of SPED-Reinf events through the **Fi
 
 -   Payment of the CPRB amount that is due are out of scope.
 
-In order to generate and submit the related events to tax authority you'll need to follow these steps
+In order to generate and submit the related events to the tax authority you'll need to follow these steps:
 
 1. [Set up electronic message functionality](latam-bra-sped-reinf-electronic-messages.md). 
 2. [Set up fiscal books](latam-bra-sped-reinf-setup-fiscal-books.md)
