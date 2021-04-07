@@ -5,7 +5,7 @@ title: Generating and review payroll entities
 description: This topic describes how to generate and review payroll entities. 
 author: andreabichsel
 manager: tfehr
-ms.date: 02/03/2021
+ms.date: 04/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,19 +22,22 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jcart
-ms.search.validFrom: 2021-02-03
+ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Generate payroll entities 
-Use this Odata function to generate the entities needed for the payroll integration.  If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh metadata of each entity.  The response contains an operation ID that can be monitored to know when the generation process is completed.
+# Generate payroll entities
+
+Use this OData function to generate the entities needed for payroll integration. If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity. The response contains an operation ID that you can monitor so you know when the generation process has completed.
 
 **Request**
+
 ```http
 GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 ```
 
 **body**
+
 ```json
 {
     "PhysicalNames" : ["PayrollEmployeeEntity", "HcmWorkerBaseEntity", "PayrollPositionEntity", "PayrollPositionJobEntity", "PayrollWorkerAddressEntity", "HcmJobDetailEntity", "HcmCompFixedPlanTableEntity", "PayrollFixedCompensationPlanEntity", "HcmEmploymentDetailEntity"]
@@ -54,6 +57,7 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.
 
 **Request**
+
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_hasbeengenerated eq true
 ```
@@ -114,6 +118,4 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_ha
     ]
 }
 ```
-
-
 
