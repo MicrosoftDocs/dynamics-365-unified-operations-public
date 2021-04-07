@@ -157,7 +157,7 @@ This section describes how customers can approve, reject, and delegate vendor su
 
 To view category requests:
 
-1. Open **Procurement and sourcing \&gt; Vendors \&gt; Vendor collaboration requests \&gt; Category requests**.
+1. Open **Procurement and sourcing > Vendors > Vendor collaboration requests > Category requests**.
 2. The **Category requests** page opens.
 3. Category requests **Pending action** will show initially.
 4. To view all requests, click **Show requests** and select All.
@@ -205,7 +205,7 @@ To delegate a pending category request to another user:
 
 To view a vendors procurement categories after a category request is approved:
 
-1. Open **Accounts payable \&gt; Vendors \&gt; All vendors**.
+1. Open **Accounts payable > Vendors > All vendors**.
 2. The **All vendors** page opens.
 3. Select the vendor you want to view.
 4. Select **General** from the Action Pane.
