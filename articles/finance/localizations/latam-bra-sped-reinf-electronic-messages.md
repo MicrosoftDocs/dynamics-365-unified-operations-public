@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# SPED-Reinf set up electronic messages
+# Set up electronic messages
 
 Electronic messages functionality is new in Dynamics 365 Finance. It lets you maintain and track various processes for electronic messages when there is an exchange of information between Finance and tax authority web services.
 
