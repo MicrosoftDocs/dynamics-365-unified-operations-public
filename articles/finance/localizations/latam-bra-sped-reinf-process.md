@@ -54,7 +54,7 @@ The events in the SPED-Reinf must be transmitted by using a valid digital certif
 
 ## Event process 
 
-Essentially, the process to generates each event includes the following steps:
+Essentially, the process to generate each event includes the following steps:
 
 1.  Use an electronic message to create, validate, and deliver the event or batch of events through electronic message items.
 
