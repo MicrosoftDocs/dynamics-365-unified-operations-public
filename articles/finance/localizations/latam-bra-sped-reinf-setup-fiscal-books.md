@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: SPED-Reinf set up fiscal bools
+title: Set up fiscal books
 description: This topic provides information about setting up SPED-Reinf events using Fiscal books in Microsoft Dynamics 365 Finance for Brazil.
 author: sndray
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# SPED-Reinf set up fiscal books
+# Set up fiscal books
 
 The following topic describes the required configuration process in Fiscal Books module to generate and submit the events to tax authorities. 
 
@@ -59,6 +59,23 @@ This information is assigned to the fiscal organization on the **General** FastT
 Go to **Fiscal books \> Setup \> SPED Reinf \> Codes explanation suspension**, and set up the codes that are used in event R-1070 when suspension of withholding applies. These codes are assigned at **Fiscal books \> Periodic \> SPED Reinf \> Administrative and judicial process**.
 
 ![Explanation codes](media/bra-codes-explanation-suspension.png)
+
+## Set up acquisition type determination
+
+This setup is used to determine the type of agriculture acquisition of incoming fiscal document and reported in the tag **indAquis** for the event R-2055. 
+Go to **Fiscal books > Setup > SPED Reinf > Acquisition of rural production** details setup and determine the acquisition based on the following criteria's 
+
+- Vendor account: All, group or table
+- CFOP : All, group or table
+- Fiscal classification 
+
+## GILRAT and SENAR taxes
+
+Go to **Fiscal books > Setup > SPED Reinf > GILRAT tax codes** or **SENAR tax codes** to identify which sales tax codes are used for these taxes. Sales tax code must be defined as Tax type = Other. This identification is used in the event R-2055 for the tags **vlrRatDescPR** and **vlrSenarDesc**
+
+## Vendor setup
+
+Go to **Accounts payable > Vendors > All vendors > Fiscal information > SPED Reinf > Reinf taxation over payroll**. This new attribute is included to determine the taxation type of the vendor account because this information is required in event R-2055 in tag **indOpcCP**.
 
 ## Set up fiscal books parameters
 
@@ -125,3 +142,5 @@ The digital certificates are required at two moments:
 The digital certificates that are used to sign the events that are sent to the SPED-Reinf must be enabled for the digital signature function in accordance with the certificate policy.
 
 The events in the SPED-Reinf must be transmitted by using a valid digital certificate. However, an exception is made for micro and small businesses (ME and EPP) that meet the Simple Nacional criteria and have seven or fewer employees. These businesses can transmit their events by using an access code.
+
+
