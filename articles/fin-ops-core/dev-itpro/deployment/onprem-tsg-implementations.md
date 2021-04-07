@@ -299,5 +299,57 @@ finally
 
 ```
 
+## <a name="useGMSA"></a>TSG\_EnableGMSAForAOS.ps1
+
+The following script is used to change the account the AOS runs under from an Active Adirectory (AD) user to a group Managed Service Account (gMSA).
+
+>[!NOTE]
+> This script can only be used starting with version 10.0.17.
+> You will need to reinstall the printers on each AOS node as they are not available to the gMSA account. See [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
+
+```powershell
+param (
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
+    [ValidateScript({ Test-Path -Path $_ })]
+    [string] $agentShare,
+
+    [Parameter(Mandatory=$true)]
+    [string]
+    $gmsaAccount
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$configJsonPath = "$basePath\config.json"
+
+$configJson = Get-Content $configJsonPath | ConvertFrom-Json
+
+$updatedComponents = @()
+foreach ($component in $configJson.components)
+{
+    if($component.name -eq "AOS")
+    {
+        $component.parameters.infrastructure.principalUserAccountType.value = "ManagedServiceAccount"
+        $component.parameters.infrastructure.principalUserAccountName.value = $gmsaAccount
+    }
+
+    $updatedComponents += $component
+}
+
+$configJson.components = $updatedComponents
+
+$configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
+
+Write-Host "Successfully updated the configuration for AOS gMSA execution."
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
