@@ -67,6 +67,9 @@ After the summary module is added, it should resemble the example in the followi
 
 > [!NOTE]
 > Although you can set default values in the template, those values can be overridden on pages that use the template.
+> 
+> [!NOTE]
+> The **Product page summary** module also utilizes the https://schema.org/Product schema to insert basic JSON product metadata into a page.  This is automatically generated using the same Commerce Runtime API data actions used in the buybox module and other product page specific metadata.  Schema.org structured product metadata is often used by major search engines to render rich search results.  By default, the **Product page summary** module will include product name, description, price, and default image location schema.org/product metadata.
 
 ## Additional resources
 
