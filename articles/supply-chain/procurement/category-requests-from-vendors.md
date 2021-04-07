@@ -28,7 +28,9 @@ ms.dyn365.ops.version:
 
 ---
 
-**Category requests from vendors**
+# Category requests from vendors
+
+[!include [banner](../includes/banner.md)]
 
 The category request process allows vendors to request new procurement categories to associate with their vendor account. These procurement categories can then be utilized by the related procurement and sourcing processes. For more information, see [Procurement catalogs overview - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-catalogs). These requests are initiated in the **Vendor information** workspace. They are then submitted to your agency for review. Approved categories are added to the list of procurement categories on the vendor&#39;s account. This functionality requires the **Allow vendors to apply for procurement categories through vendor collaboration** feature. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
 
