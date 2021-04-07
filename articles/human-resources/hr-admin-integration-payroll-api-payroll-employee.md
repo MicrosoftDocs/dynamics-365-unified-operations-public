@@ -5,7 +5,7 @@ title: Payroll Employee API
 description: This topic provides details and an example query for the Payroll employee entity in Dynamics 365 Human Resources.
 author: jcart
 manager: tfehr
-ms.date: 02/05/2021
+ms.date: 04/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,11 +22,12 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jcart
-ms.search.validFrom: 2021-02-05
+ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
 # Properties
+
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Personnel number**<br>mshr_personnelnumber<br>*GUID* | String<br>Required |  |
@@ -37,12 +38,12 @@ ms.dyn365.ops.version: Human Resources
 | **Gender*<br>mshr_gender<br>*GUID* | Int32<br>Required |  |
 | **Payroll employee entity ID**<br>mshr_payrollemployeeentityid<br>*GUID* | Guid<br>Required |  |
 | **Employment start date**<br>mshr_employmentstartdate<br>*GUID* | Date time offset<br>Required |  |
-| **Identification type ID**<br>mshr_identificationtypeid<br>*GUID* |String<br>Required | The identifcation type defined for the employee. |
+| **Identification type ID**<br>mshr_identificationtypeid<br>*GUID* |String<br>Required | The identification type defined for the employee. |
 | **Employment end date*<br>mshr_employmentenddate<br>*GUID* | Date time offset<br>Required |  |
 | **Data area ID*<br>mshr_dataareaid_id<br>*GUID* | Guid<br>Required |  |
 | **Valid to**<br>mshr_namevalidto<br>*GUID* | Date Time Offset <br>Required |  |
 | **Birthdate**<br>mshr_birthdate<br>*GUID* | Date Time Offset <br>Required |  |
-| **Identification number to**<br>mshr_identificationnumber<br>*GUID* | String <br>Required |The identifcation number defined for the employee.  |
+| **Identification number to**<br>mshr_identificationnumber<br>*GUID* | String <br>Required |The identification number defined for the employee.  |
 | **First name**<br>mshr_firstname<br>*GUID* | String<br>Required |  |
 | **Middle name**<br>mshr_middlename<br>*GUID* | String<br>Required |  |
 
@@ -50,11 +51,10 @@ ms.dyn365.ops.version: Human Resources
 identificationtypeid
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-
-
 **Query**
 
 **Request**
+
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_personnelnumber eq @personnelnumber and mshr_identificationtypeid eq @idtype and mshr_namevalidfrom le @asofdate and mshr_namevalidto ge @asofdate&@personnelnumber='000041'&@idtype='SSN'&@asofdate=2021-04-01
 ```
@@ -86,4 +86,3 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
 
 }
 ```
-
