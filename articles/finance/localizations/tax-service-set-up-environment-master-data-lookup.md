@@ -38,7 +38,7 @@ This topic explains how to set up your environment to use the Tax Calculation ma
 2. Set up Dynamics 365 Finance and Microsoft Dataverse. For more information, see [Getting the solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
 3. Import the *Prerequisite tax service virtual entity solution* from the [Tax service virtual entity](https://go.microsoft.com/fwlink/?linkid=2158160).
 4. Set up the Dynamics 365 Regulatory Configuration Service (RCS). 
-5. Contact your Microsoft solution architect to enable flighting of the following features:
+5. Create a service request for Microsoft to enable flighting of the following features:
 
       - ERCdsFeature
       - TaxServiceCDSFeature
