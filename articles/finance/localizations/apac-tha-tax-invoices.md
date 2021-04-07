@@ -3,8 +3,8 @@
 
 title: Tax invoices
 description: This topic explains how to set up tax invoices and when they are generated.
-author: andosip
-manager: anasyash
+author: anasyash
+manager: tfehr
 ms.date: 04/07/2021
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.search.scope:
 # ms.custom: NotInTOC
 ms.search.region: 
 # ms.search.industry:
-ms.author: 
+ms.author: anasyash
 ms.search.validFrom: 
 ms.dyn365.ops.version:
 ---
