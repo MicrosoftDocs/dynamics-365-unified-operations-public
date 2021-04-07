@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# SPED-Reinf overview (Brazil)
+# SPED-Reinf overview 
 
 [!include [banner](../includes/banner.md)]
 
