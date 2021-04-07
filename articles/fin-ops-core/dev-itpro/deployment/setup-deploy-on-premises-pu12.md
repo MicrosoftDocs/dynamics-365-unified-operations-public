@@ -264,14 +264,16 @@ You must create several user or service accounts for Finance + Operations to wor
 | Financial Reporting Application Service Account         | gMSA           |         | Contoso\\svc-FRAS$ |
 | Financial Reporting Process Service Account             | gMSA           |         | Contoso\\svc-FRPS$ |
 | Financial Reporting Click Once Designer Service Account | gMSA           |         | Contoso\\svc-FRCO$ |
-| AOS Service Account                                     | gMSA           | This user should be created for future proofing. We plan to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you will help to ensure a seamless transition to the gMSA. | Contoso\\svc-AXSF$ |
+| AOS Service Account                                     | gMSA           | This user should be created for future proofing. We plan to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you will help to ensure a seamless transition to the gMSA.\* | Contoso\\svc-AXSF$ |
 | AOS Service Account                                     | Domain account | AOS uses this user in the general availability (GA) release. | Contoso\\AXServiceUser |
-| AOS SQL DB Admin user                                   | SQL user       | Finance + Operations uses this user to authenticate with SQL\*. This user will also be replaced by the gMSA user in upcoming releases\*\*. | AXDBAdmin |
+| AOS SQL DB Admin user                                   | SQL user       | Finance + Operations uses this user to authenticate with SQL\*\*. This user will also be replaced by the gMSA user in upcoming releases\*\*\*. | AXDBAdmin |
 | Local Deployment Agent Service Account                  | gMSA           | This account is used by the local agent to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 
-\* If the password of the SQL user contains special characters, this could cause problems during deployment.
+\* These accounts should not have their regional settings changed. They should have the default EN-US region settings. 
 
-\*\* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
+\*\* If the password of the SQL user contains special characters, you might encounter issues during deployment.
+
+\*\*\* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
 
 ### <a name="createdns"></a> 4. Create DNS zones and add A records
 
