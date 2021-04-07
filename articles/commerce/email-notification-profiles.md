@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 
-When you create channels, you can set up an email notification profile. In that way, emails can be sent to customers for various transactional events, such as order creation, order shipping status, and payment failure.
+When you create channels, you can set up an email notification profile. The email notification profile defines the events in a sales transaction such as order created, order packed and order invoiced, that you will send notifications to your customers for. 
 
 For additional email configuration information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -47,7 +47,7 @@ To create an email notification profile, follow these steps.
 
 ### Create an email template
 
-Before an email notification type can be enabled, you must create an organization email template in Commerce headquarters. This template defines the email subject, sender, default language, and email body for each language that you want to support.
+Before an email notification type can be enabled, you must create an organization email template in Commerce headquarters for each notification type you wish to support. This template defines the email subject, sender, default language, and email body for each language that you want to support.
 
 To create an email template, follow these steps.
 
@@ -65,6 +65,8 @@ The following image shows some example email template settings.
 
 ![Email template settings](media/email-template.png)
 
+For more information about creating email templates, see the [Create email templates for transactional events](email-templates-transactions.md) help topic. 
+
 ### Create an email event
 
 To create an email event, follow these steps.
@@ -79,6 +81,10 @@ To create an email event, follow these steps.
 The following image shows some example event notification settings.
 
 ![Event notification settings](media/email-notification-profile.png)
+
+> [!NOTE]
+>
+> The Customer created notification type requires a customization to be implemented before an email notification can be sent.
 
 ### Next steps
 
