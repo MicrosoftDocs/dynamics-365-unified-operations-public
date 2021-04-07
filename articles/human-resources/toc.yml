@@ -419,6 +419,20 @@
             href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
           - name: Skill level type
             href: hr-admin-integration-ats-api-skill-level-type.md
+    - name: Payroll integration API
+      items:
+      - name: Introduction
+        href: hr-admin-integration-payroll-api-introduction.md
+      - name: Generate and review payroll entities
+        href: hr-admin-integration-payroll-api-generate-review-entities.md
+      - name: Payroll employee API
+        href: hr-admin-integration-payroll-api-payroll-employee.md
+      - name: Payroll fixed compensation plan API
+        href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+      - name: Payroll position API
+        href: hr-admin-integration-payroll-api-payroll-position.md
+      - name: Payroll worker address API
+        href: hr-admin-integration-payroll-api-payroll-worker-address.md
   - name: User Guide
     items:
     - name: Overview
