@@ -45,7 +45,7 @@ The following example image shows a product configured with a sell unit of measu
 
 ## Unit of measure settings
 
-Unit of measure display settings are defined in Commerce site builder at **Site settings \> Extensions \> Display unit of measure for products**. There are 3 supported settings.
+Unit of measure display settings are defined in Commerce site builder at **Site settings \> Extensions \> Display unit of measure for products**. There are three supported settings.
 
 **Do not display**: When this setting is selected, the e-commerce site will not display the unit of measure of the product. This is the default behavior.
 **Display in the product buying experience**: When this setting is selected, the unit of measure is displayed on the product details, cart, checkout, order history, and order details pages.
