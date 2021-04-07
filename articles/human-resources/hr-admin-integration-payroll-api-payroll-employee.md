@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Payroll Employee API
+title: Payroll employee API
 description: This topic provides details and an example query for the Payroll employee entity in Dynamics 365 Human Resources.
 author: jcart
 manager: tfehr
@@ -26,9 +26,11 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Properties
+# Payroll employee API
 
-| Property<br>**Physical name**<br>***Type*** | Use | Description |
+## Properties
+
+| Property<br>**Physical name**<br>***Type*** | Use | Description |S
 | --- | --- | --- |
 | **Personnel number**<br>mshr_personnelnumber<br>*GUID* | String<br>Required |  |
 | **Primary field**<br>mshr_primaryfield<br>*GUID* | String<br>Required |  |
@@ -47,10 +49,11 @@ ms.dyn365.ops.version: Human Resources
 | **First name**<br>mshr_firstname<br>*GUID* | String<br>Required |  |
 | **Middle name**<br>mshr_middlename<br>*GUID* | String<br>Required |  |
 
-# Example query for Payroll employee
+## Example query for Payroll employee
+
 identificationtypeid
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
+W
 **Query**
 
 **Request**
@@ -83,6 +86,5 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
             "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
             "mshr_payrollemployeeentityid": "00000d3c-0000-0000-d5ff-004105000000",
             "_mshr_dataareaid_id_value": null
-
 }
 ```
