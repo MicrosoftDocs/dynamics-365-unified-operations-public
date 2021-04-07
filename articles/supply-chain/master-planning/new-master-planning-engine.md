@@ -67,6 +67,8 @@ Currently, exceptions for Planning Optimization migration are only relevant if y
 
 After the required features become available, Microsoft will provide a grace period until the exception expires. The environment admin will be informed when the required features have become available and the grace period has started.
 
+![Exception diagram](media/ExceptionDiagramWhite.jpg)
+
 > [!NOTE]
 > You can only request an exception for production environments, not for sandbox environments. If you need to disable the Planning Optimization exception error on an infrastructure as a service (IaaS) sandbox environment, run the SQL query provided in [Sandbox environments](#faq-sandbox).
 
