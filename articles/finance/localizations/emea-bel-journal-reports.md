@@ -152,18 +152,18 @@ The following example shows how you can set up posting journals and generate and
     | Belgium reporting layout | 59 | Amount of deductible VAT. |
 
 
-For more information, see [Set up sales tax reporting codes](https://docs.microsoft.com/dynamics365/finance/localizations/emea-bel-intervat-tax-declaration#set-up-sales-tax-reporting-codes).
+    For more information, see [Set up sales tax reporting codes](https://docs.microsoft.com/dynamics365/finance/localizations/emea-bel-intervat-tax-declaration#set-up-sales-tax-reporting-codes).
 
 11. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
 12. Select **TVA19.6**, and on the **Report setup** FastTab, in the **Sale** section, select the following:
 
-   - In the **Taxable sales** field, select 03.
-   - In the **Sales tax payable** field, select 54.
+     - In the **Taxable sales** field, select 03.
+     - In the **Sales tax payable** field, select 54.
 
 13. In the **Purchase** section, select the following:
 
-   - In the **Tax purchases** field, select 81.
-   - In the **Sales tax receivable**, select 59.
+    - In the **Tax purchases** field, select 81.
+    - In the **Sales tax receivable**, select 59.
 
 ### Print the Sales journal report
 
