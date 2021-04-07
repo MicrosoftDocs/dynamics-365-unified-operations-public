@@ -27,6 +27,8 @@ ms.dyn365.ops.version: AX 10.0.7
 
 ---
 
+<!-- KFM: delete this topic and redirect to [Firm planned orders](planned-order-firming.md) -->
+
 # Autofirming with Planning Optimization
 
 [!include [banner](../../includes/banner.md)]
