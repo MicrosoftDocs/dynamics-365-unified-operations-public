@@ -37,19 +37,19 @@ Most planned order features are available in all standard Supply Chain Managemen
 
 Parallelized firming helps speed up the firming process by parallelizing the it across multiple threads. This can be relevant when a high number of planned orders are firmed.
 
-To make this option available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Parallel firming of planned orders* feature.
+To make this functionality available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Parallel firming of planned orders* feature.
 
 ### Enable planned order firming with filtering
 
 Planned order firming with filtering lets you establish logical criteria for selecting which planned orders to firm. You can also preview which planned orders were selected, run the process in the background, and or schedule it as a batch job.
 
-To make this option available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Planned order firming with filtering* feature.
+To make this functionality available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Planned order firming with filtering* feature.
 
 ### Enable autofirming
 
 <!-- KFM: Add a short intro describing what this is and how it's different from the other types of firming -->
 
-To make this option available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Auto-firming for Planning Optimization* feature.
+To make this functionality available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Auto-firming for Planning Optimization* feature.
 
 ## Firm planned orders manually
 
@@ -65,7 +65,7 @@ When you firm planned orders manually, you find and select the planned orders yo
 
     - **Stop firming if an error occurs** – <!-- KFM: Describe this setting. Must be No when running parallelize. -->
     - **Parallelize firming** – This setting is only available if the [*Parallel firming of planned orders* feature](#enable-features) is enabled on your system, and if you have selected two or more planned orders for firming. Set this to *Yes* to run the firming processes in parallel, which can help improve performance. <!-- KFM: Why would I set this to no? -->
-    - **Number of threads** – This setting is only available if the [Parallel firming of planned orders feature](#enable-features) is enabled on your system, and if you have set **Parallelize firming** to *Yes*. Enter the number of threads to use to parallelize the firming process. <!-- KFM: Any advice? 2? ... 3,000,000? What is the trade-off? -->
+    - **Number of threads** – This setting is only available if the [*Parallel firming of planned orders* feature](#enable-features) is enabled on your system, and if you have set **Parallelize firming** to *Yes*. Enter the number of threads to use to parallelize the firming process. <!-- KFM: Any advice? 2? ... 3,000,000? What is the trade-off? -->
     - **Update marking** – <!-- KFM: Describe this setting, including effects of each option (no, standard, extended) -->
     - **Purchase orders \> Group by vendor** – <!-- KFM: Describe this setting -->
     - **Purchase orders \> Group by buyer group** – <!-- KFM: Describe this setting -->
@@ -124,7 +124,7 @@ To firm a planned order using the query-based firming process:
 
 ## Autofirm planned orders
 
-Automatic firming lets you firm planned orders as part of the master planning process. When Planning Optimization is used, planned orders are firmed during a master planning run when the order date (that is, the start date) is within the time fence for firming.
+Automatic firming lets you firm planned orders as part of the master planning process. When Planning Optimization is used, planned orders are firmed during a master planning run when the order date (that is, the start date) is within the time fence for firming. <!-- KFM: Why is only PO mentioned here? -->
 
 <!-- KFM: Make it more clear how this is different from the other types of firming. -->
 
@@ -136,19 +136,15 @@ Automatic firming lets you firm planned orders as part of the master planning pr
 > [!IMPORTANT]
 > To use the feature described in this section, the [*Auto-firming for Planning Optimization* feature](#enable-features) must be enabled on your system, as described at the start of this topic.
 
-### Planning Optimization vs. the built-in planning engine
+### Autofirming with Planning Optimization vs. the built-in planning engine
 
-Both Planning Optimization and the built-in planning engine can be used to autofirm planned orders. However, there are some important differences. For example, whereas Planning Optimization uses the order date (that is, the start date) to determine which planned orders to firm, the built-in Supply Chain Management planning engine uses the requirement date (that is, the end date). Here is a summary of the differences.
+Both Planning Optimization and the built-in planning engine can be used to autofirm planned orders. However, there are some important differences. For example, whereas Planning Optimization uses the order date (that is, the start date) to determine which planned orders to firm, the built-in Supply Chain Management planning engine uses the requirement date (that is, the end date). The following table summarizes the differences.
 
-- **Autofirming with Planning Optimization:**
-  - Autofirming is based on the order date (start date).
-  - Because the order date (start date) triggers the firming, you don't have to consider the lead time as part of the firming time fence.
-  - If you want to firm all orders that must start during the current week, the firming time fence must be one week.
-
-- **Autofirming with the built-in planning engine:**
-  - Autofirming is based on the requirement date (end date).
-  - To help guarantee that orders are firmed in due time, the firming time fence must be longer than the lead time.
-  - If you want to firm all orders that must start during the current week, the firming time fence must be the lead time plus one week.
+| | Planning Optimization | Built-in planning engine |
+| --- | --- | --- |
+| Date basis | Autofirming is based on the order date (start date). | Autofirming is based on the requirement date (end date). |
+| Lead time | Because the order date (start date) triggers the firming, you don't have to consider the lead time as part of the firming time fence. | To help guarantee that orders are firmed in due time, the firming time fence must be longer than the lead time. |
+| Orders for the current week | To firm all orders that must start during the current week, the firming time fence must be one week. | To firm all orders that must start during the current week, the firming time fence must be the lead time plus one week. |
 
 ### Set up autofirming and the firming time fence
 
