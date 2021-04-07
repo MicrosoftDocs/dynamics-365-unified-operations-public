@@ -90,34 +90,6 @@ This flow is used to deliver any event for the first time.
 
 ![Inquire event 5011](media/bra-inquire-event-5011.png)
 
-## Manage electronic messages 
-
-All events are managed and controlled at **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
-
-| Field name      | Field description                                                                                                                                         |
-|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message item type   | The type of event:                                                                                                                                            |
-| Message item status | The current status of the event. This field is automatically filled in and updated, based on the exchange of messages between the tax authority and taxpayer. |
-
--   Administrative and judicial process (R-1070)
-
--   Acquired services (R-2010)
-
--   INSS-CPRB assessment (R-2060)
-
--   Provided services (R-2020)
-
--   Taxpayer information (R-1000
-
--   Closing (R-2099)
-
--   **Created** – The event was added to the register but hasn't yet been sent to the web services.
-
--   **Rejected** – The event was sent to the web services, but it was rejected by the tax authority system. A specific tag group in the XML file that is returned by the government specifies the error code and provides a description.
-
--   **Accepted** – The event was sent to the web services and was accepted by the tax authority system.
-
--   **Accepted with errors** – The event was sent to the web services and was accepted by the tax authority system, even though there were errors.
 
 ## Booking period
 
@@ -129,11 +101,13 @@ Before to start the generation of these event through electronic message framewo
    - R-2010 and click **Update**  to collect all incoming fiscal documents and model = SE with INSS tax type
    - R-2020 and click **Update**  to collect all outgoing fiscal documents and model = SE with INSS tax type
    - R-2055 and click **Update**  to collect all incoming and outgoing  fiscal documents with SENAR or GILRAT taxes
-4. Click Inquire if you want to view the fiscal documents included in the related event. 
+4. Click Inquire if you want to view the fiscal documents included in the related event.
+5. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items** since the status of events are managed and controlled by this action.
 
 > [!NOTE]
 > Additional criteria may be included during the collection of transactions by using Filters option.
-
+> The other events not detailed above are generated automatically in Electronic message items given specific conditions. See below the details.
+> 
 ## Event R-1000, "Taxpayer information"
 
 Event R-1000 is used to delivery information about the company. This event must be delivered only one time to register the information on the government site. However, after this initial registration of information, it can be delivered as many times as required for maintenance actions such as updates and deletions of data.
@@ -193,7 +167,7 @@ Microsoft Dynamics AX will detect any differences between the information in the
 > [!NOTE]
 > If changes don't affect the related R-1010 event, you will receive the following message: "0 records have been added."
 
-### Repro step – Cancel
+#### Repro step – Cancel
 
 If for some many reason, the taxpayer wants to cancel/exclude an event that has accepted, select **Cancel**, and confirm the operation. The status of the event will be updated to **Excluded**. Complete all the actions in the [Cancel/Delete](#canceldelete) flow.
 
