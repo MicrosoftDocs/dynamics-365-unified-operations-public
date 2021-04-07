@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generating and review payroll entities
+title: Generate and review payroll entities
 description: This topic describes how to generate and review payroll entities. 
 author: andreabichsel
 manager: tfehr
