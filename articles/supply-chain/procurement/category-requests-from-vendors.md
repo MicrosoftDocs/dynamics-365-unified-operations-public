@@ -141,7 +141,7 @@ To delete a draft or recalled request:
 3. Select **Delete** on the Action Pane.
 4. Select **Yes** to confirm the deletion.
 
-Viewing completed requests:
+To view completed requests:
 
 1. Open the **Category requests** page.
 2. The status of the category request changes as follows:
