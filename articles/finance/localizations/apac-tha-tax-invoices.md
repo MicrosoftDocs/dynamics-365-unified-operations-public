@@ -103,7 +103,7 @@ At any time, you can go back to the sales order or free text invoice to print th
 
     ![Table Description automatically generated](media/apac-tha-tax-invoices-tax-invoice.png)
 
-    - If you receive payment from the customer after you post a sales order or a free text invoice, follow these steps:
+- If you receive payment from the customer after you post a sales order or a free text invoice, follow these steps:
 
     1. Create a sales order.
     2. On the **Line details** FastTab, on the **Setup** tab, in the **Sales tax** section, in the **Item sales tax** **group** field, select the corresponding sales tax group for unrealized VAT.
