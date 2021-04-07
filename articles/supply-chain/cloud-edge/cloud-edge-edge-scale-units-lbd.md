@@ -5,7 +5,7 @@ title: Deploy custom edge scale units on custom hardware using LBD
 description: Provision edge scale units on premises using custom hardware and LBD based deployment
 author: cabeln
 manager: 
-ms.date: 2020-01-01
+ms.date: 01-04-2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: SCM
 ms.author: cabeln
-ms.search.validFrom: 2021-04-23
+ms.search.validFrom: 23-04-2021
 ms.dyn365.ops.version: 10.0.19
 ---
 
@@ -52,7 +52,7 @@ The following table provides an overview of the deployment steps.
 |Service the LBD environment with the previously uploaded application and platform package.|This ensures that the hub and spoke have the same build deployed.|
 |Set up the cloud and edge pre-deployment script on the LBD environment.|This script injects the attributes needed by the topology (instance ID, triggers enabled, and scale unit enabled).|
 |Run the "update settings" action through LCS.|Run this action with the same settings that already exist on the environment. This action then redeploys what was already deployed on the environment, but it will run the previously setup pre-deployment script, which will inject the necessary attributes so they can be passed to DbSync execution.|
-|Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#assign-your-lbd-edge-scale-unit-to-a-hub) |
+|Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#step-2-assign-your-lbd-environment-as-an-edge-scale-unit-to-a-hub) |
 
 ### Set up and deploy an LBD environment with empty database
 

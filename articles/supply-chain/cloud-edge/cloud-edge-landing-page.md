@@ -4,7 +4,7 @@
 title: Use scale units to increase resilience for supply chain management workloads
 description: This topic provides information about cloud and edge scale units for manufacturing and warehouse management workloads.
 author: cabeln
-ms.date: 10/06/2020
+ms.date: 01-04-2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,7 +22,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: SCM
 ms.author: cabeln
-ms.search.validFrom: 2021-03-10
+ms.search.validFrom: 01-04-2021
 ms.dyn365.ops.version: 10.0.20
 ---
  
