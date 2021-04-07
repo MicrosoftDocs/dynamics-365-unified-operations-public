@@ -70,7 +70,7 @@ Microsoft Dynamics supports the generation of SPED-Reinf events through the **Fi
 | R-9000     | Deletion | Non-periodic event | **Yes** |
 
 > [!NOTE]
-> Events R-2010 and R-2020 are supported for CNPJ third parties. Event R-5011 is used is used to inquire about the status of closing event R-2099.*
+> Events R-2010 and R-2020 are supported for CNPJ third parties. Event R-5011 is used with the purpose to inquire about the status of closing event R-2099.*
 
 
 -   Only taxpayers that comply with SPED-ECD are supported.
