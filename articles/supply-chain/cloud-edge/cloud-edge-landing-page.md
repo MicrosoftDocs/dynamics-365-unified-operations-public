@@ -94,8 +94,8 @@ In the current release for scale units certain capabilities are not available ye
 
 #### You must be a licensed customer of Dynamics 365 Supply Chain Management
 
-To onboard to the distributed topology you must have a license to Dynamics 365 Supply Chain Management. Your existing cloud environment will become the hub in the. You can maintain both sandbox and production environments as hub environments and add scale units according the add-is you acquire.  
- 
+To onboard to the distributed topology, you must have a license to Dynamics 365 Supply Chain Management. Your existing cloud environment will become the hub in your hybrid topology. You can declare both sandbox and production environments as hub environments and add scale units according to the add-ins you acquire.  
+
 #### Your existing Lifecycle Services (LCS) project must be administered via the global commercial version of <https://lcs.dynamics.com>
 
 - Local versions of LCS are not supported  e.g. <https://eu.lcs.dynamics.com/>, <https://fr.lcs.dynamics.com/>.
@@ -113,7 +113,7 @@ Microsoft is in the process of transitioning all cloud environments of SCM from 
 
 Ultimately the same service fabric based containerized service infrastructure will power both cloud and edge instances of the service, be it a hub in the cloud or a scale unit in the cloud or on the edge.
 
-To onboard to the hybrid topology supporting scale units your project Tenant must have been transitioned to the Service Fabric hosted model. Also any environment that shall act as a hub must have been converted.
+To onboard to the hybrid topology supporting scale units your project Tenant must have been transitioned to the Service Fabric hosted model. Also, any environment that shall act as a hub must have been converted.
 
 > [!TIP]
 > Look up the type of your environment in LCS or reach out to your Microsoft contact if you need to inquire about the status of your LCS project tenant.
