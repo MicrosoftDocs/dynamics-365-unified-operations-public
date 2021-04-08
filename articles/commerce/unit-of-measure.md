@@ -5,7 +5,7 @@ title: Apply unit of measure settings
 description: This topic covers unit of measure settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
