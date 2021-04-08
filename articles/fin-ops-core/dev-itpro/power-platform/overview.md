@@ -143,7 +143,7 @@ Currently, the Power Platform integration can only be set up after the Finance a
 ### Troubleshooting the set up
 Setup can fail at various stages of the deployment of the Dataverse-based environment.   
 
-    ![Dual-write setup failure](media/Error.png)
+![Dual-write setup failure](media/Error.png)
 
 - Anytime the setup fails, an error message will be displayed.  Based on the error message, you may need to address licensing or capacity issues.  After these have been resolved, you may then use the **Resume** button in the **Power Platform integration** section of the **Environment details** page in LCS to finish the setup.
 
