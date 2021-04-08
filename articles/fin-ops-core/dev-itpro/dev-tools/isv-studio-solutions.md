@@ -32,9 +32,7 @@ https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/<pro
 > [!NOTE]
 > The product ID does not necessarily match the offer code of your product, although they may be similar. Using the offer code in your descriptors will not correctly identify your X++ modules to ISV Studio.
 
-![Partner Center Offer overview page](media/partnercenter-productid.png)
-
-## Update your X++ models' descriptors
+## Update your X++ model descriptors
 
 For all models that make up your solution, locate the descriptor XML files. In every descriptor belonging to the solution, update the `SolutionId` tag with the product id from partner center.
 
@@ -44,7 +42,5 @@ For all models that make up your solution, locate the descriptor XML files. In e
     <SolutionId>product-ID-GUID</SolutionId>
 </AxModelInfo>
 ```
-
-![Descriptor XML file with highlighted solution id tag](media/descriptor-solutionid.png)
 
 After you recompile, the X++ binaries will contain the product ID and will link to ISV Studio after they are deployed to a Tier2+ sandbox or production environment.
