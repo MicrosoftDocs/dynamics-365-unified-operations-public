@@ -52,10 +52,10 @@ In Commerce, inventory settings are defined at **Site Settings \> Extensions \> 
 
     The **Out of stock threshold** value of the **Inventory level based on** setting is an old (legacy), obsolete value. When it's selected, the inventory count is determined from the results of the **Total Available** value, but the threshold is defined by the **Out of stock threshold** numeric setting that is described later. This threshold setting applies to all products across an e-commerce site. If inventory is below the threshold number, a product is considered out of stock. Otherwise, it's considered in stock. The capabilities of the **Out of stock threshold** value are limited, and we don't recommend that you use it in version 10.0.12 and later.
 
-- **Inventory level for multiple warehouses** - This setting allows support for inventory level to be calculated against the default warehouse or multiple warehouses. The **Based on individual warehouse** option will calculate inventory levels based on the default warehouse. Alternatively, an e-commerce site can also point to multiple warehouses to facilitate fulfillment. For this scenario, the **Based on aggregate for Shipping and Pickup warehouses** option is used to indicate stock availability. For example, when a customer purchases an item and chooses "shipping" as delivery mode, the item can be shipped from any of the warehouses in the fulfillment group that has available inventory. The product details page will show "In stock" for shipping if any available shipping warehouse in the fulfillment group has inventory. 
+- **Inventory level for multiple warehouses** – This setting enables the inventory level to be calculated against the default warehouse or multiple warehouses. The **Based on individual warehouse** option will calculate inventory levels based on the default warehouse. Alternatively, an e-commerce site can point to multiple warehouses to facilitate fulfillment. In that case, the **Based on aggregate for Shipping and Pickup warehouses** option is used to indicate stock availability. For example, when a customer purchases an item and selects "shipping" as the delivery mode, the item can be shipped from any warehouse in the fulfillment group that has available inventory. The product details page (PDP) will show an "In stock" message for shipping if any available shipping warehouse in the fulfillment group has inventory. 
 
 > [!IMPORTANT] 
-> The **Inventory level for multiple warehouses** setting is available as of the Commerce version 10.0.19 release. If you are updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+> The **Inventory level for multiple warehouses** setting is available as of the Commerce version 10.0.19 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Inventory ranges** – This setting defines the inventory ranges that message are shown for on site modules. It's applicable only if either the **Total Available** value or the **Physical Available** value is selected for the **Inventory level based on** setting. The available values are **All**, **Low and out of stock**, and **Out of stock**.
 
@@ -72,15 +72,15 @@ In Commerce, inventory settings are defined at **Site Settings \> Extensions \> 
 
 Buy box, wishlist, store selector, cart, and cart icon modules use inventory settings to show the inventory ranges and messages.
 
-The following image shows an example of a product details page (PDP) that is displaying an in-stock ("Available") message.
+In the example in the following illustration, a PDP is showing an in-stock ("Available") message.
 
 ![Example of a PDP module that has an in-stock message](./media/pdp-InStock.png)
 
-The following image shows an example of a PDP that is displaying an "Out of stock" message.
+In the example in the following illustration, a PDP is showing an "Out of stock" message.
 
 ![Example of a PDP module that has an out-of-stock message](./media/pdp-outofstock.png)
 
-The following image shows an example of a cart that is displaying an in-stock ("Available") message.
+In the example in the following illustration, a cart is showing an in-stock ("Available") message.
 
 ![Example of a cart module that has an in-stock message](./media/cart-instock.png)
 
