@@ -290,27 +290,27 @@ To create an invoice details page in site builder, follow these steps.
 
 ## Add a quick add module to the cart page
 
-The *quick add* module provides a way to quickly add multiple items to the cart using item IDs (also known as SKU IDs). The quick add module is added to a site's cart page.
+The quick add module provides a way to quickly add multiple items to the cart by using item IDs (also known as stock keeping unit \[SKU\] IDs). The quick add module is added to a site's cart page.
 
 To add a quick add module to a cart page in Commerce site builder, follow these steps.
 
-1. Go to **Templates** and select your site's cart page template.
+1. Go to **Templates**, and select your site's cart page template.
 1. Select **Edit**.
-1. In the **Main** slot of the **Default Page** module, select the ellipsis (...), and then select **Add Module**.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
-1. In the **Container** slot, select the ellipsis (...), and then select **Add Module**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Quick add** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
-1. Go to **Pages** and select your site's cart page.
-1. In the **Main** slot of the **Default Page** module, select the ellipsis (...), and then select **Add Module**.
+1. Go to **Pages**, and select your site's cart page.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
-1. In the **Container** module's properties pane, under **Width** select **Fill Container**.
-1. In the **Container** slot, select the ellipsis (...), and then select **Add Module**.
+1. In the  properties pane for the **Container** module, under **Width**, select **Fill Container**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Quick add** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 > [!NOTE] 
-> The quick add module is available as of the Commerce version 10.0.17 release. If you are updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+> The quick add module is available as of the Commerce version 10.0.17 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## Additional resources
 
