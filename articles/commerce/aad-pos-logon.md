@@ -10,9 +10,7 @@ ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
 ms.technology: 
-
 # optional metadata
-
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
@@ -24,7 +22,7 @@ ms.search.region: global
 # ms.search.industry:
 ms.author: boycez
 ms.search.validFrom:
-ms.dyn365.ops.version: 10.0.10
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Configure Azure Active Directory authentication for POS sign-in
