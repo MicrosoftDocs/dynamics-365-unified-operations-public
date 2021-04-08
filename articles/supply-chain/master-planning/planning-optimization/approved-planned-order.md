@@ -45,10 +45,6 @@ You can view and manage planned orders by going to any of the following pages, d
 - **Inventory management \> Inbound orders \> Planned transfers**
 - **Inventory management \> Outbound orders \> Planned transfers**
 
-<!-- KFM: Anything under warehouse management? -->
-<!-- OBA: No, nothing that I know of -->
-<!-- KFM: Can we link somewhere that describes how these orders are created and what their many settings are for? -->
-
 ## View and edit planned order status values
 
 You can use the **Status** field of each planned order to help track your progress or change how a planned order will be processed. The following **Status** values are available:
@@ -78,8 +74,6 @@ The following illustration shows how you can use the **Status** assigned to each
 
 > [!TIP]
 > We recommend that you approve any modified planned orders because otherwise the edits will be ignored and overwritten by the next planning run.
-
-<!-- KFM: Any other requirements to implement this? For example, are we assuming the customer is using autofirming for this scenario? -->
 
 ## Additional resources
 

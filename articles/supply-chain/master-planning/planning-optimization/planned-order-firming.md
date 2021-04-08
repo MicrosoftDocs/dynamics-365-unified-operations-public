@@ -23,11 +23,7 @@ There are three methods of firming planned orders, each of which is described in
 
 - **Manual firming** – Select specific planned orders from a list and then start the process manually.
 - **Query-based firming** – Define a query to select planned orders based on their properties. You can set up a batch job to run the query and firm matching orders on a regular schedule.
-- **Autofirming** – Define a default firming time fence for coverage groups, individual items, and item and master plan combinations for planned orders to be firmed automatically during a master planning run when the order date is within the specified time fence for firming. When Planning Optimization is used, planned orders are firmed during a master planning run when the order date (that is, the start date) is within the time fence for firming.<!-- KFM: Explanation needed. -->
-    > [!NOTE]
-    > Auto-firming of a planned purchase order can occur only if the item is associated with a vendor.
-    > 
-    > Firmed derived orders (subcontract purchase orders) will show a status of *In-review* when case change tracking is enabled.
+- **Autofirming** – Define a default firming time fence for coverage groups, individual items, and item and master plan combinations for planned orders to be firmed automatically during a master planning run when the order date is within the specified time fence for firming.
 
 <a name="enable-features"></a>
 
@@ -49,7 +45,6 @@ To make this functionality available on your system, go to [Feature management](
 
 ### Enable autofirming
 
-<!-- KFM: Add a short intro describing what this is and how it's different from the other types of firming -->
 Automatic firming lets you firm planned orders as part of the master planning process within the time fence for firming.
 
 To make this functionality available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Auto-firming for Planning Optimization* feature.
@@ -63,32 +58,34 @@ When you firm planned orders manually, you find and select the planned orders yo
 1. Select the check box for each planned order you want to firm (unless you are planning to firm all of the planned orders currently found by your filters).
 1. On the Action Pane, select one of the following buttons:
     - **Firm** – This will firm the selected planned orders only.
-    - **Firm all** – This will firm all planned orders in the filter, regardless of which check boxes are selected. This option can be useful if you are firming a high number of planned orders.
-1. The **Firming** dialog box opens. Make the following settings on the **Parameters** FastTab:
+    - **Firm all** – This will firm all planned orders currently listed on the page (as established by the various filters), regardless of which check boxes are selected. This option can be useful if you are firming a high number of planned orders.
+1. The **Firming** dialog box opens. Make the following settings on the **Parameters** FastTab (many of these settings take their default values from the **Master planning parameters** page):
 
-    - **Update marking** – Select the inventory marking policy to use when firming planned orders. This setting is defaulted from the value selected on the **Master planning parameters** page.<!-- KFM: Describe this setting, including effects of each option (no, standard, extended) -->
-    - **Stop firming if an error occurs** – Set this to *Yes* to stop firming all selected planned orders if an error occurs in one of them. Must be set to *No* when **Parallelize firming** is enabled. This setting is defaulted from the value selected on the **Master planning parameters** page. <!-- KFM: Describe this setting. Must be No when running parallelize. -->
-    - **Parallelize firming** – This setting is only available if the [*Parallel firming of planned orders* feature](#enable-features) is enabled on your system, and if you have selected two or more planned orders for firming. Set this to *Yes* to run the firming processes in parallel, which can help improve performance. <!-- KFM: Why would I set this to no? -->
-    - **Number of threads** – This setting is only available if the [*Parallel firming of planned orders* feature](#enable-features) is enabled on your system, and if you have set **Parallelize firming** to *Yes*. Enter the number of threads to use to parallelize the firming process. See [Improve master planning performance](master-planning-performance.md#number-of-threads) for advice on how to use this parameter in master planning. <!-- KFM: Any advice? 2? ... 3,000,000? What is the trade-off? -->
+    - **Update marking** – Select the inventory marking policy to use when firming planned orders.
+    - **Stop firming if an error occurs** – Set this to *Yes* to stop firming all selected planned orders if an error occurs in one of them. Must be set to *No* when **Parallelize firming** is enabled.
+    - **Parallelize firming** – This setting is only available if the [*Parallel firming of planned orders* feature](#enable-features) is enabled on your system, and if you have selected two or more planned orders for firming. Set this to *Yes* to run the firming processes in parallel, which can help improve performance.
+    - **Number of threads** – This setting is only available if the [*Parallel firming of planned orders* feature](#enable-features) is enabled on your system, and if you have set **Parallelize firming** to *Yes*. Enter the number of threads to use to parallelize the firming process. See [Improve master planning performance](../master-planning-performance.md#number-of-threads) for advice on how to use this parameter in master planning.
         > [!NOTE]
-        > Setting the **Number of threads** parameter to **0** (zero) increases the master planning running time. Therefore, we recommend that you always set a value that is more than 0.
-    - **Purchase orders \> Group by vendor** – Select this option to group planned purchase orders together to make a single purchase order per vendor when firming. Alternatively, you can create one purchase order with one line for each planned order. This setting is defaulted from the value selected on the **Master planning parameters** page.<!-- KFM: Describe this setting -->
-    - **Purchase orders \> Group by buyer group** – Select this option to group planned purchase orders together to create a single purchase order that combines the vendor and buyer group. To use this option, you must also enable the **Group by vendor** option. This setting is defaulted from the value selected on the **Master planning parameters** page.<!-- KFM: Describe this setting -->
-    - **Purchase orders \> Group by period** – Select the time period during which you want to group planned purchase orders. To use the option, you must also enable the **Group by vendor** option. This setting is defaulted from the value selected on the **Master planning parameters** page.<!-- KFM: Describe this setting -->
-    - **Transfers \> Group by period** – Select the time period during which you want to group planned transfer orders. The orders will be grouped based on **From warehouse** and **To warehouse** values. This setting is defaulted from the value selected on the **Master planning parameters** page.<!-- KFM: Describe this setting -->
+        > Setting **Number of threads** to *0* (zero) increases the master planning running time. Therefore, we recommend that you always set a value that is more than 0.
+    - **Purchase orders \> Group by vendor** – Select this option to group planned purchase orders together to make a single purchase order per vendor when firming. Alternatively, you can create one purchase order with one line for each planned order.
+    - **Purchase orders \> Group by buyer group** – Select this option to group planned purchase orders together to create a single purchase order that combines the vendor and buyer group. To use this option, you must also enable the **Group by vendor** option.
+    - **Purchase orders \> Group by period** – Select the time period during which you want to group planned purchase orders. To use the option, you must also enable the **Group by vendor** option.
+    - **Transfers \> Group by period** – Select the time period during which you want to group planned transfer orders. The orders will be grouped based on **From warehouse** and **To warehouse** values.
 
     ![The manual firming dialog box](./media/manual-firming.png "The manual firming dialog box")
 
-1. Use the **Run in the background** FastTab to set the job to run in batch and/or set up a recurrent schedule. These settings work just as they do for other types of background jobs in Supply Chain Management. However, for manual firming, this batch job will process only the currently selected planned orders, and not any orders that fit the current filter on the page. <!-- KFM: Does this actually work? The other topic draft suggested it doesn't. -->
+1. Use the **Run in the background** FastTab to set the job to run in batch, but it doesn't make sense to set up a recurrent schedule when you are doing manual firming. These settings work just as they do for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management. However, for manual firming, this batch job will process only the currently selected planned orders, and not any orders that fit the current filter on the page.
 
 1. Select **OK** to apply your settings and generate the firmed orders.
 
 ## Firm planned orders using a query
 
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
+
 <!-- KFM: Is this feature being initially released in a preview version of SCM? If so, which one? -->
 <!-- OBA: It will be 10.0.19 -->
 
-Query-based firming lets you plan the firming based on criteria selected in advance, or combine different kinds of planned orders with both manual and automated execution of the firming operation. <!-- KFM: How do we combine manual and automatic selections? --> It also lets you preview the firmed order based on your settings so you can confirm whether the order fits your expectations.
+Query-based firming lets you plan firming based on criteria specified in advance, or combine different kinds of planned orders with both manual and automated execution of the firming operation. <!-- KFM: How do we combine manual and automatic selections? --> It also lets you preview the firmed order based on your settings so you can confirm whether the order fits your expectations.
 
 > [!IMPORTANT]
 > To use the feature described in this section, the [*Planned order firming with filtering* feature](#enable-features) must be enabled on your system, as described at the start of this topic.
@@ -105,13 +102,7 @@ To firm a planned order using the query-based firming process:
 
     ![The *Planned order firming* dialog box, *Parameters* FastTab](./media/planned-order-firming-main-1.png "The Planned order firming dialog box, Parameters FastTab")
 
-1. To set the criteria of which records to include in the order, select the **Filter** button from the **Records to include** toolbar. A standard query dialog opens, which lets you establish selection criteria, sorting criteria, and joins. These settings just as they do for other types of queries in Supply Chain Management. The following settings on the **Records to include** FastTab can be relevant (and more could be added by selecting a criteria in the query)  <!-- KFM: Describe this setting -->  <!-- OBA: Seems like redundant to simply describe fields originating from a query? -->:
-
-    - **Item number** – Include only planned orders for the item number(s) specified.
-    - **Order date** – Include only planned orders for the order date(s) specified.
-    - **Site** – Include only planned orders for the site(s) specified.
-    - **Warehouse** – Include only planned orders for the warehouse(s) specified.
-    - **Reference** – Include only planned orders with a filter by reference number(s) specified.
+1. To set the criteria of which records to include in the order, select the **Filter** button from the **Records to include** toolbar. A standard query dialog opens, which lets you establish selection criteria, sorting criteria, and joins. These settings work just as they do for other types of queries in Supply Chain Management. The fields here are read-only and show values related to your query.
 
     ![The Planned order firming dialog box, Records to include FastTab](./media/planned-order-firming-main-2.png "The Planned order firming dialog box, Records to include FastTab")
 
@@ -128,9 +119,7 @@ To firm a planned order using the query-based firming process:
 
 ## Autofirm planned orders
 
-Automatic firming lets you firm planned orders as part of the master planning process. When Planning Optimization is used, planned orders are firmed during a master planning run when the order date (that is, the start date) is within the time fence for firming. <!-- KFM: Why is only PO mentioned here? -->
-
-<!-- KFM: Make it more clear how this is different from the other types of firming. -->
+Automatic firming lets you firm planned orders as part of the master planning process. It lets you define a firming time fence for coverage groups, individual items, and item and master plan combinations for planned orders to be firmed automatically during a master planning run when the order date is within the specified time fence for firming. When Planning Optimization is used, planned orders are firmed during a master planning run when the order date (that is, the start date) is within the time fence for firming. <!-- KFM: Why is only PO mentioned here? Maybe we should instead point out that PO and built-in are handled slightly differently as described later in this section. -->
 
 > [!NOTE]
 > Auto-firming of a planned purchase order can occur only for items that are associated with a vendor.
