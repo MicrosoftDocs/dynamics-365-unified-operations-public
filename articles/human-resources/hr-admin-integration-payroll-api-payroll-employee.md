@@ -32,31 +32,26 @@ This topic provides details and an example query for the Payroll employee entity
 
 ## Properties
 
-| Property<br>**Physical name**<br>***Type*** | Use | Description |S
+| Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **Personnel number**<br>mshr_personnelnumber<br>*GUID* | String<br>Required |  |
+| **Personnel number**<br>mshr_personnelnumber<br>*GUID* | String<br>Required | The employee's unique employee ID. |
 | **Primary field**<br>mshr_primaryfield<br>*GUID* | String<br>Required |  |
-| **Last name**<br>mshr_lastname<br>*GUID* | String<br>Required |  |
-| **Legal entity ID**<br>mshr_legalentityID<br>*GUID* | String<br>Required |  |
-| **Valid from**<br>mshr_namevalidfrom<br>*GUID* | Date Time Offset <br>Required |  |
-| **Gender*<br>mshr_gender<br>*GUID* | Int32<br>Required |  |
-| **Payroll employee entity ID**<br>mshr_payrollemployeeentityid<br>*GUID* | Guid<br>Required |  |
-| **Employment start date**<br>mshr_employmentstartdate<br>*GUID* | Date time offset<br>Required |  |
+| **Last name**<br>mshr_lastname<br>*GUID* | String<br>Required | Employee last name. |
+| **Legal entity ID**<br>mshr_legalentityID<br>*GUID* | String<br>Required | Specifies the legal entity (company). |
+| **Valid from**<br>mshr_namevalidfrom<br>*GUID* | Date Time Offset <br>Required | Date the employee information is valid from.  |
+| **Gender**<br>mshr_gender<br>*GUID* | Int32<br>Required | The employee's gender. |
+| **Payroll employee entity ID**<br>mshr_payrollemployeeentityid<br>*GUID* | Guid<br>Required | A system-generated GUID value to uniquely identify the employee. |
+| **Employment start date**<br>mshr_employmentstartdate<br>*GUID* | Date time offset<br>Required | The start date of the employee's employment. |
 | **Identification type ID**<br>mshr_identificationtypeid<br>*GUID* |String<br>Required | The identification type defined for the employee. |
-| **Employment end date*<br>mshr_employmentenddate<br>*GUID* | Date time offset<br>Required |  |
-| **Data area ID*<br>mshr_dataareaid_id<br>*GUID* | Guid<br>Required |  |
-| **Valid to**<br>mshr_namevalidto<br>*GUID* | Date Time Offset <br>Required |  |
-| **Birthdate**<br>mshr_birthdate<br>*GUID* | Date Time Offset <br>Required |  |
+| **Employment end date**<br>mshr_employmentenddate<br>*GUID* | Date time offset<br>Required |The end of the employee's employment.  |
+| **Data area ID**<br>mshr_dataareaid_id<br>*GUID* | Guid<br>Required | System-generated GUID value identifying the legal entity (company). |
+| **Valid to**<br>mshr_namevalidto<br>*GUID* | Date Time Offset <br>Required | Date the employee information is valid to. |
+| **Birth date**<br>mshr_birthdate<br>*GUID* | Date Time Offset <br>Required | The employee's birth date |
 | **Identification number to**<br>mshr_identificationnumber<br>*GUID* | String <br>Required |The identification number defined for the employee.  |
-| **First name**<br>mshr_firstname<br>*GUID* | String<br>Required |  |
-| **Middle name**<br>mshr_middlename<br>*GUID* | String<br>Required |  |
+| **First name**<br>mshr_firstname<br>*GUID* | String<br>Required | Employee first name. |
+| **Middle name**<br>mshr_middlename<br>*GUID* | String<br>Required |Employee middle name.  |
 
 ## Example query for Payroll employee
-
-identificationtypeid
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-W
-**Query**
 
 **Request**
 
