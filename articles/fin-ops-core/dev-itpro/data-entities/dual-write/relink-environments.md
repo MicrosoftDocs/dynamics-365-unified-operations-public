@@ -19,23 +19,20 @@ ms.dyn365.ops.version:
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-When you unlink and relink two dual-write environments, you need to clear the data from the key tables. This applies to sandbox, production, and user acceptance test environments, and linking changes like regular backup and restore, and go-live releases. This topic describes how to unlink, clear the key tables, and then relink dual-write environments.
+When you unlink and relink two dual-write environments, you need to delete the data from the key tables. This applies to sandbox, production, and user acceptance test (UAT) environments, and linking changes like regular backup and restore, and go-live releases. This topic describes how to unlink, delete the data in the key tables, and then relink the dual-write environments.
 
-You can relink the Finance and Operations and customer engagement environments and resume your work. The mappings will be preserved, because the mappings are stored in Dataverse.
+The mappings are preserved when you unlink and relink, because the mappings are stored in Dataverse.
 
 ## Scenario: Dual-write is enabled between production environments
 
-In this scenario, dual-write is enabled between Finance and Operations and Dataverse production environments. You want to back up the Finance and Operations environment and restore it to Finance and Operations UAT environment, then Finance and Operations UAT becomes your destination system. (Note: These steps are applicable for Prod/Sandbox/Dev instances).
+In this scenario, dual-write is enabled between Finance and Operations and Dataverse production environments. You want to back up the Finance and Operations production environment and restore it to Finance and Operations UAT environment, and then the UAT environment becomes your production environment.
 
- Whenever you run a backup and restore process, you should follow the steps in the relevant scenario on the destination system.
-
-
-Do the following on the destination system: 
+These steps are applicable sandbox, production, and UAT environments.
 
 1. Stop all entity maps.
-2. Unlink Finance and Operations and Dataverse.
-3. Perform database restore.
-4. Clear out the key tables in Finance and Operations
+2. Unlink the Finance and Operations app and Dataverse.
+3. Perform the database restore.
+4. Delete the data in the key tables in the Finance and Operations app.
 
     - **DualWriteProjectConfiguration**
     - **DualWriteFieldConfiguration**
@@ -44,27 +41,36 @@ Do the following on the destination system: 
 5. Relink dual-write.
 6. Enable the maps.
 
-If the backup and restore is happening for Dataverse, then do this step on the destination Dataverse environment:
+If the backup and restore processes are running on Dataverse, then follow these steps on the Dataverse environment:
 
-1. Login to Finance and Operations
-2. Stop all entity maps.
-3. Unlink Finance and Operations and Dataverse.
-4. Perform database restore in Dataverse
-5. Clear out the following table.
-6. Re-link Finance and Operations and Dataverse
+1. Login to the Finance and Operations app.
+2. Stop all table maps.
+3. Unlink the Finance and Operations app and Dataverse.
+4. Perform the database restore in Dataverse.
+5. Delete the data in the key tables in the Finance and Operations app.
+
+    - **DualWriteProjectConfiguration**
+    - **DualWriteFieldConfiguration**
+    - **BusinessEventsDefinition**
+
+6. Relink the Finance and Operations app and Dataverse.
 
 ## Scenario: Reset or change linking
 
-If you wish to reset your existing sandbox Dataverse instance that is linked for dual-write or wish to change the linking to a different Dataverse instance, then do the following:
+If you want to reset your existing sandbox Dataverse instance that is linked for dual-write or you want to change the linking to a different Dataverse instance, then follow these steps:
 
 1. Finance and Operations instance.
-2. Login to Finance and Operations
+2. Log in to the Finance and Operations app.
 3. Stop all entity maps.
-4. Unlink Finance and Operations and CDS.
-5. Reset the CDS environment.
-6. Clear out these tables in Finance and Operations - DualWriteProjectConfiguration, DualWriteProjectFieldConfiguration and BusinessEventsDefinition
-7. Follow these instructions for setting up dual-write for the reset environment -
-    [<span class="underline">https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/requirements-and-prerequisites</span>](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/requirements-and-prerequisites)
+4. Unlink the Finance and Operations app and Dataverse.
+5. Reset the Dataverse environment.
+6. Delete the data in the key tables in the Finance and Operations app.
+
+    - **DualWriteProjectConfiguration**
+    - **DualWriteFieldConfiguration**
+    - **BusinessEventsDefinition**
+
+7. Set up dual-write on the environment that you want to reset. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
 
 ## Known issues
 
