@@ -104,7 +104,7 @@ To initiate a new category request:
 
 - To add a new category, select **Add** from the  **Requested categories** FastTab toolbar.
 - To remove a listed category from the request, select the target category on the **Requested categories** FastTab and then select **Remove** from the toolbar.
-- To attach a document to the request, select **Attachments** on theAction Pane. Attached documents will be available to approvers when they review the category request.
+- To attach a document to the request, select **Attachments** on the Action Pane. Attached documents will be available to approvers when they review the category request.
 - To remove attached documents, select **Attachments** on the Action Pane. Select the document to remove and then select **Delete** from the Action Pane.
 
 9. If you're ready to submit the request, select **Submit** from the Action Pane and follow the next steps. Otherwise just close the page to come back to it later.
