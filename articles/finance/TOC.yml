@@ -1510,6 +1510,8 @@
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
           href: localizations/emea-bel-reconciliation-reports.md
+        - name: Journal reports
+          href: localizations/emea-bel-journal-reports.md
         - name: Set up payment balance reporting
           href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
         - name: Set up and maintain PRODCOM
