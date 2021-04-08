@@ -71,7 +71,7 @@ The following is an example of setting up a simple **Vendor category request wor
 19. Select an Assignment type of **User**.
 20. Select the **User** tab.
 21. Select an example approver from the list of **Available users**. For example, a user in procurement department.
-22. Click the **\&gt;** icon to move the example approver to the list of **Selected users**.
+22. Click the **>** icon to move the example approver to the list of **Selected users**.
 23. Close the **Properties** page.
 24. Select **Save and close**.
 25. Enter **Version notes** for the workflow.
@@ -105,9 +105,9 @@ To initiate a new category request:
 - To add a new category, select **Add** from the  **Requested categories** FastTab toolbar.
 - To remove a listed category from the request, select the target category on the **Requested categories** FastTab and then select **Remove** from the toolbar.
 - To attach a document to the request, select **Attachments** on theAction Pane. Attached documents will be available to approvers when they review the category request.
-- To remove attached documents, select **Attachment** s on the Action Pane. Select the document to remove and then select **Delete** from the Action Pane.
+- To remove attached documents, select **Attachments** on the Action Pane. Select the document to remove and then select **Delete** from the Action Pane.
 
-1. If you&#39;re ready to submit the request, select **Submit** from the Action Pane and follow the next steps. Otherwise just close the page to come back to it later.
+1. If you're ready to submit the request, select **Submit** from the Action Pane and follow the next steps. Otherwise just close the page to come back to it later.
 2. Read any **Submission instructions** that appear here and then select **Submit**.
 3. Enter additional information in the **Comment** box if needed and then select **Submit** to complete the request.
 
@@ -165,7 +165,7 @@ To view category requests:
   - To see the list of categories currently included in this request, expand the **Requested categories** FastTab.
   - To view your active categories, open the **Active categories** FactBox on the right side of the page.
   - If documents were submitted the attachments icon will display a count of attachments. To view attached documents, select **Attachments** on the Action Pane. Select a document you want to view. Select **Open** to view the document.
-  - To attach a document to the request, select **Attachments** on theAction Pane. Attached documents will be available to approvers when they review the category request.
+  - To attach a document to the request, select **Attachments** on the Action Pane. Attached documents will be available to approvers when they review the category request.
   - To remove attached documents, select **Attachments** on the Action Pane. Select the document to remove and then select **Delete** from the Action Pane.
   - To view workflow history, select **Workflow** on the Action Pane. Select **More** and **Workflow history** from the workflow options. The **Workflow history** page will open.
 
