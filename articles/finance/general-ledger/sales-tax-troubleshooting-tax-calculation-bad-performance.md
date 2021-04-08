@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Tax Calculation performance impacts the transaction
-description: This topic provides troubleshooting information related to Tax Calculation performance and the impact on transactions.
+title: Tax calculation performance affects transactions
+description: This topic provides troubleshooting information that is related to tax calculation performance and its effect on transactions.
 author: shtao
 manager: beya
 ms.date: 04/07/2021
@@ -27,47 +27,51 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
 ---
 
-# Tax Calculation performance impacts the transaction
+# Tax calculation performance affects transactions
 
 [!include [banner](../includes/banner.md)]
 
-There are times when a transaction is impacted by Tax Calculation performance issues. Complete the steps in the following sections as needed, to troubleshoot the issue.
+Sometimes, a transaction is affected by performance issues that tax calculation is having. To troubleshoot this issue, follow the steps in the following sections as required.
 
-## Check the transaction line count
-Check whether the transaction has a large number of lines, for example more than several hundred. If the transaction does have several hundred lines, delay the tax calculation. For more information, see [Enable delayed tax calculation on journals](enable-delayed-tax-calculation.md). If the transaction doesn't have that many lines, move to the next section. 
+## Review the transaction line count
 
-Next, you can check for the following:
+Determine whether the transaction has a large number of lines (for example, more than several hundred). If it doesn't, move on to the next section. If the transaction does have several hundred lines, delay the tax calculation. For more information, see [Enable delayed tax calculation on journals](enable-delayed-tax-calculation.md). 
 
-  - Import transactions from large files.
-  - Multiple sessions that process the same transaction tax calculation at the same time.
-  - A transaction has multiple lines and the views refresh in real time. For example, the **Calculated sales tax amount** field on the **General journal** page refreshes in real time when line's fields changed.
+Next, you can determine whether any of the following conditions are met:
 
-If any of these are true, delay the tax calculation. 
+- There are import transactions from large files.
+- Multiple sessions process the same transaction tax calculation at the same time.
+- The transaction has multiple lines, and the views are updated in real time. For example, the **Calculated sales tax amount** field on the **General journal** page is updated in real time when a line's fields are changed.
 
    [![Calculated sales tax amount field on the Jounal voucher page](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
-## Check call stack 
-Check the call stack to verify whether tax calculation is called multiple times. If yes, reduce the tax calculation times according to the following steps. If it isn't, skip to the next section.
+If any of these conditions are met, delay the tax calculation.
 
-1. If the journal has considered the transaction, see [Enable delayed tax calculation on journals](enable-delayed-tax-calculation.md) to delay tax calculation.
-2. If it's a purchase order and the application version is higher than 10.0.15, enabling the flighting for **PurchTableChangeMgmtDistributionUpdateOnToggle_KillSwitc**h can delay the tax calculation until the final calculation.
+## Review the call stack
 
-## Check the call stack timeline 
-Check the call stack timeline to confirm whether the following issues exist. If they do, enable the flighting, **TaxUncommittedDoIsolateScopeFlighting** to resolve the issue.
+Review the call stack to determine whether tax calculation is called multiple times. If it isn't, move on to the next section. If the call stack is called multiple times, follow these steps to help reduce the tax calculation times.
 
-- The transaction results in the system hanging until the session ends. The transaction can't calculate the tax result.
+1. If the journal has considered the transaction, delay the tax calculation. For more information, see [Enable delayed tax calculation on journals](enable-delayed-tax-calculation.md).
+2. If the transaction is a purchase order, and the application version is later than 10.0.15, you can delay the tax calculation until the final calculation by enabling the flighting for **PurchTableChangeMgmtDistributionUpdateOnToggle_KillSwitch**.
 
-     [![Session ended message](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
+## Review the call stack timeline
 
-- The **TaxUncommitted** methods cost more time than other methods. For example, **TaxUncommitted::updateTaxUncommitted()** costs 43,347.42 seconds, but other methods cost 0.09 seconds.
+Review the call stack timeline to determine whether the following issues exist. If they do, enable the flighting for **TaxUncommittedDoIsolateScopeFlighting** to fix the issue.
 
-     [![Showing the time count](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
+- The transaction causes the system to stop responding until the session ends. Therefore, the transaction can't calculate the tax result. The following illustration shows the "Session ended" message box that you receive.
 
-## Customizing and calling Tax Calculation
-When you are customizing, don't call tax calculation at the insert() or update() for each line. Tax calculation should be called at the transaction level.
+    [![Session ended message](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
 
-## Verify customization
-If you have completed the steps in the previous sections and no issue is found, check whether customization exists. If it doesn't, create a Microsoft service request for further support.
+- The **TaxUncommitted** methods take more time than other methods. For example, in the following illustration, the **TaxUncommitted::updateTaxUncommitted()** method takes 43,347.42 seconds, but other methods take 0.09 seconds.
 
+    [![Method durations](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
+
+## Customizing and calling tax calculation
+
+When you customize, don't call tax calculation at the **insert()** or **update()** method for each line. Tax calculation should be called at the transaction level.
+
+## Determine whether customization exists
+
+If you've completed the steps in the previous sections but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
