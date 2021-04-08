@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Intrusive customizations
 description: This topic defines the characteristics of an intrusive customization.
 author: MichaelFruergaardPontoppidan
@@ -8,8 +6,6 @@ ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

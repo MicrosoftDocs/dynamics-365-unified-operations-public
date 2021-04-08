@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Perform business actions throughout the lifecycle of table records
 description: This topic provides information about business actions that you can perform throughout the lifecycle of a table record.
 author: ivanv-microsoft
@@ -9,8 +7,6 @@ ms.topic: index-page
 ms.prod: 
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

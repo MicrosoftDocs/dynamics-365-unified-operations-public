@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Customize the user interface
 description: This topic describes how to customize the user interface by using the process automation framework.
 author: RyanCCarlson2

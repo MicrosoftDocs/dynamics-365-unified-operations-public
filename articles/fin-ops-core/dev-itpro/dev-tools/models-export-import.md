@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Export and import models
 description: This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 author: RobinARH
 ms.date: 10/01/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 20451
 ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Export and import models

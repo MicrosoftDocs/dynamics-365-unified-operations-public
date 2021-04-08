@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Run processes
 description: This topic describes how to run processes for the process automation framework.
 author: RyanCCarlson2

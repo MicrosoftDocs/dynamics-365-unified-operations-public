@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Test data methods
 description: This topic provides information about the most common types of test data methods.
 author: MichaelFruergaardPontoppidan
@@ -8,8 +6,6 @@ ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
