@@ -19,7 +19,7 @@ ms.dyn365.ops.version:
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-When you unlink and relink two dual-write environments, you need to delete the data from the key tables. This applies to sandbox, production, and user acceptance test (UAT) environments, and linking changes like regular backup and restore, and go-live releases. This topic describes how to unlink, delete the data in the key tables, and then relink the dual-write environments.
+When you unlink and relink two dual-write environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments, and linking changes like regular backup and restore, and go-live releases. This topic describes how to unlink, delete the data in the key tables, and then relink the dual-write environments.
 
 The mappings are preserved when you unlink and relink, because the mappings are stored in Dataverse.
 
@@ -43,10 +43,10 @@ These steps are applicable sandbox, production, and UAT environments.
 
 If the backup and restore processes are running on Dataverse, then follow these steps on the Dataverse environment:
 
-1. Login to the Finance and Operations app.
+1. Sign in to the Finance and Operations app.
 2. Stop all table maps.
 3. Unlink the Finance and Operations app and Dataverse.
-4. Perform the database restore in Dataverse.
+4. Run the database restore in Dataverse.
 5. Delete the data in the key tables in the Finance and Operations app.
 
     - **DualWriteProjectConfiguration**
@@ -60,7 +60,7 @@ If the backup and restore processes are running on Dataverse, then follow these 
 If you want to reset your existing sandbox Dataverse instance that is linked for dual-write or you want to change the linking to a different Dataverse instance, then follow these steps:
 
 1. Finance and Operations instance.
-2. Log in to the Finance and Operations app.
+2. Sign in to the Finance and Operations app.
 3. Stop all entity maps.
 4. Unlink the Finance and Operations app and Dataverse.
 5. Reset the Dataverse environment.
