@@ -97,7 +97,7 @@ You must register your Human Resources instance in the Azure portal so the Micro
 
 10. Provide a description, select a duration, and select **Add**.
 
-11. Record the secret's value. You'll enter this information when you [Configure the virtual table data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+11. Record the secret's value from the **Value** property of the table. You'll enter this information when you [Configure the virtual table data source](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > Be sure to take note of the secret's value at this time. The secret is never displayed again after you leave this page.
