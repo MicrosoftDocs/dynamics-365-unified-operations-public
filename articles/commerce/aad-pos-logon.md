@@ -53,7 +53,7 @@ You can configure POS authentication method in Commerce headquarters **Functiona
 > - The **Azure AD without single sign-on** option replaces the **Azure Active Directory** option in Dynamics 365 Commerce version 10.0.18 and earlier.
 > - Azure AD authentication requires an active internet connection, so it won't work when the POS is offline.
 
-You must run the **1070 (Channel configuration)** job in COmmerce headquarters at **Retail and Commerce > Retail and Commerce IT > Distribution schedule** to synchronize the latest functionality profile settings to POS clients.
+You must run the **1070 (Channel configuration)** job in Commerce headquarters at **Retail and Commerce > Retail and Commerce IT > Distribution schedule** to synchronize the latest functionality profile settings to POS clients.
 
 ## Associate Azure AD accounts with POS users
 
