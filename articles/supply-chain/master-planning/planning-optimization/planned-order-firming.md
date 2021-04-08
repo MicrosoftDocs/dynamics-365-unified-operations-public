@@ -17,15 +17,17 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
-Planned orders must be *firmed* (that is, release) as part of the master planning process. When planned orders are firmed, they are transformed into actual purchase orders, transfer orders, or production orders. These are also known as *released* or *open orders*.
-
-When you use Planning Optimization, planned orders are firmed during a master planning run when the order date (that is, the start date) is within the time fence for firming.
+Planned orders must be *firmed* (that is, released) as part of the master planning process. When planned orders are firmed, they are transformed into actual purchase orders, transfer orders, or production orders. These are also known as *released* or *open orders*.
 
 There are three methods of firming planned orders, each of which is described in detail in this topic.
 
 - **Manual firming** – Select specific planned orders from a list and then start the process manually.
-- **Query-baed firming** – Create a query to select planned orders based on their properties. You can set up a batch job to run the query and firm matching orders on a regular schedule.
-- **Autofirming** – <!-- KFM: Explanation needed. -->
+- **Query-based firming** – Define a query to select planned orders based on their properties. You can set up a batch job to run the query and firm matching orders on a regular schedule.
+- **Autofirming** – Define a default firming time fence for coverage groups, individual items, and item and master plan combinations for planned orders to be firmed automatically during a master planning run when the order date is within the specified time fence for firming. When Planning Optimization is used, planned orders are firmed during a master planning run when the order date (that is, the start date) is within the time fence for firming.<!-- KFM: Explanation needed. -->
+    > [!NOTE]
+    > Auto-firming of a planned purchase order can occur only if the item is associated with a vendor.
+    > 
+    > Firmed derived orders (subcontract purchase orders) will show a status of *In-review* when case change tracking is enabled.
 
 <a name="enable-features"></a>
 
@@ -48,6 +50,7 @@ To make this functionality available on your system, go to [Feature management](
 ### Enable autofirming
 
 <!-- KFM: Add a short intro describing what this is and how it's different from the other types of firming -->
+Automatic firming lets you firm planned orders as part of the master planning process within the time fence for firming.
 
 To make this functionality available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Auto-firming for Planning Optimization* feature.
 
@@ -69,14 +72,14 @@ When you firm planned orders manually, you find and select the planned orders yo
     - **Number of threads** – This setting is only available if the [*Parallel firming of planned orders* feature](#enable-features) is enabled on your system, and if you have set **Parallelize firming** to *Yes*. Enter the number of threads to use to parallelize the firming process. See [Improve master planning performance](master-planning-performance.md#number-of-threads) for advice on how to use this parameter in master planning. <!-- KFM: Any advice? 2? ... 3,000,000? What is the trade-off? -->
         > [!NOTE]
         > Setting the **Number of threads** parameter to **0** (zero) increases the master planning running time. Therefore, we recommend that you always set a value that is more than 0.
-    - **Purchase orders \> Group by vendor** – <!-- KFM: Describe this setting -->
-    - **Purchase orders \> Group by buyer group** – <!-- KFM: Describe this setting -->
-    - **Purchase orders \> Group by period** – <!-- KFM: Describe this setting -->
-    - **Transfers \> Group by period** – <!-- KFM: Describe this setting -->
+    - **Purchase orders \> Group by vendor** – Select this option to group planned purchase orders together to make a single purchase order per vendor when firming. Alternatively, you can create one purchase order with one line for each planned order. This setting is defaulted from the value selected on the **Master planning parameters** page.<!-- KFM: Describe this setting -->
+    - **Purchase orders \> Group by buyer group** – Select this option to group planned purchase orders together to create a single purchase order that combines the vendor and buyer group. To use this option, you must also enable the **Group by vendor** option. This setting is defaulted from the value selected on the **Master planning parameters** page.<!-- KFM: Describe this setting -->
+    - **Purchase orders \> Group by period** – Select the time period during which you want to group planned purchase orders. To use the option, you must also enable the **Group by vendor** option. This setting is defaulted from the value selected on the **Master planning parameters** page.<!-- KFM: Describe this setting -->
+    - **Transfers \> Group by period** – Select the time period during which you want to group planned transfer orders. The orders will be grouped based on **From warehouse** and **To warehouse** values. This setting is defaulted from the value selected on the **Master planning parameters** page.<!-- KFM: Describe this setting -->
 
     ![The manual firming dialog box](./media/manual-firming.png "The manual firming dialog box")
 
-1. Use the **Run in the background** FastTab to set the job to run in batch and/or set up a recurrent schedule. These settings work just as they do for other types of background jobs in Supply Chain Management. <!-- KFM: Does this actually work? The other topic draft suggested it doesn't. -->
+1. Use the **Run in the background** FastTab to set the job to run in batch and/or set up a recurrent schedule. These settings work just as they do for other types of background jobs in Supply Chain Management. However, for manual firming, this batch job will process only the currently selected planned orders, and not any orders that fit the current filter on the page. <!-- KFM: Does this actually work? The other topic draft suggested it doesn't. -->
 
 1. Select **OK** to apply your settings and generate the firmed orders.
 
