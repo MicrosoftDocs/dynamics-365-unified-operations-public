@@ -67,7 +67,7 @@ The environment administrator uses the information in this section to enable net
 > This section requires at least version 2.9.0 of the Infrastructure Scripts.
 > Additionally, you need to download the [SysInternals Suite](https://docs.microsoft.com/sysinternals/downloads/).
 
-1. Update the Printers.json file by adding the network location of each printer that should be made available to the AOS.
+1. Update the Printers.json file by adding the network location of each printer that should be made available to the AOS. Ensure you remove the example entries. 
 2. Run the following command from the Infrastructure Scripts folder:
 
 ```powershell
