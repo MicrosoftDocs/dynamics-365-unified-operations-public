@@ -1417,7 +1417,9 @@
       - name: Globalization resources
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
       - name: Globalization services
-        items: 
+        items:
+        - name: Globalization services overview
+          href: localizations/globalization-services-overview.md
         - name: Regulatory configuration service
           items:
           - name: Regulatory configuration service overview
