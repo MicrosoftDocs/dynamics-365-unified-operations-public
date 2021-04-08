@@ -125,7 +125,6 @@ There could be several reasons why performance is slow when a virtual entity has
 
 When virtual entities have relationships to other entities, the virtual entity framework needs to query the related entities if the field select list includes the foreign key values for the related entities. By default, queries against the entities return all fields unless the caller requests a specific set of fields. The best practice is to specify a narrow select list. This can help to prevent slow performance.
 
-An example of this symptom is explained in [Core HR virtual tables](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-developer-optimize-virtual-table-queries).
-
+An example of this issue is explained in [Optimize Dataverse virtual table queries](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-optimize-virtual-table-queries).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
