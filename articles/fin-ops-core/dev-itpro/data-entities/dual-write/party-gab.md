@@ -4,7 +4,6 @@ description: This topic describes the Party and global address book functionalit
 author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
-ms.service: dynamics-ax-applications
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
