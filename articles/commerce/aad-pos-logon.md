@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable Azure Active Directory authentication for POS sign-in
+title: Configure Azure Active Directory authentication for POS sign-in
 description: This topic explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale.
 author: boycezhu
 manager: annbe
@@ -27,14 +27,14 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Use Azure Active Directory as POS authentication method
+# Configure Azure Active Directory authentication for POS sign-in
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
 This topic explains how to configure Azure Active Directory (Azure AD) as the authentication method in Microsoft Dynamics 365 Commerce point of sale (POS).
 
-Retailers who use Dynamics 365 Commerce along with other Microsoft cloud services such as Microsoft Azure, Microsoft 365, and Microsoft Teams typically want to use Azure Active Directory (Azure AD) for centralized management of user credentials for a secure and seamless sign-in experience across applications. To do this you must first configure Azure AD as the authentication method in Commerce point of sale (POS).
+Retailers who use Dynamics 365 Commerce along with other Microsoft cloud services such as Microsoft Azure, Microsoft 365, and Microsoft Teams typically want to use Azure Active Directory (Azure AD) for centralized management of user credentials for a secure and seamless sign-in experience across applications. To use Azure AD authentication for Commerce point of sale (POS), you must first configure Azure AD as the authentication method in Commerce headquarters.
 
 ## Configure POS authentication method
 
@@ -57,7 +57,7 @@ To configure the POS authentication method in Commerce headquarters, follow thes
 
 ## Associate Azure AD accounts with POS users
 
-To use Azure AD as the POS authentication method, you must to associate Azure AD accounts with POS users in Commerce headquarters. 
+To use Azure AD as the POS authentication method, you must associate Azure AD accounts with POS users in Commerce headquarters. 
 
 To associate Azure AD accounts with POS users in Commerce headquarters, follow these steps.
 	
