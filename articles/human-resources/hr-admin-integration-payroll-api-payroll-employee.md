@@ -34,7 +34,7 @@ This topic provides details and an example query for the Payroll employee entity
 
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **Personnel number**<br>mshr_personnelnumber<br>*String* | Read-only<br>Required | The employee's unique employee ID. |
+| **Personnel number**<br>mshr_personnelnumber<br>*String* | Read-only<br>Required | The employee's unique personnel number. |
 | **Primary field**<br>mshr_primaryfield<br>*String* | Required<br>System generated |  |
 | **Last name**<br>mshr_lastname<br>*String* | Read only<br>Required | Employee last name. |
 | **Legal entity ID**<br>mshr_legalentityID<br>*String* | Read-only<br>Required | Specifies the legal entity (company). |
