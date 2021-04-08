@@ -1486,6 +1486,8 @@
           href: localizations/emea-aut-packing-material-fee-calculation.md
         - name: VAT statement
           href: localizations/emea-aut-vat-statement-details.md
+        - name: Cross-border services report
+          href: localizations/emea-aut-cross-border-services-report.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
@@ -3072,6 +3074,8 @@
           href: localizations/apac-tha-tax-branch-dimensions.md
         - name: Sales VAT report
           href: localizations/apac-tha-sales-vat-report.md
+        - name: Average VAT for purchase transactions
+          href: localizations/apac-tha-average-vat-for-purchase-transactions.md
         - name: Withholding tax
           href: localizations/apac-tha-withholding-tax.md          
       - name: United Arab Emirates (UAE)
