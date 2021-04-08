@@ -1486,6 +1486,8 @@
           href: localizations/emea-aut-packing-material-fee-calculation.md
         - name: VAT statement
           href: localizations/emea-aut-vat-statement-details.md
+        - name: Cross-border services report
+          href: localizations/emea-aut-cross-border-services-report.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
@@ -1510,6 +1512,8 @@
           href: localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
           href: localizations/emea-bel-reconciliation-reports.md
+        - name: Journal reports
+          href: localizations/emea-bel-journal-reports.md
         - name: Set up payment balance reporting
           href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
         - name: Set up and maintain PRODCOM
@@ -2979,7 +2983,9 @@
           - name: Cash flow tax registers
             href: localizations/rus-cash-flow-tax-registers.md 
           - name: Rated expenses registers
-            href: localizations/rus-rated-expenses-registers.md   
+            href: localizations/rus-rated-expenses-registers.md
+          - name: Accounts payable debt tax registers and debt write-offs
+            href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
@@ -3068,6 +3074,8 @@
           href: localizations/apac-tha-tax-branch-dimensions.md
         - name: Sales VAT report
           href: localizations/apac-tha-sales-vat-report.md
+        - name: Average VAT for purchase transactions
+          href: localizations/apac-tha-average-vat-for-purchase-transactions.md
         - name: Withholding tax
           href: localizations/apac-tha-withholding-tax.md          
       - name: United Arab Emirates (UAE)
