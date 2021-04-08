@@ -90,6 +90,9 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ## Videos for Dynamics 365 Finance
 
+### Business document management
+- [Create a new business document using Business Document Management](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### Customize the app
 - [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Embed Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
@@ -118,6 +121,9 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 
 ## Videos for Dynamics 365 Supply Chain Management
+
+### Business document management
+- [Create a new business document using Business Document Management](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### Costs
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
