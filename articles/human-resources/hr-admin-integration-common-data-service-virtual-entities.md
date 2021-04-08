@@ -226,5 +226,4 @@ The slideout pane displays the most recent execution results for the process. Yo
 [What is Power Apps portals?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
 
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
