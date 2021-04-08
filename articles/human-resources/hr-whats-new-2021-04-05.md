@@ -60,7 +60,7 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 550852 | The **Approval** button doesn't validate with mandatory fields set on the **Review** form. | When you set a field on the **Review** form as mandatory and publish the changes for the Manager role, the form doesn't validate as expected. |
+| 550852 | The **Approval** button doesn't validate with mandatory fields set on the **Review** form. | When you set a field on the **Review** form as mandatory and publish the changes for the Manager role, the form doesn't validate as expected. When ratings were added as a mandatory field on performance reviews the system was still allowing managers to save and advance the review to the next stage. This has now been fixed so that the field must contain a value and be saved to advance in the workflow. |
 | 559564 | Historic worker actions for fixed compensation change give error for terminated users. | Worker action of an exited employee compensation gives an error. After an employee is terminated, the worker action of promotion before termination gives an error. |
 | 560074 | Employment category dropdown isn't filtering on **Worker type** and shows categories for employees and contractors. | On the **Employee** form, the **Employment category** dropdown should show either employee or contractor categories, based on the employee’s worker type. |
 | 567388 | Some of the information for newly created employees doesn't sync immediately to the **cdm_worker** table in Dataverse. | When creating a new employee record, the new record would sync to the **cdm_worker** table in Dataverse, but not all properties would be included in the Dataverse record. |
