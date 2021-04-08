@@ -152,6 +152,9 @@ A full pipeline should consist of at least the following steps:
 For the deployable package to be created, NuGet must be readily available on the build agent. Therefore, the **NuGet tool installer** task in Azure DevOps must be run before the step that creates the package.
 
 > [!NOTE]
+> If your source code repository includes binary packages from third parties like ISVs, you have to explicitly add those to the packaging step. For more information, see [Create deployable packages in Azure Pipelines](pipeline-create-deployable-package.md).
+
+> [!NOTE]
 > Because of semantic versioning features in NuGet version 3.4 and later, make sure that the task installs version 3.3.0 or earlier. Currently, deployable package generation doesn't support semantic versioning.
 
 ### Sample pipeline for X++ developers
