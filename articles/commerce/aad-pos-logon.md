@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations, Retail
 # ms.custom:
 ms.search.region: global
 # ms.search.industry:
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.10
 ---
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.10
 # Use Azure Active Directory as POS authentication method
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale (POS).
 
@@ -96,7 +96,7 @@ In real world scenarios, many retailers set up their retail store environment in
 
 ## Additional resources
 
-[Configure a worker](commerce/tasks/worker.md)
+[Configure a worker](tasks/worker.md)
 
 [Create a retail functionality profile](retail-functionality-profile.md)
 
