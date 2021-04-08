@@ -4,11 +4,9 @@
 title: Stock card report for Thailand
 description: This topic provides information about stock card reports for legal entities in Thailand. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

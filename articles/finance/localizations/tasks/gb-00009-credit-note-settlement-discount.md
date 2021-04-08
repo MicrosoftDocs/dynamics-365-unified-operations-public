@@ -4,11 +4,9 @@
 title: GB-00009 Create a credit note on the settlement discount
 description: This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR). 
 author: epodkolz
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

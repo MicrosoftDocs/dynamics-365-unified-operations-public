@@ -1,18 +1,12 @@
 ---
 
-# required metadata
-
 title: Application extensibility roadmap
 description: This topic discusses the requirements and schedule for converting code from overlayering-based to extension-based.
 author: FrankDahl
-manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

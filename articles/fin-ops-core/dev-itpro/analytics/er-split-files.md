@@ -4,11 +4,9 @@
 title: Split generated XML files based on file size and content quantity
 description: This topic provides information about how to split generated files based on the file size and content item quantity.
 author: NickSelin
-manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

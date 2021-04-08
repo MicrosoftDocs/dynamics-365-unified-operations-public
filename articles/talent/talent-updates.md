@@ -4,11 +4,9 @@
 title: Talent updates
 description: This article provides information about the release process and cadence for Microsoft Dynamics 365 Talent.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

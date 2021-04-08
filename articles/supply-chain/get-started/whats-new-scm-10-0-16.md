@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.16 (February 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.16. 
 author: kamaybac
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,11 +38,13 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
+The following features are included in this release. Follow the links to the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
 - [Customizable shop floor execution interface](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - For more information, see [Set up a device to run the production floor execution interface](../production-control/production-floor-execution-setup.md).
 
 - [Inventory Visibility Add-in for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - For more information, see [Inventory Visibility Add-in](../inventory/inventory-visibility.md)
+
+- Unified number sequence for job IDs<br> - For more information, see [Unified number sequence for job IDs](../production-control/unified-job-ids.md).
 
 - [Validate license plates on source document lines](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - For more information, see [Warehouse configuration overview](../warehousing/warehouse-configuration.md).
 
@@ -80,7 +80,7 @@ We have recently added or significantly updated the following help topics. They 
 - [Troubleshoot sales orders](../sales-marketing/troubleshooting-sales.md)
 - [Troubleshoot sales quotations](../sales-marketing/troubleshooting-salesquotation.md)
 - [Troubleshoot upgrade and migration to advanced warehouse management](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Troubleshoot warehouse app connection issues](../warehousing/troubleshoot-warehouse-app-connection.md)
+- [Troubleshoot Warehouse Management mobile app connection issues](../warehousing/troubleshoot-warehouse-app-connection.md)
 - [Troubleshoot warehouse configuration](../warehousing/troubleshoot-warehouse-configuration.md)
 - [Troubleshoot warehouse replenishment](../warehousing/troubleshoot-warehouse-replenishment.md)
 - [Troubleshoot warehouse setup](../warehousing/troubleshoot-warehouse-setup.md)

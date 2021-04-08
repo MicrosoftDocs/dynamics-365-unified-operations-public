@@ -4,11 +4,9 @@
 title: Financial reporting overview
 description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-manager: AnnBe
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

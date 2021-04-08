@@ -4,11 +4,9 @@
 title: Create email templates for transactional events 
 description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -43,7 +41,7 @@ Before you can map a specific transactional event to an email template, you must
 
 To create an email template, follow these steps.
 
-1. In Commerce headquarters, go to **Organization email templates**, which is under **Retail and Commerce \> Headquarters setup \> Organization email templates** or **Organization administration \> Setup \> Organization email templates**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Organization email templates** or **Organization administration \> Setup \> Organization email templates**.
 1. Select **New**.
 1. Under **General**, set the following fields:
 
@@ -82,28 +80,29 @@ Here is an example.
 
 The following placeholders retrieve and show data that is defined at the sales order level (as opposed to the sales line level).
 
-| Placeholder name    | Placeholder value                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | The name of the customer who placed the order.                   |
-| salesid             | The sales ID of the order.                                       |
-| deliveryaddress     | The delivery address for shipped orders.                         |
-| customeraddress     | The address of the customer.                                     |
-| deliverydate        | The delivery date.                                               |
-| shipdate            | The ship date.                                                   |
-| modeofdelivery      | The delivery mode of the order.                                  |
-| charges             | The total charges for the order.                                 |
-| tax                 | The total tax for the order.                                     |
-| total               | The total amount for the order.                                  |
-| ordernetamount      | The total amount for the order, minus the total tax.             |
-| discount            | The total discount for the order.                                |
-| storename           | The name of the store where the order was placed.                |
-| storeaddress        | The address of the store that placed the order.                  |
-| storeopenfrom       | The opening time of the store that placed the order.             |
-| storeopento         | The closing time of the store that placed the order.             |
-| pickupstorename     | The name of the store where the order will be picked up.         |
-| pickupstoreaddress  | The address of the store where the order will be picked up.      |
-| pickupopenstorefrom | The opening time of the store where the order will be picked up. |
-| pickupopenstoreto   | The closing time of the store where the order will be picked up. |
+| Placeholder name     | Placeholder value                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | The name of the customer who placed the order.               |
+| salesid              | The sales ID of the order.                                   |
+| deliveryaddress      | The delivery address for shipped orders.                     |
+| customeraddress      | The address of the customer.                                 |
+| customeremailaddress | The email address that the customer entered at checkout.     |
+| deliverydate         | The delivery date.                                           |
+| shipdate             | The ship date.                                               |
+| modeofdelivery       | The delivery mode of the order.                              |
+| charges              | The total charges for the order.                             |
+| tax                  | The total tax for the order.                                 |
+| total                | The total amount for the order.                              |
+| ordernetamount       | The total amount for the order, minus the total tax.         |
+| discount             | The total discount for the order.                            |
+| storename            | The name of the store where the order was placed.            |
+| storeaddress         | The address of the store that placed the order.              |
+| storeopenfrom        | The opening time of the store that placed the order.         |
+| storeopento          | The closing time of the store that placed the order.         |
+| pickupstorename      | The name of the store where the order will be picked up.     |
+| pickupstoreaddress   | The address of the store where the order will be picked up.  |
+| pickupopenstorefrom  | The opening time of the store where the order will be picked up. |
+| pickupopenstoreto    | The closing time of the store where the order will be picked up. |
 
 ### Order line placeholders (sales line level)
 
@@ -173,11 +172,8 @@ Here is an example.
 
 Receipts can be emailed to customers who make purchases at a retail point of sale (POS). In general, the steps for creating the emailed receipt template are the same as the steps for creating templates for other transactional events. However, the following changes are required:
 
-- The email ID of the email template must be **emailRecpt**.
 - The text of the receipt is inserted into the email by using the **%message%** placeholder. To ensure that the receipt body is correctly rendered, surround the **%message%** placeholder with HTML **&lt;pre&gt;** and **&lt;/pre&gt;** tags.
-- Line breaks in the HTML for the header and footer of the email are converted to HTML **&lt;br /&gt;** tags so that the receipt body is rendered correctly. To eliminate unwanted vertical space in your receipt emails, remove line breaks from any place in the HTML where vertical space isn't required.
-
-For more information about how to configure email receipts, see [Set up email receipts](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+- The **%receiptid%** placeholder can be used to show a QR code or bar code that represents the receipt ID. (QR codes and bar codes are dynamically generated and served by a third-party service.) For more information about how to show a QR code or bar code in an emailed receipt, see [Add a QR code or bar code to transactional and receipt emails](add-qr-code-barcode-email.md).
 
 ## Upload the email HTML
 

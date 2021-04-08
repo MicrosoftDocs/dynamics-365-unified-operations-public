@@ -4,11 +4,9 @@
 title: Cash position inquiry
 description: This topic provides information about how to determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions.
 author: velofog
-manager: AnnBe
 ms.date: 10/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Parse incoming documents in Excel format
 description:  This topic provides information about designing Electronic reporting (ER) formats to parse content contained in incoming Microsoft Excel files. 
 author: NickSelin
-manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

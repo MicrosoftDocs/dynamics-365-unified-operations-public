@@ -4,11 +4,9 @@
 title: Configure multiple B2C tenants in a Commerce environment
 description: This topic describes when and how to set up multiple per-channel Microsoft Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user authentication in a dedicated Dynamics 365 Commerce environment.
 author: BrianShook
-manager: annbe
-ms.date: 03/02/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -59,10 +57,6 @@ The following illustration shows multiple B2C tenants in a Commerce environment.
 
 If you decide that your business requires distinct B2C tenants per channel in the same Commerce environment, complete the procedures in the following sections to request this feature.
 
-## Request that B2C per channel be enabled in your environment
-
-Currently, if you want distinct B2C tenants per channel to be available in the same Commerce environment, you must submit a request to Dynamics 365 Commerce. For more information, see [Get support for Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md), or discuss this issue with your Commerce solutions contact.
-
 ## Configure B2C tenants in your environment
 
 To configure B2C tenants in your environment, complete the relevant procedures in this section.
@@ -83,11 +77,11 @@ To add an Azure AD B2C tenant to your environment, follow these steps.
     - **Client GUID**: Enter the Azure AD B2C tenant ID as it appears in the Azure portal (not the application ID for the B2C tenant).
     - **Edit Profile Policy ID**: Enter the policy ID (the name of the policy in the Azure portal).
 
-1. When you've finished entering this information, select **OK** to save your changes.
+1. When you've finished entering this information, select **OK** to save your changes. Your new Azure AD B2C tenant should now appear in the list under **Manage B2C Applications**.
 
 > [!NOTE]
 > You should leave fields such as **Scope**, **Non Interactive Policy ID**, **Non Interactive Client ID**, **Login Custom Domain**, and **Sign Up Policy ID** blank unless the Dynamics 365 Commerce team instructs you to set them.
-Your new Azure AD B2C tenant should now appear in the list under **Manage B2C Applications**.
+
 
 ### Manage or delete an Azure AD B2C tenant
 
@@ -101,6 +95,7 @@ Your new Azure AD B2C tenant should now appear in the list under **Manage B2C Ap
 > When a B2C tenant is configured for a live/published site, users might have signed up by using accounts that are present on the tenant. If you delete a configured tenant on the **Tenant Settings \> B2C Tenant** menu, you remove the association of that B2C tenant from sites that are associated with any channels of the tenant. In this case, your users might no longer be able to sign in to their accounts. Therefore, use extreme caution when you delete a configured tenant.
 >
 > When a configured tenant is deleted, the B2C tenant and records will continue to be maintained, but the Commerce system configuration of that tenant will be changed or removed. Users who try to sign up or sign in to the site will create a new account record in the default or newly associated B2C tenant that is configured for the channel of the site.
+
 ## Configure your channel with a B2C tenant
 
 1. Sign in to Commerce site builder for your environment as a system admin. To configure Azure AD B2C tenants, you must be a system admin for the Commerce environment.

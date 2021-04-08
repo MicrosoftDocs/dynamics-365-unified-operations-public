@@ -4,11 +4,9 @@
 title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/08/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -233,6 +231,10 @@ All new stored procedures, views or functions must be created in the **ext schem
 ## Deployment checks
 
 The deployment process determines if there are any modification to the database artifacts. If you have attempted to modify the CRT, AX, or DBO schema objects, or access them for any scenario directly in SQL, then deployment will fail.
+
+## Deployment timeout
+
+SQL server will time outs if the deployment script runs for more than 30 minutes. To avoid timeout and deployment failure, split the long running script into multiple smaller scripts, which run in less than 30 minutes.
 
 ## Extension scripts and deployment
 

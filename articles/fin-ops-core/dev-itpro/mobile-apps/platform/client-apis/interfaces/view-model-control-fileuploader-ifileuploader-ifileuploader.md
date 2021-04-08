@@ -4,11 +4,9 @@
 title: FileUploader type
 description: File uploader control type. A control for uploading files such as images.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

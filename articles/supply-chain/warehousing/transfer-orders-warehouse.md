@@ -4,11 +4,9 @@
 title: Set up warehouses for transfer orders
 description: This topic describes how you can set up warehouses for transfer orders.
 author: Mirzaab
-manager: tfehr
 ms.date: 01/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

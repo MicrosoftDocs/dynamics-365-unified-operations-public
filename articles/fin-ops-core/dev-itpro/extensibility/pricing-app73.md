@@ -1,18 +1,12 @@
 ---
 
-# required metadata
-
 title: Price and discount extensibility
 description: This topic describes how to extend pricing functionality.
 author: smithanataraj
-manager: AnnBe
 ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

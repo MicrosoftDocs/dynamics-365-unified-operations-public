@@ -4,11 +4,9 @@
 title: Enable Broadbean integration in Attract
 description: This topic explains how to configure Microsoft Dynamics 365 Talent - Attract to post jobs to external job boards such as Broadbean.
 author: andreabichsel
-manager: tfehr
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata

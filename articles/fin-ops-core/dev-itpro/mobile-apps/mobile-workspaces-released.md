@@ -4,11 +4,9 @@
 title: Available mobile workspaces
 description: This topic lists the mobile workspaces that are available for use.
 author: sericks007
-manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

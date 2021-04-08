@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ session runtime functions
 description: This topic describes the session run-time functions.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 31421
-ms.assetid: a83ec18b-cc9e-40e3-ab06-87ff1c972a6a
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ session runtime functions

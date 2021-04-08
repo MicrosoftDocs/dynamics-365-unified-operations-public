@@ -4,11 +4,9 @@
 title: Take more than the calculated discount for a vendor payment
 description: This article walks you through a scenario where a cash discount is taken for an amount that is more than the discount that was originally available on the invoice. This scenario might occur if an organization comes to an agreement with the vendor to pay a smaller amount on the invoice. 
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,7 +41,7 @@ Vendor 3051 gives Fabrikam a cash discount of 4 percent if an invoice is paid in
 
 Discount information appears at the bottom of the **Settle transactions** page.
 
-|                              |           |
+| Field                        | Value     |
 |------------------------------|-----------|
 | Cash discount date           | 7/12/2015 |
 | Cash discount amount         | 60.00     |

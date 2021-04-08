@@ -4,11 +4,9 @@
 title: Confirm Asset leasing payment schedules in a batch
 description: This topic explains how to confirm multiple payment schedules in a batch. 
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Product data entities 
 description: This topic provides information about the different entities that can be used to import and export product data. 
 author: cvocph
-manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

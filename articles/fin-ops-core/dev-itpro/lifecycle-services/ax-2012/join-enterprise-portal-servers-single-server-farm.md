@@ -4,11 +4,9 @@
 title: Join Enterprise Portal servers into a single server farm
 description: This article explains how to join Enterprise Portal servers (for Microsoft Dynamics AX 2012) into a single server farm. 
 author: aneesmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata

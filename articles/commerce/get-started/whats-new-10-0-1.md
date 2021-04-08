@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Retail version 10.0.1
 description: This topic describes features that are in preview in Dynamics 365 Retail. 
 author: josaw1
-manager: AnnBe
 ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata

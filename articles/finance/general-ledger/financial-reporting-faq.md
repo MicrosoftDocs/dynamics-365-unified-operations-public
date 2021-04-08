@@ -4,11 +4,9 @@
 title: Financial reporting FAQ 
 description: This topic lists questions related to financial reporting that other users have had. 
 author: jiwo
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

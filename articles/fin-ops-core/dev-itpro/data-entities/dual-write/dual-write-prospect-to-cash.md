@@ -4,11 +4,9 @@
 title: Prospect-to-cash in dual-write
 description: This topic provides information about prospect-to-cash in dual-write.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/07/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

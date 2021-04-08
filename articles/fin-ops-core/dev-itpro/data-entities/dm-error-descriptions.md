@@ -4,11 +4,9 @@
 title: Data management error descriptions
 description: This topic describes the error messages that you might encounter in data management.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

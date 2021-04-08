@@ -4,11 +4,9 @@
 title: Develop and deploy custom models to on-premises environments
 description: This topic describes the process of developing customizations and extensions, and deploying them to an on-premises environment. 
 author: kfend
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Supplemental Terms of Use for Microsoft Dynamics 365 Previews
 description: Supplemental Terms of Use for Microsoft Dynamics 365 Previews.
 author: ShellyBakke
-manager: AnnBe
 ms.date: 09/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

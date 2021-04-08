@@ -4,11 +4,9 @@
 title: Setup vendor master and purchase order to be target of consolidated invoice
 description: In Japan, the vendors usually use consolidated invoice for transactions. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

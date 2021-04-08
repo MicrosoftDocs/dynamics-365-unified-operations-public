@@ -2,11 +2,9 @@
 title: Delivering ISV solutions using One Version
 description: The topic provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions.
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

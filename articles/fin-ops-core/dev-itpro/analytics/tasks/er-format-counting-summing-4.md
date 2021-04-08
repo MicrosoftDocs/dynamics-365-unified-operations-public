@@ -4,11 +4,9 @@
 title: ER Configure format to do counting and summing (Part 4 - Run format)
 description: This topic describes how to configure an Electronic reporting format to do counting and summing based on data of the already generated text output. (Part 4)
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

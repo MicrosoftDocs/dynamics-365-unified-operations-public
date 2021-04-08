@@ -3,12 +3,10 @@
 
 title: Generate financial reports
 description: This topic provides information about generating a financial report.
-author: aprilolson
-manager: AnnBe
-ms.date: 09/26/2018
+author: jinniew
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic provides information about generating a financial report.
 
-To generate a report, open the report definition and then click the Generate button in the toolbar. The Report Queue Status window will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
+To generate a report, open the report definition and then select the **Generate** button on the toolbar. The **Report Queue Status** page will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
 
 The following options are available for generating reports:
 
@@ -46,16 +44,26 @@ When you generate a report, the options that you have specified on the Report de
 
 ## Generate a financial report
 
-To generate a financal report go to **General ledger** \> **Inquiries and reports** \> **Financial reports**.
+To generate a financial report, go to **General ledger** \> **Inquiries and reports** \> **Financial reports**.
 
-- Select a report to generate and click **Generate**.
-- Fill in the **Report date** field and click **OK**.
+- Select a report to generate and select **Generate**.
+- Fill in the **Report date** field and select **OK**.
 
 After the report has been generated, the report will be available to view in the **Reports** section.
 
 You can select to **View** or **Delete** the report.
 
-To generate a report using **Report designer**, open the report definition and then click the Generate button in the toolbar. The Report Queue Status window will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
+To generate a report using **Report designer**, open the report definition and then select the **Generate** button on the toolbar. The **Report Queue Status** page will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
+
+## Report groups
+
+Report groups are an efficient way to generate several reports at the same time. For example, suppose you know that at month-end your users generate eight reports every month. Create a Report group and rather than selecting **Generate** for each of the eight reports in the group, you can select **Generate** for the report group and the eight reports will be generated in one step. When the reports in the selected report group have been generated, you can go to **Financial reports** (**General Ledger > Inquires and reports > Financial reports**) to view the individual reports. Complete the following steps to set up a report group.
+
+1. In Report designer, select **Report groups**. 
+2. Select the existing report definitions to include in your report group. 
+3. Select override company, detail, and date settings from each of the reports that will be included in the group.
+   We recommend setting the **Company**, **Period**, **Year**, and **Detail level** for each report. 
+4. Save the report group.
 
 ## Schedule report generation
 Many companies have a core set of reports that are run at scheduled intervals to align with their business processes. You can schedule a report to be generated regularly, such as daily, weekly, monthly, or annually. This can be a single report or a group of reports that includes multiple companies. You must enter your credentials for each of the companies that are specified, such as those in a reporting tree definition. If the credentials are not valid, the report will display only the information that you have permission to access, such as the company that you are logged on to at the time. Output information is read first from the report group, and then from the individual reports.
@@ -67,36 +75,36 @@ As report schedules are created and saved, they are displayed in the navigation 
 
 ### Create a report schedule
 
-1. In Report Designer, on the File menu, click New, and then select Report schedule. The New Report Schedule dialog box opens.
-2. Under Settings, select an individual report or a report group to schedule. Only reports or report groups for the company or building block selection that you are currently logged on to are available.
-3. Select the Active check box to turn on the report schedule. Only the creator of the report or an administrator can activate or inactivate a report schedule.
-4. Click the Permissions button to enter company credentials. By default, your logon information is used for the company that you are logged on to. If other companies are included, such as in reporting tree definitions, select Use separate credentials, and then enter the credentials for any other company that is included in the report schedule. You can select Windows Authentication or type a user name and password for each company. Select the Save credentials check box to save the credentials for these companies, and then click OK to close the dialog box.
-5. Under Frequency, in the Start recurrence field, select the date when the schedule is to start. By default, the current system date of the client computer is selected.
-6. In the Run report at field, select the time when the report should run. If you enter a time that is before the current system time, the report runs on the next scheduled date.
-7. In the Recurrence pattern area, specify how often the report is run. By default, Daily is selected with an Interval (days) value of 1. Other options include Weekly, Monthly, and Yearly.
+1. In Report Designer, on the **File** menu, select **New**, and then select **Report schedule**. The **New Report Schedule** dialog box opens.
+2. Under **Settings**, select an individual report or a report group to schedule. Only reports or report groups for the company or building block selection that you are currently logged on to are available.
+3. Select the **Active** check box to turn on the report schedule. Only the creator of the report or an administrator can activate or inactivate a report schedule.
+4. Select the **Permissions** button to enter company credentials. By default, your logon information is used for the company that you are logged on to. If other companies are included, such as in reporting tree definitions, select **Use separate credentials**, and then enter the credentials for any other company that is included in the report schedule. You can select **Windows Authentication** or type a user name and password for each company. Select the **Save credentials** check box to save the credentials for these companies, and then select **OK** to close the dialog box.
+5. Under **Frequency**, in the **Start recurrence** field, select the date when the schedule is to start. By default, the current system date of the client computer is selected.
+6. In the **Run report at** field, select the time when the report should run. If you enter a time that is before the current system time, the report runs on the next scheduled date.
+7. In the **Recurrence pattern** area, specify how often the report is run. By default, **Daily** is selected with an Interval (days) value of 1. Other options include Weekly, Monthly, and Yearly.
 8. In the Range of recurrence area, select when the report should stop being generated.
 
-    - No end date – The report schedule runs indefinitely.
-    - Set number of occurrences – The report schedule runs for the specified number of times, and then is inactivated.
-    - End by – The report schedule ends on the specified date.
+    - **No end date** – The report schedule runs indefinitely.
+    - **Set number of occurrences** – The report schedule runs for the specified number of times, and then is inactivated.
+    - **End by** – The report schedule ends on the specified date.
 
-9. Click Save in the toolbar. In the Save As dialog box, enter a unique name and description for the report schedule.
+9. Select **Save**. In the **Save As** dialog box, enter a unique name and description for the report schedule.
 
 To copy a report schedule, you must have the role of designer or administrator. Even if an administrator modifies the report schedule, the report maintains the credentials of the user who created the report.
 
 ### Copy a report schedule
 
-1. In Report Designer, click Report Schedules in the navigation pane, and open a report schedule to copy.
-2. On the File menu, click Save As, and then enter a new name and description for the schedule in the Save As dialog box. Click OK, and the new schedule is displayed in the navigation pane.
-3. In the new schedule, modify the fields and information as needed, and then click Save on the toolbar, or click Save on the File menu.
+1. In Report Designer, select **Report Schedules** in the navigation pane, and open a report schedule to copy.
+2. On the **File** menu, select **Save As**, and then enter a new name and description for the schedule in the **Save As** dialog box. Select **OK**, and the new schedule is displayed in the navigation pane.
+3. In the new schedule, modify the fields and information as needed, and then select **Save** on the toolbar, or select **Save** on the **File** menu.
 
 To delete a report schedule, you must be the owner of the report schedule or have a role of administrator.
 
 ### Delete a report schedule
 
-1. In Report Designer, click Report Schedules in the navigation pane.
-2. Select the report schedule to delete, and then click Delete or press the Delete key.
-3. In the deletion verification dialog box, click Yes to permanently delete the report schedule. If you do not have permission to delete the schedule, a message is displayed and the report is not deleted.
+1. In Report Designer, select **Report Schedules** in the navigation pane.
+2. Select the report schedule to delete, and then select **Delete** or press the **Delete** key.
+3. In the deletion verification dialog box, select **Yes** to permanently delete the report schedule. If you do not have permission to delete the schedule, a message is displayed and the report is not deleted.
 
 ### Credentials and report schedules
 
@@ -108,10 +116,10 @@ For example, a user logs on to Company A using a logon and password. The user cr
 - A report in a report group has been modified.
 - A new report for an additional company has been added to a report group.
 
-To continue, click the Permissions button in the Report Scheduling dialog box, and then enter the appropriate credentials.
+To continue, select the **Permissions** button in the **Report Scheduling** dialog box, and then enter the appropriate credentials.
 
 ## Missing account analysis feature
-You can search for financial accounts and dimensions that might be missing across all row definitions, reporting tree definitions, and report definitions in a building block group. This is useful when you create or update several account or building blocks during a short time period, and you want to verify that all new information is included in your reports.
+You can search for financial accounts and dimensions that might be missing across all row definitions, reporting tree definitions, and report definitions in a building block group. This is useful when you create or update several accounts or building blocks during a short time period, and you want to verify that all new information is included in your reports.
 
 Missing accounts are determined by using the lowest and highest values from the row definition or reporting tree definition, and then displays a list of accounts that are not in the row definition or reporting tree definition, but that are in the financial data. If a missing account is greater than or less than the values in the row definition, that account is not included in the list of missing accounts.
 
@@ -125,24 +133,24 @@ Reports that have ranges of values are less likely to have missing accounts. Whe
 
 ### Run missing account analysis
 
-1. In Report Designer, click Tools, and then click Missing Account Analysis.
-2. In the Company filter field, select a company to filter results on, or select All (no filter) to display results from all available companies.
-3. In the Dimension filter field, select a dimension to filter results on, or select All (no filter) to view all dimension information for all available dimensions.
-4. In the Group by field, select an option for sorting the results. You can sort results according to the building block that is affected, or you can sort results by dimension and value sets.
+1. In Report Designer, select **Tools**, and then select **Missing Account Analysis**.
+2. In the **Company filter** field, select a company to filter results on, or select **All (no filter)** to display results from all available companies.
+3. In the **Dimension filter** field, select a dimension to filter results on, or select **All (no filter)** to view all dimension information for all available dimensions.
+4. In the **Group by** field, select an option for sorting the results. You can sort results according to the building block that is affected, or you can sort results by dimension and value sets.
 5. Review the displayed results. When you select an item in the upper pane, the lower pane displays additional information about the exception. This includes related dimensions, values, and reports.
-6. To open the affected item, click the associated icon that is displayed in the list pane, or right-click the item and select Open. To select multiple items, hold down the Ctrl key while you select the items in the lower pane.
-7. If any values, building blocks, or reports are returned that should not be included in the analysis, right-click the item and select Exclude, or select the Exclude check box next to the item to remove the item from the list. Excluded items are not included when the list is refreshed. To select multiple items, hold down the Ctrl key while you select the items in the lower pane. To view all items, including any results that you previously selected to exclude from the analysis, select the Show excluded building blocks and values check box, and then click Refresh.
-8. Click Refresh to refresh exceptions that you have addressed. Click Yes to perform a full refresh of all of the results, or click No to perform a partial refresh of addressed items.
+6. To open the affected item, select the associated icon that is displayed in the list pane, or right-click the item and select **Open**. To select multiple items, hold down the **Ctrl** key while you select the items in the lower pane.
+7. If any values, building blocks, or reports are returned that should not be included in the analysis, right-click the item and select **Exclude**, or select the **Exclude** check box next to the item to remove the item from the list. Excluded items are not included when the list is refreshed. To select multiple items, hold down the **Ctrl** key while you select the items in the lower pane. To view all items, including any results that you previously selected to exclude from the analysis, select the **Show excluded building blocks and values** check box, and then select **Refresh**.
+8. Select **Refresh** to refresh exceptions that you have addressed. Select **Yes** to perform a full refresh of all of the results, or select **No** to perform a partial refresh of addressed items.
 
     > [!NOTE]
-    > The form is automatically refreshed when it opens, unless the form has been opened in the last 15 minutes.
+    > The form is automatically refreshed when it opens unless the form has been opened in the last 15 minutes.
 
-9. When the issues are resolved, click OK to close the dialog box.
+9. When the issues are resolved, select **OK** to close the dialog box.
 
 ## Keyboard shortcuts for missing account analysis
 When you run a missing account analysis, the following keyboard shortcuts are available.
 
-| To do this                           | Use this keyboard shortcut |
+| To do this                           | Press |
 |--------------------------------------|----------------------------|
 | Filter by company                    | Alt+C                      |
 | Filter by dimension                  | Alt+D                      |

@@ -4,11 +4,9 @@
 title: Create calendars and generate working times
 description: Calendars describe the capacity and working times of operations resources. This article explains how to define a work calendar based on a working time template.  
 author: andreabichsel
-manager: tfehr 
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

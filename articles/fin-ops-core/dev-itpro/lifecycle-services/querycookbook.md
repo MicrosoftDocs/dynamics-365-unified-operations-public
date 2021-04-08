@@ -4,11 +4,9 @@
 title: Query cookbook 
 description: This topic describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues. 
 author: meeramahabala
-manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

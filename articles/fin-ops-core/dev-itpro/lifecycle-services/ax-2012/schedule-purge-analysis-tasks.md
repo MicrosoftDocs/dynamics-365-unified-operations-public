@@ -4,11 +4,9 @@
 title: Schedule Intelligent Data Management Framework purge and analysis tasks
 description: This topic describes the options on the Microsoft Dynamics AX Intelligent Data Management Framework(IDMF) Schedule menu, and how to use them.
 author: kfend
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata

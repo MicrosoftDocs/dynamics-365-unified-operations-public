@@ -4,11 +4,9 @@
 title: Upgrade from AX 2012 - Post-upgrade tasks
 description: This topic describes the tasks that you might have to perform after you complete a code and data upgrade from Microsoft Dynamics AX 2012.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

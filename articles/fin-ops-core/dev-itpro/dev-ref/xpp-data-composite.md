@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ composite data types
 description: This topic describes composite data types in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150183
-ms.assetid: 0ff4e759-851d-4b53-aa67-6f03eee53f02
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ composite data types

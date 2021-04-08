@@ -4,11 +4,9 @@
 title: Hire existing employees through recruitment
 description: Sometimes open positions can be filled by candidates who are already employees in your organization. 
 author: andreabichsel
-manager: AnnBe 
 ms.date: 02/10/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

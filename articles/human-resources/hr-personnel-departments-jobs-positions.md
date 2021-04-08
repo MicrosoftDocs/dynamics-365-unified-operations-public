@@ -4,11 +4,9 @@
 title: Organize your workforce by using departments, jobs, and positions
 description: Departments, jobs, and positions are organizational elements that are maintained within Human resources. This article describes conceptual information about these elements. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

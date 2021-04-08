@@ -4,11 +4,9 @@
 title: Create configuration rules
 description: This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

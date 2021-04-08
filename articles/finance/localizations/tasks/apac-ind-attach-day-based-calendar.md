@@ -4,11 +4,9 @@
 title: Attach a day-based calendar to a fixed asset book (India)
 description: This procedure walks you through attaching a day-based calendar to a fixed asset book. 
 author: AdamTrukawka
-manager: AnnBe 
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

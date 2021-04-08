@@ -4,11 +4,9 @@
 title: Define coverage rules for items
 description: The demo data company used to create this procedure is USMF. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

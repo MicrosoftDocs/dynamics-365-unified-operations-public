@@ -4,16 +4,14 @@
 title: Enable change management on existing products
 description: This topic explains how you can enable change management for existing products. It also describes cases where your ability to enable change management is limited.
 author: t-benebo
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
+# ms.search.form: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -28,7 +26,7 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Enable change management on existing products
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how you can enable change management for existing products. It also describes cases where your ability to enable change management is limited.
 

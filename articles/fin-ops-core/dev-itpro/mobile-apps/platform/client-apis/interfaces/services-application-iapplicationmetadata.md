@@ -4,11 +4,9 @@
 title: ApplicationMetadata type
 description: Represents the declarative metadata of an application
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

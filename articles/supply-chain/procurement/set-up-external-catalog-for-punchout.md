@@ -3,12 +3,10 @@
 
 title: Set up an external catalog for PunchOut e-procurement
 description: This topic describes the use of an  external catalog or PunchOut catalog to collect quote information from a vendor and add it to a requisition.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

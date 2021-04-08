@@ -4,11 +4,9 @@
 title: Priority-based throttling
 description: This topic provides information about priority-based throttling for Odata and custom service-based integrations.
 author: hasaid
-manager: AnnBe
 ms.date: 09/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

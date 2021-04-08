@@ -3,11 +3,9 @@
 title: Sales books, purchase books, and invoice-factures journals  
 description: This topic provides information about sales books, purchase books, and invoice-factures journals for Russia.
 author: anasyash
-manager: AnnBe
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Extending decimal point precision for selected data types
 description: This topic describes how to extend decimal point precision for selected data types.
 author: LarsBlaaberg
-manager: 
 ms.date: 09/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Manage third-party models and runtime packages by using source control
 description: This topic outlines a recommended strategy for managing, distributing, and deploying third-party solutions.
 author: jorisdg
-manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Manage third-party models and runtime packages by using source control

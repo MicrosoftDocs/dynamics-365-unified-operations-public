@@ -4,11 +4,9 @@
 title: Client disconnects
 description: This article explains what to do if the customer is disconnected from his or her environment and doesn't know why.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

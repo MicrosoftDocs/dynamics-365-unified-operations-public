@@ -4,11 +4,9 @@
 title: Posting definitions in the public sector
 description: This article provides examples of public sector posting definitions that you can use to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

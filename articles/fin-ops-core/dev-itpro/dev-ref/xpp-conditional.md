@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ conditional statements
 description: This topic describes conditional statements in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/17/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150213
-ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ conditional statements

@@ -4,11 +4,9 @@
 title: Schedule load utilization
 description: This topic explains how to set up and schedule the load for a warehouse.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Design configurations to generate reports in Office format that have embedded images
 description: This topic describes about how to design configurations that generate electronic documents in Excel and Word formats that contain embedded images. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 01/23/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Register the receipt of returned items
 description: You can register the receipt of returned items using the Arrival overview form or the Registration form.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

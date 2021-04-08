@@ -4,11 +4,9 @@
 title: Malaysia Goods and Services Tax
 description: This topic provides information about how to set up Goods and Services Tax (GST) for a Malaysian company.
 author: mrolecki
-manager: AnnBe
 ms.date: 05/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

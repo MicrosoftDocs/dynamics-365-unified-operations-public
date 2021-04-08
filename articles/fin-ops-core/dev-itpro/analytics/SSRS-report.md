@@ -4,11 +4,9 @@
 title: SQL Server Reporting Services (SSRS) reports that are available
 description: This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available.
 author: sericks007
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

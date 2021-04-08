@@ -4,11 +4,9 @@
 title: Customer payments for a partial amount
 description: Sometimes, customers make a payment that is less than the amount of an invoice. This article describes the various options for handling this situation. The options that are available to you depend on your business requirements and configuration.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

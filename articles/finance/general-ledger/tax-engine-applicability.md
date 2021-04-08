@@ -4,11 +4,9 @@
 title: Tax engine applicability
 description: This topic provides information about Tax engine applicability.
 author: yijialuan
-manager: AnnBe
 ms.date: 10/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

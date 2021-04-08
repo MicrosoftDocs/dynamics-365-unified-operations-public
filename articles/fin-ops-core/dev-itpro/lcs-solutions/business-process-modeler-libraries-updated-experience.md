@@ -4,11 +4,9 @@
 title: Business process modeler library (updated BPM experience)
 description: This topic explains how to create and work with the updated Business process modeler (BPM) libraries experience.
 author: kfend
-manager: AnnBe
 ms.date: 06/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

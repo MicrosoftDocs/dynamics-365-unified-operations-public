@@ -4,11 +4,9 @@
 title: Category pricing rules to create trade agreements
 description: This procedure demonstrates how to create sales price trade agreements using a category pricing rule. 
 author: scott-tucker
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

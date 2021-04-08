@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Build automation that uses Microsoft-hosted agents and Azure Pipelines
 description: The topic explains how you can automate the process of building X++ on any agents in Microsoft Azure DevOps.
 author: jorisdg
-manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Build automation that uses Microsoft-hosted agents and Azure Pipelines
@@ -72,16 +57,30 @@ To identify which packages should be used during the build, and where they can b
 
 The nuget.config file provides NuGet with the source feed where the packages can be found. The packages.config file specifies the packages and their versions. To build against a newer version, you just have to update the versions in the packages.config file. For more information, including a sample nuget.config file, see [Restore Package Management NuGet packages in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/packages/nuget-restore).
 
-The following example shows a packages.config file for the three main packages that are required for a typical X++ build.
+The following example shows a **packages.config** file for the three main packages that are required for a typical X++ build. You must substitute the listed version with the actual versions of your NuGet packages.
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<packages>
-    <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5644.16778" targetFramework="net40" />
-    <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.464.13" targetFramework="net40" />
-    <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5644.16778" targetFramework="net40" />
-</packages>
-```
++ For version 10.0.17 or earlier, use the following packages.config layout:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <packages>
+        <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5644.16778" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.464.13" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5644.16778" targetFramework="net40" />
+    </packages>
+    ```
+
++ For version 10.0.18 or later, use the following packages.config layout:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <packages>
+        <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5968.16973" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.793.16" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp" version="10.0.793.16" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5968.16973" targetFramework="net40" />
+    </packages>
+    ```
 
 ## Creating the pipeline
 
@@ -115,13 +114,25 @@ To build X++ by using MSBuild, you must supply several arguments. In the pipelin
 
 The following example of MSBuild arguments assumes that the NuGet packages are installed in **$(Pipeline.Workspace)\\NuGets**, the X++ source code is in **$(Build.SourcesDirectory)\\Metadata**, and the output of the compiler should go in **$(Build.BinariesDirectory)**.
 
-```plaintext
-/p:BuildTasksDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage\DevAlm"
-/p:MetadataDirectory="$(Build.SourcesDirectory)\Metadata"
-/p:FrameworkDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage"
-/p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
-/p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
-```
++ For version 10.0.17 or earlier, use the following arguments:
+
+    ```dos
+    /p:BuildTasksDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage\DevAlm"
+    /p:MetadataDirectory="$(Build.SourcesDirectory)\Metadata"
+    /p:FrameworkDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage"
+    /p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
+    /p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
+    ```
+    
++ For version 10.0.18 or newer, use the following arguments:
+
+    ```dos
+    /p:BuildTasksDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage\DevAlm"
+    /p:MetadataDirectory="$(Build.SourcesDirectory)\Metadata"
+    /p:FrameworkDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage"
+    /p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
+    /p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
+    ```
 
 In the pipeline samples, variables for NuGet package names and paths are used to simplify these commands.
 

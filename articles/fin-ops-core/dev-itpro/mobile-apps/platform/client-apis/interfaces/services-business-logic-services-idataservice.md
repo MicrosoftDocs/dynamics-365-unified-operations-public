@@ -4,11 +4,9 @@
 title: DataService type
 description: Provides ability access data under the application workspace.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

@@ -1,19 +1,13 @@
 ---
 
-# required metadata
-
 title: Add relations to tables through extension
 description: This topic explains how to add a relation to a table.
 author: ivanv-microsoft
-manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

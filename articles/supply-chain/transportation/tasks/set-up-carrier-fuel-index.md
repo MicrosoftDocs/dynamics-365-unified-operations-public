@@ -4,11 +4,9 @@
 title: Set up a carrier fuel index
 description: This guide shows how to create a fuel index region, a fuel index and a carrier fuel index. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

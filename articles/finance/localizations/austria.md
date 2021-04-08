@@ -4,11 +4,9 @@
 title: Austria overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Austria.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,7 +60,7 @@ For general information about the setup of VAT statements, see [VAT reporting fo
 
 | Report                     | How to get to the report | Additional information                 |
 |----------------------------|--------------------------|----------------------------------------|
-|Cross-border services report|**General ledger** > **Reports** > **External** > **Cross-border services**|This report prints a summary of the incoming and outgoing cross-border services, countries that are the providers or recipients of the cross-border services, and net amounts paid for the services. This report is typically used by accounting managers, accountants, and sales managers to inquire into the status of sales transactions. |
+|Cross-border services report|**General ledger** > **Reports** > **External** > **Cross-border services**|This report prints a summary of the incoming and outgoing cross-border services, countries that are the providers or recipients of the cross-border services, and net amounts paid for the services. This report is typically used by accounting managers, accountants, and sales managers to inquire into the status of sales transactions. For more information, see [Cross-border services report](emea-aut-cross-border-services-report.md).|
 
 
 ## Additional resources

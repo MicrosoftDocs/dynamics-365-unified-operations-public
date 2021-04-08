@@ -4,11 +4,9 @@
 title: Create archive objects for the Intelligent Data Management Framework
 description: This topic describes how to use archive objects.
 author: kfend
-manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata

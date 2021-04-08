@@ -4,11 +4,9 @@
 title: Ship sales orders without warehousing
 description: This topic explains how to update a sales order when products are shipped to the customer. 
 author: omulvad
-manager: tfehr 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

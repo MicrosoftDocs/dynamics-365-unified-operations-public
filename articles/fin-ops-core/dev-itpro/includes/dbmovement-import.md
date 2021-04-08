@@ -5,6 +5,8 @@ To import a database that is prepared from a developer environment to a standard
 3. Note the warnings. Review the list of data elements that are cleaned up from the backup file.
 4. The import operation will begin immediately.
 
+> [!NOTE]
+> All users except the Admin user and other internal service user accounts will be unavailable after import. Therefore, the Admin user can delete or obfuscate data before other users are allowed back into the system.
 
 To import a database to a developer environment after you've downloaded a database backup (.bacpac) file, you can begin the manual import operation on your Tier 1 environment. When you import the database, we recommend that you follow these guidelines:
 

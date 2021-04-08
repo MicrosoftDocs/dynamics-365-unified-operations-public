@@ -4,11 +4,9 @@
 title: Site selector module
 description: This topic covers the site selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-commerce
 ms.technology:
 
 # optional metadata

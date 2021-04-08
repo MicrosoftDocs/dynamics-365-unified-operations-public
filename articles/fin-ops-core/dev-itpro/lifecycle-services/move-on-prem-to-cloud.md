@@ -4,11 +4,9 @@
 title: Move LCS implementation projects from on-premises to the cloud
 description: This topic explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
 author: MartinWalkerDynSA
-manager: AnnBe
 ms.date: 02/02/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

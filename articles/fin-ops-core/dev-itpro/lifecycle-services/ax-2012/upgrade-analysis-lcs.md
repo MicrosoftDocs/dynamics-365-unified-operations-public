@@ -4,11 +4,9 @@
 title: Upgrade analysis in Lifecycle Services (LCS)
 description: This topic explains how to use Upgrade analysis in Lifecycle Services (LCS).
 author: RobinARH
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
-ms.service: 
 ms.technology:
 
 # optional metadata

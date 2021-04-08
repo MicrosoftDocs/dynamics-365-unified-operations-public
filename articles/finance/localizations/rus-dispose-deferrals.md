@@ -3,11 +3,9 @@
 title: Dispose of deferrals (Russia)
 description: This topic explains how to dispose of deferrals.
 author: anasyash
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

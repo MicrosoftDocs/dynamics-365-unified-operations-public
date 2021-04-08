@@ -4,11 +4,9 @@
 title: Create a data integrator project (preview)
 description: This topic explains how to create a data integrator project.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -65,6 +63,7 @@ This topic explains how to create a data integrator project.
     1. Create data integration projects for the following templates by using the connection set that you just created:
 
         - Customer payment insights results (CDS to Fin and Ops)
+            - If you are using version 10.0.17 or later, you need to use the template named, Customer payment insights result (CDS to Fin and Ops 10.0.17+).
         - Cash flow time series results (CDS to Fin and Ops)
         - Budget time series results (CDS to Fin and Ops)
 

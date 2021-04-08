@@ -4,11 +4,9 @@
 title: Microsoft Power Platform integration with Finance and Operations
 description: This topic provides an overview for Power Platform Integration via Lifecycle Services for Finance and Operations and Microsoft Dataverse.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 04/08/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

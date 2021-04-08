@@ -4,11 +4,9 @@
 title: Help system
 description: This topic provides an overview of the Help system for Finance and Operations apps.
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

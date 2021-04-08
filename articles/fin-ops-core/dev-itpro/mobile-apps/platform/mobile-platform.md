@@ -4,11 +4,9 @@
 title: Mobile platform 
 description: This topic describes the platform for the mobile phone app which enables rich offline and mobile interactions, and an easy-to-use designer experience.
 author: robinarh
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: SPED ECD
 description: This topic explains how to set up and generate SPED ECD text files.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata

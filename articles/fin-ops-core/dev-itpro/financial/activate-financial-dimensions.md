@@ -4,11 +4,9 @@
 title: Financial dimension activation
 description: This topic contains information about the activating financial dimension process.
 author: aprilolson
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

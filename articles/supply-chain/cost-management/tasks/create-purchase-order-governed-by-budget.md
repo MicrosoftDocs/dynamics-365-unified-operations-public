@@ -4,11 +4,9 @@
 title: Create a purchase order governed by budget
 description: Use this procedure to create a purchase order that is checked for available budget. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 06/20/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

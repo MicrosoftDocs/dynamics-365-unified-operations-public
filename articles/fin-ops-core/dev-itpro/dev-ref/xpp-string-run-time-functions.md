@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ string runtime functions
 description: This topic describes the string run-time functions.
 author: RobinARH
-manager: AnnBe
 ms.date: 08/15/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 31401
-ms.assetid: f8d76054-c863-40de-b32a-73dfaa77aeff
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ string runtime functions
@@ -289,7 +273,7 @@ int strFind(str _text, str _characters, int _position, int _number)
 
 ### Return value
 
-The value of the position of the first occurrence of one of the specified characters.
+The value of the position of the first occurrence of one of the specified characters, or 0 when none found.
 
 ### Remarks
 
@@ -540,7 +524,7 @@ int strNFind(str _text, str _characters, int _position, int _number)
 
 ### Return value
 
-The position of the first occurrence of a character that isn't specified by the *\_characters* parameter.
+The position of the first occurrence of a character that isn't specified by the *\_characters* parameter, or 0 when none found.
 
 ### Remarks
 

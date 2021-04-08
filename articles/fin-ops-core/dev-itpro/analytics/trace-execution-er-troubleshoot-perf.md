@@ -4,11 +4,9 @@
 title: Trace the execution of ER formats to troubleshoot performance issues
 description: This topic provides information about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

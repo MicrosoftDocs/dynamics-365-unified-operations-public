@@ -4,11 +4,9 @@
 title: Get the Dynamics 365 Talent - Onboard app
 description: This topic explains how to get the stand-alone version of the Microsoft Dynamics 365 Talent - Onboard app or the version that includes the Comprehensive Hiring Add-On.
 author: andreabichsel
-manager:
 ms.date: 05/02/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-talent
 ms.technology:
 
 # optional metadata

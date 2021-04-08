@@ -4,11 +4,9 @@
 title: Plan your chart of accounts
 description: This topics provides information that will help you plan the chart of accounts for your organization.
 author: aprilolson
-manager: AnnBe
 ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

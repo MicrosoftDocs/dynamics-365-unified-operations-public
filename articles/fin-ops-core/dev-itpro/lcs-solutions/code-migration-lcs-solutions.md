@@ -4,11 +4,9 @@
 title: Migrate code for Finance and Operations apps solutions
 description: This topic describes how to upgrade and analyze your code in Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
-manager: AnnBe
 ms.date: 06/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

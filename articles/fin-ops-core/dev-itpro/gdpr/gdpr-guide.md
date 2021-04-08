@@ -4,11 +4,9 @@
 title: General Data Protection Regulation overview
 description: This topic provides information about the user log functionality in Finance and Operations.
 author: ToddLefor
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

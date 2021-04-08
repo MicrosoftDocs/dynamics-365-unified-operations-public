@@ -4,11 +4,9 @@
 title: Rating profiles
 description: This topic describes how to set up data for rating profiles.
 author: Henrikan
-manager: 
 ms.date: 10/30/2020
 ms.topic: business-process 
 ms.prod: 
-ms.service: dynamics-ax-applications 
 ms.technology: 
  
 # optional metadata 

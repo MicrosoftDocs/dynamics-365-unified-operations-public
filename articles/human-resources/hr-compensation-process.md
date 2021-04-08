@@ -4,11 +4,9 @@
 title: Process compensation
 description: Compensation processing allows you to calculate new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

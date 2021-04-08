@@ -4,11 +4,9 @@
 title: Commerce runtime (CRT) extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server.
 author: mugunthanm
-manager: AnnBe
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -71,10 +69,27 @@ You can create new functionality or a new feature.
 
 You can completely override existing functionality or customize it according to your business flow. Here are some examples:
 
-+ You want to override the POS search functionality to search from an external system instead of searching in a local database or Commerce headquarters. Alternatively, you can do an override, call the standard functionality, and do some additional custom logic.
-+ Search for a customer in a local database or Commerce headquarters, search for the customer in an external system, and then merge or modify the results.
++ You want to override the search functionality to search from an external system instead of using the out-of-box search functionality.
 
-Avoid overriding the handler. You can implement most of the CRT extension scenarios by using pre-triggers or post-triggers. Overrides are required only when you want to completely replace the existing functionality.
+You should not override the handler, unless it’s necessary. Instead, implement the CRT extension scenarios by using pre-triggers or post-triggers. 
+
+### Executing the Next CRT handler - Chain of handlers
+
+With platform update version 10.0.19 and later, the CRT framework supports **ExecuteNextAsync** and **GetNextAsyncRequestHandler**. Use these methods to execute the base request and handler in the overridden extension code. The CRT framework also supports executing the same handler multiple times based on the order listed in the **CommerceRuntime.Ext.config** file.
+
+#### ExecuteNextAsync
+
+You can override the request and call the base request using the **ExecuteNextAsync** method. In the override, you can add custom logic, for example, to set extension properties. For example, override the **Customer** save request, call the base customer request first using **ExecuteNextAsync** and then add additional logic to save the customer extension properties.
+
+#### GetNextAsyncRequestHandler
+
+If you want to override the handler and call the base handler to execute the out-of-box logic and then modify the results of base handler with custom logic, then use the **GetNextAsyncRequestHandler**. 
+
+For example, you can search for a **Product** using the out-of-box Azure Search handler and add additional logic to modify the result based on inventory. You could include custom search results or filter the results.
+
+### NotHandledResponse
+
+If in the the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
 
 ### CRT data service and data service with entities
 
@@ -424,11 +439,91 @@ namespace Contoso
 
 ## Run the base handler in the extension
 
+### Executing the Next CRT handler - Chain of handlers
+
+#### ExecuteNextAsync
+
+You can override the request and call the base request using the **ExecuteNextAsync** method and add custom logic to set extension properties. For example, you can override the **Customer** save request, call the base customer request first using **ExecuteNextAsync**, and then add additional logic to save customer extension properties.
+
+```csharp
+/// <summary>
+/// Create or update customer data request handler.
+/// </summary>
+public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncRequestHandler<CreateOrUpdateCustomerDataRequest>
+{
+    /// <summary>
+    /// Executes the workflow to create or update a customer.
+    /// </summary>
+    /// <param name="request">The request.</param>
+    /// <returns>The response.</returns>
+    protected override async Task<Response> Process(CreateOrUpdateCustomerDataRequest request)
+    {
+        ThrowIf.Null(request, "request");
+
+        using (var databaseContext = new DatabaseContext(request.RequestContext))
+        using (var transactionScope = new TransactionScope())
+        {
+            // Execute original functionality to save the customer.
+            var response = await this.ExecuteNextAsync<SingleEntityDataServiceResponse<Customer>>(request).ConfigureAwait(false);
+
+            // Execute additional functionality to save the customer's extension properties.
+            if (!request.Customer.ExtensionProperties.IsNullOrEmpty())
+            {
+                // The stored procedure will determine which extension properties are saved to which tables.
+                ParameterSet parameters = new ParameterSet();
+                parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesExtTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
+                await databaseContext.ExecuteStoredProcedureNonQueryAsync("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters, resultSettings: null).ConfigureAwait(false);
+            }
+
+            transactionScope.Complete();
+
+            return response;
+        }
+    }
+}
+```
+
+#### GetNextAsyncRequestHandler
+
+If you want to override the handler and call the base handler to execute the OOB logic and then modify the results of base handler with custom logic, then use the **GetNextAsyncRequestHandler**. For example, you could search for a product using the out-of-box Azure Search handler and add additional logic to modify the result based on inventory, including custom search results or filter the results.
+
+```csharp
+
+protected override async Task<Response> Process(SaveSalesTransactionDataRequest request)
+{
+    ThrowIf.Null(request, "request");
+
+    // The extension should do nothing If fiscal registration is enabled and legacy extension were used to run registration process.
+    if (!string.IsNullOrEmpty(request.RequestContext.GetChannelConfiguration().FiscalRegistrationProcessId))
+    {
+        return new NotHandledResponse();
+    }
+
+    NullResponse response;
+
+    using (var databaseContext = new DatabaseContext(request.RequestContext))
+    using (var transactionScope = CreateReadCommittedTransactionScope())
+    {
+        // Execute original logic.
+        var requestHandler = request.RequestContext.Runtime.GetNextAsyncRequestHandler(request.GetType(), this);
+        response = await request.RequestContext.Runtime.ExecuteAsync<NullResponse>(request, request.RequestContext, requestHandler, false).ConfigureAwait(false);
+
+        // Extension logic.
+        if (request.RequestContext.GetChannelConfiguration().CountryRegionISOCode == CountryRegionISOCode.FR)
+        {
+            response = await SaveSalesTransactionExtAsync(request).ConfigureAwait(false);
+        }
+
+        transactionScope.Complete();
+    }
+
+    return response;
+}
+```
+
 ### NotHandledResponse
 
 If the overridden logic runs the base handler for some scenarios, execution of the base handler can be achieved by returning **new NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will use the extension that is requesting to run the base or out-of-band logic, and will run the out-of-band handler.
-
-**NotHandledResponse** can be used in scenarios where the extension runs the base handler logic. For example, if the overridden request runs the base handler logic, it can return **NotHandledResponse** for the base handler to run. Alternatively, if the extension runs custom logic and base logic, the extension code can return **NotHandledResponse** after it runs the custom logic.
 
 ```csharp
 private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizationCustomReceiptFieldServiceRequest request)

@@ -4,11 +4,9 @@
 title: Office integration tutorial
 description: In this tutorial, you will use and build Office integration experiences that involve Excel, Word, Document Management, and email. 
 author: jasongre
-manager: AnnBe
 ms.date: 04/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

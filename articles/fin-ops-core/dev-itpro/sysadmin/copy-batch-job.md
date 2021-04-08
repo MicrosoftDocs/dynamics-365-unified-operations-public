@@ -4,11 +4,9 @@
 title: Copy a batch job
 description: This topic provides information about copying a batch job and batch tasks.
 author: Peakerbl
-manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

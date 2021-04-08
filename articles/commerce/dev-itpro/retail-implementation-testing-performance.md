@@ -4,11 +4,9 @@
 title: Testing and performance issues
 description: This topic describes recommended practices for testing and performance for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 # optional metadata
 

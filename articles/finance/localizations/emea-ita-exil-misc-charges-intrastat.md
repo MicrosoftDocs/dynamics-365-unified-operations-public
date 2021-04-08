@@ -4,11 +4,9 @@
 title: Miscellaneous charges per kilogram in an Intrastat declaration
 description: This topic explains how to turn on, set up, and use the feature for miscellaneous charges per kilogram in an Intrastat declaration.
 author: ilkond
-manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

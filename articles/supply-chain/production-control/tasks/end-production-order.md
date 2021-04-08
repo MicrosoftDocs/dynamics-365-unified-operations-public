@@ -4,11 +4,9 @@
 title: End a production order
 description: This procedure shows how to end a production order.
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications
 ms.technology:  
 
 # optional metadata

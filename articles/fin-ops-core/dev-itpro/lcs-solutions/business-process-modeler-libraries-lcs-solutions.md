@@ -4,11 +4,9 @@
 title: Set up Business process modeler libraries 
 description: This topic explains how to create and work with Business process modeler (BPM) libraries.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

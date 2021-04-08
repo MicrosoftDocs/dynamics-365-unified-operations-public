@@ -4,11 +4,9 @@
 title: Confirm and transfer
 description: This topic explains how to use the Confirm and transfer feature, which lets users ship loads out of the warehouse before they complete all the work that is associated with those loads.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

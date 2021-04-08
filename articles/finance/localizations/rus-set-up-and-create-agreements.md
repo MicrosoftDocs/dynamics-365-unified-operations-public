@@ -3,11 +3,9 @@
 title: Set up and create agreements 
 description: This topic provides information about creating purchase and sales agreements.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 02/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
