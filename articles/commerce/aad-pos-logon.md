@@ -71,7 +71,7 @@ You must run the **1060 (Staff)** job in **Retail and Commerce > Retail and Comm
 > [!NOTE]
 > As a best practice, after worker information such as password, POS permission, associated Azure AD account, or employee address book is updated in Commerce headquarters, it is highly recommended to run the **1060 (Staff)** job to synchronize the latest worker information to the channel. This way the POS client can fetch the correct data for user authentication and authorization checks.
 
-## POS lock and sign out with Azure AD authentication
+## POS lock and sign-out with Azure AD authentication
 
 When POS is configured to use Azure AD authentication method:
 
