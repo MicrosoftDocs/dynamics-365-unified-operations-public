@@ -47,7 +47,7 @@ Most organizations choose this option because it provides version and change man
 
 ## Which fields are copied to the released item template?
 
-From the **Released product details** page, the following fields are copied to the released item template: <!-- KFM: What is a "released item template"? This is a new term. What process are we describing here? -->
+From the **Released product details** page, the following fields are copied to the released item template: <!-- KFM: Our docs never really explain what a "template" is. What process are we describing here? -->
 
 | FastTab | Fields copied on creation by the engineering company | Fields copied on release to an operational company |
 |---|---|---|
