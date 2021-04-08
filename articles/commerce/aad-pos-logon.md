@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable Azure Active Directory authentication for POS sign-in
-description: This topic explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale (POS).
+description: This topic explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale.
 author: boycezhu
 manager: annbe
 ms.date: 04/23/2021
@@ -32,13 +32,13 @@ ms.dyn365.ops.version: 10.0.10
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale (POS).
+This topic explains how to configure Azure Active Directory (Azure AD) as the authentication method in Microsoft Dynamics 365 Commerce point of sale (POS).
 
-Retailers who use Dynamics 365 Commerce along with other Microsoft cloud services such as Microsoft Azure, Microsoft 365, and Microsoft Teams would typically want to use Azure Active Directory (Azure AD) for a centralized management of user credentials, as well as for a secure and seamless sign-in experience across applications. This document explains how to configure Azure AD as authentication method in Commerce point of sale (POS).
+Retailers who use Dynamics 365 Commerce along with other Microsoft cloud services such as Microsoft Azure, Microsoft 365, and Microsoft Teams typically want to use Azure Active Directory (Azure AD) for centralized management of user credentials for a secure and seamless sign-in experience across applications. To do this you must first configure Azure AD as the authentication method in Commerce point of sale (POS).
 
 ## Configure POS authentication method
 
-You can configure POS authentication method in Commerce headquarters **Functionality profile**.
+To configure the POS authentication method in Commerce headquarters, follow these steps.
 	
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, and select a functionality profile to change.
 1. In the **POS staff logon** section of the **Functions** FastTab, select a desired authentication method option from the **Logon authentication method** setting drop-down list.
@@ -47,24 +47,26 @@ You can configure POS authentication method in Commerce headquarters **Functiona
 	
     - **Personnel ID and Password** - This default option requires POS users to enter personnel ID and password to sign in to POS sign-in and access manager override flow.
     - **Azure AD without single sign-on** - This option requires POS users to use Azure AD credentials to sign in to POS and access manager override. When the POS client is refreshed or reopened, the POS user must provide Azure AD credentials to sign in again.
-    - **Azure AD with single sign-on** - When this option is selected, POS users will be able to seamlessly sign in to Cloud POS (CPOS) using active Azure AD credentials signed in to other web applications in the same web browser, or seamlessly sign in to Modern POS (MPOS) using Azure AD credentials signed in to Windows without having to enter Azure AD credentials on the POS sign-in screen. With this option, accessing the POS manager override flow requires sign-in using Azure AD credentials.
+    - **Azure AD with single sign-on** - When this option is selected, POS users will be able to sign in to Cloud POS (CPOS) using active Azure AD credentials used by other web applications in the same web browser, or sign in to Modern POS (MPOS) using Azure AD credentials signed in to Windows. Both methods allow sign-in without having to enter Azure AD credentials on the POS sign-in screen. However, accessing the POS manager override flow will still require sign-in using Azure AD credentials.
+
+1. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule** and run the **1070 (Channel configuration)** job to synchronize the latest functionality profile settings to POS clients.
 
 > [!NOTE]
 > - The **Azure AD without single sign-on** option replaces the **Azure Active Directory** option in Dynamics 365 Commerce version 10.0.18 and earlier.
 > - Azure AD authentication requires an active internet connection, so it won't work when the POS is offline.
 
-You must run the **1070 (Channel configuration)** job in Commerce headquarters at **Retail and Commerce > Retail and Commerce IT > Distribution schedule** to synchronize the latest functionality profile settings to POS clients.
-
 ## Associate Azure AD accounts with POS users
 
-To use Azure AD as POS authentication method, as a prerequisite, you need to associate Azure AD accounts with POS users in Commerce headquarters. 
+To use Azure AD as the POS authentication method, you must to associate Azure AD accounts with POS users in Commerce headquarters. 
+
+To associate Azure AD accounts with POS users in Commerce headquarters, follow these steps.
 	
-1. Go to **Retail and Commerce > Employees > Workers**, and open a worker record.
+1. Go to **Retail and Commerce > Employees > Workers** and open a worker record.
 1. On the Action Pane, select **Commerce** tab, then in the **External identity** section, select **Associate existing identity**. 
-1. In the prompt dialog, select **Search using email**, enter an Azure AD email address, and then select **Search**.
+1. In the dialog box, select **Search using email**, enter an Azure AD email address, and then select **Search**.
 1. Select the Azure AD account that is returned, then select **OK**.
 
-After above configuration, the **Alias**, **UPN** and **External sub identifier** fields on the **Commerce** tab of the worker's details page will be filled in.
+After the above configuration steps, the **Alias**, **UPN**, and **External sub identifier** fields on the **Commerce** tab of the worker's details page will be filled in.
 
 You must run the **1060 (Staff)** job in **Retail and Commerce > Retail and Commerce IT > Distribution schedule** to synchronize the latest POS users and Azure AD accounts association data to the channel.
 
@@ -89,7 +91,7 @@ When the POS is configured to use Azure AD authentication, the manager override 
 
 ## Security best practices for Azure AD-based POS authentication on shared devices
 
-In real world scenarios, many retailers set up their retail store environment in a way that multiple users would need to access the POS application from a shared physical device. In that context, while single sign-in provides a convenient and seamless authentication experience, it may also create a security loophole where the current POS user may not realize that another user's credentials are being used to perform transactions or operations in the POS. Before you configure POS to use the Azure AD authentication method, it is highly recommended to review your security policy and the shared device's sign-in settings to decide which option is the best fit.
+Many retailers set up their retail store environment in a way that multiple users need to access the POS application from a shared physical device. In that context, while single sign-in provides a convenient and seamless authentication experience, it may also create a security loophole where the current POS user may not realize that another user's credentials are being used to perform transactions or operations in the POS. Before you configure the POS to use the Azure AD authentication method, it is highly recommended to review your security policy and the shared device's sign-in settings to decide which option is the best fit.
 
 - If your retail environment uses a shared account (for example, a local account) for physical device sign-in, it's recommended to use the **Azure AD without single sign-on** option. This ensures that each individual POS user explicitly provides Azure AD credentials to sign in to the POS.
 - If your retail environment requires employees to use their own Azure AD accounts to sign in to the POS and its hosting physical device, it's recommended to use the **Azure AD with single sign-on** option.
