@@ -1428,13 +1428,13 @@
             href: localizations/rcs-globalization-feature.md
           - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
             href: localizations/rcs-global-repo-upload.md
-        - name: Electronic invoicing
+        - name: Electronic Invoicing
           items: 
-          - name: Electronic invoicing overview
+          - name: Electronic Invoicing overview
             href: localizations/e-invoicing-service-overview.md
-          - name: Electronic invoicing administration components
+          - name: Electronic Invoicing administration components
             href: localizations/e-invoicing-service-administration.md
-          - name: Configure Electronic invoicing in Regulatory Configuration Services (RCS)
+          - name: Configure Electronic Invoicing in Regulatory Configuration Services (RCS)
             href: localizations/e-invoicing-configuration-rcs.md
           - name: Issue electronic invoices in Finance and Supply Chain Management
             href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
@@ -1442,21 +1442,21 @@
             href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
           - name: Get started 
             items:
-            - name: Get started with Electronic invoicing service administration
+            - name: Get started with Electronic Invoicing service administration
               href: localizations/e-invoicing-get-started-service-administration.md
-            - name: Get started with Electronic invoicing
+            - name: Get started with Electronic Invoicing
               href: localizations/e-invoicing-get-started.md
-            - name: Get started with Electronic invoicing for Brazil
+            - name: Get started with Electronic Invoicing for Brazil
               href: localizations/e-invoicing-bra-get-started.md
-            - name: Get started with Electronic invoicing for Egypt
+            - name: Get started with Electronic Invoicing for Egypt
               href: localizations/e-invoicing-eg-get-started.md
-            - name: Get started with Electronic invoicing for Italy
+            - name: Get started with Electronic Invoicing for Italy
               href: localizations/e-invoicing-ita-get-started.md
-            - name: Get started with the Electronic invoicing for Mexico
+            - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md
-            - name: Set up Electronic invoicing
+            - name: Set up Electronic Invoicing
               href: localizations/e-invoicing-setup.md
-          - name: Electronic invoicing FAQ
+          - name: Electronic Invoicing FAQ
             href: localizations/e-invoicing-faq.md
         - name: Tax Calculation
           items:
