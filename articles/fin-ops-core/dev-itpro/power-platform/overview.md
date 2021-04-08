@@ -33,9 +33,9 @@ ms.dyn365.ops.version: 10.0.0
 > [!IMPORTANT]
 > This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform Admin Center.  Today, Finance and Operations apps are not managed by the Power Platform Admin Center, however, over time more and more management capabilities will be migrated from Lifecycle Services over to the admin center.  In the interim, customers will be able to unlock features, such as dual-write functionality, virtual entities, add-ins, and more via Power Platform integration functionality in Lifecycle Services.
+Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform Admin Center. Today, Finance and Operations apps are not managed by the Power Platform Admin Center, however, over time more and more management capabilities will be migrated from Lifecycle Services (LCS) over to the admin center. In the interim, customers will be able to unlock features, such as dual-write functionality, virtual entities, add-ins, and more via Power Platform integration functionality in LCS.
 
-This article provides an overview of the various features unlocked by Power Platform Integration as well as how to perform the setup steps.
+This topic provides an overview of the various features unlocked by Power Platform integration as well as how to perform the setup steps.
 
 ## Prerequisite reading
 
@@ -50,7 +50,7 @@ To understand the architecture of Power Platform, Microsoft Dataverse, and virtu
 - [Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
 
 ## Tools and services unlocked with Power Platform integration
-Below is a listing of various tools and services that are unlocked by setting up Power Platform integration for your environments.
+The following is a listing of various tools and services that are unlocked by setting up Power Platform integration for your environments.
 
 ### Virtual entities for Finance and Operations apps
 
@@ -68,10 +68,10 @@ Virtual entities provide a mechanism to use Microsoft Power Platform with Financ
 ### Dual-write functionality
 Dual-write functionality is out-of-the-box infrastructure that provides near real-time interaction between Customer Engagement apps and Finance and Operations apps. When data about customers, products, people, and operations flows beyond application boundaries, all departments in an organization are empowered.
 
-Dual-write functionality provides tightly-coupled, bidirectional integration between Finance and Operations apps and Dataverse. Any data change in Finance and Operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to Finance and Operations apps. This automated data flow provides an integrated user experience across the apps.  For more information on dual-write functionality, visit [Dual-write overview](../data-entities/dual-write/dual-write-overview.md).
+Dual-write functionality provides tightly coupled, bidirectional integration between Finance and Operations apps and Dataverse. Any data change in Finance and Operations apps causes writes to Dataverse, and any data change in Dataverse causes writes to Finance and Operations apps. This automated data flow provides an integrated user experience across the apps.  For more information about dual-write functionality, see [Dual-write overview](../data-entities/dual-write/dual-write-overview.md).
 
 ### Add-ins functionality
-Add-ins provide a way to extend the functionality of Finance and Operations apps. All add-ins are installed and managed via Lifecycle Services on the environment details page for sandbox and production-type environments.  The metadata regarding which add-ins are installed and the configuration options for each add-in are stored in the Microsoft Dataverse database that is provisioned as part of the Power Platform integration.  Some add-ins also store business data in the Dataverse database as well.  To learn more about available add-ins, visit [Add-ins overview](add-ins-overview.md).
+Add-ins provide a way to extend the functionality of Finance and Operations apps. All add-ins are installed and managed via Lifecycle Services on the environment details page for sandbox and production-type environments. The metadata regarding which add-ins are installed and the configuration options for each add-in are stored in the Microsoft Dataverse database that is provisioned as part of the Power Platform integration. Some add-ins also store business data in the Dataverse database. To learn more about available add-ins, see [Add-ins overview](add-ins-overview.md).
 
 ## Architecture
 
@@ -89,6 +89,7 @@ All calls between Dataverse and Finance and Operations as part of virtual entiti
 Power Apps Portal can also access virtual entities. Because Power Apps Portal authorization is based on contact records, a mapping between contact records and Finance and Operations users is maintained in the msdyn\_externalportalusermapping table in Dataverse. This table should be editable only by highly privileged users in Dataverse, who have the rights to control the security access of portal users to Finance and Operations virtual entities. Any Finance and Operations user who is set up for Power Apps Portal access must have the CDSVirtualEntityAuthorizedPortalUser security role assigned, and can't have the System administrator or Security administrator role assigned. Regardless of the Power Apps Portal security setting that is applied to virtual entities, the resulting query to Finance and Operations apps is always run as the associated Finance and Operations user, and is subject to that user's entity and row security settings. Anonymous portal access is also supported. For information about this type of access and how it can be done, see [Power Apps Portal reference](power-portal-reference.md).
 
 ## Prerequisites for setting up the Power Platform integration
+The following list provides details about the prerequisites for setting up the Power Platform integration:
 
 - Make sure that at least one gigabyte (GB) of Power Platform database storage capacity space is available for your tenant. Otherwise, setup will fail. You can view your capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
 - Identify your Finance and Operations environment administrator. You can find that information in the **Environment details** section.
@@ -102,7 +103,7 @@ Power Apps Portal can also access virtual entities. Because Power Apps Portal au
     
         ![Power Platform settings](media/PowerPlatformSettings.png)
     
-- For organizations that do not allow **Everyone** to create Power Platform production environments, the Finance and Operations environment administrator account for your environment must be added to one of the below Power Platform admin roles.
+- For organizations that do not allow **Everyone** to create Power Platform production environments, the Finance and Operations environment administrator account for your environment must be added to one of the following Power Platform admin roles.
     
     The Finance and Operations environment administrator must be added to one of the following roles. You will need a Global Administrator to perform this action.
     - Global admins
@@ -111,19 +112,20 @@ Power Apps Portal can also access virtual entities. Because Power Apps Portal au
     
     For more information, see [Use service admin roles to manage your tenant](https://docs.microsoft.com/power-platform/admin/use-service-admin-role-manage-tenant).
 
-- All users who create Power Platform environments must be licensed. The Finance and Operations environment administrator account should have the "**Dynamics 365 Unified Operations Plan**" license applied via the Microsoft 365 admin center.
+- All users who create Power Platform environments must be licensed. The Finance and Operations environment administrator account should have the **Dynamics 365 Unified Operations Plan** license applied using the Microsoft 365 admin center.
 
 ## Enabling the Power Platform integration
 Currently, the Power Platform integration can only be set up after the Finance and Operations environment is deployed.  In the future, this will also be possible during deployment of the Finance and Operations environment itself, as well for new sandbox and production environments.
 
 ### Set up after environment deployment
+To set up after the Finance and Operations environment has been deployed, follow these steps:
 
 1. After the Finance and Operations environment has been deployed through LCS, open the **Environment details** page in LCS.
 2. In the **Power Platform integration** section, select **Setup**.
 3. In the **Power Platform environment setup** dialog box, agree to the terms and conditions, and then select **Setup** at the bottom of the dialog box.
 
     > [!NOTE]
-    > This will provision a Microsoft Dataverse-based environment in the Power Platform admin center, and typically requires 1GB of database storage capacity.  It will have the same name as your Finance and Operations environment.  Dual-write platform-level components will be installed, but dual-write application components will not be set up, nor enabled.  That is a separate action.  
+    > This will provision a Microsoft Dataverse-based environment in the Power Platform admin center, and typically requires 1GB of database storage capacity.  It will have the same name as your Finance and Operations environment.  Dual-write platform-level components will be installed, but dual-write application components will not be set up or enabled.  That is a separate action.  
 
 4. When you receive a message that states that the Microsoft Power Platform environment is being provisioned, select **OK**.
 
@@ -140,12 +142,12 @@ Currently, the Power Platform integration can only be set up after the Finance a
     <br/>
     ![Dual-write application button](media/powerplat_integration_dwApp_button.png)
 
-### Troubleshooting the set up
+### Troubleshooting the setup
 Setup can fail at various stages of the deployment of the Dataverse-based environment.   
 
 ![Dual-write setup failure](media/Error.png)
 
-- Anytime the setup fails, an error message will be displayed.  Based on the error message, you may need to address licensing or capacity issues.  After these have been resolved, you may then use the **Resume** button in the **Power Platform integration** section of the **Environment details** page in LCS to finish the setup.
+- Anytime the setup fails, an error message will be displayed.  Based on the error message, you may need to address licensing or capacity issues.  After these have been resolved, you can then use the **Resume** button in the **Power Platform integration** section of the **Environment details** page in LCS to finish the setup.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
