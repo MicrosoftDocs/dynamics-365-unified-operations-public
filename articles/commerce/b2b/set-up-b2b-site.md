@@ -288,7 +288,7 @@ To create an invoice details page in site builder, follow these steps.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Publish the URL for the page.
 
-## Add the quick add module to the cart page
+## Add a quick add module to the cart page
 
 The *quick add* module provides a way to quickly add multiple items to the cart using item IDs (also known as SKU IDs). The quick add module is added to a site's cart page.
 
