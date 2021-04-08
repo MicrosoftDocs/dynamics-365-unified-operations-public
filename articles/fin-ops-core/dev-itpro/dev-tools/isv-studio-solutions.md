@@ -47,4 +47,4 @@ For all models that make up your solution, locate the descriptor XML files. In e
 
 ![Descriptor XML file with highlighted solution id tag](media/descriptor-solutionid.png)
 
-After you recompiler, the X++ binaries will contain the product ID and will link to ISV Studio after they are deployed to a Tier2+ sandbox or production environment.
+After you recompile, the X++ binaries will contain the product ID and will link to ISV Studio after they are deployed to a Tier2+ sandbox or production environment.
