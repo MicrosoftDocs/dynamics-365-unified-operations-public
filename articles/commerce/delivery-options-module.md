@@ -57,7 +57,7 @@ The following illustration shows an example of a delivery options module on a ch
 | Heading | Heading text and a heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | An optional heading for the delivery options module. |
 | Custom CSS class name | Text | A custom Cascading Style Sheets (CSS) class name that will be used to render this module, if applicable. |
 | Filter Delivery Mode Option | **Do not filter** or **Non-shipping modes** | A value that specifies whether the delivery options module should filter out all non-shipping delivery modes. |
-|Auto select a delivery option| **Do not filter**, **Auto select delivery option and show summary**, or **Auto select delivery option and don't show summary** | This setting automatically applies the first available delivery option to checkout without requiring a user to select it. It should be used only if there is one available delivery option. This setting is supported as of the Commerce version 10.0.19 release. |
+| Auto select a delivery option | **Do not filter**, **Auto select delivery option and show summary**, or **Auto select delivery option and don't show summary** | This property automatically applies the first available delivery option to checkout without requiring that the user select it. It should be used only if there is one available delivery option. This property is supported as of the Commerce version 10.0.19 release. |
 
 ## Add a delivery options module to a checkout page and set the required properties
 
