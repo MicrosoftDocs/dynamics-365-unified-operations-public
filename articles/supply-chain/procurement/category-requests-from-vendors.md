@@ -107,9 +107,9 @@ To initiate a new category request:
 - To attach a document to the request, select **Attachments** on theAction Pane. Attached documents will be available to approvers when they review the category request.
 - To remove attached documents, select **Attachments** on the Action Pane. Select the document to remove and then select **Delete** from the Action Pane.
 
-1. If you're ready to submit the request, select **Submit** from the Action Pane and follow the next steps. Otherwise just close the page to come back to it later.
-2. Read any **Submission instructions** that appear here and then select **Submit**.
-3. Enter additional information in the **Comment** box if needed and then select **Submit** to complete the request.
+9. If you're ready to submit the request, select **Submit** from the Action Pane and follow the next steps. Otherwise just close the page to come back to it later.
+10. Read any **Submission instructions** that appear here and then select **Submit**.
+11. Enter additional information in the **Comment** box if needed and then select **Submit** to complete the request.
 
 To edit a draft or recalled category request:
 
