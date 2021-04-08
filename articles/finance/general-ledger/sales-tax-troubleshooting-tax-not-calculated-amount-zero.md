@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax isn't calculated or the tax amount is zero
-description: This topic provides troubleshooting information related to zero tax or tax that isn't calculated.
+description: This topic provides troubleshooting information that can help when the tax amount is 0 (zero) or tax isn't calculated.
 author: shtao
 ms.date: 04/01/2021
 ms.topic: article
@@ -26,58 +26,61 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
 ---
 
-
 # Tax isn't calculated or the tax amount is zero
 
 [!include [banner](../includes/banner.md)]
 
+A transaction might have a line amount that isn't 0 (zero), but either tax isn't calculated or the calculated tax amount is 0. To troubleshoot this issue, follow the steps in the following sections as required.
 
-A transaction can have a line amount that isn't equal to zero, but the tax isn't calculated, or the calculated tax amount is zero. Complete the steps in the following sections as needed, to troubleshoot the issue. 
+## Verify that tax codes are correctly selected by the transaction
 
-## Verify tax codes are selected correctly by the transaction
+If the transaction doesn't select the correct tax codes, or if it doesn't select any tax codes, taxes won't be calculated on it. Follow these steps to verify that tax codes are correctly selected by the transaction. 
 
-Check whether the transaction selects the tax codes correctly. If the transaction doesn't pick the correct tax codes, or any tax codes, taxes won't be calculated on the transaction.
+1. On the transaction line, on the **Line details** FastTab, on the **Setup** tab, in the **Sales tax** section, verify that the correct tax groups are selected in the **Item sales tax group** and **Sales tax group** fields. If the correct tax groups aren't selected, select them.
 
-  1. On the transaction line, select **Line details** > **Setup** > **Sales tax** and verify that the **Item sales tax group** and **Sales tax group** fields have the correct tax groups selected. If not, select the correct tax groups.
+    [![Item sales tax group and Sales tax group fields](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
 
-     [![Line details page, Sales tax fields](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
+2. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
+3. Select the appropriate sales tax group, and then, on the **Setup** FastTab, make a note of the tax code in the **Sales tax code** field.
 
-  2. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
-  3. Select the appropriate sales tax group, expand the **Setup** FastTab, and note the tax code in the **Sales tax code** field.
-  5. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Item sales tax groups**. 
-  6. Select the appropriate item sales tax group, expand the **Setup** FastTab, and verify that the tax code in the **Sales tax code** field is the same as the tax code for the sales tax groups.
-  7. If the tax codes aren't the same, update one of the groups with the correct sales tax code.
+    [![Sales tax groups page](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
 
-     [![Sales tax groups page](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
+4. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Item sales tax groups**.
+5. Select the appropriate item sales tax group, and then, on the **Setup** FastTab, verify that the tax code in the **Sales tax code** field matches the tax code of the sales tax group.
 
-     [![Item sales tax groups page](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
+    [![Item sales tax groups page](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
 
-## Verify the selected tax codes aren't exempt and have the correct tax rate value
-Check whether the selected tax codes are exempt and verify if the codes have the correct tax rate applied. If the tax code is exempt or the tax rate is 0, the tax calculation result is 0.
+6. If the tax codes don't match, update the sales tax code for one of the groups.
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
-2. Select the appropriate sales tax group and on the **Setup** FastTab, make sure **Exempt** check box isn't selected. If the check box is selected, unmark it.
+## Verify that the selected tax codes aren't exempt and that they have the correct tax rate value
 
-     [![Sales tax groups, Exempt check box](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
+If the tax codes are exempt, or if the tax rate is 0 (zero), the tax calculation result will be 0. Follow these steps to determine whether the selected tax codes are exempt and to verify that the correct tax rate is applied to them.
 
-3. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
-4. Select the appropriate sales tax code and in the **Value** field, verify that tax rate value is not equal to zero. If the tax rate is zero, update the field with the correct tax rate.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
+2. Select the appropriate sales tax group, and then, on the **Setup** FastTab, verify that the **Exempt** check box is cleared. If it's selected, clear it.
 
-     [![Value field](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
+    [![Exempt check box on the Sales tax groups page](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
 
-## Verify whether zero is correct
-There are some scenarios where zero tax is the correct result. Verify whether that is the case for your transaction.
+3. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+4. Select the appropriate sales tax code, and then verify that the tax rate value in the **Value** field isn't 0 (zero). If it's 0, update the field so that it's set to the correct tax rate.
 
-  1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
-  2. On the **Sales tax** tab, in the **Calculation method** field, check to see if **Total** is selected.
+    [![Value field on the Sales tax code values page](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
 
-     [![Sales tax tab, Calculation method field](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
+## Determine whether zero is the correct tax amount
 
-  3. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**. 
-  4. Select the appropriate sales tax code, and then select **Calculation** > **Marginal base** to verify that the marginal base is set to **Net amount of invoice balance** or **Invoice total incl. other sales tax amounts**. For more information, see the [Invoice total incl. other sales tax amounts](marginal-base-field.md#invoice-total-incl-other-sales-tax-amounts). 
-  5. If the results of step 2 or step 4 are as expected, check whether the transaction's total amount is zero. If the total amount is zero, zero tax is the expected result. Because the tax calculation is based on the total amount of the invoice balance, which isn't line-by-line, the zero tax will be allocated to each line after the tax calculation. 
+In some scenarios, a tax amount of 0 (zero) is correct. Follow these steps to determine whether 0 is the correct tax amount for your transaction.
 
-## Verify customization 
-If you have completed the steps in the previous sections and no issue is found, check whether customization exists. If it doesn't, create a Microsoft service request for further support.
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+2. On the **Sales tax** tab, in the **Calculation method** field, verify that **Total** is selected.
+
+    [![Calculation method field on the General ledger parameters page](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
+
+3. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+4. Select the appropriate sales tax code, select **Calculation** \> **Marginal base**, and verify that the marginal base is set to **Net amount of invoice balance** or **Invoice total incl. other sales tax amounts**. For more information, see the [Invoice total incl. other sales tax amounts](marginal-base-field.md#invoice-total-incl-other-sales-tax-amounts).
+5. If the correct values are set in steps 2 and 4, determine whether the total amount of the transaction is 0 (zero). If the total amount is 0, a tax amount of 0 is the expected result. Because the tax calculation is based on the total amount of the invoice balance, and that amount isn't line by line, the tax amount of 0 will be allocated to each line after the tax calculation.
+
+## Determine whether customization exists
+
+If you've completed the steps in the previous sections but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
