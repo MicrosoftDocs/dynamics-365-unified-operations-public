@@ -34,16 +34,16 @@ This topic provides details and an example query for the Payroll fixed compensat
 
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **Employee ID**<br>mshr_fk_employee_id_value<br>*GUID* | EDM<br>Required |  |
-| **Pay rate**<br>mshr_payrate<br>*GUID* | Decimal<br>Required |  |
-| **Plan ID**<br>mshr_planid<br>*GUID* | String<br>Required |  |
-| **Valid from**<br>mshr_validfrom<br>*GUID* | Date Time Offset <br>Required |  |
-| **Payroll Fixed Compensation Plan ID**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Int32<br>Required |  |
-| **Pay frequency**<br>mshr_payfrequency<br>*GUID* | String<br>Required |  |
-| **Valid to**<br>mshr_validto<br>*GUID* | Date Time Offset <br>Required |  |
-| **Position ID**<br>mshr_positionid<br>*GUID* | Date Time Offset <br>Required |  |
-| **Currency**<br>mshr_currency<br>*GUID* | String <br>Required |The identifcation number defined for the employee.  |
-| **Personnel number**<br>mshr_personnelnumber<br>*GUID* | String<br>Required |  |
+| **Employee ID**<br>mshr_fk_employee_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key:mshr_Employee_id of mshr_payrollemployeeentity entity  | Employee ID |
+| **Pay rate**<br>mshr_payrate<br>*Decimal* | Read-only<br>Required | Pay rate defined in fixed compensation plan. |
+| **Plan ID**<br>mshr_planid<br>*String* | Read-only<br>Required |Specifies the compensation plan.  |
+| **Valid from**<br>mshr_validfrom<br>*Date Time Offset* |  Read-only<br>Required |Date the employee fixed compensation is valid from.  |
+| **Payroll Fixed Compensation Plan entity**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Required<br>Sytem generated | A system-generated GUID value to uniquely identify the compensation plan. |
+| **Pay frequency**<br>mshr_payfrequency<br>*String* | Read-only<br>Required |The frequency the employee will be paid.  |
+| **Valid to**<br>mshr_validto<br>*Date Time Offset* | Read-only <br>Required | Date the employee fixed compensation is valid to. |
+| **Position ID**<br>mshr_positionid<br>*String* | Read-only <br>Required | Postion ID associated with the employee and fixed compensation plan enrollment. |
+| **Currency**<br>mshr_currency<br>*String* | Read-only <br>Required |The currency defined for the fixed compensation plan   |
+| **Personnel number**<br>mshr_personnelnumber<br>*String* | Read-only<br>Required |The employee's unique personnel number.  |
 
 **Query**
 
