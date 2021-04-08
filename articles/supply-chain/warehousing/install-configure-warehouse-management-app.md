@@ -22,7 +22,7 @@ ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mafoge
-ms.search.validFrom: 	2021-02-28
+ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
 
 ---
