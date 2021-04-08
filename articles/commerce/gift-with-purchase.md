@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 # Configure gift with purchase promotions
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to configure "gift with purchase" promotions in Microsoft Dynamics 365 Commerce.
 
@@ -44,7 +44,7 @@ You can also specify the quantity of items that should be discounted when the th
 
 The following image shows the configuration for the "spend $200 on dress shirts and get two ties for free" promotion in Commerce headquarters. 
 
-![Gift with purchase setup](./media/Gift%20with%20purchase.png "Gift with purchase setup")
+![Gift with purchase example configuration in Commerce headquarters](./media/gift-with-purchase.png)
 
 Sales associates and customers can find out at the point of sale (POS) that a transaction has qualified for free or discounted items by using the "View available discounts" feature, which shows all applicable discounts for a given transaction. For more information about the "View available discounts" feature, see [Cross-sell and upsell by using discounts](discounts-pos.md#cross-sell-and-upsell-by-using-discounts).
 
