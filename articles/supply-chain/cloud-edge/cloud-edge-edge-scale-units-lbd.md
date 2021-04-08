@@ -1,92 +1,84 @@
 ---
-# required metadata
-
-title: Deploy custom edge scale units on custom hardware using LBD
+title: Deploy edge scale units on custom hardware using LBD
 description: Provision edge scale units on premises using custom hardware and LBD based deployment
 author: cabeln
-manager: 
-ms.date: 01-04-2021
+ms.date: 04/08/2021
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
-ms.search.region: global
-ms.search.industry: SCM
+ms.search.region: Global
 ms.author: cabeln
-ms.search.validFrom: 23-04-2021
+ms.search.validFrom: 2021-04-08
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Preview: Deploying custom scale units using Local Business Data (LBD) projects
+# Preview: Deploy edge scale units on custom hardware using LBD
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Edge scale units can be deployed by creating a Local Business Data (LBD) environment and then configuring it to function as a scale unit in your distributed hybrid topology for supply chain management. This is achieved by associating the LBD environment with a Hub Supply Chain Management cloud environment.  
+Edge scale units can be deployed by creating a local business data (LBD) environment and then configuring it to function as a scale unit in your distributed hybrid topology for supply chain management. This is achieved by associating the LBD environment with a hub Supply Chain Management cloud environment.  
 
 Edge scale units are still in preview. Therefore you may use such environment only according to the [preview terms](https://aka.ms/scmcnepreviewterms).
 
 This document describes how to set up an on-premises LBD environment as an edge scale unit,and then how to associate it to a hub.
 
-## Step 1: Create an environment for an on-premises edge scale unit using LBD deployment mechanics
+## Deployment overview
 
 The following table provides an overview of the deployment steps.
 
 |Actions  |Details  |
 |---------|---------|
-|1. Enable an LBD slot in your LBD LCS project.|LBD edge scale unit during preview target existing LBD customers. An additional 60 day limited LBD sandbox slot will be only provided in certain customer situations.|
-|2. Setup and deploy an LBD environment with an **empty** database. | Deploy the LBD environment through LCS with latest PEAP build and empty database. [See details here](#setup-and-deploy-an-lbd-environment-with-empty-database). |
-|3. Upload target packages into LBD project assets  in LCS.|Prepare application, platform and customizations package that you use across hub and edge scale unit. [See details here.](#upload-target-packages-into-lbd-project-assets-in-lcs)|
-|4. Service the LBD environment with the target packages.|This ensures that the hub and spoke have the same build and customizations deployed. [See details here.](#service-the-lbd-environment-with-target-packages)|
-|5. Set up the cloud and edge pre-deployment script on the LBD environment.|Configure the script that injects the attributes needed in the distributed topology topology (instance ID, triggers enabled, and scale unit enabled). [See details here.](#set-up-the-cloud-and-edge-pre-deployment-script-on-the-lbd-environment)|
-|6. Run the "update settings" action through LCS.|Redeploy your environment with the chosen settings but also the pre/deployment scripts. [See details here.](#run-the-update-settings-action-through-lcs)|
-|7. Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#step-2-assign-your-lbd-edge-scale-unit-to-a-hub) |[See details here](#step-2-assign-your-lbd-edge-scale-unit-to-a-hub)
+|1. Enable an LBD slot in your LBD Lifecycle Services (LCS) project.|LBD edge scale unit during preview target existing LBD customers. An additional 60-day limited LBD sandbox slot will be only provided in certain customer situations.|
+|2. Set up and deploy an LBD environment with an *empty* database. | Deploy the LBD environment through LCS with latest Preview Early Access Program (PEAP) build and empty database. For more information, see [Setup and deploy an LBD environment with empty database](#set-up-deploy). |
+|3. Upload target packages into LBD project assets  in LCS.|Prepare application, platform and customizations package that you use across hub and edge scale unit. For more information, see [Upload target packages into LBD project assets in LCS](#upload-packages) |
+|4. Service the LBD environment with the target packages.|This ensures that the hub and spoke have the same build and customizations deployed. For more information, see [Service the LBD environment with target packages](#service-target-packages)|
+|5. Set up the cloud and edge pre-deployment script on the LBD environment.|Configure the script that injects the attributes needed in the distributed topology topology (instance ID, triggers enabled, and scale unit enabled). For more information, see [Set up the cloud and edge pre-deployment script on the LBD environment](#deployment-script)|
+|6. Run the "update settings" action through LCS.|Redeploy your environment with the chosen settings but also the pre/deployment scripts. For more information, see [Run the "update settings" action through LCS](#run-update-settings)|
+|7. Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#step-2-assign-your-lbd-edge-scale-unit-to-a-hub) |See [Assign your LBD edge scale unit to a hub](#assign-edge-to-hub) |
 
-### Setup and deploy an LBD environment with empty database
+<a name="set-up-deploy"></a>
 
-This step will give you a functional LBD environment. But the environment has not necessarily has the same application and platform version as the hub environment, is still missing the customizations and has not been enabled to function as a scale unit.
+## Set up and deploy an LBD environment with empty database
+
+This step creates a functional LBD environment. However, the environment won't necessarily have the same application and platform versions as the hub environment, will still be missing the customizations, and won't have been enabled to function as a scale unit.
 
 Do the following:
 
 1. Follow the instructions given in [Setup and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md). Use the latest PEAP build.
-1. [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md#configuredb) describes how to set up database with either demo data or empty data. Use the empty data .bak file for this step.
-1. Final step is deploying the environment. Deploy the latest available application and platform version.
+1. Set up a database that is either empty or contains demo data as described in [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md#configuredb). Use the empty `data.bak` file for this step.
+1. Deploy the environment using the latest available application and platform version.
 
-### Upload target packages into LBD project assets  in LCS
+<a name="upload-packages"></a>
 
-With this step you prepare application and platform versions and the customizations to be transitioned to your future LBD scale unit environment.
+## Upload target packages into LBD project assets in LCS
+
+This step prepares the application version, platform version, and customizations that will be transitioned to your LBD scale unit environment.
 
 Do the following:
 
 1. Upload the same combined application/platform package that was applied to the hub environment to the asset library of the LCS on-premises project.
-1. Upload the custom deployable package that was applied to the hub environment to the asset library of the LCS on-premises project.
+1. Get a copy of the custom deployable package that was applied to the hub environment and upload it to the asset library of the LCS on-premises project.
 
-### Service the LBD environment with target packages
+<a name="service-target-packages"></a>
 
-With this step you align application and platform versions and the customizations on your future LBD scale unit environment with the hub.
+## Service the LBD environment with target packages
+
+This step aligns the application version, platform version, and customizations on your LBD scale unit environment with the hub.
 
 Do the following:
 
-1. Service the LBD environment with the combined application/platform package that was uploaded in previous step.
-1. Service the LBD environment with the custom deployable package that was uploaded in the previous step.
+1. Service the LBD environment with the combined application/platform package that you uploaded in previous step.
+1. Service the LBD environment with the custom deployable package that you uploaded in the previous step.
 
-    :::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbdenv1.png" alt-text="Service LBD Environment 1":::
+    ![Service LBD Environment 1](media/cloud_edge-lbd-lcs-servicelbdenv1.png "Service LBD Environment 1")
 
-    :::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbdenv2.png" alt-text="Service LBD Environment 2":::
+    ![Service LBD Environment 2](media/cloud_edge-lbd-lcs-servicelbdenv2.png "Service LBD Environment 2")
 
-### Setup the cloud and edge pre-deployment script on the LBD environment.
+<a name="deployment-script"></a>
+
+## Set up the cloud and edge pre-deployment script on the LBD environment
 
 Do the following:
 
@@ -97,7 +89,7 @@ Do the following:
     - Copy the `Configure-CloudAndEdge.ps1` script from the `Infrastructure Scripts` folder to the `Scripts` folder on the agent file storage share that was set up on the environment. A typical path is: `\\lbdiscsi01\agent\Scripts\Configure-CloudAndEdge.ps1`.
     - Copy the `D365FO-OP` folder from the `Infrastructure Scripts` folder to the `Scripts` folder in the agent file storage share that was set up on the environment. A typical path is: `\\lbdiscsi01\agent\Scripts\D365FO-OP`.
     - Create the `PreDeployment.ps1` script that will invoke `Configure-CloudAndEdge.ps1` with the necessary parameters. The pre-deployment must be placed in the `Scripts` folder on the agent share to be run. A typical path is: `\\lbdiscsi01\agent\Scripts\PreDeployment.ps1`.
-    - The content of `PreDeployment.ps1` can look like this:
+    - The content of `PreDeployment.ps1` will resemble the following example:
 
         ```plaintext
         $agentShare = '\\lbdiscsi01\agent'
@@ -106,81 +98,24 @@ Do the following:
         & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
         ```
 
-### Run the "update settings" action through LCS
+<a name="run-update-settings"></a>
 
-In this step you will redeploy the environment, but it will run the previously configured pre-deployment script. This script will inject the necessary attributes so they can be passed to sync processes when you associate scale unit to a hub.
+## Run the "update settings" action through LCS
 
-- This can be done by triggering the **Update settings** action from LCS without changing any of the values in the form.
-- That action will redeploy the environment and `PreDeployment.ps1` will be invoked before deployment, which will update environment's topology.
-- The **Update settings** action is often used to update some topology values such as certificate thumbprints, but it can also be used for this purposes if all the values are left unchanged.
+In this step, you will redeploy the environment, but it will run the previously configured pre-deployment script. This script will inject the necessary attributes so they can be passed to sync processes when you associate scale unit to a hub. Here are some guidelines:
+
+- Trigger the **Update settings** action from LCS without changing any of the values in the form. This will redeploy the environment and `PreDeployment.ps1` will be invoked before deployment, which will update environment's topology.
+- The **Update settings** action is typically used to update topology values such as certificate thumbprints, but you can also use it for this purpose you leave all the values unchanged.
 - The **Update settings** action consists of two steps:
-  - **Prepare** - This is triggered through LCS by selecting **Maintain > Update settings**.
-  - **Deploy** - This must be triggered after the preparation step is finished, which takes a few minutes. Deployment can be triggered from the environment's details LCS page.
+  - **Prepare** - Trigger this through LCS by selecting **Maintain > Update settings**.
+  - **Deploy** - Trigger this after the preparation step is finished, which takes a few minutes. You can trigger deployment from the environment's details LCS page.
 
-  :::image type="content" source="./media/cloud_edge-lbd-lcs-servicelbd-updatesettings.png" alt-text="Deploy updates from LBD":::
+  ![Deploy updates from LBD](media/cloud_edge-lbd-lcs-servicelbd-updatesettings.png "Deploy updates from LBD")
 
-## Step 2: Assign your LBD edge scale unit to a hub
+<a name="assign-edge-to-hub"></a>
 
-> [!IMPORTANT]
-> **Scale unit configuration tool:** In the preview phase when using edge scale units you need to use the [scale unit deployment tools](https://github.com/microsoft/SCMScaleUnitDevTools) available from GitHub. The process will enable a LBD configuration as an edge scale unit and associate to the hub. This works similar to when configuring One-Box development environments.
-See the [Wiki for a step by step guide](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) for using the configuration tool.
+## Assign your LBD edge scale unit to a hub
 
-### Configure the LBD environment to function as an edge scale units
+While edge scale units are still in preview, you must use the [scale unit deployment and configuration tools available on GitHub](https://github.com/microsoft/SCMScaleUnitDevTools) to assign your LBD edge scale unit to a hub. The process enables an LBD configuration to function as an edge scale unit and associates it to the hub. The process is similar to configuring a One-Box development environment. For a step-by-step guide, see the [wiki for the configuration tool](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide).
 
-When you use the tool please follow the guidance in the [Wiki](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) to prepare the configuration file. please follow the entries and operations for the hub.
-For the LBD edge scale units you need to fill the *ScaleUnitConfiguration* section on the config file.
-
-<!--
-# DELETE BELOW
-
-To assign your scale unit to a Supply Chain Management hub environment, run the following steps on the hub environment:
-
-1. Open the **ScaleUnitHubSetup** menu item.
-1. Enter values for the following fields:
-      - **Name** - Enter a name.
-      - **Hub AAD client ID** - Available from AAD App registrations on the Azure portal.
-1. Prepare workloads to be configured (see the next section).
-1. Enter the scale units and their associated work loads.
-1. Select **Set up hub**.
-:::image type="content" source="media/cloud_edge-lbd-configure-hub.png" alt-text="Configure you hub for a edge scale unit":::
-
-### Configure the LBD scale unit environment
-
-1. Go to the **ScaleUnitSetup** menu item
-1. Enter values for the following fields:
-      - **Name** - Should match the value you have entered for the hub setup.
-      - **Hub resource ID** - Enter *https://contosohub.sandbox.operations.dynamics.com*.
-      - **Hub URL** - Enter *https://contosohub.sandbox.operations.dynamics.com/*. (Note the trailing "/".)
-      - **Hub AAD tenant ID** - Enter *https://login.windows.net/contoso.com*.
-      - **Hub AAD client ID** - Available from AAD App registrations in the Azure portal.
-      - **Hub encrypted secret** - Available from AAD App registrations in the Azure portal.
-1. Select **Initialize scale unit** to bootstrap the scale unit with initialization data from the hub.
-1. Select **Deploy**.
-
-:::image type="content" source="media/cloud_edge-lbd-configure-scaleunit.png" alt-text="Configure your  edge scale unit":::
-
-### Prepare workloads to be configured
-
-Open again the Hub setup form on your hub environment. Add a new row for the scale unit. Enter the name of the scale unit. Then select the workload type.
-Pick the company relevant for the workload and the Site. The warehouse management workload requires you to also select a warehouse for which the scale unit will be responsible.
-
-> [!IMPORTANT]
-> You might need to select into the desired company / legal entity in order to select site and warehouse. 
-
-:::image type="content" source="media/cloud_edge-lbd-configure-workload-onhub.png" alt-text="Configure you hub for a edge scale unit":::
-
-You can now navigate to the Scale unit setup form on the scale unit environment and monitor the progress of the workload deployment.
-
-:::image type="content" source="media/cloud_edge-lbd-monitor-workload-onscaleunit.png" alt-text="Configure you hub for a edge scale unit":::
-
-#### Warehouse management workloads
-
-Before configuring a warehouse management workload, make sure that the following two features are enabled on the hub in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- *Organization-wide work blocking*
-- *Automatic assigning of the guids on WHS user creation* (should be enabled by default)
-
-#### Manufacturing execution workloads
-
-No additional steps are needed.
--->
+When using the tools, please follow the guidance in the [Wiki](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) to prepare the configuration file. Follow the entries and operations for the hub. For the LBD edge scale units, you must complete the `ScaleUnitConfiguration` section on the config file.
