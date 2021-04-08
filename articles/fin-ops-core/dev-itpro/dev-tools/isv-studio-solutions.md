@@ -39,7 +39,7 @@ https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/<pro
 For all models that make up your solution, locate the descriptor XML files. In every descriptor belonging to the solution, update the `SolutionId` tag with the product id from partner center.
 
 ```xml
-<AxModelInfo>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <!-- XML content -->
     <SolutionId>product-ID-GUID</SolutionId>
 </AxModelInfo>
