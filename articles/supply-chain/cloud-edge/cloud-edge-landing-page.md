@@ -163,7 +163,7 @@ In order to onboard one of your sandbox or production environment to the new top
 Scale units are offered in multiple SKU and pricing options that you can chose to best match the planned monthly transaction volume and performance requirements.
 The entry level SKU is called ‘Basic’, the more performing model is ‘Standard’. Each SKU comes loaded with a certain number of monthly transactions. Additional overage add-ins can be added for each to increase the monthly transaction budget.
 
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Addins for cloud scale units":::
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-ins for cloud scale units":::
 
 > [!TIP]
 > To identify the best fitting sizing customers shall work with their partner and Microsoft to understand the required monthly transaction size.
