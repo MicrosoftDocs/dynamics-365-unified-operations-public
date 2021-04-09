@@ -84,7 +84,7 @@ Entities:
 
 ## See also
 
-[Generate and review payroll entities](hr-admin-integration-payroll-api-generate-review-entities.md)
+[Generate and review payroll entities](hr-admin-integration-payroll-api-generate-review-entities.md)<br>
 [Configure Human Resources parameters](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-setup-parameters)<br>
 [Configure Human Resources shared parameters](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-setup-shared-parameters)<br>
 [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
