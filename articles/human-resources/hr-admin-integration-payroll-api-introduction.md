@@ -82,7 +82,6 @@ The following diagram illustrates relationships within the API. Several types ha
 Entities:
 
 - [Payroll employee](hr-admin-integration-payroll-api-payroll-employee.md)
-- [Base worker](hr-admin-integration-payroll-api-payroll-worker-base-entity.md)
 - [Payroll worker address](hr-admin-integration-payroll-api-payroll-worker-address.md)
 - [Payroll fixed compensation plan](hr-admin-integration-ats-api-recruiting-request-education.md)
 - [Payroll position job](hr-admin-integration-payroll-api-payroll-position-job.md)

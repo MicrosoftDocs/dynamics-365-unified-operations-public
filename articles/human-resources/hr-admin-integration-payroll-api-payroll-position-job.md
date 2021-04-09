@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Payroll position job address
+title: Payroll position job
 description: This topic provides details and an example query for the Payroll position job entity in Dynamics 365 Human Resources.
 author: jcart
 manager: tfehr
@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Payroll position job relationship
+# Payroll position job
 
 This topic provides details and an example query for the Payroll position job relationship entity in Dynamics 365 Human Resources.
 

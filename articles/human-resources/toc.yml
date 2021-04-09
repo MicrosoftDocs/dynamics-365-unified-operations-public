@@ -431,10 +431,10 @@
         href: hr-admin-integration-payroll-api-payroll-worker-address.md
       - name: Payroll fixed compensation plan
         href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+      - name: Payroll position job
+        href: hr-admin-integration-payroll-api-payroll-position-job.md
       - name: Payroll position
         href: hr-admin-integration-payroll-api-payroll-position.md
-      - name: Payroll position job address
-        href: hr-admin-integration-payroll-api-payroll-position-job.md
   - name: User Guide
     items:
     - name: Overview
