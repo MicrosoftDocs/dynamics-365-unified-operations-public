@@ -301,5 +301,11 @@ On the workload in scale units, you can manage the following batch jobs at **War
 - Warehouse hub to scale unit message processor
 - Process quantity update requests for warehouse order lines
 
+> [!Note]
+> **Privacy Notice**
+>
+> Enabling a Cloud Scale Unit will allow for the transfer of certain customer data, including personal data, to the geographic region where you've configured your Cloud Scale Unit. To learn more about Cloud Scale Units, read our [Documentation](https://aka.ms/scmcne).
+Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
