@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Payroll fixed compensation plan API
+title: Payroll fixed compensation plan
 description: This topic provides details and an example query for the Payroll fixed compensation plan entity in Dynamics 365 Human Resources.
 author: jcart
 manager: tfehr
@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Payroll fixed compensation plan API
+# Payroll fixed compensation plan
 
 This topic provides details and an example query for the Payroll fixed compensation plan entity in Dynamics 365 Human Resources.
 
