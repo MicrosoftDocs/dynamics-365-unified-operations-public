@@ -1,4 +1,35 @@
+---
+# required metadata
+
+title: SPED REINF events
+description: This topic provides information about setting up SPED-Reinf events using Fiscal books and the SII reporting register framework in Microsoft Dynamics 365 Finance for Brazil.
+author: sndray
+ms.date: 01/19/2019
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+# ms.custom: 
+# ms.assetid: 
+ms.search.region: Brazil
+# ms.search.industry: 
+ms.author: sndray
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: 8.1
+
+---
+
 # SPED REINF events
+
+[!include [banner](../includes/banner.md)]
 
 All the information that the SPED-Reinf provides about taxes and contributions in a given assessment period is known as a *movement*. Therefore, every movement can contain one or more events.
 
