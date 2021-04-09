@@ -48,7 +48,7 @@ For more information, see [Set up and maintain vendor collaboration - Supply Cha
 ## Vendor category request workflow setup
 The **Vendor category request workflow** must be set up in the procurement and sourcing workflows. Vendors will submit new category requests that you can review and approve. Requested procurement categories are added to a vendor account after a category request is approved.
 
-The following example shows how to set up a simple **Vendor category request workflow** with a single approver. You'll need to review your internal processes to determine what workflow setup is appropriate for your agency.
+The following example shows how to set up a simple **Vendor category request workflow** with a single approver. You'll need to review your internal processes to determine the appropriate workflow set up for your agency.
 
 1. **Open Procurement and sourcing > Setup > Procurement and sourcing workflows**.
 2. Select **New** from the Action Pane.
