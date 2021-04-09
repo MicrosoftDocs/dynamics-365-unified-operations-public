@@ -52,7 +52,7 @@ The following image shows the configuration for the "spend $200 on dress shirts 
 
 As mentioned above, the **Quantity limit** column on the **Threshold discount lines** FastTab allows you to restrict the number of items that should be discounted. But if this field is set to "0.00," there is no restriction on how many items can be discounted. Using the previous example, if the **Quantity limit** was instead set to "0.00," once customers met the qualifying threshold they could get any number of ties for free. 
 
-You can also add multiple items to the **Threshold discount lines** FastTab to indicate all of the items that should be discounted. For example, you could add one row for two ties and one row for two bow ties. This would be interpreted by the system as "spend $200 on shirts and get 2 ties *and* 2 bow ties for free." 
+You can also add multiple items to the **Threshold discount lines** FastTab to indicate all of the items that should be discounted. For example, you could add one row for two ties and one row for two bow ties. This configuration would be interpreted by the system as "spend $200 on shirts and get 2 ties *and* 2 bow ties for free." 
 
 If the promotion requirement was to give two ties *or* two bow ties for free (or 1 tie and 1 bow tie for free), then you would need to create a new category for ties and bow ties so that the tie and bow tie discounts could be configured in a single row.
 
