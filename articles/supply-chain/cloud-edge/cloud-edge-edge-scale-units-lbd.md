@@ -31,10 +31,10 @@ The following table provides an overview of the deployment steps.
 |Actions  |Details  |
 |---------|---------|
 |1. Enable an LBD slot in your LBD Lifecycle Services (LCS) project.|LBD edge scale unit during preview target existing LBD customers. An additional 60-day limited LBD sandbox slot will be only provided in certain customer situations.|
-|2. Set up and deploy an LBD environment with an *empty* database. | Deploy the LBD environment through LCS with latest Preview Early Access Program (PEAP) build and empty database. For more information, see [Setup and deploy an LBD environment with empty database](#set-up-deploy). |
+|2. Set up and deploy an LBD environment with an *empty* database. | Deploy the LBD environment through LCS with the latest topology and empty database. For more information, see [Setup and deploy an LBD environment with empty database](#set-up-deploy). |
 |3. Upload target packages into LBD project assets  in LCS.|Prepare application, platform and customizations package that you use across hub and edge scale unit. For more information, see [Upload target packages into LBD project assets in LCS](#upload-packages) |
 |4. Service the LBD environment with the target packages.|This ensures that the hub and spoke have the same build and customizations deployed. For more information, see [Service the LBD environment with target packages](#service-target-packages)|
-|5. Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#step-2-assign-your-lbd-edge-scale-unit-to-a-hub) |See [Assign your LBD edge scale unit to a hub](#assign-edge-to-hub) |
+|5. Compete the scale unit configuration and workload assignment. |See [Assign your LBD edge scale unit to a hub](#assign-edge-to-hub) |
 
 <a name="set-up-deploy"></a>
 
@@ -103,7 +103,7 @@ When using the tools, please follow the guidance in the [Wiki](https://github.co
 > [!Note]
 > **Privacy Notice**
 >
-> Enabling a Scale Unit will allow for the transfer of certain customer data, including personal data, to the geographic region where you've configured your Cloud Scale Unit. To learn more about Cloud Scale Units, read our [Documentation](https://aka.ms/scmcne).
+> Enabling a Scale Unit will allow for the transfer of certain customer data, including personal data, to the geographic region where you've configured your Hub. To learn more about Edge Scale Units, read our [Documentation](https://aka.ms/scmcne).
 Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
