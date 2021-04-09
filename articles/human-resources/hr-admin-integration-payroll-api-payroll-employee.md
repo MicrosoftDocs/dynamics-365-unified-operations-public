@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll employee
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic provides details and an example query for the Payroll employee entity in Dynamics 365 Human Resources.
 
 ## Properties

@@ -28,6 +28,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll position
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 This topic provides details and an example query for the Payroll details for the Positions entity in Dynamics 365 Human Resources.
 
 ## Properties
