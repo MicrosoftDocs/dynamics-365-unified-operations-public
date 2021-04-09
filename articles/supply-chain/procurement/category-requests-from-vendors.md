@@ -48,7 +48,7 @@ For more information, see [Set up and maintain vendor collaboration - Supply Cha
 ## Vendor category request workflow setup
 The **Vendor category request workflow** must be set up in the procurement and sourcing workflows. Vendors will submit new category requests that you can review and approve. Requested procurement categories are added to a vendor account after a category request is approved.
 
-The following example shows how to set up up a simple **Vendor category request workflow** with a single approver. You'll need to review your internal processes to determine what workflow setup is appropriate for your agency.
+The following example shows how to set up a simple **Vendor category request workflow** with a single approver. You'll need to review your internal processes to determine what workflow setup is appropriate for your agency.
 
 1. **Open Procurement and sourcing > Setup > Procurement and sourcing workflows**.
 2. Select **New** from the Action Pane.
@@ -86,7 +86,7 @@ For more information on workflow setup, see [Set Up Workflows - Business Central
 ## Create and submit a category request
 This section describes how vendors can use the vendor information workspace to create, edit, view, and submit category requests.
 
-To initiate a new category request:
+To start a new category request:
 
 1. Open the vendor information workspace.
 2. From the start page of the vendor information workspace, select the **Category requests** tile.
@@ -128,7 +128,7 @@ To submit a draft or recalled request:
   - _Pending review –_ Indicates that the request is in workflow.
   - _Pending approval_ – Indicates that approval is needed.
 
-To recall a submitted request that has not yet been approved:
+To recall a submitted request that hasn't yet been approved:
 
 1. Open the **Category requests** page.
 2. Select the pending request that you want to recall.
