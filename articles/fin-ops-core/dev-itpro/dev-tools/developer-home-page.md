@@ -168,6 +168,12 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 - [Development for Dynamics 365 Finance home page](../financial/financial-dev-home-page.md)
 
+## Development for independent software vendors
+
+- [Link X++ modules to packages by using ISV Studio](isv-studio-solutions.md
+- [ISV licensing](isv-licensing.md)
+- [ISV licensing on-premises](isv-licensing-on-prem.md)
+
 ## Licensing
 
 - [Independent software vendor (ISV) licensing](isv-licensing.md)
