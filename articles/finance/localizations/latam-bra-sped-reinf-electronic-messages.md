@@ -5,7 +5,7 @@ title: Set up electronic messages for SPED-Reinf events
 description: This topic provides information about setting up electronic messages for SPED-Reinf events for Brazil.
 author: sndray
 manager: AnnBe
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -108,9 +108,9 @@ After registration, associate the certificate in the setup parameters for the **
 
 ## Set up parameters 
 
-Every time a message is created, prepared, validated, delivered, or received, the related action must be identified through a X++ class at **Tax** > **Setup** > **Electronic messages** > **Executable class settings**.
+Every time a message is created, prepared, validated, delivered, or received, the related action must be identified through an X++ class at **Tax** > **Setup** > **Electronic messages** > **Executable class settings**.
 
-- **Preparation items (Preparacao dos eventos)**: This action is used to create and prepare the XML message. The action requests additional parameters, such as **Booking date**, **CNPJ**, and **CNPJ root**, because the events are generated based on this information.
+- **Preparation items (Preparacao dos eventos)**: This action is used to create and prepare the XML message. The action requests more parameters, such as **Booking date**, **CNPJ**, and **CNPJ root**, because the events are generated based on this information.
 
 	![Preparation items](media/bra-preparation-items.png)
 
