@@ -72,7 +72,7 @@ The following diagram illustrates relationships within the API. Several types ha
 
 ![Payroll Integration API data model](media/hr-admin-payroll-api-data-model.png)
 
-## Payroll employee and related entities and option sets
+## Payroll employee and related entities
 
 Entities:
 
