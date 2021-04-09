@@ -4,7 +4,7 @@
 title: Price adjustments and discounts
 description: This article provides information about price adjustments and discounts in Dynamics 365 Commerce.
 author: scott-tucker
-ms.date: 11/16/2020
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,7 +24,6 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 
 ---
 
@@ -55,7 +54,9 @@ There are many types of discounts:
 Both price adjustments and discounts can be associated with price groups. Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.
 
 > [!NOTE]
-> The Mix and Match discount and Threshold discount have a property named "Count non-discountable products" and "Count non-discountable products towards threshold" respectively. If this is turned ON, then an item which is not eligible for any discount (or any further discount) can still help in qualifying for the Mix and match or Threshold discount, but this item will not get the discount. For e.g. Assuming you create a Mix and match discount with two lines A and B such that the customer should get 10% off on both items. But there is already an Exclusive 5% discount applied on item A, which would ideally stop item A from participating in this Mix and match discount. But, if this is configuration is turned ON, then item A can be used to qualify for this Mix and Match discount, but the 10% discount will be applied only on item B. The similar logic is extended for the Threshold discount.
+> The mix and match discount and threshold discount have properties named "Count non-discountable products" and "Count non-discountable products towards threshold," respectively. If these properties are enabled, an item which is not eligible for any discount (or any further discount) can still help qualify the transaction for the mix and match or threshold discount, but the ineligible item will not get the discount. 
+> 
+> For example, if you create a mix and match discount with two lines A and B where a customer should get 10% off on both items, but there is already an exclusive 5% discount applied to item A, this would normally stop item A from participating in the mix and match discount. However, if the "Count non-discountable products" property is enabled, then item A can be used to qualify for the mix and match discount, with the 10% discount only being applied to item B. Similar logic applies for the threshold discount.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
