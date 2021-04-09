@@ -52,7 +52,7 @@ Before you can sync sales quotations, you must update the following settings.
 
 In Sales, go to **Settings \> Administration \> System settings \> Sales**, and make sure that the following settings are used:
 
-- The **Use system prizing calculation** system option is set to **Yes**.
+- The **Use system pricing calculation** system option is set to **Yes**.
 - The **Discount calculation method** column is set to **Line item**.
 
 ### Sites and warehouses
