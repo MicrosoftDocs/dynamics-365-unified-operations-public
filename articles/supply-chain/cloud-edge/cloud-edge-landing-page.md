@@ -209,7 +209,13 @@ On the **Defined workloads** tab, use the **Create workload** button to add a wa
 
 :::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Workload creation":::
 
-> [!IMPORTANT]
-> The Scale Unit Manager portal in this release doesn't let you reassign workloads tor a different scale unit or back to the hub once  the assignment is made. If you must remove an assignment, reach out to your contact person at Microsoft. The movement of workloads will be added in an upcoming incremental enhancement.
+> [!Tip]
+> Over time incremental enhancements are added to the Scale Unit Manager experience that ease lifecycle management operations. The specifics capabilities for the current release are documented in an onboarding handbook which is available to customers in the process of onboarding to the distributed hybrid topology for supply chain management.
+
+> [!Note]
+> **Privacy Notice**
+>
+> Enabling a Cloud Scale Unit will allow for the transfer of certain customer data, including personal data, to the geographic region where you've configured your Cloud Scale Unit. To learn more about Cloud Scale Units, read our [Documentation](https://aka.ms/scmcne).
+Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
