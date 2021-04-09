@@ -25,7 +25,7 @@ Independent software vendors (ISVs) can link their X++ modules to their register
 
 Sign in to Partner Center and open the **Offer overview** page for your product. From the browser's URL bar, locate the product ID GUID (global unique identifier), as shown in the following example.
 
-```dos
+```HTTP
 https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/<product-ID-GUID>/overview
 ```
 
