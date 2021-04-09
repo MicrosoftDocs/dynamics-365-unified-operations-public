@@ -174,10 +174,6 @@ The client is an HTML web client that runs in all major browsers. For informatio
 - [ISV licensing](isv-licensing.md)
 - [ISV licensing on-premises](isv-licensing-on-prem.md)
 
-## Licensing
-
-- [Independent software vendor (ISV) licensing](isv-licensing.md)
-
 ## Supply Chain Management
 
 - [Gantt control development guide](../user-interface/gantt-development-guide.md)
