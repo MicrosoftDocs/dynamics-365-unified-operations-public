@@ -52,7 +52,7 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-# Review payroll entities
+## Review payroll entities
 
 Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.
 
