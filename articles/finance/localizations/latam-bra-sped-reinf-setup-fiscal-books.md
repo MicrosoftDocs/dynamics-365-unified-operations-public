@@ -34,14 +34,15 @@ This topic describes how to set up the **Fiscal books** module to generate and i
 
 ## Set up service types
 
-The service type table represents table 06 that the tax authorities have established to classify the services that are provided, based on assignment of labor. A detailed list of available values is available on the SPED website.
+The service type table represents table 06. The tax authorities have established this table to classify the services that are provided, based on assignment of labor. A detailed list of available values is available on the SPED website.
 
 1. Go to **Fiscal books** > **Setup** > **SPED Reinf** > **Service types**.
-2. Select **New**, enter a classification code that has been established by the tax authorities, and enter a description.
+2. Select **New**.
+3. Enter a classification code that has been established by the tax authorities, and then enter a description.
 
 	![Service types](media/bra-service-type-setup.png)
 
-3. After the list of service types is created, the service types must be assigned to service codes. Go to **Inventory management** > **Setup** > **Fiscal information** > **Service code**, and then, for each service, assign the related service type.
+4. After the list of service types is created, the service types must be assigned to service codes. Go to **Inventory management** > **Setup** > **Fiscal information** > **Service code**, and then, for each service, assign the related service type.
 
 ## Set up tax classification codes
 
@@ -49,7 +50,7 @@ The service type table represents table 06 that the tax authorities have establi
 
      ![Tax classification](media/bra-tax-classification-codes.png)
 
-This information is assigned to the fiscal organization on the **Fiscal organization** page on the **General** FastTab (**Fiscal books \> Setup \> Fiscal organization**).
+This information is assigned to the fiscal organization and can be found on the **Fiscal organization** page on the **General** FastTab (**Fiscal books \> Setup \> Fiscal organization**).
 
    ![Fiscal organization](media/bra-fiscal-organization-setup.png)
 
@@ -67,12 +68,12 @@ This setup is used to determine the agriculture acquisition type of incoming fis
 - Go to **Fiscal books** > **Setup** > **SPED Reinf** > **Acquisition of rural production** to determine the classification of fiscal documents based on the following criteria:
 
 	- **Vendor account**: All, group, or table
-	- **CFOP** : All, group, or table
+	- **CFOP**: All, group, or table
 	- **Fiscal classification**
 
 ## GILRAT and SENAR taxes
 
-Go to **Fiscal books** > **Setup** > **SPED Reinf** > **GILRAT tax codes** or **SENAR tax codes** to identify which sales tax codes are used to represent these taxes. The sales tax code should be defined as tax type = **Other**. The amount of these taxes are used in the event R-2055 in the tags, **vlrRatDescPR** and **vlrSenarDesc**.
+Go to **Fiscal books** > **Setup** > **SPED Reinf** > **GILRAT tax codes** or **SENAR tax codes** to identify which sales tax codes are used to represent these taxes. The sales tax code should be defined as tax type = **Other**. The amount of these taxes are used in the event R-2055 in the tags **vlrRatDescPR** and **vlrSenarDesc**.
 
 ## Vendor setup
 
