@@ -2,7 +2,7 @@
 # required metadata
 
 title: Category requests from vendors
-description: This topic describes how vendors can request to add procurement categories to their account and the related approval process that is completed by the procurement agent.
+description: This topic describes how vendors can request procurement categories for their account. It also includes the related approval process that is completed by the procurement agent.
 author: taylorvh
 manager: 
 ms.date: 04/09/2021
@@ -46,14 +46,14 @@ The vendor must have at least one vendor collaboration user with one or more of 
 For more information, see [Set up and maintain vendor collaboration - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/set-up-maintain-vendor-collaboration).
 
 ## Vendor category request workflow setup
-The **Vendor category request workflow** must be setup in the procurement and sourcing workflows. Vendors will submit new category requests that you can review and approve. Requested procurement categories are added to a vendor account after a category request is approved.
+The **Vendor category request workflow** must be set up in the procurement and sourcing workflows. Vendors will submit new category requests that you can review and approve. Requested procurement categories are added to a vendor account after a category request is approved.
 
 The following is an example of setting up a simple **Vendor category request workflow** with a single approver. You will need to review your internal processes to determine what workflow setup is appropriate for your agency.
 
 1. **Open Procurement and sourcing > Setup > Procurement and sourcing workflows**.
 2. Select **New** from the Action Pane.
 3. Select the **Vendor category request workflow**.
-4. Login to the workflow editor.
+4. Log in to the workflow editor.
 5. The workflow editor opens.
 6. Select **Properties** from the Action Pane.
 7. The Properties page for the **Vendor category request workflow** opens.
@@ -65,7 +65,7 @@ The following is an example of setting up a simple **Vendor category request wor
 13. Double-click the **Approve new category request** workflow element.
 14. Right-click the **Step 1** workflow element and select **Properties**.
 15. The Properties page for the **Approve new category request** workflow element opens.
-16. Enter a **Work item subject**. This shows as the **Subject** in **Work items assigned to me**.
+16. Enter a **Work item subject**. This text shows as the **Subject** in **Work items assigned to me**.
 17. Enter **Work item instructions**. These instructions are visible to approvers when selecting **Workflow** from the Action Pane of a Category request.
 18. Select **Assignment** on the left.
 19. Select an Assignment type of **User**.
@@ -79,7 +79,7 @@ The following is an example of setting up a simple **Vendor category request wor
 27. Select **Activate the new version** if you are ready to begin testing this workflow. Otherwise select **Do not activate the new version**.
 28. Select **OK** to complete the workflow setup.
 
-Tip: If your agency does not require approval of category requests then workflow should be configured for automatic approval.
+Tip: If your agency does not require approval of category requests, then workflow should be configured for automatic approval.
 
 For more information on workflow setup, see [Set Up Workflows - Business Central | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/business-central/across-set-up-workflows).
 
@@ -122,7 +122,7 @@ To submit a draft or recalled request:
 1. Open the **Category requests** page.
 2. Select the draft or recalled request you want to submit.
 3. Select **Submit** on the Action Pane.
-4. Additional instruction may appear here and then select **Submit**.
+4. More instructions may appear here and then select **Submit**.
 5. Enter additional information in the **Comment** box if needed and then select **Submit** to complete the request.
 6. The status of the category request changes as follows:
   - _Pending review –_ Indicates that the request is in workflow.
@@ -164,7 +164,7 @@ To view category requests:
 5. Open a request to review and edit it as needed.
   - To see the list of categories currently included in this request, expand the **Requested categories** FastTab.
   - To view your active categories, open the **Active categories** FactBox on the right side of the page.
-  - If documents were submitted the attachments icon will display a count of attachments. To view attached documents, select **Attachments** on the Action Pane. Select a document you want to view. Select **Open** to view the document.
+  - If documents were submitted, the attachments icon will display a count of attachments. To view attached documents, select **Attachments** on the Action Pane. Select a document you want to view. Select **Open** to view the document.
   - To attach a document to the request, select **Attachments** on the Action Pane. Attached documents will be available to approvers when they review the category request.
   - To remove attached documents, select **Attachments** on the Action Pane. Select the document to remove and then select **Delete** from the Action Pane.
   - To view workflow history, select **Workflow** on the Action Pane. Select **More** and **Workflow history** from the workflow options. The **Workflow history** page will open.
