@@ -5,7 +5,7 @@ title: SPED-Reinf (Brazil)
 description: This topic provides information about setting up SPED-Reinf events using Fiscal books and the electronic message framework.
 author: sndray
 manager: AnnBe
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 
-The SPED-Reinf is a tax statement report that gathers information about withholding tax and other tax information that is of interest from the Brazilian Internal Revenue Service (RFB) and Social Security. In Brazilian Portuguese, Reinf stands for "Retenções e Outras Informações Fiscais". The statement consists of a set of events that must be delivered in specific layouts through the environment of the public digital bookkeeping system (SPED). Additionally, these events must be delivered using a valid digital certificate that is issued by an entity that is accredited by the Brazilian Public Key Infrastructure (ICP-Brasil). The statement is considered valid after receipt is confirmed and the contents of the files are validated.
+The SPED-Reinf is a tax statement report that gathers information about withholding tax and other tax information from the Brazilian Internal Revenue Service (RFB) and Social Security. In Brazilian Portuguese, Reinf stands for "Retenções e Outras Informações Fiscais". The statement consists of a set of events that must be delivered in specific layouts through the environment of the public digital bookkeeping system (SPED). These events must be delivered using a valid digital certificate that is issued by an entity that is accredited by the Brazilian Public Key Infrastructure (ICP-Brasil). The statement is considered valid after receipt is confirmed and the contents of the files are validated.
 
 The SPED-Reinf was created to assess federal taxes that are withheld for Social Security and income taxes purposes and for activities that aren't related to labor. Examples of these activities include fiscal documents, payments, and other events.
 
@@ -69,7 +69,7 @@ Dynamics 365 Finance supports generating SPED-Reinf events through the **Fiscal 
 > Events R-2010 and R-2020 are supported for CNPJ third parties. Event R-5011 is used with the purpose to inquire about the status of closing event R-2099.
 
 
-- Only taxpayers that comply with SPED-ECD are supported.
+Only taxpayers that comply with SPED-ECD are supported.
 - Taxpayers as public departments aren't supported.
 - Services that are provided on civil constructions projects aren't supported.
 - Service takers on civil constructions projects aren't supported.
