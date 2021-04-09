@@ -56,10 +56,6 @@ This documentation includes details and developer guidance for using the Dataver
 - [Use Postman with the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api)
 - [Use change tracking to synchronize data with external systems](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)
 
-### Option sets
-
-The data model for the Payroll integration API described in this document includes option sets that provide enumerated values associated with entity properties. For details on working with option sets in the Dataverse Web API, see [Create and update option sets using the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets). Option sets are defined for each Dataverse environment.
-
 ### Virtual tables for Human Resources in Dataverse
 
 The endpoints for the Payroll integration API use the virtual table platform capabilities of Microsoft Dataverse. By default, the virtual tables and their associated API endpoints aren't deployed for Human Resources environments, enabling organizations to determine which OData endpoints will be exposed for the environment. To use the API, the virtual tables for the Human Resources entities must be generated for the environment.
@@ -89,6 +85,5 @@ Entities:
 [Configure Human Resources shared parameters](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-setup-shared-parameters)<br>
 [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Use the Microsoft Dataverse Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
-[Create and update option sets using the Web API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
