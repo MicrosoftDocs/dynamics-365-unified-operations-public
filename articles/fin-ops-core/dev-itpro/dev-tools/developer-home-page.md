@@ -170,7 +170,7 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 ## Development for independent software vendors
 
-- [Link X++ modules to packages by using ISV Studio](isv-studio-solutions.md
+- [Link X++ modules to packages by using ISV Studio](isv-studio-solutions.md)
 - [ISV licensing](isv-licensing.md)
 - [ISV licensing on-premises](isv-licensing-on-prem.md)
 
