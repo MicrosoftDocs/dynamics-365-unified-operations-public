@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Payroll details for positions API
-description: This topic provides details and an example query for the Payroll details for positions entity in Dynamics 365 Human Resources.
+title: Payroll details for positions
+description: This topic provides details and an example query for the Payroll details for the Positions entity in Dynamics 365 Human Resources.
 author: jcart
 manager: tfehr
 ms.date: 04/07/2021
@@ -26,9 +26,9 @@ ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Payroll position API
+# Payroll position
 
-This topic provides details and an example query for the Payroll details for positions entity in Dynamics 365 Human Resources.
+This topic provides details and an example query for the Payroll details for the Positions entity in Dynamics 365 Human Resources.
 
 ## Properties
 
