@@ -1,6 +1,6 @@
 ---
-title: Link independent software vendor (ISV) packages to ISV Studio
-description: This topic describes linking X++ packages to ISV Studio
+title: Link X++ modules from independent software vendor (ISV) packages by using ISV Studio
+description: This topic describes linking X++ packages by using ISV Studio.
 author: jorisdg
 ms.date: 04/08/2021
 ms.topic: article
@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# X++ modules and ISV Studio
+# Link X++ modules from independent software vendor (ISV) packages by using ISV Studio
 
 Independent software vendors (ISVs) can link their X++ modules to their registered products and solutions by using [Microsoft Power Platform ISV Studio](https://docs.microsoft.com/powerapps/developer/data-platform/isv-app-management). Linking enables ISV's to monitor the success and usage of their applications in Finance and Operations apps.
 
@@ -34,7 +34,7 @@ https://partner.microsoft.com/en-us/dashboard/commercial-marketplace/offers/<pro
 
 ## Update your X++ model descriptors
 
-For all models that make up your solution, locate the descriptor XML files. In every descriptor belonging to the solution, update the `SolutionId` tag with the product id from partner center.
+For all models that make up your solution, locate the descriptor XML files. In every descriptor belonging to the solution, update the `SolutionId` tag with the product ID from partner center.
 
 ```xml
 <AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
