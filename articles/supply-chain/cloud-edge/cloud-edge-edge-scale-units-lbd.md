@@ -119,3 +119,12 @@ In this step, you will redeploy the environment, but it will run the previously 
 While edge scale units are still in preview, you must use the [scale unit deployment and configuration tools available on GitHub](https://github.com/microsoft/SCMScaleUnitDevTools) to assign your LBD edge scale unit to a hub. The process enables an LBD configuration to function as an edge scale unit and associates it to the hub. The process is similar to configuring a One-Box development environment. For a step-by-step guide, see the [wiki for the configuration tool](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide).
 
 When using the tools, please follow the guidance in the [Wiki](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) to prepare the configuration file. Follow the entries and operations for the hub. For the LBD edge scale units, you must complete the `ScaleUnitConfiguration` section on the config file.
+
+> [!Note]
+> **Privacy Notice**
+>
+> Enabling a Scale Unit will allow for the transfer of certain customer data, including personal data, to the geographic region where you've configured your Cloud Scale Unit. To learn more about Cloud Scale Units, read our [Documentation](https://aka.ms/scmcne).
+Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
