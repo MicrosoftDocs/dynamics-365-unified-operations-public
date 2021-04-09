@@ -46,8 +46,8 @@ Do the following:
 
 1. Follow the instructions given in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
 
-> [!IMPORTANT]
-> Read the rest of this section before you proceed to carry out the steps in the guide above.
+  > [!IMPORTANT]
+  > Read the rest of this section before you proceed to carry out the steps in the guide above.
 
 1. When describing your configuration in the infrastructure\ConfigTemplate.xml do not specify any MR (Financial Reporting) nodes.
 1. Set up a database that contains empty data as described in [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Use the empty `data.bak` file for this step.
