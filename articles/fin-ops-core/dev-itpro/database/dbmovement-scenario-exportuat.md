@@ -80,9 +80,8 @@ Here is an explanation of the parameters:
 - **sf (source file)** – The path and name of the file to import from.
 
 > [!IMPORTANT]
-> To ensure that imported data is compatible with the metadata, trigger full database synchronize from Visual Studio. 
+> To ensure that imported data is compatible with the metadata, trigger full database synchronization from Visual Studio. 
 
-> [!NOTE]
 > During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
 
 ## Update the database
