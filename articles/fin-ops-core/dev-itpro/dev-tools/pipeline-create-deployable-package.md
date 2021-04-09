@@ -60,6 +60,6 @@ The following example assumes the **Location of the X++ binaries to package** pr
 | `*`<br/>`!*Tests` | Find all X++ binaries, exclude any module names that end in `Tests`. |
 | `MyPackage` | Find a module named `MyPackage` in the `$(Build.BinariesDirectory)` folder. |
 | `*`<br/>`$(Build.SourcesDirectory)\Metadata\MyBinaryPackage` | Include all X++ binaries in `$(Build.BinariesDirectory)`, as well as a module named `MyBinaryPackage` in the sources directory (which is the mapped source control repository folder) inside the `Metadata` folder. |
-| `*`<br/>`!*Tests`<br/>`$(Build.SourcesDirectory)\Metadata\MyISV1<br/>$(Build.SourcesDirectory)\Metadata\MyISV2` | Include all X++ binaries in `$(Build.BinariesDirectory)`, exclude any modules where the names end in `Tests`, and include two modules named `MyISV1` and `MyISV2` in the sources directory (which is the mapped source control repository folder) inside the `Metadata` folder. |
+| `*`<br/>`!*Tests`<br/>`$(Build.SourcesDirectory)\Metadata\MyISV1`<br/>`$(Build.SourcesDirectory)\Metadata\MyISV2` | Include all X++ binaries in `$(Build.BinariesDirectory)`, exclude any modules where the names end in `Tests`, and include two modules named `MyISV1` and `MyISV2` in the sources directory (which is the mapped source control repository folder) inside the `Metadata` folder. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
