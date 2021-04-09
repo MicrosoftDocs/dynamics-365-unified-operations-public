@@ -44,7 +44,7 @@ The customer check-in feature is enabled through a feature management switch tha
 
 ## Create e-commerce pages
 
-You'll create a new page on your e-commerce site that will serve the check-in confirmation experience and if configured, a form for collecting additional information from them to facilitate order fulfillment. See the [Customer check-in module](check-in-for-pickup-module.md) help topic to learn how to set up the page and module.
+You'll create a new page on your e-commerce site that will serve the check-in confirmation experience and if configured, a form for collecting additional information from them to facilitate order fulfillment. See the [Customer check-in module](check-in-pickup-module.md) help topic to learn how to set up the page and module.
 
 ## Set up transactional email template
 
@@ -64,5 +64,5 @@ When customers receive the check-in confirmation, a task is created in the Tasks
 
 ## Additional resources
 
-[Customer check-in module](check-in-for-pickup-module.md)
+[Customer check-in module](check-in-pickup-module.md)
 
