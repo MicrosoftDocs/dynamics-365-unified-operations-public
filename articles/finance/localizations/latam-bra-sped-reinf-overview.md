@@ -33,9 +33,9 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 
-The SPED-Reinf is a tax statement report that gathers information about withholding tax and other tax information from the Brazilian Internal Revenue Service (RFB) and Social Security. In Brazilian Portuguese, Reinf stands for "Retenções e Outras Informações Fiscais". The statement consists of a set of events that must be delivered in specific layouts through the environment of the public digital bookkeeping system (SPED). These events must be delivered using a valid digital certificate that is issued by an entity that is accredited by the Brazilian Public Key Infrastructure (ICP-Brasil). The statement is considered valid after receipt is confirmed and the contents of the files are validated.
+The SPED-Reinf is a tax statement report that gathers information about withholding tax and other tax information from the Brazilian Internal Revenue Service (RFB) and Social Security. In Brazilian Portuguese, Reinf stands for "Retenções e Outras Informações Fiscais". The statement consists of a set of events. The events must be delivered in specific layouts through the public digital bookkeeping system (SPED). These events must be delivered using a valid digital certificate issued by an entity that's been accredited by the Brazilian Public Key Infrastructure (ICP-Brasil). The statement is considered valid after receipt is confirmed and the contents of the files are validated.
 
-The SPED-Reinf was created to assess federal taxes that are withheld for Social Security and income taxes purposes and for activities that aren't related to labor. Examples of these activities include fiscal documents, payments, and other events.
+The SPED-Reinf was created to assess federal taxes that are withheld for the purpose of Social Security and income taxes, and for activities that aren't related to labor. Examples of these activities include fiscal documents, payments, and other events.
 
 Dynamics 365 Finance supports generating SPED-Reinf events through the **Fiscal books** module and the SII reporting register framework. You can exchange XML messages for every event that is required by the tax authority.
 
@@ -73,8 +73,8 @@ Only taxpayers that comply with SPED-ECD are supported.
 - Taxpayers as public departments aren't supported.
 - Services that are provided on civil constructions projects aren't supported.
 - Service takers on civil constructions projects aren't supported.
-- Manual bookkeeping of the payment for settlement of the CPRB amount that is due is needed.
-- Payment of the CPRB amount that is due is out of scope.
+- Manual bookkeeping of the payment for settlement of the CPRB amount that's due is needed.
+- Payment of the CPRB amount that's due is out of scope.
 
 To generate and submit the related events to the tax authority, complete the following steps.
 
