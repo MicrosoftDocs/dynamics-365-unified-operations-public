@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Payroll details for positions
+title: Payroll details for Positions
 description: This topic provides details and an example query for the Payroll details for the Positions entity in Dynamics 365 Human Resources.
 author: jcart
 manager: tfehr
