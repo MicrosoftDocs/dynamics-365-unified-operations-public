@@ -54,5 +54,8 @@ There are many types of discounts:
 
 Both price adjustments and discounts can be associated with price groups. Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.
 
+> [!NOTE]
+> The Mix and Match discount and Threshold discount have a property named "Count non-discountable products" and "Count non-discountable products towards threshold" respectively. If this is turned ON, then an item which is not eligible for any discount (or any further discount) can still help in qualifying for the Mix and match or Threshold discount, but this item will not get the discount. For e.g. Assuming you create a Mix and match discount with two lines A and B such that the customer should get 10% off on both items. But there is already an Exclusive 5% discount applied on item A, which would ideally stop item A from participating in this Mix and match discount. But, if this is configuration is turned ON, then item A can be used to qualify for this Mix and Match discount, but the 10% discount will be applied only on item B. The similar logic is extended for the Threshold discount.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
