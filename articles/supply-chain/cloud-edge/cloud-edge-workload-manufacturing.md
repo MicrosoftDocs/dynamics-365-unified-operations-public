@@ -112,5 +112,11 @@ To review the history of manufacturing jobs that have been processed on a scale 
 
 The _Manufacturing hub to scale unit message processor_ job processes data from the hub to the scale unit. This job is automatically started when the manufacturing execution workload is deployed. However, you can run it manually at any time by going to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing hub to scale unit message processor**.
 
+> [!Note]
+> **Privacy Notice**
+>
+> Enabling a Cloud Scale Unit will allow for the transfer of certain customer data, including personal data, to the geographic region where you've configured your Cloud Scale Unit. To learn more about Cloud Scale Units, read our [Documentation](https://aka.ms/scmcne).
+Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+![image](https://user-images.githubusercontent.com/8451704/114214985-56af2e80-9965-11eb-9365-1cf14a9b2cd9.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
