@@ -2,9 +2,9 @@
 # required metadata
 
 title: Enable customer check-in notifications in point of sale (POS)
-description: 
+description: This topic describes how to enable customer check-in notifications in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: bicyclingfool
-ms.date: 04/01/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: 10.0.19
 # Enable customer check-in notifications in point of sale (POS)
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+This topic describes how to enable customer check-in notifications in Microsoft Dynamics 365 Commerce point of sale (POS).
 
 Organizations can provide a link or button in "order ready for pickup" emails that lets their customers notify the store that they are on the premises and waiting for their package to be brought out to them. When customers notify the store that they are present, they will receive a check-in confirmation and the store will receive a notification as a task in their point of sale (POS). This task serves as a prompt for a sales associate to deliver the order to the customer's vehicle without the customer having to enter the store.
 
@@ -58,8 +61,6 @@ Within the template, create an HTML button or link that points to the URL of the
 ## Point of sale (POS)
 
 When customers receive the check-in confirmation, a task is created in the Tasks list within point of sale for the store where they're picking up the order. The task contains all the necessary customer and order information needed to fulfill the order. Any information collected from the customer in the additional information screen will be displayed in the instructions field within the task. 
-
-
 
 ## Additional resources
 
