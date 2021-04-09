@@ -1030,10 +1030,14 @@
             href: perf-test/atl-faq.md
       - name: Date effectivity
         href: dev-tools/date-effectivity.md
-      - name: ISV licensing
-        href: dev-tools/isv-licensing.md
-      - name: ISV licensing on-premises
-        href: dev-tools/isv-licensing-on-prem.md
+      - name: Development for independent software vendors
+        items:
+        - name: Link X++ modules to packages by using ISV Studio
+          href: dev-tools/isv-studio-solutions.md
+        - name: ISV licensing
+          href: dev-tools/isv-licensing.md
+        - name: ISV licensing on-premises
+          href: dev-tools/isv-licensing-on-prem.md
     - name: General Data Protection Regulation (GDPR)
       items:
       - name: General Data Protection Regulation overview
