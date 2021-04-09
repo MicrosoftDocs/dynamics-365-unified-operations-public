@@ -5,7 +5,7 @@ title: Page summary module
 description: This topic covers page summary modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 04/02/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -38,8 +38,8 @@ Page summary modules help simplify the entry of page summary metadata that can b
 
 The Dynamics 365 Commerce module library contains several page summary modules, such as page summary, category page summary, list page summary, and product page summary modules. Each page summary module has search engine optimization (SEO) metadata that is tuned for the specific page types that the module will be used for. All summary page modules share the same set of properties, which are described in the next section.
 
->[!NOTE]
->The **product page summary** module, included with native module library version 9.27 and higher, utilizes the https://schema.org/Product schema to insert basic JSON product metadata into a product page's header section.  This metadata is automatically generated using the same Commerce Runtime API data actions used by the buy-box module and other product page metadata.  Schema.org structured product metadata is often used by major search engines to render rich search results.  By default, the **product page summary** module will include product name, description, offer (currency and pricing), and default image location per the schema.org/product specification.  If necessary, this module and the data actions used by it can be extended using the e-commerce SDK to augment or modify metadata requirements.
+> [!NOTE]
+> The product page summary module, included with Commerce module library version 9.27 and higher, uses the [Schema.org product schema](https://schema.org/product) to insert basic JSON product metadata into a product page's header section. This metadata is automatically generated using the same Commerce Runtime (CRT) API data actions used by the buy box module and other product page metadata. Schema.org structured product metadata is often used by major search engines to render rich search results. By default, the product page summary module includes the product name, product description, offer (currency and pricing) information, and default image location per the Schema.org product schema specification. If necessary, this module and the data actions used by it can be extended using the Commerce online software development kit (SDK) to augment or modify metadata requirements.
 
 ## Summary page module properties
 
