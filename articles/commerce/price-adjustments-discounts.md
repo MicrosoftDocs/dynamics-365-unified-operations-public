@@ -54,9 +54,9 @@ There are many types of discounts:
 Both price adjustments and discounts can be associated with price groups. Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.
 
 > [!NOTE]
-> The mix and match discount and threshold discount have properties named "Count non-discountable products" and "Count non-discountable products towards threshold," respectively. If these properties are enabled, an item which is not eligible for any discount (or any further discount) can still help qualify the transaction for the mix and match or threshold discount, but the ineligible item will not get the discount. 
+> The mix and match discount and threshold discount have properties named "Count non-discountable products" and "Count non-discountable products towards threshold," respectively. If these properties are enabled, an item that is not eligible for any discount (or any further discount) can still help qualify a transaction for the discount, but the ineligible item will not get the discount. 
 > 
-> For example, if you create a mix and match discount with two lines A and B where a customer should get 10% off on both items, but there is already an exclusive 5% discount applied to item A, this would normally stop item A from participating in the mix and match discount. However, if the "Count non-discountable products" property is enabled, then item A can be used to qualify for the mix and match discount, with the 10% discount only being applied to item B. Similar logic applies for the threshold discount.
+> For example, if you create a mix and match discount with two lines A and B where a customer should get 10% off on both items, but there is already an exclusive 5% discount applied to item A, this would normally stop item A from participating in the discount. However, if the "Count non-discountable products" property is enabled, then item A can be used to qualify for the mix and match discount, with the 10% discount only being applied to item B. Similar logic applies for the threshold discount.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
