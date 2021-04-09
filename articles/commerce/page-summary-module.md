@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Page summary module
+title: Page summary modules
 description: This topic covers page summary modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
