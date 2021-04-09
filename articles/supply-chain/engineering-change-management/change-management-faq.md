@@ -24,14 +24,12 @@ This topic presents several frequently asked questions (FAQs), and their answers
 
 When you create an engineering change category, the **Engineering change category details** page provides a settings called **Track version in transactions**. What is this setting and what does it do?
 
-- When you set **Track version in transactions** to *Yes*, you will see the dimension groups where version is an active dimension.
-- When you set **Track version in transactions** to *No*, you will see the dimension groups where the version dimension is not used.
-
-<!-- KFM: what do we mean by "you will see"? Where do we see these? -->
+- Set **Track version in transactions** to *Yes*, the **Dimension group** field will be filtered to only show dimension groups where version is an active dimension.
+- Set **Track version in transactions** to *No*, the **Dimension group** field will be filtered to only show dimension groups where the version dimension isn't an active dimension.
 
 ### If you do track the version in transactions
 
-If you *do* track the version in transactions, then the engineering product will be a product master and each version of the product will be a product variant that uses the version dimension. Other dimensions can also be used together with the version dimension.
+For engineering catagories where you have selected a **Dimension group** where version is an active dimension, then you will track versions in transactions for products in that category. In this case, engineering product will be a product master and each version of the product will be a product variant that uses the version dimension. Other dimensions can also be used together with the version dimension.
 
 This means that each engineering version will be treated as a variant in all processes. Therefore, if you have a specific variant in a transaction (so that you can know which variant was sold or purchased), you would also have to manage stock for each version, master planning would plan supply for each version, and so on. If you choose to retire a version from the market, you would need to manually adjust its effective-from and -to dates  to reflect the change and also manage your inventory to make sure you don't have non-used versions of items in your warehouses.
 
@@ -39,7 +37,7 @@ We recommend this option if you need high traceability of the specific versions 
 
 ### If you don't track the version in transactions
 
-If you *don't* track the version in transactions, then the engineering product (if you don't use any other dimension) will be a distinct product. The product will still be versioned, and you can manage information on the specific versions such as its BOM and route, but you won't be able to trace which specific version was used in each transaction. The effective-from and -to dates indicate the validity of each of version.
+For engineering catagories where you have selected a **Dimension group** where version is *not* an active dimension, then you will *not* track versions in transactions for products in that category. In this case, the engineering product (if you don't use any other dimension) will be a distinct product. The product will still be versioned, and you can manage information on the specific versions such as its BOM and route, but you won't be able to trace which specific version was used in each transaction. The effective-from and -to dates indicate the validity of each of version.
 
 This option is much easier to manage because changing from one version to another is as easy as making the needed changes in a change order and then updating the effective-from and -to dates in the engineering version. The production processes will then pick up the needed BOM and route for the product (and its specific version).
 
@@ -47,31 +45,21 @@ Most organizations choose this option because it provides version and change man
 
 ## Which fields are copied to the released item template?
 
-From the **Released product details** page, the following fields are copied to the released item template: <!-- KFM: Our docs never really explain what a "template" is. What process are we describing here? -->
+When an engineering company creates an engineering product, that product is created as a released product in the engineering company based on the selected *released item template* (which is itself an existing released product). Likewise, when that product is released to an operational company, the released item template is also used. In each case released item template establishes most of the field values for the released product, and these values come from the associated **Released product details** page. 
+
+The following tables specifies which fields are copied during these processes.
 
 | FastTab | Fields copied on creation by the engineering company | Fields copied on release to an operational company |
 |---|---|---|
-| **General** | All fields from the **Administration** field group. | <!--KFM: Same as for the engineering company? --> |
+| **General** | All fields from the **Administration** field group. | Same as for the engineering company. |
 | **Purchase** | All fields. | All fields except **Unit**. |
 | **Sell** | All fields from the following field groups: **Sales order**, **Administration**, **Taxation**, **Price update**, **Base sales price**, **Charges**, **Discounts**, and **Alternative product**. | Same as for the engineering company, but excluding the **Unit** field. |
 | **Foreign trade** | All fields | All fields |
 | **Manage inventory** | All fields and field groups *except* **Physical dimensions** and **Catch weight**.  | Same as for the engineering company, but excluding the **Unit** field. |
 | **Engineer**, **Plan**, **Manage costs**, **Manage projects**, **Financial dimensions**, and **Warehouse** | All fields | All fields except **BOM Unit**. |
 | **Product variants** | All fields from the **Default product variant** field group. | Same as for the engineering company. |
-| <!--KFM: Where is this? --> | The options default order settings and Warehouse items. <!--KFM: Are these field names? --> | Same as for the engineering company. |
 
-<!-- KFM: Here is the original list (remove when done):
- 
-- In tab General, field group Administration.
-- In tab Purchase everything with creating in engineering company. When receiving initially from releasing, everything except unit.
-- In tab Sell, field groups Sales order, Administration, Taxation, Price update, Base sales price, Charges, Discounts and Alternative product with creating in engineering company. When receiving initially from releasing, same except unit.
-- In tab Foreign trade, everything both with creating in engineering company and receive initially from releasing.
-- In tab Manage inventory, everything except field groups Physical dimensions and Catch weight with creating in engineering company. When receiving initially from releasing, same except unit.
-- In tabs Engineer, Coverage, Manage costs, Manage projects, Financial dimensions and Warehouse everything with creating in engineering company. When receiving initially from releasing, everything except BOM Unit.
-- In tab Variants, field group Default product variant. Both with creating in engineering company and receive initially from releasing.
-- The options default order settings and Warehouse items, both with creating in engineering company and receive initially from releasing.
-
--->
+In addition to the fields listed in the previous table, all default order settings are also copied from the released item template, both when creating the product in the engineering company and when releasing it to an operational company. (To view the default order settings for a released item template, open the relevant **Released product details** page and, on the Action Pane, open the **Manage inventory** tab and select **Default order settings**.)
 
 ## Should I create a separate legal entity for engineering products or use an existing one?
 
