@@ -2,11 +2,11 @@
 # required metadata
 
 title: Category requests from vendors
-description: 
-author: 
+description: This topic describes how vendors can request to add procurement categories to their account and the related approval process that is completed by the procurement agent.
+author: taylorvh
 manager: 
-ms.date: 
-ms.topic: 
+ms.date: 04/09/2021
+ms.topic: article
 ms.prod: 
 ms.technology: 
 
