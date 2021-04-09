@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.19
 
 # Firm planned orders
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Planned orders must be *firmed* (that is, released) as part of the master planning process. When planned orders are firmed, they are transformed into actual purchase orders, transfer orders, or production orders. These are also known as *released* or *open orders*.
 
@@ -35,19 +35,19 @@ Most planned order features are available in all standard Supply Chain Managemen
 
 Parallelized firming helps speed up the firming process by parallelizing it across multiple threads. This can be relevant when a high number of planned orders are firmed.
 
-To make this functionality available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Parallel firming of planned orders* feature.
+To make this functionality available on your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Parallel firming of planned orders* feature.
 
 ### Enable planned order firming with filtering
 
 Planned order firming with filtering lets you establish logical criteria for selecting which planned orders to firm. You can also preview which planned orders were selected, run the process in the background, and/or schedule it as a batch job.
 
-To make this functionality available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Planned order firming with filtering* feature.
+To make this functionality available on your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Planned order firming with filtering* feature.
 
 ### Enable autofirming
 
 Automatic firming lets you firm planned orders as part of the master planning process within the time fence for firming.
 
-To make this functionality available on your system, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Auto-firming for Planning Optimization* feature.
+To make this functionality available on your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Auto-firming for Planning Optimization* feature.
 
 ## Firm planned orders manually
 
@@ -133,7 +133,7 @@ Automatic firming lets you firm planned orders as part of the master planning pr
 
 Both Planning Optimization and the built-in planning engine can be used to autofirm planned orders. However, there are some important differences. For example, whereas Planning Optimization uses the order date (that is, the start date) to determine which planned orders to firm, the built-in Supply Chain Management planning engine uses the requirement date (that is, the end date). The following table summarizes the differences.
 
-| | Planning Optimization | Built-in planning engine |
+| &nbsp; | Planning Optimization | Built-in planning engine |
 | --- | --- | --- |
 | Date basis | Autofirming is based on the order date (start date). | Autofirming is based on the requirement date (end date). |
 | Lead time | Because the order date (start date) triggers the firming, you don't have to consider the lead time as part of the firming time fence. | To help guarantee that orders are firmed in due time, the firming time fence must be longer than the lead time. |
@@ -162,4 +162,4 @@ You can track a planned order that was firmed by doing the following steps:
 1. On the Action Pane, open the **View** tab and, from the **View** group, select **Firming history**.
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
