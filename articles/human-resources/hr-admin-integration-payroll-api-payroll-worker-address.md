@@ -67,7 +67,7 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollworkeraddressentities?$filter=ms
             "mshr_isworkedinaddress": 200000000,
             "mshr_countryregionid": "USA",
             "mshr_zipcode": "99025",
-            "mshr_street": "6543 Spruce Ave",
+            "mshr_street": "6543 Cypress Ave",
             "mshr_city": "Tacoma",
             "mshr_state": "WA",
             "mshr_county": "KING",
