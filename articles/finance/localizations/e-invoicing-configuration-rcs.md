@@ -55,6 +55,14 @@ Finally, the features support the exchange of messages with external web service
 
 Availability of the electronic invoicing features depends on the country or region. Although some features are generally available, others are in preview.
 
+#### Generally available features
+
+The following table shows the electronic invoicing features that are generally available.
+
+| Country/region | Feature name                         | Business document |
+|----------------|--------------------------------------|-------------------|
+| Egypt          | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
+
 #### Preview features
 
 The following table shows the electronic invoicing features that are currently in preview.
@@ -66,7 +74,6 @@ The following table shows the electronic invoicing features that are currently i
 | Brazil         | Brazilian NF-e (BR)                  | Fiscal document model 55, correction letters, cancellations, and discards |
 | Brazil         | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
 | Denmark        | Danish electronic invoice (DK)       | Sales invoices and project invoices |
-| Egypt          | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
 | Estonia        | Estonian electronic invoice (EE)     | Sales invoices and project invoices |
 | Finland        | Finnish electronic invoice (FI)      | Sales invoices and project invoices |
 | France         | French electronic invoice (FR)       | Sales invoices and project invoices |
@@ -207,6 +214,92 @@ The following table lists the available actions, and whether they are currently 
 | Call Mexican PAC Service                      | Integrate with Mexican PAC service for CFDI submission.                      | In preview           |
 | Process response                              | Analyze the response received from the web service call.                     | Generally available  |
 | Use MS Power Automate                         | Integrate with flow built in Microsoft Power Automate.                       | In preview           |
+
+### Applicability rules
+
+The Applicability rules are configurable clauses, defined at the level of electronic invoicing features, configured to provide a context for execution of electronic invoicing features through the Electronic Invoicing.
+
+When the Electronic Invoicing receives a submission of a business document from Finance or Supply Chain Management, the business document does not carry on itself an explicit reference that allows the Electronic Invoicing internally to call a particular electronic invoicing feature for processing the submission.
+
+Nevertheless, when properly configured, the business document contains the necessary elements that allows the Electronic Invoicing resolving which electronic invoicing feature must be selected and thus, generate the electronic invoice.
+
+And it is through the Applicability rules that the Electronic Invoicing can find the exact electronic invoicing features that must be used to process the submission, by matching the contents from the submitted business document towards the clauses from the Applicability rules.
+
+Let's take as example two electronic invoicing features, and their related Applicability rules, both deployed into the Electronic Invoicing:
+
+| Electronic invoicing feature | Applicability rules        |
+|------------------------------|--------------------------- |
+| A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
+| B                            | <p>Country = MX</p><p>and</p><p>Legal entity = MXMF</p>  |
+
+When the Electronic Invoicing receives a submission of a business document from Finance or Supply Chain Management, and if the business document contains the following attributes filled as:
+
+- Country = BR
+- Legal entity = BRMF
+
+Then the Electronic Invoicing will select the electronic invoicing feature **A** for processing the submission and generating the electronic invoice.
+
+In the same way, if the business document contains:
+
+- Country = MX
+- Legal entity = MXMF
+
+Then the Electronic Invoicing will select the electronic invoicing feature **B** for generating the electronic invoice.
+
+The configuration of Applicability rules cannot be ambiguous, meaning that two or more electronic invoicing features cannot have the same clauses, otherwise it will lead to none selection. In case of duplication of electronic invoicing features, to avoid ambiguity, additional clauses must be used to allow the Electronic Invoicing distinguishing between the two electronic invoicing features.
+
+Let's take as example, another electronic invoicing feature **C**, created as a copy of electronic invoicing feature A:
+
+| Electronic invoicing feature | Applicability rules        |
+|------------------------------|--------------------------- |
+| A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
+| C                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
+
+In the way as it is, in front of a business document submission containing:
+
+- Country = BR
+- Legal entity = BRMF
+
+The Electronic Invoicing will not be able to distinguish which electronic invoicing feature must be used to process the submission because they contain the exact same clauses.
+
+In order to create a distinction between the 2 electronic invoicing feature through the Applicability rules, a new clause must be added to one of the two features to allow Electronic Invoicing select the proper electronic invoicing feature.
+
+| Electronic invoicing feature | Applicability rules        |
+|------------------------------|--------------------------- |
+| A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
+| C                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p><p>and</p><p>Model=55</p>  |
+
+To support the creation of more complex clauses, the following resources are available:
+
+Logic operators:
+- And
+- Or
+
+Operators types:
+- Equal
+- Not equal
+- Greater than
+- Less than
+- Greater than or equal to
+- Less than or equal to
+- Contains
+- Begins with
+
+Data types:
+- String
+- Number
+- Boolean
+- Date
+- UUID
+
+Group/ungroup of clauses:
+
+Example:
+
+| Electronic invoicing feature | Applicability rules        |
+|------------------------------|--------------------------- |
+| C                            | <p>Country = BR</p><p>and</p><p>( Legal entity = BRMF</p><p>or</p><p>Model=55)</p>  |
+
 
 ## Configuration providers
 
