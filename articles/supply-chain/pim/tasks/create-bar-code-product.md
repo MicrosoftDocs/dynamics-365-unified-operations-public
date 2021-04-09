@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Version 7.0.0
 This topic shows how to manually create a bar code using the item number M0001 as an example. The demo data company used to create this procedure is USMF.
 
 1. Go to **Product information management \> Products \> Released products**.
-leased products** under the **Links** section.
 1. In the list, find and select the desired record. For this example, select item number **M0001**.
 1. On the Action Pane, select **Manage inventory**.
 1. Select **Bar codes**.
