@@ -4,7 +4,7 @@
 title: Resolve issues after entity store maintenance
 description: This topic describes procedures that must be completed after entity store maintenance.
 author: sarvanisathish
-ms.date: 05/01/2018
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,14 +47,14 @@ Application analytical workspaces and reports may not render data after certain 
 To resolve this issue:
 
 1. Sign in to the application.
-2. Go to the **Batch jobs** page (**System administration \> Inquiries \> Batch jobs**).
-3. Delete all pending batch jobs associated with the entity store. These batch jobs:
+2. Go to **System administration** > **Inquiries** > **Batch jobs**.
+3. On the **Batch jobs** page, delete all pending batch jobs associated with the entity store. These batch jobs:
 
     - Will have a status of **Waiting**.
-    - Will typically have a description of **Deploy measurement**.
+    - Will typically have a description of **Deploy measurement**, **Full reset**, or **Incremental update**.
 
     > [!NOTE]
-    > The default description is **Deploy measurement**. If the description has been customized, you can verify whether a batch job is associated with the entity store by looking at the class name. Batch jobs associated with the entity store will have a class name of **BIMeasurementDeployManagementEntityBatchJob**.
+    > The default description is **Deploy measurement** in older versions and **Full reset** in newer versions. If Data Lake integration is enabled with the option, **Trickle update Data Lake**, a batch job with the description, **Incremental update** is created. If the description has been customized, you can verify whether a batch job is associated with the entity store by looking at the class name. Batch jobs associated with the entity store will have a class name of **BIMeasurementDeployManagementEntityBatchJob**, **BIMeasurementProcessorFull**, or **BIMeasurementProcessorIncremental**.
 
 4. Go to the **Entity store** page (**System Administration \> Setup \> Entity Store**).
 5. Select all measurements that need to be refreshed.
