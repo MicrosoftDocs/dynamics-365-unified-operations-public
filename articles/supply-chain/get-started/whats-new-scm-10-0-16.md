@@ -22,7 +22,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-31 
+ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
 ---
 

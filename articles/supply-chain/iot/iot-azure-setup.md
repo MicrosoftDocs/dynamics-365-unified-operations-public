@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
