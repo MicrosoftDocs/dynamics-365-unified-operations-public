@@ -4,7 +4,6 @@
 title: Demo data screen layouts in Modern POS (MPOS) and Cloud POS
 description: This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 

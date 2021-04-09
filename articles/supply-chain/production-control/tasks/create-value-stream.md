@@ -4,7 +4,6 @@
 title: Create a value stream
 description: Value streams are operating units, that group one or multiple production flows. 
 author: cvocph
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: REVERSE ER function
 description: This topic provides information about how the REVERSE Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 

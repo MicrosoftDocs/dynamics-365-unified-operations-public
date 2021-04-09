@@ -4,7 +4,6 @@
 title: Before you buy Retail
 description: New to Dynamics 365 Commerce? We've put together some guidance to help you, whether you're still evaluating or ready to make a purchase.
 author: jblucher
-manager: AnnBe
 ms.date: 09/28/2017
 ms.topic: article
 ms.prod: 

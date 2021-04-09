@@ -4,7 +4,6 @@
 title: Client images in POS
 description: This topic is for people who implement functionality related to POS client image management in a retail environment. It provides implementation tips and guidance to consider when planning an implementation.
 author: josaw1
-manager: annbe
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 

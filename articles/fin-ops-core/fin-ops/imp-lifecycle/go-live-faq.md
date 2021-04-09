@@ -4,7 +4,6 @@
 title: Go-live for implementation projects FAQ
 description: This topic lists frequently asked questions about how to go live with an implementation project.
 author: sshashi7
-manager: AnnBe
 ms.date: 07/12/2019
 ms.topic: article
 ms.prod: 

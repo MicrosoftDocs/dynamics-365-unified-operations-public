@@ -3,7 +3,6 @@
 title: Statistics on payment practices report
 description: This topic provides information about the Statistics on payment practices report.
 author: anasyash
-manager: AnnBe
 ms.date: 01/29/2021
 ms.topic: article
 ms.prod: 

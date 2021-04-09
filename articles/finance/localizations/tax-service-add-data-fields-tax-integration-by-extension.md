@@ -4,7 +4,6 @@
 title: Add data fields in the tax integration by using extensions
 description: This topic explains how to use X++ extensions to add data fields in the tax integration.
 author: qire
-manager: tfehr
 ms.date: 03/26/2021
 ms.topic: article
 ms.prod: 

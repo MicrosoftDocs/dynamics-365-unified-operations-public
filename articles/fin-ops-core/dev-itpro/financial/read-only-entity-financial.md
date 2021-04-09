@@ -4,7 +4,6 @@
 title: Create read-only entities that expose financial dimensions
 description: In this topic, we describe how to build an entity for registered transactions. 
 author: robinarh
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 

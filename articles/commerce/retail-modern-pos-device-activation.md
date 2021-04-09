@@ -4,8 +4,7 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-manager: AnnBe
-ms.date: 02/11/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -95,7 +94,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 6. Select **Download**, and then select **Retail Modern POS**. Note the following:
 
     - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
-    - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is downloaded and installed silently.
+    - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is no longer downloaded. Install SQL Server (and associated prerequisite features, such as Full-text search) and attempt the installer again.
 
 7. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 8. After the setup installer has been saved, on the Notification bar, select **Run**. (This step might differ, depending on your browser.)
@@ -125,10 +124,7 @@ The Modern POS installer first extracts the associated files and then starts the
     - If a system restart is required, the installer informs you about this requirement, but the installation can typically continue.
     - A sideloaded installation of Modern POS requires a Group Policy change. The installer informs you if this change is required and then makes the change automatically.
 
-2. If you selected offline support, but a valid version of SQL Server isn't found, the installer downloads and installs Microsoft SQL Server 2014 Express with Service Pack 2 (SP2). To meet the prerequisites, SQL Server must have Full-text search installed. Additionally, a minimum of SP2 must be installed for Microsoft SQL Server 2014, or a minimum of Service Pack 3 (SP3) must be installed for Microsoft SQL Server 2012. Note the following:
-
-    - The installer tries to download the correct language. However, if you require a specific language, we highly recommend that you manually install SQL Server. If the installer can't correctly determine the language, it installs the English version of SQL Server 2014 Express with SP2 by default. Typically, after the SQL installation is completed, the system requires a restart before the installation of Modern POS can continue.
-    - This process might require a long time, depending on the speed of the computer and the Internet connection. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this topic.
+2. If you selected offline support, but a valid version of SQL Server isn't found, the installer will fail during the prerequisites check. If a prerequisite fails during this step, first retry the installer. If the installer continues to fail, see the [Troubleshooting](#troubleshooting) section of this topic.
 
 3. The installer installs Modern POS.
 4. On the page that states that installation was successful, select **Close** to exit the installer.
@@ -237,7 +233,7 @@ The device should now be activated and ready to use.
 
 - The installation package that you must use depends on whether you require offline support. The correct package is automatically selected for download. For the offline package, SQL Server must be installed and must meet the requirements for the offline package.
 
-    **Solution:** No action is required. If SQL Server isn't already installed (or if it doesn't meet the requirements), it's downloaded and installed. The installer gives generic information about the download and installation of SQL Server Express 2014. This installation might require a long time.
+    **Solution:** If SQL Server isn't already installed (or if it doesn't meet the requirements), installation of a supported version is required. This installation might require an extended period of time and must include the Full-text search feature.
 
 - The installation occurs only for the administrator user who ran the installer, but not for any other users.
 
@@ -245,8 +241,7 @@ The device should now be activated and ready to use.
 
 - SQL Server isn't successfully downloaded and installed through the self-service Modern POS installer.
 
-    - **Solution 1:** A list of reasons shows the prerequisites that failed. If the list includes **SMO** or **SQL Management Objects**, first try to run the installer again. SQL Server Management Objects (SMO) are installed during SQL Server installation. Therefore, it's possible that the operating system didn't pick up the registration of the executable program that you used. When you run the installer a second time, the prerequisites are retested, and the prerequisite check should correctly verify the required executable program. If the installer continues to fail, restart the system to fully complete the registration of SQL Server, and then rerun the installer.
-    - **Solution 2:** Manually download and install SQL Server (Microsoft SQL Server Express or another version) by using Advanced Tools. During installation, select **Full-text search** as an additional feature.
+    - **Solution 1:** The installer no longer downloads SQL Server automatically.  Download and install a supported version of SQL Server with Full-text search to meet prerequisite installation.
 
 - The installation of Modern POS fails, because the registration of performance (perf) counters failed.
 

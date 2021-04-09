@@ -4,7 +4,6 @@
 title: Add templates to the Open lines in Excel menu
 description: This topic describes how you can promote a template to the Open lines in the Excel menu that is available on journal pages.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

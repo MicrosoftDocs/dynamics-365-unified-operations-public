@@ -4,7 +4,6 @@
 title: Archive inventory transactions
 description: This topic describes how to archive inventory transaction data to help improve system performance.
 author: sherry-zheng
-manager: tfehr
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 
@@ -42,7 +41,7 @@ If an `itemId` and `inventDimId` combination contains only one receipt or issue 
 
 ## Turn on the feature in your system
 
-If your system doesn't already include the features that is described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transactions archive* feature.
+If your system doesn't already include the features that is described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transactions archive* feature. Note that this feature cannot be disabled once it has been enabled.
 
 ## Things to consider before you archive inventory transactions
 

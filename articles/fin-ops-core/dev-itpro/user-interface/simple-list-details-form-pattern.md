@@ -4,7 +4,6 @@
 title: Simple List and Details form pattern
 description: This topic provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 

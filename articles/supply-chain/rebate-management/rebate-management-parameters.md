@@ -4,7 +4,6 @@
 title: Rebate management parameters
 description: This topic describes the Rebate management parameters page. This page contains settings that affect posting, status updates, number sequences, and other behavior.
 author: sherry-zheng
-manager: tfehr
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Fixed asset currency revaluation
 description: This topic provides information about fixed asset currency revaluation for Russia.
 author: Anasyash
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 

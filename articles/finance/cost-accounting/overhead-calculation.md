@@ -4,7 +4,6 @@
 title: Overhead calculation
 description: This topic describes the typical processes for calculating and allocating overhead costs.
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 

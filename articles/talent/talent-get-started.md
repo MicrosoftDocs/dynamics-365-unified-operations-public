@@ -4,7 +4,6 @@
 title: Get started with Talent
 description: This topic provides information about how to adapt the user interface to your preferences, as well as connect to the Help resources that are available within the product, and on the docs.microsoft.com site. 
 author: andreabichsel
-manager: tfehr
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 

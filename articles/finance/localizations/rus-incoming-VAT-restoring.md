@@ -3,7 +3,6 @@
 title: Incoming VAT restoring  
 description: This topic provides information about restoring previously deducted VAT amounts for fixed assets.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 11/12/2019
 ms.topic: article
 ms.prod: 

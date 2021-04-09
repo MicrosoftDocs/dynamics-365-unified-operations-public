@@ -4,7 +4,6 @@
 title: Client FAQ
 description: This article provides answers to frequently asked questions about the Finance and Operations client.
 author: jasongre
-manager: AnnBe
 ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 

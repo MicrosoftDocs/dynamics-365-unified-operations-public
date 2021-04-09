@@ -4,7 +4,6 @@
 title: Configure and work with call center order holds
 description: This topic describes how to work with holds on orders by using Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: 

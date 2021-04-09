@@ -4,7 +4,6 @@
 title: Preview of Dynamics 365 Supply Chain Management 10.0.18 (May 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.18. 
 author: kamaybac
-manager: annbe
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: 

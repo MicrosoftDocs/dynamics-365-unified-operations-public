@@ -4,7 +4,6 @@
 title: Receive vendor fiscal documents (fixed assets - ICMS long term recoverable) (Brazil)
 description: You can post a fiscal document that you receive from the acquisition of fixed assets. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  

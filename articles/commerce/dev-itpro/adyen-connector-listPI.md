@@ -4,7 +4,6 @@
 title: Saving online payment instruments with the Adyen connector
 description: This topic describes how to save payment instruments by using the Adyen connector for e-commerce.
 author: rubendel
-manager: AnnBe
 ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 

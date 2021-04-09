@@ -4,7 +4,6 @@
 title: Customize field descriptions
 description: This article describes how you can customize existing field descriptions and add your own descriptions.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 

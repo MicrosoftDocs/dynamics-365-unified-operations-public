@@ -4,7 +4,6 @@
 title: Customer electronic invoices in Norway
 description: This topic explains how to set up and process customers electronic invoices in Norway.
 author: ilkond
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 

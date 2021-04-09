@@ -4,7 +4,6 @@
 title: Rebate management module overview
 description: This topic provides an overview of the Rebate management module for Microsoft Dynamics 365 Supply Chain Management.
 author: sherry-zheng
-manager: tfehr
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 

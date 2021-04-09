@@ -4,7 +4,6 @@
 title: Peripherals
 description: This topic explains the concepts that are related to Commerce peripherals. 
 author: rubencdelgado
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
@@ -147,6 +146,9 @@ UWP, in the case of peripherals, is related to Windows support for Plug and Play
 ### Keyboard wedge
 
 Keyboard wedge devices send data to the computer as if that data were typed on a keyboard. Therefore, by default, the field that is active at the POS will receive the data that is scanned or swiped. In some cases, this behavior can cause the wrong type of data to be scanned into the wrong field. For example, a bar code might be scanned into a field that is intended for input of credit card data. In many cases, there is logic at the POS that determines whether the data that is scanned or swiped is a bar code or card swipe. Therefore, the data is handled correctly. However, when devices are set up as OPOS instead of keyboard wedge devices, there is more control over how the data from those devices can be consumed, because more is “known” about the device that the data originates from. For example, data from a bar code scanner is automatically recognized as a bar code, and the associated record in the database is found more easily and faster than if a generic string search were used, as in the case of keyboard wedge devices.
+
+> [!NOTE]
+> When keyboard wedge scanners are used in the POS, they must be programmed to send a carriage return, or **Enter** event, after the last scanned character. If this configuration isn't done, keyboard wedge scanners won't function properly. Consult documentation provided by your device manufacturer for details on how to append the carriage return event.  
 
 ### Native printer
 

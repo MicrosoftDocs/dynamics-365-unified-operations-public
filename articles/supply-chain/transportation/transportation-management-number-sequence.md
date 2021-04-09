@@ -4,7 +4,6 @@
 title: Transportation management number sequence
 description: This topic describes how to set up number sequences for transportation management.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 

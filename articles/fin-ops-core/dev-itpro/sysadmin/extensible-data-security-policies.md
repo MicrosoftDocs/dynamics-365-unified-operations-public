@@ -4,7 +4,6 @@
 title: Extensible data security policies 
 description: This topic provides an overview of Extensible Data Security (XDS) policies in Finance and Operations apps.
 author: Peakerbl
-manager: AnnBe
 ms.date: 07/13/2020
 ms.topic: article
 ms.prod: 

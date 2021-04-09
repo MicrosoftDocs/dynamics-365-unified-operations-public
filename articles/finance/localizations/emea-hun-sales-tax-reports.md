@@ -4,7 +4,6 @@
 title: Sales tax reports for Hungary
 description: This topic provides information about the Sales tax declaration information and Itemized VAT statement reports
 author: anasyash
-manager: tfehr
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 

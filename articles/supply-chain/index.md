@@ -4,7 +4,6 @@
 title: Supply Chain Management home page
 description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
 author: kamaybac
-manager: tfehr
 ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: 

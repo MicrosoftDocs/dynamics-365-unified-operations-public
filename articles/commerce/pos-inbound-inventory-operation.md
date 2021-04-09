@@ -4,7 +4,6 @@
 title: Inbound inventory operation in POS
 description: This topic describes capabilities of the point of sale (POS) inbound inventory operation.
 author: hhaines
-manager: annbe
 
 ms.date: 09/17/2020
 ms.topic: article

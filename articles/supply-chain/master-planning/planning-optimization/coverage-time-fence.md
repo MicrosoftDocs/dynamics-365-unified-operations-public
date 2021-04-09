@@ -4,7 +4,6 @@
 title: Coverage time fences
 description: This topic describes how to set up coverage time fences when you're using Planning Optimization. A coverage time fence indicates your planning horizon and limit.
 author: ChristianRytt
-manager: tfehr
 ms.date: 01/18/2021
 ms.topic: article
 ms.prod: 

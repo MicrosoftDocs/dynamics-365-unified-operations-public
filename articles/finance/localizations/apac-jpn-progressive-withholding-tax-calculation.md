@@ -4,7 +4,6 @@
 title: Progressive withholding tax for Japan
 description: This topic provides information about progressive withholding tax in Japan.
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Create a free text invoice
 description: This topic explains how to create free text invoices. 
 author: mikefalkner
-manager: AnnBe 
 ms.date: 08/24/2018
 ms.topic: article 
 ms.prod:  

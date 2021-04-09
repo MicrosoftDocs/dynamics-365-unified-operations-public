@@ -4,7 +4,6 @@
 title: Form 1099 in the public sector
 description: This article provides tips and information about how to set up Form 1099 functionality for Accounts payable in the public sector.
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

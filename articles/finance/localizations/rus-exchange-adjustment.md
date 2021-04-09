@@ -3,7 +3,6 @@
 title: Exchange adjustment
 description: This topic provides information about bank exchange adjustments for Russia.
 author: anasyash
-manager: kfend
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 

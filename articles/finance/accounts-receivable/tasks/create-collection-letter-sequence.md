@@ -4,7 +4,6 @@
 title: Create a collection letter sequence
 description: Use this task guide to create a collection letter sequence. 
 author: mikefalkner
-manager: AnnBe 
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  

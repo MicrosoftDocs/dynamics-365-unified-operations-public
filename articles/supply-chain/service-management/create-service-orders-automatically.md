@@ -4,7 +4,6 @@
 title: Create service orders automatically   
 description: You can create service orders for one service agreement or for several service agreements.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

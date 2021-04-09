@@ -4,7 +4,6 @@
 title: Kuwait overview
 description: This topic provides an overview of functionality specific to Kuwait. 
 author: ilkond
-manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 

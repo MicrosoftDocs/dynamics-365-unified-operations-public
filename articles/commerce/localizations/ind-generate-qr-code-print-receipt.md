@@ -4,7 +4,6 @@
 title: Generate QR codes and print them on receipts
 description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts.
 author: prabhatb2011
-manager: tfehr
 ms.date: 03/14/2021
 ms.topic: article
 ms.prod:

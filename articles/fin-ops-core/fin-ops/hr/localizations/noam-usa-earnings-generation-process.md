@@ -4,7 +4,6 @@
 title: Earnings and earnings generation FAQ
 description: This topic answers some frequently asked questions about earnings and generating earnings.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

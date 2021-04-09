@@ -4,7 +4,6 @@
 title: Design a new ER configuration to generate reports in Word format
 description: This topic explains how users can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 12/17/2020
 ms.topic: business-process 
 ms.prod:  

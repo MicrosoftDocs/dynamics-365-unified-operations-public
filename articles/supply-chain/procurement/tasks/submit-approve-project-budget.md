@@ -4,7 +4,6 @@
 title: Submit and approve project budget
 description: This procedure shows you how to create and submit the budget for a project. 
 author: kamaybac
-manager: tfehr 
 ms.date: 08/13/2019
 ms.topic: business-process 
 ms.prod:  

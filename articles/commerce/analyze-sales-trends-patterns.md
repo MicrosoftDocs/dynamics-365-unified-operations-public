@@ -4,7 +4,6 @@
 title: Analyze sales trends and patterns
 description: You can study sales trends and patterns in real time in Dynamics 365 Commerce.
 author: ashishmsft
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Intent letters - Invoicing usual exporters
 description: This topic provides information about how to set up intent letters and how to use them when you issue invoices.
 author: ilkond
-manager: AnnBe
 ms.date: 12/28/2020
 ms.topic: article
 ms.prod: 

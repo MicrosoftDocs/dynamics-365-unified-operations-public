@@ -4,7 +4,6 @@
 title: Organization administration home page
 description: This topic points to resources that will help you in your organization.
 author: sericks007
-manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,6 @@
 title: Issue customer fiscal documents (Brazil)
 description: You can issue a fiscal document for a customer who bought goods from the fiscal establishment. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/23/2017
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Subscription estimator in Lifecycle Services (LCS)
 description: This topic explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS).
 author: angelmarshall
-manager: AnnBe
 ms.date: 03/25/2021
 ms.topic: article
 ms.prod: 

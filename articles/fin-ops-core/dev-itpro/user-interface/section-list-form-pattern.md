@@ -4,7 +4,6 @@
 title: Form Part Section List form patterns
 description: This topic provides information about the Form Part Section List form patterns, which were developed to show filtered lists inside workspaces.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

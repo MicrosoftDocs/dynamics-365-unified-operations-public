@@ -4,7 +4,6 @@
 title: Dynamics 365 Commerce evaluation environment overview
 description: This topic gives an overview of the Microsoft Dynamics 365 Commerce evaluation environment.
 author: v-chgri
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 

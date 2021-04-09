@@ -4,7 +4,6 @@
 title: Set up benefit accrual plans
 description: This topic describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

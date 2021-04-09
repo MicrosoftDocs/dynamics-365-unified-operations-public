@@ -4,7 +4,6 @@
 title: ER Use Document Management files in format outputs (Part 4 - Run format)
 description: This topic describes how to configure an Electronic reporting format to use Document Management files in ER output. (Part 4)
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

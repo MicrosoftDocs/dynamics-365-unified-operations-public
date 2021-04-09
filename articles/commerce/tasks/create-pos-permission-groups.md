@@ -4,7 +4,6 @@
 title: Create POS permission groups
 description: This topic explains how to create a POS permission group. 
 author: scott-tucker
-manager: AnnBe 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  

@@ -4,7 +4,6 @@
 title: Sweden overview
 description: This topic provides links to documentation resources for Sweden. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

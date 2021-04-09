@@ -4,7 +4,6 @@
 title: Tax engine integration
 description: This topic provides information about Tax engine integration.
 author: yijialuan
-manager: AnnBe
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 

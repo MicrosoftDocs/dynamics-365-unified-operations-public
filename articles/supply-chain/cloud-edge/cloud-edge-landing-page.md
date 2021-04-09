@@ -4,7 +4,6 @@
 title: Cloud and edge scale units for manufacturing and warehouse management workloads
 description: This topic provides information about cloud and edge scale units for manufacturing and warehouse management workloads.
 author: cabeln
-manager: 
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 

@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Build automation that uses Microsoft-hosted agents and Azure Pipelines
 description: The topic explains how you can automate the process of building X++ on any agents in Microsoft Azure DevOps.
 author: jorisdg
-manager: AnnBe
 ms.date: 03/05/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Build automation that uses Microsoft-hosted agents and Azure Pipelines
@@ -164,6 +150,9 @@ A full pipeline should consist of at least the following steps:
 6. Publish the deployable package artifact as the build output.
 
 For the deployable package to be created, NuGet must be readily available on the build agent. Therefore, the **NuGet tool installer** task in Azure DevOps must be run before the step that creates the package.
+
+> [!NOTE]
+> If your source code repository includes binary packages from third parties like ISVs, you have to explicitly add those to the packaging step. For more information, see [Create deployable packages in Azure Pipelines](pipeline-create-deployable-package.md).
 
 > [!NOTE]
 > Because of semantic versioning features in NuGet version 3.4 and later, make sure that the task installs version 3.3.0 or earlier. Currently, deployable package generation doesn't support semantic versioning.

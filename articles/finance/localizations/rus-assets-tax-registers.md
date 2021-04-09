@@ -3,7 +3,6 @@
 title: Fixed assets and intangible assets registers
 description: This topic provides information about fixed assets and intangible assets registers.
 author: anasyash
-manager: AnnBe
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: 

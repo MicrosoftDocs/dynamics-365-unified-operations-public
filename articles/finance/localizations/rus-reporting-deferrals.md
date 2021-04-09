@@ -3,7 +3,6 @@
 title: Reporting for deferrals (Russia)
 description: This topic provides information about the various reports that are available for deferrals.
 author: anasyash
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 

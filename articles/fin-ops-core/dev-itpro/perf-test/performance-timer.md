@@ -1,16 +1,11 @@
 ---
-# required metadata
-
 title: Performance timer
 description: This topic provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow. 
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

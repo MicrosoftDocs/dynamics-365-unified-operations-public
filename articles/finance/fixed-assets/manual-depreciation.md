@@ -4,7 +4,6 @@
 title: Manual depreciation
 description: This article gives an overview of the manual depreciation method.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

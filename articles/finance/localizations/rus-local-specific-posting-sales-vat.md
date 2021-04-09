@@ -3,7 +3,6 @@
 title: Local specific posting of sales VAT
 description: This topic explains specific settings for posting value-added tax (VAT) payable transactions in accordance with Russian legislation.
 author: anasyash
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 

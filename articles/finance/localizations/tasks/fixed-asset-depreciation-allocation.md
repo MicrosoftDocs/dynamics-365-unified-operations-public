@@ -4,7 +4,6 @@
 title: Setup fixed asset depreciation allocation
 description: In Japan, the depreciation expenses of a particular fixed asset can be shared among multiple departments. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

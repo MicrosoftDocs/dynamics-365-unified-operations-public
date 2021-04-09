@@ -4,7 +4,6 @@
 title: Fiscal printer integration sample for Poland
 description: This topic provides an overview of the fiscal integration sample for Poland.
 author: josaw
-manager: annbe
 ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 

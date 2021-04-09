@@ -4,7 +4,6 @@
 title: Manage attributes and attribute groups
 description: This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
 author: ashishmsft
-manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
 ms.prod: 

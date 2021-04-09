@@ -4,7 +4,6 @@
 title: Default financial dimensions
 description: This topic describes where the financial dimensions originate, the APIs that are used to merge them, and how they are used to create ledger dimensions.
 author: jasonsto
-manager: annbe
 ms.date: 01/09/2020
 ms.topic: article
 ms.prod: 

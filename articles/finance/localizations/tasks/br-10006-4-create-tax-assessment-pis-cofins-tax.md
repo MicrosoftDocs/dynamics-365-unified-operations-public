@@ -4,7 +4,6 @@
 title: Create a tax assessment - PIS and COFINS tax (Brazil)
 description: You can create the tax assessment for PIS/COFINS contributions for a given booking period. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  

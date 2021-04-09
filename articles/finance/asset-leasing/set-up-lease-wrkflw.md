@@ -4,7 +4,6 @@
 title: Set up lease approval workflows
 description: The topic explains how to set up an approval workflow that will run when a new lease is created.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 

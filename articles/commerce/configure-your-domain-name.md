@@ -4,7 +4,6 @@
 title: Configure your domain name
 description: This topic explains how to configure a domain name for a Microsoft Dynamics 365 e-commerce site.
 author: psimolin
-manager: AnnBe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 

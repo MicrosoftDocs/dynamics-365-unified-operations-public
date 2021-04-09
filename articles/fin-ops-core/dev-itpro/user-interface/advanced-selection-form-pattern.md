@@ -4,7 +4,6 @@
 title: Advanced selection form pattern
 description: This article provides information about the Advanced Selection form pattern, which lets users filter and select items from a large, wide list.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 

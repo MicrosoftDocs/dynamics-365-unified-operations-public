@@ -4,7 +4,6 @@
 title: Create service agreement groups  
 description: Service agreement groups are useful for sorting and filtering service agreements.
 author: ShylaThompson
-manager: tfehr
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 

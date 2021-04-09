@@ -4,7 +4,6 @@
 title: Customization analysis in Lifecycle Services (LCS)
 description: Customization analysis is a Microsoft Dynamics AX 2012 automated tool that validates model files against best-practice rules. 
 author: RobinARH
-manager: AnnBe
 ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 

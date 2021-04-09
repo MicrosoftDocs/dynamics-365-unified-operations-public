@@ -4,7 +4,6 @@
 title: On-premises deployment home page
 description: This topic provides information and links to content about on-premises deployments.
 author: sericks007
-manager: AnnBe
 ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 

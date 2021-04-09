@@ -1,16 +1,11 @@
 ---
-# required metadata
-
 title: Performance SDK and multiuser testing in on-premises environments
 description: This topic explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
 author: hasaid
-manager: AnnBe
 ms.date: 03/22/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

@@ -4,7 +4,6 @@
 title: Set up taxes, tax regions, tax codes, and tax groups
 description: This topic describes the configuration of tax data and employer tax regions, including how to create tax regions, and then set up tax codes and tax groups.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 

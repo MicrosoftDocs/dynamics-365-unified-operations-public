@@ -4,7 +4,6 @@
 title: Buy Finance + Operations (on-premises)
 description: This topic explains how to purchase and deploy Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: cabeln 
-manager: AnnBe
 ms.date: 03/24/2021
 ms.topic: article
 ms.prod: 

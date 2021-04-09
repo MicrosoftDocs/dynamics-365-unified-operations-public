@@ -4,7 +4,6 @@
 title: Define vendor payment fees
 description: Set up vendor payment fees. 
 author: abruer
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  

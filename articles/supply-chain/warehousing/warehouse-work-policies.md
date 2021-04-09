@@ -4,7 +4,6 @@
 title: Work policies
 description: This topic explains how to set up work policies.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: 

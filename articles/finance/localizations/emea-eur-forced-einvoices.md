@@ -4,7 +4,6 @@
 title: Forced electronic invoices generation
 description: This topic explains how to set up and use the functionality for forced generation of electronic invoices.
 author: ilkond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 

@@ -12,7 +12,6 @@ ms.technology:
 
 # optional metadata
 
-manager: annbe
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 

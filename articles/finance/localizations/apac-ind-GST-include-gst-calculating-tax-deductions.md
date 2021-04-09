@@ -4,7 +4,6 @@
 title: Include GST when calculating tax deductions
 description: This topic explains how to include Goods and Services Tax (GST) on a calculated tax deduction.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 

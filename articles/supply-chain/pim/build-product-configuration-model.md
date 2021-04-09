@@ -4,7 +4,6 @@
 title: Product configuration overview
 description: The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.
 author: cvocph
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
