@@ -45,7 +45,6 @@ This topic provides details and an example query for the Payroll details for the
 | **Valid to**<br>validto<br>*Date Time Offset* | Read-only<br>Required |The date the position details are valid from.  |
 | **Valid from**<br>validfrom<br>*Date Time Offset* | Read-only<br>Required |The date the position details are valid to.  |
 
-
 **Query**
 
 **Request**
