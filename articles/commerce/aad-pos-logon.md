@@ -66,7 +66,7 @@ To associate Azure AD accounts with POS users in Commerce headquarters, follow t
 
 After the configuration steps above, the **Alias**, **UPN**, and **External sub identifier** fields on the **Commerce** tab of the worker's details page will be filled in.
 
-You must run the **1060 (Staff)** job in **Retail and Commerce > Retail and Commerce IT > Distribution schedule** to synchronize the latest POS users and Azure AD accounts association data to the channel.
+You must run the **1060 (Staff)** job in **Retail and Commerce > Retail and Commerce IT > Distribution schedule** to synchronize the latest POS user and Azure AD account data to the channel.
 
 > [!NOTE]
 > As a best practice, after worker information such as password, POS permission, associated Azure AD account, or employee address book is updated in Commerce headquarters, it is highly recommended to run the **1060 (Staff)** job to synchronize the latest worker information to the channel. The POS client can then fetch the correct data for user authentication and authorization checks.
