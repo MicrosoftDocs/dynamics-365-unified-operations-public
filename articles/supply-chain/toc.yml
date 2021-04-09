@@ -2167,7 +2167,7 @@
             href: production-control/phantom-items.md
           - name: BOM calculations
             href: cost-management/bom-calculations.md
-          - name: Manage unit of measure
+          - name: Manage units of measure
             href: pim/tasks/manage-unit-measure.md
           - name: Production parameters in Manufacturing execution
             href: production-control/production-parameters-manufacturing-execution.md
