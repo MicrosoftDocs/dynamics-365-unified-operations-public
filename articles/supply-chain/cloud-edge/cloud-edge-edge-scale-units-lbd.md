@@ -34,9 +34,7 @@ The following table provides an overview of the deployment steps.
 |2. Set up and deploy an LBD environment with an *empty* database. | Deploy the LBD environment through LCS with latest Preview Early Access Program (PEAP) build and empty database. For more information, see [Setup and deploy an LBD environment with empty database](#set-up-deploy). |
 |3. Upload target packages into LBD project assets  in LCS.|Prepare application, platform and customizations package that you use across hub and edge scale unit. For more information, see [Upload target packages into LBD project assets in LCS](#upload-packages) |
 |4. Service the LBD environment with the target packages.|This ensures that the hub and spoke have the same build and customizations deployed. For more information, see [Service the LBD environment with target packages](#service-target-packages)|
-|5. Set up the cloud and edge pre-deployment script on the LBD environment.|Configure the script that injects the attributes needed in the distributed topology topology (instance ID, triggers enabled, and scale unit enabled). For more information, see [Set up the cloud and edge pre-deployment script on the LBD environment](#deployment-script)|
-|6. Run the "update settings" action through LCS.|Redeploy your environment with the chosen settings but also the pre/deployment scripts. For more information, see [Run the "update settings" action through LCS](#run-update-settings)|
-|7. Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#step-2-assign-your-lbd-edge-scale-unit-to-a-hub) |See [Assign your LBD edge scale unit to a hub](#assign-edge-to-hub) |
+|5. Compete the scale unit configuration and workload assignment as described in [Assign your LBD edge scale unit to a hub](#step-2-assign-your-lbd-edge-scale-unit-to-a-hub) |See [Assign your LBD edge scale unit to a hub](#assign-edge-to-hub) |
 
 <a name="set-up-deploy"></a>
 
@@ -46,9 +44,27 @@ This step creates a functional LBD environment. However, the environment won't n
 
 Do the following:
 
-1. Follow the instructions given in [Setup and deploy on-premises environments (Platform update 12 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md). Use the latest PEAP build.
-1. Set up a database that is either empty or contains demo data as described in [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md#configuredb). Use the empty `data.bak` file for this step.
-1. Deploy the environment using the latest available application and platform version.
+1. Follow the instructions given in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
+
+> [!IMPORTANT]
+> Read the rest of this section before you proceed to carry out the steps in the guide above.
+
+1. When describing your configuration in the infrastructure\ConfigTemplate.xml do not specify any MR (Financial Reporting) nodes.
+1. Set up a database that contains empty data as described in [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Use the empty `data.bak` file for this step.
+1. Set up the pre-deployment script. For more information see [Local agent pre-deployment and post-deployment scripts](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md)
+
+    - Copy the contents from the `ScaleUnit` folder in the `Infrastructure Scripts` to the `Scripts` folder on the agent file storage share that was set up on the environment. A typical path is: `\\lbdiscsi01\agent\Scripts`.
+    - Create the `PreDeployment.ps1` script that will invoke the scripts with the necessary parameters. The pre-deployment must be placed in the `Scripts` folder on the agent share to be run. A typical path is: `\\lbdiscsi01\agent\Scripts\PreDeployment.ps1`.
+    - The content of `PreDeployment.ps1` will resemble the following example:
+
+        ```powershell
+        $agentShare = '\\lbdiscsi01\agent'
+        
+        Write-Output "AgentShare is set to $agentShare" 
+        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
+        ```
+
+1. Deploy the environment using the latest base topology available.
 
 <a name="upload-packages"></a>
 
@@ -75,42 +91,6 @@ Do the following:
     ![Service LBD Environment 1](media/cloud_edge-lbd-lcs-servicelbdenv1.png "Service LBD Environment 1")
 
     ![Service LBD Environment 2](media/cloud_edge-lbd-lcs-servicelbdenv2.png "Service LBD Environment 2")
-
-<a name="deployment-script"></a>
-
-## Set up the cloud and edge pre-deployment script on the LBD environment
-
-Do the following:
-
-1. Download the latest release of the infrastructure scripts. (This is already part of [setting up an LBD environment](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md).)
-
-1. Set up the pre-deployment script.
-
-    - Copy the `Configure-CloudAndEdge.ps1` script from the `Infrastructure Scripts` folder to the `Scripts` folder on the agent file storage share that was set up on the environment. A typical path is: `\\lbdiscsi01\agent\Scripts\Configure-CloudAndEdge.ps1`.
-    - Copy the `D365FO-OP` folder from the `Infrastructure Scripts` folder to the `Scripts` folder in the agent file storage share that was set up on the environment. A typical path is: `\\lbdiscsi01\agent\Scripts\D365FO-OP`.
-    - Create the `PreDeployment.ps1` script that will invoke `Configure-CloudAndEdge.ps1` with the necessary parameters. The pre-deployment must be placed in the `Scripts` folder on the agent share to be run. A typical path is: `\\lbdiscsi01\agent\Scripts\PreDeployment.ps1`.
-    - The content of `PreDeployment.ps1` will resemble the following example:
-
-        ```plaintext
-        $agentShare = '\\lbdiscsi01\agent'
-        
-        Write-Output "AgentShare is set to $agentShare" 
-        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
-        ```
-
-<a name="run-update-settings"></a>
-
-## Run the "update settings" action through LCS
-
-In this step, you will redeploy the environment, but it will run the previously configured pre-deployment script. This script will inject the necessary attributes so they can be passed to sync processes when you associate scale unit to a hub. Here are some guidelines:
-
-- Trigger the **Update settings** action from LCS without changing any of the values in the form. This will redeploy the environment and `PreDeployment.ps1` will be invoked before deployment, which will update environment's topology.
-- The **Update settings** action is typically used to update topology values such as certificate thumbprints, but you can also use it for this purpose you leave all the values unchanged.
-- The **Update settings** action consists of two steps:
-  - **Prepare** - Trigger this through LCS by selecting **Maintain > Update settings**.
-  - **Deploy** - Trigger this after the preparation step is finished, which takes a few minutes. You can trigger deployment from the environment's details LCS page.
-
-  ![Deploy updates from LBD](media/cloud_edge-lbd-lcs-servicelbd-updatesettings.png "Deploy updates from LBD")
 
 <a name="assign-edge-to-hub"></a>
 
