@@ -76,5 +76,10 @@ In the **Warehouse order lines** view, you can monitor the progress of inbound r
 - Go to **Warehouse management \> Inquiries and reports \> Warehouse order lines**, and use the filter to find the lines that you're looking for.
 - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**, and open the relevant purchase order. In the **Purchase order lines** section, select one or more lines, and then, on the toolbar, select **Warehouse \> Warehouse receipt entries**.
 
+> [!Note]
+> **Privacy Notice**
+>
+> Enabling a Cloud Scale Unit will allow for the transfer of certain customer data, including personal data, to the geographic region where you've configured your Cloud Scale Unit. To learn more about Cloud Scale Units, read our [Documentation](https://aka.ms/scmcne).
+Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
