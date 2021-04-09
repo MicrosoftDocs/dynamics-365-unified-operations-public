@@ -32,14 +32,14 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-The category request process allows vendors to request new procurement categories to associate with their vendor account. These procurement categories can then be utilized by the related procurement and sourcing processes. For more information, see [Procurement catalogs overview - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-catalogs). These requests are initiated in the **Vendor information** workspace by the vendor. They are then submitted to your agency for review. Approved categories are added to the list of procurement categories on the vendor&#39;s account. This functionality requires the **Allow vendors to apply for procurement categories through vendor collaboration** feature. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
+The category request process allows vendors to request new procurement categories to associate with their vendor account. These procurement categories can then be utilized by the related procurement and sourcing processes. For more information, see [Procurement catalogs overview - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/procurement-catalogs). These requests are started in the **Vendor information** workspace by the vendor. They're then submitted to your agency for review. Approved categories are added to the list of procurement categories on the vendor&#39;s account. This functionality requires the **Allow vendors to apply for procurement categories through vendor collaboration** feature. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help with enabling this feature.
 
 After this feature is enabled, procurement categories can still be added to vendors manually when necessary. For more information, see [Approve vendors for specific procurement categories - Supply Chain Management | Dynamics 365 | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories#:~:text=%20Approve%20vendors%20for%20specific%20procurement%20categories%20,DESK%20ACCESSORIES%20%28OFFICE...%207%20Select%20Save.%20More%20).
 
 ## Vendor collaboration requirements
-For vendors to initiate category requests they must be setup for vendor collaboration.
+For vendors to interact with category requests they must be set up for vendor collaboration.
 
-The vendor must have at least one vendor collaboration user with one or more of the following security roles. Vendor users with either of these roles can create and submit category requests.
+The vendor must have at least one vendor collaboration user. This vendor user must have one or more of the following security roles. Vendor users with either of these roles can create and submit category requests.
 - Vendor contact (external)
 - Vendor admin (external)
 
@@ -48,7 +48,7 @@ For more information, see [Set up and maintain vendor collaboration - Supply Cha
 ## Vendor category request workflow setup
 The **Vendor category request workflow** must be set up in the procurement and sourcing workflows. Vendors will submit new category requests that you can review and approve. Requested procurement categories are added to a vendor account after a category request is approved.
 
-The following is an example of setting up a simple **Vendor category request workflow** with a single approver. You will need to review your internal processes to determine what workflow setup is appropriate for your agency.
+The following example shows how to set up up a simple **Vendor category request workflow** with a single approver. You'll need to review your internal processes to determine what workflow setup is appropriate for your agency.
 
 1. **Open Procurement and sourcing > Setup > Procurement and sourcing workflows**.
 2. Select **New** from the Action Pane.
@@ -76,10 +76,10 @@ The following is an example of setting up a simple **Vendor category request wor
 24. Select **Save and close**.
 25. Enter **Version notes** for the workflow.
 26. Select **OK** to save the workflow.
-27. Select **Activate the new version** if you are ready to begin testing this workflow. Otherwise select **Do not activate the new version**.
+27. Select **Activate the new version** if you're ready to begin testing this workflow. Otherwise select **Do not activate the new version**.
 28. Select **OK** to complete the workflow setup.
 
-Tip: If your agency does not require approval of category requests, then workflow should be configured for automatic approval.
+Tip: If your agency doesn't require approval of category requests, then workflow should be configured for automatic approval.
 
 For more information on workflow setup, see [Set Up Workflows - Business Central | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/business-central/across-set-up-workflows).
 
@@ -153,7 +153,7 @@ To view completed requests:
   - _Rejected_ – Indicates that the request was rejected. If needed, a new category request can be created.
 
 ## Reviewing a category request
-This section describes how customers can approve, reject, and delegate vendor submitted category requests as well as view completed requests. These workflow actions are for the entire category request.
+This section describes how customers can approve, reject, and delegate vendor submitted category requests and view completed requests. These workflow actions are for the entire category request.
 
 To view category requests:
 
@@ -203,7 +203,7 @@ To delegate a pending category request to another user:
 6. Enter additional information in the **Comment** box if needed.
 7. Select **Delegate** to complete the delegation. The user selected during delegation can now review the category request.
 
-To view a vendors procurement categories after a category request is approved:
+To view procurement categories for a vendor after a category request is approved:
 
 1. Open **Accounts payable > Vendors > All vendors**.
 2. The **All vendors** page opens.
@@ -212,4 +212,4 @@ To view a vendors procurement categories after a category request is approved:
 5. Select **Set up** and **Categories** from the ribbon.
 6. The **Categories** page opens.
 7. Procurement categories added by the category request show in the **Procurement** FastTab.
-8. From here changes can be made, such as setting the **Vendor category status** to _Preferred_.
+8. From the **Procurement** FastTab changes can be made, such as setting the **Vendor category status** to _Preferred_.
