@@ -54,7 +54,7 @@ When you are satisfied with that everything is working well, then consider at so
 
 You upgrade parameter files by using the Parameter file Upgrade available as a action located under the New drop-down action menu. First select test cases you want to process parameter files upgrades for, and then click the arrow drop-down action “Upgrade Parameter files (will auto generate Test Execution files) as seen here below.
 
-SCREEN - New drop down menu
+![New drop down menu](media/new_dropdown_menu.png)
 
 The process will upgrade for all selected test cases.
 
@@ -64,15 +64,15 @@ The process complete by presenting a summary. This shows the total number of sel
 
 This is an example of the summary dialog:
 
-SCREEN - Upgrade summary message
+![Upgrade summary message](media/upgrade_summary.png)
 
 The summary mentions further detail can be found clicking the triangle icon on test case where upgrade did not complete fully. This shows how that the triangle icon appear:
 
-SCREEN - Upgrade warning triangle
+![Upgrade warning triangle](media/upgrade_triangle.png)
 
 This is an example message that is provide when clicking the yellow warning triangle icon:
 
-SCREEN - Updade warning triangle message
+![Upgade warning triangle message](media/upgrade_triangle_error.png)
 
 This upgrade process can safely be run multiple times as recall that already upgraded files will be skipped. Notice however that new PARTIAL files will be saves, and this may override work in progress you have from earlier. It is advised to complete all PARTIAL files and take them into use by renaming them before running upgrade again.
 
