@@ -31,9 +31,7 @@ submittedBy: crytt@microsoft.com
 
 KB Number: 4614408
 
-When Customer is not selecting the warehouse in the demand forecast parameters and when he is selectingthe demand forecast lines, he is still able to see the warehouse column even it is not selected in the parameters.
-
-
+When Customer does not select the warehouse in the demand forecast parameters and when he selects the demand forecast lines, he is still able to see the warehouse column even though it was not selected in the parameters.
 
 ## Resolution
 The dimension settings under Demand forecasting parameters are not related to the shown dimenstions on "Manual forecast entry -> Demand forecast lines".
