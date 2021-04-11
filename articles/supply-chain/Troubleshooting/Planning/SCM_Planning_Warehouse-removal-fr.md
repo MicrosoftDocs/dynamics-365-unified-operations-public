@@ -31,7 +31,7 @@ submittedBy: crytt@microsoft.com
 
 KB Number: 4614408
 
-When Customer isnot selecting the warehouse in the demand forecast parameters and when he is selectingthe demand forecast lines, he is till able to see the warehouse column even itis not selected in the parameters.
+When Customer is not selecting the warehouse in the demand forecast parameters and when he is selectingthe demand forecast lines, he is still able to see the warehouse column even it is not selected in the parameters.
 
 
 
