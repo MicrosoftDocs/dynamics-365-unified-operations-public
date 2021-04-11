@@ -99,7 +99,7 @@ For more information, see [Upgrade data in development or demo environments](upg
 
 ## Troubleshooting data upgrade script errors
 
-There are options that you let you resume the data upgrade where it last stopped. You can also record any data upgrade script errors with call stacks to a table in the database. For development scenarios, you can skip failed scripts and continue to run the upgrade.
+There are options that let you resume the data upgrade where it last stopped. You can also record any data upgrade script errors with call stacks to a table in the database. For development scenarios, you can skip failed scripts and continue to run the upgrade.
 
 For more details, see the [main data upgrade topic](upgrade-data-to-latest-update.md#troubleshoot-upgrade-script-errors).
 
