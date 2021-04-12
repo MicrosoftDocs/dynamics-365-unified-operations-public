@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic describes the relationship between journals and asset books when you create a fixed asset acquisition or depreciation proposal through a batch job. You can define the maximum number of books that are included for each acquisition and for depreciation by using the fields in the **Number of books per journal** section on the **General** tab of the **Fixed assets parameters** page (**Fixed assets \> Setup \> Fixed assets parameters**). These fields let you distribute the number of asset books per acquisition journal and depreciation journal.
 
-Before you can use this feature, it must be turned on in your system. Admins can use the Feature management workspace to check the status of the feature and turn it on if it's required. In the Feature management workspace, find and select the feature that's named Asset leasing feature, and then select Enable now.
+Before you can use this feature, it must be turned on in your system. Admins can use the **Feature management** workspace to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, find and select the feature that's named **Asset leasing**, and then click the **Enable now** button.
 
 For an acquisition proposal, the default value is at least 10,000 books. For a depreciation proposal, the default value is at least 2,000 books.
 
