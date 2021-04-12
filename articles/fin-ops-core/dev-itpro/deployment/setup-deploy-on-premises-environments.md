@@ -35,7 +35,7 @@ The process for deploying on-premises environments differs between Platform upda
 
 For setup instructions, see: 
 - [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md)
-- [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md)
+- [Set up and deploy on-premises environments (Platform updates 8 and 11)](./setup-deploy-on-premises-pu12.md)
 
 
 > [!NOTE]

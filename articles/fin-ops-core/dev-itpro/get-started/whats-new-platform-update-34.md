@@ -38,9 +38,9 @@ This topic lists the platform updates for version 10.0.10 of Finance and Operati
 
 ## Features included in this release
 
-- [Embed actions in the message bar](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/embed-actions-message-bar) - For more information, see [Messaging APIs - Action center, message bar, and message details](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/messaging-api-center-bar-details).
-- [Updates to Saved views](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--saved-views--phase-2) - For more information, see [Saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views) and [Task recorder resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
-- [Continued stabilization of the new grid control](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2) - For more information, see [Grid capabilities](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities?toc=/dynamics365/finance/toc.json). 
+- [Embed actions in the message bar](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/embed-actions-message-bar) - For more information, see [Messaging APIs - Action center, message bar, and message details](../user-interface/messaging-api-center-bar-details.md).
+- [Updates to Saved views](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--saved-views--phase-2) - For more information, see [Saved views](../../fin-ops/get-started/saved-views.md) and [Task recorder resources](../user-interface/task-recorder.md).
+- [Continued stabilization of the new grid control](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2) - For more information, see [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md?toc=%2fdynamics365%2ffinance%2ftoc.json). 
 
 
 ## Additional resources
@@ -53,7 +53,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 

@@ -34,7 +34,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
 ### Option 1: Use a configuration file (preferred option)
 
-**Reference document:** [Add or remove nodes to a standalone Service Fabric cluster running on Windows Server](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes)
+**Reference document:** [Add or remove nodes to a standalone Service Fabric cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes)
 
 1. In Service Fabric Explorer, select **Cluster**, and make a note of the Microsoft Service Fabric cluster version. For this example, the cluster version is **6.5.676.9590**.
 
@@ -218,7 +218,7 @@ The next step is to start a new AOS server.
 2. If you're adding a new server to an existing cluster, update the ConfigTemplate.xml file so that it contains the additional information. This information will be used when you push out the prerequisites and apply settings through Windows PowerShell scripts.
 3. Make sure that you've added the **AXServiceUser** and **svc-AXSF\$** group Managed Service Accounts (gMSAs) to the local admin group on the AOS server.
 
-    After the server is connected to the domain, you must follow the prerequisite steps for on-premises environments in [Set up and deploy on-premises environments (Platform update 12 and later)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12#follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine). The following steps summarize those prerequisite steps.
+    After the server is connected to the domain, you must follow the prerequisite steps for on-premises environments in [Set up and deploy on-premises environments (Platform update 12 and later)](./setup-deploy-on-premises-pu12.md#follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine). The following steps summarize those prerequisite steps.
 
 4. Copy the contents of each infrastructure\\VMs\<VMName\> folder into the corresponding virtual machine (VM). (If you use remoting scripts, they will automatically copy the contents to the target VMs.) Then run the following Windows PowerShell scripts as an admin.
 

@@ -40,17 +40,17 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
+The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
--  [Authentication for Finance and Operations apps upgraded to OWIN OpenID Connect](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/authentication-finance-operations-apps-upgraded-owin-openid-connect)
+-  [Authentication for Finance and Operations apps upgraded to OWIN OpenID Connect](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/authentication-finance-operations-apps-upgraded-owin-openid-connect)
 
--  [Allow configuration of the publish batch size for the Excel add-in](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [View and update entity data with Excel](../office-integration/use-excel-add-in.md).
+-  [Allow configuration of the publish batch size for the Excel add-in](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/allow-configuration-publish-batch-size-excel-add-in)<br>- For more information, see [View and update entity data with Excel](../office-integration/use-excel-add-in.md).
 
 - [Extra NuGet file requires manual update to hosted Azure DevOps build pipeline](../dev-tools/pipeline-nuget-split.md)
 
--  [Align interaction patterns for combo boxes with those of look-up controls](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/align-interaction-patterns-combo-boxes-those-look-up-controls)
+-  [Align interaction patterns for combo boxes with those of look-up controls](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/align-interaction-patterns-combo-boxes-those-look-up-controls)
 
-- [(Preview) Ensure required unbound controls are filled in](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/ensure-required-unbound-controls-are-filled)
+- [(Preview) Ensure required unbound controls are filled in](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/ensure-required-unbound-controls-are-filled)
 
 - Allow admins to select default document types<br>- For more information, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
 
@@ -70,7 +70,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2021 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2021 release wave 1 plan](/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 

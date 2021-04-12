@@ -36,7 +36,7 @@ This topic describes features that have been removed, or that are planned for re
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
 ## Feature removed effective January 28, 2021
 
@@ -129,7 +129,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | In general, custom code offers limited benefits while at the same time, requires significant resourcing and compute to support. Custom code is primarily used by report authors to call public methods from a custom code assembly. However, the cloud-hosted service does not support references to custom assemblies for SSRS reports. |
-| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Replaced by another feature?**   | Report authors may choose to continue referencing public .NET APIs for Math, Conversion, and Format operations from any textbox expression. For more information, see [Add Code to a Report (SSRS)](./sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
 | **Product areas affected**         | Subset of application report designs defined in RDL that contain custom code. |
 | **Deployment option**              | All |
 | **Status**                         | With version 10.0.13, the compiler will begin issuing a warning for instances where custom code is detected in a SSRS report definition. To fix the issue, open the report design definition and remove all custom code artifacts. This warning will be replaced with a compiler error in a future update.   |
@@ -184,7 +184,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The process for moving IP to safe lists has changed. Self-service no longer supports IP safe lists. |
-| **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access).|
 | **Product areas affected**         | Security |
 | **Deployment option**              | Cloud |
 | **Status**                         | **Deprecated:** This feature is fully-deprecated for self-service deployments. |
@@ -229,7 +229,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Workflow |
 | **Deployment option**              | All |
-| **Status**                         | The user selection drop-down list was removed from the request change dialog box in Platform update 32. Request change requests will be automatically sent to the originator as intended. For more information about this functionality, see [Actions in workflow approval processes](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change). |
+| **Status**                         | The user selection drop-down list was removed from the request change dialog box in Platform update 32. Request change requests will be automatically sent to the originator as intended. For more information about this functionality, see [Actions in workflow approval processes](../../fin-ops/organization-administration/workflow-actions.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#request-change). |
 
 ### Embedded drill-through links are no longer supported in paginated documents rendered by the cloud-hosted service 
 
@@ -239,7 +239,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Reporting |
 | **Deployment option**              | All |
-| **Status**                         | This feature is actively being removed from the service.<br><br>The modern client offers numerous options for producing views that include auto-generated links to assist in navigating the application. Paginated documents rendered by the service are recommended for external communications that are emailed, archived, and printed for recipients. We have improved the experience for previewing documents directly in the browser, which offers direct access to local printers. For more information, see [Preview PDF documents with an embedded viewer](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents). |
+| **Status**                         | This feature is actively being removed from the service.<br><br>The modern client offers numerous options for producing views that include auto-generated links to assist in navigating the application. Paginated documents rendered by the service are recommended for external communications that are emailed, archived, and printed for recipients. We have improved the experience for previewing documents directly in the browser, which offers direct access to local printers. For more information, see [Preview PDF documents with an embedded viewer](../analytics/preview-pdf-documents.md). |
 
 ## Previous announcements about removed or deprecated features
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../migration-upgrade/deprecated-features.md).

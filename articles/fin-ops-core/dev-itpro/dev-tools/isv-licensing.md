@@ -41,7 +41,7 @@ Each ISV solution that is tied to a license runs only when a valid license key e
 
 ### There are two types of license: Boolean and Number
 
-ISVs can create two types of license: **Boolean** and **Number**. ISVs can associate an expiration date with either type of license. This expiration date is applied only to the ISV licenses and is independent of the system expiration date. A Boolean license is a simple activation license. The type of license (**Boolean** or **Number**) is set through a property in the license code node. ISVs can write their own custom logic to check the count that is provided in the ISV license, to make sure that their solutions are being used within the license terms. For more information, see [Licensing Framework for ISVs](https://msdn.microsoft.com/library/jj677284.aspx).
+ISVs can create two types of license: **Boolean** and **Number**. ISVs can associate an expiration date with either type of license. This expiration date is applied only to the ISV licenses and is independent of the system expiration date. A Boolean license is a simple activation license. The type of license (**Boolean** or **Number**) is set through a property in the license code node. ISVs can write their own custom logic to check the count that is provided in the ISV license, to make sure that their solutions are being used within the license terms. For more information, see [Licensing Framework for ISVs](/dynamicsax-2012/developer/licensing-framework-for-isvs-of-microsoft-dynamics-ax).
 
 ### License validation errors
 
@@ -212,7 +212,7 @@ For Platform update 34 and earlier:
     makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
     ```
 
-    For more information, see the [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx) documentation.
+    For more information, see the [MakeCert](/windows/win32/seccrypto/makecert) documentation.
 
 2. Create a certificate by using the CA.
 

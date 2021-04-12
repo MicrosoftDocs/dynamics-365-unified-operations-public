@@ -256,7 +256,7 @@ The controller can make DSR requests regarding telemetry data by using the [Micr
 
 ## Representation of a person in Finance and Operations
 
-Finance and Operations has a common [Global address book](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
+Finance and Operations has a common [Global address book](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
 
 ![Data model for the Global address book](../media/gdpr-address-data-model.jpg)
 
@@ -277,7 +277,7 @@ Roles that are associated with party records are referred to as party roles. The
 
 When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this topic, a **person** is a type of **party** that plays a **role**.
 
-Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
+Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
 
 ## The Person search report
 
@@ -292,7 +292,7 @@ The Person search report provides additional capabilities in the **Data manageme
 
 When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this topic, a **person** is a type of **party** that plays a **role**.
 
-Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
+Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
 
 ## Additional notes that apply to requests for data
 
@@ -327,7 +327,7 @@ You should expect data requests to come to your company. You can categorize the 
 + Applicants
 + Competitors
 
-Personal data might also be contained in other roles that aren't listed here. Pages used to enter, view or edit personal data have been provided in worksheets for most roles in the preceding list. You can view or download the spreadsheets from the [Reference documents for finding and managing personal data](https://docs.microsoft.com/dynamics/s-e/) page on CustomerSource. 
+Personal data might also be contained in other roles that aren't listed here. Pages used to enter, view or edit personal data have been provided in worksheets for most roles in the preceding list. You can view or download the spreadsheets from the [Reference documents for finding and managing personal data](/dynamics/s-e/) page on CustomerSource. 
 
 ## Detailed inventory
 
