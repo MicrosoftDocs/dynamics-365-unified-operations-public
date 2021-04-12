@@ -56,19 +56,21 @@ The environment administrator uses the information in this section to enable net
 > Starting with version 2.9.0 of the infrastructure scripts, the accounts are automatically added to the appropriate group.
 
 ### Install printers on nodes where AXService is executing under a domain account
+To install printers on nodes where AXService is executing under a domain account, follow these steps:
 
-1. Install network printers by using the AXService user account. This step helps guarantee that the printer driver is available to the AXService user account.
+1. Install network printers by using the AXService user account. This step helps to ensure that the printer driver is available to the AXService user account.
 2. Print a test page on the installed printers to make sure that all the connections are correctly configured.
-3. Restart the AXService application to help guarantee that the user's profile is correctly loaded so that it can look up the printer driver.
+3. Restart the AXService application to help ensure that the user's profile is correctly loaded so that it can locate the printer driver.
 
 ### Install printers on nodes where AXService is executing under a group Managed Service Account (gMSA)
+To install printers on nodes where AXService is executing under a gMSA, follow these steps:
 
 > [!IMPORTANT]
 > This section requires at least version 2.9.0 of the infrastructure scripts.
 > Additionally, you need to download the [SysInternals Suite](https://docs.microsoft.com/sysinternals/downloads/).
 
-1. Update the Printers.json file by adding the network location of each printer that should be made available to the AOS. Ensure you remove the example entries. 
-2. Run the following command from the Infrastructure Scripts folder:
+1. Update the Printers.json file by adding the network location of each printer that should be made available to the AOS. Ensure that you remove the example entries. 
+2. Run the following command from the Infrastructure Scripts folder.
 
 ```powershell
 # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
@@ -79,7 +81,7 @@ The environment administrator uses the information in this section to enable net
 
 > [!NOTE]
 > - The following procedure requires execution on multiple VMs. However, to simplify the process, you can use the remoting scripts that are provided. These scripts let you run the required scripts from a single machine, such as the same machine that is used to run the **.\\Export-Scripts.ps1** command. When the remoting scripts are available, they are declared after a **\# If Remoting** comment in the Windows PowerShell sections.
-> - Remoting uses [WinRM](/windows/win32/winrm/portal?redirectedfrom=MSDN). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider?redirectedfrom=MSDN) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP enabled when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, run:
+> - Remoting uses [WinRM](/windows/win32/winrm/portal?redirectedfrom=MSDN). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider?redirectedfrom=MSDN) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP enabled when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, run the following command.
 > 
 > ```powershell
 > .\Disable-CredSSP-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml.
