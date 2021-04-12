@@ -36,7 +36,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the October '18 release notes](/dynamics365/release-plans/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ## Bug fixes
 
@@ -44,7 +44,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ## Extensibility enhancements
 
-The Release notes contain information about [the second wave of platform extensibility enhancements for the October 2018 release](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility2), which are coming with Platform update 21. There are eleven enhancements detailed, with one of the highlights being the new ability to put the next call inside a chain of command method within a try-finally block to facilitate standard exception handling.
+The Release notes contain information about [the second wave of platform extensibility enhancements for the October 2018 release](/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility2), which are coming with Platform update 21. There are eleven enhancements detailed, with one of the highlights being the new ability to put the next call inside a chain of command method within a try-finally block to facilitate standard exception handling.
 
 ## TransientSqlConnectionError X++ exception
 

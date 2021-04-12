@@ -62,7 +62,7 @@ In [Dynamics 365 for Operations version 1611](whats-new-platform-update-3.md), t
 
 [Power BI Embedded](../../dev-itpro/analytics/embed-power-bi-workspaces.md) lets all users access rich graphical views of analytical data that is bundled with Dynamics 365 for Operations applications. The reports are embedded in the Dynamics 365 for Operations application. No additional licenses are required in order to access them.
 
-Support for the existing [tile pinning experience](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/) that is provided through PowerBI.com service integration will continue. To access some PowerBI.com functionality outside this embedded experience, you must obtain a Pro license separately.
+Support for the existing [tile pinning experience](/archive/blogs/dynamicsaxbi/pinning-power-bi-reports-to-dynamics-ax-client) that is provided through PowerBI.com service integration will continue. To access some PowerBI.com functionality outside this embedded experience, you must obtain a Pro license separately.
 
 ## Build and release workspaces that have embedded Power BI reports
 
@@ -74,11 +74,11 @@ If you're a power user or business analyst, you can use Power BI tools to tweak 
 
 If you're an ISV or a systems integrator, you can [package Power BI enabled workspaces](../../dev-itpro/analytics/power-bi-embedded-integration.md) (together with navigational experiences) as part of a Microsoft Dynamics Lifecycle Services (LCS) solution. Your customers get the same experience but don't have to have a PowerBI.com subscription. The solution works with just Dynamics 365 for Operations.
 
-For more details about these features and other Power BI features, see the [BI blog](https://blogs.msdn.microsoft.com/dynamicsaxbi/).
+For more details about these features and other Power BI features, see the [BI blog](/archive/blogs/dynamicsaxbi/).
 
 ## Mobility
 
-We have made major progress on the mobile framework for Dynamics 365 for Operations that lets partners build workspaces that are unique and fully functional mobile experiences. These new capabilities make it easier for users to interact with Dynamics 365 for Operations both online and offline. The mobile framework now supports iOS and Android devices. For more details, see the upcoming [mobility blog](https://blogs.msdn.microsoft.com/Dynamics365forOperationsMobile/).
+We have made major progress on the mobile framework for Dynamics 365 for Operations that lets partners build workspaces that are unique and fully functional mobile experiences. These new capabilities make it easier for users to interact with Dynamics 365 for Operations both online and offline. The mobile framework now supports iOS and Android devices. For more details, see the upcoming [mobility blog](/archive/blogs/Dynamics365forOperationsMobile/).
 
 [![Workspace that was built by using the mobile framework](./media/444444444444-1024x533.png)](./media/444444444444.png)
 

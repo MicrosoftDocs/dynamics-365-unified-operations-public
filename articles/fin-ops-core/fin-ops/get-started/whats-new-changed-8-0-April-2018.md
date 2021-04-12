@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 8.0
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
 
-To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release plans](https://docs.microsoft.com/business-applications-release-notes/April18/release-overview). The release plans provide details about the features that are either new or changed in Dynamics 365 for Finance and Operations.
+To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release plans](/business-applications-release-notes/April18/release-overview). The release plans provide details about the features that are either new or changed in Dynamics 365 for Finance and Operations.
 
 ### Introducing Dynamics 365 for Finance and Operations
 
@@ -82,7 +82,7 @@ The existing functionality for financial journals (general journal, fixed asset 
 
 - **Fall '18 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher functionality will be permanently turned off.
 
-See the [One voucher documentation](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/one-voucher) for detailed information about the use and deprecation of this functionality.
+See the [One voucher documentation](/dynamics365/unified-operations/financials/general-ledger/one-voucher) for detailed information about the use and deprecation of this functionality.
 
 ## Extensibility and customization
 
@@ -170,7 +170,7 @@ New features include import and testing scenarios, and also broader support for 
 
 ### Improved delivery of platform and financial reporting updates
 
-Platform and financial reporting updates will be continual updates managed by Microsoft rather than optional updates. This change is intended to improve service reliability and availability, and also to ensure that customers have the latest improvements and fixes. Platform and financial reporting updates are backward-compatible. For more information, see [Finance and Operations cloud platform monthly updates FAQ](../../../dev-itpro/sysadmin/faq-platform-monthly-updates.md).
+Platform and financial reporting updates will be continual updates managed by Microsoft rather than optional updates. This change is intended to improve service reliability and availability, and also to ensure that customers have the latest improvements and fixes. Platform and financial reporting updates are backward-compatible. For more information, see [Finance and Operations cloud platform monthly updates FAQ](./one-version.md).
 
 ### Upgrade automation
 

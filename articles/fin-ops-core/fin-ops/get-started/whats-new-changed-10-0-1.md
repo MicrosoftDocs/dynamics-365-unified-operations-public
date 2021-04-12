@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.1
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.1. This version will be released in April and has a build number of 10.0.51. For more information about version 10.0.1, see [Additional resources](whats-new-changed-10-0-1.md#additional-resources).
 
-To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.1](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-1).
+To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.1](/dynamics365/unified-operations/retail/get-started/whats-new-10-0-1).
 
 
 ## Enable edit for externally maintained fields
@@ -46,17 +46,17 @@ Due to integration scenarios with external systems, such as the Prospect to cash
 This functionality includes printing the journal of Alcohol retail sales in statutory format.
 
 ### Electronic format of accounting reporting
-Electronic reporting configuration is now available. It allows you to generate accounting reporting in electronic format, and contains data calculated based on the configured Financial report. For more information, see [Accounting reporting in electronic format (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-accounting-reporting)
+Electronic reporting configuration is now available. It allows you to generate accounting reporting in electronic format, and contains data calculated based on the configured Financial report. For more information, see [Accounting reporting in electronic format (Russia)](/dynamics365/unified-operations/financials/localizations/rus-accounting-reporting)
 
-You can find information about how to do the following tasks in [Financial reporting (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-financial-reports):
+You can find information about how to do the following tasks in [Financial reporting (Russia)](/dynamics365/unified-operations/financials/localizations/rus-financial-reports):
 - Set up financial reports.
 - Configure Electronic reporting to use the results of financial report calculations.
 - Configure electronic messages to generate the financial report and store the results.
 
-For more information about configuring printing for financial reports in Excel, see [Configure financial reports in Excel (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-excel-financial-report)
+For more information about configuring printing for financial reports in Excel, see [Configure financial reports in Excel (Russia)](/dynamics365/unified-operations/financials/localizations/rus-excel-financial-report)
 
 ### Assessed tax registers and electronic format of declaration version 5.05 (2019)
-This functionality allows you to keep technical and tax information for realty assets, calculate assessed tax registers, and generate assessed tax declaration in electronic format, applicable from the reporting for year 2019. For more information, see [Assessed tax declaration (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-assessed-tax-declaration)
+This functionality allows you to keep technical and tax information for realty assets, calculate assessed tax registers, and generate assessed tax declaration in electronic format, applicable from the reporting for year 2019. For more information, see [Assessed tax declaration (Russia)](/dynamics365/unified-operations/financials/localizations/rus-assessed-tax-declaration)
 
 ### Transport tax registers and electronic format of declaration
 This functionality allows you to keep technical and tax information for vehicles, calculate transport tax registers, and generate transport tax declaration in electronic format.
@@ -66,10 +66,10 @@ This functionality allows you to keep technical and tax information for ground a
 
 ### VAT declaration in electronic format version 5.06 (2019)
 This functionality allows you to generate a VAT statement in XML format that is applicable from the reporting for year 2019.
-For more information, see [VAT declaration (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration).
+For more information, see [VAT declaration (Russia)](/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration).
 
 ### Sales, purchase books, and factures journals in electronic format (2019)
-This functionality allows you to generate sales, purchase books, and factures journals in electronic format applicable from the year 2019. For details about how to work with sales and purchase books, see [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
+This functionality allows you to generate sales, purchase books, and factures journals in electronic format applicable from the year 2019. For details about how to work with sales and purchase books, see [Sales books, purchase books, and invoice-factures journals](/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
 
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
@@ -89,7 +89,7 @@ Microsoft Dynamics 365 for Finance and Operations version 10.0.1 includes Platfo
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.

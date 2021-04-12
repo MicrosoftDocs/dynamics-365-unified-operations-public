@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 
-To learn more about the new features and changes in all of the latest product releases, see [What's new or changed](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) and [What's new or changed in Dynamics 365 for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new).
+To learn more about the new features and changes in all of the latest product releases, see [What's new or changed](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) and [What's new or changed in Dynamics 365 for Retail](/dynamics365/unified-operations/retail/get-started/whats-new).
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development.
 
@@ -52,7 +52,7 @@ The data packages are similar but not identical to existing demo companies and m
 
 The first phase of the integration from Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations is now available in private preview.
 
-The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Project Service Automation instances via the Dataverse. The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations. For more information about Dataverse data integration, see [Integrate data into Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) in the Power Apps documentation.
+The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Project Service Automation instances via the Dataverse. The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations. For more information about Dataverse data integration, see [Integrate data into Dataverse for Apps](/powerapps/administrator/data-integrator) in the Power Apps documentation.
 
 This solution provides direct synchronization in the following areas:
 
@@ -87,7 +87,7 @@ Highlights of these integration enhancements include:
 ### More information
 
 - [Introduction to Prospect to cash integration (Video)](https://www.youtube.com/watch?v=AVV9x5x-XCg)
-- [Prospect to cash documentation](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash)
+- [Prospect to cash documentation](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash)
 
 ## Expense management mobile workspace enhancements
 
@@ -97,7 +97,7 @@ This feature provides support for functionality that is available in expense man
 - Support for intercompany expenses.
 - Support for per diem expenses.
 
-For more information, see [Expense management mobile workspace](https://docs.microsoft.com/dynamics365/finance/expense-management/expense-management-mobile-workspace).
+For more information, see [Expense management mobile workspace](/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace).
 
 ## Financial reporting using Power BI
 
@@ -121,7 +121,7 @@ Several new features have been added to the Electronic Reporting (ER) framework.
 - **Records deletion based on information from incoming documents** – You can now configure ER formats for data import from incoming documents to only insert new records or update existing ones. You will be able also to configure the logic of existing records' deletion. This gives customers more opportunities to use ER framework for automation of various business processes as configurable ones.
 - **Changes in APIs to access the ER framework** – The existing APIs to access ER framework has been changed – most of X++ classes were moved to an external C# assembly while the rest of them were marked as internal. New APIs improves the ER framework's backward compatibility. This allows customers to significantly reduce the effort needed to manage their ER-related code modifications in the future updates of the application.
 
-For more information, see [Electronic reporting overview](https://docs.microsoft.com/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting).
+For more information, see [Electronic reporting overview](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting).
 
 ## Inventory transactions logging (InventSumLogTTS) optimization  
 
@@ -154,7 +154,7 @@ India localization is available with the following features:
 
 Data entity support is now enabled for setup data in the supply chain management area. For the warehouse and transportation areas, enhancements have been made to the default configuration templates. The default configuration templates provide the entities and sequencing that are required to copy configuration data from one instance to another instance in a single step.
 
-For more information, see [Set up a warehouse by using a warehouse configuration template](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/inventory/warehouse-template).
+For more information, see [Set up a warehouse by using a warehouse configuration template](/dynamics365/unified-operations/supply-chain/inventory/warehouse-template).
 
 ## Notifications in Point of Sale
 
@@ -180,7 +180,7 @@ With the current release, the advisor presents opportunities to optimize:
 ### More information
 
 - [Optimization advisor (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
-- [Create rules for Optimization advisor](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/create-rules-optimization-advisor)
+- [Create rules for Optimization advisor](/dynamics365/unified-operations/dev-itpro/sysadmin/create-rules-optimization-advisor)
 
 ## Partial release of materials and release materials per production operation
 
@@ -217,7 +217,7 @@ To better support these scenarios, the release process has been enhanced with th
 
 **Enable Z3 Solver strategy for product configuration** – The Z3 Solver strategy is available for product configuration. In many benchmark tests, the solver has shown a significant performance improvement compared to the Microsoft solver foundation (MSF) solver. The new Z3 Solver strategy will be assigned per configuration model. Note that the other three solver strategies are all strategies of MSF: **Default**, **Top-down**, and **Minimal domains first**.
 
-For more information, see [Solver strategy for product configuration](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/solver-strategy-product-configuration).
+For more information, see [Solver strategy for product configuration](/dynamics365/unified-operations/supply-chain/pim/solver-strategy-product-configuration).
 
 **Import, export, and migrate the product configuration model** – You can export and import the product configuration model and model versions using standard data entities. The configuration model is exported as an XML structure and saved in a single entity, which makes it simple to export and import again.  
 
@@ -249,13 +249,13 @@ When the analysis simulation returns the expected result, you can run the analys
 > [!NOTE]
 > The ability to set individual product lifecycle states using the data entities for released products or product variants is not supported.
 
-For more information, see [Product lifecycle state](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-lifecycle).
+For more information, see [Product lifecycle state](/dynamics365/unified-operations/supply-chain/pim/product-lifecycle).
 
 ## Retail proxy – New extension point added to support retail proxy extension without inline changes
 
 Previously you needed to modify the retail proxy project inline to generate the Retail proxy to support your new CRT/RS extension in POS offline mode or e-Commerce extensions. Now, you can generate proxy without any inline changes as a completely new extension. We also added support for multiple ISV/Partner extension proxies without any code merge between the extension proxies. This will help you with a seamless upgrade for proxy extensions.
 
-For more information, see [Retail Typescript and C# proxies](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/typescript-proxy-retail-pos).
+For more information, see [Retail Typescript and C# proxies](/dynamics365/unified-operations/retail/dev-itpro/typescript-proxy-retail-pos).
 
 ## Safety stock replenishment enhancements
 
@@ -269,7 +269,7 @@ If the plan or the item is not set up for delayed calculation, then the safety s
 
 Coverage calculation for the items that expire also has new logic. At any point in time, the inventory receipt with the latest expiry date will be used for safety stock to allow real demand, such as sale lines or BOM lines, to be fulfilled in the FEFO (First Expired, First Out) order.
 
-For more information, see [Safety stock fulfillment for items](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/safety-stock-replenishment).
+For more information, see [Safety stock fulfillment for items](/dynamics365/unified-operations/supply-chain/master-planning/safety-stock-replenishment).
 
 ## Tax Engine (GTE) – India GST only
 

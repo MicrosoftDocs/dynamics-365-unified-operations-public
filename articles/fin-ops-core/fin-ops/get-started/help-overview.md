@@ -44,7 +44,7 @@ In all these apps, you can access product-specific Help from the **Help** pane.
 
 ## Help on docs.microsoft.com
 
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365](https://docs.microsoft.com/dynamics365/)) is the default source for product documentation for the previously listed apps. This site offers the following features:
+The docs.microsoft.com site ([docs.microsoft.com/dynamics365](/dynamics365/)) is the default source for product documentation for the previously listed apps. This site offers the following features:
 
 - **Access to the most up-to-date content** – The site gives Microsoft a faster and more flexible way to create, deliver, and update product documentation. Therefore, you have easy access to the latest technical information.
 - **Content that is written by experts** – Content on the site is open to contributions by community members both inside and outside Microsoft.
@@ -55,7 +55,7 @@ You can find content on docs.microsoft.com by using any search engine. For the b
 
 To subscribe to a Really Simple Syndication (RSS) feed of all updates that are to the content on docs.microsoft.com, use the following link:
 
-[RSS feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
+[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
 
 ### Leave us feedback
 
@@ -78,7 +78,7 @@ You can contribute and make edits to the documentation. To get started, select t
 
 The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
 
-For more information, see the [Docs contributor guide](https://docs.microsoft.com/contribute), which is published by the team that built the docs.microsoft.com site.
+For more information, see the [Docs contributor guide](/contribute), which is published by the team that built the docs.microsoft.com site.
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.
@@ -160,13 +160,13 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 | Site | Description |
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | This site hosts or links to all product documentation for Dynamics 365. |
-| [Microsoft Learn](https://docs.microsoft.com/learn/) | This site is the free Microsoft eLearning site. |
+| [Microsoft Learn](/learn/) | This site is the free Microsoft eLearning site. |
 | [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | This site provides a cloud-based collaborative workspace that customers and partners can use to manage projects from pre-sales to implementation and operations. It's useful in all phases of an implementation. |
 | [Support blog](https://aka.ms/AXSupportBlog) | This site provides tips and tricks that are posted by the Support team. |
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | This site hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/) | This site hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | This site provides evaluation and sales information. |
-| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | This site hosts training resources, downloadable reports, and white papers, and is the primary support site for service plan holders. Access to some resources on this site might require a service plan. |
+| [CustomerSource](/dynamics/s-e/)\* | This site hosts training resources, downloadable reports, and white papers, and is the primary support site for service plan holders. Access to some resources on this site might require a service plan. |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

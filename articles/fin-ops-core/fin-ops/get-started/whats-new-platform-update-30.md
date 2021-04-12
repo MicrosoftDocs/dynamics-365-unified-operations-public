@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 30
 This topic describes features that are new or changed for Platform update 30 for Finance and Operations apps. This version has a build number of 7.0.5407. While the general availability date is in November, the new features are available for early release in September. For more information about Platform update 30, see [Additional resources](whats-new-platform-update-30.md#additional-resources).
 
 ## Readable date time format for dateTime fields in business event payload
-When a new business event is coded, a dateTime field can be enabled to output the value in a human readable format in the business event payload. Existing business event can also be modified to include a readable dateTime field in the payload thereby, preserving compatibility. The developer documentation for this is described in [Business events developer documentation](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc).
+When a new business event is coded, a dateTime field can be enabled to output the value in a human readable format in the business event payload. Existing business event can also be modified to include a readable dateTime field in the payload thereby, preserving compatibility. The developer documentation for this is described in [Business events developer documentation](/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc).
 
 ## Hide fields much faster in personalization mode
 Hiding fields in personalization mode is now **significantly** faster. Instead of waiting for confirmation from the system that a selected control can be hidden, this check is now being done asynchronously which allows users to hide controls as fast as they can click them. This same optimization has also been applied for skipping controls, locking fields, and adding fields as FastTab summary fields.   
@@ -64,7 +64,7 @@ For information about the bug fixes included in each of the updates that are par
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.
