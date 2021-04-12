@@ -4,7 +4,7 @@
 title: Dual reporting
 description: This topic guides you through an example that shows how you can fulfill the requirements for both International Financial Reporting Standard (IFRS) reporting and statutory reporting in Asset leasing.
 author: moaamer
-ms.date: 1\04/12/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
