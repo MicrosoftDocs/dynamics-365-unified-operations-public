@@ -1416,54 +1416,66 @@
       items:
       - name: Globalization resources
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
+      - name: Globalization services
+        items:
+        - name: Globalization services overview
+          href: localizations/globalization-services-overview.md
+        - name: Regulatory configuration service
+          items:
+          - name: Regulatory configuration service overview
+            href: localizations/rcs-overview.md
+          - name: Regulatory configuration service - Globalization features
+            href: localizations/rcs-globalization-feature.md
+          - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
+            href: localizations/rcs-global-repo-upload.md
+        - name: Electronic Invoicing
+          items: 
+          - name: Electronic Invoicing overview
+            href: localizations/e-invoicing-service-overview.md
+          - name: Electronic Invoicing administration components
+            href: localizations/e-invoicing-service-administration.md
+          - name: Configure Electronic Invoicing in Regulatory Configuration Services (RCS)
+            href: localizations/e-invoicing-configuration-rcs.md
+          - name: Issue electronic invoices in Finance and Supply Chain Management
+            href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
+          - name: Create an Azure storage account and a Key Vault
+            href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+          - name: Get started 
+            items:
+            - name: Get started with Electronic Invoicing service administration
+              href: localizations/e-invoicing-get-started-service-administration.md
+            - name: Get started with Electronic Invoicing
+              href: localizations/e-invoicing-get-started.md
+            - name: Get started with Electronic Invoicing for Brazil
+              href: localizations/e-invoicing-bra-get-started.md
+            - name: Get started with Electronic Invoicing for Egypt
+              href: localizations/e-invoicing-eg-get-started.md
+            - name: Get started with Electronic Invoicing for Italy
+              href: localizations/e-invoicing-ita-get-started.md
+            - name: Get started with the Electronic Invoicing for Mexico
+              href: localizations/e-invoicing-mex-get-started.md
+            - name: Set up Electronic Invoicing
+              href: localizations/e-invoicing-setup.md
+          - name: Electronic Invoicing FAQ
+            href: localizations/e-invoicing-faq.md
+        - name: Tax Calculation
+          items:
+          - name: Tax Calculation overview
+            href: localizations/global-tax-calcuation-service-overview.md
+          - name: Get started with Tax Calculation
+            href: localizations/global-get-started-with-tax-calculation-service.md
+          - name: Tax feature support for transfer orders
+            href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+          - name: Add data fields in tax configurations
+            href: localizations/tax-service-add-data-fields-tax-configurations.md
+          - name: Add data fields in the tax integration by using extensions
+            href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+          - name: Multiple VAT registration numbers
+            href: localizations/emea-multiple-vat-registration-numbers.md
+          - name: Set up an environment for master data lookup
+            href: localizations/tax-service-set-up-environment-master-data-lookup.md
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
-      - name: Electronic invoicing
-        items: 
-        - name: Electronic invoicing overview
-          href: localizations/e-invoicing-service-overview.md
-        - name: Electronic invoicing administration components
-          href: localizations/e-invoicing-service-administration.md
-        - name: Configure Electronic invoicing in Regulatory Configuration Services (RCS)
-          href: localizations/e-invoicing-configuration-rcs.md
-        - name: Issue electronic invoices in Finance and Supply Chain Management
-          href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
-        - name: Create an Azure storage account and a Key Vault
-          href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-        - name: Get started 
-          items:
-          - name: Get started with Electronic invoicing service administration
-            href: localizations/e-invoicing-get-started-service-administration.md
-          - name: Get started with Electronic invoicing
-            href: localizations/e-invoicing-get-started.md
-          - name: Get started with Electronic invoicing for Brazil
-            href: localizations/e-invoicing-bra-get-started.md
-          - name: Get started with Electronic invoicing for Egypt
-            href: localizations/e-invoicing-eg-get-started.md
-          - name: Get started with Electronic invoicing for Italy
-            href: localizations/e-invoicing-ita-get-started.md
-          - name: Get started with the Electronic invoicing for Mexico
-            href: localizations/e-invoicing-mex-get-started.md
-          - name: Set up Electronic invoicing
-            href: localizations/e-invoicing-setup.md
-        - name: Electronic invoicing FAQ
-          href: localizations/e-invoicing-faq.md
-      - name: Tax Calculation
-        items:
-        - name: Tax Calculation overview
-          href: localizations/global-tax-calcuation-service-overview.md
-        - name: Get started with Tax Calculation
-          href: localizations/global-get-started-with-tax-calculation-service.md
-        - name: Tax feature support for transfer orders
-          href: localizations/tasks/Tax-feature-support-for-transfer-order.md
-        - name: Add data fields in tax configurations
-          href: localizations/tax-service-add-data-fields-tax-configurations.md
-        - name: Add data fields in the tax integration by using extensions
-          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
-        - name: Multiple VAT registration numbers
-          href: localizations/emea-multiple-vat-registration-numbers.md
-        - name: Set up an environment for master data lookup
-          hreF: localizations/tax-service-set-up-environment-master-data-lookup.md
       - name: Australia
         items:
         - name: Australia overview
