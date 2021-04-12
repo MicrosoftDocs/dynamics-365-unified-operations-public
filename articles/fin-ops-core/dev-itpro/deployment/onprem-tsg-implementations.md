@@ -301,7 +301,7 @@ finally
 
 ## <a name="useGMSA"></a>TSG\_EnableGMSAForAOS.ps1
 
-The following script is used to change the account the AOS runs under from an Azure Active Directory (AD) user to a group Managed Service Account (gMSA).
+The following script is used to change the account the AOS runs under from an Active Directory (AD) user to a group Managed Service Account (gMSA).
 
 >[!NOTE]
 > This script can only be used starting with version 10.0.17.
