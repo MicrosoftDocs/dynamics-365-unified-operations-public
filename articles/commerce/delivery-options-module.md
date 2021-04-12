@@ -34,7 +34,7 @@ This topic covers delivery options modules and explains how to configure them in
 
 Delivery options modules let customers select a mode of delivery such as shipping or pickup for their online order. A shipping address is required to determine the mode of delivery. If the shipping address changes, the delivery options must be retrieved again. If an order includes only items that will be picked up in a store, this module is automatically hidden.
 
-For information about how to configure modes of delivery, see [Online channel setup](channel-setup-online.md) and [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+For information about how to configure modes of delivery, see [Online channel setup](channel-setup-online.md) and [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Each delivery mode can have an associated charge. For more information about how to configure charges for an online store, see [Omni-channel Advanced auto-charges](omni-auto-charges.md).
 
@@ -82,7 +82,7 @@ A delivery options module can be added only to a checkout module. For more infor
 
 [Prorate header charges to match sales lines](pro-rate-charges-matching-lines.md)
 
-[Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
