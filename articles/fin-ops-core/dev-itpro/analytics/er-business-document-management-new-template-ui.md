@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.5
 
 Business document management lets business users edit business document templates by using a Microsoft 365 service or the appropriate Microsoft Office desktop application. Edits might include design changes or new deployments, or users might add placeholders to include additional data without having to change the source code. For more information about how to work with Business document management, see [Business document management overview](er-business-document-management.md).
 
-The new user interface (UI) is clearer and more comfortable to use. The **Business document** area shows only the templates that are available for the current provider. In the previous UI, the **Template** tab listed all the templates that were available for any providers. It also showed all the teampltes that were created and edited by any user who had the same role.
+The new user interface (UI) is clearer and more comfortable to use. The **Business document** area shows only the templates that are available for the current provider. In the previous UI, the **Template** tab listed all the templates that were available for any providers. It also showed all the templates that were created and edited by any user who had the same role.
 
 You can use the **New document** button to create and edit a template in an Electronic reporting (ER) format configuration that is provided by another provider. In the example in this topic, the provider is Microsoft. Alternatively, you can create a template by uploading your own template in Excel format.
 
@@ -98,10 +98,15 @@ Follow these steps to provide required information before you upload a template.
 
 For more information, see [Business document management overview](er-business-document-management.md).
 
-If there isn't a provider in Electonic reporting, you can create one. If there's no active provider, you can select to activate one.
+If there isn't a provider in Electronic reporting, you can create one. If there's no active provider, you can select to activate one.
 
 - To create a provider, change the name of the provider in the **Name** field, update the internet address of the new provider in the **Internet address** field, and select **OK** to confirm.
+
+    ![Create new provider in BDM](./media/bdm_create_provider.png)
+    
 - To activate existing provider, choose the name of the provider in the **Configuration provider** field, and select **OK** to set provider as active.
+
+    ![Activate provider in BDM](./media/bdm_choose_provider.png)
 
 > [!NOTE]
 > Each BDM template refers to the provider as the author of the configuration. This is why an active provider is required for the template.
