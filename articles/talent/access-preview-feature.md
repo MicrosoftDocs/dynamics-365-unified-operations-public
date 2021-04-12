@@ -56,7 +56,7 @@ To access preview features, you must first enable them in your environment. Enab
 > [!NOTE]
 > Some preview features might require additional configuration. Follow the links next to the preview feature to complete the setup for it.
 
-## Feedback
+## Provide feedback
 
 We want to hear from you about your experience with any of these preview features. We encourage you to regularly post your feedback on the following sites as you use these or any other features:
 
