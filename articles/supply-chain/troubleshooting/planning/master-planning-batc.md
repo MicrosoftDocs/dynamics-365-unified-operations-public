@@ -17,10 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612572
 
-Customer is unable torun the master planning as per the provided filter. The filter is not workingwhen the batch job is created as well
+## Issue description
 
+Customer is unable to run the master planning as per the provided filter. The filter is not working when the batch job is created as well
 
 ## Resolution
+
 The observed behavior is by design as batch job filter is used solely to filter items to include in the planning, after that we run planning for all the coverage groups those filtered items have. Including a particular coverage group in items filter does not affect the planning output once the item actually included in the run.
-
-

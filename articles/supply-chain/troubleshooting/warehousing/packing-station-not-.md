@@ -17,12 +17,11 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614615
 
-The packing notes are not displayed on the packing form when packing instructions attachment is added either to a product master or a product variant. 
+## Issue description
 
+The packing notes are not displayed on the packing form when packing instructions attachment is added either to a product master or a product variant.
 
 ## Resolution
+
 Microsoft has evaluated this issue and determined not to fix this issue as a hot-fix.
 The current logic for displaying packing notes on the packing form requires the notes to be associated with the shipments.
-
-
-

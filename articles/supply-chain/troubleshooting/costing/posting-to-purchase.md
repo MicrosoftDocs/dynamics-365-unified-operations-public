@@ -17,10 +17,12 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612588
 
+## Issue description
+
 Posting to Purchase accrual with amount zero is created when product receipt is posted with zero value
 
-
 ## Resolution
+
 For ledger posting type = Purchase, accrual, the IsTransferredIndetail field is always marked with Summary by default in subledger transactions.  Therefore, the related voucher entry will be created no matter the amount is zero or not.
 
 If one would like to skip this posting type when amount is zero, one can extend this method subledgerJournalizer.markDoNotTransferEntries to include ledgerPostingType = PurchPckSlpPurchaseOffsetAccount like below
@@ -31,7 +33,3 @@ If one would like to skip this posting type when amount is zero, one can extend 
         where existingSubledgerJournalAccountEntry.SubledgerJournalEntry == _subledgerJournalEntryRecId
             && (existingSubledgerJournalAccountEntry.AccountingCurrencyAmount == 0 && existingSubledgerJournalAccountEntry.ReportingCurrencyAmount == 0)
             && existingSubledgerJournalAccountEntry.PostingType == LedgerPostingType::PurchPckSlpPurchaseOffsetAccount;
-
-
-
-

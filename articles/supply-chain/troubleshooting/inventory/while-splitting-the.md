@@ -17,12 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612073
 
-While splitting the CW qty into batches, the system is automatically changing the ‘Pick qty’ based on minimum qty setup on the item whereas it should change based on nominal qty setup on the item.
- 
+## Issue description
 
+While splitting the CW qty into batches, the system is automatically changing the ‘Pick qty’ based on minimum qty setup on the item whereas it should change based on nominal qty setup on the item.
 
 ## Resolution
+
 This works as expected.  Minimum quantity is used for picking.
- 
-
-

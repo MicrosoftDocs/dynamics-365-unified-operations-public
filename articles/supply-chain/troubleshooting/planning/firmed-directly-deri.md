@@ -17,10 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612450
 
+## Issue description
+
 Firmed directly derived planned orders are going through workflow which is in In-review state.
 
-
 ## Resolution
+
 It is by design that firmed derived orders (subcontract purchase orders) are ending up in In-review state in case change tracking is enabled.
-
-

@@ -17,11 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611825
 
-When trying to import an item using the Released Products V2 entity, it is giving error message: Cannot create a record in Items - tracking dimension groups (EcoResTrackingDimensionGroupItem). Item number: 2040663, Batch. The record already exists.
- 
+## Issue description
 
+When trying to import an item using the Released Products V2 entity, it is giving error message: Cannot create a record in Items - tracking dimension groups (EcoResTrackingDimensionGroupItem). Item number: 2040663, Batch. The record already exists.
 
 ## Resolution
+
 In order to import new released products, the released product creation V2 entity must be used. The released products V2 entity must not be used.  
-
-

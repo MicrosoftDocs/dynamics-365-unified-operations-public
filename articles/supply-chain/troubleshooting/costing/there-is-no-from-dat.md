@@ -17,15 +17,13 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4613548
 
+## Issue description
+
 There is no From date filed in Active prices tab.
 
-
 ## Resolution
+
 The "From date" set on Pending price won't be transfered to Active price.
 Following is a public doc: https://docs.microsoft.com/en-us/dynamics365/supply-chain/cost-management/costing-versions, under Entering costs section:
 When an item cost record is first entered, it has Pending status and an intended effective date. When you activate the item cost record, the status is updated to Active, and the effective date is updated to the activation date. 
 So the Active price's activation date is always the actual date doing the activation.
-
-
-
-

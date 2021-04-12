@@ -17,10 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611211
 
+## Issue description
+
 It is not allowed to add line to purchase requisition after request change.
 
-
 ## Resolution
+
 Customer needs to recall the workflow, once the purchase requisition is in draft, customer can continue to edit or add line.
-
-

@@ -17,10 +17,12 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4613090
 
+## Issue description
+
 A location will not get found when e.g. adding a condition for the "Items.Net weight" field in the 'Location Directive Actions' query when joining: "Locations > Warehouse items > Items".
 
-
 ## Resolution
+
 Microsoft has evaluated this issue and determined not to fix this issue as a hot-fix.
 
 Assuming the expected logic for this case is to have the capability to join to the 'Warehouse item number (WHSInventTable)' entity from the 'Locations' and not to the 'Warehouse items' (either default receipt, default issue, or picking location) relationship.
@@ -28,5 +30,4 @@ Assuming the expected logic for this case is to have the capability to join to t
 Because the WHSInventTable table does not include a location value this is not possible.
 
 To achieve the business requirement of joining to the "Items.Net weight" you should define this condition on the top query for the 'Location Directives' where it is possible to join with the item number.
-
 

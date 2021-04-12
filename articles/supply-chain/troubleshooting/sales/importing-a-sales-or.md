@@ -17,9 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612088
 
+## Issue description
+
 Importing a sales order record through DMF not picking up auto charges
 
 ## Resolution
+
 Microsoft has investigated the reported issue. It is not a bug, but works as intended. I works in this manner.  The data entity has a SkipCreateAutoCharges field. This field controls whether or not auto charges are calculated upon import. In order to have auto charges calculated on import, set the value of the SkipCreateAutoCharges field in the imported file to No. Then auto charges will be calculated.
-
-

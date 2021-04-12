@@ -17,11 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611372
 
-When usingcustomer rebate agreements (type amount) in combination with item rebate groups,rebates are calculated but the cumulation of these calculated rebates fail
+## Issue description
 
-
+When using customer rebate agreements (type amount) in combination with item rebate groups,rebates are calculated but the cumulation of these calculated rebates fail
 
 ## Resolution
+
 This is by design as the item group only group the items that have the same threshold condition.
-
-

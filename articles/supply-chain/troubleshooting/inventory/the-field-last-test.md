@@ -17,10 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612803
 
+## Issue description
+
 The field ‘last tested date’ is not updated when multiple quality order is created. 
 
-
 ## Resolution
+
 This works as expected. Last tested date is not driven by quality order, it saves the first date when the finished goods are purchased or manufactured. This date will be used to calculate the shelf life advice day. 
-
-

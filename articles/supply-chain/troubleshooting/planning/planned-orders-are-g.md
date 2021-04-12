@@ -17,10 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614729
 
+## Issue description
+
 Planned orders are getting generated for phantom item after running master planning
 
-
 ## Resolution
-The "Phantom" checkmark on the released product is used to determine what the default line type on the BOM should be. There will still be created planned orders for the item, however they will have the "Directly derived" flag set to true. This means that the planned production order cannot be firmed on its own, it will always be included automatically when the parent production is firmed, and the BOM lines of the planned "phantom" order will be included in the BOM of the parent production.  
 
-
+The "Phantom" check mark on the released product is used to determine what the default line type on the BOM should be. There will still be created planned orders for the item, however they will have the "Directly derived" flag set to true. This means that the planned production order cannot be firmed on its own, it will always be included automatically when the parent production is firmed, and the BOM lines of the planned "phantom" order will be included in the BOM of the parent production.  

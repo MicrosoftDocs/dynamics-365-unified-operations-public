@@ -17,11 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614634
 
+## Issue description
+
 Late selection is not respected when resetting status of Production orders via recurring batch job
 
-
-
 ## Resolution
+
 Late selection is not supported for the process: Reset status.
-
-

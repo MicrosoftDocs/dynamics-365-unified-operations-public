@@ -17,14 +17,13 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611503
 
+## Issue description
+
 Process Manufacturing Formula line Step Conversion setup does not always work in a Batch Order if the finished good Quantity is changed.
 
-
 ## Resolution
+
 This is similar to KB 4562507
 
-In the abovementioned KB context it was non-standard formula  (Height * Width * Depth/Density) * Constant​ but its relevant for step consumption scenario as well.
+In the above mentioned KB context it was non-standard formula  (Height \* Width \* Depth/Density) \* Constant​ but its relevant for step consumption scenario as well.
 Material's BOMQty (quantity per unit) is not altered after its computed when production order is created/phantom level exploded.
-
-
-

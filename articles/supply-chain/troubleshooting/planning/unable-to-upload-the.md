@@ -17,10 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4614109
 
+## Issue description
+
 Unable to upload the cost price in Demand Forecast entries through Data Management Entities
 
-
 ## Resolution
+
 Updating the Forecasted Unit Cost on the Demand forecast entity is currently not supported. The field is read-only on this entity.
-
-

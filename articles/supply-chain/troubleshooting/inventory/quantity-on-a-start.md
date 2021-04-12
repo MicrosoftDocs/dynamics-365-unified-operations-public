@@ -17,11 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4613113
 
+## Issue description
+
 When customer istrying to create a quarantine order and trying to split the order the orderquantity is not getting updated to the split remaining quantity.
 
-
-
 ## Resolution
+
 This works well. We don't change original qty from quarantine order and make sure customer can track the original qty is created for this quarantine order. But we have a field QuantityThatHasSplitIntoOtherQuarantineOrders in the back end to track how many qty is split from this quarantine order and this field is not visible in user interface.
-
-

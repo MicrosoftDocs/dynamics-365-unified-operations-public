@@ -17,16 +17,14 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612469
 
+## Issue description
+
 Reverse report as finished with marking createsan open transaction with the quantity reversed having the same inventorydimensions of the transaction reversed
 
-
 ## Resolution
+
 This works as expected.
 
 When reversing the report as finished, the inventory dimension is initialized from production journal, so it gets the batch number. The sales order transactions will inherit the batch number due to marking.
 
 This is not a blocking issue. As the dimension can be reset when posting RAF.
-
-
-
-

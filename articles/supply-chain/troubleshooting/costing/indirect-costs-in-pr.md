@@ -17,10 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4612748
 
+## Issue description
+
 Indirect Costs in Process report presents information onProduction Orders that were partially processed and later deleted.
 
-
 ## Resolution
+
 Microsoft has evaluated the reported issue and found that the system behaved as designed. When you reverse a Production order you also reverse all the transactions of the Production order. The Sub-ledger tables and General ledger will persists all transactions related to the Production order when you delete the Production order it self. The transactions in the sub-ledger tables will be shown in the reports. For the specific Production order the net value should be 0.00
-
-

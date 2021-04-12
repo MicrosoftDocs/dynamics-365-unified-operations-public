@@ -17,10 +17,10 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611660
 
+## Issue description
+
 Unable to print the notes attached to sales picking route.
 
-
 ## Resolution
+
 This report currently only prints document on sales line and header. Customer need to do customization to show other documents.
-
-

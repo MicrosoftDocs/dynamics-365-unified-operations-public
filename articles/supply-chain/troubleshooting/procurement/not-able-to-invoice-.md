@@ -17,12 +17,12 @@ ms.dyn365.ops.version: 10.0.19
 
 KB Number: 4611793
 
-Customer not able to invoice the original sales order and the original direct delivery purchase order after set the "Post invoice automatically" parameters 
+## Issue description
 
+Customer not able to invoice the original sales order and the original direct delivery purchase order after set the "Post invoice automatically" parameters
 
 ## Resolution
+
 The intercompany and direct delivery orders invoice sync behavior is controller and forced by the parameters in  
 https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-parameters-to-post-an-intercompany-order. 
-Once these parameters are set, customer will have to invoice the Intercompany sales order first, and only after that the original sales and purchase orders will be synced to invoiced. 
-
-
+Once these parameters are set, customer will have to invoice the Intercompany sales order first, and only after that the original sales and purchase orders will be synced to invoiced.

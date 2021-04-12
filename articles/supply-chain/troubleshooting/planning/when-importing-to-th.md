@@ -15,22 +15,12 @@ ms.dyn365.ops.version: 10.0.19
 
 # When importing to the Item coverage V2 entity in certain scenarios when accessing the Item coverage form after import/update, you will receive the error: "Do you want to save your changes before closing?", even though the user made no changes.
 
- 
+## Issue description
 
 When importing to the Item coverage V2 entity in certain scenarios when accessing the Item coverage form after import/update, you will receive the error: "Do you want to save your changes before closing?", even though the user made no changes.
- 
-
-
-## Symptoms
-
-
-
-
 
 ## Resolution
+
 Coverage form has a complex defaulting logic that might lead to the observed message in case there were direct modifications in the database or entity imports before.
-To change PRODUCTCOVERAGEGROUPID  through the entity a user needs to set AREGENERALSETTINGSOVERRIDDEN to Yes
 
-
-
-
+To change PRODUCTCOVERAGEGROUPID through the entity a user needs to set AREGENERALSETTINGSOVERRIDDEN to Yes
