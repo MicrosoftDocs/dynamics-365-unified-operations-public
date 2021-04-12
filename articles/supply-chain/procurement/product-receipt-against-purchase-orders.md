@@ -69,7 +69,7 @@ Additional resources
 
 [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 
-[Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

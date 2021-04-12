@@ -125,7 +125,7 @@ One way to deploy third-party TMS engines is through a deployment package. This 
 
    [![Selecting the TMSEngines model ](./media/071.png)](./media/071.png)
 
-3. You can now deploy the package to the target environment. For a tutorial, see [Install a deployable package](../../dev-itpro/deployment/install-deployable-package.md).
+3. You can now deploy the package to the target environment. For a tutorial, see [Install a deployable package](../../fin-ops-core/dev-itpro/deployment/install-deployable-package.md).
 
 ## Set up the TMS engine in Supply Chain Management
 This section explains how to set up Supply Chain Management to use a TMS engine, and shows how the new engine that we have created is used in rate shopping. The example in this section uses the USMF demo data company.

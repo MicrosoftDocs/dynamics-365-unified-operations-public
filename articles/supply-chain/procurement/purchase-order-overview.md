@@ -48,7 +48,7 @@ The following articles provide an overview of the various stages that a PO goes 
 -   [Create purchase orders](purchase-order-creation.md)
 -   [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
--   [Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## Types of purchase orders
 There are three types of POs. When you create a PO, you must specify the type. You can set up a default order type for new orders on the **Procurement and sourcing parameters** page.
@@ -92,7 +92,7 @@ Additional resources
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

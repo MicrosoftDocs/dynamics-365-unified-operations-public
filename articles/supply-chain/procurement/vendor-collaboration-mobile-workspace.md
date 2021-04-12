@@ -63,7 +63,7 @@ The **Vendor collaboration** mobile workspace lets a vendor perform these tasks:
 The prerequisites vary, depending on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
 ### Prerequisites if you use Supply Chain Management
-If Supply Chain Management has been deployed for your organization, the system administrator must publish the **Vendor collaboration** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+If Supply Chain Management has been deployed for your organization, the system administrator must publish the **Vendor collaboration** mobile workspace. For instructions, see [Publish a mobile workspace](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later
 If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
@@ -83,7 +83,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 <td>KB 3216943 is a binary update that is required if you&#39;re using Platform update 3. To implement this KB, the system administrator must follow these steps.
 <ol>
 <li>Download KB 3216943 from Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li>Install the binary update, which is delivered as a deployable package. For information about how to apply a deployable package, see <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Apply a deployable package</a>.</li>
+<li>Install the binary update, which is delivered as a deployable package. For information about how to apply a deployable package, see <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -91,14 +91,14 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 <td>System administrator</td>
 <td>KB 4013633 is an X++ update or metadata hotfix that contains the <strong>Inventory on-hand</strong> mobile workspace. To implement KB 4013633, your system administrator must follow these steps.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Download the metadata hotfix from LCS</a>.</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Install the metadata hotfix</a>.</li><li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Apply the deployable package</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from LCS</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>The <strong>Vendor collaboration</strong> mobile workspace must be published.</td><td>System administrator</td>
-<td>See <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publish a mobile workspace</a>.</td>
+<td>See <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
 </tr>
 <tr class="even">
 <td>The vendor user must have access to the vendor collaboration web interface in the web client and must set up a vendor collaboration user.</td><td>Purchasing professionals and the system administrator</td>

@@ -47,8 +47,8 @@ Before you can create a location directive, you must follow these steps to make 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
 1. Create a warehouse.
 1. On the **Warehouse** FastTab, set the **Use warehouse management processes** option to *Yes*.
-1. Create locations, location types, location profiles, and location formats. For more information, see [Configure locations in a WMS-enabled warehouse](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Create sites, zones, and zone groups. For more information, see [Warehouse set up](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) and [Configure locations in a WMS-enabled warehouse](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Create locations, location types, location profiles, and location formats. For more information, see [Configure locations in a WMS-enabled warehouse](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Create sites, zones, and zone groups. For more information, see [Warehouse set up](../../commerce/channels-setup-warehouse.md) and [Configure locations in a WMS-enabled warehouse](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## Work order types for location directives
 
@@ -252,7 +252,7 @@ For this scenario, you must define two location directive actions. The first act
 
 ## Next step
 
-After you create location directives, you can associate each directive code with a work template code for work creation. For more information, see [Control warehouse work by using work templates and location directives](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
+After you create location directives, you can associate each directive code with a work template code for work creation. For more information, see [Control warehouse work by using work templates and location directives](./control-warehouse-location-directives.md).
 
 ## Additional resources
 
