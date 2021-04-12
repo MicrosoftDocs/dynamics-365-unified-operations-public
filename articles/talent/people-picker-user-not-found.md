@@ -41,7 +41,7 @@ Certain user types are not currently supported in Attract and Onboard. Verify th
 
 For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B](/azure/active-directory/b2b/what-is-b2b).
 
-For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object. This can be verified and fixed using the Azure AD Powershell module. For more information, see [Azure AD](/powershell/module/azuread/?view=azureadps-2.0).
+For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object. This can be verified and fixed using the Azure AD Powershell module. For more information, see [Azure AD](/powershell/module/azuread).
 
 ## Resolution
 
