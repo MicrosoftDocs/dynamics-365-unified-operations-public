@@ -5,7 +5,7 @@ title: Install network printer devices in on-premises environments
 description: This topic explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises), to existing network printer devices.
 author: TJVass
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -53,7 +53,7 @@ The environment administrator uses the information in this section to enable net
     4. Add the network Active Directory account that is used to run the AXService application to the group.
 
 > [!NOTE]
-> Starting with version 2.9.0 of the Infrastructure Scripts the accounts are automatically added to the appropriate group.
+> Starting with version 2.9.0 of the infrastructure scripts, the accounts are automatically added to the appropriate group.
 
 ### Install printers on nodes where AXService is executing under a domain account
 
@@ -64,7 +64,7 @@ The environment administrator uses the information in this section to enable net
 ### Install printers on nodes where AXService is executing under a gMSA
 
 > [!IMPORTANT]
-> This section requires at least version 2.9.0 of the Infrastructure Scripts.
+> This section requires at least version 2.9.0 of the infrastructure scripts.
 > Additionally, you need to download the [SysInternals Suite](https://docs.microsoft.com/sysinternals/downloads/).
 
 1. Update the Printers.json file by adding the network location of each printer that should be made available to the AOS. Ensure you remove the example entries. 
@@ -79,7 +79,8 @@ The environment administrator uses the information in this section to enable net
 
 > [!NOTE]
 > - The following procedure requires execution on multiple VMs. However, to simplify the process, you can use the remoting scripts that are provided. These scripts let you run the required scripts from a single machine, such as the same machine that is used to run the **.\\Export-Scripts.ps1** command. When the remoting scripts are available, they are declared after a **\# If Remoting** comment in the Windows PowerShell sections.
-> - Remoting uses [WinRM](https://msdn.microsoft.com/library/aa384426(v=vs.85).aspx). In some cases, it requires that [CredSSP](https://msdn.microsoft.com/library/windows/desktop/bb931352(v=vs.85).aspx) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP enabled when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, run:
+> - Remoting uses [WinRM](/windows/win32/winrm/portal?redirectedfrom=MSDN). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider?redirectedfrom=MSDN) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP enabled when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, run:
+> 
 > ```powershell
 > .\Disable-CredSSP-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml.
 > ```
