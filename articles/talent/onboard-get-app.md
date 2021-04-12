@@ -48,7 +48,7 @@ If you're an IT professional and want to learn more about how the two versions o
 
 ## Get started with Onboard
 
-When you open Onboard for the first time, you're invited to start a tour of the Microsoft 365 admin center. The admin center is where you set up your organization, manage users, and manage your subscriptions. (One of those subscriptions is your Onboard subscription.) For more information about the Microsoft 365 admin center, see [About the Microsoft 365 admin center](/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+When you open Onboard for the first time, you're invited to start a tour of the Microsoft 365 admin center. The admin center is where you set up your organization, manage users, and manage your subscriptions. (One of those subscriptions is your Onboard subscription.) For more information about the Microsoft 365 admin center, see [About the Microsoft 365 admin center](/office365/admin/admin-overview/about-the-admin-center).
 
 To get to the Onboard app, follow these steps.
 
