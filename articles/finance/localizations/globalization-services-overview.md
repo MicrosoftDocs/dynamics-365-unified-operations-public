@@ -5,7 +5,7 @@ title: Dynamics 365 globalization services
 description: This topic provides an overview of Microsoft Dynamics 365 globalization services.
 author: JaneA07
 manager: AnnBe
-ms.date: 03/31/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,7 +43,7 @@ These globalization services provide out-of-box integration with the following D
 |----------------|-----|----------------------|---------------------------|
 | Dynamics 365 Finance | Yes | Yes | Yes | 
 | Dynamics 365 Supply Chain Management | Yes | Yes | Yes | 
-| Dynamics 365 Project Operations | Yes | Yes | Yes | 
+| Dynamics 365 Project Operations | Yes | Yes | Not applicable | 
 | Dynamics 365 Commerce | Yes | Not applicable | Not applicable | 
 
 > [!NOTE]
