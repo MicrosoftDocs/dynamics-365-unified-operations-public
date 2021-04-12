@@ -301,11 +301,11 @@ finally
 
 ## <a name="useGMSA"></a>TSG\_EnableGMSAForAOS.ps1
 
-The following script is used to change the account the AOS runs under from an Active Adirectory (AD) user to a group Managed Service Account (gMSA).
+The following script is used to change the account the AOS runs under from an Azure Active Directory (AD) user to a group Managed Service Account (gMSA).
 
 >[!NOTE]
 > This script can only be used starting with version 10.0.17.
-> You will need to reinstall the printers on each AOS node as they are not available to the gMSA account. See [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
+> You will need to reinstall the printers on each AOS node as they are not available to the gMSA account. For more information, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
 
 ```powershell
 param (
