@@ -5,7 +5,7 @@ title: Dynamics 365 globalization services
 description: This topic provides an overview of Microsoft Dynamics 365 globalization services.
 author: JaneA07
 manager: AnnBe
-ms.date: 03/31/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 10.0.9
 
 The following globalization services can be configured to extend the capabilities that exist in some Microsoft Dynamics 365 online services:
 
-- **Regulatory Configuration Service (RCS)** supports the configuration of different types of electronic documents and reports. RCS provides an enhanced version of the Electronic reporting (ER) designer where the configuration repository is a standalone service. For more information, see [Regulatory Configuration Service – simplified globalization feature management for globalization services](https://aka.ms/rcs/overview).
-- **Electronic Invoicing** brings together configurable formats for transformations, digital signatures, and configurable integrations for connectivity with external web services, including certification and response handling. For more information, see [Electronic Invoicing Add-on for Dynamics 365](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-add-on-dynamics-365-ga).
-- **Tax Calculation** provides enhanced flexibility by supporting multiple tax IDs, tax code determination, the tax calculation designer, and a runtime engine to comply with complex tax regulations worldwide. For more information, see [Tax service](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview).
+- **Regulatory Configuration Service (RCS)** supports the configuration of different types of electronic documents and reports. RCS provides an enhanced version of the Electronic reporting (ER) designer where the configuration repository is a standalone service. For more information, see [Regulatory Configuration Service](rcs-overview.md).
+- **Electronic Invoicing** brings together configurable formats for transformations, digital signatures, and configurable integrations for connectivity with external web services, including certification and response handling. For more information, see [Electronic Invoicing](e-invoicing-service-overview.md).
+- **Tax Calculation** provides enhanced flexibility by supporting multiple tax IDs, tax code determination, the tax calculation designer, and a runtime engine to comply with complex tax regulations worldwide. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 
 These globalization services provide out-of-box integration with the following Dynamics 365 online services.
 
@@ -43,7 +43,7 @@ These globalization services provide out-of-box integration with the following D
 |----------------|-----|----------------------|---------------------------|
 | Dynamics 365 Finance | Yes | Yes | Yes | 
 | Dynamics 365 Supply Chain Management | Yes | Yes | Yes | 
-| Dynamics 365 Project Operations | Yes | Yes | Yes | 
+| Dynamics 365 Project Operations | Yes | Yes | Not applicable | 
 | Dynamics 365 Commerce | Yes | Not applicable | Not applicable | 
 
 > [!NOTE]

@@ -1458,6 +1458,8 @@
         href: lifecycle-services/support-experience.md
       - name: Manage support experiences for Finance and Operations apps
         href: lifecycle-services/cloud-powered-support-lcs.md
+      - name: Production support and monitoring
+        href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
     - name: System administration
       items:
       - name: System administration home page
