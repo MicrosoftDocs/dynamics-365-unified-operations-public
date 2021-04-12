@@ -84,7 +84,7 @@ The steps in this section aren't related to a specific legal entity. You must co
 12. Select the draft version of the feature, and then select **Edit**. The **Tax calculation setup** page is filled in.
 13. Select **Configuration version**. You should see the configuration version that you imported in step 8.
 
-    Microsoft provides a default tax configuration for the tax calculation add-in. This configuration covers most of the requirements for tax calculation behaviors. It will be updated based on market feedbacks. If you must extend the configuration to meet specific requirements, see [How to build extension in tax service](https://go.microsoft.com/fwlink/?linkid=2138483) for information about how to generate and select your own tax configuration.
+    Microsoft provides a default tax configuration for the tax calculation add-in. This configuration covers most of the requirements for tax calculation behaviors. It will be updated based on market feedbacks. If you must extend the configuration to meet specific requirements, see [How to build extension in tax service](./tax-service-add-data-fields-tax-integration-by-extension.md) for information about how to generate and select your own tax configuration.
 
     After you select **Configuration version**, several additional tabs appear:
 
