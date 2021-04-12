@@ -212,7 +212,7 @@ You need the following information before you start. Keep the information handy 
 
 1.  Sign in to [LCS](https://lcs.dynamics.com) and navigate to your environment.
 2.  On the **Environment** page, select the **Environment add-ins** tab. If **Export Data Lake** appears in the list, the Data Lake add-in is already installed, and you can skip the rest of this procedure. Otherwise, complete the remaining steps.
-3.  If this is the first time you are installing add-ins in this environment, you may need to enable **Power platform integration**  for this environment. This is a one-time operation to be performed by the LCS administrator. For more information, see [Add-ins overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview). Refer to the troubleshooting section for common issues.
+3.  If this is the first time you are installing add-ins in this environment, you may need to enable **Power platform integration**  for this environment. This is a one-time operation to be performed by the LCS administrator. For more information, see [Add-ins overview](../power-platform/add-ins-overview.md). Refer to the troubleshooting section for common issues.
 4.  Select **Install a new add-in**, and in the dialog box, select **Export to Data lake**. If **Export to data lake** isn't listed, the feature might not be available for your environment at this time.
 5.  In the **Setup add-in** dialog box, provide the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
 6.  Accept the terms of the offer by selecting the check box, and then select **Install**.

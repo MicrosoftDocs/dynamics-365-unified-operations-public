@@ -62,13 +62,13 @@ You can enable change tracking when you publish one or more entities to a data s
 ## Enable change tracking for non-BYOD scenarios
 Change tracking can be enabled for non-BYOD scenarios. This includes retrieving record changes through Dataverse virtual entities for Finance and Operations apps. When change tracking is enabled for an entity, changes can be retrieved through the entity's OData endpoint by adding `odata.track-changes` as a preference header.
 
-For more information on using change tracking for an entity, see [Use change tracking to synchronize data with external systems](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).
+For more information on using change tracking for an entity, see [Use change tracking to synchronize data with external systems](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).
 
 To enable change tracking for non-BYOD scenarios:
 
 1. From the **Data management** workspace, select the **Data entities** list page.
 2. Select the entity for which you want to enable change tracking. 
-3. Select the **Change tracking** action on the action ribbon, and select the desired option for how changes should be tracked for the entity. See the table in the [Enable change tracking for BYOD](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track#enable-change-tracking-for-byod) section above for detail on the available options.
+3. Select the **Change tracking** action on the action ribbon, and select the desired option for how changes should be tracked for the entity. See the table in the [Enable change tracking for BYOD](#enable-change-tracking-for-byod) section above for detail on the available options.
 
 ## Custom query for change tracking
 The following example shows how to add a static method to an entity. You must make sure that the method returns a query, and that the root node is the same as the entity. For example, for the Customer entity, the root node is custTable, and the change tracking query for it is also custtable.
