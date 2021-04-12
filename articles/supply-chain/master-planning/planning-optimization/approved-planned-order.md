@@ -57,12 +57,12 @@ To change the status of a single planned order, [open any planned orders list pa
 
 - Expand the **General** FastTab and edit the **Status** field.
 - On the Action Pane, open the **Planned order** tab and, from the **Process** group, select **Change status**.
-- On the Action Pane, select **Approve** to mark the order as approved. <!-- KFM: Please confirm. -->
+- On the Action Pane, select **Approve** to mark the order as approved.
 
 To change the status of several planned orders at once, [open any planned orders list page](#view-planned-orders), mark the check box for each order you want to change and do one of the following:
 
 - On the Action Pane, open the **Planned order** tab and, from the **Process** group, select **Change status**.
-- On the Action Pane, select **Approve** to mark the order as approved. <!-- KFM: Please confirm. -->
+- On the Action Pane, select **Approve** to mark the order as approved.
 
 ## Approve planned orders
 
