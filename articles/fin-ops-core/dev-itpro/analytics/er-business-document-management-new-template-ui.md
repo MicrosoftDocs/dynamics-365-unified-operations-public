@@ -4,7 +4,7 @@
 title: New document user interface in Business document management
 description: This topic provides information about how to use the new document user interface in the Business document management feature of Electronic reporting.
 author: v-anamir
-ms.date: 05/12/2019
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,6 +36,10 @@ Business document management lets business users edit business document template
 The new document user interface (UI) is clearer and more comfortable to use. The **Business document** area shows only the templates that are available for the current provider.
 
 The **New document** button lets users create and edit a template in an Electronic reporting (ER) format configuration that is provided by another provider. In the example in this topic, the provider is Microsoft.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAVQg]
+
+The [Create a new business document using Business document management](https://youtu.be/gAIYl-mM_pw) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## Make the new document UI in Business document management available
 
