@@ -101,7 +101,7 @@ Accept different types of payments from customers, such as bills of exchange, ca
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned. 
+Go to the [Microsoft Dynamics 365 Roadmap](/dynamics365/release-plans/) to see what new features are planned. 
 
 #### Blogs
 

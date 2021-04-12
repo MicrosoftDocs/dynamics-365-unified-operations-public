@@ -80,7 +80,7 @@ The following illustration shows an example where the corporate headquarters est
 
 On the **Organization hierarchy** page, you can specify an organization hierarchy as a budget planning hierarchy for each budget planning process. The budget planning hierarchy doesn't have to match the standard organization hierarchy that is used for other purposes. Because this hierarchy is used to aggregate and distribute data, you might want it to have a different structure. In the example schema, the Sales departments are under a headquarters level that includes Budget and Finance departments. This structure likely differs from the structure that is used to manage operations for the Sales departments. Only one organization hierarchy can be assigned to each budget planning process.
 
-For more information, see [Organizations and organizational hierarchies](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+For more information, see [Organizations and organizational hierarchies](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### User security
 

@@ -129,7 +129,7 @@ For more information, see the following topics:
 - [Create a sales tax payment](tasks/create-sales-tax-payment.md)
 - [Create sales tax transactions on documents](tasks/create-sales-tax-transactions-documents.md)
 - [View posted sales tax transactions](tasks/view-posted-sales-tax-transactions.md)
-- [round Function](https://msdn.microsoft.com/library/aa850656.aspx)
+- [round Function](/previous-versions/dynamics/ax-2012/reference/aa850656(v=ax.60))
 
 
 

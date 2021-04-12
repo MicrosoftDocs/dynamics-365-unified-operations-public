@@ -35,7 +35,7 @@ Finance insights provides configurable and extensible models to help you accurat
 
 Finance insights preview is available for trial deployments in the United States of America, Europe, and the United Kingdom. Microsoft is incrementally adding support for more regions.
 
-Preview features can and should be turned on only in Tier-2 sandbox environments. Setup and artificial intelligence (AI) models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+Preview features can and should be turned on only in Tier-2 sandbox environments. Setup and artificial intelligence (AI) models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ To apply for the preview program, fill out the [Finance insights Preview for Dyn
 
 ### System requirements
 
-A Tier-2 sandbox environment (multi-box) is required to preview Finance insights. For background information about environments, see [Environment planning](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+A Tier-2 sandbox environment (multi-box) is required to preview Finance insights. For background information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### Version requirements
 
