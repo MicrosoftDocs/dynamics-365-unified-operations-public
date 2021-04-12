@@ -49,7 +49,7 @@ The following table lists all the steps in the process, the expected duration, a
 | 2 | Complete and send checklist | After user acceptance testing (UAT) is complete | Partner/Customer | Follow the instructions provided in [FastTrack go-live assessment](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment). |
 | 3 | Project assessment (FastTrack) | FastTrack Architect* | Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
 | 4 | Project workshop (FastTrack) | FastTrack Architect* | |
-| 5 | Data package imports | Depends on the project | Partner/Customer | Follow the instructions in [Data management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).|
+| 5 | Data package imports | Depends on the project | Partner/Customer | Follow the instructions in [Data management overview](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).|
 | 6 | Production ready | After all previous steps have been completed | Partner/Customer | Partner/Customer can take control of the production environment.|
 | 7 | Cutover activities | Depends on the project | Partner/Customer | |
 | 8 | Go live | Depends on the project | Customer | |
@@ -92,7 +92,7 @@ Prior to your go-live, you must perform a mock go-live to test the steps require
 
 ## FastTrack go-live assessment
 
-Customers who are qualified for FastTrack and are engaged with a FastTrack Solution Architect will complete a go-live review with Microsoft FastTrack. For more information, see [Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). 
+Customers who are qualified for FastTrack and are engaged with a FastTrack Solution Architect will complete a go-live review with Microsoft FastTrack. For more information, see [Microsoft FastTrack](/dynamics365/fasttrack/). 
 
 About eight weeks before go-live, the FastTrack team will ask you to fill in a [Go-live checklist](https://go.microsoft.com/fwlink/?linkid=2146013).
 
