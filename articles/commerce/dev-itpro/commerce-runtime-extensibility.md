@@ -136,6 +136,12 @@ For information about how to extend Commerce Data Exchange - Real-time service, 
 
 For information about how to create new Retail Server APIs, see [Create a new Retail Server extension API](retail-server-icontroller-extension.md).
 
+## Exception handling
+
+Extension code can add `try`/`catch` statement in the code to handle exception and log it to Application insights or propagate the error message to the client application if required. Don’t return aggregated exception from CRT or RS if you want to propagate the error message to the client, instead catch exception at individual task level and throw it. For more details on how to handle exception in Task refer [Exception handling document](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/exception-handling-task-parallel-library).
+
+Also refer  [Log extension events to Application Insights](commerce-application-insights.md) and [Localize Commerce extension resources and label files](extension-resource-localization.md) for logging and showing CRT exception in the client application.
+
 ## Register the CRT extension
 
 ### Online
