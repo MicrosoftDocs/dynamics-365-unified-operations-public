@@ -217,7 +217,7 @@ Use the following procedure to create operations for report cells.
 
 ## Configure ER to use the results of financial report calculations
 
-For more information, see [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). 
+For more information, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). 
 
 The following example shows how to configure ER to use the results of financial report calculations.
 

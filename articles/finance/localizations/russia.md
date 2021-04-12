@@ -165,8 +165,8 @@ This topic provides information about functionality that supports Russian regula
 
 ## Additional resources
 
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics Localization Portal: Russia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/RussianFederation.html)
 
 
