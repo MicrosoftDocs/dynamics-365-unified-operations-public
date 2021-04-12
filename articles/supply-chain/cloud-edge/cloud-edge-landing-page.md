@@ -85,7 +85,7 @@ To sign up for the preview, go to the [Scale Unit Manager portal](https://aka.ms
 > [!IMPORTANT]
 > For the initial phase of the preview program for this feature, Microsoft is supporting only hubs that have cloud scale units, not hubs that have edge scale units. Edge scale units are installed on-premises and are expected to become available during an upcoming phase of the program.
 
-Because cloud and edge scale units are a preview feature, services that are related to them are currently available in limited countries and regions. By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. By enabling cloud and edge scale units, you also agree to the [Cloud + Edge Preview for Finance and Operations terms](https://Aka.ms/SCMCnETerms). To learn more about cloud and edge scale units, see the [documentation](https://aka.ms/scmcne).
+Because cloud and edge scale units are a preview feature, services that are related to them are currently available in limited countries and regions. By enabling cloud and edge scale units, you affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. By enabling cloud and edge scale units, you also agree to the [Cloud + Edge Preview for Finance and Operations terms](https://Aka.ms/SCMCnETerms). To learn more about cloud and edge scale units, see the [documentation]().
 
 Your privacy is important to Microsoft. To learn more, read our [Privacy Statement](https://aka.ms/privacy).
 

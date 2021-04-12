@@ -44,7 +44,7 @@ This topic describes how to install and configure the Inventory Visibility Add-i
 
 You need to install the Inventory Visibility Add-in using Microsoft Dynamics Lifecycle Services (LCS). LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your Dynamics 365 Finance and Operations apps.
 
-For more information, see [Lifecycle Services resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).
+For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 ### Prerequisites
 
@@ -69,7 +69,7 @@ Follow these steps to set up Dataverse.
 
 1. Add a service principle to your tenant:
 
-    1. Install Azure AD PowerShell Module v2 as described in [Install Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+    1. Install Azure AD PowerShell Module v2 as described in [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
     1. Run the following PowerShell command.
 
         ```powershell
@@ -85,7 +85,7 @@ Follow these steps to set up Dataverse.
     1. Select **New**. Set the application ID to *3022308a-b9bd-4a18-b8ac-2ddedb2075e1*. (The object ID will automatically be loaded when you save your changes.) You can customize the name. For example, you can change it to *Inventory Visibility*. When you've finished, select **Save**.
     1. Select **Assign Role**, and then select **System Administrator**. If there is a role that is named **Common Data Service User**, select it too.
 
-    For more information, see [Create an application user](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+    For more information, see [Create an application user](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
 
 1. Import the `Inventory Visibility Dataverse Solution.zip` file, which includes Dataverse configuration related entities and Power Apps:
 

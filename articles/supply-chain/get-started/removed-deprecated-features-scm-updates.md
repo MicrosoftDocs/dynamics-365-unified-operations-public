@@ -37,7 +37,7 @@ This topic will be updated as new removed or deprecated features are documented 
 This list is intended to help you consider these removals and deprecations for your own planning.
 
 > [!NOTE]
-> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://docs.microsoft.com/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.18 release
 
@@ -45,7 +45,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Effective April 2021, *Dynamics  365 for Finance and Operations - Warehousing* (the warehouse app) is deprecated and won't be supported after April 2022. It is now replaced by the *Warehouse Management mobile app*, which was released with version 10.0.17 of Supply Chain Management. The new app is a complete replacement but uses same underlying framework, which makes migration easy. If needed, the two apps can be used side-by-side to help users gradually adjust as they learn to use the new app.<br><br>For more information about the new Warehouse Management mobile app, see [Warehouse Management mobile application](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) and [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md). |
+| **Reason for deprecation/removal** | Effective April 2021, *Dynamics  365 for Finance and Operations - Warehousing* (the warehouse app) is deprecated and won't be supported after April 2022. It is now replaced by the *Warehouse Management mobile app*, which was released with version 10.0.17 of Supply Chain Management. The new app is a complete replacement but uses same underlying framework, which makes migration easy. If needed, the two apps can be used side-by-side to help users gradually adjust as they learn to use the new app.<br><br>For more information about the new Warehouse Management mobile app, see [Warehouse Management mobile application](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) and [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md). |
 | **Replaced by another feature?**   | Yes, replaced by the new Warehouse Management mobile app. |
 | **Product areas affected**         | Supply Chain Management - warehouse app |
 | **Deployment option**              | Cloud and on-premises |
@@ -71,7 +71,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, Planning Optimization will replace the existing built-in Supply Chain Management master planning engine. |
 | **Product areas affected**         | Supply Chain Management - Master planning |
 | **Deployment option**              | Cloud only. Planning Optimization is not supported with on-premises deployments. |
-| **Status**                         | Deprecated. By October 1, 2021, manufacturing scenarios will no longer be supported with the built-in Dynamics 365 Supply Chain Management master planning engine. For manufacturing scenarios, customers must use Planning Optimization for master planning calculations. For more information, see [Planning Optimization documentation](https://go.microsoft.com/fwlink/?linkid=2105830). Customers with on-premises deployments of Dynamics 365 Supply Chain Management may continue to use the Supply Chain Management master planning engine for manufacturing scenarios after October 2021. However, no more feature enhancements will be provided. |
+| **Status**                         | Deprecated. By October 1, 2021, manufacturing scenarios will no longer be supported with the built-in Dynamics 365 Supply Chain Management master planning engine. For manufacturing scenarios, customers must use Planning Optimization for master planning calculations. For more information, see [Planning Optimization documentation](../master-planning/planning-optimization/planning-optimization-overview.md). Customers with on-premises deployments of Dynamics 365 Supply Chain Management may continue to use the Supply Chain Management master planning engine for manufacturing scenarios after October 2021. However, no more feature enhancements will be provided. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.11 release
 
@@ -83,7 +83,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, Planning Optimization will replace the existing built-in Supply Chain Management master planning engine. |
 | **Product areas affected**         | Supply Chain Management - Master planning |
 | **Deployment option**              | Cloud only. Planning Optimization is not supported with on-premises deployments. |
-| **Status**                         | Deprecated. By April 1, 2021, distribution scenarios will no longer be supported with the built-in Dynamics 365 Supply Chain Management master planning engine. For distribution scenarios, customers must use Planning Optimization for master planning calculations. For more information, see [Planning Optimization documentation](https://go.microsoft.com/fwlink/?linkid=2105830). Customers with on-premises deployments of Dynamics 365 Supply Chain Management may continue to use the Supply Chain Management master planning engine for distribution scenarios after April 2021. However, no more feature enhancements will be provided. |
+| **Status**                         | Deprecated. By April 1, 2021, distribution scenarios will no longer be supported with the built-in Dynamics 365 Supply Chain Management master planning engine. For distribution scenarios, customers must use Planning Optimization for master planning calculations. For more information, see [Planning Optimization documentation](../master-planning/planning-optimization/planning-optimization-overview.md). Customers with on-premises deployments of Dynamics 365 Supply Chain Management may continue to use the Supply Chain Management master planning engine for distribution scenarios after April 2021. However, no more feature enhancements will be provided. |
 
 ## Previous announcements about removed or deprecated features
 

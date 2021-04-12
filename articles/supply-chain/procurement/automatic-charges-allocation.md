@@ -149,7 +149,7 @@ After your charges codes are set up, follow these steps to define the auto charg
     - **Site** and **Warehouse** – Specify a site and warehouse if charges should be applied only for a specific site and warehouse.
     - **Keep** – Select this check box to keep the charges transactions after invoicing is completed, so that the charge will be applied every time that you create a new invoice for the selected customer account.
 
-1. **For sales orders only:** If you want to calculate tiered charges, see [Tiered charges on sales orders](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) for information.
+1. **For sales orders only:** If you want to calculate tiered charges, see [Tiered charges on sales orders](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) for information.
 
 ## Allocate charges from the header to a line
 
