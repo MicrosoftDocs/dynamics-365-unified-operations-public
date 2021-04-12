@@ -82,7 +82,7 @@ You can import activities from one or more templates into a guide or template.
 
 4. To preview the tasks in a new tab in your browser, select the **Open in new tab** button on any template.
 
-   [![Import activities](./media/onboard-edit-guide-preview-activities.png)](./media/onboard-edit-guide-preview-activities.png)
+   [![Preview activities](./media/onboard-edit-guide-preview-activities.png)](./media/onboard-edit-guide-preview-activities.png)
 
 5. Drag and drop the desired template to the place in your guide template where you want the activities to appear. Continue editing your guide or template.
 
