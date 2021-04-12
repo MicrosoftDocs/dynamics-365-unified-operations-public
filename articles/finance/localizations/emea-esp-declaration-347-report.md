@@ -65,7 +65,7 @@ The following prerequisites must be set up before you begin to work with the Dec
     -   Declaration 347 export format (ES)
     -   Declaration 347 report format (ES)
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Cash ledger accounts**.
 3.  On the **Cash ledger accounts** page, specify the cash ledger accounts that are required for the Declaration 347.
