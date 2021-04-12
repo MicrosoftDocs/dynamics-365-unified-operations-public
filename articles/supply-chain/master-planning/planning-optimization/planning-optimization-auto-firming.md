@@ -44,7 +44,7 @@ Automatic firming lets you firm (that is, release) planned orders as part of the
 
 To turn on autofirming, follow these steps.
 
-1. In the **Feature management** workspace, on the **New** tab, select **Autofirming for Planning Optimization** in the list. If the feature doesn't appear on the **New** tab, look on the **Not enabled** and **All** tabs.
+1. In the **Feature management** workspace, on the **New** tab, select **Auto-firming for Planning Optimization** in the list. If the feature doesn't appear on the **New** tab, look on the **Not enabled** and **All** tabs.
 1. Select **Enable now**. Alternatively, select **Schedule**, and then select the time when you want the feature to be turned on.
 
 ## Set up the firming time fence
