@@ -1,6 +1,6 @@
 ---
-title: Multiple inventory transactions after adjusting purchase order line when batch number group on item has “On physical update” set to No.
-description: Multiple inventory transactions after adjusting purchase order line when batch number group on item has “On physical update” set to No.
+title: Multiple inventory transactions after adjusting purchase order line when batch number group on item has "On physical update" set to No
+description: Multiple inventory transactions after adjusting purchase order line when batch number group on item has "On physical update" set to No
 author: SmithaNataraj
 ms.date: 4/11/2021
 ms.topic: troubleshooting
@@ -12,8 +12,9 @@ ms.author: smnatara
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
+<!-- KFM: Title is over 80 characters. Please find a way to reduce -->
 
-# Multiple inventory transactions after adjusting purchase order line when batch number group on item has “On physical update” set to No.
+# Multiple inventory transactions after adjusting purchase order line when batch number group on item has "On physical update" set to No
 
 KB Number: 4613390
 

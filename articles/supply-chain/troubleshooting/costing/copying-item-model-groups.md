@@ -19,8 +19,8 @@ KB Number: 4612800
 
 ## Issue description
 
-When copy 'item model groups' into another legal entity with entity 'Item model group inventory policies', field setting like inventory model, description are missing in the new model group in the destination compay.
+When you copy *item model groups* to another legal entity (company) using the *Item model group inventory policies* entity, some field setting such as the inventory model and description are missing in the new model group at the destination company.
 
 ## Resolution
 
-To achieve a complete copy of 'item model group' into other legal entities, both InventInventoryPolicyEntity ("Item model group inventory policies" and InventCostFlowAssumptionPolicyEntity ("Cost flow assumption policies") should be selected, which are associated with item model group.
+To create a complete copy of an *item model group* to another legal entities, you must also select both the *item model group inventory policies* (`InventInventoryPolicyEntity`) and the *cost flow assumption policies* (`InventCostFlowAssumptionPolicyEntity`) that are associated with item model group.

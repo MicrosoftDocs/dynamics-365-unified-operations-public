@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Quantity on a 'Started' Quarantine Order does not update when the order is 'Split'.
+# Quantity on a 'Started' Quarantine Order does not update when the order is 'Split'
 
 KB Number: 4613113
 
