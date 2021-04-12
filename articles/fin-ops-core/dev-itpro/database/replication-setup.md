@@ -4,7 +4,7 @@
 title: Replication setup
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
 author: sarvanisathish
-ms.date: 04/02/2021
+ms.date: 04/12/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
