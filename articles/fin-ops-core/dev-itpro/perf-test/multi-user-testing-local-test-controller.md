@@ -46,7 +46,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 ## Configure a development environment for multi-user testing
 
-1. Download [ODBC Driver 17 for SQL Server](https://docs.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server), rename the download file **msodbcsql**, and copy it to the **Visual Studio Online** folder under the **PerfSDK** folder.
+1. Download [ODBC Driver 17 for SQL Server](/sql/connect/odbc/download-odbc-driver-for-sql-server), rename the download file **msodbcsql**, and copy it to the **Visual Studio Online** folder under the **PerfSDK** folder.
 
     [![msodbcsql file in Visual Studio Online folder](./media/multi-user-test-local-01.png)](./media/multi-user-test-local-01.png)
 

@@ -129,7 +129,7 @@ Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontro
 Icon: string (optional)
 
 Name of the icon that is displayed in the page link control.
-Here is a [list of available icons](https://docs.microsoft.com/dynamics/s-e/).
+Here is a [list of available icons](/dynamics/s-e/).
 
 ### IconSize
 

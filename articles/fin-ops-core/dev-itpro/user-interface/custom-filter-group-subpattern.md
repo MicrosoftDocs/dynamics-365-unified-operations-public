@@ -151,8 +151,8 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN AX 2012 How to Add Controls to the Filter Pane](https://msdn.microsoft.com/library/cc577231.aspx)
--   [MSDN AX 2012 List Page Overview – section Filter Pane](https://msdn.microsoft.com/library/cc616937.aspx)
+-   [MSDN AX 2012 How to Add Controls to the Filter Pane](/dynamicsax-2012/developer/how-to-add-controls-to-the-filter-pane)
+-   [MSDN AX 2012 List Page Overview – section Filter Pane](/dynamicsax-2012/developer/list-page-overview)
 
 #### AX 2012 example
 
