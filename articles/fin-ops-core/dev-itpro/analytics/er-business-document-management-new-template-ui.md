@@ -4,7 +4,7 @@
 title: Microsoft Office-style user interface in Business document management
 description: This topic explains how to use the new user interface in the Business document management feature of Electronic reporting (ER) framework.
 author: v-anamir
-ms.date: 04/05/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -98,15 +98,12 @@ Follow these steps to provide required information before you upload a template.
 
 For more information, see [Business document management overview](er-business-document-management.md).
 
-If there is no any provider in Electonic reporting  it will be offered to create. If there is no active provider it will be offered to choose it for activate.
+If there isn't a provider in Electonic reporting, you can create one. If there's no active provider, you can select to activate one.
 
-To create provider in the **Name** field change the name of the provider, in the **Internet address** field change the internet address of the provider. Select **OK** to confirm creating and activating of the provider.
-![Create new provider in BDM](./media/BDM_create provider.png)
-
-To activate existing provider in the **Configuration provider** field choose the name of the provider. Select **OK** to set provider as active.
-![Create new provider in BDM](./media/choose provider.png)
+- To create a provider, change the name of the provider in the **Name** field, update the internet address of the new provider in the **Internet address** field, and select **OK** to confirm.
+- To activate existing provider, choose the name of the provider in the **Configuration provider** field, and select **OK** to set provider as active.
 
 > [!NOTE]
-> Each BDM template will refer to the provider as the author of the configuration. Therefore, an active provider is required for the template
+> Each BDM template refers to the provider as the author of the configuration. This is why an active provider is required for the template.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
