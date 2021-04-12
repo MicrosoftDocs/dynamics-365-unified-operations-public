@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Error “Cannot update quantity ## with new dimensions.” when choosing the location for WMS item in picking list registration 
 description: Error “Cannot update quantity ## with new dimensions.” when choosing the location for WMS item in picking list registration 
 author: SmithaNataraj
-manager: tfehr
-ms.date: 4/11/2021 12:00:00 AM
+ms.date: 4/11/2021
 ms.topic: troubleshooting
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: WMSPickingRegistration
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-submittedBy: perlynne@microsoft.com
-
+ms.author: perlynne
+ms.search.validFrom: 2021-04-11
+ms.dyn365.ops.version: 10.0.19
 ---
 
 # Error “Cannot update quantity ## with new dimensions.” when choosing the location for WMS item in picking list registration 

@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Posting - Report as finished journal gives the error "Quantity ordered cannot be reduced because there are not enough open inventory transactions with the ordered status"
 description: Posting - Report as finished journal gives the error "Quantity ordered cannot be reduced because there are not enough open inventory transactions with the ordered status"
 author: SmithaNataraj
-manager: tfehr
-ms.date: 4/11/2021 12:00:00 AM
+ms.date: 4/11/2021
 ms.topic: troubleshooting
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: ProdTableListPage, ProdParameters
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-submittedBy: johanho@microsoft.com
-
+ms.author: johanho
+ms.search.validFrom: 2021-04-11
+ms.dyn365.ops.version: 10.0.19
 ---
 
 # Posting - Report as finished journal gives the error "Quantity ordered cannot be reduced because there are not enough open inventory transactions with the ordered status"

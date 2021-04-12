@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Quantity on a 'Started' Quarantine Order does not update when the order is 'Split'.
 description: Quantity on a 'Started' Quarantine Order does not update when the order is 'Split'.
 author: SmithaNataraj
-manager: tfehr
-ms.date: 4/11/2021 12:00:00 AM
+ms.date: 4/11/2021
 ms.topic: troubleshooting
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: InventQuarantineOrder
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-submittedBy: shawan@microsoft.com
-
+ms.author: shawan
+ms.search.validFrom: 2021-04-11
+ms.dyn365.ops.version: 10.0.19
 ---
 
 # Quantity on a 'Started' Quarantine Order does not update when the order is 'Split'.

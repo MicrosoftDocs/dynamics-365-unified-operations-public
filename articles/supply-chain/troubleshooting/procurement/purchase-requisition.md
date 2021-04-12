@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Purchase Requisition - after the request change, it is not possible to add line
 description: Purchase Requisition - after the request change, it is not possible to add line
 author: SmithaNataraj
-manager: tfehr
-ms.date: 4/11/2021 12:00:00 AM
+ms.date: 4/11/2021
 ms.topic: troubleshooting
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: PurchReqTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-submittedBy: jeyao@microsoft.com
-
+ms.author: jeyao
+ms.search.validFrom: 2021-04-11
+ms.dyn365.ops.version: 10.0.19
 ---
 
 # Purchase Requisition - after the request change, it is not possible to add line
