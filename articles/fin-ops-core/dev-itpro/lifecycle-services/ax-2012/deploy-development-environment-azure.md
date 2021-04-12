@@ -87,7 +87,7 @@ To enable corporate users to access resources on the virtual machines in the Azu
 
 ### Create an active directory in Azure
 
-An Active Directory is required in the Azure virtual network. An Active Directory can be deployed to the Azure virtual network. Please follow [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://msdn.microsoft.com/library/azure/jj156090.aspx). Please note that Active Directory Federation Services is not presently supported with AX 2012 R3. If you are providing the Active Directory, you will need to create the following service accounts within it that can be used by LCS deployment services when you deploy the environment.
+An Active Directory is required in the Azure virtual network. An Active Directory can be deployed to the Azure virtual network. Please follow [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100). Please note that Active Directory Federation Services is not presently supported with AX 2012 R3. If you are providing the Active Directory, you will need to create the following service accounts within it that can be used by LCS deployment services when you deploy the environment.
 
 <table>
 <colgroup>
@@ -151,7 +151,7 @@ You will need to provide the passwords for these accounts when you deploy the en
 
 ### Create a domain trust
 
-To enable corporate users to access resources on the virtual machines in your Azure domain, you must create an Active Directory trust between the domains. For information about how to create a trust, see [Create a Forest Trust](https://technet.microsoft.com/library/cc754626.aspx). This process is the same process you would use to create a trust between two on-premises domains.
+To enable corporate users to access resources on the virtual machines in your Azure domain, you must create an Active Directory trust between the domains. For information about how to create a trust, see [Create a Forest Trust](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754626(v=ws.11)). This process is the same process you would use to create a trust between two on-premises domains.
 
 ### Give the Administrators group the right to log on as a batch job
 
@@ -271,11 +271,11 @@ Log on to the AOS-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;Dynam
 
 ### Compile AX 2012 R3
 
-Compile AX 2012 R3 by using AxBuild.exe. For instructions, see [AxBuild.exe for Parallel Compile on AOS of X++ to p-code](https://technet.microsoft.com/library/dn528954.aspx).
+Compile AX 2012 R3 by using AxBuild.exe. For instructions, see [AxBuild.exe for Parallel Compile on AOS of X++ to p-code](/dynamicsax-2012/developer/axbuild-exe-for-parallel-compile-on-aos-of-x-to-p-code).
 
 ### Initailize AX 2012 R3
 
-Open the AX 2012 R3 client and complete the initialization checklists. For instructions, see [Initialization checklists](https://technet.microsoft.com/library/aa497061.aspx).
+Open the AX 2012 R3 client and complete the initialization checklists. For instructions, see [Initialization checklists](/dynamicsax-2012/appuser-itpro/initialization-checklists).
 
 ### Install sample data
 
@@ -295,7 +295,7 @@ If you want sample data installed in your environment, complete the following st
 To enable your users to access AX 2012 R3, complete the following tasks:
 
 -   Add each user’s domain account to the Remote Desktop Users group on the CLI-&lt;GUID&gt; virtual machine.
--   Give users access to AX 2012 R3. For instructions, see [Create new users in Microsoft Dynamics AX](https://technet.microsoft.com/library/aa548139.aspx).
+-   Give users access to AX 2012 R3. For instructions, see [Create new users in Microsoft Dynamics AX](/dynamicsax-2012/appuser-itpro/create-new-users-in-microsoft-dynamics-ax).
 
 > [!NOTE]
 > If you don’t want to create a VPN connection and a domain trust, you can still give users access to AX 2012 R3. To do so, you’ll need to log on to the virtual machine that serves as the domain controller, and create domain accounts for each user. Then, you’ll need to complete the two tasks mentioned above.
@@ -317,10 +317,10 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 <tr class="even">
 <td>See the instructions on TechNet</td>
 <td><ul>
-<li><a href="https://technet.microsoft.com/library/gg732218.aspx">System setup for Microsoft Dynamics AX</a></li>
-<li><a href="https://technet.microsoft.com/library/gg732158.aspx">The Microsoft Dynamics AX client</a></li>
-<li><a href="https://technet.microsoft.com/library/gg731868.aspx">Application Object Servers</a></li>
-<li><a href="https://technet.microsoft.com/library/ee873263.aspx">Reporting in Microsoft Dynamics AX</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/system-setup-for-microsoft-dynamics-ax">System setup for Microsoft Dynamics AX</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/the-microsoft-dynamics-ax-client">The Microsoft Dynamics AX client</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/application-object-servers">Application Object Servers</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/reporting-in-microsoft-dynamics-ax">Reporting in Microsoft Dynamics AX</a></li>
 </ul>
 <table>
 <tbody>
@@ -328,13 +328,13 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 <td><strong>Note</strong></td>
 </tr>
 <tr class="even">
-<td>Be sure to <a href="https://technet.microsoft.com/library/dd309703.aspx">deploy the default reports</a> and <a href="https://technet.microsoft.com/library/aa496432.aspx">grant users access</a> to them.</td>
+<td>Be sure to <a href="/dynamicsax-2012/appuser-itpro/deploy-the-default-reports">deploy the default reports</a> and <a href="/dynamicsax-2012/appuser-itpro/grant-users-access-to-reports">grant users access</a> to them.</td>
 </tr>
 </tbody>
 </table>
 <ul>
 <li><a href="https://www.microsoft.com/download/details.aspx?id=5916">Management Reporter 2012</a></li>
-<li><a href="https://technet.microsoft.com/library/ee873272.aspx">Analytics in Microsoft Dynamics AX</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/analytics-in-microsoft-dynamics-ax">Analytics in Microsoft Dynamics AX</a></li>
 </ul>
 <table>
 <tbody>
@@ -347,8 +347,8 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 </tbody>
 </table>
 <ul>
-<li><a href="https://technet.microsoft.com/library/gg866975.aspx">Help server</a></li>
-<li><a href="https://technet.microsoft.com/library/gg751374.aspx">Enterprise Portal and Role Centers</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/help-server">Help server</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/enterprise-portal-and-role-centers">Enterprise Portal and Role Centers</a></li>
 </ul>
 <table>
 <tbody>
@@ -361,27 +361,27 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 </tbody>
 </table>
 <ul>
-<li><a href="https://technet.microsoft.com/library/gg731850.aspx">Enterprise Search</a></li>
-<li><a href="https://technet.microsoft.com/library/gg731810.aspx">Services and Application Integration Framework (AIF)</a></li>
-<li><a href="https://technet.microsoft.com/library/jj710398.aspx">Microsoft Dynamics AX Retail for IT pros and developers</a></li>
-<li><a href="https://technet.microsoft.com/library/aa834453.aspx">.NET Business Connector</a></li>
-<li><a href="https://technet.microsoft.com/library/gg731779.aspx">Security</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/enterprise-search">Enterprise Search</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/services-and-application-integration-framework-aif">Services and Application Integration Framework (AIF)</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/microsoft-dynamics-ax-retail-for-it-pros-and-developers">Microsoft Dynamics AX Retail for IT pros and developers</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/net-business-connector">.NET Business Connector</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/security">Security</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>View printable guides and white papers</td>
 <td><ul>
-<li><a href="https://technet.microsoft.com/library/gg732268.aspx">Printable guides</a></li>
-<li><a href="https://technet.microsoft.com/library/gg188985.aspx">White papers for system administrators</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/printable-guides">Printable guides</a></li>
+<li><a href="/dynamicsax-2012/appuser-itpro/white-papers-for-system-administrators">White papers for system administrators</a></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Use the Microsoft Dynamics AX web search tool</td>
 <td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?LinkID=212924">Web search for developers</a></li>
-<li><a href="https://go.microsoft.com/fwlink/?LinkID=212925">Web search for system administrators</a></li>
-<li><a href="https://go.microsoft.com/fwlink/?LinkID=212922">Web search for application users</a></li>
-<li><a href="https://go.microsoft.com/fwlink/?LinkID=194311">Combined web search</a></li>
+<li><a href="/dynamics365/fin-ops-core/fin-ops/get-started/websearchax-retired">Web search for developers</a></li>
+<li><a href="/dynamics365/fin-ops-core/fin-ops/get-started/websearchax-retired">Web search for system administrators</a></li>
+<li><a href="/dynamics365/fin-ops-core/fin-ops/get-started/websearchax-retired">Web search for application users</a></li>
+<li><a href="/dynamics365/fin-ops-core/fin-ops/get-started/websearchax-retired">Combined web search</a></li>
 </ul></td>
 </tr>
 </tbody>

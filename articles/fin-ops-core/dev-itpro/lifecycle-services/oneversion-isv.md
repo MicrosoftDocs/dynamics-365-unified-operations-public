@@ -191,7 +191,7 @@ The currently released product that is maintained in the servicing branch should
 
 If the testing is successful, this step will validate that a customer installation of the current version of your ISV solution won't have to be updated when Microsoft broadcasts the new release to the customer.
 
-If the testing isn't successful, you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
+If the testing isn't successful, you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, in turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
 
 ### Currently released products – Testing design-time compatibility
 
@@ -201,7 +201,7 @@ You should run your suite of automated developer tests, automated functional tes
 
 If the testing is successful, this step will validate that your ISV solution won't have to be updated even if source code is supplied to the customer and the customer recompiles the ISV solution.
 
-If the testing isn't successful, and the issue isn't one of the categories that are described in [Breaking changes](../extensibility/breaking-changes.md), you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, it turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
+If the testing isn't successful, and the issue isn't one of the categories that are described in [Breaking changes](../extensibility/breaking-changes.md), you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process. The issue will require either a fix from Microsoft or a fix in your ISV solution. A fix in your solution might, it turn, require that customers be updated from the servicing branch. In both cases, Microsoft must know about the issue, so that it can become more proactive in its processes for future releases.
 
 ### Currently released products – Updating the base build
 
@@ -211,7 +211,7 @@ As Microsoft updates your customers to new releases, you should periodically upd
 
 You validate your new solution development on either the latest released version or the released version that you plan for to use for servicing when your new release goes out. However, in both cases, consider doing validation on the most current version. This validation will help with early discovery of issues or uptake work that you must do.
 
-If an unexpected break occurs, then you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process.
+If an unexpected break occurs, then you, as the ISV, must immediately notify Microsoft through the [PEAP communication process](/dynamics365/unified-operations/fin-and-ops/get-started/one-version#how-can-i-get-early-access-to-non-released-platform-updates). This process uses Yammer and an issue notification process.
 
 ## Deploying updates
 

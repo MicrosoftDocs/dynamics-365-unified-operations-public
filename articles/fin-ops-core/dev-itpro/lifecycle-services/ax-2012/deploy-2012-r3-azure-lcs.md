@@ -38,7 +38,7 @@ Azure is an open and flexible cloud platform that enables you to quickly build, 
 -   **Gain flexibility** The cloud enables you to easily scale up (or scale down) to meet the changing needs of your business.
 
 > [!NOTE]
-> Dynamics AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/library/dd362138.aspx).
+> Dynamics AX 2012 R3 can also be deployed on-premises. For details, see the topic [Install Microsoft Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/install-microsoft-dynamics-ax-2012).
 
 ## The Azure services model
 Azure offers three types of services: Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), and Infrastructure-as-a-Service (IaaS).

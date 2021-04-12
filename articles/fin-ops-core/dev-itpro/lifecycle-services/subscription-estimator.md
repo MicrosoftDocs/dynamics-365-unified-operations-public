@@ -66,7 +66,7 @@ This error occurs if transaction lines that are entered aren't within the limits
 
 ### How can I update my subscription if my production environment is deployed?
 
-The [Subscription estimator](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) is a required step before requesting production. Although you can have multiple estimates, one must be marked as  **Active**. The active subscription estimate is used to size the production environment. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. To mark a different estimate as the active estimate, create a support request by using the Support portal in LCS. If you have an  increase in the licensing volume  of your project, you will need to create a new subscription estimator and log a support request to have it marked as Active. Resizing may be applicable based on the new subscription estimate.
+The [Subscription estimator]() is a required step before requesting production. Although you can have multiple estimates, one must be marked as  **Active**. The active subscription estimate is used to size the production environment. After the production environment has been deployed, or deployment of the environment has received sign-off, the active estimate is locked. To mark a different estimate as the active estimate, create a support request by using the Support portal in LCS. If you have an  increase in the licensing volume  of your project, you will need to create a new subscription estimator and log a support request to have it marked as Active. Resizing may be applicable based on the new subscription estimate.
 
 ### What should I do to activate my subscription estimate if I have multiple projects in the same tenant?
 
@@ -80,7 +80,7 @@ Make sure that you have all the required licenses active before submitting the r
 If you receive any other error message or encounter any other issue, create a support request, and attach your active estimate so that the Support team can address the issue.
  
  ## Additional resources
- [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/subscription-overview)
+ [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../../fin-ops/get-started/subscription-overview.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
