@@ -61,7 +61,7 @@ The environment administrator uses the information in this section to enable net
 2. Print a test page on the installed printers to make sure that all the connections are correctly configured.
 3. Restart the AXService application to help guarantee that the user's profile is correctly loaded so that it can look up the printer driver.
 
-### Install printers on nodes where AXService is executing under a gMSA
+### Install printers on nodes where AXService is executing under a group Managed Service Account (gMSA)
 
 > [!IMPORTANT]
 > This section requires at least version 2.9.0 of the infrastructure scripts.
