@@ -72,7 +72,7 @@ During the UAT phase, you must test all the business processes you've implemente
 
 - We recommend that your UAT process starts with a clean and fresh environment where the data from your GOLD configuration is copied into the environment prior to the start of the UAT process. We recommend that you use the production environment as your GOLD environment until you go-live, at which point the environment becomes production.
 - Test cases cover the entire scope of requirements. 
-- Test by using migrated data. This data should include master data such as workers, jobs, and positions. Also include opening balances, like leave and absence accruals. Finally, include open transactions, such as current benefits enrollments. Complete testing with all types of data, even if the data set isn't finalized. 
+- Test by using migrated data. This should include data such as workers, jobs, and positions. Also include opening balances, like leave and absence accruals. Finally, include open transactions, such as current benefits enrollments. Complete testing with all types of data, even if the data set isn't finalized. 
 - Test by using the correct security roles (default roles and custom roles) that are assigned to users. 
 - Make sure that the solution complies with any company- and industry-specific regulatory requirements. 
 - Document all features and obtain approval and sign-off from the customer. 
