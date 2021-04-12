@@ -101,7 +101,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 ### Before running the Modern POS installer
 
-- Make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
+- Make sure that all [system requirements](../fin-ops-core/fin-ops/get-started/system-requirements.md) are met.
 - It is recommended to temporarily turn off antivirus applications.  It has been noted that on aggressive antivirus solutions, the installation may stall due to the antivirus solution checking active files while in use.
 - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx     
@@ -204,7 +204,7 @@ This procedure should be completed before you activate Retail Cloud POS or Moder
 ## Activate a device
 
 > [!NOTE]
-> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](https://docs.microsoft.com/azure/active-directory/develop/apple-sso-plugin).
+> It is possible for the Safari browser to show an error during device activation of a Cloud POS device due to an Azure Active Directory token being unattainable. You can resolve this issue by utilizing the [Microsoft Enterprise SSO plug-in for Apple devices](/azure/active-directory/develop/apple-sso-plugin).
 
 1. Start Modern POS on your computer. Read the instructions on the **Before you start** page, and make sure that they are completed. Then select **Next**.
 2. Select **Activate**. You're redirected to the Azure AD sign-in page.
@@ -217,7 +217,7 @@ The device should now be activated and ready to use.
 ## Update the Modern POS application
 
 > [!NOTE]
-> To learn more about deployable packages, see [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md).
+> To learn more about deployable packages, see [Apply a deployable package](../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
 
 1. After a Modern POS application is uploaded into the environment, the version of the package can be selected on the device. The package listings should include the new uploaded application.
 2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
@@ -347,7 +347,7 @@ The device should now be activated and ready to use.
 
 On a single-computer system, such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, Modern POS can't complete device activation.
 
-**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](https://msdn.microsoft.com/library/windows/apps/hh780593.aspx).
+**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)).
 
 ## Additional resources
 

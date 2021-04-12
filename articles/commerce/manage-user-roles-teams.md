@@ -38,7 +38,7 @@ The following illustration shows an example of a list of team members and their 
 
 ![Team members and user roles in the Microsoft Teams admin center](media/d365-commerce-teams-integration-user-roles.png)
 
-For more information, see [Assign team owners and members in Microsoft Teams](https://docs.microsoft.com/microsoftteams/assign-roles-permissions).
+For more information, see [Assign team owners and members in Microsoft Teams](/microsoftteams/assign-roles-permissions).
 
 ## Additional resources
 

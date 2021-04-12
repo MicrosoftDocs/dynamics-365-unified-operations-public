@@ -33,9 +33,9 @@ ms.dyn365.ops.version: 10.0
 
 This topic provides information on configuration and deployment of the advanced auto charges features that are available in Dynamics 365 for Retail version 10.0.
 
-When the advanced auto charges features are enabled, orders created in any supported Commerce channel (point of sale (POS), call center, and online), can take advantage of the [auto charges](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
+When the advanced auto charges features are enabled, orders created in any supported Commerce channel (point of sale (POS), call center, and online), can take advantage of the [auto charges](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
 
-In releases prior to Retail version 10.0, [auto charge](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations are only accessible by orders created in e-Commerce and call center channels. In versions 10.0 and later, POS-created orders can leverage the auto charges configurations. That way, additional miscellaneous charges can systematically be added to sales transactions.
+In releases prior to Retail version 10.0, [auto charge](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations are only accessible by orders created in e-Commerce and call center channels. In versions 10.0 and later, POS-created orders can leverage the auto charges configurations. That way, additional miscellaneous charges can systematically be added to sales transactions.
 
 When using releases prior to version 10.0, a POS user is prompted to manually enter a shipping fee during the creation of a "ship all" or "ship selected" POS transaction. While the miscellaneous charges capabilities of the application are utilized in respect to how the charges are written to the order, no systematic calculation is provided – the calculation relies on the user's input to determine the value of the charges. The charges can only be added as a single "shipping" related charges code and cannot easily be edited or changed in the POS after they are created.
 
@@ -57,7 +57,7 @@ Before you enable this feature, ensure that you have tested and trained your emp
 
 ## Additional POS operations
 
-For advanced auto charges to work properly in your POS application environment, new POS operations have been added. These operations must be added to your [POS screen layouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) and deployed to the POS devices as you deploy advanced auto charges. If these operations are not added, users will not be able to manage or maintain miscellaneous charges on the POS transactions and will have no way of adjusting or changing the charges values that are systematically calculated based on auto charges configurations. At minimum, it is suggested that you deploy the **Manage charges** operation to your POS layout.
+For advanced auto charges to work properly in your POS application environment, new POS operations have been added. These operations must be added to your [POS screen layouts](/dynamics365/unified-operations/retail/pos-screen-layouts) and deployed to the POS devices as you deploy advanced auto charges. If these operations are not added, users will not be able to manage or maintain miscellaneous charges on the POS transactions and will have no way of adjusting or changing the charges values that are systematically calculated based on auto charges configurations. At minimum, it is suggested that you deploy the **Manage charges** operation to your POS layout.
 
 The new operations are as follows.
 
@@ -146,7 +146,7 @@ If the charge should be considered a "shipping" related charge for the purpose o
 
 Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
 
-The **Add header charge** operation must be configured in your [POS screen layout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 141). The screen layout changes must be distributed to the channel as well through the distribution schedule function.
+The **Add header charge** operation must be configured in your [POS screen layout](/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 141). The screen layout changes must be distributed to the channel as well through the distribution schedule function.
 
 #### Sales processing of manual header charges
 
@@ -168,7 +168,7 @@ If the charge should be considered a "shipping" related charge for the purpose o
 
 Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
 
-The **Add line charge** operation must be configured in your [POS screen layout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 140). The screen layout changes must be distributed to the channel as well through the distribution schedule function.
+The **Add line charge** operation must be configured in your [POS screen layout](/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 140). The screen layout changes must be distributed to the channel as well through the distribution schedule function.
 
 #### Sales processing of the manual line charge
 
@@ -180,7 +180,7 @@ The same process can be applied in the call center by using the "maintain charge
 
 ### Editing charges on a POS sales transaction
 
-The **Manage charges** operation (142) should be added to the [POS screen layout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) so that a user can view and edit or override any system-calculated or manually created header or line-level charges. If the operation is not added, users will not be able to adjust the value of the charges on the POS transaction, nor will they be able to view the details of the charges such as the type of charges code tied to the charge.
+The **Manage charges** operation (142) should be added to the [POS screen layout](/dynamics365/unified-operations/retail/pos-screen-layouts) so that a user can view and edit or override any system-calculated or manually created header or line-level charges. If the operation is not added, users will not be able to adjust the value of the charges on the POS transaction, nor will they be able to view the details of the charges such as the type of charges code tied to the charge.
 
 On the **Manage charges** page in POS, the user can view both header and line-level charges details. The user can use the **Edit** function available on this page to make changes to the amount charged to a specific charges line. Once a charges line is overwritten manually, it will not be systematically recalculated unless the user initiates the **Recalculate charges** operation.
 
