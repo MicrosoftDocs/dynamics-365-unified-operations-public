@@ -49,7 +49,7 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
  <p><a href="get-started/purchase-on-premises.md">Buy Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementation lifecycle</a></h3>
-<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+<p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Onboarding a project</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Preparing for go-live</a></p>
 
@@ -81,7 +81,7 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 <p><a href="../../finance/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></p>
 <p><a href="../../finance/fixed-assets/fixed-assets.md">Fixed assets</a></p>
 <p><a href="../../finance/general-ledger/general-ledger.md">General ledger</a></p>
-<p><a href="../../finance/project-management/overview-project-management-accounting.md">Project management</a></p>
+<p><a href="/dynamics365/project-operations/prod-pma/overview-project-management-accounting">Project management</a></p>
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Public sector</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></p>
 
@@ -131,13 +131,13 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 </td>
 <td>
 <h3>Related products</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
+<h4><a href="/dynamics365/commerce/">Dynamics 365 Commerce</a></h4>
 <p><a href="../../retail/call-center-functionality.md">Call center</p>
 <p><a href="../../retail/define-maintain-retail-channels.md">Channel setup and management</p>
 <p><a href="../../retail/retail-peripherals-overview.md">MPOS and Cloud POS</p>
 <p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commerce developer and administration</p>
 
-<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<h4><a href="/dynamics365/fin-ops-core/fin-ops/">Dynamics 365 Human Resources</a></h4>
 <p><a href="../../human-resources/hr-admin-overview.md">Administrator Guide</a></p>
 <p><a href="../../human-resources/hr-developer-overview.md">Developer Guide</a></p>
 <p><a href="../../human-resources/hr-hrpro-overview.md">User Guide</a></p>
