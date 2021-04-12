@@ -145,7 +145,7 @@ An error may occur while a previous payment is being recovered on Modern POS. Th
 
 ## Additional resources
 
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

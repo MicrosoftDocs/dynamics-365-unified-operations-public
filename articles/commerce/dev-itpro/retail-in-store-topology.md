@@ -31,7 +31,7 @@ ms.search.validFrom: 2019-03-01
 
 This topic provides an overview of the various Dynamics 365 Commerce in-store topologies. 
 
-<a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![Choose the right store topology](media/CHANNEL/INSTORE/Topology.jpg)</a>
+<a href="/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![Choose the right store topology](media/CHANNEL/INSTORE/Topology.jpg)</a>
 
 ## Supported capabilities when connectivity is lost
 | Operation | Without connectivity to Commerce Scale Unit<br>(in MPOS Offline Mode) | Without connectivity to HQ<br>(Commerce Scale Unit (self-hosted)) |
@@ -40,10 +40,10 @@ This topic provides an overview of the various Dynamics 365 Commerce in-store to
 | Cross terminal transactions (such as view, suspend, resume)  | | ✔ |
 
 ## Supported operations when connectivity is lost
-For a list of operations that are supported when the POS loses connectivity to the HQ, see [Online and offline point of sale (POS) operations](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations).
+For a list of operations that are supported when the POS loses connectivity to the HQ, see [Online and offline point of sale (POS) operations](/dynamics365/unified-operations/retail/pos-operations).
 
 ## Supported deployment and maintenance capabilities
-Mass deployment is supported in Modern POS, but not in Commerce Scale Unit. For more information, see [Mass deployment of self-service components](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment).
+Mass deployment is supported in Modern POS, but not in Commerce Scale Unit. For more information, see [Mass deployment of self-service components](/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment).
 
 ## Deployed components
 The following components are deployed through a single installer. This means that they do not need to be installed individually.
@@ -66,16 +66,16 @@ The following components are deployed through a single installer. This means tha
 ## Additional resources
 ### MPOS offline mode
 For more information about MPOS offline mode, see:
-- [Offline point of sale (POS) functionality](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality)
-- [Online and offline point of sale (POS) operations](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations)
-- [Mass deployment of self-service components](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)
+- [Offline point of sale (POS) functionality](/dynamics365/unified-operations/retail/pos-offline-functionality)
+- [Online and offline point of sale (POS) operations](/dynamics365/unified-operations/retail/pos-operations)
+- [Mass deployment of self-service components](/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)
 
 ### Commerce Scale Unit (self-hosted)
 The Commerce Scale Unit (self-hosted) is a set of components that can be deployed in a customer environment, such as inside a store, that can support continuous operations if connectivity to the back office or headquarters (HQ) is lost. 
 
 For more information, see:
-- [Configure and install Commerce Scale Unit (self-hosted)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
-- [Commerce Scale Unit (self-hosted)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
+- [Configure and install Commerce Scale Unit (self-hosted)](/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
+- [Commerce Scale Unit (self-hosted)](/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,7 +51,7 @@ To configure the property, follow these steps.
 
 [Payment methods](../payment-methods.md)
 
-[Credit card setup, authorization, and capture](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/credit-card-authorizations)
+[Credit card setup, authorization, and capture](../../finance/accounts-receivable/credit-card-authorizations.md)
 
 [Configure cash denominations for the point of sale (POS)](../cash-denominations.md)
 

@@ -89,7 +89,7 @@ The following data action managers are available:
 - TransferOrdersDataActions
 - WarehousesDataActions
 
-For a list of all the available Retail Server APIs in each data action manager, see [Retail Server Customer and Consumer APIs](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-server-customer-consumer-api).
+For a list of all the available Retail Server APIs in each data action manager, see [Retail Server Customer and Consumer APIs](../dev-itpro/retail-server-customer-consumer-api.md).
 
 ## Retail Server proxy data methods
 
