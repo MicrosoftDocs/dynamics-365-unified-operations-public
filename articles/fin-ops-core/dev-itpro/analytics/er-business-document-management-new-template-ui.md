@@ -37,6 +37,7 @@ The new document user interface (UI) is clearer and more comfortable to use. The
 
 The **New document** button lets users create and edit a template in an Electronic reporting (ER) format configuration that is provided by another provider. In the example in this topic, the provider is Microsoft.
 
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAVQg]
 
 The [Create a new business document using Business document management](https://youtu.be/gAIYl-mM_pw) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
