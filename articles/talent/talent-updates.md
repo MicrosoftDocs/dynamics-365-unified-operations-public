@@ -109,7 +109,7 @@ Once a feature is generally available, it may be turned on or off in production 
 
 We highly recommend previewing features in a sandbox or trial environment. It's best to create a copy of your current production environment or database into a sandbox environment so you can get the complete experience of the new features with your data.
 
-For more information about provisioning a sandbox environment, see [Provision a Talent project](provisioning-talent.md#provision-a-talent-project). To remove a test environment, see [Removing a test drive environment](../human-resources/hr-admin-setup-remove-instance.md#removing-a-test-drive-environment). 
+For more information about provisioning a sandbox environment, see [Provision a Talent project](provisioning-talent.md#provision-a-talent-project). To remove a test environment, see [Removing a test drive environment](../human-resources/hr-admin-setup-remove-instance.md#remove-a-test-drive-environment). 
 
 ## Report bugs
 
