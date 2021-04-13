@@ -90,7 +90,7 @@ Attract posts jobs to LinkedIn as Limited Listings. If you want to use Premium J
 
 #### Frequency of batch processing on LinkedIn
 
-LinkedIn processes job posts in a batch through Attract once per day. Therefore, it can take up to 48 hours for jobs to appear on LinkedIn after they are posted through Attract. If you need jobs to appear sooner on LinkedIn, or if you need any additional flexibility, you can use the Recruiter System Connect application programming interface (API) from LinkedIn. For more information, see [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect).
+LinkedIn processes job posts in a batch through Attract once per day. Therefore, it can take up to 48 hours for jobs to appear on LinkedIn after they are posted through Attract. If you need jobs to appear sooner on LinkedIn, or if you need any additional flexibility, you can use the Recruiter System Connect application programming interface (API) from LinkedIn. For more information, see [Recruiter System Connect](/linkedin/talent/recruiter-system-connect).
 
 #### Table of options for job posting to LinkedIn
 
@@ -104,7 +104,7 @@ The following table describes the different options for posting jobs to LinkedIn
 | **How often does LinkedIn post jobs?** | Once per day | Once per day | Multiple times per day, as defined by the API |
 | **Recommended by LinkedIn?** | No | Yes | No |
 | **What do I need?** | Purchase of Attract | A job wrapping contract with LinkedIn and purchase of Premium Job Slots | An API agreement with LinkedIn | 
-| **Where can I find more information?** | [Set up integration with LinkedIn for Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md) | [Job Wrapping through LinkedIn Recruiter - Overview](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect) |
+| **Where can I find more information?** | [Set up integration with LinkedIn for Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md) | [Job Wrapping through LinkedIn Recruiter - Overview](https://www.linkedin.com/help/recruiter/answer/79037) | [Recruiter System Connect](/linkedin/talent/recruiter-system-connect) |
 
 > [!NOTE]
 > You don't need a LinkedIn Recruiter System Connect license to post jobs to LinkedIn with Attract.

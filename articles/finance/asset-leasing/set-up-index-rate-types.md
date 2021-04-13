@@ -4,14 +4,14 @@
 title: Set up index rates
 description: This topic explains how to set up index rates. Index rates are required if your organization associates lease payment amounts with a set of index rates.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeaseIndexRateType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -53,7 +53,7 @@ When changing the job on a position, job columns will default to the position. A
 With this change, **Probation period** and **Calendar** columns have been added to the **Manage changes** page to allow for data entry for future and past employees.
 
 ### Platform update 23 for Finance and Operations
-Minor bug fixes have been included as part of Platform update 23 for Finance and Operations. For more information, see [What's new or changed in Dynamics 365 Finance and Operations platform update 23 (January 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+Minor bug fixes have been included as part of Platform update 23 for Finance and Operations. For more information, see [What's new or changed in Dynamics 365 Finance and Operations platform update 23 (January 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -656,7 +656,7 @@ Generate a transport tax declaration
 
 >   For more information, see [Download Electronic reporting configurations from
 >   Lifecycle
->   Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+>   Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 1.  You can upload Data management package settings to work with the transport
     tax declaration. Follow these steps:

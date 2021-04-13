@@ -118,7 +118,7 @@ If a user edits the job after it is approved, but not activated, the job status 
 The people who are listed as approvers will receive a notification in Attract and an email to inform them they have an item to approve.  In the email, approvers can click the link to open the job, review the details, and either approve or reject. After the job's status is set to **Approved** or **Rejected**, the submitter will be notified in Attract and they will receive an email. Also, the approvers will receive a reminder email if they have not responded to the approval request within 24 hours.
 
 > [!NOTE]
-> You can create custom email templates for Approval emails. For more information, see [Creating and managing email templates](https://docs.microsoft.com/dynamics365/unified-operations/talent/email-templates).
+> You can create custom email templates for Approval emails. For more information, see [Creating and managing email templates](/dynamics365/unified-operations/talent/email-templates).
 
 ## Create a job
 
