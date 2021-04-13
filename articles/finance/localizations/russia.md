@@ -162,6 +162,8 @@ This topic provides information about functionality that supports Russian regula
 - [Assets tax registers](rus-assets-tax-registers.md)
 - [Deferrals tax register](rus-deferred-expenses-register.md)
 - [Cash flow tax registers](rus-cash-flow-tax-registers.md)
+- [Rated expenses registers](rus-rated-expenses-registers.md)
+- [Accounts payable debt tax registers and debt write-offs](rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md)
 
 ## Additional resources
 
