@@ -2,14 +2,14 @@
 title: Deploy edge scale units on custom hardware using LBD
 description: Provision edge scale units on premises using custom hardware and LBD based deployment
 author: cabeln
-ms.date: 04/08/2021
+ms.date: 04/13/2021
 ms.topic: article
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
-ms.search.validFrom: 2021-04-08
+ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
 ---
 
