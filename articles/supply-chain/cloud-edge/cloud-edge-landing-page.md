@@ -28,9 +28,9 @@ Companies that work with manufacturing and distribution must be able to run key 
 
 Cloud and edge scale units enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through add-ins for your supply chain subscription.
 
-- **Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management**
- (*available by 1st of April* 2021)
-- **Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management** (*available in the future*)
+- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
+ (*available by first of April, 2021*)
+- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available in the future*)
 
 Workload capabilities are being release on a continuous basis with incremental enhancements.
 
@@ -45,7 +45,7 @@ Scale units provide resilience, reliability and scale for the assigned workloads
 A workload is a defined set of business functionality that can be factored out and delegated to a scale unit.
 The workload for warehouse management has been released, while the manufacturing execution workload is still in preview.
 
-You can configure your hub environment and  cloud scale units for selected workloads by using the [Scale Unit Manager](https://sum.dynamics.com) portal. You can also assign  multiple workloads per scale unit. Please refer to [prerequisites and limitations](#prerequisites-and-limitations-for-cloud-scale-units) in the current release.
+You can configure your hub environment and  cloud scale units for selected workloads by using the [Scale Unit Manager](https://sum.dynamics.com). You can also assign  multiple workloads per scale unit. See also the [prerequisites and limitations for cloud scale units](#cloud-scale-unit-prerequisites) for the current release.
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
@@ -53,50 +53,54 @@ The warehouse management workload is the first distributed workload for scale un
 
 For warehouse management, scale units deliver the following capabilities:
 
-- Processing of selected wave methods is enabled for sales orders and demand replenishment.
+- The system can process selected wave methods for sales orders and demand replenishment.
 - Warehouse workers can run sales and demand replenishment warehouse work by using the Warehouse Management mobile app.
 - Warehouse workers can inquire into on-hand inventory by using the Warehouse Management mobile app.
 - Warehouse workers can create and run inventory movements by using the Warehouse Management mobile app.
 - Warehouse workers can register purchase orders and do putaway by using the Warehouse Management mobile app.
 
-For more information, see the [warehouse scale unit workload details](cloud-edge-workload-warehousing.md).
+For more information, see [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
 
 ### Dedicated manufacturing execution workload capabilities in a scale unit
 
-The first release of the manufacturing workload is in preview at this moment and  delivers the following capabilities:
+The first release of the manufacturing workload is currently in preview and delivers the following capabilities:
 
 - Machine operators and shop floor supervisors can access the operational production plan.
 - Machine operators can keep the plan up to date by running discrete and process manufacturing jobs.
 - The shop floor supervisor can adjust the operational plan.
-- Workers can access time and attendance for clock-in and clock-out on the edge, to ensure correct worker pay calculation.
+- Workers can access time and attendance for clock-in and clock-out on the edge to ensure correct worker pay calculation.
 
-For more information, see the [manufacturing scale unit workload details (in preview)](cloud-edge-workload-manufacturing.md).
+For more information, see [Manufacturing execution workloads for cloud and edge scale units](cloud-edge-workload-manufacturing.md).
 
 ## What to consider before enabling the distributed hybrid topology for Supply Chain Management
 
 By enabling the hybrid distributed topology you transition your cloud supply chain management environment to functions as a hub. And you may associate additional environments in the cloud or on the edge which are configured as scale units.
 
+<a name="cloud-scale-unit-prerequisites"></a>
+
 ### Prerequisites and limitations for cloud scale units
 
-In the current release for scale units certain capabilities are not available yet and some may be added in incremental releases over time.
+In the current release for scale units, certain capabilities are not yet available and may be added in incremental releases over time.
 
 #### You must be a licensed customer of Dynamics 365 Supply Chain Management
 
-To onboard to the distributed topology, you must have a license to Dynamics 365 Supply Chain Management. Your existing cloud environment will become the hub in your hybrid topology. You can declare both sandbox and production environments as hub environments and add scale units according to the add-ins you acquire.  
+To onboard to the distributed topology, you must have a license for Dynamics 365 Supply Chain Management. Your existing cloud environment will become the hub in your hybrid topology. You can declare both sandbox and production environments as hub environments and add scale units according to the add-ins you acquire.  
 
-#### Your existing Lifecycle Services (LCS) project must be administered via the global commercial version of <https://lcs.dynamics.com>
+#### Your existing project must be administered via the global commercial version of LCS
 
-- Local versions of LCS are not supported  e.g. <https://eu.lcs.dynamics.com/>, <https://fr.lcs.dynamics.com/>.
+- Your existing project must be administered via the global commercial version of Lifecycle Services (LCS) at [lcs.dynamics.com](https://lcs.dynamics.com).
+- Local versions of LCS are not supported (such as [eu.lcs.dynamics.com](https://eu.lcs.dynamics.com) or [fr.lcs.dynamics.com](https://fr.lcs.dynamics.com)).
 - Governmental Cloud versions of LCS are not supported.
-- Mooncake version of LCS is not supported.
+- The Mooncake version of LCS is not supported.
 
 #### Your current production environment must be of type "Self-Service" in LCS
 
-This indicates that the tenant of your LCS project has already been converted to support the Service Fabric hosting model.
+Your current production environment must be of type "Self-Service" in LCS. This indicates that the tenant of your LCS project has already been converted to support the Service Fabric hosting model.
 
 > [!IMPORTANT]
-> Environment types running as IaaS are not supported, which are typically are tagged as "Microsoft Managed" in LCS.
-If you have this type of environment, please work with your Microsoft contact to understand your migration timeline to "Self-Service".
+> Environment types running as IaaS are not supported. These are typically are tagged as "Microsoft Managed" in LCS.
+>
+> If you have this type of environment, please work with your Microsoft contact to understand your migration timeline to "Self-Service".
 
 Microsoft is in the process of transitioning all cloud environments of SCM from an IaaS model to Service Fabric hosted topology. The move brings better scalability, eases the service management which results in faster deployment and maintenance operations. The service components migrate into the concept of micro services, and the service hosting model [transitions](/virtualization/windowscontainers/about/containers-vs-vm) from VM model to light weight containerized architecture.
 
