@@ -292,6 +292,7 @@ Data types:
 - Date
 - UUID
 
+Capability to group and ungroup clauses.
 The example looks like this.
 
 | Electronic invoicing feature | Applicability rules        |
