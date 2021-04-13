@@ -52,7 +52,7 @@ Platform update 18 for Finance and Operations is now part of the Talent release.
     -   Headings in workspaces and pages are bold.
 
 -   The behavior of non-replacing lookups has been improved. For more information, see [Improved behavior for non-replacing
-    lookups](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/non-replacing-lookups).
+    lookups](/business-applications-release-notes/October18/dynamics365-finance-operations/non-replacing-lookups).
 
 ## Bug fixes
 
