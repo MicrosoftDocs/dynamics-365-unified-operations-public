@@ -17,9 +17,9 @@ ms.search.validFrom: 2021-04-30
 
 [!include[banner](../includes/banner.md)]
 
-Replication is a set of technologies for copying and distributing data and database objects from one database to another and then synchronizing between databases to maintain consistency. All this migration/copying happens with the source system online i.e. no need of AX Service downtime during the replication process. In the **Finance and Operations Online Database Migration Toolkit** we use transactional replication, this typically used in server-to-server scenarios that require high throughput, including improving scalability and availability.
+Replication is a set of technologies for copying and distributing data and database objects from one database to another, and then synchronizing between the databases to maintain consistency. All this migration and copying happens with the source system online, which means there is no need for Finance and Operations service downtime during the replication process. In the **Online Database Migration Toolkit** we use transactional replication, this typically is used in server-to-server scenarios that require high-throughput, including improving scalability and availability.
 
-The **Finance and Operations Online Database Migration Toolkit** can be downloaded from the LCS Portal under Shared Library   Model (Assert Type)
+The **Online Database Migration Toolkit** can be downloaded from Lifecycle Services (LCS) in **Shared asset Library > Model**.
 
 ## Prerequisites
 
