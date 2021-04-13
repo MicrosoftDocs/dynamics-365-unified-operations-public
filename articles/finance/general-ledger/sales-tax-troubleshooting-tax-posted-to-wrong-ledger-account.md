@@ -64,7 +64,7 @@ In this example, the tax code is, **VAT 19**.
      | ----------------------- | ------------------------------------------------------------ |
      | Sales tax payable       | The main account for outgoing sales taxes that are payable to the tax authority.  |
      | Sales tax receivable   | The main account for incoming taxes that are  received from the tax authority.  |
-     | Use tax expense         | The ain account for posting deductible use taxes that aren't claimed or reported to the tax authority by vendors as part of EU reverse charge GST/HST. **Use tax** must be selected for the sales tax code in the sales tax group that's used in the transaction. This field isn't available if **Apply sales tax taxation rules** is selected on the **General ledger parameters** page.) |
+     | Use tax expense         | The main account for posting deductible use taxes that aren't claimed or reported to the tax authority by vendors as part of EU reverse charge GST/HST. **Use tax** must be selected for the sales tax code in the sales tax group that's used in the transaction. This field isn't available if **Apply sales tax taxation rules** is selected on the **General ledger parameters** page.) |
      | Use tax payable         | The main account for posting incoming use taxes that are payable to tax authorities. |
      | Settlement account      | The main account that the net balance of the ledger accounts specified in the **Use tax payable** and **Sales tax receivable** fields will be posted. |
      | Vendor cash discount   | The main account to post a cash discount for sales tax codes that are associated with this ledger posting  group. |
@@ -74,7 +74,7 @@ In this example, the tax code is, **VAT 19**.
 
 ## Debug in code to check ledger dimensions 
 
-In the code, the posting account is determined by the ledger dimension. The ledger dimension saves the record ID of an account in the databse. You can query the account by the ledger dimension using the following SQL query:
+In the code, the posting account is determined by the ledger dimension. The ledger dimension saves the record ID of an account in the database. You can query the account by the ledger dimension using the following SQL query:
 
      ```sql
      select * from DIMENSIONATTRIBUTEVALUECOMBINATION where Recid={the value of _ledgerDimension}
