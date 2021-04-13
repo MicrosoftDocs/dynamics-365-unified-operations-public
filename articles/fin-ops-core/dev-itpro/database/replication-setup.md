@@ -55,9 +55,9 @@ The **Finance and Operations Online Database Migration Toolkit** can be download
 - When Setting up Distributor:
     The script creates a Database in the Source Server. So, make sure you have enough space (Recommended is minimum it should have the size of the source database). In params.json, you can specify the Distributor database path, so this database can be created in the specified path.
 
-- Update params.json
+- Update params.xml
 
-    ```sql
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>
 <! -- Database replication parameters for an AX 2012 to Microsoft Dynamics 365 for Operations upgrade -->
 <Config>
@@ -90,7 +90,6 @@ The **Finance and Operations Online Database Migration Toolkit** can be download
            <IgnoreFunctionsList>\Data\ignorefunctions.xml</IgnoreFunctionsList>
      </SQLReplicationSettings>
 </Config>
-
     ```
     
 - XML Schema: To ignore selected tables, views, and functions during replication
