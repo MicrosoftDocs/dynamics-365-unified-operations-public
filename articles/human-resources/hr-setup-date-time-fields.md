@@ -98,8 +98,8 @@ When using external sources like DMF to view or author data, keep in mind that t
 
 ## See also
 
-[Date and time data](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
-[User preferred time zones](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+[Date and time data](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
+[User preferred time zones](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
