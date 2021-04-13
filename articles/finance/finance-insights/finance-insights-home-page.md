@@ -83,7 +83,7 @@ You'll need to create a data integrator project so that data that the machine le
 When you've completed the configuration steps and set up demo data, you must turn on and set up each capability that you plan to use: customer payment predictions, cash flow forecasting, and budget proposals.
 
 ### Enable Customer payment predictions
-If you are using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully. For the specific steps to import demo data, see [Set up demo data for payment predictions](set-up-demo-data.md).
+If you are using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully. 
 
 To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid. For more information and the specific steps to complete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
 
