@@ -294,7 +294,7 @@ Data types:
 
 Group/ungroup of clauses:
 
-The example looks like this:
+The example looks like this.
 
 | Electronic invoicing feature | Applicability rules        |
 |------------------------------|--------------------------- |
