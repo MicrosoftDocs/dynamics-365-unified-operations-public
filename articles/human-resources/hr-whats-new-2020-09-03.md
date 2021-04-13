@@ -90,7 +90,7 @@ Employees can view and request time away from work within Microsoft Teams. They 
    - [Employee leave and absence experience in Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) in the Dynamics 365 2020 release wave 2 plan
    - [Enable notifications for the Human Resources app in Teams](./hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) in Human Resources documentation
    - [Turn Teams notifications on or off for individual users](./hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users) in Human Resources documentation
-   - [Teams notifications](./hr-teams-leave-app.md#teams-notifications) in Human Resources documentation
+   - [Teams notifications](./hr-teams-leave-app.md#respond-to-teams-notifications) in Human Resources documentation
    - [View your team's leave calendar](./hr-teams-leave-app.md#view-your-teams-leave-calendar) in Human Resources documentation
  
 - **Manager time-off calendar**: Managers will be able to see approved and pending time off for their direct reports in a calendar view. This view provides an easy understanding of when their team members are away from work. For more information, see:
