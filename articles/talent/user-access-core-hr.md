@@ -44,7 +44,7 @@ User B can access Human Resources, but can't access the Talent: Attract or Talen
 
 User B must be assigned the rights to view the Microsoft Power Apps environment that user A created during the provisioning process.
 
-For information, see the "Granting access to the environment" section in [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+For information, see the "Granting access to the environment" section in [Provision Talent](/dynamics365/unified-operations/talent/provisioning-talent).
 
 **Long-term solution**
 

@@ -82,7 +82,7 @@ The owner and contributors to the talent pool can add candidates to the talent p
 ## Search and view candidate profiles
 
 > [!NOTE] 
-> This feature is currently in preview. If you want to try it, you must [turn it on in the Attract admin settings](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). 
+> This feature is currently in preview. If you want to try it, you must [turn it on in the Attract admin settings](/dynamics365/unified-operations/talent/access-preview-feature). 
 
 Talent pools allow you to view a candidate's profile, LinkedIn information, related documents, and application history. You can search the entire database of all candidates added to any talent pool, including closed and active applicants.
 
