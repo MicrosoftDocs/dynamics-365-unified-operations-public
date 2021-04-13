@@ -139,7 +139,7 @@ You need to grant your application permissions to read and write to the storage 
 > Don't make any changes to the fields, **Assign access to** and **Azure AD user, group, or service principal**.
 
 7. Select **Save**.
-8. Repeat steps 4 - 7 to add the **Storage blob data reader** role shown.
+8. Repeat steps 4-7 to add the **Storage blob data reader** role, as shown.
 9. Validate the storage account role assignment for [the application](#appid) you created earlier. 
 
      |   Application     |     Role     |
@@ -198,18 +198,18 @@ You should see application with access to your key vault as shown below.
 7.  Select **Save**.
 
 ## <a name="powerplatformintegration"></a>Power Platform integration 
-If this is the first time you are installing add-ins in this environment, you may need to enable the **Power Platform integration**  for this environment. There are two options to setup Power Platform integration in Finance and Operations app environments.
+If this is the first time you are installing add-ins in this environment, you may need to enable the **Power Platform integration**  for this environment. There are two options to set up Power Platform integration in Finance and Operations app environments.
 
-### Option 1: Setup Power Platform integration using LCS
+### Option 1: Set up Power Platform integration using LCS
 
-To setup Power Platform integration from LCS, see [Add-ins overview](../power-platform/add-ins-overview.md).
+To set up Power Platform integration from LCS, see [Add-ins overview](../power-platform/add-ins-overview.md).
 
-### Option 2: Setup Power Platform integration using the Dual-write wizard
+### Option 2: Set up Power Platform integration using the Dual-write wizard
 
-Another way to set up **Power Platform integration** is to create a Power Platfrom environment with a database and then use the Dual-write setup. Complete the following steps to create the Power Platform environment and complete the integration. 
+Another way to set up **Power Platform integration** is to create a Power Platform environment with a database and then use the Dual-write setup. Complete the following steps to create the Power Platform environment and complete the integration. 
 
-1. [Create a Environment with database](/power-platform/admin/create-environment#create-an-environment-with-a-database.md)
-2. [Complete the requirement and pre-requisite](dual-write/requirements-and-prerequisites.md)      
+1. [Create an environment with database](/power-platform/admin/create-environment#create-an-environment-with-a-database.md).
+2. [Complete the requirement and prerequisite](dual-write/requirements-and-prerequisites.md).  
 3. Use the [dual-write wizard to link your environment](dual-write/link-your-environment.md).
 4. Validate that the Power Platform integration is set up and added in the LCS environment page.  
 
@@ -239,12 +239,10 @@ The system installs and configures the data lake for the environment. After inst
 
 ### Error UnableToInitializeLakeDueToUserError
 
-The error, **UnableToInitializeLakeDueToUserError** indicates that the **Export to Data Lake** service can't connect to a storage account or [the application](#appid) doesn't have the required access to the storage account. To try and resolve the issue:
+The error, **UnableToInitializeLakeDueToUserError** indicates that the **Export to Data Lake** service can't connect to a storage account or [the application](#appid) doesn't have the required access to the storage account. To resolve this issue, try the following:
 
 - Validate that the secret values stored in the key vault are valid and correct. For more information, see [add secrets to the key vault](#addsecrets).   
-- Validate that the AAD app you have requires access to the storage account. For more information, see [Grant access control roles to applications](#grantaccess).
- 
-
+- Validate that the Azure Active Directory (Azure AD) app you have requires access to the storage account. For more information, see [Grant access control roles to applications](#grantaccess).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
