@@ -598,7 +598,7 @@ In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), i
 
 -   INTERVAT format (BE)
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Additional sales tax report boxes
 

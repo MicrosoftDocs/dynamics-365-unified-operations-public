@@ -48,7 +48,7 @@ Changes described in this section apply to build number 8.1.2282. The numbers in
 
 ### Platform update 26 for Finance and Operations
 
-For additional details about Platform update 26 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 26 (May 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+For additional details about Platform update 26 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 26 (May 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### Dataverse table support for custom columns
 

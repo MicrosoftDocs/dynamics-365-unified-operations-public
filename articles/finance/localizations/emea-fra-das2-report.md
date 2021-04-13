@@ -46,7 +46,7 @@ Before you generate the report for the first time, you must download the followi
 - DAS-2 form.version.36.30.15 (FR) or later versions.
 
 > [!NOTE]
-> For more information about how to download ER formats, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+> For more information about how to download ER formats, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 After you've finished downloading the ER configurations from LCS, follow these steps.
 

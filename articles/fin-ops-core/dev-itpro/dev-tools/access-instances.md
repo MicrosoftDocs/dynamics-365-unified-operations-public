@@ -30,9 +30,7 @@ This topic describes how to access development instances, configure local develo
 
 ## Deploying cloud development environments
 
-The process of deploying cloud hosted environments differs for Lifecycle Services (LCS) trial or partner projects and LCS customer implementation projects.
-
-For a **Trial** or **Partner** project:
+To deploy a cloud development environment in your LCS project:
 
 1. Create a connection between an LCS project and your Azure subscription. You will need your Azure subscription ID and authorize the use of the subscription.
 2. Select **+** under **Environments** to deploy.
@@ -46,23 +44,6 @@ For a **Trial** or **Partner** project:
 
     ![Deploy environment](media/access-instances-3.jpeg)
     
-6. If you did not choose a cloud-hosted environment, select a VHD to download.
-
-For a **Customer Implementation** project:
-1. Sign in to your LCS Implementation project.
-2. Select **Configure** to deploy.
-
-    ![Develop, test, and configure](media/access-instances-6.jpeg)
-    
-3. Select an application and platform version.
-4. Specify the settings and select **Save**.
-
-    ![Deployment settings](media/access-instances-7.jpeg)
-
-Customers are provided with one free "develop and test" environment hosted in Microsoft's Azure subscription. Under "Develop and test", there are two types of environments, **Develop** and **Build and Test**. For development and customization activities, configure a **Develop** environment. **Build and Test** environments are not supported for standard development activities. Instead, they are used for daily build and test automation. For more information, see [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md).  
-
-Additional develop and build environments can either be purchased or hosted in your own Azure subscription. To deploy an environment in your own subscription, go to the **Cloud-hosted environment** page.
-
 ![Cloud-hosted instances](media/CloudHostedPicture.jpg)
 
 ## Cloud environment that is provisioned through LCS
@@ -91,7 +72,7 @@ For environments deployed **before Platform update 12**:
 1.  Click the VM name.
 2.  Use the local administrator user name and password that are shown to connect to the cloud VM through Remote Desktop. You can reveal the password by selecting the show password icon.
 
-For any environments deployed **on or after Platform update 12** , there are distinct accounts, a developer account and an admin account. Customers will not have access to virtual machine admin accounts on development or build environments that are running in Microsoft subscriptions. Thus, the admin account will be hidden unless the environment is running in their Azure subscription. For more information, see [Development and build VMs that don't allow admin access FAQ](../sysadmin/VMs-no-admin-access.md). 
+For any environments deployed **on or after Platform update 12** , there are distinct accounts, a developer account and an admin account. 
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 

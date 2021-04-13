@@ -42,7 +42,7 @@ The BYOD feature lets administrators configure their own database, and then expo
 
 ## Entity store or BYOD?
 
-If you followed the series of [blog posts about Microsoft Power BI integration](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/), you will be familiar with Entity store. Entity store is the operational data warehouse. Entity store provides built-in integration of operational reports with Power BI. Ready-made reports and analytical workspaces use Entity store. If you write Power BI reports by using data in your application environment, you should use Entity store.
+If you followed the series of [blog posts about Microsoft Power BI integration](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update), you will be familiar with Entity store. Entity store is the operational data warehouse. Entity store provides built-in integration of operational reports with Power BI. Ready-made reports and analytical workspaces use Entity store. If you write Power BI reports by using data in your application environment, you should use Entity store.
 
 However, the BYOD feature is recommended for the following scenarios:
 
@@ -220,7 +220,7 @@ Failed to open a fastload rowset for <entityStaging>. Check that the object exis
 OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
 ```
 
-**Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture)
+**Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](/azure/sql-database/sql-database-connectivity-architecture)
 
 
 

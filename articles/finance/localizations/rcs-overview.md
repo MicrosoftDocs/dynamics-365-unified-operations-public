@@ -37,9 +37,9 @@ RCS provides the following capabilities:
 
 - Support for all functionality that is provided by Electronic reporting (ER).
 - A prerequisite to configure new globalization microservices.
-- Support for Electronic Invoicing. For more information, see [Electronic Invoicing](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-add-on-dynamics-365-ga).
-- Supports for Tax Calculation. For more information, see [Tax service](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview).
-- Support for new globalization feature functionality that simplifies the lifecycle management of multi-component features and provides extra capability to configure actions and set up feature parameters. For more information, see [Regulatory Configuration Service – simplified globalization feature management for globalization services](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services).
+- Support for Electronic Invoicing. For more information, see [Electronic Invoicing](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-add-on-dynamics-365-ga).
+- Supports for Tax Calculation. For more information, see [Tax service](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/tax-service-preview).
+- Support for new globalization feature functionality that simplifies the lifecycle management of multi-component features and provides extra capability to configure actions and set up feature parameters. For more information, see [Regulatory Configuration Service – simplified globalization feature management for globalization services](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services).
 - Support for centralized publication, storage, and sharing of custom configurations in the Global repository to simplify configuration management without requiring the use of Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Access RCS
@@ -78,4 +78,4 @@ For more information about related components, see the following documentation:
 
 - **Globalization feature:**
 
-    - [Regulatory Configuration Service (RCS) - Globalization feature](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+    - [Regulatory Configuration Service (RCS) - Globalization feature](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)

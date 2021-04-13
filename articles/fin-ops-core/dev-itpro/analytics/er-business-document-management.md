@@ -50,9 +50,9 @@ To use Business document management for editing templates in Excel or Word forma
 
 ## Business document availability
 
-For a complete list of all the reports planned for the October 2019 release, see [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+For a complete list of all the reports planned for the October 2019 release, see [Configurable business documents reporting in Word and Excel](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-For a complete list of all the reports planned for the October 2020 release, see [Configurable business documents – Word templates](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
+For a complete list of all the reports planned for the October 2020 release, see [Configurable business documents – Word templates](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
 More reports will become available in future releases. Special notifications about additional reports will be sent separately. To learn how to review the list of currently available reports, see the section [List of ER configurations that have been released in Finance to support configurable business documents](#list-of-configurations-cbd) below.
 
@@ -440,7 +440,7 @@ Most likely you signed in to the current instance of the app of the Azure AD dom
 
 ## <a name="list-of-configurations-cbd"></a>List of ER configurations that have been released in Finance to support configurable business documents
 
-The [list](general-electronic-reporting.md#list-of-configurations) of ER configurations for Finance is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of ER configurations that are currently supported. You can [filter](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) the Global repository to review the list of ER configurations that are used to support configurable business documents.
+The [list](general-electronic-reporting.md#list-of-configurations) of ER configurations for Finance is constantly updated. Open the [Global repository](er-download-configurations-global-repo.md) to review the list of ER configurations that are currently supported. You can [filter](../../../finance/localizations/enhanced-filtering-global-repo.md) the Global repository to review the list of ER configurations that are used to support configurable business documents.
 
 ![Filtering the content of the Global repository on the Configuration repository page](./media/bdm-overview-filterglobalrepo.gif)
 

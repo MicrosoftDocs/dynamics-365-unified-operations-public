@@ -80,7 +80,7 @@ In many organizations, compensation and benefits managers might have access only
 
 ### Platform update 24 for Finance and Operations
 
-For more information about Platform update 24 for Microsoft Dynamics 365 Finance and Operations (March 2019), see [Preview features in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+For more information about Platform update 24 for Microsoft Dynamics 365 Finance and Operations (March 2019), see [Preview features in Finance and Operations platform update 24 (March 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### Make employee fixed compensation available for future position assignments
 
@@ -91,7 +91,7 @@ It's typical that employees who join an organization have a future start date. T
 ### Changes to the Core HR integration template (Talent Dataverse to Finance)
 The template for Core HR has been updated to an "advanced query template". Therefore, by default, the advanced query will be available for projects that are created by using this template. Additionally, any default mapping functions will be visible only in the advanced query editor. (Default mapping functions appear as "FN" in the mappings.)
 
-For more information about mapping errors, see [What's new or changed in Dynamics 365 Talent: Core HR (December 14, 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+For more information about mapping errors, see [What's new or changed in Dynamics 365 Talent: Core HR (December 14, 2018)](/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
 To use the new template, create a new project, and select the new Talent integration template.
 

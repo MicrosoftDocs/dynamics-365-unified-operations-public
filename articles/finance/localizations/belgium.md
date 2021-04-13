@@ -52,9 +52,9 @@ For information about standard reports that can help you with the INTERVAT tax d
 ## Additional resources
 
 - [Microsoft Dynamics Localization Portal: Belgium report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Belgium.html) (requires CustomerSource account)
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-- [Localization and regulatory features](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Localization and regulatory features](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
