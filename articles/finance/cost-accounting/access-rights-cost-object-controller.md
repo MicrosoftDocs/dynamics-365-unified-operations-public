@@ -66,9 +66,8 @@ The following example shows what a dimension hierarchy can look like.
 
 You can use the **Users** FastTab in the hierarchy designer to insert one or more user IDs on each node.
 
-|                                   | Users            | Dimension member ranges   |                         |
+|             Nodes                 | Users            | From dimension member     |   To dimension member   |
 |-----------------------------------|------------------|---------------------------|-------------------------|
-| **Nodes**                         | **User ID**      | **From dimension member** | **To dimension member** |
 | Organization                      | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Admin                 | April            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finance   | Alicia           | CC002                     | CC003                   |
