@@ -4,7 +4,7 @@
 title: Set up Azure Key Vault for secure key management
 description: This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
 author: samjarawan
-ms.date: 04/06/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -167,7 +167,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
  ![Key Vault Secrets page with secret selected](media/key-vault-04.png)
  
  > [!IMPORTANT]
- > Take note of the operating unit number (OUN) of the store that was used to configure the secret key and values. You will need to specify this value in the platform settings JSON file.
+ > Take note of the operating unit number (OUN) of the store that was used to configure the secret key and values, which can be found in Commerce headquarters at **Retail and Commerce \> Channels \> Online stores**. You will need to specify this value in the platform settings JSON file.
 
 ## Access secret values within your e-Commerce Node application
 
