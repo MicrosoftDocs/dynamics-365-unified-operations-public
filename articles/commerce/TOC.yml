@@ -1202,6 +1202,14 @@
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
       - name: User-defined certificate profiles for retail stores
         href: localizations/certificate-profiles-for-retail-stores.md
+      - name: Regulatory configuration service
+        items:
+        - name: Regulatory configuration service overview
+          href: localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+        - name: Regulatory configuration service - Globalization features
+          href: localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+        - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
+          href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
