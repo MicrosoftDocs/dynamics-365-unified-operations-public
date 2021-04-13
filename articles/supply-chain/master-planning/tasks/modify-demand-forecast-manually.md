@@ -36,8 +36,9 @@ This procedure shows how to modify the forecast for an item. The demo data compa
 3. On the **Action Pane**, click **Plan**.
 4. Click **Demand forecast**.
 5. In the list, mark the selected row. If there are no forecast lines, create a new line by clicking New on the app bar.  
-6. In the **Sales quantity** field, enter a number. This number represents the forecasted quantity for the item.  
+6. In the **Sales quantity** field, enter a number. This number represents the forecasted quantity for the item. The **Sales quantity** must be positive; an error will be shown in case a negative number is entered. 
 7. Click Save.
+
 
 ## Modify the forecast in Excel
 1. Click **Open** in Microsoft Office.
