@@ -4,7 +4,7 @@
 title: Finance and Operations application documentation
 description: Documentation for Finance and Operations apps. 
 author: robinarh
-ms.date: 07/25/2019
+ms.date: 04/13/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -132,10 +132,10 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 <td>
 <h3>Related products</h3>
 <h4><a href="/dynamics365/commerce/">Dynamics 365 Commerce</a></h4>
-<p><a href="../../retail/call-center-functionality.md">Call center</p>
-<p><a href="../../retail/define-maintain-retail-channels.md">Channel setup and management</p>
-<p><a href="../../retail/retail-peripherals-overview.md">MPOS and Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commerce developer and administration</p>
+<p><a href="../../commerce/call-center-functionality.md">Call center</p>
+<p><a href="../../commerce/define-maintain-retail-channels.md">Channel setup and management</p>
+<p><a href="../../commerce/retail-peripherals-overview.md">MPOS and Cloud POS</p>
+<p><a href="../../commerce/dev-itpro/dev-retail-home-page.md">Commerce developer and administration</p>
 
 <h4><a href="/dynamics365/human-resources/">Dynamics 365 Human Resources</a></h4>
 <p><a href="../../human-resources/hr-admin-overview.md">Administrator Guide</a></p>
