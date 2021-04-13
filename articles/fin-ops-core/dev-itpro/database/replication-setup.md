@@ -23,7 +23,7 @@ The **Online Database Migration Toolkit** can be downloaded from Lifecycle Servi
 
 ## Prerequisites
 
--	Source SQLServer should have enabled/installed replication feature. To check whether replication is enabled, execute the below SQL Secript.
+-	The source SQL Server should have enabled/installed the replication feature. To check whether replication is enabled, execute the below SQL Secript.
 
      ```sql
      -- If @installed is 0, replication must be added to the SQL Server installation. 
@@ -36,24 +36,22 @@ The **Online Database Migration Toolkit** can be downloaded from Lifecycle Servi
 
 -	SQL Agent should be running in the source database server.
 
--	SA Authentication: User should have DB_Owner privilege in Source Database & Target Database. In Source Database, the user should have access to masterDb and sourceDb
+-	SA Authentication: User should have DB_Owner privilege in the source database and the target database. In the source database, the user should have access to masterDb and sourceDb.
 
--	Update the target firewall by allow-listing the source IP. This can be done via LCS portal and this allows only for 8Hrs. After allow-listing execute this below sp in the target database to have access more than 8 Hrs.
+-	Update the target firewall by allow-listing the source IP. This can be done via LCS, and this allows only for 8 hours. After allow-listing, execute this below SP in the target database to have access for more than 8 hours.
 
-    To reate database-level firewall setting for IP a.b.c.d:
-  
      ```sql
+     -- Create database-level firewall setting for IP a.b.c.d 
      EXECUTE sp_set_database_firewall_rule N'AX 2012 Upgrade', 'a.b.c.d', 'a.b.c.d'; 
      ```
-- To Optimize the Replication Latency/Performance below are the few fine-tuned distributors parameters.
-    1. MaxBcpThreads
-    2. NumberOfPublishers
-    3. Distributor DB paths
+- To optimize the replication latency/performance, below are the fine-tuned distributors parameters that can be updated in the params.xml.
+    - MaxBcpThreads
+    - NumberOfPublishers
+    - Distributor database paths
 
-- Stop the AOS Service in the target environment, so that the target data base will get replicated smooth/fast. Running the AOS in the target might cause slowdown the replication process. Sometimes it may cause Schema Lock (or) deadlock in the replication process.
+- Stop the AOS service in the target environment, so that the target database will get replicated smooth/fast. Running the AOS in the target may cause slowdown in the replication process. Sometimes it may cause schema lock (or) deadlock in the replication process.
 
-- When Setting up Distributor:
-    The script creates a Database in the Source Server. So, make sure you have enough space (Recommended is minimum it should have the size of the source database). In params.json, you can specify the Distributor database path, so this database can be created in the specified path.
+- When setting up Distributor: The script creates a database in the source server. Be sure you have enough space. (Recommended is minimum it should have the size of the source database). In params.xml, you can specify the distributor database path, so this database can be created in the specified path.
 
 - Update params.xml
 
@@ -92,7 +90,7 @@ The **Online Database Migration Toolkit** can be downloaded from Lifecycle Servi
 	</Config>
     ```
     
-- XML Schema: To ignore selected tables, views, and functions during replication
+- XML Schema: To ignore selected tables, views, and functions during replication.
 
     ```xml
     <IgnoreTables>                      <IgnoreFunctions>
