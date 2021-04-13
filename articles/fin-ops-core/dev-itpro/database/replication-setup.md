@@ -4,7 +4,7 @@
 title: Replication setup
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
 author: sarvanisathish
-ms.date: 04/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -23,9 +23,21 @@ The **Finance and Operations Online Database Migration Toolkit** can be download
 
 ## Prerequisites
 
--	Source SQLServer should have enabled/installed replication feature.
+-	Source SQLServer should have enabled/installed replication feature. To check whether replication is enabled, execute the below SQL Secript.
+
+     ```sql
+     -- If @installed is 0, replication must be added to the SQL Server installation. 
+    USE master;
+    GO  
+    DECLARE @installed int;  
+    EXEC @installed = sys.sp_MS_replication_installed;  
+    SELECT @installed; 
+     ```
+
 -	SQL Agent should be running in the source database server.
+
 -	SA Authentication: User should have DB_Owner privilege in Source Database & Target Database. In Source Database, the user should have access to masterDb and sourceDb
+
 -	Update the target firewall by allow-listing the source IP. This can be done via LCS portal and this allows only for 8Hrs. After allow-listing execute this below sp in the target database to have access more than 8 Hrs.
 
     To reate database-level firewall setting for IP a.b.c.d:
@@ -38,32 +50,50 @@ The **Finance and Operations Online Database Migration Toolkit** can be download
     2. NumberOfPublishers
     3. Distributor DB paths
 
+- Stop the AOS Service in the target environment, so that the target data base will get replicated smooth/fast. Running the AOS in the target might cause slowdown the replication process. Sometimes it may cause Schema Lock (or) deadlock in the replication process.
+
 - When Setting up Distributor:
     The script creates a Database in the Source Server. So, make sure you have enough space (Recommended is minimum it should have the size of the source database). In params.json, you can specify the Distributor database path, so this database can be created in the specified path.
 
 - Update params.json
 
     ```sql
-    {
-    "sourceServer" : "<<your source database server>>" eg: LAPTOP\\MSSQLSERVER2012", Don't use localhost
-    "sourceDatabase" : "<<your source database, database to be migrated>>",
-    "sourceServerUserName" : "<<SQL Login Username>>",
-    "sourceServerPWD" : <<SQL Login Password>>,
-    "targetServer" : "<<your target/spartan database server>>" eg:"dbmigration.database.windows.net",
-    "targetDatabase" : "<<your target database>>",
-    "targetServerUserName" : "axdbadmin",
-    "targetServerPWD" : "<<admin password>>",
-    "snapShotWorkingDir" : "<<snap shot creation folder>>" ensure you have enough space in the drive eg: D:\\SQLServer\\SnapShot",
-    "distributorDbDataFolder":"<<distributor datafile path>>" ensure you have enough space in the drive,
-    "distributorLogFolder":"<<distributor logfile path>>" ensure you have enough space in the drive,
-    "maxBCPThreads":<<you can set 1 for one core, but max this value can be 8>> Recomended:4 - 8,
-    "numberOfPublishers":<<how name publisher creation for PK Tables >> Recommended: less than or equal to(>=)3 based on t he maxBCPThreads
-    "ignoreTablesList":<<xml list of tables you want to exclude from replication>> edit ignoretables.xml file under data folder and use same schema
-    "ignoreFunctionsList":<<xml list of functions you want to exclude from replication>> edit ignorefunctions.xml file under data folder and use same schema
-    }
+    <?xml version="1.0" encoding="UTF-8"?>
+<! -- Database replication parameters for an AX 2012 to Microsoft Dynamics 365 for Operations upgrade -->
+<Config>
+     <!-- Edit the properties in this section for your source AX 2012 database -->
+     <SourceDatabase>
+                <Server>SQLINSTANCE\SQLSERVERNAME</Server>
+                <Database>MicrosoftDynamicsAX</Database>
+                <UserName>ReplicationUser</UserName>
+                <Password>********************</Password>
+     </SourceDatabase>
+     <!-- Edit the properties in this section for your target D365 database -->
+     <TargetDatabase>
+                <Server>dbmigration.database.windows.net</Server>
+                <Database>dbms-prod</Database>
+                <UserName>axdbadmin</UserName>
+                <Password>*******************</Password>
+     </TargetDatabase>
+     <!-- Edit the properties in this section for your local SQL replication settings -->
+     <SQLReplicationSettings>
+	<!-- ensure you have enough space in the drive/path -->
+	<SnapShotWorkingDir>D:\SQLServer\SnapShot</SnapShotWorkingDir>
+           <DistributorDBDataFolder>D:\SQLServer\Data</DistributorDBDataFolder>
+           <DistributorLogFolder>D:\SQLServer\Data</DistributorLogFolder>
+           <!-- Based on the systems number of cores we can set but max this value can be 8. Recomended:4 - 8 -->
+           <MaxBCPThreads>4</MaxBCPThreads>
+           <!-- To increases the performance of the replication, based on this value number of PK publisher will get created. This value should be between 1 to 3 -->
+           <NumberOfPublishers>2</NumberOfPublishers>
+           <!-- Ignore DB object xml files, Adding the object in these files will be ignored being replicated -->
+           <IgnoreTablesList>\Data\ignoretables.xml</IgnoreTablesList>
+           <IgnoreFunctionsList>\Data\ignorefunctions.xml</IgnoreFunctionsList>
+     </SQLReplicationSettings>
+</Config>
+
     ```
     
-    XML Schema: To ignore selected tables, views and functions during replication
+- XML Schema: To ignore selected tables, views, and functions during replication
 
     ```xml
     <IgnoreTables>                      <IgnoreFunctions>
