@@ -217,59 +217,59 @@ The following table lists the available actions, and whether they are currently 
 
 ### Applicability rules
 
-The Applicability rules are configurable clauses, defined at the level of electronic invoicing features, configured to provide a context for execution of electronic invoicing features through the Electronic Invoicing.
+The Applicability rules are configurable clauses that are defined at the Electronic invoicing feature level. The rules are configured to provide a context for execution of electronic invoicing features through the Electronic Invoicing capability set.
 
-When the Electronic Invoicing receives a submission of a business document from Finance or Supply Chain Management, the business document does not carry on itself an explicit reference that allows the Electronic Invoicing internally to call a particular electronic invoicing feature for processing the submission.
+When a business document from Finance or Supply Chain Management is submitted to electronic invoicing, the business document doesn't carry an explicit reference that allows the Electronic Invoicing capability set to call a particular electronic invoicing feature to process the submission.
 
-Nevertheless, when properly configured, the business document contains the necessary elements that allows the Electronic Invoicing resolving which electronic invoicing feature must be selected and thus, generate the electronic invoice.
+Nevertheless, when properly configured, the business document contains the necessary elements that allow electronic invoicing to resolve which electronic invoicing feature must be selected and then generate the electronic invoice.
 
-And it is through the Applicability rules that the Electronic Invoicing can find the exact electronic invoicing features that must be used to process the submission, by matching the contents from the submitted business document towards the clauses from the Applicability rules.
+The Applicability rules allow the Electronic Invoicing capability set to find the exact electronic invoicing features that must be used to process the submission, by matching the contents from the submitted business document towards the clauses from the Applicability rules.
 
-Let's take as example two electronic invoicing features, and their related Applicability rules, both deployed into the Electronic Invoicing:
+For example, two electronic invoicing features with related Applicability rules are deployed into the Electronic Invoicing capability set:
 
 | Electronic invoicing feature | Applicability rules        |
 |------------------------------|--------------------------- |
 | A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
 | B                            | <p>Country = MX</p><p>and</p><p>Legal entity = MXMF</p>  |
 
-When the Electronic Invoicing receives a submission of a business document from Finance or Supply Chain Management, and if the business document contains the following attributes filled as:
+When a business document from Finance or Supply Chain Management is submitted to the Electronic Invoicing capability set, if the business document contains the following attributes filled as:
 
 - Country = BR
 - Legal entity = BRMF
 
-Then the Electronic Invoicing will select the electronic invoicing feature **A** for processing the submission and generating the electronic invoice.
+The Electronic Invoicing capability set will select the electronic invoicing feature **A** to process the submission and generate the electronic invoice.
 
 In the same way, if the business document contains:
 
 - Country = MX
 - Legal entity = MXMF
 
-Then the Electronic Invoicing will select the electronic invoicing feature **B** for generating the electronic invoice.
+Electronic invoicing feature **B** is selected to generate the electronic invoice.
 
-The configuration of Applicability rules cannot be ambiguous, meaning that two or more electronic invoicing features cannot have the same clauses, otherwise it will lead to none selection. In case of duplication of electronic invoicing features, to avoid ambiguity, additional clauses must be used to allow the Electronic Invoicing distinguishing between the two electronic invoicing features.
+The configuration of Applicability rules can't be ambiguous. This means that two or more electronic invoicing features can't have the same clauses, otherwise it will lead to none selection. If there is a duplication of electronic invoicing features, to avoid ambiguity, use additional clauses to allow the Electronic Invoicing capability set to distinguish between the two electronic invoicing features.
 
-Let's take as example, another electronic invoicing feature **C**, created as a copy of electronic invoicing feature A:
+For example, electronic invoicing feature **C**. This feature is a copy of electronic invoicing feature **A**.
 
 | Electronic invoicing feature | Applicability rules        |
 |------------------------------|--------------------------- |
 | A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
 | C                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
 
-In the way as it is, in front of a business document submission containing:
+In this, feature **C** is in front of a business document submission containing:
 
 - Country = BR
 - Legal entity = BRMF
 
-The Electronic Invoicing will not be able to distinguish which electronic invoicing feature must be used to process the submission because they contain the exact same clauses.
+The Electronic Invoicing capability can't distinguish which electronic invoicing feature must be used to process the submission because the submissions contain the exact same clauses.
 
-In order to create a distinction between the 2 electronic invoicing feature through the Applicability rules, a new clause must be added to one of the two features to allow Electronic Invoicing select the proper electronic invoicing feature.
+To create a distinction between the two features through Applicability rules, a new clause must be added to one of the features to allow the Electronic Invoicing capability set to select the proper electronic invoicing feature.
 
 | Electronic invoicing feature | Applicability rules        |
 |------------------------------|--------------------------- |
 | A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
 | C                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p><p>and</p><p>Model=55</p>  |
 
-To support the creation of more complex clauses, the following resources are available:
+To support creating more complex clauses, the following resources are available:
 
 Logic operators:
 - And
