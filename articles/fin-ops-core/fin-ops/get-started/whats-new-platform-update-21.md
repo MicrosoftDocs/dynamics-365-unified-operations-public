@@ -72,7 +72,7 @@ With sticky default actions off, which corresponds to how default actions work p
 
 With sticky default actions on, the default action hyperlink will be on the same column regardless of any personalizations applied to the form. This means that for this customer list, the **Account** column will continue to be the default action column regardless of whether the **Account** column is moved or hidden.
 
-![Sticky default actions off](media/stickyDAOn.png "With sticky default actions on, the Account column is still the default action column despite any personalizations.")
+![Sticky default actions on](media/stickyDAOn.png "With sticky default actions on, the Account column is still the default action column despite any personalizations.")
 
 With Platform update 21, the sticky default action feature is off, but a system administrator can turn it on for an environment. To turn on this feature, go to the **Client performance options** page under **System administration** and find the **Enable sticky default action** option.
 
