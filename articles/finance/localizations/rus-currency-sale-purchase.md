@@ -98,7 +98,7 @@ Use the **Bank accounts** page to set up specific information for the sale or pu
 2. Create a bank account, or select an existing bank account.
 3. On the **Payment management** FastTab, in the **Order template (currency sale)** and **Order template (currency purchase)** fields, select the Microsoft Word template.
 
-For more information, see [Set up Bank accounts (Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/rus-local-settings-requisites-bank-module).
+For more information, see [Set up Bank accounts (Russia)](./rus-local-settings-requisites-bank-module.md).
 
 ### Set up a number sequence
 
