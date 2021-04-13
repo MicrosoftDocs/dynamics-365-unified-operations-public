@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed assets home page
-description: Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.
+description: Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment.
 author: ShylaThompson
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization. 
+Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment. 
 
-You can set up and enter acquisition information for fixed assets, and then manage them by depreciating them and setting a 
+You can set up and enter acquisition information for fixed assets, and then manage the assets by depreciating them and setting a 
 capitalization threshold to determine depreciation. You can calculate adjustments to the fixed assets, and also dispose of them. 
 When you use General ledger together with Fixed assets, you can view the current value of all fixed assets. The way in which fixed 
 assets are handled must correspond to both international accounting standards and the accounting legislation in each country/region. 
