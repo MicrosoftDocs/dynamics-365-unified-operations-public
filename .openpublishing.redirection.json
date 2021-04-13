@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-tools/enable-development-machine.md",
+      "redirect_url": "access-instances",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/warehousing/tasks/set-up-containerization.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/wave-containerization",
       "redirect_document_id": "false"
