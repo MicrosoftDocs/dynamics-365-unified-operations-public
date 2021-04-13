@@ -22,6 +22,8 @@ This procedure shows how to modify the forecast for an item. The demo data compa
 
 ## Modify the forecast for an item
 
+To modify the forecast for an item:
+
 1. Go to **Modules \> Product information management \> Products \> Released products**.
 1. In the list, find and select the desired record. Select the item for which you want to modify the forecast. For example, you can select item *D0001*.  
 1. On the Action Pane, open the **Plan** tab and select **Demand forecast**.
@@ -32,8 +34,15 @@ This procedure shows how to modify the forecast for an item. The demo data compa
 
 ## Modify the forecast in Microsoft Excel
 
-1. With the **Demand forecast** page still open, on the Action Pane, select **Open in Microsoft Office \> Edit Demand forecast**.
-1. In Excel, add, delete, and edit demand forecast lines as needed. If you are not able to see the data in Excel, you must sign in with the **Keep me signed in** option enabled and you must trust the data connection app.  
+To modify the forecast in Microsoft Excel:
+
+1. With the **Demand forecast** page still open, on the Action Pane, select **Open in Microsoft Office \> Demand forecast entries**.
+1. Select a download location, save, and then open the downloaded file in Excel.
+1. If you see a warning, choose to **Enable editing**.
+1. Sign in to Supply Chain Management using the Microsoft Dynamics task pane. You must sign in with the **Keep me signed in** option enabled and you must trust the data connection app.
+1. The Excel spreadsheet now shows all the current demand forecast lines for your company.  Add, delete, and edit demand forecast lines as needed. 
+1. Select **Publish** on the Microsoft Dynamics task pane to upload your changes back to Supply Chain Management. 
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
