@@ -52,7 +52,7 @@ Customers can always choose to apply the update at an earlier time, or if there 
 
 | Version       | Description |
 |---------------|-------------|
-| 8.1 and later | All customers on 8.1 and later will be scheduled for automatic monthly updates with a combined application and platform update starting November 2018. You will be required to be on an update that's no older than 4 months or 3 service updates. To pause an update, refer to [Pause service updates](/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates). |
+| 8.1 and later | All customers on 8.1 and later will be scheduled for automatic monthly updates with a combined application and platform update starting November 2018. You will be required to be on an update that's no older than 4 months or 3 service updates. To pause an update, refer to [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
 | 8.0           | Customers on 8.0 can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 4 months or 3 service updates. The 8.0 application lifecycle ends in April 2019. Customers on 8.0 must update by April 30, 2019 to stay supported. In order to be on a supported application, customers should follow the process to update to the latest version. For more information, see [Update environments from version 8.0 to 10.0.X](../../dev-itpro/migration-upgrade/appupdate-80-81.md). | 
 | 7.x           | Customers on 7.x can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 4 months and 3 service updates. Customers on 7.x must update by April 30, 2019 to stay supported. If customer stays on version 7.3 past April 30 they will still receive automated platform updates every month. You are required to upgrade to 8.1 by April 2019 (unless extensions are not available). The only overlayered version in market will be version 7.3. 
 
@@ -202,11 +202,11 @@ You can join the [First release program](https://experience.dynamics.com/insider
 
 ### Is there tooling available to support testing the latest release?
 
-The [Regression Suite Automation Tool](/dynamics365/unified-operations/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests) is [available now](https://www.microsoft.com/download/details.aspx?id=57357). This tool significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a Microsoft application update or applying custom code and configurations to your production environment. It enables functional power users to record business tasks using the Task recorder and convert them into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services using the Business Process Modeler (BPM) libraries and fully integrated with Azure DevOps for test execution, reporting, and investigation. Test data parameters are decoupled from test steps and stored in Excel data files.
+The [Regression Suite Automation Tool](../../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md) is [available now](https://www.microsoft.com/download/details.aspx?id=57357). This tool significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a Microsoft application update or applying custom code and configurations to your production environment. It enables functional power users to record business tasks using the Task recorder and convert them into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services using the Business Process Modeler (BPM) libraries and fully integrated with Azure DevOps for test execution, reporting, and investigation. Test data parameters are decoupled from test steps and stored in Excel data files.
 
 ### How can I test and validate that the integrations continue to work?
 
-Data task automation lets you easily repeat many types of data tasks and validate the outcome of each task. You can also use automated testing of data entities by using task outcome validation. For more information, see the [Data task automation](/dynamics365/unified-operations/dev-itpro/data-entities/data-task-automation) topic.
+Data task automation lets you easily repeat many types of data tasks and validate the outcome of each task. You can also use automated testing of data entities by using task outcome validation. For more information, see the [Data task automation](../../dev-itpro/data-entities/data-task-automation.md) topic.
 
 ### How can I determine what's changed in a service update?
 
@@ -214,13 +214,13 @@ The What’s new or Changed documentation is the primary source for the details 
 
 ### How will I know if there is a deprecated feature that will impact me if I’m not doing active development/ recompile my code? 
 
-Deprecated features will be documented with each release.  For more information, see [Removed or Deprecated features](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=%2ffin-and-ops%2ftoc.json).  
+Deprecated features will be documented with each release.  For more information, see [Removed or Deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md).  
 
 ## Preparing for One Version
 
 ### How can I log an extensibility request?
 
-Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-requests) topic. Please note the following timelines to log and use the available extensions.
+Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](../../dev-itpro/extensibility/extensibility-requests.md) topic. Please note the following timelines to log and use the available extensions.
 
 | Date         | Extensibility requests |
 |--------------|------------------------|
@@ -243,7 +243,7 @@ Customer reported issues are searchable via Lifecycle Services Issue Search.  Yo
 
 ### How can I upgrade to 8.x?
 
-Refer to the [Process for moving to the latest update](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) will not require any data upgrade and will be a self-serve update with much reduced downtime.
+Refer to the [Process for moving to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md#scenario-3-upgrade-to-the-latest-application-release-1) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](../../dev-itpro/migration-upgrade/appupdate-80-81.md) will not require any data upgrade and will be a self-serve update with much reduced downtime.
 
 ## Commerce service updates
 
