@@ -76,9 +76,9 @@ In this example, the tax code is, **VAT 19**.
 
 In the code, the posting account is determined by the ledger dimension. The ledger dimension saves the record ID of an account in the databse. You can query the account by the ledger dimension using the following SQL query:
 
-    ```sql
-    select * from DIMENSIONATTRIBUTEVALUECOMBINATION where Recid={the value of _ledgerDimension}
-    ```
+     ```sql
+     select * from DIMENSIONATTRIBUTEVALUECOMBINATION where Recid={the value of _ledgerDimension}
+     ```
 
 1. For a sales order, add a breakpoint at the *Tax::saveAndPost()* and *Tax::post()* methods. Pay attention to the value of *_ledgerDimension*.
 
