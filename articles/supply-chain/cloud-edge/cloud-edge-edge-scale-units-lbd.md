@@ -26,19 +26,33 @@ This document describes how to set up an on-premises LBD environment as an edge 
 
 ## Deployment overview
 
-The following table provides an overview of the deployment steps.
+The following procedure provides an overview of the deployment steps:
 
-|Actions  |Details  |
-|---------|---------|
-|1. Enable an LBD slot in your LBD Lifecycle Services (LCS) project.|LBD edge scale unit during preview target existing LBD customers. An additional 60-day limited LBD sandbox slot will be only provided in certain customer situations.|
-|2. Set up and deploy an LBD environment with an *empty* database. | Deploy the LBD environment through LCS with the latest topology and empty database. For more information, see [Setup and deploy an LBD environment with empty database](#set-up-deploy). |
-|3. Upload target packages into LBD project assets  in LCS.|Prepare application, platform and customizations package that you use across hub and edge scale unit. For more information, see [Upload target packages into LBD project assets in LCS](#upload-packages) |
-|4. Service the LBD environment with the target packages.|This ensures that the hub and spoke have the same build and customizations deployed. For more information, see [Service the LBD environment with target packages](#service-target-packages)|
-|5. Compete the scale unit configuration and workload assignment. |See [Assign your LBD edge scale unit to a hub](#assign-edge-to-hub) |
+1. **Enable an LBD slot in your LBD Lifecycle Services (LCS) project.**
+
+    LBD edge scale unit during preview target existing LBD customers. An additional 60-day limited LBD sandbox slot will be only provided in certain customer situations.
+
+1. **Set up and deploy an LBD environment with an *empty* database.**
+
+    Deploy the LBD environment through LCS with the latest topology and empty database. For more information, see [Setup and deploy an LBD environment with empty database](#set-up-deploy).
+
+1. **Upload target packages into LBD project assets in LCS.**
+
+    Prepare application, platform and customizations package that you use across hub and edge scale unit. For more information, see [Upload target packages into LBD project assets in LCS](#upload-packages)
+
+1. **Service the LBD environment with the target packages.**
+
+    This ensures that the hub and spoke have the same build and customizations deployed. For more information, see [Service the LBD environment with target packages](#service-target-packages)|
+
+1. **Compete the scale unit configuration and workload assignment.**
+
+    See [Assign your LBD edge scale unit to a hub](#assign-edge-to-hub) |
+
+The remaining sections of this topic provide more details about how to complete each of these steps.
 
 <a name="set-up-deploy"></a>
 
-## Set up and deploy an LBD environment with empty database
+## Set up and deploy an LBD environment with an empty database
 
 This step creates a functional LBD environment. However, the environment won't necessarily have the same application and platform versions as the hub environment, will still be missing the customizations, and won't have been enabled to function as a scale unit.
 
@@ -46,8 +60,8 @@ Do the following:
 
 1. Follow the instructions given in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
 
-  > [!IMPORTANT]
-  > Read the rest of this section before you proceed to carry out the steps in the guide above.
+    > [!IMPORTANT]
+    > Read the rest of this section before you proceed to carry out the steps in the guide above.
 
 1. When describing your configuration in the infrastructure\ConfigTemplate.xml do not specify any MR (Financial Reporting) nodes.
 1. Set up a database that contains empty data as described in [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Use the empty `data.bak` file for this step.
@@ -88,9 +102,9 @@ Do the following:
 1. Service the LBD environment with the combined application/platform package that you uploaded in previous step.
 1. Service the LBD environment with the custom deployable package that you uploaded in the previous step.
 
-    ![Service LBD Environment 1](media/cloud_edge-lbd-lcs-servicelbdenv1.png "Service LBD Environment 1")
+    ![Service LBD environment 1](media/cloud_edge-lbd-lcs-servicelbdenv1.png "Service LBD environment 1")
 
-    ![Service LBD Environment 2](media/cloud_edge-lbd-lcs-servicelbdenv2.png "Service LBD Environment 2")
+    ![Service LBD environment 2](media/cloud_edge-lbd-lcs-servicelbdenv2.png "Service LBD environment 2")
 
 <a name="assign-edge-to-hub"></a>
 
@@ -98,13 +112,8 @@ Do the following:
 
 While edge scale units are still in preview, you must use the [scale unit deployment and configuration tools available on GitHub](https://github.com/microsoft/SCMScaleUnitDevTools) to assign your LBD edge scale unit to a hub. The process enables an LBD configuration to function as an edge scale unit and associates it to the hub. The process is similar to configuring a One-Box development environment. For a step-by-step guide, see the [wiki for the configuration tool](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide).
 
-When using the tools, please follow the guidance in the [Wiki](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) to prepare the configuration file. Follow the entries and operations for the hub. For the LBD edge scale units, you must complete the `ScaleUnitConfiguration` section on the config file.
+When using the tools, please follow the guidance in the [Step by step usage guide](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) to prepare the configuration file. Follow the entries and operations for the hub. For the LBD edge scale units, you must complete the `ScaleUnitConfiguration` section on the config file.
 
-> [!Note]
-> **Privacy Notice**
->
-> Enabling a Scale Unit will allow for the transfer of certain customer data, including personal data, to the geographic region where you've configured your Hub. To learn more about Edge Scale Units, read our [Documentation](https://aka.ms/scmcne).
-Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
