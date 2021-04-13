@@ -4,14 +4,14 @@
 title: Configure lease parameters (Preview)
 description: This topic describes the configuration settings for Asset leasing, such as security information and accounting settings.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: TaxTable
+ms.search.form: AssetLeasePostingAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
