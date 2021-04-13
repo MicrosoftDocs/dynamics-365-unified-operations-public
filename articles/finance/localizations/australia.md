@@ -3,8 +3,8 @@
 
 title: Australia overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Australia.
-author: ShylaThompson
-ms.date: 07/25/2019
+author: kfend
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,7 +47,7 @@ The names of the Australian banks and the file formats that they accept for elec
 Australian businesses report taxation obligations to the Australian Tax Office using the Business activity statement (BAS). For more information about the business activity statement feature, see [Business activity statement](apac-aus-business-activity-statement.md).
 
 ## Low-value pool depreciation
-Australia uses a low-value pool depreciation method that allows low-cost and low-value assets to be allocated to a low-value pool if the cost or opening adjustable value is less than a specified amount. For more information, see [Low-value pool depreciation](apac-aus-low-value-pool-depreciation.md).
+Australia uses a low-value pool depreciation method. This method allows the allocation of low-cost and low-value assets to a low-value pool if the cost or opening adjustable value is less than a specified amount. For more information, see [Low-value pool depreciation](apac-aus-low-value-pool-depreciation.md).
 
 ## Additional resources
 
