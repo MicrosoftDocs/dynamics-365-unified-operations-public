@@ -217,22 +217,22 @@ The following table lists the available actions, and whether they are currently 
 
 ### Applicability rules
 
-The Applicability rules are configurable clauses that are defined at the Electronic invoicing feature level. The rules are configured to provide a context for execution of electronic invoicing features through the Electronic Invoicing capability set.
+Applicability rules are configurable clauses that are defined at the Electronic invoicing feature level. The rules are configured to provide a context for execution of electronic invoicing features through the Electronic Invoicing capability set.
 
 When a business document from Finance or Supply Chain Management is submitted to electronic invoicing, the business document doesn't carry an explicit reference that allows the Electronic Invoicing capability set to call a particular electronic invoicing feature to process the submission.
 
 Nevertheless, when properly configured, the business document contains the necessary elements that allow electronic invoicing to resolve which electronic invoicing feature must be selected and then generate the electronic invoice.
 
-The Applicability rules allow the Electronic Invoicing capability set to find the exact electronic invoicing features that must be used to process the submission, by matching the contents from the submitted business document towards the clauses from the Applicability rules.
+Applicability rules allow the Electronic Invoicing capability set to find the exact electronic invoicing features that must be used to process the submission. This is done by matching the contents from the submitted business document with the clauses from the Applicability rules.
 
-For example, two electronic invoicing features with related Applicability rules are deployed into the Electronic Invoicing capability set:
+For example, two electronic invoicing features with related Applicability rules are deployed into the Electronic Invoicing capability set.
 
 | Electronic invoicing feature | Applicability rules        |
 |------------------------------|--------------------------- |
 | A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
 | B                            | <p>Country = MX</p><p>and</p><p>Legal entity = MXMF</p>  |
 
-When a business document from Finance or Supply Chain Management is submitted to the Electronic Invoicing capability set, if the business document contains the following attributes filled as:
+If a business document from Finance or Supply Chain Management is submitted to the Electronic Invoicing capability set, the business document contains the following attributes filled as:
 
 - Country = BR
 - Legal entity = BRMF
@@ -246,16 +246,16 @@ In the same way, if the business document contains:
 
 Electronic invoicing feature **B** is selected to generate the electronic invoice.
 
-The configuration of Applicability rules can't be ambiguous. This means that two or more electronic invoicing features can't have the same clauses, otherwise it will lead to none selection. If there is a duplication of electronic invoicing features, to avoid ambiguity, use additional clauses to allow the Electronic Invoicing capability set to distinguish between the two electronic invoicing features.
+The configuration of Applicability rules can't be ambiguous. This means that two or more electronic invoicing features can't have the same clauses, otherwise it will lead to no selection. If there is a duplication of electronic invoicing features, to avoid ambiguity, use additional clauses to allow the Electronic Invoicing capability set to distinguish between the two electronic invoicing features.
 
-For example, electronic invoicing feature **C**. This feature is a copy of electronic invoicing feature **A**.
+For example, consider electronic invoicing feature **C**. This feature is a copy of electronic invoicing feature **A**.
 
 | Electronic invoicing feature | Applicability rules        |
 |------------------------------|--------------------------- |
 | A                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
 | C                            | <p>Country = BR</p><p>and</p><p>Legal entity = BRMF</p>  |
 
-In this, feature **C** is in front of a business document submission containing:
+In this example, feature **C** is in front of a business document submission that contains the following:
 
 - Country = BR
 - Legal entity = BRMF
@@ -294,7 +294,7 @@ Data types:
 
 Group/ungroup of clauses:
 
-Example:
+The example looks like this:
 
 | Electronic invoicing feature | Applicability rules        |
 |------------------------------|--------------------------- |
