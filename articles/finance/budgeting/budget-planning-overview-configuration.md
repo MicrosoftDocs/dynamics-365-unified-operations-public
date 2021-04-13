@@ -168,7 +168,7 @@ In addition to columns for budget amounts, you can define columns for the projec
 
 For the example schema, you might want to create columns for the "PY Sales," "Contracts," and "Forecast" scenarios. (The following illustration shows the relevant section of the schema.) You can then break out one or all of these scenarios into separate columns for each quarter of the fiscal year, so that the Sales department manager can accurately enter forecast amounts for each period.
 
-[![Columns](./media/columns.png)](./media/columns.png)
+[![Illustration of sections of the schema for adding columns](./media/columns.png)](./media/columns.png)
 
 You also specify whether each layout element (column) is editable, and whether it's available in any worksheet template that is created for that layout. For the example schema, in the layout that is used for the "Estimate" stage, the "Forecast" columns are editable, but the "PY Sales" and "Contracts" columns are read-only.
 
