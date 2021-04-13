@@ -137,7 +137,7 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 <p><a href="../../retail/retail-peripherals-overview.md">MPOS and Cloud POS</p>
 <p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commerce developer and administration</p>
 
-<h4><a href="/dynamics365/fin-ops-core/fin-ops/">Dynamics 365 Human Resources</a></h4>
+<h4><a href="/dynamics365/human-resources/">Dynamics 365 Human Resources</a></h4>
 <p><a href="../../human-resources/hr-admin-overview.md">Administrator Guide</a></p>
 <p><a href="../../human-resources/hr-developer-overview.md">Developer Guide</a></p>
 <p><a href="../../human-resources/hr-hrpro-overview.md">User Guide</a></p>
