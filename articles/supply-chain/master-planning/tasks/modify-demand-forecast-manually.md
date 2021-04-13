@@ -17,20 +17,19 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to modify the forecast for an item. The demo data company used to create this procedure is USMF. This procedure is intended for the production planner. 
-
+This procedure shows how to modify the forecast for an item. The demo data company used to create this procedure is USMF. This procedure is intended for the production planner.
 
 ## Modify the forecast for an item
 
 To modify the forecast for an item:
 
 1. Go to **Modules \> Product information management \> Products \> Released products**.
-1. In the list, find and select the desired record. Select the item for which you want to modify the forecast. For example, you can select item *D0001*.  
+1. In the list, find and select the desired record. Select the item for which you want to modify the forecast.
 1. On the Action Pane, open the **Plan** tab and select **Demand forecast**.
 1. In the list, select a row. If there are no forecast lines, create a new line by selecting **New** on the Action Pane.  
 1. In the **Sales quantity** field, enter a positive number. This number represents the forecasted quantity for the item. An error will be shown if you enter a negative number.
+1. Fill out the other fields as needed.
 1. Select **Save** on the Action Pane.
-
 
 ## Modify the forecast in Microsoft Excel
 
@@ -40,9 +39,8 @@ To modify the forecast in Microsoft Excel:
 1. Select a download location, save, and then open the downloaded file in Excel.
 1. If you see a warning, choose to **Enable editing**.
 1. Sign in to Supply Chain Management using the Microsoft Dynamics task pane. You must sign in with the **Keep me signed in** option enabled and you must trust the data connection app.
-1. The Excel spreadsheet now shows all the current demand forecast lines for your company.  Add, delete, and edit demand forecast lines as needed. 
-1. Select **Publish** on the Microsoft Dynamics task pane to upload your changes back to Supply Chain Management. 
-
+1. The Excel spreadsheet now shows all the current demand forecast lines for your company.  Add, delete, and edit demand forecast lines as needed.
+1. Select **Publish** on the Microsoft Dynamics task pane to upload your changes back to Supply Chain Management.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
