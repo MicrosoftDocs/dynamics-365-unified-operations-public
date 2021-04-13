@@ -33,14 +33,14 @@ This topic describes how to set up Azure Key Vault to provide secure key managem
 
 ## Overview
 
-Some Dynamics 365 Commerce e-Commerce development scenarios require business-sensitive data such as credentials or access tokens that must be stored securely. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) provides the capability to import, store, and manage cryptographic keys and certificates that can be securely accessed as needed. 
+Some Dynamics 365 Commerce e-commerce development scenarios require business-sensitive data such as credentials or access tokens that must be stored securely. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) provides the capability to import, store, and manage cryptographic keys and certificates that can be securely accessed as needed. 
 
 This topic shows how to do the following: 
 
 - Create a Key Vault to securely store sensitive information.
-- Configure your e-Commerce site to securely communicate with Retail Server.
+- Configure your e-commerce site to securely communicate with Retail Server.
 - Set up Retail Server to securely communicate with your Key Vault.
-- Access secret values from within your e-Commerce components.
+- Access secret values from within your e-commerce components.
 
 ## Create a Key Vault to store application secrets
 
@@ -58,9 +58,9 @@ To create a new Key Vault, follow these steps.
 1.	After you have reviewed the configuration, select **Create** and then wait for the deployment to complete.
 1.	After the Key Vault has successfully been deployed, you can add any secrets under **Secrets**.
 
-## Configure server-to-server authentication between the e-Commerce Node application and Retail Server
+## Configure server-to-server authentication between the e-commerce Node application and Retail Server
 
-Next, the e-Commerce Node application needs to be configured to securely communicate with Retail Server.
+Next, the e-commerce Node application needs to be configured to securely communicate with Retail Server.
 
 For the following steps, you will need to have the tenant ID of the Azure App Service hosting your Node application, as well as the client ID of the managed identity tied to your Azure App Service. If you do not have access to Azure App Service, work with your service integrator or support team to obtain the required information.
 
@@ -169,9 +169,9 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
  > [!IMPORTANT]
  > Take note of the operating unit number (OUN) of the store that was used to configure the secret key and values, which can be found in Commerce headquarters at **Retail and Commerce \> Channels \> Online stores**. You will need to specify this value in the platform settings JSON file.
 
-## Access secret values within your e-Commerce Node application
+## Access secret values within your e-commerce Node application
 
-After the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the interface shown in the following example. Along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as a second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
+After the configuration steps above are complete, you will be able to access the secret values from within your e-commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the interface shown in the following example. Along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as a second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
 
 ```typescript
 export interface ISecretManager {
@@ -210,7 +210,7 @@ You must update the **secretsManagerOUN** property in the platform.settings.json
 
 ## Local development
 
-Your e-Commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, the `SecretManager` class will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file, where you can configure secretKeys and secretValues that will only be used when developing locally.
+Your e-commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, the `SecretManager` class will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file, where you can configure secretKeys and secretValues that will only be used when developing locally.
 
 > [!NOTE]
 > Everything under the secrets/ directory should be added to your .gitignore file to help prevent secrets from being leaked online.
