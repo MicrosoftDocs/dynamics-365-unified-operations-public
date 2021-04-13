@@ -51,7 +51,7 @@ In this example, the tax code is, **VAT 19**.
 
      [![Sales tax codes page, Ledger posting group field](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
 
-3. To view the detail configuration, select **VAT**, or right click **Ledger posting group** > **View details**.
+3. To view the detail configuration, select **VAT**, or right-click **Ledger posting group** > **View details**.
 
      [![View details](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
 
