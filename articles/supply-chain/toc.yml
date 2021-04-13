@@ -209,61 +209,61 @@
       - name: Globalization services
         items:
         - name: Globalization services overview
-          href: localizations/globalization-services-overview.md?toc=/dynamics365/supply-chain/toc.json
+          href: ../finance/localizations/globalization-services-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: Regulatory configuration service
           items:
           - name: Regulatory configuration service overview
-            href: localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
           - name: Regulatory configuration service - Globalization features
-            href: localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
           - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
-            href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
-            href: localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
           - name: Electronic Invoicing administration components
-            href: localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
           - name: Configure Electronic Invoicing in Regulatory Configuration Services (RCS)
-            href: localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
           - name: Issue electronic invoices in Finance and Supply Chain Management
-            href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
           - name: Create an Azure storage account and a Key Vault
-            href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
           - name: Get started 
             items:
             - name: Get started with Electronic Invoicing service administration
-              href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+              href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing
-              href: localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
+              href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing for Brazil
-              href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
+              href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing for Egypt
-              href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
+              href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing for Italy
-              href: localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
+              href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
-              href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
+              href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Set up Electronic Invoicing
-              href: localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
+              href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
           - name: Electronic Invoicing FAQ
-            href: localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
         - name: Tax Calculation
           items:
           - name: Tax Calculation overview
-            href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
           - name: Get started with Tax Calculation
-            href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
           - name: Tax feature support for transfer orders
-            href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
           - name: Add data fields in tax configurations
-            href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/supply-chain/toc.json
           - name: Add data fields in the tax integration by using extensions
-            href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
           - name: Multiple VAT registration numbers
-            href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
           - name: Set up an environment for master data lookup
-            href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
+            href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
       - name: Regulatory updates
         href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
       - name: India
