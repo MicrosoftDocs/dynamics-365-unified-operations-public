@@ -3,8 +3,8 @@
 
 title: Russia overview
 description: This topic provides an overview of functionality that is specific to Russia.
-author: ShylaThompson
-ms.date: 12/11/2020
+author: kfend
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -162,6 +162,8 @@ This topic provides information about functionality that supports Russian regula
 - [Assets tax registers](rus-assets-tax-registers.md)
 - [Deferrals tax register](rus-deferred-expenses-register.md)
 - [Cash flow tax registers](rus-cash-flow-tax-registers.md)
+- [Rated expenses registers](rus-rated-expenses-registers.md)
+- [Accounts payable debt tax registers and debt write-offs](rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md)
 
 ## Additional resources
 
