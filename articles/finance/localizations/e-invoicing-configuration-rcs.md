@@ -292,8 +292,6 @@ Data types:
 - Date
 - UUID
 
-Group/ungroup of clauses:
-
 The example looks like this.
 
 | Electronic invoicing feature | Applicability rules        |
