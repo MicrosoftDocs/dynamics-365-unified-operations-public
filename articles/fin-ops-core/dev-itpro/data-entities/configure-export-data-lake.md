@@ -4,7 +4,7 @@
 title: Configure export to Azure Data Lake
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-ms.date: 01/04/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -88,7 +88,7 @@ The steps, which take place in the Azure portal, are as follows:
 4. [Create a key vault](#createkeyvault)
 5. [Add secrets to the key vault](#addsecrets)
 6. [Authorize the application to read secrets in the key vault](#authorize)
-7. [Power Platform Integration](#powerplatformintegration)
+7. [Power Platform integration](#powerplatformintegration)
 8. [Install the Export to Data Lake add-in in LCS](#installaddin)
 
 
@@ -132,19 +132,20 @@ You need to grant your application permissions to read and write to the storage 
 2. Select **Access Control (IAM)** in the left navigation. 
 3. On the **Access control** page, select the **Role assignments** tab.
 4. Select **Add** at the top of the page, and then select **Add role assignment**.
-5. In the **Add role assignment** dialog, select the **Role** field, and then select **Storage blob data contributor**.
+5. In the **Add role assignment** dialog box, select the **Role** field, and then select **Storage blob data contributor**.
 6. In the **Select** field, select the application that you registered earlier.
 
 > [!NOTE]
 > Don't make any changes to the fields, **Assign access to** and **Azure AD user, group, or service principal**.
 
 7. Select **Save**.
-8. Add the **Storage blob data reader** role shown by repeating steps 4-7.
-9. Validate Storgae account role assignment for [The application](#appid) you created earlier. 
-|   Application     |     Role     |
-|----------------------------------|-----------------------------|
-| [The application](#appid) you created earlier | Storage blob data contributor |
-| [The application](#appid) you created earlier | Storage blob data reader     |
+8. Repeat steps 4 - 7 to add the **Storage blob data reader** role shown.
+9. Validate the storage account role assignment for [the application](#appid) you created earlier. 
+
+     |   Application     |     Role     |
+     |----------------------------------|-----------------------------|
+     | [The application](#appid) you created earlier | Storage blob data contributor |
+     | [The application](#appid) you created earlier | Storage blob data reader     |
 
 ## <a name="createkeyvault"></a>Create a key vault
 
@@ -196,22 +197,21 @@ You should see application with access to your key vault as shown below.
 
 7.  Select **Save**.
 
-## <a name="powerplatformintegration"></a>Power Platform Integration 
-If this is the first time you are installing add-ins in this environment, you may need to enable **Power platform integration**  for this environment. There are two options to setup Power Platform Integration with Finance and Operations environments.
+## <a name="powerplatformintegration"></a>Power Platform integration 
+If this is the first time you are installing add-ins in this environment, you may need to enable the **Power Platform integration**  for this environment. There are two options to setup Power Platform integration in Finance and Operations app environments.
 
-### Option 1: Setup Power Platform Integration using LCS
+### Option 1: Setup Power Platform integration using LCS
 
-To setup Power Platform Integration from LCS, follow the documentation to validate the pre-requisites and setup instruction [Add-ins overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/add-ins-overview).
+To setup Power Platform integration from LCS, see [Add-ins overview](../power-platform/add-ins-overview.md).
 
-### Option 2: Setup Power Platform Integration using Dual-write wizard
+### Option 2: Setup Power Platform integration using the Dual-write wizard
 
-Alternative option to setup **Power Platform Integration** to create a Power Platfrom environment with database and then use Dual-write setup experiance to complete **Power Platform Integration**.Follow the instructions as outlined bellow to create the Power Platform Environment and complete the integration. 
-1. [Create a Environment with database](https://docs.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-with-a-database)
-2. [Complete the requirement and pre-requisite](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/requirements-and-prerequisites) 
-> [!NOTE]
-> If you do not plan to use **Dual-Write** feature, you need to only complete upto step 4 and skip step 4.h and 4.g.
-3. Use the [dual-write wizard to link your environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/link-your-environment).
-4. Validate that the Power Platform Integration is setup and Add-in in the LCS environment page.  
+Another way to set up **Power Platform integration** is to create a Power Platfrom environment with a database and then use the Dual-write setup. Complete the following steps to create the Power Platform environment and complete the integration. 
+
+1. [Create a Environment with database](/power-platform/admin/create-environment#create-an-environment-with-a-database.md)
+2. [Complete the requirement and pre-requisite](dual-write/requirements-and-prerequisites.md)      
+3. Use the [dual-write wizard to link your environment](dual-write/link-your-environment.md).
+4. Validate that the Power Platform integration is set up and added in the LCS environment page.  
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in LCS 
 
@@ -230,17 +230,19 @@ You need the following information before you start. Keep the information handy 
 1.  Sign in to [LCS](https://lcs.dynamics.com) and navigate to your environment.
 2.  On the **Environment** page, select the **Environment add-ins** tab. If **Export Data Lake** appears in the list, the Data Lake add-in is already installed, and you can skip the rest of this procedure. Otherwise, complete the remaining steps.
 3.  Select **Install a new add-in**, and in the dialog box, select **Export to Data lake**. If **Export to data lake** isn't listed, the feature might not be available for your environment at this time.
-4.  In the **Setup add-in** dialog box, provide the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
+4.  In the **Setup add-in** dialog box, enter the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
 5.  Accept the terms of the offer by selecting the check box, and then select **Install**.
 
 The system installs and configures the data lake for the environment. After installation and configuration are complete, you should see **Azure Data Lake** listed on the **Environment** page.
 
-## <a name="troubleshooting"></a> Troubleshoot the setup
+## <a name="troubleshooting"></a> Troubleshooting
 
 ### Error UnableToInitializeLakeDueToUserError
-Error indicates that **Export to Data Lake** service is unable to connect to storage account or [The application](#appid) does not have required access to storage account. 
-1. Validate the secret values stored in the key vault are valid and correct [Add secrets to the key vault](#addsecrets).   
-2. Validate that AAD app you have required access to storage account [Grant access control roles to applications](#grantaccess)
+
+The error, **UnableToInitializeLakeDueToUserError** indicates that the **Export to Data Lake** service can't connect to a storage account or [the application](#appid) doesn't have the required access to the storage account. To try and resolve the issue:
+
+- Validate that the secret values stored in the key vault are valid and correct. For more information, see [add secrets to the key vault](#addsecrets).   
+- Validate that the AAD app you have requires access to the storage account. For more information, see [Grant access control roles to applications](#grantaccess).
  
 
 
