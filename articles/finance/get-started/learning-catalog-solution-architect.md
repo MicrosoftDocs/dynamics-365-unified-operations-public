@@ -27,14 +27,14 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 ## Get started<a name="get-started"></a>
 
-| Content  | Description | Format  | Length |
-|-------------|-----------------|-------------|------------|
+| Content  | Description   | Format  | Length |
+|----------|---------------|---------|--------|
 | [Dynamics FastTrack Architect Bootcamp](https://community.dynamics.com/365/b/partnerevents/posts/dynamics-365-fasttracks-bootcamp) | The Dynamics FastTrack Architect Bootcamps are EXCLUSIVELY for solution integrator partners commencing customer implementations that are governed by the Microsoft Dynamics 365 FastTrack customer success program. The FREE intensive Bootcamps are SPECIFICALLY for solution integrator partner architects assigned to FastTrack engagements and are led by senior architects from the Dynamics 365 engineering team. | Free instructor-led in-person training. Qualifications apply. | 5 days |
 
 ## Core platform knowledge<a name="core-platform-knowledge"></a>
 
-| Content | Description  | Format  | Length |
-|-------------|-----------------|-------------|------------|
+| Content  | Description   | Format  | Length |
+|----------|---------------|---------|--------|
 | [Becoming a Solution Architect for Dynamics 365 and Power Platform](/learn/paths/become-solution-architect/) | A Solution Architect is responsible for the successful design, implementation, deployment, and adoption of an overall solution. A Solution Architect ensures that the solution meets the customer’s needs now and in the future. While the Solution Architect may not “click the buttons” during a deployment, they are ultimately responsible for the solution and work closely with the deployment team. | Free, self-paced online learning path | 4 hours |
 | [Implement Finance and Operations apps](/learn/paths/implement-finance-operations/) | Learn the most important elements and the best practices to manage a successful Finance and Operations implementation project. From the first step where you are planning and designing your project methodology, the use of FastTrack services, the development strategy, data management and more, to the best ways for maintaining and monitoring your operations after Go-live. | Free, self-paced online learning path | 11.5 hours |
 | [Go-live Planning (DYN458PAL2)](https://community.dynamics.com/365/b/techtalks/posts/go-live-planning-8-9-18) | We will discuss the go-live process in detail, and how best to prepare for it, in order to make it as smooth as possible for the customer, partner, and Microsoft. | Free recording of a web conference | 60 minutes |
@@ -46,8 +46,8 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 ## Core development concepts<a name="core-development-concepts"></a>
 
-| Content  | Description  | Format  | Length |
-|-------------|-----------------|-------------|------------|
+| Content  | Description   | Format  | Length |
+|----------|---------------|---------|--------|
 | [Finance and Operations: Acceptance Test Library (DYN650PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-acceptance-test-library-june-20-2019) | Microsoft recently made the Acceptance Test Library (ATL) publicly available. ATL is a library of around 5,000 classes that helps you author readable, performant, quality X++ tests and consistent test data, while hiding the complexity of setting up prerequisites. These are the same classes Microsoft uses internally for testing. The ATL framework’s fluent API facilitates the Test Driven Development and Specification By Example software engineering approaches. Join us for this Tech Talk to learn more about it. | Free recording of a web conference | 61 minutes |
 | [Finance and Operations: Extending Dynamics 365 for Finance and Operations with PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Tech Talk that discusses in detail and demonstrates extending talent applications using Microsoft PowerApps and Flow. | Free recording of a web conference | 43 minutes |
 | [Data Management (DYN757PAL2)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-scm-data-management-february-14-2020) | Join us for this TechTalk on Data Management. Learn about the options available and the scenarios for which they are recommended. We will cover the Data Management framework, templates, database copying, cross-company data sharing, and performance considerations. | Free recording of a web conference | 58 minutes |
@@ -62,7 +62,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 ## Migration and upgrade<a name="migration-and-upgrade"></a>
 
 | Content  | Description   | Format  | Length |
-|-------------|-----------------|-------------|------------|
+|----------|---------------|---------|--------|
 | [Updates and upgrades for Finance and Operations apps](/learn/modules/upgrades-updates-finance-operations-apps/) | The world of enterprise resource planning (ERP) is continuously evolving and helping customers scale up in productivity and streamline their operations. The evolution of Finance and Operations encourages customers to upgrade their previous Microsoft Dynamics AX versions to the Finance and Operations cloud service. | Free, self-paced online learning module | 1 hour |
 | [Finance and Operations: Upgrading from 7.x to 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Join us for our next TechTalk, during which we will cover the 7.X to 8.X upgrade process. We will discuss various scenarios and steps to execute for code upgrade and data upgrade. We will also cover extensibility request scenarios and how to raise them where appropriate. Part 1 of 2. | Free recording of a web conference | 61 minutes |
 | [How to upgrade to 7.2 (July 2017) from 7.0 (RTW)/7.1 (Release 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | In this session, we will explain how to upgrade from Dynamics 365 Finance and Operations application v7.0 (RTW) and v7.1 (1611) to v7.2 (July 2017). We make a clear differentiation between Live customers and ongoing projects (not live yet). | Free recording of a web conference | 44 minutes |
@@ -71,8 +71,8 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 ## Servicing<a name="servicing"></a>
 
-| Content  | Description  | Format | Length |
-|-------------|-----------------|-------------|------------|
+| Content  | Description   | Format  | Length |
+|----------|---------------|---------|--------|
 | [Finance and Operations: Servicing, Supporting and Maintaining Production (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tech Talk on how to efficiently support, maintain, and service your Dynamics 365 for Finance and Operations production environment | Free recording of a web conference | 53 minutes |
 | [Finance and Operations: Feature Management (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Tech Talk on the Feature management experience. It provides a workspace where you can view, enable, disable, and schedule features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. Attend this meeting to see what is delivered in 10.0.3 and our plans for future releases. | Free recording of a web conference | 47 minutes |
 | [Finance And Operations: Microsoft Managed Continuous Updates (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | The Continuous Update cadence for Finance and Operations has started! Join us during this hour to discuss Microsoft Managed Continuous updates, the user experience already available in Lifecycle Services, and forthcoming updates. | Free recording of a web conference | 61 minutes |
@@ -84,8 +84,8 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 ## Testing<a name="testing"></a>
 
-| Content  | Description | Format  | Length |
-|-------------|-----------------|-------------|------------|
+| Content  | Description   | Format  | Length |
+|----------|---------------|---------|--------|
 | [Microsoft Managed Continuous Updates (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | After all customer requirements have been handled by either configuration, customization, and integration, you need to know how to perform user acceptance testing (UAT) in Finance and Operations apps to validate the solution. User acceptance testing is an important step in the go-live preparation. | Free, self-paced online learning module | 1 hour |
 | [Finance and Operations: Regression Suite Automation Tool - Background & Setup (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | This is the first of a two-part series on Regression Suite Automation Testing (RSAT). In this session, we will cover how to keep pace with continuous updates using automated testing via RSAT. Learnings and recommendations on creating task recordings and executing tests using RSAT will be covered, along with a step-by-step walkthrough of the installation and setup. | Free recording of a web conference | 70 minutes |
 | [Finance and Operations: Regression Suite Automation Tool -- Testing Lifecycle Demo (DYN647PAL)](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) | This is the second of a two-part series on Regression Suite Automation Testing (RSAT). This session will cover a demo of the whole cycle of creating and saving task recordings from Finance and Operations to the BPM library in LCS, synchronizing the BPM library to create test cases in Azure DevOps, grouping the test cases into test suites, and loading and executing the test suites in RSAT. | Free recording of a web conference | 70 minutes |
@@ -97,7 +97,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 ## Exam<a name="exam"></a>
 
 | Content | Description  | Format  |
-|-------------|-----------------|-------------|
+|---------|--------------|---------|
 | [Exam MB-700: Microsoft Dynamics 365: Finance and Operations Apps Solution Architect](/learn/certifications/exams/mb-700) | This exam measures your ability to accomplish the following technical tasks: identify solution requirements; design solution components; and define solution testing and management strategies. | Exam, cost varies by region |
 
 
