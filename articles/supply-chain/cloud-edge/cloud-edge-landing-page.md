@@ -104,7 +104,7 @@ Your current production environment must be of type "Self-Service" in LCS. This 
 >
 > If you have this type of environment, please work with your Microsoft contact to understand your migration timeline to "Self-Service".
 
-Microsoft is in the process of transitioning all cloud environments of Supply Chain Management from an IaaS model to a Service Fabric hosted topology. This move brings better scalability and eases service management, which results in faster deployment and maintenance operations. Likewise, service components are migrating to the concept of micro services, and the service hosting model will [transition](/virtualization/windowscontainers/about/containers-vs-vm) from a VM model to a light-weight containerized architecture.
+Microsoft is in the process of transitioning all cloud environments of Supply Chain Management from an IaaS model to a Service Fabric hosted topology. This move brings better scalability and eases service management, which results in faster deployment and maintenance operations. Likewise, service components are migrating to the concept of micro services, and the service hosting model will [transition](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) from a virtual machine (VM) model to a light-weight containerized architecture.
 
 Ultimately the same Service Fabric based containerized service infrastructure will power both cloud and edge instances of the service, be it a hub in the cloud or a scale unit in the cloud or on the edge.
 
