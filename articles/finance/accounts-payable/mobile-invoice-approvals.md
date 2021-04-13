@@ -219,7 +219,7 @@ To design the invoice details page for mobile, use the **VendMobileInvoiceHeader
 
 11. After all the fields from the previous two steps have been added, click **Done**. The page must resemble the following illustration.
     
-    [![Page after fields are added](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Illustration showing additional fields added](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Click **Done** to exit edit mode.
 
