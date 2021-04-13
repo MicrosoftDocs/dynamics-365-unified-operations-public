@@ -1,6 +1,6 @@
 ---
 title: Deploy edge scale units on custom hardware using LBD
-description: Provision edge scale units on premises using custom hardware and LBD based deployment
+description: Provision edge scale units on premises using custom hardware and LBD-based deployment
 author: cabeln
 ms.date: 04/13/2021
 ms.topic: article
@@ -22,7 +22,7 @@ Edge scale units can be deployed by creating a local business data (LBD) environ
 
 Edge scale units are still in preview. Therefore you may use such environment only according to the [preview terms](https://aka.ms/scmcnepreviewterms).
 
-This document describes how to set up an on-premises LBD environment as an edge scale unit,and then how to associate it to a hub.
+This document describes how to set up an on-premises LBD environment as an edge scale unit, and then how to associate it to a hub.
 
 ## Deployment overview
 
@@ -38,7 +38,7 @@ The following procedure provides an overview of the deployment steps:
 
 1. **Upload target packages into LBD project assets in LCS.**
 
-    Prepare application, platform and customizations package that you use across hub and edge scale unit. For more information, see [Upload target packages into LBD project assets in LCS](#upload-packages)
+    Prepare application, platform, and customizations package that you use across hub and edge scale unit. For more information, see [Upload target packages into LBD project assets in LCS](#upload-packages)
 
 1. **Service the LBD environment with the target packages.**
 
@@ -65,7 +65,7 @@ Do the following:
 
 1. When describing your configuration in the infrastructure\ConfigTemplate.xml do not specify any MR (Financial Reporting) nodes.
 1. Set up a database that contains empty data as described in [Configure databases](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb). Use the empty `data.bak` file for this step.
-1. Set up the pre-deployment script. For more information see [Local agent pre-deployment and post-deployment scripts](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md)
+1. Set up the pre-deployment script. For more information, see [Local agent pre-deployment and post-deployment scripts](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md)
 
     - Copy the contents from the `ScaleUnit` folder in the `Infrastructure Scripts` to the `Scripts` folder on the agent file storage share that was set up on the environment. A typical path is: `\\lbdiscsi01\agent\Scripts`.
     - Create the `PreDeployment.ps1` script that will invoke the scripts with the necessary parameters. The pre-deployment must be placed in the `Scripts` folder on the agent share to be run. A typical path is: `\\lbdiscsi01\agent\Scripts\PreDeployment.ps1`.
@@ -112,7 +112,7 @@ Do the following:
 
 While edge scale units are still in preview, you must use the [scale unit deployment and configuration tools available on GitHub](https://github.com/microsoft/SCMScaleUnitDevTools) to assign your LBD edge scale unit to a hub. The process enables an LBD configuration to function as an edge scale unit and associates it to the hub. The process is similar to configuring a One-Box development environment. For a step-by-step guide, see the [wiki for the configuration tool](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide).
 
-When using the tools, please follow the guidance in the [Step by step usage guide](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) to prepare the configuration file. Follow the entries and operations for the hub. For the LBD edge scale units, you must complete the `ScaleUnitConfiguration` section on the config file.
+When using the tools, follow the guidance in the [Step by step usage guide](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) to prepare the configuration file. Follow the entries and operations for the hub. For the LBD edge scale units, you must complete the `ScaleUnitConfiguration` section on the config file.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

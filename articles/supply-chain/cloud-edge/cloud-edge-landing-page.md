@@ -29,7 +29,7 @@ Companies that work with manufacturing and distribution must be able to run key 
 Cloud and edge scale units enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through add-ins for your supply chain subscription.
 
 - Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
- (*available by first of April, 2021*)
+ (*available by April 1, 2021*)
 - Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available in the future*)
 
 Workload capabilities are being release on a continuous basis with incremental enhancements.
@@ -40,7 +40,7 @@ Scale units extend your central Supply Chain Management hub environment by addin
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with scale units":::
 
-Scale units provide resilience, reliability and scale for the assigned workloads. Edge scale units can be temporarily disconnected from the cloud hub environment and workers continue with the work in the assigned workloads on the edge.
+Scale units provide resilience, reliability, and scale for the assigned workloads. Edge scale units can be temporarily disconnected from the cloud hub environment and workers continue with the work in the assigned workloads on the edge.
 
 A workload is a defined set of business functionality that can be factored out and delegated to a scale unit.
 The workload for warehouse management has been released, while the manufacturing execution workload is still in preview.
@@ -74,7 +74,7 @@ For more information, see [Manufacturing execution workloads for cloud and edge 
 
 ## What to consider before enabling the distributed hybrid topology for Supply Chain Management
 
-By enabling the hybrid distributed topology you transition your cloud supply chain management environment to functions as a hub. And you may associate additional environments in the cloud or on the edge which are configured as scale units.
+By enabling the hybrid distributed topology, you transition your cloud supply chain management environment to functions as a hub. And you may associate additional environments that are configured as scale units in the cloud or on the edge.
 
 <a name="cloud-scale-unit-prerequisites"></a>
 
@@ -146,25 +146,25 @@ Onboarding to the distributed hybrid topology goes through two stages. In the fi
 
 Before you begin with onboarding your sandbox or production environments, we recommend exploring scale units in a development setup (such as a one-box (also known as tier-1) environment) to validate processes, customizations, and solutions. In this phase, data and customizations will be applied to the one-box environments. One environment takes the role of the hub and the other the role of a scale unit. This setup provides the best way to identify and solve issues. This can also be done using the latest early access (PEAP) build.
 
-For Stage 1, you should use the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools). It allows you to configure hub and scale units in one or two separate one-box environments. The tool is provided as a binary release and in source code on GitHub. Please study the project wiki, which includes a [Step by step usage guide](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) that describes how the tool is used.
+For Stage 1, you should use the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools). It allows you to configure hub and scale units in one or two separate one-box environments. The tool is provided as a binary release and in source code on GitHub. Study the project wiki, which includes a [Step by step usage guide](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) that describes how the tool is used.
 
 ### Stage 2: Acquire add-ins and deploy in your sandbox and production environments
 
-To onboard one of your sandbox or production environments to the new topology, you must acquire add-ins for one or more cloud scale units (and in the future also for edge scale units). The add-ins will grant corresponding project and environment slots in [LCS](https://lcs.dynamics.com/) for the purpose of deploying the scale units environments.
+To onboard one of your sandbox or production environments to the new topology, you must acquire add-ins for one or more cloud scale units (and in the future also for edge scale units). The add-ins will grant corresponding project and environment slots in [LCS](https://lcs.dynamics.com/) for deploying the scale units environments.
 
 > [!NOTE]
 > The scale unit add-ins are not coupled to a limited number of users but can be used by any user in the existing subscription, based on the roles the administrator assigns.
 
 Scale units are offered in multiple SKUs and pricing options that you can chose to best match the planned monthly transaction volume and performance requirements.
 
-The entry level SKU is called *Basic*, the more performing model is *Standard*. Each SKU comes loaded with a certain number of monthly transactions. Additional overage add-ins can be added for each to increase the monthly transaction budget.
+The entry level SKU is called *Basic*, the more performing model is *Standard*. Each SKU comes loaded with a specific number of monthly transactions. Additional overage add-ins can be added for each to increase the monthly transaction budget.
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-ins for cloud scale units":::
 
 > [!TIP]
 > To identify the best sizing fit, work with your partner and Microsoft to understand your required monthly transaction size.
 
-The purchase of each scale unit add-ins not only gives you a monthly volume of transactions, but also entitlements for a certain number of environment slots in LCS. For each Cloud Scale unit Add-in, you are entitled to one new production and one new sandbox slot. In the onboarding process, a new LCS projects will be added with these slots. The usage rights for the slots are bound to be used as scale units with a cloud hub.
+The purchase of each scale unit add-in not only gives you a monthly volume of transactions, but also entitlements for a specific number of environment slots in LCS. For each Cloud Scale unit Add-in, you are entitled to one new production and one new sandbox slot. In the onboarding process, a new LCS project will be added with these slots. The usage rights for the slots are bound to be used as scale units with a cloud hub.
 
 Overage add-ins do not entitle new environments slots.
 
@@ -176,7 +176,7 @@ If you wish to acquire more sandbox environments, you can do so by purchasing ad
 
 After you have planned on how to onboard to the distributed hybrid topology for supply chain management, you will use the [Scale Unit Manager portal](https://aka.ms/SCMSUM) to commence the onboarding. In the portal, navigate to the tab **Dynamics 365 Tenants**, where you will find the list of tenants that your account is part of, and where you're an owner or environment admin for an LCS project.
 
-If the tenant that you're looking for isn't in this list, go to [LCS](https://lcs.dynamics.com/v2) and make sure that you're either an environment admin or a project owner of the LCS project for that tenant. Note that only Azure Active Directory (Azure AD) accounts from the selected tenant are authorized to complete the sign-up experience.
+If the tenant that you're looking for isn't in this list, go to [LCS](https://lcs.dynamics.com/v2) and make sure that you're either an environment admin or a project owner of the LCS project for that tenant. Only Azure Active Directory (Azure AD) accounts from the selected tenant are authorized to complete the sign-up experience.
 
 > [!NOTE]
 > After you apply changes to LCS, it might take up to 30 minutes for the list of tenants to reflect the changes.
