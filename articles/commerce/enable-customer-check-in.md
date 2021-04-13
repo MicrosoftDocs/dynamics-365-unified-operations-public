@@ -15,7 +15,7 @@ ms.technology:
 ROBOTS: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer:
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -34,17 +34,17 @@ ms.dyn365.ops.version: 10.0.19
 
 This topic describes how to enable customer check-in notifications in Microsoft Dynamics 365 Commerce point of sale (POS).
 
-Organizations can provide a link or button in "order ready for pickup" emails that lets their customers notify the store that they are on the premises and waiting for their package to be brought out to them. When customers notify the store that they are present, they will receive a check-in confirmation and the store will receive a notification as a task in their point of sale (POS). This task serves as a prompt for a sales associate to deliver the order to the customer's vehicle without the customer having to enter the store.
+Organizations can provide a link or button in "order ready for pickup" emails that lets their customers notify the store that they are on the premises and waiting for their package to be brought out to them. When customers notify the store that they are present, they will receive a check-in confirmation and the store will receive a notification as a task in their POS application. This task serves as a prompt for a sales associate to deliver the order to the customer's vehicle without the customer having to enter the store.
 
-The customer check-in workflow can also be configured to collect additional information from the customer such as parking spot number, automobile make, model and/or color, or delivery instructions that the retail store attendant can use to facilitate order fulfillment.
+The customer check-in workflow can also be configured to collect additional information from the customer such as parking spot number, automobile make/model/color, and delivery instructions that the retail store attendant can use to facilitate order fulfillment.
 
 ## Enable customer check-in
 
-The customer check-in feature is enabled through a feature management switch that generates a stronger order confirmation ID (aka channel reference ID) as well as generating order confirmation IDs for orders created through point of sale (POS) or call center channels. To enable this feature, go to Feature management in headquarters (Workspaces > Feature management) and enable the **Generate a consistent channel reference ID format across channels** feature switch. 
+When the customer check-in feature is enabled, the system generates a stronger order confirmation ID (also known as the channel reference ID) as well as order confirmation IDs for orders created through point of sale (POS) or call center channels. To enable the customer check-in feature, go to **Workspaces \> Feature management** in Commerce headquarters, search for the **Generate a consistent channel reference ID format across channels** feature, and select **Enable now**. 
 
-## Create e-commerce pages
+## Create a check-in confirmation page
 
-You'll create a new page on your e-commerce site that will serve the check-in confirmation experience and if configured, a form for collecting additional information from them to facilitate order fulfillment. See the [Customer check-in module](check-in-pickup-module.md) help topic to learn how to set up the page and module.
+You'll need to create a new page on your e-commerce site that will serve as the check-in confirmation experience. With additional configuration, the page can also include a form for collecting additional information from customers to facilitate order fulfillment. For information on how to set up the page and module, see [Customer check-in module](check-in-pickup-module.md).
 
 ## Set up transactional email template
 
