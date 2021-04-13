@@ -3,8 +3,8 @@
 
 title: Russia overview
 description: This topic provides an overview of functionality that is specific to Russia.
-author: ShylaThompson
-ms.date: 12/11/2020
+author: kfend
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
