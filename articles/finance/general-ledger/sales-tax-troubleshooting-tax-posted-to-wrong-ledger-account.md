@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Tax is posted to wrong ledger account in voucher
-description:
+title: Tax posted to wrong ledger account in voucher
+description: This topic provides troubleshooting information that can help when tax is posted to the wrong ledger account in voucher. 
 author: qire
 manager: beya
-ms.date: 04/01/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,73 +28,67 @@ ms.dyn365.ops.version: 10.0.1
 ---
 
 
-
-# Tax is posted to wrong ledger account in voucher
+# Tax posted to wrong ledger account in voucher
 
 [!include [banner](../includes/banner.md)]
 
-## Symptom
+During posting, tax may be posted to wrong ledger account in voucher. To troubleshoot this issue, follow the steps in the following sections as required. The examples in this topic use a sales order as the business document.
 
-- Tax is posted to wrong ledger account in voucher.
+## Find the tax code of the incorrectly posted tax transaction
 
-## Trouble shooting guide
-
-**Here take sales order as an example.**
-
-- **Step 1: Find the tax code of wrongly posted tax transaction**
-
-- 1. Click posted sales tax button to find the tax code:
+1. On the **Voucher transactions** page, select the transaction you want to work with and then select **Posted sales tax** to find the tax code.
 
      [![Direct taxes (tab)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
 
-  2. In this case, that tax code is VAT19:
+In this example, the tax code is, **VAT 19**.
 
-     [![Direct taxes (tab)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
+   [![Direct taxes (tab)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
 
-- **Step 2: please check the ledger posting group of the tax code**
+## Check the ledger posting group of the tax code
 
-- 1. Go to *Tax -> Indirect taxes -> Sales tax -> Sales tax codes*
-
-  2. Find the specific tax code     and check Ledger posting group. In this example it is "VAT".
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
+2. Find the specific tax code, and find the ledger posting group. In this example, it's **VAT**.
 
      [![Direct taxes (tab)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
 
-  3. To check out the detail configuration, click the "VAT" or right click on the title *Ledger posting group* and click *View details.*
+3. To view the detail configuration, select **VAT**, or right click **Ledger posting group** > **View details**.
 
      [![Direct taxes (tab)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
 
-  4. Check the account number filled according to the transaction type. In this case, the sales tax of sales order should be posted to sales tax payable account 222200. If this is not the expected account, please fill in the right account to post to.(the other account is used for, list)
+4. Verify that the account number in the **Sales tax payable** field is correct according to the transaction type. In this case, the sales tax of the sales order should be posted to sales tax payable account, 222200. If this isn't the expected account, select the correct account to post to.
 
      [![Direct taxes (tab)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
 
-     Details for each field:
-
-     | Sales tax payable       | Main account for  outgoing sales taxes that are payable to the tax authority. Used for Sales  order, Free text invoice and etc. |
+     The followign table provides details for each field.
+     |   Field                 | Description                                                  |
      | ----------------------- | ------------------------------------------------------------ |
-     | Sales tax  receivable   | Main account for incoming taxes that are  received from the tax authority. Used for vendor transactions like Purchase  order. |
-     | Use tax expense         | Main account for  posting deductible Use taxes that are not claimed or reported to the tax  authority by vendors as part of EU reverse charge GST/HST.  (The Use tax  option must be selected for the Sales tax code in the Sales tax group that is  used in the transaction. This field won't be available if the Apply sales tax  taxation rules option is selected on the General ledger parameters page.) |
-     | Use tax payable         | Main account for  posting incoming Use taxes that are payable to tax authorities. |
-     | Settlement account      | Main account that  the net balance of the ledger accounts specified in the Use tax payable and  Sales tax receivable fields will be posted. |
-     | Vendor cash  discount   | main account to  post cash discount for Sales tax codes associated with this Ledger posting  group. |
-     | Customer case  discount | main account to  post cash discount for Sales tax codes associated with this Ledger posting  group |
+     | Sales tax payable       | The main account for outgoing sales taxes that are payable to the tax authority.  |
+     | Sales tax receivable   | The main account for incoming taxes that are  received from the tax authority.  |
+     | Use tax expense         | The ain account for posting deductible use taxes that aren't claimed or reported to the tax authority by vendors as part of EU reverse charge GST/HST. **Use tax** must be selected for the sales tax code in the sales tax group that's used in the transaction. This field isn't available if **Apply sales tax taxation rules** is selected on the **General ledger parameters** page.) |
+     | Use tax payable         | The main account for posting incoming use taxes that are payable to tax authorities. |
+     | Settlement account      | The main account that the net balance of the ledger accounts specified in the **Use tax payable** and **Sales tax receivable** fields will be posted. |
+     | Vendor cash discount   | The main account to post a cash discount for sales tax codes that are associated with this ledger posting  group. |
+     | Customer case discount | The main account to a post cash discount for sales tax codes that are associated with this ledger posting  group. |
 
-     Please find more detail at: https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax
+     For more information, see, [Set up Ledger posting groups for sales tax](tasks/set-up-ledger-posting-groups-sales-tax.md)
 
-- **Step 3: If no issue is found in above steps, debug in code and check whether the     issue is related to ledger dimension.**
+## Debug in code to check ledger dimensions 
 
-  - In code, the account to post to is determined by the ledger dimension. The ledger dimension saved a record ID of an account in databse. We can query the account out by the ledger dimension by below SQL query:
+In the code, the posting account is determined by the ledger dimension. The ledger dimension saves the record ID of an account in the databse. You can query the account by the ledger dimension using the following SQL query:
 
+    ```sql
     select * from DIMENSIONATTRIBUTEVALUECOMBINATION where Recid={the value of _ledgerDimension}
+    ```
 
-  1. For sales order, add breakpoint at Tax::saveAndPost() and Tax::post() methods, and pay     attention to the value of _ledgerDimension.
+1. For a sales order, add a breakpoint at the *Tax::saveAndPost()* and *Tax::post()* methods. Pay attention to the value of *_ledgerDimension*.
 
      [![Direct taxes (tab)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
 
-  2. For purchase order, add breakpoint at TaxPost::saveAndPost() and TaxPost::postToTaxTrans() methods. Similarly, track the value of _ledgerDimension.
+2. For a purchase order, add a breakpoint at the *TaxPost::saveAndPost()* and *TaxPost::postToTaxTrans()* methods. Track the value of *_ledgerDimension*.
 
      [![Direct taxes (tab)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
 
-  3. Query in Database to find the display value of this account by the record ID of _ledgerDimension:
+3. Query in the database to find the display value of this account by the record ID of *_ledgerDimension*.
 
      ```sql
      select * from DIMENSIONATTRIBUTEVALUECOMBINATION where recid={the value of _ledgerDimension}
@@ -102,9 +96,10 @@ ms.dyn365.ops.version: 10.0.1
 
      [![Direct taxes (tab)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
 
-  4. Examine the callstack to find where the _ledgerDimension is assigned. Usually, it's from TmpTaxWorkTrans. In this case add a breakpoint at TmpTaxWorkTrans::insert() and TmpTaxWorkTrans::update() to find where it is assigned.
+4. Examine the callstack to find where the *_ledgerDimension* is assigned. Usually, it's from **TmpTaxWorkTrans**. In this case, add a breakpoint at *TmpTaxWorkTrans::insert()* and *TmpTaxWorkTrans::update()* to find where it is assigned.
 
-- **Step 4: If no issue is found in above steps, check whether customization exists. If not, create a service request to Microsoft for further support.**
+## Determine whether customization exists
+If you've completed the steps in the previous sections but have found no issue, determine whether customization exists. If no customization exists, create a Microsoft service request for further support.
 
 
 
