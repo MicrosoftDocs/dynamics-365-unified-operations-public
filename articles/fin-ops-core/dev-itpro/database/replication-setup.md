@@ -59,37 +59,37 @@ The **Finance and Operations Online Database Migration Toolkit** can be download
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
-<! -- Database replication parameters for an AX 2012 to Microsoft Dynamics 365 for Operations upgrade -->
-<Config>
-     <!-- Edit the properties in this section for your source AX 2012 database -->
-     <SourceDatabase>
-                <Server>SQLINSTANCE\SQLSERVERNAME</Server>
-                <Database>MicrosoftDynamicsAX</Database>
-                <UserName>ReplicationUser</UserName>
-                <Password>********************</Password>
-     </SourceDatabase>
-     <!-- Edit the properties in this section for your target D365 database -->
-     <TargetDatabase>
-                <Server>dbmigration.database.windows.net</Server>
-                <Database>dbms-prod</Database>
-                <UserName>axdbadmin</UserName>
-                <Password>*******************</Password>
-     </TargetDatabase>
-     <!-- Edit the properties in this section for your local SQL replication settings -->
-     <SQLReplicationSettings>
-	<!-- ensure you have enough space in the drive/path -->
-	<SnapShotWorkingDir>D:\SQLServer\SnapShot</SnapShotWorkingDir>
-           <DistributorDBDataFolder>D:\SQLServer\Data</DistributorDBDataFolder>
-           <DistributorLogFolder>D:\SQLServer\Data</DistributorLogFolder>
-           <!-- Based on the systems number of cores we can set but max this value can be 8. Recomended:4 - 8 -->
-           <MaxBCPThreads>4</MaxBCPThreads>
-           <!-- To increases the performance of the replication, based on this value number of PK publisher will get created. This value should be between 1 to 3 -->
-           <NumberOfPublishers>2</NumberOfPublishers>
-           <!-- Ignore DB object xml files, Adding the object in these files will be ignored being replicated -->
-           <IgnoreTablesList>\Data\ignoretables.xml</IgnoreTablesList>
-           <IgnoreFunctionsList>\Data\ignorefunctions.xml</IgnoreFunctionsList>
-     </SQLReplicationSettings>
-</Config>
+	<! -- Database replication parameters for an AX 2012 to Microsoft Dynamics 365 for Operations upgrade -->
+	<Config>
+   	  <!-- Edit the properties in this section for your source AX 2012 database -->
+    	 <SourceDatabase>
+           	     <Server>SQLINSTANCE\SQLSERVERNAME</Server>
+           	     <Database>MicrosoftDynamicsAX</Database>
+              	  <UserName>ReplicationUser</UserName>
+              	  <Password>********************</Password>
+    	 </SourceDatabase>
+    	 <!-- Edit the properties in this section for your target D365 database -->
+    	 <TargetDatabase>
+              	  <Server>dbmigration.database.windows.net</Server>
+             	   <Database>dbms-prod</Database>
+             	   <UserName>axdbadmin</UserName>
+             	   <Password>*******************</Password>
+     	</TargetDatabase>
+    	 <!-- Edit the properties in this section for your local SQL replication settings -->
+     	<SQLReplicationSettings>
+		<!-- ensure you have enough space in the drive/path -->
+		<SnapShotWorkingDir>D:\SQLServer\SnapShot</SnapShotWorkingDir>
+          	 <DistributorDBDataFolder>D:\SQLServer\Data</DistributorDBDataFolder>
+         	  <DistributorLogFolder>D:\SQLServer\Data</DistributorLogFolder>
+         	  <!-- Based on the systems number of cores we can set but max this value can be 8. Recomended:4 - 8 -->
+         	  <MaxBCPThreads>4</MaxBCPThreads>
+         	  <!-- To increases the performance of the replication, based on this value number of PK publisher will get created. This value should be between 1 to 3 -->
+         	  <NumberOfPublishers>2</NumberOfPublishers>
+         	  <!-- Ignore DB object xml files, Adding the object in these files will be ignored being replicated -->
+        	   <IgnoreTablesList>\Data\ignoretables.xml</IgnoreTablesList>
+        	   <IgnoreFunctionsList>\Data\ignorefunctions.xml</IgnoreFunctionsList>
+     	</SQLReplicationSettings>
+	</Config>
     ```
     
 - XML Schema: To ignore selected tables, views, and functions during replication
