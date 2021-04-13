@@ -280,7 +280,7 @@ The following example shows how to configure ER to use the results of financial 
            - Items \> Value \<-\> ParmFieldAmount 
            - Items \> ReportCode \<-\> FinancialReport\_UIP
 
-    ![Binding](media/binding.jpg)
+    ![List of bound fields](media/binding.jpg)
 
 7. Set up the format of the report. For more derails on how to add a new format congfiguration, see [ER Create a format configuration]( ../../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md). 
 
