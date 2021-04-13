@@ -117,7 +117,7 @@ The **Totals** tab shows the number of operations and the total amounts of purch
 
 6.  Select **Transactions** to review and modify the information for the aggregated customer transactions and vendor transactions before you generate the report as an ASCII file.
 
-![Transactions page](media/2_Transactions.png)
+![Transactions page, Overview tab](media/2_Transactions.png)
 
 7.  On the **Transactions** page, on the **General** tab, review the following fields.
 
