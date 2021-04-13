@@ -18,7 +18,7 @@ ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: riluan
+ms.author: pacheren
 ms.search.validFrom: 2018-10-07
 ms.dyn365.ops.version: 7.3
 
@@ -128,7 +128,7 @@ If the static applicability rules are complex, or it is a dynamic applicability 
 ### Lookup for static applicability rules
 Select **GST**, click **Lookups**.
 
-![CGST condition](media/gte-tax-document-applicability-static-lookups.png)
+![CGST condition for lookups](media/gte-tax-document-applicability-static-lookups.png)
 
 Because a lookup can handle both static applicability rules and dynamic applicability rules, the **Source type** drop-down list is for this purpose. Use **Configuration** for the static applicability rule, which means that the data used in the lookup comes from the configuration. Use **User data** for the dynamic applicability rule, which means that the data used in the lookup comes from the runtime environment.
 
