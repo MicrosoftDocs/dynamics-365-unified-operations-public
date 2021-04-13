@@ -45,7 +45,7 @@ Tax Calculation is a microservice-based tax engine that offers exponential scala
 - Configure the tax calculation designer to define formulas and conditions.
 - Share the tax determination and calculation solution across legal entities.
 
-To use Tax Calculation, install it from your project in Microsoft Dynamics Lifecycle Services (LCS). Then complete the setup in RCS, and enable the Tax Calculation capability in Finance and Supply Chain Management. For more information, see [Get started with tax service](https://go.microsoft.com/fwlink/?linkid=2138482).
+To use the tax calculation service, install the tax calculation service add-in from your project in Microsoft Dynamics Lifecycle Services (LCS). Then complete the setup in RCS, and enable the tax calculation service in Finance and Supply Chain Management. For more information, see [Get started with tax service](./global-get-started-with-tax-calculation-service.md).
 
 ## Availability
 
@@ -109,10 +109,10 @@ Tax Calculation can be enabled by legal entity and transaction. The following tr
 
 ## Related resources
 
-[Get started with tax service](https://go.microsoft.com/fwlink/?linkid=2138482)
+[Get started with tax service](./global-get-started-with-tax-calculation-service.md)
 
-[Multiple VAT registration number](https://go.microsoft.com/fwlink/?linkid=2153387)
+[Multiple VAT registration number](./emea-multiple-vat-registration-numbers.md)
 
-[Tax feature support for transfer order](https://go.microsoft.com/fwlink/?linkid=2153388)
+[Tax feature support for transfer order](./tasks/tax-feature-support-for-transfer-order.md)
 
-[How to build extension in tax service](https://go.microsoft.com/fwlink/?linkid=2138483)
+[How to build extension in tax service](./tax-service-add-data-fields-tax-integration-by-extension.md)
