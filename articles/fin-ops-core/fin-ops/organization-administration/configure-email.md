@@ -284,7 +284,7 @@ Users that are external to the primary tenant will not have exchange accounts on
 
 ## Other notes
 
-The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#RecipientLimits) apply.
+The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) apply.
 
 ## Troubleshooting
 
