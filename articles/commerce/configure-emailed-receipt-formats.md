@@ -44,8 +44,10 @@ To enable additional email receipt formats, you must add them and map them to a 
 The following table shows the receipt formats that can be emailed as of the Commerce version 10.0.18 release.
 
 | Receipt format | Receipt type                                  |
-|----------------|-----------------------------------------------|
+| -------------- | --------------------------------------------- |
 | 1              | Sales receipt                                 |
+| 3              | Customer's credit card receipt                |
+| 5              | Customer's credit card receipt for returns    |
 | 8              | Customer account receipt                      |
 | 10             | Customer account return receipt               |
 | 14             | Product sale                                  |
@@ -128,6 +130,7 @@ On the **Receipt format** page (**Retail and Commerce \> Channel setup \> POS se
 - **Prompt user** – Prompt cashiers to ask customers whether they want to receive a receipt by email and, if they do, what email address the receipt should be sent to.
 
 > [!NOTE]
+> - The Gift card inquiry receipt does not use Commerce parameters or the Customer profile for configuration. This receipt is enabled by by setting Email behavior to Prompt user or Always email in its Receipt format, and disabled by setting the Email behavior to Do not email. 
 > - By default, if a receipt format can't be emailed, its **Email behavior** field is set to **Do not email**, and the value can't be changed.
 > - If a receipt format can be emailed, it can always be emailed from the journal, regardless of the settings on the **Commerce parameters**, **Customer profile**, and **Receipt format** pages.
 
