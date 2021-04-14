@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.18
 
 # The weight fields on load lines do not match the weight fields on load
 
-Error codes: WHSLoadWeightOnLinesDoNotMatchLoadWarning, WAX1967, WHSShipConfirm, WHSLoadWeightOnLinesDoNotMatchLoadWarning
+Error codes: WHSLoadWeightOnLinesDoNotMatchLoadWarning
 
 The system displays the following error message:
 
