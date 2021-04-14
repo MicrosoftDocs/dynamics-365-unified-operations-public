@@ -65,7 +65,7 @@ For more information about configuring email templates, see [Customize transacti
 
 ## Check-in confirmation task created in POS
 
-After a customer notifies a store that they are present for pickup and receives a check-in confirmation, a task is created in the tasks list in POS for the store where they're picking up the order. The task contains all the necessary customer and order information needed to fulfill the order. Any information collected from the customer in the additional information screen will be displayed in the instructions field within the task. 
+After a customer notifies a store that they are present for pickup and receives a check-in confirmation notification, a task is created in the tasks list in POS for the store where they're picking up the order. The task contains all the necessary customer and order information needed to fulfill the order. Any information collected from the customer in the additional information screen will be displayed in the instructions field within the task. 
 
 ## Additional resources
 
