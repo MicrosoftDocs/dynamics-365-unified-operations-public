@@ -1,6 +1,6 @@
 ---
-title: Create a new LTL class
-description: This topic describes how to create a new LTL class in Dynamics 365 Supply Chain Management. 
+title: LTL classes
+description: This topic describes what less thant truckload (LTL) classes are and how to set them up in Dynamics 365 Supply Chain Management. 
 author: Henrikan
 ms.date: 04/05/2021
 ms.topic: article
@@ -13,11 +13,11 @@ ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
 ---
 
-# Set up an LTL class
+# LTL classes
 
 [!include [banner](../includes/banner.md)]
 
-A less thant truckload (LTL) class is a freight shipping class used to classify items that can be shipped. Generally, every type of product or commodity has a National Motor Freight Classification (NMFC), which corresponds to a specific freight class number for LTL shipments. The LTL freight class represents a category of items while NMFC codes relate to specific commodities within each of the 18 freight classes.
+A less than truckload (LTL) class is a freight shipping class used to classify items that can be shipped. Generally, every type of product or commodity has a National Motor Freight Classification (NMFC), which corresponds to a specific freight class number for LTL shipments. The LTL freight class represents a category of items while NMFC codes relate to specific commodities within each of the 18 freight classes.
 
 This feature can help you to:
 
