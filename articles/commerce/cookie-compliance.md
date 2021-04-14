@@ -55,8 +55,8 @@ The following table shows the current reference list of cookies placed by Dynami
 | x-ms-cpim-slice                             | Used to route requests to the appropriate production authentication server instance. |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        |
 | x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. |
-|_msdyn365___muid_                            | Used if Experimentation is activated for the environment; utilized as a userId for Experimentation purposes. |
-|_msdyn365___exp_                             | Used if Experimentation is activated for the environment; used to measure performance load balancing         |
+| \_msdyn365___muid_                            | Used if Experimentation is activated for the environment; utilized as a userId for Experimentation purposes. |
+| \_msdyn365___exp_                             | Used if Experimentation is activated for the environment; used to measure performance load balancing.         |
 
 
 
@@ -65,17 +65,17 @@ If a site user selects any social media links within a site, the cookies in the 
 
 | Domain                      | Cookie Name              | Description                                                  | Source                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| linkedin.com                | UserMatchHistory         | LinkedIn Ads ID syncing                                      | LinkedIn Feed and Insight tag                                |
+| .linkedin.com                | UserMatchHistory         | LinkedIn Ads ID syncing                                      | LinkedIn Feed and Insight tag                                |
 | .linkedin.com               | li_sugr                  | Browser identifier                                           | LinkedIn Insight tag, when IP address is not in a designated country |
 | .linkedin.com               | BizographicsOptOut       | Determines opt-out status for third-party tracking.              | LinkedIn guest controls and industry opt-out pages           |
 | .linkedin.com               | \_guid                    | Browser identifier for Google Ads.                            | LinkedIn Feed                                                |
 | .linkedin.com               | li_oatml                 | Member indirect identifier for conversion tracking, retargeting, analytics. | LinkedIn Ads and Insight tags                                |
-| Various, first party domain | li_fat_id                | Member indirect identifier for conversion tracking, retargeting, analytics. | LinkedIn Ads and Insight tags                                |
+| Various first-party domains | li_fat_id                | Member indirect identifier for conversion tracking, retargeting, analytics. | LinkedIn Ads and Insight tags                                |
 | .adsymptotic.com            | U                        | Browser identifier                                           | LinkedIn Insight tag, when IP address is not in a Designated Country |
-| linkedin.com                | bcookie                  | Browser ID cookie                                            | Requests to LinkedIn                                         |
-| linkedin.com                | bscookie                 | Secure browser cookie                                        | Requests to LinkedIn                                         |
+| .linkedin.com                | bcookie                  | Browser ID cookie                                            | Requests to LinkedIn                                         |
+| .linkedin.com                | bscookie                 | Secure browser cookie                                        | Requests to LinkedIn                                         |
 | .linkedin.com               | lang                     | Sets default locale and language.                                 | Requests to LinkedIn                                         |
-| Linkedin.com                | lidc                     | Used for routing.                                             | Requests to LinkedIn                                         |
+| .linkedin.com                | lidc                     | Used for routing.                                             | Requests to LinkedIn                                         |
 | .linkedin.com               | aam_uuid                 | Adobe audience manager cookie                                                     | Set for ID sync                                              |
 | .linkedin.com               | \_ga                      | Google Analytics cookie                                            | Google Analytics                                             |
 | .linkedin.com               | \_gat                     | Google Analytics cookie                                             | Google Analytics                                             |
