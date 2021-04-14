@@ -4,11 +4,9 @@
 title: Generate consolidated financial statements
 description: This topic describes the various scenarios where you might generate consolidated financial statements.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,7 +40,7 @@ The simplest method for consolidating by using Financial reporting is to use rep
 3. Create a reporting tree that includes a reporting node for each company that you're using on consolidated reports.
 
 > [!TIP]
-> For more information about how to create and manage row definitions, column definitions, and reporting trees, see [Financial report components](../../dev-itpro/analytics/financial-report-components.md).
+> For more information about how to create and manage row definitions, column definitions, and reporting trees, see [Financial report components](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md).
 
 The following illustration shows how you can use a reporting tree definition in Financial reporting to identify each company that you will consolidate.
 

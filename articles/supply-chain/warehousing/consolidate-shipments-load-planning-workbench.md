@@ -4,11 +4,9 @@
 title: Consolidate shipments by using Release to warehouse from the load planning workbench
 description: This topic presents a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata

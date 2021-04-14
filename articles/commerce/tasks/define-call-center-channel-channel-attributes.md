@@ -4,11 +4,9 @@
 title: Create call center channels and define channel attributes
 description: This procedure walks through creating a new channel and defining channel attributes. 
 author: mugunthanm
-manager: AnnBe 
 ms.date: 05/22/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 

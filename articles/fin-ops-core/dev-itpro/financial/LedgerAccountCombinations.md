@@ -4,11 +4,9 @@
 title: Ledger account combinations
 description: This topic provides information about combinations of ledger accounts in the dimension framework.
 author: jasonsto
-manager: jdinham
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

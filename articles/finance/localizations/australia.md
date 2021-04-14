@@ -3,12 +3,10 @@
 
 title: Australia overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Australia.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 07/25/2019
+author: kfend
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,12 +47,12 @@ The names of the Australian banks and the file formats that they accept for elec
 Australian businesses report taxation obligations to the Australian Tax Office using the Business activity statement (BAS). For more information about the business activity statement feature, see [Business activity statement](apac-aus-business-activity-statement.md).
 
 ## Low-value pool depreciation
-Australia uses a low-value pool depreciation method that allows low-cost and low-value assets to be allocated to a low-value pool if the cost or opening adjustable value is less than a specified amount. For more information, see [Low-value pool depreciation](apac-aus-low-value-pool-depreciation.md).
+Australia uses a low-value pool depreciation method. This method allows the allocation of low-cost and low-value assets to a low-value pool if the cost or opening adjustable value is less than a specified amount. For more information, see [Low-value pool depreciation](apac-aus-low-value-pool-depreciation.md).
 
 ## Additional resources
 
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics Localization Portal: Australia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Australia.html)
 
 

@@ -4,11 +4,9 @@
 title: Embed images and shapes in documents that you generate by using ER
 description: This topic explains how to use the Electronic reporting tool to generate business documents that have embedded images and shapes.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

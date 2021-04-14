@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: Access data by using the SysDa classes
 description: This topic explains how to create extensible queries and data access statements by using the SysDa application programming interface (API). 
 author: RobinARH
-manager: AnnBe
 ms.date: 06/24/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 72211
-ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0

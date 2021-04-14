@@ -4,11 +4,9 @@
 title: Declaration 347 report
 description: This topic provides information about how to generate the Declaration 347 report that is available to legal entities that have their primary address in Spain.
 author: Anasyash
-manager: AnnBe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -67,7 +65,7 @@ The following prerequisites must be set up before you begin to work with the Dec
     -   Declaration 347 export format (ES)
     -   Declaration 347 report format (ES)
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Cash ledger accounts**.
 3.  On the **Cash ledger accounts** page, specify the cash ledger accounts that are required for the Declaration 347.
@@ -119,7 +117,7 @@ The **Totals** tab shows the number of operations and the total amounts of purch
 
 6.  Select **Transactions** to review and modify the information for the aggregated customer transactions and vendor transactions before you generate the report as an ASCII file.
 
-![Transactions page](media/2_Transactions.png)
+![Transactions page, Overview tab](media/2_Transactions.png)
 
 7.  On the **Transactions** page, on the **General** tab, review the following fields.
 

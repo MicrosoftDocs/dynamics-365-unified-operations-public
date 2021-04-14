@@ -4,11 +4,9 @@
 title: What's new or changed in Platform update 32 for Finance and Operations apps (February 2020)
 description: This topic lists the features that are in preview in Platform update 32 for Finance and Operations apps. 
 author: sericks007
-manager: AnnBe
 ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

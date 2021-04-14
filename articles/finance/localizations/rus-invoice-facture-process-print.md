@@ -3,11 +3,9 @@
 title: Invoice factures processing and printing
 description: This topic provides information about working with invoice factures.
 author: anasyash
-manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

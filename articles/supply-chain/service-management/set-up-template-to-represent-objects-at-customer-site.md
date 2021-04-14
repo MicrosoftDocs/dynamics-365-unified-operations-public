@@ -4,11 +4,9 @@
 title: Set up template to represent objects at customer site 
 description: Set up template to represent objects at customer site.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

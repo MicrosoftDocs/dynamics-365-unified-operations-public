@@ -4,11 +4,9 @@
 title: Tax invoice for goods delivered for free
 description: This topic provides information about tax invoices for goods that were delivered for free.
 author: ilkond
-manager: AnnBe
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,7 +43,7 @@ The delivery reason on the invoice determines which case you use.
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Tax invoice for goods delivered for free** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Tax invoice for goods delivered for free** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up the summary update parameters
 

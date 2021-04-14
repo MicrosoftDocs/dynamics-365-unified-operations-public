@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Testing and validations
 description: This tutorial shows you how to create and run test cases.
 author: jorisdg
-manager: AnnBe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

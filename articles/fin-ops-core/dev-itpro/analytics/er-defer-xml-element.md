@@ -4,11 +4,9 @@
 title: Defer the execution of XML elements in ER formats
 description: This topic explains how to defer the execution of an XML element in an Electronic reporting (ER) format.
 author: NickSelin
-manager: kfend
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -51,7 +49,7 @@ The **Deferred execution** option isn't supported for XML elements that reside i
 
 ## <a name="Example"></a>Example: Defer the execution of an XML element in an ER format
 
-The following steps explain how a user in the System administrator or Electronic reporting functional consultant [role](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) can configure an ER format that contains an XML element where the order of execution differs from the order in the format hierarchy.
+The following steps explain how a user in the System administrator or Electronic reporting functional consultant [role](../sysadmin/tasks/assign-users-security-roles.md) can configure an ER format that contains an XML element where the order of execution differs from the order in the format hierarchy.
 
 These steps can be performed in the **USMF** company in Microsoft Dynamics 365 Finance.
 

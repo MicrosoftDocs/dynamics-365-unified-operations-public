@@ -4,11 +4,9 @@
 title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
-manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -112,7 +110,7 @@ An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip p
 Run the following scripts against the database (not against the Financial reporting database):
 
 - DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
-- DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql
+- DataUpgrade.zip\\AosService\\Scripts\\GrantAxViewChangeTracking.sql
 
 These scripts help guarantee that the users, roles, and change tracking settings are correct.
 
@@ -695,7 +693,7 @@ First, follow these steps to export the report designs from Report designer.
 You can copy or upload the file to a secure location.
 
 > [!WARNING]
-> Be aware of the behavior of drive D on Microsoft Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+> Be aware of the behavior of drive D on Microsoft Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](/archive/blogs/mast/understanding-the-temporary-drive-on-windows-azure-virtual-machines).
 
 ### Import report definitions
 

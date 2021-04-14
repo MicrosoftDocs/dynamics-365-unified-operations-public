@@ -4,11 +4,9 @@
 title: Create lump-sum depreciation assets using equally divided method
 description: In Japan, 3 types of fixed assets are depreciated with equal amount in each year of its service life. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

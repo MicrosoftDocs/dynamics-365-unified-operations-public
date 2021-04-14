@@ -4,11 +4,9 @@
 title: Manage activation accounts and validate devices
 description: This topic explains how an IT Pro can set up Commerce activation accounts for workers to activate Modern POS or Cloud POS devices.
 author: athinesh99
-manager: AnnBe
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

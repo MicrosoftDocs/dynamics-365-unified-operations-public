@@ -4,11 +4,9 @@
 title: Fixed asset mass update
 description: If you use books, you can change the depreciation conventions for groups of assets that are part of the same book.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

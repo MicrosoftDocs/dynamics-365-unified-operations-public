@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.6 (November 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.6. 
 author: josaw1
-manager: tfehr
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

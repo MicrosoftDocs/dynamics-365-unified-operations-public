@@ -4,16 +4,14 @@
 title: Purchase requisitions
 description: This topic describes how purchase requisitions are supported in Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: ReqCreatePlanWorkspace
+ms.search.form: ReqPlanSched, ReqGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -47,7 +45,7 @@ The *approved requisitions time fence* establishes how far back (in days) a mast
 
 ### Set the approved requisitions time fence for a coverage group
 
-1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage group**.
+1. Go to **Master planning** \> **Setup** \> **Coverage** \> **Coverage groups**.
 1. Create or select a coverage group.
 1. On the **Other** FastTab, set the **Approved requisitions time fence (days)** field to the number of days to include in the time fence.
 1. Repeat steps 2 and 3 for each additional coverage group where you want to set an approved requisitions time fence.

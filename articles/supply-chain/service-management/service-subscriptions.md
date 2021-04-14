@@ -4,11 +4,9 @@
 title: Service subscriptions
 description: Subscriptions are based on a time-and-materials project. You can create subscriptions from a project, from the Service subscriptions page, or by using a service subscription group.
 author: ShylaThompson
-manager: tfehr
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

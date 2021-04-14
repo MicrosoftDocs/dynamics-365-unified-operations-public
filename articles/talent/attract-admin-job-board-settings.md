@@ -4,11 +4,9 @@
 title: Enable Broadbean integration in Attract
 description: This topic explains how to configure Microsoft Dynamics 365 Talent - Attract to post jobs to external job boards such as Broadbean.
 author: andreabichsel
-manager: tfehr
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -36,9 +34,9 @@ ms.dyn365.ops.version: Talent October 2018 update
 You want to get your open positions in front of as many qualified candidates as possible. Recruiting sites such as Broadbean help you accomplish this goal. Microsoft Dynamics 365 Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.
 
 > [!NOTE]
-> - To post jobs to external sites, you must have the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - To post jobs to external sites, you must have the [Comprehensive hiring add-on](/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 > - To post jobs to Broadbean through Attract, you must have a Broadbean subscription.
-> - This feature is currently in preview. If you want to try it, you must [turn it on in the Attract admin settings](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
+> - This feature is currently in preview. If you want to try it, you must [turn it on in the Attract admin settings](/dynamics365/unified-operations/talent/access-preview-feature).
 
 ## Configure Broadbean integration
 

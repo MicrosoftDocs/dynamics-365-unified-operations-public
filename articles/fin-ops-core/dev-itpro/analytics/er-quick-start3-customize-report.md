@@ -4,11 +4,9 @@
 title: Customize Electronic reporting configurations to generate an electronic document
 description: This topic explains how to customize the Microsoft-provided Electronic reporting (ER) configurations that are used to generate a custom electronic document.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -674,8 +672,8 @@ The status of version 32.6.7.2 is changed from **Draft** to **Completed**, and t
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Download ER configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Download ER configurations from Global repository of Configuration service](er-download-configurations-global-repo.md)
-- [Create a free text invoice](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
-- [Create and work with custom fields](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+- [Create a free text invoice](../../../finance/accounts-receivable/create-free-text-invoice-new.md)
+- [Create and work with custom fields](../../fin-ops/get-started/user-defined-fields.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

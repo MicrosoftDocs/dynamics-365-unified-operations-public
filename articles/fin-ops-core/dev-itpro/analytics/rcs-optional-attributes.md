@@ -4,11 +4,9 @@
 title: Import files in XML format with optional attributes
 description: This topic provides information about designing ER formats which specify XML attributes to parse incoming electronic documents in XML format.
 author: NickSelin
-manager: AnnBe
 ms.date: 07/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

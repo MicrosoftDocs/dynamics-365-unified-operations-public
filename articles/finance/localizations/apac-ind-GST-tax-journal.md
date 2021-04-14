@@ -4,11 +4,9 @@
 title: Create a tax journal
 description: This topic explains how to create a tax journal.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata

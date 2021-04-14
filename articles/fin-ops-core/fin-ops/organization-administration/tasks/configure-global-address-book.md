@@ -4,11 +4,9 @@
 title: Configure the global address book
 description: Use this procedure to set the default values and security policies for the global address book. 
 author: msftbrking 
-manager: AnnBe 
 ms.date: 07/23/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

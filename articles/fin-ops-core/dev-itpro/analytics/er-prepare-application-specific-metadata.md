@@ -4,11 +4,9 @@
 title: Prepare application-specific metadata for RCS and ER
 description: This topic explains how to prepare application-specific metadata for Regulatory configuration service (RCS) and Electronic reporting (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

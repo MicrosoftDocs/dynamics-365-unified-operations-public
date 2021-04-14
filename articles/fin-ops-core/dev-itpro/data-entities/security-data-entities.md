@@ -4,11 +4,9 @@
 title: Security and data entities
 description: This topic provides information about security for data entities.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

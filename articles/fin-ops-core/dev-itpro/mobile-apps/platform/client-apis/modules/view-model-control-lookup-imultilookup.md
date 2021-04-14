@@ -3,11 +3,9 @@
 title: Multi-Lookup module
 description: Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:

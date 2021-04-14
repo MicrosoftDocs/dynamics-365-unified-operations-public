@@ -4,11 +4,9 @@
 title: Deployment guidelines for cash registers for Norway
 description: This topic is a deployment guide for the Commerce localization for Norway.
 author: AlexChern0v
-manager: olegkl
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

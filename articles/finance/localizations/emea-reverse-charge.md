@@ -4,11 +4,9 @@
 title: Reverse charge mechanism for VAT/GST scheme
 description: This topic explains how to set up the reverse charge value-added tax (VAT) for European countries, Saudi Arabia, and Singapore.
 author: epodkolz 
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

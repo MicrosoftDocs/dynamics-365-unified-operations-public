@@ -4,11 +4,9 @@
 title: Create cover and signature pages for a payments report for the public sector
 description: When you create cover and signature pages for a payment report, you can specify what information should appear. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

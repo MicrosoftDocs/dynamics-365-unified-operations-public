@@ -4,11 +4,9 @@
 title: Dynamics 365 Finance operated by 21Vianet in China and Dynamics 365 Supply Chain Management operated by 21Vianet in China 
 description: This topic provides information about Dynamics 365 Finance and Dynamics 365 Supply Chain Management - operated by 21Vianet in China.
 author: kfend
-manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

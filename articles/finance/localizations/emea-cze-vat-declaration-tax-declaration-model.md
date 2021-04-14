@@ -4,11 +4,9 @@
 title: VAT declaration (Czech Republic)
 description: This topic provides information about the value-added tax (VAT) declaration for the Czech Republic. 
 author: anasyash
-manager: AnnBe
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -326,7 +324,7 @@ To begin to work with the VAT declaration, you should download electronic report
 - **VAT declaration Excel (CZ)** – This configuration can be used to preview VAT declaration amounts in Microsoft Excel. Be aware that the Excel template is in English only. If the report must be printed in another language, you must do a small customization to translate the Excel template into another language, and you must attach this customization to your derived configuration.
 - **VAT control statement (CZ)** – This configuration is in XML format DPHKH1.
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Set up application-specific parameters for formats
 

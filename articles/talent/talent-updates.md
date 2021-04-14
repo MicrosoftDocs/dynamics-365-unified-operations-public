@@ -4,11 +4,9 @@
 title: Talent updates
 description: This article provides information about the release process and cadence for Microsoft Dynamics 365 Talent.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -42,7 +40,7 @@ Updates are released on a regular cadence to all environments. Talent is support
 
 Talent updates are applied to all environments automatically. Talent provides two types of releases:
 
-- **Service updates**: Weekly updates that include bug fixes and new features. Service updates also include applicable Platform updates when they release. To get an idea of when Platform updates are released, see [Table 3: Platform releases](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Weekly updates usually release on Wednesdays. For more information about weekly updates, see [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new).
+- **Service updates**: Weekly updates that include bug fixes and new features. Service updates also include applicable Platform updates when they release. To get an idea of when Platform updates are released, see [Table 3: Platform releases](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Weekly updates usually release on Wednesdays. For more information about weekly updates, see [What's new or changed in Dynamics 365 Talent](./whats-new.md).
 
     All supported data centers update weekly, unless otherwise noted. Weekly updates typically begin on Wednesday and complete by Sunday. US, Australia, Europe, UK, Asia, and Canada regions are included in weekly updates. 
 
@@ -89,11 +87,11 @@ You can find out what's in the works for Talent and what we've released in the f
 
 - [Dynamics 365 Talent roadmap](https://dynamics.microsoft.com/roadmap/talent/)
 
-- [Dynamics 365 Release Plans](https://docs.microsoft.com/dynamics365/release-plans/)
+- [Dynamics 365 Release Plans](/dynamics365/release-plans/)
 
-- [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new)
+- [What's new or changed in Dynamics 365 Talent](./whats-new.md)
 
-- [Issue search in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (for Platform-related bugs only)
+- [Issue search in Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (for Platform-related bugs only)
 
 - [Talent blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -101,7 +99,7 @@ You can find out what's in the works for Talent and what we've released in the f
 
 ## Preview features in a sandbox environment
 
-You can validate preview features in a sandbox environment before enabling them in your production environment. For more information about enabling features, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+You can validate preview features in a sandbox environment before enabling them in your production environment. For more information about enabling features, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the Feature management workspace, you can turn them on. Some features may be on by default.
 
@@ -111,7 +109,7 @@ Once a feature is generally available, it may be turned on or off in production 
 
 We highly recommend previewing features in a sandbox or trial environment. It's best to create a copy of your current production environment or database into a sandbox environment so you can get the complete experience of the new features with your data.
 
-For more information about provisioning a sandbox environment, see [Provision a Talent project](provisioning-talent.md#provision-a-talent-project). To remove a test environment, see [Removing a test drive environment](remove-talent-environment.md#removing-a-test-drive-environment). 
+For more information about provisioning a sandbox environment, see [Provision a Talent project](provisioning-talent.md#provision-a-talent-project). To remove a test environment, see [Removing a test drive environment](../human-resources/hr-admin-setup-remove-instance.md#remove-a-test-drive-environment). 
 
 ## Report bugs
 
@@ -119,9 +117,9 @@ While testing preview features or trying new capabilities, you might find items 
 
 ## See also
 
-- [Dynamics 365 and Power Platform Release Plans](https://docs.microsoft.com/dynamics365/release-plans)
-- [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new)
-- [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+- [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans)
+- [What's new or changed in Dynamics 365 Talent](./whats-new.md)
+- [Software lifecycle policy](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

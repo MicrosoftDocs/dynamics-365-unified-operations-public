@@ -4,11 +4,9 @@
 title: Create and transfer transactions to the BLWI (Belgium)
 description: This procedure walks you through creating BLWI report for the Belgium. 
 author: v-oloski
-manager: AnnBe 
 ms.date: 07/12/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

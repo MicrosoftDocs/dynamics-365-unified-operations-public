@@ -4,11 +4,9 @@
 title: Set up prerequisites for nonconformance management
 description: Use this topic to enable nonconformance management processes. 
 author: perlynne
-manager: tfehr 
 ms.date: 08/19/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Mock the signed-in state during local development
 description: This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 author: samjarawan
-manager: annbe
-ms.date: 11/18/2020
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -110,7 +108,7 @@ From the examples above, you have now obtained the following information:
 ### Configure scope and register the native application
 
 1.	In the Azure AD B2C settings, go to **App registrations**.
-1.	Open the application created above which is currently being used by the e-Commerce rendering application.
+1.	Open the application that is currently being used by the e-commerce rendering application. In the Azure portal, this is the application whose client ID is used in the Azure AD B2C configuration for your site. If Azure AD B2C is already configured, the application ID used for your e-commerce site can be found in Commerce headquarters at **Commerce Shared Parameters \> Identity Providers** in the **ClientId** field under **Relying Parties**. The application ID can also be found in Commerce site builder at **Tenant Settings \> B2C Settings** as the **Client GUID** within the B2C application configuration used for your site.
 1.	In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one does not exist, select **Add a scope** to create one. When prompted for an **Application ID URI**, leave the application ID URI as is and then add "user_impersonation" for the **Scope name**. Then enter friendly values for **Admin consent display name** and **Admin consent description**.
 
     ![Expose an API](media/local-sign-in-04.png)

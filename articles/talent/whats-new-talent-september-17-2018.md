@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent - Core HR (September 17, 2018)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for September 17, 2018.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/17/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -54,7 +52,7 @@ Platform update 18 for Finance and Operations is now part of the Talent release.
     -   Headings in workspaces and pages are bold.
 
 -   The behavior of non-replacing lookups has been improved. For more information, see [Improved behavior for non-replacing
-    lookups](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/non-replacing-lookups).
+    lookups](/business-applications-release-notes/October18/dynamics365-finance-operations/non-replacing-lookups).
 
 ## Bug fixes
 

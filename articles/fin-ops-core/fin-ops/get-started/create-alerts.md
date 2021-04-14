@@ -2,13 +2,11 @@
 # required metadata
 
 title: Create alert rules
-description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
-author: tjvass
-manager: AnnBe
+description: This topic provides information about alerts and explains how to create an alert rule.
+author: RichdiMSFT
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -22,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---
@@ -107,6 +105,8 @@ You can't create alerts for some secondary data sources on forms. For example, w
 	```
 2. Create an alert from the SysTableBrowser form.
 
+### Change based alerts do not work for batch status changes
+Change based Alerts does not work with batch status changes because it is turned off for performance reasons. Instead, you should set up the **Batch alerts** capability. For more information, see [Set up alerts for batch enhanced forms](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/alerts#set-up-alerts-for-batch-enhanced-forms).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

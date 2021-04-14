@@ -4,11 +4,9 @@
 title: Standard payroll reports
 description: This topic describes the standard payroll reports that are provided to help you with payroll processing and government reporting. 
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

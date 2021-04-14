@@ -4,11 +4,9 @@
 title: Provision a Dynamics 365 Commerce evaluation environment
 description: This topic explains how to provision a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
-manager: annbe
 ms.date: 12/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -38,8 +36,6 @@ Before you begin, we recommend that you take a quick scan through this topic to 
 
 > [!NOTE]
 > Commerce evaluation environments aren't generally available, and are granted to partners and customers on a per-request basis. For more information, reach out to your Microsoft partner contact.
-
-## Overview
 
 To successfully provision a Commerce evaluation environment, you must create a project that has a specific product name and type. The environment and Commerce Scale Unit (CSU) also have some specific parameters that you must use when you expect to provision e-Commerce later. The instructions in this topic describe all the steps that are required to complete provisioning and the parameters that you must use.
 

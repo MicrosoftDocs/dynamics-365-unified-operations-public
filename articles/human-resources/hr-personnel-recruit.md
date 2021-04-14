@@ -4,11 +4,9 @@
 title: Recruit job candidates
 description: This topic shows how to recruit candidates in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 12/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 # Recruit job candidates
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [banner](includes/preview-feature.md)]
 
 Dynamics 365 Human Resources helps you to manage recruiting requests. It also helps you seamlessly transition job candidates to employees. If your organization uses a separate recruiting application, your recruiting process might include the following steps:
 

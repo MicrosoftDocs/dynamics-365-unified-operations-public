@@ -4,11 +4,9 @@
 title: Wave step codes
 description: This topic provides an overview of wave step codes and how they are used.
 author: josaw1
-manager: tfehr
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

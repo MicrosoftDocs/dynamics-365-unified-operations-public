@@ -4,11 +4,9 @@
 title: Close Accounts receivable
 description: The following topic lists the pages that support the close Accounts receivable business process.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

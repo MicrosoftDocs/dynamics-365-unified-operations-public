@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.10 (May 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.10. 
 author: josaw1
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

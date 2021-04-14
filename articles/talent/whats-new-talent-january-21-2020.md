@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (January 21, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for January 21, 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -42,11 +40,11 @@ This release includes minor bug fixes for Dynamics 365 Talent: Attract. We've ad
 
 ### Download environment data
 
-Administrators can download their environment’s data. The data is exported in standard JSON format with all the jobs, candidates, and configuration exported in a zip file. For more information, see [Export data from Attract and Onboard](https://docs.microsoft.com/dynamics365/talent/attract-onboard-export-data).
+Administrators can download their environment’s data. The data is exported in standard JSON format with all the jobs, candidates, and configuration exported in a zip file. For more information, see [Export data from Attract and Onboard](./attract-onboard-export-data.md).
 
 ### Restricting access to environments for non-admin users
 
-Administrators can now restrict access to the environment for non-admin users. This action can't be undone. For more information, see [Restrict access to Attract](https://docs.microsoft.com/dynamics365/talent/attract-onboard-export-data#restrict-access-to-attract).
+Administrators can now restrict access to the environment for non-admin users. This action can't be undone. For more information, see [Restrict access to Attract](./attract-onboard-export-data.md#restrict-access-to-attract).
 
 ## Changes in Onboard
 
@@ -54,7 +52,7 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ### Exporting onboarding guides
 
-Users can now export all of their onboarding guides and onboarding templates in Word document format. For more information, see [Export data from Attract and Onboard](https://docs.microsoft.com/dynamics365/talent/attract-onboard-export-data).
+Users can now export all of their onboarding guides and onboarding templates in Word document format. For more information, see [Export data from Attract and Onboard](./attract-onboard-export-data.md).
 
 ## Changes in Core HR
 

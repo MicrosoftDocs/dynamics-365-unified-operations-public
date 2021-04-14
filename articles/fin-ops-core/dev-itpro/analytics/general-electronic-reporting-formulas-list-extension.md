@@ -4,11 +4,9 @@
 title: Extend the list of Electronic reporting (ER) functions
 description: This article includes an overview of key tasks that you must complete to introduce a new function.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

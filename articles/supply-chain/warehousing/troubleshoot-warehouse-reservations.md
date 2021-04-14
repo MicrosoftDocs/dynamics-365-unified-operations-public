@@ -4,11 +4,9 @@
 title: Troubleshoot reservations in warehouse management
 description: This topic describes how to fix common issues that you might encounter while you work with warehouse reservations in Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,6 +31,8 @@ ms.dyn365.ops.version: 10.0.15
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to fix common issues that you might encounter while you work with warehouse reservations in Microsoft Dynamics 365 Supply Chain Management.
+
+For topics that are related to batch and serial number registrations, see [Troubleshoot warehouse batch and serial reservation hierarchies](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md).
 
 ## I receive the following error message: "Reservations cannot be removed because there is work created which relies on the reservations."
 
@@ -67,20 +67,6 @@ This issue can occur if the system can't update an inventory quantity because th
 ### Issue resolution
 
 This issue is probably caused by open work. Either complete the work or receive without work creation. Make sure that no inventory transactions are physically reserving the quantity. For example, these transactions might be open quality orders, inventory blocking records, or output orders.
-
-## I receive the following error message: "To be assigned to wave, load lines must specify the dimensions above the location. To assign these dimensions, reserve and recreate the load line."
-
-### Issue description
-
-When you use an item that has a "batch above" reservation hierarchy (with the **Batch number** dimension placed *above* the **Location** dimension), the **Release to warehouse** command on the **Load planning workbench** page for a partial quantity doesn't work. You receive this error message, and no work is created for the partial quantity.
-
-However, if you use an item that has a "batch below" reservation hierarchy (with the **Batch number** dimension placed *below* the **Location** dimension), you can release a load from the **Load planning workbench** page for a partial quantity.
-
-### Issue resolution
-
-This behavior is by design. If you put a dimension above the **Location** dimension in the reservation hierarchy, it must be specified before the release to the warehouse. Microsoft has evaluated this issue and has determined that it's a feature limitation during releases to the warehouse from the load planning workbench. Partial quantities can't be released if one or more dimensions above **Location** aren't specified.
-
-For more information, see [Flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

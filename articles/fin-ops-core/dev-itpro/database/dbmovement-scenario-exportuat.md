@@ -4,11 +4,9 @@
 title: Export a copy of the standard user acceptance testing (UAT) database
 description: This topic explains a database export scenario for Finance and Operations.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -81,7 +79,9 @@ Here is an explanation of the parameters:
 - **tdn (target database name)** – The name of the database to import into. The database should **not** already exist.
 - **sf (source file)** – The path and name of the file to import from.
 
-> [!NOTE]
+> [!IMPORTANT]
+> To ensure that imported data is compatible with the metadata, you must trigger a full database synchronization from Visual Studio. 
+
 > During import, the user name and password aren't required. By default, SQL Server uses Microsoft Windows authentication for the user who is currently signed in.
 
 ## Update the database
@@ -149,6 +149,23 @@ END CATCH
 CLOSE retail_ftx; 
 DEALLOCATE retail_ftx; 
 -- End Refresh Retail FullText Catalogs
+
+--Begin create retail channel database record--
+declare @ExpectedDatabaseName nvarchar(64) = 'Default';
+declare @DefaultDataGroupRecId BIGINT;
+declare @ExpectedDatabaseRecId BIGINT; 
+IF NOT EXISTS (select 1 from RETAILCONNDATABASEPROFILE where NAME = @ExpectedDatabaseName)
+BEGIN 
+	select @DefaultDataGroupRecId = RECID from RETAILCDXDATAGROUP where NAME = 'Default'; 
+	insert into RETAILCONNDATABASEPROFILE (DATAGROUP, NAME, CONNECTIONSTRING, DATASTORETYPE)
+	values (@DefaultDataGroupRecId, @ExpectedDatabaseName, NULL, 0); 
+	select @ExpectedDatabaseRecId = RECID from RETAILCONNDATABASEPROFILE where NAME = @ExpectedDatabaseName; 
+	insert into RETAILCDXDATASTORECHANNEL (CHANNEL, DATABASEPROFILE)
+	select RCT.RECID, @ExpectedDatabaseRecId from RETAILCHANNELTABLE RCT
+	inner join RETAILCHANNELTABLEEXT RCTEX on RCTEX.CHANNEL = RCT.RECID
+        update RETAILCHANNELTABLEEXT set LIVECHANNELDATABASE = @ExpectedDatabaseRecId where LIVECHANNELDATABASE = 0
+END; 
+--End create retail channel database record
 ```
 
 ### Turn on change tracking

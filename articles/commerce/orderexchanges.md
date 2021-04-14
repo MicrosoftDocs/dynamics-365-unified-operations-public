@@ -4,11 +4,9 @@
 title: Configure and process an exchange on a return order
 description: This topic explains how to configure an exchange on a return in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 11/12/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

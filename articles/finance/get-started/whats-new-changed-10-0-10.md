@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.10 (May 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Finance 10.0.10.
 author: roschlom
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -39,25 +37,25 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 - **Auto-update:** May 2020
 
 ## Features included in this release
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
+The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365/release-plans/) site. 
 
-- [Budget planning query optimization for performance](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/budget-planning-query-optimization-performance)
+- [Budget planning query optimization for performance](/dynamics365-release-plan/2020wave1/dynamics365-finance/budget-planning-query-optimization-performance)
 
- - [Date range for Posted transactions by journals report](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/date-range-posted-transactions-journals-report)
+ - [Date range for Posted transactions by journals report](/dynamics365-release-plan/2020wave1/dynamics365-finance/date-range-posted-transactions-journals-report)
  
- - [Add Vendor ID, Customer ID, Vendor Name and Customer Name to the voucher transactions list page](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/add-vendor-id-customer-id-vendor-name-customer-name-voucher-transactions-list-page)
+ - [Add Vendor ID, Customer ID, Vendor Name and Customer Name to the voucher transactions list page](/dynamics365-release-plan/2020wave1/dynamics365-finance/add-vendor-id-customer-id-vendor-name-customer-name-voucher-transactions-list-page)
  
- - [Prohibit submission to workflow when the invoice total and registered invoice total are not equal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/prohibit-submission-workflow-when-invoice-total-registered-invoice-total-are-not-equal)
+ - [Prohibit submission to workflow when the invoice total and registered invoice total are not equal](/dynamics365-release-plan/2020wave1/dynamics365-finance/prohibit-submission-workflow-when-invoice-total-registered-invoice-total-are-not-equal)
  
- - [Allow Interest distribution and Escheatment to use feature – Lets you update bank balances when posting advanced ledger entries](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
+ - [Allow Interest distribution and Escheatment to use feature – Lets you update bank balances when posting advanced ledger entries](/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
  
- - [Allow filtering the Tax 1099 detail report by reporting year](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-filtering-tax-1099-detail-report-reporting-year)
+ - [Allow filtering the Tax 1099 detail report by reporting year](/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-filtering-tax-1099-detail-report-reporting-year)
 
- - [Extended Italian localization: Commission settlement on payments](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-commission-settlement-payments)
+ - [Extended Italian localization: Commission settlement on payments](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-commission-settlement-payments)
  
- - [Extended Italian localization: Configurable posting profiles for banks and remittance types](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-configurable-posting-profiles-banks-remittance-types)
+ - [Extended Italian localization: Configurable posting profiles for banks and remittance types](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-configurable-posting-profiles-banks-remittance-types)
  
- - [Extended Italian localization: Protest handling for bills of exchange](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-protest-handling-bills-exchange)
+ - [Extended Italian localization: Protest handling for bills of exchange](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-protest-handling-bills-exchange)
 
 ### Additional enhancements
 
@@ -76,13 +74,13 @@ Dynamics 365 Finance 10.0.10 includes platform updates. To learn more, see [Plat
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 ### Regulatory updates
-For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
+For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
 ### Dynamics 365: 2020 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 

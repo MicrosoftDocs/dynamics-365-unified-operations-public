@@ -4,11 +4,9 @@
 title: Configure online stores
 description: This article provides links to topics that will help you centrally configure and manage an online store.
 author: kfend
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata

@@ -4,11 +4,9 @@
 title: Retail price adjustments
 description: This procedure will walk through creating a commerce price adjustment. 
 author: josaw1
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,16 +4,14 @@
 title: Configure the production floor execution interface
 description: This topic describes how to create one or more configurations for the production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that are specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +27,6 @@ ms.dyn365.ops.version: Release 10.0.15
 # Configure the production floor execution interface
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Shop floor workers use the production floor execution interface to register their daily work, such as when they start a job, report feedback about jobs, register indirect activities, and report absence. These registrations are the basis for tracking progress and cost on production orders, and for calculating the basis for the workers' pay.
 
@@ -46,7 +43,8 @@ The production floor execution interface itself, plus several of the optional se
 
 ### The production floor execution interface
 
-This is the primary feature described in this topic. It adds the production floor execution interface to your system. To enable it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):  
+This is the primary feature described in this topic. It adds the production floor execution interface to your system. To enable it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
 - Production floor execution
 
 ### Generate license plates
@@ -71,6 +69,8 @@ This feature adds a button to the production floor execution interface that enab
 
 ### Asset management functionality for the production floor execution interface
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 This feature adds an asset management tab to the production floor execution interface. Workers can use this tab to select an asset that is connected to a machine resource that is within the selected filter of the job list. For the selected machine asset, the worker can view the state and health of the asset from counter values for up to four selected counters. If you'd like to use this feature, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Asset management functionality for the production floor execution interface
@@ -84,6 +84,7 @@ To create and maintain device configurations, go to **Production control \> Setu
 
 Next, configure the various settings for the selected device configuration. The following fields are available:
 
+- **Clock in and out only** - Set this option to *Yes* to create a simplified interface that only provides clock-in and clock-out functionality. This disables most of the other options on this page. You must remove all lines from the **Tab selection** FastTab before you can enable this option.
 - **Report quantity at clock-out** – Set this option to *Yes* to prompt workers to report feedback about jobs that are in progress when they clock out. When this option is set to *No*, workers won't be prompted.
 - **Lock employee** – When this option is set to *No*, workers will be signed out immediately after they make a registration (such as a new job). The device will then return to the sign-in page. When this option is set to *Yes*, workers will stay signed in to the job card device. However, a worker can manually sign out so that another worker can sign in while the job card device continues to run under the same system user account. For more information about these types of accounts, see [Assigned users](config-job-card-device.md#assigned-users).
 - **Use the actual time of registration** – Set this option to *Yes* to set the time for each new registration to the exact time when the worker submitted the registration. When this option is set to *No*, the sign-in time is used instead. You will usually want to set this option to *Yes* if you've set the **Lock employee** and/or **Single worker** option to *Yes* in cases where workers often remain signed in for longer periods.

@@ -4,11 +4,9 @@
 title: Upgrade from AX 2012 - Deploy a demo environment for analysis
 description: This topic describes how to deploy a demo environment during the Analyze phase of upgrading from Microsoft Dynamics AX 2012 to Finance and Operations.
 author: tariqbell
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

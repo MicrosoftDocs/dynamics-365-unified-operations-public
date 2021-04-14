@@ -8,12 +8,10 @@ ms.author: elgolu
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-manager: 
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
@@ -66,7 +64,7 @@ Import the latest versions of the configurations. The version description usuall
 
 ![Upload and add button](media/nor-saf-default-model-mapping.jpg)
 
-For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 
 ## Setup

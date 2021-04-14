@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Acceptance test library Code generation wizard
 description: This topic provides information about the Code generation wizard for the Acceptance test library.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 

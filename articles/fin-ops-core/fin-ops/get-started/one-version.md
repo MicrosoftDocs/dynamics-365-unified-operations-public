@@ -2,13 +2,11 @@
 # required metadata
 
 title: One Version service updates FAQ
-description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
+description: This topic provides clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
-manager: AnnBe
-ms.date: 08/11/2020
+ms.date: 04/05/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,6 +29,8 @@ ms.dyn365.ops.version: 8.1
 [!include[banner](../includes/banner.md)]
 
 In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner.  In June 2019, based on customer feedback we announced [New flexible service updates being made available](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/). This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
+
+For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 
 ### Can the update be delayed, what is the policy?
@@ -136,6 +136,19 @@ You can pause an update up to 4 months or 3 consecutive service updates by way o
 ### Can I delay an update for longer than 3 consecutive service updates due to seasonal activity or other business reason? 
 
 No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to the production environment if the environments are more than 3 service updates old. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1, 10.0.2, and 10.0.3 then service update 10.0.4 will be auto applied to the sandbox. 
+
+### What happens to an environment that is running a Finance and Operations version that is no longer supported?
+Environments that are running a Finance and Operations version that is no longer supported display a warning message at the top of the environment details page in LCS.
+
+For all Microsoft-managed environments, as well as sandbox and production environments in on-premises implementation projects, some Lifecycle Services (LCS) functionality may not be available when an environment is running a Finance and Operations version that is no longer supported. The LCS functionality that may not be available includes the ability to do the following:
+
+ - Enable maintenance mode
+ - Use all capabilities provided for moving databases on an environment or across environments
+ - Enable firewall access to SQL Server databases
+ - Download RSAT certificates
+ - Regenerate RSAT certificates
+
+After you apply a service update for a supported version, this functionality will be available in the affected environment.
 
 ### What if I find an issue during the sandbox update?
 

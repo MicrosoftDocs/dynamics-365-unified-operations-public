@@ -4,11 +4,9 @@
 title: Financial reporting
 description: Financial reporting allows financial and business professionals to create, maintain, deploy, and view financial statements.
 author: aprilolson
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

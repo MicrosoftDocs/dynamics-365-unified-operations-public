@@ -4,11 +4,9 @@
 title: Manage ER model mapping in separate ER configurations
 description: This topic describes how to manage Electronic reporting (ER) model mappings in separate ER configurations. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 

@@ -4,11 +4,9 @@
 title: Customer electronic invoices in Egypt
 description: This topic explains how to configure and submit customer electronic invoices in Egypt.
 author: ikondo
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,23 +31,16 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 According to Egyptian legal requirements, invoices that are issued for customers must be submitted to the Tax authority in an electronic format. Electronic invoice submission requires the following two-part system configuration:
 
-1. **Electronic invoicing add-on** configuration. For more information, see [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
+1. **Electronic invoicing add-in** configuration. For more information, see [Get started with the Electronic invoicing add-in for Egypt](e-invoicing-eg-get-started.md).
 2. **Microsoft Dynamics 365 Finance** configuration, which is covered in this topic.
 
 ## Prerequisites
 
-- Electronic invoicing add-on configuration is completed, and all required parts for Egypt are ready to use.
-- In the **Feature management** workspace, turn on the **Electronic invoicing add-on integration** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-## Enable electronic invoicing for Egypt
-
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-2. On the **Features** tab, select the feature reference for **EG00008 E-invoicing for Egypt**.
-3. Turn on the **Enabled** option for the selected feature reference.
+- Electronic invoicing add-in configuration is completed, and all required parts for Egypt are ready to use.
+- The primary address of the legal entity must be in Egypt.
 
 ## Configure registration numbers
 
@@ -166,7 +157,7 @@ When you've completed all the required configuration steps, you can submit elect
 
 ## Related topics
 
-- [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
+- [Get started with the Electronic invoicing add-in for Egypt](e-invoicing-eg-get-started.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

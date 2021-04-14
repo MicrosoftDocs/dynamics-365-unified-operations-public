@@ -4,11 +4,9 @@
 title: Create a SubmitToWorkflow class
 description: This topic describes how to create a SubmitToWorkflow class.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,7 +33,7 @@ ms.dyn365.ops.version: Platform update 1
 
 A workflow is started when the user selects the **Submit** button on the workflow toolbar. The **Submit** button is bound to an action menu item that calls the **main** method of a class that you create to activate a workflow. This topic describes how to create a **SubmitToWorkflow** class and use the name of the workflow type to activate the workflow.
 
-You can also activate a workflow by using the workflow configuration ID or the workflow sequence number. The basic procedure is the same. For more information, see [Activating a workflow](https://docs.microsoft.com/dynamicsax-2012/developer/activating-a-workflow).
+You can also activate a workflow by using the workflow configuration ID or the workflow sequence number. The basic procedure is the same. For more information, see [Activating a workflow](/dynamicsax-2012/developer/activating-a-workflow).
 
 > [!NOTE]
 > If you used the **Workflow** wizard to create the workflow type, the wizard has already created a workflow submission manager class. You just have to add code to it.
@@ -49,7 +47,7 @@ You can also activate a workflow by using the workflow configuration ID or the w
 5. Enter the following code for the **main** method to use the name of the workflow type to activate the workflow.
 
     > [!NOTE]
-    > This example applies to workflow submissions. For an example that also works with Enterprise Portal, see [Adding enterprise portal support for workflow submission](https://docs.microsoft.com/dynamicsax-2012/developer/adding-enterprise-portal-support-for-workflow-submission).
+    > This example applies to workflow submissions. For an example that also works with Enterprise Portal, see [Adding enterprise portal support for workflow submission](/dynamicsax-2012/developer/adding-enterprise-portal-support-for-workflow-submission).
 
     ```X++
     public static void main(Args args)
@@ -95,15 +93,15 @@ You can also activate a workflow by using the workflow configuration ID or the w
 
 ## See also
 
-[Activating a workflow](https://docs.microsoft.com/dynamicsax-2012/developer/activating-a-workflow)
+[Activating a workflow](/dynamicsax-2012/developer/activating-a-workflow)
 
 [Create a new workflow type](workflow-type-create-new.md)
 
-[Workflow::activateFromWorkflowType method](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812416(v=ax.60))
+[Workflow::activateFromWorkflowType method](/previous-versions/dynamics/ax-2012/application-classes/gg812416(v=ax.60))
 
-[Workflow::activateFromWorkflowSequenceNumber method](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812415(v=ax.60))
+[Workflow::activateFromWorkflowSequenceNumber method](/previous-versions/dynamics/ax-2012/application-classes/gg812415(v=ax.60))
 
-[Workflow::activateFromWorkflowConfigurationId method](https://docs.microsoft.com/previous-versions/dynamics/ax-2012/application-classes/gg812414(v=ax.60))
+[Workflow::activateFromWorkflowConfigurationId method](/previous-versions/dynamics/ax-2012/application-classes/gg812414(v=ax.60))
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
