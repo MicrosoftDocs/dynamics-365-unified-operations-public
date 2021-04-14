@@ -26,11 +26,10 @@ ms.dyn365.ops.version: 10.0.19
 
 Companies that work with manufacturing and distribution must be able to run key business processes 24/7, without interruption and at scale. Cloud and edge scale units enable companies to run key mission-critical manufacturing and warehouse processes without interruption, even when faced with occasional network connectivity or latency issues.
 
-Cloud and edge scale units enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through add-ins for your supply chain subscription.
+Cloud and edge scale units enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through the following add-ins for your Supply Chain Management subscription:
 
-- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
- (*available by April 1, 2021*)
-- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available in the future*)
+- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available in April 2021*)
+- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available soon*)
 
 Workload capabilities are being release on a continuous basis with incremental enhancements.
 
