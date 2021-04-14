@@ -4,7 +4,7 @@
 title: Supported fonts
 description: Finance and Operations apps include access to over 270 standard business-ready fonts available for documents rendered by the cloud-hosted service. 
 author: RichdiMSFT
-ms.date: 02/10/2020
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 33
 
 Finance and Operations apps include access to hundreds of standard, business-ready fonts available for documents rendered by the cloud-hosted service. 
 
-This portfolio will continue to grow as the service expands into new regions and industries. However, the service no longer supports the installation of custom fonts in customer environments. Requests to expand the collection of fonts supported by the service will be considered on a case-by-case basis.
+This portfolio will continue to grow as the service expands into new regions and industries. The service doesn't support installation of custom fonts in customer environments.
 
 The following list captures the portfolio of font families available for documents produced using SQL Server Reporting Services (SSRS) services in Finance and Operations apps.
 
