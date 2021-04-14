@@ -69,8 +69,8 @@ If a site user selects any social media links within a site, the cookies in the 
 | .linkedin.com               | li_sugr                  | Browser identifier                                           | LinkedIn Insight tag, when IP address is not in a designated country |
 | .linkedin.com               | BizographicsOptOut       | Determines opt-out status for third-party tracking.              | LinkedIn guest controls and industry opt-out pages           |
 | .linkedin.com               | \_guid                    | Browser identifier for Google Ads.                            | LinkedIn Feed                                                |
-| .linkedin.com               | li_oatml                 | Member indirect indentifier for conversion tracking, retargeting, analytics. | LinkedIn Ads and Insight tags                                |
-| Various, first party domain | li_fat_id                | Member indirect indentifier for conversion tracking, retargeting, analytics. | LinkedIn Ads and Insight tags                                |
+| .linkedin.com               | li_oatml                 | Member indirect identifier for conversion tracking, retargeting, analytics. | LinkedIn Ads and Insight tags                                |
+| Various, first party domain | li_fat_id                | Member indirect identifier for conversion tracking, retargeting, analytics. | LinkedIn Ads and Insight tags                                |
 | .adsymptotic.com            | U                        | Browser identifier                                           | LinkedIn Insight tag, when IP address is not in a Designated Country |
 | linkedin.com                | bcookie                  | Browser ID cookie                                            | Requests to LinkedIn                                         |
 | linkedin.com                | bscookie                 | Secure browser cookie                                        | Requests to LinkedIn                                         |
