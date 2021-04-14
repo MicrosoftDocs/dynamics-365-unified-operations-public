@@ -56,6 +56,56 @@ The following table shows the current reference list of cookies placed by Dynami
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        |
 | x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. |
 
+
+
+If a site customer clicks on any social media links within the site, these cookies will also be tracked on their browser:
+
+
+| Domain                      | Cookie Name              | Description                                                  | Where it comes from                                          |
+| --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| linkedin.com                | UserMatchHistory         | LinkedIn Ads ID syncing                                      | LinkedIn Feed and Insight Tag                                |
+| .linkedin.com               | li_sugr                  | Browser Identifier                                           | LinkedIn Insight Tag, when IP address is not in a Designated Country |
+| .linkedin.com               | BizographicsOptOut       | Determine opt-out status for 3rd party tracking              | LinkedIn guest controls and industry opt-out pages           |
+| .linkedin.com               | _guid                    | Browser Identifier for Google Ads                            | LinkedIn Feed                                                |
+| .linkedin.com               | li_oatml                 | Member indirect indentifier for conversion tracking, retargeting, analytics | LinkedIn ads and insight tags                                |
+| Various, first party domain | li_fat_id                | Member indirect indentifier for conversion tracking, retargeting, analytics | LinkedIn ads and insight tags                                |
+| .adsymptotic.com            | U                        | Browser Identifier                                           | LinkedIn Insight Tag, when IP address is not in a Designated Country |
+| linkedin.com                | bcookie                  | Browser ID cookie                                            | Requests to LinkedIn                                         |
+| linkedin.com                | bscookie                 | Secure Browser Cookie                                        | Requests to LinkedIn                                         |
+| .linkedin.com               | lang                     | Sets default locale/language                                 | Requests to LinkedIn                                         |
+| Linkedin.com                | lidc                     | Used for routing                                             | Requests to LinkedIn                                         |
+| .linkedin.com               | aam_uuid                 | aam_uuid                                                     | Set for ID sync                                              |
+| .linkedin.com               | _ga                      | Google Analytics                                             | Google Analytics                                             |
+| .linkedin.com               | _gat                     | Google Analytics                                             | Google Analytics                                             |
+| .linkedin.com               | liap                     | Google Analytics                                             | Google Analytics                                             |
+| .linkedin.com               | lissc                    |                                                              |                                                              |
+|                             |                          |                                                              |                                                              |
+| .facebook.com               | c_user                   | cookie contains the user ID of the currently logged in user  |                                                              |
+| .facebook.com               | datr                     | is to identify the web browser being used to connect to Facebook independent of the logged in user |                                                              |
+| .facebook.com               | wd                       | stores the browser window dimensions and is used by Facebook to optimise the rendering of the page |                                                              |
+| .facebook.com               | xs                       | two-digit number representing the session number.   The second portion of the value is a session secret |                                                              |
+| .facebook.com               | fr                       | Contains a unique browser and user ID, used for targeted advertising. |                                                              |
+| .facebook.com               | sb                       | to improve friend suggestions                                |                                                              |
+| .facebook.com               | spin                     |                                                              |                                                              |
+| .twitter.com                | guest_id                 |                                                              |                                                              |
+| .twitter.com                | kdt                      |                                                              |                                                              |
+| .twitter.com                | personalization_id       | cookie contains the user ID of the currently logged in user  |                                                              |
+| .twitter.com                | remember_checked_on      |                                                              |                                                              |
+| .twitter.com                | twid                     |                                                              |                                                              |
+| .pinterest.com              | _auth                    | cookie contains the user ID of the currently logged in user  |                                                              |
+| .pinterest.com              | _b                       |                                                              |                                                              |
+| .pinterest.com              | _pinterest_pfob          |                                                              |                                                              |
+| .pinterest.com              | _pinterest_referrer      | cookie contain pages when user hit the Pinterest button      |                                                              |
+| .pinterest.com              | _pinterest_sess          | cookie contain pages when user hit the Pinterest button      |                                                              |
+| .pinterest.com              | _routing_id              |                                                              |                                                              |
+| .pinterest.com              | bei                      |                                                              |                                                              |
+| .pinterest.com              | cm_sub                   | contain a user id and the timestamp at which the cookie was created. |                                                              |
+| .pinterest.com              | csrftoken                | cookie contain pages when user hit the Pinterest button      |                                                              |
+| .pinterest.com              | sessionFunnelEventLogged | cookie contain pages when user hit the Pinterest button      |                                                              |
+| .pinterest.com              | Local storage            |                                                              |                                                              |
+| .pinterest.com              | Service Workers          |                                                              |                                                              |
+
+
 ## Site user cookie consent on an e-Commerce site 
 
 If an e-Commerce site feature or module uses a non-essential cookie, a site user's consent must be obtained before the cookie is tracked. To allow site users to provide cookie consent on the e-Commerce site, a site author must add and configure a cookie consent module in the page's header module to ensure that the consent is prompted for and received. Site user consent must be given before a feature or module using a non-essential cookie can be rendered on a site page.
