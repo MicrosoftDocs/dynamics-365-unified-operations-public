@@ -5,7 +5,7 @@ author: SmithaNataraj
 manager: tfehr
 ms.date: 3/24/2021
 ms.topic: troubleshooting
-ms.search.form: WHSWorkTable_WHSWorkCancel
+ms.search.form: WHSWorkTable_WHSWorkCancel, WHSWorkTableListPage_WHSWorkCancel
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
