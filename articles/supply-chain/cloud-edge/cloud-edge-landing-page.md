@@ -184,7 +184,7 @@ For each tenant, the list shows the onboarding status.
 
 :::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Sign-up option for a tenant":::
 
-Select the **Click here to enable environments** link to request onboarding for the LCS tenant. You must accept the terms. You must also supply a business email address where Microsoft may send communications that are related the onboarding process.
+Select the **Click here to get started** link to request onboarding for the LCS tenant. You must accept the terms. You must also supply a business email address where Microsoft may send communications that are related the onboarding process.
 
 :::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Sign-up submission for a tenant":::
 
