@@ -81,30 +81,30 @@ If a site user selects any social media links within a site, the cookies in the 
 | .linkedin.com               | \_gat                     | Google Analytics cookie                                             | Google Analytics                                             |
 | .linkedin.com               | liap                     | Google Analytics cookie                                             | Google Analytics                                             |
 | .linkedin.com               | lissc                    |                                                              |                                                              |
-| .facebook.com               | c_user                   | Cookie contains the user ID of the currently signed-in user.  |                                                              |
-| .facebook.com               | datr                     | Used to identify the web browser being used to connect to Facebook independent of the signed-in user. |                                                              |
-| .facebook.com               | wd                       | Stores the browser window dimensions and is used by Facebook to optimize the rendering of the page. |                                                              |
-| .facebook.com               | xs                       | Two-digit number representing the session number. The second portion of the value is a session secret. |                                                              |
-| .facebook.com               | fr                       | Contains a unique browser and user ID, used for targeted advertising. |                                                              |
-| .facebook.com               | sb                       | Used to improve Facebook friend suggestions.                                |                                                              |
-| .facebook.com               | spin                     |                                                              |                                                              |
-| .twitter.com                | guest_id                 |                                                              |                                                              |
-| .twitter.com                | kdt                      |                                                              |                                                              |
-| .twitter.com                | personalization_id       | Cookie contains the user ID of the currently signed-in in user.  |                                                              |
-| .twitter.com                | remember_checked_on      |                                                              |                                                              |
-| .twitter.com                | twid                     |                                                              |                                                              |
-| .pinterest.com              | \_auth                    | Cookie contains the user ID of the currently signed-in user.  |                                                              |
-| .pinterest.com              | \_b                       |                                                              |                                                              |
-| .pinterest.com              | \_pinterest_pfob          |                                                              |                                                              |
-| .pinterest.com              | \_pinterest_referrer      | Cookie contains pages when user selects the Pinterest button.      |                                                              |
-| .pinterest.com              | \_pinterest_sess          | Cookie contains pages when user selects the Pinterest button.      |                                                              |
-| .pinterest.com              | \_routing_id              |                                                              |                                                              |
-| .pinterest.com              | bei                      |                                                              |                                                              |
-| .pinterest.com              | cm_sub                   | Contains a user ID and the timestamp when the cookie was created. |                                                              |
-| .pinterest.com              | csrftoken                | Cookie contains pages when user selects the Pinterest button.      |                                                              |
-| .pinterest.com              | sessionFunnelEventLogged | Cookie contains pages when user selects the Pinterest button.      |                                                              |
-| .pinterest.com              | Local storage            |                                                              |                                                              |
-| .pinterest.com              | Service Workers          |                                                              |                                                              |
+| .facebook.com               | c_user                   | Cookie contains the user ID of the currently signed-in user.  |   Facebook                                                           |
+| .facebook.com               | datr                     | Used to identify the web browser being used to connect to Facebook independent of the signed-in user. | Facebook                                                             |
+| .facebook.com               | wd                       | Stores the browser window dimensions and is used by Facebook to optimize the rendering of the page. | Facebook                                                             |
+| .facebook.com               | xs                       | Two-digit number representing the session number. The second portion of the value is a session secret. |  Facebook                                                            |
+| .facebook.com               | fr                       | Contains a unique browser and user ID, used for targeted advertising. |  Facebook                                                            |
+| .facebook.com               | sb                       | Used to improve Facebook friend suggestions.                                |  Facebook                                                            |
+| .facebook.com               | spin                     |                                                              |  Facebook                                                            |
+| .twitter.com                | guest_id                 |                                                              |  Twitter                                                            |
+| .twitter.com                | kdt                      |                                                              |  Twitter                                                             |
+| .twitter.com                | personalization_id       | Cookie contains the user ID of the currently signed-in in user.  |  Twitter                                                             |
+| .twitter.com                | remember_checked_on      |                                                              | Twitter                                                              |
+| .twitter.com                | twid                     |                                                              |  Twitter                                                             |
+| .pinterest.com              | \_auth                    | Cookie contains the user ID of the currently signed-in user.  |   Pinterest                                                           |
+| .pinterest.com              | \_b                       |                                                              |   Pinterest                                                           |
+| .pinterest.com              | \_pinterest_pfob          |                                                              |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_referrer      | Cookie contains pages when user selects the Pinterest button.      |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_sess          | Cookie contains pages when user selects the Pinterest button.      |  Pinterest                                                            |
+| .pinterest.com              | \_routing_id              |                                                              |  Pinterest                                                            |
+| .pinterest.com              | bei                      |                                                              |  Pinterest                                                            |
+| .pinterest.com              | cm_sub                   | Contains a user ID and the timestamp when the cookie was created. |  Pinterest                                                            |
+| .pinterest.com              | csrftoken                | Cookie contains pages when user selects the Pinterest button.      | Pinterest                                                             |
+| .pinterest.com              | sessionFunnelEventLogged | Cookie contains pages when user selects the Pinterest button.      | Pinterest                                                             |
+| .pinterest.com              | Local storage            |                                                              |  Pinterest                                                            |
+| .pinterest.com              | Service Workers          |                                                              |  Pinterest                                                            |
 
 
 ## Site user cookie consent on an e-Commerce site 
