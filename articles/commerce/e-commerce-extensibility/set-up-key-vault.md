@@ -156,7 +156,7 @@ Next, to add an access policy in your Key Vault, follow these steps.
 Next, to add the Key Vault details in Retail Server, follow these steps.
 
 1.	In Commerce headquarters, go to **Key Vault parameters**. 
-1. From the store selector on the top right, select the store for which you wish to configure the secret key and values.
+1. From the store selector on the top right, select the store for which you want to configure the secret key and values.
 1.	Select **New**, and then enter a name to represent your Key Vault.
 1.	Enter the **Key Vault URL**. This is the **Vault URI** value listed on your Key Vault's **Overview** page. 
 1. Enter the **Key Vault client**. This is the application ID of the registered app. 
@@ -167,7 +167,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
  ![Key Vault Secrets page with secret selected](media/key-vault-04.png)
  
  > [!IMPORTANT]
- > Take note of the operating unit number (OUN) of the store that was used to configure the secret key and values, which can be found in Commerce headquarters at **Retail and Commerce \> Channels \> Online stores**. You will need to specify this value in the platform settings JSON file.
+ > Note the operating unit number (OUN) of the store that was used to configure the secret key and values. This can be found in Commerce headquarters at **Retail and Commerce \> Channels \> Online stores**. You will need to specify this value in the platform settings JSON file.
 
 ## Access secret values within your e-commerce Node application
 
