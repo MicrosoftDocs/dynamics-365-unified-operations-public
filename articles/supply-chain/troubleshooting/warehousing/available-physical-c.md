@@ -27,4 +27,5 @@ But this happens only when the total quantity per legal entity is negative, if t
 ## Resolution
 
 Microsoft has evaluated this issue and determined not to fix this issue as a hot-fix.
+
 A documentation work item will get created to explain the design for the calculation of the ‘Available physical’ quantity where the availability will be calculated according to the reservation hierarchy with the availability being the lowest availability in the path up to the highest level.

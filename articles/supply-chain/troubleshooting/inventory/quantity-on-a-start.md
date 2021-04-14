@@ -19,7 +19,7 @@ KB Number: 4613113
 
 ## Issue description
 
-When customer istrying to create a quarantine order and trying to split the order the orderquantity is not getting updated to the split remaining quantity.
+When customer is trying to create a quarantine order and trying to split the order the order quantity is not getting updated to the split remaining quantity.
 
 ## Resolution
 
