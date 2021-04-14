@@ -35,7 +35,7 @@ In some countries and regions, there is a legal requirement that printed credit 
 
 ## Prerequisites
 
-- In the **Feature management** workspace, turn on the **Credit invoicing layout for sales and project invoice reports** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Credit invoicing layout for sales and project invoice reports** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - The printable formats of the required documents must be configured in Print management.
 
 The functionality that is described in this topic applies to the following documents:
