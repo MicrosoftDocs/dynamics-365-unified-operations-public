@@ -55,13 +55,15 @@ The following table shows the current reference list of cookies placed by Dynami
 | x-ms-cpim-slice                             | Used to route requests to the appropriate production authentication server instance. |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Used for maintaining the SSO session.                        |
 | x-ms-cpim-trans                             | Used for tracking transactions (the number of open tabs authenticating against a business-to-consumer (B2C) site), including the current transaction. |
+|_msdyn365___muid_                            | Used if Experimentation is activated for the environment; utilized as a userId for Experimentation purposes. |
+|_msdyn365___exp_                             | Used if Experimentation is activated for the environment; used to measure performance load balancing         |
 
 
 
 If a site customer clicks on any social media links within the site, these cookies will also be tracked on their browser:
 
 
-| Domain                      | Cookie Name              | Description                                                  | Where it comes from                                          |
+| Domain                      | Cookie Name              | Description                                                  | Source                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | linkedin.com                | UserMatchHistory         | LinkedIn Ads ID syncing                                      | LinkedIn Feed and Insight Tag                                |
 | .linkedin.com               | li_sugr                  | Browser Identifier                                           | LinkedIn Insight Tag, when IP address is not in a Designated Country |
@@ -79,7 +81,6 @@ If a site customer clicks on any social media links within the site, these cooki
 | .linkedin.com               | _gat                     | Google Analytics                                             | Google Analytics                                             |
 | .linkedin.com               | liap                     | Google Analytics                                             | Google Analytics                                             |
 | .linkedin.com               | lissc                    |                                                              |                                                              |
-|                             |                          |                                                              |                                                              |
 | .facebook.com               | c_user                   | cookie contains the user ID of the currently logged in user  |                                                              |
 | .facebook.com               | datr                     | is to identify the web browser being used to connect to Facebook independent of the logged in user |                                                              |
 | .facebook.com               | wd                       | stores the browser window dimensions and is used by Facebook to optimise the rendering of the page |                                                              |
