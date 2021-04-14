@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Finance + Operations (on-premises) offers a variety of license types to best suit the needs of your organization. To better understand how Finance + Operations (on-premises) is licensed, please work with your partner, who can access the [Licensing guide](https://mbs.microsoft.com/Files/public/365/DynamicsOperationsOnPremEnterprise.pdf) on PartnerSource. When you are ready to purchase licenses for your organization, work with your partner to follow the steps outlined in this topic.
+Microsoft Dynamics 365 Finance + Operations (on-premises) offers a variety of license types to best suit the needs of your organization. To better understand how Finance + Operations (on-premises) is licensed, please work with your partner, who can access the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544). When you are ready to purchase licenses for your organization, work with your partner to follow the steps outlined in this topic.
 
 > [!IMPORTANT]
 > On-premises environments are not supported on any public cloud infrastructure, including Azure.
