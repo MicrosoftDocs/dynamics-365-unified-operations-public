@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.19
 
 This topic covers the check-in for pickup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
-The check in for pickup module provides a confirmation page for customers who use the Dynamics 365 Commerce customer check-in capabilities to notify a store of their arrival. The check in for pickup module also allows you to configure a form that collects additional information from customers such as parking spot number and vehicle make and model to facilitate order delivery. 
+The check-in for pickup module provides a confirmation page for customers who use the Dynamics 365 Commerce customer check-in capabilities to notify a store of their arrival. The check-in for pickup module also allows you to configure a form that collects additional information from customers such as parking spot number and vehicle make and model to facilitate order delivery. 
 
 ## Module properties
 
@@ -49,7 +49,7 @@ The check in for pickup module provides a confirmation page for customers who us
 | Additional information keys \> Resource value | Text string  | Specifies the label for the text field within the task in point of sale (POS).  |
 | Additional information keys \> Required       | **True** or **False** | Specifies whether customers must fill in this field before they are allowed to continue. When enabled, an asterisk is rendered next to the form label, and a null check is performed that prevents customers from continuing if no value is entered. |
 
-## Add the check in for pickup module to a page
+## Add the check-in for pickup module to a page
 
 This module should be added to the new page you create for check-in confirmation, which will serve as the check-in confirmation experience for customers who select **I am here** in their email. 
 
@@ -57,7 +57,7 @@ This module should be added to the new page you create for check-in confirmation
 
 If no additional information keys are configured, the module will display the check-in confirmation page by default. As the check-in confirmation is displayed, a task is created in the POS for the store where the order is to be picked up from.
 
-When one or more additional information keys are configured, customers will first be prompted to enter information. When customers select **Submit** they are shown the check-in confirmation and the POS task is created. 
+When one or more additional information keys are configured, customers will first be prompted to enter information. When customers select **Submit**, they are shown the check-in confirmation and the POS task is created. 
 
 ## Additional resources
 
