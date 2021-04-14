@@ -167,7 +167,7 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
  ![Key Vault Secrets page with secret selected](media/key-vault-04.png)
  
  > [!IMPORTANT]
- > Note the operating unit number (OUN) of the store that was used to configure the secret key and values. This can be found in Commerce headquarters at **Retail and Commerce \> Channels \> Online stores**. You will need to specify this value in the platform settings JSON file.
+ > Note the operating unit number of the store that was used to configure the secret key and values. This can be found in Commerce headquarters at **Retail and Commerce \> Channels \> Online stores**. You will need to specify this value in the platform settings JSON file.
 
 ## Access secret values within your e-commerce Node application
 
@@ -206,7 +206,7 @@ If the request to fetch the secret value fails, the error property will be set. 
 
 ### Update the platform settings file
 
-You must update the **secretsManagerOUN** property in the platform.settings.json file to specify the OUN of the store or channel where the key vault parameters were configured. For more information, see [Platform settings file](platform-settings.md).
+You must update the **secretsManagerOUN** property in the platform.settings.json file to specify the operating unit number of the store or channel where the key vault parameters were configured. For more information, see [Platform settings file](platform-settings.md).
 
 ## Local development
 
