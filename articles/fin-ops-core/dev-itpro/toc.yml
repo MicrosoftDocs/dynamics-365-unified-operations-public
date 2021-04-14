@@ -1376,12 +1376,16 @@
         href: perf-test/rsat/rsat-install-configure.md
       - name: Use the Regression suite automation tool
         href: perf-test/rsat/rsat-run.md
+      - name: Maintain test cases within Regression suite automation tool
+        href: perf-test/rsat/rsat-maintain-test-cases.md
       - name: Validate expected values
         href: perf-test/rsat/rsat-validate-expected.md
       - name: Chain test cases
         href: perf-test/rsat/rsat-chain-test-cases.md
       - name: Derived test cases
         href: perf-test/rsat/rsat-derived-test-cases.md
+      - name: Upgrade the parameter files
+        href: perf-test/rsat/rsat-upgrade-parameter-files.md
       - name: Regression suite automation tool tutorial
         href: perf-test/rsat/rsat-tutorial.md
       - name: Best practices
